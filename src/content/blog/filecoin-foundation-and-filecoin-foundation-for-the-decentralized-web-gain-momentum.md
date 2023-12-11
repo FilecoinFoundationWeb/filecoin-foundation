@@ -1,0 +1,32 @@
+---
+title: Filecoin Foundation and Filecoin Foundation for the Decentralized Web
+  Gain Momentum
+created-on: 2023-04-21T07:27:10.571Z
+updated-on: 2023-04-21T07:27:10.571Z
+published-on: 2023-04-21T07:33:56.200Z
+f_author: Filecoin Foundation
+f_description: In 2017, the creators of Filecoin envisioned that an independent
+  Filecoin Foundation would serve as the long-term governance body for the
+  Filecoin Ecosystem.
+f_featured: false
+f_image:
+  url: /assets/images/64423aceef619d5dc5b60e52_1-e009tiaipq2vndk-evb9ng.png
+  alt: null
+f_post-date: 2021-01-14T00:00:00.000Z
+tags: blog
+layout: "[blog].html"
+slug: filecoin-foundation-and-filecoin-foundation-for-the-decentralized-web-gain-momentum
+date: 2023-10-06T13:34:57.096Z
+---
+
+In 2017, the creators of Filecoin envisioned that an independent Filecoin Foundation would serve as the long-term governance body for the Filecoin Ecosystem. They gave the Foundation the mandate to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.” They wanted the Foundation to be modeled on Foundations for other open source projects like the Apache Software Foundation, the Mozilla Foundation and the Linux Foundation.
+
+In October, we [announced the details](https://www.youtube.com/watch?v=Sakannch1Dw&feature=emb_title) of the [Filecoin Foundation (FF)](https://fil.org/) and its mission. The Filecoin Foundation is an independent organization on a mission to accelerate the growth of Filecoin and related technologies to create a decentralized, efficient, and robust foundation for humanity’s information. The Foundation will build and support the Filecoin community. There are so many stakeholders in the Filecoin ecosystem: miners, developers, researchers, token holders, clients, users. We want to support all of them.
+
+The FF has a sister charitable organization, the Filecoin Foundation for the Decentralized Web (FFDW). The mission of the FFDW is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open source software and open protocols for decentralized data storage and retrieval networks.
+
+We also [announced the incredible teams](https://www.youtube.com/watch?v=6OY4xAs3Grg&feature=emb_title) making up the FF and FFDW in October, and those teams are [continuing to grow](https://finance.yahoo.com/news/filecoin-foundation-appoints-initial-staff-103014932.html).
+
+In the next day or so, the FF and the FFDW will be receiving their first transfers of Filecoin tokens, totaling approximately 1 million FIL tokens for FF and 951,268 FIL tokens for FFDW. This represents a small percentage of the Foundations’ 100 million FIL allocation — as laid out in the [Filecoin PPM](https://coinlist.co/assets/index/filecoin_index/Protocol%20Labs%20-%20SAFT%20-%20Private%20Placement%20Memorandum-bbd65da01fdc4a15219c49ad20fb9e28681adec9fae744c41cccd124545c4c73.pdf) — which the Foundations will continue to receive over time.
+
+Foundations are critical to the success of blockchain networks. They safeguard the network, drive governance, and promote ecosystem growth. We have ambitious missions, and we are thrilled to dive into the work. Follow our journeys on this blog. We look forward to sharing our progress with you!

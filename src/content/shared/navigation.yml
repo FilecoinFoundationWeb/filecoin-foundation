@@ -1,0 +1,31 @@
+navigation_items:
+  - title: "About"
+    url: "/about"
+    order: 1
+  - title: "Blog"
+    url: "/blog"
+    order: 2
+  - title: "Governance"
+    url: "/governance"
+    order: 3
+  - title: "Ecosystem"
+    url: "/ecosystem"
+    order: 4
+  - title: "Case Studies"
+    url: "case-studies"
+    order: 5
+  - title: "Grants"
+    url: "/grants"
+    order: 6
+  - title: "Get Involved"
+    url: "/get-involved"
+    order: 7
+  - title: "Public Data"
+    url: "/public-data"
+    order: 8
+  - title: "Awards"
+    url: "/public-data/awards"
+    order: 9
+  - title: "Events"
+    url: "/events"
+    order: 10

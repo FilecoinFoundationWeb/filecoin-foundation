@@ -1,95 +1,95 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import GetInvolvedList from '@/components/GetInvolvedList'
+import PageHeader from '@/components/PageHeader'
+import Section from '@/components/Section'
+import VideoArticle from '@/components/VideoArticle'
+
+import { createMetadata } from '@/utils/createMetadata'
+
+import { attributes } from '@/content/pages/home.md'
+
+const { title, description, seo } = attributes
+
+export const metadata = createMetadata(seo.title, seo.description)
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <PageHeader title={title} description={description} />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <Section
+        title="What we do"
+        content="We exist to help people build their vision on Filecoin and to support the growth of the decentralized web."
+      />
+
+      <Section
+        title="Filecoin Foundation (FF) and Lockheed Martin"
+        content="Working together to develop a program for deploying the Interplanetary File System (IPFS) in space."
+        link={{
+          url: 'https://www.youtube.com/watch?v=6OY4xAs3Grg?si=1ySPxDLCx9Ha6bbD',
+          text: 'Watch Video',
+        }}
+      />
+
+      <Section
+        title="The Foundation provides resources, guidance, and fair, equitable principles"
+        content="To help the ecosystem flourish, and to open up the internet for a safer, stronger, and more reliable environment where everyone, not just a few giants, can thrive."
+      />
+
+      <Section
+        title="Resources"
+        content="Explore the Filecoin Project Ecosystem and Tooling"
+        link={{ url: 'https://filecoin.io/slack', text: 'Join the Community' }}
+      >
+        <iframe
+          allowFullScreen
+          width="560"
+          height="315"
+          aria-label="Embedded YouTube Video"
+          src="https://www.youtube.com/embed/6OY4xAs3Grg?si=1ySPxDLCx9Ha6bbD"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         />
-      </div>
+      </Section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <Section
+        title="Dev Grants"
+        content={[
+          'We fund talented and eager teams that want to work with us to build a more robust, efficient, and decentralized web.',
+          "We're enabling more contributors to solve open problems and engage with the Filecoin project.",
+        ]}
+        link={{ url: '/grants/', text: 'Learn More' }}
+      />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <Section
+        title="Get Involved"
+        content={[
+          'Learn how to get involved in the Filecoin community',
+          'The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world.',
+        ]}
+        link={{ url: 'https://filecoin.io/slack', text: 'Learn More' }}
+      >
+        <GetInvolvedList />
+      </Section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <Section
+        title="Dive Deeper"
+        content="Join our talks, community meetings, and other events. To explore them, visit our Youtube channel."
+        link={{
+          url: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
+          text: 'Visit our Youtube Channel',
+        }}
+      >
+        <VideoArticle
+          title="FIL Austin"
+          content="The first major IRL meetup of the Filecoin Community gathered hundreds of contributors from across the Filecoin ecosystem."
+          link="https://www.youtube.com/watch?v=9Db0rXvscYY"
+        />
+        <VideoArticle
+          title="DWeb Gateway @ Davos"
+          content="The Decentralized Web Gateway brings together leaders, thinkers and activists to discuss the evolution of the internet and its ramifications for society."
+          link="https://www.youtube.com/watch?v=hg8e3_gKtwU"
+        />
+      </Section>
+    </>
   )
 }

@@ -1,0 +1,447 @@
+backend:
+  name: "test-repo"
+  branch: "main"
+media_folder: "public/assets/images" # "theme/assets/images"
+public_folder: "/assets/images" # "/assets/images"
+
+header_config: &header_config
+  name: "header"
+  label: "Header"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "Title"
+      widget: "string"
+    - name: "description"
+      label: "Description"
+      widget: "text"
+
+meta_config: &meta_config
+  name: "seo"
+  label: "SEO"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "SEO Title"
+      widget: "string"
+    - name: "description"
+      label: "Meta Description"
+      widget: "text"
+    - name: "og"
+      label: "Open Graph Metadata"
+      widget: "object"
+      collapsed: true
+      fields:
+        - name: "title"
+          label: "Open Graph Title"
+          widget: "string"
+          required: false
+        - name: "image"
+          label: "Open Graph Image"
+          widget: "image"
+          required: false
+          media_library:
+            config:
+              multiple: false
+    - name: "twitter"
+      label: "Twitter Metadata"
+      widget: "object"
+      collapsed: true
+      fields:
+        - name: "title"
+          label: "Twitter Title"
+          widget: "string"
+          default: "summary"
+          required: false
+        - name: "card"
+          label: "Twitter Card"
+          widget: "string"
+          default: "summary"
+          required: false
+        - name: "site"
+          label: "Twitter Site"
+          widget: "string"
+          required: false
+        - name: "creator"
+          label: "Twitter Creator"
+          widget: "string"
+          required: false
+
+collections:
+  - name: "shared"
+    label: "Shared"
+    files:
+      - name: "navigation"
+        label: "Navigation"
+        file: "src/content/shared/navigation.yml"
+        fields:
+          - name: "navigation_items"
+            label: "Navigation Items"
+            widget: "list"
+            fields:
+              - name: "title"
+                label: "Title"
+                widget: "string"
+              - name: "url"
+                label: "URL"
+                widget: "string"
+              - name: "order"
+                label: "Order"
+                widget: "number"
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "src/content/pages/home.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "about"
+        label: "About"
+        file: "src/content/pages/about.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "blog"
+        label: "Blog"
+        file: "src/content/pages/blog.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "governance"
+        label: "Governance"
+        file: "src/content/pages/governance.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "ecosystem"
+        label: "Ecosystem"
+        file: "src/content/pages/ecosystem.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "grants"
+        label: "Grants"
+        file: "src/content/pages/grants.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "awards"
+        label: "Awards"
+        file: "src/content/pages/awards.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "get-involved"
+        label: "Get Involved"
+        file: "src/content/pages/get-involved.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "public-data"
+        label: "Public Data"
+        file: "src/content/pages/public-data.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "events"
+        label: "Events"
+        file: "src/content/pages/events.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "policy"
+        label: "Policy"
+        file: "src/content/pages/policy.md"
+        fields:
+          - *header_config
+          - *meta_config
+      - name: "terms"
+        label: "Terms"
+        file: "src/content/pages/terms.md"
+        fields:
+          - *header_config
+          - *meta_config
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog/"
+    create: true
+    identifier_field: "name"
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "body"
+        label: "Content"
+        widget: "markdown"
+        required: false
+      - name: "title"
+        label: "Title"
+        widget: "string"
+        required: true
+      - name: "created-on"
+        label: "Created On"
+        widget: "datetime"
+        required: false
+      - name: "updated-on"
+        label: "Updated On"
+        widget: "datetime"
+        required: false
+      - name: "published-on"
+        label: "Published On"
+        widget: "datetime"
+        required: false
+      - name: "f_author"
+        label: "Author"
+        widget: "string"
+        required: false
+      - name: "f_description"
+        label: "Description"
+        widget: "text"
+        required: true
+      - name: "f_featured"
+        label: "Featured"
+        widget: "boolean"
+        required: false
+        default: false
+      - name: "f_image"
+        label: "Image"
+        widget: "object"
+        required: true
+        fields:
+          - name: "url"
+            label: "Image"
+            widget: "image"
+            required: true
+            allow_multiple: false
+          - name: "alt"
+            label: "alt"
+            widget: "string"
+            required: false
+      - name: "f_recommended-posts"
+        label: "Recommended Posts"
+        widget: "relation"
+        required: false
+        collection: "blog"
+        value_field: "cms/blog/{{slug}}.md"
+        search_fields:
+          - "slug"
+          - "name"
+        display_fields:
+          - "title"
+        multiple: true
+      - name: "f_post-date"
+        label: "Post Date"
+        widget: "datetime"
+        required: true
+      - name: "tags"
+        label: "Tags"
+        widget: "hidden"
+        default: "blog"
+      - name: "layout"
+        label: "Layout"
+        widget: "hidden"
+        default: "[blog].html"
+      - name: "date"
+        label: "Publish Date"
+        widget: "datetime"
+      - *meta_config
+
+  - name: "case_studies"
+    label: "Case Studies"
+    folder: "src/content/case-studies/"
+    create: true
+    identifier_field: "name"
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+        required: true
+      - name: "created-on"
+        label: "Created On"
+        widget: "datetime"
+        required: false
+      - name: "updated-on"
+        label: "Updated On"
+        widget: "datetime"
+        required: false
+      - name: "published-on"
+        label: "Published On"
+        widget: "datetime"
+        required: false
+      - name: "f_color"
+        label: "Color"
+        widget: "color"
+        required: false
+        enableAlpha: true
+        allowInput: true
+      - name: "f_cta"
+        label: "CTA"
+        widget: "string"
+        required: false
+      - name: "f_cta-text"
+        label: "CTA Text"
+        widget: "string"
+        required: false
+      - name: "f_featured"
+        label: "Featured"
+        widget: "boolean"
+        required: false
+        default: false
+      - name: "f_preview-text"
+        label: "Preview Text"
+        widget: "string"
+        required: false
+      - name: "f_description"
+        label: "Description"
+        widget: "text"
+        required: false
+      - name: "f_image"
+        label: "Image"
+        widget: "object"
+        required: false
+        fields:
+          - name: "url"
+            label: "Image"
+            widget: "image"
+            required: false
+            allow_multiple: false
+          - name: "alt"
+            label: "alt"
+            widget: "string"
+            required: false
+      - name: "f_image-background-position"
+        label: "Image Background Position"
+        widget: "string"
+        required: false
+      - name: "tags"
+        label: "Tags"
+        widget: "hidden"
+        default: "case-studies"
+      - name: "layout"
+        label: "Layout"
+        widget: "hidden"
+        default: "[case-studies].html"
+      - name: "date"
+        label: "Publish Date"
+        widget: "datetime"
+      - *meta_config
+
+  - name: "events"
+    label: "Events"
+    folder: "src/content/events/"
+    create: true
+    identifier_field: "name"
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+        required: true
+      - name: "created-on"
+        label: "Created On"
+        widget: "datetime"
+        required: false
+      - name: "updated-on"
+        label: "Updated On"
+        widget: "datetime"
+        required: false
+      - name: "published-on"
+        label: "Published On"
+        widget: "datetime"
+        required: false
+      - name: "f_featured"
+        label: "Featured"
+        widget: "boolean"
+        required: false
+        default: false
+        hint: "Toggle this on if you want this event to be the featured event"
+      - name: "f_description"
+        label: "Description"
+        widget: "string"
+        required: false
+      - name: "f_cta"
+        label: "CTA"
+        widget: "string"
+        required: false
+        hint: "This is where the CTA button will send users"
+      - name: "f_cta-text"
+        label: "CTA Text"
+        widget: "string"
+        required: false
+        hint: "This text is what will appear in the button"
+      - name: "f_start-date"
+        label: "Start Date"
+        widget: "datetime"
+        required: true
+        hint: "This is the first day of the event"
+      - name: "f_end-date"
+        label: "End Date"
+        widget: "datetime"
+        required: true
+        hint: "This is the last day of the event"
+      - name: "f_image"
+        label: "Image"
+        widget: "object"
+        required: true
+        fields:
+          - name: "url"
+            label: "Image"
+            widget: "image"
+            required: true
+            allow_multiple: false
+            hint: ""
+          - name: "alt"
+            label: "alt"
+            widget: "string"
+            required: false
+            hint: "Image Alt"
+      - name: "f_event-date"
+        label: "Event Date"
+        widget: "datetime"
+        required: true
+        hint: "NOTE: This field is what the CMS uses for sort order- please enter the first day of the event."
+      - name: "f_ff-involvement"
+        label: "FF Involvement"
+        widget: "select"
+        required: false
+        options:
+          - label: "Hosted by FF"
+            value: "Hosted by FF"
+          - label: "Supported by FF"
+            value: "Supported by FF"
+          - label: "Sponsored by FF"
+            value: "Sponsored by FF"
+      - name: "f_image-background-position"
+        label: "Image Background Position"
+        widget: "string"
+        required: false
+        hint: ""
+      - name: "f_icon-type"
+        label: "Icon Type"
+        widget: "select"
+        required: true
+        options:
+          - label: "Info"
+            value: "Info"
+          - label: "Register"
+            value: "Register"
+          - label: "Watch"
+            value: "Watch"
+      - name: "tags"
+        label: "Tags"
+        widget: "hidden"
+        default: "events"
+      - name: "layout"
+        label: "Layout"
+        widget: "hidden"
+        default: "[events].html"
+      - name: "date"
+        label: "Publish Date"
+        widget: "datetime"
+      - *meta_config

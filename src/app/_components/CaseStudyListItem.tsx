@@ -1,0 +1,39 @@
+import Image from 'next/image'
+
+import CustomLink from '@/components/CustomLink'
+
+import { CaseStudyData } from '@/types/caseStudyTypes'
+
+export default function CaseStudyListItem({
+  caseStudy,
+}: {
+  caseStudy: CaseStudyData
+}) {
+  const {
+    slug,
+    title,
+    f_image: image,
+    f_description: description,
+    f_cta: ctaUrl,
+    'f_cta-text': ctaText,
+  } = caseStudy
+
+  return (
+    <li>
+      {image?.url && (
+        <Image
+          src={image.url}
+          alt={image.alt || ''}
+          width={280}
+          height={320}
+          className="block object-cover"
+        />
+      )}
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <CustomLink href={ctaUrl || `/case-studies/${slug}`}>
+        {ctaText || 'More'}
+      </CustomLink>
+    </li>
+  )
+}
