@@ -8,10 +8,12 @@ import matter from 'gray-matter'
 import MarkdownContent from '@/components/MarkdownContent'
 
 import { BlogData } from '@/types/blogTypes'
+import { SeoMetadata } from '@/types/metadataTypes'
 
-// import { createMetadata } from '@/utils/createMetadata'
+import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 
+import { PATHS, PathValues } from '@/constants/paths'
 
 type Props = {
   params: {
@@ -38,12 +40,19 @@ function getPostData(slug: string): { content: string; data: BlogData } {
   return { content, data: data as BlogData }
 }
 
-// export async function generateMetadata({ params }: Props) {
-//   const { slug } = params
-//   const { data } = getPostData(slug)
+export async function generateMetadata({ params }: Props) {
+  const { slug } = params
+  const { data } = getPostData(slug)
 
-//   return createMetadata(data.seo.title, data.seo.description)
-// }
+  const seo: SeoMetadata = {
+    title: data.title,
+    description: data.f_description,
+  }
+
+  const path: PathValues = `${PATHS.BLOG}/${slug}`
+
+  return createMetadata(seo, path)
+}
 
 const BlogPost = ({ params }: Props) => {
   const { slug } = params

@@ -4,8 +4,11 @@ import path from 'path'
 import matter from 'gray-matter'
 
 import { EventData } from '@/types/eventTypes'
+import { SeoMetadata } from '@/types/metadataTypes'
 
-// import { createMetadata } from '@/utils/createMetadata'
+import { createMetadata } from '@/utils/createMetadata'
+
+import { PATHS, PathValues } from '@/constants/paths'
 
 type Props = {
   params: {
@@ -32,12 +35,19 @@ function getEventsData(slug: string): EventData {
   return data as EventData
 }
 
-// export async function generateMetadata({ params }: Props) {
-//   const { slug } = params
-//   const data  = getEventsData(slug)
+export async function generateMetadata({ params }: Props) {
+  const { slug } = params
+  const data = getEventsData(slug)
 
-//   return createMetadata(data.seo.title, data.seo.description)
-// }
+  const seo: SeoMetadata = {
+    title: data.title,
+    description: data.f_description || '',
+  }
+
+  const path: PathValues = `${PATHS.EVENTS}/${slug}`
+
+  return createMetadata(seo, path)
+}
 
 const Event = ({ params }: Props) => {
   const { slug } = params

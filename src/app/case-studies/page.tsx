@@ -8,9 +8,11 @@ import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { attributes } from '@/content/pages/case-studies.md'
 
+import { PATHS } from '@/constants/paths'
+
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo.title, seo.description)
+export const metadata = createMetadata(seo, PATHS.CASE_STUDIES)
 
 function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
   return (

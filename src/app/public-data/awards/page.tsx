@@ -7,7 +7,9 @@ import { attributes } from '@/content/pages/awards.md'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo.title, seo.description)
+import { PATHS } from '@/constants/paths'
+
+export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA_AWARDS)
 
 export default function Awards() {
   return (

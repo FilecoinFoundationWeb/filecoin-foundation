@@ -1,13 +1,15 @@
-interface Metadata {
-  title?: string
-  description?: string
-}
+import { Metadata } from 'next'
 
-export function createMetadata(title: string, description: string): Metadata {
+import { SeoMetadata } from '@/types/metadataTypes'
+
+import { PathValues } from '@/constants/paths'
+
+export function createMetadata(seo: SeoMetadata, path: PathValues): Metadata {
   return {
-    title: `${title} · Filecoin Foundation` || 'Filecoin Foundation',
-    description:
-      description ||
-      'The Filecoin Foundation is a non-profit organization dedicated to building the Filecoin ecosystem and the decentralized web.',
+    title: seo.title,
+    description: seo.description,
+    alternates: {
+      canonical: path,
+    },
   }
 }

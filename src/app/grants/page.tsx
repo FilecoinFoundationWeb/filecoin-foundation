@@ -7,9 +7,11 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/grants.md'
 
+import { PATHS } from '@/constants/paths'
+
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo.title, seo.description)
+export const metadata = createMetadata(seo, PATHS.GRANTS)
 
 export default function Grants() {
   return (

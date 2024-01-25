@@ -9,7 +9,9 @@ import { attributes } from '@/content/pages/home.md'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo.title, seo.description)
+import { PATHS } from '@/constants/paths'
+
+export const metadata = createMetadata(seo, PATHS.HOME)
 
 export default function Home() {
   return (

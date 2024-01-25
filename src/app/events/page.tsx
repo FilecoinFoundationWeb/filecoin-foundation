@@ -9,9 +9,11 @@ import { sortEvents } from '@/utils/sortEvents'
 
 import { attributes } from '@/content/pages/events.md'
 
+import { PATHS } from '@/constants/paths'
+
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo.title, seo.description)
+export const metadata = createMetadata(seo, PATHS.EVENTS)
 
 export default function EventsPage() {
   const events: EventData[] = getMarkdownData(

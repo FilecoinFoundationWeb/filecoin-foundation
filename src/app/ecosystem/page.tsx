@@ -6,9 +6,11 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/ecosystem.md'
 
+import { PATHS } from '@/constants/paths'
+
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo.title, seo.description)
+export const metadata = createMetadata(seo, PATHS.ECOSYSTEM)
 
 export default function Ecosystem() {
   return (

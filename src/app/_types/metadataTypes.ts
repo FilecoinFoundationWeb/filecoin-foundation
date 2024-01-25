@@ -10,7 +10,7 @@ type TwitterMetadata = {
   creator?: string
 }
 
-type SeoMetadata = {
+export type SeoMetadata = {
   title: string
   description: string
 }

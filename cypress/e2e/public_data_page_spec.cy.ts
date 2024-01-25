@@ -1,5 +1,6 @@
+import { PATHS } from '../../src/app/_constants/paths'
 import { testPageMetadata } from '../support/test-utils'
 
 describe('Public Data Page', function () {
-  testPageMetadata('public-data')
+  testPageMetadata(PATHS.PUBLIC_DATA)
 })

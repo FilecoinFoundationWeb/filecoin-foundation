@@ -4,8 +4,11 @@ import path from 'path'
 import matter from 'gray-matter'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
+import { SeoMetadata } from '@/types/metadataTypes'
 
-// import { createMetadata } from '@/utils/createMetadata'
+import { createMetadata } from '@/utils/createMetadata'
+
+import { PATHS, PathValues } from '@/constants/paths'
 
 type Props = {
   params: {
@@ -32,12 +35,19 @@ function getCaseStudyData(slug: string): CaseStudyData {
   return data as CaseStudyData
 }
 
-// export async function generateMetadata({ params }: Props) {
-//   const { slug } = params
-//   const data = getCaseStudyData(slug)
+export async function generateMetadata({ params }: Props) {
+  const { slug } = params
+  const data = getCaseStudyData(slug)
 
-//   return createMetadata(data.seo.title, data.seo.description)
-// }
+  const seo: SeoMetadata = {
+    title: data.title,
+    description: data.f_description || '',
+  }
+
+  const path: PathValues = `${PATHS.CASE_STUDIES}/${slug}`
+
+  return createMetadata(seo, path)
+}
 
 const CaseStudy = ({ params }: Props) => {
   const { slug } = params
