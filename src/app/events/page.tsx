@@ -9,7 +9,7 @@ import { sortEvents } from '@/utils/sortEvents'
 
 import { attributes } from '@/content/pages/events.md'
 
-import { PATHS } from '@/constants/paths'
+import { PATHS, CONTENT_PATHS } from '@/constants/paths'
 
 const { title, description, seo } = attributes
 
@@ -17,8 +17,8 @@ export const metadata = createMetadata(seo, PATHS.EVENTS)
 
 export default function EventsPage() {
   const events: EventData[] = getMarkdownData(
-    'src/content/events'
-  ) as EventData[]
+    CONTENT_PATHS.EVENTS.POSTS as string
+  )
   const sortedEvents = sortEvents(events)
 
   return (

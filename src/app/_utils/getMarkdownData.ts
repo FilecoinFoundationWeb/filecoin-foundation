@@ -3,7 +3,7 @@ import path from 'path'
 
 import matter from 'gray-matter'
 
-export const getMarkdownData = (directoryPath: string) => {
+export const getMarkdownData = <T>(directoryPath: string): T[] => {
   const directory = path.join(process.cwd(), directoryPath)
   const filenames = fs.readdirSync(directory)
 
@@ -13,6 +13,6 @@ export const getMarkdownData = (directoryPath: string) => {
     const { data } = matter(fileContents)
     const slug = filename.replace(/\.md$/, '')
 
-    return { ...data, slug }
+    return { ...data, slug } as T
   })
 }

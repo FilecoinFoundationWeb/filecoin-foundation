@@ -6,14 +6,13 @@ import Image from 'next/image'
 
 import CustomLink from '@/components/CustomLink'
 
-import { BlogData } from '@/types/blogTypes'
+import { BlogPostData } from '@/types/blogPostTypes'
 
 import { formatDate } from '@/utils/formatDate'
 
-
 const POSTS_PER_LOAD = 9
 
-export default function BlogClient({ posts }: { posts: BlogData[] }) {
+export default function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const [searchQuery, setSearchQuery] = useState<string>('')
   const [visibleCount, setVisibleCount] = useState<number>(POSTS_PER_LOAD)
 

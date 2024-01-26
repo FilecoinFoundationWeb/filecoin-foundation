@@ -7,7 +7,7 @@ import matter from 'gray-matter'
 
 import MarkdownContent from '@/components/MarkdownContent'
 
-import { BlogData } from '@/types/blogTypes'
+import { BlogPostData } from '@/types/blogPostTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -21,7 +21,7 @@ type Props = {
   }
 }
 
-function getPostData(slug: string): { content: string; data: BlogData } {
+function getPostData(slug: string): { content: string; data: BlogPostData } {
   const filePath = path.join(
     process.cwd(),
     'src',
@@ -37,7 +37,7 @@ function getPostData(slug: string): { content: string; data: BlogData } {
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const { content, data } = matter(fileContents)
 
-  return { content, data: data as BlogData }
+  return { content, data: data as BlogPostData }
 }
 
 export async function generateMetadata({ params }: Props) {

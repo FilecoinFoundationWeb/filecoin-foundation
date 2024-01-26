@@ -8,7 +8,7 @@ import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { attributes } from '@/content/pages/case-studies.md'
 
-import { PATHS } from '@/constants/paths'
+import { PATHS, CONTENT_PATHS } from '@/constants/paths'
 
 const { title, description, seo } = attributes
 
@@ -27,8 +27,8 @@ function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
 
 export default function CaseStudiesPage() {
   const caseStudies: CaseStudyData[] = getMarkdownData(
-    'src/content/case-studies'
-  ) as CaseStudyData[]
+    CONTENT_PATHS.CASE_STUDIES.POSTS as string
+  )
 
   return (
     <>

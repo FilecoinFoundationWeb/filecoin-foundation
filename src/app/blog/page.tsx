@@ -1,13 +1,13 @@
 import PageHeader from '@/components/PageHeader'
 
-import { BlogData } from '@/types/blogTypes'
+import { BlogPostData } from '@/types/blogPostTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { attributes } from '@/content/pages/blog.md'
 
-import { PATHS } from '@/constants/paths'
+import { PATHS, CONTENT_PATHS } from '@/constants/paths'
 
 import BlogClient from './BlogClient'
 
@@ -16,7 +16,9 @@ const { title, description, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.BLOG)
 
 export default function BlogPage() {
-  const posts: BlogData[] = getMarkdownData('src/content/blog') as BlogData[]
+  const posts: BlogPostData[] = getMarkdownData(
+    CONTENT_PATHS.BLOG.POSTS as string
+  )
 
   return (
     <>

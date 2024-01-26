@@ -1,6 +1,6 @@
 import { Metadata } from '@/types/metadataTypes'
 
-export type BlogData = {
+export type BlogPostData = {
   body?: string
   title: string
   'created-on'?: string
