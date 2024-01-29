@@ -167,6 +167,7 @@ collections:
 
   - name: "blog"
     label: "Blog Posts"
+    label_singular: "Blog Post"
     folder: "src/content/blog/"
     create: true
     identifier_field: "name"
@@ -251,6 +252,7 @@ collections:
 
   - name: "case_studies"
     label: "Case Studies"
+    label_singular: "Case Study"
     folder: "src/content/case-studies/"
     create: true
     identifier_field: "name"
@@ -334,6 +336,7 @@ collections:
   - name: "events"
     label: "Events"
     folder: "src/content/events/"
+    label_singular: "Event"
     create: true
     identifier_field: "name"
     extension: "md"
