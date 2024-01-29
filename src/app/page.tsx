@@ -37,7 +37,7 @@ export default function Home() {
         content="To help the ecosystem flourish, and to open up the internet for a safer, stronger, and more reliable environment where everyone, not just a few giants, can thrive."
       />
 
-      <Section
+      {/* <Section
         title="Resources"
         content="Explore the Filecoin Project Ecosystem and Tooling"
         link={{ url: 'https://filecoin.io/slack', text: 'Join the Community' }}
@@ -51,7 +51,7 @@ export default function Home() {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         />
-      </Section>
+      </Section> */}
 
       <Section
         title="Dev Grants"
