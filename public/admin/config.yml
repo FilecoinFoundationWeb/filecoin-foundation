@@ -71,6 +71,11 @@ collections:
   - name: "shared"
     label: "Shared"
     files:
+      - name: "medatadata"
+        label: "medatadata"
+        file: "src/content/shared/site-metadata.yml"
+        fields:
+          - *meta_config
       - name: "navigation"
         label: "Navigation"
         file: "src/content/shared/navigation.yml"
