@@ -1,20 +1,65 @@
+import { WebPage, WithContext } from 'schema-dts'
+
 import PageHeader from '@/components/PageHeader'
 import Section from '@/components/Section'
+import StructuredDataScript from '@/components/StructuredDataScript'
 import VideoArticle from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/about.md'
 
 import { PATHS } from '@/constants/paths'
+import {
+  CONTACT_EMAIL,
+  GRANTS_EMAIL,
+  ORGANIZATION_NAME,
+  SOCIAL_MEDIA_URLS,
+} from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ABOUT)
 
+const aboutPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.ABOUT,
+})
+
+const aboutPageStructuredData: WithContext<WebPage> = {
+  ...aboutPageBaseData,
+  about: {
+    '@type': 'Organization',
+    name: ORGANIZATION_NAME,
+    founder: [
+      {
+        '@type': 'Person',
+        name: 'Marta Belcher', // Adjust
+      },
+    ],
+    foundingDate: '2024-01-01', // Adjust
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'Media and collaboration inquiries',
+        email: CONTACT_EMAIL,
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'Ecosystem grants inquiries',
+        email: GRANTS_EMAIL,
+      },
+    ],
+  },
+  sameAs: Object.values(SOCIAL_MEDIA_URLS),
+}
+
 export default function About() {
   return (
     <>
+      <StructuredDataScript structuredData={aboutPageStructuredData} />
       <PageHeader title={title} description={description} />
 
       <Section

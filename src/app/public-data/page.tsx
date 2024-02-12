@@ -1,8 +1,10 @@
 import CustomLink from '@/components/CustomLink'
 import FeaturedCaseStudies from '@/components/FeaturedCaseStudies'
 import PageHeader from '@/components/PageHeader'
+import StructuredDataScript from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/public-data.md'
 
@@ -12,9 +14,16 @@ import { PATHS } from '@/constants/paths'
 
 export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA)
 
+const governancePageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.PUBLIC_DATA,
+})
+
 export default function PublicData() {
   return (
     <>
+      <StructuredDataScript structuredData={governancePageBaseData} />
       <PageHeader title={title} description={description} />
 
       <section>

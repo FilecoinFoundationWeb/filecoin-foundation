@@ -1,7 +1,9 @@
 import CustomLink from '@/components/CustomLink'
 import PageHeader from '@/components/PageHeader'
+import StructuredDataScript from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/awards.md'
 
@@ -11,9 +13,16 @@ import { PATHS } from '@/constants/paths'
 
 export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA_AWARDS)
 
+const awardsPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.PUBLIC_DATA_AWARDS,
+})
+
 export default function Awards() {
   return (
     <>
+      <StructuredDataScript structuredData={awardsPageBaseData} />
       <PageHeader title={title} description={description} />
 
       <section>

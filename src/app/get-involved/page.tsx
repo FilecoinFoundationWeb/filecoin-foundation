@@ -1,8 +1,10 @@
 import CustomLink from '@/components/CustomLink'
 import PageHeader from '@/components/PageHeader'
+import StructuredDataScript from '@/components/StructuredDataScript'
 import VideoArticle from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/get-involved.md'
 
@@ -12,9 +14,16 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.GET_INVOLVED)
 
+const getInvolvedPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.GOVERNANCE,
+})
+
 export default function GetInvolved() {
   return (
     <>
+      <StructuredDataScript structuredData={getInvolvedPageBaseData} />
       <PageHeader title={title} description={description} />
 
       <section>
