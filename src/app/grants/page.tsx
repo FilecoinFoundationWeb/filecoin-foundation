@@ -1,25 +1,35 @@
 import CustomLink from '@/components/CustomLink'
 import GetInvolvedList from '@/components/GetInvolvedList'
 import PageHeader from '@/components/PageHeader'
+import StructuredDataScript from '@/components/StructuredDataScript'
 import UpcomingEvents from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
 import { PATHS } from '@/constants/paths'
+import { GRANTS_EMAIL } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.GRANTS)
 
+const grantsPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.GRANTS,
+})
+
 export default function Grants() {
   return (
     <>
+      <StructuredDataScript structuredData={grantsPageBaseData} />
       <PageHeader
         title={title}
         description={description}
-        link={{ url: 'mailto:devgrants@fil.org', text: 'Email for more info' }}
+        link={{ url: `mailto:${GRANTS_EMAIL}`, text: 'Email for more info' }}
       />
 
       <section>

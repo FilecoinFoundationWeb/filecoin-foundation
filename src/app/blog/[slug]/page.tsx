@@ -4,16 +4,20 @@ import path from 'path'
 import Image from 'next/image'
 
 import matter from 'gray-matter'
+import { BlogPosting, WithContext } from 'schema-dts'
 
 import MarkdownContent from '@/components/MarkdownContent'
+import StructuredDataScript from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
+import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { PATHS, PathValues } from '@/constants/paths'
+import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 type Props = {
   params: {
@@ -54,17 +58,44 @@ export async function generateMetadata({ params }: Props) {
   return createMetadata(seo, path)
 }
 
-const BlogPost = ({ params }: Props) => {
+function createBlogPostStructuredData(
+  data: BlogPostData
+): WithContext<BlogPosting> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: data.title,
+    description: data.f_description,
+    image: data.f_image.url || '',
+    author: {
+      '@type': 'Person',
+      name: data.f_author || ORGANIZATION_NAME,
+    },
+    datePublished: data.date,
+    dateModified: data['updated-on'] || data.date,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${BASE_URL}${PATHS.BLOG}/${data.slug}`,
+    },
+    ...(typeof baseOrganizationSchema === 'object'
+      ? { publisher: baseOrganizationSchema }
+      : {}),
+  }
+}
+
+export default function BlogPost({ params }: Props) {
   const { slug } = params
   const { content, data } = getPostData(slug)
 
-  const formattedDate = formatDate(data.date, 'blog')
-
   return (
     <>
+      <StructuredDataScript
+        structuredData={createBlogPostStructuredData(data)}
+      />
+
       <header>
-        <span className="block">{formattedDate}</span>
-        <h1 className="mb-5 text-xl font-bold ">{data.title}</h1>
+        <span className="block">{formatDate(data.date, 'blog')}</span>
+        <h1 className="mb-5 text-xl font-bold">{data.title}</h1>
         <Image
           src={data.f_image.url}
           alt={data.f_image.alt || ''}
@@ -81,5 +112,3 @@ const BlogPost = ({ params }: Props) => {
     </>
   )
 }
-
-export default BlogPost

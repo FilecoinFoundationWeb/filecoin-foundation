@@ -1,8 +1,10 @@
 import CustomLink from '@/components/CustomLink'
 import FeaturedCaseStudies from '@/components/FeaturedCaseStudies'
 import PageHeader from '@/components/PageHeader'
+import StructuredDataScript from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
 
@@ -12,9 +14,16 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ECOSYSTEM)
 
+const ecosystemPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.ECOSYSTEM,
+})
+
 export default function Ecosystem() {
   return (
     <>
+      <StructuredDataScript structuredData={ecosystemPageBaseData} />
       <PageHeader
         title={title}
         description={description}
