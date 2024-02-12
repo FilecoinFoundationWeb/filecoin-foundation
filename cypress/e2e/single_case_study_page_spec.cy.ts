@@ -1,4 +1,4 @@
-import BASE_URL from '../../src/app/_constants/baseURL'
+import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 import { PATHS } from '../../src/app/_constants/paths'
 
 describe('Single Case Study Page', function () {

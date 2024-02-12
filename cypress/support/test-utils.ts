@@ -1,7 +1,7 @@
 import matter from 'gray-matter'
 
-import BASE_URL from '../../src/app/_constants/baseURL'
 import { PATHS, PathValues } from '../../src/app/_constants/paths'
+import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 export function testPageMetadata(
   pagePath: PathValues,

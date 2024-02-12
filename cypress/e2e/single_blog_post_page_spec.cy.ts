@@ -1,5 +1,5 @@
-import BASE_URL from '../../src/app/_constants/baseURL'
 import { PATHS } from '../../src/app/_constants/paths'
+import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 describe('Single Blog Post Page', function () {
   it('should check metadata of the first blog post', function () {

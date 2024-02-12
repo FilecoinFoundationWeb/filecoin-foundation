@@ -6,8 +6,8 @@ import { CaseStudyData } from '@/types/caseStudyTypes'
 
 import { getMarkdownData } from '@/utils/getMarkdownData'
 
-import BASE_URL from '@/constants/baseURL'
 import { PATHS, CONTENT_PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = Object.values(PATHS).map((path) => ({
