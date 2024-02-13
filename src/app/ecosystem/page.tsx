@@ -96,8 +96,8 @@ export default function Ecosystem() {
               Become an integral part of the expanding Filecoin Ecosystem.
             </h2>
             <p>
-              If you've developed on Filecoin and don't find your project
-              listed, share your details below.
+              If you&apos;ve developed on Filecoin and don&apos;t find your
+              project listed, share your details below.
             </p>
             <CustomLink href="#">Submit Your Project</CustomLink>
           </article>

@@ -72,9 +72,9 @@ export default function Grants() {
       <section>
         <h2>Our Mission</h2>
         <p>
-          The Foundation's key role is to find ways for the Filecoin community
-          to solve the problems we face as a community, and help facilitate
-          collective action.
+          The Foundation&apos;s key role is to find ways for the Filecoin
+          community to solve the problems we face as a community, and help
+          facilitate collective action.
         </p>
       </section>
 

@@ -128,8 +128,8 @@ export default function Awards() {
         </article>
         <article>
           <h3>
-            What if I want to apply, but I don't live or work in the featured
-            city?
+            What if I want to apply, but I don&apos;t live or work in the
+            featured city?
           </h3>
           <p>
             If you’re an individual, group, or organization in the civic tech
