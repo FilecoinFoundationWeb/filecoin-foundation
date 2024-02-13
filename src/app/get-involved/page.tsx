@@ -30,8 +30,8 @@ export default function GetInvolved() {
         <h2>Careers</h2>
         <p>
           The Filecoin Foundation is growing and hitting new milestones. And as
-          we build, we're hiring for roles to promote the Filecoin ecosystem and
-          the broader web3 movement. Check out our open roles.
+          we build, we&apos;re hiring for roles to promote the Filecoin
+          ecosystem and the broader web3 movement. Check out our open roles.
         </p>
         <CustomLink href="https://boards.greenhouse.io/filecoinfoundation">
           View All
