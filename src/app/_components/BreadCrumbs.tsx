@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 export default function BreadCrumbs() {
   const pathname = usePathname()
@@ -25,7 +25,7 @@ export default function BreadCrumbs() {
     <nav aria-label="breadcrumbs">
       <ol className="flex gap-2.5 h-5">
         <li className="m-0">
-          <CustomLink href={'/'}>Home</CustomLink>
+          <TextLink href={'/'}>Home</TextLink>
         </li>
         {pathNames.map((path, index) => {
           const href = '/' + pathNames.slice(0, index + 1).join('/')
@@ -35,9 +35,9 @@ export default function BreadCrumbs() {
           return (
             <li key={href} className="flex gap-2.5 m-0">
               <span>{'/'}</span>
-              <CustomLink className={itemClasses} href={href}>
+              <TextLink className={itemClasses} href={href}>
                 {label}
-              </CustomLink>
+              </TextLink>
             </li>
           )
         })}

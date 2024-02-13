@@ -1,6 +1,6 @@
-import CustomLink from '@/components/CustomLink'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -62,9 +62,9 @@ export default function Awards() {
           to $10,000 USD to support projects that leverage datasets or advance
           learning around datasets stored on decentralized technology.
         </p>
-        <CustomLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
           Apply for a Public Data Award
-        </CustomLink>
+        </TextLink>
       </section>
 
       <section>
@@ -143,9 +143,9 @@ export default function Awards() {
         <article>
           <h3>Where can I send any additional questions?</h3>
           <p>
-            <CustomLink href="mailto:impact@fil.org">
+            <TextLink href="mailto:impact@fil.org">
               You can reach out to us anytime with questions and thoughts.
-            </CustomLink>
+            </TextLink>
           </p>
         </article>
       </section>
@@ -156,9 +156,9 @@ export default function Awards() {
           Join the movement to create the Public Data Commons, an initiative to
           make public data more resilient, accessible, and cost-effective.
         </p>
-        <CustomLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
           Learn More
-        </CustomLink>
+        </TextLink>
       </section>
     </>
   )

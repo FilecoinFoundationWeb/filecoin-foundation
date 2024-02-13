@@ -1,7 +1,7 @@
-import CustomLink from '@/components/CustomLink'
 import FeaturedCaseStudies from '@/components/FeaturedCaseStudies'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -40,14 +40,14 @@ export default function Ecosystem() {
             <span>Featured Projects</span>
             <h2>Title</h2>
             <p>Description</p>
-            <CustomLink href="#">See More</CustomLink>
+            <TextLink href="#">See More</TextLink>
           </article>
 
           <article>
             <span>Featured Projects</span>
             <h2>Title</h2>
             <p>Description</p>
-            <CustomLink href="#">See More</CustomLink>
+            <TextLink href="#">See More</TextLink>
           </article>
 
           <section>
@@ -69,21 +69,21 @@ export default function Ecosystem() {
                   <h2>Project Name</h2>
                   <span>Topic</span>
                   <p>Project Description</p>
-                  <CustomLink href="#">More</CustomLink>
+                  <TextLink href="#">More</TextLink>
                 </article>
 
                 <article>
                   <h2>Project Name</h2>
                   <span>Topic</span>
                   <p>Project Description</p>
-                  <CustomLink href="#">More</CustomLink>
+                  <TextLink href="#">More</TextLink>
                 </article>
 
                 <article>
                   <h2>Project Name</h2>
                   <span>Topic</span>
                   <p>Project Description</p>
-                  <CustomLink href="#">More</CustomLink>
+                  <TextLink href="#">More</TextLink>
                 </article>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function Ecosystem() {
               If you&apos;ve developed on Filecoin and don&apos;t find your
               project listed, share your details below.
             </p>
-            <CustomLink href="#">Submit Your Project</CustomLink>
+            <TextLink href="#">Submit Your Project</TextLink>
           </article>
 
           <article>
@@ -108,7 +108,7 @@ export default function Ecosystem() {
               Engage with Filecoin creators at real-world gatherings worldwide
               to discuss and refine your ideas.
             </p>
-            <CustomLink href="#">→</CustomLink>
+            <TextLink href="#">→</TextLink>
           </article>
 
           <article>
@@ -117,7 +117,7 @@ export default function Ecosystem() {
               Engage with fellow Web3 builders on Filecoin, exchange insights,
               and initiate collaborations on future ventures.
             </p>
-            <CustomLink href="#">→</CustomLink>
+            <TextLink href="#">→</TextLink>
           </article>
         </section>
 

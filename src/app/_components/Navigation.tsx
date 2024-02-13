@@ -1,5 +1,5 @@
-import CustomLink from '@/components/CustomLink'
 import Logo from '@/components/Logo'
+import { TextLink } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
 
@@ -27,7 +27,7 @@ const sortedNavigationItems = navigationItems.sort((a, b) => a.order - b.order)
 function NavigationItem({ item }: { item: NavigationItem }) {
   return (
     <li className="mr-5 last:mr-0 whitespace-nowrap">
-      <CustomLink href={item.path}>{item.title}</CustomLink>
+      <TextLink href={item.path}>{item.title}</TextLink>
     </li>
   )
 }
@@ -35,10 +35,10 @@ function NavigationItem({ item }: { item: NavigationItem }) {
 export default function Navigation() {
   return (
     <nav className="flex justify-between items-center p-4">
-      <CustomLink className="block grow" href="/" aria-label="Go to homepage">
+      <TextLink className="block grow" href="/" aria-label="Go to homepage">
         <Logo />
         <span className="sr-only">Home</span>
-      </CustomLink>
+      </TextLink>
       <ul className="list-none flex items-center m-0 p-0">
         {sortedNavigationItems.map((item: NavigationItem) => (
           <NavigationItem key={item.path} item={item} />
