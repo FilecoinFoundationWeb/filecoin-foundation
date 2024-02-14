@@ -1,4 +1,4 @@
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 type Props = {
   title: string
@@ -11,7 +11,7 @@ export default function PageHeader({ title, description, link }: Props) {
     <header>
       <h1>{title}</h1>
       <p>{description}</p>
-      {link && <CustomLink href={link.url}>{link.text}</CustomLink>}
+      {link && <TextLink href={link.url}>{link.text}</TextLink>}
     </header>
   )
 }

@@ -1,7 +1,7 @@
-import CustomLink from '@/components/CustomLink'
 import GetInvolvedList from '@/components/GetInvolvedList'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 import UpcomingEvents from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -145,9 +145,9 @@ export default function Grants() {
           A brief overview of the motivation, principles, and mechanisms of
           Filecoin Plus, and how it incentivizes useful storage on the network.
         </p>
-        <CustomLink href="https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/">
+        <TextLink href="https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/">
           Learn More
-        </CustomLink>
+        </TextLink>
       </section>
 
       <section>
@@ -157,7 +157,7 @@ export default function Grants() {
             The Filecoin community includes thousands of developers,
             technologists, users, and enthusiasts all over the world.
           </p>
-          <CustomLink href="https://filecoin.io/slack">Learn More</CustomLink>
+          <TextLink href="https://filecoin.io/slack">Learn More</TextLink>
         </header>
         <GetInvolvedList />
       </section>

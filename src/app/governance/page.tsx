@@ -1,6 +1,6 @@
-import CustomLink from '@/components/CustomLink'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 import UpcomingEvents from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -137,9 +137,9 @@ export default function Governance() {
           <p>
             If you are looking to apply for DataCap as a client, head over to
             the{' '}
-            <CustomLink href="https://plus.fil.org/">
+            <TextLink href="https://plus.fil.org/">
               Filecoin Plus app portal
-            </CustomLink>
+            </TextLink>
             .
           </p>
         </article>
@@ -148,9 +148,9 @@ export default function Governance() {
           <p>
             If you are interested in applying to become a Filecoin Plus notary,
             head to the{' '}
-            <CustomLink href="https://github.com/filecoin-project/notary-governance/">
+            <TextLink href="https://github.com/filecoin-project/notary-governance/">
               notary governance repository
-            </CustomLink>
+            </TextLink>
             .
           </p>
         </article>
@@ -160,14 +160,14 @@ export default function Governance() {
         <p>Community governance calls happen every other Tuesday.</p>
         <p>
           Visit the{' '}
-          <CustomLink href="/events">Filecoin community events hub</CustomLink>{' '}
-          and join the conversation in the{' '}
-          <CustomLink href="https://filecoinproject.slack.com/?redir=%2Farchives%2FC01DLAPKDGX">
+          <TextLink href="/events">Filecoin community events hub</TextLink> and
+          join the conversation in the{' '}
+          <TextLink href="https://filecoinproject.slack.com/?redir=%2Farchives%2FC01DLAPKDGX">
             #fil-plus Slack channel
-          </CustomLink>
+          </TextLink>
           .
         </p>
-        <CustomLink href="/get-involved">Get Involved</CustomLink>
+        <TextLink href="/get-involved">Get Involved</TextLink>
       </section>
       <section>
         <h2>Events & Hackathons</h2>

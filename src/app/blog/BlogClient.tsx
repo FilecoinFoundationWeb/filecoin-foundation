@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 
 import Image from 'next/image'
 
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
@@ -64,7 +64,7 @@ export default function BlogClient({ posts }: { posts: BlogPostData[] }) {
             <h3>{post.title}</h3>
             <p>{post.f_description}</p>
             <span className="block">{formatDate(post.date, 'blog')}</span>
-            <CustomLink href={`/blog/${post.slug}`}>Read More</CustomLink>
+            <TextLink href={`/blog/${post.slug}`}>Read More</TextLink>
           </li>
         ))}
       </ul>

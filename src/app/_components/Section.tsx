@@ -1,4 +1,4 @@
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 type Props = {
   title: string
@@ -15,7 +15,7 @@ export default function Section({ title, content, link, children }: Props) {
       ) : (
         <p>{content}</p>
       )}
-      {link && <CustomLink href={link.url}>{link.text}</CustomLink>}
+      {link && <TextLink href={link.url}>{link.text}</TextLink>}
       {children}
     </section>
   )

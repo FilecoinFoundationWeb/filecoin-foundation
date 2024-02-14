@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 import { EventData } from '@/types/eventTypes'
 
@@ -39,9 +39,9 @@ export default function EventListItem({ event }: { event: EventData }) {
       </div>
       <h3>{title}</h3>
       <p>{description}</p>
-      <CustomLink href={ctaUrl || `/events/${slug}`}>
+      <TextLink href={ctaUrl || `/events/${slug}`}>
         {ctaText || 'More'}
-      </CustomLink>
+      </TextLink>
     </li>
   )
 }

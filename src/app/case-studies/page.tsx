@@ -1,8 +1,8 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import CustomLink from '@/components/CustomLink'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
@@ -56,9 +56,9 @@ const caseStudiesPageStructuredData: WithContext<WebPage> = {
 function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
   return (
     <li>
-      <CustomLink href={`/case-studies/${caseStudy.slug}`}>
+      <TextLink href={`/case-studies/${caseStudy.slug}`}>
         <h3>{caseStudy.title}</h3>
-      </CustomLink>
+      </TextLink>
       <p>{caseStudy.f_description}</p>
     </li>
   )

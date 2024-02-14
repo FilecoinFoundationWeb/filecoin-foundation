@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
@@ -31,9 +31,9 @@ export default function CaseStudyListItem({
       )}
       <h3>{title}</h3>
       <p>{description}</p>
-      <CustomLink href={ctaUrl || `/case-studies/${slug}`}>
+      <TextLink href={ctaUrl || `/case-studies/${slug}`}>
         {ctaText || 'More'}
-      </CustomLink>
+      </TextLink>
     </li>
   )
 }

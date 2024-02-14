@@ -1,4 +1,4 @@
-import CustomLink from '@/components/CustomLink'
+import { TextLink } from '@/components/TextLink'
 
 type Props = {
   title: string
@@ -11,7 +11,7 @@ export default function VideoArticle({ title, content, link }: Props) {
     <article>
       <h3>{title}</h3>
       <p>{content}</p>
-      <CustomLink href={link}>Watch Video</CustomLink>
+      <TextLink href={link}>Watch Video</TextLink>
     </article>
   )
 }

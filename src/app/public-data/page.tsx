@@ -1,7 +1,7 @@
-import CustomLink from '@/components/CustomLink'
 import FeaturedCaseStudies from '@/components/FeaturedCaseStudies'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -77,9 +77,9 @@ export default function PublicData() {
 
       <section>
         <h2>Public data belongs in the hands of the people</h2>
-        <CustomLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
           Join the Public Data Commons
-        </CustomLink>
+        </TextLink>
       </section>
 
       <section>
@@ -87,8 +87,8 @@ export default function PublicData() {
         <p>
           Governments and communities need accessible and cost-effective ways to
           store public datasets. Filecoin makes decentralized storage easy, and
-          it costs <CustomLink href="https://file.app/">a fraction</CustomLink>{' '}
-          of the price of centralized cloud storage.
+          it costs <TextLink href="https://file.app/">a fraction</TextLink> of
+          the price of centralized cloud storage.
         </p>
         <p>
           On the Filecoin network, files are stored on a distributed network of
@@ -97,9 +97,9 @@ export default function PublicData() {
           mission of Filecoin is to create a decentralized, efficient, and
           robust foundation for humanity’s information.
         </p>
-        <CustomLink href="https://filecoin.io/">
+        <TextLink href="https://filecoin.io/">
           Learn More about Filecoin
-        </CustomLink>
+        </TextLink>
       </section>
 
       <section>
@@ -109,9 +109,9 @@ export default function PublicData() {
           local civic technology groups to store and/or access their community
           datasets on the decentralized web.
         </p>
-        <CustomLink href="/public-data/awards">
+        <TextLink href="/public-data/awards">
           Read More and Apply for Awards
-        </CustomLink>
+        </TextLink>
       </section>
 
       <section>
@@ -120,9 +120,9 @@ export default function PublicData() {
           Join the movement to create the Public Data Commons, an initiative to
           make public data more resilient, accessible, and cost-effective.
         </p>
-        <CustomLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
           Learn More
-        </CustomLink>
+        </TextLink>
       </section>
 
       <section>
@@ -164,14 +164,14 @@ export default function PublicData() {
           <p>
             If you are a government official interested in having your city join
             the Public Data Commons,{' '}
-            <CustomLink href="impact@fil.org">reach out to us</CustomLink>.
+            <TextLink href="impact@fil.org">reach out to us</TextLink>.
           </p>
           <p>
             If you are from a civic technology group and want to leverage public
             datasets hosted on decentralized storage,
-            <CustomLink href="https://airtable.com/shrmNURZt1khzB00M">
+            <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
               fill out this form
-            </CustomLink>{' '}
+            </TextLink>{' '}
             and we will notify you if there is a Public Data Awards program
             launched for your city.
           </p>
@@ -182,25 +182,20 @@ export default function PublicData() {
           <p>
             Filecoin is the world’s most transparent blockchain when it comes to
             electricity consumption. Check the network’s energy use right now at
-            <CustomLink href="https://filecoin.energy/">
-              filecoin.energy
-            </CustomLink>
-            !{' '}
-            <CustomLink href="https://green.filecoin.io/">
-              Learn more
-            </CustomLink>
+            <TextLink href="https://filecoin.energy/">filecoin.energy</TextLink>
+            ! <TextLink href="https://green.filecoin.io/">Learn more</TextLink>
             about the Filecoin community’s commitment to energy efficiency.
           </p>
         </article>
         <p>
           Have a question not addressed here?{' '}
-          <CustomLink href="mailto:impact@fil.org">Reach out to us.</CustomLink>
+          <TextLink href="mailto:impact@fil.org">Reach out to us.</TextLink>
         </p>
       </section>
 
       <section>
         <h2>Highlighted Open Data Events</h2>
-        <CustomLink href="/events">View All Events</CustomLink>
+        <TextLink href="/events">View All Events</TextLink>
         <div>
           <h3>Stay Tuned</h3>
           <p>
@@ -219,9 +214,9 @@ export default function PublicData() {
           Join the movement to create the Public Data Commons, an initiative to
           make public data more resilient, accessible, and cost-effective.
         </p>
-        <CustomLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
           Learn More
-        </CustomLink>
+        </TextLink>
       </section>
     </>
   )
