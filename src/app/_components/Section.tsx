@@ -1,20 +1,33 @@
 import { TextLink } from '@/components/TextLink'
 
 type Props = {
-  title: string
   content: string | string[]
+  kicker?: string
   link?: { url: string; text: string }
+  title: string
   children?: React.ReactNode
 }
-export default function Section({ title, content, link, children }: Props) {
+
+function Content({ content }: { content: string | string[] }) {
+  if (Array.isArray(content)) {
+    return (
+      <>
+        {content.map((paragraph, index) => (
+          <p key={`paragraph-${index}`}>{paragraph}</p>
+        ))}
+      </>
+    )
+  }
+
+  return <p>{content}</p>
+}
+
+export function Section({ content, kicker, link, title, children }: Props) {
   return (
     <section>
+      {kicker && <span className="uppercase text-sm">{kicker}</span>}
       <h2>{title}</h2>
-      {Array.isArray(content) ? (
-        content.map((paragraph, index) => <p key={index}>{paragraph}</p>)
-      ) : (
-        <p>{content}</p>
-      )}
+      <Content content={content} />
       {link && <TextLink href={link.url}>{link.text}</TextLink>}
       {children}
     </section>

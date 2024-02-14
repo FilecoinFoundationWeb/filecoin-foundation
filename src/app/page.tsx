@@ -1,6 +1,8 @@
-import GetInvolvedList from '@/components/GetInvolvedList'
+import { GetInvolvedList } from '@/components/GetInvolvedList'
 import PageHeader from '@/components/PageHeader'
-import Section from '@/components/Section'
+import { ResourcesList } from '@/components/ResourcesList'
+import { Section } from '@/components/Section'
+import { TextLink } from '@/components/TextLink'
 import VideoArticle from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -16,58 +18,65 @@ export const metadata = createMetadata(seo, PATHS.HOME)
 export default function Home() {
   return (
     <>
-      <PageHeader title={title} description={description} />
+      <PageHeader
+        title={title}
+        description={description}
+        link={{ url: '/get-involved', text: 'Get Involved' }}
+      />
 
       <Section
         title="What we do"
         content="We exist to help people build their vision on Filecoin and to support the growth of the decentralized web."
       />
 
-      <Section
-        title="Filecoin Foundation (FF) and Lockheed Martin"
-        content="Working together to develop a program for deploying the Interplanetary File System (IPFS) in space."
-        link={{
-          url: 'https://www.youtube.com/watch?v=6OY4xAs3Grg?si=1ySPxDLCx9Ha6bbD',
-          text: 'Watch Video',
-        }}
-      />
-
-      <Section
-        title="The Foundation provides resources, guidance, and fair, equitable principles"
-        content="To help the ecosystem flourish, and to open up the internet for a safer, stronger, and more reliable environment where everyone, not just a few giants, can thrive."
-      />
-
-      {/* <Section
-        title="Resources"
-        content="Explore the Filecoin Project Ecosystem and Tooling"
-        link={{ url: 'https://filecoin.io/slack', text: 'Join the Community' }}
-      >
+      <section>
+        <p>
+          Filecoin Foundation (FF) and Lockheed Martin are working together to
+          develop a program for deploying the Interplanetary File System (IPFS)
+          in space.
+        </p>
+        <TextLink href="https://www.youtube.com/watch?v=6OY4xAs3Grg?si=1ySPxDLCx9Ha6bbD">
+          Watch Video
+        </TextLink>
         <iframe
           allowFullScreen
           width="560"
           height="315"
           aria-label="Embedded YouTube Video"
-          src="https://www.youtube.com/embed/6OY4xAs3Grg?si=1ySPxDLCx9Ha6bbD"
+          src="https://www.youtube.com/embed/WqwVq0921Y8?si=ycT2_CNrzZc2CVxG"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
         />
-      </Section> */}
+      </section>
+
+      <section>
+        <p>
+          The Foundation provides resources, guidance, and fair, equitable
+          principles to help the ecosystem flourish, and to open up the internet
+          for a safer, stronger, and more reliable environment where everyone,
+          not just a few giants, can thrive.
+        </p>
+      </section>
 
       <Section
-        title="Dev Grants"
-        content={[
-          'We fund talented and eager teams that want to work with us to build a more robust, efficient, and decentralized web.',
-          "We're enabling more contributors to solve open problems and engage with the Filecoin project.",
-        ]}
+        kicker="Resources"
+        title="Explore the Filecoin Project Ecosystem and Tooling"
+        content="Decentralized networks aren’t bound by geography. The brightest minds around the world are working together to advance the next generation of the internet."
+      >
+        <ResourcesList />
+      </Section>
+
+      <Section
+        kicker="Dev Grants"
+        title="We fund talented and eager teams that want to work with us to build a more robust, efficient, and decentralized web."
+        content="We're enabling more contributors to solve open problems and engage with the Filecoin project."
         link={{ url: '/grants/', text: 'Learn More' }}
       />
 
       <Section
-        title="Get Involved"
-        content={[
-          'Learn how to get involved in the Filecoin community',
-          'The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world.',
-        ]}
+        kicker="Get Involved"
+        title="Learn how to get involved in the Filecoin community"
+        content="The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world."
         link={{ url: 'https://filecoin.io/slack', text: 'Learn More' }}
       >
         <GetInvolvedList />
@@ -78,7 +87,7 @@ export default function Home() {
         content="Join our talks, community meetings, and other events. To explore them, visit our Youtube channel."
         link={{
           url: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
-          text: 'Visit our Youtube Channel',
+          text: 'Visit our Youtube channel',
         }}
       >
         <VideoArticle
