@@ -1,5 +1,6 @@
 import GetInvolvedList from '@/components/GetInvolvedList'
 import PageHeader from '@/components/PageHeader'
+import { ResourcesList } from '@/components/ResourcesList'
 import Section from '@/components/Section'
 import { TextLink } from '@/components/TextLink'
 import VideoArticle from '@/components/VideoArticle'
@@ -61,7 +62,9 @@ export default function Home() {
         kicker="Resources"
         title="Explore the Filecoin Project Ecosystem and Tooling"
         content="Decentralized networks aren’t bound by geography. The brightest minds around the world are working together to advance the next generation of the internet."
-      />
+      >
+        <ResourcesList />
+      </Section>
 
       <Section
         kicker="Dev Grants"
