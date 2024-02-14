@@ -1,7 +1,7 @@
 import { WebPage, WithContext } from 'schema-dts'
 
 import PageHeader from '@/components/PageHeader'
-import Section from '@/components/Section'
+import { Section } from '@/components/Section'
 import StructuredDataScript from '@/components/StructuredDataScript'
 import VideoArticle from '@/components/VideoArticle'
 

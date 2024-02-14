@@ -1,10 +1,10 @@
 import { TextLink } from '@/components/TextLink'
 
 type Props = {
-  kicker?: string
-  title: string
   content: string | string[]
+  kicker?: string
   link?: { url: string; text: string }
+  title: string
   children?: React.ReactNode
 }
 
@@ -22,13 +22,7 @@ function Content({ content }: { content: string | string[] }) {
   return <p>{content}</p>
 }
 
-export default function Section({
-  kicker,
-  title,
-  content,
-  link,
-  children,
-}: Props) {
+export function Section({ content, kicker, link, title, children }: Props) {
   return (
     <section>
       {kicker && <span className="uppercase text-sm">{kicker}</span>}

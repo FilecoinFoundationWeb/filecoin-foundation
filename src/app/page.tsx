@@ -1,7 +1,7 @@
-import GetInvolvedList from '@/components/GetInvolvedList'
+import { GetInvolvedList } from '@/components/GetInvolvedList'
 import PageHeader from '@/components/PageHeader'
 import { ResourcesList } from '@/components/ResourcesList'
-import Section from '@/components/Section'
+import { Section } from '@/components/Section'
 import { TextLink } from '@/components/TextLink'
 import VideoArticle from '@/components/VideoArticle'
 

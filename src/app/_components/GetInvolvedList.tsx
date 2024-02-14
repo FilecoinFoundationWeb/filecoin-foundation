@@ -1,4 +1,4 @@
-export default function GetInvolvedList() {
+export function GetInvolvedList() {
   return (
     <ul>
       <li>
