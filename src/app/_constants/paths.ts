@@ -33,14 +33,14 @@ const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 function createPathObject(
   path: PathValues,
   label: string,
-  includesEntries: boolean = false
+  includesEntries: boolean = false,
+  customPath?: string
 ): PathConfig {
   const config: PathConfig = {
     path,
     label,
-    mainContentPath: `${CONTENT_PAGES_ROOT}${path}`,
+    mainContentPath: `${CONTENT_PAGES_ROOT}${customPath ?? path}`,
   }
-
   if (includesEntries) {
     config.entriesContentPath = `${CONTENT_ROOT}${path}`
   }
@@ -57,11 +57,13 @@ export const PATHS = {
   GET_INVOLVED: createPathObject('/get-involved', 'Get Involved'),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
-  HOME: createPathObject('/', 'Home'),
+  HOME: createPathObject('/', 'Home', false, '/home'),
   POLICY: createPathObject('/policy', 'Policy'),
   PUBLIC_DATA_AWARDS: createPathObject(
     '/public-data/awards',
-    'Public Data Awards'
+    'Public Data Awards',
+    false,
+    '/awards'
   ),
   PUBLIC_DATA: createPathObject('/public-data', 'Public Data'),
   TERMS: createPathObject('/terms', 'Terms and Conditions'),
