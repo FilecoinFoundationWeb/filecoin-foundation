@@ -109,7 +109,7 @@ export default function PublicData() {
           local civic technology groups to store and/or access their community
           datasets on the decentralized web.
         </p>
-        <TextLink href="/public-data/awards">
+        <TextLink href={PATHS.PUBLIC_DATA_AWARDS.path}>
           Read More and Apply for Awards
         </TextLink>
       </section>

@@ -11,7 +11,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = Object.values(PATHS).map((path) => ({
-    url: `${BASE_URL}${path}`,
+    url: `${BASE_URL}${path.path}`,
     lastModified: new Date(),
   }))
 
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     PATHS.BLOG.entriesContentPath as string
   )
   const dynamicBlogRoutes = blogPosts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
+    url: `${BASE_URL}{PATHS.BLOG.path}/${post.slug}`,
     lastModified: post['updated-on'] || post['published-on'] || new Date(),
   }))
 
@@ -28,14 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   )
 
   const dynamicCaseStudyRoutes = caseStudies.map((study) => ({
-    url: `${BASE_URL}/case-studies/${study.slug}`,
+    url: `${BASE_URL}${PATHS.CASE_STUDIES.path}/${study.slug}`,
     lastModified: study['updated-on'] || study['published-on'] || new Date(),
   }))
 
   //   const events = getMarkdownData<EventData>(PATHS.EVENTS.entriesContentPath)
 
   //   const dynamicEventRoutes = events.map((study) => ({
-  //     url: `${BASE_URL}/events/${study.slug}`,
+  //     url: `${BASE_URL}${PATHS.EVENTS.path}/${study.slug}`,
   //     lastModified: event['updated-on'] || event['published-on'] || new Date(),
   //   }))
 

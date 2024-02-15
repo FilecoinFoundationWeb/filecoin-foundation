@@ -10,6 +10,8 @@ import { BlogPostData } from '@/types/blogPostTypes'
 
 import { formatDate } from '@/utils/formatDate'
 
+import { PATHS } from '@/constants/paths'
+
 const POSTS_PER_LOAD = 9
 
 export default function BlogClient({ posts }: { posts: BlogPostData[] }) {
@@ -64,7 +66,9 @@ export default function BlogClient({ posts }: { posts: BlogPostData[] }) {
             <h3>{post.title}</h3>
             <p>{post.f_description}</p>
             <span className="block">{formatDate(post.date, 'blog')}</span>
-            <TextLink href={`/blog/${post.slug}`}>Read More</TextLink>
+            <TextLink href={`${PATHS.BLOG.path}/${post.slug}`}>
+              Read More
+            </TextLink>
           </li>
         ))}
       </ul>

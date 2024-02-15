@@ -7,8 +7,6 @@ export function testPageMetadata(path: PathConfig) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${path.mainContentPath}.md`
 
-    console.log('filePath', filePath)
-
     cy.readFile(filePath).then((markdownContent: string) => {
       const frontMatter = matter(markdownContent).data as {
         title: string

@@ -56,7 +56,7 @@ const caseStudiesPageStructuredData: WithContext<WebPage> = {
 function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
   return (
     <li>
-      <TextLink href={`/case-studies/${caseStudy.slug}`}>
+      <TextLink href={`${PATHS.CASE_STUDIES.path}/${caseStudy.slug}`}>
         <h3>{caseStudy.title}</h3>
       </TextLink>
       <p>{caseStudy.f_description}</p>
