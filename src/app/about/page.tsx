@@ -20,12 +20,12 @@ import {
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.ABOUT)
+export const metadata = createMetadata(seo, PATHS.ABOUT.path)
 
 const aboutPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.ABOUT,
+  path: PATHS.ABOUT.path,
 })
 
 const aboutPageStructuredData: WithContext<WebPage> = {

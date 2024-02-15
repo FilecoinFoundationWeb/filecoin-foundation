@@ -2,7 +2,7 @@ import { GetInvolvedList } from '@/components/GetInvolvedList'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-import UpcomingEvents from '@/components/UpcomingEvents'
+import { UpcomingEvents } from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -14,12 +14,12 @@ import { GRANTS_EMAIL } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.GRANTS)
+export const metadata = createMetadata(seo, PATHS.GRANTS.path)
 
 const grantsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.GRANTS,
+  path: PATHS.GRANTS.path,
 })
 
 export default function Grants() {

@@ -1,7 +1,7 @@
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-import UpcomingEvents from '@/components/UpcomingEvents'
+import { UpcomingEvents } from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -12,12 +12,12 @@ import { PATHS } from '@/constants/paths'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.GOVERNANCE)
+export const metadata = createMetadata(seo, PATHS.GOVERNANCE.path)
 
 const governancePageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.GOVERNANCE,
+  path: PATHS.GOVERNANCE.path,
 })
 
 export default function Governance() {

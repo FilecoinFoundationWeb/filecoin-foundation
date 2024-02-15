@@ -1,11 +1,11 @@
-import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 import { PATHS } from '../../src/app/_constants/paths'
+import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 describe('Single Case Study Page', function () {
   it('should check metadata of the first case study', function () {
-    cy.visit(PATHS.CASE_STUDIES)
+    cy.visit(PATHS.CASE_STUDIES.path)
 
-    cy.get(`a[href*="${PATHS.CASE_STUDIES}/"]`)
+    cy.get(`a[href*="${PATHS.CASE_STUDIES.path}/"]`)
       .first()
       .invoke('attr', 'href')
       .then((href) => {

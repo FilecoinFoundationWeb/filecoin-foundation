@@ -1,11 +1,11 @@
-import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 import { PATHS } from '../../src/app/_constants/paths'
+import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 describe('Single Event Page', function () {
   it('should check metadata of the first event', function () {
-    cy.visit(PATHS.EVENTS)
+    cy.visit(PATHS.EVENTS.path)
 
-    cy.get(`a[href*="${PATHS.EVENTS}/"]`)
+    cy.get(`a[href*="${PATHS.EVENTS.path}/"]`)
       .first()
       .invoke('attr', 'href')
       .then((href) => {

@@ -4,6 +4,7 @@ import path from 'path'
 import Image from 'next/image'
 
 import matter from 'gray-matter'
+import type { Route } from 'next'
 import { BlogPosting, WithContext } from 'schema-dts'
 
 import MarkdownContent from '@/components/MarkdownContent'
@@ -53,7 +54,7 @@ export async function generateMetadata({ params }: Props) {
     description: data.f_description,
   }
 
-  const path: PathValues = `${PATHS.BLOG}/${slug}`
+  const path: Route = `${PATHS.BLOG.path}/${slug}`
 
   return createMetadata(seo, path)
 }
@@ -75,7 +76,7 @@ function createBlogPostStructuredData(
     dateModified: data['updated-on'] || data.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.BLOG}/${data.slug}`,
+      '@id': `${BASE_URL}${PATHS.BLOG.path}/${data.slug}`,
     },
     ...(typeof baseOrganizationSchema === 'object'
       ? { publisher: baseOrganizationSchema }

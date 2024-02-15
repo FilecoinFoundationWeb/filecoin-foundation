@@ -11,12 +11,12 @@ const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA_AWARDS)
+export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA_AWARDS.path)
 
 const awardsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.PUBLIC_DATA_AWARDS,
+  path: PATHS.PUBLIC_DATA_AWARDS.path,
 })
 
 export default function Awards() {

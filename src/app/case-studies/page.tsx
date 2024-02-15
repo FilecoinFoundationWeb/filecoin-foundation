@@ -15,20 +15,20 @@ import {
 
 import { attributes } from '@/content/pages/case-studies.md'
 
-import { PATHS, CONTENT_PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.CASE_STUDIES)
+export const metadata = createMetadata(seo, PATHS.CASE_STUDIES.path)
 
 const caseStudies: CaseStudyData[] = getMarkdownData(
-  CONTENT_PATHS.CASE_STUDIES.POSTS as string
+  PATHS.CASE_STUDIES.entriesContentPath as string
 )
 
 const caseStudiesPageBaseData = generateWebPageStructuredData({
   title: seo.title,
-  path: PATHS.CASE_STUDIES,
+  path: PATHS.CASE_STUDIES.path,
   description: seo.description,
 })
 

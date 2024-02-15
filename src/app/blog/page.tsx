@@ -14,22 +14,22 @@ import {
 
 import { attributes } from '@/content/pages/blog.md'
 
-import { PATHS, CONTENT_PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import BlogClient from './BlogClient'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.BLOG)
+export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
 const posts: BlogPostData[] = getMarkdownData(
-  CONTENT_PATHS.BLOG.POSTS as string
+  PATHS.BLOG.entriesContentPath as string
 )
 
 const blogPageBaseData = generateWebPageStructuredData({
   title: seo.title,
-  path: PATHS.BLOG,
+  path: PATHS.BLOG.path,
   description: seo.description,
 })
 
@@ -46,7 +46,7 @@ const blogPageStructuredData: WithContext<WebPage> = {
         name: post.title,
         description: post.f_description,
         image: post.f_image ? [post.f_image.url] : undefined,
-        url: `${BASE_URL}${PATHS.BLOG}/${post.slug}`,
+        url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
       },
     })),
   },

@@ -6,7 +6,7 @@ import { CaseStudyData } from '@/types/caseStudyTypes'
 
 import { getMarkdownData } from '@/utils/getMarkdownData'
 
-import { PATHS, CONTENT_PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const blogPosts = getMarkdownData<BlogPostData>(
-    CONTENT_PATHS.BLOG.POSTS as string
+    PATHS.BLOG.entriesContentPath as string
   )
   const dynamicBlogRoutes = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   const caseStudies = getMarkdownData<CaseStudyData>(
-    CONTENT_PATHS.CASE_STUDIES.POSTS as string
+    PATHS.CASE_STUDIES.entriesContentPath as string
   )
 
   const dynamicCaseStudyRoutes = caseStudies.map((study) => ({
@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: study['updated-on'] || study['published-on'] || new Date(),
   }))
 
-  //   const events = getMarkdownData<EventData>(CONTENT_PATHS.EVENTS.POSTS)
+  //   const events = getMarkdownData<EventData>(PATHS.EVENTS.entriesContentPath)
 
   //   const dynamicEventRoutes = events.map((study) => ({
   //     url: `${BASE_URL}/events/${study.slug}`,

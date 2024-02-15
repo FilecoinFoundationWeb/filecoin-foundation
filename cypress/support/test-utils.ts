@@ -1,14 +1,11 @@
 import matter from 'gray-matter'
 
-import { PATHS, PathValues } from '../../src/app/_constants/paths'
+import { PATHS, PathConfig } from '../../src/app/_constants/paths'
 import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
-export function testPageMetadata(
-  pagePath: PathValues,
-  contentPath: string = pagePath
-) {
+export function testPageMetadata(path: PathConfig) {
   it(`should use the correct metadata from the markdown file`, function () {
-    const filePath = `src/content/pages${contentPath}.md`
+    const filePath = `${path.mainContentPath}.md`
 
     cy.readFile(filePath).then((markdownContent: string) => {
       const frontMatter = matter(markdownContent).data as {
@@ -19,9 +16,9 @@ export function testPageMetadata(
 
       const { title, description, seo } = frontMatter
 
-      cy.visit(pagePath)
+      cy.visit(path.path)
 
-      if (pagePath === PATHS.HOME) {
+      if (path.path === PATHS.HOME.path) {
         cy.title().should('eq', 'Filecoin Foundation')
       } else {
         cy.title().should('eq', `${seo.title} | Filecoin Foundation`)
@@ -38,7 +35,7 @@ export function testPageMetadata(
 
       cy.get('link[rel="canonical"]')
         .should('exist')
-        .should('have.attr', 'href', BASE_URL + pagePath)
+        .should('have.attr', 'href', BASE_URL + path.path)
     })
   })
 }

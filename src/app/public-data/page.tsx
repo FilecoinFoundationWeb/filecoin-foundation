@@ -1,4 +1,4 @@
-import FeaturedCaseStudies from '@/components/FeaturedCaseStudies'
+import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import PageHeader from '@/components/PageHeader'
 import StructuredDataScript from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -12,12 +12,12 @@ const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA)
+export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA.path)
 
 const governancePageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.PUBLIC_DATA,
+  path: PATHS.PUBLIC_DATA.path,
 })
 
 export default function PublicData() {

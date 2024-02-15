@@ -13,7 +13,7 @@ const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.HOME)
+export const metadata = createMetadata(seo, PATHS.HOME.path)
 
 export default function Home() {
   return (

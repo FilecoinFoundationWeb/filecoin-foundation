@@ -14,21 +14,21 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/events.md'
 
 import { BASE_URL } from '@/_constants/siteMetadata'
-import { PATHS, CONTENT_PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.EVENTS)
+export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
 const events: EventData[] = getMarkdownData(
-  CONTENT_PATHS.EVENTS.POSTS as string
+  PATHS.EVENTS.entriesContentPath as string
 )
 const sortedEvents = sortEvents(events)
 
 const eventsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.EVENTS,
+  path: PATHS.EVENTS.path,
 })
 
 const eventsPageStructuredData: WithContext<WebPage> = {
@@ -44,7 +44,7 @@ const eventsPageStructuredData: WithContext<WebPage> = {
         startDate: event['f_start-date'],
         endDate: event['f_end-date'],
         description: event.f_description,
-        url: `${BASE_URL}${PATHS.EVENTS}/${event.slug}` || event.f_cta,
+        url: `${BASE_URL}${PATHS.EVENTS.path}/${event.slug}` || event.f_cta,
       },
     })),
   },
