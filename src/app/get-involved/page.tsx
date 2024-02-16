@@ -1,7 +1,7 @@
-import PageHeader from '@/components/PageHeader'
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-import VideoArticle from '@/components/VideoArticle'
+import { VideoArticle } from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'

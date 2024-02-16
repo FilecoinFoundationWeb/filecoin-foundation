@@ -1,4 +1,4 @@
-import CaseStudiesList from '@/components/CaseStudiesList'
+import { CaseStudiesList } from '@/components/CaseStudiesList'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 

@@ -1,12 +1,12 @@
 import { TextLink } from '@/components/TextLink'
 
-type Props = {
+type PageHeaderProps = {
   title: string
   description: string
   link?: { url: string; text: string }
 }
 
-export default function PageHeader({ title, description, link }: Props) {
+export function PageHeader({ title, description, link }: PageHeaderProps) {
   return (
     <header>
       <h1>{title}</h1>

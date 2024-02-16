@@ -1,4 +1,4 @@
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'

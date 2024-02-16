@@ -7,8 +7,8 @@ import matter from 'gray-matter'
 import type { Route } from 'next'
 import { BlogPosting, WithContext } from 'schema-dts'
 
-import MarkdownContent from '@/components/MarkdownContent'
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { MarkdownContent } from '@/components/MarkdownContent'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
@@ -17,10 +17,10 @@ import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
-import { PATHS, PathValues } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
-type Props = {
+type BlogPostProps = {
   params: {
     slug: string
   }
@@ -45,7 +45,7 @@ function getPostData(slug: string): { content: string; data: BlogPostData } {
   return { content, data: data as BlogPostData }
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: BlogPostProps) {
   const { slug } = params
   const { data } = getPostData(slug)
 
@@ -84,7 +84,7 @@ function createBlogPostStructuredData(
   }
 }
 
-export default function BlogPost({ params }: Props) {
+export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = params
   const { content, data } = getPostData(slug)
 

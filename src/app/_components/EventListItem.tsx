@@ -8,7 +8,7 @@ import { formatDate } from '@/utils/formatDate'
 
 import { PATHS } from '@/constants/paths'
 
-export default function EventListItem({ event }: { event: EventData }) {
+export function EventListItem({ event }: { event: EventData }) {
   const {
     slug,
     title,

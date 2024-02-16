@@ -1,13 +1,13 @@
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 
-import CustomImage from '@/components/CustomImage'
+import { CustomImage } from '@/components/CustomImage'
 
-type Props = {
+type MarkdownContentProps = {
   children: string
 }
 
-export default function MarkdownContent({ children }: Props) {
+export function MarkdownContent({ children }: MarkdownContentProps) {
   return (
     <ReactMarkdown
       rehypePlugins={[rehypeRaw]}

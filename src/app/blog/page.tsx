@@ -1,7 +1,7 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import PageHeader from '@/components/PageHeader'
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
@@ -17,7 +17,7 @@ import { attributes } from '@/content/pages/blog.md'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import BlogClient from './BlogClient'
+import { BlogClient } from './BlogClient'
 
 const { title, description, seo } = attributes
 

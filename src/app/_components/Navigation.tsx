@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Logo from '@/components/Logo'
+import { Logo } from '@/components/Logo'
 import { TextLink } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
@@ -26,7 +26,7 @@ function NavigationLink({ label, path }: { label: string; path: string }) {
   )
 }
 
-export default function Navigation() {
+export function Navigation() {
   return (
     <nav className="flex justify-between items-center p-4">
       <Link

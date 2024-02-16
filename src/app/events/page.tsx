@@ -1,8 +1,8 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import EventsList from '@/components/EventsList'
-import PageHeader from '@/components/PageHeader'
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { EventsList } from '@/components/EventsList'
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
 

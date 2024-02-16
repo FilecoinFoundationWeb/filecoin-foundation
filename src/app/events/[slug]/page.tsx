@@ -7,7 +7,7 @@ import matter from 'gray-matter'
 import { Route } from 'next'
 import { Event, WithContext } from 'schema-dts'
 
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
@@ -17,7 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-type Props = {
+type EventProps = {
   params: {
     slug: string
   }
@@ -42,7 +42,7 @@ function getEventsData(slug: string): EventData {
   return data as EventData
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: EventProps) {
   const { slug } = params
   const data = getEventsData(slug)
 
@@ -69,7 +69,7 @@ function createEventPostStructuredData(data: EventData): WithContext<Event> {
   }
 }
 
-export default function Event({ params }: Props) {
+export default function Event({ params }: EventProps) {
   const { slug } = params
   const data = getEventsData(slug)
 

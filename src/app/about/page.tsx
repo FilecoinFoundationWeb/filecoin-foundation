@@ -1,9 +1,9 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import PageHeader from '@/components/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { Section } from '@/components/Section'
-import StructuredDataScript from '@/components/StructuredDataScript'
-import VideoArticle from '@/components/VideoArticle'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { VideoArticle } from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'

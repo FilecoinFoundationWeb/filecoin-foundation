@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 import { Route } from 'next'
 import { Article, WithContext } from 'schema-dts'
 
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
@@ -16,7 +16,7 @@ import { baseOrganizationSchema } from '@/utils/structuredData'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-type Props = {
+type CaseStudyProps = {
   params: {
     slug: string
   }
@@ -41,7 +41,7 @@ function getCaseStudyData(slug: string): CaseStudyData {
   return data as CaseStudyData
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: CaseStudyProps) {
   const { slug } = params
   const data = getCaseStudyData(slug)
 
@@ -76,7 +76,7 @@ function createCaseStudyPostStructuredData(
   }
 }
 
-export default function CaseStudy({ params }: Props) {
+export default function CaseStudy({ params }: CaseStudyProps) {
   const { slug } = params
   const data = getCaseStudyData(slug)
 

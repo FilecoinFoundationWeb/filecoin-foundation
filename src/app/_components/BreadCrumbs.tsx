@@ -6,7 +6,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
 
-export default function BreadCrumbs() {
+export function BreadCrumbs() {
   const pathname = usePathname()
   const pathNames = pathname.split('/').filter((path) => path)
 

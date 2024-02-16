@@ -1,7 +1,7 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import PageHeader from '@/components/PageHeader'
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'

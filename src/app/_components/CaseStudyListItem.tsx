@@ -6,11 +6,7 @@ import { CaseStudyData } from '@/types/caseStudyTypes'
 
 import { PATHS } from '@/constants/paths'
 
-export default function CaseStudyListItem({
-  caseStudy,
-}: {
-  caseStudy: CaseStudyData
-}) {
+export function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
   const {
     slug,
     title,
