@@ -2,7 +2,7 @@
 
 import { TextLink } from '@/components/TextLink'
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="py-8 px-12">
       <hr />

@@ -1,12 +1,12 @@
 import { TextLink } from '@/components/TextLink'
 
-type Props = {
+type VideoArticleProps = {
   title: string
   content: string
   link: string
 }
 
-export default function VideoArticle({ title, content, link }: Props) {
+export function VideoArticle({ title, content, link }: VideoArticleProps) {
   return (
     <article>
       <h3>{title}</h3>

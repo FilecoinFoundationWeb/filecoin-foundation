@@ -14,7 +14,7 @@ import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_LOAD = 9
 
-export default function BlogClient({ posts }: { posts: BlogPostData[] }) {
+export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const [searchQuery, setSearchQuery] = useState<string>('')
   const [visibleCount, setVisibleCount] = useState<number>(POSTS_PER_LOAD)
 

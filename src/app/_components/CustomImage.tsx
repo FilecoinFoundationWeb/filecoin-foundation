@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-type Props = {
+type CustomImageProps = {
   src: string
   alt: string
 }
 
-export default function CustomImage({ src, alt }: Props) {
+export function CustomImage({ src, alt }: CustomImageProps) {
   return (
     <Image
       src={src}

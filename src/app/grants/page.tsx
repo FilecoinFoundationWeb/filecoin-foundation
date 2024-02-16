@@ -1,6 +1,6 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
-import PageHeader from '@/components/PageHeader'
-import StructuredDataScript from '@/components/StructuredDataScript'
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 import { UpcomingEvents } from '@/components/UpcomingEvents'
 

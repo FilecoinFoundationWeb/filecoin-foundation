@@ -1,9 +1,9 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
-import PageHeader from '@/components/PageHeader'
+import { PageHeader } from '@/components/PageHeader'
 import { ResourcesList } from '@/components/ResourcesList'
 import { Section } from '@/components/Section'
 import { TextLink } from '@/components/TextLink'
-import VideoArticle from '@/components/VideoArticle'
+import { VideoArticle } from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
 

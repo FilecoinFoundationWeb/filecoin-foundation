@@ -1,13 +1,13 @@
-import EventListItem from '@/components/EventListItem'
+import { EventListItem } from '@/components/EventListItem'
 
 import { EventData } from '@/types/eventTypes'
 
-type Props = {
+type EventsListProps = {
   events: EventData[]
   className?: string
 }
 
-export default function EventsList({ events, className }: Props) {
+export function EventsList({ events, className }: EventsListProps) {
   if (events.length === 0) {
     return <p>No events available.</p>
   }

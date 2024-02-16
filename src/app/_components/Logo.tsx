@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Logo() {
+export function Logo() {
   return (
     <Image
       src="/assets/images/logo.svg"

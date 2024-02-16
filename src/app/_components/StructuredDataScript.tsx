@@ -4,7 +4,7 @@ type StructuredDataScriptProps = {
   structuredData: WithContext<Thing>
 }
 
-export default function StructuredDataScript({
+export function StructuredDataScript({
   structuredData,
 }: StructuredDataScriptProps) {
   return (

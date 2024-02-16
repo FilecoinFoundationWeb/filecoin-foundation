@@ -1,13 +1,16 @@
-import CaseStudyListItem from '@/components/CaseStudyListItem'
+import { CaseStudyListItem } from '@/components/CaseStudyListItem'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
-type Props = {
+type CaseStudiesListProps = {
   caseStudies: CaseStudyData[]
   className?: string
 }
 
-export default function CaseStudiesList({ caseStudies, className }: Props) {
+export function CaseStudiesList({
+  caseStudies,
+  className,
+}: CaseStudiesListProps) {
   if (caseStudies.length === 0) {
     return <p>No case studies available.</p>
   }

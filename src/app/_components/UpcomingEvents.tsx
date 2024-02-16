@@ -1,4 +1,4 @@
-import EventsList from '@/components/EventsList'
+import { EventsList } from '@/components/EventsList'
 
 import { EventData } from '@/types/eventTypes'
 
