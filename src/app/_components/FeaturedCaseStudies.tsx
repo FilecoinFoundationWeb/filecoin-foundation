@@ -4,12 +4,12 @@ import { CaseStudyData } from '@/types/caseStudyTypes'
 
 import { getMarkdownData } from '@/utils/getMarkdownData'
 
-import { CONTENT_PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
-export default function CaseStudies() {
-  const caseStudies: CaseStudyData[] = getMarkdownData(
-    CONTENT_PATHS.CASE_STUDIES.POSTS as string
-  )
+const caseStudies: CaseStudyData[] = getMarkdownData(
+  PATHS.CASE_STUDIES.entriesContentPath as string
+)
 
+export function FeaturedCaseStudies() {
   return <CaseStudiesList caseStudies={caseStudies} />
 }

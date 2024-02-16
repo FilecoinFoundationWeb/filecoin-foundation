@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 import matter from 'gray-matter'
+import { Route } from 'next'
 import { Article, WithContext } from 'schema-dts'
 
 import StructuredDataScript from '@/components/StructuredDataScript'
@@ -12,7 +13,7 @@ import { SeoMetadata } from '@/types/metadataTypes'
 import { createMetadata } from '@/utils/createMetadata'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
-import { PATHS, PathValues } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type Props = {
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: Props) {
     description: data.f_description || '',
   }
 
-  const path: PathValues = `${PATHS.CASE_STUDIES}/${slug}`
+  const path: Route = `${PATHS.CASE_STUDIES.path}/${slug}`
 
   return createMetadata(seo, path)
 }
@@ -67,7 +68,7 @@ function createCaseStudyPostStructuredData(
     dateModified: data['updated-on'] || data.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.CASE_STUDIES}/${data.slug}`,
+      '@id': `${BASE_URL}${PATHS.CASE_STUDIES.path}/${data.slug}`,
     },
     ...(typeof baseOrganizationSchema === 'object'
       ? { publisher: baseOrganizationSchema }

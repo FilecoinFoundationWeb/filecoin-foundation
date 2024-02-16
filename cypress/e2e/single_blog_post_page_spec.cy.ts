@@ -3,9 +3,9 @@ import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 describe('Single Blog Post Page', function () {
   it('should check metadata of the first blog post', function () {
-    cy.visit(PATHS.BLOG)
+    cy.visit(PATHS.BLOG.path)
 
-    cy.get(`a[href*="${PATHS.BLOG}/"]`)
+    cy.get(`a[href*="${PATHS.BLOG.path}/"]`)
       .first()
       .invoke('attr', 'href')
       .then((href) => {

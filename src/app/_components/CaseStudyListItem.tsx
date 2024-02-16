@@ -4,6 +4,8 @@ import { TextLink } from '@/components/TextLink'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
+import { PATHS } from '@/constants/paths'
+
 export default function CaseStudyListItem({
   caseStudy,
 }: {
@@ -31,7 +33,7 @@ export default function CaseStudyListItem({
       )}
       <h3>{title}</h3>
       <p>{description}</p>
-      <TextLink href={ctaUrl || `/case-studies/${slug}`}>
+      <TextLink href={ctaUrl || `${PATHS.CASE_STUDIES.path}/${slug}`}>
         {ctaText || 'More'}
       </TextLink>
     </li>

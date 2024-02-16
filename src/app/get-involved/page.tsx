@@ -12,12 +12,12 @@ import { PATHS } from '@/constants/paths'
 
 const { title, description, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.GET_INVOLVED)
+export const metadata = createMetadata(seo, PATHS.GET_INVOLVED.path)
 
 const getInvolvedPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.GOVERNANCE,
+  path: PATHS.GET_INVOLVED.path,
 })
 
 export default function GetInvolved() {

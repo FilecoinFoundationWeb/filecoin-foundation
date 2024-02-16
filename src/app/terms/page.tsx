@@ -9,12 +9,12 @@ const { title, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.TERMS)
+export const metadata = createMetadata(seo, PATHS.TERMS.path)
 
 const termsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.TERMS,
+  path: PATHS.TERMS.path,
 })
 
 export default function Terms() {

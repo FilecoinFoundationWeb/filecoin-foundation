@@ -1,10 +1,13 @@
-import { Metadata } from 'next'
+import { Metadata, Route } from 'next'
 
 import { SeoMetadata } from '@/types/metadataTypes'
 
 import { PathValues } from '@/constants/paths'
 
-export function createMetadata(seo: SeoMetadata, path: PathValues): Metadata {
+export function createMetadata(
+  seo: SeoMetadata,
+  path: PathValues | Route
+): Metadata {
   return {
     title: seo.title,
     description: seo.description,

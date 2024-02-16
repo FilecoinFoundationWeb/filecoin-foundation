@@ -5,14 +5,14 @@ import { EventData } from '@/types/eventTypes'
 import { getMarkdownData } from '@/utils/getMarkdownData'
 import { sortEvents } from '@/utils/sortEvents'
 
-import { CONTENT_PATHS } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
-export default function Events() {
-  const events: EventData[] = getMarkdownData(
-    CONTENT_PATHS.EVENTS.POSTS as string
-  )
-  const sortedEvents = sortEvents(events)
-  const firstTwoEvents = sortedEvents.slice(0, 2)
+const events: EventData[] = getMarkdownData(
+  PATHS.EVENTS.entriesContentPath as string
+)
+const sortedEvents = sortEvents(events)
+const firstTwoEvents = sortedEvents.slice(0, 2)
 
+export function UpcomingEvents() {
   return <EventsList events={firstTwoEvents} />
 }

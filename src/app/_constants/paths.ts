@@ -1,79 +1,70 @@
-export const PATHS = {
-  ABOUT: '/about',
-  BLOG: '/blog',
-  CASE_STUDIES: '/case-studies',
-  CONTACT: '/contact',
-  ECOSYSTEM: '/ecosystem',
-  EVENTS: '/events',
-  GET_INVOLVED: '/get-involved',
-  GOVERNANCE: '/governance',
-  GRANTS: '/grants',
-  HOME: '/',
-  POLICY: '/policy',
-  PUBLIC_DATA_AWARDS: '/public-data/awards',
-  PUBLIC_DATA: '/public-data',
-  TERMS: '/terms',
-} as const
+export type BlogPostsPath = `blog/${string}`
+export type CaseStudiesPath = `case-studies/${string}`
+export type EventsPath = `events/${string}`
 
-type PathKeys = keyof typeof PATHS
+export type DynamicPathValues = BlogPostsPath | CaseStudiesPath | EventsPath
 
-type DynamicPathValues =
-  | `${typeof PATHS.BLOG}/${string}`
-  | `${typeof PATHS.CASE_STUDIES}/${string}`
-  | `${typeof PATHS.EVENTS}/${string}`
+export type PathValues =
+  | '/about'
+  | '/blog'
+  | '/case-studies'
+  | '/ecosystem'
+  | '/events'
+  | '/get-involved'
+  | '/governance'
+  | '/grants'
+  | '/'
+  | '/policy'
+  | '/public-data/awards'
+  | '/public-data'
+  | '/terms'
+  | DynamicPathValues
 
-export type PathValues = (typeof PATHS)[PathKeys] | DynamicPathValues
+export interface PathConfig {
+  path: PathValues
+  label: string
+  mainContentPath: string
+  entriesContentPath?: string
+}
 
 const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
-export const CONTENT_PATHS: Record<
-  PathKeys,
-  { POSTS?: string; CONTENT: string }
-> = {
-  ABOUT: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.ABOUT}`,
-  },
-  BLOG: {
-    POSTS: `${CONTENT_ROOT}${PATHS.BLOG}`,
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.BLOG}`,
-  },
-  CASE_STUDIES: {
-    POSTS: `${CONTENT_ROOT}${PATHS.CASE_STUDIES}`,
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.CASE_STUDIES}`,
-  },
-  CONTACT: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.CONTACT}`,
-  },
-  ECOSYSTEM: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.ECOSYSTEM}`,
-  },
-  EVENTS: {
-    POSTS: `${CONTENT_ROOT}${PATHS.EVENTS}`,
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.EVENTS}`,
-  },
-  GET_INVOLVED: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.GET_INVOLVED}`,
-  },
-  GOVERNANCE: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.GOVERNANCE}`,
-  },
-  GRANTS: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.GRANTS}`,
-  },
-  HOME: {
-    CONTENT: `${CONTENT_PAGES_ROOT}/home`,
-  },
-  POLICY: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.POLICY}`,
-  },
-  PUBLIC_DATA_AWARDS: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.PUBLIC_DATA_AWARDS}`,
-  },
-  PUBLIC_DATA: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.PUBLIC_DATA}`,
-  },
-  TERMS: {
-    CONTENT: `${CONTENT_PAGES_ROOT}${PATHS.TERMS}`,
-  },
+function createPathObject(
+  path: PathValues,
+  label: string,
+  includesEntries: boolean = false,
+  customPath?: string
+): PathConfig {
+  const config: PathConfig = {
+    path,
+    label,
+    mainContentPath: `${CONTENT_PAGES_ROOT}${customPath ?? path}`,
+  }
+  if (includesEntries) {
+    config.entriesContentPath = `${CONTENT_ROOT}${path}`
+  }
+
+  return config
+}
+
+export const PATHS = {
+  ABOUT: createPathObject('/about', 'About Us'),
+  BLOG: createPathObject('/blog', 'Blog', true),
+  CASE_STUDIES: createPathObject('/case-studies', 'Case Studies', true),
+  ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem'),
+  EVENTS: createPathObject('/events', 'Events', true),
+  GET_INVOLVED: createPathObject('/get-involved', 'Get Involved'),
+  GOVERNANCE: createPathObject('/governance', 'Governance'),
+  GRANTS: createPathObject('/grants', 'Grants'),
+  HOME: createPathObject('/', 'Home', false, '/home'),
+  POLICY: createPathObject('/policy', 'Policy'),
+  PUBLIC_DATA_AWARDS: createPathObject(
+    '/public-data/awards',
+    'Public Data Awards',
+    false,
+    '/awards'
+  ),
+  PUBLIC_DATA: createPathObject('/public-data', 'Public Data'),
+  TERMS: createPathObject('/terms', 'Terms and Conditions'),
 } as const

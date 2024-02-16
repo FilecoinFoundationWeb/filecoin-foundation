@@ -6,6 +6,8 @@ import { EventData } from '@/types/eventTypes'
 
 import { formatDate } from '@/utils/formatDate'
 
+import { PATHS } from '@/constants/paths'
+
 export default function EventListItem({ event }: { event: EventData }) {
   const {
     slug,
@@ -39,7 +41,7 @@ export default function EventListItem({ event }: { event: EventData }) {
       </div>
       <h3>{title}</h3>
       <p>{description}</p>
-      <TextLink href={ctaUrl || `/events/${slug}`}>
+      <TextLink href={ctaUrl || `${PATHS.EVENTS.path}/${slug}`}>
         {ctaText || 'More'}
       </TextLink>
     </li>

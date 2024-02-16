@@ -9,12 +9,12 @@ const { title, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.POLICY)
+export const metadata = createMetadata(seo, PATHS.POLICY.path)
 
 const policyPageBaseData = generateWebPageStructuredData({
   title: seo.title,
   description: seo.description,
-  path: PATHS.POLICY,
+  path: PATHS.POLICY.path,
 })
 
 export default function Policy() {
