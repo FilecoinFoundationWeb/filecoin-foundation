@@ -31,7 +31,7 @@ export function Navigation() {
     <nav className="flex justify-between items-center p-4">
       <Link
         className="block flex-shrink-0 mr-12"
-        href="/"
+        href={PATHS.HOME.path}
         aria-label="Go to homepage"
       >
         <Logo />

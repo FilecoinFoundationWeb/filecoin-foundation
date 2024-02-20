@@ -7,6 +7,9 @@ module.exports = {
       },
     ],
   },
+  experimental: {
+    typedRoutes: true,
+  },
   webpack: (cfg) => {
     cfg.module.rules.push({
       test: /\.md$/,

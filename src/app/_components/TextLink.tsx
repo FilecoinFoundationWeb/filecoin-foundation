@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import clsx from 'clsx'
+import { Route } from 'next'
 
 type TextLinkProps = {
   href: string
@@ -21,7 +22,7 @@ export function TextLink({
 
   if (isInternalLink) {
     return (
-      <Link href={href} className={className} {...props}>
+      <Link href={href as Route} className={className} {...props}>
         {children}
       </Link>
     )

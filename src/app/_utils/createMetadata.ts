@@ -1,12 +1,10 @@
-import { Metadata, Route } from 'next'
+import { Metadata } from 'next'
 
-import { SeoMetadata } from '@/types/metadataTypes'
-
-import { PathValues } from '@/constants/paths'
+import { PathValues, DynamicPathValues } from '@/constants/paths'
 
 export function createMetadata(
-  seo: SeoMetadata,
-  path: PathValues | Route
+  seo: Metadata,
+  path: PathValues | DynamicPathValues
 ): Metadata {
   return {
     title: seo.title,

@@ -4,15 +4,13 @@ import path from 'path'
 import Image from 'next/image'
 
 import matter from 'gray-matter'
-import { Route } from 'next'
 import { Event, WithContext } from 'schema-dts'
 
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
-import { SeoMetadata } from '@/types/metadataTypes'
 
-import { createMetadata } from '@/utils/createMetadata'
+import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
@@ -46,14 +44,11 @@ export async function generateMetadata({ params }: EventProps) {
   const { slug } = params
   const data = getEventsData(slug)
 
-  const seo: SeoMetadata = {
-    title: data.title,
-    description: data.f_description || '',
-  }
-
-  const path: Route = `${PATHS.EVENTS.path}/${slug}`
-
-  return createMetadata(seo, path)
+  return generateDynamicContentMetadata({
+    basePath: PATHS.EVENTS.path,
+    slug,
+    data,
+  })
 }
 
 function createEventPostStructuredData(data: EventData): WithContext<Event> {

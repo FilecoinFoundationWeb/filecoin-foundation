@@ -2,15 +2,13 @@ import fs from 'fs'
 import path from 'path'
 
 import matter from 'gray-matter'
-import { Route } from 'next'
 import { Article, WithContext } from 'schema-dts'
 
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
-import { SeoMetadata } from '@/types/metadataTypes'
 
-import { createMetadata } from '@/utils/createMetadata'
+import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { PATHS } from '@/constants/paths'
@@ -45,14 +43,11 @@ export async function generateMetadata({ params }: CaseStudyProps) {
   const { slug } = params
   const data = getCaseStudyData(slug)
 
-  const seo: SeoMetadata = {
-    title: data.title,
-    description: data.f_description || '',
-  }
-
-  const path: Route = `${PATHS.CASE_STUDIES.path}/${slug}`
-
-  return createMetadata(seo, path)
+  return generateDynamicContentMetadata({
+    basePath: PATHS.CASE_STUDIES.path,
+    slug,
+    data,
+  })
 }
 
 function createCaseStudyPostStructuredData(
