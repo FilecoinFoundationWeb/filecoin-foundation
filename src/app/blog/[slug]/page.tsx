@@ -4,17 +4,15 @@ import path from 'path'
 import Image from 'next/image'
 
 import matter from 'gray-matter'
-import type { Route } from 'next'
 import { BlogPosting, WithContext } from 'schema-dts'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
-import { SeoMetadata } from '@/types/metadataTypes'
 
-import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
+import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { PATHS } from '@/constants/paths'
@@ -49,14 +47,11 @@ export async function generateMetadata({ params }: BlogPostProps) {
   const { slug } = params
   const { data } = getPostData(slug)
 
-  const seo: SeoMetadata = {
-    title: data.title,
-    description: data.f_description,
-  }
-
-  const path: Route = `${PATHS.BLOG.path}/${slug}`
-
-  return createMetadata(seo, path)
+  return generateDynamicContentMetadata({
+    basePath: PATHS.BLOG.path,
+    slug,
+    data,
+  })
 }
 
 function createBlogPostStructuredData(
