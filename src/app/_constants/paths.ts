@@ -1,8 +1,8 @@
-export type BlogPostsPath = `blog/${string}`
-export type CaseStudiesPath = `case-studies/${string}`
-export type EventsPath = `events/${string}`
+export type BlogPostPath = `/blog/${string}`
+export type CaseStudyPath = `/case-studies/${string}`
+export type EventPath = `/events/${string}`
 
-export type DynamicPathValues = BlogPostsPath | CaseStudiesPath | EventsPath
+export type DynamicPathValues = BlogPostPath | CaseStudyPath | EventPath
 
 export type PathValues =
   | '/about'
@@ -18,7 +18,6 @@ export type PathValues =
   | '/public-data/awards'
   | '/public-data'
   | '/terms'
-  | DynamicPathValues
 
 export interface PathConfig {
   path: PathValues
