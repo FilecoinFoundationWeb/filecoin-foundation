@@ -140,9 +140,9 @@ collections:
         fields:
           - *header_config
           - *meta_config
-      - name: "policy"
-        label: "Policy"
-        file: "src/content/pages/policy.md"
+      - name: "privacy-policy"
+        label: "Privacy Policy"
+        file: "src/content/pages/privacy-policy.md"
         fields:
           - *header_config
           - *meta_config

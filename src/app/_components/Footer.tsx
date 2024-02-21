@@ -31,7 +31,9 @@ export function Footer() {
       </div>
       <div className="mt-4">
         <div className="flex gap-4 mb-2">
-          <TextLink href={PATHS.POLICY.path}>{PATHS.POLICY.label}</TextLink>
+          <TextLink href={PATHS.PRIVACY_POLICY.path}>
+            {PATHS.PRIVACY_POLICY.label}
+          </TextLink>
           <TextLink href={PATHS.TERMS.path}>{PATHS.TERMS.label}</TextLink>
         </div>
         <p>
