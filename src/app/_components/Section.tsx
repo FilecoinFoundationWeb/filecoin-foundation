@@ -1,14 +1,14 @@
 import { TextLink } from '@/components/TextLink'
 
 type SectionProps = {
-  content: string | string[]
+  title: string
+  content: string | string[] | React.ReactNode
   kicker?: string
   link?: { url: string; text: string }
-  title: string
   children?: React.ReactNode
 }
 
-function Content({ content }: { content: string | string[] }) {
+function Content({ content }: { content: SectionProps['content'] }) {
   if (Array.isArray(content)) {
     return (
       <>
@@ -22,11 +22,13 @@ function Content({ content }: { content: string | string[] }) {
   return <p>{content}</p>
 }
 
+export default Content
+
 export function Section({
+  title,
   content,
   kicker,
   link,
-  title,
   children,
 }: SectionProps) {
   return (
