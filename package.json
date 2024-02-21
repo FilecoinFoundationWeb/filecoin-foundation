@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
     "validate-md": "node scripts/validateMarkdown.js"
+  },
+  "resolutions": {
+    "postcss": "^8.4.31",
+    "zod": "^3.22.3"
   },
   "dependencies": {
     "@babel/core": "^7.23.5",
