@@ -14,7 +14,6 @@ import { attributes } from '@/content/pages/about.md'
 
 import { PATHS } from '@/constants/paths'
 import {
-  CONTACT_EMAIL,
   FILECOIN_URLS,
   ORGANIZATION_NAME,
   FILECOIN_FOUNDATION_URLS,
@@ -46,7 +45,7 @@ const aboutPageStructuredData: WithContext<WebPage> = {
       {
         '@type': 'ContactPoint',
         contactType: 'Media and collaboration inquiries',
-        email: CONTACT_EMAIL,
+        email: FILECOIN_FOUNDATION_URLS.email,
       },
       {
         '@type': 'ContactPoint',
@@ -55,7 +54,9 @@ const aboutPageStructuredData: WithContext<WebPage> = {
       },
     ],
   },
-  sameAs: Object.values(FILECOIN_FOUNDATION_URLS),
+  sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
+    (link) => link.href
+  ),
 }
 
 export default function About() {
@@ -126,7 +127,9 @@ export default function About() {
             </p>
             <p>
               Watch our{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.youtube}>talks</TextLink>{' '}
+              <TextLink href={FILECOIN_FOUNDATION_URLS.social.youtube.href}>
+                talks
+              </TextLink>{' '}
               featuring contributions from our advisory panel and be part of the
               conversation on{' '}
               <TextLink href={FILECOIN_URLS.slack}>

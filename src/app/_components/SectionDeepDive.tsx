@@ -13,7 +13,7 @@ export function SectionDeepDive({ children }: SectionDeepDiveProps) {
         <h2>Dive Deeper</h2>
         <p>
           Join our talks, community meetings, and other events. To explore them,{' '}
-          <TextLink href={FILECOIN_FOUNDATION_URLS.youtube}>
+          <TextLink href={FILECOIN_FOUNDATION_URLS.social.youtube.href}>
             visit our YouTube channel
           </TextLink>
           .

@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/PageHeader'
+import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 import { UpcomingEvents } from '@/components/UpcomingEvents'
@@ -161,6 +162,7 @@ export default function Governance() {
 
       <section>
         <h2>Get Involved</h2>
+        <Social />
         <p>Community governance calls happen every other Tuesday.</p>
         <p>
           Visit the{' '}
