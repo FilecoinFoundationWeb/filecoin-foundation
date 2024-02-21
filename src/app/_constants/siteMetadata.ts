@@ -1,6 +1,5 @@
 const BASE_URL = 'https://fil.org'
 const CONTACT_EMAIL = 'hello@fil.org'
-const GRANTS_EMAIL = 'devgrants@fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
 const FIL_PLUS_URLS = {
@@ -21,6 +20,10 @@ const FILECOIN_FOUNDATION_URLS = {
 }
 
 const FILECOIN_URLS = {
+  grants: {
+    github: 'https://github.com/filecoin-project/devgrants',
+    email: 'mailto:devgrants@fil.org',
+  },
   site: 'https://filecoin.io',
   slack: 'https://filecoin.io/slack',
 }
@@ -31,6 +34,5 @@ export {
   FIL_PLUS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
-  GRANTS_EMAIL,
   ORGANIZATION_NAME,
 }

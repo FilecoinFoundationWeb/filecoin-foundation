@@ -175,6 +175,7 @@ export default function Governance() {
         </p>
         <TextLink href={PATHS.GET_INVOLVED.path}>Get Involved</TextLink>
       </section>
+
       <section>
         <h2>Events & Hackathons</h2>
         <UpcomingEvents />

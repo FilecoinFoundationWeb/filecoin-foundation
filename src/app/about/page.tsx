@@ -16,7 +16,6 @@ import { PATHS } from '@/constants/paths'
 import {
   CONTACT_EMAIL,
   FILECOIN_URLS,
-  GRANTS_EMAIL,
   ORGANIZATION_NAME,
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
@@ -52,7 +51,7 @@ const aboutPageStructuredData: WithContext<WebPage> = {
       {
         '@type': 'ContactPoint',
         contactType: 'Ecosystem grants inquiries',
-        email: GRANTS_EMAIL,
+        email: FILECOIN_URLS.grants.email,
       },
     ],
   },
