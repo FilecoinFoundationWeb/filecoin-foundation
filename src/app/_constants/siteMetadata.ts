@@ -11,6 +11,7 @@ const SOCIAL_MEDIA_URLS = {
   bluesky: 'https://bsky.app/profile/ff.bsky.social',
   facebook: 'https://www.facebook.com/YourPage',
   github: 'https://github.com/FilecoinFoundationWeb',
+  greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   linkedin: 'https://www.linkedin.com/company/filecoin-foundation/mycompany/',
   twitter: 'https://twitter.com/FilFoundation',
   youtube: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
