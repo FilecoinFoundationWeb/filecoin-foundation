@@ -158,7 +158,7 @@ export default function Grants() {
           The Filecoin community includes thousands of developers,
           technologists, users, and enthusiasts all over the world.
         </p>
-        <TextLink href={FILECOIN_URLS.slack}>Learn More</TextLink>
+        <TextLink href={FILECOIN_URLS.social.slack.href}>Learn More</TextLink>
         <GetInvolvedList />
       </section>
     </>

@@ -20,10 +20,6 @@ const FILECOIN_FOUNDATION_URLS = {
       label: 'Bluesky',
       href: 'https://bsky.app/profile/ff.bsky.social',
     },
-    facebook: {
-      label: 'Facebook',
-      href: 'https://www.facebook.com/YourPage',
-    },
     github: {
       label: 'GitHub',
       href: 'https://github.com/FilecoinFoundationWeb',
@@ -49,7 +45,16 @@ const FILECOIN_URLS = {
     email: 'mailto:devgrants@fil.org',
   },
   site: 'https://filecoin.io',
-  slack: 'https://filecoin.io/slack',
+  social: {
+    reddit: {
+      href: 'https://www.reddit.com/r/filecoin/',
+      label: 'Reddit',
+    },
+    slack: {
+      href: 'https://filecoin.io/slack',
+      label: 'Slack',
+    },
+  },
 }
 
 export {

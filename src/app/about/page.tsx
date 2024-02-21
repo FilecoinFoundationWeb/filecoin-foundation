@@ -126,13 +126,13 @@ export default function About() {
               communities have come together to foster the Filecoin ecosystem.
             </p>
             <p>
-              Watch our{' '}
+              Watch{' '}
               <TextLink href={FILECOIN_FOUNDATION_URLS.social.youtube.href}>
-                talks
+                our talks
               </TextLink>{' '}
               featuring contributions from our advisory panel and be part of the
               conversation on{' '}
-              <TextLink href={FILECOIN_URLS.slack}>
+              <TextLink href={FILECOIN_URLS.social.slack.href}>
                 Filecoin&apos;s Slack
               </TextLink>
               .

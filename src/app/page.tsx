@@ -72,14 +72,14 @@ export default function Home() {
         kicker="Dev Grants"
         title="We fund talented and eager teams that want to work with us to build a more robust, efficient, and decentralized web."
         content="We're enabling more contributors to solve open problems and engage with the Filecoin project."
-        link={{ href: '/grants/', text: 'Learn More' }}
+        link={{ href: PATHS.GRANTS.path, text: 'Learn More' }}
       />
 
       <Section
         kicker="Get Involved"
         title="Learn How To Get Involved in the Filecoin Community"
         content="The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world."
-        link={{ href: FILECOIN_URLS.slack, text: 'Learn More' }}
+        link={{ href: FILECOIN_URLS.social.slack.href, text: 'Learn More' }}
       >
         <GetInvolvedList />
       </Section>

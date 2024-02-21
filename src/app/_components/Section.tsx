@@ -19,7 +19,11 @@ function Content({ content }: { content: SectionProps['content'] }) {
     )
   }
 
-  return <p>{content}</p>
+  if (content === typeof 'string') {
+    return <p>{content}</p>
+  }
+
+  return <>{content}</>
 }
 
 export default Content

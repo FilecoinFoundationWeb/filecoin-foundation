@@ -57,7 +57,7 @@ export const PATHS = {
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
   HOME: createPathObject('/', 'Home', false, '/home'),
-  PRIVACY_POLICY: createPathObject('/policy', 'Privacy Policy'),
+  PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
   PUBLIC_DATA_AWARDS: createPathObject(
     '/public-data/awards',
     'Public Data Awards',

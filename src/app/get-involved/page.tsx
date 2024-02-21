@@ -48,7 +48,7 @@ export default function GetInvolved() {
         title="How To Get Involved and Key Links"
         content="Join Filecoin Slack and participate in our bi-weekly community governance calls every other Tuesday."
         link={{
-          href: FILECOIN_URLS.slack,
+          href: FILECOIN_URLS.social.slack.href,
           text: 'Join the Community',
         }}
       >
