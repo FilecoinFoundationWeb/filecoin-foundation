@@ -13,8 +13,8 @@ import { attributes } from '@/content/pages/get-involved.md'
 
 import { PATHS } from '@/constants/paths'
 import {
-  FILECOIN_SOCIAL_MEDIA_URLS,
-  SOCIAL_MEDIA_URLS,
+  FILECOIN_URLS,
+  FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
@@ -40,7 +40,7 @@ export default function GetInvolved() {
           we build, we&apos;re hiring for roles to promote the Filecoin
           ecosystem and the broader Web3 movement. Check out our open roles.
         </p>
-        <TextLink href={SOCIAL_MEDIA_URLS.greenhouse}>View All</TextLink>
+        <TextLink href={FILECOIN_FOUNDATION_URLS.greenhouse}>View All</TextLink>
       </section>
 
       <Section
@@ -48,7 +48,7 @@ export default function GetInvolved() {
         title="How To Get Involved and Key Links"
         content="Join Filecoin Slack and participate in our bi-weekly community governance calls every other Tuesday."
         link={{
-          href: FILECOIN_SOCIAL_MEDIA_URLS.slack,
+          href: FILECOIN_URLS.slack,
           text: 'Join the Community',
         }}
       >

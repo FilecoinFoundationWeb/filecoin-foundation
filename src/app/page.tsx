@@ -13,7 +13,7 @@ import { attributes } from '@/content/pages/home.md'
 const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_SOCIAL_MEDIA_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
@@ -79,7 +79,7 @@ export default function Home() {
         kicker="Get Involved"
         title="Learn How To Get Involved in the Filecoin Community"
         content="The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world."
-        link={{ href: FILECOIN_SOCIAL_MEDIA_URLS.slack, text: 'Learn More' }}
+        link={{ href: FILECOIN_URLS.slack, text: 'Learn More' }}
       >
         <GetInvolvedList />
       </Section>

@@ -1,32 +1,36 @@
 const BASE_URL = 'https://fil.org'
-
-const ORGANIZATION_NAME = 'Filecoin Foundation'
-
 const CONTACT_EMAIL = 'hello@fil.org'
 const GRANTS_EMAIL = 'devgrants@fil.org'
+const ORGANIZATION_NAME = 'Filecoin Foundation'
 
-const NEWSLETTER_URL = 'https://upload.fil.org/subscribe'
+const FIL_PLUS_URLS = {
+  notary: 'https://github.com/filecoin-project/notary-governance/',
+  site: 'https://plus.fil.org/',
+  slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
+}
 
-const SOCIAL_MEDIA_URLS = {
+const FILECOIN_FOUNDATION_URLS = {
   bluesky: 'https://bsky.app/profile/ff.bsky.social',
   facebook: 'https://www.facebook.com/YourPage',
   github: 'https://github.com/FilecoinFoundationWeb',
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   linkedin: 'https://www.linkedin.com/company/filecoin-foundation/mycompany/',
+  newsletter: 'https://upload.fil.org/subscribe',
   twitter: 'https://twitter.com/FilFoundation',
   youtube: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
 }
 
-const FILECOIN_SOCIAL_MEDIA_URLS = {
+const FILECOIN_URLS = {
+  site: 'https://filecoin.io',
   slack: 'https://filecoin.io/slack',
 }
 
 export {
   BASE_URL,
   CONTACT_EMAIL,
-  FILECOIN_SOCIAL_MEDIA_URLS,
+  FIL_PLUS_URLS,
+  FILECOIN_FOUNDATION_URLS,
+  FILECOIN_URLS,
   GRANTS_EMAIL,
-  NEWSLETTER_URL,
   ORGANIZATION_NAME,
-  SOCIAL_MEDIA_URLS,
 }

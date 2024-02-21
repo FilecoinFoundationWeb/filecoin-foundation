@@ -15,10 +15,10 @@ import { attributes } from '@/content/pages/about.md'
 import { PATHS } from '@/constants/paths'
 import {
   CONTACT_EMAIL,
-  FILECOIN_SOCIAL_MEDIA_URLS,
+  FILECOIN_URLS,
   GRANTS_EMAIL,
   ORGANIZATION_NAME,
-  SOCIAL_MEDIA_URLS,
+  FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
@@ -56,7 +56,7 @@ const aboutPageStructuredData: WithContext<WebPage> = {
       },
     ],
   },
-  sameAs: Object.values(SOCIAL_MEDIA_URLS),
+  sameAs: Object.values(FILECOIN_FOUNDATION_URLS),
 }
 
 export default function About() {
@@ -127,10 +127,10 @@ export default function About() {
             </p>
             <p>
               Watch our{' '}
-              <TextLink href={SOCIAL_MEDIA_URLS.youtube}>talks</TextLink>{' '}
+              <TextLink href={FILECOIN_FOUNDATION_URLS.youtube}>talks</TextLink>{' '}
               featuring contributions from our advisory panel and be part of the
               conversation on{' '}
-              <TextLink href={FILECOIN_SOCIAL_MEDIA_URLS.slack}>
+              <TextLink href={FILECOIN_URLS.slack}>
                 Filecoin&apos;s Slack
               </TextLink>
               .
