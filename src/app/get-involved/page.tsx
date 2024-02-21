@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/PageHeader'
+import { SectionDeepDive } from '@/components/SectionDeepDive'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 import { VideoArticle } from '@/components/VideoArticle'
@@ -31,7 +32,7 @@ export default function GetInvolved() {
         <p>
           The Filecoin Foundation is growing and hitting new milestones. And as
           we build, we&apos;re hiring for roles to promote the Filecoin
-          ecosystem and the broader web3 movement. Check out our open roles.
+          ecosystem and the broader Web3 movement. Check out our open roles.
         </p>
         <TextLink href="https://boards.greenhouse.io/filecoinfoundation">
           View All
@@ -101,32 +102,18 @@ export default function GetInvolved() {
         </ul>
       </section>
 
-      <section>
-        <header>
-          <h2>Dive Deeper</h2>
-          <p>
-            Join our talks, community meetings, and other events. To explore
-            them,{' '}
-            <TextLink href="https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA">
-              visit our Youtube channel
-            </TextLink>
-            .
-          </p>
-        </header>
-        <div>
-          <VideoArticle
-            title="Accelerating the Filecoin Ecosystem"
-            content="On these calls, we discussed recent DataCap allocation and application metrics, heard from various clients applying through the Large Dataset process, continued our discussion of Issue 217."
-            link="https://www.youtube.com/watch?v=o0nPBRM-aMQ&t=3s"
-          />
-
-          <VideoArticle
-            title="Welcome to Filecoin Plus Day"
-            content="Learn about the fundamentals of Filecoin Plus, a program designed to incentivize useful storage on the Filecoin network."
-            link="https://www.youtube.com/watch?v=wP4Bk8lBNUc"
-          />
-        </div>
-      </section>
+      <SectionDeepDive>
+        <VideoArticle
+          title="Accelerating the Filecoin Ecosystem"
+          description="On these calls, we discussed recent DataCap allocation and application metrics, heard from various clients applying through the Large Dataset process, continued our discussion of Issue 217."
+          href="https://www.youtube.com/watch?v=o0nPBRM-aMQ&t=3s"
+        />
+        <VideoArticle
+          title="Welcome to Filecoin Plus Day"
+          description="Learn about the fundamentals of Filecoin Plus, a program designed to incentivize useful storage on the Filecoin network."
+          href="https://www.youtube.com/watch?v=wP4Bk8lBNUc"
+        />
+      </SectionDeepDive>
     </>
   )
 }

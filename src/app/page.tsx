@@ -2,6 +2,7 @@ import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { PageHeader } from '@/components/PageHeader'
 import { ResourcesList } from '@/components/ResourcesList'
 import { Section } from '@/components/Section'
+import { SectionDeepDive } from '@/components/SectionDeepDive'
 import { TextLink } from '@/components/TextLink'
 import { VideoArticle } from '@/components/VideoArticle'
 
@@ -12,6 +13,7 @@ import { attributes } from '@/content/pages/home.md'
 const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_SOCIAL_MEDIA_URLS } from '@/constants/siteMetadata'
 
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
@@ -21,11 +23,11 @@ export default function Home() {
       <PageHeader
         title={title}
         description={description}
-        link={{ url: '/get-involved', text: 'Get Involved' }}
+        link={{ url: PATHS.GET_INVOLVED.path, text: 'Get Involved' }}
       />
 
       <Section
-        title="What we do"
+        title="What We Do"
         content="We exist to help people build their vision on Filecoin and to support the growth of the decentralized web."
       />
 
@@ -75,32 +77,25 @@ export default function Home() {
 
       <Section
         kicker="Get Involved"
-        title="Learn how to get involved in the Filecoin community"
+        title="Learn How To Get Involved in the Filecoin Community"
         content="The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world."
-        link={{ url: 'https://filecoin.io/slack', text: 'Learn More' }}
+        link={{ url: FILECOIN_SOCIAL_MEDIA_URLS.slack, text: 'Learn More' }}
       >
         <GetInvolvedList />
       </Section>
 
-      <Section
-        title="Dive Deeper"
-        content="Join our talks, community meetings, and other events. To explore them, visit our Youtube channel."
-        link={{
-          url: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
-          text: 'Visit our Youtube channel',
-        }}
-      >
+      <SectionDeepDive>
         <VideoArticle
           title="FIL Austin"
-          content="The first major IRL meetup of the Filecoin Community gathered hundreds of contributors from across the Filecoin ecosystem."
-          link="https://www.youtube.com/watch?v=9Db0rXvscYY"
+          description="The first major IRL meetup of the Filecoin Community gathered hundreds of contributors from across the Filecoin ecosystem."
+          href="https://www.youtube.com/watch?v=9Db0rXvscYY"
         />
         <VideoArticle
           title="DWeb Gateway @ Davos"
-          content="The Decentralized Web Gateway brings together leaders, thinkers and activists to discuss the evolution of the internet and its ramifications for society."
-          link="https://www.youtube.com/watch?v=hg8e3_gKtwU"
+          description="The Decentralized Web Gateway brings together leaders, thinkers and activists to discuss the evolution of the internet and its ramifications for society."
+          href="https://www.youtube.com/watch?v=hg8e3_gKtwU"
         />
-      </Section>
+      </SectionDeepDive>
     </>
   )
 }
