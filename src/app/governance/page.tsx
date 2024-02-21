@@ -9,6 +9,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/governance.md'
 
 import { PATHS } from '@/constants/paths'
+import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
 
@@ -78,6 +79,7 @@ export default function Governance() {
           </p>
         </article>
       </section>
+
       <section>
         <h2>Security</h2>
         <p>
@@ -109,6 +111,7 @@ export default function Governance() {
           participate. Learn more.
         </p>
       </section>
+
       <section>
         <h2>Filecoin Plus</h2>
         <p>
@@ -137,7 +140,7 @@ export default function Governance() {
           <p>
             If you are looking to apply for DataCap as a client, head over to
             the{' '}
-            <TextLink href="https://plus.fil.org/">
+            <TextLink href={FIL_PLUS_URLS.site}>
               Filecoin Plus app portal
             </TextLink>
             .
@@ -148,26 +151,29 @@ export default function Governance() {
           <p>
             If you are interested in applying to become a Filecoin Plus notary,
             head to the{' '}
-            <TextLink href="https://github.com/filecoin-project/notary-governance/">
+            <TextLink href={FIL_PLUS_URLS.notary}>
               notary governance repository
             </TextLink>
             .
           </p>
         </article>
       </section>
+
       <section>
         <h2>Get Involved</h2>
         <p>Community governance calls happen every other Tuesday.</p>
         <p>
           Visit the{' '}
-          <TextLink href="/events">Filecoin community events hub</TextLink> and
-          join the conversation in the{' '}
-          <TextLink href="https://filecoinproject.slack.com/?redir=%2Farchives%2FC01DLAPKDGX">
+          <TextLink href={PATHS.EVENTS.path}>
+            Filecoin community events hub
+          </TextLink>{' '}
+          and join the conversation in the{' '}
+          <TextLink href={FIL_PLUS_URLS.slack}>
             #fil-plus Slack channel
           </TextLink>
           .
         </p>
-        <TextLink href="/get-involved">Get Involved</TextLink>
+        <TextLink href={PATHS.GET_INVOLVED.path}>Get Involved</TextLink>
       </section>
       <section>
         <h2>Events & Hackathons</h2>
