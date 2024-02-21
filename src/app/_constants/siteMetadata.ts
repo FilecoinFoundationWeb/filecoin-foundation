@@ -16,9 +16,14 @@ const SOCIAL_MEDIA_URLS = {
   youtube: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
 }
 
+const FILECOIN_SOCIAL_MEDIA_URLS = {
+  slack: 'https://filecoin.io/slack',
+}
+
 export {
   BASE_URL,
   CONTACT_EMAIL,
+  FILECOIN_SOCIAL_MEDIA_URLS,
   GRANTS_EMAIL,
   NEWSLETTER_URL,
   ORGANIZATION_NAME,
