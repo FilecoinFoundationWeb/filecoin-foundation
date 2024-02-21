@@ -2,7 +2,9 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { PageHeader } from '@/components/PageHeader'
 import { Section } from '@/components/Section'
+import { SectionDeepDive } from '@/components/SectionDeepDive'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 import { VideoArticle } from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -12,10 +14,9 @@ import { attributes } from '@/content/pages/about.md'
 
 import { PATHS } from '@/constants/paths'
 import {
-  CONTACT_EMAIL,
-  GRANTS_EMAIL,
+  FILECOIN_URLS,
   ORGANIZATION_NAME,
-  SOCIAL_MEDIA_URLS,
+  FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
@@ -44,16 +45,18 @@ const aboutPageStructuredData: WithContext<WebPage> = {
       {
         '@type': 'ContactPoint',
         contactType: 'Media and collaboration inquiries',
-        email: CONTACT_EMAIL,
+        email: FILECOIN_FOUNDATION_URLS.email,
       },
       {
         '@type': 'ContactPoint',
         contactType: 'Ecosystem grants inquiries',
-        email: GRANTS_EMAIL,
+        email: FILECOIN_URLS.grants.email,
       },
     ],
   },
-  sameAs: Object.values(SOCIAL_MEDIA_URLS),
+  sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
+    (link) => link.href
+  ),
 }
 
 export default function About() {
@@ -62,80 +65,129 @@ export default function About() {
       <StructuredDataScript structuredData={aboutPageStructuredData} />
       <PageHeader title={title} description={description} />
 
-      <Section
-        title="Our Mission"
-        content="The Foundation's key role is to find ways for the Filecoin community to solve the problems we face as a community, and help facilitate collective action."
-      />
+      <section>
+        <h2>Our Mission</h2>
+        <p>
+          The Foundation&apos;s key role is to find ways for the Filecoin
+          community to solve the problems we face as a community, and help
+          facilitate collective action.
+        </p>
+      </section>
 
       <Section
-        title="Internet of Everyone"
+        kicker="Internet of Everyone"
+        title="Filecoin Foundation does not own Filecoin, operate it, or manage it."
         content={[
-          'Filecoin Foundation does not own Filecoin, operate it, or manage it.',
           'It is one of many organizations that cares deeply about Filecoin — its potential, and the values it represents',
           'However, the foundation has a unique position within that ecosystem to help cultivate research, development, and community engagement.',
         ]}
-        link={{ url: '/get-involved', text: 'Join the Community' }}
+        link={{ href: PATHS.GET_INVOLVED.path, text: 'Join the Community' }}
       />
 
-      <Section
-        title="Collective Action"
-        content={[
-          'The Foundation helps the Filecoin community solve problems and facilitates collective action.',
-          'This means resisting the natural tendency of organizations to grow and accumulate value within themselves, and instead cultivating value creation outside the Foundation in the broader Filecoin ecosystem.',
-        ]}
-      />
+      <section>
+        <p>
+          In addition to providing funding, The Filecoin Foundation supports a
+          vibrant, decentralized ecosystem with many independent organizations
+          that provide funding, coordination, and leadership to support
+          Filecoin&apos;s long-term success.
+        </p>
+      </section>
 
       <Section
-        title="Boards of Directors"
-        content="The Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web."
-      >
+        kicker="Collective Action"
+        title="The Foundation helps the Filecoin community solve problems and facilitates collective action."
+        content="
+          This means resisting the natural tendency of organizations to grow and accumulate value within themselves, and instead cultivating value creation outside the Foundation in the broader Filecoin ecosystem."
+      />
+
+      <section>
+        <h2>Board of Directors</h2>
+        <p>
+          The Filecoin Foundation (FF) is an independent organization that
+          facilitates governance of the Filecoin network, funds critical
+          development projects, supports the growth of the Filecoin ecosystem,
+          and advocates for Filecoin and the decentralized web.
+        </p>
         <ul>
           <li>Marta Belcher</li>
           <li>Marcia Hofmann</li>
           <li>Brian Behlendorf</li>
           <li>Nicole Wong</li>
         </ul>
-      </Section>
+      </section>
 
       <Section
-        title="Advisors"
-        content={[
-          'The Filecoin Foundation is guided by an extraordinary and accomplished group of advisors',
-          'Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem.',
-          "Watch our talks featuring contributions from our advisory panel and be part of the conversation on Filecoin's Slack.",
-        ]}
+        kicker="Advisors"
+        title="The Filecoin Foundation is guided by an extraordinary and accomplished group of advisors."
+        content={
+          <>
+            <p>
+              Leaders from across Web3 and the open-source technology
+              communities have come together to foster the Filecoin ecosystem.
+            </p>
+            <p>
+              Watch{' '}
+              <TextLink href={FILECOIN_FOUNDATION_URLS.social.youtube.href}>
+                our talks
+              </TextLink>{' '}
+              featuring contributions from our advisory panel and be part of the
+              conversation on{' '}
+              <TextLink href={FILECOIN_URLS.social.slack.href}>
+                Filecoin&apos;s Slack
+              </TextLink>
+              .
+            </p>
+          </>
+        }
       >
         <ul>
-          <li>Veronica McGregor</li>
-          <li>Katie Biber</li>
-          <li>Alex Feerst</li>
-          <li>Wendy Hanamura</li>
-          <li>Brewster Kahle</li>
-          <li>Joe Lubin</li>
-          <li>Georgia Quinn</li>
-          <li>Sandra Ro</li>
+          <li>
+            <span className="block">Veronica McGregor</span>
+            <span>‍Chief Legal Officer, Exodus</span>
+          </li>
+          <li>
+            <span className="block">Katie Biber</span>
+            <span>General Counsel, Brex</span>
+          </li>
+          <li>
+            <span className="block">Alex Feerst</span>
+            <span>CEO, Murmuration Labs</span>
+          </li>
+          <li>
+            <span className="block">Wendy Hanamura</span>
+            <span>Director of Partnerships, Internet Archive</span>
+          </li>
+          <li>
+            <span className="block">Brewster Kahle</span>
+            <span>Founder, Internet Archive</span>
+          </li>
+          <li>
+            <span className="block">Joe Lubin</span>
+            <span>Founder of ConsenSys and Co-Founder of Ethereum</span>
+          </li>
+          <li>
+            <span className="block">Georgia Quinn</span>
+            <span>General Counsel, Anchorage</span>
+          </li>
+          <li>
+            <span className="block">Sandra Ro</span>
+            <span>CEO, ‍Global Blockchain Business Council</span>
+          </li>
         </ul>
       </Section>
 
-      <Section
-        title="Dive Deeper"
-        content="Join our talks, community meetings, and other events. To explore them, visit our Youtube channel."
-        link={{
-          url: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
-          text: 'Visit our Youtube Channel',
-        }}
-      >
+      <SectionDeepDive>
         <VideoArticle
           title="Humanity's Most Important Records"
-          content="This session highlights the amazing work Starling Labs has done in Ukraine and Syria, with the support of the Filecoin Foundation."
-          link="https://www.youtube.com/watch?v=S91iwPGuV7A"
+          description="This session highlights the amazing work Starling Labs has done in Ukraine and Syria, with the support of the Filecoin Foundation."
+          href="https://www.youtube.com/watch?v=S91iwPGuV7A"
         />
         <VideoArticle
           title="Fil+ State of the Union 2022"
-          content="Learn about Filecoin Plus, a program designed to incentivize useful storage on the Filecoin network."
-          link="https://www.youtube.com/watch?v=d_ey6CHjGys"
+          description="Learn about Filecoin Plus, a program designed to incentivize useful storage on the Filecoin network."
+          href="https://www.youtube.com/watch?v=d_ey6CHjGys"
         />
-      </Section>
+      </SectionDeepDive>
     </>
   )
 }

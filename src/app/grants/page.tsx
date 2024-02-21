@@ -1,8 +1,8 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { PageHeader } from '@/components/PageHeader'
+import { Section } from '@/components/Section'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-import { UpcomingEvents } from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -10,7 +10,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/grants.md'
 
 import { PATHS } from '@/constants/paths'
-import { GRANTS_EMAIL } from '@/constants/siteMetadata'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
 
@@ -29,17 +29,15 @@ export default function Grants() {
       <PageHeader
         title={title}
         description={description}
-        link={{ url: `mailto:${GRANTS_EMAIL}`, text: 'Email for more info' }}
+        link={{ href: FILECOIN_URLS.grants.email, text: 'Email for more info' }}
       />
 
       <section>
-        <header>
-          <h2>Developer Grants</h2>
-          <p>
-            The Foundation funds talented and eager teams that want to work with
-            us to build a more robust, efficient, and decentralized web.
-          </p>
-        </header>
+        <h2>Developer Grants</h2>
+        <p>
+          The Foundation funds talented and eager teams that want to work with
+          us to build a more robust, efficient, and decentralized web.
+        </p>
         <ul>
           <li>
             <h3>Open Grants</h3>
@@ -67,6 +65,13 @@ export default function Grants() {
             </p>
           </li>
         </ul>
+        <p>
+          For more information on grants,{' '}
+          <TextLink href={FILECOIN_URLS.grants.email}>email us</TextLink> or see
+          our{' '}
+          <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink>{' '}
+          for a more in-depth introduction to the grants program.
+        </p>
       </section>
 
       <section>
@@ -79,15 +84,13 @@ export default function Grants() {
       </section>
 
       <section>
-        <header>
-          <h2>Community Grants</h2>
-          <p>
-            The Filecoin Foundation and its sister organization the Filecoin
-            Foundation for the Decentralized Web (FFDW) provide funding to build
-            the greater decentralized web and open-source communities. Our
-            initiatives seek to:
-          </p>
-        </header>
+        <h2>Community Grants</h2>
+        <p>
+          The Filecoin Foundation and its sister organization the Filecoin
+          Foundation for the Decentralized Web (FFDW) provide funding to build
+          the greater decentralized web and open-source communities. Our
+          initiatives seek to:
+        </p>
         <ul>
           <li>
             <p>Accelerate the adoption of open, decentralized technologies</p>
@@ -104,7 +107,10 @@ export default function Grants() {
             </p>
           </li>
         </ul>
-        <p>For more information on grants, email us.</p>
+        <p>
+          For more information on grants,{' '}
+          <TextLink href={FILECOIN_URLS.grants.email}>email us</TextLink>.
+        </p>
       </section>
 
       <section>
@@ -136,35 +142,24 @@ export default function Grants() {
         </ul>
       </section>
 
+      <Section
+        kicker="What We Do"
+        title="Filecoin Plus: Incentivize Useful Storage on Filecoin"
+        content="A brief overview of the motivation, principles, and mechanisms of Filecoin Plus, and how it incentivizes useful storage on the network."
+        link={{
+          href: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/',
+          text: 'Learn More',
+        }}
+      />
+
       <section>
-        <header>
-          <h2>What We Do</h2>
-          <p>Filecoin Plus: Incentivize Useful Storage on Filecoin</p>
-        </header>
+        <h2>How to get involved in the Filecoin community</h2>
         <p>
-          A brief overview of the motivation, principles, and mechanisms of
-          Filecoin Plus, and how it incentivizes useful storage on the network.
+          The Filecoin community includes thousands of developers,
+          technologists, users, and enthusiasts all over the world.
         </p>
-        <TextLink href="https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/">
-          Learn More
-        </TextLink>
-      </section>
-
-      <section>
-        <header>
-          <h2>How to get involved in the Filecoin community</h2>
-          <p>
-            The Filecoin community includes thousands of developers,
-            technologists, users, and enthusiasts all over the world.
-          </p>
-          <TextLink href="https://filecoin.io/slack">Learn More</TextLink>
-        </header>
+        <TextLink href={FILECOIN_URLS.social.slack.href}>Learn More</TextLink>
         <GetInvolvedList />
-      </section>
-
-      <section>
-        <h2>Events & Hackathons</h2>
-        <UpcomingEvents />
       </section>
     </>
   )

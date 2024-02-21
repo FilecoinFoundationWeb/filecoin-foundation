@@ -2,16 +2,16 @@ import { TextLink } from '@/components/TextLink'
 
 type VideoArticleProps = {
   title: string
-  content: string
-  link: string
+  description: string
+  href: string
 }
 
-export function VideoArticle({ title, content, link }: VideoArticleProps) {
+export function VideoArticle({ title, description, href }: VideoArticleProps) {
   return (
     <article>
       <h3>{title}</h3>
-      <p>{content}</p>
-      <TextLink href={link}>Watch Video</TextLink>
+      <p>{description}</p>
+      <TextLink href={href}>Watch Video</TextLink>
     </article>
   )
 }

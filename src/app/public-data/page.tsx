@@ -1,5 +1,6 @@
 import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { PageHeader } from '@/components/PageHeader'
+import { SectionJoin } from '@/components/SectionJoin'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -11,6 +12,10 @@ import { attributes } from '@/content/pages/public-data.md'
 const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
+import {
+  FILECOIN_URLS,
+  FILECOIN_FOUNDATION_URLS,
+} from '@/constants/siteMetadata'
 
 export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA.path)
 
@@ -77,7 +82,7 @@ export default function PublicData() {
 
       <section>
         <h2>Public data belongs in the hands of the people</h2>
-        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href={FILECOIN_FOUNDATION_URLS.publicDataCommons.contactForm}>
           Join the Public Data Commons
         </TextLink>
       </section>
@@ -97,9 +102,7 @@ export default function PublicData() {
           mission of Filecoin is to create a decentralized, efficient, and
           robust foundation for humanity’s information.
         </p>
-        <TextLink href="https://filecoin.io/">
-          Learn More about Filecoin
-        </TextLink>
+        <TextLink href={FILECOIN_URLS.site}>Learn More about Filecoin</TextLink>
       </section>
 
       <section>
@@ -114,16 +117,7 @@ export default function PublicData() {
         </TextLink>
       </section>
 
-      <section>
-        <h2>Join the Movement</h2>
-        <p>
-          Join the movement to create the Public Data Commons, an initiative to
-          make public data more resilient, accessible, and cost-effective.
-        </p>
-        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
-          Learn More
-        </TextLink>
-      </section>
+      <SectionJoin />
 
       <section>
         <header>
@@ -169,7 +163,9 @@ export default function PublicData() {
           <p>
             If you are from a civic technology group and want to leverage public
             datasets hosted on decentralized storage,
-            <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.publicDataCommons.contactForm}
+            >
               fill out this form
             </TextLink>{' '}
             and we will notify you if there is a Public Data Awards program
@@ -187,15 +183,18 @@ export default function PublicData() {
             about the Filecoin community’s commitment to energy efficiency.
           </p>
         </article>
+
         <p>
           Have a question not addressed here?{' '}
-          <TextLink href="mailto:impact@fil.org">Reach out to us.</TextLink>
+          <TextLink href={FILECOIN_FOUNDATION_URLS.publicDataCommons.email}>
+            Reach out to us.
+          </TextLink>
         </p>
       </section>
 
       <section>
         <h2>Highlighted Open Data Events</h2>
-        <TextLink href="/events">View All Events</TextLink>
+        <TextLink href={PATHS.EVENTS.path}>View All Events</TextLink>
         <div>
           <h3>Stay Tuned</h3>
           <p>
@@ -203,21 +202,9 @@ export default function PublicData() {
             Economic Forum and SXSW in 2023.
           </p>
         </div>
-        <div>
-          <h3>Past Events</h3>
-        </div>
       </section>
 
-      <section>
-        <h2>Join the Movement</h2>
-        <p>
-          Join the movement to create the Public Data Commons, an initiative to
-          make public data more resilient, accessible, and cost-effective.
-        </p>
-        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
-          Learn More
-        </TextLink>
-      </section>
+      <SectionJoin />
     </>
   )
 }

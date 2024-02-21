@@ -14,7 +14,7 @@ export type PathValues =
   | '/governance'
   | '/grants'
   | '/'
-  | '/policy'
+  | '/privacy-policy'
   | '/public-data/awards'
   | '/public-data'
   | '/terms'
@@ -57,7 +57,7 @@ export const PATHS = {
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
   HOME: createPathObject('/', 'Home', false, '/home'),
-  POLICY: createPathObject('/policy', 'Policy'),
+  PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
   PUBLIC_DATA_AWARDS: createPathObject(
     '/public-data/awards',
     'Public Data Awards',

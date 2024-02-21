@@ -1,14 +1,14 @@
 import { TextLink } from '@/components/TextLink'
 
 type SectionProps = {
-  content: string | string[]
-  kicker?: string
-  link?: { url: string; text: string }
   title: string
+  content: string | string[] | React.ReactNode
+  kicker?: string
+  link?: { href: string; text: string }
   children?: React.ReactNode
 }
 
-function Content({ content }: { content: string | string[] }) {
+function Content({ content }: { content: SectionProps['content'] }) {
   if (Array.isArray(content)) {
     return (
       <>
@@ -19,14 +19,20 @@ function Content({ content }: { content: string | string[] }) {
     )
   }
 
-  return <p>{content}</p>
+  if (content === typeof 'string') {
+    return <p>{content}</p>
+  }
+
+  return <>{content}</>
 }
 
+export default Content
+
 export function Section({
+  title,
   content,
   kicker,
   link,
-  title,
   children,
 }: SectionProps) {
   return (
@@ -34,7 +40,7 @@ export function Section({
       {kicker && <span className="uppercase text-sm">{kicker}</span>}
       <h2>{title}</h2>
       <Content content={content} />
-      {link && <TextLink href={link.url}>{link.text}</TextLink>}
+      {link && <TextLink href={link.href}>{link.text}</TextLink>}
       {children}
     </section>
   )

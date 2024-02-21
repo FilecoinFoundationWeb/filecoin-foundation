@@ -27,7 +27,7 @@ export default function Ecosystem() {
       <PageHeader
         title={title}
         description={description}
-        link={{ url: '#', text: 'Submit Your Project' }}
+        link={{ href: '#', text: 'Submit Your Project' }}
       />
 
       <div>

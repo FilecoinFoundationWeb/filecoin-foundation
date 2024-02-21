@@ -3,7 +3,7 @@ import { TextLink } from '@/components/TextLink'
 type PageHeaderProps = {
   title: string
   description: string
-  link?: { url: string; text: string }
+  link?: { href: string; text: string }
 }
 
 export function PageHeader({ title, description, link }: PageHeaderProps) {
@@ -11,7 +11,7 @@ export function PageHeader({ title, description, link }: PageHeaderProps) {
     <header>
       <h1>{title}</h1>
       <p>{description}</p>
-      {link && <TextLink href={link.url}>{link.text}</TextLink>}
+      {link && <TextLink href={link.href}>{link.text}</TextLink>}
     </header>
   )
 }
