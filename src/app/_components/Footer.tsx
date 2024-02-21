@@ -30,14 +30,16 @@ export function Footer() {
         <ul></ul>
       </div>
       <div className="mt-4">
-        <TextLink href={PATHS.POLICY.path}>{PATHS.POLICY.label}</TextLink>
-        <TextLink href={PATHS.TERMS.path}>{PATHS.TERMS.label}</TextLink>
-        <span className="block mt-2">
+        <div className="flex gap-4 mb-2">
+          <TextLink href={PATHS.POLICY.path}>{PATHS.POLICY.label}</TextLink>
+          <TextLink href={PATHS.TERMS.path}>{PATHS.TERMS.label}</TextLink>
+        </div>
+        <p>
           Content on this site is licensed under a{' '}
           <TextLink href="https://creativecommons.org/licenses/by/4.0/">
             Creative Commons Attribution 4.0 International license.
           </TextLink>
-        </span>
+        </p>
         <Social />
       </div>
     </footer>
