@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/PageHeader'
+import { SectionJoin } from '@/components/SectionJoin'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -10,6 +11,7 @@ import { attributes } from '@/content/pages/awards.md'
 const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export const metadata = createMetadata(seo, PATHS.PUBLIC_DATA_AWARDS.path)
 
@@ -62,13 +64,14 @@ export default function Awards() {
           to $10,000 USD to support projects that leverage datasets or advance
           learning around datasets stored on decentralized technology.
         </p>
-        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
+        <TextLink href={FILECOIN_FOUNDATION_URLS.publicDataCommons.contactForm}>
           Apply for a Public Data Award
         </TextLink>
       </section>
 
       <section>
         <h2>Frequently Asked Questions</h2>
+
         <article>
           <h3>Who is eligible for this award?</h3>
           <p>
@@ -77,6 +80,7 @@ export default function Awards() {
             are eligible at this time.
           </p>
         </article>
+
         <article>
           <h3>What strings are attached to this funding?</h3>
           <p>
@@ -86,6 +90,7 @@ export default function Awards() {
             benefited from the project.
           </p>
         </article>
+
         <article>
           <h3>What are the sizes of these Awards?</h3>
           <p>
@@ -94,6 +99,7 @@ export default function Awards() {
             not exceed $10,000, even if your project costs more.
           </p>
         </article>
+
         <article>
           <h3>How can I spend this money?</h3>
           <p>
@@ -105,6 +111,7 @@ export default function Awards() {
             planned initiative, including paying for staff time.
           </p>
         </article>
+
         <article>
           <h3>Is there a date by which I need to spend the money?</h3>
           <p>
@@ -114,10 +121,12 @@ export default function Awards() {
             of receipt.
           </p>
         </article>
+
         <article>
           <h3>Can an individual without an organization apply?</h3>
           <p>Yes, either an individual or an organization can apply.</p>
         </article>
+
         <article>
           <h3>
             Can one individual or organization submit multiple applications?
@@ -126,6 +135,7 @@ export default function Awards() {
             No, applications should be limited to one per person/organization.
           </p>
         </article>
+
         <article>
           <h3>
             What if I want to apply, but I don&apos;t live or work in the
@@ -140,26 +150,18 @@ export default function Awards() {
             specific funding opportunities.
           </p>
         </article>
+
         <article>
           <h3>Where can I send any additional questions?</h3>
           <p>
-            <TextLink href="mailto:impact@fil.org">
+            <TextLink href={FILECOIN_FOUNDATION_URLS.publicDataCommons.email}>
               You can reach out to us anytime with questions and thoughts.
             </TextLink>
           </p>
         </article>
       </section>
 
-      <section>
-        <h2>Join the Movement</h2>
-        <p>
-          Join the movement to create the Public Data Commons, an initiative to
-          make public data more resilient, accessible, and cost-effective.
-        </p>
-        <TextLink href="https://airtable.com/shrmNURZt1khzB00M">
-          Learn More
-        </TextLink>
-      </section>
+      <SectionJoin />
     </>
   )
 }
