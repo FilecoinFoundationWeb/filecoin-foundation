@@ -81,7 +81,7 @@ export default function About() {
           'It is one of many organizations that cares deeply about Filecoin — its potential, and the values it represents',
           'However, the foundation has a unique position within that ecosystem to help cultivate research, development, and community engagement.',
         ]}
-        link={{ url: PATHS.GET_INVOLVED.path, text: 'Join the Community' }}
+        link={{ href: PATHS.GET_INVOLVED.path, text: 'Join the Community' }}
       />
 
       <section>

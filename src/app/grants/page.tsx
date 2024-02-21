@@ -29,7 +29,7 @@ export default function Grants() {
       <PageHeader
         title={title}
         description={description}
-        link={{ url: `mailto:${GRANTS_EMAIL}`, text: 'Email for more info' }}
+        link={{ href: `mailto:${GRANTS_EMAIL}`, text: 'Email for more info' }}
       />
 
       <section>

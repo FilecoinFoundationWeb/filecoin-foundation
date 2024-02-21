@@ -23,7 +23,7 @@ export default function Home() {
       <PageHeader
         title={title}
         description={description}
-        link={{ url: PATHS.GET_INVOLVED.path, text: 'Get Involved' }}
+        link={{ href: PATHS.GET_INVOLVED.path, text: 'Get Involved' }}
       />
 
       <Section
@@ -72,14 +72,14 @@ export default function Home() {
         kicker="Dev Grants"
         title="We fund talented and eager teams that want to work with us to build a more robust, efficient, and decentralized web."
         content="We're enabling more contributors to solve open problems and engage with the Filecoin project."
-        link={{ url: '/grants/', text: 'Learn More' }}
+        link={{ href: '/grants/', text: 'Learn More' }}
       />
 
       <Section
         kicker="Get Involved"
         title="Learn How To Get Involved in the Filecoin Community"
         content="The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world."
-        link={{ url: FILECOIN_SOCIAL_MEDIA_URLS.slack, text: 'Learn More' }}
+        link={{ href: FILECOIN_SOCIAL_MEDIA_URLS.slack, text: 'Learn More' }}
       >
         <GetInvolvedList />
       </Section>
