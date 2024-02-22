@@ -5,7 +5,7 @@ updated-on: 2023-10-16T17:45:17.440Z
 published-on: 2023-10-16T17:45:17.450Z
 f_description: This week, Filecoin Foundation celebrates the three-year
   anniversary of the Filecoin network’s  mainnet launch.
-f_featured: true
+f_featured: false
 f_image:
   url: /assets/images/image-3-.png
   alt: Filecoin network growth over 3 years

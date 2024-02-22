@@ -52,7 +52,7 @@ Filecoin Foundation has been critical in supporting how we’re building our tec
 
 In addition to the preservation of assets, Artifact Labs focuses on fostering engagement, providing  accessibility, and building community for the guardians of these valuable assets. For instance, we are working on a collection with RMS Titanic Inc that will continue to build out *Titanic’s* Web3 journey, engaging and re-engaging the millions of people interested in *Titanic* and allowing them to assume roles in the community. Those who participate will unlock exclusive benefits, including community events; direct access to experts and content; and even involvement in decision making on future dive expeditions. 
 
-We have three overarching goals for the *Titanic* project: 1) build the community of enthusiasts, 2) establish a community of stakeholders and unlock theƒ utilities with expedition as a highlight, and 3) preserve the thousands of artifacts already recovered from the wreck site. tit
+We have three overarching goals for the *Titanic* project: 1) build the community of enthusiasts, 2) establish a community of stakeholders and unlock theƒ utilities with expedition as a highlight, and 3) preserve the thousands of artifacts already recovered from the wreck site.
 
 As we continue to embark on expeditions, newly collected items  will help further preserve Titanic’s legacy. With blockchain technology and NFTs, we can continue engaging Titanic enthusiasts with the opportunity to own and collect valuable digital assets with legendary stories behind them. 
 
