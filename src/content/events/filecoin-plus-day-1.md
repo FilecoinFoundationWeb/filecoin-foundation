@@ -9,7 +9,7 @@ f_cta-text: Register Now
 f_start-date: 2023-11-14T19:30:00.264Z
 f_end-date: 2023-11-14T22:00:00.270Z
 f_image:
-  url: /assets/images/image-14-.png
+  url: /assets/images/03292023-filplusmission.png
 f_event-date: 2023-11-13T18:13:00.276Z
 f_ff-involvement: Hosted by FF
 f_icon-type: Register
