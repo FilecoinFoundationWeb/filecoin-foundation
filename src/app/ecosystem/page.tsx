@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -85,7 +86,9 @@ export default function Ecosystem() {
       />
 
       <section>
-        <h2>Featured Partners</h2>
+        <Heading tag="h2" variant="xl">
+          Featured Partners
+        </Heading>
         <ul className="list-none flex gap-8 items-center">
           {featuredPartners.map((partner) => (
             <li
@@ -116,7 +119,9 @@ export default function Ecosystem() {
       </section>
 
       <section>
-        <h2>Ecosystem Projects</h2>
+        <Heading tag="h2" variant="xl">
+          Ecosystem Projects
+        </Heading>
         <p className="mb-6">
           Discover the diverse landscape of Filecoin projects
         </p>
@@ -126,7 +131,9 @@ export default function Ecosystem() {
 
       <section>
         <a href={FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm}>
-          <h2>Become Part of the Expanding Ecosystem</h2>
+          <Heading tag="h2" variant="xl">
+            Become Part of the Expanding Ecosystem
+          </Heading>
           <p>
             If you&apos;re building on Filecoin and don&apos;t see your project
             or want to edit your listing, share your details.
@@ -135,7 +142,9 @@ export default function Ecosystem() {
         </a>
 
         <Link href={PATHS.EVENTS.path}>
-          <h2>Join Us IRL</h2>
+          <Heading tag="h2" variant="xl">
+            Join Us IRL
+          </Heading>
           <p>
             Engage in inspiring conversation, participate in hands-on workshops,
             and learn from industry leaders at our events.
@@ -143,7 +152,9 @@ export default function Ecosystem() {
         </Link>
 
         <a href={FILECOIN_FOUNDATION_URLS.newsletter}>
-          <h2>Dive Deeper</h2>
+          <Heading tag="h2" variant="xl">
+            Dive Deeper
+          </Heading>
           <p>
             Subscribe to our newsletter for big ideas and news about the
             Filecoin ecosystem and the decentralized web.
@@ -153,7 +164,9 @@ export default function Ecosystem() {
 
       <section>
         <header>
-          <h2>Case Studies</h2>
+          <Heading tag="h2" variant="xl">
+            Case Studies
+          </Heading>
           <p>
             Learn about leading projects using Filecoin solutions to preserve
             humanity&apos;s most important information.

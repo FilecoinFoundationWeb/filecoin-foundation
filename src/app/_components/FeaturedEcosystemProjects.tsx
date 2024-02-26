@@ -1,4 +1,5 @@
 import { Badge } from '@/components/Badge'
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
@@ -25,7 +26,9 @@ export function FeaturedEcosystemProjects() {
       {featuredProjects.map((ecosystemProject) => (
         <li key={ecosystemProject.slug} className="ml-0">
           <Badge featured />
-          <h3>{ecosystemProject.title}</h3>
+          <Heading tag="h3" variant="lg">
+            {ecosystemProject.title}
+          </Heading>
           <p>{ecosystemProject['f_card-text-truncated']}</p>
           <TextLink href={`${PATHS.ECOSYSTEM.path}/${ecosystemProject.slug}`}>
             See More

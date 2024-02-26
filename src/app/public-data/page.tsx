@@ -1,4 +1,5 @@
 import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { SectionJoin } from '@/components/SectionJoin'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -32,10 +33,10 @@ export default function PublicData() {
       <PageHeader title={title} description={description} />
 
       <section>
-        <h2>
+        <Heading tag="h2" variant="xl">
           Making public data more resilient, permanent, and cost-effective,
           while also increasing accessibility.
-        </h2>
+        </Heading>
         <p>
           The Public Data Commons exists to support open data initiatives in
           partnership with governments and official organizations across the
@@ -52,10 +53,10 @@ export default function PublicData() {
       </section>
 
       <section>
-        <h2>
+        <Heading tag="h2" variant="xl">
           Control over today’s centralized internet is concentrated in the hands
           of a few, for-profit power players.
-        </h2>
+        </Heading>
         <p>
           These huge, ultra-powerful companies collect our data, control the
           information we get, and present vulnerable targets for malicious
@@ -81,14 +82,18 @@ export default function PublicData() {
       </section>
 
       <section>
-        <h2>Public data belongs in the hands of the people</h2>
+        <Heading tag="h2" variant="xl">
+          Public data belongs in the hands of the people
+        </Heading>
         <TextLink href={FILECOIN_FOUNDATION_URLS.publicDataCommons.contactForm}>
           Join the Public Data Commons
         </TextLink>
       </section>
 
       <section>
-        <h2>What is decentralized storage?</h2>
+        <Heading tag="h2" variant="xl">
+          What is decentralized storage?
+        </Heading>
         <p>
           Governments and communities need accessible and cost-effective ways to
           store public datasets. Filecoin makes decentralized storage easy, and
@@ -106,7 +111,9 @@ export default function PublicData() {
       </section>
 
       <section>
-        <h2>Award Opportunities</h2>
+        <Heading tag="h2" variant="xl">
+          Award Opportunities
+        </Heading>
         <p>
           Filecoin Foundation’s Public Data Awards program funds the work of
           local civic technology groups to store and/or access their community
@@ -121,17 +128,23 @@ export default function PublicData() {
 
       <section>
         <header>
-          <h2>Case Studies</h2>
+          <Heading tag="h2" variant="xl">
+            Case Studies
+          </Heading>
           <p>See the value of public datasets in action.</p>
         </header>
         <FeaturedCaseStudies />
       </section>
 
       <section>
-        <h2>Frequently Asked Questions</h2>
+        <Heading tag="h2" variant="xl">
+          Frequently Asked Questions
+        </Heading>
 
         <article>
-          <h3>What is Filecoin?</h3>
+          <Heading tag="h3" variant="lg">
+            What is Filecoin?
+          </Heading>
           <p>
             Filecoin is a decentralized network to store files, with built-in
             economic incentives to ensure files are stored reliably over time.
@@ -141,7 +154,9 @@ export default function PublicData() {
         </article>
 
         <article>
-          <h3>What is the Filecoin Foundation?</h3>
+          <Heading tag="h3" variant="lg">
+            What is the Filecoin Foundation?
+          </Heading>
           <p>
             Filecoin Foundation (FF) is an independent organization that
             facilitates governance of the Filecoin network, funds critical
@@ -154,7 +169,9 @@ export default function PublicData() {
         </article>
 
         <article>
-          <h3>How do I get Involved?</h3>
+          <Heading tag="h3" variant="lg">
+            How do I get Involved?
+          </Heading>
           <p>
             If you are a government official interested in having your city join
             the Public Data Commons,{' '}
@@ -174,7 +191,9 @@ export default function PublicData() {
         </article>
 
         <article>
-          <h3>What about the environmental impacts of blockchain?</h3>
+          <Heading tag="h3" variant="lg">
+            What about the environmental impacts of blockchain?
+          </Heading>
           <p>
             Filecoin is the world’s most transparent blockchain when it comes to
             electricity consumption. Check the network’s energy use right now at
@@ -193,10 +212,14 @@ export default function PublicData() {
       </section>
 
       <section>
-        <h2>Highlighted Open Data Events</h2>
+        <Heading tag="h2" variant="xl">
+          Highlighted Open Data Events
+        </Heading>
         <TextLink href={PATHS.EVENTS.path}>View All Events</TextLink>
         <div>
-          <h3>Stay Tuned</h3>
+          <Heading tag="h3" variant="lg">
+            Stay Tuned
+          </Heading>
           <p>
             More information to come soon on future events, such as the World
             Economic Forum and SXSW in 2023.

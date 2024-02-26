@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
@@ -33,7 +34,9 @@ export function EcosystemProjectListItem({
           )}
         </div>
         <span className="inline-block mb-3">{project.f_topic.label}</span>
-        <h3>{title}</h3>
+        <Heading tag="h3" variant="lg">
+          {title}
+        </Heading>
         <p>{description}</p>
       </div>
 

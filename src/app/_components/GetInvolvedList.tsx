@@ -1,21 +1,29 @@
+import { Heading } from '@/components/Heading'
+
 export function GetInvolvedList() {
   return (
     <ul>
       <li>
         <a href="http://hub.fil.org/events">
-          <h3>Attend an event</h3>
+          <Heading tag="h3" variant="lg">
+            Attend an event
+          </Heading>
           <p>Join or watch a Filecoin ecosystem event</p>
         </a>
       </li>
       <li>
         <a href="https://www.meetup.com/Filecoin-San-Francisco">
-          <h3>Join a meetup group</h3>
+          <Heading tag="h3" variant="lg">
+            Join a meetup group
+          </Heading>
           <p>Find a group of people in your area who connect regularly</p>
         </a>
       </li>
       <li>
         <a href="https://docs.filecoin.io/about-filecoin/ways-to-contribute/">
-          <h3>Contribute to the Filecoin project</h3>
+          <Heading tag="h3" variant="lg">
+            Contribute to the Filecoin project
+          </Heading>
           <p>
             Shape the future by contributing to Filecoin’s code, research, or
             docs
@@ -24,7 +32,9 @@ export function GetInvolvedList() {
       </li>
       <li>
         <a href="https://filecoin.io/slack">
-          <h3>Participate online</h3>
+          <Heading tag="h3" variant="lg">
+            Participate online
+          </Heading>
           <p>
             Participate in one of the many online forums about Filecoin, events,
             or the Filecoin Slack channel
@@ -33,13 +43,17 @@ export function GetInvolvedList() {
       </li>
       <li>
         <a href="https://sp.filecoin.io/">
-          <h3>Become a storage provider or builder</h3>
+          <Heading tag="h3" variant="lg">
+            Become a storage provider or builder
+          </Heading>
           <p>Dive right in and become an essential part of the ecosystem</p>
         </a>
       </li>
       <li>
         <a href="https://proto.school/">
-          <h3>Learn more on ProtoSchool</h3>
+          <Heading tag="h3" variant="lg">
+            Learn more on ProtoSchool
+          </Heading>
           <p>
             Understand how it all works with interactive tutorials from
             ProtoSchool

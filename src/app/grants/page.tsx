@@ -1,4 +1,5 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { Section } from '@/components/Section'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -33,14 +34,18 @@ export default function Grants() {
       />
 
       <section>
-        <h2>Developer Grants</h2>
+        <Heading tag="h2" variant="xl">
+          Developer Grants
+        </Heading>
         <p>
           The Foundation funds talented and eager teams that want to work with
           us to build a more robust, efficient, and decentralized web.
         </p>
         <ul>
           <li>
-            <h3>Open Grants</h3>
+            <Heading tag="h3" variant="lg">
+              Open Grants
+            </Heading>
             <p>
               Have an idea for pushing the Filecoin ecosystem forward? Grants
               are available to support projects that advance the Filecoin
@@ -49,7 +54,9 @@ export default function Grants() {
             </p>
           </li>
           <li>
-            <h3>Requests for Proposal</h3>
+            <Heading tag="h3" variant="lg">
+              Requests for Proposal
+            </Heading>
             <p>
               These grants generally have clearly scoped deliverables,
               milestones, and funding limits. While there is some flexibility in
@@ -58,7 +65,9 @@ export default function Grants() {
             </p>
           </li>
           <li>
-            <h3>Microgrants</h3>
+            <Heading tag="h3" variant="lg">
+              Microgrants
+            </Heading>
             <p>
               The Filecoin Foundation awards grants to early-stage projects that
               have developed initial protocols using Filecoin.
@@ -75,7 +84,9 @@ export default function Grants() {
       </section>
 
       <section>
-        <h2>Our Mission</h2>
+        <Heading tag="h2" variant="xl">
+          Our Mission
+        </Heading>
         <p>
           The Foundation&apos;s key role is to find ways for the Filecoin
           community to solve the problems we face as a community, and help
@@ -84,7 +95,9 @@ export default function Grants() {
       </section>
 
       <section>
-        <h2>Community Grants</h2>
+        <Heading tag="h2" variant="xl">
+          Community Grants
+        </Heading>
         <p>
           The Filecoin Foundation and its sister organization the Filecoin
           Foundation for the Decentralized Web (FFDW) provide funding to build
@@ -116,7 +129,9 @@ export default function Grants() {
       <section>
         <ul>
           <li>
-            <h3>Support</h3>
+            <Heading tag="h3" variant="lg">
+              Support
+            </Heading>
             <p>
               There are stakeholders in the Filecoin ecosystem: Storage
               Providers, Developers, Researchers, Token Holders, Clients, Users.
@@ -124,14 +139,18 @@ export default function Grants() {
             </p>
           </li>
           <li>
-            <h3>Growth</h3>
+            <Heading tag="h3" variant="lg">
+              Growth
+            </Heading>
             <p>
               We accelerate the growth of the Filecoin ecosystem through
               partnerships and collaborations.
             </p>
           </li>
           <li>
-            <h3>Governance</h3>
+            <Heading tag="h3" variant="lg">
+              Governance
+            </Heading>
             <p>
               As an open-source project, it is vital that Filecoin has
               transparent, community-driven governance. The Foundation
@@ -153,7 +172,9 @@ export default function Grants() {
       />
 
       <section>
-        <h2>How to get involved in the Filecoin community</h2>
+        <Heading tag="h2" variant="xl">
+          How to get involved in the Filecoin community
+        </Heading>
         <p>
           The Filecoin community includes thousands of developers,
           technologists, users, and enthusiasts all over the world.

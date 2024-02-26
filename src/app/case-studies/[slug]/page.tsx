@@ -4,6 +4,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { Article, WithContext } from 'schema-dts'
 
+import { Heading } from '@/components/Heading'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
@@ -80,8 +81,11 @@ export default function CaseStudy({ params }: CaseStudyProps) {
       <StructuredDataScript
         structuredData={createCaseStudyPostStructuredData(data)}
       />
-
-      <h1 className="text-2xl font-bold mb-5">{data.title}</h1>
+      <header>
+        <Heading tag="h1" variant="2xl">
+          {data.title}
+        </Heading>
+      </header>
       <p>{data.f_description}</p>
     </>
   )

@@ -1,3 +1,4 @@
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 type VideoArticleProps = {
@@ -9,7 +10,9 @@ type VideoArticleProps = {
 export function VideoArticle({ title, description, href }: VideoArticleProps) {
   return (
     <article>
-      <h3>{title}</h3>
+      <Heading tag="h3" variant="lg">
+        {title}
+      </Heading>
       <p>{description}</p>
       <TextLink href={href}>Watch Video</TextLink>
     </article>

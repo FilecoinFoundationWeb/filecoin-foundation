@@ -1,9 +1,13 @@
+import { Heading } from '@/components/Heading'
+
 export function ResourcesList() {
   return (
     <ul>
       <li>
         <a href="https://docs.filecoin.io/">
-          <h3>Filecoin Documentation</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Documentation
+          </Heading>
           <p>
             Filecoin project documentation homepage offers the tools to
             contribute to the network.
@@ -12,7 +16,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://github.com/filecoin-project">
-          <h3>Filecoin GitHub</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin GitHub
+          </Heading>
           <p>
             Contribute to Filecoin and help improve it by engaging in the
             Filecoin GitHub repository.
@@ -21,7 +27,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://liftoff.filecoin.io/">
-          <h3>Filecoin Mainnet Ignition & Liftoff</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Mainnet Ignition & Liftoff
+          </Heading>
           <p>
             This covers the timeline of the Filecoin Mainnet Ignition & Liftoff.
           </p>
@@ -29,7 +37,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://dashboard.starboard.ventures/dashboard">
-          <h3>Filecoin Network Status</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Network Status
+          </Heading>
           <p>
             This dashboard provides the latest update of the Filecoin Network.
           </p>
@@ -37,7 +47,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://github.com/filecoin-project/community/discussions">
-          <h3>Filecoin Forums</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Forums
+          </Heading>
           <p>
             Details on the latest events hosted by Filecoin Foundation and a
             full list of community events
@@ -46,7 +58,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://github.com/filecoin-project/research">
-          <h3>Filecoin Research</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Research
+          </Heading>
           <p>
             Breakthroughs underpinning the Filecoin protocol, as well as future
             areas of exploration.
@@ -55,7 +69,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://filecoin.io/2020-engineering-filecoins-economy-en.pdf">
-          <h3>Cryptoeconomics Overview</h3>
+          <Heading tag="h3" variant="lg">
+            Cryptoeconomics Overview
+          </Heading>
           <p>
             This report describes the components of the Filecoin economy and how
             they interact.
@@ -64,7 +80,9 @@ export function ResourcesList() {
       </li>
       <li>
         <a href="https://proto.school/">
-          <h3>Filecoin Tutorials (ProtoSchool)</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Tutorials (ProtoSchool)
+          </Heading>
           <p>
             This is a self-guided interactive Filecoin tutorial designed to
             introduce decentralized web concepts, protocols, and tools.

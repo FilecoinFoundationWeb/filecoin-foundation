@@ -1,3 +1,4 @@
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 type PageHeaderProps = {
@@ -9,7 +10,9 @@ type PageHeaderProps = {
 export function PageHeader({ title, description, link }: PageHeaderProps) {
   return (
     <header>
-      <h1>{title}</h1>
+      <Heading tag="h1" variant="2xl">
+        {title}
+      </Heading>
       <p>{description}</p>
       {link && <TextLink href={link.href}>{link.text}</TextLink>}
     </header>

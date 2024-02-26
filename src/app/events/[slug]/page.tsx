@@ -6,6 +6,7 @@ import Image from 'next/image'
 import matter from 'gray-matter'
 import { Event, WithContext } from 'schema-dts'
 
+import { Heading } from '@/components/Heading'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
@@ -73,7 +74,6 @@ export default function Event({ params }: EventProps) {
       <StructuredDataScript
         structuredData={createEventPostStructuredData(data)}
       />
-
       <header>
         <Image
           priority
@@ -83,7 +83,9 @@ export default function Event({ params }: EventProps) {
           height={440}
           className="block h-auto object-contain"
         />
-        <h1 className="text-2xl font-bold mb-5">{data.title}</h1>
+        <Heading tag="h1" variant="2xl">
+          {data.title}
+        </Heading>
       </header>
 
       <p>{data.f_description}</p>
