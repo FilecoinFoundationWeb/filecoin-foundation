@@ -23,6 +23,7 @@
       "@/components/*": ["./src/app/_components/*"],
       "@/content/*": ["./src/content/*"],
       "@/constants/*": ["./src/app/_constants/*"],
+      "@/data/*": ["./src/app/_data/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/types/*": ["./src/app/_types/*"],
       "@/utils/*": ["./src/app/_utils/*"]

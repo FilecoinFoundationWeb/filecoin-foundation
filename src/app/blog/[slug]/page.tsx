@@ -93,11 +93,11 @@ export default function BlogPost({ params }: BlogPostProps) {
         <span className="block">{formatDate(data.date, 'blog')}</span>
         <h1 className="mb-5 text-xl font-bold">{data.title}</h1>
         <Image
+          priority
           src={data.f_image.url}
           alt={data.f_image.alt || ''}
           width={770}
           height={440}
-          priority={true}
           className="block h-auto object-contain"
         />
       </header>
