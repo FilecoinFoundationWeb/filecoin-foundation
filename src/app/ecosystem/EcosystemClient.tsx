@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react'
 
+import { Button } from '@/components/Button'
 import { EcosystemFilter } from '@/components/EcosystemFilter'
 import { EcosystemProjectsList } from '@/components/EcosystemProjectsList'
 
@@ -57,13 +58,9 @@ export function EcosystemClient({
 
   return (
     <>
-      <button
-        className="border rounded-xl py-3 px-9 mb-4 font-semibold"
-        onClick={handleClearAll}
-      >
+      <Button aria-label="Clear all filter options" onClick={handleClearAll}>
         Clear All
-      </button>
-
+      </Button>
       <div className="sm:flex gap-6">
         <EcosystemFilter
           onTopicsChange={(topics) => setSelectedTopics(topics)}
@@ -93,9 +90,9 @@ export function EcosystemClient({
       </div>
 
       {hasMoreProjects && (
-        <button aria-label="Load more projects" onClick={handleLoadMore}>
+        <Button aria-label="Load more projects" onClick={handleLoadMore}>
           Load More
-        </button>
+        </Button>
       )}
     </>
   )
