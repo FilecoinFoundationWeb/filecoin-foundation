@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
@@ -27,7 +28,9 @@ export function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
           className="block object-cover"
         />
       )}
-      <h3>{title}</h3>
+      <Heading tag="h3" variant="lg">
+        {title}
+      </Heading>
       <p>{description}</p>
       <TextLink href={ctaUrl || `${PATHS.CASE_STUDIES.path}/${slug}`}>
         {ctaText || 'More'}

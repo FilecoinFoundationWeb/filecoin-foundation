@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 
 import Image from 'next/image'
 
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
@@ -64,7 +65,9 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
                 className="object-cover"
               />
             )}
-            <h3>{post.title}</h3>
+            <Heading tag="h3" variant="lg">
+              {post.title}
+            </Heading>
             <p>{post.f_description}</p>
             <span className="block">{formatDate(post.date, 'blog')}</span>
             <TextLink href={`${PATHS.BLOG.path}/${post.slug}`}>

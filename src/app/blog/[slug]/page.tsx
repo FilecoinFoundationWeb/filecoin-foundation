@@ -6,6 +6,7 @@ import Image from 'next/image'
 import matter from 'gray-matter'
 import { BlogPosting, WithContext } from 'schema-dts'
 
+import { Heading } from '@/components/Heading'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -88,10 +89,11 @@ export default function BlogPost({ params }: BlogPostProps) {
       <StructuredDataScript
         structuredData={createBlogPostStructuredData(data)}
       />
-
       <header>
         <span className="block">{formatDate(data.date, 'blog')}</span>
-        <h1 className="mb-5 text-xl font-bold">{data.title}</h1>
+        <Heading tag="h1" variant="2xl">
+          {data.title}
+        </Heading>
         <Image
           priority
           src={data.f_image.url}
@@ -102,9 +104,7 @@ export default function BlogPost({ params }: BlogPostProps) {
         />
       </header>
 
-      <div>
-        <MarkdownContent>{content}</MarkdownContent>
-      </div>
+      <MarkdownContent>{content}</MarkdownContent>
     </>
   )
 }

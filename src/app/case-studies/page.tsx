@@ -1,5 +1,6 @@
 import { WebPage, WithContext } from 'schema-dts'
 
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -57,7 +58,9 @@ function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
   return (
     <li>
       <TextLink href={`${PATHS.CASE_STUDIES.path}/${caseStudy.slug}`}>
-        <h3>{caseStudy.title}</h3>
+        <Heading tag="h3" variant="lg">
+          {caseStudy.title}
+        </Heading>
       </TextLink>
       <p>{caseStudy.f_description}</p>
     </li>

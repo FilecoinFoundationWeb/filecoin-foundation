@@ -15,7 +15,7 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
         img: ({ src, alt }) => (
           <CustomImage src={src as string} alt={alt as string} />
         ),
-        p: ({ ...props }) => <p className="mb-4 text-base" {...props} />,
+        p: ({ ...rest }) => <p className="mb-4 text-base" {...rest} />,
       }}
     >
       {children}

@@ -1,3 +1,4 @@
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { SectionJoin } from '@/components/SectionJoin'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -54,10 +55,10 @@ export default function Awards() {
       </section>
 
       <section>
-        <h2>
+        <Heading tag="h2" variant="xl">
           The first Public Data Awards program will be launched soon. Stay
           tuned!
-        </h2>
+        </Heading>
         <p>
           The Public Data Awards is a location-specific $50,000 funding pool for
           non-profits and civic technology groups that will disperse awards up
@@ -70,10 +71,14 @@ export default function Awards() {
       </section>
 
       <section>
-        <h2>Frequently Asked Questions</h2>
+        <Heading tag="h2" variant="xl">
+          Frequently Asked Questions
+        </Heading>
 
         <article>
-          <h3>Who is eligible for this award?</h3>
+          <Heading tag="h3" variant="lg">
+            Who is eligible for this award?
+          </Heading>
           <p>
             Only individuals and non-profit or civic technology organizations
             based in or working directly in the featured city or jurisdiction
@@ -82,7 +87,9 @@ export default function Awards() {
         </article>
 
         <article>
-          <h3>What strings are attached to this funding?</h3>
+          <Heading tag="h3" variant="lg">
+            What strings are attached to this funding?
+          </Heading>
           <p>
             None. We simply ask you to write up a short (one page) report within
             30 days of your project concluding. The reports should help the
@@ -92,7 +99,9 @@ export default function Awards() {
         </article>
 
         <article>
-          <h3>What are the sizes of these Awards?</h3>
+          <Heading tag="h3" variant="lg">
+            What are the sizes of these Awards?
+          </Heading>
           <p>
             While each location’s overall pool of funding is $50,000, the range
             for individual awards is up to $10,000 USD. An individual award will
@@ -101,7 +110,9 @@ export default function Awards() {
         </article>
 
         <article>
-          <h3>How can I spend this money?</h3>
+          <Heading tag="h3" variant="lg">
+            How can I spend this money?
+          </Heading>
           <p>
             Tell us in the application – it could be anything from food & drink
             for an in-person tutorial on how to access and use decentralized
@@ -113,7 +124,9 @@ export default function Awards() {
         </article>
 
         <article>
-          <h3>Is there a date by which I need to spend the money?</h3>
+          <Heading tag="h3" variant="lg">
+            Is there a date by which I need to spend the money?
+          </Heading>
           <p>
             This is a rapid-fire program designed to quickly spur new
             innovations and ideas in the decentralized technology space. To help
@@ -123,24 +136,26 @@ export default function Awards() {
         </article>
 
         <article>
-          <h3>Can an individual without an organization apply?</h3>
+          <Heading tag="h3" variant="lg">
+            Can an individual without an organization apply?
+          </Heading>
           <p>Yes, either an individual or an organization can apply.</p>
         </article>
 
         <article>
-          <h3>
+          <Heading tag="h3" variant="lg">
             Can one individual or organization submit multiple applications?
-          </h3>
+          </Heading>
           <p>
             No, applications should be limited to one per person/organization.
           </p>
         </article>
 
         <article>
-          <h3>
+          <Heading tag="h3" variant="lg">
             What if I want to apply, but I don&apos;t live or work in the
             featured city?
-          </h3>
+          </Heading>
           <p>
             If you’re an individual, group, or organization in the civic tech
             space that would be interested in applying for this program, fill
@@ -152,7 +167,9 @@ export default function Awards() {
         </article>
 
         <article>
-          <h3>Where can I send any additional questions?</h3>
+          <Heading tag="h3" variant="lg">
+            Where can I send any additional questions?
+          </Heading>
           <p>
             <TextLink href={FILECOIN_FOUNDATION_URLS.publicDataCommons.email}>
               You can reach out to us anytime with questions and thoughts.

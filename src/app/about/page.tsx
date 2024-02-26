@@ -1,5 +1,6 @@
 import { WebPage, WithContext } from 'schema-dts'
 
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { Section } from '@/components/Section'
 import { SectionDeepDive } from '@/components/SectionDeepDive'
@@ -66,7 +67,9 @@ export default function About() {
       <PageHeader title={title} description={description} />
 
       <section>
-        <h2>Our Mission</h2>
+        <Heading tag="h2" variant="xl">
+          Our Mission
+        </Heading>
         <p>
           The Foundation&apos;s key role is to find ways for the Filecoin
           community to solve the problems we face as a community, and help
@@ -101,7 +104,9 @@ export default function About() {
       />
 
       <section>
-        <h2>Board of Directors</h2>
+        <Heading tag="h2" variant="xl">
+          Board of Directors
+        </Heading>
         <p>
           The Filecoin Foundation (FF) is an independent organization that
           facilitates governance of the Filecoin network, funds critical

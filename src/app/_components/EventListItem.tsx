@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 import { EventData } from '@/types/eventTypes'
@@ -39,7 +40,9 @@ export function EventListItem({ event }: { event: EventData }) {
         {formattedStartDate && <span>{formattedStartDate}</span>}
         {formattedEndDate && <span> - {formattedEndDate}</span>}
       </div>
-      <h3>{title}</h3>
+      <Heading tag="h3" variant="lg">
+        {title}
+      </Heading>
       <p>{description}</p>
       <TextLink href={ctaUrl || `${PATHS.EVENTS.path}/${slug}`}>
         {ctaText || 'More'}

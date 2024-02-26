@@ -7,6 +7,7 @@ import matter from 'gray-matter'
 import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
+import { Heading } from '@/components/Heading'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -122,7 +123,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           />
         )}
 
-        <h1 className="text-2xl font-bold mb-5">{data.title}</h1>
+        <Heading tag="h1" variant="2xl">
+          {data.title}
+        </Heading>
 
         <MarkdownContent>{content}</MarkdownContent>
 

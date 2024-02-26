@@ -1,4 +1,5 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { Section } from '@/components/Section'
 import { SectionDeepDive } from '@/components/SectionDeepDive'
@@ -34,7 +35,9 @@ export default function GetInvolved() {
       <PageHeader title={title} description={description} />
 
       <section>
-        <h2>Careers</h2>
+        <Heading tag="h2" variant="xl">
+          Careers
+        </Heading>
         <p>
           The Filecoin Foundation is growing and hitting new milestones. And as
           we build, we&apos;re hiring for roles to promote the Filecoin

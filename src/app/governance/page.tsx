@@ -1,3 +1,4 @@
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -29,9 +30,13 @@ export default function Governance() {
       <PageHeader title={title} description={description} />
 
       <section>
-        <h2>Improving Filecoin</h2>
+        <Heading tag="h2" variant="xl">
+          Improving Filecoin
+        </Heading>
         <article>
-          <h3>What exactly is a FIP</h3>
+          <Heading tag="h3" variant="lg">
+            What exactly is a FIP
+          </Heading>
           <p>
             FIPs are standards specifying potential new features or processes
             for Filecoin.
@@ -47,7 +52,9 @@ export default function Governance() {
           </p>
         </article>
         <article>
-          <h3>How are FIPs prioritized?</h3>
+          <Heading tag="h3" variant="lg">
+            How are FIPs prioritized?
+          </Heading>
           <p>
             There are different types of FIPs, such as core FIPs for low-level
             protocol changes that affect consensus and require a network
@@ -68,7 +75,9 @@ export default function Governance() {
           </p>
         </article>
         <article>
-          <h3>Can I submit an FIP?</h3>
+          <Heading tag="h3" variant="lg">
+            Can I submit an FIP?
+          </Heading>
           <p>
             Yes, anyone is free to propose one, and then various stakeholders in
             the community will discuss to determine whether it should be adopted
@@ -82,7 +91,9 @@ export default function Governance() {
       </section>
 
       <section>
-        <h2>Security</h2>
+        <Heading tag="h2" variant="xl">
+          Security
+        </Heading>
         <p>
           Filecoin is a decentralized storage network for humanity’s most
           important information, so ensuring the network is secure and trustable
@@ -114,7 +125,9 @@ export default function Governance() {
       </section>
 
       <section>
-        <h2>Filecoin Plus</h2>
+        <Heading tag="h2" variant="xl">
+          Filecoin Plus
+        </Heading>
         <p>
           Filecoin Plus is a pragmatic solution to the technically challenging
           problem of verifying that a particular set of data is useful in a
@@ -123,7 +136,9 @@ export default function Governance() {
           ways.
         </p>
         <article>
-          <h3>How does it work?</h3>
+          <Heading tag="h3" variant="lg">
+            How does it work?
+          </Heading>
           <p>
             Filecoin Plus maximizes the amount of useful storage on Filecoin by
             adding a layer of social trust to the network and introducing a
@@ -137,7 +152,9 @@ export default function Governance() {
           </p>
         </article>
         <article>
-          <h3>Apply for DataCap</h3>
+          <Heading tag="h3" variant="lg">
+            Apply for DataCap
+          </Heading>
           <p>
             If you are looking to apply for DataCap as a client, head over to
             the{' '}
@@ -148,7 +165,9 @@ export default function Governance() {
           </p>
         </article>
         <article>
-          <h3>Filecoin Plus Notary</h3>
+          <Heading tag="h3" variant="lg">
+            Filecoin Plus Notary
+          </Heading>
           <p>
             If you are interested in applying to become a Filecoin Plus notary,
             head to the{' '}
@@ -161,7 +180,9 @@ export default function Governance() {
       </section>
 
       <section>
-        <h2>Get Involved</h2>
+        <Heading tag="h2" variant="xl">
+          Get Involved
+        </Heading>
         <Social />
         <p>Community governance calls happen every other Tuesday.</p>
         <p>
@@ -179,7 +200,9 @@ export default function Governance() {
       </section>
 
       <section>
-        <h2>Events & Hackathons</h2>
+        <Heading tag="h2" variant="xl">
+          Events & Hackathons
+        </Heading>
         <UpcomingEvents />
       </section>
     </>

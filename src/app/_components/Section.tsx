@@ -1,3 +1,4 @@
+import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
 type SectionProps = {
@@ -38,7 +39,9 @@ export function Section({
   return (
     <section>
       {kicker && <span className="uppercase text-sm">{kicker}</span>}
-      <h2>{title}</h2>
+      <Heading tag="h2" variant="xl">
+        {title}
+      </Heading>
       <Content content={content} />
       {link && <TextLink href={link.href}>{link.text}</TextLink>}
       {children}
