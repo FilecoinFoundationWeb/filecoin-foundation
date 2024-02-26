@@ -51,7 +51,7 @@ export const PATHS = {
   ABOUT: createPathObject('/about', 'About Us'),
   BLOG: createPathObject('/blog', 'Blog', true),
   CASE_STUDIES: createPathObject('/case-studies', 'Case Studies', true),
-  ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem'),
+  ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem', true),
   EVENTS: createPathObject('/events', 'Events', true),
   GET_INVOLVED: createPathObject('/get-involved', 'Get Involved'),
   GOVERNANCE: createPathObject('/governance', 'Governance'),

@@ -1,0 +1,2483 @@
+{
+  "backend": {
+    "name": "test-repo",
+    "branch": "main"
+  },
+  "media_folder": "public/assets/images",
+  "public_folder": "/assets/images",
+  "header_config": {
+    "name": "header",
+    "label": "Header",
+    "widget": "object",
+    "fields": [
+      {
+        "name": "title",
+        "label": "Title",
+        "widget": "string"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "widget": "text"
+      }
+    ]
+  },
+  "meta_config": {
+    "name": "seo",
+    "label": "SEO",
+    "widget": "object",
+    "fields": [
+      {
+        "name": "title",
+        "label": "SEO Title",
+        "widget": "string"
+      },
+      {
+        "name": "description",
+        "label": "Meta Description",
+        "widget": "text"
+      },
+      {
+        "name": "og",
+        "label": "Open Graph Metadata",
+        "widget": "object",
+        "collapsed": true,
+        "fields": [
+          {
+            "name": "title",
+            "label": "Open Graph Title",
+            "widget": "string",
+            "required": false
+          },
+          {
+            "name": "image",
+            "label": "Open Graph Image",
+            "widget": "image",
+            "required": false,
+            "media_library": {
+              "config": {
+                "multiple": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "twitter",
+        "label": "Twitter Metadata",
+        "widget": "object",
+        "collapsed": true,
+        "fields": [
+          {
+            "name": "title",
+            "label": "Twitter Title",
+            "widget": "string",
+            "default": "summary",
+            "required": false
+          },
+          {
+            "name": "card",
+            "label": "Twitter Card",
+            "widget": "string",
+            "default": "summary",
+            "required": false
+          },
+          {
+            "name": "site",
+            "label": "Twitter Site",
+            "widget": "string",
+            "required": false
+          },
+          {
+            "name": "creator",
+            "label": "Twitter Creator",
+            "widget": "string",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  "collections": [
+    {
+      "name": "shared",
+      "label": "Shared",
+      "files": [
+        {
+          "name": "medatadata",
+          "label": "medatadata",
+          "file": "src/content/shared/site-metadata.yml",
+          "fields": [
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "pages",
+      "label": "Pages",
+      "files": [
+        {
+          "name": "home",
+          "label": "Home",
+          "file": "src/content/pages/home.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "about",
+          "label": "About",
+          "file": "src/content/pages/about.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "blog",
+          "label": "Blog",
+          "file": "src/content/pages/blog.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "governance",
+          "label": "Governance",
+          "file": "src/content/pages/governance.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ecosystem",
+          "label": "Ecosystem",
+          "file": "src/content/pages/ecosystem.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "grants",
+          "label": "Grants",
+          "file": "src/content/pages/grants.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "awards",
+          "label": "Awards",
+          "file": "src/content/pages/awards.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "get-involved",
+          "label": "Get Involved",
+          "file": "src/content/pages/get-involved.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "public-data",
+          "label": "Public Data",
+          "file": "src/content/pages/public-data.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "label": "Events",
+          "file": "src/content/pages/events.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "privacy-policy",
+          "label": "Privacy Policy",
+          "file": "src/content/pages/privacy-policy.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "terms",
+          "label": "Terms",
+          "file": "src/content/pages/terms.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "SEO Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blog",
+      "label": "Blog Posts",
+      "label_singular": "Blog Post",
+      "folder": "src/content/blog/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "body",
+          "label": "Content",
+          "widget": "markdown",
+          "required": false
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string",
+          "required": true
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "f_author",
+          "label": "Author",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_description",
+          "label": "Description",
+          "widget": "text",
+          "required": true
+        },
+        {
+          "name": "f_featured",
+          "label": "Featured",
+          "widget": "boolean",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "f_image",
+          "label": "Image",
+          "widget": "object",
+          "required": true,
+          "fields": [
+            {
+              "name": "url",
+              "label": "Image",
+              "widget": "image",
+              "required": true,
+              "allow_multiple": false
+            },
+            {
+              "name": "alt",
+              "label": "alt",
+              "widget": "string",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "f_recommended-posts",
+          "label": "Recommended Posts",
+          "widget": "relation",
+          "required": false,
+          "collection": "blog",
+          "value_field": "cms/blog/{{slug}}.md",
+          "search_fields": [
+            "slug",
+            "name"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "multiple": true
+        },
+        {
+          "name": "f_post-date",
+          "label": "Post Date",
+          "widget": "datetime",
+          "required": true
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "widget": "hidden",
+          "default": "blog"
+        },
+        {
+          "name": "layout",
+          "label": "Layout",
+          "widget": "hidden",
+          "default": "[blog].html"
+        },
+        {
+          "name": "date",
+          "label": "Publish Date",
+          "widget": "datetime"
+        },
+        {
+          "name": "seo",
+          "label": "SEO",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "case_studies",
+      "label": "Case Studies",
+      "label_singular": "Case Study",
+      "folder": "src/content/case-studies/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string",
+          "required": true
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "f_color",
+          "label": "Color",
+          "widget": "color",
+          "required": false,
+          "enableAlpha": true,
+          "allowInput": true
+        },
+        {
+          "name": "f_cta",
+          "label": "CTA",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_cta-text",
+          "label": "CTA Text",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_featured",
+          "label": "Featured",
+          "widget": "boolean",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "f_preview-text",
+          "label": "Preview Text",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_description",
+          "label": "Description",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "f_image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "url",
+              "label": "Image",
+              "widget": "image",
+              "required": false,
+              "allow_multiple": false
+            },
+            {
+              "name": "alt",
+              "label": "alt",
+              "widget": "string",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "f_image-background-position",
+          "label": "Image Background Position",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "widget": "hidden",
+          "default": "case-studies"
+        },
+        {
+          "name": "layout",
+          "label": "Layout",
+          "widget": "hidden",
+          "default": "[case-studies].html"
+        },
+        {
+          "name": "date",
+          "label": "Publish Date",
+          "widget": "datetime"
+        },
+        {
+          "name": "seo",
+          "label": "SEO",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ecosystem_projects",
+      "label": "Ecosystem Projects",
+      "label_singular": "Ecosystem Project",
+      "folder": "src/content/ecosystem/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Company Name",
+          "widget": "string",
+          "required": true
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "body",
+          "label": "Description (Long)",
+          "widget": "markdown",
+          "required": false
+        },
+        {
+          "name": "f_featured",
+          "label": "Featured",
+          "widget": "boolean",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "f_brand",
+          "label": "Logo",
+          "widget": "object",
+          "required": true,
+          "fields": [
+            {
+              "name": "url",
+              "label": "Image",
+              "widget": "image",
+              "required": true,
+              "allow_multiple": false
+            },
+            {
+              "name": "alt",
+              "label": "Image Alt",
+              "widget": "string",
+              "required": true
+            }
+          ]
+        },
+        {
+          "name": "f_topic",
+          "label": "Topic",
+          "widget": "select",
+          "required": true,
+          "options": [
+            {
+              "label": "Artificial Intelligence",
+              "value": "artificial-intelligence"
+            },
+            {
+              "label": "Education, Academia & Health",
+              "value": "education-academia-health"
+            },
+            {
+              "label": "Finance",
+              "value": "finance"
+            },
+            {
+              "label": "Media & Entertainment",
+              "value": "media-entertainment"
+            },
+            {
+              "label": "Network",
+              "value": "network"
+            },
+            {
+              "label": "Public Goods & DWeb",
+              "value": "public-goods-dweb"
+            },
+            {
+              "label": "Science, Climate & Space",
+              "value": "science-climate-space"
+            },
+            {
+              "label": "Storage",
+              "value": "storage"
+            },
+            {
+              "label": "Tooling & Productivity",
+              "value": "tooling-productivity"
+            }
+          ]
+        },
+        {
+          "name": "f_tag",
+          "label": "Tags",
+          "widget": "select",
+          "required": true,
+          "options": [
+            {
+              "label": "AI Productivity and Utilities",
+              "value": "ai-productivity-and-utilities"
+            },
+            {
+              "label": "Arts & Collectibles",
+              "value": "arts-collectibles"
+            },
+            {
+              "label": "Bridges & Oracles",
+              "value": "bridges-oracles"
+            },
+            {
+              "label": "Climate",
+              "value": "climate"
+            },
+            {
+              "label": "Communication & Social",
+              "value": "communication-social"
+            },
+            {
+              "label": "DApp",
+              "value": "dapp"
+            },
+            {
+              "label": "Data Curation & Monetization",
+              "value": "data-curation-monetization"
+            },
+            {
+              "label": "Data Preparation",
+              "value": "data-prep"
+            },
+            {
+              "label": "Data Retrieval",
+              "value": "data-retrieval"
+            },
+            {
+              "label": "Data Storage & Management",
+              "value": "data-storage-management"
+            },
+            {
+              "label": "Decentralized Personal Information Networks",
+              "value": "depin"
+            },
+            {
+              "label": "Decentralized Science",
+              "value": "desci"
+            },
+            {
+              "label": "Developer Tools",
+              "value": "developer-tools"
+            },
+            {
+              "label": "DWeb",
+              "value": "dweb"
+            },
+            {
+              "label": "Enterprise",
+              "value": "enterprise"
+            },
+            {
+              "label": "Gaming",
+              "value": "gaming"
+            },
+            {
+              "label": "GLAM (Galleries, Libraries, Archives, Museums)",
+              "value": "glam"
+            },
+            {
+              "label": "Governance, DAOs, & Public Goods",
+              "value": "governance-daos-public-goods"
+            },
+            {
+              "label": "GPUs",
+              "value": "gpus"
+            },
+            {
+              "label": "Health",
+              "value": "health"
+            },
+            {
+              "label": "Infrastructure",
+              "value": "infrastructure"
+            },
+            {
+              "label": "Leasing & Staking",
+              "value": "leasing-and-staking"
+            },
+            {
+              "label": "Metaverse",
+              "value": "metaverse"
+            },
+            {
+              "label": "Network Tools",
+              "value": "network-tools"
+            },
+            {
+              "label": "NFTs",
+              "value": "nfts"
+            },
+            {
+              "label": "Photo & Video",
+              "value": "photo-video"
+            },
+            {
+              "label": "Privacy & Security",
+              "value": "privacy-security"
+            },
+            {
+              "label": "Public Data",
+              "value": "public-data"
+            },
+            {
+              "label": "Publishing & News",
+              "value": "publishing-news"
+            },
+            {
+              "label": "RSS",
+              "value": "rss"
+            },
+            {
+              "label": "S3 APIs",
+              "value": "s3-apis"
+            },
+            {
+              "label": "Sealing",
+              "value": "sealing"
+            },
+            {
+              "label": "Social Impact",
+              "value": "social-impact"
+            },
+            {
+              "label": "Space",
+              "value": "space"
+            },
+            {
+              "label": "Storage Infrastructure",
+              "value": "storage-infrastructure"
+            },
+            {
+              "label": "Storage Provider",
+              "value": "storage-provider"
+            },
+            {
+              "label": "Storage Services",
+              "value": "storage-services"
+            },
+            {
+              "label": "Storage Software",
+              "value": "storage-software"
+            },
+            {
+              "label": "Universities",
+              "value": "universities"
+            },
+            {
+              "label": "Wallets, Identity & Authentication",
+              "value": "wallets-identity-authentication",
+              "multiple": true
+            }
+          ]
+        },
+        {
+          "name": "f_card-text-truncated",
+          "label": "Description",
+          "widget": "string",
+          "required": true
+        },
+        {
+          "name": "f_website",
+          "label": "Website",
+          "widget": "string",
+          "required": true
+        },
+        {
+          "name": "f_repo",
+          "label": "GitHub",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_tech-3",
+          "label": "Technologies",
+          "widget": "select",
+          "required": true,
+          "options": [
+            "filecoin",
+            "ipfs"
+          ],
+          "multiple": true
+        },
+        {
+          "name": "f_case-study",
+          "label": "Filecoin Content",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_social-media",
+          "label": "Twitter",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_video",
+          "label": "YouTube Video Link",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "url",
+              "label": "Url",
+              "widget": "string",
+              "required": false
+            }
+          ]
+        },
+        {
+          "name": "f_year-2",
+          "label": "Using Filecoin Since",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "f_last-updated-2",
+          "label": "Last Updated",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "f_what-s-new",
+          "label": "What's New?",
+          "widget": "markdown",
+          "required": false
+        },
+        {
+          "name": "f_background-color",
+          "label": "Background Color",
+          "widget": "color",
+          "required": false,
+          "enableAlpha": true,
+          "allowInput": true
+        },
+        {
+          "name": "date",
+          "label": "Publish Date",
+          "widget": "datetime"
+        },
+        {
+          "name": "seo",
+          "label": "SEO",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "events",
+      "label": "Events",
+      "folder": "src/content/events/",
+      "label_singular": "Event",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string",
+          "required": true
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "f_featured",
+          "label": "Featured",
+          "widget": "boolean",
+          "required": false,
+          "default": false,
+          "hint": "Toggle this on if you want this event to be the featured event"
+        },
+        {
+          "name": "f_description",
+          "label": "Description",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "f_cta",
+          "label": "CTA",
+          "widget": "string",
+          "required": false,
+          "hint": "This is where the CTA button will send users"
+        },
+        {
+          "name": "f_cta-text",
+          "label": "CTA Text",
+          "widget": "string",
+          "required": false,
+          "hint": "This text is what will appear in the button"
+        },
+        {
+          "name": "f_start-date",
+          "label": "Start Date",
+          "widget": "datetime",
+          "required": true,
+          "hint": "This is the first day of the event"
+        },
+        {
+          "name": "f_end-date",
+          "label": "End Date",
+          "widget": "datetime",
+          "required": true,
+          "hint": "This is the last day of the event"
+        },
+        {
+          "name": "f_image",
+          "label": "Image",
+          "widget": "object",
+          "required": true,
+          "fields": [
+            {
+              "name": "url",
+              "label": "Image",
+              "widget": "image",
+              "required": true,
+              "allow_multiple": false,
+              "hint": ""
+            },
+            {
+              "name": "alt",
+              "label": "alt",
+              "widget": "string",
+              "required": false,
+              "hint": "Image Alt"
+            }
+          ]
+        },
+        {
+          "name": "f_event-date",
+          "label": "Event Date",
+          "widget": "datetime",
+          "required": true,
+          "hint": "NOTE: This field is what the CMS uses for sort order- please enter the first day of the event."
+        },
+        {
+          "name": "f_ff-involvement",
+          "label": "FF Involvement",
+          "widget": "select",
+          "required": false,
+          "options": [
+            {
+              "label": "Hosted by FF",
+              "value": "Hosted by FF"
+            },
+            {
+              "label": "Supported by FF",
+              "value": "Supported by FF"
+            },
+            {
+              "label": "Sponsored by FF",
+              "value": "Sponsored by FF"
+            }
+          ]
+        },
+        {
+          "name": "f_image-background-position",
+          "label": "Image Background Position",
+          "widget": "string",
+          "required": false,
+          "hint": ""
+        },
+        {
+          "name": "f_icon-type",
+          "label": "Icon Type",
+          "widget": "select",
+          "required": true,
+          "options": [
+            {
+              "label": "Info",
+              "value": "Info"
+            },
+            {
+              "label": "Register",
+              "value": "Register"
+            },
+            {
+              "label": "Watch",
+              "value": "Watch"
+            }
+          ]
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "widget": "hidden",
+          "default": "events"
+        },
+        {
+          "name": "layout",
+          "label": "Layout",
+          "widget": "hidden",
+          "default": "[events].html"
+        },
+        {
+          "name": "date",
+          "label": "Publish Date",
+          "widget": "datetime"
+        },
+        {
+          "name": "seo",
+          "label": "SEO",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "SEO Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

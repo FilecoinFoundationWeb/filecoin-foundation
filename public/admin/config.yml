@@ -321,6 +321,223 @@ collections:
         widget: "datetime"
       - *meta_config
 
+  - name: ecosystem_projects
+    label: Ecosystem Projects
+    label_singular: Ecosystem Project
+    folder: "src/content/ecosystem/"
+    create: true
+    identifier_field: name
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - name: title
+        label: Company Name
+        widget: string
+        required: true
+      - name: created-on
+        label: Created On
+        widget: datetime
+        required: false
+      - name: updated-on
+        label: Updated On
+        widget: datetime
+        required: false
+      - name: published-on
+        label: Published On
+        widget: datetime
+        required: false
+      - name: body
+        label: Description (Long)
+        widget: markdown
+        required: false
+      - name: f_featured
+        label: Featured
+        widget: boolean
+        required: false
+        default: false
+      - name: f_brand
+        label: Logo
+        widget: object
+        required: true
+        fields:
+          - name: url
+            label: Image
+            widget: image
+            required: true
+            allow_multiple: false
+          - name: alt
+            label: Image Alt
+            widget: string
+            required: true
+      - name: f_topic
+        label: Topic
+        widget: select
+        required: true
+        options:
+          - label: "Artificial Intelligence"
+            value: artificial-intelligence
+          - label: "Education, Academia & Health"
+            value: education-academia-health
+          - label: "Finance"
+            value: finance
+          - label: "Media & Entertainment"
+            value: media-entertainment
+          - label: "Network"
+            value: network
+          - label: "Public Goods & DWeb"
+            value: public-goods-dweb
+          - label: "Science, Climate & Space"
+            value: science-climate-space
+          - label: "Storage"
+            value: storage
+          - label: "Tooling & Productivity"
+            value: tooling-productivity
+      - name: f_tag
+        label: Tags
+        widget: select
+        required: true
+        options:
+          - label: "AI Productivity and Utilities"
+            value: ai-productivity-and-utilities
+          - label: "Arts & Collectibles"
+            value: arts-collectibles
+          - label: "Bridges & Oracles"
+            value: bridges-oracles
+          - label: "Climate"
+            value: climate
+          - label: "Communication & Social"
+            value: communication-social
+          - label: "DApp"
+            value: dapp
+          - label: "Data Curation & Monetization"
+            value: data-curation-monetization
+          - label: "Data Preparation"
+            value: data-prep
+          - label: "Data Retrieval"
+            value: data-retrieval
+          - label: "Data Storage & Management"
+            value: data-storage-management
+          - label: "Decentralized Personal Information Networks"
+            value: depin
+          - label: "Decentralized Science"
+            value: desci
+          - label: "Developer Tools"
+            value: developer-tools
+          - label: "DWeb"
+            value: dweb
+          - label: "Enterprise"
+            value: enterprise
+          - label: "Gaming"
+            value: gaming
+          - label: "GLAM (Galleries, Libraries, Archives, Museums)"
+            value: glam
+          - label: "Governance, DAOs, & Public Goods"
+            value: governance-daos-public-goods
+          - label: "GPUs"
+            value: gpus
+          - label: "Health"
+            value: health
+          - label: "Infrastructure"
+            value: infrastructure
+          - label: "Leasing & Staking"
+            value: leasing-and-staking
+          - label: "Metaverse"
+            value: metaverse
+          - label: "Network Tools"
+            value: network-tools
+          - label: "NFTs"
+            value: nfts
+          - label: "Photo & Video"
+            value: photo-video
+          - label: "Privacy & Security"
+            value: privacy-security
+          - label: "Public Data"
+            value: public-data
+          - label: "Publishing & News"
+            value: publishing-news
+          - label: "RSS"
+            value: rss
+          - label: "S3 APIs"
+            value: s3-apis
+          - label: "Sealing"
+            value: sealing
+          - label: "Social Impact"
+            value: social-impact
+          - label: "Space"
+            value: space
+          - label: "Storage Infrastructure"
+            value: storage-infrastructure
+          - label: "Storage Provider"
+            value: storage-provider
+          - label: "Storage Services"
+            value: storage-services
+          - label: "Storage Software"
+            value: storage-software
+          - label: "Universities"
+            value: universities
+          - label: "Wallets, Identity & Authentication"
+            value: wallets-identity-authentication
+            multiple: true
+      - name: f_card-text-truncated
+        label: Description
+        widget: string
+        required: true
+      - name: f_website
+        label: Website
+        widget: string
+        required: true
+      - name: f_repo
+        label: GitHub
+        widget: string
+        required: false
+      - name: f_tech-3
+        label: Technologies
+        widget: select
+        required: true
+        options:
+          - filecoin
+          - ipfs
+        multiple: true
+      - name: f_case-study
+        label: Filecoin Content
+        widget: string
+        required: false
+      - name: f_social-media
+        label: Twitter
+        widget: string
+        required: false
+      - name: f_video
+        label: YouTube Video Link
+        widget: object
+        required: false
+        fields:
+          - name: url
+            label: Url
+            widget: string
+            required: false
+      - name: f_year-2
+        label: Using Filecoin Since
+        widget: datetime
+        required: false
+      - name: f_last-updated-2
+        label: Last Updated
+        widget: datetime
+        required: false
+      - name: f_what-s-new
+        label: What's New?
+        widget: markdown
+        required: false
+      - name: f_background-color
+        label: Background Color
+        widget: color
+        required: false
+        enableAlpha: true
+        allowInput: true
+      - name: date
+        label: Publish Date
+        widget: datetime
+      - *meta_config
+
   - name: "events"
     label: "Events"
     folder: "src/content/events/"
