@@ -13,7 +13,7 @@ export function TextLink({
   href,
   children,
   className,
-  ...props
+  ...rest
 }: TextLinkProps) {
   const isInternalLink = href.startsWith('/') || href.startsWith('#')
   const baseStyles = `underline`
@@ -22,14 +22,14 @@ export function TextLink({
 
   if (isInternalLink) {
     return (
-      <Link href={href as Route} className={className} {...props}>
+      <Link href={href as Route} className={className} {...rest}>
         {children}
       </Link>
     )
   }
 
   return (
-    <a href={href} className={className} {...props}>
+    <a href={href} className={className} {...rest}>
       {children}
     </a>
   )
