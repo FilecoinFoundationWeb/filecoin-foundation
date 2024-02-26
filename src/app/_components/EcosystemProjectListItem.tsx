@@ -26,8 +26,8 @@ export function EcosystemProjectListItem({
             <Image
               src={project.f_brand.url}
               alt={project.f_brand.alt}
-              fill={true}
-              priority={true}
+              fill
+              priority
               className="object-contain p-2"
             />
           )}
