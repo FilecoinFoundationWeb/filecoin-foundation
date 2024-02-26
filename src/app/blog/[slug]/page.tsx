@@ -97,7 +97,7 @@ export default function BlogPost({ params }: BlogPostProps) {
           alt={data.f_image.alt || ''}
           width={770}
           height={440}
-          priority={true}
+          priority
           className="block h-auto object-contain"
         />
       </header>

@@ -80,7 +80,7 @@ export default function Event({ params }: EventProps) {
           alt={data.f_image?.alt || ''}
           width={770}
           height={440}
-          priority={true}
+          priority
           className="block h-auto object-contain"
         />
         <h1 className="text-2xl font-bold mb-5">{data.title}</h1>

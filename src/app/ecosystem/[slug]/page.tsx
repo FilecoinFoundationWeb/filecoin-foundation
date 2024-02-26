@@ -117,7 +117,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             alt={data.f_brand.alt}
             width={232}
             height={220}
-            priority={true}
+            priority
             className="block h-auto object-contain"
           />
         )}
