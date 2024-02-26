@@ -80,7 +80,7 @@ export function EcosystemClient({
               id="search"
               name="search"
               aria-label="Search ecosystem projects"
-              className="text-slate-900"
+              className="text-brand-800"
               onChange={handleSearch}
             />
           </div>
