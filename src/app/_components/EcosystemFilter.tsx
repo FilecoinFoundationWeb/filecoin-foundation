@@ -90,7 +90,7 @@ export function EcosystemFilter({
   const tags = getFieldOptions(collection.fields, 'f_tag')
 
   return (
-    <div className="flex flex-col gap-2 text-slate-900">
+    <div className="flex flex-col gap-2 text-brand-800">
       <OptionSelect
         label="Select Topics"
         name="topics"

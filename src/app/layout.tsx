@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-6xl flex flex-col h-screen justify-between text-white bg-slate-900">
+      <body className="max-w-6xl flex flex-col h-screen justify-between text-white bg-brand-800">
         <StructuredDataScript structuredData={baseOrganizationSchema} />
         <NetlifyIdentityManager />
         <Navigation />
