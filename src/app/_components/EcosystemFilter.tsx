@@ -1,6 +1,6 @@
 import React, { ChangeEvent } from 'react'
 
-import configJson from '@/_data/cmsConfigSchema.json'
+import configJson from '@/data/cmsConfigSchema.json'
 const config: CMSConfig = configJson as CMSConfig
 
 type Field = {

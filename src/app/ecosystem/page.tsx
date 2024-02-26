@@ -89,14 +89,14 @@ export default function Ecosystem() {
         <ul className="list-none flex gap-8 items-center">
           {featuredPartners.map((partner) => (
             <li
-              className="relative ml-0 mb-0 size-24 inline-flex"
               key={partner.name}
+              className="relative ml-0 mb-0 size-24 inline-flex"
             >
               <Image
-                src={partner.logo}
-                alt={`${partner.name} Logo`}
                 fill
                 priority
+                src={partner.logo}
+                alt={`${partner.name} Logo`}
                 className="object-contain"
               />
               <a

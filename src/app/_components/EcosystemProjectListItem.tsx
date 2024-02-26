@@ -24,10 +24,10 @@ export function EcosystemProjectListItem({
         <div className="relative size-56 border mb-4">
           {image.url && (
             <Image
-              src={project.f_brand.url}
-              alt={project.f_brand.alt}
               fill
               priority
+              src={project.f_brand.url}
+              alt={project.f_brand.alt}
               className="object-contain p-2"
             />
           )}

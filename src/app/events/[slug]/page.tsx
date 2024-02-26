@@ -76,11 +76,11 @@ export default function Event({ params }: EventProps) {
 
       <header>
         <Image
+          priority
           src={data.f_image?.url || ''}
           alt={data.f_image?.alt || ''}
           width={770}
           height={440}
-          priority
           className="block h-auto object-contain"
         />
         <h1 className="text-2xl font-bold mb-5">{data.title}</h1>

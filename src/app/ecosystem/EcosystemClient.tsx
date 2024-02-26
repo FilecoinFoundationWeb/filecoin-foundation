@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import React, { useState, useMemo } from 'react'
 
 import { EcosystemFilter } from '@/components/EcosystemFilter'
 import { EcosystemProjectsList } from '@/components/EcosystemProjectsList'
@@ -24,14 +24,6 @@ export function EcosystemClient({
     setVisibleCount(PROJECTS_PER_LOAD)
   }
 
-  const sortedProjects = useMemo(() => {
-    return [...projects].sort((a, b) => {
-      const dateA = new Date(a.date).getTime()
-      const dateB = new Date(b.date).getTime()
-      return dateB - dateA
-    })
-  }, [projects])
-
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
       const matchesSearchQuery = project.title
@@ -48,7 +40,7 @@ export function EcosystemClient({
 
       return matchesSearchQuery && matchesTopics && matchesTags
     })
-  }, [sortedProjects, searchQuery, selectedTopics, selectedTags])
+  }, [projects, searchQuery, selectedTags, selectedTopics])
 
   const hasMoreProjects = visibleCount < filteredProjects.length
 

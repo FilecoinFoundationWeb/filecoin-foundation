@@ -113,11 +113,11 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
         {data.f_brand.url && (
           <Image
+            priority
             src={data.f_brand.url}
             alt={data.f_brand.alt}
             width={232}
             height={220}
-            priority
             className="block h-auto object-contain"
           />
         )}
