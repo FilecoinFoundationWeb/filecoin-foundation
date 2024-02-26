@@ -3,12 +3,6 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
-  h1,
-  h2,
-  h3 {
-    @apply text-xl mb-4;
-  }
-
   section,
   article,
   ul {
