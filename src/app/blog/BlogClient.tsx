@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 
 import Image from 'next/image'
 
+import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
@@ -77,9 +78,9 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         ))}
       </ul>
       {hasMorePosts && (
-        <button aria-label="Load more posts" onClick={handleLoadMore}>
+        <Button aria-label="Load more posts" onClick={handleLoadMore}>
           Load More
-        </button>
+        </Button>
       )}
     </>
   )
