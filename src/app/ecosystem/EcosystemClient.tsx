@@ -58,7 +58,9 @@ export function EcosystemClient({
 
   return (
     <>
-      <Button onClick={handleClearAll}>Clear All</Button>
+      <Button aria-label="Clear all filter options" onClick={handleClearAll}>
+        Clear All
+      </Button>
       <div className="sm:flex gap-6">
         <EcosystemFilter
           onTopicsChange={(topics) => setSelectedTopics(topics)}
