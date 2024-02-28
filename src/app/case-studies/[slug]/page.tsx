@@ -37,7 +37,15 @@ function getCaseStudyData(slug: string): CaseStudyData {
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const { data } = matter(fileContents)
 
-  return data as CaseStudyData
+  if (!data.title) {
+    throw new Error('Missing required case study data fields')
+  }
+
+  return {
+    title: data.title,
+    slug,
+    description: data.description,
+  }
 }
 
 export async function generateMetadata({ params }: CaseStudyProps) {
@@ -58,10 +66,10 @@ function createCaseStudyPostStructuredData(
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: data.title,
-    description: data.f_description,
-    image: data.f_image?.url || '',
-    datePublished: data.date,
-    dateModified: data['updated-on'] || data.date,
+    description: data.description,
+    image: data.image?.url || '',
+    datePublished: data['published-on'],
+    dateModified: data['updated-on'] || data['published-on'],
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}${PATHS.CASE_STUDIES.path}/${data.slug}`,
@@ -86,7 +94,7 @@ export default function CaseStudy({ params }: CaseStudyProps) {
           {data.title}
         </Heading>
       </header>
-      <p>{data.f_description}</p>
+      <p>{data.description}</p>
     </>
   )
 }
