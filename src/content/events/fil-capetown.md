@@ -1,16 +1,17 @@
 ---
-title: FIL Cape Town 2024
+title: FIL Cape Town 2023
 created-on: 2023-11-08T13:58:58.089Z
 updated-on: 2023-11-08T13:58:58.102Z
 published-on: 2023-11-08T13:58:58.110Z
 f_featured: false
 f_description: "Cape Town, Africa "
 f_cta: https://fil-capetown.io/
-f_cta-text: Register Now
+f_cta-text: Learn More
 f_start-date: 2023-11-21T13:58:58.117Z
 f_end-date: 2023-11-21T13:58:58.123Z
 f_image:
-  url: /assets/images/fil-cape-town-logo.png
+  url: /assets/images/filcapetown.png
+  alt: FIL Cape Town Logo
 f_event-date: 2023-11-08T13:58:58.128Z
 f_ff-involvement: Supported by FF
 f_icon-type: Register
