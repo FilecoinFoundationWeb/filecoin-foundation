@@ -12,7 +12,7 @@ export function CaseStudiesList({
   className,
 }: CaseStudiesListProps) {
   if (caseStudies.length === 0) {
-    return <p>No case studies available.</p>
+    return <p>No case studies found.</p>
   }
 
   return (

@@ -1,9 +1,8 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import { Heading } from '@/components/Heading'
+import { CaseStudiesList } from '@/components/CaseStudiesList'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
@@ -44,9 +43,9 @@ const caseStudiesPageStructuredData: WithContext<WebPage> = {
       item: {
         '@type': 'Article',
         headline: caseStudy.title,
-        description: caseStudy.f_description,
-        image: caseStudy.f_image
-          ? { '@type': 'ImageObject', url: caseStudy.f_image.url }
+        description: caseStudy.description,
+        image: caseStudy.image
+          ? { '@type': 'ImageObject', url: caseStudy.image.url }
           : undefined,
         url: `${BASE_URL}${PATHS.CASE_STUDIES}/${caseStudy.slug}`,
       },
@@ -54,32 +53,12 @@ const caseStudiesPageStructuredData: WithContext<WebPage> = {
   },
 }
 
-function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
-  return (
-    <li>
-      <TextLink href={`${PATHS.CASE_STUDIES.path}/${caseStudy.slug}`}>
-        <Heading tag="h3" variant="lg">
-          {caseStudy.title}
-        </Heading>
-      </TextLink>
-      <p>{caseStudy.f_description}</p>
-    </li>
-  )
-}
-
 export default function CaseStudies() {
   return (
     <>
       <StructuredDataScript structuredData={caseStudiesPageStructuredData} />
       <PageHeader title={title} description={description} />
-
-      <main>
-        <ul>
-          {caseStudies.map((caseStudy) => (
-            <CaseStudyListItem key={caseStudy.slug} caseStudy={caseStudy} />
-          ))}
-        </ul>
-      </main>
+      <CaseStudiesList caseStudies={caseStudies} />
     </>
   )
 }

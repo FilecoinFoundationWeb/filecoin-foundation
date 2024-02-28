@@ -251,6 +251,46 @@ collections:
         label: "Title"
         widget: "string"
         required: true
+      - name: "published-on"
+        label: "Published On"
+        widget: "datetime"
+        required: false
+      - name: "featured"
+        label: "Featured"
+        widget: "boolean"
+        required: false
+        default: false
+      - name: "description"
+        label: "Description"
+        widget: "text"
+        required: false
+      - name: "image"
+        label: "Image"
+        widget: "object"
+        required: false
+        fields:
+          - name: "url"
+            label: "URL"
+            widget: "string"
+            required: true
+          - name: "alt"
+            label: "Alt"
+            widget: "string"
+            required: true
+      - name: "cta"
+        label: "CTA"
+        widget: "object"
+        required: false
+        fields:
+          - name: "url"
+            label: "URL"
+            widget: "string"
+            required: true
+          - name: "text"
+            label: "Text"
+            widget: "string"
+            required: true
+            default: "Read Case Study"
       - name: "created-on"
         label: "Created On"
         widget: "datetime"
@@ -259,66 +299,6 @@ collections:
         label: "Updated On"
         widget: "datetime"
         required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
-      - name: "f_color"
-        label: "Color"
-        widget: "color"
-        required: false
-        enableAlpha: true
-        allowInput: true
-      - name: "f_cta"
-        label: "CTA"
-        widget: "string"
-        required: false
-      - name: "f_cta-text"
-        label: "CTA Text"
-        widget: "string"
-        required: false
-      - name: "f_featured"
-        label: "Featured"
-        widget: "boolean"
-        required: false
-        default: false
-      - name: "f_preview-text"
-        label: "Preview Text"
-        widget: "string"
-        required: false
-      - name: "f_description"
-        label: "Description"
-        widget: "text"
-        required: false
-      - name: "f_image"
-        label: "Image"
-        widget: "object"
-        required: false
-        fields:
-          - name: "url"
-            label: "Image"
-            widget: "image"
-            required: false
-            allow_multiple: false
-          - name: "alt"
-            label: "alt"
-            widget: "string"
-            required: false
-      - name: "f_image-background-position"
-        label: "Image Background Position"
-        widget: "string"
-        required: false
-      - name: "tags"
-        label: "Tags"
-        widget: "hidden"
-        default: "case-studies"
-      - name: "layout"
-        label: "Layout"
-        widget: "hidden"
-        default: "[case-studies].html"
-      - name: "date"
-        label: "Publish Date"
-        widget: "datetime"
       - *meta_config
 
   - name: ecosystem_projects
