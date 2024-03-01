@@ -21,4 +21,5 @@ image:
   url: >-
     /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
   alt: null
+involvement: null
 ---

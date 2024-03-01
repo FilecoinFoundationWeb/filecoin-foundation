@@ -14,5 +14,6 @@ end-date: "2022-11-30T16:50:00.000Z"
 image:
   url: /assets/images/fil-bangalore-2022.png
   alt: null
+event-type: event
 involvement: supported
 ---

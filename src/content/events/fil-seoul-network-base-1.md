@@ -14,5 +14,6 @@ end-date: "2023-09-07T07:06:47.832Z"
 image:
   url: /assets/images/fil-seoul-bg.png
   alt: null
+event-type: event
 involvement: supported
 ---

@@ -14,5 +14,6 @@ end-date: "2023-08-28T15:30:55.996Z"
 image:
   url: /assets/images/dweb-camp.png
   alt: null
+event-type: event
 involvement: sponsored
 ---

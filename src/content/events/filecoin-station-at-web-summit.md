@@ -16,5 +16,6 @@ end-date: "2022-11-04T15:30:57.184Z"
 image:
   url: /assets/images/websummit-2023.png
   alt: null
+event-type: event
 involvement: sponsored
 ---

@@ -9,8 +9,10 @@ description: "Cape Town, Africa "
 cta:
   url: https://fil-capetown.io/
 start-date: "2023-11-21T13:58:58.117Z"
+end-date: null
 image:
   url: /assets/images/filcapetown.png
   alt: FIL Cape Town Logo
+event-type: event
 involvement: supported
 ---

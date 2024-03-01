@@ -10,7 +10,10 @@ cta:
   url: https://lu.ma/sp-korea-meetup
   text: Register
 start-date: "2022-08-12T00:00:00.000Z"
+end-date: null
 image:
   url: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
   alt: null
+event-type: event
+involvement: null
 ---

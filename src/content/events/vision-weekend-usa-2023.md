@@ -15,5 +15,6 @@ end-date: "2023-12-03T14:08:27.299Z"
 image:
   url: /assets/images/vision-weekend.jpeg
   alt: null
+event-type: event
 involvement: sponsored
 ---

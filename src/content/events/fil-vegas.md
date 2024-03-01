@@ -5,6 +5,7 @@ created-on: "2023-07-24T17:09:07.009Z"
 updated-on: "2023-07-24T17:09:07.022Z"
 published-on: "2023-07-24T17:09:07.033Z"
 featured: false
+description: null
 cta:
   url: https://fil-vegas.io/
   text: null
@@ -13,5 +14,6 @@ end-date: "2023-10-05T17:09:07.051Z"
 image:
   url: /assets/images/fil-vegas-event-header.png
   alt: null
+event-type: event
 involvement: hosted
 ---

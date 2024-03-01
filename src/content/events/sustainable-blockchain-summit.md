@@ -14,5 +14,6 @@ end-date: "2022-07-23T00:00:00.000Z"
 image:
   url: /assets/images/645215eb05e191292b09744d_sbs.png
   alt: null
+event-type: event
 involvement: sponsored
 ---

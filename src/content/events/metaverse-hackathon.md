@@ -11,8 +11,10 @@ cta:
   url: https://kencloud.com/hack.html
   text: null
 start-date: "2022-04-19T16:00:45.000Z"
+end-date: null
 image:
   url: /assets/images/645215fba2b7469c5c5546ea_image_ldbpld.png
   alt: null
 event-type: hackaton
+involvement: null
 ---
