@@ -4,11 +4,11 @@ import { TextLink } from '@/components/TextLink'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
-import { getMarkdownData } from '@/utils/getMarkdownData'
+import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-const ecosystemProjects: EcosystemProjectData[] = getMarkdownData(
+const ecosystemProjects: EcosystemProjectData[] = legacyGetMarkdownData(
   PATHS.ECOSYSTEM.entriesContentPath as string
 )
 

@@ -10,19 +10,9 @@ import { formatDate } from '@/utils/formatDate'
 import { PATHS } from '@/constants/paths'
 
 export function EventListItem({ event }: { event: EventData }) {
-  const {
-    slug,
-    title,
-    f_image: image,
-    f_description: description,
-    f_cta: ctaUrl,
-    'f_cta-text': ctaText,
-    'f_start-date': startDate,
-    'f_end-date': endDate,
-    'f_event-date': eventDate,
-  } = event
+  const { slug, title, image, description, cta, startDate, endDate } = event
 
-  const formattedStartDate = formatDate(eventDate || startDate, 'event')
+  const formattedStartDate = formatDate(startDate, 'event')
   const formattedEndDate = endDate ? formatDate(endDate, 'event') : null
 
   return (
@@ -37,15 +27,15 @@ export function EventListItem({ event }: { event: EventData }) {
         />
       )}
       <div>
-        {formattedStartDate && <span>{formattedStartDate}</span>}
-        {formattedEndDate && <span> - {formattedEndDate}</span>}
+        {startDate && <span>{formattedStartDate}</span>}
+        {endDate && <span> - {formattedEndDate}</span>}
       </div>
       <Heading tag="h3" variant="lg">
         {title}
       </Heading>
       <p>{description}</p>
-      <TextLink href={ctaUrl || `${PATHS.EVENTS.path}/${slug}`}>
-        {ctaText || 'More'}
+      <TextLink href={cta?.url || `${PATHS.EVENTS.path}/${slug}`}>
+        {cta?.text || 'Learn More'}
       </TextLink>
     </li>
   )

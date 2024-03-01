@@ -4,11 +4,8 @@ import { EventsList } from '@/components/EventsList'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { EventData } from '@/types/eventTypes'
-
 import { createMetadata } from '@/utils/createMetadata'
-import { getMarkdownData } from '@/utils/getMarkdownData'
-import { sortEvents } from '@/utils/sortEvents'
+import { getEventData } from '@/utils/getEventData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/events.md'
@@ -20,10 +17,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
-const events: EventData[] = getMarkdownData(
-  PATHS.EVENTS.entriesContentPath as string
-)
-const sortedEvents = sortEvents(events)
+const events = getEventData(PATHS.EVENTS.entriesContentPath as string)
 
 const eventsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -35,16 +29,16 @@ const eventsPageStructuredData: WithContext<WebPage> = {
   ...eventsPageBaseData,
   mainEntity: {
     '@type': 'ItemList',
-    itemListElement: sortedEvents.slice(0, 5).map((event, index) => ({
+    itemListElement: events.slice(0, 5).map((event, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       item: {
         '@type': 'Event',
         name: event.title,
-        startDate: event['f_start-date'],
-        endDate: event['f_end-date'],
-        description: event.f_description,
-        url: `${BASE_URL}${PATHS.EVENTS.path}/${event.slug}` || event.f_cta,
+        startDate: event.startDate,
+        endDate: event.endDate,
+        description: event.description,
+        url: `${event.cta?.url} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
       },
     })),
   },
@@ -57,7 +51,7 @@ export default function Events() {
       <PageHeader title={title} description={description} />
 
       <div>
-        <EventsList events={sortedEvents} />
+        <EventsList events={events} />
       </div>
     </>
   )

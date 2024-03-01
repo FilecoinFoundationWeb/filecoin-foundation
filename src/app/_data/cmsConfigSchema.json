@@ -1454,7 +1454,7 @@
           "default": false
         },
         {
-          "name": "f_image",
+          "name": "image",
           "label": "Image",
           "widget": "object",
           "required": true,
@@ -1608,6 +1608,66 @@
           "required": true
         },
         {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "featured",
+          "label": "Featured",
+          "widget": "boolean",
+          "required": false,
+          "default": false
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "url",
+              "label": "URL",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "alt",
+              "label": "Alt",
+              "widget": "string",
+              "required": true
+            }
+          ]
+        },
+        {
+          "name": "cta",
+          "label": "CTA",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "url",
+              "label": "URL",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "text",
+              "label": "Text",
+              "widget": "string",
+              "required": true,
+              "default": "Read Case Study"
+            }
+          ]
+        },
+        {
           "name": "created-on",
           "label": "Created On",
           "widget": "datetime",
@@ -1618,95 +1678,6 @@
           "label": "Updated On",
           "widget": "datetime",
           "required": false
-        },
-        {
-          "name": "published-on",
-          "label": "Published On",
-          "widget": "datetime",
-          "required": false
-        },
-        {
-          "name": "f_color",
-          "label": "Color",
-          "widget": "color",
-          "required": false,
-          "enableAlpha": true,
-          "allowInput": true
-        },
-        {
-          "name": "f_cta",
-          "label": "CTA",
-          "widget": "string",
-          "required": false
-        },
-        {
-          "name": "f_cta-text",
-          "label": "CTA Text",
-          "widget": "string",
-          "required": false
-        },
-        {
-          "name": "f_featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
-        },
-        {
-          "name": "f_preview-text",
-          "label": "Preview Text",
-          "widget": "string",
-          "required": false
-        },
-        {
-          "name": "f_description",
-          "label": "Description",
-          "widget": "text",
-          "required": false
-        },
-        {
-          "name": "f_image",
-          "label": "Image",
-          "widget": "object",
-          "required": false,
-          "fields": [
-            {
-              "name": "url",
-              "label": "Image",
-              "widget": "image",
-              "required": false,
-              "allow_multiple": false
-            },
-            {
-              "name": "alt",
-              "label": "alt",
-              "widget": "string",
-              "required": false
-            }
-          ]
-        },
-        {
-          "name": "f_image-background-position",
-          "label": "Image Background Position",
-          "widget": "string",
-          "required": false
-        },
-        {
-          "name": "tags",
-          "label": "Tags",
-          "widget": "hidden",
-          "default": "case-studies"
-        },
-        {
-          "name": "layout",
-          "label": "Layout",
-          "widget": "hidden",
-          "default": "[case-studies].html"
-        },
-        {
-          "name": "date",
-          "label": "Publish Date",
-          "widget": "datetime"
         },
         {
           "name": "seo",
@@ -2266,140 +2237,109 @@
           "required": false
         },
         {
-          "name": "f_featured",
+          "name": "featured",
           "label": "Featured",
           "widget": "boolean",
           "required": false,
-          "default": false,
-          "hint": "Toggle this on if you want this event to be the featured event"
+          "default": false
         },
         {
-          "name": "f_description",
+          "name": "description",
           "label": "Description",
           "widget": "string",
           "required": false
         },
         {
-          "name": "f_cta",
+          "name": "cta",
           "label": "CTA",
-          "widget": "string",
+          "widget": "object",
           "required": false,
-          "hint": "This is where the CTA button will send users"
+          "fields": [
+            {
+              "name": "url",
+              "label": "URL",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "text",
+              "label": "Text",
+              "widget": "string",
+              "required": true,
+              "default": "Learn More"
+            }
+          ]
         },
         {
-          "name": "f_cta-text",
-          "label": "CTA Text",
-          "widget": "string",
-          "required": false,
-          "hint": "This text is what will appear in the button"
-        },
-        {
-          "name": "f_start-date",
+          "name": "start-date",
           "label": "Start Date",
           "widget": "datetime",
           "required": true,
-          "hint": "This is the first day of the event"
+          "hint": "First day of event"
         },
         {
-          "name": "f_end-date",
+          "name": "end-date",
           "label": "End Date",
           "widget": "datetime",
-          "required": true,
-          "hint": "This is the last day of the event"
+          "required": false,
+          "hint": "Last day of event"
         },
         {
-          "name": "f_image",
+          "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": true,
+          "required": false,
           "fields": [
             {
               "name": "url",
               "label": "Image",
               "widget": "image",
-              "required": true,
-              "allow_multiple": false,
-              "hint": ""
+              "required": true
             },
             {
               "name": "alt",
-              "label": "alt",
+              "label": "Alt text",
               "widget": "string",
-              "required": false,
-              "hint": "Image Alt"
+              "required": true
             }
           ]
         },
         {
-          "name": "f_event-date",
-          "label": "Event Date",
-          "widget": "datetime",
-          "required": true,
-          "hint": "NOTE: This field is what the CMS uses for sort order- please enter the first day of the event."
+          "name": "event-type",
+          "label": "Event Type",
+          "widget": "select",
+          "required": false,
+          "default": "event",
+          "options": [
+            {
+              "label": "Event",
+              "value": "event"
+            },
+            {
+              "label": "Hackathon",
+              "value": "hackathon"
+            }
+          ]
         },
         {
-          "name": "f_ff-involvement",
+          "name": "involvement",
           "label": "FF Involvement",
           "widget": "select",
           "required": false,
           "options": [
             {
               "label": "Hosted by FF",
-              "value": "Hosted by FF"
+              "value": "hosted"
             },
             {
               "label": "Supported by FF",
-              "value": "Supported by FF"
+              "value": "supported"
             },
             {
               "label": "Sponsored by FF",
-              "value": "Sponsored by FF"
+              "value": "sponsored"
             }
           ]
-        },
-        {
-          "name": "f_image-background-position",
-          "label": "Image Background Position",
-          "widget": "string",
-          "required": false,
-          "hint": ""
-        },
-        {
-          "name": "f_icon-type",
-          "label": "Icon Type",
-          "widget": "select",
-          "required": true,
-          "options": [
-            {
-              "label": "Info",
-              "value": "Info"
-            },
-            {
-              "label": "Register",
-              "value": "Register"
-            },
-            {
-              "label": "Watch",
-              "value": "Watch"
-            }
-          ]
-        },
-        {
-          "name": "tags",
-          "label": "Tags",
-          "widget": "hidden",
-          "default": "events"
-        },
-        {
-          "name": "layout",
-          "label": "Layout",
-          "widget": "hidden",
-          "default": "[events].html"
-        },
-        {
-          "name": "date",
-          "label": "Publish Date",
-          "widget": "datetime"
         },
         {
           "name": "seo",
