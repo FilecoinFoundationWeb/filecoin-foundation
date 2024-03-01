@@ -8,14 +8,14 @@ import { CaseStudyData } from '@/types/caseStudyTypes'
 import { PATHS } from '@/constants/paths'
 
 export function CaseStudyListItem({ caseStudy }: { caseStudy: CaseStudyData }) {
-  const { slug, title, image, description, cta } = caseStudy
+  const { title, slug, description, cta, image } = caseStudy
 
   return (
     <li>
       {image?.url && (
         <Image
           src={image.url}
-          alt={image.alt}
+          alt={image.alt || ''}
           width={280}
           height={320}
           className="block object-cover"
