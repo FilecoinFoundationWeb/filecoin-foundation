@@ -6,7 +6,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { BlogPostData } from '@/types/blogPostTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getMarkdownData } from '@/utils/getMarkdownData'
+import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -23,7 +23,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
-const posts: BlogPostData[] = getMarkdownData(
+const posts: BlogPostData[] = legacyGetMarkdownData(
   PATHS.BLOG.entriesContentPath as string
 )
 

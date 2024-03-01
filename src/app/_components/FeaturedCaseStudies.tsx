@@ -2,11 +2,11 @@ import { CaseStudiesList } from '@/components/CaseStudiesList'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
-import { getMarkdownData } from '@/utils/getMarkdownData'
+import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 
-const caseStudies: CaseStudyData[] = getMarkdownData(
+const caseStudies: CaseStudyData[] = legacyGetMarkdownData(
   PATHS.CASE_STUDIES.entriesContentPath as string
 )
 

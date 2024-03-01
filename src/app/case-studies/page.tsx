@@ -7,7 +7,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getMarkdownData } from '@/utils/getMarkdownData'
+import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -22,7 +22,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.CASE_STUDIES.path)
 
-const caseStudies: CaseStudyData[] = getMarkdownData(
+const caseStudies: CaseStudyData[] = legacyGetMarkdownData(
   PATHS.CASE_STUDIES.entriesContentPath as string
 )
 

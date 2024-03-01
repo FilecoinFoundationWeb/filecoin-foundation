@@ -10,7 +10,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getMarkdownData } from '@/utils/getMarkdownData'
+import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
@@ -24,7 +24,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
 
-const ecosystemProjects: EcosystemProjectData[] = getMarkdownData(
+const ecosystemProjects: EcosystemProjectData[] = legacyGetMarkdownData(
   PATHS.ECOSYSTEM.entriesContentPath as string
 )
 
