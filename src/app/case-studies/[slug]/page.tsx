@@ -62,17 +62,19 @@ export async function generateMetadata({ params }: CaseStudyProps) {
 function createCaseStudyPostStructuredData(
   data: CaseStudyData
 ): WithContext<Article> {
+  const { title, publishedOn, updatedOn, description, image, slug } = data
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: data.title,
-    description: data.description,
-    image: data.image?.url || '',
-    datePublished: data['published-on'],
-    dateModified: data['updated-on'] || data['published-on'],
+    headline: title,
+    description: description,
+    image: image?.url,
+    datePublished: publishedOn,
+    dateModified: updatedOn || publishedOn,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.CASE_STUDIES.path}/${data.slug}`,
+      '@id': `${BASE_URL}${PATHS.CASE_STUDIES.path}/${slug}`,
     },
     ...(typeof baseOrganizationSchema === 'object'
       ? { publisher: baseOrganizationSchema }
@@ -83,6 +85,7 @@ function createCaseStudyPostStructuredData(
 export default function CaseStudy({ params }: CaseStudyProps) {
   const { slug } = params
   const data = getCaseStudyData(slug)
+  const { title } = data
 
   return (
     <>
@@ -91,9 +94,10 @@ export default function CaseStudy({ params }: CaseStudyProps) {
       />
       <header>
         <Heading tag="h1" variant="2xl">
-          {data.title}
+          {title}
         </Heading>
       </header>
+
       <p>{data.description}</p>
     </>
   )

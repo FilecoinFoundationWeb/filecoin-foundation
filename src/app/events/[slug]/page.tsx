@@ -71,7 +71,7 @@ function createEventPostStructuredData(data: EventData): WithContext<Event> {
     description,
     startDate,
     endDate,
-    image: image?.url ? [image.url] : undefined,
+    image: image?.url,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }
 }

@@ -251,6 +251,14 @@ collections:
         label: "Title"
         widget: "string"
         required: true
+      - name: "created-on"
+        label: "Created On"
+        widget: "datetime"
+        required: false
+      - name: "updated-on"
+        label: "Updated On"
+        widget: "datetime"
+        required: false
       - name: "published-on"
         label: "Published On"
         widget: "datetime"
@@ -264,19 +272,6 @@ collections:
         label: "Description"
         widget: "text"
         required: false
-      - name: "image"
-        label: "Image"
-        widget: "object"
-        required: false
-        fields:
-          - name: "url"
-            label: "URL"
-            widget: "string"
-            required: true
-          - name: "alt"
-            label: "Alt"
-            widget: "string"
-            required: true
       - name: "cta"
         label: "CTA"
         widget: "object"
@@ -291,14 +286,19 @@ collections:
             widget: "string"
             required: true
             default: "Read Case Study"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
+      - name: "image"
+        label: "Image"
+        widget: "object"
         required: false
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
+        fields:
+          - name: "url"
+            label: "URL"
+            widget: "string"
+            required: true
+          - name: "alt"
+            label: "Alt text"
+            widget: "string"
+            required: true
       - *meta_config
 
   - name: ecosystem_projects
