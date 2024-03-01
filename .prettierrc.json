@@ -3,7 +3,7 @@
   "semi": false,
   "overrides": [
     {
-      "files": "*.yaml",
+      "files": "*.md",
       "options": {
         "singleQuote": false
       }
