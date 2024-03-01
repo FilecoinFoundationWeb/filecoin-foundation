@@ -22,7 +22,7 @@ type EventProps = {
   }
 }
 
-function getEventsData(slug: string): EventData {
+function getEventData(slug: string): EventData {
   const filePath = path.join(
     process.cwd(),
     'src',
@@ -38,12 +38,21 @@ function getEventsData(slug: string): EventData {
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const { data } = matter(fileContents)
 
-  return data as EventData
+  if (!data.title || !data['start-date']) {
+    throw new Error('Missing required event data fields')
+  }
+
+  return {
+    title: data.title,
+    startDate: data['start-date'],
+    slug,
+    ...data,
+  }
 }
 
 export async function generateMetadata({ params }: EventProps) {
   const { slug } = params
-  const data = getEventsData(slug)
+  const data = getEventData(slug)
 
   return generateDynamicContentMetadata({
     basePath: PATHS.EVENTS.path,
@@ -53,21 +62,24 @@ export async function generateMetadata({ params }: EventProps) {
 }
 
 function createEventPostStructuredData(data: EventData): WithContext<Event> {
+  const { title, slug, description, startDate, endDate, image } = data
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: data.title,
-    description: data.f_description,
-    startDate: data['f_start-date'],
-    endDate: data['f_end-date'],
-    image: data.f_image ? [data.f_image.url] : undefined,
-    url: `${BASE_URL}${PATHS.EVENTS.path}/${data.slug}`,
+    name: title,
+    description,
+    startDate,
+    endDate,
+    image: image?.url ? [image.url] : undefined,
+    url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }
 }
 
 export default function Event({ params }: EventProps) {
   const { slug } = params
-  const data = getEventsData(slug)
+  const data = getEventData(slug)
+  const { title, description, image } = data
 
   return (
     <>
@@ -75,20 +87,23 @@ export default function Event({ params }: EventProps) {
         structuredData={createEventPostStructuredData(data)}
       />
       <header>
-        <Image
-          priority
-          src={data.f_image?.url || ''}
-          alt={data.f_image?.alt || ''}
-          width={770}
-          height={440}
-          className="block h-auto object-contain"
-        />
+        {image && (
+          <Image
+            priority
+            src={image.url}
+            alt={image.alt || ''}
+            width={770}
+            height={440}
+            className="block h-auto object-contain"
+          />
+        )}
+
         <Heading tag="h1" variant="2xl">
-          {data.title}
+          {title}
         </Heading>
       </header>
 
-      <p>{data.f_description}</p>
+      {description && <p>{description}</p>}
     </>
   )
 }
