@@ -14,4 +14,6 @@ end-date: "2022-08-24T00:00:00.000Z"
 image:
   url: /assets/images/645215e44977982552923065_unfinished-live.png
   alt: null
+event-type: event
+involvement: null
 ---

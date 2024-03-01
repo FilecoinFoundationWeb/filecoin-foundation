@@ -12,8 +12,10 @@ cta:
   url: https://events.bizzabo.com/filaustin
   text: "Register"
 start-date: "2023-11-13T18:35:31.331Z"
+end-date: null
 image:
   url: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
   alt: null
+event-type: event
 involvement: hosted
 ---

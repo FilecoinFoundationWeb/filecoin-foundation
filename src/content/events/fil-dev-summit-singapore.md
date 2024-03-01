@@ -10,7 +10,10 @@ cta:
   url: https://fildev.io/
   text: null
 start-date: "2023-09-25T14:00:04.428Z"
+end-date: null
 image:
   url: /assets/images/fil-dev-summit.png
   alt: null
+event-type: event
+involvement: null
 ---

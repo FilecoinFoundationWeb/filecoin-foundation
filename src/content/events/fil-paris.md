@@ -14,5 +14,6 @@ end-date: "2023-07-21T15:38:07.128Z"
 image:
   url: /assets/images/fil-paris-pic.png
   alt: null
+event-type: event
 involvement: hosted
 ---

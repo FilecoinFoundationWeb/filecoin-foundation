@@ -5,6 +5,7 @@ created-on: "2023-11-13T18:13:00.239Z"
 updated-on: "2023-11-13T18:13:00.249Z"
 published-on: "2023-11-13T18:13:00.256Z"
 featured: false
+description: null
 cta:
   url: https://23.labweek.io/fil-plus
   text: Register Now
@@ -13,5 +14,6 @@ end-date: "2023-11-14T22:00:00.270Z"
 image:
   url: /assets/images/03292023-filplusmission.png
   alt: null
+event-type: event
 involvement: hosted
 ---

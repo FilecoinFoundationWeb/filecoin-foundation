@@ -13,5 +13,6 @@ end-date: "2023-09-14T15:46:33.644Z"
 image:
   url: /assets/images/fil-dev-summit.png
   alt: null
+event-type: event
 involvement: supported
 ---

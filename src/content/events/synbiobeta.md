@@ -10,7 +10,10 @@ cta:
   url: https://sbs.tech/
   text: null
 start-date: "2023-05-23T15:30:00.000Z"
+end-date: null
 image:
   url: /assets/images/synbiobeta-2023.png
   alt: null
+event-type: event
+involvement: null
 ---

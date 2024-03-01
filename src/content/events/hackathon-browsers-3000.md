@@ -5,10 +5,15 @@ created-on: "2023-05-03T08:06:36.394Z"
 updated-on: "2023-05-03T08:06:36.394Z"
 published-on: "2023-05-03T08:22:38.798Z"
 featured: false
+description: null
 cta:
   url: https://events.protocol.ai/2021/browsers3000/
   text: Watch Recording
 start-date: "2021-07-07T22:00:00.000Z"
 end-date: "2021-08-19T22:00:00.000Z"
+image:
+  url: null
+  alt: null
 event-type: hackaton
+involvement: null
 ---
