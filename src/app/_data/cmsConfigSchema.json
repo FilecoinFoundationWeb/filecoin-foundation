@@ -1454,7 +1454,7 @@
           "default": false
         },
         {
-          "name": "image",
+          "name": "f_image",
           "label": "Image",
           "widget": "object",
           "required": true,
@@ -1608,6 +1608,18 @@
           "required": true
         },
         {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "required": false
+        },
+        {
           "name": "published-on",
           "label": "Published On",
           "widget": "datetime",
@@ -1625,26 +1637,6 @@
           "label": "Description",
           "widget": "text",
           "required": false
-        },
-        {
-          "name": "image",
-          "label": "Image",
-          "widget": "object",
-          "required": false,
-          "fields": [
-            {
-              "name": "url",
-              "label": "URL",
-              "widget": "string",
-              "required": true
-            },
-            {
-              "name": "alt",
-              "label": "Alt",
-              "widget": "string",
-              "required": true
-            }
-          ]
         },
         {
           "name": "cta",
@@ -1668,16 +1660,24 @@
           ]
         },
         {
-          "name": "created-on",
-          "label": "Created On",
-          "widget": "datetime",
-          "required": false
-        },
-        {
-          "name": "updated-on",
-          "label": "Updated On",
-          "widget": "datetime",
-          "required": false
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "fields": [
+            {
+              "name": "url",
+              "label": "URL",
+              "widget": "string",
+              "required": true
+            },
+            {
+              "name": "alt",
+              "label": "Alt text",
+              "widget": "string",
+              "required": true
+            }
+          ]
         },
         {
           "name": "seo",

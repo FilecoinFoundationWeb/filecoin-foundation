@@ -3,6 +3,7 @@ import { MetadataRoute } from 'next'
 import { BlogPostData } from '@/types/blogPostTypes'
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
+import { getCaseStudiesData } from '@/utils/getCaseStudiesData'
 import { getEventData } from '@/utils/getEventData'
 import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 
@@ -23,13 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: post['updated-on'] || post['published-on'] || new Date(),
   }))
 
-  const caseStudies = legacyGetMarkdownData<CaseStudyData>(
+  const caseStudies: CaseStudyData[] = getCaseStudiesData(
     PATHS.CASE_STUDIES.entriesContentPath as string
   )
 
-  const dynamicCaseStudyRoutes = caseStudies.map((study) => ({
-    url: `${BASE_URL}${PATHS.CASE_STUDIES.path}/${study.slug}`,
-    lastModified: study['updated-on'] || study['published-on'] || new Date(),
+  const dynamicCaseStudyRoutes = caseStudies.map((caseStudy) => ({
+    url: `${BASE_URL}${PATHS.CASE_STUDIES.path}/${caseStudy.slug}`,
+    lastModified: caseStudy.updatedOn || caseStudy.publishedOn || new Date(),
   }))
 
   const events = getEventData(PATHS.EVENTS.entriesContentPath as string)

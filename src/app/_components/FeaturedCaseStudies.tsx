@@ -2,14 +2,18 @@ import { CaseStudiesList } from '@/components/CaseStudiesList'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
-import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
+import { getCaseStudiesData } from '@/utils/getCaseStudiesData'
 
 import { PATHS } from '@/constants/paths'
 
-const caseStudies: CaseStudyData[] = legacyGetMarkdownData(
+const caseStudies: CaseStudyData[] = getCaseStudiesData(
   PATHS.CASE_STUDIES.entriesContentPath as string
 )
 
+const featuredCaseStudies = caseStudies.filter(
+  (caseStudy) => caseStudy.featured
+)
+
 export function FeaturedCaseStudies() {
-  return <CaseStudiesList caseStudies={caseStudies} />
+  return <CaseStudiesList caseStudies={featuredCaseStudies} />
 }
