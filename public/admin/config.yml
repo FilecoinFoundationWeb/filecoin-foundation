@@ -543,93 +543,71 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-      - name: "f_featured"
+      - name: "featured"
         label: "Featured"
         widget: "boolean"
         required: false
         default: false
-        hint: "Toggle this on if you want this event to be the featured event"
-      - name: "f_description"
+      - name: "description"
         label: "Description"
         widget: "string"
         required: false
-      - name: "f_cta"
+      - name: "cta"
         label: "CTA"
-        widget: "string"
+        widget: "object"
         required: false
-        hint: "This is where the CTA button will send users"
-      - name: "f_cta-text"
-        label: "CTA Text"
-        widget: "string"
-        required: false
-        hint: "This text is what will appear in the button"
-      - name: "f_start-date"
+        fields:
+          - name: "url"
+            label: "URL"
+            widget: "string"
+            required: true
+          - name: "text"
+            label: "Text"
+            widget: "string"
+            required: true
+            default: "Learn More"
+      - name: "start-date"
         label: "Start Date"
         widget: "datetime"
         required: true
-        hint: "This is the first day of the event"
-      - name: "f_end-date"
+        hint: "First day of event"
+      - name: "end-date"
         label: "End Date"
         widget: "datetime"
-        required: true
-        hint: "This is the last day of the event"
-      - name: "f_image"
+        required: false
+        hint: "Last day of event"
+      - name: "image"
         label: "Image"
         widget: "object"
-        required: true
+        required: false
         fields:
           - name: "url"
             label: "Image"
             widget: "image"
             required: true
-            allow_multiple: false
-            hint: ""
           - name: "alt"
-            label: "alt"
+            label: "Alt text"
             widget: "string"
-            required: false
-            hint: "Image Alt"
-      - name: "f_event-date"
-        label: "Event Date"
-        widget: "datetime"
-        required: true
-        hint: "NOTE: This field is what the CMS uses for sort order- please enter the first day of the event."
-      - name: "f_ff-involvement"
+            required: true
+      - name: "event-type"
+        label: "Event Type"
+        widget: "select"
+        required: false
+        default: "event"
+        options:
+          - label: "Event"
+            value: "event"
+          - label: "Hackathon"
+            value: "hackathon"
+      - name: "involvement"
         label: "FF Involvement"
         widget: "select"
         required: false
         options:
           - label: "Hosted by FF"
-            value: "Hosted by FF"
+            value: "hosted"
           - label: "Supported by FF"
-            value: "Supported by FF"
+            value: "supported"
           - label: "Sponsored by FF"
-            value: "Sponsored by FF"
-      - name: "f_image-background-position"
-        label: "Image Background Position"
-        widget: "string"
-        required: false
-        hint: ""
-      - name: "f_icon-type"
-        label: "Icon Type"
-        widget: "select"
-        required: true
-        options:
-          - label: "Info"
-            value: "Info"
-          - label: "Register"
-            value: "Register"
-          - label: "Watch"
-            value: "Watch"
-      - name: "tags"
-        label: "Tags"
-        widget: "hidden"
-        default: "events"
-      - name: "layout"
-        label: "Layout"
-        widget: "hidden"
-        default: "[events].html"
-      - name: "date"
-        label: "Publish Date"
-        widget: "datetime"
+            value: "sponsored"
       - *meta_config
