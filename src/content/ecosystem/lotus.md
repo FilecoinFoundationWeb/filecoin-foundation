@@ -12,7 +12,7 @@ tags:
 tech:
   - "cms/ecosystem-technology/ipfs.md"
 image:
-  url: "/assets/images/lotus-logo-big-1-.png"
+  url: # "/assets/images/lotus-logo-big-1-.png"
   alt: "Lotus: The gateway to secure and decentralized digital storage on the Filecoin network."
 website: "https://lotus.filecoin.io/"
 featured-content: null

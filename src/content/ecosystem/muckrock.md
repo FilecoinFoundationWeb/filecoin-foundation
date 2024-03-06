@@ -18,7 +18,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: "/assets/images/muckrock_logo_white.png"
+  url: # "/assets/images/muckrock_logo_white.png"
   alt: "MuckRock Logo Filecoin Ecosystem Explorer"
 website: "https://www.muckrock.com/"
 featured-content: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"

@@ -21,7 +21,7 @@ tags:
 tech:
   - "filecoin"
 image:
-  url: "/assets/images/tres_logo_white.png"
+  url: # "/assets/images/tres_logo_white.png"
   alt: "TRES.Finance Logo"
 website: "https://tres.finance/"
 featured-content: null

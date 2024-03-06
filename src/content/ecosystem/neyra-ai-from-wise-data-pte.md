@@ -12,7 +12,7 @@ tags:
 tech:
   - "cms/ecosystem-technology/filecoin.md"
 image:
-  url: "/assets/images/logo-2-.png"
+  url: # "/assets/images/logo-2-.png"
   alt: "Neyra AI"
 website: "https://drive.neyra.ai/"
 featured-content: null

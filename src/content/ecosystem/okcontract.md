@@ -15,7 +15,7 @@ tags:
 tech:
   - "ipfs"
 image:
-  url: "/assets/images/okcontract-logo-white.png"
+  url: # "/assets/images/okcontract-logo-white.png"
   alt: "OKcontract"
 website: "https://okcontract.com/"
 featured-content: null

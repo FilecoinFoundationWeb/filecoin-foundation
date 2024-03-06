@@ -17,7 +17,7 @@ tags:
 tech:
   - "filecoin"
 image:
-  url: "/assets/images/mosaia_logo_white.png"
+  url: # "/assets/images/mosaia_logo_white.png"
 website: "https://www.mosaia.io/"
 featured-content: null
 repo: null
