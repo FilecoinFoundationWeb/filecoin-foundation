@@ -20,7 +20,7 @@ image:
   url: /assets/images/xbanking_logo_white.png
   alt: XBANKING Logo
 website: "https://xbanking.org"
-case-study: null
+featured-content: null
 repo: "https://github.com/xbankingorg"
 twitter: "https://twitter.com/TresDotFinance"
 video-url: "https://www.youtube.com/watch?v=4YHdkICYvJc"

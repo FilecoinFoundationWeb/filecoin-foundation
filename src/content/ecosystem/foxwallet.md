@@ -19,7 +19,7 @@ image:
   alt: FoxWallet Logo
 website: "https://foxwallet.com/en"
 repo: "github.com/foxwallet"
-case-study: null
+featured-content: null
 twitter: "https://twitter.com/FoxWallet"
 video-url: null
 year-joined: 2024-02-27T20:36:33.551Z

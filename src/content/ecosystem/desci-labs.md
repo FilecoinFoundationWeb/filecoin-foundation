@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659872e921cfae476602eef2_desci_logo_white.png
   alt: DeSci Labs Logo
 website: https://desci.com
-case-study: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science/
+featured-content: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science/
 repo: https://github.com/desci-labs
 twitter: https://twitter.com/DeSciLabs
 video-url: https://www.youtube.com/watch?v=q_5hAe2AzhE&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=15

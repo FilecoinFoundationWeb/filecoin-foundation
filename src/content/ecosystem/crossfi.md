@@ -20,7 +20,7 @@ image:
   url: /assets/images/crossfi_logo_white.png
   alt: CrossFi Logo
 website: "https://crossfimain.com/"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/globalcrossfi/"
 video-url: null

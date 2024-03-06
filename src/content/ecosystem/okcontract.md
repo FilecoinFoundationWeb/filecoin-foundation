@@ -18,7 +18,7 @@ image:
   url: "/assets/images/okcontract-logo-white.png"
   alt: "OKcontract"
 website: "https://okcontract.com/"
-case-study: null
+featured-content: null
 repo: "https://github.com/okcontract"
 twitter: null
 video-url: null

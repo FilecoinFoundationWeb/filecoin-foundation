@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659751868be4ed306bb8b8df_portrait.png
   alt: Portrait Logo
 website: "https://portrait.gg/"
-case-study: null
+featured-content: null
 repo: "https://github.com/portraitgg"
 twitter: "https://twitter.com/portrait_gg"
 video-url: null

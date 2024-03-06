@@ -19,7 +19,7 @@ image:
   url: # /assets/external/6598730db2c229176c8afc29_gainforest_logo_white.png
   alt: Gainforest Logo
 website: https://gainforest.earth
-case-study: https://green.filecoin.io/web3-and-the-sustainable-data-movement/
+featured-content: https://green.filecoin.io/web3-and-the-sustainable-data-movement/
 repo: https://github.com/gainforest
 twitter: https://twitter.com/GainForestNow
 video-url: null

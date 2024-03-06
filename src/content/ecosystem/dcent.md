@@ -23,7 +23,7 @@ image:
   url: # /assets/external/6597471cd556a0c37caf9706_dcent_logo.png
   alt: DCENT Logo
 website: https://dcent.nl
-case-study: https://fil.org/blog/filecoin-storage-provider-spotlight-dcent/
+featured-content: https://fil.org/blog/filecoin-storage-provider-spotlight-dcent/
 repo: null
 twitter: https://twitter.com/Dcent_Web3
 video-url: null

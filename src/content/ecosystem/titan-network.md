@@ -25,7 +25,7 @@ tech:
   - filecoin
   - ipfs
 website: "https://www.titannet.io/"
-case-study: null
+featured-content: null
 repo: "https://github.com/Filecoin-Titan/titan"
 twitter: "https://twitter.com/FilecoinTitan"
 video-url: null

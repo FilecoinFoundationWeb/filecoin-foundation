@@ -24,6 +24,6 @@ twitter: null
 video-url: null
 year-joined: null
 news-update: null
-case-study: "https://www.sealstorage.io/blog/uc-berkeley-uses-web3-decentralized-storage-for-neutrino-research-data"
+featured-content: "https://www.sealstorage.io/blog/uc-berkeley-uses-web3-decentralized-storage-for-neutrino-research-data"
 metadata: null
 ---

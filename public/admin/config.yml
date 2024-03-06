@@ -478,7 +478,7 @@ collections:
           - filecoin
           - ipfs
         multiple: true
-      - name: case-study
+      - name: featured-content
         label: Featured Content
         widget: string
         required: false

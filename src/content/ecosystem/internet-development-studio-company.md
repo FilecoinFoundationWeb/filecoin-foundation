@@ -23,7 +23,7 @@ image:
   url: /assets/images/idsc_logo_white.png
   alt: Internet Development Studio Company Logo
 website: https://internet.dev
-case-study: null
+featured-content: null
 repo: https://github.com/internet-development
 twitter: https://twitter.com/internetxstudio
 video-url: null

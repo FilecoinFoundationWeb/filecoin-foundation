@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974a6233564725198bb791_lighthouse.storage.png
   alt: Lighthouse Logo
 website: https://www.lighthouse.storage
-case-study: https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/
+featured-content: https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/
 repo: https://github.com/lighthouse-web3
 twitter: https://twitter.com/LighthouseWeb3
 video-url: null

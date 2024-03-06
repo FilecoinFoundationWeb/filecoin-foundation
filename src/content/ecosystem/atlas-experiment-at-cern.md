@@ -19,7 +19,7 @@ image:
   url: # /assets/external/6597243ac2419e5f35982ce6_rbbxg-heb6koeqarfszeocq4yjtsw2cqpkwb9atop1y.png
   alt: Atlas Experiment Logo
 website: "https://atlas.cern"
-case-study: "https://www.sealstorage.io/blog/atlascern"
+featured-content: "https://www.sealstorage.io/blog/atlascern"
 repo: null
 twitter: "https://twitter.com/ATLASexperiment"
 video-url: null

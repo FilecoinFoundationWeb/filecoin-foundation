@@ -22,7 +22,7 @@ image:
   alt: Filecoin Station Logo
 website: "https://www.filstation.app"
 repo: "https://github.com/filecoin-station/desktop"
-case-study: "https://blog.filecointldr.io/filecoins-retrieval-markets-update-spotlight-on-project-saturn-9f233ed133ed"
+featured-content: "https://blog.filecointldr.io/filecoins-retrieval-markets-update-spotlight-on-project-saturn-9f233ed133ed"
 twitter: null
 video-url: null
 year-joined: null

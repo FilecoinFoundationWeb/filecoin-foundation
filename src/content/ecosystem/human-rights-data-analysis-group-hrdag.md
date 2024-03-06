@@ -21,7 +21,7 @@ image:
   url: /assets/images/hrdag_logo_white.png
   alt: Human Rights Data Analysis Group (HRDAG) Logo
 website: https://hrdag.org/
-case-study: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/
+featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/
 repo: null
 twitter: https://twitter.com/hrdag
 video-url: null

@@ -19,7 +19,7 @@ image:
   url: /assets/images/filliquid_logo_white.png
   alt: FILLiquid Logo
 website: "https://filliquid.io/"
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/FILLiquid
 video-url: "https://www.youtube.com/watch?v=wYYGW7Rxc0E"

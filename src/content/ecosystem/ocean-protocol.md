@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65975154850a118c8ff4d5ff_ocean_logo_blue_globe_no_text-1.png
   alt: "Ocean Protocol Logo"
 website: "https://oceanprotocol.com"
-case-study: null
+featured-content: null
 repo: "https://github.com/oceanprotocol"
 twitter: "https://twitter.com/oceanprotocol"
 video-url: null

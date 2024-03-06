@@ -21,7 +21,7 @@ image:
   url: # /assets/external/6597243838833597a71f11e6_icngy4es52inzwhpzt2c0uodiwktmytv6cqlvo6kya8.png
   alt: "Numbers Protocol Logo"
 website: "https://numbersprotocol.org"
-case-study: null
+featured-content: null
 repo: "https://github.com/numbersprotocol"
 twitter: "https://twitter.com/numbersprotocol"
 video-url: null

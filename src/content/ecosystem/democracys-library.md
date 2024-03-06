@@ -21,7 +21,7 @@ image:
   url: /assets/images/democracys-library-logo.png
   alt: Democracy's Library
 website: https://archive.org/details/democracys-library
-case-study: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/
+featured-content: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/
 repo: null
 twitter: https://twitter.com/internetarchive
 video-url: null

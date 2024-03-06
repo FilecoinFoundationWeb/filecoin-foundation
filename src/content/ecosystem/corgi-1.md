@@ -18,7 +18,7 @@ image:
   url: /assets/images/corgi_logo_white.png
   alt: FILECORGI Logo
 website: "https://filecorgi.xyz/"
-case-study: null
+featured-content: null
 repo: "https://github.com/CORGIFILE/whitepaper"
 twitter: "https://twitter.com/file_corgi"
 video-url: null

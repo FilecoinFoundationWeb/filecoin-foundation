@@ -15,7 +15,7 @@ image:
   url: "/assets/images/logo-2-.png"
   alt: "Neyra AI"
 website: "https://drive.neyra.ai/"
-case-study: null
+featured-content: null
 repo: null
 twitter: null
 video-url: null

@@ -19,7 +19,7 @@ tech:
 image:
   url: "/assets/images/mosaia_logo_white.png"
 website: "https://www.mosaia.io/"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/cyrildelattre"
 video-url: null

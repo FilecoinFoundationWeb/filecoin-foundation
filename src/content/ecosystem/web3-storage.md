@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974d3c02cb39557a1ffd52_web3.Storage-Logo.png
   alt: Web3.Storage Logo
 website: "https://web3.storage/"
-case-study: null
+featured-content: null
 repo: "https://github.com/web3-storage/web3.storage"
 twitter: "https://twitter.com/Web3Storage"
 video-url: null

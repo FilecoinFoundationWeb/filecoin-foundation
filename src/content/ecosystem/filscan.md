@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974a1e84648b50ab0c7214_filscanlogo-text.png
   alt: Filscan Logo
 website: https://filscan.io/en
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/filscanio
 video-url: null

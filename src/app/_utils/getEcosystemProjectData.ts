@@ -87,7 +87,7 @@ export function getEcosystemProjectData(
       },
       website: data.website,
       content: data.content,
-      caseStudy: data['case-study'],
+      featuredContent: data['featured-content'],
       repo: data.repo,
       twitter: data.twitter,
       videoUrl: data['video-url'],

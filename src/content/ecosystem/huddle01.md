@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974a51b7581c4ee8e3b899_huddle.png
   alt: Huddle01 Logo
 website: "https://www.huddle01.com"
-case-study: null
+featured-content: null
 repo: "https://github.com/Huddle01"
 twitter: "https://twitter.com/huddle01com"
 video-url: null

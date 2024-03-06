@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974a282128bbdde2005e43_fission.png
   alt: Fission Logo
 website: https://fission.codes
-case-study: null
+featured-content: null
 repo: https://github.com/fission-codes
 twitter: https://twitter.com/FISSIONcodes
 video-url: null

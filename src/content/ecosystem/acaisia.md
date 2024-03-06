@@ -22,7 +22,7 @@ image:
   url: /assets/images/acaisia-logo_white.png
   alt: Acaisia Logo
 website: https://acaisia.com
-case-study: null
+featured-content: null
 repo: https://github.com/team-acaisia
 twitter: null
 video-url: null

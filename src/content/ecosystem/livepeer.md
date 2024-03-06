@@ -23,7 +23,7 @@ image:
   url: # /assets/external/659751d1ccb76baf40759190_livepeer-logo-primary-1200px-white-transparent-computer-backpack.png
   alt: "Livepeer Logo"
 website: "https://livepeer.org"
-case-study: "https://medium.com/livepeer-blog/video-streaming-with-fvm-and-livepeer-5646eee1ba78"
+featured-content: "https://medium.com/livepeer-blog/video-streaming-with-fvm-and-livepeer-5646eee1ba78"
 repo: "https://github.com/livepeer/org"
 twitter: "https://twitter.com/Livepeer"
 video-url: null

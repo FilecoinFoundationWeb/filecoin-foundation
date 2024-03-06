@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659733d8ebbc2392eda725b0_nidrogvqqb87r8e6c8ygsc2llv7o2zu11hlqz-blvti.png
   alt: FFDW Logo
 website: https://ffdweb.org
-case-study: https://ffdweb.org/resources/
+featured-content: https://ffdweb.org/resources/
 repo: null
 twitter: https://twitter.com/ffdweb
 video-url: null

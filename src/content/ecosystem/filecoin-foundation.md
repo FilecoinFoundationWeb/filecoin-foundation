@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
   alt: Filecoin Foundation Logo
 website: https://fil.org
-case-study: https://fil.org/blog/
+featured-content: https://fil.org/blog/
 repo: null
 twitter: https://twitter.com/FilFoundation
 video-url: null

@@ -27,7 +27,7 @@ image:
   url: /assets/images/zentachain-white.png
   alt: Zentachain Logo Chain Network
 website: "https://zentachain.io/"
-case-study: null
+featured-content: null
 repo: "https://github.com/ZentaChain"
 twitter: "https://twitter.com/zentachain"
 video-url: null

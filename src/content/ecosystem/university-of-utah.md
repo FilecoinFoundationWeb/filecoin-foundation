@@ -26,6 +26,6 @@ twitter: null
 video-url: null
 year-joined: null
 news-update: null
-case-study: "https://www.sealstorage.io/blog/utah#:~:text=The%20University%20of%20Utah%20is,of%20Seal's%20underlying%20network%2C%20Filecoin"
+featured-content: "https://www.sealstorage.io/blog/utah#:~:text=The%20University%20of%20Utah%20is,of%20Seal's%20underlying%20network%2C%20Filecoin"
 metadata: null
 ---

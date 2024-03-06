@@ -21,7 +21,7 @@ image:
   url: "/assets/images/muckrock_logo_white.png"
   alt: "MuckRock Logo Filecoin Ecosystem Explorer"
 website: "https://www.muckrock.com/"
-case-study: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"
+featured-content: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"
 repo: null
 twitter: "https://twitter.com/MuckRock"
 video-url: null

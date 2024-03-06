@@ -19,7 +19,7 @@ image:
   url: /assets/images/ahdx-update-3-2-.png
   alt: AHDX Logo
 website: https://www.ahdx.org/
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/aihdxc/
 video-url: null

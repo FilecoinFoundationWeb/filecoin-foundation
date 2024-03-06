@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974726d10f3992a40f40f6_fil_green_outline.png
   alt: Filecoin Green Logo
 website: https://green.filecoin.io
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/filecoingreen
 video-url: null

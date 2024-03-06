@@ -18,7 +18,7 @@ image:
   url: /assets/images/flame.png
   alt: Flame Launch Logo
 website: https://www.flamelaunch.com/
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/flamelaunch
 video-url: null

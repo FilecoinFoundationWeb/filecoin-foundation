@@ -19,7 +19,7 @@ image:
   url: # /assets/external/6597243bf8de2cf989b5d1c0_xoug5yutdhfs_s1ziwypy3knkkxygigdict_0jnxcxm.svg
   alt: Tableland Logo
 website: "https://tableland.xyz/"
-case-study: "https://mirror.xyz/tableland.eth/cLDRyLa7aMEf1y2sy-PhQtllnZ1YK_oxoS-U2Sf30_Y"
+featured-content: "https://mirror.xyz/tableland.eth/cLDRyLa7aMEf1y2sy-PhQtllnZ1YK_oxoS-U2Sf30_Y"
 repo: "https://github.com/tablelandnetwork"
 twitter: "https://twitter.com/tableland"
 video-url: null

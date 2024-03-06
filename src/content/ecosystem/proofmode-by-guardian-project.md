@@ -19,7 +19,7 @@ image:
   url: /assets/images/proofmode.png
   alt: ProofMode by Guardian Project
 website: "https://proofmode.org"
-case-study: "https://www.ffdweb.org/blog/guardian-project-annoucement/"
+featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"
 repo: "https://github.com/guardianproject/proofmode-android "
 twitter: "https://twitter.com/guardianproject"
 video-url: null

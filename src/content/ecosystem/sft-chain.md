@@ -22,7 +22,7 @@ image:
   url: /assets/images/group.png
   alt: SFT Chain
 website: "https://www.sftproject.io/"
-case-study: null
+featured-content: null
 repo: "https://github.com/SFT-project"
 twitter: "https://twitter.com/sftprotocol/"
 video-url: "https://www.youtube.com/watch?v=FOyv43DGH48"

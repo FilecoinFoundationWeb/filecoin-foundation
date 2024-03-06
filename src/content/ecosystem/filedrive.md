@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659872fd67c584b3534c7331_filedrive_logo_white.png
   alt: FileDrive Logo
 website: "https://filedrive.io"
-case-study: null
+featured-content: null
 repo: "https://github.com/filedrive-team"
 twitter: "https://twitter.com/FileDrive1"
 video-url: null

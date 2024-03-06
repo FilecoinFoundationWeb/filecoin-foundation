@@ -21,7 +21,7 @@ image:
   url: # /assets/external/659751c70b1ecbf25f6faaf3_moca.png
   alt: "Museum of Crypto Art Logo"
 website: "https://museumofcryptoart.com"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/MuseumofCrypto"
 video-url: null

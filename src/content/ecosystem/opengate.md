@@ -18,7 +18,7 @@ image:
   url: # /assets/external/659751960cea1eb2d9ca9d33_opengate_logo.png
   alt: OpenGate Logo
 website: "www.opengatenft.com"
-case-study: null
+featured-content: null
 repo: null
 twitter: "twitter.com/OpenGateNFT"
 video-url: null

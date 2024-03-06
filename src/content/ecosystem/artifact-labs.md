@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659746e70b1ecbf25f67cd3c_artifact-labs-logo.png
   alt: Artifact Labs Logo
 website: "https://www.artifactlabs.com"
-case-study: "https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/"
+featured-content: "https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/"
 repo: "https://github.com/ArtifactLabsOfficial/EIPs"
 twitter: "https://twitter.com/ArtifactLabs_"
 video-url: null

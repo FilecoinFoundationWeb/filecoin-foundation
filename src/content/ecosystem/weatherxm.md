@@ -20,7 +20,7 @@ image:
   url: # /assets/external/6597243713b6cbe85dad7ea4_tkwzgqypzrhnrp1i_jixqqpgoeqydofsk6p7muppqji.png
   alt: WeatherXM Logo
 website: "https://weatherxm.com/"
-case-study: null
+featured-content: null
 repo: "https://github.com/WeatherXM/docs"
 twitter: "https://twitter.com/weatherxm"
 video-url: "https://www.youtube.com/watch?v=w7_wLlA6n8I&t=1s"

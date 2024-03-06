@@ -23,7 +23,7 @@ image:
   url: # /assets/external/65975173625957e0087c7501_sinso_logo.png
   alt: SINSO Logo
 website: "https://sinso.io/"
-case-study: null
+featured-content: null
 repo: "https://github.com/sinsoio"
 twitter: "https://twitter.com/sinsonetwork"
 video-url: null

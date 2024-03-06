@@ -23,7 +23,7 @@ image:
   url: # /assets/external/6597518e66ba5cff0f0ab78f_piknik-logo.png
   alt: PikNik Logo
 website: "https://www.piknik.com"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/PiKNiK_US"
 video-url: null

@@ -18,7 +18,7 @@ image:
   url: # /assets/external/659746fdd59f6b944d45ca8f_audius_logo.png
   alt: Audius Logo
 website: "https://audius.co"
-case-study: "https://docs.ipfs.tech/case-studies/audius/"
+featured-content: "https://docs.ipfs.tech/case-studies/audius/"
 repo: "https://github.com/AudiusProject"
 twitter: "https://twitter.com/audius"
 video-url: null

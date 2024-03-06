@@ -15,7 +15,7 @@ image:
   url: "/assets/images/lotus-logo-big-1-.png"
   alt: "Lotus: The gateway to secure and decentralized digital storage on the Filecoin network."
 website: "https://lotus.filecoin.io/"
-case-study: null
+featured-content: null
 repo: "https://github.com/filecoin-project/lotus"
 twitter: "https://twitter.com/lotus_web3"
 year-joined: "2020-10-15T19:36:51.302Z"

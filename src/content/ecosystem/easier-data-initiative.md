@@ -22,7 +22,7 @@ image:
   url: /assets/images/easier-data-initiative.png
   alt: EASIER Data Initiative
 website: https://easierdata.org/
-case-study: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
+featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
 repo: null
 twitter: https://twitter.com/easierdataorg
 video-url: null

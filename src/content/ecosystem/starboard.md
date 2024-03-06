@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974dc622e2d2883f4e585f_t7xpocnt_400x400.png
   alt: Starboard Logo
 website: "https://dashboard.starboard.ventures/dashboard"
-case-study: null
+featured-content: null
 repo: "https://github.com/starboard-ventures"
 twitter: "https://twitter.com/starboard_v"
 video-url: null

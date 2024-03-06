@@ -26,7 +26,7 @@ twitter: null
 video-url: null
 year-joined: null
 news-update: null
-case-study: "https://fil.org/blog/storage-spotlight-how-twin-quasar-and-celeste-are-bringing-green-data-hosting-to-european-data-storage-clients/"
+featured-content: "https://fil.org/blog/storage-spotlight-how-twin-quasar-and-celeste-are-bringing-green-data-hosting-to-european-data-storage-clients/"
 metadata: null
 ---
 

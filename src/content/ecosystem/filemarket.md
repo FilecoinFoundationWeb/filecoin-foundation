@@ -27,7 +27,7 @@ image:
   url: /assets/images/filemarket_logo_white.png
   alt: FileMarket Logo
 website: "https://filemarket.xyz"
-case-study: null
+featured-content: null
 repo: "https://github.com/Filemarket-xyz/file-market"
 twitter: "https://twitter.com/filemarket_xyz/"
 video-url: "https://www.youtube.com/watch?v=MSOpSJnoFvQ"

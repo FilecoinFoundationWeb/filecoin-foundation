@@ -19,7 +19,7 @@ image:
   url: # /assets/external/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
   alt: Supranational Logo
 twitter: "https://twitter.com/_Supranational"
-case-study: >-
+featured-content: >-
   https://dsalliance.io/resources/blog/dsa-launches-golden-gate-upgrade-reducing-decentralized-storage-costs-by-40-percent
 repo: "https://github.com/supranational"
 website: "https://www.supranational.net/"

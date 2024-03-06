@@ -21,7 +21,7 @@ image:
   url: # /assets/external/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
   alt: "NFT.Storage Logo"
 website: "https://nft.storage"
-case-study: null
+featured-content: null
 repo: "https://github.com/nftstorage"
 twitter: "https://twitter.com/nftdotstorage"
 video-url: null

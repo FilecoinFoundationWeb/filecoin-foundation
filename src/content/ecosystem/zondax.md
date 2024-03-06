@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974d3422e2d2883f4dff8f_zondax_logo.png
   alt: Zondax Logo
 website: "https://zondax.ch/"
-case-study: null
+featured-content: null
 repo: "https://github.com/Zondax"
 twitter: "https://twitter.com/_zondax_"
 video-url: null

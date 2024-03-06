@@ -18,7 +18,7 @@ image:
   url: /assets/images/beryx_logo_white.png
   alt: Beryx Logo
 website: www.beryx.io
-case-study: null
+featured-content: null
 repo: "https://github.com/orgs/Zondax/repositories"
 twitter: "https://twitter.com/_beryx_"
 video-url: "https://www.youtube.com/watch?v=R2pso7nKxJE"

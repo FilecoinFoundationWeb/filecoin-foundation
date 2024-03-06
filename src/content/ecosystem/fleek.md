@@ -25,7 +25,7 @@ image:
 website: "https://fleek.co"
 repo: "https://github.com/FleekHQ"
 twitter: "https://twitter.com/fleekxyz"
-case-study: "https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/"
+featured-content: "https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/"
 video-url: null
 year-joined: 2024-01-19T18:50:41.292Z
 news-update: null

@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659873b32cdb61e3755fc1c7_langrange_dao_logo_white.png
   alt: "Lagrange DAO Logo"
 website: "https://lagrangedao.org"
-case-study: null
+featured-content: null
 repo: "https://github.com/lagrangedao"
 twitter: "https://twitter.com/lagrangedao"
 video-url: null

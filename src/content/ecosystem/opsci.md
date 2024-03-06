@@ -18,7 +18,7 @@ image:
   url: # /assets/external/6597519ebea972da31ebe933_opsci_clear-withtext_666x206.png
   alt: OpSci Logo
 website: "https://www.opsci.io"
-case-study: null
+featured-content: null
 repo: "https://github.com/opscientia"
 twitter: "https://twitter.com/opscientia"
 video-url: null

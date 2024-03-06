@@ -23,7 +23,7 @@ image:
   url: # /assets/external/659872e1c489a49f48f519b0_banyan_logo_white.png
   alt: Banyan Logo
 website: "https://www.banyan.computer"
-case-study: "https://www.youtube.com/watch?v=SaIGrSjOMP4&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=11"
+featured-content: "https://www.youtube.com/watch?v=SaIGrSjOMP4&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=11"
 repo: "github.com/banyancomputer"
 twitter: "https://twitter.com/BanyanComputer"
 video-url: "https://www.youtube.com/watch?v=LFhw2qeMzkc&t"

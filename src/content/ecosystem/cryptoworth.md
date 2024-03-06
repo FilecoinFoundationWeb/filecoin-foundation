@@ -18,7 +18,7 @@ image:
   url: /assets/images/cw-logo-square-1-.png
   alt: cryptoworth wordmark
 website: https://Cryptoworth.com
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/cryptoworthapp/
 video-url: null

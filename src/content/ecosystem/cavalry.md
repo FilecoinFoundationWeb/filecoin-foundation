@@ -23,7 +23,7 @@ image:
   url: # /assets/external/6597471366ba5cff0f03dfe7_cavalry_logo.png
   alt: Cavalry Logo
 website: "https://cavalry.scenegroup.co"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/cavalry__app"
 video-url: "https://www.youtube.com/watch?v=MSkeo4pPYa0"

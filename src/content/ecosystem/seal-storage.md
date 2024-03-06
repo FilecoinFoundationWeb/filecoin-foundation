@@ -21,7 +21,7 @@ image:
 website: "https://www.sealstorage.io/"
 repo: null
 twitter: "https://twitter.com/SealStorage"
-case-study: "https://fil.org/blog/case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1/"
+featured-content: "https://fil.org/blog/case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1/"
 video-url: null
 year-joined: null
 news-update: null

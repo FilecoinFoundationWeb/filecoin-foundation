@@ -20,7 +20,7 @@ image:
   url: /assets/images/collectoflogo.png
   alt: Collectif DAO Logo
 website: "https://collectif.finance/"
-case-study: null
+featured-content: null
 repo: "https://github.com/collectif-dao"
 twitter: "https://twitter.com/CollectifDAO"
 video-url: null

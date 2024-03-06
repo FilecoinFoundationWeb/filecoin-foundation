@@ -19,7 +19,7 @@ image:
   url: # /assets/external/65974d7eb7581c4ee8e5dcf7_swan-logo.png
   alt: Swan Logo
 website: "https://www.swanchain.io"
-case-study: null
+featured-content: null
 repo: "https://github.com/filswan"
 twitter: null
 video-url: null

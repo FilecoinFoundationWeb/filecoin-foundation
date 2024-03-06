@@ -19,7 +19,7 @@ image:
   alt: GLIF Logo
 website: https://glif.io
 repo: https://github.com/glifio
-case-study: nul
+featured-content: nul
 twitter: https://twitter.com/glifio
 video-url: null
 year-joined: 2024-02-07T20:17:14.469Z

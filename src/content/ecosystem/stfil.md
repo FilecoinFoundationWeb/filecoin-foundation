@@ -18,7 +18,7 @@ image:
   url: "/assets/images/stfil-logo-dark-background-.png"
   alt: STFIL
 website: "stfil.io"
-case-study: null
+featured-content: null
 repo: "https://github.com/stfil-io"
 twitter: "https://twitter.com/stfil_io"
 video-url: null

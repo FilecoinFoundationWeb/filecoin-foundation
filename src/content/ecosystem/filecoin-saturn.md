@@ -21,7 +21,7 @@ image:
   url: # /assets/external/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
   alt: Filecoin Saturn Logo
 website: https://saturn.tech
-case-study: null
+featured-content: null
 repo: https://github.com/filecoin-saturn/L1-node
 twitter: null
 video-url: null

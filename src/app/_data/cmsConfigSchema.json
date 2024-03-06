@@ -1481,13 +1481,8 @@
           "required": false,
           "collection": "blog",
           "value_field": "cms/blog/{{slug}}.md",
-          "search_fields": [
-            "slug",
-            "name"
-          ],
-          "display_fields": [
-            "title"
-          ],
+          "search_fields": ["slug", "name"],
+          "display_fields": ["title"],
           "multiple": true
         },
         {
@@ -2061,14 +2056,11 @@
           "label": "Technologies Used",
           "widget": "select",
           "required": true,
-          "options": [
-            "filecoin",
-            "ipfs"
-          ],
+          "options": ["filecoin", "ipfs"],
           "multiple": true
         },
         {
-          "name": "case-study",
+          "name": "featured-content",
           "label": "Featured Content",
           "widget": "string",
           "required": false

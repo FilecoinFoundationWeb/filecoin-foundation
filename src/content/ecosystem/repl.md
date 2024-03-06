@@ -22,7 +22,7 @@ image:
   url: /assets/images/repl_logo_white.png
   alt: Repl Logo
 website: "https://www.repl.fi/"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/Repl_fi"
 video-url: null

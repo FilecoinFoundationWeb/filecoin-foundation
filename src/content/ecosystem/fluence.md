@@ -21,7 +21,7 @@ image:
 website: "https://fluence.network"
 repo: "https://github.com/fluencelabs"
 twitter: "https://twitter.com/fluence_project"
-case-study: "https://www.youtube.com/watch?v=uFhPJ1wR1GQ"
+featured-content: "https://www.youtube.com/watch?v=uFhPJ1wR1GQ"
 video-url: null
 year-joined: null
 news-update: null

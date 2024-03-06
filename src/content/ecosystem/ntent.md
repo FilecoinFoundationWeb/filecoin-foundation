@@ -18,7 +18,7 @@ image:
   url: # /assets/external/659873ecd5b28bbed5b03be9_ntent_logo_white.png
   alt: "Ntent Logo"
 website: "https://www.ntent.art"
-case-study: null
+featured-content: null
 repo: "https://github.com/fluencelabs"
 twitter: "https://twitter.com/fluence_project"
 video-url: null

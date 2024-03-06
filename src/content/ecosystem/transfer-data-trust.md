@@ -28,7 +28,7 @@ twitter: "https://twitter.com/transfergallery/"
 video-url: null
 year-joined: "2024-02-01T15:51:35.152Z"
 news-update: null
-case-study: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data/"
+featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data/"
 metadata: null
 ---
 

@@ -19,7 +19,7 @@ image:
   url: /assets/images/filscriptions_logo_white.png
   alt: Filscriptions Logo
 website: https://www.filscriptions.market/
-case-study: null
+featured-content: null
 repo: null
 twitter: https://twitter.com/filscriptions
 video-url: null

@@ -21,7 +21,7 @@ image:
 website: "https://www.seti.org/"
 repo: null
 twitter: "https://twitter.com/SETIInstitute"
-case-study: "https://destor.com/seti"
+featured-content: "https://destor.com/seti"
 video-url: null
 year-joined: null
 news-update: null

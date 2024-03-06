@@ -22,7 +22,7 @@ tech:
 image:
   url: /assets/images/dokaz_logo_white.png
 website: "https://www.starlinglab.org/"
-case-study: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html"
+featured-content: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html"
 repo: null
 twitter: null
 video-url: null

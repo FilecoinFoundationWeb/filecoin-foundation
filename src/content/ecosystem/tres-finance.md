@@ -24,7 +24,7 @@ image:
   url: "/assets/images/tres_logo_white.png"
   alt: "TRES.Finance Logo"
 website: "https://tres.finance/"
-case-study: null
+featured-content: null
 repo: null
 twitter: "https://twitter.com/TresDotFinance"
 video-url: "https://www.youtube.com/watch?v=4YHdkICYvJc"

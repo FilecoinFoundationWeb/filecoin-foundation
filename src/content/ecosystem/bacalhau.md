@@ -19,7 +19,7 @@ image:
   url: # /assets/external/659872da19567f4307ba3b38_bacalhua_logo_white.png
   alt: Bacalhau Logo
 website: "https://www.bacalhau.org"
-case-study: null
+featured-content: null
 repo: "https://github.com/bacalhau-project/bacalhau"
 twitter: "https://twitter.com/BacalhauProject"
 video-url: null

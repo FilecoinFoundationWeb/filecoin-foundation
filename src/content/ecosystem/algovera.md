@@ -18,7 +18,7 @@ image:
   url: # /assets/external/659872d2b2c229176c8ae210_algovera-whitebackground.png
   alt: Algovera Logo
 website: "https://www.algovera.ai"
-case-study: null
+featured-content: null
 repo: "https://github.com/AlgoveraAI"
 twitter: "https://twitter.com/algoveraai"
 video-url: null
