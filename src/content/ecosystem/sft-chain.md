@@ -1,47 +1,39 @@
 ---
 title: SFT Chain
-created-on: 2024-02-05T17:57:11.340Z
-updated-on: 2024-02-05T17:57:11.357Z
-published-on: 2024-02-05T17:57:11.368Z
-f_featured: false
-f_brand:
-  url: /assets/images/group.png
-  alt: SFT Chain
-f_topic:
+slug: sft-chain
+created-on: "2024-02-05T17:57:11.340Z"
+updated-on: "2024-02-05T17:57:11.357Z"
+published-on: "2024-02-05T17:57:11.368Z"
+featured: false
+description: "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates with the Filecoin ecosystem, focusing on DePIN."
+topic:
   value: artificial-intelligence
   label: Artificial Intelligence
-f_tag:
+tags:
   - value: depin
     label: Decentralized Personal Information Networks
   - value: infrastructure
     label: Infrastructure
   - value: storage-infrastructure
     label: Storage Infrastructure
-f_card-text-truncated: >-
-  SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates with
-  the Filecoin ecosystem, focusing on DePIN. 
-f_website: 'https://www.sftproject.io/'
-f_repo: 'https://github.com/SFT-project'
-f_tech-3:
+tech:
   - filecoin
-f_social-media: 'https://twitter.com/sftprotocol/'
-f_video:
-  url: 'https://www.youtube.com/watch?v=FOyv43DGH48'
-f_year-2: 2022-09-01T16:57:11.380Z
-f_last-updated-2: 2024-02-05T17:57:11.394Z
-date: 2024-02-05T17:57:11.402Z
-seo:
-  noindex: false
-  'twitter:title': summary
-  'twitter:card': summary
+image:
+  url: /assets/images/group.png
+  alt: SFT Chain
+website: "https://www.sftproject.io/"
+case-study: null
+repo: "https://github.com/SFT-project"
+twitter: "https://twitter.com/sftprotocol/"
+video-url: "https://www.youtube.com/watch?v=FOyv43DGH48"
+year-joined: null
+news-update: null
+metadata: null
 ---
+
 SFT Chain, a dynamic 'Chain of Chains', plays a crucial role in the DePIN (Decentralized Physical Infrastructure Networks) landscape, specifically designed to augment the capabilities of Web3 infrastructure. At the core of our mission, we focus on creating a comprehensive platform that integrates critical components like storage, computing, and edge CDN, thereby pushing the boundaries of conventional infrastructure and paving the way for groundbreaking applications.
 
-
-
 Our utilization of the Filecoin network is central to our operations. Recognizing Filecoin's unparalleled capacity for secure, decentralized storage, SFT Chain integrates Filecoin's robust storage solutions into our broader DePIN framework. This integration allows us to leverage Filecoin’s peer-to-peer storage network, not just as a repository for data, but as a foundational layer upon which additional services and applications are built and scaled.
-
-
 
 We harness Filecoin’s network for several key functionalities:
 
