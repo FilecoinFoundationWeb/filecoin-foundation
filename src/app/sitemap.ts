@@ -1,16 +1,31 @@
-import { MetadataRoute } from 'next'
-
 import { BlogPostData } from '@/types/blogPostTypes'
-import { CaseStudyData } from '@/types/caseStudyTypes'
 
 import { getCaseStudiesData } from '@/utils/getCaseStudiesData'
+import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 import { getEventData } from '@/utils/getEventData'
 import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+function generateDynamicRoutes<
+  T extends { slug: string; updatedOn?: string; publishedOn?: string }
+>(
+  data: T[],
+  basePath: string,
+  timestampKey: 'updatedOn' | 'publishedOn' = 'updatedOn'
+) {
+  return data.map((item) => {
+    const lastModifiedDate = item[timestampKey] ?? new Date().toISOString()
+
+    return {
+      url: `${BASE_URL}${basePath}/${item.slug}`,
+      lastModified: lastModifiedDate,
+    }
+  })
+}
+
+export default function sitemap() {
   const staticRoutes = Object.values(PATHS).map((path) => ({
     url: `${BASE_URL}${path.path}`,
     lastModified: new Date(),
@@ -19,31 +34,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = legacyGetMarkdownData<BlogPostData>(
     PATHS.BLOG.entriesContentPath as string
   )
-  const dynamicBlogRoutes = blogPosts.map((post) => ({
-    url: `${BASE_URL}{PATHS.BLOG.path}/${post.slug}`,
-    lastModified: post['updated-on'] || post['published-on'] || new Date(),
-  }))
+  const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
-  const caseStudies: CaseStudyData[] = getCaseStudiesData(
+  const caseStudies = getCaseStudiesData(
     PATHS.CASE_STUDIES.entriesContentPath as string
   )
+  const dynamicCaseStudyRoutes = generateDynamicRoutes(
+    caseStudies,
+    PATHS.CASE_STUDIES.path
+  )
 
-  const dynamicCaseStudyRoutes = caseStudies.map((caseStudy) => ({
-    url: `${BASE_URL}${PATHS.CASE_STUDIES.path}/${caseStudy.slug}`,
-    lastModified: caseStudy.updatedOn || caseStudy.publishedOn || new Date(),
-  }))
+  const ecosystemProjects = getEcosystemProjectData(
+    PATHS.ECOSYSTEM.entriesContentPath as string
+  )
+
+  const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
+    ecosystemProjects,
+    PATHS.ECOSYSTEM.path
+  )
 
   const events = getEventData(PATHS.EVENTS.entriesContentPath as string)
-
-  const dynamicEventRoutes = events.map((event) => ({
-    url: `${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
-    lastModified: event.updatedOn || event.publishedOn || new Date(),
-  }))
+  const dynamicEventRoutes = generateDynamicRoutes(events, PATHS.EVENTS.path)
 
   return [
     ...staticRoutes,
     ...dynamicBlogRoutes,
     ...dynamicCaseStudyRoutes,
+    ...dynamicEcosystemProjectRoutes,
     ...dynamicEventRoutes,
   ]
 }

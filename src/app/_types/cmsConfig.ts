@@ -1,4 +1,4 @@
-type CMSFieldOption = {
+export type CMSFieldOption = {
   label: string
   value: string
 }
@@ -10,7 +10,7 @@ export type CMSFieldConfig = {
   options?: CMSFieldOption[]
 }
 
-type CMSCollectionConfig = {
+export type CMSCollectionConfig = {
   name: string
   label: string
   fields?: CMSFieldConfig[]

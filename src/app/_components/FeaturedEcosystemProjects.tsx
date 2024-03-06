@@ -12,27 +12,25 @@ const ecosystemProjects: EcosystemProjectData[] = legacyGetMarkdownData(
   PATHS.ECOSYSTEM.entriesContentPath as string
 )
 
-const featuredProjects = ecosystemProjects.filter(
-  (project) => project.f_featured
+const featuredEcosystemProjects = ecosystemProjects.filter(
+  (project) => project.featured
 )
 
 export function FeaturedEcosystemProjects() {
-  if (featuredProjects.length === 0) {
+  if (featuredEcosystemProjects.length === 0) {
     return <p>No featured projects available.</p>
   }
 
   return (
     <ul className="gap-8 sm:gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 list-none">
-      {featuredProjects.map((ecosystemProject) => (
-        <li key={ecosystemProject.slug} className="ml-0">
+      {featuredEcosystemProjects.map(({ slug, title, description }) => (
+        <li key={slug} className="ml-0">
           <Badge featured />
           <Heading tag="h3" variant="lg">
-            {ecosystemProject.title}
+            {title}
           </Heading>
-          <p>{ecosystemProject['f_card-text-truncated']}</p>
-          <TextLink href={`${PATHS.ECOSYSTEM.path}/${ecosystemProject.slug}`}>
-            See More
-          </TextLink>
+          <p>{description}</p>
+          <TextLink href={`${PATHS.ECOSYSTEM.path}/${slug}`}>See More</TextLink>
         </li>
       ))}
     </ul>

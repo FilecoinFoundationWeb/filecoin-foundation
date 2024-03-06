@@ -6,19 +6,17 @@ import { DynamicPathValues } from '@/constants/paths'
 
 export function generateDynamicContentMetadata({
   basePath,
-  slug,
   data,
 }: {
   basePath: string
-  slug: string
-  data: { title: string; f_description?: string }
+  data: { title: string; description?: string; slug: string }
 }): Metadata {
   const seo = {
     title: data.title,
-    description: data.f_description,
+    description: data.description,
   }
 
-  const path = `${basePath}/${slug}` as DynamicPathValues
+  const path = `${basePath}/${data.slug}` as DynamicPathValues
 
   return createMetadata(seo, path)
 }

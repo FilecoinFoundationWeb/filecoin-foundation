@@ -10,33 +10,30 @@ type Topic = {
   value: string
 }
 
+export type LinkDataKey = 'website' | 'repo' | 'twitter' | 'caseStudy'
+
 export type EcosystemProjectData = {
   title: string
-  'created-on'?: string
-  'updated-on'?: string
-  'published-on'?: string
-  body?: string
-  f_featured?: boolean
-  f_brand: {
+  slug: string
+  createdOn?: string
+  updatedOn?: string
+  publishedOn?: string
+  featured?: boolean
+  description: string
+  topic: Topic
+  tags: Tag[]
+  tech: string[]
+  image: {
     url: string
     alt: string
   }
-  f_topic: Topic
-  f_tag: Tag[]
-  'f_card-text-truncated': string
-  f_website: string
-  f_repo?: string
-  'f_tech-3': string[]
-  'f_case-study'?: string
-  'f_social-media'?: string
-  f_video?: {
-    url?: string
-  }
-  'f_year-2'?: string
-  'f_last_updated-2'?: string
-  'f_what-s-new'?: string
-  'f_background-color'?: string
-  slug: string
-  date: string
+  website: string
+  content?: string
+  caseStudy?: string
+  repo?: string
+  twitter?: string
+  videoUrl?: string
+  yearJoined?: string
+  newsUpdate?: string
   metadata?: Metadata
 }

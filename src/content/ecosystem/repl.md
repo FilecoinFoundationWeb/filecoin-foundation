@@ -1,39 +1,36 @@
 ---
 title: Repl
-created-on: 2024-01-24T13:41:08.340Z
-updated-on: 2024-01-24T13:41:08.357Z
-published-on: 2024-01-24T13:41:08.367Z
-f_featured: false
-f_brand:
-  url: /assets/images/repl_logo_white.png
-  alt: Repl Logo
-f_topic:
+slug: "repl"
+created-on: "2024-01-24T13:41:08.340Z"
+updated-on: "2024-01-24T13:41:08.357Z"
+published-on: "2024-01-24T13:41:08.367Z"
+featured: false
+description: "Repl is the first repledging Protocol for pledged FIL assets. It aims to enhance the efficiency of pledged FIL, remove idiosyncratic risks among Filecoin storage providers, and lower the complexity for people to earn Filecoin rewards."
+topic:
   value: finance
   label: Finance
-f_tag:
+tags:
   - value: dapp
     label: DApp
   - value: infrastructure
     label: Infrastructure
   - value: leasing-and-staking
     label: Leasing & Staking
-f_card-text-truncated: >-
-  Repl is the first repledging Protocol for pledged FIL assets. It aims to
-  enhance the efficiency of pledged FIL, remove idiosyncratic risks among
-  Filecoin storage providers, and lower the complexity for people to earn
-  Filecoin rewards. 
-f_website: 'https://www.repl.fi/'
-f_tech-3:
+tech:
   - filecoin
-f_social-media: 'https://twitter.com/Repl_fi'
-f_year-2: 2023-12-25T13:41:08.389Z
-f_last-updated-2: 2024-01-24T13:41:08.405Z
-date: 2024-01-24T13:41:08.412Z
-seo:
-  noindex: false
-  'twitter:title': summary
-  'twitter:card': summary
+image:
+  url: /assets/images/repl_logo_white.png
+  alt: Repl Logo
+website: "https://www.repl.fi/"
+featured-content: null
+repo: null
+twitter: "https://twitter.com/Repl_fi"
+video-url: null
+year-joined: null
+news-update: null
+metadata: null
 ---
+
 Repl tokenizes pledged FIL in the Filecoin Protocol and enables liquidity and extended utilities for these pledged assets.
 
 There are three main components of the Repl Protocol.

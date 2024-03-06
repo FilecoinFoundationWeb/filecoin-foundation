@@ -54,7 +54,6 @@ export async function generateMetadata({ params }: CaseStudyProps) {
 
   return generateDynamicContentMetadata({
     basePath: PATHS.CASE_STUDIES.path,
-    slug,
     data,
   })
 }

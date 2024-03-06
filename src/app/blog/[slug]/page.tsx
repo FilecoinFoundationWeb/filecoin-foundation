@@ -50,7 +50,6 @@ export async function generateMetadata({ params }: BlogPostProps) {
 
   return generateDynamicContentMetadata({
     basePath: PATHS.BLOG.path,
-    slug,
     data,
   })
 }

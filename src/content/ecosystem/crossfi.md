@@ -1,37 +1,34 @@
 ---
 title: CrossFi
+slug: crossfi
 created-on: 2024-01-17T14:44:30.832Z
 updated-on: 2024-01-17T14:44:30.857Z
 published-on: 2024-01-17T14:44:30.872Z
-f_featured: false
-f_brand:
-  url: /assets/images/crossfi_logo_white.png
-  alt: CrossFi
-f_topic:
+featured: false
+description: "CrossFi aims to democratize decentralized finance by allowing anyone to create a synthetic asset on the Ethereum blockchain that is a derivative of their assets on any other infrastructure when those assets are staked and collateralized through the CrossFi platform."
+topic:
   value: finance
   label: Finance
-f_tag:
+tags:
   - value: dapp
     label: DApp
   - value: governance-daos-public-goods
-    label: 'Governance, DAOs, & Public Goods'
-f_card-text-truncated: >-
-  CrossFi aims to democratize decentralized finance by allowing anyone to create
-  a synthetic asset on the Ethereum blockchain that is a derivative of their
-  assets on any other infrastructure when those assets are staked and
-  collateralized through the CrossFi platform.
-f_website: 'https://crossfimain.com/'
-f_tech-3:
+    label: "Governance, DAOs, & Public Goods"
+tech:
   - filecoin
-f_social-media: 'https://twitter.com/globalcrossfi/'
-f_year-2: 2024-01-17T14:44:30.896Z
-f_last-updated-2: 2024-01-17T14:44:30.933Z
-date: 2024-01-17T14:44:30.956Z
-seo:
-  noindex: false
-  'twitter:title': summary
-  'twitter:card': summary
+image:
+  url: /assets/images/crossfi_logo_white.png
+  alt: CrossFi Logo
+website: "https://crossfimain.com/"
+featured-content: null
+repo: null
+twitter: "https://twitter.com/globalcrossfi/"
+video-url: null
+year-joined: 2024-01-17T14:44:30.896Z
+news-update: null
+metadata: null
 ---
+
 CrossFi is a groundbreaking platform addressing key challenges within the blockchain and decentralized finance (DeFi) space. At its core, CrossFi introduces a multi-asset adaptor protocol focused on enhancing interoperability and liquidity in the decentralized ecosystem. The platform's primary goal is to democratize DeFi by enabling users to create synthetic assets on the Ethereum blockchain, acting as derivatives of assets on diverse infrastructures. Users can stake and collateralize these assets through CrossFi, unlocking liquidity and integrating them seamlessly into the broader DeFi landscape.
 
 A notable aspect of CrossFi's strategy involves its integration with the Filecoin network, renowned for its decentralized storage protocol. Filecoin stakers, who invest in specialized mining machines, are rewarded based on their storage contributions. However, staked Filecoins face limitations in terms of utility.

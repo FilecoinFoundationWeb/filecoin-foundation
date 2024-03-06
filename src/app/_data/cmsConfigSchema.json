@@ -1481,13 +1481,8 @@
           "required": false,
           "collection": "blog",
           "value_field": "cms/blog/{{slug}}.md",
-          "search_fields": [
-            "slug",
-            "name"
-          ],
-          "display_fields": [
-            "title"
-          ],
+          "search_fields": ["slug", "name"],
+          "display_fields": ["title"],
           "multiple": true
         },
         {
@@ -1792,41 +1787,41 @@
           "required": false
         },
         {
-          "name": "body",
-          "label": "Description (Long)",
+          "name": "content",
+          "label": "Content",
           "widget": "markdown",
           "required": false
         },
         {
-          "name": "f_featured",
+          "name": "featured",
           "label": "Featured",
           "widget": "boolean",
           "required": false,
           "default": false
         },
         {
-          "name": "f_brand",
-          "label": "Logo",
+          "name": "image",
+          "label": "Image",
           "widget": "object",
           "required": true,
           "fields": [
             {
               "name": "url",
-              "label": "Image",
+              "label": "URL",
               "widget": "image",
               "required": true,
               "allow_multiple": false
             },
             {
               "name": "alt",
-              "label": "Image Alt",
+              "label": "Alt Text",
               "widget": "string",
               "required": true
             }
           ]
         },
         {
-          "name": "f_topic",
+          "name": "topic",
           "label": "Topic",
           "widget": "select",
           "required": true,
@@ -1870,7 +1865,7 @@
           ]
         },
         {
-          "name": "f_tag",
+          "name": "tags",
           "label": "Tags",
           "widget": "select",
           "required": true,
@@ -2039,90 +2034,60 @@
           ]
         },
         {
-          "name": "f_card-text-truncated",
+          "name": "description",
           "label": "Description",
           "widget": "string",
           "required": true
         },
         {
-          "name": "f_website",
+          "name": "website",
           "label": "Website",
           "widget": "string",
           "required": true
         },
         {
-          "name": "f_repo",
-          "label": "GitHub",
+          "name": "repo",
+          "label": "GitHub Repo",
           "widget": "string",
           "required": false
         },
         {
-          "name": "f_tech-3",
-          "label": "Technologies",
+          "name": "tech",
+          "label": "Technologies Used",
           "widget": "select",
           "required": true,
-          "options": [
-            "filecoin",
-            "ipfs"
-          ],
+          "options": ["filecoin", "ipfs"],
           "multiple": true
         },
         {
-          "name": "f_case-study",
-          "label": "Filecoin Content",
+          "name": "featured-content",
+          "label": "Featured Content",
           "widget": "string",
           "required": false
         },
         {
-          "name": "f_social-media",
-          "label": "Twitter",
+          "name": "twitter",
+          "label": "Twitter Handle",
           "widget": "string",
           "required": false
         },
         {
-          "name": "f_video",
-          "label": "YouTube Video Link",
-          "widget": "object",
-          "required": false,
-          "fields": [
-            {
-              "name": "url",
-              "label": "Url",
-              "widget": "string",
-              "required": false
-            }
-          ]
+          "name": "video-url",
+          "label": "YouTube Video URL",
+          "widget": "string",
+          "required": false
         },
         {
-          "name": "f_year-2",
+          "name": "year-joined",
           "label": "Using Filecoin Since",
           "widget": "datetime",
           "required": false
         },
         {
-          "name": "f_last-updated-2",
-          "label": "Last Updated",
-          "widget": "datetime",
-          "required": false
-        },
-        {
-          "name": "f_what-s-new",
+          "name": "news-update",
           "label": "What's New?",
           "widget": "markdown",
           "required": false
-        },
-        {
-          "name": "f_background-color",
-          "label": "Background Color",
-          "widget": "color",
-          "required": false,
-          "enableAlpha": true,
-          "allowInput": true
-        },
-        {
-          "name": "date",
-          "label": "Publish Date",
-          "widget": "datetime"
         },
         {
           "name": "seo",
