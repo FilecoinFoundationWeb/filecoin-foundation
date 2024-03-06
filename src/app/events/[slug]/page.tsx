@@ -56,7 +56,6 @@ export async function generateMetadata({ params }: EventProps) {
 
   return generateDynamicContentMetadata({
     basePath: PATHS.EVENTS.path,
-    slug,
     data,
   })
 }
