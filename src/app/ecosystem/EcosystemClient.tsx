@@ -33,11 +33,11 @@ export function EcosystemClient({
 
       const matchesTopics =
         selectedTopics.length === 0 ||
-        selectedTopics.includes(project.f_topic.value)
+        selectedTopics.includes(project.topic.value)
 
       const matchesTags =
         selectedTags.length === 0 ||
-        project.f_tag.some((tag) => selectedTags.includes(tag.value))
+        project.tags.some((tag) => selectedTags.includes(tag.value))
 
       return matchesSearchQuery && matchesTopics && matchesTags
     })

@@ -12,7 +12,10 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import {
+  EcosystemProjectData,
+  LinkDataKey,
+} from '@/types/ecosystemProjectTypes'
 
 import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { baseOrganizationSchema } from '@/utils/structuredData'
@@ -54,28 +57,26 @@ export async function generateMetadata({ params }: EcosystemProjectProps) {
 
   return generateDynamicContentMetadata({
     basePath: PATHS.ECOSYSTEM.path,
-    slug,
-    data: {
-      title: data.title,
-      f_description: data['f_card-text-truncated'],
-    },
+    data,
   })
 }
 
 function createEcosystemProjectPostStructuredData(
   data: EcosystemProjectData
 ): WithContext<Article> {
+  const { title, slug, publishedOn, updatedOn, description, image } = data
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: data.title,
-    description: data['f_card-text-truncated'],
-    image: data.f_brand?.url || '',
-    datePublished: data.date,
-    dateModified: data['updated-on'] || data.date,
+    headline: title,
+    description,
+    image: image?.url,
+    datePublished: publishedOn,
+    dateModified: updatedOn || publishedOn,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.ECOSYSTEM.path}/${data.slug}`,
+      '@id': `${BASE_URL}${PATHS.ECOSYSTEM.path}/${slug}`,
     },
     ...(typeof baseOrganizationSchema === 'object'
       ? { publisher: baseOrganizationSchema }
@@ -87,13 +88,11 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const { content, data } = getEcosystemProjectData(slug)
 
-  type LinkDataKey = 'f_website' | 'f_repo' | 'f_social-media' | 'f_case-study'
-
   const linkTypes = [
-    { key: 'f_website', text: 'Website' },
-    { key: 'f_repo', text: 'GitHub' },
-    { key: 'f_social-media', text: 'Twitter' },
-    { key: 'f_case-study', text: 'Featured Content' },
+    { key: 'caseStudy', text: 'Featured Content' },
+    { key: 'website', text: 'Website' },
+    { key: 'repo', text: 'GitHub' },
+    { key: 'twitter', text: 'Twitter' },
   ]
 
   const links = linkTypes
@@ -110,13 +109,13 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
       />
 
       <article>
-        <Badge featured={!!data.f_featured}>Ecosystem Project</Badge>
+        <Badge featured={!!data.featured}>Ecosystem Project</Badge>
 
-        {data.f_brand.url && (
+        {data.image.url && (
           <Image
             priority
-            src={data.f_brand.url}
-            alt={data.f_brand.alt}
+            src={data.image.url}
+            alt={data.image.alt}
             width={232}
             height={220}
             className="block h-auto object-contain"
@@ -137,20 +136,20 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           ))}
         </ul>
 
-        {data.f_video?.url && (
+        {data.videoUrl && (
           <iframe
             allowFullScreen
             width="560"
             height="315"
             aria-label="Embedded YouTube Video"
-            src={data.f_video.url}
+            src={data.videoUrl}
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
           />
         )}
 
         <ul className="flex gap-3 list-none flex-wrap">
-          {data.f_tag.map((tag) => (
+          {data.tags.map((tag) => (
             <li key={tag.value} className="ml-0">
               <span className="px-2 py-1 bg-brand-800 text-white rounded-lg text-sm font-medium uppercase border-white border">
                 {tag.label}

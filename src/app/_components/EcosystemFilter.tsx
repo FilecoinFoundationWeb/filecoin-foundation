@@ -1,45 +1,22 @@
 import React, { ChangeEvent } from 'react'
 
+import { CMSFieldOption, CMSConfig } from '@/types/cmsConfig'
+
+import { getCMSCollection, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+
 import configJson from '@/data/cmsConfigSchema.json'
 const config: CMSConfig = configJson as CMSConfig
-
-type Field = {
-  name: string
-  label: string
-  widget: string
-  options?: Option[]
-}
-
-type Collection = {
-  name: string
-  label: string
-  fields?: Field[]
-}
-
-type CMSConfig = {
-  collections: Collection[]
-}
-
-type Option = {
-  label: string
-  value: string
-}
-
-type OptionSelectProps = {
-  label: string
-  name: string
-  options: Option[]
-  onChange: (selectedValues: string[]) => void
-}
 
 type EcosystemFilterProps = {
   onTopicsChange: (selectedTopics: string[]) => void
   onTagsChange: (selectedTags: string[]) => void
 }
 
-function getFieldOptions(fields: Field[] = [], fieldName: string): Option[] {
-  const field = fields.find((field) => field.name === fieldName)
-  return field && field.options ? field.options : []
+type OptionSelectProps = {
+  label: string
+  name: string
+  options: CMSFieldOption[]
+  onChange: (selectedValues: string[]) => void
 }
 
 function OptionSelect({
@@ -77,30 +54,27 @@ export function EcosystemFilter({
   onTopicsChange,
   onTagsChange,
 }: EcosystemFilterProps) {
-  const collection = config.collections.find(
-    (collection) => collection.name === 'ecosystem_projects'
-  )
+  const collection = getCMSCollection(config.collections, 'ecosystem_projects')
+  let topics
+  let tags
 
-  if (!collection || !collection.fields) {
-    console.error('Collection or fields not found')
-    return null
+  if (collection) {
+    topics = getCMSFieldOptions(collection, 'topic')
+    tags = getCMSFieldOptions(collection, 'tags')
   }
-
-  const topics = getFieldOptions(collection.fields, 'f_topic')
-  const tags = getFieldOptions(collection.fields, 'f_tag')
 
   return (
     <div className="flex flex-col gap-2 text-brand-800">
       <OptionSelect
         label="Select Topics"
         name="topics"
-        options={topics}
+        options={topics || []}
         onChange={(selectedTopics) => onTopicsChange(selectedTopics)}
       />
       <OptionSelect
         label="Select Tags"
         name="tags"
-        options={tags}
+        options={tags || []}
         onChange={(selectedTags) => onTagsChange(selectedTags)}
       />
     </div>

@@ -7,10 +7,8 @@ import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
-
 import { createMetadata } from '@/utils/createMetadata'
-import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
+import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
@@ -24,7 +22,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
 
-const ecosystemProjects: EcosystemProjectData[] = legacyGetMarkdownData(
+const ecosystemProjects = getEcosystemProjectData(
   PATHS.ECOSYSTEM.entriesContentPath as string
 )
 
@@ -90,24 +88,21 @@ export default function Ecosystem() {
           Featured Partners
         </Heading>
         <ul className="list-none flex gap-8 items-center">
-          {featuredPartners.map((partner) => (
-            <li
-              key={partner.name}
-              className="relative ml-0 mb-0 size-24 inline-flex"
-            >
+          {featuredPartners.map(({ name, logo, url }) => (
+            <li key={name} className="relative ml-0 mb-0 size-24 inline-flex">
               <Image
                 fill
                 priority
-                src={partner.logo}
-                alt={`${partner.name} Logo`}
+                src={logo}
+                alt={`${name} Logo`}
                 className="object-contain"
               />
               <a
-                href={partner.url}
+                href={url}
                 className="absolute inset-0"
-                title={`Visit ${partner.name}`}
+                title={`Visit ${name}`}
               >
-                <span className="sr-only">Visit {partner.name}</span>
+                <span className="sr-only">Visit {name}</span>
               </a>
             </li>
           ))}

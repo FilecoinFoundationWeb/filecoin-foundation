@@ -12,28 +12,23 @@ export function EcosystemProjectListItem({
 }: {
   project: EcosystemProjectData
 }) {
-  const {
-    slug,
-    title,
-    f_brand: image,
-    ['f_card-text-truncated']: description,
-  } = project
+  const { title, slug, topic, image, description } = project
 
   return (
-    <li key={project.slug} className="flex flex-col justify-between ml-0">
+    <li key={slug} className="flex flex-col justify-between ml-0">
       <div>
         <div className="relative size-56 border mb-4">
           {image.url && (
             <Image
               fill
               priority
-              src={project.f_brand.url}
-              alt={project.f_brand.alt}
+              src={image.url}
+              alt={image.alt}
               className="object-contain p-2"
             />
           )}
         </div>
-        <span className="inline-block mb-3">{project.f_topic.label}</span>
+        <span className="inline-block mb-3">{topic.label}</span>
         <Heading tag="h3" variant="lg">
           {title}
         </Heading>
