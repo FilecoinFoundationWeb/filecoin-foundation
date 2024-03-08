@@ -1,9 +1,5 @@
-import fs from 'fs'
-import path from 'path'
-
 import Image from 'next/image'
 
-import matter from 'gray-matter'
 import { Event, WithContext } from 'schema-dts'
 
 import { Heading } from '@/components/Heading'
@@ -12,6 +8,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { EventData } from '@/types/eventTypes'
 
 import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
+import { getEventData } from '@/utils/getEventData'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
@@ -19,34 +16,6 @@ import { BASE_URL } from '@/constants/siteMetadata'
 type EventProps = {
   params: {
     slug: string
-  }
-}
-
-function getEventData(slug: string): EventData {
-  const filePath = path.join(
-    process.cwd(),
-    'src',
-    'content',
-    'events',
-    `${slug}.md`
-  )
-
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`File not found for slug: ${slug}`)
-  }
-
-  const fileContents = fs.readFileSync(filePath, 'utf8')
-  const { data } = matter(fileContents)
-
-  if (!data.title || !data['start-date']) {
-    throw new Error('Missing required event data fields')
-  }
-
-  return {
-    title: data.title,
-    startDate: data['start-date'],
-    slug,
-    ...data,
   }
 }
 
@@ -78,6 +47,8 @@ function createEventPostStructuredData(data: EventData): WithContext<Event> {
 export default function Event({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
+
+  console.log({ slug, data })
   const { title, description, image } = data
 
   return (
@@ -90,7 +61,7 @@ export default function Event({ params }: EventProps) {
           <Image
             priority
             src={image.url}
-            alt={image.alt || ''}
+            alt={image.alt}
             width={770}
             height={440}
             className="block h-auto object-contain"

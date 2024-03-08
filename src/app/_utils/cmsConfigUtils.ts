@@ -2,7 +2,28 @@ import {
   CMSFieldOption,
   CMSFieldConfig,
   CMSCollectionConfig,
+  CMSConfig,
 } from '@/types/cmsConfig'
+
+import configJson from '@/data/cmsConfigSchema.json'
+
+const config: CMSConfig = configJson as CMSConfig
+
+export function getCollectionConfig(collectionName: string): {
+  fields: CMSFieldConfig[]
+} {
+  const collection = config.collections.find(
+    (col) => col.name === collectionName
+  )
+
+  if (!collection || !collection?.fields) {
+    throw new Error(
+      `${collectionName} collection or fields not found in CMS config`
+    )
+  }
+
+  return { fields: collection.fields as CMSFieldConfig[] }
+}
 
 export function getCMSCollection(
   collections: CMSCollectionConfig[] = [],

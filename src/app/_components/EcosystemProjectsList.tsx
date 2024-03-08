@@ -12,16 +12,13 @@ export function EcosystemProjectsList({
   className,
 }: ProjectsListProps) {
   if (projects.length === 0) {
-    return <p>No projects available.</p>
+    return <p>No projects found.</p>
   }
 
   return (
     <ul className={className}>
-      {projects.map((ecosystemProject) => (
-        <EcosystemProjectListItem
-          key={ecosystemProject.slug}
-          project={ecosystemProject}
-        />
+      {projects.map((project) => (
+        <EcosystemProjectListItem key={project.slug} project={project} />
       ))}
     </ul>
   )

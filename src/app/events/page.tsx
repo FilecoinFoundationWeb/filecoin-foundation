@@ -5,7 +5,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getEventData } from '@/utils/getEventData'
+import { getEventsData } from '@/utils/getEventData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/events.md'
@@ -14,10 +14,9 @@ import { BASE_URL } from '@/_constants/siteMetadata'
 import { PATHS } from '@/constants/paths'
 
 const { title, description, seo } = attributes
-
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
-const events = getEventData(PATHS.EVENTS.entriesContentPath as string)
+const events = getEventsData()
 
 const eventsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
