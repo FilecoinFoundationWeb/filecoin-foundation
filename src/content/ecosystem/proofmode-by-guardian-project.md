@@ -7,14 +7,16 @@ published-on: "2024-02-27T19:57:29.861Z"
 featured: false
 description: "Open-source mobile camera app, toolkit and protocol that adds verifiable digital proof to photos and video at the point of capture."
 topic:
-  value: cms/ecosystem-topics/media-entertainment.md
-  label: Media & Entertainment
+  - value: media-entertainment
+    label: Media & Entertainment
 tags:
-  - cms/ecosystem-tags/photo-video.md
-  - cms/ecosystem-tags/dapp.md
+  - value: photo-video
+    label: Photo & Video
+  - value: dapp
+  - label: DApp
 tech:
-  - cms/ecosystem-technology/filecoin.md
-  - cms/ecosystem-technology/ipfs.md
+  - filecoin
+  - ipfs
 image:
   url: /assets/images/proofmode.png
   alt: ProofMode by Guardian Project

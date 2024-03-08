@@ -19,9 +19,9 @@ image:
     /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
   alt: null
 recommended-posts:
-  - content/blog/applications-are-open-for-filecoin-plus-notary-elections.md
-  - content/blog/announcing-the-venushub-platform.md
-  - content/blog/announcing-the-starling-lab.md
+  - src/content/blog/applications-are-open-for-filecoin-plus-notary-elections.md
+  - src/content/blog/announcing-the-venushub-platform.md
+  - src/content/blog/announcing-the-starling-lab.md
 metadata: null
 ---
 
