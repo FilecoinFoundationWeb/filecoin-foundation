@@ -10,8 +10,6 @@ type Topic = {
   value: string
 }
 
-export type LinkDataKey = 'website' | 'repo' | 'twitter' | 'caseStudy'
-
 export type EcosystemProjectData = {
   title: string
   slug: string
@@ -29,7 +27,7 @@ export type EcosystemProjectData = {
   }
   website: string
   content?: string
-  caseStudy?: string
+  featuredContent?: string
   repo?: string
   twitter?: string
   videoUrl?: string

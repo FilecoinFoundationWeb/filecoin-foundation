@@ -8,7 +8,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
@@ -22,9 +22,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
 
-const ecosystemProjects = getEcosystemProjectData(
-  PATHS.ECOSYSTEM.entriesContentPath as string
-)
+const ecosystemProjects = getEcosystemProjectsData()
 
 const ecosystemPageBaseData = generateWebPageStructuredData({
   title: seo.title,

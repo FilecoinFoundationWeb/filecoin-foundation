@@ -2,15 +2,11 @@ import { Badge } from '@/components/Badge'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
-
-import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { PATHS } from '@/constants/paths'
 
-const ecosystemProjects: EcosystemProjectData[] = legacyGetMarkdownData(
-  PATHS.ECOSYSTEM.entriesContentPath as string
-)
+const ecosystemProjects = getEcosystemProjectsData()
 
 const featuredEcosystemProjects = ecosystemProjects.filter(
   (project) => project.featured

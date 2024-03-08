@@ -12,7 +12,7 @@ export function EcosystemProjectListItem({
 }: {
   project: EcosystemProjectData
 }) {
-  const { title, slug, topic, image, description } = project
+  const { slug, image, topic, title, description } = project
 
   return (
     <li key={slug} className="flex flex-col justify-between ml-0">
@@ -28,10 +28,13 @@ export function EcosystemProjectListItem({
             />
           )}
         </div>
+
         <span className="inline-block mb-3">{topic.label}</span>
+
         <Heading tag="h3" variant="lg">
           {title}
         </Heading>
+
         <p>{description}</p>
       </div>
 

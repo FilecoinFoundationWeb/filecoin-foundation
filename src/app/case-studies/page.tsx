@@ -4,10 +4,8 @@ import { CaseStudiesList } from '@/components/CaseStudiesList'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { CaseStudyData } from '@/types/caseStudyTypes'
-
 import { createMetadata } from '@/utils/createMetadata'
-import { getCaseStudiesData } from '@/utils/getCaseStudiesData'
+import { getCaseStudiesData } from '@/utils/getCaseStudyData'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -19,12 +17,9 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { title, description, seo } = attributes
-
 export const metadata = createMetadata(seo, PATHS.CASE_STUDIES.path)
 
-const caseStudies: CaseStudyData[] = getCaseStudiesData(
-  PATHS.CASE_STUDIES.entriesContentPath as string
-)
+const caseStudies = getCaseStudiesData()
 
 const caseStudiesPageBaseData = generateWebPageStructuredData({
   title: seo.title,

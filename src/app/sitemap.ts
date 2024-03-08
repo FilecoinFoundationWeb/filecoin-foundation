@@ -1,8 +1,8 @@
 import { BlogPostData } from '@/types/blogPostTypes'
 
-import { getCaseStudiesData } from '@/utils/getCaseStudiesData'
-import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
-import { getEventData } from '@/utils/getEventData'
+import { getCaseStudiesData } from '@/utils/getCaseStudyData'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+import { getEventsData } from '@/utils/getEventData'
 import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
@@ -36,24 +36,19 @@ export default function sitemap() {
   )
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
-  const caseStudies = getCaseStudiesData(
-    PATHS.CASE_STUDIES.entriesContentPath as string
-  )
+  const caseStudies = getCaseStudiesData()
   const dynamicCaseStudyRoutes = generateDynamicRoutes(
     caseStudies,
     PATHS.CASE_STUDIES.path
   )
 
-  const ecosystemProjects = getEcosystemProjectData(
-    PATHS.ECOSYSTEM.entriesContentPath as string
-  )
-
+  const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
     ecosystemProjects,
     PATHS.ECOSYSTEM.path
   )
 
-  const events = getEventData(PATHS.EVENTS.entriesContentPath as string)
+  const events = getEventsData()
   const dynamicEventRoutes = generateDynamicRoutes(events, PATHS.EVENTS.path)
 
   return [

@@ -1,7 +1,3 @@
-import fs from 'fs'
-import path from 'path'
-
-import matter from 'gray-matter'
 import { Article, WithContext } from 'schema-dts'
 
 import { Heading } from '@/components/Heading'
@@ -9,7 +5,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CaseStudyData } from '@/types/caseStudyTypes'
 
-import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
+import { getCaseStudyData } from '@/utils/getCaseStudyData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { PATHS } from '@/constants/paths'
@@ -20,44 +16,6 @@ type CaseStudyProps = {
     slug: string
   }
 }
-
-function getCaseStudyData(slug: string): CaseStudyData {
-  const filePath = path.join(
-    process.cwd(),
-    'src',
-    'content',
-    'case-studies',
-    `${slug}.md`
-  )
-
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`File not found for slug: ${slug}`)
-  }
-
-  const fileContents = fs.readFileSync(filePath, 'utf8')
-  const { data } = matter(fileContents)
-
-  if (!data.title) {
-    throw new Error('Missing required case study data fields')
-  }
-
-  return {
-    title: data.title,
-    slug,
-    description: data.description,
-  }
-}
-
-export async function generateMetadata({ params }: CaseStudyProps) {
-  const { slug } = params
-  const data = getCaseStudyData(slug)
-
-  return generateDynamicContentMetadata({
-    basePath: PATHS.CASE_STUDIES.path,
-    data,
-  })
-}
-
 function createCaseStudyPostStructuredData(
   data: CaseStudyData
 ): WithContext<Article> {
@@ -84,7 +42,7 @@ function createCaseStudyPostStructuredData(
 export default function CaseStudy({ params }: CaseStudyProps) {
   const { slug } = params
   const data = getCaseStudyData(slug)
-  const { title } = data
+  const { title, description } = data
 
   return (
     <>
@@ -97,7 +55,7 @@ export default function CaseStudy({ params }: CaseStudyProps) {
         </Heading>
       </header>
 
-      <p>{data.description}</p>
+      {description && <p>{description}</p>}
     </>
   )
 }
