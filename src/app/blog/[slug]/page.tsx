@@ -1,9 +1,5 @@
-import fs from 'fs'
-import path from 'path'
-
 import Image from 'next/image'
 
-import matter from 'gray-matter'
 import { BlogPosting, WithContext } from 'schema-dts'
 
 import { Heading } from '@/components/Heading'
@@ -14,6 +10,7 @@ import { BlogPostData } from '@/types/blogPostTypes'
 
 import { formatDate } from '@/utils/formatDate'
 import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
+import { getBlogPostData } from '@/utils/getBlogPostData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { PATHS } from '@/constants/paths'
@@ -25,28 +22,9 @@ type BlogPostProps = {
   }
 }
 
-function getPostData(slug: string): { content: string; data: BlogPostData } {
-  const filePath = path.join(
-    process.cwd(),
-    'src',
-    'content',
-    'blog',
-    `${slug}.md`
-  )
-
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`File not found for slug: ${slug}`)
-  }
-
-  const fileContents = fs.readFileSync(filePath, 'utf8')
-  const { content, data } = matter(fileContents)
-
-  return { content, data: data as BlogPostData }
-}
-
 export async function generateMetadata({ params }: BlogPostProps) {
   const { slug } = params
-  const { data } = getPostData(slug)
+  const data = getBlogPostData(slug)
 
   return generateDynamicContentMetadata({
     basePath: PATHS.BLOG.path,
@@ -57,21 +35,23 @@ export async function generateMetadata({ params }: BlogPostProps) {
 function createBlogPostStructuredData(
   data: BlogPostData
 ): WithContext<BlogPosting> {
+  const { title, description, image, publishedOn, updatedOn, slug } = data
+
   return {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: data.title,
-    description: data.f_description,
-    image: data.f_image.url || '',
+    headline: title,
+    description: description,
+    image: image?.url,
     author: {
       '@type': 'Person',
-      name: data.f_author || ORGANIZATION_NAME,
+      name: ORGANIZATION_NAME,
     },
-    datePublished: data.date,
-    dateModified: data['updated-on'] || data.date,
+    datePublished: publishedOn,
+    dateModified: updatedOn || publishedOn,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.BLOG.path}/${data.slug}`,
+      '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,
     },
     ...(typeof baseOrganizationSchema === 'object'
       ? { publisher: baseOrganizationSchema }
@@ -81,7 +61,8 @@ function createBlogPostStructuredData(
 
 export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = params
-  const { content, data } = getPostData(slug)
+  const data = getBlogPostData(slug)
+  const { title, publishedOn, image, content } = data
 
   return (
     <>
@@ -89,21 +70,23 @@ export default function BlogPost({ params }: BlogPostProps) {
         structuredData={createBlogPostStructuredData(data)}
       />
       <header>
-        <span className="block">{formatDate(data.date, 'blog')}</span>
+        {publishedOn && (
+          <span className="block">{formatDate(publishedOn, 'blog')}</span>
+        )}
         <Heading tag="h1" variant="2xl">
-          {data.title}
+          {title}
         </Heading>
         <Image
           priority
-          src={data.f_image.url}
-          alt={data.f_image.alt || ''}
+          src={image.url}
+          alt={image.alt}
           width={770}
           height={440}
           className="block h-auto object-contain"
         />
       </header>
 
-      <MarkdownContent>{content}</MarkdownContent>
+      {content && <MarkdownContent>{content}</MarkdownContent>}
     </>
   )
 }
