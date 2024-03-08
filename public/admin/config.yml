@@ -162,10 +162,6 @@ collections:
     extension: "md"
     slug: "{{slug}}"
     fields:
-      - name: "body"
-        label: "Content"
-        widget: "markdown"
-        required: false
       - name: "title"
         label: "Title"
         widget: "string"
@@ -182,60 +178,45 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-      - name: "f_author"
-        label: "Author"
-        widget: "string"
-        required: false
-      - name: "f_description"
-        label: "Description"
-        widget: "text"
-        required: true
-      - name: "f_featured"
+      - name: "featured"
         label: "Featured"
         widget: "boolean"
         required: false
         default: false
-      - name: "f_image"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+        required: true
+      - name: "image"
         label: "Image"
         widget: "object"
         required: true
         fields:
           - name: "url"
-            label: "Image"
+            label: "URL"
             widget: "image"
             required: true
             allow_multiple: false
           - name: "alt"
-            label: "alt"
+            label: "Alt Text"
             widget: "string"
             required: false
-      - name: "f_recommended-posts"
+      - name: "content"
+        label: "Content"
+        widget: "markdown"
+        required: false
+      - name: "recommended-posts"
         label: "Recommended Posts"
         widget: "relation"
         required: false
         collection: "blog"
-        value_field: "cms/blog/{{slug}}.md"
+        value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
           - "name"
         display_fields:
           - "title"
         multiple: true
-      - name: "f_post-date"
-        label: "Post Date"
-        widget: "datetime"
-        required: true
-      - name: "tags"
-        label: "Tags"
-        widget: "hidden"
-        default: "blog"
-      - name: "layout"
-        label: "Layout"
-        widget: "hidden"
-        default: "[blog].html"
-      - name: "date"
-        label: "Publish Date"
-        widget: "datetime"
       - *meta_config
 
   - name: "case_studies"
@@ -296,7 +277,7 @@ collections:
             widget: "string"
             required: true
           - name: "alt"
-            label: "Alt text"
+            label: "Alt Text"
             widget: "string"
             required: true
       - *meta_config
@@ -568,7 +549,7 @@ collections:
             widget: "image"
             required: true
           - name: "alt"
-            label: "Alt text"
+            label: "Alt Text"
             widget: "string"
             required: true
       - name: "event-type"
