@@ -1,22 +1,20 @@
 ---
-f_featured: false
-f_post-date: '2021-05-27T00:00:00.000Z'
+featured: false
 title: Filecoin Foundation Joins Blockchain for Europe
-f_description: >-
+description: >-
   We are excited to announce that the Filecoin Foundation has been accepted as a
   member of Blockchain for Europe (BC4EU), a leading voice on EU blockchain
   policy.
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423ad9ef619d9dd2b60e6d_0-yilkincrhittd7ub.png
   alt: null
 slug: filecoin-foundation-joins-blockchain-for-europe
-updated-on: '2023-04-21T07:27:21.334Z'
-created-on: '2023-04-21T07:27:21.334Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:27:21.334Z"
+created-on: "2023-04-21T07:27:21.334Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 We are excited to announce that the Filecoin Foundation has been accepted as a member of [Blockchain for Europe](https://www.blockchain4europe.eu/) (BC4EU), a leading voice on EU blockchain policy.

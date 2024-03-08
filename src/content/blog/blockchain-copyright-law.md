@@ -1,20 +1,17 @@
 ---
 title: Blockchain & Copyright Law
+slug: blockchain-copyright-law
 created-on: 2023-04-21T07:26:17.674Z
 updated-on: 2023-04-21T07:26:17.674Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: FF Board Chair Marta Belcher and Advisor Kristin Smith discuss
+featured: false
+description: FF Board Chair Marta Belcher and Advisor Kristin Smith discuss
   use cases for blockchain in art and music
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-30.png
   alt: null
-f_post-date: 2022-02-25T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: blockchain-copyright-law
-date: 2023-10-20T15:58:55.460Z
+recommended-posts: []
+metadata: null
 ---
 
 _FF Board Chair Marta Belcher and Advisor Kristin Smith discuss use cases for blockchain in art and music_

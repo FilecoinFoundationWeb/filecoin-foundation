@@ -27,8 +27,10 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
   const sortedPosts = useMemo(() => {
     return [...posts].sort((a, b) => {
-      const dateA = new Date(a.date).getTime()
-      const dateB = new Date(b.date).getTime()
+      if (!a.publishedOn || !b.publishedOn) return 0
+
+      const dateA = new Date(a.publishedOn).getTime()
+      const dateB = new Date(b.publishedOn).getTime()
       return dateB - dateA
     })
   }, [posts])
@@ -57,10 +59,10 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       <ul>
         {filteredPosts.slice(0, visibleCount).map((post) => (
           <li key={post.slug}>
-            {post.f_image.url && (
+            {post.image.url && (
               <Image
-                src={post.f_image.url}
-                alt={post.f_image.alt || post.title}
+                src={post.image.url}
+                alt={post.image.alt}
                 width={282}
                 height={141}
                 className="object-cover"
@@ -69,8 +71,12 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
             <Heading tag="h3" variant="lg">
               {post.title}
             </Heading>
-            <p>{post.f_description}</p>
-            <span className="block">{formatDate(post.date, 'blog')}</span>
+            <p>{post.description}</p>
+            {post.publishedOn && (
+              <span className="block">
+                {formatDate(post.publishedOn, 'blog')}
+              </span>
+            )}
             <TextLink href={`${PATHS.BLOG.path}/${post.slug}`}>
               Read More
             </TextLink>

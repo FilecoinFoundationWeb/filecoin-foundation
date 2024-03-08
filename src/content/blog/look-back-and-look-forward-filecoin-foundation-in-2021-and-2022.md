@@ -1,21 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2022-02-23T00:00:00.000Z'
-title: 'Look Back and Look Forward: Filecoin Foundation in 2021 and 2022'
-f_description: >-
+featured: false
+title: "Look Back and Look Forward: Filecoin Foundation in 2021 and 2022"
+description: >-
   Filecoin Foundation experienced tremendous growth in 2021, both in size and
   scope.
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423b078d1be7013acecd8c_0-wrv5zur8bytkshra.png
   alt: null
 slug: look-back-and-look-forward-filecoin-foundation-in-2021-and-2022
-updated-on: '2023-04-21T07:28:07.363Z'
-created-on: '2023-04-21T07:28:07.363Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:28:07.363Z"
+created-on: "2023-04-21T07:28:07.363Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 Filecoin Foundation experienced tremendous growth in 2021, both in size and scope. Our team grew nine-fold in 2021, to more than 30 full-time employees, with eleven more employees joining in Q1 2022! We boosted the number of grants awarded year-over-year by 69%. And we drove several programs critical to the growth of the Filecoin network and the overall success of the network, including the Filecoin Improvement Proposals process, Filecoin Plus, the developer grants program, and Filecoin security audits. Below, you’ll learn more about Filecoin Foundation’s work in 2021 and what’s in store for 2022.

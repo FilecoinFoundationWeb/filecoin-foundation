@@ -3,21 +3,19 @@ title: Meet Orbit Community Program Ambassadors
 created-on: 2023-04-21T07:28:14.580Z
 updated-on: 2023-05-03T11:28:13.932Z
 published-on: 2023-05-03T12:47:09.568Z
-f_author: Filecoin Foundation
-f_description: Though geographically distant, Berlin, Dar es Salaam, Lagos, and
+description: Though geographically distant, Berlin, Dar es Salaam, Lagos, and
   Nairobi, are cities unified through the Filecoin Orbit Community Program, a
   program powered by Filecoin Foundation and Protocol Labs to amplify the voice
   of the Filecoin, IPFS, and libp2p communities.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/0713-orbitcommunity.png
   alt: null
-f_post-date: 2022-07-14T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: meet-orbit-community-program-ambassadors
-date: 2023-10-06T14:52:25.696Z
+recommended-posts: []
+metadata: null
 ---
+
 Though geographically distant, Berlin, Dar es Salaam, Lagos, and Nairobi, are cities unified through the [Filecoin Orbit Community Program](https://orbitcommunity.filecoin.io/), a program powered by Filecoin Foundation and Protocol Labs to amplify the voice of the Filecoin, IPFS, and libp2p communities.
 
 Filecoin Orbit Ambassadors work to organize events, create content around their work, and activate their local communities to ensure that anyone ready to get involved with the Filecoin network has access to educational resources and support to thrive. In just 4 months, our Filecoin Orbit Community members organized 20 events and 3 conferences in 12 cities, totaling over 3,000 participants.

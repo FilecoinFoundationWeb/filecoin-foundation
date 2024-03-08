@@ -1,21 +1,18 @@
 ---
 title: FIL Toronto 2022 Recap
+slug: fil-toronto-2022-recap
 created-on: 2023-04-21T07:26:59.147Z
 updated-on: 2023-04-21T07:26:59.147Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: "Filecoin Foundation "
-f_description: Earlier this month, the Filecoin community convened for the
+featured: false
+description: Earlier this month, the Filecoin community convened for the
   first-ever FIL Toronto. From July 4–6, attendees gathered to discuss new
   features, partner tools, and other developments in the Filecoin ecosystem.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-07.png
   alt: null
-f_post-date: 2022-07-22T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: fil-toronto-2022-recap
-date: 2023-10-20T18:28:05.521Z
+recommended-posts: []
+metadata: null
 ---
 
 Earlier this month, the Filecoin community convened for the first-ever [FIL Toronto](https://fil-toronto.com/). From July 4–6, attendees gathered to discuss new features, partner tools, and other developments in the Filecoin ecosystem.
@@ -38,9 +35,9 @@ Juan also provided information on how developers can plug into the FVM, includin
 
 Filecoin Foundation’s Erin O’Connor shared information on the different types of grants available to developers working on the Filecoin network. There are grants for projects at every stage of development including:
 
-*   Next Step Microgrants — these are grants of US$5,000 (paid in FIL) designed to support “next step” development in early stage projects that are built with Filecoin, IPFS or related technologies.
-*   Open Grants — these are allocations in varying amounts larger than US$5,000 that support novel and exciting ideas that advance the greater Filecoin ecosystem.
-*   Request for Proposals — these grants are intended for teams that want to complete pre-identified work specified in a proposal. The amount and timeline will vary according to the work being completed.
+- Next Step Microgrants — these are grants of US$5,000 (paid in FIL) designed to support “next step” development in early stage projects that are built with Filecoin, IPFS or related technologies.
+- Open Grants — these are allocations in varying amounts larger than US$5,000 that support novel and exciting ideas that advance the greater Filecoin ecosystem.
+- Request for Proposals — these grants are intended for teams that want to complete pre-identified work specified in a proposal. The amount and timeline will vary according to the work being completed.
 
 **Storage, Computing, and Beyond for Web3**
 

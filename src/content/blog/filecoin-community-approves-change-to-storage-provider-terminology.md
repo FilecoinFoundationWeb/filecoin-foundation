@@ -3,19 +3,16 @@ title: Filecoin Community Approves Change to Storage Provider Terminology
 created-on: 2023-04-21T07:27:01.201Z
 updated-on: 2023-04-21T07:27:01.201Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Today, the Filecoin community approved Filecoin Improvement
+description: Today, the Filecoin community approved Filecoin Improvement
   Proposal 18 (FIP-0018), which reframes how we message around the storage
   market and those who participate in it as storage providers.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/fip18.png
   alt: null
-f_post-date: 2021-08-20T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: filecoin-community-approves-change-to-storage-provider-terminology
-date: 2023-10-18T19:38:53.916Z
+recommended-posts: []
+metadata: null
 ---
 
 Today, the Filecoin community approved [Filecoin Improvement Proposal 18 (FIP-0018)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0018.md), which reframes how we message around the storage market and those who participate in it as storage providers. The decision was made after several weeks of soliciting input and feedback on FIP-0018 from across the Filecoin community.
@@ -24,8 +21,7 @@ Today, the Filecoin community approved [Filecoin Improvement Proposal 18 (FIP-00
 
 This change will be implemented across Filecoin docs sites, as well as Github, the Filecoin Foundation’s owned media channels, and other ecosystem tools. We encourage the Filecoin community to adopt and help communicate these new changes as well.
 
-Change Motivation
-=================
+# Change Motivation
 
 Filecoin’s long-term vision has always been to create a decentralized, efficient and robust foundation for humanity’s most valuable data. To support this vision, the network relies on community members to commit storage capacity to the network. With Filecoin’s rapid storage growth and adoption of Web3 applications, the community and the extended ecosystem members are requesting a branding change in how to position these critical network participants. The nomenclature change from “miner” to “storage provider” has three main benefits:
 

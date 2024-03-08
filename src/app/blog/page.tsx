@@ -3,10 +3,8 @@ import { WebPage, WithContext } from 'schema-dts'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { BlogPostData } from '@/types/blogPostTypes'
-
 import { createMetadata } from '@/utils/createMetadata'
-import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
+import { getBlogPostsData } from '@/utils/getBlogPostData'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -23,9 +21,7 @@ const { title, description, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
-const posts: BlogPostData[] = legacyGetMarkdownData(
-  PATHS.BLOG.entriesContentPath as string
-)
+const posts = getBlogPostsData()
 
 const blogPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -44,8 +40,8 @@ const blogPageStructuredData: WithContext<WebPage> = {
       item: {
         '@type': 'BlogPosting',
         name: post.title,
-        description: post.f_description,
-        image: post.f_image ? [post.f_image.url] : undefined,
+        description: post.description,
+        image: post.image?.url,
         url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
       },
     })),

@@ -1,21 +1,18 @@
 ---
 title: BBC’s The Real Story Explores the Promise of Cryptocurrency
+slug: bbc-s-the-real-story-explores-the-promise-of-cryptocurrency
 created-on: 2023-04-21T07:26:14.098Z
 updated-on: 2023-04-21T07:26:14.098Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Filecoin Foundation Board Chair Marta Belcher joined the BBC’s
+featured: false
+description: Filecoin Foundation Board Chair Marta Belcher joined the BBC’s
   Ritula Shah on The Real Story to discuss the promise of Filecoin and the
   future of cryptocurrency.
-f_featured: false
-f_image:
+image:
   url: /assets/images/64423a958d1be740f4ce6485_1-idr5jnytk_i2rab2ggn9uq.png
   alt: null
-f_post-date: 2021-02-06T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: bbc-s-the-real-story-explores-the-promise-of-cryptocurrency
-date: 2023-10-06T13:32:57.483Z
+recommended-posts: []
+metadata: null
 ---
 
 Filecoin Foundation Board Chair Marta Belcher joined the BBC’s Ritula Shah on [_The Real Story_](https://www.bbc.co.uk/sounds/play/w3cszcp7) to discuss the promise of Filecoin and the future of cryptocurrency.

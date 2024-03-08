@@ -1,31 +1,29 @@
 ---
-f_featured: false
-f_post-date: '2022-03-24T00:00:00.000Z'
 title: Storage Company Ewesion Leverages Filecoin Network for Data Preservation
-f_description: >-
+slug: storage-company-ewesion-leverages-filecoin-network-for-data-preservation
+created-on: "2023-04-21T07:31:57.523Z"
+updated-on: "2023-04-21T07:31:57.523Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   Founded in 2019 by Benny Li, Ewesion is a platform for creative artists that
   serves everyone from large and medium-sized enterprises to media and
   individual users.
-f_author: Filecoin Foundation
-slug: storage-company-ewesion-leverages-filecoin-network-for-data-preservation
-f_image:
+image:
   url: >-
     /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
   alt: null
-updated-on: '2023-04-21T07:31:57.523Z'
-created-on: '2023-04-21T07:31:57.523Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 **Key highlights:**
 
-*   [Beijing Yiweishi Network Technology Company, Ltd.](http://www.ewesion.com/) (commonly referred to as Ewesion) is one of China’s fastest-growing online hosts of photographs, illustrations, and vector files.
-*   Ewesion’s library currently uses around 1EB of storage in the public cloud. That number is set to increase even further as the company expands into audio and video capabilities.
-*   Ewesion is working closely with [ByteBase](https://www.bytebase.cn/#/), a decentralized storage provider in the Filecoin network, to leverage the power of both Filecoin’s blockchain-based technology and its cost-effective storage solution.
-*   The benefits Ewesion is seeing by adopting the Filecoin network include lower-cost for storage while maintaining ease of image retrieval for customers; security and peace of mind for its business partners (photographers, illustrators, and designers) in terms of copyright and data ownership challenges; and longer-term storage solutions for the current client base.
-*   Ewesion has found the Filecoin network to be “a very multifunctional solution” for its business and plans to utilize the network more as it reaches new markets such as audio and video.
+- [Beijing Yiweishi Network Technology Company, Ltd.](http://www.ewesion.com/) (commonly referred to as Ewesion) is one of China’s fastest-growing online hosts of photographs, illustrations, and vector files.
+- Ewesion’s library currently uses around 1EB of storage in the public cloud. That number is set to increase even further as the company expands into audio and video capabilities.
+- Ewesion is working closely with [ByteBase](https://www.bytebase.cn/#/), a decentralized storage provider in the Filecoin network, to leverage the power of both Filecoin’s blockchain-based technology and its cost-effective storage solution.
+- The benefits Ewesion is seeing by adopting the Filecoin network include lower-cost for storage while maintaining ease of image retrieval for customers; security and peace of mind for its business partners (photographers, illustrators, and designers) in terms of copyright and data ownership challenges; and longer-term storage solutions for the current client base.
+- Ewesion has found the Filecoin network to be “a very multifunctional solution” for its business and plans to utilize the network more as it reaches new markets such as audio and video.
 
 **Fast Growth & Expanding Storage Needs**
 

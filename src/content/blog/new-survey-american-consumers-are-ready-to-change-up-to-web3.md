@@ -1,22 +1,20 @@
 ---
-f_featured: false
-f_post-date: '2022-11-01T00:00:00.000Z'
-title: 'New Survey: American Consumers Are Ready to Change Up to Web3'
-f_description: >-
+title: "New Survey: American Consumers Are Ready to Change Up to Web3"
+slug: new-survey-american-consumers-are-ready-to-change-up-to-web3
+created-on: "2023-04-21T07:31:36.890Z"
+updated-on: "2023-04-21T07:31:36.890Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   The results of a new survey of American consumers from the Filecoin Foundation
   reveal that — while Americans trust the internet’s overall resilience, they
-  don’t like how their data is managed by the current gatekeepers. 
-f_author: Filecoin Foundation
-slug: new-survey-american-consumers-are-ready-to-change-up-to-web3
-f_image:
+  don’t like how their data is managed by the current gatekeepers.
+image:
   url: >-
     /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
   alt: null
-updated-on: '2023-04-21T07:31:36.890Z'
-created-on: '2023-04-21T07:31:36.890Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 The results of a new survey of American consumers from the Filecoin Foundation reveal that — while Americans trust the internet’s overall resilience, they don’t like how their data is managed by the current gatekeepers. In the survey results, they speak of precious memories lost online, worry about losing control of their personal information, and that they see the benefits of a decentralized internet. The survey provides insights into Americans’ perceptions of and experience with digital storage, today’s centralized web and decentralized alternatives — including Web3 technologies such as NFTs, metaverse, and cryptocurrencies.
@@ -27,24 +25,23 @@ Additionally, the findings indicate widespread data loss and lack of control ove
 
 **![](/assets/images/64423bd84574c35487fb4b5b_1-vc6fomdajgchg3me1iyhia.webp)Americans don’t feel in control of their own data:**
 
-*   83% of Americans want technology companies to do more to enable them the ability to control how their personal information is used.
-    
-*   Over three-quarters (76%) try to share as little personal information or data as possible online to have more control of their data.
-    
-*   65% do not feel in control of how the information they share with websites and companies is used.
-    
-*   61% feel they have lost control of what happens to their personal information online.
-    
-    ![](/assets/images/64423bd84574c33a49fb4b5a_1-xsdo4dupzzkp8uwbvqyymg.webp)
-    
+- 83% of Americans want technology companies to do more to enable them the ability to control how their personal information is used.
+
+- Over three-quarters (76%) try to share as little personal information or data as possible online to have more control of their data.
+
+- 65% do not feel in control of how the information they share with websites and companies is used.
+
+- 61% feel they have lost control of what happens to their personal information online.
+
+  ![](/assets/images/64423bd84574c33a49fb4b5a_1-xsdo4dupzzkp8uwbvqyymg.webp)
 
 **In a future world where Americans could experience the internet differently, they would like the ability to:**
 
-*   Safely store information (61%).
-*   Choose exactly what information they share with others online (58%).
-*   Choose exactly how long others can keep their information (50%).
-*   Report problems, make fixes, and create new tools that make the internet better for everyone (44%).
-*   Experience fewer disruptions caused by outages or platforms being down (42%).
+- Safely store information (61%).
+- Choose exactly what information they share with others online (58%).
+- Choose exactly how long others can keep their information (50%).
+- Report problems, make fixes, and create new tools that make the internet better for everyone (44%).
+- Experience fewer disruptions caused by outages or platforms being down (42%).
 
 **Americans are open to alternative methods for storing and accessing their data:**
 

@@ -3,18 +3,15 @@ title: Introducing the Filecoin Storage Provider Incubation Center
 created-on: 2023-04-21T07:27:50.623Z
 updated-on: 2023-04-21T07:27:50.623Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: "The Filecoin Foundation is committed to growing and supporting
+description: "The Filecoin Foundation is committed to growing and supporting
   the Filecoin ecosystem — miners, developers, and storage clients alike. "
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/image-c-21.png
   alt: null
-f_post-date: 2021-07-07T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: introducing-the-filecoin-storage-provider-incubation-center
-date: 2023-10-20T17:23:51.799Z
+recommended-posts: []
+metadata: null
 ---
 
 The Filecoin Foundation is committed to growing and supporting the Filecoin ecosystem — miners, developers, and storage clients alike. To date, more than 2,500 miners participate in the Filecoin economy, collectively contributing more than [7 EiB](https://filscan.io/) of storage capacity.
@@ -29,8 +26,8 @@ The Storage Provider Incubation Center brings together the resources of the File
 
 The idea is to make it simple and convenient for small miners to join the network by lowering the barrier to entry. There are two ways for miners to participate:
 
-*   **The Filecoin Storage Provider Incubation Center Program** aims to bring more small miners to the Filecoin network with financial support from the Filecoin Foundation and technical support from the Venus Team.
-*   **The Venus Master Fellowship Program** is a sub-project of the Filecoin Storage Provider Incubation Center designed to incubate teams or individuals capable of providing the service of the Filecoin distributed mining pool service based on Venus to improve the productivity of miners and the fault tolerance of the Filecoin network.
+- **The Filecoin Storage Provider Incubation Center Program** aims to bring more small miners to the Filecoin network with financial support from the Filecoin Foundation and technical support from the Venus Team.
+- **The Venus Master Fellowship Program** is a sub-project of the Filecoin Storage Provider Incubation Center designed to incubate teams or individuals capable of providing the service of the Filecoin distributed mining pool service based on Venus to improve the productivity of miners and the fault tolerance of the Filecoin network.
 
 Maintained by the IPFS Force community, Venus is one of four implementations in development on the Filecoin ecosystem. Venus is unique because it supports a distributed mining pool, which is a cost-effective way to reduce the overall cost of hardware maintenance and save time when mining on the Filecoin network. Thus, it can bring more miners to the Filecoin network with lower barriers to entry.
 
@@ -48,12 +45,12 @@ To join the Venus Master Fellowship Program, miners must continuously contribute
 
 Specifically, Venus Masters must be willing to:
 
-*   Provide services to at least five miners; services include helping miners connect to the incubator’s mining pool with venus-sealer/wallet, and providing more storage resources on the Filecoin network.
-*   Serve in at least one full phase of the project.
-*   Sync with miners in the mining pool during debugging or version upgrades to make necessary preparations after receiving the notification.
-*   Coordinate testing with the Venus Dev team to verify the quality of service during the version upgrades.
-*   Provide feedback on the tools/implementations they use to ensure the continuous improvement of Venus miners’ experience.
-*   Provide feedback and suggestions on productivity and load balance, such as energy consumption, cost efficiency, etc.
+- Provide services to at least five miners; services include helping miners connect to the incubator’s mining pool with venus-sealer/wallet, and providing more storage resources on the Filecoin network.
+- Serve in at least one full phase of the project.
+- Sync with miners in the mining pool during debugging or version upgrades to make necessary preparations after receiving the notification.
+- Coordinate testing with the Venus Dev team to verify the quality of service during the version upgrades.
+- Provide feedback on the tools/implementations they use to ensure the continuous improvement of Venus miners’ experience.
+- Provide feedback and suggestions on productivity and load balance, such as energy consumption, cost efficiency, etc.
 
 In exchange for their work, Masters will receive access to a prize pool of more than 1,000 FIL tokens, which will be distributed based on the length and quality of service. At the end of each phase, Masters can choose to continue their work by applying to be a part of the next phase.
 

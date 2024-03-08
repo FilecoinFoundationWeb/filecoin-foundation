@@ -3,21 +3,19 @@ title: Dev Grant Spotlight — Ukraine Art Collective
 created-on: 2023-04-21T07:26:48.887Z
 updated-on: 2023-04-21T07:26:48.887Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Ukraine Art Collective’s (UkraineArtCo) mission is to unite
+description: Ukraine Art Collective’s (UkraineArtCo) mission is to unite
   artists around the world to contribute their creative talents to support the
   Ukrainian people in their fight for freedom.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
   alt: null
-f_post-date: 2022-05-11T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: dev-grant-spotlight-ukraine-art-collective
-date: 2023-10-18T18:20:34.290Z
+recommended-posts: []
+metadata: null
 ---
-*This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s* *[Dev Grants program](https://fil.org/grants/).*
+
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ _[Dev Grants program](https://fil.org/grants/)._
 
 [Ukraine Art Collective](https://ukraineartco.org/)’s (UkraineArtCo) mission is to unite artists around the world to contribute their creative talents to support the Ukrainian people in their fight for freedom. Founded in early March 2022, shortly after the start of the Russian invasion, the group deployed its fundraising platform using IPFS and Filecoin to create, mint, and sell NFTs. The NFTs are based on physical and digital art contributed by the art community, such as paintings, music, photography, mixed media, and more. Proceeds from sales of the NFTs on Rarible and OpenSea have been donated to [Razom for Ukraine](https://razomforukraine.org/about-us/), a nonprofit providing critical humanitarian war relief.
 
@@ -39,4 +37,4 @@ Longer-term, the group is looking to establish blockchain-native nonprofit organ
 
 To learn more about [UkraineArtCo](https://ukraineartco.org/)’s efforts, you can find them on [Instagram](https://www.instagram.com/UkraineArtCo/), [Twitter](https://twitter.com/UkraineArtCo), [TikTok](https://www.tiktok.com/@UkraineArtCo), [Facebook](https://www.facebook.com/UkraineArtCo), and [Discord](https://discord.com/invite/5T6NTEQSq5).
 
-*The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for* *[Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)* *and* *[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants).*
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ _[Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)_ _and_ _[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)._

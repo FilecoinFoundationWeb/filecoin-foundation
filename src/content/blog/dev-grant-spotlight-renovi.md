@@ -3,21 +3,19 @@ title: Dev Grant Spotlight — Renovi
 created-on: 2023-04-21T07:26:46.825Z
 updated-on: 2023-04-21T07:26:46.825Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: If you build it they will come. That’s the aim of Renovi, a
+description: If you build it they will come. That’s the aim of Renovi, a
   metaverse marketplace and design studio that works with global brands and
   businesses to create, develop, and implement their Web3 strategies.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/image-c-11.png
   alt: null
-f_post-date: 2022-07-20T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: dev-grant-spotlight-renovi
-date: 2023-10-20T18:03:29.272Z
+recommended-posts: []
+metadata: null
 ---
-*This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s* *[Dev Grants program](https://fil.org/grants/).*
+
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ _[Dev Grants program](https://fil.org/grants/)._
 
 [If you build it they will come](https://en.wikipedia.org/wiki/Field_of_Dreams). That’s the aim of Renovi, a metaverse marketplace and design studio that works with global brands and businesses to create, develop, and implement their Web3 strategies.
 
@@ -35,10 +33,10 @@ Recently, Renovi supported brands including Diageo, DKNY, and GM, building their
 
 “Renovi was started with a mission to build a marketplace in which everyone can participate and sell 3D assets in the metaverse, giving creators the ability to monetize their NFTs,” said Renovi Co-founder Adonis Zachariades.
 
-In Q1 of 2022, Renovi sponsored the largest virtual build-a-thon and startup competition, the Next Top Metaverse Build, which attracted more than 160 participants *with support and prizes from Decentraland, Sandbox and the guidance of the University of Nicosia*. Aimed at university students, architects and design professionals from around the world, the competition challenged participants to create virtual designs for categories including buildings, casinos, festival grounds, museums and NFT galleries.
+In Q1 of 2022, Renovi sponsored the largest virtual build-a-thon and startup competition, the Next Top Metaverse Build, which attracted more than 160 participants _with support and prizes from Decentraland, Sandbox and the guidance of the University of Nicosia_. Aimed at university students, architects and design professionals from around the world, the competition challenged participants to create virtual designs for categories including buildings, casinos, festival grounds, museums and NFT galleries.
 
 Zachariades says in the future the metaverse will serve as a new source for freelance and consultative work. To help accelerate that, Renovi is cultivating a community of architects, 3D designers and artists in related fields who can showcase and solicit work via the platform.
 
 “We are committed to supporting what is a very niche and specific market,” Zachariades said. “Architects and artists can be particular about their work, and because the files they produce are so large, quality is often sacrificed when uploaded to Web2 platforms. We want to empower architects and 3D designers and their ability to unleash their designs away from physical limitations, while still allowing the public to experience them.”
 
-*The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for* *[Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)* *and* *[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants).*
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ _[Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)_ _and_ _[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)._

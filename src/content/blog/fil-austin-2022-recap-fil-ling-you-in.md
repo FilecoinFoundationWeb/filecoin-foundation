@@ -1,23 +1,21 @@
 ---
 title: "FIL Austin 2022 Recap: FIL-ling You In"
+slug: fil-austin-2022-recap-fil-ling-you-in
 created-on: 2023-04-21T07:26:57.443Z
 updated-on: 2023-04-21T07:26:57.443Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: "Filecoin Foundation "
-f_description: The only thing hotter than the Austin weather was the slate of
+featured: false
+description: The only thing hotter than the Austin weather was the slate of
   programming at FIL Austin, a week of Filecoin community events set against the
   backdrop of Consensus, CoinDesk’s annual crypto conference in June.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-15.png
   alt: null
-f_post-date: 2022-06-24T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: fil-austin-2022-recap-fil-ling-you-in
-date: 2023-10-20T17:57:41.424Z
+recommended-posts: []
+metadata: null
 ---
-The only thing hotter than the Austin weather was the slate of programming at FIL Austin, a week of Filecoin community events set against the backdrop of Consensus, *CoinDesk’s* annual crypto conference in June.
+
+The only thing hotter than the Austin weather was the slate of programming at FIL Austin, a week of Filecoin community events set against the backdrop of Consensus, _CoinDesk’s_ annual crypto conference in June.
 
 On Tuesday, June 8, Filecoin storage providers gathered at The LINE Austin to learn, collaborate, and network with other storage providers, as well as notaries, and other participants in the Filecoin ecosystem.
 

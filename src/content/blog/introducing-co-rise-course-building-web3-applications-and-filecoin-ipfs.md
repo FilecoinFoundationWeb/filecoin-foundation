@@ -3,20 +3,18 @@ title: "Introducing co:rise Course: Building Web3 Applications and Filecoin/IPFS
 created-on: 2023-04-21T07:27:49.014Z
 updated-on: 2023-04-21T07:27:49.014Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: "Filecoin Foundation "
-f_description: The “Building Web3 Applications and Filecoin/IPFS” is a four-week
+description: The “Building Web3 Applications and Filecoin/IPFS” is a four-week
   introductory course focused on building applications on a blockchain with
   decentralized storage on Filecoin/IPFS.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/64423af4e3c08f6f124f519f_1-gvlzuxsp3dbmsdxwobsexq.png
   alt: null
-f_post-date: 2022-06-03T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: introducing-co-rise-course-building-web3-applications-and-filecoin-ipfs
-date: 2023-10-20T18:29:46.070Z
+recommended-posts: []
+metadata: null
 ---
+
 The “[Building Web3 Applications and Filecoin/IPFS](https://corise.com/course/web3-filecoin)” is a four-week introductory course focused on building applications on a blockchain with decentralized storage on Filecoin/IPFS. The course will cover Bitcoin, Ethereum, Filecoin/IPFS, and a bit of data science, while students complete programming projects. The collaborative, project-based learning experience will include mastery of blockchain infrastructure tools, knowledge of building Web3 applications, and an understanding of how to host app files on decentralized storage.
 
 Despite the massive interest in Web3 and industry demand for software engineers familiar with building on these new platforms, such material is not included in many traditional computer science and software engineering curricula.
@@ -33,14 +31,14 @@ Participants will also hear from **Max Galka, CEO at Elementus** and **Pan Chasi
 
 **Who should take the course?**
 
-* Web2 software engineers and developers looking to familiarize themselves with the Web3 development environment and gain a deeper understanding of building on decentralized platforms.
-* Web3 software engineers and developers looking to understand how to use a decentralized storage platform (Filecoin/IPFS) for their Web3 apps.
+- Web2 software engineers and developers looking to familiarize themselves with the Web3 development environment and gain a deeper understanding of building on decentralized platforms.
+- Web3 software engineers and developers looking to understand how to use a decentralized storage platform (Filecoin/IPFS) for their Web3 apps.
 
 **Why co:rise?**
 
-* Learn alongside a small group of professional peers
-* Connect with experts through live sessions and office hours
-* Real-world project-based learning that teaches industry skills
+- Learn alongside a small group of professional peers
+- Connect with experts through live sessions and office hours
+- Real-world project-based learning that teaches industry skills
 
 **Why decentralized web storage?**
 
@@ -56,48 +54,48 @@ Decentralized file storage provides a more secure and robust way to store and ac
 
 LEARN
 
-* Technological, financial, and social history of Bitcoin
-* What enables Bitcoin as a peer-to-peer electronic cash system
-* Use cases of blockchain and how Ethereum realizes them
+- Technological, financial, and social history of Bitcoin
+- What enables Bitcoin as a peer-to-peer electronic cash system
+- Use cases of blockchain and how Ethereum realizes them
 
 PROJECT
 
-* Ethereum Developer Environment
-* Voting Machine on Ethereum
+- Ethereum Developer Environment
+- Voting Machine on Ethereum
 
 **WEEK 2 — Ethereum**
 
 LEARN
 
-* What enables Ethereum as the “world computer”
-* Various smart contract token standards
-* How NFTs use multiple platforms to accomplish the digital art use case
+- What enables Ethereum as the “world computer”
+- Various smart contract token standards
+- How NFTs use multiple platforms to accomplish the digital art use case
 
 PROJECT
 
-* Token Standards
-* NFT Pet Store on Ethereum
+- Token Standards
+- NFT Pet Store on Ethereum
 
 **WEEK 3 — Filecoin/IPFS**
 
 LEARN
 
-* What enables Filecoin as a decentralized storage marketplace
-* How Filecoin and IPFS interact with each other
-* Other tools used for Filecoin/IPFS development
+- What enables Filecoin as a decentralized storage marketplace
+- How Filecoin and IPFS interact with each other
+- Other tools used for Filecoin/IPFS development
 
 PROJECT
 
-* Ride Sharing DApp on Filecoin/IPFS
+- Ride Sharing DApp on Filecoin/IPFS
 
 **WEEK 4 — Data Science on the Blockchain**
 
 LEARN
 
-* Useful data scraping techniques
-* Simple data analysis and machine learning techniques
-* Come full circle in understanding blockchain technology by seeing how its unique design enables data analysis not possible in other transaction systems
+- Useful data scraping techniques
+- Simple data analysis and machine learning techniques
+- Come full circle in understanding blockchain technology by seeing how its unique design enables data analysis not possible in other transaction systems
 
 PROJECT
 
-* Data Science on the Blockchain
+- Data Science on the Blockchain

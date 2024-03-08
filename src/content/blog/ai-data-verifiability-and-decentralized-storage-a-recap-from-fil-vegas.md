@@ -1,26 +1,22 @@
 ---
 title: AI, Data Verifiability, and Decentralized Storage - A Recap from FIL Vegas
+slug: ai-data-verifiability-and-decentralized-storage-a-recap-from-fil-vegas
 created-on: 2023-10-23T22:05:52.307Z
 updated-on: 2023-10-23T22:05:52.316Z
 published-on: 2023-10-23T22:05:52.322Z
-f_description: "Vegas was humming with the sound of hundreds of excited Filecoin
-  ecosystem participants gathering under one roof to discuss decentralized
-  storage in the age of artificial intelligence (AI). "
-f_featured: false
-f_image:
+featured: false
+description: >-
+  Vegas was humming with the sound of hundreds of excited Filecoin ecosystem participants gathering under one roof to discuss decentralized storage in the age of artificial intelligence (AI).
+image:
   url: /assets/images/filvegas_recap_header.png
-f_post-date: 2023-10-23T22:05:52.329Z
-tags: blog
-layout: "[blog].html"
-date: 2023-10-23T22:05:52.335Z
-seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  alt: null
+recommended-posts: []
+metadata: null
 ---
+
 This month, hundreds of Filecoin ecosystem participants from around the world gathered in Las Vegas to discuss decentralized storage in the age of artificial intelligence (AI). Let’s dive into some highlights from FIL Vegas.
 
-This marquee event brought together Storage Providers with ecosystem enablers and AI leaders. The resulting collaborations seeded the ground for a new era in internet infrastructure. 
+This marquee event brought together Storage Providers with ecosystem enablers and AI leaders. The resulting collaborations seeded the ground for a new era in internet infrastructure.
 
 <div style="text-align: center;">
   <iframe
@@ -50,9 +46,9 @@ We also heard from Kyle Samani and Mark Yusko on new avenues for growth across t
 
 ## Beyond the Main Stage
 
-* ESPA: This was the largest ESPA event in the accelerator’s two-year history, with over 100 attendees, 62 organizations from 17 different countries, and 70 workshops held during the week.  
-* Decentralized Storage Alliance (DSA): This was the first event to bring together all 16 DSA organizations, including AMD, EY, and Seagate, to discuss the future of decentralized storage. 
-* DeStor: The DeStor team hosted 23 workshops, five mainstage presentations, and recorded over 14 video interviews –– all dedicated to guiding the community towards increasing paid storage opportunities.
+- ESPA: This was the largest ESPA event in the accelerator’s two-year history, with over 100 attendees, 62 organizations from 17 different countries, and 70 workshops held during the week.
+- Decentralized Storage Alliance (DSA): This was the first event to bring together all 16 DSA organizations, including AMD, EY, and Seagate, to discuss the future of decentralized storage.
+- DeStor: The DeStor team hosted 23 workshops, five mainstage presentations, and recorded over 14 video interviews –– all dedicated to guiding the community towards increasing paid storage opportunities.
 
 ## What’s Next?
 
@@ -62,6 +58,6 @@ Interested in learning more about the Decentralized Storage Alliance and how you
 
 Searching for Filecoin Storage or Service Providers? Visit the new [DeStor Network directory](https://directory.destor.com/).
 
-Are you an independent software vendor and want to add Filecoin as a storage tier? Sign up for the private beta of the [DeStor REST API](https://destor.com/destor-rest-api-for-filecoin). 
+Are you an independent software vendor and want to add Filecoin as a storage tier? Sign up for the private beta of the [DeStor REST API](https://destor.com/destor-rest-api-for-filecoin).
 
 Did we miss you in Vegas? If you’re interested in exploring ecosystem partnerships, data storage, or becoming a Storage Provider, [fill out this form](https://filecoinfoundation.typeform.com/filvegas).

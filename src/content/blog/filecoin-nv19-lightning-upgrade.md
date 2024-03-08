@@ -1,24 +1,22 @@
 ---
 title: Filecoin nv19 Lightning Upgrade
+slug: filecoin-nv19-lightning-upgrade
 created-on: 2023-06-01T11:00:30.238Z
 updated-on: 2023-06-01T11:00:00.000Z
 published-on: 2023-06-01T11:00:00.000Z
-f_author: Filecoin Foundation
-f_description: On April 27, 2023, the Filecoin network launched the
+description: On April 27, 2023, the Filecoin network launched the
   highly-anticipated nv19 Lightning Upgrade, marking a significant leap forward
   in the realm of decentralized storage. This technical milestone brings a host
   of enhancements and improvements to the Filecoin ecosystem, enabling greater
   efficiency, security, and usability.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/06012023-lightningupgrade.png
   alt: null
-f_post-date: 2023-06-01T11:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: dev-grant-spotlight-encloud
-date: 2023-06-01T11:00:00.000Z
+recommended-posts: []
+metadata: null
 ---
+
 On April 27, 2023, the Filecoin network launched the highly-anticipated nv19 Lightning Upgrade, marking a significant leap forward in the realm of decentralized storage. This technical milestone brings a host of enhancements and improvements to the Filecoin ecosystem, enabling greater efficiency, security, and usability.
 
 The Lightning upgrade includes technical enhancements and bug fixes that will help to reduce block synchronization times, a new challenge that has emerged as the number of storage deals occurring on the network has grown. FIP0060 solves this problem by increasing the market deal maintenance interval to 30 days. Doing so reduces the frequency of network-wide deal maintenance, a safe and efficient design choice that will reduce the amount of network power being consumed by maintenance activities. This improvement will enhance overall network performance, enabling a seamless and efficient decentralized storage experience.

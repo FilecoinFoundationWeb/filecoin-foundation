@@ -1,22 +1,20 @@
 ---
-f_featured: false
-f_post-date: '2022-11-15T00:00:00.000Z'
 title: Social Media on the Decentralized Web
-f_description: >-
+slug: social-media-on-the-decentralized-web
+created-on: "2023-04-21T07:31:50.469Z"
+updated-on: "2023-04-21T07:31:50.469Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   In recent days, many Twitter users have sought alternative platforms, like the
   decentralized social media network Mastodon, in the face of controversial
   layoffs, and leadership and product changes.
-f_author: Filecoin Foundation
-slug: social-media-on-the-decentralized-web
-f_image:
+image:
   url: >-
     /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
   alt: null
-updated-on: '2023-04-21T07:31:50.469Z'
-created-on: '2023-04-21T07:31:50.469Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 In recent days, many Twitter users have sought alternative platforms, like the decentralized social media network Mastodon, in the face of controversial layoffs, and leadership and product changes. According to [Fortune](https://fortune.com/2022/11/07/mastadon-struggles-large-number-twitter-defectors/), since Elon Musk took over Twitter on Oct. 27, Mastodon has drawn 489,003 new users, bringing total monthly active users to more than 1 million.
@@ -35,10 +33,10 @@ The [Spritely Networked Communities Institute](https://spritely.institute/) was 
 
 Spritely’s fundamental research will provide four important benefits to future decentralized social media. It will:
 
-*   Furnish a secure object capability network suite, which enables object-to-object communication.
-*   Enable a peer-to-peer interface for social software instead of client-to-server, with no gatekeepers required, which will be able to interconnect with existing peer-to-peer technologies such as libp2p and Tor Onion Services.
-*   Support granular and revocable trust that is persona-specific, with local human-meaningful mapping to decentralized identifiers, allowing discoverable names across networks, and credential management.
-*   Offer a suite of distributed debugging tools that allow for time-traveling to the state of the system when the error occurred.
+- Furnish a secure object capability network suite, which enables object-to-object communication.
+- Enable a peer-to-peer interface for social software instead of client-to-server, with no gatekeepers required, which will be able to interconnect with existing peer-to-peer technologies such as libp2p and Tor Onion Services.
+- Support granular and revocable trust that is persona-specific, with local human-meaningful mapping to decentralized identifiers, allowing discoverable names across networks, and credential management.
+- Offer a suite of distributed debugging tools that allow for time-traveling to the state of the system when the error occurred.
 
 Filecoin Foundation for the Decentralized Web (FFDW) recently [announced](https://medium.com/@FFDWeb/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media-36833f7273c9) an award to Spritely to further efforts to give people autonomy over identity and their relationships online.
 
@@ -58,9 +56,9 @@ Last year, Filecoin Foundation awarded a developer [grant](https://filecoinfound
 
 And a few more:
 
-*   **Gummys** — A community-powered streaming platform allowing users to generate income by creating, minting, and trading tokenized media content, watching videos, and more. Learn more about [Gummys](https://www.gummys.io/) work building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/607).
-*   **Quest Chains** — A gamified learning onboarding platform which rewards users through questing. Quest makers create quest chains, while questers would then complete the quests and get rewarded with NFTs, which would showcase their newly acquired skills in profiles. Learn more about [Quest Chains](https://questchains.xyz/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/645).
-*   **Volaverse** — Creating a community-driven metaverse around the globe and building a learning, teaching, and socializing platform creating a gamified and immersive experience for users. Learn more about [Volaverse](https://www.volaverse.com/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/580).
+- **Gummys** — A community-powered streaming platform allowing users to generate income by creating, minting, and trading tokenized media content, watching videos, and more. Learn more about [Gummys](https://www.gummys.io/) work building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/607).
+- **Quest Chains** — A gamified learning onboarding platform which rewards users through questing. Quest makers create quest chains, while questers would then complete the quests and get rewarded with NFTs, which would showcase their newly acquired skills in profiles. Learn more about [Quest Chains](https://questchains.xyz/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/645).
+- **Volaverse** — Creating a community-driven metaverse around the globe and building a learning, teaching, and socializing platform creating a gamified and immersive experience for users. Learn more about [Volaverse](https://www.volaverse.com/) building on the [Filecoin network](https://github.com/filecoin-project/devgrants/issues/580).
 
 These are just a few of the many companies and non-profits creating an alternative to centralized internet platforms. Everything we do today happens online, and the data from almost every interaction we have is stored on a server somewhere. A decentralized web enables users to take back control of their information and know exactly what is happening to our most sensitive information.
 

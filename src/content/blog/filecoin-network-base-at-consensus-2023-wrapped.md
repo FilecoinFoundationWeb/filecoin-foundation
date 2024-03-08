@@ -1,23 +1,21 @@
 ---
 title: Filecoin Network Base at Consensus 2023 Wrapped
+slug: filecoin-network-base-at-consensus-2023-wrapped
 created-on: 2023-06-05T11:00:54.740Z
 updated-on: 2023-06-05T11:00:00.000Z
 published-on: 2023-06-05T11:00:00.000Z
-f_author: Filecoin Foundation
-f_description: Against the backdrop of Consensus 2023, one of the largest annual
+featured: false
+description: Against the backdrop of Consensus 2023, one of the largest annual
   crypto gatherings in the US, the Filecoin community converged at the Filecoin
   Network Base to highlight the builders, storage providers and storage clients
   bringing the project to life.
-f_featured: false
-f_image:
+image:
   url: /assets/images/051823-austin-recap.png
   alt: null
-f_post-date: 2023-06-05T11:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: dev-grant-spotlight-encloud
-date: 2023-06-05T11:00:00.000Z
+recommended-posts: []
+metadata: null
 ---
+
 **Against the backdrop of Consensus 2023, one of the largest annual crypto gatherings in the US, the Filecoin community converged at the Filecoin Network Base to highlight the builders, storage providers and storage clients bringing the project to life.**
 
 Across the week, more than 600 people visited the Network Base to co-work, network, and hear some amazing talks from folks within the Filecoin ecosystem and beyond.
@@ -44,11 +42,11 @@ We had a packed house on Day Two for CryptoEconLab’s CryptoEconDay, gathering 
 
 The day had a wide range of topics including:
 
-* Reserve & Market Making in Web3
-* ​​Goal Oriented Agent Based Modeling
-* ​​Programmable & Decentralized Key Pairs
-* ​​Emerging Use Cases of MEV
-* ​Applications of the ​Filecoin Virtual Machine
+- Reserve & Market Making in Web3
+- ​​Goal Oriented Agent Based Modeling
+- ​​Programmable & Decentralized Key Pairs
+- ​​Emerging Use Cases of MEV
+- ​Applications of the ​Filecoin Virtual Machine
 
 ![](/assets/images/filecoin-network-base-3.jpg)
 
@@ -58,10 +56,10 @@ Our last full day in the Riley building was dedicated to all things FVM! We prov
 
 Here are some of the learnings from the day and what audience members were able to take as insights:
 
-* *[Matt Hamilton](https://youtu.be/J9i7J5lMsgg)*, Principal Developer Advocate, Protocol Labs walked us through understanding a Filecoin storage deal flow, how to create a storage contract using smart contracts and demonstrated rolls with the Filecoin network locally.
-* *[Andrew Hill](https://youtu.be/y1secDqVgYI)*, Co-Founder of Tableland, discussed relational databases on FVM and paving the way for a new era of data centric applications.
-* *[Preston James](https://youtu.be/dcYVssNSrak)*, CEO and Co-Founder of DivInc, announced their partnership with DivInc to launch a Dweb for Social Impact Accelerator - applications are being [accepted here](https://www.divinc.org/focusareas/social-impact).
-* *[Garrett Kinsman](https://youtu.be/-u83Cvv9lAM)*, Co-Founder of Nodle, showed the audience how AI generated content is unraveling civilization and how decentralized technologies will save the day.
+- _[Matt Hamilton](https://youtu.be/J9i7J5lMsgg)_, Principal Developer Advocate, Protocol Labs walked us through understanding a Filecoin storage deal flow, how to create a storage contract using smart contracts and demonstrated rolls with the Filecoin network locally.
+- _[Andrew Hill](https://youtu.be/y1secDqVgYI)_, Co-Founder of Tableland, discussed relational databases on FVM and paving the way for a new era of data centric applications.
+- _[Preston James](https://youtu.be/dcYVssNSrak)_, CEO and Co-Founder of DivInc, announced their partnership with DivInc to launch a Dweb for Social Impact Accelerator - applications are being [accepted here](https://www.divinc.org/focusareas/social-impact).
+- _[Garrett Kinsman](https://youtu.be/-u83Cvv9lAM)_, Co-Founder of Nodle, showed the audience how AI generated content is unraveling civilization and how decentralized technologies will save the day.
 
 ![](/assets/images/filecoin-network-base-4.jpg)
 

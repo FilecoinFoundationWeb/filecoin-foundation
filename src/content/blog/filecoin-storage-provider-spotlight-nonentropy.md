@@ -3,17 +3,14 @@ title: Filecoin Storage Provider Spotlight — NonEntropy
 created-on: 2023-04-21T07:27:30.951Z
 updated-on: 2023-04-21T07:27:30.951Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: NonEntropy is on a mission to protect the digital future.
-f_featured: false
-f_image:
+description: NonEntropy is on a mission to protect the digital future.
+featured: false
+image:
   url: /assets/images/64423ae2ef619d69dab60e9f_0-qyjcuk2pe_bhv2jh.png
   alt: null
-f_post-date: 2022-04-27T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: filecoin-storage-provider-spotlight-nonentropy
-date: 2023-10-20T18:33:53.864Z
+recommended-posts: []
+metadata: null
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._

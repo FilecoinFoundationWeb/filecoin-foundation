@@ -1,23 +1,21 @@
 ---
-f_featured: false
-f_post-date: '2022-07-13T00:00:00.000Z'
+featured: false
 title: Help us Increase Utility for Filecoin and Zcash Chains
-f_description: >-
+description: >-
   Filecoin Foundation (FF) and Electric Coin Co. (ECC) are now accepting grant
   proposals for projects that increase utility for Filecoin and Zcash projects.
   Together, we’re working to empower the Filecoin, Zcash, and greater Web3
   ecosystems through a new grants pool that funds Filecoin and Zcash projects.
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423af1e3c08fa6464f5199_0-kt1qsyhnwcfriwtg.png
   alt: null
 slug: help-us-increase-utility-for-filecoin-and-zcash-chains
-updated-on: '2023-04-21T07:27:45.806Z'
-created-on: '2023-04-21T07:27:45.806Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:27:45.806Z"
+created-on: "2023-04-21T07:27:45.806Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 Filecoin Foundation (FF) and Electric Coin Co. (ECC) are now accepting grant proposals for projects that increase utility for Filecoin and Zcash projects. Together, we’re working to empower the Filecoin, Zcash, and greater Web3 ecosystems through a new grants pool that funds Filecoin and Zcash projects.

@@ -3,27 +3,23 @@ title: Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Sp
 created-on: 2023-04-21T07:27:12.094Z
 updated-on: 2023-04-21T07:27:12.094Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: >-
+description: >-
   The companies are working together to deploy the Interplanetary File System in
   space as key digital infrastructure to transform how data is shared in the
   space economy
 
 
   Filecoin Foundation (FF) and Lockheed Martin are working together to develop a program for deploying the Interplanetary File System (IPFS) in space.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/01-lockheed-p-1080.png
   alt: null
-f_post-date: 2022-05-22T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space
-date: 2023-10-06T13:09:05.514Z
+recommended-posts: []
+metadata: null
 ---
 
-**Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space**
-================================================================================
+# **Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space**
 
 ### _The companies are working together to deploy the Interplanetary File System in space as key digital infrastructure to transform how data is shared in the space economy_
 
@@ -41,9 +37,9 @@ Ultimately, by minimizing the number of times that data has to be transmitted to
 
 As initial steps, between now and the end of August 2022, Lockheed Martin and Filecoin Foundation will conduct an initial study to:
 
-*   Identify a spacecraft platform to house an initial IPFS payload — the element that will relay mission data between Earth, other spacecraft, and itself;
-*   Define mutual compatibility requirements for the spacecraft bus — the main body of the satellite and IPFS payload; and
-*   Pinpoint opportunities for demonstration missions that harness IPFS’s utility in space.
+- Identify a spacecraft platform to house an initial IPFS payload — the element that will relay mission data between Earth, other spacecraft, and itself;
+- Define mutual compatibility requirements for the spacecraft bus — the main body of the satellite and IPFS payload; and
+- Pinpoint opportunities for demonstration missions that harness IPFS’s utility in space.
 
 This project requires designing for considerations around power, mass, and volume and ensuring the electronics will function in space. The initial payload demonstration is designed to focus on a Low-Earth Orbit mission, with eventual plans for lunar and interplanetary use.
 

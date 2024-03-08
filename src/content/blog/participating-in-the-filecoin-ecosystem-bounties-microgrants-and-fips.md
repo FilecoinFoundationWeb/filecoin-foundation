@@ -1,22 +1,20 @@
 ---
 title: "Participating in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"
+slug: participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips
 created-on: 2023-04-21T07:31:43.965Z
 updated-on: 2023-04-21T07:31:43.965Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: "As an open-source, decentralized protocol, the success of the
+description: "As an open-source, decentralized protocol, the success of the
   Filecoin network is inextricably linked with the development of its community.
   "
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/image-c-20.png
   alt: null
-f_post-date: 2021-09-09T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips
-date: 2023-10-20T17:25:01.795Z
+recommended-posts: []
+metadata: null
 ---
+
 As an open-source, decentralized protocol, the success of the Filecoin network is inextricably linked with the development of its community. It is for this reason that the Filecoin Foundation supports community capacity building, or finding ways to empower the development of individuals, ideas, resources, and solutions within the Filecoin ecosystem.
 
 In order to achieve the ecosystem’s long-term vision, it is important that all community members are empowered to engage with the growing network in a variety of ways. Critically, this includes both technical and non-technical opportunities for engagement. Humanity’s most important data, as well as the vision of a fully decentralized web, benefit everyone. A robust ecosystem must therefore include everyone’s buy-in, allowing individuals to engage with and contribute to the network regardless of their background, skills, or prior experiences.
@@ -35,9 +33,9 @@ Larger projects that may need more consistent funding are also supported through
 
 The FIPs process opens up both the work and implementation processes for these core enhancements by providing the community with the opportunity to ask questions, voice their opposition or support, and make suggestions for the final upgrade. Through the FIPs process, community members can review large technical and operational proposals as they are made, and have the ability to follow their development in real-time.
 
-One way of distinguishing between the different community programs offered by the foundation is to consider their *scale*. Bounties are small, single items of a limited scope; Microgrants are larger projects that may contribute to the community’s depth of knowledge or ease of use of the protocol; FIPs are often large and complex, with de facto requirements and background knowledge for engagement. Community members have variable interests and capacities, as do each of these programs.
+One way of distinguishing between the different community programs offered by the foundation is to consider their _scale_. Bounties are small, single items of a limited scope; Microgrants are larger projects that may contribute to the community’s depth of knowledge or ease of use of the protocol; FIPs are often large and complex, with de facto requirements and background knowledge for engagement. Community members have variable interests and capacities, as do each of these programs.
 
-Another way of distinguishing between these programs is to consider their *impact*. Bounties provide quick tools and solutions to specific, existing problems. Microgrants provide early funding to new tools and ideas, which can later be scaled up if deemed successful. Both of these programs offer financial incentives for adding to the ecosystem in ways that different communities may or may not benefit from. FIPs, on the other hand, fundamentally affect the Filecoin operating environment. As such, they are the largest item in terms of total network impact.
+Another way of distinguishing between these programs is to consider their _impact_. Bounties provide quick tools and solutions to specific, existing problems. Microgrants provide early funding to new tools and ideas, which can later be scaled up if deemed successful. Both of these programs offer financial incentives for adding to the ecosystem in ways that different communities may or may not benefit from. FIPs, on the other hand, fundamentally affect the Filecoin operating environment. As such, they are the largest item in terms of total network impact.
 
 All of these programs to grow and support the Filecoin network are open and fully transparent. They are managed on Github and other public networks, and changes to their operations are always made known in advance. As such, community members are welcome to engage and learn from them even without formally participating. They can review open grants to see what others find interesting in the network, review proposed FIPs to understand how core developers think about protocol enhancements, or practice solving bounty issues privately in order to practice ecosystem problem solving and resource identification.
 

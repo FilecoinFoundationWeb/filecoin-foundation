@@ -1,32 +1,29 @@
 ---
 title: "Case Study: GenRAIT Leverages Filecoin Network for Greater Visibility,
   Access, and Storage of Genomic Data"
+slug: case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data
 created-on: 2023-04-21T07:26:23.379Z
 updated-on: 2023-04-21T07:26:23.379Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: GenRAIT provides scientists with the platform they need to
+featured: false
+description: GenRAIT provides scientists with the platform they need to
   analyze genomic data, generate scientific breakthroughs, and experiment at
   scale, all in one unified ecosystem. In the GenRAIT ecosystem, scientists
   retain full autonomy and flexibility with regards to their data and analytics
   processes.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-02.png
   alt: null
-f_post-date: 2022-08-05T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data
-date: 2023-10-20T18:33:03.911Z
+recommended-posts: []
+metadata: null
 ---
 
 **Key highlights:**
 
-*   [GenRAIT](https://www.genrait.com/) provides scientists with the platform they need to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem. In the GenRAIT ecosystem, scientists retain full autonomy and flexibility with regards to their data and analytics processes.
-*   GenRAIT will initially host over 100 terabytes of genome research data on the Filecoin network and enable scientists and researchers to upload their own genomic files they then can retrieve, analyze, and put into action.
-*   GenRAIT currently uses the open-source interface [Estuary](https://estuary.tech/) to upload genomic data to the Filecoin network, leveraging the power of blockchain-based technology as a cost-effective storage solution. For GenRAIT, the Filecoin network is a Web3 solution that will scale with its data.
-*   Read the full [GenRAIT Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-GenRAIT.pdf).
+- [GenRAIT](https://www.genrait.com/) provides scientists with the platform they need to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem. In the GenRAIT ecosystem, scientists retain full autonomy and flexibility with regards to their data and analytics processes.
+- GenRAIT will initially host over 100 terabytes of genome research data on the Filecoin network and enable scientists and researchers to upload their own genomic files they then can retrieve, analyze, and put into action.
+- GenRAIT currently uses the open-source interface [Estuary](https://estuary.tech/) to upload genomic data to the Filecoin network, leveraging the power of blockchain-based technology as a cost-effective storage solution. For GenRAIT, the Filecoin network is a Web3 solution that will scale with its data.
+- Read the full [GenRAIT Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-GenRAIT.pdf).
 
 **Data storage needs in the biotech space**
 

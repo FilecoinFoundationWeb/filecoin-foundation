@@ -4,18 +4,15 @@ title: Join 20 Fascinating Startups on September 28 for Filecoin Launchpad
 created-on: 2023-04-21T07:27:58.680Z
 updated-on: 2023-04-21T07:27:58.680Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: It’s time to register for the upcoming Filecoin II Launchpad
+description: It’s time to register for the upcoming Filecoin II Launchpad
   Accelerator Demo Day, taking place September 28 @ 11:00 AM EDT!
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/64423afe4e4c68b60af47060_0-8alsa5xsesgbjyrr.png
   alt: null
-f_post-date: 2021-09-27T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: join-20-fascinating-startups-on-september-28-for-filecoin-launchpad-accelerator-demo-day
-date: 2023-10-06T13:26:44.566Z
+recommended-posts: []
+metadata: null
 ---
 
 It’s time to [register](https://share.hsforms.com/1sOOp2P0hRJuuzhLG-BS4RQ3orpu) for the upcoming Filecoin II Launchpad Accelerator Demo Day, taking place September 28 @ 11:00 AM EDT!
