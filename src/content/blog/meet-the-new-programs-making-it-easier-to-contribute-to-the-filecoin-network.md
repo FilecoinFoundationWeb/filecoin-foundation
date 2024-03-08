@@ -3,20 +3,18 @@ title: Meet the New Programs Making it Easier to Contribute to the Filecoin Netw
 created-on: 2023-04-21T07:28:18.531Z
 updated-on: 2023-04-21T07:28:18.531Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: null
-f_description: "This winter, two new programs launched that make it easier than
+description: "This winter, two new programs launched that make it easier than
   ever to contribute to the Filecoin network: Filecoin Saturn and Filecoin
   Station."
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/12202022-saturnandstation.png
   alt: null
-f_post-date: 2023-01-16T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: meet-the-new-programs-making-it-easier-to-contribute-to-the-filecoin-network
-date: 2023-06-06T21:04:27.611Z
+recommended-posts: []
+metadata: null
 ---
+
 This winter, two new programs launched that make it easier than ever to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station.
 
 Filecoin is the world's largest decentralized storage network, allowing users to store, request, and transfer data on the network via a verifiable marketplace. And now, these new programs will allow a new cohort of users and small enterprises to contribute to a more decentralized, efficient, and robust future for the internet.

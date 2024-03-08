@@ -1,21 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2022-02-02T00:00:00.000Z'
-title: 'Dev Grant Spotlight: JACKAL Storage'
-f_description: >-
+featured: false
+title: "Dev Grant Spotlight: JACKAL Storage"
+description: >-
   JACKAL Storage is a platform that provides a secure, private, and
-  user-friendly solution for decentralized storage on the Filecoin network. 
-f_author: Filecoin Foundation
+  user-friendly solution for decentralized storage on the Filecoin network.
 slug: dev-grant-spotlight-jackal-storage
-f_image:
+image:
   url: >-
     /assets/images/64423ab18d1be70ae7ce9031_1-qwnolzesajrp3gjwrthflg.png
   alt: null
-updated-on: '2023-04-21T07:26:41.530Z'
-created-on: '2023-04-21T07:26:41.530Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:26:41.530Z"
+created-on: "2023-04-21T07:26:41.530Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about the Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._

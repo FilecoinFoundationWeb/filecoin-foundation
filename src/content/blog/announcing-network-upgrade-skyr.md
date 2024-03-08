@@ -1,22 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2022-07-08T00:00:00.000Z'
 title: Announcing Network Upgrade ‘Skyr’
-f_description: >-
+slug: announcing-network-upgrade-skyr
+created-on: "2023-04-21T07:26:00.623Z"
+updated-on: "2023-04-21T07:26:00.623Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   The much-anticipated v16 Network upgrade — nicknamed ‘Skyr’ — went live on
   Wednesday, July 6. By introducing Milestone 1 of the Filecoin Virtual Machine
   (FVM), Skyr is one of the largest upgrades in Filecoin network history.
-f_author: 'Filecoin Foundation '
-slug: announcing-network-upgrade-skyr
-f_image:
-  url: >-
-    /assets/images/64423a88f053c985627f3ae7_1-ko-wwh4crpe6t8ioqymtfq.png
+image:
+  url: /assets/images/64423a88f053c985627f3ae7_1-ko-wwh4crpe6t8ioqymtfq.png
   alt: null
-updated-on: '2023-04-21T07:26:00.623Z'
-created-on: '2023-04-21T07:26:00.623Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 The much-anticipated v16 Network upgrade — nicknamed ‘Skyr’ — went live on Wednesday, July 6. By introducing Milestone 1 of the [Filecoin Virtual Machine (FVM)](https://fvm.filecoin.io/), Skyr is one of the largest upgrades in Filecoin network history.

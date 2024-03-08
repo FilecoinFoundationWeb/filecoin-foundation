@@ -1,24 +1,22 @@
 ---
-f_featured: false
-f_post-date: '2022-09-07T00:00:00.000Z'
+featured: false
 title: >-
   Filecoin Foundation and Blockchain Law for Social Good Center Accelerate Web3
   Education
-f_description: >-
+description: >-
   New Blockchain Academy Lab will provide education and training to support
   understanding of decentralized technology
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423ac8ef619d74dcb60e37_1-dvxhahnhu5a5qk3xidlxga.webp
   alt: null
 slug: >-
   filecoin-foundation-and-blockchain-law-for-social-good-center-accelerate-web3-education-1
-updated-on: '2023-04-21T07:27:04.336Z'
-created-on: '2023-04-21T07:27:04.336Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:27:04.336Z"
+created-on: "2023-04-21T07:27:04.336Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 Filecoin Foundation is thrilled to announce its award to the Blockchain Law for Social Good Center at Golden Gate University School of Law to create the Filecoin Foundation Blockchain Academy Lab (the Lab). With the Filecoin Foundation’s support, the Lab will create opportunities for students and others to learn about decentralized storage, technologies behind Web3, and the next generation of the internet. The Filecoin Foundation Blockchain Academy Lab will host meetups, various trainings, and other events that broaden the understanding of open and decentralized technologies, and how they can be harnessed for good.

@@ -1,21 +1,18 @@
 ---
 title: Dev Grant Spotlight - Fileverse
+slug: dev-grant-spotlight-fileverse
 created-on: 2023-04-21T07:26:37.139Z
 updated-on: 2023-04-21T07:26:37.139Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: null
-f_description: This is the latest post in our series highlighting the builders
+featured: false
+description: This is the latest post in our series highlighting the builders
   and innovators creating new tools and services on the Filecoin network. Learn
   more about Filecoin Foundation’s Dev Grants program.
-f_featured: false
-f_image:
+image:
   url: /assets/images/rectangle-31-.png
   alt: null
-f_post-date: 2023-02-28T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: dev-grant-spotlight-fileverse
-date: 2023-10-18T19:48:34.215Z
+recommended-posts: []
+metadata: null
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._
@@ -32,11 +29,11 @@ The platform leverages peer-to-peer storage networks, like IPFS, and harnesses t
 
 With a grant from Filecoin Foundation, Fileverse has been able to build a first-of-its-kind Trustless Collaboration Platform, and develop key platform features, including:
 
-*   Running Fileverse’s own IPFS and Ethereum nodes
-*   Deployment of the Fileverse front end onto IPFS
-*   Exploration and implementation of User Controlled Authorization Networks (UCANs)
-*   E2E encrypted collaborative chat on token-gated files
-*   New collaborative”plugins” like whiteboards, collab docs, and more, all stored on IPFS
+- Running Fileverse’s own IPFS and Ethereum nodes
+- Deployment of the Fileverse front end onto IPFS
+- Exploration and implementation of User Controlled Authorization Networks (UCANs)
+- E2E encrypted collaborative chat on token-gated files
+- New collaborative”plugins” like whiteboards, collab docs, and more, all stored on IPFS
 
 In turn, Fileverse offers several distinct benefits for participants in the Filecoin and IPFS ecosystem. The platform offers a mass Web3 onboarding channel by building a non-financial and privacy-first alternative to Web2 tools.
 

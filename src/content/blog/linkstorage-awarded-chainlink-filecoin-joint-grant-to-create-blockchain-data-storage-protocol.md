@@ -1,26 +1,23 @@
 ---
-f_featured: false
-f_post-date: '2022-02-03T00:00:00.000Z'
 title: >-
   Linkstorage Awarded Chainlink-Filecoin Joint Grant to Create Blockchain Data
   Storage Protocol
-f_description: >-
+slug: >-
+  linkstorage-awarded-chainlink-filecoin-joint-grant-to-create-blockchain-data-storage-protocol
+updated-on: "2023-04-21T07:28:05.882Z"
+created-on: "2023-04-21T07:28:05.882Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   In 2021, Chainlink and Filecoin launched a joint grant initiative to
   accelerate the development of hybrid smart contracts that combine Chainlink
   decentralized oracles and Filecoin decentralized storage within a single
   application.
-f_author: 'Filecoin Foundation '
-slug: >-
-  linkstorage-awarded-chainlink-filecoin-joint-grant-to-create-blockchain-data-storage-protocol
-f_image:
-  url: >-
-    /assets/images/64423b050425d3f577f2eb36_1-qzfjf0m6l6_fzcxuic-8zg.png
+image:
+  url: /assets/images/64423b050425d3f577f2eb36_1-qzfjf0m6l6_fzcxuic-8zg.png
   alt: null
-updated-on: '2023-04-21T07:28:05.882Z'
-created-on: '2023-04-21T07:28:05.882Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 In 2021, Chainlink and Filecoin [launched a joint grant initiative](https://blog.chain.link/announcing-the-chainlink-and-filecoin-joint-grant-program/) to accelerate the development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. The joint grant initiative supports teams building hybrid smart contract applications powered by tamper-proof file storage and universal connectivity. In essence, these co-sponsored grants are designed to help extend the [Web3](https://blog.chain.link/web3/) stack beyond on-chain computation into decentralized off-chain computation, data, and storage.

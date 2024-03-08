@@ -1,21 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2021-11-05T00:00:00.000Z'
-title: 'Dev Grant Spotlight: Freenet 2'
-f_description: >-
+featured: false
+title: "Dev Grant Spotlight: Freenet 2"
+description: >-
   Freenet is free software that lets users anonymously chat, share files, use
   email, browse, and publish Freenet-accessible websites known as “freesites.”
-f_author: Filecoin Foundation
 slug: dev-grant-spotlight-freenet-2
-f_image:
+image:
   url: >-
     /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
   alt: null
-updated-on: '2023-04-21T07:26:38.609Z'
-created-on: '2023-04-21T07:26:38.609Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:26:38.609Z"
+created-on: "2023-04-21T07:26:38.609Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 _This is the latest post in our series highlighting the builders creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://grants.filecoin.io/)_._

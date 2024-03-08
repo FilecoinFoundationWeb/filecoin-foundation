@@ -1,21 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2021-05-01T00:00:00.000Z'
 title: The Foundations’ Roles in the Filecoin Ecosystem
-f_description: >-
+slug: the-foundations-roles-in-the-filecoin-ecosystem
+created-on: "2023-04-21T07:32:11.556Z"
+updated-on: "2023-04-21T07:32:11.556Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   In 2017, the creators of Filecoin envisioned an independent foundation that
-  would serve as the long-term governance body for the Filecoin ecosystem. 
-f_author: Filecoin Foundation
-f_image:
+  would serve as the long-term governance body for the Filecoin ecosystem.
+image:
   url: >-
     /assets/images/64423bfbca39dd7d4d1f170f_1-mbcuqyncw-uoyzwsbrapqw.png
   alt: null
-slug: the-foundations-roles-in-the-filecoin-ecosystem
-updated-on: '2023-04-21T07:32:11.556Z'
-created-on: '2023-04-21T07:32:11.556Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 In 2017, the creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its mandate would be to grow an open ecosystem for decentralized storage and to give developers an open and sustainable platform to build, enhance and monetize those services.

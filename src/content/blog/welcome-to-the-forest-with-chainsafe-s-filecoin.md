@@ -1,21 +1,18 @@
 ---
 title: Welcome to the Forest, with Chainsafe’s Filecoin
+slug: welcome-to-the-forest-with-chainsafe-s-filecoin
 created-on: 2023-04-21T07:32:18.332Z
 updated-on: 2023-04-21T07:32:18.332Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Filecoin Mainnet launched one year ago this week, opening up the
+featured: false
+description: Filecoin Mainnet launched one year ago this week, opening up the
   decentralized storage protocol to developers, storage providers, and Web3
   enthusiasts worldwide.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-19.png
   alt: null
-f_post-date: 2021-10-22T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: welcome-to-the-forest-with-chainsafe-s-filecoin
-date: 2023-10-20T17:31:58.045Z
+recommended-posts: []
+metadata: null
 ---
 
 Filecoin Mainnet launched one year ago this week, opening up the decentralized storage protocol to developers, storage providers, and Web3 enthusiasts worldwide. Today, we welcome the next phase of ecosystem growth with the launch of Forest, an implementation of the Filecoin protocol written in Rust.

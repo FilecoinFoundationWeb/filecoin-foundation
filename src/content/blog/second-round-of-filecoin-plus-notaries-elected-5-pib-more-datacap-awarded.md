@@ -1,21 +1,19 @@
 ---
 title: Second Round of Filecoin Plus Notaries Elected, 5+ PiB More DataCap Awarded
+slug: second-round-of-filecoin-plus-notaries-elected-5-pib-more-datacap-awarded
 created-on: 2023-04-21T07:31:48.925Z
 updated-on: 2023-04-21T07:31:48.925Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: The Filecoin Plus community recently held elections for notaries
+featured: false
+description: The Filecoin Plus community recently held elections for notaries
   for the second time since its launch.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-34.png
   alt: null
-f_post-date: 2021-06-29T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: second-round-of-filecoin-plus-notaries-elected-5-pib-more-datacap-awarded
-date: 2023-10-18T14:47:02.888Z
+recommended-posts: []
+metadata: null
 ---
+
 The Filecoin Plus community recently held elections for notaries for the second time since its launch. Applications to receive Notary status and DataCap grants were due May 25 and were reviewed by the governance team, which includes members of the Filecoin Foundation and Protocol Labs, as well as highly-engaged members of the community who were not applying to be notaries.
 
 Filecoin Plus promotes storage of valuable data by adding a layer of social trust to the Filecoin network. Trusted clients looking to utilize storage on the network apply to receive DataCap, which can be used to incentivize miners to make storage deals. Notaries are Filecoin Plus community-elected trustees responsible for allocating DataCap to parties storing useful data on the network.

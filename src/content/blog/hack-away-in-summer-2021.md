@@ -3,19 +3,17 @@ title: Hack Away in Summer 2021
 created-on: 2023-04-21T07:27:44.240Z
 updated-on: 2023-04-21T07:27:44.240Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: This summer, the Filecoin Foundation is supporting numerous
+description: This summer, the Filecoin Foundation is supporting numerous
   hackathons for community members.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/image-c-31.png
   alt: null
-f_post-date: 2021-07-14T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: hack-away-in-summer-2021
-date: 2023-10-20T15:56:17.233Z
+recommended-posts: []
+metadata: null
 ---
+
 This summer, the Filecoin Foundation is supporting numerous hackathons for community members. Hackathons let developers and other creatives collaborate on a project over a set period of time with the goal of producing a functioning software by the end of the event. When community members participate in hackathons using Filecoin, they add valuable new tools and programs to the Filecoin ecosystem. Not to mention, the most innovative creators have the chance to win big prizes!
 
 Below are the details on hackathons you can participate in this summer, plus some bonus events to put on your calendar.

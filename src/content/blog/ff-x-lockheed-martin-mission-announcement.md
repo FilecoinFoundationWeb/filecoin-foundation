@@ -4,20 +4,17 @@ title: Filecoin Foundation Announces First Mission to Deploy Decentralized File
 created-on: 2023-04-21T07:26:55.754Z
 updated-on: 2023-04-21T07:26:55.754Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: null
-f_description: "Today, Filecoin Foundation (FF) announced a first-of-its-kind
+description: "Today, Filecoin Foundation (FF) announced a first-of-its-kind
   mission to deploy the Interplanetary File System (IPFS) in space. The mission
   will take place in 2023 aboard Lockheed Martin’s [NYSE: LMT] LM 400 Technology
   Demonstrator spacecraft."
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/01-lockheed-p-1080.png
   alt: null
-f_post-date: 2023-01-17T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: ff-x-lockheed-martin-mission-announcement
-date: 2023-06-06T20:56:38.345Z
+recommended-posts: []
+metadata: null
 ---
 
 _Effort Will Use the Interplanetary File System (IPFS) to Speed Up Communications Across Long Distances_

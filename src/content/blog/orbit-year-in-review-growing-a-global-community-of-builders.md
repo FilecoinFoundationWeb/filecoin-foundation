@@ -1,27 +1,22 @@
 ---
 title: "Orbit Year in Review: Growing a Global Community of Builders"
+slug: orbit-year-in-review-growing-a-global-community-of-builders
 created-on: 2023-12-07T13:50:04.187Z
 updated-on: 2023-12-07T13:50:04.200Z
 published-on: 2023-12-07T13:50:04.211Z
-f_description: In 2023, the Filecoin Orbit program helped seed a new crop of
+featured: false
+description: In 2023, the Filecoin Orbit program helped seed a new crop of
   thousands of builders in the Filecoin ecosystem.
-f_featured: false
-f_image:
+image:
   url: /assets/images/231205-orbit-year.png
   alt: "Filecoin Orbit Program Year in Review "
-f_post-date: 2023-12-07T13:50:04.224Z
-tags: blog
-layout: "[blog].html"
-date: 2023-12-07T13:50:04.241Z
-seo:
-  noindex: false
-  twitter:title: Filecoin Orbit Year in Review
-  twitter:card: Filecoin Orbit Year in Review
-  og:image: /assets/images/231205-orbit-year.png
+recommended-posts: []
+metadata: null
 ---
-This year, the Filecoin Orbit program helped seed a new crop of thousands of builders in the Filecoin ecosystem. The [Filecoin Orbit Community Program](https://orbitcommunity.filecoin.io/) is a group of volunteer ambassadors who host Filecoin workshops and hackathons, publish educational Filecoin articles and videos, and build on Filecoin. 
 
-Since the program’s launch, 147 Orbit Ambassadors have introduced an estimated 10,000 early-career developers, students, and enthusiasts to the Filecoin ecosystem through 190 workshops and community hackathons in over 40 countries. 
+This year, the Filecoin Orbit program helped seed a new crop of thousands of builders in the Filecoin ecosystem. The [Filecoin Orbit Community Program](https://orbitcommunity.filecoin.io/) is a group of volunteer ambassadors who host Filecoin workshops and hackathons, publish educational Filecoin articles and videos, and build on Filecoin.
+
+Since the program’s launch, 147 Orbit Ambassadors have introduced an estimated 10,000 early-career developers, students, and enthusiasts to the Filecoin ecosystem through 190 workshops and community hackathons in over 40 countries.
 
 <div style="text-align: center;">
   <iframe
@@ -35,22 +30,22 @@ Since the program’s launch, 147 Orbit Ambassadors have introduced an estimated
   </iframe>
 </div>
 
-Orbit Ambassadors hosted events in Austin, San Francisco, Miami, Buenos Aires, Mexico City, Rio, Zurich, Paris, Madrid, Casablanca, Lagos, Dar es Salaam, Mumbai, Chennai, Bangalore, Hong Kong, Jakarta, Singapore, Tokyo, Seoul, and many more cities around the world. The program serves as an entry point into the Filecoin Builder’s Funnel, particularly in underrepresented regions. 
+Orbit Ambassadors hosted events in Austin, San Francisco, Miami, Buenos Aires, Mexico City, Rio, Zurich, Paris, Madrid, Casablanca, Lagos, Dar es Salaam, Mumbai, Chennai, Bangalore, Hong Kong, Jakarta, Singapore, Tokyo, Seoul, and many more cities around the world. The program serves as an entry point into the Filecoin Builder’s Funnel, particularly in underrepresented regions.
 
 ![](https://lh7-us.googleusercontent.com/kp3Es5J8b1Jv7VIIzKOO0UrrNbsG5jnSGSg1jxspztmMkmItiEVBNjV67QuUGn4vdrIZPQuC3FlURk5qFDNWx-jky5Yo29PE_tGN8Rt97d2Q6-GvxtA57TxvINPEyqeBnntkCkkkgTf4T9D9ggUkCBg)
 
-The Builder’s Funnel is the pipeline to transform the projects of early builders into funded startups. In this process, Orbit serves as a gateway, welcoming builders into the ecosystem to learn about Filecoin. From there, they may participate in a hackathon, apply for a Filecoin Foundation grant to fund their project, and then grow and scale the project through an accelerator or funding. 
+The Builder’s Funnel is the pipeline to transform the projects of early builders into funded startups. In this process, Orbit serves as a gateway, welcoming builders into the ecosystem to learn about Filecoin. From there, they may participate in a hackathon, apply for a Filecoin Foundation grant to fund their project, and then grow and scale the project through an accelerator or funding.
 
 In the lead-up to the launch of the Filecoin Virtual Machine (FVM) in the spring, volunteer Orbit Ambassadors hosted more than 30 FVM workshops and over 10 FVM hackathons in just as many cities. These events generated 150 new projects deployed on Filecoin, IPFS, or FVM test- and mainnets, like a voting machine FVM dApp from a team in Tanzania.
 
 ![](https://lh7-us.googleusercontent.com/6djtAZZNE5ntKf39vPPZvich6TO1Kqx8UWhoAtG4j6weWgiZbUpRPYq4ZsrpRJ0QyvaUACtOWVynwXMrK59uENhF8crEaPnSkJhay-uJR60YpyQq8cf5pqItIDNsZHAZRZoaBhMq0I5Kc6Xj52VgMM8)
 
-The Filecoin Orbit program has also enabled the Filecoin ecosystem to engage with the next generation of builders at top universities through workshops at their hackathons, blockchain conferences, and blockchain clubs. Orbit Ambassadors delivered educational talks at the University of Oxford, National University of Singapore, Hong Kong University of Science and Technology, University of Pennsylvania, Indian Institutes of Technology, University of Lagos, and many more.  
+The Filecoin Orbit program has also enabled the Filecoin ecosystem to engage with the next generation of builders at top universities through workshops at their hackathons, blockchain conferences, and blockchain clubs. Orbit Ambassadors delivered educational talks at the University of Oxford, National University of Singapore, Hong Kong University of Science and Technology, University of Pennsylvania, Indian Institutes of Technology, University of Lagos, and many more.
 
 **\
 Community-organized FIL Events**
 
-This year some Orbit Ambassadors hosted larger, multi-day conferences in Jakarta, Seoul, and Cape Town. 
+This year some Orbit Ambassadors hosted larger, multi-day conferences in Jakarta, Seoul, and Cape Town.
 
 ![Filecoin Orbit FIL Jakarta with MetaPals Event](https://lh7-us.googleusercontent.com/u_VQmxVwy2PpnuhoIMTJWQsFIOY2ejupR2NlLeneT7dOF73QoQ0An5u2Jbz18TF6AHuvhXIL-ePkWNzBK61pYLb2-UZtydkuLBpaq8tJziieu8a_RbM-TlAlqF-gaQia_BBSK04m2ErSXGBh0Faz_PY)
 
@@ -84,13 +79,13 @@ Watch Clara Tsao’s talk on Orbit from LabWeek
 
 **Upcoming Events**
 
-All Orbit events are free and open to the public. Filecoin enthusiasts, students, and early builders are welcome to attend Orbit events in their city. 
+All Orbit events are free and open to the public. Filecoin enthusiasts, students, and early builders are welcome to attend Orbit events in their city.
 
-* Filecoin Playground #4 in Bangkok, Thailand on Dec. 13. [Register](https://www.eventpop.me/e/16772).
-* CONVIVIO ETH GT x Filecoin Orbit in Guatemala City, Guatemala on Dec. 14. [Register](https://lu.ma/tx8uiazv).
-* Filecoin Orbit Kenya FVM Workshop in Nairobi, Kenya on Dec. 16. [Register](https://lu.ma/ihit1).
-* Building Solutions with FVM in Dar es Salaam, Tanzania on Dec. 23. [Register](https://www.eventbrite.com/e/building-solutions-with-fvm-tickets-768245191047?aff=oddtdtcreator). 
+- Filecoin Playground #4 in Bangkok, Thailand on Dec. 13. [Register](https://www.eventpop.me/e/16772).
+- CONVIVIO ETH GT x Filecoin Orbit in Guatemala City, Guatemala on Dec. 14. [Register](https://lu.ma/tx8uiazv).
+- Filecoin Orbit Kenya FVM Workshop in Nairobi, Kenya on Dec. 16. [Register](https://lu.ma/ihit1).
+- Building Solutions with FVM in Dar es Salaam, Tanzania on Dec. 23. [Register](https://www.eventbrite.com/e/building-solutions-with-fvm-tickets-768245191047?aff=oddtdtcreator).
 
-**Interested in Getting Involved with Orbit?**  
+**Interested in Getting Involved with Orbit?**
 
 Submit an [application](https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C) to become an Orbit ambassador.

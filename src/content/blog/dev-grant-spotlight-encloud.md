@@ -1,24 +1,21 @@
 ---
 title: "Dev Grant Spotlight: encloud"
+slug: dev-grant-spotlight-encloud
 created-on: 2023-04-21T07:26:35.386Z
 updated-on: 2023-04-21T07:26:35.386Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: null
-f_description: "Businesses hold trillions of dollars of valuable data which,
+featured: false
+description: "Businesses hold trillions of dollars of valuable data which,
   according to research firm Ocean Tomo, comprise 90% of the value of S&P 500
   companies. New tools leveraging decentralized storage solutions like Filecoin
   are helping businesses capture more value. Encloud, formerly known as
   180Protocol that lets you easily onboard and ecrypt data to the decentralized
-  web. "
-f_featured: false
-f_image:
+  web."
+image:
   url: /assets/images/0405-dgs-180protocol.png
   alt: null
-f_post-date: 2023-04-18T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: dev-grant-spotlight-encloud
-date: 2023-10-06T12:38:01.292Z
+recommended-posts: []
+metadata: null
 ---
 
 Businesses hold trillions of dollars of valuable data which, according to research firm Ocean Tomo, [comprise 90%](https://www.oceantomo.com/intangible-asset-market-value-study/) of the value of S&P 500 companies. New tools leveraging decentralized storage solutions like Filecoin are helping businesses capture more value. Encloud, formerly known as 180Protocol that lets you easily onboard and ecrypt data to the decentralized web.

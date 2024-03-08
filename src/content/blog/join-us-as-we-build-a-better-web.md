@@ -3,22 +3,20 @@ title: Join us as we Build a Better Web
 created-on: 2023-04-21T07:28:02.613Z
 updated-on: 2023-04-21T07:28:02.613Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: More than half of the world’s population is online and connected.
+description: More than half of the world’s population is online and connected.
   Collectively, we create more than 2.5 quintillion bytes of data daily — from
   photos and videos, tweets and texts, Reddit posts and research reports, and so
   much more.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
   alt: null
-f_post-date: 2021-01-23T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: join-us-as-we-build-a-better-web
-date: 2023-10-18T18:24:25.538Z
+recommended-posts: []
+metadata: null
 ---
-*“The internet is in the middle of a revolution: centralized proprietary services are being replaced with decentralized open ones; trusted parties replaced with verifiable computation; brittle location addresses replaced with resilient content addresses; inefficient monolithic services replaced with peer-to-peer algorithmic markets.” —* *[Filecoin White Paper](https://filecoin.io/filecoin.pdf), 2017*
+
+_“The internet is in the middle of a revolution: centralized proprietary services are being replaced with decentralized open ones; trusted parties replaced with verifiable computation; brittle location addresses replaced with resilient content addresses; inefficient monolithic services replaced with peer-to-peer algorithmic markets.” —_ _[Filecoin White Paper](https://filecoin.io/filecoin.pdf), 2017_
 
 [More than half](https://datareportal.com/reports/digital-2020-october-global-statshot) of the world’s population is online and connected. Collectively, we create more than [2.5 quintillion bytes](https://www.takeo.ai/can-you-guess-how-much-data-is-generated-every-day/) of data daily — from photos and videos, tweets and texts, Reddit posts and research reports, and so much more.
 

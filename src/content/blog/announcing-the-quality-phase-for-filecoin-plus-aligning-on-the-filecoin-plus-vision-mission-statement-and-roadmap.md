@@ -1,22 +1,19 @@
 ---
 title: "Announcing the Quality Phase for Filecoin Plus: Aligning on the Filecoin
   Plus Vision, Mission Statement and Roadmap"
+slug: announcing-the-quality-phase-for-filecoin-plus-aligning-on-the-filecoin-plus-vision-mission-statement-and-roadmap
 created-on: 2023-04-21T07:26:06.472Z
 updated-on: 2023-04-21T07:26:06.472Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Filecoin Plus scales utilization of the Filecoin network to store
+featured: false
+description: Filecoin Plus scales utilization of the Filecoin network to store
   humanity’s information by incentivizing data onboarding across use-cases with
   community governed trust mechanisms.
-f_featured: false
-f_image:
+image:
   url: /assets/images/03292023-filplusmission.png
   alt: null
-f_post-date: 2023-04-07T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: announcing-the-quality-phase-for-filecoin-plus-aligning-on-the-filecoin-plus-vision-mission-statement-and-roadmap
-date: 2023-10-06T13:11:40.465Z
+recommended-posts: []
+metadata: null
 ---
 
 _This post is also available on the_ [_Filecoin Plus Medium_](https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456)_._
@@ -35,19 +32,19 @@ This captures the core of Fil+: supporting data onboarding and leveraging an ope
 
 That said, the program should support _all client actors with quality data engaging in distributed onboarding_. To help define and add some examples:
 
-*   Client actors can be either data owners or preparers, who provide some form of “Know your Client” (KYC) information to earn social trust or prove long term network alignment
-*   Quality data is all legal content that: the data owner wants to see on the network; is open and retrievable; or demonstrates proof of concept or utility of the network, such as efforts to improve onboarding
-*   Distributed onboarding is generally defined as: multiple physical locations or multiple storage provider entities to serve client requirements
+- Client actors can be either data owners or preparers, who provide some form of “Know your Client” (KYC) information to earn social trust or prove long term network alignment
+- Quality data is all legal content that: the data owner wants to see on the network; is open and retrievable; or demonstrates proof of concept or utility of the network, such as efforts to improve onboarding
+- Distributed onboarding is generally defined as: multiple physical locations or multiple storage provider entities to serve client requirements
 
 This is not a complete and exhaustive list nor definition of the types of applications eligible for Filecoin Plus support and DataCap. The Notary community, Fil+ Working Groups, and the broader community will continue to work together to further define and support new types of projects. Our intent at this time is to help clarify and add some structure as our notary community and footprint on the network grows.
 
 We have been polling our community and tracking the conversations happening in Slack, governance calls, and across various GitHub discussions - both specific to Filecoin Plus repos and other Filecoin project spaces like FIPs. Recent feedback generally falls into these categories:
 
-*   Abuse in the system needs to be minimized
-*   Notaries need to be held accountable
-*   Disputes need to be resolved in a timely manner and need consequences
-*   Fil+ program needs to move quicker and more effectively institute change
-*   System design needs to get better at supporting all use cases
+- Abuse in the system needs to be minimized
+- Notaries need to be held accountable
+- Disputes need to be resolved in a timely manner and need consequences
+- Fil+ program needs to move quicker and more effectively institute change
+- System design needs to get better at supporting all use cases
 
 This feedback, along with the vision and mission statement laid out above, is informing the governance team’s current prioritization and roadmap efforts. While there are still improvements to be made in growth and scaling up, the emphasis is now shifting from speed to quality. To mark this transition and label the changes being made as a result of it, we are officially launching the “Quality Phase” for the Fil+ program. We are proposing the following three top level goals for the program:
 
@@ -70,13 +67,13 @@ To scope and organize our tactical work towards these three top-level goals, we 
 
 Our [public roadmap](https://hub.fil.org/fil-plus-roadmap) has more details and timelines around the specific tactical projects, and we will also be updating this Medium publication space with more announcements over the coming months. Some of the key deliverables that we are excited to ship during this next phase include:
 
-*   New KPI dashboard metrics, for tracking abuse and governance efficiency
-*   Public dispute tracker with clear consequences for abuse cases
-*   Improvements to Trust & Transparency tooling - including retrieval sampling on open data
-*   Notary diligence tracking - enable notaries to more easily voice opinions on incoming DataCap applications in a way that can also be quantified
-*   Standardization of client onboarding requirements, introducing KYC/KYB checks as mechanisms for new clients to earn trust, support increased automation
-*   Moving from issues to pull requests in GitHub - to increase reliability and analytics
-*   Investigating changes to system design - notary incentives, staking, trustless mechanisms
+- New KPI dashboard metrics, for tracking abuse and governance efficiency
+- Public dispute tracker with clear consequences for abuse cases
+- Improvements to Trust & Transparency tooling - including retrieval sampling on open data
+- Notary diligence tracking - enable notaries to more easily voice opinions on incoming DataCap applications in a way that can also be quantified
+- Standardization of client onboarding requirements, introducing KYC/KYB checks as mechanisms for new clients to earn trust, support increased automation
+- Moving from issues to pull requests in GitHub - to increase reliability and analytics
+- Investigating changes to system design - notary incentives, staking, trustless mechanisms
 
 Each of these is tracked along with the intended timeline of their next milestone and the person you can ping to get more context on the roadmap linked above. Please let us know if you have any questions on this!
 

@@ -1,21 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2022-04-05T00:00:00.000Z'
 title: Announcing the VenusHub Platform
-f_description: >-
+slug: announcing-the-venushub-platform
+created-on: "2023-04-21T07:26:09.179Z"
+updated-on: "2023-04-21T07:26:09.179Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   One of the main goals in building out the Filecoin network is to ensure the
   Mainnet is secure and resilient.
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423a911fe00b2cb076101a_1-_gcjaae5jjlt5kkzewfd6g.png
   alt: null
-slug: announcing-the-venushub-platform
-updated-on: '2023-04-21T07:26:09.179Z'
-created-on: '2023-04-21T07:26:09.179Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 One of the main goals in building out the Filecoin network is to ensure the Mainnet is secure and resilient. Teams at Filecoin Foundation and Protocol Labs run protocol security. We also conduct external security audits and have other systems in place to establish resilience. Still, there is always a chance that an implementation bug might result in adverse consequences for the network.
@@ -34,14 +32,14 @@ In the past 14 months, Venus has proven to be a secure and efficient solution fo
 
 VenusHub.io will contain five programs, coordinated by the Venus community, to encourage more storage providers to adopt the Venus implementation:
 
-1\. **Venus Meetups:** monthly online meetups for discussion of new Venus features, AMAs, and technical interviews with experts.
+1. **Venus Meetups:** monthly online meetups for discussion of new Venus features, AMAs, and technical interviews with experts.
 
-2\. **Venus Master Program:** an initiative that rewards technical ‘experts’ in FIL for providing support to nascent storage providers utilizing the Venus implementation.
+2. **Venus Master Program:** an initiative that rewards technical ‘experts’ in FIL for providing support to nascent storage providers utilizing the Venus implementation.
 
-3\. **Venus Supported Hackathons:** sponsorship and collaboration on hackathons to spread awareness of the Venus implementation.
+3. **Venus Supported Hackathons:** sponsorship and collaboration on hackathons to spread awareness of the Venus implementation.
 
-4\. **Venus SP Incubator:** a 12-month program to drive awareness and help storage providers adopt the Venus implementation.
+4. **Venus SP Incubator:** a 12-month program to drive awareness and help storage providers adopt the Venus implementation.
 
-5\. **Venus Deal Accelerator:** an initiative to encourage storage providers to take real storage deals using the Venus implementation.
+5. **Venus Deal Accelerator:** an initiative to encourage storage providers to take real storage deals using the Venus implementation.
 
 To learn more about these programs, please visit [venushub.io](http://venushub.io/) or get in touch with Venus team on Filecoin Slack: [fil-venus](https://filecoinproject.slack.com/archives/CEHHJNJS3), [fil-venus-cn](https://filecoinproject.slack.com/archives/C028PCH8L31).

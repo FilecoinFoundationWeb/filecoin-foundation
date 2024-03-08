@@ -1,22 +1,20 @@
 ---
-f_featured: false
-f_post-date: '2022-09-15T00:00:00.000Z'
 title: Announcing the Public Data Commons and Awards Program
-f_description: >-
+slug: announcing-the-public-data-commons-and-awards-program
+created-on: "2023-04-21T07:26:04.681Z"
+updated-on: "2023-04-21T07:26:04.681Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   We’re excited to announce Filecoin Foundation is launching a Public Data
   Commons initiative to support open data projects in partnership with
   government and official organizations across the globe.
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
   alt: null
-slug: announcing-the-public-data-commons-and-awards-program
-updated-on: '2023-04-21T07:26:04.681Z'
-created-on: '2023-04-21T07:26:04.681Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 We’re excited to announce that today Filecoin Foundation is launching a [Public Data Commons](https://fil.org/public-data/) initiative to support open data projects in partnership with government and official organizations across the globe. This project brings together cutting-edge archival technologies and civic-minded public institutions to leverage the unique benefits of decentralized storage — because public data should be a useful resource, not a costly burden to store.
@@ -31,8 +29,8 @@ In December 2021, in an effort to understand how decentralized technology can he
 
 Working with the city’s technology team, the Foundation identified several data sets that were part of the city’s Open Data project. These data sets represent particularly foundational categories of knowledge that enable New York City to be a better place to live and work. Those data sets include:
 
-*   [City Record Online (CROL)](https://www1.nyc.gov/site/dcas/about/city-record.page#:~:text=The%20City%20Record%20Online%20%28CROL%29%20is%20a%20fully,official%20rules%20proposed%20and%20adopted%20by%20city%20agencies.): a searchable database that holds all notices published in the City Record newspaper. These notices include information on procurement requests for proposals and awarded projects, notices of public hearings and meetings, public auctions and sales, and rules proposed and established by city agencies.
-*   [Air Quality Surveillance Data](https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r): a database of reported levels of air pollution over time and across all NYC boroughs to measure the air quality and health across the city.
-*   [City Demographics by Geography](https://www1.nyc.gov/site/planning/data-maps/nyc-population/geographic-reference.page): a set of data and tools hosted by the city planning department that address areas such as housing and economics, population, transportation, urban design, and the waterfront.
+- [City Record Online (CROL)](https://www1.nyc.gov/site/dcas/about/city-record.page#:~:text=The%20City%20Record%20Online%20%28CROL%29%20is%20a%20fully,official%20rules%20proposed%20and%20adopted%20by%20city%20agencies.): a searchable database that holds all notices published in the City Record newspaper. These notices include information on procurement requests for proposals and awarded projects, notices of public hearings and meetings, public auctions and sales, and rules proposed and established by city agencies.
+- [Air Quality Surveillance Data](https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r): a database of reported levels of air pollution over time and across all NYC boroughs to measure the air quality and health across the city.
+- [City Demographics by Geography](https://www1.nyc.gov/site/planning/data-maps/nyc-population/geographic-reference.page): a set of data and tools hosted by the city planning department that address areas such as housing and economics, population, transportation, urban design, and the waterfront.
 
 To learn more about the Foundation’s public data initiative, visit fil.org/public-data.

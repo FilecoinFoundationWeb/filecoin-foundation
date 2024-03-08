@@ -1,21 +1,18 @@
 ---
 title: Recapping Filecoin Foundation’s 2021 Governance Summit
+slug: recapping-filecoin-foundation-s-2021-governance-summit
 created-on: 2023-04-21T07:31:45.550Z
 updated-on: 2023-04-21T07:31:45.550Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Last month, Filecoin Foundation came together to host its
+featured: false
+description: Last month, Filecoin Foundation came together to host its
   first-ever Governance Summit, a three-day series of meetings, brainstorming
   sessions, and design sprints.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-18.png
   alt: null
-f_post-date: 2021-12-01T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: recapping-filecoin-foundation-s-2021-governance-summit
-date: 2023-10-20T17:33:15.845Z
+recommended-posts: []
+metadata: null
 ---
 
 Last month, Filecoin Foundation came together to host its first-ever Governance Summit, a three-day series of meetings, brainstorming sessions, and design sprints. The Summit was designed to give the Foundation team an opportunity to deeply understand, analyze, and propose improvements to the mechanisms and processes of community governance.
@@ -24,10 +21,10 @@ Participants focused on understanding ‘governance’ as the networked interact
 
 For example, the team wanted to better understand:
 
-*   Who currently participates in governance, and why?
-*   What barriers exist to ‘opening up’ Filecoin governance to new, diverse, and/or less technical stakeholders?
-*   How can we create better linkages between people and programs in the Filecoin ecosystem, so as to better connect the right person, with the right expertise, and the right opportunities, at the right time?
-*   What strategic goals is the entire network working towards, and how does governance facilitate these changes?
+- Who currently participates in governance, and why?
+- What barriers exist to ‘opening up’ Filecoin governance to new, diverse, and/or less technical stakeholders?
+- How can we create better linkages between people and programs in the Filecoin ecosystem, so as to better connect the right person, with the right expertise, and the right opportunities, at the right time?
+- What strategic goals is the entire network working towards, and how does governance facilitate these changes?
 
 From this, several conclusions were drawn that will help the team coordinate continuous governance improvement in the coming months. These include both short- and long-term activities in several key areas.
 

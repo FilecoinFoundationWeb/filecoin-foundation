@@ -1,31 +1,28 @@
 ---
-f_featured: false
-f_post-date: '2021-12-16T00:00:00.000Z'
 title: >-
   Filecoin Foundation and Protocol Labs Embark on Experimental Project to put
   New York City Open Data on the Filecoin Network
-f_description: >-
+slug: >-
+  filecoin-foundation-and-protocol-labs-embark-on-experimental-project-to-put-new-york-city-open-data-on-the-filecoin-network
+created-on: "2023-04-21T07:27:13.911Z"
+updated-on: "2023-04-21T07:32:22.903Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   The Filecoin Foundation, an independent organization that supports the
   Filecoin ecosystem and promotes the growth of the decentralized web, and
   Protocol Labs, an open-source research and development lab, are working
   together to store and maintain New York City Open Data on the decentralized
   web for the next five years.
-f_author: Filecoin Foundation
-f_image:
+image:
   url: >-
     /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
   alt: null
-slug: >-
-  filecoin-foundation-and-protocol-labs-embark-on-experimental-project-to-put-new-york-city-open-data-on-the-filecoin-network
-updated-on: '2023-04-21T07:32:22.903Z'
-created-on: '2023-04-21T07:27:13.911Z'
-published-on: '2023-04-21T07:33:56.200Z'
-f_recommended-posts:
-  - cms/blog/applications-are-open-for-filecoin-plus-notary-elections.md
-  - cms/blog/announcing-the-venushub-platform.md
-  - cms/blog/announcing-the-starling-lab.md
-layout: '[blog].html'
-tags: blog
+recommended-posts:
+  - content/blog/applications-are-open-for-filecoin-plus-notary-elections.md
+  - content/blog/announcing-the-venushub-platform.md
+  - content/blog/announcing-the-starling-lab.md
+metadata: null
 ---
 
 _Project Explores how Decentralized Data Storage can Benefit Public Data and City Governance in New York City_

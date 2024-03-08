@@ -3,21 +3,19 @@ title: Meet the Newest Members of the Filecoin Foundation Team
 created-on: 2023-04-21T07:28:20.092Z
 updated-on: 2023-04-21T07:28:20.092Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: The Filecoin Foundation is delighted to welcome new members to
+featured: false
+description: The Filecoin Foundation is delighted to welcome new members to
   our growing workforce of professionals dedicated to research, development, and
   community engagement around open source, decentralized storage, and nurturing
   the Filecoin ecosystem.
-f_featured: false
-f_image:
+image:
   url: /assets/images/image-c-29.png
   alt: null
-f_post-date: 2021-08-03T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: meet-the-newest-members-of-the-filecoin-foundation-team
-date: 2023-10-20T15:59:49.336Z
+recommended-posts: []
+metadata: null
 ---
+
 The [Filecoin Foundation](http://fil.org/) is delighted to welcome new members to our growing workforce of professionals dedicated to research, development, and community engagement around open source, decentralized storage, and nurturing the Filecoin ecosystem. And our team continues to expand. We’re still looking for talented grant program managers, communications professionals and more to join us in this mission. Check out our [current openings](https://fil.org/get-involved/#careers-intro).
 
 Here’s a snapshot of our newest colleagues, including the range of skill sets and experience they bring and their thoughts on joining Filecoin in our collective mission to preserve humanity’s most important information:

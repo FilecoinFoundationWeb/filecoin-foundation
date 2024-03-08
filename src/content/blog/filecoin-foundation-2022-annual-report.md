@@ -1,21 +1,19 @@
 ---
-f_featured: false
-f_post-date: '2023-02-06T00:00:00.000Z'
+slug: filecoin-foundation-2022-annual-report
 title: Filecoin Foundation 2022 Annual Report
-f_description: >-
+created-on: "2023-04-21T07:27:02.761Z"
+updated-on: "2023-04-21T07:27:02.761Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   Despite challenges for the blockchain space in 2022, the Filecoin network has
   continued to thrive.
-f_author: Filecoin Foundation
-slug: filecoin-foundation-2022-annual-report
-f_image:
+image:
   url: >-
     /assets/images/64423ac6b068b0a9945c5010_0206-ff-22-annual-report.png
   alt: null
-updated-on: '2023-04-21T07:27:02.761Z'
-created-on: '2023-04-21T07:27:02.761Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 Despite challenges for the blockchain space in 2022, the Filecoin network has continued to thrive – storing an unprecedented amount of humanity’s most important information and demonstrating the value of blockchain technology.

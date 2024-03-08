@@ -1,19 +1,20 @@
 ---
-f_featured: false
-f_post-date: '2021-06-10T00:00:00.000Z'
 title: Announcing The Starling Lab
-f_description: >-
+slug: announcing-the-starling-lab
+created-on: "2023-04-21T07:26:07.722Z"
+updated-on: "2023-04-21T07:26:07.722Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   The Filecoin Foundation for the Decentralized Web (FFDW) and Protocol Labs are
   thrilled to announce a multi-year commitment to The Starling Lab, a new
   research center tackling the technical and ethical challenges of establishing
   trust in the most sensitive digital records of our human history.
-f_author: Filecoin Foundation
-slug: announcing-the-starling-lab
-updated-on: '2023-04-21T07:26:07.722Z'
-created-on: '2023-04-21T07:26:07.722Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+image:
+  url: null
+  alt: null
+recommended-posts: []
+metadata: null
 ---
 
 The Filecoin Foundation for the Decentralized Web (FFDW) and Protocol Labs [are thrilled to announce](https://youtu.be/szltLBFoQg0) a new research center tackling the technical and ethical challenges of establishing trust in the most sensitive digital records of our human history.

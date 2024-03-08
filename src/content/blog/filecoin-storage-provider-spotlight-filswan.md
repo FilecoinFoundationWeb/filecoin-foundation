@@ -1,23 +1,21 @@
 ---
-f_featured: false
-f_post-date: '2022-02-22T00:00:00.000Z'
-f_author: null
+featured: false
 title: Filecoin Storage Provider Spotlight — FilSwan
-f_description: >-
+description: >-
   Storage providers need to keep up with evolving technologies that their
   clients desire to use. A perfect example of this is FilSwan, a storage
   provider that specializes in edge data and goes to great lengths to bring data
   closer to the data source.
-f_image:
+image:
   url: >-
     /assets/images/64423adea6ec4171202a5cf2_1-hdrc5daoaw6mxtrklvxhcg.png
   alt: null
 slug: filecoin-storage-provider-spotlight-filswan
-updated-on: '2023-04-21T07:27:26.180Z'
-created-on: '2023-04-21T07:27:26.180Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:27:26.180Z"
+created-on: "2023-04-21T07:27:26.180Z"
+published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
+metadata: null
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._

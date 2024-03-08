@@ -4,19 +4,16 @@ title: How Swash is Leveraging Filecoin’s Decentralized Storage Network to
 created-on: 2023-04-21T07:27:47.348Z
 updated-on: 2023-04-21T07:27:47.348Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: Cisco predicts that by 2022, internet protocol (IP) traffic will
+description: Cisco predicts that by 2022, internet protocol (IP) traffic will
   surpass all prior “internet years” up to 2016 combined. As internet traffic
   multiplies, two trends are developing in parallel.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/64423af3e3c08f488e4f519c_1-pyb3swiscnbniykvqyrrdq.png
   alt: null
-f_post-date: 2022-02-16T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: how-swash-is-leveraging-filecoin-s-decentralized-storage-network-to-preserve-and-protect-consumer-data
-date: 2023-10-18T18:09:08.262Z
+recommended-posts: []
+metadata: null
 ---
 
 [Cisco](https://www.networkworld.com/article/3323063/cisco-predicts-nearly-5-zettabytes-of-ip-traffic-per-year-by-2022.html) predicts that by 2022, internet protocol (IP) traffic will surpass all prior “internet years” up to 2016 combined. As internet traffic multiplies, [two trends are developing](https://www.mckinsey.com/business-functions/risk-and-resilience/our-insights/the-consumer-data-opportunity-and-the-privacy-imperative) in parallel. First, consumer insights are becoming increasingly sought after, with advertising growing into a [600 billion dollar industry](https://www.independent.co.uk/news/business/comment/facebook-apple-netflix-amazon-google-tech-stocks-marketing-consumer-data-a8999016.html) that is heavily dominated by a handful of tech companies. And on the other side, consumers are becoming increasingly aware of the value of their data and more deliberate about how and where they share that data.
@@ -29,7 +26,7 @@ Today, we’re diving deep on [Swash](https://swashapp.io/). It’s reimaging th
 
 As the [Swash app moves toward a quarter of a million members](https://swashapp.io/apps/extension), the project continues to explore new avenues that will empower the entire community. Integrating storage that is decentralized, robust, and efficient, is a key piece of this puzzle. Here are a few reasons why Swash chose to shift its data onto the decentralized web:
 
-**Decentralization:** As a peer-to-peer network, where data can be distributed across multiple storage providers around the globe, the Filecoin network \_protects\_against single-point failures, meaning that websites will stay up even if some nodes fail. And most importantly, the availability of information is not dependent on any one server or company, unlike the current data economy.
+**Decentralization:** As a peer-to-peer network, where data can be distributed across multiple storage providers around the globe, the Filecoin network \_protects_against single-point failures, meaning that websites will stay up even if some nodes fail. And most importantly, the availability of information is not dependent on any one server or company, unlike the current data economy.
 
 **Robustness:** The Filecoin blockchain _verifies_ data storage, providing cryptographic proofs that data remains available and unchanged over time, meaning there is redundancy built into the system.
 

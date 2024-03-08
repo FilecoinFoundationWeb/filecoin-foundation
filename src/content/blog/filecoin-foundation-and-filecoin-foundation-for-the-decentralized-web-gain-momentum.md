@@ -4,19 +4,16 @@ title: Filecoin Foundation and Filecoin Foundation for the Decentralized Web
 created-on: 2023-04-21T07:27:10.571Z
 updated-on: 2023-04-21T07:27:10.571Z
 published-on: 2023-04-21T07:33:56.200Z
-f_author: Filecoin Foundation
-f_description: In 2017, the creators of Filecoin envisioned that an independent
+description: In 2017, the creators of Filecoin envisioned that an independent
   Filecoin Foundation would serve as the long-term governance body for the
   Filecoin Ecosystem.
-f_featured: false
-f_image:
+featured: false
+image:
   url: /assets/images/64423aceef619d5dc5b60e52_1-e009tiaipq2vndk-evb9ng.png
   alt: null
-f_post-date: 2021-01-14T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
 slug: filecoin-foundation-and-filecoin-foundation-for-the-decentralized-web-gain-momentum
-date: 2023-10-06T13:34:57.096Z
+recommended-posts: []
+metadata: null
 ---
 
 In 2017, the creators of Filecoin envisioned that an independent Filecoin Foundation would serve as the long-term governance body for the Filecoin Ecosystem. They gave the Foundation the mandate to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.” They wanted the Foundation to be modeled on Foundations for other open source projects like the Apache Software Foundation, the Mozilla Foundation and the Linux Foundation.

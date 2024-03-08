@@ -1,22 +1,19 @@
 ---
 title: "You’re Invited: Filecoin Fall"
+slug: you-re-invited-filecoin-fall
 created-on: 2022-08-18T00:00:00.000Z
 updated-on: 2022-08-18T00:00:00.000Z
 published-on: 2022-08-18T00:00:00.000Z
-f_author: Filecoin Foundation
-f_description: "As we enjoy the last days of summer, we’re already planning for
+featured: false
+description: "As we enjoy the last days of summer, we’re already planning for
   our next set of upcoming events: Filecoin Fall. No matter where you are, or
   how you’re involved in the Filecoin community, there’s something for everyone
   in the ecosystem over the next few months."
-f_featured: false
-f_image:
+image:
   url: /assets/images/64423c054821268e6e8e743b_1-rdpz1p6lnwm1fnnk37urdw.png
   alt: null
-f_post-date: 2022-08-18T00:00:00.000Z
-tags: blog
-layout: "[blog].html"
-slug: you-re-invited-filecoin-fall
-date: 2022-08-18T00:00:00.000Z
+recommended-posts: []
+metadata: null
 ---
 
 As we enjoy the last days of summer, we’re already planning for our next set of upcoming events: Filecoin Fall. No matter where you are, or how you’re involved in the Filecoin community, there’s something for everyone in the ecosystem over the next few months. Here’s a list of what’s ahead:

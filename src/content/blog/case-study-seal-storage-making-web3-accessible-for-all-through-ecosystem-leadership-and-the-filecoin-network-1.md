@@ -1,34 +1,32 @@
 ---
-f_featured: false
-f_post-date: '2022-09-22T00:00:00.000Z'
 title: >-
   Case Study: Seal Storage Making Web3 Accessible for All Through Ecosystem
   Leadership and the Filecoin Network
-f_description: >-
+slug: >-
+  case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1
+created-on: "2023-04-21T07:26:26.517Z"
+updated-on: "2023-04-21T07:26:26.517Z"
+published-on: "2023-04-21T07:33:56.200Z"
+featured: false
+description: >-
   As one of the earliest providers on the Filecoin network, Seal Storage is an
   established leader in the ecosystem. The company is a top storage provider in
   North America, with over 20PB of capacity across the U.S. and Canada, and is
   looking to add over 100PiBs more.
-f_author: Filecoin Foundation
-slug: >-
-  case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1
-f_image:
+image:
   url: >-
     /assets/images/64423aa28d1be743ddce7ab2_1-inwzqgetwegv3q8q0c4fea.webp
   alt: null
-updated-on: '2023-04-21T07:26:26.517Z'
-created-on: '2023-04-21T07:26:26.517Z'
-published-on: '2023-04-21T07:33:56.200Z'
-layout: '[blog].html'
-tags: blog
+recommended-posts: []
+metadata: null
 ---
 
 **Key Highlights:**
 
-*   Seal Storage is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
-*   As one of the earliest providers on the Filecoin network, Seal Storage is an established leader in the ecosystem. The company is a top storage provider in North America, with over 20PB of capacity across the U.S. and Canada, and is looking to add over 100PiBs more.
-*   Seal Storage currently serves universities, research institutes, enterprises, and other firms to store their data in a more sustainable, affordable, and immutable way.
-*   **Read the full** [**Seal Storage Case Study**](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-SealStorage.pdf)
+- Seal Storage is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
+- As one of the earliest providers on the Filecoin network, Seal Storage is an established leader in the ecosystem. The company is a top storage provider in North America, with over 20PB of capacity across the U.S. and Canada, and is looking to add over 100PiBs more.
+- Seal Storage currently serves universities, research institutes, enterprises, and other firms to store their data in a more sustainable, affordable, and immutable way.
+- **Read the full** [**Seal Storage Case Study**](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-SealStorage.pdf)
 
 **Providing an alternative data storage solution**
 
@@ -58,9 +56,9 @@ _“Filecoin has proved advantageous for users/customers that have a large data 
 
 Seal Storage decided to provide storage on the Filecoin network because:
 
-*   **Verifiable and reliable storage:** Filecoin’s built-in processes check the history of files and verify that they have been stored correctly over time. Because every storage provider proves that they are maintaining their files in every 24-hour window, Seal Storage’s clients can efficiently scan this history to confirm that their files have been stored correctly, and any observer can check any storage provider’s track record and will notice if the provider has been faulty or offline in the past.
-*   **Open market:** On the Filecoin network, file storage and retrieval deals are negotiated in open markets. By lowering the barriers to entry, Filecoin enables a thriving ecosystem of many independent storage providers.
-*   **Competitive prices:** Prices for storage and retrieval are determined by supply and demand, not corporate pricing departments. The Filecoin network makes reliable storage available at hyper-competitive prices.
+- **Verifiable and reliable storage:** Filecoin’s built-in processes check the history of files and verify that they have been stored correctly over time. Because every storage provider proves that they are maintaining their files in every 24-hour window, Seal Storage’s clients can efficiently scan this history to confirm that their files have been stored correctly, and any observer can check any storage provider’s track record and will notice if the provider has been faulty or offline in the past.
+- **Open market:** On the Filecoin network, file storage and retrieval deals are negotiated in open markets. By lowering the barriers to entry, Filecoin enables a thriving ecosystem of many independent storage providers.
+- **Competitive prices:** Prices for storage and retrieval are determined by supply and demand, not corporate pricing departments. The Filecoin network makes reliable storage available at hyper-competitive prices.
 
 **The Seal Storage team**
 
