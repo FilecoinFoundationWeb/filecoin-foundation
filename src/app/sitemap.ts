@@ -1,9 +1,7 @@
-import { BlogPostData } from '@/types/blogPostTypes'
-
+import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getCaseStudiesData } from '@/utils/getCaseStudyData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getEventsData } from '@/utils/getEventData'
-import { legacyGetMarkdownData } from '@/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
@@ -31,9 +29,7 @@ export default function sitemap() {
     lastModified: new Date(),
   }))
 
-  const blogPosts = legacyGetMarkdownData<BlogPostData>(
-    PATHS.BLOG.entriesContentPath as string
-  )
+  const blogPosts = getBlogPostsData()
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
   const caseStudies = getCaseStudiesData()
