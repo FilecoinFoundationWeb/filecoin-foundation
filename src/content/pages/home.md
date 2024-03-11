@@ -1,7 +1,7 @@
 ---
-title: "Let's Build the Internet of Everyone"
-description: "Filecoin Foundation is the steward of the Filecoin community. We aspire to put the power of humanity’s most important information back into the hands of everyone."
+title: "Our mission is to preserve humanity’s most important information"
+description: "Filecoin is the world’s largest decentralized storage network. Filecoin Foundation facilitates governance of the FIlecoin network, funds research and development projects for decentralized web technologies, and supports the growth of the Filecoin community and ecosystem."
 seo:
-  title: "Filecoin Foundation"
-  description: "Filecoin Foundation is the steward of the Filecoin community. We aspire to put the power of humanity’s most important information back into the hands of everyone."
+  title: "Our mission is to preserve humanity’s most important information"
+  description: "Filecoin is the world’s largest decentralized storage network. Filecoin Foundation facilitates governance of the FIlecoin network, funds research and development projects for decentralized web technologies, and supports the growth of the Filecoin community and ecosystem."
 ---
