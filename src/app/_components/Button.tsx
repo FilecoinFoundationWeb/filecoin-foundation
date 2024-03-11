@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { TextLink } from '@/components/TextLink'
 
 type ButtonProps = {
-  variant?: 'primary'
+  variant?: 'primary' | 'ghost'
   className?: string
 } & (
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
@@ -12,7 +12,8 @@ type ButtonProps = {
 
 const variantStyles = {
   primary:
-    'bg-transparent font-semibold text-white border hover:text-brand-300 hover:border-brand-300 focus:text-brand-300 focus:border-brand-300 focus:outline-brand-300',
+    'border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400',
+  ghost: 'border-white bg-brand-800 hover:border-brand-400',
 }
 
 export function Button({
@@ -21,7 +22,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   const baseStyles =
-    'inline-flex items-center gap-2 justify-center rounded-[10px] px-9 py-3 focus:outline focus:outline-1 focus:outline-offset-2 transition'
+    'inline-flex items-center justify-center gap-2 rounded-lg border px-9 py-3 font-semibold no-underline transition focus:outline focus:outline-2 focus:outline-offset-0 focus:outline-white'
 
   className = clsx(baseStyles, variantStyles[variant], className)
 
