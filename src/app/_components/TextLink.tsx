@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import clsx from 'clsx'
-import { Route } from 'next'
+import type { Route } from 'next'
 
 type TextLinkProps = {
   href: string

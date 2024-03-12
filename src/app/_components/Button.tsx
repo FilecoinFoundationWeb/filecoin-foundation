@@ -22,7 +22,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   const baseStyles =
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-9 py-3 font-semibold no-underline transition focus:outline focus:outline-2 focus:outline-offset-0 focus:outline-white'
+    'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg border px-9 py-3 font-semibold no-underline transition focus:outline focus:outline-2 focus:outline-offset-0 focus:outline-white'
 
   className = clsx(baseStyles, variantStyles[variant], className)
 

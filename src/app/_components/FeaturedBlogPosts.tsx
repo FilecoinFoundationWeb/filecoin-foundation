@@ -24,16 +24,16 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
 
   return (
     <CardLayout>
-      {featuredBlogPosts.map(({ title, description, slug, image }) => (
+      {blogPosts.map(({ title, description, slug, image }) => (
         <Card
-          key="slug"
+          key={slug}
           title={title}
           description={description}
           cta={{
             type: 'read',
             href: `${PATHS.BLOG.path}/${slug}` as Route,
           }}
-          image={image}
+          image={{ type: 'blogPost', ...image }}
           style="muted"
         />
       ))}

@@ -11,7 +11,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="py-8 px-12">
+    <footer className="py-8">
       <hr />
       <div className="flex justify-between">
         <div>
@@ -30,7 +30,7 @@ export function Footer() {
         <ul></ul>
       </div>
       <div className="mt-4">
-        <div className="flex gap-4 mb-2">
+        <div className="mb-2 flex gap-4">
           <TextLink href={PATHS.PRIVACY_POLICY.path}>
             {PATHS.PRIVACY_POLICY.label}
           </TextLink>

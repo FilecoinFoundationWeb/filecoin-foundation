@@ -6,5 +6,5 @@ type CardLayoutProps = {
 }
 
 export function CardLayout({ as: Tag = 'ul', children }: CardLayoutProps) {
-  return <Tag className="grid gap-4 sm:grid-cols-2">{children}</Tag>
+  return <Tag className="grid gap-4 lg:grid-cols-2">{children}</Tag>
 }

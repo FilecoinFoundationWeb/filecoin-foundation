@@ -12,7 +12,7 @@ export type CaseStudyData = {
     url: string
     text: string
   }
-  image?: {
+  image: {
     url: string
     alt: string
   }

@@ -26,16 +26,19 @@ export function FeaturedCaseStudies({
 
   return (
     <CardLayout>
-      {featuredCaseStudies.map(({ title, description, slug, image }) => (
+      {caseStudies.map(({ title, description, slug, image }) => (
         <Card
-          key="slug"
+          key={slug}
           title={title}
           description={description || ''}
           cta={{
             type: 'read',
             href: `${PATHS.CASE_STUDIES.path}/${slug}` as Route,
           }}
-          image={image}
+          image={{
+            type: 'caseStudy',
+            ...image,
+          }}
           style="muted"
         />
       ))}

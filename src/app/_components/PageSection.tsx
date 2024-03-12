@@ -21,7 +21,7 @@ export function PageSection({
         {title}
       </Heading>
       <p className="mb-8">{description}</p>
-      <div className="flex flex-col gap-6 sm:items-center">{children}</div>
+      <div className="flex flex-col gap-6">{children}</div>
     </section>
   )
 }

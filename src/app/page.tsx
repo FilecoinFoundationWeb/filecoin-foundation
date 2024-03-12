@@ -1,10 +1,10 @@
-import { GetInvolvedList } from '@/components/GetInvolvedList'
+import { Button } from '@/components/Button'
+import { Card, CardProps } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
+import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
+import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { PageHeader } from '@/components/PageHeader'
-import { ResourcesList } from '@/components/ResourcesList'
-import { Section } from '@/components/Section'
-import { SectionDeepDive } from '@/components/SectionDeepDive'
-import { TextLink } from '@/components/TextLink'
-import { VideoArticle } from '@/components/VideoArticle'
+import { PageSection } from '@/components/PageSection'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -13,89 +13,113 @@ import { attributes } from '@/content/pages/home.md'
 const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
+const exploreSectionCards: CardProps[] = [
+  {
+    title: 'Builder Resources',
+    description:
+      'Join thousands of developers and entrepreneurs building on the Filecoin network.',
+    cta: {
+      type: 'learn',
+      href: '#',
+    },
+  },
+  {
+    title: 'Storage Resources',
+    description:
+      'Join the Filecoin network as a Storage Provider or leverage the network to store your data with robust and secure storage. ',
+    cta: {
+      type: 'read',
+      href: '#',
+    },
+  },
+  {
+    title: 'Grants Program',
+    description:
+      'Learn more about support for teams building on the Filecoin network.',
+    cta: {
+      type: 'learn',
+      href: PATHS.GRANTS.path,
+    },
+  },
+  {
+    title: 'Meet the Community',
+    description:
+      'Connect and collaborate with the Filecoin community around the globe! ',
+    cta: {
+      type: 'connect',
+      href: '#',
+    },
+  },
+]
+
 export default function Home() {
   return (
-    <>
-      <PageHeader
-        title={title}
-        description={description}
-        link={{ href: PATHS.GET_INVOLVED.path, text: 'Get Involved' }}
-      />
+    <div className="flex flex-col gap-24 sm:gap-16">
+      <div className="flex flex-col gap-6 md:w-1/2">
+        <PageHeader title={title} description={description} />
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
+          <Button className="flex-1" variant="primary" href="#">
+            Learn More
+          </Button>
+          <Button className="flex-1" variant="ghost" href="#">
+            Discover Filecoin Technology
+          </Button>
+        </div>
+      </div>
 
-      <Section
-        title="What We Do"
-        content="We exist to help people build their vision on Filecoin and to support the growth of the decentralized web."
-      />
-
-      <section>
-        <p>
-          Filecoin Foundation (FF) and Lockheed Martin are working together to
-          develop a program for deploying the Interplanetary File System (IPFS)
-          in space.
-        </p>
-        <TextLink href="https://www.youtube.com/watch?v=6OY4xAs3Grg?si=1ySPxDLCx9Ha6bbD">
-          Watch Video
-        </TextLink>
-        <iframe
-          allowFullScreen
-          width="560"
-          height="315"
-          aria-label="Embedded YouTube Video"
-          src="https://www.youtube.com/embed/WqwVq0921Y8?si=ycT2_CNrzZc2CVxG"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-        />
-      </section>
-
-      <section>
-        <p>
-          The Foundation provides resources, guidance, and fair, equitable
-          principles to help the ecosystem flourish, and to open up the internet
-          for a safer, stronger, and more reliable environment where everyone,
-          not just a few giants, can thrive.
-        </p>
-      </section>
-
-      <Section
-        kicker="Resources"
-        title="Explore the Filecoin Project Ecosystem and Tooling"
-        content="Decentralized networks aren’t bound by geography. The brightest minds around the world are working together to advance the next generation of the internet."
+      <PageSection
+        kicker="Explore"
+        title="Explore the Ecosystem"
+        description="Navigate the Ecosystem Explorer, a crowd-sourced and open database to showcase the projects powering the Filecoin network. Already building on the network? Add your project!"
       >
-        <ResourcesList />
-      </Section>
+        <CardLayout>
+          {exploreSectionCards.map(({ title, description, cta }) => (
+            <Card
+              key={title}
+              title={title}
+              description={description}
+              cta={{
+                type: cta.type,
+                href: cta.href,
+              }}
+              style="muted"
+            />
+          ))}
+        </CardLayout>
+      </PageSection>
 
-      <Section
-        kicker="Dev Grants"
-        title="We fund talented and eager teams that want to work with us to build a more robust, efficient, and decentralized web."
-        content="We're enabling more contributors to solve open problems and engage with the Filecoin project."
-        link={{ href: PATHS.GRANTS.path, text: 'Learn More' }}
-      />
-
-      <Section
-        kicker="Get Involved"
-        title="Learn How To Get Involved in the Filecoin Community"
-        content="The Filecoin community includes thousands of developers, technologists, users, and enthusiasts all over the world."
-        link={{ href: FILECOIN_URLS.social.slack.href, text: 'Learn More' }}
+      <PageSection
+        kicker="Learn"
+        title="Use Cases"
+        description="Learn about projects building on and using Filecoin."
       >
-        <GetInvolvedList />
-      </Section>
+        <FeaturedCaseStudies />
+        <Button
+          className="sm:self-center"
+          variant="primary"
+          href={PATHS.CASE_STUDIES.path}
+        >
+          View All
+        </Button>
+      </PageSection>
 
-      <SectionDeepDive>
-        <VideoArticle
-          title="FIL Austin"
-          description="The first major IRL meetup of the Filecoin Community gathered hundreds of contributors from across the Filecoin ecosystem."
-          href="https://www.youtube.com/watch?v=9Db0rXvscYY"
-        />
-        <VideoArticle
-          title="DWeb Gateway @ Davos"
-          description="The Decentralized Web Gateway brings together leaders, thinkers and activists to discuss the evolution of the internet and its ramifications for society."
-          href="https://www.youtube.com/watch?v=hg8e3_gKtwU"
-        />
-      </SectionDeepDive>
-    </>
+      <PageSection
+        kicker="Stay Updated"
+        title="News & Blog"
+        description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
+      >
+        <FeaturedBlogPosts />
+        <Button
+          className="sm:self-center"
+          variant="primary"
+          href={PATHS.BLOG.path}
+        >
+          View All
+        </Button>
+      </PageSection>
+    </div>
   )
 }
