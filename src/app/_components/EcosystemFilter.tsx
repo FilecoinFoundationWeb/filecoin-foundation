@@ -1,5 +1,3 @@
-import React, { ChangeEvent } from 'react'
-
 import { CMSFieldOption, CMSConfig } from '@/types/cmsConfig'
 
 import { getCMSCollection, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
@@ -25,10 +23,12 @@ function OptionSelect({
   options,
   onChange,
 }: OptionSelectProps): JSX.Element {
-  function handleSelectChange(event: ChangeEvent<HTMLSelectElement>): void {
+  function handleSelectChange(
+    event: React.ChangeEvent<HTMLSelectElement>,
+  ): void {
     const selectedOptions = Array.from(
       event.target.selectedOptions,
-      (option) => option.value
+      (option) => option.value,
     )
 
     onChange(selectedOptions)
@@ -36,7 +36,7 @@ function OptionSelect({
 
   return (
     <div className="flex flex-col gap-1">
-      <label htmlFor={name} className="text-white block">
+      <label htmlFor={name} className="block text-white">
         {label}
       </label>
       <select multiple name={name} id={name} onChange={handleSelectChange}>

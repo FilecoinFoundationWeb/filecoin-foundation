@@ -20,7 +20,7 @@ const navigationItems = [
 
 function NavigationLink({ label, path }: { label: string; path: string }) {
   return (
-    <li className="mr-5 last:mr-0 whitespace-nowrap">
+    <li className="mr-5 whitespace-nowrap last:mr-0">
       <TextLink href={path}>{label}</TextLink>
     </li>
   )
@@ -28,16 +28,16 @@ function NavigationLink({ label, path }: { label: string; path: string }) {
 
 export function Navigation() {
   return (
-    <nav className="flex justify-between items-center p-4">
+    <nav className="flex items-center justify-between pb-6">
       <Link
-        className="block flex-shrink-0 mr-12"
+        className="mr-12 block flex-shrink-0"
         href={PATHS.HOME.path}
         aria-label="Go to homepage"
       >
         <Logo />
         <span className="sr-only">Home</span>
       </Link>
-      <ul className="list-none flex items-center m-0 p-0">
+      <ul className="m-0 flex list-none items-center p-0">
         {navigationItems.map((item) => (
           <NavigationLink key={item.path} label={item.label} path={item.path} />
         ))}

@@ -10,10 +10,10 @@ type PageHeaderProps = {
 export function PageHeader({ title, description, link }: PageHeaderProps) {
   return (
     <header>
-      <Heading tag="h1" variant="2xl">
+      <Heading className="mb-4" tag="h1" variant="4xl">
         {title}
       </Heading>
-      <p>{description}</p>
+      <p className="text-brand-100">{description}</p>
       {link && <TextLink href={link.href}>{link.text}</TextLink>}
     </header>
   )

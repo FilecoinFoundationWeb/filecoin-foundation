@@ -32,12 +32,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="max-w-6xl flex flex-col h-screen justify-between text-white bg-brand-800">
+      <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-brand-800 px-6 pb-6 pt-8 text-white">
         <StructuredDataScript structuredData={baseOrganizationSchema} />
         <NetlifyIdentityManager />
         <Navigation />
 
-        <main className="max-w-4xl flex flex-col flex-grow px-8 gap-6">
+        <main className="flex flex-grow flex-col gap-6">
           <BreadCrumbs />
           <div>{children}</div>
         </main>
