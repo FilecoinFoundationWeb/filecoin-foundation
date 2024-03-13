@@ -19,7 +19,7 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
     .slice(0, maxPosts)
 
   if (featuredBlogPosts.length === 0) {
-    return <p>No featured projects available.</p>
+    return <p>No featured posts available.</p>
   }
 
   return (

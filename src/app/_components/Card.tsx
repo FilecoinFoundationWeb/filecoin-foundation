@@ -1,5 +1,3 @@
-import { ElementType } from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -10,6 +8,8 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import type { Route } from 'next'
+
+import { Heading } from '@/components/Heading'
 
 export type CardProps = {
   title: string
@@ -24,7 +24,7 @@ export type CardProps = {
     type: 'blogPost' | 'caseStudy'
   }
   style?: 'muted' | 'vibrant'
-  as?: ElementType
+  as?: React.ElementType
 }
 
 const ctaConfig = {
@@ -72,9 +72,13 @@ export function Card({
           </div>
         )}
         <div className="flex flex-col gap-2 p-4">
-          <h3 className="line-clamp-2 overflow-hidden text-ellipsis text-lg font-bold text-brand-100">
+          <Heading
+            tag="h3"
+            variant="lg"
+            className="overflow-hidden text-ellipsis"
+          >
             {title}
-          </h3>
+          </Heading>
           <p className="line-clamp-3 overflow-hidden text-ellipsis text-brand-100">
             {description}
           </p>

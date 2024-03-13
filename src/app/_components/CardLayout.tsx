@@ -1,8 +1,6 @@
-import { ElementType } from 'react'
-
 type CardLayoutProps = {
   children: React.ReactNode
-  as?: ElementType
+  as?: React.ElementType
 }
 
 export function CardLayout({ as: Tag = 'ul', children }: CardLayoutProps) {
