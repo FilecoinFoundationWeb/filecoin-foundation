@@ -13,7 +13,7 @@ export function mapMarkdownToCaseStudyData({
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
     featured: data.featured,
-    description: data.description,
+    description: data.description || '',
     cta: {
       url: data.cta?.url || '',
       text: data.cta?.text || '',

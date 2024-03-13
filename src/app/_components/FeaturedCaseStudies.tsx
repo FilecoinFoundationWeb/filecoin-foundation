@@ -30,7 +30,7 @@ export function FeaturedCaseStudies({
         <Card
           key={slug}
           title={title}
-          description={description || ''}
+          description={description}
           cta={{
             type: 'read',
             href: `${PATHS.CASE_STUDIES.path}/${slug}` as Route,

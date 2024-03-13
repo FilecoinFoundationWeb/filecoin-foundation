@@ -7,7 +7,7 @@ export type CaseStudyData = {
   updatedOn?: string
   publishedOn?: string
   featured?: boolean
-  description?: string
+  description: string
   cta?: {
     url: string
     text: string

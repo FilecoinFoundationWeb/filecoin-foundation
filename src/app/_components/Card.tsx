@@ -59,7 +59,7 @@ export function Card({
           : 'border border-brand-300',
       )}
     >
-      <div className="">
+      <div>
         {image?.url && (
           <div className="relative block h-52">
             <Image
