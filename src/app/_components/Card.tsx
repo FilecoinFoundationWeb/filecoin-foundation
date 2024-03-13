@@ -72,8 +72,12 @@ export function Card({
           </div>
         )}
         <div className="flex flex-col gap-2 p-4">
-          <h3 className="text-lg font-bold text-brand-100">{title}</h3>
-          <p className="text-brand-100">{description}</p>
+          <h3 className="line-clamp-2 overflow-hidden text-ellipsis text-lg font-bold text-brand-100">
+            {title}
+          </h3>
+          <p className="line-clamp-3 overflow-hidden text-ellipsis text-brand-100">
+            {description}
+          </p>
         </div>
       </div>
       <div className="inline-flex items-center gap-2 p-4 font-medium text-brand-300">

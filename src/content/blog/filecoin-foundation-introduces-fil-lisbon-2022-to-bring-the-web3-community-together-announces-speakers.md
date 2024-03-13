@@ -5,7 +5,7 @@ title: >-
   Together, Announces Speakers
 description: >-
   Week-long event welcomes 50+speakers to explore FVM, sustainability, NFTs, the
-  metaverse, Web3 and more through the perspective of the Filecoin community
+  metaverse, Web3 and more through the perspective of the Filecoin community.
 slug: >-
   filecoin-foundation-introduces-fil-lisbon-2022-to-bring-the-web3-community-together-announces-speakers
 image:
