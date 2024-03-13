@@ -5,10 +5,17 @@ import { TextLink } from '@/components/TextLink'
 type ButtonProps = {
   variant?: 'primary' | 'ghost'
   className?: string
+  icon?: React.ReactNode
+  children: React.ReactNode
 } & (
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
   | React.ComponentPropsWithoutRef<typeof TextLink>
 )
+
+type ButtonInnerProps = {
+  icon?: React.ReactNode
+  children: React.ReactNode
+}
 
 const variantStyles = {
   primary:
@@ -16,9 +23,20 @@ const variantStyles = {
   ghost: 'border-white bg-brand-800 hover:border-brand-400',
 }
 
+function ButtonInner({ icon, children }: ButtonInnerProps) {
+  return (
+    <>
+      {children}
+      {icon && <span aria-hidden="true">{icon}</span>}
+    </>
+  )
+}
+
 export function Button({
   variant = 'primary',
   className,
+  icon,
+  children,
   ...rest
 }: ButtonProps) {
   const baseStyles =
@@ -27,8 +45,12 @@ export function Button({
   className = clsx(baseStyles, variantStyles[variant], className)
 
   return typeof rest.href === 'undefined' ? (
-    <button className={className} {...rest} />
+    <button className={className} {...rest}>
+      <ButtonInner icon={icon}>{children}</ButtonInner>
+    </button>
   ) : (
-    <TextLink className={className} {...rest} />
+    <TextLink className={className} {...rest}>
+      <ButtonInner icon={icon}>{children}</ButtonInner>
+    </TextLink>
   )
 }

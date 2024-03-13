@@ -1,3 +1,5 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+
 import { Button } from '@/components/Button'
 import { Card, CardProps } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
@@ -64,7 +66,12 @@ export default function Home() {
           <Button className="flex-1" variant="primary" href="#">
             Learn More
           </Button>
-          <Button className="flex-1" variant="ghost" href="#">
+          <Button
+            className="flex-1"
+            variant="ghost"
+            href="#"
+            icon={<ArrowUpRight size={24} weight="bold" />}
+          >
             Discover Filecoin Technology
           </Button>
         </div>
