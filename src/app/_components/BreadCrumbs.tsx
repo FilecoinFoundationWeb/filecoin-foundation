@@ -26,6 +26,8 @@ export function BreadCrumbs() {
     return label
   }
 
+  const baseStyles = 'focus:outline-2 focus:outline-white'
+
   return (
     <nav aria-label="breadcrumbs">
       <ol className="inline-flex items-center gap-2.5">
@@ -35,14 +37,14 @@ export function BreadCrumbs() {
             ? PATHS.HOME.path
             : (('/' + pathNames.slice(1, index + 1).join('/')) as Route)
           const isActive = pathname === href
-          const itemClasses = clsx({
+          const itemClasses = clsx(baseStyles, {
             'text-brand-300': !isActive,
             'text-brand-400': isActive,
           })
           const label = isRoot ? PATHS.HOME.label : formatLabel(path)
 
           return (
-            <li key={href} className="inline-flex items-center gap-2.5">
+            <li key={href} className="inline-flex items-center gap-2.5 ">
               {!isRoot && (
                 <CaretRight className="text-brand-400" weight="bold" />
               )}
