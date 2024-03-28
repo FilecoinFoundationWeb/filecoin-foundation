@@ -7,7 +7,7 @@ featured: false
 image:
   url: /assets/images/acaisia-logo_white.png
   alt: Acaisia Logo
-topic: tooling-productivity
+topic: education-academia-health
 tags: enterprise
 description: By leveraging decentralized technologies, Acaisia offers
   affordable, secure, and transparent computing and storage options.
