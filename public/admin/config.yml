@@ -1,8 +1,10 @@
+local_backend: true
 backend:
-  name: "test-repo"
+  name: "git-gateway"
   branch: "main"
-media_folder: "public/assets/images" # "theme/assets/images"
-public_folder: "/assets/images" # "/assets/images"
+publish_mode: editorial_workflow
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
 
 header_config: &header_config
   name: "header"
@@ -22,7 +24,7 @@ meta_config: &meta_config
   widget: "object"
   fields:
     - name: "title"
-      label: "SEO Title"
+      label: "Title"
       widget: "string"
     - name: "description"
       label: "Meta Description"
@@ -72,7 +74,7 @@ collections:
     label: "Shared"
     files:
       - name: "medatadata"
-        label: "medatadata"
+        label: "Metadata"
         file: "src/content/shared/site-metadata.yml"
         fields:
           - *meta_config
@@ -201,7 +203,7 @@ collections:
             label: "Alt Text"
             widget: "string"
             required: false
-      - name: "content"
+      - name: "body"
         label: "Content"
         widget: "markdown"
         required: false
@@ -307,10 +309,6 @@ collections:
         label: Published On
         widget: datetime
         required: false
-      - name: content
-        label: Content
-        widget: markdown
-        required: false
       - name: featured
         label: Featured
         widget: boolean
@@ -357,6 +355,7 @@ collections:
         label: Tags
         widget: select
         required: true
+        multiple: true
         options:
           - label: "AI Productivity and Utilities"
             value: ai-productivity-and-utilities
@@ -440,9 +439,13 @@ collections:
             value: wallets-identity-authentication
             multiple: true
       - name: description
-        label: Description
+        label: Short Description
         widget: string
         required: true
+      - name: body
+        label: Long Description
+        widget: markdown
+        required: false
       - name: website
         label: Website
         widget: string
@@ -455,10 +458,10 @@ collections:
         label: Technologies Used
         widget: select
         required: true
+        multiple: true
         options:
           - filecoin
           - ipfs
-        multiple: true
       - name: featured-content
         label: Featured Content
         widget: string
