@@ -1,15 +1,5 @@
 import { Metadata } from '@/types/metadataTypes'
 
-type Tag = {
-  label: string
-  value: string
-}
-
-type Topic = {
-  label: string
-  value: string
-}
-
 export type EcosystemProjectData = {
   title: string
   slug: string
@@ -18,8 +8,8 @@ export type EcosystemProjectData = {
   publishedOn?: string
   featured?: boolean
   description: string
-  topic: Topic
-  tags: Tag[]
+  topic: string
+  tags: string[]
   tech: string[]
   image: {
     url: string
