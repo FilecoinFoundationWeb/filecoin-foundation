@@ -1,8 +1,10 @@
 {
+  "local_backend": true,
   "backend": {
-    "name": "test-repo",
+    "name": "git-gateway",
     "branch": "main"
   },
+  "publish_mode": "editorial_workflow",
   "media_folder": "public/assets/images",
   "public_folder": "/assets/images",
   "header_config": {
@@ -29,7 +31,7 @@
     "fields": [
       {
         "name": "title",
-        "label": "SEO Title",
+        "label": "Title",
         "widget": "string"
       },
       {
@@ -105,7 +107,7 @@
       "files": [
         {
           "name": "medatadata",
-          "label": "medatadata",
+          "label": "Metadata",
           "file": "src/content/shared/site-metadata.yml",
           "fields": [
             {
@@ -115,7 +117,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -221,7 +223,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -321,7 +323,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -421,7 +423,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -521,7 +523,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -621,7 +623,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -721,7 +723,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -821,7 +823,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -921,7 +923,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -1021,7 +1023,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -1121,7 +1123,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -1221,7 +1223,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -1321,7 +1323,7 @@
               "fields": [
                 {
                   "name": "title",
-                  "label": "SEO Title",
+                  "label": "Title",
                   "widget": "string"
                 },
                 {
@@ -1463,7 +1465,7 @@
           ]
         },
         {
-          "name": "content",
+          "name": "body",
           "label": "Content",
           "widget": "markdown",
           "required": false
@@ -1491,7 +1493,7 @@
           "fields": [
             {
               "name": "title",
-              "label": "SEO Title",
+              "label": "Title",
               "widget": "string"
             },
             {
@@ -1657,7 +1659,7 @@
           "fields": [
             {
               "name": "title",
-              "label": "SEO Title",
+              "label": "Title",
               "widget": "string"
             },
             {
@@ -1763,12 +1765,6 @@
           "required": false
         },
         {
-          "name": "content",
-          "label": "Content",
-          "widget": "markdown",
-          "required": false
-        },
-        {
           "name": "featured",
           "label": "Featured",
           "widget": "boolean",
@@ -1845,6 +1841,7 @@
           "label": "Tags",
           "widget": "select",
           "required": true,
+          "multiple": true,
           "options": [
             {
               "label": "AI Productivity and Utilities",
@@ -2011,9 +2008,15 @@
         },
         {
           "name": "description",
-          "label": "Description",
+          "label": "Short Description",
           "widget": "string",
           "required": true
+        },
+        {
+          "name": "body",
+          "label": "Long Description",
+          "widget": "markdown",
+          "required": false
         },
         {
           "name": "website",
@@ -2032,11 +2035,11 @@
           "label": "Technologies Used",
           "widget": "select",
           "required": true,
+          "multiple": true,
           "options": [
             "filecoin",
             "ipfs"
-          ],
-          "multiple": true
+          ]
         },
         {
           "name": "featured-content",
@@ -2075,7 +2078,7 @@
           "fields": [
             {
               "name": "title",
-              "label": "SEO Title",
+              "label": "Title",
               "widget": "string"
             },
             {
@@ -2292,7 +2295,7 @@
           "fields": [
             {
               "name": "title",
-              "label": "SEO Title",
+              "label": "Title",
               "widget": "string"
             },
             {
