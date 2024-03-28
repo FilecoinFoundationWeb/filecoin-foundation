@@ -6,12 +6,9 @@ updated-on: 2024-02-07T20:17:14.451Z
 published-on: 2024-02-07T20:17:14.461Z
 featured: false
 description: "GLIF is Filecoin's first and most popular DeFi protocol for earning rewards on FIL."
-topic:
-  value: finance
-  label: Finance
+topic: finance
 tags:
-  - value: leasing-and-staking
-    label: Leasing & Staking
+  - leasing-and-staking
 tech:
   - filecoin
 image:

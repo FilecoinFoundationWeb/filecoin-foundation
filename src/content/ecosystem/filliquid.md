@@ -6,12 +6,9 @@ updated-on: 2024-01-24T13:45:47.628Z
 published-on: 2024-01-24T13:45:47.636Z
 featured: false
 description: "FILLiquid is a liquidity pool implemented on FVM (Filecoin Virtual Machine) as a fully open-sourced, decentralized, algorithmic-based lending platform."
-topic:
-  value: finance
-  label: Finance
+topic: finance
 tags:
-  - value: dapp
-    label: DApp
+  - dapp
 tech:
   - filecoin
   - ipfs

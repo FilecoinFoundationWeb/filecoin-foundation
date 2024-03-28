@@ -6,18 +6,12 @@ updated-on: "2024-01-12T20:09:29.911Z"
 published-on: "2024-01-12T20:09:29.923Z"
 featured: false
 description: "TRES.Finance was created two years ago to fill a gap in the market for an enterprise-grade accounting, audit, fund admin, and treasury management platform with 100% coverage of web3 assets and activities."
-topic:
-  value: "finance"
-  label: "Finance"
+topic: "finance"
 tags:
-  - value: "data-storage-management"
-    label: "Data Storage & Management"
-  - value: "data-prep"
-    label: "Data Preparation"
-  - value: "enterprise"
-    label: "Enterprise"
-  - value: "data-retrieval"
-    label: "Data Retrieval"
+  - "data-storage-management"
+  - "data-prep"
+  - "enterprise"
+  - "data-retrieval"
 tech:
   - "filecoin"
 image:

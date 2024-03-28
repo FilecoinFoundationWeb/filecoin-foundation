@@ -6,12 +6,9 @@ updated-on: 2024-02-22T17:51:25.132Z
 published-on: 2024-02-22T17:51:25.159Z
 featured: false
 description: "We offer a decentralized patient health data marketplace, which allows organizations and patients to securely share or monetize health information."
-topic:
-  value: education-academia-health
-  label: Education, Academia & Health
+topic: education-academia-health
 tags:
-  - value: health
-    label: Health
+  - health
 tech:
   - filecoin
   - ipfs

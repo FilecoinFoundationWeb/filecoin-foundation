@@ -6,16 +6,11 @@ updated-on: "2024-02-01T15:51:35.133Z"
 published-on: "2024-02-01T15:51:35.145Z"
 featured: false
 description: "TRANSFER Data Trust is a speculative design project to build an automated, non-profit cooperative trust powered by FVM."
-topic:
-  value: "media-entertainment"
-  label: "Media & Entertainment"
+topic: "media-entertainment"
 tags:
-  - value: "arts-collectibles"
-    label: "Arts & Collectibles"
-  - value: "glam"
-    label: "GLAM (Galleries, Libraries, Archives, Museums)"
-  - value: "governance-daos-public-goods"
-    label: "Governance, DAOs, & Public Goods"
+  - "arts-collectibles"
+  - "glam"
+  - "governance-daos-public-goods"
 tech:
   - "ipfs"
   - "filecoin"

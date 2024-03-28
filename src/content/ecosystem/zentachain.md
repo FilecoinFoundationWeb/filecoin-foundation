@@ -6,20 +6,13 @@ updated-on: 2024-02-28T23:55:57.787Z
 published-on: 2024-02-28T23:55:57.795Z
 featured: false
 description: "Privacy-focused IoT blockchain networking project that is focused on communication and data storage."
-topic:
-  value: artificial-intelligence
-  label: Artificial Intelligence
+topic: artificial-intelligence
 tags:
-  - value: ai-productivity-and-utilities
-    label: AI Productivity and Utilities
-  - value: bridges-oracles
-    label: Bridges & Oracles
-  - value: dweb
-    label: DWeb
-  - value: depin
-    label: Decentralized Personal Information Networks
-  - value: data-storage-management
-    label: Data Storage & Management
+  - ai-productivity-and-utilities
+  - bridges-oracles
+  - dweb
+  - depin
+  - data-storage-management
 tech:
   - filecoin
   - ipfs

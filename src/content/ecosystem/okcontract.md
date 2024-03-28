@@ -6,12 +6,9 @@ updated-on: "2024-02-01T15:47:28.419Z"
 published-on: "2024-02-01T15:47:28.434Z"
 featured: false
 description: "OKcontract is as an interaction layer between the user interface and the smart contracts. OKcontract makes it easier for developers to specify transactions, implement and handle smart contract interactions."
-topic:
-  value: "tooling-productivity"
-  label: "Tooling & Productivity"
+topic: "tooling-productivity"
 tags:
-  - value: "developer-tools"
-    label: "Developer Tools"
+  - "developer-tools"
 tech:
   - "ipfs"
 image:

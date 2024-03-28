@@ -6,18 +6,12 @@ updated-on: "2024-01-05T21:39:25.863Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Titan is a leading DePIN service provider, that is committed to delivering efficient, secure, and cost-effective decentralized solutions, tooling and resources that can help your projects stand out in a competitive marketplace."
-topic:
-  value: media-entertainment
-  label: Media & Entertainment
+topic: media-entertainment
 tags:
-  - value: data-retrieval
-    label: Data Retrieval
-  - value: data-prep
-    label: Data Preparation
-  - value: data-storage-management
-    label: Data Storage & Management
-  - value: developer-tools
-    label: Developer Tools
+  - data-retrieval
+  - data-prep
+  - data-storage-management
+  - developer-tools
 image:
   url: # /assets/external/65974d743ddd7ef7851595fe_titan-svg2.png
   alt: Titan Network Logo

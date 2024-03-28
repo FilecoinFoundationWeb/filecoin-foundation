@@ -7,11 +7,9 @@ published-on: 2024-02-26T21:34:10.305Z
 featured: false
 description: "Helps businesses of all sizes to automate their back-office crypto accounting tasks."
 topic:
-  - value: finance
-    label: Finance
+  - finance
 tags:
-  - value: data-retrieval
-    label: Data Retrieval
+  - data-retrieval
 tech:
   - filecoin
 image:

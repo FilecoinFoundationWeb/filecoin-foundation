@@ -6,12 +6,9 @@ updated-on: "2024-01-04T22:40:28.806Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "UC Berkeley Underground Physics Group stores neutrino physics research data to support the development of novel detection technology on the Filecoin network through storage provider Seal Storage."
-topic:
-  value: "education-academia-health"
-  label: "Education, Academia & Health"
+topic: "education-academia-health"
 tags:
-  - value: "universities"
-    label: "Universities"
+  - "universities"
 tech:
   - "filecoin"
   - "ipfs"

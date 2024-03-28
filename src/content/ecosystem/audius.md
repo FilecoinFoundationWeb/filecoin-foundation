@@ -6,12 +6,9 @@ updated-on: "2024-01-05T16:11:14.607Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Audius is a music and audio-sharing platform designed to provide artists with a direct link to their listeners."
-topic:
-  value: media-entertainment
-  label: Media & Entertainment
+topic: media-entertainment
 tags:
-  - value: dapp
-    label: DApp
+  - dapp
 tech:
   - ipfs
 image:

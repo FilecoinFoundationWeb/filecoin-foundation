@@ -6,14 +6,10 @@ updated-on: 2024-01-10T14:53:07.941Z
 published-on: 2024-01-10T14:53:07.961Z
 featured: true
 description: "The Internet Archive’s Democracy’s Library project is creating a free, open collection of government data to ensure that government research and publications from around the world remain permanently accessible to the public."
-topic:
-  value: public-goods-dweb
-  label: Public Goods & DWeb
+topic: public-goods-dweb
 tags:
-  - value: dweb
-    label: DWeb
-  - value: social-impact
-    label: Social Impact
+  - dweb
+  - social-impact
 tech:
   - ipfs
   - filecoin

@@ -6,14 +6,10 @@ updated-on: 2024-01-24T13:50:38.340Z
 published-on: 2024-01-24T13:50:38.349Z
 featured: false
 description: "Decentralized non-custodial liquid staking protocol bringing capital efficient storage an mining to the Filecoin network"
-topic:
-  value: finance
-  label: Finance
+topic: finance
 tags:
-  - value: dapp
-    label: DApp
-  - value: leasing-and-staking
-    label: Leasing & Staking
+  - dapp
+  - leasing-and-staking
 tech:
   - filecoin
 image:

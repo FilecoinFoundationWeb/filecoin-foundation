@@ -6,12 +6,9 @@ updated-on: 2024-02-28T23:14:40.498Z
 published-on: 2024-02-28T23:14:40.507Z
 featured: false
 description: "$Corgi is memecoin on Filecoin, but not just a memecoin, building on Filecoin with utility and community."
-topic:
-  value: finance
-  label: Finance
+topic: finance
 tags:
-  - value: communication-social
-    label: Communication & Social
+  - communication-social
 tech:
   - filecoin
 image:

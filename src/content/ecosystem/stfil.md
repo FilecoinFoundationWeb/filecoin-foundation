@@ -6,12 +6,9 @@ updated-on: "2024-01-17T14:55:43.701Z"
 published-on: "2024-01-17T14:55:43.725Z"
 featured: false
 description: "STFIL Protocol is one of the first and largest Filecoin liquidity staking and leveraged mining protocol launched on the Filecoin Virtual Machine (FVM). We aim to build the most decentralized staking ecosystem."
-topic:
-  value: finance
-  label: Finance
+topic: finance
 tags:
-  - value: dapp
-    label: DApp
+  - dapp
 tech:
   - filecoin
 image:

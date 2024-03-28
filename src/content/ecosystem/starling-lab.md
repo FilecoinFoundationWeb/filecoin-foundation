@@ -6,14 +6,10 @@ updated-on: "2024-01-10T18:24:21.025Z"
 published-on: "2024-01-10T18:24:21.035Z"
 featured: false
 description: "The Starling Lab is the academic research lab innovating with the latest cryptographic methods and decentralized web protocols to meet the technical and ethical challenges of establishing trust in our most sensitive digital records."
-topic:
-  value: public-goods-dweb
-  label: Public Goods & DWeb
+topic: public-goods-dweb
 tags:
-  - value: dweb
-    label: DWeb
-  - value: social-impact
-    label: Social Impact
+  - dweb
+  - social-impact
 tech:
   - filecoin
   - ipfs

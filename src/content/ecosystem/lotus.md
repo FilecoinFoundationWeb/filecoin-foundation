@@ -6,12 +6,9 @@ updated-on: "2024-02-26T20:36:51.280Z"
 published-on: "2024-02-26T20:36:51.289Z"
 featured: false
 description: "Lotus is the primary node implementation for the Filecoin network, designed to facilitate efficient and secure decentralized storage."
-topic:
-  value: tooling-productivity
-  label: Tooling & Productivity
+topic: tooling-productivity
 tags:
-  - value: data-storage-management
-    label: Data Storage & Management
+  - data-storage-management
 tech:
   - ipfs
 image:
