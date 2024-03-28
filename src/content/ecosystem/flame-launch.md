@@ -6,12 +6,9 @@ updated-on: 2024-01-18T17:27:13.436Z
 published-on: 2024-01-18T17:27:13.451Z
 featured: false
 description: "Empowered Filecoin ecosystem launchpad based on FVM."
-topic:
-  value: artificial-intelligence
-  label: Artificial Intelligence
+topic: artificial-intelligence
 tags:
-  - value: infrastructure
-    label: Infrastructure
+  - infrastructure
 tech:
   - filecoin
 image:

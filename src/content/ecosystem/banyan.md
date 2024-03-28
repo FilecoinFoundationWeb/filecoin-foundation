@@ -6,16 +6,11 @@ updated-on: "2024-01-05T21:34:37.917Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Banyan is making decentralized, content-addressed storage accessible for enterprise clients on the Filecoin network, with a focus on user-controlled privacy and verifiability."
-topic:
-  value: storage
-  label: Storage
+topic: storage
 tags:
-  - value: data-storage-management
-    label: Data Storage & Management
-  - value: enterprise
-    label: Enterprise
-  - value: storage-software
-    label: Storage Software
+  - data-storage-management
+  - enterprise
+  - storage-software
 tech:
   - filecoin
   - ipfs

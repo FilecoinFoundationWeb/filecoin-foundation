@@ -6,14 +6,10 @@ updated-on: 2024-01-10T16:19:46.268Z
 published-on: 2024-01-10T16:19:46.376Z
 featured: false
 description: "Human Rights Data Analysis Group (HRDAG) turns raw data into analysis used by UN missions, truth commissions, small and large human rights groups, and criminal prosecutions for war crimes and crimes against humanity."
-topic:
-  value: public-goods-dweb
-  label: Public Goods & DWeb
+topic: public-goods-dweb
 tags:
-  - value: dweb
-    label: DWeb
-  - value: social-impact
-    label: Social Impact
+  - dweb
+  - social-impact
 tech:
   - filecoin
   - ipfs

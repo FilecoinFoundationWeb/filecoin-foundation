@@ -6,12 +6,9 @@ updated-on: 2024-01-05T21:36:17.159Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Filecoin Green measures the environmental impacts of Filecoin with the goal to verifiably drive impacts below zero. Filecoin Green is building infrastructure along the way that allows anyone to make transparent and substantive environmental claims."
-topic:
-  value: science-climate-space
-  label: Science, Climate & Space
+topic: science-climate-space
 tags:
-  - value: climate
-    label: Climate
+  - climate
 tech:
   - filecoin
   - ipfs

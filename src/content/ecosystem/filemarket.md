@@ -6,20 +6,13 @@ updated-on: 2024-01-18T16:06:37.771Z
 published-on: 2024-01-18T16:06:37.786Z
 featured: false
 description: "Decentralized P2P file-sharing protocol & platform for storing, transferring, and trading digital goods."
-topic:
-  value: storage
-  label: Storage
+topic: storage
 tags:
-  - value: data-curation-monetization
-    label: Data Curation & Monetization
-  - value: photo-video
-    label: Photo & Video
-  - value: depin
-    label: Decentralized Personal Information Networks
-  - value: data-storage-management
-    label: Data Storage & Management
-  - value: public-data
-    label: Public Data
+  - data-curation-monetization
+  - photo-video
+  - depin
+  - data-storage-management
+  - public-data
 tech:
   - filecoin
   - ipfs

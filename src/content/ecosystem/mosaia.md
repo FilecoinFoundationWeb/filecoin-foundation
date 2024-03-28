@@ -6,14 +6,10 @@ updated-on: "2024-01-12T20:30:19.621Z"
 published-on: "2024-01-12T20:30:19.636Z"
 featured: false
 description: "Trusted LLM to book web3 service providers 10x faster."
-topic:
-  value: "artificial-intelligence"
-  label: "Artificial Intelligence"
+topic: "artificial-intelligence"
 tags:
-  - value: "ai-productivity-and-utilities"
-    label: "AI Productivity and Utilities"
-  - value: "enterprise"
-    label: "Enterprise"
+  - "ai-productivity-and-utilities"
+  - "enterprise"
 tech:
   - "filecoin"
 image:

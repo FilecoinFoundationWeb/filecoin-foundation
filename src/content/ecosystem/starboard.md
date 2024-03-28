@@ -6,12 +6,9 @@ updated-on: "2024-01-05T21:39:06.502Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Starboard Ventures empowers Web3 data economies with network analytics and product incubation."
-topic:
-  value: tooling-productivity
-  label: Tooling & Productivity
+topic: tooling-productivity
 tags:
-  - value: network-tools
-    label: Network Tools
+  - network-tools
 tech:
   - filecoin
   - ipfs

@@ -29,7 +29,7 @@ export function EcosystemProjectListItem({
           )}
         </div>
 
-        <span className="inline-block mb-3">{topic.label}</span>
+        <span className="inline-block mb-3">{topic}</span>
 
         <Heading tag="h3" variant="lg">
           {title}

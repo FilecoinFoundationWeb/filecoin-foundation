@@ -6,12 +6,9 @@ updated-on: 2024-01-05T21:37:09.707Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "GainForest is a non-profit focused on reversing deforestation and climate change through blockchain technology."
-topic:
-  value: science-climate-space
-  label: Science, Climate & Space
+topic: science-climate-space
 tags:
-  - value: climate
-    label: Climate
+  - climate
 tech:
   - filecoin
   - ipfs

@@ -5,12 +5,9 @@ updated-on: "2024-01-05T21:38:22.351Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Opscientia (OpSci) is an open source DeSci project leveraging the power of Web3 to grow, sustain, and continuously improve a decentralized science movement to drive progress in scientific research, making it easier for scientists around the world to share data."
-topic:
-  value: science-climate-space
-  label: "Science, Climate & Space"
+topic: science-climate-space
 tags:
-  - value: desci
-    label: Decentralized Science
+  - desci
 tech:
   - filecoin
   - ipfs

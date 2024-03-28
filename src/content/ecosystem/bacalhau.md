@@ -6,12 +6,9 @@ updated-on: "2024-01-05T21:34:29.751Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Bacalhau is a platform for fast, cost-efficient, and secure computation by running jobs where the data is generated and stored."
-topic:
-  value: tooling-productivity
-  label: Tooling & Productivity
+topic: tooling-productivity
 tags:
-  - value: developer-tools
-    label: Developer Tools
+  - developer-tools
 tech:
   - filecoin
   - ipfs

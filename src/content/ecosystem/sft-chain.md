@@ -6,16 +6,11 @@ updated-on: "2024-02-05T17:57:11.357Z"
 published-on: "2024-02-05T17:57:11.368Z"
 featured: false
 description: "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates with the Filecoin ecosystem, focusing on DePIN."
-topic:
-  value: artificial-intelligence
-  label: Artificial Intelligence
+topic: artificial-intelligence
 tags:
-  - value: depin
-    label: Decentralized Personal Information Networks
-  - value: infrastructure
-    label: Infrastructure
-  - value: storage-infrastructure
-    label: Storage Infrastructure
+  - depin
+  - infrastructure
+  - storage-infrastructure
 tech:
   - filecoin
 image:

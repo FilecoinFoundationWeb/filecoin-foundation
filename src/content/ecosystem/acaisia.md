@@ -6,16 +6,11 @@ updated-on: 2024-01-12T19:56:32.835Z
 published-on: 2024-01-12T19:56:32.887Z
 featured: false
 description: "By leveraging decentralized technologies, Acaisia offers affordable, secure, and transparent computing and storage options."
-topic:
-  value: tooling-productivity
-  label: Tooling & Productivity
+topic: tooling-productivity
 tags:
-  - value: enterprise
-    label: Enterprise
-  - value: gpus
-    label: GPUs
-  - value: sealing
-    label: Sealing
+  - enterprise
+  - gpus
+  - sealing
 tech:
   - filecoin
 image:

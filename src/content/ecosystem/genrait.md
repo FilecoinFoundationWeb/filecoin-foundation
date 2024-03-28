@@ -6,14 +6,10 @@ updated-on: 2024-01-05T21:37:21.385Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "GenRAIT gives scientists a platform to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
-topic:
-  value: science-climate-space
-  label: "Science, Climate & Space"
+topic: science-climate-space
 tags:
-  - value: desci
-    label: Decentralized Science
-  - value: health
-    label: Health
+  - desci
+  - health
 tech:
   - filecoin
   - ipfs

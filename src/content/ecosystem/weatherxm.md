@@ -6,14 +6,10 @@ updated-on: 2024-01-05T16:11:14.388Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "WeatherXM is a community-powered weather network."
-topic:
-  value: science-climate-space
-  label: "Science, Climate & Space"
+topic: science-climate-space
 tags:
-  - value: climate
-    label: Climate
-  - value: depin
-    label: Decentralized Personal Information Networks
+  - climate
+  - depin
 tech:
   - ipfs
 image:

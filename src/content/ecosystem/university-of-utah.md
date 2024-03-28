@@ -6,14 +6,10 @@ updated-on: "2024-01-04T22:40:28.834Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "University of Utah’s Center for Extreme Data Management Analysis and Visualization (CEDMAV) works with Filecoin Storage Provider Seal Storage to store scientific research data including combustion, simulations, earth, and satellite data."
-topic:
-  value: "education-academia-health"
-  label: "Education, Academia & Health"
+topic: "education-academia-health"
 tags:
-  - value: "universities"
-    label: "Universities"
-  - value: "climate"
-    label: "Climate"
+  - "universities"
+  - "climate"
 tech:
   - "filecoin"
   - "ipfs"

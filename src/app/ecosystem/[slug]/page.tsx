@@ -135,9 +135,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
         <ul className="flex gap-3 list-none flex-wrap">
           {tags.map((tag) => (
-            <li key={tag.value} className="ml-0">
+            <li key={tag} className="ml-0">
               <span className="px-2 py-1 bg-brand-800 text-white rounded-lg text-sm font-medium uppercase border-white border">
-                {tag.label}
+                {tag}
               </span>
             </li>
           ))}

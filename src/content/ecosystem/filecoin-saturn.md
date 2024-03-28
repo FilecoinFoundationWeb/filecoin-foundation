@@ -6,14 +6,10 @@ updated-on: 2024-01-05T21:36:21.464Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Filecoin Saturn is an open-source, community-run Content Delivery Network (CDN) built on Filecoin's retrieval market where its users serve as node operators."
-topic:
-  value: tooling-productivity
-  label: Tooling & Productivity
+topic: tooling-productivity
 tags:
-  - value: data-retrieval
-    label: Data Retrieval
-  - value: depin
-    label: Decentralized Personal Information Networks
+  - data-retrieval
+  - depin
 tech:
   - filecoin
   - ipfs

@@ -6,16 +6,11 @@ updated-on: 2024-02-26T21:29:27.678Z
 published-on: 2024-02-26T21:29:27.688Z
 featured: false
 description: "Develops decentralized infrastructure for onloading and extracting large amounts of geospatial data."
-topic:
-  value: science-climate-space
-  label: Science, Climate & Space
+topic: science-climate-space
 tags:
-  - value: universities
-    label: Universities
-  - value: space
-    label: Space
-  - value: data-storage-management
-    label: Data Storage & Management
+  - universities
+  - space
+  - data-storage-management
 tech:
   - filecoin
 image:
