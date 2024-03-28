@@ -8,7 +8,10 @@ image:
   url: /assets/images/acaisia-logo_white.png
   alt: Acaisia Logo
 topic: education-academia-health
-tags: enterprise
+tags:
+  - enterprise
+  - gpus
+  - sealing
 description: By leveraging decentralized technologies, Acaisia offers
   affordable, secure, and transparent computing and storage options.
 website: https://acaisia.com
