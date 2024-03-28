@@ -8,13 +8,7 @@ image:
   url: /assets/images/acaisia-logo_white.png
   alt: Acaisia Logo
 topic: tooling-productivity
-tags:
-  - value: enterprise
-    label: Enterprise
-  - value: gpus
-    label: GPUs
-  - value: sealing
-    label: Sealing
+tags: enterprise
 description: By leveraging decentralized technologies, Acaisia offers
   affordable, secure, and transparent computing and storage options.
 website: https://acaisia.com
