@@ -33,7 +33,7 @@ function createPathObject(
   path: PathValues,
   label: string,
   includesEntries: boolean = false,
-  customPath?: string
+  customPath?: string,
 ): PathConfig {
   const config: PathConfig = {
     path,
@@ -48,8 +48,8 @@ function createPathObject(
 }
 
 export const PATHS = {
-  ABOUT: createPathObject('/about', 'About Us'),
-  BLOG: createPathObject('/blog', 'Blog', true),
+  ABOUT: createPathObject('/about', 'About'),
+  BLOG: createPathObject('/blog', 'News & Blog', true),
   CASE_STUDIES: createPathObject('/case-studies', 'Case Studies', true),
   ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem', true),
   EVENTS: createPathObject('/events', 'Events', true),
@@ -62,7 +62,7 @@ export const PATHS = {
     '/public-data/awards',
     'Public Data Awards',
     false,
-    '/awards'
+    '/awards',
   ),
   PUBLIC_DATA: createPathObject('/public-data', 'Public Data'),
   TERMS: createPathObject('/terms', 'Terms and Conditions'),
