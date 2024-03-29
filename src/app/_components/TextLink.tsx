@@ -16,7 +16,7 @@ export function TextLink({
   ...rest
 }: TextLinkProps) {
   const isInternalLink = href.startsWith('/') || href.startsWith('#')
-  const baseStyles = `underline`
+  const baseStyles = `text-brand-300 hover:underline focus:outline-2 focus:outline-white`
 
   className = clsx(baseStyles, className)
 
