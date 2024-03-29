@@ -118,21 +118,9 @@ collections:
         fields:
           - *header_config
           - *meta_config
-      - name: "awards"
-        label: "Awards"
-        file: "src/content/pages/awards.md"
-        fields:
-          - *header_config
-          - *meta_config
       - name: "get-involved"
         label: "Get Involved"
         file: "src/content/pages/get-involved.md"
-        fields:
-          - *header_config
-          - *meta_config
-      - name: "public-data"
-        label: "Public Data"
-        file: "src/content/pages/public-data.md"
         fields:
           - *header_config
           - *meta_config
