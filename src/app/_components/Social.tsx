@@ -1,38 +1,10 @@
-import {
-  Butterfly,
-  GithubLogo,
-  LinkedinLogo,
-  RedditLogo,
-  SlackLogo,
-  TwitterLogo,
-  YoutubeLogo,
-} from '@phosphor-icons/react/dist/ssr'
-
-import {
-  FILECOIN_FOUNDATION_URLS,
-  FILECOIN_URLS,
-} from '@/constants/siteMetadata'
-
-const socialIcons = {
-  bluesky: Butterfly,
-  github: GithubLogo,
-  linkedin: LinkedinLogo,
-  reddit: RedditLogo,
-  slack: SlackLogo,
-  twitter: TwitterLogo,
-  youtube: YoutubeLogo,
-}
-
-const socialLinks = {
-  ...FILECOIN_FOUNDATION_URLS.social,
-  ...FILECOIN_URLS.social,
-}
+import { socialIcons, socialLinks, SocialIconKey } from '@/utils/socialConfig'
 
 export function Social() {
   return (
     <ul className="flex flex-wrap items-center justify-between gap-4 px-3">
       {Object.entries(socialLinks).map(([key, { label, href }]) => {
-        const IconComponent = socialIcons[key as keyof typeof socialIcons]
+        const IconComponent = socialIcons[key as SocialIconKey]
 
         return (
           <li key={key}>
