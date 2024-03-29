@@ -7,18 +7,15 @@ import { PATHS } from '@/constants/paths'
 
 const navigationItems = [
   PATHS.ABOUT,
-  PATHS.BLOG,
   PATHS.GOVERNANCE,
   PATHS.ECOSYSTEM,
-  PATHS.CASE_STUDIES,
-  PATHS.GRANTS,
   PATHS.GET_INVOLVED,
-  PATHS.EVENTS,
+  PATHS.BLOG,
 ]
 
 function NavigationLink({ label, path }: { label: string; path: string }) {
   return (
-    <li className="mr-5 whitespace-nowrap last:mr-0">
+    <li className="whitespace-nowrap last:mr-0">
       <TextLink href={path}>{label}</TextLink>
     </li>
   )
@@ -26,16 +23,16 @@ function NavigationLink({ label, path }: { label: string; path: string }) {
 
 export function Navigation() {
   return (
-    <nav className="flex items-center justify-between pb-6">
+    <nav className="mb-6 flex justify-between gap-12 md:items-center">
       <Link
-        className="mr-12 block flex-shrink-0"
+        className="flex-shrink-0 outline-white focus:outline-2"
         href={PATHS.HOME.path}
         aria-label="Go to homepage"
       >
         <Logo />
         <span className="sr-only">Home</span>
       </Link>
-      <ul className="m-0 flex list-none items-center p-0">
+      <ul className="gap-5 md:flex">
         {navigationItems.map((item) => (
           <NavigationLink key={item.path} label={item.label} path={item.path} />
         ))}
