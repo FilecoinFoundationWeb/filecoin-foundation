@@ -8,7 +8,7 @@ import { TextLink } from '@/components/TextLink'
 import { PATHS, PathValues } from '@/constants/paths'
 import {
   FILECOIN_FOUNDATION_URLS,
-  FILECOIN_URLS
+  FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
 type NavigationListItem = {
@@ -25,7 +25,7 @@ const navigationItems = [
   PATHS.ABOUT,
   PATHS.GET_INVOLVED,
   PATHS.ECOSYSTEM,
-  PATHS.BLOG
+  PATHS.BLOG,
 ]
 
 const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS]
@@ -51,7 +51,8 @@ export function Footer() {
       <hr />
       <Logo />
       <p>
-        For big ideas and news from the ecosystem, subscribe to our newsletter.
+        For the latest big ideas and news from the Filecoin ecosystem and the
+        decentralized web, subscribe to our newsletter.
       </p>
       <Button
         className="sm:self-start"
