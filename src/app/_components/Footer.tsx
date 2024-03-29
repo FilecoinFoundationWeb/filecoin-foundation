@@ -90,8 +90,9 @@ export function Footer() {
         &copy; {new Date().getFullYear()} Content on this site is licensed under
         a{' '}
         <TextLink href="https://creativecommons.org/licenses/by/4.0/">
-          Creative Commons Attribution 4.0 International license.
+          Creative Commons Attribution 4.0 International license
         </TextLink>
+        .
       </p>
     </footer>
   )
