@@ -79,7 +79,7 @@ export function Card({
           >
             {title}
           </Heading>
-          <p className="line-clamp-3 overflow-hidden text-ellipsis text-brand-100">
+          <p className="line-clamp-3 overflow-hidden text-ellipsis">
             {description}
           </p>
         </div>

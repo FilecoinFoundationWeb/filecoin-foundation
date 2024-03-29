@@ -13,7 +13,7 @@ export function PageHeader({ title, description, link }: PageHeaderProps) {
       <Heading className="mb-4" tag="h1" variant="4xl">
         {title}
       </Heading>
-      <p className="text-brand-100">{description}</p>
+      <p>{description}</p>
       {link && <TextLink href={link.href}>{link.text}</TextLink>}
     </header>
   )
