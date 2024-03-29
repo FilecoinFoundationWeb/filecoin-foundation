@@ -32,6 +32,6 @@ Working hand-in-hand with the Internet Archive, the Filecoin Foundation and FFDW
 
 The first initiative between Filecoin Foundation, FFDW, and the Internet Archive to advance the Democracy’s Library project will focus on the collection, preservation, and accessibility of U.S. and Canadian government documents in partnership with the Internet Archive Canada.
 
-This collaboration dovetails with Filecoin Foundation’s [Public Data Commons](https://fil.org/public-data/) initiative, a program focused on making storage for government datasets across the globe more resilient, permanent, and cost-effective using the Filecoin network
+This collaboration dovetails with Filecoin Foundation’s Public Data Commons initiative, a program focused on making storage for government datasets across the globe more resilient, permanent, and cost-effective using the Filecoin network
 
 “On today’s internet, data is stored by just a few intermediaries, making our data vulnerable to single points of failure,” said Marta Belcher, chair and president of Filecoin Foundation and FFDW. “The decentralized web offers an alternative in which the availability of information is not dependent on one company or server. This provides a more robust and resilient platform for humanity’s most important information, including precious government datasets that belong in the hands of the public. We are delighted to support the Internet Archive’s efforts to build Democracy’s Library to ensure free, open access to government datasets for all.”

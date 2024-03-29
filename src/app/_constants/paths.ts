@@ -15,8 +15,6 @@ export type PathValues =
   | '/grants'
   | '/'
   | '/privacy-policy'
-  | '/public-data/awards'
-  | '/public-data'
   | '/terms'
 
 export interface PathConfig {
@@ -58,12 +56,5 @@ export const PATHS = {
   GRANTS: createPathObject('/grants', 'Grants'),
   HOME: createPathObject('/', 'Home', false, '/home'),
   PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
-  PUBLIC_DATA_AWARDS: createPathObject(
-    '/public-data/awards',
-    'Public Data Awards',
-    false,
-    '/awards',
-  ),
-  PUBLIC_DATA: createPathObject('/public-data', 'Public Data'),
   TERMS: createPathObject('/terms', 'Terms and Conditions'),
 } as const
