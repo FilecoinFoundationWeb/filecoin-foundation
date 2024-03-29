@@ -1,49 +1,96 @@
 'use client'
 
+import { Button } from '@/components/Button'
+import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
-import { PATHS } from '@/constants/paths'
+import { PATHS, PathValues } from '@/constants/paths'
 import {
   FILECOIN_FOUNDATION_URLS,
-  FILECOIN_URLS,
+  FILECOIN_URLS
 } from '@/constants/siteMetadata'
+
+type NavigationListItem = {
+  label: string
+  path: PathValues
+}
+
+type NavigationList = {
+  title: string
+  items: NavigationListItem[]
+}
+
+const navigationItems = [
+  PATHS.ABOUT,
+  PATHS.GET_INVOLVED,
+  PATHS.ECOSYSTEM,
+  PATHS.BLOG
+]
+
+const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS]
+
+function NavigationList({ title, items }: NavigationList) {
+  return (
+    <div>
+      <span className="mb-6 block font-bold">{title}</span>
+      <ul className="flex flex-col gap-3">
+        {items.map(({ label, path }) => (
+          <li key={path}>
+            <TextLink href={path}>{label}</TextLink>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
 export function Footer() {
   return (
-    <footer className="py-8">
+    <footer className="mt-16 flex flex-col gap-6">
       <hr />
-      <div className="flex justify-between">
-        <div>
-          <p className="text-lg font-bold">Contact Us</p>
+      <Logo />
+      <p>
+        For big ideas and news from the ecosystem, subscribe to our newsletter.
+      </p>
+      <Button
+        className="sm:self-start"
+        variant="primary"
+        href={FILECOIN_FOUNDATION_URLS.newsletter}
+      >
+        Sign Up
+      </Button>
+
+      <hr className="mt-6" />
+      <Social />
+      <hr className="mb-6" />
+
+      <div className="flex flex-wrap gap-8 sm:gap-10">
+        <NavigationList title="Browse" items={navigationItems} />
+        <NavigationList title="Legal" items={legalItems} />
+
+        <div className="flex flex-col gap-4">
+          <span className="font-bold">Contact Us</span>
           <p>
             For media and collaboration inquiries,{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.email}>
-              drop us a line.
+              Drop us a line
             </TextLink>
           </p>
           <p>
             For more information on our ecosystem grants,{' '}
-            <TextLink href={FILECOIN_URLS.grants.email}>email us</TextLink>.
+            <TextLink href={FILECOIN_URLS.grants.email}>Email us</TextLink>
           </p>
         </div>
-        <ul></ul>
       </div>
-      <div className="mt-4">
-        <div className="mb-2 flex gap-4">
-          <TextLink href={PATHS.PRIVACY_POLICY.path}>
-            {PATHS.PRIVACY_POLICY.label}
-          </TextLink>
-          <TextLink href={PATHS.TERMS.path}>{PATHS.TERMS.label}</TextLink>
-        </div>
-        <p>
-          Content on this site is licensed under a{' '}
-          <TextLink href="https://creativecommons.org/licenses/by/4.0/">
-            Creative Commons Attribution 4.0 International license.
-          </TextLink>
-        </p>
-        <Social />
-      </div>
+
+      <hr />
+      <p className="text-center">
+        Content on this site is licensed under a{' '}
+        <TextLink href="https://creativecommons.org/licenses/by/4.0/">
+          Creative Commons Attribution 4.0 International license.
+        </TextLink>
+      </p>
     </footer>
   )
 }
