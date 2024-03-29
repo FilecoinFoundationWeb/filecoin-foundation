@@ -87,7 +87,8 @@ export function Footer() {
 
       <hr />
       <p className="text-center">
-        Content on this site is licensed under a{' '}
+        &copy; {new Date().getFullYear()} Content on this site is licensed under
+        a{' '}
         <TextLink href="https://creativecommons.org/licenses/by/4.0/">
           Creative Commons Attribution 4.0 International license.
         </TextLink>
