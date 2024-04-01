@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import '@/styles/globals.scss'
 
-import { BreadCrumbs } from '@/components/BreadCrumbs'
+import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapper'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { NetlifyIdentityManager } from '@/components/NetlifyIdentityManager'
