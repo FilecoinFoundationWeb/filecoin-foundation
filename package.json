@@ -10,6 +10,10 @@
     "lint": "next lint --fix",
     "validate-md": "node scripts/validateMarkdown.js"
   },
+  "engines": {
+    "node": "21.x",
+    "npm": "10.x"
+  },
   "dependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-react": "^7.23.3",
