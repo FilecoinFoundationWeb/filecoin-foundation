@@ -1,3 +1,4 @@
+import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { Button } from '@/components/Button'
@@ -70,6 +71,29 @@ const whatWeDoData = [
   },
 ]
 
+const boardMembersData = [
+  {
+    name: 'Marta Belcher',
+    title: 'President & Chair, Filecoin',
+    linkedin: 'https://www.linkedin.com/in/martabelcher/',
+  },
+  {
+    name: 'Brian Behlendorf',
+    title: 'Chief AI Strategist, Linux Foundation',
+    linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
+  },
+  {
+    name: 'Marcia Hofmann',
+    title: 'Electronic Privacy Attorney',
+    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
+  },
+  {
+    name: 'Nicole Wong',
+    title: 'Former Deputy U.S. Chief',
+    linkedin: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
+  },
+]
+
 export default function About() {
   return (
     <>
@@ -103,6 +127,30 @@ export default function About() {
                 description={description}
                 borderColor="brand-300"
               />
+            ))}
+          </CardLayout>
+        </PageSection>
+
+        <PageSection kicker="Who We Are" title="Board Members">
+          <CardLayout type="blogPost">
+            {boardMembersData.map(({ name, title, linkedin }) => (
+              <Card
+                key={name}
+                title={
+                  <span className="inline-flex items-center gap-3">
+                    <span>{name}</span>
+                    <a
+                      href={linkedin}
+                      className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline"
+                      aria-label={`Find ${name} on LinkedIn (opens in new window)`}
+                    >
+                      <LinkedinLogo size={24} aria-hidden={true} />
+                    </a>
+                  </span>
+                }
+              >
+                <p className="text-brand-300">{title}</p>
+              </Card>
             ))}
           </CardLayout>
         </PageSection>

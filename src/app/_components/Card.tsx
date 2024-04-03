@@ -8,8 +8,8 @@ import type { Route } from 'next'
 import { Heading } from '@/components/Heading'
 
 export type CardProps = {
-  title: string
-  description: string
+  title: string | React.ReactNode
+  description?: string
   cta?: {
     href: Route
   }
@@ -20,6 +20,7 @@ export type CardProps = {
   }
   borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
   as?: React.ElementType
+  children?: React.ReactNode
 }
 
 const borderStyles = {
@@ -43,6 +44,7 @@ export function Card({
   image,
   borderColor = 'brand-500',
   as: Tag = 'li',
+  children,
 }: CardProps) {
   return (
     <Tag
@@ -66,7 +68,9 @@ export function Card({
         <Heading tag="h3" variant="lg" className="line-clamp-3 text-ellipsis">
           {title}
         </Heading>
-        <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
+        {description && (
+          <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
+        )}
         {cta && (
           <Link
             href={cta.href}
@@ -78,6 +82,7 @@ export function Card({
             </span>
           </Link>
         )}
+        {children && children}
       </div>
     </Tag>
   )
