@@ -15,7 +15,7 @@ const blogPosts = getBlogPostsData()
 
 export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
   const featuredBlogPosts = blogPosts
-    .filter((post) => post.featured)
+    // .filter((post) => post.featured)
     .slice(0, maxPosts)
 
   if (featuredBlogPosts.length === 0) {
@@ -24,17 +24,15 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
 
   return (
     <CardLayout>
-      {blogPosts.map(({ title, description, slug, image }) => (
+      {featuredBlogPosts.map(({ title, description, slug, image }) => (
         <Card
           key={slug}
           title={title}
           description={description}
           cta={{
-            type: 'read',
             href: `${PATHS.BLOG.path}/${slug}` as Route,
           }}
-          image={{ type: 'blogPost', ...image }}
-          style="muted"
+          image={image}
         />
       ))}
     </CardLayout>

@@ -1,11 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import {
-  BookOpen,
-  MagnifyingGlass,
-  UserPlus,
-} from '@phosphor-icons/react/dist/ssr'
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import type { Route } from 'next'
 
@@ -15,22 +11,21 @@ export type CardProps = {
   title: string
   description: string
   cta: {
-    type: 'connect' | 'learn' | 'read'
     href: Route
   }
+  entryType?: 'blogPost' | 'caseStudy'
   image?: {
     url: string
     alt: string
-    type: 'blogPost' | 'caseStudy'
   }
-  style?: 'muted' | 'vibrant'
+  borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
   as?: React.ElementType
 }
 
-const ctaConfig = {
-  connect: { icon: UserPlus, text: 'Connect' },
-  learn: { icon: MagnifyingGlass, text: 'Learn More' },
-  read: { icon: BookOpen, text: 'Read More' },
+const borderStyles = {
+  'brand-300': 'border-brand-300',
+  'brand-500': 'border-brand-500',
+  'brand-600': 'border-brand-600',
 }
 
 const imageSizes = {
@@ -44,55 +39,44 @@ export function Card({
   title,
   description,
   cta,
+  entryType = 'blogPost',
   image,
-  style = 'vibrant',
+  borderColor = 'brand-500',
   as: Tag = 'li',
 }: CardProps) {
-  const Icon = ctaConfig[cta.type].icon
-
   return (
     <Tag
       className={clsx(
-        'relative flex min-h-52 flex-col justify-between gap-3 rounded-lg bg-brand-700 bg-opacity-30 backdrop-blur-xl',
-        style === 'vibrant'
-          ? 'border border-brand-500'
-          : 'border border-brand-300',
+        'relative flex flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        borderStyles[borderColor],
       )}
     >
-      <div>
-        {image?.url && (
-          <div className="relative block h-52">
-            <Image
-              fill
-              src={image.url}
-              alt={image.alt}
-              sizes={imageSizes[image.type]}
-              className="block rounded-t-lg object-cover"
-            />
-          </div>
-        )}
-        <div className="flex flex-col gap-2 p-4">
-          <Heading
-            tag="h3"
-            variant="lg"
-            className="overflow-hidden text-ellipsis"
-          >
-            {title}
-          </Heading>
-          <p className="line-clamp-3 overflow-hidden text-ellipsis">
-            {description}
-          </p>
+      {image?.url && (
+        <div className="relative block h-52">
+          <Image
+            fill
+            src={image.url}
+            alt={image.alt}
+            sizes={imageSizes[entryType]}
+            className="block rounded-lg object-cover px-1 pt-1"
+          />
         </div>
+      )}
+      <div className="flex flex-col gap-3 p-4">
+        <Heading tag="h3" variant="lg" className="line-clamp-3 text-ellipsis">
+          {title}
+        </Heading>
+        <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
+        <Link
+          href={cta.href}
+          className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
+        >
+          <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+            <BookOpen size={24} aria-hidden={true} />
+            <span>Learn More</span>
+          </span>
+        </Link>
       </div>
-      <div className="inline-flex items-center gap-2 p-4 font-medium text-brand-300">
-        <Icon size={24} weight="bold" />
-        <span>{ctaConfig[cta.type].text}</span>
-      </div>
-      <Link
-        className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
-        href={cta.href}
-        aria-label={`Learn more about ${title}`}
-      />
     </Tag>
   )
 }

@@ -1,12 +1,20 @@
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import {
+  ArrowUpRight,
+  Code,
+  HardDrives,
+  MagnifyingGlass,
+  Money,
+  Person,
+} from '@phosphor-icons/react/dist/ssr'
 
 import { Button } from '@/components/Button'
-import { Card, CardProps } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
 import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
+import { Heading } from '@/components/Heading'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { SectionDivider } from '@/components/SectionDivider'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -15,47 +23,9 @@ import { attributes } from '@/content/pages/home.md'
 const { title, description, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 export const metadata = createMetadata(seo, PATHS.HOME.path)
-
-const exploreSectionCards: CardProps[] = [
-  {
-    title: 'Builder Resources',
-    description:
-      'Join thousands of developers and entrepreneurs building on the Filecoin network.',
-    cta: {
-      type: 'learn',
-      href: '#',
-    },
-  },
-  {
-    title: 'Storage Resources',
-    description:
-      'Join the Filecoin network as a Storage Provider or leverage the network to store your data with robust and secure storage. ',
-    cta: {
-      type: 'read',
-      href: '#',
-    },
-  },
-  {
-    title: 'Grants Program',
-    description:
-      'Learn more about support for teams building on the Filecoin network.',
-    cta: {
-      type: 'learn',
-      href: PATHS.GRANTS.path,
-    },
-  },
-  {
-    title: 'Meet the Community',
-    description:
-      'Connect and collaborate with the Filecoin community around the globe! ',
-    cta: {
-      type: 'connect',
-      href: '#',
-    },
-  },
-]
 
 export default function Home() {
   return (
@@ -63,13 +33,13 @@ export default function Home() {
       <div className="flex flex-col gap-6 md:w-1/2">
         <PageHeader title={title} description={description} />
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
-          <Button className="flex-1" variant="primary" href="#">
+          <Button className="flex-1" variant="primary" href={PATHS.ABOUT.path}>
             Learn More
           </Button>
           <Button
             className="flex-1"
             variant="ghost"
-            href="#"
+            href={FILECOIN_URLS.site}
             icon={<ArrowUpRight size={24} weight="bold" />}
           >
             Discover Filecoin Technology
@@ -77,26 +47,86 @@ export default function Home() {
         </div>
       </div>
 
-      <PageSection
-        kicker="Explore"
-        title="Explore the Ecosystem"
-        description="Navigate the Ecosystem Explorer, a crowd-sourced and open database to showcase the projects powering the Filecoin network. Already building on the network? Add your project!"
-      >
-        <CardLayout>
-          {exploreSectionCards.map(({ title, description, cta }) => (
-            <Card
-              key={title}
-              title={title}
-              description={description}
-              cta={{
-                type: cta.type,
-                href: cta.href,
+      <section>
+        <SectionDivider title="Explore" />
+        <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
+          <div className="flex flex-col gap-5 sm:w-1/2 sm:gap-4 lg:w-8/12 lg:flex-row lg:items-center lg:justify-center lg:gap-16">
+            <Heading tag="h2" variant="3xl" className="self-start">
+              The Filecoin Ecosystem
+            </Heading>
+            <div className="grid gap-4 lg:flex lg:max-w-[23rem] lg:flex-col lg:items-center lg:justify-center">
+              <HomeExploreSectionCard
+                heading={{
+                  icon: <MagnifyingGlass size={24} />,
+                  title: 'Explore the Ecosystem',
+                }}
+                cta={{
+                  href: PATHS.ECOSYSTEM.path,
+                  text: 'Explore',
+                }}
+              >
+                Navigate the Ecosystem Explorer, a crowd-sourced and open
+                database to showcase the projects powering the Filecoin network.
+                Already building on the network? Add your project!
+              </HomeExploreSectionCard>
+              <HomeExploreSectionCard
+                heading={{
+                  icon: <Code size={24} />,
+                  title: 'Builder Resources',
+                }}
+                cta={{
+                  href: '#',
+                  text: 'Learn More',
+                }}
+              >
+                Join thousands of developers and entrepreneurs building on the
+                Filecoin network.
+              </HomeExploreSectionCard>
+            </div>
+          </div>
+          <div className="grid gap-4 sm:w-1/2 lg:w-5/12 lg:max-w-[23rem]">
+            <HomeExploreSectionCard
+              heading={{
+                icon: <Money size={24} />,
+                title: 'Grants Program',
               }}
-              style="muted"
-            />
-          ))}
-        </CardLayout>
-      </PageSection>
+              cta={{
+                href: PATHS.GRANTS.path,
+                text: 'Learn More',
+              }}
+            >
+              Learn more about support for teams building on the Filecoin
+              network.
+            </HomeExploreSectionCard>
+            <HomeExploreSectionCard
+              heading={{
+                icon: <Person size={24} />,
+                title: 'Meet the Community',
+              }}
+              cta={{
+                href: PATHS.GET_INVOLVED.path,
+                text: 'Connect',
+              }}
+            >
+              Connect and collaborate with the Filecoin community around the
+              globe!
+            </HomeExploreSectionCard>
+            <HomeExploreSectionCard
+              heading={{
+                icon: <HardDrives size={24} />,
+                title: 'Storage Resources',
+              }}
+              cta={{
+                href: '#',
+                text: 'Learn More',
+              }}
+            >
+              Join the Filecoin network as a Storage Provider or leverage the
+              network to store your data with robust and secure storage.
+            </HomeExploreSectionCard>
+          </div>
+        </div>
+      </section>
 
       <PageSection
         kicker="Learn"
