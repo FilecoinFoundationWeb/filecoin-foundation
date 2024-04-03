@@ -23,7 +23,7 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
   }
 
   return (
-    <CardLayout>
+    <CardLayout type="blogPost">
       {featuredBlogPosts.map(({ title, description, slug, image }) => (
         <Card
           key={slug}

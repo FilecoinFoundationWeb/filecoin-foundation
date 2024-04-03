@@ -1,3 +1,5 @@
+import { PATHS } from './paths'
+
 const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
@@ -8,6 +10,10 @@ const FIL_PLUS_URLS = {
 }
 
 const FILECOIN_FOUNDATION_URLS = {
+  annualReports: {
+    latest: `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
+    previous: `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
+  },
   ecosystem: {
     submitOrUpdateProjectForm:
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',

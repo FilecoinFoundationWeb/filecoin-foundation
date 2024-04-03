@@ -1,12 +1,14 @@
+import { Files, LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import clsx from 'clsx'
 import { WebPage, WithContext } from 'schema-dts'
 
+import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
-import { Section } from '@/components/Section'
-import { SectionDeepDive } from '@/components/SectionDeepDive'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
-import { VideoArticle } from '@/components/VideoArticle'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -35,13 +37,6 @@ const aboutPageStructuredData: WithContext<WebPage> = {
   about: {
     '@type': 'Organization',
     name: ORGANIZATION_NAME,
-    founder: [
-      {
-        '@type': 'Person',
-        name: 'Marta Belcher', // Adjust
-      },
-    ],
-    foundingDate: '2024-01-01', // Adjust
     contactPoint: [
       {
         '@type': 'ContactPoint',
@@ -56,143 +51,244 @@ const aboutPageStructuredData: WithContext<WebPage> = {
     ],
   },
   sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
-    (link) => link.href
+    (link) => link.href,
   ),
+}
+
+const whatWeDoData = [
+  {
+    title: 'Governance',
+    description:
+      'As an open-source project, the Foundation governs the Filecoin ecosystem in a way that’s transparent, community-driven, and in line with the community’s open-source ethos.',
+  },
+  {
+    title: 'Research & Development',
+    description:
+      'The Foundation funds research and development projects for decentralized web technologies, including projects and teams building on the network and advancing our mission to preserve humanity’s most important information.',
+  },
+  {
+    title: 'Growth',
+    description:
+      'The Foundation hosts, sponsors, and supports events around the world, leading conversations around decentralization web technology and bringing new builders, clients, and storage providers into the ecosystem.',
+  },
+]
+
+const boardMembersData = [
+  {
+    name: 'Marta Belcher',
+    title: 'President & Chair, Filecoin',
+    linkedIn: 'https://www.linkedin.com/in/martabelcher/',
+  },
+  {
+    name: 'Marcia Hofmann',
+    title: 'Electronic Privacy Attorney',
+    linkedIn: 'https://www.linkedin.com/in/marciahofmann/',
+  },
+  {
+    name: 'Brian Behlendorf',
+    title: 'Chief AI Strategist, Linux Foundation',
+    linkedIn: 'https://www.linkedin.com/in/brianbehlendorf/',
+  },
+
+  {
+    name: 'Nicole Wong',
+    title: 'Former Deputy U.S. Chief',
+    linkedIn: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
+  },
+]
+
+const advisorsData = [
+  {
+    name: 'Brewster Kahle',
+    title: 'Founder, Internet Archive',
+    linkedIn: 'https://www.linkedin.com/in/brewster-kahle-2a647652/',
+  },
+  {
+    name: 'Veronica McGregor',
+    title: 'Chief Legal Officer, Exodus',
+    linkedIn: 'https://www.linkedin.com/in/vemcgregor/',
+  },
+  {
+    name: 'Denelle Dixon',
+    title: 'CEO, Stellar Development Foundation',
+    linkedIn: 'https://www.linkedin.com/in/denelle-dixon-967a236/',
+  },
+  {
+    name: 'Rye Barcott',
+    title: 'CEO, With Honor',
+    linkedIn: 'https://www.linkedin.com/in/ryebarcott/',
+  },
+  {
+    name: 'Wendy Hanamura',
+    title: 'Director of Partnerships, Internet Archive',
+    linkedIn: 'https://www.linkedin.com/in/wendyhanamura/',
+  },
+  {
+    name: 'Catherine Stihler',
+    title:
+      'Former CEO, Creative Commons & Former Member of European Parliament',
+    linkedIn: 'https://www.linkedin.com/in/catherine-stihler/',
+  },
+  {
+    name: 'Georgia Quinn',
+    title: 'Former General Counsel, Anchorage and CoinList ',
+    linkedIn: 'https://www.linkedin.com/in/georgia-quinn-287bb733/',
+  },
+  {
+    name: 'Joe Lubin',
+    title: 'Founder, Consensys & Cofounder, Ethereum',
+    linkedIn: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
+  },
+  {
+    name: 'Alex Feerst',
+    title: 'CEO, Murmuration Labs & Former General Counsel, Medium',
+    linkedIn: 'https://www.linkedin.com/in/feerst/',
+  },
+  {
+    name: 'Sandra Ro',
+    title: 'CEO, Global Blockchain Business Council',
+    linkedIn: 'https://www.linkedin.com/in/sandraro/',
+  },
+  {
+    name: 'Katie Biber',
+    title: 'Chief Legal Officer, Paradigm',
+    linkedIn: 'https://www.linkedin.com/in/katiebiber/',
+  },
+]
+
+const reportsData = [
+  {
+    title: 'Filecoin Foundation 2023 Annual Report',
+    description:
+      'To get a broader and deeper context on our journey, read the full report.',
+    link: FILECOIN_FOUNDATION_URLS.annualReports.latest,
+  },
+  {
+    title: 'Filecoin Foundation 2022 Annual Report',
+    description:
+      'To get a broader and deeper context on our journey, read the full report.',
+    link: FILECOIN_FOUNDATION_URLS.annualReports.previous,
+  },
+  {
+    title: 'Cryptoeconomics Report',
+    description:
+      'Engage with fellow Web3 builders on Filecoin, exchange insights, and initiate collaborations on future ventures.',
+    link: '',
+  },
+]
+
+type NameWithLinkedInLinkProps = {
+  name: string
+  linkedIn: string
+}
+
+function NameWithLinkedInLink({ name, linkedIn }: NameWithLinkedInLinkProps) {
+  return (
+    <span className="inline-flex items-center gap-3">
+      <Heading tag="h3" variant="lg">
+        {name}
+      </Heading>
+      <a
+        href={linkedIn}
+        className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline-2"
+        aria-label={`Find ${name} on LinkedIn (opens in new window)`}
+      >
+        <LinkedinLogo size={24} aria-hidden={true} />
+      </a>
+    </span>
+  )
 }
 
 export default function About() {
   return (
     <>
       <StructuredDataScript structuredData={aboutPageStructuredData} />
-      <PageHeader title={title} description={description} />
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Our Mission
-        </Heading>
-        <p>
-          The Foundation&apos;s key role is to find ways for the Filecoin
-          community to solve the problems we face as a community, and help
-          facilitate collective action.
-        </p>
-      </section>
+      <div className="flex flex-col gap-24 sm:gap-16">
+        <div className="flex flex-col gap-6 md:w-1/2">
+          <PageHeader title={title} description={description} />
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
+            <Button
+              variant="primary"
+              href={FILECOIN_FOUNDATION_URLS.annualReports.latest}
+            >
+              Learn More in Our Annual Report
+            </Button>
+          </div>
+        </div>
 
-      <Section
-        kicker="Internet of Everyone"
-        title="Filecoin Foundation does not own Filecoin, operate it, or manage it."
-        content={[
-          'It is one of many organizations that cares deeply about Filecoin — its potential, and the values it represents',
-          'However, the foundation has a unique position within that ecosystem to help cultivate research, development, and community engagement.',
-        ]}
-        link={{ href: PATHS.GET_INVOLVED.path, text: 'Join the Community' }}
-      />
-
-      <section>
-        <p>
-          In addition to providing funding, The Filecoin Foundation supports a
-          vibrant, decentralized ecosystem with many independent organizations
-          that provide funding, coordination, and leadership to support
-          Filecoin&apos;s long-term success.
-        </p>
-      </section>
-
-      <Section
-        kicker="Collective Action"
-        title="The Foundation helps the Filecoin community solve problems and facilitates collective action."
-        content="
-          This means resisting the natural tendency of organizations to grow and accumulate value within themselves, and instead cultivating value creation outside the Foundation in the broader Filecoin ecosystem."
-      />
-
-      <section>
-        <Heading tag="h2" variant="xl">
-          Board of Directors
-        </Heading>
-        <p>
-          The Filecoin Foundation (FF) is an independent organization that
-          facilitates governance of the Filecoin network, funds critical
-          development projects, supports the growth of the Filecoin ecosystem,
-          and advocates for Filecoin and the decentralized web.
-        </p>
-        <ul>
-          <li>Marta Belcher</li>
-          <li>Marcia Hofmann</li>
-          <li>Brian Behlendorf</li>
-          <li>Nicole Wong</li>
-        </ul>
-      </section>
-
-      <Section
-        kicker="Advisors"
-        title="The Filecoin Foundation is guided by an extraordinary and accomplished group of advisors."
-        content={
-          <>
-            <p>
-              Leaders from across Web3 and the open-source technology
-              communities have come together to foster the Filecoin ecosystem.
-            </p>
-            <p>
-              Watch{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.social.youtube.href}>
-                our talks
-              </TextLink>{' '}
-              featuring contributions from our advisory panel and be part of the
-              conversation on{' '}
-              <TextLink href={FILECOIN_URLS.social.slack.href}>
-                Filecoin&apos;s Slack
-              </TextLink>
-              .
-            </p>
-          </>
-        }
-      >
-        <ul>
-          <li>
-            <span className="block">Veronica McGregor</span>
-            <span>‍Chief Legal Officer, Exodus</span>
-          </li>
-          <li>
-            <span className="block">Katie Biber</span>
-            <span>General Counsel, Brex</span>
-          </li>
-          <li>
-            <span className="block">Alex Feerst</span>
-            <span>CEO, Murmuration Labs</span>
-          </li>
-          <li>
-            <span className="block">Wendy Hanamura</span>
-            <span>Director of Partnerships, Internet Archive</span>
-          </li>
-          <li>
-            <span className="block">Brewster Kahle</span>
-            <span>Founder, Internet Archive</span>
-          </li>
-          <li>
-            <span className="block">Joe Lubin</span>
-            <span>Founder of ConsenSys and Co-Founder of Ethereum</span>
-          </li>
-          <li>
-            <span className="block">Georgia Quinn</span>
-            <span>General Counsel, Anchorage</span>
-          </li>
-          <li>
-            <span className="block">Sandra Ro</span>
-            <span>CEO, ‍Global Blockchain Business Council</span>
-          </li>
-        </ul>
-      </Section>
-
-      <SectionDeepDive>
-        <VideoArticle
-          title="Humanity's Most Important Records"
-          description="This session highlights the amazing work Starling Labs has done in Ukraine and Syria, with the support of the Filecoin Foundation."
-          href="https://www.youtube.com/watch?v=S91iwPGuV7A"
+        <PageSection
+          kicker="About"
+          title="Our Mission"
+          description="The Foundation’s mission is to preserve humanity’s most important information."
         />
-        <VideoArticle
-          title="Fil+ State of the Union 2022"
-          description="Learn about Filecoin Plus, a program designed to incentivize useful storage on the Filecoin network."
-          href="https://www.youtube.com/watch?v=d_ey6CHjGys"
-        />
-      </SectionDeepDive>
+
+        <PageSection kicker="What We Do" title="Focus Areas">
+          <CardLayout>
+            {whatWeDoData.map(({ title, description }) => (
+              <Card
+                key={title}
+                title={title}
+                description={description}
+                borderColor="brand-300"
+              />
+            ))}
+          </CardLayout>
+        </PageSection>
+
+        <PageSection kicker="Who We Are" title="Board Members">
+          <CardLayout type="blogPost">
+            {boardMembersData.map(({ name, title, linkedIn }) => (
+              <Card
+                key={name}
+                title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
+              >
+                <p className="text-brand-300">{title}</p>
+              </Card>
+            ))}
+          </CardLayout>
+        </PageSection>
+
+        <PageSection
+          kicker="Advisors"
+          title="Advisors"
+          description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
+        >
+          <CardLayout type="blogPost">
+            {advisorsData.map(({ name, title, linkedIn }) => (
+              <Card
+                key={name}
+                title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
+              >
+                <p className="text-brand-300">{title}</p>
+              </Card>
+            ))}
+          </CardLayout>
+        </PageSection>
+
+        <PageSection kicker="Reports" title="Reports">
+          <CardLayout type="reports">
+            {reportsData.map(({ title, description, link }, index) => (
+              <div
+                key={title}
+                className={clsx({
+                  'lg:row-span-2': index === 0,
+                })}
+              >
+                <Card
+                  title={title}
+                  description={description}
+                  cta={{
+                    href: link,
+                    text: 'View Report',
+                    icon: <Files />,
+                  }}
+                />
+              </div>
+            ))}
+          </CardLayout>
+        </PageSection>
+      </div>
     </>
   )
 }

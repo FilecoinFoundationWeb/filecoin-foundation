@@ -5,7 +5,7 @@ type PageSectionProps = {
   kicker: string
   title: string
   description?: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export function PageSection({
@@ -21,7 +21,7 @@ export function PageSection({
         {title}
       </Heading>
       {description && <p className="mb-8">{description}</p>}
-      <div className="flex flex-col gap-6">{children}</div>
+      {children && <div className="flex flex-col gap-6">{children}</div>}
     </section>
   )
 }
