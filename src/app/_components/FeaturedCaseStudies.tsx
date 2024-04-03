@@ -36,6 +36,7 @@ export function FeaturedCaseStudies({
           }}
           image={image}
           borderColor="brand-300"
+          textIsClamped={true}
         />
       ))}
     </CardLayout>

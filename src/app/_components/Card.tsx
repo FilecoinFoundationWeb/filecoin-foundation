@@ -20,6 +20,7 @@ export type CardProps = {
     alt: string
   }
   borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
+  textIsClamped?: boolean
   as?: React.ElementType
   children?: React.ReactNode
 }
@@ -44,6 +45,7 @@ export function Card({
   entryType = 'blogPost',
   image,
   borderColor = 'brand-500',
+  textIsClamped = false,
   as: Tag = 'li',
   children,
 }: CardProps) {
@@ -75,7 +77,14 @@ export function Card({
         )}
 
         {description && (
-          <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
+          <p
+            className={clsx(
+              'mb-10',
+              textIsClamped && 'line-clamp-3 text-ellipsis',
+            )}
+          >
+            {description}
+          </p>
         )}
         {cta && (
           <CustomLink

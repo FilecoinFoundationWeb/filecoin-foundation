@@ -33,6 +33,7 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
             href: `${PATHS.BLOG.path}/${slug}` as Route,
           }}
           image={image}
+          textIsClamped={true}
         />
       ))}
     </CardLayout>

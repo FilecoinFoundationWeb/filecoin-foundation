@@ -55,7 +55,7 @@ const aboutPageStructuredData: WithContext<WebPage> = {
   ),
 }
 
-const whatWeDoData = [
+const focusAreasData = [
   {
     title: 'Governance',
     description:
@@ -225,7 +225,7 @@ export default function About() {
 
         <PageSection kicker="What We Do" title="Focus Areas">
           <CardLayout>
-            {whatWeDoData.map(({ title, description }) => (
+            {focusAreasData.map(({ title, description }) => (
               <Card
                 key={title}
                 title={title}
