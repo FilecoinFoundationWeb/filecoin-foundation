@@ -5,6 +5,7 @@ import { WebPage, WithContext } from 'schema-dts'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
+import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -176,19 +177,20 @@ const reportsData = [
   },
 ]
 
-function NameWithLinkedInLink({
-  name,
-  linkedIn,
-}: {
+type NameWithLinkedInLinkProps = {
   name: string
   linkedIn: string
-}) {
+}
+
+function NameWithLinkedInLink({ name, linkedIn }: NameWithLinkedInLinkProps) {
   return (
     <span className="inline-flex items-center gap-3">
-      <span>{name}</span>
+      <Heading tag="h3" variant="lg">
+        {name}
+      </Heading>
       <a
         href={linkedIn}
-        className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline"
+        className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline-2"
         aria-label={`Find ${name} on LinkedIn (opens in new window)`}
       >
         <LinkedinLogo size={24} aria-hidden={true} />

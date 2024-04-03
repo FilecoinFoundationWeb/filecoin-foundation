@@ -66,9 +66,14 @@ export function Card({
         </div>
       )}
       <div className="flex flex-col gap-3 p-4">
-        <Heading tag="h3" variant="lg" className="line-clamp-3 text-ellipsis">
-          {title}
-        </Heading>
+        {title && typeof title === 'string' ? (
+          <Heading tag="h3" variant="lg" className="line-clamp-3 text-ellipsis">
+            {title}
+          </Heading>
+        ) : (
+          title
+        )}
+
         {description && (
           <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
         )}
