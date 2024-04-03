@@ -45,6 +45,10 @@ This command generates a `.next` folder with the production build. To start the 
 npm run start
 ```
 
+### Formatting
+
+This project uses [Prettier](https://prettier.io/) for automatic code formatting. The shared Prettier configuration is located in `.prettierrc.json`. If you use VSCode, there's a pointer to that file in `.vscode/settings.json` so that the shared configuration takes precedence over your default one.
+
 ### Linting
 
 To lint and fix issues in the codebase:
