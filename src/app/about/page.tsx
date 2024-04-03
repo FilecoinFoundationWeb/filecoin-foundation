@@ -2,6 +2,7 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -66,6 +67,12 @@ export default function About() {
             </Button>
           </div>
         </div>
+
+        <PageSection
+          kicker="About"
+          title="Our Mission"
+          description="The Foundation’s mission is to preserve humanity’s most important information."
+        />
       </div>
     </>
   )
