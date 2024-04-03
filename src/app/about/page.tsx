@@ -1,6 +1,8 @@
 import { WebPage, WithContext } from 'schema-dts'
 
 import { Button } from '@/components/Button'
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -50,6 +52,24 @@ const aboutPageStructuredData: WithContext<WebPage> = {
   ),
 }
 
+const whatWeDoData = [
+  {
+    title: 'Governance',
+    description:
+      'As an open-source project, the Foundation governs the Filecoin ecosystem in a way that’s transparent, community-driven, and in line with the community’s open-source ethos.',
+  },
+  {
+    title: 'Research & Development',
+    description:
+      'The Foundation funds research and development projects for decentralized web technologies, including projects and teams building on the network and advancing our mission to preserve humanity’s most important information.',
+  },
+  {
+    title: 'Growth',
+    description:
+      'The Foundation hosts, sponsors, and supports events around the world, leading conversations around decentralization web technology and bringing new builders, clients, and storage providers into the ecosystem.',
+  },
+]
+
 export default function About() {
   return (
     <>
@@ -73,6 +93,19 @@ export default function About() {
           title="Our Mission"
           description="The Foundation’s mission is to preserve humanity’s most important information."
         />
+
+        <PageSection kicker="What We Do" title="Focus Areas">
+          <CardLayout>
+            {whatWeDoData.map(({ title, description }) => (
+              <Card
+                key={title}
+                title={title}
+                description={description}
+                borderColor="brand-300"
+              />
+            ))}
+          </CardLayout>
+        </PageSection>
       </div>
     </>
   )

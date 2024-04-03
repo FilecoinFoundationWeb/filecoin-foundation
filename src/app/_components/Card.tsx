@@ -10,7 +10,7 @@ import { Heading } from '@/components/Heading'
 export type CardProps = {
   title: string
   description: string
-  cta: {
+  cta?: {
     href: Route
   }
   entryType?: 'blogPost' | 'caseStudy'
@@ -67,15 +67,17 @@ export function Card({
           {title}
         </Heading>
         <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
-        <Link
-          href={cta.href}
-          className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
-        >
-          <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-            <BookOpen size={24} aria-hidden={true} />
-            <span>Learn More</span>
-          </span>
-        </Link>
+        {cta && (
+          <Link
+            href={cta.href}
+            className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
+          >
+            <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+              <BookOpen size={24} aria-hidden={true} />
+              <span>Learn More</span>
+            </span>
+          </Link>
+        )}
       </div>
     </Tag>
   )
