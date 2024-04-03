@@ -1,4 +1,5 @@
-import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import { Files, LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import clsx from 'clsx'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { Button } from '@/components/Button'
@@ -154,6 +155,27 @@ const advisorsData = [
   },
 ]
 
+const reportsData = [
+  {
+    title: 'Filecoin Foundation 2023 Annual Report',
+    description:
+      'To get a broader and deeper context on our journey, read the full report.',
+    link: FILECOIN_FOUNDATION_URLS.annualReports.latest,
+  },
+  {
+    title: 'Filecoin Foundation 2022 Annual Report',
+    description:
+      'To get a broader and deeper context on our journey, read the full report.',
+    link: FILECOIN_FOUNDATION_URLS.annualReports.previous,
+  },
+  {
+    title: 'Cryptoeconomics Report',
+    description:
+      'Engage with fellow Web3 builders on Filecoin, exchange insights, and initiate collaborations on future ventures.',
+    link: '',
+  },
+]
+
 function NameWithLinkedInLink({
   name,
   linkedIn,
@@ -186,7 +208,7 @@ export default function About() {
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
             <Button
               variant="primary"
-              href={FILECOIN_FOUNDATION_URLS.latestAnnualReport}
+              href={FILECOIN_FOUNDATION_URLS.annualReports.latest}
             >
               Learn More in Our Annual Report
             </Button>
@@ -227,7 +249,7 @@ export default function About() {
 
         <PageSection
           kicker="Advisors"
-          title="Advisory Board"
+          title="Advisors"
           description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
         >
           <CardLayout type="blogPost">
@@ -237,6 +259,29 @@ export default function About() {
                 title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
                 description={title}
               />
+            ))}
+          </CardLayout>
+        </PageSection>
+
+        <PageSection kicker="Reports" title="Reports">
+          <CardLayout type="reports">
+            {reportsData.map(({ title, description, link }, index) => (
+              <div
+                key={title}
+                className={clsx({
+                  'lg:row-span-2': index === 0,
+                })}
+              >
+                <Card
+                  title={title}
+                  description={description}
+                  cta={{
+                    href: link,
+                    text: 'View Report',
+                    icon: <Files />,
+                  }}
+                />
+              </div>
             ))}
           </CardLayout>
         </PageSection>

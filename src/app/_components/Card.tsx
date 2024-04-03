@@ -1,17 +1,18 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
-import type { Route } from 'next'
 
+import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 
 export type CardProps = {
   title: string | React.ReactNode
   description?: string
   cta?: {
-    href: Route
+    href: string
+    text?: string
+    icon?: React.ReactNode
   }
   entryType?: 'blogPost' | 'caseStudy'
   image?: {
@@ -49,7 +50,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative flex flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative flex h-full flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
         borderStyles[borderColor],
       )}
     >
@@ -72,15 +73,15 @@ export function Card({
           <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
         )}
         {cta && (
-          <Link
+          <CustomLink
             href={cta.href}
             className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              <BookOpen size={24} aria-hidden={true} />
-              <span>Learn More</span>
+              {cta.icon || <BookOpen size={24} aria-hidden={true} />}
+              <span>{cta.text || 'Learn More'}</span>
             </span>
-          </Link>
+          </CustomLink>
         )}
         {children && children}
       </div>

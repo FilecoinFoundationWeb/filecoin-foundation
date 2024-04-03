@@ -1,3 +1,5 @@
+import { PATHS } from '@/constants/paths'
+
 const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
@@ -8,14 +10,16 @@ const FIL_PLUS_URLS = {
 }
 
 const FILECOIN_FOUNDATION_URLS = {
+  annualReports: {
+    latest: `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
+    previous: `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
+  },
   ecosystem: {
     submitOrUpdateProjectForm:
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
   },
   email: 'mailto:hello@fil.org',
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
-  latestAnnualReport:
-    'https://fil.org/blog/filecoin-foundation-2023-annual-report/', // Adjust
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
     contactForm: 'https://airtable.com/appyPZiiFSUIYFsrA/shrmNURZt1khzB00M',
