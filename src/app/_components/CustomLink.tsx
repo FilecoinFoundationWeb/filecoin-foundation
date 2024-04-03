@@ -2,8 +2,6 @@ import Link from 'next/link'
 
 import type { Route } from 'next'
 
-import { isInternalLink } from '@/utils/isInternalLink'
-
 type CustomLinkProps = {
   href: string
   className?: string
@@ -16,7 +14,9 @@ export function CustomLink({
   children,
   ...rest
 }: CustomLinkProps) {
-  if (isInternalLink(href)) {
+  const isInternalLink = href.startsWith('/') || href.startsWith('#')
+
+  if (isInternalLink) {
     return (
       <Link href={href as Route} className={className} {...rest}>
         {children}
