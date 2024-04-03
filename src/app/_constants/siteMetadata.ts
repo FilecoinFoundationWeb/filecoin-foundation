@@ -1,4 +1,4 @@
-import { PATHS } from '@/constants/paths'
+import { PATHS } from './paths'
 
 const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
