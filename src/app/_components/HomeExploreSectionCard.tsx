@@ -21,7 +21,7 @@ function HeadingWithIcon({
   children: React.ReactNode
 }) {
   return (
-    <div className="flex items-center gap-3">
+    <div className="inline-flex items-center gap-3">
       <span className="text-brand-300" aria-hidden={true}>
         {icon}
       </span>

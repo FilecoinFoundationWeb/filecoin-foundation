@@ -47,7 +47,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative flex min-h-52 flex-col justify-between rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative flex flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
         borderStyles[borderColor],
       )}
     >
@@ -68,13 +68,13 @@ export function Card({
         </Heading>
         <p className="mb-10 line-clamp-3 text-ellipsis">{description}</p>
         <Link
-          className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
           href={cta.href}
+          className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
         >
-          <div className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+          <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
             <BookOpen size={24} aria-hidden={true} />
             <span>Learn More</span>
-          </div>
+          </span>
         </Link>
       </div>
     </Tag>
