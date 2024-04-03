@@ -1,5 +1,3 @@
-import { type Route } from 'next'
-
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 
@@ -31,9 +29,7 @@ export function FeaturedCaseStudies({
           key={slug}
           title={title}
           description={description}
-          cta={{
-            href: `${PATHS.CASE_STUDIES.path}/${slug}` as Route,
-          }}
+          cta={{ href: PATHS.CASE_STUDIES.getPathWithSlugs([slug]) }}
           image={image}
           borderColor="brand-300"
           textIsClamped={true}

@@ -1,5 +1,3 @@
-import { type Route } from 'next'
-
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 
@@ -29,9 +27,7 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
           key={slug}
           title={title}
           description={description}
-          cta={{
-            href: `${PATHS.BLOG.path}/${slug}` as Route,
-          }}
+          cta={{ href: PATHS.BLOG.getPathWithSlugs([slug]) }}
           image={image}
           textIsClamped={true}
         />

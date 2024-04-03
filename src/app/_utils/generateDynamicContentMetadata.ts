@@ -1,22 +1,24 @@
-import { Metadata } from 'next'
-
 import { createMetadata } from '@/utils/createMetadata'
 
-import { DynamicPathValues } from '@/constants/paths'
+import { PathValues } from '@/constants/paths'
+
+type DynamicContentMetadata = {
+  path: PathValues
+  data: { title: string; description?: string; slug: string }
+}
 
 export function generateDynamicContentMetadata({
-  basePath,
+  path,
   data,
-}: {
-  basePath: string
-  data: { title: string; description?: string; slug: string }
-}): Metadata {
+}: DynamicContentMetadata) {
   const seo = {
     title: data.title,
     description: data.description,
   }
 
-  const path = `${basePath}/${data.slug}` as DynamicPathValues
+  if (path == '/blog' || path == '/case-studies' || path == '/events') {
+    return createMetadata(seo, `${path}/${data.slug}`)
+  }
 
   return createMetadata(seo, path)
 }
