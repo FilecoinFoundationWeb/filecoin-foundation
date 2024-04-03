@@ -257,8 +257,9 @@ export default function About() {
               <Card
                 key={name}
                 title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
-                description={title}
-              />
+              >
+                <p className="text-brand-300">{title}</p>
+              </Card>
             ))}
           </CardLayout>
         </PageSection>
