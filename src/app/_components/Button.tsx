@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import { TextLink } from '@/components/TextLink'
+import { CustomLink } from '@/components/CustomLink'
 
 type ButtonProps = {
   variant?: 'primary' | 'ghost'
@@ -9,7 +9,7 @@ type ButtonProps = {
   children: React.ReactNode
 } & (
   | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
-  | React.ComponentPropsWithoutRef<typeof TextLink>
+  | React.ComponentPropsWithoutRef<typeof CustomLink>
 )
 
 type ButtonInnerProps = {
@@ -50,8 +50,8 @@ export function Button({
       <ButtonInner icon={icon}>{children}</ButtonInner>
     </button>
   ) : (
-    <TextLink className={className} {...rest}>
+    <CustomLink className={className} {...rest}>
       <ButtonInner icon={icon}>{children}</ButtonInner>
-    </TextLink>
+    </CustomLink>
   )
 }
