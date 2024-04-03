@@ -14,10 +14,10 @@ type FeaturedCaseStudiesProps = {
 const caseStudies = getCaseStudiesData()
 
 export function FeaturedCaseStudies({
-  maxPosts = 4,
+  maxPosts = 6,
 }: FeaturedCaseStudiesProps) {
   const featuredCaseStudies = caseStudies
-    .filter((caseStudy) => caseStudy.featured)
+    // .filter((caseStudy) => caseStudy.featured)
     .slice(0, maxPosts)
 
   if (featuredCaseStudies.length === 0) {
@@ -25,21 +25,17 @@ export function FeaturedCaseStudies({
   }
 
   return (
-    <CardLayout>
-      {caseStudies.map(({ title, description, slug, image }) => (
+    <CardLayout type="caseStudy">
+      {featuredCaseStudies.map(({ title, description, slug, image }) => (
         <Card
           key={slug}
           title={title}
           description={description}
           cta={{
-            type: 'read',
             href: `${PATHS.CASE_STUDIES.path}/${slug}` as Route,
           }}
-          image={{
-            type: 'caseStudy',
-            ...image,
-          }}
-          style="muted"
+          image={image}
+          borderColor="brand-300"
         />
       ))}
     </CardLayout>
