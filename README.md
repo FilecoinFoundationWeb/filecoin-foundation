@@ -65,8 +65,6 @@ We maintain a specific order for import statements to make our code easier to re
 - External modules (e.g., `react`, `next/**`)
 - Internal aliases (e.g., `@/components/**`, `@/styles/**`)
 
-See `tailwind.config.js`
-
 ## Technologies
 
 - **Next.js 13.4.19**: For server-side rendering, static site generation, and routing.
