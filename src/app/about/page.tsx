@@ -75,24 +75,105 @@ const boardMembersData = [
   {
     name: 'Marta Belcher',
     title: 'President & Chair, Filecoin',
-    linkedin: 'https://www.linkedin.com/in/martabelcher/',
-  },
-  {
-    name: 'Brian Behlendorf',
-    title: 'Chief AI Strategist, Linux Foundation',
-    linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
+    linkedIn: 'https://www.linkedin.com/in/martabelcher/',
   },
   {
     name: 'Marcia Hofmann',
     title: 'Electronic Privacy Attorney',
-    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
+    linkedIn: 'https://www.linkedin.com/in/marciahofmann/',
   },
+  {
+    name: 'Brian Behlendorf',
+    title: 'Chief AI Strategist, Linux Foundation',
+    linkedIn: 'https://www.linkedin.com/in/brianbehlendorf/',
+  },
+
   {
     name: 'Nicole Wong',
     title: 'Former Deputy U.S. Chief',
-    linkedin: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
+    linkedIn: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
   },
 ]
+
+const advisorsData = [
+  {
+    name: 'Brewster Kahle',
+    title: 'Founder, Internet Archive',
+    linkedIn: 'https://www.linkedin.com/in/brewster-kahle-2a647652/',
+  },
+  {
+    name: 'Veronica McGregor',
+    title: 'Chief Legal Officer, Exodus',
+    linkedIn: 'https://www.linkedin.com/in/vemcgregor/',
+  },
+  {
+    name: 'Denelle Dixon',
+    title: 'CEO, Stellar Development Foundation',
+    linkedIn: 'https://www.linkedin.com/in/denelle-dixon-967a236/',
+  },
+  {
+    name: 'Rye Barcott',
+    title: 'CEO, With Honor',
+    linkedIn: 'https://www.linkedin.com/in/ryebarcott/',
+  },
+  {
+    name: 'Wendy Hanamura',
+    title: 'Director of Partnerships, Internet Archive',
+    linkedIn: 'https://www.linkedin.com/in/wendyhanamura/',
+  },
+  {
+    name: 'Catherine Stihler',
+    title:
+      'Former CEO, Creative Commons & Former Member of European Parliament',
+    linkedIn: 'https://www.linkedin.com/in/catherine-stihler/',
+  },
+  {
+    name: 'Georgia Quinn',
+    title: 'Former General Counsel, Anchorage and CoinList ',
+    linkedIn: 'https://www.linkedin.com/in/georgia-quinn-287bb733/',
+  },
+  {
+    name: 'Joe Lubin',
+    title: 'Founder, Consensys & Cofounder, Ethereum',
+    linkedIn: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
+  },
+  {
+    name: 'Alex Feerst',
+    title: 'CEO, Murmuration Labs & Former General Counsel, Medium',
+    linkedIn: 'https://www.linkedin.com/in/feerst/',
+  },
+  {
+    name: 'Sandra Ro',
+    title: 'CEO, Global Blockchain Business Council',
+    linkedIn: 'https://www.linkedin.com/in/sandraro/',
+  },
+  {
+    name: 'Katie Biber',
+    title: 'Chief Legal Officer, Paradigm',
+    linkedIn: 'https://www.linkedin.com/in/katiebiber/',
+  },
+]
+
+function NameWithLinkedInLink({
+  name,
+  linkedIn,
+}: {
+  name: string
+  linkedIn: string
+}) {
+  return (
+    <span className="inline-flex items-center gap-3">
+      <span>{name}</span>
+      <a
+        href={linkedIn}
+        className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline"
+        aria-label={`Find ${name} on LinkedIn (opens in new window)`}
+      >
+        <LinkedinLogo size={24} aria-hidden={true} />
+      </a>
+    </span>
+  )
+}
 
 export default function About() {
   return (
@@ -133,24 +214,29 @@ export default function About() {
 
         <PageSection kicker="Who We Are" title="Board Members">
           <CardLayout type="blogPost">
-            {boardMembersData.map(({ name, title, linkedin }) => (
+            {boardMembersData.map(({ name, title, linkedIn }) => (
               <Card
                 key={name}
-                title={
-                  <span className="inline-flex items-center gap-3">
-                    <span>{name}</span>
-                    <a
-                      href={linkedin}
-                      className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline"
-                      aria-label={`Find ${name} on LinkedIn (opens in new window)`}
-                    >
-                      <LinkedinLogo size={24} aria-hidden={true} />
-                    </a>
-                  </span>
-                }
+                title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
               >
                 <p className="text-brand-300">{title}</p>
               </Card>
+            ))}
+          </CardLayout>
+        </PageSection>
+
+        <PageSection
+          kicker="Advisors"
+          title="Advisory Board"
+          description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
+        >
+          <CardLayout type="blogPost">
+            {advisorsData.map(({ name, title, linkedIn }) => (
+              <Card
+                key={name}
+                title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
+                description={title}
+              />
             ))}
           </CardLayout>
         </PageSection>
