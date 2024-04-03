@@ -14,6 +14,8 @@ const FILECOIN_FOUNDATION_URLS = {
   },
   email: 'mailto:hello@fil.org',
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
+  latestAnnualReport:
+    'https://fil.org/blog/filecoin-foundation-2023-annual-report/', // Adjust
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
     contactForm: 'https://airtable.com/appyPZiiFSUIYFsrA/shrmNURZt1khzB00M',
