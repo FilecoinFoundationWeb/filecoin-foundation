@@ -3,12 +3,12 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PathValues } from '@/constants/paths'
 
 type DynamicContentMetadata = {
-  path: PathValues
+  basePath: PathValues
   data: { title: string; description?: string; slug: string }
 }
 
 export function generateDynamicContentMetadata({
-  path,
+  basePath,
   data,
 }: DynamicContentMetadata) {
   const seo = {
@@ -16,9 +16,13 @@ export function generateDynamicContentMetadata({
     description: data.description,
   }
 
-  if (path == '/blog' || path == '/case-studies' || path == '/events') {
-    return createMetadata(seo, `${path}/${data.slug}`)
+  if (
+    basePath == '/blog' ||
+    basePath == '/case-studies' ||
+    basePath == '/events'
+  ) {
+    return createMetadata(seo, `${basePath}/${data.slug}`)
   }
 
-  return createMetadata(seo, path)
+  return createMetadata(seo, basePath)
 }
