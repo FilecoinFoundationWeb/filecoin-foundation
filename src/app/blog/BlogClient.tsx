@@ -14,7 +14,7 @@ import { formatDate } from '@/utils/formatDate'
 
 import { PATHS } from '@/constants/paths'
 
-const POSTS_PER_LOAD = 9
+const POSTS_PER_LOAD = 20
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const [searchQuery, setSearchQuery] = useState<string>('')
@@ -36,7 +36,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   }, [posts])
 
   const filteredPosts = sortedPosts.filter((post) =>
-    post.title.toLowerCase().includes(searchQuery)
+    post.title.toLowerCase().includes(searchQuery),
   )
 
   function handleLoadMore() {
@@ -56,9 +56,16 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         className="text-brand-800"
         onChange={handleSearch}
       />
-      <ul>
+
+      <br />
+      <br />
+
+      <ul className="grid grid-cols-2 gap-8">
         {filteredPosts.slice(0, visibleCount).map((post) => (
-          <li key={post.slug}>
+          <li
+            key={post.slug}
+            className="rounded-md border border-brand-600 p-4"
+          >
             {post.image.url && (
               <Image
                 src={post.image.url}
