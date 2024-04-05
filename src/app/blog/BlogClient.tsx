@@ -39,7 +39,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
   const filteredPosts = useMemo(() => {
     return sortedPosts.filter((post) => {
-      return post.title.toLowerCase().includes(searchQuery)
+      return post.title.toLowerCase().includes(searchQuery.toLowerCase())
     })
   }, [searchQuery, sortedPosts])
 
@@ -108,7 +108,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
     setCurrentPage(1)
-    setSearchQuery(event.target.value.toLowerCase())
+    setSearchQuery(event.target.value)
   }
 
   function applyClasses(i: number) {
