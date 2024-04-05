@@ -18,8 +18,8 @@ const PAGE_KEY = 'page'
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const searchParams = useSearchParams()
-  const pathname = usePathname()
-  const router = useRouter()
+  // const pathname = usePathname()
+  // const router = useRouter()
 
   const [searchQuery, setSearchQuery] = useState<string>(() => {
     return searchParams.get(SEARCH_QUERY_KEY) || ''
@@ -46,23 +46,23 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     })
   }, [searchQuery, sortedPosts])
 
-  useEffect(() => {
-    const params = new URLSearchParams(searchParams.toString())
+  // useEffect(() => {
+  //   const params = new URLSearchParams(searchParams.toString())
 
-    if (searchParams.get(SEARCH_QUERY_KEY) != searchQuery) {
-      if (!searchQuery) params.delete(SEARCH_QUERY_KEY)
-      if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
-    }
+  //   if (searchParams.get(SEARCH_QUERY_KEY) != searchQuery) {
+  //     if (!searchQuery) params.delete(SEARCH_QUERY_KEY)
+  //     if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
+  //   }
 
-    if (searchParams.get(PAGE_KEY) != String(currentPage)) {
-      params.set(PAGE_KEY, String(currentPage))
-    }
+  //   if (searchParams.get(PAGE_KEY) != String(currentPage)) {
+  //     params.set(PAGE_KEY, String(currentPage))
+  //   }
 
-    const url = `${pathname}?${params.toString()}` as Route
-    router.replace(url, { scroll: false })
+  //   const url = `${pathname}?${params.toString()}` as Route
+  //   router.replace(url, { scroll: false })
 
-    // return () => router.replace(pathname as Route, { scroll: false })
-  }, [currentPage, searchQuery])
+  //   return () => router.replace(pathname as Route, { scroll: false })
+  // }, [currentPage, searchQuery])
 
   return (
     <>
