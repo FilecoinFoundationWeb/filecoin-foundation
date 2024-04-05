@@ -22,7 +22,7 @@ import {
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
-const { title, description, seo } = attributes
+const { header, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ABOUT.path)
 
@@ -206,7 +206,7 @@ export default function About() {
 
       <div className="flex flex-col gap-24 sm:gap-16">
         <div className="flex flex-col gap-6 md:w-1/2">
-          <PageHeader title={title} description={description} />
+          <PageHeader title={header.title} description={header.description} />
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
             <Button
               variant="primary"

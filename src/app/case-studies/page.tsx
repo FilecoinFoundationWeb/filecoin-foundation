@@ -16,7 +16,8 @@ import { attributes } from '@/content/pages/case-studies.md'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-const { title, description, seo } = attributes
+const { header, seo } = attributes
+
 export const metadata = createMetadata(seo, PATHS.CASE_STUDIES.path)
 
 const caseStudies = getCaseStudiesData()
@@ -52,7 +53,7 @@ export default function CaseStudies() {
   return (
     <>
       <StructuredDataScript structuredData={caseStudiesPageStructuredData} />
-      <PageHeader title={title} description={description} />
+      <PageHeader title={header.title} description={header.description} />
       <CaseStudiesList caseStudies={caseStudies} />
     </>
   )

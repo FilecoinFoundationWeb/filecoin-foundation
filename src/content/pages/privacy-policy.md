@@ -1,6 +1,7 @@
 ---
-title: "Privacy Policy"
-description: "Privacy Policy"
+header:
+  title: "Privacy Policy"
+  description: "Privacy Policy"
 seo:
   title: "Privacy Policy"
   description: "Privacy Policy"
@@ -121,4 +122,3 @@ By using the Services, you signify your acknowledgment of this Privacy Policy. I
 ## XV. More Questions?
 
 If you have any questions about this Privacy Policy, email them to privacypolicy@fil.org and be sure to indicate the specific site you're visiting and the nature of your question or concern.
-

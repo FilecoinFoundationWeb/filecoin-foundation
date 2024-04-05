@@ -1,6 +1,7 @@
 ---
-title: "Terms"
-description: "Terms of Use"
+header:
+  title: "Terms"
+  description: "Terms of Use"
 seo:
   title: "Terms"
   description: "Terms of Use"

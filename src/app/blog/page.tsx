@@ -17,7 +17,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { BlogClient } from './BlogClient'
 
-const { title, description, seo } = attributes
+const { header, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
@@ -52,7 +52,7 @@ export default function Blog() {
   return (
     <>
       <StructuredDataScript structuredData={blogPageStructuredData} />
-      <PageHeader title={title} description={description} />
+      <PageHeader title={header.title} description={header.description} />
 
       <div>
         <BlogClient posts={posts} />

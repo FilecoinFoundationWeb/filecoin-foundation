@@ -18,8 +18,7 @@ import {
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
-const { title, description, seo } = attributes
-
+const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GET_INVOLVED.path)
 
 const getInvolvedPageBaseData = generateWebPageStructuredData({
@@ -32,7 +31,7 @@ export default function GetInvolved() {
   return (
     <>
       <StructuredDataScript structuredData={getInvolvedPageBaseData} />
-      <PageHeader title={title} description={description} />
+      <PageHeader title={header.title} description={header.description} />
 
       <section>
         <Heading tag="h2" variant="xl">

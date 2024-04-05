@@ -1,7 +1,8 @@
 ---
-title: "Blog"
-description: "Filecoin Foundation Blog"
+header:
+  title: Blog
+  description: Filecoin Foundation Blog
 seo:
-  title: "Blog"
-  description: "Filecoin Foundation Blog"
+  title: Blog
+  description: Filecoin Foundation Blog
 ---

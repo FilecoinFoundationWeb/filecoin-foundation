@@ -13,8 +13,7 @@ import { attributes } from '@/content/pages/grants.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-const { title, description, seo } = attributes
-
+const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
 
 const grantsPageBaseData = generateWebPageStructuredData({
@@ -28,8 +27,8 @@ export default function Grants() {
     <>
       <StructuredDataScript structuredData={grantsPageBaseData} />
       <PageHeader
-        title={title}
-        description={description}
+        title={header.title}
+        description={header.description}
         link={{ href: FILECOIN_URLS.grants.email, text: 'Email for more info' }}
       />
 

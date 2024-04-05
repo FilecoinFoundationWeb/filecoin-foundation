@@ -13,7 +13,7 @@ import { attributes } from '@/content/pages/events.md'
 import { BASE_URL } from '@/_constants/siteMetadata'
 import { PATHS } from '@/constants/paths'
 
-const { title, description, seo } = attributes
+const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
 const events = getEventsData()
@@ -47,7 +47,7 @@ export default function Events() {
   return (
     <>
       <StructuredDataScript structuredData={eventsPageStructuredData} />
-      <PageHeader title={title} description={description} />
+      <PageHeader title={header.title} description={header.description} />
 
       <div>
         <EventsList events={events} />

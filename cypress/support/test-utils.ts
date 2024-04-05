@@ -9,12 +9,11 @@ export function testPageMetadata(path: PathConfig) {
 
     cy.readFile(filePath).then((markdownContent: string) => {
       const frontMatter = matter(markdownContent).data as {
-        title: string
-        description: string
+        header: { title: string; description: string }
         seo: { title: string; description: string }
       }
 
-      const { title, description, seo } = frontMatter
+      const { header, seo } = frontMatter
 
       cy.visit(path.path)
 
@@ -28,9 +27,9 @@ export function testPageMetadata(path: PathConfig) {
         .first()
         .should('exist')
         .within(() => {
-          cy.get('h1').should('have.text', title)
+          cy.get('h1').should('have.text', header.title)
 
-          cy.get('p').should('have.text', description)
+          cy.get('p').should('have.text', header.description)
         })
 
       cy.get('link[rel="canonical"]')
