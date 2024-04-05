@@ -85,6 +85,12 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         })}
       </ul>
 
+      {!filteredPosts.length && (
+        <p className="mt-8 rounded-md border border-brand-600 p-4">
+          No results found for your search, try changing your search query.
+        </p>
+      )}
+
       <div className="mx-auto mt-8 max-w-2xl">
         <ClientPagination
           currentPage={currentPage}
