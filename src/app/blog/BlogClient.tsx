@@ -2,9 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react'
 
-import { useSearchParams, usePathname, useRouter } from 'next/navigation'
-
-import type { Route } from 'next'
+import { useSearchParams, usePathname } from 'next/navigation'
 
 import { BlogPostCard } from '@/components/BlogPostCard'
 import { ClientPagination } from '@/components/ClientPagination'
@@ -19,7 +17,6 @@ const PAGE_KEY = 'page'
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const searchParams = useSearchParams()
   const pathname = usePathname()
-  const router = useRouter()
 
   const [searchQuery, setSearchQuery] = useState<string>(() => {
     return searchParams.get(SEARCH_QUERY_KEY) || ''
@@ -58,10 +55,10 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       params.set(PAGE_KEY, String(currentPage))
     }
 
-    const url = `${pathname}?${params.toString()}` as Route
-    router.replace(url, { scroll: false })
+    const url = `${pathname}?${params.toString()}`
+    window.history.replaceState({}, '', url)
 
-    return () => router.replace(pathname as Route, { scroll: false })
+    return () => window.history.replaceState({}, '', pathname)
   }, [currentPage, searchQuery])
 
   return (
