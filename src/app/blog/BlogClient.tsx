@@ -2,17 +2,10 @@
 
 import { useState, useMemo } from 'react'
 
-import Image from 'next/image'
-
+import { BlogPostCard } from '@/components/BlogPostCard'
 import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
-import { TextLink } from '@/components/TextLink'
 
-import { BlogPostData } from '@/types/blogPostTypes'
-
-import { formatDate } from '@/utils/formatDate'
-
-import { PATHS } from '@/constants/paths'
+import type { BlogPostData } from '@/types/blogPostTypes'
 
 const POSTS_PER_LOAD = 20
 
@@ -35,13 +28,20 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     })
   }, [posts])
 
-  const filteredPosts = sortedPosts.filter((post) =>
-    post.title.toLowerCase().includes(searchQuery),
+  const filteredPosts = useMemo(
+    () =>
+      sortedPosts.filter((post) => {
+        return post.title.toLowerCase().includes(searchQuery)
+      }),
+    [searchQuery, sortedPosts],
   )
 
   function handleLoadMore() {
     setVisibleCount((currentCount) => currentCount + POSTS_PER_LOAD)
   }
+
+  const visiblePosts = filteredPosts.slice(0, visibleCount)
+  const hiddenPosts = filteredPosts.slice(visibleCount)
 
   const hasMorePosts = visibleCount < filteredPosts.length
 
@@ -61,34 +61,14 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       <br />
 
       <ul className="grid grid-cols-2 gap-8">
-        {filteredPosts.slice(0, visibleCount).map((post) => (
-          <li
-            key={post.slug}
-            className="rounded-md border border-brand-600 p-4"
-          >
-            {post.image.url && (
-              <Image
-                src={post.image.url}
-                alt={post.image.alt}
-                width={282}
-                height={141}
-                className="object-cover"
-              />
-            )}
-            <Heading tag="h3" variant="lg">
-              {post.title}
-            </Heading>
-            <p>{post.description}</p>
-            {post.publishedOn && (
-              <span className="block">
-                {formatDate(post.publishedOn, 'blog')}
-              </span>
-            )}
-            <TextLink href={`${PATHS.BLOG.path}/${post.slug}`}>
-              Read More
-            </TextLink>
-          </li>
-        ))}
+        {visiblePosts.slice(0, visibleCount).map((post) => {
+          return <BlogPostCard key={post.slug} post={post} />
+        })}
+        {hiddenPosts.map((post) => {
+          return (
+            <BlogPostCard key={post.slug} post={post} className="sr-only" />
+          )
+        })}
       </ul>
       {hasMorePosts && (
         <Button aria-label="Load more posts" onClick={handleLoadMore}>
