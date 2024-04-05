@@ -61,7 +61,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     const url = `${pathname}?${params.toString()}` as Route
     router.replace(url, { scroll: false })
 
-    return () => router.replace(pathname as Route, { scroll: false })
+    // return () => router.replace(pathname as Route, { scroll: false })
   }, [currentPage, searchQuery])
 
   return (
