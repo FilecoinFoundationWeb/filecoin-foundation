@@ -20,7 +20,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/home.md'
 
-const { title, description, seo } = attributes
+const { header, seo } = attributes
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-24 sm:gap-16">
       <div className="flex flex-col gap-6 md:w-1/2">
-        <PageHeader title={title} description={description} />
+        <PageHeader title={header.title} description={header.description} />
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
           <Button className="flex-1" variant="primary" href={PATHS.ABOUT.path}>
             Learn More

@@ -13,8 +13,7 @@ import { attributes } from '@/content/pages/governance.md'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-const { title, description, seo } = attributes
-
+const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GOVERNANCE.path)
 
 const governancePageBaseData = generateWebPageStructuredData({
@@ -27,7 +26,7 @@ export default function Governance() {
   return (
     <>
       <StructuredDataScript structuredData={governancePageBaseData} />
-      <PageHeader title={title} description={description} />
+      <PageHeader title={header.title} description={header.description} />
 
       <section>
         <Heading tag="h2" variant="xl">
