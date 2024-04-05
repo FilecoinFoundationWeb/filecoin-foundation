@@ -48,8 +48,15 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString())
-    if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
-    params.set(PAGE_KEY, String(currentPage))
+
+    if (searchParams.get(SEARCH_QUERY_KEY) != searchQuery) {
+      if (!searchQuery) params.delete(SEARCH_QUERY_KEY)
+      if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
+    }
+
+    if (searchParams.get(PAGE_KEY) != String(currentPage)) {
+      params.set(PAGE_KEY, String(currentPage))
+    }
 
     const url = `${pathname}?${params.toString()}` as Route
     router.replace(url, { scroll: false })
