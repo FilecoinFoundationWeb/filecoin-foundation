@@ -16,11 +16,20 @@ type BlogPostCardProps = {
   post: BlogPostData
 }
 
+// TODO
+// [] Make the whole card clickable
+// [] Add text ellipsis to the title and/or description
+
 export function BlogPostCard({ post, className }: BlogPostCardProps) {
   const { title, description, slug, image, publishedOn } = post
 
   return (
-    <li className={clsx('rounded-md border border-brand-600 p-4', className)}>
+    <li
+      className={clsx(
+        'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
+        className,
+      )}
+    >
       {image.url && (
         <Image
           src={image.url}
