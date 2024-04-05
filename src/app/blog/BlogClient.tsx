@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react'
 
 import { BlogPostCard } from '@/components/BlogPostCard'
-import { Button } from '@/components/Button'
+import { ClientPagination } from '@/components/ClientPagination'
 
 import type { BlogPostData } from '@/types/blogPostTypes'
 
@@ -11,11 +11,10 @@ const POSTS_PER_LOAD = 20
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const [searchQuery, setSearchQuery] = useState<string>('')
-  const [visibleCount, setVisibleCount] = useState<number>(POSTS_PER_LOAD)
+  const [currentPage, setCurrentPage] = useState<number>(1)
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
     setSearchQuery(event.target.value.toLowerCase())
-    setVisibleCount(POSTS_PER_LOAD)
   }
 
   const sortedPosts = useMemo(() => {
@@ -36,15 +35,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     [searchQuery, sortedPosts],
   )
 
-  function handleLoadMore() {
-    setVisibleCount((currentCount) => currentCount + POSTS_PER_LOAD)
-  }
-
-  const visiblePosts = filteredPosts.slice(0, visibleCount)
-  const hiddenPosts = filteredPosts.slice(visibleCount)
-
-  const hasMorePosts = visibleCount < filteredPosts.length
-
   return (
     <>
       <label htmlFor="search">Search Blog Posts</label>
@@ -61,20 +51,37 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       <br />
 
       <ul className="grid grid-cols-2 gap-8">
-        {visiblePosts.slice(0, visibleCount).map((post) => {
-          return <BlogPostCard key={post.slug} post={post} />
-        })}
-        {hiddenPosts.map((post) => {
+        {filteredPosts.map((post, i) => {
           return (
-            <BlogPostCard key={post.slug} post={post} className="sr-only" />
+            <BlogPostCard
+              key={post.slug}
+              className={applyClasses(i)}
+              post={post}
+            />
           )
         })}
       </ul>
-      {hasMorePosts && (
-        <Button aria-label="Load more posts" onClick={handleLoadMore}>
-          Load More
-        </Button>
-      )}
+
+      <div className="mx-auto mt-8 max-w-2xl">
+        <ClientPagination
+          currentPage={currentPage}
+          total={filteredPosts.length}
+          size={POSTS_PER_LOAD}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
     </>
   )
+
+  function applyClasses(i: number) {
+    // Only show 20 posts at a time, the rest show be hidden with sr-only
+    if (
+      i >= (currentPage - 1) * POSTS_PER_LOAD &&
+      i < currentPage * POSTS_PER_LOAD
+    ) {
+      return 'block'
+    }
+
+    return 'sr-only'
+  }
 }
