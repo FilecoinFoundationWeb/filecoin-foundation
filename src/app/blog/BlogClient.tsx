@@ -1,6 +1,10 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
+
+import { useSearchParams, usePathname, useRouter } from 'next/navigation'
+
+import type { Route } from 'next'
 
 import { BlogPostCard } from '@/components/BlogPostCard'
 import { ClientPagination } from '@/components/ClientPagination'
@@ -9,13 +13,22 @@ import type { BlogPostData } from '@/types/blogPostTypes'
 
 const POSTS_PER_LOAD = 20
 
-export function BlogClient({ posts }: { posts: BlogPostData[] }) {
-  const [searchQuery, setSearchQuery] = useState<string>('')
-  const [currentPage, setCurrentPage] = useState<number>(1)
+const SEARCH_QUERY_KEY = 'search'
+const PAGE_KEY = 'page'
 
-  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
-    setSearchQuery(event.target.value.toLowerCase())
-  }
+export function BlogClient({ posts }: { posts: BlogPostData[] }) {
+  const searchParams = useSearchParams()
+  const pathname = usePathname()
+  const router = useRouter()
+
+  const [searchQuery, setSearchQuery] = useState<string>(() => {
+    return searchParams.get(SEARCH_QUERY_KEY) || ''
+  })
+
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    const page = searchParams.get(PAGE_KEY)
+    return page ? Number(page) : 1
+  })
 
   const sortedPosts = useMemo(() => {
     return [...posts].sort((a, b) => {
@@ -27,13 +40,22 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     })
   }, [posts])
 
-  const filteredPosts = useMemo(
-    () =>
-      sortedPosts.filter((post) => {
-        return post.title.toLowerCase().includes(searchQuery)
-      }),
-    [searchQuery, sortedPosts],
-  )
+  const filteredPosts = useMemo(() => {
+    return sortedPosts.filter((post) => {
+      return post.title.toLowerCase().includes(searchQuery)
+    })
+  }, [searchQuery, sortedPosts])
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString())
+    if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
+    params.set(PAGE_KEY, String(currentPage))
+
+    const url = `${pathname}?${params.toString()}` as Route
+    router.replace(url, { scroll: false })
+
+    return () => router.replace(pathname as Route, { scroll: false })
+  }, [currentPage, searchQuery])
 
   return (
     <>
@@ -42,6 +64,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         type="search"
         id="search"
         name="search"
+        value={searchQuery}
         aria-label="Search blog posts"
         className="text-brand-800"
         onChange={handleSearch}
@@ -72,6 +95,11 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       </div>
     </>
   )
+
+  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
+    setCurrentPage(1)
+    setSearchQuery(event.target.value.toLowerCase())
+  }
 
   function applyClasses(i: number) {
     // Only show 20 posts at a time, the rest show be hidden with sr-only
