@@ -7,6 +7,7 @@ export type BlogPostData = {
   updatedOn?: string
   publishedOn?: string
   featured?: boolean
+  category?: string
   description: string
   image: {
     url: string

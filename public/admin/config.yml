@@ -184,6 +184,22 @@ collections:
         widget: "boolean"
         required: false
         default: false
+      - name: "category"
+        label: "Category"
+        widget: "select"
+        options:
+          - label: "Announcements"
+            value: "announcements"
+          - label: "Community"
+            value: "community"
+          - label: "Development"
+            value: "development"
+          - label: "Interviews"
+            value: "interviews"
+          - label: "Reports"
+            value: "reports"
+          - label: "Research"
+            value: "research"
       - name: "description"
         label: "Description"
         widget: "text"

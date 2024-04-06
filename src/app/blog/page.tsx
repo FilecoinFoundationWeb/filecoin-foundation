@@ -7,6 +7,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
+import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -59,13 +60,19 @@ function getMetaDataContent(post: BlogPostData) {
     return null
   }
 
+  const { fields } = getCollectionConfig('blog')
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
+  const categoryLabel =
+    categoryOptions.find((option) => option.value === post.category)?.label ||
+    null
+
   return (
     <span className="flex gap-3 font-bold text-brand-300">
       <span>{formatDate(post.publishedOn)}</span>
-      {post.category && (
+      {categoryLabel && (
         <>
           <span> | </span>
-          <span className="capitalize">{post.category}</span>
+          <span className="capitalize">{categoryLabel}</span>
         </>
       )}
     </span>
