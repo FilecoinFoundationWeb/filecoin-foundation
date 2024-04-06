@@ -2,6 +2,7 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { EventsList } from '@/components/EventsList'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -45,13 +46,20 @@ const eventsPageStructuredData: WithContext<WebPage> = {
 
 export default function Events() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={eventsPageStructuredData} />
-      <PageHeader title={header.title} description={header.description} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: '#',
+          text: 'Learn More',
+        }}
+      />
 
       <div>
         <EventsList events={events} />
       </div>
-    </>
+    </PageLayout>
   )
 }

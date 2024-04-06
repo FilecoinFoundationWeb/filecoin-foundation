@@ -2,11 +2,11 @@ import { Files, LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import { WebPage, WithContext } from 'schema-dts'
 
-import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -201,94 +201,88 @@ function NameWithLinkedInLink({ name, linkedIn }: NameWithLinkedInLinkProps) {
 
 export default function About() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={aboutPageStructuredData} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: FILECOIN_FOUNDATION_URLS.annualReports.latest,
+          text: 'Learn More in Our Annual Report',
+        }}
+      />
 
-      <div className="flex flex-col gap-24 sm:gap-16">
-        <div className="flex flex-col gap-6 md:w-1/2">
-          <PageHeader title={header.title} description={header.description} />
-          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
-            <Button
-              variant="primary"
-              href={FILECOIN_FOUNDATION_URLS.annualReports.latest}
+      <PageSection
+        kicker="About"
+        title="Our Mission"
+        description="The Foundation’s mission is to preserve humanity’s most important information."
+      />
+
+      <PageSection kicker="What We Do" title="Focus Areas">
+        <CardLayout>
+          {focusAreasData.map(({ title, description }) => (
+            <Card
+              key={title}
+              title={title}
+              description={description}
+              borderColor="brand-300"
+            />
+          ))}
+        </CardLayout>
+      </PageSection>
+
+      <PageSection kicker="Who We Are" title="Board Members">
+        <CardLayout type="blogPost">
+          {boardMembersData.map(({ name, title, linkedIn }) => (
+            <Card
+              key={name}
+              title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
             >
-              Learn More in Our Annual Report
-            </Button>
-          </div>
-        </div>
+              <p className="text-brand-300">{title}</p>
+            </Card>
+          ))}
+        </CardLayout>
+      </PageSection>
 
-        <PageSection
-          kicker="About"
-          title="Our Mission"
-          description="The Foundation’s mission is to preserve humanity’s most important information."
-        />
+      <PageSection
+        kicker="Advisors"
+        title="Advisors"
+        description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
+      >
+        <CardLayout type="blogPost">
+          {advisorsData.map(({ name, title, linkedIn }) => (
+            <Card
+              key={name}
+              title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
+            >
+              <p className="text-brand-300">{title}</p>
+            </Card>
+          ))}
+        </CardLayout>
+      </PageSection>
 
-        <PageSection kicker="What We Do" title="Focus Areas">
-          <CardLayout>
-            {focusAreasData.map(({ title, description }) => (
+      <PageSection kicker="Reports" title="Reports">
+        <CardLayout type="reports">
+          {reportsData.map(({ title, description, link }, index) => (
+            <div
+              key={title}
+              className={clsx({
+                'lg:row-span-2': index === 0,
+              })}
+            >
               <Card
-                key={title}
                 title={title}
                 description={description}
-                borderColor="brand-300"
+                cta={{
+                  href: link,
+                  text: 'View Report',
+                  icon: <Files />,
+                }}
               />
-            ))}
-          </CardLayout>
-        </PageSection>
-
-        <PageSection kicker="Who We Are" title="Board Members">
-          <CardLayout type="blogPost">
-            {boardMembersData.map(({ name, title, linkedIn }) => (
-              <Card
-                key={name}
-                title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
-              >
-                <p className="text-brand-300">{title}</p>
-              </Card>
-            ))}
-          </CardLayout>
-        </PageSection>
-
-        <PageSection
-          kicker="Advisors"
-          title="Advisors"
-          description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
-        >
-          <CardLayout type="blogPost">
-            {advisorsData.map(({ name, title, linkedIn }) => (
-              <Card
-                key={name}
-                title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
-              >
-                <p className="text-brand-300">{title}</p>
-              </Card>
-            ))}
-          </CardLayout>
-        </PageSection>
-
-        <PageSection kicker="Reports" title="Reports">
-          <CardLayout type="reports">
-            {reportsData.map(({ title, description, link }, index) => (
-              <div
-                key={title}
-                className={clsx({
-                  'lg:row-span-2': index === 0,
-                })}
-              >
-                <Card
-                  title={title}
-                  description={description}
-                  cta={{
-                    href: link,
-                    text: 'View Report',
-                    icon: <Files />,
-                  }}
-                />
-              </div>
-            ))}
-          </CardLayout>
-        </PageSection>
-      </div>
-    </>
+            </div>
+          ))}
+        </CardLayout>
+      </PageSection>
+    </PageLayout>
   )
 }

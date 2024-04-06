@@ -1,6 +1,7 @@
 import { WebPage, WithContext } from 'schema-dts'
 
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -52,11 +53,21 @@ export default function Blog() {
   return (
     <>
       <StructuredDataScript structuredData={blogPageStructuredData} />
-      <PageHeader title={header.title} description={header.description} />
 
-      <div>
-        <BlogClient posts={posts} />
-      </div>
+      <PageLayout>
+        <PageHeader
+          title={header.title}
+          description={header.description}
+          cta={{
+            href: '#',
+            text: 'Read Post',
+          }}
+        />
+
+        <div>
+          <BlogClient posts={posts} />
+        </div>
+      </PageLayout>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { Section } from '@/components/Section'
 import { SectionDeepDive } from '@/components/SectionDeepDive'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -29,9 +30,16 @@ const getInvolvedPageBaseData = generateWebPageStructuredData({
 
 export default function GetInvolved() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={getInvolvedPageBaseData} />
-      <PageHeader title={header.title} description={header.description} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: '#',
+          text: 'Learn More',
+        }}
+      />
 
       <section>
         <Heading tag="h2" variant="xl">
@@ -69,6 +77,6 @@ export default function GetInvolved() {
           href="https://www.youtube.com/watch?v=wP4Bk8lBNUc"
         />
       </SectionDeepDive>
-    </>
+    </PageLayout>
   )
 }

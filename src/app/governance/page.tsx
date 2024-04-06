@@ -1,5 +1,6 @@
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -24,9 +25,16 @@ const governancePageBaseData = generateWebPageStructuredData({
 
 export default function Governance() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={governancePageBaseData} />
-      <PageHeader title={header.title} description={header.description} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: '#',
+          text: 'Learn More',
+        }}
+      />
 
       <section>
         <Heading tag="h2" variant="xl">
@@ -204,6 +212,6 @@ export default function Governance() {
         </Heading>
         <UpcomingEvents />
       </section>
-    </>
+    </PageLayout>
   )
 }

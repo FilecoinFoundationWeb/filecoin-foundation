@@ -5,6 +5,7 @@ import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -69,12 +70,12 @@ const featuredPartners = [
 
 export default function Ecosystem() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={ecosystemPageBaseData} />
       <PageHeader
         title={header.title}
         description={header.description}
-        link={{
+        cta={{
           href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
           text: 'Submit or Update Your Project',
         }}
@@ -167,6 +168,6 @@ export default function Ecosystem() {
 
         <FeaturedCaseStudies />
       </section>
-    </>
+    </PageLayout>
   )
 }
