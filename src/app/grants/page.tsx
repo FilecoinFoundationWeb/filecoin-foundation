@@ -1,6 +1,7 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { Section } from '@/components/Section'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -24,12 +25,12 @@ const grantsPageBaseData = generateWebPageStructuredData({
 
 export default function Grants() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={grantsPageBaseData} />
       <PageHeader
         title={header.title}
         description={header.description}
-        link={{ href: FILECOIN_URLS.grants.email, text: 'Email for more info' }}
+        cta={{ href: FILECOIN_URLS.grants.email, text: 'Email for more info' }}
       />
 
       <section>
@@ -181,6 +182,6 @@ export default function Grants() {
         <TextLink href={FILECOIN_URLS.social.slack.href}>Learn More</TextLink>
         <GetInvolvedList />
       </section>
-    </>
+    </PageLayout>
   )
 }

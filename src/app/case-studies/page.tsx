@@ -2,6 +2,7 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { CaseStudiesList } from '@/components/CaseStudiesList'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -51,10 +52,18 @@ const caseStudiesPageStructuredData: WithContext<WebPage> = {
 
 export default function CaseStudies() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={caseStudiesPageStructuredData} />
-      <PageHeader title={header.title} description={header.description} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: '#',
+          text: 'Learn More',
+        }}
+      />
+
       <CaseStudiesList caseStudies={caseStudies} />
-    </>
+    </PageLayout>
   )
 }
