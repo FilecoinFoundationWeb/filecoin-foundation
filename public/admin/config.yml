@@ -99,6 +99,17 @@ collections:
         file: "src/content/pages/blog.md"
         fields:
           - *header_config
+          - name: "featured_post"
+            label: "Featured Post"
+            widget: "relation"
+            collection: "blog"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            required: true
           - *meta_config
       - name: "governance"
         label: "Governance"
@@ -203,7 +214,7 @@ collections:
         value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
-          - "name"
+          - "title"
         display_fields:
           - "title"
         multiple: true

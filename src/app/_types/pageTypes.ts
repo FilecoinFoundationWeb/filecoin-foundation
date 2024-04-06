@@ -5,4 +5,5 @@ export type PageAttributes = {
     title: string
     description: string
   }
+  featured_post?: string
 } & Metadata
