@@ -13,6 +13,7 @@ import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { Heading } from '@/components/Heading'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { SectionDivider } from '@/components/SectionDivider'
 
@@ -20,32 +21,28 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/home.md'
 
-const { header, seo } = attributes
-
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
+const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-24 sm:gap-16">
-      <div className="flex flex-col gap-6 md:w-1/2">
-        <PageHeader title={header.title} description={header.description} />
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
-          <Button className="flex-1" variant="primary" href={PATHS.ABOUT.path}>
-            Learn More
-          </Button>
-          <Button
-            className="flex-1"
-            variant="ghost"
-            href={FILECOIN_URLS.site}
-            icon={<ArrowUpRight size={24} weight="bold" />}
-          >
-            Discover Filecoin Technology
-          </Button>
-        </div>
-      </div>
+    <PageLayout>
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: PATHS.ABOUT.path,
+          text: 'Learn More',
+        }}
+        secondaryCta={{
+          href: FILECOIN_URLS.site,
+          text: 'Discover Filecoin Technology',
+          icon: <ArrowUpRight size={24} weight="bold" />,
+        }}
+      />
 
       <section>
         <SectionDivider title="Explore" />
@@ -157,6 +154,6 @@ export default function Home() {
           View All
         </Button>
       </PageSection>
-    </div>
+    </PageLayout>
   )
 }
