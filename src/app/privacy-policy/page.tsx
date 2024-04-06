@@ -30,6 +30,7 @@ export default function PrivacyPolicy() {
           text: 'Learn More',
         }}
       />
+
       <Content />
     </PageLayout>
   )

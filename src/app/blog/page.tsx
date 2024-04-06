@@ -51,23 +51,20 @@ const blogPageStructuredData: WithContext<WebPage> = {
 
 export default function Blog() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={blogPageStructuredData} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: '#',
+          text: 'Read Post',
+        }}
+      />
 
-      <PageLayout>
-        <PageHeader
-          title={header.title}
-          description={header.description}
-          cta={{
-            href: '#',
-            text: 'Read Post',
-          }}
-        />
-
-        <div>
-          <BlogClient posts={posts} />
-        </div>
-      </PageLayout>
-    </>
+      <div>
+        <BlogClient posts={posts} />
+      </div>
+    </PageLayout>
   )
 }

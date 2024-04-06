@@ -52,21 +52,18 @@ const caseStudiesPageStructuredData: WithContext<WebPage> = {
 
 export default function CaseStudies() {
   return (
-    <>
+    <PageLayout>
       <StructuredDataScript structuredData={caseStudiesPageStructuredData} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        cta={{
+          href: '#',
+          text: 'Learn More',
+        }}
+      />
 
-      <PageLayout>
-        <PageHeader
-          title={header.title}
-          description={header.description}
-          cta={{
-            href: '#',
-            text: 'Learn More',
-          }}
-        />
-
-        <CaseStudiesList caseStudies={caseStudies} />
-      </PageLayout>
-    </>
+      <CaseStudiesList caseStudies={caseStudies} />
+    </PageLayout>
   )
 }
