@@ -28,7 +28,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const [currentPage, setCurrentPage] = useUrlState<number>(1, PAGE_KEY, {
     syncOnInit: true,
   })
-
   const [searchQuery, setSearchQuery] = useUrlState<string>('', SEARCH_KEY)
 
   const sortedPosts = useMemo(() => {
@@ -79,61 +78,59 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       <br />
       <br />
 
-      {!filteredPosts.length && (
+      {filteredPosts.length === 0 ? (
         <p className="mt-8 rounded-md border border-brand-600 p-4">
           No results found for your search, try changing your search query.
         </p>
-      )}
+      ) : (
+        <>
+          <CardLayout type="blogPost">
+            {filteredPosts.map((post, i) => {
+              const { image, title, description, slug, publishedOn } = post
 
-      {!!filteredPosts.length && (
-        <CardLayout type="blogPost">
-          {filteredPosts.map((post, i) => {
-            const { image, title, description, slug, publishedOn } = post
+              return (
+                <li
+                  key={post.slug}
+                  className={clsx(
+                    'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
+                    toggleShowBlogCard(i),
+                  )}
+                >
+                  {image.url && (
+                    <Image
+                      src={image.url}
+                      alt={image.alt}
+                      width={282}
+                      height={141}
+                      className="object-cover"
+                    />
+                  )}
+                  <Heading tag="h3" variant="lg">
+                    {title}
+                  </Heading>
+                  <p>{description}</p>
+                  {publishedOn && (
+                    <span className="block">
+                      {formatDate(publishedOn, 'blog')}
+                    </span>
+                  )}
+                  <TextLink href={`${PATHS.BLOG.path}/${slug}`}>
+                    Read More
+                  </TextLink>
+                </li>
+              )
+            })}
+          </CardLayout>
 
-            return (
-              <li
-                key={post.slug}
-                className={clsx(
-                  'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                  toggleShowBlogCard(i),
-                )}
-              >
-                {image.url && (
-                  <Image
-                    src={image.url}
-                    alt={image.alt}
-                    width={282}
-                    height={141}
-                    className="object-cover"
-                  />
-                )}
-                <Heading tag="h3" variant="lg">
-                  {title}
-                </Heading>
-                <p>{description}</p>
-                {publishedOn && (
-                  <span className="block">
-                    {formatDate(publishedOn, 'blog')}
-                  </span>
-                )}
-                <TextLink href={`${PATHS.BLOG.path}/${slug}`}>
-                  Read More
-                </TextLink>
-              </li>
-            )
-          })}
-        </CardLayout>
-      )}
-
-      {!!filteredPosts.length && (
-        <div className="mx-auto mt-8 max-w-2xl">
-          <Pagination
-            currentPage={currentPage}
-            total={filteredPosts.length}
-            size={POSTS_PER_LOAD}
-            setCurrentPage={setCurrentPage}
-          />
-        </div>
+          <div className="mx-auto mt-8 max-w-2xl">
+            <Pagination
+              currentPage={currentPage}
+              total={filteredPosts.length}
+              size={POSTS_PER_LOAD}
+              setCurrentPage={setCurrentPage}
+            />
+          </div>
+        </>
       )}
     </>
   )
