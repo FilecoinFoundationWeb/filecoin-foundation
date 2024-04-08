@@ -95,7 +95,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
               key={post.slug}
               className={clsx(
                 'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                // Only show 20 posts at a time, the rest are hidden with sr-only
                 i >= (currentPage - 1) * POSTS_PER_LOAD &&
                   i < currentPage * POSTS_PER_LOAD
                   ? 'block'

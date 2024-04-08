@@ -34,7 +34,6 @@ export function Pagination({
 
   return (
     <div className="flex justify-between gap-4 rounded-lg bg-brand-300 p-2 text-brand-700">
-      {/* Prev */}
       <button
         className="rounded px-3 py-1 transition hover:bg-brand-400/30"
         onClick={handlePrev}
@@ -42,7 +41,6 @@ export function Pagination({
         Prev
       </button>
 
-      {/* Numbers */}
       <div className="flex justify-center gap-2">
         {indexes.map((index) => {
           return (
@@ -61,7 +59,6 @@ export function Pagination({
         })}
       </div>
 
-      {/* Next */}
       <button
         className="rounded px-3 py-1 transition hover:bg-brand-400/30"
         onClick={handleNext}
