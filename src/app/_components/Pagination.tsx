@@ -9,7 +9,7 @@ type PaginationProps = {
   setCurrentPage: (page: number) => void
 }
 
-export function ClientPagination({
+export function Pagination({
   currentPage,
   setCurrentPage,
   total,

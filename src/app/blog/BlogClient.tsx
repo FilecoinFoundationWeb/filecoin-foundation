@@ -8,8 +8,8 @@ import { useSearchParams, usePathname } from 'next/navigation'
 import clsx from 'clsx'
 
 import { CardLayout } from '@/components/CardLayout'
-import { ClientPagination } from '@/components/ClientPagination'
 import { Heading } from '@/components/Heading'
+import { Pagination } from '@/components/Pagination'
 import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
@@ -131,7 +131,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       )}
 
       <div className="mx-auto mt-8 max-w-2xl">
-        <ClientPagination
+        <Pagination
           currentPage={currentPage}
           total={filteredPosts.length}
           size={POSTS_PER_LOAD}
