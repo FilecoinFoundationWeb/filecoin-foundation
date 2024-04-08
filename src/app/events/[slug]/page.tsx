@@ -48,7 +48,6 @@ export default function Event({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 
-  console.log({ slug, data })
   const { title, description, image } = data
 
   return (
