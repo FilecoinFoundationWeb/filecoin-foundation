@@ -46,11 +46,14 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     })
   }, [searchQuery, sortedPosts])
 
-  function getCardVisibilityClass(index: number): string {
-    return index >= (currentPage - 1) * POSTS_PER_LOAD &&
-      index < currentPage * POSTS_PER_LOAD
-      ? 'block'
-      : 'sr-only'
+  function determineVisibilityClass(postIndex: number): string {
+    const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_LOAD
+    const firstInvisiblePostIndex = currentPage * POSTS_PER_LOAD
+
+    const isVisible =
+      postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
+
+    return isVisible ? 'block' : 'sr-only'
   }
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
@@ -89,7 +92,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
                   key={post.slug}
                   className={clsx(
                     'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                    getCardVisibilityClass(index),
+                    determineVisibilityClass(index),
                   )}
                 >
                   {image.url && (
