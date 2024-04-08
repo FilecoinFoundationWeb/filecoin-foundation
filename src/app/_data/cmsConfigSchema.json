@@ -932,6 +932,21 @@
               ]
             },
             {
+              "name": "featured_event",
+              "label": "Featured Event",
+              "widget": "relation",
+              "collection": "events",
+              "value_field": "slug",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "required": true
+            },
+            {
               "name": "seo",
               "label": "SEO",
               "widget": "object",
