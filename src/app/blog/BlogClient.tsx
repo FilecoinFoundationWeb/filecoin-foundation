@@ -70,6 +70,17 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     return () => window.history.replaceState({}, '', pathname)
   }, [currentPage, searchQuery])
 
+  function toggleShowBlogCard(i: number) {
+    if (
+      i >= (currentPage - 1) * POSTS_PER_LOAD &&
+      i < currentPage * POSTS_PER_LOAD
+    ) {
+      return 'block'
+    }
+
+    return 'sr-only'
+  }
+
   return (
     <>
       <label htmlFor="search">Search Blog Posts</label>
@@ -95,10 +106,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
               key={post.slug}
               className={clsx(
                 'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                i >= (currentPage - 1) * POSTS_PER_LOAD &&
-                  i < currentPage * POSTS_PER_LOAD
-                  ? 'block'
-                  : 'sr-only',
+                toggleShowBlogCard(i),
               )}
             >
               {image.url && (
