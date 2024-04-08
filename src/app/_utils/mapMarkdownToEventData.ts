@@ -20,6 +20,7 @@ export function mapMarkdownToEventData({
     },
     startDate: data['start-date'],
     endDate: data['end-date'],
+    location: data.location,
     image: {
       url: data.image?.url || '',
       alt: data.image?.alt || '',

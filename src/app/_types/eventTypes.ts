@@ -14,6 +14,7 @@ export type EventData = {
   }
   startDate: string
   endDate?: string
+  location: string
   image?: {
     url: string
     alt: string

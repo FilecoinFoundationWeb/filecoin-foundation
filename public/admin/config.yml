@@ -568,6 +568,10 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
+      - name: "location"
+        label: "Location"
+        widget: "string"
+        required: true
       - name: "image"
         label: "Image"
         widget: "object"
