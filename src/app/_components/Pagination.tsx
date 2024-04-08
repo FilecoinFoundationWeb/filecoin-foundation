@@ -28,6 +28,10 @@ export function Pagination({
     if (currentPage < pages) setCurrentPage(currentPage + 1)
   }
 
+  function handlePageChange(index: number) {
+    if (index !== currentPage) setCurrentPage(index)
+  }
+
   return (
     <div className="flex justify-between gap-4 rounded-lg bg-brand-300 p-2 text-brand-700">
       {/* Prev */}
@@ -49,9 +53,7 @@ export function Pagination({
                 index == currentPage && 'bg-brand-800 text-brand-100',
                 index != currentPage && 'bg-brand-300 text-brand-700',
               )}
-              onClick={() => {
-                if (index != currentPage) setCurrentPage(index)
-              }}
+              onClick={() => handlePageChange(index)}
             >
               {index}
             </button>
