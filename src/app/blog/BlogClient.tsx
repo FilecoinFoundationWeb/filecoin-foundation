@@ -1,9 +1,8 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useMemo } from 'react'
 
 import Image from 'next/image'
-import { useSearchParams, usePathname } from 'next/navigation'
 
 import clsx from 'clsx'
 
@@ -18,23 +17,19 @@ import { formatDate } from '@/utils/formatDate'
 
 import { PATHS } from '@/constants/paths'
 
+import { useUrlState } from '../_hooks/useUrlState'
+
 const POSTS_PER_LOAD = 20
 
-const SEARCH_QUERY_KEY = 'search'
+const SEARCH_KEY = 'search'
 const PAGE_KEY = 'page'
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
-  const searchParams = useSearchParams()
-  const pathname = usePathname()
-
-  const [searchQuery, setSearchQuery] = useState<string>(() => {
-    return searchParams.get(SEARCH_QUERY_KEY) || ''
+  const [currentPage, setCurrentPage] = useUrlState<number>(1, PAGE_KEY, {
+    syncOnInit: true,
   })
 
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    const page = searchParams.get(PAGE_KEY)
-    return page ? Number(page) : 1
-  })
+  const [searchQuery, setSearchQuery] = useUrlState<string>('', SEARCH_KEY)
 
   const sortedPosts = useMemo(() => {
     return [...posts].sort((a, b) => {
@@ -51,24 +46,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       return post.title.toLowerCase().includes(searchQuery.toLowerCase())
     })
   }, [searchQuery, sortedPosts])
-
-  useEffect(() => {
-    const params = new URLSearchParams(searchParams.toString())
-
-    if (searchParams.get(SEARCH_QUERY_KEY) != searchQuery) {
-      if (!searchQuery) params.delete(SEARCH_QUERY_KEY)
-      if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
-    }
-
-    if (searchParams.get(PAGE_KEY) != String(currentPage)) {
-      params.set(PAGE_KEY, String(currentPage))
-    }
-
-    const url = `${pathname}?${params.toString()}`
-    window.history.replaceState({}, '', url)
-
-    return () => window.history.replaceState({}, '', pathname)
-  }, [currentPage, searchQuery])
 
   function toggleShowBlogCard(i: number) {
     if (
