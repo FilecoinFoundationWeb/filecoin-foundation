@@ -20,14 +20,20 @@ export function Pagination({
   const pages = useMemo(() => Math.ceil(total / size), [total, size])
   const indexes = Array.from({ length: pages }, (_, index) => index + 1)
 
+  function handlePrev() {
+    if (currentPage > 1) setCurrentPage(currentPage - 1)
+  }
+
+  function handleNext() {
+    if (currentPage < pages) setCurrentPage(currentPage + 1)
+  }
+
   return (
     <div className="flex justify-between gap-4 rounded-lg bg-brand-300 p-2 text-brand-700">
       {/* Prev */}
       <button
         className="rounded px-3 py-1 transition hover:bg-brand-400/30"
-        onClick={() => {
-          if (currentPage > 1) setCurrentPage(currentPage - 1)
-        }}
+        onClick={handlePrev}
       >
         Prev
       </button>
@@ -56,9 +62,7 @@ export function Pagination({
       {/* Next */}
       <button
         className="rounded px-3 py-1 transition hover:bg-brand-400/30"
-        onClick={() => {
-          if (currentPage < pages) setCurrentPage(currentPage + 1)
-        }}
+        onClick={handleNext}
       >
         Next
       </button>
