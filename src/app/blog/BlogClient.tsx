@@ -46,15 +46,11 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     })
   }, [searchQuery, sortedPosts])
 
-  function toggleShowBlogCard(i: number) {
-    if (
-      i >= (currentPage - 1) * POSTS_PER_LOAD &&
-      i < currentPage * POSTS_PER_LOAD
-    ) {
-      return 'block'
-    }
-
-    return 'sr-only'
+  function getCardVisibilityClass(index: number): string {
+    return index >= (currentPage - 1) * POSTS_PER_LOAD &&
+      index < currentPage * POSTS_PER_LOAD
+      ? 'block'
+      : 'sr-only'
   }
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
@@ -85,7 +81,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       ) : (
         <>
           <CardLayout type="blogPost">
-            {filteredPosts.map((post, i) => {
+            {filteredPosts.map((post, index) => {
               const { image, title, description, slug, publishedOn } = post
 
               return (
@@ -93,7 +89,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
                   key={post.slug}
                   className={clsx(
                     'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                    toggleShowBlogCard(i),
+                    getCardVisibilityClass(index),
                   )}
                 >
                   {image.url && (
