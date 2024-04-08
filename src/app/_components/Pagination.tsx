@@ -1,5 +1,7 @@
 'use client'
 
+import { useMemo } from 'react'
+
 import clsx from 'clsx'
 
 type PaginationProps = {
@@ -15,7 +17,7 @@ export function Pagination({
   total,
   size,
 }: PaginationProps) {
-  const pages = Math.ceil(total / size)
+  const pages = useMemo(() => Math.ceil(total / size), [total, size])
   const indexes = Array.from({ length: pages }, (_, index) => index + 1)
 
   return (
