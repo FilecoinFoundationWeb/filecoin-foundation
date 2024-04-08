@@ -81,6 +81,11 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     return 'sr-only'
   }
 
+  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
+    setCurrentPage(1)
+    setSearchQuery(event.target.value)
+  }
+
   return (
     <>
       <label htmlFor="search">Search Blog Posts</label>
@@ -147,9 +152,4 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       </div>
     </>
   )
-
-  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
-    setCurrentPage(1)
-    setSearchQuery(event.target.value)
-  }
 }
