@@ -14,6 +14,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
+import { buildSearchParams } from '@/utils/buildSearchParams'
 import { formatDate } from '@/utils/formatDate'
 
 import { PATHS } from '@/constants/paths'
