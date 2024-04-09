@@ -51,23 +51,22 @@ const eventsPageStructuredData: WithContext<WebPage> = {
 
 function getMetaDataContent(event: EventData) {
   if (!event.startDate || !event.location) {
-    return null
+    return [null]
   }
 
   const { startDate, endDate, location } = event
   const formattedStartDate = formatDate(startDate)
   const formattedEndDate = endDate ? formatDate(endDate) : null
 
-  return (
-    <span className="flex gap-3 font-bold text-brand-300">
-      <span>
-        <span>{formattedStartDate}</span>
-        {endDate && <span> - {formattedEndDate}</span>}
-      </span>
-      <span>|</span>
-      <span>{location || 'Not available'}</span>
-    </span>
-  )
+  const metaDataContent = [formattedStartDate]
+
+  if (formattedEndDate) {
+    metaDataContent[0] += ` - ${formattedEndDate}`
+  }
+
+  metaDataContent.push(location || 'Not available')
+
+  return metaDataContent
 }
 
 export default function Events() {
