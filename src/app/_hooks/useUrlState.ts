@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback } from 'react'
+import { useEffect, useState } from 'react'
 
 import { usePathname, useSearchParams, useRouter } from 'next/navigation'
 
@@ -29,33 +29,25 @@ export function useUrlState<T extends string | number>(
     return (value ? value : initialState) as T
   })
 
-  const initialSyncDoneRef = useRef(false)
-
-  const syncUrl = useCallback(
-    (newState: T) => {
-      const params = new URLSearchParams(searchParams.toString())
-      if (params.get(key) !== String(newState)) {
-        Boolean(newState)
-          ? params.set(key, String(newState))
-          : params.delete(key)
-
-        const url = `${pathname}?${params.toString()}`
-        router.push(url as Route, { scroll: false })
-      }
-    },
-    [key, pathname, router, searchParams],
-  )
-
   useEffect(() => {
-    if (syncOnInit && !initialSyncDoneRef.current) {
-      syncUrl(state)
-      initialSyncDoneRef.current = true
-    }
-  }, [state, syncOnInit, syncUrl])
+    if (syncOnInit) syncUrl(state)
+  }, [])
 
   function setStateAndSyncUrl(newState: T) {
     setState(newState)
     syncUrl(newState)
+  }
+
+  function syncUrl(newState: T) {
+    const params = new URLSearchParams(searchParams.toString())
+
+    if (params.get(key) != String(newState)) {
+      if (Boolean(newState)) params.set(key, String(newState))
+      if (!Boolean(newState)) params.delete(key)
+    }
+
+    const url = `${pathname}?${params.toString()}`
+    router.push(url as Route, { scroll: false })
   }
 
   return [state, setStateAndSyncUrl] as const
