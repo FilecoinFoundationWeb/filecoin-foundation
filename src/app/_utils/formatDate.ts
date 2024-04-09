@@ -2,7 +2,7 @@ type FormatDateOption = 'default' | 'blog' | 'event'
 
 export function formatDate(
   dateString: string,
-  format: FormatDateOption = 'default'
+  format: FormatDateOption = 'default',
 ): string {
   const date = new Date(dateString)
 
@@ -21,7 +21,7 @@ export function formatDate(
       options = { year: 'numeric', month: '2-digit', day: '2-digit' }
       break
     default:
-      options = { year: 'numeric', month: 'long', day: 'numeric' }
+      options = { year: 'numeric', month: 'short', day: 'numeric' }
   }
 
   return date.toLocaleDateString('en-US', options)

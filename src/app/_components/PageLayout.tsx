@@ -3,5 +3,5 @@ type PageLayoutProps = {
 }
 
 export function PageLayout({ children }: PageLayoutProps) {
-  return <div className="flex flex-col gap-24 sm:gap-16">{children}</div>
+  return <div className="flex flex-col gap-16">{children}</div>
 }

@@ -417,6 +417,21 @@
               ]
             },
             {
+              "name": "featured_post",
+              "label": "Featured Post",
+              "widget": "relation",
+              "collection": "blog",
+              "value_field": "slug",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "required": true
+            },
+            {
               "name": "seo",
               "label": "SEO",
               "widget": "object",
@@ -1238,6 +1253,37 @@
           "default": false
         },
         {
+          "name": "category",
+          "label": "Category",
+          "widget": "select",
+          "options": [
+            {
+              "label": "Announcements",
+              "value": "announcements"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Development",
+              "value": "development"
+            },
+            {
+              "label": "Interviews",
+              "value": "interviews"
+            },
+            {
+              "label": "Reports",
+              "value": "reports"
+            },
+            {
+              "label": "Research",
+              "value": "research"
+            }
+          ]
+        },
+        {
           "name": "description",
           "label": "Description",
           "widget": "text",
@@ -1279,7 +1325,7 @@
           "value_field": "src/content/blog/{{slug}}.md",
           "search_fields": [
             "slug",
-            "name"
+            "title"
           ],
           "display_fields": [
             "title"

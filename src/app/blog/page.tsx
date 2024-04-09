@@ -2,9 +2,14 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { BlogPostData } from '@/types/blogPostTypes'
+
+import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import {
   baseOrganizationSchema,
@@ -18,11 +23,12 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { BlogClient } from './BlogClient'
 
-const { header, seo } = attributes
+const { featured_post: featuredPostSlug, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
 const posts = getBlogPostsData()
+const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
 const blogPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -49,22 +55,48 @@ const blogPageStructuredData: WithContext<WebPage> = {
   },
 }
 
+function getMetaDataContent(post: BlogPostData) {
+  if (!post.publishedOn) {
+    return [null]
+  }
+
+  const { fields } = getCollectionConfig('blog')
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
+  const categoryLabel = categoryOptions.find(
+    (option) => option.value === post.category,
+  )?.label
+
+  const metaDataContent = [formatDate(post.publishedOn)]
+
+  if (categoryLabel) {
+    metaDataContent.push(categoryLabel)
+  }
+
+  return metaDataContent
+}
+
 export default function Blog() {
+  if (!featuredPost) {
+    throw new Error('Featured post not found')
+  }
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={blogPageStructuredData} />
       <PageHeader
-        title={header.title}
-        description={header.description}
+        title={featuredPost.title}
+        description={featuredPost.description}
+        metaData={getMetaDataContent(featuredPost)}
         cta={{
-          href: '#',
-          text: 'Read Post',
+          href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
+          text: 'Read Featured Post',
         }}
+        image={featuredPost.image}
       />
 
-      <div>
+      <PageSection kicker="Blog" title="Blog Posts">
         <BlogClient posts={posts} />
-      </div>
+      </PageSection>
     </PageLayout>
   )
 }

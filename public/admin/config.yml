@@ -99,6 +99,17 @@ collections:
         file: "src/content/pages/blog.md"
         fields:
           - *header_config
+          - name: "featured_post"
+            label: "Featured Post"
+            widget: "relation"
+            collection: "blog"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            required: true
           - *meta_config
       - name: "governance"
         label: "Governance"
@@ -173,6 +184,22 @@ collections:
         widget: "boolean"
         required: false
         default: false
+      - name: "category"
+        label: "Category"
+        widget: "select"
+        options:
+          - label: "Announcements"
+            value: "announcements"
+          - label: "Community"
+            value: "community"
+          - label: "Development"
+            value: "development"
+          - label: "Interviews"
+            value: "interviews"
+          - label: "Reports"
+            value: "reports"
+          - label: "Research"
+            value: "research"
       - name: "description"
         label: "Description"
         widget: "text"
@@ -203,7 +230,7 @@ collections:
         value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
-          - "name"
+          - "title"
         display_fields:
           - "title"
         multiple: true

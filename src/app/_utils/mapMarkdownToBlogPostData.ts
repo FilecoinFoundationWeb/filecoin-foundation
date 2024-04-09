@@ -14,6 +14,7 @@ export function mapMarkdownToBlogPostData({
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
     featured: data.featured,
+    category: data.category,
     description: data.description,
     image: {
       url: data.image?.url || '',
