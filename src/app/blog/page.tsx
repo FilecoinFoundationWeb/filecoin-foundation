@@ -57,26 +57,22 @@ const blogPageStructuredData: WithContext<WebPage> = {
 
 function getMetaDataContent(post: BlogPostData) {
   if (!post.publishedOn) {
-    return null
+    return [null]
   }
 
   const { fields } = getCollectionConfig('blog')
   const categoryOptions = getCMSFieldOptions(fields, 'category')
-  const categoryLabel =
-    categoryOptions.find((option) => option.value === post.category)?.label ||
-    null
+  const categoryLabel = categoryOptions.find(
+    (option) => option.value === post.category,
+  )?.label
 
-  return (
-    <span className="flex gap-3 font-bold text-brand-300">
-      <span>{formatDate(post.publishedOn)}</span>
-      {categoryLabel && (
-        <>
-          <span> | </span>
-          <span className="capitalize">{categoryLabel}</span>
-        </>
-      )}
-    </span>
-  )
+  const metaDataContent = [formatDate(post.publishedOn)]
+
+  if (categoryLabel) {
+    metaDataContent.push(categoryLabel)
+  }
+
+  return metaDataContent
 }
 
 export default function Blog() {
