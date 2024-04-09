@@ -1,31 +1,26 @@
 'use client'
 
-import { useMemo } from 'react'
-
 import clsx from 'clsx'
 
 type PaginationProps = {
   currentPage: number
-  total: number
-  size: number
+  pageCount: number
   setCurrentPage: (page: number) => void
 }
 
 export function Pagination({
+  pageCount,
   currentPage,
   setCurrentPage,
-  total,
-  size,
 }: PaginationProps) {
-  const pages = useMemo(() => Math.ceil(total / size), [total, size])
-  const indexes = Array.from({ length: pages }, (_, index) => index + 1)
+  const indexes = Array.from({ length: pageCount }, (_, index) => index + 1)
 
   function handlePrev() {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
   }
 
   function handleNext() {
-    if (currentPage < pages) setCurrentPage(currentPage + 1)
+    if (currentPage < pageCount) setCurrentPage(currentPage + 1)
   }
 
   function handlePageChange(index: number) {

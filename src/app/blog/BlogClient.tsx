@@ -21,7 +21,7 @@ import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_LOAD = 20
 
-const SEARCH_QUERY_KEY = 'search'
+const SEARCH_KEY = 'search'
 const PAGE_KEY = 'page'
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
@@ -29,17 +29,8 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const pathname = usePathname()
 
   const [searchQuery, setSearchQuery] = useState<string>(() => {
-    const searchQuery = searchParams.get(SEARCH_QUERY_KEY)
+    const searchQuery = searchParams.get(SEARCH_KEY)
     return searchQuery || ''
-  })
-
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    const activePage = searchParams.get(PAGE_KEY)
-
-    if (activePage && Number.isInteger(Number(activePage))) {
-      return Number(activePage)
-    }
-    return 1
   })
 
   const sortedPosts = useMemo(() => {
@@ -57,6 +48,27 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       return post.title.toLowerCase().includes(searchQuery.toLowerCase())
     })
   }, [searchQuery, sortedPosts])
+
+  const pageCount = useMemo(
+    () => Math.ceil(filteredPosts.length / POSTS_PER_LOAD),
+    [filteredPosts.length],
+  )
+
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    const pageQuery = searchParams.get(PAGE_KEY)
+
+    if (pageQuery) {
+      const pageQueryNumber = Number(pageQuery)
+
+      if (!Number.isInteger(pageQueryNumber)) return 1
+      if (pageQueryNumber <= 0) return 1
+      if (pageQueryNumber > pageCount) return pageCount
+
+      return pageQueryNumber
+    }
+
+    return 1
+  })
 
   useEffect(() => {
     const paramsObject = { [SEARCH_KEY]: searchQuery, [PAGE_KEY]: currentPage }
@@ -143,9 +155,8 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
           <div className="mx-auto mt-8 max-w-2xl">
             <Pagination
+              pageCount={pageCount}
               currentPage={currentPage}
-              total={filteredPosts.length}
-              size={POSTS_PER_LOAD}
               setCurrentPage={setCurrentPage}
             />
           </div>
