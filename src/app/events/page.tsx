@@ -79,9 +79,7 @@ export default function Events() {
       <StructuredDataScript structuredData={eventsPageStructuredData} />
       <PageHeader
         title={featuredEvent.title}
-        description={
-          featuredEvent.description || 'Event description not available.'
-        }
+        description={featuredEvent.description || 'Description not available.'}
         metaData={getMetaDataContent(featuredEvent)}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
