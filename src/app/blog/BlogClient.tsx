@@ -58,22 +58,12 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   }, [searchQuery, sortedPosts])
 
   useEffect(() => {
-    const params = new URLSearchParams(searchParams.toString())
+    const paramsObject = { [SEARCH_KEY]: searchQuery, [PAGE_KEY]: currentPage }
+    const newParams = buildSearchParams(paramsObject)
 
-    if (searchParams.get(SEARCH_QUERY_KEY) != searchQuery) {
-      if (!searchQuery) params.delete(SEARCH_QUERY_KEY)
-      if (searchQuery) params.set(SEARCH_QUERY_KEY, searchQuery)
-    }
-
-    if (searchParams.get(PAGE_KEY) != String(currentPage)) {
-      params.set(PAGE_KEY, String(currentPage))
-    }
-
-    const url = `${pathname}?${params.toString()}`
-    window.history.replaceState({}, '', url)
-
+    window.history.replaceState({}, '', `${pathname}?${newParams}`)
     return () => window.history.replaceState({}, '', pathname)
-  }, [currentPage, searchQuery])
+  }, [currentPage, pathname, searchParams, searchQuery])
 
   function determineVisibilityClass(postIndex: number): string {
     const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_LOAD
