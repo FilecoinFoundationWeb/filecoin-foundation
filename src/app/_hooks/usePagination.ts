@@ -4,14 +4,14 @@ import { validatePageNumber } from '@/utils/validatePageNumber'
 
 type UsePaginationProps = {
   totalEntries: number
+  entriesPerPage: number
   searchParams: URLSearchParams
   currentPageKey: string
-  entriesPerPage?: number
 }
 
 export function usePagination({
   totalEntries,
-  entriesPerPage = 20,
+  entriesPerPage,
   searchParams,
   currentPageKey,
 }: UsePaginationProps) {

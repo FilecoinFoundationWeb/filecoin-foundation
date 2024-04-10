@@ -7,6 +7,9 @@ import { useSearchParams } from 'next/navigation'
 
 import clsx from 'clsx'
 
+import { usePagination } from '@/hooks/usePagination'
+import { useUpdateHistory } from '@/hooks/useUpdateHistory'
+
 import { CardLayout } from '@/components/CardLayout'
 import { Heading } from '@/components/Heading'
 import { Pagination } from '@/components/Pagination'
@@ -16,8 +19,6 @@ import { BlogPostData } from '@/types/blogPostTypes'
 
 import { formatDate } from '@/utils/formatDate'
 
-import { usePagination } from '@/_hooks/usePagination'
-import { useUpdateHistory } from '@/_hooks/useUpdateHistory'
 import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_PAGE = 20
@@ -46,6 +47,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
   const { currentPage, setCurrentPage, pageCount } = usePagination({
     totalEntries: filteredAndSortedPosts.length,
+    entriesPerPage: POSTS_PER_PAGE,
     searchParams,
     currentPageKey: PAGE_KEY,
   })
