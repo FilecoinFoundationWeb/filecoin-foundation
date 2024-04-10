@@ -42,8 +42,9 @@ export function Pagination({
             key={page}
             className={clsx(
               'size-8 rounded transition-colors duration-75',
-              page == currentPage && 'bg-brand-800 text-brand-100',
-              page != currentPage && 'bg-brand-300 text-brand-700',
+              page === currentPage
+                ? 'bg-brand-800 text-brand-100'
+                : 'bg-brand-300 text-brand-700',
             )}
             onClick={() => handlePageChange(page)}
           >
