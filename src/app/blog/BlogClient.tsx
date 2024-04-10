@@ -16,6 +16,7 @@ import { BlogPostData } from '@/types/blogPostTypes'
 
 import { buildSearchParams } from '@/utils/buildSearchParams'
 import { formatDate } from '@/utils/formatDate'
+import { validatePageNumber } from '@/utils/validatePageNumber'
 
 import { PATHS } from '@/constants/paths'
 
@@ -31,6 +32,9 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const [searchQuery, setSearchQuery] = useState<string>(() => {
     const searchQuery = searchParams.get(SEARCH_KEY)
     return searchQuery || ''
+  })
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    return validatePageNumber(searchParams.get(PAGE_KEY), pageCount)
   })
 
   const sortedPosts = useMemo(() => {
@@ -53,22 +57,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     () => Math.ceil(filteredPosts.length / POSTS_PER_LOAD),
     [filteredPosts.length],
   )
-
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    const pageQuery = searchParams.get(PAGE_KEY)
-
-    if (pageQuery) {
-      const pageQueryNumber = Number(pageQuery)
-
-      if (!Number.isInteger(pageQueryNumber)) return 1
-      if (pageQueryNumber <= 0) return 1
-      if (pageQueryNumber > pageCount) return pageCount
-
-      return pageQueryNumber
-    }
-
-    return 1
-  })
 
   useEffect(() => {
     const paramsObject = { [SEARCH_KEY]: searchQuery, [PAGE_KEY]: currentPage }
