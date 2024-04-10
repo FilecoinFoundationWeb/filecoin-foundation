@@ -3,9 +3,16 @@
 import { useState, useMemo } from 'react'
 
 import Image from 'next/image'
+import { useSearchParams } from 'next/navigation'
 
-import { Button } from '@/components/Button'
+import clsx from 'clsx'
+
+import { usePagination } from '@/hooks/usePagination'
+import { useUpdateHistory } from '@/hooks/useUpdateHistory'
+
+import { CardLayout } from '@/components/CardLayout'
 import { Heading } from '@/components/Heading'
+import { Pagination } from '@/components/Pagination'
 import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
@@ -14,36 +21,57 @@ import { formatDate } from '@/utils/formatDate'
 
 import { PATHS } from '@/constants/paths'
 
-const POSTS_PER_LOAD = 9
+const POSTS_PER_PAGE = 20
+const PAGE_KEY = 'page'
+const SEARCH_KEY = 'search'
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
-  const [searchQuery, setSearchQuery] = useState<string>('')
-  const [visibleCount, setVisibleCount] = useState<number>(POSTS_PER_LOAD)
+  const searchParams = useSearchParams()
 
-  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
-    setSearchQuery(event.target.value.toLowerCase())
-    setVisibleCount(POSTS_PER_LOAD)
-  }
-
-  const sortedPosts = useMemo(() => {
-    return [...posts].sort((a, b) => {
-      if (!a.publishedOn || !b.publishedOn) return 0
-
-      const dateA = new Date(a.publishedOn).getTime()
-      const dateB = new Date(b.publishedOn).getTime()
-      return dateB - dateA
-    })
-  }, [posts])
-
-  const filteredPosts = sortedPosts.filter((post) =>
-    post.title.toLowerCase().includes(searchQuery)
+  const [searchQuery, setSearchQuery] = useState<string>(
+    searchParams.get(SEARCH_KEY) || '',
   )
 
-  function handleLoadMore() {
-    setVisibleCount((currentCount) => currentCount + POSTS_PER_LOAD)
+  const filteredAndSortedPosts = useMemo(() => {
+    return posts
+      .filter((post) =>
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()),
+      )
+      .sort((a, b) => {
+        if (!a.publishedOn || !b.publishedOn) return 0
+        return (
+          new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
+        )
+      })
+  }, [posts, searchQuery])
+
+  const { currentPage, setCurrentPage, pageCount } = usePagination({
+    totalEntries: filteredAndSortedPosts.length,
+    entriesPerPage: POSTS_PER_PAGE,
+    searchParams,
+    currentPageKey: PAGE_KEY,
+  })
+
+  useUpdateHistory({
+    searchQuery,
+    currentPage,
+    searchKey: SEARCH_KEY,
+    pageKey: PAGE_KEY,
+  })
+
+  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
+    setSearchQuery(event.target.value)
+    setCurrentPage(1)
   }
 
-  const hasMorePosts = visibleCount < filteredPosts.length
+  function determineVisibilityClass(postIndex: number): string {
+    const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_PAGE
+    const firstInvisiblePostIndex = currentPage * POSTS_PER_PAGE
+    const isVisible =
+      postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
+
+    return isVisible ? 'block' : 'sr-only'
+  }
 
   return (
     <>
@@ -52,41 +80,64 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         type="search"
         id="search"
         name="search"
+        value={searchQuery}
         aria-label="Search blog posts"
         className="text-brand-800"
         onChange={handleSearch}
       />
-      <ul>
-        {filteredPosts.slice(0, visibleCount).map((post) => (
-          <li key={post.slug}>
-            {post.image.url && (
-              <Image
-                src={post.image.url}
-                alt={post.image.alt}
-                width={282}
-                height={141}
-                className="object-cover"
-              />
-            )}
-            <Heading tag="h3" variant="lg">
-              {post.title}
-            </Heading>
-            <p>{post.description}</p>
-            {post.publishedOn && (
-              <span className="block">
-                {formatDate(post.publishedOn, 'blog')}
-              </span>
-            )}
-            <TextLink href={`${PATHS.BLOG.path}/${post.slug}`}>
-              Read More
-            </TextLink>
-          </li>
-        ))}
-      </ul>
-      {hasMorePosts && (
-        <Button aria-label="Load more posts" onClick={handleLoadMore}>
-          Load More
-        </Button>
+
+      {filteredAndSortedPosts.length === 0 ? (
+        <p className="mt-8 rounded-md border border-brand-600 p-4">
+          No results found for your search, try changing your search query.
+        </p>
+      ) : (
+        <>
+          <CardLayout type="blogPost">
+            {filteredAndSortedPosts.map((post, index) => {
+              const { image, title, description, slug, publishedOn } = post
+
+              return (
+                <li
+                  key={post.slug}
+                  className={clsx(
+                    'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
+                    determineVisibilityClass(index),
+                  )}
+                >
+                  {image.url && (
+                    <Image
+                      src={image.url}
+                      alt={image.alt}
+                      width={282}
+                      height={141}
+                      className="object-cover"
+                    />
+                  )}
+                  <Heading tag="h3" variant="lg">
+                    {title}
+                  </Heading>
+                  <p>{description}</p>
+                  {publishedOn && (
+                    <span className="block">
+                      {formatDate(publishedOn, 'blog')}
+                    </span>
+                  )}
+                  <TextLink href={`${PATHS.BLOG.path}/${slug}`}>
+                    Read More
+                  </TextLink>
+                </li>
+              )
+            })}
+          </CardLayout>
+
+          <div className="mx-auto mt-8 max-w-2xl">
+            <Pagination
+              pageCount={pageCount}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+          </div>
+        </>
       )}
     </>
   )
