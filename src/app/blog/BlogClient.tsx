@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 
 import Image from 'next/image'
-import { useSearchParams, usePathname } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 
 import clsx from 'clsx'
 
@@ -14,10 +14,10 @@ import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
-import { buildSearchParams } from '@/utils/buildSearchParams'
 import { formatDate } from '@/utils/formatDate'
 
 import { usePagination } from '@/_hooks/usePagination'
+import { useUpdateHistory } from '@/_hooks/useUpdateHistory'
 import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_PAGE = 20
@@ -26,7 +26,6 @@ const SEARCH_KEY = 'search'
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const searchParams = useSearchParams()
-  const pathname = usePathname()
 
   const [searchQuery, setSearchQuery] = useState<string>(
     searchParams.get(SEARCH_KEY) || '',
@@ -47,22 +46,16 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
 
   const { currentPage, setCurrentPage, pageCount } = usePagination({
     totalEntries: filteredAndSortedPosts.length,
-    postsPerPage: POSTS_PER_PAGE,
     searchParams,
     currentPageKey: PAGE_KEY,
   })
 
-  useEffect(() => {
-    const paramsObject = {
-      [SEARCH_KEY]: searchQuery,
-      [PAGE_KEY]: currentPage,
-    }
-    const newParams = buildSearchParams(paramsObject)
-
-    window.history.replaceState({}, '', `${pathname}?${newParams}`)
-
-    return () => window.history.replaceState({}, '', pathname)
-  }, [currentPage, pathname, searchQuery])
+  useUpdateHistory({
+    searchQuery,
+    currentPage,
+    searchKey: SEARCH_KEY,
+    pageKey: PAGE_KEY,
+  })
 
   function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
     setSearchQuery(event.target.value)

@@ -2,22 +2,22 @@ import { useState, useEffect, useMemo } from 'react'
 
 import { validatePageNumber } from '@/utils/validatePageNumber'
 
-interface UsePaginationProps {
+type UsePaginationProps = {
   totalEntries: number
-  postsPerPage: number
   searchParams: URLSearchParams
   currentPageKey: string
+  entriesPerPage?: number
 }
 
 export function usePagination({
   totalEntries,
-  postsPerPage,
+  entriesPerPage = 20,
   searchParams,
   currentPageKey,
 }: UsePaginationProps) {
   const pageCount = useMemo(
-    () => Math.ceil(totalEntries / postsPerPage),
-    [totalEntries, postsPerPage],
+    () => Math.ceil(totalEntries / entriesPerPage),
+    [totalEntries, entriesPerPage],
   )
 
   const [currentPage, setCurrentPage] = useState<number>(() => {
