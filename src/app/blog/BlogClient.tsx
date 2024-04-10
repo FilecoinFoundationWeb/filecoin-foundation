@@ -21,7 +21,6 @@ import { validatePageNumber } from '@/utils/validatePageNumber'
 import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_PAGE = 20
-
 const SEARCH_KEY = 'search'
 const PAGE_KEY = 'page'
 
@@ -37,25 +36,22 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     return validatePageNumber(searchParams.get(PAGE_KEY), pageCount)
   })
 
-  const sortedPosts = useMemo(() => {
-    return [...posts].sort((a, b) => {
-      if (!a.publishedOn || !b.publishedOn) return 0
-
-      const dateA = new Date(a.publishedOn).getTime()
-      const dateB = new Date(b.publishedOn).getTime()
-      return dateB - dateA
-    })
-  }, [posts])
-
-  const filteredPosts = useMemo(() => {
-    return sortedPosts.filter((post) => {
-      return post.title.toLowerCase().includes(searchQuery.toLowerCase())
-    })
-  }, [searchQuery, sortedPosts])
+  const filteredAndSortedPosts = useMemo(() => {
+    return posts
+      .filter((post) =>
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()),
+      )
+      .sort((a, b) => {
+        if (!a.publishedOn || !b.publishedOn) return 0
+        return (
+          new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
+        )
+      })
+  }, [posts, searchQuery])
 
   const pageCount = useMemo(
-    () => Math.ceil(filteredPosts.length / POSTS_PER_PAGE),
-    [filteredPosts.length],
+    () => Math.ceil(filteredAndSortedPosts.length / POSTS_PER_PAGE),
+    [filteredAndSortedPosts.length],
   )
 
   useEffect(() => {
@@ -97,14 +93,14 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       <br />
       <br />
 
-      {filteredPosts.length === 0 ? (
+      {filteredAndSortedPosts.length === 0 ? (
         <p className="mt-8 rounded-md border border-brand-600 p-4">
           No results found for your search, try changing your search query.
         </p>
       ) : (
         <>
           <CardLayout type="blogPost">
-            {filteredPosts.map((post, index) => {
+            {filteredAndSortedPosts.map((post, index) => {
               const { image, title, description, slug, publishedOn } = post
 
               return (
