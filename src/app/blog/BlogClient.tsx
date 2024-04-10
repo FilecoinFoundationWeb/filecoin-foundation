@@ -21,20 +21,16 @@ import { validatePageNumber } from '@/utils/validatePageNumber'
 import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_PAGE = 20
-const SEARCH_KEY = 'search'
 const PAGE_KEY = 'page'
+const SEARCH_KEY = 'search'
 
 export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   const searchParams = useSearchParams()
   const pathname = usePathname()
 
-  const [searchQuery, setSearchQuery] = useState<string>(() => {
-    const searchQuery = searchParams.get(SEARCH_KEY)
-    return searchQuery || ''
-  })
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    return validatePageNumber(searchParams.get(PAGE_KEY), pageCount)
-  })
+  const [searchQuery, setSearchQuery] = useState<string>(
+    searchParams.get(SEARCH_KEY) || '',
+  )
 
   const filteredAndSortedPosts = useMemo(() => {
     return posts
@@ -54,6 +50,10 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     [filteredAndSortedPosts.length],
   )
 
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    return validatePageNumber(searchParams.get(PAGE_KEY), pageCount)
+  })
+
   useEffect(() => {
     const paramsObject = { [SEARCH_KEY]: searchQuery, [PAGE_KEY]: currentPage }
     const newParams = buildSearchParams(paramsObject)
@@ -71,7 +71,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   function determineVisibilityClass(postIndex: number): string {
     const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_PAGE
     const firstInvisiblePostIndex = currentPage * POSTS_PER_PAGE
-
     const isVisible =
       postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
 
