@@ -49,22 +49,26 @@ export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
       <hr />
-      <Logo />
-      <p>
-        For the latest big ideas and news from the Filecoin ecosystem and the
-        decentralized web, subscribe to our newsletter.
-      </p>
-      <Button
-        className="sm:self-start"
-        variant="primary"
-        href={FILECOIN_FOUNDATION_URLS.newsletter}
-      >
-        Sign Up
-      </Button>
+      <div className="flex flex-col gap-6 sm:flex-row sm:justify-between md:justify-start md:gap-36">
+        <Logo />
+        <div className="sm:max-w-96">
+          <p className="mb-6">
+            For the latest big ideas and news from the Filecoin ecosystem and
+            the decentralized web, subscribe to our newsletter.
+          </p>
+          <Button
+            className="w-full sm:self-start md:w-auto"
+            variant="primary"
+            href={FILECOIN_FOUNDATION_URLS.newsletter}
+          >
+            Subscribe to Newsletter
+          </Button>
+        </div>
+      </div>
 
-      <hr className="mt-6" />
+      <hr />
       <Social />
-      <hr className="mb-6" />
+      <hr />
 
       <div className="flex flex-wrap gap-8 sm:gap-10">
         <NavigationList title="Browse" items={navigationItems} />
