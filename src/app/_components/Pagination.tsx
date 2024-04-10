@@ -37,21 +37,19 @@ export function Pagination({
       </button>
 
       <div className="flex justify-center gap-2">
-        {pageNumbers.map((page) => {
-          return (
-            <button
-              key={page}
-              className={clsx(
-                'size-8 rounded transition-colors duration-75',
-                page == currentPage && 'bg-brand-800 text-brand-100',
-                page != currentPage && 'bg-brand-300 text-brand-700',
-              )}
-              onClick={() => handlePageChange(page)}
-            >
-              {page}
-            </button>
-          )
-        })}
+        {pageNumbers.map((page) => (
+          <button
+            key={page}
+            className={clsx(
+              'size-8 rounded transition-colors duration-75',
+              page == currentPage && 'bg-brand-800 text-brand-100',
+              page != currentPage && 'bg-brand-300 text-brand-700',
+            )}
+            onClick={() => handlePageChange(page)}
+          >
+            {page}
+          </button>
+        ))}
       </div>
 
       <button
