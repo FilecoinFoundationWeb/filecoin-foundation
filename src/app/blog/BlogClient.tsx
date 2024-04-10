@@ -16,8 +16,8 @@ import { BlogPostData } from '@/types/blogPostTypes'
 
 import { buildSearchParams } from '@/utils/buildSearchParams'
 import { formatDate } from '@/utils/formatDate'
-import { validatePageNumber } from '@/utils/validatePageNumber'
 
+import { usePagination } from '@/_hooks/usePagination'
 import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_PAGE = 20
@@ -45,17 +45,18 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       })
   }, [posts, searchQuery])
 
-  const pageCount = useMemo(
-    () => Math.ceil(filteredAndSortedPosts.length / POSTS_PER_PAGE),
-    [filteredAndSortedPosts.length],
-  )
-
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    return validatePageNumber(searchParams.get(PAGE_KEY), pageCount)
+  const { currentPage, setCurrentPage, pageCount } = usePagination({
+    totalEntries: filteredAndSortedPosts.length,
+    postsPerPage: POSTS_PER_PAGE,
+    searchParams,
+    currentPageKey: PAGE_KEY,
   })
 
   useEffect(() => {
-    const paramsObject = { [SEARCH_KEY]: searchQuery, [PAGE_KEY]: currentPage }
+    const paramsObject = {
+      [SEARCH_KEY]: searchQuery,
+      [PAGE_KEY]: currentPage,
+    }
     const newParams = buildSearchParams(paramsObject)
 
     window.history.replaceState({}, '', `${pathname}?${newParams}`)
