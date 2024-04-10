@@ -13,7 +13,7 @@ export function Pagination({
   currentPage,
   setCurrentPage,
 }: PaginationProps) {
-  const indexes = Array.from({ length: pageCount }, (_, index) => index + 1)
+  const pageNumbers = Array.from({ length: pageCount }, (_, index) => index + 1)
 
   function handlePrev() {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
@@ -23,8 +23,8 @@ export function Pagination({
     if (currentPage < pageCount) setCurrentPage(currentPage + 1)
   }
 
-  function handlePageChange(index: number) {
-    if (index !== currentPage) setCurrentPage(index)
+  function handlePageChange(page: number) {
+    if (page !== currentPage) setCurrentPage(page)
   }
 
   return (
@@ -37,18 +37,18 @@ export function Pagination({
       </button>
 
       <div className="flex justify-center gap-2">
-        {indexes.map((index) => {
+        {pageNumbers.map((page) => {
           return (
             <button
-              key={index}
+              key={page}
               className={clsx(
                 'size-8 rounded transition-colors duration-75',
-                index == currentPage && 'bg-brand-800 text-brand-100',
-                index != currentPage && 'bg-brand-300 text-brand-700',
+                page == currentPage && 'bg-brand-800 text-brand-100',
+                page != currentPage && 'bg-brand-300 text-brand-700',
               )}
-              onClick={() => handlePageChange(index)}
+              onClick={() => handlePageChange(page)}
             >
-              {index}
+              {page}
             </button>
           )
         })}
