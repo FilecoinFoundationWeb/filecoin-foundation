@@ -7,11 +7,18 @@ export function buildSearchParams(
   const params = new URLSearchParams(existingParams?.toString())
 
   Object.entries(newParams).forEach(([key, newValue]) => {
-    const currentValue = params.get(key)
+    const currentValueAsString = params.get(key)
+    const newValueAsString = String(newValue)
 
-    if (currentValue != String(newValue)) {
-      if (!newValue) params.delete(key)
-      if (newValue) params.set(key, String(newValue))
+    const hasValueChange = currentValueAsString !== newValueAsString
+    const shouldDeleteParam = !newValue
+
+    if (hasValueChange) {
+      if (shouldDeleteParam) {
+        params.delete(key)
+      } else {
+        params.set(key, newValueAsString)
+      }
     }
   })
 
