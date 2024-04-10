@@ -20,7 +20,7 @@ import { validatePageNumber } from '@/utils/validatePageNumber'
 
 import { PATHS } from '@/constants/paths'
 
-const POSTS_PER_LOAD = 20
+const POSTS_PER_PAGE = 20
 
 const SEARCH_KEY = 'search'
 const PAGE_KEY = 'page'
@@ -54,7 +54,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   }, [searchQuery, sortedPosts])
 
   const pageCount = useMemo(
-    () => Math.ceil(filteredPosts.length / POSTS_PER_LOAD),
+    () => Math.ceil(filteredPosts.length / POSTS_PER_PAGE),
     [filteredPosts.length],
   )
 
@@ -67,8 +67,8 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   }, [currentPage, pathname, searchParams, searchQuery])
 
   function determineVisibilityClass(postIndex: number): string {
-    const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_LOAD
-    const firstInvisiblePostIndex = currentPage * POSTS_PER_LOAD
+    const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_PAGE
+    const firstInvisiblePostIndex = currentPage * POSTS_PER_PAGE
 
     const isVisible =
       postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
