@@ -51,7 +51,7 @@ const eventsPageStructuredData: WithContext<WebPage> = {
 
 function getMetaDataContent(event: EventData) {
   if (!event.startDate || !event.location) {
-    return [null]
+    return []
   }
 
   const { startDate, endDate, location } = event

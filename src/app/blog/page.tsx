@@ -57,7 +57,7 @@ const blogPageStructuredData: WithContext<WebPage> = {
 
 function getMetaDataContent(post: BlogPostData) {
   if (!post.publishedOn) {
-    return [null]
+    return []
   }
 
   const { fields } = getCollectionConfig('blog')

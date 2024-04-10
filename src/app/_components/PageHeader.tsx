@@ -38,7 +38,7 @@ export function PageHeader({
   return (
     <header className="flex flex-col gap-6 md:flex-row">
       <div className="flex flex-col md:w-1/2">
-        <Heading tag="h1" variant="4xl" className="mb-4">
+        <Heading tag="h1" variant="4xl" className="mb-4 text-balance">
           {title}
         </Heading>
         {metaData && metaData.length > 0 && (
