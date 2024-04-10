@@ -59,8 +59,14 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     const newParams = buildSearchParams(paramsObject)
 
     window.history.replaceState({}, '', `${pathname}?${newParams}`)
+
     return () => window.history.replaceState({}, '', pathname)
-  }, [currentPage, pathname, searchParams, searchQuery])
+  }, [currentPage, pathname, searchQuery])
+
+  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
+    setSearchQuery(event.target.value)
+    setCurrentPage(1)
+  }
 
   function determineVisibilityClass(postIndex: number): string {
     const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_PAGE
@@ -70,11 +76,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
 
     return isVisible ? 'block' : 'sr-only'
-  }
-
-  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
-    setCurrentPage(1)
-    setSearchQuery(event.target.value)
   }
 
   return (
@@ -89,9 +90,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         className="text-brand-800"
         onChange={handleSearch}
       />
-
-      <br />
-      <br />
 
       {filteredAndSortedPosts.length === 0 ? (
         <p className="mt-8 rounded-md border border-brand-600 p-4">
