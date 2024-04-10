@@ -140,6 +140,17 @@ collections:
         file: "src/content/pages/events.md"
         fields:
           - *header_config
+          - name: "featured_event"
+            label: "Featured Event"
+            widget: "relation"
+            collection: "events"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            required: true
           - *meta_config
       - name: "privacy-policy"
         label: "Privacy Policy"
@@ -557,6 +568,10 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
+      - name: "location"
+        label: "Location"
+        widget: "string"
+        required: true
       - name: "image"
         label: "Image"
         widget: "object"
