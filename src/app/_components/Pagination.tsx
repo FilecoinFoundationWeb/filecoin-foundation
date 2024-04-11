@@ -3,6 +3,8 @@
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
 
+import { useCollapseRange } from '@/hooks/useCollapseRange'
+
 type PaginationProps = {
   currentPage: number
   pageCount: number
@@ -14,7 +16,7 @@ export function Pagination({
   currentPage,
   setCurrentPage,
 }: PaginationProps) {
-  const pageNumbers = Array.from({ length: pageCount }, (_, index) => index + 1)
+  const collapsedRange = useCollapseRange(pageCount, currentPage, 6)
 
   function handlePrev() {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
@@ -45,7 +47,22 @@ export function Pagination({
       </div>
 
       <div className="flex grow justify-center gap-1">
-        {pageNumbers.map((pageNumber, index) => {
+        {collapsedRange.map((item, index) => {
+          if (typeof item === 'string') {
+            const ellipsis = item
+
+            return (
+              <span
+                key={'ellipsis' + index}
+                className="flex h-10 w-10 items-baseline justify-center rounded md:h-9 md:w-10"
+              >
+                <p className="mt-1.5">{ellipsis}</p>
+              </span>
+            )
+          }
+
+          const pageNumber = item
+
           return (
             <button
               key={'pageNumber' + index}
