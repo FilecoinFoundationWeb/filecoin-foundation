@@ -4,11 +4,14 @@ import { useState, useMemo } from 'react'
 
 import { useSearchParams } from 'next/navigation'
 
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+
 import { usePagination } from '@/hooks/usePagination'
 import { useUpdateHistory } from '@/hooks/useUpdateHistory'
 
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
+import { Heading } from '@/components/Heading'
 import { Pagination } from '@/components/Pagination'
 
 import { BlogPostData } from '@/types/blogPostTypes'
@@ -70,22 +73,30 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   }
 
   return (
-    <>
-      <label htmlFor="search">Search Blog Posts</label>
-      <input
-        type="search"
-        id="search"
-        name="search"
-        value={searchQuery}
-        aria-label="Search blog posts"
-        className="text-brand-800"
-        onChange={handleSearch}
-      />
+    <div className="flex flex-col gap-8">
+      <div>
+        <label htmlFor="search">Search Blog Posts</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          value={searchQuery}
+          aria-label="Search blog posts"
+          className="text-brand-800"
+          onChange={handleSearch}
+        />
+      </div>
 
       {filteredAndSortedPosts.length === 0 ? (
-        <p className="mt-8 rounded-md border border-brand-600 p-4">
-          No results found for your search, try changing your search query.
-        </p>
+        <div className="flex flex-col items-center gap-4 text-brand-200">
+          <span className="grid size-16 place-items-center rounded-full bg-brand-700 text-brand-300">
+            <MagnifyingGlass size={24} />
+          </span>
+          <Heading tag="h3" variant="xl">
+            No Results Found
+          </Heading>
+          <p className="">Try changing your search query.</p>
+        </div>
       ) : (
         <>
           <CardLayout type="blogPost">
@@ -128,6 +139,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
           </div>
         </>
       )}
-    </>
+    </div>
   )
 }
