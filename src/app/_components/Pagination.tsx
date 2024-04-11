@@ -1,5 +1,6 @@
 'use client'
 
+import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
 
 type PaginationProps = {
@@ -28,37 +29,53 @@ export function Pagination({
   }
 
   return (
-    <div className="flex justify-between gap-4 rounded-lg bg-brand-300 p-2 text-brand-700">
-      <button
-        className="rounded px-3 py-1 transition hover:bg-brand-400/30"
-        onClick={handlePrev}
-      >
-        Prev
-      </button>
+    <div className="flex w-full justify-between gap-4 rounded-lg bg-brand-300 p-1 text-brand-700">
+      <div className="flex">
+        <button
+          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
+          onClick={handlePrev}
+        >
+          <CaretLeft size={24} className="mr-2" />
+          <span className="mr-1.5">Prev</span>
+        </button>
 
-      <div className="flex justify-center gap-2">
-        {pageNumbers.map((page) => (
-          <button
-            key={page}
-            className={clsx(
-              'size-8 rounded transition-colors duration-75',
-              page === currentPage
-                ? 'bg-brand-800 text-brand-100'
-                : 'bg-brand-300 text-brand-700',
-            )}
-            onClick={() => handlePageChange(page)}
-          >
-            {page}
-          </button>
-        ))}
+        <div className="flex items-center">
+          <LineVertical size={24} />
+        </div>
       </div>
 
-      <button
-        className="rounded px-3 py-1 transition hover:bg-brand-400/30"
-        onClick={handleNext}
-      >
-        Next
-      </button>
+      <div className="flex grow justify-center gap-1">
+        {pageNumbers.map((pageNumber, index) => {
+          return (
+            <button
+              key={'pageNumber' + index}
+              className={clsx(
+                'h-10 w-10 rounded md:h-9 md:w-10',
+                pageNumber === currentPage
+                  ? 'bg-brand-800 text-brand-100'
+                  : 'bg-brand-300 text-brand-700',
+              )}
+              onClick={() => handlePageChange(pageNumber)}
+            >
+              {pageNumber}
+            </button>
+          )
+        })}
+      </div>
+
+      <div className="flex">
+        <div className="flex items-center">
+          <LineVertical size={24} />
+        </div>
+
+        <button
+          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
+          onClick={handleNext}
+        >
+          <span className="ml-1.5">Next</span>
+          <CaretRight size={24} className="ml-2" />
+        </button>
+      </div>
     </div>
   )
 }
