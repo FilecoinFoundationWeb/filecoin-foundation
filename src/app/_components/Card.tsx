@@ -1,5 +1,3 @@
-import { Fragment } from 'react'
-
 import Image from 'next/image'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -7,10 +5,11 @@ import clsx from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
+import { Meta, type MetaDataType } from '@/components/Meta'
 
 export type CardProps = {
   title: string | React.ReactNode
-  metaData?: Array<string | null | undefined>
+  metaData?: MetaDataType
   description?: string
   cta?: {
     href: string
@@ -74,21 +73,9 @@ export function Card({
       )}
       <div className="flex flex-col p-4">
         {metaData && metaData.length > 0 && (
-          <div className="mb-2 flex gap-3 text-brand-300">
-            {metaData.filter(Boolean).map((data, index) => {
-              const isNotLastItem = index < metaData.length - 1
-              const isNotFirstItem = index > 0
-
-              return (
-                <Fragment key={index}>
-                  <span className={clsx({ capitalize: isNotFirstItem })}>
-                    {data}
-                  </span>
-                  {isNotLastItem && <span> | </span>}
-                </Fragment>
-              )
-            })}
-          </div>
+          <span className="mb-2">
+            <Meta metaData={metaData} />
+          </span>
         )}
 
         {title && typeof title === 'string' ? (
