@@ -13,6 +13,8 @@ import { Pagination } from '@/components/Pagination'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
+import { formatDate } from '@/utils/formatDate'
+
 import { PATHS } from '@/constants/paths'
 
 const POSTS_PER_PAGE = 20
@@ -88,7 +90,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         <>
           <CardLayout type="blogPost">
             {filteredAndSortedPosts.map((post, index) => {
-              const { image, title, description, slug } = post
+              const { image, title, description, slug, publishedOn } = post
 
               return (
                 <div
@@ -97,6 +99,10 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
                 >
                   <Card
                     title={title}
+                    metaData={[
+                      ...(publishedOn ? [formatDate(publishedOn)] : []),
+                      ...(post.category ? [post.category] : []),
+                    ]}
                     description={description}
                     cta={{
                       href: `${PATHS.BLOG.path}/${slug}`,

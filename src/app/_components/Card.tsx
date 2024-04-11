@@ -1,3 +1,5 @@
+import { Fragment } from 'react'
+
 import Image from 'next/image'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -8,6 +10,7 @@ import { Heading } from '@/components/Heading'
 
 export type CardProps = {
   title: string | React.ReactNode
+  metaData?: Array<string | null | undefined>
   description?: string
   cta?: {
     href: string
@@ -21,6 +24,7 @@ export type CardProps = {
   }
   borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
+
   as?: React.ElementType
   children?: React.ReactNode
 }
@@ -40,6 +44,7 @@ const imageSizes = {
 
 export function Card({
   title,
+  metaData,
   description,
   cta,
   entryType = 'blogPost',
@@ -67,9 +72,27 @@ export function Card({
           />
         </div>
       )}
-      <div className="flex flex-col gap-3 p-4">
+      <div className="flex flex-col p-4">
+        {metaData && metaData.length > 0 && (
+          <div className="mb-2 flex gap-3 text-brand-300">
+            {metaData.filter(Boolean).map((data, index) => {
+              const isNotLastItem = index < metaData.length - 1
+              const isNotFirstItem = index > 0
+
+              return (
+                <Fragment key={index}>
+                  <span className={clsx({ capitalize: isNotFirstItem })}>
+                    {data}
+                  </span>
+                  {isNotLastItem && <span> | </span>}
+                </Fragment>
+              )
+            })}
+          </div>
+        )}
+
         {title && typeof title === 'string' ? (
-          <Heading tag="h3" variant="lg" className="line-clamp-3 text-ellipsis">
+          <Heading tag="h3" variant="lg" className="line-clamp-2 text-ellipsis">
             {title}
           </Heading>
         ) : (
@@ -79,13 +102,14 @@ export function Card({
         {description && (
           <p
             className={clsx(
-              'mb-10',
+              'mb-10 mt-3',
               textIsClamped && 'line-clamp-3 text-ellipsis',
             )}
           >
             {description}
           </p>
         )}
+
         {cta && (
           <CustomLink
             href={cta.href}
@@ -97,6 +121,7 @@ export function Card({
             </span>
           </CustomLink>
         )}
+
         {children && children}
       </div>
     </Tag>
