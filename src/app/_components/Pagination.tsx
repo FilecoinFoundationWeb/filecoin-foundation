@@ -38,10 +38,10 @@ export function Pagination({
   }
 
   return (
-    <div className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1 text-brand-700">
+    <div className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1.5 text-brand-700">
       <div className="flex">
         <button
-          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
+          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
           aria-label="Previous"
           onClick={handlePrev}
         >
@@ -61,10 +61,10 @@ export function Pagination({
               {typeof item === 'number' ? (
                 <button
                   className={clsx(
-                    'h-full w-full rounded',
+                    'h-full w-full rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white',
                     item === currentPage
                       ? 'bg-brand-800 text-brand-100'
-                      : 'bg-brand-300 text-brand-700',
+                      : 'bg-brand-300 text-brand-700 hover:bg-brand-400',
                   )}
                   aria-label={'Page ' + item}
                   onClick={() => handlePageChange(item)}
@@ -87,7 +87,7 @@ export function Pagination({
         </div>
 
         <button
-          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
+          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
           aria-label="Next"
           onClick={handleNext}
         >
