@@ -2,22 +2,16 @@
 
 import { useState, useMemo } from 'react'
 
-import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
-
-import clsx from 'clsx'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useUpdateHistory } from '@/hooks/useUpdateHistory'
 
+import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
-import { Heading } from '@/components/Heading'
 import { Pagination } from '@/components/Pagination'
-import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
-
-import { formatDate } from '@/utils/formatDate'
 
 import { PATHS } from '@/constants/paths'
 
@@ -94,38 +88,27 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
         <>
           <CardLayout type="blogPost">
             {filteredAndSortedPosts.map((post, index) => {
-              const { image, title, description, slug, publishedOn } = post
+              const { image, title, description, slug } = post
 
               return (
-                <li
+                <div
                   key={post.slug}
-                  className={clsx(
-                    'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                    determineVisibilityClass(index),
-                  )}
+                  className={determineVisibilityClass(index)}
                 >
-                  {image.url && (
-                    <Image
-                      src={image.url}
-                      alt={image.alt}
-                      width={282}
-                      height={141}
-                      className="object-cover"
-                    />
-                  )}
-                  <Heading tag="h3" variant="lg">
-                    {title}
-                  </Heading>
-                  <p>{description}</p>
-                  {publishedOn && (
-                    <span className="block">
-                      {formatDate(publishedOn, 'blog')}
-                    </span>
-                  )}
-                  <TextLink href={`${PATHS.BLOG.path}/${slug}`}>
-                    Read More
-                  </TextLink>
-                </li>
+                  <Card
+                    title={title}
+                    description={description}
+                    cta={{
+                      href: `${PATHS.BLOG.path}/${slug}`,
+                      text: 'Read Post',
+                    }}
+                    image={{
+                      url: image?.url,
+                      alt: image?.alt,
+                    }}
+                    textIsClamped={true}
+                  />
+                </div>
               )
             })}
           </CardLayout>
