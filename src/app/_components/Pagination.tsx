@@ -42,6 +42,7 @@ export function Pagination({
       <div className="flex">
         <button
           className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
+          aria-label="Previous"
           onClick={handlePrev}
         >
           <CaretLeft size={24} className="mr-1.5" />
@@ -53,39 +54,32 @@ export function Pagination({
         </div>
       </div>
 
-      <div className="flex shrink grow justify-center gap-2 sm:gap-1">
+      <ul className="flex shrink grow justify-center gap-2 sm:gap-1">
         {collapsedRange.map((item, index) => {
-          if (typeof item === 'string') {
-            const ellipsis = item
-
-            return (
-              <span
-                key={'ellipsis' + index}
-                className="flex h-10 w-10 items-baseline justify-center rounded md:h-9 md:w-10"
-              >
-                <p className="mt-1.5">{ellipsis}</p>
-              </span>
-            )
-          }
-
-          const pageNumber = item
-
           return (
-            <button
-              key={'pageNumber' + index}
-              className={clsx(
-                'h-10 w-10 rounded md:h-9 md:w-10',
-                pageNumber === currentPage
-                  ? 'bg-brand-800 text-brand-100'
-                  : 'bg-brand-300 text-brand-700',
+            <li key={index} className="h-10 w-10 md:h-9 md:w-10">
+              {typeof item === 'number' ? (
+                <button
+                  className={clsx(
+                    'h-full w-full rounded',
+                    item === currentPage
+                      ? 'bg-brand-800 text-brand-100'
+                      : 'bg-brand-300 text-brand-700',
+                  )}
+                  aria-label={'Page ' + item}
+                  onClick={() => handlePageChange(item)}
+                >
+                  {item}
+                </button>
+              ) : (
+                <span className="flex h-full w-full items-baseline justify-center">
+                  <span className="mt-1.5">{item}</span>
+                </span>
               )}
-              onClick={() => handlePageChange(pageNumber)}
-            >
-              {pageNumber}
-            </button>
+            </li>
           )
         })}
-      </div>
+      </ul>
 
       <div className="flex">
         <div className="flex items-center">
@@ -94,6 +88,7 @@ export function Pagination({
 
         <button
           className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
+          aria-label="Next"
           onClick={handleNext}
         >
           <span className="ml-1.5">Next</span>
@@ -103,3 +98,33 @@ export function Pagination({
     </div>
   )
 }
+
+// if (typeof item === 'string') {
+//   const ellipsis = item
+
+//   return (
+//     <span
+//       key={'ellipsis' + index}
+//       className="flex h-10 w-10 items-baseline justify-center rounded md:h-9 md:w-10"
+//     >
+//       <span className="mt-1.5">{ellipsis}</span>
+//     </span>
+//   )
+// }
+
+// const pageNumber = item
+
+// return (
+//   <button
+//     key={'pageNumber' + index}
+//     className={clsx(
+//       'h-10 w-10 rounded md:h-9 md:w-10',
+//       pageNumber === currentPage
+//         ? 'bg-brand-800 text-brand-100'
+//         : 'bg-brand-300 text-brand-700',
+//     )}
+//     onClick={() => handlePageChange(pageNumber)}
+//   >
+//     {pageNumber}
+//   </button>
+// )
