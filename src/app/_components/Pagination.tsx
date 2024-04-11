@@ -98,33 +98,3 @@ export function Pagination({
     </div>
   )
 }
-
-// if (typeof item === 'string') {
-//   const ellipsis = item
-
-//   return (
-//     <span
-//       key={'ellipsis' + index}
-//       className="flex h-10 w-10 items-baseline justify-center rounded md:h-9 md:w-10"
-//     >
-//       <span className="mt-1.5">{ellipsis}</span>
-//     </span>
-//   )
-// }
-
-// const pageNumber = item
-
-// return (
-//   <button
-//     key={'pageNumber' + index}
-//     className={clsx(
-//       'h-10 w-10 rounded md:h-9 md:w-10',
-//       pageNumber === currentPage
-//         ? 'bg-brand-800 text-brand-100'
-//         : 'bg-brand-300 text-brand-700',
-//     )}
-//     onClick={() => handlePageChange(pageNumber)}
-//   >
-//     {pageNumber}
-//   </button>
-// )
