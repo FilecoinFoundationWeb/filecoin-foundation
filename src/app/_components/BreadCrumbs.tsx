@@ -26,7 +26,7 @@ export function BreadCrumbs() {
     return label
   }
 
-  const baseStyles = 'hover:underline focus:outline-2 focus:outline-white'
+  const baseStyles = 'hover:underline focus:outline-2 focus:outline-brand-100'
 
   return (
     <nav aria-label="breadcrumbs">

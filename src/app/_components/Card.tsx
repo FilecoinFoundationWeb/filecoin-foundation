@@ -124,7 +124,7 @@ export function Card({
           <CustomLink
             href={cta.href}
             aria-label={cta.ariaLabel}
-            className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
+            className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
               {cta.icon || <BookOpen size={24} aria-hidden={true} />}
