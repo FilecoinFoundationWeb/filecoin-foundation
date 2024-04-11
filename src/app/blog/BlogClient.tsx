@@ -11,6 +11,8 @@ import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
+import { SearchInput } from '@/components/SearchInput'
+import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
@@ -62,19 +64,8 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
   }
 
   return (
-    <div className="flex flex-col gap-8">
-      <div>
-        <label htmlFor="search">Search Blog Posts</label>
-        <input
-          type="search"
-          id="search"
-          name="search"
-          value={searchQuery}
-          aria-label="Search blog posts"
-          className="text-brand-800"
-          onChange={handleSearch}
-        />
-      </div>
+    <>
+      <SearchInput searchQuery={searchQuery} onSearchChange={handleSearch} />
 
       {filteredAndSortedPosts.length === 0 ? (
         <NoResultsMessage />
@@ -121,6 +112,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
           </div>
         </>
       )}
-    </div>
+    </>
   )
 }

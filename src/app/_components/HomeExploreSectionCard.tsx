@@ -45,7 +45,7 @@ export function HomeExploreSectionCard({
       </div>
       <CustomLink
         href={cta.href}
-        className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
+        className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
       >
         <span className="absolute bottom-4 left-4 text-brand-300">
           {cta.text}
