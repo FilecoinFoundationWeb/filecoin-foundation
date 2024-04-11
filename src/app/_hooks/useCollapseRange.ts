@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 // Inspiration: https://atlassian.design/components/pagination
 
 const DISTANCE_FROM_START = 3
-const DISTANCE_FROM_LAST = 2
+const DISTANCE_FROM_END = 2
 const ELLIPSIS = '...'
 
 export function useCollapseRange(
@@ -18,7 +18,7 @@ export function useCollapseRange(
   // Boolean
   const needEllipsis = pageNumbers.length > range
   const needsStartEllipsis = currentPage - DISTANCE_FROM_START > 0
-  const needsEndEllipsis = currentPage + DISTANCE_FROM_LAST < pageNumbers.length
+  const needsEndEllipsis = currentPage + DISTANCE_FROM_END < pageNumbers.length
 
   // page numbers
   const firstPageNumber = pageNumbers[0]
