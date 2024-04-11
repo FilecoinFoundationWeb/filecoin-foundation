@@ -159,14 +159,12 @@ const advisorsData = [
 const reportsData = [
   {
     title: 'Filecoin Foundation 2023 Annual Report',
-    description:
-      'To get a broader and deeper context on our journey, read the full report.',
+    description: `Read the full report to learn more about the Foundation's work in 2023.`,
     link: FILECOIN_FOUNDATION_URLS.annualReports.latest,
   },
   {
     title: 'Filecoin Foundation 2022 Annual Report',
-    description:
-      'To get a broader and deeper context on our journey, read the full report.',
+    description: `Read the full report to learn more about the Foundation's work in 2022.`,
     link: FILECOIN_FOUNDATION_URLS.annualReports.previous,
   },
   {
@@ -261,7 +259,7 @@ export default function About() {
         </CardLayout>
       </PageSection>
 
-      <PageSection kicker="Reports" title="Reports">
+      <PageSection kicker="Insights" title="Reports">
         <CardLayout type="reports">
           {reportsData.map(({ title, description, link }, index) => (
             <div
