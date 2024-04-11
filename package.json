@@ -16,6 +16,7 @@
     "@babel/preset-react": "^7.23.3",
     "@phosphor-icons/react": "^2.1.4",
     "@tailwindcss/typography": "^0.5.10",
+    "@uidotdev/usehooks": "^2.4.1",
     "autoprefixer": "^10.4.16",
     "clsx": "^2.1.0",
     "frontmatter-markdown-loader": "^3.7.0",

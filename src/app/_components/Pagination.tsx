@@ -1,6 +1,7 @@
 'use client'
 
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
+import { useMediaQuery } from '@uidotdev/usehooks'
 import clsx from 'clsx'
 
 import { useCollapseRange } from '@/hooks/useCollapseRange'
@@ -16,7 +17,13 @@ export function Pagination({
   currentPage,
   setCurrentPage,
 }: PaginationProps) {
-  const collapsedRange = useCollapseRange(pageCount, currentPage, 6)
+  const isXsDevice = useMediaQuery('only screen and (max-width : 640px)')
+
+  const collapsedRange = useCollapseRange(
+    pageCount,
+    currentPage,
+    isXsDevice ? 2 : 6,
+  )
 
   function handlePrev() {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
@@ -31,13 +38,13 @@ export function Pagination({
   }
 
   return (
-    <div className="flex w-full justify-between gap-4 rounded-lg bg-brand-300 p-1 text-brand-700">
+    <div className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1 text-brand-700">
       <div className="flex">
         <button
           className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-700 hover:text-brand-100"
           onClick={handlePrev}
         >
-          <CaretLeft size={24} className="mr-2" />
+          <CaretLeft size={24} className="mr-1.5" />
           <span className="mr-1.5">Prev</span>
         </button>
 
@@ -46,7 +53,7 @@ export function Pagination({
         </div>
       </div>
 
-      <div className="flex grow justify-center gap-1">
+      <div className="flex shrink grow justify-center gap-2 sm:gap-1">
         {collapsedRange.map((item, index) => {
           if (typeof item === 'string') {
             const ellipsis = item
@@ -90,7 +97,7 @@ export function Pagination({
           onClick={handleNext}
         >
           <span className="ml-1.5">Next</span>
-          <CaretRight size={24} className="ml-2" />
+          <CaretRight size={24} className="ml-1.5" />
         </button>
       </div>
     </div>
