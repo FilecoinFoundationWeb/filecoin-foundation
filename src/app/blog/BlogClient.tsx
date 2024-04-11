@@ -4,14 +4,12 @@ import { useState, useMemo } from 'react'
 
 import { useSearchParams } from 'next/navigation'
 
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-
 import { usePagination } from '@/hooks/usePagination'
 import { useUpdateHistory } from '@/hooks/useUpdateHistory'
 
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
-import { Heading } from '@/components/Heading'
+import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
 
 import { BlogPostData } from '@/types/blogPostTypes'
@@ -88,15 +86,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
       </div>
 
       {filteredAndSortedPosts.length === 0 ? (
-        <div className="flex flex-col items-center gap-4 text-brand-200">
-          <span className="grid size-16 place-items-center rounded-full bg-brand-700 text-brand-300">
-            <MagnifyingGlass size={24} />
-          </span>
-          <Heading tag="h3" variant="xl">
-            No Results Found
-          </Heading>
-          <p className="">Try changing your search query.</p>
-        </div>
+        <NoResultsMessage />
       ) : (
         <>
           <CardLayout type="blogPost">
