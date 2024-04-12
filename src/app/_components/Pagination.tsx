@@ -25,12 +25,15 @@ export function Pagination({
     isXsDevice ? 2 : 6,
   )
 
+  const canGoBack = currentPage > 1
+  const canGoForward = currentPage < pageCount
+
   function handlePrev() {
-    if (currentPage > 1) setCurrentPage(currentPage - 1)
+    if (canGoBack) setCurrentPage(currentPage - 1)
   }
 
   function handleNext() {
-    if (currentPage < pageCount) setCurrentPage(currentPage + 1)
+    if (canGoForward) setCurrentPage(currentPage + 1)
   }
 
   function handlePageChange(page: number) {
@@ -41,8 +44,15 @@ export function Pagination({
     <div className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1.5 text-brand-700">
       <div className="flex">
         <button
-          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          className={clsx(
+            'flex items-center rounded bg-brand-300 p-1 px-2 transition',
+            canGoBack
+              ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
+              : 'cursor-not-allowed',
+          )}
           aria-label="Previous"
+          aria-disabled={!canGoBack}
+          disabled={!canGoBack}
           onClick={handlePrev}
         >
           <CaretLeft size={24} className="mr-1.5" />
@@ -87,8 +97,15 @@ export function Pagination({
         </div>
 
         <button
-          className="flex items-center rounded bg-brand-300 p-1 px-2 transition hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          className={clsx(
+            'flex items-center rounded bg-brand-300 p-1 px-2 transition',
+            canGoForward
+              ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
+              : 'cursor-not-allowed',
+          )}
           aria-label="Next"
+          aria-disabled={!canGoForward}
+          disabled={!canGoForward}
           onClick={handleNext}
         >
           <span className="ml-1.5">Next</span>
