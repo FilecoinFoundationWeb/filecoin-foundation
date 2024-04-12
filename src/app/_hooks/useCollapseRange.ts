@@ -35,20 +35,7 @@ export function useCollapseRange(
 
   // If range is less than 4, we don't show any ellipsis
   if (range <= 4) {
-    const firstOrBeforeCurrentIndex = Math.max(
-      firstPageNumberIndex,
-      currentPageIndex - Math.floor(range / 2),
-    )
-
-    const lastOrAfterCurrentIndex = Math.min(
-      pageNumbers.length,
-      currentPageIndex + Math.ceil(range / 2),
-    )
-
-    return pageNumbers.slice(
-      Math.min(firstOrBeforeCurrentIndex, pageNumbers.length - range),
-      Math.max(lastOrAfterCurrentIndex, range),
-    )
+    return onlyIncludeNumbersOnSmallRange()
   }
 
   // Ellipsis at the start only
@@ -82,4 +69,21 @@ export function useCollapseRange(
   )
 
   return [firstPageNumber, ELLIPSIS, ...middleIndexes, ELLIPSIS, lastPageNumber]
+
+  function onlyIncludeNumbersOnSmallRange() {
+    const firstOrBeforeCurrentIndex = Math.max(
+      firstPageNumberIndex,
+      currentPageIndex - Math.floor(range / 2),
+    )
+
+    const lastOrAfterCurrentIndex = Math.min(
+      pageNumbers.length,
+      currentPageIndex + Math.ceil(range / 2),
+    )
+
+    return pageNumbers.slice(
+      Math.min(firstOrBeforeCurrentIndex, pageNumbers.length - range),
+      Math.max(lastOrAfterCurrentIndex, range),
+    )
+  }
 }

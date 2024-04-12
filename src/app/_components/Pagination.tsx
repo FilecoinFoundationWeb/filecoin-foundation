@@ -49,7 +49,7 @@ export function Pagination({
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
           )}
-          aria-label="Previous"
+          aria-label="Go to previous page"
           aria-disabled={!canGoBack}
           disabled={!canGoBack}
           onClick={handlePrev}
@@ -68,34 +68,32 @@ export function Pagination({
       </div>
 
       <ul className="-mx-1 flex shrink grow justify-center gap-2 md:gap-1">
-        {collapsedRange.map((item, index) => {
-          return (
-            <li
-              key={index}
-              className="h-10 w-10 md:h-9 md:w-10"
-              aria-current={item === currentPage ? 'page' : undefined}
-            >
-              {typeof item === 'number' ? (
-                <button
-                  className={clsx(
-                    'h-full w-full rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white',
-                    item === currentPage
-                      ? 'bg-brand-800 text-brand-100'
-                      : 'bg-brand-300 text-brand-700 hover:bg-brand-400',
-                  )}
-                  aria-label={'Page ' + item}
-                  onClick={() => handlePageChange(item)}
-                >
-                  {item}
-                </button>
-              ) : (
-                <span className="flex h-full w-full items-baseline justify-center">
-                  <span className="mt-1.5">{item}</span>
-                </span>
-              )}
-            </li>
-          )
-        })}
+        {collapsedRange.map((item, index) => (
+          <li
+            key={index}
+            className="h-10 w-10 md:h-9 md:w-10"
+            aria-current={item === currentPage ? 'page' : undefined}
+          >
+            {typeof item === 'number' ? (
+              <button
+                className={clsx(
+                  'h-full w-full rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white',
+                  item === currentPage
+                    ? 'bg-brand-800 text-brand-100'
+                    : 'bg-brand-300 text-brand-700 hover:bg-brand-400',
+                )}
+                aria-label={'Page ' + item}
+                onClick={() => handlePageChange(item)}
+              >
+                {item}
+              </button>
+            ) : (
+              <span className="flex h-full w-full items-baseline justify-center">
+                <span className="mt-1.5">{item}</span>
+              </span>
+            )}
+          </li>
+        ))}
       </ul>
 
       <div className="flex">
@@ -114,7 +112,7 @@ export function Pagination({
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
           )}
-          aria-label="Next"
+          aria-label="Go to next page"
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
           onClick={handleNext}
