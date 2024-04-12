@@ -6,7 +6,6 @@ import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapp
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { NetlifyIdentityManager } from '@/components/NetlifyIdentityManager'
-import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { baseOrganizationSchema } from '@/utils/structuredData'
@@ -44,7 +43,6 @@ export default function RootLayout({
         </main>
 
         <Footer />
-        <ScreenSizeIndicator />
       </body>
     </html>
   )
