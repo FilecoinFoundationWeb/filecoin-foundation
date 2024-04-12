@@ -1,10 +1,10 @@
 'use client'
 
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
-import { useMediaQuery } from '@uidotdev/usehooks'
 import clsx from 'clsx'
 
 import { useCollapseRange } from '@/hooks/useCollapseRange'
+import { useResponsiveRange } from '@/hooks/useResponsiveRange'
 
 type PaginationProps = {
   currentPage: number
@@ -17,13 +17,8 @@ export function Pagination({
   currentPage,
   setCurrentPage,
 }: PaginationProps) {
-  const isXsDevice = useMediaQuery('only screen and (max-width : 640px)')
-
-  const collapsedRange = useCollapseRange(
-    pageCount,
-    currentPage,
-    isXsDevice ? 2 : 6,
-  )
+  const range = useResponsiveRange()
+  const collapsedRange = useCollapseRange(pageCount, currentPage, range)
 
   const canGoBack = currentPage > 1
   const canGoForward = currentPage < pageCount

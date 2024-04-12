@@ -9,7 +9,7 @@ const ELLIPSIS = '...'
 export function useCollapseRange(
   pageCount: number,
   currentPage: number,
-  range: number = 7,
+  range: number,
 ): Array<number | typeof ELLIPSIS> {
   const pageNumbers = useMemo(() => {
     return Array.from({ length: pageCount }, (_, i) => i + 1)

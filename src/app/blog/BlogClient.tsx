@@ -130,7 +130,7 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
             })}
           </CardLayout>
 
-          <div className="mx-auto mt-2 w-full sm:mt-8 sm:w-auto">
+          <div className="mx-auto mt-1 sm:mt-6">
             <Pagination
               pageCount={pageCount}
               currentPage={currentPage}
