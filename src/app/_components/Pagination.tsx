@@ -44,7 +44,7 @@ export function Pagination({
     <nav
       aria-label="Pagination"
       role="navigation"
-      className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1.5 text-brand-700"
+      className="flex w-full justify-between rounded-lg bg-brand-300 p-1 text-brand-700"
     >
       <div className="flex">
         <button
@@ -59,16 +59,20 @@ export function Pagination({
           disabled={!canGoBack}
           onClick={handlePrev}
         >
-          <CaretLeft size={24} className="mr-1.5" />
+          <CaretLeft size={20} weight="bold" className="mr-1.5" />
           <span className="mr-1.5">Prev</span>
         </button>
 
         <div className="flex items-center">
-          <LineVertical size={24} />
+          <LineVertical
+            size={24}
+            weight="light"
+            className="text-[#08072E]/50"
+          />
         </div>
       </div>
 
-      <ul className="flex shrink grow justify-center gap-2 sm:gap-1">
+      <ul className="-mx-1 flex shrink grow justify-center gap-2 md:gap-1">
         {collapsedRange.map((item, index) => {
           return (
             <li
@@ -101,7 +105,11 @@ export function Pagination({
 
       <div className="flex">
         <div className="flex items-center">
-          <LineVertical size={24} />
+          <LineVertical
+            size={24}
+            weight="light"
+            className="text-[#08072E]/50"
+          />
         </div>
 
         <button
@@ -117,7 +125,7 @@ export function Pagination({
           onClick={handleNext}
         >
           <span className="ml-1.5">Next</span>
-          <CaretRight size={24} className="ml-1.5" />
+          <CaretRight size={20} weight="bold" className="ml-1.5" />
         </button>
       </div>
     </nav>
