@@ -41,7 +41,11 @@ export function Pagination({
   }
 
   return (
-    <div className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1.5 text-brand-700">
+    <nav
+      aria-label="Pagination"
+      role="navigation"
+      className="flex w-full justify-evenly gap-4 rounded-lg bg-brand-300 p-1.5 text-brand-700"
+    >
       <div className="flex">
         <button
           className={clsx(
@@ -67,7 +71,11 @@ export function Pagination({
       <ul className="flex shrink grow justify-center gap-2 sm:gap-1">
         {collapsedRange.map((item, index) => {
           return (
-            <li key={index} className="h-10 w-10 md:h-9 md:w-10">
+            <li
+              key={index}
+              className="h-10 w-10 md:h-9 md:w-10"
+              aria-current={item === currentPage ? 'page' : undefined}
+            >
               {typeof item === 'number' ? (
                 <button
                   className={clsx(
@@ -112,6 +120,6 @@ export function Pagination({
           <CaretRight size={24} className="ml-1.5" />
         </button>
       </div>
-    </div>
+    </nav>
   )
 }
