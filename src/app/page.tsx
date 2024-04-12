@@ -35,11 +35,11 @@ export default function Home() {
         description={header.description}
         cta={{
           href: PATHS.ABOUT.path,
-          text: 'Learn More',
+          text: 'Learn More About the Foundation',
         }}
         secondaryCta={{
           href: FILECOIN_URLS.site,
-          text: 'Discover Filecoin Technology',
+          text: 'Dive Into the Filecoin Protocol',
           icon: <ArrowUpRight size={24} weight="bold" />,
         }}
       />
@@ -72,7 +72,7 @@ export default function Home() {
                   title: 'Builder Resources',
                 }}
                 cta={{
-                  href: '#',
+                  href: 'https://docs.filecoin.io',
                   text: 'Learn More',
                 }}
               >
@@ -98,15 +98,16 @@ export default function Home() {
             <HomeExploreSectionCard
               heading={{
                 icon: <Person size={24} />,
-                title: 'Meet the Community',
+                title: 'Filecoin Events',
               }}
               cta={{
-                href: PATHS.GET_INVOLVED.path,
-                text: 'Connect',
+                href: PATHS.EVENTS.path,
+                text: 'Explore',
               }}
             >
               Connect and collaborate with the Filecoin community around the
-              globe!
+              globe! Get details on the latest events hosted by Filecoin
+              Foundation, plus learn more about Web3 and community events.
             </HomeExploreSectionCard>
             <HomeExploreSectionCard
               heading={{
@@ -114,7 +115,7 @@ export default function Home() {
                 title: 'Storage Resources',
               }}
               cta={{
-                href: '#',
+                href: 'https://destor.com/destor-network/overview',
                 text: 'Learn More',
               }}
             >

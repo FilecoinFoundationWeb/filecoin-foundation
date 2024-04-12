@@ -94,7 +94,11 @@ export default function Blog() {
         image={featuredPost.image}
       />
 
-      <PageSection kicker="Blog" title="Blog Posts">
+      <PageSection
+        kicker="Blog"
+        title="Filecoin Ecosystem Updates"
+        description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
+      >
         <BlogClient posts={posts} />
       </PageSection>
     </PageLayout>
