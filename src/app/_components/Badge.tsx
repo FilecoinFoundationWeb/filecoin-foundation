@@ -7,14 +7,18 @@ type BadgeProps = {
 
 const variantStyles = {
   primary: 'bg-brand-300 text-brand-800',
-  ghost: 'bg-transparent text-brand-100 border-current border',
+  ghost: 'bg-brand-800 text-brand-100 border-brand-100 border',
 }
 
 export function Badge({ variant = 'primary', children }: BadgeProps) {
-  const baseStyles =
-    'inline-block max-w-fit rounded-lg font-semibold px-2 py-1 text-center text-xs'
-
-  const className = clsx(baseStyles, variantStyles[variant])
-
-  return <span className={className}>{children}</span>
+  return (
+    <span
+      className={clsx(
+        'inline-block max-w-fit rounded-lg px-2 py-1 text-center text-xs font-semibold',
+        variantStyles[variant],
+      )}
+    >
+      {children}
+    </span>
+  )
 }

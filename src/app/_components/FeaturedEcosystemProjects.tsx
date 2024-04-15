@@ -21,7 +21,7 @@ export function FeaturedEcosystemProjects() {
     <ul className="list-none gap-8 sm:grid sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
       {featuredEcosystemProjects.map(({ slug, title, description }) => (
         <li key={slug} className="ml-0">
-          <Badge variant="primary">Featured Project</Badge>
+          <Badge>Featured Project</Badge>
           <Heading tag="h3" variant="lg">
             {title}
           </Heading>
