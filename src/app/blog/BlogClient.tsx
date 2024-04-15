@@ -61,15 +61,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     setCurrentPage(1)
   }
 
-  function determineVisibilityClass(postIndex: number): string {
-    const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_PAGE
-    const firstInvisiblePostIndex = currentPage * POSTS_PER_PAGE
-    const isVisible =
-      postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
-
-    return isVisible ? 'block' : 'sr-only'
-  }
-
   return (
     <div className="flex flex-col gap-8">
       <div>
@@ -94,28 +85,29 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
               const { image, title, description, slug, publishedOn } = post
 
               return (
-                <div
+                <Card
                   key={post.slug}
-                  className={determineVisibilityClass(index)}
-                >
-                  <Card
-                    title={title}
-                    metaData={[
-                      ...(publishedOn ? [formatDate(publishedOn)] : []),
-                      ...(post.category ? [post.category] : []),
-                    ]}
-                    description={description}
-                    cta={{
-                      href: `${PATHS.BLOG.path}/${slug}`,
-                      text: 'Read Post',
-                    }}
-                    image={{
-                      url: image?.url,
-                      alt: image?.alt,
-                    }}
-                    textIsClamped={true}
-                  />
-                </div>
+                  title={title}
+                  metaData={[
+                    ...(publishedOn ? [formatDate(publishedOn)] : []),
+                    ...(post.category ? [post.category] : []),
+                  ]}
+                  description={description}
+                  cta={{
+                    href: `${PATHS.BLOG.path}/${slug}`,
+                    text: 'Read Post',
+                  }}
+                  image={{
+                    url: image?.url,
+                    alt: image?.alt,
+                  }}
+                  textIsClamped={true}
+                  pagination={{
+                    entryIndex: index,
+                    currentPage,
+                    entriesPerPage: POSTS_PER_PAGE,
+                  }}
+                />
               )
             })}
           </CardLayout>

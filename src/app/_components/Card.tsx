@@ -7,6 +7,12 @@ import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 
+type PaginationContext = {
+  entryIndex: number
+  currentPage: number
+  entriesPerPage: number
+}
+
 export type CardProps = {
   title: string | React.ReactNode
   metaData?: MetaDataType
@@ -23,7 +29,7 @@ export type CardProps = {
   }
   borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
-
+  pagination?: PaginationContext
   as?: React.ElementType
   children?: React.ReactNode
 }
@@ -41,6 +47,18 @@ const imageSizes = {
     '(max-width: 639px) 320px, (max-width: 767px) 276px, (max-width: 1023px) 340px, 200px',
 }
 
+function shouldDisplayEntry(pagination?: PaginationContext): boolean {
+  if (!pagination) return true
+
+  const { entryIndex, currentPage, entriesPerPage } = pagination
+  const firstVisibleEntryIndex = (currentPage - 1) * entriesPerPage
+  const lastVisibleEntryIndex = currentPage * entriesPerPage
+
+  return (
+    entryIndex >= firstVisibleEntryIndex && entryIndex < lastVisibleEntryIndex
+  )
+}
+
 export function Card({
   title,
   metaData,
@@ -50,14 +68,18 @@ export function Card({
   image,
   borderColor = 'brand-500',
   textIsClamped = false,
+  pagination,
   as: Tag = 'li',
   children,
 }: CardProps) {
+  const isEntryVisible = shouldDisplayEntry(pagination)
+
   return (
     <Tag
       className={clsx(
         'relative flex h-full flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
         borderStyles[borderColor],
+        !isEntryVisible && 'sr-only',
       )}
     >
       {image?.url && (
