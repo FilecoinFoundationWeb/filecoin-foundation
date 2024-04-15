@@ -2,18 +2,15 @@
 
 import { useState, useMemo } from 'react'
 
-import Image from 'next/image'
 import { useSearchParams } from 'next/navigation'
-
-import clsx from 'clsx'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useUpdateHistory } from '@/hooks/useUpdateHistory'
 
+import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
-import { Heading } from '@/components/Heading'
+import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
-import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
@@ -64,32 +61,23 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
     setCurrentPage(1)
   }
 
-  function determineVisibilityClass(postIndex: number): string {
-    const firstVisiblePostIndex = (currentPage - 1) * POSTS_PER_PAGE
-    const firstInvisiblePostIndex = currentPage * POSTS_PER_PAGE
-    const isVisible =
-      postIndex >= firstVisiblePostIndex && postIndex < firstInvisiblePostIndex
-
-    return isVisible ? 'block' : 'sr-only'
-  }
-
   return (
-    <>
-      <label htmlFor="search">Search Blog Posts</label>
-      <input
-        type="search"
-        id="search"
-        name="search"
-        value={searchQuery}
-        aria-label="Search blog posts"
-        className="text-brand-800"
-        onChange={handleSearch}
-      />
+    <div className="flex flex-col gap-8">
+      <div>
+        <label htmlFor="search">Search Blog Posts</label>
+        <input
+          type="search"
+          id="search"
+          name="search"
+          value={searchQuery}
+          aria-label="Search blog posts"
+          className="text-brand-800"
+          onChange={handleSearch}
+        />
+      </div>
 
       {filteredAndSortedPosts.length === 0 ? (
-        <p className="mt-8 rounded-md border border-brand-600 p-4">
-          No results found for your search, try changing your search query.
-        </p>
+        <NoResultsMessage />
       ) : (
         <>
           <CardLayout type="blogPost">
@@ -97,35 +85,29 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
               const { image, title, description, slug, publishedOn } = post
 
               return (
-                <li
+                <Card
                   key={post.slug}
-                  className={clsx(
-                    'h-[400px] overflow-clip rounded-md border border-brand-600 p-4',
-                    determineVisibilityClass(index),
-                  )}
-                >
-                  {image.url && (
-                    <Image
-                      src={image.url}
-                      alt={image.alt}
-                      width={282}
-                      height={141}
-                      className="object-cover"
-                    />
-                  )}
-                  <Heading tag="h3" variant="lg">
-                    {title}
-                  </Heading>
-                  <p>{description}</p>
-                  {publishedOn && (
-                    <span className="block">
-                      {formatDate(publishedOn, 'blog')}
-                    </span>
-                  )}
-                  <TextLink href={`${PATHS.BLOG.path}/${slug}`}>
-                    Read More
-                  </TextLink>
-                </li>
+                  title={title}
+                  metaData={[
+                    ...(publishedOn ? [formatDate(publishedOn)] : []),
+                    ...(post.category ? [post.category] : []),
+                  ]}
+                  description={description}
+                  cta={{
+                    href: `${PATHS.BLOG.path}/${slug}`,
+                    text: 'Read Post',
+                  }}
+                  image={{
+                    url: image?.url,
+                    alt: image?.alt,
+                  }}
+                  textIsClamped={true}
+                  pagination={{
+                    entryIndex: index,
+                    currentPage,
+                    entriesPerPage: POSTS_PER_PAGE,
+                  }}
+                />
               )
             })}
           </CardLayout>
@@ -139,6 +121,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
           </div>
         </>
       )}
-    </>
+    </div>
   )
 }
