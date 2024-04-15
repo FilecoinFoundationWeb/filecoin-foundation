@@ -62,7 +62,7 @@ export function Pagination({
           <LineVertical
             size={24}
             weight="light"
-            className="text-[#08072E]/50"
+            className="text-brand-800/50"
           />
         </div>
       </div>
@@ -82,7 +82,7 @@ export function Pagination({
                     ? 'bg-brand-800 text-brand-100'
                     : 'bg-brand-300 text-brand-700 hover:bg-brand-400',
                 )}
-                aria-label={'Page ' + item}
+                aria-label={`Go to page ${item}`}
                 onClick={() => handlePageChange(item)}
               >
                 {item}
@@ -101,7 +101,7 @@ export function Pagination({
           <LineVertical
             size={24}
             weight="light"
-            className="text-[#08072E]/50"
+            className="text-brand-800/50"
           />
         </div>
 
