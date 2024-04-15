@@ -27,9 +27,8 @@ export function Heading({
   ...rest
 }: HeadingProps) {
   const Tag = tag
-  const baseStyles = 'text-brand-100'
 
-  className = clsx(baseStyles, variantStyles[variant], className)
+  className = clsx(variantStyles[variant], className)
 
   return (
     <Tag className={className} {...rest}>
