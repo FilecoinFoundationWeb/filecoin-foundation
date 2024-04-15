@@ -25,7 +25,7 @@ type PageHeaderProps = {
   secondaryCta?: ctaProps
   image?: imageProps
   metaData?: Array<string | null | undefined>
-  isHighlighted?: boolean
+  isFeatured?: boolean
 }
 
 export function PageHeader({
@@ -35,12 +35,12 @@ export function PageHeader({
   secondaryCta,
   image,
   metaData,
-  isHighlighted,
+  isFeatured,
 }: PageHeaderProps) {
   return (
     <header className="flex flex-col gap-6 md:flex-row">
       <div className="flex flex-col md:w-1/2">
-        {isHighlighted && (
+        {isFeatured && (
           <span className="mb-4 text-xl font-bold text-brand-300">
             Featured
           </span>
