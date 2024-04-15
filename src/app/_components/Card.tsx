@@ -13,6 +13,7 @@ export type CardProps = {
     href: string
     text?: string
     icon?: React.ReactNode
+    ariaLabel?: string
   }
   entryType?: 'blogPost' | 'caseStudy'
   image?: {
@@ -89,6 +90,7 @@ export function Card({
         {cta && (
           <CustomLink
             href={cta.href}
+            aria-label={cta.ariaLabel}
             className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-white"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
@@ -97,7 +99,7 @@ export function Card({
             </span>
           </CustomLink>
         )}
-        {children && <div className="self-start">{children}</div>}
+        {children && children}
       </div>
     </Tag>
   )

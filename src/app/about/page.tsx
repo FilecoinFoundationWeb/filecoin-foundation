@@ -59,28 +59,6 @@ const aboutPageStructuredData: WithContext<WebPage> = {
   ),
 }
 
-type TitleWithLinkedinProps = {
-  title: string
-  name: string
-  linkedin: string
-}
-
-function TitleWithLinkedin({ title, name, linkedin }: TitleWithLinkedinProps) {
-  return (
-    <>
-      <p className="mb-6 text-brand-300">{title}</p>
-      <a
-        href={linkedin}
-        className="inline-flex items-center gap-2 text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline-2"
-        aria-label={`Find ${name} on LinkedIn (opens in new window)`}
-      >
-        <LinkedinLogo size={24} aria-hidden={true} />
-        LinkedIn
-      </a>
-    </>
-  )
-}
-
 export default function About() {
   return (
     <PageLayout>
@@ -116,13 +94,17 @@ export default function About() {
       <PageSection kicker="Who We Are" title="Board Members">
         <CardLayout type="blogPost">
           {boardMembersData.map(({ name, title, linkedin }) => (
-            <Card key={name} title={name}>
-              <TitleWithLinkedin
-                title={title}
-                name={name}
-                linkedin={linkedin}
-              />
-            </Card>
+            <Card
+              key={name}
+              title={name}
+              description={title}
+              cta={{
+                href: linkedin,
+                text: 'LinkedIn',
+                icon: <LinkedinLogo size={24} aria-hidden={true} />,
+                ariaLabel: `Visit ${name}'s LinkedIn profile.`,
+              }}
+            />
           ))}
         </CardLayout>
       </PageSection>
@@ -134,13 +116,17 @@ export default function About() {
       >
         <CardLayout type="blogPost">
           {advisorsData.map(({ name, title, linkedin }) => (
-            <Card key={name} title={name}>
-              <TitleWithLinkedin
-                title={title}
-                name={name}
-                linkedin={linkedin}
-              />
-            </Card>
+            <Card
+              key={name}
+              title={name}
+              description={title}
+              cta={{
+                href: linkedin,
+                text: 'LinkedIn',
+                icon: <LinkedinLogo size={24} aria-hidden={true} />,
+                ariaLabel: `Visit ${name}'s LinkedIn profile`,
+              }}
+            />
           ))}
         </CardLayout>
       </PageSection>
