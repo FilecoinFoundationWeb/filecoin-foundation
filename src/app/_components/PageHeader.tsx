@@ -42,7 +42,7 @@ export function PageHeader({
   return (
     <header className="flex flex-col gap-6 md:flex-row">
       <div className="flex flex-col space-y-4 md:w-1/2">
-        {isFeatured && <Badge badgeType="primary">Featured</Badge>}
+        {isFeatured && <Badge variant="primary">Featured</Badge>}
         <Heading tag="h1" variant="4xl" className="text-balance">
           {title}
         </Heading>

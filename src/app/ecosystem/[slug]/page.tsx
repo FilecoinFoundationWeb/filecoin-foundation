@@ -79,7 +79,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
       />
 
       <article>
-        <Badge badgeType="primary">
+        <Badge variant="primary">
           {featured ? 'Featured Project' : 'Ecosystem Project'}
         </Badge>
 
