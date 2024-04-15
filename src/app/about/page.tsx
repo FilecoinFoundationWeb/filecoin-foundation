@@ -4,7 +4,6 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
-import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -77,23 +76,23 @@ const boardMembersData = [
   {
     name: 'Marta Belcher',
     title: 'President & Chair, Filecoin',
-    linkedIn: 'https://www.linkedin.com/in/martabelcher/',
+    linkedin: 'https://www.linkedin.com/in/martabelcher/',
   },
   {
     name: 'Marcia Hofmann',
     title: 'Electronic Privacy Attorney',
-    linkedIn: 'https://www.linkedin.com/in/marciahofmann/',
+    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
   },
   {
     name: 'Brian Behlendorf',
     title: 'Chief AI Strategist, Linux Foundation',
-    linkedIn: 'https://www.linkedin.com/in/brianbehlendorf/',
+    linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
   },
 
   {
     name: 'Nicole Wong',
     title: 'Former Deputy U.S. Chief',
-    linkedIn: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
+    linkedin: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
   },
 ]
 
@@ -101,58 +100,58 @@ const advisorsData = [
   {
     name: 'Brewster Kahle',
     title: 'Founder, Internet Archive',
-    linkedIn: 'https://www.linkedin.com/in/brewster-kahle-2a647652/',
+    linkedin: 'https://www.linkedin.com/in/brewster-kahle-2a647652/',
   },
   {
     name: 'Veronica McGregor',
     title: 'Chief Legal Officer, Exodus',
-    linkedIn: 'https://www.linkedin.com/in/vemcgregor/',
+    linkedin: 'https://www.linkedin.com/in/vemcgregor/',
   },
   {
     name: 'Denelle Dixon',
     title: 'CEO, Stellar Development Foundation',
-    linkedIn: 'https://www.linkedin.com/in/denelle-dixon-967a236/',
+    linkedin: 'https://www.linkedin.com/in/denelle-dixon-967a236/',
   },
   {
     name: 'Rye Barcott',
     title: 'CEO, With Honor',
-    linkedIn: 'https://www.linkedin.com/in/ryebarcott/',
+    linkedin: 'https://www.linkedin.com/in/ryebarcott/',
   },
   {
     name: 'Wendy Hanamura',
     title: 'Director of Partnerships, Internet Archive',
-    linkedIn: 'https://www.linkedin.com/in/wendyhanamura/',
+    linkedin: 'https://www.linkedin.com/in/wendyhanamura/',
   },
   {
     name: 'Catherine Stihler',
     title:
       'Former CEO, Creative Commons & Former Member of European Parliament',
-    linkedIn: 'https://www.linkedin.com/in/catherine-stihler/',
+    linkedin: 'https://www.linkedin.com/in/catherine-stihler/',
   },
   {
     name: 'Georgia Quinn',
     title: 'Former General Counsel, Anchorage and CoinList ',
-    linkedIn: 'https://www.linkedin.com/in/georgia-quinn-287bb733/',
+    linkedin: 'https://www.linkedin.com/in/georgia-quinn-287bb733/',
   },
   {
     name: 'Joe Lubin',
     title: 'Founder, Consensys & Cofounder, Ethereum',
-    linkedIn: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
+    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
   },
   {
     name: 'Alex Feerst',
     title: 'CEO, Murmuration Labs & Former General Counsel, Medium',
-    linkedIn: 'https://www.linkedin.com/in/feerst/',
+    linkedin: 'https://www.linkedin.com/in/feerst/',
   },
   {
     name: 'Sandra Ro',
     title: 'CEO, Global Blockchain Business Council',
-    linkedIn: 'https://www.linkedin.com/in/sandraro/',
+    linkedin: 'https://www.linkedin.com/in/sandraro/',
   },
   {
     name: 'Katie Biber',
     title: 'Chief Legal Officer, Paradigm',
-    linkedIn: 'https://www.linkedin.com/in/katiebiber/',
+    linkedin: 'https://www.linkedin.com/in/katiebiber/',
   },
 ]
 
@@ -175,25 +174,25 @@ const reportsData = [
   },
 ]
 
-type NameWithLinkedInLinkProps = {
+type TitleWithLinkedinProps = {
+  title: string
   name: string
-  linkedIn: string
+  linkedin: string
 }
 
-function NameWithLinkedInLink({ name, linkedIn }: NameWithLinkedInLinkProps) {
+function TitleWithLinkedin({ title, name, linkedin }: TitleWithLinkedinProps) {
   return (
-    <span className="inline-flex items-center gap-3">
-      <Heading tag="h3" variant="lg">
-        {name}
-      </Heading>
+    <>
+      <p className="mb-6 text-brand-300">{title}</p>
       <a
-        href={linkedIn}
-        className="text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline-2"
+        href={linkedin}
+        className="inline-flex items-center gap-2 text-brand-300 outline-white hover:text-brand-100 focus:text-brand-100 focus:outline-2"
         aria-label={`Find ${name} on LinkedIn (opens in new window)`}
       >
         <LinkedinLogo size={24} aria-hidden={true} />
+        LinkedIn
       </a>
-    </span>
+    </>
   )
 }
 
@@ -231,12 +230,13 @@ export default function About() {
 
       <PageSection kicker="Who We Are" title="Board Members">
         <CardLayout type="blogPost">
-          {boardMembersData.map(({ name, title, linkedIn }) => (
-            <Card
-              key={name}
-              title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
-            >
-              <p className="text-brand-300">{title}</p>
+          {boardMembersData.map(({ name, title, linkedin }) => (
+            <Card key={name} title={name}>
+              <TitleWithLinkedin
+                title={title}
+                name={name}
+                linkedin={linkedin}
+              />
             </Card>
           ))}
         </CardLayout>
@@ -248,12 +248,13 @@ export default function About() {
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
         <CardLayout type="blogPost">
-          {advisorsData.map(({ name, title, linkedIn }) => (
-            <Card
-              key={name}
-              title={<NameWithLinkedInLink name={name} linkedIn={linkedIn} />}
-            >
-              <p className="text-brand-300">{title}</p>
+          {advisorsData.map(({ name, title, linkedin }) => (
+            <Card key={name} title={name}>
+              <TitleWithLinkedin
+                title={title}
+                name={name}
+                linkedin={linkedin}
+              />
             </Card>
           ))}
         </CardLayout>

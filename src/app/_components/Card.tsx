@@ -97,7 +97,7 @@ export function Card({
             </span>
           </CustomLink>
         )}
-        {children && children}
+        {children && <div className="self-start">{children}</div>}
       </div>
     </Tag>
   )
