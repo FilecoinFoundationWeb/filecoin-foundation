@@ -14,7 +14,7 @@ const variantStyles = {
 }
 
 
-export function Badge({ children, variant = "primary", className }: BadgeProps) {
+export function Badge({ variant = "primary", className, children }: BadgeProps) {
   
   const baseStyles =
     'inline-block max-w-fit rounded-lg font-semibold px-2 py-1 text-center text-xs'
