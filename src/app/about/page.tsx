@@ -21,6 +21,11 @@ import {
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
+import { advisorsData } from './data/advisorsData'
+import { boardMembersData } from './data/boardMembersData'
+import { focusAreasData } from './data/focusAreasData'
+import { reportsData } from './data/reportsData'
+
 const { header, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ABOUT.path)
@@ -53,126 +58,6 @@ const aboutPageStructuredData: WithContext<WebPage> = {
     (link) => link.href,
   ),
 }
-
-const focusAreasData = [
-  {
-    title: 'Governance',
-    description:
-      'As an open-source project, the Foundation governs the Filecoin ecosystem in a way that’s transparent, community-driven, and in line with the community’s open-source ethos.',
-  },
-  {
-    title: 'Research & Development',
-    description:
-      'The Foundation funds research and development projects for decentralized web technologies, including projects and teams building on the network and advancing our mission to preserve humanity’s most important information.',
-  },
-  {
-    title: 'Growth',
-    description:
-      'The Foundation hosts, sponsors, and supports events around the world, leading conversations around decentralization web technology and bringing new builders, clients, and storage providers into the ecosystem.',
-  },
-]
-
-const boardMembersData = [
-  {
-    name: 'Marta Belcher',
-    title: 'President & Chair, Filecoin',
-    linkedin: 'https://www.linkedin.com/in/martabelcher/',
-  },
-  {
-    name: 'Marcia Hofmann',
-    title: 'Electronic Privacy Attorney',
-    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
-  },
-  {
-    name: 'Brian Behlendorf',
-    title: 'Chief AI Strategist, Linux Foundation',
-    linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
-  },
-
-  {
-    name: 'Nicole Wong',
-    title: 'Former Deputy U.S. Chief',
-    linkedin: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
-  },
-]
-
-const advisorsData = [
-  {
-    name: 'Brewster Kahle',
-    title: 'Founder, Internet Archive',
-    linkedin: 'https://www.linkedin.com/in/brewster-kahle-2a647652/',
-  },
-  {
-    name: 'Veronica McGregor',
-    title: 'Chief Legal Officer, Exodus',
-    linkedin: 'https://www.linkedin.com/in/vemcgregor/',
-  },
-  {
-    name: 'Denelle Dixon',
-    title: 'CEO, Stellar Development Foundation',
-    linkedin: 'https://www.linkedin.com/in/denelle-dixon-967a236/',
-  },
-  {
-    name: 'Rye Barcott',
-    title: 'CEO, With Honor',
-    linkedin: 'https://www.linkedin.com/in/ryebarcott/',
-  },
-  {
-    name: 'Wendy Hanamura',
-    title: 'Director of Partnerships, Internet Archive',
-    linkedin: 'https://www.linkedin.com/in/wendyhanamura/',
-  },
-  {
-    name: 'Catherine Stihler',
-    title:
-      'Former CEO, Creative Commons & Former Member of European Parliament',
-    linkedin: 'https://www.linkedin.com/in/catherine-stihler/',
-  },
-  {
-    name: 'Georgia Quinn',
-    title: 'Former General Counsel, Anchorage and CoinList ',
-    linkedin: 'https://www.linkedin.com/in/georgia-quinn-287bb733/',
-  },
-  {
-    name: 'Joe Lubin',
-    title: 'Founder, Consensys & Cofounder, Ethereum',
-    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
-  },
-  {
-    name: 'Alex Feerst',
-    title: 'CEO, Murmuration Labs & Former General Counsel, Medium',
-    linkedin: 'https://www.linkedin.com/in/feerst/',
-  },
-  {
-    name: 'Sandra Ro',
-    title: 'CEO, Global Blockchain Business Council',
-    linkedin: 'https://www.linkedin.com/in/sandraro/',
-  },
-  {
-    name: 'Katie Biber',
-    title: 'Chief Legal Officer, Paradigm',
-    linkedin: 'https://www.linkedin.com/in/katiebiber/',
-  },
-]
-
-const reportsData = [
-  {
-    title: 'Filecoin Foundation 2023 Annual Report',
-    description: `Read the full report to learn more about the Foundation's work in 2023.`,
-    link: FILECOIN_FOUNDATION_URLS.annualReports.latest,
-  },
-  {
-    title: 'Filecoin Foundation 2022 Annual Report',
-    description: `Read the full report to learn more about the Foundation's work in 2022.`,
-    link: FILECOIN_FOUNDATION_URLS.annualReports.previous,
-  },
-  {
-    title: 'Cryptoeconomics Report',
-    description:
-      'Engage with fellow Web3 builders on Filecoin, exchange insights, and initiate collaborations on future ventures.',
-    link: '',
-  },
-]
 
 type TitleWithLinkedinProps = {
   title: string
