@@ -79,7 +79,7 @@ export function Card({
       className={clsx(
         'relative flex h-full flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
         borderStyles[borderColor],
-        !isEntryVisible && 'sr-only',
+        !isEntryVisible && 'hidden',
       )}
     >
       {image?.url && (
