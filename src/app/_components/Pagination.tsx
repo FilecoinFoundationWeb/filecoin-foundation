@@ -3,8 +3,8 @@
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
 
-import { useCollapseRange } from '@/hooks/useCollapseRange'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
+import { useVisiblePages } from '@/hooks/useVisiblePages'
 
 type PaginationProps = {
   currentPage: number
@@ -18,7 +18,7 @@ export function Pagination({
   setCurrentPage,
 }: PaginationProps) {
   const range = useResponsiveRange()
-  const collapsedRange = useCollapseRange(pageCount, currentPage, range)
+  const visiblePages = useVisiblePages(pageCount, currentPage, range)
 
   const canGoBack = currentPage > 1
   const canGoForward = currentPage < pageCount
@@ -68,7 +68,7 @@ export function Pagination({
       </div>
 
       <ul className="-mx-1 flex shrink grow justify-center gap-2 md:gap-1">
-        {collapsedRange.map((item, index) => (
+        {visiblePages.map((item, index) => (
           <li
             key={index}
             className="h-10 w-10 md:h-9 md:w-10"

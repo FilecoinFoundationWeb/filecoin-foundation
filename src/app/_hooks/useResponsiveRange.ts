@@ -1,6 +1,8 @@
 import { useMediaQuery } from '@uidotdev/usehooks'
 
-export function useResponsiveRange() {
+type PAGE_RANGE = 2 | 3 | 4 | 5 | 6 | 8
+
+export function useResponsiveRange(): PAGE_RANGE {
   const is3xsDevice = useMediaQuery('only screen and (max-width : 420px)')
   const is2XsDevice = useMediaQuery('only screen and (max-width : 480px)')
   const isXsDevice = useMediaQuery('only screen and (max-width : 520px)')
