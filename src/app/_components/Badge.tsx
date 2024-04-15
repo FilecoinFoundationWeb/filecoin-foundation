@@ -2,7 +2,6 @@ import clsx from 'clsx'
 
 type BadgeProps = {
   variant?: 'primary' | 'ghost',
-  className?: string,
   children: React.ReactNode
 }
 
@@ -13,12 +12,12 @@ const variantStyles = {
     'bg-transparent text-brand-100 border-current border',
 }
 
-export function Badge({ variant = "primary", className, children }: BadgeProps) {
+export function Badge({ variant = "primary", children }: BadgeProps) {
   
   const baseStyles =
     'inline-block max-w-fit rounded-lg font-semibold px-2 py-1 text-center text-xs'
 
-  className = clsx(baseStyles, variantStyles[variant], className)
+  const className = clsx(baseStyles, variantStyles[variant])
 
   return (
       <span className={className}>
