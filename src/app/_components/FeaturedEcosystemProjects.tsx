@@ -9,7 +9,7 @@ import { PATHS } from '@/constants/paths'
 const ecosystemProjects = getEcosystemProjectsData()
 
 const featuredEcosystemProjects = ecosystemProjects.filter(
-  (project) => project.featured
+  (project) => project.featured,
 )
 
 export function FeaturedEcosystemProjects() {
@@ -18,10 +18,10 @@ export function FeaturedEcosystemProjects() {
   }
 
   return (
-    <ul className="gap-8 sm:gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 list-none">
+    <ul className="list-none gap-8 sm:grid sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
       {featuredEcosystemProjects.map(({ slug, title, description }) => (
         <li key={slug} className="ml-0">
-          <Badge featured />
+          <Badge badgeType="primary">Featured Project</Badge>
           <Heading tag="h3" variant="lg">
             {title}
           </Heading>
