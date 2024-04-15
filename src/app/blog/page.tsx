@@ -84,6 +84,7 @@ export default function Blog() {
     <PageLayout>
       <StructuredDataScript structuredData={blogPageStructuredData} />
       <PageHeader
+        isHighlighted
         title={featuredPost.title}
         description={featuredPost.description}
         metaData={getMetaDataContent(featuredPost)}
