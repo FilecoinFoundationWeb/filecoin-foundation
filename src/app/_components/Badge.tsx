@@ -1,4 +1,4 @@
-interface BadgeProps {
+type BadgeProps = {
   children: React.ReactNode
   badgeType: 'primary' | 'ghost'
 }
