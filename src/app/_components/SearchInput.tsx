@@ -17,7 +17,7 @@ export function SearchInput({ searchQuery, onSearchChange }: SearchInputProps) {
         <input
           id="search"
           name="search"
-          className="peer block w-full rounded-lg border border-brand-300 bg-brand-800 py-3 pl-10 pr-3 placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:border-transparent focus:text-brand-100 focus:outline-2 focus:outline-brand-100 placeholder:focus:text-brand-100"
+          className="peer block w-full rounded-lg border border-brand-300 bg-brand-800 py-3 pl-10 pr-3 placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:border-transparent focus:text-brand-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-100 placeholder:focus:text-brand-100"
           placeholder="Search"
           type="search"
           value={searchQuery}

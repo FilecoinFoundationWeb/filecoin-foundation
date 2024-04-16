@@ -12,7 +12,6 @@ import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { SearchInput } from '@/components/SearchInput'
-import { TextLink } from '@/components/TextLink'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
