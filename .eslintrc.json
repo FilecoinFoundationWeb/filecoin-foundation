@@ -97,6 +97,8 @@
           "caseInsensitive": true
         }
       }
-    ]
+    ],
+
+    "eqeqeq": "warn"
   }
 }
