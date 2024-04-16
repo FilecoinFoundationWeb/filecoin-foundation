@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 
 import '@/styles/globals.scss'
 
+import { BreakpointDebugger } from '@/components/_dev_BreakpointDebugger'
 import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapper'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
@@ -43,6 +44,7 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
       </body>
     </html>
   )
