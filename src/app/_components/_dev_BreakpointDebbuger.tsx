@@ -1,6 +1,4 @@
-export function ScreenSizeIndicator() {
-  if (process.env.NODE_ENV === 'production') return null
-
+export function BreakpointDebbuger() {
   return (
     <div className="fixed bottom-2 left-2 z-50 rounded bg-zinc-800 px-1 font-mono text-xs text-white dark:bg-zinc-100 dark:text-zinc-900">
       <div className="block sm:hidden">xs</div>

@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 
 import '@/styles/globals.scss'
 
+import { BreakpointDebbuger } from '@/components/_dev_BreakpointDebbuger'
 import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapper'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 import { NetlifyIdentityManager } from '@/components/NetlifyIdentityManager'
-import { ScreenSizeIndicator } from '@/components/ScreenSizeIndicator'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { baseOrganizationSchema } from '@/utils/structuredData'
@@ -44,7 +44,7 @@ export default function RootLayout({
         </main>
 
         <Footer />
-        <ScreenSizeIndicator />
+        {process.env.NODE_ENV === 'development' && <BreakpointDebbuger />}
       </body>
     </html>
   )
