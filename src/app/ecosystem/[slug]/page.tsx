@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: EcosystemProjectProps) {
 }
 
 function createEcosystemProjectPostStructuredData(
-  data: EcosystemProjectData
+  data: EcosystemProjectData,
 ): WithContext<Article> {
   const { title, slug, publishedOn, updatedOn, description, image } = data
 
@@ -79,7 +79,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
       />
 
       <article>
-        <Badge featured={!!featured}>Ecosystem Project</Badge>
+        <Badge>{featured ? 'Featured Project' : 'Ecosystem Project'}</Badge>
 
         {image.url && (
           <Image
@@ -98,24 +98,24 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
         {content && <MarkdownContent>{content}</MarkdownContent>}
 
-        <ul className="flex flex-col gap-1 list-none">
+        <ul className="flex list-none flex-col gap-1">
           {website && (
-            <li className="ml-0 mb-0">
+            <li className="mb-0 ml-0">
               <TextLink href={website}>Website</TextLink>
             </li>
           )}
           {repo && (
-            <li className="ml-0 mb-0">
+            <li className="mb-0 ml-0">
               <TextLink href={repo}>GitHub</TextLink>
             </li>
           )}
           {twitter && (
-            <li className="ml-0 mb-0">
+            <li className="mb-0 ml-0">
               <TextLink href={twitter}>Twitter</TextLink>
             </li>
           )}
           {featuredContent && (
-            <li className="ml-0 mb-0">
+            <li className="mb-0 ml-0">
               <TextLink href={featuredContent}>Featured Content</TextLink>
             </li>
           )}
@@ -133,10 +133,10 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           />
         )}
 
-        <ul className="flex gap-3 list-none flex-wrap">
+        <ul className="flex list-none flex-wrap gap-3">
           {tags.map((tag) => (
             <li key={tag} className="ml-0">
-              <span className="px-2 py-1 bg-brand-800 text-white rounded-lg text-sm font-medium uppercase border-white border">
+              <span className="rounded-lg border border-white bg-brand-800 px-2 py-1 text-sm font-medium uppercase text-white">
                 {tag}
               </span>
             </li>

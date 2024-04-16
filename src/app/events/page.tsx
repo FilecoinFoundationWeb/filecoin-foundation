@@ -78,6 +78,7 @@ export default function Events() {
     <PageLayout>
       <StructuredDataScript structuredData={eventsPageStructuredData} />
       <PageHeader
+        isFeatured
         title={featuredEvent.title}
         description={featuredEvent.description || 'Description not available.'}
         metaData={getMetaDataContent(featuredEvent)}

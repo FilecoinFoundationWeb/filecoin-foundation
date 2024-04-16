@@ -4,6 +4,8 @@ import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 
+import { Badge } from './Badge'
+
 type ctaProps = {
   href: string
   text: string
@@ -21,7 +23,8 @@ type PageHeaderProps = {
   cta: ctaProps
   secondaryCta?: ctaProps
   image?: imageProps
-  metaData?: MetaDataType
+  metaData?: Array<string | null | undefined>
+  isFeatured?: boolean
 }
 
 export function PageHeader({
@@ -31,28 +34,36 @@ export function PageHeader({
   secondaryCta,
   image,
   metaData,
+  isFeatured = false,
 }: PageHeaderProps) {
   return (
     <header className="flex flex-col gap-6 md:flex-row">
-      <div className="flex flex-col md:w-1/2">
-        <Heading tag="h1" variant="4xl" className="mb-4 text-balance">
+      <div className="flex flex-col space-y-4 md:w-1/2">
+        {isFeatured && <Badge>Featured</Badge>}
+        <Heading tag="h1" variant="4xl" className="text-balance">
           {title}
         </Heading>
-        {metaData && metaData.length > 0 && (
-          <span className="mb-6">
-            <Meta metaData={metaData} />
-          </span>
-        )}
-        <p className="mb-6">{description}</p>
-        <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
-          <Button href={cta.href} variant="primary" className="flex-1">
-            {cta.text}
-          </Button>
-          {secondaryCta && (
-            <Button href={secondaryCta.href} variant="ghost" className="flex-1">
-              {secondaryCta.text}
-            </Button>
+        <div className="space-y-6">
+          {metaData && metaData.length > 0 && (
+            <span>
+              <Meta metaData={metaData} />
+            </span>
           )}
+          <p>{description}</p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
+            <Button href={cta.href} variant="primary" className="flex-1">
+              {cta.text}
+            </Button>
+            {secondaryCta && (
+              <Button
+                href={secondaryCta.href}
+                variant="ghost"
+                className="flex-1"
+              >
+                {secondaryCta.text}
+              </Button>
+            )}
+          </div>
         </div>
       </div>
       {image && (
