@@ -19,7 +19,7 @@ type imageProps = {
 
 type PageHeaderProps = {
   title: string
-  description: string
+  description: string | string[]
   cta: ctaProps
   secondaryCta?: ctaProps
   image?: imageProps
@@ -36,6 +36,18 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
+  function setDescriptionParagraph(description: string | string[]) {
+    if (Array.isArray(description)) {
+      return (
+        <div className="space-y-4">
+          {description.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+      )
+    }
+    return <p>{description}</p>
+  }
   return (
     <header className="flex flex-col gap-6 md:flex-row">
       <div className="flex flex-col gap-4 md:w-1/2">
@@ -48,8 +60,7 @@ export function PageHeader({
             <Meta metaData={metaData} />
           </span>
         )}
-        <p>{description}</p>
-
+        {setDescriptionParagraph(description)}
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
           <Button href={cta.href} variant="primary" className="flex-1">
             {cta.text}
