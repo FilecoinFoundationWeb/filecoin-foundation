@@ -1,4 +1,4 @@
-import { useMediaQuery } from '@uidotdev/usehooks'
+import { useMediaQuery } from 'usehooks-ts'
 
 type PAGE_RANGE = 2 | 3 | 4 | 5 | 6 | 8
 
