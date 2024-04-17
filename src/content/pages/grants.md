@@ -8,5 +8,5 @@ header:
     ]
 seo:
   title: "Grants"
-  description: "Filecoin Foundation Grants"
+  description: "Filecoin Foundation awards grant funding for critical development projects to foster a more decentralized, efficient, and robust foundation for humanity’s information."
 ---
