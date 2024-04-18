@@ -1,5 +1,3 @@
-import { Megaphone, Coins, Coin } from '@phosphor-icons/react/dist/ssr'
-
 import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
@@ -19,6 +17,8 @@ import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
+import { grantsAndOpportunitiesData } from './data/grantsAndOpportunitiesData'
+
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
 
@@ -27,27 +27,6 @@ const grantsPageBaseData = generateWebPageStructuredData({
   description: seo.description,
   path: PATHS.GRANTS.path,
 })
-
-const grantsAndOpportunitiesData = [
-  {
-    title: 'Open Grants',
-    description:
-      'Open Grants support projects that improve Filecoin functionality and enhance network utility and directly contribute to the Foundation’s mission.',
-    Icon: Coins,
-  },
-  {
-    title: 'Microgrant',
-    description:
-      'Documentation enhancement microgrants are available to support the improvement of existing documentation or the creation of new resources related to the Filecoin network.',
-    Icon: Coin,
-  },
-  {
-    title: 'Requests for Proposal',
-    description:
-      'Request for Proposals (RFP) grants have clearly scoped deliverables, milestones, and funding limits. Refer to GitHub for any ongoing RFPs.',
-    Icon: Megaphone,
-  },
-]
 
 export default function Grants() {
   return (
