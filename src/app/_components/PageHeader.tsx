@@ -6,13 +6,13 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 
 import { Badge } from './Badge'
 
-type ctaProps = {
+type CTAProps = {
   href: string
   text: string
   icon?: React.ReactNode
 }
 
-type imageProps = {
+type ImageProps = {
   url: string
   alt: string
 }
@@ -20,11 +20,15 @@ type imageProps = {
 type PageHeaderProps = {
   title: string
   description: string | string[]
-  cta: ctaProps
-  secondaryCta?: ctaProps
-  image?: imageProps
+  cta: CTAProps
+  secondaryCta?: CTAProps
+  image?: ImageProps
   metaData?: Array<string | null | undefined>
   isFeatured?: boolean
+}
+
+type DescriptionProp = {
+  description: string | string[]
 }
 
 export function PageHeader({
@@ -36,7 +40,7 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  function setDescriptionParagraph(description: string | string[]) {
+  function setDescriptionParagraph({ description }: DescriptionProp) {
     if (Array.isArray(description)) {
       return (
         <div className="space-y-4">
@@ -60,7 +64,7 @@ export function PageHeader({
             <Meta metaData={metaData} />
           </span>
         )}
-        {setDescriptionParagraph(description)}
+        {setDescriptionParagraph({ description })}
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
           <Button href={cta.href} variant="primary" className="flex-1">
             {cta.text}
