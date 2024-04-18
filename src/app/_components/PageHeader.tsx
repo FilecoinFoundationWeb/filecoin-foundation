@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
-import { Meta, type MetaDataType } from '@/components/Meta'
+import { Meta } from '@/components/Meta'
 
 import { Badge } from './Badge'
 
@@ -27,9 +27,7 @@ type PageHeaderProps = {
   isFeatured?: boolean
 }
 
-type DescriptionProp = {
-  description: string | string[]
-}
+type DescriptionProp = string | string[]
 
 export function PageHeader({
   title,
@@ -40,7 +38,7 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  function setDescriptionParagraph({ description }: DescriptionProp) {
+  function setDescriptionParagraph(description: DescriptionProp) {
     if (Array.isArray(description)) {
       return (
         <div className="space-y-4">
@@ -64,7 +62,7 @@ export function PageHeader({
             <Meta metaData={metaData} />
           </span>
         )}
-        {setDescriptionParagraph({ description })}
+        {setDescriptionParagraph(description)}
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
           <Button href={cta.href} variant="primary" className="flex-1">
             {cta.text}
