@@ -1,3 +1,5 @@
+import { Megaphone, Coins, Coin } from '@phosphor-icons/react/dist/ssr'
+
 import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
@@ -14,9 +16,6 @@ import { attributes } from '@/content/pages/grants.md'
 import { Card } from '@/_components/Card'
 import { CardLayout } from '@/_components/CardLayout'
 import { PageSection } from '@/_components/PageSection'
-import MicrograntsIconComponent from '@/_icons/MicograntsIcon'
-import OpenGrantsIconComponent from '@/_icons/OpenGrantsIcon'
-import RequestForProposalIconComponent from '@/_icons/ReguestForProposalIcon'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -34,19 +33,19 @@ const grantsAndOpportunitiesData = [
     title: 'Open Grants',
     description:
       'Open Grants support projects that improve Filecoin functionality and enhance network utility and directly contribute to the Foundation’s mission.',
-    Icon: OpenGrantsIconComponent,
+    Icon: Coins,
   },
   {
     title: 'Microgrant',
     description:
       'Documentation enhancement microgrants are available to support the improvement of existing documentation or the creation of new resources related to the Filecoin network.',
-    Icon: MicrograntsIconComponent,
+    Icon: Coin,
   },
   {
     title: 'Requests for Proposal',
     description:
       'Request for Proposals (RFP) grants have clearly scoped deliverables, milestones, and funding limits. Refer to GitHub for any ongoing RFPs.',
-    Icon: RequestForProposalIconComponent,
+    Icon: Megaphone,
   },
 ]
 
@@ -74,7 +73,7 @@ export default function Grants() {
                 key={title}
                 title={
                   <div className="flex items-center gap-3">
-                    <Icon className="h-6 w-6"></Icon>
+                    <Icon className="h-6 w-6 text-brand-300"></Icon>
                     <Heading
                       tag="h3"
                       variant="lg"
