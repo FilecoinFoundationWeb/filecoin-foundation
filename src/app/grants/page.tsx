@@ -11,6 +11,12 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
+import { Card } from '@/_components/Card'
+import { CardLayout } from '@/_components/CardLayout'
+import { PageSection } from '@/_components/PageSection'
+import MicrograntsIconComponent from '@/_icons/MicograntsIcon'
+import OpenGrantsIconComponent from '@/_icons/OpenGrantsIcon'
+import RequestForProposalIconComponent from '@/_icons/ReguestForProposalIcon'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -23,6 +29,27 @@ const grantsPageBaseData = generateWebPageStructuredData({
   path: PATHS.GRANTS.path,
 })
 
+const grantsAndOpportunitiesData = [
+  {
+    title: 'Open Grants',
+    description:
+      'Open Grants support projects that improve Filecoin functionality and enhance network utility and directly contribute to the Foundation’s mission.',
+    Icon: OpenGrantsIconComponent,
+  },
+  {
+    title: 'Microgrant',
+    description:
+      'Documentation enhancement microgrants are available to support the improvement of existing documentation or the creation of new resources related to the Filecoin network.',
+    Icon: MicrograntsIconComponent,
+  },
+  {
+    title: 'Requests for Proposal',
+    description:
+      'Request for Proposals (RFP) grants have clearly scoped deliverables, milestones, and funding limits. Refer to GitHub for any ongoing RFPs.',
+    Icon: RequestForProposalIconComponent,
+  },
+]
+
 export default function Grants() {
   return (
     <PageLayout>
@@ -33,55 +60,36 @@ export default function Grants() {
         cta={{ href: FILECOIN_URLS.grants.email, text: 'Email for more info' }}
       />
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Developer Grants
-        </Heading>
-        <p>
-          The Foundation funds talented and eager teams that want to work with
-          us to build a more robust, efficient, and decentralized web.
-        </p>
-        <ul>
-          <li>
-            <Heading tag="h3" variant="lg">
-              Open Grants
-            </Heading>
-            <p>
-              Have an idea for pushing the Filecoin ecosystem forward? Grants
-              are available to support projects that advance the Filecoin
-              ecosystem, scale users, or directly advance Filecoin’s mission to
-              preserve humanity’s most important information.
-            </p>
-          </li>
-          <li>
-            <Heading tag="h3" variant="lg">
-              Requests for Proposal
-            </Heading>
-            <p>
-              These grants generally have clearly scoped deliverables,
-              milestones, and funding limits. While there is some flexibility in
-              RFP deliverables, we expect teams will deliver what is in scope in
-              the RFP.
-            </p>
-          </li>
-          <li>
-            <Heading tag="h3" variant="lg">
-              Microgrants
-            </Heading>
-            <p>
-              The Filecoin Foundation awards grants to early-stage projects that
-              have developed initial protocols using Filecoin.
-            </p>
-          </li>
-        </ul>
-        <p>
-          For more information on grants,{' '}
-          <TextLink href={FILECOIN_URLS.grants.email}>email us</TextLink> or see
-          our{' '}
-          <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink>{' '}
-          for a more in-depth introduction to the grants program.
-        </p>
-      </section>
+      <PageSection
+        kicker="Opportunities"
+        title="Grants and Funding Opportunities"
+        description="The Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories:"
+      >
+        <CardLayout>
+          {grantsAndOpportunitiesData.map((card) => {
+            const { title, description, Icon } = card
+
+            return (
+              <Card
+                key={title}
+                title={
+                  <div className="flex items-center gap-3">
+                    <Icon className="h-6 w-6"></Icon>
+                    <Heading
+                      tag="h3"
+                      variant="lg"
+                      className="line-clamp-2 text-ellipsis"
+                    >
+                      {title}
+                    </Heading>
+                  </div>
+                }
+                description={description}
+              />
+            )
+          })}
+        </CardLayout>
+      </PageSection>
 
       <section>
         <Heading tag="h2" variant="xl">
