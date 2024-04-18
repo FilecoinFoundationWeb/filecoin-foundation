@@ -11,8 +11,8 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
-import { Card } from '@/_components/Card'
 import { CardLayout } from '@/_components/CardLayout'
+import { GrantsSectionCard } from '@/_components/GrantsSectionCard'
 import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
@@ -48,22 +48,15 @@ export default function Grants() {
             const { title, description, Icon } = card
 
             return (
-              <Card
+              <GrantsSectionCard
                 key={title}
-                title={
-                  <div className="flex items-center gap-3">
-                    <Icon className="h-6 w-6 text-brand-300"></Icon>
-                    <Heading
-                      tag="h3"
-                      variant="lg"
-                      className="line-clamp-2 text-ellipsis"
-                    >
-                      {title}
-                    </Heading>
-                  </div>
-                }
-                description={description}
-              />
+                heading={{
+                  icon: <Icon className="h-6 w-6 text-brand-300"></Icon>,
+                  title,
+                }}
+              >
+                {description}
+              </GrantsSectionCard>
             )
           })}
         </CardLayout>
