@@ -1,6 +1,6 @@
 import { GrantGraduatesData } from '@/_types/grantGraduatesTypes'
 
-export function mapMarkdownToGrandGraduatesData({
+export function mapMarkdownToGrantGraduatesData({
   data,
 }: {
   data: any

@@ -4,7 +4,7 @@ import { transformMarkdownToItemData } from '@/utils/transformMarkdownToItemData
 
 import { PATHS } from '@/constants/paths'
 
-import { mapMarkdownToGrandGraduatesData } from './mapMarkdownToGrandGraduates'
+import { mapMarkdownToGrantGraduatesData } from './mapMarkdownToGrantGraduates'
 import { transformMarkdownToCollectionData } from './transformMarkdownToCollectionData'
 
 const GRANT_GRADUATES_COLLECTION_NAME = 'grants'
@@ -15,7 +15,7 @@ export function getGrantGraduateData(slug: string): GrantGraduatesData {
     GRANT_GRADUATES_DIRECTORY_PATH,
     GRANT_GRADUATES_COLLECTION_NAME,
     slug,
-    mapMarkdownToGrandGraduatesData,
+    mapMarkdownToGrantGraduatesData,
   )
 }
 
@@ -23,6 +23,6 @@ export function getAllGrantGraduateData(): GrantGraduatesData[] {
   return transformMarkdownToCollectionData<GrantGraduatesData>(
     GRANT_GRADUATES_DIRECTORY_PATH,
     GRANT_GRADUATES_COLLECTION_NAME,
-    mapMarkdownToGrandGraduatesData,
+    mapMarkdownToGrantGraduatesData,
   )
 }
