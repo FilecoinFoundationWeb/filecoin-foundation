@@ -53,7 +53,7 @@ export const PATHS = {
   EVENTS: createPathObject('/events', 'Events', true),
   GET_INVOLVED: createPathObject('/get-involved', 'Get Involved'),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
-  GRANTS: createPathObject('/grants', 'Grants'),
+  GRANTS: createPathObject('/grants', 'Grants', true),
   HOME: createPathObject('/', 'Home', false, '/home'),
   PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
   TERMS: createPathObject('/terms', 'Terms and Conditions'),

@@ -11,6 +11,8 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
+import { FeaturedGrantsGraduates } from '@/_components/FeaturedGrantGraduates'
+import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -83,16 +85,9 @@ export default function Grants() {
         </p>
       </section>
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Our Mission
-        </Heading>
-        <p>
-          The Foundation&apos;s key role is to find ways for the Filecoin
-          community to solve the problems we face as a community, and help
-          facilitate collective action.
-        </p>
-      </section>
+      <PageSection kicker="Past examples" title="Grant Graduates">
+        <FeaturedGrantsGraduates />
+      </PageSection>
 
       <section>
         <Heading tag="h2" variant="xl">
