@@ -1,11 +1,11 @@
-import { HeadingWithIcon } from './HeadingWithIcon'
+import { HeadingWithIcon } from '@/components/HeadingWithIcon'
 
 type GrantsSectionCardProps = {
   heading: {
     icon: React.ReactNode
     title: string
   }
-  children: React.ReactNode
+  children: string
 }
 
 export function GrantsSectionCard({

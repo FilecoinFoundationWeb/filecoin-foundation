@@ -1,7 +1,9 @@
 import { GetInvolvedList } from '@/components/GetInvolvedList'
+import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { Section } from '@/components/Section'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -12,8 +14,6 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/grants.md'
 
 import { CardLayout } from '@/_components/CardLayout'
-import { GrantsSectionCard } from '@/_components/GrantsSectionCard'
-import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -51,7 +51,7 @@ export default function Grants() {
               <GrantsSectionCard
                 key={title}
                 heading={{
-                  icon: <Icon className="h-6 w-6 text-brand-300"></Icon>,
+                  icon: <Icon className="h-6 w-6"></Icon>,
                   title,
                 }}
               >

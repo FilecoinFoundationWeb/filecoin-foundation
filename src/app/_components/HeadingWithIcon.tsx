@@ -5,7 +5,7 @@ export function HeadingWithIcon({
   children,
 }: {
   icon: React.ReactNode
-  children: React.ReactNode
+  children: string
 }) {
   return (
     <div className="inline-flex items-center gap-3">
