@@ -11,6 +11,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
+import { Button } from '@/_components/Button'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -171,16 +172,25 @@ export default function Grants() {
         }}
       />
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          How to get involved in the Filecoin community
+      <section className="m-auto space-y-6 text-left sm:text-center">
+        <Heading tag="h2" variant="3xl">
+          Ready to Apply?
         </Heading>
-        <p>
-          The Filecoin community includes thousands of developers,
-          technologists, users, and enthusiasts all over the world.
+        <p className="max-w-[60ch]">
+          Please visit our{' '}
+          <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink> to
+          learn more about the proposal process, review process, timeline
+          guidance, and more. For other questions, email{' '}
+          <TextLink href={FILECOIN_URLS.grants.email}>grants@fil.org</TextLink>{' '}
+          or join our monthly office hours!
         </p>
-        <TextLink href={FILECOIN_URLS.social.slack.href}>Learn More</TextLink>
-        <GetInvolvedList />
+        <Button
+          className="sm:self-start"
+          variant="primary"
+          href={FILECOIN_URLS.grants.email}
+        >
+          Apply Now
+        </Button>
       </section>
     </PageLayout>
   )
