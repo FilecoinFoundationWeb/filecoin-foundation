@@ -8,7 +8,7 @@ export const opportunitiesData = [
     icon: Coins,
   },
   {
-    title: 'Microgrant',
+    title: 'Microgrants',
     description:
       'Documentation enhancement microgrants are available to support the improvement of existing documentation or the creation of new resources related to the Filecoin network.',
     icon: Coin,
