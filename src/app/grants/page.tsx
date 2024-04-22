@@ -1,6 +1,6 @@
 import { Button } from '@/components/Button'
-import { CallToActionSection } from '@/components/CallToActionSection'
 import { CardLayout } from '@/components/CardLayout'
+import { CTASection } from '@/components/CTASection'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
@@ -155,7 +155,7 @@ export default function Grants() {
         }}
       />
 
-      <CallToActionSection title="Ready to Apply?">
+      <CTASection title="Ready to Apply?">
         <p>
           Please visit our{' '}
           <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink> to
@@ -171,7 +171,7 @@ export default function Grants() {
         >
           Apply Now
         </Button>
-      </CallToActionSection>
+      </CTASection>
     </PageLayout>
   )
 }
