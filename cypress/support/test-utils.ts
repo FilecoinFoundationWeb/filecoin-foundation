@@ -71,12 +71,22 @@ function handleFeaturedPost(path: PathConfig, slug: string) {
 }
 
 // Function to verify the header's title and description
-function verifyHeaderContent(content: { title: string; description: string }) {
+function verifyHeaderContent(content: {
+  title: string
+  description: string | string[]
+}) {
   cy.get('header')
     .first()
     .should('exist')
     .within(() => {
       cy.get('h1').should('have.text', content.title)
-      cy.get('p').should('have.text', content.description)
+      // handle case if description is string[] or string type
+      if (Array.isArray(content.description)) {
+        content.description.forEach((text: string) => {
+          cy.get('p').should('contain.text', text)
+        })
+      } else {
+        cy.get('p').should('contain.text', content.description)
+      }
     })
 }
