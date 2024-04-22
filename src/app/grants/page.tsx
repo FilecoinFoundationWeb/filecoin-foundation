@@ -4,7 +4,6 @@ import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { Section } from '@/components/Section'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -18,6 +17,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { grantsAndOpportunitiesData } from './data/grantsAndOpportunitiesData'
+import { submissionCriteriaData } from './data/submissionCriteriaData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
@@ -140,7 +140,31 @@ export default function Grants() {
         </ul>
       </section>
 
-      <Section
+      <PageSection
+        kicker="Criteria"
+        title="Submission Criteria"
+        description="Generally, all projects must meet the following requirements:"
+      >
+        <CardLayout>
+          {submissionCriteriaData.map((data) => {
+            const { title, description, Icon } = data
+
+            return (
+              <GrantsSectionCard
+                key={title}
+                heading={{
+                  icon: <Icon className="h-6 w-6"></Icon>,
+                  title,
+                }}
+              >
+                {description}
+              </GrantsSectionCard>
+            )
+          })}
+        </CardLayout>
+      </PageSection>
+
+      {/* <Section
         kicker="What We Do"
         title="Filecoin Plus: Incentivize Useful Storage on Filecoin"
         content="A brief overview of the motivation, principles, and mechanisms of Filecoin Plus, and how it incentivizes useful storage on the network."
@@ -148,7 +172,7 @@ export default function Grants() {
           href: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/',
           text: 'Learn More',
         }}
-      />
+      /> */}
 
       <section>
         <Heading tag="h2" variant="xl">
