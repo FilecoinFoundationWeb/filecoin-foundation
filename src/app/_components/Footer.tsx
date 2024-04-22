@@ -11,18 +11,18 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
-type Section = {
+type SectionProps = {
   title: string
   children: React.ReactNode
 }
 
-type NavigationListItem = {
+type NavigationListItemProps = {
   label: string
   path: PathValues
 }
 
-type NavigationList = {
-  items: NavigationListItem[]
+type NavigationListProps = {
+  items: NavigationListItemProps[]
 }
 
 const navigationItems = [
@@ -34,7 +34,7 @@ const navigationItems = [
 
 const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS]
 
-function Section({ title, children }: Section) {
+function Section({ title, children }: SectionProps) {
   return (
     <div className="flex flex-col gap-4">
       <span className="block font-bold">{title}</span>
@@ -43,7 +43,7 @@ function Section({ title, children }: Section) {
   )
 }
 
-function NavigationList({ items }: NavigationList) {
+function NavigationList({ items }: NavigationListProps) {
   return (
     <ul className="flex flex-col gap-3">
       {items.map(({ label, path }) => (

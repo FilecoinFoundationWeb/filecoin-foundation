@@ -29,7 +29,7 @@ export function Social() {
                 touchTargetClass,
               )}
             >
-              <Icon component={icon} color="inherit" size={32} weight="light" />
+              <Icon component={icon} size={32} weight="light" />
             </a>
           </li>
         )
