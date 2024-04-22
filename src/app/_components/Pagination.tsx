@@ -1,38 +1,48 @@
 'use client'
 
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
+import { Route } from 'next'
 
+import { usePagination } from '@/hooks/usePagination'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
 
-type PaginationProps = {
-  currentPage: number
-  pageCount: number
-  setCurrentPage: (page: number) => void
-}
+import { buildSearchParams } from '@/utils/buildSearchParams'
 
-export function Pagination({
-  pageCount,
-  currentPage,
-  setCurrentPage,
-}: PaginationProps) {
+import { PAGE_KEY } from '@/constants/searchParams'
+
+type PaginationProps = ReturnType<typeof usePagination>
+
+export function Pagination({ pageCount, currentPage }: PaginationProps) {
   const range = useResponsiveRange()
   const visiblePages = useVisiblePages(pageCount, currentPage, range)
+
+  const router = useRouter()
+  const pathname = usePathname()
+  const params = useSearchParams()
 
   const canGoBack = currentPage > 1
   const canGoForward = currentPage < pageCount
 
   function handlePrev() {
-    if (canGoBack) setCurrentPage(currentPage - 1)
+    if (canGoBack) updatePageSearchParam(currentPage - 1)
   }
 
   function handleNext() {
-    if (canGoForward) setCurrentPage(currentPage + 1)
+    if (canGoForward) updatePageSearchParam(currentPage + 1)
   }
 
   function handlePageChange(page: number) {
-    if (page !== currentPage) setCurrentPage(page)
+    if (page !== currentPage) updatePageSearchParam(page)
+  }
+
+  function updatePageSearchParam(page: number) {
+    const newParams = buildSearchParams({ [PAGE_KEY]: page }, params)
+    const newRoute = `${pathname}?${newParams}` as Route
+    router.push(newRoute, { scroll: false })
   }
 
   return (

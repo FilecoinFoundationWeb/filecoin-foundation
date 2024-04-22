@@ -1,33 +1,32 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
+
+import { NextServerSearchParams } from '@/types/searchParams'
 
 import { validatePageNumber } from '@/utils/validatePageNumber'
 
 type UsePaginationProps = {
   totalEntries: number
   entriesPerPage: number
-  searchParams: URLSearchParams
-  currentPageKey: string
+  pageQuery?: NextServerSearchParams[string]
 }
 
 export function usePagination({
   totalEntries,
   entriesPerPage,
-  searchParams,
-  currentPageKey,
+  pageQuery,
 }: UsePaginationProps) {
   const pageCount = useMemo(
     () => Math.ceil(totalEntries / entriesPerPage),
     [totalEntries, entriesPerPage],
   )
 
-  const [currentPage, setCurrentPage] = useState<number>(() => {
-    return validatePageNumber(searchParams.get(currentPageKey), pageCount)
-  })
+  const currentPage = useMemo(() => {
+    if (Array.isArray(pageQuery)) {
+      return validatePageNumber(pageQuery[0], pageCount)
+    }
 
-  useEffect(() => {
-    const page = searchParams.get(currentPageKey)
-    setCurrentPage(validatePageNumber(page, pageCount))
-  }, [searchParams, currentPageKey, pageCount])
+    return validatePageNumber(pageQuery, pageCount)
+  }, [pageQuery, pageCount])
 
-  return { currentPage, setCurrentPage, pageCount }
+  return { currentPage, pageCount }
 }

@@ -6,6 +6,7 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
+import { NextServerSearchParams } from '@/types/searchParams'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
@@ -19,9 +20,10 @@ import {
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
+import { PAGE_KEY } from '@/constants/searchParams'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { BlogClient } from './BlogClient'
+import { BlogList } from './BlogList'
 
 const { featured_post: featuredPostSlug, seo } = attributes
 
@@ -75,7 +77,11 @@ function getMetaDataContent(post: BlogPostData) {
   return metaDataContent
 }
 
-export default function Blog() {
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
     throw new Error('Featured post not found')
   }
@@ -100,7 +106,11 @@ export default function Blog() {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogClient posts={posts} />
+        <BlogList
+          posts={posts}
+          pageQuery={searchParams[PAGE_KEY]}
+          // searchQuery={searchParams[SEARCH_KEY]}
+        />
       </PageSection>
     </PageLayout>
   )
