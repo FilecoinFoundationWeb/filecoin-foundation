@@ -1,8 +1,11 @@
 import clsx from 'clsx'
 
-type HeadingProps = {
+import { type IconProps, Icon } from '@/components/Icon'
+
+export type HeadingProps = {
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'
   variant: '4xl' | '3xl' | '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'kicker'
+  iconProps?: IconProps
   className?: string
   children: React.ReactNode
 }
@@ -23,12 +26,25 @@ export function Heading({
   tag,
   variant,
   className,
+  iconProps,
   children,
   ...rest
 }: HeadingProps) {
   const Tag = tag
+  const { component: icon, size } = iconProps ?? {}
 
   className = clsx(variantStyles[variant], className)
+
+  if (icon) {
+    return (
+      <div className="inline-flex items-center gap-3">
+        <Icon component={icon} size={size} />
+        <Tag className={className} {...rest}>
+          {children}
+        </Tag>
+      </div>
+    )
+  }
 
   return (
     <Tag className={className} {...rest}>
