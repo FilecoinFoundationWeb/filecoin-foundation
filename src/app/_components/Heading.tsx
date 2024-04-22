@@ -38,7 +38,7 @@ export function Heading({
   if (icon) {
     return (
       <div className="inline-flex items-center gap-3">
-        <Icon component={icon} size={size} />
+        <Icon component={icon} color="brand-300" size={size} />
         <Tag className={className} {...rest}>
           {children}
         </Tag>
