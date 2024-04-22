@@ -12,6 +12,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/grants.md'
 
 import { Button } from '@/_components/Button'
+import { CallToActionSection } from '@/_components/CallToActionSection'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
@@ -172,11 +173,8 @@ export default function Grants() {
         }}
       />
 
-      <section className="m-auto space-y-6 text-left sm:text-center">
-        <Heading tag="h2" variant="3xl">
-          Ready to Apply?
-        </Heading>
-        <p className="max-w-[60ch]">
+      <CallToActionSection title="Ready to Apply?">
+        <p>
           Please visit our{' '}
           <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink> to
           learn more about the proposal process, review process, timeline
@@ -191,7 +189,7 @@ export default function Grants() {
         >
           Apply Now
         </Button>
-      </section>
+      </CallToActionSection>
     </PageLayout>
   )
 }
