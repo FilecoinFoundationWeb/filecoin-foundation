@@ -27,6 +27,72 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
+const filecoinSystemData = [
+  {
+    heading: {
+      title: 'Explore the Ecosystem',
+      icon: MagnifyingGlass,
+    },
+    description:
+      'Navigate the Ecosystem Explorer, a crowd-sourced and open database to showcase the projects powering the Filecoin network. Already building on the network? Add your project!',
+    cta: {
+      href: PATHS.ECOSYSTEM.path,
+      text: 'Explore',
+    },
+  },
+  {
+    heading: {
+      title: 'Builder Resources',
+      icon: Code,
+    },
+    description:
+      'Join thousands of developers and entrepreneurs building on the Filecoin network.',
+    cta: {
+      href: 'https://docs.filecoin.io',
+      text: 'Learn More',
+    },
+  },
+  {
+    heading: {
+      title: 'Grants Program',
+      icon: Money,
+    },
+    description:
+      'Learn more about support for teams building on the Filecoin network.',
+    cta: {
+      href: PATHS.GRANTS.path,
+      text: 'Learn More',
+    },
+  },
+  {
+    heading: {
+      title: 'Filecoin Events',
+      icon: Person,
+    },
+    description:
+      'Connect and collaborate with the Filecoin community around the globe! Get details on the latest events hosted by Filecoin Foundation, plus learn more about Web3 and community events.',
+    cta: {
+      href: PATHS.EVENTS.path,
+      text: 'Explore',
+    },
+  },
+  {
+    heading: {
+      description: 'Storage Resources',
+      icon: HardDrives,
+    },
+    description:
+      'Join the Filecoin network as a Storage Provider or leverage the network to store your data with robust and secure storage.',
+    cta: {
+      href: 'https://destor.com/destor-network/overview',
+      text: 'Learn More',
+    },
+  },
+]
+
+const firstTwoFilecoinSystemDataCards = filecoinSystemData.slice(0, 2)
+const lastThreeFilecoinSystemDataCards = filecoinSystemData.slice(2)
+
 export default function Home() {
   return (
     <PageLayout>
@@ -52,98 +118,41 @@ export default function Home() {
               The Filecoin Ecosystem
             </Heading>
             <div className="grid gap-4 lg:flex lg:max-w-[23rem] lg:flex-col lg:items-center lg:justify-center">
-              <HomeExploreSectionCard
-                heading={{
-                  tag: 'h3',
-                  variant: 'lg',
-                  children: 'Explore the Ecosystem',
-                  iconProps: {
-                    component: MagnifyingGlass,
-                    size: 24,
-                  },
-                }}
-                cta={{
-                  href: PATHS.ECOSYSTEM.path,
-                  text: 'Explore',
-                }}
-              >
-                Navigate the Ecosystem Explorer, a crowd-sourced and open
-                database to showcase the projects powering the Filecoin network.
-                Already building on the network? Add your project!
-              </HomeExploreSectionCard>
-              <HomeExploreSectionCard
-                heading={{
-                  tag: 'h3',
-                  variant: 'lg',
-                  children: 'Builder Resources',
-                  iconProps: {
-                    component: Code,
-                    size: 24,
-                  },
-                }}
-                cta={{
-                  href: 'https://docs.filecoin.io',
-                  text: 'Learn More',
-                }}
-              >
-                Join thousands of developers and entrepreneurs building on the
-                Filecoin network.
-              </HomeExploreSectionCard>
+              {firstTwoFilecoinSystemDataCards.map((card) => (
+                <HomeExploreSectionCard
+                  key={card.heading.title}
+                  heading={{
+                    tag: 'h3',
+                    variant: 'lg',
+                    children: card.heading.title,
+                    iconProps: {
+                      component: card.heading.icon,
+                    },
+                  }}
+                  cta={card.cta}
+                >
+                  {card.description}
+                </HomeExploreSectionCard>
+              ))}
             </div>
           </div>
           <div className="grid gap-4 sm:w-1/2 lg:w-5/12 lg:max-w-[23rem]">
-            <HomeExploreSectionCard
-              heading={{
-                tag: 'h3',
-                variant: 'lg',
-                children: 'Grants Program',
-                iconProps: {
-                  component: Money,
-                },
-              }}
-              cta={{
-                href: PATHS.GRANTS.path,
-                text: 'Learn More',
-              }}
-            >
-              Learn more about support for teams building on the Filecoin
-              network.
-            </HomeExploreSectionCard>
-            <HomeExploreSectionCard
-              heading={{
-                tag: 'h3',
-                variant: 'lg',
-                children: 'Filecoin Events',
-                iconProps: {
-                  component: Person,
-                },
-              }}
-              cta={{
-                href: PATHS.EVENTS.path,
-                text: 'Explore',
-              }}
-            >
-              Connect and collaborate with the Filecoin community around the
-              globe! Get details on the latest events hosted by Filecoin
-              Foundation, plus learn more about Web3 and community events.
-            </HomeExploreSectionCard>
-            <HomeExploreSectionCard
-              heading={{
-                tag: 'h3',
-                variant: 'lg',
-                children: 'Storage Resources',
-                iconProps: {
-                  component: HardDrives,
-                },
-              }}
-              cta={{
-                href: 'https://destor.com/destor-network/overview',
-                text: 'Learn More',
-              }}
-            >
-              Join the Filecoin network as a Storage Provider or leverage the
-              network to store your data with robust and secure storage.
-            </HomeExploreSectionCard>
+            {lastThreeFilecoinSystemDataCards.map((card) => (
+              <HomeExploreSectionCard
+                key={card.heading.title}
+                heading={{
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: card.heading.title,
+                  iconProps: {
+                    component: card.heading.icon,
+                  },
+                }}
+                cta={card.cta}
+              >
+                {card.description}
+              </HomeExploreSectionCard>
+            ))}
           </div>
         </div>
       </section>
