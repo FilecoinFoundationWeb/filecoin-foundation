@@ -151,7 +151,7 @@ export default function Grants() {
       >
         <CardLayout>
           {submissionCriteriaData.map((data) => {
-            const { title, description, Icon } = data
+            const { title, description, icon } = data
 
             return (
               <GrantsSectionCard
@@ -161,7 +161,7 @@ export default function Grants() {
                   variant: 'lg',
                   children: title,
                   iconProps: {
-                    component: Icon,
+                    component: icon,
                   },
                 }}
               >

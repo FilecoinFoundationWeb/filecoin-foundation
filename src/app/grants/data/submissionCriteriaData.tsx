@@ -4,17 +4,17 @@ export const submissionCriteriaData = [
   {
     title: 'Open-source',
     description: 'All projects must be open-sourced.',
-    Icon: Code,
+    icon: Code,
   },
   {
     title: 'Microgrant',
     description:
       'All projects must be dual-licensed under MIT and APACHE2 licenses.',
-    Icon: BracketsAngle,
+    icon: BracketsAngle,
   },
   {
     title: 'Requests for Proposal',
     description: 'All teams must be self-managed.',
-    Icon: Users,
+    icon: Users,
   },
 ]
