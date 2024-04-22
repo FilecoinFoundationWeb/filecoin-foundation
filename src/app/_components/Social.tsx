@@ -1,21 +1,35 @@
-import { socialIcons, socialLinks, SocialIconKey } from '@/utils/socialConfig'
+import clsx from 'clsx'
+
+import { Icon } from '@/components/Icon'
+
+import { socialLinksWithIcons } from '@/utils/socialConfig'
+
+const touchTargetSpacing = 2
+const touchTargetClass = `p-${touchTargetSpacing}`
+const touchTargetOffsetClass = `-m-${touchTargetSpacing} sm:mx-0`
 
 export function Social() {
   return (
-    <ul className="flex flex-wrap items-center justify-between gap-4 px-3">
-      {Object.entries(socialLinks).map(([key, { label, href }]) => {
-        const IconComponent = socialIcons[key as SocialIconKey]
-
+    <ul
+      className={clsx(
+        'flex flex-wrap items-center justify-between gap-4 sm:px-8',
+        touchTargetOffsetClass,
+      )}
+    >
+      {socialLinksWithIcons.map(({ label, href, icon }, key) => {
         return (
-          <li key={key}>
+          <li key={key} className="inline-flex">
             <a
+              aria-label={`${label} (opens in new window)`}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="outline-white hover:text-brand-300 focus:outline-2"
-              aria-label={`${label} (opens in new window)`}
+              className={clsx(
+                'text-brand-100 outline-white hover:text-brand-500 focus:outline-2',
+                touchTargetClass,
+              )}
             >
-              {IconComponent && <IconComponent size={24} aria-hidden="true" />}
+              <Icon component={icon} color="inherit" size={32} weight="light" />
             </a>
           </li>
         )
