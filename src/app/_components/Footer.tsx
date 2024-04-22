@@ -11,13 +11,17 @@ import {
   FILECOIN_URLS,
 } from '@/constants/siteMetadata'
 
+type Section = {
+  title: string
+  children: React.ReactNode
+}
+
 type NavigationListItem = {
   label: string
   path: PathValues
 }
 
 type NavigationList = {
-  title: string
   items: NavigationListItem[]
 }
 
@@ -30,18 +34,24 @@ const navigationItems = [
 
 const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS]
 
-function NavigationList({ title, items }: NavigationList) {
+function Section({ title, children }: Section) {
   return (
-    <div>
-      <span className="mb-6 block font-bold">{title}</span>
-      <ul className="flex flex-col gap-3">
-        {items.map(({ label, path }) => (
-          <li key={path}>
-            <TextLink href={path}>{label}</TextLink>
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col gap-4">
+      <span className="block font-bold">{title}</span>
+      {children}
     </div>
+  )
+}
+
+function NavigationList({ items }: NavigationList) {
+  return (
+    <ul className="flex flex-col gap-3">
+      {items.map(({ label, path }) => (
+        <li key={path}>
+          <TextLink href={path}>{label}</TextLink>
+        </li>
+      ))}
+    </ul>
   )
 }
 
@@ -49,44 +59,54 @@ export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
       <hr />
-      <Logo />
-      <p>
-        For the latest big ideas and news from the Filecoin ecosystem and the
-        decentralized web, subscribe to our newsletter.
-      </p>
-      <Button
-        className="sm:self-start"
-        variant="primary"
-        href={FILECOIN_FOUNDATION_URLS.newsletter}
-      >
-        Sign Up
-      </Button>
-
-      <hr className="mt-6" />
-      <Social />
-      <hr className="mb-6" />
-
-      <div className="flex flex-wrap gap-8 sm:gap-10">
-        <NavigationList title="Browse" items={navigationItems} />
-        <NavigationList title="Legal" items={legalItems} />
-
-        <div className="flex flex-col gap-4">
-          <span className="font-bold">Contact Us</span>
-          <p>
-            For media and collaboration inquiries,{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.email}>
-              Drop us a line
-            </TextLink>
+      <div className="flex flex-col gap-6 sm:flex-row sm:justify-between md:justify-start md:gap-36">
+        <Logo />
+        <div className="sm:max-w-96">
+          <p className="mb-6">
+            For the latest big ideas and news from the Filecoin ecosystem and
+            the decentralized web, subscribe to our newsletter.
           </p>
-          <p>
-            For more information on our ecosystem grants,{' '}
-            <TextLink href={FILECOIN_URLS.grants.email}>Email us</TextLink>
-          </p>
+          <Button
+            className="w-full sm:self-start md:w-auto"
+            variant="primary"
+            href={FILECOIN_FOUNDATION_URLS.newsletter}
+          >
+            Subscribe to Newsletter
+          </Button>
         </div>
       </div>
 
       <hr />
-      <p className="text-center">
+      <Social />
+      <hr />
+
+      <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-5">
+          <Section title="Browse">
+            <NavigationList items={navigationItems} />
+          </Section>
+          <Section title="Legal">
+            <NavigationList items={legalItems} />
+          </Section>
+        </div>
+        <Section title="Contact Us">
+          <div>
+            <p className="mb-3">
+              For media and collaboration inquiries,{' '}
+              <TextLink href={FILECOIN_FOUNDATION_URLS.email}>
+                Drop us a line
+              </TextLink>
+            </p>
+            <p>
+              For more information on our ecosystem grants,{' '}
+              <TextLink href={FILECOIN_URLS.grants.email}>Email us</TextLink>
+            </p>
+          </div>
+        </Section>
+      </div>
+
+      <hr />
+      <p className="text-center text-sm">
         &copy; {new Date().getFullYear()} Content on this site is licensed under
         a{' '}
         <TextLink href="https://creativecommons.org/licenses/by/4.0/">
