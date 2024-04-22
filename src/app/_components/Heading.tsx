@@ -7,7 +7,7 @@ export type HeadingProps = {
   variant: '4xl' | '3xl' | '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'kicker'
   iconProps?: IconProps
   className?: string
-  children: React.ReactNode
+  children: string
 }
 
 const variantStyles = {

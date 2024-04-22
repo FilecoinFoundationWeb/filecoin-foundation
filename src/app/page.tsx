@@ -78,7 +78,7 @@ const filecoinSystemData = [
   },
   {
     heading: {
-      description: 'Storage Resources',
+      title: 'Storage Resources',
       icon: HardDrives,
     },
     description:
