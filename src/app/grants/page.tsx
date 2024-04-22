@@ -35,7 +35,7 @@ export default function Grants() {
       <PageHeader
         title={header.title}
         description={header.description}
-        cta={{ href: FILECOIN_URLS.grants.email, text: 'Email for more info' }}
+        cta={{ href: FILECOIN_URLS.grants.email, text: 'Apply Now' }}
       />
 
       <PageSection
