@@ -1,35 +1,13 @@
 import { CustomLink } from '@/components/CustomLink'
-import { Heading } from '@/components/Heading'
+import { type HeadingProps, Heading } from '@/components/Heading'
 
 type HomeExploreSectionCardProps = {
-  heading: {
-    icon: React.ReactNode
-    title: string
-  }
+  heading: HeadingProps
   cta: {
     href: string
     text: string
   }
   children: React.ReactNode
-}
-
-function HeadingWithIcon({
-  icon,
-  children,
-}: {
-  icon: React.ReactNode
-  children: React.ReactNode
-}) {
-  return (
-    <div className="inline-flex items-center gap-3">
-      <span className="text-brand-300" aria-hidden={true}>
-        {icon}
-      </span>
-      <Heading tag="h3" variant="lg">
-        {children}
-      </Heading>
-    </div>
-  )
 }
 
 export function HomeExploreSectionCard({
@@ -40,7 +18,7 @@ export function HomeExploreSectionCard({
   return (
     <div className="relative flex flex-col justify-between gap-3 rounded-lg border border-brand-500 bg-brand-700 bg-opacity-10 p-4 backdrop-blur-md">
       <div className="mb-10 flex flex-col gap-3">
-        <HeadingWithIcon icon={heading.icon}>{heading.title}</HeadingWithIcon>
+        <Heading {...heading} />
         <p>{children}</p>
       </div>
       <CustomLink
