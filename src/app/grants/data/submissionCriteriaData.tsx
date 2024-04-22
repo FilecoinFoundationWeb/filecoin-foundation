@@ -7,13 +7,13 @@ export const submissionCriteriaData = [
     icon: Code,
   },
   {
-    title: 'Microgrant',
+    title: 'MIT and APACHE2',
     description:
       'All projects must be dual-licensed under MIT and APACHE2 licenses.',
     icon: BracketsAngle,
   },
   {
-    title: 'Requests for Proposal',
+    title: 'Self-Management',
     description: 'All teams must be self-managed.',
     icon: Users,
   },
