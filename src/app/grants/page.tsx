@@ -155,23 +155,26 @@ export default function Grants() {
         }}
       />
 
-      <CTASection title="Ready to Apply?">
-        <p>
-          Please visit our{' '}
-          <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink> to
-          learn more about the proposal process, review process, timeline
-          guidance, and more. For other questions, email{' '}
-          <TextLink href={FILECOIN_URLS.grants.email}>grants@fil.org</TextLink>{' '}
-          or join our monthly office hours!
-        </p>
-        <Button
-          className="sm:self-start"
-          variant="primary"
-          href={FILECOIN_URLS.grants.email}
-        >
-          Apply Now
-        </Button>
-      </CTASection>
+      <CTASection
+        title="Ready to Apply?"
+        description={
+          <>
+            Please visit our{' '}
+            <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink>{' '}
+            to learn more about the proposal process, review process, timeline
+            guidance, and more. For other questions, email{' '}
+            <TextLink href={FILECOIN_URLS.grants.email}>
+              grants@fil.org
+            </TextLink>{' '}
+            or join our monthly office hours!
+          </>
+        }
+        cta={{
+          href: FILECOIN_URLS.grants.email,
+          text: 'Apply Now',
+          ariaLabel: 'Apply for grants',
+        }}
+      ></CTASection>
     </PageLayout>
   )
 }
