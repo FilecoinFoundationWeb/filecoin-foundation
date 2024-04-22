@@ -54,8 +54,13 @@ export default function Home() {
             <div className="grid gap-4 lg:flex lg:max-w-[23rem] lg:flex-col lg:items-center lg:justify-center">
               <HomeExploreSectionCard
                 heading={{
-                  icon: <MagnifyingGlass size={24} />,
-                  title: 'Explore the Ecosystem',
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: 'Explore the Ecosystem',
+                  iconProps: {
+                    component: MagnifyingGlass,
+                    size: 24,
+                  },
                 }}
                 cta={{
                   href: PATHS.ECOSYSTEM.path,
@@ -68,8 +73,13 @@ export default function Home() {
               </HomeExploreSectionCard>
               <HomeExploreSectionCard
                 heading={{
-                  icon: <Code size={24} />,
-                  title: 'Builder Resources',
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: 'Builder Resources',
+                  iconProps: {
+                    component: Code,
+                    size: 24,
+                  },
                 }}
                 cta={{
                   href: 'https://docs.filecoin.io',
@@ -84,8 +94,12 @@ export default function Home() {
           <div className="grid gap-4 sm:w-1/2 lg:w-5/12 lg:max-w-[23rem]">
             <HomeExploreSectionCard
               heading={{
-                icon: <Money size={24} />,
-                title: 'Grants Program',
+                tag: 'h3',
+                variant: 'lg',
+                children: 'Grants Program',
+                iconProps: {
+                  component: Money,
+                },
               }}
               cta={{
                 href: PATHS.GRANTS.path,
@@ -97,8 +111,12 @@ export default function Home() {
             </HomeExploreSectionCard>
             <HomeExploreSectionCard
               heading={{
-                icon: <Person size={24} />,
-                title: 'Filecoin Events',
+                tag: 'h3',
+                variant: 'lg',
+                children: 'Filecoin Events',
+                iconProps: {
+                  component: Person,
+                },
               }}
               cta={{
                 href: PATHS.EVENTS.path,
@@ -111,8 +129,12 @@ export default function Home() {
             </HomeExploreSectionCard>
             <HomeExploreSectionCard
               heading={{
-                icon: <HardDrives size={24} />,
-                title: 'Storage Resources',
+                tag: 'h3',
+                variant: 'lg',
+                children: 'Storage Resources',
+                iconProps: {
+                  component: HardDrives,
+                },
               }}
               cta={{
                 href: 'https://destor.com/destor-network/overview',

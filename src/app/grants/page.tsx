@@ -17,7 +17,7 @@ import { CardLayout } from '@/_components/CardLayout'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-import { grantsAndOpportunitiesData } from './data/grantsAndOpportunitiesData'
+import { opportunitiesData } from './data/opportunitiesData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
@@ -44,15 +44,19 @@ export default function Grants() {
         description="The Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories:"
       >
         <CardLayout>
-          {grantsAndOpportunitiesData.map((card) => {
-            const { title, description, Icon } = card
+          {opportunitiesData.map((card) => {
+            const { title, description, icon } = card
 
             return (
               <GrantsSectionCard
                 key={title}
                 heading={{
-                  icon: <Icon className="h-6 w-6"></Icon>,
-                  title,
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: title,
+                  iconProps: {
+                    component: icon,
+                  },
                 }}
               >
                 {description}
