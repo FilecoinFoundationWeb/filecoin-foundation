@@ -164,16 +164,6 @@ export default function Grants() {
         </CardLayout>
       </PageSection>
 
-      {/* <Section
-        kicker="What We Do"
-        title="Filecoin Plus: Incentivize Useful Storage on Filecoin"
-        content="A brief overview of the motivation, principles, and mechanisms of Filecoin Plus, and how it incentivizes useful storage on the network."
-        link={{
-          href: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/',
-          text: 'Learn More',
-        }}
-      /> */}
-
       <section>
         <Heading tag="h2" variant="xl">
           How to get involved in the Filecoin community
