@@ -80,8 +80,8 @@ export function Footer() {
       <Social />
       <hr />
 
-      <div className="flex flex-wrap gap-6">
-        <div className="flex flex-wrap gap-5">
+      <div className="flex flex-wrap gap-x-20 gap-y-6">
+        <div className="flex flex-wrap gap-x-12 gap-y-6">
           <Section title="Browse">
             <NavigationList items={navigationItems} />
           </Section>
