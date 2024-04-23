@@ -121,6 +121,7 @@ export default function Home() {
               {firstTwoFilecoinSystemDataCards.map((card) => (
                 <HomeExploreSectionCard
                   key={card.heading.title}
+                  cta={card.cta}
                   heading={{
                     tag: 'h3',
                     variant: 'lg',
@@ -129,7 +130,6 @@ export default function Home() {
                       component: card.heading.icon,
                     },
                   }}
-                  cta={card.cta}
                 >
                   {card.description}
                 </HomeExploreSectionCard>
@@ -140,6 +140,7 @@ export default function Home() {
             {lastThreeFilecoinSystemDataCards.map((card) => (
               <HomeExploreSectionCard
                 key={card.heading.title}
+                cta={card.cta}
                 heading={{
                   tag: 'h3',
                   variant: 'lg',
@@ -148,7 +149,6 @@ export default function Home() {
                     component: card.heading.icon,
                   },
                 }}
-                cta={card.cta}
               >
                 {card.description}
               </HomeExploreSectionCard>
