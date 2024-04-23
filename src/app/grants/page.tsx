@@ -4,7 +4,6 @@ import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { Section } from '@/components/Section'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -18,6 +17,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { opportunitiesData } from './data/opportunitiesData'
+import { submissionCriteriaData } from './data/submissionCriteriaData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
@@ -144,15 +144,33 @@ export default function Grants() {
         </ul>
       </section>
 
-      <Section
-        kicker="What We Do"
-        title="Filecoin Plus: Incentivize Useful Storage on Filecoin"
-        content="A brief overview of the motivation, principles, and mechanisms of Filecoin Plus, and how it incentivizes useful storage on the network."
-        link={{
-          href: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/',
-          text: 'Learn More',
-        }}
-      />
+      <PageSection
+        kicker="Criteria"
+        title="Submission Criteria"
+        description="Generally, all projects must meet the following requirements:"
+      >
+        <CardLayout>
+          {submissionCriteriaData.map((data) => {
+            const { title, description, icon } = data
+
+            return (
+              <GrantsSectionCard
+                key={title}
+                heading={{
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: title,
+                  iconProps: {
+                    component: icon,
+                  },
+                }}
+              >
+                {description}
+              </GrantsSectionCard>
+            )
+          })}
+        </CardLayout>
+      </PageSection>
 
       <section>
         <Heading tag="h2" variant="xl">
