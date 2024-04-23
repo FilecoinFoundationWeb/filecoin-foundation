@@ -78,11 +78,12 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
                 <Card
                   key={post.slug}
                   title={title}
+                  description={description}
+                  textIsClamped={true}
                   metaData={[
                     ...(publishedOn ? [formatDate(publishedOn)] : []),
                     ...(post.category ? [post.category] : []),
                   ]}
-                  description={description}
                   cta={{
                     href: `${PATHS.BLOG.path}/${slug}`,
                     text: 'Read Post',
@@ -91,7 +92,6 @@ export function BlogClient({ posts }: { posts: BlogPostData[] }) {
                     url: image?.url,
                     alt: image?.alt,
                   }}
-                  textIsClamped={true}
                   pagination={{
                     entryIndex: index,
                     currentPage,
