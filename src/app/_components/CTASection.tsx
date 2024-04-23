@@ -14,7 +14,7 @@ export function CTASection({ title, description, cta }: CTASectionProps) {
   return (
     <section className="flex flex-col items-center gap-16">
       <div className="h-px w-full bg-brand-100" />
-      <div className="space-y-6 text-left sm:text-center">
+      <div className="flex flex-col space-y-6 whitespace-pre-line sm:block sm:text-center">
         <Heading tag="h2" variant="3xl">
           {title}
         </Heading>

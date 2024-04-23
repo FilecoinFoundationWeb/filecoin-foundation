@@ -8,6 +8,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 
 import { Button } from '@/components/Button'
+import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
 import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { Heading } from '@/components/Heading'
@@ -186,6 +187,14 @@ export default function Home() {
           View All
         </Button>
       </PageSection>
+      <CTASection
+        title={`Become Part of Our\n Vibrant Community`}
+        description="Join Filecoin's Slack to engage with the community and stay updated on the latest&nbsp;developments."
+        cta={{
+          href: FILECOIN_URLS.social.slack.href,
+          text: 'Join Filecoin Slack',
+        }}
+      ></CTASection>
     </PageLayout>
   )
 }
