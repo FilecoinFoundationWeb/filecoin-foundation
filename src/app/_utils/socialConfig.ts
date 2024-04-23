@@ -2,30 +2,26 @@ import {
   Butterfly,
   GithubLogo,
   LinkedinLogo,
-  RedditLogo,
-  SlackLogo,
   TwitterLogo,
   YoutubeLogo,
 } from '@phosphor-icons/react/dist/ssr'
 
-import {
-  FILECOIN_FOUNDATION_URLS,
-  FILECOIN_URLS,
-} from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-export const socialIcons = {
+const socialIcons = {
   bluesky: Butterfly,
   github: GithubLogo,
   linkedin: LinkedinLogo,
-  reddit: RedditLogo,
-  slack: SlackLogo,
   twitter: TwitterLogo,
   youtube: YoutubeLogo,
 }
 
-export type SocialIconKey = keyof typeof socialIcons
+type SocialIconKey = keyof typeof socialIcons
 
-export const socialLinks = {
-  ...FILECOIN_FOUNDATION_URLS.social,
-  ...FILECOIN_URLS.social,
-}
+export const socialLinksWithIcons = Object.entries(
+  FILECOIN_FOUNDATION_URLS.social,
+).map(([key, { label, href }]) => ({
+  label,
+  href,
+  icon: socialIcons[key as SocialIconKey],
+}))

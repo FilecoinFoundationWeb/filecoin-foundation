@@ -2,15 +2,27 @@ import { type Icon } from '@phosphor-icons/react'
 
 export type IconProps = {
   component: Icon
+  color?: 'inherit' | 'brand-300'
   size?: number
+  weight?: 'light' | 'regular' | 'bold'
 }
 
-export function Icon({ component, size }: IconProps) {
+const colorStyles = {
+  inherit: 'text-inherit',
+  'brand-300': 'text-brand-300',
+}
+
+export function Icon({
+  component,
+  color = 'inherit',
+  size = 24,
+  weight = 'regular',
+}: IconProps) {
   const Component = component
 
   return (
-    <span className="text-brand-300" aria-hidden="true">
-      <Component size={size || 24} />
+    <span aria-hidden="true" className={colorStyles[color]}>
+      <Component size={size} weight={weight} />
     </span>
   )
 }
