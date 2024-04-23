@@ -6,28 +6,21 @@ type CTASectionProps = {
   description?: string | React.ReactNode
   cta?: {
     href: string
-    text?: string
-    icon?: React.ReactNode
-    ariaLabel?: string
+    text: string
   }
 }
 
 export function CTASection({ title, description, cta }: CTASectionProps) {
   return (
-    <section className="m-auto space-y-6 text-left sm:text-center">
-      <Heading tag="h2" variant="3xl">
-        {title}
-      </Heading>
-      <p className="max-w-[60ch]">{description}</p>
-      {cta && (
-        <Button
-          href={cta.href}
-          aria-label={cta.ariaLabel}
-          className="sm:self-start"
-        >
-          <span>{cta.text || 'Learn More'}</span>
-        </Button>
-      )}
+    <section className="flex flex-col items-center gap-16">
+      <div className="h-px w-full bg-brand-100" />
+      <div className="space-y-6 text-left sm:text-center">
+        <Heading tag="h2" variant="3xl">
+          {title}
+        </Heading>
+        <p className="max-w-[60ch]">{description}</p>
+        {cta && <Button href={cta.href}>{cta.text}</Button>}
+      </div>
     </section>
   )
 }

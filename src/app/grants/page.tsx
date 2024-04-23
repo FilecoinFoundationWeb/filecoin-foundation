@@ -1,4 +1,3 @@
-import { Button } from '@/components/Button'
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
@@ -178,11 +177,11 @@ export default function Grants() {
         description={
           <>
             Please visit our{' '}
-            <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink>{' '}
+            <TextLink href={FILECOIN_URLS.grants.github}>GitHub repo</TextLink>{' '}
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
             <TextLink href={FILECOIN_URLS.grants.email}>
-              grants@fil.org
+              {FILECOIN_URLS.grants.email.replace('mailto:', '')}
             </TextLink>{' '}
             or join our monthly office hours!
           </>
@@ -190,9 +189,8 @@ export default function Grants() {
         cta={{
           href: FILECOIN_URLS.grants.email,
           text: 'Apply Now',
-          ariaLabel: 'Apply for grants',
         }}
-      ></CTASection>
+      />
     </PageLayout>
   )
 }
