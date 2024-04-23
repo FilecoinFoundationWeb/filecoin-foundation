@@ -11,9 +11,10 @@
       "error",
       {
         "callbacksLast": true,
-        "shorthandFirst": true,
+        "multiline": "last",
         "noSortAlphabetically": true,
-        "reservedFirst": true
+        "reservedFirst": true,
+        "shorthandFirst": true
       }
     ],
 

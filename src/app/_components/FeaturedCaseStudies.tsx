@@ -31,12 +31,12 @@ export function FeaturedCaseStudies({
           key={slug}
           title={title}
           description={description}
-          cta={{
-            href: `${PATHS.CASE_STUDIES.path}/${slug}` as Route,
-          }}
           image={image}
           borderColor="brand-300"
           textIsClamped={true}
+          cta={{
+            href: `${PATHS.CASE_STUDIES.path}/${slug}` as Route,
+          }}
         />
       ))}
     </CardLayout>

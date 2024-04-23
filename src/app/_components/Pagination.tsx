@@ -43,15 +43,15 @@ export function Pagination({
     >
       <div className="flex">
         <button
+          aria-label="Go to previous page"
+          aria-disabled={!canGoBack}
+          disabled={!canGoBack}
           className={clsx(
             'flex items-center rounded bg-brand-300 p-1 px-2 transition',
             canGoBack
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
           )}
-          aria-label="Go to previous page"
-          aria-disabled={!canGoBack}
-          disabled={!canGoBack}
           onClick={handlePrev}
         >
           <CaretLeft size={20} weight="bold" className="mr-1.5" />
@@ -76,13 +76,13 @@ export function Pagination({
           >
             {typeof item === 'number' ? (
               <button
+                aria-label={`Go to page ${item}`}
                 className={clsx(
                   'h-full w-full rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white',
                   item === currentPage
                     ? 'bg-brand-800 text-brand-100'
                     : 'bg-brand-300 text-brand-700 hover:bg-brand-400',
                 )}
-                aria-label={`Go to page ${item}`}
                 onClick={() => handlePageChange(item)}
               >
                 {item}
@@ -106,15 +106,15 @@ export function Pagination({
         </div>
 
         <button
+          aria-label="Go to next page"
+          aria-disabled={!canGoForward}
+          disabled={!canGoForward}
           className={clsx(
             'flex items-center rounded bg-brand-300 p-1 px-2 transition',
             canGoForward
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
           )}
-          aria-label="Go to next page"
-          aria-disabled={!canGoForward}
-          disabled={!canGoForward}
           onClick={handleNext}
         >
           <span className="ml-1.5">Next</span>
