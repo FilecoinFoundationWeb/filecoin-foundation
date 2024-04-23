@@ -25,7 +25,7 @@ export function Social() {
               target="_blank"
               rel="noopener noreferrer"
               className={clsx(
-                'text-brand-100 outline-white hover:text-brand-500 focus:outline-2',
+                'text-brand-100 outline-white hover:text-brand-400 focus:outline-2',
                 touchTargetClass,
               )}
             >
