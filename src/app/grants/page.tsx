@@ -1,6 +1,6 @@
 import { CardLayout } from '@/components/CardLayout'
+import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
-import { GetInvolvedList } from '@/components/GetInvolvedList'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
@@ -173,17 +173,25 @@ export default function Grants() {
         </CardLayout>
       </PageSection>
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          How to get involved in the Filecoin community
-        </Heading>
-        <p>
-          The Filecoin community includes thousands of developers,
-          technologists, users, and enthusiasts all over the world.
-        </p>
-        <TextLink href={FILECOIN_URLS.social.slack.href}>Learn More</TextLink>
-        <GetInvolvedList />
-      </section>
+      <CTASection
+        title="Ready to Apply?"
+        description={
+          <>
+            Please visit our{' '}
+            <TextLink href={FILECOIN_URLS.grants.github}>GitHub repo</TextLink>{' '}
+            to learn more about the proposal process, review process, timeline
+            guidance, and more. For other questions, email{' '}
+            <TextLink href={FILECOIN_URLS.grants.email}>
+              {FILECOIN_URLS.grants.email.replace('mailto:', '')}
+            </TextLink>{' '}
+            or join our monthly office hours!
+          </>
+        }
+        cta={{
+          href: FILECOIN_URLS.grants.email,
+          text: 'Apply Now',
+        }}
+      />
     </PageLayout>
   )
 }
