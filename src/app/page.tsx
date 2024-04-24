@@ -194,7 +194,7 @@ export default function Home() {
           href: FILECOIN_URLS.social.slack.href,
           text: 'Join Filecoin Slack',
         }}
-      ></CTASection>
+      />
     </PageLayout>
   )
 }
