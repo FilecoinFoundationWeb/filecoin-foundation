@@ -14,7 +14,7 @@ export function BreadCrumbsWrapper() {
     return null
   }
 
-  // this is to exclude breadcrumbs in not-found
+  // this is to exclude breadcrumbs in not-found.tsx
   if (!allPaths.includes(pathname)) {
     return null
   }
