@@ -422,8 +422,13 @@
               "widget": "relation",
               "collection": "blog",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "required": true
             },
             {
@@ -932,8 +937,13 @@
               "widget": "relation",
               "collection": "events",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "required": true
             },
             {
@@ -1328,8 +1338,13 @@
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
-          "search_fields": ["slug", "title"],
-          "display_fields": ["title"],
+          "search_fields": [
+            "slug",
+            "title"
+          ],
+          "display_fields": [
+            "title"
+          ],
           "multiple": true
         },
         {
@@ -1882,7 +1897,10 @@
           "widget": "select",
           "required": true,
           "multiple": true,
-          "options": ["filecoin", "ipfs"]
+          "options": [
+            "filecoin",
+            "ipfs"
+          ]
         },
         {
           "name": "featured-content",
@@ -2218,8 +2236,8 @@
     {
       "name": "grants",
       "label": "Grants",
-      "folder": "src/content/grants/",
       "label_singular": "Grants",
+      "folder": "src/content/grants/",
       "create": true,
       "identifier_field": "name",
       "extension": "md",
@@ -2253,13 +2271,14 @@
           "name": "featured",
           "label": "Featured",
           "widget": "boolean",
-          "required": false
+          "required": false,
+          "default": false
         },
         {
           "name": "description",
-          "label": "Description",
+          "label": "Short Description",
           "widget": "string",
-          "required": false
+          "required": true
         },
         {
           "name": "topic",
@@ -2477,21 +2496,27 @@
         },
         {
           "name": "tech",
-          "label": "Tech",
-          "widget": "list",
-          "required": false
+          "label": "Technologies Used",
+          "widget": "select",
+          "required": false,
+          "multiple": true,
+          "options": [
+            "filecoin",
+            "ipfs"
+          ]
         },
         {
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": false,
+          "required": true,
           "fields": [
             {
               "name": "url",
-              "label": "Image",
+              "label": "URL",
               "widget": "image",
-              "required": true
+              "required": true,
+              "allow_multiple": false
             },
             {
               "name": "alt",
@@ -2505,6 +2530,12 @@
           "name": "website",
           "label": "Website",
           "widget": "string",
+          "required": true
+        },
+        {
+          "name": "repo",
+          "label": "GitHub Repo",
+          "widget": "string",
           "required": false
         },
         {
@@ -2514,20 +2545,14 @@
           "required": false
         },
         {
-          "name": "repo",
-          "label": "GitHub Repo",
-          "widget": "string",
-          "required": false
-        },
-        {
           "name": "twitter",
-          "label": "Twitter",
+          "label": "Twitter Handle",
           "widget": "string",
           "required": false
         },
         {
           "name": "video-url",
-          "label": "Video URL",
+          "label": "YouTube Video URL",
           "widget": "string",
           "required": false
         },

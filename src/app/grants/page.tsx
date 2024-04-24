@@ -10,6 +10,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
@@ -20,7 +21,13 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 
-const { header, seo } = attributes
+const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
+
+const ecosystem = getEcosystemProjectsData()
+const grantGraduates = ecosystem.filter((item) =>
+  grantGraduatesSlugs?.includes(item.slug),
+)
+
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
 
 const grantsPageBaseData = generateWebPageStructuredData({
@@ -68,7 +75,7 @@ export default function Grants() {
       </PageSection>
 
       <PageSection kicker="Past examples" title="Grant Graduates">
-        <FeaturedGrantsGraduates />
+        <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
       </PageSection>
 
       <section>
