@@ -629,3 +629,5 @@ collections:
         display_fields:
           - "title"
         multiple: true
+        min: 6
+        max: 6
