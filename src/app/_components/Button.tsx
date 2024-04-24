@@ -17,12 +17,15 @@ type ButtonInnerProps = {
   children: React.ReactNode
 }
 
-const variantStyles = {
+export const variantButtonStyles = {
   primary:
     'border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400',
   ghost:
     'border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400',
 }
+
+export const baseButtonStyles =
+  'inline-flex items-center justify-center gap-2 rounded-lg border px-9 py-3 font-semibold transition hover:no-underline focus:outline-2 focus:outline-brand-100 sm:whitespace-nowrap'
 
 function ButtonInner({ icon, children }: ButtonInnerProps) {
   return (
@@ -40,10 +43,7 @@ export function Button({
   children,
   ...rest
 }: ButtonProps) {
-  const baseStyles =
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-9 py-3 font-semibold transition hover:no-underline focus:outline-2 focus:outline-brand-100 sm:whitespace-nowrap'
-
-  className = clsx(baseStyles, variantStyles[variant], className)
+  className = clsx(baseButtonStyles, variantButtonStyles[variant], className)
 
   return typeof rest.href === 'undefined' ? (
     <button className={className} {...rest}>
