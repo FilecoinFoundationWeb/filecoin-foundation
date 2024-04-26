@@ -17,7 +17,7 @@ export function CardLayout({
     blogPost: 'lg:grid-cols-2 lg:grid-rows-2',
     caseStudy: 'md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2',
     reports: 'lg:grid-cols-2 lg:grid-rows-2',
-    grants: 'sm:grid-cols-3 xs:gap-6 gap-7',
+    grants: 'sm:grid-cols-3 sm:gap-6 gap-7',
   }
 
   return (
