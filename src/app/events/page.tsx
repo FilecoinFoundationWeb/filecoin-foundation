@@ -82,11 +82,11 @@ export default function Events() {
         title={featuredEvent.title}
         description={featuredEvent.description || 'Description not available.'}
         metaData={getMetaDataContent(featuredEvent)}
+        image={featuredEvent.image}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
         }}
-        image={featuredEvent.image}
       />
 
       <PageSection kicker="Events" title="All Events">

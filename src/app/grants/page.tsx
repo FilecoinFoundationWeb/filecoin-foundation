@@ -1,12 +1,16 @@
-import { GetInvolvedList } from '@/components/GetInvolvedList'
+import { CardLayout } from '@/components/CardLayout'
+import { CTASection } from '@/components/CTASection'
+import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
+import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
-import { Section } from '@/components/Section'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
@@ -14,7 +18,16 @@ import { attributes } from '@/content/pages/grants.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-const { header, seo } = attributes
+import { opportunitiesData } from './data/opportunitiesData'
+import { submissionCriteriaData } from './data/submissionCriteriaData'
+
+const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
+
+const ecosystem = getEcosystemProjectsData()
+const grantGraduates = ecosystem.filter((item) =>
+  grantGraduatesSlugs?.includes(item.slug),
+)
+
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
 
 const grantsPageBaseData = generateWebPageStructuredData({
@@ -33,66 +46,37 @@ export default function Grants() {
         cta={{ href: FILECOIN_URLS.grants.email, text: 'Apply Now' }}
       />
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Developer Grants
-        </Heading>
-        <p>
-          The Foundation funds talented and eager teams that want to work with
-          us to build a more robust, efficient, and decentralized web.
-        </p>
-        <ul>
-          <li>
-            <Heading tag="h3" variant="lg">
-              Open Grants
-            </Heading>
-            <p>
-              Have an idea for pushing the Filecoin ecosystem forward? Grants
-              are available to support projects that advance the Filecoin
-              ecosystem, scale users, or directly advance Filecoin’s mission to
-              preserve humanity’s most important information.
-            </p>
-          </li>
-          <li>
-            <Heading tag="h3" variant="lg">
-              Requests for Proposal
-            </Heading>
-            <p>
-              These grants generally have clearly scoped deliverables,
-              milestones, and funding limits. While there is some flexibility in
-              RFP deliverables, we expect teams will deliver what is in scope in
-              the RFP.
-            </p>
-          </li>
-          <li>
-            <Heading tag="h3" variant="lg">
-              Microgrants
-            </Heading>
-            <p>
-              The Filecoin Foundation awards grants to early-stage projects that
-              have developed initial protocols using Filecoin.
-            </p>
-          </li>
-        </ul>
-        <p>
-          For more information on grants,{' '}
-          <TextLink href={FILECOIN_URLS.grants.email}>email us</TextLink> or see
-          our{' '}
-          <TextLink href={FILECOIN_URLS.grants.github}>Github repo</TextLink>{' '}
-          for a more in-depth introduction to the grants program.
-        </p>
-      </section>
+      <PageSection
+        kicker="Opportunities"
+        title="Grants and Funding Opportunities"
+        description="The Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories:"
+      >
+        <CardLayout>
+          {opportunitiesData.map((card) => {
+            const { title, description, icon } = card
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Our Mission
-        </Heading>
-        <p>
-          The Foundation&apos;s key role is to find ways for the Filecoin
-          community to solve the problems we face as a community, and help
-          facilitate collective action.
-        </p>
-      </section>
+            return (
+              <GrantsSectionCard
+                key={title}
+                heading={{
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: title,
+                  iconProps: {
+                    component: icon,
+                  },
+                }}
+              >
+                {description}
+              </GrantsSectionCard>
+            )
+          })}
+        </CardLayout>
+      </PageSection>
+
+      <PageSection kicker="Past Examples" title="Grant Graduates">
+        <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
+      </PageSection>
 
       <section>
         <Heading tag="h2" variant="xl">
@@ -161,27 +145,53 @@ export default function Grants() {
         </ul>
       </section>
 
-      <Section
-        kicker="What We Do"
-        title="Filecoin Plus: Incentivize Useful Storage on Filecoin"
-        content="A brief overview of the motivation, principles, and mechanisms of Filecoin Plus, and how it incentivizes useful storage on the network."
-        link={{
-          href: 'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus/',
-          text: 'Learn More',
+      <PageSection
+        kicker="Criteria"
+        title="Submission Criteria"
+        description="Generally, all projects must meet the following requirements:"
+      >
+        <CardLayout>
+          {submissionCriteriaData.map((data) => {
+            const { title, description, icon } = data
+
+            return (
+              <GrantsSectionCard
+                key={title}
+                heading={{
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: title,
+                  iconProps: {
+                    component: icon,
+                  },
+                }}
+              >
+                {description}
+              </GrantsSectionCard>
+            )
+          })}
+        </CardLayout>
+      </PageSection>
+
+      <CTASection
+        title="Ready to Apply?"
+        description={
+          <>
+            Please visit our{' '}
+            <TextLink href={FILECOIN_URLS.grants.github}>GitHub repo</TextLink>{' '}
+            to learn more about the proposal process, review process, timeline
+            guidance, and more. For other questions, email{' '}
+            <TextLink href={FILECOIN_URLS.grants.email}>
+              {FILECOIN_URLS.grants.email.replace('mailto:', '')}
+            </TextLink>{' '}
+            or join our monthly office hours!
+          </>
+        }
+        cta={{
+          href: FILECOIN_URLS.grants.email,
+          text: 'Apply Now',
         }}
       />
-
-      <section>
-        <Heading tag="h2" variant="xl">
-          How to get involved in the Filecoin community
-        </Heading>
-        <p>
-          The Filecoin community includes thousands of developers,
-          technologists, users, and enthusiasts all over the world.
-        </p>
-        <TextLink href={FILECOIN_URLS.social.slack.href}>Learn More</TextLink>
-        <GetInvolvedList />
-      </section>
     </PageLayout>
   )
 }

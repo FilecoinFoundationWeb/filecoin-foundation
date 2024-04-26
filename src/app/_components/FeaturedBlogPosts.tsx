@@ -29,11 +29,11 @@ export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
           key={slug}
           title={title}
           description={description}
+          image={image}
+          textIsClamped={true}
           cta={{
             href: `${PATHS.BLOG.path}/${slug}` as Route,
           }}
-          image={image}
-          textIsClamped={true}
         />
       ))}
     </CardLayout>

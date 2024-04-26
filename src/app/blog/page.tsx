@@ -94,11 +94,11 @@ export default function Blog({ searchParams }: Props) {
         title={featuredPost.title}
         description={featuredPost.description}
         metaData={getMetaDataContent(featuredPost)}
+        image={featuredPost.image}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',
         }}
-        image={featuredPost.image}
       />
 
       <PageSection

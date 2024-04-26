@@ -2232,6 +2232,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "grants",
+      "label": "Grants",
+      "label_singular": "Grants",
+      "folder": "src/content/grants/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "grants-graduates",
+          "label": "Grants Graduates",
+          "widget": "relation",
+          "required": false,
+          "collection": "ecosystem",
+          "value_field": "src/content/ecosystem/{{slug}}.md",
+          "search_fields": [
+            "slug",
+            "title"
+          ],
+          "display_fields": [
+            "title"
+          ],
+          "multiple": true
+        }
+      ]
     }
   ]
 }
