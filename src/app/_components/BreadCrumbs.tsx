@@ -30,21 +30,8 @@ export function BreadCrumbs() {
 
   const baseStyles = 'hover:underline focus:outline-2 focus:outline-brand-100'
 
-  const [test, setTest] = React.useState(false)
-
-  const fakeError = () => {
-    console.log('Throwing a fake error!')
-    throw new Error('Whoops!')
-  }
-
   return (
     <nav aria-label="breadcrumbs">
-      {test && (
-        <>
-          <div className={fakeError()} />
-        </>
-      )}
-      <button onClick={() => setTest(true)}>This will trigger an error</button>
       <ol className="inline-flex items-center gap-2.5">
         {pathNames.map((path, index) => {
           const isRoot = index === 0

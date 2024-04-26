@@ -11,7 +11,7 @@ export default function GlobalError() {
     <html lang="en">
       <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-brand-800 px-6 pb-6 pt-8 text-brand-100">
         <Navigation />
-        <div className="xs:items-center xs:text-center m-auto flex max-w-xs flex-col gap-6 py-[104px]">
+        <div className="m-auto flex max-w-xs flex-col gap-6 py-[104px] sm:items-center sm:text-center">
           <span className="text-8xl">500</span>
           <h2 className="text-3xl">Internal Server Error</h2>
           <p>
