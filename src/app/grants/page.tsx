@@ -1,4 +1,5 @@
 import { CardLayout } from '@/components/CardLayout'
+import { CardStepProcess } from '@/components/CardStepProcess'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
@@ -14,7 +15,6 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
-import { CardStepProcess } from '@/_components/CardProcess'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 

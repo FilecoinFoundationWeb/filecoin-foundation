@@ -33,7 +33,7 @@ export function CardStepProcess({
 function StyledStepNumber({ step }: StyledStepNumberProps) {
   return (
     <div className="flex h-11 w-[45px] items-center justify-center rounded-full bg-blue-500">
-      <span className="flex h-7 w-[29px] items-center justify-center text-center text-2xl font-bold">
+      <span className="flex h-7 w-[29px] items-center justify-center text-2xl font-bold">
         {step}
       </span>
     </div>
