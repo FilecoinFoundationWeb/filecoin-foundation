@@ -1,5 +1,6 @@
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
+import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
@@ -9,6 +10,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
@@ -19,7 +21,13 @@ import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 
-const { header, seo } = attributes
+const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
+
+const ecosystem = getEcosystemProjectsData()
+const grantGraduates = ecosystem.filter((item) =>
+  grantGraduatesSlugs?.includes(item.slug),
+)
+
 export const metadata = createMetadata(seo, PATHS.GRANTS.path)
 
 const grantsPageBaseData = generateWebPageStructuredData({
@@ -66,16 +74,9 @@ export default function Grants() {
         </CardLayout>
       </PageSection>
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Our Mission
-        </Heading>
-        <p>
-          The Foundation&apos;s key role is to find ways for the Filecoin
-          community to solve the problems we face as a community, and help
-          facilitate collective action.
-        </p>
-      </section>
+      <PageSection kicker="Past Examples" title="Grant Graduates">
+        <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
+      </PageSection>
 
       <section>
         <Heading tag="h2" variant="xl">

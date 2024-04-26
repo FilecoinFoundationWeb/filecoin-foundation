@@ -6,4 +6,5 @@ export type PageAttributes = {
     description: string | string[]
   }
   featured_post?: string
+  grant_graduates?: string[]
 } & Metadata
