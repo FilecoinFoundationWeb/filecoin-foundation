@@ -17,7 +17,7 @@ export function PageSection({
   return (
     <section>
       <SectionDivider title={kicker} />
-      <Heading className="mb-4" tag="h2" variant="3xl">
+      <Heading className="mb-6" tag="h2" variant="3xl">
         {title}
       </Heading>
       {description && <p className="mb-8 max-w-[60ch]">{description}</p>}

@@ -14,9 +14,11 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
+import { CardStepProcess } from '@/_components/CardProcess'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
+import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 
@@ -75,6 +77,25 @@ export default function Grants() {
 
       <PageSection kicker="Past Examples" title="Grant Graduates">
         <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
+      </PageSection>
+
+      <PageSection
+        kicker="Application Process"
+        title="The Filecoin Grants Process"
+      >
+        <CardLayout type="grants">
+          {applicationProcessData.map((card) => {
+            const { step, title, description } = card
+            return (
+              <CardStepProcess
+                key={card.title}
+                step={step}
+                title={title}
+                description={description}
+              />
+            )
+          })}
+        </CardLayout>
       </PageSection>
 
       <PageSection
