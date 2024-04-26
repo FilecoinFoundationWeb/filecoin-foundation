@@ -33,7 +33,9 @@ export function Heading({
   const Tag = tag
   const { component: icon, size } = iconProps ?? {}
 
-  className = clsx(variantStyles[variant], className)
+  const baseStyles = 'text-balance'
+
+  className = clsx(baseStyles, variantStyles[variant], className)
 
   if (icon) {
     return (
