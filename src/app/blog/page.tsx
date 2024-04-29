@@ -20,7 +20,7 @@ import {
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
-import { PAGE_KEY } from '@/constants/searchParams'
+import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { BlogList } from './BlogList'
@@ -109,7 +109,7 @@ export default function Blog({ searchParams }: Props) {
         <BlogList
           posts={posts}
           pageQuery={searchParams[PAGE_KEY]}
-          // searchQuery={searchParams[SEARCH_KEY]}
+          searchQuery={searchParams[SEARCH_KEY]}
         />
       </PageSection>
     </PageLayout>
