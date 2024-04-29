@@ -15,9 +15,6 @@ module.exports = {
           800: '#08072e',
         },
       },
-      screens: {
-        xs: '376px',
-      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
