@@ -1,27 +1,27 @@
 import { Heading } from '@/components/Heading'
 
-export type CardStepProcessProps = {
+export type GrantsApplicationProcessCardProps = {
   title: string
-  step: string
+  step: number
   description?: string
   as?: React.ElementType
 }
 
-type StyledStepNumberProps = {
-  step: string
+type BadgeNumberProps = {
+  number: number
 }
 
-export function CardStepProcess({
+export function GrantsApplicationProcessCard({
   title,
   step,
   description,
   as: Tag = 'li',
-}: CardStepProcessProps) {
+}: GrantsApplicationProcessCardProps) {
   return (
     <Tag className="space-y-4">
-      <StyledStepNumber step={step} />
+      <BadgeNumber number={step} />
 
-      <Heading tag="h3" variant="lg" className="line-clamp-2 text-ellipsis">
+      <Heading tag="h3" variant="lg">
         {title}
       </Heading>
 
@@ -30,11 +30,11 @@ export function CardStepProcess({
   )
 }
 
-function StyledStepNumber({ step }: StyledStepNumberProps) {
+function BadgeNumber({ number }: BadgeNumberProps) {
   return (
     <div className="flex h-11 w-[45px] items-center justify-center rounded-full bg-blue-500">
       <span className="flex h-7 w-[29px] items-center justify-center text-2xl font-bold">
-        {step}
+        {number}
       </span>
     </div>
   )

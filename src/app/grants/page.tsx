@@ -1,7 +1,7 @@
 import { CardLayout } from '@/components/CardLayout'
-import { CardStepProcess } from '@/components/CardStepProcess'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
+import { GrantsApplicationProcessCard } from '@/components/GrantsApplicationProcessCard'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -87,7 +87,7 @@ export default function Grants() {
           {applicationProcessData.map((card) => {
             const { step, title, description } = card
             return (
-              <CardStepProcess
+              <GrantsApplicationProcessCard
                 key={card.title}
                 step={step}
                 title={title}
