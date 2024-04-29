@@ -5,14 +5,14 @@ import clsx from 'clsx'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
-import { useUpdateRoute } from '@/hooks/useUpdateRoute'
+import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
 
 type PaginationProps = ReturnType<typeof usePagination>
 
 export function Pagination({ pageCount, currentPage }: PaginationProps) {
   const range = useResponsiveRange()
-  const updateRoute = useUpdateRoute()
+  const updateSearchParams = useUpdateSearchParams()
   const visiblePages = useVisiblePages(pageCount, currentPage, range)
 
   const canGoBack = currentPage > 1
@@ -20,19 +20,19 @@ export function Pagination({ pageCount, currentPage }: PaginationProps) {
 
   function handlePrev() {
     if (canGoBack) {
-      updateRoute({ page: currentPage - 1 })
+      updateSearchParams({ page: currentPage - 1 })
     }
   }
 
   function handleNext() {
     if (canGoForward) {
-      updateRoute({ page: currentPage + 1 })
+      updateSearchParams({ page: currentPage + 1 })
     }
   }
 
   function handlePageChange(page: number) {
     if (page !== currentPage) {
-      updateRoute({ page })
+      updateSearchParams({ page })
     }
   }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useUpdateRoute } from '@/hooks/useUpdateRoute'
+import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SearchInput } from '@/components/SearchInput'
 
@@ -9,10 +9,10 @@ type BlogSearchInputProps = {
 }
 
 export function BlogSearchInput({ searchQuery }: BlogSearchInputProps) {
-  const updateRoute = useUpdateRoute()
+  const updateSearchParams = useUpdateSearchParams()
 
   function handleSearchChange(event: React.ChangeEvent<HTMLInputElement>) {
-    updateRoute({
+    updateSearchParams({
       search: event.target.value,
       page: '1',
     })
