@@ -1,8 +1,8 @@
 ---
 header:
-  title: "Community Driven Governance"
-  description: "As an open-source project, Filecoin Foundation governs the Filecoin ecosystem in a way that’s transparent, community-driven, and in line with open-source ethos."
+  title: "Community-Driven Governance"
+  description: "The Foundation coordinates community governance of the Filecoin protocol. Through the Filecoin Improvement Proposal (FIP) process, our goal is to build a decentralized, innovative, and transparent system to support community decision-making and collective ownership of the Filecoin technology."
 seo:
-  title: "Community Driven Governance"
-  description: "As an open-source project, Filecoin Foundation governs the Filecoin ecosystem in a way that’s transparent, community-driven, and in line with open-source ethos."
+  title: "Community-Driven Governance"
+  description: "The Foundation coordinates community governance of the Filecoin protocol. Through the Filecoin Improvement Proposal (FIP) process, our goal is to build a decentralized, innovative, and transparent system to support community decision-making and collective ownership of the Filecoin technology."
 ---
