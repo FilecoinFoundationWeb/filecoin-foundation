@@ -2257,7 +2257,9 @@
           "display_fields": [
             "title"
           ],
-          "multiple": true
+          "multiple": true,
+          "min": 6,
+          "max": 6
         }
       ]
     }
