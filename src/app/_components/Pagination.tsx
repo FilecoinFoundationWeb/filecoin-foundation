@@ -1,7 +1,10 @@
 'use client'
 
+import { useState } from 'react'
+
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
+import { useDebounceCallback } from 'usehooks-ts'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
@@ -10,28 +13,43 @@ import { useVisiblePages } from '@/hooks/useVisiblePages'
 
 type PaginationProps = ReturnType<typeof usePagination>
 
-export function Pagination({ pageCount, currentPage }: PaginationProps) {
+export function Pagination({
+  pageCount,
+  currentPage: initialPage,
+}: PaginationProps) {
+  const [currentPage, setPage] = useState(initialPage)
+
   const range = useResponsiveRange()
   const updateSearchParams = useUpdateSearchParams()
   const visiblePages = useVisiblePages(pageCount, currentPage, range)
+
+  const debouncedUpdateSearchParams = useDebounceCallback(
+    updateSearchParams,
+    350,
+  )
 
   const canGoBack = currentPage > 1
   const canGoForward = currentPage < pageCount
 
   function handlePrev() {
     if (canGoBack) {
-      updateSearchParams({ page: currentPage - 1 })
+      const newPage = currentPage - 1
+      setPage(newPage)
+      debouncedUpdateSearchParams({ page: newPage })
     }
   }
 
   function handleNext() {
     if (canGoForward) {
-      updateSearchParams({ page: currentPage + 1 })
+      const newPage = currentPage + 1
+      setPage(newPage)
+      debouncedUpdateSearchParams({ page: newPage })
     }
   }
 
   function handlePageChange(page: number) {
     if (page !== currentPage) {
+      setPage(page)
       updateSearchParams({ page })
     }
   }
