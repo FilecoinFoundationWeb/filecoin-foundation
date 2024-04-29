@@ -33,12 +33,14 @@ export function Heading({
   const Tag = tag
   const { component: icon, size } = iconProps ?? {}
 
-  className = clsx(variantStyles[variant], className)
+  const baseStyles = 'text-balance'
+
+  className = clsx(baseStyles, variantStyles[variant], className)
 
   if (icon) {
     return (
       <div className="inline-flex items-center gap-3">
-        <Icon component={icon} size={size} />
+        <Icon component={icon} color="brand-300" size={size} />
         <Tag className={className} {...rest}>
           {children}
         </Tag>
