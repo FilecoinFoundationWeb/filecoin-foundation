@@ -7,7 +7,10 @@ interface SearchInputProps {
   onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
-export function SearchInput({ searchQuery, onSearchChange }: SearchInputProps) {
+export function SearchInput({
+  searchQuery = '',
+  onSearchChange,
+}: SearchInputProps) {
   return (
     <div className="w-full max-w-lg lg:max-w-xs">
       <label htmlFor="search" className="sr-only">

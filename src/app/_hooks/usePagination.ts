@@ -1,5 +1,3 @@
-import { useMemo } from 'react'
-
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { validatePageNumber } from '@/utils/validatePageNumber'
@@ -15,18 +13,14 @@ export function usePagination({
   entriesPerPage,
   pageQuery,
 }: UsePaginationProps) {
-  const pageCount = useMemo(
-    () => Math.ceil(totalEntries / entriesPerPage),
-    [totalEntries, entriesPerPage],
-  )
+  const pageCount = Math.ceil(totalEntries / entriesPerPage)
+  let currentPage
 
-  const currentPage = useMemo(() => {
-    if (Array.isArray(pageQuery)) {
-      return validatePageNumber(pageQuery[0], pageCount)
-    }
-
-    return validatePageNumber(pageQuery, pageCount)
-  }, [pageQuery, pageCount])
+  if (Array.isArray(pageQuery)) {
+    currentPage = validatePageNumber(pageQuery[0], pageCount)
+  } else {
+    currentPage = validatePageNumber(pageQuery, pageCount)
+  }
 
   return { currentPage, pageCount }
 }
