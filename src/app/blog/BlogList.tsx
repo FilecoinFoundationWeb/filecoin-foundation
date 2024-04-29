@@ -69,17 +69,17 @@ export function BlogList({ posts, pageQuery, searchQuery }: BlogListProps) {
                 <Card
                   key={post.slug}
                   title={title}
+                  description={description}
+                  image={{ url: image?.url, alt: image?.alt }}
+                  textIsClamped={true}
                   metaData={[
                     ...(publishedOn ? [formatDate(publishedOn)] : []),
                     ...(post.category ? [post.category] : []),
                   ]}
-                  description={description}
                   cta={{
                     href: `${PATHS.BLOG.path}/${slug}`,
                     text: 'Read Post',
                   }}
-                  image={{ url: image?.url, alt: image?.alt }}
-                  textIsClamped={true}
                 />
               )
             })}
