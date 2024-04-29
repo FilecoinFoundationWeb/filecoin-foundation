@@ -1,14 +1,22 @@
 import { Heading } from '@/components/Heading'
 
 export type GrantsApplicationProcessCardProps = {
-  title: string
   step: number
-  description?: string
+  title: string
+  description: string
   as?: React.ElementType
 }
 
-type BadgeNumberProps = {
+type NumberBadgeProps = {
   number: number
+}
+
+function NumberBadge({ number }: NumberBadgeProps) {
+  return (
+    <div className="grid size-11 place-items-center rounded-full bg-blue-500">
+      <span className="text-2xl font-bold">{number}</span>
+    </div>
+  )
 }
 
 export function GrantsApplicationProcessCard({
@@ -18,24 +26,16 @@ export function GrantsApplicationProcessCard({
   as: Tag = 'li',
 }: GrantsApplicationProcessCardProps) {
   return (
-    <Tag className="space-y-4">
-      <BadgeNumber number={step} />
+    <Tag className="space-y-6">
+      <NumberBadge number={step} />
 
-      <Heading tag="h3" variant="lg">
-        {title}
-      </Heading>
+      <div className="space-y-4">
+        <Heading tag="h3" variant="lg">
+          {title}
+        </Heading>
 
-      <p>{description}</p>
+        <p>{description}</p>
+      </div>
     </Tag>
-  )
-}
-
-function BadgeNumber({ number }: BadgeNumberProps) {
-  return (
-    <div className="flex h-11 w-[45px] items-center justify-center rounded-full bg-blue-500">
-      <span className="flex h-7 w-[29px] items-center justify-center text-2xl font-bold">
-        {number}
-      </span>
-    </div>
   )
 }

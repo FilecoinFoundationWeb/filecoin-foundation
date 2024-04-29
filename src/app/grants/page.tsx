@@ -86,6 +86,7 @@ export default function Grants() {
         <CardLayout type="grants">
           {applicationProcessData.map((card) => {
             const { step, title, description } = card
+
             return (
               <GrantsApplicationProcessCard
                 key={card.title}
