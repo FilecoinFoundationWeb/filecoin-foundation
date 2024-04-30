@@ -1,6 +1,7 @@
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
+import { GrantsApplicationProcessCard } from '@/components/GrantsApplicationProcessCard'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -17,6 +18,7 @@ import { attributes } from '@/content/pages/grants.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
+import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 
@@ -75,6 +77,26 @@ export default function Grants() {
 
       <PageSection kicker="Past Examples" title="Grant Graduates">
         <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
+      </PageSection>
+
+      <PageSection
+        kicker="Application Process"
+        title="The Filecoin Grants Process"
+      >
+        <CardLayout type="grants">
+          {applicationProcessData.map((card) => {
+            const { step, title, description } = card
+
+            return (
+              <GrantsApplicationProcessCard
+                key={card.title}
+                step={step}
+                title={title}
+                description={description}
+              />
+            )
+          })}
+        </CardLayout>
       </PageSection>
 
       <PageSection

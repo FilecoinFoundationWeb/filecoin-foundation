@@ -1,11 +1,21 @@
+import { useMemo } from 'react'
+
 import { WebPage, WithContext } from 'schema-dts'
 
+import { usePagination } from '@/hooks/usePagination'
+
+import { BlogSearchInput } from '@/components/BlogSearchInput'
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
+import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { Pagination } from '@/components/Pagination'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostData } from '@/types/blogPostTypes'
+import { NextServerSearchParams } from '@/types/searchParams'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
@@ -19,9 +29,8 @@ import {
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
+import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 import { BASE_URL } from '@/constants/siteMetadata'
-
-import { BlogClient } from './BlogClient'
 
 const { featured_post: featuredPostSlug, seo } = attributes
 
@@ -75,10 +84,44 @@ function getMetaDataContent(post: BlogPostData) {
   return metaDataContent
 }
 
-export default function Blog() {
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+const POSTS_PER_PAGE = 20
+
+const sortedPosts = [...posts].sort((a, b) => {
+  if (!a.publishedOn || !b.publishedOn) return 0
+  return new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
+})
+
+export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
     throw new Error('Featured post not found')
   }
+
+  const cleanSearchQuery = searchParams[SEARCH_KEY]
+    ? searchParams[SEARCH_KEY].toString().toLowerCase()
+    : ''
+
+  const filteredAndSortedPosts = useMemo(() => {
+    return sortedPosts.filter((post) =>
+      post.title.toLowerCase().includes(cleanSearchQuery),
+    )
+  }, [cleanSearchQuery])
+
+  const { currentPage, pageCount } = usePagination({
+    totalEntries: filteredAndSortedPosts.length,
+    entriesPerPage: POSTS_PER_PAGE,
+    pageQuery: searchParams[PAGE_KEY],
+  })
+
+  const firstPostIndex = (currentPage - 1) * POSTS_PER_PAGE
+  const lastPostIndex = currentPage * POSTS_PER_PAGE
+
+  const paginatedPosts = useMemo(() => {
+    return filteredAndSortedPosts.slice(firstPostIndex, lastPostIndex)
+  }, [filteredAndSortedPosts, firstPostIndex, lastPostIndex])
 
   return (
     <PageLayout>
@@ -100,7 +143,41 @@ export default function Blog() {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogClient posts={posts} />
+        <BlogSearchInput searchQuery={cleanSearchQuery} />
+
+        {filteredAndSortedPosts.length === 0 ? (
+          <NoResultsMessage />
+        ) : (
+          <>
+            <CardLayout type="blogPost">
+              {paginatedPosts.map((post) => {
+                const { image, title, description, slug, publishedOn } = post
+
+                return (
+                  <Card
+                    key={post.slug}
+                    title={title}
+                    description={description}
+                    image={{ url: image?.url, alt: image?.alt }}
+                    textIsClamped={true}
+                    metaData={[
+                      ...(publishedOn ? [formatDate(publishedOn)] : []),
+                      ...(post.category ? [post.category] : []),
+                    ]}
+                    cta={{
+                      href: `${PATHS.BLOG.path}/${slug}`,
+                      text: 'Read Post',
+                    }}
+                  />
+                )
+              })}
+            </CardLayout>
+
+            <div className="mx-auto mt-1 sm:mt-6">
+              <Pagination pageCount={pageCount} currentPage={currentPage} />
+            </div>
+          </>
+        )}
       </PageSection>
     </PageLayout>
   )
