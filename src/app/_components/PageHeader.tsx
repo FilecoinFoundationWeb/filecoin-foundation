@@ -4,6 +4,8 @@ import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Meta } from '@/components/Meta'
 
+import setDescriptionParagraph from '@/utils/setDescriptionParagraph'
+
 import { Badge } from './Badge'
 
 type CTAProps = {
@@ -12,7 +14,7 @@ type CTAProps = {
   icon?: React.ReactNode
 }
 
-type ImageProps = {
+export type ImageProps = {
   url: string
   alt: string
 }
@@ -27,8 +29,6 @@ type PageHeaderProps = {
   isFeatured?: boolean
 }
 
-type DescriptionProp = string | string[]
-
 export function PageHeader({
   title,
   description,
@@ -38,18 +38,6 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  function setDescriptionParagraph(description: DescriptionProp) {
-    if (Array.isArray(description)) {
-      return (
-        <div className="space-y-4">
-          {description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-      )
-    }
-    return <p>{description}</p>
-  }
   return (
     <header className="flex flex-col gap-6 md:flex-row">
       <div className="flex flex-col gap-4 md:w-1/2">
