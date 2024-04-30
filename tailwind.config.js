@@ -15,6 +15,26 @@ module.exports = {
           800: '#08072e',
         },
       },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': theme('colors.brand.100'),
+            '--tw-prose-headings': theme('colors.brand.100'),
+            '--tw-prose-bold': theme('colors.brand.100'),
+            '--tw-prose-links': theme('colors.brand.300'),
+            '--tw-prose-quotes': theme('colors.brand.100'),
+            '--tw-prose-counters': theme('colors.brand.100'),
+            '--tw-prose-bullets': theme('colors.brand.100'),
+
+            a: {
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require('@tailwindcss/typography')],
