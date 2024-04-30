@@ -8,7 +8,7 @@ export function sortEntriesByDate<T extends SortableByDate>(
   entries: T[],
   sortType: SortType,
 ): T[] {
-  return entries.slice().sort((a, b) => {
+  return [...entries].sort((a, b) => {
     const dateA = new Date(a.startDate)
     const dateB = new Date(b.startDate)
 
