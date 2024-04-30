@@ -144,7 +144,6 @@ If you need to add or remove content from a page or a section, like a subtitle o
 1. Add the new content in the markdown file, e.g., a `subtitle` in the header of `src/content/pages/home.md`.
 2. Update `public/admin/config.yml` to reflect this addition under the appropriate section, for example:
 
-_If you only do step 1, you will still be able to see the change in your code, but it will not be reflected in the Decap dashboard for the content team._
 
 ```yaml
 # collections -> name: "pages” -> name: "home”
