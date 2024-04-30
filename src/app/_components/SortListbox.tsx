@@ -21,7 +21,7 @@ type SortListboxProps = {
   onSortTypeChange: (selectedOption: SortType) => void
 }
 
-export const sortSettings: SortSetting[] = [
+const sortSettings: SortSetting[] = [
   { id: SortType.Newest, name: 'Newest' },
   { id: SortType.Oldest, name: 'Oldest' },
 ]
@@ -36,7 +36,7 @@ export function SortListbox({ onSortTypeChange }: SortListboxProps) {
 
   return (
     <Listbox value={selectedSortType} onChange={handleChange}>
-      {({ open }) => (
+      {() => (
         <>
           <Listbox.Button className="border-1 inline-flex items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100 sm:min-w-40">
             <div className="inline-flex items-center gap-2">
@@ -58,7 +58,7 @@ export function SortListbox({ onSortTypeChange }: SortListboxProps) {
                 {({ active, selected }) => (
                   <li
                     className={clsx(
-                      'flex items-center justify-between gap-12 px-5 py-2',
+                      'flex cursor-default items-center justify-between gap-12 px-5 py-2',
                       { 'bg-brand-700': active, 'bg-transparent': !active },
                     )}
                   >
