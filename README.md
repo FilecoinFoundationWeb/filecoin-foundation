@@ -139,7 +139,7 @@ The website should hot reload and changes should appear immediately in your loca
 
 **Adding or Removing Content**
 
-If you need to add or remove content from a page or a section, like a new subtitle on the home page, then Decap must know about it. Hence, you need to update both the markdown and the configuration file.
+If you need to add or remove content from a page or a section, like a subtitle on the home page, then Decap CMS must know about it. Hence, you need to update both the Markdown and the configuration file.
 
 1. Add the new content in the markdown file, e.g., a `subtitle` in the header of `src/content/pages/home.md`.
 2. Update `public/admin/config.yml` to reflect this addition under the appropriate section, for example:
