@@ -17,7 +17,7 @@ export type CardProps = {
     icon?: React.ReactNode
     ariaLabel?: string
   }
-  entryType?: 'blogPost' | 'caseStudy'
+  entryType?: 'blogPost'
   image?: {
     url: string
     alt: string
@@ -37,8 +37,6 @@ const borderStyles = {
 const imageSizes = {
   blogPost:
     '(max-width: 639px) 320px, (max-width: 767px) 584px, (max-width: 1023px) 712px, (max-width: 1279px) 472px, 500px',
-  caseStudy:
-    '(max-width: 639px) 320px, (max-width: 767px) 276px, (max-width: 1023px) 340px, 200px',
 }
 
 export function Card({

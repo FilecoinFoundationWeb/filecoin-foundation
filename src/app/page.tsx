@@ -10,7 +10,6 @@ import {
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
-import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { Heading } from '@/components/Heading'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -162,16 +161,7 @@ export default function Home() {
         kicker="Learn"
         title="Use Cases"
         description="Learn about projects building on and using Filecoin."
-      >
-        <FeaturedCaseStudies />
-        <Button
-          className="sm:self-center"
-          variant="primary"
-          href={PATHS.CASE_STUDIES.path}
-        >
-          View All
-        </Button>
-      </PageSection>
+      />
 
       <PageSection
         kicker="Stay Updated"
