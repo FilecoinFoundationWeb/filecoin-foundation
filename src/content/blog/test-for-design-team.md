@@ -16,15 +16,19 @@ metadata: null
 
 # Text 1: Lorem Ipsum Dolor Sit Amet
 
+Filecoin is the world’s largest decentralized storage network, designed to store humanity's most important information. And it’s made up of an amazing array of builders and storage providers committing their time, energy, expertise and resources to the network. Today, the ecosystem includes more than 14,700 contributors on GitHub, 3,050 projects built on Filecoin and IPFS, and over 450 organizations contributing to the network.
+
 ## Text 2: Lorem Ipsum Dolor Sit Amet
 
-### Text 3: Lorem Ipsum Dolor Sit Amet
+Filecoin is the world’s largest decentralized storage network, designed to store humanity's most important information. And it’s made up of an amazing array of builders and storage providers committing their time, energy, expertise and resources to the network. Today, the ecosystem includes more than 14,700 contributors on GitHub, 3,050 projects built on Filecoin and IPFS, and over 450 organizations contributing to the network.
 
-#### Text 4: Lorem Ipsum Dolor Sit Amet
+### Text 3: Lorem Ipsum Dolor Sit Amet
 
 Filecoin is the world’s largest decentralized storage network, designed to store humanity's most important information. And it’s made up of an amazing array of builders and storage providers committing their time, energy, expertise and resources to the network. Today, the ecosystem includes more than 14,700 contributors on GitHub, 3,050 projects built on Filecoin and IPFS, and over 450 organizations contributing to the network.
 
 Enter the Filecoin Ecosystem Explorer, a crowd-sourced and open database that showcases the incredible breadth and depth of projects in the Filecoin ecosystem. This is the best place for community members to add to or browse the ever-growing list of products and services running on Filecoin. While this is not an exhaustive list, given the network’s dynamic growth, the database serves as a launching pad for exploring the ecosystem.
+
+#### Text 4: Lorem Ipsum Dolor Sit Amet
 
 A few highlights:
 
@@ -32,13 +36,11 @@ A few highlights:
 - The [SETI](https://www.bacalhau.org/) Institute is a non-profit research organization with the mission to lead humanity's quest to understand the origins and prevalence of life and intelligence in the universe and share that knowledge with the world. In their continuing search for extraterrestrial life, the SETI Institute uses Filecoin to safeguard their data and is storing 60+ GiBs of data, including a decoded ET transmission.
 - [Banyan](<(https://www.bacalhau.org/)>) is making decentralized, content-addressed storage accessible for enterprise clients on the Filecoin network, with a focus on user-controlled privacy and verifiability. The company provides both hot and cold storage options for users with significant amounts of data, leveraging both Filecoin’s network of storage providers and its cryptographic proofs of storage to give users confidence in the continued security and longevity of their data.
 
-### Text Emphasis
+#### Text Emphasis
 
-**This is bold word.** This is not a bold word.
+**This is a bold word.** This is not a bold word. **This is a bold word.** This is not a bold word. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-_This is an italic word._ This is not an italic word.
-
-### Lists
+_This is an italic word._ This is not an italic word. _This is an italic word._ This is not an italic word. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 #### Unordered List
 
@@ -54,11 +56,11 @@ _This is an italic word._ This is not an italic word.
 2. Second item: lorem ipsum dolor sit amet, consectetur adipiscing elit.
 3. Third item: lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-### Links
+#### Links
 
-This is a link to [GitHub](https://github.com), if you want to see it in action.
+This is a link to [GitHub](https://github.com), if you want to see it in action. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-### Iframes
+#### Iframes
 
 <iframe
   width="100%"
@@ -69,7 +71,7 @@ This is a link to [GitHub](https://github.com), if you want to see it in action.
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1552122538&color=%23193396&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
 </iframe>
 
-### Video
+#### Video
 
 <iframe
   width="560"
@@ -81,11 +83,21 @@ This is a link to [GitHub](https://github.com), if you want to see it in action.
   allowfullscreen
 ></iframe>
 
-### Image
+#### Image
 
 ![](/assets/images/64423bf3ba15285b944f316f_0-rcya83ml5udpq_ji.png)
 
-### Blockquotes
+#### Blockquotes
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
+
+#### Code
+
+```javascript
+const myFunction = () => {
+  console.log("Hello, world!")
+}
+```
+
+And this is some inline code: `console.log('Hello, world!');`
