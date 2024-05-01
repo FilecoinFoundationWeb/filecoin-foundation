@@ -1,7 +1,6 @@
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
-import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -11,6 +10,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
+import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
@@ -97,14 +97,14 @@ export default function Governance() {
         </article>
       </section>
 
-      <PageSectionWithImage
+      <PageSection
         kicker="About"
         title="Understanding Governance"
         description={[
           'In the Filecoin ecosystem – which is decentralized and open source – governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol.',
           'The Foundation’s role includes developing and implementing processes and policies for decision-making and managing community engagement and feedback – all to support the development of the ecosystem at large. ',
         ]}
-      ></PageSectionWithImage>
+      />
 
       <section>
         <Heading tag="h2" variant="xl">

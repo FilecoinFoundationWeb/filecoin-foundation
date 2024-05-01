@@ -4,6 +4,8 @@ import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Meta } from '@/components/Meta'
 
+import { ImageProps } from '@/types/sharedProps/imageType'
+
 import setDescriptionParagraph from '@/utils/setDescriptionParagraph'
 
 import { Badge } from './Badge'
@@ -12,11 +14,6 @@ type CTAProps = {
   href: string
   text: string
   icon?: React.ReactNode
-}
-
-export type ImageProps = {
-  url: string
-  alt: string
 }
 
 type PageHeaderProps = {
