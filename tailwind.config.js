@@ -25,6 +25,7 @@ module.exports = {
             '--tw-prose-quotes': theme('colors.brand.100'),
             '--tw-prose-counters': theme('colors.brand.100'),
             '--tw-prose-bullets': theme('colors.brand.100'),
+            '--tw-prose-code': theme('colors.brand.100'),
 
             a: {
               textDecoration: 'none',
