@@ -1,5 +1,4 @@
 import { CardLayout } from '@/components/CardLayout'
-import { GovernanceDocsCard } from '@/components/GovernanceDocsCard'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -14,10 +13,11 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
+import { HomeExploreSectionCard } from '@/_components/HomeExploreSectionCard'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { governanceDocs } from './data/governanceDocsData'
+import { governanceDocsData } from './data/governanceDocsData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GOVERNANCE.path)
@@ -43,11 +43,11 @@ export default function Governance() {
 
       <PageSection kicker="Learn More" title="Quickstart">
         <CardLayout type="governance">
-          {governanceDocs.map((card) => {
+          {governanceDocsData.map((card) => {
             const { heading, description, cta } = card
 
             return (
-              <GovernanceDocsCard
+              <HomeExploreSectionCard
                 key={heading.title}
                 cta={cta}
                 heading={{
@@ -60,7 +60,7 @@ export default function Governance() {
                 }}
               >
                 {description}
-              </GovernanceDocsCard>
+              </HomeExploreSectionCard>
             )
           })}
         </CardLayout>

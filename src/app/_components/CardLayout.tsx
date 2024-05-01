@@ -22,7 +22,7 @@ export function CardLayout({
     default: 'lg:grid-cols-3',
     blogPost: 'lg:grid-cols-2 lg:grid-rows-2',
     caseStudy: 'md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2',
-    governance: 'grid-cols-1 sm:grid-cols-2',
+    governance: 'grid-cols-1 sm:grid-cols-2 sm:gap-6',
     reports: 'lg:grid-cols-2 lg:grid-rows-2',
     grants: 'gap-7 sm:grid-cols-3 sm:gap-6',
   }

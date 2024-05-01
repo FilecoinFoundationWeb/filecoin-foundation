@@ -1,8 +1,8 @@
 import { GithubLogo, File } from '@phosphor-icons/react/dist/ssr'
 
-import { PATHS } from '@/_constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-export const governanceDocs = [
+export const governanceDocsData = [
   {
     heading: {
       title: 'GovDocs',
@@ -11,7 +11,7 @@ export const governanceDocs = [
     description:
       'Discover the fundamentals of Filecoin network governance and how the community drives the evolution of the network.',
     cta: {
-      href: PATHS.ECOSYSTEM.path,
+      href: FILECOIN_FOUNDATION_URLS.social.github.href,
       text: 'Learn More',
     },
   },
@@ -23,7 +23,7 @@ export const governanceDocs = [
     description:
       'Deep dive into the Filecoin Improvement Proposal (FIP) process, including proposals, discussions, and technical documentation.',
     cta: {
-      href: 'https://docs.filecoin.io',
+      href: FILECOIN_FOUNDATION_URLS.social.github.href,
       text: 'Learn More',
     },
   },
