@@ -19,7 +19,8 @@ export type CardProps = {
   cta?: CTAProps
   entryType?: 'blogPost' | 'featuredEcosystemProject'
   image?: ImageProps
-  borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
+  borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
+
   textIsClamped?: boolean
   as?: React.ElementType
   children?: React.ReactNode
@@ -27,6 +28,7 @@ export type CardProps = {
 
 const borderStyles = {
   'brand-300': 'border-brand-300',
+  'brand-400': 'border-brand-400',
   'brand-500': 'border-brand-500',
   'brand-600': 'border-brand-600',
 }
@@ -108,7 +110,6 @@ export function Card({
             {description}
           </p>
         )}
-
         {cta && (
           <CustomLink
             href={cta.href}
