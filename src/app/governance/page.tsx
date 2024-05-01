@@ -1,7 +1,7 @@
+import { CTASection } from '@/components/CTASection'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
-import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -11,7 +11,11 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/governance.md'
 
 import { PATHS } from '@/constants/paths'
-import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_FOUNDATION_URLS,
+  FILECOIN_URLS,
+  FIL_PLUS_URLS,
+} from '@/constants/siteMetadata'
 
 const { header, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.GOVERNANCE.path)
@@ -185,25 +189,24 @@ export default function Governance() {
         </article>
       </section>
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Get Involved
-        </Heading>
-        <Social />
-        <p>Community governance calls happen every other Tuesday.</p>
-        <p>
-          Visit the{' '}
-          <TextLink href={PATHS.EVENTS.path}>
-            Filecoin community events hub
-          </TextLink>{' '}
-          and join the conversation in the{' '}
-          <TextLink href={FIL_PLUS_URLS.slack}>
-            #fil-plus Slack channel
-          </TextLink>
-          .
-        </p>
-        <TextLink href={PATHS.GET_INVOLVED.path}>Get Involved</TextLink>
-      </section>
+      <CTASection
+        title="Connect With Us"
+        description={
+          <>
+            To get involved, visit the{' '}
+            <TextLink href={FIL_PLUS_URLS.notary}>Governance GitHub</TextLink>,
+            join the conversation in the{' '}
+            <TextLink href={FILECOIN_URLS.social.slack.href}>
+              #fil-gov Slack channel
+            </TextLink>
+            , or follow{' '}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.social.twitter.href}>
+              @fil_gov
+            </TextLink>{' '}
+            on X.
+          </>
+        }
+      />
     </PageLayout>
   )
 }
