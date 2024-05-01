@@ -5,7 +5,6 @@ import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-import { UpcomingEvents } from '@/components/UpcomingEvents'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -180,13 +179,6 @@ export default function Governance() {
           .
         </p>
         <TextLink href={PATHS.GET_INVOLVED.path}>Get Involved</TextLink>
-      </section>
-
-      <section>
-        <Heading tag="h2" variant="xl">
-          Events & Hackathons
-        </Heading>
-        <UpcomingEvents />
       </section>
     </PageLayout>
   )

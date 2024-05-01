@@ -1,6 +1,5 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import { EventsList } from '@/components/EventsList'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -15,8 +14,10 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/events.md'
 
-import { BASE_URL } from '@/_constants/siteMetadata'
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
+
+import { EventsClient } from './EventsClient'
 
 const { featured_post: featuredEventSlug, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
@@ -90,7 +91,7 @@ export default function Events() {
       />
 
       <PageSection kicker="Events" title="All Events">
-        <EventsList events={events} />
+        <EventsClient events={events} />
       </PageSection>
     </PageLayout>
   )
