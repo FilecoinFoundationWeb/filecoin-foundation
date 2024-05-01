@@ -100,16 +100,16 @@ export function Card({
           title
         )}
 
-        {description && (
-          <p
-            className={clsx(
-              'mb-10 mt-3',
-              textIsClamped && 'line-clamp-3 text-ellipsis',
-            )}
-          >
-            {description}
-          </p>
-        )}
+        <div className="mb-10 mt-3">
+          {description && (
+            <p
+              className={clsx({ 'line-clamp-3 text-ellipsis': textIsClamped })}
+            >
+              {description}
+            </p>
+          )}
+        </div>
+
         {cta && (
           <CustomLink
             href={cta.href}
