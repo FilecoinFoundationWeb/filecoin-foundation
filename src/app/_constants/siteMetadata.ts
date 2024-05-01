@@ -18,6 +18,9 @@ const FILECOIN_FOUNDATION_URLS = {
     submitOrUpdateProjectForm:
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
   },
+  events: {
+    sponsorShipsEmail: 'mailto:sponsorships@fil.org',
+  },
   email: 'mailto:hello@fil.org',
   governance: {
     docs: '#',
