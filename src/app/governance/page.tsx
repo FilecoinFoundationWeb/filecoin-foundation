@@ -1,5 +1,6 @@
 import { CardLayout } from '@/components/CardLayout'
 import { Heading } from '@/components/Heading'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -12,7 +13,6 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
-import { HomeExploreSectionCard } from '@/_components/HomeExploreSectionCard'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
