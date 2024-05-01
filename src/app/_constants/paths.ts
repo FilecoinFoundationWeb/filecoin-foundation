@@ -1,13 +1,11 @@
 export type BlogPostPath = `/blog/${string}`
-export type CaseStudyPath = `/case-studies/${string}`
 export type EventPath = `/events/${string}`
 
-export type DynamicPathValues = BlogPostPath | CaseStudyPath | EventPath
+export type DynamicPathValues = BlogPostPath | EventPath
 
 export type PathValues =
   | '/about'
   | '/blog'
-  | '/case-studies'
   | '/ecosystem'
   | '/events'
   | '/get-involved'
@@ -24,7 +22,7 @@ export interface PathConfig {
   entriesContentPath?: string
 }
 
-const CONTENT_ROOT = 'src/content'
+export const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
 function createPathObject(
@@ -48,7 +46,6 @@ function createPathObject(
 export const PATHS = {
   ABOUT: createPathObject('/about', 'About'),
   BLOG: createPathObject('/blog', 'News & Blog', true),
-  CASE_STUDIES: createPathObject('/case-studies', 'Case Studies', true),
   ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem', true),
   EVENTS: createPathObject('/events', 'Events', true),
   GET_INVOLVED: createPathObject('/get-involved', 'Get Involved'),
