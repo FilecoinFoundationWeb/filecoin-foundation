@@ -45,6 +45,10 @@ export function GovernanceCalendarCard({
   const { time } = extractTimeFromISO(startDate)
   const endTime = addMinutesToISO(startDate, durationInMinutes)
 
+  if (!startDate) {
+    return
+  }
+
   return (
     <Tag className="flex flex-col gap-6 rounded-md border border-blue-500 p-4 sm:flex-row">
       <Calendar startDate={startDate} />
@@ -54,12 +58,13 @@ export function GovernanceCalendarCard({
           <Heading tag="h3" variant="lg">
             {title}
           </Heading>
-          <p className="flex w-max items-center gap-1 rounded-lg border border-blue-100 px-1 py-[2px] text-xs uppercase">
+
+          <div className="flex w-max items-center gap-1 rounded-lg border border-blue-100 px-1 py-[2px] text-xs uppercase">
             <Clock size={13} />
             <span className="mb-[-1px]">
               UTC {time} - {endTime}
             </span>
-          </p>
+          </div>
         </div>
         <TextLink className="flex gap-1 text-base" href={cta.url}>
           <CalendarBlank size={24} />

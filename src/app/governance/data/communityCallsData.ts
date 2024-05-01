@@ -1,8 +1,8 @@
 export const communityCallsData = [
   {
     title: 'Community Governance Calls',
-    startDate: '2022-06-08T16:40:10.000Z',
-    durationInMinutes: 30,
+    startDate: '',
+    durationInMinutes: 0,
     cta: {
       url: '',
       text: 'Add to Calendar',
