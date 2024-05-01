@@ -10,6 +10,7 @@ import {
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
+import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
 import { Heading } from '@/components/Heading'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -159,9 +160,11 @@ export default function Home() {
 
       <PageSection
         kicker="Learn"
-        title="Use Cases"
-        description="Learn about projects building on and using Filecoin."
-      />
+        title="Filecoin Use Cases"
+        description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
+      >
+        <FeaturedEcosystemProjects />
+      </PageSection>
 
       <PageSection
         kicker="Stay Updated"
