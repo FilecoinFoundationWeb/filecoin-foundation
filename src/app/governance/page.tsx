@@ -13,7 +13,6 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
-import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
