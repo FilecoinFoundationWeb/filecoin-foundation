@@ -101,7 +101,7 @@ export default function About() {
               cta={{
                 href: linkedin,
                 text: 'LinkedIn',
-                icon: <LinkedinLogo size={24} aria-hidden={true} />,
+                icon: LinkedinLogo,
                 ariaLabel: `Visit ${name}'s LinkedIn profile.`,
               }}
             />
@@ -123,7 +123,7 @@ export default function About() {
               cta={{
                 href: linkedin,
                 text: 'LinkedIn',
-                icon: <LinkedinLogo size={24} aria-hidden={true} />,
+                icon: LinkedinLogo,
                 ariaLabel: `Visit ${name}'s LinkedIn profile`,
               }}
             />
@@ -146,7 +146,7 @@ export default function About() {
                 cta={{
                   href: link,
                   text: 'View Report',
-                  icon: <Files />,
+                  icon: Files,
                 }}
               />
             </div>
