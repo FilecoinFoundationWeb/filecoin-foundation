@@ -289,7 +289,7 @@ const aboutPageStructuredData: WithContext<WebPage> = {
 
 1. **Testing**: Ensure that tests are added to verify the presence of metadata and structured data on the new page. These tests are crucial for maintaining the integrity of the site's SEO and ensuring that all pages meet our standards for content visibility.
 
-2. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, case studies, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
+2. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
 
 Following these guidelines helps ensure that our website remains consistent, accessible, and search engine friendly.
 
