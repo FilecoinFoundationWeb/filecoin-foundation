@@ -1,4 +1,5 @@
-import { Metadata } from '@/types/metadataTypes'
+import { type Metadata } from '@/types/metadataTypes'
+import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type BlogPostData = {
   slug: string
@@ -9,10 +10,7 @@ export type BlogPostData = {
   featured?: boolean
   category?: string
   description: string
-  image: {
-    url: string
-    alt: string
-  }
+  image: ImageProps
   content?: string
   recommendedPosts?: string[]
   metadata?: Metadata

@@ -1,4 +1,5 @@
-import { Metadata } from '@/types/metadataTypes'
+import { type Metadata } from '@/types/metadataTypes'
+import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type EcosystemProjectData = {
   title: string
@@ -11,10 +12,7 @@ export type EcosystemProjectData = {
   topic: string
   tags: string[]
   tech: string[]
-  image: {
-    url: string
-    alt: string
-  }
+  image: ImageProps
   website: string
   content?: string
   featuredContent?: string
