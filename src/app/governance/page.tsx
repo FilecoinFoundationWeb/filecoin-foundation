@@ -13,6 +13,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
+import { PageSection } from '@/_components/PageSection'
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
@@ -101,39 +102,14 @@ export default function Governance() {
         </article>
       </section>
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Security
-        </Heading>
-        <p>
-          Filecoin is a decentralized storage network for humanity’s most
-          important information, so ensuring the network is secure and trustable
-          is paramount to its success.
-        </p>
-        <p>
-          Building a strong security culture in the Filecoin project has been
-          one of our core goals from the beginning of the project— creating
-          cutting edge, well-researched, and carefully evaluated mathematical
-          proofs has set the foundation for the critical operations executed in
-          the Filecoin Protocol.
-        </p>
-        <p>
-          Building a culture of strong security habits, secure code development
-          and testing, through working with multiple external security
-          specialists, auditors, and researchers to audit our code and
-          practices.
-        </p>
-        <p>
-          Building a secure network goes beyond rigorous testing and auditing.
-          Working together with the security community creates a more secure and
-          stable future for the Filecoin network.
-        </p>
-        <p>
-          The Filecoin Bug Bounty Program rewards individuals who find and
-          report vulnerabilities in the Filecoin network. Anyone can
-          participate. Learn more.
-        </p>
-      </section>
+      <PageSection
+        kicker="About"
+        title="Understanding Governance"
+        description={[
+          'In the Filecoin ecosystem – which is decentralized and open source – governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol.',
+          'The Foundation’s role includes developing and implementing processes and policies for decision-making and managing community engagement and feedback – all to support the development of the ecosystem at large. ',
+        ]}
+      />
 
       <PageSection kicker="Upcoming Events" title="Community Calls">
         <CardLayout type="blogPost">
