@@ -1,5 +1,4 @@
 import {
-  ArrowUpRight,
   Code,
   HardDrives,
   MagnifyingGlass,
@@ -118,7 +117,6 @@ export default function Home() {
         secondaryCta={{
           href: FILECOIN_URLS.site,
           text: 'Dive Into the Filecoin Protocol',
-          icon: <ArrowUpRight size={24} weight="bold" />,
         }}
       />
 
