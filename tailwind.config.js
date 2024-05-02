@@ -66,6 +66,9 @@ module.exports = {
           },
         },
       }),
+      maxWidth: {
+        readable: '60ch',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
