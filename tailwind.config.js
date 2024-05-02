@@ -28,12 +28,17 @@ module.exports = {
             '--tw-prose-bullets': theme('colors.brand.100'),
             '--tw-prose-code': theme('colors.brand.100'),
             '--tw-prose-pre-bg': theme('colors.brand.700'),
-            '--tw-prose-pre-code': theme('colors.brand.300'),
+            '--tw-prose-pre-code': theme('colors.brand.100'),
 
             a: {
               textDecoration: 'none',
               '&:hover': {
                 textDecoration: 'underline',
+              },
+              '&:focus, &:focus-visible': {
+                outlineWidth: 2,
+                outlineStyle: 'solid',
+                outlineColor: theme('colors.brand.100'),
               },
             },
 
@@ -51,10 +56,6 @@ module.exports = {
 
             iframe: {
               width: '100%',
-
-              '&::focus-visible': {
-                outline: 'none',
-              },
             },
 
             'iframe[src*="youtube.com"]': {
