@@ -1,12 +1,14 @@
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
+import {
+  type DescriptionTextType,
+  DescriptionText,
+} from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Meta } from '@/components/Meta'
 
 import { ImageProps } from '@/types/sharedProps/imageType'
-
-import setDescriptionParagraph from '@/utils/setDescriptionParagraph'
 
 import { Badge } from './Badge'
 
@@ -18,7 +20,7 @@ type CTAProps = {
 
 type PageHeaderProps = {
   title: string
-  description: string | string[]
+  description: DescriptionTextType
   cta: CTAProps
   secondaryCta?: CTAProps
   image?: ImageProps
@@ -47,7 +49,7 @@ export function PageHeader({
             <Meta metaData={metaData} />
           </span>
         )}
-        {setDescriptionParagraph(description)}
+        <DescriptionText>{description}</DescriptionText>
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
           <Button href={cta.href} variant="primary" className="flex-1">
             {cta.text}
