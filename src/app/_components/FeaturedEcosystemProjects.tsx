@@ -3,27 +3,24 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { shuffleArray } from '@/utils/shuffleArray'
+import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { PATHS } from '@/constants/paths'
 
-const ecosystemProjects = getEcosystemProjectsData()
-const FEATURED_PROJETS_LIMIT = 6
+type FeaturedEcosystemProjectsProps = {
+  ecosystemProjects: EcosystemProjectData[]
+}
 
-export function FeaturedEcosystemProjects() {
-  const featuredEcosystemProjects = shuffleArray(ecosystemProjects).slice(
-    0,
-    FEATURED_PROJETS_LIMIT,
-  )
-
-  if (featuredEcosystemProjects.length < FEATURED_PROJETS_LIMIT) {
-    return <p>No featured projects available.</p>
+export function FeaturedEcosystemProjects({
+  ecosystemProjects,
+}: FeaturedEcosystemProjectsProps) {
+  if (ecosystemProjects.length === 0) {
+    return <p>No featured ecosystem projects available.</p>
   }
 
   return (
     <CardLayout>
-      {featuredEcosystemProjects.map(({ slug, title, description, image }) => (
+      {ecosystemProjects.map(({ slug, title, description, image }) => (
         <Card
           key={slug}
           title={title}

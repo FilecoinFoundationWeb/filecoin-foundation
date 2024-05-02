@@ -19,13 +19,24 @@ import { PageSection } from '@/components/PageSection'
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-const { header, seo } = attributes
+const {
+  featured_ecosystem_projects: featuredEcosystemProjectsSlugs,
+  header,
+  seo,
+} = attributes
+
+const ecosystemProjects = getEcosystemProjectsData()
+const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
+  featuredEcosystemProjectsSlugs?.includes(item.slug),
+)
+
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
 const filecoinSystemData = [
@@ -163,7 +174,16 @@ export default function Home() {
         title="Filecoin Use Cases"
         description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
       >
-        <FeaturedEcosystemProjects />
+        <FeaturedEcosystemProjects
+          ecosystemProjects={featuredEcosystemProjects}
+        />
+        <Button
+          className="sm:self-center"
+          variant="primary"
+          href={PATHS.ECOSYSTEM.path}
+        >
+          View All
+        </Button>
       </PageSection>
 
       <PageSection

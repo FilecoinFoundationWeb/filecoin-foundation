@@ -66,7 +66,7 @@ export function Card({
       )}
     >
       {image?.url && (
-        <div className="relative block aspect-video h-52">
+        <div className="relative block aspect-video">
           <Image
             fill
             src={image.url}
