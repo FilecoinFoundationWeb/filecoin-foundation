@@ -15,6 +15,9 @@ module.exports = {
           800: '#08072e',
         },
       },
+      maxWidth: {
+        readable: '60ch',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
