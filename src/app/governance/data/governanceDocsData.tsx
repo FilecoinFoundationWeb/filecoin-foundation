@@ -11,7 +11,7 @@ export const governanceDocsData = [
     description:
       'Discover the fundamentals of Filecoin network governance and how the community drives the evolution of the network.',
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.social.github.href,
+      href: FILECOIN_FOUNDATION_URLS.governance.docs,
       text: 'Learn More',
     },
   },
@@ -23,7 +23,7 @@ export const governanceDocsData = [
     description:
       'Deep dive into the Filecoin Improvement Proposal (FIP) process, including proposals, discussions, and technical documentation.',
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.social.github.href,
+      href: FILECOIN_FOUNDATION_URLS.governance.social.github.href,
       text: 'Learn More',
     },
   },

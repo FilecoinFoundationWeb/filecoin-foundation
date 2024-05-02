@@ -43,18 +43,22 @@ export default function Governance() {
       <PageSection kicker="Learn More" title="Quickstart">
         <CardLayout type="governance">
           {governanceDocsData.map((card) => {
-            const { heading, description, cta } = card
+            const {
+              heading: { title, icon },
+              description,
+              cta,
+            } = card
 
             return (
               <HomeExploreSectionCard
-                key={heading.title}
+                key={title}
                 cta={cta}
                 heading={{
                   tag: 'h3',
                   variant: 'lg',
-                  children: heading.title,
+                  children: title,
                   iconProps: {
-                    component: heading.icon,
+                    component: icon,
                   },
                 }}
               >
