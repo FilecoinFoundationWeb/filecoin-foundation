@@ -173,7 +173,7 @@ export default function Blog({ searchParams }: Props) {
               })}
             </CardLayout>
 
-            <div className="mx-auto mt-1 sm:mt-6">
+            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
               <Pagination pageCount={pageCount} currentPage={currentPage} />
             </div>
           </>
