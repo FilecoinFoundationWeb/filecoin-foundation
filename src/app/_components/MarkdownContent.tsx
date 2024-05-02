@@ -11,11 +11,11 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
   return (
     <ReactMarkdown
       rehypePlugins={[rehypeRaw]}
+      className="prose"
       components={{
         img: ({ src, alt }) => (
           <CustomImage src={src as string} alt={alt as string} />
         ),
-        p: ({ ...rest }) => <p className="mb-4 text-base" {...rest} />,
       }}
     >
       {children}
