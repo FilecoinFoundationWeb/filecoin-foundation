@@ -19,8 +19,8 @@ type PageSectionProps = {
 
 const containerClasses = (hasImage: Boolean) => {
   return hasImage
-    ? 'grid grid-cols-1 gap-6 sm:grid-cols-2'
-    : 'mb-6 max-w-[60ch]'
+    ? 'mb-6 grid grid-cols-1 gap-6 sm:grid-cols-2'
+    : 'mb-6 max-w-readable'
 }
 
 export function PageSection({
@@ -41,7 +41,7 @@ export function PageSection({
           {description && <DescriptionText>{description}</DescriptionText>}
         </div>
         {image && (
-          <div className="relative h-72 w-full sm:h-full">
+          <div className="relative min-h-72 w-full sm:h-full">
             <Image
               fill
               src={image.url}
