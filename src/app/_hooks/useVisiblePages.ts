@@ -79,24 +79,44 @@ function getVisiblePagesSmallRange(
   pageNumbers: Array<number>,
   currentPage: number,
   range: number,
-): Array<number> {
-  if (range === 1) return [currentPage]
+): Array<number | typeof ELLIPSIS> {
+  const firstPage = pageNumbers[0]
+  const lastPage = pageNumbers[pageNumbers.length - 1]
 
-  const firstPageIndex = pageNumbers.indexOf(pageNumbers[0])
-  const currentPageIndex = pageNumbers.indexOf(currentPage)
+  switch (range) {
+    case 1:
+      return [currentPage]
 
-  const firstPageOrBeforeCurrentIndex = Math.max(
-    firstPageIndex,
-    currentPageIndex - Math.floor(range / 2),
-  )
+    case 2:
+      if (currentPage === firstPage) {
+        return [currentPage, currentPage + 1]
+      } else {
+        return [currentPage - 1, currentPage]
+      }
 
-  const lastPageOrAfterCurrentIndex = Math.min(
-    pageNumbers.length,
-    currentPageIndex + Math.ceil(range / 2),
-  )
+    case 3:
+      if (currentPage === firstPage) {
+        return [firstPage, currentPage + 1, lastPage]
+      } else if (currentPage === lastPage) {
+        return [firstPage, currentPage - 1, lastPage]
+      } else {
+        return [firstPage, currentPage, lastPage]
+      }
 
-  return pageNumbers.slice(
-    Math.min(firstPageOrBeforeCurrentIndex, pageNumbers.length - range),
-    Math.max(lastPageOrAfterCurrentIndex, range),
-  )
+    case 4:
+      if (currentPage === firstPage) {
+        return [firstPage, currentPage + 1, ELLIPSIS, lastPage]
+      } else if (currentPage === lastPage) {
+        return [firstPage, ELLIPSIS, currentPage - 1, lastPage]
+      } else if (currentPage === lastPage - 1) {
+        return [firstPage, ELLIPSIS, currentPage, lastPage]
+      } else {
+        return [firstPage, currentPage, ELLIPSIS, lastPage]
+      }
+
+    default:
+      throw new Error(
+        'getVisiblePagesSmallRange does not support ranges of ' + range,
+      )
+  }
 }
