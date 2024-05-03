@@ -15,6 +15,8 @@ import siteMetaData from '@/content/shared/site-metadata.yml'
 
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import LayoutWrapper from './_components/LayoutWrapper'
+
 const { seo } = siteMetaData
 
 export const metadata: Metadata = {
@@ -32,20 +34,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-brand-800 px-6 pb-6 pt-8 text-brand-100">
-        <StructuredDataScript structuredData={baseOrganizationSchema} />
-        <NetlifyIdentityManager />
-        <Navigation />
+    <LayoutWrapper>
+      <StructuredDataScript structuredData={baseOrganizationSchema} />
+      <NetlifyIdentityManager />
+      <Navigation />
 
-        <main className="flex flex-grow flex-col gap-6">
-          <BreadCrumbs />
-          <div>{children}</div>
-        </main>
+      <main className="flex flex-grow flex-col gap-6">
+        <BreadCrumbs />
+        {children}
+      </main>
 
-        <Footer />
-        {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
-      </body>
-    </html>
+      <Footer />
+      {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
+    </LayoutWrapper>
   )
 }

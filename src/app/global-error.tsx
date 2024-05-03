@@ -1,6 +1,8 @@
 'use client'
 
+import ErrorMessage from '@/components/ErrorMessage'
 import { Footer } from '@/components/Footer'
+import LayoutWrapper from '@/components/LayoutWrapper'
 import { Navigation } from '@/components/Navigation'
 import { TextLink } from '@/components/TextLink'
 
@@ -8,22 +10,16 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export default function GlobalError() {
   return (
-    <html lang="en">
-      <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-brand-800 px-6 pb-6 pt-8 text-brand-100">
-        <Navigation />
-        <div className="m-auto flex max-w-xs flex-col gap-6 py-32 sm:items-center sm:text-center">
-          <span className="text-7xl">500</span>
-          <h2 className="text-3xl">Internal Server Error</h2>
-          <p>
-            Oops, something went wrong. Try to refresh this page or{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.email}>
-              contact us
-            </TextLink>{' '}
-            if the problem persists.
-          </p>
-        </div>
-        <Footer />
-      </body>
-    </html>
+    <LayoutWrapper>
+      <Navigation />
+      <ErrorMessage statusCode="500" title="Internal Server Error">
+        <p>
+          Oops, something went wrong. Try to refresh this page or{' '}
+          <TextLink href={FILECOIN_FOUNDATION_URLS.email}>contact us</TextLink>{' '}
+          if the problem persists.
+        </p>
+      </ErrorMessage>
+      <Footer />
+    </LayoutWrapper>
   )
 }
