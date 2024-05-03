@@ -3,35 +3,49 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'lh7-us.googleusercontent.com'
-      }
-    ]
+        hostname: 'lh7-us.googleusercontent.com',
+      },
+    ],
   },
   experimental: {
-    typedRoutes: true
+    typedRoutes: true,
+    outputFileTracingIncludes: {
+      '/': ['src/content/**'],
+    },
+    outputFileTracingExcludes: {
+      '/': [
+        'public/**',
+        '.netlify/**',
+        '.github/**',
+        '.vscode/**',
+        'cypress/**',
+        'scripts/**',
+        'src/app/**',
+      ],
+    },
   },
   webpack: (config) => {
     // Handling Markdown files
     config.module.rules.push({
       test: /\.md$/,
       loader: 'frontmatter-markdown-loader',
-      options: { mode: ['react-component'] }
+      options: { mode: ['react-component'] },
     })
 
     // Handling SVG files - SVG as React components
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack']
+      use: ['@svgr/webpack'],
     })
 
     // Handling YAML files
     config.module.rules.push({
       test: /\.yml$/,
-      use: 'yaml-loader'
+      use: 'yaml-loader',
     })
 
     return config
-  }
+  },
 }
 
 module.exports = nextConfig

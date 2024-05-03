@@ -44,7 +44,7 @@ export function testPageMetadata(
       cy.get('link[rel="canonical"]').should(
         'have.attr',
         'href',
-        `${BASE_URL}${path.path}`,
+        path.path === PATHS.HOME.path ? `${BASE_URL}` : `${BASE_URL}${path.path}`,
       )
     })
   })
