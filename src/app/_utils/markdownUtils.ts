@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+import { notFound } from 'next/navigation'
+
 import matter from 'gray-matter'
 
 import { CMSFieldConfig } from '@/types/cmsConfig'
@@ -9,10 +11,11 @@ import { validateFrontMatter } from '@/utils/validateFrontMatter'
 
 export function readAndValidateMarkdownFile(
   filePath: string,
-  fields: CMSFieldConfig[]
+  fields: CMSFieldConfig[],
 ): { data: { [key: string]: any }; content: string } {
   if (!fs.existsSync(filePath)) {
-    throw new Error(`File not found: ${filePath}`)
+    notFound()
+    console.error(`File not found: ${filePath}`)
   }
 
   const fileContents = fs.readFileSync(filePath, 'utf8')
@@ -27,7 +30,7 @@ export function readAndValidateMarkdownFile(
 
 export function readAndValidateMarkdownFiles(
   directoryPath: string,
-  fields: CMSFieldConfig[]
+  fields: CMSFieldConfig[],
 ) {
   const directory = path.join(process.cwd(), directoryPath)
   const filenames = fs.readdirSync(directory)
@@ -39,7 +42,7 @@ export function readAndValidateMarkdownFiles(
 
     if (slug !== data.slug) {
       throw new Error(
-        `Mismatch! File: ${filename} has slug: ${data.slug}, expected: ${slug}`
+        `Mismatch! File: ${filename} has slug: ${data.slug}, expected: ${slug}`,
       )
     }
 
