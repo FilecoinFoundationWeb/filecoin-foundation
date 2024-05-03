@@ -95,10 +95,8 @@ function getVisiblePagesSmallRange(
       }
 
     case 3:
-      if (currentPage === firstPage) {
-        return [firstPage, currentPage + 1, lastPage]
-      } else if (currentPage === lastPage) {
-        return [firstPage, currentPage - 1, lastPage]
+      if (currentPage === firstPage || currentPage === lastPage) {
+        return [firstPage, ELLIPSIS, lastPage]
       } else {
         return [firstPage, currentPage, lastPage]
       }
