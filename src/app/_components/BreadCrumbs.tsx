@@ -48,7 +48,12 @@ export function BreadCrumbs() {
           return (
             <li key={href} className="inline-flex items-center gap-2.5 ">
               {!isRoot && (
-                <Icon component={CaretRight} color="brand-400" weight="bold" />
+                <Icon
+                  component={CaretRight}
+                  color="brand-400"
+                  size={20}
+                  weight="bold"
+                />
               )}
               <Link className={itemClasses} href={href}>
                 {label}
