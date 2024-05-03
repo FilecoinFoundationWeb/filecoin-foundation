@@ -9,7 +9,6 @@ import { PATHS } from '@/constants/paths'
 export function BreadCrumbsWrapper() {
   const pathname = usePathname()
   const knownPaths = Object.values(PATHS).map((route) => route.path) as string[]
-  const not
 
   if (pathname === PATHS.HOME.path || !knownPaths.includes(pathname)) {
     return null
