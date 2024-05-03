@@ -8,7 +8,6 @@ export type PathValues =
   | '/blog'
   | '/ecosystem'
   | '/events'
-  | '/get-involved'
   | '/governance'
   | '/grants'
   | '/'
@@ -48,7 +47,6 @@ export const PATHS = {
   BLOG: createPathObject('/blog', 'News & Blog', true),
   ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem', true),
   EVENTS: createPathObject('/events', 'Events', true),
-  GET_INVOLVED: createPathObject('/get-involved', 'Get Involved'),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
   HOME: createPathObject('/', 'Home', false, '/home'),

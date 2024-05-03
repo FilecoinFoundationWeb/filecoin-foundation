@@ -9,7 +9,6 @@ const navigationItems = [
   PATHS.ABOUT,
   PATHS.GOVERNANCE,
   PATHS.ECOSYSTEM,
-  PATHS.GET_INVOLVED,
   PATHS.BLOG,
 ]
 
