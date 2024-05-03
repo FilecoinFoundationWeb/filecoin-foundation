@@ -26,6 +26,14 @@ const FILECOIN_FOUNDATION_URLS = {
         label: 'GitHub',
         href: '#',
       },
+      twitter: {
+        label: 'Twitter',
+        href: '#',
+      },
+      slack: {
+        label: 'Slack',
+        href: '#',
+      },
     },
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
@@ -78,8 +86,8 @@ const FILECOIN_URLS = {
 
 export {
   BASE_URL,
-  FIL_PLUS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
+  FIL_PLUS_URLS,
   ORGANIZATION_NAME,
 }

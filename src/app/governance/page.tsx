@@ -142,13 +142,21 @@ export default function Governance() {
         description={
           <>
             To get involved, visit the{' '}
-            <TextLink href={FIL_PLUS_URLS.notary}>Governance GitHub</TextLink>,
-            join the conversation in the{' '}
-            <TextLink href={FILECOIN_URLS.social.slack.href}>
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.github.href}
+            >
+              Governance GitHub
+            </TextLink>
+            , join the conversation in the{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
+            >
               #fil-gov Slack channel
             </TextLink>
             , or follow{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.social.twitter.href}>
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.twitter.href}
+            >
               @fil_gov
             </TextLink>{' '}
             on X.
