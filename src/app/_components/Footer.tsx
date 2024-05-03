@@ -25,12 +25,7 @@ type NavigationListProps = {
   items: NavigationListItemProps[]
 }
 
-const navigationItems = [
-  PATHS.ABOUT,
-  PATHS.GET_INVOLVED,
-  PATHS.ECOSYSTEM,
-  PATHS.BLOG,
-]
+const navigationItems = [PATHS.ABOUT, PATHS.ECOSYSTEM, PATHS.BLOG]
 
 const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS]
 
