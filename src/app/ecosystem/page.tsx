@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
@@ -108,10 +107,6 @@ export default function Ecosystem() {
       </section>
 
       <section>
-        <FeaturedEcosystemProjects />
-      </section>
-
-      <section>
         <Heading tag="h2" variant="xl">
           Ecosystem Projects
         </Heading>
@@ -153,20 +148,6 @@ export default function Ecosystem() {
             Filecoin ecosystem and the decentralized web.
           </p>
         </a>
-      </section>
-
-      <section>
-        <header>
-          <Heading tag="h2" variant="xl">
-            Case Studies
-          </Heading>
-          <p>
-            Learn about leading projects using Filecoin solutions to preserve
-            humanity&apos;s most important information.
-          </p>
-        </header>
-
-        <FeaturedCaseStudies />
       </section>
     </PageLayout>
   )
