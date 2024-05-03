@@ -1,5 +1,4 @@
 import {
-  ArrowUpRight,
   Code,
   HardDrives,
   MagnifyingGlass,
@@ -10,7 +9,7 @@ import {
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
-import { FeaturedCaseStudies } from '@/components/FeaturedCaseStudies'
+import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
 import { Heading } from '@/components/Heading'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -19,13 +18,24 @@ import { PageSection } from '@/components/PageSection'
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
-const { header, seo } = attributes
+const {
+  featured_ecosystem_projects: featuredEcosystemProjectsSlugs,
+  header,
+  seo,
+} = attributes
+
+const ecosystemProjects = getEcosystemProjectsData()
+const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
+  featuredEcosystemProjectsSlugs?.includes(item.slug),
+)
+
 export const metadata = createMetadata(seo, PATHS.HOME.path)
 
 const filecoinSystemData = [
@@ -107,7 +117,6 @@ export default function Home() {
         secondaryCta={{
           href: FILECOIN_URLS.site,
           text: 'Dive Into the Filecoin Protocol',
-          icon: <ArrowUpRight size={24} weight="bold" />,
         }}
       />
 
@@ -160,14 +169,16 @@ export default function Home() {
 
       <PageSection
         kicker="Learn"
-        title="Use Cases"
-        description="Learn about projects building on and using Filecoin."
+        title="Filecoin Use Cases"
+        description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
       >
-        <FeaturedCaseStudies />
+        <FeaturedEcosystemProjects
+          ecosystemProjects={featuredEcosystemProjects}
+        />
         <Button
           className="sm:self-center"
           variant="primary"
-          href={PATHS.CASE_STUDIES.path}
+          href={PATHS.ECOSYSTEM.path}
         >
           View All
         </Button>

@@ -1,7 +1,7 @@
 const DEFAULT_PAGE_NUMBER = 1
 
 export function validatePageNumber(
-  pageQuery: string | null,
+  pageQuery: string | undefined,
   pageCount: number,
 ): number {
   const pageQueryNumber = Number(pageQuery)

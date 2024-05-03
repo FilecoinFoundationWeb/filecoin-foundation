@@ -19,6 +19,15 @@ const FILECOIN_FOUNDATION_URLS = {
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
   },
   email: 'mailto:hello@fil.org',
+  governance: {
+    docs: '#',
+    social: {
+      github: {
+        label: 'GitHub',
+        href: '#',
+      },
+    },
+  },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {

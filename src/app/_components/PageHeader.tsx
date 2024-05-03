@@ -1,33 +1,27 @@
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
+import {
+  type DescriptionTextType,
+  DescriptionText,
+} from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Meta } from '@/components/Meta'
 
+import { type CTAProps } from '@/types/sharedProps/ctaType'
+import { type ImageProps } from '@/types/sharedProps/imageType'
+
 import { Badge } from './Badge'
-
-type CTAProps = {
-  href: string
-  text: string
-  icon?: React.ReactNode
-}
-
-type ImageProps = {
-  url: string
-  alt: string
-}
 
 type PageHeaderProps = {
   title: string
-  description: string | string[]
+  description: DescriptionTextType
   cta: CTAProps
   secondaryCta?: CTAProps
   image?: ImageProps
   metaData?: Array<string | null | undefined>
   isFeatured?: boolean
 }
-
-type DescriptionProp = string | string[]
 
 export function PageHeader({
   title,
@@ -38,18 +32,6 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  function setDescriptionParagraph(description: DescriptionProp) {
-    if (Array.isArray(description)) {
-      return (
-        <div className="space-y-4">
-          {description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-      )
-    }
-    return <p>{description}</p>
-  }
   return (
     <header className="flex flex-col gap-6 md:flex-row">
       <div className="flex flex-col gap-4 md:w-1/2">
@@ -62,7 +44,7 @@ export function PageHeader({
             <Meta metaData={metaData} />
           </span>
         )}
-        {setDescriptionParagraph(description)}
+        <DescriptionText>{description}</DescriptionText>
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
           <Button href={cta.href} variant="primary" className="flex-1">
             {cta.text}

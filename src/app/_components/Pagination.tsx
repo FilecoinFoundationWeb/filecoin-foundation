@@ -1,38 +1,59 @@
 'use client'
 
+import { useState } from 'react'
+
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
+import { useDebounceCallback } from 'usehooks-ts'
 
+import { usePagination } from '@/hooks/usePagination'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
+import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
 
-type PaginationProps = {
-  currentPage: number
-  pageCount: number
-  setCurrentPage: (page: number) => void
-}
+import { Icon } from '@/components/Icon'
+
+type PaginationProps = ReturnType<typeof usePagination>
 
 export function Pagination({
   pageCount,
-  currentPage,
-  setCurrentPage,
+  currentPage: initialPage,
 }: PaginationProps) {
+  const [currentPage, setPage] = useState(initialPage)
+
   const range = useResponsiveRange()
+  const updateSearchParams = useUpdateSearchParams()
   const visiblePages = useVisiblePages(pageCount, currentPage, range)
+
+  const debouncedUpdateSearchParams = useDebounceCallback(
+    updateSearchParams,
+    350,
+  )
 
   const canGoBack = currentPage > 1
   const canGoForward = currentPage < pageCount
 
   function handlePrev() {
-    if (canGoBack) setCurrentPage(currentPage - 1)
+    if (canGoBack) {
+      const newPage = currentPage - 1
+      setPage(newPage)
+      debouncedUpdateSearchParams({ page: newPage })
+    }
   }
 
   function handleNext() {
-    if (canGoForward) setCurrentPage(currentPage + 1)
+    if (canGoForward) {
+      const newPage = currentPage + 1
+      setPage(newPage)
+      debouncedUpdateSearchParams({ page: newPage })
+    }
   }
 
   function handlePageChange(page: number) {
-    if (page !== currentPage) setCurrentPage(page)
+    if (page !== currentPage) {
+      setPage(page)
+      updateSearchParams({ page })
+    }
   }
 
   return (
@@ -47,23 +68,19 @@ export function Pagination({
           aria-disabled={!canGoBack}
           disabled={!canGoBack}
           className={clsx(
-            'flex items-center rounded bg-brand-300 p-1 px-2 transition',
+            'flex items-center gap-x-1.5 rounded bg-brand-300 p-1 px-2 transition',
             canGoBack
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
           )}
           onClick={handlePrev}
         >
-          <CaretLeft size={20} weight="bold" className="mr-1.5" />
+          <Icon component={CaretLeft} size={20} weight="bold" />
           <span className="mr-1.5">Prev</span>
         </button>
 
-        <div className="flex items-center">
-          <LineVertical
-            size={24}
-            weight="light"
-            className="text-brand-800/50"
-          />
+        <div className="flex items-center text-brand-800/50">
+          <Icon component={LineVertical} weight="light" />
         </div>
       </div>
 
@@ -97,12 +114,8 @@ export function Pagination({
       </ul>
 
       <div className="flex">
-        <div className="flex items-center">
-          <LineVertical
-            size={24}
-            weight="light"
-            className="text-brand-800/50"
-          />
+        <div className="flex items-center text-brand-800/50">
+          <Icon component={LineVertical} weight="bold" />
         </div>
 
         <button
@@ -110,7 +123,7 @@ export function Pagination({
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
           className={clsx(
-            'flex items-center rounded bg-brand-300 p-1 px-2 transition',
+            'flex items-center gap-x-1.5 rounded bg-brand-300 p-1 px-2 transition',
             canGoForward
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
@@ -118,7 +131,7 @@ export function Pagination({
           onClick={handleNext}
         >
           <span className="ml-1.5">Next</span>
-          <CaretRight size={20} weight="bold" className="ml-1.5" />
+          <Icon component={CaretRight} size={20} weight="bold" />
         </button>
       </div>
     </nav>
