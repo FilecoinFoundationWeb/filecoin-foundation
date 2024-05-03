@@ -115,7 +115,7 @@ export function Pagination({
 
       <div className="flex">
         <div className="flex items-center text-brand-800/50">
-          <Icon component={LineVertical} weight="bold" />
+          <Icon component={LineVertical} weight="light" />
         </div>
 
         <button
