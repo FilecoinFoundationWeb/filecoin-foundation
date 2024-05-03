@@ -5,6 +5,7 @@ import '@/styles/globals.scss'
 import { BreakpointDebugger } from '@/components/_dev_BreakpointDebugger'
 import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapper'
 import { Footer } from '@/components/Footer'
+import LayoutWrapper from '@/components/LayoutWrapper'
 import { Navigation } from '@/components/Navigation'
 import { NetlifyIdentityManager } from '@/components/NetlifyIdentityManager'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -14,8 +15,6 @@ import { baseOrganizationSchema } from '@/utils/structuredData'
 import siteMetaData from '@/content/shared/site-metadata.yml'
 
 import { BASE_URL } from '@/constants/siteMetadata'
-
-import LayoutWrapper from './_components/LayoutWrapper'
 
 const { seo } = siteMetaData
 
