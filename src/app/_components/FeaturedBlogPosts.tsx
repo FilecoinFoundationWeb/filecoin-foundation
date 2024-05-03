@@ -7,17 +7,11 @@ import { getBlogPostsData } from '@/utils/getBlogPostData'
 
 import { PATHS } from '@/constants/paths'
 
-type FeaturedBlogPostsProps = {
-  maxPosts?: number
-}
-
 const blogPosts = getBlogPostsData()
+const MAX_POSTS = 4
+const featuredBlogPosts = blogPosts.slice(0, MAX_POSTS)
 
-export function FeaturedBlogPosts({ maxPosts = 4 }: FeaturedBlogPostsProps) {
-  const featuredBlogPosts = blogPosts
-    // .filter((post) => post.featured)
-    .slice(0, maxPosts)
-
+export function FeaturedBlogPosts() {
   if (featuredBlogPosts.length === 0) {
     return <p>No featured posts available.</p>
   }

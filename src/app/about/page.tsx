@@ -132,7 +132,7 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardLayout type="reports">
+        <CardLayout type="blogPost">
           {reportsData.map(({ title, description, link }, index) => (
             <div
               key={title}

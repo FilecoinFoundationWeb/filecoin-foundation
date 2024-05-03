@@ -1,34 +1,41 @@
-import { Badge } from '@/components/Badge'
-import { Heading } from '@/components/Heading'
-import { TextLink } from '@/components/TextLink'
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
+
+import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { PATHS } from '@/constants/paths'
 
-const ecosystemProjects = getEcosystemProjectsData()
+type FeaturedEcosystemProjectsProps = {
+  ecosystemProjects: EcosystemProjectData[]
+}
 
-const featuredEcosystemProjects = ecosystemProjects.filter(
-  (project) => project.featured,
-)
-
-export function FeaturedEcosystemProjects() {
-  if (featuredEcosystemProjects.length === 0) {
-    return <p>No featured projects available.</p>
+export function FeaturedEcosystemProjects({
+  ecosystemProjects,
+}: FeaturedEcosystemProjectsProps) {
+  if (ecosystemProjects.length === 0) {
+    return <p>No featured ecosystem projects available.</p>
   }
 
   return (
-    <ul className="list-none gap-8 sm:grid sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
-      {featuredEcosystemProjects.map(({ slug, title, description }) => (
-        <li key={slug} className="ml-0">
-          <Badge>Featured Project</Badge>
-          <Heading tag="h3" variant="lg">
-            {title}
-          </Heading>
-          <p>{description}</p>
-          <TextLink href={`${PATHS.ECOSYSTEM.path}/${slug}`}>See More</TextLink>
-        </li>
+    <CardLayout>
+      {ecosystemProjects.map(({ slug, title, description, image }) => (
+        <Card
+          key={slug}
+          title={title}
+          description={description}
+          entryType="featuredEcosystemProject"
+          image={image}
+          borderColor="brand-300"
+          textIsClamped={true}
+          cta={{
+            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+            text: 'Learn More',
+            icon: <MagnifyingGlass size={24} aria-hidden={true} />,
+          }}
+        />
       ))}
-    </ul>
+    </CardLayout>
   )
 }

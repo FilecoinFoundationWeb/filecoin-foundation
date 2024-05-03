@@ -3,7 +3,7 @@ import clsx from 'clsx'
 type CardLayoutProps = {
   children: React.ReactNode
   as?: React.ElementType
-  type?: 'default' | 'blogPost' | 'governance' | 'grants' | 'reports'
+  type?: 'default' | 'blogPost' | 'governance' | 'grants'
 }
 
 export function CardLayout({
@@ -11,13 +11,12 @@ export function CardLayout({
   type = 'default',
   children,
 }: CardLayoutProps) {
-  const baseLayoutStyles = 'grid gap-4'
+  const baseLayoutStyles = 'grid gap-4 sm:gap-6'
   const extendedLayoutStyles = {
-    default: 'lg:grid-cols-3',
+    default: 'sm:grid-cols-2 lg:grid-cols-3',
     blogPost: 'lg:grid-cols-2 lg:grid-rows-2',
-    governance: 'grid-cols-1 sm:grid-cols-2 sm:gap-6',
-    reports: 'lg:grid-cols-2 lg:grid-rows-2',
-    grants: 'gap-7 sm:grid-cols-3 sm:gap-6',
+    governance: 'grid-cols-1 sm:grid-cols-2',
+    grants: 'gap-8 sm:grid-cols-3',
   }
 
   return (

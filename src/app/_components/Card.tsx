@@ -17,7 +17,7 @@ export type CardProps = {
     icon?: React.ReactNode
     ariaLabel?: string
   }
-  entryType?: 'blogPost'
+  entryType?: 'blogPost' | 'featuredEcosystemProject'
   image?: {
     url: string
     alt: string
@@ -34,9 +34,16 @@ const borderStyles = {
   'brand-600': 'border-brand-600',
 }
 
+const imageStyles = {
+  blogPost: 'object-cover',
+  featuredEcosystemProject: 'object-contain',
+}
+
 const imageSizes = {
   blogPost:
     '(max-width: 639px) 320px, (max-width: 767px) 584px, (max-width: 1023px) 712px, (max-width: 1279px) 472px, 500px',
+  featuredEcosystemProject:
+    '(max-width: 639px) 320px, (max-width: 767px) 276px, (max-width: 1023px) 340px, 304px',
 }
 
 export function Card({
@@ -59,13 +66,16 @@ export function Card({
       )}
     >
       {image?.url && (
-        <div className="relative block h-52">
+        <div className="relative block aspect-video">
           <Image
             fill
             src={image.url}
             alt={image.alt}
             sizes={imageSizes[entryType]}
-            className="block rounded-lg object-cover px-1 pt-1"
+            className={clsx(
+              'block rounded-lg px-1 pt-1',
+              imageStyles[entryType],
+            )}
           />
         </div>
       )}
