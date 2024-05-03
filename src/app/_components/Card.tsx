@@ -5,23 +5,19 @@ import clsx from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
+
+import { type CTAProps } from '@/types/sharedProps/ctaType'
+import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type CardProps = {
   title: string | React.ReactNode
   metaData?: MetaDataType
   description?: string
-  cta?: {
-    href: string
-    text?: string
-    icon?: React.ReactNode
-    ariaLabel?: string
-  }
+  cta?: CTAProps
   entryType?: 'blogPost' | 'featuredEcosystemProject'
-  image?: {
-    url: string
-    alt: string
-  }
+  image?: ImageProps
   borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -58,6 +54,8 @@ export function Card({
   as: Tag = 'li',
   children,
 }: CardProps) {
+  const icon = cta?.icon || BookOpen
+
   return (
     <Tag
       className={clsx(
@@ -112,7 +110,7 @@ export function Card({
             className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              {cta.icon || <BookOpen size={24} aria-hidden={true} />}
+              <Icon component={icon} />
               <span>{cta.text || 'Learn More'}</span>
             </span>
           </CustomLink>

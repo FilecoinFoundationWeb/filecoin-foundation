@@ -32,7 +32,7 @@ export function FeaturedEcosystemProjects({
           cta={{
             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
             text: 'Learn More',
-            icon: <MagnifyingGlass size={24} aria-hidden={true} />,
+            icon: MagnifyingGlass,
           }}
         />
       ))}

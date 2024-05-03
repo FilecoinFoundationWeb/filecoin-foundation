@@ -8,15 +8,10 @@ import {
 import { Heading } from '@/components/Heading'
 import { Meta } from '@/components/Meta'
 
-import { ImageProps } from '@/types/sharedProps/imageType'
+import { type CTAProps } from '@/types/sharedProps/ctaType'
+import { type ImageProps } from '@/types/sharedProps/imageType'
 
 import { Badge } from './Badge'
-
-type CTAProps = {
-  href: string
-  text: string
-  icon?: React.ReactNode
-}
 
 type PageHeaderProps = {
   title: string
