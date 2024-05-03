@@ -1,11 +1,10 @@
 import { CardLayout } from '@/components/CardLayout'
+import { CTASection } from '@/components/CTASection'
 import { GovernanceCalendarCard } from '@/components/GovernanceCalendarCard'
-import { Heading } from '@/components/Heading'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { Social } from '@/components/Social'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -15,7 +14,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/governance.md'
 
 import { PATHS } from '@/constants/paths'
-import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { communityCallsData } from './data/communityCallsData'
 import { governanceDocsData } from './data/governanceDocsData'
@@ -98,25 +97,33 @@ export default function Governance() {
         </CardLayout>
       </PageSection>
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Get Involved
-        </Heading>
-        <Social />
-        <p>Community governance calls happen every other Tuesday.</p>
-        <p>
-          Visit the{' '}
-          <TextLink href={PATHS.EVENTS.path}>
-            Filecoin community events hub
-          </TextLink>{' '}
-          and join the conversation in the{' '}
-          <TextLink href={FIL_PLUS_URLS.slack}>
-            #fil-plus Slack channel
-          </TextLink>
-          .
-        </p>
-        <TextLink href={PATHS.GET_INVOLVED.path}>Get Involved</TextLink>
-      </section>
+      <CTASection
+        title="Connect With Us"
+        description={
+          <>
+            To get involved, visit the{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.github.href}
+            >
+              Governance GitHub
+            </TextLink>
+            , join the conversation in the{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
+            >
+              {FILECOIN_FOUNDATION_URLS.governance.social.slack.label} Slack
+              channel
+            </TextLink>
+            , or follow{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.twitter.href}
+            >
+              {FILECOIN_FOUNDATION_URLS.governance.social.twitter.label}
+            </TextLink>{' '}
+            on X.
+          </>
+        }
+      />
     </PageLayout>
   )
 }
