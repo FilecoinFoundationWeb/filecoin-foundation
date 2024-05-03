@@ -88,12 +88,28 @@ collections:
         fields:
           - *header_config
           - *meta_config
+          - name: "featured_ecosystem_projects"
+            label: "Featured Ecosystem Projects"
+            widget: "relation"
+            required: false
+            collection: "ecosystem"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
+
       - name: "about"
         label: "About"
         file: "src/content/pages/about.md"
         fields:
           - *header_config
           - *meta_config
+
       - name: "blog"
         label: "Blog"
         file: "src/content/pages/blog.md"
@@ -559,7 +575,7 @@ collections:
         widget: "relation"
         required: false
         collection: "ecosystem"
-        value_field: "src/content/ecosystem/{{slug}}.md"
+        value_field: "slug"
         search_fields:
           - "slug"
           - "title"

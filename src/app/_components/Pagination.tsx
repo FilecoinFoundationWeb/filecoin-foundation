@@ -11,6 +11,8 @@ import { useResponsiveRange } from '@/hooks/useResponsiveRange'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
 
+import { Icon } from '@/components/Icon'
+
 type PaginationProps = ReturnType<typeof usePagination>
 
 export function Pagination({
@@ -66,23 +68,19 @@ export function Pagination({
           aria-disabled={!canGoBack}
           disabled={!canGoBack}
           className={clsx(
-            'flex items-center rounded bg-brand-300 p-1 px-2 transition',
+            'flex items-center gap-x-1.5 rounded bg-brand-300 p-1 px-2 transition',
             canGoBack
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
           )}
           onClick={handlePrev}
         >
-          <CaretLeft size={20} weight="bold" />
+          <Icon component={CaretLeft} size={20} weight="bold" />
           <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
         </button>
 
-        <div className="flex items-center">
-          <LineVertical
-            size={24}
-            weight="light"
-            className="text-brand-800/50"
-          />
+        <div className="flex items-center text-brand-800/50">
+          <Icon component={LineVertical} weight="light" />
         </div>
       </div>
 
@@ -116,12 +114,8 @@ export function Pagination({
       </ul>
 
       <div className="flex">
-        <div className="flex items-center">
-          <LineVertical
-            size={24}
-            weight="light"
-            className="text-brand-800/50"
-          />
+        <div className="flex items-center text-brand-800/50">
+          <Icon component={LineVertical} weight="bold" />
         </div>
 
         <button
@@ -129,7 +123,7 @@ export function Pagination({
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
           className={clsx(
-            'flex items-center rounded bg-brand-300 p-1 px-2 transition',
+            'flex items-center gap-x-1.5 rounded bg-brand-300 p-1 px-2 transition',
             canGoForward
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
@@ -137,7 +131,7 @@ export function Pagination({
           onClick={handleNext}
         >
           <span className="hidden sm:mx-1.5 sm:inline">Next</span>
-          <CaretRight size={20} weight="bold" />
+          <Icon component={CaretRight} size={20} weight="bold" />
         </button>
       </div>
     </nav>

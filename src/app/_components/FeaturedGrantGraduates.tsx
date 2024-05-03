@@ -1,37 +1,35 @@
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
+
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { PATHS } from '@/constants/paths'
 
-import { Card } from './Card'
-import { CardLayout } from './CardLayout'
+type FeaturedGrantsGraduatesProps = {
+  grantGraduates: EcosystemProjectData[]
+}
 
 export function FeaturedGrantsGraduates({
   grantGraduates,
-}: {
-  grantGraduates: EcosystemProjectData[]
-}) {
+}: FeaturedGrantsGraduatesProps) {
   if (grantGraduates.length === 0) {
     return <p>No featured grants graduates available.</p>
   }
 
   return (
     <CardLayout type="blogPost">
-      {grantGraduates.map((post) => {
-        const { title, description, slug } = post
-
-        return (
-          <Card
-            key={post.slug}
-            title={title}
-            description={description}
-            textIsClamped={true}
-            cta={{
-              href: `${PATHS.GRANTS.path}/${slug}`,
-              text: 'Read More',
-            }}
-          />
-        )
-      })}
+      {grantGraduates.map(({ title, description, slug }) => (
+        <Card
+          key={slug}
+          title={title}
+          description={description}
+          textIsClamped={true}
+          cta={{
+            href: `${PATHS.GRANTS.path}/${slug}`,
+            text: 'Read More',
+          }}
+        />
+      ))}
     </CardLayout>
   )
 }

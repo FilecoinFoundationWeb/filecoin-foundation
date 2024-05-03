@@ -105,9 +105,6 @@ export default function Ecosystem() {
           ))}
         </ul>
       </section>
-      <section>
-        <FeaturedEcosystemProjects />
-      </section>
 
       <section>
         <Heading tag="h2" variant="xl">

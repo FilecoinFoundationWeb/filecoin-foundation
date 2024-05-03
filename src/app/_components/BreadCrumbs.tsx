@@ -7,6 +7,8 @@ import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import type { Route } from 'next'
 
+import { Icon } from '@/components/Icon'
+
 import { PATHS } from '@/constants/paths'
 
 export function BreadCrumbs() {
@@ -46,7 +48,7 @@ export function BreadCrumbs() {
           return (
             <li key={href} className="inline-flex items-center gap-2.5 ">
               {!isRoot && (
-                <CaretRight className="text-brand-400" weight="bold" />
+                <Icon component={CaretRight} color="brand-400" weight="bold" />
               )}
               <Link className={itemClasses} href={href}>
                 {label}

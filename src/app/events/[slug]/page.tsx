@@ -44,7 +44,7 @@ function createEventPostStructuredData(data: EventData): WithContext<Event> {
   }
 }
 
-export default function Event({ params }: EventProps) {
+export default function EventEntry({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 

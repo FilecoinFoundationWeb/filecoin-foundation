@@ -1,12 +1,11 @@
 import { CustomLink } from '@/components/CustomLink'
 import { type HeadingProps, Heading } from '@/components/Heading'
 
+import { type CTAProps } from '@/types/sharedProps/ctaType'
+
 type HomeExploreSectionCardProps = {
   heading: HeadingProps
-  cta: {
-    href: string
-    text: string
-  }
+  cta: CTAProps
   children: React.ReactNode
 }
 

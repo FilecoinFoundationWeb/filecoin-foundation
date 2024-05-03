@@ -40,16 +40,11 @@ export function SortListbox({ onSortTypeChange }: SortListboxProps) {
         <>
           <Listbox.Button className="border-1 inline-flex items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100 sm:min-w-40">
             <div className="inline-flex items-center gap-2">
-              <Icon component={ArrowsDownUp} color="inherit" size={24} />
+              <Icon component={ArrowsDownUp} />
               <span className="hidden sm:block">{selectedSortType.name}</span>
             </div>
             <span className="hidden sm:block">
-              <Icon
-                component={CaretDown}
-                color="inherit"
-                size={16}
-                weight="bold"
-              />
+              <Icon component={CaretDown} size={16} weight="bold" />
             </span>
           </Listbox.Button>
           <Listbox.Options className="absolute z-10 mt-14 min-w-40 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-1 text-brand-100 focus-within:outline-2 focus:outline-2 focus:outline-brand-100">
@@ -63,9 +58,7 @@ export function SortListbox({ onSortTypeChange }: SortListboxProps) {
                     )}
                   >
                     {option.name}
-                    {selected && (
-                      <Icon component={Check} color="inherit" size={20} />
-                    )}
+                    {selected && <Icon component={Check} size={20} />}
                   </li>
                 )}
               </Listbox.Option>
