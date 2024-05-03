@@ -19,7 +19,7 @@ const FILECOIN_FOUNDATION_URLS = {
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
   },
   events: {
-    sponsorShipsEmail: 'mailto:sponsorships@fil.org',
+    sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
   email: 'mailto:hello@fil.org',
   governance: {

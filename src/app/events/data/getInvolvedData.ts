@@ -5,10 +5,9 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 export const getInvolvedData = [
   {
     title: 'Sponsor an Event',
-    description:
-      'To be featured partner or sponsor an upcoming Foundation-hosted event, reach out to sponsorships@fil.org.',
+    description: `To be featured partner or sponsor an upcoming Foundation-hosted event, reach out to ${FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail.replace('mailto:', '')}.`,
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.events.sponsorShipsEmail,
+      href: FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail,
       text: 'Email Us',
       icon: Envelope,
     },
