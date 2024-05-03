@@ -1,9 +1,11 @@
 import { CardLayout } from '@/components/CardLayout'
+import { CTASection } from '@/components/CTASection'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
@@ -11,6 +13,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/governance.md'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { governanceDocsData } from './data/governanceDocsData'
 
@@ -72,6 +75,34 @@ export default function Governance() {
           'In the Filecoin ecosystem – which is decentralized and open source – governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol.',
           'The Foundation’s role includes developing and implementing processes and policies for decision-making and managing community engagement and feedback – all to support the development of the ecosystem at large. ',
         ]}
+      />
+
+      <CTASection
+        title="Connect With Us"
+        description={
+          <>
+            To get involved, visit the{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.github.href}
+            >
+              Governance GitHub
+            </TextLink>
+            , join the conversation in the{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
+            >
+              {FILECOIN_FOUNDATION_URLS.governance.social.slack.label} Slack
+              channel
+            </TextLink>
+            , or follow{' '}
+            <TextLink
+              href={FILECOIN_FOUNDATION_URLS.governance.social.twitter.href}
+            >
+              {FILECOIN_FOUNDATION_URLS.governance.social.twitter.label}
+            </TextLink>{' '}
+            on X.
+          </>
+        }
       />
     </PageLayout>
   )
