@@ -16,7 +16,6 @@ import { attributes } from '@/content/pages/governance.md'
 import { PATHS } from '@/constants/paths'
 import {
   FILECOIN_FOUNDATION_URLS,
-  FILECOIN_URLS,
   FIL_PLUS_URLS,
 } from '@/constants/siteMetadata'
 
@@ -151,13 +150,14 @@ export default function Governance() {
             <TextLink
               href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
             >
-              #fil-gov Slack channel
+              {FILECOIN_FOUNDATION_URLS.governance.social.slack.label} Slack
+              channel
             </TextLink>
             , or follow{' '}
             <TextLink
               href={FILECOIN_FOUNDATION_URLS.governance.social.twitter.href}
             >
-              @fil_gov
+              {FILECOIN_FOUNDATION_URLS.governance.social.twitter.label}
             </TextLink>{' '}
             on X.
           </>

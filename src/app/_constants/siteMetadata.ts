@@ -27,11 +27,11 @@ const FILECOIN_FOUNDATION_URLS = {
         href: '#',
       },
       twitter: {
-        label: 'Twitter',
+        label: '@fil_gov',
         href: '#',
       },
       slack: {
-        label: 'Slack',
+        label: '#fil-gov',
         href: '#',
       },
     },
