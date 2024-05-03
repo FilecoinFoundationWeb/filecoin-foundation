@@ -127,30 +127,28 @@ collections:
               - "title"
             required: true
           - *meta_config
+
       - name: "governance"
         label: "Governance"
         file: "src/content/pages/governance.md"
         fields:
           - *header_config
           - *meta_config
+
       - name: "ecosystem"
         label: "Ecosystem"
         file: "src/content/pages/ecosystem.md"
         fields:
           - *header_config
           - *meta_config
+
       - name: "grants"
         label: "Grants"
         file: "src/content/pages/grants.md"
         fields:
           - *header_config
           - *meta_config
-      - name: "get-involved"
-        label: "Get Involved"
-        file: "src/content/pages/get-involved.md"
-        fields:
-          - *header_config
-          - *meta_config
+
       - name: "events"
         label: "Events"
         file: "src/content/pages/events.md"
@@ -168,12 +166,14 @@ collections:
               - "title"
             required: true
           - *meta_config
+
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
         fields:
           - *header_config
           - *meta_config
+
       - name: "terms"
         label: "Terms"
         file: "src/content/pages/terms.md"
