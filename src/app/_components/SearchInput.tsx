@@ -2,6 +2,8 @@ import { ChangeEvent } from 'react'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
+import { Icon } from '@/components/Icon'
+
 interface SearchInputProps {
   searchQuery: string
   onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
@@ -27,7 +29,7 @@ export function SearchInput({
           onChange={onSearchChange}
         />
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-brand-300 peer-hover:text-brand-400 peer-focus:text-brand-100">
-          <MagnifyingGlass size={24} aria-hidden="true" />
+          <Icon component={MagnifyingGlass} />
         </div>
       </div>
     </div>

@@ -24,8 +24,8 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 
 const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
 
-const ecosystem = getEcosystemProjectsData()
-const grantGraduates = ecosystem.filter((item) =>
+const ecosystemProjects = getEcosystemProjectsData()
+const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
 

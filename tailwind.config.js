@@ -15,6 +15,57 @@ module.exports = {
           800: '#08072e',
         },
       },
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': theme('colors.brand.100'),
+            '--tw-prose-headings': theme('colors.brand.100'),
+            '--tw-prose-bold': theme('colors.brand.100'),
+            '--tw-prose-links': theme('colors.brand.300'),
+            '--tw-prose-quotes': theme('colors.brand.100'),
+            '--tw-prose-quote-borders': theme('colors.brand.300'),
+            '--tw-prose-counters': theme('colors.brand.100'),
+            '--tw-prose-bullets': theme('colors.brand.100'),
+            '--tw-prose-code': theme('colors.brand.100'),
+            '--tw-prose-pre-bg': theme('colors.brand.700'),
+            '--tw-prose-pre-code': theme('colors.brand.100'),
+
+            a: {
+              textDecoration: 'none',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+              '&:focus, &:focus-visible': {
+                outlineWidth: 2,
+                outlineStyle: 'solid',
+                outlineColor: theme('colors.brand.100'),
+              },
+            },
+
+            code: {
+              '&::before, &::after': {
+                content: 'none !important',
+              },
+            },
+
+            pre: {
+              borderWidth: '1px',
+              borderStyle: 'solid',
+              borderColor: theme('colors.brand.600'),
+            },
+
+            iframe: {
+              width: '100%',
+            },
+
+            'iframe[src*="youtube.com"]': {
+              width: '100%',
+              height: 'auto',
+              aspectRatio: '16/9',
+            },
+          },
+        },
+      }),
       maxWidth: {
         readable: '60ch',
       },
