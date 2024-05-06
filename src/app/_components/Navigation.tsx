@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { Logo } from '@/components/Logo'
+import { MobileNavigation } from '@/components/MobileNavigation'
 import { TextLink } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
@@ -31,7 +32,10 @@ export function Navigation() {
         <Logo />
         <span className="sr-only">Home</span>
       </Link>
-      <ul className="gap-5 md:flex">
+
+      <MobileNavigation />
+
+      <ul className="hidden gap-5 lg:flex">
         {navigationItems.map((item) => (
           <NavigationLink key={item.path} label={item.label} path={item.path} />
         ))}
