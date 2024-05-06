@@ -22,9 +22,9 @@ export function Pagination({
   const [currentPage, setPage] = useState(initialPage)
 
   const range = useResponsiveRange()
-  const updateSearchParams = useUpdateSearchParams()
   const visiblePages = useVisiblePages(pageCount, currentPage, range)
 
+  const updateSearchParams = useUpdateSearchParams()
   const debouncedUpdateSearchParams = useDebounceCallback(
     updateSearchParams,
     350,
@@ -76,7 +76,7 @@ export function Pagination({
           onClick={handlePrev}
         >
           <Icon component={CaretLeft} size={20} weight="bold" />
-          <span className="mr-1.5">Prev</span>
+          <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
         </button>
 
         <div className="flex items-center text-brand-800/50">
@@ -84,7 +84,7 @@ export function Pagination({
         </div>
       </div>
 
-      <ul className="-mx-1 flex shrink grow justify-center gap-2 md:gap-1">
+      <ul className="-mx-1 flex shrink grow justify-center gap-1">
         {visiblePages.map((item, index) => (
           <li
             key={index}
@@ -115,7 +115,7 @@ export function Pagination({
 
       <div className="flex">
         <div className="flex items-center text-brand-800/50">
-          <Icon component={LineVertical} weight="bold" />
+          <Icon component={LineVertical} weight="light" />
         </div>
 
         <button
@@ -130,7 +130,7 @@ export function Pagination({
           )}
           onClick={handleNext}
         >
-          <span className="ml-1.5">Next</span>
+          <span className="hidden sm:mx-1.5 sm:inline">Next</span>
           <Icon component={CaretRight} size={20} weight="bold" />
         </button>
       </div>
