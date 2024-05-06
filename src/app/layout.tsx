@@ -2,15 +2,8 @@ import { Metadata } from 'next'
 
 import '@/styles/globals.scss'
 
-import { BreakpointDebugger } from '@/components/_dev_BreakpointDebugger'
 import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapper'
-import { Footer } from '@/components/Footer'
-import LayoutWrapper from '@/components/LayoutWrapper'
-import { Navigation } from '@/components/Navigation'
-import { NetlifyIdentityManager } from '@/components/NetlifyIdentityManager'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { baseOrganizationSchema } from '@/utils/structuredData'
+import { SiteLayout } from '@/components/SiteLayout'
 
 import siteMetaData from '@/content/shared/site-metadata.yml'
 
@@ -33,18 +26,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <LayoutWrapper>
-      <StructuredDataScript structuredData={baseOrganizationSchema} />
-      <NetlifyIdentityManager />
-      <Navigation />
-
-      <main className="flex flex-grow flex-col gap-6">
+    <SiteLayout>
+      <div className="flex flex-grow flex-col gap-6">
         <BreadCrumbs />
         {children}
-      </main>
-
-      <Footer />
-      {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
-    </LayoutWrapper>
+      </div>
+    </SiteLayout>
   )
 }
