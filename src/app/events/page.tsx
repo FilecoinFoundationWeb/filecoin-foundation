@@ -107,7 +107,7 @@ export default function Events() {
               key={title}
               title={title}
               description={description}
-              cta={{ ...cta }}
+              cta={cta}
             />
           ))}
         </CardLayout>
