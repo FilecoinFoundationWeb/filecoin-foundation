@@ -111,7 +111,7 @@ export function Card({
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
               <Icon component={icon} />
-              <span>{cta.text || 'Learn More'}</span>
+              <span>{cta.text}</span>
             </span>
           </CustomLink>
         )}

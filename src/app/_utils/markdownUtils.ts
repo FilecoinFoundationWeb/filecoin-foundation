@@ -14,8 +14,8 @@ export function readAndValidateMarkdownFile(
   fields: CMSFieldConfig[],
 ): { data: { [key: string]: any }; content: string } {
   if (!fs.existsSync(filePath)) {
-    notFound()
     console.error(`File not found: ${filePath}`)
+    notFound()
   }
 
   const fileContents = fs.readFileSync(filePath, 'utf8')
