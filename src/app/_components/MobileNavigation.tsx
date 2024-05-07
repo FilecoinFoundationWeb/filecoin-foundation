@@ -6,12 +6,13 @@ import Link from 'next/link'
 
 import { List, X, Icon as IconType } from '@phosphor-icons/react'
 import clsx from 'clsx'
+import { Route } from 'next'
 
 import { Icon } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
-import { TextLink } from '@/components/TextLink'
+import { baseStyles } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
 
@@ -20,21 +21,33 @@ const communityItems = [PATHS.ECOSYSTEM, PATHS.GOVERNANCE]
 
 type MobileLinkProps = {
   label: string
-  path: string
+  path: Route
   nested?: boolean
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 
 function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
+  const touchTargetSpacing = 5
+  const touchTargetClass = `px-${touchTargetSpacing}`
+  const touchTargetOffsetClass = `-ml-${touchTargetSpacing}`
+
   return (
-    <li className={clsx(nested ? 'border-l border-brand-400' : '-ml-5')}>
-      <TextLink
+    <li
+      className={clsx(
+        nested ? 'border-l border-brand-400' : touchTargetOffsetClass,
+      )}
+    >
+      <Link
         href={path}
-        className="inline-block px-5 py-2.5"
+        className={clsx(
+          baseStyles,
+          touchTargetClass,
+          'inline-block px-5 py-2.5',
+        )}
         onClick={() => setOpen(false)}
       >
         {label}
-      </TextLink>
+      </Link>
     </li>
   )
 }
