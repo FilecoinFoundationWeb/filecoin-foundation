@@ -4,7 +4,7 @@ import { Fragment, useState, Dispatch, SetStateAction } from 'react'
 
 import Link from 'next/link'
 
-import { List, X } from '@phosphor-icons/react'
+import { List, X, Icon as IconType } from '@phosphor-icons/react'
 import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
@@ -39,18 +39,34 @@ function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
   )
 }
 
+type IconButtonProps = {
+  icon: IconType
+  label: string
+  onClick: React.ComponentPropsWithoutRef<'button'>['onClick']
+}
+
+function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
+  return (
+    <button
+      className="-mr-4 flex size-12 items-center justify-center focus:outline-2 focus:outline-brand-100 lg:hidden"
+      aria-label={label}
+      onClick={onClick}
+    >
+      <Icon component={IconComponent} color="brand-300" />
+    </button>
+  )
+}
+
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
 
   return (
     <Fragment>
-      <button
-        className="-mr-4 flex size-12 items-center justify-center lg:hidden"
-        aria-label="Open mobile navigation"
-        onClick={() => setOpen(!open)}
-      >
-        <Icon component={List} color="brand-300" />
-      </button>
+      <IconButton
+        icon={List}
+        label="Open mobile navigation"
+        onClick={() => setOpen(true)}
+      />
 
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex items-center justify-between px-6 pb-12 pt-8 sm:pb-16 md:pb-24">
@@ -63,13 +79,11 @@ export function MobileNavigation() {
             <Logo />
           </Link>
 
-          <button
-            className="-mr-4 flex size-12 items-center justify-center"
-            aria-label="Close mobile navigation"
+          <IconButton
+            icon={X}
+            label="Close mobile navigation"
             onClick={() => setOpen(false)}
-          >
-            <Icon component={X} color="brand-300" />
-          </button>
+          />
         </div>
 
         <ul
