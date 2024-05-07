@@ -4,11 +4,11 @@ import { Fragment, useState, Dispatch, SetStateAction } from 'react'
 
 import Link from 'next/link'
 
-import { List, X, Icon as IconType } from '@phosphor-icons/react'
+import { List, X } from '@phosphor-icons/react'
 import clsx from 'clsx'
 import { Route } from 'next'
 
-import { Icon } from '@/components/Icon'
+import { Icon, IconProps } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
@@ -53,7 +53,7 @@ function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
 }
 
 type IconButtonProps = {
-  icon: IconType
+  icon: IconProps['component']
   label: string
   onClick: React.ComponentPropsWithoutRef<'button'>['onClick']
 }
