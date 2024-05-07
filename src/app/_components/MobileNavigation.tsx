@@ -12,7 +12,7 @@ import { Icon, IconProps } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
-import { baseStyles } from '@/components/TextLink'
+import { linkBaseStyles } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
 
@@ -40,7 +40,7 @@ function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
       <Link
         href={path}
         className={clsx(
-          baseStyles,
+          linkBaseStyles,
           touchTargetClass,
           'inline-block px-5 py-2.5',
         )}

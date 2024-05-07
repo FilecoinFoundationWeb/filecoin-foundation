@@ -8,7 +8,7 @@ type TextLinkProps = {
   children: React.ReactNode
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const baseStyles = `text-brand-300 hover:underline focus:outline-2 focus:outline-brand-100`
+export const linkBaseStyles = `text-brand-300 hover:underline focus:outline-2 focus:outline-brand-100`
 
 export function TextLink({
   href,
@@ -16,7 +16,7 @@ export function TextLink({
   children,
   ...rest
 }: TextLinkProps) {
-  className = clsx(baseStyles, className)
+  className = clsx(linkBaseStyles, className)
 
   return (
     <CustomLink href={href} className={className} {...rest}>
