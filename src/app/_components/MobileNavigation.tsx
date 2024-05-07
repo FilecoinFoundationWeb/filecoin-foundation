@@ -18,6 +18,27 @@ import { PATHS } from '@/constants/paths'
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
 const communityItems = [PATHS.ECOSYSTEM, PATHS.GOVERNANCE]
 
+type MobileLinkProps = {
+  label: string
+  path: string
+  nested?: boolean
+  setOpen: Dispatch<SetStateAction<boolean>>
+}
+
+function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
+  return (
+    <li className={clsx(nested ? 'border-l border-brand-400' : '-ml-5')}>
+      <TextLink
+        href={path}
+        className="inline-block px-5 py-2.5"
+        onClick={() => setOpen(false)}
+      >
+        {label}
+      </TextLink>
+    </li>
+  )
+}
+
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
 
@@ -100,26 +121,5 @@ export function MobileNavigation() {
         </div>
       </SlideOver>
     </Fragment>
-  )
-}
-
-type MobileLinkProps = {
-  label: string
-  path: string
-  nested?: boolean
-  setOpen: Dispatch<SetStateAction<boolean>>
-}
-
-function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
-  return (
-    <li className={clsx(nested ? 'border-l border-brand-400' : '-ml-5')}>
-      <TextLink
-        href={path}
-        className="inline-block px-5 py-2.5"
-        onClick={() => setOpen(false)}
-      >
-        {label}
-      </TextLink>
-    </li>
   )
 }
