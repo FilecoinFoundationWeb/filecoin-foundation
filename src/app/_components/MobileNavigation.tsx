@@ -103,7 +103,7 @@ export function MobileNavigation() {
   )
 }
 
-interface MobileLinkProps {
+type MobileLinkProps = {
   label: string
   path: string
   nested?: boolean

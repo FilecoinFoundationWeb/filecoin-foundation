@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 
 import { Dialog, Transition } from '@headlessui/react'
 
-interface SlideOverProps {
+type SlideOverProps = {
   open: boolean
   setOpen: (open: boolean) => void
   children: React.ReactNode

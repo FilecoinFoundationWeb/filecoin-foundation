@@ -8,7 +8,7 @@ const touchTargetSpacing = 2
 const touchTargetClass = `p-${touchTargetSpacing}`
 const touchTargetOffsetClass = `-m-${touchTargetSpacing} sm:mx-0`
 
-interface SocialProps {
+type SocialProps = {
   justify?: 'left' | 'between'
 }
 
