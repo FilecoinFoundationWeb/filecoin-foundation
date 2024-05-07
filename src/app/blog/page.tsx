@@ -5,8 +5,10 @@ import dynamic from 'next/dynamic'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { usePagination } from '@/hooks/usePagination'
+import { useSortQuery } from '@/hooks/useSortQuery'
 
 import { BlogSearchInput } from '@/components/BlogSearchInput'
+import { BlogSortController } from '@/components/BlogSortController'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
@@ -20,13 +22,14 @@ const NoSSRPagination = dynamic(
   { ssr: false },
 )
 
-import { BlogPostData } from '@/types/blogPostTypes'
+import { type BlogPostData } from '@/types/blogPostTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
+import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -96,28 +99,31 @@ type Props = {
 
 const POSTS_PER_PAGE = 20
 
-const sortedPosts = [...posts].sort((a, b) => {
-  if (!a.publishedOn || !b.publishedOn) return 0
-  return new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
-})
-
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
     throw new Error('Featured post not found')
   }
 
+  const sortQuery = useSortQuery(searchParams)
+
   const cleanSearchQuery = searchParams[SEARCH_KEY]
     ? searchParams[SEARCH_KEY].toString().toLowerCase()
     : ''
 
-  const filteredAndSortedPosts = useMemo(() => {
-    return sortedPosts.filter((post) =>
+  const sortedAndFilteredPosts = useMemo(() => {
+    const filteredPosts = posts.filter((post) =>
       post.title.toLowerCase().includes(cleanSearchQuery),
     )
-  }, [cleanSearchQuery])
+
+    return sortEntriesByDate({
+      entries: filteredPosts,
+      sortOption: sortQuery,
+      dateField: 'publishedOn',
+    })
+  }, [cleanSearchQuery, sortQuery])
 
   const { currentPage, pageCount } = usePagination({
-    totalEntries: filteredAndSortedPosts.length,
+    totalEntries: sortedAndFilteredPosts.length,
     entriesPerPage: POSTS_PER_PAGE,
     pageQuery: searchParams[PAGE_KEY],
   })
@@ -126,8 +132,8 @@ export default function Blog({ searchParams }: Props) {
   const lastPostIndex = currentPage * POSTS_PER_PAGE
 
   const paginatedPosts = useMemo(() => {
-    return filteredAndSortedPosts.slice(firstPostIndex, lastPostIndex)
-  }, [filteredAndSortedPosts, firstPostIndex, lastPostIndex])
+    return sortedAndFilteredPosts.slice(firstPostIndex, lastPostIndex)
+  }, [firstPostIndex, lastPostIndex, sortedAndFilteredPosts])
 
   return (
     <PageLayout>
@@ -149,9 +155,12 @@ export default function Blog({ searchParams }: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogSearchInput searchQuery={cleanSearchQuery} />
+        <div className="flex w-full justify-end gap-3">
+          <BlogSearchInput searchQuery={cleanSearchQuery} />
+          <BlogSortController />
+        </div>
 
-        {filteredAndSortedPosts.length === 0 ? (
+        {sortedAndFilteredPosts.length === 0 ? (
           <NoResultsMessage />
         ) : (
           <>
