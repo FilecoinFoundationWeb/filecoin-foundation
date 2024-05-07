@@ -98,7 +98,6 @@ export function MobileNavigation() {
           <li>
             <p className="my-2.5 text-brand-300">Community</p>
           </li>
-
           {communityItems.map((item) => (
             <MobileLink
               key={item.path}
