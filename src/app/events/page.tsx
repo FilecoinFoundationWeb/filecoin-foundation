@@ -1,5 +1,7 @@
 import { WebPage, WithContext } from 'schema-dts'
 
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -17,6 +19,7 @@ import { attributes } from '@/content/pages/events.md'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { getInvolvedData } from './data/getInvolvedData'
 import { EventsClient } from './EventsClient'
 
 const { featured_post: featuredEventSlug, seo } = attributes
@@ -92,6 +95,22 @@ export default function Events() {
 
       <PageSection kicker="Events" title="All Events">
         <EventsClient events={events} />
+      </PageSection>
+
+      <PageSection
+        kicker="Get Involved"
+        title="Get in Touch With the Events Team"
+      >
+        <CardLayout>
+          {getInvolvedData.map(({ title, description, cta }) => (
+            <Card
+              key={title}
+              title={title}
+              description={description}
+              cta={cta}
+            />
+          ))}
+        </CardLayout>
       </PageSection>
     </PageLayout>
   )
