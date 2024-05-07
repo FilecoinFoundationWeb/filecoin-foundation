@@ -9,7 +9,7 @@ const touchTargetClass = `p-${touchTargetSpacing}`
 const touchTargetOffsetClass = `-m-${touchTargetSpacing} sm:mx-0`
 
 type SocialProps = {
-  justify?: 'left' | 'between'
+  justify?: 'start' | 'between'
 }
 
 export function Social({ justify = 'between' }: SocialProps) {
@@ -17,6 +17,7 @@ export function Social({ justify = 'between' }: SocialProps) {
     <ul
       className={clsx(
         'flex flex-wrap items-center gap-4',
+        justify === 'start' && 'justify-start',
         justify === 'between' && 'justify-between',
         touchTargetOffsetClass,
       )}
