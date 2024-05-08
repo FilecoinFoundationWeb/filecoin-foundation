@@ -23,7 +23,7 @@ const NoSSRPagination = dynamic(
 )
 
 import { type BlogPostData } from '@/types/blogPostTypes'
-import { NextServerSearchParams } from '@/types/searchParams'
+import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
@@ -104,11 +104,11 @@ export default function Blog({ searchParams }: Props) {
     throw new Error('Featured post not found')
   }
 
-  const sortQuery = useSortQuery(searchParams)
-
   const cleanSearchQuery = searchParams[SEARCH_KEY]
     ? searchParams[SEARCH_KEY].toString().toLowerCase()
     : ''
+
+  const { sortQuery } = useSortQuery({ searchParams })
 
   const sortedAndFilteredPosts = useMemo(() => {
     const filteredPosts = posts.filter((post) =>

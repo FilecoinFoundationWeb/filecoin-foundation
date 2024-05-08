@@ -4,11 +4,12 @@ import { useState, useEffect } from 'react'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import {
-  type SortOptionType,
-  DEFAULT_SORT_OPTION,
-  SortListbox,
-} from '@/components/SortListbox'
+import { SortListbox } from '@/components/SortListbox'
+
+import { type SortOptionType } from '@/types/sortTypes'
+
+import { SORT_KEY } from '@/constants/searchParams'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 export function BlogSortController() {
   const [sortOption, setSortOption] =
@@ -16,7 +17,7 @@ export function BlogSortController() {
   const updateSearchParams = useUpdateSearchParams()
 
   useEffect(() => {
-    updateSearchParams({ sort: sortOption })
+    updateSearchParams({ [SORT_KEY]: sortOption })
   }, [sortOption, updateSearchParams])
 
   return (

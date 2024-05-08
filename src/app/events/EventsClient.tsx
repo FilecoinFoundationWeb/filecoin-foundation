@@ -4,15 +4,14 @@ import { useEffect, useState } from 'react'
 
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
-import {
-  DEFAULT_SORT_OPTION,
-  type SortOptionType,
-  SortListbox,
-} from '@/components/SortListbox'
+import { SortListbox } from '@/components/SortListbox'
 
-import { EventData } from '@/types/eventTypes'
+import { type EventData } from '@/types/eventTypes'
+import { type SortOptionType } from '@/types/sortTypes'
 
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
+
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 type EventsClientProps = {
   events: EventData[]

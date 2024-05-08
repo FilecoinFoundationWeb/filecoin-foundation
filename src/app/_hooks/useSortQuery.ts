@@ -1,39 +1,55 @@
-import { useCallback, useMemo } from 'react'
+import { useMemo } from 'react'
 
-import {
-  DEFAULT_SORT_OPTION,
-  type SortOptionType,
-} from '@/components/SortListbox'
-
-import { NextServerSearchParams } from '@/types/searchParams'
+import { type NextServerSearchParams } from '@/types/searchParams'
+import { type SortOptionType } from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
+import {
+  DEFAULT_SORT_OPTION,
+  VALID_SORT_OPTIONS,
+} from '@/constants/sortConstants'
 
-export function useSortQuery(
-  searchParams: NextServerSearchParams,
-  defaultSortOption: SortOptionType = DEFAULT_SORT_OPTION,
-): SortOptionType {
-  const validateSortOptionQuery = useCallback(
-    (sortQuery: string | string[]): SortOptionType => {
-      const validSortOptions: SortOptionType[] = ['newest', 'oldest']
-      const queryValue = Array.isArray(sortQuery) ? sortQuery[0] : sortQuery
-      const normalizedQuery = queryValue.toLowerCase()
+type UseSortQueryProps = {
+  searchParams: NextServerSearchParams
+  defaultSortOption?: SortOptionType
+}
 
-      if (validSortOptions.includes(normalizedQuery as SortOptionType)) {
-        return normalizedQuery as SortOptionType
-      }
+type UseSortQueryResult = { sortQuery: SortOptionType }
 
-      return defaultSortOption
-    },
-    [defaultSortOption],
-  )
+function validateSortOptionQuery(
+  sortQuery: NextServerSearchParams['sort'],
+): SortOptionType | null {
+  if (!sortQuery) {
+    return null
+  }
 
+  const queryValue = Array.isArray(sortQuery) ? sortQuery[0] : sortQuery
+
+  if (!queryValue) {
+    return null
+  }
+
+  const normalizedQuery = queryValue.toLowerCase()
+
+  if (VALID_SORT_OPTIONS.includes(normalizedQuery as SortOptionType)) {
+    return normalizedQuery as SortOptionType
+  }
+
+  return null
+}
+
+export function useSortQuery({
+  searchParams,
+  defaultSortOption = DEFAULT_SORT_OPTION,
+}: UseSortQueryProps): UseSortQueryResult {
   const sortQuery = useMemo(() => {
     const rawSortQuery = searchParams[SORT_KEY]
-    return validateSortOptionQuery(
-      rawSortQuery ? rawSortQuery : defaultSortOption,
-    )
-  }, [searchParams, defaultSortOption, validateSortOptionQuery])
+    const validatedSortOption = validateSortOptionQuery(rawSortQuery)
 
-  return sortQuery
+    return validatedSortOption !== null
+      ? validatedSortOption
+      : defaultSortOption
+  }, [searchParams, defaultSortOption])
+
+  return { sortQuery }
 }

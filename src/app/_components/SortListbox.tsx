@@ -7,24 +7,14 @@ import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
-export type SortOptionType = 'newest' | 'oldest'
+import { type SortOptionType } from '@/types/sortTypes'
 
-type SortSetting = {
-  id: SortOptionType
-  name: string
-}
+import { sortSettings } from '@/constants/sortConstants'
 
 type SortListboxProps = {
   sortOption: SortOptionType
   onSortOptionChange: (selectedSortOption: SortOptionType) => void
 }
-
-export const DEFAULT_SORT_OPTION = 'newest'
-
-const sortSettings: SortSetting[] = [
-  { id: 'newest', name: 'Newest' },
-  { id: 'oldest', name: 'Oldest' },
-]
 
 export function SortListbox({
   sortOption,
