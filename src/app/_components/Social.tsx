@@ -4,16 +4,17 @@ import { Icon } from '@/components/Icon'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-const touchTargetSpacing = 2
-const touchTargetClass = `p-${touchTargetSpacing}`
-const touchTargetOffsetClass = `-m-${touchTargetSpacing} sm:mx-0`
+const touchTarget = {
+  class: 'p-2',
+  offsetClass: '-m-2 sm:mx-0',
+}
 
 export function Social() {
   return (
     <ul
       className={clsx(
-        'flex flex-wrap items-center justify-between gap-4 sm:px-8',
-        touchTargetOffsetClass,
+        'flex flex-wrap items-center justify-between gap-4',
+        touchTarget.offsetClass,
       )}
     >
       {socialLinksWithIcons.map(({ label, href, icon }, key) => {
@@ -26,7 +27,7 @@ export function Social() {
               rel="noopener noreferrer"
               className={clsx(
                 'text-brand-100 outline-white hover:text-brand-400 focus:outline-2',
-                touchTargetClass,
+                touchTarget.class,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
