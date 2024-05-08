@@ -19,6 +19,11 @@ import { PATHS } from '@/constants/paths'
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
 const communityItems = [PATHS.ECOSYSTEM, PATHS.GOVERNANCE]
 
+const linkTouchTarget = {
+  class: 'inline-block px-5 py-2.5',
+  offsetClass: '-ml-5',
+}
+
 type MobileLinkProps = {
   label: string
   path: Route
@@ -27,29 +32,26 @@ type MobileLinkProps = {
 }
 
 function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
-  const touchTargetSpacing = 5
-  const touchTargetClass = `px-${touchTargetSpacing}`
-  const touchTargetOffsetClass = `-ml-${touchTargetSpacing}`
-
   return (
     <li
       className={clsx(
-        nested ? 'border-l border-brand-400' : touchTargetOffsetClass,
+        nested ? 'border-l border-brand-400' : linkTouchTarget.offsetClass,
       )}
     >
       <Link
         href={path}
-        className={clsx(
-          linkBaseStyles,
-          touchTargetClass,
-          'inline-block py-2.5',
-        )}
+        className={clsx(linkBaseStyles, linkTouchTarget.class)}
         onClick={() => setOpen(false)}
       >
         {label}
       </Link>
     </li>
   )
+}
+
+const buttonTouchTarget = {
+  class: 'size-12',
+  offsetClass: '-mr-4',
 }
 
 type IconButtonProps = {
@@ -61,8 +63,12 @@ type IconButtonProps = {
 function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
   return (
     <button
-      className="-mr-4 flex size-12 items-center justify-center focus:outline-2 focus:outline-brand-100 lg:hidden"
       aria-label={label}
+      className={clsx(
+        buttonTouchTarget.class,
+        buttonTouchTarget.offsetClass,
+        'flex items-center justify-center focus:outline-2 focus:outline-brand-100 lg:hidden',
+      )}
       onClick={onClick}
     >
       <Icon component={IconComponent} color="brand-300" />

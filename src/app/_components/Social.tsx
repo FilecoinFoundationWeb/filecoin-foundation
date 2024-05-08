@@ -4,9 +4,10 @@ import { Icon } from '@/components/Icon'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-const touchTargetSpacing = 2
-const touchTargetClass = `p-${touchTargetSpacing}`
-const touchTargetOffsetClass = `-m-${touchTargetSpacing} sm:mx-0`
+const touchTarget = {
+  class: 'p-2',
+  offsetClass: '-m-2 sm:mx-0',
+}
 
 type SocialProps = {
   justify?: 'start' | 'between'
@@ -19,7 +20,7 @@ export function Social({ justify = 'between' }: SocialProps) {
         'flex flex-wrap items-center gap-4',
         justify === 'start' && 'justify-start',
         justify === 'between' && 'justify-between',
-        touchTargetOffsetClass,
+        touchTarget.offsetClass,
       )}
     >
       {socialLinksWithIcons.map(({ label, href, icon }, key) => {
@@ -32,7 +33,7 @@ export function Social({ justify = 'between' }: SocialProps) {
               rel="noopener noreferrer"
               className={clsx(
                 'text-brand-100 outline-white hover:text-brand-400 focus:outline-2',
-                touchTargetClass,
+                touchTarget.class,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
