@@ -149,7 +149,7 @@ export function MobileNavigation() {
         </ul>
 
         <div className="px-4">
-          <Social justify="start" />
+          <Social />
         </div>
       </SlideOver>
     </Fragment>
