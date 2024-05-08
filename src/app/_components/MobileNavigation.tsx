@@ -81,7 +81,7 @@ export function MobileNavigation() {
       />
 
       <SlideOver open={open} setOpen={setOpen}>
-        <div className="flex items-center justify-between px-6 pb-12 pt-8 sm:pb-16 md:pb-24">
+        <div className="flex items-center justify-between px-6 pb-12 pt-8 sm:pb-16">
           <Link
             className="flex-shrink-0 outline-white focus:outline-2"
             href={PATHS.HOME.path}
@@ -98,10 +98,7 @@ export function MobileNavigation() {
           />
         </div>
 
-        <ul
-          className="px-6 pb-12 sm:pb-16 md:pb-24"
-          aria-label="Navigation options"
-        >
+        <ul className="px-6 pb-12 sm:pb-16" aria-label="Navigation options">
           <MobileLink
             label={PATHS.ABOUT.label}
             path={PATHS.ABOUT.path}
