@@ -49,11 +49,6 @@ function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
   )
 }
 
-const buttonTouchTarget = {
-  class: 'size-12',
-  offsetClass: '-mr-4',
-}
-
 type IconButtonProps = {
   icon: IconProps['component']
   label: string
@@ -65,9 +60,7 @@ function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
     <button
       aria-label={label}
       className={clsx(
-        buttonTouchTarget.class,
-        buttonTouchTarget.offsetClass,
-        'flex items-center justify-center focus:outline-2 focus:outline-brand-100 lg:hidden',
+        'flex size-12 items-center justify-center rounded-lg border border-brand-300 focus:outline-2 focus:outline-brand-100 lg:hidden',
       )}
       onClick={onClick}
     >
