@@ -42,7 +42,7 @@ function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
         className={clsx(
           linkBaseStyles,
           touchTargetClass,
-          'inline-block px-5 py-2.5',
+          'inline-block py-2.5',
         )}
         onClick={() => setOpen(false)}
       >
