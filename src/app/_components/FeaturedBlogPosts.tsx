@@ -26,7 +26,8 @@ export function FeaturedBlogPosts() {
           image={image}
           textIsClamped={true}
           cta={{
-            href: `${PATHS.BLOG.path}/${slug}` as Route,
+            href: `${PATHS.BLOG.path}/${slug}`,
+            text: 'Learn More',
           }}
         />
       ))}

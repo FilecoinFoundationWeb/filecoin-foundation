@@ -1,5 +1,7 @@
 import { useMemo } from 'react'
 
+import dynamic from 'next/dynamic'
+
 import { WebPage, WithContext } from 'schema-dts'
 
 import { usePagination } from '@/hooks/usePagination'
@@ -11,8 +13,12 @@ import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { Pagination } from '@/components/Pagination'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
 
 import { BlogPostData } from '@/types/blogPostTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
@@ -173,8 +179,11 @@ export default function Blog({ searchParams }: Props) {
               })}
             </CardLayout>
 
-            <div className="mx-auto mt-1 sm:mt-6">
-              <Pagination pageCount={pageCount} currentPage={currentPage} />
+            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
+              <NoSSRPagination
+                pageCount={pageCount}
+                currentPage={currentPage}
+              />
             </div>
           </>
         )}

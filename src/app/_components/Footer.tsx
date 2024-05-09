@@ -72,7 +72,11 @@ export function Footer() {
       </div>
 
       <hr />
-      <Social />
+
+      <div className="sm:px-8">
+        <Social />
+      </div>
+
       <hr />
 
       <div className="flex flex-wrap gap-x-20 gap-y-6">
