@@ -10,8 +10,6 @@ export function DescriptionText({ children, variant }: DescriptionProps) {
     bold: 'text-xl font-bold',
   }
 
-  console.log()
-
   if (Array.isArray(children)) {
     return (
       <>

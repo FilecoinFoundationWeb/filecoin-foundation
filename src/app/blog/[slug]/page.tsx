@@ -1,6 +1,7 @@
 import { BlogPosting, WithContext } from 'schema-dts'
 
 import { BlogHeader, ReturnButton } from '@/components/BlogHeader'
+import { BreadCrumbs } from '@/components/BreadCrumbs'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -11,7 +12,6 @@ import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMe
 import { getBlogPostData } from '@/utils/getBlogPostData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
-import { BreadCrumbs } from '@/_components/BreadCrumbs'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
@@ -62,8 +62,6 @@ export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
   const { title, description, image, content, publishedOn, category } = data
-
-  console.log(typeof publishedOn)
 
   return (
     <PageLayout>
