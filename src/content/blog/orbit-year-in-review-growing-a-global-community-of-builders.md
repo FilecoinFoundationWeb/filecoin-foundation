@@ -5,7 +5,7 @@ created-on: 2023-12-07T13:50:04.187Z
 updated-on: 2023-12-07T13:50:04.200Z
 published-on: 2023-12-07T13:50:04.211Z
 featured: false
-category: announcements
+category: Announcements
 description: In 2023, the Filecoin Orbit program helped seed a new crop of
   thousands of builders in the Filecoin ecosystem.
 image:

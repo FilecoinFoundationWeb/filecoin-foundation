@@ -1,13 +1,14 @@
 import clsx from 'clsx'
 
 type BadgeProps = {
-  variant?: 'primary' | 'ghost'
+  variant?: 'primary' | 'ghost' | 'ghostBlue'
   children: string
 }
 
 const variantStyles = {
   primary: 'bg-brand-300 text-brand-800',
   ghost: 'bg-brand-800 border border-brand-100 text-brand-100',
+  ghostBlue: 'bg-brand-800 border border-brand-500 text-brand-100',
 }
 
 export function Badge({ variant = 'primary', children }: BadgeProps) {

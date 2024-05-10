@@ -1,7 +1,7 @@
 import { BlogPosting, WithContext } from 'schema-dts'
 
+import { BlogHeader, ReturnButton } from '@/components/BlogHeader'
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -11,6 +11,7 @@ import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMe
 import { getBlogPostData } from '@/utils/getBlogPostData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
+import { BreadCrumbs } from '@/_components/BreadCrumbs'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
@@ -60,15 +61,31 @@ function createBlogPostStructuredData(
 export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
-  const { title, description, image, content } = data
+  const { title, description, image, content, publishedOn, category } = data
+
+  console.log(typeof publishedOn)
 
   return (
     <PageLayout>
       <StructuredDataScript
         structuredData={createBlogPostStructuredData(data)}
       />
-      <PageHeader title={title} description={description} image={image} />
-      {content && <MarkdownContent>{content}</MarkdownContent>}
+      <BreadCrumbs />
+      <div className="relative">
+        <div className="absolute">
+          <ReturnButton origin="blog" />
+        </div>
+        <div className="m-auto max-w-[682px] space-y-6">
+          <BlogHeader
+            title={title}
+            description={description}
+            image={image}
+            date={publishedOn}
+            category={category}
+          />
+          {content && <MarkdownContent>{content}</MarkdownContent>}
+        </div>
+      </div>
     </PageLayout>
   )
 }
