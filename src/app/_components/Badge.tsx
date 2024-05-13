@@ -1,24 +1,20 @@
 import clsx from 'clsx'
 
 type BadgeProps = {
-  variant?: 'primary' | 'ghost'
+  variant?: 'primary' | 'secondary'
   children: string
 }
 
 const variantStyles = {
-  primary: 'bg-brand-300 text-brand-800',
-  ghost: 'bg-brand-800 border border-brand-100 text-brand-100',
+  primary: 'border-brand-100',
+  secondary: 'border-brand-500',
 }
 
 export function Badge({ variant = 'primary', children }: BadgeProps) {
+  const baseStyles =
+    'inline-block max-w-fit rounded-lg border bg-brand-800 px-2 py-1 text-center text-xs font-semibold capitalize text-brand-100'
+
   return (
-    <span
-      className={clsx(
-        'inline-block max-w-fit rounded-lg px-2 py-1 text-center text-xs font-semibold',
-        variantStyles[variant],
-      )}
-    >
-      {children}
-    </span>
+    <span className={clsx(baseStyles, variantStyles[variant])}>{children}</span>
   )
 }

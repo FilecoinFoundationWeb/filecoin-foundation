@@ -1,7 +1,7 @@
 import { BlogPosting, WithContext } from 'schema-dts'
 
+import { BlogPostHeader } from '@/components/BlogPostHeader'
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -60,15 +60,22 @@ function createBlogPostStructuredData(
 export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
-  const { title, description, image, content } = data
+  const { title, image, content, publishedOn, category } = data
 
   return (
     <PageLayout>
       <StructuredDataScript
         structuredData={createBlogPostStructuredData(data)}
       />
-      <PageHeader title={title} description={description} image={image} />
-      {content && <MarkdownContent>{content}</MarkdownContent>}
+      <div className="m-auto max-w-2xl space-y-16">
+        <BlogPostHeader
+          title={title}
+          image={image}
+          publishedOn={publishedOn}
+          category={category}
+        />
+        {content && <MarkdownContent>{content}</MarkdownContent>}
+      </div>
     </PageLayout>
   )
 }
