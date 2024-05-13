@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
+import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -10,6 +11,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { formatDate } from '@/utils/formatDate'
 import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
@@ -60,7 +62,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
   const {
-    featured,
     image,
     title,
     content,
@@ -70,6 +71,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     twitter,
     featuredContent,
     tags,
+    publishedOn,
+    newsUpdate,
   } = data
 
   return (
@@ -79,8 +82,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
       />
 
       <article>
-        <Badge>{featured ? 'Featured Project' : 'Ecosystem Project'}</Badge>
-
         {image.url && (
           <Image
             priority
@@ -88,60 +89,82 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             alt={image.alt}
             width={232}
             height={220}
-            className="block h-auto object-contain"
+            className="my-16 block h-auto object-contain"
           />
         )}
+        <div className="grid gap-16 md:grid-cols-[auto,_200px]">
+          <div>
+            <div className="mb-8 space-y-6">
+              <Heading tag="h1" variant="4xl">
+                {title}
+              </Heading>
+              {content && <MarkdownContent>{content}</MarkdownContent>}
+            </div>
 
-        <Heading tag="h1" variant="2xl">
-          {title}
-        </Heading>
+            {videoUrl && (
+              <iframe
+                allowFullScreen
+                className="my-6"
+                width="560"
+                height="315"
+                aria-label="Embedded YouTube Video"
+                src={videoUrl}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              />
+            )}
 
-        {content && <MarkdownContent>{content}</MarkdownContent>}
+            {newsUpdate && (
+              <div className="mb-4 space-y-4">
+                <Heading tag="h3" variant="xl" color="secondary">
+                  Latest Update From Project:
+                </Heading>
+                <DescriptionText>{newsUpdate}</DescriptionText>
+              </div>
+            )}
 
-        <ul className="flex list-none flex-col gap-1">
-          {website && (
-            <li className="mb-0 ml-0">
-              <TextLink href={website}>Website</TextLink>
-            </li>
-          )}
-          {repo && (
-            <li className="mb-0 ml-0">
-              <TextLink href={repo}>GitHub</TextLink>
-            </li>
-          )}
-          {twitter && (
-            <li className="mb-0 ml-0">
-              <TextLink href={twitter}>Twitter</TextLink>
-            </li>
-          )}
-          {featuredContent && (
-            <li className="mb-0 ml-0">
-              <TextLink href={featuredContent}>Featured Content</TextLink>
-            </li>
-          )}
-        </ul>
+            <div className="space-y-8">
+              {publishedOn && (
+                <span className="inline-block text-sm text-blue-300">
+                  {formatDate(publishedOn)}
+                </span>
+              )}
 
-        {videoUrl && (
-          <iframe
-            allowFullScreen
-            width="560"
-            height="315"
-            aria-label="Embedded YouTube Video"
-            src={videoUrl}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-          />
-        )}
-
-        <ul className="flex list-none flex-wrap gap-3">
-          {tags.map((tag) => (
-            <li key={tag} className="ml-0">
-              <span className="rounded-lg border border-white bg-brand-800 px-2 py-1 text-sm font-medium uppercase text-white">
-                {tag}
-              </span>
-            </li>
-          ))}
-        </ul>
+              <ul className="flex list-none flex-wrap gap-3">
+                {tags.map((tag) => (
+                  <li key={tag} className="ml-0">
+                    <Badge variant="secondary">{tag}</Badge>
+                    {/* <span className="rounded-lg border border-white bg-brand-800 px-2 py-1 text-sm font-medium uppercase text-white">
+                    {tag}
+                  </span> */}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <ul className="grid grid-cols-2 gap-5 md:auto-rows-max md:grid-cols-1">
+            {website && (
+              <li>
+                <TextLink href={website}>Website</TextLink>
+              </li>
+            )}
+            {repo && (
+              <li>
+                <TextLink href={repo}>GitHub</TextLink>
+              </li>
+            )}
+            {twitter && (
+              <li>
+                <TextLink href={twitter}>Twitter</TextLink>
+              </li>
+            )}
+            {featuredContent && (
+              <li>
+                <TextLink href={featuredContent}>Featured Content</TextLink>
+              </li>
+            )}
+          </ul>
+        </div>
       </article>
     </>
   )

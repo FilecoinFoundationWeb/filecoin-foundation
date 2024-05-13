@@ -8,6 +8,7 @@ export type HeadingProps = {
   iconProps?: IconProps
   className?: string
   children: string
+  color?: 'primary' | 'secondary'
 }
 
 const variantStyles = {
@@ -22,12 +23,18 @@ const variantStyles = {
   kicker: 'text-sm uppercase tracking-widest',
 }
 
+const colorStyles = {
+  primary: 'inherit',
+  secondary: 'text-blue-300',
+}
+
 export function Heading({
   tag,
   variant,
   className,
   iconProps,
   children,
+  color = 'primary',
   ...rest
 }: HeadingProps) {
   const Tag = tag
@@ -35,7 +42,12 @@ export function Heading({
 
   const baseStyles = 'text-balance'
 
-  className = clsx(baseStyles, variantStyles[variant], className)
+  className = clsx(
+    baseStyles,
+    variantStyles[variant],
+    className,
+    colorStyles[color],
+  )
 
   if (icon) {
     return (
