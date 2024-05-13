@@ -1,14 +1,15 @@
 import clsx from 'clsx'
 
+import Capitalise from '@/utils/capitalise'
+
 type BadgeProps = {
-  variant?: 'primary' | 'ghost' | 'ghostBlue'
+  variant?: 'primary' | 'secondary'
   children: string
 }
 
 const variantStyles = {
-  primary: 'bg-brand-300 text-brand-800',
-  ghost: 'bg-brand-800 border border-brand-100 text-brand-100',
-  ghostBlue: 'border border-brand-500 bg-brand-800 text-brand-100',
+  primary: 'bg-brand-800 border border-brand-100 text-brand-100',
+  secondary: 'border border-brand-500 bg-brand-800 text-brand-100',
 }
 
 export function Badge({ variant = 'primary', children }: BadgeProps) {
@@ -19,7 +20,7 @@ export function Badge({ variant = 'primary', children }: BadgeProps) {
         variantStyles[variant],
       )}
     >
-      {children}
+      {Capitalise(children)}
     </span>
   )
 }

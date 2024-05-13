@@ -1,35 +1,29 @@
 import Image from 'next/image'
 
 import { Badge } from '@/components/Badge'
-import {
-  type DescriptionTextType,
-  DescriptionText,
-} from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
 import { formatDate } from '@/utils/formatDate'
 
-type BlogHeaderProps = {
+type BlogPostHeaderProps = {
   title: string
-  description: DescriptionTextType
   date?: string
   image?: ImageProps
   category?: string
 }
 
-export function BlogHeader({
+export function BlogPostHeader({
   title,
-  description,
   date,
   image,
   category,
-}: BlogHeaderProps) {
+}: BlogPostHeaderProps) {
   return (
     <header>
       <div className="mb-8 space-y-4">
-        {category && <Badge variant="ghostBlue">{category}</Badge>}
+        {category && <Badge variant="secondary">{category}</Badge>}
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>
@@ -48,8 +42,6 @@ export function BlogHeader({
           />
         </div>
       )}
-
-      <DescriptionText variant="bold">{description}</DescriptionText>
     </header>
   )
 }
