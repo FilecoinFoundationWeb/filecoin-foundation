@@ -1191,28 +1191,28 @@
           "widget": "select",
           "options": [
             {
-              "label": "Announcements",
-              "value": "announcements"
+              "label": "Ecosystem",
+              "value": "ecosystem"
             },
             {
-              "label": "Community",
-              "value": "community"
-            },
-            {
-              "label": "Development",
-              "value": "development"
+              "label": "Events",
+              "value": "events"
             },
             {
               "label": "Interviews",
               "value": "interviews"
             },
             {
+              "label": "News",
+              "value": "news"
+            },
+            {
               "label": "Reports",
               "value": "reports"
             },
             {
-              "label": "Research",
-              "value": "research"
+              "label": "Use Cases",
+              "value": "use Cases"
             }
           ]
         },
