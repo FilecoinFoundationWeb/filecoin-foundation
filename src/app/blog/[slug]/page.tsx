@@ -1,6 +1,6 @@
 import { BlogPosting, WithContext } from 'schema-dts'
 
-import { BlogHeader, ReturnButton } from '@/components/BlogHeader'
+import { BlogHeader } from '@/components/BlogHeader'
 import { BreadCrumbs } from '@/components/BreadCrumbs'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
@@ -69,20 +69,15 @@ export default function BlogPost({ params }: BlogPostProps) {
         structuredData={createBlogPostStructuredData(data)}
       />
       <BreadCrumbs />
-      <div className="relative">
-        <div className="absolute">
-          <ReturnButton origin="blog" />
-        </div>
-        <div className="m-auto max-w-[682px] space-y-6">
-          <BlogHeader
-            title={title}
-            description={description}
-            image={image}
-            date={publishedOn}
-            category={category}
-          />
-          {content && <MarkdownContent>{content}</MarkdownContent>}
-        </div>
+      <div className="m-auto max-w-2xl space-y-6">
+        <BlogHeader
+          title={title}
+          description={description}
+          image={image}
+          date={publishedOn}
+          category={category}
+        />
+        {content && <MarkdownContent>{content}</MarkdownContent>}
       </div>
     </PageLayout>
   )
