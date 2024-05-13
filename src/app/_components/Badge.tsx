@@ -1,7 +1,5 @@
 import clsx from 'clsx'
 
-import Capitalise from '@/utils/capitalise'
-
 type BadgeProps = {
   variant?: 'primary' | 'secondary'
   children: string
@@ -16,11 +14,11 @@ export function Badge({ variant = 'primary', children }: BadgeProps) {
   return (
     <span
       className={clsx(
-        'inline-block max-w-fit rounded-lg px-2 py-1 text-center text-xs font-semibold',
+        'inline-block max-w-fit rounded-lg px-2 py-1 text-center text-xs font-semibold capitalize',
         variantStyles[variant],
       )}
     >
-      {Capitalise(children)}
+      {children}
     </span>
   )
 }
