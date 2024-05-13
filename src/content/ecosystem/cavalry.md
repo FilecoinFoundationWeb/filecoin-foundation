@@ -6,7 +6,7 @@ updated-on: 2024-01-05T21:34:45.600Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Cavalry is 2D animation software for Mac and Windows."
-topic: tooling-productivity
+category: tooling-productivity
 tags:
   - arts-collectibles
   - nfts

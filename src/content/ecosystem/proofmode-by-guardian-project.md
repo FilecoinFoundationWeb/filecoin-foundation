@@ -6,7 +6,7 @@ updated-on: "2024-02-27T19:57:29.845Z"
 published-on: "2024-02-27T19:57:29.861Z"
 featured: false
 description: "Open-source mobile camera app, toolkit and protocol that adds verifiable digital proof to photos and video at the point of capture."
-topic:
+category:
   - media-entertainment
 tags:
   - photo-video

@@ -6,7 +6,7 @@ updated-on: 2024-01-05T21:36:26.462Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Filecoin Station is a desktop app that securely connects your computer's idle resources, such as storage, compute, or bandwidth, to the Filecoin network by completing jobs on behalf of the network."
-topic: tooling-productivity
+category: tooling-productivity
 tags:
   - data-retrieval
   - depin

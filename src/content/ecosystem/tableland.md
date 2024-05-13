@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:39:20.665Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Tableland is a Web3 database to store and query contract metadata with (structured query language) SQL."
-topic: tooling-productivity
+category: tooling-productivity
 tags:
   - developer-tools
 tech:

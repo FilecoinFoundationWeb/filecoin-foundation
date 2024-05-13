@@ -6,7 +6,7 @@ updated-on: 2024-01-05T21:37:21.385Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "GenRAIT gives scientists a platform to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
-topic: science-climate-space
+category: science-climate-space
 tags:
   - desci
   - health

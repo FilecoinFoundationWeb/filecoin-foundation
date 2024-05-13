@@ -6,7 +6,7 @@ updated-on: 2024-02-26T21:29:27.678Z
 published-on: 2024-02-26T21:29:27.688Z
 featured: false
 description: "Develops decentralized infrastructure for onloading and extracting large amounts of geospatial data."
-topic: science-climate-space
+category: science-climate-space
 tags:
   - universities
   - space

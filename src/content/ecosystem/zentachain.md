@@ -6,7 +6,7 @@ updated-on: 2024-02-28T23:55:57.787Z
 published-on: 2024-02-28T23:55:57.795Z
 featured: false
 description: "Privacy-focused IoT blockchain networking project that is focused on communication and data storage."
-topic: artificial-intelligence
+category: artificial-intelligence
 tags:
   - ai-productivity-and-utilities
   - bridges-oracles

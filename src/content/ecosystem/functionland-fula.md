@@ -6,7 +6,7 @@ updated-on: 2024-01-18T16:17:36.566Z
 published-on: 2024-01-18T16:17:36.584Z
 featured: false
 description: "Functionland has built a peer-to-peer platform (Fula) that aims to disrupt traditional cloud storage."
-topic: storage
+category: storage
 tags:
   - data-storage-management
 tech:

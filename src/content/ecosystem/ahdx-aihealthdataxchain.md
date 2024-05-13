@@ -6,7 +6,7 @@ updated-on: 2024-02-22T17:51:25.132Z
 published-on: 2024-02-22T17:51:25.159Z
 featured: false
 description: "We offer a decentralized patient health data marketplace, which allows organizations and patients to securely share or monetize health information."
-topic: education-academia-health
+category: education-academia-health
 tags:
   - health
 tech:

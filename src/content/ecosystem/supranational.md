@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:39:10.579Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "A product and service company developing hardware-accelerated cryptography for verifiable and confidential computing."
-topic: storage
+category: storage
 tags:
   - storage-infrastructure
 tech:

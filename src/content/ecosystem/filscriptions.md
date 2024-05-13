@@ -6,7 +6,7 @@ updated-on: 2024-01-18T17:56:20.306Z
 published-on: 2024-01-18T17:56:20.316Z
 featured: false
 description: "The first inscription aggregation trading platform on Filecoin."
-topic: tooling-productivity
+category: tooling-productivity
 tags:
   - governance-daos-public-goods
 tech:

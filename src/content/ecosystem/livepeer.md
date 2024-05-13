@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:37:41.454Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Livepeer is an open video infrastructure network for live and on-demand streaming."
-topic: "media-entertainment"
+category: "media-entertainment"
 tags:
   - "photo-video"
   - "communication-social"

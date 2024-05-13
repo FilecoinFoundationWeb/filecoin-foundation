@@ -299,13 +299,8 @@
               "required": false,
               "collection": "ecosystem",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"],
               "multiple": true,
               "min": 6,
               "max": 6
@@ -440,13 +435,8 @@
               "widget": "relation",
               "collection": "blog",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"],
               "required": true
             },
             {
@@ -855,13 +845,8 @@
               "widget": "relation",
               "collection": "events",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"],
               "required": true
             },
             {
@@ -1256,13 +1241,8 @@
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
-          "search_fields": [
-            "slug",
-            "title"
-          ],
-          "display_fields": [
-            "title"
-          ],
+          "search_fields": ["slug", "title"],
+          "display_fields": ["title"],
           "multiple": true
         },
         {
@@ -1406,8 +1386,8 @@
           ]
         },
         {
-          "name": "topic",
-          "label": "Topic",
+          "name": "categories",
+          "label": "Category",
           "widget": "select",
           "required": true,
           "options": [
@@ -1649,10 +1629,7 @@
           "widget": "select",
           "required": true,
           "multiple": true,
-          "options": [
-            "filecoin",
-            "ipfs"
-          ]
+          "options": ["filecoin", "ipfs"]
         },
         {
           "name": "featured-content",
@@ -2002,13 +1979,8 @@
           "required": false,
           "collection": "ecosystem",
           "value_field": "slug",
-          "search_fields": [
-            "slug",
-            "title"
-          ],
-          "display_fields": [
-            "title"
-          ],
+          "search_fields": ["slug", "title"],
+          "display_fields": ["title"],
           "multiple": true,
           "min": 6,
           "max": 6

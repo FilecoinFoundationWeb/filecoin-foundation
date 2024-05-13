@@ -15,7 +15,7 @@ export function mapMarkdownToEcosystemProjectData({
     publishedOn: data['published-on'],
     featured: data.featured,
     description: data.description,
-    topic: data.topic,
+    category: data.category,
     tags: data.tags,
     tech: data.tech,
     image: {

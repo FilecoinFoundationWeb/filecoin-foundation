@@ -6,7 +6,7 @@ updated-on: "2024-01-10T18:11:13.127Z"
 published-on: "2024-01-10T18:11:13.198Z"
 featured: true
 description: "MuckRock is a non-profit collaborative news site that gives people the tools to keep governments transparent and accountable."
-topic: "public-goods-dweb"
+category: "public-goods-dweb"
 tags:
   - "dweb"
   - "governance-daos-public-goods"

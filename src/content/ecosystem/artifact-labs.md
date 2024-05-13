@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:35:36.831Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Artifact Labs preserves and connects culture and history on the blockchain."
-topic: public-goods-dweb
+category: public-goods-dweb
 tags:
   - glam
 tech:

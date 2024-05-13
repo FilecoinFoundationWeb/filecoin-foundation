@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:34:20.817Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: true
 description: "The ATLAS Collaboration has partnered with Seal Storage Technology in a pilot project to explore decentralized cloud storage as an efficient and cost-effective option for archival data storage."
-topic: science-climate-space
+category: science-climate-space
 tags:
   - desci
 tech:

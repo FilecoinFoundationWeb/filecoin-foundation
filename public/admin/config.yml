@@ -307,8 +307,8 @@ collections:
             label: Alt Text
             widget: string
             required: true
-      - name: topic
-        label: Topic
+      - name: categories
+        label: Category
         widget: select
         required: true
         options:
@@ -316,8 +316,6 @@ collections:
             value: artificial-intelligence
           - label: "Education, Academia & Health"
             value: education-academia-health
-          - label: "Finance"
-            value: finance
           - label: "Media & Entertainment"
             value: media-entertainment
           - label: "Network"

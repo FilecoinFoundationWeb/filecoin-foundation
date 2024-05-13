@@ -6,7 +6,7 @@ updated-on: 2024-01-05T21:43:31.817Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Filecoin Foundation (FF) facilitates governance of the Filecoin network, funds research and development projects for decentralized web technologies, and supports the growth of the Filecoin ecosystem and community. Its mission is to preserve humanity's most important information."
-topic: network
+category: network
 tags:
   - network-tools
 tech:

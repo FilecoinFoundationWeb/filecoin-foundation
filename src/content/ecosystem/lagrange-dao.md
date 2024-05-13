@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:37:31.113Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Lagrange DAO is a DAO for data value realization, providing data sharing and analytic spaces for decentralized science."
-topic: "storage"
+category: "storage"
 tags:
   - "desci"
 tech:

@@ -6,7 +6,7 @@ updated-on: 2024-01-12T20:15:45.742Z
 published-on: 2024-01-12T20:15:45.772Z
 featured: false
 description: "Internet Development Studio is an engineering and design team based out of Seattle—WA, Boston—MA, and New York—NY. We design, brand, market, and code."
-topic: media-entertainment
+category: media-entertainment
 tags:
   - arts-collectibles
   - data-prep

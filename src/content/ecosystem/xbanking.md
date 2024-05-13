@@ -6,7 +6,7 @@ updated-on: 2024-01-12T20:27:39.359Z
 published-on: 2024-01-12T20:27:39.380Z
 featured: false
 description: "Non-custodial staking & liquid pools provider. Liquid pool provider and market maker for FIL tokens."
-topic: finance
+category: finance
 tags:
   - leasing-and-staking
   - dapp

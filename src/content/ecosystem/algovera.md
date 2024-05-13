@@ -6,7 +6,7 @@ updated-on: "2024-01-11T15:54:16.967Z"
 published-on: "2024-01-11T21:59:05.836Z"
 featured: false
 description: "Algovera is a collaboration platform for large language model applications, allowing users to build AI apps easily, quickly, and with no-code."
-topic: artificial-intelligence
+category: artificial-intelligence
 tags:
   - ai-productivity-and-utilities
 tech:

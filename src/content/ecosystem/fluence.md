@@ -6,7 +6,7 @@ updated-on: 2024-01-05T21:37:04.956Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Fluence is a decentralized serverless computing platform."
-topic: tooling-productivity
+category: tooling-productivity
 tags:
   - developer-tools
 tech:

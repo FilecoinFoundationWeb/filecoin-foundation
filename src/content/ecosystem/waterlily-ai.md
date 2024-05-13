@@ -6,7 +6,7 @@ updated-on: 2024-01-05T21:42:22.039Z
 published-on: 2024-01-11T13:26:59.787Z
 featured: false
 description: "Waterlilly.ai is a Filecoin-powered generative AI tool that allows artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models."
-topic: artificial-intelligence
+category: artificial-intelligence
 tags:
   - ai-productivity-and-utilities
   - arts-collectibles

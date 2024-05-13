@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:39:00.625Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Seal Storage is a data platform that provides sustainable, immutable, and affordable Web3 cloud storage on the Filecoin network."
-topic: storage
+category: storage
 tags:
   - storage-software
 tech:

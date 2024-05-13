@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:39:15.639Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Swan is a distributed data and computing platform."
-topic: tooling-productivity
+category: tooling-productivity
 tags:
   - developer-tools
 tech:

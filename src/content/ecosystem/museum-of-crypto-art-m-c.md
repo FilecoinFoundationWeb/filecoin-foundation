@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:37:50.995Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "The Museum of Crypto Art is an art preservation tool and community of artists, collectors, and developers."
-topic: "media-entertainment"
+category: "media-entertainment"
 tags:
   - "arts-collectibles"
   - "glam"

@@ -6,7 +6,7 @@ updated-on: "2024-01-12T20:30:19.621Z"
 published-on: "2024-01-12T20:30:19.636Z"
 featured: false
 description: "Trusted LLM to book web3 service providers 10x faster."
-topic: "artificial-intelligence"
+category: "artificial-intelligence"
 tags:
   - "ai-productivity-and-utilities"
   - "enterprise"

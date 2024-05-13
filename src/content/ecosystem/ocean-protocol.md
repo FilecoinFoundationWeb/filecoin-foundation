@@ -6,7 +6,7 @@ updated-on: "2024-01-05T21:38:18.024Z"
 published-on: "2024-01-11T13:26:59.787Z"
 featured: false
 description: "Ocean Protocol is a decentralized data exchange protocol to unlock data for AI."
-topic: "artificial-intelligence"
+category: "artificial-intelligence"
 tags:
   - "ai-productivity-and-utilities"
 tech:
