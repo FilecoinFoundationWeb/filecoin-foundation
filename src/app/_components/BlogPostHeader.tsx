@@ -3,37 +3,37 @@ import Image from 'next/image'
 import { Badge } from '@/components/Badge'
 import { Heading } from '@/components/Heading'
 
-import { type ImageProps } from '@/types/sharedProps/imageType'
+import { type BlogPostData } from '@/types/blogPostTypes'
 
 import { formatDate } from '@/utils/formatDate'
 
-type BlogPostHeaderProps = {
-  title: string
-  date?: string
-  image?: ImageProps
-  category?: string
-}
+type BlogPostHeaderProps = Pick<
+  BlogPostData,
+  'title' | 'publishedOn' | 'image' | 'category'
+>
 
 export function BlogPostHeader({
   title,
-  date,
+  publishedOn,
   image,
   category,
 }: BlogPostHeaderProps) {
   return (
-    <header>
-      <div className="mb-8 space-y-4">
+    <header className="space-y-6">
+      <div className="space-y-4">
         {category && <Badge variant="secondary">{category}</Badge>}
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>
-        {date && (
-          <span className="inline-block text-blue-300">{formatDate(date)}</span>
+        {publishedOn && (
+          <span className="inline-block text-blue-300">
+            {formatDate(publishedOn)}
+          </span>
         )}
       </div>
 
       {image && (
-        <div className="relative mb-16 aspect-video">
+        <div className="relative aspect-video">
           <Image
             fill
             src={image.url}

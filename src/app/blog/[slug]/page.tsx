@@ -67,11 +67,11 @@ export default function BlogPost({ params }: BlogPostProps) {
       <StructuredDataScript
         structuredData={createBlogPostStructuredData(data)}
       />
-      <div className="m-auto max-w-2xl space-y-6">
+      <div className="m-auto max-w-2xl space-y-16">
         <BlogPostHeader
           title={title}
           image={image}
-          date={publishedOn}
+          publishedOn={publishedOn}
           category={category}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
