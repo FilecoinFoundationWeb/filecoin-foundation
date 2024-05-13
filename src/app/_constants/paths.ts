@@ -44,7 +44,7 @@ function createPathObject(
 
 export const PATHS = {
   ABOUT: createPathObject('/about', 'About'),
-  BLOG: createPathObject('/blog', 'News & Blog', true),
+  BLOG: createPathObject('/blog', 'Blog', true),
   ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem', true),
   EVENTS: createPathObject('/events', 'Events', true),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
