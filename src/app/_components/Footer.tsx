@@ -98,7 +98,9 @@ export function Footer() {
             </p>
             <p>
               For more information on our ecosystem grants,{' '}
-              <TextLink href={FILECOIN_URLS.grants.email}>Email us</TextLink>
+              <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email}>
+                Email us
+              </TextLink>
             </p>
           </div>
         </Section>

@@ -3,7 +3,7 @@ import clsx from 'clsx'
 type CardLayoutProps = {
   children: React.ReactNode
   as?: React.ElementType
-  type?: 'default' | 'blogPost' | 'governance' | 'grants'
+  type?: 'default' | 'blogPost' | 'governance' | 'grants' | 'home'
 }
 
 export function CardLayout({
@@ -17,6 +17,7 @@ export function CardLayout({
     blogPost: 'lg:grid-cols-2 lg:grid-rows-2',
     governance: 'grid-cols-1 sm:grid-cols-2',
     grants: 'gap-8 sm:grid-cols-3',
+    home: 'grid-cols-1 sm:grid-cols-2 sm:grid-rows-2',
   }
 
   return (

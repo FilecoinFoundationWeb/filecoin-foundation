@@ -16,7 +16,7 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 import { attributes } from '@/content/pages/grants.md'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
@@ -44,7 +44,7 @@ export default function Grants() {
       <PageHeader
         title={header.title}
         description={header.description}
-        cta={{ href: FILECOIN_URLS.grants.email, text: 'Apply Now' }}
+        cta={{ href: FILECOIN_FOUNDATION_URLS.grants.email, text: 'Apply Now' }}
       />
 
       <PageSection
@@ -132,17 +132,19 @@ export default function Grants() {
         description={
           <>
             Please visit our{' '}
-            <TextLink href={FILECOIN_URLS.grants.github}>GitHub repo</TextLink>{' '}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.github}>
+              GitHub repo
+            </TextLink>{' '}
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
-            <TextLink href={FILECOIN_URLS.grants.email}>
-              {FILECOIN_URLS.grants.email.replace('mailto:', '')}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email}>
+              {FILECOIN_FOUNDATION_URLS.grants.email.replace('mailto:', '')}
             </TextLink>{' '}
             or join our monthly office hours!
           </>
         }
         cta={{
-          href: FILECOIN_URLS.grants.email,
+          href: FILECOIN_FOUNDATION_URLS.grants.email,
           text: 'Apply Now',
         }}
       />
