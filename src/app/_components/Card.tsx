@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
+import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
@@ -13,19 +13,20 @@ import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type CardProps = {
   title: string | React.ReactNode
+  tag?: string
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
   entryType?: 'blogPost' | 'featuredEcosystemProject'
   image?: ImageProps
-  borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
+  borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
-  children?: React.ReactNode
 }
 
 const borderStyles = {
   'brand-300': 'border-brand-300',
+  'brand-400': 'border-brand-400',
   'brand-500': 'border-brand-500',
   'brand-600': 'border-brand-600',
 }
@@ -44,6 +45,7 @@ const imageSizes = {
 
 export function Card({
   title,
+  tag,
   metaData,
   description,
   cta,
@@ -52,10 +54,7 @@ export function Card({
   borderColor = 'brand-500',
   textIsClamped = false,
   as: Tag = 'li',
-  children,
 }: CardProps) {
-  const icon = cta?.icon || BookOpen
-
   return (
     <Tag
       className={clsx(
@@ -78,6 +77,12 @@ export function Card({
         </div>
       )}
       <div className="flex flex-col p-4">
+        {tag && (
+          <span className="mb-4">
+            <Badge>{tag}</Badge>
+          </span>
+        )}
+
         {metaData && metaData.length > 0 && (
           <span className="mb-2">
             <Meta metaData={metaData} />
@@ -92,31 +97,26 @@ export function Card({
           title
         )}
 
-        {description && (
-          <p
-            className={clsx(
-              'mb-10 mt-3',
-              textIsClamped && 'line-clamp-3 text-ellipsis',
-            )}
-          >
-            {description}
-          </p>
-        )}
+        <div className="mb-10 mt-3">
+          {description && (
+            <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
+              {description}
+            </p>
+          )}
 
-        {cta && (
-          <CustomLink
-            href={cta.href}
-            aria-label={cta.ariaLabel}
-            className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
-          >
-            <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              <Icon component={icon} />
-              <span>{cta.text}</span>
-            </span>
-          </CustomLink>
-        )}
-
-        {children && children}
+          {cta && (
+            <CustomLink
+              href={cta.href}
+              aria-label={cta.ariaLabel}
+              className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+            >
+              <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+                {cta.icon && <Icon component={cta.icon} />}
+                <span>{cta.text}</span>
+              </span>
+            </CustomLink>
+          )}
+        </div>
       </div>
     </Tag>
   )

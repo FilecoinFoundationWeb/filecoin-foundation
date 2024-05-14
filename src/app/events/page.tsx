@@ -111,7 +111,7 @@ export default function Events({ searchParams }: Props) {
         }}
       />
 
-      <PageSection kicker="Events" title="All Events">
+      <PageSection kicker="Events" title="Network Events">
         <div className="flex justify-end">
           <BlogSearchInput query={searchQuery} />
         </div>

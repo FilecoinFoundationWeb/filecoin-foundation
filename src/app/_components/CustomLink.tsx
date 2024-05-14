@@ -24,11 +24,10 @@ export function CustomLink({
     )
   }
 
-  const target = href.startsWith('mailto:') ? undefined : '_blank'
   const rel = href.startsWith('mailto:') ? undefined : 'noopener noreferrer'
 
   return (
-    <a href={href} target={target} rel={rel} className={className} {...rest}>
+    <a href={href} rel={rel} className={className} {...rest}>
       {children}
     </a>
   )
