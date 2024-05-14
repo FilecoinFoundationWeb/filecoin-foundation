@@ -25,14 +25,14 @@ function prepareMetaData(
   startDate: EventData['startDate'],
   endDate: EventData['endDate'],
 ) {
-  const formattedStartDate = startDate ? formatDate(startDate) : null
-  const formattedEndDate = endDate ? formatDate(endDate) : null
+  const formattedStartDate = startDate && formatDate(startDate)
+  const formattedEndDate = endDate && formatDate(endDate)
 
   if (formattedStartDate && formattedEndDate) {
     return [`${formattedStartDate} – ${formattedEndDate}`]
   }
 
-  return [formattedStartDate || '']
+  return [formattedStartDate]
 }
 
 export function EventsClient({ events }: EventsClientProps) {
