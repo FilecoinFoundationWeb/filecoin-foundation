@@ -32,6 +32,7 @@
     "rehype-raw": "^7.0.0",
     "sass": "^1.69.5",
     "schema-dts": "^1.1.2",
+    "swr": "^2.2.5",
     "tailwindcss": "^3.4.0",
     "usehooks-ts": "^3.1.0",
     "yaml-loader": "^0.8.0"

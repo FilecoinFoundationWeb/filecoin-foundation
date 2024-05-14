@@ -1,6 +1,6 @@
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
-import { GovernanceCalendarCard } from '@/components/GovernanceCalendarCard'
+import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -16,7 +16,6 @@ import { attributes } from '@/content/pages/governance.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { communityCallsData } from './data/communityCallsData'
 import { governanceDocsData } from './data/governanceDocsData'
 
 const { header, seo } = attributes
@@ -80,21 +79,7 @@ export default function Governance() {
       />
 
       <PageSection kicker="Upcoming Events" title="Community Calls">
-        <CardLayout type="blogPost">
-          {communityCallsData.map((card) => {
-            const { title, startDate, durationInMinutes, cta } = card
-
-            return (
-              <GovernanceCalendarCard
-                key={title}
-                title={title}
-                startDate={startDate}
-                durationInMinutes={durationInMinutes}
-                cta={cta}
-              />
-            )
-          })}
-        </CardLayout>
+        <GovernanceCalendarCards currentDate={new Date()} />
       </PageSection>
 
       <CTASection
