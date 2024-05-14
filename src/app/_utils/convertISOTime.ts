@@ -23,24 +23,3 @@ export function extractTimeFromISO(
     time,
   }
 }
-
-export function addMinutesToISO(
-  isoDateString: string,
-  durationInMinutes: number = 30,
-) {
-  const date = new Date(isoDateString)
-
-  const durationInMilliseconds = durationInMinutes * 60000
-
-  const newTimeInMilliseconds = date.getTime() + durationInMilliseconds
-
-  const newDate = new Date(newTimeInMilliseconds)
-
-  const time = newDate.toLocaleTimeString([], {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-  })
-
-  return time
-}

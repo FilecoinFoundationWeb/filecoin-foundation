@@ -14,9 +14,6 @@ type CalendarProps = {
   startDate: string
 }
 
-const fetcher = (...args: Parameters<typeof fetch>) =>
-  fetch(...args).then((res) => res.json())
-
 function Calendar({ startDate }: CalendarProps) {
   const { day, month } = extractTimeFromISO(startDate)
   return (
@@ -31,6 +28,9 @@ function Calendar({ startDate }: CalendarProps) {
   )
 }
 
+const fetcher = (...args: Parameters<typeof fetch>) =>
+  fetch(...args).then((res) => res.json())
+
 export function GovernanceCalendarCards({
   currentDate,
 }: {
@@ -43,7 +43,7 @@ export function GovernanceCalendarCards({
     fetcher,
   )
 
-  if (error) return <div>Failed to load event</div>
+  if (error) return <div>Failed to load events</div>
   if (!events) return <div>Loading events...</div>
 
   return (
@@ -63,7 +63,7 @@ export function GovernanceCalendarCards({
             <div className="flex flex-1 flex-col items-start justify-between gap-6 p-4">
               <div className="flex flex-col gap-3">
                 <div className="flex gap-2">
-                  <Badge icon={Clock}>{`UTC ${endTime} - ${startTime}`}</Badge>
+                  <Badge icon={Clock}>{`UTC ${startTime} - ${endTime}`}</Badge>
                   <Badge variant="secondary">Zoom</Badge>
                 </div>
                 <Heading tag="h3" variant="lg">
