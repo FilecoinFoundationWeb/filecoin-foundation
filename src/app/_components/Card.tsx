@@ -20,10 +20,8 @@ export type CardProps = {
   entryType?: 'blogPost' | 'featuredEcosystemProject'
   image?: ImageProps
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
-
   textIsClamped?: boolean
   as?: React.ElementType
-  children?: React.ReactNode
 }
 
 const borderStyles = {
@@ -56,7 +54,6 @@ export function Card({
   borderColor = 'brand-500',
   textIsClamped = false,
   as: Tag = 'li',
-  children,
 }: CardProps) {
   return (
     <Tag
@@ -119,8 +116,6 @@ export function Card({
               </span>
             </CustomLink>
           )}
-
-          {children && children}
         </div>
       </div>
     </Tag>
