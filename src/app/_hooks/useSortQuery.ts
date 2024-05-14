@@ -46,9 +46,7 @@ export function useSortQuery({
     const rawSortQuery = searchParams[SORT_KEY]
     const validatedSortOption = validateSortOptionQuery(rawSortQuery)
 
-    return validatedSortOption !== null
-      ? validatedSortOption
-      : defaultSortOption
+    return validatedSortOption ? validatedSortOption : defaultSortOption
   }, [searchParams, defaultSortOption])
 
   return { sortQuery }

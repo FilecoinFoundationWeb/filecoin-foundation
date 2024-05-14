@@ -12,6 +12,6 @@ export type SortableByDate = {
 
 export type SortEntriesParams<T> = {
   entries: T[]
-  dateField: 'startDate' | 'publishedOn'
+  dateField: keyof SortableByDate
   sortOption?: SortOptionType
 }
