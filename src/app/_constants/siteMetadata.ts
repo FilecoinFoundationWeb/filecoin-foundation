@@ -39,6 +39,10 @@ const FILECOIN_FOUNDATION_URLS = {
       },
     },
   },
+  grants: {
+    github: 'https://github.com/filecoin-project/devgrants',
+    email: 'mailto:devgrants@fil.org',
+  },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
@@ -70,10 +74,6 @@ const FILECOIN_FOUNDATION_URLS = {
 }
 
 const FILECOIN_URLS = {
-  grants: {
-    github: 'https://github.com/filecoin-project/devgrants',
-    email: 'mailto:devgrants@fil.org',
-  },
   site: 'https://filecoin.io',
   social: {
     reddit: {

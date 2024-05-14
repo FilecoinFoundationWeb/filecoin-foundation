@@ -1,21 +1,27 @@
-import { SortType } from '@/components/SortListbox'
+import { type SortableByDate, type SortEntriesParams } from '@/types/sortTypes'
 
-interface SortableByDate {
-  startDate: string
-}
+import {
+  DEFAULT_SORT_OPTION,
+  VALID_SORT_OPTIONS,
+} from '@/constants/sortConstants'
 
-export function sortEntriesByDate<T extends SortableByDate>(
-  entries: T[],
-  sortType: SortType,
-): T[] {
+export function sortEntriesByDate<T extends SortableByDate>({
+  entries,
+  dateField = 'publishedOn',
+  sortOption = DEFAULT_SORT_OPTION,
+}: SortEntriesParams<T>): T[] {
+  if (!VALID_SORT_OPTIONS.includes(sortOption)) {
+    sortOption = DEFAULT_SORT_OPTION
+  }
+
   return [...entries].sort((a, b) => {
-    const dateA = new Date(a.startDate)
-    const dateB = new Date(b.startDate)
+    const dateA = new Date(a[dateField] || 0)
+    const dateB = new Date(b[dateField] || 0)
 
-    switch (sortType) {
-      case SortType.Newest:
+    switch (sortOption) {
+      case 'newest':
         return dateB.valueOf() - dateA.valueOf()
-      case SortType.Oldest:
+      case 'oldest':
         return dateA.valueOf() - dateB.valueOf()
       default:
         return 0

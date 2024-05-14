@@ -40,7 +40,7 @@ export function Heading({
   const Tag = tag
   const { component: icon, size } = iconProps ?? {}
 
-  const baseStyles = 'text-balance'
+  const baseStyles = 'text-pretty'
 
   className = clsx(
     baseStyles,
