@@ -64,7 +64,7 @@ export function GovernanceCalendarCards({
               <div className="flex flex-col gap-3">
                 <div className="flex gap-2">
                   <Badge icon={Clock}>{`UTC ${startTime} - ${endTime}`}</Badge>
-                  <Badge variant="secondary">Zoom</Badge>
+                  <Badge>Zoom</Badge>
                 </div>
                 <Heading tag="h3" variant="lg">
                   {summary}

@@ -3,17 +3,16 @@ import clsx from 'clsx'
 import { Icon, IconProps } from './Icon'
 
 type BadgeProps = {
-  variant?: 'primary' | 'secondary'
+  variant?: 'default'
   icon?: IconProps['component']
   children: string
 }
 
 const variantStyles = {
-  primary: 'border-brand-100',
-  secondary: 'border-brand-500',
+  default: 'border-brand-500',
 }
 
-export function Badge({ variant = 'primary', icon, children }: BadgeProps) {
+export function Badge({ variant = 'default', icon, children }: BadgeProps) {
   const baseStyles =
     'inline-block max-w-fit flex gap-1 rounded-lg border bg-brand-800 px-2 py-1 text-center text-xs font-semibold capitalize text-brand-100'
 
