@@ -102,28 +102,26 @@ export function Card({
 
         <div className="mb-10 mt-3">
           {description && (
-            <p
-              className={clsx({ 'line-clamp-3 text-ellipsis': textIsClamped })}
-            >
+            <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
               {description}
             </p>
           )}
+
+          {cta && (
+            <CustomLink
+              href={cta.href}
+              aria-label={cta.ariaLabel}
+              className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+            >
+              <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+                {cta.icon && <Icon component={cta.icon} />}
+                <span>{cta.text}</span>
+              </span>
+            </CustomLink>
+          )}
+
+          {children && children}
         </div>
-
-        {cta && (
-          <CustomLink
-            href={cta.href}
-            aria-label={cta.ariaLabel}
-            className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
-          >
-            <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              {cta.icon && <Icon component={cta.icon} />}
-              <span>{cta.text}</span>
-            </span>
-          </CustomLink>
-        )}
-
-        {children && children}
       </div>
     </Tag>
   )
