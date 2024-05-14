@@ -13,6 +13,7 @@ import { NavigationPopover } from '@/components/NavigationPopover'
 import { isInternalLink, isExternalLink } from '@/utils/linkUtils'
 
 import { PATHS } from '@/constants/paths'
+import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
 
 const getInvolvedItems = [
   {
@@ -33,7 +34,7 @@ const getInvolvedItems = [
   },
   {
     label: 'Contribute to the Filecoin Project',
-    href: 'https://docs.filecoin.io/basics/project-and-community/ways-to-contribute',
+    href: FILECOIN_DOCS_URLS.waysToContribute,
     description:
       'Shape the future of Filecoin by contributing to its code, research, or docs.',
   },
@@ -55,13 +56,19 @@ const communityItems = [
 
 const learnMoreItem = {
   label: 'Learn more about Filecoin',
-  href: 'https://docs.filecoin.io/',
+  href: FILECOIN_DOCS_URLS.site,
 }
 
 type SubLinkProps = {
   label: string | Route
   description: string
   href: string
+}
+
+type InternalLinkProps = {
+  label: string
+  href: Route
+  isActive?: boolean
 }
 
 function InternalSubLink({ label, description, href }: SubLinkProps) {
@@ -71,7 +78,7 @@ function InternalSubLink({ label, description, href }: SubLinkProps) {
       className="inline-block w-full rounded-lg bg-brand-800 p-4 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100"
       aria-label={`${label} page (internal link)`}
     >
-      <p className="pb-1 font-bold">{label}</p>
+      <p className="mb-1 font-bold">{label}</p>
       <p className="text-brand-300">{description}</p>
     </Link>
   )
@@ -84,25 +91,18 @@ function ExternalSubLink({ label, description, href }: SubLinkProps) {
       rel="noopener noreferrer"
       className="group inline-block w-full rounded-lg border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent focus:outline focus:outline-2 focus:outline-brand-100"
     >
-      <div className="mb-4 flex gap-1">
+      <div className="mb-4 inline-flex items-center gap-1">
         <p className="font-bold">{label}</p>
-        <span className="mt-0.5 text-brand-400 group-hover:text-brand-100">
+        <span className="text-brand-400 group-hover:text-brand-100">
           <Icon component={ArrowUpRight} size={20} />
         </span>
       </div>
-
       <p className="text-brand-300">{description}</p>
     </a>
   )
 }
 
-type LinkProps = {
-  label: string
-  href: Route
-  isActive?: boolean
-}
-
-function InternalLink({ label, href, isActive }: LinkProps) {
+function InternalLink({ label, href, isActive }: InternalLinkProps) {
   return (
     <li>
       <Link
@@ -129,13 +129,13 @@ const getInvolvedExternalItems = getInvolvedItems.filter((item) =>
 export function DesktopNavigation() {
   const pathname = usePathname()
 
-  const isGetInvolvedActive = getInvolvedInternalItems
-    .map((item) => item.href)
-    .includes(pathname)
+  const isGetInvolvedActive = getInvolvedInternalItems.some(
+    (item) => item.href === pathname,
+  )
 
-  const isCommunityActive = communityItems
-    .map((item) => item.href as string)
-    .includes(pathname)
+  const isCommunityActive = communityItems.some(
+    (item) => item.href === pathname,
+  )
 
   return (
     <ul
@@ -145,7 +145,7 @@ export function DesktopNavigation() {
       <InternalLink
         label={PATHS.ABOUT.label}
         href={PATHS.ABOUT.path}
-        isActive={pathname.startsWith(PATHS.ABOUT.path)}
+        isActive={pathname === PATHS.ABOUT.path}
       />
 
       <NavigationPopover
@@ -165,15 +165,12 @@ export function DesktopNavigation() {
             ))}
             <a
               href={learnMoreItem.href}
-              target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex w-full justify-center gap-1 rounded-lg bg-brand-800 px-3 py-5 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100"
+              className="group inline-flex w-full items-center justify-center gap-1 rounded-lg bg-brand-800 px-3 py-5 text-brand-300 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100"
               aria-label={`${learnMoreItem.label} (opens a new window)`}
             >
-              <span className="font-bold text-brand-300">
-                {learnMoreItem.label}
-              </span>
-              <span className="mt-0.5 text-brand-400 group-hover:text-brand-100">
+              <p className="font-bold">{learnMoreItem.label}</p>
+              <span className="text-brand-400 group-hover:text-brand-100">
                 <Icon component={ArrowUpRight} size={20} />
               </span>
             </a>
@@ -192,7 +189,7 @@ export function DesktopNavigation() {
       <InternalLink
         label={PATHS.BLOG.label}
         href={PATHS.BLOG.path}
-        isActive={pathname.startsWith(PATHS.BLOG.path)}
+        isActive={pathname === PATHS.BLOG.path}
       />
     </ul>
   )
