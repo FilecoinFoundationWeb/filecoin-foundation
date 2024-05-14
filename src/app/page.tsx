@@ -1,7 +1,9 @@
 import { Button } from '@/components/Button'
+import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -13,6 +15,7 @@ import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 const {
   featured_ecosystem_projects: featuredEcosystemProjectsSlugs,
@@ -42,6 +45,35 @@ export default function Home() {
           text: 'Dive Into the Filecoin Protocol',
         }}
       />
+
+      <PageSection kicker="Explore" title="The Filecoin Ecosystem">
+        <CardLayout type="home">
+          {filecoinEcosystemData.map((card) => {
+            const {
+              heading: { title, icon },
+              description,
+              cta,
+            } = card
+
+            return (
+              <HomeExploreSectionCard
+                key={title}
+                cta={cta}
+                heading={{
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: title,
+                  iconProps: {
+                    component: icon,
+                  },
+                }}
+              >
+                {description}
+              </HomeExploreSectionCard>
+            )
+          })}
+        </CardLayout>
+      </PageSection>
 
       <PageSection
         kicker="Learn"
