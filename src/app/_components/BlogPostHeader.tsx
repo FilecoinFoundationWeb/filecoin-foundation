@@ -21,7 +21,7 @@ export function BlogPostHeader({
   return (
     <header className="space-y-6">
       <div className="space-y-4">
-        {category && <Badge variant="secondary">{category}</Badge>}
+        {category && <Badge>{category}</Badge>}
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>
