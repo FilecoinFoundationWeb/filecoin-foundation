@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
-import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
+import { CTASection } from '@/components/CTASection'
 import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -16,6 +15,7 @@ import { attributes } from '@/content/pages/ecosystem.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { featuredPartners } from './data/featuredPartners'
 import { EcosystemClient } from './EcosystemClient'
 
 const { header, seo } = attributes
@@ -28,44 +28,6 @@ const ecosystemPageBaseData = generateWebPageStructuredData({
   description: seo.description,
   path: PATHS.ECOSYSTEM.path,
 })
-
-const featuredPartners = [
-  {
-    name: 'CERN',
-    logo: 'https://fil.org/assets/external/657c554936d014492b49467c_vector-01.svg',
-    url: 'https://home.cern/',
-  },
-  {
-    name: 'Internet Archive',
-    logo: 'https://fil.org/assets/external/657c558f53eeab31a03a832f_vector-05.svg',
-    url: 'https://archive.org/',
-  },
-  {
-    name: 'OpenSea',
-    logo: 'https://fil.org/assets/external/657c5552385589133a43d5ab_vector-02.svg',
-    url: 'https://opensea.io/',
-  },
-  {
-    name: 'Solana',
-    logo: 'https://fil.org/assets/external/657c558a515f5c15575cb1dc_vector-04.svg',
-    url: 'https://solana.com/',
-  },
-  {
-    name: 'GenRAIT',
-    logo: 'https://fil.org/assets/external/657c556868aea6c85dcf1259_vector-08.svg',
-    url: 'https://www.genrait.com/',
-  },
-  {
-    name: 'Lab Dao',
-    logo: 'https://fil.org/assets/external/657c55783ec4a13eefcc1be8_vector-06.svg',
-    url: 'https://www.labdao.xyz/',
-  },
-  {
-    name: 'Victor Chang Research Institute',
-    logo: 'https://fil.org/assets/external/657c557001161cabdda6c5e4_vector-07.svg',
-    url: 'https://www.victorchang.edu.au/',
-  },
-]
 
 export default function Ecosystem() {
   return (
@@ -117,38 +79,14 @@ export default function Ecosystem() {
         <EcosystemClient projects={ecosystemProjects} />
       </section>
 
-      <section>
-        <a href={FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm}>
-          <Heading tag="h2" variant="xl">
-            Become Part of the Expanding Ecosystem
-          </Heading>
-          <p>
-            If you&apos;re building on Filecoin and don&apos;t see your project
-            or want to edit your listing, share your details.
-          </p>
-          <span>Submit or Update Your Project</span>
-        </a>
-
-        <Link href={PATHS.EVENTS.path}>
-          <Heading tag="h2" variant="xl">
-            Join Us IRL
-          </Heading>
-          <p>
-            Engage in inspiring conversation, participate in hands-on workshops,
-            and learn from industry leaders at our events.
-          </p>
-        </Link>
-
-        <a href={FILECOIN_FOUNDATION_URLS.newsletter}>
-          <Heading tag="h2" variant="xl">
-            Dive Deeper
-          </Heading>
-          <p>
-            Subscribe to our newsletter for big ideas and news about the
-            Filecoin ecosystem and the decentralized web.
-          </p>
-        </a>
-      </section>
+      <CTASection
+        title="Become Part of the Expanding Ecosystem"
+        description="If you’re building on Filecoin and don’t see your project or want to edit your listing, share your details."
+        cta={{
+          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
+          text: 'Submit or Update Your Project',
+        }}
+      />
     </PageLayout>
   )
 }
