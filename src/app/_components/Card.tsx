@@ -19,14 +19,14 @@ export type CardProps = {
   cta?: CTAProps
   entryType?: 'blogPost' | 'featuredEcosystemProject'
   image?: ImageProps
-  borderColor?: 'brand-300' | 'brand-500' | 'brand-600'
+  borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
-  children?: React.ReactNode
 }
 
 const borderStyles = {
   'brand-300': 'border-brand-300',
+  'brand-400': 'border-brand-400',
   'brand-500': 'border-brand-500',
   'brand-600': 'border-brand-600',
 }
@@ -54,7 +54,6 @@ export function Card({
   borderColor = 'brand-500',
   textIsClamped = false,
   as: Tag = 'li',
-  children,
 }: CardProps) {
   return (
     <Tag
@@ -98,31 +97,26 @@ export function Card({
           title
         )}
 
-        {description && (
-          <p
-            className={clsx(
-              'mb-10 mt-3',
-              textIsClamped && 'line-clamp-3 text-ellipsis',
-            )}
-          >
-            {description}
-          </p>
-        )}
+        <div className="mb-10 mt-3">
+          {description && (
+            <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
+              {description}
+            </p>
+          )}
 
-        {cta && (
-          <CustomLink
-            href={cta.href}
-            aria-label={cta.ariaLabel}
-            className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
-          >
-            <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              {cta.icon && <Icon component={cta.icon} />}
-              <span>{cta.text}</span>
-            </span>
-          </CustomLink>
-        )}
-
-        {children && children}
+          {cta && (
+            <CustomLink
+              href={cta.href}
+              aria-label={cta.ariaLabel}
+              className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+            >
+              <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+                {cta.icon && <Icon component={cta.icon} />}
+                <span>{cta.text}</span>
+              </span>
+            </CustomLink>
+          )}
+        </div>
       </div>
     </Tag>
   )

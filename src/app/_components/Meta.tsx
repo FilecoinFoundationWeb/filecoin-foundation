@@ -9,6 +9,10 @@ type MetaProps = {
 export type MetaDataType = Array<string | null | undefined>
 
 export function Meta({ metaData }: MetaProps) {
+  if (metaData.length === 0) {
+    return null
+  }
+
   return (
     <div className="flex gap-3 text-brand-300">
       {metaData.filter(Boolean).map((data, index) => {
