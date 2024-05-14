@@ -1894,16 +1894,16 @@
           "required": false,
           "options": [
             {
-              "label": "Hosted by FF",
+              "label": "Hosted",
               "value": "hosted"
             },
             {
-              "label": "Supported by FF",
-              "value": "supported"
+              "label": "Sponsored",
+              "value": "sponsored"
             },
             {
-              "label": "Sponsored by FF",
-              "value": "sponsored"
+              "label": "Supported",
+              "value": "supported"
             }
           ]
         },

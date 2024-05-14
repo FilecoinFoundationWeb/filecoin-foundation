@@ -553,12 +553,12 @@ collections:
         widget: "select"
         required: false
         options:
-          - label: "Hosted by FF"
+          - label: "Hosted"
             value: "hosted"
-          - label: "Supported by FF"
-            value: "supported"
-          - label: "Sponsored by FF"
+          - label: "Sponsored"
             value: "sponsored"
+          - label: "Supported"
+            value: "supported"
       - *meta_config
 
   - name: grants
