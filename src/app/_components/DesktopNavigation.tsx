@@ -84,9 +84,9 @@ function ExternalLink({ label, description, href }: LinkProps) {
       rel="noopener noreferrer"
       className="group inline-block w-full rounded-lg border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent focus:outline focus:outline-2 focus:outline-brand-100"
     >
-      <div className="flex gap-1">
-        <p className="pb-2 font-bold">{label}</p>
-        <span className="text-brand-400 group-hover:text-brand-100">
+      <div className="mb-4 flex gap-1">
+        <p className="font-bold">{label}</p>
+        <span className="mt-0.5 text-brand-400 group-hover:text-brand-100">
           <Icon component={ArrowUpRight} size={20} />
         </span>
       </div>
@@ -147,7 +147,7 @@ export function DesktopNavigation() {
               <span className="font-bold text-brand-300">
                 {learnMoreItem.label}
               </span>
-              <span className="text-brand-400 group-hover:text-brand-100">
+              <span className="mt-0.5 text-brand-400 group-hover:text-brand-100">
                 <Icon component={ArrowUpRight} size={20} />
               </span>
             </a>
