@@ -116,7 +116,7 @@ export function DesktopNavigation() {
         <Link
           href={PATHS.ABOUT.path}
           className={clsx(
-            'text-hover:bg-brand-700 inline-block rounded-xl px-4 py-1.5 focus:outline focus:outline-2 focus:outline-brand-100',
+            'inline-block rounded-xl px-4 py-1.5 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
             pathname.startsWith(PATHS.ABOUT.path)
               ? 'text-brand-400'
               : 'text-brand-300',
