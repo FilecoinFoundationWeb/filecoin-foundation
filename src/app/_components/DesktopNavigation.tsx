@@ -139,7 +139,7 @@ export function DesktopNavigation() {
 
   return (
     <ul
-      className="relative z-10 hidden items-center gap-0.5 lg:flex"
+      className="relative z-10 hidden lg:flex lg:items-center lg:gap-0.5"
       aria-label="Navigation items"
     >
       <InternalLink
