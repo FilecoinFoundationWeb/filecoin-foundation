@@ -92,7 +92,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             className="my-16 block h-auto object-contain"
           />
         )}
-        <div className="grid gap-16 md:grid-cols-[auto,_200px]">
+        <div className="grid gap-9 md:grid-cols-[auto,_150px]">
           <div>
             <div className="mb-8 space-y-6">
               <Heading tag="h1" variant="4xl">
@@ -133,10 +133,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
               <ul className="flex list-none flex-wrap gap-3">
                 {tags.map((tag) => (
                   <li key={tag} className="ml-0">
-                    <Badge variant="secondary">{tag}</Badge>
-                    {/* <span className="rounded-lg border border-white bg-brand-800 px-2 py-1 text-sm font-medium uppercase text-white">
-                    {tag}
-                  </span> */}
+                    <Badge>{tag}</Badge>
                   </li>
                 ))}
               </ul>
