@@ -1,13 +1,18 @@
 import { WebPage, WithContext } from 'schema-dts'
 
+import { useSearch } from '@/hooks/useSearch'
+
+import { BlogSearchInput } from '@/components/BlogSearchInput'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
+import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
+import { NextServerSearchParams } from '@/types/searchParams'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
@@ -20,7 +25,6 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getInvolvedData } from './data/getInvolvedData'
-import { EventsClient } from './EventsClient'
 
 const { featured_post: featuredEventSlug, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
@@ -73,10 +77,24 @@ function getMetaDataContent(event: EventData) {
   return metaDataContent
 }
 
-export default function Events() {
+const sortedEvents = [...events].sort((a, b) => {
+  if (!a.publishedOn || !b.publishedOn) return 0
+  return new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
+})
+
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
     throw new Error('Featured event not found')
   }
+
+  const { searchQuery, searchResults } = useSearch({
+    searchParams,
+    data: sortedEvents,
+  })
 
   return (
     <PageLayout>
@@ -94,7 +112,19 @@ export default function Events() {
       />
 
       <PageSection kicker="Events" title="All Events">
-        <EventsClient events={events} />
+        <div className="flex justify-end">
+          <BlogSearchInput query={searchQuery} />
+        </div>
+
+        {searchResults.length === 0 ? (
+          <NoResultsMessage />
+        ) : (
+          <CardLayout>
+            {searchResults.map((event) => (
+              <Card key={event.slug} title={event.title} />
+            ))}
+          </CardLayout>
+        )}
       </PageSection>
 
       <PageSection

@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { usePagination } from '@/hooks/usePagination'
+import { useSearch } from '@/hooks/useSearch'
 import { useSortQuery } from '@/hooks/useSortQuery'
 
 import { BlogSearchInput } from '@/components/BlogSearchInput'
@@ -38,7 +39,7 @@ import {
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
-import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
+import { PAGE_KEY } from '@/constants/searchParams'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { featured_post: featuredPostSlug, seo } = attributes
@@ -104,23 +105,20 @@ export default function Blog({ searchParams }: Props) {
     throw new Error('Featured post not found')
   }
 
-  const cleanSearchQuery = searchParams[SEARCH_KEY]
-    ? searchParams[SEARCH_KEY].toString().toLowerCase()
-    : ''
+  const { searchQuery, searchResults } = useSearch({
+    searchParams,
+    data: posts,
+  })
 
   const { sortQuery } = useSortQuery({ searchParams })
 
   const sortedAndFilteredPosts = useMemo(() => {
-    const filteredPosts = posts.filter((post) =>
-      post.title.toLowerCase().includes(cleanSearchQuery),
-    )
-
     return sortEntriesByDate({
-      entries: filteredPosts,
+      entries: searchResults,
       sortOption: sortQuery,
       dateField: 'publishedOn',
     })
-  }, [cleanSearchQuery, sortQuery])
+  }, [searchResults, sortQuery])
 
   const { currentPage, pageCount } = usePagination({
     totalEntries: sortedAndFilteredPosts.length,
@@ -156,7 +154,7 @@ export default function Blog({ searchParams }: Props) {
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
         <div className="flex w-full justify-end gap-3">
-          <BlogSearchInput searchQuery={cleanSearchQuery} />
+          <BlogSearchInput query={searchQuery} />
           <BlogSort />
         </div>
 
