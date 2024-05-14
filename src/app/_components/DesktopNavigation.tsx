@@ -10,6 +10,8 @@ import { Route } from 'next'
 import { Icon } from '@/components/Icon'
 import { NavigationPopover } from '@/components/NavigationPopover'
 
+import { isInternalLink, isExternalLink } from '@/utils/linkUtils'
+
 import { PATHS } from '@/constants/paths'
 
 const getInvolvedItems = [
@@ -95,11 +97,11 @@ function ExternalLink({ label, description, href }: LinkProps) {
 }
 
 const getInvolvedInternalItems = getInvolvedItems.filter((item) =>
-  item.href.startsWith('/'),
+  isInternalLink(item.href),
 )
 
-const getInvolvedExternalItems = getInvolvedItems.filter(
-  (item) => item.href.startsWith('https://') || item.href.startsWith('http://'),
+const getInvolvedExternalItems = getInvolvedItems.filter((item) =>
+  isExternalLink(item.href),
 )
 
 export function DesktopNavigation() {
