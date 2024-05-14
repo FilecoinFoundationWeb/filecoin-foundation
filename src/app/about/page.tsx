@@ -50,7 +50,7 @@ const aboutPageStructuredData: WithContext<WebPage> = {
       {
         '@type': 'ContactPoint',
         contactType: 'Ecosystem grants inquiries',
-        email: FILECOIN_URLS.grants.email,
+        email: FILECOIN_FOUNDATION_URLS.grants.email,
       },
     ],
   },
