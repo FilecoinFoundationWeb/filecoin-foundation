@@ -1,5 +1,6 @@
 'use client'
-import { Fragment, useState } from 'react'
+
+import { Fragment } from 'react'
 
 import { Listbox } from '@headlessui/react'
 import { ArrowsDownUp, CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
@@ -7,49 +8,48 @@ import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
-export enum SortType {
-  Newest = 'newest',
-  Oldest = 'oldest',
-}
+import { type SortOptionType } from '@/types/sortTypes'
 
-type SortSetting = {
-  id: SortType
-  name: string
-}
+import { sortSettings } from '@/constants/sortConstants'
 
 type SortListboxProps = {
-  onSortTypeChange: (selectedOption: SortType) => void
+  sortOption: SortOptionType
+  onSortOptionChange: (selectedSortOption: SortOptionType) => void
 }
 
-const sortSettings: SortSetting[] = [
-  { id: SortType.Newest, name: 'Newest' },
-  { id: SortType.Oldest, name: 'Oldest' },
-]
-
-export function SortListbox({ onSortTypeChange }: SortListboxProps) {
-  const [selectedSortType, setSelectedSortType] = useState(sortSettings[0])
-
-  function handleChange(newSortType: SortSetting) {
-    setSelectedSortType(newSortType)
-    onSortTypeChange(newSortType.id)
-  }
+export function SortListbox({
+  sortOption,
+  onSortOptionChange,
+}: SortListboxProps) {
+  const selectedSortSetting =
+    sortSettings.find((option) => option.id === sortOption) || sortSettings[0]
 
   return (
-    <Listbox value={selectedSortType} onChange={handleChange}>
-      {() => (
+    <Listbox value={sortOption} onChange={onSortOptionChange}>
+      {({ open }) => (
         <>
-          <Listbox.Button className="border-1 inline-flex items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100 sm:min-w-40">
+          <Listbox.Button
+            aria-haspopup="listbox"
+            aria-expanded={open}
+            aria-label="Sort options"
+            className="border-1 inline-flex items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100 sm:min-w-40"
+          >
             <div className="inline-flex items-center gap-2">
               <Icon component={ArrowsDownUp} />
-              <span className="hidden sm:block">{selectedSortType.name}</span>
+              <span className="hidden sm:block">
+                {selectedSortSetting.name}
+              </span>
             </div>
             <span className="hidden sm:block">
               <Icon component={CaretDown} size={16} weight="bold" />
             </span>
           </Listbox.Button>
-          <Listbox.Options className="absolute z-10 mt-14 min-w-40 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-1 text-brand-100 focus-within:outline-2 focus:outline-2 focus:outline-brand-100">
+          <Listbox.Options
+            aria-labelledby="listbox-button"
+            className="absolute z-10 mt-14 min-w-40 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-1 text-brand-100 focus-within:outline-2 focus:outline-2 focus:outline-brand-100"
+          >
             {sortSettings.map((option) => (
-              <Listbox.Option key={option.id} value={option} as={Fragment}>
+              <Listbox.Option key={option.id} value={option.id} as={Fragment}>
                 {({ active, selected }) => (
                   <li
                     className={clsx(
