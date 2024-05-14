@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
 import { Badge } from '@/components/Badge'
@@ -57,8 +56,6 @@ export function Card({
   as: Tag = 'li',
   children,
 }: CardProps) {
-  const icon = cta?.icon || BookOpen
-
   return (
     <Tag
       className={clsx(
@@ -119,7 +116,7 @@ export function Card({
             className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              <Icon component={icon} />
+              {cta.icon && <Icon component={cta.icon} />}
               <span>{cta.text}</span>
             </span>
           </CustomLink>

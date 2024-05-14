@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 
 import dynamic from 'next/dynamic'
 
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { usePagination } from '@/hooks/usePagination'
@@ -187,6 +188,7 @@ export default function Blog({ searchParams }: Props) {
                     cta={{
                       href: `${PATHS.BLOG.path}/${slug}`,
                       text: 'Read Post',
+                      icon: BookOpen,
                     }}
                   />
                 )
