@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
+import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
@@ -13,6 +13,7 @@ import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type CardProps = {
   title: string | React.ReactNode
+  tag?: string
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
@@ -44,6 +45,7 @@ const imageSizes = {
 
 export function Card({
   title,
+  tag,
   metaData,
   description,
   cta,
@@ -54,8 +56,6 @@ export function Card({
   as: Tag = 'li',
   children,
 }: CardProps) {
-  const icon = cta?.icon || BookOpen
-
   return (
     <Tag
       className={clsx(
@@ -78,6 +78,12 @@ export function Card({
         </div>
       )}
       <div className="flex flex-col p-4">
+        {tag && (
+          <span className="mb-4">
+            <Badge>{tag}</Badge>
+          </span>
+        )}
+
         {metaData && metaData.length > 0 && (
           <span className="mb-2">
             <Meta metaData={metaData} />
@@ -110,7 +116,7 @@ export function Card({
             className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
           >
             <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-              <Icon component={icon} />
+              {cta.icon && <Icon component={cta.icon} />}
               <span>{cta.text}</span>
             </span>
           </CustomLink>

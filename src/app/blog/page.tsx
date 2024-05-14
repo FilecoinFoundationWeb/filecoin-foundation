@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 
 import dynamic from 'next/dynamic'
 
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { usePagination } from '@/hooks/usePagination'
@@ -166,22 +167,28 @@ export default function Blog({ searchParams }: Props) {
           <>
             <CardLayout type="blogPost">
               {paginatedPosts.map((post) => {
-                const { image, title, description, slug, publishedOn } = post
+                const {
+                  slug,
+                  category,
+                  title,
+                  description,
+                  image,
+                  publishedOn,
+                } = post
 
                 return (
                   <Card
-                    key={post.slug}
+                    key={slug}
+                    tag={category}
                     title={title}
                     description={description}
                     image={{ url: image?.url, alt: image?.alt }}
                     textIsClamped={true}
-                    metaData={[
-                      ...(publishedOn ? [formatDate(publishedOn)] : []),
-                      ...(post.category ? [post.category] : []),
-                    ]}
+                    metaData={publishedOn ? [formatDate(publishedOn)] : []}
                     cta={{
                       href: `${PATHS.BLOG.path}/${slug}`,
                       text: 'Read Post',
+                      icon: BookOpen,
                     }}
                   />
                 )
