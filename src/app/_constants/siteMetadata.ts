@@ -9,6 +9,12 @@ const FIL_PLUS_URLS = {
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
 }
 
+const FILECOIN_DOCS_URLS = {
+  site: 'https://docs.filecoin.io/',
+  waysToContribute:
+    'https://docs.filecoin.io/basics/project-and-community/ways-to-contribute',
+}
+
 const FILECOIN_FOUNDATION_URLS = {
   annualReports: {
     latest: `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
@@ -89,8 +95,9 @@ const FILECOIN_URLS = {
 
 export {
   BASE_URL,
+  FIL_PLUS_URLS,
+  FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
-  FIL_PLUS_URLS,
   ORGANIZATION_NAME,
 }
