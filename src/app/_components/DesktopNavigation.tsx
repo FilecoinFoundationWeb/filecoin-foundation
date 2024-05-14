@@ -79,10 +79,8 @@ function ExternalLink({ label, description, href }: LinkProps) {
   return (
     <a
       href={href}
-      target="_blank"
       rel="noopener noreferrer"
       className="group inline-block w-full rounded-lg border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent focus:outline focus:outline-2 focus:outline-brand-100"
-      aria-label={`${label} (opens a new window)`}
     >
       <div className="flex gap-1">
         <p className="pb-2 font-bold">{label}</p>
