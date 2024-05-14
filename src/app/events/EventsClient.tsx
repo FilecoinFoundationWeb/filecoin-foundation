@@ -60,7 +60,7 @@ export function EventsClient({ events }: EventsClientProps) {
       <SortListbox sortOption={sortOption} onSortOptionChange={setSortOption} />
       <CardLayout type="home">
         {sortedEvents.map((event) => {
-          const { slug, title, image, startDate, endDate } = event
+          const { slug, title, image, involvement, startDate, endDate } = event
 
           const metaData = prepareMetaData(startDate, endDate)
 
@@ -68,6 +68,7 @@ export function EventsClient({ events }: EventsClientProps) {
             <Card
               key={slug}
               title={title}
+              tag={involvement}
               metaData={metaData}
               image={image}
               borderColor="brand-400"
