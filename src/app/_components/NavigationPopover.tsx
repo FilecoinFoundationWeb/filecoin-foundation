@@ -4,6 +4,7 @@ import { cloneElement, Fragment } from 'react'
 
 import { Popover, Transition } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
+import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
@@ -11,14 +12,23 @@ type PopOverProps = {
   label: string
   children: React.ReactElement
   as: React.ElementType
+  isActive?: boolean
 }
 
-export function NavigationPopover({ label, children, as }: PopOverProps) {
+export function NavigationPopover({
+  label,
+  children,
+  as,
+  isActive,
+}: PopOverProps) {
   return (
     <Popover as={as}>
       <Popover.Button
         aria-label={`${label} (opens a navigation menu)`}
-        className="inline-flex items-center gap-2 rounded-xl py-1.5 pl-4 pr-3 text-base text-brand-300 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100 ui-open:bg-brand-700 ui-open:text-brand-400"
+        className={clsx(
+          'inline-flex items-center gap-2 rounded-xl py-1.5 pl-4 pr-3 text-base hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100 ui-open:bg-brand-700 ui-open:text-brand-400',
+          isActive ? 'text-brand-400' : 'text-brand-300',
+        )}
       >
         <span>{label}</span>
         <span className="transition-transform ui-open:rotate-180">

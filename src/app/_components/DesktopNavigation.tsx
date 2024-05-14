@@ -58,13 +58,13 @@ const learnMoreItem = {
   href: 'https://docs.filecoin.io/',
 }
 
-type LinkProps = {
-  label: string
+type SubLinkProps = {
+  label: string | Route
   description: string
   href: string
 }
 
-function InternalLink({ label, description, href }: LinkProps) {
+function InternalSubLink({ label, description, href }: SubLinkProps) {
   return (
     <Link
       href={href as Route}
@@ -77,7 +77,7 @@ function InternalLink({ label, description, href }: LinkProps) {
   )
 }
 
-function ExternalLink({ label, description, href }: LinkProps) {
+function ExternalSubLink({ label, description, href }: SubLinkProps) {
   return (
     <a
       href={href}
@@ -96,6 +96,28 @@ function ExternalLink({ label, description, href }: LinkProps) {
   )
 }
 
+type LinkProps = {
+  label: string
+  href: Route
+  isActive?: boolean
+}
+
+function InternalLink({ label, href, isActive }: LinkProps) {
+  return (
+    <li>
+      <Link
+        href={href}
+        className={clsx(
+          'inline-block rounded-xl px-4 py-1.5 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
+          isActive ? 'text-brand-400' : 'text-brand-300',
+        )}
+      >
+        {label}
+      </Link>
+    </li>
+  )
+}
+
 const getInvolvedInternalItems = getInvolvedItems.filter((item) =>
   isInternalLink(item.href),
 )
@@ -107,35 +129,39 @@ const getInvolvedExternalItems = getInvolvedItems.filter((item) =>
 export function DesktopNavigation() {
   const pathname = usePathname()
 
+  const isGetInvolvedActive = getInvolvedInternalItems
+    .map((item) => item.href)
+    .includes(pathname)
+
+  const isCommunityActive = communityItems
+    .map((item) => item.href as string)
+    .includes(pathname)
+
   return (
     <ul
       className="relative z-10 hidden items-center gap-0.5 lg:flex"
       aria-label="Navigation items"
     >
-      <li>
-        <Link
-          href={PATHS.ABOUT.path}
-          className={clsx(
-            'inline-block rounded-xl px-4 py-1.5 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
-            pathname.startsWith(PATHS.ABOUT.path)
-              ? 'text-brand-400'
-              : 'text-brand-300',
-          )}
-        >
-          {PATHS.ABOUT.label}
-        </Link>
-      </li>
+      <InternalLink
+        label={PATHS.ABOUT.label}
+        href={PATHS.ABOUT.path}
+        isActive={pathname.startsWith(PATHS.ABOUT.path)}
+      />
 
-      <NavigationPopover as="li" label="Get Involved">
+      <NavigationPopover
+        as="li"
+        label="Get Involved"
+        isActive={isGetInvolvedActive}
+      >
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
             {getInvolvedInternalItems.map((item) => (
-              <InternalLink key={item.href} {...item} />
+              <InternalSubLink key={item.href} {...item} />
             ))}
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (
-              <ExternalLink key={item.href} {...item} />
+              <ExternalSubLink key={item.href} {...item} />
             ))}
             <a
               href={learnMoreItem.href}
@@ -155,27 +181,19 @@ export function DesktopNavigation() {
         </div>
       </NavigationPopover>
 
-      <NavigationPopover as="li" label="Community">
+      <NavigationPopover as="li" label="Community" isActive={isCommunityActive}>
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (
-            <InternalLink key={item.label} {...item} />
+            <InternalSubLink key={item.label} {...item} />
           ))}
         </div>
       </NavigationPopover>
 
-      <li>
-        <Link
-          href={PATHS.BLOG.path}
-          className={clsx(
-            'inline-block rounded-xl px-4 py-1.5 text-brand-300 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
-            pathname.startsWith(PATHS.BLOG.path)
-              ? 'text-brand-400'
-              : 'text-brand-300',
-          )}
-        >
-          {PATHS.BLOG.label}
-        </Link>
-      </li>
+      <InternalLink
+        label={PATHS.BLOG.label}
+        href={PATHS.BLOG.path}
+        isActive={pathname.startsWith(PATHS.BLOG.path)}
+      />
     </ul>
   )
 }
