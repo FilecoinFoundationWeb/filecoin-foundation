@@ -8,7 +8,7 @@ import { usePagination } from '@/hooks/usePagination'
 import { useSortQuery } from '@/hooks/useSortQuery'
 
 import { BlogSearchInput } from '@/components/BlogSearchInput'
-import { BlogSortController } from '@/components/BlogSortController'
+import { BlogSort } from '@/components/BlogSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
@@ -157,7 +157,7 @@ export default function Blog({ searchParams }: Props) {
       >
         <div className="flex w-full justify-end gap-3">
           <BlogSearchInput searchQuery={cleanSearchQuery} />
-          <BlogSortController />
+          <BlogSort />
         </div>
 
         {sortedAndFilteredPosts.length === 0 ? (

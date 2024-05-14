@@ -11,7 +11,7 @@ import { type SortOptionType } from '@/types/sortTypes'
 import { SORT_KEY } from '@/constants/searchParams'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
-export function BlogSortController() {
+export function BlogSort() {
   const [sortOption, setSortOption] =
     useState<SortOptionType>(DEFAULT_SORT_OPTION)
   const updateSearchParams = useUpdateSearchParams()
