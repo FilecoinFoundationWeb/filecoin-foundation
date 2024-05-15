@@ -15,7 +15,7 @@ import { NavigationPopover } from '@/components/NavigationPopover'
 import { PATHS } from '@/constants/paths'
 import { desktopNavigationItems } from '@/data/components/navigationData'
 
-export type SubLinkProps = {
+export type SubNavItemProps = {
   href: string | Route
   label: string
   description?: string
@@ -28,12 +28,12 @@ type InternalLinkProps = {
   isActive?: boolean
 }
 
-function SubLink({
+function SubNavItem({
   href,
   label,
   description,
   linkType = 'internal',
-}: SubLinkProps) {
+}: SubNavItemProps) {
   const external = linkType !== 'internal'
 
   const baseClasses =
@@ -119,14 +119,18 @@ export function DesktopNavigation() {
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
             {getInvolvedInternalItems.map((item) => (
-              <SubLink key={item.href} {...item} linkType="internal" />
+              <SubNavItem key={item.href} {...item} linkType="internal" />
             ))}
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (
-              <SubLink key={item.href} {...item} linkType="externalPrimary" />
+              <SubNavItem
+                key={item.href}
+                {...item}
+                linkType="externalPrimary"
+              />
             ))}
-            <SubLink {...learnMoreItem} linkType="externalSecondary" />
+            <SubNavItem {...learnMoreItem} linkType="externalSecondary" />
           </div>
         </div>
       </NavigationPopover>
@@ -134,7 +138,7 @@ export function DesktopNavigation() {
       <NavigationPopover as="li" label="Community" isActive={isCommunityActive}>
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (
-            <SubLink key={item.label} {...item} linkType="internal" />
+            <SubNavItem key={item.label} {...item} linkType="internal" />
           ))}
         </div>
       </NavigationPopover>
