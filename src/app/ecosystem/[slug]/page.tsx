@@ -117,7 +117,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             )}
 
             {newsUpdate && (
-              <div className="mb-4 space-y-4">
+              <div className="prose mb-4 space-y-4">
                 <Heading tag="h3" variant="xl" color="secondary">
                   Latest Update From Project:
                 </Heading>
