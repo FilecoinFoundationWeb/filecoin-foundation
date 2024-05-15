@@ -11,6 +11,7 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SearchInput } from '@/components/SearchInput'
 
+import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
 import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 
 type BlogSearchInputProps = {
@@ -36,10 +37,13 @@ export function Search({ query }: BlogSearchInputProps) {
 
     const existingPageParam = params.get(PAGE_KEY)
 
-    if (existingPageParam && existingPageParam !== '1') {
+    if (
+      existingPageParam &&
+      existingPageParam !== String(DEFAULT_PAGE_NUMBER)
+    ) {
       debouncedUpdateSearchParams({
         [SEARCH_KEY]: newValue,
-        [PAGE_KEY]: '1',
+        [PAGE_KEY]: DEFAULT_PAGE_NUMBER,
       })
     } else {
       debouncedUpdateSearchParams({ [SEARCH_KEY]: newValue })
