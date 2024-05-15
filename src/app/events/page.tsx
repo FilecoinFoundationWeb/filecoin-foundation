@@ -93,7 +93,7 @@ export default function Events() {
         }}
       />
 
-      <PageSection kicker="Events" title="All Events">
+      <PageSection kicker="Events" title="Network Events">
         <EventsClient events={events} />
       </PageSection>
 
