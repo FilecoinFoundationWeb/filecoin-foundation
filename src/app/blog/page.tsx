@@ -9,7 +9,6 @@ import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSortQuery } from '@/hooks/useSortQuery'
 
-import { BlogSearchInput } from '@/components/BlogSearchInput'
 import { BlogSort } from '@/components/BlogSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
@@ -17,6 +16,7 @@ import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { Search } from '@/components/Search'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 const NoSSRPagination = dynamic(
@@ -155,7 +155,7 @@ export default function Blog({ searchParams }: Props) {
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
         <div className="flex w-full justify-end gap-3">
-          <BlogSearchInput query={searchQuery} />
+          <Search query={searchQuery} />
           <BlogSort />
         </div>
 

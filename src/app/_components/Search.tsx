@@ -17,9 +17,9 @@ type BlogSearchInputProps = {
   query: ReturnType<typeof useSearch>['searchQuery']
 }
 
-const TYPE_DEBOUNCE_DELAY = 400
+const DEBOUNCE_DELAY = 400
 
-export function BlogSearchInput({ query }: BlogSearchInputProps) {
+export function Search({ query }: BlogSearchInputProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
 
@@ -27,7 +27,7 @@ export function BlogSearchInput({ query }: BlogSearchInputProps) {
 
   const debouncedUpdateSearchParams = useDebounceCallback(
     updateSearchParams,
-    TYPE_DEBOUNCE_DELAY,
+    DEBOUNCE_DELAY,
   )
 
   function handleSearchChange(event: React.ChangeEvent<HTMLInputElement>) {

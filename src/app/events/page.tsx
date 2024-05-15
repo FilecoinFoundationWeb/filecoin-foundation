@@ -2,13 +2,13 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { useSearch } from '@/hooks/useSearch'
 
-import { BlogSearchInput } from '@/components/BlogSearchInput'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { Search } from '@/components/Search'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
@@ -113,7 +113,7 @@ export default function Events({ searchParams }: Props) {
 
       <PageSection kicker="Events" title="Network Events">
         <div className="flex justify-end">
-          <BlogSearchInput query={searchQuery} />
+          <Search query={searchQuery} />
         </div>
 
         {searchResults.length === 0 ? (
