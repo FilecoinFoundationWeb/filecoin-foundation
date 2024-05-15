@@ -63,7 +63,10 @@ export function GovernanceCalendarCards({
             <div className="flex flex-1 flex-col items-start justify-between gap-6 p-4">
               <div className="flex flex-col gap-3">
                 <div className="flex gap-2">
-                  <Badge icon={Clock}>{`UTC ${startTime} - ${endTime}`}</Badge>
+                  <Badge
+                    borderColor="brand-100"
+                    icon={Clock}
+                  >{`UTC ${startTime} - ${endTime}`}</Badge>
                   <Badge>Zoom</Badge>
                 </div>
                 <Heading tag="h3" variant="lg">
