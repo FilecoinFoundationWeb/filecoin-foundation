@@ -50,5 +50,10 @@ export function Search({ query }: BlogSearchInputProps) {
     }
   }
 
-  return <SearchInput searchQuery={value} onSearchChange={handleSearchChange} />
+  return (
+    <SearchInput
+      searchQuery={value || ''}
+      onSearchChange={handleSearchChange}
+    />
+  )
 }

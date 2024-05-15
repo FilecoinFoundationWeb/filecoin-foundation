@@ -40,7 +40,6 @@ import {
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
-import { PAGE_KEY } from '@/constants/searchParams'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 const { featured_post: featuredPostSlug, seo } = attributes
@@ -123,9 +122,9 @@ export default function Blog({ searchParams }: Props) {
   }, [searchResults, sortQuery])
 
   const { currentPage, pageCount } = usePagination({
+    searchParams,
     totalEntries: sortedAndFilteredPosts.length,
     entriesPerPage: POSTS_PER_PAGE,
-    pageQuery: searchParams[PAGE_KEY],
   })
 
   const firstPostIndex = (currentPage - 1) * POSTS_PER_PAGE

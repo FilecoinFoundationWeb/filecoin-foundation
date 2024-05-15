@@ -2,6 +2,8 @@ import { useMemo } from 'react'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { normalizeQueryParam } from '@/utils/queryUtils'
+
 import { SEARCH_KEY } from '@/constants/searchParams'
 
 type UseSearchProps<Entry extends Record<string, unknown>> = {
@@ -10,13 +12,22 @@ type UseSearchProps<Entry extends Record<string, unknown>> = {
   searchBy: keyof Entry | Array<keyof Entry>
 }
 
-function validateSearchQuery(searchQuery: NextServerSearchParams['search']) {
-  if (!searchQuery) {
-    return ''
+function search<Entry extends Record<string, unknown>>(
+  value: Entry[keyof Entry],
+  query: string,
+): boolean {
+  const isStringValue = typeof value === 'string'
+  const isNumberValue = typeof value === 'number'
+
+  if (isStringValue) {
+    return value.toLowerCase().includes(query)
   }
 
-  const rawQuery = Array.isArray(searchQuery) ? searchQuery[0] : searchQuery
-  return rawQuery.toLowerCase()
+  if (isNumberValue) {
+    return value.toString().toLowerCase().includes(query)
+  }
+
+  return false
 }
 
 export function useSearch<Entry extends Record<string, unknown>>({
@@ -24,31 +35,19 @@ export function useSearch<Entry extends Record<string, unknown>>({
   entries,
   searchBy,
 }: UseSearchProps<Entry>) {
-  const rawQuery = searchParams[SEARCH_KEY]
-  const cleanQuery = validateSearchQuery(rawQuery)
+  const normalizedQuery = normalizeQueryParam(searchParams, SEARCH_KEY)
 
   const searchResults = useMemo(() => {
     const searchByKeys = Array.isArray(searchBy) ? searchBy : [searchBy]
 
+    if (!normalizedQuery) {
+      return entries
+    }
+
     return entries.filter((entry) => {
-      return searchByKeys.some((key) => {
-        const value = entry[key]
-
-        const isStringValue = typeof value === 'string'
-        const isNumberValue = typeof value === 'number'
-
-        if (isStringValue) {
-          return value.toLowerCase().includes(cleanQuery)
-        }
-
-        if (isNumberValue) {
-          return value.toString().toLowerCase().includes(cleanQuery)
-        }
-
-        return false
-      })
+      return searchByKeys.some((key) => search(entry[key], normalizedQuery))
     })
-  }, [entries, cleanQuery, searchBy])
+  }, [entries, normalizedQuery, searchBy])
 
-  return { searchQuery: cleanQuery, searchResults }
+  return { searchQuery: normalizedQuery, searchResults }
 }
