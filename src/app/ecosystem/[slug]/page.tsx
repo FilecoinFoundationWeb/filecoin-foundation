@@ -140,25 +140,33 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
               </ul>
             </div>
           </div>
-          <ul className="grid grid-cols-2 gap-5 md:auto-rows-max md:grid-cols-1">
+          <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:auto-rows-max md:grid-cols-1">
             {website && (
               <li>
-                <TextLink href={website}>Website</TextLink>
+                <TextLink isExternalPage iconType="website" href={website}>
+                  Website
+                </TextLink>
               </li>
             )}
             {repo && (
               <li>
-                <TextLink href={repo}>GitHub</TextLink>
+                <TextLink isExternalPage iconType="repo" href={repo}>
+                  GitHub
+                </TextLink>
               </li>
             )}
             {twitter && (
               <li>
-                <TextLink href={twitter}>Twitter</TextLink>
+                <TextLink isExternalPage iconType="twitter" href={twitter}>
+                  Twitter
+                </TextLink>
               </li>
             )}
             {featuredContent && (
               <li>
-                <TextLink href={featuredContent}>Featured Content</TextLink>
+                <TextLink iconType="caseStudy" href={featuredContent}>
+                  Case Study
+                </TextLink>
               </li>
             )}
           </ul>
