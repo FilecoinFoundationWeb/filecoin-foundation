@@ -83,16 +83,16 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
       <article>
         {image.url && (
-          <Image
-            priority
-            src={image.url}
-            alt={image.alt}
-            width={232}
-            height={220}
-            className="my-16 block h-auto object-contain"
-          />
+          <div className="relative my-16 h-10 w-full sm:h-16">
+            <Image
+              fill
+              src={image.url}
+              alt={image.alt}
+              className="max-w-fit object-contain"
+            />
+          </div>
         )}
-        <div className="grid gap-9 md:grid-cols-[auto,_150px]">
+        <div className="grid gap-16 md:grid-cols-[auto,_150px] md:gap-9">
           <div>
             <div className="mb-8 space-y-6">
               <Heading tag="h1" variant="4xl">
@@ -102,16 +102,18 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             </div>
 
             {videoUrl && (
-              <iframe
-                allowFullScreen
-                className="my-6"
-                width="560"
-                height="315"
-                aria-label="Embedded YouTube Video"
-                src={videoUrl}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              />
+              <div className="relative w-full max-w-xl">
+                <iframe
+                  allowFullScreen
+                  className="my-8"
+                  width="100%"
+                  height="315"
+                  aria-label="Embedded YouTube Video"
+                  src={videoUrl}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                />
+              </div>
             )}
 
             {newsUpdate && (
