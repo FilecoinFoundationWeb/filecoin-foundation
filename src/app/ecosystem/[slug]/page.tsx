@@ -102,12 +102,11 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             </div>
 
             {videoUrl && (
-              <div className="relative w-full max-w-xl">
+              <div className="relative my-8 h-44 w-full max-w-2xl sm:h-80">
                 <iframe
                   allowFullScreen
-                  className="my-8"
                   width="100%"
-                  height="315"
+                  height="100%"
                   aria-label="Embedded YouTube Video"
                   src={videoUrl}
                   title="YouTube video player"
