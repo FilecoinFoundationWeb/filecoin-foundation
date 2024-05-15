@@ -70,9 +70,17 @@ function SubMainNavItem({
   )
 }
 
-function getMainNavItemBaseStyles(isActive: boolean) {
+function getMainNavItemStyles(isActive: boolean, isPopover = false) {
+  const baseStyles =
+    'rounded-xl py-1.5 text-base hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100'
+
+  const extendedStyles = isPopover
+    ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
+    : 'inline-block px-4'
+
   return clsx(
-    'rounded-xl py-1.5 text-base hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
+    baseStyles,
+    extendedStyles,
     isActive ? 'text-brand-400' : 'text-brand-300',
   )
 }
@@ -80,13 +88,7 @@ function getMainNavItemBaseStyles(isActive: boolean) {
 function MainNavItem({ label, href, isActive = false }: InternalLinkProps) {
   return (
     <li>
-      <Link
-        href={href}
-        className={clsx(
-          getMainNavItemBaseStyles(isActive),
-          'inline-block px-4',
-        )}
-      >
+      <Link href={href} className={getMainNavItemStyles(isActive)}>
         {label}
       </Link>
     </li>
@@ -121,7 +123,7 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Get Involved"
-        mainNavItemBaseStyles={getMainNavItemBaseStyles(isGetInvolvedActive)}
+        mainNavItemStyles={getMainNavItemStyles(isGetInvolvedActive, true)}
       >
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
@@ -145,7 +147,7 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Community"
-        mainNavItemBaseStyles={getMainNavItemBaseStyles(isCommunityActive)}
+        mainNavItemStyles={getMainNavItemStyles(isCommunityActive, true)}
       >
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (

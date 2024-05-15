@@ -10,7 +10,7 @@ import { Icon } from '@/components/Icon'
 
 type PopOverProps = {
   label: string
-  mainNavItemBaseStyles: string
+  mainNavItemStyles: string
   as: React.ElementType
   children: React.ReactElement
 }
@@ -26,7 +26,7 @@ const transitionProps = {
 
 export function NavigationPopover({
   label,
-  mainNavItemBaseStyles,
+  mainNavItemStyles,
   as,
   children,
 }: PopOverProps) {
@@ -34,10 +34,7 @@ export function NavigationPopover({
     <Popover as={as}>
       <Popover.Button
         aria-label={`${label} (opens a navigation menu)`}
-        className={clsx(
-          mainNavItemBaseStyles,
-          'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400',
-        )}
+        className={mainNavItemStyles}
       >
         <span>{label}</span>
         <span className="transition-transform ui-open:rotate-180">
