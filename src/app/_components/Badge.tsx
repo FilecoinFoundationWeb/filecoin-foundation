@@ -1,19 +1,22 @@
 import clsx from 'clsx'
 
 type BadgeProps = {
-  variant?: 'default'
+  borderColor?: 'brand-100' | 'brand-500'
   children: string
 }
 
-const variantStyles = {
-  default: 'border-brand-500',
+const borderStyles = {
+  'brand-100': 'border-brand-100',
+  'brand-500': 'border-brand-500',
 }
 
-export function Badge({ variant = 'default', children }: BadgeProps) {
+export function Badge({ borderColor = 'brand-500', children }: BadgeProps) {
   const baseStyles =
-    'inline-block max-w-fit rounded-lg border bg-brand-800 px-2 py-1 text-center text-xs font-semibold capitalize text-brand-100'
+    'inline-block max-w-fit rounded-lg border bg-brand-800 px-2 py-1 text-xs font-semibold capitalize text-brand-100'
 
   return (
-    <span className={clsx(baseStyles, variantStyles[variant])}>{children}</span>
+    <span className={clsx(baseStyles, borderStyles[borderColor])}>
+      {children}
+    </span>
   )
 }
