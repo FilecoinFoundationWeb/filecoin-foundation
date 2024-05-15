@@ -18,7 +18,8 @@ import { desktopNavigationItems } from '@/data/components/navigationData'
 export type SubLinkProps = {
   href: string | Route
   label: string
-  description: string
+  description?: string
+  linkType?: 'internal' | 'externalPrimary' | 'externalSecondary'
 }
 
 type InternalLinkProps = {
@@ -27,38 +28,49 @@ type InternalLinkProps = {
   isActive?: boolean
 }
 
-function InternalSubLink({ label, description, href }: SubLinkProps) {
-  return (
-    <Link
-      href={href as Route}
-      className="inline-block w-full rounded-lg bg-brand-800 p-4 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100"
-      aria-label={`${label} page (internal link)`}
-    >
+function SubLink({
+  href,
+  label,
+  description,
+  linkType = 'internal',
+}: SubLinkProps) {
+  const external = linkType !== 'internal'
+
+  const baseClasses =
+    'group w-full rounded-lg focus:outline focus:outline-2 focus:outline-brand-100'
+  const styleClasses = {
+    internal: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
+    externalPrimary:
+      'inline-block border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent',
+    externalSecondary:
+      'inline-flex items-center justify-center gap-1 bg-brand-800 px-3 py-5 text-brand-300 hover:bg-brand-700',
+  }
+
+  const linkClasses = clsx(baseClasses, styleClasses[linkType])
+  const commonProps = {
+    className: linkClasses,
+    'aria-label': `${label} page (${external ? 'external link' : 'internal link'})`,
+  }
+
+  return external ? (
+    <a href={href} {...commonProps} rel="noopener noreferrer">
+      <div className="inline-flex items-center gap-1">
+        <p className="font-bold">{label}</p>
+        <span className="text-brand-400 group-hover:text-brand-100">
+          <Icon component={ArrowUpRight} size={20} />
+        </span>
+      </div>
+      {description && <p className="mt-4 text-brand-300">{description}</p>}
+    </a>
+  ) : (
+    <Link href={href as Route} {...commonProps}>
       <p className="mb-1 font-bold">{label}</p>
       <p className="text-brand-300">{description}</p>
     </Link>
   )
 }
 
-function ExternalSubLink({ label, description, href }: SubLinkProps) {
-  return (
-    <a
-      href={href}
-      rel="noopener noreferrer"
-      className="group inline-block w-full rounded-lg border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent focus:outline focus:outline-2 focus:outline-brand-100"
-    >
-      <div className="mb-4 inline-flex items-center gap-1">
-        <p className="font-bold">{label}</p>
-        <span className="text-brand-400 group-hover:text-brand-100">
-          <Icon component={ArrowUpRight} size={20} />
-        </span>
-      </div>
-      <p className="text-brand-300">{description}</p>
-    </a>
-  )
-}
-
-function InternalLink({ label, href, isActive }: InternalLinkProps) {
+function NavItem({ label, href, isActive }: InternalLinkProps) {
   return (
     <li>
       <Link
@@ -85,6 +97,7 @@ export function DesktopNavigation() {
     externalItems: getInvolvedExternalItems,
     isActive: isGetInvolvedActive,
   } = useActiveItems(getInvolvedItems)
+
   const { isActive: isCommunityActive } = useActiveItems(communityItems)
 
   return (
@@ -92,7 +105,7 @@ export function DesktopNavigation() {
       className="relative z-10 hidden lg:flex lg:items-center lg:gap-0.5"
       aria-label="Navigation items"
     >
-      <InternalLink
+      <NavItem
         label={PATHS.ABOUT.label}
         href={PATHS.ABOUT.path}
         isActive={pathname === PATHS.ABOUT.path}
@@ -106,24 +119,14 @@ export function DesktopNavigation() {
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
             {getInvolvedInternalItems.map((item) => (
-              <InternalSubLink key={item.href} {...item} />
+              <SubLink key={item.href} {...item} linkType="internal" />
             ))}
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (
-              <ExternalSubLink key={item.href} {...item} />
+              <SubLink key={item.href} {...item} linkType="externalPrimary" />
             ))}
-            <a
-              href={learnMoreItem.href}
-              rel="noopener noreferrer"
-              className="group inline-flex w-full items-center justify-center gap-1 rounded-lg bg-brand-800 px-3 py-5 text-brand-300 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100"
-              aria-label={`${learnMoreItem.label} (opens a new window)`}
-            >
-              <p className="font-bold">{learnMoreItem.label}</p>
-              <span className="text-brand-400 group-hover:text-brand-100">
-                <Icon component={ArrowUpRight} size={20} />
-              </span>
-            </a>
+            <SubLink {...learnMoreItem} linkType="externalSecondary" />
           </div>
         </div>
       </NavigationPopover>
@@ -131,12 +134,12 @@ export function DesktopNavigation() {
       <NavigationPopover as="li" label="Community" isActive={isCommunityActive}>
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (
-            <InternalSubLink key={item.label} {...item} />
+            <SubLink key={item.label} {...item} linkType="internal" />
           ))}
         </div>
       </NavigationPopover>
 
-      <InternalLink
+      <NavItem
         label={PATHS.BLOG.label}
         href={PATHS.BLOG.path}
         isActive={pathname === PATHS.BLOG.path}
