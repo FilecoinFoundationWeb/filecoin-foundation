@@ -15,25 +15,25 @@ import { NavigationPopover } from '@/components/NavigationPopover'
 import { PATHS } from '@/constants/paths'
 import { desktopNavigationItems } from '@/data/components/navigationData'
 
-export type SubMainNavItemProps = {
+export type SubNavItemProps = {
   href: string | Route
   label: string
   description?: string
   linkType?: 'internal' | 'externalPrimary' | 'externalSecondary'
 }
 
-type InternalLinkProps = {
+type MainNavItemProps = {
   href: Route
   label: string
   isActive?: boolean
 }
 
-function SubMainNavItem({
+function SubNavItem({
   href,
   label,
   description,
   linkType = 'internal',
-}: SubMainNavItemProps) {
+}: SubNavItemProps) {
   const external = linkType !== 'internal'
 
   const baseStyles =
@@ -85,7 +85,7 @@ function getMainNavItemStyles(isActive: boolean, isPopover = false) {
   )
 }
 
-function MainNavItem({ label, href, isActive = false }: InternalLinkProps) {
+function MainNavItem({ label, href, isActive = false }: MainNavItemProps) {
   return (
     <li>
       <Link href={href} className={getMainNavItemStyles(isActive)}>
@@ -128,18 +128,18 @@ export function DesktopNavigation() {
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
             {getInvolvedInternalItems.map((item) => (
-              <SubMainNavItem key={item.href} {...item} linkType="internal" />
+              <SubNavItem key={item.href} {...item} linkType="internal" />
             ))}
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (
-              <SubMainNavItem
+              <SubNavItem
                 key={item.href}
                 {...item}
                 linkType="externalPrimary"
               />
             ))}
-            <SubMainNavItem {...learnMoreItem} linkType="externalSecondary" />
+            <SubNavItem {...learnMoreItem} linkType="externalSecondary" />
           </div>
         </div>
       </NavigationPopover>
@@ -151,7 +151,7 @@ export function DesktopNavigation() {
       >
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (
-            <SubMainNavItem key={item.label} {...item} linkType="internal" />
+            <SubNavItem key={item.label} {...item} linkType="internal" />
           ))}
         </div>
       </NavigationPopover>

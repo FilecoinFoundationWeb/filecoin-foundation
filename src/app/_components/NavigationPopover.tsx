@@ -4,7 +4,6 @@ import { cloneElement, Fragment } from 'react'
 
 import { Popover, Transition } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
-import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
