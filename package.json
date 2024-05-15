@@ -35,7 +35,8 @@
     "swr": "^2.2.5",
     "tailwindcss": "^3.4.0",
     "usehooks-ts": "^3.1.0",
-    "yaml-loader": "^0.8.0"
+    "yaml-loader": "^0.8.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

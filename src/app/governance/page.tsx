@@ -79,7 +79,7 @@ export default function Governance() {
       />
 
       <PageSection kicker="Upcoming Events" title="Community Calls">
-        <GovernanceCalendarCards currentDate={new Date()} />
+        <GovernanceCalendarCards />
       </PageSection>
 
       <CTASection
