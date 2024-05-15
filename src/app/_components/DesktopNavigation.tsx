@@ -70,15 +70,19 @@ function SubNavItem({
   )
 }
 
-function NavItem({ label, href, isActive }: InternalLinkProps) {
+function getNavItemBaseStyles(isActive: boolean) {
+  return clsx(
+    'rounded-xl py-1.5 text-base hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
+    isActive ? 'text-brand-400' : 'text-brand-300',
+  )
+}
+
+function NavItem({ label, href, isActive = false }: InternalLinkProps) {
   return (
     <li>
       <Link
         href={href}
-        className={clsx(
-          'inline-block rounded-xl px-4 py-1.5 hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
-          isActive ? 'text-brand-400' : 'text-brand-300',
-        )}
+        className={clsx(getNavItemBaseStyles(isActive), 'inline-block px-4')}
       >
         {label}
       </Link>
@@ -114,7 +118,7 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Get Involved"
-        isActive={isGetInvolvedActive}
+        navItemBaseStyles={getNavItemBaseStyles(isGetInvolvedActive)}
       >
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
@@ -135,7 +139,11 @@ export function DesktopNavigation() {
         </div>
       </NavigationPopover>
 
-      <NavigationPopover as="li" label="Community" isActive={isCommunityActive}>
+      <NavigationPopover
+        as="li"
+        label="Community"
+        navItemBaseStyles={getNavItemBaseStyles(isCommunityActive)}
+      >
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (
             <SubNavItem key={item.label} {...item} linkType="internal" />
