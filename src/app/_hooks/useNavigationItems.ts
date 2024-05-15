@@ -4,7 +4,7 @@ import { type SubNavItemProps } from '@/components/DesktopNavigation'
 
 import { isInternalLink, isExternalLink } from '@/utils/linkUtils'
 
-export function useActiveItems(items: SubNavItemProps[]) {
+export function useNavigationItems(items: SubNavItemProps[]) {
   const pathname = usePathname()
   const internalItems = items.filter((item) => isInternalLink(item.href))
   const externalItems = items.filter((item) => isExternalLink(item.href))

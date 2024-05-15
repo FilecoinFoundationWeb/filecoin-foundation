@@ -7,7 +7,7 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import clsx from 'clsx'
 import { Route } from 'next'
 
-import { useActiveItems } from '@/hooks/useNavigationStatus'
+import { useNavigationItems } from '@/hooks/useNavigationItems'
 
 import { Icon } from '@/components/Icon'
 import { NavigationPopover } from '@/components/NavigationPopover'
@@ -105,9 +105,10 @@ export function DesktopNavigation() {
     internalItems: getInvolvedInternalItems,
     externalItems: getInvolvedExternalItems,
     isActive: isGetInvolvedActive,
-  } = useActiveItems(getInvolvedItems)
+  } = useNavigationItems(getInvolvedItems)
 
-  const { isActive: isCommunityActive } = useActiveItems(communityItems)
+  const { isActive: isCommunityActive, internalItems: communityInternalItems } =
+    useNavigationItems(communityItems)
 
   return (
     <ul
@@ -150,7 +151,7 @@ export function DesktopNavigation() {
         mainNavItemStyles={getMainNavItemStyles(isCommunityActive, true)}
       >
         <div className="w-80 space-y-4">
-          {communityItems.map((item) => (
+          {communityInternalItems.map((item) => (
             <SubNavItem key={item.label} {...item} linkType="internal" />
           ))}
         </div>
