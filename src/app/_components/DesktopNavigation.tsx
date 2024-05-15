@@ -15,17 +15,17 @@ import { NavigationPopover } from '@/components/NavigationPopover'
 import { PATHS } from '@/constants/paths'
 import { desktopNavigationItems } from '@/data/components/navigationData'
 
+type MainNavItemProps = {
+  href: Route
+  label: string
+  isActive?: boolean
+}
+
 export type SubNavItemProps = {
   href: string | Route
   label: string
   description?: string
   linkType?: 'internal' | 'externalPrimary' | 'externalSecondary'
-}
-
-type MainNavItemProps = {
-  href: Route
-  label: string
-  isActive?: boolean
 }
 
 function SubNavItem({
