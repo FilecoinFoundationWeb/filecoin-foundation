@@ -7,28 +7,25 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import clsx from 'clsx'
 import { Route } from 'next'
 
+import { useActiveItems } from '@/hooks/useNavigationStatus'
+
 import { Icon } from '@/components/Icon'
 import { NavigationPopover } from '@/components/NavigationPopover'
-
-import { isInternalLink, isExternalLink } from '@/utils/linkUtils'
 
 import { PATHS } from '@/constants/paths'
 import { desktopNavigationItems } from '@/data/components/navigationData'
 
-type SubLinkProps = {
-  label: string | Route
+export type SubLinkProps = {
+  href: string | Route
+  label: string
   description: string
-  href: string
 }
 
 type InternalLinkProps = {
-  label: string
   href: Route
+  label: string
   isActive?: boolean
 }
-
-const { getInvolvedItems, communityItems, learnMoreItem } =
-  desktopNavigationItems
 
 function InternalSubLink({ label, description, href }: SubLinkProps) {
   return (
@@ -77,24 +74,18 @@ function InternalLink({ label, href, isActive }: InternalLinkProps) {
   )
 }
 
-const getInvolvedInternalItems = getInvolvedItems.filter((item) =>
-  isInternalLink(item.href),
-)
-
-const getInvolvedExternalItems = getInvolvedItems.filter((item) =>
-  isExternalLink(item.href),
-)
+const { getInvolvedItems, communityItems, learnMoreItem } =
+  desktopNavigationItems
 
 export function DesktopNavigation() {
   const pathname = usePathname()
 
-  const isGetInvolvedActive = getInvolvedInternalItems.some(
-    (item) => item.href === pathname,
-  )
-
-  const isCommunityActive = communityItems.some(
-    (item) => item.href === pathname,
-  )
+  const {
+    internalItems: getInvolvedInternalItems,
+    externalItems: getInvolvedExternalItems,
+    isActive: isGetInvolvedActive,
+  } = useActiveItems(getInvolvedItems)
+  const { isActive: isCommunityActive } = useActiveItems(communityItems)
 
   return (
     <ul
