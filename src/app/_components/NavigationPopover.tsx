@@ -10,7 +10,7 @@ import { Icon } from '@/components/Icon'
 
 type PopOverProps = {
   label: string
-  navItemBaseStyles: string
+  mainNavItemBaseStyles: string
   as: React.ElementType
   children: React.ReactElement
 }
@@ -26,7 +26,7 @@ const transitionProps = {
 
 export function NavigationPopover({
   label,
-  navItemBaseStyles,
+  mainNavItemBaseStyles,
   as,
   children,
 }: PopOverProps) {
@@ -35,7 +35,7 @@ export function NavigationPopover({
       <Popover.Button
         aria-label={`${label} (opens a navigation menu)`}
         className={clsx(
-          navItemBaseStyles,
+          mainNavItemBaseStyles,
           'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400',
         )}
       >

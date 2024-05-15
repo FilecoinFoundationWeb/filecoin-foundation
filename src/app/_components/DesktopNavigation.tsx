@@ -15,7 +15,7 @@ import { NavigationPopover } from '@/components/NavigationPopover'
 import { PATHS } from '@/constants/paths'
 import { desktopNavigationItems } from '@/data/components/navigationData'
 
-export type SubNavItemProps = {
+export type SubMainNavItemProps = {
   href: string | Route
   label: string
   description?: string
@@ -28,17 +28,17 @@ type InternalLinkProps = {
   isActive?: boolean
 }
 
-function SubNavItem({
+function SubMainNavItem({
   href,
   label,
   description,
   linkType = 'internal',
-}: SubNavItemProps) {
+}: SubMainNavItemProps) {
   const external = linkType !== 'internal'
 
-  const baseClasses =
+  const baseStyles =
     'group w-full rounded-lg focus:outline focus:outline-2 focus:outline-brand-100'
-  const styleClasses = {
+  const extendedStyles = {
     internal: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
     externalPrimary:
       'inline-block border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent',
@@ -46,7 +46,7 @@ function SubNavItem({
       'inline-flex items-center justify-center gap-1 bg-brand-800 px-3 py-5 text-brand-300 hover:bg-brand-700',
   }
 
-  const linkClasses = clsx(baseClasses, styleClasses[linkType])
+  const linkClasses = clsx(baseStyles, extendedStyles[linkType])
   const commonProps = {
     className: linkClasses,
     'aria-label': `${label} page (${external ? 'external link' : 'internal link'})`,
@@ -70,19 +70,22 @@ function SubNavItem({
   )
 }
 
-function getNavItemBaseStyles(isActive: boolean) {
+function getMainNavItemBaseStyles(isActive: boolean) {
   return clsx(
     'rounded-xl py-1.5 text-base hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
     isActive ? 'text-brand-400' : 'text-brand-300',
   )
 }
 
-function NavItem({ label, href, isActive = false }: InternalLinkProps) {
+function MainNavItem({ label, href, isActive = false }: InternalLinkProps) {
   return (
     <li>
       <Link
         href={href}
-        className={clsx(getNavItemBaseStyles(isActive), 'inline-block px-4')}
+        className={clsx(
+          getMainNavItemBaseStyles(isActive),
+          'inline-block px-4',
+        )}
       >
         {label}
       </Link>
@@ -109,7 +112,7 @@ export function DesktopNavigation() {
       className="relative z-10 hidden lg:flex lg:items-center lg:gap-0.5"
       aria-label="Navigation items"
     >
-      <NavItem
+      <MainNavItem
         label={PATHS.ABOUT.label}
         href={PATHS.ABOUT.path}
         isActive={pathname === PATHS.ABOUT.path}
@@ -118,23 +121,23 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Get Involved"
-        navItemBaseStyles={getNavItemBaseStyles(isGetInvolvedActive)}
+        mainNavItemBaseStyles={getMainNavItemBaseStyles(isGetInvolvedActive)}
       >
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
             {getInvolvedInternalItems.map((item) => (
-              <SubNavItem key={item.href} {...item} linkType="internal" />
+              <SubMainNavItem key={item.href} {...item} linkType="internal" />
             ))}
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (
-              <SubNavItem
+              <SubMainNavItem
                 key={item.href}
                 {...item}
                 linkType="externalPrimary"
               />
             ))}
-            <SubNavItem {...learnMoreItem} linkType="externalSecondary" />
+            <SubMainNavItem {...learnMoreItem} linkType="externalSecondary" />
           </div>
         </div>
       </NavigationPopover>
@@ -142,16 +145,16 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Community"
-        navItemBaseStyles={getNavItemBaseStyles(isCommunityActive)}
+        mainNavItemBaseStyles={getMainNavItemBaseStyles(isCommunityActive)}
       >
         <div className="w-80 space-y-4">
           {communityItems.map((item) => (
-            <SubNavItem key={item.label} {...item} linkType="internal" />
+            <SubMainNavItem key={item.label} {...item} linkType="internal" />
           ))}
         </div>
       </NavigationPopover>
 
-      <NavItem
+      <MainNavItem
         label={PATHS.BLOG.label}
         href={PATHS.BLOG.path}
         isActive={pathname === PATHS.BLOG.path}
