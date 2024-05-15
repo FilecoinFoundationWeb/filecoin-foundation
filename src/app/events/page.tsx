@@ -93,7 +93,8 @@ export default function Events({ searchParams }: Props) {
 
   const { searchQuery, searchResults } = useSearch({
     searchParams,
-    data: sortedEvents,
+    entries: sortedEvents,
+    searchBy: ['title', 'metadata'],
   })
 
   return (

@@ -108,7 +108,8 @@ export default function Blog({ searchParams }: Props) {
 
   const { searchQuery, searchResults } = useSearch({
     searchParams,
-    data: posts,
+    entries: posts,
+    searchBy: ['title', 'description'],
   })
 
   const { sortQuery } = useSortQuery({ searchParams })
