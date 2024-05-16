@@ -12,7 +12,7 @@ type UseSearchProps<Entry extends Record<string, unknown>> = {
   searchBy: keyof Entry | Array<keyof Entry>
 }
 
-function search<Entry extends Record<string, unknown>>(
+function matchesQuery<Entry extends Record<string, unknown>>(
   value: Entry[keyof Entry],
   query: string,
 ): boolean {
@@ -45,7 +45,9 @@ export function useSearch<Entry extends Record<string, unknown>>({
     }
 
     return entries.filter((entry) => {
-      return searchByKeys.some((key) => search(entry[key], normalizedQuery))
+      return searchByKeys.some((key) =>
+        matchesQuery(entry[key], normalizedQuery),
+      )
     })
   }, [entries, normalizedQuery, searchBy])
 
