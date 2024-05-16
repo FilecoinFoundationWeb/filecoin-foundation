@@ -10,6 +10,7 @@ export type EcosystemProjectData = {
   featured?: boolean
   description: string
   category: string
+  subcategories: string[]
   tags: string[]
   tech: string[]
   image: ImageProps
