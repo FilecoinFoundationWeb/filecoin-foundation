@@ -31,6 +31,8 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
+  // const imageStyles = `block rounded-lg ${image?.imageStyle ? image.imageStyle : 'object-cover'}`
+
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
@@ -78,6 +80,12 @@ export function PageHeader({
           </div>
         )}
       </div>
+
+      {/* {image && (
+        <div className="relative h-32 w-full rounded-lg border border-brand-100 sm:h-60 md:h-auto md:w-1/2">
+          <Image fill src={image.url} alt={image.alt} className={imageStyles} />
+        </div>
+      )} */}
     </header>
   )
 }

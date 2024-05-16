@@ -18,10 +18,15 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { featuredPartners } from './data/featuredPartners'
 import { EcosystemClient } from './EcosystemClient'
 
-const { header, seo } = attributes
+const { featured_post: featuredProjectSlug, header, seo } = attributes
+
 export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
 
 const ecosystemProjects = getEcosystemProjectsData()
+
+const featuredProject = ecosystemProjects.find(
+  (project) => project.slug === featuredProjectSlug,
+)
 
 const ecosystemPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -36,6 +41,14 @@ export default function Ecosystem() {
       <PageHeader
         title={header.title}
         description={header.description}
+        {...(featuredProject
+          ? {
+              image: {
+                ...featuredProject?.image,
+                imageStyle: 'object-contain',
+              },
+            }
+          : {})}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
           text: 'Submit or Update Your Project',
