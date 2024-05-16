@@ -54,11 +54,7 @@ async function getEvents(endpoint: string) {
   }
 
   const data = await response.json()
-  try {
-    return eventsSchema.parse(data)
-  } catch (error) {
-    throw new Error(`getEvents: Data validation failed - ${error}`)
-  }
+  return eventsSchema.parse(data)
 }
 
 export function GovernanceCalendarCards() {
