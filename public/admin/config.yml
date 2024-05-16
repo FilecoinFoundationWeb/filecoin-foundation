@@ -226,7 +226,7 @@ collections:
           - label: "Reports"
             value: "reports"
           - label: "Use Cases"
-            value: "use Cases"
+            value: "use-cases"
       - name: "description"
         label: "Description"
         widget: "text"
