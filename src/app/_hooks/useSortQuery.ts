@@ -1,7 +1,7 @@
-import { useMemo } from 'react'
-
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type SortOptionType } from '@/types/sortTypes'
+
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { SORT_KEY } from '@/constants/searchParams'
 import {
@@ -14,40 +14,31 @@ type UseSortQueryProps = {
   defaultSortOption?: SortOptionType
 }
 
-type UseSortQueryResult = { sortQuery: SortOptionType }
-
-function validateSortOptionQuery(
-  sortQuery: NextServerSearchParams['sort'],
-): SortOptionType | null {
-  if (!sortQuery) {
-    return null
+function validateSortOption(
+  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
+  defaultSortOption: UseSortQueryProps['defaultSortOption'] = DEFAULT_SORT_OPTION,
+) {
+  if (!normalizedQuery) {
+    return defaultSortOption
   }
-
-  const queryValue = Array.isArray(sortQuery) ? sortQuery[0] : sortQuery
-
-  if (!queryValue) {
-    return null
-  }
-
-  const normalizedQuery = queryValue.toLowerCase()
 
   if (VALID_SORT_OPTIONS.includes(normalizedQuery as SortOptionType)) {
     return normalizedQuery as SortOptionType
   }
 
-  return null
+  return defaultSortOption
 }
 
 export function useSortQuery({
   searchParams,
-  defaultSortOption = DEFAULT_SORT_OPTION,
-}: UseSortQueryProps): UseSortQueryResult {
-  const sortQuery = useMemo(() => {
-    const rawSortQuery = searchParams[SORT_KEY]
-    const validatedSortOption = validateSortOptionQuery(rawSortQuery)
+  defaultSortOption,
+}: UseSortQueryProps) {
+  const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
 
-    return validatedSortOption ? validatedSortOption : defaultSortOption
-  }, [searchParams, defaultSortOption])
+  const validatedSortOption = validateSortOption(
+    normalizedQuery,
+    defaultSortOption,
+  )
 
-  return { sortQuery }
+  return { sortQuery: validatedSortOption }
 }
