@@ -9,7 +9,7 @@ import { CardLayout } from '@/components/CardLayout'
 import { SortListbox } from '@/components/SortListbox'
 
 import { type EventData } from '@/types/eventTypes'
-import { type SortOptionType } from '@/types/sortTypes'
+import { type SortOptionItems } from '@/types/sortTypes'
 
 import { formatDate } from '@/utils/formatDate'
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
@@ -37,7 +37,7 @@ function prepareMetaData(
 
 export function EventsClient({ events }: EventsClientProps) {
   const [sortOption, setSortOption] =
-    useState<SortOptionType>(DEFAULT_SORT_OPTION)
+    useState<SortOptionItems>(DEFAULT_SORT_OPTION)
   const [sortedEvents, setSortedEvents] = useState<EventData[]>([])
 
   useEffect(() => {

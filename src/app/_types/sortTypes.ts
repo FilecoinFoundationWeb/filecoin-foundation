@@ -1,17 +1,11 @@
-export type SortOptionType = 'newest' | 'oldest'
+export type SortOptionItems = 'newest' | 'oldest'
 
 export type SortSetting = {
-  id: SortOptionType
+  id: SortOptionItems
   name: string
 }
 
 export type SortableByDate = {
   publishedOn?: string
   startDate?: string
-}
-
-export type SortEntriesParams<T> = {
-  entries: T[]
-  dateField: keyof SortableByDate
-  sortOption?: SortOptionType
 }

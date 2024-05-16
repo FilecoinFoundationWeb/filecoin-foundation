@@ -1,7 +1,10 @@
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { useSearch } from '@/hooks/useSearch'
+import { useSortQuery } from '@/hooks/useSortQuery'
 
+import { BlogSort } from '@/components/BlogSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
@@ -57,6 +60,20 @@ const eventsPageStructuredData: WithContext<WebPage> = {
   },
 }
 
+function prepareMetaData(
+  startDate: EventData['startDate'],
+  endDate: EventData['endDate'],
+) {
+  const formattedStartDate = startDate && formatDate(startDate)
+  const formattedEndDate = endDate && formatDate(endDate)
+
+  if (formattedStartDate && formattedEndDate) {
+    return [`${formattedStartDate} – ${formattedEndDate}`]
+  }
+
+  return [formattedStartDate]
+}
+
 function getMetaDataContent(event: EventData) {
   if (!event.startDate || !event.location) {
     return []
@@ -77,11 +94,6 @@ function getMetaDataContent(event: EventData) {
   return metaDataContent
 }
 
-const sortedEvents = [...events].sort((a, b) => {
-  if (!a.publishedOn || !b.publishedOn) return 0
-  return new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
-})
-
 type Props = {
   searchParams: NextServerSearchParams
 }
@@ -93,8 +105,15 @@ export default function Events({ searchParams }: Props) {
 
   const { searchQuery, searchResults } = useSearch({
     searchParams,
-    entries: sortedEvents,
+    entries: events,
     searchBy: ['title', 'location'],
+  })
+
+  const { sortQuery, sortedResults } = useSortQuery({
+    searchParams,
+    entries: searchResults,
+    sortBy: 'startDate',
+    sortByDefault: 'newest',
   })
 
   return (
@@ -113,17 +132,38 @@ export default function Events({ searchParams }: Props) {
       />
 
       <PageSection kicker="Events" title="Network Events">
-        <div className="flex justify-end">
-          <Search query={searchQuery} />
+        <div className="flex justify-end gap-3">
+          <Search query={searchQuery} width="full" />
+          <BlogSort query={sortQuery} />
         </div>
 
-        {searchResults.length === 0 ? (
+        {sortedResults.length === 0 ? (
           <NoResultsMessage />
         ) : (
-          <CardLayout>
-            {searchResults.map((event) => (
-              <Card key={event.slug} title={event.title} />
-            ))}
+          <CardLayout type="home">
+            {sortedResults.map((event) => {
+              const { slug, title, image, involvement, startDate, endDate } =
+                event
+
+              const metaData = prepareMetaData(startDate, endDate)
+
+              return (
+                <Card
+                  key={slug}
+                  title={title}
+                  tag={involvement}
+                  metaData={metaData}
+                  image={image}
+                  borderColor="brand-400"
+                  textIsClamped={true}
+                  cta={{
+                    href: `${PATHS.EVENTS}/${slug}`,
+                    text: 'View Event Details',
+                    icon: MagnifyingGlass,
+                  }}
+                />
+              )
+            })}
           </CardLayout>
         )}
       </PageSection>

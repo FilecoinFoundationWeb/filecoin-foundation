@@ -1,44 +1,52 @@
+import { useMemo } from 'react'
+
 import { type NextServerSearchParams } from '@/types/searchParams'
-import { type SortOptionType } from '@/types/sortTypes'
+import { SortableByDate, type SortOptionItems } from '@/types/sortTypes'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
+import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { SORT_KEY } from '@/constants/searchParams'
-import {
-  DEFAULT_SORT_OPTION,
-  VALID_SORT_OPTIONS,
-} from '@/constants/sortConstants'
+import { VALID_SORT_OPTIONS } from '@/constants/sortConstants'
 
-type UseSortQueryProps = {
+type UseSortProps<Entry extends Record<string, unknown>> = {
   searchParams: NextServerSearchParams
-  defaultSortOption?: SortOptionType
+  entries: Entry[]
+  sortBy: keyof SortableByDate & keyof Entry
+  sortByDefault: SortOptionItems
 }
 
-function validateSortOption(
+function validateSortOption<Entry extends Record<string, unknown>>(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  defaultSortOption: UseSortQueryProps['defaultSortOption'] = DEFAULT_SORT_OPTION,
+  defaultSortBy: UseSortProps<Entry>['sortByDefault'],
 ) {
   if (!normalizedQuery) {
-    return defaultSortOption
+    return defaultSortBy
   }
 
-  if (VALID_SORT_OPTIONS.includes(normalizedQuery as SortOptionType)) {
-    return normalizedQuery as SortOptionType
-  }
-
-  return defaultSortOption
-}
-
-export function useSortQuery({
-  searchParams,
-  defaultSortOption,
-}: UseSortQueryProps) {
-  const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
-
-  const validatedSortOption = validateSortOption(
-    normalizedQuery,
-    defaultSortOption,
+  const validSortOption = VALID_SORT_OPTIONS.find(
+    (option) => option === normalizedQuery,
   )
 
-  return { sortQuery: validatedSortOption }
+  return validSortOption || defaultSortBy
+}
+
+export function useSortQuery<Entry extends Record<string, unknown>>({
+  searchParams,
+  entries,
+  sortBy,
+  sortByDefault,
+}: UseSortProps<Entry>) {
+  const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
+  const validatedSortOption = validateSortOption(normalizedQuery, sortByDefault)
+
+  const sortedResults = useMemo(() => {
+    return sortEntriesByDate({
+      entries,
+      sortBy,
+      sortOption: validatedSortOption,
+    })
+  }, [entries, sortBy, validatedSortOption])
+
+  return { sortQuery: validatedSortOption, sortedResults }
 }
