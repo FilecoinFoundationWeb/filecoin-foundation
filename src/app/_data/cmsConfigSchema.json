@@ -1470,7 +1470,7 @@
           "name": "category",
           "label": "Category",
           "widget": "relation",
-          "required": false,
+          "required": true,
           "collection": "ecosystem_projects_categories",
           "value_field": "slug",
           "search_fields": [
@@ -1484,7 +1484,7 @@
           "name": "subcategories",
           "label": "Subcategories",
           "widget": "relation",
-          "required": false,
+          "required": true,
           "collection": "ecosystem_projects_subcategories",
           "value_field": "slug",
           "search_fields": [

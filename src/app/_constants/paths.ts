@@ -28,15 +28,16 @@ function createPathObject(
   path: PathValues,
   label: string,
   includesEntries: boolean = false,
-  customPath?: string,
+  customMainContentPath?: string,
+  customEntriesContentPath?: string,
 ): PathConfig {
   const config: PathConfig = {
     path,
     label,
-    mainContentPath: `${CONTENT_PAGES_ROOT}${customPath ?? path}`,
+    mainContentPath: `${CONTENT_PAGES_ROOT}${customMainContentPath ?? path}`,
   }
   if (includesEntries) {
-    config.entriesContentPath = `${CONTENT_ROOT}${path}`
+    config.entriesContentPath = `${CONTENT_ROOT}${customEntriesContentPath ?? path}`
   }
 
   return config
@@ -45,7 +46,13 @@ function createPathObject(
 export const PATHS = {
   ABOUT: createPathObject('/about', 'About'),
   BLOG: createPathObject('/blog', 'Blog', true),
-  ECOSYSTEM: createPathObject('/ecosystem', 'Ecosystem Explorer', true),
+  ECOSYSTEM: createPathObject(
+    '/ecosystem',
+    'Ecosystem Explorer',
+    true,
+    '',
+    '/ecosystem/projects/',
+  ),
   EVENTS: createPathObject('/events', 'Events', true),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
