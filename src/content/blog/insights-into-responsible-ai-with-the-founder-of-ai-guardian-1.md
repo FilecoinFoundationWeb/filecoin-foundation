@@ -5,6 +5,7 @@ created-on: 2023-10-30T14:01:55.224Z
 updated-on: 2023-10-30T14:01:55.241Z
 published-on: 2023-10-30T14:01:55.252Z
 featured: false
+category: interviews
 description: >-
   In the current generation of machine learning, an artificial
   intelligence (AI) model’s abilities are directly tied to the size and

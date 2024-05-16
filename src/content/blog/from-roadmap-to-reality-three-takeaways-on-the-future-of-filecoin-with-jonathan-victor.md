@@ -6,6 +6,7 @@ created-on: 2023-11-29T16:52:21.803Z
 updated-on: 2023-11-29T16:52:21.817Z
 published-on: 2023-11-29T16:52:21.826Z
 featured: false
+category: interviews
 description: Dweb Decoded is Filecoin Foundation's weekly podcast dedicated to
   discussing the latest advancements in decentralized technology, and exciting
   projects and ideas in the Filecoin ecosystem.​​​​​​​​​​ In the latest episode,
