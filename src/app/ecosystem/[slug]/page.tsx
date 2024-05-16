@@ -1,10 +1,18 @@
 import Image from 'next/image'
 
+import {
+  BookOpen,
+  GitFork,
+  TwitterLogo,
+  Globe,
+  ArrowUpRight,
+} from '@phosphor-icons/react/dist/ssr'
 import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -144,27 +152,34 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             {website && (
               <li>
                 <TextLink isExternalPage iconType="website" href={website}>
+                  <Icon component={Globe} />
                   Website
+                  <Icon component={ArrowUpRight} />
                 </TextLink>
               </li>
             )}
             {repo && (
               <li>
                 <TextLink isExternalPage iconType="repo" href={repo}>
+                  <Icon component={GitFork} />
                   GitHub
+                  <Icon component={ArrowUpRight} />
                 </TextLink>
               </li>
             )}
             {twitter && (
               <li>
                 <TextLink isExternalPage iconType="twitter" href={twitter}>
-                  Twitter
+                  <Icon component={TwitterLogo} />
+                  GitHub
+                  <Icon component={ArrowUpRight} />
                 </TextLink>
               </li>
             )}
             {featuredContent && (
               <li>
                 <TextLink iconType="caseStudy" href={featuredContent}>
+                  <Icon component={BookOpen} />
                   Case Study
                 </TextLink>
               </li>
