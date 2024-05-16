@@ -299,8 +299,13 @@
               "required": false,
               "collection": "ecosystem",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "multiple": true,
               "min": 6,
               "max": 6
@@ -435,8 +440,13 @@
               "widget": "relation",
               "collection": "blog",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "required": true
             },
             {
@@ -845,8 +855,13 @@
               "widget": "relation",
               "collection": "events",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "required": true
             },
             {
@@ -1241,8 +1256,13 @@
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
-          "search_fields": ["slug", "title"],
-          "display_fields": ["title"],
+          "search_fields": [
+            "slug",
+            "title"
+          ],
+          "display_fields": [
+            "title"
+          ],
           "multiple": true
         },
         {
@@ -1324,10 +1344,71 @@
       ]
     },
     {
+      "name": "ecosystem_projects_categories",
+      "label": "Ecosystem Projects Categories",
+      "label_singular": "Ecosystem Projects Category",
+      "folder": "src/content/ecosystem/categories/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "yml",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Category Name",
+          "widget": "string"
+        },
+        {
+          "name": "subcategories",
+          "label": "Subcategories",
+          "widget": "relation",
+          "collection": "ecosystem_projects_subcategories",
+          "search_fields": [
+            "name"
+          ],
+          "value_field": "slug",
+          "display_fields": [
+            "name"
+          ],
+          "multiple": true
+        }
+      ]
+    },
+    {
+      "name": "ecosystem_projects_subcategories",
+      "label": "Ecosystem Projects Subcategories",
+      "label_singular": "Ecosystem Projects Subcategory",
+      "folder": "src/content/ecosystem/subcategories/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "yml",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "label": "Subcategory Name",
+          "name": "name",
+          "widget": "string"
+        },
+        {
+          "label": "Parent Category",
+          "name": "parent_category",
+          "widget": "relation",
+          "collection": "ecosystem_projects_categories",
+          "search_fields": [
+            "name"
+          ],
+          "value_field": "slug",
+          "display_fields": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
       "name": "ecosystem_projects",
       "label": "Ecosystem Projects",
       "label_singular": "Ecosystem Project",
-      "folder": "src/content/ecosystem/",
+      "folder": "src/content/ecosystem/projects/",
       "create": true,
       "identifier_field": "name",
       "extension": "md",
@@ -1386,54 +1467,43 @@
           ]
         },
         {
-          "name": "categories",
+          "name": "category",
           "label": "Category",
-          "widget": "select",
-          "required": true,
-          "options": [
-            {
-              "label": "Artificial Intelligence",
-              "value": "artificial-intelligence"
-            },
-            {
-              "label": "Education, Academia & Health",
-              "value": "education-academia-health"
-            },
-            {
-              "label": "Finance",
-              "value": "finance"
-            },
-            {
-              "label": "Media & Entertainment",
-              "value": "media-entertainment"
-            },
-            {
-              "label": "Network",
-              "value": "network"
-            },
-            {
-              "label": "Public Goods & DWeb",
-              "value": "public-goods-dweb"
-            },
-            {
-              "label": "Science, Climate & Space",
-              "value": "science-climate-space"
-            },
-            {
-              "label": "Storage",
-              "value": "storage"
-            },
-            {
-              "label": "Tooling & Productivity",
-              "value": "tooling-productivity"
-            }
+          "widget": "relation",
+          "required": false,
+          "collection": "ecosystem_projects_categories",
+          "value_field": "slug",
+          "search_fields": [
+            "name"
+          ],
+          "display_fields": [
+            "name"
           ]
+        },
+        {
+          "name": "subcategories",
+          "label": "Subcategories",
+          "widget": "relation",
+          "required": false,
+          "collection": "ecosystem_projects_subcategories",
+          "value_field": "slug",
+          "search_fields": [
+            "name"
+          ],
+          "display_fields": [
+            "name"
+          ],
+          "multiple": true,
+          "filter": {
+            "field": "parent_category",
+            "value": "{{fields.category}}"
+          }
         },
         {
           "name": "tags",
           "label": "Tags",
           "widget": "select",
-          "required": true,
+          "required": false,
           "multiple": true,
           "options": [
             {
@@ -1629,7 +1699,10 @@
           "widget": "select",
           "required": true,
           "multiple": true,
-          "options": ["filecoin", "ipfs"]
+          "options": [
+            "filecoin",
+            "ipfs"
+          ]
         },
         {
           "name": "featured-content",
@@ -1979,8 +2052,13 @@
           "required": false,
           "collection": "ecosystem",
           "value_field": "slug",
-          "search_fields": ["slug", "title"],
-          "display_fields": ["title"],
+          "search_fields": [
+            "slug",
+            "title"
+          ],
+          "display_fields": [
+            "title"
+          ],
           "multiple": true,
           "min": 6,
           "max": 6
