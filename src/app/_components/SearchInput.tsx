@@ -14,7 +14,7 @@ export function SearchInput({
   onSearchChange,
 }: SearchInputProps) {
   return (
-    <div className="w-full max-w-lg lg:max-w-xs">
+    <div className="w-full">
       <label htmlFor="search" className="sr-only">
         Search
       </label>

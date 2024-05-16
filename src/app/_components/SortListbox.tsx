@@ -32,7 +32,7 @@ export function SortListbox({
             aria-haspopup="listbox"
             aria-expanded={open}
             aria-label="Categories"
-            className="border-1 inline-flex max-w-40 items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100"
+            className="border-1 inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100"
           >
             <div className="inline-flex items-center gap-2">
               <Icon component={ArrowsDownUp} />
@@ -46,7 +46,7 @@ export function SortListbox({
           </Listbox.Button>
           <Listbox.Options
             aria-labelledby="listbox-button"
-            className="absolute z-10 mt-14 min-w-40 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-1 text-brand-100 focus-within:outline-2 focus:outline-2 focus:outline-brand-100"
+            className="absolute z-10 mt-2 min-w-40 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-1 text-brand-100 focus-within:outline-2 focus:outline-2 focus:outline-brand-100"
           >
             {sortSettings.map((option) => (
               <Listbox.Option key={option.id} value={option.id} as={Fragment}>
