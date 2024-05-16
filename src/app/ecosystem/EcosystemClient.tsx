@@ -16,7 +16,7 @@ export function EcosystemClient({
   projects: EcosystemProjectData[]
 }) {
   const [searchQuery, setSearchQuery] = useState<string>('')
-  const [selectedTopics, setSelectedTopics] = useState<string[]>([])
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [visibleCount, setVisibleCount] = useState<number>(PROJECTS_PER_LOAD)
 
@@ -31,17 +31,17 @@ export function EcosystemClient({
         .toLowerCase()
         .includes(searchQuery)
 
-      const matchesTopics =
-        selectedTopics.length === 0 ||
-        selectedTopics.includes(project.topic)
+      const matchesCategories =
+        selectedCategories.length === 0 ||
+        selectedCategories.includes(project.category)
 
       const matchesTags =
         selectedTags.length === 0 ||
         project.tags.some((tag) => selectedTags.includes(tag))
 
-      return matchesSearchQuery && matchesTopics && matchesTags
+      return matchesSearchQuery && matchesCategories && matchesTags
     })
-  }, [projects, searchQuery, selectedTags, selectedTopics])
+  }, [projects, searchQuery, selectedTags, selectedCategories])
 
   const hasMoreProjects = visibleCount < filteredProjects.length
 
@@ -51,7 +51,7 @@ export function EcosystemClient({
 
   function handleClearAll() {
     setSearchQuery('')
-    setSelectedTopics([])
+    setSelectedCategories([])
     setSelectedTags([])
     setVisibleCount(PROJECTS_PER_LOAD)
   }
@@ -61,9 +61,9 @@ export function EcosystemClient({
       <Button aria-label="Clear all filter options" onClick={handleClearAll}>
         Clear All
       </Button>
-      <div className="sm:flex gap-6">
+      <div className="gap-6 sm:flex">
         <EcosystemFilter
-          onTopicsChange={(topics) => setSelectedTopics(topics)}
+          onCategoriesChange={(categories) => setSelectedCategories(categories)}
           onTagsChange={(tags) => setSelectedTags(tags)}
         />
 
@@ -83,7 +83,7 @@ export function EcosystemClient({
           </div>
 
           <EcosystemProjectsList
-            className="gap-10 grid list-none sm:grid-cols-2"
+            className="grid list-none gap-10 sm:grid-cols-2"
             projects={filteredProjects.slice(0, visibleCount)}
           />
         </div>

@@ -1,0 +1,8 @@
+name: "Tooling & Productivity"
+slug: "tooling-productivity"
+subcategories:
+  - date-retrieval
+  - developer-tools
+  - dapp
+  - bridges-oracles
+  - wallets-identity-authentication
