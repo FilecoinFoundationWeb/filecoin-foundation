@@ -5,14 +5,15 @@ import dynamic from 'next/dynamic'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
+import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSortQuery } from '@/hooks/useSortQuery'
 
+import { BlogCategory } from '@/components/BlogCategory'
 import { BlogSort } from '@/components/BlogSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
-import { CategoryListbox } from '@/components/CategoryListbox'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -113,14 +114,23 @@ export default function Blog({ searchParams }: Props) {
   })
 
   const { sortQuery } = useSortQuery({ searchParams })
+  const { categoryQuery } = useCategory({ searchParams })
 
   const sortedAndFilteredPosts = useMemo(() => {
+    const filteredResults = searchResults.filter((post) => {
+      if (categoryQuery === 'all') {
+        return true
+      }
+
+      return post.category === categoryQuery
+    })
+
     return sortEntriesByDate({
-      entries: searchResults,
+      entries: filteredResults,
       sortOption: sortQuery,
       dateField: 'publishedOn',
     })
-  }, [searchResults, sortQuery])
+  }, [categoryQuery, searchResults, sortQuery])
 
   const { currentPage, pageCount } = usePagination({
     searchParams,
@@ -155,55 +165,88 @@ export default function Blog({ searchParams }: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <div className="flex w-full flex-col gap-3 sm:flex-row sm:justify-end">
-          <Search query={searchQuery} />
-          <div className="inline-flex gap-3">
-            <CategoryListbox />
-            <BlogSort />
-          </div>
-        </div>
-
         {sortedAndFilteredPosts.length === 0 ? (
           <NoResultsMessage />
         ) : (
-          <>
-            <CardLayout type="blogPost">
-              {paginatedPosts.map((post) => {
-                const {
-                  slug,
-                  category,
-                  title,
-                  description,
-                  image,
-                  publishedOn,
-                } = post
-
-                return (
-                  <Card
-                    key={slug}
-                    tag={category}
-                    title={title}
-                    description={description}
-                    image={{ url: image?.url, alt: image?.alt }}
-                    textIsClamped={true}
-                    metaData={publishedOn ? [formatDate(publishedOn)] : []}
-                    cta={{
-                      href: `${PATHS.BLOG.path}/${slug}`,
-                      text: 'Read Post',
-                      icon: BookOpen,
-                    }}
-                  />
-                )
-              })}
-            </CardLayout>
-
-            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
-              <NoSSRPagination
-                pageCount={pageCount}
-                currentPage={currentPage}
-              />
+          <div className="flex flex-col gap-6 lg:flex-row">
+            {/* Desktop */}
+            <div className="hidden flex-col gap-6 lg:flex">
+              <div className="flex items-baseline gap-8">
+                <span className="baseline inline-flex flex-1 gap-2">
+                  <span className="">Results</span>
+                  <span className="rounded-[42px] bg-brand-300 p-1 text-xs font-bold text-brand-800">
+                    102
+                  </span>
+                </span>
+                <button className="whitespace-nowrap font-bold text-brand-300 underline">
+                  Reset Filters
+                </button>
+              </div>
+              <BlogCategory />
             </div>
-          </>
+
+            <div className="flex flex-col gap-4">
+              {/* Desktop */}
+              <div className="hidden justify-end gap-3 lg:flex">
+                <Search query={searchQuery} />
+                <div className="min-w-40">
+                  <BlogSort />
+                </div>
+              </div>
+
+              {/* Mobile */}
+              <div className="flex flex-col gap-3 sm:flex-row lg:hidden">
+                <Search query={searchQuery} />
+                <div className="flex flex-1 gap-3">
+                  <div className="w-full">
+                    <BlogCategory />
+                  </div>
+                  <div className="max-fit">
+                    <BlogSort />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center gap-1 sm:gap-6">
+                <CardLayout type="blogPost">
+                  {paginatedPosts.map((post) => {
+                    const {
+                      slug,
+                      category,
+                      title,
+                      description,
+                      image,
+                      publishedOn,
+                    } = post
+
+                    return (
+                      <Card
+                        key={slug}
+                        tag={category}
+                        title={title}
+                        description={description}
+                        image={{ url: image?.url, alt: image?.alt }}
+                        textIsClamped={true}
+                        metaData={publishedOn ? [formatDate(publishedOn)] : []}
+                        cta={{
+                          href: `${PATHS.BLOG.path}/${slug}`,
+                          text: 'Read Post',
+                          icon: BookOpen,
+                        }}
+                      />
+                    )
+                  })}
+                </CardLayout>
+
+                <div className="sm:w-fit">
+                  <NoSSRPagination
+                    pageCount={pageCount}
+                    currentPage={currentPage}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         )}
       </PageSection>
     </PageLayout>
