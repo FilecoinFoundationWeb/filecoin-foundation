@@ -3,52 +3,48 @@
 import { Fragment } from 'react'
 
 import { Listbox } from '@headlessui/react'
-import { ArrowsDownUp, CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
-import { type SortOptionType } from '@/types/sortTypes'
+import { type CategoryOptionType } from '@/types/categoryTypes'
 
-import { sortSettings } from '@/constants/sortConstants'
+import { categorySettings } from '@/constants/categoryConstants'
 
-type SortListboxProps = {
-  sortOption: SortOptionType
-  onSortOptionChange: (selectedSortOption: SortOptionType) => void
+type CategoryListboxProps = {
+  categoryOption: CategoryOptionType
+  onCategoryOptionChange: (selectedCategoryOption: CategoryOptionType) => void
 }
 
-export function SortListbox({
-  sortOption,
-  onSortOptionChange,
-}: SortListboxProps) {
-  const selectedSortSetting =
-    sortSettings.find((option) => option.id === sortOption) || sortSettings[0]
+export function CategoryListbox({
+  categoryOption,
+  onCategoryOptionChange,
+}: CategoryListboxProps) {
+  const selectedCategorySetting =
+    categorySettings.find((option) => option.id === categoryOption) ||
+    categorySettings[0]
 
   return (
-    <Listbox value={sortOption} onChange={onSortOptionChange}>
+    <Listbox value={categoryOption} onChange={onCategoryOptionChange}>
       {({ open }) => (
         <>
           <Listbox.Button
             aria-haspopup="listbox"
             aria-expanded={open}
-            aria-label="Categories"
-            className="border-1 inline-flex max-w-40 items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100"
+            aria-label="Category options"
+            className="border-1 inline-flex w-full max-w-40 items-center justify-between gap-2 rounded-lg border border-brand-300 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:outline-2 focus:outline-brand-100"
           >
             <div className="inline-flex items-center gap-2">
-              <Icon component={ArrowsDownUp} />
-              <span className="hidden md:block">
-                {selectedSortSetting.name}
-              </span>
+              <span>Category</span>
             </div>
-            <span className="hidden md:block">
-              <Icon component={CaretDown} size={16} weight="bold" />
-            </span>
+            <Icon component={CaretDown} size={16} weight="bold" />
           </Listbox.Button>
           <Listbox.Options
             aria-labelledby="listbox-button"
             className="absolute z-10 mt-14 min-w-40 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-1 text-brand-100 focus-within:outline-2 focus:outline-2 focus:outline-brand-100"
           >
-            {sortSettings.map((option) => (
+            {categorySettings.map((option) => (
               <Listbox.Option key={option.id} value={option.id} as={Fragment}>
                 {({ active, selected }) => (
                   <li
