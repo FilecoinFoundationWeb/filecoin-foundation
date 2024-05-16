@@ -24,13 +24,21 @@ export interface PathConfig {
 export const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
-function createPathObject(
-  path: PathValues,
-  label: string,
-  includesEntries: boolean = false,
-  customMainContentPath?: string,
-  customEntriesContentPath?: string,
-): PathConfig {
+interface PathObjectParams {
+  path: PathValues
+  label: string
+  includesEntries?: boolean
+  customMainContentPath?: string
+  customEntriesContentPath?: string
+}
+
+function createPathObject({
+  path,
+  label,
+  includesEntries = false,
+  customMainContentPath,
+  customEntriesContentPath,
+}: PathObjectParams): PathConfig {
   const config: PathConfig = {
     path,
     label,
@@ -44,19 +52,33 @@ function createPathObject(
 }
 
 export const PATHS = {
-  ABOUT: createPathObject('/about', 'About'),
-  BLOG: createPathObject('/blog', 'Blog', true),
-  ECOSYSTEM: createPathObject(
-    '/ecosystem',
-    'Ecosystem Explorer',
-    true,
-    '',
-    '/ecosystem/projects/',
-  ),
-  EVENTS: createPathObject('/events', 'Events', true),
-  GOVERNANCE: createPathObject('/governance', 'Governance'),
-  GRANTS: createPathObject('/grants', 'Grants'),
-  HOME: createPathObject('/', 'Home', false, '/home'),
-  PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
-  TERMS: createPathObject('/terms', 'Terms and Conditions'),
+  ABOUT: createPathObject({ path: '/about', label: 'About' }),
+  BLOG: createPathObject({
+    path: '/blog',
+    label: 'Blog',
+    includesEntries: true,
+  }),
+  ECOSYSTEM: createPathObject({
+    path: '/ecosystem',
+    label: 'Ecosystem Explorer',
+    includesEntries: true,
+    customEntriesContentPath: '/ecosystem/projects/',
+  }),
+  EVENTS: createPathObject({
+    path: '/events',
+    label: 'Events',
+    includesEntries: true,
+  }),
+  GOVERNANCE: createPathObject({ path: '/governance', label: 'Governance' }),
+  GRANTS: createPathObject({ path: '/grants', label: 'Grants' }),
+  HOME: createPathObject({
+    path: '/',
+    label: 'Home',
+    customMainContentPath: '/home',
+  }),
+  PRIVACY_POLICY: createPathObject({
+    path: '/privacy-policy',
+    label: 'Privacy Policy',
+  }),
+  TERMS: createPathObject({ path: '/terms', label: 'Terms and Conditions' }),
 } as const
