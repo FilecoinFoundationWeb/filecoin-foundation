@@ -6,9 +6,11 @@ export function validateFrontMatter(
 ): boolean {
   const missingFieldsToSkipCheck: string[] = [
     'body',
+    'categories',
     'category',
     'location',
     'seo',
+    'subcategories',
   ]
   const extraFieldsToSkipCheck: string[] = ['slug', 'metadata']
 
