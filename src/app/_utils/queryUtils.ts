@@ -10,5 +10,5 @@ export function normalizeQueryParam(
   key: string,
 ) {
   const param = getFirstQueryParam(params, key)
-  return param?.toLowerCase()
+  return param?.trim().toLowerCase()
 }

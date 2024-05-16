@@ -14,13 +14,13 @@ import { SearchInput } from '@/components/SearchInput'
 import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
 import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 
-type BlogSearchInputProps = {
+type SearchProps = {
   query: ReturnType<typeof useSearch>['searchQuery']
 }
 
 const DEBOUNCE_DELAY = 400
 
-export function Search({ query }: BlogSearchInputProps) {
+export function Search({ query }: SearchProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
 
