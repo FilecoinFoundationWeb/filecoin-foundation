@@ -19,19 +19,8 @@ type CalendarProps = {
   startDate: string
 }
 
-function Calendar({ startDate }: CalendarProps) {
-  const { day, month } = extractTimeFromISO(startDate)
-
-  return (
-    <div className="grid min-h-40 min-w-36 grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-blue-500">
-      <span className="flex items-center justify-center rounded-t text-base font-normal uppercase">
-        {month}
-      </span>
-      <span className="flex flex-1 items-center justify-center rounded-b bg-blue-100 text-5xl font-bold text-blue-400">
-        {day}
-      </span>
-    </div>
-  )
+type PlaceholderProps = {
+  text: string
 }
 
 const eventSchema = z.object({
@@ -57,6 +46,29 @@ async function getEvents(endpoint: string) {
   return eventsSchema.parse(data)
 }
 
+function Placeholder({ text }: PlaceholderProps) {
+  return (
+    <div className="py-8 lg:flex lg:h-[558px] lg:items-center lg:justify-center">
+      {text}
+    </div>
+  )
+}
+
+function Calendar({ startDate }: CalendarProps) {
+  const { day, month } = extractTimeFromISO(startDate)
+
+  return (
+    <div className="grid min-h-40 min-w-36 grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-blue-500">
+      <span className="flex items-center justify-center rounded-t text-base font-normal uppercase">
+        {month}
+      </span>
+      <span className="flex flex-1 items-center justify-center rounded-b bg-blue-100 text-5xl font-bold text-blue-400">
+        {day}
+      </span>
+    </div>
+  )
+}
+
 export function GovernanceCalendarCards() {
   const [currentDate] = useState(new Date())
   const timeMin = encodeURIComponent(currentDate.toISOString())
@@ -65,20 +77,16 @@ export function GovernanceCalendarCards() {
 
   const { data: events, error } = useSWR(url, getEvents)
 
-  if (error) return <div>Failed to load events</div>
-  if (!events)
-    return (
-      <div className="flex h-[558px] items-center justify-center">
-        Loading events...
-      </div>
-    )
+  if (error) {
+    return <Placeholder text="Failed to load events" />
+  }
 
-  if (events?.items.length === 0) {
-    return (
-      <div className="flex h-[1976px] justify-center p-8 md:h-[1140px] lg:h-[558px] lg:items-center">
-        No upcoming events
-      </div>
-    )
+  if (!events) {
+    return <Placeholder text="Loading events..." />
+  }
+
+  if (events.items.length === 0) {
+    return <Placeholder text="No upcoming events" />
   }
 
   return (
