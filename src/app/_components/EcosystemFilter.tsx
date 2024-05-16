@@ -6,7 +6,7 @@ import configJson from '@/data/cmsConfigSchema.json'
 const config: CMSConfig = configJson as CMSConfig
 
 type EcosystemFilterProps = {
-  onTopicsChange: (selectedTopics: string[]) => void
+  onCategoriesChange: (selectedCategories: string[]) => void
   onTagsChange: (selectedTags: string[]) => void
 }
 
@@ -51,25 +51,27 @@ function OptionSelect({
 }
 
 export function EcosystemFilter({
-  onTopicsChange,
+  onCategoriesChange,
   onTagsChange,
 }: EcosystemFilterProps) {
   const collection = getCMSCollection(config.collections, 'ecosystem_projects')
-  let topics
+  let categories
   let tags
 
   if (collection) {
-    topics = getCMSFieldOptions(collection, 'topic')
+    categories = getCMSFieldOptions(collection, 'category')
     tags = getCMSFieldOptions(collection, 'tags')
   }
 
   return (
     <div className="flex flex-col gap-2 text-brand-800">
       <OptionSelect
-        label="Select Topics"
-        name="topics"
-        options={topics || []}
-        onChange={(selectedTopics) => onTopicsChange(selectedTopics)}
+        label="Select Categories"
+        name="categories"
+        options={categories || []}
+        onChange={(selectedCategories) =>
+          onCategoriesChange(selectedCategories)
+        }
       />
       <OptionSelect
         label="Select Tags"

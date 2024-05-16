@@ -1,25 +1,10 @@
 import Link from 'next/link'
 
+import { DesktopNavigation } from '@/components/DesktopNavigation'
 import { Logo } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
-import { TextLink } from '@/components/TextLink'
 
 import { PATHS } from '@/constants/paths'
-
-const navigationItems = [
-  PATHS.ABOUT,
-  PATHS.GOVERNANCE,
-  PATHS.ECOSYSTEM,
-  PATHS.BLOG,
-]
-
-function NavigationLink({ label, path }: { label: string; path: string }) {
-  return (
-    <li className="whitespace-nowrap last:mr-0">
-      <TextLink href={path}>{label}</TextLink>
-    </li>
-  )
-}
 
 export function Navigation() {
   return (
@@ -34,12 +19,7 @@ export function Navigation() {
       </Link>
 
       <MobileNavigation />
-
-      <ul className="hidden gap-5 lg:flex">
-        {navigationItems.map((item) => (
-          <NavigationLink key={item.path} label={item.label} path={item.path} />
-        ))}
-      </ul>
+      <DesktopNavigation />
     </nav>
   )
 }

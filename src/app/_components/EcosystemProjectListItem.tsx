@@ -12,12 +12,12 @@ export function EcosystemProjectListItem({
 }: {
   project: EcosystemProjectData
 }) {
-  const { slug, image, topic, title, description } = project
+  const { slug, image, category, title, description } = project
 
   return (
-    <li key={slug} className="flex flex-col justify-between ml-0">
+    <li key={slug} className="ml-0 flex flex-col justify-between">
       <div>
-        <div className="relative size-56 border mb-4">
+        <div className="relative mb-4 size-56 border">
           {image.url && (
             <Image
               fill
@@ -29,7 +29,7 @@ export function EcosystemProjectListItem({
           )}
         </div>
 
-        <span className="inline-block mb-3">{topic}</span>
+        <span className="mb-3 inline-block">{category}</span>
 
         <Heading tag="h3" variant="lg">
           {title}
