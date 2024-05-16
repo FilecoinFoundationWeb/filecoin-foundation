@@ -19,7 +19,7 @@ export function Badge({
   children,
 }: BadgeProps) {
   const baseStyles =
-    'inline-block max-w-fit rounded-lg border bg-brand-800 px-2 py-1 text-xs font-semibold capitalize text-brand-100 flex gap-1'
+    'inline-flex max-w-fit gap-1 rounded-lg border bg-brand-800 px-2 py-1 text-xs font-semibold capitalize text-brand-100'
 
   return (
     <span className={clsx(baseStyles, borderStyles[borderColor])}>

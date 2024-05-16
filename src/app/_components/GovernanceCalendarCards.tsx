@@ -54,7 +54,11 @@ async function getEvents(endpoint: string) {
   }
 
   const data = await response.json()
-  return eventsSchema.parse(data)
+  try {
+    return eventsSchema.parse(data)
+  } catch (error) {
+    throw new Error(`getEvents: Data validation failed - ${error}`)
+  }
 }
 
 export function GovernanceCalendarCards() {
@@ -66,7 +70,20 @@ export function GovernanceCalendarCards() {
   const { data: events, error } = useSWR(url, getEvents)
 
   if (error) return <div>Failed to load events</div>
-  if (!events) return <div>Loading events...</div>
+  if (!events)
+    return (
+      <div className="flex h-[558px] items-center justify-center">
+        Loading events...
+      </div>
+    )
+
+  if (events?.items.length === 0) {
+    return (
+      <div className="flex h-[1976px] justify-center p-8 md:h-[1140px] lg:h-[558px] lg:items-center">
+        No upcoming events
+      </div>
+    )
+  }
 
   return (
     <CardLayout type="blogPost">
@@ -79,7 +96,7 @@ export function GovernanceCalendarCards() {
         return (
           <li
             key={id}
-            className="flex flex-col rounded-md border border-blue-500 p-1 sm:flex-row"
+            className="flex flex-col rounded-lg border border-blue-500 p-1 sm:flex-row"
           >
             <Calendar startDate={start.dateTime} />
             <div className="flex flex-1 flex-col items-start justify-between gap-6 p-4">

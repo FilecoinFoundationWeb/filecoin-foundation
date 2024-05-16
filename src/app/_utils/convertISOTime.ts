@@ -1,12 +1,4 @@
-type extractTimeFromISOType = {
-  day: number
-  month: string
-  time: string
-}
-
-export function extractTimeFromISO(
-  isoDateString: string,
-): extractTimeFromISOType {
+export function extractTimeFromISO(isoDateString: string) {
   const date = new Date(isoDateString)
 
   const day = date.getDate()
