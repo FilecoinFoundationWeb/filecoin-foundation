@@ -4,7 +4,7 @@ type SectionDividerProps = {
 
 export function SectionDivider({ title }: SectionDividerProps) {
   return (
-    <div className="mb-4 flex max-h-max items-center gap-2">
+    <div className="flex max-h-max items-center gap-2">
       <span className="text-sm font-light uppercase text-brand-300">
         {title}
       </span>

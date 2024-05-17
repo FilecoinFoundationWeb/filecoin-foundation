@@ -32,7 +32,7 @@ export function PageHeader({
   isFeatured = false,
 }: PageHeaderProps) {
   return (
-    <header className="grid grid-rows-[auto,auto]">
+    <header className="grid grid-rows-[auto,auto] gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col gap-4 md:w-1/2">
