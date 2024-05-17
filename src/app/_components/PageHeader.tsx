@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import clsx from 'clsx'
+
 import { Button } from '@/components/Button'
 import {
   type DescriptionTextType,
@@ -20,6 +22,7 @@ type PageHeaderProps = {
   image?: ImageProps
   metaData?: Array<string | null | undefined>
   isFeatured?: boolean
+  containImageSize?: boolean
 }
 
 export function PageHeader({
@@ -30,6 +33,7 @@ export function PageHeader({
   image,
   metaData,
   isFeatured = false,
+  containImageSize = false,
 }: PageHeaderProps) {
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
@@ -73,7 +77,10 @@ export function PageHeader({
               fill
               src={image.url}
               alt={image.alt}
-              className="block rounded-lg object-cover"
+              className={clsx(
+                'block rounded-lg',
+                containImageSize ? 'object-contain' : 'object-cover',
+              )}
             />
           </div>
         )}
