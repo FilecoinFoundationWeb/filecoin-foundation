@@ -13,8 +13,6 @@ import { attributes } from '@/content/pages/ecosystem.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { EcosystemClient } from './EcosystemClient'
-
 const { featured_post: featuredProjectSlug, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
@@ -54,9 +52,7 @@ export default function Ecosystem() {
         kicker="Projects"
         title="Ecosystem Projects"
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
-      >
-        <EcosystemClient projects={ecosystemProjects} />
-      </PageSection>
+      />
 
       <CTASection
         title="Become Part of the Expanding Ecosystem"
