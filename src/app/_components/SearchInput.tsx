@@ -1,23 +1,20 @@
 import { ChangeEvent } from 'react'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
 export type SearchInputProps = {
   searchQuery: string
   onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
-  width?: 'full' | 'xs'
 }
 
 export function SearchInput({
   searchQuery = '',
   onSearchChange,
-  width = 'xs',
 }: SearchInputProps) {
   return (
-    <div className={clsx('w-full', width === 'xs' && 'max-w-lg lg:max-w-xs')}>
+    <div className="w-full max-w-lg lg:max-w-xs">
       <label htmlFor="search" className="sr-only">
         Search
       </label>

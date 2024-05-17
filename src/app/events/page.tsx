@@ -133,7 +133,7 @@ export default function Events({ searchParams }: Props) {
 
       <PageSection kicker="Events" title="Network Events">
         <div className="flex justify-end gap-3">
-          <Search query={searchQuery} width="full" />
+          <Search query={searchQuery} />
           <Sort query={sortQuery} />
         </div>
 

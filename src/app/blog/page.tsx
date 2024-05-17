@@ -151,7 +151,7 @@ export default function Blog({ searchParams }: Props) {
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
         <div className="flex justify-end gap-3">
-          <Search query={searchQuery} width="full" />
+          <Search query={searchQuery} />
           <Sort query={sortQuery} />
         </div>
 
