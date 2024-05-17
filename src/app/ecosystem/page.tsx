@@ -1,10 +1,20 @@
+import dynamic from 'next/dynamic'
+
+import { usePagination } from '@/hooks/usePagination'
+import { useSearch } from '@/hooks/useSearch'
+import { useSort } from '@/hooks/useSort'
+
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { Search } from '@/components/Search'
+import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { NextServerSearchParams } from '@/types/searchParams'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
@@ -14,6 +24,11 @@ import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
 
 const { featured_post: featuredProjectSlug, seo } = attributes
 
@@ -30,10 +45,35 @@ const ecosystemPageBaseData = generateWebPageStructuredData({
   path: PATHS.ECOSYSTEM.path,
 })
 
-export default function Ecosystem() {
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+const PROJECTS_PER_PAGE = 20
+
+export default function Ecosystem({ searchParams }: Props) {
   if (!featuredProject) {
     throw new Error('Featured project not found')
   }
+
+  const { searchQuery, searchResults } = useSearch({
+    searchParams,
+    entries: ecosystemProjects,
+    searchBy: ['title', 'description'],
+  })
+
+  const { sortQuery, sortedResults } = useSort({
+    searchParams,
+    entries: searchResults,
+    sortBy: 'publishedOn',
+    sortByDefault: 'newest',
+  })
+
+  const { pageCount, currentPage, paginatedResults } = usePagination({
+    searchParams,
+    entries: sortedResults,
+    entriesPerPage: PROJECTS_PER_PAGE,
+  })
 
   return (
     <PageLayout>
@@ -55,8 +95,12 @@ export default function Ecosystem() {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
       >
+        <div className="mt-3 flex justify-end gap-3">
+          <Search query={searchQuery} />
+          <Sort query={sortQuery} />
+        </div>
         <CardLayout type="home">
-          {ecosystemProjects.map((project) => {
+          {paginatedResults.map((project) => {
             const { slug, title, description, image, category } = project
 
             return (
@@ -75,6 +119,10 @@ export default function Ecosystem() {
             )
           })}
         </CardLayout>
+
+        <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
+          <NoSSRPagination pageCount={pageCount} currentPage={currentPage} />
+        </div>
       </PageSection>
 
       <CTASection
