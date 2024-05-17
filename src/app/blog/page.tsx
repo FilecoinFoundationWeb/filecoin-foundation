@@ -1,5 +1,3 @@
-import { useMemo } from 'react'
-
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -117,18 +115,11 @@ export default function Blog({ searchParams }: Props) {
     sortByDefault: 'newest',
   })
 
-  const { currentPage, pageCount } = usePagination({
+  const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    totalEntries: sortedResults.length,
+    entries: sortedResults,
     entriesPerPage: POSTS_PER_PAGE,
   })
-
-  const firstPostIndex = (currentPage - 1) * POSTS_PER_PAGE
-  const lastPostIndex = currentPage * POSTS_PER_PAGE
-
-  const paginatedPosts = useMemo(() => {
-    return sortedResults.slice(firstPostIndex, lastPostIndex)
-  }, [firstPostIndex, lastPostIndex, sortedResults])
 
   return (
     <PageLayout>
@@ -160,7 +151,7 @@ export default function Blog({ searchParams }: Props) {
         ) : (
           <>
             <CardLayout type="blogPost">
-              {paginatedPosts.map((post) => {
+              {paginatedResults.map((post) => {
                 const {
                   slug,
                   category,
