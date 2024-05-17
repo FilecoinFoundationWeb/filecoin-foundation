@@ -1,5 +1,6 @@
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
+import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -76,6 +77,10 @@ export default function Governance() {
           'The Foundation’s role includes developing and implementing processes and policies for decision-making and managing community engagement and feedback – all to support the development of the ecosystem at large. ',
         ]}
       />
+
+      <PageSection kicker="Upcoming Events" title="Community Calls">
+        <GovernanceCalendarCards />
+      </PageSection>
 
       <CTASection
         title="Connect With Us"
