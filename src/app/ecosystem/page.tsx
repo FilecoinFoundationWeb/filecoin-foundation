@@ -55,32 +55,6 @@ export default function Ecosystem() {
 
       <section>
         <Heading tag="h2" variant="xl">
-          Featured Partners
-        </Heading>
-        <ul className="flex list-none items-center gap-8">
-          {featuredPartners.map(({ name, logo, url }) => (
-            <li key={name} className="relative mb-0 ml-0 inline-flex size-24">
-              <Image
-                fill
-                priority
-                src={logo}
-                alt={`${name} Logo`}
-                className="object-contain"
-              />
-              <a
-                href={url}
-                className="absolute inset-0"
-                title={`Visit ${name}`}
-              >
-                <span className="sr-only">Visit {name}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section>
-        <Heading tag="h2" variant="xl">
           Ecosystem Projects
         </Heading>
         <p className="mb-6">
