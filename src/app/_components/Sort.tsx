@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import { useSortQuery } from '@/hooks/useSortQuery'
+import { useSort } from '@/hooks/useSort'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SortListbox } from '@/components/SortListbox'
@@ -11,11 +11,11 @@ import { type SortOptionItems } from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
 
-type BlogSortProps = {
-  query: ReturnType<typeof useSortQuery>['sortQuery']
+type SortProps = {
+  query: ReturnType<typeof useSort>['sortQuery']
 }
 
-export function BlogSort({ query }: BlogSortProps) {
+export function Sort({ query }: SortProps) {
   const [sortOption, setSortOption] = useState<SortOptionItems>(query)
   const updateSearchParams = useUpdateSearchParams()
 

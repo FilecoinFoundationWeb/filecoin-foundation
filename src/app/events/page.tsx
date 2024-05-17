@@ -2,9 +2,8 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { useSearch } from '@/hooks/useSearch'
-import { useSortQuery } from '@/hooks/useSortQuery'
+import { useSort } from '@/hooks/useSort'
 
-import { BlogSort } from '@/components/BlogSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
@@ -12,6 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
+import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
@@ -109,7 +109,7 @@ export default function Events({ searchParams }: Props) {
     searchBy: ['title', 'location'],
   })
 
-  const { sortQuery, sortedResults } = useSortQuery({
+  const { sortQuery, sortedResults } = useSort({
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
@@ -134,7 +134,7 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <div className="flex justify-end gap-3">
           <Search query={searchQuery} width="full" />
-          <BlogSort query={sortQuery} />
+          <Sort query={sortQuery} />
         </div>
 
         {sortedResults.length === 0 ? (

@@ -31,7 +31,7 @@ function validateSortOption<Entry extends Record<string, unknown>>(
   return validSortOption || defaultSortBy
 }
 
-export function useSortQuery<Entry extends Record<string, unknown>>({
+export function useSort<Entry extends Record<string, unknown>>({
   searchParams,
   entries,
   sortBy,
