@@ -106,7 +106,7 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-const POSTS_PER_PAGE = 20
+const EVENTS_PER_PAGE = 20
 
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
@@ -129,7 +129,7 @@ export default function Events({ searchParams }: Props) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: sortedResults,
-    entriesPerPage: POSTS_PER_PAGE,
+    entriesPerPage: EVENTS_PER_PAGE,
   })
 
   return (
