@@ -13,7 +13,14 @@ import { useVisiblePages } from '@/hooks/useVisiblePages'
 
 import { Icon } from '@/components/Icon'
 
-type PaginationProps = ReturnType<typeof usePagination>
+import { PAGE_KEY } from '@/constants/searchParams'
+
+type PaginationProps = {
+  pageCount: ReturnType<typeof usePagination>['pageCount']
+  currentPage: ReturnType<typeof usePagination>['currentPage']
+}
+
+const DEBOUNCE_DELAY = 300
 
 export function Pagination({
   pageCount,
@@ -27,7 +34,7 @@ export function Pagination({
   const updateSearchParams = useUpdateSearchParams()
   const debouncedUpdateSearchParams = useDebounceCallback(
     updateSearchParams,
-    350,
+    DEBOUNCE_DELAY,
   )
 
   const canGoBack = currentPage > 1
@@ -37,7 +44,7 @@ export function Pagination({
     if (canGoBack) {
       const newPage = currentPage - 1
       setPage(newPage)
-      debouncedUpdateSearchParams({ page: newPage })
+      debouncedUpdateSearchParams({ [PAGE_KEY]: newPage })
     }
   }
 
@@ -45,14 +52,14 @@ export function Pagination({
     if (canGoForward) {
       const newPage = currentPage + 1
       setPage(newPage)
-      debouncedUpdateSearchParams({ page: newPage })
+      debouncedUpdateSearchParams({ [PAGE_KEY]: newPage })
     }
   }
 
   function handlePageChange(page: number) {
     if (page !== currentPage) {
       setPage(page)
-      updateSearchParams({ page })
+      updateSearchParams({ [PAGE_KEY]: page })
     }
   }
 
