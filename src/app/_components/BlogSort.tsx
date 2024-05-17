@@ -26,7 +26,7 @@ export function BlogSort({ query }: BlogSortProps) {
 
   useEffect(() => {
     updateSearchParams({ [SORT_KEY]: query })
-  }, [])
+  }, [query, updateSearchParams])
 
   return (
     <SortListbox
