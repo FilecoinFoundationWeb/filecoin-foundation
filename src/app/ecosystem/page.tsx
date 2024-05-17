@@ -2,6 +2,7 @@ import dynamic from 'next/dynamic'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
+import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
@@ -10,6 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
+import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
@@ -60,9 +62,16 @@ export default function Ecosystem({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { pageCount, currentPage, paginatedResults } = usePagination({
+  const { sortQuery, sortedResults } = useSort({
     searchParams,
     entries: searchResults,
+    sortBy: 'publishedOn',
+    sortByDefault: 'newest',
+  })
+
+  const { pageCount, currentPage, paginatedResults } = usePagination({
+    searchParams,
+    entries: sortedResults,
     entriesPerPage: PROJECTS_PER_PAGE,
   })
 
@@ -86,8 +95,9 @@ export default function Ecosystem({ searchParams }: Props) {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
       >
-        <div className="flex justify-end">
+        <div className="mt-3 flex justify-end gap-3">
           <Search query={searchQuery} />
+          <Sort query={sortQuery} />
         </div>
         <CardLayout type="home">
           {paginatedResults.map((project) => {
