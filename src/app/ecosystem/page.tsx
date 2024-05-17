@@ -1,3 +1,5 @@
+import { Card } from '@/components/Card'
+import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -52,7 +54,27 @@ export default function Ecosystem() {
         kicker="Projects"
         title="Ecosystem Projects"
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
-      />
+      >
+        <CardLayout type="home">
+          {ecosystemProjects.map((project) => {
+            const { slug, title, description, image, category } = project
+
+            return (
+              <Card
+                key={slug}
+                title={title}
+                description={description}
+                image={image}
+                tag={category}
+                cta={{
+                  href: `/ecosystem/${slug}`,
+                  text: 'Learn More',
+                }}
+              />
+            )
+          })}
+        </CardLayout>
+      </PageSection>
 
       <CTASection
         title="Become Part of the Expanding Ecosystem"
