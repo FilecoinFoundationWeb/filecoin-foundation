@@ -6,10 +6,7 @@ import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
 import { PATHS, PathValues } from '@/constants/paths'
-import {
-  FILECOIN_FOUNDATION_URLS,
-  FILECOIN_URLS,
-} from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type SectionProps = {
   title: string

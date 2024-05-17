@@ -1,5 +1,3 @@
-import { type Route } from 'next'
-
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 

@@ -16,7 +16,6 @@ import { attributes } from '@/content/pages/about.md'
 
 import { PATHS } from '@/constants/paths'
 import {
-  FILECOIN_URLS,
   ORGANIZATION_NAME,
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
