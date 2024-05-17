@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 
 import { usePagination } from '@/hooks/usePagination'
+import { useSearch } from '@/hooks/useSearch'
 
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
@@ -8,6 +9,7 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { Search } from '@/components/Search'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
@@ -52,9 +54,15 @@ export default function Ecosystem({ searchParams }: Props) {
     throw new Error('Featured project not found')
   }
 
-  const { pageCount, currentPage, paginatedResults } = usePagination({
+  const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: ecosystemProjects,
+    searchBy: ['title', 'description'],
+  })
+
+  const { pageCount, currentPage, paginatedResults } = usePagination({
+    searchParams,
+    entries: searchResults,
     entriesPerPage: PROJECTS_PER_PAGE,
   })
 
@@ -78,6 +86,9 @@ export default function Ecosystem({ searchParams }: Props) {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
       >
+        <div className="flex justify-end">
+          <Search query={searchQuery} />
+        </div>
         <CardLayout type="home">
           {paginatedResults.map((project) => {
             const { slug, title, description, image, category } = project
