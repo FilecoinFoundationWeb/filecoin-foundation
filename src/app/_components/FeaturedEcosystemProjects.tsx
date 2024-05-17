@@ -25,7 +25,7 @@ export function FeaturedEcosystemProjects({
           key={slug}
           title={title}
           description={description}
-          entryType="featuredEcosystemProject"
+          entryType="ecosystemProject"
           image={image}
           borderColor="brand-300"
           textIsClamped={true}
