@@ -68,7 +68,7 @@ export default function Ecosystem() {
                 tag={category}
                 entryType="ecosystemProject"
                 cta={{
-                  href: `/ecosystem/${slug}`,
+                  href: `${PATHS.ECOSYSTEM.path}/${slug}`,
                   text: 'Learn More',
                 }}
               />
