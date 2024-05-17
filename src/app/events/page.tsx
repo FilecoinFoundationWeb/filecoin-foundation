@@ -157,7 +157,7 @@ export default function Events({ searchParams }: Props) {
                   borderColor="brand-400"
                   textIsClamped={true}
                   cta={{
-                    href: `${PATHS.EVENTS}/${slug}`,
+                    href: `${PATHS.EVENTS.path}/${slug}`,
                     text: 'View Event Details',
                     icon: MagnifyingGlass,
                   }}
