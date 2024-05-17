@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import clsx from 'clsx'
+
 import { Button } from '@/components/Button'
 import {
   type DescriptionTextType,
@@ -20,6 +22,7 @@ type PageHeaderProps = {
   image?: ImageProps
   metaData?: Array<string | null | undefined>
   isFeatured?: boolean
+  containImageSize?: boolean
 }
 
 export function PageHeader({
@@ -30,9 +33,8 @@ export function PageHeader({
   image,
   metaData,
   isFeatured = false,
+  containImageSize = false,
 }: PageHeaderProps) {
-  // const imageStyles = `block rounded-lg ${image?.imageStyle ? image.imageStyle : 'object-cover'}`
-
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
@@ -75,17 +77,14 @@ export function PageHeader({
               fill
               src={image.url}
               alt={image.alt}
-              className="block rounded-lg object-cover"
+              className={clsx(
+                'block rounded-lg',
+                containImageSize ? 'object-contain' : 'object-cover',
+              )}
             />
           </div>
         )}
       </div>
-
-      {/* {image && (
-        <div className="relative h-32 w-full rounded-lg border border-brand-100 sm:h-60 md:h-auto md:w-1/2">
-          <Image fill src={image.url} alt={image.alt} className={imageStyles} />
-        </div>
-      )} */}
     </header>
   )
 }
