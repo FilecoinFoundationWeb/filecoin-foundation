@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import clsx from 'clsx'
+
 import {
   type DescriptionTextType,
   DescriptionText,
@@ -18,9 +20,7 @@ type PageSectionProps = {
 }
 
 const containerClasses = (hasImage: Boolean) => {
-  return hasImage
-    ? 'mb-6 grid grid-cols-1 gap-6 sm:grid-cols-2'
-    : 'mb-6 max-w-readable'
+  return hasImage ? 'grid grid-cols-1 gap-6 sm:grid-cols-2' : 'max-w-readable'
 }
 
 export function PageSection({
@@ -31,10 +31,10 @@ export function PageSection({
   children,
 }: PageSectionProps) {
   return (
-    <section>
+    <section className="grid grid-rows-[auto,auto] space-y-4">
       <SectionDivider title={kicker} />
-      <div className={containerClasses(!!image)}>
-        <div className="space-y-6">
+      <div className={clsx('mb-6', containerClasses(!!image))}>
+        <div className="space-y-4">
           <Heading tag="h2" variant="3xl">
             {title}
           </Heading>
