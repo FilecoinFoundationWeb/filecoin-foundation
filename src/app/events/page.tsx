@@ -1,6 +1,9 @@
+import dynamic from 'next/dynamic'
+
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
+import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
@@ -28,6 +31,11 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getInvolvedData } from './data/getInvolvedData'
+
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
 
 const { featured_post: featuredEventSlug, seo } = attributes
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
@@ -98,6 +106,8 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
+const POSTS_PER_PAGE = 20
+
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
     throw new Error('Featured event not found')
@@ -114,6 +124,12 @@ export default function Events({ searchParams }: Props) {
     entries: searchResults,
     sortBy: 'startDate',
     sortByDefault: 'newest',
+  })
+
+  const { currentPage, pageCount, paginatedResults } = usePagination({
+    searchParams,
+    entries: sortedResults,
+    entriesPerPage: POSTS_PER_PAGE,
   })
 
   return (
@@ -141,7 +157,7 @@ export default function Events({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <CardLayout type="home">
-            {sortedResults.map((event) => {
+            {paginatedResults.map((event) => {
               const { slug, title, image, involvement, startDate, endDate } =
                 event
 
@@ -166,6 +182,9 @@ export default function Events({ searchParams }: Props) {
             })}
           </CardLayout>
         )}
+        <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
+          <NoSSRPagination pageCount={pageCount} currentPage={currentPage} />
+        </div>
       </PageSection>
 
       <PageSection
