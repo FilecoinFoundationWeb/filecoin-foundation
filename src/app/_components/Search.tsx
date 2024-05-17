@@ -20,7 +20,7 @@ type SearchProps = {
 
 const DEBOUNCE_DELAY = 400
 
-export function Search({ query }: SearchProps) {
+export function Search({ query, ...rest }: SearchProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
 

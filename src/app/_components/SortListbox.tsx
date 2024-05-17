@@ -8,13 +8,13 @@ import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
-import { type SortOptionType } from '@/types/sortTypes'
+import { type SortOptionItems } from '@/types/sortTypes'
 
 import { sortSettings } from '@/constants/sortConstants'
 
 type SortListboxProps = {
-  sortOption: SortOptionType
-  onSortOptionChange: (selectedSortOption: SortOptionType) => void
+  sortOption: SortOptionItems
+  onSortOptionChange: (selectedSortOption: SortOptionItems) => void
 }
 
 export function SortListbox({

@@ -1,22 +1,29 @@
-import { type SortableByDate, type SortEntriesParams } from '@/types/sortTypes'
+import { type SortableByDate, type SortOptionItems } from '@/types/sortTypes'
 
-import {
-  DEFAULT_SORT_OPTION,
-  VALID_SORT_OPTIONS,
-} from '@/constants/sortConstants'
+type SortEntriesByDateParams<Entry extends SortableByDate> = {
+  entries: Array<Entry>
+  sortBy: keyof SortableByDate
+  sortOption: SortOptionItems
+}
 
-export function sortEntriesByDate<T extends SortableByDate>({
-  entries,
-  dateField = 'publishedOn',
-  sortOption = DEFAULT_SORT_OPTION,
-}: SortEntriesParams<T>): T[] {
-  if (!VALID_SORT_OPTIONS.includes(sortOption)) {
-    sortOption = DEFAULT_SORT_OPTION
+function validateDate(value?: string) {
+  if (!value) {
+    return new Date(0)
   }
 
+  const date = new Date(value)
+  const isInvalidDate = Number.isNaN(date.getTime())
+  return isInvalidDate ? new Date(0) : date
+}
+
+export function sortEntriesByDate<Entry extends SortableByDate>({
+  entries,
+  sortBy,
+  sortOption,
+}: SortEntriesByDateParams<Entry>) {
   return [...entries].sort((a, b) => {
-    const dateA = new Date(a[dateField] || 0)
-    const dateB = new Date(b[dateField] || 0)
+    const dateA = validateDate(a[sortBy])
+    const dateB = validateDate(b[sortBy])
 
     switch (sortOption) {
       case 'newest':

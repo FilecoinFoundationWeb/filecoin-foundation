@@ -7,9 +7,8 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
-import { useSortQuery } from '@/hooks/useSortQuery'
+import { useSort } from '@/hooks/useSort'
 
-import { BlogSort } from '@/components/BlogSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
@@ -17,6 +16,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
+import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 const NoSSRPagination = dynamic(
@@ -31,7 +31,6 @@ import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -111,19 +110,16 @@ export default function Blog({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery } = useSortQuery({ searchParams })
-
-  const sortedAndFilteredPosts = useMemo(() => {
-    return sortEntriesByDate({
-      entries: searchResults,
-      sortOption: sortQuery,
-      dateField: 'publishedOn',
-    })
-  }, [searchResults, sortQuery])
+  const { sortQuery, sortedResults } = useSort({
+    searchParams,
+    entries: searchResults,
+    sortBy: 'publishedOn',
+    sortByDefault: 'newest',
+  })
 
   const { currentPage, pageCount } = usePagination({
     searchParams,
-    totalEntries: sortedAndFilteredPosts.length,
+    totalEntries: sortedResults.length,
     entriesPerPage: POSTS_PER_PAGE,
   })
 
@@ -131,8 +127,8 @@ export default function Blog({ searchParams }: Props) {
   const lastPostIndex = currentPage * POSTS_PER_PAGE
 
   const paginatedPosts = useMemo(() => {
-    return sortedAndFilteredPosts.slice(firstPostIndex, lastPostIndex)
-  }, [firstPostIndex, lastPostIndex, sortedAndFilteredPosts])
+    return sortedResults.slice(firstPostIndex, lastPostIndex)
+  }, [firstPostIndex, lastPostIndex, sortedResults])
 
   return (
     <PageLayout>
@@ -154,12 +150,12 @@ export default function Blog({ searchParams }: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <div className="flex w-full justify-end gap-3">
+        <div className="flex justify-end gap-3">
           <Search query={searchQuery} />
-          <BlogSort />
+          <Sort query={sortQuery} />
         </div>
 
-        {sortedAndFilteredPosts.length === 0 ? (
+        {sortedResults.length === 0 ? (
           <NoResultsMessage />
         ) : (
           <>
