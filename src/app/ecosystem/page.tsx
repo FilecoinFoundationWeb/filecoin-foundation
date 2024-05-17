@@ -1,3 +1,7 @@
+import dynamic from 'next/dynamic'
+
+import { usePagination } from '@/hooks/usePagination'
+
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
@@ -5,6 +9,8 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { NextServerSearchParams } from '@/types/searchParams'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
@@ -14,6 +20,11 @@ import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
 
 const { featured_post: featuredProjectSlug, seo } = attributes
 
@@ -30,10 +41,22 @@ const ecosystemPageBaseData = generateWebPageStructuredData({
   path: PATHS.ECOSYSTEM.path,
 })
 
-export default function Ecosystem() {
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+const PROJECTS_PER_PAGE = 20
+
+export default function Ecosystem({ searchParams }: Props) {
   if (!featuredProject) {
     throw new Error('Featured project not found')
   }
+
+  const { pageCount, currentPage, paginatedResults } = usePagination({
+    searchParams,
+    entries: ecosystemProjects,
+    entriesPerPage: PROJECTS_PER_PAGE,
+  })
 
   return (
     <PageLayout>
@@ -56,7 +79,7 @@ export default function Ecosystem() {
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
       >
         <CardLayout type="home">
-          {ecosystemProjects.map((project) => {
+          {paginatedResults.map((project) => {
             const { slug, title, description, image, category } = project
 
             return (
@@ -75,6 +98,10 @@ export default function Ecosystem() {
             )
           })}
         </CardLayout>
+
+        <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
+          <NoSSRPagination pageCount={pageCount} currentPage={currentPage} />
+        </div>
       </PageSection>
 
       <CTASection
