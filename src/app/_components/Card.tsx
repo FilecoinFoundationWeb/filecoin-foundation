@@ -17,7 +17,7 @@ export type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  entryType?: 'blogPost' | 'featuredEcosystemProject'
+  entryType?: 'blogPost' | 'ecosystemProject'
   image?: ImageProps
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
@@ -33,13 +33,13 @@ const borderStyles = {
 
 const imageStyles = {
   blogPost: 'object-cover',
-  featuredEcosystemProject: 'object-contain',
+  ecosystemProject: 'object-contain',
 }
 
 const imageSizes = {
   blogPost:
     '(max-width: 639px) 320px, (max-width: 767px) 584px, (max-width: 1023px) 712px, (max-width: 1279px) 472px, 500px',
-  featuredEcosystemProject:
+  ecosystemProject:
     '(max-width: 639px) 320px, (max-width: 767px) 276px, (max-width: 1023px) 340px, 304px',
 }
 

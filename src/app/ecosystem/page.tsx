@@ -66,6 +66,7 @@ export default function Ecosystem() {
                 description={description}
                 image={image}
                 tag={category}
+                entryType="ecosystemProject"
                 cta={{
                   href: `/ecosystem/${slug}`,
                   text: 'Learn More',
