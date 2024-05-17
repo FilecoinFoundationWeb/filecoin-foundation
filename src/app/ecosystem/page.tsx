@@ -1,9 +1,7 @@
-import Image from 'next/image'
-
 import { CTASection } from '@/components/CTASection'
-import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -15,7 +13,6 @@ import { attributes } from '@/content/pages/ecosystem.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { featuredPartners } from './data/featuredPartners'
 import { EcosystemClient } from './EcosystemClient'
 
 const { featured_post: featuredProjectSlug, seo } = attributes
@@ -53,16 +50,13 @@ export default function Ecosystem() {
         }}
       />
 
-      <section>
-        <Heading tag="h2" variant="xl">
-          Ecosystem Projects
-        </Heading>
-        <p className="mb-6">
-          Discover the diverse landscape of Filecoin projects
-        </p>
-
+      <PageSection
+        kicker="Projects"
+        title="Ecosystem Projects"
+        description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
+      >
         <EcosystemClient projects={ecosystemProjects} />
-      </section>
+      </PageSection>
 
       <CTASection
         title="Become Part of the Expanding Ecosystem"
