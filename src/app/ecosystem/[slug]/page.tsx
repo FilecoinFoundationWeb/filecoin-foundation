@@ -13,6 +13,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { formatDate } from '@/utils/formatDate'
 import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
@@ -58,6 +59,16 @@ function createEcosystemProjectPostStructuredData(
       ? { publisher: baseOrganizationSchema }
       : {}),
   }
+}
+
+function getTagLabels(project: EcosystemProjectData) {
+  const { fields } = getCollectionConfig('ecosystem_projects')
+  const tagOptions = getCMSFieldOptions(fields, 'tags')
+
+  return project.tags.map((tag) => {
+    const option = tagOptions.find((option) => option.value === tag)
+    return option ? option.label : tag
+  })
 }
 
 export default function EcosystemProject({ params }: EcosystemProjectProps) {
@@ -136,7 +147,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             )}
 
             <ul className="flex flex-wrap gap-2">
-              {tags.map((tag) => (
+              {getTagLabels(data).map((tag) => (
                 <li key={tag}>
                   <Badge>{tag}</Badge>
                 </li>
