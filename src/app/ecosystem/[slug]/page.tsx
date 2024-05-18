@@ -1,10 +1,12 @@
 import Image from 'next/image'
 
+import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
@@ -71,7 +73,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     twitter,
     featuredContent,
     tags,
-    publishedOn,
+    updatedOn,
     newsUpdate,
   } = data
 
@@ -81,9 +83,10 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         structuredData={createEcosystemProjectPostStructuredData(data)}
       />
 
-      <article>
+      {/* #TODO: Top spacing to be handled by layout parent */}
+      <article className="mt-6">
         {image.url && (
-          <div className="relative my-16 h-10 w-full sm:h-16">
+          <div className="relative mb-16 h-10 w-full sm:h-16">
             <Image
               fill
               src={image.url}
@@ -92,8 +95,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             />
           </div>
         )}
-        <div className="grid gap-16 md:grid-cols-[auto,_150px] md:gap-9">
-          <div>
+
+        <div className="flex flex-wrap justify-between gap-8">
+          <div className="max-w-readable">
             <div className="mb-8 space-y-6">
               <Heading tag="h1" variant="4xl">
                 {title}
@@ -102,7 +106,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             </div>
 
             {videoUrl && (
-              <div className="relative my-8 h-44 w-full max-w-2xl sm:h-80">
+              <div className="mb-8 aspect-video">
                 <iframe
                   allowFullScreen
                   width="100%"
@@ -116,48 +120,52 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             )}
 
             {newsUpdate && (
-              <div className="prose mb-4 space-y-4">
-                <Heading tag="h3" variant="xl" color="secondary">
-                  Latest Update From Project:
-                </Heading>
+              <div className="prose mb-8">
+                <span className="not-prose text-brand-300">
+                  <Heading tag="h3" variant="xl">
+                    Latest Update
+                  </Heading>
+                </span>
                 <DescriptionText>{newsUpdate}</DescriptionText>
+                {updatedOn && (
+                  <span className="inline-block text-sm text-blue-300">
+                    {formatDate(updatedOn)}
+                  </span>
+                )}
               </div>
             )}
 
-            <div className="space-y-8">
-              {publishedOn && (
-                <span className="inline-block text-sm text-blue-300">
-                  {formatDate(publishedOn)}
-                </span>
-              )}
-
-              <ul className="flex list-none flex-wrap gap-3">
-                {tags.map((tag) => (
-                  <li key={tag} className="ml-0">
-                    <Badge>{tag}</Badge>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ul className="flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <li key={tag}>
+                  <Badge>{tag}</Badge>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="grid grid-cols-2 gap-5 md:auto-rows-max md:grid-cols-1">
+
+          <ul className="mt-4 flex flex-col gap-5">
             {website && (
-              <li>
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={Globe} />
                 <TextLink href={website}>Website</TextLink>
               </li>
             )}
             {repo && (
-              <li>
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={GitFork} />
                 <TextLink href={repo}>GitHub</TextLink>
               </li>
             )}
             {twitter && (
-              <li>
-                <TextLink href={twitter}>Twitter</TextLink>
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={XLogo} />
+                <TextLink href={twitter}>X.com</TextLink>
               </li>
             )}
             {featuredContent && (
-              <li>
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={BookOpen} />
                 <TextLink href={featuredContent}>Featured Content</TextLink>
               </li>
             )}
