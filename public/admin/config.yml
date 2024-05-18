@@ -380,7 +380,7 @@ collections:
         required: false
         multiple: true
         options:
-          - label: "AI Productivity and Utilities"
+          - label: "AI Productivity & Utilities"
             value: ai-productivity-and-utilities
           - label: "Arts & Collectibles"
             value: arts-collectibles
