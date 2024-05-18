@@ -1,15 +1,20 @@
 import Image from 'next/image'
 
+import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
+import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { formatDate } from '@/utils/formatDate'
 import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
@@ -56,11 +61,20 @@ function createEcosystemProjectPostStructuredData(
   }
 }
 
+function getTagLabels(project: EcosystemProjectData) {
+  const { fields } = getCollectionConfig('ecosystem_projects')
+  const tagOptions = getCMSFieldOptions(fields, 'tags')
+
+  return project.tags.map((tag) => {
+    const option = tagOptions.find((option) => option.value === tag)
+    return option ? option.label : tag
+  })
+}
+
 export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
   const {
-    featured,
     image,
     title,
     content,
@@ -70,6 +84,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     twitter,
     featuredContent,
     tags,
+    updatedOn,
+    newsUpdate,
   } = data
 
   return (
@@ -78,70 +94,94 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         structuredData={createEcosystemProjectPostStructuredData(data)}
       />
 
-      <article>
-        <Badge>{featured ? 'Featured Project' : 'Ecosystem Project'}</Badge>
-
+      {/* #TODO: Top spacing to be handled by layout parent */}
+      <article className="mt-6">
         {image.url && (
-          <Image
-            priority
-            src={image.url}
-            alt={image.alt}
-            width={232}
-            height={220}
-            className="block h-auto object-contain"
-          />
+          <div className="relative mb-16 h-10 w-full sm:h-16">
+            <Image
+              fill
+              src={image.url}
+              alt={image.alt}
+              className="max-w-fit object-contain"
+            />
+          </div>
         )}
 
-        <Heading tag="h1" variant="2xl">
-          {title}
-        </Heading>
+        <div className="flex flex-wrap justify-between gap-8">
+          <div className="max-w-readable">
+            <div className="mb-8 space-y-6">
+              <Heading tag="h1" variant="4xl">
+                {title}
+              </Heading>
+              {content && <MarkdownContent>{content}</MarkdownContent>}
+            </div>
 
-        {content && <MarkdownContent>{content}</MarkdownContent>}
+            {videoUrl && (
+              <div className="mb-8 aspect-video">
+                <iframe
+                  allowFullScreen
+                  width="100%"
+                  height="100%"
+                  aria-label="Embedded YouTube Video"
+                  src={videoUrl}
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                />
+              </div>
+            )}
 
-        <ul className="flex list-none flex-col gap-1">
-          {website && (
-            <li className="mb-0 ml-0">
-              <TextLink href={website}>Website</TextLink>
-            </li>
-          )}
-          {repo && (
-            <li className="mb-0 ml-0">
-              <TextLink href={repo}>GitHub</TextLink>
-            </li>
-          )}
-          {twitter && (
-            <li className="mb-0 ml-0">
-              <TextLink href={twitter}>Twitter</TextLink>
-            </li>
-          )}
-          {featuredContent && (
-            <li className="mb-0 ml-0">
-              <TextLink href={featuredContent}>Featured Content</TextLink>
-            </li>
-          )}
-        </ul>
+            {newsUpdate && (
+              <div className="prose mb-8">
+                <span className="not-prose text-brand-300">
+                  <Heading tag="h3" variant="xl">
+                    Latest Update
+                  </Heading>
+                </span>
+                <DescriptionText>{newsUpdate}</DescriptionText>
+                {updatedOn && (
+                  <span className="inline-block text-sm text-blue-300">
+                    {formatDate(updatedOn)}
+                  </span>
+                )}
+              </div>
+            )}
 
-        {videoUrl && (
-          <iframe
-            allowFullScreen
-            width="560"
-            height="315"
-            aria-label="Embedded YouTube Video"
-            src={videoUrl}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-          />
-        )}
+            <ul className="flex flex-wrap gap-2">
+              {getTagLabels(data).map((tag) => (
+                <li key={tag}>
+                  <Badge>{tag}</Badge>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        <ul className="flex list-none flex-wrap gap-3">
-          {tags.map((tag) => (
-            <li key={tag} className="ml-0">
-              <span className="rounded-lg border border-white bg-brand-800 px-2 py-1 text-sm font-medium uppercase text-white">
-                {tag}
-              </span>
-            </li>
-          ))}
-        </ul>
+          <ul className="mt-4 flex flex-col gap-5">
+            {website && (
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={Globe} />
+                <TextLink href={website}>Website</TextLink>
+              </li>
+            )}
+            {repo && (
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={GitFork} />
+                <TextLink href={repo}>GitHub</TextLink>
+              </li>
+            )}
+            {twitter && (
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={XLogo} />
+                <TextLink href={twitter}>X.com</TextLink>
+              </li>
+            )}
+            {featuredContent && (
+              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+                <Icon component={BookOpen} />
+                <TextLink href={featuredContent}>Featured Content</TextLink>
+              </li>
+            )}
+          </ul>
+        </div>
       </article>
     </>
   )

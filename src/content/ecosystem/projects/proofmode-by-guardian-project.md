@@ -10,8 +10,7 @@ category:
   - media-entertainment
 tags:
   - photo-video
-  - value: dapp
-  - label: DApp
+  - dapp
 tech:
   - filecoin
   - ipfs
