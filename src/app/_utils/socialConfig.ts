@@ -2,7 +2,7 @@ import {
   Butterfly,
   GithubLogo,
   LinkedinLogo,
-  TwitterLogo,
+  XLogo,
   YoutubeLogo,
 } from '@phosphor-icons/react/dist/ssr'
 
@@ -12,7 +12,7 @@ const socialIcons = {
   bluesky: Butterfly,
   github: GithubLogo,
   linkedin: LinkedinLogo,
-  twitter: TwitterLogo,
+  twitter: XLogo,
   youtube: YoutubeLogo,
 }
 
