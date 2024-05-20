@@ -21,16 +21,16 @@ export function Social() {
         return (
           <li key={key} className="inline-flex">
             <a
-              aria-label={`${label} (opens in new window)`}
               href={href}
-              target="_blank"
               rel="noopener noreferrer"
+              title={label}
               className={clsx(
                 'text-brand-100 outline-white hover:text-brand-400 focus:outline-2',
                 touchTarget.class,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
+              <span className="sr-only">{label}</span>
             </a>
           </li>
         )
