@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
-import { SortableByDate, type SortOptionItems } from '@/types/sortTypes'
+import { type SortableByDate, type SortOption } from '@/types/sortTypes'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
@@ -13,7 +13,7 @@ type UseSortProps<Entry extends Record<string, unknown>> = {
   searchParams: NextServerSearchParams
   entries: Entry[]
   sortBy: keyof SortableByDate & keyof Entry
-  sortByDefault: SortOptionItems
+  sortByDefault: SortOption
 }
 
 function validateSortOption<Entry extends Record<string, unknown>>(

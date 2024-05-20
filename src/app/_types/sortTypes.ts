@@ -1,7 +1,7 @@
-export type SortOptionItems = 'newest' | 'oldest'
+export type SortOption = 'newest' | 'oldest'
 
 export type SortSetting = {
-  id: SortOptionItems
+  id: SortOption
   name: string
 }
 
