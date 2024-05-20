@@ -156,35 +156,41 @@ export default function Events({ searchParams }: Props) {
         {sortedResults.length === 0 ? (
           <NoResultsMessage />
         ) : (
-          <CardLayout type="home">
-            {paginatedResults.map((event) => {
-              const { slug, title, image, involvement, startDate, endDate } =
-                event
+          <>
+            <CardLayout type="home">
+              {paginatedResults.map((event) => {
+                const { slug, title, image, involvement, startDate, endDate } =
+                  event
 
-              const metaData = prepareMetaData(startDate, endDate)
+                const metaData = prepareMetaData(startDate, endDate)
 
-              return (
-                <Card
-                  key={slug}
-                  title={title}
-                  tag={involvement}
-                  metaData={metaData}
-                  image={image}
-                  borderColor="brand-400"
-                  textIsClamped={true}
-                  cta={{
-                    href: `${PATHS.EVENTS.path}/${slug}`,
-                    text: 'View Event Details',
-                    icon: MagnifyingGlass,
-                  }}
-                />
-              )
-            })}
-          </CardLayout>
+                return (
+                  <Card
+                    key={slug}
+                    title={title}
+                    tag={involvement}
+                    metaData={metaData}
+                    image={image}
+                    borderColor="brand-400"
+                    textIsClamped={true}
+                    cta={{
+                      href: `${PATHS.EVENTS.path}/${slug}`,
+                      text: 'View Event Details',
+                      icon: MagnifyingGlass,
+                    }}
+                  />
+                )
+              })}
+            </CardLayout>
+
+            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
+              <NoSSRPagination
+                pageCount={pageCount}
+                currentPage={currentPage}
+              />
+            </div>
+          </>
         )}
-        <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
-          <NoSSRPagination pageCount={pageCount} currentPage={currentPage} />
-        </div>
       </PageSection>
 
       <PageSection

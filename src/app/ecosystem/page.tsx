@@ -7,6 +7,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardLayout } from '@/components/CardLayout'
 import { CTASection } from '@/components/CTASection'
+import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -99,30 +100,40 @@ export default function Ecosystem({ searchParams }: Props) {
           <Search query={searchQuery} />
           <Sort query={sortQuery} />
         </div>
-        <CardLayout type="home">
-          {paginatedResults.map((project) => {
-            const { slug, title, description, image, category } = project
 
-            return (
-              <Card
-                key={slug}
-                title={title}
-                description={description}
-                image={image}
-                tag={category}
-                entryType="ecosystemProject"
-                cta={{
-                  href: `${PATHS.ECOSYSTEM.path}/${slug}`,
-                  text: 'Learn More',
-                }}
+        {sortedResults.length === 0 ? (
+          <NoResultsMessage />
+        ) : (
+          <>
+            <CardLayout type="home">
+              {paginatedResults.map((project) => {
+                const { slug, title, description, image, category } = project
+
+                return (
+                  <Card
+                    key={slug}
+                    title={title}
+                    description={description}
+                    image={image}
+                    tag={category}
+                    entryType="ecosystemProject"
+                    cta={{
+                      href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+                      text: 'Learn More',
+                    }}
+                  />
+                )
+              })}
+            </CardLayout>
+
+            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
+              <NoSSRPagination
+                pageCount={pageCount}
+                currentPage={currentPage}
               />
-            )
-          })}
-        </CardLayout>
-
-        <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
-          <NoSSRPagination pageCount={pageCount} currentPage={currentPage} />
-        </div>
+            </div>
+          </>
+        )}
       </PageSection>
 
       <CTASection
