@@ -70,13 +70,18 @@ function SubNavItem({
   )
 }
 
+const mainNavItem = {
+  width: 'px-4',
+  offsetWidth: '-mr-4',
+}
+
 function getMainNavItemStyles(isActive: boolean, isPopover = false) {
   const baseStyles =
     'rounded-xl py-1.5 text-base hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100'
 
   const extendedStyles = isPopover
     ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
-    : 'inline-block px-4'
+    : clsx('inline-block', mainNavItem.width)
 
   return clsx(
     baseStyles,
@@ -112,8 +117,11 @@ export function DesktopNavigation() {
 
   return (
     <ul
-      className="relative z-10 hidden lg:flex lg:items-center lg:gap-0.5"
       aria-label="Navigation items"
+      className={clsx(
+        'relative z-10 hidden lg:flex lg:items-center lg:gap-0.5',
+        mainNavItem.offsetWidth,
+      )}
     >
       <MainNavItem
         label={PATHS.ABOUT.label}
