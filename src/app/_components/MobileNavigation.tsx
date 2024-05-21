@@ -138,7 +138,7 @@ export function MobileNavigation() {
           />
         </ul>
 
-        <div className="px-4">
+        <div className="px-6">
           <Social />
         </div>
       </SlideOver>
