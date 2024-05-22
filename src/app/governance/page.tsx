@@ -1,4 +1,4 @@
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
@@ -41,7 +41,7 @@ export default function Governance() {
       />
 
       <PageSection kicker="Learn More" title="Quickstart">
-        <CardLayout cols="smTwo">
+        <CardGrid cols="smTwo">
           {governanceDocsData.map((card) => {
             const {
               heading: { title, icon },
@@ -66,7 +66,7 @@ export default function Governance() {
               </HomeExploreSectionCard>
             )
           })}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection

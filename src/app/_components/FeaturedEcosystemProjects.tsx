@@ -1,7 +1,7 @@
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
@@ -19,7 +19,7 @@ export function FeaturedEcosystemProjects({
   }
 
   return (
-    <CardLayout cols="smTwoLgThree">
+    <CardGrid cols="smTwoLgThree">
       {ecosystemProjects.map(({ slug, title, description, image }) => (
         <Card
           key={slug}
@@ -36,6 +36,6 @@ export function FeaturedEcosystemProjects({
           }}
         />
       ))}
-    </CardLayout>
+    </CardGrid>
   )
 }

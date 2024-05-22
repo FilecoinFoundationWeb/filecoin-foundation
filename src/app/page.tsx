@@ -1,5 +1,5 @@
 import { Button } from '@/components/Button'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
@@ -47,7 +47,7 @@ export default function Home() {
       />
 
       <PageSection kicker="Explore" title="The Filecoin Ecosystem">
-        <CardLayout cols="smTwo">
+        <CardGrid cols="smTwo">
           {filecoinEcosystemData.map((card) => {
             const {
               heading: { title, icon },
@@ -72,7 +72,7 @@ export default function Home() {
               </HomeExploreSectionCard>
             )
           })}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection

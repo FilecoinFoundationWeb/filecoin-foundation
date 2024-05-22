@@ -7,7 +7,7 @@ import useSWR from 'swr'
 import { z } from 'zod'
 
 import { Badge } from '@/components/Badge'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
@@ -90,7 +90,7 @@ export function GovernanceCalendarCards() {
   }
 
   return (
-    <CardLayout cols="lgTwo">
+    <CardGrid cols="lgTwo">
       {events.items.map((event) => {
         const { id, start, end, htmlLink, summary } = event
 
@@ -124,6 +124,6 @@ export function GovernanceCalendarCards() {
           </li>
         )
       })}
-    </CardLayout>
+    </CardGrid>
   )
 }

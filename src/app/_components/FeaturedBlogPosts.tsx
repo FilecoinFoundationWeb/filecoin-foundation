@@ -1,5 +1,5 @@
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 
@@ -15,7 +15,7 @@ export function FeaturedBlogPosts() {
   }
 
   return (
-    <CardLayout cols="smTwo">
+    <CardGrid cols="smTwo">
       {featuredBlogPosts.map(({ title, description, slug, image }) => (
         <Card
           key={slug}
@@ -29,6 +29,6 @@ export function FeaturedBlogPosts() {
           }}
         />
       ))}
-    </CardLayout>
+    </CardGrid>
   )
 }

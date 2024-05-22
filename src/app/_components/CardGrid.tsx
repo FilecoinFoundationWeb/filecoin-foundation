@@ -9,7 +9,7 @@ type GridColumnConfig =
   | 'mdThree'
   | 'lgThree'
 
-type CardLayoutProps = {
+type CardGridProps = {
   cols: GridColumnConfig
   as?: React.ElementType
   children: React.ReactNode
@@ -26,11 +26,7 @@ const extendedGridStyles: Record<GridColumnConfig, string> = {
   lgThree: 'lg:grid-cols-3 lg:gap-6',
 }
 
-export function CardLayout({
-  cols,
-  as: Tag = 'ul',
-  children,
-}: CardLayoutProps) {
+export function CardGrid({ cols, as: Tag = 'ul', children }: CardGridProps) {
   return (
     <Tag className={clsx(baseGridStyles, extendedGridStyles[cols])}>
       {children}
