@@ -42,6 +42,11 @@ const { featured_post: featuredPostSlug, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+const POSTS_PER_PAGE = 20
 const posts = getBlogPostsData()
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
@@ -70,21 +75,9 @@ const blogPageStructuredData: WithContext<WebPage> = {
   },
 }
 
-function getMetaDataContent(post: BlogPostData) {
-  if (!post.publishedOn) {
-    return []
-  }
-
-  const metaDataContent = [formatDate(post.publishedOn)]
-
-  return metaDataContent
+function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
+  return publishedOn ? [formatDate(publishedOn)] : []
 }
-
-type Props = {
-  searchParams: NextServerSearchParams
-}
-
-const POSTS_PER_PAGE = 20
 
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
@@ -117,8 +110,8 @@ export default function Blog({ searchParams }: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getMetaDataContent(featuredPost)}
         image={featuredPost.image}
+        metaData={getMetaData(featuredPost.publishedOn)}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',
@@ -158,7 +151,7 @@ export default function Blog({ searchParams }: Props) {
                     description={description}
                     image={{ url: image?.url, alt: image?.alt }}
                     textIsClamped={true}
-                    metaData={publishedOn ? [formatDate(publishedOn)] : []}
+                    metaData={getMetaData(publishedOn)}
                     cta={{
                       href: `${PATHS.BLOG.path}/${slug}`,
                       text: 'Read Post',
