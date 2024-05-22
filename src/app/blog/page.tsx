@@ -149,7 +149,7 @@ export default function Blog({ searchParams }: Props) {
                     tag={category}
                     title={title}
                     description={description}
-                    image={{ url: image?.url, alt: image?.alt }}
+                    image={image}
                     textIsClamped={true}
                     metaData={getMetaData(publishedOn)}
                     cta={{
