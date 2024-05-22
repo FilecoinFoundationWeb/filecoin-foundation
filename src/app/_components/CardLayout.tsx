@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-type LayoutOption =
+type GridColumnConfig =
   | 'smTwoLgThree'
   | 'smTwo'
   | 'mdTwo'
@@ -10,13 +10,13 @@ type LayoutOption =
   | 'lgThree'
 
 type CardLayoutProps = {
-  cols: LayoutOption
+  cols: GridColumnConfig
   as?: React.ElementType
   children: React.ReactNode
 }
 
 const baseGridStyles = 'grid grid-cols-1 gap-4'
-const extendedGridStyles: Record<LayoutOption, string> = {
+const extendedGridStyles: Record<GridColumnConfig, string> = {
   smTwoLgThree: 'sm:grid-cols-2 sm:gap-6 lg:grid-cols-3',
   smTwo: 'sm:grid-cols-2 sm:gap-6',
   mdTwo: 'md:grid-cols-2 md:gap-6',
@@ -27,8 +27,8 @@ const extendedGridStyles: Record<LayoutOption, string> = {
 }
 
 export function CardLayout({
-  as: Tag = 'ul',
   cols,
+  as: Tag = 'ul',
   children,
 }: CardLayoutProps) {
   return (
