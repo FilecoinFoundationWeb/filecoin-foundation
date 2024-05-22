@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -78,7 +78,7 @@ export default function About() {
       />
 
       <PageSection kicker="What We Do" title="Focus Areas">
-        <CardLayout>
+        <CardGrid cols="lgThree">
           {focusAreasData.map(({ title, description }) => (
             <Card
               key={title}
@@ -87,11 +87,11 @@ export default function About() {
               borderColor="brand-300"
             />
           ))}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection kicker="Who We Are" title="Board Members">
-        <CardLayout type="blogPost">
+        <CardGrid cols="mdTwo">
           {boardMembersData.map(({ name, title, linkedin }) => (
             <Card
               key={name}
@@ -105,7 +105,7 @@ export default function About() {
               }}
             />
           ))}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection
@@ -113,7 +113,7 @@ export default function About() {
         title="Advisors"
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
-        <CardLayout type="blogPost">
+        <CardGrid cols="mdTwo">
           {advisorsData.map(({ name, title, linkedin }) => (
             <Card
               key={name}
@@ -127,11 +127,11 @@ export default function About() {
               }}
             />
           ))}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardLayout type="blogPost">
+        <CardGrid cols="mdTwo">
           {reportsData.map(({ title, description, link }, index) => (
             <div
               key={title}
@@ -150,7 +150,7 @@ export default function About() {
               />
             </div>
           ))}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
     </PageLayout>
   )
