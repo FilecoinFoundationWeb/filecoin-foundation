@@ -25,7 +25,6 @@ const NoSSRPagination = dynamic(
 import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
