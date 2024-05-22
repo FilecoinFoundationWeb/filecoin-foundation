@@ -40,7 +40,7 @@ export function PageHeader({
       {isFeatured && <SectionDivider title="Featured" />}
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col gap-4 md:w-1/2">
-          <Heading tag="h1" variant="4xl" className="text-balance">
+          <Heading tag="h1" variant="4xl">
             {title}
           </Heading>
 

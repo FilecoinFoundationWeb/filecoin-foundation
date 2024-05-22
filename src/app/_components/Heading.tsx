@@ -25,7 +25,6 @@ const variantStyles = {
 export function Heading({
   tag,
   variant,
-  className,
   iconProps,
   children,
   ...rest
@@ -35,7 +34,7 @@ export function Heading({
 
   const baseStyles = 'text-pretty'
 
-  className = clsx(baseStyles, variantStyles[variant], className)
+  const className = clsx(baseStyles, variantStyles[variant])
 
   if (icon) {
     return (
