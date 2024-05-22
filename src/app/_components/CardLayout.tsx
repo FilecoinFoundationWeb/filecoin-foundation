@@ -10,12 +10,13 @@ type LayoutOption =
   | 'lgThree'
 
 type CardLayoutProps = {
-  children: React.ReactNode
-  as?: React.ElementType
   cols: LayoutOption
+  as?: React.ElementType
+  children: React.ReactNode
 }
 
-const layoutStyles: Record<LayoutOption, string> = {
+const baseGridStyles = 'grid grid-cols-1 gap-4'
+const extendedGridStyles: Record<LayoutOption, string> = {
   smTwoLgThree: 'sm:grid-cols-2 sm:gap-6 lg:grid-cols-3',
   smTwo: 'sm:grid-cols-2 sm:gap-6',
   mdTwo: 'md:grid-cols-2 md:gap-6',
@@ -31,7 +32,7 @@ export function CardLayout({
   children,
 }: CardLayoutProps) {
   return (
-    <Tag className={clsx('grid grid-cols-1 gap-4', layoutStyles[cols])}>
+    <Tag className={clsx(baseGridStyles, extendedGridStyles[cols])}>
       {children}
     </Tag>
   )
