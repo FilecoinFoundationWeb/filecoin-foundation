@@ -24,7 +24,7 @@ This month, hundreds of Filecoin ecosystem participants from around the world ga
 
 This marquee event brought together Storage Providers with ecosystem enablers and AI leaders. The resulting collaborations seeded the ground for a new era in internet infrastructure.
 
-<div style="text-align: center;">
+<figure>
   <iframe
     width="560"
     height="315"
@@ -34,7 +34,7 @@ This marquee event brought together Storage Providers with ecosystem enablers an
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
-</div>
+</figure>
 
 ## What Happened in Vegas?
 

@@ -63,6 +63,13 @@ module.exports = {
               height: 'auto',
               aspectRatio: '16/9',
             },
+
+            figcaption: {
+              a: {
+                color: '#cccccc',
+                textDecoration: 'none',
+              },
+            },
           },
         },
       }),

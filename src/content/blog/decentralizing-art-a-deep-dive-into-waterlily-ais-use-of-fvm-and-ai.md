@@ -20,18 +20,20 @@ seo:
     dive into their technology.
 ---
 
-<iframe
+<figure>
+  <iframe
   width="100%"
   height="166"
   scrolling="no"
   frameborder="no"
   allow="autoplay"
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1552122538&color=%23193396&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-</iframe>
-<div>
-  <a href="https://soundcloud.com/filecoin-foundation" title="Filecoin Foundation" target="_blank" style="color: #cccccc; text-decoration: none;">Filecoin Foundation</a> ·
-  <a href="https://soundcloud.com/filecoin-foundation/decentralizing-art-a-deep-dive-into-waterlilyais-use-of-fvm-and-ai" title="Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI" target="_blank" style="color: #cccccc; text-decoration: none;">Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI</a>
-</div>
+  </iframe>
+  <figcaption>
+    <a href="https://soundcloud.com/filecoin-foundation" title="Filecoin Foundation" target="_blank">Filecoin Foundation</a> ·
+    <a href="https://soundcloud.com/filecoin-foundation/decentralizing-art-a-deep-dive-into-waterlilyais-use-of-fvm-and-ai" title="Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI" target="_blank">Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI</a>
+  </figcaption>
+</figure>
 
 [Waterlily.ai](http://waterlily.ai) is a Filecoin-powered generative AI tool that allows digital artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models.
 

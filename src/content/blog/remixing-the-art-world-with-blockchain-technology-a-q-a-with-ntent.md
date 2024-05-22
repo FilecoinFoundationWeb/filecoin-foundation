@@ -41,7 +41,6 @@ On March 16th, 2023, we produced [PETLS](https://youtu.be/8pwyvMJrN1Q). This imm
   height="315"
   src="https://www.youtube.com/embed/8pwyvMJrN1Q"
   title="YouTube video player"
-  style="border:0;"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
   allowfullscreen>
 </iframe>

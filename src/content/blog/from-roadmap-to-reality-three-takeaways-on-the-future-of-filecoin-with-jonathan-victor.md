@@ -65,8 +65,7 @@ height="315"
 src="https://www.youtube.com/embed/8dZjqd3SzBo?si=Oe81_skdtgz2L_3X"
 title="YouTube video player"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-style="border:0;">
+allowfullscreen>
 </iframe>
 
 For more on the Filecoin ecosystem, and the future of decentralized tech, follow DWeb Decoded on [YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy), [Spotify](https://open.spotify.com/show/5GPjDV4AVv7xwmg0ByySac?si=af7b9bf4b2994237), or your favorite podcasting platform.

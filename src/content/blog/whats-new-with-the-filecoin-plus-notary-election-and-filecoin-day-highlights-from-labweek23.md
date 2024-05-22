@@ -29,17 +29,16 @@ Here’s a quick rundown:
 
 **Filecoin Plus Day**
 
-<div style="text-align: center;">
+<figure>
   <iframe
     width="560"
     height="315"
     src="https://www.youtube.com/embed/57Ua4AEWe_g?si=nFb8apksN6EgLB_w"
     title="YouTube video player"
-    style="border:0;"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
     allowfullscreen>
   </iframe>
-</div>
+</figure>
 
 Filecoin Plus (Fil+) is a layer of social trust to incentivize the storage of real, valuable data sets on the Filecoin network. Since its inception, Filecoin Plus has scaled the amount of data stored, bringing 1.8 EiB of verified deals to the network!
 
@@ -85,7 +84,7 @@ FF Co-Founding Officer Clara Tsao discussed why the future of AI and enterprise 
 
 **Crossing the Streams: A Ghostbusters-themed Approach to Scaling the Filecoin Ecosystem**
 
-<div style="text-align: center;">
+<figure>
   <iframe
     width="560"
     height="315"
@@ -95,7 +94,7 @@ FF Co-Founding Officer Clara Tsao discussed why the future of AI and enterprise 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
   </iframe>
-</div>
+</figure>
 
 Danny O’Brien, Senior Fellow and DWeb Strategy at FF, presented compelling applications of data on the decentralized web, including: genomics, geodata, human rights applications, archiving the web, electoral results, open-source/free software resources, and more.
 

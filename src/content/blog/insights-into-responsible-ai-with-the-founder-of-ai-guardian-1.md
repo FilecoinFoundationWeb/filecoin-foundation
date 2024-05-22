@@ -29,7 +29,6 @@ seo:
   src="https://podcasters.spotify.com/pod/show/filecoin-foundation/embed/episodes/The-Moral-Compass-of-AI-with-Chris-Hackney--DWeb-Decoded-16-e2a2j0l"
   height="102px"
   width="400px"
-  style="border:0;"
   scrolling="no">
 </iframe>
 
