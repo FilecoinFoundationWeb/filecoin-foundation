@@ -1,0 +1,13 @@
+.bottom-sideline {
+  position: relative;
+}
+
+.bottom-sideline::before {
+  content: '';
+  position: absolute;
+  top: theme('spacing.11');
+  left: 0;
+  height: calc(2 * theme('spacing.7'));
+  width: theme('spacing.px');
+  background-color: currentColor;
+}

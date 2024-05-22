@@ -33,11 +33,7 @@ type MobileLinkProps = {
 
 function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
   return (
-    <li
-      className={clsx(
-        nested ? 'border-l border-brand-200' : linkTouchTarget.offsetClass,
-      )}
-    >
+    <li className={clsx(!nested && linkTouchTarget.offsetClass)}>
       <Link
         href={path}
         className={clsx(linkBaseStyles, linkTouchTarget.class)}
@@ -105,9 +101,10 @@ export function MobileNavigation() {
             setOpen={setOpen}
           />
 
-          <li>
+          <li className="bottom-sideline">
             <p className="my-2 text-brand-200">Get Involved</p>
           </li>
+
           {getInvolvedItems.map((item) => (
             <MobileLink
               key={item.path}
@@ -118,7 +115,7 @@ export function MobileNavigation() {
             />
           ))}
 
-          <li>
+          <li className="bottom-sideline">
             <p className="my-2 text-brand-200">Community</p>
           </li>
           {communityItems.map((item) => (
