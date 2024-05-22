@@ -20,7 +20,7 @@ const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
 const communityItems = [PATHS.ECOSYSTEM, PATHS.GOVERNANCE]
 
 const linkTouchTarget = {
-  class: 'inline-block px-5 py-2.5',
+  class: 'inline-block px-5 py-2',
   offsetClass: '-ml-5',
 }
 
@@ -106,7 +106,7 @@ export function MobileNavigation() {
           />
 
           <li>
-            <p className="my-2.5 text-brand-200">Get Involved</p>
+            <p className="my-2 text-brand-200">Get Involved</p>
           </li>
           {getInvolvedItems.map((item) => (
             <MobileLink
@@ -119,7 +119,7 @@ export function MobileNavigation() {
           ))}
 
           <li>
-            <p className="my-2.5 text-brand-200">Community</p>
+            <p className="my-2 text-brand-200">Community</p>
           </li>
           {communityItems.map((item) => (
             <MobileLink
