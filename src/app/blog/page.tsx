@@ -76,17 +76,7 @@ function getMetaDataContent(post: BlogPostData) {
     return []
   }
 
-  const { fields } = getCollectionConfig('blog')
-  const categoryOptions = getCMSFieldOptions(fields, 'category')
-  const categoryLabel = categoryOptions.find(
-    (option) => option.value === post.category,
-  )?.label
-
   const metaDataContent = [formatDate(post.publishedOn)]
-
-  if (categoryLabel) {
-    metaDataContent.push(categoryLabel)
-  }
 
   return metaDataContent
 }
