@@ -75,7 +75,7 @@ export default function Grants() {
         </CardLayout>
       </PageSection>
 
-      <PageSection kicker="Past Examples" title="Grant Graduates">
+      <PageSection kicker="Past Recipients" title="Grant Graduates">
         <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
       </PageSection>
 
