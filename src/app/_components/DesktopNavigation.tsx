@@ -70,7 +70,7 @@ function SubNavItem({
   )
 }
 
-const mainNavItem = {
+const touchTargetMainNavItem = {
   width: 'px-4',
   offsetWidth: '-mr-4',
 }
@@ -81,7 +81,7 @@ function getMainNavItemStyles(isActive: boolean, isPopover = false) {
 
   const extendedStyles = isPopover
     ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
-    : clsx('inline-block', mainNavItem.width)
+    : clsx('inline-block', touchTargetMainNavItem.width)
 
   return clsx(
     baseStyles,
@@ -120,7 +120,7 @@ export function DesktopNavigation() {
       aria-label="Navigation items"
       className={clsx(
         'relative z-10 hidden lg:flex lg:items-center lg:gap-0.5',
-        mainNavItem.offsetWidth,
+        touchTargetMainNavItem.offsetWidth,
       )}
     >
       <MainNavItem
