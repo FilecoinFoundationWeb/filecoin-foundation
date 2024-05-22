@@ -78,7 +78,7 @@ export default function About() {
       />
 
       <PageSection kicker="What We Do" title="Focus Areas">
-        <CardLayout>
+        <CardLayout cols="lgThree">
           {focusAreasData.map(({ title, description }) => (
             <Card
               key={title}
@@ -91,7 +91,7 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Who We Are" title="Board Members">
-        <CardLayout type="blogPost">
+        <CardLayout cols="mdTwo">
           {boardMembersData.map(({ name, title, linkedin }) => (
             <Card
               key={name}
@@ -113,7 +113,7 @@ export default function About() {
         title="Advisors"
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
-        <CardLayout type="blogPost">
+        <CardLayout cols="mdTwo">
           {advisorsData.map(({ name, title, linkedin }) => (
             <Card
               key={name}
@@ -131,7 +131,7 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardLayout type="blogPost">
+        <CardLayout cols="mdTwo">
           {reportsData.map(({ title, description, link }, index) => (
             <div
               key={title}

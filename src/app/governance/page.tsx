@@ -41,7 +41,7 @@ export default function Governance() {
       />
 
       <PageSection kicker="Learn More" title="Quickstart">
-        <CardLayout type="governance">
+        <CardLayout cols="smTwo">
           {governanceDocsData.map((card) => {
             const {
               heading: { title, icon },

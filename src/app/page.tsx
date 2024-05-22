@@ -47,7 +47,7 @@ export default function Home() {
       />
 
       <PageSection kicker="Explore" title="The Filecoin Ecosystem">
-        <CardLayout type="home">
+        <CardLayout cols="smTwo">
           {filecoinEcosystemData.map((card) => {
             const {
               heading: { title, icon },

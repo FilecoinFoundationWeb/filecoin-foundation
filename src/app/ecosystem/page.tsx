@@ -105,7 +105,7 @@ export default function Ecosystem({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <>
-            <CardLayout type="home">
+            <CardLayout cols="smTwo">
               {paginatedResults.map((project) => {
                 const { slug, title, description, image, category } = project
 

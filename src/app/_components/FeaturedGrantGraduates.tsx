@@ -17,7 +17,7 @@ export function FeaturedGrantsGraduates({
   }
 
   return (
-    <CardLayout type="blogPost">
+    <CardLayout cols="smTwo">
       {grantGraduates.map(({ title, description, slug }) => (
         <Card
           key={slug}

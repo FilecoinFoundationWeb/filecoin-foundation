@@ -150,7 +150,7 @@ export default function Blog({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <>
-            <CardLayout type="blogPost">
+            <CardLayout cols="smTwo">
               {paginatedResults.map((post) => {
                 const {
                   slug,

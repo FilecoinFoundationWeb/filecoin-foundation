@@ -19,7 +19,7 @@ export function FeaturedEcosystemProjects({
   }
 
   return (
-    <CardLayout>
+    <CardLayout cols="smTwoLgThree">
       {ecosystemProjects.map(({ slug, title, description, image }) => (
         <Card
           key={slug}

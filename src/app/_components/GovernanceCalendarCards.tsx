@@ -90,7 +90,7 @@ export function GovernanceCalendarCards() {
   }
 
   return (
-    <CardLayout type="blogPost">
+    <CardLayout cols="lgTwo">
       {events.items.map((event) => {
         const { id, start, end, htmlLink, summary } = event
 

@@ -1,27 +1,37 @@
 import clsx from 'clsx'
 
+type LayoutOption =
+  | 'smTwoLgThree'
+  | 'smTwo'
+  | 'mdTwo'
+  | 'lgTwo'
+  | 'smThree'
+  | 'mdThree'
+  | 'lgThree'
+
 type CardLayoutProps = {
   children: React.ReactNode
   as?: React.ElementType
-  type?: 'default' | 'blogPost' | 'governance' | 'grants' | 'home'
+  cols: LayoutOption
+}
+
+const layoutStyles: Record<LayoutOption, string> = {
+  smTwoLgThree: 'sm:grid-cols-2 sm:gap-6 lg:grid-cols-3',
+  smTwo: 'sm:grid-cols-2 sm:gap-6',
+  mdTwo: 'md:grid-cols-2 md:gap-6',
+  lgTwo: 'lg:grid-cols-2 lg:gap-6',
+  smThree: 'sm:grid-cols-3 sm:gap-6',
+  mdThree: 'md:grid-cols-3 md:gap-6',
+  lgThree: 'lg:grid-cols-3 lg:gap-6',
 }
 
 export function CardLayout({
   as: Tag = 'ul',
-  type = 'default',
+  cols,
   children,
 }: CardLayoutProps) {
-  const baseLayoutStyles = 'grid gap-4 sm:gap-6'
-  const extendedLayoutStyles = {
-    default: 'sm:grid-cols-2 lg:grid-cols-3',
-    blogPost: 'lg:grid-cols-2 lg:grid-rows-2',
-    governance: 'grid-cols-1 sm:grid-cols-2',
-    grants: 'gap-8 sm:grid-cols-3',
-    home: 'grid-cols-1 sm:grid-cols-2 sm:grid-rows-2',
-  }
-
   return (
-    <Tag className={clsx(baseLayoutStyles, extendedLayoutStyles[type])}>
+    <Tag className={clsx('grid grid-cols-1 gap-4', layoutStyles[cols])}>
       {children}
     </Tag>
   )

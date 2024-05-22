@@ -15,7 +15,7 @@ export function FeaturedBlogPosts() {
   }
 
   return (
-    <CardLayout type="blogPost">
+    <CardLayout cols="smTwo">
       {featuredBlogPosts.map(({ title, description, slug, image }) => (
         <Card
           key={slug}

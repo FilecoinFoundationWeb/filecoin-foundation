@@ -157,7 +157,7 @@ export default function Events({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <>
-            <CardLayout type="home">
+            <CardLayout cols="smTwo">
               {paginatedResults.map((event) => {
                 const { slug, title, image, involvement, startDate, endDate } =
                   event
@@ -197,7 +197,7 @@ export default function Events({ searchParams }: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardLayout>
+        <CardLayout cols="mdThree">
           {getInvolvedData.map(({ title, description, cta }) => (
             <Card
               key={title}
