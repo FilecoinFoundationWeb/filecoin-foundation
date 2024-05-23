@@ -25,10 +25,11 @@ const FILECOIN_FOUNDATION_URLS = {
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
   },
   events: {
-    sponsorshipsEmail: 'mailto:sponsorships@fil.org',
-    speakerEngagement:
+    orbitAmbassadorForm:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',
+    speakerEngagementForm:
       'https://airtable.com/appjmzgJs0szq6rQJ/shrHgGe2pJoR27Vid',
-    orbitAmbassador: 'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',
+    sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
   email: 'mailto:hello@fil.org',
   governance: {
