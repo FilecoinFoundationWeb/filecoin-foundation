@@ -1,8 +1,4 @@
 import dynamic from 'next/dynamic'
-const NoSSRPagination = dynamic(
-  () => import('@/components/Pagination').then((module) => module.Pagination),
-  { ssr: false },
-)
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
@@ -29,7 +25,6 @@ import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { getCategorySettings } from '@/utils/categoryUtils'
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -43,18 +38,22 @@ import { attributes } from '@/content/pages/blog.md'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
+
 type Props = {
   searchParams: NextServerSearchParams
 }
 
-const { featured_post: featuredPostSlug, seo } = attributes
-
-export const metadata = createMetadata(seo, PATHS.BLOG.path)
-
 const POSTS_PER_PAGE = 20
 const posts = getBlogPostsData()
-const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
+const { featured_post: featuredPostSlug, seo } = attributes
+const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
+
+export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
 const blogPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -196,7 +195,6 @@ export default function Blog({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                         />
-
                       )
                     })}
                   </CardGrid>

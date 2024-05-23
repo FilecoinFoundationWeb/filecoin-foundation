@@ -1,8 +1,4 @@
 import dynamic from 'next/dynamic'
-const NoSSRPagination = dynamic(
-  () => import('@/components/Pagination').then((module) => module.Pagination),
-  { ssr: false },
-)
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
@@ -41,11 +37,22 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getInvolvedData } from './data/getInvolvedData'
 
-const { featured_post: featuredEventSlug, seo } = attributes
-export const metadata = createMetadata(seo, PATHS.EVENTS.path)
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
 
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+const EVENTS_PER_PAGE = 20
 const events = getEventsData()
+const { categorySettings, validCategoryOptions } = getCategorySettings('events')
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
+const { featured_post: featuredEventSlug, seo } = attributes
+
+export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
 const eventsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -105,13 +112,6 @@ function getMetaDataContent(event: EventData) {
 
   return metaDataContent
 }
-
-type Props = {
-  searchParams: NextServerSearchParams
-}
-
-const EVENTS_PER_PAGE = 20
-const { categorySettings, validCategoryOptions } = getCategorySettings('events')
 
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {

@@ -1,8 +1,4 @@
 import dynamic from 'next/dynamic'
-const NoSSRPagination = dynamic(
-  () => import('@/components/Pagination').then((module) => module.Pagination),
-  { ssr: false },
-)
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -38,31 +34,34 @@ import { attributes } from '@/content/pages/ecosystem.md'
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-const { featured_post: featuredProjectSlug, seo } = attributes
-
-export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
-
-const ecosystemProjects = getEcosystemProjectsData()
-const featuredProject = ecosystemProjects.find(
-  (project) => project.slug === featuredProjectSlug,
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
 )
-
-const ecosystemPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.ECOSYSTEM.path,
-})
 
 type Props = {
   searchParams: NextServerSearchParams
 }
 
 const PROJECTS_PER_PAGE = 20
+const ecosystemProjects = getEcosystemProjectsData()
+const { featured_post: featuredProjectSlug, seo } = attributes
+const featuredProject = ecosystemProjects.find(
+  (project) => project.slug === featuredProjectSlug,
+)
+export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
+
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
 const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
+
+const ecosystemPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.ECOSYSTEM.path,
+})
 
 export default function Ecosystem({ searchParams }: Props) {
   if (!featuredProject) {
