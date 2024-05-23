@@ -4,7 +4,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 
-export type SearchInputProps = {
+type SearchInputProps = {
   searchQuery: string
   onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
 }

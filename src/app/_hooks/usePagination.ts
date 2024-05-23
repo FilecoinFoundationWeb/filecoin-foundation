@@ -17,7 +17,7 @@ type UsePaginationProps<Entry extends Object> = {
   entriesPerPage?: number
 }
 
-export function validatePageNumber(
+function validatePageNumber(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
   pageCount: number,
 ): number {

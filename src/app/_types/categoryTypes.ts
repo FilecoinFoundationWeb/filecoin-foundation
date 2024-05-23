@@ -18,12 +18,6 @@ export type CategoryYAMLData = {
   subcategories: string[]
 }
 
-export type CMSCategoryData = {
-  name: string
-  slug: string
-  subcategories: string[]
-}
-
 type CMSCategoryField = {
   collection: string
   field: string

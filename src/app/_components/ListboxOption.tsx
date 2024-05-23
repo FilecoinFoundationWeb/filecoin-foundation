@@ -8,7 +8,7 @@ import { Icon } from '@/components/Icon'
 
 import { type CategoryCounts } from '@/types/categoryTypes'
 
-export type Option = {
+type Option = {
   id: string
   name: string
 }

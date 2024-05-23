@@ -1,6 +1,4 @@
-import { type SortOption, type SortSetting } from '@/types/sortTypes'
-
-export const DEFAULT_SORT_OPTION: SortOption = 'newest'
+import { type SortSetting } from '@/types/sortTypes'
 
 export const sortSettings: SortSetting[] = [
   { id: 'newest', name: 'Newest' },

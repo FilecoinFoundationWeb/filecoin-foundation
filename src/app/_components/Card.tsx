@@ -11,7 +11,7 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
-export type CardProps = {
+type CardProps = {
   title: string | React.ReactNode
   tag?: string
   metaData?: MetaDataType
