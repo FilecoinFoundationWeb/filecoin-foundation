@@ -2,14 +2,14 @@
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import { useResetSearchParams } from '@/hooks/useResetSearchParams'
+import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 
 export function NoResultsMessage() {
-  const resetSearchParams = useResetSearchParams()
+  const { resetSearchParams } = useUpdateSearchParams()
 
   return (
     <div className="flex flex-col items-center gap-4 text-brand-200">

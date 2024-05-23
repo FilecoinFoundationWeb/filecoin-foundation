@@ -18,7 +18,7 @@ type CategoryProps = {
 }
 
 export function Category({ query, settings }: CategoryProps) {
-  const updateSearchParams = useUpdateSearchParams()
+  const { updateSearchParams } = useUpdateSearchParams()
 
   const handleCategoryChange = useCallback(
     (newValue: CategoryOption) => {

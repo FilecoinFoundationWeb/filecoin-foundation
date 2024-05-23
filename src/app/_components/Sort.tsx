@@ -17,7 +17,7 @@ type SortProps = {
 
 export function Sort({ query }: SortProps) {
   const [sortOption, setSortOption] = useState<SortOption>(query)
-  const updateSearchParams = useUpdateSearchParams()
+  const { updateSearchParams } = useUpdateSearchParams()
 
   function handleSortChange(newValue: SortOption) {
     setSortOption(newValue)

@@ -1,13 +1,13 @@
 'use client'
 
-import { useResetSearchParams } from '@/hooks/useResetSearchParams'
+import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 type ResultsAndResetProps = {
   results: number
 }
 
 export function ResultsAndReset({ results }: ResultsAndResetProps) {
-  const resetSearchParams = useResetSearchParams()
+  const { resetSearchParams } = useUpdateSearchParams()
 
   return (
     <div className="flex items-baseline gap-8">
