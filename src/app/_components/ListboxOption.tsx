@@ -6,6 +6,8 @@ import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
+import { type CategoryCounts } from '@/types/categoryTypes'
+
 export type Option = {
   id: string
   name: string
@@ -13,9 +15,21 @@ export type Option = {
 
 type ListboxOptionProps = {
   option: Option
+  counts?: CategoryCounts
 }
 
-export function ListboxOption({ option }: ListboxOptionProps) {
+function OptionContent({ option, counts }: ListboxOptionProps) {
+  return (
+    <span className="inline-flex items-baseline gap-2">
+      <span>{option.name}</span>
+      {counts && (
+        <span className="text-sm font-light">({counts[option.id]})</span>
+      )}
+    </span>
+  )
+}
+
+export function ListboxOption({ option, counts }: ListboxOptionProps) {
   return (
     <Listbox.Option value={option.id} as={Fragment}>
       {({ active, selected }) => (
@@ -25,7 +39,7 @@ export function ListboxOption({ option }: ListboxOptionProps) {
             { 'bg-brand-700': active, 'bg-transparent': !active },
           )}
         >
-          {option.name}
+          <OptionContent option={option} counts={counts} />
           {selected && <Icon component={Check} size={20} />}
         </li>
       )}

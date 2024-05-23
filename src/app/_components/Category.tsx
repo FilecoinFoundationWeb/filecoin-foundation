@@ -15,9 +15,10 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
   settings: CategorySetting[]
+  counts: ReturnType<typeof useCategory>['categoryCounts']
 }
 
-export function Category({ query, settings }: CategoryProps) {
+export function Category({ query, settings, counts }: CategoryProps) {
   const [categoryOption, setCategoryOption] = useState(query || '')
   const { updateSearchParams } = useUpdateSearchParams()
 
@@ -32,6 +33,7 @@ export function Category({ query, settings }: CategoryProps) {
         <CategorySelect
           categoryOption={categoryOption}
           categorySettings={settings}
+          categoryCounts={counts}
           onCategoryOptionChange={handleCategoryChange}
         />
       </div>
@@ -39,6 +41,7 @@ export function Category({ query, settings }: CategoryProps) {
         <CategoryListbox
           categoryOption={categoryOption}
           categorySettings={settings}
+          categoryCounts={counts}
           onCategoryOptionChange={handleCategoryChange}
         />
       </div>

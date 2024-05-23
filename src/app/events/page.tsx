@@ -132,7 +132,7 @@ export default function Events({ searchParams }: Props) {
     sortByDefault: 'newest',
   })
 
-  const { categoryQuery, categorizedResults } = useCategory({
+  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
     categorizeBy: 'involvement',
@@ -168,7 +168,11 @@ export default function Events({ searchParams }: Props) {
             <FilterContainer.ResultsAndCategory
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
-                <Category query={categoryQuery} settings={categorySettings} />
+                <Category
+                  query={categoryQuery}
+                  settings={categorySettings}
+                  counts={categoryCounts}
+                />
               }
             />
             <FilterContainer.MainWrapper>
@@ -180,7 +184,11 @@ export default function Events({ searchParams }: Props) {
                 search={<Search query={searchQuery} />}
                 sort={<Sort query={sortQuery} />}
                 category={
-                  <Category query={categoryQuery} settings={categorySettings} />
+                  <Category
+                    query={categoryQuery}
+                    settings={categorySettings}
+                    counts={categoryCounts}
+                  />
                 }
                 results={
                   <ResultsAndReset results={categorizedResults.length} />

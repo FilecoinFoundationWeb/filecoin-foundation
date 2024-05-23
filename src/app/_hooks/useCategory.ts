@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 
 import {
+  type CategoryCounts,
   type CategoryOption,
   type CategorizableBy,
 } from '@/types/categoryTypes'
@@ -55,5 +56,21 @@ export function useCategory<Entry extends Object>({
     })
   }, [entries, categorizeBy, validatedCategoryOption])
 
-  return { categoryQuery: validatedCategoryOption, categorizedResults }
+  const categoryCounts = useMemo(() => {
+    const counts: CategoryCounts = {}
+
+    validCategoryOptions.forEach((option) => {
+      counts[option] = entries.filter(
+        (entry) => entry[categorizeBy] === option,
+      ).length
+    })
+
+    return counts
+  }, [entries, categorizeBy, validCategoryOptions])
+
+  return {
+    categoryQuery: validatedCategoryOption,
+    categorizedResults,
+    categoryCounts,
+  }
 }

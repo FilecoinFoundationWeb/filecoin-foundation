@@ -1,5 +1,6 @@
 export type CategoryOption = string
 export type CategoryMap = Record<string, string>
+export type CategoryCounts = Record<CategoryOption, number>
 
 export type CategorySetting = {
   id: CategoryOption
@@ -9,6 +10,12 @@ export type CategorySetting = {
 export type CategorizableBy = {
   category?: CategoryOption
   involvement?: CategoryOption
+}
+
+export type CategoryYAMLData = {
+  name: string
+  slug: string
+  subcategories: string[]
 }
 
 export type CMSCategoryData = {
@@ -26,10 +33,4 @@ export type CMSCategoryFieldMapping = {
   blog: CMSCategoryField
   ecosystem: CMSCategoryField
   events: CMSCategoryField
-}
-
-export type CategoryYAMLData = {
-  name: string
-  slug: string
-  subcategories: string[]
 }

@@ -9,6 +9,7 @@ import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 import {
+  type CategoryCounts,
   type CategoryOption,
   type CategorySetting,
 } from '@/types/categoryTypes'
@@ -16,12 +17,14 @@ import {
 type CategoryListboxProps = {
   categoryOption: CategoryOption | undefined
   categorySettings: CategorySetting[]
+  categoryCounts: CategoryCounts
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
 }
 
 export function CategoryListbox({
   categoryOption,
   categorySettings,
+  categoryCounts,
   onCategoryOptionChange,
 }: CategoryListboxProps) {
   return (
@@ -34,7 +37,11 @@ export function CategoryListbox({
           </ListboxButton>
           <ListboxOptions>
             {categorySettings.map((option) => (
-              <ListboxOption key={option.id} option={option} />
+              <ListboxOption
+                key={option.id}
+                option={option}
+                counts={categoryCounts}
+              />
             ))}
           </ListboxOptions>
         </>
