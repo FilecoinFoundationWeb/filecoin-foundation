@@ -115,11 +115,25 @@ export default function Ecosystem({ searchParams }: Props) {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
       >
-        {categorizedResults.length === 0 ? (
-          <NoResultsMessage />
-        ) : (
-          <FilterContainer>
-            <FilterContainer.ResultsAndCategory
+        <FilterContainer>
+          <FilterContainer.ResultsAndCategory
+            results={<ResultsAndReset results={categorizedResults.length} />}
+            category={
+              <Category
+                query={categoryQuery}
+                settings={categorySettings}
+                counts={categoryCounts}
+              />
+            }
+          />
+          <FilterContainer.MainWrapper>
+            <FilterContainer.DesktopFilters
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+            />
+            <FilterContainer.MobileFiltersAndResults
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
                 <Category
@@ -129,57 +143,43 @@ export default function Ecosystem({ searchParams }: Props) {
                 />
               }
             />
-            <FilterContainer.MainWrapper>
-              <FilterContainer.DesktopFilters
-                search={<Search query={searchQuery} />}
-                sort={<Sort query={sortQuery} />}
-              />
-              <FilterContainer.MobileFiltersAndResults
-                search={<Search query={searchQuery} />}
-                sort={<Sort query={sortQuery} />}
-                category={
-                  <Category
-                    query={categoryQuery}
-                    settings={categorySettings}
-                    counts={categoryCounts}
-                  />
-                }
-                results={
-                  <ResultsAndReset results={categorizedResults.length} />
-                }
-              />
-              <FilterContainer.ContentWrapper>
-                <CardGrid cols="smTwo">
-                  {paginatedResults.map((project) => {
-                    const { slug, title, description, image, category } =
-                      project
+            <FilterContainer.ContentWrapper>
+              {categorizedResults.length === 0 ? (
+                <NoResultsMessage />
+              ) : (
+                <>
+                  <CardGrid cols="smTwo">
+                    {paginatedResults.map((project) => {
+                      const { slug, title, description, image, category } =
+                        project
 
-                    return (
-                      <Card
-                        key={slug}
-                        title={title}
-                        description={description}
-                        image={image}
-                        tag={categoryData[category]}
-                        entryType="ecosystemProject"
-                        cta={{
-                          href: `${PATHS.ECOSYSTEM.path}/${slug}`,
-                          text: 'Learn More',
-                        }}
-                      />
-                    )
-                  })}
-                </CardGrid>
-                <FilterContainer.PaginationWrapper>
-                  <NoSSRPagination
-                    pageCount={pageCount}
-                    currentPage={currentPage}
-                  />
-                </FilterContainer.PaginationWrapper>
-              </FilterContainer.ContentWrapper>
-            </FilterContainer.MainWrapper>
-          </FilterContainer>
-        )}
+                      return (
+                        <Card
+                          key={slug}
+                          title={title}
+                          description={description}
+                          image={image}
+                          tag={categoryData[category]}
+                          entryType="ecosystemProject"
+                          cta={{
+                            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+                            text: 'Learn More',
+                          }}
+                        />
+                      )
+                    })}
+                  </CardGrid>
+                  <FilterContainer.PaginationWrapper>
+                    <NoSSRPagination
+                      pageCount={pageCount}
+                      currentPage={currentPage}
+                    />
+                  </FilterContainer.PaginationWrapper>
+                </>
+              )}
+            </FilterContainer.ContentWrapper>
+          </FilterContainer.MainWrapper>
+        </FilterContainer>
       </PageSection>
 
       <CTASection

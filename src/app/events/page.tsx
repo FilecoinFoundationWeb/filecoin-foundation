@@ -161,11 +161,25 @@ export default function Events({ searchParams }: Props) {
       />
 
       <PageSection kicker="Events" title="Network Events">
-        {categorizedResults.length === 0 ? (
-          <NoResultsMessage />
-        ) : (
-          <FilterContainer>
-            <FilterContainer.ResultsAndCategory
+        <FilterContainer>
+          <FilterContainer.ResultsAndCategory
+            results={<ResultsAndReset results={categorizedResults.length} />}
+            category={
+              <Category
+                query={categoryQuery}
+                settings={categorySettings}
+                counts={categoryCounts}
+              />
+            }
+          />
+          <FilterContainer.MainWrapper>
+            <FilterContainer.DesktopFilters
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+            />
+            <FilterContainer.MobileFiltersAndResults
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
                 <Category
@@ -175,67 +189,53 @@ export default function Events({ searchParams }: Props) {
                 />
               }
             />
-            <FilterContainer.MainWrapper>
-              <FilterContainer.DesktopFilters
-                search={<Search query={searchQuery} />}
-                sort={<Sort query={sortQuery} />}
-              />
-              <FilterContainer.MobileFiltersAndResults
-                search={<Search query={searchQuery} />}
-                sort={<Sort query={sortQuery} />}
-                category={
-                  <Category
-                    query={categoryQuery}
-                    settings={categorySettings}
-                    counts={categoryCounts}
-                  />
-                }
-                results={
-                  <ResultsAndReset results={categorizedResults.length} />
-                }
-              />
-              <FilterContainer.ContentWrapper>
-                <CardGrid cols="smTwo">
-                  {paginatedResults.map((event) => {
-                    const {
-                      slug,
-                      title,
-                      image,
-                      involvement,
-                      startDate,
-                      endDate,
-                    } = event
+            <FilterContainer.ContentWrapper>
+              {categorizedResults.length === 0 ? (
+                <NoResultsMessage />
+              ) : (
+                <>
+                  <CardGrid cols="smTwo">
+                    {paginatedResults.map((event) => {
+                      const {
+                        slug,
+                        title,
+                        image,
+                        involvement,
+                        startDate,
+                        endDate,
+                      } = event
 
-                    const metaData = prepareMetaData(startDate, endDate)
+                      const metaData = prepareMetaData(startDate, endDate)
 
-                    return (
-                      <Card
-                        key={slug}
-                        title={title}
-                        tag={involvement}
-                        metaData={metaData}
-                        image={image}
-                        borderColor="brand-400"
-                        textIsClamped={true}
-                        cta={{
-                          href: `${PATHS.EVENTS.path}/${slug}`,
-                          text: 'View Event Details',
-                          icon: MagnifyingGlass,
-                        }}
-                      />
-                    )
-                  })}
-                </CardGrid>
-                <FilterContainer.PaginationWrapper>
-                  <NoSSRPagination
-                    pageCount={pageCount}
-                    currentPage={currentPage}
-                  />
-                </FilterContainer.PaginationWrapper>
-              </FilterContainer.ContentWrapper>
-            </FilterContainer.MainWrapper>
-          </FilterContainer>
-        )}
+                      return (
+                        <Card
+                          key={slug}
+                          title={title}
+                          tag={involvement}
+                          metaData={metaData}
+                          image={image}
+                          borderColor="brand-400"
+                          textIsClamped={true}
+                          cta={{
+                            href: `${PATHS.EVENTS.path}/${slug}`,
+                            text: 'View Event Details',
+                            icon: MagnifyingGlass,
+                          }}
+                        />
+                      )
+                    })}
+                  </CardGrid>
+                  <FilterContainer.PaginationWrapper>
+                    <NoSSRPagination
+                      pageCount={pageCount}
+                      currentPage={currentPage}
+                    />
+                  </FilterContainer.PaginationWrapper>
+                </>
+              )}
+            </FilterContainer.ContentWrapper>
+          </FilterContainer.MainWrapper>
+        </FilterContainer>
       </PageSection>
 
       <PageSection
