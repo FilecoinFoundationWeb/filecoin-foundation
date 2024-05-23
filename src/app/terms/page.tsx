@@ -22,15 +22,7 @@ export default function Terms() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={termsPageBaseData} />
-      <PageHeader
-        title={header.title}
-        description={header.description}
-        cta={{
-          href: '#',
-          text: 'Learn More',
-        }}
-      />
-
+      <PageHeader title={header.title} description={header.description} />
       <Content />
     </PageLayout>
   )
