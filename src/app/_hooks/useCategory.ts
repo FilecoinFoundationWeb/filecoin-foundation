@@ -4,13 +4,14 @@ import {
   type CategoryOption,
   type CategorizableBy,
 } from '@/types/categoryTypes'
-import { NextServerSearchParams } from '@/types/searchParams'
+import { type NextServerSearchParams } from '@/types/searchParams'
+import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
-type UseCategoryProps<Entry extends Record<string, unknown>> = {
+type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Entry[]
   categorizeBy: keyof CategorizableBy & keyof Entry
@@ -32,7 +33,7 @@ function validateCategoryOption(
   return validCategoryOption
 }
 
-export function useCategory<Entry extends Record<string, unknown>>({
+export function useCategory<Entry extends Object>({
   searchParams,
   entries,
   categorizeBy,
