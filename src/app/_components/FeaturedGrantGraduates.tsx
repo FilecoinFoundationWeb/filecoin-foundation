@@ -18,14 +18,15 @@ export function FeaturedGrantsGraduates({
 
   return (
     <CardGrid cols="smTwo">
-      {grantGraduates.map(({ title, description, slug }) => (
+      {grantGraduates.map(({ title, description, slug, image }) => (
         <Card
           key={slug}
           title={title}
           description={description}
           textIsClamped={true}
+          image={image}
           cta={{
-            href: `${PATHS.GRANTS.path}/${slug}`,
+            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
             text: 'Read More',
           }}
         />
