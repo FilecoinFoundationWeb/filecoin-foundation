@@ -8,7 +8,7 @@ import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -150,7 +150,7 @@ export default function Blog({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <>
-            <CardLayout type="blogPost">
+            <CardGrid cols="smTwo">
               {paginatedResults.map((post) => {
                 const {
                   slug,
@@ -178,7 +178,7 @@ export default function Blog({ searchParams }: Props) {
                   />
                 )
               })}
-            </CardLayout>
+            </CardGrid>
 
             <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
               <NoSSRPagination
