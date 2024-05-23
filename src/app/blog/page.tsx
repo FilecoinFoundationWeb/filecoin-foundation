@@ -25,7 +25,6 @@ const NoSSRPagination = dynamic(
 import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -43,6 +42,11 @@ const { featured_post: featuredPostSlug, seo } = attributes
 
 export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+const POSTS_PER_PAGE = 20
 const posts = getBlogPostsData()
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
@@ -71,31 +75,9 @@ const blogPageStructuredData: WithContext<WebPage> = {
   },
 }
 
-function getMetaDataContent(post: BlogPostData) {
-  if (!post.publishedOn) {
-    return []
-  }
-
-  const { fields } = getCollectionConfig('blog')
-  const categoryOptions = getCMSFieldOptions(fields, 'category')
-  const categoryLabel = categoryOptions.find(
-    (option) => option.value === post.category,
-  )?.label
-
-  const metaDataContent = [formatDate(post.publishedOn)]
-
-  if (categoryLabel) {
-    metaDataContent.push(categoryLabel)
-  }
-
-  return metaDataContent
+function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
+  return publishedOn ? [formatDate(publishedOn)] : []
 }
-
-type Props = {
-  searchParams: NextServerSearchParams
-}
-
-const POSTS_PER_PAGE = 20
 
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
@@ -128,8 +110,8 @@ export default function Blog({ searchParams }: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getMetaDataContent(featuredPost)}
         image={featuredPost.image}
+        metaData={getMetaData(featuredPost.publishedOn)}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',
@@ -167,9 +149,9 @@ export default function Blog({ searchParams }: Props) {
                     tag={category}
                     title={title}
                     description={description}
-                    image={{ url: image?.url, alt: image?.alt }}
+                    image={image}
                     textIsClamped={true}
-                    metaData={publishedOn ? [formatDate(publishedOn)] : []}
+                    metaData={getMetaData(publishedOn)}
                     cta={{
                       href: `${PATHS.BLOG.path}/${slug}`,
                       text: 'Read Post',
