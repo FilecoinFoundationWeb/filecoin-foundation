@@ -48,8 +48,8 @@ type Props = {
 
 const events = getEventsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('events')
-const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
 const { featured_post: featuredEventSlug, seo } = attributes
+const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
 
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
