@@ -43,7 +43,6 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-const PROJECTS_PER_PAGE = 20
 const ecosystemProjects = getEcosystemProjectsData()
 const { featured_post: featuredProjectSlug, seo } = attributes
 const featuredProject = ecosystemProjects.find(
@@ -91,7 +90,6 @@ export default function Ecosystem({ searchParams }: Props) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: categorizedResults,
-    entriesPerPage: PROJECTS_PER_PAGE,
   })
 
   return (

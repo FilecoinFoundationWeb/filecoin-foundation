@@ -46,7 +46,6 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-const EVENTS_PER_PAGE = 20
 const events = getEventsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('events')
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
@@ -142,7 +141,6 @@ export default function Events({ searchParams }: Props) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: categorizedResults,
-    entriesPerPage: EVENTS_PER_PAGE,
   })
 
   return (

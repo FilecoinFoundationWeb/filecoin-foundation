@@ -47,7 +47,6 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-const POSTS_PER_PAGE = 20
 const posts = getBlogPostsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
 const { featured_post: featuredPostSlug, seo } = attributes
@@ -112,7 +111,6 @@ export default function Blog({ searchParams }: Props) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: categorizedResults,
-    entriesPerPage: POSTS_PER_PAGE,
   })
 
   return (
