@@ -15,7 +15,8 @@ type CategoryListProps = {
 
 const touchTarget = {
   class: 'px-4',
-  offsetClass: '-ml-4',
+  offsetClassY: '-mt-4',
+  offsetClassX: '-ml-4',
 }
 
 export function CategorySelect({
@@ -24,7 +25,13 @@ export function CategorySelect({
   onCategoryOptionChange,
 }: CategoryListProps) {
   return (
-    <ul className={clsx('space-y-4', touchTarget.offsetClass)}>
+    <ul
+      className={clsx(
+        'space-y-4',
+        touchTarget.offsetClassX,
+        touchTarget.offsetClassY,
+      )}
+    >
       {categorySettings.map((option) => {
         const isSelected = categoryOption === option.id
 
@@ -32,7 +39,7 @@ export function CategorySelect({
           <li key={option.id}>
             <button
               className={clsx(
-                'cursor-pointer text-pretty rounded-lg py-2 text-left hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
+                'cursor-pointer text-pretty rounded-lg py-2 text-left font-bold hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
                 touchTarget.class,
                 {
                   'bg-brand-700 text-brand-400': isSelected,
