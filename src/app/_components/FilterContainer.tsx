@@ -63,13 +63,11 @@ function ResultsAndCategory({ results, category }: ResultsAndCategoryProps) {
 }
 
 function ContentWrapper({ children }: ContentProps) {
-  return (
-    <div className="flex flex-col items-center gap-1 sm:gap-6">{children}</div>
-  )
+  return <div className="flex flex-col gap-6">{children}</div>
 }
 
 function PaginationWrapper({ children }: PaginationProps) {
-  return <div className="sm:w-fit">{children}</div>
+  return <div className="sm:w-fit sm:self-center">{children}</div>
 }
 
 function MainWrapper({ children }: ContentProps) {
