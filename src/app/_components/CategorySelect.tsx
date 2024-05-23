@@ -8,7 +8,7 @@ import {
 } from '@/types/categoryTypes'
 
 type CategoryListProps = {
-  categoryOption: CategoryOption | undefined
+  categoryOption: CategoryOption
   categorySettings: CategorySetting[]
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
 }

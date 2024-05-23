@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useState } from 'react'
 
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
@@ -18,27 +18,26 @@ type CategoryProps = {
 }
 
 export function Category({ query, settings }: CategoryProps) {
+  const [categoryOption, setCategoryOption] = useState(query || '')
   const { updateSearchParams } = useUpdateSearchParams()
 
-  const handleCategoryChange = useCallback(
-    (newValue: CategoryOption) => {
-      updateSearchParams({ [CATEGORY_KEY]: newValue })
-    },
-    [updateSearchParams],
-  )
+  function handleCategoryChange(newValue: CategoryOption) {
+    setCategoryOption(newValue)
+    updateSearchParams({ [CATEGORY_KEY]: newValue })
+  }
 
   return (
     <>
       <div className="hidden lg:block">
         <CategorySelect
-          categoryOption={query}
+          categoryOption={categoryOption}
           categorySettings={settings}
           onCategoryOptionChange={handleCategoryChange}
         />
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
-          categoryOption={query}
+          categoryOption={categoryOption}
           categorySettings={settings}
           onCategoryOptionChange={handleCategoryChange}
         />
