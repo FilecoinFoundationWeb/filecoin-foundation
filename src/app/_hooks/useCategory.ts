@@ -21,7 +21,7 @@ type UseCategoryProps<Entry extends Object> = {
 function validateCategoryOption(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
   validCategoryOptions: CategoryOption[],
-): CategoryOption | undefined {
+) {
   if (!normalizedQuery) {
     return undefined
   }
@@ -38,10 +38,7 @@ export function useCategory<Entry extends Object>({
   entries,
   categorizeBy,
   validCategoryOptions,
-}: UseCategoryProps<Entry>): {
-  categoryQuery: CategoryOption | undefined
-  categorizedResults: Entry[]
-} {
+}: UseCategoryProps<Entry>) {
   const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
   const validatedCategoryOption = validateCategoryOption(
     normalizedQuery,
