@@ -1,6 +1,6 @@
 import { Heading } from '@/components/Heading'
 
-export type GrantsApplicationProcessCardProps = {
+type GrantsApplicationProcessCardProps = {
   step: number
   title: string
   description: string
