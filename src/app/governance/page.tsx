@@ -35,7 +35,7 @@ export default function Governance() {
         title={header.title}
         description={header.description}
         cta={{
-          href: '#',
+          href: FILECOIN_FOUNDATION_URLS.governance.docs,
           text: 'Learn More',
         }}
       />
