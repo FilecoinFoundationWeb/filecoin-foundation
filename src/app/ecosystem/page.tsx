@@ -5,7 +5,7 @@ import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -105,7 +105,7 @@ export default function Ecosystem({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <>
-            <CardLayout type="home">
+            <CardGrid cols="smTwo">
               {paginatedResults.map((project) => {
                 const { slug, title, description, image, category } = project
 
@@ -124,7 +124,7 @@ export default function Ecosystem({ searchParams }: Props) {
                   />
                 )
               })}
-            </CardLayout>
+            </CardGrid>
 
             <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
               <NoSSRPagination

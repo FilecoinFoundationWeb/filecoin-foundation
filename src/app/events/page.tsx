@@ -8,7 +8,7 @@ import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -157,7 +157,7 @@ export default function Events({ searchParams }: Props) {
           <NoResultsMessage />
         ) : (
           <>
-            <CardLayout type="home">
+            <CardGrid cols="smTwo">
               {paginatedResults.map((event) => {
                 const { slug, title, image, involvement, startDate, endDate } =
                   event
@@ -181,7 +181,7 @@ export default function Events({ searchParams }: Props) {
                   />
                 )
               })}
-            </CardLayout>
+            </CardGrid>
 
             <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
               <NoSSRPagination
@@ -197,7 +197,7 @@ export default function Events({ searchParams }: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardLayout>
+        <CardGrid cols="mdThree">
           {getInvolvedData.map(({ title, description, cta }) => (
             <Card
               key={title}
@@ -206,7 +206,7 @@ export default function Events({ searchParams }: Props) {
               cta={cta}
             />
           ))}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
     </PageLayout>
   )
