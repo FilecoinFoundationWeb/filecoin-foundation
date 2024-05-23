@@ -153,69 +153,74 @@ export default function Blog({ searchParams }: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        {categorizedResults.length === 0 ? (
-          <NoResultsMessage />
-        ) : (
-          <FilterContainer>
-            <FilterContainer.ResultsAndCategory
+        <FilterContainer>
+          <FilterContainer.ResultsAndCategory
+            results={<ResultsAndReset results={categorizedResults.length} />}
+            category={
+              <Category query={categoryQuery} settings={categorySettings} />
+            }
+          />
+          <FilterContainer.MainWrapper>
+            <FilterContainer.DesktopFilters
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+            />
+
+            <FilterContainer.MobileFiltersAndResults
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
                 <Category query={categoryQuery} settings={categorySettings} />
               }
             />
-            <FilterContainer.MainWrapper>
-              <FilterContainer.DesktopFilters
-                search={<Search query={searchQuery} />}
-                sort={<Sort query={sortQuery} />}
-              />
+            <FilterContainer.ContentWrapper>
+              {categorizedResults.length === 0 ? (
+                <NoResultsMessage />
+              ) : (
+                <>
+                  <CardGrid cols="smTwo">
+                    {paginatedResults.map((post) => {
+                      const {
+                        slug,
+                        category,
+                        title,
+                        description,
+                        image,
+                        publishedOn,
+                      } = post
 
-              <FilterContainer.MobileFilters
-                search={<Search query={searchQuery} />}
-                sort={<Sort query={sortQuery} />}
-                category={
-                  <Category query={categoryQuery} settings={categorySettings} />
-                }
-              />
-              <FilterContainer.ContentWrapper>
-                <CardGrid cols="smTwo">
-                  {paginatedResults.map((post) => {
-                    const {
-                      slug,
-                      category,
-                      title,
-                      description,
-                      image,
-                      publishedOn,
-                    } = post
-
-                    return (
-                      <Card
-                        key={slug}
-                        tag={category}
-                        title={title}
-                        description={description}
-                        image={{ url: image?.url, alt: image?.alt }}
-                        textIsClamped={true}
-                        metaData={publishedOn ? [formatDate(publishedOn)] : []}
-                        cta={{
-                          href: `${PATHS.BLOG.path}/${slug}`,
-                          text: 'Read Post',
-                          icon: BookOpen,
-                        }}
-                      />
-                    )
-                  })}
-                </CardGrid>
-                <FilterContainer.PaginationWrapper>
-                  <NoSSRPagination
-                    pageCount={pageCount}
-                    currentPage={currentPage}
-                  />
-                </FilterContainer.PaginationWrapper>
-              </FilterContainer.ContentWrapper>
-            </FilterContainer.MainWrapper>
-          </FilterContainer>
-        )}
+                      return (
+                        <Card
+                          key={slug}
+                          tag={category}
+                          title={title}
+                          description={description}
+                          image={{ url: image?.url, alt: image?.alt }}
+                          textIsClamped={true}
+                          metaData={
+                            publishedOn ? [formatDate(publishedOn)] : []
+                          }
+                          cta={{
+                            href: `${PATHS.BLOG.path}/${slug}`,
+                            text: 'Read Post',
+                            icon: BookOpen,
+                          }}
+                        />
+                      )
+                    })}
+                  </CardGrid>
+                  <FilterContainer.PaginationWrapper>
+                    <NoSSRPagination
+                      pageCount={pageCount}
+                      currentPage={currentPage}
+                    />
+                  </FilterContainer.PaginationWrapper>
+                </>
+              )}
+            </FilterContainer.ContentWrapper>
+          </FilterContainer.MainWrapper>
+        </FilterContainer>
       </PageSection>
     </PageLayout>
   )

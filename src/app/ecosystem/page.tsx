@@ -130,11 +130,14 @@ export default function Ecosystem({ searchParams }: Props) {
                 search={<Search query={searchQuery} />}
                 sort={<Sort query={sortQuery} />}
               />
-              <FilterContainer.MobileFilters
+              <FilterContainer.MobileFiltersAndResults
                 search={<Search query={searchQuery} />}
                 sort={<Sort query={sortQuery} />}
                 category={
                   <Category query={categoryQuery} settings={categorySettings} />
+                }
+                results={
+                  <ResultsAndReset results={categorizedResults.length} />
                 }
               />
               <FilterContainer.ContentWrapper>
