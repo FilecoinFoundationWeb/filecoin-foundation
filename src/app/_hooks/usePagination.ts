@@ -1,16 +1,20 @@
 import { useMemo } from 'react'
 
-import { NextServerSearchParams } from '@/types/searchParams'
+import { type NextServerSearchParams } from '@/types/searchParams'
+import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
-import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
+import {
+  DEFAULT_ENTRIES_PER_PAGE,
+  DEFAULT_PAGE_NUMBER,
+} from '@/constants/paginationConstants'
 import { PAGE_KEY } from '@/constants/searchParams'
 
-type UsePaginationProps<Entry extends Record<string, unknown>> = {
+type UsePaginationProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
-  entriesPerPage: number
+  entriesPerPage?: number
 }
 
 export function validatePageNumber(
@@ -36,10 +40,10 @@ export function validatePageNumber(
   return pageQueryNumber
 }
 
-export function usePagination<Entry extends Record<string, unknown>>({
+export function usePagination<Entry extends Object>({
   searchParams,
   entries,
-  entriesPerPage,
+  entriesPerPage = DEFAULT_ENTRIES_PER_PAGE,
 }: UsePaginationProps<Entry>) {
   const pageCount = Math.ceil(entries.length / entriesPerPage)
 

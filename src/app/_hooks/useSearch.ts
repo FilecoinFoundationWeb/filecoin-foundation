@@ -1,18 +1,19 @@
 import { useMemo } from 'react'
 
-import { NextServerSearchParams } from '@/types/searchParams'
+import { type NextServerSearchParams } from '@/types/searchParams'
+import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { SEARCH_KEY } from '@/constants/searchParams'
 
-type UseSearchProps<Entry extends Record<string, unknown>> = {
+type UseSearchProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Entry[]
   searchBy: keyof Entry | Array<keyof Entry>
 }
 
-function matchesQuery<Entry extends Record<string, unknown>>(
+function matchesQuery<Entry extends Object>(
   value: Entry[keyof Entry],
   query: string,
 ): boolean {
@@ -30,7 +31,7 @@ function matchesQuery<Entry extends Record<string, unknown>>(
   return false
 }
 
-export function useSearch<Entry extends Record<string, unknown>>({
+export function useSearch<Entry extends Object>({
   searchParams,
   entries,
   searchBy,

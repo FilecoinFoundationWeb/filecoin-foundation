@@ -31,7 +31,7 @@ export function Pagination({
   const range = useResponsiveRange()
   const visiblePages = useVisiblePages(pageCount, currentPage, range)
 
-  const updateSearchParams = useUpdateSearchParams()
+  const { updateSearchParams } = useUpdateSearchParams()
   const debouncedUpdateSearchParams = useDebounceCallback(
     updateSearchParams,
     DEBOUNCE_DELAY,

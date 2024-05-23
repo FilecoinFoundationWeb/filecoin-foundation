@@ -21,9 +21,6 @@ export interface PathConfig {
   entriesContentPath?: string
 }
 
-export const CONTENT_ROOT = 'src/content'
-const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
-
 interface PathObjectParams {
   path: PathValues
   label: string
@@ -31,6 +28,9 @@ interface PathObjectParams {
   customMainContentPath?: string
   customEntriesContentPath?: string
 }
+
+export const CONTENT_ROOT = 'src/content'
+const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
 function createPathObject({
   path,
@@ -82,3 +82,5 @@ export const PATHS = {
   }),
   TERMS: createPathObject({ path: '/terms', label: 'Terms and Conditions' }),
 } as const
+
+export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM.path}/categories`
