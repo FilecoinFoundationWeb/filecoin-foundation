@@ -44,7 +44,7 @@ const FILECOIN_FOUNDATION_URLS = {
       },
       slack: {
         label: '#fil-gov',
-        href: '#',
+        href: 'https://filecoinproject.slack.com/archives/C0535S9TUUF',
       },
     },
   },
