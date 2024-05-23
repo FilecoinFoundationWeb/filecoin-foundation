@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect } from 'react'
+import { useCallback } from 'react'
 
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
@@ -19,12 +19,6 @@ type CategoryProps = {
 
 export function Category({ query, settings }: CategoryProps) {
   const updateSearchParams = useUpdateSearchParams()
-
-  useEffect(() => {
-    if (query) {
-      updateSearchParams({ [CATEGORY_KEY]: query })
-    }
-  }, [query, updateSearchParams])
 
   const handleCategoryChange = useCallback(
     (newValue: CategoryOption) => {
