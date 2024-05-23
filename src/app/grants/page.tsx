@@ -1,4 +1,4 @@
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
 import { GrantsApplicationProcessCard } from '@/components/GrantsApplicationProcessCard'
@@ -52,7 +52,7 @@ export default function Grants() {
         title="Grants and Funding Opportunities"
         description="The Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories:"
       >
-        <CardLayout>
+        <CardGrid cols="lgThree">
           {opportunitiesData.map((card) => {
             const { title, description, icon } = card
 
@@ -72,7 +72,7 @@ export default function Grants() {
               </GrantsSectionCard>
             )
           })}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection kicker="Past Recipients" title="Grant Graduates">
@@ -83,7 +83,7 @@ export default function Grants() {
         kicker="Application Process"
         title="The Filecoin Grants Process"
       >
-        <CardLayout type="grants">
+        <CardGrid cols="smThree">
           {applicationProcessData.map((card) => {
             const { step, title, description } = card
 
@@ -96,7 +96,7 @@ export default function Grants() {
               />
             )
           })}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <PageSection
@@ -104,7 +104,7 @@ export default function Grants() {
         title="Submission Criteria"
         description="Generally, all projects must meet the following requirements:"
       >
-        <CardLayout>
+        <CardGrid cols="lgThree">
           {submissionCriteriaData.map((data) => {
             const { title, description, icon } = data
 
@@ -124,7 +124,7 @@ export default function Grants() {
               </GrantsSectionCard>
             )
           })}
-        </CardLayout>
+        </CardGrid>
       </PageSection>
 
       <CTASection

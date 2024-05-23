@@ -1,5 +1,5 @@
 import { Card } from '@/components/Card'
-import { CardLayout } from '@/components/CardLayout'
+import { CardGrid } from '@/components/CardGrid'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
@@ -17,7 +17,7 @@ export function FeaturedGrantsGraduates({
   }
 
   return (
-    <CardLayout type="blogPost">
+    <CardGrid cols="smTwo">
       {grantGraduates.map(({ title, description, slug, image }) => (
         <Card
           key={slug}
@@ -31,6 +31,6 @@ export function FeaturedGrantsGraduates({
           }}
         />
       ))}
-    </CardLayout>
+    </CardGrid>
   )
 }
