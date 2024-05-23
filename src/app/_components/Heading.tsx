@@ -5,10 +5,10 @@ import { type IconProps, Icon } from '@/components/Icon'
 export type HeadingProps = {
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'
   variant: '4xl' | '3xl' | '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'kicker'
-  iconProps?: IconProps
   className?: string
-  children: string
+  iconProps?: IconProps
   isClamped?: boolean
+  children: string
 }
 
 const variantStyles = {
@@ -27,31 +27,27 @@ export function Heading({
   tag,
   variant,
   iconProps,
-  children,
   isClamped,
-  ...rest
+  children,
 }: HeadingProps) {
   const Tag = tag
   const { component: icon, size } = iconProps ?? {}
 
-  const baseStyles = `${isClamped ? 'line-clamp-2 text-ellipsis' : 'text-balance'}`
-
-  const className = clsx(baseStyles, variantStyles[variant])
+  const baseStyles = 'text-balance'
+  const combinedClassName = clsx(
+    baseStyles,
+    variantStyles[variant],
+    isClamped && 'line-clamp-2 text-ellipsis',
+  )
 
   if (icon) {
     return (
       <div className="inline-flex items-center gap-3">
         <Icon component={icon} color="brand-300" size={size} />
-        <Tag className={className} {...rest}>
-          {children}
-        </Tag>
+        <Tag className={combinedClassName}>{children}</Tag>
       </div>
     )
   }
 
-  return (
-    <Tag className={className} {...rest}>
-      {children}
-    </Tag>
-  )
+  return <Tag className={combinedClassName}>{children}</Tag>
 }
