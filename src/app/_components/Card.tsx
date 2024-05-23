@@ -90,7 +90,7 @@ export function Card({
         )}
 
         {title && typeof title === 'string' ? (
-          <Heading tag="h3" variant="lg">
+          <Heading isClamped tag="h3" variant="lg">
             {title}
           </Heading>
         ) : (

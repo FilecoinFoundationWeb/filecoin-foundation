@@ -8,6 +8,7 @@ export type HeadingProps = {
   iconProps?: IconProps
   className?: string
   children: string
+  isClamped?: boolean
 }
 
 const variantStyles = {
@@ -27,12 +28,13 @@ export function Heading({
   variant,
   iconProps,
   children,
+  isClamped,
   ...rest
 }: HeadingProps) {
   const Tag = tag
   const { component: icon, size } = iconProps ?? {}
 
-  const baseStyles = 'text-pretty'
+  const baseStyles = `${isClamped ? 'line-clamp-2 text-ellipsis' : 'text-balance'}`
 
   const className = clsx(baseStyles, variantStyles[variant])
 
