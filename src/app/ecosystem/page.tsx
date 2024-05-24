@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+import { WebPage, WithContext } from 'schema-dts'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -29,12 +30,15 @@ import {
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
+import {
+  baseOrganizationSchema,
+  generateWebPageStructuredData,
+} from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { BASE_URL, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -63,6 +67,25 @@ const ecosystemPageBaseData = generateWebPageStructuredData({
   description: seo.description,
   path: PATHS.ECOSYSTEM.path,
 })
+
+const ecosystemPageStructuredData: WithContext<WebPage> = {
+  ...ecosystemPageBaseData,
+  publisher: baseOrganizationSchema,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: ecosystemProjects.slice(0, 5).map((project, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'BlogPosting',
+        name: project.title,
+        description: project.description,
+        image: project.image?.url,
+        url: `${BASE_URL}${PATHS.ECOSYSTEM.path}/${project.slug}`,
+      },
+    })),
+  },
+}
 
 export default function Ecosystem({ searchParams }: Props) {
   if (!featuredProject) {
@@ -96,7 +119,7 @@ export default function Ecosystem({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={ecosystemPageBaseData} />
+      <StructuredDataScript structuredData={ecosystemPageStructuredData} />
       <PageHeader
         isFeatured
         containImageSize
