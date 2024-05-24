@@ -14,8 +14,12 @@ import { SectionDivider } from '@/components/SectionDivider'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
+type TitleProps = {
+  children: string
+}
+
 type PageHeaderProps = {
-  title: string
+  title: TitleProps['children']
   description: DescriptionTextType
   cta?: CTAProps
   secondaryCta?: CTAProps
@@ -23,6 +27,14 @@ type PageHeaderProps = {
   metaData?: Array<string | null | undefined>
   isFeatured?: boolean
   containImageSize?: boolean
+}
+
+function Title({ children }: TitleProps) {
+  return (
+    <Heading tag="h1" variant="4xl">
+      {children}
+    </Heading>
+  )
 }
 
 export function PageHeader({
@@ -40,9 +52,7 @@ export function PageHeader({
       {isFeatured && <SectionDivider title="Featured" />}
       <div className="flex flex-col gap-6 md:flex-row">
         <div className="flex flex-col gap-4 md:w-1/2">
-          <Heading tag="h1" variant="4xl">
-            {title}
-          </Heading>
+          <Title>{title}</Title>
 
           {metaData && metaData.length > 0 && (
             <span className="mb-2">
@@ -88,3 +98,5 @@ export function PageHeader({
     </header>
   )
 }
+
+PageHeader.Title = Title

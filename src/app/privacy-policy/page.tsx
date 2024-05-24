@@ -1,4 +1,4 @@
-import { Heading } from '@/components/Heading'
+import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -23,10 +23,7 @@ export default function PrivacyPolicy() {
   return (
     <article>
       <StructuredDataScript structuredData={policyPageBaseData} />
-      <Heading tag="h1" variant="4xl">
-        {title}
-      </Heading>
-
+      <PageHeader.Title>{title}</PageHeader.Title>
       <section className="prose mt-6">
         <Content />
       </section>
