@@ -26,7 +26,6 @@ export default function Terms() {
     <PageLayout>
       <StructuredDataScript structuredData={termsPageBaseData} />
       <PageHeader title={header.title} />
-
       {content && <MarkdownContent>{content}</MarkdownContent>}
     </PageLayout>
   )
