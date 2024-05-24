@@ -105,7 +105,7 @@ export function GovernanceCalendarCards() {
           >
             <Calendar startDate={start.dateTime} />
             <div className="relative">
-              <div className="relative mb-12 flex flex-1 flex-col gap-3 p-4 sm:mb-8">
+              <div className="relative flex flex-1 flex-col gap-3 p-4">
                 <div className="flex gap-2">
                   <Badge
                     borderColor="brand-100"
@@ -117,11 +117,13 @@ export function GovernanceCalendarCards() {
                   {summary}
                 </Heading>
               </div>
-              <Card.Link
-                href={htmlLink}
-                icon={CalendarPlus}
-                text="Add to Google Calendar"
-              />
+              <div className="mb-10 mt-3">
+                <Card.Link
+                  href={htmlLink}
+                  icon={CalendarPlus}
+                  text="Add to Google Calendar"
+                />
+              </div>
             </div>
           </li>
         )
