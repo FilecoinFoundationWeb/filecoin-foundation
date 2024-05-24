@@ -38,6 +38,7 @@ import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 const { featured_post: featuredPostSlug, seo } = attributes
 
@@ -129,7 +130,11 @@ export default function Blog({ searchParams }: Props) {
         title={featuredPost.title}
         description={featuredPost.description}
         metaData={getMetaDataContent(featuredPost)}
-        image={featuredPost.image}
+        image={{
+          type: 'remote',
+          ...featuredPost.image,
+          fallback: graphicsData.imageComingSoon,
+        }}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',

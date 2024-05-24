@@ -25,6 +25,7 @@ import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -80,11 +81,14 @@ export default function Ecosystem({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={ecosystemPageBaseData} />
       <PageHeader
-        isFeatured
-        containImageSize
         title={featuredProject.title}
         description={featuredProject.description}
-        image={featuredProject.image}
+        image={{
+          type: 'remote',
+          ...featuredProject.image,
+          objectFit: 'contain',
+          fallback: graphicsData.ecosystem,
+        }}
         cta={{
           href: `${PATHS.ECOSYSTEM.path}/${featuredProjectSlug}`,
           text: 'Learn More About the Project',

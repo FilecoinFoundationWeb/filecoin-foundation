@@ -19,6 +19,7 @@ import {
   ORGANIZATION_NAME,
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'
@@ -65,6 +66,7 @@ export default function About() {
       <PageHeader
         title={header.title}
         description={header.description}
+        image={{ type: 'local', ...graphicsData.about }}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.annualReports.latest,
           text: 'Learn More in Our Annual Report',

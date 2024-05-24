@@ -1,4 +1,7 @@
-export type ImageProps = {
+import { StaticImageData, ImageProps as NextImageProps } from 'next/image'
+
+export type ImageProps = Omit<NextImageProps, 'src' | 'objectFit'> & {
   url: string
-  alt: string
 }
+
+export type StaticImageProps = { src: StaticImageData; alt: string }

@@ -29,6 +29,7 @@ import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
 
@@ -140,7 +141,11 @@ export default function Events({ searchParams }: Props) {
         title={featuredEvent.title}
         description={featuredEvent.description || 'Description not available.'}
         metaData={getMetaDataContent(featuredEvent)}
-        image={featuredEvent.image}
+        image={{
+          type: 'remote',
+          ...featuredEvent.image,
+          fallback: graphicsData.events1,
+        }}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
