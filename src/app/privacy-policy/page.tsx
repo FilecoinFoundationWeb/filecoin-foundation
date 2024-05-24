@@ -1,4 +1,4 @@
-import { PageHeader } from '@/components/PageHeader'
+import { Heading } from '@/components/Heading'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -19,10 +19,14 @@ const policyPageBaseData = generateWebPageStructuredData({
 })
 
 export default function PrivacyPolicy() {
+  const { title } = header
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={policyPageBaseData} />
-      <PageHeader title={header.title} description={header.description} />
+      <Heading tag="h1" variant="4xl">
+        {title}
+      </Heading>
 
       <div className="prose">
         <Content />
