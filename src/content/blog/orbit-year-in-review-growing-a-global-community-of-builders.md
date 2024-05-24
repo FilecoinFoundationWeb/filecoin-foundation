@@ -10,7 +10,7 @@ description: In 2023, the Filecoin Orbit program helped seed a new crop of
   thousands of builders in the Filecoin ecosystem.
 image:
   url: /assets/images/231205-orbit-year.png
-  alt: "Filecoin Orbit Program Year in Review "
+  alt: "Filecoin Orbit Program Year in Review"
 recommended-posts: []
 metadata: null
 ---
