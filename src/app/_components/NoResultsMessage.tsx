@@ -1,3 +1,5 @@
+'use client'
+
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import { Heading } from '@/components/Heading'

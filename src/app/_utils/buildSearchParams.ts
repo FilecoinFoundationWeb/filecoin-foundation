@@ -1,7 +1,9 @@
 import { ReadonlyURLSearchParams } from 'next/navigation'
 
+export type ParamsObject = Record<string, string | number>
+
 export function buildSearchParams(
-  newParams: Record<string, string | number>,
+  newParams: ParamsObject,
   existingParams?: URLSearchParams | ReadonlyURLSearchParams,
 ) {
   const params = new URLSearchParams(existingParams?.toString())

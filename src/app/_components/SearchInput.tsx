@@ -4,7 +4,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 
-export type SearchInputProps = {
+type SearchInputProps = {
   searchQuery: string
   onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
 }
@@ -14,7 +14,7 @@ export function SearchInput({
   onSearchChange,
 }: SearchInputProps) {
   return (
-    <div className="w-full max-w-lg lg:max-w-xs">
+    <div className="w-full">
       <label htmlFor="search" className="sr-only">
         Search
       </label>
