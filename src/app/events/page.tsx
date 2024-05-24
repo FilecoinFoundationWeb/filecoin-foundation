@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
@@ -202,15 +203,31 @@ export default function Events({ searchParams }: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardGrid cols="mdThree">
-          {getInvolvedData.map(({ title, description, cta }) => (
-            <Card
-              key={title}
-              title={title}
-              description={description}
-              cta={cta}
+        <CardGrid cols="mdTwo">
+          <li className="col-span-1 col-start-1 row-span-2 row-start-1 h-96 md:h-auto">
+            <Image
+              src={graphicsData.events2.src}
+              alt={graphicsData.events2.alt}
+              className="h-full rounded-lg object-cover"
             />
+          </li>
+          {getInvolvedData.map(({ title, description, cta }) => (
+            <li key={title} className="h-48 md:h-56">
+              <Card
+                title={title}
+                description={description}
+                cta={cta}
+                as="div"
+              />
+            </li>
           ))}
+          <li className="h-48 md:h-56">
+            <Image
+              src={graphicsData.events3.src}
+              alt={graphicsData.events3.alt}
+              className="h-full rounded-lg object-cover"
+            />
+          </li>
         </CardGrid>
       </PageSection>
     </PageLayout>
