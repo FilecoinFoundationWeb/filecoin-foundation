@@ -7,7 +7,7 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SortListbox } from '@/components/SortListbox'
 
-import { type SortOptionItems } from '@/types/sortTypes'
+import { type SortOption } from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
 
@@ -16,10 +16,10 @@ type SortProps = {
 }
 
 export function Sort({ query }: SortProps) {
-  const [sortOption, setSortOption] = useState<SortOptionItems>(query)
-  const updateSearchParams = useUpdateSearchParams()
+  const [sortOption, setSortOption] = useState<SortOption>(query)
+  const { updateSearchParams } = useUpdateSearchParams()
 
-  function handleSortChange(newValue: SortOptionItems) {
+  function handleSortChange(newValue: SortOption) {
     setSortOption(newValue)
     updateSearchParams({ [SORT_KEY]: newValue })
   }

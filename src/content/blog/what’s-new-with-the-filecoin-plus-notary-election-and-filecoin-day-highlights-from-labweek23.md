@@ -12,6 +12,7 @@ description: >-
   Filecoin Foundation for the Decentralized Web (FFDW), discussed the
   intersection of artificial intelligence and decentralized storage, and more.
 featured: false
+category: news
 image:
   url: /assets/images/231120-fd-fpd.png
   alt: Filecoin Day and Filecoin Plus Day Recap
