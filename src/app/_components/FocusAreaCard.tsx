@@ -21,6 +21,7 @@ export function FocusAreaCard({
         src={image.src}
         alt={image.alt}
         className="aspect-video w-auto rounded object-cover sm:w-60 md:w-80 lg:w-auto"
+        sizes="100vw, (min-width: 640px) 33vw"
       />
 
       <div className="px-4 py-3 text-brand-100 lg:px-3 lg:py-4">
