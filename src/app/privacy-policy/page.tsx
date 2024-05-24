@@ -22,15 +22,7 @@ export default function PrivacyPolicy() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={policyPageBaseData} />
-      <PageHeader
-        title={header.title}
-        description={header.description}
-        cta={{
-          href: '#',
-          text: 'Learn More',
-        }}
-      />
-
+      <PageHeader title={header.title} description={header.description} />
       <Content />
     </PageLayout>
   )

@@ -17,7 +17,7 @@ export const getInvolvedData = [
     description:
       'Interested in joining the Filecoin Foundation on stage? Complete the speaker intake form.',
     cta: {
-      href: '#',
+      href: FILECOIN_FOUNDATION_URLS.events.speakerEngagementForm,
       text: 'Submit Form',
       icon: Clipboard,
     },
@@ -27,7 +27,7 @@ export const getInvolvedData = [
     description:
       'The Filecoin Orbit program promotes Filecoin technology through community events that raise network awareness. Apply to be an Orbit Ambassador.',
     cta: {
-      href: '#',
+      href: FILECOIN_FOUNDATION_URLS.events.orbitAmbassadorForm,
       text: 'Apply to Filecoin Orbit',
       icon: HandWaving,
     },

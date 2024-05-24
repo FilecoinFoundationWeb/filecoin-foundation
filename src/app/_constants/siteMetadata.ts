@@ -25,6 +25,10 @@ const FILECOIN_FOUNDATION_URLS = {
       'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
   },
   events: {
+    orbitAmbassadorForm:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',
+    speakerEngagementForm:
+      'https://airtable.com/appjmzgJs0szq6rQJ/shrHgGe2pJoR27Vid',
     sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
   email: 'mailto:hello@fil.org',
@@ -33,15 +37,15 @@ const FILECOIN_FOUNDATION_URLS = {
     social: {
       github: {
         label: 'GitHub',
-        href: '#',
+        href: 'https://github.com/filecoin-project/FIPs',
       },
       twitter: {
         label: '@fil_gov',
-        href: '#',
+        href: 'https://x.com/fil_gov',
       },
       slack: {
         label: '#fil-gov',
-        href: '#',
+        href: 'https://filecoinproject.slack.com/archives/C0535S9TUUF',
       },
     },
   },
@@ -95,9 +99,9 @@ const FILECOIN_URLS = {
 
 export {
   BASE_URL,
-  FIL_PLUS_URLS,
   FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
+  FIL_PLUS_URLS,
   ORGANIZATION_NAME,
 }
