@@ -6,7 +6,9 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
-export function SiteLayout({ children }: { children: React.ReactNode }) {
+import { LayoutProps } from '@/layout'
+
+export function SiteLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-brand-800 px-6 pb-6 pt-8 text-brand-100">
