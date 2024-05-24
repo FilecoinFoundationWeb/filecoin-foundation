@@ -4,6 +4,7 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
+import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -81,13 +82,8 @@ export default function About() {
 
       <PageSection kicker="What We Do" title="Focus Areas">
         <CardGrid cols="lgThree">
-          {focusAreasData.map(({ title, description }) => (
-            <Card
-              key={title}
-              title={title}
-              description={description}
-              borderColor="brand-300"
-            />
+          {focusAreasData.map((area, i) => (
+            <FocusAreaCard key={i} {...area} />
           ))}
         </CardGrid>
       </PageSection>
