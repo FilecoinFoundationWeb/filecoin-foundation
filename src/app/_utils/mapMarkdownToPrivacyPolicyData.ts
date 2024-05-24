@@ -10,7 +10,7 @@ export function mapMarkdownToPrivacyPolicyData({
   return {
     header: {
       title: data.header.title,
-      description: data.title.description,
+      description: data.header.description,
     },
     seo: {
       title: data.seo.title,
