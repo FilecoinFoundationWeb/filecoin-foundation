@@ -1,5 +1,4 @@
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -19,19 +18,15 @@ const termsPageBaseData = generateWebPageStructuredData({
 })
 
 export default function Terms() {
-  return (
-    <PageLayout>
-      <StructuredDataScript structuredData={termsPageBaseData} />
-      <PageHeader
-        title={header.title}
-        description={header.description}
-        cta={{
-          href: '#',
-          text: 'Learn More',
-        }}
-      />
+  const { title } = header
 
-      <Content />
-    </PageLayout>
+  return (
+    <article>
+      <StructuredDataScript structuredData={termsPageBaseData} />
+      <PageHeader.Title>{title}</PageHeader.Title>
+      <section className="prose mt-6">
+        <Content />
+      </section>
+    </article>
   )
 }

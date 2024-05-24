@@ -37,7 +37,7 @@ export default function Governance() {
         description={header.description}
         image={{ type: 'local', ...graphicsData.governance2 }}
         cta={{
-          href: '#',
+          href: FILECOIN_FOUNDATION_URLS.governance.docs,
           text: 'Learn More',
         }}
       />

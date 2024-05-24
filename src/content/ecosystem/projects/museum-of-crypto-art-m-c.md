@@ -14,7 +14,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: # /assets/external/659751c70b1ecbf25f6faaf3_moca.png
+  url: /assets/images/659751c70b1ecbf25f6faaf3_moca.png
   alt: "Museum of Crypto Art Logo"
 website: "https://museumofcryptoart.com"
 featured-content: null

@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/659733d8ebbc2392eda725b0_nidrogvqqb87r8e6c8ygsc2llv7o2zu11hlqz-blvti.png
+  url: /assets/images/659733d8ebbc2392eda725b0_nidrogvqqb87r8e6c8ygsc2llv7o2zu11hlqz-blvti.png
   alt: FFDW Logo
 website: https://ffdweb.org
 featured-content: https://ffdweb.org/resources/

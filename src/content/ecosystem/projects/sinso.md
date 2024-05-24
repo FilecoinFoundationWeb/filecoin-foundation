@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/65975173625957e0087c7501_sinso_logo.png
+  url: /assets/images/65975173625957e0087c7501_sinso_logo.png
   alt: SINSO Logo
 website: "https://sinso.io/"
 featured-content: null

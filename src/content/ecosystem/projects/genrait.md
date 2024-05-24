@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/65974a4a0cea1eb2d9c5b69b_genrait-logo.png
+  url: /assets/images/65974a4a0cea1eb2d9c5b69b_genrait-logo.png
   alt: GenRAIT Logo
 website: "https://www.genrait.com"
 featured-content: "https://fil.org/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data/"

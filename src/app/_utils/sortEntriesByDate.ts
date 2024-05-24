@@ -1,9 +1,9 @@
-import { type SortableByDate, type SortOptionItems } from '@/types/sortTypes'
+import { type SortableByDate, type SortOption } from '@/types/sortTypes'
 
 type SortEntriesByDateParams<Entry extends SortableByDate> = {
   entries: Array<Entry>
   sortBy: keyof SortableByDate
-  sortOption: SortOptionItems
+  sortOption: SortOption
 }
 
 function validateDate(value?: string) {

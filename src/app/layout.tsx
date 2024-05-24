@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 
 import '@/styles/globals.scss'
 
-import { BreadCrumbsWrapper as BreadCrumbs } from '@/components/BreadCrumbsWrapper'
 import { SiteLayout } from '@/components/SiteLayout'
 
 import siteMetaData from '@/content/shared/site-metadata.yml'
@@ -20,17 +19,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 }
 
-export default function RootLayout({
-  children,
-}: {
+export type LayoutProps = {
   children: React.ReactNode
-}) {
-  return (
-    <SiteLayout>
-      <div className="flex flex-grow flex-col gap-6">
-        <BreadCrumbs />
-        {children}
-      </div>
-    </SiteLayout>
-  )
+}
+
+export default function RootLayout({ children }: LayoutProps) {
+  return <SiteLayout>{children}</SiteLayout>
 }

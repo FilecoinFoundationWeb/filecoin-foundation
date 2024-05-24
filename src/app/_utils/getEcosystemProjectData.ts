@@ -15,7 +15,7 @@ export function getEcosystemProjectData(slug: string): EcosystemProjectData {
     ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
     ECOSYSTEM_PROJECTS_COLLECTION_NAME,
     slug,
-    mapMarkdownToEcosystemProjectData
+    mapMarkdownToEcosystemProjectData,
   )
 }
 
@@ -23,6 +23,6 @@ export function getEcosystemProjectsData(): EcosystemProjectData[] {
   return transformMarkdownToCollectionData<EcosystemProjectData>(
     ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
     ECOSYSTEM_PROJECTS_COLLECTION_NAME,
-    mapMarkdownToEcosystemProjectData
+    mapMarkdownToEcosystemProjectData,
   )
 }

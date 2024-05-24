@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/659746e70b1ecbf25f67cd3c_artifact-labs-logo.png
+  url: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.png
   alt: Artifact Labs Logo
 website: "https://www.artifactlabs.com"
 featured-content: "https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/"

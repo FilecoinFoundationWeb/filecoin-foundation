@@ -5,6 +5,7 @@ created-on: 2023-10-23T22:05:52.307Z
 updated-on: 2023-10-23T22:05:52.316Z
 published-on: 2023-10-23T22:05:52.322Z
 featured: false
+category: events
 description: >-
   Vegas was humming with the sound of hundreds of excited Filecoin ecosystem participants gathering under one roof to discuss decentralized storage in the age of artificial intelligence (AI).
 image:

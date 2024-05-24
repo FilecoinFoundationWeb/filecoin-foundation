@@ -1,7 +1,8 @@
-export type BlogPostPath = `/blog/${string}`
-export type EventPath = `/events/${string}`
+type BlogPostPath = `/blog/${string}`
+type EcosystemPath = `/ecosystem/${string}`
+type EventPath = `/events/${string}`
 
-export type DynamicPathValues = BlogPostPath | EventPath
+export type DynamicPathValues = BlogPostPath | EcosystemPath | EventPath
 
 export type PathValues =
   | '/about'
@@ -21,9 +22,6 @@ export interface PathConfig {
   entriesContentPath?: string
 }
 
-export const CONTENT_ROOT = 'src/content'
-const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
-
 interface PathObjectParams {
   path: PathValues
   label: string
@@ -31,6 +29,9 @@ interface PathObjectParams {
   customMainContentPath?: string
   customEntriesContentPath?: string
 }
+
+const CONTENT_ROOT = 'src/content'
+const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
 function createPathObject({
   path,
@@ -82,3 +83,5 @@ export const PATHS = {
   }),
   TERMS: createPathObject({ path: '/terms', label: 'Terms and Conditions' }),
 } as const
+
+export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM.path}/categories`

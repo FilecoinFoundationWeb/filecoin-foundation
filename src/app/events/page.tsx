@@ -4,16 +4,20 @@ import Image from 'next/image'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
+import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
+import { Category } from '@/components/Category'
+import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -21,6 +25,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { EventData } from '@/types/eventTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEventsData } from '@/utils/getEventData'
@@ -39,11 +44,16 @@ const NoSSRPagination = dynamic(
   { ssr: false },
 )
 
-const { featured_post: featuredEventSlug, seo } = attributes
-export const metadata = createMetadata(seo, PATHS.EVENTS.path)
+type Props = {
+  searchParams: NextServerSearchParams
+}
 
 const events = getEventsData()
+const { categorySettings, validCategoryOptions } = getCategorySettings('events')
+const { featured_post: featuredEventSlug, seo } = attributes
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
+
+export const metadata = createMetadata(seo, PATHS.EVENTS.path)
 
 const eventsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -104,12 +114,6 @@ function getMetaDataContent(event: EventData) {
   return metaDataContent
 }
 
-type Props = {
-  searchParams: NextServerSearchParams
-}
-
-const EVENTS_PER_PAGE = 20
-
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
     throw new Error('Featured event not found')
@@ -118,6 +122,7 @@ export default function Events({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: events,
+
     searchBy: ['title', 'location'],
   })
 
@@ -128,10 +133,16 @@ export default function Events({ searchParams }: Props) {
     sortByDefault: 'newest',
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
-    entriesPerPage: EVENTS_PER_PAGE,
+    categorizeBy: 'involvement',
+    validCategoryOptions: validCategoryOptions,
+  })
+
+  const { currentPage, pageCount, paginatedResults } = usePagination({
+    searchParams,
+    entries: categorizedResults,
   })
 
   return (
@@ -154,49 +165,81 @@ export default function Events({ searchParams }: Props) {
       />
 
       <PageSection kicker="Events" title="Network Events">
-        <div className="flex justify-end gap-3">
-          <Search query={searchQuery} />
-          <Sort query={sortQuery} />
-        </div>
-
-        {sortedResults.length === 0 ? (
-          <NoResultsMessage />
-        ) : (
-          <>
-            <CardGrid cols="smTwo">
-              {paginatedResults.map((event) => {
-                const { slug, title, image, involvement, startDate, endDate } =
-                  event
-
-                const metaData = prepareMetaData(startDate, endDate)
-
-                return (
-                  <Card
-                    key={slug}
-                    title={title}
-                    tag={involvement}
-                    metaData={metaData}
-                    image={image}
-                    borderColor="brand-400"
-                    textIsClamped={true}
-                    cta={{
-                      href: `${PATHS.EVENTS.path}/${slug}`,
-                      text: 'View Event Details',
-                      icon: MagnifyingGlass,
-                    }}
-                  />
-                )
-              })}
-            </CardGrid>
-
-            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
-              <NoSSRPagination
-                pageCount={pageCount}
-                currentPage={currentPage}
+        <FilterContainer>
+          <FilterContainer.ResultsAndCategory
+            results={<ResultsAndReset results={categorizedResults.length} />}
+            category={
+              <Category
+                query={categoryQuery}
+                settings={categorySettings}
+                counts={categoryCounts}
               />
-            </div>
-          </>
-        )}
+            }
+          />
+          <FilterContainer.MainWrapper>
+            <FilterContainer.DesktopFilters
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+            />
+            <FilterContainer.MobileFiltersAndResults
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+              results={<ResultsAndReset results={categorizedResults.length} />}
+              category={
+                <Category
+                  query={categoryQuery}
+                  settings={categorySettings}
+                  counts={categoryCounts}
+                />
+              }
+            />
+            <FilterContainer.ContentWrapper>
+              {categorizedResults.length === 0 ? (
+                <NoResultsMessage />
+              ) : (
+                <>
+                  <CardGrid cols="smTwo">
+                    {paginatedResults.map((event) => {
+                      const {
+                        slug,
+                        title,
+                        image,
+                        involvement,
+                        startDate,
+                        endDate,
+                      } = event
+
+                      const metaData = prepareMetaData(startDate, endDate)
+
+                      return (
+                        <Card
+                          key={slug}
+                          title={title}
+                          tag={involvement}
+                          metaData={metaData}
+                          image={image}
+                          borderColor="brand-400"
+                          textIsClamped={true}
+                          cta={{
+                            href: `${PATHS.EVENTS.path}/${slug}`,
+                            text: 'View Event Details',
+                            icon: MagnifyingGlass,
+                          }}
+                        />
+                      )
+                    })}
+                  </CardGrid>
+                  <FilterContainer.PaginationWrapper>
+                    <NoSSRPagination
+                      pageCount={pageCount}
+                      currentPage={currentPage}
+                    />
+                  </FilterContainer.PaginationWrapper>
+                </>
+              )}
+            </FilterContainer.ContentWrapper>
+          </FilterContainer.MainWrapper>
+        </FilterContainer>
       </PageSection>
 
       <PageSection

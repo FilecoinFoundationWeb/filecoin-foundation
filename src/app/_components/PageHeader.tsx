@@ -17,8 +17,12 @@ import {
   type ImageProps,
 } from '@/types/sharedProps/imageType'
 
+type TitleProps = {
+  children: string
+}
+
 type SharedProps = {
-  title: string
+  title: TitleProps['children']
   description: DescriptionTextType
   cta: CTAProps | [CTAProps, CTAProps?]
   metaData?: Array<string | null | undefined>
@@ -84,6 +88,14 @@ function RemoteImage({
   )
 }
 
+function Title({ children }: TitleProps) {
+  return (
+    <Heading tag="h1" variant="4xl">
+      {children}
+    </Heading>
+  )
+}
+
 export function PageHeader({
   title,
   description,
@@ -98,12 +110,9 @@ export function PageHeader({
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
-
-      <div className="flex flex-col gap-6 lg:flex-row">
-        <div className="flex flex-col gap-4 lg:w-1/2">
-          <Heading tag="h1" variant="4xl" className="text-balance">
-            {title}
-          </Heading>
+      <div className="flex flex-col gap-6 md:flex-row">
+        <div className="flex flex-col gap-4 md:w-1/2">
+          <Title>{title}</Title>
 
           {metaData && metaData.length > 0 && (
             <span className="mb-2">
@@ -132,3 +141,5 @@ export function PageHeader({
     </header>
   )
 }
+
+PageHeader.Title = Title

@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: # /assets/external/659751960cea1eb2d9ca9d33_opengate_logo.png
+  url: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
   alt: OpenGate Logo
 website: "www.opengatenft.com"
 featured-content: null

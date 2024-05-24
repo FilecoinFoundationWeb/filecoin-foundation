@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+  url: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
   alt: Filecoin Foundation Logo
 website: https://fil.org
 featured-content: https://fil.org/blog/
