@@ -9,7 +9,7 @@ seo:
 
 **Last Updated: January 25, 2023**
 
-Filecoin Foundation and Filecoin Foundation for the Decentralized Web (collectively, "Filecoin Foundation," "we," "us") provide this Privacy Policy to explain our practices regarding the collection, use, and disclosure of your personal information both online and offline. This Privacy Policy applies to the fil.org and ffdweb.org websites ("Websites") and any websites, apps, or services that link to this Privacy Policy ("Services"), unless otherwise indicated. The Privacy Policy that applies to information obtained as part of job applications can be found at fil.org/employees.
+Filecoin Foundation and Filecoin Foundation for the Decentralized Web (collectively, "Filecoin Foundation," "we," "us") provide this Privacy Policy to explain our practices regarding the collection, use, and disclosure of your personal information both online and offline. This Privacy Policy applies to the [fil.org](https://fil.org/) and [ffdweb.org](https://ffdweb.org/) websites ("Websites") and any websites, apps, or services that link to this Privacy Policy ("Services"), unless otherwise indicated. The Privacy Policy that applies to information obtained as part of job applications can be found at fil.org/employees.
 
 ## I. What Personal Information is Collected
 
@@ -69,7 +69,7 @@ We do not sell personal information to third parties for monetary or other valua
 
 ## V. Cookies
 
-"Cookies" are small text files that allow websites to store and retrieve information about you from your computer system. We may serve cookies to track individual site usage for later aggregation. If you do not want information collected through the use of cookies, there is a procedure in most browser settings that allows you to automatically decline cookies, or be given the choice of declining or accepting the transfer to your computer of a particular cookie (or cookies) from a particular site. You may wish to refer to allaboutcookies.org/manage-cookies. If you reject cookies through your browser settings, you may still use our Services, but you may experience some inconvenience.
+"Cookies" are small text files that allow websites to store and retrieve information about you from your computer system. We may serve cookies to track individual site usage for later aggregation. If you do not want information collected through the use of cookies, there is a procedure in most browser settings that allows you to automatically decline cookies, or be given the choice of declining or accepting the transfer to your computer of a particular cookie (or cookies) from a particular site. You may wish to refer to [allaboutcookies.org/manage-cookies](https://allaboutcookies.org/how-to-manage-cookies). If you reject cookies through your browser settings, you may still use our Services, but you may experience some inconvenience.
 
 ## VI. Your Rights
 
@@ -79,7 +79,7 @@ Depending on where you reside, you may be entitled to request access to, portabi
 - Right to Access & Data Portability: Subject to certain exceptions, you may have the right to request a copy of the personal information we collected about you.
 - Right to Correction and Deletion: You may have the right to request that we correct or delete personal information that we collected from you and retain, subject to certain exceptions.
 
-To exercise your access, portability, correction, and deletion rights, you may submit a request by e-mail at privacypolicy@fil.org or by leaving a message at (302) 440-4493. Once we receive your request, we may verify it by requesting information sufficient to confirm your identity. You may also be entitled, in accordance with applicable law, to appeal a refusal to take action on your request; to do so please respond to the email denying your request.
+To exercise your access, portability, correction, and deletion rights, you may submit a request by e-mail at [privacypolicy@fil.org](mailto:privacypolicy@fil.org) or by leaving a message at (302) 440-4493. Once we receive your request, we may verify it by requesting information sufficient to confirm your identity. You may also be entitled, in accordance with applicable law, to appeal a refusal to take action on your request; to do so please respond to the email denying your request.
 
 Only you, or a person authorized by you to act on your behalf, may make a verifiable consumer request related to your personal information. If you would like to use an authorized agent to exercise your rights, we may request evidence that you have provided such agent with power of attorney or that the agent otherwise has valid written authority to submit requests to exercise rights on your behalf. We reserve the right to deny requests in certain circumstances, such as where we have a reasonable belief that the request is fraudulent, where your identity cannot be confirmed, or where we must maintain your personal information consistent with applicable law.
 
@@ -121,4 +121,4 @@ By using the Services, you signify your acknowledgment of this Privacy Policy. I
 
 ## XV. More Questions?
 
-If you have any questions about this Privacy Policy, email them to privacypolicy@fil.org and be sure to indicate the specific site you're visiting and the nature of your question or concern.
+If you have any questions about this Privacy Policy, email them to [privacypolicy@fil.org](mailto:privacypolicy@fil.org) and be sure to indicate the specific site you're visiting and the nature of your question or concern.
