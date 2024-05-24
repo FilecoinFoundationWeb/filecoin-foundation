@@ -39,9 +39,11 @@ Here are some panel highlights:
 
 Artificial Intelligence was front and center in Davos this year. Sir Tim Berners-Lee, Inventor of the World Wide Web was joined by FF’s Clara Tsao, Meta’s Yann LeCun, and VERSES’ Karl Friston in a session moderated by Gillian Tett of the Financial Times. Together they discussed how decentralized technologies can help with AI data integrity, accessibility, and verifiability.
 
-<iframe src="https://player.vimeo.com/video/913091129?h=94ed8ee073" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<figure>
+  <iframe src="https://player.vimeo.com/video/913091129?h=94ed8ee073" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
-<p><a href="https://vimeo.com/913091129">AI and Decentralization | The Filecoin Sanctuary 2024</a> from <a href="https://vimeo.com/user215464696">Filecoin Foundation</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  <figcaption><a href="https://vimeo.com/913091129">AI and Decentralization | The Filecoin Sanctuary 2024</a> from <a href="https://vimeo.com/user215464696">Filecoin Foundation</a> on <a href="https://vimeo.com">Vimeo</a>.</figcaption>
+</figure>
 
 **Talking Regulation and our Latest Space Announcements on the Sanctuary Stage**
 
