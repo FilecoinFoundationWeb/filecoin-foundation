@@ -1,4 +1,4 @@
-import { CustomLink } from '@/components/CustomLink'
+import { Card } from '@/components/Card'
 import { type HeadingProps, Heading } from '@/components/Heading'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
@@ -20,14 +20,7 @@ export function HomeExploreSectionCard({
         <Heading {...heading} />
         <p>{children}</p>
       </div>
-      <CustomLink
-        href={cta.href}
-        className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
-      >
-        <span className="absolute bottom-4 left-4 text-brand-300">
-          {cta.text}
-        </span>
-      </CustomLink>
+      <Card.Link {...cta} />
     </div>
   )
 }

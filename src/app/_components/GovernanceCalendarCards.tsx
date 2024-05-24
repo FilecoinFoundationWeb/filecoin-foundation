@@ -7,6 +7,7 @@ import useSWR from 'swr'
 import { z } from 'zod'
 
 import { Badge } from '@/components/Badge'
+import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
@@ -100,30 +101,28 @@ export function GovernanceCalendarCards() {
         return (
           <li
             key={id}
-            className="relative flex flex-col rounded-lg border border-blue-500 p-1 sm:flex-row"
+            className="flex flex-col rounded-lg border border-blue-500 p-1 sm:flex-row"
           >
             <Calendar startDate={start.dateTime} />
-            <div className="mb-12 flex flex-1 flex-col gap-3 p-4 sm:mb-8">
-              <div className="flex gap-2">
-                <Badge
-                  borderColor="brand-100"
-                  icon={Clock}
-                >{`UTC ${startTime} - ${endTime}`}</Badge>
-                <Badge>Zoom</Badge>
+            <div className="relative">
+              <div className="relative mb-12 flex flex-1 flex-col gap-3 p-4 sm:mb-8">
+                <div className="flex gap-2">
+                  <Badge
+                    borderColor="brand-100"
+                    icon={Clock}
+                  >{`UTC ${startTime} - ${endTime}`}</Badge>
+                  <Badge>Zoom</Badge>
+                </div>
+                <Heading tag="h3" variant="lg">
+                  {summary}
+                </Heading>
               </div>
-              <Heading tag="h3" variant="lg">
-                {summary}
-              </Heading>
+              <Card.Link
+                href={htmlLink}
+                icon={CalendarPlus}
+                text="Add to Google Calendar"
+              />
             </div>
-            <TextLink
-              className="absolute inset-0 rounded-lg text-base focus:outline-2 focus:outline-brand-100"
-              href={htmlLink}
-            >
-              <span className="absolute bottom-4 left-5 flex gap-2 sm:left-40">
-                <CalendarPlus size={24} />
-                Add to Google Calendar
-              </span>
-            </TextLink>
           </li>
         )
       })}

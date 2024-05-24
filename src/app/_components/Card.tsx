@@ -43,6 +43,21 @@ const imageSizes = {
     '(max-width: 639px) 320px, (max-width: 767px) 276px, (max-width: 1023px) 340px, 304px',
 }
 
+function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
+  return (
+    <CustomLink
+      href={href}
+      aria-label={ariaLabel}
+      className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+    >
+      <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+        {Icon && <Icon size={24} />}
+        <span>{text}</span>
+      </span>
+    </CustomLink>
+  )
+}
+
 export function Card({
   title,
   tag,
@@ -104,20 +119,11 @@ export function Card({
             </p>
           )}
 
-          {cta && (
-            <CustomLink
-              href={cta.href}
-              aria-label={cta.ariaLabel}
-              className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
-            >
-              <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-                {cta.icon && <Icon component={cta.icon} />}
-                <span>{cta.text}</span>
-              </span>
-            </CustomLink>
-          )}
+          {cta && <Link {...cta} />}
         </div>
       </div>
     </Tag>
   )
 }
+
+Card.Link = Link
