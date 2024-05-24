@@ -1,5 +1,4 @@
 import { Heading } from '@/components/Heading'
-import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -22,15 +21,15 @@ export default function Terms() {
   const { title } = header
 
   return (
-    <PageLayout>
+    <article>
       <StructuredDataScript structuredData={termsPageBaseData} />
       <Heading tag="h1" variant="4xl">
         {title}
       </Heading>
 
-      <div className="prose">
+      <section className="prose mt-6">
         <Content />
-      </div>
-    </PageLayout>
+      </section>
+    </article>
   )
 }
