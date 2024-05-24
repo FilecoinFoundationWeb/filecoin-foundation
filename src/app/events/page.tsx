@@ -253,6 +253,7 @@ export default function Events({ searchParams }: Props) {
               alt={graphicsData.events2.alt}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
+              placeholder="blur"
             />
           </li>
           {getInvolvedData.map(({ title, description, cta }) => (
@@ -271,6 +272,7 @@ export default function Events({ searchParams }: Props) {
               alt={graphicsData.events3.alt}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
+              placeholder="blur"
             />
           </li>
         </CardGrid>
