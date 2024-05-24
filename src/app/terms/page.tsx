@@ -23,7 +23,10 @@ export default function Terms() {
     <PageLayout>
       <StructuredDataScript structuredData={termsPageBaseData} />
       <PageHeader title={header.title} description={header.description} />
-      <Content />
+
+      <div className="prose">
+        <Content />
+      </div>
     </PageLayout>
   )
 }

@@ -23,7 +23,10 @@ export default function PrivacyPolicy() {
     <PageLayout>
       <StructuredDataScript structuredData={policyPageBaseData} />
       <PageHeader title={header.title} description={header.description} />
-      <Content />
+
+      <div className="prose">
+        <Content />
+      </div>
     </PageLayout>
   )
 }
