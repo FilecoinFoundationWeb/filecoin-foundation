@@ -204,7 +204,7 @@ export default function Events({ searchParams }: Props) {
         title="Get in Touch With the Events Team"
       >
         <CardGrid cols="mdTwo">
-          <li className="col-span-1 col-start-1 row-span-2 row-start-1 h-96 md:h-auto">
+          <li className="row-span-2 h-96 md:h-auto">
             <Image
               src={graphicsData.events2.src}
               alt={graphicsData.events2.alt}
