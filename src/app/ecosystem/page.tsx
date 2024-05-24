@@ -1,5 +1,7 @@
 import dynamic from 'next/dynamic'
 
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
@@ -161,6 +163,7 @@ export default function Ecosystem({ searchParams }: Props) {
                           cta={{
                             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
                             text: 'Learn More',
+                            icon: BookOpen,
                           }}
                         />
                       )
