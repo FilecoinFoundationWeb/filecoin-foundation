@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
+  url: /assets/images/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
   alt: Supranational Logo
 twitter: "https://twitter.com/_Supranational"
 featured-content: >-

@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/65974a282128bbdde2005e43_fission.png
+  url: /assets/images/65974a282128bbdde2005e43_fission.png
   alt: Fission Logo
 website: https://fission.codes
 featured-content: null

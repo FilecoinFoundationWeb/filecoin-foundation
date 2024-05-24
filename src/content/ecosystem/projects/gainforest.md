@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/6598730db2c229176c8afc29_gainforest_logo_white.png
+  url: /assets/images/6598730db2c229176c8afc29_gainforest_logo_white.png
   alt: Gainforest Logo
 website: https://gainforest.earth
 featured-content: https://green.filecoin.io/web3-and-the-sustainable-data-movement/

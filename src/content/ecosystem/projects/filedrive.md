@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/659872fd67c584b3534c7331_filedrive_logo_white.png
+  url: /assets/images/659872fd67c584b3534c7331_filedrive_logo_white.png
   alt: FileDrive Logo
 website: "https://filedrive.io"
 featured-content: null

@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/65974d7eb7581c4ee8e5dcf7_swan-logo.png
+  url: /assets/images/65974d7eb7581c4ee8e5dcf7_swan-logo.png
   alt: Swan Logo
 website: "https://www.swanchain.io"
 featured-content: null

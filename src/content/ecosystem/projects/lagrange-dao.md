@@ -13,7 +13,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: # /assets/external/659873b32cdb61e3755fc1c7_langrange_dao_logo_white.png
+  url: /assets/images/659873b32cdb61e3755fc1c7_langrange_dao_logo_white.png
   alt: "Lagrange DAO Logo"
 website: "https://lagrangedao.org"
 featured-content: null

@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/659751688bb318bafb3d5892_seal2blogo2brgbd-1.png
+  url: /assets/images/659751688bb318bafb3d5892_seal2blogo2brgbd-1.png
   alt: Seal Storage Logo
 website: "https://www.sealstorage.io/"
 repo: null

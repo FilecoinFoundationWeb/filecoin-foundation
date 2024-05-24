@@ -13,7 +13,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: # /assets/external/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
+  url: /assets/images/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
   alt: "UC Berkeley Underground Physics Group Logo"
 website: "https://underground.physics.berkeley.edu/"
 repo: null
