@@ -122,6 +122,7 @@ export default function Ecosystem({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={ecosystemPageStructuredData} />
       <PageHeader
+        isFeatured
         title={featuredProject.title}
         description={featuredProject.description}
         image={{
