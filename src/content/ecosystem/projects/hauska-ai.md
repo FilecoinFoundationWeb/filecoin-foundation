@@ -1,33 +1,32 @@
 ---
 title: Hauska.ai
+slug: hauska-ai
 created-on: 2024-03-20T19:42:42.027Z
 updated-on: 2024-03-20T19:42:42.041Z
 published-on: 2024-03-20T19:42:42.053Z
-f_featured: false
-f_brand:
-  alt: Hauska   Design | Protect | Exchange
+featured: false
+description: "Leads in revolutionizing home design and remodeling with AI and Web3 tech"
+category: artificial-intelligence
+tags:
+  - ai-productivity-and-utilities
+tech:
+  - filecoin
+  - ipfs
+image:
   url: /assets/images/hauska_logo_white.png
-f_brand-image-alt-text: Hauska   Design | Protect | Exchange
-f_topic: cms/ecosystem-topics/artificial-intelligence.md
-f_tag:
-  - cms/ecosystem-tags/ai-productivity-and-utilities.md
-f_card-text-truncated: Leads in revolutionizing home design and remodeling with AI and Web3 tech
-f_website: https://www.hauska.ai/
-f_tech-3:
-  - cms/ecosystem-technology/filecoin.md
-  - cms/ecosystem-technology/ipfs.md
-f_year-2: 2023-12-27T20:42:42.062Z
-f_last-updated-2: 2024-03-20T19:42:42.075Z
-tags: ecosystem-projects
-layout: "[ecosystem-projects].html"
-date: 2024-03-20T19:42:42.082Z
-seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  alt: Hauska   Design | Protect | Exchange
+website: https://www.hauska.ai/
+featured-content: null
+repo: null
+twitter: null
+video-url: null
+year-joined: 2023-12-27T20:42:42.062Z
+news-update: null
+metadata: null
 ---
-Hauska leads in revolutionizing Home Design and Remodeling with AI and Web3 tech. Our platform offers specialized AI design tools, IP protection, decentralized storage, and a Web3 marketplace. Our innovative tools reduce manual sketching time, boosting client acquisition and aiding Design Professionals in closing deals efficiently.\
-\
+
+Hauska leads in revolutionizing Home Design and Remodeling with AI and Web3 tech. Our platform offers specialized AI design tools, IP protection, decentralized storage, and a Web3 marketplace. Our innovative tools reduce manual sketching time, boosting client acquisition and aiding Design Professionals in closing deals efficiently.
+
 Hauska stands at the forefront of innovation in the Home Design and Remodel industry, pioneering the integration of AI and Web3 technology into specialized applications. Our comprehensive platform is designed to address key challenges faced by professionals in this sector. By offering industry-specific AI design tools, intellectual property protection, decentralized file storage, and a streamlined marketplace, we empower architects, designers, and contractors to enhance their efficiency and competitiveness.
 
 One pressing issue we tackle is the staggering amount of unpaid hours lost annually during the house plan rendering and client acquisition process. This loss not only impacts profitability but also hinders growth opportunities for professionals in the field. To combat this, our DesignPro product enables the creation of exterior and interior photorealistic visualizations in seconds, significantly reducing manual labor and time investment.

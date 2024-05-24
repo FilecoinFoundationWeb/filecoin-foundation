@@ -1,26 +1,28 @@
 ---
-f_social-media: https://twitter.com/Hamsternetio
-f_website: https://hamsternet.io/
-f_featured: false
-f_brand-image-alt-text: Hamster
 title: Hamster
-f_card-text-truncated: Developer Toolkit and Middleware for Filecoin
-f_what-s-new: ''
-f_brand:
-  url: /assets/external/660732932560f8884ec24d4c_hamster.png
-  alt: null
 slug: hamster
-f_tech-3:
-  - cms/ecosystem-technology/filecoin.md
-updated-on: '2024-03-29T21:43:26.916Z'
-created-on: '2024-03-29T21:28:51.960Z'
-published-on: '2024-03-29T21:43:26.916Z'
-f_tag:
-  - cms/ecosystem-tags/ai-productivity-and-utilities.md
-  - cms/ecosystem-tags/developer-tools.md
-f_topic: cms/ecosystem-topics/tooling-productivity.md
-layout: '[ecosystem-projects].html'
-tags: ecosystem-projects
+created-on: 2024-03-29T21:28:51.960Z
+updated-on: 2024-03-29T21:43:26.916Z
+published-on: 2024-03-29T21:43:26.916Z
+featured: false
+description: "Developer Toolkit and Middleware for Filecoin"
+category: tooling-productivity
+tags:
+  - ai-productivity-and-utilities
+  - developer-tools
+tech:
+  - filecoin
+image:
+  url: /assets/images/660732932560f8884ec24d4c_hamster.png
+  alt: Hamster
+website: https://hamsternet.io/
+featured-content: null
+repo: null
+twitter: https://twitter.com/Hamsternetio
+video-url: null
+year-joined: 2024-03-29T21:28:51.960Z
+news-update: null
+metadata: null
 ---
 
 Filecoin is an integral part of the data storage layer.

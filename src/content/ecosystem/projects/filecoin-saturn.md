@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: # /assets/external/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
+  url: /assets/images/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
   alt: Filecoin Saturn Logo
 website: https://saturn.tech
 featured-content: null

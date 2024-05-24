@@ -13,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: # /assets/external/6597243713b6cbe85dad7ea4_tkwzgqypzrhnrp1i_jixqqpgoeqydofsk6p7muppqji.png
+  url: /assets/images/6597243713b6cbe85dad7ea4_tkwzgqypzrhnrp1i_jixqqpgoeqydofsk6p7muppqji.png
   alt: WeatherXM Logo
 website: "https://weatherxm.com/"
 featured-content: null
