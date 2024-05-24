@@ -1,13 +1,16 @@
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getPrivacyData } from '@/utils/getPrivacyData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
-import { attributes, react as Content } from '@/content/pages/privacy-policy.md'
+import { attributes } from '@/content/pages/privacy-policy.md'
 
 const { header, seo } = attributes
+
 import { PATHS } from '@/constants/paths'
 
 export const metadata = createMetadata(seo, PATHS.PRIVACY_POLICY.path)
@@ -19,19 +22,13 @@ const policyPageBaseData = generateWebPageStructuredData({
 })
 
 export default function PrivacyPolicy() {
+  const { content } = getPrivacyData()
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={policyPageBaseData} />
-      <PageHeader
-        title={header.title}
-        description={header.description}
-        cta={{
-          href: '#',
-          text: 'Learn More',
-        }}
-      />
-
-      <Content />
+      <PageHeader title={header.title} />
+      {content && <MarkdownContent>{content}</MarkdownContent>}
     </PageLayout>
   )
 }

@@ -1,11 +1,13 @@
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getTermsData } from '@/utils/getTermsData'
 import { generateWebPageStructuredData } from '@/utils/structuredData'
 
-import { attributes, react as Content } from '@/content/pages/terms.md'
+import { attributes } from '@/content/pages/terms.md'
 
 const { header, seo } = attributes
 import { PATHS } from '@/constants/paths'
@@ -19,19 +21,13 @@ const termsPageBaseData = generateWebPageStructuredData({
 })
 
 export default function Terms() {
+  const { content } = getTermsData()
   return (
     <PageLayout>
       <StructuredDataScript structuredData={termsPageBaseData} />
-      <PageHeader
-        title={header.title}
-        description={header.description}
-        cta={{
-          href: '#',
-          text: 'Learn More',
-        }}
-      />
+      <PageHeader title={header.title} />
 
-      <Content />
+      {content && <MarkdownContent>{content}</MarkdownContent>}
     </PageLayout>
   )
 }

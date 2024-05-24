@@ -22,7 +22,7 @@ export interface PathConfig {
 }
 
 export const CONTENT_ROOT = 'src/content'
-const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
+export const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
 interface PathObjectParams {
   path: PathValues

@@ -1,9 +1,9 @@
 ---
 header:
-  title: "Terms"
+  title: "Terms of Use"
   description: "Terms of Use"
 seo:
-  title: "Terms"
+  title: "Terms of Use"
   description: "Terms of Use"
 ---
 
