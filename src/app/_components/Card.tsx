@@ -11,7 +11,7 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
-export type CardProps = {
+type CardProps = {
   title: string | React.ReactNode
   tag?: string
   metaData?: MetaDataType
@@ -90,7 +90,7 @@ export function Card({
         )}
 
         {title && typeof title === 'string' ? (
-          <Heading tag="h3" variant="lg" className="line-clamp-2 text-ellipsis">
+          <Heading isClamped tag="h3" variant="lg">
             {title}
           </Heading>
         ) : (

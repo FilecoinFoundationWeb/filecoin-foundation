@@ -31,9 +31,9 @@ export function PageSection({
   children,
 }: PageSectionProps) {
   return (
-    <section className="grid grid-rows-[auto,auto] space-y-4">
+    <section className="grid grid-rows-[auto,auto]">
       <SectionDivider title={kicker} />
-      <div className={clsx('mb-6', containerClasses(!!image))}>
+      <div className={clsx('mb-6 mt-4', containerClasses(!!image))}>
         <div className="space-y-4">
           <Heading tag="h2" variant="3xl">
             {title}

@@ -24,7 +24,7 @@ export function Search({ query }: SearchProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
 
-  const updateSearchParams = useUpdateSearchParams()
+  const { updateSearchParams } = useUpdateSearchParams()
 
   const debouncedUpdateSearchParams = useDebounceCallback(
     updateSearchParams,

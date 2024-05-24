@@ -3,29 +3,28 @@ import dynamic from 'next/dynamic'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
 
+import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
+import { Category } from '@/components/Category'
+import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-const NoSSRPagination = dynamic(
-  () => import('@/components/Pagination').then((module) => module.Pagination),
-  { ssr: false },
-)
-
 import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -39,12 +38,21 @@ import { attributes } from '@/content/pages/blog.md'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-const { featured_post: featuredPostSlug, seo } = attributes
+const NoSSRPagination = dynamic(
+  () => import('@/components/Pagination').then((module) => module.Pagination),
+  { ssr: false },
+)
 
-export const metadata = createMetadata(seo, PATHS.BLOG.path)
+type Props = {
+  searchParams: NextServerSearchParams
+}
 
 const posts = getBlogPostsData()
+const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
+const { featured_post: featuredPostSlug, seo } = attributes
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
+
+export const metadata = createMetadata(seo, PATHS.BLOG.path)
 
 const blogPageBaseData = generateWebPageStructuredData({
   title: seo.title,
@@ -71,31 +79,9 @@ const blogPageStructuredData: WithContext<WebPage> = {
   },
 }
 
-function getMetaDataContent(post: BlogPostData) {
-  if (!post.publishedOn) {
-    return []
-  }
-
-  const { fields } = getCollectionConfig('blog')
-  const categoryOptions = getCMSFieldOptions(fields, 'category')
-  const categoryLabel = categoryOptions.find(
-    (option) => option.value === post.category,
-  )?.label
-
-  const metaDataContent = [formatDate(post.publishedOn)]
-
-  if (categoryLabel) {
-    metaDataContent.push(categoryLabel)
-  }
-
-  return metaDataContent
+function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
+  return publishedOn ? [formatDate(publishedOn)] : []
 }
-
-type Props = {
-  searchParams: NextServerSearchParams
-}
-
-const POSTS_PER_PAGE = 20
 
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
@@ -115,10 +101,16 @@ export default function Blog({ searchParams }: Props) {
     sortByDefault: 'newest',
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
-    entriesPerPage: POSTS_PER_PAGE,
+    categorizeBy: 'category',
+    validCategoryOptions: validCategoryOptions,
+  })
+
+  const { currentPage, pageCount, paginatedResults } = usePagination({
+    searchParams,
+    entries: categorizedResults,
   })
 
   return (
@@ -128,8 +120,8 @@ export default function Blog({ searchParams }: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getMetaDataContent(featuredPost)}
         image={featuredPost.image}
+        metaData={getMetaData(featuredPost.publishedOn)}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',
@@ -141,53 +133,80 @@ export default function Blog({ searchParams }: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <div className="flex justify-end gap-3">
-          <Search query={searchQuery} />
-          <Sort query={sortQuery} />
-        </div>
-
-        {sortedResults.length === 0 ? (
-          <NoResultsMessage />
-        ) : (
-          <>
-            <CardGrid cols="smTwo">
-              {paginatedResults.map((post) => {
-                const {
-                  slug,
-                  category,
-                  title,
-                  description,
-                  image,
-                  publishedOn,
-                } = post
-
-                return (
-                  <Card
-                    key={slug}
-                    tag={category}
-                    title={title}
-                    description={description}
-                    image={{ url: image?.url, alt: image?.alt }}
-                    textIsClamped={true}
-                    metaData={publishedOn ? [formatDate(publishedOn)] : []}
-                    cta={{
-                      href: `${PATHS.BLOG.path}/${slug}`,
-                      text: 'Read Post',
-                      icon: BookOpen,
-                    }}
-                  />
-                )
-              })}
-            </CardGrid>
-
-            <div className="mx-auto mt-1 w-full sm:mt-6 sm:w-auto">
-              <NoSSRPagination
-                pageCount={pageCount}
-                currentPage={currentPage}
+        <FilterContainer>
+          <FilterContainer.ResultsAndCategory
+            results={<ResultsAndReset results={categorizedResults.length} />}
+            category={
+              <Category
+                query={categoryQuery}
+                settings={categorySettings}
+                counts={categoryCounts}
               />
-            </div>
-          </>
-        )}
+            }
+          />
+          <FilterContainer.MainWrapper>
+            <FilterContainer.DesktopFilters
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+            />
+
+            <FilterContainer.MobileFiltersAndResults
+              search={<Search query={searchQuery} />}
+              sort={<Sort query={sortQuery} />}
+              results={<ResultsAndReset results={categorizedResults.length} />}
+              category={
+                <Category
+                  query={categoryQuery}
+                  settings={categorySettings}
+                  counts={categoryCounts}
+                />
+              }
+            />
+            <FilterContainer.ContentWrapper>
+              {categorizedResults.length === 0 ? (
+                <NoResultsMessage />
+              ) : (
+                <>
+                  <CardGrid cols="smTwo">
+                    {paginatedResults.map((post) => {
+                      const {
+                        slug,
+                        category,
+                        title,
+                        description,
+                        image,
+                        publishedOn,
+                      } = post
+
+                      return (
+                        <Card
+                          key={slug}
+                          tag={category}
+                          title={title}
+                          description={description}
+                          image={image}
+                          textIsClamped={true}
+                          metaData={getMetaData(publishedOn)}
+                          cta={{
+                            href: `${PATHS.BLOG.path}/${slug}`,
+                            text: 'Read Post',
+                            icon: BookOpen,
+                          }}
+                        />
+                      )
+                    })}
+                  </CardGrid>
+                  <FilterContainer.PaginationWrapper>
+                    <NoSSRPagination
+                      pageCount={pageCount}
+                      currentPage={currentPage}
+                    />
+                  </FilterContainer.PaginationWrapper>
+                </>
+              )}
+            </FilterContainer.ContentWrapper>
+          </FilterContainer.MainWrapper>
+        </FilterContainer>
       </PageSection>
     </PageLayout>
   )

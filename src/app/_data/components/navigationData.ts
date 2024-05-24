@@ -45,5 +45,3 @@ export const desktopNavigationItems = {
     href: FILECOIN_DOCS_URLS.site,
   },
 }
-
-export default desktopNavigationItems

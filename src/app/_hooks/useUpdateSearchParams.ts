@@ -4,7 +4,7 @@ import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
 import { Route } from 'next'
 
-import { buildSearchParams } from '@/utils/buildSearchParams'
+import { type ParamsObject, buildSearchParams } from '@/utils/buildSearchParams'
 
 export function useUpdateSearchParams() {
   const router = useRouter()
@@ -12,7 +12,7 @@ export function useUpdateSearchParams() {
   const params = useSearchParams()
 
   const updateSearchParams = useCallback(
-    (updatedParams: Record<string, any>) => {
+    (updatedParams: ParamsObject) => {
       const newParams = buildSearchParams(updatedParams, params)
       const newRoute = `${pathname}?${newParams}` as Route
 
@@ -21,5 +21,9 @@ export function useUpdateSearchParams() {
     [router, pathname, params],
   )
 
-  return updateSearchParams
+  const resetSearchParams = useCallback(() => {
+    router.push(pathname as Route, { scroll: false })
+  }, [router, pathname])
+
+  return { updateSearchParams, resetSearchParams }
 }
