@@ -2,7 +2,7 @@
 
 import { Fragment, useState, Dispatch, SetStateAction } from 'react'
 
-import Link from 'next/link'
+import NextLink from 'next/link'
 
 import { List, X } from '@phosphor-icons/react'
 import clsx from 'clsx'
@@ -19,23 +19,23 @@ import { PATHS } from '@/constants/paths'
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
 const communityItems = [PATHS.ECOSYSTEM, PATHS.GOVERNANCE]
 
-type MobileLinkProps = {
+type LinkProps = {
   label: string
   path: Route
   nested?: boolean
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 
-function MobileLink({ label, path, nested, setOpen }: MobileLinkProps) {
+function Link({ label, path, nested, setOpen }: LinkProps) {
   return (
     <li>
-      <Link
+      <NextLink
         href={path}
         className={clsx(linkBaseStyles, nested && 'ml-6')}
         onClick={() => setOpen(false)}
       >
         {label}
-      </Link>
+      </NextLink>
     </li>
   )
 }
@@ -74,14 +74,14 @@ export function MobileNavigation() {
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
-            <Link
+            <NextLink
               className="flex-shrink-0 outline-white focus:outline-2"
               href={PATHS.HOME.path}
               aria-label="Go to homepage"
               onClick={() => setOpen(false)}
             >
               <Logo />
-            </Link>
+            </NextLink>
 
             <IconButton
               icon={X}
@@ -91,7 +91,7 @@ export function MobileNavigation() {
           </div>
 
           <ul className="space-y-6" aria-label="Navigation options">
-            <MobileLink
+            <Link
               label={PATHS.ABOUT.label}
               path={PATHS.ABOUT.path}
               setOpen={setOpen}
@@ -101,7 +101,7 @@ export function MobileNavigation() {
               <span className="mb-4 block">Get Involved</span>
               <ul className="space-y-6 border-l">
                 {getInvolvedItems.map((item) => (
-                  <MobileLink
+                  <Link
                     key={item.path}
                     nested
                     label={item.label}
@@ -116,7 +116,7 @@ export function MobileNavigation() {
               <span className="mb-4 block">Community</span>
               <ul className="space-y-4 border-l">
                 {communityItems.map((item) => (
-                  <MobileLink
+                  <Link
                     key={item.path}
                     nested
                     label={item.label}
@@ -127,7 +127,7 @@ export function MobileNavigation() {
               </ul>
             </li>
 
-            <MobileLink
+            <Link
               label={PATHS.BLOG.label}
               path={PATHS.BLOG.path}
               setOpen={setOpen}
