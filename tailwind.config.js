@@ -56,6 +56,7 @@ module.exports = {
 
             iframe: {
               width: '100%',
+              borderWidth: '0',
             },
 
             'iframe[src*="youtube.com"]': {
@@ -64,10 +65,23 @@ module.exports = {
               aspectRatio: '16/9',
             },
 
+            figure: {
+              textAlign: 'center',
+            },
+
             figcaption: {
+              lineBreak: 'anywhere',
+              wordBreak: 'normal',
+              overflow: 'hidden',
+              whiteSpace: 'nowrap',
+              textOverflow: 'ellipsis',
+              textAlign: 'left',
+              fontFamily:
+                'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;',
+              fontSize: '10px',
+              fontWeight: '100',
               a: {
                 color: '#cccccc',
-                textDecoration: 'none',
               },
             },
           },
