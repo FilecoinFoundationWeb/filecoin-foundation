@@ -1,6 +1,6 @@
 'use client'
 
-import { Fragment, useState, Dispatch, SetStateAction } from 'react'
+import { useState, Dispatch, SetStateAction } from 'react'
 
 import Link from 'next/link'
 
@@ -95,7 +95,7 @@ export function MobileNavigation() {
   const [open, setOpen] = useState(false)
 
   return (
-    <Fragment>
+    <div className="lg:hidden">
       <IconButton
         icon={List}
         label="Open mobile navigation"
@@ -149,6 +149,6 @@ export function MobileNavigation() {
           <Social />
         </div>
       </SlideOver>
-    </Fragment>
+    </div>
   )
 }
