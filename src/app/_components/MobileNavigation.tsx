@@ -29,12 +29,10 @@ function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
   return (
     <button
       aria-label={label}
-      className={clsx(
-        'flex size-12 items-center justify-center rounded-lg border border-brand-300 focus:outline-2 focus:outline-brand-100 lg:hidden',
-      )}
+      className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:outline-2 focus:outline-brand-100"
       onClick={onClick}
     >
-      <Icon component={IconComponent} color="brand-300" />
+      <Icon component={IconComponent} />
     </button>
   )
 }
