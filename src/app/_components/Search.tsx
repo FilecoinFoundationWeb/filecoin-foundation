@@ -28,7 +28,7 @@ export function Search({ query }: SearchProps) {
     const searchIsReset = !query
 
     if (searchIsReset) {
-      setValue(query)
+      setValue('')
     }
   }, [query])
 
