@@ -51,7 +51,7 @@ function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
         href={path}
         className={clsx(
           linkBaseStyles,
-          "relative before:absolute before:inset-0 before:-m-2 before:content-[''] after:absolute after:inset-0 after:-m-2 after:content-['']",
+          "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
         )}
         onClick={() => setOpen(false)}
       >
