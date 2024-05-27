@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { useSearchParams } from 'next/navigation'
 
@@ -23,6 +23,14 @@ const DEBOUNCE_DELAY = 400
 export function Search({ query }: SearchProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
+
+  useEffect(() => {
+    const searchIsReset = !query
+
+    if (searchIsReset) {
+      setValue(query)
+    }
+  }, [query])
 
   const { updateSearchParams } = useUpdateSearchParams()
 
