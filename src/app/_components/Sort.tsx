@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { useSort } from '@/hooks/useSort'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
@@ -23,10 +23,6 @@ export function Sort({ query }: SortProps) {
     setSortOption(newValue)
     updateSearchParams({ [SORT_KEY]: newValue })
   }
-
-  useEffect(() => {
-    updateSearchParams({ [SORT_KEY]: query })
-  }, [query, updateSearchParams])
 
   return (
     <SortListbox
