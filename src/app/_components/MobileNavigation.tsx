@@ -19,27 +19,6 @@ import { PATHS } from '@/constants/paths'
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
 const communityItems = [PATHS.ECOSYSTEM, PATHS.GOVERNANCE]
 
-type LinkProps = {
-  label: string
-  path: Route
-  nested?: boolean
-  setOpen: Dispatch<SetStateAction<boolean>>
-}
-
-function Link({ label, path, nested, setOpen }: LinkProps) {
-  return (
-    <li>
-      <NextLink
-        href={path}
-        className={clsx(linkBaseStyles, nested && 'ml-6')}
-        onClick={() => setOpen(false)}
-      >
-        {label}
-      </NextLink>
-    </li>
-  )
-}
-
 type IconButtonProps = {
   icon: IconProps['component']
   label: string
@@ -57,6 +36,57 @@ function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
     >
       <Icon component={IconComponent} color="brand-300" />
     </button>
+  )
+}
+
+type LinkItemProps = {
+  label: string
+  path: Route
+  nested?: boolean
+  setOpen: Dispatch<SetStateAction<boolean>>
+}
+
+function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
+  return (
+    <li>
+      <NextLink
+        href={path}
+        className={clsx(linkBaseStyles, nested && 'ml-6')}
+        onClick={() => setOpen(false)}
+      >
+        {label}
+      </NextLink>
+    </li>
+  )
+}
+
+type NestedMenuItemProps = {
+  path: LinkItemProps['path']
+  label: LinkItemProps['label']
+}
+
+type NestedMenuProps = {
+  title: string
+  items: NestedMenuItemProps[]
+  setOpen: Dispatch<SetStateAction<boolean>>
+}
+
+function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
+  return (
+    <li className="text-brand-200">
+      <span className="mb-4 block">{title}</span>
+      <ul className="space-y-6 border-l">
+        {items.map((item) => (
+          <LinkItem
+            key={item.path}
+            nested
+            label={item.label}
+            path={item.path}
+            setOpen={setOpen}
+          />
+        ))}
+      </ul>
+    </li>
   )
 }
 
@@ -91,43 +121,24 @@ export function MobileNavigation() {
           </div>
 
           <ul className="space-y-6" aria-label="Navigation options">
-            <Link
+            <LinkItem
               label={PATHS.ABOUT.label}
               path={PATHS.ABOUT.path}
               setOpen={setOpen}
             />
 
-            <li className="text-brand-200">
-              <span className="mb-4 block">Get Involved</span>
-              <ul className="space-y-6 border-l">
-                {getInvolvedItems.map((item) => (
-                  <Link
-                    key={item.path}
-                    nested
-                    label={item.label}
-                    path={item.path}
-                    setOpen={setOpen}
-                  />
-                ))}
-              </ul>
-            </li>
+            <NestedMenu
+              title="Get Involved"
+              items={getInvolvedItems}
+              setOpen={setOpen}
+            />
+            <NestedMenu
+              title="Community"
+              items={communityItems}
+              setOpen={setOpen}
+            />
 
-            <li className="text-brand-200">
-              <span className="mb-4 block">Community</span>
-              <ul className="space-y-4 border-l">
-                {communityItems.map((item) => (
-                  <Link
-                    key={item.path}
-                    nested
-                    label={item.label}
-                    path={item.path}
-                    setOpen={setOpen}
-                  />
-                ))}
-              </ul>
-            </li>
-
-            <Link
+            <LinkItem
               label={PATHS.BLOG.label}
               path={PATHS.BLOG.path}
               setOpen={setOpen}
