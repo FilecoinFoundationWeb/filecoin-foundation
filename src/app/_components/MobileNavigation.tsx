@@ -74,8 +74,8 @@ type NestedMenuProps = {
 
 function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
   return (
-    <li className="text-brand-200">
-      <span className="mb-4 block">{title}</span>
+    <li>
+      <span className="mb-4 block text-brand-200">{title}</span>
       <ul className="space-y-6 border-l">
         {items.map((item) => (
           <LinkItem
