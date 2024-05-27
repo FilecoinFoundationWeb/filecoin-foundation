@@ -16,7 +16,7 @@ tech:
   - ipfs
 image:
   url: null
-  alt: null
+  alt: Catalyst Logo
 website: https://the-freaking-catalyst.vercel.app
 featured-content: null
 repo: null
