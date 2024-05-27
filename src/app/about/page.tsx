@@ -1,10 +1,11 @@
-import { Files, LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import { Files } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import { WebPage, WithContext } from 'schema-dts'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
+import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -22,8 +23,8 @@ import {
 } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
-import { advisorsData } from './data/advisorsData'
-import { boardMembersData } from './data/boardMembersData'
+import { advisorsData } from './data/advisors'
+import { boardMembersData } from './data/boardMembers'
 import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 
@@ -90,18 +91,8 @@ export default function About() {
 
       <PageSection kicker="Who We Are" title="Board Members">
         <CardGrid cols="mdTwo">
-          {boardMembersData.map(({ name, title, linkedin }) => (
-            <Card
-              key={name}
-              title={name}
-              description={title}
-              cta={{
-                href: linkedin,
-                text: 'LinkedIn',
-                icon: LinkedinLogo,
-                ariaLabel: `Visit ${name}'s LinkedIn profile.`,
-              }}
-            />
+          {boardMembersData.map((boardMember, i) => (
+            <KeyMemberCard key={i} {...boardMember} />
           ))}
         </CardGrid>
       </PageSection>
@@ -112,18 +103,8 @@ export default function About() {
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
         <CardGrid cols="mdTwo">
-          {advisorsData.map(({ name, title, linkedin }) => (
-            <Card
-              key={name}
-              title={name}
-              description={title}
-              cta={{
-                href: linkedin,
-                text: 'LinkedIn',
-                icon: LinkedinLogo,
-                ariaLabel: `Visit ${name}'s LinkedIn profile`,
-              }}
-            />
+          {advisorsData.map((advisor, i) => (
+            <KeyMemberCard key={i} {...advisor} />
           ))}
         </CardGrid>
       </PageSection>
