@@ -48,10 +48,13 @@ type LinkItemProps = {
 
 function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
   return (
-    <li>
+    <li className={clsx(nested && 'ml-6')}>
       <NextLink
         href={path}
-        className={clsx(linkBaseStyles, nested && 'ml-6')}
+        className={clsx(
+          linkBaseStyles,
+          "relative before:absolute before:inset-0 before:-m-2 before:content-[''] after:absolute after:inset-0 after:-m-2 after:content-['']",
+        )}
         onClick={() => setOpen(false)}
       >
         {label}
