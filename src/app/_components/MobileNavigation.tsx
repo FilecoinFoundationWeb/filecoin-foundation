@@ -2,7 +2,7 @@
 
 import { Fragment, useState, Dispatch, SetStateAction } from 'react'
 
-import NextLink from 'next/link'
+import Link from 'next/link'
 
 import { List, X } from '@phosphor-icons/react'
 import clsx from 'clsx'
@@ -49,7 +49,7 @@ type LinkItemProps = {
 function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
   return (
     <li className={clsx(nested && 'ml-6')}>
-      <NextLink
+      <Link
         href={path}
         className={clsx(
           linkBaseStyles,
@@ -58,7 +58,7 @@ function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
         onClick={() => setOpen(false)}
       >
         {label}
-      </NextLink>
+      </Link>
     </li>
   )
 }
@@ -107,14 +107,14 @@ export function MobileNavigation() {
       <SlideOver open={open} setOpen={setOpen}>
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
-            <NextLink
+            <Link
               className="flex-shrink-0 outline-white focus:outline-2"
               href={PATHS.HOME.path}
               aria-label="Go to homepage"
               onClick={() => setOpen(false)}
             >
               <Logo />
-            </NextLink>
+            </Link>
 
             <IconButton
               icon={X}
