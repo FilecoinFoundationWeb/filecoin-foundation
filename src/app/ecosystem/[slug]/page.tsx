@@ -83,7 +83,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     repo,
     twitter,
     featuredContent,
-    tags,
     updatedOn,
     newsUpdate,
   } = data

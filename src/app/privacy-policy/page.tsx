@@ -1,5 +1,4 @@
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -19,11 +18,15 @@ const policyPageBaseData = generateWebPageStructuredData({
 })
 
 export default function PrivacyPolicy() {
+  const { title } = header
+
   return (
-    <PageLayout>
+    <article>
       <StructuredDataScript structuredData={policyPageBaseData} />
-      <PageHeader title={header.title} description={header.description} />
-      <Content />
-    </PageLayout>
+      <PageHeader.Title>{title}</PageHeader.Title>
+      <section className="prose mt-6">
+        <Content />
+      </section>
+    </article>
   )
 }
