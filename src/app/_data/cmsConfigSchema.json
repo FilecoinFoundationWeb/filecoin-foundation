@@ -446,8 +446,7 @@
               ],
               "display_fields": [
                 "title"
-              ],
-              "required": true
+              ]
             },
             {
               "name": "seo",
@@ -861,8 +860,7 @@
               ],
               "display_fields": [
                 "title"
-              ],
-              "required": true
+              ]
             },
             {
               "name": "seo",
@@ -1157,8 +1155,7 @@
         {
           "name": "title",
           "label": "Title",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "created-on",
@@ -1211,20 +1208,17 @@
         {
           "name": "description",
           "label": "Description",
-          "widget": "text",
-          "required": true
+          "widget": "text"
         },
         {
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": true,
           "fields": [
             {
               "name": "url",
               "label": "URL",
               "widget": "image",
-              "required": true,
               "allow_multiple": false
             },
             {
@@ -1409,8 +1403,7 @@
         {
           "name": "title",
           "label": "Company Name",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "created-on",
@@ -1433,20 +1426,17 @@
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": true,
           "fields": [
             {
               "name": "url",
               "label": "URL",
               "widget": "image",
-              "required": true,
               "allow_multiple": false
             },
             {
               "name": "alt",
               "label": "Alt Text",
-              "widget": "string",
-              "required": true
+              "widget": "string"
             }
           ]
         },
@@ -1454,7 +1444,6 @@
           "name": "category",
           "label": "Category",
           "widget": "relation",
-          "required": true,
           "collection": "ecosystem_projects_categories",
           "value_field": "slug",
           "search_fields": [
@@ -1468,7 +1457,6 @@
           "name": "subcategories",
           "label": "Subcategories",
           "widget": "relation",
-          "required": true,
           "collection": "ecosystem_projects_subcategories",
           "value_field": "slug",
           "search_fields": [
@@ -1668,8 +1656,7 @@
         {
           "name": "website",
           "label": "Website",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "repo",
@@ -1681,7 +1668,6 @@
           "name": "tech",
           "label": "Technologies Used",
           "widget": "select",
-          "required": true,
           "multiple": true,
           "options": [
             "filecoin",
@@ -1809,8 +1795,7 @@
         {
           "name": "title",
           "label": "Title",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "created-on",
@@ -1836,6 +1821,11 @@
           "required": false
         },
         {
+          "name": "location",
+          "label": "Description",
+          "widget": "string"
+        },
+        {
           "name": "external-link",
           "label": "External Link",
           "widget": "object",
@@ -1844,14 +1834,12 @@
             {
               "name": "href",
               "label": "Href",
-              "widget": "string",
-              "required": true
+              "widget": "string"
             },
             {
               "name": "text",
               "label": "Text",
-              "widget": "string",
-              "required": true
+              "widget": "string"
             }
           ]
         },
@@ -1859,7 +1847,6 @@
           "name": "start-date",
           "label": "Start Date",
           "widget": "datetime",
-          "required": true,
           "hint": "First day of event"
         },
         {
@@ -1872,8 +1859,7 @@
         {
           "name": "location",
           "label": "Location",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "image",
@@ -1884,14 +1870,12 @@
             {
               "name": "url",
               "label": "Image",
-              "widget": "image",
-              "required": true
+              "widget": "image"
             },
             {
               "name": "alt",
               "label": "Alt Text",
-              "widget": "string",
-              "required": true
+              "widget": "string"
             }
           ]
         },

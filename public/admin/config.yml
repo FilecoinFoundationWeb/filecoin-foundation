@@ -509,7 +509,7 @@ collections:
         widget: "string"
         required: false
       - name: "location"
-        label: "Description"
+        label: "Location"
         widget: "string"
       - name: "external-link"
         label: "External Link"
