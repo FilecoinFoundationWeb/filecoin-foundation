@@ -2,13 +2,25 @@ import { Metadata } from 'next'
 
 import { PathValues, DynamicPathValues } from '@/constants/paths'
 
-export function createMetadata(
-  seo: Metadata,
+interface CreateMetadataProps {
+  seo?: Partial<Metadata>
+  title?: string
+  description?: string | string[]
   path: PathValues | DynamicPathValues
-): Metadata {
+}
+
+export function createMetadata({
+  seo = {},
+  title,
+  description,
+  path,
+}: CreateMetadataProps): Metadata {
+  const metaTitle = seo.title || title
+  const metaDescription = seo.description || description?.toString()
+
   return {
-    title: seo.title,
-    description: seo.description,
+    title: metaTitle,
+    description: metaDescription,
     alternates: {
       canonical: path,
     },

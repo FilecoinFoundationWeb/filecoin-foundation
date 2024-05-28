@@ -1,4 +1,4 @@
-import { BlogPostData } from '@/types/blogPostTypes'
+import { type BlogPostData } from '@/types/blogPostTypes'
 
 export function mapMarkdownToBlogPostData({
   data,
@@ -21,6 +21,6 @@ export function mapMarkdownToBlogPostData({
     },
     content,
     recommendedPosts: data.recommendedPosts || [],
-    metadata: data.metadata,
+    seo: data.seo,
   }
 }

@@ -1,4 +1,5 @@
-import { type Metadata } from '@/types/metadataTypes'
+import { type Metadata } from 'next'
+
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type EcosystemProjectData = {
@@ -21,5 +22,5 @@ export type EcosystemProjectData = {
   videoUrl?: string
   yearJoined?: string
   newsUpdate?: string
-  metadata?: Metadata
+  seo: Metadata
 }
