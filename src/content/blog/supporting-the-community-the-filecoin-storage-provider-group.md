@@ -1,17 +1,23 @@
 ---
 title: "Supporting the Community: The Filecoin Storage Provider Group"
 slug: supporting-the-community-the-filecoin-storage-provider-group
-created-on: 2023-04-21T07:32:01.414Z
-updated-on: 2023-04-21T07:32:01.414Z
-published-on: 2023-04-21T07:33:56.200Z
-description: "Since its founding, the Filecoin Foundation has been committed
-  to providing resources, community support, and guidance to everyone involved
-  in building the Filecoin and Web3 ecosystems. "
+created-on: 2023-04-21T07:32:01.414000Z
+updated-on: 2023-04-21T07:32:01.414000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "Since its founding, the Filecoin Foundation has been committed to providing
+  resources, community support, and guidance to everyone involved in building the
+  Filecoin and Web3 ecosystems. "
 image:
   url: /assets/images/image-c-04.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Supporting the Community: The Filecoin Storage Provider Group"
+  description:
+    Discover how the Filecoin Storage Provider Group supports the community.
+    Learn about their initiatives.
 ---
 
 **What is the Filecoin Storage Provider Working group?**

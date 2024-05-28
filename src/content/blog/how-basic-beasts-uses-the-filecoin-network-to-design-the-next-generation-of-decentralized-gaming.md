@@ -1,23 +1,29 @@
 ---
-title: How Basic Beasts uses the Filecoin Network To Design the Next Generation
-  of Decentralized Gaming
+title:
+  How Basic Beasts uses the Filecoin Network To Design the Next Generation of
+  Decentralized Gaming
 slug: how-basic-beasts-uses-the-filecoin-network-to-design-the-next-generation-of-decentralized-gaming
-created-on: 2023-07-31T15:58:02.267Z
-updated-on: 2023-07-31T15:58:02.277Z
-published-on: 2023-07-31T15:58:02.285Z
-description: Created by 10-year-old gamer beastkid21 and his brother, bz, who
-  took their inspiration from the popularity of beloved classics like Pokémon
-  and Tamagotchi, Basic Beasts aims to bring fun back to gaming while enabling
-  players to profit from their participation. When players take ownership of a
-  beast and join the community, they have a say in the future direction of the
-  game. With a community of more than 4,500 Discord members, 3,000 Twitter
-  followers, and 700 NFT holders, plus collaborations with Flowverse, Emerald
-  City, and Flow, Basic Beasts is made by gamers for gamers.
+created-on: 2023-07-31T15:58:02.267000Z
+updated-on: 2023-07-31T15:58:02.277000Z
+published-on: 2023-07-31T15:58:02.285000Z
+description:
+  Created by 10-year-old gamer beastkid21 and his brother, bz, who took
+  their inspiration from the popularity of beloved classics like Pokémon and Tamagotchi,
+  Basic Beasts aims to bring fun back to gaming while enabling players to profit from
+  their participation. When players take ownership of a beast and join the community,
+  they have a say in the future direction of the game. With a community of more than
+  4,500 Discord members, 3,000 Twitter followers, and 700 NFT holders, plus collaborations
+  with Flowverse, Emerald City, and Flow, Basic Beasts is made by gamers for gamers.
 image:
   url: /assets/images/0517-dgs-_.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: How Basic Beasts Uses Filecoin for Decentralized Gaming
+  description:
+    Learn how Basic Beasts leverages the Filecoin network to design the
+    next generation of decentralized gaming.
 ---
 
 Basic Beasts and the Filecoin Network: Designing the Next Generation of P2E Gaming

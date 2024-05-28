@@ -1,20 +1,26 @@
 ---
 title: "DWeb on the Rise: The Many Uses for Decentralized Storage"
 slug: dweb-on-the-rise-the-many-uses-for-decentralized-storage
-created-on: 2023-05-15T11:00:00.000Z
-updated-on: 2023-05-15T11:00:00.000Z
-published-on: 2023-05-15T11:00:00.000Z
-description: "Organizations look to the decentralized web (dweb) for data
-  storage because decentralization maximizes resiliency yet allows for choice.
-  The early internet operated on a much more decentralized plane than today:
-  Users could dial into an ISP of their choice, and switch as easily as changing
-  a phone number. Websites could be run by any one of thousands of hosting
-  providers around the world, instead of just being run by Amazon by default."
+created-on: 2023-05-15T11:00:00Z
+updated-on: 2023-05-15T11:00:00Z
+published-on: 2023-05-15T11:00:00Z
+description:
+  "Organizations look to the decentralized web (dweb) for data storage
+  because decentralization maximizes resiliency yet allows for choice. The early internet
+  operated on a much more decentralized plane than today: Users could dial into an
+  ISP of their choice, and switch as easily as changing a phone number. Websites could
+  be run by any one of thousands of hosting providers around the world, instead of
+  just being run by Amazon by default."
 image:
   url: /assets/images/0905-dweb-on-the-rise.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "DWeb on the Rise: Uses for Decentralized Storage"
+  description:
+    Decentralized web (DWeb) on the rise. Discover the many uses for decentralized
+    storage solutions.
 ---
 
 Organizations look to the decentralized web (dweb) for data storage because decentralization maximizes resiliency yet allows for choice. The early internet operated on a much more decentralized plane than today: Users could dial into an ISP of their choice, and switch as easily as changing a phone number. Websites could be run by any one of thousands of hosting providers around the world, instead of just being run by Amazon by default.

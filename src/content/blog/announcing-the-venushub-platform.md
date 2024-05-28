@@ -10,9 +10,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423a911fe00b2cb076101a_1-_gcjaae5jjlt5kkzewfd6g.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filecoin Foundation Announces the Venushub Platform
+  description:
+    Introducing the Venushub platform by Filecoin Foundation. Learn how
+    it fosters decentralized application development.
 ---
 
 One of the main goals in building out the Filecoin network is to ensure the Mainnet is secure and resilient. Teams at Filecoin Foundation and Protocol Labs run protocol security. We also conduct external security audits and have other systems in place to establish resilience. Still, there is always a chance that an implementation bug might result in adverse consequences for the network.

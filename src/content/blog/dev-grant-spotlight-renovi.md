@@ -1,17 +1,23 @@
 ---
 title: Dev Grant Spotlight — Renovi
-created-on: 2023-04-21T07:26:46.825Z
-updated-on: 2023-04-21T07:26:46.825Z
-published-on: 2023-04-21T07:33:56.200Z
-description: If you build it they will come. That’s the aim of Renovi, a
-  metaverse marketplace and design studio that works with global brands and
-  businesses to create, develop, and implement their Web3 strategies.
+created-on: 2023-04-21T07:26:46.825000Z
+updated-on: 2023-04-21T07:26:46.825000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  If you build it they will come. That’s the aim of Renovi, a metaverse
+  marketplace and design studio that works with global brands and businesses to create,
+  develop, and implement their Web3 strategies.
 image:
   url: /assets/images/image-c-11.png
-  alt: null
+  alt:
 slug: dev-grant-spotlight-renovi
 recommended-posts: []
-metadata: null
+category: reports
+seo:
+  title: "Dev Grant Spotlight: Renovi"
+  description:
+    Renovi's journey and innovative solutions as a recipient of the Filecoin
+    dev grant. Explore their work.
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ _[Dev Grants program](https://fil.org/grants/)._

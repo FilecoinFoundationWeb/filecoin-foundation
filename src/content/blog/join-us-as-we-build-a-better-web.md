@@ -1,18 +1,23 @@
 ---
 title: Join us as we Build a Better Web
-created-on: 2023-04-21T07:28:02.613Z
-updated-on: 2023-04-21T07:28:02.613Z
-published-on: 2023-04-21T07:33:56.200Z
-description: More than half of the world’s population is online and connected.
-  Collectively, we create more than 2.5 quintillion bytes of data daily — from
-  photos and videos, tweets and texts, Reddit posts and research reports, and so
-  much more.
+created-on: 2023-04-21T07:28:02.613000Z
+updated-on: 2023-04-21T07:28:02.613000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  More than half of the world’s population is online and connected. Collectively,
+  we create more than 2.5 quintillion bytes of data daily — from photos and videos,
+  tweets and texts, Reddit posts and research reports, and so much more.
 image:
   url: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
-  alt: null
+  alt:
 slug: join-us-as-we-build-a-better-web
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: Join Us as We Build a Better Web
+  description:
+    Collaborate with us at Filecoin Foundation to build a better, decentralized
+    web. Get involved today.
 ---
 
 _“The internet is in the middle of a revolution: centralized proprietary services are being replaced with decentralized open ones; trusted parties replaced with verifiable computation; brittle location addresses replaced with resilient content addresses; inefficient monolithic services replaced with peer-to-peer algorithmic markets.” —_ _[Filecoin White Paper](https://filecoin.io/filecoin.pdf), 2017_

@@ -1,16 +1,22 @@
 ---
-title: "Announcing the Filecoin nv22 Dragon Upgrade: A Leap Forward in Network Efficiency and Flexibility"
+title:
+  "Announcing the Filecoin nv22 Dragon Upgrade: A Leap Forward in Network Efficiency
+  and Flexibility"
 slug: announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility
-created-on: 2024-04-24T13:19:08.153Z
-updated-on: 2024-04-24T13:19:08.172Z
-published-on: 2024-04-24T13:19:08.184Z
-category: null
+created-on: 2024-04-24T13:19:08.153000Z
+updated-on: 2024-04-24T13:19:08.172000Z
+published-on: 2024-04-24T13:19:08.184000Z
+category: news
 description: Filecoin nv22 Dragon upgrade has launched on mainnet.
 image:
   url: /assets/images/blog-header-_-nv22-upgrade.png
   alt: Filecoin nv22 Dragon Upgrade
 recommended-posts: []
-metadata: null
+seo:
+  title: "Filecoin NV22 Dragon Upgrade: Enhancing Network Efficiency"
+  description:
+    Announcing the Filecoin NV22 Dragon upgrade. Discover the leap forward
+    in network efficiency and flexibility.
 ---
 
 Filecoin nv22 Dragon upgrade has launched on mainnet, bringing significant improvements in network efficiency and flexibility.

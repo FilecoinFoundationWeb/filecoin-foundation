@@ -1,18 +1,24 @@
 ---
-title: "FIP0056 in Last Call until 03/24: Introducing a Sector Duration
-  Multiplier and Increasing Sector Duration Times"
-created-on: 2023-04-21T07:27:39.439Z
-updated-on: 2023-04-21T07:27:39.439Z
-published-on: 2023-04-21T07:33:56.200Z
-description: FIP0056, a proposal aiming to address some of the broader
-  challenges facing the Filecoin network, is in its last call until Friday,
-  March 24.
+title:
+  "FIP0056 in Last Call until 03/24: Introducing a Sector Duration Multiplier
+  and Increasing Sector Duration Times"
+created-on: 2023-04-21T07:27:39.439000Z
+updated-on: 2023-04-21T07:27:39.439000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  FIP0056, a proposal aiming to address some of the broader challenges
+  facing the Filecoin network, is in its last call until Friday, March 24.
 image:
   url: /assets/images/0621-2022-01.png
-  alt: null
+  alt:
 slug: fip0056-in-last-call-until-03-24-introducing-a-sector-duration-multiplier-and-increasing-sector-duration-times
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "FIP0056: Introducing Sector Duration Multiplier"
+  description:
+    Learn about FIP0056, which introduces a sector duration multiplier
+    and increases sector duration times.
 ---
 
 FIP0056, a proposal aiming to address some of the broader challenges facing the Filecoin network, is in its last call until Friday, March 24. This proposal would introduce a Sector Duration Multiplier, increase the minimum sector duration from 6 months to 1 year, and increase the maximum sector duration from 1.5 years to 5 years. For more detailed information about FIP0056, read the [full proposal](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0056.md)

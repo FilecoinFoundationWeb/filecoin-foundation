@@ -10,9 +10,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Thank You for Participating in FIP-0014
+  description:
+    A thank you note to the community for participating in FIP-0014. Your
+    contributions are valued.
 ---
 
 The Filecoin community has completed its first-ever [FILPoll](https://filpoll.io/), a new tool for surveying stakeholders on improvement proposals and other initiatives. Thanks to the 200+ storage miners who participated in the poll for [FIP-0014](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0014.md), which considered whether to allow miners to extend v1 proof sectors up to a maximum lifetime of 540 days. Extending such sectors was disabled in the network version v7 upgrade (November 2020) due to a security concern with these proofs; v1.1 proofs were introduced to fix this security concern. This caused problems for miners who sealed v1 proof sectors in the early days of the network. Read more about the [Filecoin Improvement Proposal process](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0001.md) and this first FIL-Poll [here](https://filecoinfoundation.medium.com/participate-in-the-filecoin-networks-poll-on-extending-the-maximum-lifetime-of-v1-sectors-6bd730fb2032).

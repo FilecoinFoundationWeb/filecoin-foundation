@@ -11,12 +11,17 @@ slug: >-
 image:
   url: >-
     /assets/images/64423acba6ec41b8da2a46d0_1-jrf-dri7quysyfpqa5rpaw.webp
-  alt: null
+  alt:
 updated-on: "2023-04-21T07:27:07.444Z"
 created-on: "2023-04-21T07:27:07.444Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filecoin Foundation and FFDW Team Up with Internet Archive
+  description:
+    Filecoin Foundation, FFDW, and Internet Archive collaborate to preserve
+    government datasets in Democracy’s Library initiative.
 ---
 
 Filecoin Foundation and Filecoin Foundation for the Decentralized Web (FFDW) have announced that they will be teaming up with the Internet Archive to support the Archive’s new [Democracy’s Library](https://blog.archive.org/2022/10/19/announcing-democracys-library/) project. This initiative will create a [free, open collection](https://archive.org/details/democracys-library) of government data that will ensure that government research and publications from around the world remain permanently accessible to the public.

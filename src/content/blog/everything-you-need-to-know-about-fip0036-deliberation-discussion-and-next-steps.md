@@ -9,14 +9,19 @@ description: >-
 image:
   url: >-
     /assets/images/64423abda6ec4131c52a3df0_1-et2gg4agkn7chfbur-8a6g.webp
-  alt: null
+  alt:
 slug: >-
   everything-you-need-to-know-about-fip0036-deliberation-discussion-and-next-steps
 updated-on: "2023-04-21T07:26:54.116Z"
 created-on: "2023-04-21T07:26:54.116Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "FIP0036: Deliberation, Discussion, and Next Steps"
+  description:
+    "Everything you need to know about FIP0036: Deliberation, discussion,
+    and next steps. Get involved."
 ---
 
 The Filecoin community has spent the past several months debating [FIP0036 — Introducing a Sector Duration Multiple for Longer Term Storage Commitment.](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0036.md) The FIP was authored by researchers at the [CryptoEconLab](https://research.protocol.ai/groups/cryptoeconlab/)(CEL), an organization in the Protocol Labs Network that’s responsible for contributing to the design, validation, monitoring, and development of the Filecoin economy. Researchers from CEL often contribute thinking and research to support Core Devs in their analysis of the security and technical feasibility of draft FIPs. They are also frequent FIP authors and collaborators, having contributed to the design of both [Filecoin Plus](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0003.md) and [Hyperdrive](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0013.md), among other projects.

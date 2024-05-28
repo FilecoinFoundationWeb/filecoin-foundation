@@ -14,9 +14,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423a97d1b025cf67f903ec_1-k1bbzfo-mulctcjeu5e_da.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Bela Supernova Receives Chainlink-Filecoin Joint Grant
+  description:
+    Bela Supernova awarded a joint grant by Chainlink and Filecoin to support
+    public health data oracle development.
 ---
 
 In 2021, Chainlink and Filecoin launched [a joint grant initiative](https://blog.chain.link/announcing-the-chainlink-and-filecoin-joint-grant-program/) to accelerate the development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage. The joint grant initiative supports teams building and researching hybrid smart contract applications powered by tamper-proof file storage and universal connectivity. In essence, these co-sponsored grants are designed to help extend the [Web3](https://blog.chain.link/web3/) stack beyond on-chain computation to include decentralized off-chain computation, data, and storage.

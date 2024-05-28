@@ -1,16 +1,22 @@
 ---
 title: Second Round of Filecoin Plus Notaries Elected, 5+ PiB More DataCap Awarded
 slug: second-round-of-filecoin-plus-notaries-elected-5-pib-more-datacap-awarded
-created-on: 2023-04-21T07:31:48.925Z
-updated-on: 2023-04-21T07:31:48.925Z
-published-on: 2023-04-21T07:33:56.200Z
-description: The Filecoin Plus community recently held elections for notaries
-  for the second time since its launch.
+created-on: 2023-04-21T07:31:48.925000Z
+updated-on: 2023-04-21T07:31:48.925000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  The Filecoin Plus community recently held elections for notaries for
+  the second time since its launch.
 image:
   url: /assets/images/image-c-34.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Second Round of Filecoin Plus Notaries Elected
+  description:
+    Announcing the second round of Filecoin Plus notaries. Over 5 PiB of
+    Datacap awarded. Learn more.
 ---
 
 The Filecoin Plus community recently held elections for notaries for the second time since its launch. Applications to receive Notary status and DataCap grants were due May 25 and were reviewed by the governance team, which includes members of the Filecoin Foundation and Protocol Labs, as well as highly-engaged members of the community who were not applying to be notaries.

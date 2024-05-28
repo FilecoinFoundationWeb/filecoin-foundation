@@ -14,9 +14,14 @@ description: >-
 image:
   url: >-
     /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: "Xinshu Technology: How the Chinese Shutterfly Uses Filecoin"
+  description:
+    Discover how Xinshu Technology uses the Filecoin network to stay competitive
+    in the photo-sharing industry.
 ---
 
 **Key highlights:**

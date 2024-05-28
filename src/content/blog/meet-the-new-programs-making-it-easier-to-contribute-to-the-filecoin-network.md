@@ -1,17 +1,22 @@
 ---
 title: Meet the New Programs Making it Easier to Contribute to the Filecoin Network
-created-on: 2023-04-21T07:28:18.531Z
-updated-on: 2023-04-21T07:28:18.531Z
-published-on: 2023-04-21T07:33:56.200Z
-description: "This winter, two new programs launched that make it easier than
-  ever to contribute to the Filecoin network: Filecoin Saturn and Filecoin
-  Station."
+created-on: 2023-04-21T07:28:18.531000Z
+updated-on: 2023-04-21T07:28:18.531000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "This winter, two new programs launched that make it easier than ever
+  to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station."
 image:
   url: /assets/images/12202022-saturnandstation.png
-  alt: null
+  alt:
 slug: meet-the-new-programs-making-it-easier-to-contribute-to-the-filecoin-network
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: New Programs to Contribute to the Filecoin Network
+  description:
+    Discover the new programs designed to make it easier to contribute
+    to the Filecoin network.
 ---
 
 This winter, two new programs launched that make it easier than ever to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station.

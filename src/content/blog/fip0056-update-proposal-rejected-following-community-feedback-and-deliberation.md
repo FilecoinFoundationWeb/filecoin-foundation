@@ -1,20 +1,25 @@
 ---
-title: "FIP0056 Update: Proposal Rejected Following Community Feedback and
-  Deliberation"
-created-on: 2023-04-21T07:27:41.011Z
-updated-on: 2023-04-21T07:27:41.011Z
-published-on: 2023-04-21T07:33:56.200Z
-description: "Over the past several months, the Filecoin community has been
-  actively deliberating FIP0056.  This FIP is the second iteration of a proposed
-  Sector Duration Multiplier (SDM), which would deliver additional block rewards
-  to storage providers who elect to commit storage resources to the network for
-  a longer period of time.  "
+title: "FIP0056 Update: Proposal Rejected Following Community Feedback and Deliberation"
+created-on: 2023-04-21T07:27:41.011000Z
+updated-on: 2023-04-21T07:27:41.011000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "Over the past several months, the Filecoin community has been actively
+  deliberating FIP0056.  This FIP is the second iteration of a proposed Sector Duration
+  Multiplier (SDM), which would deliver additional block rewards to storage providers
+  who elect to commit storage resources to the network for a longer period of time.\
+  \  "
 image:
   url: /assets/images/0621-2022-01.png
-  alt: null
+  alt:
 slug: fip0056-update-proposal-rejected-following-community-feedback-and-deliberation
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: "FIP0056 Update: Proposal Rejected"
+  description:
+    FIP0056 proposal rejected following community feedback and deliberation.
+    Explore the details.
 ---
 
 Over the past several months, the Filecoin community has been actively deliberating [FIP0056](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0056.md). This FIP is the second iteration of a proposed Sector Duration Multiplier (SDM), which would deliver additional block rewards to storage providers who elect to commit storage resources to the network for a longer period of time.

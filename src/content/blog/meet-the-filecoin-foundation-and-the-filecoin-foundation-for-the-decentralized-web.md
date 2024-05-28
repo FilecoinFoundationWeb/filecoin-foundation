@@ -1,19 +1,25 @@
 ---
-title: " Meet the Filecoin Foundation and the Filecoin Foundation for the
-  Decentralized Web"
-created-on: 2023-04-21T07:28:16.571Z
-updated-on: 2023-04-21T07:28:16.571Z
-published-on: 2023-04-21T07:33:56.200Z
-description: The boards and advisors of the Filecoin Foundation (FF) and the
-  Filecoin Foundation for the Decentralized Web (FFDW) took the stage at
-  Filecoin Liftoff Week to talk about the future of the organizations and the
-  promise of Web3.
+title:
+  " Meet the Filecoin Foundation and the Filecoin Foundation for the Decentralized
+  Web"
+created-on: 2023-04-21T07:28:16.571000Z
+updated-on: 2023-04-21T07:28:16.571000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  The boards and advisors of the Filecoin Foundation (FF) and the Filecoin
+  Foundation for the Decentralized Web (FFDW) took the stage at Filecoin Liftoff Week
+  to talk about the future of the organizations and the promise of Web3.
 image:
   url: /assets/images/64423b0f4e4c686c88f481d6_1-mg36oqbqdetgd3sn8-bgsq.png
-  alt: null
+  alt:
 slug: meet-the-filecoin-foundation-and-the-filecoin-foundation-for-the-decentralized-web
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: Meet the Filecoin Foundations
+  description:
+    Meet the teams behind the Filecoin Foundation and the Filecoin Foundation
+    for the Decentralized Web.
 ---
 
 The boards and advisors of Filecoin Foundation (FF) and Filecoin Foundation for the Decentralized Web (FFDW) took the stage at Filecoin Liftoff Week to talk about the future of the organizations and the promise of Web3.
