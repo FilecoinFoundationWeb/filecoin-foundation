@@ -44,7 +44,9 @@ export function testPageMetadata(
       cy.get('link[rel="canonical"]').should(
         'have.attr',
         'href',
-        path.path === PATHS.HOME.path ? `${BASE_URL}` : `${BASE_URL}${path.path}`,
+        path.path === PATHS.HOME.path
+          ? `${BASE_URL}`
+          : `${BASE_URL}${path.path}`,
       )
     })
   })
@@ -80,13 +82,16 @@ function verifyHeaderContent(content: {
     .should('exist')
     .within(() => {
       cy.get('h1').should('have.text', content.title)
-      // handle case if description is string[] or string type
-      if (Array.isArray(content.description)) {
-        content.description.forEach((text: string) => {
-          cy.get('p').should('contain.text', text)
-        })
-      } else {
-        cy.get('p').should('contain.text', content.description)
+
+      if (content.description) {
+        // handle case if description is string[] or string type
+        if (Array.isArray(content.description)) {
+          content.description.forEach((text: string) => {
+            cy.get('p').should('contain.text', text)
+          })
+        } else {
+          cy.get('p').should('contain.text', content.description)
+        }
       }
     })
 }
