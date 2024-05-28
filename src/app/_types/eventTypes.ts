@@ -7,13 +7,13 @@ export type EventData = {
   updatedOn?: string
   publishedOn?: string
   description?: string
+  location: string
   externalLink?: {
     href: string
     text: string
   }
   startDate: string
   endDate?: string
-  location: string
   image?: {
     url: string
     alt: string

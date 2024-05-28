@@ -13,13 +13,13 @@ export function mapMarkdownToEventData({
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
     description: data.description,
+    location: data.location,
     externalLink: {
       href: data['external-link'].href,
       text: data['external-link'].text,
     },
     startDate: data['start-date'],
     endDate: data['end-date'],
-    location: data.location,
     image: {
       url: data.image?.url || '',
       alt: data.image?.alt || '',
