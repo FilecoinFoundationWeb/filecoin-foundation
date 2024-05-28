@@ -24,6 +24,25 @@ const nextConfig = {
       ],
     },
   },
+  async redirects() {
+    return [
+      {
+        source: '/get-involved',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/public-data',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/public-data/:path*',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
   webpack: (config) => {
     // Handling Markdown files
     config.module.rules.push({
