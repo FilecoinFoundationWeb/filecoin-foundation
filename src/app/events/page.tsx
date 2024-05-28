@@ -72,7 +72,7 @@ const eventsPageStructuredData: WithContext<WebPage> = {
         startDate: event.startDate,
         endDate: event.endDate,
         description: event.description,
-        url: `${event.cta?.url} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
+        url: `${event.externalLink?.href} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
       },
     })),
   },
