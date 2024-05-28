@@ -29,6 +29,7 @@ module.exports = {
             '--tw-prose-code': theme('colors.brand.100'),
             '--tw-prose-pre-bg': theme('colors.brand.700'),
             '--tw-prose-pre-code': theme('colors.brand.100'),
+            '--tw-prose-captions': theme('colors.brand.100'),
 
             a: {
               textDecoration: 'none',
@@ -56,7 +57,6 @@ module.exports = {
 
             iframe: {
               width: '100%',
-              borderWidth: '0',
             },
 
             'iframe[src*="youtube.com"]': {
@@ -76,13 +76,7 @@ module.exports = {
               whiteSpace: 'nowrap',
               textOverflow: 'ellipsis',
               textAlign: 'left',
-              fontFamily:
-                'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;',
               fontSize: '10px',
-              fontWeight: '100',
-              a: {
-                color: '#cccccc',
-              },
             },
           },
         },

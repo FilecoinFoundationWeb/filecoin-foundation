@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,5 +8,77 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      CMS.registerEditorComponent({
+        id: 'video',
+        label: 'Video',
+        fields: [
+          {
+            name: 'src',
+            label: 'Embeded Video URL',
+            widget: 'string',
+            required: true,
+          },
+          {
+            name: 'figcaption',
+            label: 'Caption',
+            widget: 'string',
+            required: false,
+          },
+        ],
+        pattern:
+          /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*(?:<figcaption>(.*?)<\/figcaption>)?\s*<\/figure>$/ms,
+        fromBlock: function (match) {
+          return {
+            src: match[1] || '',
+            figcaption: match[2] || '',
+          }
+        },
+        toBlock: function (data) {
+          return data.figcaption
+            ? `<figure>
+          <iframe
+            src="${data.src}"
+            width="560"
+            height="315"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+          <figcaption>${data.figcaption}</figcaption>
+        </figure>`
+            : `<iframe
+            src="${data.src}"
+            width="560"
+            height="315"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>`
+        },
+        toPreview: function (data) {
+          return data.figcaption
+            ? `<figure>
+          <iframe
+            src="${data.src}"
+            width="560"
+            height="315"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <figcaption>${data.figcaption}</figcaption>
+        </figure>`
+            : `<iframe
+          src="${data.src}"
+          width="560"
+          height="315"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>`
+        },
+      })
+    </script>
   </body>
 </html>

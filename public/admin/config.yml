@@ -236,6 +236,10 @@ collections:
       - name: "body"
         label: "Content"
         widget: "markdown"
+        editor_components:
+          - "code-block"
+          - "image"
+          - "video"
         required: false
       - name: "recommended-posts"
         label: "Recommended Posts"
