@@ -50,7 +50,7 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { featured_post: featuredProjectSlug, seo } = attributes
+const { featured_entry: featuredProjectSlug, seo } = attributes
 const featuredProject = ecosystemProjects.find(
   (project) => project.slug === featuredProjectSlug,
 )

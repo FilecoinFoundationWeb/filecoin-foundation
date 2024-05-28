@@ -5,7 +5,7 @@ import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 export function testPageMetadata(
   path: PathConfig,
-  includesFeaturedPost: boolean = false,
+  includesFeaturedEntry: boolean = false,
 ) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${path.mainContentPath}.md`
@@ -15,11 +15,11 @@ export function testPageMetadata(
       const {
         header,
         seo,
-        featured_post: featuredPostSlug,
+        featured_entry: featuredSlug,
       } = matter(markdownContent).data as {
         header?: { title: string; description: string }
         seo: { title: string; description: string }
-        featured_post?: string
+        featured_entry?: string
       }
 
       // Visit the current page
@@ -33,9 +33,9 @@ export function testPageMetadata(
           : `${seo.title} | Filecoin Foundation`,
       )
 
-      // Conditional logic for pages with a featured post
-      if (includesFeaturedPost && featuredPostSlug) {
-        handleFeaturedPost(path, featuredPostSlug)
+      // Conditional logic for pages with a featured entry
+      if (includesFeaturedEntry && featuredSlug) {
+        handleFeaturedEntry(path, featuredSlug)
       } else if (header) {
         verifyHeaderContent(header)
       }
@@ -52,23 +52,23 @@ export function testPageMetadata(
   })
 }
 
-// Function to handle verification of featured post content
-function handleFeaturedPost(path: PathConfig, slug: string) {
-  const featuredPostContentPath = `${path.entriesContentPath}/${slug}`
-  const featuredPostFilePath = `${featuredPostContentPath}.md`
+// Function to handle verification of featured entry content
+function handleFeaturedEntry(path: PathConfig, slug: string) {
+  const featuredEntryContentPath = `${path.entriesContentPath}/${slug}`
+  const featuredEntryFilePath = `${featuredEntryContentPath}.md`
 
-  // Fetch and wrap the featured post's data for later use
-  cy.readFile(featuredPostFilePath).then((content: string) => {
+  // Fetch and wrap the featured entry's data for later use
+  cy.readFile(featuredEntryFilePath).then((content: string) => {
     const { data } = matter(content)
-    cy.wrap(data).as('featuredPostData')
+    cy.wrap(data).as('featuredEntryData')
   })
 
-  cy.get('@featuredPostData').then((featuredPostData) => {
-    const post = featuredPostData as unknown as {
+  cy.get('@featuredEntryData').then((featuredEntryData) => {
+    const entry = featuredEntryData as unknown as {
       title: string
       description: string
     }
-    verifyHeaderContent(post)
+    verifyHeaderContent(entry)
   })
 }
 

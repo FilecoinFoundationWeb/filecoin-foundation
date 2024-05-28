@@ -293,7 +293,7 @@
               ]
             },
             {
-              "name": "featured_ecosystem_projects",
+              "name": "featured_entry",
               "label": "Featured Ecosystem Projects",
               "widget": "relation",
               "required": false,
@@ -435,7 +435,7 @@
               ]
             },
             {
-              "name": "featured_post",
+              "name": "featured_entry",
               "label": "Featured Post",
               "widget": "relation",
               "collection": "blog",
@@ -849,7 +849,7 @@
               ]
             },
             {
-              "name": "featured_event",
+              "name": "featured_entry",
               "label": "Featured Event",
               "widget": "relation",
               "collection": "events",
@@ -1822,7 +1822,7 @@
         },
         {
           "name": "location",
-          "label": "Description",
+          "label": "Location",
           "widget": "string"
         },
         {
