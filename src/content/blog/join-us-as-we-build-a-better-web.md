@@ -37,4 +37,4 @@ The Filecoin Foundation and FFDW are charged with bringing that mission to fruit
 
 This is a monumental task, and one that requires support from the brightest minds in technology and civil liberties to be successful. We’ve lined up a [steller board and advisors](https://youtu.be/6OY4xAs3Grg) for both foundations to shepherd this project and grow the ecosystem. And we’re looking for more bright minds to round out our team.
 
-If you’re interested in the Filecoin project and passionate about the benefits of web3 to decentralize the web, [apply today](https://fil.org/get-involved/#careers-intro)! And be on the lookout for an upcoming webinar to learn more about these positions and what’s in store for the Filecoin Foundation and FFDW.
+If you’re interested in the Filecoin project and passionate about the benefits of web3 to decentralize the web, apply today! And be on the lookout for an upcoming webinar to learn more about these positions and what’s in store for the Filecoin Foundation and FFDW.
