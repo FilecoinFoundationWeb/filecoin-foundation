@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — FilSwan
 description: >-
   Storage providers need to keep up with evolving technologies that their

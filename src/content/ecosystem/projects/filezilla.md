@@ -4,7 +4,6 @@ slug: filezilla
 created-on: 2024-02-21T15:20:11.125Z
 updated-on: 2024-03-20T14:20:11.136Z
 published-on: 2024-03-20T14:20:11.149Z
-featured: false
 description: "Filezilla aims to create a cross-chain bridge that connects Solana and Filecoin mainnets. This will increase the existing partnership that has already been established between both chains."
 category: tooling-productivity
 tags:

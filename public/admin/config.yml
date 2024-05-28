@@ -206,11 +206,6 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-      - name: "featured"
-        label: "Featured"
-        widget: "boolean"
-        required: false
-        default: false
       - name: "category"
         label: "Category"
         widget: "select"
@@ -331,11 +326,6 @@ collections:
         label: Published On
         widget: datetime
         required: false
-      - name: featured
-        label: Featured
-        widget: boolean
-        required: false
-        default: false
       - name: image
         label: Image
         widget: object
@@ -532,11 +522,6 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-      - name: "featured"
-        label: "Featured"
-        widget: "boolean"
-        required: false
-        default: false
       - name: "description"
         label: "Description"
         widget: "string"

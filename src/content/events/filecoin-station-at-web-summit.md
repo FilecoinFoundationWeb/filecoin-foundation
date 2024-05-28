@@ -5,7 +5,6 @@ created-on: "2023-06-27T15:30:57.095Z"
 updated-on: "2023-06-27T15:30:57.115Z"
 published-on: "2023-06-27T15:30:57.149Z"
 
-featured: false
 description: Lisbon, Portugal
 cta:
   url: https://websummit.com/blog/web-summit-2022-2-for-1-tickets

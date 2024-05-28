@@ -4,7 +4,6 @@ slug: datalatte
 created-on: 2024-03-29T21:28:49.704Z
 updated-on: 2024-03-29T21:41:02.169Z
 published-on: 2024-03-29T21:41:02.169Z
-featured: false
 description: "Compute-over-data pipelines for survey storage systems using knowledge graphs"
 category: artificial-intelligence
 tags:

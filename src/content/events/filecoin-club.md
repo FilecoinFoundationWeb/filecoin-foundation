@@ -4,7 +4,6 @@ slug: filecoin-club
 updated-on: "2023-05-03T08:06:32.669Z"
 created-on: "2023-05-03T08:06:32.669Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: >-
   Encode Club, a community of university students, researchers, and developers
   building in blockchain, is introducing Filecoin Club to educate the next

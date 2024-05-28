@@ -7,7 +7,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: FIP0056, a proposal aiming to address some of the broader
   challenges facing the Filecoin network, is in its last call until Friday,
   March 24.
-featured: false
 image:
   url: /assets/images/0621-2022-01.png
   alt: null

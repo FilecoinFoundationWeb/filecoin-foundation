@@ -4,7 +4,6 @@ slug: metaverse-hackathon
 created-on: "2023-05-03T08:06:19.314Z"
 updated-on: "2023-05-03T08:06:19.314Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: >-
   An 8-week hackathon focused on Metaverse! Build projects on IPFS to answer challenges and compete for the $50k prize pool.
 cta:

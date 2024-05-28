@@ -1,5 +1,4 @@
 ---
-featured: false
 title: "Dev Grant Spotlight: Portrait"
 description: >-
   Portrait is the first open-source web page builder, allowing people to turn

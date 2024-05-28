@@ -4,7 +4,6 @@ slug: dweb-camp-2024
 created-on: "2024-01-29T15:55:19.827Z"
 updated-on: "2024-01-29T15:55:19.834Z"
 published-on: "2024-01-29T15:55:19.842Z"
-featured: false
 description: Navarro, CA
 cta:
   url: https://dwebcamp.org/

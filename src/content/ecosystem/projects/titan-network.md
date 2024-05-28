@@ -4,7 +4,6 @@ slug: titan-network
 created-on: "2024-01-04T22:40:28.512Z"
 updated-on: "2024-01-05T21:39:25.863Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
 description: "Titan is a leading DePIN service provider, that is committed to delivering efficient, secure, and cost-effective decentralized solutions, tooling and resources that can help your projects stand out in a competitive marketplace."
 category: media-entertainment
 tags:

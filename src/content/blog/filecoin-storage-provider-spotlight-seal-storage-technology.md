@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — Seal Storage Technology
 description: >-
   Seal Storage Technology Inc was founded to accelerate the adoption of

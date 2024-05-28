@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: "Origin Storage was founded in 2018 with a mission to provide
   underlying technology solutions for the Web3 ecosystem with safe, flexible,
   and reliable products and services. "
-featured: false
 image:
   url: /assets/images/image-c-01.png
   alt: null

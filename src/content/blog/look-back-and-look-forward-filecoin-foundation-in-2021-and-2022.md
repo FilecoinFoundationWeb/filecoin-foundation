@@ -1,5 +1,4 @@
 ---
-featured: false
 title: "Look Back and Look Forward: Filecoin Foundation in 2021 and 2022"
 description: >-
   Filecoin Foundation experienced tremendous growth in 2021, both in size and

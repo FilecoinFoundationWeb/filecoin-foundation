@@ -4,7 +4,6 @@ slug: leto
 created-on: 2024-04-05T23:01:19.895Z
 updated-on: 2024-04-05T23:01:19.919Z
 published-on: 2024-04-05T23:01:19.933Z
-featured: false
 description: "Metrics for users and devs to help manage data on IPFS."
 category: tooling-productivity
 tags:

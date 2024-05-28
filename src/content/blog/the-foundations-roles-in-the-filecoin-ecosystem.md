@@ -4,7 +4,6 @@ slug: the-foundations-roles-in-the-filecoin-ecosystem
 created-on: "2023-04-21T07:32:11.556Z"
 updated-on: "2023-04-21T07:32:11.556Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   In 2017, the creators of Filecoin envisioned an independent foundation that
   would serve as the long-term governance body for the Filecoin ecosystem.

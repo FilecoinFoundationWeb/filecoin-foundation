@@ -4,7 +4,6 @@ slug: "genrait"
 created-on: 2024-01-04T22:40:26.305Z
 updated-on: 2024-01-05T21:37:21.385Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "GenRAIT gives scientists a platform to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
 category: science-climate-space
 tags:

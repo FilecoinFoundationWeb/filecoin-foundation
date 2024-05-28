@@ -4,7 +4,6 @@ slug: force-community
 created-on: 2024-03-29T21:28:50.711Z
 updated-on: 2024-03-29T21:42:15.361Z
 published-on: 2024-03-29T21:42:15.361Z
-featured: false
 description: "Force Community is a non-profit leading Web3 community. IPFSForce is the Web3 infrastructure service provider focused on technology research and development in distributed storage."
 category: tooling-productivity
 tags:

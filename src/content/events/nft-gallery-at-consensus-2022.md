@@ -4,7 +4,6 @@ slug: nft-gallery-at-consensus-2022
 updated-on: "2023-05-03T08:06:08.616Z"
 created-on: "2023-05-03T08:06:08.616Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: >-
   We're bringing the massively creative world of NFTs to life at Consensus 2022.
   The NFT Gallery will feature NFT-related content combined with a visual

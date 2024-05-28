@@ -1,5 +1,4 @@
 ---
-featured: false
 title: "Filecoin Foundation: First Half Year in Review"
 description: >-
   As we charge into the second half of 2022, we’ve found ourselves looking back

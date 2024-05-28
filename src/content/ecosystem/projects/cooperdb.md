@@ -4,7 +4,6 @@ slug: cooperdb
 created-on: 2024-04-05T14:44:50.231Z
 updated-on: 2024-04-05T14:44:50.290Z
 published-on: 2024-04-05T14:44:50.309Z
-featured: false
 description: "Relational Database Management built on top of IPFS/Filecoin and FilSwan MCS."
 category: tooling-productivity
 tags:

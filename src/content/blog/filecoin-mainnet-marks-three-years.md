@@ -4,7 +4,6 @@ slug: filecoin-mainnet-marks-three-years
 created-on: 2023-10-16T17:45:17.415Z
 updated-on: 2023-10-16T17:45:17.440Z
 published-on: 2023-10-16T17:45:17.450Z
-featured: true
 description: This week, Filecoin Foundation celebrates the three-year
   anniversary of the Filecoin network’s  mainnet launch.
 image:

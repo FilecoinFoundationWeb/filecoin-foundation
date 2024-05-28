@@ -4,7 +4,6 @@ slug: orbit-fvm-open-hack-days
 created-on: 2023-04-21T07:31:40.974Z
 updated-on: 2023-04-21T07:31:40.974Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: The Filecoin Orbit program is hosting Filecoin Virtual Machine
   (FVM) Open Hack Days, a series of hackathons that will take place in various
   locations across the world in February and March 2023 to allow developers to

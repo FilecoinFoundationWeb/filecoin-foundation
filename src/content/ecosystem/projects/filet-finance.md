@@ -4,7 +4,6 @@ slug: filet-finance
 created-on: 2024-03-29T21:28:51.053Z
 updated-on: 2024-03-29T21:42:03.195Z
 published-on: 2024-03-29T21:42:03.195Z
-featured: false
 description: "A trustworthy platform providing staking service stably."
 category: finance
 tags:

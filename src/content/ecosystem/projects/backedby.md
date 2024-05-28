@@ -4,7 +4,6 @@ slug: backedby
 created-on: 2024-04-05T17:55:00.779Z
 updated-on: 2024-04-05T17:55:00.792Z
 published-on: 2024-04-05T17:55:00.802Z
-featured: false
 description: "Bankless, Decentralized, Privacy-First content subscription protocol for creators."
 category: media-entertainment
 tags:

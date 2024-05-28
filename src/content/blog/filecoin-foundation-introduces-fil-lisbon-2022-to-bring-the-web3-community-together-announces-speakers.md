@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   Filecoin Foundation Introduces FIL Lisbon 2022 to Bring the Web3 Community
   Together, Announces Speakers

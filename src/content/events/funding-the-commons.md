@@ -4,7 +4,6 @@ slug: funding-the-commons
 created-on: "2024-01-29T15:47:33.368Z"
 updated-on: "2024-01-29T15:47:33.376Z"
 published-on: "2024-01-29T15:47:33.383Z"
-featured: false
 description: San Francisco, CA
 cta:
   url: null

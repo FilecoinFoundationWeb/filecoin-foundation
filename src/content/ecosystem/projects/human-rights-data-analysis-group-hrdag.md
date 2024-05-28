@@ -4,7 +4,6 @@ slug: "human-rights-data-analysis-group-hrdag"
 created-on: 2024-01-10T16:19:46.234Z
 updated-on: 2024-01-10T16:19:46.268Z
 published-on: 2024-01-10T16:19:46.376Z
-featured: false
 description: "Human Rights Data Analysis Group (HRDAG) turns raw data into analysis used by UN missions, truth commissions, small and large human rights groups, and criminal prosecutions for war crimes and crimes against humanity."
 category: public-goods-dweb
 tags:

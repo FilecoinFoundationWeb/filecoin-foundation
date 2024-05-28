@@ -4,7 +4,6 @@ slug: "foxwallet"
 created-on: 2024-02-27T20:36:33.516Z
 updated-on: 2024-02-27T20:36:33.529Z
 published-on: 2024-02-27T20:36:33.539Z
-featured: false
 description: "FoxWallet is a safe and easy-to-use decentralized wallet, dedicated to creating an entrance and connection to the Web3 world."
 category: tooling-productivity
 tags:

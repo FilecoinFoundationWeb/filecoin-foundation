@@ -4,7 +4,6 @@ slug: teamz-web3-ai-summit-conference-2024
 created-on: 2024-03-21T16:47:39.923Z
 updated-on: 2024-03-21T16:47:39.933Z
 published-on: 2024-03-21T16:47:39.941Z
-featured: false
 description: null
 cta:
   url: https://en.web3.teamz.co.jp/

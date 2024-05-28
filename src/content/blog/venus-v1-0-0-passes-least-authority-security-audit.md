@@ -4,7 +4,6 @@ slug: venus-v1-0-0-passes-least-authority-security-audit
 created-on: 2023-04-21T07:32:15.053Z
 updated-on: 2023-04-21T07:32:15.053Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: With the recent security audit performed by Least Authority,
   Venus has released venus v1.0.0, which will enable global storage providers
   and clients to store valuable data securely on Filecoin.

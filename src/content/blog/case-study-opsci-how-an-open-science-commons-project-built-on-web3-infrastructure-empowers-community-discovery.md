@@ -5,7 +5,6 @@ slug: case-study-opsci-how-an-open-science-commons-project-built-on-web3-infrast
 created-on: 2023-04-21T07:26:24.934Z
 updated-on: 2023-04-21T07:26:24.934Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: How an Open Science Commons Project Built on Web3 Infrastructure
   Empowers Community Discovery
 image:

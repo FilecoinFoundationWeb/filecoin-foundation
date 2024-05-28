@@ -4,7 +4,6 @@ slug: renderhive
 created-on: 2024-03-29T21:28:53.783Z
 updated-on: 2024-03-29T21:48:03.679Z
 published-on: 2024-03-29T21:48:03.679Z
-featured: false
 description: "Renderhive is going to be the first fully decentralized render farm for Blender built on Web3 technologies. It relies on the distributed render power of Blender artists participating in the hive."
 category: tooling-productivity
 tags:

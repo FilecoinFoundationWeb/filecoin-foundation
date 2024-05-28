@@ -4,7 +4,6 @@ slug: unveiling-the-filecoin-ecosystem-explorer
 created-on: 2024-01-11T15:12:45.372Z
 updated-on: 2024-01-11T15:12:45.388Z
 published-on: 2024-01-11T15:12:45.398Z
-featured: true
 category: blog
 description: The Filecoin Ecosystem Explorer is a crowd-sourced database that showcases the breadth and depth of Filecoin ecosystem projects.
 image:

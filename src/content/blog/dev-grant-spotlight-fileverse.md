@@ -4,7 +4,6 @@ slug: dev-grant-spotlight-fileverse
 created-on: 2023-04-21T07:26:37.139Z
 updated-on: 2023-04-21T07:26:37.139Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: This is the latest post in our series highlighting the builders
   and innovators creating new tools and services on the Filecoin network. Learn
   more about Filecoin Foundation’s Dev Grants program.

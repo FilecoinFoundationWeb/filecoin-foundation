@@ -4,7 +4,6 @@ slug: beryx
 created-on: 2024-01-18T17:44:05.201Z
 updated-on: 2024-01-18T17:44:05.243Z
 published-on: 2024-01-18T17:44:05.279Z
-featured: false
 description: "Beryx indexes and exposes via a public API Filecoin historical and real-time data."
 category: tooling-productivity
 tags:

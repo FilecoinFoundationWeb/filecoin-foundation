@@ -4,7 +4,6 @@ slug: "filemarket"
 created-on: 2024-01-18T16:06:37.736Z
 updated-on: 2024-01-18T16:06:37.771Z
 published-on: 2024-01-18T16:06:37.786Z
-featured: false
 description: "Decentralized P2P file-sharing protocol & platform for storing, transferring, and trading digital goods."
 category: storage
 tags:

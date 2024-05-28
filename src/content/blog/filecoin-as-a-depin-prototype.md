@@ -4,7 +4,6 @@ slug: filecoin-as-a-depin-prototype
 created-on: 2024-03-04T15:11:05.167Z
 updated-on: 2024-03-04T15:11:05.193Z
 published-on: 2024-03-04T15:11:05.224Z
-featured: false
 category: null
 description: The Decentralized Physical Infrastructure Network (DePIN) movement is re-architecting the Internet's physical and digital backbone.
 image:

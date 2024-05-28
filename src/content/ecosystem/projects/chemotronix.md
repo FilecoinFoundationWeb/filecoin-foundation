@@ -4,7 +4,6 @@ slug: chemotronix
 created-on: 2024-03-29T21:28:49.980Z
 updated-on: 2024-03-29T21:39:34.161Z
 published-on: 2024-03-29T21:39:34.161Z
-featured: false
 description: "We are building a platform that provides real-time tracking of greenhouse gas emissions to efficiently allocate carbon credits and invest in clean energy infrastructure. Chemotronix leverages Filecoin for decentralized data storage."
 category: science-climate-space
 tags:

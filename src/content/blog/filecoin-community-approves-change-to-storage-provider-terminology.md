@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: Today, the Filecoin community approved Filecoin Improvement
   Proposal 18 (FIP-0018), which reframes how we message around the storage
   market and those who participate in it as storage providers.
-featured: false
 image:
   url: /assets/images/fip18.png
   alt: null

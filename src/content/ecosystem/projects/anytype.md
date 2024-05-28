@@ -4,7 +4,6 @@ slug: anytype
 created-on: 2024-04-05T17:13:01.978Z
 updated-on: 2024-04-05T17:13:01.996Z
 published-on: 2024-04-05T17:13:02.007Z
-featured: false
 description: "Private, local-first, P2P computing no-code dapp to compose beautifully. Available on Mac, Windows, Linux, iOS & Android."
 category: tooling-productivity
 tags:

@@ -8,7 +8,6 @@ description: "Today, Filecoin Foundation (FF) announced a first-of-its-kind
   mission to deploy the Interplanetary File System (IPFS) in space. The mission
   will take place in 2023 aboard Lockheed Martin’s [NYSE: LMT] LM 400 Technology
   Demonstrator spacecraft."
-featured: false
 image:
   url: /assets/images/01-lockheed-p-1080.png
   alt: null

@@ -4,7 +4,6 @@ slug: eth-denver-filecoin-booth-filecoin-orbit-event
 created-on: "2024-01-29T15:38:54.802Z"
 updated-on: "2024-01-29T15:38:54.811Z"
 published-on: "2024-01-29T15:38:54.825Z"
-featured: false
 description: Denver, CO
 cta:
   url: https://hub.fil.org/ethdenver2024

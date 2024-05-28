@@ -4,7 +4,6 @@ slug: filecoin-foundation-2023-annual-report
 created-on: 2024-02-27T14:17:57.166Z
 updated-on: 2024-02-27T14:17:57.179Z
 published-on: 2024-02-27T14:17:57.188Z
-featured: false
 category: report
 description: This report highlights FF’s accomplishments in 2023 –– from events, network-wide initiatives, partnerships, and governance to network upgrades and core infrastructure improvements. It also provides a touchpoint to reflect on the potential of the Filecoin network, the promises of the decentralized web, and the mission of the Foundation. This report also provides additional details on FF’s annual budget.
 image:

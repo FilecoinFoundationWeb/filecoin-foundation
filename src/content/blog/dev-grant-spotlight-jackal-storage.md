@@ -1,5 +1,4 @@
 ---
-featured: false
 title: "Dev Grant Spotlight: JACKAL Storage"
 description: >-
   JACKAL Storage is a platform that provides a secure, private, and

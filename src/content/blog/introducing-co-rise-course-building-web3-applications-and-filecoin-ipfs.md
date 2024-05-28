@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: The “Building Web3 Applications and Filecoin/IPFS” is a four-week
   introductory course focused on building applications on a blockchain with
   decentralized storage on Filecoin/IPFS.
-featured: false
 image:
   url: /assets/images/64423af4e3c08f6f124f519f_1-gvlzuxsp3dbmsdxwobsexq.png
   alt: null

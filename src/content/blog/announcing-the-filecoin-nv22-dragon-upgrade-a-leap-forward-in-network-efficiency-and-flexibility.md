@@ -4,7 +4,6 @@ slug: announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-effi
 created-on: 2024-04-24T13:19:08.153Z
 updated-on: 2024-04-24T13:19:08.172Z
 published-on: 2024-04-24T13:19:08.184Z
-featured: false
 category: null
 description: Filecoin nv22 Dragon upgrade has launched on mainnet.
 image:

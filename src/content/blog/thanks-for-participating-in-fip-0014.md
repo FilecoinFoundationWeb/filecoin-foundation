@@ -4,7 +4,6 @@ slug: thanks-for-participating-in-fip-0014
 created-on: "2023-04-21T07:32:06.493Z"
 updated-on: "2023-04-21T07:32:06.493Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   The Filecoin community has completed its first-ever FILPoll, a new tool for
   surveying stakeholders on improvement proposals and other initiatives.

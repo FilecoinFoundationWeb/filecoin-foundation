@@ -4,7 +4,6 @@ slug: "filecoin-day"
 created-on: "2023-11-13T18:09:36.531Z"
 updated-on: "2023-11-13T18:09:36.547Z"
 published-on: "2023-11-13T18:09:36.559Z"
-featured: false
 description: "Istanbul"
 cta:
   url: "https://lu.ma/vk9pnofg"

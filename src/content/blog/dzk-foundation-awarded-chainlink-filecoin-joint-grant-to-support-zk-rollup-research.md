@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   DZK Foundation Awarded Chainlink-Filecoin Joint Grant to Support zk-Rollup
   Research

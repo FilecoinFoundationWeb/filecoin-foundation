@@ -4,7 +4,6 @@ slug: case-study-redefining-web-presence-no-code-tools-meet-decentralized-hostin
 created-on: 2023-09-06T14:03:54.229Z
 updated-on: 2023-09-06T14:03:54.256Z
 published-on: 2023-09-06T14:03:54.272Z
-featured: false
 description: In this case study, we at Filecoin Foundation explore an
   innovative approach to website design workflow.
 image:

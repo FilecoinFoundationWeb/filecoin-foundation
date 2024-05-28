@@ -5,7 +5,6 @@ slug: case-study-genrait-leverages-filecoin-network-for-greater-visibility-acces
 created-on: 2023-04-21T07:26:23.379Z
 updated-on: 2023-04-21T07:26:23.379Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: GenRAIT provides scientists with the platform they need to
   analyze genomic data, generate scientific breakthroughs, and experiment at
   scale, all in one unified ecosystem. In the GenRAIT ecosystem, scientists

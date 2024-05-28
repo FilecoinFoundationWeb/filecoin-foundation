@@ -7,7 +7,6 @@ description: Though geographically distant, Berlin, Dar es Salaam, Lagos, and
   Nairobi, are cities unified through the Filecoin Orbit Community Program, a
   program powered by Filecoin Foundation and Protocol Labs to amplify the voice
   of the Filecoin, IPFS, and libp2p communities.
-featured: false
 image:
   url: /assets/images/0713-orbitcommunity.png
   alt: null

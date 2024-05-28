@@ -5,7 +5,6 @@ slug: how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-t
 created-on: 2023-09-18T14:06:54.734Z
 updated-on: 2023-09-18T14:06:54.741Z
 published-on: 2023-09-18T14:06:54.746Z
-featured: false
 description: >-
   Artifact Labs is driven by a mission to “preserve and connect
   culture and history on the blockchain.” The company puts the power of

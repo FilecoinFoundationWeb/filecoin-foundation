@@ -4,7 +4,6 @@ slug: ddrive
 created-on: 2024-04-03T17:23:12.584Z
 updated-on: 2024-04-03T17:23:12.612Z
 published-on: 2024-04-03T17:23:12.644Z
-featured: false
 description: "A fully decentralized and open-source Web3 Cloud Storage solution."
 category: tooling-productivity
 tags:

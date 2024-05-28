@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:28:11.027Z
 published-on: 2023-04-21T07:33:56.200Z
 description: "The Filecoin Foundation is thrilled to welcome Sonia John to the
   Filecoin Foundation team! "
-featured: false
 image:
   url: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
   alt: null

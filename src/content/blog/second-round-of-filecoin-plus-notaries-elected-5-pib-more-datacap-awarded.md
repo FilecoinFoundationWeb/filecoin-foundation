@@ -4,7 +4,6 @@ slug: second-round-of-filecoin-plus-notaries-elected-5-pib-more-datacap-awarded
 created-on: 2023-04-21T07:31:48.925Z
 updated-on: 2023-04-21T07:31:48.925Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: The Filecoin Plus community recently held elections for notaries
   for the second time since its launch.
 image:

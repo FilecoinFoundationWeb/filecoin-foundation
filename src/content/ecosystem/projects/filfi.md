@@ -4,7 +4,6 @@ slug: filfi
 created-on: 2023-05-30T20:57:35.326Z
 updated-on: 2024-03-20T20:57:35.335Z
 published-on: 2024-03-20T20:57:35.342Z
-featured: false
 description: "Filecoin’s first 100% smart contract managed storage node joint construction solution."
 category: finance
 tags:

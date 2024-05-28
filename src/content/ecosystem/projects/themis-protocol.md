@@ -4,7 +4,6 @@ slug: themis-protocol
 created-on: 2024-04-03T18:51:20.533Z
 updated-on: 2024-04-03T18:51:20.547Z
 published-on: 2024-04-03T18:51:20.557Z
-featured: false
 description: "Building the underlying infrastructure of the FVM public chain."
 category: finance
 tags:

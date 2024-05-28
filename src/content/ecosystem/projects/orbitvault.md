@@ -4,7 +4,6 @@ slug: orbitvault
 created-on: 2024-03-20T13:09:03.703Z
 updated-on: 2024-03-20T13:09:03.722Z
 published-on: 2024-03-20T13:09:03.747Z
-featured: false
 description: "Building a specific wallet for Filecoin Virtual Machine."
 category: tooling-productivity
 tags:

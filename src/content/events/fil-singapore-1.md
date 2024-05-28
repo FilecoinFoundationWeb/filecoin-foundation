@@ -4,7 +4,6 @@ slug: "fil-singapore-1"
 created-on: "2024-01-29T16:14:23.198Z"
 updated-on: "2024-01-29T16:14:23.209Z"
 published-on: "2024-01-29T16:14:23.226Z"
-featured: false
 description: Singapore
 cta:
   url: null

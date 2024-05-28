@@ -4,7 +4,6 @@ slug: deep-dive-on-messaris-q1-filecoin-ecosystem-report
 created-on: 2024-05-10T14:59:51.532Z
 updated-on: 2024-05-10T14:59:51.549Z
 published-on: 2024-05-10T14:59:51.575Z
-featured: false
 category: blog
 description: Insights from Messari's recently released Q1 2024 Filecoin Ecosystem Report.
 image:

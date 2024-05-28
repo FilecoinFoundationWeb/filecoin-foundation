@@ -4,7 +4,6 @@ slug: fil-brussels
 created-on: "2024-01-29T15:53:57.402Z"
 updated-on: "2024-01-29T15:53:57.411Z"
 published-on: "2024-01-29T15:53:57.423Z"
-featured: false
 description: Brussels, Belgium
 cta:
   url: null

@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — PiKNiK
 description: >-
   Established in October 2020 by several founding members of the Filecoin

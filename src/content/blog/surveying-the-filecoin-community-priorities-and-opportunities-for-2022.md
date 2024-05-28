@@ -4,7 +4,6 @@ slug: surveying-the-filecoin-community-priorities-and-opportunities-for-2022
 created-on: 2023-04-21T07:32:03.550Z
 updated-on: 2023-04-21T07:32:03.550Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "As a core building block of the Web3 world, the Filecoin network
   is both open-source and decentralized. "
 image:

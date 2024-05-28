@@ -4,7 +4,6 @@ slug: the-filecoin-sanctuary-davos
 created-on: "2023-06-27T15:51:17.030Z"
 updated-on: "2023-06-27T15:51:17.038Z"
 published-on: "2023-06-27T15:51:17.044Z"
-featured: false
 description:  Davos, Switzerland
 cta:
   url: https://events.fil.org/davos

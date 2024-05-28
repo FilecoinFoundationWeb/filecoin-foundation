@@ -4,7 +4,6 @@ slug: supporting-the-community-the-filecoin-storage-provider-group
 created-on: 2023-04-21T07:32:01.414Z
 updated-on: 2023-04-21T07:32:01.414Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "Since its founding, the Filecoin Foundation has been committed
   to providing resources, community support, and guidance to everyone involved
   in building the Filecoin and Web3 ecosystems. "

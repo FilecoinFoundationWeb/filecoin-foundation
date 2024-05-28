@@ -4,7 +4,6 @@ slug: social-impact-summit-2024-cohosted-by-blockchain-law-for-social-good-cente
 created-on: "2024-01-29T15:35:50.939Z"
 updated-on: "2024-01-29T15:35:51.003Z"
 published-on: "2024-01-29T15:35:51.019Z"
-featured: false
 description: San Francisco, CA
 cta:
   url: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367

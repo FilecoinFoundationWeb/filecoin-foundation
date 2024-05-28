@@ -4,7 +4,6 @@ slug: spex
 created-on: 2024-03-29T21:28:54.676Z
 updated-on: 2024-03-29T21:48:26.877Z
 published-on: 2024-03-29T21:48:26.877Z
-featured: false
 description: "SPex is a decentralized storage provider exchange space on FVM"
 category: tooling-productivity
 tags:

@@ -4,7 +4,6 @@ slug: announcing-the-public-data-commons-and-awards-program
 created-on: "2023-04-21T07:26:04.681Z"
 updated-on: "2023-04-21T07:26:04.681Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   We’re excited to announce Filecoin Foundation is launching a Public Data
   Commons initiative to support open data projects in partnership with

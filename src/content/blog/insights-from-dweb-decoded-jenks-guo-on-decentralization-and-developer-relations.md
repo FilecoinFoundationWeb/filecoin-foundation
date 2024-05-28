@@ -4,7 +4,6 @@ slug: insights-from-dweb-decoded-jenks-guo-on-decentralization-and-developer-rel
 created-on: 2024-01-08T18:40:06.859Z
 updated-on: 2024-01-08T18:40:06.868Z
 published-on: 2024-01-08T18:40:06.885Z
-featured: false
 category: null
 description: Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights on decentralization and its role in shaping the future of the internet.
 image:

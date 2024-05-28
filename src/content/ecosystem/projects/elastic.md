@@ -4,7 +4,6 @@ slug: elastic
 created-on: 2024-04-05T00:28:51.816Z
 updated-on: 2024-04-05T00:28:51.827Z
 published-on: 2024-04-05T00:28:51.836Z
-featured: false
 description: "Elastic is an NFT Renting Marketplace where listers can highlight the benefits gained from renting their NFT."
 category: tooling-productivity
 tags:

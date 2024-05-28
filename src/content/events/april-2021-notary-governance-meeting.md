@@ -4,7 +4,6 @@ slug: april-2021-notary-governance-meeting
 created-on: "2023-05-03T08:06:31.219Z"
 updated-on: "2023-05-03T08:06:31.219Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: null
 cta:
   url: "https://www.youtube.com/watch?v=BIvFtwCeOjU"

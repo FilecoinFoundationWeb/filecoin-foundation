@@ -7,7 +7,6 @@ slug: >-
 created-on: "2023-04-21T07:27:09.042Z"
 updated-on: "2023-04-21T07:27:09.042Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Nicole Wong, former deputy U.S. chief technology officer, has joined the board
   of the Filecoin Foundation (FF). Kristin Smith, executive director of the

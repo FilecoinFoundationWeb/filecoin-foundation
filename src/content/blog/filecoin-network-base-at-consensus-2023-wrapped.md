@@ -4,7 +4,6 @@ slug: filecoin-network-base-at-consensus-2023-wrapped
 created-on: 2023-06-05T11:00:54.740Z
 updated-on: 2023-06-05T11:00:00.000Z
 published-on: 2023-06-05T11:00:00.000Z
-featured: false
 description: Against the backdrop of Consensus 2023, one of the largest annual
   crypto gatherings in the US, the Filecoin community converged at the Filecoin
   Network Base to highlight the builders, storage providers and storage clients

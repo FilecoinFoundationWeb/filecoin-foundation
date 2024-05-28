@@ -4,7 +4,6 @@ slug: datahaus
 created-on: 2024-03-29T21:28:52.788Z
 updated-on: 2024-03-29T21:40:39.978Z
 published-on: 2024-03-29T21:40:39.978Z
-featured: false
 description: "DataHaus is a decentralized data economy, built on Filecoin, which provides a reliable web3 data foundation to efficiently handle all data types and use cases needed today."
 category: storage
 tags:

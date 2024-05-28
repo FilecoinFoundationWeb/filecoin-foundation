@@ -6,7 +6,6 @@ export type EventData = {
   createdOn?: string
   updatedOn?: string
   publishedOn?: string
-  featured?: boolean
   description?: string
   cta?: {
     url: string

@@ -4,7 +4,6 @@ slug: nft-vision-hack
 created-on: "2023-05-03T08:06:37.631Z"
 updated-on: "2023-05-03T08:06:37.631Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: null
 cta:
   url: https://www.nftvisionhack.com/

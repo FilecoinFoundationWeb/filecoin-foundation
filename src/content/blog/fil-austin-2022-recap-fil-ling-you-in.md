@@ -4,7 +4,6 @@ slug: fil-austin-2022-recap-fil-ling-you-in
 created-on: 2023-04-21T07:26:57.443Z
 updated-on: 2023-04-21T07:26:57.443Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: The only thing hotter than the Austin weather was the slate of
   programming at FIL Austin, a week of Filecoin community events set against the
   backdrop of Consensus, CoinDesk’s annual crypto conference in June.

@@ -4,7 +4,6 @@ slug: fil-seoul-network-base-1
 created-on: "2023-08-24T07:06:47.802Z"
 updated-on: "2023-08-24T07:06:47.810Z"
 published-on: "2023-08-24T07:06:47.816Z"
-featured: false
 description: Seoul, South Korea
 cta:
   url: https://www.fil-seoul.com/

@@ -4,7 +4,6 @@ slug: the-filecoin-foundation-announces-50-000-fil-grant-to-the-internet-archive
 created-on: 2023-04-21T07:32:08.443Z
 updated-on: 2023-04-21T07:32:08.443Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: The Filecoin Foundation is committed to protecting and preserving
   valuable data by creating a new internet infrastructure that’s more secure,
   user-focused, and competitive.

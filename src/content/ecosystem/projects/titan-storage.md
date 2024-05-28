@@ -4,7 +4,6 @@ slug: titan-storage
 created-on: 2024-03-20T13:04:49.531Z
 updated-on: 2024-03-20T13:04:49.599Z
 published-on: 2024-03-20T13:04:49.640Z
-featured: false
 description: "Titan Storage, a market-leading decentralized, secure, and efficient storage solution."
 category: storage
 tags:

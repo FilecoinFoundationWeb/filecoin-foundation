@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: If you build it they will come. That’s the aim of Renovi, a
   metaverse marketplace and design studio that works with global brands and
   businesses to create, develop, and implement their Web3 strategies.
-featured: false
 image:
   url: /assets/images/image-c-11.png
   alt: null

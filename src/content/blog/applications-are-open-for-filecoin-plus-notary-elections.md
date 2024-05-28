@@ -4,7 +4,6 @@ slug: applications-are-open-for-filecoin-plus-notary-elections
 created-on: 2023-04-21T07:26:10.744Z
 updated-on: 2023-04-21T07:26:10.744Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: This month, the Filecoin Plus program will kick off its third
   round of elections.
 image:

@@ -4,7 +4,6 @@ slug: astral
 created-on: 2024-03-29T21:28:48.588Z
 updated-on: 2024-03-29T21:36:46.746Z
 published-on: 2024-03-29T21:36:46.746Z
-featured: false
 description: "Astral is building tools to enable the location-based decentralized web."
 category: public-goods-dweb
 tags:

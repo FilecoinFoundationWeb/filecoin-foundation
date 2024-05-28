@@ -4,7 +4,6 @@ slug: ahdx-aihealthdataxchain
 created-on: 2024-02-22T17:51:25.104Z
 updated-on: 2024-02-22T17:51:25.132Z
 published-on: 2024-02-22T17:51:25.159Z
-featured: false
 description: "We offer a decentralized patient health data marketplace, which allows organizations and patients to securely share or monetize health information."
 category: education-academia-health
 tags:

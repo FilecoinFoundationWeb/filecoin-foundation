@@ -4,7 +4,6 @@ slug: "project-dokaz"
 created-on: "2024-01-10T19:28:43.717Z"
 updated-on: "2024-01-10T19:28:43.727Z"
 published-on: "2024-01-10T19:28:43.735Z"
-featured: true
 description: "Project Dokaz is a set of accountability efforts in Ukraine that applies Starling Lab's work with especially vulnerable digital records."
 category: public-goods-dweb
 tags:

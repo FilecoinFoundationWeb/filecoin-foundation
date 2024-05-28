@@ -4,7 +4,6 @@ slug: fil-dev-summit-1
 created-on: "2023-09-07T15:46:33.563Z"
 updated-on: "2023-09-07T15:46:33.586Z"
 published-on: "2023-09-07T15:46:33.609Z"
-featured: false
 description: Singapore
 cta:
   url: https://fildev.io/

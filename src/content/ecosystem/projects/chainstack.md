@@ -4,7 +4,6 @@ slug: chainstack
 created-on: 2024-03-29T21:28:49.352Z
 updated-on: 2024-03-29T21:39:14.213Z
 published-on: 2024-03-29T21:39:14.213Z
-featured: false
 description: "Chainstack offers managed blockchain services making it simple to launch and scale decentralized networks and applications."
 category: tooling-productivity
 tags:

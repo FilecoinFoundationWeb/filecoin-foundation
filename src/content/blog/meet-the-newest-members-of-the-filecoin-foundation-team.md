@@ -3,7 +3,6 @@ title: Meet the Newest Members of the Filecoin Foundation Team
 created-on: 2023-04-21T07:28:20.092Z
 updated-on: 2023-04-21T07:28:20.092Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: The Filecoin Foundation is delighted to welcome new members to
   our growing workforce of professionals dedicated to research, development, and
   community engagement around open source, decentralized storage, and nurturing

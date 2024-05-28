@@ -4,7 +4,6 @@ slug: parasail
 created-on: 2024-05-15T13:46:37.124Z
 updated-on: 2024-05-15T13:46:37.134Z
 published-on: 2024-05-15T13:46:37.146Z
-featured: false
 description: "Incentive interface for seamless DePIN experiences."
 category: finance
 tags:

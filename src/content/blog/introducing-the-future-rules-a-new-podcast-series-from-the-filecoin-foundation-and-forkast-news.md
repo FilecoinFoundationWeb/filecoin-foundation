@@ -8,7 +8,6 @@ description: >
   Today, we’re thrilled to announce the launch of “The Future Rules,” a new
   podcast series dedicated to exploring the intersection of Web3 and the many
   factors that impact the growth and viability of a decentralized web.
-featured: false
 image:
   url: /assets/images/image-c-33.png
   alt: null

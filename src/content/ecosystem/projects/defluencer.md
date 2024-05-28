@@ -4,7 +4,6 @@ slug: defluencer
 created-on: 2024-04-03T18:07:28.284Z
 updated-on: 2024-04-03T18:07:28.315Z
 published-on: 2024-04-03T18:07:28.332Z
-featured: false
 description: "Defluencer is a protocol built on top of the inter-planetary file system (IPFS)."
 category: media-entertainment
 tags:

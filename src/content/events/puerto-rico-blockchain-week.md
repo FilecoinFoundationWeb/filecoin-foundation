@@ -4,7 +4,6 @@ slug: puerto-rico-blockchain-week
 created-on: "2023-06-27T17:15:30.355Z"
 updated-on: "2023-06-27T17:15:30.380Z"
 published-on: "2023-06-27T17:15:30.400Z"
-featured: false
 description: Puerto Rico
 cta:
   url: https://www.prblockchainweek.io/

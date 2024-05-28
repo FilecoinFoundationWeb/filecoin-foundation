@@ -4,7 +4,6 @@ slug: remixing-the-art-world-with-blockchain-technology-a-q-a-with-ntent
 created-on: 2023-06-21T19:18:57.909Z
 updated-on: 2023-06-21T19:18:57.921Z
 published-on: 2023-06-21T19:18:57.929Z
-featured: false
 description: The art world has traditionally been shrouded in mystery and
   unwritten rules. Now, Web3 is creating a more inclusive and user-centric
   experience, lowering the barrier to entry through decentralized technology.

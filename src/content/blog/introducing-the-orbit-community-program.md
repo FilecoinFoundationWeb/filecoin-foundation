@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:27:53.945Z
 published-on: 2023-04-21T07:33:56.200Z
 description: "We’re excited to announce the launch of the Orbit Community
   Program, powered by Filecoin Foundation and Protocol Labs. "
-featured: false
 image:
   url: /assets/images/0114-orbitcommunity-twitter.png
   alt: null

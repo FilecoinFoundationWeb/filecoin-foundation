@@ -4,7 +4,6 @@ slug: reppo
 created-on: 2024-04-24T19:06:44.041Z
 updated-on: 2024-04-24T19:06:44.057Z
 published-on: 2024-04-24T19:06:44.068Z
-featured: false
 description: "Building a sovereign AI modelling network to address DePIN verification and broadly assess the quality of crypto networks."
 category: artificial-intelligence
 tags:

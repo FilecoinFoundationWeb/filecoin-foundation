@@ -4,7 +4,6 @@ slug: pyth-network
 created-on: 2024-04-16T20:04:49.383Z
 updated-on: 2024-04-16T20:04:49.406Z
 published-on: 2024-04-16T20:04:49.422Z
-featured: false
 description: "First-party financial data oracle network that delivers low-latency price data for various assets to blockchains securely."
 category: tooling-productivity
 tags:

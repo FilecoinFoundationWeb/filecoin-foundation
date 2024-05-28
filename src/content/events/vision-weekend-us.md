@@ -4,7 +4,6 @@ slug: vision-weekend-us
 created-on: "2023-06-27T17:27:58.490Z"
 updated-on: "2023-06-27T17:27:58.515Z"
 published-on: "2023-06-27T17:27:58.530Z"
-featured: false
 description:  San Francisco, CA
 cta:
   url: https://foresight.org/vision-weekends-2022/

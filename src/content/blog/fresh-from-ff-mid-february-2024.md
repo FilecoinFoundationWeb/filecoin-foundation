@@ -4,7 +4,6 @@ slug: fresh-from-ff-mid-february-2024
 created-on: 2024-02-15T20:13:07.449Z
 updated-on: 2024-02-15T20:13:07.488Z
 published-on: 2024-02-15T20:13:07.495Z
-featured: false
 category: blog
 description: Fresh from FF is a new, biweekly series dedicated to disseminating the latest information and updates from FF teams in their ongoing efforts to support our incredible community of developers, storage providers, storage clients, project partners, advocates, and more as we work toward our mission of building a stronger, more decentralized internet.
 image:

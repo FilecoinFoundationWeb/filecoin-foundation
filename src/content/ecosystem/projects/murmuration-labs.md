@@ -4,7 +4,6 @@ slug: murmuration-labs
 created-on: 2024-03-29T21:28:53.260Z
 updated-on: 2024-03-29T21:46:18.273Z
 published-on: 2024-03-29T21:46:18.273Z
-featured: false
 description: "Content moderation tools for blockchain applications."
 category: public-goods-dweb
 tags:

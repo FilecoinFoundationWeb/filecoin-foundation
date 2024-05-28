@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:27:50.623Z
 published-on: 2023-04-21T07:33:56.200Z
 description: "The Filecoin Foundation is committed to growing and supporting
   the Filecoin ecosystem — miners, developers, and storage clients alike. "
-featured: false
 image:
   url: /assets/images/image-c-21.png
   alt: null

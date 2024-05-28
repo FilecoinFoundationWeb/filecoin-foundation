@@ -4,7 +4,6 @@ slug: dev-grant-spotlight-arlequin-the-artist-s-metaverse
 created-on: 2023-04-21T07:26:31.815Z
 updated-on: 2023-04-21T07:26:31.815Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: Arlequin — the Artists Metaverse — is a community-driven,
   ‘Paint-to-Earn’ system where users can collect NFT 3D animals, known as
   ‘Arlee’, in a creative ecosystem powered by the Flow blockchain and using

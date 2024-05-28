@@ -4,7 +4,6 @@ slug: dev-grant-spotlight-encloud
 created-on: 2023-04-21T07:26:35.386Z
 updated-on: 2023-04-21T07:26:35.386Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "Businesses hold trillions of dollars of valuable data which,
   according to research firm Ocean Tomo, comprise 90% of the value of S&P 500
   companies. New tools leveraging decentralized storage solutions like Filecoin

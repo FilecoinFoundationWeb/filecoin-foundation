@@ -7,7 +7,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: "As an open-source, decentralized protocol, the success of the
   Filecoin network is inextricably linked with the development of its community.
   "
-featured: false
 image:
   url: /assets/images/image-c-20.png
   alt: null

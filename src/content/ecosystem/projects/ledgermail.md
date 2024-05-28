@@ -4,7 +4,6 @@ slug: ledgermail
 created-on: 2024-03-29T21:28:53.257Z
 updated-on: 2024-03-29T21:45:06.750Z
 published-on: 2024-03-29T21:45:06.750Z
-featured: false
 description: "The world's first Decentralized Email Service"
 category: tooling-productivity
 tags:

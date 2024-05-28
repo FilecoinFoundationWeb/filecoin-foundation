@@ -4,7 +4,6 @@ slug: drpc
 created-on: 2024-04-05T13:32:22.074Z
 updated-on: 2024-04-05T13:32:22.089Z
 published-on: 2024-04-05T13:32:22.105Z
-featured: false
 description: "Decentralized RPC node provider for Filecoin network."
 category: tooling-productivity
 tags:

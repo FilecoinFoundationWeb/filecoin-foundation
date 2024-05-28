@@ -7,7 +7,6 @@ slug: >-
 created-on: "2023-04-21T07:32:20.158Z"
 updated-on: "2023-04-21T07:32:20.158Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Launched in 2019 by Weiping Li and Liu Ming, Xinshu Technology helps memories
   last a lifetime — and then some — for thousands of Chinese families and

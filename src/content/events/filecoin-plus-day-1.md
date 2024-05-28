@@ -4,7 +4,6 @@ slug: filecoin-plus-day-1
 created-on: "2023-11-13T18:13:00.239Z"
 updated-on: "2023-11-13T18:13:00.249Z"
 published-on: "2023-11-13T18:13:00.256Z"
-featured: false
 description: null
 cta:
   url: https://23.labweek.io/fil-plus

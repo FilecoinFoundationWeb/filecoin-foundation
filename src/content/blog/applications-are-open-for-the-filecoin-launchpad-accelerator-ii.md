@@ -4,7 +4,6 @@ slug: applications-are-open-for-the-filecoin-launchpad-accelerator-ii
 created-on: 2023-04-21T07:26:12.273Z
 updated-on: 2023-04-21T07:26:12.273Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "Filecoin Launchpad Accelerator, powered by Tachyon, is seeking
   applications for its next cohort of innovators. "
 image:

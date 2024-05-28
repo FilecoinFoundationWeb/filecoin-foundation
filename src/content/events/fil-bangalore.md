@@ -4,7 +4,6 @@ slug: fil-bangalore
 created-on: "2023-06-27T15:50:53.871Z"
 updated-on: "2023-06-27T15:50:53.888Z"
 published-on: "2023-06-27T15:50:53.898Z"
-featured: false
 description: Bangalore, India
 cta:
   url: https://fil-bangalore.io/

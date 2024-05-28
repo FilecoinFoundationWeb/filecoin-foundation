@@ -1179,13 +1179,6 @@
           "required": false
         },
         {
-          "name": "featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
-        },
-        {
           "name": "category",
           "label": "Category",
           "widget": "select",
@@ -1437,13 +1430,6 @@
           "label": "Published On",
           "widget": "datetime",
           "required": false
-        },
-        {
-          "name": "featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
         },
         {
           "name": "image",
@@ -1845,13 +1831,6 @@
           "label": "Published On",
           "widget": "datetime",
           "required": false
-        },
-        {
-          "name": "featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
         },
         {
           "name": "description",

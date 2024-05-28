@@ -4,7 +4,6 @@ slug: announcing-network-upgrade-skyr
 created-on: "2023-04-21T07:26:00.623Z"
 updated-on: "2023-04-21T07:26:00.623Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   The much-anticipated v16 Network upgrade — nicknamed ‘Skyr’ — went live on
   Wednesday, July 6. By introducing Milestone 1 of the Filecoin Virtual Machine

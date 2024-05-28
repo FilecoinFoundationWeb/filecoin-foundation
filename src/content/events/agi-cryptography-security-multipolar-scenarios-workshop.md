@@ -4,7 +4,6 @@ slug: agi-cryptography-security-multipolar-scenarios-workshop
 created-on: "2024-02-21T16:48:19.477Z"
 updated-on: "2024-02-21T16:48:19.493Z"
 published-on: "2024-02-21T16:48:19.506Z"
-featured: false
 description: null
 cta:
   url: https://foresight.org/2024-intelligent-cooperation-workshop/

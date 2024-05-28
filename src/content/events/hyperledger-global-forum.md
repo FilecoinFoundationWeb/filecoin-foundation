@@ -4,7 +4,6 @@ slug: hyperledger-global-forum
 created-on: "2023-05-03T08:06:22.608Z"
 updated-on: "2023-05-03T08:06:22.608Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: null
 cta:
   url: https://www.youtube.com/watch?v=B8lDaJcSiX0

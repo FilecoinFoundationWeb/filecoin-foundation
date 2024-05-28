@@ -4,7 +4,6 @@ slug: daln
 created-on: 2024-04-03T16:51:43.448Z
 updated-on: 2024-04-03T16:51:43.470Z
 published-on: 2024-04-03T16:51:43.478Z
-featured: false
 description: "A data DAO for monetizing credit card transaction data."
 category: finance
 tags:

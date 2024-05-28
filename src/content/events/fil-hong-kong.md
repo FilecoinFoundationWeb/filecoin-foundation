@@ -4,7 +4,6 @@ slug: fil-hong-kong
 created-on: "2023-06-27T15:30:52.767Z"
 updated-on: "2023-06-27T15:30:52.963Z"
 published-on: "2023-06-27T15:30:53.114Z"
-featured: false
 description: Hong Kong
 cta:
   url: https://fil-hk.io/

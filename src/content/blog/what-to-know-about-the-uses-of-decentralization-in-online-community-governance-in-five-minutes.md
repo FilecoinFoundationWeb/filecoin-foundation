@@ -4,7 +4,6 @@ slug: what-to-know-about-the-uses-of-decentralization-in-online-community-govern
 created-on: 2023-07-19T15:07:39.071Z
 updated-on: 2023-07-19T15:07:39.094Z
 published-on: 2023-07-19T15:07:39.110Z
-featured: false
 description: >-
   Filecoin Foundation Senior Fellow Danny O’Brien spoke with Nathan
   Schneider, professor of media studies at the University of Colorado Boulder,

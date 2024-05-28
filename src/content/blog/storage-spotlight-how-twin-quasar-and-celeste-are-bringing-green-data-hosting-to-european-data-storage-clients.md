@@ -5,7 +5,6 @@ slug: storage-spotlight-how-twin-quasar-and-celeste-are-bringing-green-data-host
 created-on: 2023-10-18T16:05:08.163Z
 updated-on: 2023-10-18T16:05:08.181Z
 published-on: 2023-10-18T16:05:08.197Z
-featured: false
 description: Twin Quasar and CELESTE have teamed up to build an
   environmentally friendly and cost-effective alternative for data storage on
   the Filecoin network.

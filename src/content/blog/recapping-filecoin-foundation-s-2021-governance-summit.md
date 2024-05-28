@@ -4,7 +4,6 @@ slug: recapping-filecoin-foundation-s-2021-governance-summit
 created-on: 2023-04-21T07:31:45.550Z
 updated-on: 2023-04-21T07:31:45.550Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: Last month, Filecoin Foundation came together to host its
   first-ever Governance Summit, a three-day series of meetings, brainstorming
   sessions, and design sprints.

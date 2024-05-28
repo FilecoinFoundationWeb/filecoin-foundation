@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   Filecoin Foundation and FFDW Team Up with the Internet Archive to Preserve
   Government Datasets in New ‘Democracy’s Library’ Initiative

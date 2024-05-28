@@ -4,7 +4,6 @@ slug: you-re-invited-filecoin-fall
 created-on: 2022-08-18T00:00:00.000Z
 updated-on: 2022-08-18T00:00:00.000Z
 published-on: 2022-08-18T00:00:00.000Z
-featured: false
 description: "As we enjoy the last days of summer, we’re already planning for
   our next set of upcoming events: Filecoin Fall. No matter where you are, or
   how you’re involved in the Filecoin community, there’s something for everyone

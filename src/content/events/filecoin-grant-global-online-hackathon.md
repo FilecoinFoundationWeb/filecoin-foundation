@@ -4,7 +4,6 @@ slug: filecoin-grant-global-online-hackathon
 created-on: "2023-05-03T08:06:38.884Z"
 updated-on: "2023-05-03T08:06:38.884Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: null
 cta:
   url: >-

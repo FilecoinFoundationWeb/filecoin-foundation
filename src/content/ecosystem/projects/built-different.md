@@ -4,7 +4,6 @@ slug: built-different
 created-on: 2024-03-29T21:28:48.571Z
 updated-on: 2024-03-29T21:38:14.934Z
 published-on: 2024-03-29T21:38:14.934Z
-featured: false
 description: "Introducing, Teaching and Supporting Decentralized Storage and Peer-to-Peer File Sharing in Africa"
 category: tooling-productivity
 tags:

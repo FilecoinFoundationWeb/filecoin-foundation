@@ -4,7 +4,6 @@ slug: domainfns
 created-on: 2024-05-16T14:33:32.585Z
 updated-on: 2024-05-16T14:33:32.598Z
 published-on: 2024-05-16T14:33:32.612Z
-featured: false
 description: "Decentralized name service based on FVM."
 category: tooling-productivity
 tags:

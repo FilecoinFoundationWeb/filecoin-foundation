@@ -4,7 +4,6 @@ slug: ethcc-5
 updated-on: "2023-05-03T08:06:05.771Z"
 created-on: "2023-05-03T08:06:05.771Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
 description: Paris, France
 cta:
   url: https://ethcc.io/

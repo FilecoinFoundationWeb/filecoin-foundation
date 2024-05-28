@@ -4,7 +4,6 @@ slug: fog-works-inc
 created-on: 2024-03-04T19:44:10.411Z
 updated-on: 2024-03-04T19:44:10.420Z
 published-on: 2024-03-04T19:44:10.434Z
-featured: false
 description: "Leading web3 company in decentralized data storage."
 category: storage
 tags:

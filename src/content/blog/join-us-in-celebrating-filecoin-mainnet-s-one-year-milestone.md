@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Join Us in Celebrating Filecoin Mainnet’s One-Year Milestone
 description: >-
   It’s been one year since the Filecoin Mainnet launch, and there’s a lot

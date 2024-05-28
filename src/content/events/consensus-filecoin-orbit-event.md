@@ -4,7 +4,6 @@ slug: consensus-filecoin-orbit-event
 created-on: "2024-01-29T15:50:42.605Z"
 updated-on: "2024-01-29T15:50:42.614Z"
 published-on: "2024-01-29T15:50:42.621Z"
-featured: false
 description: Austin, TX
 cta:
   url: null

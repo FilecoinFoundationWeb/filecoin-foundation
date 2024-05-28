@@ -4,7 +4,6 @@ slug: recapping-ethdenver-ipc-announcement-exploring-depin-and-connecting-with-t
 created-on: 2024-03-18T13:25:31.946Z
 updated-on: 2024-03-18T13:25:31.957Z
 published-on: 2024-03-18T13:25:31.966Z
-featured: false
 category: blog
 description: "ETHDenver brought together founders, developers, and builders from across the Filecoin ecosystem for a week of collaboration and innovation –– to usher the network into a new era of adoption and growth."
 image:

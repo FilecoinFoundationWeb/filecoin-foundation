@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:28:09.194Z
 published-on: 2023-04-21T07:33:56.200Z
 description: Filecoin Foundation Board Chair Marta Belcher participated in a
   panel discussion on privacy coins at CoinDesk’s Consensus 2021.
-featured: false
 image:
   url: /assets/images/64423b080425d3dc88f2efd0_0-ujllypeozzx_ebfb.png
   alt: null

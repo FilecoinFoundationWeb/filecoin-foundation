@@ -6,7 +6,6 @@ updated-on: 2023-04-21T07:27:58.680Z
 published-on: 2023-04-21T07:33:56.200Z
 description: It’s time to register for the upcoming Filecoin II Launchpad
   Accelerator Demo Day, taking place September 28 @ 11:00 AM EDT!
-featured: false
 image:
   url: /assets/images/64423afe4e4c68b60af47060_0-8alsa5xsesgbjyrr.png
   alt: null

@@ -4,7 +4,6 @@ slug: sft-chain
 created-on: "2024-02-05T17:57:11.340Z"
 updated-on: "2024-02-05T17:57:11.357Z"
 published-on: "2024-02-05T17:57:11.368Z"
-featured: false
 description: "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates with the Filecoin ecosystem, focusing on DePIN."
 category: artificial-intelligence
 tags:

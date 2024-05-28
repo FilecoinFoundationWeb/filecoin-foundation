@@ -4,7 +4,6 @@ slug: "web3-storage"
 created-on: 2024-01-04T22:40:29.248Z
 updated-on: 2024-01-05T21:40:15.647Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "Web3.storage is a suite of APIs and services for developers and storage clients to interact with data that’s not physically stored."
 category: storage
 tags:

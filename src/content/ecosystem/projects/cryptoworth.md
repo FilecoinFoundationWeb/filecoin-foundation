@@ -4,7 +4,6 @@ slug: "cryptoworth"
 created-on: 2024-02-26T21:34:10.287Z
 updated-on: 2024-02-26T21:34:10.297Z
 published-on: 2024-02-26T21:34:10.305Z
-featured: false
 description: "Helps businesses of all sizes to automate their back-office crypto accounting tasks."
 category:
   - finance

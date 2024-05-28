@@ -4,7 +4,6 @@ slug: third-storage
 created-on: 2024-03-29T21:28:55.910Z
 updated-on: 2024-03-29T21:50:03.777Z
 published-on: 2024-03-29T21:50:03.777Z
-featured: false
 description: "Third Storage is a web3 infra which enables developers to build the next gen applications."
 category: storage
 tags:

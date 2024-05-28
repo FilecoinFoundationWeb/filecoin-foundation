@@ -4,7 +4,6 @@ slug: dweb-on-the-rise-the-many-uses-for-decentralized-storage
 created-on: 2023-05-15T11:00:00.000Z
 updated-on: 2023-05-15T11:00:00.000Z
 published-on: 2023-05-15T11:00:00.000Z
-featured: false
 description: "Organizations look to the decentralized web (dweb) for data
   storage because decentralization maximizes resiliency yet allows for choice.
   The early internet operated on a much more decentralized plane than today:

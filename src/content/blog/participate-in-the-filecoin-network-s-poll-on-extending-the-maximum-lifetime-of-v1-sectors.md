@@ -7,7 +7,6 @@ slug: >-
 updated-on: "2023-04-21T07:31:42.463Z"
 created-on: "2023-04-21T07:31:42.463Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Filecoin Improvement Proposals (FIPs) are the primary way that Filecoin
   community members can submit, discuss, and approve changes to the Filecoin

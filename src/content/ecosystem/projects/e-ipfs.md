@@ -4,7 +4,6 @@ slug: e-ipfs
 created-on: 2024-04-05T00:10:47.073Z
 updated-on: 2024-04-05T00:10:47.096Z
 published-on: 2024-04-05T00:10:47.104Z
-featured: false
 description: "Hybrid IPFS service"
 category: storage
 tags:

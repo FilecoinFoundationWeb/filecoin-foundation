@@ -4,7 +4,6 @@ slug: hashmix
 created-on: 2024-03-29T21:28:52.584Z
 updated-on: 2024-03-29T21:29:46.580Z
 published-on: 2024-03-29T21:29:46.580Z
-featured: false
 description: "FIL Liquid Staking"
 category: finance
 tags:

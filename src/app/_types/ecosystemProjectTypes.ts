@@ -7,7 +7,6 @@ export type EcosystemProjectData = {
   createdOn?: string
   updatedOn?: string
   publishedOn?: string
-  featured?: boolean
   description: string
   category: string
   subcategories: string[]

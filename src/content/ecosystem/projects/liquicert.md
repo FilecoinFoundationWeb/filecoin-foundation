@@ -4,7 +4,6 @@ slug: liquicert
 created-on: 2024-03-22T16:24:25.057Z
 updated-on: 2024-03-22T16:24:25.069Z
 published-on: 2024-03-22T16:24:25.078Z
-featured: false
 description: "Allows you to find a chain of social proof from a trusted community to a dataset."
 category: science-climate-space
 tags:

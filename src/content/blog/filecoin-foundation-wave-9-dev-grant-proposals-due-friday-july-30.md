@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: The Filecoin Foundation and Protocol Labs periodically award
   funding to critical development projects to foster a more robust and efficient
   decentralized web through the Filecoin ecosystem.
-featured: false
 image:
   url: /assets/images/image-c-17.png
   alt: null

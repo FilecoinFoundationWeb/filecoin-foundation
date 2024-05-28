@@ -4,7 +4,6 @@ slug: glitter-protocol
 created-on: 2024-03-29T21:28:51.837Z
 updated-on: 2024-03-29T21:43:04.850Z
 published-on: 2024-03-29T21:43:04.850Z
-featured: false
 description: "An Open Data Indexing Protocol For All"
 category: storage
 tags:

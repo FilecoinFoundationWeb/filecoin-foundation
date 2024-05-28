@@ -4,7 +4,6 @@ slug: bacalhau
 created-on: "2024-01-04T22:40:23.935Z"
 updated-on: "2024-01-05T21:34:29.751Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
 description: "Bacalhau is a platform for fast, cost-efficient, and secure computation by running jobs where the data is generated and stored."
 category: tooling-productivity
 tags:

@@ -4,7 +4,6 @@ slug: "fleek"
 created-on: 2024-01-04T22:40:25.939Z
 updated-on: 2024-01-05T21:36:56.724Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "Fleek ​​allows users to host websites, store and deliver files, and develop dapps for the decentralized web."
 category: tooling-productivity
 tags:
