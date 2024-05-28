@@ -4,7 +4,6 @@ slug: "filedrive"
 created-on: 2024-01-04T22:40:25.514Z
 updated-on: 2024-01-05T21:35:19.637Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "FileDrive is focused on research and development for distributed storage on the Filecoin network."
 category: storage
 tags:

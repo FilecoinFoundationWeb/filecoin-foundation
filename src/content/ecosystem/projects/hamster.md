@@ -4,7 +4,6 @@ slug: hamster
 created-on: 2024-03-29T21:28:51.960Z
 updated-on: 2024-03-29T21:43:26.916Z
 published-on: 2024-03-29T21:43:26.916Z
-featured: false
 description: "Developer Toolkit and Middleware for Filecoin"
 category: tooling-productivity
 tags:

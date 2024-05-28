@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:28:00.856Z
 published-on: 2023-04-21T07:33:56.200Z
 description: The Filecoin Foundation is part of the community building the
   next generation of the web.
-featured: false
 image:
   url: /assets/images/64423b004e4c68dc35f473ac_0-zlsuhdrlo5hqa1zy.png
   alt: null

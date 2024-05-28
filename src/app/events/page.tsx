@@ -48,7 +48,7 @@ type Props = {
 
 const events = getEventsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('events')
-const { featured_post: featuredEventSlug, seo } = attributes
+const { featured_entry: featuredEventSlug, seo } = attributes
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
 
 export const metadata = createMetadata(seo, PATHS.EVENTS.path)
@@ -72,7 +72,7 @@ const eventsPageStructuredData: WithContext<WebPage> = {
         startDate: event.startDate,
         endDate: event.endDate,
         description: event.description,
-        url: `${event.cta?.url} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
+        url: `${event.externalLink?.href} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
       },
     })),
   },
@@ -149,7 +149,7 @@ export default function Events({ searchParams }: Props) {
       <PageHeader
         isFeatured
         title={featuredEvent.title}
-        description={featuredEvent.description || 'Description not available.'}
+        description={featuredEvent.description}
         metaData={getMetaDataContent(featuredEvent)}
         image={featuredEvent.image}
         cta={{

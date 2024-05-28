@@ -4,10 +4,9 @@ import { type ImageProps } from '@/types/sharedProps/imageType'
 export type BlogPostData = {
   slug: string
   title: string
-  createdOn?: string
+  createdOn: string
   updatedOn?: string
   publishedOn?: string
-  featured?: boolean
   category?: string
   description: string
   image: ImageProps

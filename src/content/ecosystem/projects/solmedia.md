@@ -4,7 +4,6 @@ slug: solmedia
 created-on: 2024-04-25T17:21:06.414Z
 updated-on: 2024-04-25T17:21:06.439Z
 published-on: 2024-04-25T17:21:06.448Z
-featured: false
 description: "Decentralized content sharing platform on Solana, integrating both Solana and Filecoin on-chain IPFS technology."
 category: media-entertainment
 tags:

@@ -4,7 +4,6 @@ slug: ceramic-network-3box
 created-on: 2024-03-29T21:28:48.709Z
 updated-on: 2024-03-29T21:38:38.239Z
 published-on: 2024-03-29T21:38:38.239Z
-featured: false
 description: "Portable User Storage for Dapps"
 category: tooling-productivity
 tags:

@@ -11,7 +11,6 @@ description: >-
   LabWeek23, Filecoin Day featured updates from Filecoin Foundation (FF) and
   Filecoin Foundation for the Decentralized Web (FFDW), discussed the
   intersection of artificial intelligence and decentralized storage, and more.
-featured: false
 category: news
 image:
   url: /assets/images/231120-fd-fpd.png

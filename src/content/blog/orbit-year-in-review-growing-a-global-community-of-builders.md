@@ -4,7 +4,6 @@ slug: orbit-year-in-review-growing-a-global-community-of-builders
 created-on: 2023-12-07T13:50:04.187Z
 updated-on: 2023-12-07T13:50:04.200Z
 published-on: 2023-12-07T13:50:04.211Z
-featured: false
 category: ecosystem
 description: In 2023, the Filecoin Orbit program helped seed a new crop of
   thousands of builders in the Filecoin ecosystem.

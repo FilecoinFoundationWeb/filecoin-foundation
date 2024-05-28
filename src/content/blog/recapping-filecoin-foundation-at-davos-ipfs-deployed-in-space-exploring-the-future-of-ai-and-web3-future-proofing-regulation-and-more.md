@@ -4,7 +4,6 @@ slug: recapping-filecoin-foundation-at-davos-ipfs-deployed-in-space-exploring-th
 created-on: 2024-02-15T14:07:25.997Z
 updated-on: 2024-02-15T14:07:26.019Z
 published-on: 2024-02-15T14:07:26.031Z
-featured: false
 category: blog
 description: The Filecoin Sanctuary in Davos brought together the world’s brightest minds across business, government, and technology to discuss the future of the decentralized web.
 image:

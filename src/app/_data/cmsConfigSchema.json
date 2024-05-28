@@ -293,7 +293,7 @@
               ]
             },
             {
-              "name": "featured_ecosystem_projects",
+              "name": "featured_entry",
               "label": "Featured Ecosystem Projects",
               "widget": "relation",
               "required": false,
@@ -435,7 +435,7 @@
               ]
             },
             {
-              "name": "featured_post",
+              "name": "featured_entry",
               "label": "Featured Post",
               "widget": "relation",
               "collection": "blog",
@@ -446,8 +446,7 @@
               ],
               "display_fields": [
                 "title"
-              ],
-              "required": true
+              ]
             },
             {
               "name": "seo",
@@ -850,7 +849,7 @@
               ]
             },
             {
-              "name": "featured_event",
+              "name": "featured_entry",
               "label": "Featured Event",
               "widget": "relation",
               "collection": "events",
@@ -861,8 +860,7 @@
               ],
               "display_fields": [
                 "title"
-              ],
-              "required": true
+              ]
             },
             {
               "name": "seo",
@@ -1157,14 +1155,12 @@
         {
           "name": "title",
           "label": "Title",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "created-on",
           "label": "Created On",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "updated-on",
@@ -1177,13 +1173,6 @@
           "label": "Published On",
           "widget": "datetime",
           "required": false
-        },
-        {
-          "name": "featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
         },
         {
           "name": "category",
@@ -1219,20 +1208,17 @@
         {
           "name": "description",
           "label": "Description",
-          "widget": "text",
-          "required": true
+          "widget": "text"
         },
         {
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": true,
           "fields": [
             {
               "name": "url",
               "label": "URL",
               "widget": "image",
-              "required": true,
               "allow_multiple": false
             },
             {
@@ -1417,14 +1403,12 @@
         {
           "name": "title",
           "label": "Company Name",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "created-on",
           "label": "Created On",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "updated-on",
@@ -1439,30 +1423,20 @@
           "required": false
         },
         {
-          "name": "featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
-        },
-        {
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": true,
           "fields": [
             {
               "name": "url",
               "label": "URL",
               "widget": "image",
-              "required": true,
               "allow_multiple": false
             },
             {
               "name": "alt",
               "label": "Alt Text",
-              "widget": "string",
-              "required": true
+              "widget": "string"
             }
           ]
         },
@@ -1470,7 +1444,6 @@
           "name": "category",
           "label": "Category",
           "widget": "relation",
-          "required": true,
           "collection": "ecosystem_projects_categories",
           "value_field": "slug",
           "search_fields": [
@@ -1484,7 +1457,6 @@
           "name": "subcategories",
           "label": "Subcategories",
           "widget": "relation",
-          "required": true,
           "collection": "ecosystem_projects_subcategories",
           "value_field": "slug",
           "search_fields": [
@@ -1684,8 +1656,7 @@
         {
           "name": "website",
           "label": "Website",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "repo",
@@ -1697,7 +1668,6 @@
           "name": "tech",
           "label": "Technologies Used",
           "widget": "select",
-          "required": true,
           "multiple": true,
           "options": [
             "filecoin",
@@ -1825,14 +1795,12 @@
         {
           "name": "title",
           "label": "Title",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "created-on",
           "label": "Created On",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "updated-on",
@@ -1847,36 +1815,31 @@
           "required": false
         },
         {
-          "name": "featured",
-          "label": "Featured",
-          "widget": "boolean",
-          "required": false,
-          "default": false
-        },
-        {
           "name": "description",
           "label": "Description",
           "widget": "string",
           "required": false
         },
         {
-          "name": "cta",
-          "label": "CTA",
+          "name": "location",
+          "label": "Location",
+          "widget": "string"
+        },
+        {
+          "name": "external-link",
+          "label": "External Link",
           "widget": "object",
           "required": false,
           "fields": [
             {
-              "name": "url",
-              "label": "URL",
-              "widget": "string",
-              "required": true
+              "name": "href",
+              "label": "Href",
+              "widget": "string"
             },
             {
               "name": "text",
               "label": "Text",
-              "widget": "string",
-              "required": true,
-              "default": "Learn More"
+              "widget": "string"
             }
           ]
         },
@@ -1884,7 +1847,6 @@
           "name": "start-date",
           "label": "Start Date",
           "widget": "datetime",
-          "required": true,
           "hint": "First day of event"
         },
         {
@@ -1897,8 +1859,7 @@
         {
           "name": "location",
           "label": "Location",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "image",
@@ -1909,31 +1870,12 @@
             {
               "name": "url",
               "label": "Image",
-              "widget": "image",
-              "required": true
+              "widget": "image"
             },
             {
               "name": "alt",
               "label": "Alt Text",
-              "widget": "string",
-              "required": true
-            }
-          ]
-        },
-        {
-          "name": "event-type",
-          "label": "Event Type",
-          "widget": "select",
-          "required": false,
-          "default": "event",
-          "options": [
-            {
-              "label": "Event",
-              "value": "event"
-            },
-            {
-              "label": "Hackathon",
-              "value": "hackathon"
+              "widget": "string"
             }
           ]
         },

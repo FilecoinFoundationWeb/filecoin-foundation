@@ -4,7 +4,6 @@ slug: labdao
 created-on: 2024-03-29T21:28:53.071Z
 updated-on: 2024-03-29T21:44:57.882Z
 published-on: 2024-03-29T21:44:57.882Z
-featured: false
 description: "The first open research organization built for computational life sciences"
 category: science-climate-space
 tags:

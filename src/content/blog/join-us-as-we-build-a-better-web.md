@@ -7,7 +7,6 @@ description: More than half of the world’s population is online and connected.
   Collectively, we create more than 2.5 quintillion bytes of data daily — from
   photos and videos, tweets and texts, Reddit posts and research reports, and so
   much more.
-featured: false
 image:
   url: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
   alt: null

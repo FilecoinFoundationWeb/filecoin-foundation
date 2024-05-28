@@ -4,7 +4,6 @@ title: >-
   Halo licensing and creates grant pool for Filecoin-Zcash projects
 slug: >-
   new-agreement-between-filecoin-foundation-and-electric-coin-co-simplifies-halo-licensing-and-creates-grant-pool-for-filecoin-zcash-projects
-featured: false
 description: null
 image:
   url: >-

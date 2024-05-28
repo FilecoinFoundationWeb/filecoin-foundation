@@ -10,7 +10,6 @@ description: >-
 
 
   Filecoin Foundation (FF) and Lockheed Martin are working together to develop a program for deploying the Interplanetary File System (IPFS) in space.
-featured: false
 image:
   url: /assets/images/01-lockheed-p-1080.png
   alt: null

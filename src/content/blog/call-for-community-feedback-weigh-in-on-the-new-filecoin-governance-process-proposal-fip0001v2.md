@@ -5,7 +5,6 @@ slug: call-for-community-feedback-weigh-in-on-the-new-filecoin-governance-proces
 created-on: 2023-10-18T18:21:45.309Z
 updated-on: 2023-10-18T18:21:45.332Z
 published-on: 2023-10-18T18:21:45.346Z
-featured: false
 category: ecosystem
 description: After several months of in-depth research, consultations, and
   community engagements, Filecoin Foundation is proud to announce the release of

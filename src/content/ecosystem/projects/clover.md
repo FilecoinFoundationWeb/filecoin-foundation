@@ -4,7 +4,6 @@ slug: clover
 created-on: 2024-03-29T21:28:50.458Z
 updated-on: 2024-03-29T21:40:25.531Z
 published-on: 2024-03-29T21:40:25.531Z
-featured: false
 description: "Communication for DAO operators."
 category: tooling-productivity
 tags:

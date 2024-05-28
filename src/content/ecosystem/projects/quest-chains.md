@@ -4,7 +4,6 @@ slug: quest-chains
 created-on: 2024-03-29T21:28:54.146Z
 updated-on: 2024-03-29T21:47:21.880Z
 published-on: 2024-03-29T21:47:21.880Z
-featured: false
 description: "Quest Chains is a protocol, an SDK, and a platform that allows users to create and complete quests."
 category: media-entertainment
 tags:

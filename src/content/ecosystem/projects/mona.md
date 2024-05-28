@@ -4,7 +4,6 @@ slug: mona
 created-on: 2024-03-29T21:28:53.652Z
 updated-on: 2024-03-29T21:45:56.946Z
 published-on: 2024-03-29T21:45:56.946Z
-featured: false
 description: "Mona's mission is to empower billions of people to create, collect, and share high quality experiences on the blockchain."
 category: media-entertainment
 tags:

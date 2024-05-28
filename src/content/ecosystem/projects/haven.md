@@ -4,7 +4,6 @@ slug: haven
 created-on: 2024-03-29T21:28:52.020Z
 updated-on: 2024-03-29T21:44:28.465Z
 published-on: 2024-03-29T21:44:28.465Z
-featured: false
 description: "A new intermediation business for Depin that will start with a focus on Filecoin"
 category: finance
 tags:

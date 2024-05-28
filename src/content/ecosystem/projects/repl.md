@@ -4,7 +4,6 @@ slug: "repl"
 created-on: "2024-01-24T13:41:08.340Z"
 updated-on: "2024-01-24T13:41:08.357Z"
 published-on: "2024-01-24T13:41:08.367Z"
-featured: false
 description: "Repl is the first repledging Protocol for pledged FIL assets. It aims to enhance the efficiency of pledged FIL, remove idiosyncratic risks among Filecoin storage providers, and lower the complexity for people to earn Filecoin rewards."
 category: finance
 tags:

@@ -5,7 +5,6 @@ slug: democracy’s-library-announces-more-than-a-petabyte-of-government-data-up
 created-on: 2023-09-21T17:34:18.773Z
 updated-on: 2023-09-21T17:34:18.789Z
 published-on: 2023-09-21T17:34:18.798Z
-featured: false
 description: The Democracy’s Library project has announced that more than one
   petabyte of material has been uploaded to the Filecoin network, including
   information collected by the Internet Archive in a 16-year-old project, called

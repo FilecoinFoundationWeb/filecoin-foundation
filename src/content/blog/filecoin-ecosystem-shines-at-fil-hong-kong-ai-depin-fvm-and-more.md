@@ -4,7 +4,6 @@ slug: filecoin-ecosystem-shines-at-fil-hong-kong-ai-depin-fvm-and-more
 created-on: 2024-04-22T15:09:42.759Z
 updated-on: 2024-04-22T15:09:42.769Z
 published-on: 2024-04-22T15:09:42.779Z
-featured: false
 category: null
 description: The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by ND Labs and supported by Filecoin Foundation.
 image:

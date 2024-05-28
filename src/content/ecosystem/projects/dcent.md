@@ -4,7 +4,6 @@ slug: "dcent"
 created-on: 2024-01-04T22:40:24.557Z
 updated-on: 2024-01-05T21:34:55.753Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "DCENT is a Filecoin storage provider that specializes in onboarding data to the Filecoin network."
 category: storage
 tags:

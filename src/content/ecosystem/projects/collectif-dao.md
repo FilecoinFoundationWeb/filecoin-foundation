@@ -4,7 +4,6 @@ slug: collectif-dao
 created-on: 2024-01-24T13:50:38.326Z
 updated-on: 2024-01-24T13:50:38.340Z
 published-on: 2024-01-24T13:50:38.349Z
-featured: false
 description: "Decentralized non-custodial liquid staking protocol bringing capital efficient storage an mining to the Filecoin network"
 category: finance
 tags:

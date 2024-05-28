@@ -4,7 +4,6 @@ slug: vsharecloud
 created-on: 2024-04-05T14:14:29.910Z
 updated-on: 2024-04-05T14:14:29.925Z
 published-on: 2024-04-05T14:14:29.937Z
-featured: false
 description: "Open-source distributed storage and computing platform."
 category: storage
 tags:

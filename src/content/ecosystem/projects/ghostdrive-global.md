@@ -4,7 +4,6 @@ slug: ghostdrive-global
 created-on: 2024-03-29T21:28:50.750Z
 updated-on: 2024-05-16T14:59:06.623Z
 published-on: 2024-05-16T14:59:06.634Z
-featured: false
 description: "Protects user privacy and data sovereignty with client-side encryption and decentralized storage."
 category: storage
 tags:

@@ -4,7 +4,6 @@ slug: announcing-the-venushub-platform
 created-on: "2023-04-21T07:26:09.179Z"
 updated-on: "2023-04-21T07:26:09.179Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   One of the main goals in building out the Filecoin network is to ensure the
   Mainnet is secure and resilient.

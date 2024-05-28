@@ -4,7 +4,6 @@ slug: "gainforest"
 created-on: 2024-01-04T22:40:26.173Z
 updated-on: 2024-01-05T21:37:09.707Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "GainForest is a non-profit focused on reversing deforestation and climate change through blockchain technology."
 category: science-climate-space
 tags:

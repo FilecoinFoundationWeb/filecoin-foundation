@@ -9,7 +9,6 @@ description: "Over the past several months, the Filecoin community has been
   Sector Duration Multiplier (SDM), which would deliver additional block rewards
   to storage providers who elect to commit storage resources to the network for
   a longer period of time.  "
-featured: false
 image:
   url: /assets/images/0621-2022-01.png
   alt: null

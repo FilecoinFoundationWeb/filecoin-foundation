@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   FilSwan Awarded Chainlink-Filecoin Joint Grant to Create Multi-Chain
   Decentralized Data Storage Payment Solution

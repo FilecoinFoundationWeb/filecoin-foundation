@@ -4,7 +4,6 @@ slug: encryption-pinner
 created-on: 2024-04-05T01:09:47.866Z
 updated-on: 2024-04-05T01:09:47.898Z
 published-on: 2024-04-05T01:09:47.907Z
-featured: false
 description: "Encryption Pinner is a simple development tool, which allows users to encrypt their files with an encryption method of their choice, and then pin them to their personal business Pinata gateway."
 category: tooling-productivity
 tags:

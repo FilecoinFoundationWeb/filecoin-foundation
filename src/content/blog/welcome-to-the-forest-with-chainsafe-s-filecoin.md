@@ -4,7 +4,6 @@ slug: welcome-to-the-forest-with-chainsafe-s-filecoin
 created-on: 2023-04-21T07:32:18.332Z
 updated-on: 2023-04-21T07:32:18.332Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: Filecoin Mainnet launched one year ago this week, opening up the
   decentralized storage protocol to developers, storage providers, and Web3
   enthusiasts worldwide.

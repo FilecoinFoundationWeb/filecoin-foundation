@@ -4,7 +4,6 @@ slug: announcing-watermelon-nv21-upgrade-extended-sector-commitments-synthetic-p
 created-on: 2023-12-12T14:04:50.147Z
 updated-on: 2023-12-12T14:04:50.157Z
 published-on: 2023-12-12T14:04:50.164Z
-featured: false
 category: null
 description: The arrival of the nv21 Network Upgrade on mainnet is here! This upgrade codenamed ‘Watermelon’ brings a wave of enhancements and new features aimed at bolstering the network’s efficiency and robustness.
 image:

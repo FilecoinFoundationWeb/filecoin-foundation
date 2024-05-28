@@ -4,7 +4,6 @@ slug: cavalry
 created-on: 2024-01-04T22:40:25.195Z
 updated-on: 2024-01-05T21:34:45.600Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "Cavalry is 2D animation software for Mac and Windows."
 category: tooling-productivity
 tags:

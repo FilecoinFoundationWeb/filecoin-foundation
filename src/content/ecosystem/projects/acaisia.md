@@ -4,7 +4,6 @@ slug: acaisia
 created-on: 2024-01-12T19:56:32.789Z
 updated-on: 2024-01-12T19:56:32.835Z
 published-on: 2024-01-12T19:56:32.887Z
-featured: false
 description: "By leveraging decentralized technologies, Acaisia offers affordable, secure, and transparent computing and storage options."
 category: tooling-productivity
 tags:

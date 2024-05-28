@@ -4,7 +4,6 @@ slug: nulink
 created-on: 2024-03-20T13:35:36.210Z
 updated-on: 2024-03-20T13:35:36.273Z
 published-on: 2024-03-20T13:35:36.295Z
-featured: false
 description: "ZK Provable Data Privacy Solution for DApps"
 category: tooling-productivity
 tags:

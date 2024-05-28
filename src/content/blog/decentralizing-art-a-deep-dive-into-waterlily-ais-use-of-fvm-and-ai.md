@@ -4,7 +4,6 @@ slug: decentralizing-art-a-deep-dive-into-waterlily-ais-use-of-fvm-and-ai
 created-on: 2023-06-28T15:39:01.156Z
 updated-on: 2023-06-28T15:39:01.175Z
 published-on: 2023-06-28T15:39:01.182Z
-featured: false
 description: Explore Waterlily.ai's innovative approach to AI-generated art,
   leveraging Filecoin for ethical compensation and transparency. Dive into an
   insightful conversation with Allie Haire on the future of AI and blockchain in

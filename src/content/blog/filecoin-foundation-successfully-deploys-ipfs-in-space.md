@@ -4,7 +4,6 @@ slug: filecoin-foundation-successfully-deploys-ipfs-in-space
 created-on: 2024-01-16T02:43:22.627Z
 updated-on: 2024-01-16T02:43:22.642Z
 published-on: 2024-01-16T02:43:22.656Z
-featured: false
 category: blog
 description: Filecoin Foundation (FF) successfully completed a first-of-its-kind mission deploying the InterPlanetary File System (IPFS) in space. The recent demonstration involved sending files from Earth to orbit and back using an implementation of the IPFS protocol designed for space communications.
 image:

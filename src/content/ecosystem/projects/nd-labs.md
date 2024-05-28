@@ -4,7 +4,6 @@ slug: nd-labs
 created-on: 2024-03-20T14:02:57.543Z
 updated-on: 2024-03-20T14:02:57.582Z
 published-on: 2024-03-20T14:02:57.599Z
-featured: false
 description: "Aims to lower the entry barriers and costs for Web3 users accessing decentralized storage networks."
 category: storage
 tags:

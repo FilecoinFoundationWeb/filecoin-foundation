@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: Ukraine Art Collective’s (UkraineArtCo) mission is to unite
   artists around the world to contribute their creative talents to support the
   Ukrainian people in their fight for freedom.
-featured: false
 image:
   url: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
   alt: null

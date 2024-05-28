@@ -4,7 +4,6 @@ slug: eqty-lab-arc-collective
 created-on: 2024-03-29T21:28:50.218Z
 updated-on: 2024-03-29T21:41:34.450Z
 published-on: 2024-03-29T21:41:34.450Z
-featured: false
 description: "EQTY Lab weaves together machine and human processes to establish new trust in AI."
 category: artificial-intelligence
 tags:

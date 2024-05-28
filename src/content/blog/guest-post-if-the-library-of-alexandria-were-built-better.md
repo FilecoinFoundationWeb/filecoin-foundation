@@ -4,7 +4,6 @@ slug: guest-post-if-the-library-of-alexandria-were-built-better
 created-on: 2024-02-12T15:40:26.928Z
 updated-on: 2024-02-12T15:40:26.957Z
 published-on: 2024-02-12T15:40:26.981Z
-featured: false
 category: blog
 description: Guest Post from Museum of Crypto Art on preserving the crypto art movement on the Filecoin network.
 image:

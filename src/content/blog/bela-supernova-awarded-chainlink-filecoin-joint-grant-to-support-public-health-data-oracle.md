@@ -7,7 +7,6 @@ slug: >-
 created-on: "2023-04-21T07:26:16.008Z"
 updated-on: "2023-04-21T07:26:16.008Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   In 2021, Chainlink and Filecoin launched a joint grant initiative to
   accelerate the development of hybrid smart contracts that combine Chainlink

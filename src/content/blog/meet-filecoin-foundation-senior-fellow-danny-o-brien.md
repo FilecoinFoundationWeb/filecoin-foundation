@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Meet Filecoin Foundation Senior Fellow Danny O’Brien
 description: >-
   The Filecoin Foundation (FF) and the Filecoin Foundation for the Decentralized

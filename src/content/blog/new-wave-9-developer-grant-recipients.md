@@ -4,7 +4,6 @@ slug: new-wave-9-developer-grant-recipients
 created-on: 2023-04-21T07:31:38.800Z
 updated-on: 2023-04-21T07:31:38.800Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "The Filecoin Foundation and Protocol Labs award funding on a
   monthly basis to critical development projects to foster a more robust and
   efficient decentralized web through the Filecoin ecosystem. "

@@ -7,7 +7,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: "Numbers Protocol: Revolutionizing the creator economy by
   empowering artists to control, monetize, and protect their digital assets in
   the Web2 and Web3 landscape."
-featured: false
 image:
   url: /assets/images/0315-dgs-numbers.png
   alt: null

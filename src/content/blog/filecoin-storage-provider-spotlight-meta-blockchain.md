@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — Meta Blockchain
 description: >-
   Founded in 2018, Meta Blockchain is a rapidly growing, ambitious South Korean

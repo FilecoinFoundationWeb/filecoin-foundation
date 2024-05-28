@@ -1,5 +1,4 @@
 ---
-featured: false
 title: "Dev Grant Spotlight: Freenet 2"
 description: >-
   Freenet is free software that lets users anonymously chat, share files, use

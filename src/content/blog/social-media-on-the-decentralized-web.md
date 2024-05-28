@@ -4,7 +4,6 @@ slug: social-media-on-the-decentralized-web
 created-on: "2023-04-21T07:31:50.469Z"
 updated-on: "2023-04-21T07:31:50.469Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   In recent days, many Twitter users have sought alternative platforms, like the
   decentralized social media network Mastodon, in the face of controversial

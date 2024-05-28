@@ -4,7 +4,6 @@ slug: storing-ai-datasets-on-the-decentralized-web
 created-on: "2023-04-21T07:31:59.463Z"
 updated-on: "2023-04-21T07:31:59.463Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Austin Carson is president of ​​SeedAI, a nonprofit, nonpartisan advocacy
   organization founded to help develop artificial intelligence (AI) resources

@@ -7,7 +7,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: Cisco predicts that by 2022, internet protocol (IP) traffic will
   surpass all prior “internet years” up to 2016 combined. As internet traffic
   multiplies, two trends are developing in parallel.
-featured: false
 image:
   url: /assets/images/64423af3e3c08f488e4f519c_1-pyb3swiscnbniykvqyrrdq.png
   alt: null

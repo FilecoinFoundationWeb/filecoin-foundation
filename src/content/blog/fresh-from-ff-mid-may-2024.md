@@ -4,7 +4,6 @@ slug: fresh-from-ff-mid-may-2024
 created-on: 2024-05-15T17:23:49.358Z
 updated-on: 2024-05-15T17:23:49.368Z
 published-on: 2024-05-15T17:23:49.377Z
-featured: false
 category: blog
 description: "Check out the latest updates about what the Filecoin Foundation has been up to."
 image:

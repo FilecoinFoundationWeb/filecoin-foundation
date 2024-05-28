@@ -4,7 +4,6 @@ slug: "fission"
 created-on: 2024-01-04T22:40:25.798Z
 updated-on: 2024-01-05T21:36:47.213Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "Fission is building the identity, data, and compute protocols for the future of the Internet."
 category: tooling-productivity
 tags:

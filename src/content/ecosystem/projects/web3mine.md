@@ -4,7 +4,6 @@ slug: web3mine
 created-on: 2024-03-29T21:28:55.160Z
 updated-on: 2024-03-29T21:50:12.309Z
 published-on: 2024-03-29T21:50:12.309Z
-featured: false
 description: "AWS of decentralized computing"
 category: finance
 tags:

@@ -4,7 +4,6 @@ slug: nebula-block
 created-on: 2024-03-20T13:58:36.655Z
 updated-on: 2024-03-20T13:58:36.700Z
 published-on: 2024-03-20T13:58:36.718Z
-featured: false
 description: "Web3 infrastructure provider, renowned for offering comprehensive Web3 hosting solutions worldwide."
 category: storage
 tags:

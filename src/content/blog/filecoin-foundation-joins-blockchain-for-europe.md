@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Foundation Joins Blockchain for Europe
 description: >-
   We are excited to announce that the Filecoin Foundation has been accepted as a

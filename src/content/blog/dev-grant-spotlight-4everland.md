@@ -4,7 +4,6 @@ slug: dev-grant-spotlight-4everland
 created-on: "2023-04-21T07:26:29.881Z"
 updated-on: "2023-04-21T07:26:29.881Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   4EVERLAND is a blockchain technology-powered cloud computing platform designed
   to help developers build Web3 applications efficiently, with technical

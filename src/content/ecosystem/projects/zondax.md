@@ -4,7 +4,6 @@ slug: "zondax"
 created-on: 2024-01-04T22:40:29.429Z
 updated-on: 2024-01-05T21:40:22.310Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "Zondax is a blockchain service provider that delivers services and software solutions in the fields of security, data indexing, integration, and protocol engineering."
 category: tooling-productivity
 tags:

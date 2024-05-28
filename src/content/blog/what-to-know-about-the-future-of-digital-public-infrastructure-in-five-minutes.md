@@ -4,7 +4,6 @@ slug: what-to-know-about-the-future-of-digital-public-infrastructure-in-five-min
 created-on: 2023-07-07T15:01:07.700Z
 updated-on: 2023-07-07T15:01:07.716Z
 published-on: 2023-07-07T15:01:07.728Z
-featured: false
 description: Filecoin Foundation Senior Fellow Danny O’Brien spoke with Ethan
   Zuckerman, a professor at the University of Massachusetts at Amherst, about
   the future of digital public infrastructure and how communities can govern

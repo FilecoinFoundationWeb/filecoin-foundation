@@ -4,7 +4,6 @@ slug: blocz
 created-on: 2024-04-05T02:22:34.349Z
 updated-on: 2024-04-05T02:22:34.361Z
 published-on: 2024-04-05T02:22:34.372Z
-featured: false
 description: "5G, edge, private cloud, cloud backup, disaster recovery, cloud migrations, and complex secure data storage solutions."
 category: storage
 tags:

@@ -4,7 +4,6 @@ slug: metapals
 created-on: 2024-03-29T21:28:53.034Z
 updated-on: 2024-03-29T21:45:37.973Z
 published-on: 2024-03-29T21:45:37.973Z
-featured: false
 description: "MetaPals is not just about introducing another digital platform; it's about reshaping how we perceive and interact with AI. By focusing on emotional resonance, MetaPals is fostering a new era of digital companionship."
 category: artificial-intelligence
 tags:

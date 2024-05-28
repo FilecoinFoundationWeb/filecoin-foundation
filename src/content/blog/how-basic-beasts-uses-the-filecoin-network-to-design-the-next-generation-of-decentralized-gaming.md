@@ -5,7 +5,6 @@ slug: how-basic-beasts-uses-the-filecoin-network-to-design-the-next-generation-o
 created-on: 2023-07-31T15:58:02.267Z
 updated-on: 2023-07-31T15:58:02.277Z
 published-on: 2023-07-31T15:58:02.285Z
-featured: false
 description: Created by 10-year-old gamer beastkid21 and his brother, bz, who
   took their inspiration from the popularity of beloved classics like Pokémon
   and Tamagotchi, Basic Beasts aims to bring fun back to gaming while enabling

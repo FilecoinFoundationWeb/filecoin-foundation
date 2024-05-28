@@ -4,7 +4,6 @@ slug: wave-11-dev-grant-recipients
 created-on: 2023-04-21T07:32:16.777Z
 updated-on: 2023-04-21T07:32:16.777Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: Filecoin Foundation and Protocol Labs periodically award funding
   to critical development projects to foster a more robust and efficient
   decentralized web through the Filecoin ecosystem.

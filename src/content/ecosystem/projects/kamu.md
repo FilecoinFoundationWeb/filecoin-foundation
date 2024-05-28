@@ -4,7 +4,6 @@ slug: kamu
 created-on: 2024-04-04T02:05:42.579Z
 updated-on: 2024-04-04T02:05:42.602Z
 published-on: 2024-04-04T02:05:42.613Z
-featured: false
 description: "Planet-scale data pipeline addressing composability of on & off-chain data"
 category: storage
 tags:

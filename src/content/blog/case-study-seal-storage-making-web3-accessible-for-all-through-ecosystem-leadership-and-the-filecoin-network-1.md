@@ -7,7 +7,6 @@ slug: >-
 created-on: "2023-04-21T07:26:26.517Z"
 updated-on: "2023-04-21T07:26:26.517Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   As one of the earliest providers on the Filecoin network, Seal Storage is an
   established leader in the ecosystem. The company is a top storage provider in

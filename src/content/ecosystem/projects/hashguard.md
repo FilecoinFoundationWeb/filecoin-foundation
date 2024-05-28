@@ -4,7 +4,6 @@ slug: hashguard
 created-on: 2024-03-20T14:14:44.020Z
 updated-on: 2024-03-20T14:14:44.067Z
 published-on: 2024-03-20T14:14:44.167Z
-featured: false
 description: "Simple access to the decentralized cloud, guaranteeing the sovereignty and resilience of your data."
 category: storage
 tags:

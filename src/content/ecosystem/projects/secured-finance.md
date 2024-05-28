@@ -4,7 +4,6 @@ slug: secured-finance
 created-on: 2024-03-29T21:28:54.282Z
 updated-on: 2024-03-29T21:49:27.150Z
 published-on: 2024-03-29T21:49:27.150Z
-featured: false
 description: "Interbank-grade P2P Capital Markets Protocol"
 category: finance
 tags:

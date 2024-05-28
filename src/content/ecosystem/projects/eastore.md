@@ -4,7 +4,6 @@ slug: eastore
 created-on: 2024-04-05T00:15:15.134Z
 updated-on: 2024-04-05T00:15:15.152Z
 published-on: 2024-04-05T00:15:15.159Z
-featured: false
 description: "It is a complete storage solution for Filecoin network"
 category: storage
 tags:

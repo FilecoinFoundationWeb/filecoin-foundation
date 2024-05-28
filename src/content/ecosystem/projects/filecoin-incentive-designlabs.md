@@ -4,7 +4,6 @@ slug: filecoin-incentive-designlabs
 created-on: 2024-05-16T14:44:42.655Z
 updated-on: 2024-05-16T14:44:42.681Z
 published-on: 2024-05-16T14:44:42.701Z
-featured: false
 description: "Incentivizes (good) behavior on Filecoin. We provide tooling and compliance services."
 category: tooling-productivity
 tags:

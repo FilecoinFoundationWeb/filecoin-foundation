@@ -4,7 +4,6 @@ slug: tellor
 created-on: 2024-03-29T21:28:55.457Z
 updated-on: 2024-03-29T21:49:49.078Z
 published-on: 2024-03-29T21:49:49.078Z
-featured: false
 description: "A Decentralized Oracle Protocol"
 category: storage
 tags:

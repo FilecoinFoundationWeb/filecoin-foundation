@@ -4,7 +4,6 @@ slug: piknik
 created-on: "2024-01-04T22:40:27.442Z"
 updated-on: "2024-01-05T21:38:36.175Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
 description: "Headquartered in San Diego, California, PiKNiK is an enterprise-grade decentralized storage provider that makes it easy for anyone to store and provide storage on the Filecoin network, without any technical knowledge required."
 category: storage
 tags:

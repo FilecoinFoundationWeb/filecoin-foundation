@@ -9,7 +9,6 @@ description: On April 27, 2023, the Filecoin network launched the
   in the realm of decentralized storage. This technical milestone brings a host
   of enhancements and improvements to the Filecoin ecosystem, enabling greater
   efficiency, security, and usability.
-featured: false
 image:
   url: /assets/images/06012023-lightningupgrade.png
   alt: null

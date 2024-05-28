@@ -4,7 +4,6 @@ slug: ankr
 created-on: 2024-03-29T21:28:48.751Z
 updated-on: 2024-03-29T21:35:32.116Z
 published-on: 2024-03-29T21:35:32.116Z
-featured: false
 description: "Ankr x Filecoin RPC Integration"
 category: tooling-productivity.md
 tags:

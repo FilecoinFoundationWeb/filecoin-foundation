@@ -4,7 +4,6 @@ slug: fvm-dapp
 created-on: 2024-04-04T20:33:26.450Z
 updated-on: 2024-04-04T20:33:26.461Z
 published-on: 2024-04-04T20:33:26.469Z
-featured: false
 description: "A full-stack starter template with React & Hardhat to develop, deploy, and test Solidity smart contracts on the FEVM network."
 category: tooling-productivity
 tags:

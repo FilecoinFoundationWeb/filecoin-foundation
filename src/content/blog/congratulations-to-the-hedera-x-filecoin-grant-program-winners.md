@@ -4,7 +4,6 @@ slug: congratulations-to-the-hedera-x-filecoin-grant-program-winners
 created-on: 2023-04-21T07:26:28.269Z
 updated-on: 2023-04-21T07:26:28.269Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "The Filecoin Foundation is pleased to announce the winners of
   the Hedera x Filecoin grant program. "
 image:

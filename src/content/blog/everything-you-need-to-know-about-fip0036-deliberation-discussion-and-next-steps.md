@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   Everything You Need to Know About FIP0036 — Deliberation, Discussion, and Next
   Steps

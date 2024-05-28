@@ -4,7 +4,6 @@ slug: dev-grant-spotlight-datastation
 created-on: 2023-04-21T07:26:33.536Z
 updated-on: 2023-04-21T07:26:33.536Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: "DataStation is a platform that enhances the decentralized
   storage experience on the Filecoin network by providing storage providers and
   clients with standardized storage performance data in a format that's both

@@ -4,7 +4,6 @@ slug: "ntent"
 created-on: "2024-01-04T22:40:27.335Z"
 updated-on: "2024-01-05T21:38:02.182Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
 description: "Ntent is a digital art and immersive experience collective and smart contract platform for generative and dynamic art."
 category: "media-entertainment"
 tags:

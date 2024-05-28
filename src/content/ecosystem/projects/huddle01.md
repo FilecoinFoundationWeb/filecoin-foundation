@@ -4,7 +4,6 @@ slug: "huddle01"
 created-on: 2024-01-04T22:40:26.378Z
 updated-on: 2024-01-05T21:37:26.124Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "Built on top of Filecoin, Huddle01 is a decentralized, real-time communication network with live audio and video software development kit (SDK) for the web and mobile."
 category: media-entertainment
 tags:

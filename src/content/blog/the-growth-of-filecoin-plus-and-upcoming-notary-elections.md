@@ -1,5 +1,4 @@
 ---
-featured: false
 title: The Growth of Filecoin Plus and Upcoming Notary Elections
 description: >-
   This winter, Filecoin Plus held its fourth round of Notary elections. The

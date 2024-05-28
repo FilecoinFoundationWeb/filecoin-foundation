@@ -4,7 +4,6 @@ slug: niftyguilds
 created-on: 2024-03-29T21:28:53.605Z
 updated-on: 2024-03-29T21:47:03.349Z
 published-on: 2024-03-29T21:47:03.349Z
-featured: false
 description: "A web3 based NFT gated group chat platform with blockchain level security."
 category: tooling-productivity
 tags:

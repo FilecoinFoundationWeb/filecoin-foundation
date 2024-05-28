@@ -5,7 +5,6 @@ slug: spotlight-new-filecoin-virtual-machine-projects-unlocking-smart-contract-p
 created-on: 2023-04-21T07:31:52.010Z
 updated-on: 2023-04-21T07:31:52.010Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: The Filecoin community is expanding the network to create a
   decentralized, efficient, and robust platform for humanity’s data by
   introducing programmability to the network.

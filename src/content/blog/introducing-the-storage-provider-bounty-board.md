@@ -7,7 +7,6 @@ description: The Filecoin Foundation has launched Storage Provider Bounty
   Board, an open tool for coordinating work priorities and tapping the
   collective knowledge of the Filecoin ecosystem in crowdsourcing solutions for
   the storage provider community.
-featured: false
 image:
   url: /assets/images/image-c-08.png
   alt: null

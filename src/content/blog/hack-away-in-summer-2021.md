@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:27:44.240Z
 published-on: 2023-04-21T07:33:56.200Z
 description: This summer, the Filecoin Foundation is supporting numerous
   hackathons for community members.
-featured: false
 image:
   url: /assets/images/image-c-31.png
   alt: null

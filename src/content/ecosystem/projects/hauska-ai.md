@@ -4,7 +4,6 @@ slug: hauska-ai
 created-on: 2024-03-20T19:42:42.027Z
 updated-on: 2024-03-20T19:42:42.041Z
 published-on: 2024-03-20T19:42:42.053Z
-featured: false
 description: "Leads in revolutionizing home design and remodeling with AI and Web3 tech"
 category: artificial-intelligence
 tags:

@@ -4,7 +4,6 @@ slug: 3pad
 created-on: 2024-04-05T17:29:47.705Z
 updated-on: 2024-04-05T17:29:47.714Z
 published-on: 2024-04-05T17:29:47.725Z
-featured: false
 description: "3Pad is a trustless web3 platform that provides users with an WYSIWYG link page for building and managing their online presence by deploying their own Dapp."
 category: tooling-productivity
 tags:

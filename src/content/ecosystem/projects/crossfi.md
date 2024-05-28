@@ -4,7 +4,6 @@ slug: crossfi
 created-on: 2024-01-17T14:44:30.832Z
 updated-on: 2024-01-17T14:44:30.857Z
 published-on: 2024-01-17T14:44:30.872Z
-featured: false
 description: "CrossFi aims to democratize decentralized finance by allowing anyone to create a synthetic asset on the Ethereum blockchain that is a derivative of their assets on any other infrastructure when those assets are staked and collateralized through the CrossFi platform."
 category: finance
 tags:

@@ -4,7 +4,6 @@ slug: expanso
 created-on: 2024-03-29T21:28:52.162Z
 updated-on: 2024-03-29T21:41:50.805Z
 published-on: 2024-03-29T21:41:50.805Z
-featured: false
 description: "Expanso helps leading organizations innovate quickly by helping them architect, implement, and maintain enterprise-grade distributed compute platforms."
 category: tooling-productivity
 tags:

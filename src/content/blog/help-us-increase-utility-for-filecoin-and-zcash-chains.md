@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Help us Increase Utility for Filecoin and Zcash Chains
 description: >-
   Filecoin Foundation (FF) and Electric Coin Co. (ECC) are now accepting grant

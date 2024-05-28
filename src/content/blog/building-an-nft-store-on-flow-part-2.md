@@ -4,7 +4,6 @@ slug: building-an-nft-store-on-flow-part-2
 created-on: "2023-04-21T07:26:21.578Z"
 updated-on: "2023-05-03T11:29:18.473Z"
 published-on: "2023-05-03T12:47:09.568Z"
-featured: false
 description: >-
   This is part two in Filecoin Developer Pan Chasinga’s tutorial on how to
   create a simple NFT marketplace app on the Flow blockchain from scratch, using

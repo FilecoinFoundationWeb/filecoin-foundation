@@ -4,7 +4,6 @@ slug: new-survey-american-consumers-are-ready-to-change-up-to-web3
 created-on: "2023-04-21T07:31:36.890Z"
 updated-on: "2023-04-21T07:31:36.890Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   The results of a new survey of American consumers from the Filecoin Foundation
   reveal that — while Americans trust the internet’s overall resilience, they

@@ -4,7 +4,6 @@ slug: "zentachain"
 created-on: 2024-02-28T23:55:57.776Z
 updated-on: 2024-02-28T23:55:57.787Z
 published-on: 2024-02-28T23:55:57.795Z
-featured: false
 description: "Privacy-focused IoT blockchain networking project that is focused on communication and data storage."
 category: artificial-intelligence
 tags:

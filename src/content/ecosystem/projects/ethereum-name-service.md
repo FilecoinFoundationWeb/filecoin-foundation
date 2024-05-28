@@ -4,7 +4,6 @@ slug: ethereum-name-service
 created-on: 2024-04-05T01:47:43.262Z
 updated-on: 2024-04-05T01:47:43.284Z
 published-on: 2024-04-05T01:47:43.298Z
-featured: false
 description: "ENS support for Filecoin"
 category: tooling-productivity
 tags:

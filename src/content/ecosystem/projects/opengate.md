@@ -4,7 +4,6 @@ slug: opengate
 created-on: "2024-01-04T22:40:28.134Z"
 updated-on: "2024-01-05T16:11:14.542Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
 description: "OpenGate has launched CryptoBear, the first NFT project within the Filecoin ecosystem that accepts FIL as payment. Additionally, OpenGate has introduced the FNS domain project for the FIL blockchain, accessible at www.opengatefns.com."
 category: media-entertainment
 tags:

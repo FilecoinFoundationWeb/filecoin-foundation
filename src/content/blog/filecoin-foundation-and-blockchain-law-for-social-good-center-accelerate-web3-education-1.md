@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   Filecoin Foundation and Blockchain Law for Social Good Center Accelerate Web3
   Education

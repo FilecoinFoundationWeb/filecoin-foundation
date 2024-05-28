@@ -5,7 +5,6 @@ updated-on: 2023-04-21T07:27:15.321Z
 published-on: 2023-04-21T07:33:56.200Z
 description: The Filecoin Foundation and Filecoin Foundation for the
   Decentralized Web shared their board of directors.
-featured: false
 image:
   url: /assets/images/image-c-06.png
   alt: null

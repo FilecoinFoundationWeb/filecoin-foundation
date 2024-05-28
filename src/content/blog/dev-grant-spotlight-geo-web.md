@@ -1,5 +1,4 @@
 ---
-featured: false
 title: "Dev Grant Spotlight: Geo Web"
 description: >-
   The Geo Web project, a participant in Filecoin’s Developer Grants program, is

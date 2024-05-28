@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: As an early storage provider in the Filecoin ecosystem, Dcent has
   been active in growing and encouraging the local community, organizing meetups
   and other events, as well as providing advice to others in the network.
-featured: false
 image:
   url: /assets/images/0524-sps-dcent.png
   alt: null

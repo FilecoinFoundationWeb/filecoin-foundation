@@ -5,7 +5,6 @@ slug: announcing-the-quality-phase-for-filecoin-plus-aligning-on-the-filecoin-pl
 created-on: 2023-04-21T07:26:06.472Z
 updated-on: 2023-04-21T07:26:06.472Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: Filecoin Plus scales utilization of the Filecoin network to store
   humanity’s information by incentivizing data onboarding across use-cases with
   community governed trust mechanisms.

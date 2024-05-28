@@ -4,7 +4,6 @@ slug: orbiting-ethdenver-perspectives-from-a-filecoin-orbit-ambassador
 created-on: 2024-03-25T15:21:33.080Z
 updated-on: 2024-03-25T15:21:33.092Z
 published-on: 2024-03-25T15:21:33.100Z
-featured: false
 category: blog
 description: Against the backdrop of ETHDenver, ambassadors from Filecoin Orbit North America came together to host a Filecoin Ecosystem Showcase event. Read about what this event meant for the community and the future of the Orbit program.
 image:

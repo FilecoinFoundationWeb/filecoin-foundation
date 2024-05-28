@@ -4,7 +4,6 @@ slug: case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science
 created-on: 2023-07-20T12:26:44.398Z
 updated-on: 2023-07-20T12:26:44.412Z
 published-on: 2023-07-20T12:26:44.426Z
-featured: false
 description: The basis of the work by DeSci Labs is to build tools and
   infrastructure that make reproducible science with low barriers to access a
   reality. DeSci Labs is a team of scientists and engineers bringing a modern

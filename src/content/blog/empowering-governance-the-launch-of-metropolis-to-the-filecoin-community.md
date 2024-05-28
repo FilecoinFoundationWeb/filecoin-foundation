@@ -4,7 +4,6 @@ slug: empowering-governance-the-launch-of-metropolis-to-the-filecoin-community
 created-on: 2024-05-13T16:47:45.110Z
 updated-on: 2024-05-13T16:47:45.128Z
 published-on: 2024-05-13T16:47:45.139Z
-featured: false
 category: null
 description: Introducing Metropolis, a temperature check tool for early-stage Filecoin Improvement Proposals.
 image:

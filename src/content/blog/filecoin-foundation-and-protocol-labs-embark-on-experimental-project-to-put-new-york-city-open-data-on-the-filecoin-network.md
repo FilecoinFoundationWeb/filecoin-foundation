@@ -7,7 +7,6 @@ slug: >-
 created-on: "2023-04-21T07:27:13.911Z"
 updated-on: "2023-04-21T07:32:22.903Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   The Filecoin Foundation, an independent organization that supports the
   Filecoin ecosystem and promotes the growth of the decentralized web, and

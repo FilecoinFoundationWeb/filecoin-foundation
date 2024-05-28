@@ -4,7 +4,6 @@ slug: "democracys-library"
 created-on: 2024-01-10T14:53:07.920Z
 updated-on: 2024-01-10T14:53:07.941Z
 published-on: 2024-01-10T14:53:07.961Z
-featured: true
 description: "The Internet Archive’s Democracy’s Library project is creating a free, open collection of government data to ensure that government research and publications from around the world remain permanently accessible to the public."
 category: public-goods-dweb
 tags:

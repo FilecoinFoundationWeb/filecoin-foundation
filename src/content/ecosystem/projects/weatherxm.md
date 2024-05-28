@@ -4,7 +4,6 @@ slug: "weatherxm"
 created-on: 2024-01-04T22:40:29.749Z
 updated-on: 2024-01-05T16:11:14.388Z
 published-on: 2024-01-11T13:26:59.787Z
-featured: false
 description: "WeatherXM is a community-powered weather network."
 category: science-climate-space
 tags:

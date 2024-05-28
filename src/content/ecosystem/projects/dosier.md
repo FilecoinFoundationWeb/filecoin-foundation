@@ -4,7 +4,6 @@ slug: dosier
 created-on: 2024-04-05T23:07:24.299Z
 updated-on: 2024-04-05T23:07:24.311Z
 published-on: 2024-04-05T23:07:24.324Z
-featured: false
 description: "Decentralized ZK Content Delivery Network"
 category: artificial-intelligence
 tags:

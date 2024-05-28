@@ -4,7 +4,6 @@ slug: blockchain-copyright-law
 created-on: 2023-04-21T07:26:17.674Z
 updated-on: 2023-04-21T07:26:17.674Z
 published-on: 2023-04-21T07:33:56.200Z
-featured: false
 description: FF Board Chair Marta Belcher and Advisor Kristin Smith discuss
   use cases for blockchain in art and music
 image:

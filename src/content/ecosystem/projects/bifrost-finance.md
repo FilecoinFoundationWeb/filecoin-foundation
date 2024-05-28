@@ -4,7 +4,6 @@ slug: bifrost-finance
 created-on: 2024-03-29T21:28:48.639Z
 updated-on: 2024-03-29T21:37:17.239Z
 published-on: 2024-03-29T21:37:17.239Z
-featured: false
 description: "Bifrost is a modular, scalable, non-custodial omnichain liquid staking parachain based on Polkadot. It provides standardized, high-yield, safe, and reliable underlying interest-bearing assets for Web3 through XCM, and is realizing the omnichain vision of using any LST on the any chain, including Filecoin."
 category: finance
 tags:

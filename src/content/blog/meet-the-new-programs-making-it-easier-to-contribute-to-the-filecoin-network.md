@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200Z
 description: "This winter, two new programs launched that make it easier than
   ever to contribute to the Filecoin network: Filecoin Saturn and Filecoin
   Station."
-featured: false
 image:
   url: /assets/images/12202022-saturnandstation.png
   alt: null

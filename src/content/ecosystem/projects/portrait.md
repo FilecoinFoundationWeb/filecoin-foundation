@@ -4,7 +4,6 @@ slug: portrait
 created-on: "2024-01-04T22:40:27.657Z"
 updated-on: "2024-01-05T21:38:42.375Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
 description: "Portrait is an open-source web page builder that lets you turn your blockchain address into a website."
 category: tooling-productivity
 tags:

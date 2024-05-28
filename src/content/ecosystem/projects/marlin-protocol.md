@@ -4,7 +4,6 @@ slug: marlin-protocol
 created-on: 2024-03-20T14:08:38.399Z
 updated-on: 2024-03-20T14:08:38.456Z
 published-on: 2024-03-20T14:08:38.488Z
-featured: false
 description: "Marlin is a verifiable computing protocol featuring TEE and ZK-based coprocessors to delegate complex workloads over a decentralized cloud. Enclaves provisioned using smart contract calls host LLMs, AI/ML models, gateways, MEV, automation bots, or backends for arbitrary computations using external APIs with baked-in auto-scaling and fault tolerance."
 category: tooling-productivity
 tags:

@@ -13,7 +13,6 @@ export function mapMarkdownToEcosystemProjectData({
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
-    featured: data.featured,
     description: data.description,
     category: data.category,
     subcategories: data.subcategories,

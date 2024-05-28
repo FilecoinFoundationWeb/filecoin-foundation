@@ -4,7 +4,6 @@ slug: cookbook-dev
 created-on: 2024-04-04T20:26:55.690Z
 updated-on: 2024-04-04T20:26:55.698Z
 published-on: 2024-04-04T20:26:55.704Z
-featured: false
 description: "A platform to find smart contracts, solidity libraries, and discover protocols."
 category: tooling-productivity
 tags:

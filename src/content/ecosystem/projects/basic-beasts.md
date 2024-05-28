@@ -4,7 +4,6 @@ slug: basic-beasts
 created-on: 2024-03-29T21:28:48.611Z
 updated-on: 2024-03-29T21:36:57.674Z
 published-on: 2024-03-29T21:36:57.674Z
-featured: false
 description: "A fully on-chain interactive Pokémon-inspired NFT collectibles game."
 category: media-entertainment
 tags:
