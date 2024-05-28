@@ -4,7 +4,8 @@ slug: fil-paris
 created-on: "2023-06-27T15:38:07.082Z"
 updated-on: "2023-06-27T15:38:07.098Z"
 published-on: "2023-06-27T15:38:07.109Z"
-description: Paris, France
+description: null
+location: Paris, France
 external-link:
   href: https://fil-paris.io/
   text: null

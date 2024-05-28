@@ -6,6 +6,7 @@ created-on: "2023-05-03T08:06:20.831Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: >-
   DC Fintech Week convenes nonprofits, technologists, entrepreneurs and regulators to discuss emerging policy issues
+location: Washington, D.C.
 external-link:
   href: https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407
   text: Register

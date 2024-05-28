@@ -5,6 +5,7 @@ created-on: 2024-03-21T16:47:39.923Z
 updated-on: 2024-03-21T16:47:39.933Z
 published-on: 2024-03-21T16:47:39.941Z
 description: null
+location: Tokyo, Japan
 external-link:
   href: https://en.web3.teamz.co.jp/
   text: null

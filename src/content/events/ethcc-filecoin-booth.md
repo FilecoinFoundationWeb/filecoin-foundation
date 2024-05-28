@@ -4,7 +4,8 @@ slug: ethcc-filecoin-booth
 created-on: "2024-01-29T15:51:57.361Z"
 updated-on: "2024-01-29T15:51:57.372Z"
 published-on: "2024-01-29T15:51:57.389Z"
-description: Brussels, Belgium
+description: null
+location: Brussels, Belgium
 external-link:
   href: null
   text: null

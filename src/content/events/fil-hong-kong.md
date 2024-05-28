@@ -4,7 +4,7 @@ slug: fil-hong-kong
 created-on: "2023-06-27T15:30:52.767Z"
 updated-on: "2023-06-27T15:30:52.963Z"
 published-on: "2023-06-27T15:30:53.114Z"
-description: Hong Kong
+description: Hong Kong, China
 external-link:
   href: https://fil-hk.io/
   text: null

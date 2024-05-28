@@ -4,7 +4,8 @@ slug: dweb-camp
 created-on: "2022-06-27T15:30:55.950Z"
 updated-on: "2022-06-27T15:30:55.964Z"
 published-on: "2022-06-27T15:30:55.978Z"
-description: Navarro, CA
+description: null
+location: Navarro, CA
 external-link:
   href: https://dwebcamp.org/
   text: null

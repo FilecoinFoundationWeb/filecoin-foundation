@@ -5,6 +5,7 @@ created-on: "2024-02-21T16:48:19.477Z"
 updated-on: "2024-02-21T16:48:19.493Z"
 published-on: "2024-02-21T16:48:19.506Z"
 description: null
+location: null
 external-link:
   href: https://foresight.org/2024-intelligent-cooperation-workshop/
   text: null

@@ -6,6 +6,7 @@ updated-on: "2023-05-03T08:06:14.428Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: >-
   Join us for the Web3 Hacker House @ SXSW! Participate in mini hackathons, meet with developers, check out panels, live workshops and more. Detailed schedule, speakers and more information coming soon!
+location: null
 external-link:
   href: null
   text: null

@@ -4,7 +4,8 @@ slug: taipei-blockchain-week
 created-on: "2023-06-27T17:19:06.295Z"
 updated-on: "2023-06-27T17:19:06.311Z"
 published-on: "2023-06-27T17:19:06.321Z"
-description:  Taipei, Taiwan
+description: null
+location: Taipei, Taiwan
 external-link:
   href: https://www.taipeiblockchainweek.com/
   text: null

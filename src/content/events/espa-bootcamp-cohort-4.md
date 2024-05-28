@@ -5,6 +5,7 @@ created-on: "2023-05-03T08:05:59.380Z"
 updated-on: "2023-05-03T08:05:59.380Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: null
+location: null
 external-link:
   href: https://www.web3espa.io/
   text: null

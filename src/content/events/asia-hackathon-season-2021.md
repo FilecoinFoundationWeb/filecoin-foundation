@@ -5,6 +5,7 @@ created-on: "2023-05-03T08:06:33.937Z"
 updated-on: "2023-05-03T08:06:33.937Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: null
+location: null
 external-link:
   href: https://events.filecoin.io/asia-hackathon-season
   text: Watch Recording

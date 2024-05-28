@@ -4,7 +4,8 @@ slug: sustainable-blockchain-summit
 created-on: "2023-05-03T08:06:03.608Z"
 updated-on: "2023-05-03T08:06:03.608Z"
 published-on: "2023-05-03T08:22:38.798Z"
-description: Paris, France
+description: null
+location: Paris, France
 external-link:
   href: https://sbs.tech/
   text: null

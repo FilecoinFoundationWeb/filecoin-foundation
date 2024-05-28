@@ -5,6 +5,7 @@ created-on: "2023-11-13T18:13:00.239Z"
 updated-on: "2023-11-13T18:13:00.249Z"
 published-on: "2023-11-13T18:13:00.256Z"
 description: null
+location: Istanbul, Turkey
 external-link:
   href: https://23.labweek.io/fil-plus
   text: Register Now

@@ -4,7 +4,8 @@ slug: puerto-rico-blockchain-week
 created-on: "2023-06-27T17:15:30.355Z"
 updated-on: "2023-06-27T17:15:30.380Z"
 published-on: "2023-06-27T17:15:30.400Z"
-description: Puerto Rico
+description: null
+location: Puerto Rico
 external-link:
   href: https://www.prblockchainweek.io/
   text: null

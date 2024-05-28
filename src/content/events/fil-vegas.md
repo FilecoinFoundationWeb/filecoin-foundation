@@ -5,6 +5,7 @@ created-on: "2023-07-24T17:09:07.009Z"
 updated-on: "2023-07-24T17:09:07.022Z"
 published-on: "2023-07-24T17:09:07.033Z"
 description: null
+location: Las Vegas, Nevada
 external-link:
   href: https://fil-vegas.io/
   text: null

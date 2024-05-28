@@ -4,7 +4,8 @@ slug: "filecoin-day"
 created-on: "2023-11-13T18:09:36.531Z"
 updated-on: "2023-11-13T18:09:36.547Z"
 published-on: "2023-11-13T18:09:36.559Z"
-description: "Istanbul"
+description: null
+location: "Istanbul, Turkey"
 external-link:
   href: "https://lu.ma/vk9pnofg"
   text: null

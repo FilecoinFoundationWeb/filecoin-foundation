@@ -4,7 +4,8 @@ slug: vision-weekend-usa-2023
 created-on: "2023-11-08T14:08:27.270Z"
 updated-on: "2023-11-08T14:08:27.279Z"
 published-on: "2023-11-08T14:08:27.285Z"
-description: San Francisco, CA
+description: null
+location: San Francisco, CA
 external-link:
   href: https://foresight.org/vision-weekends-2023/
   text: null

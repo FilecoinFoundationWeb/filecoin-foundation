@@ -4,7 +4,8 @@ slug: fil-hong-kong-hosted-by-ndlabs
 created-on: "2024-01-29T15:42:24.903Z"
 updated-on: "2024-01-29T15:42:24.911Z"
 published-on: "2024-01-29T15:42:24.918Z"
-description: Hong Kong
+description: null
+location: Hong Kong, China
 external-link:
   href: https://fil-hk.io/
   text: Save the Date

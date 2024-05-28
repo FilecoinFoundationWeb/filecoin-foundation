@@ -5,6 +5,7 @@ created-on: "2023-05-03T08:06:00.761Z"
 updated-on: "2023-05-03T08:20:28.687Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: null
+location: Singapore
 external-link:
   href: https://lu.ma/singapore-sp-meetup
   text: Register

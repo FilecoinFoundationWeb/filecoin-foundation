@@ -4,7 +4,8 @@ slug: south-korea-storage-provider-meetup
 updated-on: "2023-05-03T08:21:01.261Z"
 created-on: "2023-05-03T08:06:02.191Z"
 published-on: "2023-05-03T08:22:38.798Z"
-description: Seoul, Korea
+description: null
+location: Seoul, South Korea
 external-link:
   href: https://lu.ma/sp-korea-meetup
   text: Register

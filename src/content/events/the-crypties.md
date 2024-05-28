@@ -4,7 +4,8 @@ slug: the-crypties
 created-on: "2023-06-27T17:24:48.598Z"
 updated-on: "2023-06-27T17:24:48.635Z"
 published-on: "2023-06-27T17:24:48.666Z"
-description:  Miami, Florida
+description: null
+location:  Miami, Florida
 external-link:
   href: https://cryptiesawards.com/
   text: null

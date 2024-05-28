@@ -4,7 +4,8 @@ slug: eth-san-francisco-filecoin-orbit-event
 created-on: "2024-01-29T16:16:41.342Z"
 updated-on: "2024-01-29T16:16:41.351Z"
 published-on: "2024-01-29T16:16:41.365Z"
-description: San Francisco, CA
+description: null
+location: San Francisco, CA
 external-link:
   href: null
   text: null

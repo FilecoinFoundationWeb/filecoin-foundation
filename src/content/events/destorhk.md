@@ -4,7 +4,8 @@ slug: destorhk
 created-on: "2023-06-27T15:30:53.184Z"
 updated-on: "2023-06-27T15:30:53.198Z"
 published-on: "2023-06-27T15:30:53.211Z"
-description: Hong Kong
+description: null
+location: Hong Kong, China
 external-link:
   href: https://fil-hk.io/destor-en/
   text: null

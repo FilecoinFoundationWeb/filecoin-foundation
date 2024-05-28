@@ -4,7 +4,8 @@ slug: the-filecoin-sanctuary-davos-2024
 created-on: "2023-11-08T14:03:29.741Z"
 updated-on: "2023-11-08T14:03:29.749Z"
 published-on: "2023-11-08T14:03:29.756Z"
-description: Davos, Switzerland
+description: null
+location: Davos, Switzerland
 external-link:
   href: https://fil.org/davos/
   text: Register Now

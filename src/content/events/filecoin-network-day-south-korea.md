@@ -4,7 +4,8 @@ slug: filecoin-network-day-south-korea
 created-on: "2023-06-27T16:21:11.302Z"
 updated-on: "2023-06-27T16:21:11.325Z"
 published-on: "2023-06-27T16:21:11.352Z"
-description: Seoul, Korea
+description: null
+location: Seoul, South Korea
 external-link:
   href: null
   text: null

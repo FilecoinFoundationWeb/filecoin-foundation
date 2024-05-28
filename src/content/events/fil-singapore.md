@@ -4,7 +4,8 @@ slug: fil-singapore
 created-on: "2023-05-03T08:05:54.983Z"
 updated-on: "2023-06-27T17:46:15.427Z"
 published-on: "2023-05-03T08:22:38.798Z"
-description: Singapore
+description: null
+location: Singapore
 external-link:
   href: https://fil-singapore.io/
 start-date: "2022-09-24T00:00:00.000Z"

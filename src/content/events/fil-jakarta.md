@@ -5,6 +5,7 @@ created-on: "2023-07-13T14:06:23.034Z"
 updated-on: "2023-07-13T14:06:23.049Z"
 published-on: "2023-07-13T14:06:23.057Z"
 description: null
+location: Jakarta, Indonesia
 external-link:
   href: https://www.fil-jakarta.io/
   text: null

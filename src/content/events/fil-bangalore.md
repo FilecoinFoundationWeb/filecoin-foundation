@@ -4,7 +4,8 @@ slug: fil-bangalore
 created-on: "2023-06-27T15:50:53.871Z"
 updated-on: "2023-06-27T15:50:53.888Z"
 published-on: "2023-06-27T15:50:53.898Z"
-description: Bangalore, India
+description: null
+location: Bangalore, India
 external-link:
   href: https://fil-bangalore.io/
   text: null

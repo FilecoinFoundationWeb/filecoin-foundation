@@ -4,7 +4,8 @@ slug: fil-brussels
 created-on: "2024-01-29T15:53:57.402Z"
 updated-on: "2024-01-29T15:53:57.411Z"
 published-on: "2024-01-29T15:53:57.423Z"
-description: Brussels, Belgium
+description: null
+location: Brussels, Belgium
 external-link:
   href: null
   text: null
