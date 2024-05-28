@@ -7,8 +7,8 @@ published-on: "2023-11-08T14:03:29.756Z"
 description: null
 location: Davos, Switzerland
 external-link:
-  href: https://fil.org/davos/
-  text: Register Now
+  href: null
+  text: null
 start-date: "2024-01-15T14:03:29.762Z"
 end-date: "2024-01-19T14:03:29.769Z"
 image:

@@ -7,7 +7,7 @@ published-on: "2023-06-27T15:51:17.044Z"
 description: null
 location: Davos, Switzerland
 external-link:
-  href: https://events.fil.org/davos
+  href: null
   text: null
 start-date: "2023-01-15T16:51:17.049Z"
 end-date: "2023-01-20T16:51:17.055Z"
