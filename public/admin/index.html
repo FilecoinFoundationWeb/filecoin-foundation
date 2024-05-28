@@ -15,68 +15,95 @@
         fields: [
           {
             name: 'src',
-            label: 'Embeded Video URL',
+            label: 'Embedded Video URL',
             widget: 'string',
             required: true,
           },
           {
-            name: 'figcaption',
-            label: 'Caption',
+            name: 'captionLink1',
+            label: 'First Caption URL',
+            widget: 'string',
+            required: false,
+          },
+          {
+            name: 'captionText1',
+            label: 'First Caption Text',
+            widget: 'string',
+            required: false,
+          },
+          {
+            name: 'captionLink2',
+            label: 'Second Caption URL',
+            widget: 'string',
+            required: false,
+          },
+          {
+            name: 'captionText2',
+            label: 'Second Caption Text',
             widget: 'string',
             required: false,
           },
         ],
         pattern:
-          /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*(?:<figcaption>(.*?)<\/figcaption>)?\s*<\/figure>$/ms,
+          /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*<figcaption>(.*)<\/figcaption>\s*<\/figure>$/ms,
         fromBlock: function (match) {
           return {
             src: match[1] || '',
-            figcaption: match[2] || '',
+            captionLink1: match[2] || '',
+            captionText1: match[3] || '',
+            captionLink2: match[4] || '',
+            captionText2: match[5] || '',
           }
         },
         toBlock: function (data) {
-          return data.figcaption
-            ? `<figure>
-          <iframe
-            src="${data.src}"
-            width="560"
-            height="315"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-          <figcaption>${data.figcaption}</figcaption>
-        </figure>`
-            : `<iframe
-            src="${data.src}"
-            width="560"
-            height="315"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>`
+          console.log(data.captionLink1 && data.captionText1)
+          const captionLink1 =
+            data.captionLink1 && data.captionText1
+              ? `<a href="${data.captionLink1}">${data.captionText1}</a>`
+              : data.captionText1
+                ? `<span>${data.captionText1}</span>`
+                : ''
+          const captionLink2 = data.captionLink2
+            ? `<a href="${data.captionLink2}">${data.captionText2}</a>`
+            : data.captionText2
+              ? `<span>${data.captionText2}</span>`
+              : ''
+          const fullCaption = `${captionLink1} ${captionLink2}`
+          return `<figure>
+            <iframe
+              src="${data.src}"
+              width="560"
+              height="315"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+            <figcaption>${fullCaption}</figcaption>
+          </figure>`
         },
         toPreview: function (data) {
-          return data.figcaption
-            ? `<figure>
-          <iframe
-            src="${data.src}"
-            width="560"
-            height="315"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <figcaption>${data.figcaption}</figcaption>
-        </figure>`
-            : `<iframe
-          src="${data.src}"
-          width="560"
-          height="315"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>`
+          const captionLink1 = data.captionLink1
+            ? `<a href="${data.captionLink1}">${data.captionText1}</a>`
+            : data.captionText1
+              ? `<span>${data.captionText1}</span>`
+              : ''
+          const captionLink2 = data.captionLink2
+            ? `<a href="${data.captionLink2}">${data.captionText2}</a>`
+            : data.captionText2
+              ? `<span>${data.captionText2}</span>`
+              : ''
+          const fullCaption = `${captionLink1} ${captionLink2}`
+          return `<figure>
+            <iframe
+              src="${data.src}"
+              width="560"
+              height="315"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <figcaption>${fullCaption}</figcaption>
+          </figure>`
         },
       })
     </script>
