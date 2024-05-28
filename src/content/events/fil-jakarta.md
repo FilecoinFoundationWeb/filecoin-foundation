@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/fil-jakarta.png
   alt: null
-event-type: event
 involvement: supported
 ---

@@ -13,6 +13,5 @@ end-date: "2024-09-10T15:09:58.126Z"
 image:
   url: /assets/images/fil-seoul-24.png
   alt: FIL Seoul Network Base Logo
-event-type: event
 involvement: supported
 ---

@@ -13,6 +13,5 @@ end-date: "2023-03-01T16:39:25.716Z"
 image:
   url: /assets/images/fvm-hackerbase-2023.png
   alt: null
-event-type: event
 involvement: hosted
 ---

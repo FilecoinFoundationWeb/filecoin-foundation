@@ -13,6 +13,5 @@ end-date: "2024-04-14T14:47:33.405Z"
 image:
   url: /assets/images/funding-the-commons24.png
   alt: Funding the Commons SF Logo
-event-type: event
 involvement: sponsored
 ---

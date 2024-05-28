@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
   alt: null
-event-type: event
 involvement: null
 ---

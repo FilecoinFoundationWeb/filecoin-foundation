@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/network-day-korea-2022.png
   alt: null
-event-type: event
 involvement: null
 ---

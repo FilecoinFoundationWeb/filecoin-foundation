@@ -14,7 +14,6 @@ cta:
   text: Buy your tickets
 start-date: "2021-09-30T22:00:00.000Z"
 end-date: "2021-12-30T23:00:00.000Z"
-event-type: hackaton
 
 image:
   url: >-

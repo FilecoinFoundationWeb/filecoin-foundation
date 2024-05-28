@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg
   alt: null
-event-type: event
 involvement: null
 ---

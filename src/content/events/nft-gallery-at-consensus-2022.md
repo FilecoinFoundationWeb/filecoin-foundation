@@ -17,6 +17,5 @@ image:
   url: >-
     /assets/images/645215f075d57ed1e4d02693_nft-gallery-at-consensus.png
   alt: null
-event-type: event
 involvement: null
 ---

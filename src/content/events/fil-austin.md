@@ -15,6 +15,5 @@ end-date: null
 image:
   url: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
   alt: null
-event-type: event
 involvement: hosted
 ---

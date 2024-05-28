@@ -13,6 +13,5 @@ end-date: "2023-04-13T15:36:00.000Z"
 image:
   url: /assets/images/sbs-boston-2023.png
   alt: null
-event-type: event
 involvement: sponsored
 ---

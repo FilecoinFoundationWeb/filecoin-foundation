@@ -14,6 +14,5 @@ end-date: null
 image:
   url: /assets/images/645215fba2b7469c5c5546ea_image_ldbpld.png
   alt: null
-event-type: hackaton
 involvement: null
 ---

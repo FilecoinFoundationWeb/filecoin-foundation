@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/64521604a359ff699f3705ec_storage-provider-working-group.png
   alt: null
-event-type: event
 involvement: null
 ---

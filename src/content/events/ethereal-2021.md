@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/64521600a359ff88f536ffc5_ethereal-2021.png
   alt: null
-event-type: event
 involvement: null
 ---

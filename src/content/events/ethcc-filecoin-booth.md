@@ -13,6 +13,5 @@ end-date: "2024-07-11T14:51:57.409Z"
 image:
   url: /assets/images/ethcc-24.png
   alt: EthCC Logo
-event-type: event
 involvement: sponsored
 ---

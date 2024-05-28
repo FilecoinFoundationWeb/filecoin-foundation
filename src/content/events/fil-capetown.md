@@ -12,6 +12,5 @@ end-date: null
 image:
   url: /assets/images/filcapetown.png
   alt: FIL Cape Town Logo
-event-type: event
 involvement: supported
 ---

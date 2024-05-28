@@ -12,6 +12,5 @@ start-date: "2023-06-15T17:43:52.060Z"
 end-date: null
 image:
   url: /assets/images/web3-infra-2023.png
-event-type: event
 involvement: sponsored
 ---

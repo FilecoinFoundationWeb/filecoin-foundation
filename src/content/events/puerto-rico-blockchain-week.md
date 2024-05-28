@@ -13,6 +13,5 @@ end-date: "2022-12-10T18:15:00.000Z"
 image:
   url: /assets/images/pr-blockchain-2022.png
   alt: null
-event-type: event
 involvement: sponsored
 ---

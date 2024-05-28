@@ -13,6 +13,5 @@ end-date: 2024-04-14T16:47:39.955Z
 image:
   url: /assets/images/teamz-conference.webp
   alt: null
-event-type: event
 involvement: supported
 ---

@@ -12,6 +12,5 @@ end-date: "2022-09-26T00:00:00.000Z"
 image:
   url: /assets/images/645218e87f5430741f6d9bd6_fil-singapore.jpg
   alt: null
-event-type: event
 involvement: hosted
 ---

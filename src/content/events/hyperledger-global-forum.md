@@ -13,6 +13,5 @@ end-date: "2021-06-09T22:00:00.000Z"
 image:
   url: /assets/images/645215feaee26f3101cebc4b_hyperledger-global-forum.jpeg
   alt: null
-event-type: event
 involvement: null
 ---

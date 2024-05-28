@@ -13,6 +13,5 @@ end-date: "2024-02-27T21:00:51.050Z"
 image:
   url: /assets/images/sis24.png
   alt: null
-event-type: event
 involvement: supported
 ---

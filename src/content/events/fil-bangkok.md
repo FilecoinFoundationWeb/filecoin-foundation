@@ -14,6 +14,5 @@ location: Bangkok, Thailand
 image:
   url: /assets/images/filbangkok-24.png
   alt: FIL Bangkok Logo
-event-type: event
 involvement: hosted
 ---

@@ -13,6 +13,5 @@ end-date: "2023-01-20T16:51:17.055Z"
 image:
   url: /assets/images/davos-2023-pic.png
   alt: null
-event-type: event
 involvement: hosted
 ---

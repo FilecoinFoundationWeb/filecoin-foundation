@@ -13,6 +13,5 @@ end-date: "2023-11-14T22:00:00.270Z"
 image:
   url: /assets/images/03292023-filplusmission.png
   alt: null
-event-type: event
 involvement: hosted
 ---

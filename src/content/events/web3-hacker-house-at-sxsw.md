@@ -14,6 +14,5 @@ end-date: null
 image:
   url: /assets/images/645215f691cf5c91a16146aa_https___cdn-evbuc-com_images_239998219_264947572824_1_original.jpeg
   alt: null
-event-type: hackaton
 involvement: null
 ---

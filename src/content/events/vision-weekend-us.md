@@ -12,6 +12,5 @@ end-date: "2022-12-04T18:27:00.000Z"
 image:
   url: /assets/images/vision-sf-2022.png
   alt: null
-event-type: event
 involvement: sponsored
 ---

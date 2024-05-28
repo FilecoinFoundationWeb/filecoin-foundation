@@ -13,6 +13,5 @@ end-date: "2023-04-28T15:31:08.707Z"
 image:
   url: /assets/images/protocol-village-2023.png
   alt: null
-event-type: event
 involvement: sponsored
 ---

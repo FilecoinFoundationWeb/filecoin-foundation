@@ -14,6 +14,5 @@ end-date: "2021-07-17T22:00:00.000Z"
 image:
   url: null
   alt: null
-event-type: hackaton
 involvement: null
 ---

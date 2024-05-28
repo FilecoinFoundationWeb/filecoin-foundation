@@ -13,6 +13,5 @@ end-date: "2024-05-31T14:50:42.640Z"
 image:
   url: /assets/images/consensus-2024.png
   alt: Consensus Logo
-event-type: event
 involvement: sponsored
 ---

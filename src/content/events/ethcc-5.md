@@ -13,6 +13,5 @@ end-date: "2022-07-21T00:00:00.000Z"
 image:
   url: /assets/images/645215ed18e20de7428046f6_ethcc.png
   alt: null
-event-type: event
 involvement: null
 ---

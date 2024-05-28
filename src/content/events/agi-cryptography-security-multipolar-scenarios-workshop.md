@@ -13,6 +13,5 @@ end-date: "2024-05-15T15:48:19.530Z"
 image:
   url: /assets/images/vector-foresight-logo-dark-blue.svg
   alt: null
-event-type: event
 involvement: sponsored
 ---

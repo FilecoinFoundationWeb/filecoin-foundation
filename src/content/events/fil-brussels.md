@@ -13,6 +13,5 @@ end-date: "2024-07-11T14:53:57.438Z"
 image:
   url: /assets/images/filbrussels24.png
   alt: FIL Brussels Logo
-event-type: event
 involvement: hosted
 ---

@@ -15,6 +15,5 @@ image:
   url: >-
     /assets/images/645215fc18e20d1c30805b6c_2021-filecoin-orbit-lounge-event.png
   alt: null
-event-type: event
 involvement: null
 ---

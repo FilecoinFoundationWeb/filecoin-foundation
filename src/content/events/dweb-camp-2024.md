@@ -14,6 +14,5 @@ end-date: "2024-08-11T14:55:19.882Z"
 image:
   url: /assets/images/dweb-camp24.png
   alt: DWeb Camp Logo
-event-type: event
 involvement: sponsored
 ---

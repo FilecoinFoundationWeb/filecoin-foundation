@@ -13,6 +13,5 @@ end-date: "2023-10-05T17:09:07.051Z"
 image:
   url: /assets/images/fil-vegas-event-header.png
   alt: null
-event-type: event
 involvement: hosted
 ---

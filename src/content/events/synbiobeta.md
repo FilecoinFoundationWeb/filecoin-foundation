@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/synbiobeta-2023.png
   alt: null
-event-type: event
 involvement: null
 ---

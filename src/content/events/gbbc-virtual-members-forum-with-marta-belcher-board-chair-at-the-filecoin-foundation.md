@@ -16,6 +16,5 @@ end-date: null
 image:
   url: null
   alt: null
-event-type: event
 involvement: null
 ---

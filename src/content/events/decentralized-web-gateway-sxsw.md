@@ -20,6 +20,5 @@ image:
   url: >-
     /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
   alt: null
-event-type: event
 involvement: null
 ---

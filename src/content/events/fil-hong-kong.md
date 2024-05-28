@@ -13,6 +13,5 @@ end-date: "2023-04-15T15:30:53.477Z"
 image:
   url: /assets/images/fil-hong-kong.png
   alt: null
-event-type: event
 involvement: null
 ---

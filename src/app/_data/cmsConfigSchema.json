@@ -1900,23 +1900,6 @@
           ]
         },
         {
-          "name": "event-type",
-          "label": "Event Type",
-          "widget": "select",
-          "required": false,
-          "default": "event",
-          "options": [
-            {
-              "label": "Event",
-              "value": "event"
-            },
-            {
-              "label": "Hackathon",
-              "value": "hackathon"
-            }
-          ]
-        },
-        {
           "name": "involvement",
           "label": "FF Involvement",
           "widget": "select",

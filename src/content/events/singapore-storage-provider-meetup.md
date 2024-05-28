@@ -13,6 +13,5 @@ end-date: "2022-08-16T00:00:00.000Z"
 image:
   url: /assets/images/6452194af82dbf21df953f96_singapore-sp.jpg
   alt: null
-event-type: event
 involvement: null
 ---

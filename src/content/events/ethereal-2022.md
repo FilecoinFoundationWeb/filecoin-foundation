@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/645215f7455b5b63d0f5b5e8_marta-snowden.png
   alt: null
-event-type: event
 involvement: null
 ---

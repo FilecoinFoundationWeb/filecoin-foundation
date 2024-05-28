@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/645215f9a2b74616855546de_ethdenver.png
   alt: null
-event-type: event
 involvement: null
 ---

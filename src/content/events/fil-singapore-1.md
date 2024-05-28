@@ -13,6 +13,5 @@ end-date: "2024-09-19T15:14:23.249Z"
 image:
   url: /assets/images/fil-singapore-24.png
   alt: FIL Singapore Logo
-event-type: event
 involvement: supported
 ---

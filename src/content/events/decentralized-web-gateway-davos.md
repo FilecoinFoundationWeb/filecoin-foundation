@@ -14,6 +14,5 @@ end-date: null
 image:
   url: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
   alt: null
-event-type: event
 involvement: null
 ---

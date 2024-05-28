@@ -13,6 +13,5 @@ end-date: "2024-04-08T14:42:24.941Z"
 image:
   url: /assets/images/filhk24.png
   alt: FIL Hong Kong Logo
-event-type: event
 involvement: supported
 ---

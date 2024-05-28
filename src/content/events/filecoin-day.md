@@ -13,6 +13,5 @@ end-date: "2023-11-14T18:30:36.580Z"
 image:
   url: /assets/images/signal-2023-11-12-145615_002.jpeg
   alt: null
-event-type: event
 involvement: supported
 ---

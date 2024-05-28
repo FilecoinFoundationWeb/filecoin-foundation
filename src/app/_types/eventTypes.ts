@@ -18,7 +18,6 @@ export type EventData = {
     url: string
     alt: string
   }
-  eventType?: string
   involvement?: string
   metadata?: Metadata
 }

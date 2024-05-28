@@ -13,6 +13,5 @@ end-date: null
 image:
   url: /assets/images/fil-dev-summit.png
   alt: null
-event-type: event
 involvement: null
 ---

@@ -24,7 +24,6 @@ export function mapMarkdownToEventData({
       url: data.image?.url || '',
       alt: data.image?.alt || '',
     },
-    eventType: data['event-type'],
     involvement: data.involvement,
     metadata: data.metadata,
   }
