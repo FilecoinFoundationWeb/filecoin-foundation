@@ -1163,8 +1163,7 @@
         {
           "name": "created-on",
           "label": "Created On",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "updated-on",
@@ -1416,8 +1415,7 @@
         {
           "name": "created-on",
           "label": "Created On",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "updated-on",
@@ -1817,8 +1815,7 @@
         {
           "name": "created-on",
           "label": "Created On",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "updated-on",

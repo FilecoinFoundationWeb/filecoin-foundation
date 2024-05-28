@@ -3,7 +3,7 @@ import { Metadata } from '@/types/metadataTypes'
 export type EventData = {
   title: string
   slug: string
-  createdOn?: string
+  createdOn: string
   updatedOn?: string
   publishedOn?: string
   description?: string

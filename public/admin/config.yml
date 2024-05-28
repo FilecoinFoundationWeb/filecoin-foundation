@@ -197,7 +197,6 @@ collections:
       - name: "created-on"
         label: "Created On"
         widget: "datetime"
-        required: false
       - name: "updated-on"
         label: "Updated On"
         widget: "datetime"
@@ -317,7 +316,6 @@ collections:
       - name: created-on
         label: Created On
         widget: datetime
-        required: false
       - name: updated-on
         label: Updated On
         widget: datetime
@@ -513,7 +511,6 @@ collections:
       - name: "created-on"
         label: "Created On"
         widget: "datetime"
-        required: false
       - name: "updated-on"
         label: "Updated On"
         widget: "datetime"
