@@ -5,7 +5,7 @@ created-on: "2023-06-27T15:51:17.030Z"
 updated-on: "2023-06-27T15:51:17.038Z"
 published-on: "2023-06-27T15:51:17.044Z"
 description: null
-location: Davos, Switzerland
+location: "Davos, Switzerland"
 external-link:
   href: null
   text: null
