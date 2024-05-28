@@ -1,25 +1,30 @@
 ---
 title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
 slug: filecoin-ecosystem-shines-at-fil-hong-kong-ai-depin-fvm-and-more
-created-on: 2024-04-22T15:09:42.759Z
-updated-on: 2024-04-22T15:09:42.769Z
-published-on: 2024-04-22T15:09:42.779Z
-category: null
-description: The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by ND Labs and supported by Filecoin Foundation.
+created-on: 2024-04-22T15:09:42.759000Z
+updated-on: 2024-04-22T15:09:42.769000Z
+published-on: 2024-04-22T15:09:42.779000Z
+category: events
+description:
+  The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by
+  ND Labs and supported by Filecoin Foundation.
 image:
   url: /assets/images/blogheader-filhk24recap-1-.png
   alt: Filecoin Ecosystem at FIL Hong Kong
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
-  twitter:title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
+  twitter:title:
+    "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and
+    More"
   twitter:card: summary
   twitter:site: ""
   twitter:image: /assets/images/blogheader-filhk24recap-1-.png
   og:image: /assets/images/blogheader-filhk24recap-1-.png
   title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
-  description: The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by ND Labs and supported by Filecoin Foundation.
+  description:
+    Highlights from FIL Hong Kong, showcasing AI, DePIN, FVM, and more
+    in the Filecoin ecosystem.
 ---
 
 The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by ND Labs and supported by Filecoin Foundation.

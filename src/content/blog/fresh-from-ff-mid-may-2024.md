@@ -1,20 +1,25 @@
 ---
 title: "Fresh From FF: Mid-May, 2024"
 slug: fresh-from-ff-mid-may-2024
-created-on: 2024-05-15T17:23:49.358Z
-updated-on: 2024-05-15T17:23:49.368Z
-published-on: 2024-05-15T17:23:49.377Z
-category: blog
-description: "Check out the latest updates about what the Filecoin Foundation has been up to."
+created-on: 2024-05-15T17:23:49.358000Z
+updated-on: 2024-05-15T17:23:49.368000Z
+published-on: 2024-05-15T17:23:49.377000Z
+category: news
+description:
+  "Check out the latest updates about what the Filecoin Foundation has
+  been up to."
 image:
   url: /assets/images/0215-ff-6-.png
   alt: "Fresh From FF: Mid-May, 2024"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
+  title: "Fresh from FF: Mid May 2024"
+  description:
+    Discover the latest updates and news from Filecoin Foundation in mid-May
+    2024. Key highlights.
 ---
 
 _Check out the latest updates about what the Filecoin Foundation has been up to._

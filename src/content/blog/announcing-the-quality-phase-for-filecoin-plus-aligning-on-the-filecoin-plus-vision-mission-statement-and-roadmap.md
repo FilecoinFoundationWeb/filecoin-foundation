@@ -1,18 +1,25 @@
 ---
-title: "Announcing the Quality Phase for Filecoin Plus: Aligning on the Filecoin
-  Plus Vision, Mission Statement and Roadmap"
+title:
+  "Announcing the Quality Phase for Filecoin Plus: Aligning on the Filecoin Plus
+  Vision, Mission Statement and Roadmap"
 slug: announcing-the-quality-phase-for-filecoin-plus-aligning-on-the-filecoin-plus-vision-mission-statement-and-roadmap
-created-on: 2023-04-21T07:26:06.472Z
-updated-on: 2023-04-21T07:26:06.472Z
-published-on: 2023-04-21T07:33:56.200Z
-description: Filecoin Plus scales utilization of the Filecoin network to store
-  humanity’s information by incentivizing data onboarding across use-cases with
-  community governed trust mechanisms.
+created-on: 2023-04-21T07:26:06.472000Z
+updated-on: 2023-04-21T07:26:06.472000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  Filecoin Plus scales utilization of the Filecoin network to store humanity’s
+  information by incentivizing data onboarding across use-cases with community governed
+  trust mechanisms.
 image:
   url: /assets/images/03292023-filplusmission.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Filecoin Plus Quality Phase: Vision and Roadmap"
+  description:
+    Announcing the Filecoin Plus quality phase. Learn about the vision,
+    mission, and roadmap for the initiative.
 ---
 
 _This post is also available on the_ [_Filecoin Plus Medium_](https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456)_._

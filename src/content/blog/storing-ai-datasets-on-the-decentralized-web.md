@@ -13,9 +13,14 @@ description: >-
 image:
   url: >-
     /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: Storing AI Datasets on the Decentralized Web
+  description:
+    Learn how AI datasets are stored on the decentralized web using Filecoin.
+    Benefits and challenges.
 ---
 
 Austin Carson is president of ​​[SeedAI](https://www.seedai.org/), a nonprofit, nonpartisan advocacy organization founded to help develop artificial intelligence (AI) resources for communities nationwide. He and his team are working to bring public and private partners together to develop model AI initiatives, drive policy, and facilitate investment, with a special focus on underserved communities.

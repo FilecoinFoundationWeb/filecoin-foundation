@@ -1,19 +1,24 @@
 ---
 title: Filecoin nv19 Lightning Upgrade
 slug: filecoin-nv19-lightning-upgrade
-created-on: 2023-06-01T11:00:30.238Z
-updated-on: 2023-06-01T11:00:00.000Z
-published-on: 2023-06-01T11:00:00.000Z
-description: On April 27, 2023, the Filecoin network launched the
-  highly-anticipated nv19 Lightning Upgrade, marking a significant leap forward
-  in the realm of decentralized storage. This technical milestone brings a host
-  of enhancements and improvements to the Filecoin ecosystem, enabling greater
-  efficiency, security, and usability.
+created-on: 2023-06-01T11:00:30.238000Z
+updated-on: 2023-06-01T11:00:00Z
+published-on: 2023-06-01T11:00:00Z
+description:
+  On April 27, 2023, the Filecoin network launched the highly-anticipated
+  nv19 Lightning Upgrade, marking a significant leap forward in the realm of decentralized
+  storage. This technical milestone brings a host of enhancements and improvements
+  to the Filecoin ecosystem, enabling greater efficiency, security, and usability.
 image:
   url: /assets/images/06012023-lightningupgrade.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filecoin NV19 Lightning Upgrade
+  description:
+    Announcing the Filecoin NV19 Lightning upgrade. Discover the improvements
+    and new features.
 ---
 
 On April 27, 2023, the Filecoin network launched the highly-anticipated nv19 Lightning Upgrade, marking a significant leap forward in the realm of decentralized storage. This technical milestone brings a host of enhancements and improvements to the Filecoin ecosystem, enabling greater efficiency, security, and usability.

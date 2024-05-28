@@ -1,17 +1,23 @@
 ---
 title: Filecoin Storage Provider Spotlight — Dcent
-created-on: 2023-04-21T07:27:24.629Z
-updated-on: 2023-04-21T07:27:24.629Z
-published-on: 2023-04-21T07:33:56.200Z
-description: As an early storage provider in the Filecoin ecosystem, Dcent has
-  been active in growing and encouraging the local community, organizing meetups
-  and other events, as well as providing advice to others in the network.
+created-on: 2023-04-21T07:27:24.629000Z
+updated-on: 2023-04-21T07:27:24.629000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  As an early storage provider in the Filecoin ecosystem, Dcent has been
+  active in growing and encouraging the local community, organizing meetups and other
+  events, as well as providing advice to others in the network.
 image:
   url: /assets/images/0524-sps-dcent.png
-  alt: null
+  alt:
 slug: filecoin-storage-provider-spotlight-dcent
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Filecoin Storage Provider Spotlight: Dcent"
+  description:
+    Spotlight on Dcent, a prominent Filecoin storage provider. Discover
+    their contributions and innovations.
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._

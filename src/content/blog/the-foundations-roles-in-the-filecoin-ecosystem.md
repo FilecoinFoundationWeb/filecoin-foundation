@@ -10,9 +10,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423bfbca39dd7d4d1f170f_1-mbcuqyncw-uoyzwsbrapqw.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: The Foundation's Roles in the Filecoin Ecosystem
+  description:
+    Learn about the roles and responsibilities of the foundation within
+    the Filecoin ecosystem.
 ---
 
 In 2017, the creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its mandate would be to grow an open ecosystem for decentralized storage and to give developers an open and sustainable platform to build, enhance and monetize those services.

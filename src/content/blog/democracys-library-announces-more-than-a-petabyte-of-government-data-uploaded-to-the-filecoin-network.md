@@ -1,20 +1,18 @@
 ---
-title: Democracy’s Library Announces More than a Petabyte of Data Uploaded to
-  the Filecoin Network
-slug: democracy’s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network
+title: Democracy’s Library Announces More than a Petabyte of Data Uploaded to the Filecoin Network
+slug: democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network
 created-on: 2023-09-21T17:34:18.773Z
 updated-on: 2023-09-21T17:34:18.789Z
 published-on: 2023-09-21T17:34:18.798Z
-description: The Democracy’s Library project has announced that more than one
-  petabyte of material has been uploaded to the Filecoin network, including
-  information collected by the Internet Archive in a 16-year-old project, called
-  the “End of Term Crawl” that captures and saves U.S. government websites at
-  the end of presidential administrations.
+description: Democracy’s Library announces over a petabyte of government data uploaded to the Filecoin network. Learn about the project and its impact.
 image:
   url: /assets/images/1018-sps-democracyslibrary.png
   alt: null
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Democracy’s Library Uploads Over a Petabyte of Government Data to Filecoin Network
+  description: Discover how Democracy’s Library has successfully uploaded over a petabyte of U.S. government data to the Filecoin network, ensuring long-term preservation and accessibility.
 ---
 
 The [Democracy’s Library](https://blog.archive.org/2022/10/19/announcing-democracys-library/) project has announced that more than one petabyte of material has been uploaded to the Filecoin network, including information collected by the Internet Archive in a 16-year-old project, called the “[End of Term Crawl](https://eotarchive.org/)” that captures and saves U.S. government websites at the end of presidential administrations.

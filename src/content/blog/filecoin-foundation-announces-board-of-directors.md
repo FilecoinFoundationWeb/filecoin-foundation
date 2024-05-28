@@ -1,16 +1,22 @@
 ---
 title: Filecoin Foundation Announces Board of Directors
-created-on: 2023-04-21T07:27:15.321Z
-updated-on: 2023-04-21T07:27:15.321Z
-published-on: 2023-04-21T07:33:56.200Z
-description: The Filecoin Foundation and Filecoin Foundation for the
-  Decentralized Web shared their board of directors.
+created-on: 2023-04-21T07:27:15.321000Z
+updated-on: 2023-04-21T07:27:15.321000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  The Filecoin Foundation and Filecoin Foundation for the Decentralized
+  Web shared their board of directors.
 image:
   url: /assets/images/image-c-06.png
-  alt: null
+  alt:
 slug: filecoin-foundation-announces-board-of-directors
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filecoin Foundation Announces Board of Directors
+  description:
+    Filecoin Foundation announces the new board of directors. Learn about
+    the new members.
 ---
 
 # Filecoin Foundation Board of Directors

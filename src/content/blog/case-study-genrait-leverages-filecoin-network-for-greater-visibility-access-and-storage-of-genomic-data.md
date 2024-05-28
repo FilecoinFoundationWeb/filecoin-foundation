@@ -1,20 +1,26 @@
 ---
-title: "Case Study: GenRAIT Leverages Filecoin Network for Greater Visibility,
-  Access, and Storage of Genomic Data"
+title:
+  "Case Study: GenRAIT Leverages Filecoin Network for Greater Visibility, Access,
+  and Storage of Genomic Data"
 slug: case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data
-created-on: 2023-04-21T07:26:23.379Z
-updated-on: 2023-04-21T07:26:23.379Z
-published-on: 2023-04-21T07:33:56.200Z
-description: GenRAIT provides scientists with the platform they need to
-  analyze genomic data, generate scientific breakthroughs, and experiment at
-  scale, all in one unified ecosystem. In the GenRAIT ecosystem, scientists
-  retain full autonomy and flexibility with regards to their data and analytics
-  processes.
+created-on: 2023-04-21T07:26:23.379000Z
+updated-on: 2023-04-21T07:26:23.379000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  GenRAIT provides scientists with the platform they need to analyze genomic
+  data, generate scientific breakthroughs, and experiment at scale, all in one unified
+  ecosystem. In the GenRAIT ecosystem, scientists retain full autonomy and flexibility
+  with regards to their data and analytics processes.
 image:
   url: /assets/images/image-c-02.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: "Case Study: GenRait Leverages Filecoin for Genomic Data Storage"
+  description:
+    GenRait leverages Filecoin for greater visibility, access, and storage
+    of genomic data. Read the full case study.
 ---
 
 **Key highlights:**

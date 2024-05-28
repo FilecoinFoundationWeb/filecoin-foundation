@@ -1,9 +1,11 @@
 ---
-title: What to Know About the Uses of Decentralization in Online Community Governance in Five Minutes
+title:
+  What to Know About the Uses of Decentralization in Online Community Governance
+  in Five Minutes
 slug: what-to-know-about-the-uses-of-decentralization-in-online-community-governance-in-five-minutes
-created-on: 2023-07-19T15:07:39.071Z
-updated-on: 2023-07-19T15:07:39.094Z
-published-on: 2023-07-19T15:07:39.110Z
+created-on: 2023-07-19T15:07:39.071000Z
+updated-on: 2023-07-19T15:07:39.094000Z
+published-on: 2023-07-19T15:07:39.110000Z
 description: >-
   Filecoin Foundation Senior Fellow Danny O’Brien spoke with Nathan
   Schneider, professor of media studies at the University of Colorado Boulder,
@@ -13,9 +15,14 @@ description: >-
   governance models for online platforms and protocols.
 image:
   url: /assets/images/n-schneider-blogpost-banner.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: Decentralization in Online Community Governance in Five Minutes
+  description:
+    Understand the uses of decentralization in online community governance
+    in this brief overview.
 ---
 
 _The Decentralists, a twitter space series hosted by Filecoin Foundation speaks with top minds at the intersection of Dweb and technology created for real world applications._

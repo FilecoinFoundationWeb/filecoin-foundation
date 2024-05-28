@@ -1,20 +1,30 @@
 ---
-title: "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with the Community"
+title:
+  "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
+  the Community"
 slug: recapping-ethdenver-ipc-announcement-exploring-depin-and-connecting-with-the-community
-created-on: 2024-03-18T13:25:31.946Z
-updated-on: 2024-03-18T13:25:31.957Z
-published-on: 2024-03-18T13:25:31.966Z
-category: blog
-description: "ETHDenver brought together founders, developers, and builders from across the Filecoin ecosystem for a week of collaboration and innovation –– to usher the network into a new era of adoption and growth."
+created-on: 2024-03-18T13:25:31.946000Z
+updated-on: 2024-03-18T13:25:31.957000Z
+published-on: 2024-03-18T13:25:31.966000Z
+category: events
+description:
+  "ETHDenver brought together founders, developers, and builders from across
+  the Filecoin ecosystem for a week of collaboration and innovation –– to usher the
+  network into a new era of adoption and growth."
 image:
   url: /assets/images/ethdenver.png
-  alt: "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with the Community"
+  alt:
+    "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
+    the Community"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
+  title: "Recapping ETHDenver: IPC Announcement, DePIN, and Community Connections"
+  description:
+    Highlights from ETHDenver, including the IPC announcement, DePIN exploration,
+    and community connections.
 ---
 
 ETHDenver brought together founders, developers, and builders from across the Filecoin ecosystem for a week of collaboration and innovation –– to usher the network into a new era of adoption and growth.

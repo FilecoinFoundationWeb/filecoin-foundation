@@ -7,13 +7,18 @@ description: >-
 image:
   url: >-
     /assets/images/64423aafa6ec4151d52a3dc9_0-eczvdfkkiozsdvgv.jpeg
-  alt: null
+  alt:
 slug: dev-grant-spotlight-geo-web
 updated-on: "2023-04-21T07:26:40.008Z"
 created-on: "2023-04-21T07:26:40.008Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: reports
+seo:
+  title: "Dev Grant Spotlight: Geo Web"
+  description:
+    Spotlight on Geo Web, exploring their innovative solutions and contributions
+    to the Filecoin ecosystem.
 ---
 
 _This is the first post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about our Dev Grants program, including how to apply for grants,_ [_here_](https://grants.filecoin.io/)_. And_ [_read up_](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) _on Wave 8 recipients._

@@ -14,9 +14,14 @@ description: >-
   application.
 image:
   url: /assets/images/64423b050425d3f577f2eb36_1-qzfjf0m6l6_fzcxuic-8zg.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: LinkStorage Awarded Chainlink-Filecoin Joint Grant
+  description:
+    LinkStorage receives Chainlink-Filecoin joint grant to develop a blockchain
+    data storage protocol.
 ---
 
 In 2021, Chainlink and Filecoin [launched a joint grant initiative](https://blog.chain.link/announcing-the-chainlink-and-filecoin-joint-grant-program/) to accelerate the development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. The joint grant initiative supports teams building hybrid smart contract applications powered by tamper-proof file storage and universal connectivity. In essence, these co-sponsored grants are designed to help extend the [Web3](https://blog.chain.link/web3/) stack beyond on-chain computation into decentralized off-chain computation, data, and storage.

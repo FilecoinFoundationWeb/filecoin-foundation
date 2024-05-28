@@ -11,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423a9bd1b0256d85f907e2_0-al1sv2xu4ah_bwdo.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: "Building a Flow NFT Pet Store: Part 1"
+  description:
+    Learn how to build an NFT pet store on Flow blockchain. Step-by-step
+    guide for developers. Part 1 of the series.
 ---
 
 This tutorial from Filecoin Developer [Pan Chasinga](https://pancy.medium.com/) will teach you how to create a simple NFT marketplace app on the [Flow](https://www.onflow.org/) blockchain from scratch, using the Flow blockchain and IPFS/Filecoin storage via [nft.storage](https://nft.storage/). The finished project is a React app that lets you mint pet NFTs and query on-chain metadata and the photo of the pets:

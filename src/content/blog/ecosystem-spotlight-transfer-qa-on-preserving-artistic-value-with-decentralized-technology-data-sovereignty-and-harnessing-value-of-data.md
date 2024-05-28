@@ -1,24 +1,30 @@
 ---
-title: "Ecosystem Spotlight: TRANSFER Q&A on Preserving Artistic Value with Decentralized Technology, Data Sovereignty, and Harnessing Value of Data"
+title:
+  "Ecosystem Spotlight: TRANSFER Q&A on Preserving Artistic Value with Decentralized
+  Technology, Data Sovereignty, and Harnessing Value of Data"
 slug: ecosystem-spotlight-transfer-qa-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data
-created-on: 2024-02-01T15:32:12.253Z
-updated-on: 2024-02-01T15:32:12.272Z
-published-on: 2024-02-01T15:32:12.286Z
-category: interviews
+created-on: 2024-02-01T15:32:12.253000Z
+updated-on: 2024-02-01T15:32:12.272000Z
+published-on: 2024-02-01T15:32:12.286000Z
+category: ecosystem
 description: >
-  Q&A with Kelani Nichole, Founder of TRANSFER on preserving artistic value with decentralized technology, automated governance systems, harnessing the value of data in unique ways.
+  Q&A with Kelani Nichole, Founder of TRANSFER on preserving artistic value with decentralized
+  technology, automated governance systems, harnessing the value of data in unique
+  ways.
 image:
   url: /assets/images/020124-transfer.png
   alt: Filecoin Foundation TRANSFER Blog Post
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: Filecoin Foundation TRANSFER Spotlight
   twitter:card: summary
   twitter:image: /assets/images/020124-transfer.png
   og:image: /assets/images/020124-transfer.png
-  title: Filecoin Foundation TRANSFER Spotlight
+  title: "Ecosystem Spotlight: Transfer Q&A on Decentralized Technology"
+  description:
+    "Transfer Q&A: Preserving artistic value, data sovereignty, and harnessing
+    data value with decentralized tech."
 ---
 
 Q&A with Kelani Nichole, Founder of TRANSFER on preserving artistic value with decentralized technology, automated governance systems, harnessing the value of data in unique ways.

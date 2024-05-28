@@ -7,12 +7,17 @@ slug: dev-grant-spotlight-jackal-storage
 image:
   url: >-
     /assets/images/64423ab18d1be70ae7ce9031_1-qwnolzesajrp3gjwrthflg.png
-  alt: null
+  alt:
 updated-on: "2023-04-21T07:26:41.530Z"
 created-on: "2023-04-21T07:26:41.530Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: reports
+seo:
+  title: "Dev Grant Spotlight: Jackal Storage"
+  description:
+    Jackal Storage's impactful work as a Filecoin dev grant recipient.
+    Dive into their project and achievements.
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about the Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._

@@ -1,20 +1,25 @@
 ---
 title: "Fresh From FF: Mid-March, 2024"
 slug: fresh-from-ff-mid-march-2024
-created-on: 2024-03-15T16:54:45.054Z
-updated-on: 2024-03-15T16:54:45.064Z
-published-on: 2024-03-15T16:54:45.073Z
-category: blog
-description: Check out the latest updates about what the Filecoin Foundation team has been up to.
+created-on: 2024-03-15T16:54:45.054000Z
+updated-on: 2024-03-15T16:54:45.064000Z
+published-on: 2024-03-15T16:54:45.073000Z
+category: news
+description:
+  Check out the latest updates about what the Filecoin Foundation team
+  has been up to.
 image:
   url: /assets/images/0215-ff-2-.png
   alt: "Fresh From FF: Mid-March, 2024"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
+  title: "Fresh from FF: Mid March 2024"
+  description:
+    Stay updated with the latest news and highlights from Filecoin Foundation
+    in mid-March 2024.
 ---
 
 _Check out the latest updates about what the Filecoin Foundation team has been up to._

@@ -1,17 +1,23 @@
 ---
 title: "Remixing the Art World with Blockchain Technology: A Q&A with ntent"
 slug: remixing-the-art-world-with-blockchain-technology-a-q-a-with-ntent
-created-on: 2023-06-21T19:18:57.909Z
-updated-on: 2023-06-21T19:18:57.921Z
-published-on: 2023-06-21T19:18:57.929Z
-description: The art world has traditionally been shrouded in mystery and
-  unwritten rules. Now, Web3 is creating a more inclusive and user-centric
-  experience, lowering the barrier to entry through decentralized technology.
+created-on: 2023-06-21T19:18:57.909000Z
+updated-on: 2023-06-21T19:18:57.921000Z
+published-on: 2023-06-21T19:18:57.929000Z
+description:
+  The art world has traditionally been shrouded in mystery and unwritten
+  rules. Now, Web3 is creating a more inclusive and user-centric experience, lowering
+  the barrier to entry through decentralized technology.
 image:
   url: /assets/images/06012023-ntent.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: interviews
+seo:
+  title: "Remixing the Art World with Blockchain: A Q&A with Ntent"
+  description:
+    A Q&A with Ntent on how blockchain technology is remixing the art world.
+    Explore their insights.
 ---
 
 The art world has traditionally been shrouded in mystery and unwritten rules. Now, Web3 is creating a more inclusive and user-centric experience, lowering the barrier to entry through decentralized technology. The blockchain is uniquely suited for the challenge, as it has proven to be a highly effective steward of transparency thanks to the metadata that remains linked to the chain for its entire lifespan.

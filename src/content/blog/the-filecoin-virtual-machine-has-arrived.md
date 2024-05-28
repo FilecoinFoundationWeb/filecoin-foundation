@@ -12,9 +12,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423bf9da735f547c392f21_unnamed-14.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: The Filecoin Virtual Machine Has Arrived
+  description:
+    Announcing the arrival of the Filecoin Virtual Machine. Explore its
+    features and capabilities.
 ---
 
 The Filecoin Virtual Machine (FVM) has officially launched on Filecoin mainnet! Nicknamed 'Hygee', Network Upgrade v18 is the largest update in Filecoin network history, and a major [FVM milestone](https://fvm.filecoin.io) as the network becomes programmable for the first time.

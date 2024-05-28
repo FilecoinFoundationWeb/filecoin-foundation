@@ -11,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: Storage Company Ewesion Leverages Filecoin for Data Preservation
+  description:
+    How Ewesion leverages the Filecoin network for data preservation. Discover
+    their use case.
 ---
 
 **Key highlights:**

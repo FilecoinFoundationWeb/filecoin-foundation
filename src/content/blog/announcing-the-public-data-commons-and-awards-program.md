@@ -11,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Public Data Commons and Awards Program Announcement
+  description:
+    Filecoin Foundation announces the Public Data Commons and Awards Program.
+    Recognizing contributions to open data.
 ---
 
 We’re excited to announce that today Filecoin Foundation is launching a Public Data Commons initiative to support open data projects in partnership with government and official organizations across the globe. This project brings together cutting-edge archival technologies and civic-minded public institutions to leverage the unique benefits of decentralized storage — because public data should be a useful resource, not a costly burden to store.

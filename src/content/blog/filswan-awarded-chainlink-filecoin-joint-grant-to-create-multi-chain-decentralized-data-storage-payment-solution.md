@@ -12,12 +12,17 @@ slug: >-
 image:
   url: >-
     /assets/images/64423ae9ef619d8d6eb60ed0_1-pvi22ssfyyn-thpuj3ltgg.png
-  alt: null
+  alt:
 updated-on: "2023-04-21T07:27:37.543Z"
 created-on: "2023-04-21T07:27:37.543Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filswan Awarded Chainlink-Filecoin Joint Grant
+  description:
+    Filswan receives Chainlink-Filecoin joint grant to develop a multi-chain
+    decentralized data storage payment solution.
 ---
 
 In 2021, Chainlink and Filecoin launched [a joint grant initiative](https://blog.chain.link/announcing-the-chainlink-and-filecoin-joint-grant-program/) to accelerate the development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. The joint grant initiative supports teams building hybrid smart contract applications powered by tamper-proof file storage and universal connectivity. In essence, these co-sponsored grants are designed to help extend the [Web3](https://blog.chain.link/web3/) stack beyond on-chain computation to include decentralized off-chain computation, data, and storage.

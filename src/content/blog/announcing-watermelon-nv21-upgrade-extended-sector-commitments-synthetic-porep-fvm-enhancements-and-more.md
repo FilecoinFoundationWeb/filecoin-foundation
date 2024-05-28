@@ -1,16 +1,25 @@
 ---
-title: Announcing Watermelon nv21 Upgrade - Extended Sector Commitments, Synthetic PoRep, FVM Enhancements, and more
+title:
+  Announcing Watermelon nv21 Upgrade - Extended Sector Commitments, Synthetic
+  PoRep, FVM Enhancements, and more
 slug: announcing-watermelon-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more
-created-on: 2023-12-12T14:04:50.147Z
-updated-on: 2023-12-12T14:04:50.157Z
-published-on: 2023-12-12T14:04:50.164Z
-category: null
-description: The arrival of the nv21 Network Upgrade on mainnet is here! This upgrade codenamed ‘Watermelon’ brings a wave of enhancements and new features aimed at bolstering the network’s efficiency and robustness.
+created-on: 2023-12-12T14:04:50.147000Z
+updated-on: 2023-12-12T14:04:50.157000Z
+published-on: 2023-12-12T14:04:50.164000Z
+category: news
+description:
+  The arrival of the nv21 Network Upgrade on mainnet is here! This upgrade
+  codenamed ‘Watermelon’ brings a wave of enhancements and new features aimed at bolstering
+  the network’s efficiency and robustness.
 image:
   url: /assets/images/twitter-_-nv21_upgrade.png
   alt: The arrival of the nv21 Network Upgrade on Filecoin mainnet is here.
 recommended-posts: []
-metadata: null
+seo:
+  title: Announcing Watermelon NV21 Upgrade by Filecoin Foundation
+  description:
+    Watermelon NV21 upgrade announced. Includes extended sector commitments,
+    synthetic PoRep, FVM enhancements, and more.
 ---
 
 The arrival of the nv21 Network Upgrade on mainnet is here! This upgrade codenamed ‘Watermelon’ lands Tuesday, December 12.

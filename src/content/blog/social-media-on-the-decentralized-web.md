@@ -11,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: Social Media on the Decentralized Web
+  description:
+    Explore how social media operates on the decentralized web. Benefits,
+    challenges, and future prospects.
 ---
 
 In recent days, many Twitter users have sought alternative platforms, like the decentralized social media network Mastodon, in the face of controversial layoffs, and leadership and product changes. According to [Fortune](https://fortune.com/2022/11/07/mastadon-struggles-large-number-twitter-defectors/), since Elon Musk took over Twitter on Oct. 27, Mastodon has drawn 489,003 new users, bringing total monthly active users to more than 1 million.

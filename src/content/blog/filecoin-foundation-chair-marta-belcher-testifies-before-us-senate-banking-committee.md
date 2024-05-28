@@ -1,21 +1,27 @@
 ---
-title: Filecoin Foundation Chair Marta Belcher Testifies Before US Senate
-  Banking Committee
-created-on: 2023-04-21T07:27:16.879Z
-updated-on: 2023-04-21T07:27:16.879Z
-published-on: 2023-04-21T07:33:56.200Z
-description: "Filecoin Foundation Board Chair Marta Belcher testified before
-  the U.S. Senate Committee on Banking, Housing, and Urban Affairs on July 27 in
-  a hearing titled “Cryptocurrencies: What are they good for?” Marta’s testimony
-  highlighted the benefits of cryptocurrency and explained Filecoin as one
-  example of a use case that could serve as the foundation for the next
-  generation of the Internet."
+title:
+  Filecoin Foundation Chair Marta Belcher Testifies Before US Senate Banking
+  Committee
+created-on: 2023-04-21T07:27:16.879000Z
+updated-on: 2023-04-21T07:27:16.879000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "Filecoin Foundation Board Chair Marta Belcher testified before the U.S.
+  Senate Committee on Banking, Housing, and Urban Affairs on July 27 in a hearing
+  titled “Cryptocurrencies: What are they good for?” Marta’s testimony highlighted
+  the benefits of cryptocurrency and explained Filecoin as one example of a use case
+  that could serve as the foundation for the next generation of the Internet."
 image:
   url: /assets/images/64423ad4d7488e39d6b03c3a_0-oh5oa7medvgzjscu.png
-  alt: null
+  alt:
 slug: filecoin-foundation-chair-marta-belcher-testifies-before-us-senate-banking-committee
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filecoin Foundation Chair Testifies Before US Senate
+  description:
+    Filecoin Foundation Chair Marta Belcher testifies before the US Senate
+    Banking Committee. Key points and implications.
 ---
 
 Filecoin Foundation Board Chair Marta Belcher testified before the U.S. Senate Committee on Banking, Housing, and Urban Affairs on July 27 in a hearing titled “Cryptocurrencies: What are they good for?” Marta’s testimony highlighted the benefits of cryptocurrency and explained Filecoin as one example of a use case that could serve as the foundation for the next generation of the Internet.

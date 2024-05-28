@@ -1,18 +1,24 @@
 ---
-title: Filecoin Foundation and Filecoin Foundation for the Decentralized Web
-  Gain Momentum
-created-on: 2023-04-21T07:27:10.571Z
-updated-on: 2023-04-21T07:27:10.571Z
-published-on: 2023-04-21T07:33:56.200Z
-description: In 2017, the creators of Filecoin envisioned that an independent
-  Filecoin Foundation would serve as the long-term governance body for the
-  Filecoin Ecosystem.
+title:
+  Filecoin Foundation and Filecoin Foundation for the Decentralized Web Gain
+  Momentum
+created-on: 2023-04-21T07:27:10.571000Z
+updated-on: 2023-04-21T07:27:10.571000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  In 2017, the creators of Filecoin envisioned that an independent Filecoin
+  Foundation would serve as the long-term governance body for the Filecoin Ecosystem.
 image:
   url: /assets/images/64423aceef619d5dc5b60e52_1-e009tiaipq2vndk-evb9ng.png
-  alt: null
+  alt:
 slug: filecoin-foundation-and-filecoin-foundation-for-the-decentralized-web-gain-momentum
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Filecoin Foundation and FFDW Gain Momentum
+  description:
+    The Filecoin Foundation and Filecoin Foundation for the Decentralized
+    Web gain momentum. Discover their latest initiatives.
 ---
 
 In 2017, the creators of Filecoin envisioned that an independent Filecoin Foundation would serve as the long-term governance body for the Filecoin Ecosystem. They gave the Foundation the mandate to “grow an open ecosystem for decentralized storage” and to “give developers an open and sustainable platform to build, enhance and monetize those services.” They wanted the Foundation to be modeled on Foundations for other open source projects like the Apache Software Foundation, the Mozilla Foundation and the Linux Foundation.
