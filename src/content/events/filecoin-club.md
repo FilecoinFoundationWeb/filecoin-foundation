@@ -9,8 +9,8 @@ description: >-
   building in blockchain, is introducing Filecoin Club to educate the next
   generation of students about Filecoin’s technology.
 
-cta:
-  url: https://www.encode.club/filecoin-club
+external-link:
+  href: https://www.encode.club/filecoin-club
   text: Buy your tickets
 start-date: "2021-09-30T22:00:00.000Z"
 end-date: "2021-12-30T23:00:00.000Z"

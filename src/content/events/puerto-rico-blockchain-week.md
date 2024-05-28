@@ -5,8 +5,8 @@ created-on: "2023-06-27T17:15:30.355Z"
 updated-on: "2023-06-27T17:15:30.380Z"
 published-on: "2023-06-27T17:15:30.400Z"
 description: Puerto Rico
-cta:
-  url: https://www.prblockchainweek.io/
+external-link:
+  href: https://www.prblockchainweek.io/
   text: null
 start-date: "2022-12-05T18:15:30.421Z"
 end-date: "2022-12-10T18:15:00.000Z"

@@ -7,8 +7,8 @@ export type EventData = {
   updatedOn?: string
   publishedOn?: string
   description?: string
-  cta?: {
-    url: string
+  externalLink?: {
+    href: string
     text: string
   }
   startDate: string

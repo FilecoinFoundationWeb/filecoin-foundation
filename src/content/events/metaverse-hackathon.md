@@ -6,8 +6,8 @@ updated-on: "2023-05-03T08:06:19.314Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: >-
   An 8-week hackathon focused on Metaverse! Build projects on IPFS to answer challenges and compete for the $50k prize pool.
-cta:
-  url: https://kencloud.com/hack.html
+external-link:
+  href: https://kencloud.com/hack.html
   text: null
 start-date: "2022-04-19T16:00:45.000Z"
 end-date: null

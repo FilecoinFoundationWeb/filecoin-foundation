@@ -5,8 +5,8 @@ created-on: "2024-01-29T15:35:50.939Z"
 updated-on: "2024-01-29T15:35:51.003Z"
 published-on: "2024-01-29T15:35:51.019Z"
 description: San Francisco, CA
-cta:
-  url: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367
+external-link:
+  href: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367
   text: null
 start-date: "2024-02-27T14:00:51.036Z"
 end-date: "2024-02-27T21:00:51.050Z"

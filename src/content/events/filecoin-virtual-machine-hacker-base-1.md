@@ -5,8 +5,8 @@ created-on: "2023-06-27T15:39:25.694Z"
 updated-on: "2023-06-27T15:39:25.702Z"
 published-on: "2023-06-27T15:39:25.707Z"
 description: "Denver, CO"
-cta:
-  url: https://events.fil.org/fvm-hackerbase
+external-link:
+  href: https://events.fil.org/fvm-hackerbase
   text: null
 start-date: "2023-02-28T16:39:25.712Z"
 end-date: "2023-03-01T16:39:25.716Z"

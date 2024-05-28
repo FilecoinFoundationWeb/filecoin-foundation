@@ -13,9 +13,9 @@ export function mapMarkdownToEventData({
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
     description: data.description,
-    cta: {
-      url: data.cta?.url || '',
-      text: data.cta?.text || '',
+    externalLink: {
+      href: data['external-link'].href,
+      text: data['external-link'].text,
     },
     startDate: data['start-date'],
     endDate: data['end-date'],

@@ -5,8 +5,8 @@ created-on: "2023-06-27T15:51:17.030Z"
 updated-on: "2023-06-27T15:51:17.038Z"
 published-on: "2023-06-27T15:51:17.044Z"
 description:  Davos, Switzerland
-cta:
-  url: https://events.fil.org/davos
+external-link:
+  href: https://events.fil.org/davos
   text: null
 start-date: "2023-01-15T16:51:17.049Z"
 end-date: "2023-01-20T16:51:17.055Z"

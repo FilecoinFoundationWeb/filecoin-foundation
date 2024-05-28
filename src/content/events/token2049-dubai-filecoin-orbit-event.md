@@ -5,8 +5,8 @@ created-on: "2024-01-29T15:45:39.297Z"
 updated-on: "2024-01-29T15:45:39.305Z"
 published-on: "2024-01-29T15:45:39.312Z"
 description: Dubai, UAE
-cta:
-  url: null
+external-link:
+  href: null
   text: null
 start-date: "2024-04-16T14:45:39.324Z"
 end-date: "2024-04-19T14:45:39.332Z"

@@ -5,8 +5,8 @@ created-on: "2023-05-03T08:05:59.380Z"
 updated-on: "2023-05-03T08:05:59.380Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description: null
-cta:
-  url: https://www.web3espa.io/
+external-link:
+  href: https://www.web3espa.io/
   text: null
 start-date: "2022-10-13T00:00:00.000Z"
 end-date: "2022-10-13T00:00:00.000Z"

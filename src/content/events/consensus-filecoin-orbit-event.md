@@ -5,8 +5,8 @@ created-on: "2024-01-29T15:50:42.605Z"
 updated-on: "2024-01-29T15:50:42.614Z"
 published-on: "2024-01-29T15:50:42.621Z"
 description: Austin, TX
-cta:
-  url: null
+external-link:
+  href: null
   text: null
 start-date: "2024-05-29T14:50:42.632Z"
 end-date: "2024-05-31T14:50:42.640Z"

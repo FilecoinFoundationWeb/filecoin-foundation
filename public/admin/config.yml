@@ -523,20 +523,19 @@ collections:
         label: "Description"
         widget: "string"
         required: false
-      - name: "cta"
-        label: "CTA"
+      - name: "external-link"
+        label: "External Link"
         widget: "object"
         required: false
         fields:
-          - name: "url"
-            label: "URL"
+          - name: "href"
+            label: "Href"
             widget: "string"
             required: true
           - name: "text"
             label: "Text"
             widget: "string"
             required: true
-            default: "Learn More"
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
