@@ -1,4 +1,5 @@
-import { type Metadata } from '@/types/metadataTypes'
+import { type Metadata } from 'next'
+
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type BlogPostData = {
@@ -12,5 +13,5 @@ export type BlogPostData = {
   image: ImageProps
   content?: string
   recommendedPosts?: string[]
-  metadata?: Metadata
+  seo: Metadata
 }

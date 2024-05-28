@@ -1,4 +1,6 @@
-import { Metadata } from '@/types/metadataTypes'
+import { type Metadata } from 'next'
+
+import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type EventData = {
   title: string
@@ -14,10 +16,7 @@ export type EventData = {
   }
   startDate: string
   endDate?: string
-  image?: {
-    url: string
-    alt: string
-  }
-  involvement?: string
-  metadata?: Metadata
+  image: ImageProps
+  involvement: string
+  seo: Metadata
 }

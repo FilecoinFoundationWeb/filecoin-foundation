@@ -6,10 +6,11 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes, react as Content } from '@/content/pages/terms.md'
 
-const { header, seo } = attributes
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.TERMS.path)
+const { header, seo } = attributes
+
+export const metadata = createMetadata({ seo, path: PATHS.TERMS.path })
 
 const termsPageBaseData = generateWebPageStructuredData({
   title: seo.title,

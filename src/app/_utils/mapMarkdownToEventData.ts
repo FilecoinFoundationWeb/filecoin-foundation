@@ -1,4 +1,4 @@
-import { EventData } from '@/types/eventTypes'
+import { type EventData } from '@/types/eventTypes'
 
 export function mapMarkdownToEventData({
   data,
@@ -25,6 +25,6 @@ export function mapMarkdownToEventData({
       alt: data.image?.alt || '',
     },
     involvement: data.involvement,
-    metadata: data.metadata,
+    seo: data.seo,
   }
 }

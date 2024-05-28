@@ -293,7 +293,7 @@
               ]
             },
             {
-              "name": "featured_entry",
+              "name": "featured_ecosystem_projects",
               "label": "Featured Ecosystem Projects",
               "widget": "relation",
               "required": false,
@@ -1855,11 +1855,6 @@
           "widget": "datetime",
           "required": false,
           "hint": "Last day of event"
-        },
-        {
-          "name": "location",
-          "label": "Location",
-          "widget": "string"
         },
         {
           "name": "image",
