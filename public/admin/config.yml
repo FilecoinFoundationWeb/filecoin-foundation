@@ -88,7 +88,7 @@ collections:
         fields:
           - *header_config
           - *meta_config
-          - name: "featured_entry"
+          - name: "featured_ecosystem_projects"
             label: "Featured Ecosystem Projects"
             widget: "relation"
             required: false
@@ -531,9 +531,6 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
-      - name: "location"
-        label: "Location"
-        widget: "string"
       - name: "image"
         label: "Image"
         widget: "object"
