@@ -1,9 +1,9 @@
 ---
 title: VshareCloud
 slug: vsharecloud
-created-on: 2024-04-05T14:14:29.910Z
-updated-on: 2024-04-05T14:14:29.925Z
-published-on: 2024-04-05T14:14:29.937Z
+created-on: 2024-04-05T14:14:29.910000Z
+updated-on: 2024-04-05T14:14:29.925000Z
+published-on: 2024-04-05T14:14:29.937000Z
 description: "Open-source distributed storage and computing platform."
 category: storage
 tags:
@@ -22,13 +22,17 @@ image:
   url: /assets/images/vsharecloud.webp
   alt: VshareCloud Logo
 website: https://vshare.Cloud
-featured-content: null
+featured-content:
 repo: https://github.com/vshareCloud-Project/
-twitter: null
-video-url: null
-year-joined: 2024-04-05T14:14:29.953Z
-news-update: null
-metadata: null
+twitter:
+video-url:
+year-joined: 2024-04-05T14:14:29.953000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: VshareCloud
+  description: VshareCloud offers decentralized storage solutions for digital data.
 ---
 
 VshareCloud is an innovative open-source distributed storage and computing platform, designed to offer an efficient, scalable, and cost-effective solution for the big data and cloud computing sectors. Leveraging advanced IPFS distributed technology, VshareCloud can seamlessly operate across a variety of hardware and network environments, supporting a wide range of application scenarios from small businesses to large data centers. Through in-depth research on IPFS and unique data management and processing mechanisms, VshareCloud optimizes data storage, access, and computation processes, thereby enhancing system performance, reducing latency, and ensuring data security and integrity.We are also committed to developing more Filecoin/IPFS applications to help Filecoin/IPFS technology better integrate into people's lives.

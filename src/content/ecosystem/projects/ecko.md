@@ -1,26 +1,34 @@
 ---
 title: Ecko
 slug: ecko
-created-on: 2024-04-05T00:20:25.907Z
-updated-on: 2024-04-05T00:20:25.917Z
-published-on: 2024-04-05T00:20:25.930Z
-description: "Ecko is a collaboration platform for the planning, creation, and monetisation of multi-drop mission driven NFT campaigns."
-category: media-entertainment
+created-on: 2024-04-05T00:20:25.907000Z
+updated-on: 2024-04-05T00:20:25.917000Z
+published-on: 2024-04-05T00:20:25.930000Z
+description:
+  "Ecko is a collaboration platform for the planning, creation, and monetisation
+  of multi-drop mission driven NFT campaigns."
+category: tooling-productivity
 tags:
   - arts-collectibles
 tech:
   - filecoin
 image:
   url: /assets/images/askecko_logo.jpeg
-  alt: Ecko logo
-featured-content: null
+  alt: Ecko Logo
+featured-content:
 website: https://www.ecko.ac
-repo: null
-twitter: null
-video-url: null
-year-joined: 2024-04-05T00:20:25.941Z
-news-update: null
-metadata: null
+repo:
+twitter:
+video-url:
+year-joined: 2024-04-05T00:20:25.941000Z
+news-update:
+subcategories:
+  - infrastructure
+seo:
+  title: Ecko
+  description:
+    Ecko offers decentralized solutions for blockchain infrastructure and
+    development.
 ---
 
 Ecko is a creative agency and a collaboration platform that seeks to empower and connect artists & fans around the world.

@@ -1,10 +1,12 @@
 ---
 title: Titan Storage
 slug: titan-storage
-created-on: 2024-03-20T13:04:49.531Z
-updated-on: 2024-03-20T13:04:49.599Z
-published-on: 2024-03-20T13:04:49.640Z
-description: "Titan Storage, a market-leading decentralized, secure, and efficient storage solution."
+created-on: 2024-03-20T13:04:49.531000Z
+updated-on: 2024-03-20T13:04:49.599000Z
+published-on: 2024-03-20T13:04:49.640000Z
+description:
+  "Titan Storage, a market-leading decentralized, secure, and efficient
+  storage solution."
 category: storage
 tags:
   - depin
@@ -14,13 +16,17 @@ image:
   url: /assets/images/titan-storage_logo_white.png
   alt: Titan Storage Logo
 website: https://storage.titannet.io
-featured-content: null
+featured-content:
 repo: https://github.com/Filecoin-Titan/titan-storage-sdk
 twitter: https://twitter.com/titannet_dao/
-video-url: null
-year-joined: 2023-04-01T13:04:49.683Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2023-04-01T13:04:49.683000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: Titan Storage
+  description: Titan Storage provides decentralized storage solutions for enterprises.
 ---
 
 Titan Storage represents a cutting-edge solution in the realm of digital data management and storage, designed to address the ever-growing demands for secure, scalable, and efficient data storage. Leveraging advanced technologies of Filecoin and IPFS, Titan Storage aims to revolutionize how data is stored, accessed, and managed across diverse sectors, including business, AI, healthcare, and entertainment.

@@ -1,37 +1,34 @@
 ---
-created-on: 2024-01-12T19:56:32.789Z
-news-update: null
+created-on: 2024-01-12T19:56:32.789000Z
+news-update:
 slug: acaisia
-metadata: null
 title: Acaisia
-updated-on: 2024-01-12T19:56:32.835Z
-published-on: 2024-01-12T19:56:32.887Z
+updated-on: 2024-01-12T19:56:32.835000Z
+published-on: 2024-01-12T19:56:32.887000Z
 image:
   url: /assets/images/acaisia-logo_white.png
   alt: Acaisia Logo
-category: tooling-productivity
+category: storage
 subcategories:
-  - infrastructure
-  - storage-services
+  - data-storage-management
 tags:
   - enterprise
   - gpus
   - sealing
-description: By leveraging decentralized technologies, Acaisia offers
-  affordable, secure, and transparent computing and storage options.
+description:
+  By leveraging decentralized technologies, Acaisia offers affordable,
+  secure, and transparent computing and storage options.
 website: https://acaisia.com
 repo: https://github.com/team-acaisia
 tech:
   - filecoin
-featured-content: null
-twitter: null
-video-url: null
-year-joined: 2023-09-01T18:56:33.186Z
+featured-content:
+twitter:
+video-url:
+year-joined: 2023-09-01T18:56:33.186000Z
 seo:
-  title: Acaisia | Affordable and Secure Decentralized Computing and Storage
-  description: Leverage Acaisia's decentralized platform for secure, affordable
-    computing and storage. Optimize performance with intelligent workload
-    distribution and Sealing As A Service.
+  title: Acaisia
+  description: Discover Acaisia's innovative solutions for data storage and management.
 ---
 
 Acaisia's platform, an Eliovp Product, seamlessly connects your hardware with other clusters, creating a powerful, reliable, and cost-competitive cloud. Their intelligent workload distribution system reduces processing time and minimizes idle resources, all automatically, this to heavily optimize your ROI.
