@@ -29,7 +29,7 @@ export function testPageMetadata(
       cy.title().should(
         'eq',
         path.path === PATHS.HOME.path
-          ? 'Filecoin Foundation'
+          ? 'Filecoin Foundation | Decentralized Storage Solutions'
           : `${seo.title} | Filecoin Foundation`,
       )
 

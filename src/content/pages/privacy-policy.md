@@ -4,7 +4,7 @@ header:
   description: "Privacy Policy"
 seo:
   title: "Privacy Policy"
-  description: "Privacy Policy"
+  description: "Discover how the Filecoin Foundation safeguards your data. Read our comprehensive Privacy Policy for detailed information."
 ---
 
 **Last Updated: January 25, 2023**
