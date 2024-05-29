@@ -1,11 +1,11 @@
 ---
 title: Hamster
 slug: hamster
-created-on: 2024-03-29T21:28:51.960Z
-updated-on: 2024-03-29T21:43:26.916Z
-published-on: 2024-03-29T21:43:26.916Z
+created-on: 2024-03-29T21:28:51.960000Z
+updated-on: 2024-03-29T21:43:26.916000Z
+published-on: 2024-03-29T21:43:26.916000Z
 description: "Developer Toolkit and Middleware for Filecoin"
-category: tooling-productivity
+category: storage
 tags:
   - ai-productivity-and-utilities
   - developer-tools
@@ -15,13 +15,19 @@ image:
   url: /assets/images/660732932560f8884ec24d4c_hamster.png
   alt: Hamster
 website: https://hamsternet.io/
-featured-content: null
-repo: null
+featured-content:
+repo:
 twitter: https://twitter.com/Hamsternetio
-video-url: null
-year-joined: 2024-03-29T21:28:51.960Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2024-03-29T21:28:51.960000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: Hamster
+  description:
+    Hamster offers decentralized storage solutions for personal and enterprise
+    use.
 ---
 
 Filecoin is an integral part of the data storage layer.

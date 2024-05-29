@@ -11,12 +11,17 @@ description: >-
   important information.
 location: Austin, TX
 external-link:
-  href: https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y
+  href: 
+    https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y
   text: "Watch Recording"
 start-date: "2022-03-15T07:23:50.000Z"
-end-date: null
+end-date:
 image:
   url: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
-  alt: null
-involvement: null
+  alt:
+involvement: sponsored
+seo:
+  title: Decentralized Web Gateway SXSW
+  description: Join the Decentralized Web Gateway at SXSW to explore the innovations
+    in decentralized web technologies.
 ---

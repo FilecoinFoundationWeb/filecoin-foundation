@@ -4,8 +4,10 @@ slug: "neyra-ai-from-wise-data-pte"
 created-on: "2024-02-22T19:39:58.152Z"
 updated-on: "2024-02-22T19:39:58.175Z"
 published-on: "2024-02-22T19:39:58.195Z"
-description: "Neyra AI is an innovative personal assistant and storage solution designed to enhance productivity and asset management."
-category: ai-productivity-and-utilities
+description:
+  "Neyra AI is an innovative personal assistant and storage solution designed
+  to enhance productivity and asset management."
+category: artificial-intelligence
 tags:
   - "ai-productivity-and-utilities"
 tech:
@@ -14,13 +16,19 @@ image:
   url: # "/assets/images/logo-2-.png"
   alt: "Neyra AI"
 website: "https://drive.neyra.ai/"
-featured-content: null
-repo: null
-twitter: null
-video-url: null
+featured-content:
+repo:
+twitter:
+video-url:
 year-joined: "2023-11-01T18:39:58.216Z"
-news-update: null
-metadata: null
+news-update:
+subcategories:
+  - artificial-productivity-utilities
+seo:
+  title: Neyra AI from Wise Data PTE
+  description:
+    Neyra AI provides AI-driven solutions for decentralized data analysis
+    and management.
 ---
 
 At Neyra AI, we revolutionize data security and storage through our cutting-edge Neyra Drive, seamlessly integrating the boundless capabilities of the Filecoin network to ensure unparalleled protection and accessibility for your data. Our innovative platform redefines the paradigm of data storage in the AI era, leveraging Filecoin's decentralized infrastructure to provide secure, encrypted storage solutions that stand at the vanguard of technological advancement.

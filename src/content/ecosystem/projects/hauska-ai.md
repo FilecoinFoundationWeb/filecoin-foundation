@@ -1,10 +1,12 @@
 ---
 title: Hauska.ai
 slug: hauska-ai
-created-on: 2024-03-20T19:42:42.027Z
-updated-on: 2024-03-20T19:42:42.041Z
-published-on: 2024-03-20T19:42:42.053Z
-description: "Leads in revolutionizing home design and remodeling with AI and Web3 tech"
+created-on: 2024-03-20T19:42:42.027000Z
+updated-on: 2024-03-20T19:42:42.041000Z
+published-on: 2024-03-20T19:42:42.053000Z
+description:
+  "Leads in revolutionizing home design and remodeling with AI and Web3
+  tech"
 category: artificial-intelligence
 tags:
   - ai-productivity-and-utilities
@@ -15,13 +17,19 @@ image:
   url: /assets/images/hauska_logo_white.png
   alt: Hauska   Design | Protect | Exchange
 website: https://www.hauska.ai/
-featured-content: null
-repo: null
-twitter: null
-video-url: null
-year-joined: 2023-12-27T20:42:42.062Z
-news-update: null
-metadata: null
+featured-content:
+repo:
+twitter:
+video-url:
+year-joined: 2023-12-27T20:42:42.062000Z
+news-update:
+subcategories:
+  - artificial-productivity-utilities
+seo:
+  title: Hauska AI
+  description:
+    Hauska AI provides AI-driven solutions for decentralized data analysis
+    and management.
 ---
 
 Hauska leads in revolutionizing Home Design and Remodeling with AI and Web3 tech. Our platform offers specialized AI design tools, IP protection, decentralized storage, and a Web3 marketplace. Our innovative tools reduce manual sketching time, boosting client acquisition and aiding Design Professionals in closing deals efficiently.

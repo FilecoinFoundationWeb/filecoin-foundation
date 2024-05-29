@@ -15,4 +15,7 @@ image:
   url: /assets/images/vector-foresight-logo-dark-blue.svg
   alt: null
 involvement: sponsored
+seo:
+  title: AGI Cryptography Security Multipolar Scenarios Workshop
+  description: Join the AGI Cryptography Security Workshop to explore multipolar scenarios in cryptography and security.
 ---
