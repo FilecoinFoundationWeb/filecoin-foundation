@@ -8,7 +8,7 @@ description: >-
   Encode Club, a community of university students, researchers, and developers
   building in blockchain, is introducing Filecoin Club to educate the next
   generation of students about Filecoin’s technology.
-location: null
+location:
 external-link:
   href: https://www.encode.club/filecoin-club
   text: Buy your tickets
@@ -17,6 +17,10 @@ end-date: "2021-12-30T23:00:00.000Z"
 image:
   url: >-
     /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
-  alt: null
-involvement: null
+  alt:
+involvement: supported
+seo:
+  title: Filecoin Club
+  description: Join the Filecoin Club to connect with enthusiasts and explore the
+    latest in Filecoin.
 ---
