@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
-import { WebPage, WithContext } from 'schema-dts'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -28,15 +27,11 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import {
-  baseOrganizationSchema,
-  generateWebPageStructuredData,
-} from '@/utils/structuredData'
+import { generateBlogPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -53,31 +48,6 @@ const { featured_entry: featuredPostSlug, seo } = attributes
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
 export const metadata = createMetadata({ seo, path: PATHS.BLOG.path })
-
-const blogPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.BLOG.path,
-})
-
-const blogPageStructuredData: WithContext<WebPage> = {
-  ...blogPageBaseData,
-  publisher: baseOrganizationSchema,
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: posts.slice(0, 5).map((post, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'BlogPosting',
-        name: post.title,
-        description: post.description,
-        image: post.image?.url,
-        url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
-      },
-    })),
-  },
-}
 
 function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
   return publishedOn ? [formatDate(publishedOn)] : []
@@ -115,7 +85,9 @@ export default function Blog({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={blogPageStructuredData} />
+      <StructuredDataScript
+        structuredData={generateBlogPageStructuredData(posts, seo)}
+      />
       <PageHeader
         isFeatured
         title={featuredPost.title}

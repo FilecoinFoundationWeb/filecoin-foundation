@@ -7,9 +7,11 @@ import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/home.md'
 
@@ -34,6 +36,8 @@ export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
 export default function Home() {
   return (
     <PageLayout>
+      <StructuredDataScript structuredData={baseOrganizationSchema} />
+
       <PageHeader
         title={header.title}
         description={header.description}

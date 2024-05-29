@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
-import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
@@ -17,10 +16,9 @@ import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
-import { baseOrganizationSchema } from '@/utils/structuredData'
+import { generateEcosystemProjectPostStructuredData } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
 
 type EcosystemProjectProps = {
   params: {
@@ -38,29 +36,6 @@ export async function generateMetadata({ params }: EcosystemProjectProps) {
     description: data.description,
     path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
   })
-}
-
-function createEcosystemProjectPostStructuredData(
-  data: EcosystemProjectData,
-): WithContext<Article> {
-  const { title, slug, publishedOn, updatedOn, description, image } = data
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: title,
-    description,
-    image: image.url,
-    datePublished: publishedOn,
-    dateModified: updatedOn || publishedOn,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.ECOSYSTEM.path}/${slug}`,
-    },
-    ...(typeof baseOrganizationSchema === 'object'
-      ? { publisher: baseOrganizationSchema }
-      : {}),
-  }
 }
 
 function getTagLabels(project: EcosystemProjectData) {
@@ -92,7 +67,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   return (
     <>
       <StructuredDataScript
-        structuredData={createEcosystemProjectPostStructuredData(data)}
+        structuredData={generateEcosystemProjectPostStructuredData(data)}
       />
 
       {/* #TODO: Top spacing to be handled by layout parent */}

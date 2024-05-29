@@ -9,7 +9,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
+import { generateGovernancePageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
@@ -21,16 +21,12 @@ import { governanceDocsData } from './data/governanceDocsData'
 const { header, seo } = attributes
 export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })
 
-const governancePageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.GOVERNANCE.path,
-})
-
 export default function Governance() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={governancePageBaseData} />
+      <StructuredDataScript
+        structuredData={generateGovernancePageStructuredData(seo)}
+      />
       <PageHeader
         title={header.title}
         description={header.description}

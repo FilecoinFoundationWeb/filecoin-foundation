@@ -11,7 +11,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
+import { generateGrantsPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
@@ -30,16 +30,12 @@ const grantGraduates = ecosystemProjects.filter((item) =>
 
 export const metadata = createMetadata({ seo, path: PATHS.GRANTS.path })
 
-const grantsPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.GRANTS.path,
-})
-
 export default function Grants() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={grantsPageBaseData} />
+      <StructuredDataScript
+        structuredData={generateGrantsPageStructuredData(seo)}
+      />
       <PageHeader
         title={header.title}
         description={header.description}
