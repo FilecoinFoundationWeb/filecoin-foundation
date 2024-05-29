@@ -14,11 +14,12 @@ const nextConfig = {
     },
     outputFileTracingExcludes: {
       '/': [
-        'public/**',
-        '.netlify/**',
+        '.git/**',
         '.github/**',
+        '.next/**',
         '.vscode/**',
         'cypress/**',
+        'public/**',
         'scripts/**',
         'src/app/**',
       ],
