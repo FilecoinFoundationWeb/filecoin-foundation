@@ -1,26 +1,33 @@
 ---
 title: Encryption Pinner
 slug: encryption-pinner
-created-on: 2024-04-05T01:09:47.866Z
-updated-on: 2024-04-05T01:09:47.898Z
-published-on: 2024-04-05T01:09:47.907Z
-description: "Encryption Pinner is a simple development tool, which allows users to encrypt their files with an encryption method of their choice, and then pin them to their personal business Pinata gateway."
-category: tooling-productivity
+created-on: 2024-04-05T01:09:47.866000Z
+updated-on: 2024-04-05T01:09:47.898000Z
+published-on: 2024-04-05T01:09:47.907000Z
+description:
+  "Encryption Pinner is a simple development tool, which allows users to
+  encrypt their files with an encryption method of their choice, and then pin them
+  to their personal business Pinata gateway."
+category: storage
 tags:
   - developer-tools
 tech:
   - ipfs
 image:
-  url: null
+  url:
   alt: Encryption Pinner Logo
-featured-content: null
+featured-content:
 website: https://devpost.com/software/encryption-pinner?ref_content=user-portfolio&ref_feature=in_progress
-repo: null
-twitter: null
-video-url: null
-year-joined: 2024-04-05T01:09:47.927Z
-news-update: null
-metadata: null
+repo:
+twitter:
+video-url:
+year-joined: 2024-04-05T01:09:47.927000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: Encryption Pinner
+  description: Encryption Pinner offers secure and decentralized data pinning services.
 ---
 
 Encryption Pinner utilizes Node's "crypto" module for fast file encryption via the web browser. Users can choose between dozens of encryption methods, with a passcode of their choice.

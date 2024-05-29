@@ -1,9 +1,9 @@
 ---
 title: E-IPFS
 slug: e-ipfs
-created-on: 2024-04-05T00:10:47.073Z
-updated-on: 2024-04-05T00:10:47.096Z
-published-on: 2024-04-05T00:10:47.104Z
+created-on: 2024-04-05T00:10:47.073000Z
+updated-on: 2024-04-05T00:10:47.096000Z
+published-on: 2024-04-05T00:10:47.104000Z
 description: "Hybrid IPFS service"
 category: storage
 tags:
@@ -13,16 +13,22 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: null
-  alt: E-IPFS logo
-featured-content: null
+  url:
+  alt: E-IPFS Logo
+featured-content:
 website: https://e-ipfs.web.app/
-repo: null
-twitter: null
-video-url: null
-year-joined: 2024-04-05T00:10:47.116Z
-news-update: null
-metadata: null
+repo:
+twitter:
+video-url:
+year-joined: 2024-04-05T00:10:47.116000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: E-IPFS
+  description:
+    E-IPFS provides enhanced IPFS solutions for decentralized storage and
+    retrieval.
 ---
 
 E-IPFS is a hybrid IPFS service that embraces the advantages of decentralization and access security.

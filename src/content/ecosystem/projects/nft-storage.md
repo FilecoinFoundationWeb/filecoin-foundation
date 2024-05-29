@@ -16,13 +16,17 @@ image:
   url: /assets/images/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
   alt: "NFT.Storage Logo"
 website: "https://nft.storage"
-featured-content: null
+featured-content:
 repo: "https://github.com/nftstorage"
 twitter: "https://twitter.com/nftdotstorage"
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: NFT.Storage
+  description: NFT.Storage offers decentralized storage solutions for NFT data.
 ---
 
 NFT.Storage is a long-term storage service designed for off-chain NFT data (such as metadata, images, and other assets) for content up to 31GiB in size per individual upload. Filecoin provides long-term storage for this data, ensuring that even if NFT.Storage is attacked or taken down, the NFT data persists.

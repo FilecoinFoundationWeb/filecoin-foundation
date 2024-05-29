@@ -1,11 +1,11 @@
 ---
 title: Fog Works, Inc.
 slug: fog-works-inc
-created-on: 2024-03-04T19:44:10.411Z
-updated-on: 2024-03-04T19:44:10.420Z
-published-on: 2024-03-04T19:44:10.434Z
+created-on: 2024-03-04T19:44:10.411000Z
+updated-on: 2024-03-04T19:44:10.420000Z
+published-on: 2024-03-04T19:44:10.434000Z
 description: "Leading web3 company in decentralized data storage."
-category: storage
+category: tooling-productivity
 tags:
   - depin
   - storage-software
@@ -20,13 +20,19 @@ image:
   url: /assets/images/fog-works-logo-white.png
   alt: Fog Works Logo
 website: fogworks.io
-featured-content: null
-repo: null
+featured-content:
+repo:
 twitter: https://twitter.com/fogworksinc
-video-url: null
-year-joined: 2022-11-22T19:44:10.444Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2022-11-22T19:44:10.444000Z
+news-update:
+subcategories:
+  - infrastructure
+seo:
+  title: Fog Works Inc
+  description:
+    Fog Works Inc provides decentralized solutions for edge computing and
+    data storage.
 ---
 
 Fog Works is a leading web3 company in decentralized data storage. Founded in 2022 and invested by Okx Ventures, Draper Dragon, Lingfeng Capital, and others, Fog Works has been named one of the top 15 US innovative storage startups in 2023. OKx endorses Fog Works as one of the fast-growing portfolio startups in 2024. Its flagship product, Foggie Max, the world's first DePIN server, offers decentralized storage accessible to everyone. It allows users to earn $DMC, use IPFS pinning, integrate IoT devices, mint NFTs, and more.
