@@ -16,7 +16,7 @@ const nextConfig = {
       '/': [
         '.git/**',
         '.github/**',
-        '.next/**',
+        // '.next/**',
         '.vscode/**',
         'cypress/**',
         'public/**',
