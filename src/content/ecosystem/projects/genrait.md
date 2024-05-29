@@ -1,11 +1,13 @@
 ---
 title: "GenRAIT"
 slug: "genrait"
-created-on: 2024-01-04T22:40:26.305Z
-updated-on: 2024-01-05T21:37:21.385Z
-published-on: 2024-01-11T13:26:59.787Z
-description: "GenRAIT gives scientists a platform to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
-category: science-climate-space
+created-on: 2024-01-04T22:40:26.305000Z
+updated-on: 2024-01-05T21:37:21.385000Z
+published-on: 2024-01-11T13:26:59.787000Z
+description:
+  "GenRAIT gives scientists a platform to analyze genomic data, generate
+  scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
+category: education-academia-health
 tags:
   - desci
   - health
@@ -17,12 +19,18 @@ image:
   alt: GenRAIT Logo
 website: "https://www.genrait.com"
 featured-content: "https://fil.org/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data/"
-repo: null
-twitter: null
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+repo:
+twitter:
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - health
+seo:
+  title: GenRAIT
+  description:
+    GenRAIT offers decentralized solutions for genomic data storage and
+    analysis.
 ---
 
 GenRAIT gives scientists a platform to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem. GenRAIT hosts genome research data on the Filecoin network, and enables scientists and researchers to upload their own genomic files they then can retrieve, analyze, and put into action. For GenRAIT, the Filecoin network is a Web3 solution that can scale with its data.
