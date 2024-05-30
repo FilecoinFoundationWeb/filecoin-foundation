@@ -110,8 +110,8 @@ export function PageHeader({
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
-      <div className="flex flex-col gap-6 md:flex-row">
-        <div className="flex flex-col gap-4 md:w-1/2">
+      <div className="flex flex-col gap-6 lg:flex-row">
+        <div className="flex flex-col gap-4 lg:w-1/2">
           <Title>{title}</Title>
 
           {metaData && (
