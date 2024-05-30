@@ -1,12 +1,13 @@
 ---
 title: "GLIF"
 slug: "glif"
-created-on: 2018-12-01T20:17:14.438Z
-updated-on: 2024-02-07T20:17:14.451Z
-published-on: 2024-02-07T20:17:14.461Z
-featured: false
-description: "GLIF is Filecoin's first and most popular DeFi protocol for earning rewards on FIL."
-category: finance
+created-on: 2018-12-01T20:17:14.438000Z
+updated-on: 2024-02-07T20:17:14.451000Z
+published-on: 2024-02-07T20:17:14.461000Z
+description:
+  "GLIF is Filecoin's first and most popular DeFi protocol for earning
+  rewards on FIL."
+category: tooling-productivity
 tags:
   - leasing-and-staking
 tech:
@@ -18,10 +19,16 @@ website: https://glif.io
 repo: https://github.com/glifio
 featured-content: nul
 twitter: https://twitter.com/glifio
-video-url: null
-year-joined: 2024-02-07T20:17:14.469Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2024-02-07T20:17:14.469000Z
+news-update:
+subcategories:
+  - developer-tools
+seo:
+  title: Glif
+  description:
+    Glif offers decentralized tools and infrastructure for the Filecoin
+    network.
 ---
 
 In March 2023, GLIF began its rollout of the first Filecoin DeFi protocol to alleviate the capital inefficiencies on Filecoin between token holders and Storage Providers. Since then GLIF has become one of the fastest growing DeFi protocols in all of crypto, receiving venture investment from Multicoin Capital, Protocol Labs, Fintech Collective, Fenbushi Capital, and several others and amassing more than $100M USD in TVL within 6 months of launching. GLIF is the most popular DeFi protocol built on Filecoin.

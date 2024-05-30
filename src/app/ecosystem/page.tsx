@@ -51,11 +51,11 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { featured_post: featuredProjectSlug, seo } = attributes
+const { featured_entry: featuredProjectSlug, seo } = attributes
 const featuredProject = ecosystemProjects.find(
   (project) => project.slug === featuredProjectSlug,
 )
-export const metadata = createMetadata(seo, PATHS.ECOSYSTEM.path)
+export const metadata = createMetadata({ seo, path: PATHS.ECOSYSTEM.path })
 
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,

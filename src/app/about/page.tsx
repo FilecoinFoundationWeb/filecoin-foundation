@@ -30,7 +30,7 @@ import { reportsData } from './data/reportsData'
 
 const { header, seo } = attributes
 
-export const metadata = createMetadata(seo, PATHS.ABOUT.path)
+export const metadata = createMetadata({ seo, path: PATHS.ABOUT.path })
 
 const aboutPageBaseData = generateWebPageStructuredData({
   title: seo.title,

@@ -3,8 +3,8 @@ header:
   title: "Terms"
   description: "Terms of Use"
 seo:
-  title: "Terms"
-  description: "Terms of Use"
+  title: "Terms of Service"
+  description: "Understand the terms and conditions of using Filecoin Foundation services. Read our detailed Terms of Service for more information."
 ---
 
 **Effective Date: October 20, 2021**

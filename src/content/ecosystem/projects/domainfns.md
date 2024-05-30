@@ -1,10 +1,9 @@
 ---
 title: DomainFNS
 slug: domainfns
-created-on: 2024-05-16T14:33:32.585Z
-updated-on: 2024-05-16T14:33:32.598Z
-published-on: 2024-05-16T14:33:32.612Z
-featured: false
+created-on: 2024-05-16T14:33:32.585000Z
+updated-on: 2024-05-16T14:33:32.598000Z
+published-on: 2024-05-16T14:33:32.612000Z
 description: "Decentralized name service based on FVM."
 category: tooling-productivity
 tags:
@@ -15,15 +14,21 @@ tech:
   - filecoin
 image:
   url: /assets/images/234.jpg
-  alt: DomainFNS logo
-featured-content: null
+  alt: DomainFNS Logo
+featured-content:
 website: https://opengatefns.com/
 repo: https://github.com/OpenGateLab/FNS
 twitter: https://twitter.com/DomainFNS
-video-url: null
-year-joined: 2024-05-16T14:33:32.622Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2024-05-16T14:33:32.622000Z
+news-update:
+subcategories:
+  - infrastructure
+seo:
+  title: DomainFNS
+  description:
+    DomainFNS provides decentralized solutions for domain name services
+    and management.
 ---
 
 FNS established the foundational infrastructure for the FVM's Decentralized Identity (DID) track.

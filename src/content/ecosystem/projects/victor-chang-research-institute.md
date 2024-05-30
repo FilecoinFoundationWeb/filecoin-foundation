@@ -1,11 +1,13 @@
 ---
 title: "Victor Chang Research Institute"
 slug: "victor-chang-research-institute"
-created-on: 2024-01-04T22:40:28.856Z
-updated-on: 2024-01-05T21:39:58.347Z
-published-on: 2024-01-11T13:26:59.787Z
-featured: false
-description: "As they work toward finding a cure for heart disease, researchers at Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share research data."
+created-on: 2024-01-04T22:40:28.856000Z
+updated-on: 2024-01-05T21:39:58.347000Z
+published-on: 2024-01-11T13:26:59.787000Z
+description:
+  "As they work toward finding a cure for heart disease, researchers at
+  Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share
+  research data."
 category: education-academia-health
 tags:
   - health
@@ -19,10 +21,16 @@ website: "https://www.victorchang.edu.au/"
 featured-content: "https://destor.com/victor-chang-cardiac-research-institute-case-study"
 repo: "https://github.com/VCCRI"
 twitter: "https://twitter.com/VictorChangInst"
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - health
+seo:
+  title: Victor Chang Research Institute
+  description:
+    Victor Chang Research Institute provides decentralized solutions for
+    healthcare data management.
 ---
 
 As they work toward finding a cure for heart disease, researchers at Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share research data. The Institute is storing more than 125 TiBs of cardiac research data on Filecoin, including raw datasets from published papers consisting of thousands of images of cells and encrypted backups of their SyncroPatch machine, a laboratory technique for studying currents in living cells.

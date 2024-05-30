@@ -5,13 +5,13 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { BlogPostData } from '@/types/blogPostTypes'
+import { type BlogPostData } from '@/types/blogPostTypes'
 
-import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
+import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData } from '@/utils/getBlogPostData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
-import { PATHS } from '@/constants/paths'
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 type BlogPostProps = {
@@ -24,9 +24,11 @@ export async function generateMetadata({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
 
-  return generateDynamicContentMetadata({
-    basePath: PATHS.BLOG.path,
-    data,
+  return createMetadata({
+    seo: data.seo,
+    title: data.title,
+    description: data.description,
+    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
   })
 }
 
@@ -40,7 +42,7 @@ function createBlogPostStructuredData(
     '@type': 'BlogPosting',
     headline: title,
     description: description,
-    image: image?.url,
+    image: image.url,
     author: {
       '@type': 'Person',
       name: ORGANIZATION_NAME,

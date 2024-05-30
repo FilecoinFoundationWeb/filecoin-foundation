@@ -1,12 +1,11 @@
 ---
 title: Leto
 slug: leto
-created-on: 2024-04-05T23:01:19.895Z
-updated-on: 2024-04-05T23:01:19.919Z
-published-on: 2024-04-05T23:01:19.933Z
-featured: false
+created-on: 2024-04-05T23:01:19.895000Z
+updated-on: 2024-04-05T23:01:19.919000Z
+published-on: 2024-04-05T23:01:19.933000Z
 description: "Metrics for users and devs to help manage data on IPFS."
-category: tooling-productivity
+category: storage
 tags:
   - developer-tools
   - data-curation-monetization
@@ -16,13 +15,17 @@ image:
   url: /assets/images/leto-logo.png
   alt: Leto Logo
 website: https://leto.gg/
-featured-content: null
+featured-content:
 repo: https://github.com/Leto-gg
-twitter: null
-video-url: null
-year-joined: 2024-04-05T23:01:19.950Z
-news-update: null
-metadata: null
+twitter:
+video-url:
+year-joined: 2024-04-05T23:01:19.950000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: Leto
+  description: Leto offers decentralized solutions for data storage and management.
 ---
 
 Leto is an open-source, community-operated Metrics Engine built for the Open-Web and its users. Leto empowers developers and users by providing insights about data stored on IPFS by making it easy to collect anonymized information about IPFS content and generate insights needed to grow and protect applications, websites, NFTs, and more.

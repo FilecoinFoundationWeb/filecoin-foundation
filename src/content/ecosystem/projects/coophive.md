@@ -1,12 +1,11 @@
 ---
 title: CoopHive
 slug: coophive
-created-on: 2024-04-24T19:28:43.506Z
-updated-on: 2024-04-24T19:28:43.535Z
-published-on: 2024-04-24T19:28:43.548Z
-featured: false
+created-on: 2024-04-24T19:28:43.506000Z
+updated-on: 2024-04-24T19:28:43.535000Z
+published-on: 2024-04-24T19:28:43.548000Z
 description: "Compute marketplace that can facilitate a number of diverse applications."
-category: artificial-intelligence
+category: public-goods-dweb
 tags:
   - desci
 tech:
@@ -16,13 +15,19 @@ image:
   url: /assets/images/finalnewcoophives-01.png
   alt: CoopHive Logo
 website: https://www.coophive.network/
-featured-content: null
+featured-content:
 repo: https://github.com/CoopHive/coophive
 twitter: https://twitter.com/coophive
-video-url: null
-year-joined: 2024-04-24T19:28:43.576Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2024-04-24T19:28:43.576000Z
+news-update:
+subcategories:
+  - governance-daos-public-goods
+seo:
+  title: CoopHive
+  description:
+    CoopHive offers decentralized solutions for cooperative management
+    and governance.
 ---
 
 CoopHive is a compute marketplace that can facilitate a number of diverse applications. It is providing the base layer for autonomous agents to execute arbitrary compute and exchange real-world assets, scientists to

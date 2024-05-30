@@ -1,21 +1,28 @@
 ---
 title: "Filecoin Foundation 2023 Annual Report"
 slug: filecoin-foundation-2023-annual-report
-created-on: 2024-02-27T14:17:57.166Z
-updated-on: 2024-02-27T14:17:57.179Z
-published-on: 2024-02-27T14:17:57.188Z
-featured: false
-category: report
-description: This report highlights FF’s accomplishments in 2023 –– from events, network-wide initiatives, partnerships, and governance to network upgrades and core infrastructure improvements. It also provides a touchpoint to reflect on the potential of the Filecoin network, the promises of the decentralized web, and the mission of the Foundation. This report also provides additional details on FF’s annual budget.
+created-on: 2024-02-27T14:17:57.166000Z
+updated-on: 2024-02-27T14:17:57.179000Z
+published-on: 2024-02-27T14:17:57.188000Z
+category: reports
+description:
+  This report highlights FF’s accomplishments in 2023 –– from events, network-wide
+  initiatives, partnerships, and governance to network upgrades and core infrastructure
+  improvements. It also provides a touchpoint to reflect on the potential of the Filecoin
+  network, the promises of the decentralized web, and the mission of the Foundation.
+  This report also provides additional details on FF’s annual budget.
 image:
   url: /assets/images/022624-ff-anualreport.png
   alt: "Filecoin Foundation 2023 Annual Report"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
+  title: Filecoin Foundation 2023 Annual Report
+  description:
+    Explore the Filecoin Foundation's 2023 annual report. Highlights and
+    future plans.
 ---
 
 At a time when trust in emerging technology waivers and our daily online interactions are controlled by a handful of corporations, it’s more important than ever that we recognize the value decentralized technologies offer for a new version of the web. In this increasingly online and interconnected world, preserving humanity’s most important information for the long term remains in the foreground for Filecoin Foundation’s (FF) work.

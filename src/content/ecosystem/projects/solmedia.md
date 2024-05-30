@@ -1,12 +1,13 @@
 ---
 title: Solmedia
 slug: solmedia
-created-on: 2024-04-25T17:21:06.414Z
-updated-on: 2024-04-25T17:21:06.439Z
-published-on: 2024-04-25T17:21:06.448Z
-featured: false
-description: "Decentralized content sharing platform on Solana, integrating both Solana and Filecoin on-chain IPFS technology."
-category: media-entertainment
+created-on: 2024-04-25T17:21:06.414000Z
+updated-on: 2024-04-25T17:21:06.439000Z
+published-on: 2024-04-25T17:21:06.448000Z
+description:
+  "Decentralized content sharing platform on Solana, integrating both Solana
+  and Filecoin on-chain IPFS technology."
+category: storage
 tags:
   - communication-social
   - dapp
@@ -16,13 +17,19 @@ image:
   url: /assets/images/03_small.png
   alt: Solmedia Logo
 website: https://sm.network
-featured-content: null
-repo: null
+featured-content:
+repo:
 twitter: https://x.com/SolMediaTech
-video-url: null
-year-joined: 2024-04-25T17:21:06.512Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2024-04-25T17:21:06.512000Z
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: SolMedia
+  description:
+    SolMedia provides decentralized solutions for digital media storage
+    and management.
 ---
 
 Solmedia is the first decentralized content sharing platform on Solana. Integrating both Solana and Filecoin on-chain IPFS technology, Solmedia ensures a secure video streaming experience for content creators and consumers

@@ -1,18 +1,22 @@
 ---
 title: "Orbit Year in Review: Growing a Global Community of Builders"
 slug: orbit-year-in-review-growing-a-global-community-of-builders
-created-on: 2023-12-07T13:50:04.187Z
-updated-on: 2023-12-07T13:50:04.200Z
-published-on: 2023-12-07T13:50:04.211Z
-featured: false
-category: ecosystem
-description: In 2023, the Filecoin Orbit program helped seed a new crop of
-  thousands of builders in the Filecoin ecosystem.
+created-on: 2023-12-07T13:50:04.187000Z
+updated-on: 2023-12-07T13:50:04.200000Z
+published-on: 2023-12-07T13:50:04.211000Z
+category: reports
+description:
+  In 2023, the Filecoin Orbit program helped seed a new crop of thousands
+  of builders in the Filecoin ecosystem.
 image:
   url: /assets/images/231205-orbit-year.png
   alt: "Filecoin Orbit Program Year in Review"
 recommended-posts: []
-metadata: null
+seo:
+  title: "Orbit Year in Review: Growing a Global Community of Builders"
+  description:
+    A review of the Orbit program's achievements in growing a global community
+    of builders. Key highlights.
 ---
 
 This year, the Filecoin Orbit program helped seed a new crop of thousands of builders in the Filecoin ecosystem. The [Filecoin Orbit Community Program](https://orbitcommunity.filecoin.io/) is a group of volunteer ambassadors who host Filecoin workshops and hackathons, publish educational Filecoin articles and videos, and build on Filecoin.

@@ -1,7 +1,7 @@
 ---
 title: What’s New with the Filecoin Plus Notary Election and Filecoin Day
   Highlights from LabWeek23
-slug: what’s-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23
+slug: whats-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23
 created-on: 2023-11-20T20:49:32.196Z
 updated-on: 2023-11-20T20:49:32.209Z
 published-on: 2023-11-20T20:49:32.216Z
@@ -11,13 +11,14 @@ description: >-
   LabWeek23, Filecoin Day featured updates from Filecoin Foundation (FF) and
   Filecoin Foundation for the Decentralized Web (FFDW), discussed the
   intersection of artificial intelligence and decentralized storage, and more.
-featured: false
 category: news
 image:
   url: /assets/images/231120-fd-fpd.png
   alt: Filecoin Day and Filecoin Plus Day Recap
 recommended-posts: []
-metadata: null
+seo:
+  title: Highlights from Filecoin Plus Notary Election and Filecoin Day at LabWeek23
+  description: Discover the latest updates from Filecoin Plus Notary Election and Filecoin Day at LabWeek23, including AI and decentralized storage discussions.
 ---
 
 Filecoin Plus Day during LabWeek23 showcased the revamped V5 Notary election cycle, zeroing in on Notary Allocator pathways. The changes aim to boost transparency, efficiency, and community engagement in the Filecoin Plus program.

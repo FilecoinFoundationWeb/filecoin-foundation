@@ -1,11 +1,11 @@
 ---
-title: How Artifact Labs is Preserving and Connecting History and Culture with
-  Blockchain Technology
+title:
+  How Artifact Labs is Preserving and Connecting History and Culture with Blockchain
+  Technology
 slug: how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain
-created-on: 2023-09-18T14:06:54.734Z
-updated-on: 2023-09-18T14:06:54.741Z
-published-on: 2023-09-18T14:06:54.746Z
-featured: false
+created-on: 2023-09-18T14:06:54.734000Z
+updated-on: 2023-09-18T14:06:54.741000Z
+published-on: 2023-09-18T14:06:54.746000Z
 description: >-
   Artifact Labs is driven by a mission to “preserve and connect
   culture and history on the blockchain.” The company puts the power of
@@ -15,9 +15,14 @@ description: >-
   commercialization opportunities.
 image:
   url: /assets/images/070723-qa-artifactlabs.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: How Artifact Labs Uses Blockchain to Preserve History
+  description:
+    Discover how Artifact Labs preserves and connects history and culture
+    using blockchain technology.
 ---
 
 [Artifact Labs](https://www.artifactlabs.com/) is driven by a mission to “preserve and connect culture and history on the blockchain.” The company puts the power of preservation in the hands of organizations and individuals dedicated to the same goals: to preserve valuable assets, foster accessibility and engagement, facilitate rights management of digital assets, and unlock fundraising and commercialization opportunities.

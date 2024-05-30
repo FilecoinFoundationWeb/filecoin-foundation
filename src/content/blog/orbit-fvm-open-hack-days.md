@@ -1,20 +1,25 @@
 ---
 title: Orbit FVM Open Hack Days
 slug: orbit-fvm-open-hack-days
-created-on: 2023-04-21T07:31:40.974Z
-updated-on: 2023-04-21T07:31:40.974Z
-published-on: 2023-04-21T07:33:56.200Z
-featured: false
-description: The Filecoin Orbit program is hosting Filecoin Virtual Machine
-  (FVM) Open Hack Days, a series of hackathons that will take place in various
-  locations across the world in February and March 2023 to allow developers to
-  get hands-on experience building on FVM. Entrants will develop on FVM in order
-  to compete for $6,000 in prizes!
+created-on: 2023-04-21T07:31:40.974000Z
+updated-on: 2023-04-21T07:31:40.974000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  The Filecoin Orbit program is hosting Filecoin Virtual Machine (FVM)
+  Open Hack Days, a series of hackathons that will take place in various locations
+  across the world in February and March 2023 to allow developers to get hands-on
+  experience building on FVM. Entrants will develop on FVM in order to compete for
+  $6,000 in prizes!
 image:
   url: /assets/images/0208-orbitfvm.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: events
+seo:
+  title: Join the Orbit FVM Open Hack Days
+  description:
+    Participate in the Orbit FVM Open Hack Days. Collaborate, innovate,
+    and build with the Filecoin community.
 ---
 
 **_The Filecoin Orbit program is hosting_** **_[Filecoin Virtual Machine (FVM)](https://fvm.filecoin.io/)_** **_Open Hack Days, a series of hackathons that will take place in various locations across the world in February and March 2023 to allow developers to get hands-on experience building on FVM. Entrants will develop on FVM in order to compete for $6,000 in prizes!_**

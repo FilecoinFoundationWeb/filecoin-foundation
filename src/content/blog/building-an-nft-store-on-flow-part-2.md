@@ -4,7 +4,6 @@ slug: building-an-nft-store-on-flow-part-2
 created-on: "2023-04-21T07:26:21.578Z"
 updated-on: "2023-05-03T11:29:18.473Z"
 published-on: "2023-05-03T12:47:09.568Z"
-featured: false
 description: >-
   This is part two in Filecoin Developer Pan Chasinga’s tutorial on how to
   create a simple NFT marketplace app on the Flow blockchain from scratch, using
@@ -12,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: "Building an NFT Store on Flow: Part 2"
+  description:
+    Continue building your NFT store on Flow blockchain. Follow this detailed
+    guide for developers. Part 2 of the series.
 ---
 
 This is part two in Filecoin Developer [Pan Chasinga](https://pancy.medium.com/)’s tutorial on how to create a simple NFT marketplace app on the [Flow](https://www.onflow.org/) blockchain from scratch, using the Flow blockchain and IPFS/Filecoin storage via [nft.storage](https://nft.storage/). Catch up on Part One [HERE](https://filecoinfoundation.medium.com/building-a-flow-nft-pet-store-part-1-e69077d885da).

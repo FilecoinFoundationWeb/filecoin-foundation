@@ -1,23 +1,27 @@
 ---
 title: "Empowering Governance: The Launch of Metropolis to the Filecoin Community"
 slug: empowering-governance-the-launch-of-metropolis-to-the-filecoin-community
-created-on: 2024-05-13T16:47:45.110Z
-updated-on: 2024-05-13T16:47:45.128Z
-published-on: 2024-05-13T16:47:45.139Z
-featured: false
-category: null
-description: Introducing Metropolis, a temperature check tool for early-stage Filecoin Improvement Proposals.
+created-on: 2024-05-13T16:47:45.110000Z
+updated-on: 2024-05-13T16:47:45.128000Z
+published-on: 2024-05-13T16:47:45.139000Z
+category: ecosystem
+description:
+  Introducing Metropolis, a temperature check tool for early-stage Filecoin
+  Improvement Proposals.
 image:
   url: /assets/images/blog-header-_-metropolis.png
   alt: Metropolis Filecoin
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
   twitter:image: /assets/images/blog-header-_-metropolis.png
   og:image: /assets/images/blog-header-_-metropolis.png
+  title: "Empowering Governance: Launch of Metropolis for Filecoin Community"
+  description:
+    Announcing the launch of Metropolis to empower governance in the Filecoin
+    community. Learn more.
 ---
 
 Introducing Metropolis, a temperature check tool for early-stage Filecoin Improvement Proposals.

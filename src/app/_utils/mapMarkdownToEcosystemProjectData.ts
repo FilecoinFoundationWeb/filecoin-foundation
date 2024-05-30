@@ -1,4 +1,4 @@
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 export function mapMarkdownToEcosystemProjectData({
   data,
@@ -13,7 +13,6 @@ export function mapMarkdownToEcosystemProjectData({
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
-    featured: data.featured,
     description: data.description,
     category: data.category,
     subcategories: data.subcategories,
@@ -31,6 +30,6 @@ export function mapMarkdownToEcosystemProjectData({
     videoUrl: data['video-url'],
     yearJoined: data['year-joined'],
     newsUpdate: data['news-update'],
-    metadata: data.metadata,
+    seo: data.seo,
   }
 }

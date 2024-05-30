@@ -4,9 +4,11 @@ slug: "repl"
 created-on: "2024-01-24T13:41:08.340Z"
 updated-on: "2024-01-24T13:41:08.357Z"
 published-on: "2024-01-24T13:41:08.367Z"
-featured: false
-description: "Repl is the first repledging Protocol for pledged FIL assets. It aims to enhance the efficiency of pledged FIL, remove idiosyncratic risks among Filecoin storage providers, and lower the complexity for people to earn Filecoin rewards."
-category: finance
+description:
+  "Repl is the first repledging Protocol for pledged FIL assets. It aims
+  to enhance the efficiency of pledged FIL, remove idiosyncratic risks among Filecoin
+  storage providers, and lower the complexity for people to earn Filecoin rewards."
+category: storage
 tags:
   - dapp
   - infrastructure
@@ -17,13 +19,19 @@ image:
   url: /assets/images/repl_logo_white.png
   alt: Repl Logo
 website: "https://www.repl.fi/"
-featured-content: null
-repo: null
+featured-content:
+repo:
 twitter: "https://twitter.com/Repl_fi"
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: Repl
+  description:
+    Repl provides decentralized solutions for data replication and storage
+    management.
 ---
 
 Repl tokenizes pledged FIL in the Filecoin Protocol and enables liquidity and extended utilities for these pledged assets.

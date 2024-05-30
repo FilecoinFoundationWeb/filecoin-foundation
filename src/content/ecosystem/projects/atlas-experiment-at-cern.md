@@ -4,8 +4,10 @@ slug: atlas-experiment-at-cern
 created-on: "2024-01-04T22:40:23.904Z"
 updated-on: "2024-01-05T21:34:20.817Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: true
-description: "The ATLAS Collaboration has partnered with Seal Storage Technology in a pilot project to explore decentralized cloud storage as an efficient and cost-effective option for archival data storage."
+description:
+  "The ATLAS Collaboration has partnered with Seal Storage Technology in
+  a pilot project to explore decentralized cloud storage as an efficient and cost-effective
+  option for archival data storage."
 category: science-climate-space
 tags:
   - desci
@@ -17,12 +19,16 @@ image:
   alt: Atlas Experiment Logo
 website: "https://atlas.cern"
 featured-content: "https://www.sealstorage.io/blog/atlascern"
-repo: null
+repo:
 twitter: "https://twitter.com/ATLASexperiment"
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - decentralized-science
+seo:
+  title: ATLAS Experiment at CERN
+  description: Explore the ATLAS Experiment at CERN using decentralized storage solutions.
 ---
 
 In this R&D project, Seal has provided 10 Pebibytes (PiBs) of cloud-based storage capacity to the ATLAS Experiment, hosted in Seal’s data centers.

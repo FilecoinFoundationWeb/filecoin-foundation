@@ -7,16 +7,19 @@ slug: >-
 created-on: "2023-05-03T08:06:29.883Z"
 updated-on: "2023-05-03T08:06:29.883Z"
 published-on: "2023-05-03T08:22:38.798Z"
-featured: false
-description: null
-cta:
-  url: https://www.youtube.com/watch?v=LU_WjU0mUuM
+description:
+location:
+external-link:
+  href: https://www.youtube.com/watch?v=LU_WjU0mUuM
   text: "Watch Recording"
 start-date: "2021-03-04T23:00:00.000Z"
-end-date: null
+end-date:
 image:
-  url: null
-  alt: null
-event-type: event
-involvement: null
+  url:
+  alt:
+involvement: supported
+seo:
+  title: GBBC Virtual Members Forum with Marta Belcher
+  description: Join the GBBC Virtual Members Forum with Marta Belcher to learn about
+    the latest in blockchain and decentralized technologies.
 ---

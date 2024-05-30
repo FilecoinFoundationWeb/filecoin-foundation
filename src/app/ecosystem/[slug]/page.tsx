@@ -11,15 +11,15 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
-import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 import { baseOrganizationSchema } from '@/utils/structuredData'
 
-import { PATHS } from '@/constants/paths'
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type EcosystemProjectProps = {
@@ -32,9 +32,11 @@ export async function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 
-  return generateDynamicContentMetadata({
-    basePath: PATHS.ECOSYSTEM.path,
-    data,
+  return createMetadata({
+    seo: data.seo,
+    title: data.title,
+    description: data.description,
+    path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
   })
 }
 
@@ -48,7 +50,7 @@ function createEcosystemProjectPostStructuredData(
     '@type': 'Article',
     headline: title,
     description,
-    image: image?.url,
+    image: image.url,
     datePublished: publishedOn,
     dateModified: updatedOn || publishedOn,
     mainEntityOfPage: {

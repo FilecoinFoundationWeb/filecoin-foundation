@@ -1,19 +1,25 @@
 ---
-title: "Spotlight: New Filecoin Virtual Machine Projects Unlocking Smart
-  Contract Programmability"
+title:
+  "Spotlight: New Filecoin Virtual Machine Projects Unlocking Smart Contract
+  Programmability"
 slug: spotlight-new-filecoin-virtual-machine-projects-unlocking-smart-contract-programmability-1
-created-on: 2023-04-21T07:31:52.010Z
-updated-on: 2023-04-21T07:31:52.010Z
-published-on: 2023-04-21T07:33:56.200Z
-featured: false
-description: The Filecoin community is expanding the network to create a
-  decentralized, efficient, and robust platform for humanity’s data by
-  introducing programmability to the network.
+created-on: 2023-04-21T07:31:52.010000Z
+updated-on: 2023-04-21T07:31:52.010000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  The Filecoin community is expanding the network to create a decentralized,
+  efficient, and robust platform for humanity’s data by introducing programmability
+  to the network.
 image:
   url: /assets/images/rectangle-32-.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: "Spotlight: New Filecoin Virtual Machine Projects"
+  description:
+    Highlighting new projects on the Filecoin Virtual Machine. Unlocking
+    smart contract programmability.
 ---
 
 The Filecoin community is expanding the network to create a decentralized, efficient, and robust platform for humanity’s data by introducing programmability to the network.

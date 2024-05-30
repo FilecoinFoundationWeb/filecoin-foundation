@@ -7,6 +7,7 @@ import useSWR from 'swr'
 import { z } from 'zod'
 
 import { Badge } from '@/components/Badge'
+import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
@@ -103,8 +104,8 @@ export function GovernanceCalendarCards() {
             className="flex flex-col rounded-lg border border-blue-500 p-1 sm:flex-row"
           >
             <Calendar startDate={start.dateTime} />
-            <div className="flex flex-1 flex-col items-start justify-between gap-6 p-4">
-              <div className="flex flex-col gap-3">
+            <div className="relative">
+              <div className="relative flex flex-1 flex-col gap-3 p-4">
                 <div className="flex gap-2">
                   <Badge
                     borderColor="brand-100"
@@ -116,10 +117,13 @@ export function GovernanceCalendarCards() {
                   {summary}
                 </Heading>
               </div>
-              <TextLink className="flex gap-2 text-base" href={htmlLink}>
-                <CalendarPlus size={24} />
-                Add to Google Calendar
-              </TextLink>
+              <div className="mb-10 mt-3">
+                <Card.Link
+                  href={htmlLink}
+                  icon={CalendarPlus}
+                  text="Add to Google Calendar"
+                />
+              </div>
             </div>
           </li>
         )

@@ -1,23 +1,30 @@
 ---
-title: "Recapping Filecoin Foundation at Davos: IPFS Deployed in Space, Exploring the Future of AI and Web3, Future-Proofing Regulation, and More"
+title:
+  "Recapping Filecoin Foundation at Davos: IPFS Deployed in Space, Exploring
+  the Future of AI and Web3, Future-Proofing Regulation, and More"
 slug: recapping-filecoin-foundation-at-davos-ipfs-deployed-in-space-exploring-the-future-of-ai-and-web3-future-proofing-regulation-and-more
-created-on: 2024-02-15T14:07:25.997Z
-updated-on: 2024-02-15T14:07:26.019Z
-published-on: 2024-02-15T14:07:26.031Z
-featured: false
-category: blog
-description: The Filecoin Sanctuary in Davos brought together the world’s brightest minds across business, government, and technology to discuss the future of the decentralized web.
+created-on: 2024-02-15T14:07:25.997000Z
+updated-on: 2024-02-15T14:07:26.019000Z
+published-on: 2024-02-15T14:07:26.031000Z
+category: events
+description:
+  The Filecoin Sanctuary in Davos brought together the world’s brightest
+  minds across business, government, and technology to discuss the future of the decentralized
+  web.
 image:
   url: /assets/images/020724-davos.png
   alt: "Recapping Filecoin Foundation at Davos"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
   twitter:image: /assets/images/020724-davos.png
   og:image: /assets/images/020724-davos.png
+  title: "Filecoin Foundation at Davos: Key Highlights and Future Prospects"
+  description:
+    Recap of Filecoin Foundation at Davos. Highlights include IPFS in space,
+    AI and Web3 future, and more.
 ---
 
 Hosted by Filecoin Foundation and brought to you by CNBC, the Filecoin Sanctuary in Davos brought together the world’s brightest minds across business, government, and technology to discuss the future of the decentralized web.

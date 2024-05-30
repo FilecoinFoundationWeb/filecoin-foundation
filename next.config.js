@@ -14,15 +14,35 @@ const nextConfig = {
     },
     outputFileTracingExcludes: {
       '/': [
-        'public/**',
-        '.netlify/**',
+        '.git/**',
         '.github/**',
+        '.next/cache/**',
         '.vscode/**',
         'cypress/**',
+        'public/**',
         'scripts/**',
         'src/app/**',
       ],
     },
+  },
+  async redirects() {
+    return [
+      {
+        source: '/get-involved',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/public-data',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/public-data/:path*',
+        destination: '/',
+        permanent: true,
+      },
+    ]
   },
   webpack: (config) => {
     // Handling Markdown files

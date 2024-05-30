@@ -8,7 +8,7 @@ import { PATHS } from '@/constants/paths'
 
 export function Navigation() {
   return (
-    <nav className="mb-6 flex justify-between gap-12 md:items-center">
+    <nav className="mb-6 flex justify-between gap-12 lg:items-center">
       <Link
         className="flex-shrink-0 outline-white focus:outline-2"
         href={PATHS.HOME.path}

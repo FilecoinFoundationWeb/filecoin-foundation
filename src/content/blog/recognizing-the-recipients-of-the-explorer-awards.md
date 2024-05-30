@@ -4,7 +4,6 @@ slug: recognizing-the-recipients-of-the-explorer-awards
 created-on: "2023-04-21T07:31:47.059Z"
 updated-on: "2023-05-03T11:26:37.186Z"
 published-on: "2023-05-03T12:47:09.568Z"
-featured: false
 description: >-
   Last year, we joined forces with Unfinished to launch the Explorer Awards, a
   series of grants to provide organizations and individuals using decentralized
@@ -12,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Recognizing the Recipients of the Explorer Awards
+  description:
+    Celebrate the recipients of the Explorer Awards. Recognizing innovation
+    and excellence in decentralized tech.
 ---
 
 Last year, we joined forces with [Unfinished](https://unfinished.com/) to launch the [Explorer Awards](https://explorerawards.org/), a series of grants to provide organizations and individuals using decentralized technology with the support to learn more about Web3. As a designer and developer of systems for a healthier digital society, Unfinished was an ideal partner for this initiative. The grants stem from a $200,000 funding pool that was dispersed in amounts between $1,000 and $10,000 to support projects that advanced learning and development in decentralized technology. The award was intended to fund anything from an NFT workshop to a metaverse exhibition to a Web3 dinner event.

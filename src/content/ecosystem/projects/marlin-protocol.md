@@ -1,11 +1,15 @@
 ---
 title: Marlin Protocol
 slug: marlin-protocol
-created-on: 2024-03-20T14:08:38.399Z
-updated-on: 2024-03-20T14:08:38.456Z
-published-on: 2024-03-20T14:08:38.488Z
-featured: false
-description: "Marlin is a verifiable computing protocol featuring TEE and ZK-based coprocessors to delegate complex workloads over a decentralized cloud. Enclaves provisioned using smart contract calls host LLMs, AI/ML models, gateways, MEV, automation bots, or backends for arbitrary computations using external APIs with baked-in auto-scaling and fault tolerance."
+created-on: 2024-03-20T14:08:38.399000Z
+updated-on: 2024-03-20T14:08:38.456000Z
+published-on: 2024-03-20T14:08:38.488000Z
+description:
+  "Marlin is a verifiable computing protocol featuring TEE and ZK-based
+  coprocessors to delegate complex workloads over a decentralized cloud. Enclaves
+  provisioned using smart contract calls host LLMs, AI/ML models, gateways, MEV, automation
+  bots, or backends for arbitrary computations using external APIs with baked-in auto-scaling
+  and fault tolerance."
 category: tooling-productivity
 tags:
   - ai-productivity-and-utilities
@@ -15,14 +19,18 @@ tech:
 image:
   url: /assets/images/marlin-logo-whitehigh-res.png
   alt: Marlin Logo
-featured-content: null
+featured-content:
 website: www.marlin.org
 repo: https://github.com/marlinprotocol
 twitter: https://twitter.com/marlinprotocol
-video-url: null
-year-joined: 2023-12-01T15:08:38.544Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2023-12-01T15:08:38.544000Z
+news-update:
+subcategories:
+  - infrastructure
+seo:
+  title: Marlin Protocol
+  description: Marlin Protocol offers decentralized network infrastructure solutions.
 ---
 
 Traditional web hosting relies on centralized servers, creating potential vulnerabilities due to single points of failure. The InterPlanetary File System (IPFS), a peer-to-peer network for storing and accessing websites, offers a decentralized alternative. However, IPFS utilizes lengthy content hashes for data identification, hindering user experience.

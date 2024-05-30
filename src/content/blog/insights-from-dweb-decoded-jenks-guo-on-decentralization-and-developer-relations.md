@@ -1,24 +1,29 @@
 ---
-title: "Insights from DWeb Decoded – Jenks Guo's on Decentralization and Developer Relations"
+title:
+  "Insights from DWeb Decoded – Jenks Guo's on Decentralization and Developer
+  Relations"
 slug: insights-from-dweb-decoded-jenks-guo-on-decentralization-and-developer-relations
-created-on: 2024-01-08T18:40:06.859Z
-updated-on: 2024-01-08T18:40:06.868Z
-published-on: 2024-01-08T18:40:06.885Z
-featured: false
-category: null
-description: Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights on decentralization and its role in shaping the future of the internet.
+created-on: 2024-01-08T18:40:06.859000Z
+updated-on: 2024-01-08T18:40:06.868000Z
+published-on: 2024-01-08T18:40:06.885000Z
+category: interviews
+description:
+  Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights
+  on decentralization and its role in shaping the future of the internet.
 image:
   url: /assets/images/jenks-guo.png
   alt: Jenks Guo Developer Advocacy Filecoin Foundation
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: Jenks Guo, Developer Advocate, Filecoin Foundation on Dweb Decoded
   twitter:card: summary
   twitter:image: /assets/images/jenks-guo.png
   og:image: /assets/images/jenks-guo.png
-  title: Developer Advocacy in the Filecoin Ecosystem with Jenks Guo on DWeb Decoded Podcast
+  title: "Insights from DWeb Decoded: Jenks Guo on Decentralization"
+  description:
+    Jenks Guo discusses decentralization and developer relations in this
+    insightful DWeb Decoded session.
 ---
 
 Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights on decentralization and its role in shaping the future of the internet.

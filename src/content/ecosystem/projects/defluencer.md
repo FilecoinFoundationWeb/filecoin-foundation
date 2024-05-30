@@ -1,11 +1,12 @@
 ---
 title: Defluencer
 slug: defluencer
-created-on: 2024-04-03T18:07:28.284Z
-updated-on: 2024-04-03T18:07:28.315Z
-published-on: 2024-04-03T18:07:28.332Z
-featured: false
-description: "Defluencer is a protocol built on top of the inter-planetary file system (IPFS)."
+created-on: 2024-04-03T18:07:28.284000Z
+updated-on: 2024-04-03T18:07:28.315000Z
+published-on: 2024-04-03T18:07:28.332000Z
+description:
+  "Defluencer is a protocol built on top of the inter-planetary file system
+  (IPFS)."
 category: media-entertainment
 tags:
   - communication-social
@@ -13,15 +14,19 @@ tech:
   - ipfs
 image:
   url: /assets/images/defluencer_logo_blur.svg
-  alt: Defluencer logo
-featured-content: null
+  alt: Defluencer Logo
+featured-content:
 website: https://social.defluencer.eth.limo/#/
 repo: https://github.com/Defluencer
-twitter: null
-video-url: null
-year-joined: 2024-04-03T18:07:28.347Z
-news-update: null
-metadata: null
+twitter:
+video-url:
+year-joined: 2024-04-03T18:07:28.347000Z
+news-update:
+subcategories:
+  - dapp
+seo:
+  title: Defluencer
+  description: Defluencer offers decentralized solutions for influencer marketing.
 ---
 
 Defluencer is a protocol built on top of the inter-planetary file system (IPFS). On IPFS, data is content addressed which means your content can be shared but never modified. As content goes viral, it is replicated by anyone who reads, watches or interacts with it in any way, resulting in social media without central servers.

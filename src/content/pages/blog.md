@@ -2,8 +2,8 @@
 header:
   title: Blog
   description: Filecoin Foundation Blog
-featured_post: orbit-year-in-review-growing-a-global-community-of-builders
+featured_entry: orbit-year-in-review-growing-a-global-community-of-builders
 seo:
-  title: Blog
-  description: Filecoin Foundation Blog
+  title: Filecoin Foundation Blog | Ecosystem Updates & Announcements
+  description: Read the latest updates, insights, and announcements from the Filecoin Foundation. Stay informed about decentralized storage advancements.
 ---

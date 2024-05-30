@@ -1,11 +1,13 @@
 ---
 title: "Democracy's Library"
 slug: "democracys-library"
-created-on: 2024-01-10T14:53:07.920Z
-updated-on: 2024-01-10T14:53:07.941Z
-published-on: 2024-01-10T14:53:07.961Z
-featured: true
-description: "The Internet Archive’s Democracy’s Library project is creating a free, open collection of government data to ensure that government research and publications from around the world remain permanently accessible to the public."
+created-on: 2024-01-10T14:53:07.920000Z
+updated-on: 2024-01-10T14:53:07.941000Z
+published-on: 2024-01-10T14:53:07.961000Z
+description:
+  "The Internet Archive’s Democracy’s Library project is creating a free,
+  open collection of government data to ensure that government research and publications
+  from around the world remain permanently accessible to the public."
 category: public-goods-dweb
 tags:
   - dweb
@@ -15,15 +17,21 @@ tech:
   - filecoin
 image:
   url: /assets/images/democracys-library-logo.png
-  alt: Democracy's Library
+  alt: Democracy's Library Logo
 website: https://archive.org/details/democracys-library
 featured-content: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/
-repo: null
+repo:
 twitter: https://twitter.com/internetarchive
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - dweb
+seo:
+  title: Democracy's Library
+  description:
+    Democracy's Library provides access to public government data using
+    decentralized storage.
 ---
 
 The Internet Archive’s Democracy’s Library project is creating a free, open collection of government data to ensure that government research and publications from around the world remain permanently accessible to the public. Democracy’s Library has uploaded more than one petabyte of material to the Filecoin network, including information from the “[End of Term Crawl](https://eotarchive.org/)” that captures and saves U.S. government websites at the end of presidential administrations.

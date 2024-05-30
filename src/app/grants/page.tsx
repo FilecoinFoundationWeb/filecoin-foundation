@@ -23,14 +23,13 @@ import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 
-const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
-
 const ecosystemProjects = getEcosystemProjectsData()
+const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
 const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
 
-export const metadata = createMetadata(seo, PATHS.GRANTS.path)
+export const metadata = createMetadata({ seo, path: PATHS.GRANTS.path })
 
 const grantsPageBaseData = generateWebPageStructuredData({
   title: seo.title,
