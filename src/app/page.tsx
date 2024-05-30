@@ -37,7 +37,7 @@ export default function Home() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'local', ...graphicsData.home }}
+        image={{ type: 'static', ...graphicsData.home }}
         cta={[
           { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
           { href: FILECOIN_URLS.site, text: 'Dive Into the Filecoin Protocol' },

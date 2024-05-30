@@ -123,7 +123,7 @@ export default function Blog({ searchParams }: Props) {
         description={featuredPost.description}
         metaData={getMetaData(featuredPost.publishedOn)}
         image={{
-          type: 'remote',
+          type: 'dynamic',
           ...featuredPost.image,
           fallback: graphicsData.imageComingSoon,
         }}

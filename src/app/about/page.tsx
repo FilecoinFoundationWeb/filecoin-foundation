@@ -68,7 +68,7 @@ export default function About() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'local', ...graphicsData.about }}
+        image={{ type: 'static', ...graphicsData.about }}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.annualReports.latest,
           text: 'Learn More in Our Annual Report',

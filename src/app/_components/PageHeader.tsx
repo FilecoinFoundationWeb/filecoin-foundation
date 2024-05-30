@@ -8,7 +8,8 @@ import {
   DescriptionText,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
-import { Meta } from '@/components/Meta'
+import { Meta, type MetaDataType } from '@/components/Meta'
+import { NextStaticImage } from '@/components/NextStaticImage'
 import { SectionDivider } from '@/components/SectionDivider'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
@@ -25,31 +26,30 @@ type SharedProps = {
   title: TitleProps['children']
   description: DescriptionTextType
   cta: CTAProps | [CTAProps, CTAProps?]
-  metaData?: Array<string | null | undefined>
+  metaData?: MetaDataType
   isFeatured?: boolean
 }
 
-type RemoteImageProps = Partial<ImageProps> & {
-  objectFit?: 'contain' | 'cover'
+type DynamicImageProps = Partial<ImageProps> & {
   fallback: StaticImageProps
+  objectFit?: 'contain' | 'cover'
 }
 
 type PageHeaderProps = SharedProps & {
-  image?:
-    | ({ type: 'local' } & StaticImageProps)
-    | ({ type: 'remote' } & RemoteImageProps)
+  image:
+    | ({ type: 'static' } & StaticImageProps)
+    | ({ type: 'dynamic' } & DynamicImageProps)
 }
 
 const imageContainerStyle = 'aspect-video lg:aspect-auto lg:w-1/2'
 
-function StaticImage({ alt, src }: StaticImageProps) {
+function StaticImage({ data, alt }: StaticImageProps) {
   return (
     <div className={imageContainerStyle}>
-      <Image
+      <NextStaticImage
         priority
-        src={src}
+        data={data}
         alt={alt}
-        placeholder="blur"
         quality={100}
         className="h-full w-full rounded-lg border border-brand-100 object-cover"
       />
@@ -57,13 +57,13 @@ function StaticImage({ alt, src }: StaticImageProps) {
   )
 }
 
-function RemoteImage({
+function DynamicImage({
   url,
   alt,
   objectFit = 'cover',
   fallback,
   ...rest
-}: RemoteImageProps) {
+}: DynamicImageProps) {
   if (!url) {
     return <StaticImage {...fallback} />
   }
@@ -104,8 +104,8 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  const firstCTA = Array.isArray(cta) ? cta[0] : cta
-  const secondCTA = Array.isArray(cta) && cta[1]
+  const mainCTA = Array.isArray(cta) ? cta[0] : cta
+  const secondaryCTA = Array.isArray(cta) ? cta[1] : undefined
 
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
@@ -114,7 +114,7 @@ export function PageHeader({
         <div className="flex flex-col gap-4 md:w-1/2">
           <Title>{title}</Title>
 
-          {metaData && metaData.length > 0 && (
+          {metaData && (
             <span className="mb-2">
               <Meta metaData={metaData} />
             </span>
@@ -123,20 +123,24 @@ export function PageHeader({
           <DescriptionText>{description}</DescriptionText>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-4">
-            <Button href={firstCTA.href} variant="primary" className="flex-1">
-              {firstCTA.text}
+            <Button href={mainCTA.href} variant="primary" className="flex-1">
+              {mainCTA.text}
             </Button>
 
-            {secondCTA && (
-              <Button href={secondCTA.href} variant="ghost" className="flex-1">
-                {secondCTA.text}
+            {secondaryCTA && (
+              <Button
+                href={secondaryCTA.href}
+                variant="ghost"
+                className="flex-1"
+              >
+                {secondaryCTA.text}
               </Button>
             )}
           </div>
         </div>
 
-        {image?.type === 'local' && <StaticImage {...image} />}
-        {image?.type === 'remote' && <RemoteImage {...image} />}
+        {image.type === 'static' && <StaticImage {...image} />}
+        {image.type === 'dynamic' && <DynamicImage {...image} />}
       </div>
     </header>
   )

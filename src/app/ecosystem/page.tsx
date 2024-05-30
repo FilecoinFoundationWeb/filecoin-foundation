@@ -126,7 +126,7 @@ export default function Ecosystem({ searchParams }: Props) {
         title={featuredProject.title}
         description={featuredProject.description}
         image={{
-          type: 'remote',
+          type: 'dynamic',
           ...featuredProject.image,
           objectFit: 'contain',
           fallback: graphicsData.ecosystem,

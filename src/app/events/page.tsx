@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { WebPage, WithContext } from 'schema-dts'
@@ -13,6 +12,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
 import { FilterContainer } from '@/components/FilterContainer'
+import { NextStaticImage } from '@/components/NextStaticImage'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -154,7 +154,7 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description || 'Description not available.'}
         metaData={getMetaDataContent(featuredEvent)}
         image={{
-          type: 'remote',
+          type: 'dynamic',
           ...featuredEvent.image,
           fallback: graphicsData.events1,
         }}
@@ -248,12 +248,10 @@ export default function Events({ searchParams }: Props) {
       >
         <CardGrid cols="mdTwo">
           <li className="row-span-2 h-96 md:h-auto">
-            <Image
-              src={graphicsData.events2.src}
-              alt={graphicsData.events2.alt}
+            <NextStaticImage
+              {...graphicsData.events2}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
-              placeholder="blur"
             />
           </li>
           {getInvolvedData.map(({ title, description, cta }) => (
@@ -267,12 +265,10 @@ export default function Events({ searchParams }: Props) {
             </li>
           ))}
           <li className="h-48 md:h-56">
-            <Image
-              src={graphicsData.events3.src}
-              alt={graphicsData.events3.alt}
+            <NextStaticImage
+              {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
-              placeholder="blur"
             />
           </li>
         </CardGrid>

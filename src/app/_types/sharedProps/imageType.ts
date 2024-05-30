@@ -1,7 +1,9 @@
 import { StaticImageData, ImageProps as NextImageProps } from 'next/image'
 
-export type ImageProps = Omit<NextImageProps, 'src' | 'objectFit'> & {
+export type ImageProps = {
   url: string
-}
+} & Omit<NextImageProps, 'src' | 'objectFit'>
 
-export type StaticImageProps = { src: StaticImageData; alt: string }
+export type StaticImageProps = {
+  data: StaticImageData
+} & Omit<NextImageProps, 'src' | keyof StaticImageData>
