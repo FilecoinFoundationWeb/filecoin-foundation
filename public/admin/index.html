@@ -9,6 +9,60 @@
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
+      function renderIframe(src) {
+        return `<iframe
+              src="${src}"
+              width="560"
+              height="315"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>`
+      }
+
+      function renderSpan(text) {
+        return `<span>${text}</span>`
+      }
+
+      function renderLink(link, text) {
+        return `<a href="${link}">${text}</a>`
+      }
+
+      function renderVideoComponent(data) {
+        const { src, captionLink1, captionText1, captionLink2, captionText2 } =
+          data
+
+        if (!src) {
+          return ''
+        }
+
+        if (!captionLink1 && !captionText1 && !captionLink2 && !captionText2) {
+          return renderIframe(src)
+        }
+
+        let firstCaption = ''
+        let secondCaption = ''
+
+        if (captionText1) {
+          firstCaption = renderSpan(captionText1)
+        }
+        if (captionText1 && captionLink1) {
+          firstCaption = renderLink(captionLink1, captionText1)
+        }
+
+        if (captionText2) {
+          secondCaption = renderSpan(captionText2)
+        }
+        if (captionText2 && captionLink2) {
+          secondCaption = renderLink(captionLink2, captionText2)
+        }
+
+        return `<figure>
+            ${renderIframe(src)}
+            <figcaption>${firstCaption} ${secondCaption}</figcaption>
+          </figure>`
+      }
+
       CMS.registerEditorComponent({
         id: 'video',
         label: 'Video',
@@ -20,26 +74,26 @@
             required: true,
           },
           {
-            name: 'captionLink1',
-            label: 'First Caption URL',
-            widget: 'string',
-            required: false,
-          },
-          {
             name: 'captionText1',
             label: 'First Caption Text',
             widget: 'string',
             required: false,
           },
           {
-            name: 'captionLink2',
-            label: 'Second Caption URL',
+            name: 'captionLink1',
+            label: 'First Caption URL',
             widget: 'string',
             required: false,
           },
           {
             name: 'captionText2',
             label: 'Second Caption Text',
+            widget: 'string',
+            required: false,
+          },
+          {
+            name: 'captionLink2',
+            label: 'Second Caption URL',
             widget: 'string',
             required: false,
           },
@@ -55,56 +109,8 @@
             captionText2: match[5] || '',
           }
         },
-        toBlock: function (data) {
-          console.log(data.captionLink1 && data.captionText1)
-          const captionLink1 =
-            data.captionLink1 && data.captionText1
-              ? `<a href="${data.captionLink1}">${data.captionText1}</a>`
-              : data.captionText1
-                ? `<span>${data.captionText1}</span>`
-                : ''
-          const captionLink2 = data.captionLink2
-            ? `<a href="${data.captionLink2}">${data.captionText2}</a>`
-            : data.captionText2
-              ? `<span>${data.captionText2}</span>`
-              : ''
-          const fullCaption = `${captionLink1} ${captionLink2}`
-          return `<figure>
-            <iframe
-              src="${data.src}"
-              width="560"
-              height="315"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
-            <figcaption>${fullCaption}</figcaption>
-          </figure>`
-        },
-        toPreview: function (data) {
-          const captionLink1 = data.captionLink1
-            ? `<a href="${data.captionLink1}">${data.captionText1}</a>`
-            : data.captionText1
-              ? `<span>${data.captionText1}</span>`
-              : ''
-          const captionLink2 = data.captionLink2
-            ? `<a href="${data.captionLink2}">${data.captionText2}</a>`
-            : data.captionText2
-              ? `<span>${data.captionText2}</span>`
-              : ''
-          const fullCaption = `${captionLink1} ${captionLink2}`
-          return `<figure>
-            <iframe
-              src="${data.src}"
-              width="560"
-              height="315"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <figcaption>${fullCaption}</figcaption>
-          </figure>`
-        },
+        toBlock: renderVideoComponent,
+        toPreview: renderVideoComponent,
       })
     </script>
   </body>
