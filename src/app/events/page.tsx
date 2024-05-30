@@ -119,7 +119,7 @@ export default function Events({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript
-        structuredData={generateEventsPageStructuredData(events, seo)}
+        structuredData={generateEventsPageStructuredData(seo)}
       />
       <PageHeader
         isFeatured

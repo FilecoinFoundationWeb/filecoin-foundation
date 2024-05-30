@@ -2,7 +2,6 @@ import type {
   BlogPosting,
   Event,
   Organization,
-  SoftwareApplication,
   WebPage,
   WithContext,
 } from 'schema-dts'
@@ -12,7 +11,6 @@ import { EventData } from '@/types/eventTypes'
 
 import siteMetadata from '@/content/shared/site-metadata.yml'
 
-import { EcosystemProjectData } from '@/_types/ecosystemProjectTypes'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
@@ -67,6 +65,23 @@ export const generateWebPageStructuredData = ({
   name: title,
   description,
   url: `${BASE_URL}${path}`,
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://fil.org',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: title,
+        item: `${BASE_URL}${path}`,
+      },
+    ],
+  },
 })
 
 export const generateBlogPageStructuredData = (
@@ -145,7 +160,6 @@ export const generateAboutPageStructuredData = (
 }
 
 export const generateEventsPageStructuredData = (
-  events: EventData[],
   seo: any,
 ): WithContext<WebPage> => {
   const eventsPageBaseData = generateWebPageStructuredData({
@@ -156,21 +170,6 @@ export const generateEventsPageStructuredData = (
 
   return {
     ...eventsPageBaseData,
-    mainEntity: {
-      '@type': 'ItemList',
-      itemListElement: events.slice(0, 5).map((event, index) => ({
-        '@type': 'ListItem',
-        position: index + 1,
-        item: {
-          '@type': 'Event',
-          name: event.title,
-          startDate: event.startDate,
-          endDate: event.endDate,
-          description: event.description,
-          url: `${event.externalLink?.href}`,
-        },
-      })),
-    },
   }
 }
 
@@ -225,28 +224,18 @@ export const generateEcosystemPageStructuredData = (
   }
 }
 
-export const generateEcosystemProjectPostStructuredData = (
-  data: EcosystemProjectData,
-): WithContext<SoftwareApplication> => {
-  const { title, slug, publishedOn, updatedOn, description, image } = data
+export const generateEcosystemProjectPostStructuredData =
+  (): WithContext<WebPage> => {
+    const ecosystemProjectBaseData = generateWebPageStructuredData({
+      title: seo.title,
+      description: seo.description,
+      path: PATHS.ECOSYSTEM.path,
+    })
 
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    headline: title,
-    description,
-    image: image.url,
-    datePublished: publishedOn,
-    dateModified: updatedOn || publishedOn,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.ECOSYSTEM.path}/${slug}`,
-    },
-    ...(typeof baseOrganizationSchema === 'object'
-      ? { publisher: baseOrganizationSchema }
-      : {}),
+    return {
+      ...ecosystemProjectBaseData,
+    }
   }
-}
 
 export const generateGrantsPageStructuredData = (
   seo: any,
