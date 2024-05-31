@@ -30,10 +30,9 @@ Here’s a quick rundown:
 **Filecoin Plus Day**
 
   <iframe
-    width="560"
-    height="315"
     src="https://www.youtube.com/embed/57Ua4AEWe_g?si=nFb8apksN6EgLB_w"
-    title="YouTube video player"
+    title="Filecoin Plus Day"
+    height="315"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
     allowfullscreen>
   </iframe>

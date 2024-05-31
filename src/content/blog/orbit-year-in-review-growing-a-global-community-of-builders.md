@@ -23,14 +23,14 @@ This year, the Filecoin Orbit program helped seed a new crop of thousands of bui
 
 Since the program’s launch, 147 Orbit Ambassadors have introduced an estimated 10,000 early-career developers, students, and enthusiasts to the Filecoin ecosystem through 190 workshops and community hackathons in over 40 countries.
 
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/O29ugCDMVI4?si=jHf9tZ8JZMhwgNBk"
-    title="YouTube video player"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-    allowfullscreen>
-  </iframe>
+<iframe
+  src="https://www.youtube.com/embed/O29ugCDMVI4?si=jHf9tZ8JZMhwgNBk"
+  title="Filecoin Orbit 2023 in Review"
+  height="315"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
 Orbit Ambassadors hosted events in Austin, San Francisco, Miami, Buenos Aires, Mexico City, Rio, Zurich, Paris, Madrid, Casablanca, Lagos, Dar es Salaam, Mumbai, Chennai, Bangalore, Hong Kong, Jakarta, Singapore, Tokyo, Seoul, and many more cities around the world. The program serves as an entry point into the Filecoin Builder’s Funnel, particularly in underrepresented regions.
 

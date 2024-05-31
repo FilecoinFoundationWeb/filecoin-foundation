@@ -1237,7 +1237,7 @@
             "code-block",
             "image",
             "video",
-            "soundcloud"
+            "audio"
           ],
           "required": false
         },

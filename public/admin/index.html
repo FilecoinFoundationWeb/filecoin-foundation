@@ -14,7 +14,6 @@
         return `<iframe
               src="${src}"
               title="${title}"
-              width="560"
               height="315"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -73,7 +72,7 @@
 
       CMS.registerEditorComponent({
         id: 'video',
-        label: 'Video',
+        label: 'Video Player',
         fields: [
           {
             name: 'src',
@@ -124,12 +123,11 @@
     </script>
     <script>
       // SOUNDCLOUD WIDGET
-      function renderSoundCloudIframe(src, title = 'Audio Player') {
+      function renderAudioIframe(src, title = 'Audio Player') {
         return `<iframe
               src="${src}"
-              width="100%"
-              height="166"
               title="${title}"
+              height="166"
               frameborder="0"
               scrolling="no"
               allow="autoplay"
@@ -144,7 +142,7 @@
         return `<a target="_blank" title=${text} href="${link}">${text}</a>`
       }
 
-      function renderVideoComponent(data) {
+      function renderAudioComponent(data) {
         const {
           src,
           title,
@@ -159,7 +157,7 @@
         }
 
         if (!captionLink1 && !captionText1 && !captionLink2 && !captionText2) {
-          return renderSoundCloudIframe(src, title)
+          return renderAudioIframe(src, title)
         }
 
         let firstCaption = ''
@@ -180,18 +178,18 @@
         }
 
         return `<figure>
-            ${renderSoundCloudIframe(src, title)}
+            ${renderAudioIframe(src, title)}
             <figcaption>${firstCaption} ${secondCaption}</figcaption>
           </figure>`
       }
 
       CMS.registerEditorComponent({
-        id: 'soundcloud',
-        label: 'SoundCloud',
+        id: 'audio',
+        label: 'Audio Player',
         fields: [
           {
             name: 'src',
-            label: 'Embedded SoundCloud URL',
+            label: 'Embedded Audio URL',
             widget: 'string',
             required: true,
           },
@@ -237,8 +235,8 @@
             captionText2: match[6],
           }
         },
-        toBlock: renderVideoComponent,
-        toPreview: renderVideoComponent,
+        toBlock: renderAudioComponent,
+        toPreview: renderAudioComponent,
       })
     </script>
   </body>

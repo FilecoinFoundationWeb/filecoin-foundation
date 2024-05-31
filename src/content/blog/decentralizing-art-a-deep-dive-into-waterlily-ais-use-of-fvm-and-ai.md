@@ -22,12 +22,12 @@ seo:
 
 <figure>
   <iframe
-  width="100%"
-  height="166"
-  scrolling="no"
-  frameborder="no"
-  allow="autoplay"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1552122538&color=%23193396&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1552122538&color=%23193396&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+    height="166"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+  >
   </iframe>
   <figcaption>
     <a href="https://soundcloud.com/filecoin-foundation" title="Filecoin Foundation" target="_blank">Filecoin Foundation</a> ·
