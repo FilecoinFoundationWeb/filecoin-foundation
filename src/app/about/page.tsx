@@ -23,8 +23,8 @@ import {
 } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
-import { advisorsData } from './data/advisors'
-import { boardMembersData } from './data/boardMembers'
+import { advisorsData } from './data/advisorsData'
+import { boardMembersData } from './data/boardMembersData'
 import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 
