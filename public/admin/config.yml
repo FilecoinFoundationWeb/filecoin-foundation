@@ -240,6 +240,7 @@ collections:
           - "code-block"
           - "image"
           - "video"
+          - "soundcloud"
         required: false
       - name: "recommended-posts"
         label: "Recommended Posts"

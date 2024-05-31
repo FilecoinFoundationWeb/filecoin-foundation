@@ -70,11 +70,6 @@ module.exports = {
             },
 
             figcaption: {
-              lineBreak: 'anywhere',
-              wordBreak: 'normal',
-              overflow: 'hidden',
-              whiteSpace: 'nowrap',
-              textOverflow: 'ellipsis',
               textAlign: 'left',
               fontSize: '10px',
             },
