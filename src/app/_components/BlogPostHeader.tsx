@@ -2,10 +2,13 @@ import Image from 'next/image'
 
 import { Badge } from '@/components/Badge'
 import { Heading } from '@/components/Heading'
+import { NextStaticImage } from '@/components/NextStaticImage'
 
 import { type BlogPostData } from '@/types/blogPostTypes'
 
 import { formatDate } from '@/utils/formatDate'
+
+import { graphicsData } from '@/data/graphicsData'
 
 type BlogPostHeaderProps = Pick<
   BlogPostData,
@@ -32,7 +35,7 @@ export function BlogPostHeader({
         )}
       </div>
 
-      {image && (
+      {image ? (
         <div className="relative aspect-video">
           <Image
             fill
@@ -41,6 +44,13 @@ export function BlogPostHeader({
             className="block rounded-lg object-cover"
           />
         </div>
+      ) : (
+        <NextStaticImage
+          {...graphicsData.imageFallback}
+          priority
+          quality={100}
+          className="aspect-video rounded-lg object-cover"
+        />
       )}
     </header>
   )
