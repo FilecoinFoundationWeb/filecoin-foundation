@@ -9,7 +9,52 @@
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
-      // VIDEO WIDGET
+      const regExp =
+        /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*<figcaption>(.*)<\/figcaption>\s*<\/figure>$/ms
+
+      function renderSpan(text) {
+        return `<span>${text}</span>`
+      }
+
+      function renderLink(link, text) {
+        return `<a href="${link}" target="_blank" title=${text}>${text}</a>`
+      }
+
+      function getMatches(match) {
+        return {
+          src: match[1],
+          title: match[2],
+          captionLink1: match[3],
+          captionText1: match[4],
+          captionLink2: match[5],
+          captionText2: match[6],
+        }
+      }
+
+      function renderCaptions(data) {
+        const { captionText1, captionLink1, captionText2, captionLink2 } = data
+
+        let firstCaption = ''
+        let secondCaption = ''
+
+        if (captionText1) {
+          firstCaption = renderSpan(captionText1)
+        }
+        if (captionText1 && captionLink1) {
+          firstCaption = renderLink(captionLink1, captionText1)
+        }
+
+        if (captionText2) {
+          secondCaption = renderSpan(captionText2)
+        }
+        if (captionText2 && captionLink2) {
+          secondCaption = renderLink(captionLink2, captionText2)
+        }
+
+        return `<figcaption>${firstCaption} ${secondCaption}</figcaption>`
+      }
+    </script>
+    <script>
       function renderVideoIframe(src, title = 'Video Player') {
         return `<iframe
               src="${src}"
@@ -21,52 +66,22 @@
             ></iframe>`
       }
 
-      function renderSpan(text) {
-        return `<span>${text}</span>`
-      }
-
-      function renderLink(link, text) {
-        return `<a href="${link}" target="_blank" title=${text}>${text}</a>`
-      }
-
       function renderVideoComponent(data) {
-        const {
-          src,
-          title,
-          captionLink1,
-          captionText1,
-          captionLink2,
-          captionText2,
-        } = data
+        const { src, title, ...captions } = data
 
         if (!src) {
           return ''
         }
 
-        if (!captionLink1 && !captionText1 && !captionLink2 && !captionText2) {
+        const hasNoCaptions = Object.keys(captions).length === 0
+
+        if (hasNoCaptions) {
           return renderVideoIframe(src, title)
-        }
-
-        let firstCaption = ''
-        let secondCaption = ''
-
-        if (captionText1) {
-          firstCaption = renderSpan(captionText1)
-        }
-        if (captionText1 && captionLink1) {
-          firstCaption = renderLink(captionLink1, captionText1)
-        }
-
-        if (captionText2) {
-          secondCaption = renderSpan(captionText2)
-        }
-        if (captionText2 && captionLink2) {
-          secondCaption = renderLink(captionLink2, captionText2)
         }
 
         return `<figure>
             ${renderVideoIframe(src, title)}
-            <figcaption>${firstCaption} ${secondCaption}</figcaption>
+            ${renderCaptions(captions)}
           </figure>`
       }
 
@@ -78,51 +93,46 @@
             name: 'src',
             label: 'Embedded Video URL',
             widget: 'string',
+            required: true,
           },
           {
             name: 'title',
             label: 'Video Description (for screen readers)',
             widget: 'string',
+            required: true,
           },
           {
             name: 'captionText1',
             label: 'First Caption Text',
             widget: 'string',
+            required: false,
           },
           {
             name: 'captionLink1',
             label: 'First Caption URL',
             widget: 'string',
+            required: false,
           },
           {
             name: 'captionText2',
             label: 'Second Caption Text',
             widget: 'string',
+            required: false,
           },
           {
             name: 'captionLink2',
             label: 'Second Caption URL',
             widget: 'string',
+            required: false,
           },
         ],
-        pattern:
-          /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*<figcaption>(.*)<\/figcaption>\s*<\/figure>$/ms,
-        fromBlock: function (match) {
-          return {
-            src: match[1],
-            title: match[2],
-            captionLink1: match[3],
-            captionText1: match[4],
-            captionLink2: match[5],
-            captionText2: match[6],
-          }
-        },
+        pattern: regExp,
+        fromBlock: getMatches,
         toBlock: renderVideoComponent,
         toPreview: renderVideoComponent,
       })
     </script>
     <script>
-      // SOUNDCLOUD WIDGET
       function renderAudioIframe(src, title = 'Audio Player') {
         return `<iframe
               src="${src}"
@@ -134,52 +144,22 @@
             ></iframe>`
       }
 
-      function renderSpan(text) {
-        return `<span>${text}</span>`
-      }
-
-      function renderLink(link, text) {
-        return `<a target="_blank" title=${text} href="${link}">${text}</a>`
-      }
-
       function renderAudioComponent(data) {
-        const {
-          src,
-          title,
-          captionLink1,
-          captionText1,
-          captionLink2,
-          captionText2,
-        } = data
+        const { src, title, ...captions } = data
 
         if (!src) {
           return ''
         }
 
-        if (!captionLink1 && !captionText1 && !captionLink2 && !captionText2) {
+        const hasNoCaptions = Object.keys(captions).length === 0
+
+        if (hasNoCaptions) {
           return renderAudioIframe(src, title)
-        }
-
-        let firstCaption = ''
-        let secondCaption = ''
-
-        if (captionText1) {
-          firstCaption = renderSpan(captionText1)
-        }
-        if (captionText1 && captionLink1) {
-          firstCaption = renderLink(captionLink1, captionText1)
-        }
-
-        if (captionText2) {
-          secondCaption = renderSpan(captionText2)
-        }
-        if (captionText2 && captionLink2) {
-          secondCaption = renderLink(captionLink2, captionText2)
         }
 
         return `<figure>
             ${renderAudioIframe(src, title)}
-            <figcaption>${firstCaption} ${secondCaption}</figcaption>
+            ${renderCaptions(captions)}
           </figure>`
       }
 
@@ -197,6 +177,7 @@
             name: 'title',
             label: 'Audio Description (for screen readers)',
             widget: 'string',
+            required: true,
           },
           {
             name: 'captionText1',
@@ -223,18 +204,8 @@
             required: false,
           },
         ],
-        pattern:
-          /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*<figcaption>(.*)<\/figcaption>\s*<\/figure>$/ms,
-        fromBlock: function (match) {
-          return {
-            src: match[1],
-            title: match[2],
-            captionLink1: match[3],
-            captionText1: match[4],
-            captionLink2: match[5],
-            captionText2: match[6],
-          }
-        },
+        pattern: regExp,
+        fromBlock: getMatches,
         toBlock: renderAudioComponent,
         toPreview: renderAudioComponent,
       })
