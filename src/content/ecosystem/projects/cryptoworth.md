@@ -1,28 +1,34 @@
 ---
 title: "Cryptoworth"
 slug: "cryptoworth"
-created-on: 2024-02-26T21:34:10.287Z
-updated-on: 2024-02-26T21:34:10.297Z
-published-on: 2024-02-26T21:34:10.305Z
-featured: false
-description: "Helps businesses of all sizes to automate their back-office crypto accounting tasks."
-category:
-  - finance
+created-on: 2024-02-26T21:34:10.287000Z
+updated-on: 2024-02-26T21:34:10.297000Z
+published-on: 2024-02-26T21:34:10.305000Z
+description:
+  "Helps businesses of all sizes to automate their back-office crypto accounting
+  tasks."
+category: finance
 tags:
   - data-retrieval
 tech:
   - filecoin
 image:
   url: /assets/images/cw-logo-square-1-.png
-  alt: cryptoworth wordmark
+  alt: Cryptoworth Logo
 website: https://Cryptoworth.com
-featured-content: null
-repo: null
+featured-content:
+repo:
 twitter: https://twitter.com/cryptoworthapp/
-video-url: null
-year-joined: 2023-08-01T20:34:10.316Z
-news-update: null
-metadata: null
+video-url:
+year-joined: 2023-08-01T20:34:10.316000Z
+news-update:
+subcategories:
+  - finance
+seo:
+  title: Cryptoworth
+  description:
+    Cryptoworth provides tools for managing and tracking cryptocurrency
+    portfolios.
 ---
 
 Cryptoworth solves the problem of organizing the entire crypto financial operation into one uniform ledger for automated bookkeeping, audit readiness, corporate-level financial reporting, and more

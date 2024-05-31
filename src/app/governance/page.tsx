@@ -19,7 +19,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { governanceDocsData } from './data/governanceDocsData'
 
 const { header, seo } = attributes
-export const metadata = createMetadata(seo, PATHS.GOVERNANCE.path)
+export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })
 
 const governancePageBaseData = generateWebPageStructuredData({
   title: seo.title,

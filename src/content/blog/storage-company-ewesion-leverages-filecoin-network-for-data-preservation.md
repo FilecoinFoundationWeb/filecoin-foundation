@@ -4,7 +4,6 @@ slug: storage-company-ewesion-leverages-filecoin-network-for-data-preservation
 created-on: "2023-04-21T07:31:57.523Z"
 updated-on: "2023-04-21T07:31:57.523Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Founded in 2019 by Benny Li, Ewesion is a platform for creative artists that
   serves everyone from large and medium-sized enterprises to media and
@@ -12,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: Storage Company Ewesion Uses Filecoin for Data Preservation
+  description:
+    Ewesion utilizes the Filecoin network for preserving data. Learn more
+    about their approach.
 ---
 
 **Key highlights:**

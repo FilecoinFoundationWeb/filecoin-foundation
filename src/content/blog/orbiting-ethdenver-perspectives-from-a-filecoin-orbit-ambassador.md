@@ -1,23 +1,28 @@
 ---
 title: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
 slug: orbiting-ethdenver-perspectives-from-a-filecoin-orbit-ambassador
-created-on: 2024-03-25T15:21:33.080Z
-updated-on: 2024-03-25T15:21:33.092Z
-published-on: 2024-03-25T15:21:33.100Z
-featured: false
-category: blog
-description: Against the backdrop of ETHDenver, ambassadors from Filecoin Orbit North America came together to host a Filecoin Ecosystem Showcase event. Read about what this event meant for the community and the future of the Orbit program.
+created-on: 2024-03-25T15:21:33.080000Z
+updated-on: 2024-03-25T15:21:33.092000Z
+published-on: 2024-03-25T15:21:33.100000Z
+category: events
+description:
+  Against the backdrop of ETHDenver, ambassadors from Filecoin Orbit North
+  America came together to host a Filecoin Ecosystem Showcase event. Read about what
+  this event meant for the community and the future of the Orbit program.
 image:
   url: /assets/images/032224-orbit-austin.png
   alt: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
   twitter:image: /assets/images/032224-orbit-austin.png
   og:image: /assets/images/032224-orbit-austin.png
+  title: "Orbiting ETHDenver: Insights from a Filecoin Orbit Ambassador"
+  description:
+    Insights and perspectives from a Filecoin Orbit Ambassador at ETHDenver.
+    Explore the experiences.
 ---
 
 Filecoin Orbit is a global community that organizes events, hackathons, and other initiatives to increase awareness and adoption of Filecoin. The program brings communities together from around the globe to share ideas and collaborate. And due to the open nature of Orbit, individuals, startups, and large companies get a chance to better understand market needs and work together to build the future of the web. Against the backdrop of ETHDenver, Ambassadors from Filecoin Orbit North America came together and traveled to Denver to host an Ecosystem Showcase event, bringing together Orbit members from four continents!

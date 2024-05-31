@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — Linix
 description: >-
   Filecoin is an ecosystem that attracts many kinds of storage providers, from
@@ -10,13 +9,18 @@ description: >-
 image:
   url: >-
     /assets/images/64423adfef619de193b60e70_1-3vi1mqlj6blg3lay_py58g.png
-  alt: null
+  alt:
 slug: filecoin-storage-provider-spotlight-linix
 updated-on: "2023-04-21T07:27:27.712Z"
 created-on: "2023-04-21T07:27:27.712Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Filecoin Storage Provider Spotlight: Linix"
+  description:
+    Linix's role and impact as a Filecoin storage provider highlighted
+    in this spotlight feature.
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._

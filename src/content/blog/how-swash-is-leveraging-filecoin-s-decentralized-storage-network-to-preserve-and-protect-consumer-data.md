@@ -1,19 +1,25 @@
 ---
-title: How Swash is Leveraging Filecoin’s Decentralized Storage Network to
-  Preserve and Protect Consumer Data
-created-on: 2023-04-21T07:27:47.348Z
-updated-on: 2023-04-21T07:27:47.348Z
-published-on: 2023-04-21T07:33:56.200Z
-description: Cisco predicts that by 2022, internet protocol (IP) traffic will
-  surpass all prior “internet years” up to 2016 combined. As internet traffic
-  multiplies, two trends are developing in parallel.
-featured: false
+title:
+  How Swash is Leveraging Filecoin’s Decentralized Storage Network to Preserve
+  and Protect Consumer Data
+created-on: 2023-04-21T07:27:47.348000Z
+updated-on: 2023-04-21T07:27:47.348000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  Cisco predicts that by 2022, internet protocol (IP) traffic will surpass
+  all prior “internet years” up to 2016 combined. As internet traffic multiplies,
+  two trends are developing in parallel.
 image:
   url: /assets/images/64423af3e3c08f488e4f519c_1-pyb3swiscnbniykvqyrrdq.png
-  alt: null
+  alt:
 slug: how-swash-is-leveraging-filecoin-s-decentralized-storage-network-to-preserve-and-protect-consumer-data
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: How Swash Uses Filecoin to Protect Consumer Data
+  description:
+    Explore how Swash leverages Filecoin's decentralized storage network
+    to preserve and protect consumer data.
 ---
 
 [Cisco](https://www.networkworld.com/article/3323063/cisco-predicts-nearly-5-zettabytes-of-ip-traffic-per-year-by-2022.html) predicts that by 2022, internet protocol (IP) traffic will surpass all prior “internet years” up to 2016 combined. As internet traffic multiplies, [two trends are developing](https://www.mckinsey.com/business-functions/risk-and-resilience/our-insights/the-consumer-data-opportunity-and-the-privacy-imperative) in parallel. First, consumer insights are becoming increasingly sought after, with advertising growing into a [600 billion dollar industry](https://www.independent.co.uk/news/business/comment/facebook-apple-netflix-amazon-google-tech-stocks-marketing-consumer-data-a8999016.html) that is heavily dominated by a handful of tech companies. And on the other side, consumers are becoming increasingly aware of the value of their data and more deliberate about how and where they share that data.

@@ -1,20 +1,25 @@
 ---
-title: "Call for Community Feedback: Weigh in on the new Filecoin Governance
-  Process Proposal (FIP0001v2)"
+title:
+  "Call for Community Feedback: Weigh in on the new Filecoin Governance Process
+  Proposal (FIP0001v2)"
 slug: call-for-community-feedback-weigh-in-on-the-new-filecoin-governance-process-proposal-fip0001v2
-created-on: 2023-10-18T18:21:45.309Z
-updated-on: 2023-10-18T18:21:45.332Z
-published-on: 2023-10-18T18:21:45.346Z
-featured: false
+created-on: 2023-10-18T18:21:45.309000Z
+updated-on: 2023-10-18T18:21:45.332000Z
+published-on: 2023-10-18T18:21:45.346000Z
 category: ecosystem
-description: After several months of in-depth research, consultations, and
-  community engagements, Filecoin Foundation is proud to announce the release of
-  the FIP0001v2 draft.
+description:
+  After several months of in-depth research, consultations, and community
+  engagements, Filecoin Foundation is proud to announce the release of the FIP0001v2
+  draft.
 image:
   url: /assets/images/231017-fip0001v2.png
   alt: "Filecoin Foundation FIP 0001v2 Governance"
 recommended-posts: []
-metadata: null
+seo:
+  title: "Community Feedback: New Filecoin Governance Proposal"
+  description:
+    Weigh in on the new Filecoin governance process proposal FIP0001v2.
+    Your feedback is crucial for the community.
 ---
 
 After several months of in-depth research, consultations, and community engagements, Filecoin Foundation is proud to announce the release of the FIP0001v2 draft, coinciding with the 3 year anniversary of the Filecoin Mainnet launch. FIP0001v2 is the Filecoin Foundation’s coordination effort to improve the FIPs process and scale Filecoin network governance capabilities. The FIP0001v2 draft is a significant milestone, representing a single proposal for achieving these goals, which was only possible after months of input into the needs, preferences, and pain points that Filecoin community members have expressed in regard to the governance process. You can read the full draft of this FIP on [GitHub](https://github.com/filecoin-project/FIPs/pull/850).

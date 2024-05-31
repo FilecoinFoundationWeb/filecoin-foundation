@@ -1,18 +1,22 @@
 ---
 title: "Participating in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"
 slug: participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips
-created-on: 2023-04-21T07:31:43.965Z
-updated-on: 2023-04-21T07:31:43.965Z
-published-on: 2023-04-21T07:33:56.200Z
-description: "As an open-source, decentralized protocol, the success of the
-  Filecoin network is inextricably linked with the development of its community.
-  "
-featured: false
+created-on: 2023-04-21T07:31:43.965000Z
+updated-on: 2023-04-21T07:31:43.965000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "As an open-source, decentralized protocol, the success of the Filecoin
+  network is inextricably linked with the development of its community. "
 image:
   url: /assets/images/image-c-20.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Get Involved in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"
+  description:
+    Learn how to participate in the Filecoin ecosystem through bounties,
+    microgrants, and FIPs.
 ---
 
 As an open-source, decentralized protocol, the success of the Filecoin network is inextricably linked with the development of its community. It is for this reason that the Filecoin Foundation supports community capacity building, or finding ways to empower the development of individuals, ideas, resources, and solutions within the Filecoin ecosystem.

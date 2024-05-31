@@ -1,21 +1,28 @@
 ---
 title: "Fresh From FF: Mid-February, 2024"
 slug: fresh-from-ff-mid-february-2024
-created-on: 2024-02-15T20:13:07.449Z
-updated-on: 2024-02-15T20:13:07.488Z
-published-on: 2024-02-15T20:13:07.495Z
-featured: false
-category: blog
-description: Fresh from FF is a new, biweekly series dedicated to disseminating the latest information and updates from FF teams in their ongoing efforts to support our incredible community of developers, storage providers, storage clients, project partners, advocates, and more as we work toward our mission of building a stronger, more decentralized internet.
+created-on: 2024-02-15T20:13:07.449000Z
+updated-on: 2024-02-15T20:13:07.488000Z
+published-on: 2024-02-15T20:13:07.495000Z
+category: news
+description:
+  Fresh from FF is a new, biweekly series dedicated to disseminating the
+  latest information and updates from FF teams in their ongoing efforts to support
+  our incredible community of developers, storage providers, storage clients, project
+  partners, advocates, and more as we work toward our mission of building a stronger,
+  more decentralized internet.
 image:
   url: /assets/images/0215-ff.png
   alt: "Fresh from FF, Mid-February, 2024 on a radial blue background."
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
+  title: "Fresh from FF: Mid February 2024"
+  description:
+    Catch up on the latest news and updates from Filecoin Foundation in
+    mid-February 2024.
 ---
 
 _Check out the latest updates about what the Filecoin Foundation team has been up to._

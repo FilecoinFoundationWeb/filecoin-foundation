@@ -4,16 +4,19 @@ slug: consensus-filecoin-orbit-event
 created-on: "2024-01-29T15:50:42.605Z"
 updated-on: "2024-01-29T15:50:42.614Z"
 published-on: "2024-01-29T15:50:42.621Z"
-featured: false
-description: Austin, TX
-cta:
-  url: null
-  text: null
+description:
+location: Austin, TX
+external-link:
+  href:
+  text:
 start-date: "2024-05-29T14:50:42.632Z"
 end-date: "2024-05-31T14:50:42.640Z"
 image:
   url: /assets/images/consensus-2024.png
   alt: Consensus Logo
-event-type: event
 involvement: sponsored
+seo:
+  title: Consensus Filecoin Orbit Event
+  description: Attend the Consensus Filecoin Orbit Event to connect with the Filecoin
+    community and learn the latest updates.
 ---

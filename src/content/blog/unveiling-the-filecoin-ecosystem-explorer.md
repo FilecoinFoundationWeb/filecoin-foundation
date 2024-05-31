@@ -1,24 +1,27 @@
 ---
 title: "Unveiling the Filecoin Ecosystem Explorer"
 slug: unveiling-the-filecoin-ecosystem-explorer
-created-on: 2024-01-11T15:12:45.372Z
-updated-on: 2024-01-11T15:12:45.388Z
-published-on: 2024-01-11T15:12:45.398Z
-featured: true
-category: blog
-description: The Filecoin Ecosystem Explorer is a crowd-sourced database that showcases the breadth and depth of Filecoin ecosystem projects.
+created-on: 2024-01-11T15:12:45.372000Z
+updated-on: 2024-01-11T15:12:45.388000Z
+published-on: 2024-01-11T15:12:45.398000Z
+category: news
+description:
+  The Filecoin Ecosystem Explorer is a crowd-sourced database that showcases
+  the breadth and depth of Filecoin ecosystem projects.
 image:
   url: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
   alt: "Filecoin Ecosystem Explorer"
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: Filecoin Ecosystem Explorer
   twitter:card: summary
   twitter:image: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
   og:image: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
-  title: Filecoin Ecosystem Explorer
+  title: Unveiling the Filecoin Ecosystem Explorer
+  description:
+    Introducing the Filecoin Ecosystem Explorer. Navigate and discover
+    the Filecoin ecosystem easily.
 ---
 
 Filecoin is the world’s largest decentralized storage network, designed to store humanity's most important information. And it’s made up of an amazing array of builders and storage providers committing their time, energy, expertise and resources to the network. Today, the ecosystem includes more than 14,700 contributors on GitHub, 3,050 projects built on Filecoin and IPFS, and over 450 organizations contributing to the network.

@@ -20,7 +20,7 @@ type TitleProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  description: DescriptionTextType
+  description?: DescriptionTextType
   cta?: CTAProps
   secondaryCta?: CTAProps
   image?: ImageProps
@@ -60,7 +60,7 @@ export function PageHeader({
             </span>
           )}
 
-          <DescriptionText>{description}</DescriptionText>
+          {description && <DescriptionText>{description}</DescriptionText>}
 
           {cta && (
             <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">

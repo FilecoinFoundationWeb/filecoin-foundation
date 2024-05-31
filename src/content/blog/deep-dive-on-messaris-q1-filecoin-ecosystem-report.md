@@ -1,17 +1,17 @@
 ---
 title: "Deep Dive on Messari’s Q1 Filecoin Ecosystem Report"
 slug: deep-dive-on-messaris-q1-filecoin-ecosystem-report
-created-on: 2024-05-10T14:59:51.532Z
-updated-on: 2024-05-10T14:59:51.549Z
-published-on: 2024-05-10T14:59:51.575Z
-featured: false
-category: blog
-description: Insights from Messari's recently released Q1 2024 Filecoin Ecosystem Report.
+created-on: 2024-05-10T14:59:51.532000Z
+updated-on: 2024-05-10T14:59:51.549000Z
+published-on: 2024-05-10T14:59:51.575000Z
+category: reports
+description:
+  Insights from Messari's recently released Q1 2024 Filecoin Ecosystem
+  Report.
 image:
   url: /assets/images/050824-messariq1.png
   alt: Messari Filecoin Report
 recommended-posts: []
-metadata: null
 seo:
   noindex: false
   twitter:title: Messari Filecoin Report Q1 2024
@@ -19,7 +19,10 @@ seo:
   twitter:image: /assets/images/050824-messariq1.png
   og:image: /assets/images/050824-messariq1.png
   og:title: Messari Filecoin Report Q1 2024
-  title: Messari Filecoin Report Q1 2024
+  title: Deep Dive on Messari's Q1 Filecoin Ecosystem Report
+  description:
+    An in-depth look at Messari's Q1 report on the Filecoin ecosystem.
+    Key insights and analysis.
 ---
 
 Insights from Messari's recently released Q1 2024 Filecoin Ecosystem Report.

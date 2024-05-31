@@ -1,18 +1,23 @@
 ---
 title: Wave 11 Dev Grant Recipients
 slug: wave-11-dev-grant-recipients
-created-on: 2023-04-21T07:32:16.777Z
-updated-on: 2023-04-21T07:32:16.777Z
-published-on: 2023-04-21T07:33:56.200Z
-featured: false
-description: Filecoin Foundation and Protocol Labs periodically award funding
-  to critical development projects to foster a more robust and efficient
-  decentralized web through the Filecoin ecosystem.
+created-on: 2023-04-21T07:32:16.777000Z
+updated-on: 2023-04-21T07:32:16.777000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  Filecoin Foundation and Protocol Labs periodically award funding to critical
+  development projects to foster a more robust and efficient decentralized web through
+  the Filecoin ecosystem.
 image:
   url: /assets/images/image-c-17.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Announcing the Wave 11 Dev Grant Recipients
+  description:
+    Meet the new recipients of the Filecoin Wave 11 developer grants. Discover
+    their innovative projects.
 ---
 
 Filecoin Foundation and Protocol Labs periodically award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. Last month, we awarded five Microgrants and eight Open Grants to support the development of a wide range of innovative platforms and projects.

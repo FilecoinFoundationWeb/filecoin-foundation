@@ -7,7 +7,6 @@ slug: >-
 updated-on: "2023-04-21T07:31:42.463Z"
 created-on: "2023-04-21T07:31:42.463Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Filecoin Improvement Proposals (FIPs) are the primary way that Filecoin
   community members can submit, discuss, and approve changes to the Filecoin
@@ -15,9 +14,14 @@ description: >-
 image:
   url: >-
     /assets/images/64423bdeb13e032a58960cfb_1-xicc70v_m64rcu1wlbq6qq.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: Participate in Filecoin's Poll on Extending V1 Sector Lifetime
+  description:
+    Weigh in on extending the maximum lifetime of V1 sectors in the Filecoin
+    network. Your input matters.
 ---
 
 [Filecoin Improvement Proposals (FIPs)](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0001.md) are the primary way that Filecoin community members can submit, discuss, and approve changes to the Filecoin protocol.

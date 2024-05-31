@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   Filecoin Foundation and Blockchain Law for Social Good Center Accelerate Web3
   Education
@@ -10,14 +9,21 @@ description: >-
 image:
   url: >-
     /assets/images/64423ac9e3c08f1a784f5119_1-dvxhahnhu5a5qk3xidlxga.png
-  alt: null
+  alt:
 slug: >-
   filecoin-foundation-and-blockchain-law-for-social-good-center-accelerate-web3-education
 updated-on: "2023-04-21T07:27:05.729Z"
 created-on: "2023-04-21T07:27:05.729Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title:
+    Filecoin Foundation and Blockchain Law for Social Good Center Accelerate
+    Web3 Education
+  description:
+    Efforts by Filecoin Foundation and Blockchain Law for Social Good Center
+    to promote Web3 education.
 ---
 
 _New Blockchain Academy Lab will provide education and training to support understanding of decentralized technology_

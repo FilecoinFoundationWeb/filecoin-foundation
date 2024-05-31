@@ -1,17 +1,22 @@
 ---
 title: Marta Belcher Talks Crypto Privacy (or Lack Thereof) at Consensus 2021
-created-on: 2023-04-21T07:28:09.194Z
-updated-on: 2023-04-21T07:28:09.194Z
-published-on: 2023-04-21T07:33:56.200Z
-description: Filecoin Foundation Board Chair Marta Belcher participated in a
-  panel discussion on privacy coins at CoinDesk’s Consensus 2021.
-featured: false
+created-on: 2023-04-21T07:28:09.194000Z
+updated-on: 2023-04-21T07:28:09.194000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  Filecoin Foundation Board Chair Marta Belcher participated in a panel
+  discussion on privacy coins at CoinDesk’s Consensus 2021.
 image:
   url: /assets/images/64423b080425d3dc88f2efd0_0-ujllypeozzx_ebfb.png
-  alt: null
+  alt:
 slug: marta-belcher-talks-crypto-privacy-or-lack-thereof-at-consensus-2021
 recommended-posts: []
-metadata: null
+category: events
+seo:
+  title: Marta Belcher Discusses Crypto Privacy at Consensus 2021
+  description:
+    Marta Belcher talks about crypto privacy and its challenges at Consensus
+    2021.
 ---
 
 Filecoin Foundation Board Chair Marta Belcher participated in a panel discussion on privacy coins at _CoinDesk’s_ Consensus 2021. She talked about crypto exchanges’ responsibility to protect the rights of their users by requesting warrants before handing over private information. “It’s very important for exchanges to have a variety of different policies that advocate for their users, including the ability to, when possible, inform their users of these types of surveillance requests and \[provide\] the \[opportunity\] for users to appeal \[them\],” she said.

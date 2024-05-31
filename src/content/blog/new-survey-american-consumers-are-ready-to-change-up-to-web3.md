@@ -4,7 +4,6 @@ slug: new-survey-american-consumers-are-ready-to-change-up-to-web3
 created-on: "2023-04-21T07:31:36.890Z"
 updated-on: "2023-04-21T07:31:36.890Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   The results of a new survey of American consumers from the Filecoin Foundation
   reveal that — while Americans trust the internet’s overall resilience, they
@@ -12,9 +11,14 @@ description: >-
 image:
   url: >-
     /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: reports
+seo:
+  title: "New Survey: American Consumers Ready to Embrace Web3"
+  description:
+    A new survey reveals that American consumers are ready to embrace Web3.
+    Explore the findings.
 ---
 
 The results of a new survey of American consumers from the Filecoin Foundation reveal that — while Americans trust the internet’s overall resilience, they don’t like how their data is managed by the current gatekeepers. In the survey results, they speak of precious memories lost online, worry about losing control of their personal information, and that they see the benefits of a decentralized internet. The survey provides insights into Americans’ perceptions of and experience with digital storage, today’s centralized web and decentralized alternatives — including Web3 technologies such as NFTs, metaverse, and cryptocurrencies.

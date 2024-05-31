@@ -4,8 +4,9 @@ slug: seal-storage
 created-on: "2024-01-04T22:40:27.879Z"
 updated-on: "2024-01-05T21:39:00.625Z"
 published-on: "2024-01-11T13:26:59.787Z"
-featured: false
-description: "Seal Storage is a data platform that provides sustainable, immutable, and affordable Web3 cloud storage on the Filecoin network."
+description:
+  "Seal Storage is a data platform that provides sustainable, immutable,
+  and affordable Web3 cloud storage on the Filecoin network."
 category: storage
 tags:
   - storage-software
@@ -16,13 +17,17 @@ image:
   url: /assets/images/659751688bb318bafb3d5892_seal2blogo2brgbd-1.png
   alt: Seal Storage Logo
 website: "https://www.sealstorage.io/"
-repo: null
+repo:
 twitter: "https://twitter.com/SealStorage"
 featured-content: "https://fil.org/blog/case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1/"
-video-url: null
-year-joined: null
-news-update: null
-metadata: null
+video-url:
+year-joined:
+news-update:
+subcategories:
+  - data-storage-management
+seo:
+  title: Seal Storage
+  description: Seal Storage provides decentralized storage solutions for enterprises.
 ---
 
 As one of the earliest providers on the Filecoin network, Seal Storage is a top storage provider in North America, serving universities, research institutes, enterprises, and other firms.

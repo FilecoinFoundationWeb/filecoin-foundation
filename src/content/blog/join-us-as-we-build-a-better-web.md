@@ -1,19 +1,23 @@
 ---
 title: Join us as we Build a Better Web
-created-on: 2023-04-21T07:28:02.613Z
-updated-on: 2023-04-21T07:28:02.613Z
-published-on: 2023-04-21T07:33:56.200Z
-description: More than half of the world’s population is online and connected.
-  Collectively, we create more than 2.5 quintillion bytes of data daily — from
-  photos and videos, tweets and texts, Reddit posts and research reports, and so
-  much more.
-featured: false
+created-on: 2023-04-21T07:28:02.613000Z
+updated-on: 2023-04-21T07:28:02.613000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  More than half of the world’s population is online and connected. Collectively,
+  we create more than 2.5 quintillion bytes of data daily — from photos and videos,
+  tweets and texts, Reddit posts and research reports, and so much more.
 image:
   url: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
-  alt: null
+  alt:
 slug: join-us-as-we-build-a-better-web
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: Join Us as We Build a Better Web
+  description:
+    Collaborate with us at Filecoin Foundation to build a better, decentralized
+    web. Get involved today.
 ---
 
 _“The internet is in the middle of a revolution: centralized proprietary services are being replaced with decentralized open ones; trusted parties replaced with verifiable computation; brittle location addresses replaced with resilient content addresses; inefficient monolithic services replaced with peer-to-peer algorithmic markets.” —_ _[Filecoin White Paper](https://filecoin.io/filecoin.pdf), 2017_
@@ -38,4 +42,4 @@ The Filecoin Foundation and FFDW are charged with bringing that mission to fruit
 
 This is a monumental task, and one that requires support from the brightest minds in technology and civil liberties to be successful. We’ve lined up a [steller board and advisors](https://youtu.be/6OY4xAs3Grg) for both foundations to shepherd this project and grow the ecosystem. And we’re looking for more bright minds to round out our team.
 
-If you’re interested in the Filecoin project and passionate about the benefits of web3 to decentralize the web, [apply today](https://fil.org/get-involved/#careers-intro)! And be on the lookout for an upcoming webinar to learn more about these positions and what’s in store for the Filecoin Foundation and FFDW.
+If you’re interested in the Filecoin project and passionate about the benefits of web3 to decentralize the web, apply today! And be on the lookout for an upcoming webinar to learn more about these positions and what’s in store for the Filecoin Foundation and FFDW.

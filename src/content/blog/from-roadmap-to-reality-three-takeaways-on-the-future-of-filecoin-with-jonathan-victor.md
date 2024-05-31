@@ -1,21 +1,26 @@
 ---
-title: "From Roadmap to Reality: Three Takeaways on the Future of Filecoin with
-  Jonathan Victor"
+title:
+  "From Roadmap to Reality: Three Takeaways on the Future of Filecoin with Jonathan
+  Victor"
 slug: from-roadmap-to-reality-three-takeaways-on-the-future-of-filecoin-with-jonathan-victor
-created-on: 2023-11-29T16:52:21.803Z
-updated-on: 2023-11-29T16:52:21.817Z
-published-on: 2023-11-29T16:52:21.826Z
-featured: false
+created-on: 2023-11-29T16:52:21.803000Z
+updated-on: 2023-11-29T16:52:21.817000Z
+published-on: 2023-11-29T16:52:21.826000Z
 category: interviews
-description: Dweb Decoded is Filecoin Foundation's weekly podcast dedicated to
-  discussing the latest advancements in decentralized technology, and exciting
-  projects and ideas in the Filecoin ecosystem.​​​​​​​​​​ In the latest episode,
-  we chatted with Jonathan Victor, Ecosystem Lead at Protocol Labs.
+description:
+  Dweb Decoded is Filecoin Foundation's weekly podcast dedicated to discussing
+  the latest advancements in decentralized technology, and exciting projects and ideas
+  in the Filecoin ecosystem.​​​​​​​​​​ In the latest episode, we chatted with Jonathan
+  Victor, Ecosystem Lead at Protocol Labs.
 image:
   url: /assets/images/jonathan-victor.png
   alt: From Roadmap to Reality. DWeb Decoded podcast with Jonathan Victor
 recommended-posts: []
-metadata: null
+seo:
+  title: "From Roadmap to Reality: Future of Filecoin with Jonathan Victor"
+  description:
+    Three key takeaways on the future of Filecoin with Jonathan Victor.
+    From roadmap to reality.
 ---
 
 Dweb Decoded is Filecoin Foundation's weekly podcast dedicated to discussing the latest advancements in decentralized technology, and exciting projects and ideas in the Filecoin ecosystem.​​​​​​​​​​ In the latest episode, we chatted with Jonathan Victor, Ecosystem Lead at Protocol Labs to talk about the state of the Filecoin ecosystem three years after the Mainnet launch and the path forward to turning Filecoin into a true marketplace for open data services.

@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — FilSwan
 description: >-
   Storage providers need to keep up with evolving technologies that their
@@ -9,13 +8,18 @@ description: >-
 image:
   url: >-
     /assets/images/64423adea6ec4171202a5cf2_1-hdrc5daoaw6mxtrklvxhcg.png
-  alt: null
+  alt:
 slug: filecoin-storage-provider-spotlight-filswan
 updated-on: "2023-04-21T07:27:26.180Z"
 created-on: "2023-04-21T07:27:26.180Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Filecoin Storage Provider Spotlight: Filswan"
+  description:
+    Explore the achievements and offerings of Filswan, a key player in
+    the Filecoin storage ecosystem.
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._

@@ -1,5 +1,4 @@
 ---
-featured: false
 title: >-
   Filecoin Foundation Introduces FIL Lisbon 2022 to Bring the Web3 Community
   Together, Announces Speakers
@@ -11,12 +10,17 @@ slug: >-
 image:
   url: >-
     /assets/images/64423ad74e4c688bfff4446d_1-ru5fimtnssl-v4znrrl-ew.webp
-  alt: null
+  alt:
 updated-on: "2023-04-21T07:27:19.915Z"
 created-on: "2023-04-21T07:27:19.915Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: events
+seo:
+  title: Filecoin Foundation Introduces FIL Lisbon 2022
+  description:
+    Introducing FIL Lisbon 2022 by Filecoin Foundation. Bringing the Web3
+    community together. Announcing speakers.
 ---
 
 **OCTOBER 17, 2022** — [Filecoin Foundation](https://fil.org/) — an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web — unveils the details of [FIL Lisbon](https://fil-lisbon.io/), the first major gathering of the Filecoin community in Lisbon, Portugal, taking place October 30 — November 4.

@@ -5,12 +5,12 @@ import { Event, WithContext } from 'schema-dts'
 import { Heading } from '@/components/Heading'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { EventData } from '@/types/eventTypes'
+import { type EventData } from '@/types/eventTypes'
 
-import { generateDynamicContentMetadata } from '@/utils/generateDynamicContentMetadata'
+import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
 
-import { PATHS } from '@/constants/paths'
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 type EventProps = {
@@ -23,9 +23,11 @@ export async function generateMetadata({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 
-  return generateDynamicContentMetadata({
-    basePath: PATHS.EVENTS.path,
-    data,
+  return createMetadata({
+    seo: data.seo,
+    title: data.title,
+    description: data.description,
+    path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
   })
 }
 
@@ -39,7 +41,7 @@ function createEventPostStructuredData(data: EventData): WithContext<Event> {
     description,
     startDate,
     endDate,
-    image: image?.url,
+    image: image.url,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }
 }

@@ -1,38 +1,39 @@
 import type { Organization, WebPage, WithContext } from 'schema-dts'
 
-import siteMedataData from '@/content/shared/site-metadata.yml'
+import siteMetadata from '@/content/shared/site-metadata.yml'
 
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
-const { seo } = siteMedataData
+const { seo } = siteMetadata
 
-export const baseOrganizationSchema: WithContext<Organization> =
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: ORGANIZATION_NAME,
-    url: BASE_URL,
-    description: seo.description,
-    logo: {
-      '@type': 'ImageObject',
-      url: '', // Replace
-      width: '600', // Replace
-      height: '60', // Replace
-    },
-  } || {}
+interface GenerateWebPageStructuredDataProps {
+  title: string
+  description: string
+  path: string
+}
+
+export const baseOrganizationSchema: WithContext<Organization> = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: ORGANIZATION_NAME,
+  url: BASE_URL,
+  description: seo.description,
+  logo: {
+    '@type': 'ImageObject',
+    url: '', // Replace with actual logo URL
+    width: '600', // Replace with actual width
+    height: '60', // Replace with actual height
+  },
+}
 
 export const generateWebPageStructuredData = ({
   title,
-  path,
   description,
-}: {
-  title: string
-  path: string
-  description: string
-}): WithContext<WebPage> => ({
+  path,
+}: GenerateWebPageStructuredDataProps): WithContext<WebPage> => ({
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: title,
-  description: description,
+  description,
   url: `${BASE_URL}${path}`,
 })

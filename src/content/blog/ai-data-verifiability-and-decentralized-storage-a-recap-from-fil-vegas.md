@@ -1,18 +1,23 @@
 ---
 title: AI, Data Verifiability, and Decentralized Storage - A Recap from FIL Vegas
 slug: ai-data-verifiability-and-decentralized-storage-a-recap-from-fil-vegas
-created-on: 2023-10-23T22:05:52.307Z
-updated-on: 2023-10-23T22:05:52.316Z
-published-on: 2023-10-23T22:05:52.322Z
-featured: false
+created-on: 2023-10-23T22:05:52.307000Z
+updated-on: 2023-10-23T22:05:52.316000Z
+published-on: 2023-10-23T22:05:52.322000Z
 category: events
 description: >-
-  Vegas was humming with the sound of hundreds of excited Filecoin ecosystem participants gathering under one roof to discuss decentralized storage in the age of artificial intelligence (AI).
+  Vegas was humming with the sound of hundreds of excited Filecoin ecosystem participants
+  gathering under one roof to discuss decentralized storage in the age of artificial
+  intelligence (AI).
 image:
   url: /assets/images/filvegas_recap_header.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+seo:
+  title: "AI, Data Verifiability, and Decentralized Storage: FIL Vegas Recap"
+  description:
+    "Recap of FIL Vegas: Exploring AI, data verifiability, and decentralized
+    storage innovations."
 ---
 
 This month, hundreds of Filecoin ecosystem participants from around the world gathered in Las Vegas to discuss decentralized storage in the age of artificial intelligence (AI). Let’s dive into some highlights from FIL Vegas.

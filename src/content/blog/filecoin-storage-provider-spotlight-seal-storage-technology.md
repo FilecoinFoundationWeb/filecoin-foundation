@@ -1,5 +1,4 @@
 ---
-featured: false
 title: Filecoin Storage Provider Spotlight — Seal Storage Technology
 description: >-
   Seal Storage Technology Inc was founded to accelerate the adoption of
@@ -8,13 +7,18 @@ description: >-
 image:
   url: >-
     /assets/images/64423ae74e4c68130ff45382_1-tjiihglruqcaybnpwmudmg.png
-  alt: null
+  alt:
 slug: filecoin-storage-provider-spotlight-seal-storage-technology
 updated-on: "2023-04-21T07:27:36.061Z"
 created-on: "2023-04-21T07:27:36.061Z"
 published-on: "2023-04-21T07:33:56.200Z"
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: "Filecoin Storage Provider Spotlight: Seal Storage Technology"
+  description:
+    Seal Storage Technology's role and contributions to the Filecoin storage
+    network. Discover more.
 ---
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._

@@ -4,9 +4,10 @@ slug: "transfer-data-trust"
 created-on: "2024-02-01T15:51:35.125Z"
 updated-on: "2024-02-01T15:51:35.133Z"
 published-on: "2024-02-01T15:51:35.145Z"
-featured: false
-description: "TRANSFER Data Trust is a speculative design project to build an automated, non-profit cooperative trust powered by FVM."
-category: "media-entertainment"
+description:
+  "TRANSFER Data Trust is a speculative design project to build an automated,
+  non-profit cooperative trust powered by FVM."
+category: "storage"
 tags:
   - "arts-collectibles"
   - "glam"
@@ -20,11 +21,17 @@ image:
 website: "http://transfer.art"
 repo: "https://github.com/TRANSFERArchive"
 twitter: "https://twitter.com/transfergallery/"
-video-url: null
+video-url:
 year-joined: "2024-02-01T15:51:35.152Z"
-news-update: null
+news-update:
 featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data/"
-metadata: null
+subcategories:
+  - data-storage-management
+seo:
+  title: Transfer Data Trust
+  description:
+    Transfer Data Trust offers decentralized solutions for data transfer
+    and security.
 ---
 
 TRANSFER Data Trust is a speculative design project to build an automated, non-profit cooperative trust powered by FVM. The outcomes of this project are both a non-profit entity holding data-based assets (artworks), and a set of governance contracts and UI that are open and available to any artist collective or organization to fork and implement. The vision is to shift how artists understand the value of their work, and how they grow that value over time through cooperative conservation and care practices.

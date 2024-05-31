@@ -1,17 +1,22 @@
 ---
 title: Meet Filecoin Foundation Developer Advocate Sonia John
-created-on: 2023-04-21T07:28:11.027Z
-updated-on: 2023-04-21T07:28:11.027Z
-published-on: 2023-04-21T07:33:56.200Z
-description: "The Filecoin Foundation is thrilled to welcome Sonia John to the
-  Filecoin Foundation team! "
-featured: false
+created-on: 2023-04-21T07:28:11.027000Z
+updated-on: 2023-04-21T07:28:11.027000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "The Filecoin Foundation is thrilled to welcome Sonia John to the Filecoin
+  Foundation team! "
 image:
   url: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
-  alt: null
+  alt:
 slug: meet-filecoin-foundation-developer-advocate-sonia-john
 recommended-posts: []
-metadata: null
+category: interviews
+seo:
+  title: Meet Filecoin Foundation Developer Advocate Sonia John
+  description:
+    Get to know Sonia John, developer advocate at Filecoin Foundation.
+    Learn about her role and contributions.
 ---
 
 The Filecoin Foundation is thrilled to welcome Sonia John to the Filecoin Foundation team! As Developer Advocate, Sonia is a critical connection between the Foundation and Filecoin developers. She works to understand developers’ needs and help them to succeed within the community. She’s also working to expand the funnel of incoming developers to the Filecoin network to maintain a healthy community.

@@ -6,10 +6,11 @@ import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes, react as Content } from '@/content/pages/privacy-policy.md'
 
-const { header, seo } = attributes
 import { PATHS } from '@/constants/paths'
 
-export const metadata = createMetadata(seo, PATHS.PRIVACY_POLICY.path)
+const { header, seo } = attributes
+
+export const metadata = createMetadata({ seo, path: PATHS.PRIVACY_POLICY.path })
 
 const policyPageBaseData = generateWebPageStructuredData({
   title: seo.title,

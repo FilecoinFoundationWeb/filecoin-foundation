@@ -115,7 +115,7 @@ collections:
         file: "src/content/pages/blog.md"
         fields:
           - *header_config
-          - name: "featured_post"
+          - name: "featured_entry"
             label: "Featured Post"
             widget: "relation"
             collection: "blog"
@@ -125,7 +125,6 @@ collections:
               - "title"
             display_fields:
               - "title"
-            required: true
           - *meta_config
 
       - name: "governance"
@@ -154,7 +153,7 @@ collections:
         file: "src/content/pages/events.md"
         fields:
           - *header_config
-          - name: "featured_event"
+          - name: "featured_entry"
             label: "Featured Event"
             widget: "relation"
             collection: "events"
@@ -164,7 +163,6 @@ collections:
               - "title"
             display_fields:
               - "title"
-            required: true
           - *meta_config
 
       - name: "privacy-policy"
@@ -193,11 +191,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
-        required: true
       - name: "created-on"
         label: "Created On"
         widget: "datetime"
-        required: false
       - name: "updated-on"
         label: "Updated On"
         widget: "datetime"
@@ -206,11 +202,6 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-      - name: "featured"
-        label: "Featured"
-        widget: "boolean"
-        required: false
-        default: false
       - name: "category"
         label: "Category"
         widget: "select"
@@ -230,16 +221,13 @@ collections:
       - name: "description"
         label: "Description"
         widget: "text"
-        required: true
       - name: "image"
         label: "Image"
         widget: "object"
-        required: true
         fields:
           - name: "url"
             label: "URL"
             widget: "image"
-            required: true
             allow_multiple: false
           - name: "alt"
             label: "Alt Text"
@@ -318,11 +306,9 @@ collections:
       - name: title
         label: Company Name
         widget: string
-        required: true
       - name: created-on
         label: Created On
         widget: datetime
-        required: false
       - name: updated-on
         label: Updated On
         widget: datetime
@@ -331,29 +317,20 @@ collections:
         label: Published On
         widget: datetime
         required: false
-      - name: featured
-        label: Featured
-        widget: boolean
-        required: false
-        default: false
       - name: image
         label: Image
         widget: object
-        required: true
         fields:
           - name: url
             label: URL
             widget: image
-            required: true
             allow_multiple: false
           - name: alt
             label: Alt Text
             widget: string
-            required: true
       - name: category
         label: Category
         widget: relation
-        required: true
         collection: "ecosystem_projects_categories"
         value_field: "slug"
         search_fields:
@@ -363,7 +340,6 @@ collections:
       - name: subcategories
         label: Subcategories
         widget: relation
-        required: true
         collection: "ecosystem_projects_subcategories"
         value_field: "slug"
         search_fields:
@@ -472,7 +448,6 @@ collections:
       - name: website
         label: Website
         widget: string
-        required: true
       - name: repo
         label: GitHub Repo
         widget: string
@@ -480,7 +455,6 @@ collections:
       - name: tech
         label: Technologies Used
         widget: select
-        required: true
         multiple: true
         options:
           - filecoin
@@ -519,11 +493,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
-        required: true
       - name: "created-on"
         label: "Created On"
         widget: "datetime"
-        required: false
       - name: "updated-on"
         label: "Updated On"
         widget: "datetime"
@@ -532,43 +504,33 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
-      - name: "featured"
-        label: "Featured"
-        widget: "boolean"
-        required: false
-        default: false
       - name: "description"
         label: "Description"
         widget: "string"
         required: false
-      - name: "cta"
-        label: "CTA"
+      - name: "location"
+        label: "Location"
+        widget: "string"
+      - name: "external-link"
+        label: "External Link"
         widget: "object"
         required: false
         fields:
-          - name: "url"
-            label: "URL"
+          - name: "href"
+            label: "Href"
             widget: "string"
-            required: true
           - name: "text"
             label: "Text"
             widget: "string"
-            required: true
-            default: "Learn More"
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
-        required: true
         hint: "First day of event"
       - name: "end-date"
         label: "End Date"
         widget: "datetime"
         required: false
         hint: "Last day of event"
-      - name: "location"
-        label: "Location"
-        widget: "string"
-        required: true
       - name: "image"
         label: "Image"
         widget: "object"
@@ -577,21 +539,9 @@ collections:
           - name: "url"
             label: "Image"
             widget: "image"
-            required: true
           - name: "alt"
             label: "Alt Text"
             widget: "string"
-            required: true
-      - name: "event-type"
-        label: "Event Type"
-        widget: "select"
-        required: false
-        default: "event"
-        options:
-          - label: "Event"
-            value: "event"
-          - label: "Hackathon"
-            value: "hackathon"
       - name: "involvement"
         label: "FF Involvement"
         widget: "select"

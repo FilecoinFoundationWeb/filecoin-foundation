@@ -1,19 +1,23 @@
 ---
 title: What to know about the Future of Digital Public Infrastructure in Five Minutes
 slug: what-to-know-about-the-future-of-digital-public-infrastructure-in-five-minutes
-created-on: 2023-07-07T15:01:07.700Z
-updated-on: 2023-07-07T15:01:07.716Z
-published-on: 2023-07-07T15:01:07.728Z
-featured: false
-description: Filecoin Foundation Senior Fellow Danny O’Brien spoke with Ethan
-  Zuckerman, a professor at the University of Massachusetts at Amherst, about
-  the future of digital public infrastructure and how communities can govern
-  their own digital spaces.
+created-on: 2023-07-07T15:01:07.700000Z
+updated-on: 2023-07-07T15:01:07.716000Z
+published-on: 2023-07-07T15:01:07.728000Z
+description:
+  Filecoin Foundation Senior Fellow Danny O’Brien spoke with Ethan Zuckerman,
+  a professor at the University of Massachusetts at Amherst, about the future of digital
+  public infrastructure and how communities can govern their own digital spaces.
 image:
   url: /assets/images/0928-filecoinfortnight.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: ecosystem
+seo:
+  title: The Future of Digital Public Infrastructure in Five Minutes
+  description:
+    Learn about the future of digital public infrastructure in this quick,
+    five-minute read.
 ---
 
 _The Decentralists, a twitter space series hosted by Filecoin Foundation speaks with top minds at the intersection of Dweb and technology created for real world applications._

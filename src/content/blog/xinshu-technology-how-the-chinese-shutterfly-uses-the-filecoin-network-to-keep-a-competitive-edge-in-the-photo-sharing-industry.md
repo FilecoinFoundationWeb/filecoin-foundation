@@ -7,7 +7,6 @@ slug: >-
 created-on: "2023-04-21T07:32:20.158Z"
 updated-on: "2023-04-21T07:32:20.158Z"
 published-on: "2023-04-21T07:33:56.200Z"
-featured: false
 description: >-
   Launched in 2019 by Weiping Li and Liu Ming, Xinshu Technology helps memories
   last a lifetime — and then some — for thousands of Chinese families and
@@ -15,9 +14,14 @@ description: >-
 image:
   url: >-
     /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: use-cases
+seo:
+  title: "Xinshu Technology: How the Chinese Shutterfly Uses Filecoin"
+  description:
+    Discover how Xinshu Technology uses the Filecoin network to stay competitive
+    in the photo-sharing industry.
 ---
 
 **Key highlights:**

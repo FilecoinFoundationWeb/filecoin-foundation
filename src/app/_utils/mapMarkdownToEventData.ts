@@ -1,4 +1,4 @@
-import { EventData } from '@/types/eventTypes'
+import { type EventData } from '@/types/eventTypes'
 
 export function mapMarkdownToEventData({
   data,
@@ -12,21 +12,19 @@ export function mapMarkdownToEventData({
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
-    featured: data.featured,
     description: data.description,
-    cta: {
-      url: data.cta?.url || '',
-      text: data.cta?.text || '',
+    location: data.location,
+    externalLink: {
+      href: data['external-link'].href,
+      text: data['external-link'].text,
     },
     startDate: data['start-date'],
     endDate: data['end-date'],
-    location: data.location,
     image: {
       url: data.image?.url || '',
       alt: data.image?.alt || '',
     },
-    eventType: data['event-type'],
     involvement: data.involvement,
-    metadata: data.metadata,
+    seo: data.seo,
   }
 }

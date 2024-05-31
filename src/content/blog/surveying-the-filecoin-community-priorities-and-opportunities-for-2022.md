@@ -1,17 +1,22 @@
 ---
 title: "Surveying the Filecoin Community: Priorities and Opportunities for 2022"
 slug: surveying-the-filecoin-community-priorities-and-opportunities-for-2022
-created-on: 2023-04-21T07:32:03.550Z
-updated-on: 2023-04-21T07:32:03.550Z
-published-on: 2023-04-21T07:33:56.200Z
-featured: false
-description: "As a core building block of the Web3 world, the Filecoin network
-  is both open-source and decentralized. "
+created-on: 2023-04-21T07:32:03.550000Z
+updated-on: 2023-04-21T07:32:03.550000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  "As a core building block of the Web3 world, the Filecoin network is
+  both open-source and decentralized. "
 image:
   url: /assets/images/643e66cbb75bbf237f8e1292_1-1dqtfatumnkf7vdkmw1rhq.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: reports
+seo:
+  title: "Surveying the Filecoin Community: 2022 Priorities and Opportunities"
+  description:
+    An overview of the Filecoin community's priorities and opportunities
+    for 2022. Key insights.
 ---
 
 As a core building block of the Web3 world, the Filecoin network is both open-source and decentralized. This means that ecosystem coordinators — including Filecoin Foundation––are responsible for ensuring that the Filecoin ecosystem is a product of its community, building pathways for community members to define network-wide priorities, influencing the allocation of resources, and identifying other development opportunities.

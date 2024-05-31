@@ -1,20 +1,25 @@
 ---
-title: Introducing The Future Rules, a New Podcast Series from the Filecoin
-  Foundation and Forkast News
-created-on: 2023-04-21T07:27:52.137Z
-updated-on: 2023-04-21T07:27:52.137Z
-published-on: 2023-04-21T07:33:56.200Z
+title:
+  Introducing The Future Rules, a New Podcast Series from the Filecoin Foundation
+  and Forkast News
+created-on: 2023-04-21T07:27:52.137000Z
+updated-on: 2023-04-21T07:27:52.137000Z
+published-on: 2023-04-21T07:33:56.200000Z
 description: >
   Today, we’re thrilled to announce the launch of “The Future Rules,” a new
   podcast series dedicated to exploring the intersection of Web3 and the many
   factors that impact the growth and viability of a decentralized web.
-featured: false
 image:
   url: /assets/images/image-c-33.png
-  alt: null
+  alt:
 slug: introducing-the-future-rules-a-new-podcast-series-from-the-filecoin-foundation-and-forkast-news
 recommended-posts: []
-metadata: null
+category: news
+seo:
+  title: Introducing 'The Future Rules' Podcast by Filecoin Foundation
+  description:
+    Check out 'The Future Rules', a new podcast series by Filecoin Foundation
+    and Forkast News.
 ---
 
 Today, we’re thrilled to announce the launch of “[The Future Rules](https://the-future-rules-forkast-news-x-filecoin-foundation.simplecast.com/),” a new podcast series dedicated to exploring the intersection of Web3 and the many factors that impact the growth and viability of a decentralized web.

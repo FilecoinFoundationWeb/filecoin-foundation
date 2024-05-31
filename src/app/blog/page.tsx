@@ -49,15 +49,15 @@ type Props = {
 
 const posts = getBlogPostsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
-const { featured_post: featuredPostSlug, seo } = attributes
+const { featured_entry: featuredPostSlug, seo } = attributes
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
-export const metadata = createMetadata(seo, PATHS.BLOG.path)
+export const metadata = createMetadata({ seo, path: PATHS.BLOG.path })
 
 const blogPageBaseData = generateWebPageStructuredData({
   title: seo.title,
-  path: PATHS.BLOG.path,
   description: seo.description,
+  path: PATHS.BLOG.path,
 })
 
 const blogPageStructuredData: WithContext<WebPage> = {

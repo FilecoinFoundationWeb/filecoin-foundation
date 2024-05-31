@@ -1,18 +1,21 @@
 ---
 title: FIL Toronto 2022 Recap
 slug: fil-toronto-2022-recap
-created-on: 2023-04-21T07:26:59.147Z
-updated-on: 2023-04-21T07:26:59.147Z
-published-on: 2023-04-21T07:33:56.200Z
-featured: false
-description: Earlier this month, the Filecoin community convened for the
-  first-ever FIL Toronto. From July 4–6, attendees gathered to discuss new
-  features, partner tools, and other developments in the Filecoin ecosystem.
+created-on: 2023-04-21T07:26:59.147000Z
+updated-on: 2023-04-21T07:26:59.147000Z
+published-on: 2023-04-21T07:33:56.200000Z
+description:
+  Earlier this month, the Filecoin community convened for the first-ever
+  FIL Toronto. From July 4–6, attendees gathered to discuss new features, partner
+  tools, and other developments in the Filecoin ecosystem.
 image:
   url: /assets/images/image-c-07.png
-  alt: null
+  alt:
 recommended-posts: []
-metadata: null
+category: events
+seo:
+  title: FIL Toronto 2022 Recap
+  description: Recap of FIL Toronto 2022. Highlights and key takeaways from the event.
 ---
 
 Earlier this month, the Filecoin community convened for the first-ever [FIL Toronto](https://fil-toronto.com/). From July 4–6, attendees gathered to discuss new features, partner tools, and other developments in the Filecoin ecosystem.

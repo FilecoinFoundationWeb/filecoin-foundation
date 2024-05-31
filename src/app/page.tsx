@@ -17,18 +17,19 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
+const ecosystemProjects = getEcosystemProjectsData()
+
 const {
   featured_ecosystem_projects: featuredEcosystemProjectsSlugs,
   header,
   seo,
 } = attributes
 
-const ecosystemProjects = getEcosystemProjectsData()
 const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
 )
 
-export const metadata = createMetadata(seo, PATHS.HOME.path)
+export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
 
 export default function Home() {
   return (
