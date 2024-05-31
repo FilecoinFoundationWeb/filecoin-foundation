@@ -10,8 +10,8 @@ import governance2 from '@/assets/graphics/Filorg_Governance2.png'
 import governance3 from '@/assets/graphics/Filorg_Governance3.png'
 import grants from '@/assets/graphics/Filorg_Grants.png'
 import home from '@/assets/graphics/Filorg_Home.png'
-import imageComingSoon from '@/assets/graphics/Filorg_ImageComingSoon.png'
-import logoComingSoon from '@/assets/graphics/Filorg_LogoComingSoon.png'
+import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
+import logoFallback from '@/assets/graphics/Filorg_LogoFallback.png'
 import rAndD from '@/assets/graphics/Filorg_RandD.png'
 
 export const graphicsData: Record<string, StaticImageProps> = {
@@ -59,12 +59,12 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: rAndD,
     alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
   },
-  imageComingSoon: {
-    data: imageComingSoon,
+  imageFallback: {
+    data: imageFallback,
     alt: 'Image coming soon',
   },
-  logoComingSoon: {
-    data: logoComingSoon,
+  logoFallback: {
+    data: logoFallback,
     alt: 'Logo coming soon',
   },
 }
