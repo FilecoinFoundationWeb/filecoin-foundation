@@ -16,7 +16,7 @@ export function FocusAreaCard({
     <li className="rounded-lg border border-brand-300 p-1 sm:flex lg:block">
       <StaticImage
         {...image}
-        className="aspect-video w-auto rounded object-cover sm:w-60 md:w-80 lg:w-auto"
+        className="aspect-video w-full rounded object-cover sm:w-60 md:w-80 lg:w-full"
         sizes="100vw, (min-width: 640px) 33vw"
       />
 
