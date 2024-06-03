@@ -246,31 +246,31 @@ export default function Events({ searchParams }: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardGrid cols="mdTwo">
-          <li className="row-span-2 h-96 md:h-auto">
+        <CardGrid cols="mdTwo" as="div">
+          <div className="row-span-2 h-96 md:h-auto">
             <NextStaticImage
               {...graphicsData.events2}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
             />
-          </li>
+          </div>
           {getInvolvedData.map(({ title, description, cta }) => (
-            <li key={title} className="h-48 md:h-56">
+            <div key={title} className="h-48 md:h-56">
               <Card
                 title={title}
                 description={description}
                 cta={cta}
                 as="div"
               />
-            </li>
+            </div>
           ))}
-          <li className="h-48 md:h-56">
+          <div className="h-48 md:h-56">
             <NextStaticImage
               {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
             />
-          </li>
+          </div>
         </CardGrid>
       </PageSection>
     </PageLayout>

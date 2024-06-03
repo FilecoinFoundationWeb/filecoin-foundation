@@ -22,20 +22,17 @@ type TitleProps = {
   children: string
 }
 
-type SharedProps = {
-  title: TitleProps['children']
-  description?: DescriptionTextType
-  cta: CTAProps | [CTAProps, CTAProps?]
-  metaData?: MetaDataType
-  isFeatured?: boolean
-}
-
-type DynamicImageProps = Partial<ImageProps> & {
+type DynamicImageProps = ImageProps & {
   fallback: StaticImageProps
   objectFit?: 'contain' | 'cover'
 }
 
-type PageHeaderProps = SharedProps & {
+type PageHeaderProps = {
+  title: TitleProps['children']
+  description?: DescriptionTextType
+  cta: CTAProps | [CTAProps, CTAProps]
+  metaData?: MetaDataType
+  isFeatured?: boolean
   image:
     | ({ type: 'static' } & StaticImageProps)
     | ({ type: 'dynamic' } & DynamicImageProps)
@@ -74,7 +71,7 @@ function DynamicImage({
         fill
         priority
         src={url}
-        alt={alt || 'Missing alt description'}
+        alt={alt}
         quality={100}
         sizes="100vw, (min-width: 1024px) 50vw"
         className={clsx(
