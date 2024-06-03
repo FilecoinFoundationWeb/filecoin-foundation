@@ -3,11 +3,15 @@ import matter from 'gray-matter'
 import { PATHS, PathConfig } from '../../src/app/_constants/paths'
 import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
-export function testPageMetadata(
-  path: PathConfig,
-  includesFeaturedEntry: boolean = false,
-  checkHeader: boolean = true,
-) {
+export function testPageMetadata({
+  path,
+  includesFeaturedEntry = false,
+  checkHeader = true,
+}: {
+  path: PathConfig
+  includesFeaturedEntry?: boolean
+  checkHeader?: boolean
+}) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${path.mainContentPath}.md`
 
