@@ -16,9 +16,10 @@ import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
-import { generateEcosystemProjectPostStructuredData } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
+
+import { generateEcosystemProjectPostStructuredData } from './structuredData'
 
 type EcosystemProjectProps = {
   params: {

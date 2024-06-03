@@ -5,9 +5,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData } from '@/utils/getBlogPostData'
-import { generateBlogPostStructuredData } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
+
+import { generateBlogPostStructuredData } from './structuredData'
 
 type BlogPostProps = {
   params: {

@@ -27,11 +27,12 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { generateBlogPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
+
+import { generateBlogPageStructuredData } from './structuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

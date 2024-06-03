@@ -2,11 +2,12 @@ import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { generatePrivacyPolicyStructuredData } from '@/utils/structuredData'
 
 import { attributes, react as Content } from '@/content/pages/privacy-policy.md'
 
 import { PATHS } from '@/constants/paths'
+
+import { generatePrivacyPolicyStructuredData } from './structuredData'
 
 const { header, seo } = attributes
 

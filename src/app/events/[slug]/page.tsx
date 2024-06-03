@@ -5,9 +5,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
-import { generateEventPostStructuredData } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
+
+import { generateEventPostStructuredData } from './structuredData'
 
 type EventProps = {
   params: {

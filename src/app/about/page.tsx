@@ -9,7 +9,6 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { generateAboutPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/about.md'
 
@@ -20,6 +19,7 @@ import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'
 import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
+import { generateAboutPageStructuredData } from './structuredData'
 
 const { header, seo } = attributes
 

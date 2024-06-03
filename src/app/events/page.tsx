@@ -27,13 +27,13 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEventsData } from '@/utils/getEventData'
-import { generateEventsPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
 
 import { getInvolvedData } from './data/getInvolvedData'
+import { generateEventsPageStructuredData } from './structuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

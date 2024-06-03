@@ -11,7 +11,6 @@ import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { generateGrantsPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
@@ -21,6 +20,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
+import { generateGrantsPageStructuredData } from './structuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
@@ -39,7 +39,10 @@ export default function Grants() {
       <PageHeader
         title={header.title}
         description={header.description}
-        cta={{ href: FILECOIN_FOUNDATION_URLS.grants.email, text: 'Apply Now' }}
+        cta={{
+          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
+          text: 'Apply Now',
+        }}
       />
 
       <PageSection
@@ -132,14 +135,17 @@ export default function Grants() {
             </TextLink>{' '}
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email}>
-              {FILECOIN_FOUNDATION_URLS.grants.email.replace('mailto:', '')}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
+              {FILECOIN_FOUNDATION_URLS.grants.email.href.replace(
+                'mailto:',
+                '',
+              )}
             </TextLink>{' '}
             or join our monthly office hours!
           </>
         }
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.email,
+          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
           text: 'Apply Now',
         }}
       />

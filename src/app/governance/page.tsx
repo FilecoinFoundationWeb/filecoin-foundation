@@ -9,7 +9,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { generateGovernancePageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
@@ -17,6 +16,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { governanceDocsData } from './data/governanceDocsData'
+import { generateGovernancePageStructuredData } from './structuredData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })

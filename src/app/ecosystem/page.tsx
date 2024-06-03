@@ -29,12 +29,13 @@ import {
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { generateEcosystemPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { generateEcosystemPageStructuredData } from './structuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

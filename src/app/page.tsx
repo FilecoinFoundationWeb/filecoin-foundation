@@ -9,9 +9,9 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { baseOrganizationSchema } from '@/utils/baseStructuredData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/home.md'
 
