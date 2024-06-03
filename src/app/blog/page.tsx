@@ -32,7 +32,7 @@ import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
 
-import { generateBlogPageStructuredData } from './structuredData'
+import { generateBlogPageStructuredData } from './utils/structuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

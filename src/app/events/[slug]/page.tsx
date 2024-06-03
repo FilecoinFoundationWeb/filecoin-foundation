@@ -8,7 +8,7 @@ import { getEventData } from '@/utils/getEventData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateEventPostStructuredData } from './structuredData'
+import { generateEventPostStructuredData } from './utils/structuredData'
 
 type EventProps = {
   params: {

@@ -20,7 +20,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
-import { generateGrantsPageStructuredData } from './structuredData'
+import { generateGrantsPageStructuredData } from './utils/structuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes

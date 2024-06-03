@@ -16,7 +16,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { governanceDocsData } from './data/governanceDocsData'
-import { generateGovernancePageStructuredData } from './structuredData'
+import { generateGovernancePageStructuredData } from './utils/structuredData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })

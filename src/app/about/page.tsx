@@ -19,7 +19,7 @@ import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'
 import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
-import { generateAboutPageStructuredData } from './structuredData'
+import { generateAboutPageStructuredData } from './utils/structuredData'
 
 const { header, seo } = attributes
 

@@ -8,7 +8,7 @@ import { getBlogPostData } from '@/utils/getBlogPostData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateBlogPostStructuredData } from './structuredData'
+import { generateBlogPostStructuredData } from './utils/structuredData'
 
 type BlogPostProps = {
   params: {

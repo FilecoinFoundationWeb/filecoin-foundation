@@ -7,7 +7,7 @@ import { attributes, react as Content } from '@/content/pages/privacy-policy.md'
 
 import { PATHS } from '@/constants/paths'
 
-import { generatePrivacyPolicyStructuredData } from './structuredData'
+import { generatePrivacyPolicyStructuredData } from './utils/structuredData'
 
 const { header, seo } = attributes
 

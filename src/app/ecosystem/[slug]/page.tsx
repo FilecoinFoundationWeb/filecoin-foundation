@@ -19,7 +19,7 @@ import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateEcosystemProjectPostStructuredData } from './structuredData'
+import { generateEcosystemProjectPostStructuredData } from './utils/structuredData'
 
 type EcosystemProjectProps = {
   params: {

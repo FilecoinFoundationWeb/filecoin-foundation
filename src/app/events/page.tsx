@@ -33,7 +33,7 @@ import { attributes } from '@/content/pages/events.md'
 import { PATHS } from '@/constants/paths'
 
 import { getInvolvedData } from './data/getInvolvedData'
-import { generateEventsPageStructuredData } from './structuredData'
+import { generateEventsPageStructuredData } from './utils/structuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

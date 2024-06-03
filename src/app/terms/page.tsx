@@ -7,7 +7,7 @@ import { attributes, react as Content } from '@/content/pages/terms.md'
 
 import { PATHS } from '@/constants/paths'
 
-import { generateTermsStructuredData } from './structuredData'
+import { generateTermsStructuredData } from './utils/structuredData'
 
 const { header, seo } = attributes
 
