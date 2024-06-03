@@ -1,4 +1,4 @@
-local_backend: true
+# local_backend: true
 backend:
   name: "git-gateway"
   branch: "main"
