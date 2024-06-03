@@ -125,6 +125,7 @@ export default function Blog({ searchParams }: Props) {
         image={{
           type: 'dynamic',
           ...featuredPost.image,
+          src: featuredPost.image.url,
           fallback: graphicsData.imageFallback,
         }}
         cta={{

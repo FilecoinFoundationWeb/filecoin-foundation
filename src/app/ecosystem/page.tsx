@@ -128,6 +128,7 @@ export default function Ecosystem({ searchParams }: Props) {
         image={{
           type: 'dynamic',
           ...featuredProject.image,
+          src: featuredProject.image.url,
           objectFit: 'contain',
           fallback: graphicsData.ecosystem,
         }}

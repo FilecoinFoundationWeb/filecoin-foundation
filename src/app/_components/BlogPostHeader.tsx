@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Badge } from '@/components/Badge'
 import { Heading } from '@/components/Heading'
-import { NextStaticImage } from '@/components/NextStaticImage'
+import { StaticImage } from '@/components/StaticImage'
 
 import { type BlogPostData } from '@/types/blogPostTypes'
 
@@ -45,7 +45,7 @@ export function BlogPostHeader({
           />
         </div>
       ) : (
-        <NextStaticImage
+        <StaticImage
           {...graphicsData.imageFallback}
           priority
           quality={100}

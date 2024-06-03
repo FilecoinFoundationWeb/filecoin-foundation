@@ -8,7 +8,7 @@ import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { NextStaticImage } from '@/components/NextStaticImage'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -109,7 +109,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
               />
             </div>
           ) : (
-            <NextStaticImage {...graphicsData.logoFallback} />
+            <StaticImage {...graphicsData.logoFallback} />
           )}
         </header>
 

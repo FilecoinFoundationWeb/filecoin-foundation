@@ -12,7 +12,6 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NextStaticImage } from '@/components/NextStaticImage'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -20,6 +19,7 @@ import { PageSection } from '@/components/PageSection'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
@@ -156,6 +156,7 @@ export default function Events({ searchParams }: Props) {
         image={{
           type: 'dynamic',
           ...featuredEvent.image,
+          src: featuredEvent.image.url,
           fallback: graphicsData.events1,
         }}
         cta={{
@@ -248,7 +249,7 @@ export default function Events({ searchParams }: Props) {
       >
         <CardGrid cols="mdTwo" as="div">
           <div className="row-span-2 h-96 md:h-auto">
-            <NextStaticImage
+            <StaticImage
               {...graphicsData.events2}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"
@@ -265,7 +266,7 @@ export default function Events({ searchParams }: Props) {
             </div>
           ))}
           <div className="h-48 md:h-56">
-            <NextStaticImage
+            <StaticImage
               {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
               sizes="100vw, (min-width: 768px) 50vw"

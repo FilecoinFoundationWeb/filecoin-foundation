@@ -1,7 +1,5 @@
 import { Heading } from '@/components/Heading'
-import { NextStaticImage } from '@/components/NextStaticImage'
-
-import { type StaticImageProps } from '@/types/sharedProps/imageType'
+import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 export type FocusAreaCardProps = {
   title: string
@@ -16,7 +14,7 @@ export function FocusAreaCard({
 }: FocusAreaCardProps) {
   return (
     <li className="rounded-lg border border-brand-300 p-1 sm:flex lg:block">
-      <NextStaticImage
+      <StaticImage
         {...image}
         className="aspect-video w-auto rounded object-cover sm:w-60 md:w-80 lg:w-auto"
         sizes="100vw, (min-width: 640px) 33vw"
