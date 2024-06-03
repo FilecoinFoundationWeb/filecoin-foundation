@@ -6,6 +6,7 @@ import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 export function testPageMetadata(
   path: PathConfig,
   includesFeaturedEntry: boolean = false,
+  checkHeader: boolean = true,
 ) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${path.mainContentPath}.md`
@@ -36,8 +37,10 @@ export function testPageMetadata(
       // Conditional logic for pages with a featured entry
       if (includesFeaturedEntry && featuredSlug) {
         handleFeaturedEntry(path, featuredSlug)
-      } else if (header) {
+      } else if (header && checkHeader) {
         verifyHeaderContent(header)
+      } else if (header && !checkHeader) {
+        verifyContent(header)
       }
 
       // Canonical link check, moved outside the conditionals to avoid repetition
@@ -94,4 +97,22 @@ function verifyHeaderContent(content: {
         }
       }
     })
+}
+
+// Function to verify the content's title and description
+function verifyContent(content: {
+  title: string
+  description: string | string[]
+}) {
+  cy.get('h1').should('have.text', content.title)
+
+  if (content.description) {
+    if (Array.isArray(content.description)) {
+      content.description.forEach((text: string) => {
+        cy.get('p').should('contain.text', text)
+      })
+    } else {
+      cy.get('p').should('contain.text', content.description)
+    }
+  }
 }
