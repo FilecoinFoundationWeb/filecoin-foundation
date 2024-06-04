@@ -20,7 +20,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
-import { generateGrantsPageStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
@@ -33,9 +33,7 @@ export const metadata = createMetadata({ seo, path: PATHS.GRANTS.path })
 export default function Grants() {
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateGrantsPageStructuredData(seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
