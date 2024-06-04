@@ -6,16 +6,10 @@ import { generateWebPageStructuredData } from '@/utils/generateWebPageStructured
 
 import { PATHS } from '@/constants/paths'
 
-export const generateEventsPageStructuredData = (
-  seo: SeoMetadata,
-): WithContext<WebPage> => {
-  const eventsPageBaseData = generateWebPageStructuredData({
+export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
+  return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
     path: PATHS.EVENTS.path,
   })
-
-  return {
-    ...eventsPageBaseData,
-  }
 }

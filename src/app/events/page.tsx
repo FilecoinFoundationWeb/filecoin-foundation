@@ -33,7 +33,7 @@ import { attributes } from '@/content/pages/events.md'
 import { PATHS } from '@/constants/paths'
 
 import { getInvolvedData } from './data/getInvolvedData'
-import { generateEventsPageStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -118,9 +118,7 @@ export default function Events({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateEventsPageStructuredData(seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         isFeatured
         title={featuredEvent.title}
