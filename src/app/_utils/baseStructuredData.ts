@@ -1,6 +1,6 @@
 import type { Organization, WebPage, WithContext } from 'schema-dts'
 
-import siteMetadata from '@/content/shared/site-metadata.yml'
+import { attributes } from '@/content/pages/home.md'
 
 import {
   BASE_URL,
@@ -10,13 +10,13 @@ import {
 
 export const SCHEMA_CONTEXT_URL = 'https://schema.org'
 
-export const { seo } = siteMetadata
-
 type GenerateWebPageStructuredDataProps = {
   title: string
   description: string
   path: string
 }
+
+const { seo } = attributes
 
 export const baseOrganizationSchema: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
