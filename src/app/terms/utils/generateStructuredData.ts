@@ -2,7 +2,7 @@ import { WebPage, WithContext } from 'schema-dts'
 
 import { SeoMetadata } from '@/types/metadataTypes'
 
-import { generateWebPageStructuredData } from '@/utils/baseStructuredData'
+import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import { PATHS } from '@/constants/paths'
 
