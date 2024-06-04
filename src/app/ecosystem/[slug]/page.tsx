@@ -67,7 +67,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData()} />
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
 
       {/* #TODO: Top spacing to be handled by layout parent */}
       <article className="mt-6">
