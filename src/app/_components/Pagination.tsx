@@ -68,7 +68,7 @@ export function Pagination({
     const pageIsReset = initialPage === DEFAULT_PAGE_NUMBER
 
     if (pageIsReset) {
-      setPage(initialPage)
+      setPage(DEFAULT_PAGE_NUMBER)
     }
   }, [initialPage])
 
