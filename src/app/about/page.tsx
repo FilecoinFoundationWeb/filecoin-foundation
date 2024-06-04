@@ -19,7 +19,7 @@ import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'
 import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
-import { generateAboutPageStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
@@ -28,9 +28,7 @@ export const metadata = createMetadata({ seo, path: PATHS.ABOUT.path })
 export default function About() {
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateAboutPageStructuredData(seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
