@@ -25,6 +25,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { EventData } from '@/types/eventTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
@@ -252,7 +253,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events2}
               className="h-full rounded-lg object-cover"
-              sizes="100vw, (min-width: 768px) 50vw"
+              sizes={buildImageSizeProp({ md: '50vw', then: '100vw' })}
             />
           </div>
           {getInvolvedData.map(({ title, description, cta }) => (
@@ -269,7 +270,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
-              sizes="100vw, (min-width: 768px) 50vw"
+              sizes={buildImageSizeProp({ md: '50vw', then: '100vw' })}
             />
           </div>
         </CardGrid>

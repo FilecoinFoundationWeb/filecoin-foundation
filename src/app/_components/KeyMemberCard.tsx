@@ -21,7 +21,7 @@ export function KeyMemberCard({
       <Image
         src={image}
         alt={`Photo of ${name}`}
-        sizes="10rem"
+        sizes="128px"
         className="aspect-[3/4] w-32 rounded object-cover"
       />
 

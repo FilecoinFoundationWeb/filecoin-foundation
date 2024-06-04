@@ -1,6 +1,8 @@
 import { Heading } from '@/components/Heading'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 export type FocusAreaCardProps = {
   title: string
   description: string
@@ -17,7 +19,12 @@ export function FocusAreaCard({
       <StaticImage
         {...image}
         className="aspect-video w-full rounded object-cover sm:w-60 md:w-80 lg:w-full"
-        sizes="100vw, (min-width: 640px) 33vw"
+        sizes={buildImageSizeProp({
+          sm: '100vw',
+          md: '250px',
+          lg: '320px',
+          then: '300px',
+        })}
       />
 
       <div className="px-4 py-3 text-brand-100 lg:px-3 lg:py-4">

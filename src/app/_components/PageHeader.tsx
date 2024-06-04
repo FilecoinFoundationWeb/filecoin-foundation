@@ -13,6 +13,8 @@ import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 type TitleProps = {
   children: string
 }
@@ -100,9 +102,12 @@ export function PageHeader({
               fill
               priority
               quality={100}
-              sizes="100vw, (min-width: 1024px) 50vw"
               className={sharedImageStyle}
               fallback={{ ...image.fallback, className: sharedImageStyle }}
+              sizes={buildImageSizeProp({
+                lg: '100vw',
+                then: '50vw',
+              })}
             />
           </div>
         )}

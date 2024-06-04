@@ -14,6 +14,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
@@ -103,13 +104,20 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             <div className="relative h-48 w-full">
               <Image
                 fill
+                priority
                 src={image.url}
                 alt={image.alt}
                 className="object-contain object-left-bottom"
+                sizes={buildImageSizeProp({
+                  sm: '100vw',
+                  lg: '50vw',
+                  xl: '700px',
+                  then: '600px',
+                })}
               />
             </div>
           ) : (
-            <StaticImage {...graphicsData.logoFallback} />
+            <StaticImage priority {...graphicsData.logoFallback} />
           )}
         </header>
 

@@ -10,6 +10,8 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 type CardProps = {
   title: string | React.ReactNode
   tag?: string
@@ -36,10 +38,19 @@ const imageStyles = {
 }
 
 const imageSizes = {
-  blogPost:
-    '(max-width: 639px) 320px, (max-width: 767px) 584px, (max-width: 1023px) 712px, (max-width: 1279px) 472px, 500px',
-  ecosystemProject:
-    '(max-width: 639px) 320px, (max-width: 767px) 276px, (max-width: 1023px) 340px, 304px',
+  blogPost: buildImageSizeProp({
+    sm: '320px',
+    md: '584px',
+    lg: '712px',
+    xl: '472px',
+    then: '500px',
+  }),
+  ecosystemProject: buildImageSizeProp({
+    sm: '320px',
+    md: '276px',
+    lg: '340px',
+    then: '304px',
+  }),
 }
 
 function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {

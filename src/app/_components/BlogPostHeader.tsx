@@ -6,6 +6,7 @@ import { StaticImage } from '@/components/StaticImage'
 
 import { type BlogPostData } from '@/types/blogPostTypes'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { formatDate } from '@/utils/formatDate'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -39,9 +40,11 @@ export function BlogPostHeader({
         <div className="relative aspect-video">
           <Image
             fill
+            priority
             src={image.url}
             alt={image.alt}
-            className="block rounded-lg object-cover"
+            className="rounded-lg object-cover"
+            sizes={buildImageSizeProp({ md: '100vw', then: '700px' })}
           />
         </div>
       ) : (
