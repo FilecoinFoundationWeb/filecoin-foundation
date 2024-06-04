@@ -32,7 +32,7 @@ import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
 
-import { generateBlogPageStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -87,7 +87,7 @@ export default function Blog({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript
-        structuredData={generateBlogPageStructuredData(posts, seo)}
+        structuredData={generateStructuredData(posts, seo)}
       />
       <PageHeader
         isFeatured

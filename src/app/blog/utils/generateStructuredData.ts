@@ -3,27 +3,25 @@ import type { WebPage, WithContext } from 'schema-dts'
 import { BlogPostData } from '@/types/blogPostTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
 
-import {
-  baseOrganizationSchema,
-  generateWebPageStructuredData,
-} from '@/utils/baseStructuredData'
+import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 
-export const generateBlogPageStructuredData = (
+export function generateStructuredData(
   posts: BlogPostData[],
   seo: SeoMetadata,
-): WithContext<WebPage> => {
-  const blogPageBaseData = generateWebPageStructuredData({
+): WithContext<WebPage> {
+  const baseData = generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
     path: PATHS.BLOG.path,
   })
 
   return {
-    ...blogPageBaseData,
-    publisher: baseOrganizationSchema,
+    ...baseData,
+    publisher: BASE_ORGANIZATION_SCHEMA,
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: posts.slice(0, 5).map((post, index) => ({
