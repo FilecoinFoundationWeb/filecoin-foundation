@@ -2,14 +2,11 @@ import { Event, WithContext } from 'schema-dts'
 
 import { EventData } from '@/types/eventTypes'
 
-import { SCHEMA_CONTEXT_URL } from '@/utils/baseStructuredData'
-
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { SCHEMA_CONTEXT_URL } from '@/constants/structuredDataConstants'
 
-export const generateEventPostStructuredData = (
-  data: EventData,
-): WithContext<Event> => {
+export function generateStructuredData(data: EventData): WithContext<Event> {
   const {
     title,
     slug,

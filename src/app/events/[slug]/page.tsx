@@ -8,7 +8,7 @@ import { getEventData } from '@/utils/getEventData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateEventPostStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
   params: {
@@ -36,9 +36,7 @@ export default function EventEntry({ params }: EventProps) {
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateEventPostStructuredData(data)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <header>
         {image && (
           <Image
