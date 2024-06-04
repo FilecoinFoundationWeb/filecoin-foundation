@@ -1,11 +1,14 @@
 import type { Organization, WithContext } from 'schema-dts'
 
+import { attributes } from '@/content/pages/about.md'
+
 import {
   BASE_URL,
   FILECOIN_FOUNDATION_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
+const { header } = attributes
 const { social, email, grants } = FILECOIN_FOUNDATION_URLS
 
 export const SCHEMA_CONTEXT_URL = 'https://schema.org'
@@ -14,6 +17,7 @@ export const BASE_ORGANIZATION_SCHEMA: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
   '@type': 'Organization',
   name: ORGANIZATION_NAME,
+  description: header.description,
   url: BASE_URL,
   sameAs: [
     social.bluesky.href,
