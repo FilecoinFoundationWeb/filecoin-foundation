@@ -8,7 +8,7 @@ import { getBlogPostData } from '@/utils/getBlogPostData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateBlogPostStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
   params: {
@@ -35,9 +35,7 @@ export default function BlogPost({ params }: BlogPostProps) {
 
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateBlogPostStructuredData(data)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="m-auto max-w-2xl space-y-16">
         <BlogPostHeader
           title={title}

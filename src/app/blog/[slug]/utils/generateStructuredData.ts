@@ -2,17 +2,16 @@ import type { BlogPosting, WithContext } from 'schema-dts'
 
 import { BlogPostData } from '@/types/blogPostTypes'
 
-import {
-  SCHEMA_CONTEXT_URL,
-  baseOrganizationSchema,
-} from '@/utils/baseStructuredData'
-
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+import {
+  BASE_ORGANIZATION_SCHEMA,
+  SCHEMA_CONTEXT_URL,
+} from '@/constants/structuredDataConstants'
 
-export const generateBlogPostStructuredData = (
+export function generateStructuredData(
   data: BlogPostData,
-): WithContext<BlogPosting> => {
+): WithContext<BlogPosting> {
   const { title, description, image, publishedOn, updatedOn, slug } = data
 
   return {
@@ -31,8 +30,8 @@ export const generateBlogPostStructuredData = (
       '@type': 'WebPage',
       '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,
     },
-    ...(typeof baseOrganizationSchema === 'object'
-      ? { publisher: baseOrganizationSchema }
+    ...(typeof BASE_ORGANIZATION_SCHEMA === 'object'
+      ? { publisher: BASE_ORGANIZATION_SCHEMA }
       : {}),
   }
 }
