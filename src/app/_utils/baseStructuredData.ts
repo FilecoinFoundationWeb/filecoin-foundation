@@ -10,7 +10,7 @@ import {
 
 export const { seo } = siteMetadata
 
-interface GenerateWebPageStructuredDataProps {
+type GenerateWebPageStructuredDataProps = {
   title: string
   description: string
   path: string
