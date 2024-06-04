@@ -7,7 +7,7 @@ import { attributes, react as Content } from '@/content/pages/terms.md'
 
 import { PATHS } from '@/constants/paths'
 
-import { generateTermsStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
@@ -18,7 +18,7 @@ export default function Terms() {
 
   return (
     <article>
-      <StructuredDataScript structuredData={generateTermsStructuredData(seo)} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader.Title>{title}</PageHeader.Title>
       <section className="prose mt-6">
         <Content />
