@@ -16,7 +16,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { governanceDocsData } from './data/governanceDocsData'
-import { generateGovernancePageStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })
@@ -24,9 +24,7 @@ export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })
 export default function Governance() {
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateGovernancePageStructuredData(seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
