@@ -9,7 +9,6 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { baseOrganizationSchema } from '@/utils/baseStructuredData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
@@ -17,6 +16,7 @@ import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 const ecosystemProjects = getEcosystemProjectsData()
@@ -36,7 +36,7 @@ export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
 export default function Home() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={baseOrganizationSchema} />
+      <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
 
       <PageHeader
         title={header.title}
