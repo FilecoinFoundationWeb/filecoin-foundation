@@ -7,7 +7,7 @@ import { attributes, react as Content } from '@/content/pages/privacy-policy.md'
 
 import { PATHS } from '@/constants/paths'
 
-import { generatePrivacyPolicyStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
@@ -18,9 +18,7 @@ export default function PrivacyPolicy() {
 
   return (
     <article>
-      <StructuredDataScript
-        structuredData={generatePrivacyPolicyStructuredData(seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader.Title>{title}</PageHeader.Title>
       <section className="prose mt-6">
         <Content />
