@@ -33,7 +33,7 @@ export const baseOrganizationSchema: WithContext<Organization> = {
   description: seo.description,
   logo: {
     '@type': 'ImageObject',
-    url: '../../../public/assets/images/logo.svg',
+    url: '/assets/images/logo.svg',
     width: '147',
     height: '41',
   },
