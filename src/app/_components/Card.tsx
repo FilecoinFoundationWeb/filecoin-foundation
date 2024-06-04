@@ -1,14 +1,12 @@
-import Image from 'next/image'
-
 import clsx from 'clsx'
 
 import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
+import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
-import { type ImageProps } from '@/types/sharedProps/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -19,7 +17,7 @@ type CardProps = {
   description?: string
   cta?: CTAProps
   entryType?: 'blogPost' | 'ecosystemProject'
-  image?: ImageProps
+  image?: DynamicImageProps & { padding?: boolean }
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -30,11 +28,6 @@ const borderStyles = {
   'brand-400': 'border-brand-400',
   'brand-500': 'border-brand-500',
   'brand-600': 'border-brand-600',
-}
-
-const imageStyles = {
-  blogPost: 'object-cover',
-  ecosystemProject: 'object-contain',
 }
 
 const imageSizes = {
@@ -68,6 +61,8 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   )
 }
 
+const imageStyle = 'rounded-lg px-1 pt-1'
+
 export function Card({
   title,
   tag,
@@ -80,6 +75,8 @@ export function Card({
   textIsClamped = false,
   as: Tag = 'li',
 }: CardProps) {
+  const dynamicImageWithPadding = image && image.src && image.padding
+
   return (
     <Tag
       className={clsx(
@@ -87,20 +84,23 @@ export function Card({
         borderStyles[borderColor],
       )}
     >
-      {image?.url && (
-        <div className="relative block aspect-video">
-          <Image
+      {image && (
+        <div
+          className={clsx(
+            'relative aspect-video',
+            dynamicImageWithPadding && 'mx-6 mt-6',
+          )}
+        >
+          <DynamicImage
+            {...image}
             fill
-            src={image.url}
-            alt={image.alt}
             sizes={imageSizes[entryType]}
-            className={clsx(
-              'block rounded-lg px-1 pt-1',
-              imageStyles[entryType],
-            )}
+            className={imageStyle}
+            fallback={{ ...image.fallback, className: imageStyle }}
           />
         </div>
       )}
+
       <div className="flex flex-col p-4">
         {tag && (
           <span className="mb-4">

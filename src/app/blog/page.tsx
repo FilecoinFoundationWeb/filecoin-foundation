@@ -143,7 +143,7 @@ export default function Blog({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((post) => {
+                    {paginatedResults.map((post, i) => {
                       const {
                         slug,
                         category,
@@ -153,19 +153,26 @@ export default function Blog({ searchParams }: Props) {
                         publishedOn,
                       } = post
 
+                      const isFirstTwo = i < 2
+
                       return (
                         <Card
                           key={slug}
                           tag={category}
                           title={title}
                           description={description}
-                          image={image}
                           textIsClamped={true}
                           metaData={getMetaData(publishedOn)}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            fallback: graphicsData.imageFallback,
+                            priority: isFirstTwo,
                           }}
                         />
                       )

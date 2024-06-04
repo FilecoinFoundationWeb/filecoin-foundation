@@ -150,22 +150,31 @@ export default function Ecosystem({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((project) => {
+                    {paginatedResults.map((project, i) => {
                       const { slug, title, description, image, category } =
                         project
+
+                      const isFirstTwo = i < 2
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          image={image}
                           tag={categoryData[category]}
                           entryType="ecosystemProject"
                           cta={{
                             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            padding: true,
+                            priority: isFirstTwo,
+                            objectFit: 'contain',
+                            fallback: graphicsData.logoFallback,
                           }}
                         />
                       )

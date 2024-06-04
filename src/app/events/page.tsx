@@ -175,7 +175,7 @@ export default function Events({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((event) => {
+                    {paginatedResults.map((event, i) => {
                       const {
                         slug,
                         title,
@@ -186,6 +186,7 @@ export default function Events({ searchParams }: Props) {
                       } = event
 
                       const metaData = prepareMetaData(startDate, endDate)
+                      const isFirstTwo = i < 2
 
                       return (
                         <Card
@@ -193,13 +194,19 @@ export default function Events({ searchParams }: Props) {
                           title={title}
                           tag={involvement}
                           metaData={metaData}
-                          image={image}
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{
                             href: `${PATHS.EVENTS.path}/${slug}`,
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            priority: isFirstTwo,
+                            padding: true,
+                            fallback: graphicsData.imageFallback,
                           }}
                         />
                       )
