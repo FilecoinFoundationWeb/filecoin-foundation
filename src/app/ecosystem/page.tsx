@@ -35,7 +35,7 @@ import { attributes } from '@/content/pages/ecosystem.md'
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { generateEcosystemPageStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/structuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -91,9 +91,7 @@ export default function Ecosystem({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateEcosystemPageStructuredData(seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         isFeatured
         containImageSize

@@ -19,7 +19,7 @@ import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { generateEcosystemProjectPostStructuredData } from './utils/structuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
   params: {
@@ -67,9 +67,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={generateEcosystemProjectPostStructuredData()}
-      />
+      <StructuredDataScript structuredData={generateStructuredData()} />
 
       {/* #TODO: Top spacing to be handled by layout parent */}
       <article className="mt-6">
