@@ -7,7 +7,7 @@ export type BlogPostData = {
   createdOn: string
   updatedOn?: string
   publishedOn?: string
-  category?: string
+  category: string
   description: string
   image: ImageProps
   content?: string

@@ -16,13 +16,13 @@ export function getCollectionConfig(collectionName: string): {
     (col) => col.name === collectionName,
   )
 
-  if (!collection || !collection?.fields) {
+  if (!collection || !collection.fields) {
     throw new Error(
       `${collectionName} collection or fields not found in CMS config`,
     )
   }
 
-  return { fields: collection.fields as CMSFieldConfig[] }
+  return { fields: collection.fields }
 }
 
 export function getCMSCollection(
@@ -51,5 +51,5 @@ export function getCMSFieldOptions(
     throw new Error(`Field "${fieldName}" does not exist.`)
   }
 
-  return field.options ? field.options : []
+  return field.options || []
 }
