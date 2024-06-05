@@ -17,6 +17,7 @@ import { attributes } from '@/content/pages/grants.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
@@ -43,6 +44,7 @@ export default function Grants() {
       <PageHeader
         title={header.title}
         description={header.description}
+        image={{ type: 'static', ...graphicsData.grants }}
         cta={{ href: FILECOIN_FOUNDATION_URLS.grants.email, text: 'Apply Now' }}
       />
 
