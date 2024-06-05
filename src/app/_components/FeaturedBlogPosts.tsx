@@ -9,13 +9,13 @@ import { PATHS } from '@/constants/paths'
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
 
-const mostRecentBlogPosts = sortEntriesByDate({
+const sortedBlogPosts = sortEntriesByDate({
   entries: blogPosts,
   sortBy: 'publishedOn',
   sortOption: 'newest',
 })
 
-const featuredBlogPosts = mostRecentBlogPosts.slice(0, MAX_POSTS)
+const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
 
 export function FeaturedBlogPosts() {
   if (featuredBlogPosts.length === 0) {
