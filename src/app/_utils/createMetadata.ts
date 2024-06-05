@@ -1,6 +1,9 @@
 import { Metadata } from 'next'
 
+import { isDynamicPath } from '@/utils/pathUtils'
+
 import { PathValues, DynamicPathValues } from '@/constants/paths'
+import { SITE_TITLE_SUFFIX } from '@/constants/siteMetadata'
 
 interface CreateMetadataProps {
   seo?: Partial<Metadata>
@@ -15,7 +18,10 @@ export function createMetadata({
   description,
   path,
 }: CreateMetadataProps): Metadata {
-  const metaTitle = seo.title || title
+  const baseTitle = seo.title || title
+  const metaTitle = isDynamicPath(path)
+    ? `${baseTitle} ${SITE_TITLE_SUFFIX}`
+    : baseTitle
   const metaDescription = seo.description || description?.toString()
 
   return {
