@@ -9,13 +9,12 @@ describe('Single Event Page', function () {
       .first()
       .invoke('attr', 'href')
       .then((href) => {
-        if (typeof href === 'string' && href.startsWith(BASE_URL)) {
-          const pagePath = href.replace(BASE_URL, '')
+        if (typeof href === 'string') {
           cy.visit(href)
 
           cy.get('link[rel="canonical"]')
             .should('exist')
-            .should('have.attr', 'href', BASE_URL + pagePath)
+            .should('have.attr', 'href', BASE_URL + href)
         } else {
           cy.log('External URL or unexpected path, skipping metadata check')
         }

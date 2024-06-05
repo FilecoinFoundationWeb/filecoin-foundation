@@ -4,6 +4,6 @@ import { testPageMetadata } from '../support/test-utils'
 describe('Terms Page', function () {
   testPageMetadata({
     path: PATHS.TERMS,
-    checkHeader: false,
+    hasPageHeaderDescription: false,
   })
 })

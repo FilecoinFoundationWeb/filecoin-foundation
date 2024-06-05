@@ -12,13 +12,9 @@ describe('Single Blog Post Page', function () {
         if (typeof href === 'string') {
           cy.visit(href)
 
-          const pagePath = href.startsWith(BASE_URL)
-            ? href.replace(BASE_URL, '')
-            : href
-
           cy.get('link[rel="canonical"]')
             .should('exist')
-            .should('have.attr', 'href', BASE_URL + pagePath)
+            .should('have.attr', 'href', BASE_URL + href)
         } else {
           throw new Error('href is undefined')
         }

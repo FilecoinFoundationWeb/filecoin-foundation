@@ -4,16 +4,16 @@ import { PATHS, PathConfig } from '../../src/app/_constants/paths'
 import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 export function testPageMetadata({
-  path,
+  path: { mainContentPath, path, entriesContentPath },
+  hasPageHeaderDescription = true,
   includesFeaturedEntry = false,
-  checkHeader = true,
 }: {
   path: PathConfig
+  hasPageHeaderDescription?: boolean
   includesFeaturedEntry?: boolean
-  checkHeader?: boolean
 }) {
   it(`should use the correct metadata from the markdown file`, function () {
-    const filePath = `${path.mainContentPath}.md`
+    const filePath = `${mainContentPath}.md`
 
     // Retrieve and process the main content's metadata
     cy.readFile(filePath).then((markdownContent: string) => {
@@ -22,47 +22,55 @@ export function testPageMetadata({
         seo,
         featured_entry: featuredSlug,
       } = matter(markdownContent).data as {
-        header?: { title: string; description: string }
+        header: { title: string; description: string }
         seo: { title: string; description: string }
         featured_entry?: string
       }
 
       // Visit the current page
-      cy.visit(path.path)
+      cy.visit(path)
 
-      // Check the page title
-      cy.title().should(
-        'eq',
-        path.path === PATHS.HOME.path
-          ? 'Filecoin Foundation | Decentralized Storage Solutions'
-          : `${seo.title} | Filecoin Foundation`,
-      )
+      // Verify the page title
+      verifyPageTitle(path, seo.title)
 
       // Conditional logic for pages with a featured entry
       if (includesFeaturedEntry && featuredSlug) {
-        handleFeaturedEntry(path, featuredSlug)
-      } else if (header && checkHeader) {
-        verifyHeaderContent(header)
-      } else if (header && !checkHeader) {
-        verifyContent(header)
+        handleFeaturedEntry(entriesContentPath as string, featuredSlug)
+      } else {
+        verifyHeaderContent(header, hasPageHeaderDescription)
       }
 
-      // Canonical link check, moved outside the conditionals to avoid repetition
-      cy.get('link[rel="canonical"]').should(
-        'have.attr',
-        'href',
-        path.path === PATHS.HOME.path
-          ? `${BASE_URL}`
-          : `${BASE_URL}${path.path}`,
-      )
+      // Verify the canonical link
+      verifyCanonicalLink(path)
     })
   })
 }
 
+// Function to verify the page title
+function verifyPageTitle(path: string, seoTitle: string) {
+  const expectedTitle =
+    path === PATHS.HOME.path
+      ? 'Filecoin Foundation | Decentralized Storage Solutions'
+      : `${seoTitle} | Filecoin Foundation`
+
+  cy.title().should('eq', expectedTitle)
+}
+
+// Function to verify the canonical link
+function verifyCanonicalLink(path: string) {
+  const expectedCanonicalLink =
+    path === PATHS.HOME.path ? BASE_URL : `${BASE_URL}${path}`
+
+  cy.get('link[rel="canonical"]').should(
+    'have.attr',
+    'href',
+    expectedCanonicalLink,
+  )
+}
+
 // Function to handle verification of featured entry content
-function handleFeaturedEntry(path: PathConfig, slug: string) {
-  const featuredEntryContentPath = `${path.entriesContentPath}/${slug}`
-  const featuredEntryFilePath = `${featuredEntryContentPath}.md`
+function handleFeaturedEntry(entriesContentPath: string, slug: string) {
+  const featuredEntryFilePath = `${entriesContentPath}/${slug}.md`
 
   // Fetch and wrap the featured entry's data for later use
   cy.readFile(featuredEntryFilePath).then((content: string) => {
@@ -75,48 +83,30 @@ function handleFeaturedEntry(path: PathConfig, slug: string) {
       title: string
       description: string
     }
-    verifyHeaderContent(entry)
+    verifyHeaderContent(entry, true)
   })
 }
 
 // Function to verify the header's title and description
-function verifyHeaderContent(content: {
-  title: string
-  description: string | string[]
-}) {
+function verifyHeaderContent(
+  { title, description }: { title: string; description: string | string[] },
+  hasPageHeaderDescription: boolean,
+) {
   cy.get('header')
     .first()
     .should('exist')
     .within(() => {
-      cy.get('h1').should('have.text', content.title)
+      cy.get('h1').should('have.text', title)
 
-      if (content.description) {
-        // handle case if description is string[] or string type
-        if (Array.isArray(content.description)) {
-          content.description.forEach((text: string) => {
+      if (hasPageHeaderDescription && description) {
+        // Handle case if description is string[] or string type
+        if (Array.isArray(description)) {
+          description.forEach((text: string) => {
             cy.get('p').should('contain.text', text)
           })
         } else {
-          cy.get('p').should('contain.text', content.description)
+          cy.get('p').should('contain.text', description)
         }
       }
     })
-}
-
-// Function to verify the content's title and description
-function verifyContent(content: {
-  title: string
-  description: string | string[]
-}) {
-  cy.get('h1').should('have.text', content.title)
-
-  if (content.description) {
-    if (Array.isArray(content.description)) {
-      content.description.forEach((text: string) => {
-        cy.get('p').should('contain.text', text)
-      })
-    } else {
-      cy.get('p').should('contain.text', content.description)
-    }
-  }
 }

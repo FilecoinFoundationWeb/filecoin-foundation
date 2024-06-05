@@ -4,6 +4,6 @@ import { testPageMetadata } from '../support/test-utils'
 describe('Privacy Policy Page', function () {
   testPageMetadata({
     path: PATHS.PRIVACY_POLICY,
-    checkHeader: false,
+    hasPageHeaderDescription: false,
   })
 })
