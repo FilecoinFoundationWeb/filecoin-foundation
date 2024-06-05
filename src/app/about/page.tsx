@@ -133,6 +133,8 @@ export default function About() {
       <PageSection kicker="Insights" title="Reports">
         <CardGrid cols="mdTwo">
           {reportsData.map(({ title, description, link, image }, index) => {
+            const imageProp = image ? { image } : {}
+
             return (
               <div
                 key={title}
@@ -143,7 +145,7 @@ export default function About() {
                 <Card
                   title={title}
                   description={description}
-                  image={image}
+                  {...imageProp}
                   cta={{
                     href: link,
                     text: 'View Report',
