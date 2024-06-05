@@ -2,6 +2,7 @@ import { PATHS } from './paths'
 
 const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
+const SITE_TITLE_SUFFIX = ` | ${ORGANIZATION_NAME}`
 
 const FIL_PLUS_URLS = {
   notary: 'https://github.com/filecoin-project/notary-governance/',
@@ -114,4 +115,5 @@ export {
   FILECOIN_URLS,
   FIL_PLUS_URLS,
   ORGANIZATION_NAME,
+  SITE_TITLE_SUFFIX,
 }
