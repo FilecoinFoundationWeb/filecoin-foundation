@@ -30,7 +30,7 @@ type EcosystemProjectProps = {
   }
 }
 
-export async function generateMetadata({ params }: EcosystemProjectProps) {
+export function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 

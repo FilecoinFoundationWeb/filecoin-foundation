@@ -16,7 +16,7 @@ type EventProps = {
   }
 }
 
-export async function generateMetadata({ params }: EventProps) {
+export function generateMetadata({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 
