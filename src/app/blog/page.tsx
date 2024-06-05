@@ -21,13 +21,12 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
+import { getMetaData } from '@/utils/getMetaData'
 import {
   baseOrganizationSchema,
   generateWebPageStructuredData,
@@ -79,10 +78,6 @@ const blogPageStructuredData: WithContext<WebPage> = {
       },
     })),
   },
-}
-
-function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
-  return publishedOn ? [formatDate(publishedOn)] : []
 }
 
 export default function Blog({ searchParams }: Props) {
