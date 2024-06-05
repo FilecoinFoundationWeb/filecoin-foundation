@@ -1,25 +1,21 @@
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
-import { BlogPostData } from '@/types/blogPostTypes'
-
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 
+import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
 import { PATHS } from '@/constants/paths'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
 
-const getRecentBlogPosts = (posts: BlogPostData[], maxPosts: number) => {
-  return posts
-    .sort(
-      (a, b) =>
-        new Date(b.publishedOn!).getTime() - new Date(a.publishedOn!).getTime(),
-    )
-    .slice(0, maxPosts)
-}
+const mostRecentBlogPosts = sortEntriesByDate({
+  entries: blogPosts,
+  sortBy: 'publishedOn',
+  sortOption: 'newest',
+})
 
-const featuredBlogPosts = getRecentBlogPosts(blogPosts, MAX_POSTS)
+const featuredBlogPosts = mostRecentBlogPosts.slice(0, MAX_POSTS)
 
 export function FeaturedBlogPosts() {
   if (featuredBlogPosts.length === 0) {
