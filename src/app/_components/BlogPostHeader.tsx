@@ -44,7 +44,7 @@ export function BlogPostHeader({
             src={image.url}
             alt={image.alt}
             className="rounded-lg object-cover"
-            sizes={buildImageSizeProp({ md: '100vw', then: '700px' })}
+            sizes={buildImageSizeProp({ md: '100vw', fallbackSize: '700px' })}
           />
         </div>
       ) : (

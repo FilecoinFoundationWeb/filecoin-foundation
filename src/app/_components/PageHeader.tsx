@@ -106,7 +106,7 @@ export function PageHeader({
               fallback={{ ...image.fallback, className: sharedImageStyle }}
               sizes={buildImageSizeProp({
                 lg: '100vw',
-                then: '50vw',
+                fallbackSize: '50vw',
               })}
             />
           </div>

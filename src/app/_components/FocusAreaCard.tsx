@@ -23,7 +23,7 @@ export function FocusAreaCard({
           sm: '100vw',
           md: '250px',
           lg: '320px',
-          then: '300px',
+          fallbackSize: '300px',
         })}
       />
 

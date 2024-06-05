@@ -43,13 +43,13 @@ const imageSizes = {
     md: '584px',
     lg: '712px',
     xl: '472px',
-    then: '500px',
+    fallbackSize: '500px',
   }),
   ecosystemProject: buildImageSizeProp({
     sm: '320px',
     md: '276px',
     lg: '340px',
-    then: '304px',
+    fallbackSize: '304px',
   }),
 }
 

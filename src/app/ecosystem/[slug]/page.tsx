@@ -112,7 +112,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
                   sm: '100vw',
                   lg: '50vw',
                   xl: '700px',
-                  then: '600px',
+                  fallbackSize: '600px',
                 })}
               />
             </div>

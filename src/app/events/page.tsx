@@ -253,7 +253,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events2}
               className="h-full rounded-lg object-cover"
-              sizes={buildImageSizeProp({ md: '50vw', then: '100vw' })}
+              sizes={buildImageSizeProp({ md: '50vw', fallbackSize: '100vw' })}
             />
           </div>
           {getInvolvedData.map(({ title, description, cta }) => (
@@ -270,7 +270,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
-              sizes={buildImageSizeProp({ md: '100vw', then: '50vw' })}
+              sizes={buildImageSizeProp({ md: '100vw', fallbackSize: '50vw' })}
             />
           </div>
         </CardGrid>
