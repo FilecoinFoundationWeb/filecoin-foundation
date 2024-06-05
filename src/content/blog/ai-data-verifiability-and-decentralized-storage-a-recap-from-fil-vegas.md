@@ -24,14 +24,15 @@ This month, hundreds of Filecoin ecosystem participants from around the world ga
 
 This marquee event brought together Storage Providers with ecosystem enablers and AI leaders. The resulting collaborations seeded the ground for a new era in internet infrastructure.
 
-  <iframe
-    src="https://www.youtube.com/embed/kvPk8u--qxs?si=YrpUQ8TysikIc3Mh"
-    height="315"
-    title="FIL Vegas 2023"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+<iframe 
+  src="https://www.youtube.com/embed/kvPk8u--qxs?si=YrpUQ8TysikIc3Mh"
+  title="FIL Vegas 2023"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  allowfullscreen>
+</iframe>
 
 ## What Happened in Vegas?
 

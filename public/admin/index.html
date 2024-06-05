@@ -12,77 +12,49 @@
       const regExp =
         /^<figure>\s*<iframe src="(.*?)"[^>]*><\/iframe>\s*<figcaption>(.*)<\/figcaption>\s*<\/figure>$/ms
 
-      function renderSpan(text) {
-        return `<span>${text}</span>`
-      }
-
-      function renderLink(link, text) {
-        return `<a href="${link}" target="_blank" title=${text}>${text}</a>`
-      }
-
       function getMatches(match) {
         return {
           src: match[1],
           title: match[2],
-          captionLink1: match[3],
-          captionText1: match[4],
-          captionLink2: match[5],
-          captionText2: match[6],
+          caption: match[3],
         }
       }
 
-      function renderCaptions(data) {
-        const { captionText1, captionLink1, captionText2, captionLink2 } = data
-
-        let firstCaption = ''
-        let secondCaption = ''
-
-        if (captionText1) {
-          firstCaption = renderSpan(captionText1)
+      function renderCaption(caption) {
+        if (caption.link !== undefined) {
+          return `<figcaption><a href="${caption.link}" target="_blank" title="${caption.title}">${caption.title}</a></figcaption>`
         }
-        if (captionText1 && captionLink1) {
-          firstCaption = renderLink(captionLink1, captionText1)
-        }
-
-        if (captionText2) {
-          secondCaption = renderSpan(captionText2)
-        }
-        if (captionText2 && captionLink2) {
-          secondCaption = renderLink(captionLink2, captionText2)
-        }
-
-        return `<figcaption>${firstCaption} ${secondCaption}</figcaption>`
+        return `<figcaption>${caption.title}</figcaption>`
       }
     </script>
     <script>
       function renderVideoIframe(src, title = 'Video Player') {
-        return `<iframe
-              src="${src}"
-              title="${title}"
-              height="315"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>`
+        return `<iframe 
+  src="${src}"
+  title="${title}"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  allowfullscreen>
+</iframe>`
       }
 
       function renderVideoComponent(data) {
-        const { src, title, ...captions } = data
+        const { src, title, caption = { title: '', link: '' } } = data
 
         if (!src) {
           return ''
         }
 
-        const hasNoCaptions = Object.keys(captions).length === 0
-
-        if (hasNoCaptions) {
+        if (caption.title === '') {
           return renderVideoIframe(src, title)
+        } else {
+          return `<figure>
+  ${renderVideoIframe(src, title)}
+  ${renderCaption(caption)}
+</figure>`
         }
-
-        return `<figure>
-            ${renderVideoIframe(src, title)}
-            ${renderCaptions(captions)}
-          </figure>`
       }
 
       CMS.registerEditorComponent({
@@ -97,32 +69,29 @@
           },
           {
             name: 'title',
-            label: 'Video Description (for screen readers)',
+            label: 'Video Title',
+            hint: 'Include title for screen readers',
             widget: 'string',
             required: true,
           },
           {
-            name: 'captionText1',
-            label: 'First Caption Text',
-            widget: 'string',
-            required: false,
-          },
-          {
-            name: 'captionLink1',
-            label: 'First Caption URL',
-            widget: 'string',
-            required: false,
-          },
-          {
-            name: 'captionText2',
-            label: 'Second Caption Text',
-            widget: 'string',
-            required: false,
-          },
-          {
-            name: 'captionLink2',
-            label: 'Second Caption URL',
-            widget: 'string',
+            name: 'caption',
+            label: 'Caption',
+            widget: 'object',
+            fields: [
+              {
+                name: 'title',
+                label: 'Caption Title',
+                widget: 'string',
+                required: true,
+              },
+              {
+                name: 'link',
+                label: 'Caption Link',
+                widget: 'string',
+                required: false,
+              },
+            ],
             required: false,
           },
         ],
@@ -134,33 +103,32 @@
     </script>
     <script>
       function renderAudioIframe(src, title = 'Audio Player') {
-        return `<iframe
-              src="${src}"
-              title="${title}"
-              height="166"
-              frameborder="0"
-              scrolling="no"
-              allow="autoplay"
-            ></iframe>`
+        return `<iframe 
+  src="${src}"
+  title="${title}"
+  height="166"
+  width="100%"
+  frameborder="0"
+  scrolling="no"
+  allow="autoplay">
+</iframe>`
       }
 
       function renderAudioComponent(data) {
-        const { src, title, ...captions } = data
+        const { src, title, caption = { title: '', link: '' } } = data
 
         if (!src) {
           return ''
         }
 
-        const hasNoCaptions = Object.keys(captions).length === 0
-
-        if (hasNoCaptions) {
+        if (caption.title === '') {
           return renderAudioIframe(src, title)
+        } else {
+          return `<figure>
+  ${renderAudioIframe(src, title)}
+  ${renderCaption(caption)}
+</figure>`
         }
-
-        return `<figure>
-            ${renderAudioIframe(src, title)}
-            ${renderCaptions(captions)}
-          </figure>`
       }
 
       CMS.registerEditorComponent({
@@ -175,32 +143,29 @@
           },
           {
             name: 'title',
-            label: 'Audio Description (for screen readers)',
+            label: 'Audio Title',
+            hint: 'Include title for screen readers',
             widget: 'string',
             required: true,
           },
           {
-            name: 'captionText1',
-            label: 'First Caption Text',
-            widget: 'string',
-            required: false,
-          },
-          {
-            name: 'captionLink1',
-            label: 'First Caption URL',
-            widget: 'string',
-            required: false,
-          },
-          {
-            name: 'captionText2',
-            label: 'Second Caption Text',
-            widget: 'string',
-            required: false,
-          },
-          {
-            name: 'captionLink2',
-            label: 'Second Caption URL',
-            widget: 'string',
+            name: 'caption',
+            label: 'Caption',
+            widget: 'object',
+            fields: [
+              {
+                name: 'title',
+                label: 'Caption Title',
+                widget: 'string',
+                required: true,
+              },
+              {
+                name: 'link',
+                label: 'Caption Link',
+                widget: 'string',
+                required: false,
+              },
+            ],
             required: false,
           },
         ],
