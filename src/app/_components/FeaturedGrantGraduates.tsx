@@ -1,3 +1,5 @@
+import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
@@ -28,6 +30,7 @@ export function FeaturedGrantsGraduates({
           cta={{
             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
             text: 'Read More',
+            icon: BookOpen,
           }}
         />
       ))}
