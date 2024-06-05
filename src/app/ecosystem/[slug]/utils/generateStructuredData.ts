@@ -4,7 +4,7 @@ import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-import { PATHS } from '@/constants/paths'
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 export function generateStructuredData(
   data: EcosystemProjectData,
@@ -14,6 +14,6 @@ export function generateStructuredData(
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: PATHS.ECOSYSTEM.path,
+    path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
   })
 }

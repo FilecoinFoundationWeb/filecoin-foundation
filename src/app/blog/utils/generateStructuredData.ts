@@ -6,7 +6,7 @@ import { SeoMetadata } from '@/types/metadataTypes'
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 
 export function generateStructuredData(
@@ -31,8 +31,12 @@ export function generateStructuredData(
           '@type': 'BlogPosting',
           name: post.title,
           description: post.description,
-          image: post.image?.url,
+          image: post.image.url,
           url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
+          author: {
+            '@type': 'Organization',
+            name: ORGANIZATION_NAME,
+          },
         },
       })),
     },
