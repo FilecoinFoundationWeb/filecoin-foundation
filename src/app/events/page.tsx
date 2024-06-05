@@ -270,7 +270,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
-              sizes={buildImageSizeProp({ md: '50vw', then: '100vw' })}
+              sizes={buildImageSizeProp({ md: '100vw', then: '50vw' })}
             />
           </div>
         </CardGrid>
