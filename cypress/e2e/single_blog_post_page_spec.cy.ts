@@ -1,5 +1,5 @@
+import { verifyCanonicalLink } from '../../cypress/support/canonicalLinkUtil'
 import { PATHS } from '../../src/app/_constants/paths'
-import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 describe('Single Blog Post Page', function () {
   it('should check metadata of the first blog post', function () {
@@ -12,9 +12,7 @@ describe('Single Blog Post Page', function () {
         if (typeof href === 'string') {
           cy.visit(href)
 
-          cy.get('link[rel="canonical"]')
-            .should('exist')
-            .should('have.attr', 'href', BASE_URL + href)
+          verifyCanonicalLink(href)
         } else {
           throw new Error('href is undefined')
         }

@@ -1,5 +1,5 @@
+import { verifyCanonicalLink } from '../../cypress/support/canonicalLinkUtil'
 import { PATHS } from '../../src/app/_constants/paths'
-import { BASE_URL } from '../../src/app/_constants/siteMetadata'
 
 describe('Single Event Page', function () {
   it('should check metadata of the first event', function () {
@@ -12,9 +12,7 @@ describe('Single Event Page', function () {
         if (typeof href === 'string') {
           cy.visit(href)
 
-          cy.get('link[rel="canonical"]')
-            .should('exist')
-            .should('have.attr', 'href', BASE_URL + href)
+          verifyCanonicalLink(href)
         } else {
           cy.log('External URL or unexpected path, skipping metadata check')
         }
