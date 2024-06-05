@@ -58,11 +58,11 @@ function Calendar({ startDate }: CalendarProps) {
   const { day, month } = extractTimeFromISO(startDate)
 
   return (
-    <div className="grid min-h-40 min-w-36 grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-blue-500">
+    <div className="grid min-h-40 min-w-36 grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-brand-500">
       <span className="flex items-center justify-center rounded-t text-base font-normal uppercase">
         {month}
       </span>
-      <span className="flex flex-1 items-center justify-center rounded-b bg-blue-100 text-5xl font-bold text-blue-400">
+      <span className="flex flex-1 items-center justify-center rounded-b bg-brand-100 text-5xl font-bold text-brand-400">
         {day}
       </span>
     </div>
@@ -100,7 +100,7 @@ export function GovernanceCalendarCards() {
         return (
           <li
             key={id}
-            className="flex flex-col rounded-lg border border-blue-500 p-1 sm:flex-row"
+            className="flex flex-col rounded-lg border border-brand-300 p-1 sm:flex-row"
           >
             <Calendar startDate={start.dateTime} />
             <div className="relative">
