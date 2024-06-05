@@ -35,7 +35,6 @@ import { attributes } from '@/content/pages/ecosystem.md'
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'

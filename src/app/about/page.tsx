@@ -15,9 +15,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { attributes } from '@/content/pages/about.md'
 
 import { PATHS } from '@/constants/paths'
-
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
 import { graphicsData } from '@/data/graphicsData'
 
 

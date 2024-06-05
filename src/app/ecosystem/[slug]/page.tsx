@@ -20,9 +20,6 @@ import { formatDate } from '@/utils/formatDate'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
-
-import { BASE_URL } from '@/constants/siteMetadata'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
