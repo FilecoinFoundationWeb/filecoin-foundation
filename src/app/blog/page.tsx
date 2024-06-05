@@ -20,13 +20,16 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
+import { getMetaData } from '@/utils/getMetaData'
+import {
+  baseOrganizationSchema,
+  generateWebPageStructuredData,
+} from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/blog.md'
 
@@ -52,8 +55,29 @@ const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
 export const metadata = createMetadata({ seo, path: PATHS.BLOG.path })
 
-function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
-  return publishedOn ? [formatDate(publishedOn)] : []
+const blogPageBaseData = generateWebPageStructuredData({
+  title: seo.title,
+  description: seo.description,
+  path: PATHS.BLOG.path,
+})
+
+const blogPageStructuredData: WithContext<WebPage> = {
+  ...blogPageBaseData,
+  publisher: baseOrganizationSchema,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: posts.slice(0, 5).map((post, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'BlogPosting',
+        name: post.title,
+        description: post.description,
+        image: post.image?.url,
+        url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
+      },
+    })),
+  },
 }
 
 export default function Blog({ searchParams }: Props) {

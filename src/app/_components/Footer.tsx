@@ -60,7 +60,7 @@ export function Footer() {
           </p>
           <Button
             className="w-full sm:self-start md:w-auto"
-            variant="primary"
+            variant="ghost"
             href={FILECOIN_FOUNDATION_URLS.newsletter}
           >
             Subscribe to Newsletter
