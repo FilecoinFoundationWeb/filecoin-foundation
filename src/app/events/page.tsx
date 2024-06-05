@@ -18,11 +18,13 @@ import { PageSection } from '@/components/PageSection'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
@@ -31,6 +33,10 @@ import { getEventsData } from '@/utils/getEventData'
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -101,7 +107,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: 'newest',
+    sortByDefault: DEFAULT_SORT_OPTION,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -124,7 +130,12 @@ export default function Events({ searchParams }: Props) {
         title={featuredEvent.title}
         description={featuredEvent.description}
         metaData={getMetaDataContent(featuredEvent)}
-        image={featuredEvent.image}
+        image={{
+          type: 'dynamic',
+          ...featuredEvent.image,
+          src: featuredEvent.image.url,
+          fallback: graphicsData.events1,
+        }}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
@@ -213,15 +224,31 @@ export default function Events({ searchParams }: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardGrid cols="mdThree">
-          {getInvolvedData.map(({ title, description, cta }) => (
-            <Card
-              key={title}
-              title={title}
-              description={description}
-              cta={cta}
+        <CardGrid cols="mdTwo" as="div">
+          <div className="row-span-2 h-96 md:h-auto">
+            <StaticImage
+              {...graphicsData.events2}
+              className="h-full rounded-lg object-cover"
+              sizes={buildImageSizeProp({ md: '50vw', fallbackSize: '100vw' })}
             />
+          </div>
+          {getInvolvedData.map(({ title, description, cta }) => (
+            <div key={title} className="h-48 md:h-56">
+              <Card
+                title={title}
+                description={description}
+                cta={cta}
+                as="div"
+              />
+            </div>
           ))}
+          <div className="h-48 md:h-56">
+            <StaticImage
+              {...graphicsData.events3}
+              className="h-full rounded-lg object-cover"
+              sizes={buildImageSizeProp({ md: '100vw', fallbackSize: '50vw' })}
+            />
+          </div>
         </CardGrid>
       </PageSection>
     </PageLayout>
