@@ -11,10 +11,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 const { seo } = siteMetaData
 
 export const metadata: Metadata = {
-  title: {
-    template: `%s | ${seo.title}`,
-    default: seo.title,
-  },
+  title: seo.title,
   description: seo.description,
   metadataBase: new URL(BASE_URL),
 }
