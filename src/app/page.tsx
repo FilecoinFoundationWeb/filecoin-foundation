@@ -15,6 +15,7 @@ import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 const ecosystemProjects = getEcosystemProjectsData()
@@ -37,14 +38,11 @@ export default function Home() {
       <PageHeader
         title={header.title}
         description={header.description}
-        cta={{
-          href: PATHS.ABOUT.path,
-          text: 'Learn More About the Foundation',
-        }}
-        secondaryCta={{
-          href: FILECOIN_URLS.site,
-          text: 'Dive Into the Filecoin Protocol',
-        }}
+        image={{ type: 'static', ...graphicsData.home }}
+        cta={[
+          { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
+          { href: FILECOIN_URLS.site, text: 'Dive Into the Filecoin Protocol' },
+        ]}
       />
 
       <PageSection kicker="Explore" title="The Filecoin Ecosystem">
