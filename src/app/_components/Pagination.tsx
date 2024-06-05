@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import clsx from 'clsx'
@@ -13,6 +13,7 @@ import { useVisiblePages } from '@/hooks/useVisiblePages'
 
 import { Icon } from '@/components/Icon'
 
+import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
 import { PAGE_KEY } from '@/constants/searchParams'
 
 type PaginationProps = {
@@ -62,6 +63,14 @@ export function Pagination({
       updateSearchParams({ [PAGE_KEY]: page })
     }
   }
+
+  useEffect(() => {
+    const pageIsReset = initialPage === DEFAULT_PAGE_NUMBER
+
+    if (pageIsReset) {
+      setPage(DEFAULT_PAGE_NUMBER)
+    }
+  }, [initialPage])
 
   return (
     <nav

@@ -15,6 +15,7 @@ import { attributes } from '@/content/pages/governance.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 import { governanceDocsData } from './data/governanceDocsData'
 
@@ -34,6 +35,7 @@ export default function Governance() {
       <PageHeader
         title={header.title}
         description={header.description}
+        image={{ type: 'static', ...graphicsData.governance2 }}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.governance.docs,
           text: 'Learn More',

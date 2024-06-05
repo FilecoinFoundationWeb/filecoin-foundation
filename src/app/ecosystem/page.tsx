@@ -39,6 +39,9 @@ import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { BASE_URL, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+
+import { graphicsData } from '@/data/graphicsData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -102,7 +105,7 @@ export default function Ecosystem({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: 'newest',
+    sortByDefault: DEFAULT_SORT_OPTION,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -122,10 +125,15 @@ export default function Ecosystem({ searchParams }: Props) {
       <StructuredDataScript structuredData={ecosystemPageStructuredData} />
       <PageHeader
         isFeatured
-        containImageSize
         title={featuredProject.title}
         description={featuredProject.description}
-        image={featuredProject.image}
+        image={{
+          type: 'dynamic',
+          ...featuredProject.image,
+          src: featuredProject.image.url,
+          objectFit: 'contain',
+          fallback: graphicsData.ecosystem,
+        }}
         cta={{
           href: `${PATHS.ECOSYSTEM.path}/${featuredProjectSlug}`,
           text: 'Learn More About the Project',
