@@ -39,6 +39,8 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
+import { graphicsData } from '@/data/graphicsData'
+
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
   { ssr: false },
@@ -121,8 +123,13 @@ export default function Blog({ searchParams }: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        image={featuredPost.image}
         metaData={getMetaData(featuredPost.publishedOn)}
+        image={{
+          type: 'dynamic',
+          ...featuredPost.image,
+          src: featuredPost.image.url,
+          fallback: graphicsData.imageFallback,
+        }}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',

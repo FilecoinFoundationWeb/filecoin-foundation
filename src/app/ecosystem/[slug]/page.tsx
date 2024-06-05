@@ -8,11 +8,13 @@ import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
@@ -21,6 +23,7 @@ import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 type EcosystemProjectProps = {
   params: {
@@ -95,18 +98,28 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         structuredData={createEcosystemProjectPostStructuredData(data)}
       />
 
-      {/* #TODO: Top spacing to be handled by layout parent */}
-      <article className="mt-6">
-        {image.url && (
-          <div className="relative mb-16 h-10 w-full sm:h-16">
-            <Image
-              fill
-              src={image.url}
-              alt={image.alt}
-              className="max-w-fit object-contain"
-            />
-          </div>
-        )}
+      <article>
+        <header className="mb-16 md:w-3/4 lg:w-2/3 xl:w-3/5">
+          {image.url ? (
+            <div className="relative h-48 w-full">
+              <Image
+                fill
+                priority
+                src={image.url}
+                alt={image.alt}
+                className="object-contain object-left-bottom"
+                sizes={buildImageSizeProp({
+                  sm: '100vw',
+                  lg: '50vw',
+                  xl: '700px',
+                  fallbackSize: '600px',
+                })}
+              />
+            </div>
+          ) : (
+            <StaticImage priority {...graphicsData.logoFallback} />
+          )}
+        </header>
 
         <div className="flex flex-wrap justify-between gap-8">
           <div className="max-w-readable">

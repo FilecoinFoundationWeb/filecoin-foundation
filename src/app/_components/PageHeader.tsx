@@ -1,18 +1,19 @@
-import Image from 'next/image'
-
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import {
-  type DescriptionTextType,
   DescriptionText,
+  type DescriptionTextType,
 } from '@/components/DescriptionText'
+import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
-import { Meta } from '@/components/Meta'
+import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
+import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
-import { type ImageProps } from '@/types/sharedProps/imageType'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type TitleProps = {
   children: string
@@ -21,13 +22,16 @@ type TitleProps = {
 type PageHeaderProps = {
   title: TitleProps['children']
   description?: DescriptionTextType
-  cta?: CTAProps
-  secondaryCta?: CTAProps
-  image?: ImageProps
-  metaData?: Array<string | null | undefined>
+  cta: CTAProps | [CTAProps, CTAProps]
+  metaData?: MetaDataType
   isFeatured?: boolean
-  containImageSize?: boolean
+  image:
+    | ({ type: 'static' } & StaticImageProps)
+    | ({ type: 'dynamic' } & DynamicImageProps)
 }
+
+const sharedContainerStyle = 'aspect-video lg:aspect-auto lg:w-1/2'
+const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
 
 function Title({ children }: TitleProps) {
   return (
@@ -41,20 +45,21 @@ export function PageHeader({
   title,
   description,
   cta,
-  secondaryCta,
   image,
   metaData,
   isFeatured = false,
-  containImageSize = false,
 }: PageHeaderProps) {
+  const mainCTA = Array.isArray(cta) ? cta[0] : cta
+  const secondaryCTA = Array.isArray(cta) ? cta[1] : undefined
+
   return (
     <header className="grid grid-rows-[auto,auto] gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
-      <div className="flex flex-col gap-6 md:flex-row">
-        <div className="flex flex-col gap-4 md:w-1/2">
+      <div className="flex flex-col gap-6 lg:flex-row">
+        <div className="flex flex-col gap-4 lg:w-1/2">
           <Title>{title}</Title>
 
-          {metaData && metaData.length > 0 && (
+          {metaData && (
             <span className="mb-2">
               <Meta metaData={metaData} />
             </span>
@@ -62,35 +67,47 @@ export function PageHeader({
 
           {description && <DescriptionText>{description}</DescriptionText>}
 
-          {cta && (
-            <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 md:flex-col md:gap-4">
-              <Button href={cta.href} variant="primary" className="flex-1">
-                {cta.text}
-              </Button>
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-4">
+            <Button href={mainCTA.href} variant="primary" className="flex-1">
+              {mainCTA.text}
+            </Button>
 
-              {secondaryCta && (
-                <Button
-                  href={secondaryCta.href}
-                  variant="ghost"
-                  className="flex-1"
-                >
-                  {secondaryCta.text}
-                </Button>
-              )}
-            </div>
-          )}
+            {secondaryCTA && (
+              <Button
+                href={secondaryCTA.href}
+                variant="ghost"
+                className="flex-1"
+              >
+                {secondaryCTA.text}
+              </Button>
+            )}
+          </div>
         </div>
 
-        {image && (
-          <div className="relative h-32 w-full rounded-lg border border-brand-100 sm:h-60 md:h-auto md:w-1/2">
-            <Image
+        {image.type === 'static' && (
+          <div className={sharedContainerStyle}>
+            <StaticImage
+              {...image}
+              priority
+              quality={100}
+              className={sharedImageStyle}
+            />
+          </div>
+        )}
+
+        {image.type === 'dynamic' && (
+          <div className={clsx('relative', sharedContainerStyle)}>
+            <DynamicImage
+              {...image}
               fill
-              src={image.url}
-              alt={image.alt}
-              className={clsx(
-                'block rounded-lg',
-                containImageSize ? 'object-contain' : 'object-cover',
-              )}
+              priority
+              quality={100}
+              className={sharedImageStyle}
+              fallback={{ ...image.fallback, className: sharedImageStyle }}
+              sizes={buildImageSizeProp({
+                lg: '100vw',
+                fallbackSize: '50vw',
+              })}
             />
           </div>
         )}
