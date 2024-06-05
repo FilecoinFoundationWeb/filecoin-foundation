@@ -132,24 +132,27 @@ export default function About() {
 
       <PageSection kicker="Insights" title="Reports">
         <CardGrid cols="mdTwo">
-          {reportsData.map(({ title, description, link }, index) => (
-            <div
-              key={title}
-              className={clsx({
-                'lg:row-span-2': index === 0,
-              })}
-            >
-              <Card
-                title={title}
-                description={description}
-                cta={{
-                  href: link,
-                  text: 'View Report',
-                  icon: Files,
-                }}
-              />
-            </div>
-          ))}
+          {reportsData.map(({ title, description, link, image }, index) => {
+            return (
+              <div
+                key={title}
+                className={clsx({
+                  'lg:row-span-2': index === 0,
+                })}
+              >
+                <Card
+                  title={title}
+                  description={description}
+                  image={image}
+                  cta={{
+                    href: link,
+                    text: 'View Report',
+                    icon: Files,
+                  }}
+                />
+              </div>
+            )
+          })}
         </CardGrid>
       </PageSection>
     </PageLayout>

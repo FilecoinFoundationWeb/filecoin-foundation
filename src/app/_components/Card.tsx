@@ -5,7 +5,6 @@ import clsx from 'clsx'
 import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
-import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
