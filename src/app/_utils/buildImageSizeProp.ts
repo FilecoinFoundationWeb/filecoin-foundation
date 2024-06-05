@@ -15,23 +15,31 @@ function getScreenWidthNumber(screenSize: Breakpoint) {
 }
 
 export function buildImageSizeProp(args: Args) {
-  const { fallbackSize, ...pairs } = args
+  const { fallbackSize, ...breakpointWidthPairs } = args
 
-  const entries = Object.entries(pairs) as Array<[Breakpoint, Width]>
+  const breakpointWidthPairsArray = Object.entries(
+    breakpointWidthPairs,
+  ) as Array<[Breakpoint, Width]>
 
-  const sortedEntries = [...entries].sort((a, b) => {
-    const aBreakpoint: Breakpoint = a[0]
-    const bBreakpoint: Breakpoint = b[0]
+  const sortedBreakpointWidthPairsArray = [...breakpointWidthPairsArray].sort(
+    (a, b) => {
+      const aBreakpoint: Breakpoint = a[0]
+      const bBreakpoint: Breakpoint = b[0]
 
-    return getScreenWidthNumber(aBreakpoint) - getScreenWidthNumber(bBreakpoint)
-  })
+      return (
+        getScreenWidthNumber(aBreakpoint) - getScreenWidthNumber(bBreakpoint)
+      )
+    },
+  )
 
-  const mediaQueriesArray = sortedEntries.map(([screen, width]) => {
-    const screenWidthNumber = getScreenWidthNumber(screen)
-    const mediaQuery = `(max-width: ${screenWidthNumber - 1}px)`
+  const mediaQueriesArray = sortedBreakpointWidthPairsArray.map(
+    ([screen, width]) => {
+      const screenWidthNumber = getScreenWidthNumber(screen)
+      const mediaQuery = `(max-width: ${screenWidthNumber - 1}px)`
 
-    return `${mediaQuery} ${width}`
-  })
+      return `${mediaQuery} ${width}`
+    },
+  )
 
   return `${mediaQueriesArray.join(', ')}, ${fallbackSize}`
 }
