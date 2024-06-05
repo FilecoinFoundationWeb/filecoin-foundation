@@ -36,6 +36,8 @@ import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
@@ -131,7 +133,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: 'newest',
+    sortByDefault: DEFAULT_SORT_OPTION,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
