@@ -1,33 +1,25 @@
-import { Metadata } from 'next'
+import { type Metadata as NextMetadata } from 'next'
+
+import { type Metadata } from '@/types/metadataTypes'
 
 import { PathValues, DynamicPathValues } from '@/constants/paths'
 
-interface CreateMetadataProps {
+type CreateMetadataProps = {
+  seo: Metadata
   path: PathValues | DynamicPathValues
-  title?: string
-  description?: string | string[]
-  seo?: Partial<Metadata>
   useAbsoluteTitle?: boolean
 }
 
 export function createMetadata({
+  seo,
   path,
-  title,
-  description,
-  seo = {},
   useAbsoluteTitle = false,
-}: CreateMetadataProps): Metadata {
-  const resolvedMetaTitle = seo.title || title || ''
-  const resolvedMetaDescription =
-    seo.description ||
-    (Array.isArray(description) ? description.join(' ') : description) ||
-    ''
+}: CreateMetadataProps): NextMetadata {
+  const { title, description } = seo
 
   return {
-    title: useAbsoluteTitle
-      ? { absolute: resolvedMetaTitle.toString() }
-      : resolvedMetaTitle,
-    description: resolvedMetaDescription,
+    title: useAbsoluteTitle ? { absolute: title } : title,
+    description,
     alternates: {
       canonical: path,
     },

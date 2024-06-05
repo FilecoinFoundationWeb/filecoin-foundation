@@ -22,8 +22,6 @@ export async function generateMetadata({ params }: EventProps) {
 
   return createMetadata({
     seo: data.seo,
-    title: data.title,
-    description: data.description,
     path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
   })
 }

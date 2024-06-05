@@ -4,18 +4,13 @@ import '@/styles/globals.scss'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-import siteMetaData from '@/content/shared/site-metadata.yml'
-
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
-
-const { seo } = siteMetaData
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${seo.title}`,
+    template: `%s | ${ORGANIZATION_NAME}`,
     default: ORGANIZATION_NAME,
   },
-  description: seo.description,
   metadataBase: new URL(BASE_URL),
 }
 

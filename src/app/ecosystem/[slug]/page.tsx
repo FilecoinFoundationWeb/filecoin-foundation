@@ -36,8 +36,6 @@ export async function generateMetadata({ params }: EcosystemProjectProps) {
 
   return createMetadata({
     seo: data.seo,
-    title: data.title,
-    description: data.description,
     path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
   })
 }

@@ -72,15 +72,6 @@ meta_config: &meta_config
           required: false
 
 collections:
-  - name: "shared"
-    label: "Shared"
-    files:
-      - name: "medatadata"
-        label: "Metadata"
-        file: "src/content/shared/site-metadata.yml"
-        fields:
-          - *meta_config
-
   - name: "pages"
     label: "Pages"
     files:
