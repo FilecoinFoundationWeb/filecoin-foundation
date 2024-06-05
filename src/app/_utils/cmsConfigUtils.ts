@@ -13,12 +13,12 @@ export function getCollectionConfig(collectionName: string): {
   fields: CMSFieldConfig[]
 } {
   const collection = config.collections.find(
-    (col) => col.name === collectionName
+    (col) => col.name === collectionName,
   )
 
   if (!collection || !collection?.fields) {
     throw new Error(
-      `${collectionName} collection or fields not found in CMS config`
+      `${collectionName} collection or fields not found in CMS config`,
     )
   }
 
@@ -27,10 +27,10 @@ export function getCollectionConfig(collectionName: string): {
 
 export function getCMSCollection(
   collections: CMSCollectionConfig[] = [],
-  collectionName: string
+  collectionName: string,
 ): CMSFieldConfig[] | null {
   const collection = collections.find(
-    (collection) => collection.name === collectionName
+    (collection) => collection.name === collectionName,
   )
 
   if (!collection || !collection.fields) {
@@ -43,7 +43,7 @@ export function getCMSCollection(
 
 export function getCMSFieldOptions(
   fields: CMSFieldConfig[] = [],
-  fieldName: string
+  fieldName: string,
 ): CMSFieldOption[] {
   const field = fields.find((field) => field.name === fieldName)
 
