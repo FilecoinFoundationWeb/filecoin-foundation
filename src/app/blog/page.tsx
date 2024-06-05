@@ -38,7 +38,6 @@ import { attributes } from '@/content/pages/blog.md'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-
 import { graphicsData } from '@/data/graphicsData'
 
 const NoSSRPagination = dynamic(
