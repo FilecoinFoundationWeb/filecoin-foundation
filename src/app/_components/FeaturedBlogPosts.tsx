@@ -2,6 +2,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
+import { getMetaData } from '@/utils/getMetaData'
 
 import { PATHS } from '@/constants/paths'
 
@@ -16,19 +17,23 @@ export function FeaturedBlogPosts() {
 
   return (
     <CardGrid cols="smTwo">
-      {featuredBlogPosts.map(({ title, description, slug, image }) => (
-        <Card
-          key={slug}
-          title={title}
-          description={description}
-          image={image}
-          textIsClamped={true}
-          cta={{
-            href: `${PATHS.BLOG.path}/${slug}`,
-            text: 'Learn More',
-          }}
-        />
-      ))}
+      {featuredBlogPosts.map(
+        ({ title, description, slug, image, category, publishedOn }) => (
+          <Card
+            key={slug}
+            metaData={getMetaData(publishedOn)}
+            tag={category}
+            title={title}
+            description={description}
+            image={image}
+            textIsClamped={true}
+            cta={{
+              href: `${PATHS.BLOG.path}/${slug}`,
+              text: 'Learn More',
+            }}
+          />
+        ),
+      )}
     </CardGrid>
   )
 }
