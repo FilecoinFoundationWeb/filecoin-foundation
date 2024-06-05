@@ -20,7 +20,11 @@ import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
-export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.GOVERNANCE.path,
+  useAbsoluteTitle: true,
+})
 
 export default function Governance() {
   return (

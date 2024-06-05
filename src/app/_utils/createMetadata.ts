@@ -1,32 +1,33 @@
 import { Metadata } from 'next'
 
-import { isDynamicPath } from '@/utils/pathUtils'
-
 import { PathValues, DynamicPathValues } from '@/constants/paths'
-import { SITE_TITLE_SUFFIX } from '@/constants/siteMetadata'
 
 interface CreateMetadataProps {
-  seo?: Partial<Metadata>
+  path: PathValues | DynamicPathValues
   title?: string
   description?: string | string[]
-  path: PathValues | DynamicPathValues
+  seo?: Partial<Metadata>
+  useAbsoluteTitle?: boolean
 }
 
 export function createMetadata({
-  seo = {},
+  path,
   title,
   description,
-  path,
+  seo = {},
+  useAbsoluteTitle = false,
 }: CreateMetadataProps): Metadata {
-  const baseTitle = seo.title || title
-  const metaTitle = isDynamicPath(path)
-    ? `${baseTitle} ${SITE_TITLE_SUFFIX}`
-    : baseTitle
-  const metaDescription = seo.description || description?.toString()
+  const resolvedMetaTitle = seo.title || title || ''
+  const resolvedMetaDescription =
+    seo.description ||
+    (Array.isArray(description) ? description.join(' ') : description) ||
+    ''
 
   return {
-    title: metaTitle,
-    description: metaDescription,
+    title: useAbsoluteTitle
+      ? { absolute: resolvedMetaTitle.toString() }
+      : resolvedMetaTitle,
+    description: resolvedMetaDescription,
     alternates: {
       canonical: path,
     },
