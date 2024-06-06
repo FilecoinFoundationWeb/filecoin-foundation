@@ -50,10 +50,8 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { featured_entry: featuredProjectSlug, seo } = attributes
-const featuredProject = ecosystemProjects.find(
-  (project) => project.slug === featuredProjectSlug,
-)
+const { header, seo } = attributes
+
 export const metadata = createMetadata({ seo, path: PATHS.ECOSYSTEM.path })
 
 const categoryData = getCategoryDataFromDirectory(
@@ -63,10 +61,6 @@ const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
 
 export default function Ecosystem({ searchParams }: Props) {
-  if (!featuredProject) {
-    throw new Error('Featured project not found')
-  }
-
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: ecosystemProjects,
@@ -96,19 +90,15 @@ export default function Ecosystem({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        isFeatured
-        title={featuredProject.title}
-        description={featuredProject.description}
+        title={header.title}
+        description={header.description}
         image={{
-          type: 'dynamic',
-          ...featuredProject.image,
-          src: featuredProject.image.url,
-          objectFit: 'contain',
-          fallback: graphicsData.ecosystem,
+          type: 'static',
+          ...graphicsData.ecosystem,
         }}
         cta={{
-          href: `${PATHS.ECOSYSTEM.path}/${featuredProjectSlug}`,
-          text: 'Learn More About the Project',
+          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
+          text: 'Submit Or Update Your Project',
         }}
       />
 
