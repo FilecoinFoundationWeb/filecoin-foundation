@@ -4,11 +4,19 @@ import { CardGrid } from '@/components/CardGrid'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getMetaData } from '@/utils/getMetaData'
 
+import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
 import { PATHS } from '@/constants/paths'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
-const featuredBlogPosts = blogPosts.slice(0, MAX_POSTS)
+
+const sortedBlogPosts = sortEntriesByDate({
+  entries: blogPosts,
+  sortBy: 'publishedOn',
+  sortOption: 'newest',
+})
+
+const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
 
 export function FeaturedBlogPosts() {
   if (featuredBlogPosts.length === 0) {
