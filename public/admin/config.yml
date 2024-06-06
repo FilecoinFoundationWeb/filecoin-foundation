@@ -371,7 +371,7 @@ collections:
           value: "{{fields.category}}"
       - name: tags
         label: Tags
-        widget: select
+        widget: hidden
         required: false
         multiple: true
         options:
