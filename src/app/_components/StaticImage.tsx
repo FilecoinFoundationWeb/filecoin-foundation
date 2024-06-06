@@ -2,10 +2,12 @@ import Image, { type StaticImageData, type ImageProps } from 'next/image'
 
 import clsx from 'clsx'
 
+import { ImageObjectFit } from '@/types/sharedProps/imageType'
+
 export type StaticImageProps = {
   data: StaticImageData
-  objectFit?: 'contain' | 'cover'
-} & Omit<ImageProps, 'src' | keyof StaticImageData>
+} & ImageObjectFit &
+  Omit<ImageProps, 'src' | keyof StaticImageData>
 
 export function StaticImage({
   data,

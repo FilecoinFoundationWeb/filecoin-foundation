@@ -5,7 +5,10 @@ import { CardGrid } from '@/components/CardGrid'
 
 import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 import { PATHS } from '@/constants/paths'
+import { graphicsData } from '@/data/graphicsData'
 
 type FeaturedEcosystemProjectsProps = {
   ecosystemProjects: EcosystemProjectData[]
@@ -25,14 +28,25 @@ export function FeaturedEcosystemProjects({
           key={slug}
           title={title}
           description={description}
-          entryType="ecosystemProject"
-          image={image}
           borderColor="brand-300"
           textIsClamped={true}
           cta={{
             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
             text: 'Learn More',
             icon: MagnifyingGlass,
+          }}
+          image={{
+            src: image.url,
+            alt: image.alt,
+            fallback: graphicsData.imageFallback,
+            padding: true,
+            objectFit: 'contain',
+            sizes: buildImageSizeProp({
+              startSize: '100vw',
+              sm: '320px',
+              md: '440px',
+              lg: '280px',
+            }),
           }}
         />
       ))}
