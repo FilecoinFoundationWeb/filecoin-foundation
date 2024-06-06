@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-import { WebPage, WithContext } from 'schema-dts'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -30,17 +29,15 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEventsData } from '@/utils/getEventData'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -57,31 +54,6 @@ const { featured_entry: featuredEventSlug, seo } = attributes
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
 
 export const metadata = createMetadata({ seo, path: PATHS.EVENTS.path })
-
-const eventsPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.EVENTS.path,
-})
-
-const eventsPageStructuredData: WithContext<WebPage> = {
-  ...eventsPageBaseData,
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: events.slice(0, 5).map((event, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'Event',
-        name: event.title,
-        startDate: event.startDate,
-        endDate: event.endDate,
-        description: event.description,
-        url: `${event.externalLink?.href} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
-      },
-    })),
-  },
-}
 
 function prepareMetaData(
   startDate: EventData['startDate'],
@@ -150,7 +122,7 @@ export default function Events({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={eventsPageStructuredData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         isFeatured
         title={featuredEvent.title}

@@ -271,13 +271,13 @@ const aboutPageStructuredData: WithContext<WebPage> = {
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        contactType: 'Media and collaboration inquiries',
-        email: FILECOIN_FOUNDATION_URLS.email,
+        contactType: FILECOIN_FOUNDATION_URLS.email.label,
+        email: FILECOIN_FOUNDATION_URLS.email.href,
       },
       {
         '@type': 'ContactPoint',
-        contactType: 'Ecosystem grants inquiries',
-        email: FILECOIN_FOUNDATION_URLS.grants.email,
+        contactType:  FILECOIN_FOUNDATION_URLS.grants.email.label,
+        email: FILECOIN_FOUNDATION_URLS.grants.email.href,
       },
     ],
   },

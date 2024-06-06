@@ -1,18 +1,14 @@
-import { BlogPosting, WithContext } from 'schema-dts'
-
 import { BlogPostHeader } from '@/components/BlogPostHeader'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { type BlogPostData } from '@/types/blogPostTypes'
-
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData } from '@/utils/getBlogPostData'
-import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
-import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
   params: {
@@ -32,33 +28,6 @@ export async function generateMetadata({ params }: BlogPostProps) {
   })
 }
 
-function createBlogPostStructuredData(
-  data: BlogPostData,
-): WithContext<BlogPosting> {
-  const { title, description, image, publishedOn, updatedOn, slug } = data
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: title,
-    description: description,
-    image: image.url,
-    author: {
-      '@type': 'Person',
-      name: ORGANIZATION_NAME,
-    },
-    datePublished: publishedOn,
-    dateModified: updatedOn || publishedOn,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,
-    },
-    ...(typeof baseOrganizationSchema === 'object'
-      ? { publisher: baseOrganizationSchema }
-      : {}),
-  }
-}
-
 export default function BlogPost({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
@@ -66,9 +35,7 @@ export default function BlogPost({ params }: BlogPostProps) {
 
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={createBlogPostStructuredData(data)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="m-auto max-w-2xl space-y-16">
         <BlogPostHeader
           title={title}

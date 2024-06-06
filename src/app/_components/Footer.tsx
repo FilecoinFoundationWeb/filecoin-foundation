@@ -60,7 +60,7 @@ export function Footer() {
           </p>
           <Button
             className="w-full sm:self-start md:w-auto"
-            variant="primary"
+            variant="ghost"
             href={FILECOIN_FOUNDATION_URLS.newsletter}
           >
             Subscribe to Newsletter
@@ -89,13 +89,13 @@ export function Footer() {
           <div>
             <p className="mb-3">
               For media and collaboration inquiries,{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.email}>
+              <TextLink href={FILECOIN_FOUNDATION_URLS.email.href}>
                 Drop us a line
               </TextLink>
             </p>
             <p>
               For more information on our ecosystem grants,{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email}>
+              <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
                 Email us
               </TextLink>
             </p>

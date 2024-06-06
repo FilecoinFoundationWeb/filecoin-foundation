@@ -10,13 +10,9 @@ type TwitterMetadata = {
   creator?: string
 }
 
-type SeoMetadata = {
+export type SeoMetadata = {
   title: string
   description: string
-}
-
-export type Metadata = {
-  seo: SeoMetadata
-  og: OpenGraphMetadata
-  twitter: TwitterMetadata
+  og?: OpenGraphMetadata
+  twitter?: TwitterMetadata
 }

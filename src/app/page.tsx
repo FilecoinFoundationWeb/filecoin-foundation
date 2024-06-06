@@ -7,6 +7,7 @@ import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
@@ -15,6 +16,7 @@ import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 import { graphicsData } from '@/data/graphicsData'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
@@ -35,6 +37,8 @@ export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
 export default function Home() {
   return (
     <PageLayout>
+      <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
+
       <PageHeader
         title={header.title}
         description={header.description}
