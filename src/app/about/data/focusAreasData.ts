@@ -4,19 +4,19 @@ export const focusAreasData = [
   {
     title: 'Governance',
     description:
-      'As an open-source project, the Foundation governs the Filecoin ecosystem in a way that’s transparent, community-driven, and in line with the community’s open-source ethos.',
+      'Filecoin Foundation facilitates community-led, transparent governance of the Filecoin protocol, aligning with open-source principles.',
     image: graphicsData.governance1,
   },
   {
     title: 'Research & Development',
     description:
-      'The Foundation funds research and development projects for decentralized web technologies, including projects and teams building on the network and advancing our mission to preserve humanity’s most important information.',
+      'Filecoin Foundation funds research and development projects that build on top of the Filecoin network and related decentralized technologies.',
     image: graphicsData.rAndD,
   },
   {
-    title: 'Growth',
+    title: 'Community & Ecosystem Growth',
     description:
-      'The Foundation hosts, sponsors, and supports events around the world, leading conversations around decentralization web technology and bringing new builders, clients, and storage providers into the ecosystem.',
+      'Filecoin Foundation hosts, sponsors, and supports events around the world, bringing new builders, clients, and storage providers into the Filecoin ecosystem.',
     image: graphicsData.events1,
   },
 ]

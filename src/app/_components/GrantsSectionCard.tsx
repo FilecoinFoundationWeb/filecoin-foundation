@@ -2,7 +2,7 @@ import { Heading, HeadingProps } from '@/components/Heading'
 
 type GrantsSectionCardProps = {
   heading: HeadingProps
-  children: string
+  children: React.ReactNode
 }
 
 export function GrantsSectionCard({

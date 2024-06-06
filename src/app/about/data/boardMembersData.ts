@@ -13,20 +13,20 @@ export const boardMembersData: Array<MemberData> = [
     image: MartaBelcher,
   },
   {
-    name: 'Marcia Hofmann',
-    title: 'Electronic Privacy Attorney',
-    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
-    image: MarciaHofmann,
-  },
-  {
     name: 'Brian Behlendorf',
     title: 'Chief AI Strategist, Linux Foundation',
     linkedin: 'https://www.linkedin.com/in/brianbehlendorf/',
     image: BrianBehlendorf,
   },
   {
+    name: 'Marcia Hofmann',
+    title: 'Electronic Privacy Attorney',
+    linkedin: 'https://www.linkedin.com/in/marciahofmann/',
+    image: MarciaHofmann,
+  },
+  {
     name: 'Nicole Wong',
-    title: 'Former Deputy U.S. Chief',
+    title: 'Former Deputy U.S. Chief Technology Officer',
     linkedin: 'https://www.linkedin.com/in/nicole-wong-96b4335/',
     image: NicoleWong,
   },
