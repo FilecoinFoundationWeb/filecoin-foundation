@@ -34,6 +34,7 @@ import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getCategoryLabel } from './utils/getCategoryLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -156,7 +157,7 @@ export default function Blog({ searchParams }: Props) {
                       return (
                         <Card
                           key={slug}
-                          tag={category}
+                          tag={getCategoryLabel(category)}
                           title={title}
                           description={description}
                           image={image}
