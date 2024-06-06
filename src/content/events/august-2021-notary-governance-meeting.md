@@ -13,7 +13,7 @@ slug: august-2021-notary-governance-meeting
 updated-on: 2023-05-03T08:06:27.078Z
 image:
   url: /assets/images/governance-logo.jpg
-  alt: Filecoin Governance Image
+  alt: Filecoin Governance Logo
 involvement: hosted
 seo:
   title: August 2021 Notary Governance Meeting
