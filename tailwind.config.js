@@ -29,6 +29,7 @@ module.exports = {
             '--tw-prose-code': theme('colors.brand.100'),
             '--tw-prose-pre-bg': theme('colors.brand.700'),
             '--tw-prose-pre-code': theme('colors.brand.100'),
+            '--tw-prose-captions': theme('colors.neutral.400'),
 
             a: {
               textDecoration: 'none',
@@ -62,6 +63,15 @@ module.exports = {
               width: '100%',
               height: 'auto',
               aspectRatio: '16/9',
+            },
+
+            figure: {
+              textAlign: 'center',
+            },
+
+            figcaption: {
+              textAlign: 'left',
+              fontSize: '10px',
             },
           },
         },

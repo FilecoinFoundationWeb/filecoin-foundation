@@ -51,7 +51,6 @@ export function BreadCrumbs() {
                 <Icon
                   component={CaretRight}
                   color="brand-400"
-                  size={20}
                   weight="bold"
                 />
               )}
