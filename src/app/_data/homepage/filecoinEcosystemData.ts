@@ -21,7 +21,7 @@ export const filecoinEcosystemData = [
       icon: Person,
     },
     description:
-      'Connect and collaborate with the Filecoin community around the globe! Get details on the latest events hosted by Filecoin Foundation, plus learn more about Web3 and community events.',
+      'Connect and collaborate with the Filecoin community around the globe! Get details on the latest Filecoin Foundation, Web3, and community events.',
     cta: {
       href: PATHS.EVENTS.path,
       text: 'Connect',
@@ -33,7 +33,7 @@ export const filecoinEcosystemData = [
       icon: Code,
     },
     description:
-      'Join thousands of developers and entrepreneurs building on the Filecoin network.',
+      'Join thousands of developers and teams building on the Filecoin network.',
     cta: {
       href: 'https://docs.filecoin.io',
       text: 'Learn More',
@@ -45,7 +45,7 @@ export const filecoinEcosystemData = [
       icon: HardDrives,
     },
     description:
-      'Join the Filecoin network as a Storage Provider or leverage the network to store your data with robust and secure storage.',
+      'Join the Filecoin community as a Storage Provider or leverage the network to store your data with robust and secure storage.',
     cta: {
       href: 'https://destor.com/destor-network/overview',
       text: 'Learn More',

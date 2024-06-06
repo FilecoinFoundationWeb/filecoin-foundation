@@ -21,7 +21,7 @@ export default function GlobalError({ error }: { error: Error }) {
         kicker="500"
         title="Internal Server Error"
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.email.href,
+          href: FILECOIN_FOUNDATION_URLS.techSupportEmail.href,
           text: 'Contact Us',
         }}
       >

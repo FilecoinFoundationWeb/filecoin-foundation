@@ -114,7 +114,7 @@ export default function Ecosystem({ searchParams }: Props) {
       <PageSection
         kicker="Projects"
         title="Ecosystem Projects"
-        description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
+        description="Discover the diverse landscape of projects in the Filecoin ecosystem. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s product or services."
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory

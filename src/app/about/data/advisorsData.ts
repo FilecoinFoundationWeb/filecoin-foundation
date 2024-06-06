@@ -20,10 +20,10 @@ export const advisorsData: Array<MemberData> = [
     image: BrewsterKahle,
   },
   {
-    name: 'Veronica McGregor',
-    title: 'Chief Legal Officer, Exodus',
-    linkedin: 'https://www.linkedin.com/in/vemcgregor/',
-    image: VeronicaMcGregor,
+    name: 'Joe Lubin',
+    title: 'Founder, Consensys & Cofounder, Ethereum',
+    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
+    image: JoeLubin,
   },
   {
     name: 'Denelle Dixon',
@@ -32,10 +32,10 @@ export const advisorsData: Array<MemberData> = [
     image: DenelleDixon,
   },
   {
-    name: 'Rye Barcott',
-    title: 'CEO, With Honor',
-    linkedin: 'https://www.linkedin.com/in/ryebarcott/',
-    image: RyeBarcott,
+    name: 'Sandra Ro',
+    title: 'CEO, Global Blockchain Business Council',
+    linkedin: 'https://www.linkedin.com/in/sandraro/',
+    image: SandraRo,
   },
   {
     name: 'Wendy Hanamura',
@@ -44,11 +44,10 @@ export const advisorsData: Array<MemberData> = [
     image: WendyHanamura,
   },
   {
-    name: 'Catherine Stihler',
-    title:
-      'Former CEO, Creative Commons & Former Member of European Parliament',
-    linkedin: 'https://www.linkedin.com/in/catherine-stihler/',
-    image: CatherineStihler,
+    name: 'Katie Biber',
+    title: 'Chief Legal Officer, Paradigm',
+    linkedin: 'https://www.linkedin.com/in/katiebiber/',
+    image: KatieBiber,
   },
   {
     name: 'Georgia Quinn',
@@ -57,10 +56,10 @@ export const advisorsData: Array<MemberData> = [
     image: GeorgiaQuinn,
   },
   {
-    name: 'Joe Lubin',
-    title: 'Founder, Consensys & Cofounder, Ethereum',
-    linkedin: 'https://www.linkedin.com/in/joseph-lubin-48406489/',
-    image: JoeLubin,
+    name: 'Veronica McGregor',
+    title: 'Chief Legal Officer, Exodus',
+    linkedin: 'https://www.linkedin.com/in/vemcgregor/',
+    image: VeronicaMcGregor,
   },
   {
     name: 'Alex Feerst',
@@ -69,15 +68,16 @@ export const advisorsData: Array<MemberData> = [
     image: AlexFeerst,
   },
   {
-    name: 'Sandra Ro',
-    title: 'CEO, Global Blockchain Business Council',
-    linkedin: 'https://www.linkedin.com/in/sandraro/',
-    image: SandraRo,
+    name: 'Rye Barcott',
+    title: 'CEO, With Honor',
+    linkedin: 'https://www.linkedin.com/in/ryebarcott/',
+    image: RyeBarcott,
   },
   {
-    name: 'Katie Biber',
-    title: 'Chief Legal Officer, Paradigm',
-    linkedin: 'https://www.linkedin.com/in/katiebiber/',
-    image: KatieBiber,
+    name: 'Catherine Stihler',
+    title:
+      'Former CEO, Creative Commons & Former Member of European Parliament',
+    linkedin: 'https://www.linkedin.com/in/catherine-stihler/',
+    image: CatherineStihler,
   },
 ]

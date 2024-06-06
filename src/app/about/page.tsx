@@ -18,7 +18,6 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
-
 import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'
 import { focusAreasData } from './data/focusAreasData'
@@ -46,7 +45,7 @@ export default function About() {
       <PageSection
         kicker="About"
         title="Our Mission"
-        description="The Foundation’s mission is to preserve humanity’s most important information."
+        description="Filecoin Foundation’s mission is to accelerate the growth of the Filecoin ecosystem."
       />
 
       <PageSection kicker="What We Do" title="Focus Areas">
@@ -57,7 +56,7 @@ export default function About() {
         </CardGrid>
       </PageSection>
 
-      <PageSection kicker="Who We Are" title="Board Members">
+      <PageSection kicker="Board" title="Board of Directors">
         <CardGrid cols="mdTwo">
           {boardMembersData.map((boardMember, i) => (
             <KeyMemberCard key={i} {...boardMember} />
@@ -66,7 +65,7 @@ export default function About() {
       </PageSection>
 
       <PageSection
-        kicker="Advisors"
+        kicker="Behind the Foundation"
         title="Advisors"
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
