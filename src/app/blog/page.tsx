@@ -26,10 +26,6 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getMetaData } from '@/utils/getMetaData'
-import {
-  baseOrganizationSchema,
-  generateWebPageStructuredData,
-} from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/blog.md'
 
@@ -54,31 +50,6 @@ const { featured_entry: featuredPostSlug, seo } = attributes
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
 export const metadata = createMetadata({ seo, path: PATHS.BLOG.path })
-
-const blogPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.BLOG.path,
-})
-
-const blogPageStructuredData: WithContext<WebPage> = {
-  ...blogPageBaseData,
-  publisher: baseOrganizationSchema,
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: posts.slice(0, 5).map((post, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'BlogPosting',
-        name: post.title,
-        description: post.description,
-        image: post.image?.url,
-        url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
-      },
-    })),
-  },
-}
 
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {

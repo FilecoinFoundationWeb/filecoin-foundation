@@ -1,4 +1,4 @@
-import { Event, WithContext } from 'schema-dts'
+import { Event, WithContext, Place, VirtualLocation } from 'schema-dts'
 
 import { EventData } from '@/types/eventTypes'
 
@@ -18,6 +18,20 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     externalLink,
   } = data
 
+  let eventLocation: Place | VirtualLocation | undefined
+
+  if (location) {
+    eventLocation = {
+      '@type': 'Place',
+      name: location,
+    }
+  } else if (externalLink) {
+    eventLocation = {
+      '@type': 'VirtualLocation',
+      url: externalLink.href,
+    }
+  }
+
   return {
     '@context': SCHEMA_CONTEXT_URL,
     '@type': 'Event',
@@ -25,16 +39,7 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     description,
     startDate,
     endDate,
-    location: [
-      {
-        '@type': 'VirtualLocation',
-        url: externalLink?.href,
-      },
-      {
-        '@type': 'Place',
-        name: location,
-      },
-    ],
+    location: eventLocation,
     image: image.url,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }

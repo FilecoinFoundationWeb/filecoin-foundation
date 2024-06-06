@@ -36,6 +36,7 @@ export function generateStructuredData(
           author: {
             '@type': 'Organization',
             name: ORGANIZATION_NAME,
+            url: BASE_URL,
           },
         },
       })),

@@ -23,6 +23,7 @@ export function generateStructuredData(
     author: {
       '@type': 'Organization',
       name: ORGANIZATION_NAME,
+      url: BASE_URL,
     },
     datePublished: publishedOn,
     dateModified: updatedOn || publishedOn,
@@ -30,8 +31,6 @@ export function generateStructuredData(
       '@type': 'WebPage',
       '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,
     },
-    ...(typeof BASE_ORGANIZATION_SCHEMA === 'object'
-      ? { publisher: BASE_ORGANIZATION_SCHEMA }
-      : {}),
+    publisher: BASE_ORGANIZATION_SCHEMA,
   }
 }
