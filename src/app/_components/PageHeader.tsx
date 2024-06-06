@@ -22,7 +22,7 @@ type TitleProps = {
 type PageHeaderProps = {
   title: TitleProps['children']
   description?: DescriptionTextType
-  cta: CTAProps | [CTAProps, CTAProps]
+  cta?: CTAProps | [CTAProps, CTAProps]
   metaData?: MetaDataType
   isFeatured?: boolean
   image:
@@ -68,9 +68,11 @@ export function PageHeader({
           {description && <DescriptionText>{description}</DescriptionText>}
 
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-4">
-            <Button href={mainCTA.href} variant="primary" className="flex-1">
-              {mainCTA.text}
-            </Button>
+            {mainCTA && (
+              <Button href={mainCTA.href} variant="primary" className="flex-1">
+                {mainCTA.text}
+              </Button>
+            )}
 
             {secondaryCTA && (
               <Button

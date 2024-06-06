@@ -29,6 +29,7 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEventsData } from '@/utils/getEventData'
+import { getEventMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/events.md'
 
@@ -69,26 +70,6 @@ function prepareMetaData(
   return [formattedStartDate]
 }
 
-function getMetaDataContent(event: EventData) {
-  if (!event.startDate || !event.location) {
-    return []
-  }
-
-  const { startDate, endDate, location } = event
-  const formattedStartDate = formatDate(startDate)
-  const formattedEndDate = endDate ? formatDate(endDate) : null
-
-  const metaDataContent = [formattedStartDate]
-
-  if (formattedEndDate) {
-    metaDataContent[0] += ` - ${formattedEndDate}`
-  }
-
-  metaDataContent.push(location || 'Not available')
-
-  return metaDataContent
-}
-
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
     throw new Error('Featured event not found')
@@ -127,7 +108,7 @@ export default function Events({ searchParams }: Props) {
         isFeatured
         title={featuredEvent.title}
         description={featuredEvent.description}
-        metaData={getMetaDataContent(featuredEvent)}
+        metaData={getEventMetaData(featuredEvent)}
         image={{
           type: 'dynamic',
           ...featuredEvent.image,

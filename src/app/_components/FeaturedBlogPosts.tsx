@@ -2,7 +2,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { getMetaData } from '@/utils/getMetaData'
+import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
 import { PATHS } from '@/constants/paths'
@@ -29,7 +29,7 @@ export function FeaturedBlogPosts() {
         ({ title, description, slug, image, category, publishedOn }) => (
           <Card
             key={slug}
-            metaData={getMetaData(publishedOn)}
+            metaData={getBlogPostMetaData(publishedOn)}
             tag={category}
             title={title}
             description={description}
