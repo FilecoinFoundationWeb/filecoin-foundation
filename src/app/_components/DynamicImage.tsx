@@ -4,11 +4,13 @@ import clsx from 'clsx'
 
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
+import { ImageObjectFit } from '@/types/sharedProps/imageType'
+
 export type DynamicImageProps = {
   src: string
   fallback: StaticImageProps
-  objectFit?: 'contain' | 'cover'
-} & Omit<ImageProps, 'objectFit'>
+} & ImageObjectFit &
+  Omit<ImageProps, 'objectFit'>
 
 export function DynamicImage({
   src,

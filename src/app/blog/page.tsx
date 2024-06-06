@@ -22,6 +22,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -144,7 +145,7 @@ export default function Blog({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((post) => {
+                    {paginatedResults.map((post, i) => {
                       const {
                         slug,
                         category,
@@ -154,19 +155,32 @@ export default function Blog({ searchParams }: Props) {
                         publishedOn,
                       } = post
 
+                      const isFirstTwoImages = i < 2
+
                       return (
                         <Card
                           key={slug}
                           tag={getCategoryLabel(category)}
                           title={title}
                           description={description}
-                          image={image}
                           textIsClamped={true}
                           metaData={getMetaData(publishedOn)}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            fallback: graphicsData.imageFallback,
+                            priority: isFirstTwoImages,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '350px',
+                              md: '470px',
+                              lg: '360px',
+                            }),
                           }}
                         />
                       )

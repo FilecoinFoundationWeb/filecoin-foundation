@@ -176,7 +176,7 @@ export default function Events({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((event) => {
+                    {paginatedResults.map((event, i) => {
                       const {
                         slug,
                         title,
@@ -187,6 +187,7 @@ export default function Events({ searchParams }: Props) {
                       } = event
 
                       const metaData = prepareMetaData(startDate, endDate)
+                      const isFirstTwoImages = i < 2
 
                       return (
                         <Card
@@ -194,13 +195,25 @@ export default function Events({ searchParams }: Props) {
                           title={title}
                           tag={getInvolvementLabel(involvement)}
                           metaData={metaData}
-                          image={image}
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{
                             href: `${PATHS.EVENTS.path}/${slug}`,
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            priority: isFirstTwoImages,
+                            padding: true,
+                            fallback: graphicsData.imageFallback,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '320px',
+                              md: '440px',
+                              lg: '330px',
+                            }),
                           }}
                         />
                       )
@@ -228,7 +241,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events2}
               className="h-full rounded-lg object-cover"
-              sizes={buildImageSizeProp({ md: '50vw', fallbackSize: '100vw' })}
+              sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
           </div>
           {getInvolvedData.map(({ title, description, cta }) => (
@@ -245,7 +258,7 @@ export default function Events({ searchParams }: Props) {
             <StaticImage
               {...graphicsData.events3}
               className="h-full rounded-lg object-cover"
-              sizes={buildImageSizeProp({ md: '100vw', fallbackSize: '50vw' })}
+              sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
           </div>
         </CardGrid>
