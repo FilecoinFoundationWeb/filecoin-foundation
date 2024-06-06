@@ -24,11 +24,13 @@ meta_config: &meta_config
   widget: "object"
   fields:
     - name: "title"
-      label: "Title"
+      label: "Meta Title"
       widget: "string"
+      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
     - name: "description"
       label: "Meta Description"
       widget: "text"
+      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
     - name: "og"
       label: "Open Graph Metadata"
       widget: "object"
