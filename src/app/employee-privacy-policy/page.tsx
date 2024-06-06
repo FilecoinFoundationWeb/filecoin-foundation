@@ -14,7 +14,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
-export const metadata = createMetadata({ seo, path: PATHS.PRIVACY_POLICY.path })
+export const metadata = createMetadata({ seo, path: PATHS.EMPLOYEE_PRIVACY_POLICY.path })
 
 export default function EmployeePrivacyPolicy() {
   const { title } = header
