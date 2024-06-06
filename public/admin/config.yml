@@ -547,9 +547,11 @@ collections:
           - name: "href"
             label: "Href"
             widget: "string"
+            required: false
           - name: "text"
             label: "Text"
             widget: "string"
+            required: false
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
