@@ -20,15 +20,17 @@ header_config: &header_config
 
 meta_config: &meta_config
   name: "seo"
-  label: "SEO"
+  label: "SEO Metadata"
   widget: "object"
   fields:
     - name: "title"
-      label: "Title"
+      label: "Meta Title"
       widget: "string"
+      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
     - name: "description"
       label: "Meta Description"
       widget: "text"
+      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
     - name: "og"
       label: "Open Graph Metadata"
       widget: "object"
@@ -82,27 +84,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - name: "home"
-        label: "Home"
-        file: "src/content/pages/home.md"
-        fields:
-          - *header_config
-          - *meta_config
-          - name: "featured_ecosystem_projects"
-            label: "Featured Ecosystem Projects"
-            widget: "relation"
-            required: false
-            collection: "ecosystem"
-            value_field: "slug"
-            search_fields:
-              - "slug"
-              - "title"
-            display_fields:
-              - "title"
-            multiple: true
-            min: 6
-            max: 6
-
       - name: "about"
         label: "About"
         file: "src/content/pages/about.md"
@@ -127,13 +108,6 @@ collections:
               - "title"
           - *meta_config
 
-      - name: "governance"
-        label: "Governance"
-        file: "src/content/pages/governance.md"
-        fields:
-          - *header_config
-          - *meta_config
-
       - name: "ecosystem"
         label: "Ecosystem"
         file: "src/content/pages/ecosystem.md"
@@ -141,11 +115,24 @@ collections:
           - *header_config
           - *meta_config
 
-      - name: "grants"
-        label: "Grants"
-        file: "src/content/pages/grants.md"
+      - name: "employee-privacy-policy"
+        label: "Employee Privacy Policy"
+        file: "src/content/pages/employee-privacy-policy.md"
         fields:
           - *header_config
+          - name: "featured_grant_graduates"
+            label: "Featured Grant Graduates"
+            widget: "relation"
+            collection: "ecosystem_projects"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
           - *meta_config
 
       - name: "events"
@@ -163,6 +150,40 @@ collections:
               - "title"
             display_fields:
               - "title"
+          - *meta_config
+
+      - name: "governance"
+        label: "Governance"
+        file: "src/content/pages/governance.md"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "grants"
+        label: "Grants"
+        file: "src/content/pages/grants.md"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "home"
+        label: "Home"
+        file: "src/content/pages/home.md"
+        fields:
+          - *header_config
+          - name: "featured_ecosystem_projects"
+            label: "Featured Ecosystem Projects"
+            widget: "relation"
+            collection: "ecosystem_projects"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
           - *meta_config
 
       - name: "privacy-policy"
@@ -232,14 +253,19 @@ collections:
           - name: "alt"
             label: "Alt Text"
             widget: "string"
-            required: false
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
       - name: "body"
         label: "Content"
         widget: "markdown"
+        editor_components:
+          - "code-block"
+          - "image"
+          - "video"
+          - "audio"
         required: false
       - name: "recommended-posts"
         label: "Recommended Posts"
-        widget: "relation"
+        widget: "hidden"
         required: false
         collection: "blog"
         value_field: "src/content/blog/{{slug}}.md"
@@ -327,6 +353,7 @@ collections:
             allow_multiple: false
           - name: alt
             label: Alt Text
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: string
       - name: category
         label: Category
@@ -352,7 +379,7 @@ collections:
           value: "{{fields.category}}"
       - name: tags
         label: Tags
-        widget: select
+        widget: hidden
         required: false
         multiple: true
         options:
@@ -441,17 +468,9 @@ collections:
         label: Short Description
         widget: string
         required: true
-      - name: body
-        label: Long Description
-        widget: markdown
-        required: false
       - name: website
         label: Website
         widget: string
-      - name: repo
-        label: GitHub Repo
-        widget: string
-        required: false
       - name: tech
         label: Technologies Used
         widget: select
@@ -459,6 +478,10 @@ collections:
         options:
           - filecoin
           - ipfs
+      - name: repo
+        label: GitHub Repo
+        widget: string
+        required: false
       - name: featured-content
         label: Featured Content
         widget: string
@@ -475,9 +498,13 @@ collections:
         label: Using Filecoin Since
         widget: datetime
         required: false
+      - name: body
+        label: Long Description
+        widget: markdown
+        required: false
       - name: news-update
         label: What's New?
-        widget: markdown
+        widget: text
         required: false
       - *meta_config
 
@@ -515,13 +542,16 @@ collections:
         label: "External Link"
         widget: "object"
         required: false
+        hint: "External link to the event page"
         fields:
           - name: "href"
             label: "Href"
             widget: "string"
+            required: false
           - name: "text"
             label: "Text"
             widget: "string"
+            required: false
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
@@ -534,18 +564,17 @@ collections:
       - name: "image"
         label: "Image"
         widget: "object"
-        required: false
         fields:
           - name: "url"
-            label: "Image"
+            label: "URL"
             widget: "image"
           - name: "alt"
             label: "Alt Text"
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: "string"
       - name: "involvement"
         label: "FF Involvement"
         widget: "select"
-        required: false
         options:
           - label: "Hosted"
             value: "hosted"
@@ -554,27 +583,3 @@ collections:
           - label: "Supported"
             value: "supported"
       - *meta_config
-
-  - name: grants
-    label: Grants
-    label_singular: Grants
-    folder: "src/content/grants/"
-    create: true
-    identifier_field: name
-    extension: md
-    slug: "{{slug}}"
-    fields:
-      - name: "grants-graduates"
-        label: "Grants Graduates"
-        widget: "relation"
-        required: false
-        collection: "ecosystem"
-        value_field: "slug"
-        search_fields:
-          - "slug"
-          - "title"
-        display_fields:
-          - "title"
-        multiple: true
-        min: 6
-        max: 6

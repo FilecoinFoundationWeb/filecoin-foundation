@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-import { WebPage, WithContext } from 'schema-dts'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -19,23 +18,27 @@ import { PageSection } from '@/components/PageSection'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EventData } from '@/types/eventTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEventsData } from '@/utils/getEventData'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
+import { generateStructuredData } from './utils/generateStructuredData'
+import { getInvolvementLabel } from './utils/getInvolvementLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -52,31 +55,6 @@ const { featured_entry: featuredEventSlug, seo } = attributes
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
 
 export const metadata = createMetadata({ seo, path: PATHS.EVENTS.path })
-
-const eventsPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.EVENTS.path,
-})
-
-const eventsPageStructuredData: WithContext<WebPage> = {
-  ...eventsPageBaseData,
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: events.slice(0, 5).map((event, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'Event',
-        name: event.title,
-        startDate: event.startDate,
-        endDate: event.endDate,
-        description: event.description,
-        url: `${event.externalLink?.href} || ${BASE_URL}${PATHS.EVENTS.path}/${event.slug}`,
-      },
-    })),
-  },
-}
 
 function prepareMetaData(
   startDate: EventData['startDate'],
@@ -128,7 +106,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: 'newest',
+    sortByDefault: DEFAULT_SORT_OPTION,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -145,13 +123,18 @@ export default function Events({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={eventsPageStructuredData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         isFeatured
         title={featuredEvent.title}
         description={featuredEvent.description}
         metaData={getMetaDataContent(featuredEvent)}
-        image={featuredEvent.image}
+        image={{
+          type: 'dynamic',
+          ...featuredEvent.image,
+          src: featuredEvent.image.url,
+          fallback: graphicsData.events1,
+        }}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
@@ -193,7 +176,7 @@ export default function Events({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((event) => {
+                    {paginatedResults.map((event, i) => {
                       const {
                         slug,
                         title,
@@ -204,20 +187,33 @@ export default function Events({ searchParams }: Props) {
                       } = event
 
                       const metaData = prepareMetaData(startDate, endDate)
+                      const isFirstTwoImages = i < 2
 
                       return (
                         <Card
                           key={slug}
                           title={title}
-                          tag={involvement}
+                          tag={getInvolvementLabel(involvement)}
                           metaData={metaData}
-                          image={image}
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{
                             href: `${PATHS.EVENTS.path}/${slug}`,
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            priority: isFirstTwoImages,
+                            padding: true,
+                            fallback: graphicsData.imageFallback,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '320px',
+                              md: '440px',
+                              lg: '330px',
+                            }),
                           }}
                         />
                       )
@@ -240,15 +236,31 @@ export default function Events({ searchParams }: Props) {
         kicker="Get Involved"
         title="Get in Touch With the Events Team"
       >
-        <CardGrid cols="mdThree">
-          {getInvolvedData.map(({ title, description, cta }) => (
-            <Card
-              key={title}
-              title={title}
-              description={description}
-              cta={cta}
+        <CardGrid cols="mdTwo" as="div">
+          <div className="row-span-2 h-96 md:h-auto">
+            <StaticImage
+              {...graphicsData.events2}
+              className="h-full rounded-lg object-cover"
+              sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
+          </div>
+          {getInvolvedData.map(({ title, description, cta }) => (
+            <div key={title} className="h-48 md:h-56">
+              <Card
+                title={title}
+                description={description}
+                cta={cta}
+                as="div"
+              />
+            </div>
           ))}
+          <div className="h-48 md:h-56">
+            <StaticImage
+              {...graphicsData.events3}
+              className="h-full rounded-lg object-cover"
+              sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
+            />
+          </div>
         </CardGrid>
       </PageSection>
     </PageLayout>

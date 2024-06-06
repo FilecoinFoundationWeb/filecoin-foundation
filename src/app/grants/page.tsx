@@ -11,45 +11,48 @@ import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/grants.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
+const {
+  featured_grant_graduates: grantGraduatesSlugs,
+  header,
+  seo,
+} = attributes
 const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
 
 export const metadata = createMetadata({ seo, path: PATHS.GRANTS.path })
 
-const grantsPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.GRANTS.path,
-})
-
 export default function Grants() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={grantsPageBaseData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
-        cta={{ href: FILECOIN_FOUNDATION_URLS.grants.email, text: 'Apply Now' }}
+        image={{ type: 'static', ...graphicsData.grants }}
+        cta={{
+          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
+          text: 'Apply Now',
+        }}
       />
 
       <PageSection
         kicker="Opportunities"
         title="Grants and Funding Opportunities"
-        description="The Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories:"
+        description="Filecoin Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories."
       >
         <CardGrid cols="lgThree">
           {opportunitiesData.map((card) => {
@@ -136,14 +139,17 @@ export default function Grants() {
             </TextLink>{' '}
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email}>
-              {FILECOIN_FOUNDATION_URLS.grants.email.replace('mailto:', '')}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
+              {FILECOIN_FOUNDATION_URLS.grants.email.href.replace(
+                'mailto:',
+                '',
+              )}
             </TextLink>{' '}
             or join our monthly office hours!
           </>
         }
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.email,
+          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
           text: 'Apply Now',
         }}
       />

@@ -7,6 +7,7 @@ import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
@@ -15,6 +16,8 @@ import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
+import { graphicsData } from '@/data/graphicsData'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 const ecosystemProjects = getEcosystemProjectsData()
@@ -34,17 +37,16 @@ export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
 export default function Home() {
   return (
     <PageLayout>
+      <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
+
       <PageHeader
         title={header.title}
         description={header.description}
-        cta={{
-          href: PATHS.ABOUT.path,
-          text: 'Learn More About the Foundation',
-        }}
-        secondaryCta={{
-          href: FILECOIN_URLS.site,
-          text: 'Dive Into the Filecoin Protocol',
-        }}
+        image={{ type: 'static', ...graphicsData.home }}
+        cta={[
+          { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
+          { href: FILECOIN_URLS.site, text: 'Dive Into the Filecoin Protocol' },
+        ]}
       />
 
       <PageSection kicker="Explore" title="The Filecoin Ecosystem">
@@ -109,7 +111,7 @@ export default function Home() {
       </PageSection>
       <CTASection
         title="Become Part of Our Vibrant Community"
-        description="Join Filecoin's Slack to engage with the community and stay updated on the latest&nbsp;developments."
+        description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."
         cta={{
           href: FILECOIN_URLS.social.slack.href,
           text: 'Join Filecoin Slack',

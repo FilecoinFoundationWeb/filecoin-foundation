@@ -1,11 +1,12 @@
-import { Metadata } from '@/types/metadataTypes'
+import { SeoMetadata } from '@/types/metadataTypes'
 
 export type PageAttributes = {
   header: {
     title: string
     description: string | string[]
   }
+  seo: Pick<SeoMetadata, 'title' | 'description'>
   featured_entry?: string
   featured_ecosystem_projects?: string[]
-  grant_graduates?: string[]
-} & Metadata
+  featured_grant_graduates?: string[]
+}

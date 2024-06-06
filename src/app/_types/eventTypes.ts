@@ -1,5 +1,4 @@
-import { type Metadata } from 'next'
-
+import { type SeoMetadata } from '@/types/metadataTypes'
 import { type ImageProps } from '@/types/sharedProps/imageType'
 
 export type EventData = {
@@ -18,5 +17,5 @@ export type EventData = {
   endDate?: string
   image: ImageProps
   involvement: string
-  seo: Metadata
+  seo: SeoMetadata
 }

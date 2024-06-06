@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
-import { WebPage, WithContext } from 'schema-dts'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -21,22 +20,22 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { type BlogPostData } from '@/types/blogPostTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/formatDate'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import {
-  baseOrganizationSchema,
-  generateWebPageStructuredData,
-} from '@/utils/structuredData'
+import { getMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+import { graphicsData } from '@/data/graphicsData'
+
+import { generateStructuredData } from './utils/generateStructuredData'
+import { getCategoryLabel } from './utils/getCategoryLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -54,35 +53,6 @@ const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
 export const metadata = createMetadata({ seo, path: PATHS.BLOG.path })
 
-const blogPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.BLOG.path,
-})
-
-const blogPageStructuredData: WithContext<WebPage> = {
-  ...blogPageBaseData,
-  publisher: baseOrganizationSchema,
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: posts.slice(0, 5).map((post, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'BlogPosting',
-        name: post.title,
-        description: post.description,
-        image: post.image?.url,
-        url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
-      },
-    })),
-  },
-}
-
-function getMetaData(publishedOn?: BlogPostData['publishedOn']) {
-  return publishedOn ? [formatDate(publishedOn)] : []
-}
-
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {
     throw new Error('Featured post not found')
@@ -98,7 +68,7 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: 'newest',
+    sortByDefault: DEFAULT_SORT_OPTION,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -115,13 +85,20 @@ export default function Blog({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={blogPageStructuredData} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(posts, seo)}
+      />
       <PageHeader
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        image={featuredPost.image}
         metaData={getMetaData(featuredPost.publishedOn)}
+        image={{
+          type: 'dynamic',
+          ...featuredPost.image,
+          src: featuredPost.image.url,
+          fallback: graphicsData.imageFallback,
+        }}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
           text: 'Read Featured Post',
@@ -168,7 +145,7 @@ export default function Blog({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((post) => {
+                    {paginatedResults.map((post, i) => {
                       const {
                         slug,
                         category,
@@ -178,19 +155,32 @@ export default function Blog({ searchParams }: Props) {
                         publishedOn,
                       } = post
 
+                      const isFirstTwoImages = i < 2
+
                       return (
                         <Card
                           key={slug}
-                          tag={category}
+                          tag={getCategoryLabel(category)}
                           title={title}
                           description={description}
-                          image={image}
                           textIsClamped={true}
                           metaData={getMetaData(publishedOn)}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            fallback: graphicsData.imageFallback,
+                            priority: isFirstTwoImages,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '350px',
+                              md: '470px',
+                              lg: '360px',
+                            }),
                           }}
                         />
                       )

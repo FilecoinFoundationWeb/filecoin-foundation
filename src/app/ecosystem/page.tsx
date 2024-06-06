@@ -1,7 +1,6 @@
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
-import { WebPage, WithContext } from 'schema-dts'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -24,21 +23,22 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getCategoryDataFromDirectory,
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import {
-  baseOrganizationSchema,
-  generateWebPageStructuredData,
-} from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/ecosystem.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { BASE_URL, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+import { graphicsData } from '@/data/graphicsData'
+
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -62,31 +62,6 @@ const categoryData = getCategoryDataFromDirectory(
 const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
 
-const ecosystemPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.ECOSYSTEM.path,
-})
-
-const ecosystemPageStructuredData: WithContext<WebPage> = {
-  ...ecosystemPageBaseData,
-  publisher: baseOrganizationSchema,
-  mainEntity: {
-    '@type': 'ItemList',
-    itemListElement: ecosystemProjects.slice(0, 5).map((project, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      item: {
-        '@type': 'BlogPosting',
-        name: project.title,
-        description: project.description,
-        image: project.image?.url,
-        url: `${BASE_URL}${PATHS.ECOSYSTEM.path}/${project.slug}`,
-      },
-    })),
-  },
-}
-
 export default function Ecosystem({ searchParams }: Props) {
   if (!featuredProject) {
     throw new Error('Featured project not found')
@@ -102,7 +77,7 @@ export default function Ecosystem({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: 'newest',
+    sortByDefault: DEFAULT_SORT_OPTION,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -119,13 +94,18 @@ export default function Ecosystem({ searchParams }: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={ecosystemPageStructuredData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         isFeatured
-        containImageSize
         title={featuredProject.title}
         description={featuredProject.description}
-        image={featuredProject.image}
+        image={{
+          type: 'dynamic',
+          ...featuredProject.image,
+          src: featuredProject.image.url,
+          objectFit: 'contain',
+          fallback: graphicsData.ecosystem,
+        }}
         cta={{
           href: `${PATHS.ECOSYSTEM.path}/${featuredProjectSlug}`,
           text: 'Learn More About the Project',
@@ -135,7 +115,7 @@ export default function Ecosystem({ searchParams }: Props) {
       <PageSection
         kicker="Projects"
         title="Ecosystem Projects"
-        description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
+        description="Discover the diverse landscape of projects in the Filecoin ecosystem. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s product or services."
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
@@ -171,22 +151,36 @@ export default function Ecosystem({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((project) => {
+                    {paginatedResults.map((project, i) => {
                       const { slug, title, description, image, category } =
                         project
+
+                      const isFirstTwoImages = i < 2
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          image={image}
                           tag={categoryData[category]}
-                          entryType="ecosystemProject"
                           cta={{
                             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            padding: true,
+                            priority: isFirstTwoImages,
+                            objectFit: 'contain',
+                            fallback: graphicsData.imageFallback,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '320px',
+                              md: '440px',
+                              lg: '280px',
+                            }),
                           }}
                         />
                       )

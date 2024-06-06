@@ -1,17 +1,14 @@
 import Image from 'next/image'
 
-import { Event, WithContext } from 'schema-dts'
-
 import { Heading } from '@/components/Heading'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { type EventData } from '@/types/eventTypes'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
   params: {
@@ -31,21 +28,6 @@ export async function generateMetadata({ params }: EventProps) {
   })
 }
 
-function createEventPostStructuredData(data: EventData): WithContext<Event> {
-  const { title, slug, description, startDate, endDate, image } = data
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Event',
-    name: title,
-    description,
-    startDate,
-    endDate,
-    image: image.url,
-    url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
-  }
-}
-
 export default function EventEntry({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
@@ -54,9 +36,7 @@ export default function EventEntry({ params }: EventProps) {
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={createEventPostStructuredData(data)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <header>
         {image && (
           <Image

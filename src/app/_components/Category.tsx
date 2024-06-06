@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
@@ -26,6 +26,14 @@ export function Category({ query, settings, counts }: CategoryProps) {
     setCategoryOption(newValue)
     updateSearchParams({ [CATEGORY_KEY]: newValue })
   }
+
+  useEffect(() => {
+    const categoryIsReset = !query
+
+    if (categoryIsReset) {
+      setCategoryOption('')
+    }
+  }, [query])
 
   return (
     <>

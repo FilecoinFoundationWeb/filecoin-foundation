@@ -1,6 +1,9 @@
 import { PATHS } from '../../src/app/_constants/paths'
 import { testPageMetadata } from '../support/test-utils'
 
-describe.skip('Terms Page', function () {
-  testPageMetadata(PATHS.TERMS)
+describe('Terms Page', function () {
+  testPageMetadata({
+    path: PATHS.TERMS,
+    hasPageHeaderDescription: false,
+  })
 })

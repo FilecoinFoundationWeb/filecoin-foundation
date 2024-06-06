@@ -9,31 +9,27 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { generateWebPageStructuredData } from '@/utils/structuredData'
 
 import { attributes } from '@/content/pages/governance.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
 
 import { governanceDocsData } from './data/governanceDocsData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata({ seo, path: PATHS.GOVERNANCE.path })
 
-const governancePageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.GOVERNANCE.path,
-})
-
 export default function Governance() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={governancePageBaseData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
+        image={{ type: 'static', ...graphicsData.governance2 }}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.governance.docs,
           text: 'Learn More',
@@ -74,7 +70,7 @@ export default function Governance() {
         title="Understanding Governance"
         description={[
           'In the Filecoin ecosystem – which is decentralized and open source – governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol.',
-          'The Foundation’s role includes developing and implementing processes and policies for decision-making and managing community engagement and feedback – all to support the development of the ecosystem at large. ',
+          'Filecoin Foundation’s role includes facilitating the development of processes and policies for decision-making and managing community engagement and feedback.',
         ]}
       />
 

@@ -56,11 +56,12 @@ export function Footer() {
         <div className="sm:max-w-96">
           <p className="mb-6">
             For the latest big ideas and news from the Filecoin ecosystem and
-            the decentralized web, subscribe to our newsletter.
+            decentralized web, subscribe to Filecoin Foundation’s newsletter,
+            The Upload.
           </p>
           <Button
             className="w-full sm:self-start md:w-auto"
-            variant="primary"
+            variant="ghost"
             href={FILECOIN_FOUNDATION_URLS.newsletter}
           >
             Subscribe to Newsletter
@@ -89,13 +90,13 @@ export function Footer() {
           <div>
             <p className="mb-3">
               For media and collaboration inquiries,{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.email}>
+              <TextLink href={FILECOIN_FOUNDATION_URLS.email.href}>
                 Drop us a line
               </TextLink>
             </p>
             <p>
               For more information on our ecosystem grants,{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email}>
+              <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
                 Email us
               </TextLink>
             </p>

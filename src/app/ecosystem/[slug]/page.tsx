@@ -1,26 +1,28 @@
 import Image from 'next/image'
 
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
-import { Article, WithContext } from 'schema-dts'
 
 import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
-import { baseOrganizationSchema } from '@/utils/structuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import { graphicsData } from '@/data/graphicsData'
+
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
   params: {
@@ -38,29 +40,6 @@ export async function generateMetadata({ params }: EcosystemProjectProps) {
     description: data.description,
     path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
   })
-}
-
-function createEcosystemProjectPostStructuredData(
-  data: EcosystemProjectData,
-): WithContext<Article> {
-  const { title, slug, publishedOn, updatedOn, description, image } = data
-
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: title,
-    description,
-    image: image.url,
-    datePublished: publishedOn,
-    dateModified: updatedOn || publishedOn,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `${BASE_URL}${PATHS.ECOSYSTEM.path}/${slug}`,
-    },
-    ...(typeof baseOrganizationSchema === 'object'
-      ? { publisher: baseOrganizationSchema }
-      : {}),
-  }
 }
 
 function getTagLabels(project: EcosystemProjectData) {
@@ -91,22 +70,30 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
   return (
     <>
-      <StructuredDataScript
-        structuredData={createEcosystemProjectPostStructuredData(data)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
 
-      {/* #TODO: Top spacing to be handled by layout parent */}
-      <article className="mt-6">
-        {image.url && (
-          <div className="relative mb-16 h-10 w-full sm:h-16">
-            <Image
-              fill
-              src={image.url}
-              alt={image.alt}
-              className="max-w-fit object-contain"
-            />
-          </div>
-        )}
+      <article>
+        <header className="mb-16 md:w-3/4 lg:w-2/3 xl:w-3/5">
+          {image.url ? (
+            <div className="relative h-48 w-full">
+              <Image
+                fill
+                priority
+                src={image.url}
+                alt={image.alt}
+                className="object-contain object-left-bottom"
+                sizes={buildImageSizeProp({
+                  startSize: '100vw',
+                  md: '730px',
+                  lg: '660px',
+                  xl: '600px',
+                })}
+              />
+            </div>
+          ) : (
+            <StaticImage priority {...graphicsData.imageFallback} />
+          )}
+        </header>
 
         <div className="flex flex-wrap justify-between gap-8">
           <div className="max-w-readable">
