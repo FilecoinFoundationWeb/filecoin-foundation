@@ -244,6 +244,7 @@ collections:
           - name: "alt"
             label: "Alt Text"
             widget: "string"
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             required: false
       - name: "body"
         label: "Content"
@@ -339,6 +340,7 @@ collections:
             allow_multiple: false
           - name: alt
             label: Alt Text
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: string
       - name: category
         label: Category
@@ -553,6 +555,7 @@ collections:
             widget: "image"
           - name: "alt"
             label: "Alt Text"
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: "string"
       - name: "involvement"
         label: "FF Involvement"
