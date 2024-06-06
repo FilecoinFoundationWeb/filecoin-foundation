@@ -28,6 +28,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/admin',
+        destination: '/admin/index.html',
+        permanent: true,
+      },
+      {
         source: '/get-involved',
         destination: '/',
         permanent: true,

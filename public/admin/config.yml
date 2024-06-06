@@ -5,6 +5,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
+site_url: https://filecoin-foundation-blush.vercel.app
 
 header_config: &header_config
   name: "header"
