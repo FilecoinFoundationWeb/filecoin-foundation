@@ -839,82 +839,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "seo",
-              "label": "SEO",
-              "widget": "object",
-              "fields": [
-                {
-                  "name": "title",
-                  "label": "Title",
-                  "widget": "string"
-                },
-                {
-                  "name": "description",
-                  "label": "Meta Description",
-                  "widget": "text"
-                },
-                {
-                  "name": "og",
-                  "label": "Open Graph Metadata",
-                  "widget": "object",
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "name": "title",
-                      "label": "Open Graph Title",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "name": "image",
-                      "label": "Open Graph Image",
-                      "widget": "image",
-                      "required": false,
-                      "media_library": {
-                        "config": {
-                          "multiple": false
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "name": "twitter",
-                  "label": "Twitter Metadata",
-                  "widget": "object",
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "name": "title",
-                      "label": "Twitter Title",
-                      "widget": "string",
-                      "default": "summary",
-                      "required": false
-                    },
-                    {
-                      "name": "card",
-                      "label": "Twitter Card",
-                      "widget": "string",
-                      "default": "summary",
-                      "required": false
-                    },
-                    {
-                      "name": "site",
-                      "label": "Twitter Site",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "name": "creator",
-                      "label": "Twitter Creator",
-                      "widget": "string",
-                      "required": false
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
@@ -1317,7 +1241,7 @@
               "name": "alt",
               "label": "Alt Text",
               "widget": "string",
-              "required": false
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             }
           ]
         },
@@ -1534,6 +1458,7 @@
             {
               "name": "alt",
               "label": "Alt Text",
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/",
               "widget": "string"
             }
           ]
@@ -1572,7 +1497,7 @@
         {
           "name": "tags",
           "label": "Tags",
-          "widget": "select",
+          "widget": "hidden",
           "required": false,
           "multiple": true,
           "options": [
@@ -1958,7 +1883,6 @@
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": false,
           "fields": [
             {
               "name": "url",
@@ -1968,6 +1892,7 @@
             {
               "name": "alt",
               "label": "Alt Text",
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/",
               "widget": "string"
             }
           ]
@@ -1976,7 +1901,6 @@
           "name": "involvement",
           "label": "FF Involvement",
           "widget": "select",
-          "required": false,
           "options": [
             {
               "label": "Hosted",

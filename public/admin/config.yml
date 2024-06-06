@@ -245,9 +245,6 @@ collections:
             label: "Alt Text"
             widget: "string"
             hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
-        media_library:
-          config:
-          max_file_size: 1000000
       - name: "body"
         label: "Content"
         widget: "markdown"
@@ -349,9 +346,6 @@ collections:
             label: Alt Text
             hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: string
-        media_library:
-          config:
-            max_file_size: 1000000
       - name: category
         label: Category
         widget: relation
@@ -566,9 +560,6 @@ collections:
             label: "Alt Text"
             hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: "string"
-        media_library:
-          config:
-            max_file_size: 1000000
       - name: "involvement"
         label: "FF Involvement"
         widget: "select"
