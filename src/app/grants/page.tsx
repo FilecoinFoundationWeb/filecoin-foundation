@@ -24,7 +24,11 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
+const {
+  featured_grant_graduates: grantGraduatesSlugs,
+  header,
+  seo,
+} = attributes
 const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
