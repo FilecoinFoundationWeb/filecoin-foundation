@@ -31,7 +31,10 @@ const FILECOIN_FOUNDATION_URLS = {
       'https://airtable.com/appjmzgJs0szq6rQJ/shrHgGe2pJoR27Vid',
     sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
-  email: 'mailto:hello@fil.org',
+  email: {
+    label: 'Media and collaboration inquiries',
+    href: 'mailto:hello@fil.org',
+  },
   governance: {
     docs: '#',
     social: {
@@ -51,7 +54,10 @@ const FILECOIN_FOUNDATION_URLS = {
   },
   grants: {
     github: 'https://github.com/filecoin-project/devgrants',
-    email: 'mailto:devgrants@fil.org',
+    email: {
+      label: 'Ecosystem grants inquiries',
+      href: 'mailto:devgrants@fil.org',
+    },
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
