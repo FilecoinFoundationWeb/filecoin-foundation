@@ -8,15 +8,12 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-
 type CardProps = {
   title: string | React.ReactNode
   tag?: string
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  entryType?: 'blogPost' | 'ecosystemProject'
   image?: DynamicImageProps & { padding?: boolean }
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
@@ -28,22 +25,6 @@ const borderStyles = {
   'brand-400': 'border-brand-400',
   'brand-500': 'border-brand-500',
   'brand-600': 'border-brand-600',
-}
-
-const imageSizes = {
-  blogPost: buildImageSizeProp({
-    sm: '320px',
-    md: '584px',
-    lg: '712px',
-    xl: '472px',
-    fallbackSize: '500px',
-  }),
-  ecosystemProject: buildImageSizeProp({
-    sm: '320px',
-    md: '276px',
-    lg: '340px',
-    fallbackSize: '304px',
-  }),
 }
 
 function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
@@ -61,6 +42,25 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   )
 }
 
+function CardImage({ image }: Pick<CardProps, 'image'>) {
+  if (!image) {
+    return null
+  }
+
+  const { padding, fallback, ...rest } = image
+
+  return (
+    <div className={clsx('relative aspect-video', padding && 'mx-4 my-2')}>
+      <DynamicImage
+        {...rest}
+        fill
+        className={imageStyle}
+        fallback={{ ...fallback, className: imageStyle }}
+      />
+    </div>
+  )
+}
+
 const imageStyle = 'rounded-lg px-1 pt-1'
 
 export function Card({
@@ -69,14 +69,11 @@ export function Card({
   metaData,
   description,
   cta,
-  entryType = 'blogPost',
   image,
   borderColor = 'brand-500',
   textIsClamped = false,
   as: Tag = 'li',
 }: CardProps) {
-  const dynamicImageWithPadding = image && image.src && image.padding
-
   return (
     <Tag
       className={clsx(
@@ -84,22 +81,7 @@ export function Card({
         borderStyles[borderColor],
       )}
     >
-      {image && (
-        <div
-          className={clsx(
-            'relative aspect-video',
-            dynamicImageWithPadding && 'mx-6 mt-6',
-          )}
-        >
-          <DynamicImage
-            {...image}
-            fill
-            sizes={imageSizes[entryType]}
-            className={imageStyle}
-            fallback={{ ...image.fallback, className: imageStyle }}
-          />
-        </div>
-      )}
+      <CardImage image={image} />
 
       <div className="flex flex-col p-4">
         {tag && (
