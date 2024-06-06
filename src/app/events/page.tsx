@@ -38,6 +38,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getInvolvementLabel } from './utils/getInvolvementLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -191,7 +192,7 @@ export default function Events({ searchParams }: Props) {
                         <Card
                           key={slug}
                           title={title}
-                          tag={involvement}
+                          tag={getInvolvementLabel(involvement)}
                           metaData={metaData}
                           image={image}
                           borderColor="brand-400"
