@@ -52,7 +52,7 @@ export default function Grants() {
       <PageSection
         kicker="Opportunities"
         title="Grants and Funding Opportunities"
-        description="The Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories:"
+        description="Filecoin Foundation is seeking proposals for developer and data tooling, integrations, research and protocols, storage, retrieval, and the Filecoin Virtual Machine (FVM). These grants fall under the following categories."
       >
         <CardGrid cols="lgThree">
           {opportunitiesData.map((card) => {

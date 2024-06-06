@@ -111,7 +111,7 @@ export default function Home() {
       </PageSection>
       <CTASection
         title="Become Part of Our Vibrant Community"
-        description="Join Filecoin's Slack to engage with the community and stay updated on the latest&nbsp;developments."
+        description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."
         cta={{
           href: FILECOIN_URLS.social.slack.href,
           text: 'Join Filecoin Slack',
