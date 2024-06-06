@@ -82,27 +82,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - name: "home"
-        label: "Home"
-        file: "src/content/pages/home.md"
-        fields:
-          - *header_config
-          - *meta_config
-          - name: "featured_ecosystem_projects"
-            label: "Featured Ecosystem Projects"
-            widget: "relation"
-            required: false
-            collection: "ecosystem"
-            value_field: "slug"
-            search_fields:
-              - "slug"
-              - "title"
-            display_fields:
-              - "title"
-            multiple: true
-            min: 6
-            max: 6
-
       - name: "about"
         label: "About"
         file: "src/content/pages/about.md"
@@ -127,13 +106,6 @@ collections:
               - "title"
           - *meta_config
 
-      - name: "governance"
-        label: "Governance"
-        file: "src/content/pages/governance.md"
-        fields:
-          - *header_config
-          - *meta_config
-
       - name: "ecosystem"
         label: "Ecosystem"
         file: "src/content/pages/ecosystem.md"
@@ -141,9 +113,9 @@ collections:
           - *header_config
           - *meta_config
 
-      - name: "grants"
-        label: "Grants"
-        file: "src/content/pages/grants.md"
+      - name: "employee-privacy-policy"
+        label: "Employee Privacy Policy"
+        file: "src/content/pages/employee-privacy-policy.md"
         fields:
           - *header_config
           - *meta_config
@@ -164,6 +136,41 @@ collections:
             display_fields:
               - "title"
           - *meta_config
+
+      - name: "governance"
+        label: "Governance"
+        file: "src/content/pages/governance.md"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "grants"
+        label: "Grants"
+        file: "src/content/pages/grants.md"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "home"
+        label: "Home"
+        file: "src/content/pages/home.md"
+        fields:
+          - *header_config
+          - *meta_config
+          - name: "featured_ecosystem_projects"
+            label: "Featured Ecosystem Projects"
+            widget: "relation"
+            required: false
+            collection: "ecosystem"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
 
       - name: "privacy-policy"
         label: "Privacy Policy"
