@@ -59,14 +59,14 @@ Scale
 
 [Interplanetary Consensus (IPC)](https://www.ipc.space/) which will bring scalability to the Filecoin network, will unlock unmatched capacity and customizability, and enable new use cases.
 
-<iframe
-width="560"
-height="315"
-src="https://www.youtube.com/embed/8dZjqd3SzBo?si=Oe81_skdtgz2L_3X"
-title="YouTube video player"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-style="border:0;">
+<iframe 
+  src="https://www.youtube.com/embed/8dZjqd3SzBo?si=Oe81_skdtgz2L_3X"
+  title="From Roadmap to Reality"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  allowfullscreen>
 </iframe>
 
 For more on the Filecoin ecosystem, and the future of decentralized tech, follow DWeb Decoded on [YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy), [Spotify](https://open.spotify.com/show/5GPjDV4AVv7xwmg0ByySac?si=af7b9bf4b2994237), or your favorite podcasting platform.

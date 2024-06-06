@@ -1,20 +1,18 @@
 ---
-title:
-  "Recapping Filecoin Foundation at Davos: IPFS Deployed in Space, Exploring
-  the Future of AI and Web3, Future-Proofing Regulation, and More"
-slug: recapping-filecoin-foundation-at-davos-ipfs-deployed-in-space-exploring-the-future-of-ai-and-web3-future-proofing-regulation-and-more
-created-on: 2024-02-15T14:07:25.997000Z
-updated-on: 2024-02-15T14:07:26.019000Z
-published-on: 2024-02-15T14:07:26.031000Z
+title: "Recapping Filecoin Foundation at Davos: IPFS Deployed in Space,
+  Exploring the Future of AI and Web3, Future-Proofing Regulation, and More"
+created-on: 2024-02-15T14:07:25.997Z
+updated-on: 2024-02-15T14:07:26.019Z
+published-on: 2024-02-15T14:07:26.031Z
 category: events
-description:
-  The Filecoin Sanctuary in Davos brought together the world’s brightest
-  minds across business, government, and technology to discuss the future of the decentralized
-  web.
+description: The Filecoin Sanctuary in Davos brought together the world’s
+  brightest minds across business, government, and technology to discuss the
+  future of the decentralized web.
+recommended-posts: []
+slug: recapping-filecoin-foundation-at-davos-ipfs-deployed-in-space-exploring-the-future-of-ai-and-web3-future-proofing-regulation-and-more
 image:
   url: /assets/images/020724-davos.png
-  alt: "Recapping Filecoin Foundation at Davos"
-recommended-posts: []
+  alt: Recapping Filecoin Foundation at Davos
 seo:
   noindex: false
   twitter:title: summary
@@ -22,9 +20,8 @@ seo:
   twitter:image: /assets/images/020724-davos.png
   og:image: /assets/images/020724-davos.png
   title: "Filecoin Foundation at Davos: Key Highlights and Future Prospects"
-  description:
-    Recap of Filecoin Foundation at Davos. Highlights include IPFS in space,
-    AI and Web3 future, and more.
+  description: Recap of Filecoin Foundation at Davos. Highlights include IPFS in
+    space, AI and Web3 future, and more.
 ---
 
 Hosted by Filecoin Foundation and brought to you by CNBC, the Filecoin Sanctuary in Davos brought together the world’s brightest minds across business, government, and technology to discuss the future of the decentralized web.
@@ -39,9 +36,15 @@ Here are some panel highlights:
 
 Artificial Intelligence was front and center in Davos this year. Sir Tim Berners-Lee, Inventor of the World Wide Web was joined by FF’s Clara Tsao, Meta’s Yann LeCun, and VERSES’ Karl Friston in a session moderated by Gillian Tett of the Financial Times. Together they discussed how decentralized technologies can help with AI data integrity, accessibility, and verifiability.
 
-<iframe src="https://player.vimeo.com/video/913091129?h=94ed8ee073" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-
-<p><a href="https://vimeo.com/913091129">AI and Decentralization | The Filecoin Sanctuary 2024</a> from <a href="https://vimeo.com/user215464696">Filecoin Foundation</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<iframe 
+  src="https://player.vimeo.com/video/913091129?h=94ed8ee073"
+  title="AI and Decentralization | The Filecoin Sanctuary 2024"
+  height="360"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  allowfullscreen>
+</iframe>
 
 **Talking Regulation and our Latest Space Announcements on the Sanctuary Stage**
 
@@ -53,7 +56,15 @@ This mission, conducted with Lockheed Martin-developed software, demonstrated ho
 
 Commissioner Pham applauded the successful completion of this mission, adding, “It’s amazing to see what we as humans can accomplish.”
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/32MRo6zv9wE?si=ou30OG_wsKoPqbST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe 
+  src="https://www.youtube.com/embed/32MRo6zv9wE?si=ou30OG_wsKoPqbST"
+  title="Navigating the Crypto Policy"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  allowfullscreen>
+</iframe>
 
 And ICYMI: [Dive deeper](https://fil.org/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/) into why this milestone is critical for advancing networking in space.
 
@@ -61,7 +72,15 @@ And ICYMI: [Dive deeper](https://fil.org/blog/filecoin-foundation-successfully-d
 
 On a panel about how AI, blockchain, and predictive modeling are helping achieve sustainability goals, FF Founding Officer Megan Klimen summed up the need to consider global challenges when advocating for new technologies: “We are past the point in time where we can develop new technologies without climate first and foremost in our minds.”
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eaWxODvlmes?si=wSSap18Bmmk4Kml1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe 
+  src="https://www.youtube.com/embed/eaWxODvlmes?si=wSSap18Bmmk4Kml1"
+  title="Navigating the Crypto Policy Landscape"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 
 **Regulating Emerging Technologies**
 
@@ -71,7 +90,15 @@ Together they talked about how regulators can create clear rules of the road for
 
 Disparte noted that overzealous regulation can slow job growth, hinder technological progress, and hamstring the industries of the future. His message to regulators: “If you’re not going to do something, at least do no harm.”
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3V0xcj1-4VU?si=OR5hTBFyqQZTNeW-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe 
+  src="https://www.youtube.com/embed/3V0xcj1-4VU?si=OR5hTBFyqQZTNeW-"
+  title="Regulating Emerging Technologies"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  allowfullscreen>
+</iframe>
 
 Thank you to the thousands of attendees who joined us on the ground in Davos to learn more about the benefits of the Filecoin network and the projects across our ecosystem that are working together to build the next generation of the web.
 

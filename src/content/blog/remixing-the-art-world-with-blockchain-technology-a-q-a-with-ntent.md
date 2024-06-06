@@ -36,13 +36,13 @@ We are an artist collective and kulturhaus designing new artistic realities thro
 
 On March 16th, 2023, we produced [PETLS](https://youtu.be/8pwyvMJrN1Q). This immersive experience combined generative art with physical environments to tell the story of growth in five parts, which opened the art world to a new and diverse community of creatives in Berlin.
 
-<iframe
-  width="560"
-  height="315"
+<iframe 
   src="https://www.youtube.com/embed/8pwyvMJrN1Q"
-  title="YouTube video player"
-  style="border:0;"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+  title="Petls - a Solo Exhibition by Jiwa"
+  height="315"
+  width="560"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
 </iframe>
 
