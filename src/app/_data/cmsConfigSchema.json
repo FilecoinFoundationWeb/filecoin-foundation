@@ -26,18 +26,20 @@
   },
   "meta_config": {
     "name": "seo",
-    "label": "SEO",
+    "label": "SEO Metadata",
     "widget": "object",
     "fields": [
       {
         "name": "title",
-        "label": "Title",
-        "widget": "string"
+        "label": "Meta Title",
+        "widget": "string",
+        "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
       },
       {
         "name": "description",
         "label": "Meta Description",
-        "widget": "text"
+        "widget": "text",
+        "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
       },
       {
         "name": "og",
@@ -112,18 +114,20 @@
           "fields": [
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -235,18 +239,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -335,18 +341,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -449,18 +457,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -549,18 +559,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -649,18 +661,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -766,18 +780,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -880,18 +896,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -980,18 +998,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -1080,18 +1100,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -1260,7 +1282,7 @@
         {
           "name": "recommended-posts",
           "label": "Recommended Posts",
-          "widget": "relation",
+          "widget": "hidden",
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
@@ -1275,18 +1297,20 @@
         },
         {
           "name": "seo",
-          "label": "SEO",
+          "label": "SEO Metadata",
           "widget": "object",
           "fields": [
             {
               "name": "title",
-              "label": "Title",
-              "widget": "string"
+              "label": "Meta Title",
+              "widget": "string",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "description",
               "label": "Meta Description",
-              "widget": "text"
+              "widget": "text",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "og",
@@ -1671,21 +1695,9 @@
           "required": true
         },
         {
-          "name": "body",
-          "label": "Long Description",
-          "widget": "markdown",
-          "required": false
-        },
-        {
           "name": "website",
           "label": "Website",
           "widget": "string"
-        },
-        {
-          "name": "repo",
-          "label": "GitHub Repo",
-          "widget": "string",
-          "required": false
         },
         {
           "name": "tech",
@@ -1696,6 +1708,12 @@
             "filecoin",
             "ipfs"
           ]
+        },
+        {
+          "name": "repo",
+          "label": "GitHub Repo",
+          "widget": "string",
+          "required": false
         },
         {
           "name": "featured-content",
@@ -1722,25 +1740,33 @@
           "required": false
         },
         {
-          "name": "news-update",
-          "label": "What's New?",
+          "name": "body",
+          "label": "Long Description",
           "widget": "markdown",
           "required": false
         },
         {
+          "name": "news-update",
+          "label": "What's New?",
+          "widget": "text",
+          "required": false
+        },
+        {
           "name": "seo",
-          "label": "SEO",
+          "label": "SEO Metadata",
           "widget": "object",
           "fields": [
             {
               "name": "title",
-              "label": "Title",
-              "widget": "string"
+              "label": "Meta Title",
+              "widget": "string",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "description",
               "label": "Meta Description",
-              "widget": "text"
+              "widget": "text",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "og",
@@ -1853,6 +1879,7 @@
           "label": "External Link",
           "widget": "object",
           "required": false,
+          "hint": "External link to the event page",
           "fields": [
             {
               "name": "href",
@@ -1886,7 +1913,7 @@
           "fields": [
             {
               "name": "url",
-              "label": "Image",
+              "label": "URL",
               "widget": "image"
             },
             {
@@ -1918,18 +1945,20 @@
         },
         {
           "name": "seo",
-          "label": "SEO",
+          "label": "SEO Metadata",
           "widget": "object",
           "fields": [
             {
               "name": "title",
-              "label": "Title",
-              "widget": "string"
+              "label": "Meta Title",
+              "widget": "string",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "description",
               "label": "Meta Description",
-              "widget": "text"
+              "widget": "text",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "og",
