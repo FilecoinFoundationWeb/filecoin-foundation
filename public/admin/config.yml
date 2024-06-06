@@ -258,7 +258,7 @@ collections:
         required: false
       - name: "recommended-posts"
         label: "Recommended Posts"
-        widget: "relation"
+        widget: "hidden"
         required: false
         collection: "blog"
         value_field: "src/content/blog/{{slug}}.md"
@@ -461,17 +461,9 @@ collections:
         label: Short Description
         widget: string
         required: true
-      - name: body
-        label: Long Description
-        widget: markdown
-        required: false
       - name: website
         label: Website
         widget: string
-      - name: repo
-        label: GitHub Repo
-        widget: string
-        required: false
       - name: tech
         label: Technologies Used
         widget: select
@@ -479,6 +471,10 @@ collections:
         options:
           - filecoin
           - ipfs
+      - name: repo
+        label: GitHub Repo
+        widget: string
+        required: false
       - name: featured-content
         label: Featured Content
         widget: string
@@ -495,9 +491,13 @@ collections:
         label: Using Filecoin Since
         widget: datetime
         required: false
+      - name: body
+        label: Long Description
+        widget: markdown
+        required: false
       - name: news-update
         label: What's New?
-        widget: markdown
+        widget: text
         required: false
       - *meta_config
 
@@ -535,6 +535,7 @@ collections:
         label: "External Link"
         widget: "object"
         required: false
+        hint: "External link to the event page"
         fields:
           - name: "href"
             label: "Href"
@@ -556,7 +557,7 @@ collections:
         widget: "object"
         fields:
           - name: "url"
-            label: "Image"
+            label: "URL"
             widget: "image"
           - name: "alt"
             label: "Alt Text"
