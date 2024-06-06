@@ -20,10 +20,9 @@ export function FocusAreaCard({
         {...image}
         className="aspect-video w-full rounded object-cover sm:w-60 md:w-80 lg:w-full"
         sizes={buildImageSizeProp({
-          sm: '100vw',
-          md: '250px',
-          lg: '320px',
-          fallbackSize: '300px',
+          startSize: '100vw',
+          sm: '240px',
+          md: '320px',
         })}
       />
 

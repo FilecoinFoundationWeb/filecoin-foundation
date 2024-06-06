@@ -22,6 +22,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -153,7 +154,7 @@ export default function Blog({ searchParams }: Props) {
                         publishedOn,
                       } = post
 
-                      const isFirstTwo = i < 2
+                      const isFirstTwoImages = i < 2
 
                       return (
                         <Card
@@ -172,7 +173,13 @@ export default function Blog({ searchParams }: Props) {
                             src: image.url,
                             alt: image.alt,
                             fallback: graphicsData.imageFallback,
-                            priority: isFirstTwo,
+                            priority: isFirstTwoImages,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '350px',
+                              md: '470px',
+                              lg: '360px',
+                            }),
                           }}
                         />
                       )
