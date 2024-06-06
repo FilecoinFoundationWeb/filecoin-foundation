@@ -1,5 +1,4 @@
 import {
-  CMSFieldOption,
   CMSFieldConfig,
   CMSCollectionConfig,
   CMSConfig,
@@ -28,7 +27,7 @@ export function getCollectionConfig(collectionName: string): {
 export function getCMSCollection(
   collections: CMSCollectionConfig[] = [],
   collectionName: string,
-): CMSFieldConfig[] | null {
+) {
   const collection = collections.find(
     (collection) => collection.name === collectionName,
   )
@@ -44,7 +43,7 @@ export function getCMSCollection(
 export function getCMSFieldOptions(
   fields: CMSFieldConfig[] = [],
   fieldName: string,
-): CMSFieldOption[] {
+) {
   const field = fields.find((field) => field.name === fieldName)
 
   if (!field) {
