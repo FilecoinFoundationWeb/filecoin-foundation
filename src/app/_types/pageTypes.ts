@@ -8,5 +8,5 @@ export type PageAttributes = {
   seo: Pick<SeoMetadata, 'title' | 'description'>
   featured_entry?: string
   featured_ecosystem_projects?: string[]
-  grant_graduates?: string[]
+  featured_grant_graduates?: string[]
 }

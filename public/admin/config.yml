@@ -145,6 +145,19 @@ collections:
         file: "src/content/pages/grants.md"
         fields:
           - *header_config
+          - name: "featured_grant_graduates"
+            label: "Featured Grant Graduates"
+            widget: "relation"
+            collection: "ecosystem_projects"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
           - *meta_config
 
       - name: "events"
@@ -553,27 +566,3 @@ collections:
           - label: "Supported"
             value: "supported"
       - *meta_config
-
-  - name: grants
-    label: Grants
-    label_singular: Grants
-    folder: "src/content/grants/"
-    create: true
-    identifier_field: name
-    extension: md
-    slug: "{{slug}}"
-    fields:
-      - name: "grants-graduates"
-        label: "Grants Graduates"
-        widget: "relation"
-        required: false
-        collection: "ecosystem"
-        value_field: "slug"
-        search_fields:
-          - "slug"
-          - "title"
-        display_fields:
-          - "title"
-        multiple: true
-        min: 6
-        max: 6

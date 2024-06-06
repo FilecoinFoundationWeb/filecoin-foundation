@@ -748,6 +748,99 @@
               ]
             },
             {
+              "name": "featured_grant_graduates",
+              "label": "Featured Grant Graduates",
+              "widget": "relation",
+              "collection": "ecosystem_projects",
+              "value_field": "slug",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "multiple": true,
+              "min": 6,
+              "max": 6
+            },
+            {
+              "name": "seo",
+              "label": "SEO",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "name": "seo",
               "label": "SEO",
               "widget": "object",
@@ -1968,36 +2061,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "grants",
-      "label": "Grants",
-      "label_singular": "Grants",
-      "folder": "src/content/grants/",
-      "create": true,
-      "identifier_field": "name",
-      "extension": "md",
-      "slug": "{{slug}}",
-      "fields": [
-        {
-          "name": "grants-graduates",
-          "label": "Grants Graduates",
-          "widget": "relation",
-          "required": false,
-          "collection": "ecosystem",
-          "value_field": "slug",
-          "search_fields": [
-            "slug",
-            "title"
-          ],
-          "display_fields": [
-            "title"
-          ],
-          "multiple": true,
-          "min": 6,
-          "max": 6
         }
       ]
     }

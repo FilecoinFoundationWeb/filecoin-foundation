@@ -24,7 +24,11 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { grant_graduates: grantGraduatesSlugs, header, seo } = attributes
+const {
+  featured_grant_graduates: grantGraduatesSlugs,
+  header,
+  seo,
+} = attributes
 const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
@@ -39,7 +43,10 @@ export default function Grants() {
         title={header.title}
         description={header.description}
         image={{ type: 'static', ...graphicsData.grants }}
-        cta={{ href: FILECOIN_FOUNDATION_URLS.grants.email.href, text: 'Apply Now' }}
+        cta={{
+          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
+          text: 'Apply Now',
+        }}
       />
 
       <PageSection
