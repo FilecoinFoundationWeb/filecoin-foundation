@@ -20,7 +20,7 @@ header_config: &header_config
 
 meta_config: &meta_config
   name: "seo"
-  label: "SEO"
+  label: "SEO Metadata"
   widget: "object"
   fields:
     - name: "title"
