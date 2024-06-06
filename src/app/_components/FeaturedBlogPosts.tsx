@@ -1,11 +1,13 @@
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
 import { PATHS } from '@/constants/paths'
+import { graphicsData } from '@/data/graphicsData'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
@@ -33,11 +35,20 @@ export function FeaturedBlogPosts() {
             tag={category}
             title={title}
             description={description}
-            image={image}
             textIsClamped={true}
             cta={{
               href: `${PATHS.BLOG.path}/${slug}`,
               text: 'Learn More',
+            }}
+            image={{
+              src: image.url,
+              alt: image.alt,
+              fallback: graphicsData.imageFallback,
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '350px',
+                md: '480px',
+              }),
             }}
           />
         ),

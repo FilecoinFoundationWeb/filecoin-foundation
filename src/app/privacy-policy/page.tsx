@@ -19,7 +19,9 @@ export default function PrivacyPolicy() {
   return (
     <article>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <PageHeader.Title>{title}</PageHeader.Title>
+      <header>
+        <PageHeader.Title>{title}</PageHeader.Title>
+      </header>
       <section className="prose mt-6">
         <Content />
       </section>

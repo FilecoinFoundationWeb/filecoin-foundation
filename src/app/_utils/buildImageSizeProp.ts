@@ -5,7 +5,7 @@ const screens = theme.screens
 type Breakpoint = keyof typeof screens
 
 type Width = `${number}px` | `${number}vw`
-type Args = Partial<Record<Breakpoint, Width>> & { fallbackSize: Width }
+type Args = { startSize: Width } & Partial<Record<Breakpoint, Width>>
 
 function getScreenWidthNumber(screenSize: Breakpoint) {
   const widthAsString = screens[screenSize].replace('px', '')
@@ -15,7 +15,7 @@ function getScreenWidthNumber(screenSize: Breakpoint) {
 }
 
 export function buildImageSizeProp(args: Args) {
-  const { fallbackSize, ...breakpointWidthPairs } = args
+  const { startSize, ...breakpointWidthPairs } = args
 
   const breakpointWidthPairsArray = Object.entries(
     breakpointWidthPairs,
@@ -35,11 +35,11 @@ export function buildImageSizeProp(args: Args) {
   const mediaQueriesArray = sortedBreakpointWidthPairsArray.map(
     ([screen, width]) => {
       const screenWidthNumber = getScreenWidthNumber(screen)
-      const mediaQuery = `(max-width: ${screenWidthNumber - 1}px)`
+      const mediaQuery = `(min-width: ${screenWidthNumber}px)`
 
       return `${mediaQuery} ${width}`
     },
   )
 
-  return `${mediaQueriesArray.join(', ')}, ${fallbackSize}`
+  return `${mediaQueriesArray.join(', ')}, ${startSize}`
 }

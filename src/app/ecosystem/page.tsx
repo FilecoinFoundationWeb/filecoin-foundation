@@ -23,6 +23,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getCategoryDataFromDirectory,
   getCategorySettingsFromMap,
@@ -150,22 +151,36 @@ export default function Ecosystem({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((project) => {
+                    {paginatedResults.map((project, i) => {
                       const { slug, title, description, image, category } =
                         project
+
+                      const isFirstTwoImages = i < 2
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          image={image}
                           tag={categoryData[category]}
-                          entryType="ecosystemProject"
                           cta={{
                             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            padding: true,
+                            priority: isFirstTwoImages,
+                            objectFit: 'contain',
+                            fallback: graphicsData.imageFallback,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '320px',
+                              md: '440px',
+                              lg: '280px',
+                            }),
                           }}
                         />
                       )

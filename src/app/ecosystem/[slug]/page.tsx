@@ -83,15 +83,15 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
                 alt={image.alt}
                 className="object-contain object-left-bottom"
                 sizes={buildImageSizeProp({
-                  sm: '100vw',
-                  lg: '50vw',
-                  xl: '700px',
-                  fallbackSize: '600px',
+                  startSize: '100vw',
+                  md: '730px',
+                  lg: '660px',
+                  xl: '600px',
                 })}
               />
             </div>
           ) : (
-            <StaticImage priority {...graphicsData.logoFallback} />
+            <StaticImage priority {...graphicsData.imageFallback} />
           )}
         </header>
 
