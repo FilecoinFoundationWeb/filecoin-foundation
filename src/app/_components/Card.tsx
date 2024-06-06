@@ -42,6 +42,8 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   )
 }
 
+const imageStyle = 'rounded-lg px-1 pt-1'
+
 function CardImage({ image }: Pick<CardProps, 'image'>) {
   if (!image) {
     return null
@@ -60,8 +62,6 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
     </div>
   )
 }
-
-const imageStyle = 'rounded-lg px-1 pt-1'
 
 export function Card({
   title,
