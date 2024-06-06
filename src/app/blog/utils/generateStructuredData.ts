@@ -29,7 +29,7 @@ export function generateStructuredData(
         position: index + 1,
         item: {
           '@type': 'BlogPosting',
-          name: post.title,
+          headline: post.title,
           description: post.description,
           image: post.image.url,
           url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
