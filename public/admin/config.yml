@@ -87,12 +87,10 @@ collections:
         file: "src/content/pages/home.md"
         fields:
           - *header_config
-          - *meta_config
           - name: "featured_ecosystem_projects"
             label: "Featured Ecosystem Projects"
             widget: "relation"
-            required: false
-            collection: "ecosystem"
+            collection: "ecosystem_projects"
             value_field: "slug"
             search_fields:
               - "slug"
@@ -102,6 +100,7 @@ collections:
             multiple: true
             min: 6
             max: 6
+          - *meta_config
 
       - name: "about"
         label: "About"

@@ -217,6 +217,23 @@
               ]
             },
             {
+              "name": "featured_ecosystem_projects",
+              "label": "Featured Ecosystem Projects",
+              "widget": "relation",
+              "collection": "ecosystem_projects",
+              "value_field": "slug",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "multiple": true,
+              "min": 6,
+              "max": 6
+            },
+            {
               "name": "seo",
               "label": "SEO",
               "widget": "object",
@@ -291,24 +308,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "featured_ecosystem_projects",
-              "label": "Featured Ecosystem Projects",
-              "widget": "relation",
-              "required": false,
-              "collection": "ecosystem",
-              "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
-              "multiple": true,
-              "min": 6,
-              "max": 6
             }
           ]
         },
