@@ -84,27 +84,23 @@ export default function About() {
       <PageSection kicker="Insights" title="Reports">
         <CardGrid cols="lgTwo">
           {reportsData.map(({ title, description, link, image }, index) => {
-            const imageProp = image
-              ? {
-                  src: image.url.src,
-                  alt: image.alt,
-                  fallback: graphicsData.imageFallback,
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '350px',
-                    md: '480px',
-                  }),
-                }
-              : undefined
+            const imageProp = image && {
+              ...image,
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '710px',
+                md: '980px',
+                lg: '480px',
+              }),
+            }
 
             return (
-              <div
+              <li
                 key={title}
-                className={clsx({
-                  'lg:row-span-2': index === 0,
-                })}
+                className={clsx({ 'lg:row-span-2': index === 0 })}
               >
                 <Card
+                  as="div"
                   title={title}
                   description={description}
                   image={imageProp}
@@ -114,7 +110,7 @@ export default function About() {
                     icon: Files,
                   }}
                 />
-              </div>
+              </li>
             )
           })}
         </CardGrid>
