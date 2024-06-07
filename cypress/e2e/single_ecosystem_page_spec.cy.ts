@@ -4,12 +4,13 @@ import { verifyMetadata } from '../support/verifyMetadataUtil'
 
 describe('Random Ecosystem Page', function () {
   it('should check metadata of a random ecosystem page', function () {
-    const ecosystemDirectoryPath = PATHS.ECOSYSTEM.entriesContentPath as string
+    const ecosystemDirectoryPath = PATHS.ECOSYSTEM_EXPLORER
+      .entriesContentPath as string
 
     getRandomSlug(ecosystemDirectoryPath).then((slug) => {
       verifyMetadata(
         ecosystemDirectoryPath,
-        `${PATHS.ECOSYSTEM.path}/${slug}`,
+        `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
         slug,
       )
     })
