@@ -50,9 +50,14 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
+
 const { header, seo } = attributes
 
-export const metadata = createMetadata({ seo, path: PATHS.ECOSYSTEM.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.ECOSYSTEM.path,
+  useAbsoluteTitle: true,
+})
 
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
