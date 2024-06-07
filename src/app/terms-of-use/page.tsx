@@ -3,7 +3,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { attributes, react as Content } from '@/content/pages/terms.md'
+import { attributes, react as Content } from '@/content/pages/terms-of-use.md'
 
 import { PATHS } from '@/constants/paths'
 
@@ -11,7 +11,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
-export const metadata = createMetadata({ seo, path: PATHS.TERMS.path })
+export const metadata = createMetadata({ seo, path: PATHS.TERMS_OF_USE.path })
 
 export default function Terms() {
   const { title } = header

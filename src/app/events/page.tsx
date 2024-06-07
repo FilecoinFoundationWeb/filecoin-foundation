@@ -210,13 +210,12 @@ export default function Events({ searchParams }: Props) {
                             src: image.url,
                             alt: image.alt,
                             priority: isFirstTwoImages,
-                            padding: true,
                             fallback: graphicsData.imageFallback,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
-                              sm: '320px',
-                              md: '440px',
-                              lg: '330px',
+                              sm: '350px',
+                              md: '450px',
+                              lg: '360px',
                             }),
                           }}
                         />

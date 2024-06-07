@@ -30,7 +30,7 @@ export function FeaturedGrantsGraduates({
           description={description}
           textIsClamped={true}
           cta={{
-            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Read More',
             icon: BookOpen,
           }}

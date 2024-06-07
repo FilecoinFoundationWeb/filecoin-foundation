@@ -328,7 +328,7 @@
         {
           "name": "ecosystem",
           "label": "Ecosystem",
-          "file": "src/content/pages/ecosystem.md",
+          "file": "src/content/pages/ecosystem-explorer.md",
           "fields": [
             {
               "name": "header",
@@ -1090,7 +1090,7 @@
         {
           "name": "terms",
           "label": "Terms",
-          "file": "src/content/pages/terms.md",
+          "file": "src/content/pages/terms-of-use.md",
           "fields": [
             {
               "name": "header",
