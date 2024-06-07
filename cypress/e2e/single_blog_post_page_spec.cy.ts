@@ -1,21 +1,14 @@
-import { verifyCanonicalLink } from '../../cypress/support/canonicalLinkUtil'
 import { PATHS } from '../../src/app/_constants/paths'
+import { verifyMetadata } from '../support/verifyMetadataUtil'
 
-describe('Single Blog Post Page', function () {
-  it('should check metadata of the first blog post', function () {
-    cy.visit(PATHS.BLOG.path)
-
-    cy.get(`a[href*="${PATHS.BLOG.path}/"]`)
-      .first()
-      .invoke('attr', 'href')
-      .then((href) => {
-        if (typeof href === 'string') {
-          cy.visit(href)
-
-          verifyCanonicalLink(href)
-        } else {
-          throw new Error('href is undefined')
-        }
-      })
+describe('Single Specific Blog Post Page', function () {
+  it('should check metadata of the specific blog post', function () {
+    const slug =
+      'driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024'
+    verifyMetadata(
+      PATHS.BLOG.entriesContentPath as string,
+      `${PATHS.BLOG.path}/${slug}`,
+      slug,
+    )
   })
 })
