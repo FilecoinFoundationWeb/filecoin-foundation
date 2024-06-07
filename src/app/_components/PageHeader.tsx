@@ -30,7 +30,7 @@ type PageHeaderProps = {
     | ({ type: 'dynamic' } & DynamicImageProps)
 }
 
-const sharedContainerStyle = 'aspect-video lg:aspect-auto lg:w-1/2'
+const sharedContainerStyle = 'relative aspect-video lg:aspect-auto lg:w-1/2'
 const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
 
 function Title({ children }: TitleProps) {
@@ -51,9 +51,11 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
       <div className={sharedContainerStyle}>
         <StaticImage
           {...staticImage}
+          fill
           priority
           quality={100}
           className={sharedImageStyle}
+          sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
         />
       </div>
     )
@@ -63,7 +65,7 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
     const dynamicImage = rest as DynamicImageProps
 
     return (
-      <div className={clsx('relative', sharedContainerStyle)}>
+      <div className={sharedContainerStyle}>
         <DynamicImage
           {...dynamicImage}
           fill

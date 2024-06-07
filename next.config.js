@@ -19,6 +19,7 @@ const nextConfig = {
         '.next/cache/**',
         '.vscode/**',
         'cypress/**',
+        '.netlify/**',
         'public/**',
         'scripts/**',
         'src/app/**',
@@ -28,8 +29,45 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source:
+          '/blog/guest-post-if-the-library-of-alexandra-were-built-better/',
+        destination:
+          '/blog/guest-post-if-the-library-of-alexandria-were-built-better',
+        permanent: true,
+      },
+      {
+        source: '/davos',
+        destination: '/events/the-filecoin-sanctuary-davos-2024',
+        permanent: true,
+      },
+      {
+        source: '/davos-registration',
+        destination: '/events/the-filecoin-sanctuary-davos-2024',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem',
+        destination: '/ecosystem-explorer/',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem-projects/:path*',
+        destination: '/ecosystem-explorer/:path*',
+        permanent: true,
+      },
+      {
+        source: '/filaustin',
+        destination: '/events/fil-austin',
+        permanent: true,
+      },
+      {
         source: '/get-involved',
         destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/policy',
+        destination: '/privacy-policy',
         permanent: true,
       },
       {
@@ -40,6 +78,11 @@ const nextConfig = {
       {
         source: '/public-data/:path*',
         destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/terms',
+        destination: '/terms-of-use',
         permanent: true,
       },
     ]

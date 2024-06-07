@@ -55,7 +55,11 @@ const { categorySettings, validCategoryOptions } = getCategorySettings('events')
 const { featured_entry: featuredEventSlug, seo } = attributes
 const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
 
-export const metadata = createMetadata({ seo, path: PATHS.EVENTS.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.EVENTS.path,
+  useAbsoluteTitle: true,
+})
 
 function prepareMetaData(
   startDate: EventData['startDate'],

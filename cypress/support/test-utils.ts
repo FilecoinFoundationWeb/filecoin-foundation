@@ -1,21 +1,23 @@
 import matter from 'gray-matter'
 
-import { PATHS, PathConfig } from '../../src/app/_constants/paths'
-import { BASE_URL } from '../../src/app/_constants/siteMetadata'
+import { PathConfig } from '../../src/app/_constants/paths'
+import { verifyCanonicalLink } from '../support/verifyCanonicalLinkUtil'
+import { verifyPageTitle } from '../support/verifyPageTitleUtil'
 
 export function testPageMetadata({
   path: { mainContentPath, path, entriesContentPath },
   hasPageHeaderDescription = true,
   includesFeaturedEntry = false,
+  useAbsoluteTitle = false,
 }: {
   path: PathConfig
   hasPageHeaderDescription?: boolean
   includesFeaturedEntry?: boolean
+  useAbsoluteTitle?: boolean
 }) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${mainContentPath}.md`
 
-    // Retrieve and process the main content's metadata
     cy.readFile(filePath).then((markdownContent: string) => {
       const {
         header,
@@ -27,58 +29,30 @@ export function testPageMetadata({
         featured_entry?: string
       }
 
-      // Visit the current page
       cy.visit(path)
 
-      // Verify the page title
-      verifyPageTitle(path, seo.title)
+      verifyPageTitle(path, seo.title, useAbsoluteTitle)
 
-      // Conditional logic for pages with a featured entry
       if (includesFeaturedEntry && featuredSlug) {
         handleFeaturedEntry(entriesContentPath as string, featuredSlug)
       } else {
         verifyHeaderContent(header, hasPageHeaderDescription)
       }
 
-      // Verify the canonical link
       verifyCanonicalLink(path)
     })
   })
 }
 
-// Function to verify the page title
-function verifyPageTitle(path: string, seoTitle: string) {
-  const expectedTitle =
-    path === PATHS.HOME.path
-      ? 'Filecoin Foundation | Decentralized Storage Solutions'
-      : `${seoTitle} | Filecoin Foundation`
-
-  cy.title().should('eq', expectedTitle)
-}
-
-// Function to verify the canonical link
-function verifyCanonicalLink(path: string) {
-  const expectedCanonicalLink =
-    path === PATHS.HOME.path ? BASE_URL : `${BASE_URL}${path}`
-
-  cy.get('link[rel="canonical"]').should(
-    'have.attr',
-    'href',
-    expectedCanonicalLink,
-  )
-}
-
-// Function to handle verification of featured entry content
 function handleFeaturedEntry(entriesContentPath: string, slug: string) {
   const featuredEntryFilePath = `${entriesContentPath}/${slug}.md`
 
-  // Fetch and wrap the featured entry's data for later use
   cy.readFile(featuredEntryFilePath).then((content: string) => {
     const { data } = matter(content)
     cy.wrap(data).as('featuredEntryData')
   })
 
-  cy.get('@featuredEntryData').then((featuredEntryData) => {
+  cy.get('@featuredEntryData').then((featuredEntryData: unknown) => {
     const entry = featuredEntryData as unknown as {
       title: string
       description: string
@@ -87,7 +61,6 @@ function handleFeaturedEntry(entriesContentPath: string, slug: string) {
   })
 }
 
-// Function to verify the header's title and description
 function verifyHeaderContent(
   { title, description }: { title: string; description: string | string[] },
   hasPageHeaderDescription: boolean,
@@ -99,7 +72,6 @@ function verifyHeaderContent(
       cy.get('h1').should('have.text', title)
 
       if (hasPageHeaderDescription && description) {
-        // Handle case if description is string[] or string type
         if (Array.isArray(description)) {
           description.forEach((text: string) => {
             cy.get('p').should('contain.text', text)
