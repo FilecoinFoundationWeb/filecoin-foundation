@@ -29,8 +29,8 @@ export const desktopNavigationItems = {
   ],
   communityItems: [
     {
-      label: PATHS.ECOSYSTEM.label,
-      href: PATHS.ECOSYSTEM.path,
+      label: PATHS.ECOSYSTEM_EXPLORER.label,
+      href: PATHS.ECOSYSTEM_EXPLORER.path,
       description: 'Learn about various ecosystem projects or submit your own',
     },
     {

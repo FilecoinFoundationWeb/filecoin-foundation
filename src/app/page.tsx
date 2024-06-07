@@ -93,7 +93,7 @@ export default function Home() {
         <Button
           className="sm:self-center"
           variant="primary"
-          href={PATHS.ECOSYSTEM.path}
+          href={PATHS.ECOSYSTEM_EXPLORER.path}
         >
           View All
         </Button>
