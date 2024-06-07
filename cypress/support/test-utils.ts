@@ -1,16 +1,18 @@
 import matter from 'gray-matter'
 
 import { PATHS, PathConfig } from '../../src/app/_constants/paths'
-import { BASE_URL } from '../../src/app/_constants/siteMetadata'
+import { BASE_URL, ORGANIZATION_NAME } from '../../src/app/_constants/siteMetadata'
 
 export function testPageMetadata({
   path: { mainContentPath, path, entriesContentPath },
   hasPageHeaderDescription = true,
   includesFeaturedEntry = false,
+  useAbsoluteTitle = false,
 }: {
   path: PathConfig
   hasPageHeaderDescription?: boolean
   includesFeaturedEntry?: boolean
+  useAbsoluteTitle?: boolean
 }) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${mainContentPath}.md`
@@ -31,7 +33,7 @@ export function testPageMetadata({
       cy.visit(path)
 
       // Verify the page title
-      verifyPageTitle(path, seo.title)
+      verifyPageTitle(path, seo.title, useAbsoluteTitle)
 
       // Conditional logic for pages with a featured entry
       if (includesFeaturedEntry && featuredSlug) {
@@ -47,11 +49,12 @@ export function testPageMetadata({
 }
 
 // Function to verify the page title
-function verifyPageTitle(path: string, seoTitle: string) {
-  const expectedTitle =
-    path === PATHS.HOME.path
-      ? 'Filecoin Foundation | Decentralized Storage Solutions'
-      : `${seoTitle} | Filecoin Foundation`
+function verifyPageTitle(path: string, seoTitle: string, useAbsoluteTitle: boolean) {
+  const expectedTitle = useAbsoluteTitle
+    ? seoTitle
+    : path === PATHS.HOME.path
+      ? `${ORGANIZATION_NAME} | Decentralized Storage Solutions`
+      : `${seoTitle} | ${ORGANIZATION_NAME}`
 
   cy.title().should('eq', expectedTitle)
 }
@@ -78,7 +81,7 @@ function handleFeaturedEntry(entriesContentPath: string, slug: string) {
     cy.wrap(data).as('featuredEntryData')
   })
 
-  cy.get('@featuredEntryData').then((featuredEntryData) => {
+  cy.get('@featuredEntryData').then((featuredEntryData: unknown) => {
     const entry = featuredEntryData as unknown as {
       title: string
       description: string
