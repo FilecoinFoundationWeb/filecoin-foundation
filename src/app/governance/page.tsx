@@ -34,10 +34,6 @@ export default function Governance() {
         title={header.title}
         description={header.description}
         image={{ type: 'static', ...graphicsData.governance2 }}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.governance.docs,
-          text: 'Learn More',
-        }}
       />
 
       <PageSection kicker="Learn More" title="Quickstart">
