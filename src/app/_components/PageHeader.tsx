@@ -94,7 +94,7 @@ export function PageHeader({
   const secondaryCTA = Array.isArray(cta) ? cta[1] : undefined
 
   return (
-    <header className="grid grid-rows-[auto,auto] gap-4">
+    <header className="grid gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
       <div className="flex flex-col gap-6 lg:flex-row">
         <div className="flex flex-col gap-4 lg:w-1/2">
