@@ -186,7 +186,7 @@ collections:
 
       - name: "terms"
         label: "Terms"
-        file: "src/content/pages/terms.md"
+        file: "src/content/pages/terms-of-use.md"
         fields:
           - *header_config
           - *meta_config

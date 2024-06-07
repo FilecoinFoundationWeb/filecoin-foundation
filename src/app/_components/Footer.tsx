@@ -24,7 +24,7 @@ type NavigationListProps = {
 
 const navigationItems = [PATHS.ABOUT, PATHS.ECOSYSTEM, PATHS.BLOG]
 
-const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS]
+const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS_OF_USE]
 
 function Section({ title, children }: SectionProps) {
   return (

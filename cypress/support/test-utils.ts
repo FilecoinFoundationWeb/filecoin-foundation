@@ -44,7 +44,6 @@ export function testPageMetadata({
   })
 }
 
-
 function handleFeaturedEntry(entriesContentPath: string, slug: string) {
   const featuredEntryFilePath = `${entriesContentPath}/${slug}.md`
 

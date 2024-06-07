@@ -14,7 +14,7 @@ export type PathValues =
   | '/grants'
   | '/'
   | '/privacy-policy'
-  | '/terms'
+  | '/terms-of-use'
 
 export interface PathConfig {
   path: PathValues
@@ -86,7 +86,10 @@ export const PATHS = {
     path: '/privacy-policy',
     label: 'Privacy Policy',
   }),
-  TERMS: createPathObject({ path: '/terms', label: 'Terms and Conditions' }),
+  TERMS_OF_USE: createPathObject({
+    path: '/terms-of-use',
+    label: 'Terms and Conditions',
+  }),
 } as const
 
 export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM.path}/categories`
