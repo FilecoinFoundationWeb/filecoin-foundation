@@ -36,12 +36,10 @@ export default function EventEntry({ params }: EventProps) {
   const ctaProps =
     externalLink && externalLink.href
       ? {
-          cta: {
-            href: externalLink.href,
-            text: 'Go to website',
-          },
+          href: externalLink.href,
+          text: externalLink.text || 'Learn More',
         }
-      : {}
+      : undefined
 
   return (
     <>
@@ -49,7 +47,9 @@ export default function EventEntry({ params }: EventProps) {
       <Badge borderColor="brand-100">{involvement}</Badge>
       <PageHeader
         title={title}
+        description={description}
         metaData={getEventMetaData(data)}
+        cta={ctaProps}
         image={{
           type: 'dynamic',
           ...image,
@@ -57,9 +57,7 @@ export default function EventEntry({ params }: EventProps) {
           alt: image.alt,
           fallback: graphicsData.imageFallback,
         }}
-        {...ctaProps}
-      />{' '}
-      {description && <p>{description}</p>}
+      />
     </>
   )
 }

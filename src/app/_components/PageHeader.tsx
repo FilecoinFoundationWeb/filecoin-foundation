@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-
 import { Button } from '@/components/Button'
 import {
   DescriptionText,
@@ -72,8 +70,12 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
           priority
           quality={100}
           className={sharedImageStyle}
-          fallback={{ ...dynamicImage.fallback, className: sharedImageStyle }}
           sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+          fallback={{
+            ...dynamicImage.fallback,
+            className: sharedImageStyle,
+            fill: true,
+          }}
         />
       </div>
     )
