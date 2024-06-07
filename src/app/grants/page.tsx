@@ -149,7 +149,11 @@ export default function Grants() {
                 '',
               )}
             </TextLink>{' '}
-            or join our monthly office hours!
+            or join our{' '}
+            <TextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
+              monthly office hours
+            </TextLink>
+            !
           </>
         }
         cta={{
