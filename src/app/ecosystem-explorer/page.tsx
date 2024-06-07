@@ -31,7 +31,7 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
-import { attributes } from '@/content/pages/ecosystem.md'
+import { attributes } from '@/content/pages/ecosystem-explorer.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -50,9 +50,14 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
+
 const { header, seo } = attributes
 
-export const metadata = createMetadata({ seo, path: PATHS.ECOSYSTEM.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.ECOSYSTEM_EXPLORER.path,
+  useAbsoluteTitle: true,
+})
 
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
@@ -60,7 +65,7 @@ const categoryData = getCategoryDataFromDirectory(
 const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
 
-export default function Ecosystem({ searchParams }: Props) {
+export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: ecosystemProjects,
@@ -151,7 +156,7 @@ export default function Ecosystem({ searchParams }: Props) {
                           description={description}
                           tag={categoryData[category]}
                           cta={{
-                            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+                            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
                           }}

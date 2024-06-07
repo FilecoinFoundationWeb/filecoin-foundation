@@ -72,15 +72,6 @@ meta_config: &meta_config
           required: false
 
 collections:
-  - name: "shared"
-    label: "Shared"
-    files:
-      - name: "medatadata"
-        label: "Metadata"
-        file: "src/content/shared/site-metadata.yml"
-        fields:
-          - *meta_config
-
   - name: "pages"
     label: "Pages"
     files:
@@ -110,7 +101,7 @@ collections:
 
       - name: "ecosystem"
         label: "Ecosystem"
-        file: "src/content/pages/ecosystem.md"
+        file: "src/content/pages/ecosystem-explorer.md"
         fields:
           - *header_config
           - *meta_config
@@ -195,7 +186,7 @@ collections:
 
       - name: "terms"
         label: "Terms"
-        file: "src/content/pages/terms.md"
+        file: "src/content/pages/terms-of-use.md"
         fields:
           - *header_config
           - *meta_config

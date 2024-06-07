@@ -34,7 +34,7 @@ export default function sitemap() {
   const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
     ecosystemProjects,
-    PATHS.ECOSYSTEM.path,
+    PATHS.ECOSYSTEM_EXPLORER.path,
   )
 
   const events = getEventsData()

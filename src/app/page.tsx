@@ -32,7 +32,11 @@ const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
 )
 
-export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.HOME.path,
+  useAbsoluteTitle: true,
+})
 
 export default function Home() {
   return (
@@ -89,7 +93,7 @@ export default function Home() {
         <Button
           className="sm:self-center"
           variant="primary"
-          href={PATHS.ECOSYSTEM.path}
+          href={PATHS.ECOSYSTEM_EXPLORER.path}
         >
           View All
         </Button>

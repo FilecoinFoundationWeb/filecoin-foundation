@@ -7,7 +7,7 @@ import { transformMarkdownToItemData } from '@/utils/transformMarkdownToItemData
 import { PATHS } from '@/constants/paths'
 
 const ECOSYSTEM_PROJECTS_COLLECTION_NAME = 'ecosystem_projects'
-const ECOSYSTEM_PROJECTS_DIRECTORY_PATH = PATHS.ECOSYSTEM
+const ECOSYSTEM_PROJECTS_DIRECTORY_PATH = PATHS.ECOSYSTEM_EXPLORER
   .entriesContentPath as string
 
 export function getEcosystemProjectData(slug: string): EcosystemProjectData {
