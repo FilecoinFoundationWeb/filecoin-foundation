@@ -1,13 +1,13 @@
 import { PATHS } from '../../src/app/_constants/paths'
+import { getRandomSlug } from '../support/getRandomSlugUtil'
 import { verifyMetadata } from '../support/verifyMetadataUtil'
 
-describe('Single Specific Events Page', function () {
-  it('should check metadata of the specific events page', function () {
-    const slug = 'fil-brussels'
-    verifyMetadata(
-      PATHS.EVENTS.entriesContentPath as string,
-      `${PATHS.EVENTS.path}/${slug}`,
-      slug,
-    )
+describe('Random Events Page', function () {
+  it('should check metadata of a random events page', function () {
+    const eventsDirectoryPath = PATHS.EVENTS.entriesContentPath as string
+
+    getRandomSlug(eventsDirectoryPath).then((slug) => {
+      verifyMetadata(eventsDirectoryPath, `${PATHS.EVENTS.path}/${slug}`, slug)
+    })
   })
 })
