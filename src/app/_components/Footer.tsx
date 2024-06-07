@@ -22,9 +22,20 @@ type NavigationListProps = {
   items: NavigationListItemProps[]
 }
 
-const navigationItems = [PATHS.ABOUT, PATHS.ECOSYSTEM_EXPLORER, PATHS.BLOG]
+const navigationItems = [
+  PATHS.ABOUT,
+  PATHS.EVENTS,
+  PATHS.GRANTS,
+  PATHS.ECOSYSTEM_EXPLORER,
+  PATHS.GOVERNANCE,
+  PATHS.BLOG,
+]
 
-const legalItems = [PATHS.PRIVACY_POLICY, PATHS.TERMS_OF_USE]
+const legalItems = [
+  PATHS.PRIVACY_POLICY,
+  PATHS.EMPLOYEE_PRIVACY_POLICY,
+  PATHS.TERMS_OF_USE,
+]
 
 function Section({ title, children }: SectionProps) {
   return (
