@@ -50,7 +50,7 @@ export default function About() {
       <PageSection
         kicker="About"
         title="Our Mission"
-        description="Filecoin Foundation’s mission is to accelerate the growth of the Filecoin ecosystem."
+        description="Filecoin Foundation’s mission is to preserve humanity’s most important information."
       />
 
       <PageSection kicker="What We Do" title="Focus Areas">
