@@ -6,5 +6,5 @@ featured_ecosystem_projects:
   ["banyan", "fleek", "tableland", "lighthouse", "genrait", "starling-lab"]
 seo:
   title: "Filecoin Foundation | Decentralized Storage Solutions"
-  description: "Explore the Filecoin Foundation's mission to advance decentralized storage technology. Learn about our projects, research, and community initiatives."
+  description: "Explore Filecoin Foundation's mission to accelerate the growth of the Filecoin ecosystem."
 ---

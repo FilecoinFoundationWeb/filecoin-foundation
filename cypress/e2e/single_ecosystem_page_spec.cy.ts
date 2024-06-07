@@ -1,21 +1,17 @@
-import { verifyCanonicalLink } from '../../cypress/support/canonicalLinkUtil'
 import { PATHS } from '../../src/app/_constants/paths'
+import { getRandomSlug } from '../support/getRandomSlugUtil'
+import { verifyMetadata } from '../support/verifyMetadataUtil'
 
-describe('Single Ecosystem Page', function () {
-  it('should check metadata of the first event', function () {
-    cy.visit(PATHS.ECOSYSTEM.path)
+describe('Random Ecosystem Page', function () {
+  it('should check metadata of a random ecosystem page', function () {
+    const ecosystemDirectoryPath = PATHS.ECOSYSTEM.entriesContentPath as string
 
-    cy.get(`a[href*="${PATHS.ECOSYSTEM.path}"]`)
-      .first()
-      .invoke('attr', 'href')
-      .then((href) => {
-        if (typeof href === 'string') {
-          cy.visit(href)
-
-          verifyCanonicalLink(href)
-        } else {
-          cy.log('External URL or unexpected path, skipping metadata check')
-        }
-      })
+    getRandomSlug(ecosystemDirectoryPath).then((slug) => {
+      verifyMetadata(
+        ecosystemDirectoryPath,
+        `${PATHS.ECOSYSTEM.path}/${slug}`,
+        slug,
+      )
+    })
   })
 })

@@ -51,7 +51,11 @@ const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
 const { featured_entry: featuredPostSlug, seo } = attributes
 const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
 
-export const metadata = createMetadata({ seo, path: PATHS.BLOG.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.BLOG.path,
+  useAbsoluteTitle: true,
+})
 
 export default function Blog({ searchParams }: Props) {
   if (!featuredPost) {

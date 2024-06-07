@@ -14,7 +14,7 @@ export function getBlogPostData(slug: string): BlogPostData {
     BLOG_DIRECTORY_PATH,
     BLOG_COLLECTION_NAME,
     slug,
-    mapMarkdownToBlogPostData
+    mapMarkdownToBlogPostData,
   )
 }
 
@@ -22,6 +22,6 @@ export function getBlogPostsData(): BlogPostData[] {
   return transformMarkdownToCollectionData<BlogPostData>(
     BLOG_DIRECTORY_PATH,
     BLOG_COLLECTION_NAME,
-    mapMarkdownToBlogPostData
+    mapMarkdownToBlogPostData,
   )
 }

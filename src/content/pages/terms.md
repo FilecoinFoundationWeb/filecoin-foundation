@@ -1,10 +1,10 @@
 ---
 header:
-  title: "Terms"
-  description: "Terms of Use"
+  title: "Terms of Use"
+  description: ""
 seo:
-  title: "Terms of Service"
-  description: "Understand the terms and conditions of using Filecoin Foundation services. Read our detailed Terms of Service for more information."
+  title: "Terms of Use"
+  description: "Understand the terms and conditions of using Filecoin Foundation services. Read our detailed Terms of Use for more information."
 ---
 
 **Effective Date: October 20, 2021**
@@ -15,7 +15,7 @@ Please review these Terms carefully before using the Website. We may change thes
 
 ## Privacy
 
-By using the Website, you consent to our processing your information consistent with our Privacy Policy.
+By using the Website, you consent to our processing your information consistent with our [Privacy Policy](/privacy-policy).
 
 ## Prohibited Conduct
 

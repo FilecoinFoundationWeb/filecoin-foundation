@@ -32,7 +32,11 @@ const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
 )
 
-export const metadata = createMetadata({ seo, path: PATHS.HOME.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.HOME.path,
+  useAbsoluteTitle: true,
+})
 
 export default function Home() {
   return (
