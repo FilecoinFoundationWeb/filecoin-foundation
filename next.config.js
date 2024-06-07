@@ -66,6 +66,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/governance/fips/:path*',
+        destination: '/governance',
+        permanent: true,
+      },
+      {
         source: '/policy',
         destination: '/privacy-policy',
         permanent: true,
