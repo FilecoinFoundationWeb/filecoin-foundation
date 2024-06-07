@@ -26,7 +26,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { getMetaData } from '@/utils/getMetaData'
+import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/blog.md'
 
@@ -96,7 +96,7 @@ export default function Blog({ searchParams }: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getMetaData(featuredPost.publishedOn)}
+        metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
           type: 'dynamic',
           ...featuredPost.image,
@@ -168,7 +168,7 @@ export default function Blog({ searchParams }: Props) {
                           title={title}
                           description={description}
                           textIsClamped={true}
-                          metaData={getMetaData(publishedOn)}
+                          metaData={getBlogPostMetaData(publishedOn)}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',

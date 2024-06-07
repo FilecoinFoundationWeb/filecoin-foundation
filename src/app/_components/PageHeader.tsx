@@ -1,5 +1,3 @@
-import clsx from 'clsx'
-
 import { Button } from '@/components/Button'
 import {
   DescriptionText,
@@ -22,7 +20,7 @@ type TitleProps = {
 type PageHeaderProps = {
   title: TitleProps['children']
   description?: DescriptionTextType
-  cta: CTAProps | [CTAProps, CTAProps]
+  cta?: CTAProps | [CTAProps, CTAProps]
   metaData?: MetaDataType
   isFeatured?: boolean
   image:
@@ -72,8 +70,12 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
           priority
           quality={100}
           className={sharedImageStyle}
-          fallback={{ ...dynamicImage.fallback, className: sharedImageStyle }}
           sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+          fallback={{
+            ...dynamicImage.fallback,
+            className: sharedImageStyle,
+            fill: true,
+          }}
         />
       </div>
     )
@@ -106,10 +108,12 @@ export function PageHeader({
 
           {description && <DescriptionText>{description}</DescriptionText>}
 
-          <div className="flex flex-col flex-wrap gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-4">
-            <Button href={mainCTA.href} variant="primary" className="flex-1">
-              {mainCTA.text}
-            </Button>
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-4">
+            {mainCTA && (
+              <Button href={mainCTA.href} variant="primary" className="flex-1">
+                {mainCTA.text}
+              </Button>
+            )}
 
             {secondaryCTA && (
               <Button

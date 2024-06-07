@@ -10,6 +10,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/about.md'
@@ -41,7 +42,7 @@ export default function About() {
         description={header.description}
         image={{ type: 'static', ...graphicsData.about }}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.annualReports.latest,
+          href: FILECOIN_FOUNDATION_URLS.annualReports['2023'],
           text: 'Learn More in Our Annual Report',
         }}
       />
@@ -81,25 +82,37 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardGrid cols="mdTwo">
-          {reportsData.map(({ title, description, link }, index) => (
-            <div
-              key={title}
-              className={clsx({
-                'lg:row-span-2': index === 0,
-              })}
-            >
-              <Card
-                title={title}
-                description={description}
-                cta={{
-                  href: link,
-                  text: 'View Report',
-                  icon: Files,
-                }}
-              />
-            </div>
-          ))}
+        <CardGrid cols="lgTwo">
+          {reportsData.map(({ title, description, link, image }, index) => {
+            const imageProp = image && {
+              ...image,
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '710px',
+                md: '980px',
+                lg: '480px',
+              }),
+            }
+
+            return (
+              <li
+                key={title}
+                className={clsx({ 'lg:row-span-2': index === 0 })}
+              >
+                <Card
+                  as="div"
+                  title={title}
+                  description={description}
+                  image={imageProp}
+                  cta={{
+                    href: link,
+                    text: 'View Report',
+                    icon: Files,
+                  }}
+                />
+              </li>
+            )
+          })}
         </CardGrid>
       </PageSection>
     </PageLayout>

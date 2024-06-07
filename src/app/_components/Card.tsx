@@ -5,6 +5,7 @@ import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
+import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
@@ -14,7 +15,7 @@ type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  image?: DynamicImageProps & { padding?: boolean }
+  image?: (DynamicImageProps | StaticImageProps) & { padding?: boolean }
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -42,6 +43,7 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   )
 }
 
+const containerStyle = 'relative aspect-video'
 const imageStyle = 'rounded-lg px-1 pt-1'
 
 function CardImage({ image }: Pick<CardProps, 'image'>) {
@@ -49,18 +51,37 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
     return null
   }
 
-  const { padding, fallback, ...rest } = image
+  const isDynamicImage = 'src' in image
+  const isStaticImage = 'data' in image
 
-  return (
-    <div className={clsx('relative aspect-video', padding && 'mx-4 my-2')}>
-      <DynamicImage
-        {...rest}
-        fill
-        className={imageStyle}
-        fallback={{ ...fallback, className: imageStyle }}
-      />
-    </div>
-  )
+  if (isDynamicImage) {
+    const { padding, fallback, ...rest } = image
+
+    return (
+      <div className={clsx(containerStyle, padding && 'mx-4 my-2')}>
+        <DynamicImage
+          {...rest}
+          fill
+          className={imageStyle}
+          fallback={{ ...fallback, className: imageStyle }}
+        />
+      </div>
+    )
+  }
+
+  if (isStaticImage) {
+    const { padding, ...rest } = image
+
+    return (
+      <div className={containerStyle}>
+        <StaticImage
+          {...rest}
+          fill
+          className={clsx(imageStyle, padding && 'mx-4 my-2')}
+        />
+      </div>
+    )
+  }
 }
 
 export function Card({
