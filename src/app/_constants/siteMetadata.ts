@@ -17,8 +17,10 @@ const FILECOIN_DOCS_URLS = {
 
 const FILECOIN_FOUNDATION_URLS = {
   annualReports: {
-    latest: `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
-    previous: `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
+    '2024':
+      'https://messari.io/report-pdf/20393d669df072af1672e1f2804d63ce27836bb3.pdf',
+    '2023': `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
+    '2022': `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
   },
   ecosystem: {
     submitOrUpdateProjectForm:

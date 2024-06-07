@@ -1,7 +1,5 @@
-import { StaticImageData } from 'next/image'
-
 export type ImageProps = {
-  url: string | StaticImageData
+  url: string
   alt: string
 }
 

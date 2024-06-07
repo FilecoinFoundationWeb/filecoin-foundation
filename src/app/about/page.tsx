@@ -10,6 +10,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/about.md'
@@ -41,7 +42,7 @@ export default function About() {
         description={header.description}
         image={{ type: 'static', ...graphicsData.about }}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.annualReports.latest,
+          href: FILECOIN_FOUNDATION_URLS.annualReports['2023'],
           text: 'Learn More in Our Annual Report',
         }}
       />
@@ -81,9 +82,20 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardGrid cols="mdTwo">
+        <CardGrid cols="lgTwo">
           {reportsData.map(({ title, description, link, image }, index) => {
-            const imageProp = image ? { image } : {}
+            const imageProp = image
+              ? {
+                  src: image.url.src,
+                  alt: image.alt,
+                  fallback: graphicsData.imageFallback,
+                  sizes: buildImageSizeProp({
+                    startSize: '100vw',
+                    sm: '350px',
+                    md: '480px',
+                  }),
+                }
+              : undefined
 
             return (
               <div
@@ -95,7 +107,7 @@ export default function About() {
                 <Card
                   title={title}
                   description={description}
-                  {...imageProp}
+                  image={imageProp}
                   cta={{
                     href: link,
                     text: 'View Report',
