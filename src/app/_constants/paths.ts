@@ -7,7 +7,7 @@ export type DynamicPathValues = BlogPostPath | EcosystemPath | EventPath
 export type PathValues =
   | '/about'
   | '/blog'
-  | '/ecosystem'
+  | '/ecosystem-explorer'
   | '/employee-privacy-policy'
   | '/events'
   | '/governance'
@@ -60,11 +60,11 @@ export const PATHS = {
     label: 'Blog',
     includesEntries: true,
   }),
-  ECOSYSTEM: createPathObject({
-    path: '/ecosystem',
+  ECOSYSTEM_EXPLORER: createPathObject({
+    path: '/ecosystem-explorer',
     label: 'Ecosystem Explorer',
     includesEntries: true,
-    customEntriesContentPath: '/ecosystem/projects/',
+    customEntriesContentPath: '/ecosystem-explorer/projects/',
   }),
   EMPLOYEE_PRIVACY_POLICY: createPathObject({
     path: '/employee-privacy-policy',
@@ -92,4 +92,4 @@ export const PATHS = {
   }),
 } as const
 
-export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM.path}/categories`
+export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/categories`

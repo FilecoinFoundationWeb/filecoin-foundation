@@ -31,7 +31,7 @@ export function FeaturedEcosystemProjects({
           borderColor="brand-300"
           textIsClamped={true}
           cta={{
-            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Learn More',
             icon: MagnifyingGlass,
           }}

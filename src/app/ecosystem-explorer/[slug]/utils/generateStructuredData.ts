@@ -14,6 +14,6 @@ export function generateStructuredData(
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
+    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
   })
 }

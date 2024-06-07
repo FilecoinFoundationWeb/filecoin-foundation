@@ -101,7 +101,7 @@ collections:
 
       - name: "ecosystem"
         label: "Ecosystem"
-        file: "src/content/pages/ecosystem.md"
+        file: "src/content/pages/ecosystem-explorer.md"
         fields:
           - *header_config
           - *meta_config
