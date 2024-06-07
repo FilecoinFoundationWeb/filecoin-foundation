@@ -33,7 +33,11 @@ const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
 
-export const metadata = createMetadata({ seo, path: PATHS.GRANTS.path })
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.GRANTS.path,
+  useAbsoluteTitle: true,
+})
 
 export default function Grants() {
   return (

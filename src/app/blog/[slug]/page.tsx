@@ -16,14 +16,12 @@ type BlogPostProps = {
   }
 }
 
-export async function generateMetadata({ params }: BlogPostProps) {
+export function generateMetadata({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
 
   return createMetadata({
     seo: data.seo,
-    title: data.title,
-    description: data.description,
     path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
   })
 }

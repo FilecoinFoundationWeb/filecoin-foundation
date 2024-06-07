@@ -30,15 +30,13 @@ type EcosystemProjectProps = {
   }
 }
 
-export async function generateMetadata({ params }: EcosystemProjectProps) {
+export function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 
   return createMetadata({
     seo: data.seo,
-    title: data.title,
-    description: data.description,
-    path: `${PATHS.ECOSYSTEM.path}/${data.slug}` as DynamicPathValues,
+    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
   })
 }
 

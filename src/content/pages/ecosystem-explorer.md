@@ -5,5 +5,5 @@ header:
 featured_entry: "democracys-library"
 seo:
   title: "Filecoin Foundation Ecosystem – Explore our Projects"
-  description: "Discover the diverse landscape of projects that make up the Filecoin ecosystem. Filter Filecoin projects by finance, storage, network and other categories."
+  description: "Discover the diverse landscape of projects that make up the Filecoin ecosystem. Filter Filecoin projects by finance, storage, network, and other categories."
 ---

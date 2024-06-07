@@ -31,7 +31,7 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
-import { attributes } from '@/content/pages/ecosystem.md'
+import { attributes } from '@/content/pages/ecosystem-explorer.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -50,11 +50,14 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { featured_entry: featuredProjectSlug, seo } = attributes
-const featuredProject = ecosystemProjects.find(
-  (project) => project.slug === featuredProjectSlug,
-)
-export const metadata = createMetadata({ seo, path: PATHS.ECOSYSTEM.path })
+
+const { header, seo } = attributes
+
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.ECOSYSTEM_EXPLORER.path,
+  useAbsoluteTitle: true,
+})
 
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
@@ -62,11 +65,7 @@ const categoryData = getCategoryDataFromDirectory(
 const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
 
-export default function Ecosystem({ searchParams }: Props) {
-  if (!featuredProject) {
-    throw new Error('Featured project not found')
-  }
-
+export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: ecosystemProjects,
@@ -96,19 +95,12 @@ export default function Ecosystem({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        isFeatured
-        title={featuredProject.title}
-        description={featuredProject.description}
-        image={{
-          type: 'dynamic',
-          ...featuredProject.image,
-          src: featuredProject.image.url,
-          objectFit: 'contain',
-          fallback: graphicsData.ecosystem,
-        }}
+        title={header.title}
+        description={header.description}
+        image={{ type: 'static', ...graphicsData.ecosystem }}
         cta={{
-          href: `${PATHS.ECOSYSTEM.path}/${featuredProjectSlug}`,
-          text: 'Learn More About the Project',
+          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
+          text: 'Submit Or Update Your Project',
         }}
       />
 
@@ -164,7 +156,7 @@ export default function Ecosystem({ searchParams }: Props) {
                           description={description}
                           tag={categoryData[category]}
                           cta={{
-                            href: `${PATHS.ECOSYSTEM.path}/${slug}`,
+                            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
                           }}
