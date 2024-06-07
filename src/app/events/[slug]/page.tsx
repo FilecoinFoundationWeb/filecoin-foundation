@@ -1,12 +1,13 @@
-import Image from 'next/image'
-
-import { Heading } from '@/components/Heading'
+import { Badge } from '@/components/Badge'
+import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
+import { getEventMetaData } from '@/utils/getMetaData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -30,29 +31,33 @@ export default function EventEntry({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 
-  const { title, description, image } = data
+  const { title, description, image, involvement, externalLink } = data
+
+  const ctaProps =
+    externalLink && externalLink.href
+      ? {
+          href: externalLink.href,
+          text: externalLink.text || 'Learn More',
+        }
+      : undefined
 
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
-      <header>
-        {image && (
-          <Image
-            priority
-            src={image.url}
-            alt={image.alt}
-            width={770}
-            height={440}
-            className="block h-auto object-contain"
-          />
-        )}
-
-        <Heading tag="h1" variant="2xl">
-          {title}
-        </Heading>
-      </header>
-
-      {description && <p>{description}</p>}
+      <Badge borderColor="brand-100">{involvement}</Badge>
+      <PageHeader
+        title={title}
+        description={description}
+        metaData={getEventMetaData(data)}
+        cta={ctaProps}
+        image={{
+          type: 'dynamic',
+          ...image,
+          src: image.url,
+          alt: image.alt,
+          fallback: graphicsData.imageFallback,
+        }}
+      />
     </>
   )
 }
