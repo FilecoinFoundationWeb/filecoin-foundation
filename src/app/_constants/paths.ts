@@ -8,6 +8,7 @@ export type PathValues =
   | '/about'
   | '/blog'
   | '/ecosystem'
+  | '/employee-privacy-policy'
   | '/events'
   | '/governance'
   | '/grants'
@@ -64,6 +65,10 @@ export const PATHS = {
     label: 'Ecosystem Explorer',
     includesEntries: true,
     customEntriesContentPath: '/ecosystem/projects/',
+  }),
+  EMPLOYEE_PRIVACY_POLICY: createPathObject({
+    path: '/employee-privacy-policy',
+    label: 'Employee Privacy Policy',
   }),
   EVENTS: createPathObject({
     path: '/events',

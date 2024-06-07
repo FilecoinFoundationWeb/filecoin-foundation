@@ -30,7 +30,7 @@ type PageHeaderProps = {
     | ({ type: 'dynamic' } & DynamicImageProps)
 }
 
-const sharedContainerStyle = 'aspect-video lg:aspect-auto lg:w-1/2'
+const sharedContainerStyle = 'relative aspect-video lg:aspect-auto lg:w-1/2'
 const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
 
 function Title({ children }: TitleProps) {
@@ -39,6 +39,45 @@ function Title({ children }: TitleProps) {
       {children}
     </Heading>
   )
+}
+
+function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
+  const { type, ...rest } = image
+
+  if (type === 'static') {
+    const staticImage = rest as StaticImageProps
+
+    return (
+      <div className={sharedContainerStyle}>
+        <StaticImage
+          {...staticImage}
+          fill
+          priority
+          quality={100}
+          className={sharedImageStyle}
+          sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+        />
+      </div>
+    )
+  }
+
+  if (type === 'dynamic') {
+    const dynamicImage = rest as DynamicImageProps
+
+    return (
+      <div className={sharedContainerStyle}>
+        <DynamicImage
+          {...dynamicImage}
+          fill
+          priority
+          quality={100}
+          className={sharedImageStyle}
+          fallback={{ ...dynamicImage.fallback, className: sharedImageStyle }}
+          sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+        />
+      </div>
+    )
+  }
 }
 
 export function PageHeader({
@@ -84,33 +123,7 @@ export function PageHeader({
           </div>
         </div>
 
-        {image.type === 'static' && (
-          <div className={sharedContainerStyle}>
-            <StaticImage
-              {...image}
-              priority
-              quality={100}
-              className={sharedImageStyle}
-            />
-          </div>
-        )}
-
-        {image.type === 'dynamic' && (
-          <div className={clsx('relative', sharedContainerStyle)}>
-            <DynamicImage
-              {...image}
-              fill
-              priority
-              quality={100}
-              className={sharedImageStyle}
-              fallback={{ ...image.fallback, className: sharedImageStyle }}
-              sizes={buildImageSizeProp({
-                lg: '100vw',
-                fallbackSize: '50vw',
-              })}
-            />
-          </div>
-        )}
+        <PageHeaderImage image={image} />
       </div>
     </header>
   )

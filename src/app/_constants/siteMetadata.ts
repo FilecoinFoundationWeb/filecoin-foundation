@@ -87,6 +87,10 @@ const FILECOIN_FOUNDATION_URLS = {
       href: 'https://www.youtube.com/channel/UCeM5ezNgFM1Sle_gIz-KMMA',
     },
   },
+  techSupportEmail: {
+    label: 'Tech Support',
+    href: 'mailto:support@fil.org',
+  },
 }
 
 const FILECOIN_URLS = {

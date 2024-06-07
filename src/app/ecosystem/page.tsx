@@ -23,6 +23,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getCategoryDataFromDirectory,
   getCategorySettingsFromMap,
@@ -49,10 +50,8 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { featured_entry: featuredProjectSlug, seo } = attributes
-const featuredProject = ecosystemProjects.find(
-  (project) => project.slug === featuredProjectSlug,
-)
+const { header, seo } = attributes
+
 export const metadata = createMetadata({ seo, path: PATHS.ECOSYSTEM.path })
 
 const categoryData = getCategoryDataFromDirectory(
@@ -62,10 +61,6 @@ const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
 
 export default function Ecosystem({ searchParams }: Props) {
-  if (!featuredProject) {
-    throw new Error('Featured project not found')
-  }
-
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: ecosystemProjects,
@@ -95,26 +90,19 @@ export default function Ecosystem({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        isFeatured
-        title={featuredProject.title}
-        description={featuredProject.description}
-        image={{
-          type: 'dynamic',
-          ...featuredProject.image,
-          src: featuredProject.image.url,
-          objectFit: 'contain',
-          fallback: graphicsData.ecosystem,
-        }}
+        title={header.title}
+        description={header.description}
+        image={{ type: 'static', ...graphicsData.ecosystem }}
         cta={{
-          href: `${PATHS.ECOSYSTEM.path}/${featuredProjectSlug}`,
-          text: 'Learn More About the Project',
+          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
+          text: 'Submit Or Update Your Project',
         }}
       />
 
       <PageSection
         kicker="Projects"
         title="Ecosystem Projects"
-        description="Discover the diverse landscape of Filecoin projects. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s products or services."
+        description="Discover the diverse landscape of projects in the Filecoin ecosystem. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s product or services."
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
@@ -150,22 +138,36 @@ export default function Ecosystem({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((project) => {
+                    {paginatedResults.map((project, i) => {
                       const { slug, title, description, image, category } =
                         project
+
+                      const isFirstTwoImages = i < 2
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          image={image}
                           tag={categoryData[category]}
-                          entryType="ecosystemProject"
                           cta={{
                             href: `${PATHS.ECOSYSTEM.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            padding: true,
+                            priority: isFirstTwoImages,
+                            objectFit: 'contain',
+                            fallback: graphicsData.imageFallback,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '320px',
+                              md: '440px',
+                              lg: '280px',
+                            }),
                           }}
                         />
                       )

@@ -22,6 +22,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -34,6 +35,7 @@ import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getCategoryLabel } from './utils/getCategoryLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -143,7 +145,7 @@ export default function Blog({ searchParams }: Props) {
               ) : (
                 <>
                   <CardGrid cols="smTwo">
-                    {paginatedResults.map((post) => {
+                    {paginatedResults.map((post, i) => {
                       const {
                         slug,
                         category,
@@ -153,19 +155,32 @@ export default function Blog({ searchParams }: Props) {
                         publishedOn,
                       } = post
 
+                      const isFirstTwoImages = i < 2
+
                       return (
                         <Card
                           key={slug}
-                          tag={category}
+                          tag={getCategoryLabel(category)}
                           title={title}
                           description={description}
-                          image={image}
                           textIsClamped={true}
                           metaData={getMetaData(publishedOn)}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',
                             icon: BookOpen,
+                          }}
+                          image={{
+                            src: image.url,
+                            alt: image.alt,
+                            fallback: graphicsData.imageFallback,
+                            priority: isFirstTwoImages,
+                            sizes: buildImageSizeProp({
+                              startSize: '100vw',
+                              sm: '350px',
+                              md: '470px',
+                              lg: '360px',
+                            }),
                           }}
                         />
                       )

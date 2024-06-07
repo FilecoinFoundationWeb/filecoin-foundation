@@ -1,9 +1,8 @@
-import Image from 'next/image'
-
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
+import { StaticImage } from '@/components/StaticImage'
 import { TextLink } from '@/components/TextLink'
 
 import type { MemberData } from '@/types/memberType'
@@ -18,10 +17,10 @@ export function KeyMemberCard({
 }: KeyMemberCardProps) {
   return (
     <li className="relative flex rounded-lg border border-brand-500 p-1">
-      <Image
-        src={image}
+      <StaticImage
+        data={image}
         alt={`Photo of ${name}`}
-        sizes="128px"
+        sizes="150px"
         className="aspect-[3/4] w-32 rounded object-cover"
       />
 

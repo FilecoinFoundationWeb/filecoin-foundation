@@ -26,18 +26,20 @@
   },
   "meta_config": {
     "name": "seo",
-    "label": "SEO",
+    "label": "SEO Metadata",
     "widget": "object",
     "fields": [
       {
         "name": "title",
-        "label": "Title",
-        "widget": "string"
+        "label": "Meta Title",
+        "widget": "string",
+        "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
       },
       {
         "name": "description",
         "label": "Meta Description",
-        "widget": "text"
+        "widget": "text",
+        "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
       },
       {
         "name": "og",
@@ -112,18 +114,20 @@
           "fields": [
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -195,124 +199,6 @@
       "label": "Pages",
       "files": [
         {
-          "name": "home",
-          "label": "Home",
-          "file": "src/content/pages/home.md",
-          "fields": [
-            {
-              "name": "header",
-              "label": "Header",
-              "widget": "object",
-              "fields": [
-                {
-                  "name": "title",
-                  "label": "Title",
-                  "widget": "string"
-                },
-                {
-                  "name": "description",
-                  "label": "Description",
-                  "widget": "text"
-                }
-              ]
-            },
-            {
-              "name": "seo",
-              "label": "SEO",
-              "widget": "object",
-              "fields": [
-                {
-                  "name": "title",
-                  "label": "Title",
-                  "widget": "string"
-                },
-                {
-                  "name": "description",
-                  "label": "Meta Description",
-                  "widget": "text"
-                },
-                {
-                  "name": "og",
-                  "label": "Open Graph Metadata",
-                  "widget": "object",
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "name": "title",
-                      "label": "Open Graph Title",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "name": "image",
-                      "label": "Open Graph Image",
-                      "widget": "image",
-                      "required": false,
-                      "media_library": {
-                        "config": {
-                          "multiple": false
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "name": "twitter",
-                  "label": "Twitter Metadata",
-                  "widget": "object",
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "name": "title",
-                      "label": "Twitter Title",
-                      "widget": "string",
-                      "default": "summary",
-                      "required": false
-                    },
-                    {
-                      "name": "card",
-                      "label": "Twitter Card",
-                      "widget": "string",
-                      "default": "summary",
-                      "required": false
-                    },
-                    {
-                      "name": "site",
-                      "label": "Twitter Site",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "name": "creator",
-                      "label": "Twitter Creator",
-                      "widget": "string",
-                      "required": false
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "featured_ecosystem_projects",
-              "label": "Featured Ecosystem Projects",
-              "widget": "relation",
-              "required": false,
-              "collection": "ecosystem",
-              "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
-              "multiple": true,
-              "min": 6,
-              "max": 6
-            }
-          ]
-        },
-        {
           "name": "about",
           "label": "About",
           "file": "src/content/pages/about.md",
@@ -336,18 +222,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -450,118 +338,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
-                },
-                {
-                  "name": "og",
-                  "label": "Open Graph Metadata",
-                  "widget": "object",
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "name": "title",
-                      "label": "Open Graph Title",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "name": "image",
-                      "label": "Open Graph Image",
-                      "widget": "image",
-                      "required": false,
-                      "media_library": {
-                        "config": {
-                          "multiple": false
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "name": "twitter",
-                  "label": "Twitter Metadata",
-                  "widget": "object",
-                  "collapsed": true,
-                  "fields": [
-                    {
-                      "name": "title",
-                      "label": "Twitter Title",
-                      "widget": "string",
-                      "default": "summary",
-                      "required": false
-                    },
-                    {
-                      "name": "card",
-                      "label": "Twitter Card",
-                      "widget": "string",
-                      "default": "summary",
-                      "required": false
-                    },
-                    {
-                      "name": "site",
-                      "label": "Twitter Site",
-                      "widget": "string",
-                      "required": false
-                    },
-                    {
-                      "name": "creator",
-                      "label": "Twitter Creator",
-                      "widget": "string",
-                      "required": false
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "governance",
-          "label": "Governance",
-          "file": "src/content/pages/governance.md",
-          "fields": [
-            {
-              "name": "header",
-              "label": "Header",
-              "widget": "object",
-              "fields": [
-                {
-                  "name": "title",
-                  "label": "Title",
-                  "widget": "string"
-                },
-                {
-                  "name": "description",
-                  "label": "Description",
-                  "widget": "text"
-                }
-              ]
-            },
-            {
-              "name": "seo",
-              "label": "SEO",
-              "widget": "object",
-              "fields": [
-                {
-                  "name": "title",
-                  "label": "Title",
-                  "widget": "string"
-                },
-                {
-                  "name": "description",
-                  "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -650,18 +440,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -727,9 +519,9 @@
           ]
         },
         {
-          "name": "grants",
-          "label": "Grants",
-          "file": "src/content/pages/grants.md",
+          "name": "employee-privacy-policy",
+          "label": "Employee Privacy Policy",
+          "file": "src/content/pages/employee-privacy-policy.md",
           "fields": [
             {
               "name": "header",
@@ -749,19 +541,38 @@
               ]
             },
             {
+              "name": "featured_grant_graduates",
+              "label": "Featured Grant Graduates",
+              "widget": "relation",
+              "collection": "ecosystem_projects",
+              "value_field": "slug",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "multiple": true,
+              "min": 6,
+              "max": 6
+            },
+            {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -864,7 +675,92 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "governance",
+          "label": "Governance",
+          "file": "src/content/pages/governance.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
               "widget": "object",
               "fields": [
                 {
@@ -874,8 +770,248 @@
                 },
                 {
                   "name": "description",
-                  "label": "Meta Description",
+                  "label": "Description",
                   "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "grants",
+          "label": "Grants",
+          "file": "src/content/pages/grants.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "home",
+          "label": "Home",
+          "file": "src/content/pages/home.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "featured_ecosystem_projects",
+              "label": "Featured Ecosystem Projects",
+              "widget": "relation",
+              "collection": "ecosystem_projects",
+              "value_field": "slug",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "multiple": true,
+              "min": 6,
+              "max": 6
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -964,18 +1100,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -1064,18 +1202,20 @@
             },
             {
               "name": "seo",
-              "label": "SEO",
+              "label": "SEO Metadata",
               "widget": "object",
               "fields": [
                 {
                   "name": "title",
-                  "label": "Title",
-                  "widget": "string"
+                  "label": "Meta Title",
+                  "widget": "string",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
-                  "widget": "text"
+                  "widget": "text",
+                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
                 },
                 {
                   "name": "og",
@@ -1225,7 +1365,7 @@
               "name": "alt",
               "label": "Alt Text",
               "widget": "string",
-              "required": false
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             }
           ]
         },
@@ -1244,7 +1384,7 @@
         {
           "name": "recommended-posts",
           "label": "Recommended Posts",
-          "widget": "relation",
+          "widget": "hidden",
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
@@ -1259,18 +1399,20 @@
         },
         {
           "name": "seo",
-          "label": "SEO",
+          "label": "SEO Metadata",
           "widget": "object",
           "fields": [
             {
               "name": "title",
-              "label": "Title",
-              "widget": "string"
+              "label": "Meta Title",
+              "widget": "string",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "description",
               "label": "Meta Description",
-              "widget": "text"
+              "widget": "text",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "og",
@@ -1442,6 +1584,7 @@
             {
               "name": "alt",
               "label": "Alt Text",
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/",
               "widget": "string"
             }
           ]
@@ -1480,7 +1623,7 @@
         {
           "name": "tags",
           "label": "Tags",
-          "widget": "select",
+          "widget": "hidden",
           "required": false,
           "multiple": true,
           "options": [
@@ -1654,21 +1797,9 @@
           "required": true
         },
         {
-          "name": "body",
-          "label": "Long Description",
-          "widget": "markdown",
-          "required": false
-        },
-        {
           "name": "website",
           "label": "Website",
           "widget": "string"
-        },
-        {
-          "name": "repo",
-          "label": "GitHub Repo",
-          "widget": "string",
-          "required": false
         },
         {
           "name": "tech",
@@ -1679,6 +1810,12 @@
             "filecoin",
             "ipfs"
           ]
+        },
+        {
+          "name": "repo",
+          "label": "GitHub Repo",
+          "widget": "string",
+          "required": false
         },
         {
           "name": "featured-content",
@@ -1705,25 +1842,33 @@
           "required": false
         },
         {
-          "name": "news-update",
-          "label": "What's New?",
+          "name": "body",
+          "label": "Long Description",
           "widget": "markdown",
           "required": false
         },
         {
+          "name": "news-update",
+          "label": "What's New?",
+          "widget": "text",
+          "required": false
+        },
+        {
           "name": "seo",
-          "label": "SEO",
+          "label": "SEO Metadata",
           "widget": "object",
           "fields": [
             {
               "name": "title",
-              "label": "Title",
-              "widget": "string"
+              "label": "Meta Title",
+              "widget": "string",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "description",
               "label": "Meta Description",
-              "widget": "text"
+              "widget": "text",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "og",
@@ -1836,16 +1981,19 @@
           "label": "External Link",
           "widget": "object",
           "required": false,
+          "hint": "External link to the event page",
           "fields": [
             {
               "name": "href",
               "label": "Href",
-              "widget": "string"
+              "widget": "string",
+              "required": false
             },
             {
               "name": "text",
               "label": "Text",
-              "widget": "string"
+              "widget": "string",
+              "required": false
             }
           ]
         },
@@ -1866,16 +2014,16 @@
           "name": "image",
           "label": "Image",
           "widget": "object",
-          "required": false,
           "fields": [
             {
               "name": "url",
-              "label": "Image",
+              "label": "URL",
               "widget": "image"
             },
             {
               "name": "alt",
               "label": "Alt Text",
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/",
               "widget": "string"
             }
           ]
@@ -1884,7 +2032,6 @@
           "name": "involvement",
           "label": "FF Involvement",
           "widget": "select",
-          "required": false,
           "options": [
             {
               "label": "Hosted",
@@ -1902,18 +2049,20 @@
         },
         {
           "name": "seo",
-          "label": "SEO",
+          "label": "SEO Metadata",
           "widget": "object",
           "fields": [
             {
               "name": "title",
-              "label": "Title",
-              "widget": "string"
+              "label": "Meta Title",
+              "widget": "string",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "description",
               "label": "Meta Description",
-              "widget": "text"
+              "widget": "text",
+              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
             },
             {
               "name": "og",
@@ -1975,36 +2124,6 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "grants",
-      "label": "Grants",
-      "label_singular": "Grants",
-      "folder": "src/content/grants/",
-      "create": true,
-      "identifier_field": "name",
-      "extension": "md",
-      "slug": "{{slug}}",
-      "fields": [
-        {
-          "name": "grants-graduates",
-          "label": "Grants Graduates",
-          "widget": "relation",
-          "required": false,
-          "collection": "ecosystem",
-          "value_field": "slug",
-          "search_fields": [
-            "slug",
-            "title"
-          ],
-          "display_fields": [
-            "title"
-          ],
-          "multiple": true,
-          "min": 6,
-          "max": 6
         }
       ]
     }

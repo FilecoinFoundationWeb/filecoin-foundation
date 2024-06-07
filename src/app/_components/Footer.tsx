@@ -56,7 +56,8 @@ export function Footer() {
         <div className="sm:max-w-96">
           <p className="mb-6">
             For the latest big ideas and news from the Filecoin ecosystem and
-            the decentralized web, subscribe to our newsletter.
+            decentralized web, subscribe to Filecoin Foundation’s newsletter,
+            The Upload.
           </p>
           <Button
             className="w-full sm:self-start md:w-auto"
