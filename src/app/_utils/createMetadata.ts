@@ -1,11 +1,11 @@
 import { type Metadata as NextMetadata } from 'next'
 
-import { type Metadata } from '@/types/metadataTypes'
+import { type SeoMetadata } from '@/types/metadataTypes'
 
 import { PathValues, DynamicPathValues } from '@/constants/paths'
 
 type CreateMetadataProps = {
-  seo: Metadata
+  seo: SeoMetadata
   path: PathValues | DynamicPathValues
   useAbsoluteTitle?: boolean
 }
