@@ -29,6 +29,17 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.fil.org',
+          },
+        ],
+        destination: 'https://fil.org/:path*',
+        permanent: true,
+      },
+      {
         source:
           '/blog/ecosystem-spotlight-ghostdrive%E2%80%99s-secure-decentralized-storage-now-on-mobile',
         destination:
