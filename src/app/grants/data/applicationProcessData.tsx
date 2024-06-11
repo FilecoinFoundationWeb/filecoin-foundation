@@ -13,7 +13,7 @@ export const applicationProcessData = [
         , create a new issue using the proposal template on{' '}
         <TextLink href="https://github.com/filecoin-project/devgrants/issues/new/choose">
           GitHub
-        </TextLink>{' '}
+        </TextLink>
         .
       </>
     ),
@@ -28,6 +28,6 @@ export const applicationProcessData = [
     step: 3,
     title: 'Agreement and Funding',
     description:
-      'Accepted applications are formalized with an agreement between Filecoin Foundation and grant application.',
+      'Accepted applications are formalized with an agreement between Filecoin Foundation and grant applicant.',
   },
 ]

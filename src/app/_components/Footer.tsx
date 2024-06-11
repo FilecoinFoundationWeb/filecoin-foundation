@@ -102,13 +102,13 @@ export function Footer() {
             <p className="mb-3">
               For media and collaboration inquiries,{' '}
               <TextLink href={FILECOIN_FOUNDATION_URLS.email.href}>
-                Drop us a line
+                drop us a line.
               </TextLink>
             </p>
             <p>
               For more information on our ecosystem grants,{' '}
               <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
-                Email us
+                email us.
               </TextLink>
             </p>
           </div>

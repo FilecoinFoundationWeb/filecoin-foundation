@@ -99,8 +99,10 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         description={header.description}
         image={{ type: 'static', ...graphicsData.ecosystem }}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
-          text: 'Submit Or Update Your Project',
+          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
+            .href,
+          text: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
+            .label,
         }}
       />
 
@@ -195,8 +197,10 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         title="Become Part of the Expanding Ecosystem"
         description="If you’re building on Filecoin and don’t see your project or want to edit your listing, share your details."
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
-          text: 'Submit or Update Your Project',
+          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
+            .href,
+          text: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
+            .label,
         }}
       />
     </PageLayout>
