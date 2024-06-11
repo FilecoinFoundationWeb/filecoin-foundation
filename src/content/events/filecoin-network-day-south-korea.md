@@ -7,8 +7,6 @@ published-on: "2023-06-27T16:21:11.352Z"
 description:
 location: Seoul, South Korea
 external-link:
-  href:
-  text:
 start-date: "2022-12-15T17:21:11.381Z"
 end-date:
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: Filecoin Network Day South Korea
-  description: Participate in Filecoin Network Day in South Korea to network with
+  description:
+    Participate in Filecoin Network Day in South Korea to network with
     the community and learn about the latest updates.
 ---

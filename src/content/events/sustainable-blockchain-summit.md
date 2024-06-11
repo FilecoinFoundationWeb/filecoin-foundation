@@ -6,9 +6,7 @@ updated-on: "2023-05-03T08:06:03.608Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location: Paris, France
-external-link:
-  href: https://sbs.tech/
-  text:
+external-link: https://sbs.tech/
 start-date: "2022-07-22T00:00:00.000Z"
 end-date: "2022-07-23T00:00:00.000Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: supported
 seo:
   title: Sustainable Blockchain Summit
-  description: Participate in the Sustainable Blockchain Summit to explore sustainable
+  description:
+    Participate in the Sustainable Blockchain Summit to explore sustainable
     solutions in blockchain technology.
 ---

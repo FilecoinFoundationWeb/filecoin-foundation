@@ -6,9 +6,7 @@ updated-on: "2023-05-03T08:20:28.687Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location: Singapore
-external-link:
-  href: https://lu.ma/singapore-sp-meetup
-  text: Register
+external-link: https://lu.ma/singapore-sp-meetup
 start-date: "2022-08-16T00:00:00.000Z"
 end-date: "2022-08-16T00:00:00.000Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: Singapore Storage Provider Meetup
-  description: Participate in the Singapore Storage Provider Meetup to network and
+  description:
+    Participate in the Singapore Storage Provider Meetup to network and
     learn about Filecoin storage solutions.
 ---

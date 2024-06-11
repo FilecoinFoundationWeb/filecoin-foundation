@@ -6,9 +6,7 @@ updated-on: "2023-05-03T08:06:17.813Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location: Denver, CO
-external-link:
-  href: https://m.fil.org/filecoin-at-ethdenver
-  text:
+external-link: https://m.fil.org/filecoin-at-ethdenver
 start-date: "2022-02-11T06:57:49.000Z"
 end-date:
 image:
@@ -17,6 +15,7 @@ image:
 involvement: supported
 seo:
   title: ETHDenver
-  description: Participate in ETHDenver to engage with the Ethereum community and
+  description:
+    Participate in ETHDenver to engage with the Ethereum community and
     explore the latest blockchain innovations.
 ---

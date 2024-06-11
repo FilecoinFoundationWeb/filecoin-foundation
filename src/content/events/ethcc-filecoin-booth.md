@@ -7,8 +7,6 @@ published-on: "2024-01-29T15:51:57.389Z"
 description:
 location: Brussels, Belgium
 external-link:
-  href:
-  text:
 start-date: "2024-07-10T14:51:57.398Z"
 end-date: "2024-07-11T14:51:57.409Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: sponsored
 seo:
   title: ETHCC Filecoin Booth
-  description: Visit the Filecoin Booth at ETHCC to discover the latest updates and
+  description:
+    Visit the Filecoin Booth at ETHCC to discover the latest updates and
     innovations in Filecoin.
 ---

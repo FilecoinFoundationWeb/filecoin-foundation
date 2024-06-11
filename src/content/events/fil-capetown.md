@@ -6,8 +6,7 @@ updated-on: "2023-11-08T13:58:58.102Z"
 published-on: "2023-11-08T13:58:58.110Z"
 description:
 location: "Cape Town, Africa"
-external-link:
-  href: https://fil-capetown.io/
+external-link: https://fil-capetown.io/
 start-date: "2023-11-21T13:58:58.117Z"
 end-date:
 image:
@@ -16,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: FIL Capetown
-  description: Participate in FIL Capetown to network with the Filecoin community
+  description:
+    Participate in FIL Capetown to network with the Filecoin community
     and learn about the latest updates.
 ---

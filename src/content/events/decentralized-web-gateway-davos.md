@@ -9,8 +9,6 @@ description: Filecoin Foundation, in partnership with CNBC and CoinDesk, will
   of programming, receptions, and A-List celebrity events.
 location: Davos, Switzerland
 external-link:
-  href:
-  text:
 start-date: 2022-05-21T16:00:39.000Z
 end-date: null
 slug: decentralized-web-gateway-davos

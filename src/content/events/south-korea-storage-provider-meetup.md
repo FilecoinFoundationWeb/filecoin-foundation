@@ -6,9 +6,7 @@ created-on: "2023-05-03T08:06:02.191Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location: Seoul, South Korea
-external-link:
-  href: https://lu.ma/sp-korea-meetup
-  text: Register
+external-link: https://lu.ma/sp-korea-meetup
 start-date: "2022-08-12T00:00:00.000Z"
 end-date:
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: South Korea Storage Provider Meetup
-  description: Attend the South Korea Storage Provider Meetup to network and learn
+  description:
+    Attend the South Korea Storage Provider Meetup to network and learn
     about Filecoin storage solutions.
 ---

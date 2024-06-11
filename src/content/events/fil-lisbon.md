@@ -6,9 +6,7 @@ updated-on: "2023-06-27T12:34:15.553Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location: Lisbon, Portugal
-external-link:
-  href: https://fil-lisbon.io/
-  text:
+external-link: https://fil-lisbon.io/
 start-date: "2022-10-31T00:00:00.000Z"
 end-date: "2022-11-04T00:00:00.000Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: FIL Lisbon
-  description: Attend FIL Lisbon to engage with the Filecoin community and learn about
+  description:
+    Attend FIL Lisbon to engage with the Filecoin community and learn about
     the latest developments.
 ---

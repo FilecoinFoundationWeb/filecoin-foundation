@@ -6,9 +6,7 @@ updated-on: "2023-05-03T08:06:22.608Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location:
-external-link:
-  href: https://www.youtube.com/watch?v=B8lDaJcSiX0
-  text: Watch Recording
+external-link: https://www.youtube.com/watch?v=B8lDaJcSiX0
 start-date: "2021-06-07T22:00:00.000Z"
 end-date: "2021-06-09T22:00:00.000Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: supported
 seo:
   title: Hyperledger Global Forum
-  description: Join the Hyperledger Global Forum to connect with the blockchain community
+  description:
+    Join the Hyperledger Global Forum to connect with the blockchain community
     and explore enterprise solutions.
 ---

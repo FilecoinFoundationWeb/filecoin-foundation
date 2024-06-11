@@ -6,9 +6,7 @@ updated-on: "2023-06-27T17:45:43.957Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location:
-external-link:
-  href: https://www.youtube.com/watch?v=wP4Bk8lBNUc
-  text: Watch Recording
+external-link: https://www.youtube.com/watch?v=wP4Bk8lBNUc
 start-date: "2021-05-10T22:00:00.000Z"
 end-date:
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: Filecoin Plus Day 5
-  description: Join Filecoin Plus Day 5 to connect with the community and explore
+  description:
+    Join Filecoin Plus Day 5 to connect with the community and explore
     the latest innovations in the Filecoin ecosystem.
 ---
