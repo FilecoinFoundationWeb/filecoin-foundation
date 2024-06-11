@@ -4,9 +4,7 @@ created-on: 2024-02-21T16:48:19.477Z
 published-on: 2024-02-21T16:48:19.506Z
 description: null
 location: San Francisco, CA
-external-link:
-  href: https://foresight.org/2024-intelligent-cooperation-workshop/
-  text: Learn More
+external-link: https://foresight.org/2024-intelligent-cooperation-workshop/
 start-date: 2024-05-14T15:48:19.518Z
 end-date: 2024-05-15T15:48:19.530Z
 slug: agi-cryptography-security-multipolar-scenarios-workshop

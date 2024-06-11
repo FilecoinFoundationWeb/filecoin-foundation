@@ -7,8 +7,6 @@ published-on: "2024-01-29T15:45:39.312Z"
 description:
 location: Dubai, UAE
 external-link:
-  href:
-  text:
 start-date: "2024-04-16T14:45:39.324Z"
 end-date: "2024-04-19T14:45:39.332Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: sponsored
 seo:
   title: Token2049 Dubai Filecoin Orbit Event
-  description: Attend the Token2049 Dubai Filecoin Orbit Event to network and explore
+  description:
+    Attend the Token2049 Dubai Filecoin Orbit Event to network and explore
     the latest in Filecoin.
 ---

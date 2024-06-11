@@ -6,9 +6,7 @@ updated-on: "2023-11-13T18:13:00.249Z"
 published-on: "2023-11-13T18:13:00.256Z"
 description:
 location: Istanbul, Turkey
-external-link:
-  href: https://23.labweek.io/fil-plus
-  text: Register Now
+external-link: https://23.labweek.io/fil-plus
 start-date: "2023-11-14T19:30:00.264Z"
 end-date: "2023-11-14T22:00:00.270Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: Filecoin Plus Day 1
-  description: Celebrate Filecoin Plus Day 1 and learn about the latest updates and
+  description:
+    Celebrate Filecoin Plus Day 1 and learn about the latest updates and
     innovations in the Filecoin ecosystem.
 ---

@@ -10,17 +10,15 @@ description: >-
   and more information coming soon!
 location:
 external-link:
-  href:
-  text:
 start-date: "2022-03-13T16:00:00.000Z"
 end-date:
 image:
-  url: 
-    /assets/images/645215f691cf5c91a16146aa_https___cdn-evbuc-com_images_239998219_264947572824_1_original.jpeg
+  url: /assets/images/645215f691cf5c91a16146aa_https___cdn-evbuc-com_images_239998219_264947572824_1_original.jpeg
   alt:
 involvement: supported
 seo:
   title: Web3 Hacker House at SXSW
-  description: Participate in the Web3 Hacker House at SXSW to innovate and build
+  description:
+    Participate in the Web3 Hacker House at SXSW to innovate and build
     decentralized applications.
 ---

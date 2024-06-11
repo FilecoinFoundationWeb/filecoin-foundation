@@ -7,8 +7,6 @@ published-on: "2024-01-29T16:09:58.042Z"
 description:
 location: Seoul, South Korea
 external-link:
-  href:
-  text:
 start-date: "2024-09-04T15:09:58.111Z"
 end-date: "2024-09-10T15:09:58.126Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: hosted
 seo:
   title: FIL Seoul Network Base 2
-  description: Attend FIL Seoul Network Base 2 to engage with the Filecoin community
+  description:
+    Attend FIL Seoul Network Base 2 to engage with the Filecoin community
     and learn about the latest developments.
 ---

@@ -8,10 +8,7 @@ description: >-
   DC Fintech Week convenes nonprofits, technologists, entrepreneurs and regulators
   to discuss emerging policy issues
 location: Washington, D.C.
-external-link:
-  href: 
-    https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407
-  text: Register
+external-link: https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407
 start-date: "2021-10-19T22:00:00.000Z"
 end-date:
 image:
@@ -21,6 +18,7 @@ image:
 involvement: sponsored
 seo:
   title: Filecoin Orbit Lounge at DC Fintech Week
-  description: Join the Filecoin Orbit Lounge at DC Fintech Week to connect with the
+  description:
+    Join the Filecoin Orbit Lounge at DC Fintech Week to connect with the
     community and explore the latest innovations.
 ---

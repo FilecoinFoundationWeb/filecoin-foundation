@@ -7,8 +7,6 @@ published-on: "2024-01-29T15:47:33.383Z"
 description:
 location: San Francisco, CA
 external-link:
-  href:
-  text:
 start-date: "2024-04-13T14:47:33.396Z"
 end-date: "2024-04-14T14:47:33.405Z"
 image:
@@ -17,6 +15,7 @@ image:
 involvement: supported
 seo:
   title: Funding the Commons
-  description: Participate in Funding the Commons to explore opportunities for funding
+  description:
+    Participate in Funding the Commons to explore opportunities for funding
     and supporting the commons.
 ---

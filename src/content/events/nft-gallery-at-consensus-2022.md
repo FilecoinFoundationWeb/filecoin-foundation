@@ -10,8 +10,6 @@ description: >-
   immersion into the future of art x commerce on the blockchain.
 location: New York, NY
 external-link:
-  href:
-  text:
 start-date: "2022-06-08T16:00:10.000Z"
 end-date:
 image:
@@ -21,6 +19,7 @@ image:
 involvement: supported
 seo:
   title: NFT Gallery at Consensus 2022
-  description: Visit the NFT Gallery at Consensus 2022 to explore the latest in NFT
+  description:
+    Visit the NFT Gallery at Consensus 2022 to explore the latest in NFT
     art and technology.
 ---

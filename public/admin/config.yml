@@ -244,6 +244,7 @@ collections:
           - name: "alt"
             label: "Alt Text"
             widget: "string"
+            required: false
             hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
       - name: "body"
         label: "Content"
@@ -344,8 +345,9 @@ collections:
             allow_multiple: false
           - name: alt
             label: Alt Text
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: string
+            required: false
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
       - name: category
         label: Category
         widget: relation
@@ -530,19 +532,10 @@ collections:
         label: "Location"
         widget: "string"
       - name: "external-link"
-        label: "External Link"
-        widget: "object"
+        label: "External Link URL"
+        widget: "string"
         required: false
         hint: "External link to the event page"
-        fields:
-          - name: "href"
-            label: "Href"
-            widget: "string"
-            required: false
-          - name: "text"
-            label: "Text"
-            widget: "string"
-            required: false
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
@@ -561,8 +554,9 @@ collections:
             widget: "image"
           - name: "alt"
             label: "Alt Text"
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
             widget: "string"
+            required: false
+            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
       - name: "involvement"
         label: "FF Involvement"
         widget: "select"
