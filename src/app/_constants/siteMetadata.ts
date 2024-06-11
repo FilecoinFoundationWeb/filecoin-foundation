@@ -23,8 +23,10 @@ const FILECOIN_FOUNDATION_URLS = {
     '2022': `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
   },
   ecosystem: {
-    submitOrUpdateProjectForm:
-      'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
+    submitOrUpdateProjectForm: {
+      label: 'Submit or Update Your Project',
+      href: 'https://airtable.com/app8l0JhN6vJfTzJt/shrKrbPOdxGNnMM9C',
+    },
   },
   events: {
     orbitAmbassadorForm:
@@ -58,7 +60,7 @@ const FILECOIN_FOUNDATION_URLS = {
     github: 'https://github.com/filecoin-project/devgrants',
     email: {
       label: 'Ecosystem grants inquiries',
-      href: 'mailto:devgrants@fil.org',
+      href: 'mailto:grants@fil.org',
     },
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
@@ -93,7 +95,7 @@ const FILECOIN_FOUNDATION_URLS = {
     label: 'Tech Support',
     href: 'mailto:support@fil.org',
   },
-}
+} as const
 
 const FILECOIN_URLS = {
   site: 'https://filecoin.io',

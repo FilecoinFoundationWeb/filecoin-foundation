@@ -48,7 +48,7 @@ export default function Grants() {
         description={header.description}
         image={{ type: 'static', ...graphicsData.grants }}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
+          href: FILECOIN_FOUNDATION_URLS.grants.github,
           text: 'Apply Now',
         }}
       />
@@ -157,7 +157,7 @@ export default function Grants() {
           </>
         }
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.email.href,
+          href: FILECOIN_FOUNDATION_URLS.grants.github,
           text: 'Apply Now',
         }}
       />

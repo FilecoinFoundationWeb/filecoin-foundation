@@ -18,10 +18,19 @@ const socialIcons = {
 
 type SocialIconKey = keyof typeof socialIcons
 
-export const socialLinksWithIcons = Object.entries(
-  FILECOIN_FOUNDATION_URLS.social,
-).map(([key, { label, href }]) => ({
-  label,
-  href,
-  icon: socialIcons[key as SocialIconKey],
-}))
+const socialLinkOrder = [
+  'twitter',
+  'youtube',
+  'linkedin',
+  'github',
+  'bluesky',
+] as const
+
+export const socialLinksWithIcons = socialLinkOrder.map((key) => {
+  const { label, href } = FILECOIN_FOUNDATION_URLS.social[key]
+  return {
+    label,
+    href,
+    icon: socialIcons[key as SocialIconKey],
+  }
+})
