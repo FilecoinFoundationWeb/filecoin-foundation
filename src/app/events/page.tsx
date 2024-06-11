@@ -121,7 +121,9 @@ export default function Events({ searchParams }: Props) {
           fallback: graphicsData.events1,
         }}
         cta={{
-          href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
+          href: featuredEvent.externalLink
+            ? featuredEvent.externalLink
+            : `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
         }}
       />
@@ -169,10 +171,14 @@ export default function Events({ searchParams }: Props) {
                         involvement,
                         startDate,
                         endDate,
+                        description,
+                        externalLink,
                       } = event
 
                       const metaData = prepareMetaData(startDate, endDate)
                       const isFirstTwoImages = i < 2
+                      const shouldLinkToExternalEventsPage =
+                        !description && externalLink
 
                       return (
                         <Card
@@ -183,7 +189,9 @@ export default function Events({ searchParams }: Props) {
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{
-                            href: `${PATHS.EVENTS.path}/${slug}`,
+                            href:
+                              shouldLinkToExternalEventsPage ||
+                              `${PATHS.EVENTS.path}/${slug}`,
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
                           }}
