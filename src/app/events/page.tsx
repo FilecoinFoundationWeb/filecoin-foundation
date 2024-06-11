@@ -171,6 +171,8 @@ export default function Events({ searchParams }: Props) {
                         involvement,
                         startDate,
                         endDate,
+                        description,
+                        externalLink,
                       } = event
 
                       const metaData = prepareMetaData(startDate, endDate)
@@ -185,7 +187,9 @@ export default function Events({ searchParams }: Props) {
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{
-                            href: `${PATHS.EVENTS.path}/${slug}`,
+                            href:
+                              (!description && externalLink?.href) ||
+                              `${PATHS.EVENTS.path}/${slug}`,
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
                           }}
