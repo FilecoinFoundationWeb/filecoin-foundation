@@ -122,7 +122,7 @@ export default function Events({ searchParams }: Props) {
         }}
         cta={{
           href: featuredEvent.externalLink
-            ? featuredEvent.externalLink?.href
+            ? featuredEvent.externalLink
             : `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
         }}
@@ -178,7 +178,7 @@ export default function Events({ searchParams }: Props) {
                       const metaData = prepareMetaData(startDate, endDate)
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
-                        !description && externalLink?.href
+                        !description && externalLink
 
                       return (
                         <Card
