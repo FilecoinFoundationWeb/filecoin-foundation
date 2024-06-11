@@ -177,6 +177,8 @@ export default function Events({ searchParams }: Props) {
 
                       const metaData = prepareMetaData(startDate, endDate)
                       const isFirstTwoImages = i < 2
+                      const shouldLinkToExternalEventsPage =
+                        !description && externalLink?.href
 
                       return (
                         <Card
@@ -188,7 +190,7 @@ export default function Events({ searchParams }: Props) {
                           textIsClamped={true}
                           cta={{
                             href:
-                              (!description && externalLink?.href) ||
+                              shouldLinkToExternalEventsPage ||
                               `${PATHS.EVENTS.path}/${slug}`,
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
