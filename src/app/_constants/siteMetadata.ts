@@ -95,7 +95,7 @@ const FILECOIN_FOUNDATION_URLS = {
     label: 'Tech Support',
     href: 'mailto:support@fil.org',
   },
-}
+} as const
 
 const FILECOIN_URLS = {
   site: 'https://filecoin.io',
