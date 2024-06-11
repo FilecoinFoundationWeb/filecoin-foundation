@@ -14,7 +14,7 @@ export function mapMarkdownToEventData({
     publishedOn: data['published-on'],
     description: data.description,
     location: data.location,
-    externalLink: data['external-link'].href,
+    externalLink: data['external-link'],
     startDate: data['start-date'],
     endDate: data['end-date'],
     image: {
