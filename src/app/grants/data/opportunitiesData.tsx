@@ -4,13 +4,13 @@ export const opportunitiesData = [
   {
     title: 'Open Grants',
     description:
-      'Open Grants support projects that improve Filecoin functionality and enhance network utility and directly contribute to the Foundation’s mission.',
+      "Open Grants support projects that drive the Filecoin ecosystem forward, including projects that enhance the network's utility or improve Filecoin functionality.",
     icon: Coins,
   },
   {
-    title: 'Microgrants',
+    title: 'Documentation Grants',
     description:
-      'Documentation enhancement microgrants are available to support the improvement of existing documentation or the creation of new resources related to the Filecoin network.',
+      'Grants are available to support the creation of new resources related to the Filecoin network or the improvement of existing documentation. Refer to GitHub for more details.',
     icon: Coin,
   },
   {

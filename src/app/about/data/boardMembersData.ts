@@ -8,7 +8,7 @@ import NicoleWong from '@/assets/headshots/Nicole_Wong.png'
 export const boardMembersData: Array<MemberData> = [
   {
     name: 'Marta Belcher',
-    title: 'President & Chair, Filecoin',
+    title: 'President & Chair, Filecoin Foundation',
     linkedin: 'https://www.linkedin.com/in/martabelcher/',
     image: MartaBelcher,
   },

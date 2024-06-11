@@ -3,7 +3,7 @@ import { Heading } from '@/components/Heading'
 type GrantsApplicationProcessCardProps = {
   step: number
   title: string
-  description: string
+  description: React.ReactNode
   as?: React.ElementType
 }
 
@@ -33,7 +33,6 @@ export function GrantsApplicationProcessCard({
         <Heading tag="h3" variant="lg">
           {title}
         </Heading>
-
         <p>{description}</p>
       </div>
     </Tag>

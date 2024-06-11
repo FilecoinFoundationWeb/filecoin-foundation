@@ -1,9 +1,22 @@
+import { TextLink } from '@/components/TextLink'
+
 export const applicationProcessData = [
   {
     step: 1,
     title: 'Submit a Proposal',
-    description:
-      'Create a new issue using the proposal template on GitHub. The Foundation prioritizes projects that make a direct positive impact on the Filecoin ecosystem. ',
+    description: (
+      <>
+        After reviewing the{' '}
+        <TextLink href="https://github.com/filecoin-project/devgrants">
+          grant criteria
+        </TextLink>
+        , create a new issue using the proposal template on{' '}
+        <TextLink href="https://github.com/filecoin-project/devgrants/issues/new/choose">
+          GitHub
+        </TextLink>{' '}
+        .
+      </>
+    ),
   },
   {
     step: 2,
@@ -15,6 +28,6 @@ export const applicationProcessData = [
     step: 3,
     title: 'Agreement and Funding',
     description:
-      'Accepted applications are formalized with an agreement between the Foundation and grant application. Grants are paid out after each project milestone is completed, reviewed, and approved. ',
+      'Accepted applications are formalized with an agreement between Filecoin Foundation and grant application.',
   },
 ]
