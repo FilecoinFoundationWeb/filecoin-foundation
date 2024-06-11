@@ -55,16 +55,11 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
   const isStaticImage = 'data' in image
 
   if (isDynamicImage) {
-    const { padding, fallback, ...rest } = image
+    const { padding, ...rest } = image
 
     return (
       <div className={clsx(containerStyle, padding && 'mx-4 my-2')}>
-        <DynamicImage
-          {...rest}
-          fill
-          className={imageStyle}
-          fallback={{ ...fallback, className: imageStyle }}
-        />
+        <DynamicImage {...rest} fill className={imageStyle} />
       </div>
     )
   }

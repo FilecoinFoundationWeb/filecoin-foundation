@@ -18,16 +18,30 @@ export function DynamicImage({
   objectFit = 'cover',
   className,
   fallback,
+  priority,
+  quality,
+  sizes,
   ...rest
 }: DynamicImageProps) {
   if (!src) {
-    return <StaticImage {...fallback} />
+    return (
+      <StaticImage
+        {...fallback}
+        priority={fallback.priority || priority}
+        quality={fallback.quality || quality}
+        sizes={fallback.sizes || sizes}
+        className={fallback.className || className}
+      />
+    )
   }
 
   return (
     <Image
       src={src}
       alt={alt}
+      sizes={sizes}
+      priority={priority}
+      quality={quality}
       className={clsx(
         className,
         objectFit === 'cover' && 'object-cover',
