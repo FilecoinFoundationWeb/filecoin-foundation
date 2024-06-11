@@ -17,7 +17,7 @@ slug: decentralized-web-gateway-davos
 updated-on: 2023-05-03T08:15:41.280Z
 image:
   url: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
-  alt: "Decentralized Web Gateway @ Davos Image "
+  alt: ""
 involvement: hosted
 seo:
   title: Decentralized Web Gateway Davos
