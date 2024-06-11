@@ -8,25 +8,32 @@ import { SCHEMA_CONTEXT_URL } from '@/constants/structuredDataConstants'
 
 type LocationType = Place | VirtualLocation | undefined
 
-function getLocation(
-  location: EventData['location'],
-  externalLink: EventData['externalLink'],
-): LocationType {
-  if (location) {
-    return {
-      '@type': 'Place',
-      name: location,
-    }
+type GetLocationProps = {
+  location: EventData['location']
+  externalLink: EventData['externalLink']
+  slug: EventData['slug']
+}
+
+function getLocation({
+  location,
+  externalLink,
+  slug,
+}: GetLocationProps): LocationType {
+  if (!location) {
+    return undefined
   }
 
-  if (externalLink) {
+  if (location === 'Virtual') {
     return {
       '@type': 'VirtualLocation',
-      url: externalLink.href,
+      url: externalLink || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
     }
   }
 
-  return undefined
+  return {
+    '@type': 'Place',
+    name: location,
+  }
 }
 
 export function generateStructuredData(data: EventData): WithContext<Event> {
@@ -41,7 +48,11 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     externalLink,
   } = data
 
-  const eventLocation: LocationType = getLocation(location, externalLink)
+  const eventLocation: LocationType = getLocation({
+    location,
+    externalLink,
+    slug,
+  })
 
   return {
     '@context': SCHEMA_CONTEXT_URL,

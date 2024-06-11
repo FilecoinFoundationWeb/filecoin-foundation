@@ -9,10 +9,7 @@ export type EventData = {
   publishedOn?: string
   description?: string
   location: string
-  externalLink?: {
-    href: string
-    text: string
-  }
+  externalLink?: string
   startDate: string
   endDate?: string
   image: ImageProps

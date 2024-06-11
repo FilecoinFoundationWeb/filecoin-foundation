@@ -33,14 +33,6 @@ export default function EventEntry({ params }: EventProps) {
 
   const { title, description, image, involvement, externalLink } = data
 
-  const ctaProps =
-    externalLink && externalLink.href
-      ? {
-          href: externalLink.href,
-          text: externalLink.text || 'Learn More',
-        }
-      : undefined
-
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -49,7 +41,11 @@ export default function EventEntry({ params }: EventProps) {
         title={title}
         description={description}
         metaData={getEventMetaData(data)}
-        cta={ctaProps}
+        cta={
+          externalLink
+            ? { href: externalLink, text: 'View More Event Details' }
+            : undefined
+        }
         image={{
           type: 'dynamic',
           ...image,

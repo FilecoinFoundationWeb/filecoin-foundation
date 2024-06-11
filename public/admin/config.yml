@@ -532,19 +532,10 @@ collections:
         label: "Location"
         widget: "string"
       - name: "external-link"
-        label: "External Link"
-        widget: "object"
+        label: "External Link URL"
+        widget: "string"
         required: false
         hint: "External link to the event page"
-        fields:
-          - name: "href"
-            label: "Href"
-            widget: "string"
-            required: false
-          - name: "text"
-            label: "Text"
-            widget: "string"
-            required: false
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
