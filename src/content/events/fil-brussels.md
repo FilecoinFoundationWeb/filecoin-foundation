@@ -11,8 +11,8 @@ description: The Filecoin community is descending upon Brussels, Belgium from
   economy.
 location: Brussels, Belgium
 external-link:
-  href: https://www.fil-brussels.io/
-  text: Learn More
+  href: ""
+  text: ""
 end-date: 2024-07-11T14:53:57.438Z
 slug: fil-brussels
 start-date: 2024-07-08T14:53:57.431Z
