@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import PlausibleProvider from 'next-plausible'
 
 import '@/styles/globals.scss'
 
@@ -19,5 +20,9 @@ export type LayoutProps = {
 }
 
 export default function RootLayout({ children }: LayoutProps) {
-  return <SiteLayout>{children}</SiteLayout>
+  return (
+    <PlausibleProvider domain={BASE_URL}>
+      <SiteLayout>{children}</SiteLayout>
+    </PlausibleProvider>
+  )
 }
