@@ -121,7 +121,9 @@ export default function Events({ searchParams }: Props) {
           fallback: graphicsData.events1,
         }}
         cta={{
-          href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
+          href: featuredEvent.externalLink
+            ? featuredEvent.externalLink?.href
+            : `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
         }}
       />
