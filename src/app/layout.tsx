@@ -21,7 +21,7 @@ export type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <PlausibleProvider domain={BASE_URL}>
+    <PlausibleProvider domain="fil.org">
       <SiteLayout>{children}</SiteLayout>
     </PlausibleProvider>
   )
