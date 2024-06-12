@@ -92,6 +92,7 @@ module.exports = {
           outlineStyle: 'solid',
           outlineColor: theme('colors.brand.100'),
           outlineWidth: 2,
+          outlineOffset: 0,
         },
       })
     }),
