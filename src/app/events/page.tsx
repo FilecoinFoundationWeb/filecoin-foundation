@@ -61,20 +61,6 @@ export const metadata = createMetadata({
   useAbsoluteTitle: true,
 })
 
-function prepareMetaData(
-  startDate: EventData['startDate'],
-  endDate: EventData['endDate'],
-) {
-  const formattedStartDate = startDate && formatDate(startDate)
-  const formattedEndDate = endDate && formatDate(endDate)
-
-  if (formattedStartDate && formattedEndDate) {
-    return [`${formattedStartDate} – ${formattedEndDate}`]
-  }
-
-  return [formattedStartDate]
-}
-
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
     throw new Error('Featured event not found')
@@ -169,13 +155,10 @@ export default function Events({ searchParams }: Props) {
                         title,
                         image,
                         involvement,
-                        startDate,
-                        endDate,
                         description,
                         externalLink,
                       } = event
 
-                      const metaData = prepareMetaData(startDate, endDate)
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
                         !description && externalLink
@@ -185,7 +168,7 @@ export default function Events({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           tag={getInvolvementLabel(involvement)}
-                          metaData={metaData}
+                          metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{
