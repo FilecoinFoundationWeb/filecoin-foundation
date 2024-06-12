@@ -33,7 +33,7 @@ export default function Governance() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'static', ...graphicsData.governance2 }}
+        image={graphicsData.governance2}
       />
 
       <PageSection kicker="Learn More" title="Quickstart">

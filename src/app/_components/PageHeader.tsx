@@ -23,9 +23,7 @@ type PageHeaderProps = {
   cta?: CTAProps | [CTAProps, CTAProps]
   metaData?: MetaDataType
   isFeatured?: boolean
-  image:
-    | ({ type: 'static' } & StaticImageProps)
-    | ({ type: 'dynamic' } & DynamicImageProps)
+  image: StaticImageProps | DynamicImageProps
 }
 
 function Title({ children }: TitleProps) {
@@ -41,15 +39,14 @@ const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
 const imageSizes = buildImageSizeProp({ startSize: '100vw', md: '660px' })
 
 function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
-  const { type, ...rest } = image
+  const isDynamicImage = 'src' in image
+  const isStaticImage = 'data' in image
 
-  if (type === 'static') {
-    const staticImage = rest as StaticImageProps
-
+  if (isStaticImage) {
     return (
       <div className={sharedContainerStyle}>
         <StaticImage
-          {...staticImage}
+          {...image}
           fill
           priority
           quality={100}
@@ -60,19 +57,17 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
     )
   }
 
-  if (type === 'dynamic') {
-    const dynamicImage = rest as DynamicImageProps
-
+  if (isDynamicImage) {
     return (
       <div className={sharedContainerStyle}>
         <DynamicImage
-          {...dynamicImage}
+          {...image}
           fill
           priority
           quality={100}
           className={sharedImageStyle}
           sizes={imageSizes}
-          fallback={dynamicImage.fallback}
+          fallback={image.fallback}
         />
       </div>
     )

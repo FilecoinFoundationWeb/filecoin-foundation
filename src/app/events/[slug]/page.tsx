@@ -51,7 +51,6 @@ export default function EventEntry({ params }: EventProps) {
         metaData={getEventMetaData(data)}
         cta={ctaProps}
         image={{
-          type: 'dynamic',
           ...image,
           src: image.url,
           alt: image.alt,

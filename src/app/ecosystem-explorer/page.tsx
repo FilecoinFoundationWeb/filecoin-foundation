@@ -97,7 +97,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'static', ...graphicsData.ecosystem }}
+        image={graphicsData.ecosystem}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm,
           text: 'Submit Or Update Your Project',
