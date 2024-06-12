@@ -29,7 +29,7 @@ function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
   return (
     <button
       aria-label={label}
-      className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:outline-2 focus:outline-brand-100"
+      className="focus:brand-outline grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300"
       onClick={onClick}
     >
       <Icon component={IconComponent} />
@@ -106,7 +106,7 @@ export function MobileNavigation() {
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
             <Link
-              className="flex-shrink-0 outline-white focus:outline-2"
+              className="focus:brand-outline flex-shrink-0"
               href={PATHS.HOME.path}
               aria-label="Go to homepage"
               onClick={() => setOpen(false)}
