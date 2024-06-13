@@ -43,10 +43,9 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   )
 }
 
-const containerStyle = 'relative aspect-video'
-
+const imageContainerBaseStyle = 'relative aspect-video'
 const imageBaseStyle = 'rounded-lg px-1 pt-1'
-const imagePaddingStyle = 'mx-4 my-2'
+const imagePaddingStyle = 'px-6 pt-4'
 
 function CardImage({ image }: Pick<CardProps, 'image'>) {
   if (!image) {
@@ -60,11 +59,11 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
     const { padding, fallback, ...rest } = image
 
     return (
-      <div className={clsx(containerStyle, padding && imagePaddingStyle)}>
+      <div className={imageContainerBaseStyle}>
         <DynamicImage
           {...rest}
           fill
-          className={imageBaseStyle}
+          className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
           fallback={{ ...fallback, className: imageBaseStyle }}
         />
       </div>
@@ -75,7 +74,7 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
     const { padding, ...rest } = image
 
     return (
-      <div className={containerStyle}>
+      <div className={imageContainerBaseStyle}>
         <StaticImage
           {...rest}
           fill
