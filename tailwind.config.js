@@ -93,6 +93,7 @@ module.exports = {
           outlineColor: theme('colors.brand.100'),
           outlineWidth: 2,
           outlineOffset: 0,
+          borderColor: 'transparent',
         },
       })
     }),
