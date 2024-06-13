@@ -11,7 +11,7 @@ import {
 type CategoryListProps = {
   categoryOption: CategoryOption
   categorySettings: CategorySetting[]
-  categoryCounts: CategoryCounts
+  categoryCounts?: CategoryCounts
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
 }
 

@@ -1,6 +1,6 @@
 export type CategoryOption = string
 export type CategoryMap = Record<string, string>
-export type CategoryCounts = Record<CategoryOption, number> | undefined
+export type CategoryCounts = Record<CategoryOption, number>
 
 export type CategorySetting = {
   id: CategoryOption
