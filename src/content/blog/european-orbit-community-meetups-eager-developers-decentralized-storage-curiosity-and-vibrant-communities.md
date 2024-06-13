@@ -20,7 +20,7 @@ seo:
 ---
 The Filecoin Orbit community teamed up with Filecoin Foundation recently on a Europe roadshow tour to engage builders, strengthen the community, and drive interest in the region ahead of the Filecoin community’s activation at EthCC in Brussels – the strongest builder-focused event in Europe. 
 
-Ambassadors from the Filecoin Orbit Community Program hosted events across six cities: Barcelona, Madrid, Warsaw, Lisbon, Katowice, and Munich. Each stop included engagement with local Web3 communities and hubs, insightful talks showcasing the depth and diversity of the Filecoin ecosystem, and participation by attendees already engaged in Filecoin land as well as those taking their first steps.
+Ambassadors from the [Filecoin Orbit Community Program](https://orbitcommunity.filecoin.io/) hosted events across six cities: Barcelona, Madrid, Warsaw, Lisbon, Katowice, and Munich. Each stop included engagement with local Web3 communities and hubs, insightful talks showcasing the depth and diversity of the Filecoin ecosystem, and participation by attendees already engaged in Filecoin land as well as those taking their first steps.
 
 (As a refresher, the Filecoin Orbit Community Program is a group of volunteer ambassadors who host Filecoin workshops and hackathons, publish educational Filecoin articles and videos, and build on Filecoin.)
 
@@ -34,19 +34,11 @@ The stop in Katowice, a mid-sized city in southern Poland, far exceeded all turn
 
 Filecoin Foundation developer advocate Robert Dowling gave a talk breaking down the Filecoin and IPFS tech stack to the crowd, which was a mix of students from the university and local builders. 
 
-<iframe
-    src="https://youtu.be/Dvil3950zdA?feature=shared"
-    title="Intro to Bitcoin, Ethereum, & Filecoin: Robert Dowling at University of Silesia in Katowice, Poland"
-    height="315"
-    width="560"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-    allowfullscreen>
-  </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dvil3950zdA?si=eKWLQAZnZVQB8YUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For the Warsaw edition, it was an honor to team up with Martyna again and the ETHWarsaw team to showcase Filecoin at their monthly meetup — hosted at the beautiful PKO Bank Polski atrium in the historic city center. ETHWarsaw has done an incredible job building a community of developers and enthusiasts by hosting consistent monthly get-togethers and hackathons highlighting new projects.
 
-![](/assets/images/robertpoland.png)
+![A person is giving a presentation on Filecoin to an audience in a lecture hall, with a slide displaying the Filecoin logo and title.](/assets/images/robertpoland.png)
 
 The Warsaw crowd of technical, product, and web2 people was quite keen to hear Robert’s talk discussing the evolution of Bitcoin, Ethereum, and decentralized data services networks like Filecoin and IPFS. One of our Poland-based Filecoin storage providers (among the largest in Europe) was onsite to explain to the crowd the mechanics of how a Filecoin data storage operation works. 
 
@@ -64,7 +56,7 @@ Additionally, Protocol Labs developer advocate Sarah Thiam was on hand to discus
 
 ## Barcelona: Alongside Industry Heavyweights at Web3FC
 
-![](/assets/images/barcelona-.png)
+![A person stands in front of a screen displaying a presentation about Filecoin RetroPGF.](/assets/images/barcelona-.png)
 
 In Barcelona we participated in the Web3FC conference, organized by Orbit ambassador Adrien Berthou. Web3FC is the city’s largest chain agnostic event laser-focused on the city’s technical community. Robert gave a presentation on why the Filecoin and IPFS stack is a critical piece of infrastructure for anyone keen to build using decentralized tech. 
 
@@ -72,13 +64,13 @@ Filecoin Foundation shared the stage in Barcelona with representatives from Ethe
 
 ## Lisbon: Forging New Partnerships
 
-In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbon-based VC and longtime friend of the Filecoin world and Protocol Labs network, to host the first Filecoin event in Lisbon since our flagship FIL Lisbon conference in 2022 (watch those sessions here).
+In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbon-based VC and longtime friend of the Filecoin world and Protocol Labs network, to host the first Filecoin event in Lisbon since our flagship [FIL Lisbon](https://fil-lisbon.io/) conference in 2022 ([watch those sessions here](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kWhcrnEWz1r3r2k97TjPz2)).
 
-![](/assets/images/lisbon2.png)
+![A person gives a presentation in a dark room with a blue slide titled "The anatomy of a Filecoin storage deal."](/assets/images/lisbon2.png)
 
 We had the pleasure of hosting at Poolside – which is an exciting new accelerator, co-work space and event hub serving the Lisbon Web3 community. The city has an incredibly eclectic community of both native Portuguese builders and expats who have set up in the city to take advantage of its favorable crypto climate. 
 
-Stef Magdalinski, Head of Technical Programs at the Filecoin Foundation, discussed the Foundation's grants programs, the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
+Stef Magdalinski, Head of Technical Programs at the Filecoin Foundation, discussed the Foundation's [grants programs](https://fil.org/grants/), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
 
 ## Munich: Student Fanfare at Technical University of Munich
 
@@ -92,8 +84,8 @@ Web3Mine’s co-founder Lukas Bresser delivered a talk about a new decentralized
 
 As the world continues its shift toward decentralized architectures, the Filecoin Orbit Community Program plays a crucial role in educating and onboarding the next generation of Web3 builders and pioneers, paving the way for a more decentralized future.
 
-Next, the Filecoin community is descending upon Brussels from July 8-10, alongside EthCC 2024, for an exploration into the realms of decentralized AI, DePIN, and compute. Join us at FIL Brussels for insightful talks, hands-on workshops, networking opportunities, and can’t miss announcements from trailblazing Filecoin ecosystem teams building at the forefront of the data economy. Secure your spot.
+Next, the Filecoin community is descending upon Brussels from July 8-10, alongside EthCC 2024, for an exploration into the realms of decentralized AI, DePIN, and compute. Join us at FIL Brussels for insightful talks, hands-on workshops, networking opportunities, and can’t miss announcements from trailblazing Filecoin ecosystem teams building at the forefront of the data economy. [Secure your spot](https://www.fil-brussels.io/).
 
 **Interested in Getting Involved with Orbit?**
 
-Submit an application to become an Orbit ambassador.
+[Submit an application](https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C) to become an Orbit ambassador.
