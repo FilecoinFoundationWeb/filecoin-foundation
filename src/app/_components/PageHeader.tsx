@@ -23,13 +23,8 @@ type PageHeaderProps = {
   cta?: CTAProps | [CTAProps, CTAProps]
   metaData?: MetaDataType
   isFeatured?: boolean
-  image:
-    | ({ type: 'static' } & StaticImageProps)
-    | ({ type: 'dynamic' } & DynamicImageProps)
+  image: StaticImageProps | DynamicImageProps
 }
-
-const sharedContainerStyle = 'relative aspect-video lg:aspect-auto lg:w-1/2'
-const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
 
 function Title({ children }: TitleProps) {
   return (
@@ -39,43 +34,40 @@ function Title({ children }: TitleProps) {
   )
 }
 
+const sharedContainerStyle = 'relative aspect-video lg:aspect-auto lg:w-1/2'
+const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
+const imageSizes = buildImageSizeProp({ startSize: '100vw', md: '660px' })
+
 function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
-  const { type, ...rest } = image
+  const isDynamicImage = 'src' in image
+  const isStaticImage = 'data' in image
 
-  if (type === 'static') {
-    const staticImage = rest as StaticImageProps
-
+  if (isStaticImage) {
     return (
       <div className={sharedContainerStyle}>
         <StaticImage
-          {...staticImage}
+          {...image}
           fill
           priority
           quality={100}
           className={sharedImageStyle}
-          sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+          sizes={imageSizes}
         />
       </div>
     )
   }
 
-  if (type === 'dynamic') {
-    const dynamicImage = rest as DynamicImageProps
-
+  if (isDynamicImage) {
     return (
       <div className={sharedContainerStyle}>
         <DynamicImage
-          {...dynamicImage}
+          {...image}
           fill
           priority
           quality={100}
           className={sharedImageStyle}
-          sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
-          fallback={{
-            ...dynamicImage.fallback,
-            className: sharedImageStyle,
-            fill: true,
-          }}
+          sizes={imageSizes}
+          fallback={image.fallback}
         />
       </div>
     )

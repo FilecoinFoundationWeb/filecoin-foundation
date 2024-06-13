@@ -46,7 +46,7 @@ export default function Grants() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'static', ...graphicsData.grants }}
+        image={graphicsData.grants}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.grants.github,
           text: 'Apply Now',

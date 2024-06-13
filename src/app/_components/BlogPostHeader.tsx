@@ -1,8 +1,6 @@
-import Image from 'next/image'
-
 import { Badge } from '@/components/Badge'
+import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
-import { StaticImage } from '@/components/StaticImage'
 
 import { type BlogPostData } from '@/types/blogPostTypes'
 
@@ -36,28 +34,18 @@ export function BlogPostHeader({
         )}
       </div>
 
-      {image ? (
-        <div className="relative aspect-video">
-          <Image
-            fill
-            priority
-            src={image.url}
-            alt={image.alt}
-            className="rounded-lg object-cover"
-            sizes={buildImageSizeProp({
-              startSize: '100vw',
-              md: '680px',
-            })}
-          />
-        </div>
-      ) : (
-        <StaticImage
-          {...graphicsData.imageFallback}
+      <div className="relative aspect-video">
+        <DynamicImage
+          fill
           priority
           quality={100}
-          className="aspect-video rounded-lg object-cover"
+          src={image.url}
+          alt={image.alt}
+          className="rounded-lg"
+          sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
+          fallback={graphicsData.imageFallback}
         />
-      )}
+      </div>
     </header>
   )
 }

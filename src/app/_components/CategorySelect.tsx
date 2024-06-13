@@ -43,7 +43,7 @@ export function CategorySelect({
           <li key={option.id}>
             <button
               className={clsx(
-                'inline-flex cursor-pointer items-baseline gap-2 text-pretty rounded-lg py-2 text-left font-bold hover:bg-brand-700 focus:outline focus:outline-2 focus:outline-brand-100',
+                'focus:brand-outline inline-flex cursor-pointer items-baseline gap-2 text-pretty rounded-lg py-2 text-left font-bold hover:bg-brand-700',
                 touchTarget.class,
                 {
                   'bg-brand-700 text-brand-400': isSelected,

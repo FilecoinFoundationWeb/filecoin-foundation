@@ -47,7 +47,6 @@ export default function EventEntry({ params }: EventProps) {
             : undefined
         }
         image={{
-          type: 'dynamic',
           ...image,
           src: image.url,
           alt: image.alt,

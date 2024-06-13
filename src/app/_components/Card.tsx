@@ -33,7 +33,7 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
     <CustomLink
       href={href}
       aria-label={ariaLabel}
-      className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+      className="focus:brand-outline absolute inset-0 rounded-lg"
     >
       <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
         {Icon && <Icon size={24} />}
@@ -56,7 +56,7 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
   const isStaticImage = 'data' in image
 
   if (isDynamicImage) {
-    const { padding, fallback, ...rest } = image
+    const { padding, ...rest } = image
 
     return (
       <div className={imageContainerBaseStyle}>
@@ -64,7 +64,6 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
           {...rest}
           fill
           className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
-          fallback={{ ...fallback, className: imageBaseStyle }}
         />
       </div>
     )
@@ -113,7 +112,7 @@ export function Card({
         )}
 
         {metaData && metaData.length > 0 && (
-          <span className="mb-2">
+          <span className="mb-3">
             <Meta metaData={metaData} />
           </span>
         )}

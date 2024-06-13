@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -84,5 +86,16 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@headlessui/tailwindcss'),
+    plugin(function addBrandOutline({ addComponents, theme }) {
+      addComponents({
+        '.brand-outline': {
+          outlineStyle: 'solid',
+          outlineColor: theme('colors.brand.100'),
+          outlineWidth: 2,
+          outlineOffset: 0,
+          borderColor: 'transparent',
+        },
+      })
+    }),
   ],
 }

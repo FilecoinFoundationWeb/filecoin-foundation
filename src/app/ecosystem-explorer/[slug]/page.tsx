@@ -1,13 +1,11 @@
-import Image from 'next/image'
-
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
 import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
+import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
@@ -67,108 +65,107 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   } = data
 
   return (
-    <>
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+    <article>
+      <header className="mb-16">
+        <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
+          <DynamicImage
+            fill
+            priority
+            src={image.url}
+            alt={image.alt}
+            objectFit="contain"
+            className="object-left-bottom"
+            sizes={buildImageSizeProp({
+              startSize: '100vw',
+              md: '730px',
+              lg: '660px',
+              xl: '600px',
+            })}
+            fallback={{
+              ...graphicsData.imageFallback,
+              className: 'rounded-lg',
+            }}
+          />
+        </div>
+      </header>
 
-      <article>
-        <header className="mb-16 md:w-3/4 lg:w-2/3 xl:w-3/5">
-          {image.url ? (
-            <div className="relative h-48 w-full">
-              <Image
-                fill
-                priority
-                src={image.url}
-                alt={image.alt}
-                className="object-contain object-left-bottom"
-                sizes={buildImageSizeProp({
-                  startSize: '100vw',
-                  md: '730px',
-                  lg: '660px',
-                  xl: '600px',
-                })}
-              />
-            </div>
-          ) : (
-            <StaticImage priority {...graphicsData.imageFallback} />
-          )}
-        </header>
-
-        <div className="flex flex-wrap justify-between gap-8">
-          <div className="max-w-readable">
-            <div className="mb-8 space-y-6">
-              <Heading tag="h1" variant="4xl">
-                {title}
-              </Heading>
-              {content && <MarkdownContent>{content}</MarkdownContent>}
-            </div>
-
-            {videoUrl && (
-              <div className="mb-8 aspect-video">
-                <iframe
-                  allowFullScreen
-                  width="100%"
-                  height="100%"
-                  aria-label="Embedded YouTube Video"
-                  src={videoUrl}
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                />
-              </div>
-            )}
-
-            {newsUpdate && (
-              <div className="prose mb-8">
-                <span className="not-prose text-brand-300">
-                  <Heading tag="h3" variant="xl">
-                    Latest Update
-                  </Heading>
-                </span>
-                <DescriptionText>{newsUpdate}</DescriptionText>
-                {updatedOn && (
-                  <span className="inline-block text-sm text-blue-300">
-                    {formatDate(updatedOn)}
-                  </span>
-                )}
-              </div>
-            )}
-
-            <ul className="flex flex-wrap gap-2">
-              {getTagLabels(data).map((tag) => (
-                <li key={tag}>
-                  <Badge>{tag}</Badge>
-                </li>
-              ))}
-            </ul>
+      <div className="flex flex-wrap justify-between gap-8">
+        <div className="max-w-readable">
+          <div className="mb-8 space-y-6">
+            <Heading tag="h1" variant="4xl">
+              {title}
+            </Heading>
+            {content && <MarkdownContent>{content}</MarkdownContent>}
           </div>
 
-          <ul className="mt-4 flex flex-col gap-5">
-            {website && (
-              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-                <Icon component={Globe} />
-                <TextLink href={website}>Website</TextLink>
+          {videoUrl && (
+            <div className="mb-8 aspect-video">
+              <iframe
+                allowFullScreen
+                width="100%"
+                height="100%"
+                aria-label="Embedded YouTube Video"
+                src={videoUrl}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              />
+            </div>
+          )}
+
+          {newsUpdate && (
+            <div className="prose mb-8">
+              <span className="not-prose text-brand-300">
+                <Heading tag="h3" variant="xl">
+                  Latest Update
+                </Heading>
+              </span>
+              <DescriptionText>{newsUpdate}</DescriptionText>
+              {updatedOn && (
+                <span className="inline-block text-sm text-blue-300">
+                  {formatDate(updatedOn)}
+                </span>
+              )}
+            </div>
+          )}
+
+          <ul className="flex flex-wrap gap-2">
+            {getTagLabels(data).map((tag) => (
+              <li key={tag}>
+                <Badge>{tag}</Badge>
               </li>
-            )}
-            {repo && (
-              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-                <Icon component={GitFork} />
-                <TextLink href={repo}>GitHub</TextLink>
-              </li>
-            )}
-            {twitter && (
-              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-                <Icon component={XLogo} />
-                <TextLink href={twitter}>X.com</TextLink>
-              </li>
-            )}
-            {featuredContent && (
-              <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
-                <Icon component={BookOpen} />
-                <TextLink href={featuredContent}>Featured Content</TextLink>
-              </li>
-            )}
+            ))}
           </ul>
         </div>
-      </article>
-    </>
+
+        <ul className="mt-4 flex flex-col gap-5">
+          {website && (
+            <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+              <Icon component={Globe} />
+              <TextLink href={website}>Website</TextLink>
+            </li>
+          )}
+          {repo && (
+            <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+              <Icon component={GitFork} />
+              <TextLink href={repo}>GitHub</TextLink>
+            </li>
+          )}
+          {twitter && (
+            <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+              <Icon component={XLogo} />
+              <TextLink href={twitter}>X.com</TextLink>
+            </li>
+          )}
+          {featuredContent && (
+            <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
+              <Icon component={BookOpen} />
+              <TextLink href={featuredContent}>Featured Content</TextLink>
+            </li>
+          )}
+        </ul>
+      </div>
+
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
+    </article>
   )
 }
