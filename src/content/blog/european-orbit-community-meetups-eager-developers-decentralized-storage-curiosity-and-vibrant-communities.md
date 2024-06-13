@@ -52,11 +52,11 @@ Additionally, Protocol Labs developer advocate Sarah Thiam was on hand to discus
 
 “This gathering attracted a vibrant crowd of blockchain enthusiasts and experts, all keen to deepen their understanding of blockchain technology, with a special focus on Filecoin and the Filecoin Virtual Machine (FVM),” said the Zondax team in their event recap. Check out Zondax’s event recap for more pictures and details about the Madrid Filecoin community. 
 
-![](/assets/images/madrid-cryptocade.png)
+![A person stands in front of a screen displaying a presentation about Filecoin RetroPGF](/assets/images/madrid-cryptocade.png)
 
 ## Barcelona: Alongside Industry Heavyweights at Web3FC
 
-![A person stands in front of a screen displaying a presentation about Filecoin RetroPGF.](/assets/images/barcelona-.png)
+![A person gives a presentation at the Web3FC Conference](/assets/images/barcelona-.png)
 
 In Barcelona we participated in the Web3FC conference, organized by Orbit ambassador Adrien Berthou. Web3FC is the city’s largest chain agnostic event laser-focused on the city’s technical community. Robert gave a presentation on why the Filecoin and IPFS stack is a critical piece of infrastructure for anyone keen to build using decentralized tech. 
 
@@ -78,7 +78,7 @@ The roadshow's final stop was in Munich, where Orbit Ambassador Timo Lee is invo
 
 Web3Mine’s co-founder Lukas Bresser delivered a talk about a new decentralized computing project that uses Filecoin architecture. The presentation was timely and well-received given the current zeitgeist around DePIN, compute, and artificial intelligence projects. 
 
-![](/assets/images/munich.jpeg)
+![A person gives a presentation on Web3mine with a slide titled: "How it works: A network running other networks" ](/assets/images/munich.jpeg)
 
 ## Where to Next? FIL Brussels
 
