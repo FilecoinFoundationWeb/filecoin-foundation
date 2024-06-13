@@ -112,7 +112,7 @@ export function Card({
         )}
 
         {metaData && metaData.length > 0 && (
-          <span className="mb-2">
+          <span className="mb-3">
             <Meta metaData={metaData} />
           </span>
         )}
