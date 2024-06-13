@@ -33,7 +33,7 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
     <CustomLink
       href={href}
       aria-label={ariaLabel}
-      className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+      className="focus:brand-outline absolute inset-0 rounded-lg"
     >
       <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
         {Icon && <Icon size={24} />}

@@ -34,7 +34,7 @@ export function KeyMemberCard({
         <TextLink
           href={linkedin}
           aria-label={`Visit ${name}'s LinkedIn profile.`}
-          className="absolute inset-0 rounded-lg focus:outline focus:outline-2 focus:outline-brand-100"
+          className="focus:brand-outline absolute inset-0 rounded-lg"
         >
           <span className="absolute bottom-4 left-36 flex items-center gap-2 text-brand-300">
             <Icon component={LinkedinLogo} />
