@@ -113,7 +113,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset results={categorizedResults.length} />}
+            results={<ResultsAndReset />}
             category={
               <Category
                 query={categoryQuery}
