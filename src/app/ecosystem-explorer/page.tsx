@@ -79,7 +79,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     sortByDefault: DEFAULT_SORT_OPTION,
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
+  const { categoryQuery, categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
     categorizeBy: 'category',
@@ -115,11 +115,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             results={<ResultsAndReset />}
             category={
-              <Category
-                query={categoryQuery}
-                settings={categorySettings}
-                counts={categoryCounts}
-              />
+              <Category query={categoryQuery} settings={categorySettings} />
             }
           />
           <FilterContainer.MainWrapper>
@@ -130,13 +126,9 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
+              results={<ResultsAndReset />}
               category={
-                <Category
-                  query={categoryQuery}
-                  settings={categorySettings}
-                  counts={categoryCounts}
-                />
+                <Category query={categoryQuery} settings={categorySettings} />
               }
             />
             <FilterContainer.ContentWrapper>
