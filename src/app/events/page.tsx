@@ -99,7 +99,6 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description}
         metaData={getEventMetaData(featuredEvent)}
         image={{
-          type: 'dynamic',
           ...featuredEvent.image,
           src: featuredEvent.image.url,
           fallback: graphicsData.events1,
