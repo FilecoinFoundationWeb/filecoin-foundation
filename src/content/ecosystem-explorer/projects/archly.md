@@ -23,7 +23,7 @@ website: https://archly.fi
 featured-content:
 repo: https://github.com/ArchlyFi
 twitter: https://twitter.com/archlyfinance/
-video-url: https://www.youtube.com/watch?v=8rt11F3qG1I&feature=youtu.be
+video-url: https://www.youtube.com/embed/8rt11F3qG1I
 year-joined: 2024-04-25T17:07:12.859000Z
 news-update:
 subcategories:

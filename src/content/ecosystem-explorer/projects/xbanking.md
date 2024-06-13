@@ -20,7 +20,7 @@ website: "https://xbanking.org"
 featured-content:
 repo: "https://github.com/xbankingorg"
 twitter: "https://twitter.com/TresDotFinance"
-video-url: "https://www.youtube.com/watch?v=4YHdkICYvJc"
+video-url: "https://www.youtube.com/embed/4YHdkICYvJc"
 year-joined: 2024-01-12T20:27:39.394000Z
 news-update:
 subcategories:
