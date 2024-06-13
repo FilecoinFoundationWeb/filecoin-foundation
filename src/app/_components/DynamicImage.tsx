@@ -21,6 +21,7 @@ export function DynamicImage({
   priority,
   quality,
   sizes,
+  fill,
   ...rest
 }: DynamicImageProps) {
   if (!src) {
@@ -31,6 +32,7 @@ export function DynamicImage({
         quality={fallback.quality || quality}
         sizes={fallback.sizes || sizes}
         className={fallback.className || className}
+        fill={typeof fallback.fill === 'boolean' ? fallback.fill : fill}
       />
     )
   }
@@ -42,6 +44,7 @@ export function DynamicImage({
       sizes={sizes}
       priority={priority}
       quality={quality}
+      fill={fill}
       className={clsx(
         className,
         objectFit === 'cover' && 'object-cover',
