@@ -47,22 +47,16 @@ seo:
 
 ### Fil Plus 
 
-113 PiBs of DataCap have been distributed among 38 allocators in the Filecoin Plus program. FF is in the process of auditing these distributions.
-
-Rolling applications for new allocators are now open. Learn more on the Filecoin Incentive Design Lab (FIDL) blog and visit the Allocator Governance GitHub. 
+* 113 PiBs of DataCap have been distributed among 38 allocators in the Filecoin Plus program. FF is in the process of auditing these distributions.
+* Rolling applications for new allocators are now open. Learn more on the Filecoin Incentive Design Lab (FIDL) blog and visit the Allocator Governance GitHub. 
 
 ## Comms, Marketing, & Events
 
-Missing Austin already, post-Consensus? Check out our Consensus recap report detailing everything that went down on the ground in the Filecoin ecosystem. And watch the complete Consensus 2024 playlist available on YouTube, where you can find all the speakers from our show floor booth. 
+* Missing Austin already, post-Consensus? Check out our Consensus recap report detailing everything that went down on the ground in the Filecoin ecosystem. And watch the complete Consensus 2024 playlist available on YouTube, where you can find all the speakers from our show floor booth. 
+* Alexey Potapov, Chief AGI Officer at SingularityNET, sat down with FF’s Aaron Stanley at Web Summit Rio to discuss The Evolution of Decentralized AGI on DWeb Decoded. 
+* Read the latest Ecosystem Spotlight on GhostDrive and how it leverages Filecoin's decentralized storage to improve redundancy and security. 
+* FIL Brussels opportunities for Filecoin ecosystem members are available: 
 
-Alexey Potapov, Chief AGI Officer at SingularityNET, sat down with FF’s Aaron Stanley at Web Summit Rio to discuss The Evolution of Decentralized AGI on DWeb Decoded. 
-
-Read the latest Ecosystem Spotlight on GhostDrive and how it leverages Filecoin's decentralized storage to improve redundancy and security. 
-
-FIL Brussels opportunities for Filecoin ecosystem members are available: 
-
-For sponsorship interest, please contact sponsorships@fil.org.
-
-For interest in speaking at the FIL Brussels Network Base, please contact events@fil.org.
-
-To request an FF speaker at your event, please contact comms@fil.org.
+  * For sponsorship interest, please contact sponsorships@fil.org.
+  * For interest in speaking at the FIL Brussels Network Base, please contact events@fil.org.
+  * To request an FF speaker at your event, please contact comms@fil.org.
