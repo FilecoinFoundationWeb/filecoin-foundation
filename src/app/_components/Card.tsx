@@ -28,7 +28,7 @@ const borderStyles = {
   'brand-600': 'border-brand-600',
 }
 
-export function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
+function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   return (
     <CustomLink
       href={href}

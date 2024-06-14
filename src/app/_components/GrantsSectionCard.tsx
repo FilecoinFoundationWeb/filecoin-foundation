@@ -2,7 +2,7 @@ import { Heading, HeadingProps } from '@/components/Heading'
 
 import { CTAProps } from '@/types/sharedProps/ctaType'
 
-import { Link } from './Card'
+import { Card } from './Card'
 
 type GrantsSectionCardProps = {
   heading: HeadingProps
@@ -19,7 +19,7 @@ export function GrantsSectionCard({
     <div className="relative flex flex-col gap-3 rounded-lg border border-brand-500 bg-brand-700 bg-opacity-10 p-4 backdrop-blur-md">
       <Heading {...heading} />
       <p>{children}</p>
-      {cta && <Link {...cta} />}
+      {cta && <Card.Link {...cta} />}
     </div>
   )
 }
