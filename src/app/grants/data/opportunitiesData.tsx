@@ -2,7 +2,7 @@ import { Megaphone, Coins, Coin } from '@phosphor-icons/react/dist/ssr'
 
 import { TextLink } from '@/components/TextLink'
 
-import { FILECOIN_FOUNDATION_URLS } from '@/_constants/siteMetadata'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export const opportunitiesData = [
   {
@@ -31,14 +31,12 @@ export const opportunitiesData = [
       <>
         Request for Proposals (RFP) grants have clearly scoped deliverables,
         milestones, and funding limits. Refer to{' '}
-        <TextLink href="https://opensource.org/license/mit">GitHub</TextLink>{' '}
+        <TextLink href={FILECOIN_FOUNDATION_URLS.grants.github}>
+          GitHub
+        </TextLink>{' '}
         for any ongoing RFPs.
       </>
     ),
     icon: Megaphone,
-    cta: {
-      href: FILECOIN_FOUNDATION_URLS.grants.github,
-      text: '',
-    },
   },
 ]
