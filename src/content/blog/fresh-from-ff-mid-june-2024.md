@@ -39,20 +39,21 @@ seo:
 
 ### Governance
 
-* We want your input! For the first time, the Filecoin community can suggest names and vote on the code name for nv23 using Metropolis. All Filecoin upgrades are assigned code names, and each upgrade is assigned a unique code name that reflects the change’s significance and scope. 
+* We want your input! For the first time, the Filecoin community can suggest names and vote on the code name for nv23 [using Metropolis](https://metropolis.vote/dashboard/c/6pnapz4axv). All Filecoin upgrades are assigned code names, and each upgrade is assigned a unique code name that reflects the change’s significance and scope. 
 * Share your technical expertise by joining a community governance working group! As the network welcomes new builders and wider adoption, the Foundation launched three community groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG). 
-* The SPWG holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
-* The DevWG is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol. 
-* The DCWG welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
+
+  * [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
+  * [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol. 
+  * [The DCWG](dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
 
 ### Fil Plus 
 
 * 113 PiBs of DataCap have been distributed among 38 allocators in the Filecoin Plus program. FF is in the process of auditing these distributions.
-* Rolling applications for new allocators are now open. Learn more on the Filecoin Incentive Design Lab (FIDL) blog and visit the Allocator Governance GitHub. 
+* Rolling applications for new allocators are now open. [Learn more](https://blog.allocator.tech/2024/05/rolling-applications-are-open-for.html) on the Filecoin Incentive Design Lab (FIDL) blog and visit the [Allocator Governance GitHub](https://github.com/filecoin-project/Allocator-Governance). 
 
 ## Comms, Marketing, & Events
 
-* Missing Austin already, post-Consensus? Check out our Consensus recap report detailing everything that went down on the ground in the Filecoin ecosystem. And watch the complete Consensus 2024 playlist available on YouTube, where you can find all the speakers from our show floor booth. 
+* Missing Austin already, post-Consensus? Check out our [Consensus recap report](https://fil.org/blog/takeaways-from-the-filecoin-community-at-consensus-2024) detailing everything that went down on the ground in the Filecoin ecosystem. And watch the complete [Consensus 2024 playlist](https://youtube.com/playlist?list=PLp3zrT1ewY0mcIhhzARotj1gf-kL-OaF7&feature=shared) available on YouTube, where you can find all the speakers from our show floor booth. 
 * Alexey Potapov, Chief AGI Officer at SingularityNET, sat down with FF’s Aaron Stanley at Web Summit Rio to discuss The Evolution of Decentralized AGI on DWeb Decoded. 
 * Read the latest Ecosystem Spotlight on GhostDrive and how it leverages Filecoin's decentralized storage to improve redundancy and security. 
 * FIL Brussels opportunities for Filecoin ecosystem members are available: 
