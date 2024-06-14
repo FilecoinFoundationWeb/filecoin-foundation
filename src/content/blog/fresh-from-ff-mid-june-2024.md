@@ -32,8 +32,8 @@ seo:
 
 ### Storage
 
-* Watch FF’s Porter Stowell's talk “Data as an Asset Class,” exploring the data economy and its transformative effects on the future of the Filecoin network. 
-* Join the storage community in Brussels on July 9 at our Good Morning Filecoin Ecosystem networking breakfast to unite experienced storage providers with newcomers to the network. 
+* Watch FF’s Porter Stowell's talk “[Data as an Asset Class](https://youtu.be/m26qmFOm23M?feature=shared),” exploring the data economy and its transformative effects on the future of the Filecoin network. 
+* Join the storage community in Brussels on July 9 at our [Good Morning Filecoin Ecosystem](https://lu.ma/t3w4g8i3) networking breakfast to unite experienced storage providers with newcomers to the network. 
 
 ## Network Operations
 
