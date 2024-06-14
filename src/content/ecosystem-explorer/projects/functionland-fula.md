@@ -19,7 +19,7 @@ website: "https://fx.land/"
 repo: "https://github.com/functionland"
 featured-content:
 twitter: "https://twitter.com/functionland/"
-video-url: "https://www.youtube.com/watch?v=YJ-K7SKmIPk"
+video-url: "https://www.youtube.com/embed/YJ-K7SKmIPk"
 year-joined: 2021-03-03T16:17:36.608000Z
 news-update:
 subcategories:
