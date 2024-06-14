@@ -54,10 +54,10 @@ seo:
 ## Comms, Marketing, & Events
 
 * Missing Austin already, post-Consensus? Check out our [Consensus recap report](https://fil.org/blog/takeaways-from-the-filecoin-community-at-consensus-2024) detailing everything that went down on the ground in the Filecoin ecosystem. And watch the complete [Consensus 2024 playlist](https://youtube.com/playlist?list=PLp3zrT1ewY0mcIhhzARotj1gf-kL-OaF7&feature=shared) available on YouTube, where you can find all the speakers from our show floor booth. 
-* Alexey Potapov, Chief AGI Officer at SingularityNET, sat down with FF’s Aaron Stanley at Web Summit Rio to discuss The Evolution of Decentralized AGI on DWeb Decoded. 
-* Read the latest Ecosystem Spotlight on GhostDrive and how it leverages Filecoin's decentralized storage to improve redundancy and security. 
+* Alexey Potapov, Chief AGI Officer at SingularityNET, sat down with FF’s Aaron Stanley at Web Summit Rio to discuss [The Evolution of Decentralized AGI on DWeb Decoded](https://youtu.be/-sos3Ljogeo?feature=shared). 
+* Read the latest [Ecosystem Spotlight on GhostDrive](https://fil.org/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) and how it leverages Filecoin's decentralized storage to improve redundancy and security. 
 * FIL Brussels opportunities for Filecoin ecosystem members are available: 
 
-  * For sponsorship interest, please contact sponsorships@fil.org.
-  * For interest in speaking at the FIL Brussels Network Base, please contact events@fil.org.
-  * To request an FF speaker at your event, please contact comms@fil.org.
+  * For sponsorship interest, please contact [sponsorships@fil.org](sponsorships@fil.org).
+  * For interest in speaking at the FIL Brussels Network Base, please contact [events@fil.org](events@fil.org).
+  * To request an FF speaker at your event, please contact [comms@fil.org](comms@fil.org).
