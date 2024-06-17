@@ -59,6 +59,8 @@ export function Search({ query, id }: SearchProps) {
     }
   }
 
+  console.log({ id })
+
   return (
     <SearchInput
       id={id}
