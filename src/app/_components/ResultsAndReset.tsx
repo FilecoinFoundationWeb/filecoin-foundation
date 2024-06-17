@@ -18,7 +18,7 @@ export function ResultsAndReset({ results }: ResultsAndResetProps) {
         </span>
       </span>
       <button
-        className="inline-flex whitespace-nowrap font-bold text-brand-300 underline focus:outline focus:outline-2 focus:outline-brand-100"
+        className="focus:brand-outline inline-flex whitespace-nowrap font-bold text-brand-300 underline"
         onClick={resetSearchParams}
       >
         Reset Filters

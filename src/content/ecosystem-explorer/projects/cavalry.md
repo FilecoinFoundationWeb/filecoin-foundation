@@ -20,7 +20,7 @@ website: "https://cavalry.scenegroup.co"
 featured-content:
 repo:
 twitter: "https://twitter.com/cavalry__app"
-video-url: "https://www.youtube.com/watch?v=MSkeo4pPYa0"
+video-url: "https://www.youtube.com/embed/MSkeo4pPYa0"
 year-joined:
 news-update:
 subcategories:

@@ -1,4 +1,4 @@
-type SectionDividerProps = {
+export type SectionDividerProps = {
   title: string
 }
 

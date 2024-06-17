@@ -21,7 +21,7 @@ website: "https://www.sftproject.io/"
 featured-content:
 repo: "https://github.com/SFT-project"
 twitter: "https://twitter.com/sftprotocol/"
-video-url: "https://www.youtube.com/watch?v=FOyv43DGH48"
+video-url: "https://www.youtube.com/embed/FOyv43DGH48"
 year-joined:
 news-update:
 subcategories:

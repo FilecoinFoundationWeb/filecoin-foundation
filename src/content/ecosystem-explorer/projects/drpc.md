@@ -17,7 +17,7 @@ featured-content:
 website: https://drpc.org/
 repo:
 twitter: https://twitter.com/drpcorg
-video-url: https://www.youtube.com/watch?v=AFB9eMukNTw&t=1s
+video-url: https://www.youtube.com/embed/AFB9eMukNTw
 year-joined: 2024-04-05T13:32:22.117000Z
 news-update:
 subcategories:

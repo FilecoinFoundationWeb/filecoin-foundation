@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import clsx from 'clsx'
 
 import {
@@ -7,20 +5,20 @@ import {
   DescriptionText,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
-import { SectionDivider } from '@/components/SectionDivider'
+import {
+  SectionDivider,
+  type SectionDividerProps,
+} from '@/components/SectionDivider'
+import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
-import { ImageProps } from '@/types/sharedProps/imageType'
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PageSectionProps = {
-  kicker: string
+  kicker: SectionDividerProps['title']
   title: string
   description?: DescriptionTextType
-  image?: ImageProps
+  image?: StaticImageProps
   children?: React.ReactNode
-}
-
-const containerClasses = (hasImage: Boolean) => {
-  return hasImage ? 'grid grid-cols-1 gap-6 sm:grid-cols-2' : 'max-w-readable'
 }
 
 export function PageSection({
@@ -31,9 +29,14 @@ export function PageSection({
   children,
 }: PageSectionProps) {
   return (
-    <section className="grid grid-rows-[auto,auto]">
+    <section>
       <SectionDivider title={kicker} />
-      <div className={clsx('mb-6 mt-4', containerClasses(!!image))}>
+      <div
+        className={clsx(
+          'mb-6 mt-4',
+          image ? 'grid grid-cols-1 gap-6 lg:grid-cols-2' : 'max-w-readable',
+        )}
+      >
         <div className="space-y-4">
           <Heading tag="h2" variant="3xl">
             {title}
@@ -41,12 +44,12 @@ export function PageSection({
           {description && <DescriptionText>{description}</DescriptionText>}
         </div>
         {image && (
-          <div className="relative min-h-72 w-full sm:h-full">
-            <Image
+          <div className="relative aspect-video lg:aspect-auto">
+            <StaticImage
+              {...image}
               fill
-              src={image.url}
-              alt={image.alt}
-              className="block rounded-lg object-cover"
+              className="rounded-lg"
+              sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
             />
           </div>
         )}

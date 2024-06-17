@@ -14,7 +14,7 @@ export function Meta({ metaData }: MetaProps) {
   }
 
   return (
-    <div className="flex gap-3 text-brand-300">
+    <div className="flex flex-wrap gap-x-2 gap-y-1 text-brand-300">
       {metaData.filter(Boolean).map((data, index) => {
         const isNotLastItem = index < metaData.length - 1
         const isNotFirstItem = index > 0

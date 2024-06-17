@@ -98,7 +98,6 @@ export default function Blog({ searchParams }: Props) {
         description={featuredPost.description}
         metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
-          type: 'dynamic',
           ...featuredPost.image,
           src: featuredPost.image.url,
           fallback: graphicsData.imageFallback,
