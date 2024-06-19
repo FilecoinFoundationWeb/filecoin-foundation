@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import { Button } from '@/components/Button'
 import {
   DescriptionText,
@@ -34,9 +36,9 @@ function Title({ children }: TitleProps) {
   )
 }
 
-const sharedContainerStyle = 'relative aspect-video lg:aspect-auto lg:w-1/2'
-const sharedImageStyle = 'h-full w-full rounded-lg border border-brand-100'
-const imageSizes = buildImageSizeProp({ startSize: '100vw', md: '660px' })
+const aspectRatioStyle = 'aspect-video'
+const imageStyle = 'rounded-lg border border-brand-100'
+const imageSizes = buildImageSizeProp({ startSize: '100vw', lg: '490px' })
 
 function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
   const isDynamicImage = 'src' in image
@@ -44,28 +46,25 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
 
   if (isStaticImage) {
     return (
-      <div className={sharedContainerStyle}>
-        <StaticImage
-          {...image}
-          fill
-          priority
-          quality={100}
-          className={sharedImageStyle}
-          sizes={imageSizes}
-        />
-      </div>
+      <StaticImage
+        {...image}
+        priority
+        quality={100}
+        className={clsx(aspectRatioStyle, imageStyle)}
+        sizes={imageSizes}
+      />
     )
   }
 
   if (isDynamicImage) {
     return (
-      <div className={sharedContainerStyle}>
+      <div className={clsx('relative', aspectRatioStyle)}>
         <DynamicImage
           {...image}
           fill
           priority
           quality={100}
-          className={sharedImageStyle}
+          className={clsx('h-full w-full', imageStyle)}
           sizes={imageSizes}
           fallback={image.fallback}
         />
@@ -119,7 +118,9 @@ export function PageHeader({
           </div>
         </div>
 
-        <PageHeaderImage image={image} />
+        <div className="lg:w-1/2">
+          <PageHeaderImage image={image} />
+        </div>
       </div>
     </header>
   )
