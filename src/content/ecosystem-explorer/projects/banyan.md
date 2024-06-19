@@ -23,7 +23,7 @@ website: "https://www.banyan.computer"
 featured-content: "https://www.youtube.com/watch?v=SaIGrSjOMP4&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=11"
 repo: "github.com/banyancomputer"
 twitter: "https://twitter.com/BanyanComputer"
-video-url: "https://www.youtube.com/watch?v=LFhw2qeMzkc&t"
+video-url: "https://www.youtube.com/embed/LFhw2qeMzkc"
 year-joined: "2024-02-01T20:41:25.602Z"
 news-update:
 subcategories:

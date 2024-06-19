@@ -33,7 +33,7 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
     <CustomLink
       href={href}
       aria-label={ariaLabel}
-      className="absolute inset-0 rounded-lg focus:outline-2 focus:outline-brand-100"
+      className="focus:brand-outline absolute inset-0 rounded-lg"
     >
       <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
         {Icon && <Icon size={24} />}
@@ -43,8 +43,9 @@ function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
   )
 }
 
-const containerStyle = 'relative aspect-video'
-const imageStyle = 'rounded-lg px-1 pt-1'
+const imageContainerBaseStyle = 'relative aspect-video'
+const imageBaseStyle = 'rounded-lg px-1 pt-1'
+const imagePaddingStyle = 'px-6 pt-4'
 
 function CardImage({ image }: Pick<CardProps, 'image'>) {
   if (!image) {
@@ -55,15 +56,14 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
   const isStaticImage = 'data' in image
 
   if (isDynamicImage) {
-    const { padding, fallback, ...rest } = image
+    const { padding, ...rest } = image
 
     return (
-      <div className={clsx(containerStyle, padding && 'mx-4 my-2')}>
+      <div className={imageContainerBaseStyle}>
         <DynamicImage
           {...rest}
           fill
-          className={imageStyle}
-          fallback={{ ...fallback, className: imageStyle }}
+          className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
         />
       </div>
     )
@@ -73,11 +73,11 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
     const { padding, ...rest } = image
 
     return (
-      <div className={containerStyle}>
+      <div className={imageContainerBaseStyle}>
         <StaticImage
           {...rest}
           fill
-          className={clsx(imageStyle, padding && 'mx-4 my-2')}
+          className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
         />
       </div>
     )
@@ -98,7 +98,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative flex h-full flex-col rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative h-full rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
         borderStyles[borderColor],
       )}
     >
@@ -112,7 +112,7 @@ export function Card({
         )}
 
         {metaData && metaData.length > 0 && (
-          <span className="mb-2">
+          <span className="mb-3">
             <Meta metaData={metaData} />
           </span>
         )}

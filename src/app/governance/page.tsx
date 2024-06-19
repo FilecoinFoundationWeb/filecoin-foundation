@@ -33,7 +33,7 @@ export default function Governance() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'static', ...graphicsData.governance2 }}
+        image={graphicsData.governance2}
       />
 
       <PageSection kicker="Learn More" title="Quickstart">
@@ -68,6 +68,7 @@ export default function Governance() {
       <PageSection
         kicker="About"
         title="Understanding Governance"
+        image={graphicsData.governance3}
         description={[
           'In the Filecoin ecosystem – which is decentralized and open source – governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol.',
           'Filecoin Foundation’s role includes facilitating the development of processes and policies for decision-making and managing community engagement and feedback.',

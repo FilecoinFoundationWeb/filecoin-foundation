@@ -20,7 +20,7 @@ website: https://desci.com
 featured-content: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science/
 repo: https://github.com/desci-labs
 twitter: https://twitter.com/DeSciLabs
-video-url: https://www.youtube.com/watch?v=q_5hAe2AzhE&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=15
+video-url: https://www.youtube.com/embed/q_5hAe2AzhE
 year-joined:
 news-update:
 subcategories:

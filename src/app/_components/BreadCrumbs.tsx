@@ -28,8 +28,6 @@ export function BreadCrumbs() {
     return label
   }
 
-  const baseStyles = 'hover:underline focus:outline-2 focus:outline-brand-100'
-
   return (
     <nav aria-label="breadcrumbs">
       <ol className="inline-flex items-center gap-2.5">
@@ -39,7 +37,7 @@ export function BreadCrumbs() {
             ? PATHS.HOME.path
             : (('/' + pathNames.slice(1, index + 1).join('/')) as Route)
           const isActive = pathname === href
-          const itemClasses = clsx(baseStyles, {
+          const itemClasses = clsx('focus:brand-outline hover:underline', {
             'text-brand-300': !isActive,
             'text-brand-400': isActive,
           })
@@ -48,11 +46,7 @@ export function BreadCrumbs() {
           return (
             <li key={href} className="inline-flex items-center gap-2.5 ">
               {!isRoot && (
-                <Icon
-                  component={CaretRight}
-                  color="brand-400"
-                  weight="bold"
-                />
+                <Icon component={CaretRight} color="brand-400" weight="bold" />
               )}
               <Link className={itemClasses} href={href}>
                 {label}
