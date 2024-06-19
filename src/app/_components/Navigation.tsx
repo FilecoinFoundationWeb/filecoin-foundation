@@ -10,7 +10,7 @@ export function Navigation() {
   return (
     <nav className="mb-6 flex justify-between gap-12 lg:items-center">
       <Link
-        className="flex-shrink-0 outline-white focus:outline-2"
+        className="focus:brand-outline flex-shrink-0"
         href={PATHS.HOME.path}
         aria-label="Go to homepage"
       >

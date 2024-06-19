@@ -25,7 +25,7 @@ export function Social() {
               rel="noopener noreferrer"
               title={label}
               className={clsx(
-                'text-brand-100 outline-white hover:text-brand-400 focus:outline-2',
+                'focus:brand-outline text-brand-100 hover:text-brand-400',
                 touchTarget.class,
               )}
             >

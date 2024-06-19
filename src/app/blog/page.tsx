@@ -98,7 +98,6 @@ export default function Blog({ searchParams }: Props) {
         description={featuredPost.description}
         metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
-          type: 'dynamic',
           ...featuredPost.image,
           src: featuredPost.image.url,
           fallback: graphicsData.imageFallback,
@@ -127,12 +126,12 @@ export default function Blog({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="web-search" />}
               sort={<Sort query={sortQuery} />}
             />
 
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={

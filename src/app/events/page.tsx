@@ -21,13 +21,11 @@ import { Sort } from '@/components/Sort'
 import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { EventData } from '@/types/eventTypes'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/formatDate'
 import { getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
@@ -60,20 +58,6 @@ export const metadata = createMetadata({
   path: PATHS.EVENTS.path,
   useAbsoluteTitle: true,
 })
-
-function prepareMetaData(
-  startDate: EventData['startDate'],
-  endDate: EventData['endDate'],
-) {
-  const formattedStartDate = startDate && formatDate(startDate)
-  const formattedEndDate = endDate && formatDate(endDate)
-
-  if (formattedStartDate && formattedEndDate) {
-    return [`${formattedStartDate} – ${formattedEndDate}`]
-  }
-
-  return [formattedStartDate]
-}
 
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
@@ -115,7 +99,6 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description}
         metaData={getEventMetaData(featuredEvent)}
         image={{
-          type: 'dynamic',
           ...featuredEvent.image,
           src: featuredEvent.image.url,
           fallback: graphicsData.events1,
@@ -142,11 +125,11 @@ export default function Events({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="web-search" />}
               sort={<Sort query={sortQuery} />}
             />
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
@@ -169,13 +152,10 @@ export default function Events({ searchParams }: Props) {
                         title,
                         image,
                         involvement,
-                        startDate,
-                        endDate,
                         description,
                         externalLink,
                       } = event
 
-                      const metaData = prepareMetaData(startDate, endDate)
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
                         !description && externalLink
@@ -185,7 +165,7 @@ export default function Events({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           tag={getInvolvementLabel(involvement)}
-                          metaData={metaData}
+                          metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
                           cta={{

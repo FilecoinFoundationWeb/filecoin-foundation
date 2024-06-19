@@ -22,7 +22,7 @@ website: https://api-portal.flare.network
 featured-content:
 repo:
 twitter: https://twitter.com/APIPortal
-video-url: https://www.youtube.com/watch?v=mBTyTwh-Wzo
+video-url: https://www.youtube.com/embed/mBTyTwh-Wzo
 year-joined: 2024-04-05T13:18:56.264000Z
 news-update:
 subcategories:

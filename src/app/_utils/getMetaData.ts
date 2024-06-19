@@ -8,7 +8,7 @@ export function getBlogPostMetaData(publishedOn?: BlogPostData['publishedOn']) {
 }
 
 export function getEventMetaData(event: EventData) {
-  if (!event.startDate && !event.location) {
+  if (!event.startDate) {
     return []
   }
 

@@ -97,7 +97,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={{ type: 'static', ...graphicsData.ecosystem }}
+        image={graphicsData.ecosystem}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
             .href,
@@ -124,11 +124,11 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="web-search" />}
               sort={<Sort query={sortQuery} />}
             />
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={

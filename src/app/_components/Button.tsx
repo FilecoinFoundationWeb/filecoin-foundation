@@ -40,10 +40,11 @@ export function Button({
   children,
   ...rest
 }: ButtonProps) {
-  const baseStyles =
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-9 py-3 font-semibold transition hover:no-underline focus:outline-2 focus:outline-brand-100 sm:whitespace-nowrap'
-
-  className = clsx(baseStyles, variantStyles[variant], className)
+  className = clsx(
+    'focus:brand-outline inline-flex items-center justify-center gap-2 rounded-lg border px-9 py-3 font-semibold transition hover:no-underline sm:whitespace-nowrap',
+    variantStyles[variant],
+    className,
+  )
 
   return typeof rest.href === 'undefined' ? (
     <button className={className} {...rest}>

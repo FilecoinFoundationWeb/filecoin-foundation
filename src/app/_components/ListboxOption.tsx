@@ -36,11 +36,15 @@ export function ListboxOption({ option, counts }: ListboxOptionProps) {
         <li
           className={clsx(
             'flex cursor-default items-center justify-between gap-12 px-5 py-2',
-            { 'bg-brand-700': active, 'bg-transparent': !active },
+            { 'bg-brand-500': active, 'bg-transparent': !active },
           )}
         >
           <OptionContent option={option} counts={counts} />
-          {selected && <Icon component={Check} size={20} />}
+          {selected && (
+            <span className="mb-px">
+              <Icon component={Check} size={20} />
+            </span>
+          )}
         </li>
       )}
     </Listbox.Option>

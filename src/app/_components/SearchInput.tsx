@@ -5,24 +5,26 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { Icon } from '@/components/Icon'
 
 type SearchInputProps = {
+  id: React.ComponentProps<'input'>['id']
   searchQuery: string
   onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
 }
 
 export function SearchInput({
+  id,
   searchQuery = '',
   onSearchChange,
 }: SearchInputProps) {
   return (
     <div className="w-full">
-      <label htmlFor="search" className="sr-only">
+      <label htmlFor={id} className="sr-only">
         Search
       </label>
       <div className="relative">
         <input
-          id="search"
+          id={id}
           name="search"
-          className="peer block w-full rounded-lg border border-brand-300 bg-brand-800 py-3 pl-10 pr-3 placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:border-transparent focus:text-brand-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-100 placeholder:focus:text-brand-100"
+          className="peer block w-full rounded-lg border border-brand-300 bg-brand-800 py-3 pl-10 pr-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100"
           placeholder="Search"
           type="search"
           value={searchQuery}
