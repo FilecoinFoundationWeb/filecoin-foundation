@@ -1,5 +1,7 @@
 'use client'
 
+import clsx from 'clsx'
+
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 type ResultsAndResetProps = {
@@ -10,7 +12,7 @@ export function ResultsAndReset({ results }: ResultsAndResetProps) {
   const { resetSearchParams } = useUpdateSearchParams()
 
   return (
-    <div className="flex items-baseline lg:mb-5 lg:gap-8">
+    <div className={clsx('lg:mb-5 lg:gap-8', results && 'flex items-baseline')}>
       {results && (
         <span className="inline-flex flex-1 items-center gap-2">
           <span>Results</span>

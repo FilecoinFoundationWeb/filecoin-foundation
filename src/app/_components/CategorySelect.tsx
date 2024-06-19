@@ -41,12 +41,14 @@ export function CategorySelect({
         const countOrUndefined = categoryCounts
           ? categoryCounts[option.id] || 0
           : undefined
+        const hasCount = !!countOrUndefined
 
         return (
           <li key={option.id}>
             <button
               className={clsx(
-                'focus:brand-outline inline-flex cursor-pointer items-baseline gap-2 text-pretty rounded-lg py-2 text-left font-bold hover:bg-brand-700',
+                'text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
+                hasCount && 'inline-flex items-baseline gap-2',
                 touchTarget.class,
                 {
                   'bg-brand-700 text-brand-400': isSelected,
