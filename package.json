@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint --fix",
     "validate-md": "node scripts/validateMarkdown.js",
-    "test": "npx percy exec -- cypress run"
+    "test": "percy exec -- cypress run"
   },
   "dependencies": {
     "@babel/core": "^7.23.5",
