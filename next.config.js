@@ -43,6 +43,13 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source:
+          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        destination:
+          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        permanent: true,
+      },
+      {
         source: '/davos',
         destination: '/events/the-filecoin-sanctuary-davos-2024',
         permanent: true,
