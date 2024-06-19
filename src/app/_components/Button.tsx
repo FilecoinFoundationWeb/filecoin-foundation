@@ -1,6 +1,9 @@
 import clsx from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
+import { isExternalLink } from '@/utils/linkUtils'
+import { Icon } from './Icon'
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 
 type ButtonProps = {
   variant?: 'primary' | 'ghost'
@@ -15,6 +18,7 @@ type ButtonProps = {
 type ButtonInnerProps = {
   icon?: React.ReactNode
   children: React.ReactNode
+  isExternalLink?: boolean
 }
 
 const variantStyles = {
@@ -24,11 +28,11 @@ const variantStyles = {
     'border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400',
 }
 
-function ButtonInner({ icon, children }: ButtonInnerProps) {
+function ButtonInner({ isExternalLink = false, children }: ButtonInnerProps) {
   return (
     <>
       {children}
-      {icon && <span aria-hidden="true">{icon}</span>}
+      {isExternalLink && <Icon component={ArrowUpRight} />}
     </>
   )
 }
@@ -36,7 +40,6 @@ function ButtonInner({ icon, children }: ButtonInnerProps) {
 export function Button({
   variant = 'primary',
   className,
-  icon,
   children,
   ...rest
 }: ButtonProps) {
@@ -46,13 +49,15 @@ export function Button({
     className,
   )
 
+  const isExternal = isExternalLink(rest.href ? rest.href : '')
+
   return typeof rest.href === 'undefined' ? (
     <button className={className} {...rest}>
-      <ButtonInner icon={icon}>{children}</ButtonInner>
+      <ButtonInner>{children}</ButtonInner>
     </button>
   ) : (
     <CustomLink className={className} {...rest}>
-      <ButtonInner icon={icon}>{children}</ButtonInner>
+      <ButtonInner isExternalLink={isExternal}>{children}</ButtonInner>
     </CustomLink>
   )
 }
