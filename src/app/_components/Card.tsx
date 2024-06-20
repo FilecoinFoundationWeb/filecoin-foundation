@@ -28,16 +28,31 @@ const borderStyles = {
   'brand-600': 'border-brand-600',
 }
 
-function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
+function Link({
+  href,
+  ariaLabel,
+  icon: Icon,
+  text,
+  isExternalLink = false,
+}: CTAProps) {
   return (
     <CustomLink
       href={href}
       aria-label={ariaLabel}
-      className="focus:brand-outline absolute inset-0 rounded-lg"
+      className="absolute inset-0 rounded-lg focus:brand-outline"
     >
       <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-        {Icon && <Icon size={24} />}
-        <span>{text}</span>
+        {isExternalLink ? (
+          <>
+            <span>{text}</span>
+            {Icon && <Icon size={24} />}
+          </>
+        ) : (
+          <>
+            {Icon && <Icon size={24} />}
+            <span>{text}</span>
+          </>
+        )}
       </span>
     </CustomLink>
   )

@@ -18,8 +18,8 @@ export function GrantsSectionCard({
   return (
     <div className="relative flex flex-col gap-3 rounded-lg border border-brand-500 bg-brand-700 bg-opacity-10 p-4 backdrop-blur-md">
       <Heading {...heading} />
-      <p>{children}</p>
-      {cta && <Card.Link {...cta} />}
+      <p className="mb-9">{children}</p>
+      {cta && <Card.Link {...cta} isExternalLink />}
     </div>
   )
 }
