@@ -125,11 +125,11 @@ export default function Events({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="web-search" />}
               sort={<Sort query={sortQuery} />}
             />
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
+              search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
