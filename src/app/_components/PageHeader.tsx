@@ -37,7 +37,7 @@ function Title({ children }: TitleProps) {
 }
 
 const aspectRatioStyle = 'aspect-video'
-const imageStyle = 'rounded-lg border border-brand-100'
+const borderStyle = 'rounded-lg border border-brand-100'
 const imageSizes = buildImageSizeProp({ startSize: '100vw', lg: '490px' })
 
 function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
@@ -50,7 +50,7 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
         {...image}
         priority
         quality={100}
-        className={clsx(aspectRatioStyle, imageStyle)}
+        className={clsx(aspectRatioStyle, borderStyle)}
         sizes={imageSizes}
       />
     )
@@ -64,7 +64,7 @@ function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
           fill
           priority
           quality={100}
-          className={clsx('h-full w-full', imageStyle)}
+          className={clsx('h-full w-full', borderStyle)}
           sizes={imageSizes}
           fallback={image.fallback}
         />
