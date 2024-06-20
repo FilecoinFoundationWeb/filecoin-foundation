@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import theme from 'tailwindcss/defaultTheme'
 
 import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
@@ -21,21 +22,42 @@ type CardProps = {
   as?: React.ElementType
 }
 
-const borderStyles = {
-  'brand-300': 'border-brand-300',
-  'brand-400': 'border-brand-400',
-  'brand-500': 'border-brand-500',
-  'brand-600': 'border-brand-600',
-}
+type SpacingValue = keyof typeof theme.spacing
+type BreakpointValue = keyof typeof theme.screens
 
-function Link({ href, ariaLabel, icon: Icon, text }: CTAProps) {
+type LeftProperty = `left-${SpacingValue}`
+type BottomProperty = `bottom-${SpacingValue}`
+
+type ResponsiveLeftProperty = `${BreakpointValue}:${LeftProperty}`
+type ResponsiveBottomProperty = `${BreakpointValue}:${BottomProperty}`
+
+type LinkProps = {
+  left?: LeftProperty | [LeftProperty, ResponsiveLeftProperty]
+  bottom?: BottomProperty | [BottomProperty, ResponsiveBottomProperty]
+} & CTAProps
+
+function Link({
+  href,
+  ariaLabel,
+  icon: Icon,
+  text,
+  bottom = 'bottom-4',
+  left = 'left-4',
+}: LinkProps) {
   return (
     <CustomLink
       href={href}
       aria-label={ariaLabel}
-      className="focus:brand-outline absolute inset-0 rounded-lg"
+      className="absolute inset-0 rounded-lg focus:brand-outline"
     >
-      <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
+      <span
+        className={clsx(
+          'absolute text-brand-300',
+          Icon && 'inline-flex items-center gap-2',
+          bottom,
+          left,
+        )}
+      >
         {Icon && <Icon size={24} />}
         <span>{text}</span>
       </span>
@@ -82,6 +104,13 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
       </div>
     )
   }
+}
+
+const borderStyles = {
+  'brand-300': 'border-brand-300',
+  'brand-400': 'border-brand-400',
+  'brand-500': 'border-brand-500',
+  'brand-600': 'border-brand-600',
 }
 
 export function Card({
