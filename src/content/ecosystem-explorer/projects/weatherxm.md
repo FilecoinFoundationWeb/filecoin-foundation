@@ -18,7 +18,7 @@ website: "https://weatherxm.com/"
 featured-content:
 repo: "https://github.com/WeatherXM/docs"
 twitter: "https://twitter.com/weatherxm"
-video-url: "https://www.youtube.com/watch?v=w7_wLlA6n8I&t=1s"
+video-url: "https://www.youtube.com/embed/w7_wLlA6n8I"
 year-joined:
 news-update:
 subcategories:

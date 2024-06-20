@@ -20,7 +20,7 @@ website: "https://filliquid.io/"
 featured-content:
 repo:
 twitter: https://twitter.com/FILLiquid
-video-url: "https://www.youtube.com/watch?v=wYYGW7Rxc0E"
+video-url: "https://www.youtube.com/embed/wYYGW7Rxc0E"
 year-joined: 2024-01-24T13:45:47.646000Z
 news-update:
 subcategories:

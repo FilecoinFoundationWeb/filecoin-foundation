@@ -20,7 +20,7 @@ website: https://ghostdrive.com/
 featured-content:
 repo: https://github.com/Ghost-Drive
 twitter: https://twitter.com/GhostDrive_Web3
-video-url: https://www.youtube.com/watch?v=D0Mh3ZDA-3Y
+video-url: https://www.youtube.com/embed/D0Mh3ZDA-3Y
 year-joined: 2024-05-16T14:59:06.611000Z
 news-update:
 subcategories:

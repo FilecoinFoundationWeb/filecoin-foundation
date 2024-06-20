@@ -19,7 +19,7 @@ featured-content:
 website: https://filfi.io
 repo: https://github.com/filfi
 twitter: https://twitter.com/filfi_io
-video-url: https://youtu.be/oaaLTpKSbYU?si=Tq2yisvmstECEaov
+video-url: https://www.youtube.com/embed/oaaLTpKSbYU
 year-joined: 2023-05-30T20:57:35.326000Z
 news-update:
 subcategories:
