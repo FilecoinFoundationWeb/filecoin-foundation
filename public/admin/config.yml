@@ -237,7 +237,7 @@ collections:
         label: "Image"
         widget: "object"
         fields:
-          - name: "url"
+          - name: "src"
             label: "URL"
             widget: "image"
             allow_multiple: false
@@ -339,7 +339,7 @@ collections:
         label: Image
         widget: object
         fields:
-          - name: url
+          - name: src
             label: URL
             widget: image
             allow_multiple: false
@@ -549,7 +549,7 @@ collections:
         label: "Image"
         widget: "object"
         fields:
-          - name: "url"
+          - name: "src"
             label: "URL"
             widget: "image"
           - name: "alt"
