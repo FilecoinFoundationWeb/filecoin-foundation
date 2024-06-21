@@ -76,7 +76,7 @@ const nextConfig = {
       },
       {
         source:
-          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network?utm_source=upload.fil.org&utm_medium=newsletter&utm_campaign=democracy-s-library-one-petabyte-later',
+          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
         destination:
           '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
         permanent: true,
