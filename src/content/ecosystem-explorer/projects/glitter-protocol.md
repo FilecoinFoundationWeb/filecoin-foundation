@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073293f19c58932d89ebea_glitter.png
+  src: /assets/images/66073293f19c58932d89ebea_glitter.png
   alt: Glitter Protocol
 website: https://glitterprotocol.io/
 featured-content:

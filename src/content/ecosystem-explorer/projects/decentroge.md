@@ -13,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/decentroge.svg
+  src: /assets/images/decentroge.svg
   alt: Decentroge Logo
 featured-content:
 website: https://decentroge.netlify.app/

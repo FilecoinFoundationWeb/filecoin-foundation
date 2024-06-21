@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/ghostdrive.png
+  src: /assets/images/ghostdrive.png
   alt: Ghost Drive
 website: https://ghostdrive.com/
 featured-content:

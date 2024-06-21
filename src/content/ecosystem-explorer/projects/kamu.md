@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/kamu-logo.svg
+  src: /assets/images/kamu-logo.svg
   alt: Kamu Logo
 website: https://www.kamu.dev/
 featured-content:

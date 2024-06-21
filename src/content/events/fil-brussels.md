@@ -15,7 +15,7 @@ end-date: 2024-07-11T14:53:57.438Z
 slug: fil-brussels
 start-date: 2024-07-08T14:53:57.431Z
 image:
-  url: /assets/images/fil-brussels.svg
+  src: /assets/images/fil-brussels.svg
   alt: FIL Brussels Logo
 involvement: hosted
 seo:

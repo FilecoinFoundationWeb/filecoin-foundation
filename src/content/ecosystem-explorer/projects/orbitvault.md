@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/orbitvault_logo_white.png
+  src: /assets/images/orbitvault_logo_white.png
   alt: OrbitVault Logo
 website: http://orbitvault.io/
 featured-content:

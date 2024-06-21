@@ -6,8 +6,7 @@ slug: >-
   new-agreement-between-filecoin-foundation-and-electric-coin-co-simplifies-halo-licensing-and-creates-grant-pool-for-filecoin-zcash-projects
 description: null
 image:
-  url: >-
-    /assets/images/64423bd7ba1528be454f2e64_0211-zcash-twitter.png
+  src: /assets/images/64423bd7ba1528be454f2e64_0211-zcash-twitter.png
   alt: null
 updated-on: "2023-04-21T07:31:35.155Z"
 created-on: "2023-04-21T07:31:35.155Z"

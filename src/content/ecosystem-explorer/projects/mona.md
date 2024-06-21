@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073295e53ec1824f70e871_monaverse.png
+  src: /assets/images/66073295e53ec1824f70e871_monaverse.png
   alt: Mona
 website: https://monaverse.com
 featured-content:

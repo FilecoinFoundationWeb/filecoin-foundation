@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: # "/assets/images/stfil-logo-dark-background-.png"
+  src: # "/assets/images/stfil-logo-dark-background-.png"
   alt: STFIL
 website: "stfil.io"
 featured-content:

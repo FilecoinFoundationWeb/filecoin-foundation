@@ -18,7 +18,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url:
+  src:
   alt: Catalyst Logo
 website: https://the-freaking-catalyst.vercel.app
 featured-content:

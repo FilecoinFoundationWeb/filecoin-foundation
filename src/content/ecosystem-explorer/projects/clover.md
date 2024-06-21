@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732916a689d42cb0e1eb4_clover.png
+  src: /assets/images/660732916a689d42cb0e1eb4_clover.png
   alt: Clover Logo
 website: https://useclover.xyz/
 featured-content:

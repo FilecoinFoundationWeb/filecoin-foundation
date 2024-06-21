@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597519ebea972da31ebe933_opsci_clear-withtext_666x206.png
+  src: /assets/images/6597519ebea972da31ebe933_opsci_clear-withtext_666x206.png
   alt: OpSci Logo
 website: "https://www.opsci.io"
 featured-content:

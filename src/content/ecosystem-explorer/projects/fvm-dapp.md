@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/fvm-dapp.png
+  src: /assets/images/fvm-dapp.png
   alt: FVM Dapp Logo
 website: https://www.npmjs.com/package/create-fvm-dapp
 featured-content:

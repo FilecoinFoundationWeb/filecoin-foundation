@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/collectoflogo.png
+  src: /assets/images/collectoflogo.png
   alt: Collectif DAO Logo
 website: "https://collectif.finance/"
 featured-content:

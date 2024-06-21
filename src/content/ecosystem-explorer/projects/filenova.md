@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/filenova_500.png
+  src: /assets/images/filenova_500.png
   alt: Filenova Logo
 featured-content:
 website: https://filenova.org/

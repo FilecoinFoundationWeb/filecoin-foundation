@@ -14,7 +14,7 @@ tags:
 tech:
   - ipfs
 image:
-  url:
+  src:
   alt: Elastic Logo
 featured-content:
 website: https://elastic-nft-renting-protocol.netlify.app/

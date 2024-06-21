@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/nulink.png
+  src: /assets/images/nulink.png
   alt: NuLink Logo
 website: https://www.nulink.org/
 featured-content:

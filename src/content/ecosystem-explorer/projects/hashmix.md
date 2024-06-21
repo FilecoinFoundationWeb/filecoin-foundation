@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
+  src: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
   alt: HashMix
 website: https://fvm.hashmix.org/
 featured-content:

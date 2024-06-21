@@ -13,7 +13,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: /assets/images/234.jpg
+  src: /assets/images/234.jpg
   alt: DomainFNS Logo
 featured-content:
 website: https://opengatefns.com/

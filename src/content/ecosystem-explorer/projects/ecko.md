@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/askecko_logo.jpeg
+  src: /assets/images/askecko_logo.jpeg
   alt: Ecko Logo
 featured-content:
 website: https://www.ecko.ac

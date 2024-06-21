@@ -9,7 +9,7 @@ description:
   at FIL Austin, a week of Filecoin community events set against the backdrop of Consensus,
   CoinDesk’s annual crypto conference in June.
 image:
-  url: /assets/images/image-c-15.png
+  src: /assets/images/image-c-15.png
   alt:
 recommended-posts: []
 category: events

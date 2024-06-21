@@ -14,7 +14,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/6607367ee29bf508686a1043_metapals.png
+  src: /assets/images/6607367ee29bf508686a1043_metapals.png
   alt: MetaPals Logo
 featured-content:
 website: https://metapals.pet/

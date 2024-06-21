@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/logo-title.webp
+  src: /assets/images/logo-title.webp
   alt: Data as Labor Network (DALN) Logo
 featured-content:
 website: https://app.daln.io/

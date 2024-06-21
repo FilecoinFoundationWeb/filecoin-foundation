@@ -7,8 +7,7 @@ description: >-
   Introducing a Sector Duration Multiple for Longer Term Storage Commitment.
   Here's everything you need to know.
 image:
-  url: >-
-    /assets/images/64423abda6ec4131c52a3df0_1-et2gg4agkn7chfbur-8a6g.webp
+  src: /assets/images/64423abda6ec4131c52a3df0_1-et2gg4agkn7chfbur-8a6g.webp
   alt:
 slug: >-
   everything-you-need-to-know-about-fip0036-deliberation-discussion-and-next-steps

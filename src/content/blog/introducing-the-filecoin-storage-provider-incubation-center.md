@@ -7,7 +7,7 @@ description:
   "The Filecoin Foundation is committed to growing and supporting the Filecoin
   ecosystem — miners, developers, and storage clients alike. "
 image:
-  url: /assets/images/image-c-21.png
+  src: /assets/images/image-c-21.png
   alt:
 slug: introducing-the-filecoin-storage-provider-incubation-center
 recommended-posts: []
