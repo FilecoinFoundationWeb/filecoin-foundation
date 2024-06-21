@@ -48,8 +48,6 @@ export default function EventEntry({ params }: EventProps) {
         }
         image={{
           ...image,
-          src: image.url,
-          alt: image.alt,
           fallback: graphicsData.imageFallback,
         }}
       />

@@ -35,8 +35,7 @@ export function FeaturedGrantsGraduates({
             icon: BookOpen,
           }}
           image={{
-            src: image.url,
-            alt: image.alt,
+            ...image,
             fallback: graphicsData.imageFallback,
             objectFit: 'contain',
             padding: true,

@@ -16,7 +16,7 @@ export function mapMarkdownToBlogPostData({
     category: data.category,
     description: data.description,
     image: {
-      url: data.image?.url || '',
+      src: data.image?.src || '',
       alt: data.image?.alt || '',
     },
     content,
