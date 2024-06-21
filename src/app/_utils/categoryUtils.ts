@@ -9,6 +9,7 @@ import { type CMSFieldOption } from '@/types/cmsConfig'
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
+import { pastEventsSetting } from '@/constants/categoryConstants'
 import { CMS_CATEGORY_FIELD_MAPPING } from '@/constants/cmsConstants'
 
 function transformCategoryDataToSettings(
@@ -50,6 +51,16 @@ export function getCategorySettings(
   const categoryIds = categorySettings.map((setting) => setting.id)
 
   return { categorySettings, validCategoryOptions: categoryIds }
+}
+
+export function getEventsCategorySettings() {
+  const eventSettings = getCategorySettings('events')
+  const { categorySettings, validCategoryOptions } = eventSettings
+
+  return {
+    categorySettings: [...categorySettings, pastEventsSetting],
+    validCategoryOptions: [...validCategoryOptions, pastEventsSetting.id],
+  }
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
