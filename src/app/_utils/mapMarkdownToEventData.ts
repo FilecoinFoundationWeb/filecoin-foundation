@@ -18,7 +18,7 @@ export function mapMarkdownToEventData({
     startDate: data['start-date'],
     endDate: data['end-date'],
     image: {
-      url: data.image?.url || '',
+      src: data.image?.src || '',
       alt: data.image?.alt || '',
     },
     involvement: data.involvement,

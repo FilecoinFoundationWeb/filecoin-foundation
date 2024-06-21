@@ -19,7 +19,7 @@ export function generateStructuredData(
     '@type': 'BlogPosting',
     headline: title,
     description: description,
-    image: image.url,
+    image: image.src,
     author: {
       '@type': 'Organization',
       name: ORGANIZATION_NAME,
