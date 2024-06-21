@@ -23,7 +23,7 @@ image_config: &image_config
   label: "Image"
   widget: "object"
   fields:
-    - name: "url"
+    - name: "src"
       label: "URL"
       widget: "image"
       allow_multiple: false
