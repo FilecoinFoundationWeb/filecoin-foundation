@@ -30,6 +30,7 @@ export function testPageMetadata({
       }
 
       cy.visit(path)
+      cy.percySnapshot()
 
       verifyPageTitle(path, seo.title, useAbsoluteTitle)
 
