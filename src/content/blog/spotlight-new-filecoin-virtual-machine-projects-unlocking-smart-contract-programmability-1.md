@@ -10,7 +10,7 @@ description:
   efficient, and robust platform for humanity’s data by introducing programmability
   to the network.
 image:
-  url: /assets/images/rectangle-32-.png
+  src: /assets/images/rectangle-32-.png
   alt:
 recommended-posts: []
 category: news

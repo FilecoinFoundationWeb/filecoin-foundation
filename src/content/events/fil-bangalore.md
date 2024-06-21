@@ -9,7 +9,7 @@ external-link: https://fil-bangalore.io/
 start-date: "2022-11-29T16:50:53.914Z"
 end-date: "2022-11-30T16:50:00.000Z"
 image:
-  url: /assets/images/fil-bangalore-2022.png
+  src: /assets/images/fil-bangalore-2022.png
   alt:
 involvement: hosted
 seo:

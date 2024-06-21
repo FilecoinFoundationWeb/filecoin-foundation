@@ -15,7 +15,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/repl_logo_white.png
+  src: /assets/images/repl_logo_white.png
   alt: Repl Logo
 website: "https://www.repl.fi/"
 featured-content:

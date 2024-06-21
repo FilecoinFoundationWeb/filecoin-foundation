@@ -4,7 +4,7 @@ created-on: 2024-04-05T13:18:56.133Z
 updated-on: 2024-04-05T13:18:56.169Z
 published-on: 2024-04-05T13:18:56.214Z
 image:
-  url: /assets/images/flare.png
+  src: /assets/images/flare.png
   alt: Flare API Portal Logo
 category: tooling-productivity
 subcategories:

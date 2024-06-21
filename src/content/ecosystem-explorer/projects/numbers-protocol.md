@@ -14,7 +14,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/6597243838833597a71f11e6_icngy4es52inzwhpzt2c0uodiwktmytv6cqlvo6kya8.png
+  src: /assets/images/6597243838833597a71f11e6_icngy4es52inzwhpzt2c0uodiwktmytv6cqlvo6kya8.png
   alt: "Numbers Protocol Logo"
 website: "https://numbersprotocol.org"
 featured-content:

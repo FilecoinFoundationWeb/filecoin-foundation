@@ -15,7 +15,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/6597243633c341e0379b9712_nj6wqvn7kai05ws5irrbrcma4zz_ctatdako4sxlrio.png
+  src: /assets/images/6597243633c341e0379b9712_nj6wqvn7kai05ws5irrbrcma4zz_ctatdako4sxlrio.png
   alt: "Twin Quasar Logo"
 website: "https://www.twinquasar.io/"
 repo:

@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/hashgaurd_logo_white.png
+  src: /assets/images/hashgaurd_logo_white.png
   alt: Hashguard
 website: https://hashguard.io/
 featured-content:

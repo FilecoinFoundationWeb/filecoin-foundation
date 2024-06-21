@@ -16,7 +16,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659872e1c489a49f48f519b0_banyan_logo_white.png
+  src: /assets/images/659872e1c489a49f48f519b0_banyan_logo_white.png
   alt: Banyan Logo
 website: "https://www.banyan.computer"
 featured-content: "https://www.youtube.com/watch?v=SaIGrSjOMP4&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=11"

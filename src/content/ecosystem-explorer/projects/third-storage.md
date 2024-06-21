@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073297a94418c44efa178a_thirdstorage.png
+  src: /assets/images/66073297a94418c44efa178a_thirdstorage.png
   alt: Third Storage Logo
 website: https://thirdstorage.com
 featured-content:

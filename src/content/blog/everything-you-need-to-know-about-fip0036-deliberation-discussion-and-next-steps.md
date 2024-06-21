@@ -7,8 +7,7 @@ description: >-
   Introducing a Sector Duration Multiple for Longer Term Storage Commitment.
   Here's everything you need to know.
 image:
-  url: >-
-    /assets/images/64423abda6ec4131c52a3df0_1-et2gg4agkn7chfbur-8a6g.webp
+  src: /assets/images/64423abda6ec4131c52a3df0_1-et2gg4agkn7chfbur-8a6g.webp
   alt:
 updated-on: "2023-04-21T07:26:54.116Z"
 created-on: "2023-04-21T07:26:54.116Z"

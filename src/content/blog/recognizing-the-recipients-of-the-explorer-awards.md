@@ -8,8 +8,7 @@ description: >-
   series of grants to provide organizations and individuals using decentralized
   technology with the support to learn more about Web3.
 image:
-  url: >-
-    /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
+  src: /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
   alt:
 recommended-posts: []
 category: news

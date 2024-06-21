@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732963533eb7277065843_spex.png
+  src: /assets/images/660732963533eb7277065843_spex.png
   alt: SPex Logo
 website: https://www.spex.website/
 featured-content:

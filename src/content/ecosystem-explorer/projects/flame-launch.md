@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/flame.png
+  src: /assets/images/flame.png
   alt: Flame Launch Logo
 website: https://www.flamelaunch.com/
 featured-content:

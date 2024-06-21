@@ -8,7 +8,7 @@ description:
   system where users can collect NFT 3D animals, known as ‘Arlee’, in a creative ecosystem
   powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
 image:
-  url: /assets/images/64423aa70425d34fa6f2743e_1-s1umhgp4fz8mfyk3fixjia.png
+  src: /assets/images/64423aa70425d34fa6f2743e_1-s1umhgp4fz8mfyk3fixjia.png
   alt:
 recommended-posts: []
 category: reports

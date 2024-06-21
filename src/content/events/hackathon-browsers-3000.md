@@ -9,7 +9,7 @@ external-link: https://events.protocol.ai/2021/browsers3000/
 start-date: "2021-07-07T22:00:00.000Z"
 end-date: "2021-08-19T22:00:00.000Z"
 image:
-  url:
+  src:
   alt:
 involvement: supported
 seo:

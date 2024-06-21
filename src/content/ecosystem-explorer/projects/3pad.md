@@ -13,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/pad_logo_white.png
+  src: /assets/images/pad_logo_white.png
   alt: 3Pad Logo
 website: https://hello.3pad.xyz/
 featured-content:

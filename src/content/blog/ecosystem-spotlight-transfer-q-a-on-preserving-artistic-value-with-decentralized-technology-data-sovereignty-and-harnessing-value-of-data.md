@@ -11,7 +11,7 @@ description: >
   technology, automated governance systems, harnessing the value of data in unique
   ways.
 image:
-  url: /assets/images/020124-transfer.png
+  src: /assets/images/020124-transfer.png
   alt: Filecoin Foundation TRANSFER Blog Post
 recommended-posts: []
 seo:

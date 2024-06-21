@@ -12,7 +12,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url:
+  src:
   alt: E-IPFS Logo
 featured-content:
 website: https://e-ipfs.web.app/

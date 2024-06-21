@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660736a78635f037e25f71c5_murmurationlabs.png
+  src: /assets/images/660736a78635f037e25f71c5_murmurationlabs.png
   alt: Murmuration Labs Logo
 website: https://murmuration.ai/
 featured-content:

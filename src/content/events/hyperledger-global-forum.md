@@ -9,7 +9,7 @@ external-link: https://www.youtube.com/watch?v=B8lDaJcSiX0
 start-date: "2021-06-07T22:00:00.000Z"
 end-date: "2021-06-09T22:00:00.000Z"
 image:
-  url: /assets/images/645215feaee26f3101cebc4b_hyperledger-global-forum.jpeg
+  src: /assets/images/645215feaee26f3101cebc4b_hyperledger-global-forum.jpeg
   alt:
 involvement: supported
 seo:

@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/screenshot-2024-04-03-at-8.47-1.png
+  src: /assets/images/screenshot-2024-04-03-at-8.47-1.png
   alt: Jackrabbit Finance Logo
 website: http://www.jackrabbitfinance.xyz/
 featured-content:

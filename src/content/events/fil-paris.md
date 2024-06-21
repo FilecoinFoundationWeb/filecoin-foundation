@@ -9,7 +9,7 @@ external-link: https://fil-paris.io/
 start-date: "2023-07-15T15:38:07.119Z"
 end-date: "2023-07-21T15:38:07.128Z"
 image:
-  url: /assets/images/fil-paris-pic.png
+  src: /assets/images/fil-paris-pic.png
   alt:
 involvement: hosted
 seo:

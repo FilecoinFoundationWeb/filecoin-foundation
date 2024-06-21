@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/hrdag_logo_white.png
+  src: /assets/images/hrdag_logo_white.png
   alt: Human Rights Data Analysis Group (HRDAG) Logo
 website: https://hrdag.org/
 featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/

@@ -11,7 +11,7 @@ description:
   network, the promises of the decentralized web, and the mission of the Foundation.
   This report also provides additional details on FF’s annual budget.
 image:
-  url: /assets/images/022624-ff-anualreport.png
+  src: /assets/images/022624-ff-anualreport.png
   alt: "Filecoin Foundation 2023 Annual Report"
 recommended-posts: []
 seo:

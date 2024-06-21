@@ -4,7 +4,7 @@ created-on: 2024-04-03T16:51:43.448Z
 updated-on: 2024-04-03T16:51:43.470Z
 published-on: 2024-04-03T16:51:43.478Z
 image:
-  url: /assets/images/daln.png
+  src: /assets/images/daln.png
   alt: Data as Labor Network (DALN) Logo
 category: storage
 subcategories:

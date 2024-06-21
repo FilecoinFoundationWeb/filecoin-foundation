@@ -15,7 +15,7 @@ tech:
   - "ipfs"
   - "filecoin"
 image:
-  url: /assets/images/transfer_logo_white.png
+  src: /assets/images/transfer_logo_white.png
   alt: "TRANSFER Data Trust Logo"
 website: "http://transfer.art"
 repo: "https://github.com/TRANSFERArchive"

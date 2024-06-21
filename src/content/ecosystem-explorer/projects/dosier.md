@@ -4,7 +4,7 @@ created-on: 2024-04-05T23:07:24.299Z
 updated-on: 2024-04-05T23:07:24.311Z
 published-on: 2024-04-05T23:07:24.324Z
 image:
-  url: /assets/images/dosier.png
+  src: /assets/images/dosier.png
   alt: Dosier Logo
 category: storage
 subcategories:

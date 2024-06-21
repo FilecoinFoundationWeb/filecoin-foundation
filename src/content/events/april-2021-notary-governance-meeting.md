@@ -9,7 +9,7 @@ start-date: 2021-04-12T22:00:00.000Z
 end-date: null
 updated-on: 2023-05-03T08:06:31.219Z
 image:
-  url: /assets/images/governance-logo.jpg
+  src: /assets/images/governance-logo.jpg
   alt: Filecoin Governance Logo
 involvement: hosted
 seo:

@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597471cd556a0c37caf9706_dcent_logo.png
+  src: /assets/images/6597471cd556a0c37caf9706_dcent_logo.png
   alt: DCENT Logo
 website: https://dcent.nl
 featured-content: https://fil.org/blog/filecoin-storage-provider-spotlight-dcent/

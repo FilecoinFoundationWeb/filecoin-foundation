@@ -4,7 +4,7 @@ created-on: 2024-03-22T16:24:25.057Z
 updated-on: 2024-03-22T16:24:25.069Z
 published-on: 2024-03-22T16:24:25.078Z
 image:
-  url: /assets/images/liquicert.png
+  src: /assets/images/liquicert.png
   alt: Liquicert Logo
 category: tooling-productivity
 subcategories:

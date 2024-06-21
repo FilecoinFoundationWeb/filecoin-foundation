@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/drpc_symbol_fullcolor-2x.png
+  src: /assets/images/drpc_symbol_fullcolor-2x.png
   alt: dRPC Logo
 featured-content:
 website: https://drpc.org/

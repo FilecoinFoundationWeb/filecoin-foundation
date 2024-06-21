@@ -8,7 +8,7 @@ description:
   One year ago on March 14, 2023, the launch of the Filecoin Virtual Machine
   (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet.
 image:
-  url: /assets/images/031224-fvm-anniversary.png
+  src: /assets/images/031224-fvm-anniversary.png
   alt: "One Year of Programmability, Smart Contracts, and Dapp Growth on Filecoin"
 recommended-posts: []
 seo:

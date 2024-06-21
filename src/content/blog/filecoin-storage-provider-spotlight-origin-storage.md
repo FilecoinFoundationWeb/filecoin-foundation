@@ -8,7 +8,7 @@ description:
   technology solutions for the Web3 ecosystem with safe, flexible, and reliable products
   and services. "
 image:
-  url: /assets/images/image-c-01.png
+  src: /assets/images/image-c-01.png
   alt:
 recommended-posts: []
 category: ecosystem

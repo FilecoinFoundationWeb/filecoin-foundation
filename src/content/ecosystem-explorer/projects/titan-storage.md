@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/titan-storage_logo_white.png
+  src: /assets/images/titan-storage_logo_white.png
   alt: Titan Storage Logo
 website: https://storage.titannet.io
 featured-content:

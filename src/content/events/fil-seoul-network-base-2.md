@@ -9,7 +9,7 @@ external-link:
 start-date: "2024-09-04T15:09:58.111Z"
 end-date: "2024-09-10T15:09:58.126Z"
 image:
-  url: /assets/images/fil-seoul-24.png
+  src: /assets/images/fil-seoul-24.png
   alt: FIL Seoul Network Base Logo
 involvement: hosted
 seo:

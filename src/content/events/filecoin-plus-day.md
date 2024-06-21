@@ -9,7 +9,7 @@ external-link:
 start-date: "2022-05-11T06:00:24.000Z"
 end-date:
 image:
-  url:
+  src:
   alt:
 involvement: hosted
 seo:

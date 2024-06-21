@@ -9,7 +9,7 @@ external-link: https://www.youtube.com/watch?v=wP4Bk8lBNUc
 start-date: "2021-05-10T22:00:00.000Z"
 end-date:
 image:
-  url: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg
+  src: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg
   alt:
 involvement: hosted
 seo:

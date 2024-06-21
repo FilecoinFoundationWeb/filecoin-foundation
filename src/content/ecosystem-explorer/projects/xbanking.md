@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/xbanking_logo_white.png
+  src: /assets/images/xbanking_logo_white.png
   alt: XBANKING Logo
 website: "https://xbanking.org"
 featured-content:

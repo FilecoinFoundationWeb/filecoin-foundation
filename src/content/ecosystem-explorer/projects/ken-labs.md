@@ -4,7 +4,7 @@ created-on: 2024-04-04T01:31:54.103Z
 updated-on: 2024-04-04T01:31:54.122Z
 published-on: 2024-04-04T01:31:54.137Z
 image:
-  url: /assets/images/ken.png
+  src: /assets/images/ken.png
   alt: KEN Labs Logo
 category: tooling-productivity
 subcategories:

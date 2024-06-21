@@ -7,7 +7,7 @@ description:
   "We’re excited to announce the launch of the Orbit Community Program,
   powered by Filecoin Foundation and Protocol Labs. "
 image:
-  url: /assets/images/0114-orbitcommunity-twitter.png
+  src: /assets/images/0114-orbitcommunity-twitter.png
   alt:
 recommended-posts: []
 category: news

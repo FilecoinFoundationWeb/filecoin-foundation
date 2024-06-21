@@ -11,7 +11,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/finalnewcoophives-01.png
+  src: /assets/images/finalnewcoophives-01.png
   alt: CoopHive Logo
 website: https://www.coophive.network/
 featured-content:

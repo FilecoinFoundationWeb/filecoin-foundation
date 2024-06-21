@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732912d6d72ba4a9774ea_chainstack.png
+  src: /assets/images/660732912d6d72ba4a9774ea_chainstack.png
   alt: Chainstack Logo
 website: https://chainstack.com/
 featured-content:

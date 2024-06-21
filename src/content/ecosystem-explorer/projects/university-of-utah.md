@@ -16,7 +16,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/65974d55ccb76baf40726b38_university_of_utah_horizontal_logo.svg.png
+  src: /assets/images/65974d55ccb76baf40726b38_university_of_utah_horizontal_logo.svg.png
   alt: "University of Utah Logo"
 website: "http://cedmav.org/"
 repo:

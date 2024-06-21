@@ -11,8 +11,7 @@ external-link: https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-
 start-date: "2021-10-19T22:00:00.000Z"
 end-date:
 image:
-  url: >-
-    /assets/images/645215fc18e20d1c30805b6c_2021-filecoin-orbit-lounge-event.png
+  src: /assets/images/645215fc18e20d1c30805b6c_2021-filecoin-orbit-lounge-event.png
   alt:
 involvement: sponsored
 seo:

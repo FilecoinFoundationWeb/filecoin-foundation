@@ -8,7 +8,7 @@ description:
   The Decentralized Physical Infrastructure Network (DePIN) movement is
   re-architecting the Internet's physical and digital backbone.
 image:
-  url: /assets/images/022624-depin.png
+  src: /assets/images/022624-depin.png
   alt: Filecoin DePIN
 recommended-posts: []
 seo:

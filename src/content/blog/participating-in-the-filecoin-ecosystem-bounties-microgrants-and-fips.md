@@ -7,7 +7,7 @@ description:
   "As an open-source, decentralized protocol, the success of the Filecoin
   network is inextricably linked with the development of its community. "
 image:
-  url: /assets/images/image-c-20.png
+  src: /assets/images/image-c-20.png
   alt:
 recommended-posts: []
 category: ecosystem

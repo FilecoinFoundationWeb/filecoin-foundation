@@ -7,7 +7,7 @@ description:
   "As a core building block of the Web3 world, the Filecoin network is
   both open-source and decentralized. "
 image:
-  url: /assets/images/643e66cbb75bbf237f8e1292_1-1dqtfatumnkf7vdkmw1rhq.png
+  src: /assets/images/643e66cbb75bbf237f8e1292_1-1dqtfatumnkf7vdkmw1rhq.png
   alt:
 recommended-posts: []
 category: reports

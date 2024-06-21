@@ -11,8 +11,7 @@ description: >-
   Blockchain Association, has joined the board of the Filecoin Foundation for
   the Decentralized Web (FFDW).
 image:
-  url: >-
-    /assets/images/64423acca6ec4184be2a4866_1-kequqilr3jvs6nq_e7naqq.png
+  src: /assets/images/64423acca6ec4184be2a4866_1-kequqilr3jvs6nq_e7naqq.png
   alt:
 recommended-posts: []
 category: news

@@ -11,7 +11,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/660736b1d3ce5e439cb32029_niftyguilds.png
+  src: /assets/images/660736b1d3ce5e439cb32029_niftyguilds.png
   alt: NiftyGuilds Logo
 featured-content:
 website: https://niftyguilds.vercel.app/

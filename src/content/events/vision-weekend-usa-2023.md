@@ -10,7 +10,7 @@ start-date: "2023-12-01T14:08:27.294Z"
 end-date: "2023-12-03T14:08:27.299Z"
 
 image:
-  url: /assets/images/vision-weekend.jpeg
+  src: /assets/images/vision-weekend.jpeg
   alt:
 involvement: supported
 seo:

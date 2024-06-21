@@ -9,7 +9,7 @@ description:
   by Filecoin Foundation and Protocol Labs to amplify the voice of the Filecoin, IPFS,
   and libp2p communities.
 image:
-  url: /assets/images/0713-orbitcommunity.png
+  src: /assets/images/0713-orbitcommunity.png
   alt:
 recommended-posts: []
 category: ecosystem

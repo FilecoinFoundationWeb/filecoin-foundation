@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660734bb2f8beb060933dd1d_builtdifferent.png
+  src: /assets/images/660734bb2f8beb060933dd1d_builtdifferent.png
   alt: Built Different Logo
 website: https://www.builtdifferent.foundation/
 featured-content:

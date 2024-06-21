@@ -9,7 +9,7 @@ description:
   Twin Quasar and CELESTE have teamed up to build an environmentally friendly
   and cost-effective alternative for data storage on the Filecoin network.
 image:
-  url: /assets/images/twin-quasar-celeste-filecoin-blog-image.png
+  src: /assets/images/twin-quasar-celeste-filecoin-blog-image.png
   alt: Twin Quasar and CELESTE logos for Filecoin Foundation blog
 recommended-posts: []
 category: use-cases

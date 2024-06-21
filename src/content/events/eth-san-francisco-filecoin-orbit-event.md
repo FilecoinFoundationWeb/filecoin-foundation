@@ -9,7 +9,7 @@ external-link:
 start-date: "2024-10-18T15:16:41.373Z"
 end-date: "2024-10-19T15:16:41.380Z"
 image:
-  url: /assets/images/ethsf24.png
+  src: /assets/images/ethsf24.png
   alt: ETH San Francisco Logo
 involvement: sponsored
 seo:

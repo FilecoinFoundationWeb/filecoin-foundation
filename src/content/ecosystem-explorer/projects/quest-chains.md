@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073295f68243b0fc173c94_questchains.png
+  src: /assets/images/66073295f68243b0fc173c94_questchains.png
   alt: Quest Chains Logo
 website: https://questchains.xyz/
 featured-content:

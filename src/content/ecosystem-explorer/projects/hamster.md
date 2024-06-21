@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732932560f8884ec24d4c_hamster.png
+  src: /assets/images/660732932560f8884ec24d4c_hamster.png
   alt: Hamster
 website: https://hamsternet.io/
 featured-content:

@@ -4,7 +4,7 @@ created-on: 2024-03-29T21:28:50.750Z
 updated-on: 2024-05-16T14:59:06.623Z
 published-on: 2024-05-16T14:59:06.634Z
 image:
-  url: /assets/images/gohstdrive.png
+  src: /assets/images/gohstdrive.png
   alt: Ghost Drive
 category: storage
 subcategories:

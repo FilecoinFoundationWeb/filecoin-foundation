@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/blocz.png
+  src: /assets/images/blocz.png
   alt: Blocz Logo
 website: https://www.blocz.io/
 featured-content:

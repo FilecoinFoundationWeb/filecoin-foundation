@@ -8,7 +8,7 @@ description:
   released venus v1.0.0, which will enable global storage providers and clients to
   store valuable data securely on Filecoin.
 image:
-  url: /assets/images/image-c-28.png
+  src: /assets/images/image-c-28.png
   alt:
 recommended-posts: []
 category: news

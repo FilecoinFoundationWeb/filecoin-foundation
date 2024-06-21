@@ -8,7 +8,7 @@ description: "As part of Filecoin Foundation’s work to showcase innovative
   platform that leverages Filecoin's decentralized storage to improve redundancy
   and security."
 image:
-  url: /assets/images/0604-ghostdrive.png
+  src: /assets/images/0604-ghostdrive.png
   alt: "Filecoin Foundation and GhostDrive Logos"
 category: ecosystem
 recommended-posts: []

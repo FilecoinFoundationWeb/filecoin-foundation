@@ -8,7 +8,7 @@ description:
   the world to contribute their creative talents to support the Ukrainian people in
   their fight for freedom.
 image:
-  url: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
+  src: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
   alt:
 recommended-posts: []
 category: reports

@@ -8,7 +8,7 @@ description:
   we create more than 2.5 quintillion bytes of data daily — from photos and videos,
   tweets and texts, Reddit posts and research reports, and so much more.
 image:
-  url: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
+  src: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
   alt:
 recommended-posts: []
 category: ecosystem

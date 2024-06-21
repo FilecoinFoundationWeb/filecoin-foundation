@@ -8,7 +8,7 @@ description:
   Filecoin for ethical compensation and transparency. Dive into an insightful conversation
   with Allie Haire on the future of AI and blockchain in art.
 image:
-  url: /assets/images/06262023-waterlilly.png
+  src: /assets/images/06262023-waterlilly.png
   alt:
 recommended-posts: []
 category: use-cases

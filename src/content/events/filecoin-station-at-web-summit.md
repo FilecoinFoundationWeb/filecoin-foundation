@@ -9,7 +9,7 @@ external-link: https://websummit.com/blog/web-summit-2022-2-for-1-tickets
 start-date: "2022-11-01T15:30:57.167Z"
 end-date: "2022-11-04T15:30:57.184Z"
 image:
-  url: /assets/images/websummit-2023.png
+  src: /assets/images/websummit-2023.png
   alt:
 involvement: sponsored
 seo:

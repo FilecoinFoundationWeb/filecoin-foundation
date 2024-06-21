@@ -8,8 +8,7 @@ description: >-
   decentralized oracles and Filecoin decentralized storage within a single
   application.
 image:
-  url: >-
-    /assets/images/64423ae9ef619d8d6eb60ed0_1-pvi22ssfyyn-thpuj3ltgg.png
+  src: /assets/images/64423ae9ef619d8d6eb60ed0_1-pvi22ssfyyn-thpuj3ltgg.png
   alt:
 updated-on: "2023-04-21T07:27:37.543Z"
 created-on: "2023-04-21T07:27:37.543Z"

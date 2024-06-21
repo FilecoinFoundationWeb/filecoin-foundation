@@ -8,7 +8,7 @@ description:
   resources, community support, and guidance to everyone involved in building the
   Filecoin and Web3 ecosystems. "
 image:
-  url: /assets/images/image-c-04.png
+  src: /assets/images/image-c-04.png
   alt:
 recommended-posts: []
 category: ecosystem

@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/defluencer_logo_blur.svg
+  src: /assets/images/defluencer_logo_blur.svg
   alt: Defluencer Logo
 featured-content:
 website: https://social.defluencer.eth.limo/#/

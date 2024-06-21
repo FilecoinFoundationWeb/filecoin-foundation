@@ -8,7 +8,7 @@ description:
   workforce of professionals dedicated to research, development, and community engagement
   around open source, decentralized storage, and nurturing the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-29.png
+  src: /assets/images/image-c-29.png
   alt:
 recommended-posts: []
 category: news

@@ -13,7 +13,7 @@ description: >-
   journalist, who has been recognized for his work on democratic ownership and
   governance models for online platforms and protocols.
 image:
-  url: /assets/images/n-schneider-blogpost-banner.png
+  src: /assets/images/n-schneider-blogpost-banner.png
   alt:
 recommended-posts: []
 category: ecosystem

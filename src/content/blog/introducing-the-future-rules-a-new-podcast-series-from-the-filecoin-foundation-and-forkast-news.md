@@ -10,7 +10,7 @@ description: >
   podcast series dedicated to exploring the intersection of Web3 and the many
   factors that impact the growth and viability of a decentralized web.
 image:
-  url: /assets/images/image-c-33.png
+  src: /assets/images/image-c-33.png
   alt:
 recommended-posts: []
 category: news

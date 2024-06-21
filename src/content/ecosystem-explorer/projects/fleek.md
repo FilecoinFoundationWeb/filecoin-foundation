@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974a30749bbcefd1c904e3_fleek-xyz-logo-dark-866fe3a5fd4b25673eebd25c841bfe30.png
+  src: /assets/images/65974a30749bbcefd1c904e3_fleek-xyz-logo-dark-866fe3a5fd4b25673eebd25c841bfe30.png
   alt: Fleek Logo
 website: "https://fleek.co"
 repo: "https://github.com/FleekHQ"

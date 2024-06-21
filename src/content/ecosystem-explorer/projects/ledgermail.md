@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073295e0ea12e6b43cd691_ledgermail.png
+  src: /assets/images/66073295e0ea12e6b43cd691_ledgermail.png
   alt: LedgerMail Logo
 website: https://ledgermail.io
 featured-content:

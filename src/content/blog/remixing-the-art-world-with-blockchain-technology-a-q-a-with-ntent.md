@@ -8,7 +8,7 @@ description:
   rules. Now, Web3 is creating a more inclusive and user-centric experience, lowering
   the barrier to entry through decentralized technology.
 image:
-  url: /assets/images/06012023-ntent.png
+  src: /assets/images/06012023-ntent.png
   alt:
 recommended-posts: []
 category: interviews
