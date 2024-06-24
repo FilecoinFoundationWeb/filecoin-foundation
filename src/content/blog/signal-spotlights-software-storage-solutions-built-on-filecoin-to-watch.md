@@ -10,6 +10,8 @@ description: "There are dozens of ways to store data on Filecoin. From
   storage needs. "
 image:
   url: /assets/images/120624-spotlight.png
+  alt: Logos for Lighthouse, Titan Storage, CIDgravity, GhostDrive, SteelDome, and
+    Decentrally
 seo:
   twitter:
     title: summary
