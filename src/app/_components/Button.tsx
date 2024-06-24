@@ -2,10 +2,9 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
+import { Icon } from '@/components/Icon'
 
 import { isExternalLink } from '@/utils/linkUtils'
-
-import { Icon } from './Icon'
 
 type ButtonProps = {
   variant?: 'primary' | 'ghost'
