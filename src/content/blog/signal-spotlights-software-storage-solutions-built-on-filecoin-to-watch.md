@@ -75,4 +75,4 @@ Titan Network is a digital resource network that incentivizes matching community
 
 For the storage element of the platform, [Titan Network](https://storage.titannet.io/) is behind [Titan Storage](https://fil.org/ecosystem-projects/titan-storage/), a hot data storage solution integrated with the Filecoin network. Titan Storage enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics. 
 
-**What’s new with Titan?** The [Herschel Testnet ](https://titannet.gitbook.io/titan-network-en/herschel-testnet/herschel-testnet)is Titan Network’s second testnet, offering enhanced rewards and gameplay, and more efficient solutions for data storage and processing.
+**What’s new with Titan?** The [Herschel Testnet](https://titannet.gitbook.io/titan-network-en/herschel-testnet/herschel-testnet) is Titan Network’s second testnet, offering enhanced rewards and gameplay, and more efficient solutions for data storage and processing.
