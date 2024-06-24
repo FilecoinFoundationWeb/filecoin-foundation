@@ -26,14 +26,10 @@ type SpacingValue = keyof typeof theme.spacing
 type BreakpointValue = keyof typeof theme.screens
 
 type LeftProperty = `left-${SpacingValue}`
-type BottomProperty = `bottom-${SpacingValue}`
-
 type ResponsiveLeftProperty = `${BreakpointValue}:${LeftProperty}`
-type ResponsiveBottomProperty = `${BreakpointValue}:${BottomProperty}`
 
 type LinkProps = {
   left?: LeftProperty | [LeftProperty, ResponsiveLeftProperty]
-  bottom?: BottomProperty | [BottomProperty, ResponsiveBottomProperty]
 } & CTAProps
 
 function Link({
@@ -41,7 +37,6 @@ function Link({
   ariaLabel,
   icon: Icon,
   text,
-  bottom = 'bottom-4',
   left = 'left-4',
 }: LinkProps) {
   return (
@@ -52,9 +47,8 @@ function Link({
     >
       <span
         className={clsx(
-          'absolute text-brand-300',
+          'absolute bottom-4 text-brand-300',
           Icon && 'inline-flex items-center gap-2',
-          bottom,
           left,
         )}
       >
