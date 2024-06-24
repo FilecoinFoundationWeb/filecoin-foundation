@@ -1,3 +1,4 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
@@ -9,6 +10,8 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
+
+import { isExternalLink } from '@/utils/linkUtils'
 
 type CardProps = {
   title: string | React.ReactNode
@@ -32,13 +35,28 @@ type LinkProps = {
   left?: LeftProperty | [LeftProperty, ResponsiveLeftProperty]
 } & CTAProps
 
-function Link({
+function renderTextIcon({
   href,
-  ariaLabel,
-  icon: Icon,
   text,
-  left = 'left-4',
-}: LinkProps) {
+  icon: Icon,
+}: Pick<CTAProps, 'href' | 'text' | 'icon'>) {
+  const isExternal = isExternalLink(href)
+  const textElement = <span>{text}</span>
+
+  if (Icon) {
+    return [<Icon key="custom-icon" size={24} />, textElement]
+  }
+
+  if (isExternal) {
+    return [textElement, <ArrowUpRight key="arrow-icon" size={24} />]
+  }
+
+  return textElement
+}
+
+function Link({ href, ariaLabel, icon, text, left = 'left-4' }: LinkProps) {
+  const textIcon = renderTextIcon({ href, text, icon })
+
   return (
     <CustomLink
       href={href}
@@ -47,13 +65,11 @@ function Link({
     >
       <span
         className={clsx(
-          'absolute bottom-4 text-brand-300',
-          Icon && 'inline-flex items-center gap-2',
+          'absolute bottom-4 inline-flex items-center gap-2 text-brand-300',
           left,
         )}
       >
-        {Icon && <Icon size={24} />}
-        <span>{text}</span>
+        {textIcon}
       </span>
     </CustomLink>
   )
