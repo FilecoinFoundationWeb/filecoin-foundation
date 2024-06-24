@@ -8,14 +8,14 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { CategoryListbox } from '@/components/CategoryListbox'
 import { CategorySelect } from '@/components/CategorySelect'
 
-import { CategorySetting, type CategoryOption } from '@/types/categoryTypes'
+import type { CategorySetting, CategoryOption } from '@/types/categoryTypes'
 
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
   settings: CategorySetting[]
-  counts: ReturnType<typeof useCategory>['categoryCounts']
+  counts?: ReturnType<typeof useCategory>['categoryCounts']
 }
 
 export function Category({ query, settings, counts }: CategoryProps) {
