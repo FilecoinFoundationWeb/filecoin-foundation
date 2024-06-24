@@ -60,11 +60,12 @@ export default function Grants() {
       >
         <CardGrid cols="lgThree">
           {opportunitiesData.map((card) => {
-            const { title, description, icon } = card
+            const { title, description, icon, cta } = card
 
             return (
               <GrantsSectionCard
                 key={title}
+                cta={cta}
                 heading={{
                   tag: 'h3',
                   variant: 'lg',

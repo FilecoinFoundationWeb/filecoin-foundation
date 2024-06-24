@@ -62,6 +62,14 @@ const FILECOIN_FOUNDATION_URLS = {
       label: 'Ecosystem grants inquiries',
       href: 'mailto:grants@fil.org',
     },
+    documents: {
+      openGrants:
+        'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md',
+      documentationGrants:
+        'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md',
+      requestsForProposals:
+        'https://github.com/filecoin-project/devgrants?tab=readme-ov-file#requests-for-proposals-rfps',
+    },
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
