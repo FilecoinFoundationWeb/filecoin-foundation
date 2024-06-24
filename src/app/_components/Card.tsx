@@ -6,6 +6,7 @@ import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
@@ -38,17 +39,17 @@ type LinkProps = {
 function renderTextIcon({
   href,
   text,
-  icon: Icon,
+  icon: IconComponent,
 }: Pick<CTAProps, 'href' | 'text' | 'icon'>) {
   const isExternal = isExternalLink(href)
   const textElement = <span>{text}</span>
 
-  if (Icon) {
-    return [<Icon key="custom-icon" size={24} />, textElement]
+  if (IconComponent) {
+    return [<Icon key="custom" component={IconComponent} />, textElement]
   }
 
   if (isExternal) {
-    return [textElement, <ArrowUpRight key="arrow-icon" size={24} />]
+    return [textElement, <Icon key="arrow" component={ArrowUpRight} />]
   }
 
   return textElement
