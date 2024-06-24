@@ -42,13 +42,13 @@ function filterByPastEvents(entry: EventData) {
 
   if (endDate) {
     if (!isDateValid(endDate)) {
-      throw new Error(`Invalid date provided for event: ${slug}`)
+      throw new Error(`Invalid endDate provided for event: ${slug}`)
     }
     return new Date(endDate) < today
   }
 
   if (!isDateValid(startDate)) {
-    throw new Error(`Invalid date provided for event: ${slug}`)
+    throw new Error(`Invalid startDate provided for event: ${slug}`)
   }
   return new Date(startDate) < today
 }
