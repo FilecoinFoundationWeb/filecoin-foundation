@@ -5,8 +5,6 @@ import {
   ArrowUpRight,
 } from '@phosphor-icons/react/dist/ssr'
 
-import { TextLink } from '@/components/TextLink'
-
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export const opportunitiesData = [
@@ -38,7 +36,7 @@ export const opportunitiesData = [
       'Request for Proposals (RFP) grants have clearly scoped deliverables, milestones, and funding limits. Refer to GitHub for any ongoing RFPs.',
     icon: Megaphone,
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.grants.github,
+      href: FILECOIN_FOUNDATION_URLS.grants.documents.requestsForProposals,
       text: 'Learn More',
       icon: ArrowUpRight,
     },

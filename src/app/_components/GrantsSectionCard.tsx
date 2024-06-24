@@ -1,8 +1,7 @@
+import { Card } from '@/components/Card'
 import { Heading, HeadingProps } from '@/components/Heading'
 
 import { CTAProps } from '@/types/sharedProps/ctaType'
-
-import { Card } from './Card'
 
 type GrantsSectionCardProps = {
   heading: HeadingProps
