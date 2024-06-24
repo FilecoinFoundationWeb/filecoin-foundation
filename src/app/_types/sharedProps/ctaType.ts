@@ -5,5 +5,4 @@ export type CTAProps = {
   text: string
   icon?: IconProps['component']
   ariaLabel?: string
-  isExternalLink?: boolean
 }
