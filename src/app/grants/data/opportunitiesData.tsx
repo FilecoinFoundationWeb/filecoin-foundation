@@ -1,9 +1,4 @@
-import {
-  Megaphone,
-  Coins,
-  Coin,
-  ArrowUpRight,
-} from '@phosphor-icons/react/dist/ssr'
+import { Megaphone, Coins, Coin } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -16,7 +11,6 @@ export const opportunitiesData = [
     cta: {
       href: FILECOIN_FOUNDATION_URLS.grants.documents.openGrants,
       text: 'Learn More',
-      icon: ArrowUpRight,
     },
   },
   {
@@ -27,7 +21,6 @@ export const opportunitiesData = [
     cta: {
       href: FILECOIN_FOUNDATION_URLS.grants.documents.documentationGrants,
       text: 'Learn More',
-      icon: ArrowUpRight,
     },
   },
   {
@@ -38,7 +31,6 @@ export const opportunitiesData = [
     cta: {
       href: FILECOIN_FOUNDATION_URLS.grants.documents.requestsForProposals,
       text: 'Learn More',
-      icon: ArrowUpRight,
     },
   },
 ]

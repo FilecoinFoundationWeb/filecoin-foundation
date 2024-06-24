@@ -1,13 +1,18 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
+import theme from 'tailwindcss/defaultTheme'
 
 import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
+
+import { isExternalLink } from '@/utils/linkUtils'
 
 type CardProps = {
   title: string | React.ReactNode
@@ -21,38 +26,51 @@ type CardProps = {
   as?: React.ElementType
 }
 
-const borderStyles = {
-  'brand-300': 'border-brand-300',
-  'brand-400': 'border-brand-400',
-  'brand-500': 'border-brand-500',
-  'brand-600': 'border-brand-600',
+type SpacingValue = keyof typeof theme.spacing
+type BreakpointValue = keyof typeof theme.screens
+
+type LeftProperty = `left-${SpacingValue}`
+type ResponsiveLeftProperty = `${BreakpointValue}:${LeftProperty}`
+
+type LinkProps = {
+  left?: LeftProperty | [LeftProperty, ResponsiveLeftProperty]
+} & CTAProps
+
+function renderTextIcon({
+  href,
+  text,
+  icon: IconComponent,
+}: Pick<CTAProps, 'href' | 'text' | 'icon'>) {
+  const isExternal = isExternalLink(href)
+  const textElement = <span>{text}</span>
+
+  if (IconComponent) {
+    return [<Icon key="custom" component={IconComponent} />, textElement]
+  }
+
+  if (isExternal) {
+    return [textElement, <Icon key="arrow" component={ArrowUpRight} />]
+  }
+
+  return textElement
 }
 
-function Link({
-  href,
-  ariaLabel,
-  icon: Icon,
-  text,
-  isExternalLink = false,
-}: CTAProps) {
+function Link({ href, ariaLabel, icon, text, left = 'left-4' }: LinkProps) {
+  const textIcon = renderTextIcon({ href, text, icon })
+
   return (
     <CustomLink
       href={href}
       aria-label={ariaLabel}
       className="absolute inset-0 rounded-lg focus:brand-outline"
     >
-      <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 text-brand-300">
-        {isExternalLink ? (
-          <>
-            <span>{text}</span>
-            {Icon && <Icon size={24} />}
-          </>
-        ) : (
-          <>
-            {Icon && <Icon size={24} />}
-            <span>{text}</span>
-          </>
+      <span
+        className={clsx(
+          'absolute bottom-4 inline-flex items-center gap-2 text-brand-300',
+          left,
         )}
+      >
+        {textIcon}
       </span>
     </CustomLink>
   )
@@ -97,6 +115,13 @@ function CardImage({ image }: Pick<CardProps, 'image'>) {
       </div>
     )
   }
+}
+
+const borderStyles = {
+  'brand-300': 'border-brand-300',
+  'brand-400': 'border-brand-400',
+  'brand-500': 'border-brand-500',
+  'brand-600': 'border-brand-600',
 }
 
 export function Card({
