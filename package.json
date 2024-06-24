@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "validate-md": "node scripts/validateMarkdown.js"
+    "validate-md": "node scripts/validateMarkdown.js",
+    "test": "percy exec -- cypress run"
   },
   "dependencies": {
     "@babel/core": "^7.23.5",
@@ -44,6 +45,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@percy/cli": "^1.28.7",
+    "@percy/cypress": "^3.1.2",
     "@svgr/webpack": "^8.1.0",
     "@types/js-yaml": "^4.0.9",
     "@types/netlify-identity-widget": "^1.9.6",

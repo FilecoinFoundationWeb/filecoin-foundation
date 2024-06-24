@@ -11,7 +11,7 @@ import {
 type CategoryListProps = {
   categoryOption: CategoryOption
   categorySettings: CategorySetting[]
-  categoryCounts: CategoryCounts
+  categoryCounts?: CategoryCounts
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
 }
 
@@ -37,13 +37,18 @@ export function CategorySelect({
     >
       {categorySettings.map((option) => {
         const isSelected = categoryOption === option.id
-        const count = categoryCounts[option.id] || 0
+
+        const countOrUndefined = categoryCounts
+          ? categoryCounts[option.id] || 0
+          : undefined
+        const hasCount = !!countOrUndefined
 
         return (
           <li key={option.id}>
             <button
               className={clsx(
-                'focus:brand-outline inline-flex cursor-pointer items-baseline gap-2 text-pretty rounded-lg py-2 text-left font-bold hover:bg-brand-700',
+                'text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
+                hasCount && 'inline-flex items-baseline gap-2',
                 touchTarget.class,
                 {
                   'bg-brand-700 text-brand-400': isSelected,
@@ -53,7 +58,9 @@ export function CategorySelect({
               onClick={() => onCategoryOptionChange(option.id)}
             >
               <span>{option.name}</span>
-              <span className="text-sm font-light">({count})</span>
+              {countOrUndefined && (
+                <span className="text-sm font-light">({countOrUndefined})</span>
+              )}
             </button>
           </li>
         )
