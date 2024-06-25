@@ -40,7 +40,7 @@ export const metadata = createMetadata({
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout withTopMargin>
       <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
 
       <PageHeader
