@@ -1,21 +1,10 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 
-import { CustomLink } from '@/components/CustomLink'
+import { CustomLink, type CustomLinkProps } from '@/components/CustomLink'
+import { Icon as IconComponent, type IconProps } from '@/components/Icon'
 
-type ButtonProps = {
-  variant?: 'primary' | 'ghost'
-  className?: string
-  icon?: React.ReactNode
-  children: React.ReactNode
-} & (
-  | (React.ComponentPropsWithoutRef<'button'> & { href?: undefined })
-  | React.ComponentPropsWithoutRef<typeof CustomLink>
-)
-
-type ButtonInnerProps = {
-  icon?: React.ReactNode
-  children: React.ReactNode
-}
+import { isExternalLink } from '@/utils/linkUtils'
 
 const variantStyles = {
   primary:
@@ -24,11 +13,27 @@ const variantStyles = {
     'border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400',
 }
 
-function ButtonInner({ icon, children }: ButtonInnerProps) {
+type ButtonProps = {
+  children: React.ReactNode
+  variant?: keyof typeof variantStyles
+  icon?: IconProps['component']
+  href?: CustomLinkProps['href']
+} & React.ComponentPropsWithoutRef<'button'>
+
+type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
+  isExternalLink?: boolean
+}
+
+function ButtonInner({
+  icon: Icon,
+  children,
+  isExternalLink,
+}: ButtonInnerProps) {
   return (
     <>
+      {!isExternalLink && Icon && <IconComponent component={Icon} />}
       {children}
-      {icon && <span aria-hidden="true">{icon}</span>}
+      {isExternalLink && <IconComponent component={ArrowUpRight} />}
     </>
   )
 }
@@ -38,6 +43,7 @@ export function Button({
   className,
   icon,
   children,
+  href,
   ...rest
 }: ButtonProps) {
   className = clsx(
@@ -46,13 +52,19 @@ export function Button({
     className,
   )
 
-  return typeof rest.href === 'undefined' ? (
-    <button className={className} {...rest}>
-      <ButtonInner icon={icon}>{children}</ButtonInner>
-    </button>
-  ) : (
-    <CustomLink className={className} {...rest}>
-      <ButtonInner icon={icon}>{children}</ButtonInner>
+  if (typeof href === 'undefined') {
+    return (
+      <button className={className} {...rest}>
+        <ButtonInner icon={icon}>{children}</ButtonInner>
+      </button>
+    )
+  }
+
+  return (
+    <CustomLink className={className} href={href}>
+      <ButtonInner isExternalLink={isExternalLink(href)} icon={icon}>
+        {children}
+      </ButtonInner>
     </CustomLink>
   )
 }

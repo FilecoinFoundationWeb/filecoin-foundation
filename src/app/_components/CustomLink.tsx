@@ -4,11 +4,10 @@ import type { Route } from 'next'
 
 import { isInternalLink } from '@/utils/linkUtils'
 
-type CustomLinkProps = {
+export type CustomLinkProps = {
   href: string
-  className?: string
   children: React.ReactNode
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>
+} & React.ComponentPropsWithoutRef<'a'>
 
 export function CustomLink({
   href,
