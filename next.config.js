@@ -50,6 +50,65 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/democracy',
+        destination:
+          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        permanent: true,
+      },
+      {
+        source: '/blog/Filecoin-nv19-Lightning-Upgrade',
+        destination: '/blog/filecoin-nv19-lightning-upgrade',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/pilecoin-foundation-successfully-deploys-interflanetary-pile-system-IFPS-in-space',
+        destination:
+          '/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/announcing-%E2%80%98watermelon%E2%80%99-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more',
+        destination:
+          '/blog/announcing-watermelon-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        destination:
+          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/what%E2%80%99s-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23',
+        destination:
+          '/blog/whats-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23',
+        permanent: true,
+      },
+      {
+        source: '/board',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/careers',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/community',
+        destination: '/ecosystem-explorer',
+        permanent: true,
+      },
+      {
+        source: '/contact',
+        destination: '/about',
+        permanent: true,
+      },
+      {
         source: '/davos',
         destination: '/events/the-filecoin-sanctuary-davos-2024',
         permanent: true,
@@ -70,8 +129,47 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/ecosystem/project/bela-supernova',
+        destination:
+          '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem-explorer/solmedia/%E2%80%A6',
+        destination: '/ecosystem-explorer/solmedia',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem/%5C%22',
+        destination: '/ecosystem-explorer',
+        permanent: true,
+      },
+      {
+        source: '/filplus/%20%22Filecoin%20Plus%22',
+        destination:
+          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
+        permanent: true,
+      },
+      {
         source: '/filaustin',
         destination: '/events/fil-austin',
+        permanent: true,
+      },
+      {
+        source: '/filplus',
+        destination:
+          '/blog/the-growth-of-filecoin-plus-and-upcoming-notary-elections',
+        permanent: true,
+      },
+      {
+        source: '/fips',
+        destination:
+          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
+        permanent: true,
+      },
+      {
+        source: '/governance/proposing',
+        destination: '/governance',
         permanent: true,
       },
       {
@@ -100,8 +198,28 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/publicdata/awards',
+        destination: '/grants',
+        permanent: true,
+      },
+      {
+        source: '/philosophy',
+        destination: '/about',
+        permanent: true,
+      },
+      {
         source: '/terms',
         destination: '/terms-of-use',
+        permanent: true,
+      },
+      {
+        source: '/team',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/research/research-text.htm',
+        destination: '/',
         permanent: true,
       },
     ]

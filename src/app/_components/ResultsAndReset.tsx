@@ -11,9 +11,13 @@ type ResultsAndResetProps = {
 export function ResultsAndReset({ results }: ResultsAndResetProps) {
   const { resetSearchParams } = useUpdateSearchParams()
 
+  const hasResults = typeof results === 'number'
+
   return (
-    <div className={clsx('lg:mb-5 lg:gap-8', results && 'flex items-baseline')}>
-      {results && (
+    <div
+      className={clsx('lg:mb-5 lg:gap-8', hasResults && 'flex items-baseline')}
+    >
+      {hasResults && (
         <span className="inline-flex flex-1 items-center gap-2">
           <span>Results</span>
           <span className="grid h-5 w-8 place-content-center rounded-full bg-brand-300 p-1 text-xs font-bold text-brand-800">

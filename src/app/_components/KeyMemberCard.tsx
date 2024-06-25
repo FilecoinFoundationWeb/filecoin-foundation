@@ -1,9 +1,8 @@
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 
+import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
-import { Icon } from '@/components/Icon'
 import { StaticImage } from '@/components/StaticImage'
-import { TextLink } from '@/components/TextLink'
 
 import type { MemberData } from '@/types/memberType'
 
@@ -31,16 +30,13 @@ export function KeyMemberCard({
 
         <p className="mt-1 text-brand-300">{title}</p>
 
-        <TextLink
+        <Card.Link
           href={linkedin}
-          aria-label={`Visit ${name}'s LinkedIn profile.`}
-          className="focus:brand-outline absolute inset-0 rounded-lg"
-        >
-          <span className="absolute bottom-4 left-36 flex items-center gap-2 text-brand-300">
-            <Icon component={LinkedinLogo} />
-            <span>LinkedIn</span>
-          </span>
-        </TextLink>
+          icon={LinkedinLogo}
+          text="LinkedIn"
+          ariaLabel={`Visit ${name}'s LinkedIn profile.`}
+          left="left-36"
+        />
       </div>
     </li>
   )

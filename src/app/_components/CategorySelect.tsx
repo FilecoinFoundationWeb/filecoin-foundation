@@ -41,7 +41,7 @@ export function CategorySelect({
         const countOrUndefined = categoryCounts
           ? categoryCounts[option.id] || 0
           : undefined
-        const hasCount = !!countOrUndefined
+        const hasCount = typeof countOrUndefined === 'number'
 
         return (
           <li key={option.id}>
@@ -58,7 +58,7 @@ export function CategorySelect({
               onClick={() => onCategoryOptionChange(option.id)}
             >
               <span>{option.name}</span>
-              {countOrUndefined && (
+              {hasCount && (
                 <span className="text-sm font-light">({countOrUndefined})</span>
               )}
             </button>

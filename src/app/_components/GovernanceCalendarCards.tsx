@@ -58,11 +58,11 @@ function Calendar({ startDate }: CalendarProps) {
   const { day, month } = extractTimeFromISO(startDate)
 
   return (
-    <div className="grid min-h-40 min-w-36 grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-brand-500">
+    <div className="grid h-40 w-full grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-brand-500 sm:w-[140px]">
       <span className="flex items-center justify-center rounded-t text-base font-normal uppercase">
         {month}
       </span>
-      <span className="flex flex-1 items-center justify-center rounded-b bg-brand-100 text-5xl font-bold text-brand-400">
+      <span className="flex items-center justify-center rounded-b bg-brand-100 text-5xl font-bold text-brand-400">
         {day}
       </span>
     </div>
@@ -100,11 +100,11 @@ export function GovernanceCalendarCards() {
         return (
           <li
             key={id}
-            className="flex flex-col rounded-lg border border-brand-300 p-1 sm:flex-row"
+            className="relative flex flex-col rounded-lg border border-brand-300 p-1 sm:flex-row"
           >
             <Calendar startDate={start.dateTime} />
-            <div className="relative">
-              <div className="relative flex flex-1 flex-col gap-3 p-4">
+            <div className="flex-1 pb-14 sm:pb-0">
+              <div className="flex flex-col gap-3 p-4">
                 <div className="flex gap-2">
                   <Badge
                     borderColor="brand-100"
@@ -116,13 +116,13 @@ export function GovernanceCalendarCards() {
                   {summary}
                 </Heading>
               </div>
-              <div className="mb-10 mt-3">
-                <Card.Link
-                  href={htmlLink}
-                  icon={CalendarPlus}
-                  text="Add to Google Calendar"
-                />
-              </div>
+
+              <Card.Link
+                href={htmlLink}
+                icon={CalendarPlus}
+                text="Add to Google Calendar"
+                left={['left-4', 'sm:left-40']}
+              />
             </div>
           </li>
         )
