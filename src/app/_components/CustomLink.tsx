@@ -6,6 +6,7 @@ import { isInternalLink } from '@/utils/linkUtils'
 
 export type CustomLinkProps = {
   href: string
+  children: React.ReactNode
 } & React.ComponentPropsWithoutRef<'a'>
 
 export function CustomLink({

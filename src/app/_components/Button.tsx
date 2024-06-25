@@ -14,6 +14,7 @@ const variantStyles = {
 }
 
 type ButtonProps = {
+  children: React.ReactNode
   variant?: keyof typeof variantStyles
   icon?: IconProps['component']
   href?: CustomLinkProps['href']
