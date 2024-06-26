@@ -75,6 +75,8 @@ const FILECOIN_FOUNDATION_URLS = {
   orbit: {
     ambassadorApplicationForm: 'https://forms.gle/NsERP8jB2XJXbwj58',
     ambassoadorPortal: '#',
+    eventsCalendar:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrIZSogQcFNtN9SW/tblnrsxREgBikWu9A',
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
