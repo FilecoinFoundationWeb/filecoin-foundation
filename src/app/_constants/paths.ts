@@ -11,6 +11,7 @@ export type PathValues =
   | '/employee-privacy-policy'
   | '/events'
   | '/governance'
+  | '/orbit'
   | '/grants'
   | '/'
   | '/privacy-policy'
@@ -77,6 +78,7 @@ export const PATHS = {
   }),
   GOVERNANCE: createPathObject({ path: '/governance', label: 'Governance' }),
   GRANTS: createPathObject({ path: '/grants', label: 'Grants' }),
+  ORBIT: createPathObject({ path: '/orbit', label: 'Orbit' }),
   HOME: createPathObject({
     path: '/',
     label: 'Home',
