@@ -9,8 +9,8 @@ export type StatisticCardProps = {
 export function StatisticCard({ icon, stat, description }: StatisticCardProps) {
   return (
     <li className="relative flex rounded-lg border border-brand-300 p-1">
-      <div className="flex h-40 w-28 shrink-0 items-center justify-center rounded-md bg-brand-500 sm:h-36 lg:h-28">
-        <Icon component={icon} color="brand-200" size={40} />
+      <div className="flex h-40 w-32 shrink-0 items-center justify-center rounded bg-brand-500 sm:h-36 lg:h-32">
+        <Icon component={icon} color="brand-200" size={44} />
       </div>
 
       <div className="flex grow flex-col justify-center p-4">
