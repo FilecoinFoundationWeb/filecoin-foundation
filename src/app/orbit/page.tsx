@@ -1,13 +1,21 @@
+import clsx from 'clsx'
+
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
+import { OrbitAmabassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { StaticImage } from '@/components/StaticImage'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { attributes } from '@/content/pages/orbit.md'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
+
+import { ambassadorsData } from './data/ambassadorsData'
 
 const { header } = attributes
 
@@ -67,7 +75,39 @@ export default function Orbit() {
       </PageSection>
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
-        <p>TODO</p>
+        <div className="flex flex-col gap-6">
+          {ambassadorsData.map((ambassadorData, index) => {
+            const { image, ...rest } = ambassadorData
+            const isdPositionOdd = index % 2 === 1
+
+            return (
+              <div
+                key={index}
+                className="grid grid-cols-1 gap-6 lg:grid-cols-3"
+              >
+                <div
+                  className={clsx(
+                    'relative h-48 sm:h-64 lg:col-span-1 lg:h-auto',
+                    { 'lg:order-last': isdPositionOdd },
+                  )}
+                >
+                  <StaticImage
+                    {...image}
+                    fill
+                    className="h-full w-full rounded-lg"
+                    sizes={buildImageSizeProp({
+                      startSize: '100vw',
+                      lg: '720px',
+                    })}
+                  />
+                </div>
+                <div className="lg:col-span-2">
+                  <OrbitAmabassadorCard {...rest} />
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </PageSection>
 
       <PageSection kicker="Frequency Asked Questions" title="FAQs">
