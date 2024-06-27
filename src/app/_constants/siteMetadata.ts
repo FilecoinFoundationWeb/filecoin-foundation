@@ -71,6 +71,13 @@ const FILECOIN_FOUNDATION_URLS = {
         'https://github.com/filecoin-project/devgrants?tab=readme-ov-file#requests-for-proposals-rfps',
     },
   },
+  // TODO: Check orbit URLs
+  orbit: {
+    ambassadorApplicationForm: 'https://forms.gle/NsERP8jB2XJXbwj58',
+    ambassoadorPortal: '#',
+    eventsCalendar:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrIZSogQcFNtN9SW/tblnrsxREgBikWu9A',
+  },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
