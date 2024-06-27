@@ -6,9 +6,20 @@ export type StatisticCardProps = {
   description: JSX.Element
 }
 
+function formatNumber(stat: StatisticCardProps['stat']) {
+  if (typeof stat === 'number') {
+    return stat.toLocaleString('en-US')
+  }
+
+  const stringWithoutPlus = stat.slice(1)
+  const formattedNumber = Number(stringWithoutPlus).toLocaleString('en-US')
+
+  return `+${formattedNumber}`
+}
+
 export function StatisticCard({ icon, stat, description }: StatisticCardProps) {
   return (
-    <li className="relative flex rounded-lg border border-brand-300 p-1">
+    <li className="flex rounded-lg border border-brand-300 p-1">
       <div className="flex h-40 w-32 shrink-0 items-center justify-center rounded bg-brand-500 sm:h-36 lg:h-32">
         <Icon component={icon} color="brand-200" size={44} />
       </div>
@@ -25,15 +36,4 @@ export function StatisticCard({ icon, stat, description }: StatisticCardProps) {
       </div>
     </li>
   )
-}
-
-export function formatNumber(stat: StatisticCardProps['stat']) {
-  if (typeof stat === 'number') {
-    return stat.toLocaleString('en-US')
-  }
-
-  const stringWithoutPlus = stat.slice(1)
-  const formattedNumber = Number(stringWithoutPlus).toLocaleString('en-US')
-
-  return `+${formattedNumber}`
 }
