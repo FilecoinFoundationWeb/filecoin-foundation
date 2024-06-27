@@ -1,9 +1,9 @@
 import { Icon, type IconProps } from '@/components/Icon'
 
-type StatisticCardProps = {
+export type StatisticCardProps = {
   stat: number | `+${number}`
   icon: IconProps['component']
-  description: string | JSX.Element
+  description: JSX.Element
 }
 
 export function StatisticCard({ icon, stat, description }: StatisticCardProps) {
@@ -18,12 +18,8 @@ export function StatisticCard({ icon, stat, description }: StatisticCardProps) {
           <h3 className="pb-2 text-4xl font-light text-brand-100">
             {formatNumber(stat)}
           </h3>
-          <span className="text-sm leading-4 text-brand-200">
-            {typeof description === 'string' ? (
-              <p>{description}</p>
-            ) : (
-              description
-            )}
+          <span className="text-xs leading-4 text-brand-200">
+            {description}
           </span>
         </div>
       </div>
