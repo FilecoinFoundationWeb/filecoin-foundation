@@ -75,7 +75,7 @@ export default function Orbit() {
       </PageSection>
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-y-6">
           {ambassadorsData.map((ambassadorData, index) => {
             const { image, ...rest } = ambassadorData
             const isdPositionOdd = index % 2 === 1
@@ -87,8 +87,8 @@ export default function Orbit() {
               >
                 <div
                   className={clsx(
-                    'relative h-48 sm:h-64 lg:col-span-1 lg:h-auto',
-                    { 'lg:order-last': isdPositionOdd },
+                    'relative col-span-1 h-48 sm:h-64 lg:h-auto',
+                    isdPositionOdd && 'lg:order-last',
                   )}
                 >
                   <StaticImage
@@ -97,11 +97,12 @@ export default function Orbit() {
                     className="h-full w-full rounded-lg"
                     sizes={buildImageSizeProp({
                       startSize: '100vw',
-                      lg: '720px',
+                      lg: '984px',
                     })}
                   />
                 </div>
-                <div className="lg:col-span-2">
+
+                <div className="col-span-1 lg:col-span-2">
                   <OrbitAmabassadorCard {...rest} />
                 </div>
               </div>
