@@ -12,6 +12,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })
 
+// Airtable API Orbit: https://airtable.com/appAGdqyYrqoFNuPI/api/docs#javascript/table:event%20request
 const ORBIT_BASE = {
   ID: 'appAGdqyYrqoFNuPI',
   EVENTS_TABLE: {
@@ -25,20 +26,21 @@ const ORBIT_BASE = {
     },
   },
 } as const
-
 const APPROVED_STATUS = 'Approved'
 
-const orbitEventSchema = z.object({
-  [ORBIT_BASE.EVENTS_TABLE.FIELDS.TITLE]: z.string(),
-  [ORBIT_BASE.EVENTS_TABLE.FIELDS.CITY]: z.string(),
-  [ORBIT_BASE.EVENTS_TABLE.FIELDS.START_DATE]: z.string().datetime(),
-  [ORBIT_BASE.EVENTS_TABLE.FIELDS.STATUS]: z.literal(APPROVED_STATUS),
-  [ORBIT_BASE.EVENTS_TABLE.FIELDS.REGISTRATION_LINK]: z.string().url(),
-})
+const { TITLE, CITY, START_DATE, STATUS, REGISTRATION_LINK } =
+  ORBIT_BASE.EVENTS_TABLE.FIELDS
 
+const orbitEventSchema = z.object({
+  [TITLE]: z.string(),
+  [CITY]: z.string(),
+  [START_DATE]: z.string().datetime(),
+  [STATUS]: z.literal(APPROVED_STATUS),
+  [REGISTRATION_LINK]: z.string().url(),
+})
 const orbitEventsSchema = z.array(orbitEventSchema)
 
-async function getAirtableOrbitEvents() {
+async function fetchAndParseOrbitEvents() {
   const records = await airtable
     .base(ORBIT_BASE.ID)
     .table(ORBIT_BASE.EVENTS_TABLE.ID)
@@ -61,8 +63,7 @@ async function getAirtableOrbitEvents() {
 
 export async function OrbitEventsSection() {
   try {
-    const events = await getAirtableOrbitEvents()
-    const { TITLE, CITY, START_DATE } = ORBIT_BASE.EVENTS_TABLE.FIELDS
+    const events = await fetchAndParseOrbitEvents()
 
     return (
       <CardGrid cols="mdTwo">
@@ -70,7 +71,7 @@ export async function OrbitEventsSection() {
           const title = event[TITLE]
           const startDate = formatDate(event[START_DATE])
           const city = event[CITY]
-          const link = event[ORBIT_BASE.EVENTS_TABLE.FIELDS.REGISTRATION_LINK]
+          const link = event[REGISTRATION_LINK]
 
           return (
             <Card
