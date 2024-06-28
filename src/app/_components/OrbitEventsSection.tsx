@@ -65,6 +65,14 @@ export async function OrbitEventsSection() {
   try {
     const events = await fetchAndParseOrbitEvents()
 
+    if (events.length === 0) {
+      return (
+        <div className="max-w-readable">
+          <p>There are currently no upcoming events.</p>
+        </div>
+      )
+    }
+
     return (
       <CardGrid cols="mdTwo">
         {events.map((event, index) => {
