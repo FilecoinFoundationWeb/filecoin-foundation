@@ -1,5 +1,5 @@
-import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
+import { OrbitEventsSection } from '@/components/OrbitEventsSection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -43,11 +43,7 @@ export default function Orbit() {
         title="Global Orbit Events"
         description="All Orbit events are free to attend! Come meet the members of your Filecoin community in our upcoming events."
       >
-        <div className="max-w-readable">
-          <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
-            Check Upcoming Events
-          </Button>
-        </div>
+        <OrbitEventsSection />
       </PageSection>
 
       <PageSection
