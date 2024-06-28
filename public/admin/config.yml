@@ -272,7 +272,7 @@ collections:
   - name: "ecosystem_projects_categories"
     label: "Ecosystem Projects Categories"
     label_singular: Ecosystem Projects Category
-    folder: "src/content/ecosystem/categories/"
+    folder: "src/content/ecosystem-explorer/categories/"
     create: true
     identifier_field: name
     extension: "yml"
@@ -293,7 +293,7 @@ collections:
   - name: "ecosystem_projects_subcategories"
     label: "Ecosystem Projects Subcategories"
     label_singular: Ecosystem Projects Subcategory
-    folder: "src/content/ecosystem/subcategories/"
+    folder: "src/content/ecosystem-explorer/subcategories/"
     create: true
     identifier_field: name
     extension: "yml"
@@ -315,7 +315,7 @@ collections:
   - name: ecosystem_projects
     label: Ecosystem Projects
     label_singular: Ecosystem Project
-    folder: "src/content/ecosystem/projects/"
+    folder: "src/content/ecosystem-explorer/projects/"
     create: true
     identifier_field: name
     extension: md
