@@ -12,13 +12,10 @@ export function OrbitAmabassadorCard({
   const locationArray = Array.isArray(location) ? location : [location]
 
   return (
-    <div className="flex flex-col gap-6 rounded-lg border border-brand-500 p-4 text-brand-100 [&_a]:underline">
-      {testimonial.map((stringOrJSX, index) => {
-        if (typeof stringOrJSX === 'string') {
-          return <p key={index}>{stringOrJSX}</p>
-        }
-        return stringOrJSX
-      })}
+    <div className="space-y-6 rounded-lg border border-brand-500 p-4">
+      {testimonial.map((text, index) => (
+        <p key={index}>{text}</p>
+      ))}
 
       <div>
         <p className="mb-1 font-bold">{name}</p>

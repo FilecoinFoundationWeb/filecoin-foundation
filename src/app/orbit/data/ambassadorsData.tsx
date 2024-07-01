@@ -1,5 +1,6 @@
 import { OrbitAmbassadorCardProps } from '@/components/OrbitAmbassadorCard'
 import type { StaticImageProps } from '@/components/StaticImage'
+import { TextLink } from '@/components/TextLink'
 
 import austinImg from '@/assets/orbit/ambassadors/austin.jpg'
 import barcelonaImg from '@/assets/orbit/ambassadors/barcelona.jpg'
@@ -61,38 +62,40 @@ export const ambassadorsData: Array<AmbassadorData> = [
     name: 'Fiona Lee',
     location: 'Shenzhen, China',
     testimonial: [
-      <p key="0">
+      <>
         New Web Group Team became the first batch of ambassadors for the Orbit
         project in 2022 and has since been dedicated to the development of the
         Orbit community.
-      </p>,
-      <p key="1">
+      </>,
+      <>
         We organized Orbit Meetup events sponsored by FF in November 2022 and
         FVM Hack Day events in February 2023. Subsequently, we actively
         participated in the volunteer activities of Fil Hongkong in April and
         co-hosted an FVM event with ND Labs during the event.
-      </p>,
-      <p key="2">
+      </>,
+      <>
         In September, we participated in the Fil Dev Summit Singapore event,
         serving as a volunteer leader. In the same year, we jointly became
-        leaders of the Orbit Greater China region with ND Labs, establishing 
-        <a href="https://twitter.com/OrbitChina">Twitter</a>, 
-        <a href="https://orbiteventsinchina.huodongxing.com/">event accounts</a>
-        , and a 
-        <a href="https://www.notion.so/orbitcommunityingreaterchina/Filecoin-Orbit-Community-in-Greater-China-0d94acfa59484ef6a6a9b62d41afa2c0?pvs=4">
-          Notion page
-        </a>{' '}
+        leaders of the Orbit Greater China region with ND Labs, establishing{' '}
+        <TextLink href="https://twitter.com/OrbitChina">Twitter</TextLink>,{' '}
+        <TextLink href="https://orbiteventsinchina.huodongxing.com/">
+          event accounts
+        </TextLink>
+        , and a{' '}
+        <TextLink href="https://www.notion.so/orbitcommunityingreaterchina/Filecoin-Orbit-Community-in-Greater-China-0d94acfa59484ef6a6a9b62d41afa2c0?pvs=4">
+          Notion page
+        </TextLink>{' '}
         for the Chinese region. We also assisted in the overall planning of the
         Orbit Community for 2023, recruited new ambassadors in the Chinese
         region, and promoted the organization of offline activities.
-      </p>,
-      <p key="3">
+      </>,
+      <>
         In January 2024, We hosted the Orbit China Decentralised Storage
         Roadshow ·Shenzhen event sponsored by FF. Orbit is an incredible journey
         where everyone can ignite new sparks of innovation and collaboration.
         Through this project, I have firsthand experience of the transformative
         power of community, propelling me towards greater creativity and growth.
-      </p>,
+      </>,
     ],
     image: { data: shenzhenImg, alt: 'TODO' },
   },
