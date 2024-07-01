@@ -18,7 +18,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
     location: 'Austin, USA',
     testimonial: [
       'Filecoin Orbit Austin has become a hub for developers, students, and startups in Texas! From monthly meetups to web3 developer workshops, the Austin Orbit group has on-boarded hundreds of individuals and companies to the Filecoin ecosystem.',
-      'We focus on real world use cases and tools developers can use today to build cost effective, resilient systems. Join us for the main Filecoin Orbit event in North America at ETH Denver!',
+      'We focus on real-world use cases and tools developers can use today to build cost-effective, resilient systems. Join us for the main Filecoin Orbit event in North America at ETH Denver!',
     ],
     image: { data: austinImg, alt: 'TODO' },
   },
@@ -28,7 +28,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
     testimonial: [
       "I met the Filecoin team IRL for the first time at ETHIndia'22 and got onboarded as a Filecoin Orbit Ambassador. Since then, I've actively contributed by hosting sessions and workshops.",
       "Filecoin sponsored our Hack4Bengal Season 2 hackathon, attracting quality projects. Witnessing increased participation from Kolkata at ETHIndia'23 after participating in local workshops and hackathons.",
-      "This year during FILBangalore & ETHIndia'23 I had the opportunity to host an IPFS workshop and mentored at the booth, which was a great expereince for me.",
+      "This year during FILBangalore & ETHIndia'23 I had the opportunity to host an IPFS workshop and mentored at the booth, which was a great experience for me.",
     ],
     image: { data: kolkataImg, alt: 'TODO' },
   },
@@ -37,7 +37,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
     location: 'Barcelona, Spain',
     testimonial: [
       'We hosted a FVM talk during the 2nd Edition of Web3FC. Pavel Fedotov, a dev building on Filecoin, presented the project to the community.',
-      'It was a nice start in collaborating with Filecoin/IPFS/ProtocolLabs who are doing an extremely valuable work for the decentralized space.',
+      'It was a nice start in collaborating with Filecoin/IPFS/ProtocolLabs who are doing extremely valuable work for the decentralized space.',
       'We are excited to now welcome Robert Dowling in our next conference edition in Barcelona on April 17-19 to further raise awareness, educate and foster collaborations.',
     ],
     image: { data: barcelonaImg, alt: 'TODO' },
@@ -94,8 +94,8 @@ export const ambassadorsData: Array<AmbassadorData> = [
         region, and promoted the organization of offline activities.
       </>,
       <>
-        In January 2024, We hosted the Orbit China Decentralised Storage
-        Roadshow ·Shenzhen event sponsored by FF. Orbit is an incredible journey
+        In January 2024, We hosted the Orbit China Decentralized Storage
+        Roadshow Shenzhen event sponsored by FF. Orbit is an incredible journey
         where everyone can ignite new sparks of innovation and collaboration.
         Through this project, I have firsthand experience of the transformative
         power of community, propelling me towards greater creativity and growth.
@@ -108,8 +108,8 @@ export const ambassadorsData: Array<AmbassadorData> = [
     location: 'India',
     testimonial: [
       'We hosted FVM, IPFS & Filecoin workshops across IITs, NITs, IIITs & other top public & private universities in India. Actively building Dev & students community in web3.',
-      ' Along side hosted hackathons in collaboration with universities to promote web3 tools & infra and also helped to build projects.',
-      'In 2023, been to 20+ universities, also had a chance to host Robert at IIT Bombay, IIT MADRAS and IIT Goa events. Had a great time interacting with the new age devs and collaborate with the universities.',
+      'Alongside, we hosted hackathons in collaboration with universities to promote web3 tools & infrastructure and also helped to build projects.',
+      'In 2023, we visited 20+ universities and also had a chance to host Robert at IIT Bombay, IIT Madras, and IIT Goa events. Had a great time interacting with the new age devs and collaborating with the universities.',
     ],
     image: { data: indiaImg, alt: 'TODO' },
   },
