@@ -12,7 +12,7 @@ import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
-type UseCategoryProps<Entry extends Object> = {
+export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Entry[]
   categorizeBy: keyof CategorizableBy & keyof Entry

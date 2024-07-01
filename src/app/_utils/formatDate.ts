@@ -6,7 +6,7 @@ export function formatDate(
 ): string {
   const date = new Date(dateString)
 
-  if (Number.isNaN(date.getTime())) {
+  if (!isDateValid(date)) {
     console.error('Invalid date provided:', dateString)
     return 'Invalid Date'
   }
@@ -25,4 +25,11 @@ export function formatDate(
   }
 
   return date.toLocaleDateString('en-US', options)
+}
+
+export function isDateValid(dateString: string | Date) {
+  const date = new Date(dateString)
+  const isValid = !Number.isNaN(date.getTime())
+
+  return isValid
 }
