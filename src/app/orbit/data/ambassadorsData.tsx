@@ -27,7 +27,8 @@ export const ambassadorsData: Array<AmbassadorData> = [
     location: 'Kolkata, India',
     testimonial: [
       "I met the Filecoin team IRL for the first time at ETHIndia'22 and got onboarded as a Filecoin Orbit Ambassador. Since then, I've actively contributed by hosting sessions and workshops.",
-      "Filecoin sponsored our Hack4Bengal Season 2 hackathon, attracting quality projects. Witnessing increased participation from Kolkata at ETHIndia'23 after participating in local workshops and hackathons. This year during FILBangalore & ETHIndia'23 I had the opportunity to host an IPFS workshop and mentored at the booth, which was a great expereince for me.",
+      "Filecoin sponsored our Hack4Bengal Season 2 hackathon, attracting quality projects. Witnessing increased participation from Kolkata at ETHIndia'23 after participating in local workshops and hackathons.",
+      "This year during FILBangalore & ETHIndia'23 I had the opportunity to host an IPFS workshop and mentored at the booth, which was a great expereince for me.",
     ],
     image: { data: kolkataImg, alt: 'TODO' },
   },
@@ -35,7 +36,9 @@ export const ambassadorsData: Array<AmbassadorData> = [
     name: 'Adrien Be',
     location: 'Barcelona, Spain',
     testimonial: [
-      'We hosted a FVM talk during the 2nd Edition of Web3FC. Pavel Fedotov, a dev building on Filecoin, presented the project to the community. It was a nice start in collaborating with Filecoin/IPFS/ProtocolLabs who are doing an extremely valuable work for the decentralized space. We are excited to now welcome Robert Dowling in our next conference edition in Barcelona on April 17-19 to further raise awareness, educate and foster collaborations.',
+      'We hosted a FVM talk during the 2nd Edition of Web3FC. Pavel Fedotov, a dev building on Filecoin, presented the project to the community.',
+      'It was a nice start in collaborating with Filecoin/IPFS/ProtocolLabs who are doing an extremely valuable work for the decentralized space.',
+      'We are excited to now welcome Robert Dowling in our next conference edition in Barcelona on April 17-19 to further raise awareness, educate and foster collaborations.',
     ],
     image: { data: barcelonaImg, alt: 'TODO' },
   },
@@ -54,7 +57,8 @@ export const ambassadorsData: Array<AmbassadorData> = [
     location: 'Buenos Aires, Argentina',
     testimonial: [
       'We hosted a side event on November 9, 2023 in Buenos Aires, Argentina as a side event for LaBitConf - one of the biggest blockchain conferences in the southern hemisphere.',
-      "The event's goal was to discuss how Storage provider works and Filecoin's technology overall to the attendees of LaBitConf. Our main speaker, Emmanuel Murano, who has previously worked in Filecoin's projects on behalf of Zondax gave a very interesting chat that spurred a lot of technical and non-technical discussions. Definitely one for the books!",
+      "The event's goal was to discuss how Storage provider works and Filecoin's technology overall to the attendees of LaBitConf. Our main speaker, Emmanuel Murano, who has previously worked in Filecoin's projects on behalf of Zondax gave a very interesting chat that spurred a lot of technical and non-technical discussions.",
+      'Definitely one for the books!',
     ],
     image: { data: buenosAiresImg, alt: 'TODO' },
   },
@@ -103,7 +107,9 @@ export const ambassadorsData: Array<AmbassadorData> = [
     name: 'Bharath Pinaboyina',
     location: 'India',
     testimonial: [
-      'We hosted FVM, IPFS & Filecoin workshops across IITs, NITs, IIITs & other top public & private universities in India. Actively building Dev & students community in web3. Along side hosted hackathons in collaboration with universities to promote web3 tools & infra and also helped to build projects. In 2023, been to 20+ universities, also had a chance to host Robert at IIT Bombay, IIT MADRAS and IIT Goa events. Had a great time interacting with the new age devs and collaborate with the universities.',
+      'We hosted FVM, IPFS & Filecoin workshops across IITs, NITs, IIITs & other top public & private universities in India. Actively building Dev & students community in web3.',
+      ' Along side hosted hackathons in collaboration with universities to promote web3 tools & infra and also helped to build projects.',
+      'In 2023, been to 20+ universities, also had a chance to host Robert at IIT Bombay, IIT MADRAS and IIT Goa events. Had a great time interacting with the new age devs and collaborate with the universities.',
     ],
     image: { data: indiaImg, alt: 'TODO' },
   },
