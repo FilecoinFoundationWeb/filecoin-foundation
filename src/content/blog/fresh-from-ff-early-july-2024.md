@@ -13,7 +13,9 @@ seo:
     title: summary
     card: summary
   title: "Fresh From FF: Early July, 2024"
-  description: "Check out the latest updates from Filecoin Foundation. "
+  description: "Discover FIL Brussels events, including sessions with top
+    innovators, software storage solutions, new grants, and the Data Economy
+    Day. Explore decentralized AI and more. "
 ---
 # Early July Highlights
 
