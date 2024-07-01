@@ -15,7 +15,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073294815fd102aaf6bbf3_lurklab.png
+  src: /assets/images/66073294815fd102aaf6bbf3_lurklab.png
   alt: Lurk Lab Logo
 featured-content:
 website: https://lurk-lang.org/

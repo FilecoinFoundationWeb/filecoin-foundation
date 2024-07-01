@@ -11,7 +11,7 @@ description: The Filecoin Sanctuary in Davos brought together the world’s
 recommended-posts: []
 slug: recapping-filecoin-foundation-at-davos-ipfs-deployed-in-space-exploring-the-future-of-ai-and-web3-future-proofing-regulation-and-more
 image:
-  url: /assets/images/020724-davos.png
+  src: /assets/images/020724-davos.png
   alt: Recapping Filecoin Foundation at Davos
 seo:
   noindex: false

@@ -5,8 +5,7 @@ description: >-
   email, browse, and publish Freenet-accessible websites known as “freesites.”
 slug: dev-grant-spotlight-freenet-2
 image:
-  url: >-
-    /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
+  src: /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
   alt:
 updated-on: "2023-04-21T07:26:38.609Z"
 created-on: "2023-04-21T07:26:38.609Z"

@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/zilla_logo_white.png
+  src: /assets/images/zilla_logo_white.png
   alt: FileZilla Logo
 featured-content:
 website: https://file-zilla.pro/

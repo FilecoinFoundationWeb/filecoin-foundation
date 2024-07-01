@@ -14,7 +14,7 @@ tags:
 tech:
   - ipfs
 image:
-  url:
+  src:
   alt: Encryption Pinner Logo
 featured-content:
 website: https://devpost.com/software/encryption-pinner?ref_content=user-portfolio&ref_feature=in_progress

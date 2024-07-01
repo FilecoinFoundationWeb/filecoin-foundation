@@ -11,7 +11,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/ken-labs-logo.jpeg
+  src: /assets/images/ken-labs-logo.jpeg
   alt: KEN Labs Logo
 website: https://kenlabs.io/
 featured-content:

@@ -6,7 +6,7 @@ published-on: 2024-05-31T17:08:54.189Z
 slug: fresh-from-ff-early-june-2024
 description: "Check out the latest updates about what the Filecoin Foundation has been up to."
 image:
-  url: /assets/images/0215-ff-7-.png
+  src: /assets/images/0215-ff-7-.png
   alt: "Filecoin Foundation"
 category: news
 recommended-posts: []

@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/pyth-logomark_dark.png
+  src: /assets/images/pyth-logomark_dark.png
   alt: Pyth Logo
 website: https://pyth.network/
 featured-content:

@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/eth-name-service-logo.jpeg
+  src: /assets/images/eth-name-service-logo.jpeg
   alt: Ethereum Name Service Logo
 featured-content:
 website: https://ens.domains/

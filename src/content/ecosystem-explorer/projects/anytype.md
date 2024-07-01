@@ -13,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/anytype.png
+  src: /assets/images/anytype.png
   alt: Anytype Logo
 website: https://anytype.io/
 featured-content:

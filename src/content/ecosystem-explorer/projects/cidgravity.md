@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/cid-gravity.jpeg
+  src: /assets/images/cid-gravity.jpeg
   alt: CIDgravity Logo
 website: https://www.cidgravity.com/
 featured-content:

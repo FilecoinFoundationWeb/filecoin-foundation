@@ -16,7 +16,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/crossfi_logo_white.png
+  src: /assets/images/crossfi_logo_white.png
   alt: CrossFi Logo
 website: "https://crossfimain.com/"
 featured-content:

@@ -6,8 +6,7 @@ description: >-
   place within the rapidly growing Filecoin community.
 slug: filecoin-foundation-first-half-year-in-review
 image:
-  url: >-
-    /assets/images/64423ad6d7488e70c7b03c3d_1-6lpmwpmsydkqniohiklqla.png
+  src: /assets/images/64423ad6d7488e70c7b03c3d_1-6lpmwpmsydkqniohiklqla.png
   alt:
 updated-on: "2023-04-21T07:27:18.330Z"
 created-on: "2023-04-21T07:27:18.330Z"

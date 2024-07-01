@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/dvol-logo.jpeg
+  src: /assets/images/dvol-logo.jpeg
   alt: DVol Logo
 featured-content:
 website: https://www.dvol.finance/

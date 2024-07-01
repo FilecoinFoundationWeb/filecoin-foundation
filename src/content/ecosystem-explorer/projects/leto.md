@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/leto-logo.png
+  src: /assets/images/leto-logo.png
   alt: Leto Logo
 website: https://leto.gg/
 featured-content:

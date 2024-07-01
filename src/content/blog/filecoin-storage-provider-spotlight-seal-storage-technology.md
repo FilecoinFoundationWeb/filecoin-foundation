@@ -5,8 +5,7 @@ description: >-
   decentralized cloud storage. Seal’s advanced infrastructure and services
   enable large organizations to seamlessly store files on the Filecoin network.
 image:
-  url: >-
-    /assets/images/64423ae74e4c68130ff45382_1-tjiihglruqcaybnpwmudmg.png
+  src: /assets/images/64423ae74e4c68130ff45382_1-tjiihglruqcaybnpwmudmg.png
   alt:
 slug: filecoin-storage-provider-spotlight-seal-storage-technology
 updated-on: "2023-04-21T07:27:36.061Z"

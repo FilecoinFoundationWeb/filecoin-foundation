@@ -19,8 +19,8 @@ export function mapMarkdownToEcosystemProjectData({
     tags: data.tags,
     tech: data.tech,
     image: {
-      url: data.image.url,
-      alt: data.image.alt,
+      src: data.image?.src || '',
+      alt: data.image?.alt || '',
     },
     website: data.website,
     content: content,

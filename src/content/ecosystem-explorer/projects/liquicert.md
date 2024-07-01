@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/liquicert_logo.png
+  src: /assets/images/liquicert_logo.png
   alt: Liquicert Logo
 website: https://liquicert.io/
 featured-content:

@@ -14,7 +14,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/03_small.png
+  src: /assets/images/03_small.png
   alt: Solmedia Logo
 website: https://sm.network
 featured-content:

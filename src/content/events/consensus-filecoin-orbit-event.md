@@ -11,7 +11,7 @@ end-date: 2024-05-31T14:50:42.640Z
 slug: consensus-filecoin-orbit-event
 updated-on: 2024-01-29T15:50:42.614Z
 image:
-  url: /assets/images/consensus-2024.png
+  src: /assets/images/consensus-2024.png
   alt: Consensus Logo
 involvement: supported
 seo:

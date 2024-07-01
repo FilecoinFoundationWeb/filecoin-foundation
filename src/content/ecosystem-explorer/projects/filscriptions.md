@@ -12,7 +12,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/filscriptions_logo_white.png
+  src: /assets/images/filscriptions_logo_white.png
   alt: Filscriptions Logo
 website: https://www.filscriptions.market/
 featured-content:

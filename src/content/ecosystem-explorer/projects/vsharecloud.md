@@ -19,7 +19,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: /assets/images/vsharecloud.webp
+  src: /assets/images/vsharecloud.webp
   alt: VshareCloud Logo
 website: https://vshare.Cloud
 featured-content:

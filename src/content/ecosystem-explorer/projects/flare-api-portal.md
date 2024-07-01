@@ -16,7 +16,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/api_twitter_360.png
+  src: /assets/images/api_twitter_360.png
   alt: Flare API Portal Logo
 website: https://api-portal.flare.network
 featured-content:

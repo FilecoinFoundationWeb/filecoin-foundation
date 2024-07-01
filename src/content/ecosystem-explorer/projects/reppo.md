@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/reppo-logo.png
+  src: /assets/images/reppo-logo.png
   alt: Reppo Logo
 website: reppo.xyz
 featured-content:

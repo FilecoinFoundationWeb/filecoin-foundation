@@ -1265,7 +1265,7 @@
           "widget": "object",
           "fields": [
             {
-              "name": "url",
+              "name": "src",
               "label": "URL",
               "widget": "image",
               "allow_multiple": false
@@ -1486,7 +1486,7 @@
           "widget": "object",
           "fields": [
             {
-              "name": "url",
+              "name": "src",
               "label": "URL",
               "widget": "image",
               "allow_multiple": false
@@ -1913,7 +1913,7 @@
           "widget": "object",
           "fields": [
             {
-              "name": "url",
+              "name": "src",
               "label": "URL",
               "widget": "image"
             },

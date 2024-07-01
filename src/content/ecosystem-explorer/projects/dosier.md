@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/dosier-logo.jpeg
+  src: /assets/images/dosier-logo.jpeg
   alt: Dosier Logo
 featured-content:
 website: https://dosier.ai/
