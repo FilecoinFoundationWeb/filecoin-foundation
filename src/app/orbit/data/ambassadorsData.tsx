@@ -1,13 +1,13 @@
 import { OrbitAmbassadorCardProps } from '@/components/OrbitAmbassadorCard'
 import type { StaticImageProps } from '@/components/StaticImage'
 
-import austinImg from '@/assets/ambassadors/austin.jpg'
-import barcelonaImg from '@/assets/ambassadors/barcelona.jpg'
-import buenosAiresImg from '@/assets/ambassadors/buenos-aires.jpg'
-import indiaImg from '@/assets/ambassadors/india.jpg'
-import kolkataImg from '@/assets/ambassadors/kolkata.png'
-import shenzhenImg from '@/assets/ambassadors/shenzhen.jpg'
-import tanzaniaImg from '@/assets/ambassadors/tanzania.jpg'
+import austinImg from '@/assets/orbit/ambassadors/austin.jpg'
+import barcelonaImg from '@/assets/orbit/ambassadors/barcelona.jpg'
+import buenosAiresImg from '@/assets/orbit/ambassadors/buenos-aires.jpg'
+import indiaImg from '@/assets/orbit/ambassadors/india.jpg'
+import kolkataImg from '@/assets/orbit/ambassadors/kolkata.png'
+import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen.jpg'
+import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania.jpg'
 
 type AmbassadorData = OrbitAmbassadorCardProps & { image: StaticImageProps }
 
