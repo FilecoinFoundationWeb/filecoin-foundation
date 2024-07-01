@@ -2,13 +2,13 @@ import { OrbitAmbassadorCardProps } from '@/components/OrbitAmbassadorCard'
 import type { StaticImageProps } from '@/components/StaticImage'
 import { TextLink } from '@/components/TextLink'
 
-import austinImg from '@/assets/orbit/ambassadors/austin.jpg'
-import barcelonaImg from '@/assets/orbit/ambassadors/barcelona.jpg'
-import buenosAiresImg from '@/assets/orbit/ambassadors/buenos-aires.jpg'
-import indiaImg from '@/assets/orbit/ambassadors/india.jpg'
-import kolkataImg from '@/assets/orbit/ambassadors/kolkata.png'
-import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen.jpg'
-import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania.jpg'
+import austinImg from '@/assets/orbit/ambassadors/austin-web3-filecoin-meetup.jpg'
+import barcelonaImg from '@/assets/orbit/ambassadors/barcelona-web3fc-event.jpg'
+import buenosAiresImg from '@/assets/orbit/ambassadors/buenos-aires-event-attendees.jpg'
+import indiaImg from '@/assets/orbit/ambassadors/india-classroom-group-photo.jpg'
+import kolkataImg from '@/assets/orbit/ambassadors/kolkata-filecoin-event-booth.png'
+import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen-orbit-china-roadshow.jpg'
+import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-event.jpg'
 
 type AmbassadorData = OrbitAmbassadorCardProps & { image: StaticImageProps }
 
