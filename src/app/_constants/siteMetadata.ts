@@ -25,7 +25,7 @@ const FILECOIN_FOUNDATION_URLS = {
   ecosystem: {
     submitOrUpdateProjectForm: {
       label: 'Submit or Update Your Project',
-      href: 'https://airtable.com/app8l0JhN6vJfTzJt/shrKrbPOdxGNnMM9C',
+      href: 'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
     },
   },
   events: {
