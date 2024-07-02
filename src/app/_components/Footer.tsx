@@ -15,32 +15,42 @@ type SectionProps = {
 
 type NavigationListItemProps = {
   label: string
-  path: PathValues
+  path: PathValues | 'mailto:hello@fil.org'
 }
 
 type NavigationListProps = {
   items: NavigationListItemProps[]
 }
 
-const navigationItems = [
+const companyItems = [
   PATHS.ABOUT,
-  PATHS.EVENTS,
-  PATHS.GRANTS,
-  PATHS.ECOSYSTEM_EXPLORER,
-  PATHS.GOVERNANCE,
-  PATHS.BLOG,
+  { label: 'Contact', path: FILECOIN_FOUNDATION_URLS.email.href },
 ]
 
+const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
+
+const communityItems = [PATHS.ECOSYSTEM_EXPLORER, PATHS.GOVERNANCE]
+
+const resourcesItems = [PATHS.BLOG]
+
 const legalItems = [
-  PATHS.PRIVACY_POLICY,
-  PATHS.EMPLOYEE_PRIVACY_POLICY,
   PATHS.TERMS_OF_USE,
+  PATHS.EMPLOYEE_PRIVACY_POLICY,
+  PATHS.PRIVACY_POLICY,
 ]
+
+const navigationList = {
+  Company: companyItems,
+  'Get Involved': getInvolvedItems,
+  Community: communityItems,
+  Resources: resourcesItems,
+  Legal: legalItems,
+}
 
 function Section({ title, children }: SectionProps) {
   return (
-    <div className="flex flex-col gap-4">
-      <span className="block font-bold">{title}</span>
+    <div className="flex flex-1 flex-col gap-4">
+      <span className="block w-max font-bold">{title}</span>
       {children}
     </div>
   )
@@ -48,7 +58,7 @@ function Section({ title, children }: SectionProps) {
 
 function NavigationList({ items }: NavigationListProps) {
   return (
-    <ul className="flex flex-col gap-3">
+    <ul className="flex w-max flex-col gap-3">
       {items.map(({ label, path }) => (
         <li key={path}>
           <TextLink href={path}>{label}</TextLink>
@@ -89,30 +99,18 @@ export function Footer() {
       <hr />
 
       <div className="flex flex-wrap gap-x-20 gap-y-6">
-        <div className="flex flex-wrap gap-x-12 gap-y-6">
-          <Section title="Browse">
-            <NavigationList items={navigationItems} />
-          </Section>
-          <Section title="Legal">
-            <NavigationList items={legalItems} />
-          </Section>
+        <div className="flex flex-1 flex-wrap gap-x-12 gap-y-8">
+          {Object.entries(navigationList).map(([title, items]) => (
+            <Section key={title} title={title}>
+              <NavigationList
+                items={items.map((item) => ({
+                  label: item.label,
+                  path: item.path,
+                }))}
+              />
+            </Section>
+          ))}
         </div>
-        <Section title="Contact Us">
-          <div>
-            <p className="mb-3">
-              For media and collaboration inquiries,{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.email.href}>
-                drop us a line.
-              </TextLink>
-            </p>
-            <p>
-              For more information on our ecosystem grants,{' '}
-              <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
-                email us.
-              </TextLink>
-            </p>
-          </div>
-        </Section>
       </div>
 
       <hr />

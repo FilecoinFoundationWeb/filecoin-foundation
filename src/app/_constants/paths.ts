@@ -88,7 +88,7 @@ export const PATHS = {
   }),
   TERMS_OF_USE: createPathObject({
     path: '/terms-of-use',
-    label: 'Terms and Conditions',
+    label: 'Terms of Use',
   }),
 } as const
 
