@@ -53,7 +53,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
   },
   {
     name: 'Enoch Mbaebie & Martin Kyanja',
-    location: ['Lagos, Nigeria', 'Dare Salem, Tanzania'],
+    location: 'Lagos, Nigeria & Dare Salem, Tanzania',
     testimonial: [
       "The journey from participating in a hackathon to spearheading Filecoin events in Lagos. Which led me to host the inaugural Filecoin Voyage Anniversary in Lagos, then FIL Lagos—the first of its kind city event dedicated to Filecoin. The momentum didn't stop there. The Dare Salem Hackathon, led by Martin, showcased the creativity and innovation thriving within the Filecoin ecosystem.",
       'Witnessing the expansion into other African Nations i.e. Tanzania, Ethiopia, Morocco, Ghana, FIL Capetown in South Africa has been nothing short of exhilarating, coupled with the leadership figure like Juan Benet continues to drive innovation and connectivity across borders.',
