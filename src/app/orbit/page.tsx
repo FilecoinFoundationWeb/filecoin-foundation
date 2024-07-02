@@ -1,15 +1,15 @@
-import clsx from 'clsx'
+// import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { CardGrid } from '@/components/CardGrid'
+// import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { StaticImage } from '@/components/StaticImage'
+// import { StaticImage } from '@/components/StaticImage'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+// import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { attributes } from '@/content/pages/orbit.md'
 
@@ -17,7 +17,6 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
-import { Car } from '@phosphor-icons/react'
 
 const { header } = attributes
 
@@ -77,37 +76,20 @@ export default function Orbit() {
       </PageSection>
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
-        <div className="space-y-6">
-          {ambassadorsData.map((ambassadorData, index) => {
-            const { image, ...cardProps } = ambassadorData
-            const isPositionOdd = index % 2 === 1
+        {ambassadorsData.map((ambassadorData, index) => {
+          const { name, location, testimonial, image } = ambassadorData
 
-            return (
-              <CardGrid key={index} cols="lgThree">
-                <div
-                  className={clsx(
-                    'relative col-span-1 h-48 sm:h-64 lg:h-auto',
-                    isPositionOdd && 'lg:order-last',
-                  )}
-                >
-                  <StaticImage
-                    {...image}
-                    fill
-                    className="h-full w-full rounded-lg"
-                    sizes={buildImageSizeProp({
-                      startSize: '100vw',
-                      lg: '984px',
-                    })}
-                  />
-                </div>
-
-                <div className="col-span-1 lg:col-span-2">
-                  <OrbitAmbassadorCard {...cardProps} />
-                </div>
-              </CardGrid>
-            )
-          })}
-        </div>
+          return (
+            <OrbitAmbassadorCard
+              key={index}
+              index={index}
+              image={image}
+              name={name}
+              testimonial={testimonial}
+              location={location}
+            />
+          )
+        })}
       </PageSection>
 
       <PageSection kicker="Frequency Asked Questions" title="FAQs">
