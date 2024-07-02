@@ -39,7 +39,7 @@ export default function Orbit() {
       {/* <PageSection kicker="Goals" title="Main Goals of This Program" /> */}
 
       <PageSection kicker="Statistics" title="Since Program Launch in 2020">
-        <CardGrid cols="mdTwo">
+        <CardGrid cols="smTwo">
           {statisticsData.map((statistic, index) => (
             <StatisticCard key={index} {...statistic} />
           ))}
