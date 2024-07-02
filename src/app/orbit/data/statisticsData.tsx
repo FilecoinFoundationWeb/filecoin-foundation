@@ -5,9 +5,15 @@ import {
   UsersThree,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { StatisticCardProps } from '@/components/StatisticCard'
+import type { IconProps } from '@/components/Icon'
 
-export const statisticsData: StatisticCardProps[] = [
+export type StatisticData = {
+  icon: IconProps['component']
+  value: number
+  description: string
+}
+
+export const statisticsData: StatisticData[] = [
   {
     icon: UsersThree,
     value: 145,

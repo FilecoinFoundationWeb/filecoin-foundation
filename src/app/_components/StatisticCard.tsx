@@ -1,16 +1,8 @@
-import { Icon, type IconProps } from '@/components/Icon'
+import { Icon } from '@/components/Icon'
 
-export type StatisticCardProps = {
-  icon: IconProps['component']
-  value: number
-  description: string
-}
+import type { StatisticData } from '@/orbit/data/statisticsData'
 
-export function StatisticCard({
-  icon,
-  value,
-  description,
-}: StatisticCardProps) {
+export function StatisticCard({ icon, value, description }: StatisticData) {
   return (
     <li className="flex min-h-32 rounded-lg border border-brand-300 p-1">
       <figure className="grid w-1/3 place-items-center rounded bg-brand-500">
