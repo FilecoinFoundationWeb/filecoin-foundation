@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -16,6 +17,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
+import { Car } from '@phosphor-icons/react'
 
 const { header } = attributes
 
@@ -75,16 +77,13 @@ export default function Orbit() {
       </PageSection>
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
-        <div className="flex flex-col gap-y-6">
+        <div className="space-y-6">
           {ambassadorsData.map((ambassadorData, index) => {
             const { image, ...cardProps } = ambassadorData
             const isPositionOdd = index % 2 === 1
 
             return (
-              <div
-                key={index}
-                className="grid grid-cols-1 gap-6 lg:grid-cols-3"
-              >
+              <CardGrid key={index} cols="lgThree">
                 <div
                   className={clsx(
                     'relative col-span-1 h-48 sm:h-64 lg:h-auto',
@@ -105,7 +104,7 @@ export default function Orbit() {
                 <div className="col-span-1 lg:col-span-2">
                   <OrbitAmbassadorCard {...cardProps} />
                 </div>
-              </div>
+              </CardGrid>
             )
           })}
         </div>
