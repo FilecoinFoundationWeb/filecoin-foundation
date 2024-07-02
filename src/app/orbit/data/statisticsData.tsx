@@ -10,45 +10,23 @@ import type { StatisticCardProps } from '@/components/StatisticCard'
 export const statisticsData: Array<StatisticCardProps> = [
   {
     icon: UsersThree,
-    stat: 147,
-    description: (
-      <p>
-        <span className="font-bold">Orbit Ambassadors</span>
-        <br />
-        around the world
-      </p>
-    ),
+    stat: 145,
+    description: 'Orbit Ambassadors active worldwide',
   },
   {
     icon: GraduationCap,
     stat: 10_000,
-    description: (
-      <p>
-        <span className="font-bold">
-          Early-career developers, students, and enthusiasts
-        </span>{' '}
-        have been introduced to the Filecoin ecosystem through Orbit
-      </p>
-    ),
+    description:
+      'Early-career developers, students, and enthusiasts introduced to the Filecoin ecosystem',
   },
   {
     icon: Trophy,
     stat: 190,
-    description: (
-      <p>
-        <span className="font-bold">Workshops and community hackathons</span>
-      </p>
-    ),
+    description: 'Workshops and community hackathons hosted',
   },
   {
     icon: GlobeHemisphereWest,
-    stat: '+40',
-    description: (
-      <p>
-        <span className="font-bold">Countries</span>
-        <br />
-        have hosted Orbit events
-      </p>
-    ),
+    stat: 40,
+    description: 'Countries that have hosted Orbit events',
   },
 ]
