@@ -6,20 +6,32 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/orbit.md'
 
+import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
 import { statisticsData } from './data/statisticsData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header } = attributes
+const { header, seo } = attributes
+
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.ORBIT.path,
+  useAbsoluteTitle: true,
+})
 
 export default function Orbit() {
   return (
     <PageLayout>
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
