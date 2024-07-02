@@ -13,6 +13,8 @@ import home from '@/assets/graphics/Filorg_Home.png'
 import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
 import logoFallback from '@/assets/graphics/Filorg_LogoFallback.png'
 import rAndD from '@/assets/graphics/Filorg_RandD.png'
+import security from '@/assets/graphics/Filorg_Security.png'
+import security2 from '@/assets/graphics/Filorg_Security2.png'
 
 export const graphicsData: Record<string, StaticImageProps> = {
   home: {
@@ -54,6 +56,14 @@ export const graphicsData: Record<string, StaticImageProps> = {
   grants: {
     data: grants,
     alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
+  },
+  security: {
+    data: security,
+    alt: 'Futuristic digital security concept with a central padlock symbol surrounded by interconnected circuits, representing advanced cybersecurity technology.',
+  },
+  security2: {
+    data: security2,
+    alt: 'A minimalist, abstract depiction of developers searching for bugs in the Filecoin ecosystem.',
   },
   rAndD: {
     data: rAndD,

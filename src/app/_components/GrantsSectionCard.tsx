@@ -5,7 +5,7 @@ import { CTAProps } from '@/types/sharedProps/ctaType'
 
 type GrantsSectionCardProps = {
   heading: HeadingProps
-  children: React.ReactNode
+  children?: React.ReactNode
   cta?: CTAProps
 }
 
