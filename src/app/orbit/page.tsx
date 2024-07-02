@@ -1,9 +1,11 @@
 import { Button } from '@/components/Button'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { StatisticCard } from '@/components/StatisticCard'
 
 import { attributes } from '@/content/pages/orbit.md'
 
@@ -11,6 +13,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
+import { statisticsData } from './data/statisticsData'
 
 const { header } = attributes
 
@@ -35,8 +38,12 @@ export default function Orbit() {
 
       {/* <PageSection kicker="Goals" title="Main Goals of This Program" /> */}
 
-      <PageSection kicker="Statistics" title="Since Program Launch in 2020">
-        <p>TODO</p>
+      <PageSection kicker="Statistics" title="Key Statistics Since 2020">
+        <CardGrid cols="smTwo">
+          {statisticsData.map((statistic, index) => (
+            <StatisticCard key={index} {...statistic} />
+          ))}
+        </CardGrid>
       </PageSection>
 
       <PageSection
