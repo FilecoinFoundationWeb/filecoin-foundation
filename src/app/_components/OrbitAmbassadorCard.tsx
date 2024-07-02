@@ -1,17 +1,15 @@
 import clsx from 'clsx'
 
 import { BasicCard } from '@/components/BasicCard'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
+import { StaticImage } from '@/components/StaticImage'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
+import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 
 export type OrbitAmbassadorCardProps = {
   index: number
-  image: StaticImageProps
-  name: string
-  testimonial: Array<string> | Array<JSX.Element>
-  location: string
-}
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+} & AmbassadorData
 
 export function OrbitAmbassadorCard({
   index,

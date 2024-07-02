@@ -1,4 +1,3 @@
-import { OrbitAmbassadorCardProps } from '@/components/OrbitAmbassadorCard'
 import type { StaticImageProps } from '@/components/StaticImage'
 import { TextLink } from '@/components/TextLink'
 
@@ -10,9 +9,14 @@ import kolkataImg from '@/assets/orbit/ambassadors/kolkata-filecoin-event-booth.
 import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen-orbit-china-roadshow.jpg'
 import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-event.jpg'
 
-type AmbassadorData = OrbitAmbassadorCardProps & { image: StaticImageProps }
+export type AmbassadorData = {
+  image: StaticImageProps
+  name: string
+  testimonial: string[] | JSX.Element[]
+  location: string
+}
 
-export const ambassadorsData: Array<AmbassadorData> = [
+export const ambassadorsData: AmbassadorData[] = [
   {
     name: 'Alex Mirran, Logan Lentz & Dante Cullari',
     location: 'Austin, USA',
