@@ -71,6 +71,18 @@ const FILECOIN_FOUNDATION_URLS = {
         'https://github.com/filecoin-project/devgrants?tab=readme-ov-file#requests-for-proposals-rfps',
     },
   },
+  security: {
+    email: {
+      label: 'Contact Security Team',
+      href: 'mailto:security@fil.org',
+    },
+    documents: {
+      filecoinCompatibility:
+        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
+      auditReports: 'https://spec.filecoin.io/#section-appendix.audit_reports',
+      bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
+    },
+  },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
