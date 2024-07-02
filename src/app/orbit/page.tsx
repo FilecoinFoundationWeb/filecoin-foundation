@@ -1,15 +1,9 @@
-// import clsx from 'clsx'
-
 import { Button } from '@/components/Button'
-// import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-// import { StaticImage } from '@/components/StaticImage'
-
-// import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { attributes } from '@/content/pages/orbit.md'
 
