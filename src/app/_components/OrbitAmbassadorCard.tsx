@@ -15,12 +15,12 @@ export function OrbitAmabassadorCard({
 
   return (
     <BasicCard>
-      <div className="space-y-6">
+      <article className="space-y-6">
         {testimonial.map((text, index) => (
           <p key={index}>{text}</p>
         ))}
 
-        <div>
+        <footer>
           <p className="font-bold">{name}</p>
 
           {locationArray.map((location, index) => (
@@ -28,8 +28,8 @@ export function OrbitAmabassadorCard({
               — {location}
             </p>
           ))}
-        </div>
-      </div>
+        </footer>
+      </article>
     </BasicCard>
   )
 }
