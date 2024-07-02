@@ -6,7 +6,7 @@ import austinImg from '@/assets/orbit/ambassadors/austin-web3-filecoin-meetup.jp
 import barcelonaImg from '@/assets/orbit/ambassadors/barcelona-web3fc-event.jpg'
 import buenosAiresImg from '@/assets/orbit/ambassadors/buenos-aires-event-attendees.jpg'
 import indiaImg from '@/assets/orbit/ambassadors/india-classroom-group-photo.jpg'
-import kolkataImg from '@/assets/orbit/ambassadors/kolkata-filecoin-event-booth.png'
+import kolkataImg from '@/assets/orbit/ambassadors/kolkata-filecoin-event-booth.jpg'
 import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen-orbit-china-roadshow.jpg'
 import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-event.jpg'
 
