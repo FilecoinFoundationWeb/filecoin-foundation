@@ -17,9 +17,10 @@ function getScreenWidthNumber(screenSize: Breakpoint) {
 export function buildImageSizeProp(args: Args) {
   const { startSize, ...breakpointWidthPairs } = args
 
-  const breakpointWidthPairsArray = Object.entries(
-    breakpointWidthPairs,
-  ) as Array<[Breakpoint, Width]>
+  const breakpointWidthPairsArray = Object.entries(breakpointWidthPairs) as [
+    Breakpoint,
+    Width,
+  ][]
 
   const sortedBreakpointWidthPairsArray = [...breakpointWidthPairsArray].sort(
     (a, b) => {
