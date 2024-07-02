@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 
+import { Button } from '@/components/Button'
 import {
   type DescriptionTextType,
   DescriptionText,
@@ -11,6 +12,8 @@ import {
 } from '@/components/SectionDivider'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
+import { CTAProps } from '@/types/sharedProps/ctaType'
+
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PageSectionProps = {
@@ -19,6 +22,7 @@ type PageSectionProps = {
   description?: DescriptionTextType
   image?: StaticImageProps
   children?: React.ReactNode
+  cta?: CTAProps
 }
 
 export function PageSection({
@@ -27,6 +31,7 @@ export function PageSection({
   description,
   image,
   children,
+  cta,
 }: PageSectionProps) {
   return (
     <section>
@@ -42,6 +47,11 @@ export function PageSection({
             {title}
           </Heading>
           {description && <DescriptionText>{description}</DescriptionText>}
+          {cta && (
+            <Button href={cta.href} variant="primary" className="w-full">
+              {cta.text}
+            </Button>
+          )}
         </div>
         {image && (
           <div className="relative aspect-video lg:aspect-auto">

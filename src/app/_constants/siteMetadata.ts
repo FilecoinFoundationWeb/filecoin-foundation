@@ -89,6 +89,18 @@ const FILECOIN_FOUNDATION_URLS = {
     contactForm: 'https://airtable.com/appyPZiiFSUIYFsrA/shrmNURZt1khzB00M',
     email: 'mailto:impact@fil.org',
   },
+  security: {
+    email: {
+      label: 'Contact Security Team',
+      href: 'mailto:security@fil.org',
+    },
+    documents: {
+      filecoinCompatibility:
+        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
+      auditReports: 'https://spec.filecoin.io/#section-appendix.audit_reports',
+      bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
+    },
+  },
   social: {
     bluesky: {
       label: 'Bluesky',

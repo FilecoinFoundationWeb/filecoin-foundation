@@ -2,7 +2,7 @@ type DescriptionProps = {
   children: DescriptionTextType
 }
 
-export type DescriptionTextType = string | string[]
+export type DescriptionTextType = string | string[] | React.ReactNode
 
 export function DescriptionText({ children }: DescriptionProps) {
   if (Array.isArray(children)) {
