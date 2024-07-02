@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
+import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -8,6 +9,8 @@ import { attributes } from '@/content/pages/orbit.md'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
+
+import { ambassadorsData } from './data/ambassadorsData'
 
 const { header } = attributes
 
@@ -67,7 +70,20 @@ export default function Orbit() {
       </PageSection>
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
-        <p>TODO</p>
+        {ambassadorsData.map((ambassadorData, index) => {
+          const { name, location, testimonial, image } = ambassadorData
+
+          return (
+            <OrbitAmbassadorCard
+              key={index}
+              index={index}
+              image={image}
+              name={name}
+              testimonial={testimonial}
+              location={location}
+            />
+          )
+        })}
       </PageSection>
 
       <PageSection kicker="Frequency Asked Questions" title="FAQs">
