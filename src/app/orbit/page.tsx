@@ -2,7 +2,7 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
-import { OrbitAmabassadorCard } from '@/components/OrbitAmbassadorCard'
+import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -103,7 +103,7 @@ export default function Orbit() {
                 </div>
 
                 <div className="col-span-1 lg:col-span-2">
-                  <OrbitAmabassadorCard {...rest} />
+                  <OrbitAmbassadorCard {...rest} />
                 </div>
               </div>
             )

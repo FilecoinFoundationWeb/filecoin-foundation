@@ -6,7 +6,7 @@ export type OrbitAmbassadorCardProps = {
   testimonial: Array<string> | Array<JSX.Element>
 }
 
-export function OrbitAmabassadorCard({
+export function OrbitAmbassadorCard({
   testimonial,
   name,
   location,
