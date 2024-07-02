@@ -78,7 +78,7 @@ export default function Orbit() {
         <div className="flex flex-col gap-y-6">
           {ambassadorsData.map((ambassadorData, index) => {
             const { image, ...rest } = ambassadorData
-            const isdPositionOdd = index % 2 === 1
+            const isPositionOdd = index % 2 === 1
 
             return (
               <div
@@ -88,7 +88,7 @@ export default function Orbit() {
                 <div
                   className={clsx(
                     'relative col-span-1 h-48 sm:h-64 lg:h-auto',
-                    isdPositionOdd && 'lg:order-last',
+                    isPositionOdd && 'lg:order-last',
                   )}
                 >
                   <StaticImage
