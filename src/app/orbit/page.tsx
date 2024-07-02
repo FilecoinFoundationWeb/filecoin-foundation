@@ -20,22 +20,20 @@ export default function Orbit() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback} // TODO: Add proper orbit image
+        image={graphicsData.imageFallback}
         cta={[
           {
-            href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorApplicationForm,
+            href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm,
             text: 'Become an Orbit Ambassador',
           },
           {
-            href: FILECOIN_FOUNDATION_URLS.orbit.ambassoadorPortal,
+            href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsPortal,
             text: 'Filecoin Orbit Ambassador’s Portal',
           },
         ]}
       />
 
-      <PageSection kicker="Goals" title="Main Goals of This Program">
-        <p>TODO</p>
-      </PageSection>
+      {/* <PageSection kicker="Goals" title="Main Goals of This Program" /> */}
 
       <PageSection kicker="Statistics" title="Since Program Launch in 2020">
         <p>TODO</p>
@@ -53,7 +51,7 @@ export default function Orbit() {
         </div>
       </PageSection>
 
-      <PageSection
+      {/* <PageSection
         kicker="Program Perks"
         title="Orbit Program Features & Perks"
         image={graphicsData.imageFallback}
@@ -63,11 +61,9 @@ export default function Orbit() {
           'Earn points through Orbit activities to unlock limited edition swag, travel reimbursements to network events, speaking slots at FIL-city events, spot at invite-only workshops and Hacker Bases.',
           'Cement yourself and your organization as key contributors to the Filecoin Ecosystem!',
         ]}
-      />
+      /> */}
 
-      <PageSection kicker="Get Involved" title="Explore Orbit">
-        <p>TODO</p>
-      </PageSection>
+      {/* <PageSection kicker="Get Involved" title="Explore Orbit" /> */}
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
         {ambassadorsData.map((ambassadorData, index) => {
@@ -86,15 +82,13 @@ export default function Orbit() {
         })}
       </PageSection>
 
-      <PageSection kicker="Frequency Asked Questions" title="FAQs">
-        <p>TODO</p>
-      </PageSection>
+      {/* <PageSection kicker="Frequently Asked Questions" title="FAQs" /> */}
 
       <CTASection
         title="Ready to Be Involved In the Filecoin Ecosystem?"
         description="Don't miss out on the opportunity to be part of something big. Join Filecoin Orbit and help shape the future of decentralized technology!"
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorApplicationForm,
+          href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm,
           text: 'Join Filecoin Orbit',
         }}
       />
