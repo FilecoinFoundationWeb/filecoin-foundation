@@ -1,37 +1,24 @@
 import { Icon, type IconProps } from '@/components/Icon'
 
 export type StatisticCardProps = {
-  stat: number | `+${number}`
+  stat: number
   icon: IconProps['component']
-  description: JSX.Element
-}
-
-function formatNumber(stat: StatisticCardProps['stat']) {
-  if (typeof stat === 'number') {
-    return stat.toLocaleString('en-US')
-  }
-
-  const stringWithoutPlus = stat.slice(1)
-  const formattedNumber = Number(stringWithoutPlus).toLocaleString('en-US')
-
-  return `+${formattedNumber}`
+  description: string
 }
 
 export function StatisticCard({ icon, stat, description }: StatisticCardProps) {
   return (
-    <li className="flex rounded-lg border border-brand-300 p-1">
-      <div className="flex h-40 w-32 shrink-0 items-center justify-center rounded bg-brand-500 sm:h-36 lg:h-32">
-        <Icon component={icon} color="brand-200" size={44} />
-      </div>
+    <li className="flex min-h-32 rounded-lg border border-brand-300 p-1">
+      <figure className="grid w-1/3 place-items-center rounded bg-brand-500">
+        <Icon component={icon} color="brand-200" size={40} />
+      </figure>
 
-      <div className="flex grow flex-col justify-center p-4">
-        <div>
-          <h3 className="pb-2 text-4xl font-light text-brand-100">
-            {formatNumber(stat)}
-          </h3>
-          <span className="text-xs leading-4 text-brand-200">
-            {description}
+      <div className="flex w-2/3 place-items-center p-4">
+        <div className="space-y-2">
+          <span className="text-4xl font-light text-brand-100">
+            {stat.toLocaleString()}+
           </span>
+          <p className="text-sm leading-4 text-brand-200">{description}</p>
         </div>
       </div>
     </li>
