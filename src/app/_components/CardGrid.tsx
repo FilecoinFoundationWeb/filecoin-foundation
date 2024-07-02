@@ -15,7 +15,7 @@ type CardGridProps = {
   children: React.ReactNode
 }
 
-const baseGridStyles = 'grid grid-cols-1 gap-4'
+const baseGridStyles = 'grid grid-cols-1 gap-4 auto-rows-fr'
 const extendedGridStyles: Record<GridColumnConfig, string> = {
   smTwoLgThree: 'sm:grid-cols-2 sm:gap-6 lg:grid-cols-3',
   smTwo: 'sm:grid-cols-2 sm:gap-6',

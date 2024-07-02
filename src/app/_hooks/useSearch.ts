@@ -10,7 +10,7 @@ import { SEARCH_KEY } from '@/constants/searchParams'
 type UseSearchProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Entry[]
-  searchBy: keyof Entry | Array<keyof Entry>
+  searchBy: keyof Entry | (keyof Entry)[]
 }
 
 function matchesQuery<Entry extends Object>(
