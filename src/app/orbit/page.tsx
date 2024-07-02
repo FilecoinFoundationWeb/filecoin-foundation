@@ -77,7 +77,7 @@ export default function Orbit() {
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
         <div className="flex flex-col gap-y-6">
           {ambassadorsData.map((ambassadorData, index) => {
-            const { image, ...rest } = ambassadorData
+            const { image, ...cardProps } = ambassadorData
             const isPositionOdd = index % 2 === 1
 
             return (
@@ -103,7 +103,7 @@ export default function Orbit() {
                 </div>
 
                 <div className="col-span-1 lg:col-span-2">
-                  <OrbitAmbassadorCard {...rest} />
+                  <OrbitAmbassadorCard {...cardProps} />
                 </div>
               </div>
             )
