@@ -21,11 +21,11 @@ export function OrbitAmabassadorCard({
         ))}
 
         <div>
-          <p className="mb-1 font-bold">{name}</p>
+          <p className="font-bold">{name}</p>
 
           {locationArray.map((location, index) => (
             <p key={index} className="text-brand-300">
-              {location}
+              — {location}
             </p>
           ))}
         </div>
