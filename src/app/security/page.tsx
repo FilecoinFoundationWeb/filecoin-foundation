@@ -48,6 +48,7 @@ export default function Security() {
         title="Incident Response and Monitoring"
         description="Filecoin Foundation facilitates a collaborative approach to network security for the Filecoin network. This includes monitoring and network-wide responders, spanning multiple organizations and projects, to facilitate 24/7 monitoring of the chain across time zones&mdash;setting the ecosystem apart in fostering a secure and resilient network."
       />
+
       <PageSection kicker="Audits" title="Security Audits">
         <CardGrid cols="smTwo">
           <StaticImage
@@ -104,7 +105,7 @@ export default function Security() {
 
       <PageSection
         kicker="Report Bugs"
-        title="Bug Bountry Program"
+        title="Bug Bounty Program"
         image={graphicsData.security2}
         description="Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities. Since launching our Bug Bounty program, we’ve paid out more than $400,000 in rewards."
         cta={{
@@ -116,7 +117,7 @@ export default function Security() {
       <CTASection
         title="Engage with Our Security Team"
         description={[
-          'Filecoin Foundation security team is always looking to better understand the perspectives and needs of the Filecoin ecosystem. Feedback is invaluable! ',
+          'Filecoin Foundation security team is always looking to better understand the perspectives and needs of the Filecoin ecosystem. Feedback is invaluable!',
           <>
             Don’t hesitate to contact{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.main.href}>
