@@ -165,7 +165,7 @@ export function Card({
           title
         )}
 
-        <div className="mb-10 mt-3">
+        <div className={clsx('mt-3', cta && 'mb-10')}>
           {description && (
             <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
               {description}
