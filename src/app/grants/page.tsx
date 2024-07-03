@@ -1,7 +1,9 @@
+import { Badge } from '@/components/Badge'
+import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
+import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
-import { GrantsApplicationProcessCard } from '@/components/GrantsApplicationProcessCard'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -90,20 +92,21 @@ export default function Grants() {
         kicker="Application Process"
         title="The Filecoin Grants Process"
       >
-        <CardGrid cols="smThree">
+        <BadgeCardGrid cols="smThree">
           {applicationProcessData.map((card) => {
             const { step, title, description } = card
 
             return (
-              <GrantsApplicationProcessCard
-                key={card.title}
-                step={step}
+              <CardWithBadge
+                key={title}
                 title={title}
                 description={description}
-              />
+              >
+                <Badge number={step} />
+              </CardWithBadge>
             )
           })}
-        </CardGrid>
+        </BadgeCardGrid>
       </PageSection>
 
       <PageSection

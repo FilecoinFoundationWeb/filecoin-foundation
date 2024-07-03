@@ -74,8 +74,14 @@ const FILECOIN_FOUNDATION_URLS = {
   orbit: {
     ambassadorsApplicationForm: 'https://forms.gle/NsERP8jB2XJXbwj58',
     ambassadorsPortal: 'https://hub.fil.org/orbit/ambassadors',
+    email: {
+      href: 'mailto:orbit@fil.org',
+    },
     eventsCalendar:
       'https://airtable.com/appAGdqyYrqoFNuPI/shrIZSogQcFNtN9SW/tblnrsxREgBikWu9A',
+    orbitYearInReview: {
+      '2023': `${PATHS.BLOG.path}/orbit-year-in-review-growing-a-global-community-of-builders/`,
+    },
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
