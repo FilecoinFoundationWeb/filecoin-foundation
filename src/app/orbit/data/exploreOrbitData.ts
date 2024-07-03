@@ -1,4 +1,8 @@
-import { BookOpen, Clipboard, Envelope } from '@phosphor-icons/react/dist/ssr'
+import {
+  BookOpen,
+  ClipboardText,
+  Envelope,
+} from '@phosphor-icons/react/dist/ssr'
 
 import type { IconProps } from '@/components/Icon'
 
@@ -43,7 +47,7 @@ export const exploreOrbitData: ExploreOrbitData[] = [
   {
     heading: {
       title: "Ambassador's Portal",
-      icon: Clipboard,
+      icon: ClipboardText,
     },
     description: 'Access the private portal with tools and resources.',
     cta: {

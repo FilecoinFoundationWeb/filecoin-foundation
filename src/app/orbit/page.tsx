@@ -102,7 +102,7 @@ export default function Orbit() {
       /> */}
 
       <PageSection kicker="Get Involved" title="Explore Orbit">
-        <CardGrid cols="smTwo">
+        <CardGrid cols="lgThree">
           {exploreOrbitData.map((data, index) => {
             const {
               heading: { title, icon },
