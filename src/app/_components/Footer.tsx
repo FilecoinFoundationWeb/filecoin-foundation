@@ -29,6 +29,7 @@ const navigationItems = [
   PATHS.ECOSYSTEM_EXPLORER,
   PATHS.GOVERNANCE,
   PATHS.BLOG,
+  PATHS.SECURITY,
 ]
 
 const legalItems = [

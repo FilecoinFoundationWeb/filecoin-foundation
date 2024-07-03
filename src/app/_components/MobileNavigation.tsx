@@ -17,7 +17,12 @@ import { linkBaseStyles } from '@/components/TextLink'
 import { PATHS } from '@/constants/paths'
 
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
-const communityItems = [PATHS.ECOSYSTEM_EXPLORER, PATHS.GOVERNANCE, PATHS.ORBIT]
+const communityItems = [
+  PATHS.ECOSYSTEM_EXPLORER,
+  PATHS.GOVERNANCE,
+  PATHS.ORBIT,
+  PATHS.SECURITY,
+]
 
 type IconButtonProps = {
   icon: IconProps['component']
