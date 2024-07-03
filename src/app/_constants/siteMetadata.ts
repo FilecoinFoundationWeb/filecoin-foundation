@@ -90,9 +90,14 @@ const FILECOIN_FOUNDATION_URLS = {
     email: 'mailto:impact@fil.org',
   },
   security: {
-    email: {
-      label: 'Contact Security Team',
-      href: 'mailto:security@fil.org',
+    emails: {
+      main: {
+        label: 'Contact Security Team',
+        href: 'mailto:security@fil.org',
+      },
+      audits: {
+        href: 'mailto:audits@fil.org',
+      },
     },
     documents: {
       filecoinCompatibility:

@@ -38,8 +38,8 @@ export default function Security() {
         description={header.description}
         image={graphicsData.security}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.security.email.href,
-          text: FILECOIN_FOUNDATION_URLS.security.email.label,
+          href: FILECOIN_FOUNDATION_URLS.security.emails.main.href,
+          text: FILECOIN_FOUNDATION_URLS.security.emails.main.label,
         }}
       />
 
@@ -60,9 +60,9 @@ export default function Security() {
           />
           <GrantsSectionCard
             cta={{
+              href: FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
               text: 'Email us',
               icon: Envelope,
-              href: 'mailto:audits@fil.og',
             }}
             heading={{
               tag: 'h3',
@@ -70,10 +70,14 @@ export default function Security() {
               children: 'Get Your Project Audited',
             }}
           >
-            Filecoin Foundation supports a security auditor network for
+            `Filecoin Foundation supports a security auditor network for
             developers in the Filecoin ecosystem. Interested in having your
-            project audited? Contact the Foundation’s security team at
-            audits@fil.org.
+            project audited? Contact the Foundation’s security team at $
+            {FILECOIN_FOUNDATION_URLS.security.emails.audits.href.replace(
+              'mailto:',
+              '',
+            )}
+            `.
           </GrantsSectionCard>
         </CardGrid>
       </PageSection>
@@ -115,8 +119,8 @@ export default function Security() {
           'Filecoin Foundation security team is always looking to better understand the perspectives and needs of the Filecoin ecosystem. Feedback is invaluable! ',
           <>
             Don’t hesitate to contact{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.security.email.href}>
-              {FILECOIN_FOUNDATION_URLS.security.email.label}{' '}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.main.href}>
+              {FILECOIN_FOUNDATION_URLS.security.emails.main.label}{' '}
             </TextLink>{' '}
             or meet our team at upcoming Foundation-hosted and community events.
           </>,
