@@ -1,6 +1,6 @@
 import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
-import { Tag } from '@/components/Tag'
+import { TagLabel } from '@/components/TagLabel'
 
 import { type BlogPostData } from '@/types/blogPostTypes'
 
@@ -23,7 +23,7 @@ export function BlogPostHeader({
   return (
     <header className="space-y-6">
       <div className="space-y-4">
-        {category && <Tag>{category}</Tag>}
+        {category && <TagLabel>{category}</TagLabel>}
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>

@@ -6,7 +6,7 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { Tag } from '@/components/Tag'
+import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
 
 import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
@@ -131,7 +131,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           <ul className="flex flex-wrap gap-2">
             {getTagLabels(data).map((tag) => (
               <li key={tag}>
-                <Tag>{tag}</Tag>
+                <TagLabel>{tag}</TagLabel>
               </li>
             ))}
           </ul>

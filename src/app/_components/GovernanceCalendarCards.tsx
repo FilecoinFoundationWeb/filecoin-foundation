@@ -9,7 +9,7 @@ import { z } from 'zod'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
-import { Tag } from '@/components/Tag'
+import { TagLabel } from '@/components/TagLabel'
 
 import { extractTimeFromISO } from '@/utils/convertISOTime'
 
@@ -106,11 +106,11 @@ export function GovernanceCalendarCards() {
             <div className="flex-1 pb-14 sm:pb-0">
               <div className="flex flex-col gap-3 p-4">
                 <div className="flex gap-2">
-                  <Tag
+                  <TagLabel
                     borderColor="brand-100"
                     icon={Clock}
-                  >{`UTC ${startTime} - ${endTime}`}</Tag>
-                  <Tag>Zoom</Tag>
+                  >{`UTC ${startTime} - ${endTime}`}</TagLabel>
+                  <TagLabel>Zoom</TagLabel>
                 </div>
                 <Heading tag="h3" variant="lg">
                   {summary}

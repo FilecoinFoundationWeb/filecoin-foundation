@@ -13,7 +13,11 @@ const borderStyles = {
   'brand-500': 'border-brand-500',
 }
 
-export function Tag({ borderColor = 'brand-500', icon, children }: TagProps) {
+export function TagLabel({
+  borderColor = 'brand-500',
+  icon,
+  children,
+}: TagProps) {
   const baseStyles =
     'inline-flex max-w-fit gap-1 rounded-lg border bg-brand-800 px-2 py-1 text-xs font-semibold capitalize text-brand-100'
 

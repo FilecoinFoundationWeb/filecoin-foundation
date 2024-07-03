@@ -8,7 +8,7 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-import { Tag } from '@/components/Tag'
+import { TagLabel } from '@/components/TagLabel'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
@@ -147,7 +147,7 @@ export function Card({
       <div className="flex flex-col p-4">
         {tag && (
           <span className="mb-4">
-            <Tag>{tag}</Tag>
+            <TagLabel>{tag}</TagLabel>
           </span>
         )}
 
