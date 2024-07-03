@@ -22,6 +22,15 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Build Project
+        run: npm run build
+
+      - name: Start Server
+        run: |
+          npm start &
+          echo "Waiting for server to start..."
+          npx wait-on http://localhost:3000
+
       - name: Run Cypress Tests with Percy
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
