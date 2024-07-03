@@ -1,13 +1,10 @@
+import type { BadgeProps } from '@/components/Badge'
 import { Heading } from '@/components/Heading'
-import type { IconBadgeProps } from '@/components/IconBadge'
-import type { NumberBadgeProps } from '@/components/NumberBadge'
 
 type CardWithBadgeProps = {
   title: string
   description: string | React.ReactNode
-  children:
-    | React.ReactElement<IconBadgeProps>
-    | React.ReactElement<NumberBadgeProps>
+  children: React.ReactElement<BadgeProps>
 }
 
 export function CardWithBadge({

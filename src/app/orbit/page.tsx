@@ -1,11 +1,11 @@
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
+import { Badge } from '@/components/Badge'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
-import { IconBadge } from '@/components/IconBadge'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -108,7 +108,7 @@ export default function Orbit() {
                 title={title}
                 description={description}
               >
-                <IconBadge icon={icon} />
+                <Badge icon={icon} />
               </CardWithBadge>
             )
           })}

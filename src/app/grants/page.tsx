@@ -1,10 +1,10 @@
+import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
-import { NumberBadge } from '@/components/NumberBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -102,7 +102,7 @@ export default function Grants() {
                 title={title}
                 description={description}
               >
-                <NumberBadge number={step} />
+                <Badge number={step} />
               </CardWithBadge>
             )
           })}
