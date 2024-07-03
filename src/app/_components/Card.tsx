@@ -2,13 +2,13 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import clsx from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
-import { Badge } from '@/components/Badge'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
+import { Tag } from '@/components/Tag'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
@@ -147,7 +147,7 @@ export function Card({
       <div className="flex flex-col p-4">
         {tag && (
           <span className="mb-4">
-            <Badge>{tag}</Badge>
+            <Tag>{tag}</Tag>
           </span>
         )}
 

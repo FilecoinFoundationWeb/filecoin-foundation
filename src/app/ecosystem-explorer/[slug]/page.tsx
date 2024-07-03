@@ -1,12 +1,12 @@
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
-import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
 import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { Tag } from '@/components/Tag'
 import { TextLink } from '@/components/TextLink'
 
 import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
@@ -131,7 +131,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           <ul className="flex flex-wrap gap-2">
             {getTagLabels(data).map((tag) => (
               <li key={tag}>
-                <Badge>{tag}</Badge>
+                <Tag>{tag}</Tag>
               </li>
             ))}
           </ul>

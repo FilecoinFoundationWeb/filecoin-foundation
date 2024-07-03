@@ -6,10 +6,10 @@ import { Clock, CalendarPlus } from '@phosphor-icons/react/dist/ssr'
 import useSWR from 'swr'
 import { z } from 'zod'
 
-import { Badge } from '@/components/Badge'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
+import { Tag } from '@/components/Tag'
 
 import { extractTimeFromISO } from '@/utils/convertISOTime'
 
@@ -106,11 +106,11 @@ export function GovernanceCalendarCards() {
             <div className="flex-1 pb-14 sm:pb-0">
               <div className="flex flex-col gap-3 p-4">
                 <div className="flex gap-2">
-                  <Badge
+                  <Tag
                     borderColor="brand-100"
                     icon={Clock}
-                  >{`UTC ${startTime} - ${endTime}`}</Badge>
-                  <Badge>Zoom</Badge>
+                  >{`UTC ${startTime} - ${endTime}`}</Tag>
+                  <Tag>Zoom</Tag>
                 </div>
                 <Heading tag="h3" variant="lg">
                   {summary}
