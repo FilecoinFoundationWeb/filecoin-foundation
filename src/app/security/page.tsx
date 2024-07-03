@@ -13,6 +13,8 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/security.md'
 
+import { StaticImage } from '@/_components/StaticImage'
+import { buildImageSizeProp } from '@/_utils/buildImageSizeProp'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
@@ -48,8 +50,14 @@ export default function Security() {
       />
       <PageSection kicker="Audits" title="Security Audits">
         <CardGrid cols="smTwo">
-          {/* placeholder for the image */}
-          <div style={{ gridColumn: 'span 1' }}></div>
+          <StaticImage
+            {...graphicsData.imageFallback}
+            className="h-full w-full rounded-lg"
+            sizes={buildImageSizeProp({
+              startSize: '100vw',
+              lg: '50vw',
+            })}
+          />
           <GrantsSectionCard
             cta={{
               text: 'Email us',
@@ -108,7 +116,7 @@ export default function Security() {
           <>
             Don’t hesitate to contact{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.security.email.href}>
-              security@fil.org{' '}
+              {FILECOIN_FOUNDATION_URLS.security.email.label}{' '}
             </TextLink>{' '}
             or meet our team at upcoming Foundation-hosted and community events.
           </>,
