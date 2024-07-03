@@ -2,6 +2,7 @@ import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -19,6 +20,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
+import { exploreOrbitData } from './data/exploreOrbitData'
 import { programGoalsData } from './data/programGoalsData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -100,7 +102,34 @@ export default function Orbit() {
         ]}
       /> */}
 
-      {/* <PageSection kicker="Get Involved" title="Explore Orbit" /> */}
+      <PageSection kicker="Get Involved" title="Explore Orbit">
+        <CardGrid cols="lgThree">
+          {exploreOrbitData.map((data, index) => {
+            const {
+              heading: { title, icon },
+              description,
+              cta,
+            } = data
+
+            return (
+              <HomeExploreSectionCard
+                key={index}
+                cta={cta}
+                heading={{
+                  tag: 'h3',
+                  variant: 'lg',
+                  children: title,
+                  iconProps: {
+                    component: icon,
+                  },
+                }}
+              >
+                {description}
+              </HomeExploreSectionCard>
+            )
+          })}
+        </CardGrid>
+      </PageSection>
 
       <PageSection kicker="Testimonials" title="Hear From Our Ambassadors">
         {ambassadorsData.map((ambassadorData, index) => {
