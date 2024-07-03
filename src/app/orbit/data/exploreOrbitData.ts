@@ -2,7 +2,6 @@ import { BookOpen, Clipboard, Envelope } from '@phosphor-icons/react/dist/ssr'
 
 import type { IconProps } from '@/components/Icon'
 
-import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type ExploreOrbitData = {
