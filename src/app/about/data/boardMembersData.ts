@@ -5,7 +5,7 @@ import MarciaHofmann from '@/assets/headshots/Marcia_Hofmann.png'
 import MartaBelcher from '@/assets/headshots/Marta_Belcher.png'
 import NicoleWong from '@/assets/headshots/Nicole_Wong.png'
 
-export const boardMembersData: Array<MemberData> = [
+export const boardMembersData: MemberData[] = [
   {
     name: 'Marta Belcher',
     title: 'President & Chair, Filecoin Foundation',

@@ -12,7 +12,7 @@ import SandraRo from '@/assets/headshots/Sandra_Ro.png'
 import VeronicaMcGregor from '@/assets/headshots/Veronica_McGregor.png'
 import WendyHanamura from '@/assets/headshots/Wendy_Hanamura.png'
 
-export const advisorsData: Array<MemberData> = [
+export const advisorsData: MemberData[] = [
   {
     name: 'Brewster Kahle',
     title: 'Founder, Internet Archive',
