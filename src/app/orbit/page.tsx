@@ -203,9 +203,9 @@ export default function Orbit() {
                 agreement.
               </li>
               <li>
-                Once the agreement is signed, you'll receive a follow-up email
-                containing everything you need to know to be an active
-                ambassador. Plus, you'll gain access to our exclusive
+                Once the agreement is signed, you&apos;ll receive a follow-up
+                email containing everything you need to know to be an active
+                ambassador. Plus, you&apos;ll gain access to our exclusive
                 Ambassadors Lounge, packed with valuable resources and
                 information.
               </li>
