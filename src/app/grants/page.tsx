@@ -1,8 +1,9 @@
 import { CardGrid } from '@/components/CardGrid'
+import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
-import { GrantsApplicationProcessCard } from '@/components/GrantsApplicationProcessCard'
 import { GrantsSectionCard } from '@/components/GrantsSectionCard'
+import { NumberBadge } from '@/components/NumberBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -95,12 +96,13 @@ export default function Grants() {
             const { step, title, description } = card
 
             return (
-              <GrantsApplicationProcessCard
+              <CardWithBadge
                 key={title}
-                step={step}
                 title={title}
                 description={description}
-              />
+              >
+                <NumberBadge number={step} />
+              </CardWithBadge>
             )
           })}
         </CardGrid>

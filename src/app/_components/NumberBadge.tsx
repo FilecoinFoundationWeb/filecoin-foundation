@@ -1,6 +1,6 @@
 import { BadgeWrapper } from '@/components/BadgeWrapper'
 
-type NumberBadgeProps = {
+export type NumberBadgeProps = {
   number: number
 }
 

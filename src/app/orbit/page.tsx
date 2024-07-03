@@ -1,10 +1,11 @@
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
+import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
+import { IconBadge } from '@/components/IconBadge'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
-import { OrbitPerksCard } from '@/components/OrbitPerksCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -101,12 +102,13 @@ export default function Orbit() {
             const { icon, title, description } = perk
 
             return (
-              <OrbitPerksCard
+              <CardWithBadge
                 key={title}
-                icon={icon}
                 title={title}
                 description={description}
-              />
+              >
+                <IconBadge icon={icon} />
+              </CardWithBadge>
             )
           })}
         </ul>

@@ -1,7 +1,7 @@
 import { BadgeWrapper } from '@/components/BadgeWrapper'
 import { type IconProps, Icon } from '@/components/Icon'
 
-type IconBadgeProps = {
+export type IconBadgeProps = {
   icon: IconProps['component']
 }
 
