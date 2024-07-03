@@ -1,3 +1,4 @@
+import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
@@ -91,7 +92,7 @@ export default function Grants() {
         kicker="Application Process"
         title="The Filecoin Grants Process"
       >
-        <CardGrid cols="smThree">
+        <BadgeCardGrid cols="smThree">
           {applicationProcessData.map((card) => {
             const { step, title, description } = card
 
@@ -105,7 +106,7 @@ export default function Grants() {
               </CardWithBadge>
             )
           })}
-        </CardGrid>
+        </BadgeCardGrid>
       </PageSection>
 
       <PageSection

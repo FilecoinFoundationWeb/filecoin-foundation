@@ -1,3 +1,4 @@
+import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
@@ -97,7 +98,7 @@ export default function Orbit() {
         kicker="Program Perks"
         title="Orbit Program Features & Perks"
       >
-        <ul className="grid grid-cols-1 gap-6 sm:auto-rows-fr sm:grid-cols-2 lg:grid-cols-4">
+        <BadgeCardGrid cols="smTwoLgFour">
           {programFeaturesAndPerksData.map((perk) => {
             const { icon, title, description } = perk
 
@@ -111,7 +112,7 @@ export default function Orbit() {
               </CardWithBadge>
             )
           })}
-        </ul>
+        </BadgeCardGrid>
       </PageSection>
 
       <PageSection kicker="Get Involved" title="Explore Orbit">
