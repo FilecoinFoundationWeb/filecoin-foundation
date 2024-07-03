@@ -1,11 +1,13 @@
 import { Clipboard, Envelope, HandWaving } from '@phosphor-icons/react/dist/ssr'
 
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
+
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export const getInvolvedData = [
   {
     title: 'Sponsor an Event',
-    description: `To be featured partner or sponsor an upcoming Foundation-hosted event, reach out to ${FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail.replace('mailto:', '')}.`,
+    description: `To be featured partner or sponsor an upcoming Foundation-hosted event, reach out to ${extractEmailAddress(FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail)}.`,
     cta: {
       href: FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail,
       text: 'Email Us',

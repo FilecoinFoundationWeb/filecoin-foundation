@@ -6,15 +6,16 @@ import { GrantsSectionCard } from '@/components/GrantsSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 import { attributes } from '@/content/pages/security.md'
 
-import { StaticImage } from '@/_components/StaticImage'
-import { buildImageSizeProp } from '@/_utils/buildImageSizeProp'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
@@ -74,9 +75,8 @@ export default function Security() {
             `Filecoin Foundation supports a security auditor network for
             developers in the Filecoin ecosystem. Interested in having your
             project audited? Contact the Foundation’s security team at $
-            {FILECOIN_FOUNDATION_URLS.security.emails.audits.href.replace(
-              'mailto:',
-              '',
+            {extractEmailAddress(
+              FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
             )}
             `.
           </GrantsSectionCard>

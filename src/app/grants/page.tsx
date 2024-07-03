@@ -12,6 +12,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { attributes } from '@/content/pages/grants.md'
@@ -148,10 +149,7 @@ export default function Grants() {
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
-              {FILECOIN_FOUNDATION_URLS.grants.email.href.replace(
-                'mailto:',
-                '',
-              )}
+              {extractEmailAddress(FILECOIN_FOUNDATION_URLS.grants.email.href)}
             </TextLink>{' '}
             or join our{' '}
             <TextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
