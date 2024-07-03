@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
+import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -17,6 +18,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
+import { programGoalsData } from './data/programGoalsData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -48,7 +50,22 @@ export default function Orbit() {
         ]}
       />
 
-      {/* <PageSection kicker="Goals" title="Main Goals of This Program" /> */}
+      <PageSection kicker="Goals" title="Orbit Program Goals">
+        <CardGrid cols="lgThree">
+          {programGoalsData.map((goal, index) => {
+            const { image, title, description } = goal
+
+            return (
+              <FocusAreaCard
+                key={index}
+                image={image}
+                title={title}
+                description={description}
+              />
+            )
+          })}
+        </CardGrid>
+      </PageSection>
 
       <PageSection kicker="Statistics" title="Key Statistics Since 2020">
         <CardGrid cols="smTwo">
