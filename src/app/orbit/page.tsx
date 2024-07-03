@@ -4,6 +4,7 @@ import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
+import { OrbitPerksCard } from '@/components/OrbitPerksCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -21,6 +22,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { ambassadorsData } from './data/ambassadorsData'
 import { exploreOrbitData } from './data/exploreOrbitData'
+import { programFeaturesAndPerksData } from './data/programFeaturesAndPerksData'
 import { programGoalsData } from './data/programGoalsData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -90,17 +92,25 @@ export default function Orbit() {
         </div>
       </PageSection>
 
-      {/* <PageSection
+      <PageSection
         kicker="Program Perks"
         title="Orbit Program Features & Perks"
-        image={graphicsData.imageFallback}
-        description={[
-          'Host events in your community with funding and promotion from the Filecoin Foundation.',
-          'Create tutorials, translate technical documentation and serve as administrators for community communication channels.',
-          'Earn points through Orbit activities to unlock limited edition swag, travel reimbursements to network events, speaking slots at FIL-city events, spot at invite-only workshops and Hacker Bases.',
-          'Cement yourself and your organization as key contributors to the Filecoin Ecosystem!',
-        ]}
-      /> */}
+      >
+        <ul className="grid grid-cols-1 gap-6 sm:auto-rows-fr sm:grid-cols-2 lg:grid-cols-4">
+          {programFeaturesAndPerksData.map((perk) => {
+            const { icon, title, description } = perk
+
+            return (
+              <OrbitPerksCard
+                key={title}
+                icon={icon}
+                title={title}
+                description={description}
+              />
+            )
+          })}
+        </ul>
+      </PageSection>
 
       <PageSection kicker="Get Involved" title="Explore Orbit">
         <CardGrid cols="lgThree">
