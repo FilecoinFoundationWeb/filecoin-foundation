@@ -72,13 +72,13 @@ export default function Security() {
               children: 'Get Your Project Audited',
             }}
           >
-            `Filecoin Foundation supports a security auditor network for
+            Filecoin Foundation supports a security auditor network for
             developers in the Filecoin ecosystem. Interested in having your
-            project audited? Contact the Foundation’s security team at $
+            project audited? Contact the Foundation’s security team at{' '}
             {extractEmailAddress(
               FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
             )}
-            `.
+            .
           </HomeExploreSectionCard>
         </CardGrid>
       </PageSection>
