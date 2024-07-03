@@ -46,7 +46,7 @@ export default function Security() {
       <PageSection
         kicker="What We Do"
         title="Incident Response and Monitoring"
-        description="Filecoin Foundation facilitates a collaborative approach to network security for the Filecoin network. This includes monitoring and network-wide responders, spanning multiple organizations and projects, to facilitate 24/7 monitoring of the chain across time zones ––setting the ecosystem apart in fostering a secure and resilient network. "
+        description="Filecoin Foundation facilitates a collaborative approach to network security for the Filecoin network. This includes monitoring and network-wide responders, spanning multiple organizations and projects, to facilitate 24/7 monitoring of the chain across time zones&mdash;setting the ecosystem apart in fostering a secure and resilient network."
       />
       <PageSection kicker="Audits" title="Security Audits">
         <CardGrid cols="smTwo">
