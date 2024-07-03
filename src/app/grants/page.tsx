@@ -96,7 +96,7 @@ export default function Grants() {
 
             return (
               <GrantsApplicationProcessCard
-                key={card.title}
+                key={title}
                 step={step}
                 title={title}
                 description={description}
