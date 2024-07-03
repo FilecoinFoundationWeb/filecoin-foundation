@@ -1,22 +1,11 @@
 import { Heading } from '@/components/Heading'
+import { NumberBadge } from '@/components/NumberBadge'
 
 type GrantsApplicationProcessCardProps = {
   step: number
   title: string
   description: React.ReactNode
   as?: React.ElementType
-}
-
-type NumberBadgeProps = {
-  number: number
-}
-
-function NumberBadge({ number }: NumberBadgeProps) {
-  return (
-    <div className="grid size-11 place-items-center rounded-full bg-blue-500">
-      <span className="text-2xl font-bold">{number}</span>
-    </div>
-  )
 }
 
 export function GrantsApplicationProcessCard({
