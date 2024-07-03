@@ -8,6 +8,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -118,7 +119,141 @@ export default function Orbit() {
         })}
       </PageSection>
 
-      {/* <PageSection kicker="Frequently Asked Questions" title="FAQs" /> */}
+      <PageSection kicker="Frequently Asked Questions" title="FAQs">
+        <div className="prose space-y-10 prose-h3:text-brand-300 first:prose-h3:mt-0">
+          <div>
+            <h3>
+              Where can I find info about the Filecoin Orbit 2021 conference?
+            </h3>
+            <p>
+              If you’re looking for the Filecoin Orbit 2021 virtual conference
+              celebrating the first year of Filecoin Mainnet, the{' '}
+              <TextLink href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
+                event recordings are on YouTube
+              </TextLink>
+              .
+            </p>
+          </div>
+
+          <div>
+            <h3>How do I become an Orbit Ambassador?</h3>
+            <ol>
+              <li>
+                Review the responsibilities associated with serving as a
+                Filecoin Orbit Ambassador. 
+              </li>
+              <li>
+                Complete the{' '}
+                <TextLink
+                  href={
+                    FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm
+                  }
+                >
+                  application form
+                </TextLink>
+                . After submitting, your application will undergo review. Keep
+                an eye on your email for updates on the status of your
+                application and next steps. This may take up to two weeks.
+              </li>
+              <li>
+                If your application is accepted, you will receive an approval
+                email and a signing request from DocuSign with an ambassador
+                agreement.
+              </li>
+              <li>
+                Once the agreement is signed, you'll receive a follow-up email
+                containing everything you need to know to be an active
+                ambassador. Plus, you'll gain access to our exclusive
+                Ambassadors Lounge, packed with valuable resources and
+                information.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>What are the Orbit Ambassador responsibilities?</h3>
+            <ol>
+              <li>
+                Follow the processes and procedures on the right timeline to
+                organize community meetups, conferences or hackathons. This
+                includes drafting event proposals, using our registration
+                format, creating reports, etc.
+              </li>
+              <li>
+                Share high-quality photos and videos from the events on social
+                media.
+              </li>
+              <li>Manage logistics, content, and execution of the events. </li>
+              <li>
+                Keep track of detailed records of budget, expenses, and
+                receipts.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>How does Filecoin Foundation support Orbit Ambassadors?</h3>
+            <ol>
+              <li>
+                Provide funding for the event, following proper procedures. This
+                funding is intended to cover expenses such as venue rental, food
+                & beverages, A/V, photography, swag, and other costs associated
+                with your Filecoin event.
+              </li>
+              <li>Event management guidance.</li>
+              <li>Marketing and communications resources.</li>
+              <li>
+                Ensure your event is listed on the Global Orbit Events Calendar
+                and Filecoin Foundation’s Google Calendar.
+              </li>
+              <li>Access to potential speakers from the Filecoin network.</li>
+              <li>
+                Subject to approval, receive reimbursement for travel expenses.
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>Does language matter to host events?</h3>
+            <p>
+              No, you can host your event in your local language. If you have an
+              English-speaking host/speaker/guest, you should have instant
+              translation available (both ways).
+            </p>
+          </div>
+
+          <div>
+            <h3>How many Orbit Ambassadors are there?</h3>
+            <p>
+              There are currently over 80 Orbit Ambassadors, in just as many
+              countries, building the Filecoin communities in their cities and
+              regions.
+            </p>
+          </div>
+
+          <div>
+            <h3>
+              Can University students apply? Can I apply if I am already a part
+              of other software or Web3 communities?
+            </h3>
+            <p>Yes, of course. To both questions.</p>
+          </div>
+
+          <div>
+            <h3>
+              Do I need experience in community building to join Filecoin Orbit?
+            </h3>
+            <p>
+              Not necessarily. Orbit Ambassadors include engineers who build on
+              Filecoin Virtual Machine, writers who publish educational articles
+              on popular websites about Filecoin, and event hosts who want to
+              bring people together about something they are excited about
+              (Filecoin!). You’re welcome to make the most of the Orbit program
+              however it resonates with your background and goals.
+            </p>
+          </div>
+        </div>
+      </PageSection>
 
       <CTASection
         title="Ready to Be Involved In the Filecoin Ecosystem?"
