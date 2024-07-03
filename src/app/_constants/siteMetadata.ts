@@ -83,6 +83,12 @@ const FILECOIN_FOUNDATION_URLS = {
       bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
     },
   },
+  orbit: {
+    ambassadorsApplicationForm: 'https://forms.gle/NsERP8jB2XJXbwj58',
+    ambassadorsPortal: 'https://hub.fil.org/orbit/ambassadors',
+    eventsCalendar:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrIZSogQcFNtN9SW/tblnrsxREgBikWu9A',
+  },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
