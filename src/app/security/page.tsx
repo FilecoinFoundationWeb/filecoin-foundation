@@ -2,7 +2,7 @@ import { Envelope } from '@phosphor-icons/react/dist/ssr'
 
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
-import { GrantsSectionCard } from '@/components/GrantsSectionCard'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -60,7 +60,7 @@ export default function Security() {
               lg: '50vw',
             })}
           />
-          <GrantsSectionCard
+          <HomeExploreSectionCard
             cta={{
               href: FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
               text: 'Email us',
@@ -79,7 +79,7 @@ export default function Security() {
               FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
             )}
             `.
-          </GrantsSectionCard>
+          </HomeExploreSectionCard>
         </CardGrid>
       </PageSection>
 
@@ -89,7 +89,7 @@ export default function Security() {
             const { title, cta } = card
 
             return (
-              <GrantsSectionCard
+              <HomeExploreSectionCard
                 key={title}
                 cta={cta}
                 heading={{

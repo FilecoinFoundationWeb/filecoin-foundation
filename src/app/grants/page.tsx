@@ -4,7 +4,7 @@ import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
-import { GrantsSectionCard } from '@/components/GrantsSectionCard'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -66,7 +66,7 @@ export default function Grants() {
             const { title, description, icon, cta } = card
 
             return (
-              <GrantsSectionCard
+              <HomeExploreSectionCard
                 key={title}
                 cta={cta}
                 heading={{
@@ -79,7 +79,7 @@ export default function Grants() {
                 }}
               >
                 {description}
-              </GrantsSectionCard>
+              </HomeExploreSectionCard>
             )
           })}
         </CardGrid>
@@ -120,7 +120,7 @@ export default function Grants() {
             const { title, description, icon } = data
 
             return (
-              <GrantsSectionCard
+              <HomeExploreSectionCard
                 key={title}
                 heading={{
                   tag: 'h3',
@@ -132,7 +132,7 @@ export default function Grants() {
                 }}
               >
                 {description}
-              </GrantsSectionCard>
+              </HomeExploreSectionCard>
             )
           })}
         </CardGrid>
