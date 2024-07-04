@@ -12,6 +12,7 @@ import grants from '@/assets/graphics/Filorg_Grants.png'
 import home from '@/assets/graphics/Filorg_Home.png'
 import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
 import logoFallback from '@/assets/graphics/Filorg_LogoFallback.png'
+import orbit from '@/assets/graphics/Filorg_Orbit.webp'
 import rAndD from '@/assets/graphics/Filorg_RandD.png'
 
 export const graphicsData: Record<string, StaticImageProps> = {
@@ -54,6 +55,10 @@ export const graphicsData: Record<string, StaticImageProps> = {
   grants: {
     data: grants,
     alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
+  },
+  orbit: {
+    data: orbit,
+    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
   },
   rAndD: {
     data: rAndD,
