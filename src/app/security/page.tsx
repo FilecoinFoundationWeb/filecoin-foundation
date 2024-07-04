@@ -120,9 +120,9 @@ export default function Security() {
         description={[
           'Filecoin Foundation security team is always looking to better understand the perspectives and needs of the Filecoin ecosystem. Feedback is invaluable!',
           <>
-            Don’t hesitate to contact{' '}
+            Don’t hesitate to{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.main.href}>
-              {FILECOIN_FOUNDATION_URLS.security.emails.main.label}{' '}
+              {FILECOIN_FOUNDATION_URLS.security.emails.main.label.toLowerCase()}{' '}
             </TextLink>{' '}
             or meet our team at upcoming Foundation-hosted and community events.
           </>,
