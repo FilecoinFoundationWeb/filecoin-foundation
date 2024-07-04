@@ -30,6 +30,7 @@ const navigationItems = [
   PATHS.GOVERNANCE,
   PATHS.ORBIT,
   PATHS.BLOG,
+  PATHS.SECURITY,
 ]
 
 const legalItems = [
