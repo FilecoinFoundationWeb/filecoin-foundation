@@ -29,8 +29,8 @@ const navigationItems = [
   PATHS.ECOSYSTEM_EXPLORER,
   PATHS.GOVERNANCE,
   PATHS.ORBIT,
-  PATHS.BLOG,
   PATHS.SECURITY,
+  PATHS.BLOG,
 ]
 
 const legalItems = [
