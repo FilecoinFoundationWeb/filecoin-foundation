@@ -28,7 +28,7 @@ export const exploreOrbitData: ExploreOrbitData[] = [
     },
     description: 'Discover the highlights and milestones from our past year.',
     cta: {
-      href: '',
+      href: FILECOIN_FOUNDATION_URLS.orbit.orbitYearInReview['2023'],
       text: 'Check 2023 Orbit Recap',
     },
   },
@@ -40,7 +40,7 @@ export const exploreOrbitData: ExploreOrbitData[] = [
     description:
       'Connect with the Orbit Team for more information and support.',
     cta: {
-      href: '',
+      href: FILECOIN_FOUNDATION_URLS.orbit.email.href,
       text: 'Email Us',
     },
   },
