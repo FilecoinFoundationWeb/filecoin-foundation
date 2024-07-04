@@ -98,10 +98,6 @@ export const PATHS = {
     path: '/security',
     label: 'Security',
   }),
-  SECURITY: createPathObject({
-    path: '/security',
-    label: 'Security',
-  }),
   COORDINATED_DISCLOSURE_POLICY: createPathObject({
     path: '/security/coordinated-disclosure-policy',
     label: 'Coordinated Disclosure Policy',
