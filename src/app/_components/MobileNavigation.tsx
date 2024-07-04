@@ -17,7 +17,7 @@ import { linkBaseStyles } from '@/components/TextLink'
 import { PATHS } from '@/constants/paths'
 
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
-const communityItems = [PATHS.ECOSYSTEM_EXPLORER, PATHS.GOVERNANCE]
+const communityItems = [PATHS.ECOSYSTEM_EXPLORER, PATHS.GOVERNANCE, PATHS.ORBIT]
 
 type IconButtonProps = {
   icon: IconProps['component']
@@ -29,7 +29,7 @@ function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
   return (
     <button
       aria-label={label}
-      className="focus:brand-outline grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300"
+      className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:brand-outline"
       onClick={onClick}
     >
       <Icon component={IconComponent} />
@@ -106,7 +106,7 @@ export function MobileNavigation() {
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
             <Link
-              className="focus:brand-outline flex-shrink-0"
+              className="flex-shrink-0 focus:brand-outline"
               href={PATHS.HOME.path}
               aria-label="Go to homepage"
               onClick={() => setOpen(false)}

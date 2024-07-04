@@ -1,6 +1,6 @@
-import { Badge } from '@/components/Badge'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TagLabel } from '@/components/TagLabel'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
@@ -36,7 +36,7 @@ export default function EventEntry({ params }: EventProps) {
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
-      <Badge borderColor="brand-100">{involvement}</Badge>
+      <TagLabel borderColor="brand-100">{involvement}</TagLabel>
       <PageHeader
         title={title}
         description={description}
