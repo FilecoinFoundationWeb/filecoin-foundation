@@ -97,6 +97,10 @@ export const PATHS = {
     path: '/security',
     label: 'Security',
   }),
+  SECURITY: createPathObject({
+    path: '/security',
+    label: 'Security',
+  }),
 } as const
 
 export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/categories`
