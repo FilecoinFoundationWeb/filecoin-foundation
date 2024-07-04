@@ -11,7 +11,7 @@ type GridColumnConfig =
 
 type CardGridProps = {
   cols: GridColumnConfig
-  useGridAutoRows?: boolean
+  hasGridAutoRows?: boolean
   as?: React.ElementType
   children: React.ReactNode
 }
@@ -29,11 +29,11 @@ const extendedGridStyles: Record<GridColumnConfig, string> = {
 
 export function CardGrid({
   cols,
-  useGridAutoRows = true,
+  hasGridAutoRows = true,
   as: Tag = 'ul',
   children,
 }: CardGridProps) {
-  const autoRowsStyles = useGridAutoRows && 'auto-rows-fr'
+  const autoRowsStyles = hasGridAutoRows && 'auto-rows-fr'
 
   return (
     <Tag

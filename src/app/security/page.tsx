@@ -52,7 +52,7 @@ export default function Security() {
       />
 
       <PageSection kicker="Audits" title="Security Audits">
-        <CardGrid cols="smTwo" useGridAutoRows={false}>
+        <CardGrid cols="smTwo" hasGridAutoRows={false}>
           <StaticImage
             {...graphicsData.security3}
             className="h-full w-full rounded-lg"
