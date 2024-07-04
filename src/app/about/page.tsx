@@ -82,7 +82,7 @@ export default function About() {
       </PageSection>
 
       <PageSection kicker="Insights" title="Reports">
-        <CardGrid cols="lgTwo">
+        <CardGrid cols="lgTwo" useGridAutoRows={false}>
           {reportsData.map(({ title, description, link, image }, index) => {
             const imageProp = image && {
               ...image,

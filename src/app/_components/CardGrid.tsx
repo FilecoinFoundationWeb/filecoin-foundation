@@ -11,11 +11,12 @@ type GridColumnConfig =
 
 type CardGridProps = {
   cols: GridColumnConfig
+  useGridAutoRows?: boolean
   as?: React.ElementType
   children: React.ReactNode
 }
 
-const baseGridStyles = 'grid grid-cols-1 gap-4 auto-rows-fr'
+const baseGridStyles = 'grid grid-cols-1 gap-4'
 const extendedGridStyles: Record<GridColumnConfig, string> = {
   smTwoLgThree: 'sm:grid-cols-2 sm:gap-6 lg:grid-cols-3',
   smTwo: 'sm:grid-cols-2 sm:gap-6',
@@ -26,9 +27,18 @@ const extendedGridStyles: Record<GridColumnConfig, string> = {
   lgThree: 'lg:grid-cols-3 lg:gap-6',
 }
 
-export function CardGrid({ cols, as: Tag = 'ul', children }: CardGridProps) {
+export function CardGrid({
+  cols,
+  useGridAutoRows = true,
+  as: Tag = 'ul',
+  children,
+}: CardGridProps) {
+  const autoRowsStyles = useGridAutoRows && 'auto-rows-fr'
+
   return (
-    <Tag className={clsx(baseGridStyles, extendedGridStyles[cols])}>
+    <Tag
+      className={clsx(baseGridStyles, extendedGridStyles[cols], autoRowsStyles)}
+    >
       {children}
     </Tag>
   )
