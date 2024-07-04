@@ -122,7 +122,9 @@ export default function Security() {
           <>
             Don’t hesitate to{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.main.href}>
-              {FILECOIN_FOUNDATION_URLS.security.emails.main.label.toLowerCase()}{' '}
+              {extractEmailAddress(
+                FILECOIN_FOUNDATION_URLS.security.emails.main.href,
+              )}{' '}
             </TextLink>{' '}
             or meet our team at upcoming Foundation-hosted and community events.
           </>,
