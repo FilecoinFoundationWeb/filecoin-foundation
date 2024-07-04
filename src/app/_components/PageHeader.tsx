@@ -99,7 +99,7 @@ export function PageHeader({
 
           {description && <DescriptionText>{description}</DescriptionText>}
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:gap-6 lg:flex-col lg:gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row sm:gap-3 lg:flex-col lg:gap-4">
             {mainCTA && (
               <Button href={mainCTA.href} variant="primary" className="flex-1">
                 {mainCTA.text}
