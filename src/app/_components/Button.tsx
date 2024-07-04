@@ -47,7 +47,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   className = clsx(
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-2 py-3 font-semibold transition focus:brand-outline hover:no-underline sm:whitespace-nowrap sm:px-3',
+    'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition focus:brand-outline hover:no-underline sm:whitespace-nowrap sm:px-3',
     variantStyles[variant],
     className,
   )
