@@ -44,7 +44,7 @@ export default function Orbit() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback}
+        image={graphicsData.orbit}
         cta={[
           {
             href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm,
