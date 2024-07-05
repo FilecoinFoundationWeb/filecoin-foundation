@@ -1,9 +1,13 @@
 import { Button } from '@/components/Button'
+import {
+  DescriptionText,
+  DescriptionTextType,
+} from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 
 type CTASectionProps = {
   title: string
-  description: string | React.ReactNode
+  description: DescriptionTextType
   cta?: {
     href: string
     text: string
@@ -19,7 +23,7 @@ export function CTASection({ title, description, cta }: CTASectionProps) {
           <Heading tag="h2" variant="3xl">
             {title}
           </Heading>
-          <p>{description}</p>
+          <DescriptionText>{description}</DescriptionText>
         </div>
         {cta && <Button href={cta.href}>{cta.text}</Button>}
       </div>

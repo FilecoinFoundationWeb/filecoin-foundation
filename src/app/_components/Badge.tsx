@@ -1,30 +1,19 @@
-import clsx from 'clsx'
+import { type IconProps, Icon } from '@/components/Icon'
 
-import { Icon, IconProps } from './Icon'
-
-type BadgeProps = {
-  borderColor?: 'brand-100' | 'brand-500'
+export type BadgeProps = {
   icon?: IconProps['component']
-  children: string
+  number?: number
 }
 
-const borderStyles = {
-  'brand-100': 'border-brand-100',
-  'brand-500': 'border-brand-500',
-}
-
-export function Badge({
-  borderColor = 'brand-500',
-  icon,
-  children,
-}: BadgeProps) {
-  const baseStyles =
-    'inline-flex max-w-fit gap-1 rounded-lg border bg-brand-800 px-2 py-1 text-xs font-semibold capitalize text-brand-100'
+export function Badge({ icon, number }: BadgeProps) {
+  if (!icon && !number) {
+    throw new Error('Badge component requires either an icon or a number')
+  }
 
   return (
-    <span className={clsx(baseStyles, borderStyles[borderColor])}>
-      {icon && <Icon component={icon} size={16} />}
-      {children}
-    </span>
+    <div className="grid size-11 place-items-center rounded-full bg-blue-500">
+      {icon && <Icon component={icon} />}
+      {number && <span className="text-2xl font-bold">{number}</span>}
+    </div>
   )
 }

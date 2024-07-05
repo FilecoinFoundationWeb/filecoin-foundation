@@ -1,8 +1,10 @@
+import { Badge } from '@/components/Badge'
+import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
+import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
-import { GrantsApplicationProcessCard } from '@/components/GrantsApplicationProcessCard'
-import { GrantsSectionCard } from '@/components/GrantsSectionCard'
+import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -10,6 +12,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { attributes } from '@/content/pages/grants.md'
@@ -63,7 +66,7 @@ export default function Grants() {
             const { title, description, icon, cta } = card
 
             return (
-              <GrantsSectionCard
+              <HomeExploreSectionCard
                 key={title}
                 cta={cta}
                 heading={{
@@ -76,7 +79,7 @@ export default function Grants() {
                 }}
               >
                 {description}
-              </GrantsSectionCard>
+              </HomeExploreSectionCard>
             )
           })}
         </CardGrid>
@@ -90,20 +93,21 @@ export default function Grants() {
         kicker="Application Process"
         title="The Filecoin Grants Process"
       >
-        <CardGrid cols="smThree">
+        <BadgeCardGrid cols="smThree">
           {applicationProcessData.map((card) => {
             const { step, title, description } = card
 
             return (
-              <GrantsApplicationProcessCard
-                key={card.title}
-                step={step}
+              <CardWithBadge
+                key={title}
                 title={title}
                 description={description}
-              />
+              >
+                <Badge number={step} />
+              </CardWithBadge>
             )
           })}
-        </CardGrid>
+        </BadgeCardGrid>
       </PageSection>
 
       <PageSection
@@ -116,7 +120,7 @@ export default function Grants() {
             const { title, description, icon } = data
 
             return (
-              <GrantsSectionCard
+              <HomeExploreSectionCard
                 key={title}
                 heading={{
                   tag: 'h3',
@@ -128,7 +132,7 @@ export default function Grants() {
                 }}
               >
                 {description}
-              </GrantsSectionCard>
+              </HomeExploreSectionCard>
             )
           })}
         </CardGrid>
@@ -145,10 +149,7 @@ export default function Grants() {
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
-              {FILECOIN_FOUNDATION_URLS.grants.email.href.replace(
-                'mailto:',
-                '',
-              )}
+              {extractEmailAddress(FILECOIN_FOUNDATION_URLS.grants.email.href)}
             </TextLink>{' '}
             or join our{' '}
             <TextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
