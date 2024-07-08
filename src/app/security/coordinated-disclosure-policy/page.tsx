@@ -17,7 +17,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function CoordinatedDisclosurePolicy() {

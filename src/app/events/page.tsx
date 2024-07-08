@@ -56,7 +56,7 @@ const featuredEvent = getEventData(featuredEventSlug || '')
 export const metadata = createMetadata({
   seo,
   path: PATHS.EVENTS.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Events({ searchParams }: Props) {

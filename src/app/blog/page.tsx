@@ -54,7 +54,7 @@ const featuredPost = getBlogPostData(featuredPostSlug || '')
 export const metadata = createMetadata({
   seo,
   path: PATHS.BLOG.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Blog({ searchParams }: Props) {
