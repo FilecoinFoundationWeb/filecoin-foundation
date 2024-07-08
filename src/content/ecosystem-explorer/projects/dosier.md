@@ -1,27 +1,27 @@
 ---
 title: Dosier
-slug: dosier
-created-on: 2024-04-05T23:07:24.299000Z
-updated-on: 2024-04-05T23:07:24.311000Z
-published-on: 2024-04-05T23:07:24.324000Z
-description: "Decentralized ZK Content Delivery Network"
-category: storage
-tags:
-  - governance-daos-public-goods
-tech:
-  - filecoin
+created-on: 2024-04-05T23:07:24.299Z
+updated-on: 2024-04-05T23:07:24.311Z
+published-on: 2024-04-05T23:07:24.324Z
 image:
-  url: /assets/images/dosier-logo.jpeg
+  url: /assets/images/dosier.png
   alt: Dosier Logo
-featured-content:
-website: https://dosier.ai/
-repo:
-twitter: https://twitter.com/dosier_ai
-video-url:
-year-joined: 2024-04-05T23:07:24.336000Z
-news-update:
+category: storage
 subcategories:
   - data-storage-management
+tags:
+  - governance-daos-public-goods
+description: Decentralized ZK Content Delivery Network
+website: https://dosier.ai/
+tech:
+  - filecoin
+repo: null
+news-update: null
+slug: dosier
+featured-content: null
+twitter: https://twitter.com/dosier_ai
+video-url: null
+year-joined: 2024-04-05T23:07:24.336Z
 seo:
   title: Dosier
   description: Dosier offers decentralized storage solutions for digital documents.
