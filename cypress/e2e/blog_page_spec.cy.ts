@@ -1,10 +1,13 @@
 import { PATHS } from '../../src/app/_constants/paths'
 import { testPageMetadata } from '../support/test-utils'
+import { verifyLinks } from '../support/verifyLinksUtil'
 
 describe('Blog Page', function () {
-  testPageMetadata({
-    path: PATHS.BLOG,
-    includesFeaturedEntry: true,
-    overrideDefaultTitle: true,
+  it('should check metadata and links of blog page', function () {
+    testPageMetadata({
+      path: PATHS.BLOG,
+      hasPageHeaderDescription: true,
+    })
+    verifyLinks(PATHS.BLOG.path)
   })
 })
