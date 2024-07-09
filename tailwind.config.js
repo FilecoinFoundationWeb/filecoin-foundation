@@ -86,6 +86,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@headlessui/tailwindcss'),
+    require('@tailwindcss/forms'),
     plugin(function addBrandOutline({ addComponents, theme }) {
       addComponents({
         '.brand-outline': {
