@@ -5,18 +5,12 @@ created-on: 2024-07-08T10:11:00.000Z
 updated-on: 2024-07-08T10:11:00.000Z
 published-on: 2024-07-08T10:11:00.000Z
 image:
-  url: /assets/images/nuklai-full-color-dark-text-3-.webp
+  url: /assets/images/nuklai.jpeg
 category: artificial-intelligence
 subcategories:
   - artificial-productivity-utilities
   - data-storage-management
-description: ‍Nuklai is a collaborative data ecosystem and infrastructure
-  provider for private data networks.  We envision a world where data is
-  universally accessible, empowering every individual with limitless data and
-  information to innovate, make informed decisions, and unlock their full
-  potential in a transparent and equitable world.  To build this world, we use
-  the latest Web3 and AI technologies to open up new ways for businesses and
-  individuals to collaborate on, enhance, and monetize data.
+description: ‍‍Nuklai is a collaborative data ecosystem and infrastructure provider for private data networks.
 website: https://www.nukl.ai/
 tech:
   - ipfs
