@@ -52,7 +52,7 @@ export default function Security() {
       />
 
       <PageSection kicker="Audits" title="Security Audits">
-        <CardGrid cols="smTwo">
+        <CardGrid cols="smTwo" hasGridAutoRows={false}>
           <StaticImage
             {...graphicsData.security3}
             className="h-full w-full rounded-lg"
@@ -122,7 +122,9 @@ export default function Security() {
           <>
             Don’t hesitate to{' '}
             <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.main.href}>
-              {FILECOIN_FOUNDATION_URLS.security.emails.main.label.toLowerCase()}{' '}
+              {extractEmailAddress(
+                FILECOIN_FOUNDATION_URLS.security.emails.main.href,
+              )}{' '}
             </TextLink>{' '}
             or meet our team at upcoming Foundation-hosted and community events.
           </>,

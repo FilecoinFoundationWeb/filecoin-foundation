@@ -1,0 +1,37 @@
+name: Cypress and Percy Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.11.1"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Start Server
+        run: |
+          npm start &
+          echo "Waiting for server to start..."
+          npx wait-on http://localhost:3000
+
+      - name: Run Cypress Tests with Percy
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: npm run test

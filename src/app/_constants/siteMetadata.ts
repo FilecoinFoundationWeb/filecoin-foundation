@@ -72,8 +72,9 @@ const FILECOIN_FOUNDATION_URLS = {
     },
   },
   orbit: {
-    ambassadorsApplicationForm: 'https://forms.gle/NsERP8jB2XJXbwj58',
-    ambassadorsPortal: 'https://hub.fil.org/orbit/ambassadors',
+    ambassadorsApplicationForm:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',
+    ambassadorsPortal: 'https://hub.fil.org/orbit-ambassadors',
     email: {
       href: 'mailto:orbit@fil.org',
     },
