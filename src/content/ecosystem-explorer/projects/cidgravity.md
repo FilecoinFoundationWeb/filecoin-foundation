@@ -1,27 +1,27 @@
 ---
 title: CIDgravity
-slug: cidgravity
-created-on: 2024-04-03T17:39:33.777000Z
-updated-on: 2024-04-03T17:39:33.788000Z
-published-on: 2024-04-03T17:39:33.799000Z
-description: "Enable storage deals on Filecoin storage providers with tailored pricing."
-category: storage
-tags:
-  - storage-software
-tech:
-  - filecoin
+created-on: 2024-04-03T17:39:33.777Z
+updated-on: 2024-04-03T17:39:33.788Z
+published-on: 2024-04-03T17:39:33.799Z
 image:
-  url: /assets/images/cid-gravity.jpeg
+  url: /assets/images/cidgravity.png
   alt: CIDgravity Logo
-website: https://www.cidgravity.com/
-featured-content:
-repo: https://github.com/CIDgravity/CIDgravity-X
-twitter: https://twitter.com/CiDgravity
-video-url:
-year-joined: 2024-04-03T17:39:33.807000Z
-news-update:
+category: storage
 subcategories:
   - data-storage-management
+tags:
+  - storage-software
+description: Enable storage deals on Filecoin storage providers with tailored pricing.
+website: https://www.cidgravity.com/
+tech:
+  - filecoin
+repo: https://github.com/CIDgravity/CIDgravity-X
+news-update: null
+slug: cidgravity
+featured-content: null
+twitter: https://twitter.com/CiDgravity
+video-url: null
+year-joined: 2024-04-03T17:39:33.807Z
 seo:
   title: CIDGravity
   description: CIDGravity offers decentralized solutions for content addressable storage.
