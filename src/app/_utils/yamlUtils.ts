@@ -25,6 +25,6 @@ export function readAndValidateYamlFiles<T extends BaseYAMLData>(
       )
     }
 
-    return data
+    return { ...data, slug }
   })
 }
