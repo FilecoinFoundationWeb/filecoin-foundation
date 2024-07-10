@@ -4,6 +4,7 @@ import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
+import { NoBreadCrumbsLayout } from '@/components/NoBreadCrumbsLayout'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -40,87 +41,92 @@ export const metadata = createMetadata({
 
 export default function Home() {
   return (
-    <PageLayout>
-      <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
+    <NoBreadCrumbsLayout>
+      <PageLayout>
+        <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
 
-      <PageHeader
-        title={header.title}
-        description={header.description}
-        image={graphicsData.home}
-        cta={[
-          { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
-          { href: FILECOIN_URLS.site, text: 'Dive Into the Filecoin Protocol' },
-        ]}
-      />
-
-      <PageSection kicker="Explore" title="The Filecoin Ecosystem">
-        <CardGrid cols="smTwo">
-          {filecoinEcosystemData.map((card) => {
-            const {
-              heading: { title, icon },
-              description,
-              cta,
-            } = card
-
-            return (
-              <HomeExploreSectionCard
-                key={title}
-                cta={cta}
-                heading={{
-                  tag: 'h3',
-                  variant: 'lg',
-                  children: title,
-                  iconProps: {
-                    component: icon,
-                  },
-                }}
-              >
-                {description}
-              </HomeExploreSectionCard>
-            )
-          })}
-        </CardGrid>
-      </PageSection>
-
-      <PageSection
-        kicker="Learn"
-        title="Filecoin Use Cases"
-        description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
-      >
-        <FeaturedEcosystemProjects
-          ecosystemProjects={featuredEcosystemProjects}
+        <PageHeader
+          title={header.title}
+          description={header.description}
+          image={graphicsData.home}
+          cta={[
+            { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
+            {
+              href: FILECOIN_URLS.site,
+              text: 'Dive Into the Filecoin Protocol',
+            },
+          ]}
         />
-        <Button
-          className="sm:self-center"
-          variant="primary"
-          href={PATHS.ECOSYSTEM_EXPLORER.path}
-        >
-          View All
-        </Button>
-      </PageSection>
 
-      <PageSection
-        kicker="Stay Updated"
-        title="News & Blog"
-        description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
-      >
-        <FeaturedBlogPosts />
-        <Button
-          className="sm:self-center"
-          variant="primary"
-          href={PATHS.BLOG.path}
+        <PageSection kicker="Explore" title="The Filecoin Ecosystem">
+          <CardGrid cols="smTwo">
+            {filecoinEcosystemData.map((card) => {
+              const {
+                heading: { title, icon },
+                description,
+                cta,
+              } = card
+
+              return (
+                <HomeExploreSectionCard
+                  key={title}
+                  cta={cta}
+                  heading={{
+                    tag: 'h3',
+                    variant: 'lg',
+                    children: title,
+                    iconProps: {
+                      component: icon,
+                    },
+                  }}
+                >
+                  {description}
+                </HomeExploreSectionCard>
+              )
+            })}
+          </CardGrid>
+        </PageSection>
+
+        <PageSection
+          kicker="Learn"
+          title="Filecoin Use Cases"
+          description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
         >
-          View All
-        </Button>
-      </PageSection>
-      <CTASection
-        title="Become Part of Our Vibrant Community"
-        description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."
-        cta={{
-          href: FILECOIN_URLS.social.slack.href,
-          text: 'Join Filecoin Slack',
-        }}
-      />
-    </PageLayout>
+          <FeaturedEcosystemProjects
+            ecosystemProjects={featuredEcosystemProjects}
+          />
+          <Button
+            className="sm:self-center"
+            variant="primary"
+            href={PATHS.ECOSYSTEM_EXPLORER.path}
+          >
+            View All
+          </Button>
+        </PageSection>
+
+        <PageSection
+          kicker="Stay Updated"
+          title="News & Blog"
+          description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
+        >
+          <FeaturedBlogPosts />
+          <Button
+            className="sm:self-center"
+            variant="primary"
+            href={PATHS.BLOG.path}
+          >
+            View All
+          </Button>
+        </PageSection>
+        <CTASection
+          title="Become Part of Our Vibrant Community"
+          description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."
+          cta={{
+            href: FILECOIN_URLS.social.slack.href,
+            text: 'Join Filecoin Slack',
+          }}
+        />
+      </PageLayout>
+    </NoBreadCrumbsLayout>
   )
 }

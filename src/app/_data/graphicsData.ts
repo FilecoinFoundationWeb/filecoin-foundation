@@ -12,7 +12,12 @@ import grants from '@/assets/graphics/Filorg_Grants.png'
 import home from '@/assets/graphics/Filorg_Home.png'
 import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
 import logoFallback from '@/assets/graphics/Filorg_LogoFallback.png'
+import orbit from '@/assets/graphics/Filorg_Orbit.webp'
 import rAndD from '@/assets/graphics/Filorg_RandD.png'
+import security from '@/assets/graphics/Filorg_Security.webp'
+import security2 from '@/assets/graphics/Filorg_Security2.webp'
+import security3 from '@/assets/graphics/Filorg_Security3.webp'
+import security4 from '@/assets/graphics/Filorg_Security4.webp'
 
 export const graphicsData: Record<string, StaticImageProps> = {
   home: {
@@ -54,6 +59,26 @@ export const graphicsData: Record<string, StaticImageProps> = {
   grants: {
     data: grants,
     alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
+  },
+  security: {
+    data: security,
+    alt: 'An illustration depicting a large, old-fashioned key unlocking a futuristic padlock. The scene is set against a light background, with various abstract geometric shapes and elements around the key and lock, suggesting a theme of digital security or unlocking digital information.',
+  },
+  security2: {
+    data: security2,
+    alt: 'A futuristic control room with a large central column displaying various data on high-tech screens. The room is filled with multiple workstations, each equipped with dual monitors showing complex graphs, charts, and data readouts. The walls and floor also feature integrated digital displays, creating an immersive environment of advanced technology and data analysis.',
+  },
+  security3: {
+    data: security3,
+    alt: 'An illustration depicting a network of interconnected shields, each representing a node in a secure system. The shields are placed on circular platforms linked by glowing blue lines, symbolizing a robust and interconnected cybersecurity network.',
+  },
+  security4: {
+    data: security4,
+    alt: 'An illustration showing a magnifying glass focusing on a screen displaying lines of code. The scene is filled with abstract spherical elements connected by thin lines, and a small, stylized bug is visible near the bottom, symbolizing the concept of debugging or analyzing code.',
+  },
+  orbit: {
+    data: orbit,
+    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
   },
   rAndD: {
     data: rAndD,

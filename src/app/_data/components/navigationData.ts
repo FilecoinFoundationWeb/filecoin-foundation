@@ -39,6 +39,18 @@ export const desktopNavigationItems = {
       description:
         'Learn about Filecoin Improvement Proposals and other governance mechanisms',
     },
+    {
+      label: PATHS.ORBIT.label,
+      href: PATHS.ORBIT.path,
+      description:
+        'Learn about the Orbit program, a community-driven initiative to promote Filecoin and IPFS',
+    },
+    {
+      label: PATHS.SECURITY.label,
+      href: PATHS.SECURITY.path,
+      description:
+        "Learn about Filecoin's robust security practices, ensuring the integrity and resilience of the protocol",
+    },
   ],
   learnMoreItem: {
     label: 'Learn more about Filecoin',

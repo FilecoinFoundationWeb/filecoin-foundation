@@ -1,27 +1,27 @@
 ---
 title: Filenova
-slug: filenova
-created-on: 2024-04-24T19:39:19.905000Z
-updated-on: 2024-04-24T19:39:19.923000Z
-published-on: 2024-04-24T19:39:19.935000Z
-description: "EVM-compatible L2 network based on Filecoin."
-category: storage
-tags:
-  - infrastructure
-tech:
-  - filecoin
+created-on: 2024-04-24T19:39:19.905Z
+updated-on: 2024-04-24T19:39:19.923Z
+published-on: 2024-04-24T19:39:19.935Z
 image:
-  url: /assets/images/filenova_500.png
+  url: /assets/images/filenova.png
   alt: Filenova Logo
-featured-content:
-website: https://filenova.org/
-repo: https://github.com/Filenova
-twitter:
-video-url:
-year-joined: 2024-04-24T19:39:19.948000Z
-news-update:
+category: storage
 subcategories:
   - data-storage-management
+tags:
+  - infrastructure
+description: EVM-compatible L2 network based on Filecoin.
+website: https://filenova.org/
+tech:
+  - filecoin
+repo: https://github.com/Filenova
+news-update: null
+slug: filenova
+featured-content: null
+twitter: null
+video-url: null
+year-joined: 2024-04-24T19:39:19.948Z
 seo:
   title: FileNova
   description: FileNova provides decentralized storage and data management solutions.
