@@ -1,5 +1,5 @@
 export function verifyLinks(path: string) {
-  cy.visit(`http://localhost:3000/${path}`)
+  cy.visit(`http://localhost:3000${path}`)
 
   cy.get('a').each((link) => {
     const href = link.prop('href')
