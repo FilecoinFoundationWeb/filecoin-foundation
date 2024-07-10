@@ -1,6 +1,6 @@
-import { PATHS } from '../../../src/app/_constants/paths'
-import { testPageMetadata } from '../../support/test-utils'
-import { verifyLinks } from '../../support/verifyLinksUtil'
+import { PATHS } from '../../src/app/_constants/paths'
+import { testPageMetadata } from '../support/test-utils'
+import { verifyLinks } from '../support/verifyLinksUtil'
 
 describe('Terms of Use Page', function () {
   it('should check metadata and links of the terms of use page', function () {
