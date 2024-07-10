@@ -16,7 +16,7 @@ This project is developed for the Filecoin Foundation, aiming to provide compreh
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-repository/filecoin-foundation.git
+git clone https://github.com/FilecoinFoundationWeb/filecoin-foundation
 cd filecoin-foundation
 npm install
 ```
