@@ -4,8 +4,16 @@ export function validateFrontMatter(
   data: any,
   fields: CMSFieldConfig[],
 ): boolean {
-  const missingFieldsToSkipCheck: string[] = ['body', 'location']
   const extraFieldsToSkipCheck: string[] = []
+  const temporaryMissingFieldsToSkipCheck: string[] = ['location']
+  const dynamicMissingFieldsToSkipCheck: string[] = fields
+    .filter((field) => field.required === false)
+    .map((field) => field.name)
+
+  const missingFieldsToSkipCheck: string[] = [
+    ...temporaryMissingFieldsToSkipCheck,
+    ...dynamicMissingFieldsToSkipCheck,
+  ]
 
   const missingFields: string[] = fields
     .filter(

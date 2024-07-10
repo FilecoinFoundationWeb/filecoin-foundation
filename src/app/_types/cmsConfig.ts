@@ -7,6 +7,7 @@ export type CMSFieldConfig = {
   name: string
   label: string
   widget: string
+  required?: boolean
   options?: CMSFieldOption[]
 }
 
