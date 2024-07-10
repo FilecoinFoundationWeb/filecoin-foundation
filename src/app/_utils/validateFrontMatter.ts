@@ -7,7 +7,6 @@ function validateField(
   missingFields: string[],
 ) {
   if (field.widget === 'object' && field.fields) {
-    console.log('field.widget', field)
     field.fields.forEach((nestedField) =>
       validateField(
         data[field.name] || {},
