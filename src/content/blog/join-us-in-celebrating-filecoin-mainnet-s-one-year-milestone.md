@@ -7,7 +7,6 @@ image:
   url: >-
     /assets/images/64423b04fa70d18281705693_0-0y1ex6vkr4htxclc.png
   alt:
-slug: join-us-in-celebrating-filecoin-mainnet-s-one-year-milestone
 updated-on: "2023-04-21T07:28:04.262Z"
 created-on: "2023-04-21T07:28:04.262Z"
 published-on: "2023-04-21T07:33:56.200Z"

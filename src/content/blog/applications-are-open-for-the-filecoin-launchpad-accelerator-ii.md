@@ -1,6 +1,5 @@
 ---
 title: Applications are open for the Filecoin Launchpad Accelerator II
-slug: applications-are-open-for-the-filecoin-launchpad-accelerator-ii
 created-on: 2023-04-21T07:26:12.273000Z
 updated-on: 2023-04-21T07:26:12.273000Z
 published-on: 2023-04-21T07:33:56.200000Z

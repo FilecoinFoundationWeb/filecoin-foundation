@@ -17,7 +17,6 @@ tech:
   - ipfs
 repo: null
 news-update: null
-slug: ken-labs
 featured-content: null
 twitter: null
 video-url: null

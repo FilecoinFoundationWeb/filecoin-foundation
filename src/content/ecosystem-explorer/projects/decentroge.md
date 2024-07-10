@@ -18,7 +18,6 @@ tech:
   - ipfs
 repo: null
 news-update: null
-slug: decentroge
 featured-content: null
 twitter: null
 video-url: null

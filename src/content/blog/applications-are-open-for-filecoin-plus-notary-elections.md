@@ -1,6 +1,5 @@
 ---
 title: Applications are Open for Filecoin Plus Notary Elections
-slug: applications-are-open-for-filecoin-plus-notary-elections
 created-on: 2023-04-21T07:26:10.744000Z
 updated-on: 2023-04-21T07:26:10.744000Z
 published-on: 2023-04-21T07:33:56.200000Z

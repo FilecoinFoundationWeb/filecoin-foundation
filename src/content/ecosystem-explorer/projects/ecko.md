@@ -18,7 +18,6 @@ tech:
   - filecoin
 repo: null
 news-update: null
-slug: ecko
 featured-content: null
 twitter: null
 video-url: null

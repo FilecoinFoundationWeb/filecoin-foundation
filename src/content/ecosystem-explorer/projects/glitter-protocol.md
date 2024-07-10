@@ -1,6 +1,5 @@
 ---
 title: Glitter Protocol
-slug: glitter-protocol
 created-on: 2024-03-29T21:28:51.837000Z
 updated-on: 2024-03-29T21:43:04.850000Z
 published-on: 2024-03-29T21:43:04.850000Z

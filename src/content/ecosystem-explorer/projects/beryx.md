@@ -1,6 +1,5 @@
 ---
 title: Beryx
-slug: beryx
 created-on: 2024-01-18T17:44:05.201000Z
 updated-on: 2024-01-18T17:44:05.243000Z
 published-on: 2024-01-18T17:44:05.279000Z

@@ -1,6 +1,5 @@
 ---
 title: "XBANKING"
-slug: "xbanking"
 created-on: 2024-01-12T20:27:39.331000Z
 updated-on: 2024-01-12T20:27:39.359000Z
 published-on: 2024-01-12T20:27:39.380000Z

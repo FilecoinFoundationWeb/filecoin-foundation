@@ -2,7 +2,6 @@
 title:
   "Driving Widespread Filecoin Adoption: Key Initiatives and Community Involvement
   in 2024"
-slug: driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024
 created-on: 2024-05-17T19:51:58.627000Z
 updated-on: 2024-05-17T19:51:58.641000Z
 published-on: 2024-05-17T19:51:58.651000Z

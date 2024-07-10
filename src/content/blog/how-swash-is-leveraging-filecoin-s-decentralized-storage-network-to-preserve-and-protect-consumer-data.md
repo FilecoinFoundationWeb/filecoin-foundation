@@ -12,7 +12,6 @@ description:
 image:
   url: /assets/images/64423af3e3c08f488e4f519c_1-pyb3swiscnbniykvqyrrdq.png
   alt:
-slug: how-swash-is-leveraging-filecoin-s-decentralized-storage-network-to-preserve-and-protect-consumer-data
 recommended-posts: []
 category: use-cases
 seo:

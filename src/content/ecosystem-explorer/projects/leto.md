@@ -1,6 +1,5 @@
 ---
 title: Leto
-slug: leto
 created-on: 2024-04-05T23:01:19.895000Z
 updated-on: 2024-04-05T23:01:19.919000Z
 published-on: 2024-04-05T23:01:19.933000Z

@@ -1,6 +1,5 @@
 ---
 title: "One Year of Programmability, Smart Contracts, and Dapp Growth on Filecoin"
-slug: one-year-of-programmability-smart-contracts-and-dapp-growth-on-filecoin
 created-on: 2024-03-14T13:04:08.972000Z
 updated-on: 2024-03-14T13:04:09.018000Z
 published-on: 2024-03-14T13:04:09.031000Z

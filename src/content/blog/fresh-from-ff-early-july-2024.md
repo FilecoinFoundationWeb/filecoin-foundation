@@ -1,6 +1,5 @@
 ---
 title: "Fresh From FF: Early July, 2024"
-slug: fresh-from-ff-early-july-2024
 created-on: 2024-07-01T13:00:00.000Z
 updated-on: 2024-07-01T13:00:00.000Z
 published-on: 2024-07-01T13:00:00.000Z

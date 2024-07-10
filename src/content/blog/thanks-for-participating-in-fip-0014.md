@@ -1,6 +1,5 @@
 ---
 title: Thanks for Participating in FIP-0014!
-slug: thanks-for-participating-in-fip-0014
 created-on: "2023-04-21T07:32:06.493Z"
 updated-on: "2023-04-21T07:32:06.493Z"
 published-on: "2023-04-21T07:33:56.200Z"

@@ -1,6 +1,5 @@
 ---
 title: Recapping Filecoin Foundation’s 2021 Governance Summit
-slug: recapping-filecoin-foundation-s-2021-governance-summit
 created-on: 2023-04-21T07:31:45.550000Z
 updated-on: 2023-04-21T07:31:45.550000Z
 published-on: 2023-04-21T07:33:56.200000Z

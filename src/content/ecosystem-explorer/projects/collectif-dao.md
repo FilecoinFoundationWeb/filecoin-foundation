@@ -1,6 +1,5 @@
 ---
 title: Collectif DAO
-slug: collectif-dao
 created-on: 2024-01-24T13:50:38.326000Z
 updated-on: 2024-01-24T13:50:38.340000Z
 published-on: 2024-01-24T13:50:38.349000Z

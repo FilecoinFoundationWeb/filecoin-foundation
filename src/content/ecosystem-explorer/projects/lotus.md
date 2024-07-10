@@ -1,6 +1,5 @@
 ---
 title: "Lotus"
-slug: "lotus"
 created-on: "2024-02-26T20:36:51.261Z"
 updated-on: "2024-02-26T20:36:51.280Z"
 published-on: "2024-02-26T20:36:51.289Z"

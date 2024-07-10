@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/image-c-29.png
   alt:
-slug: meet-the-newest-members-of-the-filecoin-foundation-team
 recommended-posts: []
 category: news
 seo:

@@ -1,6 +1,5 @@
 ---
 title: Elastic
-slug: elastic
 created-on: 2024-04-05T00:28:51.816000Z
 updated-on: 2024-04-05T00:28:51.827000Z
 published-on: 2024-04-05T00:28:51.836000Z

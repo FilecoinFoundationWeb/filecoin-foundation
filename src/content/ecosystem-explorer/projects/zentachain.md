@@ -1,6 +1,5 @@
 ---
 title: "Zentachain"
-slug: "zentachain"
 created-on: 2024-02-28T23:55:57.776000Z
 updated-on: 2024-02-28T23:55:57.787000Z
 published-on: 2024-02-28T23:55:57.795000Z

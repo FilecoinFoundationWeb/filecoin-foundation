@@ -1,6 +1,5 @@
 ---
 title: "Dev Grant Spotlight: 4EVERLAND"
-slug: dev-grant-spotlight-4everland
 created-on: "2023-04-21T07:26:29.881Z"
 updated-on: "2023-04-21T07:26:29.881Z"
 published-on: "2023-04-21T07:33:56.200Z"

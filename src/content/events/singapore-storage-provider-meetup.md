@@ -1,6 +1,5 @@
 ---
 title: Singapore Storage Provider Meetup
-slug: singapore-storage-provider-meetup
 created-on: "2023-05-03T08:06:00.761Z"
 updated-on: "2023-05-03T08:20:28.687Z"
 published-on: "2023-05-03T08:22:38.798Z"

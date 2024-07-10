@@ -1,6 +1,5 @@
 ---
 title: STFIL
-slug: stfil
 created-on: "2024-01-17T14:55:43.649Z"
 updated-on: "2024-01-17T14:55:43.701Z"
 published-on: "2024-01-17T14:55:43.725Z"

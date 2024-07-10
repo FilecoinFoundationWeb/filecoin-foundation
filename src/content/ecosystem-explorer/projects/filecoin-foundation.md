@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Foundation"
-slug: "filecoin-foundation"
 created-on: 2024-01-04T22:40:24.825000Z
 updated-on: 2024-01-05T21:43:31.817000Z
 published-on: 2024-01-11T13:26:59.787000Z

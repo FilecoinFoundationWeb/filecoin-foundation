@@ -10,8 +10,6 @@ image:
   url: >-
     /assets/images/64423abda6ec4131c52a3df0_1-et2gg4agkn7chfbur-8a6g.webp
   alt:
-slug: >-
-  everything-you-need-to-know-about-fip0036-deliberation-discussion-and-next-steps
 updated-on: "2023-04-21T07:26:54.116Z"
 created-on: "2023-04-21T07:26:54.116Z"
 published-on: "2023-04-21T07:33:56.200Z"

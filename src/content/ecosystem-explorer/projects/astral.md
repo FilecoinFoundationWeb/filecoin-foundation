@@ -1,6 +1,5 @@
 ---
 title: Astral
-slug: astral
 created-on: 2024-03-29T21:28:48.588000Z
 updated-on: 2024-03-29T21:36:46.746000Z
 published-on: 2024-03-29T21:36:46.746000Z

@@ -1197,7 +1197,6 @@
       "label_singular": "Blog Post",
       "folder": "src/content/blog/",
       "create": true,
-      "identifier_field": "name",
       "extension": "md",
       "slug": "{{slug}}",
       "fields": [
@@ -1454,7 +1453,6 @@
       "label_singular": "Ecosystem Project",
       "folder": "src/content/ecosystem-explorer/projects/",
       "create": true,
-      "identifier_field": "name",
       "extension": "md",
       "slug": "{{slug}}",
       "fields": [
@@ -1704,8 +1702,7 @@
         {
           "name": "description",
           "label": "Short Description",
-          "widget": "string",
-          "required": true
+          "widget": "string"
         },
         {
           "name": "website",
@@ -1850,7 +1847,6 @@
       "folder": "src/content/events/",
       "label_singular": "Event",
       "create": true,
-      "identifier_field": "name",
       "extension": "md",
       "slug": "{{slug}}",
       "fields": [

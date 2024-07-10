@@ -1,6 +1,5 @@
 ---
 title: "FoxWallet"
-slug: "foxwallet"
 created-on: 2024-02-27T20:36:33.516000Z
 updated-on: 2024-02-27T20:36:33.529000Z
 published-on: 2024-02-27T20:36:33.539000Z

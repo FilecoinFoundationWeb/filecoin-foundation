@@ -1,6 +1,5 @@
 ---
 title: Announcing the VenusHub Platform
-slug: announcing-the-venushub-platform
 created-on: "2023-04-21T07:26:09.179Z"
 updated-on: "2023-04-21T07:26:09.179Z"
 published-on: "2023-04-21T07:33:56.200Z"

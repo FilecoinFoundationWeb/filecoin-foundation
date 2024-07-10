@@ -3,7 +3,6 @@ title: "Ecosystem Spotlight: GhostDrive’s Secure, Decentralized Storage Now on
 created-on: 2024-05-31T17:08:54.166Z
 updated-on: 2024-05-31T17:08:54.178Z
 published-on: 2024-05-31T17:08:54.189Z
-slug: ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile
 description: "As part of Filecoin Foundation’s work to showcase innovative
   teams building on Filecoin, today we’re shining the spotlight on GhostDrive, a
   platform that leverages Filecoin's decentralized storage to improve redundancy

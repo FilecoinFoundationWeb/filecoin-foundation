@@ -7,8 +7,6 @@ description: >-
   accelerate the development of hybrid smart contracts that combine Chainlink
   decentralized oracles and Filecoin decentralized storage within a single
   application.
-slug: >-
-  filswan-awarded-chainlink-filecoin-joint-grant-to-create-multi-chain-decentralized-data-storage-payment-solution
 image:
   url: >-
     /assets/images/64423ae9ef619d8d6eb60ed0_1-pvi22ssfyyn-thpuj3ltgg.png

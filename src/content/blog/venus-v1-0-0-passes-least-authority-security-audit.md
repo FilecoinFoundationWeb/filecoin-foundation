@@ -1,6 +1,5 @@
 ---
 title: Venus v1.0.0 Passes Least Authority Security Audit
-slug: venus-v1-0-0-passes-least-authority-security-audit
 created-on: 2023-04-21T07:32:15.053000Z
 updated-on: 2023-04-21T07:32:15.053000Z
 published-on: 2023-04-21T07:33:56.200000Z

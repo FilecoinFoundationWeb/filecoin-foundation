@@ -1,6 +1,5 @@
 ---
 title: Congratulations to the Hedera x Filecoin Grant Program Winners
-slug: congratulations-to-the-hedera-x-filecoin-grant-program-winners
 created-on: 2023-04-21T07:26:28.269000Z
 updated-on: 2023-04-21T07:26:28.269000Z
 published-on: 2023-04-21T07:33:56.200000Z

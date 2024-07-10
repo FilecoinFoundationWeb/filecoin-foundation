@@ -2,8 +2,6 @@
 title: >-
   Participate in the Filecoin Network’s Poll on Extending the Maximum Lifetime
   of v1 Sectors
-slug: >-
-  participate-in-the-filecoin-network-s-poll-on-extending-the-maximum-lifetime-of-v1-sectors
 updated-on: "2023-04-21T07:31:42.463Z"
 created-on: "2023-04-21T07:31:42.463Z"
 published-on: "2023-04-21T07:33:56.200Z"

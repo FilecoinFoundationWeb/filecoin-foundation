@@ -1,6 +1,5 @@
 ---
 title: "Web3.Storage"
-slug: "web3-storage"
 created-on: 2024-01-04T22:40:29.248000Z
 updated-on: 2024-01-05T21:40:15.647000Z
 published-on: 2024-01-11T13:26:59.787000Z

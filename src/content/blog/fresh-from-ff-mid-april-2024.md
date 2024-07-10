@@ -1,6 +1,5 @@
 ---
 title: "Fresh From FF: Mid-April, 2024"
-slug: fresh-from-ff-mid-april-2024
 created-on: 2024-04-15T19:44:56.431000Z
 updated-on: 2024-04-15T19:44:56.446000Z
 published-on: 2024-04-15T19:44:56.460000Z

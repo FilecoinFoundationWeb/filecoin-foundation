@@ -1,6 +1,5 @@
 ---
 title: Encryption Pinner
-slug: encryption-pinner
 created-on: 2024-04-05T01:09:47.866000Z
 updated-on: 2024-04-05T01:09:47.898000Z
 published-on: 2024-04-05T01:09:47.907000Z

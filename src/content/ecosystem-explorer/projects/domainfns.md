@@ -1,29 +1,28 @@
 ---
 title: DomainFNS
-slug: domainfns
-created-on: 2024-05-16T14:33:32.585000Z
-updated-on: 2024-05-16T14:33:32.598000Z
-published-on: 2024-05-16T14:33:32.612000Z
-description: "Decentralized name service based on FVM."
+created-on: 2024-05-16T14:33:32.585Z
+updated-on: 2024-05-16T14:33:32.598Z
+published-on: 2024-05-16T14:33:32.612Z
+image:
+  url: /assets/images/domainfns.png
+  alt: DomainFNS Logo
 category: tooling-productivity
+subcategories:
+  - infrastructure
 tags:
   - wallets-identity-authentication
   - infrastructure
+description: Decentralized name service based on FVM.
+website: https://opengatefns.com/
 tech:
   - ipfs
   - filecoin
-image:
-  url: /assets/images/234.jpg
-  alt: DomainFNS Logo
-featured-content:
-website: https://opengatefns.com/
 repo: https://github.com/OpenGateLab/FNS
+news-update: null
+featured-content: null
 twitter: https://twitter.com/DomainFNS
-video-url:
-year-joined: 2024-05-16T14:33:32.622000Z
-news-update:
-subcategories:
-  - infrastructure
+video-url: null
+year-joined: 2024-05-16T14:33:32.622Z
 seo:
   title: DomainFNS
   description:

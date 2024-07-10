@@ -1,6 +1,5 @@
 ---
 title: Expanso
-slug: expanso
 created-on: 2024-03-29T21:28:52.162000Z
 updated-on: 2024-03-29T21:41:50.805000Z
 published-on: 2024-03-29T21:41:50.805000Z

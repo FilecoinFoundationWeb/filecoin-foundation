@@ -1,6 +1,5 @@
 ---
 title: "Filecoin as a DePIN Prototype"
-slug: filecoin-as-a-depin-prototype
 created-on: 2024-03-04T15:11:05.167000Z
 updated-on: 2024-03-04T15:11:05.193000Z
 published-on: 2024-03-04T15:11:05.224000Z

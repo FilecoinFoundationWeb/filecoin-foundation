@@ -1,6 +1,5 @@
 ---
 title: Dev Grant Spotlight - Fileverse
-slug: dev-grant-spotlight-fileverse
 created-on: 2023-04-21T07:26:37.139000Z
 updated-on: 2023-04-21T07:26:37.139000Z
 published-on: 2023-04-21T07:33:56.200000Z

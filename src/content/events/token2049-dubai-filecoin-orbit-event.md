@@ -1,6 +1,5 @@
 ---
 title: Token2049 Dubai Filecoin Orbit Meetup Event
-slug: token2049-dubai-filecoin-orbit-event
 created-on: "2024-01-29T15:45:39.297Z"
 updated-on: "2024-01-29T15:45:39.305Z"
 published-on: "2024-01-29T15:45:39.312Z"

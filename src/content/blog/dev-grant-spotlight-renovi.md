@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/image-c-11.png
   alt:
-slug: dev-grant-spotlight-renovi
 recommended-posts: []
 category: reports
 seo:

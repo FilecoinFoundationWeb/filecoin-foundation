@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
-slug: filecoin-ecosystem-shines-at-fil-hong-kong-ai-depin-fvm-and-more
 created-on: 2024-04-22T15:09:42.759000Z
 updated-on: 2024-04-22T15:09:42.769000Z
 published-on: 2024-04-22T15:09:42.779000Z

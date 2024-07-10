@@ -25,7 +25,6 @@ tech:
   - filecoin
 repo: https://github.com/vshareCloud-Project/
 news-update: null
-slug: vsharecloud
 featured-content: null
 twitter: null
 video-url: null

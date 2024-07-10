@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Foundation 2023 Annual Report"
-slug: filecoin-foundation-2023-annual-report
 created-on: 2024-02-27T14:17:57.166000Z
 updated-on: 2024-02-27T14:17:57.179000Z
 published-on: 2024-02-27T14:17:57.188000Z

@@ -1,6 +1,5 @@
 ---
 title: FileZilla
-slug: filezilla
 created-on: 2024-02-21T15:20:11.125000Z
 updated-on: 2024-03-20T14:20:11.136000Z
 published-on: 2024-03-20T14:20:11.149000Z

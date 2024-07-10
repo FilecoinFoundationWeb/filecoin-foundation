@@ -1,6 +1,5 @@
 ---
 title: SynBioBeta
-slug: synbiobeta
 created-on: "2023-06-27T15:30:55.013Z"
 updated-on: "2023-06-27T15:30:55.027Z"
 published-on: "2023-06-27T15:30:55.037Z"

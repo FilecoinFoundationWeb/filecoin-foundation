@@ -1,6 +1,5 @@
 ---
 title: FIL Austin
-slug: fil-austin
 created-on: "2023-05-03T08:06:07.140Z"
 updated-on: "2023-05-03T08:18:13.718Z"
 published-on: "2023-05-03T08:22:38.798Z"

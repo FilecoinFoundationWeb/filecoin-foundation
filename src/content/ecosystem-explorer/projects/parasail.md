@@ -1,6 +1,5 @@
 ---
 title: Parasail
-slug: parasail
 created-on: 2024-05-15T13:46:37.124000Z
 updated-on: 2024-05-15T13:46:37.134000Z
 published-on: 2024-05-15T13:46:37.146000Z

@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/12202022-saturnandstation.png
   alt:
-slug: meet-the-new-programs-making-it-easier-to-contribute-to-the-filecoin-network
 recommended-posts: []
 category: ecosystem
 seo:

@@ -1,6 +1,5 @@
 ---
 title: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
-slug: orbiting-ethdenver-perspectives-from-a-filecoin-orbit-ambassador
 created-on: 2024-03-25T15:21:33.080000Z
 updated-on: 2024-03-25T15:21:33.092000Z
 published-on: 2024-03-25T15:21:33.100000Z

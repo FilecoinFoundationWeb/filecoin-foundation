@@ -2,8 +2,6 @@
 title: >-
   Bela Supernova Awarded Chainlink-Filecoin Joint Grant To Support Public Health
   Data Oracle
-slug: >-
-  bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle
 created-on: "2023-04-21T07:26:16.008Z"
 updated-on: "2023-04-21T07:26:16.008Z"
 published-on: "2023-04-21T07:33:56.200Z"

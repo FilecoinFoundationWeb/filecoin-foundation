@@ -1,6 +1,5 @@
 ---
 title: Metaverse Hackathon
-slug: metaverse-hackathon
 created-on: "2023-05-03T08:06:19.314Z"
 updated-on: "2023-05-03T08:06:19.314Z"
 published-on: "2023-05-03T08:22:38.798Z"

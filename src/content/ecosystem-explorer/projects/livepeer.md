@@ -1,6 +1,5 @@
 ---
 title: "Livepeer"
-slug: livepeer
 created-on: "2024-01-04T22:40:26.783Z"
 updated-on: "2024-01-05T21:37:41.454Z"
 published-on: "2024-01-11T13:26:59.787Z"

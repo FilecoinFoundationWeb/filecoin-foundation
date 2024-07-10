@@ -1,6 +1,5 @@
 ---
 title: AI, Data Verifiability, and Decentralized Storage - A Recap from FIL Vegas
-slug: ai-data-verifiability-and-decentralized-storage-a-recap-from-fil-vegas
 created-on: 2023-10-23T22:05:52.307000Z
 updated-on: 2023-10-23T22:05:52.316000Z
 published-on: 2023-10-23T22:05:52.322000Z
@@ -24,7 +23,7 @@ This month, hundreds of Filecoin ecosystem participants from around the world ga
 
 This marquee event brought together Storage Providers with ecosystem enablers and AI leaders. The resulting collaborations seeded the ground for a new era in internet infrastructure.
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/kvPk8u--qxs?si=YrpUQ8TysikIc3Mh"
   title="FIL Vegas 2023"
   height="315"

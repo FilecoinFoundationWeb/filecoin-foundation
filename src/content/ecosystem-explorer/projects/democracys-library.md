@@ -1,6 +1,5 @@
 ---
 title: "Democracy's Library"
-slug: "democracys-library"
 created-on: 2024-01-10T14:53:07.920000Z
 updated-on: 2024-01-10T14:53:07.941000Z
 published-on: 2024-01-10T14:53:07.961000Z

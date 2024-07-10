@@ -19,7 +19,6 @@ tech:
   - filecoin
 repo: https://github.com/Ghost-Drive
 news-update: null
-slug: ghostdrive-global
 featured-content: null
 twitter: https://twitter.com/GhostDrive_Web3
 video-url: https://www.youtube.com/embed/D0Mh3ZDA-3Y

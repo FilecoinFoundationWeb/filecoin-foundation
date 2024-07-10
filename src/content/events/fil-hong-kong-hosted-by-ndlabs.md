@@ -1,6 +1,5 @@
 ---
 title: FIL Hong Kong hosted by NDLabs alongside Hong Kong Web3 Festival
-slug: fil-hong-kong-hosted-by-ndlabs
 created-on: "2024-01-29T15:42:24.903Z"
 updated-on: "2024-01-29T15:42:24.911Z"
 published-on: "2024-01-29T15:42:24.918Z"

@@ -1,6 +1,5 @@
 ---
 title: 3Pad
-slug: 3pad
 created-on: 2024-04-05T17:29:47.705000Z
 updated-on: 2024-04-05T17:29:47.714000Z
 published-on: 2024-04-05T17:29:47.725000Z

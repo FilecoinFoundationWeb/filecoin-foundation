@@ -22,7 +22,6 @@ featured-content:
 repo: "https://github.com/opscientia"
 twitter: "https://twitter.com/opscientia"
 video-url:
-slug: opsci
 year-joined:
 news-update:
 subcategories:

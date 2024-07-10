@@ -208,6 +208,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/security/bug-bounty',
+        destination: 'https://immunefi.com/bug-bounty/filecoin/',
+        permanent: false,
+      },
+      {
         source: '/terms',
         destination: '/terms-of-use',
         permanent: true,

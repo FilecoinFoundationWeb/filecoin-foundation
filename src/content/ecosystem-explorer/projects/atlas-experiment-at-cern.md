@@ -1,6 +1,5 @@
 ---
 title: Atlas Experiment at CERN
-slug: atlas-experiment-at-cern
 created-on: "2024-01-04T22:40:23.904Z"
 updated-on: "2024-01-05T21:34:20.817Z"
 published-on: "2024-01-11T13:26:59.787Z"

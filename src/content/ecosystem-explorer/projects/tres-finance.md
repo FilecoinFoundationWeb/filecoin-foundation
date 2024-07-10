@@ -1,6 +1,5 @@
 ---
 title: "TRES.Finance"
-slug: "tres-finance"
 created-on: "2024-01-12T20:09:29.892Z"
 updated-on: "2024-01-12T20:09:29.911Z"
 published-on: "2024-01-12T20:09:29.923Z"

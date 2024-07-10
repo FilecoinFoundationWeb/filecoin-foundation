@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/fip18.png
   alt:
-slug: filecoin-community-approves-change-to-storage-provider-terminology
 recommended-posts: []
 category: news
 seo:

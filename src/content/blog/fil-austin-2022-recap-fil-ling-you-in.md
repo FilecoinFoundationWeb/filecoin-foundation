@@ -1,6 +1,5 @@
 ---
 title: "FIL Austin 2022 Recap: FIL-ling You In"
-slug: fil-austin-2022-recap-fil-ling-you-in
 created-on: 2023-04-21T07:26:57.443000Z
 updated-on: 2023-04-21T07:26:57.443000Z
 published-on: 2023-04-21T07:33:56.200000Z

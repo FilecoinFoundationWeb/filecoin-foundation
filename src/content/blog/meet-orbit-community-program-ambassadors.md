@@ -11,7 +11,6 @@ description:
 image:
   url: /assets/images/0713-orbitcommunity.png
   alt:
-slug: meet-orbit-community-program-ambassadors
 recommended-posts: []
 category: ecosystem
 seo:

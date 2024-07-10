@@ -17,7 +17,6 @@ tech:
   - filecoin
 repo: null
 news-update: null
-slug: dvol
 featured-content: null
 twitter: https://twitter.com/dvolfinance
 video-url: null

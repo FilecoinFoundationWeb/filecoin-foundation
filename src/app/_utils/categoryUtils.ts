@@ -35,8 +35,8 @@ export function getCategoryDataFromDirectory(directoryPath: string) {
     readAndValidateYamlFiles<CategoryYAMLData>(directoryPath)
   const categoryMap: CategoryMap = {}
 
-  categoriesData.forEach((category) => {
-    categoryMap[category.slug] = category.name
+  categoriesData.forEach(({ slug, name }) => {
+    categoryMap[slug] = name
   })
 
   return categoryMap

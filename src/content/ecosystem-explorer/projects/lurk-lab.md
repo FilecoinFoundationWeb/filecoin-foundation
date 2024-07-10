@@ -21,7 +21,6 @@ tech:
   - filecoin
 repo: null
 news-update: null
-slug: lurk-lab
 featured-content: null
 twitter: https://twitter.com/LurkLab
 video-url: null

@@ -1,6 +1,5 @@
 ---
 title: Storing AI Datasets on the Decentralized Web
-slug: storing-ai-datasets-on-the-decentralized-web
 created-on: "2023-04-21T07:31:59.463Z"
 updated-on: "2023-04-21T07:31:59.463Z"
 published-on: "2023-04-21T07:33:56.200Z"

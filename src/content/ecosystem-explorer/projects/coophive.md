@@ -1,6 +1,5 @@
 ---
 title: CoopHive
-slug: coophive
 created-on: 2024-04-24T19:28:43.506000Z
 updated-on: 2024-04-24T19:28:43.535000Z
 published-on: 2024-04-24T19:28:43.548000Z

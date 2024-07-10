@@ -1,6 +1,5 @@
 ---
 title: "Human Rights Data Analysis Group (HRDAG)"
-slug: "human-rights-data-analysis-group-hrdag"
 created-on: 2024-01-10T16:19:46.234000Z
 updated-on: 2024-01-10T16:19:46.268000Z
 published-on: 2024-01-10T16:19:46.376000Z
