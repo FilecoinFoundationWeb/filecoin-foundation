@@ -17,4 +17,11 @@ jobs:
       - name: Run Link Checker
         uses: filiph/linkcheck@3.0.0
         with:
-          args: -v --external
+          args: https://www.fil.org --external --skip-file linkcheck-skip-file.txt > linkcheck-results.txt
+
+      - name: Upload linkcheck-results.txt as artifact
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: linkcheck-results
+          path: linkcheck-results.txt
