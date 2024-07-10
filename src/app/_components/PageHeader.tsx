@@ -81,8 +81,7 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  const mainCTA = Array.isArray(cta) ? cta[0] : cta
-  const secondaryCTA = Array.isArray(cta) ? cta[1] : undefined
+  const ctaArray = Array.isArray(cta) ? cta : [cta]
 
   return (
     <header className="grid gap-4">
@@ -99,23 +98,29 @@ export function PageHeader({
 
           {description && <DescriptionText>{description}</DescriptionText>}
 
-          <div className="flex flex-col gap-4 sm:flex-row sm:gap-3 lg:flex-col lg:gap-4">
-            {mainCTA && (
-              <Button href={mainCTA.href} variant="primary" className="flex-1">
-                {mainCTA.text}
-              </Button>
-            )}
-
-            {secondaryCTA && (
-              <Button
-                href={secondaryCTA.href}
-                variant="ghost"
-                className="flex-1"
-              >
-                {secondaryCTA.text}
-              </Button>
-            )}
-          </div>
+          {ctaArray && (
+            <div
+              className={clsx(
+                'grid gap-4',
+                ctaArray.length === 1
+                  ? 'lg:grid-cols-1'
+                  : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
+              )}
+            >
+              {ctaArray.map(
+                (button, index) =>
+                  button && (
+                    <Button
+                      key={index}
+                      href={button.href}
+                      variant={index === 0 ? 'primary' : 'ghost'}
+                    >
+                      {button.text}
+                    </Button>
+                  ),
+              )}
+            </div>
+          )}
         </div>
 
         <div className="lg:w-1/2">
