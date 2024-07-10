@@ -196,7 +196,6 @@ collections:
     label_singular: "Blog Post"
     folder: "src/content/blog/"
     create: true
-    identifier_field: "name"
     extension: "md"
     slug: "{{slug}}"
     fields:
@@ -317,7 +316,6 @@ collections:
     label_singular: Ecosystem Project
     folder: "src/content/ecosystem-explorer/projects/"
     create: true
-    identifier_field: name
     extension: md
     slug: "{{slug}}"
     fields:
@@ -506,7 +504,6 @@ collections:
     folder: "src/content/events/"
     label_singular: "Event"
     create: true
-    identifier_field: "name"
     extension: "md"
     slug: "{{slug}}"
     fields:
