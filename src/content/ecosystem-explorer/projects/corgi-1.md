@@ -1,6 +1,5 @@
 ---
 title: CORGI
-slug: corgi-1
 created-on: 2024-02-28T23:14:40.478000Z
 updated-on: 2024-02-28T23:14:40.498000Z
 published-on: 2024-02-28T23:14:40.507000Z

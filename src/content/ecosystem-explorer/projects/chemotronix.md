@@ -1,6 +1,5 @@
 ---
 title: Chemotronix
-slug: chemotronix
 created-on: 2024-03-29T21:28:49.980000Z
 updated-on: 2024-03-29T21:39:34.161000Z
 published-on: 2024-03-29T21:39:34.161000Z

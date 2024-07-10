@@ -1,7 +1,6 @@
 ---
 title: "European Orbit Community Meetups: Eager Developers, Decentralized
   Storage Curiosity, and Vibrant Communities"
-slug: "european-orbit-community-meetups-eager-developers-decentralized-storage-curiosity-and-vibrant-communities"
 created-on: 2024-06-13T11:49:00.000Z
 updated-on: 2024-06-13T11:49:00.000Z
 published-on: 2024-06-13T11:49:00.000Z

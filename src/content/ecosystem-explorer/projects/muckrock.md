@@ -1,6 +1,5 @@
 ---
 title: "MuckRock"
-slug: muckrock
 created-on: "2024-01-10T18:11:13.040Z"
 updated-on: "2024-01-10T18:11:13.127Z"
 published-on: "2024-01-10T18:11:13.198Z"

@@ -1,6 +1,5 @@
 ---
 title: "Fresh From FF: Mid-June, 2024"
-slug: "fresh-from-ff-mid-june-2024"
 created-on: 2024-06-14T12:08:00.000Z
 updated-on: 2024-06-14T12:08:00.000Z
 published-on: 2024-06-14T12:08:00.000Z

@@ -1,6 +1,5 @@
 ---
 title: Democracy’s Library Announces More than a Petabyte of Data Uploaded to the Filecoin Network
-slug: democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network
 created-on: 2023-09-21T17:34:18.773Z
 updated-on: 2023-09-21T17:34:18.789Z
 published-on: 2023-09-21T17:34:18.798Z

@@ -26,7 +26,7 @@ import { NextServerSearchParams } from '@/types/searchParams'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getEventsData } from '@/utils/getEventData'
+import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/events.md'
@@ -51,7 +51,7 @@ type Props = {
 const events = getEventsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('events')
 const { featured_entry: featuredEventSlug, seo } = attributes
-const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
+const featuredEvent = getEventData(featuredEventSlug || '')
 
 export const metadata = createMetadata({
   seo,

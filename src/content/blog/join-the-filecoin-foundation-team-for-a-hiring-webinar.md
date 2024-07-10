@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/64423b004e4c68dc35f473ac_0-zlsuhdrlo5hqa1zy.png
   alt:
-slug: join-the-filecoin-foundation-team-for-a-hiring-webinar
 recommended-posts: []
 category: news
 seo:

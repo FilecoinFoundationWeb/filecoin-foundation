@@ -1,6 +1,5 @@
 ---
 title: LabDAO
-slug: labdao
 created-on: 2024-03-29T21:28:53.071000Z
 updated-on: 2024-03-29T21:44:57.882000Z
 published-on: 2024-03-29T21:44:57.882000Z

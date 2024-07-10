@@ -1,6 +1,5 @@
 ---
 title: Filet Finance
-slug: filet-finance
 created-on: 2024-03-29T21:28:51.053000Z
 updated-on: 2024-03-29T21:42:03.195000Z
 published-on: 2024-03-29T21:42:03.195000Z

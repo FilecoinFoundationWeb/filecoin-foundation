@@ -1,6 +1,5 @@
 ---
 title: "Decentralizing Art: A Deep Dive into Waterlily.ai's Use of FVM and AI"
-slug: decentralizing-art-a-deep-dive-into-waterlily-ais-use-of-fvm-and-ai
 created-on: 2023-06-28T15:39:01.156000Z
 updated-on: 2023-06-28T15:39:01.175000Z
 published-on: 2023-06-28T15:39:01.182000Z
@@ -21,7 +20,7 @@ seo:
 ---
 
 <figure>
-  <iframe 
+  <iframe
   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1552122538&color=%23193396&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
   title="Decentralized Art - A Deep Dive into Waterlily.ai's Use of FVM and AI"
   height="166"

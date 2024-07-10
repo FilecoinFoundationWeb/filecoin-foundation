@@ -1,6 +1,5 @@
 ---
 title: "Dev Grant Spotlight: Arlequin — the Artist’s Metaverse"
-slug: dev-grant-spotlight-arlequin-the-artist-s-metaverse
 created-on: 2023-04-21T07:26:31.815000Z
 updated-on: 2023-04-21T07:26:31.815000Z
 published-on: 2023-04-21T07:33:56.200000Z

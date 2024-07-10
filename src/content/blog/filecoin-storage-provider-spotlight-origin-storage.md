@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/image-c-01.png
   alt:
-slug: filecoin-storage-provider-spotlight-origin-storage
 recommended-posts: []
 category: ecosystem
 seo:

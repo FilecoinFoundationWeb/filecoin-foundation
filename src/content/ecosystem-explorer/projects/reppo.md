@@ -19,7 +19,6 @@ tech:
   - filecoin
 repo: https://github.com/ReppoLabs
 news-update: null
-slug: reppo
 featured-content: null
 twitter: https://twitter.com/Repponetwork
 video-url: null

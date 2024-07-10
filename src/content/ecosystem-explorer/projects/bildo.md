@@ -1,6 +1,5 @@
 ---
 title: Bildo
-slug: bildo
 created-on: 2024-04-04T20:15:55.192000Z
 updated-on: 2024-04-04T20:15:55.205000Z
 published-on: 2024-04-04T20:15:55.214000Z

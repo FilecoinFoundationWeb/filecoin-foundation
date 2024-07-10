@@ -1,6 +1,5 @@
 ---
 title: HackFS
-slug: hackfs
 created-on: "2023-05-03T08:06:35.161Z"
 updated-on: "2023-05-03T08:06:35.161Z"
 published-on: "2023-05-03T08:22:38.798Z"

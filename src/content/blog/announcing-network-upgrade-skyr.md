@@ -1,6 +1,5 @@
 ---
 title: Announcing Network Upgrade ‘Skyr’
-slug: announcing-network-upgrade-skyr
 created-on: "2023-04-21T07:26:00.623Z"
 updated-on: "2023-04-21T07:26:00.623Z"
 published-on: "2023-04-21T07:33:56.200Z"

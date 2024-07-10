@@ -1,6 +1,5 @@
 ---
 title: Artifact Labs
-slug: artifact-labs
 created-on: "2024-01-04T22:40:24.120Z"
 updated-on: "2024-01-05T21:35:36.831Z"
 published-on: "2024-01-11T13:26:59.787Z"

@@ -1,6 +1,5 @@
 ---
 title: Filecoin Network Base
-slug: filecoin-network-base
 created-on: "2023-06-27T15:46:15.126Z"
 updated-on: "2023-06-27T15:46:15.134Z"
 published-on: "2023-06-27T15:46:15.140Z"

@@ -19,14 +19,14 @@ tech:
   - ipfs
 repo: null
 news-update: null
-slug: solmedia
 featured-content: null
 twitter: https://x.com/SolMediaTech
 video-url: null
 year-joined: 2024-04-25T17:21:06.512Z
 seo:
   title: SolMedia
-  description: SolMedia provides decentralized solutions for digital media storage
+  description:
+    SolMedia provides decentralized solutions for digital media storage
     and management.
 ---
 

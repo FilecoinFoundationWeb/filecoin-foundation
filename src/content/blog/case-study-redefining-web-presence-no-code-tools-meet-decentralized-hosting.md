@@ -1,6 +1,5 @@
 ---
 title: "Case Study: Redefining Web Presence, No-Code Tools Meet Decentralized Hosting"
-slug: case-study-redefining-web-presence-no-code-tools-meet-decentralized-hosting
 created-on: 2023-09-06T14:03:54.229000Z
 updated-on: 2023-09-06T14:03:54.256000Z
 published-on: 2023-09-06T14:03:54.272000Z

@@ -1,6 +1,5 @@
 ---
 title: Nebula Block
-slug: nebula-block
 created-on: 2024-03-20T13:58:36.655000Z
 updated-on: 2024-03-20T13:58:36.700000Z
 published-on: 2024-03-20T13:58:36.718000Z

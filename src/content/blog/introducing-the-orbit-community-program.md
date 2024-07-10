@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/0114-orbitcommunity-twitter.png
   alt:
-slug: introducing-the-orbit-community-program
 recommended-posts: []
 category: news
 seo:

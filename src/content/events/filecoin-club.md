@@ -1,6 +1,5 @@
 ---
 title: Filecoin Club
-slug: filecoin-club
 updated-on: "2023-05-03T08:06:32.669Z"
 created-on: "2023-05-03T08:06:32.669Z"
 published-on: "2023-05-03T08:22:38.798Z"

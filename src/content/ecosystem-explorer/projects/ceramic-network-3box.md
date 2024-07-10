@@ -1,6 +1,5 @@
 ---
 title: Ceramic Network (3Box)
-slug: ceramic-network-3box
 created-on: 2024-03-29T21:28:48.709000Z
 updated-on: 2024-03-29T21:38:38.239000Z
 published-on: 2024-03-29T21:38:38.239000Z

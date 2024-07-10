@@ -1,6 +1,5 @@
 ---
 title: Web3 Infrastructure Summit 2023
-slug: web3-infrastructure-summit-2023
 created-on: "2023-06-27T17:43:51.981Z"
 updated-on: "2023-06-27T17:43:52.040Z"
 published-on: "2023-06-27T17:43:52.040Z"

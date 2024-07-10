@@ -1,6 +1,5 @@
 ---
 title: Insights into Responsible AI with the Founder of AI Guardian
-slug: insights-into-responsible-ai-with-the-founder-of-ai-guardian-1
 created-on: 2023-10-30T14:01:55.224000Z
 updated-on: 2023-10-30T14:01:55.241000Z
 published-on: 2023-10-30T14:01:55.252000Z

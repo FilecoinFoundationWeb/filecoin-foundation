@@ -1,6 +1,5 @@
 ---
 title: The Filecoin Foundation Announces 50,000 FIL Grant to the Internet Archive
-slug: the-filecoin-foundation-announces-50-000-fil-grant-to-the-internet-archive
 created-on: 2023-04-21T07:32:08.443000Z
 updated-on: 2023-04-21T07:32:08.443000Z
 published-on: 2023-04-21T07:33:56.200000Z

@@ -14,7 +14,6 @@ description:
 image:
   url: /assets/images/64423ad4d7488e39d6b03c3a_0-oh5oa7medvgzjscu.png
   alt:
-slug: filecoin-foundation-chair-marta-belcher-testifies-before-us-senate-banking-committee
 recommended-posts: []
 category: news
 seo:

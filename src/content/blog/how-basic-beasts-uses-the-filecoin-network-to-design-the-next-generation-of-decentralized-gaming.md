@@ -2,7 +2,6 @@
 title:
   How Basic Beasts uses the Filecoin Network To Design the Next Generation of
   Decentralized Gaming
-slug: how-basic-beasts-uses-the-filecoin-network-to-design-the-next-generation-of-decentralized-gaming
 created-on: 2023-07-31T15:58:02.267000Z
 updated-on: 2023-07-31T15:58:02.277000Z
 published-on: 2023-07-31T15:58:02.285000Z

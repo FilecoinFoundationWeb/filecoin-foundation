@@ -1,6 +1,5 @@
 ---
 title: BBC’s The Real Story Explores the Promise of Cryptocurrency
-slug: bbc-s-the-real-story-explores-the-promise-of-cryptocurrency
 created-on: 2023-04-21T07:26:14.098000Z
 updated-on: 2023-04-21T07:26:14.098000Z
 published-on: 2023-04-21T07:33:56.200000Z

@@ -18,7 +18,6 @@ tech:
   - filecoin
 repo: https://github.com/pyth-network
 news-update: null
-slug: pyth-network
 featured-content: null
 twitter: https://x.com/PythNetwork
 video-url: https://www.youtube.com/embed/7k5gh-1JT3c

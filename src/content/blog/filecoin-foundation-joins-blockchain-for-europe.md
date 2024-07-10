@@ -8,7 +8,6 @@ image:
   url: >-
     /assets/images/64423ad9ef619d9dd2b60e6d_0-yilkincrhittd7ub.png
   alt:
-slug: filecoin-foundation-joins-blockchain-for-europe
 updated-on: "2023-04-21T07:27:21.334Z"
 created-on: "2023-04-21T07:27:21.334Z"
 published-on: "2023-04-21T07:33:56.200Z"

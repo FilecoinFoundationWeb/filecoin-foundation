@@ -1,6 +1,5 @@
 ---
 title: "You’re Invited: Filecoin Fall"
-slug: you-re-invited-filecoin-fall
 created-on: 2022-08-18T00:00:00Z
 updated-on: 2022-08-18T00:00:00Z
 published-on: 2022-08-18T00:00:00Z

@@ -1,6 +1,5 @@
 ---
 title: Bifrost Finance
-slug: bifrost-finance
 created-on: 2024-03-29T21:28:48.639000Z
 updated-on: 2024-03-29T21:37:17.239000Z
 published-on: 2024-03-29T21:37:17.239000Z

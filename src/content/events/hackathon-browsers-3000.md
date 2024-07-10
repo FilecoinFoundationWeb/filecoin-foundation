@@ -1,6 +1,5 @@
 ---
 title: Hackathon Browsers 3000
-slug: hackathon-browsers-3000
 created-on: "2023-05-03T08:06:36.394Z"
 updated-on: "2023-05-03T08:06:36.394Z"
 published-on: "2023-05-03T08:22:38.798Z"

@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/image-c-31.png
   alt:
-slug: hack-away-in-summer-2021
 recommended-posts: []
 category: events
 seo:

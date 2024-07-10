@@ -2,7 +2,6 @@
 title:
   "Spotlight: New Filecoin Virtual Machine Projects Unlocking Smart Contract
   Programmability"
-slug: spotlight-new-filecoin-virtual-machine-projects-unlocking-smart-contract-programmability-1
 created-on: 2023-04-21T07:31:52.010000Z
 updated-on: 2023-04-21T07:31:52.010000Z
 published-on: 2023-04-21T07:33:56.200000Z

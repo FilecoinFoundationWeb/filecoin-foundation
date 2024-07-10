@@ -17,7 +17,6 @@ tech:
   - filecoin
 repo: null
 news-update: null
-slug: dosier
 featured-content: null
 twitter: https://twitter.com/dosier_ai
 video-url: null

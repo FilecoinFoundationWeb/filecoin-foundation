@@ -1,6 +1,5 @@
 ---
 title: EQTY Lab (Arc Collective)
-slug: eqty-lab-arc-collective
 created-on: 2024-03-29T21:28:50.218000Z
 updated-on: 2024-03-29T21:41:34.450000Z
 published-on: 2024-03-29T21:41:34.450000Z

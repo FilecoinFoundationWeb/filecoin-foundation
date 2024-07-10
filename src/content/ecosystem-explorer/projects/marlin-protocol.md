@@ -1,6 +1,5 @@
 ---
 title: Marlin Protocol
-slug: marlin-protocol
 created-on: 2024-03-20T14:08:38.399000Z
 updated-on: 2024-03-20T14:08:38.456000Z
 published-on: 2024-03-20T14:08:38.488000Z

@@ -1,6 +1,5 @@
 ---
 title: SFT Chain
-slug: sft-chain
 created-on: "2024-02-05T17:57:11.340Z"
 updated-on: "2024-02-05T17:57:11.357Z"
 published-on: "2024-02-05T17:57:11.368Z"

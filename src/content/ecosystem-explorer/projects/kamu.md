@@ -1,6 +1,5 @@
 ---
 title: Kamu
-slug: kamu
 created-on: 2024-04-04T02:05:42.579000Z
 updated-on: 2024-04-04T02:05:42.602000Z
 published-on: 2024-04-04T02:05:42.613000Z

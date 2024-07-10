@@ -1,6 +1,5 @@
 ---
 title: Announcing the Filecoin Community Roadmap
-slug: announcing-the-filecoin-community-roadmap
 created-on: 2023-04-21T07:26:03.192000Z
 updated-on: 2023-04-21T07:26:03.192000Z
 published-on: 2023-04-21T07:33:56.200000Z

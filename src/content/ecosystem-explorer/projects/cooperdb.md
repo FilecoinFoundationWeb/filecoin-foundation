@@ -1,6 +1,5 @@
 ---
 title: CooperDB
-slug: cooperdb
 created-on: 2024-04-05T14:44:50.231000Z
 updated-on: 2024-04-05T14:44:50.290000Z
 published-on: 2024-04-05T14:44:50.309000Z

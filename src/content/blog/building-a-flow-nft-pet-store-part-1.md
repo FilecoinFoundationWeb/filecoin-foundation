@@ -1,6 +1,5 @@
 ---
 title: "Building a Flow NFT Pet Store : Part 1"
-slug: building-a-flow-nft-pet-store-part-1
 created-on: "2023-04-21T07:26:19.480Z"
 updated-on: "2023-04-21T07:26:19.480Z"
 published-on: "2023-04-21T07:33:56.200Z"

@@ -13,7 +13,6 @@ description:
 image:
   url: /assets/images/01-lockheed-p-1080.png
   alt:
-slug: ff-x-lockheed-martin-mission-announcement
 recommended-posts: []
 category: news
 seo:

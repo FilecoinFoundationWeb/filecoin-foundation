@@ -1,6 +1,5 @@
 ---
 title: Storage Provider Working Group Meeting
-slug: storage-provider-working-group-meeting
 created-on: "2023-05-03T08:06:28.619Z"
 updated-on: "2023-05-03T08:06:28.619Z"
 published-on: "2023-05-03T08:22:38.798Z"

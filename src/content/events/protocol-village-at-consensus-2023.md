@@ -1,6 +1,5 @@
 ---
 title: Protocol Village at Consensus 2023
-slug: protocol-village-at-consensus-2023
 created-on: "2023-06-27T15:31:08.633Z"
 updated-on: "2023-04-26T15:31:08.654Z"
 published-on: "2023-04-28T15:31:08.670Z"

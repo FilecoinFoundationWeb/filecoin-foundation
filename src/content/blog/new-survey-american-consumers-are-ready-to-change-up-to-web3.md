@@ -1,6 +1,5 @@
 ---
 title: "New Survey: American Consumers Are Ready to Change Up to Web3"
-slug: new-survey-american-consumers-are-ready-to-change-up-to-web3
 created-on: "2023-04-21T07:31:36.890Z"
 updated-on: "2023-04-21T07:31:36.890Z"
 published-on: "2023-04-21T07:33:56.200Z"

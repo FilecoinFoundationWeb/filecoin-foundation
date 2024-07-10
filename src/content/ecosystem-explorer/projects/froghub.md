@@ -1,6 +1,5 @@
 ---
 title: FrogHub
-slug: froghub
 created-on: 2024-04-05T23:10:27.358000Z
 updated-on: 2024-04-05T23:10:27.374000Z
 published-on: 2024-04-05T23:10:27.385000Z

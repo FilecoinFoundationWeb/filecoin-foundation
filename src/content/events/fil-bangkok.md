@@ -1,6 +1,5 @@
 ---
 title: FIL Bangkok Alongside DevCon
-slug: fil-bangkok
 created-on: "2024-01-29T16:18:33.938Z"
 updated-on: "2024-01-29T16:18:33.946Z"
 published-on: "2024-01-29T16:18:33.953Z"

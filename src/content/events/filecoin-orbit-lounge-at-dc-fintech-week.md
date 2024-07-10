@@ -1,6 +1,5 @@
 ---
 title: Filecoin Orbit Lounge at DC Fintech Week
-slug: filecoin-orbit-lounge-at-dc-fintech-week
 updated-on: "2023-05-03T08:06:20.831Z"
 created-on: "2023-05-03T08:06:20.831Z"
 published-on: "2023-05-03T08:22:38.798Z"

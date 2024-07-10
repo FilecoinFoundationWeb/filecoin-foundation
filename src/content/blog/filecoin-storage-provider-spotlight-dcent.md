@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/0524-sps-dcent.png
   alt:
-slug: filecoin-storage-provider-spotlight-dcent
 recommended-posts: []
 category: ecosystem
 seo:

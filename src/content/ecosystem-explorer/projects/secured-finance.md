@@ -1,6 +1,5 @@
 ---
 title: Secured Finance
-slug: secured-finance
 created-on: 2024-03-29T21:28:54.282000Z
 updated-on: 2024-03-29T21:49:27.150000Z
 published-on: 2024-03-29T21:49:27.150000Z

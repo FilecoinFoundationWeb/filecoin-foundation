@@ -2,8 +2,6 @@
 title: >-
   Case Study: Seal Storage Making Web3 Accessible for All Through Ecosystem
   Leadership and the Filecoin Network
-slug: >-
-  case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1
 created-on: "2023-04-21T07:26:26.517Z"
 updated-on: "2023-04-21T07:26:26.517Z"
 published-on: "2023-04-21T07:33:56.200Z"

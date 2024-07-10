@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
   alt:
-slug: join-us-as-we-build-a-better-web
 recommended-posts: []
 category: ecosystem
 seo:

@@ -2,8 +2,6 @@
 title: >-
   GBBC Virtual Members Forum with Marta Belcher, Board Chair at the Filecoin
   Foundation
-slug: >-
-  gbbc-virtual-members-forum-with-marta-belcher-board-chair-at-the-filecoin-foundation
 created-on: "2023-05-03T08:06:29.883Z"
 updated-on: "2023-05-03T08:06:29.883Z"
 published-on: "2023-05-03T08:22:38.798Z"

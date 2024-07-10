@@ -2,7 +2,6 @@
 title:
   "Case Study: GenRAIT Leverages Filecoin Network for Greater Visibility, Access,
   and Storage of Genomic Data"
-slug: case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data
 created-on: 2023-04-21T07:26:23.379000Z
 updated-on: 2023-04-21T07:26:23.379000Z
 published-on: 2023-04-21T07:33:56.200000Z

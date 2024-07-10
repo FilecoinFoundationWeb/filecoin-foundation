@@ -1,6 +1,5 @@
 ---
 title: Chainstack
-slug: chainstack
 created-on: 2024-03-29T21:28:49.352000Z
 updated-on: 2024-03-29T21:39:14.213000Z
 published-on: 2024-03-29T21:39:14.213000Z

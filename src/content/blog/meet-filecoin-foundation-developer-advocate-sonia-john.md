@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
   alt:
-slug: meet-filecoin-foundation-developer-advocate-sonia-john
 recommended-posts: []
 category: interviews
 seo:

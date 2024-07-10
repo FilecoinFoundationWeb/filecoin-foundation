@@ -1,6 +1,5 @@
 ---
 title: The Filecoin Virtual Machine has Arrived
-slug: the-filecoin-virtual-machine-has-arrived
 created-on: "2023-04-21T07:32:09.984Z"
 updated-on: "2023-04-21T07:32:09.984Z"
 published-on: "2023-04-21T07:33:56.200Z"

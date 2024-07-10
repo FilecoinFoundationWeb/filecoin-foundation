@@ -1,6 +1,5 @@
 ---
 title: Tellor
-slug: tellor
 created-on: 2024-03-29T21:28:55.457000Z
 updated-on: 2024-03-29T21:49:49.078000Z
 published-on: 2024-03-29T21:49:49.078000Z

@@ -1,6 +1,5 @@
 ---
 title: "Remixing the Art World with Blockchain Technology: A Q&A with ntent"
-slug: remixing-the-art-world-with-blockchain-technology-a-q-a-with-ntent
 created-on: 2023-06-21T19:18:57.909000Z
 updated-on: 2023-06-21T19:18:57.921000Z
 published-on: 2023-06-21T19:18:57.929000Z
@@ -36,7 +35,7 @@ We are an artist collective and kulturhaus designing new artistic realities thro
 
 On March 16th, 2023, we produced [PETLS](https://youtu.be/8pwyvMJrN1Q). This immersive experience combined generative art with physical environments to tell the story of growth in five parts, which opened the art world to a new and diverse community of creatives in Berlin.
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/8pwyvMJrN1Q"
   title="Petls - a Solo Exhibition by Jiwa"
   height="315"

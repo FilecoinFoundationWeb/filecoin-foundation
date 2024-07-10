@@ -1,6 +1,5 @@
 ---
 title: Hauska.ai
-slug: hauska-ai
 created-on: 2024-03-20T19:42:42.027000Z
 updated-on: 2024-03-20T19:42:42.041000Z
 published-on: 2024-03-20T19:42:42.053000Z

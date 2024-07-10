@@ -62,6 +62,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     featuredContent,
     updatedOn,
     newsUpdate,
+    tags,
   } = data
 
   return (
@@ -128,13 +129,15 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             </div>
           )}
 
-          <ul className="flex flex-wrap gap-2">
-            {getTagLabels(data).map((tag) => (
-              <li key={tag}>
-                <TagLabel>{tag}</TagLabel>
-              </li>
-            ))}
-          </ul>
+          {tags && (
+            <ul className="flex flex-wrap gap-2">
+              {getTagLabels(data).map((tag) => (
+                <li key={tag}>
+                  <TagLabel>{tag}</TagLabel>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <ul className="mt-4 flex flex-col gap-5">

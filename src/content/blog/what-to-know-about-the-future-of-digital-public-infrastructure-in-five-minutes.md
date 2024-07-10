@@ -1,6 +1,5 @@
 ---
 title: What to know about the Future of Digital Public Infrastructure in Five Minutes
-slug: what-to-know-about-the-future-of-digital-public-infrastructure-in-five-minutes
 created-on: 2023-07-07T15:01:07.700000Z
 updated-on: 2023-07-07T15:01:07.716000Z
 published-on: 2023-07-07T15:01:07.728000Z

@@ -1,6 +1,5 @@
 ---
 title: Murmuration Labs
-slug: murmuration-labs
 created-on: 2024-03-29T21:28:53.260000Z
 updated-on: 2024-03-29T21:46:18.273000Z
 published-on: 2024-03-29T21:46:18.273000Z

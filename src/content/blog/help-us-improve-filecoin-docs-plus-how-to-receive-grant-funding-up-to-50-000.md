@@ -3,7 +3,6 @@ title: "Help us Improve Filecoin Docs (Plus, How to Receive Grant Funding up to 
 created-on: 2024-05-30T14:16:20.343Z
 updated-on: 2024-05-30T14:16:20.354Z
 published-on: 2024-05-30T14:16:20.362Z
-slug: help-us-improve-filecoin-docs-plus-how-to-receive-grant-funding-up-to-50-000
 description: "Filecoin Foundation awards grant funding for critical development projects to foster a more decentralized, efficient, and robust foundation for humanity’s information. Currently, we’re looking to support projects that enhance existing Filecoin documentation or create new educational resources."
 image:
   url: /assets/images/052924-docgrants.png

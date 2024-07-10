@@ -1,6 +1,5 @@
 ---
 title: "Supporting the Community: The Filecoin Storage Provider Group"
-slug: supporting-the-community-the-filecoin-storage-provider-group
 created-on: 2023-04-21T07:32:01.414000Z
 updated-on: 2023-04-21T07:32:01.414000Z
 published-on: 2023-04-21T07:33:56.200000Z

@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/image-c-32.png
   alt:
-slug: introducing-the-wave-7-developer-grant-recipients
 recommended-posts: []
 category: news
 seo:

@@ -1,6 +1,5 @@
 ---
 title: Nuklai
-slug: nuklai
 created-on: 2024-07-08T10:11:00.000Z
 updated-on: 2024-07-08T10:11:00.000Z
 published-on: 2024-07-08T10:11:00.000Z
@@ -19,7 +18,6 @@ twitter: https://x.com/NuklaiData
 year-joined: 2024-07-08T10:11:00.000Z
 news-update: null
 video-url: null
-tags: []
 featured-content: null
 seo:
   twitter:

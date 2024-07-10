@@ -1,6 +1,5 @@
 ---
 title: Renderhive
-slug: renderhive
 created-on: 2024-03-29T21:28:53.783000Z
 updated-on: 2024-03-29T21:48:03.679000Z
 published-on: 2024-03-29T21:48:03.679000Z
