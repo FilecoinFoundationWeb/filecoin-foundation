@@ -2,7 +2,6 @@
 title:
   "Announcing the Quality Phase for Filecoin Plus: Aligning on the Filecoin Plus
   Vision, Mission Statement and Roadmap"
-slug: announcing-the-quality-phase-for-filecoin-plus-aligning-on-the-filecoin-plus-vision-mission-statement-and-roadmap
 created-on: 2023-04-21T07:26:06.472000Z
 updated-on: 2023-04-21T07:26:06.472000Z
 published-on: 2023-04-21T07:33:56.200000Z

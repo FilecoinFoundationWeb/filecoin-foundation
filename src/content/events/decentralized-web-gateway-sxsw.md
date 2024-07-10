@@ -1,6 +1,5 @@
 ---
 title: Decentralized Web Gateway @ SXSW
-slug: decentralized-web-gateway-sxsw
 created-on: "2023-05-03T08:06:12.960Z"
 updated-on: "2023-05-03T08:16:25.806Z"
 published-on: "2023-05-03T08:22:38.798Z"

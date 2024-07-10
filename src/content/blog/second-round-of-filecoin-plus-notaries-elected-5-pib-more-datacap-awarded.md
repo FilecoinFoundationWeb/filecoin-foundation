@@ -1,6 +1,5 @@
 ---
 title: Second Round of Filecoin Plus Notaries Elected, 5+ PiB More DataCap Awarded
-slug: second-round-of-filecoin-plus-notaries-elected-5-pib-more-datacap-awarded
 created-on: 2023-04-21T07:31:48.925000Z
 updated-on: 2023-04-21T07:31:48.925000Z
 published-on: 2023-04-21T07:33:56.200000Z

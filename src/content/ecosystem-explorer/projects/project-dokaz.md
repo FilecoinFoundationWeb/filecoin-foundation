@@ -1,6 +1,5 @@
 ---
 title: Project Dokaz
-slug: "project-dokaz"
 created-on: "2024-01-10T19:28:43.717Z"
 updated-on: "2024-01-10T19:28:43.727Z"
 published-on: "2024-01-10T19:28:43.735Z"

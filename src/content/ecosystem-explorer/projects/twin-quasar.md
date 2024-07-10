@@ -1,6 +1,5 @@
 ---
 title: "Twin Quasar"
-slug: "twin-quasar"
 created-on: "2024-01-05T21:39:42.797Z"
 updated-on: "2024-01-04T22:40:28.744Z"
 published-on: "2024-01-11T13:26:59.787Z"

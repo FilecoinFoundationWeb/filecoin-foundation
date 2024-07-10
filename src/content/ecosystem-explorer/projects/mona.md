@@ -18,7 +18,6 @@ tech:
   - filecoin
 repo: null
 news-update: null
-slug: mona
 featured-content: null
 twitter: https://twitter.com/monaverse
 video-url: null

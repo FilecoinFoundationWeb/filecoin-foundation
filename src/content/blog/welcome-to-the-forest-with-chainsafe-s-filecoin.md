@@ -1,6 +1,5 @@
 ---
 title: Welcome to the Forest, with Chainsafe’s Filecoin
-slug: welcome-to-the-forest-with-chainsafe-s-filecoin
 created-on: 2023-04-21T07:32:18.332000Z
 updated-on: 2023-04-21T07:32:18.332000Z
 published-on: 2023-04-21T07:33:56.200000Z

@@ -1,6 +1,5 @@
 ---
 title: Force Community
-slug: force-community
 created-on: 2024-03-29T21:28:50.711000Z
 updated-on: 2024-03-29T21:42:15.361000Z
 published-on: 2024-03-29T21:42:15.361000Z

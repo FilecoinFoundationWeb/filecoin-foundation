@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/image-c-08.png
   alt:
-slug: introducing-the-storage-provider-bounty-board
 recommended-posts: []
 category: news
 seo:

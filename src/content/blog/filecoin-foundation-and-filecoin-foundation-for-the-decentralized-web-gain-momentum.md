@@ -11,7 +11,6 @@ description:
 image:
   url: /assets/images/64423aceef619d5dc5b60e52_1-e009tiaipq2vndk-evb9ng.png
   alt:
-slug: filecoin-foundation-and-filecoin-foundation-for-the-decentralized-web-gain-momentum
 recommended-posts: []
 category: news
 seo:

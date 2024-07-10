@@ -1,6 +1,5 @@
 ---
 title: "Unveiling the Filecoin Ecosystem Explorer"
-slug: unveiling-the-filecoin-ecosystem-explorer
 created-on: 2024-01-11T15:12:45.372000Z
 updated-on: 2024-01-11T15:12:45.388000Z
 published-on: 2024-01-11T15:12:45.398000Z

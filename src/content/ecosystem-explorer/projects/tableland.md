@@ -1,6 +1,5 @@
 ---
 title: Tableland
-slug: tableland
 created-on: "2024-01-04T22:40:28.455Z"
 updated-on: "2024-01-05T21:39:20.665Z"
 published-on: "2024-01-11T13:26:59.787Z"

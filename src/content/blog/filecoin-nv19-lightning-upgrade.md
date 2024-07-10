@@ -1,6 +1,5 @@
 ---
 title: Filecoin nv19 Lightning Upgrade
-slug: filecoin-nv19-lightning-upgrade
 created-on: 2023-06-01T11:00:30.238000Z
 updated-on: 2023-06-01T11:00:00Z
 published-on: 2023-06-01T11:00:00Z

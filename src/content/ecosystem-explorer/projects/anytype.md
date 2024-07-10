@@ -18,7 +18,6 @@ tech:
   - ipfs
 repo: null
 news-update: null
-slug: anytype
 featured-content: null
 twitter: https://twitter.com/AnytypeLabs
 video-url: null

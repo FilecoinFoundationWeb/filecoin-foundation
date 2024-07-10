@@ -1,6 +1,5 @@
 ---
 title: FVM Dapp
-slug: fvm-dapp
 created-on: 2024-04-04T20:33:26.450000Z
 updated-on: 2024-04-04T20:33:26.461000Z
 published-on: 2024-04-04T20:33:26.469000Z

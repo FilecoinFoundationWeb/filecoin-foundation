@@ -1,6 +1,5 @@
 ---
 title: "Lighthouse"
-slug: "lighthouse"
 created-on: 2024-01-04T22:40:26.490000Z
 updated-on: 2024-01-05T21:37:36.638000Z
 published-on: 2024-01-11T13:26:59.787000Z

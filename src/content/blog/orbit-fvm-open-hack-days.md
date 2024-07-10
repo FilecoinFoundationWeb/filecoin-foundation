@@ -1,6 +1,5 @@
 ---
 title: Orbit FVM Open Hack Days
-slug: orbit-fvm-open-hack-days
 created-on: 2023-04-21T07:31:40.974000Z
 updated-on: 2023-04-21T07:31:40.974000Z
 published-on: 2023-04-21T07:33:56.200000Z

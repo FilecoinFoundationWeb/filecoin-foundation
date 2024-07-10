@@ -1,6 +1,5 @@
 ---
 title: Third Storage
-slug: third-storage
 created-on: 2024-03-29T21:28:55.910000Z
 updated-on: 2024-03-29T21:50:03.777000Z
 published-on: 2024-03-29T21:50:03.777000Z

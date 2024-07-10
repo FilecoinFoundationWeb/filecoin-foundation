@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/64423b080425d3dc88f2efd0_0-ujllypeozzx_ebfb.png
   alt:
-slug: marta-belcher-talks-crypto-privacy-or-lack-thereof-at-consensus-2021
 recommended-posts: []
 category: events
 seo:

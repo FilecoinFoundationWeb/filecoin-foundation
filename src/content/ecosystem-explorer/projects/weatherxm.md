@@ -1,6 +1,5 @@
 ---
 title: "WeatherXM"
-slug: "weatherxm"
 created-on: 2024-01-04T22:40:29.749000Z
 updated-on: 2024-01-05T16:11:14.388000Z
 published-on: 2024-01-11T13:26:59.787000Z

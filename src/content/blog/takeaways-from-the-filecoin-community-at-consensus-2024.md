@@ -3,7 +3,6 @@ title: "Takeaways from the Filecoin Community at Consensus 2024"
 created-on: 2024-06-07T01:34:20.364Z
 updated-on: 2024-06-07T01:34:20.372Z
 published-on: 2024-06-07T01:34:20.379Z
-slug: takeaways-from-the-filecoin-community-at-consensus-2024
 description: "Last week, the Filecoin community convened in Austin against the backdrop of Consensus to hear from some of the ecosystem's leading voices and check out the latest projects building on the network. Filecoin Foundation team members took the stage at events across the conference to highlight what the ecosystem is working on and to underscore the innovation happening throughout the network."
 image:
   url: /assets/images/060624-consensus.png

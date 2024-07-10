@@ -1,6 +1,5 @@
 ---
 title: Filecoin Virtual Machine Hacker Base
-slug: filecoin-virtual-machine-hacker-base-1
 created-on: "2023-06-27T15:39:25.694Z"
 updated-on: "2023-06-27T15:39:25.702Z"
 published-on: "2023-06-27T15:39:25.707Z"

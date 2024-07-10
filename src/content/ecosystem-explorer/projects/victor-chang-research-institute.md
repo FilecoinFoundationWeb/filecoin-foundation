@@ -1,6 +1,5 @@
 ---
 title: "Victor Chang Research Institute"
-slug: "victor-chang-research-institute"
 created-on: 2024-01-04T22:40:28.856000Z
 updated-on: 2024-01-05T21:39:58.347000Z
 published-on: 2024-01-11T13:26:59.787000Z

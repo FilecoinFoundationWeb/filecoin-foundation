@@ -1,6 +1,5 @@
 ---
 title: Filecoin Incentive DesignLabs
-slug: filecoin-incentive-designlabs
 created-on: 2024-05-16T14:44:42.655000Z
 updated-on: 2024-05-16T14:44:42.681000Z
 published-on: 2024-05-16T14:44:42.701000Z

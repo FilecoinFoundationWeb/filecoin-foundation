@@ -2,7 +2,6 @@
 title:
   Social Impact Summit 2024 Cohosted by Blockchain Law for Social Good Center
   & FFDW
-slug: social-impact-summit-2024-cohosted-by-blockchain-law-for-social-good-center-ffdw
 created-on: "2024-01-29T15:35:50.939Z"
 updated-on: "2024-01-29T15:35:51.003Z"
 published-on: "2024-01-29T15:35:51.019Z"

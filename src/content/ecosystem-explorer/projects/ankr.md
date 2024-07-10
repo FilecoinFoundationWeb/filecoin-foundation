@@ -1,6 +1,5 @@
 ---
 title: Ankr
-slug: ankr
 created-on: 2024-03-29T21:28:48.751000Z
 updated-on: 2024-03-29T21:35:32.116000Z
 published-on: 2024-03-29T21:35:32.116000Z

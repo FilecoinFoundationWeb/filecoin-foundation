@@ -1,6 +1,5 @@
 ---
 title: "Unleashing the Power of Decentralized Compute with Filecoin"
-slug: unleashing-the-power-of-decentralized-compute-with-filecoin
 created-on: 2024-04-11T15:25:37.541000Z
 updated-on: 2024-04-11T15:25:37.555000Z
 published-on: 2024-04-11T15:25:37.566000Z

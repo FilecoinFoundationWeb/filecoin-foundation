@@ -1,6 +1,5 @@
 ---
 title: FilFi
-slug: filfi
 created-on: 2023-05-30T20:57:35.326000Z
 updated-on: 2024-03-20T20:57:35.335000Z
 published-on: 2024-03-20T20:57:35.342000Z

@@ -1,6 +1,5 @@
 ---
 title: Datalatte
-slug: datalatte
 created-on: 2024-03-29T21:28:49.704000Z
 updated-on: 2024-03-29T21:41:02.169000Z
 published-on: 2024-03-29T21:41:02.169000Z

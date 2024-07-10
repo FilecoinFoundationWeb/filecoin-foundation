@@ -2,7 +2,6 @@
 title:
   "Filecoin Foundation Successfully Deploys InterPlanetary File System (IPFS)
   in Space"
-slug: filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space
 created-on: 2024-01-16T02:43:22.627000Z
 updated-on: 2024-01-16T02:43:22.642000Z
 published-on: 2024-01-16T02:43:22.656000Z

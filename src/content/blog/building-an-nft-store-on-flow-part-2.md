@@ -1,6 +1,5 @@
 ---
 title: "Building an NFT Store on Flow: Part 2"
-slug: building-an-nft-store-on-flow-part-2
 created-on: "2023-04-21T07:26:21.578Z"
 updated-on: "2023-05-03T11:29:18.473Z"
 published-on: "2023-05-03T12:47:09.568Z"

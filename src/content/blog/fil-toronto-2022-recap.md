@@ -1,6 +1,5 @@
 ---
 title: FIL Toronto 2022 Recap
-slug: fil-toronto-2022-recap
 created-on: 2023-04-21T07:26:59.147000Z
 updated-on: 2023-04-21T07:26:59.147000Z
 published-on: 2023-04-21T07:33:56.200000Z

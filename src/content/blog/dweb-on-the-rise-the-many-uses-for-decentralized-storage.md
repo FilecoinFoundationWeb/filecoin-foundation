@@ -1,6 +1,5 @@
 ---
 title: "DWeb on the Rise: The Many Uses for Decentralized Storage"
-slug: dweb-on-the-rise-the-many-uses-for-decentralized-storage
 created-on: 2023-05-15T11:00:00Z
 updated-on: 2023-05-15T11:00:00Z
 published-on: 2023-05-15T11:00:00Z

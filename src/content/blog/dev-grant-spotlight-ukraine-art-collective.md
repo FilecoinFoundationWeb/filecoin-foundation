@@ -10,7 +10,6 @@ description:
 image:
   url: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
   alt:
-slug: dev-grant-spotlight-ukraine-art-collective
 recommended-posts: []
 category: reports
 seo:

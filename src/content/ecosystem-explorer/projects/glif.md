@@ -1,6 +1,5 @@
 ---
 title: "GLIF"
-slug: "glif"
 created-on: 2018-12-01T20:17:14.438000Z
 updated-on: 2024-02-07T20:17:14.451000Z
 published-on: 2024-02-07T20:17:14.461000Z

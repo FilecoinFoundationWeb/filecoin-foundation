@@ -1,6 +1,5 @@
 ---
 title: New Wave 9 Developer Grant Recipients
-slug: new-wave-9-developer-grant-recipients
 created-on: 2023-04-21T07:31:38.800000Z
 updated-on: 2023-04-21T07:31:38.800000Z
 published-on: 2023-04-21T07:33:56.200000Z

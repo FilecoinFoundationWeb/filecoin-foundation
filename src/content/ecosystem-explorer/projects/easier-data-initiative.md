@@ -1,6 +1,5 @@
 ---
 title: "EASIER Data Initiative"
-slug: "easier-data-initiative"
 created-on: 2024-02-26T21:29:27.659000Z
 updated-on: 2024-02-26T21:29:27.678000Z
 published-on: 2024-02-26T21:29:27.688000Z

@@ -18,14 +18,14 @@ tech:
   - ipfs
 repo: null
 news-update: null
-slug: ethereum-name-service
 featured-content: null
 twitter: null
 video-url: null
 year-joined: 2024-04-05T01:47:43.309Z
 seo:
   title: Ethereum Name Service
-  description: Ethereum Name Service offers decentralized domain name services for
+  description:
+    Ethereum Name Service offers decentralized domain name services for
     the Ethereum network.
 ---
 

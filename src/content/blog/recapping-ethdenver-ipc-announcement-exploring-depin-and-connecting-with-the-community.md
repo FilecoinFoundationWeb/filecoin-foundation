@@ -2,7 +2,6 @@
 title:
   "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
   the Community"
-slug: recapping-ethdenver-ipc-announcement-exploring-depin-and-connecting-with-the-community
 created-on: 2024-03-18T13:25:31.946000Z
 updated-on: 2024-03-18T13:25:31.957000Z
 published-on: 2024-03-18T13:25:31.966000Z

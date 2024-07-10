@@ -7,7 +7,6 @@ description: NonEntropy is on a mission to protect the digital future.
 image:
   url: /assets/images/64423ae2ef619d69dab60e9f_0-qyjcuk2pe_bhv2jh.png
   alt:
-slug: filecoin-storage-provider-spotlight-nonentropy
 recommended-posts: []
 category: ecosystem
 seo:

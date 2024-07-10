@@ -1,6 +1,5 @@
 ---
 title: "Dev Grant Spotlight: encloud"
-slug: dev-grant-spotlight-encloud
 created-on: 2023-04-21T07:26:35.386000Z
 updated-on: 2023-04-21T07:26:35.386000Z
 published-on: 2023-04-21T07:33:56.200000Z

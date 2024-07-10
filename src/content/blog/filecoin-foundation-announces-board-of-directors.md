@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/image-c-06.png
   alt:
-slug: filecoin-foundation-announces-board-of-directors
 recommended-posts: []
 category: news
 seo:

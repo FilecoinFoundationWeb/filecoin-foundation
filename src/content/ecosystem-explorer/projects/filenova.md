@@ -17,7 +17,6 @@ tech:
   - filecoin
 repo: https://github.com/Filenova
 news-update: null
-slug: filenova
 featured-content: null
 twitter: null
 video-url: null

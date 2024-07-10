@@ -12,7 +12,6 @@ description:
 image:
   url: /assets/images/0315-dgs-numbers.png
   alt:
-slug: dev-grant-spotlight-numbers-protocol-puts-digital-creators-in-control-of-their-assets
 recommended-posts: []
 category: reports
 seo:

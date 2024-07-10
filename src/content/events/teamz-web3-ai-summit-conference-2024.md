@@ -1,6 +1,5 @@
 ---
 title: TEAMZ WEB3/AI Summit Conference 2024
-slug: teamz-web3-ai-summit-conference-2024
 created-on: 2024-03-21T16:47:39.923000Z
 updated-on: 2024-03-21T16:47:39.933000Z
 published-on: 2024-03-21T16:47:39.941000Z

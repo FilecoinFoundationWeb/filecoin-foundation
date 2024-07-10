@@ -1,6 +1,5 @@
 ---
 title: "University of Utah"
-slug: "university-of-utah"
 created-on: "2024-01-05T21:39:54.109Z"
 updated-on: "2024-01-04T22:40:28.834Z"
 published-on: "2024-01-11T13:26:59.787Z"

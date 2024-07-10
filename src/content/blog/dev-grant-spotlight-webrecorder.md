@@ -12,7 +12,6 @@ description:
 image:
   url: /assets/images/image-c-14.png
   alt:
-slug: dev-grant-spotlight-webrecorder
 recommended-posts: []
 category: reports
 seo:

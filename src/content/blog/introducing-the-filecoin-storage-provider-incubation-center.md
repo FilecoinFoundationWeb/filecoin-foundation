@@ -9,7 +9,6 @@ description:
 image:
   url: /assets/images/image-c-21.png
   alt:
-slug: introducing-the-filecoin-storage-provider-incubation-center
 recommended-posts: []
 category: news
 seo:

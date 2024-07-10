@@ -1,6 +1,5 @@
 ---
 title: DataHaus
-slug: datahaus
 created-on: 2024-03-29T21:28:52.788000Z
 updated-on: 2024-03-29T21:40:39.978000Z
 published-on: 2024-03-29T21:40:39.978000Z

@@ -1,6 +1,5 @@
 ---
 title: "Functionland"
-slug: "functionland-fula"
 created-on: 2024-01-18T16:17:36.549000Z
 updated-on: 2024-01-18T16:17:36.566000Z
 published-on: 2024-01-18T16:17:36.584000Z

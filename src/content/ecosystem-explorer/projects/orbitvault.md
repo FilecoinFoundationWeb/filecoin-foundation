@@ -1,6 +1,5 @@
 ---
 title: OrbitVault
-slug: orbitvault
 created-on: 2024-03-20T13:09:03.703000Z
 updated-on: 2024-03-20T13:09:03.722000Z
 published-on: 2024-03-20T13:09:03.747000Z

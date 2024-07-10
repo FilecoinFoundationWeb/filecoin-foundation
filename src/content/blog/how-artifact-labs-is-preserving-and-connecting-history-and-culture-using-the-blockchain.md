@@ -2,7 +2,6 @@
 title:
   How Artifact Labs is Preserving and Connecting History and Culture with Blockchain
   Technology
-slug: how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain
 created-on: 2023-09-18T14:06:54.734000Z
 updated-on: 2023-09-18T14:06:54.741000Z
 published-on: 2023-09-18T14:06:54.746000Z

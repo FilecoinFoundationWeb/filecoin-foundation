@@ -1,6 +1,5 @@
 ---
 title: The Foundations’ Roles in the Filecoin Ecosystem
-slug: the-foundations-roles-in-the-filecoin-ecosystem
 created-on: "2023-04-21T07:32:11.556Z"
 updated-on: "2023-04-21T07:32:11.556Z"
 published-on: "2023-04-21T07:33:56.200Z"

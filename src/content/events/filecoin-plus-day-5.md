@@ -1,6 +1,5 @@
 ---
 title: Filecoin Plus Day
-slug: filecoin-plus-day-5
 created-on: "2023-05-03T08:06:25.842Z"
 updated-on: "2023-06-27T17:45:43.957Z"
 published-on: "2023-05-03T08:22:38.798Z"

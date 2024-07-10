@@ -1,6 +1,5 @@
 ---
 title: NFT Gallery at Consensus 2022
-slug: nft-gallery-at-consensus-2022
 updated-on: "2023-05-03T08:06:08.616Z"
 created-on: "2023-05-03T08:06:08.616Z"
 published-on: "2023-05-03T08:22:38.798Z"

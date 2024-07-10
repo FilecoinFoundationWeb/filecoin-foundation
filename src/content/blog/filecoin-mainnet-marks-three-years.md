@@ -1,6 +1,5 @@
 ---
 title: Filecoin Mainnet Marks Three Years!
-slug: filecoin-mainnet-marks-three-years
 created-on: 2023-10-16T17:45:17.415000Z
 updated-on: 2023-10-16T17:45:17.440000Z
 published-on: 2023-10-16T17:45:17.450000Z

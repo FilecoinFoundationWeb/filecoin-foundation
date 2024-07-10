@@ -1,6 +1,5 @@
 ---
 title: Themis Protocol
-slug: themis-protocol
 created-on: 2024-04-03T18:51:20.533000Z
 updated-on: 2024-04-03T18:51:20.547000Z
 published-on: 2024-04-03T18:51:20.557000Z

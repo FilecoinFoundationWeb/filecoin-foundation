@@ -1,6 +1,5 @@
 ---
 title: NiftyGuilds
-slug: niftyguilds
 created-on: 2024-03-29T21:28:53.605000Z
 updated-on: 2024-03-29T21:47:03.349000Z
 published-on: 2024-03-29T21:47:03.349000Z

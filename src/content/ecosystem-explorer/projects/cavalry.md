@@ -1,6 +1,5 @@
 ---
 title: Cavalry
-slug: cavalry
 created-on: 2024-01-04T22:40:25.195000Z
 updated-on: 2024-01-05T21:34:45.600000Z
 published-on: 2024-01-11T13:26:59.787000Z

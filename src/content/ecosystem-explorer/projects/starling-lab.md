@@ -1,6 +1,5 @@
 ---
 title: Starling Lab
-slug: starling-lab
 created-on: "2024-01-10T18:24:21.006Z"
 updated-on: "2024-01-10T18:24:21.025Z"
 published-on: "2024-01-10T18:24:21.035Z"

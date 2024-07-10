@@ -1,6 +1,5 @@
 ---
 title: SINSO
-slug: sinso
 created-on: "2024-01-04T22:40:27.988Z"
 updated-on: "2024-01-05T21:38:54.539Z"
 published-on: "2024-01-11T13:26:59.787Z"

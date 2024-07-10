@@ -1,6 +1,5 @@
 ---
 title: "Surveying the Filecoin Community: Priorities and Opportunities for 2022"
-slug: surveying-the-filecoin-community-priorities-and-opportunities-for-2022
 created-on: 2023-04-21T07:32:03.550000Z
 updated-on: 2023-04-21T07:32:03.550000Z
 published-on: 2023-04-21T07:33:56.200000Z

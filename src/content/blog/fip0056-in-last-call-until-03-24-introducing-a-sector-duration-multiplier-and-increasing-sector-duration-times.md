@@ -11,7 +11,6 @@ description:
 image:
   url: /assets/images/0621-2022-01.png
   alt:
-slug: fip0056-in-last-call-until-03-24-introducing-a-sector-duration-multiplier-and-increasing-sector-duration-times
 recommended-posts: []
 category: ecosystem
 seo:

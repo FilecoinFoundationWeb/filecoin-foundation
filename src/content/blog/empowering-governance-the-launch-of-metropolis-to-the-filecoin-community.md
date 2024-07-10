@@ -1,6 +1,5 @@
 ---
 title: "Empowering Governance: The Launch of Metropolis to the Filecoin Community"
-slug: empowering-governance-the-launch-of-metropolis-to-the-filecoin-community
 created-on: 2024-05-13T16:47:45.110000Z
 updated-on: 2024-05-13T16:47:45.128000Z
 published-on: 2024-05-13T16:47:45.139000Z

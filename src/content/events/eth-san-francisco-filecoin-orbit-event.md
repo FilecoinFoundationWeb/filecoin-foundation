@@ -1,6 +1,5 @@
 ---
 title: ETHSanFrancisco Filecoin Orbit Meetup Event
-slug: eth-san-francisco-filecoin-orbit-event
 created-on: "2024-01-29T16:16:41.342Z"
 updated-on: "2024-01-29T16:16:41.351Z"
 published-on: "2024-01-29T16:16:41.365Z"

@@ -1,6 +1,5 @@
 ---
 title: Basic Beasts
-slug: basic-beasts
 created-on: 2024-03-29T21:28:48.611000Z
 updated-on: 2024-03-29T21:36:57.674000Z
 published-on: 2024-03-29T21:36:57.674000Z

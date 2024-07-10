@@ -1,6 +1,5 @@
 ---
 title: Filecoin Station at Web Summit
-slug: filecoin-station-at-web-summit
 created-on: "2023-06-27T15:30:57.095Z"
 updated-on: "2023-06-27T15:30:57.115Z"
 published-on: "2023-06-27T15:30:57.149Z"

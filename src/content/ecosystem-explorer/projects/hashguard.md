@@ -1,6 +1,5 @@
 ---
 title: Hashguard
-slug: hashguard
 created-on: 2024-03-20T14:14:44.020000Z
 updated-on: 2024-03-20T14:14:44.067000Z
 published-on: 2024-03-20T14:14:44.167000Z

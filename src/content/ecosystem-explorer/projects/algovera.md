@@ -1,6 +1,5 @@
 ---
 title: Algovera
-slug: algovera
 created-on: "2024-01-04T22:40:23.909Z"
 updated-on: "2024-01-11T15:54:16.967Z"
 published-on: "2024-01-11T21:59:05.836Z"

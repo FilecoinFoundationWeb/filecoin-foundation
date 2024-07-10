@@ -1,6 +1,5 @@
 ---
 title: Ethereal 2022
-slug: ethereal-2022
 created-on: "2023-05-03T08:06:16.127Z"
 updated-on: "2023-05-03T08:06:16.127Z"
 published-on: "2023-05-03T08:22:38.798Z"

@@ -7,7 +7,6 @@ description: null
 location: Virtual
 external-link: https://www.youtube.com/watch?v=o0nPBRM-aMQ
 end-date: null
-slug: august-2021-notary-governance-meeting
 start-date: 2021-08-30T22:00:00.000Z
 image:
   url: /assets/images/governance-logo.jpg

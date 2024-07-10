@@ -1,6 +1,5 @@
 ---
 title: "Signal Spotlights: Software Storage Solutions Built on Filecoin to Watch"
-slug: signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch
 created-on: 2024-06-24T11:12:00.000Z
 updated-on: 2024-06-24T11:12:00.000Z
 published-on: 2024-06-24T11:12:00.000Z

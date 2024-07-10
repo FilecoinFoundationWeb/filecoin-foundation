@@ -1,6 +1,5 @@
 ---
 title: Announcing the Public Data Commons and Awards Program
-slug: announcing-the-public-data-commons-and-awards-program
 created-on: "2023-04-21T07:26:04.681Z"
 updated-on: "2023-04-21T07:26:04.681Z"
 published-on: "2023-04-21T07:33:56.200Z"

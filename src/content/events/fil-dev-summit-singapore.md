@@ -1,6 +1,5 @@
 ---
 title: FIL Dev Summit
-slug: fil-dev-summit-singapore
 created-on: "2023-09-05T18:17:04.382Z"
 updated-on: "2023-09-05T18:17:04.407Z"
 published-on: "2023-09-05T18:17:04.420Z"

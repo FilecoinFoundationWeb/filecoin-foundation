@@ -8,7 +8,6 @@ image:
   url: >-
     /assets/images/64423aafa6ec4151d52a3dc9_0-eczvdfkkiozsdvgv.jpeg
   alt:
-slug: dev-grant-spotlight-geo-web
 updated-on: "2023-04-21T07:26:40.008Z"
 created-on: "2023-04-21T07:26:40.008Z"
 published-on: "2023-04-21T07:33:56.200Z"

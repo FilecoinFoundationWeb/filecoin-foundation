@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Saturn"
-slug: "filecoin-saturn"
 created-on: 2024-01-04T22:40:25.258000Z
 updated-on: 2024-01-05T21:36:21.464000Z
 published-on: 2024-01-11T13:26:59.787000Z

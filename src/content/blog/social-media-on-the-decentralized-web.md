@@ -1,6 +1,5 @@
 ---
 title: Social Media on the Decentralized Web
-slug: social-media-on-the-decentralized-web
 created-on: "2023-04-21T07:31:50.469Z"
 updated-on: "2023-04-21T07:31:50.469Z"
 published-on: "2023-04-21T07:33:56.200Z"

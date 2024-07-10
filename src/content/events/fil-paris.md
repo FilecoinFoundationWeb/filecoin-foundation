@@ -1,6 +1,5 @@
 ---
 title: FIL Paris
-slug: fil-paris
 created-on: "2023-06-27T15:38:07.082Z"
 updated-on: "2023-06-27T15:38:07.098Z"
 published-on: "2023-06-27T15:38:07.109Z"

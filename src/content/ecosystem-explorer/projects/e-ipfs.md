@@ -1,6 +1,5 @@
 ---
 title: E-IPFS
-slug: e-ipfs
 created-on: 2024-04-05T00:10:47.073000Z
 updated-on: 2024-04-05T00:10:47.096000Z
 published-on: 2024-04-05T00:10:47.104000Z

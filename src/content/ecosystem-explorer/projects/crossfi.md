@@ -1,6 +1,5 @@
 ---
 title: CrossFi
-slug: crossfi
 created-on: 2024-01-17T14:44:30.832000Z
 updated-on: 2024-01-17T14:44:30.857000Z
 published-on: 2024-01-17T14:44:30.872000Z

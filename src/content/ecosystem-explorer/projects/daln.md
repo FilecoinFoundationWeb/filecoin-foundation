@@ -18,7 +18,6 @@ tech:
   - filecoin
 repo: https://github.com/DALN-app/monorepo_v2
 news-update: null
-slug: daln
 featured-content: null
 twitter: https://twitter.com/DataHaus_
 video-url: null

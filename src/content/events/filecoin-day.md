@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Day"
-slug: "filecoin-day"
 created-on: "2023-11-13T18:09:36.531Z"
 updated-on: "2023-11-13T18:09:36.547Z"
 published-on: "2023-11-13T18:09:36.559Z"

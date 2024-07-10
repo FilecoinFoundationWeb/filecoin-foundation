@@ -1,6 +1,5 @@
 ---
 title: "Cryptoworth"
-slug: "cryptoworth"
 created-on: 2024-02-26T21:34:10.287000Z
 updated-on: 2024-02-26T21:34:10.297000Z
 published-on: 2024-02-26T21:34:10.305000Z
