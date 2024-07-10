@@ -1,6 +1,6 @@
-import { PATHS } from '../../src/app/_constants/paths'
-import { getRandomSlug } from '../support/getRandomSlugUtil'
-import { verifyMetadata } from '../support/verifyMetadataUtil'
+import { PATHS } from '../../../src/app/_constants/paths'
+import { getRandomSlug } from '../../support/getRandomSlugUtil'
+import { verifyMetadata } from '../../support/verifyMetadataUtil'
 
 describe('Random Events Page', function () {
   it('should check metadata of a random events page', function () {
