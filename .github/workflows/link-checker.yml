@@ -31,4 +31,4 @@ jobs:
           npx wait-on http://localhost:3000
 
       - name: Run Weekly Cypress Test
-        run: npx cypress run --spec "cypress/e2e/weekly_schedule/all_ecosystem_pages.spec.cy.ts"
+        run: npx cypress run --spec "cypress/e2e/weekly_schedule/**/*.cy.ts"

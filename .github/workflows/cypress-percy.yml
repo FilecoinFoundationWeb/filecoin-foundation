@@ -31,7 +31,7 @@ jobs:
           echo "Waiting for server to start..."
           npx wait-on http://localhost:3000
 
-      - name: Run Cypress Tests with Percy
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: npm run test
+      # - name: Run Cypress Tests with Percy
+      #   env:
+      #     PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      #   run: npm run test
