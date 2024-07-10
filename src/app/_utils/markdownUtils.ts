@@ -25,7 +25,9 @@ export function readAndValidateMarkdownFile(
     throw new Error(`Invalid front matter in file: ${filePath}`)
   }
 
-  return { data, content }
+  const slug = path.parse(filePath).name
+
+  return { data: { ...data, slug }, content }
 }
 
 export function readAndValidateMarkdownFiles(
