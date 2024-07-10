@@ -14,7 +14,7 @@ export function readAndValidateYamlFiles<T extends BaseYAMLData>(
   const filenames = fs.readdirSync(directory)
 
   return filenames.map((filename) => {
-    const slug = filename.replace(/\.yml$/, '')
+    const slug = path.parse(filename).name
     const filePath = path.join(directory, filename)
     const fileContent = fs.readFileSync(filePath, 'utf8')
     const data = yaml.load(fileContent) as T
