@@ -5,6 +5,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: "0 0 * * 0" # run at midnight UTC every Sunday
 
 jobs:
   cypress-run:
@@ -34,4 +36,34 @@ jobs:
       - name: Run Cypress Tests with Percy
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: npm run test
+        run: percy exec -- cypress run --spec "cypress/e2e/normal_schedule/**/*"
+
+  cypress-weekly:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' # run this job only on scheduled events
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.11.1"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Start Server
+        run: |
+          npm start &
+          echo "Waiting for server to start..."
+          npx wait-on http://localhost:3000
+
+      - name: Run Weekly Cypress Tests with Percy
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        run: npx cypress run --spec "cypress/e2e/weekly_tests/**/*"
