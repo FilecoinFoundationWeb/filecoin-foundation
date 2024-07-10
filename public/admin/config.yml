@@ -458,7 +458,6 @@ collections:
       - name: description
         label: Short Description
         widget: string
-        required: true
       - name: website
         label: Website
         widget: string
