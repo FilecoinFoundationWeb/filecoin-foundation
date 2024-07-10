@@ -1,5 +1,30 @@
 import { CMSFieldConfig } from '@/types/cmsConfig'
 
+function validateField(
+  data: any,
+  field: CMSFieldConfig,
+  missingFieldsToSkipCheck: string[],
+  missingFields: string[],
+) {
+  if (field.widget === 'object' && field.fields) {
+    console.log('field.widget', field)
+    field.fields.forEach((nestedField) =>
+      validateField(
+        data[field.name] || {},
+        nestedField,
+        missingFieldsToSkipCheck,
+        missingFields,
+      ),
+    )
+  } else if (
+    !missingFieldsToSkipCheck.includes(field.name) &&
+    field.required !== false &&
+    data[field.name] === undefined
+  ) {
+    missingFields.push(field.name)
+  }
+}
+
 export function validateFrontMatter(
   data: any,
   fields: CMSFieldConfig[],
@@ -15,13 +40,11 @@ export function validateFrontMatter(
     ...dynamicMissingFieldsToSkipCheck,
   ]
 
-  const missingFields: string[] = fields
-    .filter(
-      (field) =>
-        !missingFieldsToSkipCheck.includes(field.name) &&
-        data[field.name] === undefined,
-    )
-    .map((field) => field.name)
+  const missingFields: string[] = []
+
+  fields.forEach((field) => {
+    validateField(data, field, missingFieldsToSkipCheck, missingFields)
+  })
 
   const extraFields: string[] = Object.keys(data).filter(
     (key) =>

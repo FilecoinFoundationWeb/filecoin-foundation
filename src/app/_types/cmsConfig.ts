@@ -9,6 +9,7 @@ export type CMSFieldConfig = {
   widget: string
   required?: boolean
   options?: CMSFieldOption[]
+  fields?: CMSFieldConfig[]
 }
 
 export type CMSCollectionConfig = {
