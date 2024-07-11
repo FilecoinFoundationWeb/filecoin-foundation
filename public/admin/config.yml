@@ -18,6 +18,21 @@ header_config: &header_config
       label: "Description"
       widget: "text"
 
+image_config: &image_config
+  name: "image"
+  label: "Image"
+  widget: "object"
+  fields:
+    - name: "url"
+      label: "URL"
+      widget: "image"
+      allow_multiple: false
+    - name: "alt"
+      label: "Alt Text"
+      widget: "string"
+      required: false
+      hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, use ChatGPT 4.0 to generate alt text for images."
+
 meta_config: &meta_config
   name: "seo"
   label: "SEO Metadata"
@@ -232,19 +247,7 @@ collections:
       - name: "description"
         label: "Description"
         widget: "text"
-      - name: "image"
-        label: "Image"
-        widget: "object"
-        fields:
-          - name: "url"
-            label: "URL"
-            widget: "image"
-            allow_multiple: false
-          - name: "alt"
-            label: "Alt Text"
-            widget: "string"
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *image_config
       - name: "body"
         label: "Content"
         widget: "markdown"
@@ -333,19 +336,7 @@ collections:
         label: Published On
         widget: datetime
         required: false
-      - name: image
-        label: Image
-        widget: object
-        fields:
-          - name: url
-            label: URL
-            widget: image
-            allow_multiple: false
-          - name: alt
-            label: Alt Text
-            widget: string
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *image_config
       - name: category
         label: Category
         widget: relation
@@ -545,18 +536,7 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
-      - name: "image"
-        label: "Image"
-        widget: "object"
-        fields:
-          - name: "url"
-            label: "URL"
-            widget: "image"
-          - name: "alt"
-            label: "Alt Text"
-            widget: "string"
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *image_config
       - name: "involvement"
         label: "FF Involvement"
         widget: "select"
