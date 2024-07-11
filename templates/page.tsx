@@ -19,16 +19,14 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.__PATH_NAME__.path,
-  useAbsoluteTitle: true,
 })
 
-export default function __PAGE_NAME_PASCALCASE__() {
+export default function __PAGE_NAME_PASCAL_CASE__() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
-        description={header.description}
         image={graphicsData.imageFallback}
       />
 

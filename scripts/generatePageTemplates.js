@@ -1,7 +1,13 @@
 const fs = require('fs')
 const path = require('path')
 
-const { toCamelCase, generateFile, createDir } = require('./helpers')
+const {
+  constantCase,
+  snakeCase,
+  startCase,
+  generateFile,
+  createDir,
+} = require('./helpers')
 
 const pagePath = path.resolve(__dirname, '../templates/page.tsx')
 const generateStructuredDataPath = path.resolve(
@@ -9,29 +15,25 @@ const generateStructuredDataPath = path.resolve(
   '../templates/utils/generateStructuredData.ts',
 )
 const layoutPath = path.resolve(__dirname, '../templates/layout.tsx')
-const dataPath = path.resolve(__dirname, '../templates/data/data.tsx')
 const pageMdPath = path.resolve(__dirname, '../templates/page.md')
+const testPath = path.resolve(__dirname, '../templates/test_spec.cy.ts')
 
 const pathsFilePath = path.resolve(__dirname, '../src/app/_constants/paths.ts')
-const siteMetadataFilePath = path.resolve(
-  __dirname,
-  '../src/app/_constants/siteMetadata.ts',
-)
 
 const pageName = process.argv[2]
 if (!pageName) {
-  console.error('Please provide a page name.')
+  console.error('Please provide a page name - example "employee-policy".')
   process.exit(1)
 }
 
 const outputDir = path.join(__dirname, '../src/app', pageName)
 const mdOutputDir = path.join(__dirname, '../src/content/pages')
-const dataOutputDir = path.join(outputDir, 'data')
+const testOutputDir = path.join(__dirname, '../cypress/e2e')
 const utilsOutputDir = path.join(outputDir, 'utils')
 
 createDir(outputDir)
 createDir(mdOutputDir)
-createDir(dataOutputDir)
+createDir(testOutputDir)
 createDir(utilsOutputDir)
 
 generateFile(pagePath, path.join(outputDir, 'page.tsx'), pageName)
@@ -41,8 +43,12 @@ generateFile(
   pageName,
 )
 generateFile(layoutPath, path.join(outputDir, 'layout.tsx'), pageName)
-generateFile(dataPath, path.join(dataOutputDir, 'data.tsx'), pageName)
 generateFile(pageMdPath, path.join(mdOutputDir, `${pageName}.md`), pageName)
+generateFile(
+  testPath,
+  path.join(testOutputDir, `${snakeCase(pageName)}_page_spec.cy.ts`),
+  pageName,
+)
 
 const updatePathFile = (pageName) => {
   fs.readFile(pathsFilePath, 'utf8', (err, data) => {
@@ -52,11 +58,11 @@ const updatePathFile = (pageName) => {
     }
 
     const newPath = `  | '/${pageName}'\n`
-    const newPathObject = `  ${pageName.toUpperCase().replace(/-/g, '_')}: createPathObject({
+    const newPathObject = `  ${constantCase(pageName)}: createPathObject({
     path: '/${pageName}',
     label: '${pageName
       .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word) => startCase(word))
       .join(' ')}',
   }),`
 
@@ -94,45 +100,4 @@ const updatePathFile = (pageName) => {
   })
 }
 
-const updateUrlsFile = (pageName) => {
-  fs.readFile(siteMetadataFilePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading URLs configuration file:', err)
-      return
-    }
-
-    const pageNameCamelCase = toCamelCase(pageName)
-    const newObject = `  ${pageNameCamelCase}: {
-      email: {
-        href: '#',
-      },
-    },`
-
-    let updatedData = data
-
-    if (!updatedData.includes(newObject)) {
-      const exportIndex = updatedData.indexOf(
-        'export const FILECOIN_FOUNDATION_URLS = {',
-      )
-      const endIndex = updatedData.indexOf('} as const', exportIndex)
-      updatedData =
-        updatedData.slice(0, endIndex) +
-        `\n${newObject}` +
-        updatedData.slice(endIndex)
-    }
-
-    fs.writeFile(siteMetadataFilePath, updatedData, 'utf8', (err) => {
-      if (err) {
-        console.error('Error writing to URLs configuration file:', err)
-        return
-      }
-
-      console.log(
-        `URLs configuration file updated successfully with ${pageNameCamelCase}.`,
-      )
-    })
-  })
-}
-
 updatePathFile(pageName)
-updateUrlsFile(pageName)
