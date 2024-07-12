@@ -1,4 +1,3 @@
-const fs = require('fs')
 const path = require('path')
 
 const {
@@ -7,18 +6,25 @@ const {
   startCase,
   generateFile,
   createDir,
-} = require('./helpers')
+  readFile,
+  writeFile,
+} = require('./generatePageTemplatesHelpers')
 
-const pagePath = path.resolve(__dirname, '../templates/page.tsx')
-const generateStructuredDataPath = path.resolve(
+const TEMPLATE_PATHS = {
+  page: path.resolve(__dirname, '../templates/page.tsx'),
+  generateStructuredData: path.resolve(
+    __dirname,
+    '../templates/utils/generateStructuredData.ts',
+  ),
+  layout: path.resolve(__dirname, '../templates/layout.tsx'),
+  pageMd: path.resolve(__dirname, '../templates/page.md'),
+  test: path.resolve(__dirname, '../templates/test_spec.cy.ts'),
+}
+
+const PATHS_FILE_PATH = path.resolve(
   __dirname,
-  '../templates/utils/generateStructuredData.ts',
+  '../src/app/_constants/paths.ts',
 )
-const layoutPath = path.resolve(__dirname, '../templates/layout.tsx')
-const pageMdPath = path.resolve(__dirname, '../templates/page.md')
-const testPath = path.resolve(__dirname, '../templates/test_spec.cy.ts')
-
-const pathsFilePath = path.resolve(__dirname, '../src/app/_constants/paths.ts')
 
 const pageName = process.argv[2]
 if (!pageName) {
@@ -26,78 +32,111 @@ if (!pageName) {
   process.exit(1)
 }
 
-const outputDir = path.join(__dirname, '../src/app', pageName)
-const mdOutputDir = path.join(__dirname, '../src/content/pages')
-const testOutputDir = path.join(__dirname, '../cypress/e2e')
-const utilsOutputDir = path.join(outputDir, 'utils')
+const OUTPUT_DIRS = {
+  output: path.join(__dirname, '../src/app', pageName),
+  mdOutput: path.join(__dirname, '../src/content/pages'),
+  testOutput: path.join(__dirname, '../cypress/e2e'),
+  utilsOutput: path.join(path.join(__dirname, '../src/app', pageName), 'utils'),
+}
 
-createDir(outputDir)
-createDir(mdOutputDir)
-createDir(testOutputDir)
-createDir(utilsOutputDir)
+Object.values(OUTPUT_DIRS).forEach(createDir)
 
-generateFile(pagePath, path.join(outputDir, 'page.tsx'), pageName)
 generateFile(
-  generateStructuredDataPath,
-  path.join(utilsOutputDir, 'generateStructuredData.tsx'),
+  TEMPLATE_PATHS.page,
+  path.join(OUTPUT_DIRS.output, 'page.tsx'),
   pageName,
 )
-generateFile(layoutPath, path.join(outputDir, 'layout.tsx'), pageName)
-generateFile(pageMdPath, path.join(mdOutputDir, `${pageName}.md`), pageName)
 generateFile(
-  testPath,
-  path.join(testOutputDir, `${snakeCase(pageName)}_page_spec.cy.ts`),
+  TEMPLATE_PATHS.generateStructuredData,
+  path.join(OUTPUT_DIRS.utilsOutput, 'generateStructuredData.tsx'),
+  pageName,
+)
+generateFile(
+  TEMPLATE_PATHS.layout,
+  path.join(OUTPUT_DIRS.output, 'layout.tsx'),
+  pageName,
+)
+generateFile(
+  TEMPLATE_PATHS.pageMd,
+  path.join(OUTPUT_DIRS.mdOutput, `${pageName}.md`),
+  pageName,
+)
+generateFile(
+  TEMPLATE_PATHS.test,
+  path.join(OUTPUT_DIRS.testOutput, `${snakeCase(pageName)}_page_spec.cy.ts`),
   pageName,
 )
 
-const updatePathFile = (pageName) => {
-  fs.readFile(pathsFilePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading configuration file:', err)
-      return
+const updatePathFile = async (pageName) => {
+  try {
+    let data = await readFile(PATHS_FILE_PATH)
+
+    const newPathObject = `${constantCase(pageName)}: createPathObject({
+      path: '/${pageName}',
+      label: '${pageName
+        .split('-')
+        .map((word) => startCase(word))
+        .join(' ')}',
+    }),`
+
+    // UPDATE PATH
+    const typeIndex = data.indexOf('export type PathValues =')
+    const typeStart = data.indexOf('=', typeIndex) + 1
+    const typeEnd = data.indexOf('export interface PathConfig', typeStart)
+
+    let paths = data
+      .slice(typeStart, typeEnd)
+      .trim()
+      .split('\n')
+      .map((path) => path.trim())
+      .filter((path) => path !== '|')
+
+    paths = paths.map((path) => path.replace(/^\|/, '').trim())
+
+    if (!paths.includes(`'/${pageName}'`)) {
+      paths.push(`'/${pageName}'`)
     }
 
-    const newPath = `  | '/${pageName}'\n`
-    const newPathObject = `  ${constantCase(pageName)}: createPathObject({
-    path: '/${pageName}',
-    label: '${pageName
-      .split('-')
-      .map((word) => startCase(word))
-      .join(' ')}',
-  }),`
+    paths.sort()
+    const newTypeDefinition =
+      '\n  ' + paths.map((path) => `| ${path}`).join('\n  ') + ';\n'
+    data = data.slice(0, typeStart) + newTypeDefinition + data.slice(typeEnd)
 
-    let updatedData = data
+    // UPDATE PATH OBJECT
+    const pathsObjectIndex = data.indexOf('export const PATHS = {')
+    const pathsObjectStart = data.indexOf('{', pathsObjectIndex) + 1
+    const pathsObjectEnd = data.indexOf('} as const', pathsObjectStart)
 
-    if (!updatedData.includes(newPath.trim())) {
-      const pathValuesIndex = updatedData.indexOf('export type PathValues =')
-      const pathValuesInsertIndex = updatedData.indexOf(
-        "| '/about'",
-        pathValuesIndex,
-      )
-      updatedData =
-        updatedData.slice(0, pathValuesInsertIndex) +
-        `${newPath}` +
-        updatedData.slice(pathValuesInsertIndex)
+    let pathObjects = data
+      .slice(pathsObjectStart, pathsObjectEnd)
+      .trim()
+      .split('}),')
+      .filter((item) => item.trim() !== '')
+      .map((item) => item.trim() + '\n }),')
+
+    pathObjects = pathObjects.map((path) => path.replace(/^\s+/, '').trim())
+
+    if (!pathObjects.some((obj) => obj.startsWith(constantCase(pageName)))) {
+      pathObjects.push(newPathObject)
     }
 
-    if (!updatedData.includes(newPathObject)) {
-      const pathsIndex = updatedData.indexOf('export const PATHS = {')
-      const pathsEndIndex = updatedData.indexOf('} as const', pathsIndex)
-      updatedData =
-        updatedData.slice(0, pathsEndIndex) +
-        `\n${newPathObject}` +
-        updatedData.slice(pathsEndIndex)
-    }
-
-    fs.writeFile(pathsFilePath, updatedData, 'utf8', (err) => {
-      if (err) {
-        console.error('Error writing to configuration file:', err)
-        return
-      }
-
-      console.log(`Configuration file updated successfully with /${pageName}.`)
+    pathObjects.sort((a, b) => {
+      const nameA = a.split(':')[0].trim()
+      const nameB = b.split(':')[0].trim()
+      return nameA.localeCompare(nameB)
     })
-  })
+
+    const newPathObjects = '\n  ' + pathObjects.join('\n  ') + '\n'
+    data =
+      data.slice(0, pathsObjectStart) +
+      newPathObjects +
+      data.slice(pathsObjectEnd)
+
+    await writeFile(PATHS_FILE_PATH, data)
+    console.log(`Configuration file updated successfully with /${pageName}.`)
+  } catch (err) {
+    console.error('Error updating paths file:', err)
+  }
 }
 
 updatePathFile(pageName)

@@ -30,13 +30,25 @@ const kebabCase = transformPipe(strip, addDashes, lowercase)
 const snakeCase = transformPipe(strip, addUnderscores, lowercase)
 const constantCase = transformPipe(strip, addUnderscores, uppercase)
 
-const generateFile = (templatePath, outputPath, pageName) => {
-  fs.readFile(templatePath, 'utf8', (err, data) => {
-    if (err) {
-      console.error('Error reading template file:', err)
-      return
-    }
+const readFile = (filePath, encoding = 'utf8') =>
+  new Promise((resolve, reject) => {
+    fs.readFile(filePath, encoding, (err, data) => {
+      if (err) reject(err)
+      else resolve(data)
+    })
+  })
 
+const writeFile = (filePath, data, encoding = 'utf8') =>
+  new Promise((resolve, reject) => {
+    fs.writeFile(filePath, data, encoding, (err) => {
+      if (err) reject(err)
+      else resolve()
+    })
+  })
+
+const generateFile = async (templatePath, outputPath, pageName) => {
+  try {
+    let data = await readFile(templatePath)
     data = removeBackticks(data)
 
     const pageContent = data
@@ -47,15 +59,11 @@ const generateFile = (templatePath, outputPath, pageName) => {
       .replace(/__PAGE_NAME_START_CASE__/g, startCase(pageName))
       .replace(/__PAGE_NAME_LOWER_CASE__/g, strip(pageName))
 
-    fs.writeFile(outputPath, pageContent, 'utf8', (err) => {
-      if (err) {
-        console.error('Error writing file:', err)
-        return
-      }
-
-      console.log(`File created successfully at ${outputPath}.`)
-    })
-  })
+    await writeFile(outputPath, pageContent)
+    console.log(`File created successfully at ${outputPath}.`)
+  } catch (err) {
+    console.error('Error generating file:', err)
+  }
 }
 
 const createDir = (dirPath) => {
@@ -71,4 +79,6 @@ module.exports = {
   constantCase,
   generateFile,
   createDir,
+  readFile,
+  writeFile,
 }
