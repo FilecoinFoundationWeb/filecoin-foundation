@@ -1,35 +1,18 @@
-type FormatDateOption = 'default' | 'blog' | 'event'
+export function isDateValid(date: string | Date): boolean {
+  return !Number.isNaN(new Date(date).getTime())
+}
 
-export function formatDate(
-  dateString: string,
-  format: FormatDateOption = 'default',
-): string {
+export function formatDate(dateString: string): string {
   const date = new Date(dateString)
-
-  if (!isDateValid(date)) {
-    console.error('Invalid date provided:', dateString)
-    return 'Invalid Date'
+  const options: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
   }
 
-  let options: Intl.DateTimeFormatOptions
-
-  switch (format) {
-    case 'blog':
-      options = { year: 'numeric', month: 'long', day: 'numeric' }
-      break
-    case 'event':
-      options = { year: 'numeric', month: '2-digit', day: '2-digit' }
-      break
-    default:
-      options = { year: 'numeric', month: 'short', day: 'numeric' }
+  if (!isDateValid(date)) {
+    throw new Error(`Invalid date provided: ${dateString}`)
   }
 
   return date.toLocaleDateString('en-US', options)
-}
-
-export function isDateValid(dateString: string | Date) {
-  const date = new Date(dateString)
-  const isValid = !Number.isNaN(date.getTime())
-
-  return isValid
 }
