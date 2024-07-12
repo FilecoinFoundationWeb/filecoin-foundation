@@ -8,6 +8,7 @@ describe('__PAGE_NAME_START_CASE__ Page', function () {
       path: PATHS.__PATH_NAME__
     })
   })
+
   it('should check links for the __PAGE_NAME_LOWER_CASE__ page', function () {
     verifyLinks(PATHS.__PATH_NAME__.path)
   })
