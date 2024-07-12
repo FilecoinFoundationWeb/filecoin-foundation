@@ -7,8 +7,7 @@ description: >-
   In 2017, the creators of Filecoin envisioned an independent foundation that
   would serve as the long-term governance body for the Filecoin ecosystem.
 image:
-  url: >-
-    /assets/images/64423bfbca39dd7d4d1f170f_1-mbcuqyncw-uoyzwsbrapqw.png
+  src: /assets/images/64423bfbca39dd7d4d1f170f_1-mbcuqyncw-uoyzwsbrapqw.png
   alt:
 recommended-posts: []
 category: ecosystem

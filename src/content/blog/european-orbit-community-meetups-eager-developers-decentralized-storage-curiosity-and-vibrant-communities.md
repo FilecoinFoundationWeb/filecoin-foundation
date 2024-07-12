@@ -9,7 +9,7 @@ description: "The Filecoin Orbit community teamed up with Filecoin Foundation
   recently on a Europe roadshow tour to engage builders, strengthen the
   community, and drive interest in the region. "
 image:
-  url: /assets/images/110624-europe.png
+  src: /assets/images/110624-europe.png
 recommended-posts: []
 seo:
   twitter:

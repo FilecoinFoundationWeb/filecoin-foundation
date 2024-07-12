@@ -7,7 +7,7 @@ description:
   "The Filecoin Foundation is thrilled to welcome Sonia John to the Filecoin
   Foundation team! "
 image:
-  url: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
+  src: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
   alt:
 recommended-posts: []
 category: interviews

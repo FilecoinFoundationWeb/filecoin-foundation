@@ -11,7 +11,7 @@ description:
   be run by any one of thousands of hosting providers around the world, instead of
   just being run by Amazon by default."
 image:
-  url: /assets/images/0905-dweb-on-the-rise.png
+  src: /assets/images/0905-dweb-on-the-rise.png
   alt:
 recommended-posts: []
 category: ecosystem

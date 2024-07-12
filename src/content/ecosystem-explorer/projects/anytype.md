@@ -4,7 +4,7 @@ created-on: 2024-04-05T17:13:01.978Z
 updated-on: 2024-04-05T17:13:01.996Z
 published-on: 2024-04-05T17:13:02.007Z
 image:
-  url: /assets/images/anytype.png
+  src: /assets/images/anytype.png
   alt: Anytype Logo
 category: tooling-productivity
 subcategories:

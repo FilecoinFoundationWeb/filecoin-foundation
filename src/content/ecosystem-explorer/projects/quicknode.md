@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073296c00a4b6b1e84bf32_quicknode.png
+  src: /assets/images/66073296c00a4b6b1e84bf32_quicknode.png
   alt: QuickNode Logo
 website: https://www.quicknode.com/
 featured-content:

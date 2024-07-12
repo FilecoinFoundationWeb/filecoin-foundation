@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/corgi_logo_white.png
+  src: /assets/images/corgi_logo_white.png
   alt: CORGI Logo
 website: "https://filecorgi.xyz/"
 featured-content:

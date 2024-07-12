@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732963cc8098d637f66b8_securedfinance.png
+  src: /assets/images/660732963cc8098d637f66b8_securedfinance.png
   alt: Secured Finance Logo
 website: https://secured-finance.com/
 featured-content:

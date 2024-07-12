@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/starling_logo_white-1-.png
+  src: /assets/images/starling_logo_white-1-.png
   alt: Starling Lab Logo
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.fastcompany.com/90731729/inside-starling-lab-a-moonshot-project-to-preserve-the-worlds-most-important-information"

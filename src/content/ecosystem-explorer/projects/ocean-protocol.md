@@ -13,7 +13,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/659751a52d6836af7fb440be_ocean-protocol-logo.png
+  src: /assets/images/659751a52d6836af7fb440be_ocean-protocol-logo.png
   alt: "Ocean Protocol Logo"
 website: "https://oceanprotocol.com"
 featured-content:

@@ -8,8 +8,7 @@ description: >-
   Commons initiative to support open data projects in partnership with
   government and official organizations across the globe.
 image:
-  url: >-
-    /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
+  src: /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
   alt:
 recommended-posts: []
 category: news

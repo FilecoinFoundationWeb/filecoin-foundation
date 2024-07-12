@@ -10,8 +10,7 @@ description: >-
   community members can submit, discuss, and approve changes to the Filecoin
   protocol.
 image:
-  url: >-
-    /assets/images/64423bdeb13e032a58960cfb_1-xicc70v_m64rcu1wlbq6qq.png
+  src: /assets/images/64423bdeb13e032a58960cfb_1-xicc70v_m64rcu1wlbq6qq.png
   alt:
 recommended-posts: []
 category: ecosystem

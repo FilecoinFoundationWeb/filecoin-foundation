@@ -4,7 +4,7 @@ created-on: 2024-04-25T17:21:06.414Z
 updated-on: 2024-04-25T17:21:06.439Z
 published-on: 2024-04-25T17:21:06.448Z
 image:
-  url: /assets/images/solmedia.png
+  src: /assets/images/solmedia.png
   alt: Solmedia Logo
 category: storage
 subcategories:

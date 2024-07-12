@@ -8,7 +8,7 @@ description: >-
   Explorer Awards, a joint program to support the growth of the decentralized web
   movement and help others catalyze their Web3 learning.
 image:
-  url: /assets/images/0609-ffxunfinished.png
+  src: /assets/images/0609-ffxunfinished.png
   alt:
 recommended-posts: []
 category: news

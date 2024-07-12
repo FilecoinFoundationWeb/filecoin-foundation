@@ -13,7 +13,7 @@ description: >-
   facilitate rights management of digital assets, and unlock fundraising and
   commercialization opportunities.
 image:
-  url: /assets/images/070723-qa-artifactlabs.png
+  src: /assets/images/070723-qa-artifactlabs.png
   alt:
 recommended-posts: []
 category: use-cases

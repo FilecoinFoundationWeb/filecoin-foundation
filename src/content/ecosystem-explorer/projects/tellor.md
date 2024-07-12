@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073297e6e8ec9445d76d19_tellor.png
+  src: /assets/images/66073297e6e8ec9445d76d19_tellor.png
   alt: Tellor Logo
 website: https://tellor.io/
 featured-content:

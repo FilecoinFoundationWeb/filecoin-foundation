@@ -8,7 +8,7 @@ description:
   Governance Summit, a three-day series of meetings, brainstorming sessions, and design
   sprints.
 image:
-  url: /assets/images/image-c-18.png
+  src: /assets/images/image-c-18.png
   alt:
 recommended-posts: []
 category: events

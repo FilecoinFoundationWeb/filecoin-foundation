@@ -9,7 +9,7 @@ external-link: https://www.fil-seoul.com/
 start-date: "2023-09-06T07:06:47.822Z"
 end-date: "2023-09-07T07:06:47.832Z"
 image:
-  url: /assets/images/fil-seoul-bg.png
+  src: /assets/images/fil-seoul-bg.png
   alt:
 involvement: hosted
 seo:

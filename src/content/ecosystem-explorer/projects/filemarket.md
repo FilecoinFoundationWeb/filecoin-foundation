@@ -17,7 +17,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/filemarket_logo_white.png
+  src: /assets/images/filemarket_logo_white.png
   alt: FileMarket Logo
 website: "https://filemarket.xyz"
 featured-content:

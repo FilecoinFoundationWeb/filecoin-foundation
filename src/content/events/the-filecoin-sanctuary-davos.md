@@ -9,7 +9,7 @@ external-link:
 start-date: "2023-01-15T16:51:17.049Z"
 end-date: "2023-01-20T16:51:17.055Z"
 image:
-  url: /assets/images/davos-2023-pic.png
+  src: /assets/images/davos-2023-pic.png
   alt:
 involvement: hosted
 seo:

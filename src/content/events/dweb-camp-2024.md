@@ -10,7 +10,7 @@ start-date: "2024-08-07T14:55:19.871Z"
 
 end-date: "2024-08-11T14:55:19.882Z"
 image:
-  url: /assets/images/dweb-camp24.png
+  src: /assets/images/dweb-camp24.png
   alt: DWeb Camp Logo
 involvement: hosted
 seo:

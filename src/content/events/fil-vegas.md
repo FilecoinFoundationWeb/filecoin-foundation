@@ -9,7 +9,7 @@ external-link: https://fil-vegas.io/
 start-date: "2023-10-03T17:09:07.043Z"
 end-date: "2023-10-05T17:09:07.051Z"
 image:
-  url: /assets/images/fil-vegas-event-header.png
+  src: /assets/images/fil-vegas-event-header.png
   alt:
 involvement: hosted
 seo:

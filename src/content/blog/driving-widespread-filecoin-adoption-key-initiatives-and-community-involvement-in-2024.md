@@ -12,7 +12,7 @@ description:
   growth metrics and outline what some Ecosystem leaders suggest are the keys to further
   expansion in 2024."
 image:
-  url: /assets/images/050924-adoption.png
+  src: /assets/images/050924-adoption.png
   alt:
 recommended-posts: []
 seo:

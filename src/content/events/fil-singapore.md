@@ -9,7 +9,7 @@ external-link: https://fil-singapore.io/
 start-date: "2022-09-24T00:00:00.000Z"
 end-date: "2022-09-26T00:00:00.000Z"
 image:
-  url: /assets/images/645218e87f5430741f6d9bd6_fil-singapore.jpg
+  src: /assets/images/645218e87f5430741f6d9bd6_fil-singapore.jpg
   alt:
 involvement: hosted
 seo:

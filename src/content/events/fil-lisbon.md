@@ -9,7 +9,7 @@ external-link: https://fil-lisbon.io/
 start-date: "2022-10-31T00:00:00.000Z"
 end-date: "2022-11-04T00:00:00.000Z"
 image:
-  url: /assets/images/645217c53763d71fa57e55a0_fil-lisbon.jpg
+  src: /assets/images/645217c53763d71fa57e55a0_fil-lisbon.jpg
   alt:
 involvement: hosted
 seo:

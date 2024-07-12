@@ -10,7 +10,7 @@ description:
   information by incentivizing data onboarding across use-cases with community governed
   trust mechanisms.
 image:
-  url: /assets/images/03292023-filplusmission.png
+  src: /assets/images/03292023-filplusmission.png
   alt:
 recommended-posts: []
 category: ecosystem

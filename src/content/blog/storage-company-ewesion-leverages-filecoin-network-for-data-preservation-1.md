@@ -8,8 +8,7 @@ description: >-
   serves everyone from large and medium-sized enterprises to media and
   individual users.
 image:
-  url: >-
-    /assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
+  src: /assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
   alt:
 recommended-posts: []
 category: use-cases

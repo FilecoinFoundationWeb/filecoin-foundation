@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/long_white.png
+  src: /assets/images/long_white.png
   alt: GLIF Logo
 website: https://glif.io
 repo: https://github.com/glifio

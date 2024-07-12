@@ -9,7 +9,7 @@ external-link:
 start-date: "2024-07-10T14:51:57.398Z"
 end-date: "2024-07-11T14:51:57.409Z"
 image:
-  url: /assets/images/ethcc-24.png
+  src: /assets/images/ethcc-24.png
   alt: EthCC Logo
 involvement: sponsored
 seo:

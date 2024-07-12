@@ -9,7 +9,7 @@ external-link: https://www.fil-jakarta.io/
 start-date: "2023-09-02T11:00:23.071Z"
 end-date:
 image:
-  url: /assets/images/fil-jakarta.png
+  src: /assets/images/fil-jakarta.png
   alt:
 involvement: hosted
 seo:

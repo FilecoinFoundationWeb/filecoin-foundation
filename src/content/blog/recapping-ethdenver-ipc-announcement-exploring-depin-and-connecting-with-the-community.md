@@ -11,7 +11,7 @@ description:
   the Filecoin ecosystem for a week of collaboration and innovation –– to usher the
   network into a new era of adoption and growth."
 image:
-  url: /assets/images/ethdenver.png
+  src: /assets/images/ethdenver.png
   alt:
     "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
     the Community"

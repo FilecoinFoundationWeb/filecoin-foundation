@@ -4,7 +4,7 @@ created-on: 2024-03-29T21:28:53.652Z
 updated-on: 2024-03-29T21:45:56.946Z
 published-on: 2024-03-29T21:45:56.946Z
 image:
-  url: /assets/images/mona.png
+  src: /assets/images/mona.png
   alt: Mona
 category: media-entertainment
 subcategories:

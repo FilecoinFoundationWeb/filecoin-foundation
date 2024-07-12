@@ -17,7 +17,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/nebulahblock_logo_white.png
+  src: /assets/images/nebulahblock_logo_white.png
   alt: Nebula Block Logo
 featured-content:
 website: https://www.nebulablock.com/

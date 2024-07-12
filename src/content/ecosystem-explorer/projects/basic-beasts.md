@@ -10,7 +10,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/66073290babeabe27e0b8354_basicbeasts.png
+  src: /assets/images/66073290babeabe27e0b8354_basicbeasts.png
   alt: Basic Beasts Logo
 website: https://www.basicbeasts.io/
 featured-content:

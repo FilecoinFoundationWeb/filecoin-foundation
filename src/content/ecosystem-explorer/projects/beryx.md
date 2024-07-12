@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/beryx_logo_white.png
+  src: /assets/images/beryx_logo_white.png
   alt: Beryx Logo
 website: www.beryx.io
 featured-content:

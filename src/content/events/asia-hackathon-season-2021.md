@@ -9,7 +9,7 @@ start-date: 2021-07-31T22:00:00.000Z
 end-date: 2021-10-30T22:00:00.000Z
 updated-on: 2023-05-03T08:06:33.937Z
 image:
-  url: /assets/images/filorg_imagefallback.png
+  src: /assets/images/filorg_imagefallback.png
   alt: Filecoin Foundation Holder Image
 involvement: supported
 seo:

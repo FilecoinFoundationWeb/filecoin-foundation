@@ -9,7 +9,7 @@ external-link:
 start-date: "2024-04-13T14:47:33.396Z"
 end-date: "2024-04-14T14:47:33.405Z"
 image:
-  url: /assets/images/funding-the-commons24.png
+  src: /assets/images/funding-the-commons24.png
   alt: Funding the Commons SF Logo
 involvement: supported
 seo:

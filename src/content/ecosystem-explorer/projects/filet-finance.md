@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
+  src: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
   alt: Filet Finance Logo
 featured-content:
 website: https://www.filet.finance

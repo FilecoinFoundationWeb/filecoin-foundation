@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073292f68243b0fc173909_forcecommunity.png
+  src: /assets/images/66073292f68243b0fc173909_forcecommunity.png
   alt: Force Community
 website: https://forcecommunity.io/
 featured-content:

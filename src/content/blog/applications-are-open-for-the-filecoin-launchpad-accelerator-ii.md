@@ -7,7 +7,7 @@ description:
   "Filecoin Launchpad Accelerator, powered by Tachyon, is seeking applications
   for its next cohort of innovators. "
 image:
-  url: /assets/images/image-c-26.png
+  src: /assets/images/image-c-26.png
   alt:
 recommended-posts: []
 category: news

@@ -10,7 +10,7 @@ description: The Filecoin Sanctuary in Davos brought together the world’s
   future of the decentralized web.
 recommended-posts: []
 image:
-  url: /assets/images/020724-davos.png
+  src: /assets/images/020724-davos.png
   alt: Recapping Filecoin Foundation at Davos
 seo:
   noindex: false

@@ -8,7 +8,7 @@ description:
   development projects to foster a more robust and efficient decentralized web through
   the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-17.png
+  src: /assets/images/image-c-17.png
   alt:
 recommended-posts: []
 category: news

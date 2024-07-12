@@ -9,7 +9,7 @@ description:
   How an Open Science Commons Project Built on Web3 Infrastructure Empowers
   Community Discovery
 image:
-  url: /assets/images/0224-cs-opsci.png
+  src: /assets/images/0224-cs-opsci.png
   alt:
 recommended-posts: []
 category: use-cases

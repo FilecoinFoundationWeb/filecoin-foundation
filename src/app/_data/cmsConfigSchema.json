@@ -24,6 +24,27 @@
       }
     ]
   },
+  "image_config": {
+    "name": "image",
+    "label": "Image",
+    "widget": "object",
+    "fields": [
+      {
+        "name": "src",
+        "label": "URL",
+        "widget": "image",
+        "allow_multiple": false,
+        "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+      },
+      {
+        "name": "alt",
+        "label": "Alt Text",
+        "widget": "string",
+        "required": false,
+        "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+      }
+    ]
+  },
   "meta_config": {
     "name": "seo",
     "label": "SEO Metadata",
@@ -32,14 +53,13 @@
       {
         "name": "title",
         "label": "Meta Title",
-        "widget": "string",
-        "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+        "widget": "string"
       },
       {
         "name": "description",
         "label": "Meta Description",
         "widget": "text",
-        "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+        "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
       },
       {
         "name": "og",
@@ -137,14 +157,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -253,14 +272,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -355,14 +373,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -474,14 +491,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -590,14 +606,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -692,14 +707,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -794,14 +808,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -913,14 +926,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -1015,14 +1027,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -1117,14 +1128,13 @@
                 {
                   "name": "title",
                   "label": "Meta Title",
-                  "widget": "string",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "widget": "string"
                 },
                 {
                   "name": "description",
                   "label": "Meta Description",
                   "widget": "text",
-                  "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
                 },
                 {
                   "name": "og",
@@ -1264,17 +1274,18 @@
           "widget": "object",
           "fields": [
             {
-              "name": "url",
+              "name": "src",
               "label": "URL",
               "widget": "image",
-              "allow_multiple": false
+              "allow_multiple": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
             },
             {
               "name": "alt",
               "label": "Alt Text",
               "widget": "string",
               "required": false,
-              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
             }
           ]
         },
@@ -1314,14 +1325,13 @@
             {
               "name": "title",
               "label": "Meta Title",
-              "widget": "string",
-              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+              "widget": "string"
             },
             {
               "name": "description",
               "label": "Meta Description",
               "widget": "text",
-              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
             },
             {
               "name": "og",
@@ -1484,17 +1494,18 @@
           "widget": "object",
           "fields": [
             {
-              "name": "url",
+              "name": "src",
               "label": "URL",
               "widget": "image",
-              "allow_multiple": false
+              "allow_multiple": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
             },
             {
               "name": "alt",
               "label": "Alt Text",
               "widget": "string",
               "required": false,
-              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
             }
           ]
         },
@@ -1702,7 +1713,12 @@
         {
           "name": "description",
           "label": "Short Description",
-          "widget": "string"
+          "widget": "string",
+          "hint": "A short description of the project. Maximum 160 characters.",
+          "pattern": [
+            "^.{0,160}$",
+            "Description must be 160 characters or less."
+          ]
         },
         {
           "name": "website",
@@ -1769,14 +1785,13 @@
             {
               "name": "title",
               "label": "Meta Title",
-              "widget": "string",
-              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+              "widget": "string"
             },
             {
               "name": "description",
               "label": "Meta Description",
               "widget": "text",
-              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
             },
             {
               "name": "og",
@@ -1909,16 +1924,18 @@
           "widget": "object",
           "fields": [
             {
-              "name": "url",
+              "name": "src",
               "label": "URL",
-              "widget": "image"
+              "widget": "image",
+              "allow_multiple": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
             },
             {
               "name": "alt",
               "label": "Alt Text",
               "widget": "string",
               "required": false,
-              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
             }
           ]
         },
@@ -1949,14 +1966,13 @@
             {
               "name": "title",
               "label": "Meta Title",
-              "widget": "string",
-              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+              "widget": "string"
             },
             {
               "name": "description",
               "label": "Meta Description",
               "widget": "text",
-              "hint": "Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters)."
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
             },
             {
               "name": "og",

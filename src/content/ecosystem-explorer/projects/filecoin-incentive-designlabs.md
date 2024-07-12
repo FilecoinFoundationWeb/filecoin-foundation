@@ -16,7 +16,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/logo-alpha.png
+  src: /assets/images/logo-alpha.png
   alt: Filecoin Incentive DesignLabs Logo
 featured-content:
 website: https://fidl.tech

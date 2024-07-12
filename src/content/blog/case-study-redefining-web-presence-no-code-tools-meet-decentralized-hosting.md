@@ -7,7 +7,7 @@ description:
   In this case study, we at Filecoin Foundation explore an innovative approach
   to website design workflow.
 image:
-  url: /assets/images/0905-cs-ff.png
+  src: /assets/images/0905-cs-ff.png
   alt:
 recommended-posts: []
 category: use-cases

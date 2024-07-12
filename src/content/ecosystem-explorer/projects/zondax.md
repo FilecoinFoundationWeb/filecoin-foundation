@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974d3422e2d2883f4dff8f_zondax_logo.png
+  src: /assets/images/65974d3422e2d2883f4dff8f_zondax_logo.png
   alt: Zondax Logo
 website: "https://zondax.ch/"
 featured-content:

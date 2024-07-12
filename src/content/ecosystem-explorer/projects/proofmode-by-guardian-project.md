@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/proofmode.png
+  src: /assets/images/proofmode.png
   alt: ProofMode by Guardian Project
 website: "https://proofmode.org"
 featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"

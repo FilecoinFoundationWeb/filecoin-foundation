@@ -8,7 +8,7 @@ description:
   a professor at the University of Massachusetts at Amherst, about the future of digital
   public infrastructure and how communities can govern their own digital spaces.
 image:
-  url: /assets/images/0928-filecoinfortnight.png
+  src: /assets/images/0928-filecoinfortnight.png
   alt:
 recommended-posts: []
 category: ecosystem

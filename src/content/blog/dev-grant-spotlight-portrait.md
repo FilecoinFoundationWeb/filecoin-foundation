@@ -4,8 +4,7 @@ description: >-
   Portrait is the first open-source web page builder, allowing people to turn
   their blockchain address into a website.
 image:
-  url: >-
-    /assets/images/64423ab50425d36d72f2895f_1-brm0bxgpfk7-tr5tfyq-la.png
+  src: /assets/images/64423ab50425d36d72f2895f_1-brm0bxgpfk7-tr5tfyq-la.png
   alt:
 updated-on: "2023-04-21T07:26:45.129Z"
 created-on: "2023-04-21T07:26:45.129Z"

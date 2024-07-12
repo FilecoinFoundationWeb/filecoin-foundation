@@ -9,7 +9,7 @@ external-link: https://www.nftvisionhack.com/
 start-date: "2021-06-30T22:00:00.000Z"
 end-date: "2021-08-30T22:00:00.000Z"
 image:
-  url:
+  src:
   alt:
 involvement: supported
 seo:

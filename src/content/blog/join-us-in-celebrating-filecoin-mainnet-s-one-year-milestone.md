@@ -4,8 +4,7 @@ description: >-
   It’s been one year since the Filecoin Mainnet launch, and there’s a lot
   planned to celebrate this first year in orbit!
 image:
-  url: >-
-    /assets/images/64423b04fa70d18281705693_0-0y1ex6vkr4htxclc.png
+  src: /assets/images/64423b04fa70d18281705693_0-0y1ex6vkr4htxclc.png
   alt:
 updated-on: "2023-04-21T07:28:04.262Z"
 created-on: "2023-04-21T07:28:04.262Z"

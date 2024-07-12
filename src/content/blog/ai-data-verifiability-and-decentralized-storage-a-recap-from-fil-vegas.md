@@ -9,7 +9,7 @@ description: >-
   gathering under one roof to discuss decentralized storage in the age of artificial
   intelligence (AI).
 image:
-  url: /assets/images/filvegas_recap_header.png
+  src: /assets/images/filvegas_recap_header.png
   alt:
 recommended-posts: []
 seo:

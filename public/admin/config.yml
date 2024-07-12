@@ -18,6 +18,22 @@ header_config: &header_config
       label: "Description"
       widget: "text"
 
+image_config: &image_config
+  name: "image"
+  label: "Image"
+  widget: "object"
+  fields:
+    - name: "src"
+      label: "URL"
+      widget: "image"
+      allow_multiple: false
+      hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+    - name: "alt"
+      label: "Alt Text"
+      widget: "string"
+      required: false
+      hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+
 meta_config: &meta_config
   name: "seo"
   label: "SEO Metadata"
@@ -26,11 +42,10 @@ meta_config: &meta_config
     - name: "title"
       label: "Meta Title"
       widget: "string"
-      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
     - name: "description"
       label: "Meta Description"
       widget: "text"
-      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
     - name: "og"
       label: "Open Graph Metadata"
       widget: "object"
@@ -232,19 +247,7 @@ collections:
       - name: "description"
         label: "Description"
         widget: "text"
-      - name: "image"
-        label: "Image"
-        widget: "object"
-        fields:
-          - name: "url"
-            label: "URL"
-            widget: "image"
-            allow_multiple: false
-          - name: "alt"
-            label: "Alt Text"
-            widget: "string"
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *image_config
       - name: "body"
         label: "Content"
         widget: "markdown"
@@ -333,19 +336,7 @@ collections:
         label: Published On
         widget: datetime
         required: false
-      - name: image
-        label: Image
-        widget: object
-        fields:
-          - name: url
-            label: URL
-            widget: image
-            allow_multiple: false
-          - name: alt
-            label: Alt Text
-            widget: string
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *image_config
       - name: category
         label: Category
         widget: relation
@@ -458,6 +449,10 @@ collections:
       - name: description
         label: Short Description
         widget: string
+        hint: "A short description of the project. Maximum 160 characters."
+        pattern:
+          - "^.{0,160}$"
+          - "Description must be 160 characters or less."
       - name: website
         label: Website
         widget: string
@@ -541,18 +536,7 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
-      - name: "image"
-        label: "Image"
-        widget: "object"
-        fields:
-          - name: "url"
-            label: "URL"
-            widget: "image"
-          - name: "alt"
-            label: "Alt Text"
-            widget: "string"
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *image_config
       - name: "involvement"
         label: "FF Involvement"
         widget: "select"

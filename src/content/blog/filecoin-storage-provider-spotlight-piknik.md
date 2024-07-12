@@ -5,8 +5,7 @@ description: >-
   Storage Provider Working Group and Protocol Labs MinerX Fellows, PiKNiK joined
   the Filecoin community as a bootstrapped Web3 storage provider.
 image:
-  url: >-
-    /assets/images/64423ae5a6ec4107462a6350_0-dab1y7whx7fuaol0.png
+  src: /assets/images/64423ae5a6ec4107462a6350_0-dab1y7whx7fuaol0.png
   alt:
 updated-on: "2023-04-21T07:27:34.032Z"
 created-on: "2023-04-21T07:27:34.032Z"

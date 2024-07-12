@@ -14,7 +14,7 @@ description:
   4,500 Discord members, 3,000 Twitter followers, and 700 NFT holders, plus collaborations
   with Flowverse, Emerald City, and Flow, Basic Beasts is made by gamers for gamers.
 image:
-  url: /assets/images/0517-dgs-_.png
+  src: /assets/images/0517-dgs-_.png
   alt:
 recommended-posts: []
 category: use-cases

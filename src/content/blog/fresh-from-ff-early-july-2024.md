@@ -7,7 +7,7 @@ category: news
 description: Check out the latest updates about what the Filecoin Foundation
   team has been up to.
 image:
-  url: /assets/images/0215-ff-9-.jpg
+  src: /assets/images/0215-ff-9-.jpg
   alt:
 recommended-posts: []
 seo:

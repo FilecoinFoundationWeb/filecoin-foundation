@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/ThemisProtocol.png
+  src: /assets/images/ThemisProtocol.png
   alt: Themis Logo
 website: https://themis.capital
 featured-content:

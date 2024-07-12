@@ -8,7 +8,7 @@ description:
   on the Filecoin network by providing storage providers and clients with standardized
   storage performance data in a format that's both easy to store and to understand. "
 image:
-  url: /assets/images/image-c-22.png
+  src: /assets/images/image-c-22.png
   alt:
 recommended-posts: []
 category: reports

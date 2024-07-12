@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073297bc9a092bda5eb6d8_web3mine.png
+  src: /assets/images/66073297bc9a092bda5eb6d8_web3mine.png
   alt: Web3mine Logo
 website: https://web3mine.io/
 featured-content:

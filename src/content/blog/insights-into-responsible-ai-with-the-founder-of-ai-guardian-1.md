@@ -14,7 +14,7 @@ description: >-
   Decentralized data storage is a reliable solution for preserving AI datasets––
   offering unparalleled resilience, scale, and cost savings.
 image:
-  url: /assets/images/chris-hackney.png
+  src: /assets/images/chris-hackney.png
   alt:
 recommended-posts: []
 seo:

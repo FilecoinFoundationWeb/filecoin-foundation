@@ -11,7 +11,7 @@ external-link: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-75
 start-date: "2024-02-27T14:00:51.036Z"
 end-date: "2024-02-27T21:00:51.050Z"
 image:
-  url: /assets/images/sis24.png
+  src: /assets/images/sis24.png
   alt:
 involvement: cohosted
 seo:

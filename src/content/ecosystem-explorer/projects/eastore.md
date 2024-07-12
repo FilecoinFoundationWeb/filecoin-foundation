@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/eastore-logo.png
+  src: /assets/images/eastore-logo.png
   alt: Eastore Logo
 featured-content:
 website: https://devfolio.co/projects/eastore-e336

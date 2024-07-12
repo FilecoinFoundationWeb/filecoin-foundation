@@ -13,7 +13,7 @@ start-date: 2022-05-21T16:00:39.000Z
 end-date: null
 updated-on: 2023-05-03T08:15:41.280Z
 image:
-  url: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
+  src: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
   alt: ""
 involvement: hosted
 seo:

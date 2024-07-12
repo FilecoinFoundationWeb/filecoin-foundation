@@ -9,7 +9,7 @@ external-link: https://sbs.tech/
 start-date: "2022-07-22T00:00:00.000Z"
 end-date: "2022-07-23T00:00:00.000Z"
 image:
-  url: /assets/images/645215eb05e191292b09744d_sbs.png
+  src: /assets/images/645215eb05e191292b09744d_sbs.png
   alt:
 involvement: supported
 seo:

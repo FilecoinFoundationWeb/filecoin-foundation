@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659751868be4ed306bb8b8df_portrait.png
+  src: /assets/images/659751868be4ed306bb8b8df_portrait.png
   alt: Portrait Logo
 website: "https://portrait.gg/"
 featured-content:

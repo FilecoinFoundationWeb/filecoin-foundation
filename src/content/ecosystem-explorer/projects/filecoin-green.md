@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974726d10f3992a40f40f6_fil_green_outline.png
+  src: /assets/images/65974726d10f3992a40f40f6_fil_green_outline.png
   alt: Filecoin Green Logo
 website: https://green.filecoin.io
 featured-content:

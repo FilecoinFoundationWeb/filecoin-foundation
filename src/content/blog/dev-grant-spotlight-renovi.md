@@ -8,7 +8,7 @@ description:
   marketplace and design studio that works with global brands and businesses to create,
   develop, and implement their Web3 strategies.
 image:
-  url: /assets/images/image-c-11.png
+  src: /assets/images/image-c-11.png
   alt:
 recommended-posts: []
 category: reports

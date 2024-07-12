@@ -11,7 +11,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/66073294cc627368322b763a_labdao.png
+  src: /assets/images/66073294cc627368322b763a_labdao.png
   alt: LabDAO
 website: https://labdao.xyz/
 featured-content:

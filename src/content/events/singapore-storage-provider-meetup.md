@@ -9,7 +9,7 @@ external-link: https://lu.ma/singapore-sp-meetup
 start-date: "2022-08-16T00:00:00.000Z"
 end-date: "2022-08-16T00:00:00.000Z"
 image:
-  url: /assets/images/6452194af82dbf21df953f96_singapore-sp.jpg
+  src: /assets/images/6452194af82dbf21df953f96_singapore-sp.jpg
   alt:
 involvement: hosted
 seo:

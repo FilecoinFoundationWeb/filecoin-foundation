@@ -17,7 +17,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/zentachain-white.png
+  src: /assets/images/zentachain-white.png
   alt: Zentachain Logo Chain Network
 website: "https://zentachain.io/"
 featured-content:

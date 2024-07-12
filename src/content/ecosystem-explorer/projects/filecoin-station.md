@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974732c5826a2570dfd210_filecoin-station-logo.png
+  src: /assets/images/65974732c5826a2570dfd210_filecoin-station-logo.png
   alt: Filecoin Station Logo
 website: "https://www.filstation.app"
 repo: "https://github.com/filecoin-station/desktop"

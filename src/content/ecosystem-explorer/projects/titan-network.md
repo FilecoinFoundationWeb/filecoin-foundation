@@ -14,7 +14,7 @@ tags:
   - data-storage-management
   - developer-tools
 image:
-  url: /assets/images/65974d743ddd7ef7851595fe_titan-svg2.png
+  src: /assets/images/65974d743ddd7ef7851595fe_titan-svg2.png
   alt: Titan Network Logo
 tech:
   - filecoin

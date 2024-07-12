@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329442b3d343f69c52d7_datahaus.png
+  src: /assets/images/6607329442b3d343f69c52d7_datahaus.png
   alt: DataHaus Logo
 featured-content:
 website: https://datahaus.vercel.app/

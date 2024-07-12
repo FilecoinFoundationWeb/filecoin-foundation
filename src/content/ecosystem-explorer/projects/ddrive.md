@@ -11,7 +11,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
+  src: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
   alt: dDrive Logo
 featured-content:
 website: https://app.valist.io/d-drive/d-drive-pwa

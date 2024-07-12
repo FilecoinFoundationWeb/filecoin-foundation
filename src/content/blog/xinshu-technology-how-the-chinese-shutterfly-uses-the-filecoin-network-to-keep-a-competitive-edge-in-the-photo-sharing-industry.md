@@ -10,8 +10,7 @@ description: >-
   last a lifetime — and then some — for thousands of Chinese families and
   businesses.
 image:
-  url: >-
-    /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
+  src: /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
   alt:
 recommended-posts: []
 category: use-cases

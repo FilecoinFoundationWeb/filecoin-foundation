@@ -11,7 +11,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974a3978ec3f84fca9004a_fluence-logo_wordmark_black.png
+  src: /assets/images/65974a3978ec3f84fca9004a_fluence-logo_wordmark_black.png
   alt: Fluence Logo
 website: "https://fluence.network"
 repo: "https://github.com/fluencelabs"

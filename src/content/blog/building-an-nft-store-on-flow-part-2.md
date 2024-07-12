@@ -8,8 +8,7 @@ description: >-
   create a simple NFT marketplace app on the Flow blockchain from scratch, using
   the Flow blockchain and IPFS/Filecoin storage via nft.storage.
 image:
-  url: >-
-    /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
+  src: /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
   alt:
 recommended-posts: []
 category: use-cases

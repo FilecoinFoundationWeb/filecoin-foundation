@@ -4,7 +4,7 @@ created-on: 2024-03-29T21:28:53.087Z
 updated-on: 2024-03-29T21:45:16.786Z
 published-on: 2024-03-29T21:45:16.786Z
 image:
-  url: /assets/images/lurk.png
+  src: /assets/images/lurk.png
   alt: Lurk Lab Logo
 category: storage
 subcategories:

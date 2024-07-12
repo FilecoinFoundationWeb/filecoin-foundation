@@ -8,7 +8,7 @@ description: >-
   array of "as-a-service" tools, services, and platforms designed to streamline operations
   and enhance service offerings.
 image:
-  url: /assets/images/92523-sptooling.png
+  src: /assets/images/92523-sptooling.png
   alt: Filecoin Storage Providers
 recommended-posts: []
 category: ecosystem

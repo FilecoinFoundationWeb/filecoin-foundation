@@ -10,7 +10,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/660732902f8beb060931f9cb_ceramic.png
+  src: /assets/images/660732902f8beb060931f9cb_ceramic.png
   alt: Ceramic Network (3Box)
 website: https://ceramic.network/
 featured-content:

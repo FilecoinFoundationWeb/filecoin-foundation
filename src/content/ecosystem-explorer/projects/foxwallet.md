@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/screenshot-2024-02-07-at-11.20.48-am.png
+  src: /assets/images/screenshot-2024-02-07-at-11.20.48-am.png
   alt: FoxWallet Logo
 website: "https://foxwallet.com/en"
 repo: "github.com/foxwallet"

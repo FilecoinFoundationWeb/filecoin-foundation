@@ -10,8 +10,7 @@ description: >-
   accelerate the development of hybrid smart contracts that combine Chainlink
   decentralized oracles and Filecoin decentralized storage.
 image:
-  url: >-
-    /assets/images/64423a97d1b025cf67f903ec_1-k1bbzfo-mulctcjeu5e_da.png
+  src: /assets/images/64423a97d1b025cf67f903ec_1-k1bbzfo-mulctcjeu5e_da.png
   alt:
 recommended-posts: []
 category: news

@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/filfi_logo_white.png
+  src: /assets/images/filfi_logo_white.png
   alt: FilFi Logo
 featured-content:
 website: https://filfi.io

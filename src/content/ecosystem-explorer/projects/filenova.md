@@ -4,7 +4,7 @@ created-on: 2024-04-24T19:39:19.905Z
 updated-on: 2024-04-24T19:39:19.923Z
 published-on: 2024-04-24T19:39:19.935Z
 image:
-  url: /assets/images/filenova.png
+  src: /assets/images/filenova.png
   alt: Filenova Logo
 category: storage
 subcategories:

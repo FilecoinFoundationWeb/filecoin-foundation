@@ -9,7 +9,7 @@ external-link: https://lu.ma/sp-korea-meetup
 start-date: "2022-08-12T00:00:00.000Z"
 end-date:
 image:
-  url: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
+  src: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
   alt:
 involvement: hosted
 seo:

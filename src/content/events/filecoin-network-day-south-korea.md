@@ -9,7 +9,7 @@ external-link:
 start-date: "2022-12-15T17:21:11.381Z"
 end-date:
 image:
-  url: /assets/images/network-day-korea-2022.png
+  src: /assets/images/network-day-korea-2022.png
   alt:
 involvement: hosted
 seo:

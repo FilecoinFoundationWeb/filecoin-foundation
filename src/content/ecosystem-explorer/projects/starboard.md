@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974dc622e2d2883f4e585f_t7xpocnt_400x400.png
+  src: /assets/images/65974dc622e2d2883f4e585f_t7xpocnt_400x400.png
   alt: Starboard Logo
 website: "https://dashboard.starboard.ventures/dashboard"
 featured-content:

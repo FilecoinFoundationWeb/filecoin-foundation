@@ -16,7 +16,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/marlin-logo-whitehigh-res.png
+  src: /assets/images/marlin-logo-whitehigh-res.png
   alt: Marlin Logo
 featured-content:
 website: www.marlin.org

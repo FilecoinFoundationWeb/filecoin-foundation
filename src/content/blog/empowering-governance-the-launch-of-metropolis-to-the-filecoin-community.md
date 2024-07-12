@@ -8,7 +8,7 @@ description:
   Introducing Metropolis, a temperature check tool for early-stage Filecoin
   Improvement Proposals.
 image:
-  url: /assets/images/blog-header-_-metropolis.png
+  src: /assets/images/blog-header-_-metropolis.png
   alt: Metropolis Filecoin
 recommended-posts: []
 seo:

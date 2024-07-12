@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/idsc_logo_white.png
+  src: /assets/images/idsc_logo_white.png
   alt: Internet Development Studio Company Logo
 website: https://internet.dev
 featured-content:

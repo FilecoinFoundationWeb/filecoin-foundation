@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073567a94418c44efc8fa2_datalatte.png
+  src: /assets/images/66073567a94418c44efc8fa2_datalatte.png
   alt: Datalatte Logo
 featured-content:
 website: https://www.datalatte.com/

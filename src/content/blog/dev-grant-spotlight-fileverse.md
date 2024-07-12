@@ -8,7 +8,7 @@ description:
   creating new tools and services on the Filecoin network. Learn more about Filecoin
   Foundation’s Dev Grants program.
 image:
-  url: /assets/images/rectangle-31-.png
+  src: /assets/images/rectangle-31-.png
   alt:
 recommended-posts: []
 category: reports

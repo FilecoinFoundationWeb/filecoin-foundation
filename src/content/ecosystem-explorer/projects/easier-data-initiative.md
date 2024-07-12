@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/easier-data-initiative.png
+  src: /assets/images/easier-data-initiative.png
   alt: EASIER Data Initiative Logo
 website: https://easierdata.org/
 featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/

@@ -10,7 +10,7 @@ description:
   capture more value. Encloud, formerly known as 180Protocol that lets you easily
   onboard and ecrypt data to the decentralized web."
 image:
-  url: /assets/images/0405-dgs-180protocol.png
+  src: /assets/images/0405-dgs-180protocol.png
   alt:
 recommended-posts: []
 category: reports

@@ -11,7 +11,7 @@ description:
   systems for years without significant progress. The vision is a world without vendor
   lock-in, paywalls, proprietary analytics, link rot and fake science.
 image:
-  url: /assets/images/0719-cs-desci.png
+  src: /assets/images/0719-cs-desci.png
   alt:
 recommended-posts: []
 category: use-cases
