@@ -56,11 +56,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/blog/Filecoin-nv19-Lightning-Upgrade',
-        destination: '/blog/filecoin-nv19-lightning-upgrade',
-        permanent: true,
-      },
-      {
         source:
           '/blog/pilecoin-foundation-successfully-deploys-interflanetary-pile-system-IFPS-in-space',
         destination:
