@@ -9,8 +9,7 @@ description: >-
   features such as global acceleration, privacy protection, and distributed
   storage.
 image:
-  url: >-
-    /assets/images/64423aa58d1be7828cce7d89_1-45khiwwqpsgwtnrtjpkoqa.png
+  src: /assets/images/64423aa58d1be7828cce7d89_1-45khiwwqpsgwtnrtjpkoqa.png
   alt:
 recommended-posts: []
 category: reports

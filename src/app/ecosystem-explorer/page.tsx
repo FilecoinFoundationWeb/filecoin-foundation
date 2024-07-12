@@ -155,8 +155,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
+                            ...image,
                             padding: true,
                             priority: isFirstTwoImages,
                             objectFit: 'contain',

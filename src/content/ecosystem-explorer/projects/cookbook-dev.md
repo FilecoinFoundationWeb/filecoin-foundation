@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/cookbook.dev.png
+  src: /assets/images/cookbook.dev.png
   alt: Cookbook Logo
 website: https://www.cookbook.dev/
 featured-content:

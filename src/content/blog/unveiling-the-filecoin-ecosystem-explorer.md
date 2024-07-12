@@ -8,7 +8,7 @@ description:
   The Filecoin Ecosystem Explorer is a crowd-sourced database that showcases
   the breadth and depth of Filecoin ecosystem projects.
 image:
-  url: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
+  src: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
   alt: "Filecoin Ecosystem Explorer"
 recommended-posts: []
 seo:

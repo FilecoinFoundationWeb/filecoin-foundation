@@ -9,7 +9,7 @@ description:
   to highlight the builders, storage providers and storage clients bringing the project
   to life.
 image:
-  url: /assets/images/051823-austin-recap.png
+  src: /assets/images/051823-austin-recap.png
   alt:
 recommended-posts: []
 category: events

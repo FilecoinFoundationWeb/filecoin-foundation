@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/filliquid_logo_white.png
+  src: /assets/images/filliquid_logo_white.png
   alt: FILLiquid Logo
 website: "https://filliquid.io/"
 featured-content:

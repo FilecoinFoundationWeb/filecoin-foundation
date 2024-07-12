@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974d4b3b6a7ed29e34e0b7_victor-chang-logo-1.png
+  src: /assets/images/65974d4b3b6a7ed29e34e0b7_victor-chang-logo-1.png
   alt: Victor Chang Research Institute Logo
 website: "https://www.victorchang.edu.au/"
 featured-content: "https://destor.com/victor-chang-cardiac-research-institute-case-study"

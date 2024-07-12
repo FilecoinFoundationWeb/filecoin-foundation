@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073293f3fde26e66fedef5_expanso.png
+  src: /assets/images/66073293f3fde26e66fedef5_expanso.png
   alt: Expanso Logo
 featured-content:
 website: https://expanso.io

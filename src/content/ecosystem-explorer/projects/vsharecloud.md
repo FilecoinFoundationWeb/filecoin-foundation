@@ -4,7 +4,7 @@ created-on: 2024-04-05T14:14:29.910Z
 updated-on: 2024-04-05T14:14:29.925Z
 published-on: 2024-04-05T14:14:29.937Z
 image:
-  url: /assets/images/vsharecloud.png
+  src: /assets/images/vsharecloud.png
   alt: VshareCloud Logo
 category: storage
 subcategories:

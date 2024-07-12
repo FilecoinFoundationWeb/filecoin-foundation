@@ -8,8 +8,7 @@ description: >-
   reveal that — while Americans trust the internet’s overall resilience, they
   don’t like how their data is managed by the current gatekeepers.
 image:
-  url: >-
-    /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
+  src: /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
   alt:
 recommended-posts: []
 category: reports

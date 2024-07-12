@@ -9,7 +9,7 @@ external-link:
 start-date: "2024-11-10T16:18:33.964Z"
 end-date: "2024-11-15T16:18:33.972Z"
 image:
-  url: /assets/images/filbangkok-24.png
+  src: /assets/images/filbangkok-24.png
   alt: FIL Bangkok Logo
 involvement: hosted
 seo:

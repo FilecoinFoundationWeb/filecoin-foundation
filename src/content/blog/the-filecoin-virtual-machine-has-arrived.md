@@ -9,8 +9,7 @@ description: >-
   Filecoin network history, and a major FVM milestone as the network becomes
   programmable for the first time.
 image:
-  url: >-
-    /assets/images/64423bf9da735f547c392f21_unnamed-14.png
+  src: /assets/images/64423bf9da735f547c392f21_unnamed-14.png
   alt:
 recommended-posts: []
 category: news

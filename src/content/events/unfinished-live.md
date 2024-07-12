@@ -9,7 +9,7 @@ external-link: https://live.unfinished.com/
 start-date: "2022-09-21T00:00:00.000Z"
 end-date: "2022-08-24T00:00:00.000Z"
 image:
-  url: /assets/images/645215e44977982552923065_unfinished-live.png
+  src: /assets/images/645215e44977982552923065_unfinished-live.png
   alt:
 involvement: supported
 seo:

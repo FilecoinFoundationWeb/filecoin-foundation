@@ -9,7 +9,7 @@ external-link: https://cryptiesawards.com/
 start-date: "2022-11-30T18:24:48.715Z"
 end-date:
 image:
-  url: /assets/images/crypties-2022.png
+  src: /assets/images/crypties-2022.png
   alt:
 involvement: supported
 seo:

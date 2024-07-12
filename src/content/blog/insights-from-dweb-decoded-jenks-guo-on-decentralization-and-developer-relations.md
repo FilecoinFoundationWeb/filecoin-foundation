@@ -10,7 +10,7 @@ description:
   Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights
   on decentralization and its role in shaping the future of the internet.
 image:
-  url: /assets/images/jenks-guo.png
+  src: /assets/images/jenks-guo.png
   alt: Jenks Guo Developer Advocacy Filecoin Foundation
 recommended-posts: []
 seo:

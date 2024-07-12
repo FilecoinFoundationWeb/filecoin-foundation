@@ -8,7 +8,7 @@ description:
   "Check out the latest updates about what the Filecoin Foundation has
   been up to."
 image:
-  url: /assets/images/0215-ff-6-.png
+  src: /assets/images/0215-ff-6-.png
   alt: "Fresh From FF: Mid-May, 2024"
 recommended-posts: []
 seo:

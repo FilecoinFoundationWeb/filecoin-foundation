@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073290d5091847d125282a_astral.png
+  src: /assets/images/66073290d5091847d125282a_astral.png
   alt: Astral Logo
 website: https://astral.global/
 featured-content:

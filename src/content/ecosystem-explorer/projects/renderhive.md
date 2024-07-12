@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073711d5091847d128f8b2_renderhive.png
+  src: /assets/images/66073711d5091847d128f8b2_renderhive.png
   alt: Renderhive Logo
 website: https://www.renderhive.io/
 featured-content:

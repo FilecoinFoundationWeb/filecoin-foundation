@@ -8,7 +8,7 @@ description: >-
   overview of significant, upcoming enhancements to the Filecoin protocol and network
   implementations.
 image:
-  url: /assets/images/64423a8ab068b0286f5c29dc_1-puuomuuoq9o-ezxjtdpppw.png
+  src: /assets/images/64423a8ab068b0286f5c29dc_1-puuomuuoq9o-ezxjtdpppw.png
   alt:
 recommended-posts: []
 category: news

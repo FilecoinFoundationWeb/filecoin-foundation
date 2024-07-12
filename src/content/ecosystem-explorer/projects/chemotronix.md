@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
+  src: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
   alt: Chemotronix Logo
 website: https://chemotronix.org/
 featured-content:

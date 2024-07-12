@@ -5,8 +5,7 @@ description: >-
   member of Blockchain for Europe (BC4EU), a leading voice on EU blockchain
   policy.
 image:
-  url: >-
-    /assets/images/64423ad9ef619d9dd2b60e6d_0-yilkincrhittd7ub.png
+  src: /assets/images/64423ad9ef619d9dd2b60e6d_0-yilkincrhittd7ub.png
   alt:
 updated-on: "2023-04-21T07:27:21.334Z"
 created-on: "2023-04-21T07:27:21.334Z"

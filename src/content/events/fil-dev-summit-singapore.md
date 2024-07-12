@@ -9,7 +9,7 @@ external-link: https://fildev.io/
 start-date: "2023-09-25T14:00:04.428Z"
 end-date:
 image:
-  url: /assets/images/fil-dev-summit.png
+  src: /assets/images/fil-dev-summit.png
   alt:
 involvement: hosted
 seo:

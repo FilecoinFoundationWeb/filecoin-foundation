@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732908635f037e25b982f_bifrost.png
+  src: /assets/images/660732908635f037e25b982f_bifrost.png
   alt: Bifrost Finance Logo
 website: https://bifrost.finance/
 featured-content:

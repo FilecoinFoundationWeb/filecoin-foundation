@@ -9,7 +9,7 @@ external-link: https://en.web3.teamz.co.jp/
 start-date: 2024-04-13T16:47:39.948000Z
 end-date: 2024-04-14T16:47:39.955000Z
 image:
-  url: /assets/images/teamz-conference.webp
+  src: /assets/images/teamz-conference.webp
   alt:
 involvement: supported
 seo:

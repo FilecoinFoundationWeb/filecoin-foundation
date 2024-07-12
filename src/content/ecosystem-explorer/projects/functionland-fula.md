@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/functionland_logo_white.png
+  src: /assets/images/functionland_logo_white.png
   alt: "Functionland Logo: A Decentralized storage replacement for cloud"
 website: "https://fx.land/"
 repo: "https://github.com/functionland"

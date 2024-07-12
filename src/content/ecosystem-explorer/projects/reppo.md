@@ -4,7 +4,7 @@ created-on: 2024-04-24T19:06:44.041Z
 updated-on: 2024-04-24T19:06:44.057Z
 published-on: 2024-04-24T19:06:44.068Z
 image:
-  url: /assets/images/reppo.png
+  src: /assets/images/reppo.png
   alt: Reppo Logo
 category: storage
 subcategories:

@@ -4,7 +4,7 @@ created-on: 2024-04-16T20:04:49.383Z
 updated-on: 2024-04-16T20:04:49.406Z
 published-on: 2024-04-16T20:04:49.422Z
 image:
-  url: /assets/images/pyth.png
+  src: /assets/images/pyth.png
   alt: Pyth Logo
 category: tooling-productivity
 subcategories:

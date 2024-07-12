@@ -5,7 +5,7 @@ title: Acaisia
 updated-on: 2024-01-12T19:56:32.835000Z
 published-on: 2024-01-12T19:56:32.887000Z
 image:
-  url: /assets/images/acaisia-logo_white.png
+  src: /assets/images/acaisia-logo_white.png
   alt: Acaisia Logo
 category: storage
 subcategories:

@@ -4,7 +4,7 @@ created-on: 2024-05-16T14:33:32.585Z
 updated-on: 2024-05-16T14:33:32.598Z
 published-on: 2024-05-16T14:33:32.612Z
 image:
-  url: /assets/images/domainfns.png
+  src: /assets/images/domainfns.png
   alt: DomainFNS Logo
 category: tooling-productivity
 subcategories:

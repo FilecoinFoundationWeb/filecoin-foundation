@@ -8,7 +8,7 @@ external-link: https://fil-hk.io/
 start-date: "2023-04-12T15:30:53.302Z"
 end-date: "2023-04-15T15:30:53.477Z"
 image:
-  url: /assets/images/fil-hong-kong.png
+  src: /assets/images/fil-hong-kong.png
   alt:
 involvement: hosted
 seo:

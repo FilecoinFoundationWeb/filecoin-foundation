@@ -9,7 +9,7 @@ external-link: https://sbs.tech/
 start-date: "2023-05-23T15:30:00.000Z"
 end-date:
 image:
-  url: /assets/images/synbiobeta-2023.png
+  src: /assets/images/synbiobeta-2023.png
   alt:
 involvement: supported
 seo:

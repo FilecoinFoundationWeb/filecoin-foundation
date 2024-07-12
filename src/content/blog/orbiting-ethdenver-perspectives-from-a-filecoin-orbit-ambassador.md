@@ -9,7 +9,7 @@ description:
   America came together to host a Filecoin Ecosystem Showcase event. Read about what
   this event meant for the community and the future of the Orbit program.
 image:
-  url: /assets/images/032224-orbit-austin.png
+  src: /assets/images/032224-orbit-austin.png
   alt: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
 recommended-posts: []
 seo:

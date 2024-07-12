@@ -10,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329044923c80b38a9b1a_ankr.png
+  src: /assets/images/6607329044923c80b38a9b1a_ankr.png
   alt: Ankr Logo
 website: https://www.ankr.com/
 featured-content:

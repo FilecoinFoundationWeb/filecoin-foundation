@@ -11,7 +11,7 @@ description:
   codenamed ‘Watermelon’ brings a wave of enhancements and new features aimed at bolstering
   the network’s efficiency and robustness.
 image:
-  url: /assets/images/twitter-_-nv21_upgrade.png
+  src: /assets/images/twitter-_-nv21_upgrade.png
   alt: The arrival of the nv21 Network Upgrade on Filecoin mainnet is here.
 recommended-posts: []
 seo:

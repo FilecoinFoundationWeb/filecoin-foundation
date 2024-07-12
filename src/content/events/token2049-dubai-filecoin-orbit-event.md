@@ -9,7 +9,7 @@ external-link:
 start-date: "2024-04-16T14:45:39.324Z"
 end-date: "2024-04-19T14:45:39.332Z"
 image:
-  url: /assets/images/token2049_dubai24.png
+  src: /assets/images/token2049_dubai24.png
   alt: Token2049 Dubai Logo
 involvement: sponsored
 seo:

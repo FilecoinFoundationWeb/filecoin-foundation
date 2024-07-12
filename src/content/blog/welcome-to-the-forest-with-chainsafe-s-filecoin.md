@@ -7,7 +7,7 @@ description:
   Filecoin Mainnet launched one year ago this week, opening up the decentralized
   storage protocol to developers, storage providers, and Web3 enthusiasts worldwide.
 image:
-  url: /assets/images/image-c-19.png
+  src: /assets/images/image-c-19.png
   alt:
 recommended-posts: []
 category: ecosystem

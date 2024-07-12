@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329226071981e4a3559d_eqty.png
+  src: /assets/images/6607329226071981e4a3559d_eqty.png
   alt: EQTY Lab Logo
 featured-content:
 website: https://eqtylab.io

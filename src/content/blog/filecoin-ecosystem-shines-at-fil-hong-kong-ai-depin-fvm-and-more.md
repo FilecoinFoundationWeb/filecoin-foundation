@@ -8,7 +8,7 @@ description:
   The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by
   ND Labs and supported by Filecoin Foundation.
 image:
-  url: /assets/images/blogheader-filhk24recap-1-.png
+  src: /assets/images/blogheader-filhk24recap-1-.png
   alt: Filecoin Ecosystem at FIL Hong Kong
 recommended-posts: []
 seo:

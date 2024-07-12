@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974a1e84648b50ab0c7214_filscanlogo-text.png
+  src: /assets/images/65974a1e84648b50ab0c7214_filscanlogo-text.png
   alt: Filscan Logo
 website: https://filscan.io/en
 featured-content:

@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: # "/assets/images/logo-2-.png"
+  src: # "/assets/images/logo-2-.png"
   alt: "Neyra AI"
 website: "https://drive.neyra.ai/"
 featured-content:

@@ -8,7 +8,7 @@ description:
   Insights from Messari's recently released Q1 2024 Filecoin Ecosystem
   Report.
 image:
-  url: /assets/images/050824-messariq1.png
+  src: /assets/images/050824-messariq1.png
   alt: Messari Filecoin Report
 recommended-posts: []
 seo:

@@ -11,7 +11,7 @@ description:
   access to computing power, enabling individuals and organizations to tap into a
   shared pool of resources without being dependent on a single provider.
 image:
-  url: /assets/images/decentralized-compute-v2.png
+  src: /assets/images/decentralized-compute-v2.png
   alt: "Unleashing the Power of Decentralized Compute with Filecoin"
 recommended-posts: []
 seo:

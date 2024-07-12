@@ -10,7 +10,7 @@ description:
   for all’, building browser-based tools to enable institutions all over the world
   to create web archives, from a single to running larger crawls in the cloud.
 image:
-  url: /assets/images/image-c-14.png
+  src: /assets/images/image-c-14.png
   alt:
 recommended-posts: []
 category: reports

@@ -7,8 +7,7 @@ description: >-
   Despite challenges for the blockchain space in 2022, the Filecoin network has
   continued to thrive.
 image:
-  url: >-
-    /assets/images/64423ac6b068b0a9945c5010_0206-ff-22-annual-report.png
+  src: /assets/images/64423ac6b068b0a9945c5010_0206-ff-22-annual-report.png
   alt:
 recommended-posts: []
 category: reports

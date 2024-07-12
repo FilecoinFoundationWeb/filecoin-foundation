@@ -10,7 +10,7 @@ description:
   experience building on FVM. Entrants will develop on FVM in order to compete for
   $6,000 in prizes!
 image:
-  url: /assets/images/0208-orbitfvm.png
+  src: /assets/images/0208-orbitfvm.png
   alt:
 recommended-posts: []
 category: events

@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/bidlo.png
+  src: /assets/images/bidlo.png
   alt: Bidlo Logo
 website: https://bidlo.vercel.app/
 featured-content:

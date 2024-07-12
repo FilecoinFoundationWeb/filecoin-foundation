@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/hauska_logo_white.png
+  src: /assets/images/hauska_logo_white.png
   alt: Hauska   Design | Protect | Exchange
 website: https://www.hauska.ai/
 featured-content:

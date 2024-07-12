@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/group.png
+  src: /assets/images/group.png
   alt: SFT Chain
 website: "https://www.sftproject.io/"
 featured-content:

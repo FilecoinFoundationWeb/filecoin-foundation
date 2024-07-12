@@ -9,7 +9,7 @@ external-link: https://www.eventbrite.com/e/share-115k-prizes-filecoin-grant-onl
 start-date: "2021-04-30T22:00:00.000Z"
 end-date: "2021-07-17T22:00:00.000Z"
 image:
-  url:
+  src:
   alt:
 involvement: supported
 seo:

@@ -14,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/merklebot.png
+  src: /assets/images/merklebot.png
   alt: MerkleBot Logo
 featured-content:
 website: https://merklebot.com

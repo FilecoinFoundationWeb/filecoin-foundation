@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974d3c02cb39557a1ffd52_web3.Storage-Logo.png
+  src: /assets/images/65974d3c02cb39557a1ffd52_web3.Storage-Logo.png
   alt: Web3.Storage Logo
 website: "https://web3.storage/"
 featured-content:

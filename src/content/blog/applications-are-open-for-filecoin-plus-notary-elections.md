@@ -7,7 +7,7 @@ description:
   This month, the Filecoin Plus program will kick off its third round of
   elections.
 image:
-  url: /assets/images/0218-filpluselection.png
+  src: /assets/images/0218-filpluselection.png
   alt:
 recommended-posts: []
 category: news

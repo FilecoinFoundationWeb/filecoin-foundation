@@ -31,7 +31,7 @@ export function generateStructuredData(
           '@type': 'BlogPosting',
           headline: post.title,
           description: post.description,
-          image: post.image.url,
+          image: post.image.src,
           url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
           author: {
             '@type': 'Organization',

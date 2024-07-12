@@ -11,7 +11,7 @@ description:
   engagements, Filecoin Foundation is proud to announce the release of the FIP0001v2
   draft.
 image:
-  url: /assets/images/231017-fip0001v2.png
+  src: /assets/images/231017-fip0001v2.png
   alt: "Filecoin Foundation FIP 0001v2 Governance"
 recommended-posts: []
 seo:

@@ -9,7 +9,7 @@ external-link: https://fil-capetown.io/
 start-date: "2023-11-21T13:58:58.117Z"
 end-date:
 image:
-  url: /assets/images/filcapetown.png
+  src: /assets/images/filcapetown.png
   alt: FIL Cape Town Logo
 involvement: hosted
 seo:

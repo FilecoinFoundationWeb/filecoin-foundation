@@ -8,7 +8,7 @@ description:
   open tool for coordinating work priorities and tapping the collective knowledge
   of the Filecoin ecosystem in crowdsourcing solutions for the storage provider community.
 image:
-  url: /assets/images/image-c-08.png
+  src: /assets/images/image-c-08.png
   alt:
 recommended-posts: []
 category: news

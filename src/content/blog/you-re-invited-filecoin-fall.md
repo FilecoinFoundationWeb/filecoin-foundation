@@ -9,7 +9,7 @@ description:
   involved in the Filecoin community, there’s something for everyone in the ecosystem
   over the next few months."
 image:
-  url: /assets/images/64423c054821268e6e8e743b_1-rdpz1p6lnwm1fnnk37urdw.png
+  src: /assets/images/64423c054821268e6e8e743b_1-rdpz1p6lnwm1fnnk37urdw.png
   alt:
 recommended-posts: []
 category: events

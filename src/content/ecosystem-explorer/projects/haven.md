@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732939d359eb7bc732049_haven.png
+  src: /assets/images/660732939d359eb7bc732049_haven.png
   alt: Haven
 website: https://havendp.com
 featured-content:

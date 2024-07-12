@@ -6,8 +6,7 @@ description: >-
   Week-long event welcomes 50+speakers to explore FVM, sustainability, NFTs, the
   metaverse, Web3 and more through the perspective of the Filecoin community.
 image:
-  url: >-
-    /assets/images/64423ad74e4c688bfff4446d_1-ru5fimtnssl-v4znrrl-ew.webp
+  src: /assets/images/64423ad74e4c688bfff4446d_1-ru5fimtnssl-v4znrrl-ew.webp
   alt:
 updated-on: "2023-04-21T07:27:19.915Z"
 created-on: "2023-04-21T07:27:19.915Z"

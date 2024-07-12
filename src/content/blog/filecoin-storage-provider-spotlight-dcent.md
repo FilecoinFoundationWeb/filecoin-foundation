@@ -8,7 +8,7 @@ description:
   active in growing and encouraging the local community, organizing meetups and other
   events, as well as providing advice to others in the network.
 image:
-  url: /assets/images/0524-sps-dcent.png
+  src: /assets/images/0524-sps-dcent.png
   alt:
 recommended-posts: []
 category: ecosystem

@@ -4,7 +4,7 @@ created-on: 2024-04-05T00:20:25.907Z
 updated-on: 2024-04-05T00:20:25.917Z
 published-on: 2024-04-05T00:20:25.930Z
 image:
-  url: /assets/images/ecko.png
+  src: /assets/images/ecko.png
   alt: Ecko Logo
 category: tooling-productivity
 subcategories:

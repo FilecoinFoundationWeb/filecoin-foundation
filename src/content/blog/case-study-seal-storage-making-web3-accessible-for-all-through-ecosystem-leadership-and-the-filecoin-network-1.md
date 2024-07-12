@@ -11,8 +11,7 @@ description: >-
   North America, with over 20PB of capacity across the U.S. and Canada, and is
   looking to add over 100PiBs more.
 image:
-  url: >-
-    /assets/images/64423aa28d1be743ddce7ab2_1-inwzqgetwegv3q8q0c4fea.webp
+  src: /assets/images/64423aa28d1be743ddce7ab2_1-inwzqgetwegv3q8q0c4fea.webp
   alt:
 recommended-posts: []
 category: use-cases

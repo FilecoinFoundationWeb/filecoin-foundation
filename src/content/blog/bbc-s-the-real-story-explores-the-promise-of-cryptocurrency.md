@@ -7,7 +7,7 @@ description:
   Filecoin Foundation Board Chair Marta Belcher joined the BBC’s Ritula
   Shah on The Real Story to discuss the promise of Filecoin and the future of cryptocurrency.
 image:
-  url: /assets/images/64423a958d1be740f4ce6485_1-idr5jnytk_i2rab2ggn9uq.png
+  src: /assets/images/64423a958d1be740f4ce6485_1-idr5jnytk_i2rab2ggn9uq.png
   alt:
 recommended-posts: []
 category: news

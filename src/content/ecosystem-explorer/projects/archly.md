@@ -16,7 +16,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/archly-logo-circle-1000.png
+  src: /assets/images/archly-logo-circle-1000.png
   alt: Archly Logo
 website: https://archly.fi
 featured-content:

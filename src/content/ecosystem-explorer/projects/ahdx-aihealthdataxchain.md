@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/ahdx-update-3-2-.png
+  src: /assets/images/ahdx-update-3-2-.png
   alt: AHDX Logo
 website: https://www.ahdx.org/
 featured-content:

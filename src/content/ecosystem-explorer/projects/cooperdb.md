@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url:
+  src:
   alt: CooperDB Logo
 website: https://cooper-db.vercel.app/
 featured-content:

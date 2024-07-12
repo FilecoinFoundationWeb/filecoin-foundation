@@ -11,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/froghub.png
+  src: /assets/images/froghub.png
   alt: FrogHub Logo
 website: https://froghub.io/
 featured-content:

@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597517b30e548a865cc3d71_seti-institute-new-logo-design.png
+  src: /assets/images/6597517b30e548a865cc3d71_seti-institute-new-logo-design.png
   alt: SETI Institute Logo
 website: "https://www.seti.org/"
 repo:

@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/659872d2b2c229176c8ae210_algovera-whitebackground.png
+  src: /assets/images/659872d2b2c229176c8ae210_algovera-whitebackground.png
   alt: Algovera Logo
 website: "https://www.algovera.ai"
 featured-content:

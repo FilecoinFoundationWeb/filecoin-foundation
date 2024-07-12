@@ -100,7 +100,6 @@ export default function Events({ searchParams }: Props) {
         metaData={getEventMetaData(featuredEvent)}
         image={{
           ...featuredEvent.image,
-          src: featuredEvent.image.url,
           fallback: graphicsData.events1,
         }}
         cta={{
@@ -176,8 +175,7 @@ export default function Events({ searchParams }: Props) {
                             icon: MagnifyingGlass,
                           }}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
+                            ...image,
                             priority: isFirstTwoImages,
                             fallback: graphicsData.imageFallback,
                             sizes: buildImageSizeProp({

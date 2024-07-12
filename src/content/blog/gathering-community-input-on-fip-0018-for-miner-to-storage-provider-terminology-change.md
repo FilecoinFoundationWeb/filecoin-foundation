@@ -9,7 +9,7 @@ description:
   The Filecoin community is currently considering Filecoin Improvement
   Proposal (FIP) 0018, which proposes to rebrand network “miners” as “storage providers”.
 image:
-  url: /assets/images/fip-header.png
+  src: /assets/images/fip-header.png
   alt:
 recommended-posts: []
 category: ecosystem

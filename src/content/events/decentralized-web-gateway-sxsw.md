@@ -13,7 +13,7 @@ external-link: https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhU
 start-date: "2022-03-15T07:23:50.000Z"
 end-date:
 image:
-  url: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
+  src: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
   alt:
 involvement: sponsored
 seo:

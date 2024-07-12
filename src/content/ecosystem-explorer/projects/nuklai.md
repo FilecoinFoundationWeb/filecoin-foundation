@@ -4,7 +4,8 @@ created-on: 2024-07-08T10:11:00.000Z
 updated-on: 2024-07-08T10:11:00.000Z
 published-on: 2024-07-08T10:11:00.000Z
 image:
-  url: /assets/images/nuklai.png
+  src: /assets/images/nuklai.png
+  alt: Nuklai Logo
 category: artificial-intelligence
 subcategories:
   - artificial-productivity-utilities

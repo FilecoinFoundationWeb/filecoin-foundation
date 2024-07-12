@@ -12,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/backedby.webp
+  src: /assets/images/backedby.webp
   alt: BackedBy Logo
 website: https://backed.by/
 featured-content:

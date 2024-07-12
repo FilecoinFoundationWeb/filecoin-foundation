@@ -12,7 +12,7 @@ description: >-
   intersection of artificial intelligence and decentralized storage, and more.
 category: news
 image:
-  url: /assets/images/231120-fd-fpd.png
+  src: /assets/images/231120-fd-fpd.png
   alt: Filecoin Day and Filecoin Plus Day Recap
 recommended-posts: []
 seo:

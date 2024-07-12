@@ -13,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/parasail-white-logo-transparent-background.png
+  src: /assets/images/parasail-white-logo-transparent-background.png
   alt: Parasail Logo
 website: http://parasail.network/
 featured-content:

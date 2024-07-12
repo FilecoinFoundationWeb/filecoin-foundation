@@ -12,8 +12,7 @@ external-link: https://www.encode.club/filecoin-club
 start-date: "2021-09-30T22:00:00.000Z"
 end-date: "2021-12-30T23:00:00.000Z"
 image:
-  url: >-
-    /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
+  src: /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
   alt:
 involvement: supported
 seo:

@@ -16,7 +16,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: /assets/images/fog-works-logo-white.png
+  src: /assets/images/fog-works-logo-white.png
   alt: Fog Works Logo
 website: fogworks.io
 featured-content:

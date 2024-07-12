@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/nd-logo-1-.png
+  src: /assets/images/nd-logo-1-.png
   alt: ND LABS Logo
 website: https://www.ndlabs.io/#/
 featured-content:

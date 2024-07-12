@@ -12,7 +12,7 @@ description:
   involved sending files from Earth to orbit and back using an implementation of the
   IPFS protocol designed for space communications.
 image:
-  url: /assets/images/01-lockheed.png
+  src: /assets/images/01-lockheed.png
   alt: IPFS in Space
 recommended-posts: []
 seo:

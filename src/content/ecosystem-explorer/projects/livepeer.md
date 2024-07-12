@@ -15,7 +15,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/659751d1ccb76baf40759190_livepeer-logo-primary-1200px-white-transparent-computer-backpack.png
+  src: /assets/images/659751d1ccb76baf40759190_livepeer-logo-primary-1200px-white-transparent-computer-backpack.png
   alt: "Livepeer Logo"
 website: "https://livepeer.org"
 featured-content: "https://medium.com/livepeer-blog/video-streaming-with-fvm-and-livepeer-5646eee1ba78"

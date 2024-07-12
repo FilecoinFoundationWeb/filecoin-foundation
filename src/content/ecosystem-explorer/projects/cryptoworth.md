@@ -12,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/cw-logo-square-1-.png
+  src: /assets/images/cw-logo-square-1-.png
   alt: Cryptoworth Logo
 website: https://Cryptoworth.com
 featured-content:

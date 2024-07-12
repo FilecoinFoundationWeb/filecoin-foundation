@@ -7,8 +7,7 @@ description: >-
   The Filecoin community has completed its first-ever FILPoll, a new tool for
   surveying stakeholders on improvement proposals and other initiatives.
 image:
-  url: >-
-    /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
+  src: /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
   alt:
 recommended-posts: []
 category: news

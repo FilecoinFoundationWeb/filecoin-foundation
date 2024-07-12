@@ -12,7 +12,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
+  src: /assets/images/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
   alt: "NFT.Storage Logo"
 website: "https://nft.storage"
 featured-content:

@@ -11,7 +11,7 @@ description:
   ecosystem. In the GenRAIT ecosystem, scientists retain full autonomy and flexibility
   with regards to their data and analytics processes.
 image:
-  url: /assets/images/image-c-02.png
+  src: /assets/images/image-c-02.png
   alt:
 recommended-posts: []
 category: use-cases
