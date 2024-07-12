@@ -2,8 +2,8 @@ import { PATHS } from '../../src/app/_constants/paths'
 import { getRandomSlug } from '../support/getRandomSlugUtil'
 import { verifyMetadata } from '../support/verifyMetadataUtil'
 
-describe('Random Ecosystem Page', function () {
-  it('should check metadata of a random ecosystem page', function () {
+describe('Random Ecosystem Explorer Project', () => {
+  it('should check metadata', () => {
     const ecosystemDirectoryPath = PATHS.ECOSYSTEM_EXPLORER
       .entriesContentPath as string
 
