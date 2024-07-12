@@ -8,56 +8,68 @@ import { isDateValid } from '@/utils/formatDate'
 
 import { pastEventsSetting } from '@/constants/categoryConstants'
 
-export function useEventsCategory(props: UseCategoryProps<EventData>) {
-  const { entries } = props
-
-  const results = useCategory(props)
-  const { categoryQuery, categoryCounts, categorizedResults } = results
-
-  const countsWithPastEvents = useMemo(() => {
-    const pastEventsCount = entries.filter(filterByPastEvents).length
-
-    return { ...categoryCounts, [pastEventsSetting.id]: pastEventsCount }
-  }, [categoryCounts, entries])
-
-  const resultsWithPastEvents = useMemo(() => {
-    if (categoryQuery === pastEventsSetting.id) {
-      return entries.filter(filterByPastEvents)
-    }
-
-    return categorizedResults
-  }, [categoryQuery, categorizedResults, entries])
-
-  return {
-    categoryQuery,
-    categorizedResults: resultsWithPastEvents,
-    categoryCounts: countsWithPastEvents,
-  }
+function getUTCMidnightToday(): Date {
+  const today = new Date()
+  return new Date(
+    Date.UTC(
+      today.getUTCFullYear(),
+      today.getUTCMonth(),
+      today.getUTCDate(),
+      0,
+      0,
+      0,
+      0,
+    ),
+  )
 }
 
-const today = getTodayDateUTCZero()
-
-function filterByPastEvents(entry: EventData) {
+function filterByPastEvents(entry: EventData): boolean {
+  const today = getUTCMidnightToday()
   const { startDate, endDate, slug } = entry
 
-  if (endDate) {
-    if (!isDateValid(endDate)) {
-      throw new Error(`Invalid endDate provided for event: ${slug}`)
-    }
-    return new Date(endDate) < today
+  if (endDate && !isDateValid(endDate)) {
+    throw new Error(`Invalid endDate provided for event: ${slug}`)
   }
 
   if (!isDateValid(startDate)) {
     throw new Error(`Invalid startDate provided for event: ${slug}`)
   }
-  return new Date(startDate) < today
+
+  const eventDate = endDate ? new Date(endDate) : new Date(startDate)
+  return eventDate < today
 }
 
-function getTodayDateUTCZero() {
-  const today = new Date()
-  const utcYear = today.getUTCFullYear()
-  const utcMonth = today.getUTCMonth()
-  const utcDate = today.getUTCDate()
+export function useEventsCategory(props: UseCategoryProps<EventData>) {
+  const { entries, searchParams, categorizeBy, validCategoryOptions } = props
 
-  return new Date(Date.UTC(utcYear, utcMonth, utcDate, 0, 0, 0, 0))
+  const results = useCategory({
+    searchParams,
+    entries,
+    categorizeBy,
+    validCategoryOptions,
+  })
+  const { categoryQuery, categoryCounts, categorizedResults } = results
+
+  const pastEvents = useMemo(
+    () => entries.filter(filterByPastEvents),
+    [entries],
+  )
+
+  const updatedCategoryCounts = useMemo(() => {
+    const pastEventsCount = pastEvents.length
+    return { ...categoryCounts, [pastEventsSetting.id]: pastEventsCount }
+  }, [categoryCounts, pastEvents])
+
+  const updatedCategorizedResults = useMemo(() => {
+    if (categoryQuery === pastEventsSetting.id) {
+      return pastEvents
+    }
+    return categorizedResults
+  }, [categoryQuery, categorizedResults, pastEvents])
+
+  return {
+    categoryQuery,
+    categorizedResults: updatedCategorizedResults,
+    categoryCounts: updatedCategoryCounts,
+  }
 }
