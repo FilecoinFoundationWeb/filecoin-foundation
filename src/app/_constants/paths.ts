@@ -32,6 +32,7 @@ interface PathObjectParams {
   includesEntries?: boolean
   customMainContentPath?: string
   customEntriesContentPath?: string
+  hasSubpaths?: boolean
 }
 
 const CONTENT_ROOT = 'src/content'
@@ -43,19 +44,23 @@ function createPathObject({
   includesEntries = false,
   customMainContentPath,
   customEntriesContentPath,
+  hasSubpaths = false,
 }: PathObjectParams): PathConfig {
-  const config: PathConfig = {
+  const mainContentPath = hasSubpaths
+    ? `${CONTENT_PAGES_ROOT}${path}${path}`
+    : `${CONTENT_PAGES_ROOT}${customMainContentPath ?? path}`
+
+  const entriesContentPath = includesEntries
+    ? `${CONTENT_ROOT}${customEntriesContentPath ?? path}`
+    : undefined
+
+  return {
     path,
     label,
-    mainContentPath: `${CONTENT_PAGES_ROOT}${customMainContentPath ?? path}`,
+    mainContentPath,
+    entriesContentPath,
   }
-  if (includesEntries) {
-    config.entriesContentPath = `${CONTENT_ROOT}${customEntriesContentPath ?? path}`
-  }
-
-  return config
 }
-
 export const PATHS = {
   ABOUT: createPathObject({ path: '/about', label: 'About' }),
   BLOG: createPathObject({
@@ -97,6 +102,7 @@ export const PATHS = {
   SECURITY: createPathObject({
     path: '/security',
     label: 'Security',
+    hasSubpaths: true,
   }),
   COORDINATED_DISCLOSURE_POLICY: createPathObject({
     path: '/security/coordinated-disclosure-policy',
