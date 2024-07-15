@@ -18,7 +18,7 @@ seo:
     and accelerate your blockchain project.
 ---
 
-[Filecoin Launchpad Accelerator](https://mesh.xyz/tachyon/), powered by [Tachyon](https://mesh.xyz/tachyon/), is seeking applications for its next cohort of innovators. The program is designed to support projects that build on and bridge the [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/), and [Ethereum](https://ethereum.org/) communities with tools, middleware, and apps.
+[Filecoin Launchpad Accelerator](https://mesh.xyz/tachyon/), powered by [Tachyon](https://mesh.xyz/tachyon/), is seeking applications for its next cohort of innovators. The program is designed to support projects that build on and bridge the IPFS, [Filecoin](https://filecoin.io/), and [Ethereum](https://ethereum.org/) communities with tools, middleware, and apps.
 
 If you have an idea for a tool or service that leverages these platforms, [**apply today**](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii) to be a part of this outstanding program. **Applications are open through midnight EST on May 9, 2021.**
 
@@ -28,6 +28,6 @@ Tachyon, one of the organizing forces behind the program, is a leading accelerat
 
 The Filecoin Foundation, which facilitates governance of the Filecoin network, funds critical development projects, and supports the growth of the Filecoin ecosystem, is here to support and foster these teams, too, through community events, dev grant applications and promotion.
 
-The first round of the Filecoin Launchpad Accelerator included 13 teams and 32 founders from 11 countries. Projects included [WrappedFil](https://wfil.network/), the first Filecoin wrapped token on Ethereum; [Parcel](https://parcel.money/), a self-custodial treasury management system with end-to-end data encryption; and [Voodfy](https://voodfy.com/), a private, decentralized video hosting platform, among many others. Watch the [Demo Day presentations](https://www.youtube.com/playlist?list=PL_0VrY55uV19AJ9uqZODM16cL8oj3uAO-)from this first cohort to see what can be accomplished with the support of this program. And learn more about the overall program and its structure in [this video](https://www.youtube.com/watch?v=yFn0eDn3QBc).
+The first round of the Filecoin Launchpad Accelerator included 13 teams and 32 founders from 11 countries. Projects included WrappedFil, the first Filecoin wrapped token on Ethereum; [Parcel](https://parcel.money/), a self-custodial treasury management system with end-to-end data encryption; and Voodfy, a private, decentralized video hosting platform, among many others. Watch the [Demo Day presentations](https://www.youtube.com/playlist?list=PL_0VrY55uV19AJ9uqZODM16cL8oj3uAO-)from this first cohort to see what can be accomplished with the support of this program. And learn more about the overall program and its structure in [this video](https://www.youtube.com/watch?v=yFn0eDn3QBc).
 
 **Reminder: Applications are now open, and close at midnight EST on May 9.** [**Apply today**](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii)**!**

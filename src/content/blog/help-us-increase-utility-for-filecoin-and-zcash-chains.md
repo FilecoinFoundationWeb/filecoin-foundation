@@ -22,7 +22,7 @@ seo:
 
 Filecoin Foundation (FF) and Electric Coin Co. (ECC) are now accepting grant proposals for projects that increase utility for Filecoin and Zcash projects. Together, we’re working to empower the Filecoin, Zcash, and greater Web3 ecosystems through a new grants pool that funds Filecoin and Zcash projects.
 
-Proposals can be submitted through [Github](https://github.com/filecoin-project/devgrants/blob/master/rfps/zcash-and-filecoin.md#zcash-and-filecoin-rfp). Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. More information about the program, including grant requirement details, can be found on our website: [ff-ecc-grants.org](https://ff-ecc-grants.org/).
+Proposals can be submitted through Github. Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. More information about the program, including grant requirement details, can be found on our website: [ff-ecc-grants.org](https://ff-ecc-grants.org/).
 
 FF and ECC are considering any proposals that expand the utility of Filecoin and Zcash as well as their respective ecosystems. The [new website](http://ff-ecc-grants.org/) details examples of projects that are ideal for the grant program, such as projects that support Filecoin storage payments in ZEC, media and file support in Zcash encrypted memos and NFTs, and zero-knowledge technology.
 

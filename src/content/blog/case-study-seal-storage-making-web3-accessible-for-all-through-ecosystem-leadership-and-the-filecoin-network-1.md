@@ -31,7 +31,7 @@ seo:
 
 **Providing an alternative data storage solution**
 
-The use of cloud infrastructure services has [spiked](https://www.idc.com/getdoc.jsp?containerId=IDC_P31615) over the past few years, since companies around the world were forced to digitize their businesses during the pandemic. In Q4 2021, spending on these services [grew by 13.5% YoY to an average of $21.1 billion](https://www.idc.com/getdoc.jsp?containerId=prUS48998722), and tech research firm IDC predicts a continuous growth and need for these services as supply continues to catch up to demand.
+The use of cloud infrastructure services has [spiked](https://www.idc.com/getdoc.jsp?containerId=IDC_P31615) over the past few years, since companies around the world were forced to digitize their businesses during the pandemic. In Q4 2021, spending on these services grew by 13.5% YoY to an average of $21.1 billion, and tech research firm IDC predicts a continuous growth and need for these services as supply continues to catch up to demand.
 
 Founded in 2021 to shake up the [$76 billion cloud storage market](https://www.fortunebusinessinsights.com/cloud-storage-market-102773) largely controlled by a few big tech companies, [Seal Storage](https://www.sealstorage.io/) provides Web3 data storage for enterprises, research institutes, and Web3 firms in need of a more sustainable, secure, and affordable home for their valuable data. Michael Horowitz, the CEO; Andrew McFarlane, CIO; and Alex Altman, COO, are the founders of Seal Storage and have been working in blockchain for the past five years on a quest to revolutionize the cloud storage industry and make Web3 accessible for all.
 

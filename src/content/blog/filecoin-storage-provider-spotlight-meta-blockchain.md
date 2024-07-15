@@ -22,7 +22,7 @@ seo:
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._
 
-Founded in 2018, [Meta Blockchain](http://www.meta-blockchain.co.kr/) is a rapidly growing, ambitious South Korean storage company. A multi-million-dollar company with 28 employees, the business has two data centers in Seoul and provides enterprise cloud storage services via a subsidiary called Meta Cloud and Creation (Meta C&C).
+Founded in 2018, Meta Blockchain is a rapidly growing, ambitious South Korean storage company. A multi-million-dollar company with 28 employees, the business has two data centers in Seoul and provides enterprise cloud storage services via a subsidiary called Meta Cloud and Creation (Meta C&C).
 
 Meta C&C works with corporate customers across a wide range of industries including law, healthcare, entertainment, and education, providing decentralized storage for media files. The company was an early participant in the Filecoin ecosystem and built a Filecoin test node in 2020. Today they operate 34 Filecoin nodes and provide about 20 PiB of decentralized storage. They are also equipped with a high-speed sealing machine and the capacity to supply more than 10 PiB per month for enterprise use–for both easy retrievals and for backup only.
 

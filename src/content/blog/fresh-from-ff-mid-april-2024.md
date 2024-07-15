@@ -69,8 +69,8 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 **Events**
 
 - FF President Marta Belcher joined a crypto policy and regulation panel at [Links NYC 2024](https://www.chainalysis.com/links-nyc/), hosted by Chainalysis. [Read the event recap](https://www.chainalysis.com/blog/links-nyc-2024-day1/).
-- Megan Klimen spoke at [Earth Commons](https://fundingthecommons.io/earth-commons-san-francisco-bay-area-2024), a conference series exploring the nexus of Web3 and climate at [LabWeek Public Goods](https://www.labweek.io/24-pg).
-- Danny O'Brien led workshops on the topics of public goods profit sharing and Internet/Web3 standards at [Funding the Commons](https://fundingthecommons.io/san-francisco-bay-area-2024). Keep an eye out on the [Funding the Commons YouTube channel](https://www.youtube.com/@Funding-the-Commons/videos) for an event recap!
+- Megan Klimen spoke at Earth Commons, a conference series exploring the nexus of Web3 and climate at [LabWeek Public Goods](https://www.labweek.io/24-pg).
+- Danny O'Brien led workshops on the topics of public goods profit sharing and Internet/Web3 standards at Funding the Commons. Keep an eye out on the [Funding the Commons YouTube channel](https://www.youtube.com/@Funding-the-Commons/videos) for an event recap!
 - FF supported the [Filecoin Orbit Ecosystem Showcase at Teamz Summit](https://lu.ma/fil-teamz), where Orbit Ambassadors outlined the unprecedented growth the Filecoin ecosystem is experiencing because of the Filecoin Virtual Machine (FVM) and InterPlanetary Consensus (IPC).
 - Brynn O’Donnell and Jefferson Sankara from the social impact team spoke at the University of Maryland’s EASIER Data Initiative workshop on [Open Geospatial Science and the Decentralized Geospatial Web](https://workshop.easierdata.org/).
 - See you at [Consensus](https://consensus2024.coindesk.com/), May 29-31 in Austin, TX. Find FF and teams across the Filecoin ecosystem in Austin at events throughout the week. Stay tuned for more details.

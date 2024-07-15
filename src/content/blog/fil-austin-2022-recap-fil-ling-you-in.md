@@ -29,7 +29,7 @@ On Thursday, June 10, the cryptoeconomics community gathered to share key insigh
 
 **[Announcing Explorer Awards by Filecoin Foundation and Unfinished](https://filecoinfoundation.medium.com/announcing-explorer-awards-by-filecoin-foundation-and-unfinished-70c9d569f418)**
 
-Filecoin Foundation and Unfinished launched the [Explorer Awards](http://explorerawards.org/), a joint program to support the growth of the decentralized Web movement and help others catalyze their Web3 learning. The awards include a $100,000 funding pool that will disperse between $1,000 and $10,000 to support projects that advance learning and development in decentralized technology. The award is intended to fund anything from an NFT workshop to a metaverse exhibition to a Web3 dinner event. To learn more about the project, visit [explorerawards.org](http://explorerawards.org/).
+Filecoin Foundation and Unfinished launched the Explorer Awards, a joint program to support the growth of the decentralized Web movement and help others catalyze their Web3 learning. The awards include a $100,000 funding pool that will disperse between $1,000 and $10,000 to support projects that advance learning and development in decentralized technology. The award is intended to fund anything from an NFT workshop to a metaverse exhibition to a Web3 dinner event.
 
 **[Starling Labs And Hala Systems Announce Cryptographic Submission to ICC](https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html)**
 

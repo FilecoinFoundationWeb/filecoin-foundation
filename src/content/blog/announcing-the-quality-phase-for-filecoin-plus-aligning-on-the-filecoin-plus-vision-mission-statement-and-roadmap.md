@@ -70,7 +70,7 @@ To scope and organize our tactical work towards these three top-level goals, we 
 5.  Legitimate client use-cases have scoped pathways for attaining DataCap
 6.  Governance model encourages rapid iteration and process improvement for diverse stakeholders
 
-Our [public roadmap](https://hub.fil.org/fil-plus-roadmap) has more details and timelines around the specific tactical projects, and we will also be updating this Medium publication space with more announcements over the coming months. Some of the key deliverables that we are excited to ship during this next phase include:
+Our public roadmap has more details and timelines around the specific tactical projects, and we will also be updating this Medium publication space with more announcements over the coming months. Some of the key deliverables that we are excited to ship during this next phase include:
 
 - New KPI dashboard metrics, for tracking abuse and governance efficiency
 - Public dispute tracker with clear consequences for abuse cases

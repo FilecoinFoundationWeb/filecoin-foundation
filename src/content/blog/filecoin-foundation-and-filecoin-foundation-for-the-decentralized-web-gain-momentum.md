@@ -26,8 +26,8 @@ In October, we [announced the details](https://www.youtube.com/watch?v=Sakannch1
 
 The FF has a sister charitable organization, the Filecoin Foundation for the Decentralized Web (FFDW). The mission of the FFDW is to ensure the permanent preservation of humanity’s most important information by stewarding the development of open source software and open protocols for decentralized data storage and retrieval networks.
 
-We also [announced the incredible teams](https://www.youtube.com/watch?v=6OY4xAs3Grg&feature=emb_title) making up the FF and FFDW in October, and those teams are [continuing to grow](https://finance.yahoo.com/news/filecoin-foundation-appoints-initial-staff-103014932.html).
+We also [announced the incredible teams](https://www.youtube.com/watch?v=6OY4xAs3Grg&feature=emb_title) making up the FF and FFDW in October, and those teams are continuing to grow.
 
-In the next day or so, the FF and the FFDW will be receiving their first transfers of Filecoin tokens, totaling approximately 1 million FIL tokens for FF and 951,268 FIL tokens for FFDW. This represents a small percentage of the Foundations’ 100 million FIL allocation — as laid out in the [Filecoin PPM](https://coinlist.co/assets/index/filecoin_index/Protocol%20Labs%20-%20SAFT%20-%20Private%20Placement%20Memorandum-bbd65da01fdc4a15219c49ad20fb9e28681adec9fae744c41cccd124545c4c73.pdf) — which the Foundations will continue to receive over time.
+In the next day or so, the FF and the FFDW will be receiving their first transfers of Filecoin tokens, totaling approximately 1 million FIL tokens for FF and 951,268 FIL tokens for FFDW. This represents a small percentage of the Foundations’ 100 million FIL allocation — as laid out in the Filecoin PPM— which the Foundations will continue to receive over time.
 
 Foundations are critical to the success of blockchain networks. They safeguard the network, drive governance, and promote ecosystem growth. We have ambitious missions, and we are thrilled to dive into the work. Follow our journeys on this blog. We look forward to sharing our progress with you!

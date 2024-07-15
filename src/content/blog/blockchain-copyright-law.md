@@ -22,7 +22,7 @@ _FF Board Chair Marta Belcher and Advisor Kristin Smith discuss use cases for bl
 
 Imagine writing a computer program that allows a user playing a song on their device to automatically transfer a millionth of a cent to the songwriter and a millionth of a cent to the singer for every second of a song that a user plays. This would be vastly better than the current way artists and copyright holders are compensated for their work, and smart contract technology makes this possible.
 
-At the [Copyright Society’s 2021 Midwinter Meeting](https://www.csusa.org/page/MidWinterMeeting), Filecoin Foundation Board Chair Marta Belcher and Foundation Advisor Kristin Smith joined Alanna Gombert, head of Identity at ConsenSys Mesh, and Adrien Stern, CEO of Reveel Technology, for a deep dive into blockchain technology and how it can be used to compensate artists for their work.
+At the Copyright Society’s 2021 Midwinter Meeting, Filecoin Foundation Board Chair Marta Belcher and Foundation Advisor Kristin Smith joined Alanna Gombert, head of Identity at ConsenSys Mesh, and Adrien Stern, CEO of Reveel Technology, for a deep dive into blockchain technology and how it can be used to compensate artists for their work.
 
 Smith, who serves as executive director of the Blockchain Association, opened the discussion with a blockchain primer, using Filecoin as an example of how smart contracts work.
 

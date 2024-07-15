@@ -31,7 +31,7 @@ UkraineArtCo’s near-term vision is to develop an NFT-enabled philanthropy plat
 
 ![](/assets/images/643e68afef5daa4c54ea3faf_1-swfqosn81iazodieiqqqka.png)
 
-Mariya Zeltsman, whose art is pictured above, was the first artist that UkraineArtCo launched, at NFT Miami. Born in Odessa, Masha’s art represents the feelings of families who are scattered due to the Russian invasion of Ukraine, and her goal is to bring awareness to what is happening through her NFT collection. You can find her art, which is part of UkraineArtCo’s current collections, on [Metaversero](https://metaversero.io/artist-detail.php?ac=T4DS0) and [OpenSea](https://opensea.io/collection/stand-with-ukraine-15).
+Mariya Zeltsman, whose art is pictured above, was the first artist that UkraineArtCo launched, at NFT Miami. Born in Odessa, Masha’s art represents the feelings of families who are scattered due to the Russian invasion of Ukraine, and her goal is to bring awareness to what is happening through her NFT collection. You can find her art, which is part of UkraineArtCo’s current collections, on Metaversero and [OpenSea](https://opensea.io/collection/stand-with-ukraine-15).
 
 Longer-term, the group is looking to establish blockchain-native nonprofit organizations with their own charitable programs, including the purchase of humanitarian-oriented goods and services that directly assist people, rather than directing proceeds to a third-party charitable organization.
 

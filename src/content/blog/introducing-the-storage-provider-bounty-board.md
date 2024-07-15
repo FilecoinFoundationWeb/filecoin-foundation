@@ -36,7 +36,7 @@ Bounties can be small or large, technical or nontechnical. Regardless of who you
 
 ## **Awarding System**
 
-Bounties are awarded for closing and/or fixing an issue. Bounties range from $50 to $5,000 (or equivalent FIL). Awards are determined based on the urgency and complexity of the task at hand. Rewards are determined by the Filecoin Foundation and the Storage Provider Working Group. Additional details can be found [here](https://github.com/filecoin-project/community/blob/master/storage-provider-bounty-program/BOUNTIES.md).
+Bounties are awarded for closing and/or fixing an issue. Bounties range from $50 to $5,000 (or equivalent FIL). Awards are determined based on the urgency and complexity of the task at hand. Rewards are determined by the Filecoin Foundation and the Storage Provider Working Group.
 
 ## **How to submit an open issue**
 

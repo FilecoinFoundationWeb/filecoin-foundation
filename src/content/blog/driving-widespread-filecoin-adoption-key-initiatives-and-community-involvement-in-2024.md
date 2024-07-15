@@ -31,7 +31,7 @@ Filecoin Foundation is one of many teams in the Filecoin network committed to th
 
 ## The Data Economy 
 
-We are living in an era defined by data. [Ninety percent](https://bernardmarr.com/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/) of the world's data was produced in just the last two years. The rise of artificial intelligence and machine learning technologies, which require vast amounts of data for training and operation, is a major contributor to the rapid increase in data generation. By 2025, it's predicted that [463 exabytes of data will be created each day](https://www.weforum.org/agenda/2019/04/how-much-data-is-generated-each-day-cf4bddf29f/).
+We are living in an era defined by data. Ninety percent of the world's data was produced in just the last two years. The rise of artificial intelligence and machine learning technologies, which require vast amounts of data for training and operation, is a major contributor to the rapid increase in data generation. By 2025, it's predicted that 463 exabytes of data will be created each day.
 
 Data fuels every sector of our global economy. In this data-driven world, digital assets of value will inevitably be recorded and tracked on blockchain networks to ensure transparency, security, and verifiability of ownership and transactions. These datasets will require continuous proofs that demonstrate in real-time that they are globally available, immutable, and verified without a single point of failure. Without such quality assurances, datasets, like any digital asset, will be at risk of losing value in this new digital economy.
 

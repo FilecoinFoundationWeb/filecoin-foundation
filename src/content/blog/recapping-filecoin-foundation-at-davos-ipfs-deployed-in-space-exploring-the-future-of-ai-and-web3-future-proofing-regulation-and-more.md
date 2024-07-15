@@ -107,7 +107,7 @@ For more panels from Davos check out our [Filecoin Sanctuary YouTube playlist](h
 
 **Social Impact Summit**
 
-Co-hosted by Filecoin Foundation for the Decentralized Web and Blockchain Law for Social Good Center, the [Social Impact Summit](https://www.blockchainlawsg.org/socialimpactsummit2024) will feature keynotes from Sheila Warren, Chief Executive Officer of the Crypto Council for Innovation; Rainey Reitman, Board President of Freedom of the Press Foundation; George Oates, Cofounder and Executive Director of the Flickr Foundation, and more leading voices across human rights, law, policy, and technology. Join us at the University of San Francisco to learn how decentralized technology can be a catalyst for societal change, highlighted by real-world examples of tech helping build stronger, more resilient communities, economies, and societies. [Register now](https://www.blockchainlawsg.org/socialimpactsummit2024?utm_source=upload.fil.org&utm_medium=newsletter&utm_campaign=filecoin-foundation-deploys-ipfs-in-space).
+Co-hosted by Filecoin Foundation for the Decentralized Web and Blockchain Law for Social Good Center, the Social Impact Summit will feature keynotes from Sheila Warren, Chief Executive Officer of the Crypto Council for Innovation; Rainey Reitman, Board President of Freedom of the Press Foundation; George Oates, Cofounder and Executive Director of the Flickr Foundation, and more leading voices across human rights, law, policy, and technology. Join us at the University of San Francisco to learn how decentralized technology can be a catalyst for societal change, highlighted by real-world examples of tech helping build stronger, more resilient communities, economies, and societies.
 
 **Join us at ETHDenver**
 

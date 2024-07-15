@@ -19,9 +19,9 @@ seo:
     with the Filecoin dev grant.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ _[Learn more](https://grants.filecoin.io/)_ _about the Filecoin Foundation’s Dev Grants program, and_ _[read more](https://github.com/filecoin-project/devgrants/blob/master/open-grants/accepted-open-grant-applications.md#surfing_woman---wave-12)_ _about recent grant recipients._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ _[Learn more](https://grants.filecoin.io/)_ _about the Filecoin Foundation’s Dev Grants program._
 
-[Arlequin](https://www.arlequin.gg/) — the Artists Metaverse — is a community-driven, ‘Paint-to-Earn’ system where users can collect NFT 3D animals, known as ‘Arlee’, in a creative ecosystem powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
+Arlequin— the Artists Metaverse — is a community-driven, ‘Paint-to-Earn’ system where users can collect NFT 3D animals, known as ‘Arlee’, in a creative ecosystem powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
 
 Also referred to by its developers as “_the Minecraft for colors,”_ it has been designed as an experience where the only limitation is the creativity of its players. What makes Arlequin different is that artists can customize their Arlees by painting on them directly into the browser. Soon, Arlequin will let users participate in contests where they paint on an Arlee, with the community then voting for their preferred entries. Rewards, such as Arlees NFTs and $FLOW coins, are then distributed among an event leaderboard.
 
@@ -39,4 +39,4 @@ Looking ahead, Kevin and his team plan to build a 3D Metaverse in 2023. In the m
 
 Read more about the Arlequin backstory and their plans for the future [here](https://medium.com/@arlequinnft/arlequin-the-minecraft-for-colors-30b5bd3bf58f).
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our_ _[other grant recipients](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b)_ _and learn how you can apply for_ _[open grants](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md')_ _and_ _[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md)._
+<!-- _The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our_ _[other grant recipients](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b)_ _and learn how you can apply for_ _[open grants](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md')_ _and_ _[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md)._ -->
