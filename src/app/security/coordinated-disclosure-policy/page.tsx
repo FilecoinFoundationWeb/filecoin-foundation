@@ -6,7 +6,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import {
   attributes,
   react as Content,
-} from '@/content/pages/coordinated-disclosure-policy.md'
+} from '@/content/pages/security/coordinated-disclosure-policy.md'
 
 import { PATHS } from '@/constants/paths'
 
