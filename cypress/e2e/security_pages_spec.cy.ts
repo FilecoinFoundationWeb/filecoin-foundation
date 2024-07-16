@@ -8,5 +8,6 @@ describe('Security - Main Page', () => {
 describe('Security - Coordinated Disclosure Policy Page', () => {
   testPageMetadata({
     path: PATHS.COORDINATED_DISCLOSURE_POLICY,
+    overrideDefaultTitle: true,
   })
 })
