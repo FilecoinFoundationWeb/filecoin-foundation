@@ -6,7 +6,7 @@ describe('Ecosystem Explorer Page', () => {
   it('should check metadata', () => {
     testPageMetadata({
       path: PATHS.ECOSYSTEM_EXPLORER,
-      hasPageHeaderDescription: true,
+      overrideDefaultTitle: true,
     })
   })
 

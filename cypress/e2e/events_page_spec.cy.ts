@@ -6,7 +6,7 @@ describe('Events Page', () => {
   it('should check metadata', () => {
     testPageMetadata({
       path: PATHS.EVENTS,
-      hasPageHeaderDescription: true,
+      overrideDefaultTitle: true,
     })
   })
 
