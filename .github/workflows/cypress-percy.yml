@@ -23,6 +23,8 @@ jobs:
         run: npm ci
 
       - name: Build Project
+        env:
+          AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
         run: npm run build
 
       - name: Start Server
