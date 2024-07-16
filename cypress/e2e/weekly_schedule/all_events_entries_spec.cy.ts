@@ -1,11 +1,10 @@
 import { PATHS } from '../../../src/app/_constants/paths'
-import { verifyAllEventLinks } from '../../support/verifyAllEntryLinksUtil'
+import { createCategoryTests } from '../../support/categoryUtils'
 
-describe('All Event Entries', () => {
-  it('should check links', () => {
-    verifyAllEventLinks(
-      PATHS.EVENTS.entriesContentPath as string,
-      PATHS.EVENTS.path as string,
-    )
-  })
+const eventCategories = ['hosted', 'sponsored', 'supported']
+
+createCategoryTests({
+  pathConfig: PATHS.EVENTS,
+  categories: eventCategories,
+  categoryType: 'involvement',
 })
