@@ -56,7 +56,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.ECOSYSTEM_EXPLORER.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 const categoryData = getCategoryDataFromDirectory(

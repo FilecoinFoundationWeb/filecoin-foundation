@@ -3,8 +3,8 @@ header:
   title: "Coordinated Disclosure Policy"
   description: ""
 seo:
-  title: "Coordinated Disclosure Policy"
-  description: "Discover the Filecoin Foundation's Coordinated Disclosure Policy. Understand our bug bounty program, disclosure process, and commitment to network security. Report vulnerabilities and earn recognition."
+  title: "Filecoin Bug Bounty Program - Disclosure Policy"
+  description: "To help secure the Filecoin Network and encourage security research done in good faith, we have created a Filecoin Bug Bounty program."
 ---
 
 **Last Updated: April 05, 2024**
