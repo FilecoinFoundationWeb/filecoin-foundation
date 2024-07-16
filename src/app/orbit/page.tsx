@@ -14,6 +14,8 @@ import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
+import { NextServerSearchParams } from '@/types/searchParams'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/orbit.md'
@@ -37,7 +39,11 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-export default function Orbit() {
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+export default function Orbit({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -87,7 +93,7 @@ export default function Orbit() {
         title="Global Orbit Events"
         description="All Orbit events are free to attend! Come meet the members of your Filecoin community in our upcoming events."
       >
-        <OrbitEventsSection />
+        <OrbitEventsSection searchParams={searchParams} />
       </PageSection>
 
       <PageSection
