@@ -1,6 +1,5 @@
 ---
 title: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
-slug: orbiting-ethdenver-perspectives-from-a-filecoin-orbit-ambassador
 created-on: 2024-03-25T15:21:33.080000Z
 updated-on: 2024-03-25T15:21:33.092000Z
 published-on: 2024-03-25T15:21:33.100000Z
@@ -10,7 +9,7 @@ description:
   America came together to host a Filecoin Ecosystem Showcase event. Read about what
   this event meant for the community and the future of the Orbit program.
 image:
-  url: /assets/images/032224-orbit-austin.png
+  src: /assets/images/032224-orbit-austin.png
   alt: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
 recommended-posts: []
 seo:

@@ -1,6 +1,5 @@
 ---
 title: Tableland
-slug: tableland
 created-on: "2024-01-04T22:40:28.455Z"
 updated-on: "2024-01-05T21:39:20.665Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597243bf8de2cf989b5d1c0_xoug5yutdhfs_s1ziwypy3knkkxygigdict_0jnxcxm.svg
+  src: /assets/images/6597243bf8de2cf989b5d1c0_xoug5yutdhfs_s1ziwypy3knkkxygigdict_0jnxcxm.svg
   alt: Tableland Logo
 website: "https://tableland.xyz/"
 featured-content: "https://mirror.xyz/tableland.eth/cLDRyLa7aMEf1y2sy-PhQtllnZ1YK_oxoS-U2Sf30_Y"

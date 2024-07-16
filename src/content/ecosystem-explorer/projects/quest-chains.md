@@ -1,6 +1,5 @@
 ---
 title: Quest Chains
-slug: quest-chains
 created-on: 2024-03-29T21:28:54.146000Z
 updated-on: 2024-03-29T21:47:21.880000Z
 published-on: 2024-03-29T21:47:21.880000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073295f68243b0fc173c94_questchains.png
+  src: /assets/images/66073295f68243b0fc173c94_questchains.png
   alt: Quest Chains Logo
 website: https://questchains.xyz/
 featured-content:

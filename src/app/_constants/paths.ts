@@ -16,6 +16,8 @@ export type PathValues =
   | '/'
   | '/privacy-policy'
   | '/terms-of-use'
+  | '/security'
+  | '/security/coordinated-disclosure-policy'
 
 export interface PathConfig {
   path: PathValues
@@ -91,6 +93,14 @@ export const PATHS = {
   TERMS_OF_USE: createPathObject({
     path: '/terms-of-use',
     label: 'Terms of Use',
+  }),
+  SECURITY: createPathObject({
+    path: '/security',
+    label: 'Security',
+  }),
+  COORDINATED_DISCLOSURE_POLICY: createPathObject({
+    path: '/security/coordinated-disclosure-policy',
+    label: 'Coordinated Disclosure Policy',
   }),
 } as const
 

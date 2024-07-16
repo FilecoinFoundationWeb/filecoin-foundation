@@ -1,6 +1,5 @@
 ---
 title: Chemotronix
-slug: chemotronix
 created-on: 2024-03-29T21:28:49.980000Z
 updated-on: 2024-03-29T21:39:34.161000Z
 published-on: 2024-03-29T21:39:34.161000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
+  src: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
   alt: Chemotronix Logo
 website: https://chemotronix.org/
 featured-content:

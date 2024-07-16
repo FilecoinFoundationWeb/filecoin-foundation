@@ -1,6 +1,5 @@
 ---
 title: "FoxWallet"
-slug: "foxwallet"
 created-on: 2024-02-27T20:36:33.516000Z
 updated-on: 2024-02-27T20:36:33.529000Z
 published-on: 2024-02-27T20:36:33.539000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/screenshot-2024-02-07-at-11.20.48-am.png
+  src: /assets/images/screenshot-2024-02-07-at-11.20.48-am.png
   alt: FoxWallet Logo
 website: "https://foxwallet.com/en"
 repo: "github.com/foxwallet"

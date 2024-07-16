@@ -1,6 +1,5 @@
 ---
 title: "DeSci Labs"
-slug: "desci-labs"
 created-on: 2024-01-04T22:40:25.317000Z
 updated-on: 2024-01-05T21:35:07.007000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659872e921cfae476602eef2_desci_logo_white.png
+  src: /assets/images/659872e921cfae476602eef2_desci_logo_white.png
   alt: DeSci Labs Logo
 website: https://desci.com
 featured-content: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science/

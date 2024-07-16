@@ -1,6 +1,5 @@
 ---
 title: SFT Chain
-slug: sft-chain
 created-on: "2024-02-05T17:57:11.340Z"
 updated-on: "2024-02-05T17:57:11.357Z"
 published-on: "2024-02-05T17:57:11.368Z"
@@ -15,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/group.png
+  src: /assets/images/group.png
   alt: SFT Chain
 website: "https://www.sftproject.io/"
 featured-content:

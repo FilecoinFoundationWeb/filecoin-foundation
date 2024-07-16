@@ -1,32 +1,31 @@
 ---
 title: Flare API Portal
-slug: flare-api-portal
-created-on: 2024-04-05T13:18:56.133000Z
-updated-on: 2024-04-05T13:18:56.169000Z
-published-on: 2024-04-05T13:18:56.214000Z
-description:
-  "The API Portal from Flare Labs serving the Flare Networks community
-  with Web3 APIs from all of Flare's chains, explorers, connected chains, and more."
+created-on: 2024-04-05T13:18:56.133Z
+updated-on: 2024-04-05T13:18:56.169Z
+published-on: 2024-04-05T13:18:56.214Z
+image:
+  src: /assets/images/flare.png
+  alt: Flare API Portal Logo
 category: tooling-productivity
+subcategories:
+  - developer-tools
 tags:
   - developer-tools
   - infrastructure
   - network-tools
   - storage-infrastructure
+description: The API Portal from Flare Labs serving the Flare Networks community
+  with Web3 APIs from all of Flare's chains, explorers, connected chains, and
+  more.
+website: https://api-portal.flare.network
 tech:
   - filecoin
-image:
-  url: /assets/images/api_twitter_360.png
-  alt: Flare API Portal Logo
-website: https://api-portal.flare.network
-featured-content:
-repo:
+repo: null
+news-update: null
+featured-content: null
 twitter: https://twitter.com/APIPortal
 video-url: https://www.youtube.com/embed/mBTyTwh-Wzo
-year-joined: 2024-04-05T13:18:56.264000Z
-news-update:
-subcategories:
-  - developer-tools
+year-joined: 2024-04-05T13:18:56.264Z
 seo:
   title: Flare API Portal
   description:

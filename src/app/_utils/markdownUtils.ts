@@ -25,7 +25,9 @@ export function readAndValidateMarkdownFile(
     throw new Error(`Invalid front matter in file: ${filePath}`)
   }
 
-  return { data, content }
+  const slug = path.parse(filePath).name
+
+  return { data: { ...data, slug }, content }
 }
 
 export function readAndValidateMarkdownFiles(
@@ -36,15 +38,8 @@ export function readAndValidateMarkdownFiles(
   const filenames = fs.readdirSync(directory)
 
   return filenames.map((filename) => {
-    const slug = filename.replace(/\.md$/, '')
     const filePath = path.join(directory, filename)
     const { data, content } = readAndValidateMarkdownFile(filePath, fields)
-
-    if (slug !== data.slug) {
-      throw new Error(
-        `Mismatch! File: ${filename} has slug: ${data.slug}, expected: ${slug}`,
-      )
-    }
 
     return { data, content }
   })

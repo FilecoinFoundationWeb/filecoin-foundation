@@ -2,8 +2,6 @@
 title: >-
   Xinshu Technology: How the “Chinese Shutterfly” Uses the Filecoin Network to
   Keep a Competitive Edge in the Photo Sharing Industry
-slug: >-
-  xinshu-technology-how-the-chinese-shutterfly-uses-the-filecoin-network-to-keep-a-competitive-edge-in-the-photo-sharing-industry
 created-on: "2023-04-21T07:32:20.158Z"
 updated-on: "2023-04-21T07:32:20.158Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -12,8 +10,7 @@ description: >-
   last a lifetime — and then some — for thousands of Chinese families and
   businesses.
 image:
-  url: >-
-    /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
+  src: /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
   alt:
 recommended-posts: []
 category: use-cases

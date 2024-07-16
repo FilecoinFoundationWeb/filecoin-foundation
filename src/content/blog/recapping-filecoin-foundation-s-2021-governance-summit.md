@@ -1,6 +1,5 @@
 ---
 title: Recapping Filecoin Foundation’s 2021 Governance Summit
-slug: recapping-filecoin-foundation-s-2021-governance-summit
 created-on: 2023-04-21T07:31:45.550000Z
 updated-on: 2023-04-21T07:31:45.550000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,7 +8,7 @@ description:
   Governance Summit, a three-day series of meetings, brainstorming sessions, and design
   sprints.
 image:
-  url: /assets/images/image-c-18.png
+  src: /assets/images/image-c-18.png
   alt:
 recommended-posts: []
 category: events

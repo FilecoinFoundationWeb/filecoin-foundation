@@ -1,6 +1,5 @@
 ---
 title: Eastore
-slug: eastore
 created-on: 2024-04-05T00:15:15.134000Z
 updated-on: 2024-04-05T00:15:15.152000Z
 published-on: 2024-04-05T00:15:15.159000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/eastore-logo.png
+  src: /assets/images/eastore-logo.png
   alt: Eastore Logo
 featured-content:
 website: https://devfolio.co/projects/eastore-e336

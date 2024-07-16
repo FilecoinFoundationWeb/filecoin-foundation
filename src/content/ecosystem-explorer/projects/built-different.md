@@ -1,6 +1,5 @@
 ---
 title: Built Different
-slug: built-different
 created-on: 2024-03-29T21:28:48.571000Z
 updated-on: 2024-03-29T21:38:14.934000Z
 published-on: 2024-03-29T21:38:14.934000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660734bb2f8beb060933dd1d_builtdifferent.png
+  src: /assets/images/660734bb2f8beb060933dd1d_builtdifferent.png
   alt: Built Different Logo
 website: https://www.builtdifferent.foundation/
 featured-content:

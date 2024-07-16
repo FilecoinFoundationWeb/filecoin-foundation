@@ -9,9 +9,8 @@ description:
   It’s time to register for the upcoming Filecoin II Launchpad Accelerator
   Demo Day, taking place September 28 @ 11:00 AM EDT!
 image:
-  url: /assets/images/64423afe4e4c68b60af47060_0-8alsa5xsesgbjyrr.png
+  src: /assets/images/64423afe4e4c68b60af47060_0-8alsa5xsesgbjyrr.png
   alt:
-slug: join-20-fascinating-startups-on-september-28-for-filecoin-launchpad-accelerator-demo-day
 recommended-posts: []
 category: events
 seo:

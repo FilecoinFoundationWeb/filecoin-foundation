@@ -1,6 +1,5 @@
 ---
 title: "Internet Development Studio Company"
-slug: "internet-development-studio-company"
 created-on: 2024-01-12T20:15:45.714000Z
 updated-on: 2024-01-12T20:15:45.742000Z
 published-on: 2024-01-12T20:15:45.772000Z
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/idsc_logo_white.png
+  src: /assets/images/idsc_logo_white.png
   alt: Internet Development Studio Company Logo
 website: https://internet.dev
 featured-content:

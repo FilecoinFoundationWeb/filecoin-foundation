@@ -1,6 +1,5 @@
 ---
 title: dDrive
-slug: ddrive
 created-on: 2024-04-03T17:23:12.584000Z
 updated-on: 2024-04-03T17:23:12.612000Z
 published-on: 2024-04-03T17:23:12.644000Z
@@ -12,7 +11,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
+  src: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
   alt: dDrive Logo
 featured-content:
 website: https://app.valist.io/d-drive/d-drive-pwa

@@ -1,6 +1,5 @@
 ---
 title: dRPC
-slug: drpc
 created-on: 2024-04-05T13:32:22.074000Z
 updated-on: 2024-04-05T13:32:22.089000Z
 published-on: 2024-04-05T13:32:22.105000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/drpc_symbol_fullcolor-2x.png
+  src: /assets/images/drpc_symbol_fullcolor-2x.png
   alt: dRPC Logo
 featured-content:
 website: https://drpc.org/

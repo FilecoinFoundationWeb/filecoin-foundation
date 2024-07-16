@@ -1,6 +1,5 @@
 ---
 title: SETI Institute
-slug: seti-institute
 created-on: "2024-01-04T22:40:27.937Z"
 updated-on: "2024-01-05T21:38:49.734Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -15,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597517b30e548a865cc3d71_seti-institute-new-logo-design.png
+  src: /assets/images/6597517b30e548a865cc3d71_seti-institute-new-logo-design.png
   alt: SETI Institute Logo
 website: "https://www.seti.org/"
 repo:

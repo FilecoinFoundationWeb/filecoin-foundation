@@ -1,6 +1,5 @@
 ---
 title: Social Media on the Decentralized Web
-slug: social-media-on-the-decentralized-web
 created-on: "2023-04-21T07:31:50.469Z"
 updated-on: "2023-04-21T07:31:50.469Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,8 +8,7 @@ description: >-
   decentralized social media network Mastodon, in the face of controversial
   layoffs, and leadership and product changes.
 image:
-  url: >-
-    /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
+  src: /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
   alt:
 recommended-posts: []
 category: use-cases

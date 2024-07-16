@@ -1,6 +1,5 @@
 ---
 title: Hauska.ai
-slug: hauska-ai
 created-on: 2024-03-20T19:42:42.027000Z
 updated-on: 2024-03-20T19:42:42.041000Z
 published-on: 2024-03-20T19:42:42.053000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/hauska_logo_white.png
+  src: /assets/images/hauska_logo_white.png
   alt: Hauska   Design | Protect | Exchange
 website: https://www.hauska.ai/
 featured-content:

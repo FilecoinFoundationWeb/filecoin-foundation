@@ -1,6 +1,5 @@
 ---
 title: "DCENT"
-slug: "dcent"
 created-on: 2024-01-04T22:40:24.557000Z
 updated-on: 2024-01-05T21:34:55.753000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597471cd556a0c37caf9706_dcent_logo.png
+  src: /assets/images/6597471cd556a0c37caf9706_dcent_logo.png
   alt: DCENT Logo
 website: https://dcent.nl
 featured-content: https://fil.org/blog/filecoin-storage-provider-spotlight-dcent/

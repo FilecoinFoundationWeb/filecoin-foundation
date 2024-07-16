@@ -1,6 +1,5 @@
 ---
 title: Announcing Explorer Awards by Filecoin Foundation and Unfinished
-slug: announcing-explorer-awards-by-filecoin-foundation-and-unfinished
 created-on: 2023-04-21T07:25:58.996000Z
 updated-on: 2023-04-21T07:25:58.996000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,7 +8,7 @@ description: >-
   Explorer Awards, a joint program to support the growth of the decentralized web
   movement and help others catalyze their Web3 learning.
 image:
-  url: /assets/images/0609-ffxunfinished.png
+  src: /assets/images/0609-ffxunfinished.png
   alt:
 recommended-posts: []
 category: news

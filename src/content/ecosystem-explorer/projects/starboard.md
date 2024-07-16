@@ -1,6 +1,5 @@
 ---
 title: Starboard
-slug: starboard
 created-on: "2024-01-04T22:40:28.319Z"
 updated-on: "2024-01-05T21:39:06.502Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974dc622e2d2883f4e585f_t7xpocnt_400x400.png
+  src: /assets/images/65974dc622e2d2883f4e585f_t7xpocnt_400x400.png
   alt: Starboard Logo
 website: "https://dashboard.starboard.ventures/dashboard"
 featured-content:

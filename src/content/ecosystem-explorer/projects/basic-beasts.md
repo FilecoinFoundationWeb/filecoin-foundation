@@ -1,6 +1,5 @@
 ---
 title: Basic Beasts
-slug: basic-beasts
 created-on: 2024-03-29T21:28:48.611000Z
 updated-on: 2024-03-29T21:36:57.674000Z
 published-on: 2024-03-29T21:36:57.674000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/66073290babeabe27e0b8354_basicbeasts.png
+  src: /assets/images/66073290babeabe27e0b8354_basicbeasts.png
   alt: Basic Beasts Logo
 website: https://www.basicbeasts.io/
 featured-content:

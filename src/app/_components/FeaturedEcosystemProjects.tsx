@@ -36,8 +36,7 @@ export function FeaturedEcosystemProjects({
             icon: MagnifyingGlass,
           }}
           image={{
-            src: image.url,
-            alt: image.alt,
+            ...image,
             fallback: graphicsData.imageFallback,
             padding: true,
             objectFit: 'contain',

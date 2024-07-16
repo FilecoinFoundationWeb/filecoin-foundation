@@ -1,6 +1,5 @@
 ---
 title: "Lotus"
-slug: "lotus"
 created-on: "2024-02-26T20:36:51.261Z"
 updated-on: "2024-02-26T20:36:51.280Z"
 published-on: "2024-02-26T20:36:51.289Z"
@@ -13,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: # "/assets/images/lotus-logo-big-1-.png"
+  src: # "/assets/images/lotus-logo-big-1-.png"
   alt:
     "Lotus: The gateway to secure and decentralized digital storage on the Filecoin
     network."

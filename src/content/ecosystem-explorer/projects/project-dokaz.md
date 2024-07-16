@@ -1,6 +1,5 @@
 ---
 title: Project Dokaz
-slug: "project-dokaz"
 created-on: "2024-01-10T19:28:43.717Z"
 updated-on: "2024-01-10T19:28:43.727Z"
 published-on: "2024-01-10T19:28:43.735Z"
@@ -16,7 +15,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: /assets/images/dokaz_logo_white.png
+  src: /assets/images/dokaz_logo_white.png
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html"
 repo:

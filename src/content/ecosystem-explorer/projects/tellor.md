@@ -1,6 +1,5 @@
 ---
 title: Tellor
-slug: tellor
 created-on: 2024-03-29T21:28:55.457000Z
 updated-on: 2024-03-29T21:49:49.078000Z
 published-on: 2024-03-29T21:49:49.078000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073297e6e8ec9445d76d19_tellor.png
+  src: /assets/images/66073297e6e8ec9445d76d19_tellor.png
   alt: Tellor Logo
 website: https://tellor.io/
 featured-content:

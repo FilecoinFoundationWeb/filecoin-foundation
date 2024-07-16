@@ -1,6 +1,5 @@
 ---
 title: NuLink
-slug: nulink
 created-on: 2024-03-20T13:35:36.210000Z
 updated-on: 2024-03-20T13:35:36.273000Z
 published-on: 2024-03-20T13:35:36.295000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/nulink.png
+  src: /assets/images/nulink.png
   alt: NuLink Logo
 website: https://www.nulink.org/
 featured-content:

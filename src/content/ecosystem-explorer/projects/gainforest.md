@@ -1,6 +1,5 @@
 ---
 title: "Gainforest"
-slug: "gainforest"
 created-on: 2024-01-04T22:40:26.173000Z
 updated-on: 2024-01-05T21:37:09.707000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6598730db2c229176c8afc29_gainforest_logo_white.png
+  src: /assets/images/6598730db2c229176c8afc29_gainforest_logo_white.png
   alt: Gainforest Logo
 website: https://gainforest.earth
 featured-content: https://green.filecoin.io/web3-and-the-sustainable-data-movement/

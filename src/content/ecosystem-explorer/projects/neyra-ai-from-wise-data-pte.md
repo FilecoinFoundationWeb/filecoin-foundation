@@ -1,6 +1,5 @@
 ---
 title: "Neyra AI from Wise Data PTE"
-slug: "neyra-ai-from-wise-data-pte"
 created-on: "2024-02-22T19:39:58.152Z"
 updated-on: "2024-02-22T19:39:58.175Z"
 published-on: "2024-02-22T19:39:58.195Z"
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: # "/assets/images/logo-2-.png"
+  src: # "/assets/images/logo-2-.png"
   alt: "Neyra AI"
 website: "https://drive.neyra.ai/"
 featured-content:

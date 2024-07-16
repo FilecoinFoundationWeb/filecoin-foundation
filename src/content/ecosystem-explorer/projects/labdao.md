@@ -1,6 +1,5 @@
 ---
 title: LabDAO
-slug: labdao
 created-on: 2024-03-29T21:28:53.071000Z
 updated-on: 2024-03-29T21:44:57.882000Z
 published-on: 2024-03-29T21:44:57.882000Z
@@ -12,7 +11,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/66073294cc627368322b763a_labdao.png
+  src: /assets/images/66073294cc627368322b763a_labdao.png
   alt: LabDAO
 website: https://labdao.xyz/
 featured-content:

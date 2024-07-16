@@ -2,7 +2,6 @@
 title:
   "Call for Community Feedback: Weigh in on the new Filecoin Governance Process
   Proposal (FIP0001v2)"
-slug: call-for-community-feedback-weigh-in-on-the-new-filecoin-governance-process-proposal-fip0001v2
 created-on: 2023-10-18T18:21:45.309000Z
 updated-on: 2023-10-18T18:21:45.332000Z
 published-on: 2023-10-18T18:21:45.346000Z
@@ -12,7 +11,7 @@ description:
   engagements, Filecoin Foundation is proud to announce the release of the FIP0001v2
   draft.
 image:
-  url: /assets/images/231017-fip0001v2.png
+  src: /assets/images/231017-fip0001v2.png
   alt: "Filecoin Foundation FIP 0001v2 Governance"
 recommended-posts: []
 seo:

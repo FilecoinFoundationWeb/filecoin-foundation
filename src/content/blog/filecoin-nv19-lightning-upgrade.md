@@ -1,6 +1,5 @@
 ---
 title: Filecoin nv19 Lightning Upgrade
-slug: filecoin-nv19-lightning-upgrade
 created-on: 2023-06-01T11:00:30.238000Z
 updated-on: 2023-06-01T11:00:00Z
 published-on: 2023-06-01T11:00:00Z
@@ -10,7 +9,7 @@ description:
   storage. This technical milestone brings a host of enhancements and improvements
   to the Filecoin ecosystem, enabling greater efficiency, security, and usability.
 image:
-  url: /assets/images/06012023-lightningupgrade.png
+  src: /assets/images/06012023-lightningupgrade.png
   alt:
 recommended-posts: []
 category: news

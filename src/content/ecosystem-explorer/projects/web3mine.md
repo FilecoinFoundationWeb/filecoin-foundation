@@ -1,6 +1,5 @@
 ---
 title: Web3mine
-slug: web3mine
 created-on: 2024-03-29T21:28:55.160000Z
 updated-on: 2024-03-29T21:50:12.309000Z
 published-on: 2024-03-29T21:50:12.309000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073297bc9a092bda5eb6d8_web3mine.png
+  src: /assets/images/66073297bc9a092bda5eb6d8_web3mine.png
   alt: Web3mine Logo
 website: https://web3mine.io/
 featured-content:

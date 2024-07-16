@@ -72,16 +72,40 @@ const FILECOIN_FOUNDATION_URLS = {
     },
   },
   orbit: {
-    ambassadorsApplicationForm: 'https://forms.gle/NsERP8jB2XJXbwj58',
-    ambassadorsPortal: 'https://hub.fil.org/orbit/ambassadors',
+    ambassadorsApplicationForm:
+      'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',
+    ambassadorsPortal: 'https://hub.fil.org/orbit-ambassadors',
+    email: {
+      href: 'mailto:orbit@fil.org',
+    },
     eventsCalendar:
       'https://airtable.com/appAGdqyYrqoFNuPI/shrIZSogQcFNtN9SW/tblnrsxREgBikWu9A',
+    orbitYearInReview: {
+      '2023': `${PATHS.BLOG.path}/orbit-year-in-review-growing-a-global-community-of-builders/`,
+    },
   },
   greenhouse: 'https://boards.greenhouse.io/filecoinfoundation',
   newsletter: 'https://upload.fil.org/subscribe',
   publicDataCommons: {
     contactForm: 'https://airtable.com/appyPZiiFSUIYFsrA/shrmNURZt1khzB00M',
     email: 'mailto:impact@fil.org',
+  },
+  security: {
+    emails: {
+      main: {
+        label: 'Contact Security Team',
+        href: 'mailto:security@fil.org',
+      },
+      audits: {
+        href: 'mailto:audits@fil.org',
+      },
+    },
+    documents: {
+      filecoinCompatibility:
+        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
+      auditReports: 'https://spec.filecoin.io/#section-appendix.audit_reports',
+      bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
+    },
   },
   social: {
     bluesky: {

@@ -10,9 +10,8 @@ description:
   who elect to commit storage resources to the network for a longer period of time.\
   \  "
 image:
-  url: /assets/images/0621-2022-01.png
+  src: /assets/images/0621-2022-01.png
   alt:
-slug: fip0056-update-proposal-rejected-following-community-feedback-and-deliberation
 recommended-posts: []
 category: news
 seo:

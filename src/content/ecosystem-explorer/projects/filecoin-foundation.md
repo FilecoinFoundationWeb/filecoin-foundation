@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Foundation"
-slug: "filecoin-foundation"
 created-on: 2024-01-04T22:40:24.825000Z
 updated-on: 2024-01-05T21:43:31.817000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+  src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
   alt: Filecoin Foundation Logo
 website: https://fil.org
 featured-content: https://fil.org/blog/

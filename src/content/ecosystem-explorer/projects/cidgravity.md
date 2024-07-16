@@ -1,6 +1,5 @@
 ---
 title: CIDgravity
-slug: cidgravity
 created-on: 2024-04-03T17:39:33.777000Z
 updated-on: 2024-04-03T17:39:33.788000Z
 published-on: 2024-04-03T17:39:33.799000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/cid-gravity.jpeg
+  src: /assets/images/cid-gravity.jpeg
   alt: CIDgravity Logo
 website: https://www.cidgravity.com/
 featured-content:

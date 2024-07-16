@@ -2,8 +2,6 @@
 title: >-
   Filecoin Foundation and Filecoin Foundation for the Decentralized Web Expand
   Boards
-slug: >-
-  filecoin-foundation-and-filecoin-foundation-for-the-decentralized-web-expand-boards
 created-on: "2023-04-21T07:27:09.042Z"
 updated-on: "2023-04-21T07:27:09.042Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -13,8 +11,7 @@ description: >-
   Blockchain Association, has joined the board of the Filecoin Foundation for
   the Decentralized Web (FFDW).
 image:
-  url: >-
-    /assets/images/64423acca6ec4184be2a4866_1-kequqilr3jvs6nq_e7naqq.png
+  src: /assets/images/64423acca6ec4184be2a4866_1-kequqilr3jvs6nq_e7naqq.png
   alt:
 recommended-posts: []
 category: news

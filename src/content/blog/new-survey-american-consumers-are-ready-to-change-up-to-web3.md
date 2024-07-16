@@ -1,6 +1,5 @@
 ---
 title: "New Survey: American Consumers Are Ready to Change Up to Web3"
-slug: new-survey-american-consumers-are-ready-to-change-up-to-web3
 created-on: "2023-04-21T07:31:36.890Z"
 updated-on: "2023-04-21T07:31:36.890Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,8 +8,7 @@ description: >-
   reveal that — while Americans trust the internet’s overall resilience, they
   don’t like how their data is managed by the current gatekeepers.
 image:
-  url: >-
-    /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
+  src: /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
   alt:
 recommended-posts: []
 category: reports

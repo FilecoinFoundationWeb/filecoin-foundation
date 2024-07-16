@@ -1,6 +1,5 @@
 ---
 title: FileZilla
-slug: filezilla
 created-on: 2024-02-21T15:20:11.125000Z
 updated-on: 2024-03-20T14:20:11.136000Z
 published-on: 2024-03-20T14:20:11.149000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/zilla_logo_white.png
+  src: /assets/images/zilla_logo_white.png
   alt: FileZilla Logo
 featured-content:
 website: https://file-zilla.pro/

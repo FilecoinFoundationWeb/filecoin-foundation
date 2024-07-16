@@ -1,6 +1,5 @@
 ---
 title: Hamster
-slug: hamster
 created-on: 2024-03-29T21:28:51.960000Z
 updated-on: 2024-03-29T21:43:26.916000Z
 published-on: 2024-03-29T21:43:26.916000Z
@@ -12,7 +11,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732932560f8884ec24d4c_hamster.png
+  src: /assets/images/660732932560f8884ec24d4c_hamster.png
   alt: Hamster
 website: https://hamsternet.io/
 featured-content:

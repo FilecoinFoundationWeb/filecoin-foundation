@@ -1,6 +1,5 @@
 ---
 title: QuickNode
-slug: quicknode
 created-on: 2024-03-29T21:28:54.885000Z
 updated-on: 2024-03-29T21:47:37.035000Z
 published-on: 2024-03-29T21:47:37.035000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073296c00a4b6b1e84bf32_quicknode.png
+  src: /assets/images/66073296c00a4b6b1e84bf32_quicknode.png
   alt: QuickNode Logo
 website: https://www.quicknode.com/
 featured-content:

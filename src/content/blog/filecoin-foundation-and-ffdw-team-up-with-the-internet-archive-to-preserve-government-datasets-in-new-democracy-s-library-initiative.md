@@ -6,11 +6,8 @@ description: >-
   The initiative will create a free, open collection of government data that
   will ensure that government research and publications from around the world
   remain permanently accessible to the public.
-slug: >-
-  filecoin-foundation-and-ffdw-team-up-with-the-internet-archive-to-preserve-government-datasets-in-new-democracy-s-library-initiative
 image:
-  url: >-
-    /assets/images/64423acba6ec41b8da2a46d0_1-jrf-dri7quysyfpqa5rpaw.webp
+  src: /assets/images/64423acba6ec41b8da2a46d0_1-jrf-dri7quysyfpqa5rpaw.webp
   alt:
 updated-on: "2023-04-21T07:27:07.444Z"
 created-on: "2023-04-21T07:27:07.444Z"

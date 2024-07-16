@@ -7,9 +7,8 @@ description:
   The Filecoin Foundation is part of the community building the next generation
   of the web.
 image:
-  url: /assets/images/64423b004e4c68dc35f473ac_0-zlsuhdrlo5hqa1zy.png
+  src: /assets/images/64423b004e4c68dc35f473ac_0-zlsuhdrlo5hqa1zy.png
   alt:
-slug: join-the-filecoin-foundation-team-for-a-hiring-webinar
 recommended-posts: []
 category: news
 seo:

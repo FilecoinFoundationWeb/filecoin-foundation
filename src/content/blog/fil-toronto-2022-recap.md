@@ -1,6 +1,5 @@
 ---
 title: FIL Toronto 2022 Recap
-slug: fil-toronto-2022-recap
 created-on: 2023-04-21T07:26:59.147000Z
 updated-on: 2023-04-21T07:26:59.147000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,7 +8,7 @@ description:
   FIL Toronto. From July 4–6, attendees gathered to discuss new features, partner
   tools, and other developments in the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-07.png
+  src: /assets/images/image-c-07.png
   alt:
 recommended-posts: []
 category: events

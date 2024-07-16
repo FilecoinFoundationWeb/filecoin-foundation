@@ -1,6 +1,5 @@
 ---
 title: Starling Lab
-slug: starling-lab
 created-on: "2024-01-10T18:24:21.006Z"
 updated-on: "2024-01-10T18:24:21.025Z"
 published-on: "2024-01-10T18:24:21.035Z"
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/starling_logo_white-1-.png
+  src: /assets/images/starling_logo_white-1-.png
   alt: Starling Lab Logo
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.fastcompany.com/90731729/inside-starling-lab-a-moonshot-project-to-preserve-the-worlds-most-important-information"

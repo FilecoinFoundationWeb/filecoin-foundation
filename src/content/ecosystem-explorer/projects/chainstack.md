@@ -1,6 +1,5 @@
 ---
 title: Chainstack
-slug: chainstack
 created-on: 2024-03-29T21:28:49.352000Z
 updated-on: 2024-03-29T21:39:14.213000Z
 published-on: 2024-03-29T21:39:14.213000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732912d6d72ba4a9774ea_chainstack.png
+  src: /assets/images/660732912d6d72ba4a9774ea_chainstack.png
   alt: Chainstack Logo
 website: https://chainstack.com/
 featured-content:

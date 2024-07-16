@@ -2,7 +2,6 @@
 title:
   What to Know About the Uses of Decentralization in Online Community Governance
   in Five Minutes
-slug: what-to-know-about-the-uses-of-decentralization-in-online-community-governance-in-five-minutes
 created-on: 2023-07-19T15:07:39.071000Z
 updated-on: 2023-07-19T15:07:39.094000Z
 published-on: 2023-07-19T15:07:39.110000Z
@@ -14,7 +13,7 @@ description: >-
   journalist, who has been recognized for his work on democratic ownership and
   governance models for online platforms and protocols.
 image:
-  url: /assets/images/n-schneider-blogpost-banner.png
+  src: /assets/images/n-schneider-blogpost-banner.png
   alt:
 recommended-posts: []
 category: ecosystem

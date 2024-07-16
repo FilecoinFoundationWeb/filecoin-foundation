@@ -1,6 +1,5 @@
 ---
 title: STFIL
-slug: stfil
 created-on: "2024-01-17T14:55:43.649Z"
 updated-on: "2024-01-17T14:55:43.701Z"
 published-on: "2024-01-17T14:55:43.725Z"
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: # "/assets/images/stfil-logo-dark-background-.png"
+  src: # "/assets/images/stfil-logo-dark-background-.png"
   alt: STFIL
 website: "stfil.io"
 featured-content:

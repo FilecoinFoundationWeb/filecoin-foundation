@@ -10,9 +10,8 @@ description:
   artists to control, monetize, and protect their digital assets in the Web2 and Web3
   landscape."
 image:
-  url: /assets/images/0315-dgs-numbers.png
+  src: /assets/images/0315-dgs-numbers.png
   alt:
-slug: dev-grant-spotlight-numbers-protocol-puts-digital-creators-in-control-of-their-assets
 recommended-posts: []
 category: reports
 seo:

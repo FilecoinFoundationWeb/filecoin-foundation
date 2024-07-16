@@ -24,7 +24,13 @@ type NavigationListProps = {
 
 const companyItems = [
   PATHS.ABOUT,
-  { label: 'Contact', path: FILECOIN_FOUNDATION_URLS.email.href },
+  PATHS.EVENTS,
+  PATHS.GRANTS,
+  PATHS.ECOSYSTEM_EXPLORER,
+  PATHS.GOVERNANCE,
+  PATHS.ORBIT,
+  PATHS.SECURITY,
+  PATHS.BLOG,
 ]
 
 const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]

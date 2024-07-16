@@ -6,11 +6,8 @@ description: >-
   New Blockchain Academy Lab will provide education and training to support
   understanding of decentralized technology
 image:
-  url: >-
-    /assets/images/64423ac8ef619d74dcb60e37_1-dvxhahnhu5a5qk3xidlxga.webp
+  src: /assets/images/64423ac8ef619d74dcb60e37_1-dvxhahnhu5a5qk3xidlxga.webp
   alt:
-slug: >-
-  filecoin-foundation-and-blockchain-law-for-social-good-center-accelerate-web3-education-1
 updated-on: "2023-04-21T07:27:04.336Z"
 created-on: "2023-04-21T07:27:04.336Z"
 published-on: "2023-04-21T07:33:56.200Z"

@@ -1,6 +1,5 @@
 ---
 title: "Twin Quasar"
-slug: "twin-quasar"
 created-on: "2024-01-05T21:39:42.797Z"
 updated-on: "2024-01-04T22:40:28.744Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -16,7 +15,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/6597243633c341e0379b9712_nj6wqvn7kai05ws5irrbrcma4zz_ctatdako4sxlrio.png
+  src: /assets/images/6597243633c341e0379b9712_nj6wqvn7kai05ws5irrbrcma4zz_ctatdako4sxlrio.png
   alt: "Twin Quasar Logo"
 website: "https://www.twinquasar.io/"
 repo:

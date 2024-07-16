@@ -1,6 +1,5 @@
 ---
 title: "DWeb on the Rise: The Many Uses for Decentralized Storage"
-slug: dweb-on-the-rise-the-many-uses-for-decentralized-storage
 created-on: 2023-05-15T11:00:00Z
 updated-on: 2023-05-15T11:00:00Z
 published-on: 2023-05-15T11:00:00Z
@@ -12,7 +11,7 @@ description:
   be run by any one of thousands of hosting providers around the world, instead of
   just being run by Amazon by default."
 image:
-  url: /assets/images/0905-dweb-on-the-rise.png
+  src: /assets/images/0905-dweb-on-the-rise.png
   alt:
 recommended-posts: []
 category: ecosystem

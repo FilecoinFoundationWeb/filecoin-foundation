@@ -1,6 +1,5 @@
 ---
 title: SINSO
-slug: sinso
 created-on: "2024-01-04T22:40:27.988Z"
 updated-on: "2024-01-05T21:38:54.539Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65975173625957e0087c7501_sinso_logo.png
+  src: /assets/images/65975173625957e0087c7501_sinso_logo.png
   alt: SINSO Logo
 website: "https://sinso.io/"
 featured-content:

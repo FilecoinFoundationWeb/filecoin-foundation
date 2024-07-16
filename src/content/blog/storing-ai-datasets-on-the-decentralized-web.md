@@ -1,6 +1,5 @@
 ---
 title: Storing AI Datasets on the Decentralized Web
-slug: storing-ai-datasets-on-the-decentralized-web
 created-on: "2023-04-21T07:31:59.463Z"
 updated-on: "2023-04-21T07:31:59.463Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -11,8 +10,7 @@ description: >-
   private partners together to develop model AI initiatives, drive policy, and
   facilitate investment, with a special focus on underserved communities.
 image:
-  url: >-
-    /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
+  src: /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
   alt:
 recommended-posts: []
 category: use-cases

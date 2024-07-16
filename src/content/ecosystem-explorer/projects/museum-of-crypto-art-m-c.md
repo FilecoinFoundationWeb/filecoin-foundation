@@ -1,6 +1,5 @@
 ---
 title: "Museum of Crypto Art (M○C△)"
-slug: museum-of-crypto-art-m-c
 created-on: "2024-01-04T22:40:26.888Z"
 updated-on: "2024-01-05T21:37:50.995Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -15,7 +14,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/659751c70b1ecbf25f6faaf3_moca.png
+  src: /assets/images/659751c70b1ecbf25f6faaf3_moca.png
   alt: "Museum of Crypto Art Logo"
 website: "https://museumofcryptoart.com"
 featured-content:

@@ -1,6 +1,5 @@
 ---
 title: Supranational
-slug: supranational
 created-on: "2024-01-04T22:40:28.332Z"
 updated-on: "2024-01-05T21:39:10.579Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
+  src: /assets/images/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
   alt: Supranational Logo
 twitter: "https://twitter.com/_Supranational"
 featured-content: >-

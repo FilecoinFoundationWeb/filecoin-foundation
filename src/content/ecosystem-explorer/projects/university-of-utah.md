@@ -1,6 +1,5 @@
 ---
 title: "University of Utah"
-slug: "university-of-utah"
 created-on: "2024-01-05T21:39:54.109Z"
 updated-on: "2024-01-04T22:40:28.834Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -17,7 +16,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/65974d55ccb76baf40726b38_university_of_utah_horizontal_logo.svg.png
+  src: /assets/images/65974d55ccb76baf40726b38_university_of_utah_horizontal_logo.svg.png
   alt: "University of Utah Logo"
 website: "http://cedmav.org/"
 repo:

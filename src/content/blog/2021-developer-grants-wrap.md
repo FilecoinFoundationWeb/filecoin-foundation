@@ -1,6 +1,5 @@
 ---
 title: 2021 Developer Grants Wrap
-slug: 2021-developer-grants-wrap
 created-on: 2021-12-30T00:00:00Z
 updated-on: 2021-12-30T00:00:00Z
 published-on: 2021-12-30T00:00:00Z
@@ -9,7 +8,7 @@ description: >-
   development projects to foster a more robust and efficient decentralized web through
   the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-16.png
+  src: /assets/images/image-c-16.png
   alt:
 recommended-posts: []
 category: reports

@@ -6,11 +6,8 @@ description: >-
   In 2021, Chainlink and Filecoin launched a joint grant initiative to
   accelerate the development of hybrid smart contracts that combine Chainlink
   decentralized oracles and Filecoin decentralized storage.
-slug: >-
-  dzk-foundation-awarded-chainlink-filecoin-joint-grant-to-support-zk-rollup-research
 image:
-  url: >-
-    /assets/images/64423abce3c08f49114f50eb_1-9utuc70k3mbyvlsllf7dqa.png
+  src: /assets/images/64423abce3c08f49114f50eb_1-9utuc70k3mbyvlsllf7dqa.png
   alt:
 updated-on: "2023-04-21T07:26:52.479Z"
 created-on: "2023-04-21T07:26:52.479Z"

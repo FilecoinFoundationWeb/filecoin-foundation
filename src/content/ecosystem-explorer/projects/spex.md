@@ -1,6 +1,5 @@
 ---
 title: SPex
-slug: spex
 created-on: 2024-03-29T21:28:54.676000Z
 updated-on: 2024-03-29T21:48:26.877000Z
 published-on: 2024-03-29T21:48:26.877000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732963533eb7277065843_spex.png
+  src: /assets/images/660732963533eb7277065843_spex.png
   alt: SPex Logo
 website: https://www.spex.website/
 featured-content:

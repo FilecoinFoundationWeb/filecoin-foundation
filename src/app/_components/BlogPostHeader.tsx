@@ -1,6 +1,6 @@
-import { Badge } from '@/components/Badge'
 import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
+import { TagLabel } from '@/components/TagLabel'
 
 import { type BlogPostData } from '@/types/blogPostTypes'
 
@@ -23,7 +23,7 @@ export function BlogPostHeader({
   return (
     <header className="space-y-6">
       <div className="space-y-4">
-        {category && <Badge>{category}</Badge>}
+        {category && <TagLabel>{category}</TagLabel>}
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>
@@ -39,7 +39,7 @@ export function BlogPostHeader({
           fill
           priority
           quality={100}
-          src={image.url}
+          src={image.src}
           alt={image.alt}
           className="rounded-lg"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}

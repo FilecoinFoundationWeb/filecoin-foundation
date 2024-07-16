@@ -1,6 +1,5 @@
 ---
 title: "OKcontract"
-slug: "okcontract"
 created-on: "2024-02-01T15:47:28.401Z"
 updated-on: "2024-02-01T15:47:28.419Z"
 published-on: "2024-02-01T15:47:28.434Z"
@@ -14,7 +13,7 @@ tags:
 tech:
   - "ipfs"
 image:
-  url: "/assets/images/okcontract-logo-white.png"
+  src: "/assets/images/okcontract-logo-white.png"
   alt: "OKcontract"
 website: "https://okcontract.com/"
 featured-content:

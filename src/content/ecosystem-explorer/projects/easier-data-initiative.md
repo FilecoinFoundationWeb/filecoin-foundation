@@ -1,6 +1,5 @@
 ---
 title: "EASIER Data Initiative"
-slug: "easier-data-initiative"
 created-on: 2024-02-26T21:29:27.659000Z
 updated-on: 2024-02-26T21:29:27.678000Z
 published-on: 2024-02-26T21:29:27.688000Z
@@ -15,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/easier-data-initiative.png
+  src: /assets/images/easier-data-initiative.png
   alt: EASIER Data Initiative Logo
 website: https://easierdata.org/
 featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/

@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Saturn"
-slug: "filecoin-saturn"
 created-on: 2024-01-04T22:40:25.258000Z
 updated-on: 2024-01-05T21:36:21.464000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -15,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
+  src: /assets/images/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
   alt: Filecoin Saturn Logo
 website: https://saturn.tech
 featured-content:

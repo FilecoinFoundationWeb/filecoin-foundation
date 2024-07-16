@@ -1,6 +1,5 @@
 ---
 title: "Unveiling the Filecoin Ecosystem Explorer"
-slug: unveiling-the-filecoin-ecosystem-explorer
 created-on: 2024-01-11T15:12:45.372000Z
 updated-on: 2024-01-11T15:12:45.388000Z
 published-on: 2024-01-11T15:12:45.398000Z
@@ -9,7 +8,7 @@ description:
   The Filecoin Ecosystem Explorer is a crowd-sourced database that showcases
   the breadth and depth of Filecoin ecosystem projects.
 image:
-  url: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
+  src: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
   alt: "Filecoin Ecosystem Explorer"
 recommended-posts: []
 seo:

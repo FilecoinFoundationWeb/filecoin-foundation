@@ -8,9 +8,8 @@ description:
   open tool for coordinating work priorities and tapping the collective knowledge
   of the Filecoin ecosystem in crowdsourcing solutions for the storage provider community.
 image:
-  url: /assets/images/image-c-08.png
+  src: /assets/images/image-c-08.png
   alt:
-slug: introducing-the-storage-provider-bounty-board
 recommended-posts: []
 category: news
 seo:

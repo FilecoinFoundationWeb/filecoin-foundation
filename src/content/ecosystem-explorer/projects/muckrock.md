@@ -1,6 +1,5 @@
 ---
 title: "MuckRock"
-slug: muckrock
 created-on: "2024-01-10T18:11:13.040Z"
 updated-on: "2024-01-10T18:11:13.127Z"
 published-on: "2024-01-10T18:11:13.198Z"
@@ -15,7 +14,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: "/assets/images/muckrock_logo_white.png"
+  src: "/assets/images/muckrock_logo_white.png"
   alt: "MuckRock Logo Filecoin Ecosystem Explorer"
 website: "https://www.muckrock.com/"
 featured-content: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"

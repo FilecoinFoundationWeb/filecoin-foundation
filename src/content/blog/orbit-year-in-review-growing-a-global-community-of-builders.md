@@ -1,6 +1,5 @@
 ---
 title: "Orbit Year in Review: Growing a Global Community of Builders"
-slug: orbit-year-in-review-growing-a-global-community-of-builders
 created-on: 2023-12-07T13:50:04.187000Z
 updated-on: 2023-12-07T13:50:04.200000Z
 published-on: 2023-12-07T13:50:04.211000Z
@@ -9,7 +8,7 @@ description:
   In 2023, the Filecoin Orbit program helped seed a new crop of thousands
   of builders in the Filecoin ecosystem.
 image:
-  url: /assets/images/231205-orbit-year.png
+  src: /assets/images/231205-orbit-year.png
   alt: "Filecoin Orbit Program Year in Review"
 recommended-posts: []
 seo:
@@ -23,7 +22,7 @@ This year, the Filecoin Orbit program helped seed a new crop of thousands of bui
 
 Since the program’s launch, 147 Orbit Ambassadors have introduced an estimated 10,000 early-career developers, students, and enthusiasts to the Filecoin ecosystem through 190 workshops and community hackathons in over 40 countries.
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/O29ugCDMVI4?si=jHf9tZ8JZMhwgNBk"
   title="Filecoin Orbit 2023 in Review"
   height="315"
@@ -68,7 +67,7 @@ And Orbit Regional Leads for Africa hosted [FIL Cape Town](https://fil-capetown.
 
 Watch Clara Tsao’s talk on Orbit from LabWeek
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/zV-AicKKx-Q?si=LvE1lnmFMNMXWviW"
   title="Filecoin Orbit Community Program"
   height="315"

@@ -1,6 +1,5 @@
 ---
 title: Haven
-slug: haven
 created-on: 2024-03-29T21:28:52.020000Z
 updated-on: 2024-03-29T21:44:28.465000Z
 published-on: 2024-03-29T21:44:28.465000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/660732939d359eb7bc732049_haven.png
+  src: /assets/images/660732939d359eb7bc732049_haven.png
   alt: Haven
 website: https://havendp.com
 featured-content:

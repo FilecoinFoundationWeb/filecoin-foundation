@@ -1,6 +1,5 @@
 ---
 title: FIL Austin
-slug: fil-austin
 created-on: "2023-05-03T08:06:07.140Z"
 updated-on: "2023-05-03T08:18:13.718Z"
 published-on: "2023-05-03T08:22:38.798Z"
@@ -12,7 +11,7 @@ external-link: https://events.bizzabo.com/filaustin
 start-date: "2023-11-13T18:35:31.331Z"
 end-date:
 image:
-  url: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
+  src: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
   alt:
 involvement: hosted
 seo:

@@ -4,10 +4,8 @@ description: >-
   Filecoin Foundation experienced tremendous growth in 2021, both in size and
   scope.
 image:
-  url: >-
-    /assets/images/64423b078d1be7013acecd8c_0-wrv5zur8bytkshra.png
+  src: /assets/images/64423b078d1be7013acecd8c_0-wrv5zur8bytkshra.png
   alt:
-slug: look-back-and-look-forward-filecoin-foundation-in-2021-and-2022
 updated-on: "2023-04-21T07:28:07.363Z"
 created-on: "2023-04-21T07:28:07.363Z"
 published-on: "2023-04-21T07:33:56.200Z"

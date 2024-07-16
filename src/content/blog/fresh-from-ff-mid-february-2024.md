@@ -1,6 +1,5 @@
 ---
 title: "Fresh From FF: Mid-February, 2024"
-slug: fresh-from-ff-mid-february-2024
 created-on: 2024-02-15T20:13:07.449000Z
 updated-on: 2024-02-15T20:13:07.488000Z
 published-on: 2024-02-15T20:13:07.495000Z
@@ -12,7 +11,7 @@ description:
   partners, advocates, and more as we work toward our mission of building a stronger,
   more decentralized internet.
 image:
-  url: /assets/images/0215-ff.png
+  src: /assets/images/0215-ff.png
   alt: "Fresh from FF, Mid-February, 2024 on a radial blue background."
 recommended-posts: []
 seo:

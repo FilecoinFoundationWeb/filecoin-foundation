@@ -1,6 +1,5 @@
 ---
 title: MetaPals
-slug: metapals
 created-on: 2024-03-29T21:28:53.034000Z
 updated-on: 2024-03-29T21:45:37.973000Z
 published-on: 2024-03-29T21:45:37.973000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/6607367ee29bf508686a1043_metapals.png
+  src: /assets/images/6607367ee29bf508686a1043_metapals.png
   alt: MetaPals Logo
 featured-content:
 website: https://metapals.pet/

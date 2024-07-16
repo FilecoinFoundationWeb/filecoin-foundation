@@ -1,6 +1,5 @@
 ---
 title: Hashguard
-slug: hashguard
 created-on: 2024-03-20T14:14:44.020000Z
 updated-on: 2024-03-20T14:14:44.067000Z
 published-on: 2024-03-20T14:14:44.167000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/hashgaurd_logo_white.png
+  src: /assets/images/hashgaurd_logo_white.png
   alt: Hashguard
 website: https://hashguard.io/
 featured-content:

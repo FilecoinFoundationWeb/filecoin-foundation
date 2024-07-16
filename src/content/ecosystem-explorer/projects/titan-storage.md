@@ -1,6 +1,5 @@
 ---
 title: Titan Storage
-slug: titan-storage
 created-on: 2024-03-20T13:04:49.531000Z
 updated-on: 2024-03-20T13:04:49.599000Z
 published-on: 2024-03-20T13:04:49.640000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/titan-storage_logo_white.png
+  src: /assets/images/titan-storage_logo_white.png
   alt: Titan Storage Logo
 website: https://storage.titannet.io
 featured-content:

@@ -10,9 +10,8 @@ description:
   Foundation for the Decentralized Web (FFDW) took the stage at Filecoin Liftoff Week
   to talk about the future of the organizations and the promise of Web3.
 image:
-  url: /assets/images/64423b0f4e4c686c88f481d6_1-mg36oqbqdetgd3sn8-bgsq.png
+  src: /assets/images/64423b0f4e4c686c88f481d6_1-mg36oqbqdetgd3sn8-bgsq.png
   alt:
-slug: meet-the-filecoin-foundation-and-the-filecoin-foundation-for-the-decentralized-web
 recommended-posts: []
 category: ecosystem
 seo:

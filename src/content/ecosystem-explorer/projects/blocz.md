@@ -1,6 +1,5 @@
 ---
 title: blocz
-slug: blocz
 created-on: 2024-04-05T02:22:34.349000Z
 updated-on: 2024-04-05T02:22:34.361000Z
 published-on: 2024-04-05T02:22:34.372000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/blocz.png
+  src: /assets/images/blocz.png
   alt: Blocz Logo
 website: https://www.blocz.io/
 featured-content:

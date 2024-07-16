@@ -2,8 +2,6 @@
 title: >-
   Filecoin Foundation and Protocol Labs Embark on Experimental Project to put
   New York City Open Data on the Filecoin Network
-slug: >-
-  filecoin-foundation-and-protocol-labs-embark-on-experimental-project-to-put-new-york-city-open-data-on-the-filecoin-network
 created-on: "2023-04-21T07:27:13.911Z"
 updated-on: "2023-04-21T07:32:22.903Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -14,8 +12,7 @@ description: >-
   together to store and maintain New York City Open Data on the decentralized
   web for the next five years.
 image:
-  url: >-
-    /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
+  src: /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
   alt:
 recommended-posts:
   - src/content/blog/applications-are-open-for-filecoin-plus-notary-elections.md

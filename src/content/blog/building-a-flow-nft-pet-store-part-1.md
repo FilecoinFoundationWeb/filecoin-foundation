@@ -1,6 +1,5 @@
 ---
 title: "Building a Flow NFT Pet Store : Part 1"
-slug: building-a-flow-nft-pet-store-part-1
 created-on: "2023-04-21T07:26:19.480Z"
 updated-on: "2023-04-21T07:26:19.480Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,8 +8,7 @@ description: >-
   create a simple NFT marketplace app on the Flow blockchain from scratch, using
   the Flow blockchain and IPFS/Filecoin storage via nft.storage.
 image:
-  url: >-
-    /assets/images/64423a9bd1b0256d85f907e2_0-al1sv2xu4ah_bwdo.png
+  src: /assets/images/64423a9bd1b0256d85f907e2_0-al1sv2xu4ah_bwdo.png
   alt:
 recommended-posts: []
 category: use-cases

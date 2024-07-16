@@ -1,6 +1,5 @@
 ---
 title: DataHaus
-slug: datahaus
 created-on: 2024-03-29T21:28:52.788000Z
 updated-on: 2024-03-29T21:40:39.978000Z
 published-on: 2024-03-29T21:40:39.978000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329442b3d343f69c52d7_datahaus.png
+  src: /assets/images/6607329442b3d343f69c52d7_datahaus.png
   alt: DataHaus Logo
 featured-content:
 website: https://datahaus.vercel.app/

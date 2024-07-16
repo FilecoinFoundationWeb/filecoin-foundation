@@ -3,10 +3,8 @@ title: Meet Filecoin Foundation Senior Fellow Danny O’Brien
 description: >-
   The Filecoin Foundation (FF) and the Filecoin Foundation for the Decentralized
   Web (FFDW) are delighted to welcome Danny O’Brien to the team.
-slug: meet-filecoin-foundation-senior-fellow-danny-o-brien
 image:
-  url: >-
-    /assets/images/64423b0c0425d33126f2f20d_0-62iqqktk7czvo78e.jpeg
+  src: /assets/images/64423b0c0425d33126f2f20d_0-62iqqktk7czvo78e.jpeg
   alt:
 updated-on: "2023-04-21T07:28:12.620Z"
 created-on: "2023-04-21T07:28:12.620Z"

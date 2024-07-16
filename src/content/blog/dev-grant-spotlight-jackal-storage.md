@@ -3,10 +3,8 @@ title: "Dev Grant Spotlight: JACKAL Storage"
 description: >-
   JACKAL Storage is a platform that provides a secure, private, and
   user-friendly solution for decentralized storage on the Filecoin network.
-slug: dev-grant-spotlight-jackal-storage
 image:
-  url: >-
-    /assets/images/64423ab18d1be70ae7ce9031_1-qwnolzesajrp3gjwrthflg.png
+  src: /assets/images/64423ab18d1be70ae7ce9031_1-qwnolzesajrp3gjwrthflg.png
   alt:
 updated-on: "2023-04-21T07:26:41.530Z"
 created-on: "2023-04-21T07:26:41.530Z"

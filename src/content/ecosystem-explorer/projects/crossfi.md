@@ -1,6 +1,5 @@
 ---
 title: CrossFi
-slug: crossfi
 created-on: 2024-01-17T14:44:30.832000Z
 updated-on: 2024-01-17T14:44:30.857000Z
 published-on: 2024-01-17T14:44:30.872000Z
@@ -16,7 +15,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/crossfi_logo_white.png
+  src: /assets/images/crossfi_logo_white.png
   alt: CrossFi Logo
 website: "https://crossfimain.com/"
 featured-content:

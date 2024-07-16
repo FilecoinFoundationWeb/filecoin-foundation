@@ -1,6 +1,5 @@
 ---
 title: "NFT.Storage"
-slug: "nft-storage"
 created-on: "2024-01-04T22:40:26.995Z"
 updated-on: "2024-01-05T21:37:56.613Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -13,7 +12,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
+  src: /assets/images/6598749d492fd7a346d84c3b_nft.storage_logo_white.png
   alt: "NFT.Storage Logo"
 website: "https://nft.storage"
 featured-content:

@@ -6,10 +6,8 @@ description: >-
   business has two data centers in Seoul and provides enterprise cloud storage
   services via a subsidiary called Meta Cloud and Creation (Meta C&C).
 image:
-  url: >-
-    /assets/images/64423ae18d1be72cd2ceb12e_1-avr_3ujwveph-055eq1s_q.png
+  src: /assets/images/64423ae18d1be72cd2ceb12e_1-avr_3ujwveph-055eq1s_q.png
   alt:
-slug: filecoin-storage-provider-spotlight-meta-blockchain
 updated-on: "2023-04-21T07:27:29.284Z"
 created-on: "2023-04-21T07:27:29.284Z"
 published-on: "2023-04-21T07:33:56.200Z"

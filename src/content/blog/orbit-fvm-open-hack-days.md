@@ -1,6 +1,5 @@
 ---
 title: Orbit FVM Open Hack Days
-slug: orbit-fvm-open-hack-days
 created-on: 2023-04-21T07:31:40.974000Z
 updated-on: 2023-04-21T07:31:40.974000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -11,7 +10,7 @@ description:
   experience building on FVM. Entrants will develop on FVM in order to compete for
   $6,000 in prizes!
 image:
-  url: /assets/images/0208-orbitfvm.png
+  src: /assets/images/0208-orbitfvm.png
   alt:
 recommended-posts: []
 category: events

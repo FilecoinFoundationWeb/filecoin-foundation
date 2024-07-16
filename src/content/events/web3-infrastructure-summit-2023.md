@@ -1,6 +1,5 @@
 ---
 title: Web3 Infrastructure Summit 2023
-slug: web3-infrastructure-summit-2023
 created-on: "2023-06-27T17:43:51.981Z"
 updated-on: "2023-06-27T17:43:52.040Z"
 published-on: "2023-06-27T17:43:52.040Z"
@@ -10,7 +9,7 @@ external-link: https://rockscarmedia.com/events/web3-infrastructure-summit-2023/
 start-date: "2023-06-15T17:43:52.060Z"
 end-date:
 image:
-  url: /assets/images/web3-infra-2023.png
+  src: /assets/images/web3-infra-2023.png
 involvement: supported
 seo:
   title: Web3 Infrastructure Summit 2023

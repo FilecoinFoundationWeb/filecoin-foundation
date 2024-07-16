@@ -1,6 +1,5 @@
 ---
 title: HashMix
-slug: hashmix
 created-on: 2024-03-29T21:28:52.584000Z
 updated-on: 2024-03-29T21:29:46.580000Z
 published-on: 2024-03-29T21:29:46.580000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
+  src: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
   alt: HashMix
 website: https://fvm.hashmix.org/
 featured-content:

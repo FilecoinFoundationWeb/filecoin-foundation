@@ -1,6 +1,5 @@
 ---
 title: "Flame Launch"
-slug: "flame-launch"
 created-on: 2024-01-18T17:27:13.376000Z
 updated-on: 2024-01-18T17:27:13.436000Z
 published-on: 2024-01-18T17:27:13.451000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/flame.png
+  src: /assets/images/flame.png
   alt: Flame Launch Logo
 website: https://www.flamelaunch.com/
 featured-content:

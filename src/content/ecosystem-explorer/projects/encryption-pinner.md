@@ -1,6 +1,5 @@
 ---
 title: Encryption Pinner
-slug: encryption-pinner
 created-on: 2024-04-05T01:09:47.866000Z
 updated-on: 2024-04-05T01:09:47.898000Z
 published-on: 2024-04-05T01:09:47.907000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url:
+  src:
   alt: Encryption Pinner Logo
 featured-content:
 website: https://devpost.com/software/encryption-pinner?ref_content=user-portfolio&ref_feature=in_progress

@@ -1,6 +1,5 @@
 ---
 title: "Fileverse"
-slug: "fileverse"
 created-on: 2024-01-04T22:40:25.815000Z
 updated-on: 2024-01-05T21:36:31.390000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65987305cbcf4ef8c43f229e_fileverse_logo_white.png
+  src: /assets/images/65987305cbcf4ef8c43f229e_fileverse_logo_white.png
   alt: Fileverse Logo
 website: "https://fileverse.io"
 featured-content: "https://www.youtube.com/watch?v=-RTvaZVSzi0&list=PL_0VrY55uV1_B19kuAg-ExQ-Wa2d1hCbf&index=5"

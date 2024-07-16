@@ -1,6 +1,5 @@
 ---
 title: Storage Company Ewesion Leverages Filecoin Network for Data Preservation
-slug: storage-company-ewesion-leverages-filecoin-network-for-data-preservation
 created-on: "2023-04-21T07:31:57.523Z"
 updated-on: "2023-04-21T07:31:57.523Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,8 +8,7 @@ description: >-
   serves everyone from large and medium-sized enterprises to media and
   individual users.
 image:
-  url: >-
-    /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
+  src: /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
   alt:
 recommended-posts: []
 category: use-cases

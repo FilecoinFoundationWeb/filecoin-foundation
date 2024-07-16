@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import { useCategory } from '@/hooks/useCategory'
+import { useEventsCategory } from '@/hooks/useEventsCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -24,9 +24,9 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings } from '@/utils/categoryUtils'
+import { getEventsCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getEventsData } from '@/utils/getEventData'
+import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/events.md'
@@ -49,9 +49,9 @@ type Props = {
 }
 
 const events = getEventsData()
-const { categorySettings, validCategoryOptions } = getCategorySettings('events')
+const { categorySettings, validCategoryOptions } = getEventsCategorySettings()
 const { featured_entry: featuredEventSlug, seo } = attributes
-const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
+const featuredEvent = getEventData(featuredEventSlug || '')
 
 export const metadata = createMetadata({
   seo,
@@ -67,7 +67,6 @@ export default function Events({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: events,
-
     searchBy: ['title', 'location'],
   })
 
@@ -78,12 +77,13 @@ export default function Events({ searchParams }: Props) {
     sortByDefault: DEFAULT_SORT_OPTION,
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
-    searchParams,
-    entries: sortedResults,
-    categorizeBy: 'involvement',
-    validCategoryOptions: validCategoryOptions,
-  })
+  const { categoryQuery, categorizedResults, categoryCounts } =
+    useEventsCategory({
+      searchParams,
+      entries: sortedResults,
+      categorizeBy: 'involvement',
+      validCategoryOptions,
+    })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -100,7 +100,6 @@ export default function Events({ searchParams }: Props) {
         metaData={getEventMetaData(featuredEvent)}
         image={{
           ...featuredEvent.image,
-          src: featuredEvent.image.url,
           fallback: graphicsData.events1,
         }}
         cta={{
@@ -176,8 +175,7 @@ export default function Events({ searchParams }: Props) {
                             icon: MagnifyingGlass,
                           }}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
+                            ...image,
                             priority: isFirstTwoImages,
                             fallback: graphicsData.imageFallback,
                             sizes: buildImageSizeProp({

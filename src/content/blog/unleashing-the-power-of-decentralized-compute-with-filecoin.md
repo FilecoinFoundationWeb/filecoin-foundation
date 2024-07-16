@@ -1,6 +1,5 @@
 ---
 title: "Unleashing the Power of Decentralized Compute with Filecoin"
-slug: unleashing-the-power-of-decentralized-compute-with-filecoin
 created-on: 2024-04-11T15:25:37.541000Z
 updated-on: 2024-04-11T15:25:37.555000Z
 published-on: 2024-04-11T15:25:37.566000Z
@@ -12,7 +11,7 @@ description:
   access to computing power, enabling individuals and organizations to tap into a
   shared pool of resources without being dependent on a single provider.
 image:
-  url: /assets/images/decentralized-compute-v2.png
+  src: /assets/images/decentralized-compute-v2.png
   alt: "Unleashing the Power of Decentralized Compute with Filecoin"
 recommended-posts: []
 seo:

@@ -1,6 +1,5 @@
 ---
 title: ProofMode by Guardian Project
-slug: "proofmode-by-guardian-project"
 created-on: "2024-02-27T19:57:29.836Z"
 updated-on: "2024-02-27T19:57:29.845Z"
 published-on: "2024-02-27T19:57:29.861Z"
@@ -15,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/proofmode.png
+  src: /assets/images/proofmode.png
   alt: ProofMode by Guardian Project
 website: "https://proofmode.org"
 featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"

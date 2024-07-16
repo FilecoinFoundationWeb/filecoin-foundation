@@ -1,6 +1,5 @@
 ---
 title: Beryx
-slug: beryx
 created-on: 2024-01-18T17:44:05.201000Z
 updated-on: 2024-01-18T17:44:05.243000Z
 published-on: 2024-01-18T17:44:05.279000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/beryx_logo_white.png
+  src: /assets/images/beryx_logo_white.png
   alt: Beryx Logo
 website: www.beryx.io
 featured-content:

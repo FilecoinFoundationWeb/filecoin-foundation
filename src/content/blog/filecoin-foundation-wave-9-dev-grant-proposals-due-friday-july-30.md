@@ -8,9 +8,8 @@ description:
   to critical development projects to foster a more robust and efficient decentralized
   web through the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-17.png
+  src: /assets/images/image-c-17.png
   alt:
-slug: filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30
 recommended-posts: []
 category: news
 seo:

@@ -2,8 +2,6 @@
 title: >-
   Linkstorage Awarded Chainlink-Filecoin Joint Grant to Create Blockchain Data
   Storage Protocol
-slug: >-
-  linkstorage-awarded-chainlink-filecoin-joint-grant-to-create-blockchain-data-storage-protocol
 updated-on: "2023-04-21T07:28:05.882Z"
 created-on: "2023-04-21T07:28:05.882Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -13,7 +11,7 @@ description: >-
   decentralized oracles and Filecoin decentralized storage within a single
   application.
 image:
-  url: /assets/images/64423b050425d3f577f2eb36_1-qzfjf0m6l6_fzcxuic-8zg.png
+  src: /assets/images/64423b050425d3f577f2eb36_1-qzfjf0m6l6_fzcxuic-8zg.png
   alt:
 recommended-posts: []
 category: news

@@ -1,6 +1,5 @@
 ---
 title: "Lighthouse"
-slug: "lighthouse"
 created-on: 2024-01-04T22:40:26.490000Z
 updated-on: 2024-01-05T21:37:36.638000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974a6233564725198bb791_lighthouse.storage.png
+  src: /assets/images/65974a6233564725198bb791_lighthouse.storage.png
   alt: Lighthouse Logo
 website: https://www.lighthouse.storage
 featured-content: https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/

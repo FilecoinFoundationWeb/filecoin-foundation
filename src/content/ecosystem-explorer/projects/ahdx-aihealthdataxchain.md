@@ -1,6 +1,5 @@
 ---
 title: "AHDX (AiHealthDataXchain)"
-slug: ahdx-aihealthdataxchain
 created-on: 2024-02-22T17:51:25.104000Z
 updated-on: 2024-02-22T17:51:25.132000Z
 published-on: 2024-02-22T17:51:25.159000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/ahdx-update-3-2-.png
+  src: /assets/images/ahdx-update-3-2-.png
   alt: AHDX Logo
 website: https://www.ahdx.org/
 featured-content:

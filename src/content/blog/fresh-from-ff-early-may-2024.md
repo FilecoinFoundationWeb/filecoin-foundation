@@ -1,6 +1,5 @@
 ---
 title: "Fresh From FF: Early May, 2024"
-slug: fresh-from-ff-early-may-2024
 created-on: 2024-05-01T13:24:09.834000Z
 updated-on: 2024-05-01T13:24:09.858000Z
 published-on: 2024-05-01T13:24:09.872000Z
@@ -9,7 +8,7 @@ description:
   "Check out the latest updates about what the Filecoin Foundation team
   has been up to."
 image:
-  url: /assets/images/fresh-from-ff-early-may.png
+  src: /assets/images/fresh-from-ff-early-may.png
   alt: "Fresh from FF Early May, 2024"
 recommended-posts: []
 seo:

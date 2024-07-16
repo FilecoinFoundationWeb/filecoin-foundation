@@ -1,6 +1,5 @@
 ---
 title: Fog Works, Inc.
-slug: fog-works-inc
 created-on: 2024-03-04T19:44:10.411000Z
 updated-on: 2024-03-04T19:44:10.420000Z
 published-on: 2024-03-04T19:44:10.434000Z
@@ -17,7 +16,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: /assets/images/fog-works-logo-white.png
+  src: /assets/images/fog-works-logo-white.png
   alt: Fog Works Logo
 website: fogworks.io
 featured-content:

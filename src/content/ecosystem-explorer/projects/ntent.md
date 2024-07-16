@@ -1,6 +1,5 @@
 ---
 title: "Ntent"
-slug: "ntent"
 created-on: "2024-01-04T22:40:27.335Z"
 updated-on: "2024-01-05T21:38:02.182Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -13,7 +12,7 @@ tags:
 tech:
   - "ipfs"
 image:
-  url: /assets/images/659873ecd5b28bbed5b03be9_ntent_logo_white.png
+  src: /assets/images/659873ecd5b28bbed5b03be9_ntent_logo_white.png
   alt: "Ntent Logo"
 website: "https://www.ntent.art"
 featured-content:

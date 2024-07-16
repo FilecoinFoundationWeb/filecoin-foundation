@@ -1,6 +1,5 @@
 ---
 title: Wave 11 Dev Grant Recipients
-slug: wave-11-dev-grant-recipients
 created-on: 2023-04-21T07:32:16.777000Z
 updated-on: 2023-04-21T07:32:16.777000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,7 +8,7 @@ description:
   development projects to foster a more robust and efficient decentralized web through
   the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-17.png
+  src: /assets/images/image-c-17.png
   alt:
 recommended-posts: []
 category: news

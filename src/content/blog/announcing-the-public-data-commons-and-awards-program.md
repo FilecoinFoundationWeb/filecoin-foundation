@@ -1,6 +1,5 @@
 ---
 title: Announcing the Public Data Commons and Awards Program
-slug: announcing-the-public-data-commons-and-awards-program
 created-on: "2023-04-21T07:26:04.681Z"
 updated-on: "2023-04-21T07:26:04.681Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,8 +8,7 @@ description: >-
   Commons initiative to support open data projects in partnership with
   government and official organizations across the globe.
 image:
-  url: >-
-    /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
+  src: /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
   alt:
 recommended-posts: []
 category: news

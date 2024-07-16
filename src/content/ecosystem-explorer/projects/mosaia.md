@@ -1,6 +1,5 @@
 ---
 title: "Mosaia"
-slug: mosaia
 created-on: "2024-01-12T20:30:19.591Z"
 updated-on: "2024-01-12T20:30:19.621Z"
 published-on: "2024-01-12T20:30:19.636Z"
@@ -12,7 +11,7 @@ tags:
 tech:
   - "filecoin"
 image:
-  url: "/assets/images/mosaia_logo_white.png"
+  src: "/assets/images/mosaia_logo_white.png"
 website: "https://www.mosaia.io/"
 featured-content:
 repo:

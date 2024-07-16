@@ -1,6 +1,5 @@
 ---
 title: Artifact Labs
-slug: artifact-labs
 created-on: "2024-01-04T22:40:24.120Z"
 updated-on: "2024-01-05T21:35:36.831Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -12,7 +11,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.png
+  src: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.png
   alt: Artifact Labs Logo
 website: "https://www.artifactlabs.com"
 featured-content: "https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/"

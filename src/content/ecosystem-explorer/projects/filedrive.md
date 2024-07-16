@@ -1,6 +1,5 @@
 ---
 title: "FileDrive"
-slug: "filedrive"
 created-on: 2024-01-04T22:40:25.514000Z
 updated-on: 2024-01-05T21:35:19.637000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659872fd67c584b3534c7331_filedrive_logo_white.png
+  src: /assets/images/659872fd67c584b3534c7331_filedrive_logo_white.png
   alt: FileDrive Logo
 website: "https://filedrive.io"
 featured-content:

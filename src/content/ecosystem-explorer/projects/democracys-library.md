@@ -1,6 +1,5 @@
 ---
 title: "Democracy's Library"
-slug: "democracys-library"
 created-on: 2024-01-10T14:53:07.920000Z
 updated-on: 2024-01-10T14:53:07.941000Z
 published-on: 2024-01-10T14:53:07.961000Z
@@ -16,7 +15,7 @@ tech:
   - ipfs
   - filecoin
 image:
-  url: /assets/images/democracys-library-logo.png
+  src: /assets/images/democracys-library-logo.png
   alt: Democracy's Library Logo
 website: https://archive.org/details/democracys-library
 featured-content: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/

@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Green"
-slug: "filecoin-green"
 created-on: 2024-01-04T22:40:25.209000Z
 updated-on: 2024-01-05T21:36:17.159000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974726d10f3992a40f40f6_fil_green_outline.png
+  src: /assets/images/65974726d10f3992a40f40f6_fil_green_outline.png
   alt: Filecoin Green Logo
 website: https://green.filecoin.io
 featured-content:

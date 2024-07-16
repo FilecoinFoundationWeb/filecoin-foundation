@@ -1,6 +1,5 @@
 ---
 title: Thanks for Participating in FIP-0014!
-slug: thanks-for-participating-in-fip-0014
 created-on: "2023-04-21T07:32:06.493Z"
 updated-on: "2023-04-21T07:32:06.493Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -8,8 +7,7 @@ description: >-
   The Filecoin community has completed its first-ever FILPoll, a new tool for
   surveying stakeholders on improvement proposals and other initiatives.
 image:
-  url: >-
-    /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
+  src: /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
   alt:
 recommended-posts: []
 category: news

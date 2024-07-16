@@ -7,11 +7,8 @@ description: >-
   for Social Good Center at Golden Gate University School of Law to create the
   Filecoin Foundation Blockchain Academy Lab (the Lab).
 image:
-  url: >-
-    /assets/images/64423ac9e3c08f1a784f5119_1-dvxhahnhu5a5qk3xidlxga.png
+  src: /assets/images/64423ac9e3c08f1a784f5119_1-dvxhahnhu5a5qk3xidlxga.png
   alt:
-slug: >-
-  filecoin-foundation-and-blockchain-law-for-social-good-center-accelerate-web3-education
 updated-on: "2023-04-21T07:27:05.729Z"
 created-on: "2023-04-21T07:27:05.729Z"
 published-on: "2023-04-21T07:33:56.200Z"

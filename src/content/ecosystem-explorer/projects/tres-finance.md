@@ -1,6 +1,5 @@
 ---
 title: "TRES.Finance"
-slug: "tres-finance"
 created-on: "2024-01-12T20:09:29.892Z"
 updated-on: "2024-01-12T20:09:29.911Z"
 published-on: "2024-01-12T20:09:29.923Z"
@@ -17,7 +16,7 @@ tags:
 tech:
   - "filecoin"
 image:
-  url: "/assets/images/tres_logo_white.png"
+  src: "/assets/images/tres_logo_white.png"
   alt: "TRES.Finance Logo"
 website: "https://tres.finance/"
 featured-content:

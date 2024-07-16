@@ -1,6 +1,5 @@
 ---
 title: Recognizing The Recipients of The Explorer Awards
-slug: recognizing-the-recipients-of-the-explorer-awards
 created-on: "2023-04-21T07:31:47.059Z"
 updated-on: "2023-05-03T11:26:37.186Z"
 published-on: "2023-05-03T12:47:09.568Z"
@@ -9,8 +8,7 @@ description: >-
   series of grants to provide organizations and individuals using decentralized
   technology with the support to learn more about Web3.
 image:
-  url: >-
-    /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
+  src: /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
   alt:
 recommended-posts: []
 category: news

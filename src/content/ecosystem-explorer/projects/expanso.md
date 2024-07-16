@@ -1,6 +1,5 @@
 ---
 title: Expanso
-slug: expanso
 created-on: 2024-03-29T21:28:52.162000Z
 updated-on: 2024-03-29T21:41:50.805000Z
 published-on: 2024-03-29T21:41:50.805000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073293f3fde26e66fedef5_expanso.png
+  src: /assets/images/66073293f3fde26e66fedef5_expanso.png
   alt: Expanso Logo
 featured-content:
 website: https://expanso.io

@@ -1,6 +1,5 @@
 ---
 title: Filecoin Network Base at Consensus 2023 Wrapped
-slug: filecoin-network-base-at-consensus-2023-wrapped
 created-on: 2023-06-05T11:00:54.740000Z
 updated-on: 2023-06-05T11:00:00Z
 published-on: 2023-06-05T11:00:00Z
@@ -10,7 +9,7 @@ description:
   to highlight the builders, storage providers and storage clients bringing the project
   to life.
 image:
-  url: /assets/images/051823-austin-recap.png
+  src: /assets/images/051823-austin-recap.png
   alt:
 recommended-posts: []
 category: events

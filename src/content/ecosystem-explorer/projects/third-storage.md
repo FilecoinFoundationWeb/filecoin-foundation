@@ -1,6 +1,5 @@
 ---
 title: Third Storage
-slug: third-storage
 created-on: 2024-03-29T21:28:55.910000Z
 updated-on: 2024-03-29T21:50:03.777000Z
 published-on: 2024-03-29T21:50:03.777000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073297a94418c44efa178a_thirdstorage.png
+  src: /assets/images/66073297a94418c44efa178a_thirdstorage.png
   alt: Third Storage Logo
 website: https://thirdstorage.com
 featured-content:

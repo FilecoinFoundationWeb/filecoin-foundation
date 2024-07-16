@@ -1,6 +1,5 @@
 ---
 title: "Numbers Protocol"
-slug: "numbers-protocol"
 created-on: "2024-01-04T22:40:27.665Z"
 updated-on: "2024-01-05T21:38:10.906Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -15,7 +14,7 @@ tech:
   - "filecoin"
   - "ipfs"
 image:
-  url: /assets/images/6597243838833597a71f11e6_icngy4es52inzwhpzt2c0uodiwktmytv6cqlvo6kya8.png
+  src: /assets/images/6597243838833597a71f11e6_icngy4es52inzwhpzt2c0uodiwktmytv6cqlvo6kya8.png
   alt: "Numbers Protocol Logo"
 website: "https://numbersprotocol.org"
 featured-content:

@@ -1,7 +1,6 @@
 ---
 title: What’s New with the Filecoin Plus Notary Election and Filecoin Day
   Highlights from LabWeek23
-slug: whats-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23
 created-on: 2023-11-20T20:49:32.196Z
 updated-on: 2023-11-20T20:49:32.209Z
 published-on: 2023-11-20T20:49:32.216Z
@@ -13,7 +12,7 @@ description: >-
   intersection of artificial intelligence and decentralized storage, and more.
 category: news
 image:
-  url: /assets/images/231120-fd-fpd.png
+  src: /assets/images/231120-fd-fpd.png
   alt: Filecoin Day and Filecoin Plus Day Recap
 recommended-posts: []
 seo:
@@ -29,7 +28,7 @@ Here’s a quick rundown:
 
 **Filecoin Plus Day**
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/57Ua4AEWe_g?si=nFb8apksN6EgLB_w"
   title="Filecoin Plus Day"
   height="315"
@@ -83,7 +82,7 @@ FF Co-Founding Officer Clara Tsao discussed why the future of AI and enterprise 
 
 **Crossing the Streams: A Ghostbusters-themed Approach to Scaling the Filecoin Ecosystem**
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/yEQz2Bfis0Y?si=29gKIzFdScqYlLdQ"
   title="Crossing the Streams"
   height="315"

@@ -1,6 +1,5 @@
 ---
 title: Cookbook.dev
-slug: cookbook-dev
 created-on: 2024-04-04T20:26:55.690000Z
 updated-on: 2024-04-04T20:26:55.698000Z
 published-on: 2024-04-04T20:26:55.704000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/cookbook.dev.png
+  src: /assets/images/cookbook.dev.png
   alt: Cookbook Logo
 website: https://www.cookbook.dev/
 featured-content:

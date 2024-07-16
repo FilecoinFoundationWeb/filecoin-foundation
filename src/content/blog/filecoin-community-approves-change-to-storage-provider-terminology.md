@@ -8,9 +8,8 @@ description:
   18 (FIP-0018), which reframes how we message around the storage market and those
   who participate in it as storage providers.
 image:
-  url: /assets/images/fip18.png
+  src: /assets/images/fip18.png
   alt:
-slug: filecoin-community-approves-change-to-storage-provider-terminology
 recommended-posts: []
 category: news
 seo:

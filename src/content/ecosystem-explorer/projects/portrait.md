@@ -1,6 +1,5 @@
 ---
 title: Portrait
-slug: portrait
 created-on: "2024-01-04T22:40:27.657Z"
 updated-on: "2024-01-05T21:38:42.375Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659751868be4ed306bb8b8df_portrait.png
+  src: /assets/images/659751868be4ed306bb8b8df_portrait.png
   alt: Portrait Logo
 website: "https://portrait.gg/"
 featured-content:

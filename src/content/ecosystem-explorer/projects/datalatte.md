@@ -1,6 +1,5 @@
 ---
 title: Datalatte
-slug: datalatte
 created-on: 2024-03-29T21:28:49.704000Z
 updated-on: 2024-03-29T21:41:02.169000Z
 published-on: 2024-03-29T21:41:02.169000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073567a94418c44efc8fa2_datalatte.png
+  src: /assets/images/66073567a94418c44efc8fa2_datalatte.png
   alt: Datalatte Logo
 featured-content:
 website: https://www.datalatte.com/

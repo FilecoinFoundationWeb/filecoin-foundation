@@ -1,6 +1,5 @@
 ---
 title: "Filscan"
-slug: "filscan"
 created-on: 2024-01-04T22:40:25.718000Z
 updated-on: 2024-01-05T21:36:42.302000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -15,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974a1e84648b50ab0c7214_filscanlogo-text.png
+  src: /assets/images/65974a1e84648b50ab0c7214_filscanlogo-text.png
   alt: Filscan Logo
 website: https://filscan.io/en
 featured-content:

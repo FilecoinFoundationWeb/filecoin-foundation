@@ -1,6 +1,5 @@
 ---
 title: "Victor Chang Research Institute"
-slug: "victor-chang-research-institute"
 created-on: 2024-01-04T22:40:28.856000Z
 updated-on: 2024-01-05T21:39:58.347000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -15,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974d4b3b6a7ed29e34e0b7_victor-chang-logo-1.png
+  src: /assets/images/65974d4b3b6a7ed29e34e0b7_victor-chang-logo-1.png
   alt: Victor Chang Research Institute Logo
 website: "https://www.victorchang.edu.au/"
 featured-content: "https://destor.com/victor-chang-cardiac-research-institute-case-study"

@@ -1,6 +1,5 @@
 ---
 title: "Dev Grant Spotlight: encloud"
-slug: dev-grant-spotlight-encloud
 created-on: 2023-04-21T07:26:35.386000Z
 updated-on: 2023-04-21T07:26:35.386000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -11,7 +10,7 @@ description:
   capture more value. Encloud, formerly known as 180Protocol that lets you easily
   onboard and ecrypt data to the decentralized web."
 image:
-  url: /assets/images/0405-dgs-180protocol.png
+  src: /assets/images/0405-dgs-180protocol.png
   alt:
 recommended-posts: []
 category: reports

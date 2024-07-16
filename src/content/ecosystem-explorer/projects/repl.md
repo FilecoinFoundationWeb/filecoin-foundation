@@ -1,6 +1,5 @@
 ---
 title: Repl
-slug: "repl"
 created-on: "2024-01-24T13:41:08.340Z"
 updated-on: "2024-01-24T13:41:08.357Z"
 published-on: "2024-01-24T13:41:08.367Z"
@@ -16,7 +15,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/repl_logo_white.png
+  src: /assets/images/repl_logo_white.png
   alt: Repl Logo
 website: "https://www.repl.fi/"
 featured-content:

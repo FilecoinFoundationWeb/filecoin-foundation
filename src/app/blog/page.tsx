@@ -25,7 +25,7 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostsData } from '@/utils/getBlogPostData'
+import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/blog.md'
@@ -49,7 +49,7 @@ type Props = {
 const posts = getBlogPostsData()
 const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
 const { featured_entry: featuredPostSlug, seo } = attributes
-const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
+const featuredPost = getBlogPostData(featuredPostSlug || '')
 
 export const metadata = createMetadata({
   seo,
@@ -99,7 +99,6 @@ export default function Blog({ searchParams }: Props) {
         metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
           ...featuredPost.image,
-          src: featuredPost.image.url,
           fallback: graphicsData.imageFallback,
         }}
         cta={{
@@ -174,8 +173,7 @@ export default function Blog({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
+                            ...image,
                             fallback: graphicsData.imageFallback,
                             priority: isFirstTwoImages,
                             sizes: buildImageSizeProp({

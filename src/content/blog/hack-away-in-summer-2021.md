@@ -7,9 +7,8 @@ description:
   This summer, the Filecoin Foundation is supporting numerous hackathons
   for community members.
 image:
-  url: /assets/images/image-c-31.png
+  src: /assets/images/image-c-31.png
   alt:
-slug: hack-away-in-summer-2021
 recommended-posts: []
 category: events
 seo:

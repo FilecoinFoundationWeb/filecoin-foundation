@@ -1,6 +1,5 @@
 ---
 title: 10+ Tools for Filecoin Storage Providers
-slug: 10-tools-for-filecoin-storage-providers
 created-on: 2023-09-26T13:21:46.814000Z
 updated-on: 2023-09-26T13:21:46.828000Z
 published-on: 2023-09-26T13:21:46.839000Z
@@ -9,7 +8,7 @@ description: >-
   array of "as-a-service" tools, services, and platforms designed to streamline operations
   and enhance service offerings.
 image:
-  url: /assets/images/92523-sptooling.png
+  src: /assets/images/92523-sptooling.png
   alt: Filecoin Storage Providers
 recommended-posts: []
 category: ecosystem

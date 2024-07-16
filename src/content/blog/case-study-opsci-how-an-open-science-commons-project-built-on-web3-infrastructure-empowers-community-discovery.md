@@ -2,7 +2,6 @@
 title:
   "Case Study: OpSci - How an Open Science Commons Project Built on Web3 Infrastructure
   Empowers Community Discovery"
-slug: case-study-opsci-how-an-open-science-commons-project-built-on-web3-infrastructure-empowers-community-discovery
 created-on: 2023-04-21T07:26:24.934000Z
 updated-on: 2023-04-21T07:26:24.934000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -10,7 +9,7 @@ description:
   How an Open Science Commons Project Built on Web3 Infrastructure Empowers
   Community Discovery
 image:
-  url: /assets/images/0224-cs-opsci.png
+  src: /assets/images/0224-cs-opsci.png
   alt:
 recommended-posts: []
 category: use-cases

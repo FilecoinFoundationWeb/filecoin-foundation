@@ -7,10 +7,8 @@ description: >-
   Angelo Schalley as a side project to provide web hosting and cloud storage to
   friends and family.
 image:
-  url: >-
-    /assets/images/64423adfef619de193b60e70_1-3vi1mqlj6blg3lay_py58g.png
+  src: /assets/images/64423adfef619de193b60e70_1-3vi1mqlj6blg3lay_py58g.png
   alt:
-slug: filecoin-storage-provider-spotlight-linix
 updated-on: "2023-04-21T07:27:27.712Z"
 created-on: "2023-04-21T07:27:27.712Z"
 published-on: "2023-04-21T07:33:56.200Z"

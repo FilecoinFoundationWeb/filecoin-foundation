@@ -1,6 +1,5 @@
 ---
 title: PikNik
-slug: piknik
 created-on: "2024-01-04T22:40:27.442Z"
 updated-on: "2024-01-05T21:38:36.175Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -17,7 +16,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/6597518e66ba5cff0f0ab78f_piknik-logo.png
+  src: /assets/images/6597518e66ba5cff0f0ab78f_piknik-logo.png
   alt: PikNik Logo
 website: "https://www.piknik.com"
 featured-content:

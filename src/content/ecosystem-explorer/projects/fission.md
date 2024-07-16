@@ -1,6 +1,5 @@
 ---
 title: "Fission"
-slug: "fission"
 created-on: 2024-01-04T22:40:25.798000Z
 updated-on: 2024-01-05T21:36:47.213000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974a282128bbdde2005e43_fission.png
+  src: /assets/images/65974a282128bbdde2005e43_fission.png
   alt: Fission Logo
 website: https://fission.codes
 featured-content:

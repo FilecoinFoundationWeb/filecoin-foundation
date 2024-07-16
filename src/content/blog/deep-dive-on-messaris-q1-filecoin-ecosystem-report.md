@@ -1,6 +1,5 @@
 ---
 title: "Deep Dive on Messari’s Q1 Filecoin Ecosystem Report"
-slug: deep-dive-on-messaris-q1-filecoin-ecosystem-report
 created-on: 2024-05-10T14:59:51.532000Z
 updated-on: 2024-05-10T14:59:51.549000Z
 published-on: 2024-05-10T14:59:51.575000Z
@@ -9,7 +8,7 @@ description:
   Insights from Messari's recently released Q1 2024 Filecoin Ecosystem
   Report.
 image:
-  url: /assets/images/050824-messariq1.png
+  src: /assets/images/050824-messariq1.png
   alt: Messari Filecoin Report
 recommended-posts: []
 seo:

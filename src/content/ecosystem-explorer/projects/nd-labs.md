@@ -1,6 +1,5 @@
 ---
 title: ND LABS
-slug: nd-labs
 created-on: 2024-03-20T14:02:57.543000Z
 updated-on: 2024-03-20T14:02:57.582000Z
 published-on: 2024-03-20T14:02:57.599000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/nd-logo-1-.png
+  src: /assets/images/nd-logo-1-.png
   alt: ND LABS Logo
 website: https://www.ndlabs.io/#/
 featured-content:

@@ -1,12 +1,12 @@
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
-import { Badge } from '@/components/Badge'
 import { DescriptionText } from '@/components/DescriptionText'
 import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
 
 import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
@@ -62,6 +62,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     featuredContent,
     updatedOn,
     newsUpdate,
+    tags,
   } = data
 
   return (
@@ -71,7 +72,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           <DynamicImage
             fill
             priority
-            src={image.url}
+            src={image.src}
             alt={image.alt}
             objectFit="contain"
             className="object-left-bottom"
@@ -128,13 +129,15 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             </div>
           )}
 
-          <ul className="flex flex-wrap gap-2">
-            {getTagLabels(data).map((tag) => (
-              <li key={tag}>
-                <Badge>{tag}</Badge>
-              </li>
-            ))}
-          </ul>
+          {tags && (
+            <ul className="flex flex-wrap gap-2">
+              {getTagLabels(data).map((tag) => (
+                <li key={tag}>
+                  <TagLabel>{tag}</TagLabel>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <ul className="mt-4 flex flex-col gap-5">

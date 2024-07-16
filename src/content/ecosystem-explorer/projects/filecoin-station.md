@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Station"
-slug: "filecoin-station"
 created-on: 2024-01-04T22:40:25.416000Z
 updated-on: 2024-01-05T21:36:26.462000Z
 published-on: 2024-01-11T13:26:59.787000Z
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/65974732c5826a2570dfd210_filecoin-station-logo.png
+  src: /assets/images/65974732c5826a2570dfd210_filecoin-station-logo.png
   alt: Filecoin Station Logo
 website: "https://www.filstation.app"
 repo: "https://github.com/filecoin-station/desktop"

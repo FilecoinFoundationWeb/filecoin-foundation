@@ -9,9 +9,8 @@ description: The Filecoin Sanctuary in Davos brought together the world’s
   brightest minds across business, government, and technology to discuss the
   future of the decentralized web.
 recommended-posts: []
-slug: recapping-filecoin-foundation-at-davos-ipfs-deployed-in-space-exploring-the-future-of-ai-and-web3-future-proofing-regulation-and-more
 image:
-  url: /assets/images/020724-davos.png
+  src: /assets/images/020724-davos.png
   alt: Recapping Filecoin Foundation at Davos
 seo:
   noindex: false
@@ -36,7 +35,7 @@ Here are some panel highlights:
 
 Artificial Intelligence was front and center in Davos this year. Sir Tim Berners-Lee, Inventor of the World Wide Web was joined by FF’s Clara Tsao, Meta’s Yann LeCun, and VERSES’ Karl Friston in a session moderated by Gillian Tett of the Financial Times. Together they discussed how decentralized technologies can help with AI data integrity, accessibility, and verifiability.
 
-<iframe 
+<iframe
   src="https://player.vimeo.com/video/913091129?h=94ed8ee073"
   title="AI and Decentralization | The Filecoin Sanctuary 2024"
   height="360"
@@ -56,7 +55,7 @@ This mission, conducted with Lockheed Martin-developed software, demonstrated ho
 
 Commissioner Pham applauded the successful completion of this mission, adding, “It’s amazing to see what we as humans can accomplish.”
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/32MRo6zv9wE?si=ou30OG_wsKoPqbST"
   title="Navigating the Crypto Policy"
   height="315"
@@ -72,7 +71,7 @@ And ICYMI: [Dive deeper](https://fil.org/blog/filecoin-foundation-successfully-d
 
 On a panel about how AI, blockchain, and predictive modeling are helping achieve sustainability goals, FF Founding Officer Megan Klimen summed up the need to consider global challenges when advocating for new technologies: “We are past the point in time where we can develop new technologies without climate first and foremost in our minds.”
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/eaWxODvlmes?si=wSSap18Bmmk4Kml1"
   title="Navigating the Crypto Policy Landscape"
   height="315"
@@ -90,7 +89,7 @@ Together they talked about how regulators can create clear rules of the road for
 
 Disparte noted that overzealous regulation can slow job growth, hinder technological progress, and hamstring the industries of the future. His message to regulators: “If you’re not going to do something, at least do no harm.”
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/3V0xcj1-4VU?si=OR5hTBFyqQZTNeW-"
   title="Regulating Emerging Technologies"
   height="315"

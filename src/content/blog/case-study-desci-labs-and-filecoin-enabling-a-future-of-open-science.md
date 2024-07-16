@@ -1,6 +1,5 @@
 ---
 title: "Case Study: DeSci Labs and Filecoin: Enabling a Future of Open Science"
-slug: case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science
 created-on: 2023-07-20T12:26:44.398000Z
 updated-on: 2023-07-20T12:26:44.412000Z
 published-on: 2023-07-20T12:26:44.426000Z
@@ -12,7 +11,7 @@ description:
   systems for years without significant progress. The vision is a world without vendor
   lock-in, paywalls, proprietary analytics, link rot and fake science.
 image:
-  url: /assets/images/0719-cs-desci.png
+  src: /assets/images/0719-cs-desci.png
   alt:
 recommended-posts: []
 category: use-cases

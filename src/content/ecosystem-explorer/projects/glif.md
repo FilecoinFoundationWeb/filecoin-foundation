@@ -1,6 +1,5 @@
 ---
 title: "GLIF"
-slug: "glif"
 created-on: 2018-12-01T20:17:14.438000Z
 updated-on: 2024-02-07T20:17:14.451000Z
 published-on: 2024-02-07T20:17:14.461000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/long_white.png
+  src: /assets/images/long_white.png
   alt: GLIF Logo
 website: https://glif.io
 repo: https://github.com/glifio

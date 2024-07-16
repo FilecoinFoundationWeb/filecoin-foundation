@@ -2,7 +2,6 @@
 title:
   "Ecosystem Spotlight: TRANSFER Q&A on Preserving Artistic Value with Decentralized
   Technology, Data Sovereignty, and Harnessing Value of Data"
-slug: ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data
 created-on: 2024-02-01T15:32:12.253000Z
 updated-on: 2024-02-01T15:32:12.272000Z
 published-on: 2024-02-01T15:32:12.286000Z
@@ -12,7 +11,7 @@ description: >
   technology, automated governance systems, harnessing the value of data in unique
   ways.
 image:
-  url: /assets/images/020124-transfer.png
+  src: /assets/images/020124-transfer.png
   alt: Filecoin Foundation TRANSFER Blog Post
 recommended-posts: []
 seo:

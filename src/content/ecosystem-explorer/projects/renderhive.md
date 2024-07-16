@@ -1,6 +1,5 @@
 ---
 title: Renderhive
-slug: renderhive
 created-on: 2024-03-29T21:28:53.783000Z
 updated-on: 2024-03-29T21:48:03.679000Z
 published-on: 2024-03-29T21:48:03.679000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073711d5091847d128f8b2_renderhive.png
+  src: /assets/images/66073711d5091847d128f8b2_renderhive.png
   alt: Renderhive Logo
 website: https://www.renderhive.io/
 featured-content:

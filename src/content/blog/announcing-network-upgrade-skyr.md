@@ -1,6 +1,5 @@
 ---
 title: Announcing Network Upgrade ‘Skyr’
-slug: announcing-network-upgrade-skyr
 created-on: "2023-04-21T07:26:00.623Z"
 updated-on: "2023-04-21T07:26:00.623Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,7 +8,7 @@ description: >-
   Wednesday, July 6. By introducing Milestone 1 of the Filecoin Virtual Machine
   (FVM), Skyr is one of the largest upgrades in Filecoin network history.
 image:
-  url: /assets/images/64423a88f053c985627f3ae7_1-ko-wwh4crpe6t8ioqymtfq.png
+  src: /assets/images/64423a88f053c985627f3ae7_1-ko-wwh4crpe6t8ioqymtfq.png
   alt:
 recommended-posts: []
 category: news

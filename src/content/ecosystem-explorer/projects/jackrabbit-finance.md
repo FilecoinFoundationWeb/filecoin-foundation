@@ -1,6 +1,5 @@
 ---
 title: Jackrabbit Finance
-slug: jackrabbit-finance
 created-on: 2024-04-05T00:02:55.648000Z
 updated-on: 2024-04-05T00:02:55.722000Z
 published-on: 2024-04-05T00:02:55.780000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/screenshot-2024-04-03-at-8.47-1.png
+  src: /assets/images/screenshot-2024-04-03-at-8.47-1.png
   alt: Jackrabbit Finance Logo
 website: http://www.jackrabbitfinance.xyz/
 featured-content:

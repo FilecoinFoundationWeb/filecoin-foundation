@@ -1,6 +1,5 @@
 ---
 title: "FILLiquid"
-slug: "filliquid"
 created-on: 2023-09-01T12:45:47.608000Z
 updated-on: 2024-01-24T13:45:47.628000Z
 published-on: 2024-01-24T13:45:47.636000Z
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/filliquid_logo_white.png
+  src: /assets/images/filliquid_logo_white.png
   alt: FILLiquid Logo
 website: "https://filliquid.io/"
 featured-content:

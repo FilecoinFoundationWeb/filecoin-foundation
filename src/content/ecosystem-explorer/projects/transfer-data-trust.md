@@ -1,6 +1,5 @@
 ---
 title: "TRANSFER Data Trust"
-slug: "transfer-data-trust"
 created-on: "2024-02-01T15:51:35.125Z"
 updated-on: "2024-02-01T15:51:35.133Z"
 published-on: "2024-02-01T15:51:35.145Z"
@@ -16,7 +15,7 @@ tech:
   - "ipfs"
   - "filecoin"
 image:
-  url: /assets/images/transfer_logo_white.png
+  src: /assets/images/transfer_logo_white.png
   alt: "TRANSFER Data Trust Logo"
 website: "http://transfer.art"
 repo: "https://github.com/TRANSFERArchive"

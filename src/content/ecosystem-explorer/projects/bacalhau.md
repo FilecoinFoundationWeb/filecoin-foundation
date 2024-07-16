@@ -1,6 +1,5 @@
 ---
 title: Bacalhau
-slug: bacalhau
 created-on: "2024-01-04T22:40:23.935Z"
 updated-on: "2024-01-05T21:34:29.751Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -14,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/659872da19567f4307ba3b38_bacalhua_logo_white.png
+  src: /assets/images/659872da19567f4307ba3b38_bacalhua_logo_white.png
   alt: Bacalhau Logo
 website: "https://www.bacalhau.org"
 featured-content:

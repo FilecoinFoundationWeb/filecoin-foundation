@@ -1,6 +1,5 @@
 ---
 title: Defluencer
-slug: defluencer
 created-on: 2024-04-03T18:07:28.284000Z
 updated-on: 2024-04-03T18:07:28.315000Z
 published-on: 2024-04-03T18:07:28.332000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/defluencer_logo_blur.svg
+  src: /assets/images/defluencer_logo_blur.svg
   alt: Defluencer Logo
 featured-content:
 website: https://social.defluencer.eth.limo/#/

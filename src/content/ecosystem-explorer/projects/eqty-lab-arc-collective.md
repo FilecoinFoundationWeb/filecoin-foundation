@@ -1,6 +1,5 @@
 ---
 title: EQTY Lab (Arc Collective)
-slug: eqty-lab-arc-collective
 created-on: 2024-03-29T21:28:50.218000Z
 updated-on: 2024-03-29T21:41:34.450000Z
 published-on: 2024-03-29T21:41:34.450000Z
@@ -15,7 +14,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329226071981e4a3559d_eqty.png
+  src: /assets/images/6607329226071981e4a3559d_eqty.png
   alt: EQTY Lab Logo
 featured-content:
 website: https://eqtylab.io

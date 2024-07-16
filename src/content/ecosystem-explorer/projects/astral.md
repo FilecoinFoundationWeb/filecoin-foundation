@@ -1,6 +1,5 @@
 ---
 title: Astral
-slug: astral
 created-on: 2024-03-29T21:28:48.588000Z
 updated-on: 2024-03-29T21:36:46.746000Z
 published-on: 2024-03-29T21:36:46.746000Z
@@ -13,7 +12,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073290d5091847d125282a_astral.png
+  src: /assets/images/66073290d5091847d125282a_astral.png
   alt: Astral Logo
 website: https://astral.global/
 featured-content:

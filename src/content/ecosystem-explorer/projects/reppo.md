@@ -1,30 +1,28 @@
 ---
 title: Reppo
-slug: reppo
-created-on: 2024-04-24T19:06:44.041000Z
-updated-on: 2024-04-24T19:06:44.057000Z
-published-on: 2024-04-24T19:06:44.068000Z
-description:
-  "Building a sovereign AI modelling network to address DePIN verification
-  and broadly assess the quality of crypto networks."
+created-on: 2024-04-24T19:06:44.041Z
+updated-on: 2024-04-24T19:06:44.057Z
+published-on: 2024-04-24T19:06:44.068Z
+image:
+  src: /assets/images/reppo.png
+  alt: Reppo Logo
 category: storage
+subcategories:
+  - data-storage-management
 tags:
   - ai-productivity-and-utilities
   - depin
+description: Building a sovereign AI modelling network to address DePIN
+  verification and broadly assess the quality of crypto networks.
+website: reppo.xyz
 tech:
   - filecoin
-image:
-  url: /assets/images/reppo-logo.png
-  alt: Reppo Logo
-website: reppo.xyz
-featured-content:
 repo: https://github.com/ReppoLabs
+news-update: null
+featured-content: null
 twitter: https://twitter.com/Repponetwork
-video-url:
-year-joined: 2024-04-24T19:06:44.078000Z
-news-update:
-subcategories:
-  - data-storage-management
+video-url: null
+year-joined: 2024-04-24T19:06:44.078Z
 seo:
   title: Reppo
   description: Reppo offers decentralized solutions for data storage and management.

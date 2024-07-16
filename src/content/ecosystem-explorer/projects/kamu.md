@@ -1,6 +1,5 @@
 ---
 title: Kamu
-slug: kamu
 created-on: 2024-04-04T02:05:42.579000Z
 updated-on: 2024-04-04T02:05:42.602000Z
 published-on: 2024-04-04T02:05:42.613000Z
@@ -14,7 +13,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/kamu-logo.svg
+  src: /assets/images/kamu-logo.svg
   alt: Kamu Logo
 website: https://www.kamu.dev/
 featured-content:

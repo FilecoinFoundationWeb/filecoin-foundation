@@ -1,6 +1,5 @@
 ---
 title: Filecoin Network Day - South Korea
-slug: filecoin-network-day-south-korea
 created-on: "2023-06-27T16:21:11.302Z"
 updated-on: "2023-06-27T16:21:11.325Z"
 published-on: "2023-06-27T16:21:11.352Z"
@@ -10,7 +9,7 @@ external-link:
 start-date: "2022-12-15T17:21:11.381Z"
 end-date:
 image:
-  url: /assets/images/network-day-korea-2022.png
+  src: /assets/images/network-day-korea-2022.png
   alt:
 involvement: hosted
 seo:

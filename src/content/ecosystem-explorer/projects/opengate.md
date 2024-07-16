@@ -1,6 +1,5 @@
 ---
 title: OpenGate
-slug: opengate
 created-on: "2024-01-04T22:40:28.134Z"
 updated-on: "2024-01-05T16:11:14.542Z"
 published-on: "2024-01-11T13:26:59.787Z"
@@ -14,7 +13,7 @@ tags:
 tech:
   - ipfs
 image:
-  url: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
+  src: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
   alt: OpenGate Logo
 website: "www.opengatenft.com"
 featured-content:

@@ -6,10 +6,8 @@ description: >-
   provider that specializes in edge data and goes to great lengths to bring data
   closer to the data source.
 image:
-  url: >-
-    /assets/images/64423adea6ec4171202a5cf2_1-hdrc5daoaw6mxtrklvxhcg.png
+  src: /assets/images/64423adea6ec4171202a5cf2_1-hdrc5daoaw6mxtrklvxhcg.png
   alt:
-slug: filecoin-storage-provider-spotlight-filswan
 updated-on: "2023-04-21T07:27:26.180Z"
 created-on: "2023-04-21T07:27:26.180Z"
 published-on: "2023-04-21T07:33:56.200Z"

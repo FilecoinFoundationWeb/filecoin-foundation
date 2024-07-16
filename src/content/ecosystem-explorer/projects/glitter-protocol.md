@@ -1,6 +1,5 @@
 ---
 title: Glitter Protocol
-slug: glitter-protocol
 created-on: 2024-03-29T21:28:51.837000Z
 updated-on: 2024-03-29T21:43:04.850000Z
 published-on: 2024-03-29T21:43:04.850000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/66073293f19c58932d89ebea_glitter.png
+  src: /assets/images/66073293f19c58932d89ebea_glitter.png
   alt: Glitter Protocol
 website: https://glitterprotocol.io/
 featured-content:

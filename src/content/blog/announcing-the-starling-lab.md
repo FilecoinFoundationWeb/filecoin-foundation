@@ -1,6 +1,5 @@
 ---
 title: Announcing The Starling Lab
-slug: announcing-the-starling-lab
 created-on: "2023-04-21T07:26:07.722Z"
 updated-on: "2023-04-21T07:26:07.722Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -10,7 +9,7 @@ description: >-
   research center tackling the technical and ethical challenges of establishing
   trust in the most sensitive digital records of our human history.
 image:
-  url:
+  src:
   alt:
 recommended-posts: []
 category: news

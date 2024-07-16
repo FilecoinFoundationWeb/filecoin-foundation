@@ -1,6 +1,5 @@
 ---
 title: Ankr
-slug: ankr
 created-on: 2024-03-29T21:28:48.751000Z
 updated-on: 2024-03-29T21:35:32.116000Z
 published-on: 2024-03-29T21:35:32.116000Z
@@ -11,7 +10,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/6607329044923c80b38a9b1a_ankr.png
+  src: /assets/images/6607329044923c80b38a9b1a_ankr.png
   alt: Ankr Logo
 website: https://www.ankr.com/
 featured-content:

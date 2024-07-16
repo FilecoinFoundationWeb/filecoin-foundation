@@ -10,9 +10,8 @@ description: >
   podcast series dedicated to exploring the intersection of Web3 and the many
   factors that impact the growth and viability of a decentralized web.
 image:
-  url: /assets/images/image-c-33.png
+  src: /assets/images/image-c-33.png
   alt:
-slug: introducing-the-future-rules-a-new-podcast-series-from-the-filecoin-foundation-and-forkast-news
 recommended-posts: []
 category: news
 seo:

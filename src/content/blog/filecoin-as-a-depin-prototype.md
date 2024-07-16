@@ -1,6 +1,5 @@
 ---
 title: "Filecoin as a DePIN Prototype"
-slug: filecoin-as-a-depin-prototype
 created-on: 2024-03-04T15:11:05.167000Z
 updated-on: 2024-03-04T15:11:05.193000Z
 published-on: 2024-03-04T15:11:05.224000Z
@@ -9,7 +8,7 @@ description:
   The Decentralized Physical Infrastructure Network (DePIN) movement is
   re-architecting the Internet's physical and digital backbone.
 image:
-  url: /assets/images/022624-depin.png
+  src: /assets/images/022624-depin.png
   alt: Filecoin DePIN
 recommended-posts: []
 seo:

@@ -1,11 +1,14 @@
 ---
 title: VshareCloud
-slug: vsharecloud
-created-on: 2024-04-05T14:14:29.910000Z
-updated-on: 2024-04-05T14:14:29.925000Z
-published-on: 2024-04-05T14:14:29.937000Z
-description: "Open-source distributed storage and computing platform."
+created-on: 2024-04-05T14:14:29.910Z
+updated-on: 2024-04-05T14:14:29.925Z
+published-on: 2024-04-05T14:14:29.937Z
+image:
+  src: /assets/images/vsharecloud.png
+  alt: VshareCloud Logo
 category: storage
+subcategories:
+  - data-storage-management
 tags:
   - data-retrieval
   - infrastructure
@@ -15,21 +18,17 @@ tags:
   - s3-apis
   - storage-services
   - ai-productivity-and-utilities
+description: Open-source distributed storage and computing platform.
+website: https://vshare.Cloud
 tech:
   - ipfs
   - filecoin
-image:
-  url: /assets/images/vsharecloud.webp
-  alt: VshareCloud Logo
-website: https://vshare.Cloud
-featured-content:
 repo: https://github.com/vshareCloud-Project/
-twitter:
-video-url:
-year-joined: 2024-04-05T14:14:29.953000Z
-news-update:
-subcategories:
-  - data-storage-management
+news-update: null
+featured-content: null
+twitter: null
+video-url: null
+year-joined: 2024-04-05T14:14:29.953Z
 seo:
   title: VshareCloud
   description: VshareCloud offers decentralized storage solutions for digital data.

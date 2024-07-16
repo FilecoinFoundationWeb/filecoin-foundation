@@ -62,7 +62,7 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     startDate,
     endDate,
     ...(eventLocation && { location: eventLocation }),
-    image: image.url,
+    image: image.src,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }
 }

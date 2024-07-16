@@ -1,6 +1,5 @@
 ---
 title: Filecoin Incentive DesignLabs
-slug: filecoin-incentive-designlabs
 created-on: 2024-05-16T14:44:42.655000Z
 updated-on: 2024-05-16T14:44:42.681000Z
 published-on: 2024-05-16T14:44:42.701000Z
@@ -17,7 +16,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/logo-alpha.png
+  src: /assets/images/logo-alpha.png
   alt: Filecoin Incentive DesignLabs Logo
 featured-content:
 website: https://fidl.tech

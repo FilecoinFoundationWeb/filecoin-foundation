@@ -1,6 +1,5 @@
 ---
 title: "Dev Grant Spotlight: DataStation"
-slug: dev-grant-spotlight-datastation
 created-on: 2023-04-21T07:26:33.536000Z
 updated-on: 2023-04-21T07:26:33.536000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,7 +8,7 @@ description:
   on the Filecoin network by providing storage providers and clients with standardized
   storage performance data in a format that's both easy to store and to understand. "
 image:
-  url: /assets/images/image-c-22.png
+  src: /assets/images/image-c-22.png
   alt:
 recommended-posts: []
 category: reports

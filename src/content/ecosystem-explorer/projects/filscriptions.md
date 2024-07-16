@@ -1,6 +1,5 @@
 ---
 title: "Filscriptions"
-slug: "filscriptions"
 created-on: 2024-01-18T17:56:20.233000Z
 updated-on: 2024-01-18T17:56:20.306000Z
 published-on: 2024-01-18T17:56:20.316000Z
@@ -12,7 +11,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/filscriptions_logo_white.png
+  src: /assets/images/filscriptions_logo_white.png
   alt: Filscriptions Logo
 website: https://www.filscriptions.market/
 featured-content:

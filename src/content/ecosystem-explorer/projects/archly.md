@@ -1,6 +1,5 @@
 ---
 title: Archly
-slug: archly
 created-on: 2024-04-25T17:07:12.814000Z
 updated-on: 2024-04-25T17:07:12.834000Z
 published-on: 2024-04-25T17:07:12.844000Z
@@ -17,7 +16,7 @@ tags:
 tech:
   - filecoin
 image:
-  url: /assets/images/archly-logo-circle-1000.png
+  src: /assets/images/archly-logo-circle-1000.png
   alt: Archly Logo
 website: https://archly.fi
 featured-content:

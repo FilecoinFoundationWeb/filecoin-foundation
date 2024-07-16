@@ -1,6 +1,5 @@
 ---
 title: "Human Rights Data Analysis Group (HRDAG)"
-slug: "human-rights-data-analysis-group-hrdag"
 created-on: 2024-01-10T16:19:46.234000Z
 updated-on: 2024-01-10T16:19:46.268000Z
 published-on: 2024-01-10T16:19:46.376000Z
@@ -16,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/hrdag_logo_white.png
+  src: /assets/images/hrdag_logo_white.png
   alt: Human Rights Data Analysis Group (HRDAG) Logo
 website: https://hrdag.org/
 featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/

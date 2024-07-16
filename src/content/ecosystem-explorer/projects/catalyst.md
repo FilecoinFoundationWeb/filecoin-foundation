@@ -1,6 +1,5 @@
 ---
 title: Catalyst
-slug: catalyst
 created-on: 2024-04-04T20:29:53.855000Z
 updated-on: 2024-04-04T20:29:53.862000Z
 published-on: 2024-04-04T20:29:53.867000Z
@@ -18,7 +17,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  url:
+  src:
   alt: Catalyst Logo
 website: https://the-freaking-catalyst.vercel.app
 featured-content:
