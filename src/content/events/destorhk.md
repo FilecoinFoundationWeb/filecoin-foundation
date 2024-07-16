@@ -5,7 +5,7 @@ updated-on: "2023-06-27T15:30:53.198Z"
 published-on: "2023-06-27T15:30:53.211Z"
 description:
 location: Hong Kong, China
-external-link: https://fil-hk.io/destor-en/
+external-link:
 start-date: "2023-04-15T15:30:53.222Z"
 end-date:
 image:
