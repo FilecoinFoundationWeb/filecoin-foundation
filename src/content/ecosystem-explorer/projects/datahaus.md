@@ -17,7 +17,7 @@ image:
   alt: DataHaus Logo
 featured-content:
 website: https://datahaus.vercel.app/
-repo: https://github.com/DataHaus/datahaus
+repo:
 twitter: https://twitter.com/DataHaus_
 video-url:
 year-joined: 2024-03-29T21:28:52.788000Z

@@ -17,7 +17,7 @@ image:
   alt: FileZilla Logo
 featured-content:
 website: https://file-zilla.pro/
-repo: https://github.com/doflado
+repo:
 twitter: https://twitter.com/FileZillaToken
 video-url:
 year-joined: 2024-02-21T15:20:11.125000Z

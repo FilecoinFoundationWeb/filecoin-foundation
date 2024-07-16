@@ -12,7 +12,7 @@ tech:
 image:
   src: /assets/images/ThemisProtocol.png
   alt: Themis Logo
-website: https://themis.capital
+website:
 featured-content:
 repo:
 twitter: https://twitter.com/themis_pro?s=11
