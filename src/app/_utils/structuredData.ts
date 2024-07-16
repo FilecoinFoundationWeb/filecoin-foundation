@@ -20,9 +20,9 @@ export const baseOrganizationSchema: WithContext<Organization> = {
   description: seo.description,
   logo: {
     '@type': 'ImageObject',
-    url: '', // Replace with actual logo URL
-    width: '600', // Replace with actual width
-    height: '60', // Replace with actual height
+    url: `${BASE_URL}/assets/images/logo.svg`,
+    width: '147',
+    height: '41',
   },
 }
 
