@@ -1,15 +1,15 @@
 import {
-  Butterfly,
   GithubLogo,
   LinkedinLogo,
   XLogo,
   YoutubeLogo,
 } from '@phosphor-icons/react/dist/ssr'
 
+import BlueskyLogo from '@/assets/logos/bsky_logo.svg'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 const socialIcons = {
-  bluesky: Butterfly,
+  bluesky: BlueskyLogo,
   github: GithubLogo,
   linkedin: LinkedinLogo,
   twitter: XLogo,

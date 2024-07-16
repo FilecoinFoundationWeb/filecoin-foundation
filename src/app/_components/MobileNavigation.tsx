@@ -4,25 +4,22 @@ import { useState, Dispatch, SetStateAction } from 'react'
 
 import Link from 'next/link'
 
-import { List, X } from '@phosphor-icons/react'
+import { ArrowUpRight, List, X } from '@phosphor-icons/react'
 import clsx from 'clsx'
 import { Route } from 'next'
 
-import { Icon, IconProps } from '@/components/Icon'
+import { Icon as IconComponent, Icon, IconProps } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
 import { linkBaseStyles } from '@/components/TextLink'
 
+import { isExternalLink } from '@/utils/linkUtils'
+
+import { navigationList } from '@/_utils/navigationItems'
 import { PATHS } from '@/constants/paths'
 
-const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
-const communityItems = [
-  PATHS.ECOSYSTEM_EXPLORER,
-  PATHS.GOVERNANCE,
-  PATHS.ORBIT,
-  PATHS.SECURITY,
-]
+import { communityItems, getInvolvedItems, resourcesItems } from './Footer'
 
 type IconButtonProps = {
   icon: IconProps['component']
@@ -37,7 +34,7 @@ function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
       className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:brand-outline"
       onClick={onClick}
     >
-      <Icon component={IconComponent} />
+      <Icon size={20} component={IconComponent} />
     </button>
   )
 }
@@ -51,7 +48,9 @@ type LinkItemProps = {
 
 function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
   return (
-    <li className={clsx(nested && 'ml-6')}>
+    <li
+      className={clsx(nested && 'ml-6 flex items-center gap-2 text-brand-300')}
+    >
       <Link
         href={path}
         className={clsx(
@@ -62,6 +61,9 @@ function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
       >
         {label}
       </Link>
+      {isExternalLink(path) && (
+        <IconComponent size={16} component={ArrowUpRight} />
+      )}
     </li>
   )
 }
@@ -81,15 +83,17 @@ function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
   return (
     <li>
       <span className="mb-4 block text-brand-200">{title}</span>
-      <ul className="space-y-6 border-l">
+      <ul className="items-center space-y-6 border-l ">
         {items.map((item) => (
-          <LinkItem
-            key={item.path}
-            nested
-            label={item.label}
-            path={item.path}
-            setOpen={setOpen}
-          />
+          <>
+            <LinkItem
+              key={item.path}
+              nested
+              label={item.label}
+              path={item.path}
+              setOpen={setOpen}
+            />
+          </>
         ))}
       </ul>
     </li>
@@ -127,12 +131,19 @@ export function MobileNavigation() {
           </div>
 
           <ul className="space-y-6" aria-label="Navigation options">
-            <LinkItem
+            {Object.entries(navigationList).map(([title, items]) => (
+              <NestedMenu
+                key={title}
+                title={title}
+                items={items}
+                setOpen={setOpen}
+              />
+            ))}
+            {/* <LinkItem
               label={PATHS.ABOUT.label}
               path={PATHS.ABOUT.path}
               setOpen={setOpen}
             />
-
             <NestedMenu
               title="Get Involved"
               items={getInvolvedItems}
@@ -142,13 +153,7 @@ export function MobileNavigation() {
               title="Community"
               items={communityItems}
               setOpen={setOpen}
-            />
-
-            <LinkItem
-              label={PATHS.BLOG.label}
-              path={PATHS.BLOG.path}
-              setOpen={setOpen}
-            />
+            /> */}
           </ul>
 
           <Social />

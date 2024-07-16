@@ -1,11 +1,17 @@
 'use client'
 
+import { ArrowUpRight } from '@phosphor-icons/react'
+
 import { Button } from '@/components/Button'
+import { Icon as IconComponent } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
-import { PATHS, PathValues } from '@/constants/paths'
+import { isExternalLink } from '@/utils/linkUtils'
+
+import { navigationList } from '@/_utils/navigationItems'
+import { PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type SectionProps = {
@@ -22,37 +28,6 @@ type NavigationListProps = {
   items: NavigationListItemProps[]
 }
 
-const companyItems = [
-  PATHS.ABOUT,
-  PATHS.EVENTS,
-  PATHS.GRANTS,
-  PATHS.ECOSYSTEM_EXPLORER,
-  PATHS.GOVERNANCE,
-  PATHS.ORBIT,
-  PATHS.SECURITY,
-  PATHS.BLOG,
-]
-
-const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
-
-const communityItems = [PATHS.ECOSYSTEM_EXPLORER, PATHS.GOVERNANCE]
-
-const resourcesItems = [PATHS.BLOG]
-
-const legalItems = [
-  PATHS.TERMS_OF_USE,
-  PATHS.EMPLOYEE_PRIVACY_POLICY,
-  PATHS.PRIVACY_POLICY,
-]
-
-const navigationList = {
-  Company: companyItems,
-  'Get Involved': getInvolvedItems,
-  Community: communityItems,
-  Resources: resourcesItems,
-  Legal: legalItems,
-}
-
 function Section({ title, children }: SectionProps) {
   return (
     <div className="flex flex-1 flex-col gap-4">
@@ -66,8 +41,11 @@ function NavigationList({ items }: NavigationListProps) {
   return (
     <ul className="flex w-max flex-col gap-3">
       {items.map(({ label, path }) => (
-        <li key={path}>
+        <li key={path} className="flex items-center gap-2 text-brand-300">
           <TextLink href={path}>{label}</TextLink>
+          {isExternalLink(path) && (
+            <IconComponent size={16} component={ArrowUpRight} />
+          )}
         </li>
       ))}
     </ul>
