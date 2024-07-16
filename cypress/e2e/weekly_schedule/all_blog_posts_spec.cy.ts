@@ -10,7 +10,7 @@ describe('All Blog Posts', () => {
     )
   })
 
-  it('should check links with use case category', () => {
+  it('should check links with use-case category', () => {
     verifyAllBlogPostLinks(
       PATHS.BLOG.entriesContentPath as string,
       PATHS.BLOG.path as string,

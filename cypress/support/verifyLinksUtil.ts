@@ -10,7 +10,7 @@ export function verifyLinks(path: string) {
 
       if (isExternal) {
         cy.request({ url: href, failOnStatusCode: false }).then((response) => {
-          if (!response || response.status >= 400 || response.status !== 999) {
+          if (!response || response.status >= 400) {
             let errorMessage = response
               ? `Status code: ${response.status}`
               : 'No response received or request timed out'
