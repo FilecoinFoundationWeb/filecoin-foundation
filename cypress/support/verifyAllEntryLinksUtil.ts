@@ -1,7 +1,7 @@
 import { getAllEventSlugs, getAllSlugs } from './getAllSlugsUtil'
 import { verifyLinks } from './verifyLinksUtil'
 
-export type EcosystemProjectCategoryType =
+type EcosystemProjectCategoryType =
   | 'artificial-intelligence'
   | 'education-academia-health'
   | 'finance'
@@ -12,7 +12,7 @@ export type EcosystemProjectCategoryType =
   | 'storage'
   | 'tooling-productivity'
 
-export type BlogPostCategoryType =
+type BlogPostCategoryType =
   | 'ecosystem'
   | 'events'
   | 'interview'

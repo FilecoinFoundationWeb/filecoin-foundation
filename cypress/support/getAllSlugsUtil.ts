@@ -36,11 +36,7 @@ export function getAllEventSlugs(
       return cy.task('readFile', filePath).then((content) => {
         const parsedContent = matter(content as string)
 
-        const isValidExternalLink =
-          !parsedContent.data['external-link'] ||
-          typeof parsedContent.data['external-link'] === 'string'
-
-        if (isValidExternalLink) {
+        if (parsedContent.data['external-link']) {
           slugs.push(file.replace('.md', ''))
         }
       })
