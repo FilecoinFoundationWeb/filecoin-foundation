@@ -10,12 +10,11 @@ import { isExternalLink } from '@/utils/linkUtils'
 
 type TextLinkProps = {
   href: string
-  className?: string
   children: React.ReactNode
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>
+} & React.ComponentProps<'a'>
 
 export const linkBaseStyles =
-  'inline-flex items-center gap-1 text-brand-300 focus:brand-outline hover:underline'
+  'text-brand-300 focus:brand-outline hover:underline'
 
 export function TextLink({
   href,
@@ -23,18 +22,22 @@ export function TextLink({
   children,
   ...rest
 }: TextLinkProps) {
+  const isExternal = isExternalLink(href)
+
   return (
     <CustomLink
       href={href}
-      className={clsx(linkBaseStyles, className)}
+      className={clsx(
+        linkBaseStyles,
+        isExternal && 'inline-flex items-center gap-1',
+        className,
+      )}
       {...rest}
     >
-      <>
-        {children}
-        {isExternalLink(href) && (
-          <IconComponent size={16} component={ArrowUpRight} />
-        )}
-      </>
+      {children}
+      {isExternal && (
+        <IconComponent size={16} component={ArrowUpRight} color="brand-400" />
+      )}
     </CustomLink>
   )
 }
