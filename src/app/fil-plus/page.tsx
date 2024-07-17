@@ -37,7 +37,7 @@ export default function FilPlus() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback}
+        image={graphicsData.filPlus}
         cta={{
           href: FIL_PLUS_URLS.documentation,
           text: 'Learn More About Fil+',

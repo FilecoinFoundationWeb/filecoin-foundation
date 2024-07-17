@@ -5,6 +5,7 @@ import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.png'
 import events1 from '@/assets/graphics/Filorg_Events1.png'
 import events2 from '@/assets/graphics/Filorg_Events2.png'
 import events3 from '@/assets/graphics/Filorg_Events3.png'
+import filPlus from '@/assets/graphics/Filorg_Fil_Plus.jpg'
 import governance1 from '@/assets/graphics/Filorg_Governance1.png'
 import governance2 from '@/assets/graphics/Filorg_Governance2.png'
 import governance3 from '@/assets/graphics/Filorg_Governance3.png'
@@ -91,5 +92,9 @@ export const graphicsData: Record<string, StaticImageProps> = {
   logoFallback: {
     data: logoFallback,
     alt: 'Logo coming soon',
+  },
+  filPlus: {
+    data: filPlus,
+    alt: 'Long row of modern, sleek server racks in a bright, white room, with blue LED lights glowing from within, creating a futuristic and high-tech atmosphere.',
   },
 }
