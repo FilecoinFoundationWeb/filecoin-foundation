@@ -11,7 +11,7 @@ end-date: "2023-08-28T15:30:55.996Z"
 image:
   src: /assets/images/dweb-camp.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: DWeb Camp
   description:

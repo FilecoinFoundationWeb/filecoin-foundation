@@ -10,7 +10,7 @@ end-date: "2023-04-15T15:30:53.477Z"
 image:
   src: /assets/images/fil-hong-kong.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Hong Kong
   description:

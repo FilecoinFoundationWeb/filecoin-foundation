@@ -11,7 +11,7 @@ end-date: "2022-11-04T00:00:00.000Z"
 image:
   src: /assets/images/645217c53763d71fa57e55a0_fil-lisbon.jpg
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Lisbon
   description:

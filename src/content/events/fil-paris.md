@@ -11,7 +11,7 @@ end-date: "2023-07-21T15:38:07.128Z"
 image:
   src: /assets/images/fil-paris-pic.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Paris
   description:

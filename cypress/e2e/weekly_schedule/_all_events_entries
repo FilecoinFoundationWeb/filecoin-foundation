@@ -7,5 +7,4 @@ const { validCategoryOptions } = getCategorySettings('events')
 createCategoryTests({
   pathConfig: PATHS.EVENTS,
   categories: validCategoryOptions,
-  categoryType: 'involvement',
 })

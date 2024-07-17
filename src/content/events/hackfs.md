@@ -11,7 +11,7 @@ end-date: "2021-08-19T22:00:00.000Z"
 image:
   src:
   alt:
-involvement: supported
+category: supported-sponsored
 seo:
   title: HackFS
   description:

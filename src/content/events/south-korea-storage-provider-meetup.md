@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: South Korea Storage Provider Meetup
   description:

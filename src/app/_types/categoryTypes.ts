@@ -7,11 +7,6 @@ export type CategorySetting = {
   name: string
 }
 
-export type CategorizableBy = {
-  category?: CategoryOption
-  involvement?: CategoryOption
-}
-
 export type CategoryYAMLData = {
   name: string
   slug: string

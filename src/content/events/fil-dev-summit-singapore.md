@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/fil-dev-summit.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Dev Summit Singapore
   description:

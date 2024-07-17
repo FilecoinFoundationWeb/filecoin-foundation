@@ -62,6 +62,7 @@ export const metadata = createMetadata({
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
+
 const { categorySettings, validCategoryOptions } =
   getCategorySettingsFromMap(categoryData)
 
@@ -82,7 +83,6 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   const { categoryQuery, categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
-    categorizeBy: 'category',
     validCategoryOptions: validCategoryOptions,
   })
 

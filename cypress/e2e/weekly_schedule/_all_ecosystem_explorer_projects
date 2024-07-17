@@ -17,5 +17,4 @@ const { validCategoryOptions } = getCategorySettingsFromMap(categoryData)
 createCategoryTests({
   pathConfig: PATHS.ECOSYSTEM_EXPLORER,
   categories: validCategoryOptions,
-  categoryType: 'category',
 })
