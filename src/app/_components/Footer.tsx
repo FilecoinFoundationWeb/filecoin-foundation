@@ -9,8 +9,8 @@ import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
 import { isExternalLink } from '@/utils/linkUtils'
+import { footerNavigationList } from '@/utils/navigationItems'
 
-import { footerNavigationList } from '@/_utils/navigationItems'
 import { PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

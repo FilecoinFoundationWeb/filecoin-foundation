@@ -15,8 +15,8 @@ import { Social } from '@/components/Social'
 import { linkBaseStyles } from '@/components/TextLink'
 
 import { isExternalLink } from '@/utils/linkUtils'
+import { mobileViewNavigationList } from '@/utils/navigationItems'
 
-import { mobileViewNavigationList } from '@/_utils/navigationItems'
 import { PATHS } from '@/constants/paths'
 
 type IconButtonProps = {
@@ -81,7 +81,7 @@ function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
   return (
     <li>
       <span className="mb-4 block text-brand-200">{title}</span>
-      <ul className="items-center space-y-6 border-l ">
+      <ul className="items-center space-y-6 border-l">
         {items.map((item) => (
           <>
             <LinkItem
