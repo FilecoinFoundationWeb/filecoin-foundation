@@ -1,5 +1,3 @@
-'use client'
-
 import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
@@ -7,49 +5,32 @@ import { TextLink } from '@/components/TextLink'
 
 import { footerNavigationList } from '@/utils/navigationItems'
 
-import { PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
-type NavigationListItemProps = {
-  label: string
-  path: PathValues | typeof FILECOIN_FOUNDATION_URLS.email.href
-}
-
-type NavigationListProps = {
-  items: NavigationListItemProps[]
-}
-
-function NavigationList({ items }: NavigationListProps) {
-  return (
-    <ul className="flex w-max flex-col gap-3">
-      {items.map(({ label, path }) => (
-        <li key={path}>
-          <TextLink href={path}>{label}</TextLink>
-        </li>
-      ))}
-    </ul>
-  )
-}
 
 export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
       <hr />
-      <div className="flex flex-col gap-6 sm:flex-row sm:justify-between md:justify-start md:gap-36">
-        <Logo />
-        <div className="sm:max-w-96">
-          <p className="mb-6">
-            For the latest big ideas and news from the Filecoin ecosystem and
-            decentralized web, subscribe to Filecoin Foundation’s newsletter,
-            The Upload.
-          </p>
-          <Button
-            className="w-full sm:self-start md:w-auto"
-            variant="ghost"
-            href={FILECOIN_FOUNDATION_URLS.newsletter}
-          >
-            Subscribe to Newsletter
-          </Button>
+
+      <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-5">
+        <div className="sm:col-span-2">
+          <Logo />
+        </div>
+        <div className="sm:col-span-3">
+          <div className="sm:max-w-96">
+            <p className="mb-6">
+              For the latest big ideas and news from the Filecoin ecosystem and
+              decentralized web, subscribe to Filecoin Foundation’s newsletter,
+              The Upload.
+            </p>
+            <Button
+              className="w-full sm:w-auto"
+              variant="ghost"
+              href={FILECOIN_FOUNDATION_URLS.newsletter}
+            >
+              Subscribe to Newsletter
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -59,20 +40,20 @@ export function Footer() {
       </div>
 
       <hr />
-      <div className="flex flex-wrap gap-x-20 gap-y-6">
-        <div className="flex flex-1 flex-wrap gap-x-12 gap-y-8">
-          {Object.entries(footerNavigationList).map(([title, items]) => (
-            <div key={title} className="flex flex-1 flex-col gap-4">
-              <span className="block w-max font-bold">{title}</span>
-              <NavigationList
-                items={items.map((item) => ({
-                  label: item.label,
-                  path: item.path,
-                }))}
-              />
-            </div>
-          ))}
-        </div>
+
+      <div className="grid grid-cols-2 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+        {Object.entries(footerNavigationList).map(([title, items]) => (
+          <div key={title}>
+            <span className="mb-4 block font-bold">{title}</span>
+            <ul className="flex w-max flex-col gap-3">
+              {items.map((item) => (
+                <li key={item.path}>
+                  <TextLink href={item.path}>{item.label}</TextLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
       <hr />
