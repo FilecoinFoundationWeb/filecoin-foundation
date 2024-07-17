@@ -45,9 +45,15 @@ type LinkItemProps = {
 }
 
 function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
+  const isExternal = isExternalLink(path)
+
   return (
     <li
-      className={clsx(nested && 'ml-6 flex items-center gap-2 text-brand-300')}
+      className={clsx(
+        'text-brand-300',
+        nested && 'ml-6',
+        isExternal && 'inline-flex items-center gap-1',
+      )}
     >
       <Link
         href={path}
@@ -59,8 +65,8 @@ function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
       >
         {label}
       </Link>
-      {isExternalLink(path) && (
-        <IconComponent size={16} component={ArrowUpRight} />
+      {isExternal && (
+        <IconComponent size={16} component={ArrowUpRight} color="brand-400" />
       )}
     </li>
   )
@@ -73,7 +79,7 @@ type NestedMenuItemProps = {
 
 type NestedMenuProps = {
   title: string
-  items: NestedMenuItemProps[]
+  items: Array<NestedMenuItemProps>
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 
@@ -82,16 +88,8 @@ function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
     <li>
       <span className="mb-4 block text-brand-200">{title}</span>
       <ul className="items-center space-y-6 border-l">
-        {items.map((item) => (
-          <>
-            <LinkItem
-              key={item.path}
-              nested
-              label={item.label}
-              path={item.path}
-              setOpen={setOpen}
-            />
-          </>
+        {items.map((item, i) => (
+          <LinkItem key={i} nested {...item} setOpen={setOpen} />
         ))}
       </ul>
     </li>
