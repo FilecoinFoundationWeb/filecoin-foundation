@@ -1,4 +1,4 @@
-;import { CTASection } from '@/components/CTASection'
+import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -9,7 +9,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { attributes } from '@/content/pages/fil-plus.md'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -27,15 +27,17 @@ export default function FilPlus() {
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
+        description={header.description}
         image={graphicsData.imageFallback}
+        cta={{
+          href: FIL_PLUS_URLS.documentation,
+          text: 'Learn More About Fil+',
+        }}
       />
 
       <PageSection kicker="New kicker" title="New title"></PageSection>
 
-      <CTASection
-        title=""
-        description=""
-      />
+      <CTASection title="" description="" />
     </PageLayout>
   )
 }

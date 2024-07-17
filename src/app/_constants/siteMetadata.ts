@@ -4,6 +4,8 @@ const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
 const FIL_PLUS_URLS = {
+  documentation:
+    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
   notary: 'https://github.com/filecoin-project/notary-governance/',
   site: 'https://plus.fil.org/',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
