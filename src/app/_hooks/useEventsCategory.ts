@@ -40,12 +40,11 @@ function filterByPastEvents(entry: EventData): boolean {
 }
 
 export function useEventsCategory(props: UseCategoryProps<EventData>) {
-  const { entries, searchParams, categorizeBy, validCategoryOptions } = props
+  const { entries, searchParams, validCategoryOptions } = props
 
   const results = useCategory({
     searchParams,
     entries,
-    categorizeBy,
     validCategoryOptions,
   })
   const { categoryQuery, categoryCounts, categorizedResults } = results

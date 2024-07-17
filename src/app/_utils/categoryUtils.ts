@@ -1,16 +1,14 @@
 import {
   type CategoryMap,
   type CategorySetting,
-  type CMSCategoryFieldMapping,
   type CategoryYAMLData,
 } from '@/types/categoryTypes'
-import { type CMSFieldOption } from '@/types/cmsConfig'
+import { type CMSFieldOption, type CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
 import { pastEventsSetting } from '@/constants/categoryConstants'
-import { CMS_CATEGORY_FIELD_MAPPING } from '@/constants/cmsConstants'
 
 function transformCategoryDataToSettings(
   options: CMSFieldOption[],
@@ -21,12 +19,9 @@ function transformCategoryDataToSettings(
   }))
 }
 
-function getCategoryData(
-  CMSCollectionKey: keyof CMSCategoryFieldMapping,
-): CMSFieldOption[] {
-  const { collection, field } = CMS_CATEGORY_FIELD_MAPPING[CMSCollectionKey]
-  const { fields } = getCollectionConfig(collection)
-  const categoriesData = getCMSFieldOptions(fields, field)
+function getCategoryData(collectionName: CMSCollectionName) {
+  const { fields } = getCollectionConfig(collectionName)
+  const categoriesData = getCMSFieldOptions(fields, 'category')
 
   return categoriesData
 }
@@ -43,10 +38,8 @@ export function getCategoryDataFromDirectory(directoryPath: string) {
   return categoryMap
 }
 
-export function getCategorySettings(
-  CMSCollectionKey: keyof CMSCategoryFieldMapping,
-) {
-  const rawCategories = getCategoryData(CMSCollectionKey)
+export function getCategorySettings(collectionName: CMSCollectionName) {
+  const rawCategories = getCategoryData(collectionName)
   const categorySettings = transformCategoryDataToSettings(rawCategories)
   const categoryIds = categorySettings.map((setting) => setting.id)
 

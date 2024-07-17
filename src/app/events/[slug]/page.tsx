@@ -3,6 +3,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getEventData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
@@ -31,12 +32,14 @@ export default function EventEntry({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 
-  const { title, description, image, involvement, externalLink } = data
+  const { title, description, image, category, externalLink } = data
 
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
-      <TagLabel borderColor="brand-100">{involvement}</TagLabel>
+      <TagLabel borderColor="brand-100">
+        {getCategoryLabel({ collectionName: 'events', category })}
+      </TagLabel>
       <PageHeader
         title={title}
         description={description}

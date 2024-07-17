@@ -1,18 +1,18 @@
+import { CMSCollectionName } from '@/types/cmsConfig'
+
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 
-type GetCategoryLabelParams<T> = {
-  collectionName: string
-  fieldName: keyof T
+type GetCategoryLabelParams = {
+  collectionName: CMSCollectionName
   category: string
 }
 
-export function getCategoryLabelGeneric<T>({
+export function getCategoryLabel({
   collectionName,
-  fieldName,
   category,
-}: GetCategoryLabelParams<T>) {
+}: GetCategoryLabelParams) {
   const { fields } = getCollectionConfig(collectionName)
-  const categoryOptions = getCMSFieldOptions(fields, fieldName as string)
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
   const option = categoryOptions.find((option) => option.value === category)
 
   return option ? option.label : category

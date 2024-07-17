@@ -26,6 +26,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/blog.md'
@@ -35,7 +36,6 @@ import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getCategoryLabel } from './utils/getCategoryLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -78,7 +78,6 @@ export default function Blog({ searchParams }: Props) {
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
-    categorizeBy: 'category',
     validCategoryOptions: validCategoryOptions,
   })
 
@@ -162,7 +161,6 @@ export default function Blog({ searchParams }: Props) {
                       return (
                         <Card
                           key={slug}
-                          tag={getCategoryLabel(category)}
                           title={title}
                           description={description}
                           textIsClamped={true}
@@ -183,6 +181,10 @@ export default function Blog({ searchParams }: Props) {
                               lg: '360px',
                             }),
                           }}
+                          tag={getCategoryLabel({
+                            collectionName: 'blog',
+                            category,
+                          })}
                         />
                       )
                     })}
