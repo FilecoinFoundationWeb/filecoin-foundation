@@ -175,6 +175,21 @@ You can connect Decap CMS to the local Git repository. To do this, follow these 
 
 Please refer to the Decap CMS documentation for more information and detailed instructions on [working with a local Git repository](https://decapcms.org/docs/working-with-a-local-git-repository/).
 
+## Creating Page Templates
+
+To create a new page template, run the following command:
+
+`npm run generate:page <page-name>`
+
+Replace `<page-name>` with the desired name of the page. This command will generate the following files with boilerplate content:
+
+- `app/page-name/page.tsx`
+- `app/page-name/layout.tsx`
+- `app/page-name/utils/generateStructuredData.tsx`
+- `cypress/e2e/page_name_spec.cy.ts`
+
+It will also update `paths.ts` to include the new page.
+
 ## Continuous Integration and Deployment
 
 Our project leverages GitHub Actions for Continuous Integration (CI) to automate the testing and linting of code. This ensures that every push and pull request to the `main` branch meets our quality standards and passes all tests. Below are the key workflows integrated into our CI process:
