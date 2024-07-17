@@ -3,8 +3,7 @@ import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
-import { footerNavigationList } from '@/utils/navigationItems'
-
+import { footerNavigationItems } from '@/constants/navigationItems'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export function Footer() {
@@ -41,7 +40,7 @@ export function Footer() {
         aria-label="Footer navigation"
         className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5"
       >
-        {Object.entries(footerNavigationList).map(([title, items]) => (
+        {Object.entries(footerNavigationItems).map(([title, items]) => (
           <div key={title}>
             <span className="mb-4 block font-bold">{title}</span>
             <ul className="flex w-max flex-col gap-3">

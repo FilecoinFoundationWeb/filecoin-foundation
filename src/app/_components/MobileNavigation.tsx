@@ -15,8 +15,8 @@ import { Social } from '@/components/Social'
 import { linkBaseStyles } from '@/components/TextLink'
 
 import { isExternalLink } from '@/utils/linkUtils'
-import { mobileViewNavigationList } from '@/utils/navigationItems'
 
+import { mobileNavigationItems } from '@/constants/navigationItems'
 import { PATHS } from '@/constants/paths'
 
 type IconButtonProps = {
@@ -136,7 +136,7 @@ export function MobileNavigation() {
               path={PATHS.ABOUT.path}
               setOpen={setOpen}
             />
-            {Object.entries(mobileViewNavigationList).map(([title, items]) => (
+            {Object.entries(mobileNavigationItems).map(([title, items]) => (
               <NestedMenu
                 key={title}
                 title={title}

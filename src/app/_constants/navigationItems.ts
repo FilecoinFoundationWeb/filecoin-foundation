@@ -4,8 +4,8 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 const companyItems = [
   PATHS.ABOUT,
   {
-    label: FILECOIN_FOUNDATION_URLS.email.label,
     path: FILECOIN_FOUNDATION_URLS.email.href,
+    label: FILECOIN_FOUNDATION_URLS.email.label,
   },
 ]
 
@@ -26,18 +26,18 @@ const legalItems = [
   PATHS.PRIVACY_POLICY,
 ]
 
-const baseNavigationList = {
+const baseNavigationItems = {
   'Get Involved': getInvolvedItems,
   Community: communityItems,
   Resources: resourcesItems,
 }
 
-export const footerNavigationList = {
+export const footerNavigationItems = {
   Company: companyItems,
-  ...baseNavigationList,
+  ...baseNavigationItems,
   Legal: legalItems,
 }
 
-export const mobileViewNavigationList = {
-  ...baseNavigationList,
+export const mobileNavigationItems = {
+  ...baseNavigationItems,
 }
