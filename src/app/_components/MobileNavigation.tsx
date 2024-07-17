@@ -25,14 +25,14 @@ type IconButtonProps = {
   onClick: React.ComponentPropsWithoutRef<'button'>['onClick']
 }
 
-function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
+function IconButton({ icon, label, onClick }: IconButtonProps) {
   return (
     <button
       aria-label={label}
       className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:brand-outline"
       onClick={onClick}
     >
-      <Icon size={20} component={IconComponent} />
+      <Icon size={20} component={icon} />
     </button>
   )
 }
@@ -79,7 +79,7 @@ type NestedMenuItemProps = {
 
 type NestedMenuProps = {
   title: string
-  items: Array<NestedMenuItemProps>
+  items: NestedMenuItemProps[]
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 
@@ -87,9 +87,15 @@ function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
   return (
     <li>
       <span className="mb-4 block text-brand-200">{title}</span>
-      <ul className="items-center space-y-6 border-l">
-        {items.map((item, i) => (
-          <LinkItem key={i} nested {...item} setOpen={setOpen} />
+      <ul className="space-y-6 border-l">
+        {items.map((item) => (
+          <LinkItem
+            key={item.path}
+            nested
+            label={item.label}
+            path={item.path}
+            setOpen={setOpen}
+          />
         ))}
       </ul>
     </li>
