@@ -11,26 +11,23 @@ export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
       <hr />
-
       <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-5">
         <div className="sm:col-span-2">
           <Logo />
         </div>
         <div className="sm:col-span-3">
-          <div className="sm:max-w-96">
-            <p className="mb-6">
-              For the latest big ideas and news from the Filecoin ecosystem and
-              decentralized web, subscribe to Filecoin Foundation’s newsletter,
-              The Upload.
-            </p>
-            <Button
-              className="w-full sm:w-auto"
-              variant="ghost"
-              href={FILECOIN_FOUNDATION_URLS.newsletter}
-            >
-              Subscribe to Newsletter
-            </Button>
-          </div>
+          <p className="mb-6 max-w-readable">
+            For the latest big ideas and news from the Filecoin ecosystem and
+            decentralized web, subscribe to Filecoin Foundation’s newsletter,
+            The Upload.
+          </p>
+          <Button
+            className="w-full sm:w-auto"
+            variant="ghost"
+            href={FILECOIN_FOUNDATION_URLS.newsletter}
+          >
+            Subscribe to Newsletter
+          </Button>
         </div>
       </div>
 
@@ -40,7 +37,6 @@ export function Footer() {
       </div>
 
       <hr />
-
       <nav
         aria-label="Footer navigation"
         className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5"
