@@ -6,7 +6,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import {
   attributes,
   react as Content,
-} from '@/content/pages/coordinated-disclosure-policy.md'
+} from '@/content/pages/security/coordinated-disclosure-policy.md'
 
 import { PATHS } from '@/constants/paths'
 
@@ -17,6 +17,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
+  overrideDefaultTitle: true,
 })
 
 export default function CoordinatedDisclosurePolicy() {

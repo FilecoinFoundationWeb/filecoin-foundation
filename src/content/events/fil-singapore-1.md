@@ -11,7 +11,7 @@ end-date: "2024-09-19T15:14:23.249Z"
 image:
   src: /assets/images/fil-singapore-24.png
   alt: FIL Singapore Logo
-involvement: hosted
+category: hosted
 seo:
   title: FIL Singapore 1
   description:

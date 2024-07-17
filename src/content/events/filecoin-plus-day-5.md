@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Filecoin Plus Day 5
   description:

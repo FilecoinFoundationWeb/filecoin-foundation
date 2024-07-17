@@ -16,7 +16,7 @@ start-date: 2024-07-08T14:53:57.431Z
 image:
   src: /assets/images/fil-brussels.svg
   alt: FIL Brussels Logo
-involvement: hosted
+category: hosted
 seo:
   title: FIL Brussels
   description: Join FIL Brussels to connect with the Filecoin community and

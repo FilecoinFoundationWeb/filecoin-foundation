@@ -12,6 +12,7 @@ export function mapMarkdownToEventData({
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
+    category: data.category,
     description: data.description,
     location: data.location,
     externalLink: data['external-link'],
@@ -21,7 +22,6 @@ export function mapMarkdownToEventData({
       src: data.image?.src || '',
       alt: data.image?.alt || '',
     },
-    involvement: data.involvement,
     seo: data.seo,
   }
 }

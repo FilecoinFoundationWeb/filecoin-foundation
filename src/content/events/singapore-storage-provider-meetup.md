@@ -11,7 +11,7 @@ end-date: "2022-08-16T00:00:00.000Z"
 image:
   src: /assets/images/6452194af82dbf21df953f96_singapore-sp.jpg
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Singapore Storage Provider Meetup
   description:

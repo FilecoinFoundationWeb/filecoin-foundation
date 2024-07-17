@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import { useCategory } from '@/hooks/useCategory'
+import { useEventsCategory } from '@/hooks/useEventsCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -24,7 +24,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings } from '@/utils/categoryUtils'
+import {
+  getEventsCategorySettings,
+  getCategoryLabel,
+} from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
@@ -37,7 +40,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getInvolvementLabel } from './utils/getInvolvementLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -49,14 +51,14 @@ type Props = {
 }
 
 const events = getEventsData()
-const { categorySettings, validCategoryOptions } = getCategorySettings('events')
+const { categorySettings, validCategoryOptions } = getEventsCategorySettings()
 const { featured_entry: featuredEventSlug, seo } = attributes
 const featuredEvent = getEventData(featuredEventSlug || '')
 
 export const metadata = createMetadata({
   seo,
   path: PATHS.EVENTS.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Events({ searchParams }: Props) {
@@ -67,7 +69,6 @@ export default function Events({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: events,
-
     searchBy: ['title', 'location'],
   })
 
@@ -78,12 +79,12 @@ export default function Events({ searchParams }: Props) {
     sortByDefault: DEFAULT_SORT_OPTION,
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
-    searchParams,
-    entries: sortedResults,
-    categorizeBy: 'involvement',
-    validCategoryOptions: validCategoryOptions,
-  })
+  const { categoryQuery, categorizedResults, categoryCounts } =
+    useEventsCategory({
+      searchParams,
+      entries: sortedResults,
+      validCategoryOptions,
+    })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -150,7 +151,7 @@ export default function Events({ searchParams }: Props) {
                         slug,
                         title,
                         image,
-                        involvement,
+                        category,
                         description,
                         externalLink,
                       } = event
@@ -163,7 +164,6 @@ export default function Events({ searchParams }: Props) {
                         <Card
                           key={slug}
                           title={title}
-                          tag={getInvolvementLabel(involvement)}
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
@@ -185,6 +185,10 @@ export default function Events({ searchParams }: Props) {
                               lg: '360px',
                             }),
                           }}
+                          tag={getCategoryLabel({
+                            collectionName: 'events',
+                            category,
+                          })}
                         />
                       )
                     })}

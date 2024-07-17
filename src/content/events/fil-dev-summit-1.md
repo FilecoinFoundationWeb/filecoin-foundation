@@ -11,7 +11,7 @@ end-date: "2023-09-14T15:46:33.644Z"
 image:
   src: /assets/images/fil-dev-summit.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Dev Summit 1
   description:
