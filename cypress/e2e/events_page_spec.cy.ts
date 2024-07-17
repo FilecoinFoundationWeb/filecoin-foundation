@@ -1,10 +1,16 @@
 import { PATHS } from '../../src/app/_constants/paths'
 import { testPageMetadata } from '../support/test-utils'
+import { verifyLinks } from '../support/verifyLinksUtil'
 
-describe('Events Page', function () {
-  testPageMetadata({
-    path: PATHS.EVENTS,
-    includesFeaturedEntry: true,
-    overrideDefaultTitle: true,
+describe('Events Page', () => {
+  it('should check metadata', () => {
+    testPageMetadata({
+      path: PATHS.EVENTS,
+      overrideDefaultTitle: true,
+    })
+  })
+
+  it('should check links', () => {
+    verifyLinks(PATHS.EVENTS.path)
   })
 })

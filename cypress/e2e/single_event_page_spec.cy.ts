@@ -2,8 +2,8 @@ import { PATHS } from '../../src/app/_constants/paths'
 import { getRandomSlug } from '../support/getRandomSlugUtil'
 import { verifyMetadata } from '../support/verifyMetadataUtil'
 
-describe('Random Events Page', function () {
-  it('should check metadata of a random events page', function () {
+describe('Random Event Entry', () => {
+  it('should check metadata', () => {
     const eventsDirectoryPath = PATHS.EVENTS.entriesContentPath as string
 
     getRandomSlug(eventsDirectoryPath).then((slug) => {

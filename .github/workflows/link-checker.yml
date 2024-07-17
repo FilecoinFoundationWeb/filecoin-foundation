@@ -1,0 +1,31 @@
+name: Link Checker
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cypress-weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.11.1"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Start Server
+        run: |
+          npm start &
+          echo "Waiting for server to start..."
+          npx wait-on http://localhost:3000
+
+      - name: Run Weekly Cypress Test
+        run: npx cypress run --spec "cypress/e2e/weekly_schedule/**/*.cy.ts"
