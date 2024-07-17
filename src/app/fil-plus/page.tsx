@@ -1,11 +1,15 @@
+import { Badge } from '@/components/Badge'
+import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
+import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -16,6 +20,7 @@ import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { aboutData } from './data/aboutData'
+import { applicationData } from './data/applicationData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -51,6 +56,29 @@ export default function FilPlus() {
             Learn More About Fil+ Participants
           </Button>
         </div>
+      </PageSection>
+
+      <PageSection kicker="Allocator Allocation" title="Become an Allocator">
+        <div className="max-w-readable">
+          <p>
+            Allocators are a core part of the Fil+ program and help incentivize
+            the storage of useful data of the Filecoin network. For a full list
+            of instructions and walk through please visit{' '}
+            <TextLink href="">blog.allocator.tech</TextLink>
+          </p>
+        </div>
+
+        <BadgeCardGrid cols="smThree">
+          {applicationData.map((item) => {
+            const { step, title, description } = item
+
+            return (
+              <CardWithBadge key={step} title={title} description={description}>
+                <Badge number={step} />
+              </CardWithBadge>
+            )
+          })}
+        </BadgeCardGrid>
       </PageSection>
 
       <CTASection title="" description="" />

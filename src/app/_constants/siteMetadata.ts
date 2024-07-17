@@ -6,9 +6,10 @@ const ORGANIZATION_NAME = 'Filecoin Foundation'
 const FIL_PLUS_URLS = {
   documentation:
     'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
-  notary: 'https://github.com/filecoin-project/notary-governance/',
+  notary: 'https://github.com/filecoin-project/Allocator-Governance',
   site: 'https://plus.fil.org/',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
+  allocatorsBlog: 'http://blog.allocator.tech/',
 }
 
 const FILECOIN_DOCS_URLS = {
