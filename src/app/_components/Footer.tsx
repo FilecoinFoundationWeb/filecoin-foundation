@@ -1,14 +1,10 @@
 'use client'
 
-import { ArrowUpRight } from '@phosphor-icons/react'
-
 import { Button } from '@/components/Button'
-import { Icon as IconComponent } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
-import { isExternalLink } from '@/utils/linkUtils'
 import { footerNavigationList } from '@/utils/navigationItems'
 
 import { PathValues } from '@/constants/paths'
@@ -27,11 +23,8 @@ function NavigationList({ items }: NavigationListProps) {
   return (
     <ul className="flex w-max flex-col gap-3">
       {items.map(({ label, path }) => (
-        <li key={path} className="flex items-center gap-2 text-brand-300">
+        <li key={path}>
           <TextLink href={path}>{label}</TextLink>
-          {isExternalLink(path) && (
-            <IconComponent size={16} component={ArrowUpRight} />
-          )}
         </li>
       ))}
     </ul>
