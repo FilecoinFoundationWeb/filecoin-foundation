@@ -1,6 +1,16 @@
 import { PATHS } from '../../src/app/_constants/paths'
 import { testPageMetadata } from '../support/test-utils'
+import { verifyLinks } from '../support/verifyLinksUtil'
 
-describe('About Page', function () {
-  testPageMetadata({ path: PATHS.ABOUT, useAbsoluteTitle: true})
+describe('About Page', () => {
+  it('should check metadata', () => {
+    testPageMetadata({
+      path: PATHS.ABOUT,
+      overrideDefaultTitle: true,
+    })
+  })
+
+  it('should check links', () => {
+    verifyLinks(PATHS.ABOUT.path)
+  })
 })

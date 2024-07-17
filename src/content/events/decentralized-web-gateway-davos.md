@@ -15,7 +15,7 @@ updated-on: 2023-05-03T08:15:41.280Z
 image:
   src: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
   alt: ""
-involvement: hosted
+category: hosted
 seo:
   title: Decentralized Web Gateway Davos
   description: Explore the Decentralized Web Gateway at Davos and discover the

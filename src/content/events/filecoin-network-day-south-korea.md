@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/network-day-korea-2022.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Filecoin Network Day South Korea
   description:

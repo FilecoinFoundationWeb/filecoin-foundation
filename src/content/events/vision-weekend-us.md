@@ -11,7 +11,7 @@ end-date: "2022-12-04T18:27:00.000Z"
 image:
   src: /assets/images/vision-sf-2022.png
   alt:
-involvement: supported
+category: supported-sponsored
 seo:
   title: Vision Weekend US
   description:

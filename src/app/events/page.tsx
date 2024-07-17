@@ -24,7 +24,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getEventsCategorySettings } from '@/utils/categoryUtils'
+import {
+  getEventsCategorySettings,
+  getCategoryLabel,
+} from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
@@ -37,7 +40,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getInvolvementLabel } from './utils/getInvolvementLabel'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -56,7 +58,7 @@ const featuredEvent = getEventData(featuredEventSlug || '')
 export const metadata = createMetadata({
   seo,
   path: PATHS.EVENTS.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Events({ searchParams }: Props) {
@@ -81,7 +83,6 @@ export default function Events({ searchParams }: Props) {
     useEventsCategory({
       searchParams,
       entries: sortedResults,
-      categorizeBy: 'involvement',
       validCategoryOptions,
     })
 
@@ -150,7 +151,7 @@ export default function Events({ searchParams }: Props) {
                         slug,
                         title,
                         image,
-                        involvement,
+                        category,
                         description,
                         externalLink,
                       } = event
@@ -163,7 +164,6 @@ export default function Events({ searchParams }: Props) {
                         <Card
                           key={slug}
                           title={title}
-                          tag={getInvolvementLabel(involvement)}
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
@@ -185,6 +185,10 @@ export default function Events({ searchParams }: Props) {
                               lg: '360px',
                             }),
                           }}
+                          tag={getCategoryLabel({
+                            collectionName: 'events',
+                            category,
+                          })}
                         />
                       )
                     })}

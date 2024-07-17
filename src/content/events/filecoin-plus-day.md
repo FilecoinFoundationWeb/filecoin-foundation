@@ -11,7 +11,7 @@ end-date:
 image:
   src:
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Filecoin Plus Day
   description:

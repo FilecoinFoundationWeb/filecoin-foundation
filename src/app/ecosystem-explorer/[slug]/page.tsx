@@ -9,15 +9,17 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
 
-import { type EcosystemProjectData } from '@/types/ecosystemProjectTypes'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import {
+  type DynamicPathValues,
+  PATHS,
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+} from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -38,19 +40,13 @@ export function generateMetadata({ params }: EcosystemProjectProps) {
   })
 }
 
-function getTagLabels(project: EcosystemProjectData) {
-  const { fields } = getCollectionConfig('ecosystem_projects')
-  const tagOptions = getCMSFieldOptions(fields, 'tags')
-
-  return project.tags.map((tag) => {
-    const option = tagOptions.find((option) => option.value === tag)
-    return option ? option.label : tag
-  })
-}
-
 export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
+  const categoryData = getCategoryDataFromDirectory(
+    ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+  )
+
   const {
     image,
     title,
@@ -62,7 +58,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     featuredContent,
     updatedOn,
     newsUpdate,
-    tags,
+    category,
   } = data
 
   return (
@@ -129,15 +125,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             </div>
           )}
 
-          {tags && (
-            <ul className="flex flex-wrap gap-2">
-              {getTagLabels(data).map((tag) => (
-                <li key={tag}>
-                  <TagLabel>{tag}</TagLabel>
-                </li>
-              ))}
-            </ul>
-          )}
+          <TagLabel>{categoryData[category]}</TagLabel>
         </div>
 
         <ul className="mt-4 flex flex-col gap-5">

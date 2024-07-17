@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/destore-hk-2023.png
   alt:
-involvement: supported
+category: supported-sponsored
 seo:
   title: DeStorHK
   description:

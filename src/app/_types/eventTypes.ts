@@ -7,12 +7,12 @@ export type EventData = {
   createdOn: string
   updatedOn?: string
   publishedOn?: string
+  category: string
   description?: string
   location: string
   externalLink?: string
   startDate: string
   endDate?: string
   image: ImageProps
-  involvement: string
   seo: SeoMetadata
 }

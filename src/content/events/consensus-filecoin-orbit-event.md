@@ -12,7 +12,7 @@ updated-on: 2024-01-29T15:50:42.614Z
 image:
   src: /assets/images/consensus-2024.png
   alt: Consensus Logo
-involvement: supported
+category: supported-sponsored
 seo:
   title: Consensus Filecoin Orbit Event
   description: Attend the Consensus Filecoin Orbit Event to connect with the

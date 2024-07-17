@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/645215f9a2b74616855546de_ethdenver.png
   alt:
-involvement: supported
+category: supported-sponsored
 seo:
   title: ETHDenver
   description:

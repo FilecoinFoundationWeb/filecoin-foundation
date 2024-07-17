@@ -11,7 +11,7 @@ image:
 external-link: https://networkbase.io/austin/
 start-date: "2023-04-24T15:46:15.146Z"
 end-date: "2023-04-26T15:46:15.151Z"
-involvement: hosted
+category: hosted
 seo:
   title: Filecoin Network Base
   description:

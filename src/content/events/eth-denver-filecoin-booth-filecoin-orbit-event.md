@@ -11,7 +11,7 @@ end-date: "2024-03-03T15:38:54.840Z"
 image:
   src: /assets/images/ethdenver24.png
   alt: ETH Denver Logo
-involvement: sponsored
+category: supported-sponsored
 seo:
   title: ETH Denver Filecoin Booth & Filecoin Orbit Event
   description:

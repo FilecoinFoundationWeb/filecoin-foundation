@@ -23,7 +23,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.GOVERNANCE.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Governance() {

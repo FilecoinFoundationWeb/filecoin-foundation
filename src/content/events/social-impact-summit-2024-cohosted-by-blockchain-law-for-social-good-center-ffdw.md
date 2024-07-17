@@ -13,7 +13,7 @@ end-date: "2024-02-27T21:00:51.050Z"
 image:
   src: /assets/images/sis24.png
   alt:
-involvement: cohosted
+category: co-hosted
 seo:
   title: Social Impact Summit 2024
   description:

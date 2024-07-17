@@ -11,7 +11,7 @@ updated-on: 2023-05-03T08:06:31.219Z
 image:
   src: /assets/images/governance-logo.jpg
   alt: Filecoin Governance Logo
-involvement: hosted
+category: hosted
 seo:
   title: April 2021 Notary Governance Meeting
   description:
