@@ -11,7 +11,7 @@ end-date: "2023-11-14T22:00:00.270Z"
 image:
   src: /assets/images/03292023-filplusmission.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Filecoin Plus Day 1
   description:

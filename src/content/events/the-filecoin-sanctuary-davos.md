@@ -11,7 +11,7 @@ end-date: "2023-01-20T16:51:17.055Z"
 image:
   src: /assets/images/davos-2023-pic.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: The Filecoin Sanctuary Davos
   description:

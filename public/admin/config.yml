@@ -515,6 +515,18 @@ collections:
         label: "Published On"
         widget: "datetime"
         required: false
+      - name: "category"
+        label: "Category"
+        widget: "select"
+        options:
+          - label: "Co-Hosted"
+            value: "co-hosted"
+          - label: "Community"
+            value: "community"
+          - label: "Hosted"
+            value: "hosted"
+          - label: "Supported & Sponsored"
+            value: "supported-sponsored"
       - name: "description"
         label: "Description"
         widget: "string"
@@ -537,16 +549,4 @@ collections:
         required: false
         hint: "Last day of event"
       - *image_config
-      - name: "involvement"
-        label: "FF Involvement"
-        widget: "select"
-        options:
-          - label: "Co-Hosted"
-            value: "hosted"
-          - label: "Community"
-            value: "community"
-          - label: "Hosted"
-            value: "hosted"
-          - label: "Supported & Sponsored"
-            value: "supported-sponsored"
       - *meta_config

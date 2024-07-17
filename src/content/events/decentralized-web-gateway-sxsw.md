@@ -15,7 +15,7 @@ end-date:
 image:
   src: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Decentralized Web Gateway SXSW
   description:

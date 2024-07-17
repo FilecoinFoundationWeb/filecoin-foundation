@@ -11,7 +11,7 @@ end-date: "2024-11-15T16:18:33.972Z"
 image:
   src: /assets/images/filbangkok-24.png
   alt: FIL Bangkok Logo
-involvement: hosted
+category: hosted
 seo:
   title: FIL Bangkok
   description:

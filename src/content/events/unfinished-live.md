@@ -11,7 +11,7 @@ end-date: "2022-08-24T00:00:00.000Z"
 image:
   src: /assets/images/645215e44977982552923065_unfinished-live.png
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Unfinished Live
   description: Join Unfinished Live to explore the future of democracy and technology.

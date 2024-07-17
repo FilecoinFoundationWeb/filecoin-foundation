@@ -13,7 +13,7 @@ end-date:
 image:
   src:
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: GBBC Virtual Members Forum with Marta Belcher
   description:

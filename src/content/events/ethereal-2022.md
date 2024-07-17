@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/645215f7455b5b63d0f5b5e8_marta-snowden.png
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Ethereal 2022
   description:

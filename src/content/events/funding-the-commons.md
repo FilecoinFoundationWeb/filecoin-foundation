@@ -11,7 +11,7 @@ end-date: "2024-04-14T14:47:33.405Z"
 image:
   src: /assets/images/funding-the-commons24.png
   alt: Funding the Commons SF Logo
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Funding the Commons
   description:

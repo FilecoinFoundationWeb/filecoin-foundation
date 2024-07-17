@@ -11,7 +11,7 @@ end-date: "2021-07-17T22:00:00.000Z"
 image:
   src:
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Filecoin Grant Global Online Hackathon
   description:

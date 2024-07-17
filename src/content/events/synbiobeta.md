@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/synbiobeta-2023.png
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: SynBioBeta
   description:

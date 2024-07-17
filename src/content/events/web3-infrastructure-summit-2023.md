@@ -10,7 +10,7 @@ start-date: "2023-06-15T17:43:52.060Z"
 end-date:
 image:
   src: /assets/images/web3-infra-2023.png
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Web3 Infrastructure Summit 2023
   description:

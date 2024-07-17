@@ -12,7 +12,7 @@ end-date: "2023-12-03T14:08:27.299Z"
 image:
   src: /assets/images/vision-weekend.jpeg
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Vision Weekend USA 2023
   description:

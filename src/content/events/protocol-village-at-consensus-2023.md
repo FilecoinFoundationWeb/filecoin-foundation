@@ -11,7 +11,7 @@ end-date: "2023-04-28T15:31:08.707Z"
 image:
   src: /assets/images/protocol-village-2023.png
   alt:
-involvement: supported-sponsored
+category: supported-sponsored
 seo:
   title: Protocol Village at Consensus 2023
   description:
