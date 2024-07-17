@@ -5,7 +5,7 @@ import {
   YoutubeLogo,
 } from '@phosphor-icons/react/dist/ssr'
 
-import BlueskyLogo from '@/assets/logos/bsky_logo.svg'
+import BlueskyLogo from '@/assets/logos/bluesky-logo.svg'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 const socialIcons = {
