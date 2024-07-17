@@ -1945,16 +1945,20 @@
           "widget": "select",
           "options": [
             {
+              "label": "Co-Hosted",
+              "value": "hosted"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
               "label": "Hosted",
               "value": "hosted"
             },
             {
-              "label": "Sponsored",
-              "value": "sponsored"
-            },
-            {
-              "label": "Supported",
-              "value": "supported"
+              "label": "Supported & Sponsored",
+              "value": "supported-sponsored"
             }
           ]
         },
