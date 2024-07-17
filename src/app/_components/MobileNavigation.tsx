@@ -16,10 +16,8 @@ import { linkBaseStyles } from '@/components/TextLink'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { navigationList } from '@/_utils/navigationItems'
+import { mobileViewNavigationList } from '@/_utils/navigationItems'
 import { PATHS } from '@/constants/paths'
-
-import { communityItems, getInvolvedItems, resourcesItems } from './Footer'
 
 type IconButtonProps = {
   icon: IconProps['component']
@@ -122,16 +120,19 @@ export function MobileNavigation() {
             >
               <Logo />
             </Link>
-
             <IconButton
               icon={X}
               label="Close mobile navigation"
               onClick={() => setOpen(false)}
             />
           </div>
-
           <ul className="space-y-6" aria-label="Navigation options">
-            {Object.entries(navigationList).map(([title, items]) => (
+            <LinkItem
+              label={PATHS.ABOUT.label}
+              path={PATHS.ABOUT.path}
+              setOpen={setOpen}
+            />
+            {Object.entries(mobileViewNavigationList).map(([title, items]) => (
               <NestedMenu
                 key={title}
                 title={title}
@@ -139,23 +140,7 @@ export function MobileNavigation() {
                 setOpen={setOpen}
               />
             ))}
-            {/* <LinkItem
-              label={PATHS.ABOUT.label}
-              path={PATHS.ABOUT.path}
-              setOpen={setOpen}
-            />
-            <NestedMenu
-              title="Get Involved"
-              items={getInvolvedItems}
-              setOpen={setOpen}
-            />
-            <NestedMenu
-              title="Community"
-              items={communityItems}
-              setOpen={setOpen}
-            /> */}
           </ul>
-
           <Social />
         </div>
       </SlideOver>

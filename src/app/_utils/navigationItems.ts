@@ -27,10 +27,16 @@ export const legalItems = [
   PATHS.PRIVACY_POLICY,
 ]
 
-export const navigationList = {
+export const footerNavigationList = {
   Company: companyItems,
   'Get Involved': getInvolvedItems,
   Community: communityItems,
   Resources: resourcesItems,
   Legal: legalItems,
+}
+
+export const mobileViewNavigationList = {
+  'Get Involved': getInvolvedItems,
+  Community: communityItems,
+  Resources: resourcesItems,
 }

@@ -10,7 +10,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { navigationList } from '@/_utils/navigationItems'
+import { footerNavigationList } from '@/_utils/navigationItems'
 import { PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -84,7 +84,7 @@ export function Footer() {
 
       <div className="flex flex-wrap gap-x-20 gap-y-6">
         <div className="flex flex-1 flex-wrap gap-x-12 gap-y-8">
-          {Object.entries(navigationList).map(([title, items]) => (
+          {Object.entries(footerNavigationList).map(([title, items]) => (
             <Section key={title} title={title}>
               <NavigationList
                 items={items.map((item) => ({
