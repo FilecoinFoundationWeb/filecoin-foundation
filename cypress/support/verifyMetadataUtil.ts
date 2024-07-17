@@ -19,11 +19,15 @@ export function verifyMetadata(
   // Retrieve and process the page's metadata
   cy.readFile(fullPath).then((markdownContent: string) => {
     const { seo } = matter(markdownContent).data as {
-      seo: { title: string; description: string; useAbsoluteTitle?: boolean }
+      seo: {
+        title: string
+        description: string
+        overrideDefaultTitle?: boolean
+      }
     }
 
     // Verify the page title and meta description
-    verifyPageTitle(pagePath, seo.title, seo.useAbsoluteTitle ?? false)
+    verifyPageTitle(pagePath, seo.title, seo.overrideDefaultTitle ?? false)
     verifyMetaDescription(seo.description)
   })
 }

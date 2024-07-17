@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/fil-jakarta.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Jakarta
   description:

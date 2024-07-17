@@ -1,3 +1,5 @@
+export type CMSCollectionName = 'blog' | 'ecosystem' | 'events'
+
 export type CMSFieldOption = {
   label: string
   value: string
@@ -13,7 +15,7 @@ export type CMSFieldConfig = {
 }
 
 export type CMSCollectionConfig = {
-  name: string
+  name: CMSCollectionName
   label: string
   fields?: CMSFieldConfig[]
 }

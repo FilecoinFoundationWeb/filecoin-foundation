@@ -13,7 +13,7 @@ end-date:
 image:
   src: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Austin
   description:

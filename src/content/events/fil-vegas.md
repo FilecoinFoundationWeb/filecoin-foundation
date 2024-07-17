@@ -11,7 +11,7 @@ end-date: "2023-10-05T17:09:07.051Z"
 image:
   src: /assets/images/fil-vegas-event-header.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Vegas
   description:

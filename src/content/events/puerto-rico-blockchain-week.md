@@ -11,7 +11,7 @@ end-date: "2022-12-10T18:15:00.000Z"
 image:
   src: /assets/images/pr-blockchain-2022.png
   alt:
-involvement: supported
+category: supported-sponsored
 seo:
   title: Puerto Rico Blockchain Week
   description:

@@ -6,7 +6,7 @@ describe('Governance Page', () => {
   it('should check metadata', () => {
     testPageMetadata({
       path: PATHS.GOVERNANCE,
-      hasPageHeaderDescription: true,
+      overrideDefaultTitle: true,
     })
   })
 

@@ -1888,6 +1888,29 @@
           "required": false
         },
         {
+          "name": "category",
+          "label": "Category",
+          "widget": "select",
+          "options": [
+            {
+              "label": "Co-Hosted",
+              "value": "co-hosted"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Hosted",
+              "value": "hosted"
+            },
+            {
+              "label": "Supported & Sponsored",
+              "value": "supported-sponsored"
+            }
+          ]
+        },
+        {
           "name": "description",
           "label": "Description",
           "widget": "string",
@@ -1936,25 +1959,6 @@
               "widget": "string",
               "required": false,
               "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
-            }
-          ]
-        },
-        {
-          "name": "involvement",
-          "label": "FF Involvement",
-          "widget": "select",
-          "options": [
-            {
-              "label": "Hosted",
-              "value": "hosted"
-            },
-            {
-              "label": "Sponsored",
-              "value": "sponsored"
-            },
-            {
-              "label": "Supported",
-              "value": "supported"
             }
           ]
         },

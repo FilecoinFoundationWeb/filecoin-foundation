@@ -11,7 +11,7 @@ end-date: "2023-09-07T07:06:47.832Z"
 image:
   src: /assets/images/fil-seoul-bg.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Seoul Network Base 1
   description:

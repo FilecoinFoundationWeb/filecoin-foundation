@@ -11,7 +11,7 @@ updated-on: 2023-05-03T08:06:33.937Z
 image:
   src: /assets/images/filorg_imagefallback.png
   alt: Filecoin Foundation Holder Image
-involvement: supported
+category: supported-sponsored
 seo:
   title: Asia Hackathon Season 2021
   description: Join the Asia Hackathon Season 2021 to showcase your skills and

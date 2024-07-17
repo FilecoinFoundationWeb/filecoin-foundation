@@ -11,7 +11,7 @@ end-date: "2024-04-19T14:45:39.332Z"
 image:
   src: /assets/images/token2049_dubai24.png
   alt: Token2049 Dubai Logo
-involvement: sponsored
+category: supported-sponsored
 seo:
   title: Token2049 Dubai Filecoin Orbit Event
   description:

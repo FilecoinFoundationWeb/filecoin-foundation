@@ -11,7 +11,7 @@ end-date: "2023-03-01T16:39:25.716Z"
 image:
   src: /assets/images/fvm-hackerbase-2023.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Filecoin Virtual Machine Hacker Base 1
   description:

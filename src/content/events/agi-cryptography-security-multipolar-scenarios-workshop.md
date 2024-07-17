@@ -11,7 +11,7 @@ updated-on: 2024-02-21T16:48:19.493Z
 image:
   src: /assets/images/foresight.svg
   alt: ForeSight Institute Logo
-involvement: sponsored
+category: supported-sponsored
 seo:
   title: AGI Cryptography Security Multipolar Scenarios Workshop
   description: Join the AGI Cryptography Security Workshop to explore multipolar

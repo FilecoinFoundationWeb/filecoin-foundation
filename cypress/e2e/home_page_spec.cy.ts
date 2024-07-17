@@ -6,7 +6,7 @@ describe('Homepage', () => {
   it('should check metadata', () => {
     testPageMetadata({
       path: PATHS.HOME,
-      hasPageHeaderDescription: true,
+      overrideDefaultTitle: true,
     })
   })
 

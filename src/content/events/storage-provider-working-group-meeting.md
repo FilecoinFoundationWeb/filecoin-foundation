@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/64521604a359ff699f3705ec_storage-provider-working-group.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: Storage Provider Working Group Meeting
   description:

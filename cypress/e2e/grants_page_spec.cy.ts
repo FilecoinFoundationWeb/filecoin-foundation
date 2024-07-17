@@ -6,7 +6,7 @@ describe('Grants Page', () => {
   it('should check metadata', () => {
     testPageMetadata({
       path: PATHS.GRANTS,
-      hasPageHeaderDescription: true,
+      overrideDefaultTitle: true,
     })
   })
 
