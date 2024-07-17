@@ -40,6 +40,11 @@ export const desktopNavigationItems = {
         'Learn about Filecoin Improvement Proposals and other governance mechanisms',
     },
     {
+      label: PATHS.FIL_PLUS.label,
+      href: PATHS.FIL_PLUS.path,
+      description: 'Learn about Filecoin+ and the allocation of DataCap',
+    },
+    {
       label: PATHS.ORBIT.label,
       href: PATHS.ORBIT.path,
       description:
