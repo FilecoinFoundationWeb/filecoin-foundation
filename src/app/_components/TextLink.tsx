@@ -4,7 +4,7 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import clsx from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
-import { Icon as IconComponent } from '@/components/Icon'
+import { Icon } from '@/components/Icon'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
@@ -36,7 +36,7 @@ export function TextLink({
     >
       {children}
       {isExternal && (
-        <IconComponent size={16} component={ArrowUpRight} color="brand-400" />
+        <Icon size={16} component={ArrowUpRight} color="brand-400" />
       )}
     </CustomLink>
   )

@@ -8,7 +8,7 @@ import { ArrowUpRight, List, X } from '@phosphor-icons/react'
 import clsx from 'clsx'
 import { Route } from 'next'
 
-import { Icon as IconComponent, Icon, IconProps } from '@/components/Icon'
+import { Icon, IconProps } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
@@ -66,7 +66,7 @@ function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
         {label}
       </Link>
       {isExternal && (
-        <IconComponent size={16} component={ArrowUpRight} color="brand-400" />
+        <Icon size={16} component={ArrowUpRight} color="brand-400" />
       )}
     </li>
   )
