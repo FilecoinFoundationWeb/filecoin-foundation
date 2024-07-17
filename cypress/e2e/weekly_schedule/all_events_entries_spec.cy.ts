@@ -1,6 +1,5 @@
-import { getCategorySettings } from '@/_utils/categoryUtils'
-
 import { PATHS } from '../../../src/app/_constants/paths'
+import { getCategorySettings } from '../../../src/app/_utils/categoryUtils'
 import { createCategoryTests } from '../../support/categoryUtils'
 
 const { validCategoryOptions } = getCategorySettings('events')
