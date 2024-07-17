@@ -15,6 +15,8 @@ type GetCategoryLabelParams = {
   category: string
 }
 
+const CATEGORY_FIELD_NAME = 'category'
+
 function transformCategoryDataToSettings(
   options: CMSFieldOption[],
 ): CategorySetting[] {
@@ -26,7 +28,7 @@ function transformCategoryDataToSettings(
 
 function getCategoryData(collectionName: CMSCollectionName) {
   const { fields } = getCollectionConfig(collectionName)
-  return getCMSFieldOptions(fields, 'category')
+  return getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
 }
 
 export function getCategoryDataFromDirectory(directoryPath: string) {
@@ -74,7 +76,7 @@ export function getCategoryLabel({
   category,
 }: GetCategoryLabelParams) {
   const { fields } = getCollectionConfig(collectionName)
-  const categoryOptions = getCMSFieldOptions(fields, 'category')
+  const categoryOptions = getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
   const option = categoryOptions.find((option) => option.value === category)
 
   return option ? option.label : category
