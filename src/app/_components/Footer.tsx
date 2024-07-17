@@ -41,7 +41,10 @@ export function Footer() {
 
       <hr />
 
-      <div className="grid grid-cols-2 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+      <nav
+        aria-label="Footer navigation"
+        className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5"
+      >
         {Object.entries(footerNavigationList).map(([title, items]) => (
           <div key={title}>
             <span className="mb-4 block font-bold">{title}</span>
@@ -54,7 +57,7 @@ export function Footer() {
             </ul>
           </div>
         ))}
-      </div>
+      </nav>
 
       <hr />
       <p className="text-center text-sm">
@@ -63,7 +66,6 @@ export function Footer() {
         <TextLink href="https://creativecommons.org/licenses/by/4.0/">
           Creative Commons Attribution 4.0 International license
         </TextLink>
-        .
       </p>
     </footer>
   )
