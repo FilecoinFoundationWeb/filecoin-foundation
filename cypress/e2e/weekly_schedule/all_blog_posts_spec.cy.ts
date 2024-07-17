@@ -1,17 +1,12 @@
+import { getCategorySettings } from '@/_utils/categoryUtils'
+
 import { PATHS } from '../../../src/app/_constants/paths'
 import { createCategoryTests } from '../../support/categoryUtils'
 
-const blogCategories = [
-  'events',
-  'use-case',
-  'interview',
-  'reports',
-  'news',
-  'ecosystem',
-]
+const { validCategoryOptions } = getCategorySettings('blog')
 
 createCategoryTests({
   pathConfig: PATHS.BLOG,
-  categories: blogCategories,
+  categories: validCategoryOptions,
   categoryType: 'category',
 })

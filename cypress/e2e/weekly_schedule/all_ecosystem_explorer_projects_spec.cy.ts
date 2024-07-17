@@ -1,20 +1,22 @@
-import { PATHS } from '../../../src/app/_constants/paths'
+import {
+  getCategoryDataFromDirectory,
+  getCategorySettingsFromMap,
+} from '@/utils/categoryUtils'
+
+import {
+  PATHS,
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+} from '../../../src/app/_constants/paths'
 import { createCategoryTests } from '../../support/categoryUtils'
 
-const ecosystemExplorerCategories = [
-  'artificial-intelligence',
-  'education-academia-health',
-  'finance',
-  'media-entertainment',
-  'network',
-  'public-goods-dweb',
-  'science-climate-space',
-  'storage',
-  'tooling-productivity',
-]
+const categoryData = getCategoryDataFromDirectory(
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+)
+
+const { validCategoryOptions } = getCategorySettingsFromMap(categoryData)
 
 createCategoryTests({
   pathConfig: PATHS.ECOSYSTEM_EXPLORER,
-  categories: ecosystemExplorerCategories,
+  categories: validCategoryOptions,
   categoryType: 'category',
 })
