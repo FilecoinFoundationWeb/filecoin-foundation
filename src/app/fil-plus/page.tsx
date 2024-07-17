@@ -1,4 +1,7 @@
+import { Button } from '@/components/Button'
+import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
+import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -12,6 +15,7 @@ import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
+import { aboutData } from './data/aboutData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -35,7 +39,19 @@ export default function FilPlus() {
         }}
       />
 
-      <PageSection kicker="New kicker" title="New title"></PageSection>
+      <PageSection kicker="About" title="How Fil+ Works">
+        <CardGrid cols="lgThree">
+          {aboutData.map((data) => (
+            <FocusAreaCard key={data.title} {...data} />
+          ))}
+        </CardGrid>
+
+        <div className="mt-2 flex flex-col sm:flex-row sm:justify-center">
+          <Button href="#" variant="primary">
+            Learn More About Fil+ Participants
+          </Button>
+        </div>
+      </PageSection>
 
       <CTASection title="" description="" />
     </PageLayout>
