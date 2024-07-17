@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Generate cmsConfigSchema for linter
+        run: npm run prebuild
+
       - name: Run linter
         run: npm run lint
