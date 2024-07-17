@@ -14,27 +14,13 @@ import { footerNavigationList } from '@/utils/navigationItems'
 import { PathValues } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-type SectionProps = {
-  title: string
-  children: React.ReactNode
-}
-
 type NavigationListItemProps = {
   label: string
-  path: PathValues | 'mailto:hello@fil.org'
+  path: PathValues | typeof FILECOIN_FOUNDATION_URLS.email.href
 }
 
 type NavigationListProps = {
   items: NavigationListItemProps[]
-}
-
-function Section({ title, children }: SectionProps) {
-  return (
-    <div className="flex flex-1 flex-col gap-4">
-      <span className="block w-max font-bold">{title}</span>
-      {children}
-    </div>
-  )
 }
 
 function NavigationList({ items }: NavigationListProps) {
@@ -75,24 +61,23 @@ export function Footer() {
       </div>
 
       <hr />
-
       <div className="sm:px-8">
         <Social />
       </div>
 
       <hr />
-
       <div className="flex flex-wrap gap-x-20 gap-y-6">
         <div className="flex flex-1 flex-wrap gap-x-12 gap-y-8">
           {Object.entries(footerNavigationList).map(([title, items]) => (
-            <Section key={title} title={title}>
+            <div key={title} className="flex flex-1 flex-col gap-4">
+              <span className="block w-max font-bold">{title}</span>
               <NavigationList
                 items={items.map((item) => ({
                   label: item.label,
                   path: item.path,
                 }))}
               />
-            </Section>
+            </div>
           ))}
         </div>
       </div>
