@@ -81,7 +81,14 @@ export default function FilPlus() {
         </BadgeCardGrid>
       </PageSection>
 
-      <CTASection title="" description="" />
+      <CTASection
+        title="Explore DataCap Projects"
+        description="Discover the projects that apply for and receive DataCap, review the details of their applications, and find out who the allocators are."
+        cta={{
+          text: 'DataCap Metrics for Allocators',
+          href: FIL_PLUS_URLS.dataCapMetrics,
+        }}
+      />
     </PageLayout>
   )
 }

@@ -10,6 +10,7 @@ const FIL_PLUS_URLS = {
   site: 'https://plus.fil.org/',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
   allocatorsBlog: 'http://blog.allocator.tech/',
+  dataCapMetrics: 'https://datacapstats.io/',
 }
 
 const FILECOIN_DOCS_URLS = {
