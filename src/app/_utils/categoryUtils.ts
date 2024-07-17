@@ -10,6 +10,11 @@ import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
 import { pastEventsSetting } from '@/constants/categoryConstants'
 
+type GetCategoryLabelParams = {
+  collectionName: CMSCollectionName
+  category: string
+}
+
 function transformCategoryDataToSettings(
   options: CMSFieldOption[],
 ): CategorySetting[] {
@@ -21,9 +26,7 @@ function transformCategoryDataToSettings(
 
 function getCategoryData(collectionName: CMSCollectionName) {
   const { fields } = getCollectionConfig(collectionName)
-  const categoriesData = getCMSFieldOptions(fields, 'category')
-
-  return categoriesData
+  return getCMSFieldOptions(fields, 'category')
 }
 
 export function getCategoryDataFromDirectory(directoryPath: string) {
@@ -64,4 +67,15 @@ export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
   const categoryIds = categorySettings.map((setting) => setting.id)
 
   return { categorySettings, validCategoryOptions: categoryIds }
+}
+
+export function getCategoryLabel({
+  collectionName,
+  category,
+}: GetCategoryLabelParams) {
+  const { fields } = getCollectionConfig(collectionName)
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
+  const option = categoryOptions.find((option) => option.value === category)
+
+  return option ? option.label : category
 }

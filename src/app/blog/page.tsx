@@ -23,10 +23,9 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings } from '@/utils/categoryUtils'
+import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
-import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/blog.md'

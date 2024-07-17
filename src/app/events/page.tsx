@@ -24,9 +24,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getEventsCategorySettings } from '@/utils/categoryUtils'
+import {
+  getEventsCategorySettings,
+  getCategoryLabel,
+} from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
