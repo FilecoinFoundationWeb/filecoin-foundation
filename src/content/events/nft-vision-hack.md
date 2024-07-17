@@ -11,7 +11,7 @@ end-date: "2021-08-30T22:00:00.000Z"
 image:
   src:
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: NFT Vision Hack
   description: Join the NFT Vision Hack to innovate and create the future of NFTs.

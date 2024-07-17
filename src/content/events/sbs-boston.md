@@ -11,7 +11,7 @@ end-date: "2023-04-13T15:36:00.000Z"
 image:
   src: /assets/images/sbs-boston-2023.png
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: SBS Boston
   description:

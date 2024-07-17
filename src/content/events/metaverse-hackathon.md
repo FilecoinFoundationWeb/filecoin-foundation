@@ -13,7 +13,7 @@ end-date:
 image:
   src: /assets/images/645215fba2b7469c5c5546ea_image_ldbpld.png
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: Metaverse Hackathon
   description:

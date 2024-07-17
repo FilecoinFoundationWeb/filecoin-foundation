@@ -14,7 +14,7 @@ end-date: "2021-12-30T23:00:00.000Z"
 image:
   src: /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: Filecoin Club
   description:

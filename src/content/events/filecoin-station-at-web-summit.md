@@ -11,7 +11,7 @@ end-date: "2022-11-04T15:30:57.184Z"
 image:
   src: /assets/images/websummit-2023.png
   alt:
-involvement: sponsored
+involvement: supported-sponsored
 seo:
   title: Filecoin Station at Web Summit
   description:

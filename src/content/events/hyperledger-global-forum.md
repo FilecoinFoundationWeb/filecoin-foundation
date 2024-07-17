@@ -11,7 +11,7 @@ end-date: "2021-06-09T22:00:00.000Z"
 image:
   src: /assets/images/645215feaee26f3101cebc4b_hyperledger-global-forum.jpeg
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: Hyperledger Global Forum
   description:

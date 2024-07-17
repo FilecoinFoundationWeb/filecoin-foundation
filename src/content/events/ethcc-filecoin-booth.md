@@ -11,7 +11,7 @@ end-date: "2024-07-11T14:51:57.409Z"
 image:
   src: /assets/images/ethcc-24.png
   alt: EthCC Logo
-involvement: sponsored
+involvement: supported-sponsored
 seo:
   title: ETHCC Filecoin Booth
   description:

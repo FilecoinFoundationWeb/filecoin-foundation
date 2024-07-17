@@ -11,7 +11,7 @@ end-date: "2024-10-19T15:16:41.380Z"
 image:
   src: /assets/images/ethsf24.png
   alt: ETH San Francisco Logo
-involvement: sponsored
+involvement: supported-sponsored
 seo:
   title: ETH San Francisco Filecoin Orbit Event
   description:

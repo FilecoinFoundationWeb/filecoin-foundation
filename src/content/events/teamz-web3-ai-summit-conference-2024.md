@@ -11,7 +11,7 @@ end-date: 2024-04-14T16:47:39.955000Z
 image:
   src: /assets/images/teamz-conference.webp
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: TEAMZ Web3 AI Summit Conference 2024
   description:

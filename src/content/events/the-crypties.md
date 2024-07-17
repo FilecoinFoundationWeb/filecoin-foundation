@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/crypties-2022.png
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: The Crypties
   description:

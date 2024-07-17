@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/64521600a359ff88f536ffc5_ethereal-2021.png
   alt:
-involvement: supported
+involvement: supported-sponsored
 seo:
   title: Ethereal 2021
   description:
