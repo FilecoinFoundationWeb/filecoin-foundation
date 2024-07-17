@@ -9,7 +9,7 @@ const FIL_PLUS_URLS = {
   notary: 'https://github.com/filecoin-project/Allocator-Governance',
   site: 'https://plus.fil.org/',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
-  allocatorsBlog: 'http://blog.allocator.tech/',
+  allocatorsBlog: 'https://blog.allocator.tech/',
   dataCapMetrics: 'https://datacapstats.io/',
 }
 
