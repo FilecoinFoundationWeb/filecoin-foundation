@@ -7,5 +7,4 @@ const { validCategoryOptions } = getCategorySettings('blog')
 createCategoryTests({
   pathConfig: PATHS.BLOG,
   categories: validCategoryOptions,
-  categoryType: 'category',
 })
