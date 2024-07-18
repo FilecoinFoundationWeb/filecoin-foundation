@@ -52,7 +52,7 @@ export default function FilPlus() {
         </CardGrid>
 
         <div className="mt-2 flex flex-col sm:flex-row sm:justify-center">
-          <Button href="#" variant="primary">
+          <Button href={FIL_PLUS_URLS.filPlusParticipants} variant="primary">
             Learn More About Fil+ Participants
           </Button>
         </div>
@@ -67,6 +67,7 @@ export default function FilPlus() {
             <TextLink href={FIL_PLUS_URLS.allocatorsBlog}>
               blog.allocator.tech
             </TextLink>
+            .
           </p>
         </div>
 
