@@ -5,6 +5,7 @@ import { TagLabel } from '@/components/TagLabel'
 import { type BlogPostData } from '@/types/blogPostTypes'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/formatDate'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -23,7 +24,9 @@ export function BlogPostHeader({
   return (
     <header className="space-y-6">
       <div className="space-y-4">
-        {category && <TagLabel>{category}</TagLabel>}
+        <TagLabel>
+          {getCategoryLabel({ collectionName: 'blog', category })}
+        </TagLabel>
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>

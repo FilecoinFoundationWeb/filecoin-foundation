@@ -11,7 +11,7 @@ end-date: "2022-11-30T16:50:00.000Z"
 image:
   src: /assets/images/fil-bangalore-2022.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Bangalore
   description:

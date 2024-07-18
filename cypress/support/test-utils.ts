@@ -8,12 +8,12 @@ export function testPageMetadata({
   path: { mainContentPath, path, entriesContentPath },
   hasPageHeaderDescription = true,
   includesFeaturedEntry = false,
-  useAbsoluteTitle = false,
+  overrideDefaultTitle = false,
 }: {
   path: PathConfig
   hasPageHeaderDescription?: boolean
   includesFeaturedEntry?: boolean
-  useAbsoluteTitle?: boolean
+  overrideDefaultTitle?: boolean
 }) {
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${mainContentPath}.md`
@@ -32,7 +32,7 @@ export function testPageMetadata({
       cy.visit(path)
       cy.percySnapshot()
 
-      verifyPageTitle(path, seo.title, useAbsoluteTitle)
+      verifyPageTitle(path, seo.title, overrideDefaultTitle)
 
       if (includesFeaturedEntry && featuredSlug) {
         handleFeaturedEntry(entriesContentPath as string, featuredSlug)

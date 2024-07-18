@@ -5,13 +5,13 @@ updated-on: "2023-07-13T14:06:23.049Z"
 published-on: "2023-07-13T14:06:23.057Z"
 description:
 location: Jakarta, Indonesia
-external-link: https://www.fil-jakarta.io/
+external-link:
 start-date: "2023-09-02T11:00:23.071Z"
 end-date:
 image:
   src: /assets/images/fil-jakarta.png
   alt:
-involvement: hosted
+category: hosted
 seo:
   title: FIL Jakarta
   description:

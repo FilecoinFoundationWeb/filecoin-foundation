@@ -11,7 +11,7 @@ end-date: "2022-12-17T18:19:00.000Z"
 image:
   src: /assets/images/tapei-blockchain-2022.png
   alt:
-involvement: supported
+category: supported-sponsored
 seo:
   title: Taipei Blockchain Week
   description:

@@ -11,7 +11,7 @@ end-date:
 image:
   src: /assets/images/filcapetown.png
   alt: FIL Cape Town Logo
-involvement: hosted
+category: hosted
 seo:
   title: FIL Capetown
   description:

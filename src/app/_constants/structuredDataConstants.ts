@@ -9,7 +9,7 @@ import {
 } from '@/constants/siteMetadata'
 
 const { header } = attributes
-const { social, email, grants } = FILECOIN_FOUNDATION_URLS
+const { social, email } = FILECOIN_FOUNDATION_URLS
 
 export const SCHEMA_CONTEXT_URL = 'https://schema.org'
 
@@ -37,11 +37,6 @@ export const BASE_ORGANIZATION_SCHEMA: WithContext<Organization> = {
       '@type': 'ContactPoint',
       contactType: email.label,
       email: email.href,
-    },
-    {
-      '@type': 'ContactPoint',
-      contactType: grants.email.label,
-      email: grants.email.href,
     },
   ],
 } as const
