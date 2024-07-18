@@ -7,8 +7,8 @@ category: supported-sponsored
 description: null
 location: Navarro, CA
 external-link: https://dwebcamp.org/
-start-date: 2022-06-21T15:30:00.000Z
-end-date: 2022-06-25T15:30:00.000Z
+start-date: 2022-08-24T11:30:00.000Z
+end-date: 2022-08-22T11:30:00.000Z
 image:
   src: /assets/images/dweb-camp.png
   alt: null
