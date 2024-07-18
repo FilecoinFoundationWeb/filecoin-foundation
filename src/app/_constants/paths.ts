@@ -11,7 +11,7 @@ export type PathValues =
   | '/ecosystem-explorer'
   | '/employee-privacy-policy'
   | '/events'
-  | '/fil-plus'
+  | '/filecoin-plus'
   | '/governance'
   | '/grants'
   | '/orbit'
@@ -88,7 +88,7 @@ export const PATHS = {
   EVENTS: createPathObject('/events', 'Events', {
     includesEntries: true,
   }),
-  FIL_PLUS: createPathObject('/fil-plus', 'Filecoin+'),
+  FIL_PLUS: createPathObject('/filecoin-plus', 'Filecoin+'),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
   ORBIT: createPathObject('/orbit', 'Orbit'),

@@ -13,7 +13,7 @@ import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { attributes } from '@/content/pages/fil-plus.md'
+import { attributes } from '@/content/pages/filecoin-plus.md'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
