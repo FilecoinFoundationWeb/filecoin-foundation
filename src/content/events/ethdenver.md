@@ -5,7 +5,7 @@ updated-on: "2023-05-03T08:06:17.813Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
 location: Denver, CO
-external-link: https://m.fil.org/filecoin-at-ethdenver
+external-link:
 start-date: "2022-02-11T06:57:49.000Z"
 end-date:
 image:
