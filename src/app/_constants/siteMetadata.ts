@@ -36,7 +36,7 @@ const FILECOIN_FOUNDATION_URLS = {
     sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
   email: {
-    label: 'Media and collaboration inquiries',
+    label: 'Contact Us',
     href: 'mailto:hello@fil.org',
   },
   governance: {

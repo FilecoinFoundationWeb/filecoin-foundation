@@ -28,7 +28,13 @@ export function CustomLink({
   const rel = href.startsWith('mailto:') ? undefined : 'noopener noreferrer'
 
   return (
-    <a href={href} rel={rel} className={className} {...rest}>
+    <a
+      href={href}
+      rel={rel}
+      aria-label="Opens external link"
+      className={className}
+      {...rest}
+    >
       {children}
     </a>
   )

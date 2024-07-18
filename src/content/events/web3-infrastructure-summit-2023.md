@@ -5,7 +5,7 @@ updated-on: "2023-06-27T17:43:52.040Z"
 published-on: "2023-06-27T17:43:52.040Z"
 description:
 location: London, England
-external-link: https://rockscarmedia.com/events/web3-infrastructure-summit-2023/#:~:text=Hosted%20by%20RockScar%20the%20Web3,NFTs%2C%20and%20other%20Web3%20applications.
+external-link:
 start-date: "2023-06-15T17:43:52.060Z"
 end-date:
 image:

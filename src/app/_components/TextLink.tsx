@@ -1,15 +1,20 @@
+'use client'
+
+import { ArrowUpRight } from '@phosphor-icons/react'
 import clsx from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
+import { Icon } from '@/components/Icon'
+
+import { isExternalLink } from '@/utils/linkUtils'
 
 type TextLinkProps = {
   href: string
-  className?: string
   children: React.ReactNode
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>
+} & React.ComponentProps<'a'>
 
 export const linkBaseStyles =
-  'focus:brand-outline text-brand-300 hover:underline'
+  'text-brand-300 focus:brand-outline hover:underline'
 
 export function TextLink({
   href,
@@ -17,13 +22,22 @@ export function TextLink({
   children,
   ...rest
 }: TextLinkProps) {
+  const isExternal = isExternalLink(href)
+
   return (
     <CustomLink
       href={href}
-      className={clsx(linkBaseStyles, className)}
+      className={clsx(
+        linkBaseStyles,
+        isExternal && 'inline-flex items-center gap-1',
+        className,
+      )}
       {...rest}
     >
       {children}
+      {isExternal && (
+        <Icon size={16} component={ArrowUpRight} color="brand-400" />
+      )}
     </CustomLink>
   )
 }
