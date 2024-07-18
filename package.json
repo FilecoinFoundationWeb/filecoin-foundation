@@ -11,7 +11,8 @@
     "lint": "next lint --fix",
     "validate-md": "node scripts/validateMarkdown.js",
     "test": "percy exec -- cypress run",
-    "generate:page": "node scripts/generatePageTemplates.js"
+    "generate:page": "node scripts/generatePageTemplates.js",
+    "generate:markdown": "node scripts/generateMarkdownToData.js"
   },
   "dependencies": {
     "@babel/core": "^7.23.5",

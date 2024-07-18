@@ -11,14 +11,14 @@ const {
 } = require('./generatePageTemplatesHelpers')
 
 const TEMPLATE_PATHS = {
-  page: path.resolve(__dirname, '../templates/page.tsx'),
+  page: path.resolve(__dirname, '../templates/generatePage/page.tsx'),
   generateStructuredData: path.resolve(
     __dirname,
-    '../templates/utils/generateStructuredData.ts',
+    '../templates/generatePage/utils/generateStructuredData.ts',
   ),
-  layout: path.resolve(__dirname, '../templates/layout.tsx'),
-  pageMd: path.resolve(__dirname, '../templates/page.md'),
-  test: path.resolve(__dirname, '../templates/test_spec.cy.ts'),
+  layout: path.resolve(__dirname, '../templates/generatePage/layout.tsx'),
+  pageMd: path.resolve(__dirname, '../templates/generatePage/page.md'),
+  test: path.resolve(__dirname, '../templates/generatePage/test_spec.cy.ts'),
 }
 
 const PATHS_FILE_PATH = path.resolve(
