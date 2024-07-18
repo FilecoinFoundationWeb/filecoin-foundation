@@ -33,7 +33,7 @@ export function SearchInput({
         </div>
         {searchQuery && (
           <button
-            className="absolute inset-y-0 right-0 flex items-center px-3 text-brand-300 peer-hover:text-brand-400 peer-focus:text-brand-100"
+            className="absolute inset-y-0.5 right-0.5 flex items-center rounded-md px-3 text-brand-300 focus:brand-outline peer-hover:text-brand-400 peer-focus:text-brand-100"
             aria-label="Clear search input"
             onClick={() => onSearchChange('')}
           >
