@@ -40,8 +40,7 @@ export function Search({ query, id }: SearchProps) {
     DEBOUNCE_DELAY,
   )
 
-  function handleSearchChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const newValue = event.target.value
+  function handleSearchChange(newValue: string) {
     setValue(newValue)
 
     const existingPageParam = params.get(PAGE_KEY)
