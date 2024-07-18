@@ -4,7 +4,7 @@ import { useState, Dispatch, SetStateAction } from 'react'
 
 import Link from 'next/link'
 
-import { List, X } from '@phosphor-icons/react'
+import { ArrowUpRight, List, X } from '@phosphor-icons/react'
 import clsx from 'clsx'
 import { Route } from 'next'
 
@@ -14,15 +14,10 @@ import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
 import { linkBaseStyles } from '@/components/TextLink'
 
-import { PATHS } from '@/constants/paths'
+import { isExternalLink } from '@/utils/linkUtils'
 
-const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
-const communityItems = [
-  PATHS.ECOSYSTEM_EXPLORER,
-  PATHS.GOVERNANCE,
-  PATHS.ORBIT,
-  PATHS.SECURITY,
-]
+import { mobileNavigationItems } from '@/constants/navigationItems'
+import { PATHS } from '@/constants/paths'
 
 type IconButtonProps = {
   icon: IconProps['component']
@@ -30,14 +25,14 @@ type IconButtonProps = {
   onClick: React.ComponentPropsWithoutRef<'button'>['onClick']
 }
 
-function IconButton({ icon: IconComponent, label, onClick }: IconButtonProps) {
+function IconButton({ icon, label, onClick }: IconButtonProps) {
   return (
     <button
       aria-label={label}
       className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:brand-outline"
       onClick={onClick}
     >
-      <Icon component={IconComponent} />
+      <Icon size={20} component={icon} />
     </button>
   )
 }
@@ -50,8 +45,16 @@ type LinkItemProps = {
 }
 
 function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
+  const isExternal = isExternalLink(path)
+
   return (
-    <li className={clsx(nested && 'ml-6')}>
+    <li
+      className={clsx(
+        'text-brand-300',
+        nested && 'ml-6',
+        isExternal && 'inline-flex items-center gap-1',
+      )}
+    >
       <Link
         href={path}
         className={clsx(
@@ -62,6 +65,9 @@ function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
       >
         {label}
       </Link>
+      {isExternal && (
+        <Icon size={16} component={ArrowUpRight} color="brand-400" />
+      )}
     </li>
   )
 }
@@ -118,39 +124,27 @@ export function MobileNavigation() {
             >
               <Logo />
             </Link>
-
             <IconButton
               icon={X}
               label="Close mobile navigation"
               onClick={() => setOpen(false)}
             />
           </div>
-
           <ul className="space-y-6" aria-label="Navigation options">
             <LinkItem
               label={PATHS.ABOUT.label}
               path={PATHS.ABOUT.path}
               setOpen={setOpen}
             />
-
-            <NestedMenu
-              title="Get Involved"
-              items={getInvolvedItems}
-              setOpen={setOpen}
-            />
-            <NestedMenu
-              title="Community"
-              items={communityItems}
-              setOpen={setOpen}
-            />
-
-            <LinkItem
-              label={PATHS.BLOG.label}
-              path={PATHS.BLOG.path}
-              setOpen={setOpen}
-            />
+            {Object.entries(mobileNavigationItems).map(([title, items]) => (
+              <NestedMenu
+                key={title}
+                title={title}
+                items={items}
+                setOpen={setOpen}
+              />
+            ))}
           </ul>
-
           <Social />
         </div>
       </SlideOver>
