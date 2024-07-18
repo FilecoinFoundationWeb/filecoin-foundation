@@ -42,7 +42,7 @@ export const desktopNavigationItems = {
     {
       label: PATHS.FIL_PLUS.label,
       href: PATHS.FIL_PLUS.path,
-      description: 'Learn about Filecoin+ and the allocation of DataCap',
+      description: 'Learn about Filecoin Plus and the allocation of DataCap',
     },
     {
       label: PATHS.ORBIT.label,

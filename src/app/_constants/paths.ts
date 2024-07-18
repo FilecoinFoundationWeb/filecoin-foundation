@@ -88,7 +88,7 @@ export const PATHS = {
   EVENTS: createPathObject('/events', 'Events', {
     includesEntries: true,
   }),
-  FIL_PLUS: createPathObject('/filecoin-plus', 'Filecoin+'),
+  FIL_PLUS: createPathObject('/filecoin-plus', 'Filecoin Plus'),
   GOVERNANCE: createPathObject('/governance', 'Governance'),
   GRANTS: createPathObject('/grants', 'Grants'),
   ORBIT: createPathObject('/orbit', 'Orbit'),
