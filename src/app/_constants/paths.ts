@@ -1,23 +1,29 @@
 type BlogPostPath = `/blog/${string}`
+type DigestPath = `/digest/${string}`
 type EcosystemPath = `/ecosystem/${string}`
 type EventPath = `/events/${string}`
 
-export type DynamicPathValues = BlogPostPath | EcosystemPath | EventPath
+export type DynamicPathValues =
+  | BlogPostPath
+  | DigestPath
+  | EcosystemPath
+  | EventPath
 
 export type PathValues =
+  | '/'
   | '/about'
   | '/blog'
+  | '/digest'
   | '/ecosystem-explorer'
   | '/employee-privacy-policy'
   | '/events'
   | '/governance'
-  | '/orbit'
   | '/grants'
-  | '/'
+  | '/orbit'
   | '/privacy-policy'
-  | '/terms-of-use'
   | '/security'
   | '/security/coordinated-disclosure-policy'
+  | '/terms-of-use'
 
 export interface PathConfig {
   path: PathValues
@@ -69,6 +75,13 @@ export const PATHS = {
   BLOG: createPathObject('/blog', 'Blog', {
     includesEntries: true,
   }),
+  COORDINATED_DISCLOSURE_POLICY: createPathObject(
+    '/security/coordinated-disclosure-policy',
+    'Coordinated Disclosure Policy',
+  ),
+  DIGEST: createPathObject('/digest', 'Digest', {
+    includesEntries: true,
+  }),
   ECOSYSTEM_EXPLORER: createPathObject(
     '/ecosystem-explorer',
     'Ecosystem Explorer',
@@ -95,10 +108,6 @@ export const PATHS = {
   SECURITY: createPathObject('/security', 'Security', {
     hasSubpaths: true,
   }),
-  COORDINATED_DISCLOSURE_POLICY: createPathObject(
-    '/security/coordinated-disclosure-policy',
-    'Coordinated Disclosure Policy',
-  ),
 } as const
 
 export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/categories`

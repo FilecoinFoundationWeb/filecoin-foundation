@@ -344,6 +344,107 @@
           ]
         },
         {
+          "name": "digest",
+          "label": "Digest",
+          "file": "src/content/pages/digest.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "ecosystem",
           "label": "Ecosystem",
           "file": "src/content/pages/ecosystem-explorer.md",
@@ -1940,6 +2041,153 @@
           "widget": "datetime",
           "required": false,
           "hint": "Last day of event"
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "string",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "required": false,
+                  "media_library": {
+                    "config": {
+                      "multiple": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "digest",
+      "label": "Digests",
+      "folder": "src/content/digest/",
+      "label_singular": "Digest",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "string"
+        },
+        {
+          "name": "issue-number",
+          "label": "Issue Number",
+          "widget": "number"
+        },
+        {
+          "name": "article-number",
+          "label": "Article Number",
+          "widget": "number"
+        },
+        {
+          "name": "publication-date",
+          "label": "Publication Date",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "widget": "markdown",
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ],
+          "required": false
         },
         {
           "name": "image",

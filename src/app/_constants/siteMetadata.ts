@@ -22,6 +22,17 @@ const FILECOIN_FOUNDATION_URLS = {
     '2023': `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
     '2022': `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
   },
+  digest: {
+    // ! placeholder links
+    buyPrintEdition: {
+      label: 'Buy Print Edition',
+      href: 'https://ffdweb.org/digest/',
+    },
+    submitArticle: {
+      label: 'Submit Article',
+      href: 'https://ffdweb.org/contact/',
+    },
+  },
   ecosystem: {
     submitOrUpdateProjectForm: {
       label: 'Submit or Update Your Project',
@@ -151,9 +162,9 @@ const FILECOIN_URLS = {
 
 export {
   BASE_URL,
+  FIL_PLUS_URLS,
   FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
-  FIL_PLUS_URLS,
   ORGANIZATION_NAME,
 }
