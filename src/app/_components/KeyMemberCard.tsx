@@ -15,7 +15,7 @@ export function KeyMemberCard({
   image,
 }: KeyMemberCardProps) {
   return (
-    <li className="relative flex rounded-lg border border-brand-500 p-1">
+    <li className="relative flex rounded-lg border border-brand-500 p-1 transition-colors hover:bg-brand-400 hover:bg-opacity-15">
       <StaticImage
         data={image}
         alt={`Photo of ${name}`}

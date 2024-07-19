@@ -138,7 +138,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative h-full rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative h-full rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl transition-colors hover:bg-brand-400 hover:bg-opacity-15',
         borderStyles[borderColor],
       )}
     >
