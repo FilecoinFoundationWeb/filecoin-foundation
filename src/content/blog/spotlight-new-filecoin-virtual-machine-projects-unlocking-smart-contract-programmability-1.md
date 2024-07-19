@@ -48,6 +48,6 @@ We are seeking individuals and teams with expertise in smart contract programmin
 
 **Learn About FVM at FIL-Singapore (Sept. 26–27)**
 
-FIL-Singapore is slated to be the largest in-person Filecoin gathering in Asia. Join the Filecoin community September 26–27, at the Marina Bay Sands in Singapore, ahead of Token2049, for two packed days of talks, workshops and networking events. Discussions will include the latest on FVM progress, updates on the Filecoin Roadmap, Filecoin cryptoeconomics, and more. Use the [promo code FFVIP](http://www.eventbrite.com/e/396630501507/?discount=FFVIP) for free registration.
+[FIL-Singapore](https://fil.org/events/fil-singapore) is slated to be the largest in-person Filecoin gathering in Asia. Join the Filecoin community September 26–27, at the Marina Bay Sands in Singapore, ahead of Token2049, for two packed days of talks, workshops and networking events. Discussions will include the latest on FVM progress, updates on the Filecoin Roadmap, Filecoin cryptoeconomics, and more. Use the [promo code FFVIP](http://www.eventbrite.com/e/396630501507/?discount=FFVIP) for free registration.
 
 To learn more, watch this playlist of [FVM videos](https://www.youtube.com/playlist?list=PL_0VrY55uV18DBdFIkN0jdBMF8nadVxWQ).

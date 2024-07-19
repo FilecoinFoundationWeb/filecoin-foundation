@@ -57,9 +57,9 @@ As we build a minimal version of the [Flowwow NFT pet store](https://github.com/
 
 A blockchain is a digital distributed ledger that tracks an _ownership_ of some _resource_. There is nothing new about the ledger part — Your bank account is a ledger that keeps track of how much money you _own_ and how much is spent (change of ownership) at any time. The key components to a ledger are:
 
-<!-- - [Resource](https://dev.toresource/) at play. In this case a currency. -->
-<!-- - [Accounts](https://dev.toaccounts/) to own the resource, or the access to it. -->
-<!-- - [Contract](https://dev.tocontract/) or a ruleset to govern the economy. -->
+- Resource at play. In this case a currency.
+- Accounts to own the resource, or the access to it.
+- Contract or a ruleset to govern the economy.
 
 # Resource
 

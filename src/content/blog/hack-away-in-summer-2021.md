@@ -32,7 +32,7 @@ The [NFT Vision Hack](https://www.nftvisionhack.com/) brings together talented c
 
 **Browsers 3000**
 
-Browsers 3000 is a virtual hackathon to accelerate the development of Web3 browsers through experimentation, collaboration, and competition. This program offers majors prizes for teams with the most inventive browser projects, like a grand prize of $10,000 USD in FIL and an additional prize pool of $20,000 USD in FIL to be split among teams using IPFS, Filecoin, or libp2p. [Registration is open](https://browsers3000.devpost.com/) for this event taking place from July 8 to August 19.
+Browsers 3000 (link previously available but now unavailable) is a virtual hackathon to accelerate the development of Web3 browsers through experimentation, collaboration, and competition. This program offers majors prizes for teams with the most inventive browser projects, like a grand prize of $10,000 USD in FIL and an additional prize pool of $20,000 USD in FIL to be split among teams using IPFS, Filecoin, or libp2p. [Registration is open](https://browsers3000.devpost.com/) for this event taking place from July 8 to August 19.
 
 **HackFS**
 
@@ -44,6 +44,6 @@ Encode Club, a community of university students, researchers, and developers bui
 
 **Need Inspiration?**
 
-Check out these winners of past hackathons that the Filecoin Foundation has supported. Last summer’s [Spark University Hackathon](https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-one/) winner, [DeepVerse](https://deepverse.co.uk/), enabled researchers to make the machine-learning models they’ve developed publicly available, using the Filecoin network to store and distribute them. A location-based NFT AR game called [CryptoLlama](https://testnets.opensea.io/) was named the best tool for easing storage and retrieval of data with Filecoin at the [Chainlink Spring 2021 Hackathon](https://blog.ipfs.io/2021-05-03-chainlink-recap/). Most recently, NiftySubs, a decentralized video streaming platform where users can watch premium content from their favorite creators, won the Protocol Labs prize at [HackMoney 2021](https://defi.ethglobal.co/).
+Check out these winners of past hackathons that the Filecoin Foundation has supported. Last summer’s [Spark University Hackathon](https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-one/) winner, [DeepVerse](https://deepverse.co.uk/), enabled researchers to make the machine-learning models they’ve developed publicly available, using the Filecoin network to store and distribute them. A location-based NFT AR game called [CryptoLlama](https://testnets.opensea.io/) was named the best tool for easing storage and retrieval of data with Filecoin at the [Chainlink Spring 2021 Hackathon](https://blog.ipfs.io/2021-05-03-chainlink-recap/). Most recently, NiftySubs (link previously available but now unavailable), a decentralized video streaming platform where users can watch premium content from their favorite creators, won the Protocol Labs prize at [HackMoney 2021](https://defi.ethglobal.co/).
 
 For more hackathon updates, follow us on Twitter [@FilFoundation.](https://twitter.com/filfoundation) You can also join us in chat in the [Filecoin Slack.](http://filecoin.io/slack) We’ll see you there!
