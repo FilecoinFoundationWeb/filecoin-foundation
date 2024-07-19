@@ -1,22 +1,22 @@
 ---
 title: "You’re Invited: Filecoin Fall"
-created-on: 2022-08-18T00:00:00Z
-updated-on: 2022-08-18T00:00:00Z
-published-on: 2022-08-18T00:00:00Z
-description:
-  "As we enjoy the last days of summer, we’re already planning for our
-  next set of upcoming events: Filecoin Fall. No matter where you are, or how you’re
-  involved in the Filecoin community, there’s something for everyone in the ecosystem
-  over the next few months."
+created-on: 2022-08-18T00:00:00.000Z
+updated-on: 2022-08-18T00:00:00.000Z
+published-on: 2022-08-18T00:00:00.000Z
+category: events
+description: "As we enjoy the last days of summer, we’re already planning for
+  our next set of upcoming events: Filecoin Fall. No matter where you are, or
+  how you’re involved in the Filecoin community, there’s something for everyone
+  in the ecosystem over the next few months."
 image:
   src: /assets/images/64423c054821268e6e8e743b_1-rdpz1p6lnwm1fnnk37urdw.png
-  alt:
+  alt: A stylized illustration of three light blue leaves on a dark blue
+    background, with layers of lighter blue surrounding the leaves to create a
+    sense of depth.
 recommended-posts: []
-category: events
 seo:
   title: You're Invited to Filecoin Fall
-  description:
-    Join us for Filecoin Fall. Learn about upcoming events, activities,
+  description: Join us for Filecoin Fall. Learn about upcoming events, activities,
     and opportunities to get involved.
 ---
 
