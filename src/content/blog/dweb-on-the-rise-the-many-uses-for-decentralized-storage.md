@@ -34,7 +34,7 @@ As a leading decentralized data storage provider, Filecoin plays an important ro
 
 _Mona_
 
-[Mona](https://monaverse.com/) is building a gallery in the metaverse for 3D art, with composable 3D spaces built by artists for artists. Recently, Mona launched the Filecoin Forum (previously available but now unavailable), which offers more than $200,000 in bounties for artists, architects and gamers to spur the creation of new 3D art spaces.
+[Mona](https://monaverse.com/) is building a gallery in the metaverse for 3D art, with composable 3D spaces built by artists for artists. Recently, Mona launched the Filecoin Forum (link previously available but now unavailable), which offers more than $200,000 in bounties for artists, architects and gamers to spur the creation of new 3D art spaces.
 
 _OP Games_
 
