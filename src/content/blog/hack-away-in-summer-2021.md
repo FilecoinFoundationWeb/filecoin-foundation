@@ -28,7 +28,7 @@ A collaboration between Filecoin and hackathon organizer DoraHacks, the [Filecoi
 
 **NFT Vision Hack**
 
-The [NFT Vision Hack](https://www.nftvisionhack.com/) brings together talented creatives and engineers to innovate in the emerging world of non-fungible tokens (NFTs). The global online event takes place July 3 to August 30 and has four tracks for development teams to choose from. The Gaming & NFTs track invites developers to build on IPFS or Filecoin and compete for prizes in FIL. Plus, you can use [NFT.Storage](https://nft.storage/) for free hosting of your assets and metadata on IPFS to ensure high performance and persistence of your NFTs. Register now (previously available but now unavailable) to get in on the $68,000 USD prize pool and shape the future of NFTs on Filecoin.
+The [NFT Vision Hack](https://www.nftvisionhack.com/) brings together talented creatives and engineers to innovate in the emerging world of non-fungible tokens (NFTs). The global online event takes place July 3 to August 30 and has four tracks for development teams to choose from. The Gaming & NFTs track invites developers to build on IPFS or Filecoin and compete for prizes in FIL. Plus, you can use [NFT.Storage](https://nft.storage/) for free hosting of your assets and metadata on IPFS to ensure high performance and persistence of your NFTs. Register now (link previously available but now unavailable) to get in on the $68,000 USD prize pool and shape the future of NFTs on Filecoin.
 
 **Browsers 3000**
 

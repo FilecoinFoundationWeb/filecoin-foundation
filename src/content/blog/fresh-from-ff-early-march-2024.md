@@ -35,7 +35,7 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Developer Advocacy**
 
-- The Developer Advocacy team is on the ground at ETHDenver, speaking at events across town. Book a meeting (previously available but now unavailable) with them at the Filecoin Booth at Devtopia, Booth 204. 
+- The Developer Advocacy team is on the ground at ETHDenver, speaking at events across town. Book a meeting (link previously available but now unavailable) with them at the Filecoin Booth at Devtopia, Booth 204.
 - At the Dora Hacks Data Economy Hackathon on February 20, Jenks Guo and Yan Bo Ng’s talk on  FVM & AI was livestreamed by more than 6,000 people. [Watch the replay](https://www.youtube.com/watch?v=usBgjBpYxNQ).
 
 **Storage**
