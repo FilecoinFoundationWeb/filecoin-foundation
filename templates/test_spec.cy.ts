@@ -1,4 +1,4 @@
-;`import { PATHS } from '../../src/app/_constants/paths'
+`import { PATHS } from '../../src/app/_constants/paths'
 import { testPageMetadata } from '../support/test-utils'
 import { verifyLinks } from '../support/verifyLinksUtil'
 
