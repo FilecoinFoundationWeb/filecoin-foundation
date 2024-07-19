@@ -18,7 +18,7 @@ seo:
     and accelerate your blockchain project.
 ---
 
-[Filecoin Launchpad Accelerator](https://mesh.xyz/tachyon/), powered by [Tachyon](https://mesh.xyz/tachyon/), is seeking applications for its next cohort of innovators. The program is designed to support projects that build on and bridge the IPFS, [Filecoin](https://filecoin.io/), and [Ethereum](https://ethereum.org/) communities with tools, middleware, and apps.
+[Filecoin Launchpad Accelerator](https://mesh.xyz/tachyon/), powered by [Tachyon](https://mesh.xyz/tachyon/), is seeking applications for its next cohort of innovators. The program is designed to support projects that build on and bridge the [IPFS](https://ipfs.tech/), [Filecoin](https://filecoin.io/), and [Ethereum](https://ethereum.org/) communities with tools, middleware, and apps.
 
 If you have an idea for a tool or service that leverages these platforms, [**apply today**](https://tachyon.submittable.com/submit/192229/filecoin-launchpad-accelerator-ii) to be a part of this outstanding program. **Applications are open through midnight EST on May 9, 2021.**
 
