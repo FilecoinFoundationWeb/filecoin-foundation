@@ -34,8 +34,6 @@ Artifact Labs is working with Filecoin Foundation to upload, store, and share th
 
 ![Photo courtesy of nft.discovertitanic.com ](/assets/images/image1.png)
 
-_Photo courtsey of [nft.discovertitanic.com](http://nft.discovertitanic.com/)_
-
 Recently, we had an opportunity to talk with Henry Chan, Artifact Labs co-founder and head of product and innovation. Read on for his thoughts on using blockchain to preserve history, how NFTs play a part in engaging the global _Titanic_ enthusiast community, and what’s next for the organization.
 
 **Why, for Artifact Labs, does blockchain technology – and in particular the Filecoin network – present a unique opportunity to preserve history and culture?**

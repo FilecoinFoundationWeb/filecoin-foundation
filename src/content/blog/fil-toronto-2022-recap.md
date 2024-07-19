@@ -17,7 +17,7 @@ seo:
   description: Recap of FIL Toronto 2022. Highlights and key takeaways from the event.
 ---
 
-Earlier this month, the Filecoin community convened for the first-ever [FIL Toronto](https://fil-toronto.com/). From July 4–6, attendees gathered to discuss new features, partner tools, and other developments in the Filecoin ecosystem.
+Earlier this month, the Filecoin community convened for the first-ever FIL Toronto. From July 4–6, attendees gathered to discuss new features, partner tools, and other developments in the Filecoin ecosystem.
 
 The collaborative three-day event was hosted by FilSwan, with support from Filecoin Foundation through the Filecoin [Orbit Community](https://orbitcommunity.filecoin.io/) program. Speakers represented a variety of projects and organizations including Protocol Labs, Fil+, Filswan, Lotus, Estuary, Chainstorage, and many others excited to share their expertise with the growing Web3 community in Toronto.
 

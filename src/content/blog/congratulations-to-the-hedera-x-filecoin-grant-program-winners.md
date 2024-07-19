@@ -18,7 +18,7 @@ seo:
     to all the innovative projects.
 ---
 
-The Filecoin Foundation is pleased to announce the winners of the [Hedera x Filecoin](https://github.com/filecoin-project/devgrants/blob/master/rfps/hedera-and-filecoin.md) grant program. This collaboration combines Filecoin’s peer-to-peer storage network with the Hedera public ledger for fast, low-cost transactions. The Hedera x Filecoin grant program will collectively award $200,000 USD to six winning projects.
+The Filecoin Foundation is pleased to announce the winners of the Hedera x Filecoin grant program. This collaboration combines Filecoin’s peer-to-peer storage network with the Hedera public ledger for fast, low-cost transactions. The Hedera x Filecoin grant program will collectively award $200,000 USD to six winning projects.
 
 The largest prize is a $75,000 USD **Decentralized Storage SDK for Hedera & Demo Application Award** to fund a project that seamlessly integrates existing Hedera and Filecoin toolchains. This award goes to the [Xact-Team](https://github.com/bhed/devgrants/blob/master/rfp-proposals/rfp-proposal-nft-sdk-hedera.md). They will build a program that will provide developers with an SDK that uses both the Hedera Token Service and Filecoin storage to make it easy to mint NFTs on the Hedera network, while storing metadata and multimedia on Filecoin’s decentralized storage network using [nft.storage](https://nft.storage/).
 

@@ -32,7 +32,7 @@ While you’re in the Big Apple, stop by [Unfinished Live 2022](https://live.unf
 
 **Community Gathering: FIL-Singapore ’22 Summit (Sept. 26–27)**
 
-With a theme of “Empowering a Web3 world,” [FIL-Singapore](https://fil-singapore.io/) will feature educational tracks on building a Web3 ecosystem, visionary discussions of the impact of decentralized storage and an overview of new developments in the metaverse.
+With a theme of “Empowering a Web3 world,” [FIL-Singapore](https://fil.org/events/fil-singapore) will feature educational tracks on building a Web3 ecosystem, visionary discussions of the impact of decentralized storage and an overview of new developments in the metaverse.
 
 Hosted by the IPFS Force, with support from [Filecoin Foundation](http://fil.org/), [Protocol Labs](https://protocol.ai/) and many more, this collaborative event will feature more than 100 speakers and over 20 panels. If you’re planning to attend [Token2049](https://www.token2049.com/) (Sept. 28–29), make sure to join the Filecoin Community for progress updates on the Filecoin Roadmap, the latest on Filecoin Virtual Machine, Filecoin cryptoeconomics, and more.
 
@@ -48,6 +48,6 @@ Filecoin Foundation will mark the second anniversary of the Filecoin mainnet lau
 
 **Final stop: FIL-Lisbon (Oct. 30-Nov. 4)**
 
-We’re rounding out Filecoin Fall with [FIL-Lisbon](https://hub.fil.org/fil-lisbon) at the [LX Factory](https://www.google.com/maps/place/LxFactory/@38.7034979,-9.178873,15z/data=!4m5!3m4!1s0x0:0x33ebaaaa14f543ac!8m2!3d38.7034979!4d-9.178873) in Lisbon, Portugal. The event will bring together the builders, developers and contributors building the Filecoin ecosystem. Hosted by Filecoin Foundation, the event will feature two days of mainstage programming and a week’s worth of workshops, panels, networking, and hands-on experiences for our European community, including our Hacker House.
+We’re rounding out Filecoin Fall with [FIL-Lisbon](https://fil-lisbon.io/) at the [LX Factory](https://www.google.com/maps/place/LxFactory/@38.7034979,-9.178873,15z/data=!4m5!3m4!1s0x0:0x33ebaaaa14f543ac!8m2!3d38.7034979!4d-9.178873) in Lisbon, Portugal. The event will bring together the builders, developers and contributors building the Filecoin ecosystem. Hosted by Filecoin Foundation, the event will feature two days of mainstage programming and a week’s worth of workshops, panels, networking, and hands-on experiences for our European community, including our Hacker House.
 
 Come join us to learn how the Filecoin network is expanding and how you can help grow the Web3 ecosystem. Save the date for Oct. 30-Nov. 4 in Lisbon!

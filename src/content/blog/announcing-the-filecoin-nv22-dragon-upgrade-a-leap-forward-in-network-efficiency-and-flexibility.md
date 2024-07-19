@@ -28,8 +28,6 @@ This upgrade, codenamed 'Dragon,' introduces several key features aimed at enhan
 
 This launch marks a significant milestone for the Filecoin community, as the Dragon upgrade lays the groundwork for future innovations and scalability.
 
-For more details on the nv22 Dragon upgrade, visit the [official announcement](https://filecoin.io/blog/posts/nv22-dragon-upgrade).
-
 Stay updated with the latest developments by following us on Twitter [@Filecoin](https://twitter.com/Filecoin) and joining our community discussions on [Slack](https://filecoin.io/slack).
 
 We extend our gratitude to the teams and contributors who made this upgrade possible through their relentless efforts and collaboration.

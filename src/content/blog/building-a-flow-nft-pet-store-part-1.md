@@ -39,10 +39,10 @@ If you are very new to the concept of smart contracts and NFTs, it’s worth che
 Before we begin, you will need to install a few things:
 
 - [Node.js](https://nodejs.org/) and npm (comes with Node.js)
-- [Flow CLI](https://www.onflow.org/cli/)
-- [Docker and Docker Compose](https://docker.com/compose/)
+- Flow CLI (link previously available but now unavailable)
+- Docker and Docker Compose (link previously available but now unavailable)
 
-You’re free to use any code editor, but [VSCode](https://code.visualstudio.com/) with [Cadence Language support](https://docs.onflow.org/vscode-extension/) is a great option.
+You’re free to use any code editor, but [VSCode](https://code.visualstudio.com/) with Cadence Language support (link previously available but now unavailable) is a great option.
 
 # What you will learn
 
@@ -57,9 +57,9 @@ As we build a minimal version of the [Flowwow NFT pet store](https://github.com/
 
 A blockchain is a digital distributed ledger that tracks an _ownership_ of some _resource_. There is nothing new about the ledger part — Your bank account is a ledger that keeps track of how much money you _own_ and how much is spent (change of ownership) at any time. The key components to a ledger are:
 
-- [Resource](https://dev.toresource/) at play. In this case a currency.
-- [Accounts](https://dev.toaccounts/) to own the resource, or the access to it.
-- [Contract](https://dev.tocontract/) or a ruleset to govern the economy.
+- Resource at play. In this case a currency.
+- Accounts to own the resource, or the access to it.
+- Contract or a ruleset to govern the economy.
 
 # Resource
 
@@ -88,7 +88,7 @@ A good analogy is an umpire-less tennis game where any dispute (like determining
 
 Like Solidity language for Ethereum, Flow uses [Cadence Language](https://docs.onflow.org/cadence/language/) for smart contracts, transactions, and scripts. Inspired by the [Rust](https://rust-lang.org/) and [Move](https://move-book.com/) languages, the interpreter tracks when a resource is being _moved_ from a variable to the next and makes sure it can never be mutually accessible in the program.
 
-The three types of Cadence programs you will be writing are [contracts](https://docs.onflow.org/cadence/language/contracts/#gatsby-focus-wrapper), [transactions](https://docs.onflow.org/cadence/language/transactions/#gatsby-focus-wrapper), and [scripts](https://docs.onflow.org/fcl/reference/scripts/).
+The three types of Cadence programs you will be writing are [contracts](https://docs.onflow.org/cadence/language/contracts/#gatsby-focus-wrapper), [transactions](https://docs.onflow.org/cadence/language/transactions/#gatsby-focus-wrapper), and scripts.
 
 # Contract
 

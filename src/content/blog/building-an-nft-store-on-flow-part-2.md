@@ -124,7 +124,7 @@ There are a few FCL functions to send a transaction, but `fcl.send([...])` is th
 
 We pass the Cadence `code` to `fcl.transaction`, and any integer from 0 - 999 to `fcl.limit` for the gas fee limit we are happy with. The `payload` is the metadata we converted previously.
 
-The `payer`, `proposer`, and `authorizations` accept a function known as _authorization function_, which decides the account (and effectively the keys) used to authorize the transaction. (If you're interested in deep-diving into this, check out [Authorization Function](https://docs.onflow.org/fcl/reference/api/#authorization-function)). Here, `fcl` provided an `authz` default authorization function to makes signing with the emulator account easier.
+The `payer`, `proposer`, and `authorizations` accept a function known as _authorization function_, which decides the account (and effectively the keys) used to authorize the transaction. Here, `fcl` provided an `authz` default authorization function to makes signing with the emulator account easier.
 
 # 3\. Return the transaction ID
 

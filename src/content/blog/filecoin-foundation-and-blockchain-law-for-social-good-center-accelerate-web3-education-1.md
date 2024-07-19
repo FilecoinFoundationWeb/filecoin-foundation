@@ -31,5 +31,3 @@ With the support of this award, the Lab will create specialized programs such as
 The Lab will be accessible to individuals around the world interested in the decentralized web, through video-conferencing and virtual events.
 
 “We are excited to partner with the Blockchain Law for Social Good Center to create the Filecoin Foundation Blockchain Academy Lab,” said Marta Belcher, president and chair of the Filecoin Foundation. “We are thrilled to work together to provide education about the next generation of the Web.”
-
-To learn more about upcoming events at the Filecoin Foundation Blockchain Academy Lab, visit [https://blockchainlawsg.org/projects/](https://blockchainlawsg.org/projects/ "https://blockchainlawsg.org/projects/").
