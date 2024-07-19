@@ -1,16 +1,17 @@
+const fs = require('fs').promises
 const path = require('path')
 
 const {
   constantCase,
-  snakeCase,
+  createDir,
   startCase,
   generateFile,
-  createDir,
   readFile,
+  snakeCase,
   writeFile,
 } = require('./generatePageTemplatesHelpers')
 
-const TEMPLATE_PATHS = {
+const TEMPLATE_FILES_PATHS = {
   page: path.resolve(__dirname, '../templates/page.tsx'),
   generateStructuredData: path.resolve(
     __dirname,
@@ -26,6 +27,8 @@ const PATHS_FILE_PATH = path.resolve(
   '../src/app/_constants/paths.ts',
 )
 
+const CONFIG_FILE_PATH = path.resolve(__dirname, '../public/admin/config.yml')
+
 const pageName = process.argv[2]
 if (!pageName) {
   console.error('Please provide a page name - example "employee-policy".')
@@ -39,47 +42,54 @@ const OUTPUT_DIRS = {
   utilsOutput: path.join(path.join(__dirname, '../src/app', pageName), 'utils'),
 }
 
+const filesToGenerate = [
+  {
+    templatePath: TEMPLATE_FILES_PATHS.page,
+    outputPath: path.join(OUTPUT_DIRS.output, 'page.tsx'),
+  },
+  {
+    templatePath: TEMPLATE_FILES_PATHS.generateStructuredData,
+    outputPath: path.join(
+      OUTPUT_DIRS.utilsOutput,
+      'generateStructuredData.tsx',
+    ),
+  },
+  {
+    templatePath: TEMPLATE_FILES_PATHS.layout,
+    outputPath: path.join(OUTPUT_DIRS.output, 'layout.tsx'),
+  },
+  {
+    templatePath: TEMPLATE_FILES_PATHS.pageMd,
+    outputPath: path.join(OUTPUT_DIRS.mdOutput, `${pageName}.md`),
+  },
+  {
+    templatePath: TEMPLATE_FILES_PATHS.test,
+    outputPath: path.join(
+      OUTPUT_DIRS.testOutput,
+      `${snakeCase(pageName)}_page_spec.cy.ts`,
+    ),
+  },
+]
+
 Object.values(OUTPUT_DIRS).forEach(createDir)
 
-generateFile(
-  TEMPLATE_PATHS.page,
-  path.join(OUTPUT_DIRS.output, 'page.tsx'),
-  pageName,
-)
-generateFile(
-  TEMPLATE_PATHS.generateStructuredData,
-  path.join(OUTPUT_DIRS.utilsOutput, 'generateStructuredData.tsx'),
-  pageName,
-)
-generateFile(
-  TEMPLATE_PATHS.layout,
-  path.join(OUTPUT_DIRS.output, 'layout.tsx'),
-  pageName,
-)
-generateFile(
-  TEMPLATE_PATHS.pageMd,
-  path.join(OUTPUT_DIRS.mdOutput, `${pageName}.md`),
-  pageName,
-)
-generateFile(
-  TEMPLATE_PATHS.test,
-  path.join(OUTPUT_DIRS.testOutput, `${snakeCase(pageName)}_page_spec.cy.ts`),
-  pageName,
-)
+filesToGenerate.forEach((file) => {
+  generateFile(file.templatePath, file.outputPath, pageName)
+})
 
 const updatePathFile = async (pageName) => {
   try {
     let data = await readFile(PATHS_FILE_PATH)
 
-    const newPathObject = `${constantCase(pageName)}: createPathObject({
-      path: '/${pageName}',
-      label: '${pageName
+    const newPathObject = `${constantCase(pageName)}: createPathObject(
+      '/${pageName}',
+      '${pageName
         .split('-')
         .map((word) => startCase(word))
         .join(' ')}',
-    }),`
+    ),`
 
-    // UPDATE PATH
+    // update path
     const typeIndex = data.indexOf('export type PathValues =')
     const typeStart = data.indexOf('=', typeIndex) + 1
     const typeEnd = data.indexOf('export interface PathConfig', typeStart)
@@ -99,10 +109,10 @@ const updatePathFile = async (pageName) => {
 
     paths.sort()
     const newTypeDefinition =
-      '\n  ' + paths.map((path) => `| ${path}`).join('\n  ') + ';\n'
+      '\n  ' + paths.map((path) => `| ${path}`).join('\n  ') + '\n\n'
     data = data.slice(0, typeStart) + newTypeDefinition + data.slice(typeEnd)
 
-    // UPDATE PATH OBJECT
+    // update path object
     const pathsObjectIndex = data.indexOf('export const PATHS = {')
     const pathsObjectStart = data.indexOf('{', pathsObjectIndex) + 1
     const pathsObjectEnd = data.indexOf('} as const', pathsObjectStart)
@@ -139,4 +149,72 @@ const updatePathFile = async (pageName) => {
   }
 }
 
+const newPageConfig = `      - name: "${pageName}"
+        label: "${pageName
+          .split('-')
+          .map((word) => startCase(word))
+          .join(' ')}"
+        file: "src/content/pages/${pageName}.md"
+        fields:
+          - *header_config
+          - *meta_config`
+
+const updateConfigFile = async (pageName) => {
+  try {
+    let data = await fs.readFile(CONFIG_FILE_PATH, 'utf8')
+
+    // find the start of the pages collection
+    const pagesStartIndex = data.indexOf('collections:\n  - name: "pages"')
+    if (pagesStartIndex === -1) {
+      throw new Error('Could not find the pages collection in the config file.')
+    }
+
+    const filesStartIndex = data.indexOf('files:', pagesStartIndex)
+    if (filesStartIndex === -1) {
+      throw new Error('Could not find the files list in the pages collection.')
+    }
+
+    // extract the content before, within, and after the files list
+    const beforeFiles = data.slice(0, filesStartIndex + 7)
+    const filesEndIndex = data.indexOf('\n  - name: ', filesStartIndex + 1)
+    const afterFiles = filesEndIndex === -1 ? '' : data.slice(filesEndIndex)
+
+    const filesList = data
+      .slice(
+        filesStartIndex + 7,
+        filesEndIndex === -1 ? data.length : filesEndIndex,
+      )
+      .trim()
+      .split('\n\n')
+
+    // add the new page config to the list
+    filesList.push(newPageConfig)
+
+    // sort the files list alphabetically by the name
+    filesList.sort((a, b) => {
+      const nameA = a.match(/name: "([^"]+)"/)[1]
+      const nameB = b.match(/name: "([^"]+)"/)[1]
+      return nameA.localeCompare(nameB)
+    })
+
+    // reconstruct the new data
+    const newFilesList = filesList.map((file) => file.trim()).join('\n\n      ')
+    const newData =
+      beforeFiles.trim() +
+      '\n      ' +
+      newFilesList +
+      '\n\n  ' +
+      afterFiles.trim()
+
+    // write the updated config back to the file
+    await fs.writeFile(CONFIG_FILE_PATH, newData, 'utf8')
+    console.log(
+      `CMS configuration file updated successfully with /${pageName}.`,
+    )
+  } catch (err) {
+    console.error('Error updating CMS config file:', err)
+  }
+}
+
 updatePathFile(pageName)
+updateConfigFile(pageName)

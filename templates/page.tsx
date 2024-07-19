@@ -1,4 +1,4 @@
-;`import { CTASection } from '@/components/CTASection'
+`import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'

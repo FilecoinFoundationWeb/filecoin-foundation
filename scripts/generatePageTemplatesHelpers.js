@@ -74,11 +74,11 @@ const createDir = (dirPath) => {
 
 module.exports = {
   camelCase,
+  constantCase,
+  createDir,
+  generateFile,
+  readFile,
   snakeCase,
   startCase,
-  constantCase,
-  generateFile,
-  createDir,
-  readFile,
   writeFile,
 }
