@@ -29,4 +29,4 @@ Key Highlights:
 - OpSci is designed to facilitate a peer-to-peer science data commons for web-native scientists. The **Filecoin network, IPFS, and other decentralized web technologies are key components of this vision**.
 - OpSci was one of the **earliest DeSci DAOs** with a strong academic contributing core. OpSci has been utilized to fund a number of community events, starting with the Open Web Fellowship, the first DeSci conference at ethDenver, and later helping prop up the DeSci.eth community fund.
 
-Read the full Filecoin Foundation [Case Study: OpSci - How an Open Science Commons Project Built on Web3 Infrastructure Empowers Community Discovery](https://fil-foundation.on.fleek.co/hosting/OpSci-CaseStudy.pdf).
+Read the full Filecoin Foundation [Case Study: OpSci - How an Open Science Commons Project Built on Web3 Infrastructure Empowers Community Discovery](https://fil.org/blog/case-study-opsci-how-an-open-science-commons-project-built-on-web3-infrastructure-empowers-community-discovery).

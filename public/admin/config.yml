@@ -165,6 +165,13 @@ collections:
               - "title"
           - *meta_config
 
+      - name: "filecoin-plus"
+        label: "Filecoin Plus"
+        file: "src/content/pages/filecoin-plus.md"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "governance"
         label: "Governance"
         file: "src/content/pages/governance.md"

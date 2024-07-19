@@ -256,8 +256,13 @@
               "widget": "relation",
               "collection": "blog",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"]
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ]
             },
             {
               "name": "seo",
@@ -568,8 +573,13 @@
               "widget": "relation",
               "collection": "ecosystem_projects",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "multiple": true,
               "min": 6,
               "max": 6
@@ -681,8 +691,114 @@
               "widget": "relation",
               "collection": "events",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"]
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "required": false,
+                      "media_library": {
+                        "config": {
+                          "multiple": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "filecoin-plus",
+          "label": "Filecoin Plus",
+          "file": "src/content/pages/filecoin-plus.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
             },
             {
               "name": "seo",
@@ -993,8 +1109,13 @@
               "widget": "relation",
               "collection": "ecosystem_projects",
               "value_field": "slug",
-              "search_fields": ["slug", "title"],
-              "display_fields": ["title"],
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
               "multiple": true,
               "min": 6,
               "max": 6
@@ -1374,7 +1495,12 @@
           "name": "body",
           "label": "Content",
           "widget": "markdown",
-          "editor_components": ["code-block", "image", "video", "audio"],
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ],
           "required": false
         },
         {
@@ -1384,8 +1510,13 @@
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
-          "search_fields": ["slug", "title"],
-          "display_fields": ["title"],
+          "search_fields": [
+            "slug",
+            "title"
+          ],
+          "display_fields": [
+            "title"
+          ],
           "multiple": true
         },
         {
@@ -1487,9 +1618,13 @@
           "label": "Subcategories",
           "widget": "relation",
           "collection": "ecosystem_projects_subcategories",
-          "search_fields": ["name"],
+          "search_fields": [
+            "name"
+          ],
           "value_field": "slug",
-          "display_fields": ["name"],
+          "display_fields": [
+            "name"
+          ],
           "multiple": true
         }
       ]
@@ -1514,9 +1649,13 @@
           "name": "parent_category",
           "widget": "relation",
           "collection": "ecosystem_projects_categories",
-          "search_fields": ["name"],
+          "search_fields": [
+            "name"
+          ],
           "value_field": "slug",
-          "display_fields": ["name"]
+          "display_fields": [
+            "name"
+          ]
         }
       ]
     },
@@ -1578,8 +1717,12 @@
           "widget": "relation",
           "collection": "ecosystem_projects_categories",
           "value_field": "slug",
-          "search_fields": ["name"],
-          "display_fields": ["name"]
+          "search_fields": [
+            "name"
+          ],
+          "display_fields": [
+            "name"
+          ]
         },
         {
           "name": "subcategories",
@@ -1587,8 +1730,12 @@
           "widget": "relation",
           "collection": "ecosystem_projects_subcategories",
           "value_field": "slug",
-          "search_fields": ["name"],
-          "display_fields": ["name"],
+          "search_fields": [
+            "name"
+          ],
+          "display_fields": [
+            "name"
+          ],
           "multiple": true,
           "filter": {
             "field": "parent_category",
@@ -1785,7 +1932,10 @@
           "label": "Technologies Used",
           "widget": "select",
           "multiple": true,
-          "options": ["filecoin", "ipfs"]
+          "options": [
+            "filecoin",
+            "ipfs"
+          ]
         },
         {
           "name": "repo",
@@ -2094,9 +2244,9 @@
       ]
     },
     {
-      "name": "digests",
+      "name": "digest",
       "label": "Digests",
-      "folder": "src/content/digests/",
+      "folder": "src/content/digest/",
       "label_singular": "Digest",
       "create": true,
       "extension": "md",
@@ -2132,7 +2282,12 @@
           "name": "body",
           "label": "Content",
           "widget": "markdown",
-          "editor_components": ["code-block", "image", "video", "audio"],
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ],
           "required": false
         },
         {

@@ -4,7 +4,13 @@ const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
 const FIL_PLUS_URLS = {
-  notary: 'https://github.com/filecoin-project/notary-governance/',
+  allocatorsBlog: 'https://blog.allocator.tech/',
+  dataCapMetrics: 'https://datacapstats.io/',
+  documentation:
+    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
+  filPlusParticipants:
+    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#filecoin-processes-and-participants',
+  notary: 'https://github.com/filecoin-project/Allocator-Governance',
   site: 'https://plus.fil.org/',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
 }
@@ -47,7 +53,7 @@ const FILECOIN_FOUNDATION_URLS = {
     sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
   email: {
-    label: 'Media and collaboration inquiries',
+    label: 'Contact Us',
     href: 'mailto:hello@fil.org',
   },
   governance: {

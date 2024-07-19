@@ -36,7 +36,7 @@ Why are active deals important? The amount of data stored in active deals betwee
 
 ![](https://lh7-us.googleusercontent.com/CJVlb9gBAqSM_CFOhmHyBCbGETO_QECsJBtEPnlnge3RwwPHQFMl5dR6E7QVFpZTR-9wN_tUGjRi_aKfdTTs9H9rQdsdckX-w4_YFnr0OrMhkyci54j3ijw85LJbcH_CQSSwOE1-9LKG5pCMSP64KKY)
 
-Q1 Highlight: Destor and Seal Storage [announced](https://destor.com/resources/news/seal-storage-filecoin-destor-ai-data-integrity-project) an AI data integrity improvement research project with [Cyber SMART](https://cybersmartcenter.org/), an industry-university cooperative funded by the U.S. National Science Foundation and other industry members. The project will explore how immutable and auditable record-of-data technology can ensure trustworthiness in generative AI/ML applications.
+Q1 Highlight: Destor and Seal Storage [announced](https://destor.com/resources/news/seal-storage-filecoin-destor-ai-data-integrity-project) an AI data integrity improvement research project with Cyber SMART, an industry-university cooperative funded by the U.S. National Science Foundation and other industry members. The project will explore how immutable and auditable record-of-data technology can ensure trustworthiness in generative AI/ML applications.
 
 📘 **Large data sets stored on Filecoin increased in Q1.**
 

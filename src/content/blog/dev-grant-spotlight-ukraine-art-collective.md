@@ -31,7 +31,7 @@ UkraineArtCo’s near-term vision is to develop an NFT-enabled philanthropy plat
 
 ![](/assets/images/643e68afef5daa4c54ea3faf_1-swfqosn81iazodieiqqqka.png)
 
-Mariya Zeltsman, whose art is pictured above, was the first artist that UkraineArtCo launched, at NFT Miami. Born in Odessa, Masha’s art represents the feelings of families who are scattered due to the Russian invasion of Ukraine, and her goal is to bring awareness to what is happening through her NFT collection. You can find her art, which is part of UkraineArtCo’s current collections, on [Metaversero](https://metaversero.io/artist-detail.php?ac=T4DS0) and [OpenSea](https://opensea.io/collection/stand-with-ukraine-15).
+Mariya Zeltsman, whose art is pictured above, was the first artist that UkraineArtCo launched, at NFT Miami. Born in Odessa, Masha’s art represents the feelings of families who are scattered due to the Russian invasion of Ukraine, and her goal is to bring awareness to what is happening through her NFT collection. You can find her art, which is part of UkraineArtCo’s current collections, on Metaversero (link previously available but now unavailable) and [OpenSea](https://opensea.io/collection/stand-with-ukraine-15).
 
 Longer-term, the group is looking to establish blockchain-native nonprofit organizations with their own charitable programs, including the purchase of humanitarian-oriented goods and services that directly assist people, rather than directing proceeds to a third-party charitable organization.
 
@@ -41,4 +41,4 @@ Longer-term, the group is looking to establish blockchain-native nonprofit organ
 
 To learn more about [UkraineArtCo](https://ukraineartco.org/)’s efforts, you can find them on [Instagram](https://www.instagram.com/UkraineArtCo/), [Twitter](https://twitter.com/UkraineArtCo), [TikTok](https://www.tiktok.com/@UkraineArtCo), [Facebook](https://www.facebook.com/UkraineArtCo), and [Discord](https://discord.com/invite/5T6NTEQSq5).
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ _[Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)_ _and_ _[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) and [Documentation Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md)._
