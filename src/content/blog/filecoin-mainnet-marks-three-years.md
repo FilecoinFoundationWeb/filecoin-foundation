@@ -30,6 +30,7 @@ Since 2020, Filecoin’s open ecosystem of developers, storage providers, storag
 - M﻿ore than [3,300 storage provider systems](https://filecoin.io/blog/posts/filecoin-news-75/)
 - [1.6 EiB of data](https://dashboard.starboard.ventures/capacity-services) is stored on the network
 - [50M deals](https://dashboard.starboard.ventures/market-deals)
+- 130.4M NFTs
 
 **Strong ecosystem momentum**
 

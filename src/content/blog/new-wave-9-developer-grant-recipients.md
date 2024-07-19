@@ -40,7 +40,7 @@ This project aims to use Filecoin storage network as data foundation to simplify
 
 [IPFSpace](https://github.com/ZhangPeibin/devgrants/blob/master/open-grant-proposals/IPFSpace.md) This project will look to build IPFS networkDisk, dataSharing, and dataQuery components for a data sharing platform based on the network disk model.
 
-Metatron Protocol is a generic blockchain-agnostic P2P metadata versioning system that provides a way to establish universal ownership of 128-bit random numbers called eXtensible Identifier. This grant will support the launch of the protocol, which will allow Metatron to design and add an economic layer, such as Filecoin, to the protocol.
+Metatron Protocol (link previously available but now unavailable) is a generic blockchain-agnostic P2P metadata versioning system that provides a way to establish universal ownership of 128-bit random numbers called eXtensible Identifier. This grant will support the launch of the protocol, which will allow Metatron to design and add an economic layer, such as Filecoin, to the protocol.
 
 [CryptoDocs](https://github.com/polluterofminds/devgrants/blob/crypto-docs-proposal/open-grants/open-proposal-crypto-docs.md) This project will deliver a production-ready and business-capable alternative to Google Docs leveraging IPFS, Filecoin and Ethereum by building a collaborative document editing application that supports docs creation and editing, team-based access with SC Controls, encryption and more
 

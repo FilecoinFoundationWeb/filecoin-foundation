@@ -39,10 +39,10 @@ If you are very new to the concept of smart contracts and NFTs, it’s worth che
 Before we begin, you will need to install a few things:
 
 - [Node.js](https://nodejs.org/) and npm (comes with Node.js)
-  <!-- - [Flow CLI](https://www.onflow.org/cli/) -->
-  <!-- - [Docker and Docker Compose](https://docker.com/compose/) -->
+- Flow CLI (link previously available but now unavailable)
+- Docker and Docker Compose (link previously available but now unavailable)
 
-You’re free to use any code editor, but [VSCode](https://code.visualstudio.com/) with Cadence Language support is a great option.
+You’re free to use any code editor, but [VSCode](https://code.visualstudio.com/) with Cadence Language support (link previously available but now unavailable) is a great option.
 
 # What you will learn
 
