@@ -22,7 +22,7 @@ export function SearchInput({
         <input
           id={id}
           name="search"
-          className="peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 py-3 pl-10 pr-9 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none"
+          className="peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-11 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none"
           placeholder="Search"
           type="search"
           value={searchQuery}
@@ -33,7 +33,7 @@ export function SearchInput({
         </div>
         {searchQuery && (
           <button
-            className="absolute inset-y-0.5 right-0.5 flex items-center rounded-md px-3 text-brand-300 focus:brand-outline peer-hover:text-brand-400 peer-focus:text-brand-100"
+            className="absolute right-1 top-1 flex size-[42px] items-center justify-center rounded text-brand-300 focus:brand-outline peer-hover:text-brand-400 peer-focus:text-brand-100"
             aria-label="Clear search input"
             onClick={() => onSearchChange('')}
           >
