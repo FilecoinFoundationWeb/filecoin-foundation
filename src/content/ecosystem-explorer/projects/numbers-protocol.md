@@ -16,7 +16,7 @@ tech:
 image:
   src: /assets/images/6597243838833597a71f11e6_icngy4es52inzwhpzt2c0uodiwktmytv6cqlvo6kya8.png
   alt: "Numbers Protocol Logo"
-website:
+website: https://www.numbersprotocol.io/
 featured-content:
 repo: "https://github.com/numbersprotocol"
 twitter: "https://twitter.com/numbersprotocol"
