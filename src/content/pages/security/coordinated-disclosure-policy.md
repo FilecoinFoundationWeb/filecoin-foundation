@@ -4,7 +4,7 @@ header:
   description: ""
 seo:
   title: "Filecoin Bug Bounty Program - Disclosure Policy"
-  description: "To help secure the Filecoin Network and encourage security research done in good faith, we have created a Filecoin Bug Bounty program."
+  description: "To help secure the Filecoin Network and encourage security research done in good faith, Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol."
 ---
 
 **Last Updated: April 05, 2024**

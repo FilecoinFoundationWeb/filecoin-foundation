@@ -8,5 +8,5 @@ header:
     ]
 seo:
   title: Filecoin Orbit Community Program – Events, Hackathons, Initiatives
-  description: "Open the doors to a better internet for everyone. Join the Filecoin Orbit community of ambassadors, promoting revolutionary Filecoin and IPFS technology."
+  description: "Open the doors to a better internet for everyone. Join the Filecoin Orbit community of ambassadors, promoting revolutionary technologies, like Filecoin and IPFS."
 ---
