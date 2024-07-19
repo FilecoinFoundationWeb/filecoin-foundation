@@ -35,7 +35,7 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Developer Advocacy**
 
-- The Developer Advocacy team is on the ground at ETHDenver, speaking at events across town. [Book a meeting](https://filecoinfoundation.typeform.com/ETHDenver) with them at the Filecoin Booth at Devtopia, Booth 204.
+- The Developer Advocacy team is on the ground at ETHDenver, speaking at events across town. Book a meeting (previously available but now unavailable) with them at the Filecoin Booth at Devtopia, Booth 204. 
 - At the Dora Hacks Data Economy Hackathon on February 20, Jenks Guo and Yan Bo Ng’s talk on  FVM & AI was livestreamed by more than 6,000 people. [Watch the replay](https://www.youtube.com/watch?v=usBgjBpYxNQ).
 
 **Storage**
@@ -78,7 +78,7 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 - Don’t miss our upcoming community events!
 
   - 4/5-4/8 - [FIL Hong Kong](https://fil-hk.io/) hosted by NDLabs alongside Hong Kong Web3 Festival
-  - 4/13-4/14 - Funding the Commons SF, sponsored by FF
+  - 4/13-4/14 - [Funding the Commons SF](https://fil.org/events/funding-the-commons), sponsored by FF
   - 4/16 - 4/19 - Token2049 Dubai Filecoin Orbit Meetup Event
 
 ## FFDW
