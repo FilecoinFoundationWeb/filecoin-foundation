@@ -256,13 +256,8 @@
               "widget": "relation",
               "collection": "blog",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ]
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"]
             },
             {
               "name": "seo",
@@ -573,13 +568,8 @@
               "widget": "relation",
               "collection": "ecosystem_projects",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"],
               "multiple": true,
               "min": 6,
               "max": 6
@@ -691,13 +681,8 @@
               "widget": "relation",
               "collection": "events",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ]
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"]
             },
             {
               "name": "seo",
@@ -1008,13 +993,8 @@
               "widget": "relation",
               "collection": "ecosystem_projects",
               "value_field": "slug",
-              "search_fields": [
-                "slug",
-                "title"
-              ],
-              "display_fields": [
-                "title"
-              ],
+              "search_fields": ["slug", "title"],
+              "display_fields": ["title"],
               "multiple": true,
               "min": 6,
               "max": 6
@@ -1394,12 +1374,7 @@
           "name": "body",
           "label": "Content",
           "widget": "markdown",
-          "editor_components": [
-            "code-block",
-            "image",
-            "video",
-            "audio"
-          ],
+          "editor_components": ["code-block", "image", "video", "audio"],
           "required": false
         },
         {
@@ -1409,13 +1384,8 @@
           "required": false,
           "collection": "blog",
           "value_field": "src/content/blog/{{slug}}.md",
-          "search_fields": [
-            "slug",
-            "title"
-          ],
-          "display_fields": [
-            "title"
-          ],
+          "search_fields": ["slug", "title"],
+          "display_fields": ["title"],
           "multiple": true
         },
         {
@@ -1517,13 +1487,9 @@
           "label": "Subcategories",
           "widget": "relation",
           "collection": "ecosystem_projects_subcategories",
-          "search_fields": [
-            "name"
-          ],
+          "search_fields": ["name"],
           "value_field": "slug",
-          "display_fields": [
-            "name"
-          ],
+          "display_fields": ["name"],
           "multiple": true
         }
       ]
@@ -1548,13 +1514,9 @@
           "name": "parent_category",
           "widget": "relation",
           "collection": "ecosystem_projects_categories",
-          "search_fields": [
-            "name"
-          ],
+          "search_fields": ["name"],
           "value_field": "slug",
-          "display_fields": [
-            "name"
-          ]
+          "display_fields": ["name"]
         }
       ]
     },
@@ -1616,12 +1578,8 @@
           "widget": "relation",
           "collection": "ecosystem_projects_categories",
           "value_field": "slug",
-          "search_fields": [
-            "name"
-          ],
-          "display_fields": [
-            "name"
-          ]
+          "search_fields": ["name"],
+          "display_fields": ["name"]
         },
         {
           "name": "subcategories",
@@ -1629,12 +1587,8 @@
           "widget": "relation",
           "collection": "ecosystem_projects_subcategories",
           "value_field": "slug",
-          "search_fields": [
-            "name"
-          ],
-          "display_fields": [
-            "name"
-          ],
+          "search_fields": ["name"],
+          "display_fields": ["name"],
           "multiple": true,
           "filter": {
             "field": "parent_category",
@@ -1831,10 +1785,7 @@
           "label": "Technologies Used",
           "widget": "select",
           "multiple": true,
-          "options": [
-            "filecoin",
-            "ipfs"
-          ]
+          "options": ["filecoin", "ipfs"]
         },
         {
           "name": "repo",
@@ -2143,9 +2094,9 @@
       ]
     },
     {
-      "name": "digest",
+      "name": "digests",
       "label": "Digests",
-      "folder": "src/content/digest/",
+      "folder": "src/content/digests/",
       "label_singular": "Digest",
       "create": true,
       "extension": "md",
@@ -2181,12 +2132,7 @@
           "name": "body",
           "label": "Content",
           "widget": "markdown",
-          "editor_components": [
-            "code-block",
-            "image",
-            "video",
-            "audio"
-          ],
+          "editor_components": ["code-block", "image", "video", "audio"],
           "required": false
         },
         {
