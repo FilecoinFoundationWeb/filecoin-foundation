@@ -22,12 +22,12 @@ The Filecoin community has completed its first-ever [FILPoll](https://filpoll.io
 
 **Survey Result**
 
-The poll officially closed at 16:00 UTC, Saturday, March 27th. Miners voted overwhelmingly to allow extending the v1 proof sector’s lifetime to up to 540 days. The full results of the survey can be found [here](https://ipfs.io/ipns/bafzbeienruqphecp2wmz3sen472jbhgchia6j3vjoykbxjhzfnkdsr4owm).
+The poll officially closed at 16:00 UTC, Saturday, March 27th. Miners voted overwhelmingly to allow extending the v1 proof sector’s lifetime to up to 540 days.
 
 Together, participating miners represented more than 1.22 EiB of total network storage power, which is more than a third of the network’s overall storage capacity. 97.74% of the voted power was in favor of accepting FIP-0014, while 2.26% of voted power rejected the proposal. Out of 1650 active miners, 150 miners voted to accept FIP-0014, 53 miners rejected the proposal, and 1 miner abstained.
 
 **What’s Next**
 
-The Filecoin [core devs](https://github.com/filecoin-project/tpm) will now make a final decision on whether the FIP should be accepted in the network based on the poll result and a final security audit. Final decisions will be posted on this blog and in the [FIP-0014 discussion](https://github.com/filecoin-project/FIPs/issues/56) later today.
+The Filecoin core devs will now make a final decision on whether the FIP should be accepted in the network based on the poll result and a final security audit. Final decisions will be posted on this blog and in the [FIP-0014 discussion](https://github.com/filecoin-project/FIPs/issues/56) later today.
 
 Thanks to everyone who participated in this first FIPs survey on FIP-0014. Your continued involvement and contributions are critical to the success of the network! FILPolls are one of the many small steps required to create transparent and fully-functioning community governance.

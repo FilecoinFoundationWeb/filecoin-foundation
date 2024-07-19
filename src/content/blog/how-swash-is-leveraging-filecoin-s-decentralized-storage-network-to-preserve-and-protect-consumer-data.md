@@ -35,7 +35,7 @@ As the [Swash app moves toward a quarter of a million members](https://swashapp.
 
 **Robustness:** The Filecoin blockchain _verifies_ data storage, providing cryptographic proofs that data remains available and unchanged over time, meaning there is redundancy built into the system.
 
-**Efficiency:** By allowing anyone to participate as a storage provider and compete for business, Filecoin network storage is more _cost-effective_ than traditional storage providers. It costs [only 0.02%](https://file.app/) of the cost of storing the same data using Amazon S3.
+**Efficiency:** By allowing anyone to participate as a storage provider and compete for business, Filecoin network storage is more _cost-effective_ than traditional storage providers. It costs only 0.02% of the cost of storing the same data using Amazon S3.
 
 As the adoption of Web3 continues to accelerate, Swash aims to rebalance the digital economy and set new standards for the data economy. Its adoption of decentralized storage will drive greater power and control for users, help guarantee high-quality and sustainable data for businesses, and encourage developers to be a part of a new generation of data solutions.
 

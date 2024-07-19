@@ -23,7 +23,7 @@ seo:
 
 **Key highlights:**
 
-- [Shanghai Xinshu Information Technology Company Limited](http://iaphoto.cn/) (Xinshu Technology for short) is a customized photography products and image sharing company aiming to provide a “Bank of Emotion.”
+- Shanghai Xinshu Information Technology Company Limited (Xinshu Technology for short) is a customized photography products and image sharing company aiming to provide a “Bank of Emotion.”
 - The company’s business is based on a B2B2C approach, meaning they provide services to other businesses, through their network of freelance photographers, while also providing services to the end-users through prints and other customized products as well as acting storage for their photos.
 - Xinshu saw the need for a new approach to conducting its business. Leveraging Alibaba Cloud — the largest cloud computing service in China — was becoming too complex and costly for the future goals of the company. The limitations in terms of costs, flexibility, and scalability made the co-founders look for new paths.
 - Through [Bytebase](https://www.bytebase.cn/#/), a decentralized storage provider in the Filecoin network, Xinshu is introducing decentralized storage for its network of photographers and ultimately helping thousands of people preserve their memories — in photographs.

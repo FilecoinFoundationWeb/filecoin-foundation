@@ -47,7 +47,7 @@ Important tooling was added with [six new block explorers](https://filecoin-io.i
 
 Here are a few more early-stage projects building on FVM to keep an eye on**:**
 
-- [Clover](https://useclover.xyz/): Building a workplace suite dedicated to improving communication and community engagement within DAO organizations.
+- Clover (link previously available but now unavailable): Building a workplace suite dedicated to improving communication and community engagement within DAO organizations.
 - [FileMarket](https://filemarket.xyz/): Assists users of EVM-compatible wallets used for digital content creation to store files directly in the wallet without the risk of unauthorized access, with the ability to monetize through selling access on a public storefront. In the Encrypted FileToken protocol (EFT), FileMarket aims to decentralize the role of the trusted third party responsible for fraud checks.
 - [Hashcase](https://www.hashcase.co/): Helping brands create, launch, and distribute digital collectibles to non-Web3 audiences.
 - [Eastore](https://eastore-filecoin.vercel.app/): A decentralized solution on Filecoin that stores files directly to the Filecoin network using smart contracts completely onchain.
