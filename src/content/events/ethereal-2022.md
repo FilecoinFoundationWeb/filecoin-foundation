@@ -11,7 +11,7 @@ start-date: 2022-02-26T16:00:00.000Z
 end-date: null
 image:
   src: /assets/images/645215f7455b5b63d0f5b5e8_marta-snowden.png
-  alt: Camp Etheral Filecoin Foundation Holder Image
+  alt: ""
 seo:
   title: Ethereal 2022
   description: Attend Ethereal 2022 to engage with the blockchain community and
