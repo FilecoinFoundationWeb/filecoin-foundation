@@ -11,7 +11,7 @@ start-date: 2023-09-25T14:00:04.428Z
 end-date: null
 image:
   src: /assets/images/fil-dev-summit.png
-  alt: FIL Dev summit Holder Image
+  alt: ""
 seo:
   title: FIL Dev Summit Iceland
   description: Join the FIL Dev Summit Iceland to collaborate with developers and
