@@ -11,9 +11,9 @@ start-date: 2023-09-02T11:00:23.071Z
 end-date: null
 image:
   src: /assets/images/fil-jakarta.png
-  alt: FIL Jakarta Holder Image
+  alt: ""
 seo:
-  title: FIL Jakarta
+  title: "FIL Jakarta "
   description: Participate in FIL Jakarta to network with the Filecoin community
     and discover new opportunities.
 ---
