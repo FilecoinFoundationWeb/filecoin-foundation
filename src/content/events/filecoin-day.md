@@ -1,5 +1,5 @@
 ---
-title: "Filecoin Day alongside Lab Week 2023 "
+title: Filecoin Day at Lab Week 2023
 created-on: 2023-11-13T18:09:36.531Z
 updated-on: 2023-11-13T18:09:36.547Z
 published-on: 2023-11-13T18:09:36.559Z
