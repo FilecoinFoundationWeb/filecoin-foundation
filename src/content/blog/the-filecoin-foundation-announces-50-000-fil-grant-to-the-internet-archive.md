@@ -1,21 +1,19 @@
 ---
 title: The Filecoin Foundation Announces 50,000 FIL Grant to the Internet Archive
-created-on: 2023-04-21T07:32:08.443000Z
-updated-on: 2023-04-21T07:32:08.443000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  The Filecoin Foundation is committed to protecting and preserving valuable
-  data by creating a new internet infrastructure that’s more secure, user-focused,
-  and competitive.
+created-on: 2023-04-21T07:32:08.443Z
+updated-on: 2023-04-21T07:32:08.443Z
+published-on: 2023-04-21T07:33:56.200Z
+category: news
+description: The Filecoin Foundation is committed to protecting and preserving
+  valuable data by creating a new internet infrastructure that’s more secure,
+  user-focused, and competitive.
 image:
   src: /assets/images/64423bf8da735f52ab392c9a_0-gxap0iqlhpvsxnst.png
-  alt:
+  alt: Filecoin Foundation Announces 50,000 FIL Grant to the Internet Archive
 recommended-posts: []
-category: news
 seo:
   title: Filecoin Foundation Announces $50,000 FIL Grant to Internet Archive
-  description:
-    The Filecoin Foundation awards a $50,000 FIL grant to the Internet
+  description: The Filecoin Foundation awards a $50,000 FIL grant to the Internet
     Archive. Learn about the initiative.
 ---
 
