@@ -11,7 +11,7 @@ start-date: 2024-04-05T14:42:24.931Z
 end-date: 2024-04-08T14:42:24.941Z
 image:
   src: /assets/images/filhk24.png
-  alt: FIL Hong Kong Logo
+  alt: ""
 seo:
   title: FIL Hong Kong Hosted by NDLabs
   description: Attend FIL Hong Kong hosted by NDLabs to engage with the Filecoin
