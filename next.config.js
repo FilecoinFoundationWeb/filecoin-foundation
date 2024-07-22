@@ -28,6 +28,7 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // BLOG POST REDIRECTS
       {
         source:
           '/blog/ecosystem-spotlight-ghostdrive%E2%80%99s-secure-decentralized-storage-now-on-mobile',
@@ -84,6 +85,32 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/ecosystem/project/bela-supernova',
+        destination:
+          '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
+        permanent: true,
+      },
+      {
+        source: '/filplus/%20%22Filecoin%20Plus%22',
+        destination:
+          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
+        permanent: true,
+      },
+      {
+        source: '/filplus',
+        destination:
+          '/blog/the-growth-of-filecoin-plus-and-upcoming-notary-elections',
+        permanent: true,
+      },
+      {
+        source: '/fips',
+        destination:
+          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
+        permanent: true,
+      },
+
+      // PAGE REDIRECTS
+      {
         source: '/board',
         destination: '/about',
         permanent: true,
@@ -101,65 +128,6 @@ const nextConfig = {
       {
         source: '/contact',
         destination: '/about',
-        permanent: true,
-      },
-      {
-        source: '/davos',
-        destination: '/events/the-filecoin-sanctuary-davos-2024',
-        permanent: true,
-      },
-      {
-        source: '/davos-registration',
-        destination: '/events/the-filecoin-sanctuary-davos-2024',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem',
-        destination: '/ecosystem-explorer/',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem-projects/:path*',
-        destination: '/ecosystem-explorer/:path*',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem/project/bela-supernova',
-        destination:
-          '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem-explorer/solmedia/%E2%80%A6',
-        destination: '/ecosystem-explorer/solmedia',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem/%5C%22',
-        destination: '/ecosystem-explorer',
-        permanent: true,
-      },
-      {
-        source: '/filplus/%20%22Filecoin%20Plus%22',
-        destination:
-          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
-        permanent: true,
-      },
-      {
-        source: '/filaustin',
-        destination: '/events/fil-austin',
-        permanent: true,
-      },
-      {
-        source: '/filplus',
-        destination:
-          '/blog/the-growth-of-filecoin-plus-and-upcoming-notary-elections',
-        permanent: true,
-      },
-      {
-        source: '/fips',
-        destination:
-          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
         permanent: true,
       },
       {
@@ -203,11 +171,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/security/bug-bounty',
-        destination: 'https://immunefi.com/bug-bounty/filecoin/',
-        permanent: false,
-      },
-      {
         source: '/terms',
         destination: '/terms-of-use',
         permanent: true,
@@ -221,6 +184,52 @@ const nextConfig = {
         source: '/research/research-text.htm',
         destination: '/',
         permanent: true,
+      },
+
+      // EVENT REDIRECTS
+      {
+        source: '/davos',
+        destination: '/events/the-filecoin-sanctuary-davos-2024',
+        permanent: true,
+      },
+      {
+        source: '/davos-registration',
+        destination: '/events/the-filecoin-sanctuary-davos-2024',
+        permanent: true,
+      },
+      {
+        source: '/filaustin',
+        destination: '/events/fil-austin',
+        permanent: true,
+      },
+
+      // ECOSYSTEM REDIRECTS
+      {
+        source: '/ecosystem',
+        destination: '/ecosystem-explorer/',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem-projects/:path*',
+        destination: '/ecosystem-explorer/:path*',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem-explorer/solmedia/%E2%80%A6',
+        destination: '/ecosystem-explorer/solmedia',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem/%5C%22',
+        destination: '/ecosystem-explorer',
+        permanent: true,
+      },
+
+      // EXTERNAL REDIRECTS
+      {
+        source: '/security/bug-bounty',
+        destination: 'https://immunefi.com/bug-bounty/filecoin/',
+        permanent: false,
       },
     ]
   },
