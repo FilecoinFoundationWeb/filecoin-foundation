@@ -15,7 +15,7 @@ start-date: 2022-05-22T12:00:00.000Z
 end-date: null
 image:
   src: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
-  alt: Decentralized Web Gateway @ Davos 2022 Holder Image
+  alt: ""
 seo:
   title: Decentralized Web Gateway Davos
   description: Explore the Decentralized Web Gateway at Davos and discover the
