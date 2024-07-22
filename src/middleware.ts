@@ -1,6 +1,14 @@
 import { NextResponse, type NextRequest } from 'next/server'
 
-export default function redirectMiddleware(request: NextRequest) {
+// This middleware rewrites potentially slugs (from the old site) to their lowercase equivalents.
+// For example, the old site had content entries with URLs like /blog/Filecoin-nv19-Lightning-Upgrade
+// On the new site, these URLs are now /blog/filecoin-nv19-lightning-upgrade
+// We cannot use Next.js redirects because they are case insensitive, leading to an infinite loop of redirects.
+// Instead, we use this middleware to handle all content entry links created before the launch of the new site that still may exist capitalized.
+
+export default function redirectCapitalizedSlugMiddleware(
+  request: NextRequest,
+) {
   const pathname = request.nextUrl.pathname
 
   const pathnameWithoutLeadingSlash = pathname.slice(1)
