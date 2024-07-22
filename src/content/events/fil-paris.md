@@ -11,7 +11,7 @@ start-date: 2023-07-15T15:38:07.119Z
 end-date: 2023-07-22T15:38:00.000Z
 image:
   src: /assets/images/fil-paris-pic.png
-  alt: FIL Paris Holder Image
+  alt: ""
 seo:
   title: FIL Paris
   description: Join FIL Paris to connect with the Filecoin community and explore
