@@ -11,7 +11,7 @@ start-date: 2023-11-21T13:58:58.117Z
 end-date: null
 image:
   src: /assets/images/filcapetown.png
-  alt: FIL Cape Town Logo
+  alt: ""
 seo:
   title: FIL Capetown
   description: Participate in FIL Capetown to network with the Filecoin community
