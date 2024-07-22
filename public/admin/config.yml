@@ -593,9 +593,9 @@ collections:
       - *meta_config
 
   - name: "digest"
-    label: "Digests"
+    label: "Digest Articles"
     folder: "src/content/digest/"
-    label_singular: "Digest"
+    label_singular: "Digest Article"
     create: true
     extension: "md"
     slug: "{{slug}}"
