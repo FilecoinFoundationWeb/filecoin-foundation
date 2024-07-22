@@ -20,7 +20,7 @@ start-date: 2023-04-15T15:30:53.222Z
 end-date: null
 image:
   src: /assets/images/destore-hk-2023.png
-  alt: Filecoin DeStorkHK
+  alt: ""
 seo:
   title: DeStorHK
   description: Participate in DeStorHK to explore decentralized storage solutions
