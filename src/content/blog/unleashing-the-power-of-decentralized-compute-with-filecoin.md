@@ -1,26 +1,25 @@
 ---
-title: "Unleashing the Power of Decentralized Compute with Filecoin"
-created-on: 2024-04-11T15:25:37.541000Z
-updated-on: 2024-04-11T15:25:37.555000Z
-published-on: 2024-04-11T15:25:37.566000Z
+title: Unleashing the Power of Decentralized Compute with Filecoin
+created-on: 2024-04-11T15:25:37.541Z
+updated-on: 2024-04-11T15:25:37.555Z
+published-on: 2024-04-11T15:25:37.566Z
 category: ecosystem
-description:
-  Decentralized compute is a distributed computing model that leverages
-  the collective resources of a vast network of decentralized nodes, rather than relying
-  on a centralized infrastructure controlled by a single entity. This approach democratizes
-  access to computing power, enabling individuals and organizations to tap into a
-  shared pool of resources without being dependent on a single provider.
+description: Decentralized compute is a distributed computing model that
+  leverages the collective resources of a vast network of decentralized nodes,
+  rather than relying on a centralized infrastructure controlled by a single
+  entity. This approach democratizes access to computing power, enabling
+  individuals and organizations to tap into a shared pool of resources without
+  being dependent on a single provider.
 image:
   src: /assets/images/decentralized-compute-v2.png
-  alt: "Unleashing the Power of Decentralized Compute with Filecoin"
+  alt: Decentralized Compute
 recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
   title: Unleashing the Power of Decentralized Compute with Filecoin
-  description:
-    Discover how Filecoin unleashes the power of decentralized compute.
+  description: Discover how Filecoin unleashes the power of decentralized compute.
     Key benefits and use cases.
 ---
 
