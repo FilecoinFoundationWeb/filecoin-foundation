@@ -4,8 +4,8 @@ created-on: 2024-07-10T15:13:00.000Z
 updated-on: 2024-07-10T15:13:00.000Z
 published-on: 2024-07-10T15:13:00.000Z
 image:
-  url: /assets/images/filorg_imagefallback.png
   src: /assets/images/66073297e6e8ec9445d76d19_tellor.png
+  alt: null
 category: artificial-intelligence
 subcategories:
   - arts-collectibles-nfts
