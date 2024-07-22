@@ -22,6 +22,7 @@ import {
 } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
+import { VideoSection } from './components/VideoSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
@@ -95,19 +96,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             {content && <MarkdownContent>{content}</MarkdownContent>}
           </div>
 
-          {videoUrl && (
-            <div className="mb-8 aspect-video">
-              <iframe
-                allowFullScreen
-                width="100%"
-                height="100%"
-                aria-label="Embedded YouTube Video"
-                src={videoUrl}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              />
-            </div>
-          )}
+          {videoUrl && <VideoSection videoUrl={videoUrl} />}
 
           {newsUpdate && (
             <div className="prose mb-8">
