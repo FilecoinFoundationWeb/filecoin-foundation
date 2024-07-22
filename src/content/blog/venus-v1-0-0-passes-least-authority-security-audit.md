@@ -1,22 +1,20 @@
 ---
 title: Venus v1.0.0 Passes Least Authority Security Audit
-created-on: 2023-04-21T07:32:15.053000Z
-updated-on: 2023-04-21T07:32:15.053000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  With the recent security audit performed by Least Authority, Venus has
-  released venus v1.0.0, which will enable global storage providers and clients to
-  store valuable data securely on Filecoin.
+created-on: 2023-04-21T07:32:15.053Z
+updated-on: 2023-04-21T07:32:15.053Z
+published-on: 2023-04-21T07:33:56.200Z
+category: news
+description: With the recent security audit performed by Least Authority, Venus
+  has released venus v1.0.0, which will enable global storage providers and
+  clients to store valuable data securely on Filecoin.
 image:
   src: /assets/images/image-c-28.png
-  alt:
+  alt: Filecoin Venus Implementation Logo
 recommended-posts: []
-category: news
 seo:
   title: Venus v1.0.0 Passes Least Authority Security Audit
-  description:
-    Announcing that Venus v1.0.0 has passed the Least Authority security
-    audit. Learn more about the results.
+  description: Announcing that Venus v1.0.0 has passed the Least Authority
+    security audit. Learn more about the results.
 ---
 
 With the recent security audit performed by [Least Authority](https://leastauthority.com/), Venus has released venus v1.0.0, which will enable global storage providers and clients to store valuable data securely on Filecoin.
