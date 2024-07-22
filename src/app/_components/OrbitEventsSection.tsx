@@ -55,16 +55,16 @@ async function fetchAndParseAirtableEvents() {
     .select({
       fields: Object.values(AIRTABLE_ORBIT_BASE.EVENTS_TABLE.FIELDS),
       returnFieldsByFieldId: true,
+      filterByFormula: `AND(
+        {${AIRTABLE_ORBIT_BASE.EVENTS_TABLE.FIELDS.STATUS}} = '${AIRTABLE_APPROVED_STATUS}',
+        IS_AFTER({${AIRTABLE_ORBIT_BASE.EVENTS_TABLE.FIELDS.START_DATE}}, '${new Date().toISOString()}')
+      )`,
       sort: [
         {
           field: AIRTABLE_ORBIT_BASE.EVENTS_TABLE.FIELDS.START_DATE,
           direction: 'asc',
         },
       ],
-      filterByFormula: `AND(
-        {${AIRTABLE_ORBIT_BASE.EVENTS_TABLE.FIELDS.STATUS}} = '${AIRTABLE_APPROVED_STATUS}',
-        IS_AFTER({${AIRTABLE_ORBIT_BASE.EVENTS_TABLE.FIELDS.START_DATE}}, '${new Date().toISOString()}')
-      )`,
     })
     .all()
 
@@ -80,12 +80,12 @@ async function fetchAndParseAirtableEvents() {
   }))
 }
 
-type OrbitEventsGridProps = {
+type OrbitEventsProps = {
   events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>
   searchParams: NextServerSearchParams
 }
 
-function OrbitEvents({ events, searchParams }: OrbitEventsGridProps) {
+function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: events,
@@ -147,11 +147,7 @@ export async function OrbitEventsSection({
     const events = await fetchAndParseAirtableEvents()
 
     if (events.length === 0) {
-      return (
-        <div className="max-w-readable">
-          <p>There are currently no upcoming events.</p>
-        </div>
-      )
+      return <p>There are currently no upcoming events.</p>
     }
 
     return <OrbitEvents events={events} searchParams={searchParams} />
