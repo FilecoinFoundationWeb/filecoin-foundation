@@ -11,7 +11,7 @@ start-date: 2024-08-07T14:55:19.871Z
 end-date: 2024-08-11T14:55:19.882Z
 image:
   src: /assets/images/dweb-camp24.png
-  alt: DWeb Camp Logo
+  alt: ""
 seo:
   title: DWeb Camp 2024
   description: Attend DWeb Camp 2024 to engage in workshops, talks, and activities
