@@ -10,5 +10,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: '/blog/([A-Z][a-zA-Z0-9-]*$)',
+  matcher: '/blog/([A-Za-z0-9-]*[A-Z][A-Za-z0-9-]*)',
 }
