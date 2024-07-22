@@ -18,7 +18,7 @@ export function getDigestData(slug: string): DigestData {
   )
 }
 
-export function getDigestsData(): DigestData[] {
+export function getDigestArticlesData(): DigestData[] {
   return transformMarkdownToCollectionData<DigestData>(
     DIGEST_DIRECTORY_PATH,
     DIGEST_COLLECTION_NAME,

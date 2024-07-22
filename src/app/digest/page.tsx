@@ -10,7 +10,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestsData } from '@/utils/getDigestData'
+import { getDigestArticlesData } from '@/utils/getDigestData'
 
 import { attributes } from '@/content/pages/digest.md'
 
@@ -21,7 +21,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
-const digests = getDigestsData()
+const digests = getDigestArticlesData()
 
 export const metadata = createMetadata({
   seo,
