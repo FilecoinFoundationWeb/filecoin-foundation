@@ -5,7 +5,7 @@ updated-on: 2024-07-10T15:13:00.000Z
 published-on: 2024-07-10T15:13:00.000Z
 image:
   url: /assets/images/filorg_imagefallback.png
-  alt: Test
+  src: /assets/images/66073297e6e8ec9445d76d19_tellor.png
 category: artificial-intelligence
 subcategories:
   - arts-collectibles-nfts
@@ -33,4 +33,5 @@ seo:
     title: test
     image: /assets/images/filorg_imagefallback.png
 ---
+
 test
