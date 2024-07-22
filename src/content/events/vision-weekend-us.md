@@ -1,5 +1,5 @@
 ---
-title: "Vision Weekend "
+title: Vision Weekend 2022
 created-on: 2023-06-27T17:27:58.490Z
 updated-on: 2023-06-27T17:27:58.515Z
 published-on: 2023-06-27T17:27:58.530Z
