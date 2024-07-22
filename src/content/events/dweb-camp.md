@@ -13,7 +13,7 @@ image:
   src: /assets/images/dweb-camp.png
   alt: null
 seo:
-  title: DWeb Camp
-  description: Explore the decentralized web at DWeb Camp through workshops,
+  title: DWeb Camp 2022
+  description: Explore the decentralized web at DWeb Camp 2022 through workshops,
     discussions, and collaborative activities.
 ---
