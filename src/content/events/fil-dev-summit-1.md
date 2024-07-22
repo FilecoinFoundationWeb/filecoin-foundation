@@ -13,7 +13,7 @@ image:
   src: /assets/images/fil-dev-summit.png
   alt: null
 seo:
-  title: FIL Dev Summit 1
-  description: Join the FIL Dev Summit 1 to collaborate with developers and
-    explore the latest in Filecoin technology.
+  title: FIL Dev Summit Singapore
+  description: Join the FIL Dev Summit Singapore to collaborate with developers
+    and explore the latest in Filecoin technology.
 ---
