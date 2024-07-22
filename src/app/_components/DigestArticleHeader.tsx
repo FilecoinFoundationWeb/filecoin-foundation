@@ -10,20 +10,20 @@ import { graphicsData } from '@/data/graphicsData'
 
 type DigestArticleHeaderProps = Pick<
   DigestData,
-  'title' | 'articleNumber' | 'issueNumber' | 'image'
+  'title' | 'issueNumber' | 'articleNumber' | 'image'
 >
 
 export function DigestArticleHeader({
   title,
-  articleNumber,
   issueNumber,
+  articleNumber,
   image,
 }: DigestArticleHeaderProps) {
   return (
     <header className="space-y-6">
       <div className="space-y-4">
         <div className="space-x-3">
-          <TagLabel>{`Issue ${issueNumber.toString()}`}</TagLabel>
+          <TagLabel borderColor="brand-100">{`Issue ${issueNumber.toString()}`}</TagLabel>
           <TagLabel>{`Article ${articleNumber.toString()}`}</TagLabel>
         </div>
         <Heading tag="h1" variant="4xl">

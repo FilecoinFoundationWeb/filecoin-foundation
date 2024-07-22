@@ -9,7 +9,7 @@ import { PATHS } from '@/constants/paths'
 const DIGEST_COLLECTION_NAME = 'digest'
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 
-export function getDigestData(slug: string): DigestData {
+export function getDigestArticleData(slug: string): DigestData {
   return transformMarkdownToItemData<DigestData>(
     DIGEST_DIRECTORY_PATH,
     DIGEST_COLLECTION_NAME,

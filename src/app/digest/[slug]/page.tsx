@@ -4,7 +4,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestData } from '@/utils/getDigestData'
+import { getDigestArticleData } from '@/utils/getDigestData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
@@ -18,7 +18,7 @@ type DigestArticleProps = {
 
 export function generateMetadata({ params }: DigestArticleProps) {
   const { slug } = params
-  const data = getDigestData(slug)
+  const data = getDigestArticleData(slug)
 
   return createMetadata({
     seo: data.seo,
@@ -28,9 +28,9 @@ export function generateMetadata({ params }: DigestArticleProps) {
 
 export default function DigestArticle({ params }: DigestArticleProps) {
   const { slug } = params
-  const data = getDigestData(slug)
+  const data = getDigestArticleData(slug)
 
-  const { image, title, content, articleNumber, issueNumber } = data
+  const { title, issueNumber, articleNumber, image, content } = data
 
   return (
     <PageLayout>
@@ -38,9 +38,9 @@ export default function DigestArticle({ params }: DigestArticleProps) {
       <div className="m-auto max-w-2xl space-y-16">
         <DigestArticleHeader
           title={title}
-          image={image}
-          articleNumber={articleNumber}
           issueNumber={issueNumber}
+          articleNumber={articleNumber}
+          image={image}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
       </div>
