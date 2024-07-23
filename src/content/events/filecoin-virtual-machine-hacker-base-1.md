@@ -13,7 +13,7 @@ image:
   src: /assets/images/fvm-hackerbase-2023.png
   alt: null
 seo:
-  title: "Filecoin Virtual Machine Hacker Base "
+  title: Filecoin Virtual Machine Hacker Base
   description: Join the Filecoin Virtual Machine Hacker Base to collaborate and
     innovate with the Filecoin community.
 ---
