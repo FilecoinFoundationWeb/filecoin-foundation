@@ -1,5 +1,5 @@
 ---
-title: "AGI: Cryptography, Security & Multipolar Scenarios Workshop"
+title: "AGI: Cryptography, Security & Multipolar Scenarios Workshop "
 created-on: 2024-02-21T16:48:19.477Z
 updated-on: 2024-02-21T16:48:19.493Z
 published-on: 2024-02-21T16:48:19.506Z
