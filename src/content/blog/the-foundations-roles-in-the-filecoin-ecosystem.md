@@ -9,7 +9,7 @@ description: In 2017, the creators of Filecoin envisioned an independent
   ecosystem.
 image:
   src: /assets/images/05961c86-9ac6-4a56-bc0a-53fd3cab1126.jpg
-  alt: The Foundations' Roles in the Filecoin Ecosystem
+  alt: null
 recommended-posts: []
 seo:
   title: The Foundation's Roles in the Filecoin Ecosystem
