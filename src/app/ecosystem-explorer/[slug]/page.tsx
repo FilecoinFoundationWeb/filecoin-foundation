@@ -88,8 +88,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
       </header>
 
       <div className="flex flex-wrap justify-between gap-8">
-        <div className="max-w-readable">
-          <div className="mb-8 space-y-6">
+        <div className="max-w-readable space-y-8">
+          <div className="space-y-6">
             <Heading tag="h1" variant="4xl">
               {title}
             </Heading>
@@ -99,7 +99,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           {videoUrl && <VideoSection videoUrl={videoUrl} />}
 
           {newsUpdate && (
-            <div className="prose mb-8">
+            <div className="prose">
               <span className="not-prose text-brand-300">
                 <Heading tag="h3" variant="xl">
                   Latest Update
