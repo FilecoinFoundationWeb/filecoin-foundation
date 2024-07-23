@@ -3,23 +3,15 @@
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 import useSWR from 'swr'
 
+import { fetchYouTubeVideoMetadata } from '../services/youtube'
+
 const YOUTUBE_EMBED_BASE_URL = 'https://www.youtube.com/embed/'
 
 type YouTubeEmbedProps = {
   videoUrl: string
 }
 
-type YouTubeVideoMetadata = {
-  title: string
-}
-
-function fetchYouTubeVideoMetadata(
-  videoId: string,
-): Promise<YouTubeVideoMetadata> {
-  return fetch(
-    `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`,
-  ).then((response) => response.json())
-}
+const removeMoreVideosSuggestionsOnPause = 'rel=0'
 
 export function VideoSection({ videoUrl }: YouTubeEmbedProps) {
   const isUrlFormatValid = videoUrl.startsWith(YOUTUBE_EMBED_BASE_URL)
@@ -36,12 +28,10 @@ export function VideoSection({ videoUrl }: YouTubeEmbedProps) {
   )
 
   if (!isUrlFormatValid || error) {
-    // Add sentry error reporting here?
-
     return (
       <div
         className="flex aspect-video items-center justify-center rounded-lg bg-brand-700"
-        role="alert"
+        role="status"
       >
         <p>Video unavailable</p>
       </div>
@@ -56,6 +46,7 @@ export function VideoSection({ videoUrl }: YouTubeEmbedProps) {
       iframeClass="focus:brand-outline w-full h-full cursor-pointer"
       playerClass="sr-only"
       noCookie={true}
+      params={removeMoreVideosSuggestionsOnPause}
     />
   )
 }
