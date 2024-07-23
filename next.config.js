@@ -224,6 +224,11 @@ const nextConfig = {
         destination: '/ecosystem-explorer',
         permanent: true,
       },
+      {
+        source: '/ecosystem-explorer/projects/bildo',
+        destination: '/ecosystem-explorer/projects/bidlo',
+        permanent: true,
+      },
 
       // EXTERNAL REDIRECTS
       {
