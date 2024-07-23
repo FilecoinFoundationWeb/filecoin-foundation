@@ -16,7 +16,7 @@ import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 
 export type SearchProps = {
   query: ReturnType<typeof useSearch>['searchQuery']
-  id: 'mobile-search' | 'web-search'
+  id: 'mobile-search' | 'web-search' | 'search'
 }
 
 const DEBOUNCE_DELAY = 400

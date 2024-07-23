@@ -16,13 +16,13 @@ tech:
 image:
   src: /assets/images/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
   alt: "UC Berkeley Underground Physics Group Logo"
-website: "https://underground.physics.berkeley.edu/"
+website:
 repo:
 twitter:
 video-url:
 year-joined:
 news-update:
-featured-content: "https://www.sealstorage.io/blog/uc-berkeley-uses-web3-decentralized-storage-for-neutrino-research-data"
+featured-content: https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group
 subcategories:
   - decentralized-science
 seo:
