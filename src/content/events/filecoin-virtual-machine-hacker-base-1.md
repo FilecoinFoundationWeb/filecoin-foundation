@@ -13,8 +13,7 @@ image:
   alt:
 category: hosted
 seo:
-  title: Filecoin Virtual Machine Hacker Base 1
-  description:
-    Join the Filecoin Virtual Machine Hacker Base 1 to collaborate and
+  title: Filecoin Virtual Machine Hacker Base
+  description: Join the Filecoin Virtual Machine Hacker Base to collaborate and
     innovate with the Filecoin community.
 ---
