@@ -12,7 +12,7 @@ tech:
 image:
   src: /assets/images/660732916a689d42cb0e1eb4_clover.png
   alt: Clover Logo
-website:
+website: https://github.com/useclover/clover-warp
 featured-content:
 repo:
 twitter: https://twitter.com/cloversuite

@@ -16,7 +16,7 @@ tech:
 image:
   src: /assets/images/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
   alt: "UC Berkeley Underground Physics Group Logo"
-website:
+website: https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group
 repo:
 twitter:
 video-url:
