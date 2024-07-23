@@ -1,5 +1,5 @@
 ---
-title: " Filecoin Booth at EthCC 2024"
+title: "Filecoin Booth at EthCC 2024"
 created-on: 2024-01-29T15:51:57.361Z
 updated-on: 2024-01-29T15:51:57.372Z
 published-on: 2024-01-29T15:51:57.389Z
