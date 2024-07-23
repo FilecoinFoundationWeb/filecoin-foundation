@@ -14,7 +14,7 @@ tech:
 image:
   src: /assets/images/long_white.png
   alt: GLIF Logo
-website: https://glif.io
+website: https://www.glif.io/en
 repo: https://github.com/glifio
 featured-content: nul
 twitter: https://twitter.com/glifio
