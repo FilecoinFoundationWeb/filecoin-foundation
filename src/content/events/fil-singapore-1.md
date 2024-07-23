@@ -13,7 +13,7 @@ image:
   src: /assets/images/fil-singapore-24.png
   alt: ""
 seo:
-  title: "FIL Singapore "
+  title: "FIL Singapore"
   description: Join FIL Singapore to connect with the Filecoin community and
     explore the latest innovations.
 ---
