@@ -6,7 +6,7 @@ created-on: "2023-05-03T08:06:29.883Z"
 updated-on: "2023-05-03T08:06:29.883Z"
 published-on: "2023-05-03T08:22:38.798Z"
 description:
-location:
+location: Virtual
 external-link: https://www.youtube.com/watch?v=LU_WjU0mUuM
 start-date: "2021-03-04T23:00:00.000Z"
 end-date:
