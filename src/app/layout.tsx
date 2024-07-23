@@ -17,18 +17,12 @@ export const metadata: Metadata = {
 
 export type LayoutProps = {
   children: React.ReactNode
-  includeNetlifyManager?: boolean
 }
 
-export default function RootLayout({
-  children,
-  includeNetlifyManager = true,
-}: LayoutProps) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <PlausibleProvider domain="fil.org">
-      <SiteLayout includeNetlifyManager={includeNetlifyManager}>
-        {children}
-      </SiteLayout>
+      <SiteLayout>{children}</SiteLayout>
     </PlausibleProvider>
   )
 }
