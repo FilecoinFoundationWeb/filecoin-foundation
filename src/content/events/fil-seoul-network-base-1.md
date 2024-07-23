@@ -13,7 +13,7 @@ image:
   src: /assets/images/fil-seoul-bg.png
   alt: ""
 seo:
-  title: "FIL Seoul Network Base "
+  title: "FIL Seoul Network Base"
   description: Participate in FIL Seoul Network Base  to network with the Filecoin
     community and discover new opportunities.
 ---
