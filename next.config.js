@@ -225,8 +225,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/ecosystem-explorer/projects/bildo',
-        destination: '/ecosystem-explorer/projects/bidlo',
+        source: '/ecosystem-explorer/bildo',
+        destination: '/ecosystem-explorer/bidlo',
         permanent: true,
       },
 
