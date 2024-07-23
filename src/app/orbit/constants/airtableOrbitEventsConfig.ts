@@ -8,5 +8,5 @@ export const AIRTABLE_ORBIT_EVENTS_CONFIG = {
     TITLE: 'fldhD7ClKauhqeD79',
     REGISTRATION_LINK: 'fldlcV4631rFgbdd6',
   },
-  AIRTABLE_APPROVED_STATUS: 'Approved',
+  APPROVED_STATUS_VALUE: 'Approved',
 } as const

@@ -4,7 +4,7 @@ import z from 'zod'
 import { AIRTABLE_ORBIT_EVENTS_CONFIG } from '../constants/airtableOrbitEventsConfig'
 
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })
-const { BASE_ID, EVENTS_TABLE_ID, FIELDS, AIRTABLE_APPROVED_STATUS } =
+const { BASE_ID, EVENTS_TABLE_ID, FIELDS, APPROVED_STATUS_VALUE } =
   AIRTABLE_ORBIT_EVENTS_CONFIG
 const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
 
@@ -25,7 +25,7 @@ export async function fetchAndParseAirtableEvents() {
       fields: Object.values(FIELDS),
       returnFieldsByFieldId: true,
       filterByFormula: `AND(
-        {${FIELDS.STATUS}} = '${AIRTABLE_APPROVED_STATUS}',
+        {${FIELDS.STATUS}} = '${APPROVED_STATUS_VALUE}',
         IS_AFTER({${FIELDS.START_DATE}}, '${new Date().toISOString()}')
       )`,
       sort: [
