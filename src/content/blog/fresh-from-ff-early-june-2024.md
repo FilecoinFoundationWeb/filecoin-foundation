@@ -51,7 +51,7 @@ seo:
 ## Comms, Marketing, & Events
 
 - Filecoin Foundation President Marta Belcher spoke on the Consensus Town Square Stage for a session on [Defining Our Rights in a Digital Age](https://consensus2024.coindesk.com/agenda/event/-town-hall-defining-our-rights-in-a-digital-age-130).
-- Founding Officer Megan Klimen joined a DePIN panel at [Akash Accelerate](https://akash.network/akash-accelerate-2024/), a summit that explores the future of decentralized compute and open-source AI. Additionally, Megan was a speaker at the [R3al World DePIN House](https://lu.ma/r3al-world-depin-consensus), leading a session on Decentralized Modular Infra for DePIN.
+- Founding Officer Megan Klimen joined a DePIN panel at Akash Accelerate, a summit that explores the future of decentralized compute and open-source AI. Additionally, Megan was a speaker at the [R3al World DePIN House](https://lu.ma/r3al-world-depin-consensus), leading a session on Decentralized Modular Infra for DePIN.
 - Founding Officer Clara Tsao spoke on an [Innovate Austin](https://www.innovate.thetie.io/) panel titled “Going Global: How Protocols are Expanding their International Footprint.”Clara was also a panelist on Decentralized AI Infra 101 at the MagnetAI Open House.
 - Alongside the Association of Cryptocurrency Journalists & Researchers (ACJR) and Hedera, Filecoin Foundation hosted a Media Meetup at Consensus for journalists and industry leaders.
 - Cami Russo, founder of The Defiant and author of The Infinite Machine, joined FF’s Aaron Stanley on [DWeb Decoded](https://youtu.be/3nVyrlf4tqM?feature=shared) to discuss her new documentary, the future of decentralized media, her background in journalism, and her path to crypto.

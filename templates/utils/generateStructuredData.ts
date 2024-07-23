@@ -1,4 +1,4 @@
-;`import { WebPage, WithContext } from 'schema-dts'
+`import { WebPage, WithContext } from 'schema-dts'
 
 import { SeoMetadata } from '@/types/metadataTypes'
 
