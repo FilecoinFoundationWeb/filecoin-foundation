@@ -13,7 +13,7 @@ image:
   src: /assets/images/fil-jakarta.png
   alt: ""
 seo:
-  title: "FIL Jakarta "
+  title: "FIL Jakarta"
   description: Participate in FIL Jakarta to network with the Filecoin community
     and discover new opportunities.
 ---
