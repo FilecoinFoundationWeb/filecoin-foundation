@@ -13,7 +13,7 @@ image:
   src: /assets/images/03292023-filplusmission.png
   alt: null
 seo:
-  title: "Filecoin Plus Day "
+  title: "Filecoin Plus Day"
   description: Celebrate Filecoin Plus Day and learn about the latest updates and
     innovations in the Filecoin ecosystem.
 ---
