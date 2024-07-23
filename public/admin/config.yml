@@ -27,6 +27,7 @@ image_config: &image_config
       label: "URL"
       widget: "image"
       allow_multiple: false
+      required: false
       hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
     - name: "alt"
       label: "Alt Text"
