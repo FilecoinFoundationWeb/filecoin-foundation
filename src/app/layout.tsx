@@ -20,10 +20,15 @@ export type LayoutProps = {
   includeNetlifyManager?: boolean
 }
 
-export default function RootLayout({ children }: LayoutProps) {
+export default function RootLayout({
+  children,
+  includeNetlifyManager = true,
+}: LayoutProps) {
   return (
     <PlausibleProvider domain="fil.org">
-      <SiteLayout>{children}</SiteLayout>
+      <SiteLayout includeNetlifyManager={includeNetlifyManager}>
+        {children}
+      </SiteLayout>
     </PlausibleProvider>
   )
 }
