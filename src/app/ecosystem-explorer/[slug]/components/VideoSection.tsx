@@ -56,21 +56,6 @@ export function VideoSection({ videoUrl }: YouTubeEmbedProps) {
       iframeClass="focus:brand-outline w-full h-full cursor-pointer"
       playerClass="sr-only"
       noCookie={true}
-      params="pauseoverlay=0"
     />
   )
 }
-
-//   return (
-//     <div className="mb-8 aspect-video">
-//       <iframe
-//         allowFullScreen
-//         width="100%"
-//         height="100%"
-//         aria-label="Embedded YouTube Video"
-//         src={videoUrl}
-//         title="YouTube video player"
-//         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-//       />
-//     </div>
-//   )
