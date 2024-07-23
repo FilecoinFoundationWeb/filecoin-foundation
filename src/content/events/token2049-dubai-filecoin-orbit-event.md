@@ -1,5 +1,5 @@
 ---
-title: "Filecoin Orbit Meetup Event alongside Token2049 Dubai "
+title: "Filecoin Orbit Meetup Event alongside Token2049 Dubai"
 created-on: 2024-01-29T15:45:39.297Z
 updated-on: 2024-01-29T15:45:39.305Z
 published-on: 2024-01-29T15:45:39.312Z
