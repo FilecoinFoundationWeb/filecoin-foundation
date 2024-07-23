@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 
 export type LayoutProps = {
   children: React.ReactNode
+  includeNetlifyManager?: boolean
 }
 
 export default function RootLayout({ children }: LayoutProps) {

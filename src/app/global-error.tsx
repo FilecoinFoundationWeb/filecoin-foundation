@@ -16,7 +16,7 @@ export default function GlobalError({ error }: { error: Error }) {
   }, [error])
 
   return (
-    <SiteLayout>
+    <SiteLayout includeNetlifyManager={false}>
       <ErrorMessage
         kicker="500"
         title="Internal Server Error"
