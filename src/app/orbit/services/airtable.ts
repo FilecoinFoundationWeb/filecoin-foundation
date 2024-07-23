@@ -38,7 +38,6 @@ export async function fetchAndParseAirtableEvents() {
     .all()
 
   const cleanRecords = rawAirtableRecords.map((record) => record.fields)
-
   const validatedRecords = airtableRecordsSchema.parse(cleanRecords)
 
   return validatedRecords.map((event) => ({
