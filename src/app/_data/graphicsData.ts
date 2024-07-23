@@ -6,6 +6,9 @@ import events1 from '@/assets/graphics/Filorg_Events1.png'
 import events2 from '@/assets/graphics/Filorg_Events2.png'
 import events3 from '@/assets/graphics/Filorg_Events3.png'
 import filPlus from '@/assets/graphics/Filorg_Fil_Plus.webp'
+import filPlusAbout1 from '@/assets/graphics/Filorg_Fil_Plus_About1.webp'
+import filPlusAbout2 from '@/assets/graphics/Filorg_Fil_Plus_About2.webp'
+import filPlusAbout3 from '@/assets/graphics/Filorg_Fil_Plus_About3.webp'
 import governance1 from '@/assets/graphics/Filorg_Governance1.png'
 import governance2 from '@/assets/graphics/Filorg_Governance2.png'
 import governance3 from '@/assets/graphics/Filorg_Governance3.png'
@@ -48,6 +51,18 @@ export const graphicsData: Record<string, StaticImageProps> = {
   filPlus: {
     data: filPlus,
     alt: 'Long row of modern, sleek server racks in a bright, white room, with blue LED lights glowing from within, creating a futuristic and high-tech atmosphere.',
+  },
+  filPlusAbout1: {
+    data: filPlusAbout1,
+    alt: 'Stacked glossy white cubes arranged on a light surface.',
+  },
+  filPlusAbout2: {
+    data: filPlusAbout2,
+    alt: 'Floating and stacked glossy white cubes in a futuristic, reflective room.',
+  },
+  filPlusAbout3: {
+    data: filPlusAbout3,
+    alt: 'Glossy white cube with a glowing blue sphere inside.',
   },
   governance1: {
     data: governance1,

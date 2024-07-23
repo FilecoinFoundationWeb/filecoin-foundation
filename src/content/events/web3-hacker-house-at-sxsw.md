@@ -7,7 +7,7 @@ description: >-
   Join us for the Web3 Hacker House @ SXSW! Participate in mini hackathons, meet with
   developers, check out panels, live workshops and more. Detailed schedule, speakers
   and more information coming soon!
-location:
+location: Austin, TX
 external-link:
 start-date: "2022-03-13T16:00:00.000Z"
 end-date:

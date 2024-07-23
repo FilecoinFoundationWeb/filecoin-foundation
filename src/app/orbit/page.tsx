@@ -1,6 +1,5 @@
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
-import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
@@ -14,6 +13,8 @@ import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
+import { NextServerSearchParams } from '@/types/searchParams'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { attributes } from '@/content/pages/orbit.md'
@@ -22,6 +23,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
+import { OrbitEventsSection } from './components/EventsSection'
 import { ambassadorsData } from './data/ambassadorsData'
 import { exploreOrbitData } from './data/exploreOrbitData'
 import { programFeaturesAndPerksData } from './data/programFeaturesAndPerksData'
@@ -37,7 +39,11 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-export default function Orbit() {
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+export default function Orbit({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -87,11 +93,7 @@ export default function Orbit() {
         title="Global Orbit Events"
         description="All Orbit events are free to attend! Come meet the members of your Filecoin community in our upcoming events."
       >
-        <div className="max-w-readable">
-          <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
-            Check Upcoming Events
-          </Button>
-        </div>
+        <OrbitEventsSection searchParams={searchParams} />
       </PageSection>
 
       <PageSection
