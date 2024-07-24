@@ -22,6 +22,7 @@ image_config: &image_config
   name: "image"
   label: "Image"
   widget: "object"
+  hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
   fields:
     - name: "src"
       label: "URL"
