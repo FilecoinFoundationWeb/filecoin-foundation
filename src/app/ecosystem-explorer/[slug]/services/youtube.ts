@@ -1,6 +1,6 @@
 import z from 'zod'
 
-const videoMetedataSchema = z.object({
+const videoMetadataSchema = z.object({
   title: z.string(),
   author_name: z.string(),
   author_url: z.string(),
@@ -21,5 +21,5 @@ export async function fetchYouTubeVideoMetadata(videoId: string) {
     `https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=${videoId}&format=json`,
   )
     .then((response) => response.json())
-    .then(videoMetedataSchema.parse)
+    .then(videoMetadataSchema.parse)
 }

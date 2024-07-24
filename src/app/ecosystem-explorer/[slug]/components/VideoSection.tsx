@@ -5,15 +5,14 @@ import useSWR from 'swr'
 
 import { fetchYouTubeVideoMetadata } from '../services/youtube'
 
-const YOUTUBE_EMBED_BASE_URL = 'https://www.youtube.com/embed/'
-
-type YouTubeEmbedProps = {
+type VideoSectionProps = {
   videoUrl: string
 }
 
+const YOUTUBE_EMBED_BASE_URL = 'https://www.youtube.com/embed/'
 const removeMoreVideosSuggestionsOnPause = 'rel=0'
 
-export function VideoSection({ videoUrl }: YouTubeEmbedProps) {
+export function VideoSection({ videoUrl }: VideoSectionProps) {
   const isUrlFormatValid = videoUrl.startsWith(YOUTUBE_EMBED_BASE_URL)
   const videoId = videoUrl.replace(YOUTUBE_EMBED_BASE_URL, '')
 
