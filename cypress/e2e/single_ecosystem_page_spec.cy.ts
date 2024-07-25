@@ -1,6 +1,6 @@
-import { PATHS } from '../../src/app/_constants/paths'
-import { getRandomSlug } from '../support/getRandomSlugUtil'
-import { verifyMetadata } from '../support/verifyMetadataUtil'
+import { PATHS } from '@/constants/paths'
+import { getRandomSlug } from '@/support/getRandomSlugUtil'
+import { verifyMetadata } from '@/support/verifyMetadataUtil'
 
 describe('Random Ecosystem Explorer Project', () => {
   it('should check metadata', () => {
