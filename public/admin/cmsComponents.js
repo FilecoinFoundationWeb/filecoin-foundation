@@ -161,3 +161,116 @@ CMS.registerEditorComponent({
   toBlock: renderAudioComponent,
   toPreview: renderAudioComponent,
 })
+
+// https://decapcms.org/docs/registering-events/
+CMS.registerEventListener({
+  name: 'preSave',
+  handler: async ({ entry }) => {
+    const newEmail = entry.get('data').get('email')
+
+    if (!newEmail) {
+      return
+    }
+
+    const response = await fetch('/api/encryption', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        value: newEmail,
+        operation: 'encrypt',
+      }),
+    })
+
+    if (response.status !== 200) {
+      throw new Error('Could not encrypt email')
+    }
+
+    const { result: encrypted } = await response.json()
+
+    return entry.get('data').set('email', encrypted)
+  },
+})
+
+// https://decapcms.org/docs/custom-widgets/
+const DecryptedEmailWidget = createClass({
+  getInitialState() {
+    return { data: undefined, error: null, loading: true }
+  },
+
+  componentDidMount() {
+    this.decryptEmail(this.props.value)
+  },
+
+  handleChange: function (e) {
+    const newValue = e.target.value
+    this.props.onChange(newValue)
+    this.setState({ ...this.state, data: newValue })
+  },
+
+  async decryptEmail(encryptedEmail) {
+    try {
+      const response = await fetch('/api/encryption', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          value: encryptedEmail,
+          operation: 'decrypt',
+        }),
+      })
+
+      if (response.status !== 200) {
+        return this.setState({
+          data: undefined,
+          error: 'Could not decrypt email',
+          loading: false,
+        })
+      }
+
+      const { result: decrypted } = await response.json()
+      this.setState({
+        data: decrypted,
+        error: null,
+        loading: false,
+      })
+    } catch (error) {
+      this.setState({
+        data: undefined,
+        error: 'Could not decrypt email',
+        loading: false,
+      })
+    }
+  },
+
+  render: function () {
+    const { data, error } = this.state
+
+    if (typeof data !== undefined) {
+      return h('input', {
+        ...this.props,
+        id: this.props.forID,
+        className: this.props.classNameWrapper,
+        type: 'email',
+        value: data,
+        onChange: this.handleChange,
+      })
+    }
+
+    if (error) {
+      return h('div', {}, error)
+    }
+
+    return h('div', {}, 'Loading...')
+  },
+})
+
+const DecryptedEmailPreview = createClass({
+  render: function () {
+    return h('span', {}, '')
+  },
+})
+
+CMS.registerWidget(
+  'decrypted_email',
+  DecryptedEmailWidget,
+  DecryptedEmailPreview,
+)
