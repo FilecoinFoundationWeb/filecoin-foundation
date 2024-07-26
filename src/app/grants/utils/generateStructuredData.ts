@@ -5,11 +5,17 @@ import { SeoMetadata } from '@/types/metadataTypes'
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 
 export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
-  return generateWebPageStructuredData({
+  const baseData = generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
     path: PATHS.GRANTS.path,
   })
+
+  return {
+    ...baseData,
+    about: BASE_ORGANIZATION_SCHEMA,
+  }
 }
