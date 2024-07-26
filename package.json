@@ -10,7 +10,9 @@
     "start": "next start",
     "lint": "next lint --fix",
     "validate-md": "node scripts/validateMarkdown.js",
-    "test": "cypress run --spec 'cypress/e2e/**/*.cy.ts,!cypress/e2e/weekly_schedule/**/*.cy.ts'",
+    "test:all": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
+    "test:critical": "percy exec -- cypress run --spec 'cypress/e2e/critical/**/*.cy.ts'",
+    "test:weekly_schedule": "cypress run --spec 'cypress/e2e/weekly_schedule/**/*.cy.ts'",
     "generate:page": "node scripts/generatePageTemplates.js"
   },
   "dependencies": {
