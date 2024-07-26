@@ -5,6 +5,21 @@ import useSWR from 'swr'
 
 import { fetchYouTubeVideoMetadata } from '../services/youtube'
 
+type VideoPlaceholderProps = {
+  text: string
+}
+
+function VideoPlaceholder({ text }: VideoPlaceholderProps) {
+  return (
+    <div
+      className="flex aspect-video items-center justify-center rounded-lg bg-brand-700"
+      role="status"
+    >
+      <p>{text}</p>
+    </div>
+  )
+}
+
 type VideoSectionProps = {
   videoUrl: string
 }
@@ -27,25 +42,22 @@ export function VideoSection({ videoUrl }: VideoSectionProps) {
   )
 
   if (!isUrlFormatValid || error) {
+    return <VideoPlaceholder text="Video unavailable" />
+  }
+
+  if (data) {
     return (
-      <div
-        className="flex aspect-video items-center justify-center rounded-lg bg-brand-700"
-        role="status"
-      >
-        <p>Video unavailable</p>
-      </div>
+      <LiteYouTubeEmbed
+        id={videoId}
+        title={data.title}
+        wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
+        iframeClass="focus:brand-outline w-full h-full cursor-pointer"
+        playerClass="sr-only"
+        noCookie={true}
+        params={removeMoreVideosSuggestionsOnPause}
+      />
     )
   }
 
-  return (
-    <LiteYouTubeEmbed
-      id={videoId}
-      title={data?.title || 'YouTube video player'}
-      wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
-      iframeClass="focus:brand-outline w-full h-full cursor-pointer"
-      playerClass="sr-only"
-      noCookie={true}
-      params={removeMoreVideosSuggestionsOnPause}
-    />
-  )
+  return <VideoPlaceholder text="Loading video..." />
 }
