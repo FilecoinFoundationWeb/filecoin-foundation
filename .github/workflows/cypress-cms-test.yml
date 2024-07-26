@@ -1,0 +1,70 @@
+name: Cypress CMS Content Tests
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, labeled]
+
+jobs:
+  cypress-run:
+    if: contains(github.event.pull_request.labels.*.name, 'decap-cms/draft') # Run only if PR has the label 'decap-cms/draft'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.11.1"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Extract Changed Content File
+        id: extract_content_file
+        run: |
+          # Get the list of changed files in the PR
+          CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
+
+          # Extract the first changed content file from blog, event, or ecosystem-project directories
+          CONTENT_FILE=$(echo "$CHANGED_FILES" | grep -E '^content/(blog|event|ecosystem-project)/' | head -n 1)
+
+          # Check if a content file was found
+          if [ -z "$CONTENT_FILE" ]; then
+            echo "No content file changes detected."
+            exit 1
+          fi
+
+          # Determine the type and slug from the file path
+          if [[ "$CONTENT_FILE" == content/blog/* ]]; then
+            CONTENT_TYPE="blog"
+            CONTENT_SLUG=$(basename "$CONTENT_FILE" .md)
+          elif [[ "$CONTENT_FILE" == content/event/* ]]; then
+            CONTENT_TYPE="event"
+            CONTENT_SLUG=$(basename "$CONTENT_FILE" .md)
+          elif [[ "$CONTENT_FILE" == content/ecosystem-project/* ]]; then
+            CONTENT_TYPE="ecosystem-project"
+            CONTENT_SLUG=$(basename "$CONTENT_FILE" .md)
+          else
+            echo "Unsupported content type."
+            exit 1
+          fi
+
+          # Derive the content URL from the type and slug (adjust this logic as needed)
+          CONTENT_URL="http://localhost:3000/${CONTENT_TYPE}/${CONTENT_SLUG}"
+
+          echo "CONTENT_URL=$CONTENT_URL" >> $GITHUB_ENV
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Start Server
+        run: |
+          npm start &
+          echo "Waiting for server to start..."
+          npx wait-on http://localhost:3000
+
+      - name: Run Cypress Tests
+        run: npx cypress run --env CONTENT_URL=${{ env.CONTENT_URL }}
