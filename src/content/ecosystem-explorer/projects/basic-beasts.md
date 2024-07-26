@@ -5,7 +5,7 @@ updated-on: 2024-03-29T21:36:57.674Z
 published-on: 2024-03-29T21:36:57.674Z
 image:
   src: /assets/images/basicbeasts.png
-  alt: Basic Beasts Logo
+  alt: ""
 category: media-entertainment
 subcategories:
   - arts-collectibles-nfts
