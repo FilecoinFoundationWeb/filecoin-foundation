@@ -10,7 +10,7 @@ external-link: null
 start-date: 2021-07-31T22:00:00.000Z
 end-date: 2021-10-30T22:00:00.000Z
 image:
-  src: /assets/images/filorg_imagefallback.png
+  src: null
   alt: ""
 seo:
   title: Asia Hackathon Season 2021
