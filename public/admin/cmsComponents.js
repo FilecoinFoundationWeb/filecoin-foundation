@@ -198,7 +198,13 @@ const DecryptedEmailWidget = createClass({
   },
 
   componentDidMount() {
-    this.decryptEmail(this.props.value)
+    const existingValue = this.props.value
+
+    if (typeof existingValue !== 'undefined') {
+      return this.decryptEmail(existingValue)
+    }
+
+    this.setState({ loading: false, error: null, data: '' })
   },
 
   handleChange: function (e) {
@@ -242,24 +248,24 @@ const DecryptedEmailWidget = createClass({
   },
 
   render: function () {
-    const { data, error } = this.state
-
-    if (typeof data !== undefined) {
-      return h('input', {
-        ...this.props,
-        id: this.props.forID,
-        className: this.props.classNameWrapper,
-        type: 'email',
-        value: data,
-        onChange: this.handleChange,
-      })
-    }
+    const { data, error, loading } = this.state
 
     if (error) {
       return h('div', {}, error)
     }
 
-    return h('div', {}, 'Loading...')
+    if (loading) {
+      return h('div', {}, 'Loading...')
+    }
+
+    return h('input', {
+      ...this.props,
+      id: this.props.forID,
+      className: this.props.classNameWrapper,
+      type: 'email',
+      value: data,
+      onChange: this.handleChange,
+    })
   },
 })
 

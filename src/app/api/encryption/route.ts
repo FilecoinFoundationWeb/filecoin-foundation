@@ -5,7 +5,7 @@ import z from 'zod'
 import { encrypt, decrypt } from '@/utils/encryption'
 
 const payloadSchema = z.object({
-  value: z.string().max(240),
+  value: z.string(),
   operation: z.enum(['encrypt', 'decrypt']),
 })
 
