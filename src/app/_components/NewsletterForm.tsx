@@ -10,6 +10,7 @@ import { InputField, InputFieldProps } from './InputField'
 
 export const newsletterFields: InputFieldProps[] = [
   {
+    id: 'email',
     name: 'email',
     type: 'email',
     label: 'Email',
