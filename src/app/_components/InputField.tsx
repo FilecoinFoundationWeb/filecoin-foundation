@@ -14,14 +14,14 @@ export type InputFieldProps = {
 }
 
 export const InputField = React.forwardRef<HTMLInputElement, InputFieldProps>(
-  ({ id, errorMessage, isLabelHidden = true, ...rest }, ref) => {
+  ({ id, label, isLabelHidden = true, errorMessage, ...rest }, ref) => {
     return (
       <div className="relative space-y-2">
         <label
           className={`text-sm font-bold text-brand-300 ${isLabelHidden ? 'sr-only' : ''}`}
           htmlFor={id}
         >
-          {rest.label}
+          {label}
         </label>
         <input
           ref={ref}
