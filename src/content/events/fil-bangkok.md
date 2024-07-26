@@ -5,7 +5,7 @@ updated-on: 2024-01-29T16:18:33.946Z
 published-on: 2024-01-29T16:18:33.953Z
 category: hosted
 description: Dive into decentralized AI infrastructure, DePIN, and the evolving
-  data economy at FIL Bangkok, November 10, ahead of Devcon. Set in Thailand’s
+  data economy at FIL Bangkok, November 11, ahead of Devcon. Set in Thailand’s
   vibrant capital and hosted by Filecoin Foundation, FIL Bangkok unites the
   Filecoin ecosystem and broader Web3 community for a day of innovation and
   collaboration. Join us to learn more about key network upgrades, new L2
@@ -14,8 +14,8 @@ description: Dive into decentralized AI infrastructure, DePIN, and the evolving
   chapter of a better internet. Secure your spot early.
 location: Bangkok, Thailand
 external-link: null
-start-date: 2024-11-10T16:18:33.964Z
-end-date: 2024-11-14T16:18:00.000Z
+start-date: 2024-11-11T11:18:00.000Z
+end-date: 2024-11-11T11:18:00.000Z
 image:
   src: /assets/images/filbangkok-24.png
   alt: ""
