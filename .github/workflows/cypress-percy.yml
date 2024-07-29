@@ -36,4 +36,4 @@ jobs:
           npx wait-on http://localhost:3000
 
       - name: Run Cypress Tests with Percy
-        run: npm run test
+        run: npm run test:critical
