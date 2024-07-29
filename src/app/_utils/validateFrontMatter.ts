@@ -29,7 +29,7 @@ export function validateFrontMatter(
   fields: CMSFieldConfig[],
 ): boolean {
   const extraFieldsToSkipCheck: string[] = []
-  const temporaryMissingFieldsToSkipCheck: string[] = ['location']
+  const temporaryMissingFieldsToSkipCheck: string[] = []
   const dynamicMissingFieldsToSkipCheck: string[] = fields
     .filter((field) => field.required === false)
     .map((field) => field.name)
