@@ -9,6 +9,8 @@ import type { Route } from 'next'
 
 import { Icon } from '@/components/Icon'
 
+import { capitalize } from '@/utils/capitalize'
+
 import { PATHS } from '@/constants/paths'
 
 export function BreadCrumbs() {
@@ -18,7 +20,7 @@ export function BreadCrumbs() {
   const formatLabel = (path: string) => {
     let label = path
       .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word) => capitalize(word))
       .join(' ')
 
     const maxLength = 20

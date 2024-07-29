@@ -1,59 +1,64 @@
 'use client'
 
+import React from 'react'
+
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import { FieldErrors, SubmitHandler, useForm } from 'react-hook-form'
 
 import { NewsletterSchema } from '@/_schemas/newsletterSchema'
 
 import { Button } from './Button'
-import { InputField, InputFieldProps } from './InputField'
+import ControlledInput from './ControlledInput'
+import Form from './Form'
+import { InputProps } from './Input'
 
-export const newsletterFields: InputFieldProps[] = [
+export type FormType = {
+  email: string
+}
+
+export const newsletterFields: InputProps[] = [
   {
     id: 'email',
-    name: 'email',
-    type: 'email',
     label: 'Email',
+    type: 'email',
     placeholder: 'Enter your email',
   },
 ]
 
-type NewsletterFormData = {
-  email: string
-}
-
 export function NewsletterForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<NewsletterFormData>({
+  const methods = useForm<FormType>({
     resolver: zodResolver(NewsletterSchema),
   })
 
-  const onSubmit = (data: NewsletterFormData) => {
-    console.log(data)
-    reset()
+  const { isSubmitting } = methods.formState
+
+  const onSubmit: SubmitHandler<FormType> = async (values: FormType) => {
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+    methods.resetField('email')
+  }
+
+  const getError = (errors: FieldErrors<FormType>, name: keyof FormType) => {
+    return errors[name]?.message
   }
 
   return (
-    <form
-      className="relative flex items-end space-x-2"
-      onSubmit={handleSubmit(onSubmit)}
-    >
-      {newsletterFields.map((field) => (
-        <div key={field.name}>
-          <InputField
-            {...field}
-            {...register(field.name as keyof NewsletterFormData)}
-            errorMessage={
-              errors[field.name as keyof NewsletterFormData]?.message
-            }
+    <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
+      <div className="flex items-end space-x-2">
+        {newsletterFields.map((newsletterField) => (
+          <ControlledInput
+            key={newsletterField.id}
+            name={newsletterField.id}
+            {...newsletterField}
+            errors={getError(
+              methods.formState.errors,
+              newsletterField.id as keyof FormType,
+            )}
           />
-        </div>
-      ))}
-      <Button type="submit">Subscribe</Button>
-    </form>
+        ))}
+        <Button type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Subscribing' : 'Subscribe'}
+        </Button>
+      </div>
+    </Form>
   )
 }

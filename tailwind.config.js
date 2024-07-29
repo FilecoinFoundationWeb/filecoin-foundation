@@ -16,6 +16,9 @@ module.exports = {
           700: '#06094e',
           800: '#08072e',
         },
+        error: {
+          DEFAULT: '#FF7171',
+        },
       },
       typography: ({ theme }) => ({
         DEFAULT: {
