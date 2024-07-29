@@ -6,7 +6,7 @@ published-on: 2024-01-29T15:42:24.918Z
 category: supported-sponsored
 description: null
 location: Hong Kong, China
-external-link: https://fil-hk.io/
+external-link:
 start-date: 2024-04-05T14:42:24.931Z
 end-date: 2024-04-08T14:42:24.941Z
 image:
