@@ -38,7 +38,7 @@ if (!pageName) {
 const OUTPUT_DIRS = {
   output: path.join(__dirname, '../src/app', pageName),
   mdOutput: path.join(__dirname, '../src/content/pages'),
-  testOutput: path.join(__dirname, '../cypress/e2e'),
+  testOutput: path.join(__dirname, '../cypress/e2e/critical'),
   utilsOutput: path.join(path.join(__dirname, '../src/app', pageName), 'utils'),
 }
 

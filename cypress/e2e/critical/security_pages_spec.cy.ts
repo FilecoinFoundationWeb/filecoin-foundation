@@ -1,5 +1,5 @@
-import { PATHS } from '../../src/app/_constants/paths'
-import { testPageMetadata } from '../support/test-utils'
+import { PATHS } from '@/constants/paths'
+import { testPageMetadata } from '@/support/test-utils'
 
 describe('Security - Main Page', () => {
   testPageMetadata({ path: PATHS.SECURITY, overrideDefaultTitle: true })

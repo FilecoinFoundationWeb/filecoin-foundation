@@ -1,6 +1,6 @@
-import { PATHS } from '../../src/app/_constants/paths'
-import { testPageMetadata } from '../support/test-utils'
-import { verifyLinks } from '../support/verifyLinksUtil'
+import { PATHS } from '@/constants/paths'
+import { testPageMetadata } from '@/support/test-utils'
+import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Filecoin Plus Page', () => {
   it('should check metadata', () => {

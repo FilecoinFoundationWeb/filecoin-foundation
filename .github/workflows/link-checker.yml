@@ -2,6 +2,8 @@ name: Link Checker
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * 1" # 4 AM UTC (5 AM CET)
 
 jobs:
   cypress-weekly:
@@ -28,4 +30,4 @@ jobs:
           npx wait-on http://localhost:3000
 
       - name: Run Weekly Cypress Test
-        run: npx cypress run --spec "cypress/e2e/weekly_schedule/**/*.cy.ts"
+        run: npm run test:weekly_schedule
