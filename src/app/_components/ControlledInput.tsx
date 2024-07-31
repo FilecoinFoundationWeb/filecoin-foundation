@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useFormContext, Controller, RegisterOptions } from 'react-hook-form'
 
-import Input, { InputProps } from './Input'
+import { Input, type InputProps } from '@/components/Input'
 
 type Props = {
   name: string

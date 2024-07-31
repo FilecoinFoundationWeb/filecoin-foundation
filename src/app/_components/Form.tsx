@@ -13,13 +13,12 @@ type FormProps<Type extends FieldValues> = {
 } & Omit<React.ComponentProps<'form'>, 'onSubmit'>
 
 export default function Form<Type extends FieldValues>(props: FormProps<Type>) {
-  const { methods, children, onSubmit, className, ...rest } = props
+  const { methods, children, onSubmit, ...rest } = props
 
   return (
     <FormProvider {...methods}>
       <form
         autoComplete="on"
-        className={className}
         onSubmit={methods.handleSubmit(onSubmit)}
         {...rest}
       >
