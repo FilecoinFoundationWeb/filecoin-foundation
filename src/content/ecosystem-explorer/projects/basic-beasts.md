@@ -4,7 +4,7 @@ created-on: 2024-03-29T21:28:48.611Z
 updated-on: 2024-03-29T21:36:57.674Z
 published-on: 2024-03-29T21:36:57.674Z
 image:
-  src: /assets/images/basicbeasts.png
+  src: /assets/images/basic-beasts-logo.webp
   alt: ""
 category: media-entertainment
 subcategories:
