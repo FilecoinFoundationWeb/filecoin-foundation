@@ -17,9 +17,7 @@ export const NewsletterSchema: ZodSchema = z.object({
     .email('This is not a valid email.'),
 })
 
-export type FormType = {
-  email: string
-}
+export type FormType = z.infer<typeof NewsletterSchema>
 
 export function NewsletterForm() {
   const methods = useForm<FormType>({
@@ -33,8 +31,11 @@ export function NewsletterForm() {
     methods.resetField('email')
   }
 
-  function getError(errors: FieldErrors<FormType>, name: keyof FormType) {
-    return errors[name]?.message
+  function getError(
+    errors: FieldErrors<FormType>,
+    name: Extract<keyof FormType, string>,
+  ): string | undefined {
+    return errors[name]?.message as string | undefined
   }
 
   return (
