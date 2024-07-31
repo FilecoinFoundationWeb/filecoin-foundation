@@ -116,6 +116,13 @@ collections:
               - "title"
           - *meta_config
 
+      - name: "digest"
+        label: "Digest"
+        file: "src/content/pages/digest.md"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "ecosystem"
         label: "Ecosystem"
         file: "src/content/pages/ecosystem-explorer.md"
@@ -557,5 +564,41 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
+      - *image_config
+      - *meta_config
+
+  - name: "digest"
+    label: "Digest Articles"
+    folder: "src/content/digest/"
+    label_singular: "Digest Article"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "string"
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "number"
+      - name: "article-number"
+        label: "Article Number"
+        widget: "number"
+      - name: "publication-date"
+        label: "Publication Date"
+        widget: "datetime"
+        required: false
+      - name: "body"
+        label: "Content"
+        widget: "markdown"
+        editor_components:
+          - "code-block"
+          - "image"
+          - "video"
+          - "audio"
+        required: false
       - *image_config
       - *meta_config
