@@ -4,7 +4,7 @@ created-on: 2024-03-29T21:28:48.751Z
 updated-on: 2024-03-29T21:35:32.116Z
 published-on: 2024-03-29T21:35:32.116Z
 image:
-  src: /assets/images/ankr.png
+  src: /assets/images/ankr-logo.webp
   alt: ""
 category: tooling-productivity
 subcategories:
