@@ -5,6 +5,7 @@ backend:
   name: github
   branch: main
   repo: FilecoinFoundationWeb/filecoin-foundation
+  base_url: https://decap-proxy.filecoin-foundation.workers.dev/
 
 publish_mode: editorial_workflow
 media_folder: "public/assets/images"
