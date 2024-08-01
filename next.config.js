@@ -108,6 +108,11 @@ const nextConfig = {
       },
       { source: '/team', destination: '/about', permanent: true },
       { source: '/terms', destination: '/terms-of-use', permanent: true },
+      {
+        source: '/admin',
+        destination: '/admin/index.html',
+        permanent: true,
+      },
 
       // BLOG POST REDIRECTS
       {
