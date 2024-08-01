@@ -21,8 +21,6 @@ const nextConfig = {
         '.next/cache/**',
         '.vscode/**',
         'cypress/**',
-        '.netlify/**',
-        '.next/**',
         'public/**',
         'scripts/**',
         'src/app/**',
