@@ -11,23 +11,24 @@ const nextConfig = {
   },
   experimental: {
     typedRoutes: true,
-    outputFileTracingIncludes: {
-      '/': ['src/content/**'],
-    },
-    outputFileTracingExcludes: {
-      '/': [
-        '.git/**',
-        '.github/**',
-        '.next/cache/**',
-        '.vscode/**',
-        'cypress/**',
-        '.netlify/**',
-        '.next/**',
-        'public/**',
-        'scripts/**',
-        'src/app/**',
-      ],
-    },
+    output: 'standalone',
+    // outputFileTracingIncludes: {
+    //   '/': ['src/content/**'],
+    // },
+    // outputFileTracingExcludes: {
+    //   '/': [
+    //     '.git/**',
+    //     '.github/**',
+    //     '.next/cache/**',
+    //     '.vscode/**',
+    //     'cypress/**',
+    //     '.netlify/**',
+    //     '.next/**',
+    //     'public/**',
+    //     'scripts/**',
+    //     'src/app/**',
+    //   ],
+    // },
   },
   async redirects() {
     return [
