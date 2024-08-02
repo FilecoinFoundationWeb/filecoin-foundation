@@ -1,7 +1,12 @@
 local_backend: true
+site_url: https://fil.org
+
 backend:
-  name: "git-gateway"
-  branch: "main"
+  name: github
+  branch: main
+  repo: FilecoinFoundationWeb/filecoin-foundation
+  base_url: https://decap-proxy.filecoin-foundation.workers.dev/
+
 publish_mode: editorial_workflow
 media_folder: "public/assets/images"
 public_folder: "/assets/images"

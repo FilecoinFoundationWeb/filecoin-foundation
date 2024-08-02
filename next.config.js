@@ -1,3 +1,5 @@
+const { withSentryConfig } = require('@sentry/nextjs')
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -19,7 +21,6 @@ const nextConfig = {
         '.next/cache/**',
         '.vscode/**',
         'cypress/**',
-        '.netlify/**',
         'public/**',
         'scripts/**',
         'src/app/**',
@@ -29,26 +30,14 @@ const nextConfig = {
   async redirects() {
     return [
       // PAGE REDIRECTS
-      {
-        source: '/board',
-        destination: '/about',
-        permanent: true,
-      },
-      {
-        source: '/careers',
-        destination: '/about',
-        permanent: true,
-      },
+      { source: '/board', destination: '/about', permanent: true },
+      { source: '/careers', destination: '/about', permanent: true },
       {
         source: '/community',
         destination: '/ecosystem-explorer',
         permanent: true,
       },
-      {
-        source: '/contact',
-        destination: '/about',
-        permanent: true,
-      },
+      { source: '/contact', destination: '/about', permanent: true },
       {
         source: '/davos',
         destination: '/events/the-filecoin-sanctuary-davos-2024',
@@ -84,22 +73,14 @@ const nextConfig = {
         destination: '/filecoin-plus',
         permanent: true,
       },
-      {
-        source: '/filplus',
-        destination: '/filecoin-plus',
-        permanent: true,
-      },
+      { source: '/filplus', destination: '/filecoin-plus', permanent: true },
       {
         source: '/fips',
         destination:
           '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
         permanent: true,
       },
-      {
-        source: '/get-involved',
-        destination: '/',
-        permanent: true,
-      },
+      { source: '/get-involved', destination: '/', permanent: true },
       {
         source: '/governance/fips/:path*',
         destination: '/governance',
@@ -110,31 +91,11 @@ const nextConfig = {
         destination: '/governance',
         permanent: true,
       },
-      {
-        source: '/philosophy',
-        destination: '/about',
-        permanent: true,
-      },
-      {
-        source: '/policy',
-        destination: '/privacy-policy',
-        permanent: true,
-      },
-      {
-        source: '/public-data',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/public-data/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/publicdata/awards',
-        destination: '/grants',
-        permanent: true,
-      },
+      { source: '/philosophy', destination: '/about', permanent: true },
+      { source: '/policy', destination: '/privacy-policy', permanent: true },
+      { source: '/public-data', destination: '/', permanent: true },
+      { source: '/public-data/:path*', destination: '/', permanent: true },
+      { source: '/publicdata/awards', destination: '/grants', permanent: true },
       {
         source: '/research/research-text.htm',
         destination: '/',
@@ -145,14 +106,11 @@ const nextConfig = {
         destination: 'https://immunefi.com/bug-bounty/filecoin/',
         permanent: false,
       },
+      { source: '/team', destination: '/about', permanent: true },
+      { source: '/terms', destination: '/terms-of-use', permanent: true },
       {
-        source: '/team',
-        destination: '/about',
-        permanent: true,
-      },
-      {
-        source: '/terms',
-        destination: '/terms-of-use',
+        source: '/admin',
+        destination: '/admin/index.html',
         permanent: true,
       },
 
@@ -249,13 +207,7 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
-
-// Injected content via Sentry wizard below
-
-const { withSentryConfig } = require('@sentry/nextjs')
-
-module.exports = withSentryConfig(module.exports, {
+module.exports = withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -273,8 +225,7 @@ module.exports = withSentryConfig(module.exports, {
 
   // Uncomment to route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
   // This can increase your server load as well as your hosting bill.
-  // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-  // side errors will fail.
+  // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-side errors will fail.
   // tunnelRoute: "/monitoring",
 
   // Hides source maps from generated client bundles
