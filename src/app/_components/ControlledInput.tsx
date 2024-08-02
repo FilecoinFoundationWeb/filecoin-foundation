@@ -2,10 +2,11 @@ import React from 'react'
 
 import { useFormContext, Controller, RegisterOptions } from 'react-hook-form'
 
-import { Input, type InputProps } from '@/components/Input'
+import { InputComponent, InputProps } from '@/components/Input'
 
 type Props = {
   name: string
+  type: string
   rules?: RegisterOptions
 } & Omit<InputProps, 'onChange' | 'onBlur' | 'value'>
 
@@ -19,7 +20,7 @@ export default function ControlledInput(props: Props) {
       control={control}
       rules={rules}
       render={({ field }) => (
-        <Input
+        <InputComponent
           {...props}
           value={field.value ?? ''}
           onChange={field.onChange}

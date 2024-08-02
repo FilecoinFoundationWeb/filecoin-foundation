@@ -4,7 +4,7 @@ import React from 'react'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldErrors, useForm } from 'react-hook-form'
-import { z, ZodSchema } from 'zod'
+import { z } from 'zod'
 
 import { Button } from '@/components/Button'
 import ControlledInput from '@/components/ControlledInput'
@@ -27,15 +27,15 @@ export function NewsletterForm() {
   const { isSubmitting } = methods.formState
 
   async function onSubmit(values: FormType): Promise<void> {
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 10000))
     methods.resetField('email')
   }
 
   function getError(
     errors: FieldErrors<FormType>,
     name: Extract<keyof FormType, string>,
-  ): string | undefined {
-    return errors[name]?.message as string | undefined
+  ) {
+    return errors[name]?.message
   }
 
   return (
@@ -43,15 +43,13 @@ export function NewsletterForm() {
       <div className="flex items-end space-x-2">
         <ControlledInput
           name="email"
-          id="email"
-          label="Email"
           type="email"
           placeholder="Enter your email"
           error={getError(methods.formState.errors, 'email')}
         />
 
-        <Button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+        <Button className="min-w-44" type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Subscribing' : 'Subscribe'}
         </Button>
       </div>
     </Form>
