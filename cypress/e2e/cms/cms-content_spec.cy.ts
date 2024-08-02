@@ -11,11 +11,9 @@ describe('Check Image Format', () => {
   it('should have images in WebP format', () => {
     cy.get('img')
       .should('have.attr', 'srcset')
-      .then((srcset: any) => {
-        const sources = srcset
-          .split(',')
-          .map((src: any) => src.trim().split(' ')[0])
-        sources.forEach((source: any) => {
+      .then((srcset) => {
+        const sources = srcset.split(',').map((src) => src.trim().split(' ')[0])
+        sources.forEach((source) => {
           expect(source).to.match(/\.webp$/)
         })
       })
