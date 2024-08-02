@@ -1,6 +1,6 @@
 import { type NextRequest } from 'next/server'
 
-import z from 'zod'
+import { z } from 'zod'
 
 import { encrypt, decrypt } from '@/utils/encryption'
 
