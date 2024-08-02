@@ -10,7 +10,7 @@ import { Button } from '@/components/Button'
 import ControlledInput from '@/components/ControlledInput'
 import Form from '@/components/Form'
 
-export const NewsletterSchema: ZodSchema = z.object({
+export const NewsletterSchema = z.object({
   email: z
     .string()
     .min(1, { message: 'This field has to be filled.' })
