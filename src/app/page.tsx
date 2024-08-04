@@ -21,6 +21,8 @@ import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 import { graphicsData } from '@/data/graphicsData'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
+import { NewsletterForm } from './_components/NewsletterForm'
+
 const ecosystemProjects = getEcosystemProjectsData()
 
 const {
@@ -44,7 +46,7 @@ export default function Home() {
     <NoBreadCrumbsLayout>
       <PageLayout>
         <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
-
+        <NewsletterForm />
         <PageHeader
           title={header.title}
           description={header.description}
