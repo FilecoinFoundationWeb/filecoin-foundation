@@ -90,7 +90,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             }}
           />
         </div>
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-wrap gap-2">
           <TagLabel borderColor="brand-100">{categoryData[category]}</TagLabel>
           {subcategories.map((subcategory, i) => (
             <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
