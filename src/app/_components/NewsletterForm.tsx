@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import { useState } from 'react'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldErrors, useForm } from 'react-hook-form'
@@ -8,6 +8,7 @@ import { z } from 'zod'
 
 import { Button } from '@/components/Button'
 import ControlledInput from '@/components/ControlledInput'
+import DialogComponent from '@/components/Dialog'
 import Form from '@/components/Form'
 
 export const NewsletterSchema = z.object({
@@ -25,10 +26,12 @@ export function NewsletterForm() {
   })
 
   const { isSubmitting } = methods.formState
+  const [isOpen, setIsOpen] = useState(false)
 
   async function onSubmit(values: FormType): Promise<void> {
-    await new Promise((resolve) => setTimeout(resolve, 10000))
+    await new Promise((resolve) => setTimeout(resolve, 1000))
     methods.resetField('email')
+    setIsOpen(true)
   }
 
   function getError(
@@ -45,6 +48,7 @@ export function NewsletterForm() {
           name="email"
           type="email"
           placeholder="Enter your email"
+          isLabelHidden={true}
           error={getError(methods.formState.errors, 'email')}
         />
 
@@ -52,6 +56,7 @@ export function NewsletterForm() {
           {isSubmitting ? 'Subscribing' : 'Subscribe'}
         </Button>
       </div>
+      <DialogComponent isOpen={isOpen} setIsOpen={setIsOpen} />
     </Form>
   )
 }
