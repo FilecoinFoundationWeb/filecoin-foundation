@@ -8,7 +8,7 @@ import { z } from 'zod'
 
 import { Button } from '@/components/Button'
 import ControlledInput from '@/components/ControlledInput'
-import DialogComponent from '@/components/Dialog'
+import DialogComponent, { StatusType } from '@/components/Dialog'
 import Form from '@/components/Form'
 
 export const NewsletterSchema = z.object({
@@ -27,11 +27,14 @@ export function NewsletterForm() {
 
   const { isSubmitting } = methods.formState
   const [isOpen, setIsOpen] = useState(false)
+  const [status, setStatus] = useState<StatusType>(null)
 
   async function onSubmit(values: FormType): Promise<void> {
     await new Promise((resolve) => setTimeout(resolve, 1000))
     methods.resetField('email')
     setIsOpen(true)
+    setStatus('warning')
+    // ! add Sentry error
   }
 
   function getError(
@@ -56,7 +59,7 @@ export function NewsletterForm() {
           {isSubmitting ? 'Subscribing' : 'Subscribe'}
         </Button>
       </div>
-      <DialogComponent isOpen={isOpen} setIsOpen={setIsOpen} />
+      <DialogComponent status={status} isOpen={isOpen} setIsOpen={setIsOpen} />
     </Form>
   )
 }

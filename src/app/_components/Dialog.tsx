@@ -1,17 +1,32 @@
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
-import { CheckCircle } from '@phosphor-icons/react'
+import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 
+export type StatusType = 'success' | 'warning' | null
+
 type DialogComponentProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
+  status: StatusType
+}
+
+const dialogStatus = {
+  success: {
+    title: 'Check your email',
+    icon: <Icon component={CheckCircle} color="success" />,
+  },
+  warning: {
+    title: 'Something went wrong',
+    icon: <Icon component={XCircle} color="warning" />,
+  },
 }
 
 export default function DialogComponent({
   isOpen,
   setIsOpen,
+  status,
 }: DialogComponentProps) {
   return (
     <Dialog
@@ -22,8 +37,8 @@ export default function DialogComponent({
       <div className="w-96 rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
         <DialogPanel className="flex">
           <DialogTitle className="flex flex-1 gap-3 text-brand-100">
-            <Icon component={CheckCircle} color="green-400" />
-            Check your email
+            {status && dialogStatus[status].icon}
+            {status && dialogStatus[status].title}
           </DialogTitle>
           <button
             className="hover:text-brand-400"
