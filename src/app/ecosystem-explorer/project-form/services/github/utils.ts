@@ -12,11 +12,6 @@ export const ALLOWED_IMAGE_FORMATS = [
 
 export type AllowedImageFormats = (typeof ALLOWED_IMAGE_FORMATS)[number]
 
-const pathConfigSchema = z.object({
-  media_folder: z.string(),
-  public_folder: z.string(),
-})
-
 export function getTodayISO() {
   const today = new Date()
   return today.toISOString().split('T')[0]
@@ -69,6 +64,11 @@ export function getMarkdownTemplate({
   ---
 `
 }
+
+const pathConfigSchema = z.object({
+  media_folder: z.string(),
+  public_folder: z.string(),
+})
 
 export function getFolderPaths() {
   const { media_folder, public_folder } = pathConfigSchema.parse(configJson)

@@ -1,11 +1,10 @@
 import { Octokit } from '@octokit/rest'
 
+// https://github.com/octokit/octokit.js
+// https://octokit.github.io/rest.js/v20/
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 type SHA = string
-
-// type ImagePath = `${string}.${AllowedImageFormats}`
-// type ContentPath = `src/content/ecosystem-explorer/projects/${string}.md`
 
 type Tree = {
   path: string
@@ -14,29 +13,9 @@ type Tree = {
   sha: SHA
 }
 
-// Hard coded values
-const owner = 'CharlyMartin'
+const owner = 'FilecoinFoundationWeb'
 const repo = 'filecoin-foundation'
 const baseBranch = 'main'
-
-// https://github.com/octokit/octokit.js
-// https://octokit.github.io/rest.js/v20/
-
-type CreateBranchParams = {
-  commitSha: SHA
-  branchName: string
-}
-
-async function createBranch({ commitSha, branchName }: CreateBranchParams) {
-  const { data: newBranch } = await octokit.rest.git.createRef({
-    owner,
-    repo,
-    ref: `refs/heads/${branchName}`,
-    sha: commitSha,
-  })
-
-  return newBranch
-}
 
 export async function getLatestCommitOnMain() {
   const { data: latestCommitOnMain } = await octokit.rest.repos.getCommit({
@@ -101,6 +80,22 @@ export async function createCommit({
   })
 
   return newCommit
+}
+
+type CreateBranchParams = {
+  commitSha: SHA
+  branchName: string
+}
+
+async function createBranch({ commitSha, branchName }: CreateBranchParams) {
+  const { data: newBranch } = await octokit.rest.git.createRef({
+    owner,
+    repo,
+    ref: `refs/heads/${branchName}`,
+    sha: commitSha,
+  })
+
+  return newBranch
 }
 
 type CreatePRParams = {
