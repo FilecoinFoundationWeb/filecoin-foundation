@@ -6,6 +6,8 @@ import { TextLink } from '@/components/TextLink'
 import { footerNavigationItems } from '@/constants/navigationItems'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { NewsletterForm } from './NewsletterForm'
+
 export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
@@ -20,13 +22,7 @@ export function Footer() {
             decentralized web, subscribe to Filecoin Foundation’s newsletter,
             The Upload.
           </p>
-          <Button
-            className="w-full sm:w-auto"
-            variant="ghost"
-            href={FILECOIN_FOUNDATION_URLS.newsletter}
-          >
-            Subscribe to Newsletter
-          </Button>
+          <NewsletterForm />
         </div>
       </div>
 

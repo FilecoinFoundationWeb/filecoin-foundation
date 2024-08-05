@@ -29,11 +29,11 @@ export function NewsletterForm() {
   const [isOpen, setIsOpen] = useState(false)
   const [status, setStatus] = useState<StatusType>(null)
 
-  async function onSubmit(values: FormType): Promise<void> {
+  async function onSubmit(values: FormType) {
     await new Promise((resolve) => setTimeout(resolve, 1000))
     methods.resetField('email')
     setIsOpen(true)
-    setStatus('warning')
+    setStatus('success')
     // ! add Sentry error
   }
 
