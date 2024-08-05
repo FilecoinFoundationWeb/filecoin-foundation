@@ -27,7 +27,6 @@ export function getAllSlugsByCategoryType({
   directoryPath,
   category,
 }: GetAllSlugsByCategoryTypeParams): Cypress.Chainable<string[]> {
-  cy.log('HETE', directoryPath)
   return cy.task<string[]>('readDir', directoryPath).then((files) => {
     const slugs: string[] = []
 
