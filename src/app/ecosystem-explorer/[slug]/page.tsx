@@ -69,7 +69,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
   return (
     <article>
-      <header className="mb-16 space-y-10 md:space-y-16">
+      <header className="mb-8 space-y-10 md:space-y-16">
         <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
           <DynamicImage
             fill
