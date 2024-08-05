@@ -68,13 +68,13 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Marketing & Comms**
 
-- Catch FF’s Clara Tsao talking about [Filecoin & AI: Building the Next Generation of Data Storage](https://www.ethdenver.com/agenda/filecoin-ai-building-the-next-generation-of-data-storage-ad010), Friday, March 1, on the Neptune Stage at ETHDenver.
+- Catch FF’s Clara Tsao talking about Filecoin & AI: Building the Next Generation of Data Storage, Friday, March 1, on the Neptune Stage at ETHDenver.
 - ICYMI: the team published the [FF](https://link.fil.org/report24) and [FFDW](https://link.ffdweb.org/report24) Annual Reports last week. Check them out!
 
 **Events**
 
 - Check out the [Filecoin at ETHDenver website](https://hub.fil.org/ethdenver2024) for all of the Filecoin community events happening throughout the week.
-- The Filecoin Orbit team announced an ETHDenver [bounty](https://www.ethdenver.com/buidl-sponsors/filecoin-foundation) to build an app to track and reward the activities of the Filecoin Orbit ambassador program in the form of NFT “achievements” and associated ERC20 token reward points. The aim of the bounty is to build an app that creates a standard rewards system for the Orbit program on FVM.
+- The Filecoin Orbit team announced an ETHDenver bounty to build an app to track and reward the activities of the Filecoin Orbit ambassador program in the form of NFT “achievements” and associated ERC20 token reward points. The aim of the bounty is to build an app that creates a standard rewards system for the Orbit program on FVM.
 - Don’t miss our upcoming community events!
 
   - 4/5-4/8 - FIL Hong Kong hosted by NDLabs alongside Hong Kong Web3 Festival

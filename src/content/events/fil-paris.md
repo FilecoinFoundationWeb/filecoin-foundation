@@ -6,7 +6,7 @@ published-on: 2023-06-27T15:38:07.109Z
 category: hosted
 description: null
 location: Paris, France
-external-link: https://fil-paris.io/
+external-link: null
 start-date: 2023-07-15T15:38:07.119Z
 end-date: 2023-07-22T15:38:00.000Z
 image:
