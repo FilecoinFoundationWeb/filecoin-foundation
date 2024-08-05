@@ -1,5 +1,5 @@
 ---
-title: FIL Bangkok alongside DevCon 2024
+title: "FIL Bangkok: DePIN Meets AI"
 created-on: 2024-01-29T16:18:33.938Z
 updated-on: 2024-01-29T16:18:33.946Z
 published-on: 2024-01-29T16:18:33.953Z
@@ -13,7 +13,7 @@ description: Dive into decentralized AI infrastructure, DePIN, and the evolving
   opportunity to help shape the future of Filecoin and contribute to the next
   chapter of a better internet. Secure your spot early.
 location: Bangkok, Thailand
-external-link: null
+external-link: " https://lu.ma/aqyqwupe"
 start-date: 2024-11-11T11:18:00.000Z
 end-date: 2024-11-11T11:18:00.000Z
 image:
