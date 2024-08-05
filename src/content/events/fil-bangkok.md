@@ -15,10 +15,8 @@ description: Dive into decentralized AI infrastructure, DePIN, and the evolving
 location: Bangkok, Thailand
 external-link: "https://lu.ma/aqyqwupe"
 start-date: 2024-11-11T11:18:00.000Z
-end-date: 2024-11-11T11:18:00.000Z
 image:
   src: /assets/images/filbangkok-24.png
-  alt: ""
 seo:
   title: FIL Bangkok
   description: Attend FIL Bangkok to engage with the Filecoin community and
