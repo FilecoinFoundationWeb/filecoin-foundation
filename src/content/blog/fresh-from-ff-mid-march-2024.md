@@ -67,4 +67,4 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Events**
 
-- Join us April 5-8 at [FIL Hong Kong](https://fil-hk.io/), hosted by ND Labs, alongside the Hong Kong Web3 Festival, for storage provider-focused lightning talks, workshops, and plenty of coworking space for those in the Filecoin ecosystem! If you’re a Filecoin storage provider or want to explore decentralized storage for your business, join us for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more.
+- Join us April 5-8 at FIL Hong Kong, hosted by ND Labs, alongside the Hong Kong Web3 Festival, for storage provider-focused lightning talks, workshops, and plenty of coworking space for those in the Filecoin ecosystem! If you’re a Filecoin storage provider or want to explore decentralized storage for your business, join us for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more.

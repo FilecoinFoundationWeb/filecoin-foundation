@@ -27,7 +27,7 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 📖 **Filecoin Foundation is now accepting article abstracts from the community for the inaugural edition of the Filecoin Ecosystem Digest.** Published by FF and guest edited by Ansa Research’s Jonathan Victor, the digest will feature articles from ecosystem contributors sharing their vision for the web's future and how decentralized storage applications will play a part. To apply, fill out the [Filecoin Ecosystem Digest interest form](https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form).
 
-🧰 **Filecoin Foundation’s [Comms Toolkit](https://hub.fil.org/comms) is live!** This new site connects you with FF’s Marketing and Communications team so we can help spread the word about projects you're building and the work you’re doing in the Filecoin ecosystem. Fill out this [intake form](https://airtable.com/appNJXvQHmep8Dx9E/shr3Kc8Ort7T5ehuX), and our team will follow up with you to help you tell your story. 
+🧰 **Filecoin Foundation’s [Comms Toolkit](https://hub.fil.org/comms) is live!** This new site connects you with FF’s Marketing and Communications team so we can help spread the word about projects you're building and the work you’re doing in the Filecoin ecosystem. Fill out this [intake form](https://airtable.com/appNJXvQHmep8Dx9E/shr3Kc8Ort7T5ehuX), and our team will follow up with you to help you tell your story.
 
 📈**Submissions to the Filecoin Ecosystem Explorer have doubled since its launch in January!** The [Ecosystem Explorer](https://fil.org/ecosystem/) is a crowd-sourced and open database that showcases the incredible breadth of projects in the Filecoin ecosystem. Thank you to all of those who have submitted use cases and applications! If you’re working on something in the Filecoin ecosystem and don’t yet see your project, submit your application to the Explorer [here](https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O).
 
@@ -68,4 +68,4 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Events**
 
-- The program schedule is live for [FIL Hong Kong](https://fil-hk.io/), hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).
+- The program schedule is live for FIL Hong Kong, hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).

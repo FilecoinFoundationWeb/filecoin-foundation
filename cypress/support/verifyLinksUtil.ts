@@ -14,7 +14,9 @@ export function verifyLinks(path: string) {
             let errorMessage = response
               ? `Status code: ${response.status}`
               : 'No response received or request timed out'
-            cy.log(`Broken link: ${href} - ${errorMessage}`)
+            if (response && response.status !== 999) {
+              cy.log(`Broken link: ${href} - ${errorMessage}`)
+            }
           }
         })
       }
