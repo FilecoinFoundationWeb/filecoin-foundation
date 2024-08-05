@@ -1,6 +1,7 @@
 ---
-title: Encrypted Test
-email: U2FsdGVkX18O65/uhpONzt30DxU/6nYLw7tBm7tIANPPdh7n+YRHyjSAYW/l7UE1
+title: A new test
+email: encrypted::U2FsdGVkX1/jb/eggvDR5q7x9Ba5qOrPTZfc7bv21tM=
+full-name: encrypted::U2FsdGVkX19ooY9rmdIN5hwct4TR5M3v6kThTjuk5Xs=
 created-on: 2024-07-15T17:29:47.705Z
 updated-on: 2024-07-15T17:29:47.714Z
 published-on: 2024-07-15T17:29:47.725Z

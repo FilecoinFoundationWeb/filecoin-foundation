@@ -374,7 +374,11 @@ collections:
       - *published_on
       - name: email
         label: Email
-        widget: decrypted_email
+        widget: decrypted_widget
+        required: false
+      - name: full-name
+        label: Full Name
+        widget: decrypted_widget
         required: false
       - *image_config
       - name: category

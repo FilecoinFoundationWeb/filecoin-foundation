@@ -2,7 +2,7 @@ import { type NextRequest } from 'next/server'
 
 import { z } from 'zod'
 
-import { encrypt, decrypt } from '@/utils/encryption'
+import { encrypt, decrypt, PREFIX } from '@/utils/encryption'
 
 const payloadSchema = z.object({
   value: z.string(),
@@ -26,4 +26,12 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     return new Response(String(error), { status: 400 })
   }
+}
+
+export async function GET() {
+  const encryptionConfig = {
+    prefix: PREFIX,
+  }
+
+  return Response.json(encryptionConfig)
 }
