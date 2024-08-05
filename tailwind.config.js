@@ -85,12 +85,11 @@ module.exports = {
         'slide-in-from-top':
           'slide-in-from-top 0.3s cubic-bezier(.41,.73,.51,1.02)',
         leave: 'leave 150ms ease-in forwards',
-        'progress-line': 'progress-line 450ms ease-in forwards',
       },
       keyframes: {
-        'slide-in': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateY(0)' },
+        leave: {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          '100%': { transform: 'scale(0.9)', opacity: 0 },
         },
         'slide-in-from-top': {
           '0%': { transform: 'translateY(-100%)' },

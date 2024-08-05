@@ -1,10 +1,8 @@
-import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
 import { footerNavigationItems } from '@/constants/navigationItems'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { NewsletterForm } from './NewsletterForm'
 

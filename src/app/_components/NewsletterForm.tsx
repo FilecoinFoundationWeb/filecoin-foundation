@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import { FieldErrors, useForm } from 'react-hook-form'
+import useSWR from 'swr'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
@@ -19,6 +20,25 @@ export const NewsletterSchema = z.object({
 })
 
 export type FormType = z.infer<typeof NewsletterSchema>
+
+const BEEHIIV_API_URL = 'https://stoplight.io/mocks/beehiiv/v2/104190750'
+
+async function getNewsletter(endpoint: string) {
+  const response = await fetch(endpoint, {
+    method: 'GET',
+    headers: {
+      Authorization: `Bearer ${process.env.BEEHIIV_API_KEY}`,
+      'Content-Type': 'application/json',
+    },
+  })
+
+  if (!response.ok) {
+    throw new Error('getNewsletter: Failed to fetch data')
+  }
+
+  const data = await response.json()
+  return data
+}
 
 export function NewsletterForm() {
   const methods = useForm<FormType>({
@@ -43,6 +63,8 @@ export function NewsletterForm() {
   ) {
     return errors[name]?.message
   }
+
+  const { data, error, isLoading, isValidating, mutate } = useSWR('newsletter')
 
   return (
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
