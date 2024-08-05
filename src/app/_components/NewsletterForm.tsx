@@ -26,7 +26,7 @@ export function NewsletterForm() {
 
   const { isSubmitting } = methods.formState
 
-  async function onSubmit(values: FormType): Promise<void> {
+  async function onSubmit(values: FormType) {
     await new Promise((resolve) => setTimeout(resolve, 10000))
     methods.resetField('email')
   }
