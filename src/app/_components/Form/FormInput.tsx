@@ -8,24 +8,24 @@ import {
 import { WarningCircle } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 import { Icon } from '@/components/Icon'
-import { InputLabel, type LabelProps } from '@/components/Label'
 
-export type InputProps = {
-  label: LabelProps['label']
-  hideLabel?: LabelProps['isHidden']
+export type FormInputProps = {
+  label: FormLabelProps['label']
+  hideLabel?: FormLabelProps['isHidden']
   error?: string
 } & HeadlessInputProps
 
-export function InputComponent({
+export function FormInput({
   error,
   label,
   hideLabel,
   ...rest
-}: InputProps) {
+}: FormInputProps) {
   return (
     <Field className="relative w-full">
-      <InputLabel label={label} isHidden={hideLabel} />
+      <FormLabel label={label} isHidden={hideLabel} />
       <div className="relative w-full">
         <Input
           className={clsx(

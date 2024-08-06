@@ -7,19 +7,19 @@ import {
   FieldValues,
 } from 'react-hook-form'
 
-import { InputComponent, InputProps } from '@/components/Input'
+import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
 
-type ControlledInputProps<FormType extends FieldValues> = {
+type ControlledFormInputProps<FormType extends FieldValues> = {
   name: keyof FormType
   rules?: RegisterOptions
-} & InputProps
+} & FormInputProps
 
-export default function ControlledInput<FormType extends FieldValues>({
+export default function ControlledFormInput<FormType extends FieldValues>({
   name,
   rules,
   type,
   ...props
-}: ControlledInputProps<FormType>) {
+}: ControlledFormInputProps<FormType>) {
   const { control } = useFormContext()
 
   return (
@@ -28,7 +28,7 @@ export default function ControlledInput<FormType extends FieldValues>({
       control={control}
       rules={rules}
       render={({ field }) => (
-        <InputComponent
+        <FormInput
           {...props}
           type={type}
           value={field.value ?? ''}

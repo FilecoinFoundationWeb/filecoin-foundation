@@ -7,8 +7,8 @@ import { FieldErrors, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
-import ControlledInput from '@/components/ControlledInput'
-import Form from '@/components/Form'
+import ControlledFormInput from '@/components/Form/ControlledFormInput'
+import Form from '@/components/Form/Form'
 
 export const NewsletterSchema = z.object({
   email: z
@@ -39,12 +39,13 @@ export function NewsletterForm() {
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
       <div className="flex items-end space-x-2">
         <div className="w-72">
-          <ControlledInput<FormType>
+          <ControlledFormInput<FormType>
             hideLabel
             label="Email"
             name="email"
             type="email"
             placeholder="Enter your email"
+            autoComplete="email"
             error={getError(methods.formState.errors, 'email')}
           />
         </div>

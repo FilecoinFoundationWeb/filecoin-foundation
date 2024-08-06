@@ -18,7 +18,6 @@ type ButtonProps = {
   variant?: keyof typeof variantStyles
   icon?: IconProps['component']
   href?: CustomLinkProps['href']
-  disabled?: boolean; 
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
@@ -51,13 +50,11 @@ export function Button({
   className = clsx(
     'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition focus:brand-outline hover:no-underline sm:px-9',
     variantStyles[variant],
-    className,
     {
       'bg-brand-200 disabled:pointer-events-none': disabled,
-    }
+    },
+    className,
   )
-
-
 
   if (typeof href === 'undefined') {
     return (
