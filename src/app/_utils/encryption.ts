@@ -8,17 +8,30 @@ if (!SECRET_KEY) {
 
 export const PREFIX = 'encrypted::'
 
-export function encrypt(decryptedText: string) {
-  const encrypted = CryptoJS.AES.encrypt(decryptedText, String(SECRET_KEY))
-  return `${PREFIX}${encrypted.toString()}`
+export function encrypt(text: string) {
+  try {
+    const encryptedParams = CryptoJS.AES.encrypt(text, String(SECRET_KEY))
+    const encryptedString = encryptedParams.toString()
+
+    return `${PREFIX}${encryptedString}`
+  } catch (error) {
+    throw new Error(`Could not encrypt: ${error}`)
+  }
 }
 
 export function decrypt(encryptedText: string) {
   if (!encryptedText.startsWith(PREFIX)) {
-    throw new Error('Invalid encrypted text')
+    throw new Error('Missing encrypted prefix')
   }
 
-  const encryptedData = encryptedText.slice(PREFIX.length)
-  const decrypted = CryptoJS.AES.decrypt(encryptedData, String(SECRET_KEY))
-  return decrypted.toString(CryptoJS.enc.Utf8)
+  try {
+    const decryptedParams = CryptoJS.AES.decrypt(
+      encryptedText.slice(PREFIX.length),
+      String(SECRET_KEY),
+    )
+
+    return decryptedParams.toString(CryptoJS.enc.Utf8)
+  } catch (error) {
+    throw new Error(`Could not decrypt: ${error}`)
+  }
 }
