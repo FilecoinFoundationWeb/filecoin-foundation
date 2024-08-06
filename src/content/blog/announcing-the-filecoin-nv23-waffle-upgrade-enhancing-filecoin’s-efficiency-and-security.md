@@ -1,14 +1,14 @@
 ---
 title: "Announcing the Filecoin NV23 Waffle Upgrade: Enhancing Filecoin’s
-  Efficiency and Security "
+  Efficiency and Security"
 created-on: 2024-08-05T16:31:00.000Z
 updated-on: 2024-08-05T16:31:00.000Z
 published-on: 2024-08-05T16:31:00.000Z
 category: news
 description: "The NV23 Waffle upgrade for the Filecoin network has successfully
-  gone live on August 6, 2024. "
+  gone live on August 6, 2024."
 image:
-  src: /assets/images/blog-header-_-nv23-upgrade-1-.webp
+  src: /assets/images/blog-header-nv23-upgrade.webp
 seo:
   twitter:
     title: summary
@@ -18,9 +18,10 @@ seo:
     streamlined processes, better cryptographic support, and optimized proof
     mechanisms.
 ---
-The NV23 Waffle upgrade for the Filecoin network has successfully gone live on August 6, 2024. This upgrade brings significant enhancements focused on simplified processes, enhanced cryptographic support, optimized proof mechanisms, streamlined sector commitments, and strengthened security. 
 
-The upgrade includes several Filecoin Improvement Proposals (FIPs) that address critical aspects of the network's functionality. [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md) simplifies the network's circulating supply calculation by excluding the locked balances of the built-in market actor, preparing for direct data commitments without requiring market deals. By ignoring certain locked balances in the circulating supply calculations, the network now operates more efficiently, laying the groundwork for more flexible data commitment methods. 
+The NV23 Waffle upgrade for the Filecoin network has successfully gone live on August 6, 2024. This upgrade brings significant enhancements focused on simplified processes, enhanced cryptographic support, optimized proof mechanisms, streamlined sector commitments, and strengthened security.
+
+The upgrade includes several Filecoin Improvement Proposals (FIPs) that address critical aspects of the network's functionality. [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md) simplifies the network's circulating supply calculation by excluding the locked balances of the built-in market actor, preparing for direct data commitments without requiring market deals. By ignoring certain locked balances in the circulating supply calculations, the network now operates more efficiently, laying the groundwork for more flexible data commitment methods.
 
 [FIP0079](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0079.md) introduces BLS (Boneh-Lynn-Shacham) aggregate signatures to the Filecoin Virtual Machine (FVM), enhancing the efficiency of verification processes by allowing multiple parties to sign multiple messages with a single, constant-sized signature.
 
