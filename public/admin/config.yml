@@ -373,11 +373,11 @@ collections:
       - *updated_on
       - *published_on
       - name: email
-        label: Email
+        label: Submitter's Email
         widget: decrypted_widget
         required: false
       - name: full-name
-        label: Full Name
+        label: Submitter's Full Name
         widget: decrypted_widget
         required: false
       - *image_config
