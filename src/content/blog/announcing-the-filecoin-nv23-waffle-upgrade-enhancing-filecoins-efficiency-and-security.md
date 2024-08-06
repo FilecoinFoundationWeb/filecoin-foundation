@@ -1,5 +1,5 @@
 ---
-title: Announcing the Filecoin NV23 Waffle Upgrade
+title: Announcing the Filecoin NV23 Waffle Upgrade: Enhancing Filecoin’s Efficiency and Security
 created-on: 2024-08-05T16:31:00.000Z
 updated-on: 2024-08-05T16:31:00.000Z
 published-on: 2024-08-05T16:31:00.000Z
