@@ -1,18 +1,22 @@
 import React from 'react'
 
 import { Label } from '@headlessui/react'
+import { clsx } from 'clsx'
 
 import { capitalize } from '@/utils/capitalize'
 
 export type LabelProps = {
   label: string
-  isHidden: boolean
+  isHidden?: boolean
 }
 
-export function LabelComponent({ label, isHidden = false }: LabelProps) {
+export function InputLabel({ label, isHidden = false }: LabelProps) {
   return (
     <Label
-      className={`text-base font-bold text-brand-100 ${isHidden && 'sr-only'}`}
+      className={clsx(
+        'text-base font-bold text-brand-100',
+        isHidden && 'sr-only',
+      )}
     >
       {capitalize(label)}
     </Label>

@@ -1,24 +1,25 @@
 import React from 'react'
 
-import { Field } from '@headlessui/react'
-import { useFormContext, Controller, RegisterOptions } from 'react-hook-form'
+import {
+  useFormContext,
+  Controller,
+  RegisterOptions,
+  FieldValues,
+} from 'react-hook-form'
 
 import { InputComponent, InputProps } from '@/components/Input'
 
-import { LabelComponent } from './Label'
-
-type Props = {
-  name: string
-  type: string
+type ControlledInputProps<FormType extends FieldValues> = {
+  name: keyof FormType
   rules?: RegisterOptions
-  isLabelHidden?: boolean
-} & Omit<InputProps, 'onChange' | 'onBlur' | 'value'>
+} & InputProps
 
-export default function ControlledInput({
-  isLabelHidden = false,
+export default function ControlledInput<FormType extends FieldValues>({
+  name,
+  rules,
+  type,
   ...props
-}: Props) {
-  const { name, rules } = props
+}: ControlledInputProps<FormType>) {
   const { control } = useFormContext()
 
   return (
@@ -27,15 +28,13 @@ export default function ControlledInput({
       control={control}
       rules={rules}
       render={({ field }) => (
-        <Field className="space-y-2">
-          <LabelComponent label={name} isHidden={isLabelHidden} />
-          <InputComponent
-            {...props}
-            value={field.value ?? ''}
-            onChange={field.onChange}
-            onBlur={field.onBlur}
-          />
-        </Field>
+        <InputComponent
+          {...props}
+          type={type}
+          value={field.value ?? ''}
+          onChange={field.onChange}
+          onBlur={field.onBlur}
+        />
       )}
     />
   )

@@ -31,23 +31,23 @@ export function NewsletterForm() {
     methods.resetField('email')
   }
 
-  function getError(
-    errors: FieldErrors<FormType>,
-    name: Extract<keyof FormType, string>,
-  ) {
+  function getError(errors: FieldErrors<FormType>, name: keyof FormType) {
     return errors[name]?.message
   }
 
   return (
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
       <div className="flex items-end space-x-2">
-        <ControlledInput
-          name="email"
-          type="email"
-          placeholder="Enter your email"
-          isLabelHidden={true}
-          error={getError(methods.formState.errors, 'email')}
-        />
+        <div className="w-72">
+          <ControlledInput<FormType>
+            hideLabel
+            label="Email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            error={getError(methods.formState.errors, 'email')}
+          />
+        </div>
         <Button className="min-w-44" type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'Subscribing' : 'Subscribe'}
         </Button>

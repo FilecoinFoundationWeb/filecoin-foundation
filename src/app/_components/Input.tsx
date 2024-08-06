@@ -1,20 +1,38 @@
 import React from 'react'
 
-import { Input } from '@headlessui/react'
+import {
+  Field,
+  Input,
+  type InputProps as HeadlessInputProps,
+} from '@headlessui/react'
 import { WarningCircle } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
+import { InputLabel, type LabelProps } from '@/components/Label'
 
-export type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
+export type InputProps = {
+  label: LabelProps['label']
+  hideLabel?: LabelProps['isHidden']
   error?: string
-}
+} & HeadlessInputProps
 
-export function InputComponent({ error, ...rest }: InputProps) {
+export function InputComponent({
+  error,
+  label,
+  hideLabel,
+  ...rest
+}: InputProps) {
   return (
-    <div className="relative space-y-2">
-      <div className="relative">
+    <Field className="relative w-full">
+      <InputLabel label={label} isHidden={hideLabel} />
+      <div className="relative w-full">
         <Input
-          className={`peer form-input relative block w-full min-w-48 rounded-lg border border-brand-300 bg-brand-800 px-4 py-3 pr-9 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none ${error && 'border-red-400'}`}
+          className={clsx(
+            'peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-4 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none',
+            error && 'border-red-400 pr-10',
+            !hideLabel && 'mt-2',
+          )}
           {...rest}
         />
 
@@ -24,8 +42,7 @@ export function InputComponent({ error, ...rest }: InputProps) {
           </div>
         )}
       </div>
-
-      {error && <span className="absolute -bottom-8 text-red-400">{error}</span>}
-    </div>
+      {error && <p className="absolute -bottom-8 text-red-400">{error}</p>}
+    </Field>
   )
 }
