@@ -1,12 +1,11 @@
 ---
-title: "Announcing the Filecoin NV23 Waffle Upgrade: Enhancing Filecoin’s
-  Efficiency and Security"
+title: Announcing the Filecoin NV23 Waffle Upgrade
 created-on: 2024-08-05T16:31:00.000Z
 updated-on: 2024-08-05T16:31:00.000Z
 published-on: 2024-08-05T16:31:00.000Z
 category: news
-description: "The NV23 Waffle upgrade for the Filecoin network has successfully
-  gone live on August 6, 2024."
+description: The NV23 Waffle upgrade for the Filecoin network has successfully
+  gone live on August 6, 2024.
 image:
   src: /assets/images/blog-header-nv23-upgrade.webp
 seo:
