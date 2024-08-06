@@ -19,22 +19,20 @@ export function verifyLinks(path: string) {
 }
 
 function verifyExternalLink(url: string) {
-  cy.request({ url, failOnStatusCode: false }).then((response) => {
-    if (response.status === REQUEST_DENIED_STATUS_CODE) {
-      const errorMessage = getErrorMessage(response)
-      cy.log(`Ignored link: ${url} - ${errorMessage}`)
-      return
-    }
-
-    if (isClientOrServerError(response.status)) {
-      const errorMessage = getErrorMessage(response)
-      cy.log(`Broken link: ${url} - ${errorMessage}`)
-    }
-  })
+  cy.request({ url, failOnStatusCode: false, timeout: 60000 }).then(
+    (response) => {
+      if (isClientOrServerError(response.status)) {
+        const errorMessage = getErrorMessage(response)
+        cy.log(`Broken link: ${url} - ${errorMessage}`)
+      }
+    },
+  )
 }
 
 function isClientOrServerError(status: number) {
-  return status >= CLIENT_ERROR_THRESHOLD
+  return (
+    status >= CLIENT_ERROR_THRESHOLD && status !== REQUEST_DENIED_STATUS_CODE
+  )
 }
 
 function getErrorMessage(response: Cypress.Response<any>) {
