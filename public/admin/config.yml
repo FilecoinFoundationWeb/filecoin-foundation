@@ -52,6 +52,9 @@ meta_config: &meta_config
     - name: "description"
       label: "Meta Description"
       widget: "text"
+      pattern:
+        - "^.{0,160}$"
+        - "Must have at most 160 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
     - name: "og"
       label: "Open Graph Metadata"
@@ -466,7 +469,7 @@ collections:
         hint: "A short description of the project. Maximum 160 characters."
         pattern:
           - "^.{0,160}$"
-          - "Description must be 160 characters or less."
+          - "Must have at most 160 characters."
       - name: website
         label: Website
         widget: string
