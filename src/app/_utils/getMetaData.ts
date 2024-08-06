@@ -1,5 +1,6 @@
 import { BlogPostData } from '@/types/blogPostTypes'
-import { EventData } from '@/types/eventTypes'
+
+import type { EventData } from '@/models/eventDataModel'
 
 import { formatDate } from './formatDate'
 

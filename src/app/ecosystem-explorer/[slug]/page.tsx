@@ -15,13 +15,14 @@ import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/formatDate'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import {
   type DynamicPathValues,
   PATHS,
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
 } from '@/constants/paths'
-import { graphicsData } from '@/data/graphicsData'
 
 import { VideoSection } from './components/VideoSection'
 import { generateStructuredData } from './utils/generateStructuredData'

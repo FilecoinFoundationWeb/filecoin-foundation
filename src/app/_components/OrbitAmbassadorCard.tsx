@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { BasicCard } from '@/components/BasicCard'
 import { StaticImage } from '@/components/StaticImage'

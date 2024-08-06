@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Card } from '@/components/Card'
 import { type HeadingProps, Heading } from '@/components/Heading'

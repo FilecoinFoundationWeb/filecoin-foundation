@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 
 import { Listbox } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
 

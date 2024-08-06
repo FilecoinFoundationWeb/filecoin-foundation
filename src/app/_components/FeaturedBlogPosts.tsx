@@ -5,9 +5,10 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
 import { PATHS } from '@/constants/paths'
-import { graphicsData } from '@/data/graphicsData'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4

@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 
 import { UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
-import type { EventData } from '@/types/eventTypes'
+import type { EventData } from '@/models/eventDataModel'
 
 import { isDateValid } from '@/utils/formatDate'
 
