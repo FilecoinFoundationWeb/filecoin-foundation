@@ -7,8 +7,9 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
+
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -50,7 +51,8 @@ export default function EventEntry({ params }: EventProps) {
             : undefined
         }
         image={{
-          ...image,
+          alt: '',
+          ...(image || graphicsData.imageFallback),
           fallback: graphicsData.imageFallback,
         }}
       />
