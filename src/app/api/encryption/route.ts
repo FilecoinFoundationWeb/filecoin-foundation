@@ -2,6 +2,7 @@ import { type NextRequest } from 'next/server'
 
 import { z } from 'zod'
 
+import { getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { encrypt, decrypt, PREFIX } from '@/utils/encryption'
 
 const payloadSchema = z.object({
@@ -29,9 +30,22 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET() {
-  const encryptionConfig = {
-    prefix: PREFIX,
+  const { fields } = getCollectionConfig('ecosystem_projects')
+
+  const emailFieldConfig = fields.find((field) => field.name === 'email')
+  const fullNameFieldConfig = fields.find((field) => field.name === 'full-name')
+
+  if (!emailFieldConfig || !fullNameFieldConfig) {
+    return new Response("Couldn't find relevant field config", {
+      status: 400,
+    })
   }
 
-  return Response.json(encryptionConfig)
+  const config = {
+    encryptionPrefix: PREFIX,
+    emailCMSName: emailFieldConfig.name,
+    fullNameCMSName: fullNameFieldConfig.name,
+  }
+
+  return Response.json(config)
 }

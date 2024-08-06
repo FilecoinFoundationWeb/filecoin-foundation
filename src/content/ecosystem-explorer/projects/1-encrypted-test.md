@@ -1,7 +1,7 @@
 ---
 title: A new test
-email: encrypted::U2FsdGVkX1/jb/eggvDR5q7x9Ba5qOrPTZfc7bv21tM=
-full-name: encrypted::U2FsdGVkX1/O6FYpEBwdlH2neKvsBAeDaw82xWn+u8Q=
+email: encrypted::U2FsdGVkX18Hl3417qARgd9LwQT4JgGPX6LRLc21RCg=
+full-name: encrypted::U2FsdGVkX1864gDDvZSsjb2eQ5g/Uwla8mq8hsYe9MFmybad6lO1dSlgaRO2Yjfk
 created-on: 2024-07-15T17:29:47.705Z
 updated-on: 2024-07-15T17:29:47.714Z
 published-on: 2024-07-15T17:29:47.725Z

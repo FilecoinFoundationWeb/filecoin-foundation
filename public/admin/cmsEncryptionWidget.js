@@ -1,15 +1,22 @@
-const EMAIL_CMS_FIELD = 'email'
-const FULL_NAME_CMS_FIELD = 'full-name'
+let ENCRYPTION_PREFIX = ''
+let EMAIL_CMS_NAME = ''
+let FULL_NAME_CMS_NAME = ''
+
+const ENCRYPTION_ENDPOINT = '/api/encryption'
 
 const EMPTY_CMS_VALUE = ''
 const UNSET_CMS_VALUE = undefined
 
-const ENCRYPTION_ENDPOINT = '/api/encryption'
-let ENCRYPTION_PREFIX = ''
-
+// Fetch the encryption config on page load
 fetch(ENCRYPTION_ENDPOINT, { method: 'GET' })
   .then((response) => response.json())
-  .then((config) => (ENCRYPTION_PREFIX = config.prefix))
+  .then((config) => {
+    const { emailCMSName, fullNameCMSName, encryptionPrefix } = config
+
+    EMAIL_CMS_NAME = emailCMSName
+    FULL_NAME_CMS_NAME = fullNameCMSName
+    ENCRYPTION_PREFIX = encryptionPrefix
+  })
   .catch((error) => {
     throw new Error(`Could not fetch encryption config: ${error}`)
   })
@@ -45,16 +52,12 @@ function decrypt(value) {
 async function encryptValueIfNew(entry, fieldName) {
   const value = entry.get('data').get(fieldName)
 
-  if (value === UNSET_CMS_VALUE) {
+  if (value === UNSET_CMS_VALUE || value === EMPTY_CMS_VALUE) {
     return
   }
 
-  if (value === EMPTY_CMS_VALUE) {
-    return entry.get('data').set(fieldName, EMPTY_CMS_VALUE)
-  }
-
-  if (!ENCRYPTION_PREFIX) {
-    throw new Error('Encryption prefix is not set')
+  if (!ENCRYPTION_PREFIX || !EMAIL_CMS_NAME || !FULL_NAME_CMS_NAME) {
+    throw new Error('Encryption config is not set')
   }
 
   const valueIsAlreadyEncrypted = value.startsWith(ENCRYPTION_PREFIX)
@@ -69,12 +72,12 @@ async function encryptValueIfNew(entry, fieldName) {
 
 CMS.registerEventListener({
   name: 'preSave',
-  handler: async ({ entry }) => encryptValueIfNew(entry, EMAIL_CMS_FIELD),
+  handler: async ({ entry }) => encryptValueIfNew(entry, EMAIL_CMS_NAME),
 })
 
 CMS.registerEventListener({
   name: 'preSave',
-  handler: async ({ entry }) => encryptValueIfNew(entry, FULL_NAME_CMS_FIELD),
+  handler: async ({ entry }) => encryptValueIfNew(entry, FULL_NAME_CMS_NAME),
 })
 
 // CMS Custom Widgets: https://decapcms.org/docs/custom-widgets/
@@ -109,7 +112,6 @@ const DecryptedValueWidget = createClass({
 
   render: function () {
     const { data, error, loading } = this.state
-    console.log({ data, error, loading })
 
     if (loading) {
       return h('div', {}, 'Loading...')
