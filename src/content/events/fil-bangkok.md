@@ -13,7 +13,7 @@ description: Dive into decentralized AI infrastructure, DePIN, and the evolving
   opportunity to help shape the future of Filecoin and contribute to the next
   chapter of a better internet. Secure your spot early.
 location: Bangkok, Thailand
-external-link: " https://lu.ma/aqyqwupe"
+external-link: "https://lu.ma/aqyqwupe"
 start-date: 2024-11-11T11:18:00.000Z
 end-date: 2024-11-11T11:18:00.000Z
 image:
