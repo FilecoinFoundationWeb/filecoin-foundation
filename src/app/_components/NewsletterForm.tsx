@@ -76,7 +76,6 @@ export function NewsletterForm() {
           isLabelHidden={true}
           error={getError(methods.formState.errors, 'email')}
         />
-
         <Button className="min-w-44" type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'Subscribing' : 'Subscribe'}
         </Button>
