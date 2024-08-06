@@ -19,6 +19,7 @@ import {
   type DynamicPathValues,
   PATHS,
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
 } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
@@ -47,6 +48,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const categoryData = getCategoryDataFromDirectory(
     ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   )
+  const subcategoryData = getCategoryDataFromDirectory(
+    ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+  )
 
   const {
     image,
@@ -60,11 +64,12 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     updatedOn,
     newsUpdate,
     category,
+    subcategories,
   } = data
 
   return (
     <article>
-      <header className="mb-16">
+      <header className="mb-8 space-y-10 md:space-y-16">
         <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
           <DynamicImage
             fill
@@ -85,8 +90,13 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             }}
           />
         </div>
+        <div className="flex flex-wrap gap-2">
+          <TagLabel borderColor="brand-100">{categoryData[category]}</TagLabel>
+          {subcategories.map((subcategory, i) => (
+            <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
+          ))}
+        </div>
       </header>
-
       <div className="flex flex-wrap justify-between gap-8">
         <div className="max-w-readable space-y-8">
           <div className="space-y-6">
@@ -113,8 +123,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
               )}
             </div>
           )}
-
-          <TagLabel>{categoryData[category]}</TagLabel>
         </div>
 
         <ul className="mt-4 flex flex-col gap-5">
