@@ -1,6 +1,6 @@
 import Image, { type StaticImageData, type ImageProps } from 'next/image'
 
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { ImageObjectFit } from '@/types/sharedProps/imageType'
 
