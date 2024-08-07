@@ -17,6 +17,7 @@ type FeaturedGrantsGraduatesProps = {
 export function FeaturedGrantsGraduates({
   grantGraduates,
 }: FeaturedGrantsGraduatesProps) {
+  console.log('grantGraduates', grantGraduates)
   if (grantGraduates.length === 0) {
     return <p>No featured grants graduates available.</p>
   }
