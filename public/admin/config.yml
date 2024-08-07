@@ -1,5 +1,6 @@
 local_backend: true
 site_url: https://fil.org
+display_url: https://fil.org
 
 backend:
   name: github
