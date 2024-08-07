@@ -1,4 +1,4 @@
-import { DynamicBaseData } from '@/models/dynamicDataBaseModel'
+import { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'

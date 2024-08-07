@@ -26,7 +26,6 @@
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/styles/*": ["./src/app/_styles/*"],
-      "@/models/*": ["./src/app/_models/*"],
       "@/types/*": ["./src/app/_types/*"],
       "@/schemas/*": ["./src/app/_schemas/*"],
       "@/utils/*": ["./src/app/_utils/*"],

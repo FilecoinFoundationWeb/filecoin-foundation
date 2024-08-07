@@ -1,4 +1,4 @@
-import { EventDataSchema, type EventData } from '@/models/eventDataModel'
+import { EventDataSchema, type EventData } from '@/schemas/eventDataSchema'
 
 export function convertMarkdownToEventData(data: any): EventData {
   const result = EventDataSchema.safeParse({

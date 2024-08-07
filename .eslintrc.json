@@ -76,11 +76,6 @@
             "position": "before"
           },
           {
-            "pattern": "@/models/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
             "pattern": "@/utils/**",
             "group": "internal",
             "position": "before"

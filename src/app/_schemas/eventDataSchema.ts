@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { DynamicBaseDataSchema } from '@/models/dynamicDataBaseModel'
+import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
 
 import { iso8601StringToDate } from '@/utils/dateUtils'
 

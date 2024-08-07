@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import type { EventData } from '@/models/eventDataModel'
+import type { EventData } from '@/schemas/eventDataSchema'
 
 import { convertMarkdownToEventData } from '@/utils/convertMarkdownToEventData'
 import {
