@@ -1,6 +1,6 @@
-import { EventDataSchema, type EventData } from '@/schemas/eventDataSchema'
+import { EventDataSchema } from '@/schemas/eventDataSchema'
 
-export function convertMarkdownToEventData(data: any): EventData {
+export function convertMarkdownToEventData(data: Record<string, any>) {
   const result = EventDataSchema.safeParse({
     title: data.title,
     slug: data.slug,
