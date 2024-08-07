@@ -140,8 +140,8 @@ collections:
           - name: "featured_entry"
             label: "Featured Post"
             widget: "relation"
-            collection: "blog"
-            value_field: "slug"
+            collection: "blog_posts"
+            value_field: "src/content/blog/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -174,7 +174,7 @@ collections:
           - name: "featured_entry"
             label: "Featured Event"
             widget: "relation"
-            collection: "events"
+            collection: "event-entries"
             value_field: "slug"
             search_fields:
               - "slug"
@@ -256,7 +256,7 @@ collections:
           - *header_config
           - *meta_config
 
-  - name: "blog"
+  - name: "blog_posts"
     label: "Blog Posts"
     label_singular: "Blog Post"
     folder: "src/content/blog/"
@@ -304,7 +304,7 @@ collections:
         label: "Recommended Posts"
         widget: "hidden"
         required: false
-        collection: "blog"
+        collection: "blog_posts"
         value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
@@ -537,7 +537,7 @@ collections:
         required: false
       - *meta_config
 
-  - name: "events"
+  - name: "event-entries"
     label: "Events"
     folder: "src/content/events/"
     preview_path: "events/{{slug}}"

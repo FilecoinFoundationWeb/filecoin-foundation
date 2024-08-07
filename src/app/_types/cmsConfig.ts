@@ -1,4 +1,4 @@
-export type CMSCollectionName = 'blog' | 'ecosystem' | 'events'
+export type CMSCollectionName = 'blog_posts' | 'ecosystem' | 'events'
 
 export type CMSFieldOption = {
   label: string
