@@ -1,3 +1,5 @@
+import path from 'path'
+
 import dynamic from 'next/dynamic'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
@@ -52,8 +54,14 @@ type Props = {
 
 const events = getEventsData()
 const { categorySettings, validCategoryOptions } = getEventsCategorySettings()
-const { featured_entry: featuredEventSlug, seo } = attributes
-const featuredEvent = getEventData(featuredEventSlug || '')
+const { featured_entry, seo } = attributes
+
+if (!featured_entry) {
+  throw new Error('Featured entry is undefined')
+}
+
+const featuredEventSlug = path.parse(featured_entry).name
+const featuredEvent = getEventData(featuredEventSlug)
 
 export const metadata = createMetadata({
   seo,
@@ -186,7 +194,7 @@ export default function Events({ searchParams }: Props) {
                             }),
                           }}
                           tag={getCategoryLabel({
-                            collectionName: 'events',
+                            collectionName: 'event_entries',
                             category,
                           })}
                         />

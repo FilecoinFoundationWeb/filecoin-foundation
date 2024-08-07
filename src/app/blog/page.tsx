@@ -1,3 +1,5 @@
+import path from 'path'
+
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -46,9 +48,18 @@ type Props = {
 }
 
 const posts = getBlogPostsData()
-const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
-const { featured_entry: featuredPostSlug, seo } = attributes
-const featuredPost = getBlogPostData(featuredPostSlug || '')
+
+const { categorySettings, validCategoryOptions } =
+  getCategorySettings('blog_posts')
+
+const { featured_entry, seo } = attributes
+
+if (!featured_entry) {
+  throw new Error('Featured entry is undefined')
+}
+
+const featuredPostSlug = path.parse(featured_entry).name
+const featuredPost = getBlogPostData(featuredPostSlug)
 
 export const metadata = createMetadata({
   seo,
@@ -181,7 +192,7 @@ export default function Blog({ searchParams }: Props) {
                             }),
                           }}
                           tag={getCategoryLabel({
-                            collectionName: 'blog',
+                            collectionName: 'blog_posts',
                             category,
                           })}
                         />
