@@ -1,5 +1,6 @@
 local_backend: true
 site_url: https://fil.org
+display_url: https://fil.org
 
 backend:
   name: github
@@ -10,6 +11,27 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+created_on: &created_on
+  name: "created-on"
+  label: "Created On"
+  widget: "datetime"
+
+updated_on: &updated_on
+  name: "updated-on"
+  label: "Updated On"
+  widget: "datetime"
+  required: false
+
+published_on: &published_on
+  name: "published-on"
+  label: "Published On"
+  widget: "datetime"
+  required: false
 
 header_config: &header_config
   name: "header"
@@ -27,12 +49,14 @@ image_config: &image_config
   name: "image"
   label: "Image"
   widget: "object"
+  required: false
   hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
   fields:
     - name: "src"
       label: "URL"
       widget: "image"
       allow_multiple: false
+      choose_url: false
       required: false
       hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
     - name: "alt"
@@ -52,7 +76,10 @@ meta_config: &meta_config
     - name: "description"
       label: "Meta Description"
       widget: "text"
-      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 160 characters for the following content: [paste your content here].'"
+      pattern:
+        - "^.{0,220}$"
+        - "Must have at most 220 characters."
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - name: "og"
       label: "Open Graph Metadata"
       widget: "object"
@@ -65,10 +92,9 @@ meta_config: &meta_config
         - name: "image"
           label: "Open Graph Image"
           widget: "image"
+          allow_multiple: false
+          choose_url: false
           required: false
-          media_library:
-            config:
-              multiple: false
     - name: "twitter"
       label: "Twitter Metadata"
       widget: "object"
@@ -100,6 +126,7 @@ collections:
       - name: "about"
         label: "About"
         file: "src/content/pages/about.md"
+        preview_path: "about"
         fields:
           - *header_config
           - *meta_config
@@ -107,6 +134,7 @@ collections:
       - name: "blog"
         label: "Blog"
         file: "src/content/pages/blog.md"
+        preview_path: "blog"
         fields:
           - *header_config
           - name: "featured_entry"
@@ -124,6 +152,7 @@ collections:
       - name: "ecosystem"
         label: "Ecosystem"
         file: "src/content/pages/ecosystem-explorer.md"
+        preview_path: "ecosystem-explorer"
         fields:
           - *header_config
           - *meta_config
@@ -131,26 +160,15 @@ collections:
       - name: "employee-privacy-policy"
         label: "Employee Privacy Policy"
         file: "src/content/pages/employee-privacy-policy.md"
+        preview_path: "employee-privacy-policy"
         fields:
           - *header_config
-          - name: "featured_grant_graduates"
-            label: "Featured Grant Graduates"
-            widget: "relation"
-            collection: "ecosystem_projects"
-            value_field: "slug"
-            search_fields:
-              - "slug"
-              - "title"
-            display_fields:
-              - "title"
-            multiple: true
-            min: 6
-            max: 6
           - *meta_config
 
       - name: "events"
         label: "Events"
         file: "src/content/pages/events.md"
+        preview_path: "events"
         fields:
           - *header_config
           - name: "featured_entry"
@@ -168,6 +186,7 @@ collections:
       - name: "filecoin-plus"
         label: "Filecoin Plus"
         file: "src/content/pages/filecoin-plus.md"
+        preview_path: "filecoin-plus"
         fields:
           - *header_config
           - *meta_config
@@ -175,6 +194,7 @@ collections:
       - name: "governance"
         label: "Governance"
         file: "src/content/pages/governance.md"
+        preview_path: "governance"
         fields:
           - *header_config
           - *meta_config
@@ -182,8 +202,22 @@ collections:
       - name: "grants"
         label: "Grants"
         file: "src/content/pages/grants.md"
+        preview_path: "grants"
         fields:
           - *header_config
+          - name: "featured_grant_graduates"
+            label: "Featured Grant Graduates"
+            widget: "relation"
+            collection: "ecosystem_projects"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
           - *meta_config
 
       - name: "home"
@@ -209,6 +243,7 @@ collections:
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
+        preview_path: "privacy-policy"
         fields:
           - *header_config
           - *meta_config
@@ -216,6 +251,7 @@ collections:
       - name: "terms"
         label: "Terms"
         file: "src/content/pages/terms-of-use.md"
+        preview_path: "terms-of-use"
         fields:
           - *header_config
           - *meta_config
@@ -224,6 +260,7 @@ collections:
     label: "Blog Posts"
     label_singular: "Blog Post"
     folder: "src/content/blog/"
+    preview_path: "blog/{{slug}}"
     create: true
     extension: "md"
     slug: "{{slug}}"
@@ -231,17 +268,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "category"
         label: "Category"
         widget: "select"
@@ -332,6 +361,7 @@ collections:
     label: Ecosystem Projects
     label_singular: Ecosystem Project
     folder: "src/content/ecosystem-explorer/projects/"
+    preview_path: "ecosystem-explorer/{{slug}}"
     create: true
     extension: md
     slug: "{{slug}}"
@@ -463,10 +493,10 @@ collections:
       - name: description
         label: Short Description
         widget: string
-        hint: "A short description of the project. Maximum 160 characters."
         pattern:
           - "^.{0,160}$"
-          - "Description must be 160 characters or less."
+          - "Must have at most 160 characters."
+        hint: "A short description of the project. Maximum 160 characters."
       - name: website
         label: Website
         widget: string
@@ -510,6 +540,7 @@ collections:
   - name: "events"
     label: "Events"
     folder: "src/content/events/"
+    preview_path: "events/{{slug}}"
     label_singular: "Event"
     create: true
     extension: "md"
@@ -518,17 +549,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "category"
         label: "Category"
         widget: "select"
@@ -541,18 +564,9 @@ collections:
             value: "hosted"
           - label: "Supported & Sponsored"
             value: "supported-sponsored"
-      - name: "description"
-        label: "Description"
-        widget: "string"
-        required: false
       - name: "location"
         label: "Location"
         widget: "string"
-      - name: "external-link"
-        label: "External Link URL"
-        widget: "string"
-        required: false
-        hint: "External link to the event page"
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
@@ -562,5 +576,14 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
+      - name: "description"
+        label: "Description"
+        widget: "string"
+        required: false
+      - name: "external-link"
+        label: "External Link URL"
+        widget: "string"
+        required: false
+        hint: "External link to the event page"
       - *image_config
       - *meta_config
