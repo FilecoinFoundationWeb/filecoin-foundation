@@ -4,7 +4,6 @@ import { CTASection } from '@/components/CTASection'
 import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
-import { NewsletterForm } from '@/components/NewsletterForm'
 import { NoBreadCrumbsLayout } from '@/components/NoBreadCrumbsLayout'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -45,7 +44,6 @@ export default function Home() {
     <NoBreadCrumbsLayout>
       <PageLayout>
         <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
-        <NewsletterForm />
         <PageHeader
           title={header.title}
           description={header.description}
