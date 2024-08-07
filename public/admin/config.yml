@@ -163,19 +163,6 @@ collections:
         preview_path: "employee-privacy-policy"
         fields:
           - *header_config
-          - name: "featured_grant_graduates"
-            label: "Featured Grant Graduates"
-            widget: "relation"
-            collection: "ecosystem_projects"
-            value_field: "slug"
-            search_fields:
-              - "slug"
-              - "title"
-            display_fields:
-              - "title"
-            multiple: true
-            min: 6
-            max: 6
           - *meta_config
 
       - name: "events"
@@ -218,6 +205,19 @@ collections:
         preview_path: "grants"
         fields:
           - *header_config
+          - name: "featured_grant_graduates"
+            label: "Featured Grant Graduates"
+            widget: "relation"
+            collection: "ecosystem_projects"
+            value_field: "slug"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+            multiple: true
+            min: 6
+            max: 6
           - *meta_config
 
       - name: "home"
