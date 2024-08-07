@@ -15,7 +15,7 @@ module.exports = {
           600: '#0621a4',
           700: '#06094e',
           800: '#08072e',
-        },
+        }
       },
       typography: ({ theme }) => ({
         DEFAULT: {

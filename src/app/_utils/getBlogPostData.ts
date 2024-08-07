@@ -6,7 +6,7 @@ import { transformMarkdownToItemData } from '@/utils/transformMarkdownToItemData
 
 import { PATHS } from '@/constants/paths'
 
-const BLOG_COLLECTION_NAME = 'blog'
+const BLOG_COLLECTION_NAME = 'blog_posts'
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
 export function getBlogPostData(slug: string): BlogPostData {

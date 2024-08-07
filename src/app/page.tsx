@@ -1,3 +1,5 @@
+import path from 'path'
+
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
@@ -23,11 +25,15 @@ import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 
-const {
-  featured_ecosystem_projects: featuredEcosystemProjectsSlugs,
-  header,
-  seo,
-} = attributes
+const { featured_ecosystem_projects, header, seo } = attributes
+
+if (!featured_ecosystem_projects) {
+  throw new Error('Featured ecosystem projects are undefined')
+}
+
+const featuredEcosystemProjectsSlugs = featured_ecosystem_projects.map(
+  (item) => path.parse(item).name,
+)
 
 const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
@@ -44,7 +50,6 @@ export default function Home() {
     <NoBreadCrumbsLayout>
       <PageLayout>
         <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
-
         <PageHeader
           title={header.title}
           description={header.description}
