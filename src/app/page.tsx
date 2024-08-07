@@ -50,7 +50,6 @@ export default function Home() {
     <NoBreadCrumbsLayout>
       <PageLayout>
         <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
-
         <PageHeader
           title={header.title}
           description={header.description}
