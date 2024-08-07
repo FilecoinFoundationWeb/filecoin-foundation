@@ -42,7 +42,9 @@ export function FormInput({
           </div>
         )}
       </div>
-      {error && <p className="absolute -bottom-8 text-red-400">{error}</p>}
+      {error && (
+        <p className="absolute -bottom-8 text-nowrap text-red-400">{error}</p>
+      )}
     </Field>
   )
 }

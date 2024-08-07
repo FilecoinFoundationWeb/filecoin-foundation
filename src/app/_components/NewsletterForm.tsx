@@ -49,9 +49,11 @@ export function NewsletterForm() {
             error={getError(methods.formState.errors, 'email')}
           />
         </div>
-        <Button className="min-w-44" type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Subscribing' : 'Subscribe'}
-        </Button>
+        <div className="flex min-w-44 [&>*:first-child]:flex-1">
+          <Button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Subscribing' : 'Subscribe'}
+          </Button>
+        </div>
       </div>
     </Form>
   )
