@@ -369,17 +369,9 @@ collections:
       - name: title
         label: Company Name
         widget: string
-      - name: created-on
-        label: Created On
-        widget: datetime
-      - name: updated-on
-        label: Updated On
-        widget: datetime
-        required: false
-      - name: published-on
-        label: Published On
-        widget: datetime
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - *image_config
       - name: category
         label: Category
