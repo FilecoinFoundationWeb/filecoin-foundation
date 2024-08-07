@@ -6,7 +6,7 @@ import { transformMarkdownToItemData } from '@/utils/transformMarkdownToItemData
 
 import { PATHS } from '@/constants/paths'
 
-const EVENTS_COLLECTION_NAME = 'events'
+const EVENTS_COLLECTION_NAME = 'event_entries'
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
 export function getEventData(slug: string): EventData {

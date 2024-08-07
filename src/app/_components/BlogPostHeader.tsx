@@ -25,7 +25,7 @@ export function BlogPostHeader({
     <header className="space-y-6">
       <div className="space-y-4">
         <TagLabel>
-          {getCategoryLabel({ collectionName: 'blog', category })}
+          {getCategoryLabel({ collectionName: 'blog_posts', category })}
         </TagLabel>
         <Heading tag="h1" variant="4xl">
           {title}
