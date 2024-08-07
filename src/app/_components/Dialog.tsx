@@ -14,11 +14,11 @@ type DialogComponentProps = {
 
 const dialogStatus = {
   success: {
-    title: 'Check your email',
+    title: 'Successfully subscribed!',
     icon: <Icon component={CheckCircle} color="success" />,
   },
   warning: {
-    title: 'Something went wrong',
+    title: 'An error has occurred. Please try again.',
     icon: <Icon component={XCircle} color="warning" />,
   },
 }
@@ -30,12 +30,13 @@ export default function DialogComponent({
 }: DialogComponentProps) {
   return (
     <Dialog
+      transition
       open={isOpen}
-      className={`${isOpen ? 'animate-slide-in-from-top' : 'animate-leave'} fixed inset-0 z-50 flex items-start justify-center p-4`}
+      className="fixed inset-0 z-50 flex items-start justify-center p-4 data-[closed]:animate-leave data-[open]:animate-slide-in-from-top"
       onClose={() => setIsOpen(false)}
     >
-      <div className="w-96 rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
-        <DialogPanel className="flex">
+      <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
+        <DialogPanel transition className="flex gap-3 ">
           <DialogTitle className="flex flex-1 gap-3 text-brand-100">
             {status && dialogStatus[status].icon}
             {status && dialogStatus[status].title}

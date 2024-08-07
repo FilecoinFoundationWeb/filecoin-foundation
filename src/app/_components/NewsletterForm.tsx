@@ -3,12 +3,12 @@
 import { useState } from 'react'
 
 import { zodResolver } from '@hookform/resolvers/zod'
+import * as Sentry from '@sentry/nextjs'
 import { FieldErrors, useForm } from 'react-hook-form'
-import useSWR from 'swr'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
-import DialogComponent, { StatusType } from '@/components/Dialog'
+import DialogComponent, { type StatusType } from '@/components/Dialog'
 import ControlledFormInput from '@/components/Form/ControlledFormInput'
 import Form from '@/components/Form/Form'
 
@@ -21,24 +21,7 @@ export const NewsletterSchema = z.object({
 
 export type FormType = z.infer<typeof NewsletterSchema>
 
-const BEEHIIV_API_URL = 'https://stoplight.io/mocks/beehiiv/v2/104190750'
-
-async function getNewsletter(endpoint: string) {
-  const response = await fetch(endpoint, {
-    method: 'GET',
-    headers: {
-      Authorization: `Bearer ${process.env.BEEHIIV_API_KEY}`,
-      'Content-Type': 'application/json',
-    },
-  })
-
-  if (!response.ok) {
-    throw new Error('getNewsletter: Failed to fetch data')
-  }
-
-  const data = await response.json()
-  return data
-}
+export const url = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
 
 export function NewsletterForm() {
   const methods = useForm<FormType>({
@@ -47,21 +30,39 @@ export function NewsletterForm() {
 
   const { isSubmitting } = methods.formState
   const [isOpen, setIsOpen] = useState(false)
-  const [status, setStatus] = useState<StatusType>(null)
+  const [notificationStatus, setNotificationStatus] = useState<StatusType>(null)
+
+  async function postSubscription(email: string) {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email }),
+    })
+
+    return response.status
+  }
 
   async function onSubmit(values: FormType) {
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    methods.resetField('email')
-    setIsOpen(true)
-    setStatus('success')
-    // ! add Sentry error
+    try {
+      const result = await postSubscription(values.email)
+      console.log(result)
+      setIsOpen(true)
+      setNotificationStatus('success')
+    } catch (error) {
+      setIsOpen(true)
+      setNotificationStatus('warning')
+      Sentry.captureException(error)
+    } finally {
+      methods.resetField('email')
+    }
   }
 
   function getError(errors: FieldErrors<FormType>, name: keyof FormType) {
     return errors[name]?.message
   }
-
-  const { data, error, isLoading, isValidating, mutate } = useSWR('newsletter')
 
   return (
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
@@ -83,7 +84,11 @@ export function NewsletterForm() {
           </Button>
         </div>
       </div>
-      <DialogComponent status={status} isOpen={isOpen} setIsOpen={setIsOpen} />
+      <DialogComponent
+        status={notificationStatus}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      />
     </Form>
   )
 }
