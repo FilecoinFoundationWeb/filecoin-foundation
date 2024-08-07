@@ -16,6 +16,23 @@ slug:
   encoding: "ascii"
   clean_accents: true
 
+created_on: &created_on
+  name: "created-on"
+  label: "Created On"
+  widget: "datetime"
+
+updated_on: &updated_on
+  name: "updated-on"
+  label: "Updated On"
+  widget: "datetime"
+  required: false
+
+published_on: &published_on
+  name: "published-on"
+  label: "Published On"
+  widget: "datetime"
+  required: false
+
 header_config: &header_config
   name: "header"
   label: "Header"
@@ -239,17 +256,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "category"
         label: "Category"
         widget: "select"
@@ -526,17 +535,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "category"
         label: "Category"
         widget: "select"
