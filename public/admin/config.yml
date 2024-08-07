@@ -481,10 +481,10 @@ collections:
       - name: description
         label: Short Description
         widget: string
-        hint: "A short description of the project. Maximum 160 characters."
         pattern:
           - "^.{0,160}$"
           - "Must have at most 160 characters."
+        hint: "A short description of the project. Maximum 160 characters."
       - name: website
         label: Website
         widget: string
