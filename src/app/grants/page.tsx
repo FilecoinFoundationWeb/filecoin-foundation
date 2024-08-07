@@ -1,3 +1,5 @@
+import path from 'path'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
@@ -27,11 +29,16 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
-const {
-  featured_grant_graduates: grantGraduatesSlugs,
-  header,
-  seo,
-} = attributes
+const { featured_grant_graduates, header, seo } = attributes
+
+if (!featured_grant_graduates) {
+  throw new Error('Featured grant graduates are undefined')
+}
+
+const grantGraduatesSlugs = featured_grant_graduates.map(
+  (item) => path.parse(item).name,
+)
+
 const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )

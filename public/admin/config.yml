@@ -140,8 +140,8 @@ collections:
           - name: "featured_entry"
             label: "Featured Post"
             widget: "relation"
-            collection: "blog"
-            value_field: "slug"
+            collection: "blog_posts"
+            value_field: "src/content/blog/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -174,8 +174,8 @@ collections:
           - name: "featured_entry"
             label: "Featured Event"
             widget: "relation"
-            collection: "events"
-            value_field: "slug"
+            collection: "event_entries"
+            value_field: "src/content/events/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -209,7 +209,7 @@ collections:
             label: "Featured Grant Graduates"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "slug"
+            value_field: "src/content/ecosystem-explorer/projects/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -229,7 +229,7 @@ collections:
             label: "Featured Ecosystem Projects"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "slug"
+            value_field: "src/content/ecosystem-explorer/projects/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -256,7 +256,7 @@ collections:
           - *header_config
           - *meta_config
 
-  - name: "blog"
+  - name: "blog_posts"
     label: "Blog Posts"
     label_singular: "Blog Post"
     folder: "src/content/blog/"
@@ -304,7 +304,7 @@ collections:
         label: "Recommended Posts"
         widget: "hidden"
         required: false
-        collection: "blog"
+        collection: "blog_posts"
         value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
@@ -369,17 +369,9 @@ collections:
       - name: title
         label: Company Name
         widget: string
-      - name: created-on
-        label: Created On
-        widget: datetime
-      - name: updated-on
-        label: Updated On
-        widget: datetime
-        required: false
-      - name: published-on
-        label: Published On
-        widget: datetime
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - *image_config
       - name: category
         label: Category
@@ -537,7 +529,7 @@ collections:
         required: false
       - *meta_config
 
-  - name: "events"
+  - name: "event_entries"
     label: "Events"
     folder: "src/content/events/"
     preview_path: "events/{{slug}}"

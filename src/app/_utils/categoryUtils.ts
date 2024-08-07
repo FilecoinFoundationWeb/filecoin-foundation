@@ -52,7 +52,7 @@ export function getCategorySettings(collectionName: CMSCollectionName) {
 }
 
 export function getEventsCategorySettings() {
-  const eventSettings = getCategorySettings('events')
+  const eventSettings = getCategorySettings('event_entries')
   const { categorySettings, validCategoryOptions } = eventSettings
 
   return {

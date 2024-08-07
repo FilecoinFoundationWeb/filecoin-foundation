@@ -38,7 +38,7 @@ export default function EventEntry({ params }: EventProps) {
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <TagLabel borderColor="brand-100">
-        {getCategoryLabel({ collectionName: 'events', category })}
+        {getCategoryLabel({ collectionName: 'event_entries', category })}
       </TagLabel>
       <PageHeader
         title={title}
