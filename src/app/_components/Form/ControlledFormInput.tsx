@@ -10,7 +10,7 @@ type ControlledFormInputProps<FormType extends FieldValues> = {
   rules?: RegisterOptions
 } & FormInputProps
 
-export default function ControlledFormInput<FormType extends FieldValues>({
+export function ControlledFormInput<FormType extends FieldValues>({
   name,
   rules,
   type,

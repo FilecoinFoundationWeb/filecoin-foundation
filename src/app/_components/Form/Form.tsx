@@ -8,7 +8,7 @@ type FormProps<Type extends FieldValues> = {
   methods: UseFormReturn<Type>
 } & Omit<React.ComponentProps<'form'>, 'onSubmit'>
 
-export default function Form<Type extends FieldValues>(props: FormProps<Type>) {
+export function Form<Type extends FieldValues>(props: FormProps<Type>) {
   const { methods, children, onSubmit, ...rest } = props
 
   return (
