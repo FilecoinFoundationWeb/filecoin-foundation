@@ -551,18 +551,9 @@ collections:
             value: "hosted"
           - label: "Supported & Sponsored"
             value: "supported-sponsored"
-      - name: "description"
-        label: "Description"
-        widget: "string"
-        required: false
       - name: "location"
         label: "Location"
         widget: "string"
-      - name: "external-link"
-        label: "External Link URL"
-        widget: "string"
-        required: false
-        hint: "External link to the event page"
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
@@ -572,5 +563,14 @@ collections:
         widget: "datetime"
         required: false
         hint: "Last day of event"
+      - name: "description"
+        label: "Description"
+        widget: "string"
+        required: false
+      - name: "external-link"
+        label: "External Link URL"
+        widget: "string"
+        required: false
+        hint: "External link to the event page"
       - *image_config
       - *meta_config
