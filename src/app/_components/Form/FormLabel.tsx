@@ -12,7 +12,7 @@ export function FormLabel({ label, isHidden = false }: FormLabelProps) {
   return (
     <Label
       className={clsx(
-        'text-base font-bold capitalize text-brand-100',
+        'mb-2 inline-block text-base font-bold capitalize text-brand-100',
         isHidden && 'sr-only',
       )}
     >
