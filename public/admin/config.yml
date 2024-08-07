@@ -376,6 +376,9 @@ collections:
         label: Submitter's Email
         widget: decrypted_widget
         required: false
+        pattern:
+          - "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+          - "Email address is invalid"
       - name: full-name
         label: Submitter's Full Name
         widget: decrypted_widget
