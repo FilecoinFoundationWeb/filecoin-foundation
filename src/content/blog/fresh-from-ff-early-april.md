@@ -68,4 +68,4 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Events**
 
-- The program schedule is live for FIL Hong Kong, hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).
+- The program schedule is live for [FIL Hong Kong](https://www.fil.org/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).
