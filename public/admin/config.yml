@@ -174,7 +174,7 @@ collections:
           - name: "featured_entry"
             label: "Featured Event"
             widget: "relation"
-            collection: "event-entries"
+            collection: "event_entries"
             value_field: "slug"
             search_fields:
               - "slug"
@@ -537,7 +537,7 @@ collections:
         required: false
       - *meta_config
 
-  - name: "event-entries"
+  - name: "event_entries"
     label: "Events"
     folder: "src/content/events/"
     preview_path: "events/{{slug}}"
