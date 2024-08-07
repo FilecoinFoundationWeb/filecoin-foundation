@@ -12,6 +12,10 @@ publish_mode: editorial_workflow
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 header_config: &header_config
   name: "header"
   label: "Header"
