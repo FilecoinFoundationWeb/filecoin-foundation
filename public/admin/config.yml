@@ -126,6 +126,7 @@ collections:
       - name: "about"
         label: "About"
         file: "src/content/pages/about.md"
+        preview_path: "about"
         fields:
           - *header_config
           - *meta_config
@@ -133,6 +134,7 @@ collections:
       - name: "blog"
         label: "Blog"
         file: "src/content/pages/blog.md"
+        preview_path: "blog"
         fields:
           - *header_config
           - name: "featured_entry"
@@ -150,6 +152,7 @@ collections:
       - name: "ecosystem"
         label: "Ecosystem"
         file: "src/content/pages/ecosystem-explorer.md"
+        preview_path: "ecosystem-explorer"
         fields:
           - *header_config
           - *meta_config
@@ -157,6 +160,7 @@ collections:
       - name: "employee-privacy-policy"
         label: "Employee Privacy Policy"
         file: "src/content/pages/employee-privacy-policy.md"
+        preview_path: "employee-privacy-policy"
         fields:
           - *header_config
           - name: "featured_grant_graduates"
@@ -177,6 +181,7 @@ collections:
       - name: "events"
         label: "Events"
         file: "src/content/pages/events.md"
+        preview_path: "events"
         fields:
           - *header_config
           - name: "featured_entry"
@@ -194,6 +199,7 @@ collections:
       - name: "filecoin-plus"
         label: "Filecoin Plus"
         file: "src/content/pages/filecoin-plus.md"
+        preview_path: "filecoin-plus"
         fields:
           - *header_config
           - *meta_config
@@ -201,6 +207,7 @@ collections:
       - name: "governance"
         label: "Governance"
         file: "src/content/pages/governance.md"
+        preview_path: "governance"
         fields:
           - *header_config
           - *meta_config
@@ -208,6 +215,7 @@ collections:
       - name: "grants"
         label: "Grants"
         file: "src/content/pages/grants.md"
+        preview_path: "grants"
         fields:
           - *header_config
           - *meta_config
@@ -235,6 +243,7 @@ collections:
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
+        preview_path: "privacy-policy"
         fields:
           - *header_config
           - *meta_config
@@ -242,6 +251,7 @@ collections:
       - name: "terms"
         label: "Terms"
         file: "src/content/pages/terms-of-use.md"
+        preview_path: "terms-of-use"
         fields:
           - *header_config
           - *meta_config
@@ -250,6 +260,7 @@ collections:
     label: "Blog Posts"
     label_singular: "Blog Post"
     folder: "src/content/blog/"
+    preview_path: "blog/{{slug}}"
     create: true
     extension: "md"
     slug: "{{slug}}"
@@ -350,6 +361,7 @@ collections:
     label: Ecosystem Projects
     label_singular: Ecosystem Project
     folder: "src/content/ecosystem-explorer/projects/"
+    preview_path: "ecosystem-explorer/{{slug}}"
     create: true
     extension: md
     slug: "{{slug}}"
@@ -528,6 +540,7 @@ collections:
   - name: "events"
     label: "Events"
     folder: "src/content/events/"
+    preview_path: "events/{{slug}}"
     label_singular: "Event"
     create: true
     extension: "md"
