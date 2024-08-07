@@ -49,12 +49,14 @@ image_config: &image_config
   name: "image"
   label: "Image"
   widget: "object"
+  required: false
   hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
   fields:
     - name: "src"
       label: "URL"
       widget: "image"
       allow_multiple: false
+      choose_url: false
       required: false
       hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
     - name: "alt"
@@ -90,10 +92,9 @@ meta_config: &meta_config
         - name: "image"
           label: "Open Graph Image"
           widget: "image"
+          allow_multiple: false
+          choose_url: false
           required: false
-          media_library:
-            config:
-              multiple: false
     - name: "twitter"
       label: "Twitter Metadata"
       widget: "object"
