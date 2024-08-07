@@ -8,6 +8,10 @@ on:
 jobs:
   cypress-weekly:
     runs-on: ubuntu-latest
+
+    env:
+      AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3

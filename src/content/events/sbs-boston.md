@@ -6,7 +6,7 @@ published-on: 2023-06-27T15:32:41.640Z
 category: supported-sponsored
 description: null
 location: Boston, MA
-external-link: https://sbs.tech/
+external-link: null
 start-date: 2023-04-13T15:36:02.820Z
 end-date: 2023-04-13T15:36:00.000Z
 image:
@@ -14,6 +14,7 @@ image:
   alt: null
 seo:
   title: SBS Boston
-  description: Join SBS Boston to engage with the blockchain community and explore
+  description:
+    Join SBS Boston to engage with the blockchain community and explore
     sustainable blockchain solutions.
 ---

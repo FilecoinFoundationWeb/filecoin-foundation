@@ -41,7 +41,7 @@ Additionally, FF and Theoriq are exploring an AI agent leveraging [25 years of d
 
 ## Cost-Effective and Efficient Decentralized AI Infrastructure
 
-[Bagel](https://www.bagel.net/), an AI and cryptography research lab, and Filecoin Foundation are collaborating to enable AI developers to train and store their models using the compute and storage power of the Filecoin network. With Bagel’s decentralized compute network aggregator, Filecoin storage providers will be able to utilize both storage and computational resources, increasing revenue, optimizing compute resource utilization, and accelerating adoption by offering a comprehensive solution for ML workloads. Read the [Bagel announcement](https://www.businesswire.com/news/home/20240708730698/en/Bagel-and-Filecoin-Foundation-Collaborate-to-Support-Decentralized-AI-Development).
+[Bagel](https://www.bagel.net/), an AI and cryptography research lab, and Filecoin Foundation are collaborating to enable AI developers to train and store their models using the compute and storage power of the Filecoin network. With Bagel’s decentralized compute network aggregator, Filecoin storage providers will be able to utilize both storage and computational resources, increasing revenue, optimizing compute resource utilization, and accelerating adoption by offering a comprehensive solution for ML workloads.
 
 ## Accelerating and Securing Access to AI Data
 

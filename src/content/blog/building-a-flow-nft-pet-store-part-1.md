@@ -259,7 +259,7 @@ This namespace can only be accessed by the owner of the account.
 
 ## /private
 
-This namespace is used to stored private objects and [capabilities](https://docs.onflow.org/cadence/language/capability-based-access-control/) whose access can be granted to selected accounts.
+This namespace is used to stored private objects and capabilities whose access can be granted to selected accounts.
 
 ## /public
 
