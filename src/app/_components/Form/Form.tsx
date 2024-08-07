@@ -17,11 +17,7 @@ export default function Form<Type extends FieldValues>(props: FormProps<Type>) {
 
   return (
     <FormProvider {...methods}>
-      <form
-        autoComplete="on"
-        onSubmit={methods.handleSubmit(onSubmit)}
-        {...rest}
-      >
+      <form onSubmit={methods.handleSubmit(onSubmit)} {...rest}>
         {children}
       </form>
     </FormProvider>

@@ -8,9 +8,9 @@ import useSWR from 'swr'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
-import ControlledInput from '@/components/ControlledInput'
 import DialogComponent, { StatusType } from '@/components/Dialog'
-import Form from '@/components/Form'
+import ControlledFormInput from '@/components/Form/ControlledFormInput'
+import Form from '@/components/Form/Form'
 
 export const NewsletterSchema = z.object({
   email: z
@@ -57,10 +57,7 @@ export function NewsletterForm() {
     // ! add Sentry error
   }
 
-  function getError(
-    errors: FieldErrors<FormType>,
-    name: Extract<keyof FormType, string>,
-  ) {
+  function getError(errors: FieldErrors<FormType>, name: keyof FormType) {
     return errors[name]?.message
   }
 
@@ -69,16 +66,22 @@ export function NewsletterForm() {
   return (
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
       <div className="flex items-end space-x-2">
-        <ControlledInput
-          name="email"
-          type="email"
-          placeholder="Enter your email"
-          isLabelHidden={true}
-          error={getError(methods.formState.errors, 'email')}
-        />
-        <Button className="min-w-44" type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Subscribing' : 'Subscribe'}
-        </Button>
+        <div className="w-72">
+          <ControlledFormInput<FormType>
+            hideLabel
+            label="Email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            autoComplete="email"
+            error={getError(methods.formState.errors, 'email')}
+          />
+        </div>
+        <div className="flex min-w-44 [&>*:first-child]:flex-1">
+          <Button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Subscribing' : 'Subscribe'}
+          </Button>
+        </div>
       </div>
       <DialogComponent status={status} isOpen={isOpen} setIsOpen={setIsOpen} />
     </Form>
