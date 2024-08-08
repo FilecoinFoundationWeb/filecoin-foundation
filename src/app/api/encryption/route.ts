@@ -10,7 +10,7 @@ const payloadSchema = z.object({
   operation: z.enum(['encrypt', 'decrypt']),
 })
 
-export async function POST(request: NextRequest) {
+async function handleRequest(request: NextRequest) {
   try {
     const payload = await request.json()
     const { value, operation } = payloadSchema.parse(payload)
@@ -25,8 +25,17 @@ export async function POST(request: NextRequest) {
 
     return new Response('Invalid request', { status: 400 })
   } catch (error) {
-    return new Response(String(error), { status: 400 })
+    const errorMessage =
+      error instanceof z.ZodError
+        ? `Validation failed: ${error.message}`
+        : `An error occurred: ${error}`
+
+    return new Response(errorMessage, { status: 400 })
   }
+}
+
+export async function POST(request: NextRequest) {
+  return handleRequest(request)
 }
 
 export async function GET() {

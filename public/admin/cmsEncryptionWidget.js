@@ -1,55 +1,61 @@
+const ENCRYPTION_ENDPOINT = '/api/encryption'
+const EMPTY_CMS_VALUE = ''
+const UNSET_CMS_VALUE = undefined
+
 let ENCRYPTION_PREFIX = ''
 let EMAIL_CMS_NAME = ''
 let FULL_NAME_CMS_NAME = ''
 
-const ENCRYPTION_ENDPOINT = '/api/encryption'
-
-const EMPTY_CMS_VALUE = ''
-const UNSET_CMS_VALUE = undefined
-
 // Fetch the encryption config on page load
-fetch(ENCRYPTION_ENDPOINT, { method: 'GET' })
-  .then((response) => response.json())
-  .then((config) => {
+async function fetchEncryptionConfig() {
+  try {
+    const response = await fetch(ENCRYPTION_ENDPOINT, { method: 'GET' })
+    const config = await response.json()
     const { emailCMSName, fullNameCMSName, encryptionPrefix } = config
 
     EMAIL_CMS_NAME = emailCMSName
     FULL_NAME_CMS_NAME = fullNameCMSName
     ENCRYPTION_PREFIX = encryptionPrefix
-  })
-  .catch((error) => {
-    throw new Error(`Could not fetch encryption config: ${error}`)
-  })
+  } catch (error) {
+    throw new Error(`Could not fetch encryption config: ${error.message}`)
+  }
+}
 
 // Encryption fetcher functions
-async function encryption(value, operation) {
-  const response = await fetch(ENCRYPTION_ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      value: value.trim(),
-      operation,
-    }),
-  })
+async function performEncryption(value, operation) {
+  try {
+    const response = await fetch(ENCRYPTION_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        value: value.trim(),
+        operation,
+      }),
+    })
 
-  if (response.status !== 200) {
-    throw new Error(`Could not perform ${operation} operation value: ${value} `)
+    if (response.status !== 200) {
+      throw new Error(
+        `Could not perform ${operation} operation for value: ${value}`,
+      )
+    }
+
+    const { result } = await response.json()
+    return result
+  } catch (error) {
+    throw new Error(`Encryption operation failed: ${error.message}`)
   }
-
-  const { result } = await response.json()
-  return result
 }
 
 function encrypt(value) {
-  return encryption(value, 'encrypt')
+  return performEncryption(value, 'encrypt')
 }
 
 function decrypt(value) {
-  return encryption(value, 'decrypt')
+  return performEncryption(value, 'decrypt')
 }
 
 // CMS Event Hooks: https://decapcms.org/docs/registering-events/
-async function encryptValueIfNew(entry, fieldName) {
+async function encryptIfNew(entry, fieldName) {
   const value = entry.get('data').get(fieldName)
 
   if (value === UNSET_CMS_VALUE || value === EMPTY_CMS_VALUE) {
@@ -72,12 +78,12 @@ async function encryptValueIfNew(entry, fieldName) {
 
 CMS.registerEventListener({
   name: 'preSave',
-  handler: async ({ entry }) => encryptValueIfNew(entry, EMAIL_CMS_NAME),
+  handler: ({ entry }) => encryptIfNew(entry, EMAIL_CMS_NAME),
 })
 
 CMS.registerEventListener({
   name: 'preSave',
-  handler: async ({ entry }) => encryptValueIfNew(entry, FULL_NAME_CMS_NAME),
+  handler: ({ entry }) => encryptIfNew(entry, FULL_NAME_CMS_NAME),
 })
 
 // CMS Custom Widgets: https://decapcms.org/docs/custom-widgets/
@@ -107,7 +113,10 @@ const DecryptedValueWidget = createClass({
     const cleanNewValue = newValue.replace(ENCRYPTION_PREFIX, '')
 
     this.props.onChange(cleanNewValue)
-    this.setState({ ...this.state, data: cleanNewValue })
+    this.setState((prevState) => ({
+      ...prevState,
+      data: newValue,
+    }))
   },
 
   render: function () {
@@ -143,3 +152,5 @@ CMS.registerWidget(
   DecryptedValueWidget,
   DecryptedValuePreview,
 )
+
+fetchEncryptionConfig()
