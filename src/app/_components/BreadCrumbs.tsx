@@ -46,7 +46,7 @@ export function BreadCrumbs() {
           const label = isRoot ? PATHS.HOME.label : formatLabel(path)
 
           return (
-            <li key={href} className="inline-flex items-center gap-2.5 ">
+            <li key={href} className="inline-flex items-center gap-2.5">
               {!isRoot && (
                 <Icon
                   component={CaretRight}
