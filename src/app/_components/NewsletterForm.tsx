@@ -30,7 +30,9 @@ export function NewsletterForm() {
 
   const { isSubmitting } = methods.formState
   const [isOpen, setIsOpen] = useState(false)
-  const [notificationStatus, setNotificationStatus] = useState<StatusType>(null)
+  const [notificationStatus, setNotificationStatus] = useState<
+    StatusType | undefined
+  >()
 
   async function postSubscription(email: string) {
     const response = await fetch(url, {
@@ -47,8 +49,7 @@ export function NewsletterForm() {
 
   async function onSubmit(values: FormType) {
     try {
-      const result = await postSubscription(values.email)
-      console.log(result)
+      await postSubscription(values.email)
       setIsOpen(true)
       setNotificationStatus('success')
     } catch (error) {

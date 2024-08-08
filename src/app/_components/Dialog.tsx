@@ -4,12 +4,12 @@ import { X } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 
-export type StatusType = 'success' | 'warning' | null
+export type StatusType = 'success' | 'warning'
 
 type DialogComponentProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
-  status: StatusType
+  status?: StatusType
 }
 
 const dialogStatus = {
@@ -36,8 +36,8 @@ export default function DialogComponent({
       onClose={() => setIsOpen(false)}
     >
       <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
-        <DialogPanel transition className="flex gap-3 ">
-          <DialogTitle className="flex flex-1 gap-3 text-brand-100">
+        <DialogPanel className="flex gap-3">
+          <DialogTitle className="flex flex-1 items-center gap-3 text-brand-100">
             {status && dialogStatus[status].icon}
             {status && dialogStatus[status].title}
           </DialogTitle>
@@ -45,7 +45,7 @@ export default function DialogComponent({
             className="hover:text-brand-400"
             onClick={() => setIsOpen(false)}
           >
-            <Icon component={X} color="brand-200" hoverStyle="inherit" />
+            <Icon inheritHoverStyle component={X} color="brand-200" />
           </button>
         </DialogPanel>
       </div>

@@ -1,10 +1,9 @@
 import { Logo } from '@/components/Logo'
+import { NewsletterForm } from '@/components/NewsletterForm'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
 import { footerNavigationItems } from '@/constants/navigationItems'
-
-import { NewsletterForm } from './NewsletterForm'
 
 export function Footer() {
   return (

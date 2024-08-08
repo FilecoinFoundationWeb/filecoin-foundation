@@ -5,7 +5,7 @@ export type IconProps = {
   color?: keyof typeof colorStyles
   size?: number
   weight?: 'light' | 'regular' | 'bold'
-  hoverStyle?: keyof typeof hoverStyles
+  inheritHoverStyle?: boolean
 }
 
 const colorStyles = {
@@ -17,20 +17,16 @@ const colorStyles = {
   warning: 'text-red-400',
 }
 
-const hoverStyles = {
-  inherit: 'hover:text-inherit',
-}
-
 export function Icon({
   component,
   color = 'inherit',
   size = 24,
   weight = 'regular',
-  hoverStyle,
+  inheritHoverStyle,
 }: IconProps) {
   const Component = component
 
-  const className = `${colorStyles[color]}${hoverStyle ? ` ${hoverStyles[hoverStyle]}` : ''}`
+  const className = `${colorStyles[color]} ${inheritHoverStyle ? ` hover:text-inherit` : ''}`
 
   return (
     <span aria-hidden="true" className={className}>
