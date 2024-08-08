@@ -6,7 +6,7 @@ published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
 description: null
 location: Paris, France
-external-link: https://sbs.tech/
+external-link: null
 start-date: 2022-07-22T00:00:00.000Z
 end-date: 2022-07-23T00:00:00.000Z
 image:

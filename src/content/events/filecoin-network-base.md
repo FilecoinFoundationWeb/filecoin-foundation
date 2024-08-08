@@ -6,7 +6,7 @@ published-on: 2023-06-27T15:46:15.140Z
 category: hosted
 description: null
 location: Austin, Texas
-external-link: https://networkbase.io/austin/
+external-link: null
 start-date: 2023-04-24T15:46:15.146Z
 end-date: 2023-04-26T15:46:15.151Z
 image:

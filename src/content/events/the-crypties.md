@@ -6,7 +6,7 @@ published-on: 2023-06-27T17:24:48.666Z
 category: supported-sponsored
 description: null
 location:  Miami, Florida
-external-link: https://cryptiesawards.com/
+external-link: null
 start-date: 2022-11-30T18:24:48.715Z
 end-date: null
 image:

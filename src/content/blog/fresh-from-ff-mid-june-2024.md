@@ -20,7 +20,7 @@ seo:
 
 # Mid-June Highlights
 
-🤝 Filecoin Foundation for the Decentralized Web and Artizen announced the [Filecoin Fund for Cultural Preservation](https://help.artizen.fund/en/articles/8736866-filecoin-fund-for-cultural-preservation?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=3-takeaways-from-the-filecoin-community-at-consensus), supporting projects that use decentralized storage technologies to archive, preserve, and disseminate cultural works and emphasize the critical role of decentralized storage technologies in safeguarding human creativity.
+🤝 Filecoin Foundation for the Decentralized Web and Artizen announced the Filecoin Fund for Cultural Preservation, supporting projects that use decentralized storage technologies to archive, preserve, and disseminate cultural works and emphasize the critical role of decentralized storage technologies in safeguarding human creativity.
 
 💰 FF is offering [grants](https://fil.org/blog/help-us-improve-filecoin-docs-plus-how-to-receive-grant-funding-up-to-50-000) for projects that enhance existing [Filecoin documentation](https://docs.filecoin.io/) or create new educational resources. The new grant category, Documentation Enhancement, funds proposals that fit within the focus areas of tutorial creation, comprehensive developer guides, and interactive learning resources, with grants of up to $5,000.
 
