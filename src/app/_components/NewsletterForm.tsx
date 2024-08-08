@@ -7,8 +7,8 @@ import { FieldErrors, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
-import ControlledFormInput from '@/components/Form/ControlledFormInput'
-import Form from '@/components/Form/Form'
+import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
+import { Form } from '@/components/Form/Form'
 
 export const NewsletterSchema = z.object({
   email: z
