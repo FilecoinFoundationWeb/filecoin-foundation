@@ -372,6 +372,12 @@ collections:
       - *created_on
       - *updated_on
       - *published_on
+      - name: email
+        label: Submitter's Email
+        widget: decrypted_widget
+      - name: full-name
+        label: Submitter's Full Name
+        widget: decrypted_widget
       - *image_config
       - name: category
         label: Category

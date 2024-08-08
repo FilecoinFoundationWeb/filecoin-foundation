@@ -13,6 +13,7 @@ jobs:
     env:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
       PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
 
     steps:
       - name: Checkout Repository

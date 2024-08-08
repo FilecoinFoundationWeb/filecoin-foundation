@@ -1,5 +1,5 @@
 import Airtable from 'airtable'
-import z from 'zod'
+import { z } from 'zod'
 
 import { AIRTABLE_ORBIT_EVENTS_CONFIG } from '../constants/airtableOrbitEventsConfig'
 
