@@ -1,8 +1,8 @@
 import { Octokit } from '@octokit/rest'
 
-// https://github.com/octokit/octokit.js
-// https://octokit.github.io/rest.js/v20/
-const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
+const owner = 'FilecoinFoundationWeb'
+const repo = 'filecoin-foundation'
+const baseBranch = 'main'
 
 type SHA = string
 
@@ -13,50 +13,14 @@ type Tree = {
   sha: SHA
 }
 
-const owner = 'FilecoinFoundationWeb'
-const repo = 'filecoin-foundation'
-const baseBranch = 'main'
-
-export async function getLatestCommitOnMain() {
-  const { data: latestCommitOnMain } = await octokit.rest.repos.getCommit({
-    owner,
-    repo,
-    ref: `heads/${baseBranch}`,
-  })
-
-  return latestCommitOnMain
-}
-
 type CreateBlobParams = {
   content: string
   encoding: 'utf-8' | 'base64'
 }
 
-export async function createBlob({ content, encoding }: CreateBlobParams) {
-  const { data: blob } = await octokit.rest.git.createBlob({
-    owner,
-    repo,
-    content,
-    encoding,
-  })
-
-  return blob
-}
-
 type CreateTreeParams = {
   baseTreeSha: SHA
   newTrees: Array<Tree>
-}
-
-export async function createTree({ baseTreeSha, newTrees }: CreateTreeParams) {
-  const { data: newTree } = await octokit.rest.git.createTree({
-    owner,
-    repo,
-    tree: newTrees,
-    base_tree: baseTreeSha,
-  })
-
-  return newTree
 }
 
 type CreateCommitParams = {
@@ -65,26 +29,79 @@ type CreateCommitParams = {
   message: string
 }
 
+type CreateBranchParams = {
+  commitSha: SHA
+  branchName: string
+}
+
+type CreatePRParams = {
+  title: string
+} & CreateBranchParams
+
+const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
+
+export async function getLatestCommitOnMain() {
+  try {
+    const { data: latestCommitOnMain } = await octokit.rest.repos.getCommit({
+      owner,
+      repo,
+      ref: `heads/${baseBranch}`,
+    })
+    return latestCommitOnMain
+  } catch (error) {
+    console.error('Error fetching the latest commit:', error)
+    throw error
+  }
+}
+
+export async function createBlob({ content, encoding }: CreateBlobParams) {
+  try {
+    const { data: blob } = await octokit.rest.git.createBlob({
+      owner,
+      repo,
+      content,
+      encoding,
+    })
+    return blob
+  } catch (error) {
+    console.error('Error creating blob:', error)
+    throw error
+  }
+}
+
+export async function createTree({ baseTreeSha, newTrees }: CreateTreeParams) {
+  try {
+    const { data: newTree } = await octokit.rest.git.createTree({
+      owner,
+      repo,
+      tree: newTrees,
+      base_tree: baseTreeSha,
+    })
+    return newTree
+  } catch (error) {
+    console.error('Error creating tree:', error)
+    throw error
+  }
+}
+
 export async function createCommit({
   parentCommitSha,
   treeSha,
   message,
 }: CreateCommitParams) {
-  // TODO: Add signature to commit
-  const { data: newCommit } = await octokit.rest.git.createCommit({
-    owner,
-    repo,
-    message,
-    tree: treeSha,
-    parents: [parentCommitSha],
-  })
-
-  return newCommit
-}
-
-type CreateBranchParams = {
-  commitSha: SHA
-  branchName: string
+  try {
+    const { data: newCommit } = await octokit.rest.git.createCommit({
+      owner,
+      repo,
+      message,
+      tree: treeSha,
+      parents: [parentCommitSha],
+    })
+    return newCommit
+  } catch (error) {
+    console.error('Error creating commit:', error)
+    throw error
+  }
 }
 
 async function createBranch({ commitSha, branchName }: CreateBranchParams) {
@@ -98,24 +115,23 @@ async function createBranch({ commitSha, branchName }: CreateBranchParams) {
   return newBranch
 }
 
-type CreatePRParams = {
-  title: string
-} & CreateBranchParams
-
 export async function createPR({
   title,
   branchName,
   commitSha,
 }: CreatePRParams) {
-  await createBranch({ commitSha, branchName })
-
-  const { data: newPullRequest } = await octokit.rest.pulls.create({
-    owner,
-    repo,
-    head: branchName,
-    base: baseBranch,
-    title,
-  })
-
-  return newPullRequest
+  try {
+    await createBranch({ commitSha, branchName })
+    const { data: newPullRequest } = await octokit.rest.pulls.create({
+      owner,
+      repo,
+      head: branchName,
+      base: baseBranch,
+      title,
+    })
+    return newPullRequest
+  } catch (error) {
+    console.error('Error creating pull request:', error)
+    throw error
+  }
 }

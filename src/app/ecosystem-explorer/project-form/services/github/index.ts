@@ -83,7 +83,7 @@ export async function submitProjectToGithub({
 
     return newPullRequest
   } catch (error) {
-    console.error(error)
-    throw new Error(String(error))
+    console.error('Error submitting project to GitHub:', error)
+    throw new Error(`Failed to submit project: ${error}`)
   }
 }
