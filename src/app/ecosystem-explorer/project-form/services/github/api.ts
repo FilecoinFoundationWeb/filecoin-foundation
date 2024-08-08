@@ -1,8 +1,8 @@
 import { Octokit } from '@octokit/rest'
 
-const owner = 'FilecoinFoundationWeb'
-const repo = 'filecoin-foundation'
-const baseBranch = 'main'
+const OWNER = 'FilecoinFoundationWeb'
+const REPO = 'filecoin-foundation'
+const BASE_BRANCH = 'main'
 
 type SHA = string
 
@@ -43,9 +43,9 @@ const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 export async function getLatestCommitOnMain() {
   try {
     const { data: latestCommitOnMain } = await octokit.rest.repos.getCommit({
-      owner,
-      repo,
-      ref: `heads/${baseBranch}`,
+      owner: OWNER,
+      repo: REPO,
+      ref: `heads/${BASE_BRANCH}`,
     })
     return latestCommitOnMain
   } catch (error) {
