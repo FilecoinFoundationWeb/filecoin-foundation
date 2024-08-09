@@ -65,6 +65,8 @@ image_config: &image_config
       required: false
       hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
 
+seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
+
 meta_config: &meta_config
   name: "seo"
   label: "SEO Metadata"
@@ -77,7 +79,7 @@ meta_config: &meta_config
       label: "Meta Description"
       widget: "text"
       pattern:
-        - "^.{0,220}$"
+        - "^.{0,<<*seo_metadata_description_max_characters>>}$"
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - name: "og"

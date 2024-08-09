@@ -17,11 +17,12 @@ import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/grants.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'

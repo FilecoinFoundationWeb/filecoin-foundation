@@ -2,7 +2,7 @@ export function isDateValid(date: string | Date): boolean {
   return !Number.isNaN(new Date(date).getTime())
 }
 
-export function formatDate(dateString: string): string {
+export function formatDate(dateString: string | Date): string {
   const date = new Date(dateString)
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',

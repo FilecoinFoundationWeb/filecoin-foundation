@@ -1,5 +1,5 @@
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { CustomLink } from '@/components/CustomLink'
@@ -81,40 +81,26 @@ const imageBaseStyle = 'rounded-lg px-1 pt-1'
 const imagePaddingStyle = 'px-6 pt-4'
 
 function CardImage({ image }: Pick<CardProps, 'image'>) {
-  if (!image) {
-    return null
-  }
+  if (!image) return null
 
   const isDynamicImage = 'src' in image
   const isStaticImage = 'data' in image
 
-  if (isDynamicImage) {
-    const { padding, ...rest } = image
+  if (!isDynamicImage && !isStaticImage) return null
 
-    return (
-      <div className={imageContainerBaseStyle}>
-        <DynamicImage
-          {...rest}
-          fill
-          className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
-        />
-      </div>
-    )
-  }
+  const { padding, ...rest } = image
 
-  if (isStaticImage) {
-    const { padding, ...rest } = image
+  const renderImage = (ImageComponent: React.ElementType) => (
+    <div className={imageContainerBaseStyle}>
+      <ImageComponent
+        {...rest}
+        fill
+        className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
+      />
+    </div>
+  )
 
-    return (
-      <div className={imageContainerBaseStyle}>
-        <StaticImage
-          {...rest}
-          fill
-          className={clsx(imageBaseStyle, padding && imagePaddingStyle)}
-        />
-      </div>
-    )
-  }
+  return isDynamicImage ? renderImage(DynamicImage) : renderImage(StaticImage)
 }
 
 const borderStyles = {
