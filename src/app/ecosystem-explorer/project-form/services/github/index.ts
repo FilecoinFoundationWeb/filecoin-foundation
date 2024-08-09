@@ -3,19 +3,16 @@
 import slugify from 'slugify'
 
 import { getTodayISO } from '@/utils/dateUtils'
+import { handleError } from '@/utils/handleError'
 
-import {
-  getLatestCommitOnMain,
-  createBlob,
-  createTree,
-  createCommit,
-  createPR,
-} from './api'
-import {
-  getFolderPaths,
-  getMarkdownTemplate,
-  type AllowedImageFormats,
-} from './utils'
+import { createBlob } from './api/createBlob'
+import { createCommit } from './api/createCommit'
+import { createPR } from './api/createPr'
+import { createTree } from './api/createTree'
+import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
+import { AllowedImageFormats } from './utils/fileUtils'
+import { getMarkdownTemplate } from './utils/markdownUtils'
+import { getFolderPaths } from './utils/pathUtils'
 
 type SubmitProjectParams = {
   projectName: string
@@ -25,34 +22,32 @@ type SubmitProjectParams = {
   }
 }
 
-export async function submitProjectToGithub({
-  projectName,
-  logo,
-}: SubmitProjectParams) {
-  const { mediaFolder, ecosystemFolder, publicFolder } = getFolderPaths()
-  const today = getTodayISO()
-
-  const slug = slugify(projectName, {
-    lower: true,
-    strict: true,
-  })
-
-  const branchName = `ecosystem-submission/${slug}-${today}`
-
-  const markdownTemplate = getMarkdownTemplate({
-    projectName,
-    imagePath: `${publicFolder}/${slug}.${logo.format}`,
-  })
-
+async function createProjectBlobs(
+  markdownTemplate: string,
+  logo: { base64: string; format: AllowedImageFormats },
+) {
   try {
-    const latestCommitOnMain = await getLatestCommitOnMain()
-
     const [markdownBlob, imageBlob] = await Promise.all([
-      createBlob({ content: markdownTemplate, encoding: 'utf-8' }),
-      createBlob({ content: logo.base64, encoding: 'base64' }),
+      createBlob(markdownTemplate, 'utf-8'),
+      createBlob(logo.base64, 'base64'),
     ])
+    return { markdownBlob, imageBlob }
+  } catch (error) {
+    return handleError(error, 'Error creating blobs:')
+  }
+}
 
-    const newTree = await createTree({
+async function createNewTree(
+  latestCommitOnMain: any,
+  mediaFolder: string,
+  ecosystemFolder: string,
+  slug: string,
+  logo: { format: AllowedImageFormats },
+  markdownBlob: any,
+  imageBlob: any,
+) {
+  try {
+    return await createTree({
       baseTreeSha: latestCommitOnMain.commit.tree.sha,
       newTrees: [
         {
@@ -69,6 +64,45 @@ export async function submitProjectToGithub({
         },
       ],
     })
+  } catch (error) {
+    return handleError(error, 'Error creating new tree:')
+  }
+}
+
+export async function submitProjectToGithub({
+  projectName,
+  logo,
+}: SubmitProjectParams) {
+  const { mediaFolder, ecosystemFolder, publicFolder } = getFolderPaths()
+  const today = getTodayISO()
+
+  const slug = slugify(projectName, {
+    lower: true,
+    strict: true,
+  })
+
+  const branchName = `ecosystem-submission/${slug}-${today}`
+  const markdownTemplate = getMarkdownTemplate({
+    projectName,
+    imagePath: `${publicFolder}/${slug}.${logo.format}`,
+  })
+
+  try {
+    const latestCommitOnMain = await getLatestCommitOnMain()
+
+    const { markdownBlob, imageBlob } = await createProjectBlobs(
+      markdownTemplate,
+      logo,
+    )
+    const newTree = await createNewTree(
+      latestCommitOnMain,
+      mediaFolder,
+      ecosystemFolder,
+      slug,
+      logo,
+      markdownBlob,
+      imageBlob,
+    )
 
     const newCommit = await createCommit({
       parentCommitSha: latestCommitOnMain.sha,
@@ -84,7 +118,6 @@ export async function submitProjectToGithub({
 
     return newPullRequest
   } catch (error) {
-    console.error(error)
-    throw new Error(String(error))
+    return handleError(error, 'Error submitting project to GitHub:')
   }
 }

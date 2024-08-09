@@ -24,6 +24,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 
+console.log(PATHS.ECOSYSTEM_EXPLORER.entriesContentPath)
 const ecosystemProjects = getEcosystemProjectsData()
 
 const { featured_ecosystem_projects, header, seo } = attributes

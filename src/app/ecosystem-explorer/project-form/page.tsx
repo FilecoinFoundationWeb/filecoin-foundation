@@ -9,23 +9,19 @@ import {
   ALLOWED_IMAGE_FORMATS,
   getFileFormat,
   convertToBase64,
-} from './services/github/utils'
+} from './services/github/utils/fileUtils'
 
 export default function ProjectForm() {
   const [files, setFiles] = useState<FileList | null>()
   const [projectName, setProjectName] = useState<string | undefined>('')
-
   const [link, setLink] = useState<string | undefined>('')
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
+
     const file = files?.[0]
 
-    if (!file) {
-      return
-    }
-
-    if (!projectName) {
+    if (!file || !projectName) {
       return
     }
 
