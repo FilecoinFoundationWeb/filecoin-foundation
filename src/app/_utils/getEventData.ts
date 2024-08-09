@@ -1,27 +1,51 @@
-import { EventData } from '@/types/eventTypes'
+import fs from 'fs'
+import path from 'path'
 
-import { mapMarkdownToEventData } from '@/utils/mapMarkdownToEventData'
-import { transformMarkdownToCollectionData } from '@/utils/transformMarkdownToCollectionData'
-import { transformMarkdownToItemData } from '@/utils/transformMarkdownToItemData'
+import type { EventData } from '@/schemas/eventDataSchema'
+
+import { convertMarkdownToEventData } from '@/utils/convertMarkdownToEventData'
+import {
+  extractSlugFromFilename,
+  getFilenamesFromDirectory,
+  getFilePath,
+  handleFileNotFound,
+  parseMarkdown,
+  readFileContents,
+} from '@/utils/fileUtils'
 
 import { PATHS } from '@/constants/paths'
 
-const EVENTS_COLLECTION_NAME = 'event_entries'
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
 export function getEventData(slug: string): EventData {
-  return transformMarkdownToItemData<EventData>(
-    EVENTS_DIRECTORY_PATH,
-    EVENTS_COLLECTION_NAME,
-    slug,
-    mapMarkdownToEventData,
-  )
+  try {
+    const filePath = getFilePath(EVENTS_DIRECTORY_PATH, slug)
+
+    if (!fs.existsSync(filePath)) {
+      handleFileNotFound(filePath)
+    }
+
+    const fileContents = readFileContents(filePath)
+    const { data, content } = parseMarkdown(fileContents)
+
+    return convertMarkdownToEventData({ ...data, slug, content })
+  } catch (error) {
+    console.error('Error retrieving event data:', error)
+    throw error
+  }
 }
 
 export function getEventsData(): EventData[] {
-  return transformMarkdownToCollectionData<EventData>(
-    EVENTS_DIRECTORY_PATH,
-    EVENTS_COLLECTION_NAME,
-    mapMarkdownToEventData,
-  )
+  try {
+    const directory = path.join(process.cwd(), EVENTS_DIRECTORY_PATH)
+    const filenames = getFilenamesFromDirectory(directory)
+
+    return filenames.map((filename) => {
+      const slug = extractSlugFromFilename(filename)
+      return getEventData(slug)
+    })
+  } catch (error) {
+    console.error('Error retrieving events data:', error)
+    throw error
+  }
 }

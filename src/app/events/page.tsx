@@ -36,11 +36,12 @@ import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-import { graphicsData } from '@/data/graphicsData'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -110,7 +111,8 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description}
         metaData={getEventMetaData(featuredEvent)}
         image={{
-          ...featuredEvent.image,
+          alt: '',
+          ...(featuredEvent.image || graphicsData.events1),
           fallback: graphicsData.events1,
         }}
         cta={{
@@ -182,16 +184,11 @@ export default function Events({ searchParams }: Props) {
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
-                          cta={{
-                            href:
-                              shouldLinkToExternalEventsPage ||
-                              `${PATHS.EVENTS.path}/${slug}`,
-                            text: 'View Event Details',
-                            icon: MagnifyingGlass,
-                          }}
                           image={{
-                            ...image,
-                            priority: isFirstTwoImages,
+                            alt: '',
+                            ...(image || {
+                              ...graphicsData.imageFallback,
+                            }),
                             fallback: graphicsData.imageFallback,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
@@ -199,6 +196,14 @@ export default function Events({ searchParams }: Props) {
                               md: '450px',
                               lg: '360px',
                             }),
+                            padding: isFirstTwoImages,
+                          }}
+                          cta={{
+                            href:
+                              shouldLinkToExternalEventsPage ||
+                              `${PATHS.EVENTS.path}/${slug}`,
+                            text: 'View Event Details',
+                            icon: MagnifyingGlass,
                           }}
                           tag={getCategoryLabel({
                             collectionName: 'event_entries',

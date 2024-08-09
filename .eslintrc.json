@@ -71,7 +71,17 @@
             "position": "before"
           },
           {
+            "pattern": "@/schemas/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/data/**",
             "group": "internal",
             "position": "before"
           },

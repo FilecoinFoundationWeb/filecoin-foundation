@@ -29,13 +29,14 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/blog.md'
 
 import { CountAndReset } from '@/_components/CountAndReset'
 import { getIsCategoryApplied } from '@/_utils/getTotalCategoryCount'
 import { PATHS } from '@/constants/paths'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 

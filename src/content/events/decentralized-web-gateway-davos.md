@@ -10,12 +10,9 @@ description: Filecoin Foundation, in partnership with CNBC and CoinDesk, will
   venue, across the street from the WEF gates, and will feature three full days
   of programming, receptions, and A-List celebrity events.
 location: Davos, Switzerland
-external-link: null
 start-date: 2022-05-22T12:00:00.000Z
-end-date: null
 image:
   src: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
-  alt: ""
 seo:
   title: Decentralized Web Gateway Davos
   description: Explore the Decentralized Web Gateway at Davos and discover the

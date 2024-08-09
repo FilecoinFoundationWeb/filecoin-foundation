@@ -5,7 +5,7 @@ import { useState, Dispatch, SetStateAction } from 'react'
 import Link from 'next/link'
 
 import { ArrowUpRight, List, X } from '@phosphor-icons/react'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 import { Route } from 'next'
 
 import { Icon, IconProps } from '@/components/Icon'

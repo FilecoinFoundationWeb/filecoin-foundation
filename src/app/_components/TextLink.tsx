@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowUpRight } from '@phosphor-icons/react'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
