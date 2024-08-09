@@ -2,6 +2,8 @@
 
 import slugify from 'slugify'
 
+import { getTodayISO } from '@/utils/dateUtils'
+
 import {
   getLatestCommitOnMain,
   createBlob,
@@ -12,7 +14,6 @@ import {
 import {
   getFolderPaths,
   getMarkdownTemplate,
-  getTodayISO,
   type AllowedImageFormats,
 } from './utils'
 
