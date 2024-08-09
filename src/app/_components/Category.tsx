@@ -16,22 +16,39 @@ type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
   settings: CategorySetting[]
   counts?: ReturnType<typeof useCategory>['categoryCounts']
+  hasResetToDefaultCategory?: boolean
 }
 
-export function Category({ query, settings, counts }: CategoryProps) {
-  const [categoryOption, setCategoryOption] = useState(query || '')
-  const { updateSearchParams } = useUpdateSearchParams()
+export const DEFAULT_CATEGORY = 'All'
+
+export function Category({
+  query,
+  settings,
+  counts,
+  hasResetToDefaultCategory = false,
+}: CategoryProps) {
+  const defaultCategoryOption = query || DEFAULT_CATEGORY
+
+  const [categoryOption, setCategoryOption] = useState(defaultCategoryOption)
+  const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
   function handleCategoryChange(newValue: CategoryOption) {
     setCategoryOption(newValue)
-    updateSearchParams({ [CATEGORY_KEY]: newValue })
+
+    if (newValue === DEFAULT_CATEGORY) {
+      resetSearchParams()
+    } else {
+      updateSearchParams({ [CATEGORY_KEY]: newValue })
+    }
   }
 
   useEffect(() => {
     const categoryIsReset = !query
 
     if (categoryIsReset) {
-      setCategoryOption('')
+      setCategoryOption(DEFAULT_CATEGORY)
+    } else {
+      setCategoryOption(query)
     }
   }, [query])
 
@@ -47,6 +64,7 @@ export function Category({ query, settings, counts }: CategoryProps) {
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
+          hasResetToDefaultCategory={hasResetToDefaultCategory}
           categoryOption={categoryOption}
           categorySettings={settings}
           categoryCounts={counts}

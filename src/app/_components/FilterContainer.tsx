@@ -62,6 +62,18 @@ function ResultsAndCategory({ results, category }: ResultsAndCategoryProps) {
   )
 }
 
+function ResultsAndCategoryCompact({
+  results,
+  category,
+}: ResultsAndCategoryProps) {
+  return (
+    <div className="hidden flex-col gap-8 lg:flex">
+      {results}
+      {category}
+    </div>
+  )
+}
+
 function ContentWrapper({ children }: ContentProps) {
   return <div className="flex flex-col gap-6">{children}</div>
 }
@@ -91,4 +103,5 @@ FilterContainer.MainWrapper = MainWrapper
 FilterContainer.MobileFiltersAndResults = MobileFiltersAndResults
 FilterContainer.PaginationWrapper = PaginationWrapper
 FilterContainer.ResultsAndCategory = ResultsAndCategory
+FilterContainer.ResultsAndCategoryCompact = ResultsAndCategoryCompact
 FilterContainer.DesktopFilters = DesktopFilters
