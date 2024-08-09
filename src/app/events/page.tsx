@@ -12,6 +12,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
+import { CountAndReset } from '@/components/CountAndReset'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -33,6 +34,7 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
+import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 
 import { attributes } from '@/content/pages/events.md'
 
@@ -122,7 +124,12 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset results={categorizedResults.length} />}
+            results={
+              <CountAndReset
+                counts={categoryCounts}
+                isSelected={getIsCategoryApplied(searchParams)}
+              />
+            }
             category={
               <Category
                 query={categoryQuery}
@@ -139,9 +146,9 @@ export default function Events({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
               category={
                 <Category
+                  hasResetToDefaultCategory
                   query={categoryQuery}
                   settings={categorySettings}
                   counts={categoryCounts}

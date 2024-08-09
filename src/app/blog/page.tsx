@@ -11,13 +11,12 @@ import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category } from '@/components/Category'
+import { Category, DEFAULT_CATEGORY } from '@/components/Category'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -32,6 +31,8 @@ import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { attributes } from '@/content/pages/blog.md'
 
+import { CountAndReset } from '@/_components/CountAndReset'
+import { getIsCategoryApplied } from '@/_utils/getTotalCategoryCount'
 import { PATHS } from '@/constants/paths'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 import { graphicsData } from '@/data/graphicsData'
@@ -122,8 +123,13 @@ export default function Blog({ searchParams }: Props) {
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
         <FilterContainer>
-          <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset results={categorizedResults.length} />}
+          <FilterContainer.ResultsAndCategoryCompact
+            results={
+              <CountAndReset
+                counts={categoryCounts}
+                isSelected={getIsCategoryApplied(searchParams)}
+              />
+            }
             category={
               <Category
                 query={categoryQuery}
@@ -141,9 +147,9 @@ export default function Blog({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
               sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
               category={
                 <Category
+                  hasResetToDefaultCategory
                   query={categoryQuery}
                   settings={categorySettings}
                   counts={categoryCounts}

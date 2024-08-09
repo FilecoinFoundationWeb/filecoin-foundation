@@ -3,6 +3,7 @@
 import { Listbox } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
+import { DEFAULT_CATEGORY } from '@/components/Category'
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
@@ -14,11 +15,14 @@ import {
   type CategorySetting,
 } from '@/types/categoryTypes'
 
+import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+
 type CategoryListboxProps = {
   categoryOption: CategoryOption | undefined
   categorySettings: CategorySetting[]
   categoryCounts?: CategoryCounts
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
+  hasResetToDefaultCategory: boolean
 }
 
 export function CategoryListbox({
@@ -26,7 +30,10 @@ export function CategoryListbox({
   categorySettings,
   categoryCounts,
   onCategoryOptionChange,
+  hasResetToDefaultCategory,
 }: CategoryListboxProps) {
+  const totalCount = getTotalCategoryCount(categoryCounts || {})
+
   return (
     <Listbox value={categoryOption} onChange={onCategoryOptionChange}>
       {({ open }) => (
@@ -36,6 +43,12 @@ export function CategoryListbox({
             <Icon component={CaretDown} size={16} weight="bold" />
           </ListboxButton>
           <ListboxOptions>
+            {hasResetToDefaultCategory && (
+              <ListboxOption
+                option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
+                counts={totalCount}
+              />
+            )}
             {categorySettings.map((option) => (
               <ListboxOption
                 key={option.id}

@@ -15,7 +15,7 @@ type CategoryListProps = {
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
 }
 
-const touchTarget = {
+export const touchTarget = {
   class: 'px-4',
   offsetClassY: '-mt-4',
   offsetClassX: '-ml-4',
