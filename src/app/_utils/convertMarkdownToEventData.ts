@@ -20,12 +20,15 @@ export function convertMarkdownToEventData(data: Record<string, any>) {
   if (result.success) {
     return result.data
   } else {
-    console.error(
-      '🔥 Validation errors:',
-      `Title: ${data.title}`,
-      `Slug: ${data.slug}`,
-      result.error.errors,
-    )
+    console.error('🔥 Validation errors:')
+    console.error(`Title: ${data.title}`)
+    console.error(`Slug: ${data.slug}`)
+
+    result.error.errors.forEach((error) => {
+      console.error(`Path: ${error.path.join(' > ')}`)
+      console.error(`Issue: ${error.message}`)
+    })
+
     throw new Error('Invalid event data')
   }
 }
