@@ -1,7 +1,8 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
-import { BlogPostData } from '@/types/blogPostTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
+
+import type { BlogPostData } from '@/schemas/blogPostDataSchema'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
