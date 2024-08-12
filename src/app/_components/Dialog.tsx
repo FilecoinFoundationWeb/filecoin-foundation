@@ -28,18 +28,20 @@ export default function DialogComponent({
   setIsOpen,
   status,
 }: DialogComponentProps) {
+  const { title = '', icon = null } = status ? dialogStatus[status] : {}
+
   return (
     <Dialog
       transition
       open={isOpen}
-      className="fixed inset-0 z-50 flex items-start justify-center p-4 data-[closed]:animate-leave data-[open]:animate-slide-in-from-top"
+      className="data-[closed]:animate-leave data-[open]:animate-slide-in-from-top fixed inset-0 z-50 flex items-start justify-center p-4"
       onClose={() => setIsOpen(false)}
     >
       <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
         <DialogPanel className="flex gap-3">
           <DialogTitle className="flex flex-1 items-center gap-3 text-brand-100">
-            {status && dialogStatus[status].icon}
-            {status && dialogStatus[status].title}
+            {icon}
+            {title}
           </DialogTitle>
           <button
             className="hover:text-brand-400"
