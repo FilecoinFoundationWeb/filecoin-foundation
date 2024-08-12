@@ -1,4 +1,7 @@
-export type SortOption = 'newest' | 'oldest'
+export type SortOptionCronological = 'newest' | 'oldest'
+export type SortOptionAlphabetical = 'a-z' | 'z-a'
+
+export type SortOption = SortOptionCronological | SortOptionAlphabetical
 
 export type SortSetting = {
   id: SortOption

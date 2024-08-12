@@ -7,24 +7,26 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SortListbox } from '@/components/SortListbox'
 
-import { type SortOption } from '@/types/sortTypes'
+import { SortSetting, type SortOption } from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+import { DefaultSortType } from '@/constants/sortConstants'
 
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']
+  defaultSortOption: DefaultSortType
+  sortSettings: SortSetting[]
 }
 
-export function Sort({ query }: SortProps) {
+export function Sort({ query, sortSettings, defaultSortOption }: SortProps) {
   const [sortOption, setSortOption] = useState<SortOption>(query)
   const { updateSearchParams } = useUpdateSearchParams()
 
   useEffect(() => {
-    const sortIsReset = query === DEFAULT_SORT_OPTION
+    const sortIsReset = query === defaultSortOption
 
     if (sortIsReset) {
-      setSortOption(DEFAULT_SORT_OPTION)
+      setSortOption(defaultSortOption)
     }
   }, [query])
 
@@ -35,6 +37,7 @@ export function Sort({ query }: SortProps) {
 
   return (
     <SortListbox
+      sortSettings={sortSettings}
       sortOption={sortOption}
       onSortOptionChange={handleSortChange}
     />

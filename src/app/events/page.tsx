@@ -41,10 +41,11 @@ import { graphicsData } from '@/data/graphicsData'
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
+import { getSortSettings } from '@/utils/getSortSettings'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -87,7 +88,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    sortByDefault: DEFAULT_SORT_OPTION_CRONOLOGICAL,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } =
@@ -101,6 +102,10 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
+
+  const sortSettings = getSortSettings(DEFAULT_SORT_OPTION_CRONOLOGICAL)
+
+  const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
   return (
     <PageLayout>
@@ -125,10 +130,10 @@ export default function Events({ searchParams }: Props) {
 
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
-          <FilterContainer.ResultsAndCategory
+          <FilterContainer.ResultsAndCategoryCompact
             results={
               <CountAndReset
-                counts={categoryCounts}
+                counts={filteredCategoryCounts}
                 isSelected={getIsCategoryApplied(searchParams)}
               />
             }
@@ -143,11 +148,23 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  sortSettings={sortSettings}
+                  defaultSortOption={DEFAULT_SORT_OPTION_CRONOLOGICAL}
+                />
+              }
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  sortSettings={sortSettings}
+                  defaultSortOption={DEFAULT_SORT_OPTION_CRONOLOGICAL}
+                />
+              }
               category={
                 <Category
                   hasResetToDefaultCategory

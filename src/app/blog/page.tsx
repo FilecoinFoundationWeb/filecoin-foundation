@@ -11,7 +11,7 @@ import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category, DEFAULT_CATEGORY } from '@/components/Category'
+import { Category } from '@/components/Category'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -33,12 +33,13 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { attributes } from '@/content/pages/blog.md'
 
-import { CountAndReset } from '@/_components/CountAndReset'
-import { getIsCategoryApplied } from '@/_utils/getTotalCategoryCount'
+import { CountAndReset } from '@/components/CountAndReset'
+import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
+import { getSortSettings } from '@/utils/getSortSettings'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -84,7 +85,7 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    sortByDefault: DEFAULT_SORT_OPTION_CRONOLOGICAL,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -97,6 +98,8 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
+
+  const sortSettings = getSortSettings(DEFAULT_SORT_OPTION_CRONOLOGICAL)
 
   return (
     <PageLayout>
@@ -142,12 +145,24 @@ export default function Blog({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  sortSettings={sortSettings}
+                  defaultSortOption={DEFAULT_SORT_OPTION_CRONOLOGICAL}
+                />
+              }
             />
 
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  sortSettings={sortSettings}
+                  defaultSortOption={DEFAULT_SORT_OPTION_CRONOLOGICAL}
+                />
+              }
               category={
                 <Category
                   hasResetToDefaultCategory

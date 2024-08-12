@@ -5,10 +5,17 @@ import { type SortableByDate, type SortOption } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
-import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
+import {
+  sortEntriesAlphabetically,
+  sortEntriesByDate,
+} from '@/utils/sortEntriesByDate'
 
 import { SORT_KEY } from '@/constants/searchParams'
-import { VALID_SORT_OPTIONS } from '@/constants/sortConstants'
+import {
+  alphabeticalIds,
+  cronologicalIds,
+  VALID_SORT_OPTIONS,
+} from '@/constants/sortConstants'
 
 type UseSortProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
@@ -42,12 +49,24 @@ export function useSort<Entry extends Object>({
   const validatedSortOption = validateSortOption(normalizedQuery, sortByDefault)
 
   const sortedResults = useMemo(() => {
-    return sortEntriesByDate({
-      entries,
-      sortBy,
-      sortOption: validatedSortOption,
-    })
+    if (alphabeticalIds.includes(validatedSortOption)) {
+      return sortEntriesAlphabetically({
+        entries,
+        sortOption: validatedSortOption,
+      })
+    } else if (cronologicalIds.includes(validatedSortOption)) {
+      return sortEntriesByDate({
+        entries,
+        sortBy,
+        sortOption: validatedSortOption,
+      })
+    } else {
+      return entries
+    }
   }, [entries, sortBy, validatedSortOption])
 
-  return { sortQuery: validatedSortOption, sortedResults }
+  return {
+    sortQuery: validatedSortOption,
+    sortedResults,
+  }
 }

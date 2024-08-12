@@ -23,7 +23,7 @@ export function CountAndReset({ counts, isSelected }: CountAndResetProps) {
   return (
     <button
       className={clsx(
-        '-ml-4 -mt-4 inline-flex items-baseline gap-2 text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
+        '-ml-4 -mt-4 inline-flex w-fit items-baseline gap-2 text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
         touchTarget.class,
         {
           'bg-brand-700 text-brand-400': isSelected,

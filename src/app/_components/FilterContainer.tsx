@@ -48,7 +48,7 @@ function DesktopFilters({ search, sort }: FilterProps) {
   return (
     <div className="hidden justify-end gap-6 lg:flex">
       {search}
-      <div className="min-w-40">{sort}</div>
+      <div>{sort}</div>
     </div>
   )
 }

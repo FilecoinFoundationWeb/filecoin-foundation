@@ -57,7 +57,7 @@ export function CategorySelect({
               )}
               onClick={() => onCategoryOptionChange(option.id)}
             >
-              <span>{option.name}</span>
+              <span className="text-nowrap">{option.name}</span>
               {hasCount && (
                 <span className="text-sm font-light">({countOrUndefined})</span>
               )}
