@@ -1,3 +1,5 @@
+import { z } from 'zod'
+
 import {
   type CategoryMap,
   type CategorySetting,
@@ -80,4 +82,22 @@ export function getCategoryLabel({
   const option = categoryOptions.find((option) => option.value === category)
 
   return option ? option.label : category
+}
+
+export function createCategorySchema(
+  validCategoryOptions: string[],
+): z.ZodTypeAny {
+  if (validCategoryOptions.length === 0) {
+    return z.never()
+  } else if (validCategoryOptions.length === 1) {
+    return z.literal(validCategoryOptions[0])
+  } else {
+    return z.union(
+      validCategoryOptions.map((option) => z.literal(option)) as [
+        z.ZodLiteral<string>,
+        z.ZodLiteral<string>,
+        ...z.ZodLiteral<string>[],
+      ],
+    )
+  }
 }

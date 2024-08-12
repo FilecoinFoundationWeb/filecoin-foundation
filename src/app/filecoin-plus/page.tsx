@@ -13,11 +13,12 @@ import { TextLink } from '@/components/TextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/filecoin-plus.md'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'

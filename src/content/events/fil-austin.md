@@ -7,12 +7,9 @@ category: hosted
 description: FIL Austin is a one-day, two-track event that will bring together
   builders, developers, and contributors from across the Filecoin ecosystem!
 location: Austin, TX
-external-link: null
 start-date: 2022-06-08T18:35:00.000Z
-end-date: null
 image:
   src: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
-  alt: ""
 seo:
   title: FIL Austin
   description: Join FIL Austin to connect with the Filecoin community and learn

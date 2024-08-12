@@ -1,5 +1,5 @@
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { CustomLink, type CustomLinkProps } from '@/components/CustomLink'
 import { Icon as IconComponent, type IconProps } from '@/components/Icon'

@@ -1,6 +1,6 @@
 import Image, { type ImageProps } from 'next/image'
 
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 

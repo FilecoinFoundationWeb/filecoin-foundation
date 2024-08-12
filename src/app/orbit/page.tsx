@@ -17,11 +17,12 @@ import { NextServerSearchParams } from '@/types/searchParams'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/orbit.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { OrbitEventsSection } from './components/EventsSection'
 import { ambassadorsData } from './data/ambassadorsData'

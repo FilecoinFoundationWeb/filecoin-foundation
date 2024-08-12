@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 import type { Route } from 'next'
 
 import { Icon } from '@/components/Icon'
@@ -46,7 +46,7 @@ export function BreadCrumbs() {
           const label = isRoot ? PATHS.HOME.label : formatLabel(path)
 
           return (
-            <li key={href} className="inline-flex items-center gap-2.5 ">
+            <li key={href} className="inline-flex items-center gap-2.5">
               {!isRoot && (
                 <Icon
                   component={CaretRight}

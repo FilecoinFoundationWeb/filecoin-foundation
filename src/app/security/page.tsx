@@ -14,11 +14,12 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/security/security.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { securityResourcesData } from './data/securityResourcesData'
 import { generateStructuredData } from './utils/generateStructuredData'

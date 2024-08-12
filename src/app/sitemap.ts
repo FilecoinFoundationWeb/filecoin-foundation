@@ -1,3 +1,5 @@
+import { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
+
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getEventsData } from '@/utils/getEventData'
@@ -6,6 +8,33 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 function generateDynamicRoutes<
+  T extends Pick<DynamicBaseData, 'slug' | 'updatedOn' | 'publishedOn'>,
+>(
+  data: T[],
+  basePath: string,
+  timestampKey: keyof Pick<
+    DynamicBaseData,
+    'updatedOn' | 'publishedOn'
+  > = 'updatedOn',
+) {
+  return data.map((item) => {
+    const timestamp = item[timestampKey]
+
+    const lastModifiedDate =
+      timestamp instanceof Date
+        ? timestamp.toISOString()
+        : typeof timestamp === 'string'
+          ? new Date(timestamp).toISOString()
+          : new Date().toISOString()
+
+    return {
+      url: `${BASE_URL}${basePath}/${item.slug}`,
+      lastModified: lastModifiedDate,
+    }
+  })
+}
+
+function generateDynamicRoutesLegacy<
   T extends { slug: string; updatedOn?: string; publishedOn?: string },
 >(
   data: T[],
@@ -29,10 +58,13 @@ export default function sitemap() {
   }))
 
   const blogPosts = getBlogPostsData()
-  const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
+  const dynamicBlogRoutes = generateDynamicRoutesLegacy(
+    blogPosts,
+    PATHS.BLOG.path,
+  )
 
   const ecosystemProjects = getEcosystemProjectsData()
-  const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
+  const dynamicEcosystemProjectRoutes = generateDynamicRoutesLegacy(
     ecosystemProjects,
     PATHS.ECOSYSTEM_EXPLORER.path,
   )
