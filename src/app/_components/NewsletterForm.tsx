@@ -21,7 +21,19 @@ export const NewsletterSchema = z.object({
 
 export type FormType = z.infer<typeof NewsletterSchema>
 
-export const url = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
+const NEWSLETTER_URL = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
+const AUTHORIZATION_HEADER = `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`
+
+function postSubscription(email: string): Promise<number> {
+  return fetch(NEWSLETTER_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: AUTHORIZATION_HEADER,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email }),
+  }).then((response) => response.status)
+}
 
 export function NewsletterForm() {
   const methods = useForm<FormType>({
@@ -30,22 +42,7 @@ export function NewsletterForm() {
 
   const { isSubmitting } = methods.formState
   const [isOpen, setIsOpen] = useState(false)
-  const [notificationStatus, setNotificationStatus] = useState<
-    StatusType | undefined
-  >()
-
-  async function postSubscription(email: string) {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email }),
-    })
-
-    return response.status
-  }
+  const [notificationStatus, setNotificationStatus] = useState<StatusType>()
 
   async function onSubmit(values: FormType) {
     try {
@@ -68,7 +65,7 @@ export function NewsletterForm() {
   return (
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
       <div className="flex items-end space-x-2">
-        <div className="w-72">
+        <div className="w-72 flex-shrink-0">
           <ControlledFormInput<FormType>
             hideLabel
             label="Email"
@@ -79,17 +76,19 @@ export function NewsletterForm() {
             error={getError(methods.formState.errors, 'email')}
           />
         </div>
-        <div className="flex min-w-44 [&>*:first-child]:flex-1">
+        <div className="min-w-44 flex-shrink-0 flex-grow">
           <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Subscribing' : 'Subscribe'}
+            {isSubmitting ? 'Subscribing' : 'Subscribing'}
           </Button>
         </div>
       </div>
-      <DialogComponent
-        status={notificationStatus}
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-      />
+      {isOpen && (
+        <DialogComponent
+          status={notificationStatus}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
+      )}
     </Form>
   )
 }
