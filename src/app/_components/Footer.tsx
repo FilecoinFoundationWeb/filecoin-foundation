@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
       <hr />
-      <div className="my-2 grid grid-cols-1 gap-y-6 sm:grid-cols-5">
+      <div className="my-6 grid grid-cols-1 gap-y-6 sm:grid-cols-5">
         <div className="sm:col-span-2">
           <Logo />
         </div>
