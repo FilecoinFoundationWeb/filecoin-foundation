@@ -6,7 +6,6 @@ description: >-
   place within the rapidly growing Filecoin community.
 image:
   src: /assets/images/64423ad6d7488e70c7b03c3d_1-6lpmwpmsydkqniohiklqla.png
-  alt:
 updated-on: "2023-04-21T07:27:18.330Z"
 created-on: "2023-04-21T07:27:18.330Z"
 published-on: "2023-04-21T07:33:56.200Z"

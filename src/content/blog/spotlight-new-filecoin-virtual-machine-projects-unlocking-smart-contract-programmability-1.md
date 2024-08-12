@@ -11,7 +11,6 @@ description:
   to the network.
 image:
   src: /assets/images/rectangle-32-.png
-  alt:
 recommended-posts: []
 category: news
 seo:

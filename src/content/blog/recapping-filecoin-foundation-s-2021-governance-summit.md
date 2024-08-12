@@ -9,7 +9,6 @@ description:
   sprints.
 image:
   src: /assets/images/image-c-18.png
-  alt:
 recommended-posts: []
 category: events
 seo:

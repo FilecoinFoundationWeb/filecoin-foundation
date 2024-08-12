@@ -6,7 +6,6 @@ published-on: 2023-04-21T07:33:56.200000Z
 description: NonEntropy is on a mission to protect the digital future.
 image:
   src: /assets/images/64423ae2ef619d69dab60e9f_0-qyjcuk2pe_bhv2jh.png
-  alt:
 recommended-posts: []
 category: ecosystem
 seo:

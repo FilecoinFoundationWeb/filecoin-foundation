@@ -14,7 +14,6 @@ description: >-
   commercialization opportunities.
 image:
   src: /assets/images/070723-qa-artifactlabs.png
-  alt:
 recommended-posts: []
 category: use-cases
 seo:

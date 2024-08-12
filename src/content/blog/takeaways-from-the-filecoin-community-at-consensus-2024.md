@@ -6,7 +6,6 @@ published-on: 2024-06-07T01:34:20.379Z
 description: "Last week, the Filecoin community convened in Austin against the backdrop of Consensus to hear from some of the ecosystem's leading voices and check out the latest projects building on the network. Filecoin Foundation team members took the stage at events across the conference to highlight what the ecosystem is working on and to underscore the innovation happening throughout the network."
 image:
   src: /assets/images/060624-consensus.png
-  alt: "Filecoin Foundation at Consensus 2024"
 category: events
 recommended-posts: []
 seo:

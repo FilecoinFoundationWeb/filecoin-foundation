@@ -8,7 +8,6 @@ description:
   both open-source and decentralized. "
 image:
   src: /assets/images/643e66cbb75bbf237f8e1292_1-1dqtfatumnkf7vdkmw1rhq.png
-  alt:
 recommended-posts: []
 category: reports
 seo:

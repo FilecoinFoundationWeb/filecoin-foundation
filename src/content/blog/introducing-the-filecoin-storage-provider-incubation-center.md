@@ -8,7 +8,6 @@ description:
   ecosystem — miners, developers, and storage clients alike. "
 image:
   src: /assets/images/image-c-21.png
-  alt:
 recommended-posts: []
 category: news
 seo:

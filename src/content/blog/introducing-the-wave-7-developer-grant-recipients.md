@@ -9,7 +9,6 @@ description:
   web through the Filecoin ecosystem. "
 image:
   src: /assets/images/image-c-32.png
-  alt:
 recommended-posts: []
 category: news
 seo:

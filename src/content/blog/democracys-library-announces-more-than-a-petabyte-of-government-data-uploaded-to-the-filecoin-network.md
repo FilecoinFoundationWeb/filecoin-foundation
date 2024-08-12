@@ -6,7 +6,6 @@ published-on: 2023-09-21T17:34:18.798Z
 description: Democracy’s Library announces over a petabyte of government data uploaded to the Filecoin network. Learn about the project and its impact.
 image:
   src: /assets/images/1018-sps-democracyslibrary.png
-  alt: null
 recommended-posts: []
 category: news
 seo:

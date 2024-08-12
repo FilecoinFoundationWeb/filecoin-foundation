@@ -12,7 +12,6 @@ description:
   more decentralized internet.
 image:
   src: /assets/images/0215-ff.png
-  alt: "Fresh from FF, Mid-February, 2024 on a radial blue background."
 recommended-posts: []
 seo:
   noindex: false

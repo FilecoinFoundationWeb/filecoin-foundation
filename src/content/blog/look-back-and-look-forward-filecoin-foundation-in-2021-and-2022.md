@@ -5,7 +5,6 @@ description: >-
   scope.
 image:
   src: /assets/images/64423b078d1be7013acecd8c_0-wrv5zur8bytkshra.png
-  alt:
 updated-on: "2023-04-21T07:28:07.363Z"
 created-on: "2023-04-21T07:28:07.363Z"
 published-on: "2023-04-21T07:33:56.200Z"

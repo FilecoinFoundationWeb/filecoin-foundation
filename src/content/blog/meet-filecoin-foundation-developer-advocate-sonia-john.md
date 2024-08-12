@@ -8,7 +8,6 @@ description:
   Foundation team! "
 image:
   src: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
-  alt:
 recommended-posts: []
 category: interviews
 seo:

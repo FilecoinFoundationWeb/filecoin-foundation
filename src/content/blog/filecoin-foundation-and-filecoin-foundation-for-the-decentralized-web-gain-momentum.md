@@ -10,7 +10,6 @@ description:
   Foundation would serve as the long-term governance body for the Filecoin Ecosystem.
 image:
   src: /assets/images/64423aceef619d5dc5b60e52_1-e009tiaipq2vndk-evb9ng.png
-  alt:
 recommended-posts: []
 category: news
 seo:

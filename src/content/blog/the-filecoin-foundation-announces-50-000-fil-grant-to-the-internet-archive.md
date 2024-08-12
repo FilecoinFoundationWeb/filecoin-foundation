@@ -9,7 +9,6 @@ description:
   and competitive.
 image:
   src: /assets/images/64423bf8da735f52ab392c9a_0-gxap0iqlhpvsxnst.png
-  alt:
 recommended-posts: []
 category: news
 seo:

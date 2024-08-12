@@ -12,7 +12,6 @@ description: >-
   application.
 image:
   src: /assets/images/64423b050425d3f577f2eb36_1-qzfjf0m6l6_fzcxuic-8zg.png
-  alt:
 recommended-posts: []
 category: news
 seo:

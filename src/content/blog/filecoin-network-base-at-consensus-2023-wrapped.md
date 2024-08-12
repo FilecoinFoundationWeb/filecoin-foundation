@@ -10,7 +10,6 @@ description:
   to life.
 image:
   src: /assets/images/051823-austin-recap.png
-  alt:
 recommended-posts: []
 category: events
 seo:

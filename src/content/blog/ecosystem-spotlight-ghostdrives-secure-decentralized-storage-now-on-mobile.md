@@ -9,7 +9,6 @@ description: "As part of Filecoin Foundation’s work to showcase innovative
   and security."
 image:
   src: /assets/images/0604-ghostdrive.png
-  alt: "Filecoin Foundation and GhostDrive Logos"
 category: ecosystem
 recommended-posts: []
 seo:

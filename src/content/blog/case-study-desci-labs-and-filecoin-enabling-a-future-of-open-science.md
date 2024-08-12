@@ -12,7 +12,6 @@ description:
   lock-in, paywalls, proprietary analytics, link rot and fake science.
 image:
   src: /assets/images/0719-cs-desci.png
-  alt:
 recommended-posts: []
 category: use-cases
 seo:

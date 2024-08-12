@@ -9,7 +9,6 @@ description:
   Foundation’s Dev Grants program.
 image:
   src: /assets/images/rectangle-31-.png
-  alt:
 recommended-posts: []
 category: reports
 seo:

@@ -9,7 +9,6 @@ description:
   their fight for freedom.
 image:
   src: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
-  alt:
 recommended-posts: []
 category: reports
 seo:

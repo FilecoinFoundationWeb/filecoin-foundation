@@ -9,7 +9,6 @@ description:
   the breadth and depth of Filecoin ecosystem projects.
 image:
   src: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
-  alt: "Filecoin Ecosystem Explorer"
 recommended-posts: []
 seo:
   noindex: false

@@ -9,7 +9,6 @@ description: >-
   and enhance service offerings.
 image:
   src: /assets/images/92523-sptooling.png
-  alt: Filecoin Storage Providers
 recommended-posts: []
 category: ecosystem
 seo:

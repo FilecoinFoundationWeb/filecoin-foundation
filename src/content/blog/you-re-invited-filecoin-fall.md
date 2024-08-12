@@ -10,7 +10,6 @@ description:
   over the next few months."
 image:
   src: /assets/images/64423c054821268e6e8e743b_1-rdpz1p6lnwm1fnnk37urdw.png
-  alt:
 recommended-posts: []
 category: events
 seo:

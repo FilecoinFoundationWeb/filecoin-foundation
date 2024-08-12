@@ -9,7 +9,6 @@ description:
   storage performance data in a format that's both easy to store and to understand. "
 image:
   src: /assets/images/image-c-22.png
-  alt:
 recommended-posts: []
 category: reports
 seo:

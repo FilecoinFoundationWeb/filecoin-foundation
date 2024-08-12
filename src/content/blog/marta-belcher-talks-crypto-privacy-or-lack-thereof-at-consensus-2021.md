@@ -8,7 +8,6 @@ description:
   discussion on privacy coins at CoinDesk’s Consensus 2021.
 image:
   src: /assets/images/64423b080425d3dc88f2efd0_0-ujllypeozzx_ebfb.png
-  alt:
 recommended-posts: []
 category: events
 seo:

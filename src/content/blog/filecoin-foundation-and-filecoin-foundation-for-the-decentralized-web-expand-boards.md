@@ -12,7 +12,6 @@ description: >-
   the Decentralized Web (FFDW).
 image:
   src: /assets/images/64423acca6ec4184be2a4866_1-kequqilr3jvs6nq_e7naqq.png
-  alt:
 recommended-posts: []
 category: news
 seo:

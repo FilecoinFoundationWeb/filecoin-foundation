@@ -9,7 +9,6 @@ description:
   CoinDesk’s annual crypto conference in June.
 image:
   src: /assets/images/image-c-15.png
-  alt:
 recommended-posts: []
 category: events
 seo:

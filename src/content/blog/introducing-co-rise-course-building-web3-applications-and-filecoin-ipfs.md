@@ -9,7 +9,6 @@ description:
   on Filecoin/IPFS.
 image:
   src: /assets/images/64423af4e3c08f6f124f519f_1-gvlzuxsp3dbmsdxwobsexq.png
-  alt:
 recommended-posts: []
 category: news
 seo:

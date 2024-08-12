@@ -9,7 +9,6 @@ description:
   events, as well as providing advice to others in the network.
 image:
   src: /assets/images/0524-sps-dcent.png
-  alt:
 recommended-posts: []
 category: ecosystem
 seo:

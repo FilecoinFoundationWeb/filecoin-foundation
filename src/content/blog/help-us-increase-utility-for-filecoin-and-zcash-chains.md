@@ -7,7 +7,6 @@ description: >-
   ecosystems through a new grants pool that funds Filecoin and Zcash projects.
 image:
   src: /assets/images/64423af1e3c08fa6464f5199_0-kt1qsyhnwcfriwtg.png
-  alt:
 updated-on: "2023-04-21T07:27:45.806Z"
 created-on: "2023-04-21T07:27:45.806Z"
 published-on: "2023-04-21T07:33:56.200Z"

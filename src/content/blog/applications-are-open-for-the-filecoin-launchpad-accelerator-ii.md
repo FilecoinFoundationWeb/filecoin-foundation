@@ -8,7 +8,6 @@ description:
   for its next cohort of innovators. "
 image:
   src: /assets/images/image-c-26.png
-  alt:
 recommended-posts: []
 category: news
 seo:

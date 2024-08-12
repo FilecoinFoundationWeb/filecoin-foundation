@@ -13,7 +13,6 @@ description:
   expansion in 2024."
 image:
   src: /assets/images/050924-adoption.png
-  alt:
 recommended-posts: []
 seo:
   noindex: false

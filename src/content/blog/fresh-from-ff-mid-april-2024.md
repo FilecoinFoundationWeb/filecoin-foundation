@@ -9,7 +9,6 @@ description:
   has been up to."
 image:
   src: /assets/images/0215-ff-4-.png
-  alt: "Fresh From FF: Mid-April, 2024"
 recommended-posts: []
 seo:
   noindex: false

@@ -13,7 +13,6 @@ description: >-
 category: news
 image:
   src: /assets/images/231120-fd-fpd.png
-  alt: Filecoin Day and Filecoin Plus Day Recap
 recommended-posts: []
 seo:
   title: Highlights from Filecoin Plus Notary Election and Filecoin Day at LabWeek23

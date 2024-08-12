@@ -8,7 +8,6 @@ description:
   storage protocol to developers, storage providers, and Web3 enthusiasts worldwide.
 image:
   src: /assets/images/image-c-19.png
-  alt:
 recommended-posts: []
 category: ecosystem
 seo:

@@ -14,7 +14,6 @@ description: >-
   governance models for online platforms and protocols.
 image:
   src: /assets/images/n-schneider-blogpost-banner.png
-  alt:
 recommended-posts: []
 category: ecosystem
 seo:

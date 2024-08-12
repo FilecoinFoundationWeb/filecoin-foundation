@@ -11,7 +11,6 @@ description: The Filecoin Sanctuary in Davos brought together the world’s
 recommended-posts: []
 image:
   src: /assets/images/020724-davos.png
-  alt: Recapping Filecoin Foundation at Davos
 seo:
   noindex: false
   twitter:title: summary

@@ -9,7 +9,6 @@ description: >-
   technology with the support to learn more about Web3.
 image:
   src: /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
-  alt:
 recommended-posts: []
 category: news
 seo:

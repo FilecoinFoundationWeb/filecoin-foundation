@@ -6,7 +6,6 @@ published-on: 2024-05-30T14:16:20.362Z
 description: "Filecoin Foundation awards grant funding for critical development projects to foster a more decentralized, efficient, and robust foundation for humanity’s information. Currently, we’re looking to support projects that enhance existing Filecoin documentation or create new educational resources."
 image:
   src: /assets/images/052924-docgrants.png
-  alt: "Filecoin Foundation Documentation Grants"
 category: reports
 recommended-posts: []
 seo:

@@ -10,7 +10,6 @@ description:
   Community Discovery
 image:
   src: /assets/images/0224-cs-opsci.png
-  alt:
 recommended-posts: []
 category: use-cases
 seo:

@@ -10,7 +10,6 @@ description:
   facing the Filecoin network, is in its last call until Friday, March 24.
 image:
   src: /assets/images/0621-2022-01.png
-  alt:
 recommended-posts: []
 category: ecosystem
 seo:

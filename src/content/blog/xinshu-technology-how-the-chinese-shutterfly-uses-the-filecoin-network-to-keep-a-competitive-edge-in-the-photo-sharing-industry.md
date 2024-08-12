@@ -11,7 +11,6 @@ description: >-
   businesses.
 image:
   src: /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
-  alt:
 recommended-posts: []
 category: use-cases
 seo:

@@ -9,7 +9,6 @@ description:
   who participate in it as storage providers.
 image:
   src: /assets/images/fip18.png
-  alt:
 recommended-posts: []
 category: news
 seo:

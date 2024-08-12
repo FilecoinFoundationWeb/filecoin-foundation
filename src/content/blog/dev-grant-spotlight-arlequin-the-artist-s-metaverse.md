@@ -9,7 +9,6 @@ description:
   powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
 image:
   src: /assets/images/64423aa70425d34fa6f2743e_1-s1umhgp4fz8mfyk3fixjia.png
-  alt:
 recommended-posts: []
 category: reports
 seo:

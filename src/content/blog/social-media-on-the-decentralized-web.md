@@ -9,7 +9,6 @@ description: >-
   layoffs, and leadership and product changes.
 image:
   src: /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
-  alt:
 recommended-posts: []
 category: use-cases
 seo:

@@ -10,7 +10,6 @@ description: >-
   storage.
 image:
   src: /assets/images/64423aa58d1be7828cce7d89_1-45khiwwqpsgwtnrtjpkoqa.png
-  alt:
 recommended-posts: []
 category: reports
 seo:
