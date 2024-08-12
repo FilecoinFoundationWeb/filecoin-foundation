@@ -78,7 +78,7 @@ export function NewsletterForm() {
         </div>
         <div className="min-w-44 flex-shrink-0 flex-grow">
           <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Subscribing' : 'Subscribing'}
+            {isSubmitting ? 'Subscribing' : 'Subscribe'}
           </Button>
         </div>
       </div>
