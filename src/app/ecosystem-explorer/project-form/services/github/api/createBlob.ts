@@ -9,7 +9,8 @@ export async function createBlob(
   encoding: 'utf-8' | 'base64',
 ) {
   const { data: blob } = await octokit.rest.git.createBlob({
-    ...repoConfig,
+    owner: repoConfig.owner,
+    repo: repoConfig.repo,
     content,
     encoding,
   })

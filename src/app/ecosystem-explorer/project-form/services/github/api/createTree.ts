@@ -18,7 +18,8 @@ type CreateTreeParams = {
 
 export async function createTree({ baseTreeSha, newTrees }: CreateTreeParams) {
   const { data: newTree } = await octokit.rest.git.createTree({
-    ...repoConfig,
+    owner: repoConfig.owner,
+    repo: repoConfig.repo,
     tree: newTrees,
     base_tree: baseTreeSha,
   })

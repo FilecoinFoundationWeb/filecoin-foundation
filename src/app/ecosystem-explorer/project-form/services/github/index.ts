@@ -13,18 +13,15 @@ import { AllowedImageFormats } from './utils/fileUtils'
 import { getMarkdownTemplate } from './utils/markdownUtils'
 import { getFolderPaths } from './utils/pathUtils'
 
-type SubmitProjectParams = {
-  projectName: string
-  logo: {
-    base64: string
-    format: AllowedImageFormats
-  }
+type CreateProjectBlobsParams = {
+  markdownTemplate: string
+  logo: SubmitProjectParams['logo']
 }
 
-async function createProjectBlobs(
-  markdownTemplate: string,
-  logo: { base64: string; format: AllowedImageFormats },
-) {
+async function createProjectBlobs({
+  markdownTemplate,
+  logo,
+}: CreateProjectBlobsParams) {
   const [markdownBlob, imageBlob] = await Promise.all([
     createBlob(markdownTemplate, 'utf-8'),
     createBlob(logo.base64, 'base64'),
@@ -32,16 +29,26 @@ async function createProjectBlobs(
   return { markdownBlob, imageBlob }
 }
 
-async function createNewTree(
-  latestCommitOnMain: any,
-  mediaFolder: string,
-  ecosystemFolder: string,
-  slug: string,
-  logo: { format: AllowedImageFormats },
-  markdownBlob: any,
-  imageBlob: any,
-) {
-  return await createTree({
+type CreateNewTreeParams = {
+  latestCommitOnMain: Awaited<ReturnType<typeof getLatestCommitOnMain>>
+  mediaFolder: string
+  ecosystemFolder: string
+  slug: string
+  logo: SubmitProjectParams['logo']
+  markdownBlob: Awaited<ReturnType<typeof createBlob>>
+  imageBlob: Awaited<ReturnType<typeof createBlob>>
+}
+
+function createProjectTree({
+  latestCommitOnMain,
+  mediaFolder,
+  ecosystemFolder,
+  slug,
+  logo,
+  markdownBlob,
+  imageBlob,
+}: CreateNewTreeParams) {
+  return createTree({
     baseTreeSha: latestCommitOnMain.commit.tree.sha,
     newTrees: [
       {
@@ -60,6 +67,14 @@ async function createNewTree(
   })
 }
 
+type SubmitProjectParams = {
+  projectName: string
+  logo: {
+    base64: string
+    format: AllowedImageFormats
+  }
+}
+
 export async function submitProjectToGithub({
   projectName,
   logo,
@@ -73,6 +88,7 @@ export async function submitProjectToGithub({
   })
 
   const branchName = `ecosystem-submission/${slug}-${today}`
+
   const markdownTemplate = getMarkdownTemplate({
     projectName,
     imagePath: `${publicFolder}/${slug}.${logo.format}`,
@@ -80,11 +96,12 @@ export async function submitProjectToGithub({
 
   const latestCommitOnMain = await getLatestCommitOnMain()
 
-  const { markdownBlob, imageBlob } = await createProjectBlobs(
+  const { markdownBlob, imageBlob } = await createProjectBlobs({
     markdownTemplate,
     logo,
-  )
-  const newTree = await createNewTree(
+  })
+
+  const newTree = await createProjectTree({
     latestCommitOnMain,
     mediaFolder,
     ecosystemFolder,
@@ -92,7 +109,7 @@ export async function submitProjectToGithub({
     logo,
     markdownBlob,
     imageBlob,
-  )
+  })
 
   const newCommit = await createCommit({
     parentCommitSha: latestCommitOnMain.sha,

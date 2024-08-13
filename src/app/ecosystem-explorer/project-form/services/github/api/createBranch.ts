@@ -14,7 +14,8 @@ export async function createBranch({
   branchName,
 }: CreateBranchParams) {
   const { data: newBranch } = await octokit.rest.git.createRef({
-    ...repoConfig,
+    owner: repoConfig.owner,
+    repo: repoConfig.repo,
     ref: `refs/heads/${branchName}`,
     sha: commitSha,
   })

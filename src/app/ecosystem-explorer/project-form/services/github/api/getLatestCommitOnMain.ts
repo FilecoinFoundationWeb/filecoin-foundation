@@ -6,7 +6,8 @@ const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 export async function getLatestCommitOnMain() {
   const { data: latestCommitOnMain } = await octokit.rest.repos.getCommit({
-    ...repoConfig,
+    owner: repoConfig.owner,
+    repo: repoConfig.repo,
     ref: `heads/${repoConfig.baseBranch}`,
   })
   return latestCommitOnMain

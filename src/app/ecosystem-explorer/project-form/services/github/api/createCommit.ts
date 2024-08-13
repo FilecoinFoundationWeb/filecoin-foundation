@@ -16,7 +16,8 @@ export async function createCommit({
   message,
 }: CreateCommitParams) {
   const { data: newCommit } = await octokit.rest.git.createCommit({
-    ...repoConfig,
+    owner: repoConfig.owner,
+    repo: repoConfig.repo,
     message,
     tree: treeSha,
     parents: [parentCommitSha],
