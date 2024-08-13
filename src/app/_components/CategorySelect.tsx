@@ -7,7 +7,6 @@ import {
   type CategoryOption,
   type CategorySetting,
 } from '@/types/categoryTypes'
-import React from 'react'
 
 type CategorySelectProps = {
   categoryOption: CategoryOption
