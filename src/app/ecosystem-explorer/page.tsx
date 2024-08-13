@@ -30,6 +30,7 @@ import {
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+import { getSortSettings } from '@/utils/getSortSettings'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -40,7 +41,6 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION_ALPHABETICAL } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getSortSettings } from '@/_utils/getSortSettings'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -135,6 +135,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
+              results={<ResultsAndReset results={categorizedResults.length} />}
               sort={
                 <Sort
                   sortSettings={sortSettings}
@@ -142,7 +143,6 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                   defaultSortOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
                 />
               }
-              results={<ResultsAndReset results={categorizedResults.length} />}
               category={
                 <Category query={categoryQuery} settings={categorySettings} />
               }

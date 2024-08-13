@@ -12,6 +12,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
+import { CountAndReset } from '@/components/CountAndReset'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -28,17 +29,16 @@ import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
+import { getSortSettings } from '@/utils/getSortSettings'
+import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { attributes } from '@/content/pages/blog.md'
 
-import { CountAndReset } from '@/components/CountAndReset'
-import { getSortSettings } from '@/utils/getSortSettings'
-import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 
-import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
 import { PATHS } from '@/constants/paths'
+import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
