@@ -18,7 +18,6 @@ import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StaticImage } from '@/components/StaticImage'
@@ -35,6 +34,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
+import { getSortSettings } from '@/utils/getSortSettings'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -45,7 +45,6 @@ import { PATHS } from '@/constants/paths'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
-import { getSortSettings } from '@/utils/getSortSettings'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
