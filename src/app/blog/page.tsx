@@ -36,10 +36,11 @@ import { attributes } from '@/content/pages/blog.md'
 import { CountAndReset } from '@/components/CountAndReset'
 import { getSortSettings } from '@/utils/getSortSettings'
 import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
+
+import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
 import { PATHS } from '@/constants/paths'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

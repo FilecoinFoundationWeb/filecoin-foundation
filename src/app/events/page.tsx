@@ -33,18 +33,18 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
-import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 import { getSortSettings } from '@/utils/getSortSettings'
+import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
+import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
