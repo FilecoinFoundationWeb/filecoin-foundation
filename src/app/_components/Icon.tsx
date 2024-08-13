@@ -26,7 +26,9 @@ export function Icon({
 }: IconProps) {
   const Component = component
 
-  const className = `${colorStyles[color]} ${inheritHoverStyle ? ` hover:text-inherit` : ''}`
+const className = clsx(colorStyles[color], {
+  'hover:text-inherit': inheritHoverStyle,
+});
 
   return (
     <span aria-hidden="true" className={className}>
