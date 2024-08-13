@@ -16,17 +16,11 @@ type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
   settings: CategorySetting[]
   counts?: ReturnType<typeof useCategory>['categoryCounts']
-  hasResetToDefaultCategory?: boolean
 }
 
 export const DEFAULT_CATEGORY = 'All'
 
-export function Category({
-  query,
-  settings,
-  counts,
-  hasResetToDefaultCategory = false,
-}: CategoryProps) {
+export function Category({ query, settings, counts }: CategoryProps) {
   const defaultCategoryOption = query || DEFAULT_CATEGORY
 
   const [categoryOption, setCategoryOption] = useState(defaultCategoryOption)
@@ -64,7 +58,6 @@ export function Category({
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
-          hasResetToDefaultCategory={hasResetToDefaultCategory}
           categoryOption={categoryOption}
           categorySettings={settings}
           categoryCounts={counts}

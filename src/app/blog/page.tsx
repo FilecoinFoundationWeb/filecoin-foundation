@@ -30,12 +30,11 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortSettings } from '@/utils/getSortSettings'
-import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
+import { isResetCategoryApplied } from '@/utils/getTotalCategoryCount'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { attributes } from '@/content/pages/blog.md'
-
 
 import { PATHS } from '@/constants/paths'
 import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
@@ -132,7 +131,7 @@ export default function Blog({ searchParams }: Props) {
             results={
               <CountAndReset
                 counts={categoryCounts}
-                isSelected={getIsCategoryApplied(searchParams)}
+                isSelected={isResetCategoryApplied(searchParams)}
               />
             }
             category={
@@ -166,7 +165,6 @@ export default function Blog({ searchParams }: Props) {
               }
               category={
                 <Category
-                  hasResetToDefaultCategory
                   query={categoryQuery}
                   settings={categorySettings}
                   counts={categoryCounts}

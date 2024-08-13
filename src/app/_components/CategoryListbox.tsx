@@ -15,14 +15,13 @@ import {
   type CategorySetting,
 } from '@/types/categoryTypes'
 
-import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+import { getCountForResetCategory } from '@/utils/getTotalCategoryCount'
 
 type CategoryListboxProps = {
   categoryOption: CategoryOption | undefined
   categorySettings: CategorySetting[]
   categoryCounts?: CategoryCounts
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
-  hasResetToDefaultCategory: boolean
 }
 
 export function CategoryListbox({
@@ -30,9 +29,8 @@ export function CategoryListbox({
   categorySettings,
   categoryCounts,
   onCategoryOptionChange,
-  hasResetToDefaultCategory,
 }: CategoryListboxProps) {
-  const totalCount = getTotalCategoryCount(categoryCounts || {})
+  const totalCount = getCountForResetCategory(categoryCounts || {})
 
   return (
     <Listbox value={categoryOption} onChange={onCategoryOptionChange}>
@@ -43,7 +41,7 @@ export function CategoryListbox({
             <Icon component={CaretDown} size={16} weight="bold" />
           </ListboxButton>
           <ListboxOptions>
-            {hasResetToDefaultCategory && (
+            {totalCount && (
               <ListboxOption
                 option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
                 counts={totalCount}

@@ -34,7 +34,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortSettings } from '@/utils/getSortSettings'
-import { getIsCategoryApplied } from '@/utils/getTotalCategoryCount'
+import { isResetCategoryApplied } from '@/utils/getTotalCategoryCount'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -133,7 +133,7 @@ export default function Events({ searchParams }: Props) {
             results={
               <CountAndReset
                 counts={filteredCategoryCounts}
-                isSelected={getIsCategoryApplied(searchParams)}
+                isSelected={isResetCategoryApplied(searchParams)}
               />
             }
             category={
@@ -166,7 +166,6 @@ export default function Events({ searchParams }: Props) {
               }
               category={
                 <Category
-                  hasResetToDefaultCategory
                   query={categoryQuery}
                   settings={categorySettings}
                   counts={categoryCounts}
