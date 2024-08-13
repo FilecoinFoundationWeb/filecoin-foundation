@@ -15,7 +15,7 @@ import {
   type CategorySetting,
 } from '@/types/categoryTypes'
 
-import { getCountForResetCategory } from '@/utils/getTotalCategoryCount'
+import { getCountForResetCategory } from '@/utils/geCountForResetCategory'
 
 type CategoryListboxProps = {
   categoryOption: CategoryOption | undefined

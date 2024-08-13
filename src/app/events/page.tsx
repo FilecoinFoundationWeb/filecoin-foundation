@@ -34,7 +34,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortSettings } from '@/utils/getSortSettings'
-import { isResetCategoryApplied } from '@/utils/getTotalCategoryCount'
+import { isResetCategoryApplied } from '@/utils/isResetCategoryApplied'
 
 import { graphicsData } from '@/data/graphicsData'
 

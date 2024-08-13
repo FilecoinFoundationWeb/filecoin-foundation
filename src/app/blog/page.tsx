@@ -30,7 +30,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortSettings } from '@/utils/getSortSettings'
-import { isResetCategoryApplied } from '@/utils/getTotalCategoryCount'
+import { isResetCategoryApplied } from '@/utils/isResetCategoryApplied'
 
 import { graphicsData } from '@/data/graphicsData'
 

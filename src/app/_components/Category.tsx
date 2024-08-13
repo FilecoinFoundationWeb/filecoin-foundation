@@ -21,9 +21,9 @@ type CategoryProps = {
 export const DEFAULT_CATEGORY = 'All'
 
 export function Category({ query, settings, counts }: CategoryProps) {
-  const defaultCategoryOption = query || DEFAULT_CATEGORY
-
-  const [categoryOption, setCategoryOption] = useState(defaultCategoryOption)
+  const [categoryOption, setCategoryOption] = useState(
+    query || DEFAULT_CATEGORY,
+  )
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
   function handleCategoryChange(newValue: CategoryOption) {

@@ -1,24 +1,32 @@
 import { SortSetting } from '@/types/sortTypes'
 
-export const cronologicalIds = ['newest', 'oldest']
-export const alphabeticalIds = ['a-z', 'z-a']
-
-export const cronologicalSort = {
-  default: 'newest' as const,
-  ids: cronologicalIds,
-  values: [
-    { id: cronologicalIds[0], name: 'Newest' },
-    { id: cronologicalIds[1], name: 'Oldest' },
-  ] as SortSetting[],
+const sortOptions = {
+  cronologicalSort: {
+    default: 'newest' as const,
+    values: [
+      { id: 'newest', name: 'Newest' },
+      { id: 'oldest', name: 'Oldest' },
+    ] as SortSetting[],
+  },
+  alphabeticalSort: {
+    default: 'a-z' as const,
+    values: [
+      { id: 'a-z', name: 'Alphabetical (A-Z)' },
+      { id: 'z-a', name: 'Alphabetical (Z-A)' },
+    ] as SortSetting[],
+  },
 }
 
-export const alphabeticalSort = {
-  default: 'a-z' as const,
-  values: [
-    { id: alphabeticalIds[0], name: 'Alphabetical (A-Z)' },
-    { id: alphabeticalIds[1], name: 'Alphabetical (Z-A)' },
-  ] as SortSetting[],
+function extractSortIds(options: typeof sortOptions) {
+  return {
+    cronologicalIds: options.cronologicalSort.values.map((option) => option.id),
+    alphabeticalIds: options.alphabeticalSort.values.map((option) => option.id),
+  }
 }
+
+export const { cronologicalIds, alphabeticalIds } = extractSortIds(sortOptions)
+
+export const { cronologicalSort, alphabeticalSort } = sortOptions
 
 export const sortSettings = [
   ...cronologicalSort.values,

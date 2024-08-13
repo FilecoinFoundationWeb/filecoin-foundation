@@ -10,6 +10,6 @@ export function getSortSettings(defaultSortOption: DefaultSortType) {
   } else if (defaultSortOption === cronologicalSort.default) {
     return cronologicalSort.values
   } else {
-    return []
+    throw new Error(`Invalid defaultSortOption: ${defaultSortOption}`)
   }
 }

@@ -5,10 +5,8 @@ import { type SortableByDate, type SortOption } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
-import {
-  sortEntriesAlphabetically,
-  sortEntriesByDate,
-} from '@/utils/sortEntriesByDate'
+import { sortEntriesAlphabetically } from '@/utils/sortEntriesAlphabetically'
+import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { SORT_KEY } from '@/constants/searchParams'
 import {
