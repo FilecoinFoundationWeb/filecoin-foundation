@@ -6,7 +6,7 @@ import { type BlogPostData } from '@/types/blogPostTypes'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { formatDate } from '@/utils/formatDate'
+import { formatDate } from '@/utils/dateUtils'
 
 import { graphicsData } from '@/data/graphicsData'
 
