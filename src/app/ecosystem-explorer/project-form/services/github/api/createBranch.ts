@@ -1,7 +1,5 @@
 import { Octokit } from '@octokit/rest'
 
-import { handleError } from '@/utils/handleError'
-
 import { repoConfig } from '../config/repoConfig'
 
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
@@ -15,14 +13,10 @@ export async function createBranch({
   commitSha,
   branchName,
 }: CreateBranchParams) {
-  try {
-    const { data: newBranch } = await octokit.rest.git.createRef({
-      ...repoConfig,
-      ref: `refs/heads/${branchName}`,
-      sha: commitSha,
-    })
-    return newBranch
-  } catch (error) {
-    return handleError(error, `Error creating branch ${branchName}:`)
-  }
+  const { data: newBranch } = await octokit.rest.git.createRef({
+    ...repoConfig,
+    ref: `refs/heads/${branchName}`,
+    sha: commitSha,
+  })
+  return newBranch
 }

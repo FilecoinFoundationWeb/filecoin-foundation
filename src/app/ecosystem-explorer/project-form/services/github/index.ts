@@ -3,7 +3,6 @@
 import slugify from 'slugify'
 
 import { getTodayISO } from '@/utils/dateUtils'
-import { handleError } from '@/utils/handleError'
 
 import { createBlob } from './api/createBlob'
 import { createCommit } from './api/createCommit'
@@ -26,15 +25,11 @@ async function createProjectBlobs(
   markdownTemplate: string,
   logo: { base64: string; format: AllowedImageFormats },
 ) {
-  try {
-    const [markdownBlob, imageBlob] = await Promise.all([
-      createBlob(markdownTemplate, 'utf-8'),
-      createBlob(logo.base64, 'base64'),
-    ])
-    return { markdownBlob, imageBlob }
-  } catch (error) {
-    return handleError(error, 'Error creating blobs:')
-  }
+  const [markdownBlob, imageBlob] = await Promise.all([
+    createBlob(markdownTemplate, 'utf-8'),
+    createBlob(logo.base64, 'base64'),
+  ])
+  return { markdownBlob, imageBlob }
 }
 
 async function createNewTree(
@@ -46,27 +41,23 @@ async function createNewTree(
   markdownBlob: any,
   imageBlob: any,
 ) {
-  try {
-    return await createTree({
-      baseTreeSha: latestCommitOnMain.commit.tree.sha,
-      newTrees: [
-        {
-          path: `${mediaFolder}/${slug}.${logo.format}`,
-          mode: '100644',
-          type: 'blob',
-          sha: imageBlob.sha,
-        },
-        {
-          path: `${ecosystemFolder}/${slug}.md`,
-          mode: '100644',
-          type: 'blob',
-          sha: markdownBlob.sha,
-        },
-      ],
-    })
-  } catch (error) {
-    return handleError(error, 'Error creating new tree:')
-  }
+  return await createTree({
+    baseTreeSha: latestCommitOnMain.commit.tree.sha,
+    newTrees: [
+      {
+        path: `${mediaFolder}/${slug}.${logo.format}`,
+        mode: '100644',
+        type: 'blob',
+        sha: imageBlob.sha,
+      },
+      {
+        path: `${ecosystemFolder}/${slug}.md`,
+        mode: '100644',
+        type: 'blob',
+        sha: markdownBlob.sha,
+      },
+    ],
+  })
 }
 
 export async function submitProjectToGithub({
@@ -87,37 +78,33 @@ export async function submitProjectToGithub({
     imagePath: `${publicFolder}/${slug}.${logo.format}`,
   })
 
-  try {
-    const latestCommitOnMain = await getLatestCommitOnMain()
+  const latestCommitOnMain = await getLatestCommitOnMain()
 
-    const { markdownBlob, imageBlob } = await createProjectBlobs(
-      markdownTemplate,
-      logo,
-    )
-    const newTree = await createNewTree(
-      latestCommitOnMain,
-      mediaFolder,
-      ecosystemFolder,
-      slug,
-      logo,
-      markdownBlob,
-      imageBlob,
-    )
+  const { markdownBlob, imageBlob } = await createProjectBlobs(
+    markdownTemplate,
+    logo,
+  )
+  const newTree = await createNewTree(
+    latestCommitOnMain,
+    mediaFolder,
+    ecosystemFolder,
+    slug,
+    logo,
+    markdownBlob,
+    imageBlob,
+  )
 
-    const newCommit = await createCommit({
-      parentCommitSha: latestCommitOnMain.sha,
-      treeSha: newTree.sha,
-      message: 'Form Submission',
-    })
+  const newCommit = await createCommit({
+    parentCommitSha: latestCommitOnMain.sha,
+    treeSha: newTree.sha,
+    message: 'Form Submission',
+  })
 
-    const newPullRequest = await createPR({
-      title: `New submission for ${projectName}`,
-      commitSha: newCommit.sha,
-      branchName,
-    })
+  const newPullRequest = await createPR({
+    title: `New submission for ${projectName}`,
+    commitSha: newCommit.sha,
+    branchName,
+  })
 
-    return newPullRequest
-  } catch (error) {
-    return handleError(error, 'Error submitting project to GitHub:')
-  }
+  return newPullRequest
 }

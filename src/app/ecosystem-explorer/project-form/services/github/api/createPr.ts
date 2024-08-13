@@ -1,7 +1,5 @@
 import { Octokit } from '@octokit/rest'
 
-import { handleError } from '@/utils/handleError'
-
 import { repoConfig } from '../config/repoConfig'
 
 import { createBranch } from './createBranch'
@@ -19,17 +17,14 @@ export async function createPR({
   branchName,
   commitSha,
 }: CreatePRParams) {
-  try {
-    await createBranch({ commitSha, branchName })
-    const { data: newPullRequest } = await octokit.rest.pulls.create({
-      owner: repoConfig.owner,
-      repo: repoConfig.repo,
-      head: branchName,
-      base: repoConfig.baseBranch,
-      title,
-    })
-    return newPullRequest
-  } catch (error) {
-    return handleError(error, 'Error creating pull request:')
-  }
+  await createBranch({ commitSha, branchName })
+
+  const { data: newPullRequest } = await octokit.rest.pulls.create({
+    owner: repoConfig.owner,
+    repo: repoConfig.repo,
+    head: branchName,
+    base: repoConfig.baseBranch,
+    title,
+  })
+  return newPullRequest
 }
