@@ -8,7 +8,10 @@ import { FieldErrors, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
-import DialogComponent, { type StatusType } from '@/components/Dialog'
+import {
+  NotificationDialog,
+  type StatusType,
+} from '@/components/NotificationDialog'
 import ControlledFormInput from '@/components/Form/ControlledFormInput'
 import Form from '@/components/Form/Form'
 
@@ -83,7 +86,7 @@ export function NewsletterForm() {
         </div>
       </div>
       {isOpen && (
-        <DialogComponent
+        <NotificationDialog
           status={notificationStatus}
           isOpen={isOpen}
           setIsOpen={setIsOpen}

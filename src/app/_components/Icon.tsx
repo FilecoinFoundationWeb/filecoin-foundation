@@ -1,4 +1,5 @@
 import { type Icon } from '@phosphor-icons/react'
+import clsx from 'clsx'
 
 export type IconProps = {
   component: Icon
@@ -26,9 +27,9 @@ export function Icon({
 }: IconProps) {
   const Component = component
 
-const className = clsx(colorStyles[color], {
-  'hover:text-inherit': inheritHoverStyle,
-});
+  const className = clsx(colorStyles[color], {
+    'hover:text-inherit': inheritHoverStyle,
+  })
 
   return (
     <span aria-hidden="true" className={className}>

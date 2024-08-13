@@ -6,7 +6,7 @@ import { Icon } from '@/components/Icon'
 
 export type StatusType = 'success' | 'warning'
 
-type DialogComponentProps = {
+type NotificationDialogProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
   status?: StatusType
@@ -23,11 +23,11 @@ const dialogStatus = {
   },
 }
 
-export default function DialogComponent({
+export function NotificationDialog({
   isOpen,
   setIsOpen,
   status,
-}: DialogComponentProps) {
+}: NotificationDialogProps) {
   const { title = '', icon = null } = status ? dialogStatus[status] : {}
 
   return (
