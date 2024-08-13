@@ -4,7 +4,7 @@ import { UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
 import type { EventData } from '@/schemas/eventDataSchema'
 
-import { isDateValid } from '@/utils/formatDate'
+import { isDateValid } from '@/utils/dateUtils'
 
 import { pastEventsSetting } from '@/constants/categoryConstants'
 

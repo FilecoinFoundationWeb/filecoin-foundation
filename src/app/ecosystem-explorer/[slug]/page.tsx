@@ -12,7 +12,7 @@ import { TextLink } from '@/components/TextLink'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/formatDate'
+import { formatDate } from '@/utils/dateUtils'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { graphicsData } from '@/data/graphicsData'
