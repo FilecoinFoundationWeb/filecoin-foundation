@@ -12,11 +12,10 @@ const { validCategoryOptions } = getCategorySettings('blog_posts')
 const categorySchema = createCategorySchema(validCategoryOptions)
 
 export const BlogPostDataSchema = DynamicBaseDataSchema.extend({
-  slug: z.string(),
   title: z.string(),
   category: categorySchema,
   description: z.string(),
-  content: z.string().optional(),
+  content: z.string(),
 })
 
 export type BlogPostData = z.infer<typeof BlogPostDataSchema>

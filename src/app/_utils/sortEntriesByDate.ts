@@ -23,18 +23,10 @@ export function sortEntriesByDate<Entry extends SortableByDate>({
 }: SortEntriesByDateParams<Entry>) {
   return [...entries].sort((a, b) => {
     const dateA = validateDate(
-      typeof a[sortBy] === 'undefined'
-        ? ''
-        : a[sortBy] instanceof Date
-          ? a[sortBy].toISOString()
-          : a[sortBy],
+      a[sortBy] instanceof Date ? a[sortBy].toISOString() : a[sortBy],
     )
     const dateB = validateDate(
-      typeof b[sortBy] === 'undefined'
-        ? ''
-        : b[sortBy] instanceof Date
-          ? b[sortBy].toISOString()
-          : b[sortBy],
+      b[sortBy] instanceof Date ? b[sortBy].toISOString() : b[sortBy],
     )
 
     const timeA = dateA.valueOf()
