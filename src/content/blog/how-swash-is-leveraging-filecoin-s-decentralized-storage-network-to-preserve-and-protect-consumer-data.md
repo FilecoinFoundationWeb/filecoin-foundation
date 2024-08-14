@@ -11,7 +11,6 @@ description:
   two trends are developing in parallel.
 image:
   src: /assets/images/64423af3e3c08f488e4f519c_1-pyb3swiscnbniykvqyrrdq.png
-recommended-posts: []
 category: use-cases
 seo:
   title: How Swash Uses Filecoin to Protect Consumer Data

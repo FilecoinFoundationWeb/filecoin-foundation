@@ -10,7 +10,6 @@ image:
 updated-on: "2023-04-21T07:27:04.336Z"
 created-on: "2023-04-21T07:27:04.336Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: news
 seo:
   title:

@@ -7,7 +7,6 @@ description: "Filecoin Foundation awards grant funding for critical development 
 image:
   src: /assets/images/052924-docgrants.png
 category: reports
-recommended-posts: []
 seo:
   title: "Improve Filecoin Docs & Receive Grant Funding up to $50,000"
   description: "Enhance Filecoin documentation and educational resources with our grants program. Funding up to $50,000 available for critical development projects."

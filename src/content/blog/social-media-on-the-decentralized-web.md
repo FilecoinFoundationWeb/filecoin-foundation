@@ -9,7 +9,6 @@ description: >-
   layoffs, and leadership and product changes.
 image:
   src: /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
-recommended-posts: []
 category: use-cases
 seo:
   title: Social Media on the Decentralized Web

@@ -10,7 +10,6 @@ description:
   Community Discovery
 image:
   src: /assets/images/0224-cs-opsci.png
-recommended-posts: []
 category: use-cases
 seo:
   title: "Case Study: OpSci Empowers Community Discovery with Web3"

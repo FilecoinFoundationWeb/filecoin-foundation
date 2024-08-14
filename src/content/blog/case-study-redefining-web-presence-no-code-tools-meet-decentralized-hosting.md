@@ -8,7 +8,6 @@ description:
   to website design workflow.
 image:
   src: /assets/images/0905-cs-ff.png
-recommended-posts: []
 category: use-cases
 seo:
   title:

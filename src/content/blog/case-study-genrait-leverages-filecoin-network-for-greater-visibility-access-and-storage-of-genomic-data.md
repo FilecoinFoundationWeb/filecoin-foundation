@@ -12,7 +12,6 @@ description:
   with regards to their data and analytics processes.
 image:
   src: /assets/images/image-c-02.png
-recommended-posts: []
 category: use-cases
 seo:
   title: "Case Study: GenRait Leverages Filecoin for Genomic Data Storage"

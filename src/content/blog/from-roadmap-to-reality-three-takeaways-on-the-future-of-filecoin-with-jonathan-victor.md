@@ -13,7 +13,6 @@ description:
   Victor, Ecosystem Lead at Protocol Labs.
 image:
   src: /assets/images/jonathan-victor.png
-recommended-posts: []
 seo:
   title: "From Roadmap to Reality: Future of Filecoin with Jonathan Victor"
   description:

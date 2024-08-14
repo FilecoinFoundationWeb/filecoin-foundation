@@ -8,7 +8,6 @@ image:
 updated-on: "2023-04-21T07:28:04.262Z"
 created-on: "2023-04-21T07:28:04.262Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: events
 seo:
   title: Celebrate Filecoin Mainnet's One-Year Milestone with Us

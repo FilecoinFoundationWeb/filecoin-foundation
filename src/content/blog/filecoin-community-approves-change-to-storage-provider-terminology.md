@@ -9,7 +9,6 @@ description:
   who participate in it as storage providers.
 image:
   src: /assets/images/fip18.png
-recommended-posts: []
 category: news
 seo:
   title: Filecoin Community Approves Change to Storage Provider Terminology

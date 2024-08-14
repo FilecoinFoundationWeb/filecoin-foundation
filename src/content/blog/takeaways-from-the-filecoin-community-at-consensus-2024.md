@@ -7,7 +7,6 @@ description: "Last week, the Filecoin community convened in Austin against the b
 image:
   src: /assets/images/060624-consensus.png
 category: events
-recommended-posts: []
 seo:
   title: "Filecoin Community Highlights from Consensus 2024"
   description: "Discover key highlights and innovations presented by the Filecoin community at Consensus 2024 in Austin."

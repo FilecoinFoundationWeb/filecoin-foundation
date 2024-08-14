@@ -11,7 +11,6 @@ image:
 updated-on: "2023-04-21T07:26:52.479Z"
 created-on: "2023-04-21T07:26:52.479Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: news
 seo:
   title: DZK Foundation Awarded Grant for ZK-Rollup Research

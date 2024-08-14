@@ -10,7 +10,6 @@ image:
 updated-on: "2023-04-21T07:27:19.915Z"
 created-on: "2023-04-21T07:27:19.915Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: events
 seo:
   title: Filecoin Foundation Introduces FIL Lisbon 2022

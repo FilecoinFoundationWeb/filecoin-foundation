@@ -8,7 +8,6 @@ image:
 updated-on: "2023-04-21T07:31:35.155Z"
 created-on: "2023-04-21T07:31:35.155Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: news
 seo:
   title: Filecoin and Electric Coin Co. Simplify Halo Licensing, Create Joint Grants Pool

@@ -11,7 +11,6 @@ description:
   \  "
 image:
   src: /assets/images/0621-2022-01.png
-recommended-posts: []
 category: news
 seo:
   title: "FIP0056 Update: Proposal Rejected"

@@ -8,7 +8,6 @@ description:
   to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station."
 image:
   src: /assets/images/12202022-saturnandstation.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: New Programs to Contribute to the Filecoin Network

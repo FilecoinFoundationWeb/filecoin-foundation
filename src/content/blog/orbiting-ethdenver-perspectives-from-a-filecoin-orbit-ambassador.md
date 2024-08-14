@@ -10,7 +10,6 @@ description:
   this event meant for the community and the future of the Orbit program.
 image:
   src: /assets/images/032224-orbit-austin.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

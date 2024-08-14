@@ -11,7 +11,6 @@ image:
 updated-on: "2023-04-21T07:26:54.116Z"
 created-on: "2023-04-21T07:26:54.116Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: ecosystem
 seo:
   title: "FIP0036: Deliberation, Discussion, and Next Steps"

@@ -10,7 +10,6 @@ description:
   Demo Day, taking place September 28 @ 11:00 AM EDT!
 image:
   src: /assets/images/64423afe4e4c68b60af47060_0-8alsa5xsesgbjyrr.png
-recommended-posts: []
 category: events
 seo:
   title: Join Filecoin Launchpad Accelerator Demo Day on September 28

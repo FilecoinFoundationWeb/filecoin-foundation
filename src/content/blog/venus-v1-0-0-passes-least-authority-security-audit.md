@@ -9,7 +9,6 @@ description:
   store valuable data securely on Filecoin.
 image:
   src: /assets/images/image-c-28.png
-recommended-posts: []
 category: news
 seo:
   title: Venus v1.0.0 Passes Least Authority Security Audit

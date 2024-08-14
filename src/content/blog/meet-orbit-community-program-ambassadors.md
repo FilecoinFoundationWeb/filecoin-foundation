@@ -10,7 +10,6 @@ description:
   and libp2p communities.
 image:
   src: /assets/images/0713-orbitcommunity.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: Meet Orbit Community Program Ambassadors

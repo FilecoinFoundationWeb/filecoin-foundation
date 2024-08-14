@@ -9,7 +9,6 @@ description:
   has been up to."
 image:
   src: /assets/images/fresh-from-ff-early-may.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

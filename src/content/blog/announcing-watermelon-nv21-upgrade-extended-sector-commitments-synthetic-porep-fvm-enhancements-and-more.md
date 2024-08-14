@@ -12,7 +12,6 @@ description:
   the network’s efficiency and robustness.
 image:
   src: /assets/images/twitter-_-nv21_upgrade.png
-recommended-posts: []
 seo:
   title: Announcing Watermelon NV21 Upgrade by Filecoin Foundation
   description:

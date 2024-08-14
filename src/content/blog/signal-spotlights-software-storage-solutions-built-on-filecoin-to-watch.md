@@ -10,7 +10,6 @@ description: "There are dozens of ways to store data on Filecoin. From
   storage needs."
 image:
   src: /assets/images/120624-spotlight.png
-recommended-posts: []
 seo:
   twitter:
     title: summary

@@ -12,7 +12,6 @@ description:
   network into a new era of adoption and growth."
 image:
   src: /assets/images/ethdenver.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

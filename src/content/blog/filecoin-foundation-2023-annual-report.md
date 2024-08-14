@@ -12,7 +12,6 @@ description:
   This report also provides additional details on FF’s annual budget.
 image:
   src: /assets/images/022624-ff-anualreport.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

@@ -11,7 +11,6 @@ description:
   trust mechanisms.
 image:
   src: /assets/images/03292023-filplusmission.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: "Filecoin Plus Quality Phase: Vision and Roadmap"

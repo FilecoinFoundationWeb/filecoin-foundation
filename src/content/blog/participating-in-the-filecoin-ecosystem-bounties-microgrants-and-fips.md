@@ -8,7 +8,6 @@ description:
   network is inextricably linked with the development of its community. "
 image:
   src: /assets/images/image-c-20.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: "Get Involved in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"

@@ -9,7 +9,6 @@ image:
 updated-on: "2023-04-21T07:27:18.330Z"
 created-on: "2023-04-21T07:27:18.330Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: reports
 seo:
   title: Filecoin Foundation First Half-Year in Review

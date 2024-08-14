@@ -10,7 +10,6 @@ description: >-
   intelligence (AI).
 image:
   src: /assets/images/filvegas_recap_header.png
-recommended-posts: []
 seo:
   title: "AI, Data Verifiability, and Decentralized Storage: FIL Vegas Recap"
   description:

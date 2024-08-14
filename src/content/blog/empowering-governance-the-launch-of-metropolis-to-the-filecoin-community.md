@@ -9,7 +9,6 @@ description:
   Improvement Proposals.
 image:
   src: /assets/images/blog-header-_-metropolis.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

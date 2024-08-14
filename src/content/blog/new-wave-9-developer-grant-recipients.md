@@ -9,7 +9,6 @@ description:
   web through the Filecoin ecosystem. "
 image:
   src: /assets/images/image-c-17.png
-recommended-posts: []
 category: news
 seo:
   title: Announcing the New Wave 9 Developer Grant Recipients

@@ -9,7 +9,6 @@ description:
   on the Filecoin network.
 image:
   src: /assets/images/021224-guest-moca-1-.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: "Guest Post: If the Library of Alexandria Were Built Better"

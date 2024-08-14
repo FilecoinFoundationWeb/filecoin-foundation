@@ -10,7 +10,6 @@ description:
   and cost-effective alternative for data storage on the Filecoin network.
 image:
   src: /assets/images/twin-quasar-celeste-filecoin-blog-image.png
-recommended-posts: []
 category: use-cases
 seo:
   title: "Storage Spotlight: Green Data Hosting with Twin Quasar and Celeste"

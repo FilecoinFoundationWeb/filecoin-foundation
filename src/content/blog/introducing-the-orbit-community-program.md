@@ -8,7 +8,6 @@ description:
   powered by Filecoin Foundation and Protocol Labs. "
 image:
   src: /assets/images/0114-orbitcommunity-twitter.png
-recommended-posts: []
 category: news
 seo:
   title: Introducing the Orbit Community Program

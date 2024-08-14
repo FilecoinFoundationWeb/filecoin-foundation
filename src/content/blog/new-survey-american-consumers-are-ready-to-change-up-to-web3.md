@@ -9,7 +9,6 @@ description: >-
   don’t like how their data is managed by the current gatekeepers.
 image:
   src: /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
-recommended-posts: []
 category: reports
 seo:
   title: "New Survey: American Consumers Ready to Embrace Web3"

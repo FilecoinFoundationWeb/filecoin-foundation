@@ -9,7 +9,6 @@ description: >-
   movement and help others catalyze their Web3 learning.
 image:
   src: /assets/images/0609-ffxunfinished.png
-recommended-posts: []
 category: news
 seo:
   title: Filecoin Foundation and Unfinished Announce Explorer Awards

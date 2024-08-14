@@ -8,7 +8,6 @@ description:
   x Filecoin grant program. "
 image:
   src: /assets/images/64423aa44e4c6826a3f40982_0-3uh8nohy2qqafnfv.png
-recommended-posts: []
 category: news
 seo:
   title: Congratulations to the Hedera x Filecoin Grant Program Winners

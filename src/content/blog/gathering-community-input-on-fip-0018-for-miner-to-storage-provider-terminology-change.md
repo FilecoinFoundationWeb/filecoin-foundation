@@ -10,7 +10,6 @@ description:
   Proposal (FIP) 0018, which proposes to rebrand network “miners” as “storage providers”.
 image:
   src: /assets/images/fip-header.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: Gathering Community Input on FIP-0018

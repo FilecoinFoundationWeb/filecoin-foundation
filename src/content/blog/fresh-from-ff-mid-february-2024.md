@@ -12,7 +12,6 @@ description:
   more decentralized internet.
 image:
   src: /assets/images/0215-ff.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

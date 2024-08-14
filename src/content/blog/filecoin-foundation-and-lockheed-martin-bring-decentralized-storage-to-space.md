@@ -13,7 +13,6 @@ description: >-
   for deploying the Interplanetary File System (IPFS) in space.
 image:
   src: /assets/images/01-lockheed-p-1080.png
-recommended-posts: []
 category: news
 seo:
   title: Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space

@@ -10,7 +10,6 @@ image:
 updated-on: "2023-04-21T07:27:26.180Z"
 created-on: "2023-04-21T07:27:26.180Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: ecosystem
 seo:
   title: "Filecoin Storage Provider Spotlight: Filswan"

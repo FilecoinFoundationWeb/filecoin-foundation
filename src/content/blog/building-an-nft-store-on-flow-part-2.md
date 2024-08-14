@@ -9,7 +9,6 @@ description: >-
   the Flow blockchain and IPFS/Filecoin storage via nft.storage.
 image:
   src: /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
-recommended-posts: []
 category: use-cases
 seo:
   title: "Building an NFT Store on Flow: Part 2"

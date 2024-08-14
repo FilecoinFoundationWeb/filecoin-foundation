@@ -10,7 +10,6 @@ description:
   to life.
 image:
   src: /assets/images/051823-austin-recap.png
-recommended-posts: []
 category: events
 seo:
   title: Filecoin Network Base at Consensus 2023 Wrapped

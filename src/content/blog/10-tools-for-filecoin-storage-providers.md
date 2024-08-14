@@ -9,7 +9,6 @@ description: >-
   and enhance service offerings.
 image:
   src: /assets/images/92523-sptooling.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: Top 10 Tools for Filecoin Storage Providers

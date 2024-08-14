@@ -14,7 +14,6 @@ description: >-
   commercialization opportunities.
 image:
   src: /assets/images/070723-qa-artifactlabs.png
-recommended-posts: []
 category: use-cases
 seo:
   title: How Artifact Labs Uses Blockchain to Preserve History

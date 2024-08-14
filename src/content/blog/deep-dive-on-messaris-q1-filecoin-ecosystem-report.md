@@ -9,7 +9,6 @@ description:
   Report.
 image:
   src: /assets/images/050824-messariq1.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: Messari Filecoin Report Q1 2024

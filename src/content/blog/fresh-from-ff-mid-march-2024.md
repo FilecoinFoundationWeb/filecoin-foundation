@@ -9,7 +9,6 @@ description:
   has been up to.
 image:
   src: /assets/images/0215-ff-2-.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

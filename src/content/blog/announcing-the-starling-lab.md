@@ -8,7 +8,6 @@ description: >-
   thrilled to announce a multi-year commitment to The Starling Lab, a new
   research center tackling the technical and ethical challenges of establishing
   trust in the most sensitive digital records of our human history.
-recommended-posts: []
 category: news
 seo:
   title: Announcing the Starling Lab by Filecoin Foundation

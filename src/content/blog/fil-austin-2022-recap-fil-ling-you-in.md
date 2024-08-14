@@ -9,7 +9,6 @@ description:
   CoinDesk’s annual crypto conference in June.
 image:
   src: /assets/images/image-c-15.png
-recommended-posts: []
 category: events
 seo:
   title: "FIL Austin 2022 Recap: FIL-ling You In"

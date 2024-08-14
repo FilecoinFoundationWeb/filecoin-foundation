@@ -9,7 +9,6 @@ description:
   (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet.
 image:
   src: /assets/images/031224-fvm-anniversary.png
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

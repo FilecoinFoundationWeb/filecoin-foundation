@@ -16,7 +16,6 @@ export const BlogPostDataSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string(),
-  recommendedPosts: z.array(z.string()).optional(),
   content: z.string().optional(),
 })
 

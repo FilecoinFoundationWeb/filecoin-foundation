@@ -9,7 +9,6 @@ description:
   tweets and texts, Reddit posts and research reports, and so much more.
 image:
   src: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
-recommended-posts: []
 category: ecosystem
 seo:
   title: Join Us as We Build a Better Web
