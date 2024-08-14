@@ -16,7 +16,7 @@ description: Dive into decentralized AI infrastructure, DePIN, and the evolving
   chapter of a better internet. Secure your spot early.
 external-link: https://lu.ma/aqyqwupe
 image:
-  src: /assets/images/filbangkok-26.webp
+  src: /assets/images/filbangkok-26-1-.webp
 seo:
   title: FIL Bangkok
   description: Attend FIL Bangkok to engage with the Filecoin community and
