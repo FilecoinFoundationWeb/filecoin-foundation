@@ -1,3 +1,5 @@
+import { formatISO, parseISO, isValid } from 'date-fns'
+
 import { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -20,12 +22,18 @@ function generateDynamicRoutes<
   return data.map((item) => {
     const timestamp = item[timestampKey]
 
-    const lastModifiedDate =
-      timestamp instanceof Date
-        ? timestamp.toISOString()
-        : typeof timestamp === 'string'
-          ? new Date(timestamp).toISOString()
-          : new Date().toISOString()
+    const lastModifiedDate = (() => {
+      if (timestamp instanceof Date) {
+        return formatISO(timestamp)
+      } else if (typeof timestamp === 'string') {
+        const parsedDate = parseISO(timestamp)
+        return isValid(parsedDate)
+          ? formatISO(parsedDate)
+          : formatISO(new Date())
+      } else {
+        return formatISO(new Date())
+      }
+    })()
 
     return {
       url: `${BASE_URL}${basePath}/${item.slug}`,
