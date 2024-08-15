@@ -20,17 +20,22 @@ created_on: &created_on
   name: "created-on"
   label: "Created On"
   widget: "datetime"
+  default: "{{now}}"
 
 updated_on: &updated_on
   name: "updated-on"
   label: "Updated On"
   widget: "datetime"
+  default: "{{now}}"
+
   required: false
 
 published_on: &published_on
   name: "published-on"
   label: "Published On"
   widget: "datetime"
+  default: "{{now}}"
+
   required: false
 
 header_config: &header_config
