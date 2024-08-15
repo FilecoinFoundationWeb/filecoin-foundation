@@ -26,7 +26,7 @@ Join Metapals for [FIL Singapore](https://www.fil.org/events/fil-singapore-along
 
 * Join the next [Developer Working Group (DevWG) meeting, August 29](https://lu.ma/n1qa6gj6). This monthly call connects Filecoin developers and community members to discuss key areas of interest across the developer community. Have questions? Check out our [repo](https://github.com/filecoin-project/DeveloperWG) or connect in the [Builders Discussions](https://discord.com/channels/1210612276357500978/1234888399647801426) channel in Discord.
 
-### **Storage Community**
+### Storage Community
 
 * Several FIPs in the nv23 Waffle upgrade were added to address critical aspects of the network's functionality including [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md) simplifies the network's circulating supply calculation by excluding the locked balances of the built-in market actor, preparing for direct data commitments without requiring market deals.
 * [Filecoin Fast Finality (F3) was accepted](https://x.com/FilFoundation/status/1821594124581048654). This change reduces finalization time from approximately 7.5 hours to ~15 minutes using existing information, without protocol changes, addressing a key barrier for apps, exchanges, and interoperability. [Read more](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0086.md).
