@@ -43,7 +43,7 @@ Join Metapals for [FIL Singapore](https://www.fil.org/events/fil-singapore-along
 * Rolling allocator applications are open for submissions. Allocators are a core part of the Fil+ program and help incentivize the storage of useful data on the Filecoin network. Allocators designing new pathways, such as those listed in the [Request for Allocators (RFA)](https://blog.allocator.tech/2024/05/rolling-applications-are-open-for.html?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), are receiving priority review.
 * [The August 6 Allocator Call is available on YouTube](https://youtu.be/wvsaEgabhc8). If you would like to attend these meetings live add the [Fil+ Allocator Governance calendar](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
-## **Comms, Marketing, & Events**
+### Comms, Marketing, & Events
 
 * Filecoin Foundation President and Chair Marta Belcher joined Chainalysis CMO Ian Andrews on the [Public Key Podcast](https://www.chainalysis.com/blog/ipfs-filecoin-and-crypto-policy-developments-ep-121/) to talk about the evolving landscape of crypto policy
 * Filecoin Foundation [joined the NFT.Storage community](https://nft.storage/blog/filecoin-foundation-joins-the-nft-storage-community) as a gold member to help preserve digital assets and ensure that NFTs remain accessible and verifiable for future generations.
