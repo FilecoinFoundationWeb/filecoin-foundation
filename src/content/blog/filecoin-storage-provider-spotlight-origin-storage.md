@@ -9,8 +9,6 @@ description:
   and services. "
 image:
   src: /assets/images/image-c-01.png
-  alt:
-recommended-posts: []
 category: ecosystem
 seo:
   title: "Filecoin Storage Provider Spotlight: Origin Storage"

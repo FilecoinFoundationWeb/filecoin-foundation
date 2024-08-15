@@ -10,8 +10,6 @@ description: >-
   programmable for the first time.
 image:
   src: /assets/images/64423bf9da735f547c392f21_unnamed-14.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: The Filecoin Virtual Machine Has Arrived

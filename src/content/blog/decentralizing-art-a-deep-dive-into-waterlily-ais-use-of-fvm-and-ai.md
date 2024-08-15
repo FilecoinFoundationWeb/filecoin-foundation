@@ -9,8 +9,6 @@ description:
   with Allie Haire on the future of AI and blockchain in art.
 image:
   src: /assets/images/06262023-waterlilly.png
-  alt:
-recommended-posts: []
 category: use-cases
 seo:
   title: "Decentralizing Art: Waterlily AI's Use of FVM and AI"

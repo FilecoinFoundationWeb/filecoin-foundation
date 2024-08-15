@@ -8,8 +8,6 @@ description:
   of the web.
 image:
   src: /assets/images/64423b004e4c68dc35f473ac_0-zlsuhdrlo5hqa1zy.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Join the Filecoin Foundation Team for a Hiring Webinar

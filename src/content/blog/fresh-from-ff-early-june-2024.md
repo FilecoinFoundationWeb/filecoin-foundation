@@ -6,9 +6,7 @@ published-on: 2024-05-31T17:08:54.189Z
 description: "Check out the latest updates about what the Filecoin Foundation has been up to."
 image:
   src: /assets/images/0215-ff-7-.png
-  alt: "Filecoin Foundation"
 category: news
-recommended-posts: []
 seo:
   title: "Fresh From Filecoin Foundation: Early June 2024 Updates"
   description: "Get the latest updates from Filecoin Foundation, including events, governance, and ecosystem highlights from early June 2024."
