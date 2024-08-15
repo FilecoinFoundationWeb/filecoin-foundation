@@ -9,6 +9,8 @@ description:
   Improvement Proposals.
 image:
   src: /assets/images/blog-header-_-metropolis.png
+  alt: Metropolis Filecoin
+recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

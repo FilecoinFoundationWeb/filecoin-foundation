@@ -15,6 +15,8 @@ description:
   with Flowverse, Emerald City, and Flow, Basic Beasts is made by gamers for gamers.
 image:
   src: /assets/images/0517-dgs-_.png
+  alt:
+recommended-posts: []
 category: use-cases
 seo:
   title: How Basic Beasts Uses Filecoin for Decentralized Gaming

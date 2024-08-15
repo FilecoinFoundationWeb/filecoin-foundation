@@ -12,6 +12,8 @@ description:
   just being run by Amazon by default."
 image:
   src: /assets/images/0905-dweb-on-the-rise.png
+  alt:
+recommended-posts: []
 category: ecosystem
 seo:
   title: "DWeb on the Rise: Uses for Decentralized Storage"

@@ -10,6 +10,7 @@ description: "The Filecoin Orbit community teamed up with Filecoin Foundation
   community, and drive interest in the region. "
 image:
   src: /assets/images/110624-europe.png
+recommended-posts: []
 seo:
   twitter:
     title: summary

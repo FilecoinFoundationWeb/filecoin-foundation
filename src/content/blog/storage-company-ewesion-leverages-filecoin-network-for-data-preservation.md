@@ -9,6 +9,8 @@ description: >-
   individual users.
 image:
   src: /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
+  alt:
+recommended-posts: []
 category: use-cases
 seo:
   title: Storage Company Ewesion Uses Filecoin for Data Preservation

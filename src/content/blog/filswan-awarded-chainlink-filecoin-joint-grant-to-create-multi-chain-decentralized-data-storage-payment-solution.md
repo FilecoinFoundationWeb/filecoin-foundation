@@ -9,9 +9,11 @@ description: >-
   application.
 image:
   src: /assets/images/64423ae9ef619d8d6eb60ed0_1-pvi22ssfyyn-thpuj3ltgg.png
+  alt:
 updated-on: "2023-04-21T07:27:37.543Z"
 created-on: "2023-04-21T07:27:37.543Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: news
 seo:
   title: Filswan Awarded Chainlink-Filecoin Joint Grant

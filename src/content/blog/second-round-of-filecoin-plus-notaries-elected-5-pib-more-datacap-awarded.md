@@ -8,6 +8,8 @@ description:
   the second time since its launch.
 image:
   src: /assets/images/image-c-34.png
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Second Round of Filecoin Plus Notaries Elected

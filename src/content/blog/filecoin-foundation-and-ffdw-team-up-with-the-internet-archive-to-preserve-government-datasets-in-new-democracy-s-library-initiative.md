@@ -8,9 +8,11 @@ description: >-
   remain permanently accessible to the public.
 image:
   src: /assets/images/64423acba6ec41b8da2a46d0_1-jrf-dri7quysyfpqa5rpaw.webp
+  alt:
 updated-on: "2023-04-21T07:27:07.444Z"
 created-on: "2023-04-21T07:27:07.444Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: news
 seo:
   title: Filecoin Foundation and FFDW Team Up with Internet Archive

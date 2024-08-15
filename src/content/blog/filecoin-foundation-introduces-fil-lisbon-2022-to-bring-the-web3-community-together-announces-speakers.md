@@ -7,9 +7,11 @@ description: >-
   metaverse, Web3 and more through the perspective of the Filecoin community.
 image:
   src: /assets/images/64423ad74e4c688bfff4446d_1-ru5fimtnssl-v4znrrl-ew.webp
+  alt:
 updated-on: "2023-04-21T07:27:19.915Z"
 created-on: "2023-04-21T07:27:19.915Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: events
 seo:
   title: Filecoin Foundation Introduces FIL Lisbon 2022

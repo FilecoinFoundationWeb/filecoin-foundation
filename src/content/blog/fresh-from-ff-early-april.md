@@ -9,6 +9,8 @@ description:
   has been up to.
 image:
   src: /assets/images/0215-ff-3-.png
+  alt: Fresh From FF Early April, 2024
+recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

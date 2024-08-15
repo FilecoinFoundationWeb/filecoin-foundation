@@ -11,6 +11,8 @@ description:
   $6,000 in prizes!
 image:
   src: /assets/images/0208-orbitfvm.png
+  alt:
+recommended-posts: []
 category: events
 seo:
   title: Join the Orbit FVM Open Hack Days

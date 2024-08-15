@@ -22,21 +22,14 @@ export function sortEntriesByDate<Entry extends SortableByDate>({
   sortOption,
 }: SortEntriesByDateParams<Entry>) {
   return [...entries].sort((a, b) => {
-    const dateA = validateDate(
-      a[sortBy] instanceof Date ? a[sortBy].toISOString() : a[sortBy],
-    )
-    const dateB = validateDate(
-      b[sortBy] instanceof Date ? b[sortBy].toISOString() : b[sortBy],
-    )
-
-    const timeA = dateA.valueOf()
-    const timeB = dateB.valueOf()
+    const dateA = validateDate(a[sortBy])
+    const dateB = validateDate(b[sortBy])
 
     switch (sortOption) {
       case 'newest':
-        return timeB - timeA
+        return dateB.valueOf() - dateA.valueOf()
       case 'oldest':
-        return timeA - timeB
+        return dateA.valueOf() - dateB.valueOf()
       default:
         return 0
     }

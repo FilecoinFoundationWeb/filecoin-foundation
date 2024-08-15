@@ -9,6 +9,8 @@ description:
   around open source, decentralized storage, and nurturing the Filecoin ecosystem.
 image:
   src: /assets/images/image-c-29.png
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Meet the Newest Members of the Filecoin Foundation Team

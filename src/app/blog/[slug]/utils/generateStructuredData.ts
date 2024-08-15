@@ -1,6 +1,6 @@
 import type { BlogPosting, WithContext } from 'schema-dts'
 
-import type { BlogPostData } from '@/schemas/blogPostDataSchema'
+import { BlogPostData } from '@/types/blogPostTypes'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
@@ -19,14 +19,14 @@ export function generateStructuredData(
     '@type': 'BlogPosting',
     headline: title,
     description: description,
-    image: image?.src,
+    image: image.src,
     author: {
       '@type': 'Organization',
       name: ORGANIZATION_NAME,
       url: BASE_URL,
     },
-    datePublished: publishedOn?.toISOString(),
-    dateModified: updatedOn?.toISOString() || publishedOn?.toISOString(),
+    datePublished: publishedOn,
+    dateModified: updatedOn || publishedOn,
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,

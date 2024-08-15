@@ -10,6 +10,8 @@ created-on: "2023-04-21T07:32:13.414Z"
 published-on: "2023-05-03T12:47:09.568Z"
 image:
   src: /assets/images/64524524a1a3e64e1d97de7f_0202-filpluselection.jpg
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: The Growth of Filecoin Plus and Upcoming Notary Elections

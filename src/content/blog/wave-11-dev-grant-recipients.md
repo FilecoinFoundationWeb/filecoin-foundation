@@ -9,6 +9,8 @@ description:
   the Filecoin ecosystem.
 image:
   src: /assets/images/image-c-17.png
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Announcing the Wave 11 Dev Grant Recipients

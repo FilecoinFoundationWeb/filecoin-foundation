@@ -9,6 +9,8 @@ description:
   tools, and other developments in the Filecoin ecosystem.
 image:
   src: /assets/images/image-c-07.png
+  alt:
+recommended-posts: []
 category: events
 seo:
   title: FIL Toronto 2022 Recap

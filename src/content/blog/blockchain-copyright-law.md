@@ -8,6 +8,8 @@ description:
   for blockchain in art and music
 image:
   src: /assets/images/image-c-30.png
+  alt:
+recommended-posts: []
 category: reports
 seo:
   title: Exploring Blockchain and Copyright Law

@@ -8,6 +8,8 @@ description:
   Web shared their board of directors.
 image:
   src: /assets/images/image-c-06.png
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Filecoin Foundation Announces Board of Directors
