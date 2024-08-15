@@ -27,7 +27,6 @@ updated_on: &updated_on
   label: "Updated On"
   widget: "datetime"
   default: "{{now}}"
-
   required: false
 
 published_on: &published_on
@@ -35,7 +34,6 @@ published_on: &published_on
   label: "Published On"
   widget: "datetime"
   default: "{{now}}"
-
   required: false
 
 header_config: &header_config
