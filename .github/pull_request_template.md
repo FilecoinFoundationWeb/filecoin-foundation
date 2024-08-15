@@ -1,8 +1,7 @@
 ## 📝 Description
 
-Please include a summary of the changes and the related issue number(s). Provide context and motivation for the change, and describe what problem it solves.
+Please include a summary of the changes. Provide context and motivation for the change, and describe what problem it solves.
 
-- **Issue:** [Link](#)
 - **Type:** Bug fix / New feature / Documentation / Refactor
 
 ## 🛠️ Key Changes
@@ -30,3 +29,11 @@ Please include a summary of the changes and the related issue number(s). Provide
 ## 📸 Screenshots
 
 Attach if there are UI changes.
+
+## 🔖 Resources
+
+Feel free to share any references to documentation, libraries, blog posts, or other resources that you consulted or used during the implementation of the changes.
+
+- [Resource 1]
+- [Resource 2]
+- ...
