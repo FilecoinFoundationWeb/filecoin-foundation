@@ -12,8 +12,6 @@ description:
   draft.
 image:
   src: /assets/images/231017-fip0001v2.png
-  alt: "Filecoin Foundation FIP 0001v2 Governance"
-recommended-posts: []
 seo:
   title: "Community Feedback: New Filecoin Governance Proposal"
   description:

@@ -7,8 +7,9 @@ import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
+
+import { PATHS } from '@/constants/paths'
 
 type FeaturedEcosystemProjectsProps = {
   ecosystemProjects: EcosystemProjectData[]

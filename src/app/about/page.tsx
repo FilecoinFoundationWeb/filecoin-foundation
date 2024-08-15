@@ -1,5 +1,5 @@
 import { Files } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -13,11 +13,12 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/about.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'

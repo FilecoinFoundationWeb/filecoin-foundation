@@ -9,8 +9,6 @@ description:
   (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet.
 image:
   src: /assets/images/031224-fvm-anniversary.png
-  alt: "One Year of Programmability, Smart Contracts, and Dapp Growth on Filecoin"
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary
@@ -43,7 +41,7 @@ Cross-chain interoperability. The Filecoin Network has taken a significant leap 
 
 Reward contracts from [Filecoin Saturn](https://saturn.tech/), a decentralized content delivery network for fast retrievals on Filecoin, and [Filecoin Station](https://www.filstation.app/), which connects your computer’s idle resources to the Filecoin network and rewards you with FIL.
 
-Important tooling was added with [six new block explorers](https://filecoin-io.ipns.dweb.link/blog/posts/the-fvm-imaginarium-block-explorers/) including [Filfox](https://filfox.info/), [Beryx Explorer](https://beryx.zondax.ch/), and [Starboard](https://fvm.starboard.ventures/calibration/explorer). And the newly refreshed [Filecoin Dataset Explorer](https://datasets.filecoin.io/) has FVM-enabled retrieval of public datasets for easy discovery of open-access datasets stored on the Filecoin network.
+Important tooling was added with six new block explorers including [Filfox](https://filfox.info/), [Beryx Explorer](https://beryx.zondax.ch/), and [Starboard](https://fvm.starboard.ventures/calibration/explorer). And the newly refreshed [Filecoin Dataset Explorer](https://datasets.filecoin.io/) has FVM-enabled retrieval of public datasets for easy discovery of open-access datasets stored on the Filecoin network.
 
 Here are a few more early-stage projects building on FVM to keep an eye on**:**
 

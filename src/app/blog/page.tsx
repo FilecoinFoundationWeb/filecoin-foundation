@@ -1,3 +1,5 @@
+import path from 'path'
+
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -28,11 +30,12 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -46,9 +49,18 @@ type Props = {
 }
 
 const posts = getBlogPostsData()
-const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
-const { featured_entry: featuredPostSlug, seo } = attributes
-const featuredPost = getBlogPostData(featuredPostSlug || '')
+
+const { categorySettings, validCategoryOptions } =
+  getCategorySettings('blog_posts')
+
+const { featured_entry, seo } = attributes
+
+if (!featured_entry) {
+  throw new Error('Featured entry is undefined')
+}
+
+const featuredPostSlug = path.parse(featured_entry).name
+const featuredPost = getBlogPostData(featuredPostSlug)
 
 export const metadata = createMetadata({
   seo,
@@ -96,7 +108,8 @@ export default function Blog({ searchParams }: Props) {
         description={featuredPost.description}
         metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
-          ...featuredPost.image,
+          alt: '',
+          ...(featuredPost.image || graphicsData.imageFallback),
           fallback: graphicsData.imageFallback,
         }}
         cta={{
@@ -170,7 +183,10 @@ export default function Blog({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                           image={{
-                            ...image,
+                            alt: '',
+                            ...(image || {
+                              ...graphicsData.imageFallback,
+                            }),
                             fallback: graphicsData.imageFallback,
                             priority: isFirstTwoImages,
                             sizes: buildImageSizeProp({
@@ -181,7 +197,7 @@ export default function Blog({ searchParams }: Props) {
                             }),
                           }}
                           tag={getCategoryLabel({
-                            collectionName: 'blog',
+                            collectionName: 'blog_posts',
                             category,
                           })}
                         />

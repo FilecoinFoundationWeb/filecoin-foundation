@@ -1,3 +1,5 @@
+const { withSentryConfig } = require('@sentry/nextjs')
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -19,7 +21,6 @@ const nextConfig = {
         '.next/cache/**',
         '.vscode/**',
         'cypress/**',
-        '.netlify/**',
         'public/**',
         'scripts/**',
         'src/app/**',
@@ -28,81 +29,15 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      {
-        source:
-          '/blog/ecosystem-spotlight-ghostdrive%E2%80%99s-secure-decentralized-storage-now-on-mobile',
-        destination:
-          '/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile',
-        permanent: true,
-      },
-      {
-        source:
-          '/blog/guest-post-if-the-library-of-alexandra-were-built-better/',
-        destination:
-          '/blog/guest-post-if-the-library-of-alexandria-were-built-better',
-        permanent: true,
-      },
-      {
-        source:
-          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
-        destination:
-          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
-        permanent: true,
-      },
-      {
-        source: '/blog/democracy',
-        destination:
-          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
-        permanent: true,
-      },
-      {
-        source:
-          '/blog/pilecoin-foundation-successfully-deploys-interflanetary-pile-system-IFPS-in-space',
-        destination:
-          '/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space',
-        permanent: true,
-      },
-      {
-        source:
-          '/blog/announcing-%E2%80%98watermelon%E2%80%99-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more',
-        destination:
-          '/blog/announcing-watermelon-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more',
-        permanent: true,
-      },
-      {
-        source:
-          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
-        destination:
-          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
-        permanent: true,
-      },
-      {
-        source:
-          '/blog/what%E2%80%99s-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23',
-        destination:
-          '/blog/whats-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23',
-        permanent: true,
-      },
-      {
-        source: '/board',
-        destination: '/about',
-        permanent: true,
-      },
-      {
-        source: '/careers',
-        destination: '/about',
-        permanent: true,
-      },
+      // PAGE REDIRECTS
+      { source: '/board', destination: '/about', permanent: true },
+      { source: '/careers', destination: '/about', permanent: true },
       {
         source: '/community',
         destination: '/ecosystem-explorer',
         permanent: true,
       },
-      {
-        source: '/contact',
-        destination: '/about',
-        permanent: true,
-      },
+      { source: '/contact', destination: '/about', permanent: true },
       {
         source: '/davos',
         destination: '/events/the-filecoin-sanctuary-davos-2024',
@@ -119,30 +54,13 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/ecosystem-projects/:path*',
-        destination: '/ecosystem-explorer/:path*',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem/project/bela-supernova',
-        destination:
-          '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
-        permanent: true,
-      },
-      {
-        source: '/ecosystem-explorer/solmedia/%E2%80%A6',
-        destination: '/ecosystem-explorer/solmedia',
-        permanent: true,
-      },
-      {
         source: '/ecosystem/%5C%22',
         destination: '/ecosystem-explorer',
         permanent: true,
       },
       {
-        source: '/filplus/%20%22Filecoin%20Plus%22',
-        destination:
-          '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
+        source: '/ecosystem-projects/:path*',
+        destination: '/ecosystem-explorer/:path*',
         permanent: true,
       },
       {
@@ -151,15 +69,21 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/filplus',
-        destination:
-          '/blog/the-growth-of-filecoin-plus-and-upcoming-notary-elections',
+        source: '/filplus/%20%22Filecoin%20Plus%22',
+        destination: '/filecoin-plus',
         permanent: true,
       },
+      { source: '/filplus', destination: '/filecoin-plus', permanent: true },
       {
         source: '/fips',
         destination:
           '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
+        permanent: true,
+      },
+      { source: '/get-involved', destination: '/', permanent: true },
+      {
+        source: '/governance/fips/:path*',
+        destination: '/governance',
         permanent: true,
       },
       {
@@ -167,39 +91,14 @@ const nextConfig = {
         destination: '/governance',
         permanent: true,
       },
+      { source: '/philosophy', destination: '/about', permanent: true },
+      { source: '/policy', destination: '/privacy-policy', permanent: true },
+      { source: '/public-data', destination: '/', permanent: true },
+      { source: '/public-data/:path*', destination: '/', permanent: true },
+      { source: '/publicdata/awards', destination: '/grants', permanent: true },
       {
-        source: '/get-involved',
+        source: '/research/research-text.htm',
         destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/governance/fips/:path*',
-        destination: '/governance',
-        permanent: true,
-      },
-      {
-        source: '/policy',
-        destination: '/privacy-policy',
-        permanent: true,
-      },
-      {
-        source: '/public-data',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/public-data/:path*',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/publicdata/awards',
-        destination: '/grants',
-        permanent: true,
-      },
-      {
-        source: '/philosophy',
-        destination: '/about',
         permanent: true,
       },
       {
@@ -207,19 +106,79 @@ const nextConfig = {
         destination: 'https://immunefi.com/bug-bounty/filecoin/',
         permanent: false,
       },
+      { source: '/team', destination: '/about', permanent: true },
+      { source: '/terms', destination: '/terms-of-use', permanent: true },
       {
-        source: '/terms',
-        destination: '/terms-of-use',
+        source: '/admin',
+        destination: '/admin/index.html',
+        permanent: true,
+      },
+
+      // BLOG POST REDIRECTS
+      {
+        source:
+          '/blog/announcing-%E2%80%98watermelon%E2%80%99-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more',
+        destination:
+          '/blog/announcing-watermelon-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more',
         permanent: true,
       },
       {
-        source: '/team',
-        destination: '/about',
+        source:
+          '/blog/deep-dive-on-messari%E2%80%99s-q1-filecoin-ecosystem-report',
+        destination: '/blog/deep-dive-on-messaris-q1-filecoin-ecosystem-report',
         permanent: true,
       },
       {
-        source: '/research/research-text.htm',
-        destination: '/',
+        source:
+          '/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        destination:
+          '/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/ecosystem-spotlight-ghostdrive%E2%80%99s-secure-decentralized-storage-now-on-mobile',
+        destination:
+          '/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/guest-post-if-the-library-of-alexandra-were-built-better',
+        destination:
+          '/blog/guest-post-if-the-library-of-alexandria-were-built-better',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/pilecoin-foundation-successfully-deploys-interflanetary-pile-system-IFPS-in-space',
+        destination:
+          '/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space',
+        permanent: true,
+      },
+      {
+        source:
+          '/blog/what%E2%80%99s-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23',
+        destination:
+          '/blog/whats-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23',
+        permanent: true,
+      },
+
+      // ECOSYSTEM PROJECTS REDIRECTS
+      {
+        source: '/ecosystem-explorer/solmedia/%E2%80%A6',
+        destination: '/ecosystem-explorer/solmedia',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem-explorer/bildo',
+        destination: '/ecosystem-explorer/bidlo',
+        permanent: true,
+      },
+      {
+        source: '/ecosystem/project/bela-supernova',
+        destination:
+          '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
         permanent: true,
       },
     ]
@@ -248,13 +207,7 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
-
-// Injected content via Sentry wizard below
-
-const { withSentryConfig } = require('@sentry/nextjs')
-
-module.exports = withSentryConfig(module.exports, {
+module.exports = withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -272,8 +225,7 @@ module.exports = withSentryConfig(module.exports, {
 
   // Uncomment to route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
   // This can increase your server load as well as your hosting bill.
-  // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-  // side errors will fail.
+  // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-side errors will fail.
   // tunnelRoute: "/monitoring",
 
   // Hides source maps from generated client bundles

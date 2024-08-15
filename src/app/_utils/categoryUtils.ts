@@ -1,3 +1,5 @@
+import { z } from 'zod'
+
 import {
   type CategoryMap,
   type CategorySetting,
@@ -52,7 +54,7 @@ export function getCategorySettings(collectionName: CMSCollectionName) {
 }
 
 export function getEventsCategorySettings() {
-  const eventSettings = getCategorySettings('events')
+  const eventSettings = getCategorySettings('event_entries')
   const { categorySettings, validCategoryOptions } = eventSettings
 
   return {
@@ -80,4 +82,15 @@ export function getCategoryLabel({
   const option = categoryOptions.find((option) => option.value === category)
 
   return option ? option.label : category
+}
+
+export function createCategorySchema(cmsCategories: Array<string>) {
+  if (cmsCategories.length === 0) {
+    return z.never()
+  } else if (cmsCategories.length === 1) {
+    return z.literal(cmsCategories[0])
+  } else {
+    const [first, ...rest] = cmsCategories
+    return z.enum([first, ...rest])
+  }
 }

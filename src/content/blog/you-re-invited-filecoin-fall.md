@@ -10,8 +10,6 @@ description:
   over the next few months."
 image:
   src: /assets/images/64423c054821268e6e8e743b_1-rdpz1p6lnwm1fnnk37urdw.png
-  alt:
-recommended-posts: []
 category: events
 seo:
   title: You're Invited to Filecoin Fall
@@ -40,7 +38,7 @@ Use the [promo code FFVIP](http://www.eventbrite.com/e/396630501507/?discount=FF
 
 **Explore Greener Solutions: Sustainable Blockchain Summit LATAM (Oct. 12)**
 
-Organized by the Filecoin Green team, the [Sustainable Blockchain Summit LATAM](https://sbs.tech/) seeks to catalyze projects that will better align the global economy with the natural world, and broaden the scope of our ambitions to encompass all planetary boundaries required to keep our world habitable. Join the world’s premiere forum at the intersection of Web3 and the biosphere, and help us solve these problems together.
+Organized by the Filecoin Green team, the Sustainable Blockchain Summit LATAM seeks to catalyze projects that will better align the global economy with the natural world, and broaden the scope of our ambitions to encompass all planetary boundaries required to keep our world habitable. Join the world’s premiere forum at the intersection of Web3 and the biosphere, and help us solve these problems together.
 
 **Let’s Cheers to 2 Years: Filecoin Mainnet Launch Anniversary**
 

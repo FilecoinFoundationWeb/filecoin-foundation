@@ -1,23 +1,40 @@
+const REQUEST_DENIED_STATUS_CODE = 999
+const CLIENT_ERROR_THRESHOLD = 400
+
 export function verifyLinks(path: string) {
   cy.visit(path)
 
   cy.get('a').each(($link) => {
     const href = $link.prop('href')
 
-    if (href && !href.includes('mailto:')) {
-      const linkUrl = new URL(href, window.location.origin)
-      const isExternal = linkUrl.origin !== window.location.origin
+    if (!href || href.includes('mailto:')) return
 
-      if (isExternal) {
-        cy.request({ url: href, failOnStatusCode: false }).then((response) => {
-          if (!response || response.status >= 400) {
-            let errorMessage = response
-              ? `Status code: ${response.status}`
-              : 'No response received or request timed out'
-            cy.log(`Broken link: ${href} - ${errorMessage}`)
-          }
-        })
-      }
+    const linkUrl = new URL(href, window.location.origin)
+    const isExternalLink = linkUrl.origin !== window.location.origin
+
+    if (isExternalLink) {
+      verifyExternalLink(href)
     }
   })
+}
+
+function verifyExternalLink(url: string) {
+  cy.request({ url, failOnStatusCode: false, timeout: 60000 }).then(
+    (response) => {
+      if (isClientOrServerError(response.status)) {
+        const errorMessage = getErrorMessage(response)
+        cy.log(`Broken link: ${url} - ${errorMessage}`)
+      }
+    },
+  )
+}
+
+function isClientOrServerError(status: number) {
+  return (
+    status >= CLIENT_ERROR_THRESHOLD && status !== REQUEST_DENIED_STATUS_CODE
+  )
+}
+
+function getErrorMessage(response: Cypress.Response<any>) {
+  return `Status code: ${response.status} (${response.statusText})`
 }

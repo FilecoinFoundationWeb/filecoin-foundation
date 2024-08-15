@@ -8,8 +8,6 @@ description:
   for community members.
 image:
   src: /assets/images/image-c-31.png
-  alt:
-recommended-posts: []
 category: events
 seo:
   title: Hack Away in Summer 2021
@@ -24,7 +22,7 @@ Below are the details on hackathons you can participate in this summer, plus som
 
 **Filecoin Grant Global Online Hackathon**
 
-A collaboration between Filecoin and hackathon organizer DoraHacks, the [Filecoin Grant Global Online Hackathon](https://www.eventbrite.com/e/share-115k-prizes-filecoin-grant-online-hackathon-may-1-july-18-registration-159309796891) supports early-stage developer projects that build next-generation decentralized protocols and applications involving Filecoin and IPFS. With an impressive assembly of sponsors, including [Filecoin Foundation](https://fil.org/), [Protocol Labs](https://protocol.ai/), [Textile](https://www.textile.io/), [IPFSForce](https://ipfser.org/), and FilSwan (link previously available but now unavailable), this hackathon has a massive prize pool of $115,000 USD split between all applicants that receive votes.
+A collaboration between Filecoin and hackathon organizer DoraHacks, the [Filecoin Grant Global Online Hackathon](https://www.eventbrite.com/e/share-115k-prizes-filecoin-grant-online-hackathon-may-1-july-18-registration-159309796891) supports early-stage developer projects that build next-generation decentralized protocols and applications involving Filecoin and IPFS. With an impressive assembly of sponsors, including [Filecoin Foundation](https://fil.org/), [Protocol Labs](https://protocol.ai/), [Textile](https://www.textile.io/), IPFSForce, and FilSwan (link previously available but now unavailable), this hackathon has a massive prize pool of $115,000 USD split between all applicants that receive votes.
 
 **NFT Vision Hack**
 

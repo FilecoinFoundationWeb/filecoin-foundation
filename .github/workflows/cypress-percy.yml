@@ -10,6 +10,11 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
 
+    env:
+      AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
+      PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -32,6 +37,4 @@ jobs:
           npx wait-on http://localhost:3000
 
       - name: Run Cypress Tests with Percy
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: npm run test
+        run: npm run test:critical

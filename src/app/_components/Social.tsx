@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
@@ -25,7 +25,7 @@ export function Social() {
               rel="noopener noreferrer"
               title={label}
               className={clsx(
-                'focus:brand-outline text-brand-100 hover:text-brand-400',
+                'text-brand-100 focus:brand-outline hover:text-brand-400',
                 touchTarget.class,
               )}
             >

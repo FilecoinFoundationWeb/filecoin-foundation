@@ -10,8 +10,6 @@ description:
   this event meant for the community and the future of the Orbit program.
 image:
   src: /assets/images/032224-orbit-austin.png
-  alt: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary
@@ -53,6 +51,6 @@ And apply to become a [Filecoin Orbit ambassador](https://airtable.com/appAGdqyY
 - April 16 - 19, 2024 - Token2049 Dubai Filecoin Orbit Meetup Event
 - May 29 - 31, 2024 - Consensus Filecoin Orbit Meetup Event
 - July 8 - 11, 2024 - FIL Brussels alongside EthCC
-- Sept 4 - 10, 2024 - FIL Seoul Network Base alongside Korea Blockchain Week
+- ~~Sept 4 - 10, 2024 - FIL Seoul Network Base alongside Korea Blockchain Week~~
 
 Find the full [Filecoin Foundation event schedule](https://fil.org/events/).

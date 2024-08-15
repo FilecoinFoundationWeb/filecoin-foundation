@@ -27,8 +27,10 @@
       "@/hooks/*": ["./src/app/_hooks/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/types/*": ["./src/app/_types/*"],
+      "@/schemas/*": ["./src/app/_schemas/*"],
       "@/utils/*": ["./src/app/_utils/*"],
-      "@/assets/*": ["./public/assets/*"]
+      "@/assets/*": ["./public/assets/*"],
+      "@/support/*": ["./cypress/support/*"]
     }
   },
   "include": [
@@ -37,7 +39,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/_types/**/*.d.ts",
-    "src/app/events/[slug]"
+    "src/app/events/[slug]",
+    "cypress/**/*.ts",
+    "src/app/ecosystem-explorer/project-form/services/github/config"
   ],
   "exclude": ["node_modules"]
 }

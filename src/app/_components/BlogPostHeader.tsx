@@ -2,11 +2,11 @@ import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagLabel'
 
-import { type BlogPostData } from '@/types/blogPostTypes'
+import type { BlogPostData } from '@/schemas/blogPostDataSchema'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { formatDate } from '@/utils/formatDate'
+import { formatDate } from '@/utils/dateUtils'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -25,7 +25,7 @@ export function BlogPostHeader({
     <header className="space-y-6">
       <div className="space-y-4">
         <TagLabel>
-          {getCategoryLabel({ collectionName: 'blog', category })}
+          {getCategoryLabel({ collectionName: 'blog_posts', category })}
         </TagLabel>
         <Heading tag="h1" variant="4xl">
           {title}
@@ -42,8 +42,8 @@ export function BlogPostHeader({
           fill
           priority
           quality={100}
-          src={image.src}
-          alt={image.alt}
+          src={image?.src || ''}
+          alt={image?.alt || ''}
           className="rounded-lg"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
           fallback={graphicsData.imageFallback}

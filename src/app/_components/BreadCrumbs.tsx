@@ -4,10 +4,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 import type { Route } from 'next'
 
 import { Icon } from '@/components/Icon'
+
+import { capitalize } from '@/utils/capitalize'
 
 import { PATHS } from '@/constants/paths'
 
@@ -18,7 +20,7 @@ export function BreadCrumbs() {
   const formatLabel = (path: string) => {
     let label = path
       .split('-')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word) => capitalize(word))
       .join(' ')
 
     const maxLength = 20
@@ -44,7 +46,7 @@ export function BreadCrumbs() {
           const label = isRoot ? PATHS.HOME.label : formatLabel(path)
 
           return (
-            <li key={href} className="inline-flex items-center gap-2.5 ">
+            <li key={href} className="inline-flex items-center gap-2.5">
               {!isRoot && (
                 <Icon
                   component={CaretRight}

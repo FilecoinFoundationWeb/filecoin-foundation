@@ -30,8 +30,8 @@ seo:
     and management.
 ---
 
-FNS established the foundational infrastructure for the FVM's Decentralized Identity (DID) track.
+FNS established the foundational infrastructure for the FVM’s Decentralized Identity (DID) track.
 
-FNS domains can be used as storage accounts, facilitating the promotion of IPFS and Filecoin. FNS innovates the usage scenarios of the DID track. FNS can be
+FNS domains can be used as storage accounts, facilitating the promotion of IPFS and Filecoin. FNS innovates the usage scenarios of the DID track.
 
-used as storage accounts. By integrating FNS with IPFS, genuine open-network applications and websites can be created. Users can store and host websites or applications on IPFS, using FNS for decentralized naming, thereby enhancing the advantages of decentralization in websites and applications.
+FNS can be used as storage accounts. By integrating FNS with IPFS, genuine open-network applications and websites can be created. Users can store and host websites or applications on IPFS, using FNS for decentralized naming, thereby enhancing the advantages of decentralization in websites and applications.

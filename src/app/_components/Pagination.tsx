@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 import { useDebounceCallback } from 'usehooks-ts'
 
 import { usePagination } from '@/hooks/usePagination'

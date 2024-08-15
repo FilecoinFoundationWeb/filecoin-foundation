@@ -11,8 +11,6 @@ description:
   on decentralization and its role in shaping the future of the internet.
 image:
   src: /assets/images/jenks-guo.png
-  alt: Jenks Guo Developer Advocacy Filecoin Foundation
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: Jenks Guo, Developer Advocate, Filecoin Foundation on Dweb Decoded

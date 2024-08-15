@@ -1,4 +1,4 @@
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 import { Button } from '@/components/Button'
 import {
@@ -41,36 +41,32 @@ const borderStyle = 'rounded-lg border border-brand-100'
 const imageSizes = buildImageSizeProp({ startSize: '100vw', lg: '490px' })
 
 function PageHeaderImage({ image }: Pick<PageHeaderProps, 'image'>) {
+  if (!image) return null
+
   const isDynamicImage = 'src' in image
   const isStaticImage = 'data' in image
 
-  if (isStaticImage) {
-    return (
-      <StaticImage
-        {...image}
-        priority
-        quality={100}
-        className={clsx(aspectRatioStyle, borderStyle)}
-        sizes={imageSizes}
-      />
-    )
+  if (!isDynamicImage && !isStaticImage) return null
+
+  const commonProps = {
+    priority: true,
+    quality: 100,
+    sizes: imageSizes,
+    className: clsx(aspectRatioStyle, borderStyle),
   }
 
-  if (isDynamicImage) {
-    return (
-      <div className={clsx('relative', aspectRatioStyle)}>
-        <DynamicImage
-          {...image}
-          fill
-          priority
-          quality={100}
-          className={clsx('h-full w-full', borderStyle)}
-          sizes={imageSizes}
-          fallback={image.fallback}
-        />
-      </div>
-    )
-  }
+  const renderImage = (ImageComponent: React.ElementType) => (
+    <div className={clsx('relative', aspectRatioStyle)}>
+      <ImageComponent
+        {...image}
+        fill={isDynamicImage}
+        {...commonProps}
+        className={clsx('h-full w-full', borderStyle)}
+      />
+    </div>
+  )
+
+  return isDynamicImage ? renderImage(DynamicImage) : renderImage(StaticImage)
 }
 
 export function PageHeader({

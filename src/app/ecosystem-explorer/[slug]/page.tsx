@@ -12,16 +12,19 @@ import { TextLink } from '@/components/TextLink'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/formatDate'
+import { formatDate } from '@/utils/dateUtils'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import {
   type DynamicPathValues,
   PATHS,
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
 } from '@/constants/paths'
-import { graphicsData } from '@/data/graphicsData'
 
+import { VideoSection } from './components/VideoSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
@@ -46,6 +49,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const categoryData = getCategoryDataFromDirectory(
     ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   )
+  const subcategoryData = getCategoryDataFromDirectory(
+    ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+  )
 
   const {
     image,
@@ -59,11 +65,12 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     updatedOn,
     newsUpdate,
     category,
+    subcategories,
   } = data
 
   return (
     <article>
-      <header className="mb-16">
+      <header className="mb-8 space-y-10 md:space-y-16">
         <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
           <DynamicImage
             fill
@@ -84,33 +91,26 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             }}
           />
         </div>
+        <div className="flex flex-wrap gap-2">
+          <TagLabel borderColor="brand-100">{categoryData[category]}</TagLabel>
+          {subcategories.map((subcategory, i) => (
+            <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
+          ))}
+        </div>
       </header>
-
       <div className="flex flex-wrap justify-between gap-8">
-        <div className="max-w-readable">
-          <div className="mb-8 space-y-6">
+        <div className="max-w-readable space-y-8">
+          <div className="space-y-6">
             <Heading tag="h1" variant="4xl">
               {title}
             </Heading>
             {content && <MarkdownContent>{content}</MarkdownContent>}
           </div>
 
-          {videoUrl && (
-            <div className="mb-8 aspect-video">
-              <iframe
-                allowFullScreen
-                width="100%"
-                height="100%"
-                aria-label="Embedded YouTube Video"
-                src={videoUrl}
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-              />
-            </div>
-          )}
+          {videoUrl && <VideoSection videoUrl={videoUrl} />}
 
           {newsUpdate && (
-            <div className="prose mb-8">
+            <div className="prose">
               <span className="not-prose text-brand-300">
                 <Heading tag="h3" variant="xl">
                   Latest Update
@@ -124,8 +124,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
               )}
             </div>
           )}
-
-          <TagLabel>{categoryData[category]}</TagLabel>
         </div>
 
         <ul className="mt-4 flex flex-col gap-5">

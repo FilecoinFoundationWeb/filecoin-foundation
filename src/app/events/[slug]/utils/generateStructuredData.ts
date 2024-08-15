@@ -1,10 +1,14 @@
-import { Event, WithContext, Place, VirtualLocation } from 'schema-dts'
+import { Event, Place, VirtualLocation, WithContext } from 'schema-dts'
 
-import { EventData } from '@/types/eventTypes'
+import type { EventData } from '@/schemas/eventDataSchema'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
-import { SCHEMA_CONTEXT_URL } from '@/constants/structuredDataConstants'
+import {
+  SCHEMA_CONTEXT_URL,
+  SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL,
+  SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL,
+} from '@/constants/structuredDataConstants'
 
 type LocationType = Place | VirtualLocation | undefined
 
@@ -54,15 +58,21 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     slug,
   })
 
+  const eventAttendanceMode =
+    location === 'Virtual'
+      ? SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL
+      : SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL
+
   return {
     '@context': SCHEMA_CONTEXT_URL,
     '@type': 'Event',
+    eventAttendanceMode,
     name: title,
     description,
-    startDate,
-    endDate,
+    startDate: startDate.toISOString(),
+    endDate: endDate && endDate.toISOString(),
     ...(eventLocation && { location: eventLocation }),
-    image: image.src,
+    image: image?.src,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }
 }
