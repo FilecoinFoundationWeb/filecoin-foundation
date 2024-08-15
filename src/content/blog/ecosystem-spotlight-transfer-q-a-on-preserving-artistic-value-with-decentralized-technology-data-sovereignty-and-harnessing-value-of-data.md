@@ -12,8 +12,6 @@ description: >
   ways.
 image:
   src: /assets/images/020124-transfer.png
-  alt: Filecoin Foundation TRANSFER Blog Post
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: Filecoin Foundation TRANSFER Spotlight

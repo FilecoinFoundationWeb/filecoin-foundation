@@ -8,8 +8,6 @@ description: >-
   Mainnet is secure and resilient.
 image:
   src: /assets/images/64423a911fe00b2cb076101a_1-_gcjaae5jjlt5kkzewfd6g.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Filecoin Foundation Announces the Venushub Platform

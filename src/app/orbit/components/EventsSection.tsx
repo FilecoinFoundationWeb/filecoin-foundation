@@ -11,7 +11,7 @@ import { Search } from '@/components/Search'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
-import { formatDate } from '@/utils/formatDate'
+import { formatDate } from '@/utils/dateUtils'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

@@ -6,11 +6,9 @@ description: >-
   enable large organizations to seamlessly store files on the Filecoin network.
 image:
   src: /assets/images/64423ae74e4c68130ff45382_1-tjiihglruqcaybnpwmudmg.png
-  alt:
 updated-on: "2023-04-21T07:27:36.061Z"
 created-on: "2023-04-21T07:27:36.061Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: ecosystem
 seo:
   title: "Filecoin Storage Provider Spotlight: Seal Storage Technology"

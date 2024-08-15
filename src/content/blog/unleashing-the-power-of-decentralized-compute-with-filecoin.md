@@ -12,8 +12,6 @@ description:
   shared pool of resources without being dependent on a single provider.
 image:
   src: /assets/images/decentralized-compute-v2.png
-  alt: "Unleashing the Power of Decentralized Compute with Filecoin"
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

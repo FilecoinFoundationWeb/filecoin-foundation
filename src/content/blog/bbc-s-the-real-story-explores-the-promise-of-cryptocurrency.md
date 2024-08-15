@@ -8,8 +8,6 @@ description:
   Shah on The Real Story to discuss the promise of Filecoin and the future of cryptocurrency.
 image:
   src: /assets/images/64423a958d1be740f4ce6485_1-idr5jnytk_i2rab2ggn9uq.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: "BBC's The Real Story: The Promise of Cryptocurrency"
