@@ -9,8 +9,6 @@ description:
   public infrastructure and how communities can govern their own digital spaces.
 image:
   src: /assets/images/0928-filecoinfortnight.png
-  alt:
-recommended-posts: []
 category: ecosystem
 seo:
   title: The Future of Digital Public Infrastructure in Five Minutes

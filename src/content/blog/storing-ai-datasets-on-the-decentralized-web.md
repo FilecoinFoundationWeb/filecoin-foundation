@@ -11,8 +11,6 @@ description: >-
   facilitate investment, with a special focus on underserved communities.
 image:
   src: /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
-  alt:
-recommended-posts: []
 category: use-cases
 seo:
   title: Storing AI Datasets on the Decentralized Web

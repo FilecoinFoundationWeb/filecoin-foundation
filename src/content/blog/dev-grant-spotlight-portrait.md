@@ -5,11 +5,9 @@ description: >-
   their blockchain address into a website.
 image:
   src: /assets/images/64423ab50425d36d72f2895f_1-brm0bxgpfk7-tr5tfyq-la.png
-  alt:
 updated-on: "2023-04-21T07:26:45.129Z"
 created-on: "2023-04-21T07:26:45.129Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: reports
 seo:
   title: "Dev Grant Spotlight: Portrait"

@@ -9,8 +9,6 @@ description:
   of the Filecoin ecosystem in crowdsourcing solutions for the storage provider community.
 image:
   src: /assets/images/image-c-08.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Introducing the Storage Provider Bounty Board

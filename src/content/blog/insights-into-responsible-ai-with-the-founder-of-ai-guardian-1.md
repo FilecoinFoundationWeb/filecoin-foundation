@@ -15,8 +15,6 @@ description: >-
   offering unparalleled resilience, scale, and cost savings.
 image:
   src: /assets/images/chris-hackney.png
-  alt:
-recommended-posts: []
 seo:
   title: Insights into Responsible AI with AI Guardian Founder
   description:

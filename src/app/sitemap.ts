@@ -66,10 +66,7 @@ export default function sitemap() {
   }))
 
   const blogPosts = getBlogPostsData()
-  const dynamicBlogRoutes = generateDynamicRoutesLegacy(
-    blogPosts,
-    PATHS.BLOG.path,
-  )
+  const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
   const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutesLegacy(
