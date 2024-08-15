@@ -9,8 +9,6 @@ description:
   ND Labs and supported by Filecoin Foundation.
 image:
   src: /assets/images/blogheader-filhk24recap-1-.png
-  alt: Filecoin Ecosystem at FIL Hong Kong
-recommended-posts: []
 seo:
   noindex: false
   twitter:title:

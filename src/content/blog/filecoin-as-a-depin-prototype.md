@@ -9,8 +9,6 @@ description:
   re-architecting the Internet's physical and digital backbone.
 image:
   src: /assets/images/022624-depin.png
-  alt: Filecoin DePIN
-recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

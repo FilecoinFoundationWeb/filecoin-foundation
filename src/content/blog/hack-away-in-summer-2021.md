@@ -8,8 +8,6 @@ description:
   for community members.
 image:
   src: /assets/images/image-c-31.png
-  alt:
-recommended-posts: []
 category: events
 seo:
   title: Hack Away in Summer 2021

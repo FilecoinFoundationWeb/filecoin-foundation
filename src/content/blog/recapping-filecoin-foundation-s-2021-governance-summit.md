@@ -9,8 +9,6 @@ description:
   sprints.
 image:
   src: /assets/images/image-c-18.png
-  alt:
-recommended-posts: []
 category: events
 seo:
   title: Recap of Filecoin Foundation's 2021 Governance Summit

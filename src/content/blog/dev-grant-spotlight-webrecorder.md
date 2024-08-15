@@ -11,8 +11,6 @@ description:
   to create web archives, from a single to running larger crawls in the cloud.
 image:
   src: /assets/images/image-c-14.png
-  alt:
-recommended-posts: []
 category: reports
 seo:
   title: "Dev Grant Spotlight: Webrecorder"

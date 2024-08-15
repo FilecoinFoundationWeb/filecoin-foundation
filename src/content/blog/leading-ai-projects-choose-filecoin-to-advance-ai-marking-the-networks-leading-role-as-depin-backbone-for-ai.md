@@ -9,7 +9,6 @@ description: "Network announcements include collaborations with SingularityNET,
   Theoriq, Bagel, and Nuklai."
 image:
   src: /assets/images/120624-brussels.jpg
-  alt: FIL Brussels logo on black background.
 seo:
   twitter:
     title: summary
