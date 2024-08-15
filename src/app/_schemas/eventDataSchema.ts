@@ -11,7 +11,7 @@ const { validCategoryOptions } = getEventsCategorySettings()
 
 const categorySchema = createCategorySchema(validCategoryOptions)
 
-export const EventDataSchema = DynamicBaseDataSchema.extend({
+export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string().optional(),
@@ -20,5 +20,3 @@ export const EventDataSchema = DynamicBaseDataSchema.extend({
   startDate: z.coerce.date(),
   endDate: z.coerce.date().optional(),
 })
-
-export type EventData = z.infer<typeof EventDataSchema>

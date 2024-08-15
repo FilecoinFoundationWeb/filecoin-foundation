@@ -2,7 +2,7 @@ import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagLabel'
 
-import type { BlogPostData } from '@/schemas/blogPostDataSchema'
+import type { BlogPostData } from '@/types/blogPostType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'

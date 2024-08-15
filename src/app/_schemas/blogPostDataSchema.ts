@@ -11,11 +11,9 @@ const { validCategoryOptions } = getCategorySettings('blog_posts')
 
 const categorySchema = createCategorySchema(validCategoryOptions)
 
-export const BlogPostDataSchema = DynamicBaseDataSchema.extend({
+export const BlogPostFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string(),
   content: z.string(),
 })
-
-export type BlogPostData = z.infer<typeof BlogPostDataSchema>

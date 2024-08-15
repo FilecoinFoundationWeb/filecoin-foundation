@@ -1,9 +1,8 @@
-import { BlogPostDataSchema } from '@/schemas/blogPostDataSchema'
+import { BlogPostFrontMatterSchema } from '@/schemas/blogPostDataSchema'
 
 export function convertMarkdownToBlogPostData(data: Record<string, any>) {
-  const result = BlogPostDataSchema.safeParse({
+  const result = BlogPostFrontMatterSchema.safeParse({
     title: data.title,
-    slug: data.slug,
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],

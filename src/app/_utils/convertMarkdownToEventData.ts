@@ -1,9 +1,8 @@
-import { EventDataSchema } from '@/schemas/eventDataSchema'
+import { EventFrontMatterSchema } from '@/schemas/eventDataSchema'
 
 export function convertMarkdownToEventData(data: Record<string, any>) {
-  const result = EventDataSchema.safeParse({
+  const result = EventFrontMatterSchema.safeParse({
     title: data.title,
-    slug: data.slug,
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
