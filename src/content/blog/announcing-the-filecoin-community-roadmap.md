@@ -9,6 +9,8 @@ description: >-
   implementations.
 image:
   src: /assets/images/64423a8ab068b0286f5c29dc_1-puuomuuoq9o-ezxjtdpppw.png
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Filecoin Community Roadmap Announcement

@@ -302,6 +302,12 @@ collections:
           - "video"
           - "audio"
         required: false
+      - name: "recommended-posts"
+        label: "Recommended Posts"
+        widget: "hidden"
+        required: false
+        collection: "blog_posts"
+        value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
           - "title"

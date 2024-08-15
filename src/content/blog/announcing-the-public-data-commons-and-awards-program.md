@@ -9,6 +9,8 @@ description: >-
   government and official organizations across the globe.
 image:
   src: /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Public Data Commons and Awards Program Announcement

@@ -12,6 +12,10 @@ description:
   network into a new era of adoption and growth."
 image:
   src: /assets/images/ethdenver.png
+  alt:
+    "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
+    the Community"
+recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

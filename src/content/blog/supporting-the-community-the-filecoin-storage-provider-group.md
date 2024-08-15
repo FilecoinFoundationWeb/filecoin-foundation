@@ -9,6 +9,8 @@ description:
   Filecoin and Web3 ecosystems. "
 image:
   src: /assets/images/image-c-04.png
+  alt:
+recommended-posts: []
 category: ecosystem
 seo:
   title: "Supporting the Community: The Filecoin Storage Provider Group"

@@ -1,8 +1,7 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
+import { BlogPostData } from '@/types/blogPostTypes'
 import { SeoMetadata } from '@/types/metadataTypes'
-
-import type { BlogPostData } from '@/schemas/blogPostDataSchema'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
@@ -32,7 +31,7 @@ export function generateStructuredData(
           '@type': 'BlogPosting',
           headline: post.title,
           description: post.description,
-          image: post.image && post.image.src,
+          image: post.image.src,
           url: `${BASE_URL}${PATHS.BLOG.path}/${post.slug}`,
           author: {
             '@type': 'Organization',

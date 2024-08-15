@@ -5,9 +5,11 @@ description: >-
   planned to celebrate this first year in orbit!
 image:
   src: /assets/images/64423b04fa70d18281705693_0-0y1ex6vkr4htxclc.png
+  alt:
 updated-on: "2023-04-21T07:28:04.262Z"
 created-on: "2023-04-21T07:28:04.262Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: events
 seo:
   title: Celebrate Filecoin Mainnet's One-Year Milestone with Us

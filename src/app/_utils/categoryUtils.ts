@@ -84,13 +84,20 @@ export function getCategoryLabel({
   return option ? option.label : category
 }
 
-export function createCategorySchema(cmsCategories: Array<string>) {
-  if (cmsCategories.length === 0) {
+export function createCategorySchema(
+  validCategoryOptions: string[],
+): z.ZodTypeAny {
+  if (validCategoryOptions.length === 0) {
     return z.never()
-  } else if (cmsCategories.length === 1) {
-    return z.literal(cmsCategories[0])
+  } else if (validCategoryOptions.length === 1) {
+    return z.literal(validCategoryOptions[0])
   } else {
-    const [first, ...rest] = cmsCategories
-    return z.enum([first, ...rest])
+    return z.union(
+      validCategoryOptions.map((option) => z.literal(option)) as [
+        z.ZodLiteral<string>,
+        z.ZodLiteral<string>,
+        ...z.ZodLiteral<string>[],
+      ],
+    )
   }
 }

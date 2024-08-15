@@ -42,10 +42,7 @@ export function FeaturedBlogPosts() {
               text: 'Learn More',
             }}
             image={{
-              alt: '',
-              ...(image || {
-                ...graphicsData.imageFallback,
-              }),
+              ...image,
               fallback: graphicsData.imageFallback,
               sizes: buildImageSizeProp({
                 startSize: '100vw',

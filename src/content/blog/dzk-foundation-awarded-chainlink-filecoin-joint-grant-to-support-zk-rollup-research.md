@@ -8,9 +8,11 @@ description: >-
   decentralized oracles and Filecoin decentralized storage.
 image:
   src: /assets/images/64423abce3c08f49114f50eb_1-9utuc70k3mbyvlsllf7dqa.png
+  alt:
 updated-on: "2023-04-21T07:26:52.479Z"
 created-on: "2023-04-21T07:26:52.479Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: news
 seo:
   title: DZK Foundation Awarded Grant for ZK-Rollup Research

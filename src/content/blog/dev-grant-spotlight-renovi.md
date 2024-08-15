@@ -9,6 +9,8 @@ description:
   develop, and implement their Web3 strategies.
 image:
   src: /assets/images/image-c-11.png
+  alt:
+recommended-posts: []
 category: reports
 seo:
   title: "Dev Grant Spotlight: Renovi"

@@ -7,9 +7,11 @@ description: >-
   understanding of decentralized technology
 image:
   src: /assets/images/64423ac8ef619d74dcb60e37_1-dvxhahnhu5a5qk3xidlxga.webp
+  alt:
 updated-on: "2023-04-21T07:27:04.336Z"
 created-on: "2023-04-21T07:27:04.336Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: news
 seo:
   title:

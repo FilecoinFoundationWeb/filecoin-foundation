@@ -8,6 +8,8 @@ description: >-
   surveying stakeholders on improvement proposals and other initiatives.
 image:
   src: /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
+  alt:
+recommended-posts: []
 category: news
 seo:
   title: Thank You for Participating in FIP-0014

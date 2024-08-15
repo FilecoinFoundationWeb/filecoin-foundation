@@ -12,6 +12,8 @@ description:
   This report also provides additional details on FF’s annual budget.
 image:
   src: /assets/images/022624-ff-anualreport.png
+  alt: "Filecoin Foundation 2023 Annual Report"
+recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

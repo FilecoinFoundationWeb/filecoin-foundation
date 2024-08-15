@@ -8,6 +8,8 @@ description: >-
   would serve as the long-term governance body for the Filecoin ecosystem.
 image:
   src: /assets/images/64423bfbca39dd7d4d1f170f_1-mbcuqyncw-uoyzwsbrapqw.png
+  alt:
+recommended-posts: []
 category: ecosystem
 seo:
   title: The Foundation's Roles in the Filecoin Ecosystem

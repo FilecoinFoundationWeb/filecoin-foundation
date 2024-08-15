@@ -13,6 +13,8 @@ description:
   IPFS protocol designed for space communications.
 image:
   src: /assets/images/01-lockheed.png
+  alt: IPFS in Space
+recommended-posts: []
 seo:
   noindex: false
   twitter:title: summary

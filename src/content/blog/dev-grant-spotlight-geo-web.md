@@ -6,9 +6,11 @@ description: >-
   reality (AR) content.
 image:
   src: /assets/images/64423aafa6ec4151d52a3dc9_0-eczvdfkkiozsdvgv.jpeg
+  alt:
 updated-on: "2023-04-21T07:26:40.008Z"
 created-on: "2023-04-21T07:26:40.008Z"
 published-on: "2023-04-21T07:33:56.200Z"
+recommended-posts: []
 category: reports
 seo:
   title: "Dev Grant Spotlight: Geo Web"

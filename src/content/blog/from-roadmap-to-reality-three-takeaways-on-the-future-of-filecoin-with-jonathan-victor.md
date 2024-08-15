@@ -13,6 +13,8 @@ description:
   Victor, Ecosystem Lead at Protocol Labs.
 image:
   src: /assets/images/jonathan-victor.png
+  alt: From Roadmap to Reality. DWeb Decoded podcast with Jonathan Victor
+recommended-posts: []
 seo:
   title: "From Roadmap to Reality: Future of Filecoin with Jonathan Victor"
   description:
