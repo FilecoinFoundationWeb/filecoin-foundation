@@ -1,43 +1,14 @@
 import { useMemo } from 'react'
 
+import { isBefore } from 'date-fns'
+
 import { UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
 import type { EventData } from '@/types/eventDataType'
 
-import { isDateValid } from '@/utils/dateUtils'
+import { getUTCMidnightToday } from '@/utils/dateUtils'
 
 import { pastEventsSetting } from '@/constants/categoryConstants'
-
-function getUTCMidnightToday(): Date {
-  const today = new Date()
-  return new Date(
-    Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
-      0,
-      0,
-      0,
-      0,
-    ),
-  )
-}
-
-function filterByPastEvents(entry: EventData): boolean {
-  const today = getUTCMidnightToday()
-  const { startDate, endDate, slug } = entry
-
-  if (endDate && !isDateValid(endDate)) {
-    throw new Error(`Invalid endDate provided for event: ${slug}`)
-  }
-
-  if (!isDateValid(startDate)) {
-    throw new Error(`Invalid startDate provided for event: ${slug}`)
-  }
-
-  const eventDate = endDate ? new Date(endDate) : new Date(startDate)
-  return eventDate < today
-}
 
 export function useEventsCategory(props: UseCategoryProps<EventData>) {
   const { entries, searchParams, validCategoryOptions } = props
@@ -71,4 +42,12 @@ export function useEventsCategory(props: UseCategoryProps<EventData>) {
     categorizedResults: updatedCategorizedResults,
     categoryCounts: updatedCategoryCounts,
   }
+}
+
+function filterByPastEvents(entry: EventData) {
+  const today = getUTCMidnightToday()
+  const { startDate, endDate } = entry
+  const eventDate = endDate || startDate
+
+  return isBefore(eventDate, today)
 }

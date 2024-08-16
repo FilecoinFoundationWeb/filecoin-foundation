@@ -8,24 +8,10 @@ export function getBlogPostMetaData(publishedOn?: BlogPostData['publishedOn']) {
 }
 
 export function getEventMetaData(event: EventData) {
-  if (!event.startDate) {
-    return []
-  }
-
   const { startDate, endDate, location } = event
-
   const formattedStartDate = formatDate(startDate)
-  const formattedEndDate = endDate ? formatDate(endDate) : null
+  const formattedEndDate = endDate ? ` - ${formatDate(endDate)}` : ''
+  const formattedDate = `${formattedStartDate}${formattedEndDate}`
 
-  const metaDataContent = [formattedStartDate]
-
-  if (formattedEndDate) {
-    metaDataContent[0] += ` - ${formattedEndDate}`
-  }
-
-  if (location) {
-    metaDataContent.push(location)
-  }
-
-  return metaDataContent
+  return location ? [formattedDate, location] : [formattedDate]
 }

@@ -1,27 +1,26 @@
-import { isValid, format, parseISO } from 'date-fns'
+import { format } from 'date-fns'
 
-export function isDateValid(date: string | Date): boolean {
-  if (typeof date === 'string') {
-    return isValid(parseISO(date))
-  }
-  return isValid(date)
+export function formatDate(date: Date) {
+  return format(date, 'MMM d, yyyy')
 }
 
-export function formatDate(dateString: string | Date): string {
-  let date: Date
-  if (typeof dateString === 'string') {
-    date = parseISO(dateString)
-  } else {
-    date = dateString
-  }
+export function formatDateComponentsFromISO(isoDateString: string) {
+  const date = new Date(isoDateString)
 
-  if (!isDateValid(date)) {
-    throw new Error(`Invalid date provided: ${dateString}`)
+  return {
+    day: format(date, 'd'),
+    month: format(date, 'MMM'),
+    time: format(date, 'HH:mm'),
   }
-
-  return format(date, 'MMM d, yyyy')
 }
 
 export function getTodayISO() {
   return format(new Date(), 'yyyy-MM-dd')
+}
+
+export function getUTCMidnightToday() {
+  const now = new Date()
+  return new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+  )
 }
