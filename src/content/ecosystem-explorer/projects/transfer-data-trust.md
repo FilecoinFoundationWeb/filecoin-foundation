@@ -1,8 +1,8 @@
 ---
 title: "TRANSFER Data Trust"
-created-on: "2024-02-01T15:51:35.125Z"
-updated-on: "2024-02-01T15:51:35.133Z"
-published-on: "2024-02-01T15:51:35.145Z"
+created-on: 2024-02-01T15:51:35.125Z
+updated-on: 2024-02-01T15:51:35.133Z
+published-on: 2024-02-01T15:51:35.145Z
 description:
   "TRANSFER Data Trust is a speculative design project to build an automated,
   non-profit cooperative trust powered by FVM."
@@ -16,13 +16,10 @@ tech:
   - "filecoin"
 image:
   src: /assets/images/transfer_logo_white.png
-  alt: "TRANSFER Data Trust Logo"
 website: "http://transfer.art"
 repo: "https://github.com/TRANSFERArchive"
 twitter: "https://twitter.com/transfergallery/"
-video-url:
-year-joined: "2024-02-01T15:51:35.152Z"
-news-update:
+year-joined: 2024-02-01T15:51:35.152Z
 featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data/"
 subcategories:
   - data-storage-management

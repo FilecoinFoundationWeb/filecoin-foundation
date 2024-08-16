@@ -13,14 +13,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/hashgaurd_logo_white.png
-  alt: Hashguard
 website: https://hashguard.io/
-featured-content:
-repo:
 twitter: https://twitter.com/hashguard_/
-video-url:
 year-joined: 2022-09-07T14:14:44.368000Z
-news-update:
 subcategories:
   - infrastructure
 seo:

@@ -15,14 +15,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/easier-data-initiative.png
-  alt: EASIER Data Initiative Logo
 website: https://easierdata.org/
 featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
-repo:
 twitter: https://twitter.com/easierdataorg
-video-url:
 year-joined: 2022-10-12T20:29:27.704000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

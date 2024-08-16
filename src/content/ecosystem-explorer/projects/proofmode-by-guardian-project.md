@@ -1,8 +1,8 @@
 ---
 title: ProofMode by Guardian Project
-created-on: "2024-02-27T19:57:29.836Z"
-updated-on: "2024-02-27T19:57:29.845Z"
-published-on: "2024-02-27T19:57:29.861Z"
+created-on: 2024-02-27T19:57:29.836Z
+updated-on: 2024-02-27T19:57:29.845Z
+published-on: 2024-02-27T19:57:29.861Z
 description:
   "Open-source mobile camera app, toolkit and protocol that adds verifiable
   digital proof to photos and video at the point of capture."
@@ -15,14 +15,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/proofmode.png
-  alt: ProofMode by Guardian Project
 website: "https://proofmode.org"
 featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"
 repo: "https://github.com/guardianproject/proofmode-android "
 twitter: "https://twitter.com/guardianproject"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

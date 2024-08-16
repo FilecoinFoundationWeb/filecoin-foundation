@@ -5,7 +5,6 @@ updated-on: 2024-04-05T00:07:23.555Z
 published-on: 2024-04-05T00:07:23.578Z
 image:
   src: /assets/images/dvol.png
-  alt: DVol Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -15,11 +14,7 @@ description: Innovative Tokenized Structured Products for On-chain Assets
 website: https://www.dvol.finance/
 tech:
   - filecoin
-repo: null
-news-update: null
-featured-content: null
 twitter: https://twitter.com/dvolfinance
-video-url: null
 year-joined: 2024-04-05T00:07:23.591Z
 seo:
   title: DVol

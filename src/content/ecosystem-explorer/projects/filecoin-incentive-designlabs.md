@@ -17,14 +17,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/logo-alpha.png
-  alt: Filecoin Incentive DesignLabs Logo
-featured-content:
 website: https://fidl.tech
 repo: https://github.com/fidlabs
-twitter:
-video-url:
 year-joined: 2024-05-16T14:44:42.714000Z
-news-update:
 subcategories:
   - developer-tools
 seo:

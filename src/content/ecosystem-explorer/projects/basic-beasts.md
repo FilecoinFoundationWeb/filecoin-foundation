@@ -5,7 +5,6 @@ updated-on: 2024-03-29T21:36:57.674Z
 published-on: 2024-03-29T21:36:57.674Z
 image:
   src: /assets/images/basic-beasts-logo.webp
-  alt: ""
 category: media-entertainment
 subcategories:
   - arts-collectibles-nfts
@@ -15,12 +14,8 @@ description: A fully on-chain interactive Pokémon-inspired NFT collectibles gam
 website: https://www.basicbeasts.io/
 tech:
   - ipfs
-repo: null
-featured-content: null
 twitter: https://twitter.com/basicbeastsnft
-video-url: null
 year-joined: 2024-03-29T21:28:48.611Z
-news-update: null
 seo:
   title: Basic Beasts
   description: Basic Beasts creates NFT-based collectibles on the Filecoin network.

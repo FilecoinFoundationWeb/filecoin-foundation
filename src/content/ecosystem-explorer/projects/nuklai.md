@@ -5,7 +5,6 @@ updated-on: 2024-07-08T10:11:00.000Z
 published-on: 2024-07-08T10:11:00.000Z
 image:
   src: /assets/images/nuklai.png
-  alt: Nuklai Logo
 category: artificial-intelligence
 subcategories:
   - artificial-productivity-utilities
@@ -17,9 +16,6 @@ tech:
 repo: https://github.com/Nuklai
 twitter: https://x.com/NuklaiData
 year-joined: 2024-07-08T10:11:00.000Z
-news-update: null
-video-url: null
-featured-content: null
 seo:
   twitter:
     title: summary

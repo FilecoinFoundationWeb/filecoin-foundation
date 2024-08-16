@@ -13,14 +13,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/nd-logo-1-.png
-  alt: ND LABS Logo
 website: https://www.ndlabs.io/#/
-featured-content:
-repo:
 twitter: https://twitter.com/imNDLABS
-video-url:
 year-joined: 2022-03-01T15:02:57.607000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

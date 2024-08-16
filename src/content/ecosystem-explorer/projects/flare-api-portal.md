@@ -5,7 +5,6 @@ updated-on: 2024-04-05T13:18:56.169Z
 published-on: 2024-04-05T13:18:56.214Z
 image:
   src: /assets/images/flare.png
-  alt: Flare API Portal Logo
 category: tooling-productivity
 subcategories:
   - developer-tools
@@ -20,9 +19,6 @@ description: The API Portal from Flare Labs serving the Flare Networks community
 website: https://api-portal.flare.network
 tech:
   - filecoin
-repo: null
-news-update: null
-featured-content: null
 twitter: https://twitter.com/APIPortal
 video-url: https://www.youtube.com/embed/mBTyTwh-Wzo
 year-joined: 2024-04-05T13:18:56.264Z

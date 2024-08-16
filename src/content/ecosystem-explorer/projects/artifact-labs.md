@@ -1,8 +1,8 @@
 ---
 title: Artifact Labs
-created-on: "2024-01-04T22:40:24.120Z"
-updated-on: "2024-01-05T21:35:36.831Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:24.120Z
+updated-on: 2024-01-05T21:35:36.831Z
+published-on: 2024-01-11T13:26:59.787Z
 description: "Artifact Labs preserves and connects culture and history on the blockchain."
 category: media-entertainment
 tags:
@@ -12,14 +12,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.png
-  alt: Artifact Labs Logo
 website: "https://www.artifactlabs.com"
 featured-content: "https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/"
 repo: "https://github.com/ArtifactLabsOfficial/EIPs"
 twitter: "https://twitter.com/ArtifactLabs_"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - arts-collectibles-nfts
 seo:

@@ -14,14 +14,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/6607367ee29bf508686a1043_metapals.png
-  alt: MetaPals Logo
-featured-content:
 website: https://metapals.pet/
-repo:
-twitter:
-video-url:
 year-joined: 2024-03-29T21:28:53.034000Z
-news-update:
 subcategories:
   - dapp
 seo:

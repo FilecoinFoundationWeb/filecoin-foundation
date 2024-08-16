@@ -11,16 +11,8 @@ tags:
 tech:
   - ipfs
   - filecoin
-image:
-  src:
-  alt: E-IPFS Logo
-featured-content:
 website: https://e-ipfs.web.app/
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-05T00:10:47.116000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

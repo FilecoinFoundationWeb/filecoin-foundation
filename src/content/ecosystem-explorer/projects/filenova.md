@@ -5,7 +5,6 @@ updated-on: 2024-04-24T19:39:19.923Z
 published-on: 2024-04-24T19:39:19.935Z
 image:
   src: /assets/images/filenova.png
-  alt: Filenova Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -16,10 +15,6 @@ website: https://filenova.org/
 tech:
   - filecoin
 repo: https://github.com/Filenova
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-04-24T19:39:19.948Z
 seo:
   title: FileNova

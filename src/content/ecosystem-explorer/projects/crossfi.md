@@ -16,16 +16,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/crossfi_logo_white.png
-  alt: CrossFi Logo
 website: "https://crossfimain.com/"
-featured-content:
-repo:
 twitter: "https://twitter.com/globalcrossfi/"
-video-url:
 year-joined: 2024-01-17T14:44:30.896000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: CrossFi
   description: CrossFi offers decentralized finance solutions for cross-chain interoperability.

@@ -18,14 +18,11 @@ tech:
   - ipfs
 image:
   src: /assets/images/filemarket_logo_white.png
-  alt: FileMarket Logo
 website: "https://filemarket.xyz"
-featured-content:
 repo: "https://github.com/Filemarket-xyz/file-market"
 twitter: "https://twitter.com/filemarket_xyz/"
 video-url: "https://www.youtube.com/embed/MSOpSJnoFvQ"
 year-joined: 2022-09-01T15:06:37.800000Z
-news-update:
 subcategories:
   - dapp
 seo:

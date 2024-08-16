@@ -5,7 +5,6 @@ updated-on: 2024-04-05T00:20:25.917Z
 published-on: 2024-04-05T00:20:25.930Z
 image:
   src: /assets/images/ecko.png
-  alt: Ecko Logo
 category: tooling-productivity
 subcategories:
   - infrastructure
@@ -16,11 +15,6 @@ description: Ecko is a collaboration platform for the planning, creation, and
 website: https://www.ecko.ac
 tech:
   - filecoin
-repo: null
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-04-05T00:20:25.941Z
 seo:
   title: Ecko

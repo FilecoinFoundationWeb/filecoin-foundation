@@ -5,7 +5,6 @@ updated-on: 2024-03-29T21:45:56.946Z
 published-on: 2024-03-29T21:45:56.946Z
 image:
   src: /assets/images/mona.png
-  alt: Mona
 category: media-entertainment
 subcategories:
   - arts-collectibles-nfts
@@ -16,11 +15,7 @@ description: Mona's mission is to empower billions of people to create, collect,
 website: https://monaverse.com
 tech:
   - filecoin
-repo: null
-news-update: null
-featured-content: null
 twitter: https://twitter.com/monaverse
-video-url: null
 year-joined: 2024-03-29T21:28:53.652Z
 seo:
   title: Mona

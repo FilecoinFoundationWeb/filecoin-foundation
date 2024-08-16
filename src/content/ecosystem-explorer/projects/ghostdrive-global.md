@@ -5,7 +5,6 @@ updated-on: 2024-05-16T14:59:06.623Z
 published-on: 2024-05-16T14:59:06.634Z
 image:
   src: /assets/images/gohstdrive.png
-  alt: Ghost Drive
 category: storage
 subcategories:
   - data-storage-management
@@ -18,8 +17,6 @@ website: https://ghostdrive.com/
 tech:
   - filecoin
 repo: https://github.com/Ghost-Drive
-news-update: null
-featured-content: null
 twitter: https://twitter.com/GhostDrive_Web3
 video-url: https://www.youtube.com/embed/D0Mh3ZDA-3Y
 year-joined: 2024-05-16T14:59:06.611Z

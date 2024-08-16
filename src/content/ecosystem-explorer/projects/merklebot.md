@@ -15,14 +15,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/merklebot.png
-  alt: MerkleBot Logo
-featured-content:
 website: https://merklebot.com
-repo:
 twitter: https://twitter.com/MerkleB0t
-video-url:
 year-joined: 2024-04-03T18:37:09.314000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

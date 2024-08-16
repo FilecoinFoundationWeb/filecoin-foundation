@@ -1,8 +1,8 @@
 ---
 title: "Livepeer"
-created-on: "2024-01-04T22:40:26.783Z"
-updated-on: "2024-01-05T21:37:41.454Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:26.783Z
+updated-on: 2024-01-05T21:37:41.454Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Livepeer is an open video infrastructure network for live and on-demand
   streaming."
@@ -16,14 +16,11 @@ tech:
   - "ipfs"
 image:
   src: /assets/images/659751d1ccb76baf40759190_livepeer-logo-primary-1200px-white-transparent-computer-backpack.png
-  alt: "Livepeer Logo"
 website: "https://livepeer.org"
 featured-content: "https://medium.com/livepeer-blog/video-streaming-with-fvm-and-livepeer-5646eee1ba78"
 repo: "https://github.com/livepeer/org"
 twitter: "https://twitter.com/Livepeer"
-video-url:
-year-joined: "2024-01-19T18:26:58.022Z"
-news-update:
+year-joined: 2024-01-19T18:26:58.022Z
 subcategories:
   - photo-video
 seo:

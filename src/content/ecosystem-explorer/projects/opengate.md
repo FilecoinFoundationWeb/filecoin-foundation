@@ -1,8 +1,8 @@
 ---
 title: OpenGate
-created-on: "2024-01-04T22:40:28.134Z"
-updated-on: "2024-01-05T16:11:14.542Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:28.134Z
+updated-on: 2024-01-05T16:11:14.542Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "OpenGate has launched CryptoBear, the first NFT project within the Filecoin
   ecosystem that accepts FIL as payment. Additionally, OpenGate has introduced the
@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
-  alt: OpenGate Logo
-website: "www.opengatenft.com"
-featured-content:
-repo:
-twitter: "twitter.com/OpenGateNFT"
-video-url:
-year-joined: "2021-02-01T23:00:00.000Z"
-news-update:
+website: https://www.opengatenft.com/
+twitter: https://twitter.com/OpenGateNFT
+year-joined: 2021-02-01T23:00:00.000Z
 subcategories:
   - data-storage-management
 seo:

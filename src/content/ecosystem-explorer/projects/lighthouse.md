@@ -14,14 +14,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974a6233564725198bb791_lighthouse.storage.png
-  alt: Lighthouse Logo
 website: https://www.lighthouse.storage
 featured-content: https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/
 repo: https://github.com/lighthouse-web3
 twitter: https://twitter.com/LighthouseWeb3
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

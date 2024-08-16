@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073296c00a4b6b1e84bf32_quicknode.png
-  alt: QuickNode Logo
 website: https://www.quicknode.com/
-featured-content:
-repo:
 twitter: https://twitter.com/quicknode
-video-url:
 year-joined: 2024-03-29T21:28:54.885000Z
-news-update:
 subcategories:
   - infrastructure
 seo:

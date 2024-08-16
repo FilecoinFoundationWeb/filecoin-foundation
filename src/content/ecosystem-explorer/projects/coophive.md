@@ -12,14 +12,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/finalnewcoophives-01.png
-  alt: CoopHive Logo
 website: https://www.coophive.network/
-featured-content:
 repo: https://github.com/CoopHive/coophive
 twitter: https://twitter.com/coophive
-video-url:
 year-joined: 2024-04-24T19:28:43.576000Z
-news-update:
 subcategories:
   - governance-daos-public-goods
 seo:

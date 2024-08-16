@@ -11,16 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/660732916a689d42cb0e1eb4_clover.png
-  alt: Clover Logo
-website:
-featured-content:
 repo: https://github.com/useclover/clover-warp
 twitter: https://twitter.com/cloversuite
-video-url:
 year-joined: 2024-03-29T21:28:50.458000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Clover
   description: Clover provides tools for decentralized finance and blockchain interoperability.

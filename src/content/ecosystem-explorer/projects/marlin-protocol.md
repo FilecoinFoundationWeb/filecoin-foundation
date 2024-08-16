@@ -17,14 +17,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/marlin-logo-whitehigh-res.png
-  alt: Marlin Logo
-featured-content:
-website: www.marlin.org
+website: https://www.marlin.org/
 repo: https://github.com/marlinprotocol
 twitter: https://twitter.com/marlinprotocol
-video-url:
 year-joined: 2023-12-01T15:08:38.544000Z
-news-update:
 subcategories:
   - infrastructure
 seo:

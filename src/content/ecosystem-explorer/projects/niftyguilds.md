@@ -12,14 +12,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/660736b1d3ce5e439cb32029_niftyguilds.png
-  alt: NiftyGuilds Logo
-featured-content:
 website: https://niftyguilds.vercel.app/
-repo:
-twitter:
-video-url:
 year-joined: 2024-03-29T21:28:53.605000Z
-news-update:
 subcategories:
   - arts-collectibles-nfts
 seo:

@@ -1,8 +1,8 @@
 ---
 title: SINSO
-created-on: "2024-01-04T22:40:27.988Z"
-updated-on: "2024-01-05T21:38:54.539Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:27.988Z
+updated-on: 2024-01-05T21:38:54.539Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "SINSO builds Web3 infrastructure simplifying decentralized hot data
   cache and data governance."
@@ -16,14 +16,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/65975173625957e0087c7501_sinso_logo.png
-  alt: SINSO Logo
 website: "https://sinso.io/"
-featured-content:
 repo: "https://github.com/sinsoio"
 twitter: "https://twitter.com/sinsonetwork"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - health
 seo:

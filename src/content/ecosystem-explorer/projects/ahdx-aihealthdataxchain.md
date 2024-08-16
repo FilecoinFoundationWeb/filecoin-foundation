@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/ahdx-update-3-2-.png
-  alt: AHDX Logo
 website: https://www.ahdx.org/
-featured-content:
-repo:
 twitter: https://twitter.com/aihdxc/
-video-url:
 year-joined: 2023-10-09T16:51:25.169000Z
-news-update:
 subcategories:
   - health
 seo:

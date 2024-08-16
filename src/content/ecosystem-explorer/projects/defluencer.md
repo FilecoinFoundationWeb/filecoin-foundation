@@ -13,14 +13,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/defluencer_logo_blur.svg
-  alt: Defluencer Logo
-featured-content:
 website: https://social.defluencer.eth.limo/#/
 repo: https://github.com/Defluencer
-twitter:
-video-url:
 year-joined: 2024-04-03T18:07:28.347000Z
-news-update:
 subcategories:
   - dapp
 seo:

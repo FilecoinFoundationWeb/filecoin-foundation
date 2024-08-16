@@ -12,14 +12,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/froghub.png
-  alt: FrogHub Logo
 website: https://froghub.io/
-featured-content:
 repo: https://github.com/froghub-io
-twitter:
-video-url:
 year-joined: 2024-04-05T23:10:27.396000Z
-news-update:
 subcategories:
   - dapp
 seo:

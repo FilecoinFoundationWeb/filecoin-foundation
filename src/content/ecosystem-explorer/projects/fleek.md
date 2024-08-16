@@ -16,14 +16,11 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974a30749bbcefd1c904e3_fleek-xyz-logo-dark-866fe3a5fd4b25673eebd25c841bfe30.png
-  alt: Fleek Logo
 website: "https://fleek.co"
 repo: "https://github.com/FleekHQ"
 twitter: "https://twitter.com/fleekxyz"
 featured-content: "https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/"
-video-url:
 year-joined: 2024-01-19T18:50:41.292000Z
-news-update:
 subcategories:
   - dapp
 seo:

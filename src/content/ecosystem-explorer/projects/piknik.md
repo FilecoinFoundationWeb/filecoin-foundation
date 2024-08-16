@@ -1,8 +1,8 @@
 ---
 title: PikNik
-created-on: "2024-01-04T22:40:27.442Z"
-updated-on: "2024-01-05T21:38:36.175Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:27.442Z
+updated-on: 2024-01-05T21:38:36.175Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Headquartered in San Diego, California, PiKNiK is an enterprise-grade
   decentralized storage provider that makes it easy for anyone to store and provide
@@ -17,14 +17,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/6597518e66ba5cff0f0ab78f_piknik-logo.png
-  alt: PikNik Logo
 website: "https://www.piknik.com"
-featured-content:
-repo:
 twitter: "https://twitter.com/PiKNiK_US"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

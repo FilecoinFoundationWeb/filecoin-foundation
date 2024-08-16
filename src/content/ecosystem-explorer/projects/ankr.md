@@ -5,7 +5,6 @@ updated-on: 2024-03-29T21:35:32.116Z
 published-on: 2024-03-29T21:35:32.116Z
 image:
   src: /assets/images/ankr-logo.webp
-  alt: ""
 category: tooling-productivity
 subcategories:
   - infrastructure
@@ -15,12 +14,8 @@ description: Ankr x Filecoin RPC Integration
 website: https://www.ankr.com/
 tech:
   - filecoin
-repo: null
-featured-content: null
 twitter: https://twitter.com/ankr
-video-url: null
 year-joined: 2024-03-29T21:28:48.751Z
-news-update: null
 seo:
   title: Ankr
   description: Ankr offers decentralized cloud computing and blockchain infrastructure.

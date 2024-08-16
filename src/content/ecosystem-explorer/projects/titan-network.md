@@ -1,8 +1,8 @@
 ---
 title: Titan Network
-created-on: "2024-01-04T22:40:28.512Z"
-updated-on: "2024-01-05T21:39:25.863Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:28.512Z
+updated-on: 2024-01-05T21:39:25.863Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Titan is a leading DePIN service provider, that is committed to delivering
   efficient, secure, and cost-effective decentralized solutions, tooling and resources
@@ -15,17 +15,13 @@ tags:
   - developer-tools
 image:
   src: /assets/images/65974d743ddd7ef7851595fe_titan-svg2.png
-  alt: Titan Network Logo
 tech:
   - filecoin
   - ipfs
 website: "https://www.titannet.io/"
-featured-content:
 repo: "https://github.com/Filecoin-Titan/titan"
 twitter: "https://twitter.com/FilecoinTitan"
-video-url:
-year-joined: "2024-01-11T13:26:59.787Z"
-news-update:
+year-joined: 2024-01-11T13:26:59.787Z
 subcategories:
   - infrastructure
 seo:
