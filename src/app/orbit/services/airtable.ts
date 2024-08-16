@@ -11,7 +11,7 @@ const { TITLE, CITY, START_DATE, REGISTRATION_LINK } = FIELDS
 const airtableRecordSchema = z.object({
   [TITLE]: z.string(),
   [CITY]: z.string(),
-  [START_DATE]: z.string().datetime(),
+  [START_DATE]: z.coerce.date(),
   [REGISTRATION_LINK]: z.string().url(),
 })
 

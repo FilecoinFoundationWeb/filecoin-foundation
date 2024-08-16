@@ -93,9 +93,10 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         </div>
         <div className="flex flex-wrap gap-2">
           <TagLabel borderColor="brand-100">{categoryData[category]}</TagLabel>
-          {subcategories.map((subcategory, i) => (
-            <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
-          ))}
+          {subcategories &&
+            subcategories.map((subcategory, i) => (
+              <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
+            ))}
         </div>
       </header>
       <div className="flex flex-wrap justify-between gap-8">
