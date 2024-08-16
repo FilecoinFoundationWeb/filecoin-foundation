@@ -1,4 +1,4 @@
-import { EventFrontMatterSchema } from '@/schemas/eventDataSchema'
+import { EventFrontMatterSchema } from '@/schemas/eventFrontMatterSchema'
 
 export function convertMarkdownToEventData(data: Record<string, any>) {
   const result = EventFrontMatterSchema.safeParse({
