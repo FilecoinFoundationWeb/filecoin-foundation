@@ -75,8 +75,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           <DynamicImage
             fill
             priority
-            src={image.src}
-            alt={image.alt}
+            src={image?.src || ''}
+            alt={image?.alt || ''}
             objectFit="contain"
             className="object-left-bottom"
             sizes={buildImageSizeProp({

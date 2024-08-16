@@ -3,7 +3,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import type { EcosystemProjectData } from '@/types/ecosystemProjectType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -36,7 +36,10 @@ export function FeaturedGrantsGraduates({
             icon: BookOpen,
           }}
           image={{
-            ...image,
+            alt: '',
+            ...(image || {
+              ...graphicsData.imageFallback,
+            }),
             fallback: graphicsData.imageFallback,
             objectFit: 'contain',
             padding: true,

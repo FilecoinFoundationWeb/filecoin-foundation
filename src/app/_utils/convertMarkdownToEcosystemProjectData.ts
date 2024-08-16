@@ -1,20 +1,28 @@
-import { EventFrontMatterSchema } from '@/schemas/eventFrontMatterSchema'
+import { EcosystemProjectDataSchema } from '@/schemas/ecosystemProjectDataSchema'
 
-export function convertMarkdownToEventData(
+export function convertMarkdownToEcosystemProjectData(
   data: Record<string, any>,
   slug: string,
 ) {
-  const result = EventFrontMatterSchema.safeParse({
+  const result = EcosystemProjectDataSchema.safeParse({
     title: data.title,
+    slug: data.slug,
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
     category: data.category,
+    subcategories: data.subcategories,
+    tags: data.tags,
     description: data.description,
-    location: data.location,
-    externalLink: data['external-link'],
-    startDate: data['start-date'],
-    endDate: data['end-date'],
+    tech: data.tech,
+    website: data.website,
+    featuredContent: data['featured-content'],
+    repo: data.repo,
+    twitter: data.twitter,
+    videoUrl: data['video-url'],
+    yearJoined: data['year-joined'],
+    newsUpdate: data['news-update'],
+    content: data.content,
     image: data.image,
     seo: data.seo,
   })
@@ -31,6 +39,6 @@ export function convertMarkdownToEventData(
       console.error(`Issue: ${error.message}`)
     })
 
-    throw new Error('Invalid event data')
+    throw new Error('Invalid ecosystem project data')
   }
 }
