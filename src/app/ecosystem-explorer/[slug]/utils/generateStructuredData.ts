@@ -1,6 +1,6 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import type { EcosystemProjectData } from '@/types/ecosystemProjectType'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
