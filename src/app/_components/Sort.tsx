@@ -15,7 +15,7 @@ import { DefaultSortType } from '@/constants/sortConstants'
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']
   defaultSortOption: DefaultSortType
-  sortSettings: SortSetting[]
+  sortSettings: readonly SortSetting[]
 }
 
 export function Sort({ query, sortSettings, defaultSortOption }: SortProps) {
@@ -28,7 +28,7 @@ export function Sort({ query, sortSettings, defaultSortOption }: SortProps) {
     if (sortIsReset) {
       setSortOption(defaultSortOption)
     }
-  }, [query])
+  }, [query, defaultSortOption])
 
   function handleSortChange(newValue: SortOption) {
     setSortOption(newValue)
