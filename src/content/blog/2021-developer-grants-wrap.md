@@ -9,8 +9,6 @@ description: >-
   the Filecoin ecosystem.
 image:
   src: /assets/images/image-c-16.png
-  alt:
-recommended-posts: []
 category: reports
 seo:
   title: 2021 Developer Grants Wrap-Up by Filecoin Foundation

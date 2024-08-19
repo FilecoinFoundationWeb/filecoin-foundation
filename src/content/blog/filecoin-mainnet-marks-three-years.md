@@ -8,8 +8,6 @@ description:
   of the Filecoin network’s  mainnet launch.
 image:
   src: /assets/images/image-3-.png
-  alt: Filecoin network growth over 3 years
-recommended-posts: []
 category: news
 seo:
   title: Filecoin Mainnet Marks Three Years

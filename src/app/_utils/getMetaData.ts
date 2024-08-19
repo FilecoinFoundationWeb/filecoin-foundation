@@ -1,6 +1,5 @@
-import { BlogPostData } from '@/types/blogPostTypes'
-
-import type { EventData } from '@/schemas/eventDataSchema'
+import type { BlogPostData } from '@/types/blogPostType'
+import type { EventData } from '@/types/eventDataType'
 
 import { formatDate } from '@/utils/dateUtils'
 

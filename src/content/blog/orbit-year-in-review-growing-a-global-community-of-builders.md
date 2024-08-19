@@ -9,8 +9,6 @@ description:
   of builders in the Filecoin ecosystem.
 image:
   src: /assets/images/231205-orbit-year.png
-  alt: "Filecoin Orbit Program Year in Review"
-recommended-posts: []
 seo:
   title: "Orbit Year in Review: Growing a Global Community of Builders"
   description:

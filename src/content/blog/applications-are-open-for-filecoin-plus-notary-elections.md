@@ -8,8 +8,6 @@ description:
   elections.
 image:
   src: /assets/images/0218-filpluselection.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Applications Open for Filecoin Plus Notary Elections

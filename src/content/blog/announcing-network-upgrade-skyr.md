@@ -9,8 +9,6 @@ description: >-
   (FVM), Skyr is one of the largest upgrades in Filecoin network history.
 image:
   src: /assets/images/64423a88f053c985627f3ae7_1-ko-wwh4crpe6t8ioqymtfq.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Announcing Network Upgrade Skyr by Filecoin Foundation

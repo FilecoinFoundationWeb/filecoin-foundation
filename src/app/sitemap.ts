@@ -9,15 +9,14 @@ import { getEventsData } from '@/utils/getEventData'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-function generateDynamicRoutes<
-  T extends Pick<DynamicBaseData, 'slug' | 'updatedOn' | 'publishedOn'>,
->(
-  data: T[],
+type TimeStamp = Pick<DynamicBaseData, 'updatedOn' | 'publishedOn'>
+
+type GenericEntryData = TimeStamp & { slug: string }
+
+function generateDynamicRoutes<T extends GenericEntryData>(
+  data: Array<T>,
   basePath: string,
-  timestampKey: keyof Pick<
-    DynamicBaseData,
-    'updatedOn' | 'publishedOn'
-  > = 'updatedOn',
+  timestampKey: keyof TimeStamp = 'updatedOn',
 ) {
   return data.map((item) => {
     const timestamp = item[timestampKey]
@@ -66,10 +65,7 @@ export default function sitemap() {
   }))
 
   const blogPosts = getBlogPostsData()
-  const dynamicBlogRoutes = generateDynamicRoutesLegacy(
-    blogPosts,
-    PATHS.BLOG.path,
-  )
+  const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
   const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutesLegacy(

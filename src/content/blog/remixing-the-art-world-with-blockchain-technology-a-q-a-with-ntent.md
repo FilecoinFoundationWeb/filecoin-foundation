@@ -9,8 +9,6 @@ description:
   the barrier to entry through decentralized technology.
 image:
   src: /assets/images/06012023-ntent.png
-  alt:
-recommended-posts: []
 category: interviews
 seo:
   title: "Remixing the Art World with Blockchain: A Q&A with Ntent"

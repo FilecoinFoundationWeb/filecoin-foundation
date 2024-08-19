@@ -9,6 +9,6 @@ export type SortSetting = {
 }
 
 export type SortableByDate = {
-  publishedOn?: string
-  startDate?: string
+  publishedOn?: string | Date
+  startDate?: string | Date
 }

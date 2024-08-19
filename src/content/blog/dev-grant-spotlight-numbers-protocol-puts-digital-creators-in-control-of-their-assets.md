@@ -11,8 +11,6 @@ description:
   landscape."
 image:
   src: /assets/images/0315-dgs-numbers.png
-  alt:
-recommended-posts: []
 category: reports
 seo:
   title: "Dev Grant Spotlight: Numbers Protocol - Empowering Digital Creators"
