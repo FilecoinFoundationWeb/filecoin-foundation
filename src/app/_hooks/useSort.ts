@@ -1,7 +1,12 @@
 import { useMemo } from 'react'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
-import { type SortableByDate, type SortOption } from '@/types/sortTypes'
+import {
+  SortOptionAlphabetical,
+  SortOptionCronological,
+  type SortableByDate,
+  type SortOption,
+} from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
@@ -50,13 +55,13 @@ export function useSort<Entry extends Object>({
     if (alphabeticalIds.includes(validatedSortOption)) {
       return sortEntriesAlphabetically({
         entries,
-        sortOption: validatedSortOption,
+        sortOption: validatedSortOption as SortOptionAlphabetical,
       })
     } else if (cronologicalIds.includes(validatedSortOption)) {
       return sortEntriesByDate({
         entries,
         sortBy,
-        sortOption: validatedSortOption,
+        sortOption: validatedSortOption as SortOptionCronological,
       })
     } else {
       return entries
