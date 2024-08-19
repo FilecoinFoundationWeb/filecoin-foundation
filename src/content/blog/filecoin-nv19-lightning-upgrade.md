@@ -10,8 +10,6 @@ description:
   to the Filecoin ecosystem, enabling greater efficiency, security, and usability.
 image:
   src: /assets/images/06012023-lightningupgrade.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Filecoin NV19 Lightning Upgrade

@@ -11,8 +11,6 @@ description: >
   factors that impact the growth and viability of a decentralized web.
 image:
   src: /assets/images/image-c-33.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Introducing 'The Future Rules' Podcast by Filecoin Foundation

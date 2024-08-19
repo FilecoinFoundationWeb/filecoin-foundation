@@ -12,8 +12,6 @@ description:
   spacecraft."
 image:
   src: /assets/images/01-lockheed-p-1080.png
-  alt:
-recommended-posts: []
 category: news
 seo:
   title: Filecoin Foundation x Lockheed Martin Mission Announcement

@@ -20,17 +20,20 @@ created_on: &created_on
   name: "created-on"
   label: "Created On"
   widget: "datetime"
+  default: "{{now}}"
 
 updated_on: &updated_on
   name: "updated-on"
   label: "Updated On"
   widget: "datetime"
+  default: "{{now}}"
   required: false
 
 published_on: &published_on
   name: "published-on"
   label: "Published On"
   widget: "datetime"
+  default: "{{now}}"
   required: false
 
 header_config: &header_config
@@ -79,7 +82,7 @@ meta_config: &meta_config
       label: "Meta Description"
       widget: "text"
       pattern:
-        - "^.{0,<<*seo_metadata_description_max_characters>>}$"
+        - "^.{0,220}$"
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - name: "og"
@@ -302,12 +305,6 @@ collections:
           - "video"
           - "audio"
         required: false
-      - name: "recommended-posts"
-        label: "Recommended Posts"
-        widget: "hidden"
-        required: false
-        collection: "blog_posts"
-        value_field: "src/content/blog/{{slug}}.md"
         search_fields:
           - "slug"
           - "title"

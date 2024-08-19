@@ -11,8 +11,6 @@ description:
   onboard and ecrypt data to the decentralized web."
 image:
   src: /assets/images/0405-dgs-180protocol.png
-  alt:
-recommended-posts: []
 category: reports
 seo:
   title: "Dev Grant Spotlight: Encloud"

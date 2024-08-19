@@ -9,8 +9,6 @@ category: news
 description: Filecoin nv22 Dragon upgrade has launched on mainnet.
 image:
   src: /assets/images/blog-header-_-nv22-upgrade.png
-  alt: Filecoin nv22 Dragon Upgrade
-recommended-posts: []
 seo:
   title: "Filecoin NV22 Dragon Upgrade: Enhancing Network Efficiency"
   description:

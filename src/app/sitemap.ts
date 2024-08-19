@@ -1,3 +1,5 @@
+import { formatISO, parseISO, isValid } from 'date-fns'
+
 import { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
@@ -7,25 +9,30 @@ import { getEventsData } from '@/utils/getEventData'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-function generateDynamicRoutes<
-  T extends Pick<DynamicBaseData, 'slug' | 'updatedOn' | 'publishedOn'>,
->(
-  data: T[],
+type TimeStamp = Pick<DynamicBaseData, 'updatedOn' | 'publishedOn'>
+
+type GenericEntryData = TimeStamp & { slug: string }
+
+function generateDynamicRoutes<T extends GenericEntryData>(
+  data: Array<T>,
   basePath: string,
-  timestampKey: keyof Pick<
-    DynamicBaseData,
-    'updatedOn' | 'publishedOn'
-  > = 'updatedOn',
+  timestampKey: keyof TimeStamp = 'updatedOn',
 ) {
   return data.map((item) => {
     const timestamp = item[timestampKey]
 
-    const lastModifiedDate =
-      timestamp instanceof Date
-        ? timestamp.toISOString()
-        : typeof timestamp === 'string'
-          ? new Date(timestamp).toISOString()
-          : new Date().toISOString()
+    const lastModifiedDate = (() => {
+      if (timestamp instanceof Date) {
+        return formatISO(timestamp)
+      } else if (typeof timestamp === 'string') {
+        const parsedDate = parseISO(timestamp)
+        return isValid(parsedDate)
+          ? formatISO(parsedDate)
+          : formatISO(new Date())
+      } else {
+        return formatISO(new Date())
+      }
+    })()
 
     return {
       url: `${BASE_URL}${basePath}/${item.slug}`,
@@ -58,10 +65,7 @@ export default function sitemap() {
   }))
 
   const blogPosts = getBlogPostsData()
-  const dynamicBlogRoutes = generateDynamicRoutesLegacy(
-    blogPosts,
-    PATHS.BLOG.path,
-  )
+  const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
   const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutesLegacy(

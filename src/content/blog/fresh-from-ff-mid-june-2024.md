@@ -8,8 +8,6 @@ description: Check out the latest updates about what the Filecoin Foundation
   team has been up to.
 image:
   src: /assets/images/0215-ff-8-.png
-  alt: "Fresh From FF: Mid-June, 2024"
-recommended-posts: []
 seo:
   twitter:
     title: summary

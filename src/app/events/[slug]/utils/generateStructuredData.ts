@@ -1,6 +1,6 @@
 import { Event, Place, VirtualLocation, WithContext } from 'schema-dts'
 
-import type { EventData } from '@/schemas/eventDataSchema'
+import type { EventData } from '@/types/eventDataType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
