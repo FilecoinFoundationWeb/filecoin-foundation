@@ -24,13 +24,13 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import { areFiltersReset } from '@/utils/areFiltersReset'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortSettings } from '@/utils/getSortSettings'
-import { isResetCategoryApplied } from '@/utils/isResetCategoryApplied'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -132,7 +132,7 @@ export default function Blog({ searchParams }: Props) {
             results={
               <CountAndReset
                 counts={categoryCounts}
-                isSelected={isResetCategoryApplied(searchParams)}
+                isSelected={areFiltersReset(searchParams)}
               />
             }
             category={

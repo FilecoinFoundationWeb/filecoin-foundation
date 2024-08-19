@@ -6,7 +6,7 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { DEFAULT_CATEGORY } from '@/components/Category'
 import { CategoryListItem, CategoryWrapper } from '@/components/CategorySelect'
 
-import { getCountForResetCategory } from '@/utils/geCountForResetCategory'
+import { getCountForResetCategory } from '@/utils/getCountForResetCategory'
 
 type CountAndResetProps = {
   counts: ReturnType<typeof useCategory>['categoryCounts']

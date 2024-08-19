@@ -25,6 +25,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
+import { areFiltersReset } from '@/utils/areFiltersReset'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getEventsCategorySettings,
@@ -34,7 +35,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortSettings } from '@/utils/getSortSettings'
-import { isResetCategoryApplied } from '@/utils/isResetCategoryApplied'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -133,7 +133,7 @@ export default function Events({ searchParams }: Props) {
             results={
               <CountAndReset
                 counts={filteredCategoryCounts}
-                isSelected={isResetCategoryApplied(searchParams)}
+                isSelected={areFiltersReset(searchParams)}
               />
             }
             category={

@@ -2,7 +2,11 @@ import { DEFAULT_CATEGORY } from '@/components/Category'
 
 import { CategoryCounts } from '@/types/categoryTypes'
 
-export function getCountForResetCategory(counts: CategoryCounts) {
+export function getCountForResetCategory(counts?: CategoryCounts) {
+  if (!counts) {
+    return undefined
+  }
+
   const totalSum = Object.values(counts).reduce((sum, value) => sum + value, 0)
 
   if (totalSum !== 0) {

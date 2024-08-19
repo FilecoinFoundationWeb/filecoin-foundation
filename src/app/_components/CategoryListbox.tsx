@@ -15,7 +15,7 @@ import {
   type CategorySetting,
 } from '@/types/categoryTypes'
 
-import { getCountForResetCategory } from '@/utils/geCountForResetCategory'
+import { getCountForResetCategory } from '@/utils/getCountForResetCategory'
 
 type CategoryListboxProps = {
   categoryOption: CategoryOption | undefined
@@ -30,7 +30,7 @@ export function CategoryListbox({
   categoryCounts,
   onCategoryOptionChange,
 }: CategoryListboxProps) {
-  const totalCount = getCountForResetCategory(categoryCounts || {})
+  const totalCount = getCountForResetCategory(categoryCounts)
 
   return (
     <Listbox value={categoryOption} onChange={onCategoryOptionChange}>
