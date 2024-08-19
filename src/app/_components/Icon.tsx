@@ -1,5 +1,5 @@
 import { type Icon } from '@phosphor-icons/react'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 export type IconProps = {
   component: Icon
@@ -14,8 +14,8 @@ const colorStyles = {
   'brand-200': 'text-brand-200',
   'brand-300': 'text-brand-300',
   'brand-400': 'text-brand-400',
-  success: 'text-green-400',
-  warning: 'text-red-400',
+  'green-400': 'text-green-400',
+  'red-400': 'text-red-400',
 }
 
 export function Icon({

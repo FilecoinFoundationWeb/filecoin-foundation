@@ -44,20 +44,23 @@ export function NewsletterForm() {
   })
 
   const { isSubmitting } = methods.formState
-  const [isOpen, setIsOpen] = useState(false)
-  const [notificationStatus, setNotificationStatus] = useState<StatusType>()
+  const [dialogState, setDialogState] = useState<{
+    isOpen: boolean
+    status?: StatusType
+  }>({ isOpen: false })
 
   async function onSubmit(values: FormType) {
     try {
       await postSubscription(values.email)
-      setIsOpen(true)
-      setNotificationStatus('success')
+      setDialogState({ isOpen: true, status: 'success' })
     } catch (error) {
-      setIsOpen(true)
-      setNotificationStatus('warning')
+      setDialogState({ isOpen: true, status: 'warning' })
       Sentry.captureException(error)
     } finally {
       methods.resetField('email')
+      setTimeout(() => {
+        setDialogState((prev) => ({ ...prev, isOpen: false }))
+      }, 5000)
     }
   }
 
@@ -68,7 +71,7 @@ export function NewsletterForm() {
   return (
     <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
       <div className="flex items-end space-x-2">
-        <div className="w-72 flex-shrink-0">
+        <div className="w-72">
           <ControlledFormInput<FormType>
             hideLabel
             label="Email"
@@ -79,19 +82,17 @@ export function NewsletterForm() {
             error={getError(methods.formState.errors, 'email')}
           />
         </div>
-        <div className="min-w-44 flex-shrink-0 flex-grow">
+        <div className="flex min-w-44 [&>*:first-child]:flex-1">
           <Button type="submit" disabled={isSubmitting}>
             {isSubmitting ? 'Subscribing' : 'Subscribe'}
           </Button>
         </div>
       </div>
-      {isOpen && (
-        <NotificationDialog
-          status={notificationStatus}
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-        />
-      )}
+      <NotificationDialog
+        status={dialogState.status}
+        isOpen={dialogState.isOpen}
+        setIsOpen={(isOpen) => setDialogState((prev) => ({ ...prev, isOpen }))}
+      />
     </Form>
   )
 }

@@ -1,4 +1,4 @@
-import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
+import { Dialog, DialogPanel, DialogTitle, Transition } from '@headlessui/react'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 
@@ -15,11 +15,11 @@ type NotificationDialogProps = {
 const dialogStatus = {
   success: {
     title: 'Successfully subscribed!',
-    icon: <Icon component={CheckCircle} color="success" />,
+    icon: <Icon component={CheckCircle} color="green-400" />,
   },
   warning: {
     title: 'An error has occurred. Please try again.',
-    icon: <Icon component={XCircle} color="warning" />,
+    icon: <Icon component={XCircle} color="red-400" />,
   },
 }
 
