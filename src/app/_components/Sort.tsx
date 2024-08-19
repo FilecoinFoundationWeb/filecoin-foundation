@@ -15,7 +15,7 @@ import { DefaultSortType } from '@/constants/sortConstants'
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']
   defaultSortOption: DefaultSortType
-  sortSettings: readonly SortSetting[]
+  sortSettings: SortSetting[]
 }
 
 export function Sort({ query, sortSettings, defaultSortOption }: SortProps) {

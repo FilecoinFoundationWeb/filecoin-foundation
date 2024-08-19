@@ -13,7 +13,7 @@ import { SortSetting, type SortOption } from '@/types/sortTypes'
 type SortListboxProps = {
   sortOption: SortOption
   onSortOptionChange: (selectedSortOption: SortOption) => void
-  sortSettings: readonly SortSetting[]
+  sortSettings: SortSetting[]
 }
 
 export function SortListbox({

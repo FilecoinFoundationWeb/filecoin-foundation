@@ -1,19 +1,21 @@
+import { SortSetting } from '@/types/sortTypes'
+
 const sortOptions = {
   cronologicalSort: {
-    default: 'newest',
+    default: 'newest' as const,
     values: [
       { id: 'newest', name: 'Newest' },
       { id: 'oldest', name: 'Oldest' },
-    ],
+    ] as SortSetting[],
   },
   alphabeticalSort: {
-    default: 'a-z',
+    default: 'a-z' as const,
     values: [
       { id: 'a-z', name: 'Alphabetical (A-Z)' },
       { id: 'z-a', name: 'Alphabetical (Z-A)' },
-    ],
+    ] as SortSetting[],
   },
-} as const
+}
 
 function extractSortIds(options: typeof sortOptions) {
   return {
@@ -38,6 +40,7 @@ export const VALID_SORT_OPTIONS = [
 
 export const DEFAULT_SORT_OPTION_CRONOLOGICAL = cronologicalSort.default
 export const DEFAULT_SORT_OPTION_ALPHABETICAL = alphabeticalSort.default
+export const DEFAULT_SORT_OPTION_SOMETHING = 'hello'
 
 export type DefaultSortType =
   | typeof DEFAULT_SORT_OPTION_CRONOLOGICAL
