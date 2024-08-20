@@ -15,43 +15,36 @@ import {
   type StatusType,
 } from '@/components/NotificationDialog'
 
-export const NewsletterSchema = z.object({
+const NewsletterSchema = z.object({
   email: z
     .string()
     .min(1, { message: 'This field has to be filled.' })
     .email('This is not a valid email.'),
 })
 
-export type FormType = z.infer<typeof NewsletterSchema>
+export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
 
-export const NOTIFICATION_DIALOG_DURATION = 5000
-
-const NEWSLETTER_URL = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
-const AUTHORIZATION_HEADER = `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`
-
-function postSubscription(email: string): Promise<number> {
-  return fetch(NEWSLETTER_URL, {
-    method: 'POST',
-    headers: {
-      Authorization: AUTHORIZATION_HEADER,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email }),
-  }).then((response) => response.status)
+type NotificationDialogState = {
+  isOpen: boolean
+  status?: StatusType
 }
 
+const AUTHORIZATION_HEADER = `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`
+const NEWSLETTER_URL = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
+const NOTIFICATION_DIALOG_DURATION_MS = 5000
+
 export function NewsletterForm() {
-  const methods = useForm<FormType>({
+  const methods = useForm<NewsLetterFormType>({
     resolver: zodResolver(NewsletterSchema),
   })
 
   const { isSubmitting } = methods.formState
-  const [dialogState, setDialogState] = useState<{
-    isOpen: boolean
-    status?: StatusType
-  }>({ isOpen: false })
+  const [dialogState, setDialogState] = useState<NotificationDialogState>({
+    isOpen: true,
+    status: 'success',
+  })
 
-  async function onSubmit(values: FormType) {
+  async function onSubmit(values: NewsLetterFormType) {
     try {
       await postSubscription(values.email)
       setDialogState({ isOpen: true, status: 'success' })
@@ -60,21 +53,28 @@ export function NewsletterForm() {
       Sentry.captureException(error)
     } finally {
       methods.resetField('email')
-      setTimeout(() => {
-        setDialogState((prev) => ({ ...prev, isOpen: false }))
-      }, NOTIFICATION_DIALOG_DURATION)
+      // setTimeout(() => {
+      //   setDialogState((prev) => ({ ...prev, isOpen: false }))
+      // }, NOTIFICATION_DIALOG_DURATION_MS)
     }
   }
 
-  function getError(errors: FieldErrors<FormType>, name: keyof FormType) {
+  function getError(
+    errors: FieldErrors<NewsLetterFormType>,
+    name: keyof NewsLetterFormType,
+  ) {
     return errors[name]?.message
   }
 
   return (
-    <Form<FormType> methods={methods} className="relative" onSubmit={onSubmit}>
+    <Form<NewsLetterFormType>
+      methods={methods}
+      className="relative"
+      onSubmit={onSubmit}
+    >
       <div className="flex items-end space-x-2">
         <div className="w-72">
-          <ControlledFormInput<FormType>
+          <ControlledFormInput<NewsLetterFormType>
             hideLabel
             label="Email"
             name="email"
@@ -97,4 +97,15 @@ export function NewsletterForm() {
       />
     </Form>
   )
+}
+
+function postSubscription(email: string): Promise<number> {
+  return fetch(NEWSLETTER_URL, {
+    method: 'POST',
+    headers: {
+      Authorization: AUTHORIZATION_HEADER,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email }),
+  }).then((response) => response.status)
 }

@@ -31,8 +31,7 @@ const dialogStatus = {
   },
 }
 
-//Time (in milliseconds) to allow the exit animation to complete before unmounting the component
-const EXIT_DURATION = 1000
+const EXIT_ANIMATION_DURATION_MS = 1000
 
 export function NotificationDialog({
   isOpen,
@@ -41,15 +40,15 @@ export function NotificationDialog({
 }: NotificationDialogProps) {
   const [isExiting, setIsExiting] = useState(isOpen)
 
-  const handleClose = () => {
+  const { title = '', icon = null } = status ? dialogStatus[status] : {}
+
+  function handleClose() {
     setIsExiting(true)
     setIsOpen(false)
-    setTimeout(() => {
+    setTimeout(function () {
       setIsExiting(false)
-    }, EXIT_DURATION)
+    }, EXIT_ANIMATION_DURATION_MS)
   }
-
-  const { title = '', icon = null } = status ? dialogStatus[status] : {}
 
   return (
     <Transition show={isOpen || isExiting} as="div" unmount={false}>
@@ -61,7 +60,9 @@ export function NotificationDialog({
         <TransitionChild
           as="div"
           className={`transition ${
-            !isOpen && isExiting ? 'animate-leave' : 'animate-slide-in-from-top'
+            !isOpen && isExiting
+              ? 'animate-shrink-and-fade-out'
+              : 'animate-slide-in-from-top'
           }`}
         >
           <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
@@ -70,8 +71,11 @@ export function NotificationDialog({
                 {icon}
                 {title}
               </DialogTitle>
-              <button className="hover:text-brand-400" onClick={handleClose}>
-                <Icon inheritHoverStyle component={X} color="brand-200" />
+              <button
+                className="text-brand-200  hover:text-brand-400"
+                onClick={handleClose}
+              >
+                <Icon component={X} size={16} />
               </button>
             </DialogPanel>
           </div>

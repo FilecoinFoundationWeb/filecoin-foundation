@@ -15,7 +15,7 @@ module.exports = {
           600: '#0621a4',
           700: '#06094e',
           800: '#08072e',
-        }
+        },
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -84,10 +84,10 @@ module.exports = {
       animation: {
         'slide-in-from-top':
           'slide-in-from-top 0.3s cubic-bezier(.41,.73,.51,1.02)',
-        leave: 'leave 150ms ease-in forwards',
+        'shrink-and-fade-out': 'shrink-and-fade-out 150ms ease-in forwards',
       },
       keyframes: {
-        leave: {
+        'shrink-and-fade-out': {
           '0%': { transform: 'scale(1)', opacity: 1 },
           '100%': { transform: 'scale(0.9)', opacity: 0 },
         },
