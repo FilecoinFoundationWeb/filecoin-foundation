@@ -4,10 +4,10 @@ import {
   sortTypes,
 } from '@/constants/sortConstants'
 
-type SortOptionType = typeof sortTypes
+type BaseSortType = typeof sortTypes
 
-type ChronologicalSort = SortOptionType['chronologicalSort']
-type AlphabeticalSort = SortOptionType['alphabeticalSort']
+type ChronologicalSort = BaseSortType['chronologicalSort']
+type AlphabeticalSort = BaseSortType['alphabeticalSort']
 
 type ChronologicalSortValues = ChronologicalSort['values'][number]
 type AlphabeticalSortValues = AlphabeticalSort['values'][number]
