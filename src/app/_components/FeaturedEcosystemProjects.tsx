@@ -3,7 +3,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
-import type { EcosystemProjectData } from '@/types/ecosystemProjectType'
+import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -12,7 +12,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { PATHS } from '@/constants/paths'
 
 type FeaturedEcosystemProjectsProps = {
-  ecosystemProjects: EcosystemProjectData[]
+  ecosystemProjects: EcosystemProject[]
 }
 
 export function FeaturedEcosystemProjects({

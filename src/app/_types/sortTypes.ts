@@ -1,4 +1,4 @@
-import type { EventData } from '@/types/eventDataType'
+import type { Event } from '@/types/eventType'
 
 import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
@@ -11,5 +11,5 @@ export type SortSetting = {
 
 export type SortableByDate = {
   publishedOn?: DynamicBaseData['publishedOn']
-  startDate?: EventData['startDate']
+  startDate?: Event['startDate']
 }

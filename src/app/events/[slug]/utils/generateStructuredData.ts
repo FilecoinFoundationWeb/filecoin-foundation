@@ -1,6 +1,11 @@
-import { Event, Place, VirtualLocation, WithContext } from 'schema-dts'
+import {
+  Event as SchemaEvent,
+  Place,
+  VirtualLocation,
+  WithContext,
+} from 'schema-dts'
 
-import type { EventData } from '@/types/eventDataType'
+import type { Event } from '@/types/eventType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
@@ -13,9 +18,9 @@ import {
 type LocationType = Place | VirtualLocation | undefined
 
 type GetLocationProps = {
-  location: EventData['location']
-  externalLink: EventData['externalLink']
-  slug: EventData['slug']
+  location: Event['location']
+  externalLink: Event['externalLink']
+  slug: Event['slug']
 }
 
 function getLocation({
@@ -40,7 +45,7 @@ function getLocation({
   }
 }
 
-export function generateStructuredData(data: EventData): WithContext<Event> {
+export function generateStructuredData(data: Event): WithContext<SchemaEvent> {
   const {
     title,
     slug,
@@ -70,7 +75,7 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     name: title,
     description,
     startDate: startDate.toISOString(),
-    endDate: endDate && endDate.toISOString(),
+    endDate: (endDate || startDate)?.toISOString(),
     ...(eventLocation && { location: eventLocation }),
     image: image?.src,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,

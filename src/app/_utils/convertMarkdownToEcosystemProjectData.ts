@@ -1,10 +1,10 @@
-import { EcosystemProjectDataSchema } from '@/schemas/ecosystemProjectDataSchema'
+import { EcosystemProjectFrontMatter } from '@/schemas/ecosystemProject/FrontMatterSchema'
 
 export function convertMarkdownToEcosystemProjectData(
   data: Record<string, any>,
   slug: string,
 ) {
-  const result = EcosystemProjectDataSchema.safeParse({
+  const result = EcosystemProjectFrontMatter.safeParse({
     title: data.title,
     slug: data.slug,
     createdOn: data['created-on'],

@@ -4,13 +4,13 @@ import { isBefore } from 'date-fns'
 
 import { UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
-import type { EventData } from '@/types/eventDataType'
+import type { Event } from '@/types/eventType'
 
 import { getUTCMidnightToday } from '@/utils/dateUtils'
 
 import { pastEventsSetting } from '@/constants/categoryConstants'
 
-export function useEventsCategory(props: UseCategoryProps<EventData>) {
+export function useEventsCategory(props: UseCategoryProps<Event>) {
   const { entries, searchParams, validCategoryOptions } = props
 
   const results = useCategory({
@@ -44,7 +44,7 @@ export function useEventsCategory(props: UseCategoryProps<EventData>) {
   }
 }
 
-function filterByPastEvents(entry: EventData) {
+function filterByPastEvents(entry: Event) {
   const today = getUTCMidnightToday()
   const { startDate, endDate } = entry
   const eventDate = endDate || startDate
