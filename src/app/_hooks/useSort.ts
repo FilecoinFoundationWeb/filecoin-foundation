@@ -2,10 +2,10 @@ import { useMemo } from 'react'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 import {
-  SortOptionAlphabetical,
-  SortOptionCronological,
+  AlphabeticalSortId,
+  ChronologicalSortId,
   type SortableByDate,
-  type SortOption,
+  type SortId,
 } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
@@ -15,19 +15,19 @@ import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { SORT_KEY } from '@/constants/searchParams'
 import {
-  alphabeticalIds,
-  cronologicalIds,
-  VALID_SORT_OPTIONS,
+  alphabeticalSortIds,
+  chronologicalSortIds,
+  VALID_SORT_IDS,
 } from '@/constants/sortConstants'
 
 type UseSortProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
+  entries: Array<Entry>
   sortBy: keyof SortableByDate & keyof Entry
-  sortByDefault: SortOption
+  sortByDefault: SortId
 }
 
-function validateSortOption<Entry extends Object>(
+function validateSortId<Entry extends Object>(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
   defaultSortBy: UseSortProps<Entry>['sortByDefault'],
 ) {
@@ -35,7 +35,7 @@ function validateSortOption<Entry extends Object>(
     return defaultSortBy
   }
 
-  const validSortOption = VALID_SORT_OPTIONS.find(
+  const validSortOption = VALID_SORT_IDS.find(
     (option) => option === normalizedQuery,
   )
 
@@ -49,27 +49,29 @@ export function useSort<Entry extends Object>({
   sortByDefault,
 }: UseSortProps<Entry>) {
   const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
-  const validatedSortOption = validateSortOption(normalizedQuery, sortByDefault)
+  const validatedSortId = validateSortId(normalizedQuery, sortByDefault)
 
   const sortedResults = useMemo(() => {
-    if (alphabeticalIds.includes(validatedSortOption)) {
+    if (alphabeticalSortIds.includes(validatedSortId as AlphabeticalSortId)) {
       return sortEntriesAlphabetically({
         entries,
-        sortOption: validatedSortOption as SortOptionAlphabetical,
+        sortId: validatedSortId as AlphabeticalSortId,
       })
-    } else if (cronologicalIds.includes(validatedSortOption)) {
+    } else if (
+      chronologicalSortIds.includes(validatedSortId as ChronologicalSortId)
+    ) {
       return sortEntriesByDate({
         entries,
         sortBy,
-        sortOption: validatedSortOption as SortOptionCronological,
+        sortId: validatedSortId as ChronologicalSortId,
       })
     } else {
       return entries
     }
-  }, [entries, sortBy, validatedSortOption])
+  }, [entries, sortBy, validatedSortId])
 
   return {
-    sortQuery: validatedSortOption,
+    sortQuery: validatedSortId,
     sortedResults,
   }
 }

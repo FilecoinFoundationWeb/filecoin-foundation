@@ -30,7 +30,7 @@ import {
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { getSortSettings } from '@/utils/getSortSettings'
+import { getSortOptions } from '@/utils/getSortOptions'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -93,7 +93,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     entries: categorizedResults,
   })
 
-  const sortSettings = getSortSettings(DEFAULT_SORT_OPTION_ALPHABETICAL)
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION_ALPHABETICAL)
 
   return (
     <PageLayout>
@@ -128,8 +128,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
               sort={
                 <Sort
                   query={sortQuery}
-                  sortSettings={sortSettings}
-                  defaultSortOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
                 />
               }
             />
@@ -138,9 +138,9 @@ export default function EcosystemExplorer({ searchParams }: Props) {
               results={<ResultsAndReset results={categorizedResults.length} />}
               sort={
                 <Sort
-                  sortSettings={sortSettings}
                   query={sortQuery}
-                  defaultSortOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
                 />
               }
               category={

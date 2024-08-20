@@ -1,19 +1,13 @@
-import { SortOptionAlphabetical } from '@/types/sortTypes'
+import { AlphabeticalSortId } from '@/types/sortTypes'
 
 export function sortEntriesAlphabetically<
   Entry extends { [title: string]: any },
->({
-  entries,
-  sortOption,
-}: {
-  entries: Entry[]
-  sortOption: SortOptionAlphabetical
-}) {
+>({ entries, sortId }: { entries: Entry[]; sortId: AlphabeticalSortId }) {
   return [...entries].sort((a, b) => {
     const nameA = a['title']?.toString().toLowerCase() || ''
     const nameB = b['title']?.toString().toLowerCase() || ''
 
-    switch (sortOption) {
+    switch (sortId) {
       case 'a-z':
         return nameA.localeCompare(nameB)
       case 'z-a':

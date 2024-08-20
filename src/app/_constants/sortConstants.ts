@@ -1,47 +1,34 @@
-import { SortSetting } from '@/types/sortTypes'
-
-const sortOptions = {
-  cronologicalSort: {
-    default: 'newest' as const,
+export const sortTypes = {
+  chronologicalSort: {
+    default: 'newest',
     values: [
       { id: 'newest', name: 'Newest' },
       { id: 'oldest', name: 'Oldest' },
-    ] as SortSetting[],
+    ],
   },
   alphabeticalSort: {
-    default: 'a-z' as const,
+    default: 'a-z',
     values: [
       { id: 'a-z', name: 'Alphabetical (A-Z)' },
       { id: 'z-a', name: 'Alphabetical (Z-A)' },
-    ] as SortSetting[],
+    ],
   },
-}
+} as const
 
-function extractSortIds(options: typeof sortOptions) {
-  return {
-    cronologicalIds: options.cronologicalSort.values.map((option) => option.id),
-    alphabeticalIds: options.alphabeticalSort.values.map((option) => option.id),
-  }
-}
+export const { chronologicalSort, alphabeticalSort } = sortTypes
 
-export const { cronologicalIds, alphabeticalIds } = extractSortIds(sortOptions)
+export const chronologicalSortIds = chronologicalSort.values.map(
+  (option) => option.id,
+)
 
-export const { cronologicalSort, alphabeticalSort } = sortOptions
+export const alphabeticalSortIds = alphabeticalSort.values.map(
+  (option) => option.id,
+)
 
-export const sortSettings = [
-  ...cronologicalSort.values,
-  ...alphabeticalSort.values,
-]
-
-export const VALID_SORT_OPTIONS = [
-  ...cronologicalSort.values.map((setting) => setting.id),
+export const VALID_SORT_IDS = [
+  ...chronologicalSort.values.map((setting) => setting.id),
   ...alphabeticalSort.values.map((setting) => setting.id),
 ]
 
-export const DEFAULT_SORT_OPTION_CRONOLOGICAL = cronologicalSort.default
+export const DEFAULT_SORT_OPTION_CHRONOLOGICAL = chronologicalSort.default
 export const DEFAULT_SORT_OPTION_ALPHABETICAL = alphabeticalSort.default
-export const DEFAULT_SORT_OPTION_SOMETHING = 'hello'
-
-export type DefaultSortType =
-  | typeof DEFAULT_SORT_OPTION_CRONOLOGICAL
-  | typeof DEFAULT_SORT_OPTION_ALPHABETICAL

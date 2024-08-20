@@ -34,14 +34,14 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
-import { getSortSettings } from '@/utils/getSortSettings'
+import { getSortOptions } from '@/utils/getSortOptions'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION_CRONOLOGICAL } from '@/constants/sortConstants'
+import { DEFAULT_SORT_OPTION_CHRONOLOGICAL } from '@/constants/sortConstants'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -87,7 +87,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: DEFAULT_SORT_OPTION_CRONOLOGICAL,
+    sortByDefault: DEFAULT_SORT_OPTION_CHRONOLOGICAL,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } =
@@ -102,7 +102,7 @@ export default function Events({ searchParams }: Props) {
     entries: categorizedResults,
   })
 
-  const sortSettings = getSortSettings(DEFAULT_SORT_OPTION_CRONOLOGICAL)
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION_CHRONOLOGICAL)
 
   const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
@@ -150,8 +150,8 @@ export default function Events({ searchParams }: Props) {
               sort={
                 <Sort
                   query={sortQuery}
-                  sortSettings={sortSettings}
-                  defaultSortOption={DEFAULT_SORT_OPTION_CRONOLOGICAL}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION_CHRONOLOGICAL}
                 />
               }
             />
@@ -160,8 +160,8 @@ export default function Events({ searchParams }: Props) {
               sort={
                 <Sort
                   query={sortQuery}
-                  sortSettings={sortSettings}
-                  defaultSortOption={DEFAULT_SORT_OPTION_CRONOLOGICAL}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION_CHRONOLOGICAL}
                 />
               }
               category={
