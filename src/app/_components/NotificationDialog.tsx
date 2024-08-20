@@ -1,4 +1,12 @@
-import { Dialog, DialogPanel, DialogTitle, Transition } from '@headlessui/react'
+import { useState } from 'react'
+
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  Transition,
+  TransitionChild,
+} from '@headlessui/react'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 
@@ -23,34 +31,52 @@ const dialogStatus = {
   },
 }
 
+//Time (in milliseconds) to allow the exit animation to complete before unmounting the component
+const EXIT_DURATION = 1000
+
 export function NotificationDialog({
   isOpen,
   setIsOpen,
   status,
 }: NotificationDialogProps) {
+  const [isExiting, setIsExiting] = useState(isOpen)
+
+  const handleClose = () => {
+    setIsExiting(true)
+    setIsOpen(false)
+    setTimeout(() => {
+      setIsExiting(false)
+    }, EXIT_DURATION)
+  }
+
   const { title = '', icon = null } = status ? dialogStatus[status] : {}
 
   return (
-    <Dialog
-      transition
-      open={isOpen}
-      className="data-[closed]:animate-leave data-[open]:animate-slide-in-from-top fixed inset-0 z-50 flex items-start justify-center p-4"
-      onClose={() => setIsOpen(false)}
-    >
-      <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
-        <DialogPanel className="flex gap-3">
-          <DialogTitle className="flex flex-1 items-center gap-3 text-brand-100">
-            {icon}
-            {title}
-          </DialogTitle>
-          <button
-            className="hover:text-brand-400"
-            onClick={() => setIsOpen(false)}
-          >
-            <Icon inheritHoverStyle component={X} color="brand-200" />
-          </button>
-        </DialogPanel>
-      </div>
-    </Dialog>
+    <Transition show={isOpen || isExiting} as="div" unmount={false}>
+      <Dialog
+        open={isOpen}
+        className="fixed inset-0 z-50 flex items-start justify-center p-4"
+        onClose={handleClose}
+      >
+        <TransitionChild
+          as="div"
+          className={`transition ${
+            !isOpen && isExiting ? 'animate-leave' : 'animate-slide-in-from-top'
+          }`}
+        >
+          <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
+            <DialogPanel className="flex gap-3">
+              <DialogTitle className="flex flex-1 items-center gap-3 text-brand-100">
+                {icon}
+                {title}
+              </DialogTitle>
+              <button className="hover:text-brand-400" onClick={handleClose}>
+                <Icon inheritHoverStyle component={X} color="brand-200" />
+              </button>
+            </DialogPanel>
+          </div>
+        </TransitionChild>
+      </Dialog>
+    </Transition>
   )
 }

@@ -24,6 +24,8 @@ export const NewsletterSchema = z.object({
 
 export type FormType = z.infer<typeof NewsletterSchema>
 
+export const NOTIFICATION_DIALOG_DURATION = 5000
+
 const NEWSLETTER_URL = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
 const AUTHORIZATION_HEADER = `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`
 
@@ -60,7 +62,7 @@ export function NewsletterForm() {
       methods.resetField('email')
       setTimeout(() => {
         setDialogState((prev) => ({ ...prev, isOpen: false }))
-      }, 5000)
+      }, NOTIFICATION_DIALOG_DURATION)
     }
   }
 
