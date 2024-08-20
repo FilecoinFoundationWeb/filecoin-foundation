@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import { zodResolver } from '@hookform/resolvers/zod'
+import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
 import { FieldErrors, useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -10,10 +11,8 @@ import { z } from 'zod'
 import { Button } from '@/components/Button'
 import ControlledFormInput from '@/components/Form/ControlledFormInput'
 import Form from '@/components/Form/Form'
-import {
-  NotificationDialog,
-  type StatusType,
-} from '@/components/NotificationDialog'
+import { IconProps } from '@/components/Icon'
+import { NotificationDialog } from '@/components/NotificationDialog'
 
 const NewsletterSchema = z.object({
   email: z
@@ -26,7 +25,9 @@ export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
 
 type NotificationDialogState = {
   isOpen: boolean
-  status?: StatusType
+  title?: string
+  icon?: IconProps['component']
+  iconColor?: IconProps['color']
 }
 
 const AUTHORIZATION_HEADER = `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`
@@ -40,22 +41,33 @@ export function NewsletterForm() {
 
   const { isSubmitting } = methods.formState
   const [dialogState, setDialogState] = useState<NotificationDialogState>({
-    isOpen: true,
-    status: 'success',
+    isOpen: false,
   })
+
+  const { isOpen, title, icon, iconColor } = dialogState
 
   async function onSubmit(values: NewsLetterFormType) {
     try {
       await postSubscription(values.email)
-      setDialogState({ isOpen: true, status: 'success' })
+      setDialogState({
+        isOpen: true,
+        title: 'Successfully subscribed!',
+        icon: CheckCircle,
+        iconColor: 'green-400',
+      })
     } catch (error) {
-      setDialogState({ isOpen: true, status: 'warning' })
+      setDialogState({
+        isOpen: true,
+        title: 'An error has occurred. Please try again.',
+        icon: XCircle,
+        iconColor: 'red-400',
+      })
       Sentry.captureException(error)
     } finally {
       methods.resetField('email')
-      // setTimeout(() => {
-      //   setDialogState((prev) => ({ ...prev, isOpen: false }))
-      // }, NOTIFICATION_DIALOG_DURATION_MS)
+      setTimeout(() => {
+        setDialogState((prev) => ({ ...prev, isOpen: false }))
+      }, NOTIFICATION_DIALOG_DURATION_MS)
     }
   }
 
@@ -91,8 +103,10 @@ export function NewsletterForm() {
         </div>
       </div>
       <NotificationDialog
-        status={dialogState.status}
-        isOpen={dialogState.isOpen}
+        title={title}
+        icon={icon}
+        iconColor={iconColor}
+        isOpen={isOpen}
         setIsOpen={(isOpen) => setDialogState((prev) => ({ ...prev, isOpen }))}
       />
     </Form>

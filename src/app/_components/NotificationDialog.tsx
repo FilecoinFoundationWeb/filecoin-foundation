@@ -1,86 +1,51 @@
-import { useState } from 'react'
-
 import {
+  CloseButton,
   Dialog,
   DialogPanel,
   DialogTitle,
-  Transition,
-  TransitionChild,
 } from '@headlessui/react'
-import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from '@/components/Icon'
-
-export type StatusType = 'success' | 'warning'
+import { Icon, IconProps } from '@/components/Icon'
 
 type NotificationDialogProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
-  status?: StatusType
+  title?: string
+  icon?: IconProps['component']
+  iconColor?: IconProps['color']
 }
-
-const dialogStatus = {
-  success: {
-    title: 'Successfully subscribed!',
-    icon: <Icon component={CheckCircle} color="green-400" />,
-  },
-  warning: {
-    title: 'An error has occurred. Please try again.',
-    icon: <Icon component={XCircle} color="red-400" />,
-  },
-}
-
-const EXIT_ANIMATION_DURATION_MS = 1000
 
 export function NotificationDialog({
   isOpen,
   setIsOpen,
-  status,
+  title,
+  icon,
+  iconColor,
 }: NotificationDialogProps) {
-  const [isExiting, setIsExiting] = useState(isOpen)
-
-  const { title = '', icon = null } = status ? dialogStatus[status] : {}
-
-  function handleClose() {
-    setIsExiting(true)
-    setIsOpen(false)
-    setTimeout(function () {
-      setIsExiting(false)
-    }, EXIT_ANIMATION_DURATION_MS)
-  }
-
   return (
-    <Transition show={isOpen || isExiting} as="div" unmount={false}>
-      <Dialog
-        open={isOpen}
-        className="fixed inset-0 z-50 flex items-start justify-center p-4"
-        onClose={handleClose}
+    <Dialog
+      open={isOpen}
+      as="div"
+      className="fixed inset-0 z-50 flex items-start justify-center p-4"
+      onClose={() => setIsOpen(false)}
+    >
+      <DialogPanel
+        transition
+        className="data-[closed]:transform-[scale(95%)] flex w-80 gap-3 rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5 duration-300 ease-out data-[open]:animate-slide-in-from-top data-[closed]:opacity-0 sm:w-96"
       >
-        <TransitionChild
-          as="div"
-          className={`transition ${
-            !isOpen && isExiting
-              ? 'animate-shrink-and-fade-out'
-              : 'animate-slide-in-from-top'
-          }`}
+        <DialogTitle
+          as="h3"
+          className="flex flex-1 items-center gap-3 text-brand-100"
         >
-          <div className="w-fit rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5">
-            <DialogPanel className="flex gap-3">
-              <DialogTitle className="flex flex-1 items-center gap-3 text-brand-100">
-                {icon}
-                {title}
-              </DialogTitle>
-              <button
-                className="text-brand-200  hover:text-brand-400"
-                onClick={handleClose}
-              >
-                <Icon component={X} size={16} />
-              </button>
-            </DialogPanel>
-          </div>
-        </TransitionChild>
-      </Dialog>
-    </Transition>
+          {icon && <Icon component={icon} color={iconColor} />}
+          {title}
+        </DialogTitle>
+
+        <CloseButton className="rounded-md p-1 text-brand-200 focus:brand-outline hover:text-brand-400">
+          <Icon component={X} size={16} />
+        </CloseButton>
+      </DialogPanel>
+    </Dialog>
   )
 }
