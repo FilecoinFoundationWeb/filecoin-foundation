@@ -1,6 +1,6 @@
 import type { BlogPosting, WithContext } from 'schema-dts'
 
-import type { BlogPostData } from '@/schemas/blogPostDataSchema'
+import type { BlogPostData } from '@/types/blogPostType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'

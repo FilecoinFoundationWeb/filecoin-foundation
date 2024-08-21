@@ -1,8 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 
-import type { EventData } from '@/schemas/eventDataSchema'
-
 import { convertMarkdownToEventData } from '@/utils/convertMarkdownToEventData'
 import {
   extractSlugFromFilename,
@@ -17,7 +15,7 @@ import { PATHS } from '@/constants/paths'
 
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
-export function getEventData(slug: string): EventData {
+export function getEventData(slug: string) {
   try {
     const filePath = getFilePath(EVENTS_DIRECTORY_PATH, slug)
 
@@ -27,15 +25,15 @@ export function getEventData(slug: string): EventData {
 
     const fileContents = readFileContents(filePath)
     const { data, content } = parseMarkdown(fileContents)
-
-    return convertMarkdownToEventData({ ...data, slug, content })
+    const eventData = convertMarkdownToEventData({ ...data, content })
+    return { ...eventData, slug }
   } catch (error) {
     console.error('Error retrieving event data:', error)
     throw error
   }
 }
 
-export function getEventsData(): EventData[] {
+export function getEventsData() {
   try {
     const directory = path.join(process.cwd(), EVENTS_DIRECTORY_PATH)
     const filenames = getFilenamesFromDirectory(directory)

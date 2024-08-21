@@ -1,8 +1,7 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
+import { BlogPostData } from '@/types/blogPostType'
 import { SeoMetadata } from '@/types/metadataTypes'
-
-import type { BlogPostData } from '@/schemas/blogPostDataSchema'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
@@ -11,7 +10,7 @@ import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
 
 export function generateStructuredData(
-  posts: BlogPostData[],
+  posts: Array<BlogPostData>,
   seo: SeoMetadata,
 ): WithContext<WebPage> {
   const baseData = generateWebPageStructuredData({

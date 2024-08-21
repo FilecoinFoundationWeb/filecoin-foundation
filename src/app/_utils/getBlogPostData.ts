@@ -1,8 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 
-import type { BlogPostData } from '@/schemas/blogPostDataSchema'
-
 import { convertMarkdownToBlogPostData } from '@/utils/covertMarkdowntoBlogPostData'
 import {
   extractSlugFromFilename,
@@ -17,7 +15,7 @@ import { PATHS } from '@/constants/paths'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
-export function getBlogPostData(slug: string): BlogPostData {
+export function getBlogPostData(slug: string) {
   try {
     const filePath = getFilePath(BLOG_DIRECTORY_PATH, slug)
 
@@ -27,15 +25,15 @@ export function getBlogPostData(slug: string): BlogPostData {
 
     const fileContents = readFileContents(filePath)
     const { data, content } = parseMarkdown(fileContents)
-
-    return convertMarkdownToBlogPostData({ ...data, slug, content })
+    const blogPostData = convertMarkdownToBlogPostData({ ...data, content })
+    return { ...blogPostData, slug }
   } catch (error) {
     console.error('Error retrieving event data:', error)
     throw error
   }
 }
 
-export function getBlogPostsData(): BlogPostData[] {
+export function getBlogPostsData() {
   try {
     const directory = path.join(process.cwd(), BLOG_DIRECTORY_PATH)
     const filenames = getFilenamesFromDirectory(directory)
