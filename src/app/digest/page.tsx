@@ -12,11 +12,12 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 import { getDigestArticlesData } from '@/utils/getDigestData'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { attributes } from '@/content/pages/digest.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
