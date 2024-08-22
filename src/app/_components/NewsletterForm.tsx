@@ -23,8 +23,6 @@ const NewsletterSchema = z.object({
 
 export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
 
-const AUTHORIZATION_HEADER = `Bearer ${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_KEY}`
-const NEWSLETTER_URL = `${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEXT_PUBLIC_NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
 const NOTIFICATION_DIALOG_DURATION_MS = 5000
 
 type NotificationDialogState = {
@@ -97,7 +95,14 @@ function useNewsletterForm() {
 
   async function onSubmit(values: NewsLetterFormType) {
     try {
-      await postSubscription(values.email)
+      await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: values.email }),
+      })
+
       displayNotification('Successfully subscribed!', {
         component: CheckCircle,
         color: 'green-400',
@@ -128,19 +133,4 @@ function getError(
   name: keyof NewsLetterFormType,
 ) {
   return errors[name]?.message
-}
-
-async function postSubscription(
-  email: NewsLetterFormType['email'],
-): Promise<number> {
-  const response = await fetch(NEWSLETTER_URL, {
-    method: 'POST',
-    headers: {
-      Authorization: AUTHORIZATION_HEADER,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email }),
-  })
-
-  return response.status
 }
