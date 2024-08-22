@@ -95,13 +95,17 @@ function useNewsletterForm() {
 
   async function onSubmit(values: NewsLetterFormType) {
     try {
-      await fetch('/api/subscribe', {
+      const response = await fetch('/api/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email: values.email }),
       })
+
+      if (!response.ok) {
+        throw new Error('Failed to subscribe')
+      }
 
       displayNotification('Successfully subscribed!', {
         component: CheckCircle,
