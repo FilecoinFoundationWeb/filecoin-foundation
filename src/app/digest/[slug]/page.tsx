@@ -4,7 +4,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticleData } from '@/utils/getDigestData'
+import { getDigestArticleData } from '@/utils/getDigestArticleData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 

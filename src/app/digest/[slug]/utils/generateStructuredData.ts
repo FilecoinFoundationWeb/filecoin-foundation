@@ -1,12 +1,14 @@
 import { WebPage, WithContext } from 'schema-dts'
 
-import { DigestData } from '@/types/digestTypes'
+import { DigestArticleData } from '@/types/digestTypes'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-export function generateStructuredData(data: DigestData): WithContext<WebPage> {
+export function generateStructuredData(
+  data: DigestArticleData,
+): WithContext<WebPage> {
   const { seo } = data
 
   return generateWebPageStructuredData({

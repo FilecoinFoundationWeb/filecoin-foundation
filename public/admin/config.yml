@@ -157,6 +157,7 @@ collections:
       - name: "digest"
         label: "Digest"
         file: "src/content/pages/digest.md"
+        preview_path: "digest"
         fields:
           - *header_config
           - *meta_config
@@ -603,6 +604,9 @@ collections:
       - name: "title"
         label: "Title"
         widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "description"
         label: "Description"
         widget: "string"
