@@ -1,5 +1,8 @@
 ---
 title: Hello I'm new
+created-on: 2021-12-30T00:00:00Z
+updated-on: 2021-12-30T00:00:00Z
+published-on: 2021-12-30T00:00:00Z
 description: "Advocacy and Education: The foundation advocates for policies and
   regulations that support decentralized technologies and educates the public
   and policymakers about the benefits and potential of the Filecoin network."
@@ -15,6 +18,7 @@ seo:
   title: title
   description: desciription
 ---
+
 Supporting Development: The foundation provides resources, funding, and strategic guidance to developers and projects that contribute to the Filecoin ecosystem. This includes grants, hackathons, and educational programs to encourage innovation and growth.
 
 Promoting Decentralization: One of the foundation’s primary goals is to ensure that the Filecoin network remains decentralized, reducing reliance on centralized data storage services and promoting a more equitable internet infrastructure.

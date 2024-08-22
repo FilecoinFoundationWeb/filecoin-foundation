@@ -10,7 +10,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticlesData } from '@/utils/getDigestData'
+import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -64,12 +64,16 @@ export default function Digest() {
                   icon: BookOpen,
                 }}
                 image={{
-                  ...image,
+                  alt: '',
+                  ...(image || {
+                    ...graphicsData.imageFallback,
+                  }),
                   fallback: graphicsData.imageFallback,
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',
-                    md: '480px',
+                    md: '470px',
+                    lg: '360px',
                   }),
                 }}
               />
