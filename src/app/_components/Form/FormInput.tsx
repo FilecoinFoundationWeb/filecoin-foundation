@@ -5,46 +5,36 @@ import {
   Input,
   type InputProps as HeadlessInputProps,
 } from '@headlessui/react'
-import { WarningCircle } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
-import { Icon } from '@/components/Icon'
 
-export type FormInputProps = {
-  label: FormLabelProps['label']
-  hideLabel?: FormLabelProps['isHidden']
-  error?: string
-} & HeadlessInputProps
+type HardCodedProps = 'invalid' | 'className'
+
+export type FormInputProps = Omit<HeadlessInputProps, HardCodedProps> &
+  FormLabelProps &
+  FormErrorProps
 
 export function FormInput({
-  error,
   label,
   hideLabel,
+  error,
+  hideError,
   ...rest
 }: FormInputProps) {
   return (
-    <Field className="relative w-full">
-      <FormLabel label={label} isHidden={hideLabel} />
-      <div className="relative w-full">
-        <Input
-          className={clsx(
-            'peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-4 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none',
-            error && 'border-red-400 pr-10',
-            !hideLabel && 'mt-2',
-          )}
-          {...rest}
-        />
-
-        {error && (
-          <div className="peer pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-red-400">
-            <Icon component={WarningCircle} />
-          </div>
+    <Field className="w-full">
+      <FormLabel label={label} hideLabel={hideLabel} />
+      <Input
+        {...rest}
+        invalid={Boolean(error)}
+        className={clsx(
+          'form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-4 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 data-[disabled]:cursor-not-allowed [&::-webkit-search-cancel-button]:appearance-none',
+          error && 'border-red-400 pr-10',
         )}
-      </div>
-      {error && (
-        <p className="absolute -bottom-8 text-nowrap text-red-400">{error}</p>
-      )}
+      />
+      <FormError error={error} hideError={hideError} />
     </Field>
   )
 }

@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
-import { type FieldErrors, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
@@ -41,16 +41,15 @@ export function NewsletterForm() {
       className="relative"
       onSubmit={onSubmit}
     >
-      <div className="flex items-end space-x-2">
+      <div className="-mb-8 flex items-start space-x-2">
         <div className="w-72">
           <ControlledFormInput<NewsLetterFormType>
             hideLabel
-            label="Email"
             name="email"
+            label="Email"
             type="email"
             placeholder="Enter your email"
             autoComplete="email"
-            error={getError(methods.formState.errors, 'email')}
           />
         </div>
         <div className="flex min-w-44">
@@ -130,11 +129,4 @@ function useNewsletterForm() {
     displayNotification,
     onSubmit,
   }
-}
-
-function getError(
-  errors: FieldErrors<NewsLetterFormType>,
-  name: keyof NewsLetterFormType,
-) {
-  return errors[name]?.message
 }
