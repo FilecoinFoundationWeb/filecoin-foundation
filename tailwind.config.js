@@ -15,7 +15,7 @@ module.exports = {
           600: '#0621a4',
           700: '#06094e',
           800: '#08072e',
-        }
+        },
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -80,6 +80,21 @@ module.exports = {
       }),
       maxWidth: {
         readable: '60ch',
+      },
+      animation: {
+        'slide-in-from-top':
+          'slide-in-from-top 300ms cubic-bezier(.41,.73,.51,1.02)',
+        'shrink-and-fade-out': 'shrink-and-fade-out 150ms ease-in forwards',
+      },
+      keyframes: {
+        'shrink-and-fade-out': {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          '100%': { transform: 'scale(0.9)', opacity: 0 },
+        },
+        'slide-in-from-top': {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
     },
   },

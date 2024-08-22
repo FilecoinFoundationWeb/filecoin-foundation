@@ -12,6 +12,8 @@ const colorStyles = {
   'brand-200': 'text-brand-200',
   'brand-300': 'text-brand-300',
   'brand-400': 'text-brand-400',
+  'green-400': 'text-green-400',
+  'red-400': 'text-red-400',
 }
 
 export function Icon({
