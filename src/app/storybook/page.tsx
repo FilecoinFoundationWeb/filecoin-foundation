@@ -195,7 +195,6 @@ export default function Storybook() {
       >
         <div className="mb-8 flex flex-col gap-4">
           <ControlledFormCheckbox<FormData>
-            disabled
             name="isCool"
             label="Are you cool?"
           />
@@ -206,14 +205,12 @@ export default function Storybook() {
         </div>
 
         <ControlledFormInput<FormData>
-          disabled
           name="title"
           label="A title"
           placeholder="The title of something"
         />
 
         <ControlledFormTextarea<FormData>
-          disabled
           name="description"
           label="A text area"
           charcterLimit={CHARACTER_LIMIT}
@@ -221,7 +218,6 @@ export default function Storybook() {
         />
 
         <ControlledFormListbox<FormData>
-          disabled
           name="person"
           label="A Listbox"
           placeholder="Choose a person"
@@ -229,7 +225,6 @@ export default function Storybook() {
         />
 
         <ControlledFormFileInput<FormData>
-          disabled
           name="logo"
           label="Choose a Logo for your project"
           accept={['.png', '.jpg', '.svg', '.webp']}
