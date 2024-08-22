@@ -83,7 +83,7 @@ module.exports = {
       },
       animation: {
         'slide-in-from-top':
-          'slide-in-from-top 0.3s cubic-bezier(.41,.73,.51,1.02)',
+          'slide-in-from-top 300ms cubic-bezier(.41,.73,.51,1.02)',
         'shrink-and-fade-out': 'shrink-and-fade-out 150ms ease-in forwards',
       },
       keyframes: {

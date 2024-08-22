@@ -5,6 +5,7 @@ import {
   DialogTitle,
 } from '@headlessui/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
 import { Icon, IconProps } from '@/components/Icon'
 
@@ -12,8 +13,7 @@ type NotificationDialogProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
   title?: string
-  icon?: IconProps['component']
-  iconColor?: IconProps['color']
+  icon?: IconProps
 }
 
 export function NotificationDialog({
@@ -21,7 +21,6 @@ export function NotificationDialog({
   setIsOpen,
   title,
   icon,
-  iconColor,
 }: NotificationDialogProps) {
   return (
     <Dialog
@@ -32,13 +31,19 @@ export function NotificationDialog({
     >
       <DialogPanel
         transition
-        className="data-[closed]:transform-[scale(95%)] flex w-80 gap-3 rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5 duration-300 ease-out data-[open]:animate-slide-in-from-top data-[closed]:opacity-0 sm:w-96"
+        className={clsx(
+          'flex w-80 gap-3 rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5 sm:w-96',
+          {
+            'animate-slide-in-from-top': isOpen,
+            'animate-shrink-and-fade-out': !isOpen,
+          },
+        )}
       >
         <DialogTitle
           as="h3"
           className="flex flex-1 items-center gap-3 text-brand-100"
         >
-          {icon && <Icon component={icon} color={iconColor} />}
+          {icon && <Icon {...icon} />}
           {title}
         </DialogTitle>
 
