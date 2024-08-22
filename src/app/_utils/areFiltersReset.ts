@@ -1,5 +1,9 @@
 import { NextServerSearchParams } from '@/types/searchParams'
 
-export function areFiltersReset(searchParams: NextServerSearchParams) {
-  return Object.keys(searchParams).length === 0
+function hasFiltersApplied(searchParams: NextServerSearchParams) {
+  return Object.keys(searchParams).length > 0
+}
+
+export function hasNoFiltersApplied(searchParams: NextServerSearchParams) {
+  return !hasFiltersApplied(searchParams)
 }

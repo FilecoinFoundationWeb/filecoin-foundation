@@ -2,16 +2,14 @@ import { DEFAULT_CATEGORY } from '@/components/Category'
 
 import { CategoryCounts } from '@/types/categoryTypes'
 
-export function getCountForResetCategory(counts?: CategoryCounts) {
-  if (!counts) {
-    return undefined
-  }
+export function getTotalCategoryCount(counts?: CategoryCounts) {
+  if (!counts) return undefined
 
-  const totalSum = Object.values(counts).reduce((sum, value) => sum + value, 0)
+  const totalSum = calculateTotalSum(counts)
 
-  if (totalSum !== 0) {
-    return {
-      [DEFAULT_CATEGORY]: totalSum,
-    }
-  }
+  return totalSum > 0 ? { [DEFAULT_CATEGORY]: totalSum } : undefined
+}
+
+function calculateTotalSum(counts: CategoryCounts): number {
+  return Object.values(counts).reduce((sum, value) => sum + value, 0)
 }

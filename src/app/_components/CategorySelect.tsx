@@ -8,29 +8,58 @@ import {
   type CategorySetting,
 } from '@/types/categoryTypes'
 
+const touchTarget = {
+  class: 'px-4',
+  offsetClassY: '-mt-4',
+  offsetClassX: '-ml-4',
+} as const
+
 type CategorySelectProps = {
-  categoryOption: CategoryOption
-  categorySettings: CategorySetting[]
+  selectedCategory: CategoryOption
+  categoryOptions: CategorySetting[]
   categoryCounts?: CategoryCounts
-  onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
+  onCategoryChange: (selectedCategory: CategoryOption) => void
 }
 
-type CategoryListItemProps = {
+type CategoryContainerProps = {
+  children: React.ReactNode
+  as?: keyof JSX.IntrinsicElements
+}
+
+type CategoryItemProps = {
   name: string
   count?: number
   isSelected: boolean
   handleClick: () => void
 }
 
-const touchTarget = {
-  class: 'px-4',
-  offsetClassY: '-mt-4',
-  offsetClassX: '-ml-4',
+export function CategorySelect({
+  selectedCategory,
+  categoryOptions,
+  categoryCounts,
+  onCategoryChange,
+}: CategorySelectProps) {
+  return (
+    <CategorySelect.Container>
+      {categoryOptions.map((option) => (
+        <CategorySelect.Item
+          key={option.id}
+          name={option.name}
+          isSelected={selectedCategory === option.id}
+          count={categoryCounts?.[option.id]}
+          handleClick={() => onCategoryChange(option.id)}
+        />
+      ))}
+    </CategorySelect.Container>
+  )
 }
 
-export function CategoryWrapper({ children }: { children: React.ReactNode }) {
+CategorySelect.Container = function List({
+  children,
+  as: Component = 'ul',
+}: CategoryContainerProps) {
   return (
-    <ul
+    <Component
       className={clsx(
         'space-y-4',
         touchTarget.offsetClassX,
@@ -38,64 +67,50 @@ export function CategoryWrapper({ children }: { children: React.ReactNode }) {
       )}
     >
       {children}
-    </ul>
+    </Component>
   )
 }
 
-export function CategorySelect({
-  categoryOption,
-  categorySettings,
-  categoryCounts,
-  onCategoryOptionChange,
-}: CategorySelectProps) {
-  return (
-    <CategoryWrapper>
-      {categorySettings.map((option) => {
-        const isSelected = categoryOption === option.id
-
-        const countOrUndefined = categoryCounts
-          ? categoryCounts[option.id] || 0
-          : undefined
-
-        return (
-          <CategoryListItem
-            key={option.id}
-            name={option.name}
-            isSelected={isSelected}
-            count={countOrUndefined}
-            handleClick={() => onCategoryOptionChange(option.id)}
-          />
-        )
-      })}
-    </CategoryWrapper>
-  )
-}
-
-export function CategoryListItem({
+CategorySelect.Item = function Item({
   name,
   count,
   isSelected,
   handleClick,
-}: CategoryListItemProps) {
-  const hasCount = typeof count === 'number'
-
+}: CategoryItemProps) {
   return (
     <li>
-      <button
-        className={clsx(
-          'text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
-          hasCount && 'inline-flex items-baseline gap-2',
-          touchTarget.class,
-          {
-            'bg-brand-700 text-brand-400': isSelected,
-            'bg-transparent text-brand-300': !isSelected,
-          },
-        )}
-        onClick={handleClick}
-      >
-        <span className="text-nowrap">{name}</span>
-        {hasCount && <span className="text-sm font-light">({count})</span>}
-      </button>
+      <CategorySelect.Button
+        name={name}
+        count={count}
+        isSelected={isSelected}
+        handleClick={handleClick}
+      />
     </li>
+  )
+}
+
+CategorySelect.Button = function Button({
+  name,
+  count,
+  isSelected,
+  handleClick,
+}: CategoryItemProps) {
+  return (
+    <button
+      className={clsx(
+        'text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
+        isSelected
+          ? 'bg-brand-700 text-brand-400'
+          : 'bg-transparent text-brand-300',
+        count !== undefined && 'inline-flex items-baseline gap-2',
+        touchTarget.class,
+      )}
+      onClick={handleClick}
+    >
+      <span className="text-nowrap">{name}</span>
+      {count !== undefined && (
+        <span className="text-sm font-light">({count})</span>
+      )}
+    </button>
   )
 }

@@ -4,28 +4,34 @@ import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { DEFAULT_CATEGORY } from '@/components/Category'
-import { CategoryListItem, CategoryWrapper } from '@/components/CategorySelect'
+import { CategorySelect } from '@/components/CategorySelect'
 
-import { getCountForResetCategory } from '@/utils/getCountForResetCategory'
+import { getTotalCategoryCount } from '@/utils/getCountForResetCategory'
 
-type CountAndResetProps = {
+type CategoryResetButtonProps = {
   counts: ReturnType<typeof useCategory>['categoryCounts']
   isSelected: boolean
 }
 
-export function CountAndReset({ counts, isSelected }: CountAndResetProps) {
+export function CategoryResetButton({
+  counts,
+  isSelected,
+}: CategoryResetButtonProps) {
   const { resetSearchParams } = useUpdateSearchParams()
+  const totalCount = getTotalCategoryCount(counts)
 
-  const totalCount = getCountForResetCategory(counts)
+  function handleResetClick() {
+    resetSearchParams()
+  }
 
   return (
-    <CategoryWrapper>
-      <CategoryListItem
+    <CategorySelect.Container as="div">
+      <CategorySelect.Button
         name={DEFAULT_CATEGORY}
         isSelected={isSelected}
         count={totalCount?.[DEFAULT_CATEGORY]}
-        handleClick={resetSearchParams}
+        handleClick={handleResetClick}
       />
-    </CategoryWrapper>
+    </CategorySelect.Container>
   )
 }

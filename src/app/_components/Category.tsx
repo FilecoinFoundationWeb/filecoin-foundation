@@ -21,47 +21,44 @@ type CategoryProps = {
 export const DEFAULT_CATEGORY = 'All'
 
 export function Category({ query, settings, counts }: CategoryProps) {
-  const [categoryOption, setCategoryOption] = useState(
+  const [selectedCategory, setSelectedCategory] = useState<CategoryOption>(
     query || DEFAULT_CATEGORY,
   )
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
-  function handleCategoryChange(newValue: CategoryOption) {
-    setCategoryOption(newValue)
+  useEffect(() => {
+    setSelectedCategory(query || DEFAULT_CATEGORY)
+  }, [query])
 
-    if (newValue === DEFAULT_CATEGORY) {
-      resetSearchParams()
-    } else {
-      updateSearchParams({ [CATEGORY_KEY]: newValue })
-    }
+  function handleCategoryChange(newCategory: CategoryOption) {
+    setSelectedCategory(newCategory)
+    updateCategoryParams(newCategory)
   }
 
-  useEffect(() => {
-    const categoryIsReset = !query
-
-    if (categoryIsReset) {
-      setCategoryOption(DEFAULT_CATEGORY)
+  function updateCategoryParams(category: CategoryOption) {
+    if (category === DEFAULT_CATEGORY) {
+      resetSearchParams()
     } else {
-      setCategoryOption(query)
+      updateSearchParams({ [CATEGORY_KEY]: category })
     }
-  }, [query])
+  }
 
   return (
     <>
       <div className="hidden lg:block">
         <CategorySelect
-          categoryOption={categoryOption}
-          categorySettings={settings}
+          selectedCategory={selectedCategory}
+          categoryOptions={settings}
           categoryCounts={counts}
-          onCategoryOptionChange={handleCategoryChange}
+          onCategoryChange={handleCategoryChange}
         />
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
-          categoryOption={categoryOption}
-          categorySettings={settings}
+          selectedCategory={selectedCategory}
+          categoryOptions={settings}
           categoryCounts={counts}
-          onCategoryOptionChange={handleCategoryChange}
+          onCategoryChange={handleCategoryChange}
         />
       </div>
     </>

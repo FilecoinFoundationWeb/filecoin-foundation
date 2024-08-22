@@ -12,7 +12,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CountAndReset } from '@/components/CountAndReset'
+import { CategoryResetButton } from '@/components/CountAndReset'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -24,7 +24,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { areFiltersReset } from '@/utils/areFiltersReset'
+import { hasNoFiltersApplied } from '@/utils/areFiltersReset'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
@@ -37,7 +37,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { attributes } from '@/content/pages/blog.md'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION_CHRONOLOGICAL } from '@/constants/sortConstants'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -85,7 +85,7 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: DEFAULT_SORT_OPTION_CHRONOLOGICAL,
+    defaultSortId: DEFAULT_SORT_OPTION.chronological,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -99,7 +99,7 @@ export default function Blog({ searchParams }: Props) {
     entries: categorizedResults,
   })
 
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION_CHRONOLOGICAL)
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
 
   return (
     <PageLayout>
@@ -128,11 +128,11 @@ export default function Blog({ searchParams }: Props) {
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
         <FilterContainer>
-          <FilterContainer.ResultsAndCategoryCompact
+          <FilterContainer.ResultsAndCategory
             results={
-              <CountAndReset
+              <CategoryResetButton
                 counts={categoryCounts}
-                isSelected={areFiltersReset(searchParams)}
+                isSelected={hasNoFiltersApplied(searchParams)}
               />
             }
             category={
@@ -150,7 +150,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION_CHRONOLOGICAL}
+                  defaultOption={DEFAULT_SORT_OPTION.chronological}
                 />
               }
             />
@@ -161,7 +161,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION_CHRONOLOGICAL}
+                  defaultOption={DEFAULT_SORT_OPTION.chronological}
                 />
               }
               category={

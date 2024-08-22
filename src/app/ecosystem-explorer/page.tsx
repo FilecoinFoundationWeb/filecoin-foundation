@@ -38,7 +38,7 @@ import { attributes } from '@/content/pages/ecosystem-explorer.md'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { DEFAULT_SORT_OPTION_ALPHABETICAL } from '@/constants/sortConstants'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -79,7 +79,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: DEFAULT_SORT_OPTION_ALPHABETICAL,
+    defaultSortId: DEFAULT_SORT_OPTION.alphabetical,
   })
 
   const { categoryQuery, categorizedResults } = useCategory({
@@ -93,7 +93,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     entries: categorizedResults,
   })
 
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION_ALPHABETICAL)
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.alphabetical)
 
   return (
     <PageLayout>
@@ -117,6 +117,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
+            gapSize="wide"
             results={<ResultsAndReset results={categorizedResults.length} />}
             category={
               <Category query={categoryQuery} settings={categorySettings} />
@@ -129,7 +130,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
+                  defaultOption={DEFAULT_SORT_OPTION.alphabetical}
                 />
               }
             />
@@ -140,7 +141,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION_ALPHABETICAL}
+                  defaultOption={DEFAULT_SORT_OPTION.alphabetical}
                 />
               }
               category={

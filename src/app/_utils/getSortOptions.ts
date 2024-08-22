@@ -1,13 +1,14 @@
 import { DefaultSortType } from '@/types/sortTypes'
 
-import { alphabeticalSort, chronologicalSort } from '@/constants/sortConstants'
+import { SORT_TYPES } from '@/constants/sortConstants'
 
-export function getSortOptions(defaultSortOption: DefaultSortType) {
-  if (defaultSortOption === alphabeticalSort.default) {
-    return alphabeticalSort.values
-  } else if (defaultSortOption === chronologicalSort.default) {
-    return chronologicalSort.values
-  } else {
-    throw new Error(`Invalid defaultSortOption: ${defaultSortOption}`)
+export function getSortOptions(defaultSortId: DefaultSortType) {
+  switch (defaultSortId) {
+    case SORT_TYPES.alphabetical.default:
+      return SORT_TYPES.alphabetical.values
+    case SORT_TYPES.chronological.default:
+      return SORT_TYPES.chronological.values
+    default:
+      throw new Error(`Invalid default sort option: ${defaultSortId}`)
   }
 }

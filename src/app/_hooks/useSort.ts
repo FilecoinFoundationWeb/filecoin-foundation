@@ -15,63 +15,59 @@ import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { SORT_KEY } from '@/constants/searchParams'
 import {
-  alphabeticalSortIds,
-  chronologicalSortIds,
+  ALPHABETICAL_SORT_IDS,
+  CHRONOLOGICAL_SORT_IDS,
   VALID_SORT_IDS,
 } from '@/constants/sortConstants'
 
 type UseSortProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Array<Entry>
+  entries: Entry[]
   sortBy: keyof SortableByDate & keyof Entry
-  sortByDefault: SortId
-}
-
-function validateSortId<Entry extends Object>(
-  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  defaultSortBy: UseSortProps<Entry>['sortByDefault'],
-) {
-  if (!normalizedQuery) {
-    return defaultSortBy
-  }
-
-  const validSortOption = VALID_SORT_IDS.find(
-    (option) => option === normalizedQuery,
-  )
-
-  return validSortOption || defaultSortBy
+  defaultSortId: SortId
 }
 
 export function useSort<Entry extends Object>({
   searchParams,
   entries,
   sortBy,
-  sortByDefault,
+  defaultSortId,
 }: UseSortProps<Entry>) {
   const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
-  const validatedSortId = validateSortId(normalizedQuery, sortByDefault)
+  const validatedSortId = getValidatedSortId(normalizedQuery, defaultSortId)
 
   const sortedResults = useMemo(() => {
-    if (alphabeticalSortIds.includes(validatedSortId as AlphabeticalSortId)) {
+    if (ALPHABETICAL_SORT_IDS.includes(validatedSortId as AlphabeticalSortId)) {
       return sortEntriesAlphabetically({
         entries,
         sortId: validatedSortId as AlphabeticalSortId,
       })
-    } else if (
-      chronologicalSortIds.includes(validatedSortId as ChronologicalSortId)
+    }
+
+    if (
+      CHRONOLOGICAL_SORT_IDS.includes(validatedSortId as ChronologicalSortId)
     ) {
       return sortEntriesByDate({
         entries,
         sortBy,
         sortId: validatedSortId as ChronologicalSortId,
       })
-    } else {
-      return entries
     }
+
+    return entries
   }, [entries, sortBy, validatedSortId])
 
   return {
     sortQuery: validatedSortId,
     sortedResults,
   }
+}
+
+function getValidatedSortId<Entry extends Object>(
+  normalizedQuery: string | undefined,
+  defaultSortId: UseSortProps<Entry>['defaultSortId'],
+): SortId {
+  return VALID_SORT_IDS.includes(normalizedQuery as SortId)
+    ? (normalizedQuery as SortId)
+    : defaultSortId
 }

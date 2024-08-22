@@ -12,7 +12,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CountAndReset } from '@/components/CountAndReset'
+import { CategoryResetButton } from '@/components/CountAndReset'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -25,7 +25,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
-import { areFiltersReset } from '@/utils/areFiltersReset'
+import { hasNoFiltersApplied } from '@/utils/areFiltersReset'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getEventsCategorySettings,
@@ -41,7 +41,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { attributes } from '@/content/pages/events.md'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION_CHRONOLOGICAL } from '@/constants/sortConstants'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -87,7 +87,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: DEFAULT_SORT_OPTION_CHRONOLOGICAL,
+    defaultSortId: DEFAULT_SORT_OPTION.chronological,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } =
@@ -102,7 +102,7 @@ export default function Events({ searchParams }: Props) {
     entries: categorizedResults,
   })
 
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION_CHRONOLOGICAL)
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
 
   const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
@@ -129,11 +129,11 @@ export default function Events({ searchParams }: Props) {
 
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
-          <FilterContainer.ResultsAndCategoryCompact
+          <FilterContainer.ResultsAndCategory
             results={
-              <CountAndReset
+              <CategoryResetButton
                 counts={filteredCategoryCounts}
-                isSelected={areFiltersReset(searchParams)}
+                isSelected={hasNoFiltersApplied(searchParams)}
               />
             }
             category={
@@ -151,7 +151,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION_CHRONOLOGICAL}
+                  defaultOption={DEFAULT_SORT_OPTION.chronological}
                 />
               }
             />
@@ -161,7 +161,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION_CHRONOLOGICAL}
+                  defaultOption={DEFAULT_SORT_OPTION.chronological}
                 />
               }
               category={
