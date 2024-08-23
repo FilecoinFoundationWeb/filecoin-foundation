@@ -24,8 +24,8 @@ export type PathValues =
   | '/privacy-policy'
   | '/security'
   | '/security/bug-bounty'
-  | '/security/maturity-model'
   | '/security/coordinated-disclosure-policy'
+  | '/security/maturity-model'
   | '/terms-of-use'
 
 export interface PathConfig {
@@ -45,7 +45,7 @@ interface CMSConfig {
 const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
-function createPathObject(
+function createPathConfig(
   path: PathValues,
   label: string,
   cmsConfig: CMSConfig = {},
@@ -74,19 +74,19 @@ function createPathObject(
 }
 
 export const PATHS = {
-  ABOUT: createPathObject('/about', 'About'),
-  BLOG: createPathObject('/blog', 'Blog', {
+  ABOUT: createPathConfig('/about', 'About'),
+  BLOG: createPathConfig('/blog', 'Blog', {
     includesEntries: true,
   }),
-  COORDINATED_DISCLOSURE_POLICY: createPathObject(
+  BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program'),
+  COORDINATED_DISCLOSURE_POLICY: createPathConfig(
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
   ),
-  DIGEST: createPathObject('/digest', 'Digest', {
+  DIGEST: createPathConfig('/digest', 'Digest', {
     includesEntries: true,
   }),
-  BUG_BOUNTY: createPathObject('/security/bug-bounty', 'Bug Bounty Program'),
-  ECOSYSTEM_EXPLORER: createPathObject(
+  ECOSYSTEM_EXPLORER: createPathConfig(
     '/ecosystem-explorer',
     'Ecosystem Explorer',
     {
@@ -94,27 +94,27 @@ export const PATHS = {
       customEntriesContentPath: '/ecosystem-explorer/projects/',
     },
   ),
-  EMPLOYEE_PRIVACY_POLICY: createPathObject(
+  EMPLOYEE_PRIVACY_POLICY: createPathConfig(
     '/employee-privacy-policy',
     'Employee Privacy Policy',
   ),
-  EVENTS: createPathObject('/events', 'Events', {
+  EVENTS: createPathConfig('/events', 'Events', {
     includesEntries: true,
   }),
-  FIL_PLUS: createPathObject('/filecoin-plus', 'Filecoin Plus'),
-  GOVERNANCE: createPathObject('/governance', 'Governance'),
-  GRANTS: createPathObject('/grants', 'Grants'),
-  ORBIT: createPathObject('/orbit', 'Orbit'),
-  HOME: createPathObject('/', 'Home', {
+  FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus'),
+  GOVERNANCE: createPathConfig('/governance', 'Governance'),
+  GRANTS: createPathConfig('/grants', 'Grants'),
+  ORBIT: createPathConfig('/orbit', 'Orbit'),
+  HOME: createPathConfig('/', 'Home', {
     customMainContentPath: '/home',
   }),
-  MATURITY_MODEL: createPathObject(
+  MATURITY_MODEL: createPathConfig(
     '/security/maturity-model',
     'Maturity Model',
   ),
-  PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
-  TERMS_OF_USE: createPathObject('/terms-of-use', 'Terms of Use'),
-  SECURITY: createPathObject('/security', 'Security', {
+  PRIVACY_POLICY: createPathConfig('/privacy-policy', 'Privacy Policy'),
+  TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
+  SECURITY: createPathConfig('/security', 'Security', {
     hasSubpaths: true,
   }),
 } as const
