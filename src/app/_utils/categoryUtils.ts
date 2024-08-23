@@ -20,8 +20,8 @@ type GetCategoryLabelParams = {
 const CATEGORY_FIELD_NAME = 'category'
 
 function transformCategoryDataToSettings(
-  options: CMSFieldOption[],
-): CategorySetting[] {
+  options: Array<CMSFieldOption>,
+): Array<CategorySetting> {
   return options.map((option) => ({
     id: option.value,
     name: option.label,

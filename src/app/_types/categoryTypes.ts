@@ -10,7 +10,7 @@ export type CategorySetting = {
 export type CategoryYAMLData = {
   name: string
   slug: string
-  subcategories: string[]
+  subcategories: Array<string>
 }
 
 type CMSCategoryField = {

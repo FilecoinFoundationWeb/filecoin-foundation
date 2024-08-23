@@ -9,7 +9,7 @@ type BaseYAMLData = {
 
 export function readAndValidateYamlFiles<T extends BaseYAMLData>(
   directoryPath: string,
-): T[] {
+): Array<T> {
   const directory = path.join(process.cwd(), directoryPath)
   const filenames = fs.readdirSync(directory)
 

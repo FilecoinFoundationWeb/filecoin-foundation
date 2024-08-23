@@ -2,8 +2,11 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:import/warnings",
+    "plugin:@typescript-eslint/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -17,6 +20,8 @@
         "shorthandFirst": true
       }
     ],
+    "@typescript-eslint/array-type": ["error", { "default": "generic" }],
+    //"@typescript-eslint/array-type": "error",
 
     // Variable usage and definitions
     "no-unused-vars": "warn",

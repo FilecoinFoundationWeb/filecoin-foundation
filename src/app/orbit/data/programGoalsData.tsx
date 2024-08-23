@@ -10,7 +10,7 @@ type ProgramGoalsData = {
   image: StaticImageProps
 }
 
-export const programGoalsData: ProgramGoalsData[] = [
+export const programGoalsData: Array<ProgramGoalsData> = [
   {
     title: 'Educate',
     description:

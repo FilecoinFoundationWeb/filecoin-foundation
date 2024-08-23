@@ -13,7 +13,7 @@ import { PAGE_KEY } from '@/constants/searchParams'
 
 type UsePaginationProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
+  entries: Array<Entry>
   entriesPerPage?: number
 }
 

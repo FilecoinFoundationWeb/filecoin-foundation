@@ -1,3 +1,3 @@
 export type NextServerSearchParams = {
-  [key: string]: string | string[] | undefined
+  [key: string]: string | Array<string> | undefined
 }

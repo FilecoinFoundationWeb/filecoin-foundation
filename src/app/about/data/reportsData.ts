@@ -10,7 +10,7 @@ type ReportData = {
   image?: StaticImageProps
 }
 
-export const reportsData: ReportData[] = [
+export const reportsData: Array<ReportData> = [
   {
     title: 'Filecoin Foundation 2023 Annual Report',
     description: `Read the full report to learn more about the Foundation's work in 2023.`,

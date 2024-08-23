@@ -16,7 +16,7 @@ import {
 
 type CategoryListboxProps = {
   categoryOption: CategoryOption | undefined
-  categorySettings: CategorySetting[]
+  categorySettings: Array<CategorySetting>
   categoryCounts?: CategoryCounts
   onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
 }

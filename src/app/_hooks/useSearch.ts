@@ -11,8 +11,8 @@ import { SEARCH_KEY } from '@/constants/searchParams'
 
 type UseSearchProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
-  searchBy: keyof Entry | (keyof Entry)[]
+  entries: Array<Entry>
+  searchBy: keyof Entry | Array<keyof Entry>
 }
 
 function normalizeString(str: string) {

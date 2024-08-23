@@ -13,7 +13,7 @@ export type StatisticData = {
   description: string
 }
 
-export const statisticsData: StatisticData[] = [
+export const statisticsData: Array<StatisticData> = [
   {
     icon: UsersThree,
     value: 145,

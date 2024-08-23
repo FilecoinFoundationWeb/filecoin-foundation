@@ -1,6 +1,6 @@
 import { type SortSetting } from '@/types/sortTypes'
 
-export const sortSettings: SortSetting[] = [
+export const sortSettings: Array<SortSetting> = [
   { id: 'newest', name: 'Newest' },
   { id: 'oldest', name: 'Oldest' },
 ]

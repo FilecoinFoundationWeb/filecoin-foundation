@@ -14,7 +14,7 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
-  settings: CategorySetting[]
+  settings: Array<CategorySetting>
   counts?: ReturnType<typeof useCategory>['categoryCounts']
 }
 
