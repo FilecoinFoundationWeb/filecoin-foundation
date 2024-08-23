@@ -13,7 +13,7 @@ import { PATHS } from '@/constants/paths'
 
 type FeaturedEcosystemProjectsProps = {
   ecosystemProjects: EcosystemProject[]
-}
+  ecosystemProjects: Array<EcosystemProject>
 
 export function FeaturedEcosystemProjects({
   ecosystemProjects,
