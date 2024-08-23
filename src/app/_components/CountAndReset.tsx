@@ -3,11 +3,10 @@
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
+import { DEFAULT_CATEGORY } from '@/components/Category'
 import { CategorySidebar } from '@/components/CategorySidebar'
 
-import { getTotalCategoryCount } from '@/utils/categoryUtils'
-
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+import { getTotalCategoryCount } from '@/utils/getCountForResetCategory'
 
 type CategoryResetButtonProps = {
   counts: ReturnType<typeof useCategory>['categoryCounts']

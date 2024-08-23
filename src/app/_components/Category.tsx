@@ -10,7 +10,6 @@ import { CategorySidebar } from '@/components/CategorySidebar'
 
 import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
 
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 type CategoryProps = {
@@ -18,6 +17,8 @@ type CategoryProps = {
   options: CategoryOption[]
   counts?: ReturnType<typeof useCategory>['categoryCounts']
 }
+
+export const DEFAULT_CATEGORY = 'All'
 
 export function Category({ query, options, counts }: CategoryProps) {
   const [selectedCategory, setSelectedCategory] = useState<CategoryId>(

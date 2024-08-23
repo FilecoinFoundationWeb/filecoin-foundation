@@ -1,19 +1,12 @@
 import { z } from 'zod'
 
-import {
-  CategoryCounts,
-  type CategoryMap,
-  type CategoryYAMLData,
-} from '@/types/categoryTypes'
+import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
 import { type CMSFieldOption, type CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
-import {
-  pastEventsOption,
-  DEFAULT_CATEGORY,
-} from '@/constants/categoryConstants'
+import { pastEventsOption } from '@/constants/categoryConstants'
 
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName
@@ -94,16 +87,4 @@ export function createCategorySchema(cmsCategories: Array<string>) {
     const [first, ...rest] = cmsCategories
     return z.enum([first, ...rest])
   }
-}
-
-export function getTotalCategoryCount(counts?: CategoryCounts) {
-  if (!counts) return undefined
-
-  const totalSum = calculateTotalSum(counts)
-
-  return totalSum > 0 ? { [DEFAULT_CATEGORY]: totalSum } : undefined
-}
-
-function calculateTotalSum(counts: CategoryCounts): number {
-  return Object.values(counts).reduce((sum, value) => sum + value, 0)
 }
