@@ -25,7 +25,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
-import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getEventsCategorySettings,
@@ -35,6 +34,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
 import { graphicsData } from '@/data/graphicsData'
 
