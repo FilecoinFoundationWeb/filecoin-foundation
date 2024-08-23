@@ -13,14 +13,11 @@ tech:
   - filecoin
 image:
   src: /assets/images/beryx_logo_white.png
-  alt: Beryx Logo
-website: www.beryx.io
-featured-content:
+website: https://beryx.io/
 repo: "https://github.com/orgs/Zondax/repositories"
 twitter: "https://twitter.com/_beryx_"
 video-url: "https://www.youtube.com/embed/R2pso7nKxJE"
 year-joined: 2023-02-01T17:44:05.293000Z
-news-update:
 subcategories:
   - wallets-identity-authentication
 seo:

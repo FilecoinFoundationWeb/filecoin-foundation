@@ -14,14 +14,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/parasail-white-logo-transparent-background.png
-  alt: Parasail Logo
 website: http://parasail.network/
-featured-content:
-repo:
 twitter: https://twitter.com/parasailnetwork
-video-url:
 year-joined: 2024-05-15T13:46:37.162000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

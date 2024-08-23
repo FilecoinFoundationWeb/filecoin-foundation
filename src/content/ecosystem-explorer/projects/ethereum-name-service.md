@@ -5,7 +5,6 @@ updated-on: 2024-04-05T01:47:43.284Z
 published-on: 2024-04-05T01:47:43.298Z
 image:
   src: /assets/images/ethereum-name-service.png
-  alt: Ethereum Name Service Logo
 category: tooling-productivity
 subcategories:
   - infrastructure
@@ -16,11 +15,6 @@ description: ENS support for Filecoin
 website: https://ens.domains/
 tech:
   - ipfs
-repo: null
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-04-05T01:47:43.309Z
 seo:
   title: Ethereum Name Service

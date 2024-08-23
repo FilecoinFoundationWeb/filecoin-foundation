@@ -13,16 +13,11 @@ tech:
   - filecoin
 image:
   src: /assets/images/filfi_logo_white.png
-  alt: FilFi Logo
-featured-content:
 website: https://filfi.io
 repo: https://github.com/filfi
 twitter: https://twitter.com/filfi_io
 video-url: https://www.youtube.com/embed/oaaLTpKSbYU
 year-joined: 2023-05-30T20:57:35.326000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: FilFi
   description: FilFi provides decentralized finance solutions for the Filecoin network.

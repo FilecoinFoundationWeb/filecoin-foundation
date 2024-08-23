@@ -16,14 +16,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974732c5826a2570dfd210_filecoin-station-logo.png
-  alt: Filecoin Station Logo
 website: "https://www.filstation.app"
 repo: "https://github.com/filecoin-station/desktop"
 featured-content: "https://blog.filecointldr.io/filecoins-retrieval-markets-update-spotlight-on-project-saturn-9f233ed133ed"
-twitter:
-video-url:
-year-joined:
-news-update:
 subcategories:
   - developer-tools
 seo:

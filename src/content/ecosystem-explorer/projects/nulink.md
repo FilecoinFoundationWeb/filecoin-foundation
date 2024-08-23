@@ -11,14 +11,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/nulink.png
-  alt: NuLink Logo
 website: https://www.nulink.org/
-featured-content:
 repo: https://github.com/NuLink-network
 twitter: https://fil.org/ecosystem-projects/orbitvault/
-video-url:
 year-joined: 2022-02-01T14:35:36.326000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

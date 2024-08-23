@@ -1,8 +1,8 @@
 ---
 title: Supranational
-created-on: "2024-01-04T22:40:28.332Z"
-updated-on: "2024-01-05T21:39:10.579Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:28.332Z
+updated-on: 2024-01-05T21:39:10.579Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "A product and service company developing hardware-accelerated cryptography
   for verifiable and confidential computing."
@@ -14,15 +14,12 @@ tech:
   - ipfs
 image:
   src: /assets/images/6597243a0061214bd86cb9b1_gkbtq5uuduql3wfgayraupovzkfhcxrwdk6iqhtmili.png
-  alt: Supranational Logo
 twitter: "https://twitter.com/_Supranational"
 featured-content: >-
   https://dsalliance.io/resources/blog/dsa-launches-golden-gate-upgrade-reducing-decentralized-storage-costs-by-40-percent
 repo: "https://github.com/supranational"
 website: "https://www.supranational.net/"
-video-url:
-year-joined: "2024-01-11T13:26:59.787Z"
-news-update:
+year-joined: 2024-01-11T13:26:59.787Z
 subcategories:
   - data-storage-management
 seo:

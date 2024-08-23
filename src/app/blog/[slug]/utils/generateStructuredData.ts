@@ -1,6 +1,6 @@
 import type { BlogPosting, WithContext } from 'schema-dts'
 
-import type { BlogPostData } from '@/types/blogPostType'
+import type { BlogPost } from '@/types/blogPostType'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
@@ -10,7 +10,7 @@ import {
 } from '@/constants/structuredDataConstants'
 
 export function generateStructuredData(
-  data: BlogPostData,
+  data: BlogPost,
 ): WithContext<BlogPosting> {
   const { title, description, image, publishedOn, updatedOn, slug } = data
 

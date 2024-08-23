@@ -14,14 +14,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073292f68243b0fc173909_forcecommunity.png
-  alt: Force Community
 website: https://forcecommunity.io/
-featured-content:
-repo:
 twitter: https://twitter.com/force_ipfs
-video-url:
 year-joined: 2024-03-29T21:28:50.711000Z
-news-update:
 subcategories:
   - governance-daos-public-goods
 seo:

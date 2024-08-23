@@ -5,7 +5,6 @@ updated-on: 2024-05-16T14:33:32.598Z
 published-on: 2024-05-16T14:33:32.612Z
 image:
   src: /assets/images/domainfns.png
-  alt: DomainFNS Logo
 category: tooling-productivity
 subcategories:
   - infrastructure
@@ -18,10 +17,7 @@ tech:
   - ipfs
   - filecoin
 repo: https://github.com/OpenGateLab/FNS
-news-update: null
-featured-content: null
 twitter: https://twitter.com/DomainFNS
-video-url: null
 year-joined: 2024-05-16T14:33:32.622Z
 seo:
   title: DomainFNS

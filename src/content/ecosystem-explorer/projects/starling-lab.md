@@ -1,8 +1,8 @@
 ---
 title: Starling Lab
-created-on: "2024-01-10T18:24:21.006Z"
-updated-on: "2024-01-10T18:24:21.025Z"
-published-on: "2024-01-10T18:24:21.035Z"
+created-on: 2024-01-10T18:24:21.006Z
+updated-on: 2024-01-10T18:24:21.025Z
+published-on: 2024-01-10T18:24:21.035Z
 description:
   "The Starling Lab is the academic research lab innovating with the latest
   cryptographic methods and decentralized web protocols to meet the technical and
@@ -16,14 +16,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/starling_logo_white-1-.png
-  alt: Starling Lab Logo
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.fastcompany.com/90731729/inside-starling-lab-a-moonshot-project-to-preserve-the-worlds-most-important-information"
-repo: "https://github.com/filecoin-project/starling "
-twitter:
-video-url:
-year-joined:
-news-update:
+repo: "https://github.com/filecoin-project/starling"
 subcategories:
   - data-storage-management
 seo:

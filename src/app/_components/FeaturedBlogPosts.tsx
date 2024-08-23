@@ -4,10 +4,10 @@ import { CardGrid } from '@/components/CardGrid'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
+import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
 import { PATHS } from '@/constants/paths'
 
 const blogPosts = getBlogPostsData()

@@ -5,7 +5,6 @@ updated-on: 2024-04-05T17:13:01.996Z
 published-on: 2024-04-05T17:13:02.007Z
 image:
   src: /assets/images/anytype.png
-  alt: Anytype Logo
 category: tooling-productivity
 subcategories:
   - dapp
@@ -16,11 +15,7 @@ description: Private, local-first, P2P computing no-code dapp to compose
 website: https://anytype.io/
 tech:
   - ipfs
-repo: null
-news-update: null
-featured-content: null
 twitter: https://twitter.com/AnytypeLabs
-video-url: null
 year-joined: 2024-04-05T17:13:02.017Z
 seo:
   title: Anytype

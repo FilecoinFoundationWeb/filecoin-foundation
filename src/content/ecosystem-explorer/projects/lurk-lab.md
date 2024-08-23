@@ -5,7 +5,6 @@ updated-on: 2024-03-29T21:45:16.786Z
 published-on: 2024-03-29T21:45:16.786Z
 image:
   src: /assets/images/lurk.png
-  alt: Lurk Lab Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -19,11 +18,7 @@ description: Lurk is a Turing-complete programming language for recursive
 website: https://lurk-lang.org/
 tech:
   - filecoin
-repo: null
-news-update: null
-featured-content: null
 twitter: https://twitter.com/LurkLab
-video-url: null
 year-joined: 2024-03-29T21:28:53.087Z
 seo:
   title: Lurk Lab

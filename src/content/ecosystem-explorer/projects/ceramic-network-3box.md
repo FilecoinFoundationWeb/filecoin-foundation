@@ -11,14 +11,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/660732902f8beb060931f9cb_ceramic.png
-  alt: Ceramic Network (3Box)
-website: https://ceramic.network/
-featured-content:
-repo:
+website: https://ceramic.network/s
 twitter: https://twitter.com/ceramicnetwork
-video-url:
 year-joined: 2024-03-29T21:28:48.709000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

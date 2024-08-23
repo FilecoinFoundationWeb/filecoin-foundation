@@ -1,8 +1,8 @@
 ---
 title: Seal Storage
-created-on: "2024-01-04T22:40:27.879Z"
-updated-on: "2024-01-05T21:39:00.625Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:27.879Z
+updated-on: 2024-01-05T21:39:00.625Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Seal Storage is a data platform that provides sustainable, immutable,
   and affordable Web3 cloud storage on the Filecoin network."
@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/659751688bb318bafb3d5892_seal2blogo2brgbd-1.png
-  alt: Seal Storage Logo
 website: "https://www.sealstorage.io/"
-repo:
 twitter: "https://twitter.com/SealStorage"
 featured-content: "https://fil.org/blog/case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1/"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

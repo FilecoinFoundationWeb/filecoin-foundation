@@ -12,16 +12,8 @@ tags:
   - developer-tools
 tech:
   - ipfs
-image:
-  src:
-  alt: Encryption Pinner Logo
-featured-content:
 website: https://devpost.com/software/encryption-pinner?ref_content=user-portfolio&ref_feature=in_progress
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-05T01:09:47.927000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

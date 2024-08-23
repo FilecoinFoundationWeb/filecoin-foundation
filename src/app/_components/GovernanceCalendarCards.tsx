@@ -11,7 +11,7 @@ import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagLabel'
 
-import { extractTimeFromISO } from '@/utils/convertISOTime'
+import { formatDateComponentsFromISO } from '@/utils/dateUtils'
 
 import { GOOGLE_CALENDAR_API_URL } from '@/constants/apiUrls'
 
@@ -55,7 +55,7 @@ function Placeholder({ text }: PlaceholderProps) {
 }
 
 function Calendar({ startDate }: CalendarProps) {
-  const { day, month } = extractTimeFromISO(startDate)
+  const { day, month } = formatDateComponentsFromISO(startDate)
 
   return (
     <div className="grid h-40 w-full grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-brand-500 sm:w-[140px]">
@@ -94,8 +94,8 @@ export function GovernanceCalendarCards() {
       {events.items.map((event) => {
         const { id, start, end, htmlLink, summary } = event
 
-        const { time: startTime } = extractTimeFromISO(start.dateTime)
-        const { time: endTime } = extractTimeFromISO(end.dateTime)
+        const { time: startTime } = formatDateComponentsFromISO(start.dateTime)
+        const { time: endTime } = formatDateComponentsFromISO(end.dateTime)
 
         return (
           <li

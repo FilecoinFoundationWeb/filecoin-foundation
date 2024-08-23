@@ -14,14 +14,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073711d5091847d128f8b2_renderhive.png
-  alt: Renderhive Logo
 website: https://www.renderhive.io/
-featured-content:
-repo:
 twitter: https://twitter.com/renderhive
-video-url:
 year-joined: 2024-03-29T21:28:53.783000Z
-news-update:
 subcategories:
   - photo-video
 seo:

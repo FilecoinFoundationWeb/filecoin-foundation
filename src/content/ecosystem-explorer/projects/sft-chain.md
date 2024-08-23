@@ -1,8 +1,8 @@
 ---
 title: SFT Chain
-created-on: "2024-02-05T17:57:11.340Z"
-updated-on: "2024-02-05T17:57:11.357Z"
-published-on: "2024-02-05T17:57:11.368Z"
+created-on: 2024-02-05T17:57:11.340Z
+updated-on: 2024-02-05T17:57:11.357Z
+published-on: 2024-02-05T17:57:11.368Z
 description:
   "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates
   with the Filecoin ecosystem, focusing on DePIN."
@@ -15,14 +15,11 @@ tech:
   - filecoin
 image:
   src: /assets/images/group.png
-  alt: SFT Chain
 website: "https://www.sftproject.io/"
-featured-content:
 repo: "https://github.com/SFT-project"
 twitter: "https://twitter.com/sftprotocol/"
 video-url: "https://www.youtube.com/embed/FOyv43DGH48"
 year-joined:
-news-update:
 subcategories:
   - infrastructure
 seo:

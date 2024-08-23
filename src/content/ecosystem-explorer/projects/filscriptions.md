@@ -12,14 +12,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/filscriptions_logo_white.png
-  alt: Filscriptions Logo
 website: https://www.filscriptions.market/
-featured-content:
-repo:
 twitter: https://twitter.com/filscriptions
-video-url:
 year-joined: 2024-01-18T17:56:20.324000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

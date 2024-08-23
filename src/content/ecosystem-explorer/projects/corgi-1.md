@@ -13,14 +13,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/corgi_logo_white.png
-  alt: CORGI Logo
 website: "https://filecorgi.xyz/"
-featured-content:
 repo: "https://github.com/CORGIFILE/whitepaper"
 twitter: "https://twitter.com/file_corgi"
-video-url:
 year-joined: 2024-02-28T23:14:40.521000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

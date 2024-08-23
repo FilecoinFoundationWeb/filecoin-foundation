@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073297bc9a092bda5eb6d8_web3mine.png
-  alt: Web3mine Logo
 website: https://web3mine.io/
-featured-content:
-repo:
 twitter: https://twitter.com/web3mine
-video-url:
 year-joined: 2024-03-29T21:28:55.160000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

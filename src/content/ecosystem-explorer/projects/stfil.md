@@ -1,8 +1,8 @@
 ---
 title: STFIL
-created-on: "2024-01-17T14:55:43.649Z"
-updated-on: "2024-01-17T14:55:43.701Z"
-published-on: "2024-01-17T14:55:43.725Z"
+created-on: 2024-01-17T14:55:43.649Z
+updated-on: 2024-01-17T14:55:43.701Z
+published-on: 2024-01-17T14:55:43.725Z
 description:
   "STFIL Protocol is one of the first and largest Filecoin liquidity staking
   and leveraged mining protocol launched on the Filecoin Virtual Machine (FVM). We
@@ -12,18 +12,10 @@ tags:
   - dapp
 tech:
   - filecoin
-image:
-  src: # "/assets/images/stfil-logo-dark-background-.png"
-  alt: STFIL
-website: "stfil.io"
-featured-content:
+website: https://stfil.io/
 repo: "https://github.com/stfil-io"
 twitter: "https://twitter.com/stfil_io"
-video-url:
-year-joined: "2024-01-17T14:55:43.749Z"
-news-update:
-subcategories:
-  - finance
+year-joined: 2024-01-17T14:55:43.749Z
 seo:
   title: StFIL
   description:

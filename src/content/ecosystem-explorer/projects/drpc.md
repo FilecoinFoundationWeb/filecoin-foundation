@@ -11,14 +11,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/drpc_symbol_fullcolor-2x.png
-  alt: dRPC Logo
-featured-content:
 website: https://drpc.org/
-repo:
 twitter: https://twitter.com/drpcorg
 video-url: https://www.youtube.com/embed/AFB9eMukNTw
 year-joined: 2024-04-05T13:32:22.117000Z
-news-update:
 subcategories:
   - data-retrieval
 seo:

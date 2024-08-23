@@ -13,15 +13,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/660732939d359eb7bc732049_haven.png
-  alt: Haven
 website: https://havendp.com
-featured-content:
-repo:
 twitter: https://twitter.com/HashMixOfficial
-video-url:
 year-joined: 2024-03-29T21:28:52.020000Z
-
-news-update:
 subcategories:
   - data-storage-management
 seo:

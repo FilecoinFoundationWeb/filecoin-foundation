@@ -14,14 +14,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
-  alt: Chemotronix Logo
-website: https://chemotronix.org/
-featured-content:
-repo:
+website: https://chemotronix.org/s
 twitter: https://twitter.com/chemotronix
-video-url:
 year-joined: 2024-03-29T21:28:49.980000Z
-news-update:
 subcategories:
   - decentralized-science
 seo:

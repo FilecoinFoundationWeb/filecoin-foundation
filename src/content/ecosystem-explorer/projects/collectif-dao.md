@@ -14,14 +14,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/collectoflogo.png
-  alt: Collectif DAO Logo
 website: "https://collectif.finance/"
-featured-content:
 repo: "https://github.com/collectif-dao"
 twitter: "https://twitter.com/CollectifDAO"
-video-url:
 year-joined: 2024-01-24T13:50:38.359000Z
-news-update:
 subcategories:
   - governance-daos-public-goods
 seo:

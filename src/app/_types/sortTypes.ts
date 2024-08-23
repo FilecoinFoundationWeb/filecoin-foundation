@@ -1,3 +1,7 @@
+import type { Event } from '@/types/eventType'
+
+import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
+
 export type SortOption = 'newest' | 'oldest'
 
 export type SortSetting = {
@@ -6,6 +10,6 @@ export type SortSetting = {
 }
 
 export type SortableByDate = {
-  publishedOn?: string | Date
-  startDate?: string | Date
+  publishedOn?: DynamicBaseData['publishedOn']
+  startDate?: Event['startDate']
 }

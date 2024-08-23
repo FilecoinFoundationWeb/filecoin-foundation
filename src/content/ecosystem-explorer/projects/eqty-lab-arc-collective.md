@@ -15,14 +15,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/6607329226071981e4a3559d_eqty.png
-  alt: EQTY Lab Logo
-featured-content:
 website: https://eqtylab.io
-repo:
 twitter: https://twitter.com/EQTYLab
-video-url:
 year-joined: 2024-03-29T21:28:50.218000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

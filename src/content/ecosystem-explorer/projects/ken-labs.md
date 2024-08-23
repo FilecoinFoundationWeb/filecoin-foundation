@@ -5,7 +5,6 @@ updated-on: 2024-04-04T01:31:54.122Z
 published-on: 2024-04-04T01:31:54.137Z
 image:
   src: /assets/images/ken.png
-  alt: KEN Labs Logo
 category: tooling-productivity
 subcategories:
   - infrastructure
@@ -15,11 +14,6 @@ description: "Building a New Economy: Data, AI, and Web3."
 website: https://kenlabs.io/
 tech:
   - ipfs
-repo: null
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-04-04T01:31:54.160Z
 seo:
   title: Ken Labs

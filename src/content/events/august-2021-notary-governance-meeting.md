@@ -8,7 +8,6 @@ external-link: https://www.youtube.com/watch?v=o0nPBRM-aMQ
 start-date: 2021-08-30T22:00:00.000Z
 image:
   src: /assets/images/governance-logo.jpg
-  alt: Filecoin Governance Logo
 category: hosted
 seo:
   title: August 2021 Notary Governance Meeting

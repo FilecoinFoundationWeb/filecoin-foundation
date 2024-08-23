@@ -16,14 +16,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/democracys-library-logo.png
-  alt: Democracy's Library Logo
 website: https://archive.org/details/democracys-library
 featured-content: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/
-repo:
 twitter: https://twitter.com/internetarchive
-video-url:
-year-joined:
-news-update:
 subcategories:
   - dweb
 seo:

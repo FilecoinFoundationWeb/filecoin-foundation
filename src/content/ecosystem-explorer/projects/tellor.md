@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073297e6e8ec9445d76d19_tellor.png
-  alt: Tellor Logo
 website: https://tellor.io/
-featured-content:
-repo:
 twitter: https://twitter.com/wearetellor
-video-url:
 year-joined: 2024-03-29T21:28:55.457000Z
-news-update:
 subcategories:
   - bridges-oracles
 seo:

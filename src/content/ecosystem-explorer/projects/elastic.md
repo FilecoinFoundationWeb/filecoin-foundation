@@ -12,16 +12,8 @@ tags:
   - data-retrieval
 tech:
   - ipfs
-image:
-  src:
-  alt: Elastic Logo
-featured-content:
 website: https://elastic-nft-renting-protocol.netlify.app/
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-05T00:28:51.844000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

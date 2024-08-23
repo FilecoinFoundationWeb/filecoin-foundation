@@ -1,6 +1,9 @@
 import { EventFrontMatterSchema } from '@/schemas/eventFrontMatterSchema'
 
-export function convertMarkdownToEventData(data: Record<string, any>) {
+export function convertMarkdownToEventData(
+  data: Record<string, any>,
+  slug: string,
+) {
   const result = EventFrontMatterSchema.safeParse({
     title: data.title,
     createdOn: data['created-on'],
@@ -21,7 +24,7 @@ export function convertMarkdownToEventData(data: Record<string, any>) {
   } else {
     console.error('🔥 Validation errors:')
     console.error(`Title: ${data.title}`)
-    console.error(`Slug: ${data.slug}`)
+    console.error(`Slug: ${slug}`)
 
     result.error.errors.forEach((error) => {
       console.error(`Path: ${error.path.join(' > ')}`)

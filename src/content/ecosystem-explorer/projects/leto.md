@@ -12,14 +12,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/leto-logo.png
-  alt: Leto Logo
 website: https://leto.gg/
-featured-content:
 repo: https://github.com/Leto-gg
-twitter:
-video-url:
 year-joined: 2024-04-05T23:01:19.950000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

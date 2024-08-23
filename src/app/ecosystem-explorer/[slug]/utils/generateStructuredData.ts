@@ -1,14 +1,10 @@
-import { WebPage, WithContext } from 'schema-dts'
-
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-export function generateStructuredData(
-  data: EcosystemProjectData,
-): WithContext<WebPage> {
+export function generateStructuredData(data: EcosystemProject) {
   const { seo } = data
 
   return generateWebPageStructuredData({

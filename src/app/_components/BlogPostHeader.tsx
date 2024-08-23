@@ -2,7 +2,7 @@ import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagLabel'
 
-import type { BlogPostData } from '@/types/blogPostType'
+import type { BlogPost } from '@/types/blogPostType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
@@ -11,7 +11,7 @@ import { formatDate } from '@/utils/dateUtils'
 import { graphicsData } from '@/data/graphicsData'
 
 type BlogPostHeaderProps = Pick<
-  BlogPostData,
+  BlogPost,
   'title' | 'publishedOn' | 'image' | 'category'
 >
 

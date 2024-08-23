@@ -17,14 +17,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/659733d8ebbc2392eda725b0_nidrogvqqb87r8e6c8ygsc2llv7o2zu11hlqz-blvti.png
-  alt: Filecoin Foundation for the Decentralized Web Logo
 website: https://ffdweb.org
 featured-content: https://ffdweb.org/resources/
-repo:
 twitter: https://twitter.com/ffdweb
-video-url:
-year-joined:
-news-update:
 subcategories:
   - dweb
 seo:

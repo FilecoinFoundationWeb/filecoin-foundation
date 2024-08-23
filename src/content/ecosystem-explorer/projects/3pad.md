@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/pad_logo_white.png
-  alt: 3Pad Logo
 website: https://hello.3pad.xyz/
-featured-content:
 repo: https://github.com/3Pad
-twitter:
-video-url:
 year-joined: 2024-04-05T17:29:47.737000Z
-news-update:
 subcategories:
   - dapp
 seo:

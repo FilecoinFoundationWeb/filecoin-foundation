@@ -1,8 +1,8 @@
 ---
 title: Banyan
-created-on: "2024-01-04T22:40:24.529Z"
-updated-on: "2024-01-05T21:34:37.917Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:24.529Z
+updated-on: 2024-01-05T21:34:37.917Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Banyan is making decentralized, content-addressed storage accessible
   for enterprise clients on the Filecoin network, with a focus on user-controlled
@@ -17,14 +17,12 @@ tech:
   - ipfs
 image:
   src: /assets/images/659872e1c489a49f48f519b0_banyan_logo_white.png
-  alt: Banyan Logo
 website: "https://www.banyan.computer"
 featured-content: "https://www.youtube.com/watch?v=SaIGrSjOMP4&list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy&index=11"
-repo: "github.com/banyancomputer"
+repo: "https://github.com/banyancomputer"
 twitter: "https://twitter.com/BanyanComputer"
 video-url: "https://www.youtube.com/embed/LFhw2qeMzkc"
-year-joined: "2024-02-01T20:41:25.602Z"
-news-update:
+year-joined: 2024-02-01T20:41:25.602Z
 subcategories:
   - data-storage-management
 seo:

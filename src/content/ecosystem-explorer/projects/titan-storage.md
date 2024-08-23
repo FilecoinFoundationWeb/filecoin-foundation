@@ -13,14 +13,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/titan-storage_logo_white.png
-  alt: Titan Storage Logo
 website: https://storage.titannet.io
-featured-content:
 repo: https://github.com/Filecoin-Titan/titan-storage-sdk
 twitter: https://twitter.com/titannet_dao/
-video-url:
 year-joined: 2023-04-01T13:04:49.683000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

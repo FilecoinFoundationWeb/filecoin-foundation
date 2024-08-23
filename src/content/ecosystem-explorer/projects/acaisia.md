@@ -1,12 +1,10 @@
 ---
 created-on: 2024-01-12T19:56:32.789000Z
-news-update:
 title: Acaisia
 updated-on: 2024-01-12T19:56:32.835000Z
 published-on: 2024-01-12T19:56:32.887000Z
 image:
   src: /assets/images/acaisia-logo_white.png
-  alt: Acaisia Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -21,9 +19,6 @@ website: https://acaisia.com
 repo: https://github.com/team-acaisia
 tech:
   - filecoin
-featured-content:
-twitter:
-video-url:
 year-joined: 2023-09-01T18:56:33.186000Z
 seo:
   title: Acaisia

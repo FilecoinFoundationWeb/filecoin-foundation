@@ -1,8 +1,8 @@
 ---
 title: "OKcontract"
-created-on: "2024-02-01T15:47:28.401Z"
-updated-on: "2024-02-01T15:47:28.419Z"
-published-on: "2024-02-01T15:47:28.434Z"
+created-on: 2024-02-01T15:47:28.401Z
+updated-on: 2024-02-01T15:47:28.419Z
+published-on: 2024-02-01T15:47:28.434Z
 description:
   "OKcontract is as an interaction layer between the user interface and
   the smart contracts. OKcontract makes it easier for developers to specify transactions,
@@ -14,14 +14,9 @@ tech:
   - "ipfs"
 image:
   src: "/assets/images/okcontract-logo-white.png"
-  alt: "OKcontract"
 website: "https://okcontract.com/"
-featured-content:
 repo: "https://github.com/okcontract"
-twitter:
-video-url:
-year-joined: "2022-09-11T14:47:28.444Z"
-news-update:
+year-joined: 2022-09-11T14:47:28.444Z
 subcategories:
   - developer-tools
 seo:

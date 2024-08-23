@@ -12,14 +12,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
-  alt: dDrive Logo
-featured-content:
 website: https://app.valist.io/d-drive/d-drive-pwa
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-03T17:23:12.660000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

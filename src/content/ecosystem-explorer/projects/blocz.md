@@ -14,14 +14,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/blocz.png
-  alt: Blocz Logo
 website: https://www.blocz.io/
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-05T02:22:34.382000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:
