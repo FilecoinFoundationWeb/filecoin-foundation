@@ -3,7 +3,6 @@
 import { Listbox } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
-import { DEFAULT_CATEGORY } from '@/components/Category'
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
@@ -16,6 +15,8 @@ import {
 } from '@/types/categoryTypes'
 
 import { getTotalCategoryCount } from '@/utils/getCountForResetCategory'
+
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 type CategoryListboxProps = {
   selected: CategoryId | undefined

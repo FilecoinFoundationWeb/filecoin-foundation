@@ -1,6 +1,6 @@
-import { DEFAULT_CATEGORY } from '@/components/Category'
-
 import { CategoryCounts } from '@/types/categoryTypes'
+
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 export function getTotalCategoryCount(counts?: CategoryCounts) {
   if (!counts) return undefined
