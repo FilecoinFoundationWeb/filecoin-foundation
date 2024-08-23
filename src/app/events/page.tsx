@@ -12,7 +12,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CategoryResetButton } from '@/components/CountAndReset'
+import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -25,7 +25,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { NextServerSearchParams } from '@/types/searchParams'
 
-import { hasNoFiltersApplied } from '@/utils/areFiltersReset'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
   getEventsCategorySettings,

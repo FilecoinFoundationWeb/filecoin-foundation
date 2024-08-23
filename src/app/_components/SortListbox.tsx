@@ -8,7 +8,7 @@ import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
-import { SortOption, type SortId } from '@/types/sortTypes'
+import { type SortOption, type SortId } from '@/types/sortTypes'
 
 type SortListboxProps = {
   sortId: SortId

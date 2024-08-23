@@ -29,12 +29,12 @@ export function Category({ query, options, counts }: CategoryProps) {
     setSelectedCategory(query || DEFAULT_CATEGORY)
   }, [query])
 
-  function handleCategoryChange(newCategory: CategoryId) {
-    setSelectedCategory(newCategory)
-    updateCategoryParams(newCategory)
+  function handleChange(category: CategoryId) {
+    setSelectedCategory(category)
+    updateParams(category)
   }
 
-  function updateCategoryParams(category: CategoryId) {
+  function updateParams(category: CategoryId) {
     if (category === DEFAULT_CATEGORY) {
       resetSearchParams()
     } else {
@@ -49,7 +49,7 @@ export function Category({ query, options, counts }: CategoryProps) {
           selected={selectedCategory}
           options={options}
           counts={counts}
-          onChange={handleCategoryChange}
+          onChange={handleChange}
         />
       </div>
       <div className="block lg:hidden">
@@ -57,7 +57,7 @@ export function Category({ query, options, counts }: CategoryProps) {
           selected={selectedCategory}
           options={options}
           counts={counts}
-          onChange={handleCategoryChange}
+          onChange={handleChange}
         />
       </div>
     </>

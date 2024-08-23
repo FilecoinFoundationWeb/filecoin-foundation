@@ -7,8 +7,11 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SortListbox } from '@/components/SortListbox'
 
-import { SortOption, type SortId } from '@/types/sortTypes'
-import { DefaultSortType } from '@/types/sortTypes'
+import {
+  type DefaultSortType,
+  type SortId,
+  type SortOption,
+} from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
 
