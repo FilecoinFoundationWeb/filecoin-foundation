@@ -5,7 +5,6 @@ updated-on: 2024-04-24T19:06:44.057Z
 published-on: 2024-04-24T19:06:44.068Z
 image:
   src: /assets/images/reppo.png
-  alt: Reppo Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -14,14 +13,11 @@ tags:
   - depin
 description: Building a sovereign AI modelling network to address DePIN
   verification and broadly assess the quality of crypto networks.
-website: reppo.xyz
+website: https://reppo.xyz/
 tech:
   - filecoin
 repo: https://github.com/ReppoLabs
-news-update: null
-featured-content: null
 twitter: https://twitter.com/Repponetwork
-video-url: null
 year-joined: 2024-04-24T19:06:44.078Z
 seo:
   title: Reppo

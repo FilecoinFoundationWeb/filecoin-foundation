@@ -16,7 +16,6 @@ tech:
   - filecoin
   - ipfs
 twitter: https://x.com/FilecoinDeStor
-video-url: null
 year-joined: 2024-04-01T16:28:00.000Z
 seo:
   twitter:

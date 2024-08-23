@@ -1,8 +1,8 @@
 ---
 title: "TRES.Finance"
-created-on: "2024-01-12T20:09:29.892Z"
-updated-on: "2024-01-12T20:09:29.911Z"
-published-on: "2024-01-12T20:09:29.923Z"
+created-on: 2024-01-12T20:09:29.892Z
+updated-on: 2024-01-12T20:09:29.911Z
+published-on: 2024-01-12T20:09:29.923Z
 description:
   "TRES.Finance was created two years ago to fill a gap in the market for
   an enterprise-grade accounting, audit, fund admin, and treasury management platform
@@ -17,16 +17,10 @@ tech:
   - "filecoin"
 image:
   src: "/assets/images/tres_logo_white.png"
-  alt: "TRES.Finance Logo"
 website: "https://tres.finance/"
-featured-content:
-repo:
 twitter: "https://twitter.com/TresDotFinance"
 video-url: "https://www.youtube.com/embed/4YHdkICYvJc"
-year-joined: "2024-01-12T20:09:29.935Z"
-news-update:
-subcategories:
-  - finance
+year-joined: 2024-01-12T20:09:29.935Z
 seo:
   title: Tres Finance
   description: Tres Finance provides decentralized finance solutions for secure transactions.

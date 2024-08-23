@@ -13,16 +13,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/cw-logo-square-1-.png
-  alt: Cryptoworth Logo
 website: https://Cryptoworth.com
-featured-content:
-repo:
 twitter: https://twitter.com/cryptoworthapp/
-video-url:
 year-joined: 2023-08-01T20:34:10.316000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Cryptoworth
   description:

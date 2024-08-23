@@ -15,16 +15,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/660732908635f037e25b982f_bifrost.png
-  alt: Bifrost Finance Logo
 website: https://bifrost.finance/
-featured-content:
-repo:
 twitter: https://twitter.com/Bifrost
-video-url:
 year-joined: 2024-03-29T21:28:48.639000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Bifrost Finance
   description:

@@ -13,14 +13,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073290d5091847d125282a_astral.png
-  alt: Astral Logo
 website: https://astral.global/
-featured-content:
-repo:
 twitter: https://twitter.com/astralprotocol
-video-url:
 year-joined: 2024-03-29T21:28:48.588000Z
-news-update:
 subcategories:
   - data-retrieval
 seo:

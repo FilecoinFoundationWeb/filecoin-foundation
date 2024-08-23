@@ -11,16 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
-  alt: HashMix
 website: https://fvm.hashmix.org/
-featured-content:
-repo:
 twitter: https://twitter.com/HashMixOfficial
-video-url:
 year-joined: 2020-12-31T15:00:00Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: HashMix
   description:

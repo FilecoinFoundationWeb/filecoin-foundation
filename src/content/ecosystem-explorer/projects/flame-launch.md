@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/flame.png
-  alt: Flame Launch Logo
 website: https://www.flamelaunch.com/
-featured-content:
-repo:
 twitter: https://twitter.com/flamelaunch
-video-url:
 year-joined: 2022-12-01T17:27:13.497000Z
-news-update:
 subcategories:
   - dapp
 seo:

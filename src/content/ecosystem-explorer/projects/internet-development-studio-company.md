@@ -16,14 +16,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/idsc_logo_white.png
-  alt: Internet Development Studio Company Logo
 website: https://internet.dev
-featured-content:
 repo: https://github.com/internet-development
 twitter: https://twitter.com/internetxstudio
-video-url:
 year-joined: 2024-01-12T20:15:45.807000Z
-news-update:
 subcategories:
   - developer-tools
 seo:

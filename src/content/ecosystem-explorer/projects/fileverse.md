@@ -14,14 +14,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/65987305cbcf4ef8c43f229e_fileverse_logo_white.png
-  alt: Fileverse Logo
 website: "https://fileverse.io"
 featured-content: "https://www.youtube.com/watch?v=-RTvaZVSzi0&list=PL_0VrY55uV1_B19kuAg-ExQ-Wa2d1hCbf&index=5"
 repo: https://github.com/fileverse
 twitter: https://twitter.com/fileverse
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

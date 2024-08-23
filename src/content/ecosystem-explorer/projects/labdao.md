@@ -12,14 +12,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/66073294cc627368322b763a_labdao.png
-  alt: LabDAO
 website: https://labdao.xyz/
-featured-content:
-repo:
 twitter: https://twitter.com/lab_dao
-video-url:
 year-joined: 2024-03-29T21:28:53.071000Z
-news-update:
 subcategories:
   - decentralized-science
 seo:

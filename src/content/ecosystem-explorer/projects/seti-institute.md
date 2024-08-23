@@ -1,8 +1,8 @@
 ---
 title: SETI Institute
-created-on: "2024-01-04T22:40:27.937Z"
-updated-on: "2024-01-05T21:38:49.734Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:27.937Z
+updated-on: 2024-01-05T21:38:49.734Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "The SETI Institute is a non-profit research organization with the mission
   to lead humanity's quest to understand the origins and prevalence of life and intelligence
@@ -15,14 +15,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/6597517b30e548a865cc3d71_seti-institute-new-logo-design.png
-  alt: SETI Institute Logo
 website: "https://www.seti.org/"
-repo:
 twitter: "https://twitter.com/SETIInstitute"
 featured-content: "https://destor.com/seti"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - decentralized-science
 seo:

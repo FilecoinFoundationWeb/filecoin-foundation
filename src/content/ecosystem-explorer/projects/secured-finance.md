@@ -11,16 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/660732963cc8098d637f66b8_securedfinance.png
-  alt: Secured Finance Logo
 website: https://secured-finance.com/
-featured-content:
-repo:
 twitter: https://twitter.com/Secured_Fi
-video-url:
 year-joined: 2024-03-29T21:28:54.282000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Secured Finance
   description: Secured Finance offers decentralized finance solutions for secure transactions.

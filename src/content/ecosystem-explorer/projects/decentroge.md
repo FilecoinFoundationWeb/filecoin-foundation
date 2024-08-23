@@ -5,7 +5,6 @@ updated-on: 2024-04-03T17:57:20.173Z
 published-on: 2024-04-03T17:57:20.191Z
 image:
   src: /assets/images/decentroge.png
-  alt: Decentroge Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -16,11 +15,6 @@ description: Decentroge is a decentralized online storage platform with NFT and
 website: https://decentroge.netlify.app/
 tech:
   - ipfs
-repo: null
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-04-03T17:57:20.241Z
 seo:
   title: Decentroge

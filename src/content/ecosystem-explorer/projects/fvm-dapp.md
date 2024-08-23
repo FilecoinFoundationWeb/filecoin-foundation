@@ -14,14 +14,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/fvm-dapp.png
-  alt: FVM Dapp Logo
 website: https://www.npmjs.com/package/create-fvm-dapp
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-04T20:33:26.476000Z
-news-update:
 subcategories:
   - dapp
 seo:

@@ -15,14 +15,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
-  alt: Filecoin Saturn Logo
 website: https://saturn.tech
-featured-content:
 repo: https://github.com/filecoin-saturn/L1-node
-twitter:
-video-url:
 year-joined: 2024-01-19T18:46:07.011000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

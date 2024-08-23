@@ -1,4 +1,4 @@
-import { formatISO, parseISO, isValid } from 'date-fns'
+import { formatISO } from 'date-fns'
 
 import { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
@@ -9,47 +9,14 @@ import { getEventsData } from '@/utils/getEventData'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-type TimeStamp = Pick<DynamicBaseData, 'updatedOn' | 'publishedOn'>
-
-type GenericEntryData = TimeStamp & { slug: string }
+type GenericEntryData = Pick<DynamicBaseData, 'updatedOn'> & { slug: string }
 
 function generateDynamicRoutes<T extends GenericEntryData>(
   data: Array<T>,
   basePath: string,
-  timestampKey: keyof TimeStamp = 'updatedOn',
 ) {
   return data.map((item) => {
-    const timestamp = item[timestampKey]
-
-    const lastModifiedDate = (() => {
-      if (timestamp instanceof Date) {
-        return formatISO(timestamp)
-      } else if (typeof timestamp === 'string') {
-        const parsedDate = parseISO(timestamp)
-        return isValid(parsedDate)
-          ? formatISO(parsedDate)
-          : formatISO(new Date())
-      } else {
-        return formatISO(new Date())
-      }
-    })()
-
-    return {
-      url: `${BASE_URL}${basePath}/${item.slug}`,
-      lastModified: lastModifiedDate,
-    }
-  })
-}
-
-function generateDynamicRoutesLegacy<
-  T extends { slug: string; updatedOn?: string; publishedOn?: string },
->(
-  data: T[],
-  basePath: string,
-  timestampKey: 'updatedOn' | 'publishedOn' = 'updatedOn',
-) {
-  return data.map((item) => {
-    const lastModifiedDate = item[timestampKey] ?? new Date().toISOString()
+    const lastModifiedDate = formatISO(item.updatedOn || new Date())
 
     return {
       url: `${BASE_URL}${basePath}/${item.slug}`,
@@ -68,7 +35,7 @@ export default function sitemap() {
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
   const ecosystemProjects = getEcosystemProjectsData()
-  const dynamicEcosystemProjectRoutes = generateDynamicRoutesLegacy(
+  const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
     ecosystemProjects,
     PATHS.ECOSYSTEM_EXPLORER.path,
   )

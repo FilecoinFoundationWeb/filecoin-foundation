@@ -13,14 +13,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073567a94418c44efc8fa2_datalatte.png
-  alt: Datalatte Logo
-featured-content:
 website: https://www.datalatte.com/
-repo:
-twitter:
-video-url:
 year-joined: 2024-03-29T21:28:49.704000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

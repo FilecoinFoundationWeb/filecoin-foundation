@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073295e0ea12e6b43cd691_ledgermail.png
-  alt: LedgerMail Logo
 website: https://ledgermail.io
-featured-content:
-repo:
 twitter: https://twitter.com/LedgerMail
-video-url:
 year-joined: 2024-03-29T21:28:53.257000Z
-news-update:
 subcategories:
   - wallets-identity-authentication
 seo:

@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/659872fd67c584b3534c7331_filedrive_logo_white.png
-  alt: FileDrive Logo
 website: "https://filedrive.io"
-featured-content:
 repo: "https://github.com/filedrive-team"
 twitter: "https://twitter.com/FileDrive1"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

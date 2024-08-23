@@ -13,14 +13,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073297a94418c44efa178a_thirdstorage.png
-  alt: Third Storage Logo
 website: https://thirdstorage.com
-featured-content:
-repo:
 twitter: https://twitter.com/thirdstorage
-video-url:
 year-joined: 2024-03-29T21:28:55.910000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

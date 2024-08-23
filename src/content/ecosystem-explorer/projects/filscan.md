@@ -15,14 +15,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974a1e84648b50ab0c7214_filscanlogo-text.png
-  alt: Filscan Logo
 website: https://filscan.io/en
-featured-content:
-repo:
 twitter: https://twitter.com/filscanio
-video-url:
-year-joined:
-news-update:
 subcategories:
   - network-tools
 seo:

@@ -17,14 +17,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/fog-works-logo-white.png
-  alt: Fog Works Logo
-website: fogworks.io
-featured-content:
-repo:
+website: https://fogworks.io/
 twitter: https://twitter.com/fogworksinc
-video-url:
 year-joined: 2022-11-22T19:44:10.444000Z
-news-update:
 subcategories:
   - infrastructure
 seo:

@@ -17,14 +17,11 @@ tech:
   - filecoin
 image:
   src: /assets/images/archly-logo-circle-1000.png
-  alt: Archly Logo
 website: https://archly.fi
-featured-content:
 repo: https://github.com/ArchlyFi
 twitter: https://twitter.com/archlyfinance/
 video-url: https://www.youtube.com/embed/8rt11F3qG1I
 year-joined: 2024-04-25T17:07:12.859000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

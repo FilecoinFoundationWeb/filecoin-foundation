@@ -5,7 +5,6 @@ updated-on: 2024-04-03T16:51:43.470Z
 published-on: 2024-04-03T16:51:43.478Z
 image:
   src: /assets/images/daln.png
-  alt: Data as Labor Network (DALN) Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -17,10 +16,7 @@ website: https://app.daln.io/
 tech:
   - filecoin
 repo: https://github.com/DALN-app/monorepo_v2
-news-update: null
-featured-content: null
 twitter: https://twitter.com/DataHaus_
-video-url: null
 year-joined: 2024-04-03T16:51:43.504Z
 seo:
   title: DALN

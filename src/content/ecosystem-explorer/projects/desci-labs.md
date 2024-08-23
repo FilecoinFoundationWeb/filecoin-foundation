@@ -14,14 +14,11 @@ tech:
   - ipfs
 image:
   src: /assets/images/659872e921cfae476602eef2_desci_logo_white.png
-  alt: DeSci Labs Logo
 website: https://desci.com
 featured-content: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science/
 repo: https://github.com/desci-labs
 twitter: https://twitter.com/DeSciLabs
 video-url: https://www.youtube.com/embed/q_5hAe2AzhE
-year-joined:
-news-update:
 subcategories:
   - decentralized-science
 seo:

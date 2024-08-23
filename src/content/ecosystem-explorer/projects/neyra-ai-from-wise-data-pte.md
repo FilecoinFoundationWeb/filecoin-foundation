@@ -1,8 +1,8 @@
 ---
 title: "Neyra AI from Wise Data PTE"
-created-on: "2024-02-22T19:39:58.152Z"
-updated-on: "2024-02-22T19:39:58.175Z"
-published-on: "2024-02-22T19:39:58.195Z"
+created-on: 2024-02-22T19:39:58.152Z
+updated-on: 2024-02-22T19:39:58.175Z
+published-on: 2024-02-22T19:39:58.195Z
 description:
   "Neyra AI is an innovative personal assistant and storage solution designed
   to enhance productivity and asset management."
@@ -11,16 +11,8 @@ tags:
   - "ai-productivity-and-utilities"
 tech:
   - filecoin
-image:
-  src: # "/assets/images/logo-2-.png"
-  alt: "Neyra AI"
 website: "https://drive.neyra.ai/"
-featured-content:
-repo:
-twitter:
-video-url:
-year-joined: "2023-11-01T18:39:58.216Z"
-news-update:
+year-joined: 2023-11-01T18:39:58.216Z
 subcategories:
   - artificial-productivity-utilities
 seo:

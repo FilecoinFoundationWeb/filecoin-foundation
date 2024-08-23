@@ -15,14 +15,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974a51b7581c4ee8e3b899_huddle.png
-  alt: Huddle01 Logo
 website: "https://www.huddle01.com"
-featured-content:
 repo: "https://github.com/Huddle01"
 twitter: "https://twitter.com/huddle01com"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - photo-video
 seo:

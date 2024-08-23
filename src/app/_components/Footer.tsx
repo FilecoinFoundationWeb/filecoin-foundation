@@ -1,16 +1,15 @@
-import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
+import { NewsletterForm } from '@/components/NewsletterForm'
 import { Social } from '@/components/Social'
 import { TextLink } from '@/components/TextLink'
 
 import { footerNavigationItems } from '@/constants/navigationItems'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export function Footer() {
   return (
     <footer className="mt-16 flex flex-col gap-6">
       <hr />
-      <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-5">
+      <div className="my-6 grid grid-cols-1 gap-y-6 sm:grid-cols-5">
         <div className="sm:col-span-2">
           <Logo />
         </div>
@@ -20,13 +19,7 @@ export function Footer() {
             decentralized web, subscribe to Filecoin Foundation’s newsletter,
             The Upload.
           </p>
-          <Button
-            className="w-full sm:w-auto"
-            variant="ghost"
-            href={FILECOIN_FOUNDATION_URLS.newsletter}
-          >
-            Subscribe to Newsletter
-          </Button>
+          <NewsletterForm />
         </div>
       </div>
 

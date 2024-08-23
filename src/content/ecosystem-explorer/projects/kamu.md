@@ -14,14 +14,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/kamu-logo.svg
-  alt: Kamu Logo
 website: https://www.kamu.dev/
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-04T02:05:42.624000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

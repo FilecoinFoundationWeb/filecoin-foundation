@@ -18,14 +18,11 @@ tech:
   - filecoin
 image:
   src: /assets/images/nebulahblock_logo_white.png
-  alt: Nebula Block Logo
-featured-content:
 website: https://www.nebulablock.com/
 repo: https://github.com/Nebula-Block-Data
 twitter: https://twitter.com/nebulablockdata
 video-url: https://www.youtube.com/embed/Sl4vI4QgFts
 year-joined: 2020-06-15T13:58:36.727000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

@@ -12,14 +12,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/6597243713b6cbe85dad7ea4_tkwzgqypzrhnrp1i_jixqqpgoeqydofsk6p7muppqji.png
-  alt: WeatherXM Logo
 website: "https://weatherxm.com/"
-featured-content:
 repo: "https://github.com/WeatherXM/docs"
 twitter: "https://twitter.com/weatherxm"
 video-url: "https://www.youtube.com/embed/w7_wLlA6n8I"
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

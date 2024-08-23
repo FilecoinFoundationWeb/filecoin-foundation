@@ -13,14 +13,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/backedby.webp
-  alt: BackedBy Logo
 website: https://backed.by/
-featured-content:
-repo:
 twitter: https://twitter.com/backedbyapp?lang=en
-video-url:
 year-joined: 2024-04-05T17:55:00.818000Z
-news-update:
 subcategories:
   - dapp
 seo:

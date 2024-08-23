@@ -16,14 +16,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-  alt: Filecoin Foundation Logo
 website: https://fil.org
 featured-content: https://fil.org/blog/
-repo:
 twitter: https://twitter.com/FilFoundation
-video-url:
-year-joined:
-news-update:
 subcategories:
   - network-tools
 seo:

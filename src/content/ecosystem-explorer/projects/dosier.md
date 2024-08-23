@@ -5,7 +5,6 @@ updated-on: 2024-04-05T23:07:24.311Z
 published-on: 2024-04-05T23:07:24.324Z
 image:
   src: /assets/images/dosier.png
-  alt: Dosier Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -15,11 +14,7 @@ description: Decentralized ZK Content Delivery Network
 website: https://dosier.ai/
 tech:
   - filecoin
-repo: null
-news-update: null
-featured-content: null
 twitter: https://twitter.com/dosier_ai
-video-url: null
 year-joined: 2024-04-05T23:07:24.336Z
 seo:
   title: Dosier

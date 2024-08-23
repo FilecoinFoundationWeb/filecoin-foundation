@@ -13,14 +13,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/screenshot-2024-02-07-at-11.20.48-am.png
-  alt: FoxWallet Logo
 website: "https://foxwallet.com/en"
-repo: "github.com/foxwallet"
-featured-content:
+repo: https://github.com/foxwallet
 twitter: "https://twitter.com/FoxWallet"
-video-url:
 year-joined: 2024-02-27T20:36:33.551000Z
-news-update:
 subcategories:
   - wallets-identity-authentication
 seo:

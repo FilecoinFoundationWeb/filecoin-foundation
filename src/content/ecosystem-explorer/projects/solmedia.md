@@ -5,7 +5,6 @@ updated-on: 2024-04-25T17:21:06.439Z
 published-on: 2024-04-25T17:21:06.448Z
 image:
   src: /assets/images/solmedia.png
-  alt: Solmedia Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -17,11 +16,7 @@ description: Decentralized content sharing platform on Solana, integrating both
 website: https://sm.network
 tech:
   - ipfs
-repo: null
-news-update: null
-featured-content: null
 twitter: https://x.com/SolMediaTech
-video-url: null
 year-joined: 2024-04-25T17:21:06.512Z
 seo:
   title: SolMedia
