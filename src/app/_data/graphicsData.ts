@@ -24,9 +24,9 @@ import security4 from '@/assets/graphics/Filorg_Security4.webp'
 import security5 from '@/assets/graphics/Filorg_Security5.webp'
 
 export const graphicsData: Record<string, StaticImageProps> = {
-  home: {
-    data: home,
-    alt: 'A grand library with modern server racks and a large network of spheres above, symbolizing data and technology.',
+  imageFallback: {
+    data: imageFallback,
+    alt: 'Image coming soon',
   },
   about: {
     data: about,
@@ -80,6 +80,18 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: grants,
     alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
   },
+  home: {
+    data: home,
+    alt: 'A grand library with modern server racks and a large network of spheres above, symbolizing data and technology.',
+  },
+  orbit: {
+    data: orbit,
+    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
+  },
+  rAndD: {
+    data: rAndD,
+    alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
+  },
   security: {
     data: security,
     alt: 'An illustration depicting a large, old-fashioned key unlocking a futuristic padlock. The scene is set against a light background, with various abstract geometric shapes and elements around the key and lock, suggesting a theme of digital security or unlocking digital information.',
@@ -99,17 +111,5 @@ export const graphicsData: Record<string, StaticImageProps> = {
   security5: {
     data: security5,
     alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
-  },
-  orbit: {
-    data: orbit,
-    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
-  },
-  rAndD: {
-    data: rAndD,
-    alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
-  },
-  imageFallback: {
-    data: imageFallback,
-    alt: 'Image coming soon',
   },
 }
