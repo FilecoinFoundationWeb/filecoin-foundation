@@ -4,8 +4,8 @@ import { clsx } from 'clsx'
 
 import {
   type CategoryCounts,
+  type CategoryId,
   type CategoryOption,
-  type CategorySetting,
 } from '@/types/categoryTypes'
 
 const touchTarget = {
@@ -14,11 +14,11 @@ const touchTarget = {
   offsetClassX: '-ml-4',
 } as const
 
-type CategorySelectProps = {
-  selectedCategory: CategoryOption
-  categoryOptions: CategorySetting[]
-  categoryCounts?: CategoryCounts
-  onCategoryChange: (selectedCategory: CategoryOption) => void
+type CategorySidebarProps = {
+  selected: CategoryId
+  options: CategoryOption[]
+  counts?: CategoryCounts
+  onChange: (selected: CategoryId) => void
 }
 
 type CategoryContainerProps = {
@@ -33,28 +33,28 @@ type CategoryItemProps = {
   handleClick: () => void
 }
 
-export function CategorySelect({
-  selectedCategory,
-  categoryOptions,
-  categoryCounts,
-  onCategoryChange,
-}: CategorySelectProps) {
+export function CategorySidebar({
+  selected,
+  options,
+  counts,
+  onChange,
+}: CategorySidebarProps) {
   return (
-    <CategorySelect.Container>
-      {categoryOptions.map((option) => (
-        <CategorySelect.Item
+    <CategorySidebar.Container>
+      {options.map((option) => (
+        <CategorySidebar.Item
           key={option.id}
           name={option.name}
-          isSelected={selectedCategory === option.id}
-          count={categoryCounts?.[option.id]}
-          handleClick={() => onCategoryChange(option.id)}
+          isSelected={selected === option.id}
+          count={counts?.[option.id]}
+          handleClick={() => onChange(option.id)}
         />
       ))}
-    </CategorySelect.Container>
+    </CategorySidebar.Container>
   )
 }
 
-CategorySelect.Container = function List({
+CategorySidebar.Container = function List({
   children,
   as: Component = 'ul',
 }: CategoryContainerProps) {
@@ -71,7 +71,7 @@ CategorySelect.Container = function List({
   )
 }
 
-CategorySelect.Item = function Item({
+CategorySidebar.Item = function Item({
   name,
   count,
   isSelected,
@@ -79,7 +79,7 @@ CategorySelect.Item = function Item({
 }: CategoryItemProps) {
   return (
     <li>
-      <CategorySelect.Button
+      <CategorySidebar.Button
         name={name}
         count={count}
         isSelected={isSelected}
@@ -89,7 +89,7 @@ CategorySelect.Item = function Item({
   )
 }
 
-CategorySelect.Button = function Button({
+CategorySidebar.Button = function Button({
   name,
   count,
   isSelected,

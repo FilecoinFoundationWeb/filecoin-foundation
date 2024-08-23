@@ -6,22 +6,22 @@ import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { CategoryListbox } from '@/components/CategoryListbox'
-import { CategorySelect } from '@/components/CategorySelect'
+import { CategorySidebar } from '@/components/CategorySidebar'
 
-import type { CategorySetting, CategoryOption } from '@/types/categoryTypes'
+import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
 
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
-  settings: CategorySetting[]
+  options: CategoryOption[]
   counts?: ReturnType<typeof useCategory>['categoryCounts']
 }
 
 export const DEFAULT_CATEGORY = 'All'
 
-export function Category({ query, settings, counts }: CategoryProps) {
-  const [selectedCategory, setSelectedCategory] = useState<CategoryOption>(
+export function Category({ query, options, counts }: CategoryProps) {
+  const [selectedCategory, setSelectedCategory] = useState<CategoryId>(
     query || DEFAULT_CATEGORY,
   )
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
@@ -30,12 +30,12 @@ export function Category({ query, settings, counts }: CategoryProps) {
     setSelectedCategory(query || DEFAULT_CATEGORY)
   }, [query])
 
-  function handleCategoryChange(newCategory: CategoryOption) {
+  function handleCategoryChange(newCategory: CategoryId) {
     setSelectedCategory(newCategory)
     updateCategoryParams(newCategory)
   }
 
-  function updateCategoryParams(category: CategoryOption) {
+  function updateCategoryParams(category: CategoryId) {
     if (category === DEFAULT_CATEGORY) {
       resetSearchParams()
     } else {
@@ -46,19 +46,19 @@ export function Category({ query, settings, counts }: CategoryProps) {
   return (
     <>
       <div className="hidden lg:block">
-        <CategorySelect
-          selectedCategory={selectedCategory}
-          categoryOptions={settings}
-          categoryCounts={counts}
-          onCategoryChange={handleCategoryChange}
+        <CategorySidebar
+          selected={selectedCategory}
+          options={options}
+          counts={counts}
+          onChange={handleCategoryChange}
         />
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
-          selectedCategory={selectedCategory}
-          categoryOptions={settings}
-          categoryCounts={counts}
-          onCategoryChange={handleCategoryChange}
+          selected={selectedCategory}
+          options={options}
+          counts={counts}
+          onChange={handleCategoryChange}
         />
       </div>
     </>

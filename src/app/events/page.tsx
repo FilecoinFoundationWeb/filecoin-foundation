@@ -56,7 +56,7 @@ type Props = {
 }
 
 const events = getEventsData()
-const { categorySettings, validCategoryOptions } = getEventsCategorySettings()
+const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
 const { featured_entry, seo } = attributes
 
 if (!featured_entry) {
@@ -94,7 +94,7 @@ export default function Events({ searchParams }: Props) {
     useEventsCategory({
       searchParams,
       entries: sortedResults,
-      validCategoryOptions,
+      validCategoryIds,
     })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -139,7 +139,7 @@ export default function Events({ searchParams }: Props) {
             category={
               <Category
                 query={categoryQuery}
-                settings={categorySettings}
+                options={categoryOptions}
                 counts={categoryCounts}
               />
             }
@@ -167,7 +167,7 @@ export default function Events({ searchParams }: Props) {
               category={
                 <Category
                   query={categoryQuery}
-                  settings={categorySettings}
+                  options={categoryOptions}
                   counts={categoryCounts}
                 />
               }

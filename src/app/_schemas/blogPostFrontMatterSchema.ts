@@ -7,9 +7,9 @@ import {
   createCategorySchema,
 } from '@/utils/categoryUtils'
 
-const { validCategoryOptions } = getCategorySettings('blog_posts')
+const { validCategoryIds } = getCategorySettings('blog_posts')
 
-const categorySchema = createCategorySchema(validCategoryOptions)
+const categorySchema = createCategorySchema(validCategoryIds)
 
 export const BlogPostFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),

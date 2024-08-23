@@ -52,8 +52,7 @@ type Props = {
 
 const posts = getBlogPostsData()
 
-const { categorySettings, validCategoryOptions } =
-  getCategorySettings('blog_posts')
+const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
 
 const { featured_entry, seo } = attributes
 
@@ -91,7 +90,7 @@ export default function Blog({ searchParams }: Props) {
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
-    validCategoryOptions: validCategoryOptions,
+    validCategoryIds: validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -138,7 +137,7 @@ export default function Blog({ searchParams }: Props) {
             category={
               <Category
                 query={categoryQuery}
-                settings={categorySettings}
+                options={categoryOptions}
                 counts={categoryCounts}
               />
             }
@@ -167,7 +166,7 @@ export default function Blog({ searchParams }: Props) {
               category={
                 <Category
                   query={categoryQuery}
-                  settings={categorySettings}
+                  options={categoryOptions}
                   counts={categoryCounts}
                 />
               }

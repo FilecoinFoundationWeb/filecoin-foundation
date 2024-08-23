@@ -65,7 +65,7 @@ const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
 
-const { categorySettings, validCategoryOptions } =
+const { categoryOptions, validCategoryIds } =
   getCategorySettingsFromMap(categoryData)
 
 export default function EcosystemExplorer({ searchParams }: Props) {
@@ -85,7 +85,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   const { categoryQuery, categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
-    validCategoryOptions: validCategoryOptions,
+    validCategoryIds: validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -120,7 +120,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             gapSize="wide"
             results={<ResultsAndReset results={categorizedResults.length} />}
             category={
-              <Category query={categoryQuery} settings={categorySettings} />
+              <Category query={categoryQuery} options={categoryOptions} />
             }
           />
           <FilterContainer.MainWrapper>
@@ -145,7 +145,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 />
               }
               category={
-                <Category query={categoryQuery} settings={categorySettings} />
+                <Category query={categoryQuery} options={categoryOptions} />
               }
             />
             <FilterContainer.ContentWrapper>

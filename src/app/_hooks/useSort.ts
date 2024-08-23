@@ -37,16 +37,14 @@ export function useSort<Entry extends Object>({
   const validatedSortId = getValidatedSortId(normalizedQuery, defaultSortId)
 
   const sortedResults = useMemo(() => {
-    if (ALPHABETICAL_SORT_IDS.includes(validatedSortId as AlphabeticalSortId)) {
+    if (ALPHABETICAL_SORT_IDS.includes(validatedSortId)) {
       return sortEntriesAlphabetically({
         entries,
         sortId: validatedSortId as AlphabeticalSortId,
       })
     }
 
-    if (
-      CHRONOLOGICAL_SORT_IDS.includes(validatedSortId as ChronologicalSortId)
-    ) {
+    if (CHRONOLOGICAL_SORT_IDS.includes(validatedSortId)) {
       return sortEntriesByDate({
         entries,
         sortBy,

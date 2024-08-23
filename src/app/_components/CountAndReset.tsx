@@ -4,7 +4,7 @@ import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { DEFAULT_CATEGORY } from '@/components/Category'
-import { CategorySelect } from '@/components/CategorySelect'
+import { CategorySidebar } from '@/components/CategorySidebar'
 
 import { getTotalCategoryCount } from '@/utils/getCountForResetCategory'
 
@@ -25,13 +25,13 @@ export function CategoryResetButton({
   }
 
   return (
-    <CategorySelect.Container as="div">
-      <CategorySelect.Button
+    <CategorySidebar.Container as="div">
+      <CategorySidebar.Button
         name={DEFAULT_CATEGORY}
         isSelected={isSelected}
         count={totalCount?.[DEFAULT_CATEGORY]}
         handleClick={handleResetClick}
       />
-    </CategorySelect.Container>
+    </CategorySidebar.Container>
   )
 }

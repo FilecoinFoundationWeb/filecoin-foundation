@@ -10,9 +10,9 @@ const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
 
-const { validCategoryOptions } = getCategorySettingsFromMap(categoryData)
+const { validCategoryIds } = getCategorySettingsFromMap(categoryData)
 
 createCategoryTests({
   pathConfig: PATHS.ECOSYSTEM_EXPLORER,
-  categories: validCategoryOptions,
+  categories: validCategoryIds,
 })
