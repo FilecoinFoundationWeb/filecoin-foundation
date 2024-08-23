@@ -1,6 +1,6 @@
 import {
   Event as SchemaEvent,
-  Place,
+  Event as EventSchema,
   VirtualLocation,
   WithContext,
 } from 'schema-dts'
