@@ -46,7 +46,7 @@ function getLocation({
 }
 
 export function generateStructuredData(data: Event): WithContext<SchemaEvent> {
-  const {
+export function generateStructuredData(data: Event): WithContext<EventSchema> {
     title,
     slug,
     description,
