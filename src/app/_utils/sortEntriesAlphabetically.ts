@@ -12,12 +12,12 @@ export function sortEntriesAlphabetically<Entry extends EntryWithTitle>({
   sortId,
 }: SortEntriesParams<Entry>): Entry[] {
   const sortedEntries = [...entries].sort((a, b) => {
-    const nameA = (a.title || '').toLowerCase()
-    const nameB = (b.title || '').toLowerCase()
+    const titleA = (a.title || '').toLowerCase()
+    const titleB = (b.title || '').toLowerCase()
 
     return sortId === 'z-a'
-      ? nameB.localeCompare(nameA)
-      : nameA.localeCompare(nameB)
+      ? titleB.localeCompare(titleA)
+      : titleA.localeCompare(titleB)
   })
 
   return sortedEntries
