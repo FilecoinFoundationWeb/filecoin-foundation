@@ -22,7 +22,7 @@ import { attributes } from '@/content/pages/home.md'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
-import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 const ecosystemProjects = getEcosystemProjectsData()
 
@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <NoBreadCrumbsLayout>
       <PageLayout>
-        <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
+        <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <PageHeader
           title={header.title}
           description={header.description}

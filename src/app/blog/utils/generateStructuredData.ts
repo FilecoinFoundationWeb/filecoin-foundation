@@ -7,7 +7,7 @@ import { generateWebPageStructuredData } from '@/utils/generateWebPageStructured
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
-import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 export function generateStructuredData(
   posts: Array<BlogPost>,
@@ -21,7 +21,7 @@ export function generateStructuredData(
 
   return {
     ...baseData,
-    publisher: BASE_ORGANIZATION_SCHEMA,
+    publisher: ORGANIZATION_SCHEMA_BASE,
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: posts.slice(0, 5).map((post, index) => ({
