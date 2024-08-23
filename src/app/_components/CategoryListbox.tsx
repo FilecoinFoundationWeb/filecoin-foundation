@@ -14,7 +14,7 @@ import {
   type CategoryOption,
 } from '@/types/categoryTypes'
 
-import { getTotalCategoryCount } from '@/utils/getCountForResetCategory'
+import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
 import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
