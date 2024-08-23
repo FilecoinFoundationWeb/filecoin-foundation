@@ -15,7 +15,6 @@ import governance3 from '@/assets/graphics/Filorg_Governance3.png'
 import grants from '@/assets/graphics/Filorg_Grants.png'
 import home from '@/assets/graphics/Filorg_Home.png'
 import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
-import logoFallback from '@/assets/graphics/Filorg_LogoFallback.png'
 import orbit from '@/assets/graphics/Filorg_Orbit.webp'
 import rAndD from '@/assets/graphics/Filorg_RandD.png'
 import security from '@/assets/graphics/Filorg_Security.webp'
@@ -112,9 +111,5 @@ export const graphicsData: Record<string, StaticImageProps> = {
   imageFallback: {
     data: imageFallback,
     alt: 'Image coming soon',
-  },
-  logoFallback: {
-    data: logoFallback,
-    alt: 'Logo coming soon',
   },
 }
