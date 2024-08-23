@@ -1,8 +1,8 @@
 ---
-title: How Decentralized AI and Data Storage is Building Trust in AI
-created-on: 2024-08-21T13:55:00.000000Z
-updated-on: 2024-08-22T13:55:00.000000Z
-published-on: 2024-08-22T13:55:00.000000Z
+title: How Decentralized AI and Data Storage are Building Trust in AI
+created-on: 2024-08-21T13:55:00.000Z
+updated-on: 2024-08-22T13:55:00.000Z
+published-on: 2024-08-22T13:55:00.000Z
 category: use-cases
 description: The world of AI is rapidly growing. For AI models, data is fuel.
   And for AI developers, researchers, and individuals, data is a vital asset.
