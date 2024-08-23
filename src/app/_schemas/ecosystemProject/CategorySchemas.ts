@@ -11,8 +11,8 @@ import {
 
 function createSchemaForDirectory(directoryPath: string) {
   const categoryData = getCategoryDataFromDirectory(directoryPath)
-  const { validCategoryOptions } = getCategorySettingsFromMap(categoryData)
-  return createCategorySchema(validCategoryOptions)
+  const { validCategoryIds } = getCategorySettingsFromMap(categoryData)
+  return createCategorySchema(validCategoryIds)
 }
 
 export const CategorySchema = createSchemaForDirectory(
