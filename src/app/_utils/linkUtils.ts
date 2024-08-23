@@ -1,4 +1,4 @@
-import { Route } from 'next'
+import type { Route } from 'next'
 
 type Link = string | Route
 

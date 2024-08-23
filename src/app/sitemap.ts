@@ -1,6 +1,6 @@
 import { formatISO } from 'date-fns'
 
-import { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
+import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'

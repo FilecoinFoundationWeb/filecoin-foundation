@@ -1,4 +1,4 @@
-import { NextServerSearchParams } from '@/types/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
 function getFirstQueryParam(params: NextServerSearchParams, key: string) {
   const param = params[key]

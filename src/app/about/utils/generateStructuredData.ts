@@ -1,6 +1,6 @@
-import { WebPage, WithContext } from 'schema-dts'
+import type { WebPage, WithContext } from 'schema-dts'
 
-import { SeoMetadata } from '@/types/metadataTypes'
+import type { SeoMetadata } from '@/types/metadataTypes'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 

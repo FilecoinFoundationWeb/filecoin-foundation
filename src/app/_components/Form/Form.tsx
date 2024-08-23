@@ -1,11 +1,7 @@
 import React from 'react'
 
-import {
-  FieldValues,
-  FormProvider,
-  UseFormReturn,
-  SubmitHandler,
-} from 'react-hook-form'
+import type { FieldValues, UseFormReturn, SubmitHandler } from 'react-hook-form'
+import { FormProvider } from 'react-hook-form'
 
 type FormProps<Type extends FieldValues> = {
   onSubmit: SubmitHandler<Type>

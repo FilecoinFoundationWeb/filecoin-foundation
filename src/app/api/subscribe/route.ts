@@ -1,4 +1,4 @@
-import { NextRequest } from 'next/server'
+import { type NextRequest } from 'next/server'
 
 const NEWSLETTER_API_URL = `${process.env.NEWSLETTER_SUBSCRIPTION_API_URL}/publications/${process.env.NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID}/subscriptions`
 const AUTHORIZATION_HEADER = `Bearer ${process.env.NEWSLETTER_SUBSCRIPTION_API_KEY}`

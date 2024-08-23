@@ -1,6 +1,6 @@
 import matter from 'gray-matter'
 
-import { PathConfig } from '../../src/app/_constants/paths'
+import type { PathConfig } from '../../src/app/_constants/paths'
 import { verifyCanonicalLink } from '../support/verifyCanonicalLinkUtil'
 import { verifyPageTitle } from '../support/verifyPageTitleUtil'
 
