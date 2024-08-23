@@ -10,7 +10,7 @@ import { verifyLinks } from './verifyLinksUtil'
 
 interface CreateCategoryTestsParams {
   pathConfig: PathConfig
-  categories: CategoryOption[]
+  categories: Array<CategoryOption>
 }
 
 interface VerifyCategoryLinksParams {
@@ -26,9 +26,9 @@ interface GetAllSlugsByCategoryTypeParams {
 export function getAllSlugsByCategoryType({
   directoryPath,
   category,
-}: GetAllSlugsByCategoryTypeParams): Cypress.Chainable<string[]> {
-  return cy.task<string[]>('readDir', directoryPath).then((files) => {
-    const slugs: string[] = []
+}: GetAllSlugsByCategoryTypeParams): Cypress.Chainable<Array<string>> {
+  return cy.task<Array<string>>('readDir', directoryPath).then((files) => {
+    const slugs: Array<string> = []
 
     const fileReadPromises = files.map((file) => {
       const filePath = path.join(directoryPath, file)

@@ -63,7 +63,10 @@ function handleFeaturedEntry(entriesContentPath: string, slug: string) {
 }
 
 function verifyHeaderContent(
-  { title, description }: { title: string; description: string | string[] },
+  {
+    title,
+    description,
+  }: { title: string; description: string | Array<string> },
   hasPageHeaderDescription: boolean,
 ) {
   cy.get('header')

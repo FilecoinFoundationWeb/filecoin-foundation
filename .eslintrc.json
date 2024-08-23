@@ -6,7 +6,7 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "custom-rules"],
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -20,7 +20,8 @@
         "shorthandFirst": true
       }
     ],
-    "@typescript-eslint/array-type": ["error", { "default": "generic" }],
+    // "custom-rules/enforce-generic-array-in-union": "error",
+
     //"@typescript-eslint/array-type": "error",
 
     // Variable usage and definitions

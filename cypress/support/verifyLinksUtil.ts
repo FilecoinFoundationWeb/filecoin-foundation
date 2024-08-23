@@ -1,6 +1,10 @@
 const REQUEST_DENIED_STATUS_CODE = 999
 const CLIENT_ERROR_THRESHOLD = 400
 
+const something: string[] = []
+
+console.log(something)
+
 export function verifyLinks(path: string) {
   cy.visit(path)
 
@@ -35,6 +39,6 @@ function isClientOrServerError(status: number) {
   )
 }
 
-function getErrorMessage(response: Cypress.Response<any>) {
+function getErrorMessage(response: Cypress.Response<unknown>) {
   return `Status code: ${response.status} (${response.statusText})`
 }
