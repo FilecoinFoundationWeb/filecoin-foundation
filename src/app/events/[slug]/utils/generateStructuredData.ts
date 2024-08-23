@@ -1,6 +1,6 @@
 import {
-  Event as SchemaEvent,
   Event as EventSchema,
+  Place,
   VirtualLocation,
   WithContext,
 } from 'schema-dts'
@@ -45,8 +45,8 @@ function getLocation({
   }
 }
 
-export function generateStructuredData(data: Event): WithContext<SchemaEvent> {
 export function generateStructuredData(data: Event): WithContext<EventSchema> {
+  const {
     title,
     slug,
     description,

@@ -12,8 +12,8 @@ import { graphicsData } from '@/data/graphicsData'
 import { PATHS } from '@/constants/paths'
 
 type FeaturedGrantsGraduatesProps = {
-  grantGraduates: EcosystemProject[]
   grantGraduates: Array<EcosystemProject>
+}
 
 export function FeaturedGrantsGraduates({
   grantGraduates,
