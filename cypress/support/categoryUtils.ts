@@ -2,9 +2,9 @@ import path from 'path'
 
 import matter from 'gray-matter'
 
-import { CategoryId } from '@/types/categoryTypes'
+import type { CategoryId } from '@/types/categoryTypes'
 
-import { PathConfig } from '@/constants/paths'
+import type { PathConfig } from '@/constants/paths'
 
 import { verifyLinks } from './verifyLinksUtil'
 

@@ -1,4 +1,4 @@
-import { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageProps } from '@/components/StaticImage'
 
 import about from '@/assets/graphics/Filorg_About.png'
 import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.png'

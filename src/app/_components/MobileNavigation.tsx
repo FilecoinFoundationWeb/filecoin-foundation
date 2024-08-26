@@ -1,14 +1,14 @@
 'use client'
 
-import { useState, Dispatch, SetStateAction } from 'react'
+import { useState, type Dispatch, type SetStateAction } from 'react'
 
 import Link from 'next/link'
 
 import { ArrowUpRight, List, X } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
-import { Route } from 'next'
+import type { Route } from 'next'
 
-import { Icon, IconProps } from '@/components/Icon'
+import { Icon, type IconProps } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'

@@ -4,7 +4,7 @@ import { BreakpointDebugger } from '@/components/_dev_BreakpointDebugger'
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 
-import { LayoutProps } from '@/layout'
+import type { LayoutProps } from '@/layout'
 
 const archivo = Archivo({
   subsets: ['latin'],

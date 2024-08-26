@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
-import { FieldErrors, useForm } from 'react-hook-form'
+import { type FieldErrors, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'

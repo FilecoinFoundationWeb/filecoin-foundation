@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import { Icon, IconProps } from './Icon'
+import { Icon, type IconProps } from './Icon'
 
 type TagProps = {
   borderColor?: 'brand-100' | 'brand-500'

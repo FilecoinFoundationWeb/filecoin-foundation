@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
-import { Route } from 'next'
+import type { Route } from 'next'
 
 import { useNavigationItems } from '@/hooks/useNavigationItems'
 

@@ -7,7 +7,7 @@ import {
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { Icon, IconProps } from '@/components/Icon'
+import { Icon, type IconProps } from '@/components/Icon'
 
 type NotificationDialogProps = {
   isOpen: boolean

@@ -13,7 +13,7 @@ import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
-import { NextServerSearchParams } from '@/types/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { createMetadata } from '@/utils/createMetadata'
 

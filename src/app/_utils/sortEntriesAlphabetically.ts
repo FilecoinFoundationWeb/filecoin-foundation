@@ -1,4 +1,4 @@
-import { AlphabeticalSortId } from '@/types/sortTypes'
+import type { AlphabeticalSortId } from '@/types/sortTypes'
 
 type SortEntriesParams<Entry> = {
   entries: Array<Entry>
