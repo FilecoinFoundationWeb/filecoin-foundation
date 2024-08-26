@@ -3,9 +3,9 @@ import { DigestArticleFrontMatterSchema } from '@/schemas/digestArticleFrontMatt
 export function convertMarkdownToDigestData(data: Record<string, any>) {
   const result = DigestArticleFrontMatterSchema.safeParse({
     title: data.title,
-    createdOn: data.createdOn,
-    updatedOn: data.updatedOn,
-    publishedOn: data.publishedOn,
+    createdOn: data['created-on'],
+    updatedOn: data['updated-on'],
+    publishedOn: data['published-on'],
     description: data.description,
     issueNumber: data['issue-number'],
     articleNumber: data['article-number'],
