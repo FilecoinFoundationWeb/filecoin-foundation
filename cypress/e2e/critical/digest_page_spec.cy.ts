@@ -6,6 +6,7 @@ describe('Digest Page', () => {
   it('should check metadata', () => {
     testPageMetadata({
       path: PATHS.DIGEST,
+      overrideDefaultTitle: true,
     })
   })
 
