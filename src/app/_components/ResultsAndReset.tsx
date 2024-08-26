@@ -29,7 +29,7 @@ export function ResultsAndReset({ results }: ResultsAndResetProps) {
         className="inline-flex whitespace-nowrap font-bold text-brand-300 underline focus:brand-outline"
         onClick={resetSearchParams}
       >
-        Reset Filters
+        Clear Filters
       </button>
     </div>
   )

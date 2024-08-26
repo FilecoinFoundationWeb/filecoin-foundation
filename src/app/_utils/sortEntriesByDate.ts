@@ -1,21 +1,21 @@
-import { type SortableByDate, type SortOption } from '@/types/sortTypes'
+import { type SortableByDate, type SortId } from '@/types/sortTypes'
 
 type SortEntriesByDateParams<Entry extends SortableByDate> = {
   entries: Array<Entry>
   sortBy: keyof SortableByDate
-  sortOption: SortOption
+  sortId: SortId
 }
 
 export function sortEntriesByDate<Entry extends SortableByDate>({
   entries,
   sortBy,
-  sortOption,
+  sortId,
 }: SortEntriesByDateParams<Entry>) {
   return [...entries].sort((a, b) => {
     const dateA = (a[sortBy] as Date).valueOf()
     const dateB = (b[sortBy] as Date).valueOf()
 
-    switch (sortOption) {
+    switch (sortId) {
       case 'newest':
         return dateB - dateA
       case 'oldest':

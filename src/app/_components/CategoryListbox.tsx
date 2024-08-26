@@ -10,25 +10,31 @@ import { ListboxOptions } from '@/components/ListboxOptions'
 
 import {
   type CategoryCounts,
+  type CategoryId,
   type CategoryOption,
-  type CategorySetting,
 } from '@/types/categoryTypes'
 
+import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+
 type CategoryListboxProps = {
-  categoryOption: CategoryOption | undefined
-  categorySettings: Array<CategorySetting>
-  categoryCounts?: CategoryCounts
-  onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
+  selected: CategoryId | undefined
+  options: Array<CategoryOption>
+  counts?: CategoryCounts
+  onChange: (selected: CategoryId) => void
 }
 
 export function CategoryListbox({
-  categoryOption,
-  categorySettings,
-  categoryCounts,
-  onCategoryOptionChange,
+  selected,
+  options,
+  counts,
+  onChange,
 }: CategoryListboxProps) {
+  const totalCategoryCount = getTotalCategoryCount(counts)
+
   return (
-    <Listbox value={categoryOption} onChange={onCategoryOptionChange}>
+    <Listbox value={selected} onChange={onChange}>
       {({ open }) => (
         <>
           <ListboxButton ariaLabel="Category options" open={open}>
@@ -36,12 +42,14 @@ export function CategoryListbox({
             <Icon component={CaretDown} size={16} weight="bold" />
           </ListboxButton>
           <ListboxOptions>
-            {categorySettings.map((option) => (
+            {totalCategoryCount && (
               <ListboxOption
-                key={option.id}
-                option={option}
-                counts={categoryCounts}
+                option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
+                counts={totalCategoryCount}
               />
+            )}
+            {options.map((option) => (
+              <ListboxOption key={option.id} option={option} counts={counts} />
             ))}
           </ListboxOptions>
         </>

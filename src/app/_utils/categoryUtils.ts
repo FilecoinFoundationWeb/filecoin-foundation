@@ -1,16 +1,12 @@
 import { z } from 'zod'
 
-import {
-  type CategoryMap,
-  type CategorySetting,
-  type CategoryYAMLData,
-} from '@/types/categoryTypes'
-import { type CMSFieldOption, type CMSCollectionName } from '@/types/cmsConfig'
+import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
+import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
-import { pastEventsSetting } from '@/constants/categoryConstants'
+import { pastEventsOption } from '@/constants/categoryConstants'
 
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName
@@ -19,9 +15,7 @@ type GetCategoryLabelParams = {
 
 const CATEGORY_FIELD_NAME = 'category'
 
-function transformCategoryDataToSettings(
-  options: Array<CMSFieldOption>,
-): Array<CategorySetting> {
+function transformCategoryDataToSettings(options: Array<CMSFieldOption>) {
   return options.map((option) => ({
     id: option.value,
     name: option.label,
@@ -47,30 +41,30 @@ export function getCategoryDataFromDirectory(directoryPath: string) {
 
 export function getCategorySettings(collectionName: CMSCollectionName) {
   const rawCategories = getCategoryData(collectionName)
-  const categorySettings = transformCategoryDataToSettings(rawCategories)
-  const categoryIds = categorySettings.map((setting) => setting.id)
+  const categoryOptions = transformCategoryDataToSettings(rawCategories)
+  const categoryIds = categoryOptions.map((setting) => setting.id)
 
-  return { categorySettings, validCategoryOptions: categoryIds }
+  return { categoryOptions, validCategoryIds: categoryIds }
 }
 
 export function getEventsCategorySettings() {
   const eventSettings = getCategorySettings('event_entries')
-  const { categorySettings, validCategoryOptions } = eventSettings
+  const { categoryOptions, validCategoryIds } = eventSettings
 
   return {
-    categorySettings: [...categorySettings, pastEventsSetting],
-    validCategoryOptions: [...validCategoryOptions, pastEventsSetting.id],
+    categoryOptions: [...categoryOptions, pastEventsOption],
+    validCategoryIds: [...validCategoryIds, pastEventsOption.id],
   }
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
-  const categorySettings = Object.entries(categoryMap).map(([id, name]) => ({
+  const categoryOptions = Object.entries(categoryMap).map(([id, name]) => ({
     id,
     name,
   }))
-  const categoryIds = categorySettings.map((setting) => setting.id)
+  const categoryIds = categoryOptions.map((setting) => setting.id)
 
-  return { categorySettings, validCategoryOptions: categoryIds }
+  return { categoryOptions, validCategoryIds: categoryIds }
 }
 
 export function getCategoryLabel({
