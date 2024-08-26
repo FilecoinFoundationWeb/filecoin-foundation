@@ -2333,6 +2333,7 @@
       "name": "digest",
       "label": "Digest Articles",
       "folder": "src/content/digest/",
+      "preview_path": "digest/{{slug}}",
       "label_singular": "Digest Article",
       "create": true,
       "extension": "md",
@@ -2371,18 +2372,19 @@
         {
           "name": "issue-number",
           "label": "Issue Number",
-          "widget": "number"
+          "widget": "number",
+          "min": 1
         },
         {
           "name": "article-number",
           "label": "Article Number",
-          "widget": "number"
+          "widget": "number",
+          "min": 1
         },
         {
           "name": "publication-date",
           "label": "Publication Date",
-          "widget": "datetime",
-          "required": false
+          "widget": "datetime"
         },
         {
           "name": "body",
@@ -2393,8 +2395,7 @@
             "image",
             "video",
             "audio"
-          ],
-          "required": false
+          ]
         },
         {
           "name": "image",

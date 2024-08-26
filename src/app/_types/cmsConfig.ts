@@ -1,6 +1,6 @@
 export type CMSCollectionName =
   | 'blog_posts'
-  | 'digest'
+  | 'digest_articles'
   | 'ecosystem_projects'
   | 'event_entries'
 
