@@ -37,20 +37,16 @@ export default function Digest() {
         title={header.title}
         description={header.description}
         image={graphicsData.imageFallback}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.digest.buyPrintEdition.href,
-          text: FILECOIN_FOUNDATION_URLS.digest.buyPrintEdition.label,
-        }}
       />
 
       <PageSection
-        kicker="Issue 1"
-        title="Unveiling the Decentralized Era: Insights into Filecoin"
-        description="Published in October 2024, this first issue explores the foundational elements and pioneering strides of the Filecoin ecosystem as we embark on a journey towards a decentralized storage future."
+        kicker="Issue 1 - Sep 2024"
+        title="The Inaugural Edition"
+        description="Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and the data economy. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future."
       >
         <CardGrid cols="smTwo">
           {digests.map((digest, index) => {
-            const { title, description, image, slug } = digest
+            const { title, description, image, slug, issueNumber } = digest
 
             return (
               <Card
@@ -58,6 +54,7 @@ export default function Digest() {
                 title={title}
                 description={description}
                 textIsClamped={true}
+                tag={`Issue ${issueNumber}`}
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
@@ -84,10 +81,10 @@ export default function Digest() {
 
       <CTASection
         title="Share Your Expertise with the Filecoin Community"
-        description="Become a part of the conversation! Submit your articles on Filecoin's current stage, challenges, and future evolution for consideration in our upcoming issues."
+        description="Become a part of the conversation! Submit an idea for upcoming issues."
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.digest.submitArticle.href,
-          text: FILECOIN_FOUNDATION_URLS.digest.submitArticle.label,
+          href: FILECOIN_FOUNDATION_URLS.digest.submitIdea.href,
+          text: FILECOIN_FOUNDATION_URLS.digest.submitIdea.label,
         }}
       />
     </PageLayout>
