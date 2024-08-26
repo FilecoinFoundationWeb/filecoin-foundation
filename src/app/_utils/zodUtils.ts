@@ -16,12 +16,16 @@ export function logZodError(zodError: ZodError, config: Config = {}) {
     errorTitle += ` - ${location}`
   }
 
-  console.error('------')
   console.error(errorTitle)
 
-  zodError.errors.forEach(({ message, path }) => {
-    console.error(`Issue: ${message}`)
-    console.error(`Path: ${path.join(' > ')}`)
+  zodError.issues.forEach((error) => {
+    console.error(`Issue: ${error.message}`)
+    console.error(`Path: ${error.path.join(' > ')}`)
+
+    if (error.code === 'invalid_type') {
+      console.error(`Expected: ${error.expected}`)
+      console.error(`Received: ${error.received}`)
+    }
   })
 
   if (context) {
