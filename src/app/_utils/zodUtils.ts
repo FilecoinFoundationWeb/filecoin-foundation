@@ -10,14 +10,27 @@ type Config = {
 export function logZodError(zodError: ZodError, config: Config = {}) {
   const { location, context } = config
 
-  let errorTitle = '🔥 Zod Validation Error'
-
-  if (location) {
-    errorTitle += ` - ${location}`
-  }
-
+  const errorTitle = createErrorTitle(location)
   console.error(errorTitle)
 
+  logZodIssues(zodError)
+
+  if (context) {
+    logContext(context)
+  }
+
+  console.error('------')
+}
+
+function createErrorTitle(location?: string) {
+  let title = '🔥 Zod Validation Error'
+  if (location) {
+    title += ` - ${location}`
+  }
+  return title
+}
+
+function logZodIssues(zodError: ZodError) {
   zodError.issues.forEach((error) => {
     console.error(`Issue: ${error.message}`)
     console.error(`Path: ${error.path.join(' > ')}`)
@@ -27,12 +40,10 @@ export function logZodError(zodError: ZodError, config: Config = {}) {
       console.error(`Received: ${error.received}`)
     }
   })
+}
 
-  if (context) {
-    Object.entries(context).forEach(([key, value]) => {
-      console.error(`${capitalize(key)}: ${value}`)
-    })
-  }
-
-  console.error('------')
+function logContext(context: Record<string, string>) {
+  Object.entries(context).forEach(([key, value]) => {
+    console.error(`${capitalize(key)}: ${value}`)
+  })
 }
