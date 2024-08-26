@@ -2,11 +2,10 @@
   "extends": [
     "next/core-web-vitals",
     "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:import/warnings"
   ],
-  "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "custom-rules"],
+
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -20,9 +19,7 @@
         "shorthandFirst": true
       }
     ],
-    // "custom-rules/enforce-generic-array-in-union": "error",
-
-    //"@typescript-eslint/array-type": "error",
+    "custom-rules/prefer-generic-array-type": "error",
 
     // Variable usage and definitions
     "no-unused-vars": "warn",
