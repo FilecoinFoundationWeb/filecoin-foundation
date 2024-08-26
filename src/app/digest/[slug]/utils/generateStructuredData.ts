@@ -1,6 +1,6 @@
-import { WebPage, WithContext } from 'schema-dts'
+import type { WebPage, WithContext } from 'schema-dts'
 
-import { DigestArticleData } from '@/types/digestTypes'
+import type { DigestArticleData } from '@/types/digestTypes'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
