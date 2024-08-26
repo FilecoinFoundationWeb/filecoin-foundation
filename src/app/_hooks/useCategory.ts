@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { type CategoryCounts, type CategoryOption } from '@/types/categoryTypes'
+import { type CategoryCounts, type CategoryId } from '@/types/categoryTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
@@ -11,33 +11,33 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Entry[]
-  validCategoryOptions: CategoryOption[]
+  validCategoryIds: CategoryId[]
 }
 
 function validateCategoryOption(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  validCategoryOptions: CategoryOption[],
+  validCategoryIds: CategoryId[],
 ) {
   if (!normalizedQuery) {
     return undefined
   }
 
-  const validCategoryOption = validCategoryOptions.find(
+  const validCategoryId = validCategoryIds.find(
     (option) => option === normalizedQuery,
   )
 
-  return validCategoryOption
+  return validCategoryId
 }
 
 export function useCategory<Entry extends Object>({
   searchParams,
   entries,
-  validCategoryOptions,
+  validCategoryIds,
 }: UseCategoryProps<Entry>) {
   const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
   const validatedCategoryOption = validateCategoryOption(
     normalizedQuery,
-    validCategoryOptions,
+    validCategoryIds,
   )
 
   const categorizedResults = useMemo(() => {
@@ -53,14 +53,14 @@ export function useCategory<Entry extends Object>({
   const categoryCounts = useMemo(() => {
     const counts: CategoryCounts = {}
 
-    validCategoryOptions.forEach((option) => {
+    validCategoryIds.forEach((option) => {
       counts[option] = entries.filter(
         (entry) => entry.category === option,
       ).length
     })
 
     return counts
-  }, [entries, validCategoryOptions])
+  }, [entries, validCategoryIds])
 
   return {
     categoryQuery: validatedCategoryOption,

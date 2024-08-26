@@ -8,15 +8,15 @@ import type { Event } from '@/types/eventType'
 
 import { getUTCMidnightToday } from '@/utils/dateUtils'
 
-import { pastEventsSetting } from '@/constants/categoryConstants'
+import { pastEventsOption } from '@/constants/categoryConstants'
 
 export function useEventsCategory(props: UseCategoryProps<Event>) {
-  const { entries, searchParams, validCategoryOptions } = props
+  const { entries, searchParams, validCategoryIds } = props
 
   const results = useCategory({
     searchParams,
     entries,
-    validCategoryOptions,
+    validCategoryIds,
   })
   const { categoryQuery, categoryCounts, categorizedResults } = results
 
@@ -27,11 +27,11 @@ export function useEventsCategory(props: UseCategoryProps<Event>) {
 
   const updatedCategoryCounts = useMemo(() => {
     const pastEventsCount = pastEvents.length
-    return { ...categoryCounts, [pastEventsSetting.id]: pastEventsCount }
+    return { ...categoryCounts, [pastEventsOption.id]: pastEventsCount }
   }, [categoryCounts, pastEvents])
 
   const updatedCategorizedResults = useMemo(() => {
-    if (categoryQuery === pastEventsSetting.id) {
+    if (categoryQuery === pastEventsOption.id) {
       return pastEvents
     }
     return categorizedResults

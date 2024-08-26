@@ -30,6 +30,7 @@ import {
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+import { getSortOptions } from '@/utils/getSortOptions'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -64,7 +65,7 @@ const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
 
-const { categorySettings, validCategoryOptions } =
+const { categoryOptions, validCategoryIds } =
   getCategorySettingsFromMap(categoryData)
 
 export default function EcosystemExplorer({ searchParams }: Props) {
@@ -78,19 +79,21 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'publishedOn',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    defaultSortId: DEFAULT_SORT_OPTION.alphabetical,
   })
 
   const { categoryQuery, categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
-    validCategoryOptions: validCategoryOptions,
+    validCategoryIds: validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: categorizedResults,
   })
+
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.alphabetical)
 
   return (
     <PageLayout>
@@ -114,22 +117,35 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset />}
+            gapSize="wide"
+            results={<ResultsAndReset results={categorizedResults.length} />}
             category={
-              <Category query={categoryQuery} settings={categorySettings} />
+              <Category query={categoryQuery} options={categoryOptions} />
             }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION.alphabetical}
+                />
+              }
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset />}
+              results={<ResultsAndReset results={categorizedResults.length} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION.alphabetical}
+                />
+              }
               category={
-                <Category query={categoryQuery} settings={categorySettings} />
+                <Category query={categoryQuery} options={categoryOptions} />
               }
             />
             <FilterContainer.ContentWrapper>

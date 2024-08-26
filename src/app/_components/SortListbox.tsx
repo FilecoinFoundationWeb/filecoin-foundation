@@ -8,31 +8,27 @@ import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
-import { type SortOption } from '@/types/sortTypes'
-
-import { sortSettings } from '@/constants/sortConstants'
+import { type SortOption, type SortId } from '@/types/sortTypes'
 
 type SortListboxProps = {
-  sortOption: SortOption
-  onSortOptionChange: (selectedSortOption: SortOption) => void
+  sortId: SortId
+  onChange: (selectedOption: SortId) => void
+  options: ReadonlyArray<SortOption>
 }
 
-export function SortListbox({
-  sortOption,
-  onSortOptionChange,
-}: SortListboxProps) {
-  const selectedSortSetting =
-    sortSettings.find((option) => option.id === sortOption) || sortSettings[0]
+export function SortListbox({ sortId, onChange, options }: SortListboxProps) {
+  const selectedOption =
+    options.find((option) => option.id === sortId) || options[0]
 
   return (
-    <Listbox value={sortOption} onChange={onSortOptionChange}>
+    <Listbox value={sortId} onChange={onChange}>
       {({ open }) => (
         <>
           <ListboxButton ariaLabel="Sort options" open={open}>
             <div className="inline-flex items-center gap-2">
               <Icon component={ArrowsDownUp} />
-              <span className="hidden md:block">
-                {selectedSortSetting.name}
+              <span className="hidden text-nowrap md:block">
+                {selectedOption.name}
               </span>
             </div>
             <span className="hidden md:block">
@@ -40,7 +36,7 @@ export function SortListbox({
             </span>
           </ListboxButton>
           <ListboxOptions position="right">
-            {sortSettings.map((option) => (
+            {options.map((option) => (
               <ListboxOption key={option.id} option={option} />
             ))}
           </ListboxOptions>

@@ -16,7 +16,7 @@ const MAX_POSTS = 4
 const sortedBlogPosts = sortEntriesByDate({
   entries: blogPosts,
   sortBy: 'publishedOn',
-  sortOption: 'newest',
+  sortId: 'newest',
 })
 
 const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)

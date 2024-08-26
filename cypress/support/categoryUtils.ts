@@ -2,7 +2,7 @@ import path from 'path'
 
 import matter from 'gray-matter'
 
-import type { CategoryOption } from '@/types/categoryTypes'
+import type { CategoryId } from '@/types/categoryTypes'
 
 import type { PathConfig } from '@/constants/paths'
 
@@ -10,17 +10,17 @@ import { verifyLinks } from './verifyLinksUtil'
 
 interface CreateCategoryTestsParams {
   pathConfig: PathConfig
-  categories: CategoryOption[]
+  categories: CategoryId[]
 }
 
 interface VerifyCategoryLinksParams {
   pathConfig: PathConfig
-  category: CategoryOption
+  category: CategoryId
 }
 
 interface GetAllSlugsByCategoryTypeParams {
   directoryPath: string
-  category: CategoryOption
+  category: CategoryId
 }
 
 export function getAllSlugsByCategoryType({

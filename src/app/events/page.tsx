@@ -12,12 +12,12 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
+import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StaticImage } from '@/components/StaticImage'
@@ -33,6 +33,8 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
+import { getSortOptions } from '@/utils/getSortOptions'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -54,7 +56,7 @@ type Props = {
 }
 
 const events = getEventsData()
-const { categorySettings, validCategoryOptions } = getEventsCategorySettings()
+const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
 const { featured_entry, seo } = attributes
 
 if (!featured_entry) {
@@ -85,20 +87,24 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     sortBy: 'startDate',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    defaultSortId: DEFAULT_SORT_OPTION.chronological,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } =
     useEventsCategory({
       searchParams,
       entries: sortedResults,
-      validCategoryOptions,
+      validCategoryIds,
     })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: categorizedResults,
   })
+
+  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
+
+  const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
   return (
     <PageLayout>
@@ -124,11 +130,16 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset results={categorizedResults.length} />}
+            results={
+              <CategoryResetButton
+                counts={filteredCategoryCounts}
+                isSelected={hasNoFiltersApplied(searchParams)}
+              />
+            }
             category={
               <Category
                 query={categoryQuery}
-                settings={categorySettings}
+                options={categoryOptions}
                 counts={categoryCounts}
               />
             }
@@ -136,16 +147,27 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                />
+              }
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                />
+              }
               category={
                 <Category
                   query={categoryQuery}
-                  settings={categorySettings}
+                  options={categoryOptions}
                   counts={categoryCounts}
                 />
               }
