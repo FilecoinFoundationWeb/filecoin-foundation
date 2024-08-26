@@ -1,3 +1,3 @@
-import { getDigestArticleData } from '@/_utils/getDigestArticleData'
+import { getDigestArticleData } from '@/utils/getDigestArticleData'
 
 export type DigestArticleData = ReturnType<typeof getDigestArticleData>
