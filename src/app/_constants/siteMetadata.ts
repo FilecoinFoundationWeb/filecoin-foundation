@@ -29,14 +29,9 @@ const FILECOIN_FOUNDATION_URLS = {
     '2022': `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
   },
   digest: {
-    // ! placeholder links
-    buyPrintEdition: {
-      label: 'Buy Print Edition',
-      href: 'https://ffdweb.org/digest/',
-    },
-    submitArticle: {
-      label: 'Submit Article',
-      href: 'https://ffdweb.org/contact/',
+    submitIdea: {
+      label: 'Submit Idea',
+      href: 'https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form',
     },
   },
   ecosystem: {

@@ -1,9 +1,9 @@
 ---
 header:
   title: "Filecoin Foundation Digest"
-  description: ["The Filecoin Foundation Digest is a publication available both in print and online, dedicated to exploring the Filecoin ecosystem. Authors contribute exclusive articles that go into the current stage of Filecoin, its challenges, and its potential for future evolution.",
-  "This magazine aims to serve as a resource for enthusiasts, developers, and investors interested in decentralized storage solutions and the broader implications of blockchain technology."]
+  description: ["The Filecoin Ecosystem Digest is a digital and in-print magazine to showcase innovation unfolding across the ecosystem published by Filecoin Foundation.",
+  "Editorial articles, authored by individuals from the Filecoin ecosystem, will dive into the challenges of our current internet infrastructure, explore experiences and learnings within the community, and share visions for how decentralization and decentralized storage are creating the foundation for a better web."]
 seo:
   title: "Filecoin Foundation Digest"
-  description: "The Filecoin Foundation Digest is a publication available both in print and online, dedicated to exploring the Filecoin ecosystem. Authors contribute exclusive articles that go into the current stage of Filecoin, its challenges, and its potential for future evolution."
+  description: "The Filecoin Ecosystem Digest is a digital and in-print magazine to showcase innovation unfolding across the ecosystem published by Filecoin Foundation. "
 ---
