@@ -57,6 +57,18 @@ export const desktopNavigationItems = {
         "Learn about Filecoin's robust security practices, ensuring the integrity and resilience of the protocol",
     },
   ],
+  resourcesItems: [
+    {
+      label: PATHS.BLOG.label,
+      href: PATHS.BLOG.path,
+      description: 'Stay updated with the latest news and insights',
+    },
+    {
+      label: PATHS.DIGEST.label,
+      href: PATHS.DIGEST.path,
+      description: 'Explore a publication focused on the Filecoin ecosystem',
+    },
+  ],
   learnMoreItem: {
     label: 'Learn more about Filecoin',
     href: FILECOIN_DOCS_URLS.site,
