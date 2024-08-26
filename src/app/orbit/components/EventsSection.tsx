@@ -63,10 +63,8 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
 
   return (
     <>
-      <div className="flex justify-end">
-        <div className="grow lg:max-w-readable">
-          <Search query={searchQuery} id="search" />
-        </div>
+      <div className="lg:max-w-readable">
+        <Search query={searchQuery} id="search" />
       </div>
 
       {paginatedResults.length === 0 ? (
