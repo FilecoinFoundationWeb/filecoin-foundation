@@ -596,6 +596,7 @@ collections:
   - name: "digest"
     label: "Digest Articles"
     folder: "src/content/digest/"
+    preview_path: "digest/{{slug}}"
     label_singular: "Digest Article"
     create: true
     extension: "md"
@@ -613,13 +614,14 @@ collections:
       - name: "issue-number"
         label: "Issue Number"
         widget: "number"
+        min: 1
       - name: "article-number"
         label: "Article Number"
         widget: "number"
+        min: 1
       - name: "publication-date"
         label: "Publication Date"
         widget: "datetime"
-        required: false
       - name: "body"
         label: "Content"
         widget: "markdown"
@@ -628,6 +630,5 @@ collections:
           - "image"
           - "video"
           - "audio"
-        required: false
       - *image_config
       - *meta_config
