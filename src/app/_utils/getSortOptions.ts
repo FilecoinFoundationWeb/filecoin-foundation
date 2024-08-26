@@ -1,4 +1,4 @@
-import { DefaultSortType } from '@/types/sortTypes'
+import type { DefaultSortType } from '@/types/sortTypes'
 
 import { SORT_TYPES } from '@/constants/sortConstants'
 

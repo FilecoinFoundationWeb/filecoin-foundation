@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
-import {
+import type {
   AlphabeticalSortId,
   ChronologicalSortId,
-  type SortableByDate,
-  type SortId,
+  SortableByDate,
+  SortId,
 } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 

@@ -1,7 +1,7 @@
 import { Button } from '@/components/Button'
 import {
   DescriptionText,
-  DescriptionTextType,
+  type DescriptionTextType,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 

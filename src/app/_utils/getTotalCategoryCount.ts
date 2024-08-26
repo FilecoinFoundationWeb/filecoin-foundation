@@ -1,4 +1,4 @@
-import { CategoryCounts } from '@/types/categoryTypes'
+import type { CategoryCounts } from '@/types/categoryTypes'
 
 import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 

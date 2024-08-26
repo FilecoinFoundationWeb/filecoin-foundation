@@ -1,4 +1,4 @@
-import { AllowedImageFormats } from './fileUtils'
+import type { AllowedImageFormats } from './fileUtils'
 
 type GetMarkdownTemplateParams = {
   projectName: string
