@@ -14,14 +14,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/660732912d6d72ba4a9774ea_chainstack.png
-  alt: Chainstack Logo
 website: https://chainstack.com/
-featured-content:
-repo:
 twitter: https://twitter.com/ChainstackHQ
-video-url:
 year-joined: 2024-03-29T21:28:49.352000Z
-news-update:
 subcategories:
   - infrastructure
 seo:

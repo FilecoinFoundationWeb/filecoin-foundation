@@ -1,8 +1,8 @@
 ---
 title: "Ntent"
-created-on: "2024-01-04T22:40:27.335Z"
-updated-on: "2024-01-05T21:38:02.182Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:27.335Z
+updated-on: 2024-01-05T21:38:02.182Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Ntent is a digital art and immersive experience collective and smart
   contract platform for generative and dynamic art."
@@ -13,14 +13,9 @@ tech:
   - "ipfs"
 image:
   src: /assets/images/659873ecd5b28bbed5b03be9_ntent_logo_white.png
-  alt: "Ntent Logo"
 website: "https://www.ntent.art"
-featured-content:
 repo: "https://github.com/fluencelabs"
 twitter: "https://twitter.com/fluence_project"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - arts-collectibles-nfts
 seo:

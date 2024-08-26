@@ -11,16 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073293f19c58932d89ebea_glitter.png
-  alt: Glitter Protocol
 website: https://glitterprotocol.io/
-featured-content:
-repo:
 twitter: https://twitter.com/GlitterProtocol
-video-url:
 year-joined: 2024-03-29T21:28:51.837000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Glitter Protocol
   description:

@@ -3,7 +3,7 @@ import { type NextRequest } from 'next/server'
 import { z } from 'zod'
 
 import { getCollectionConfig } from '@/utils/cmsConfigUtils'
-import { encrypt, decrypt, PREFIX } from '@/utils/encryption'
+import { decrypt, encrypt, PREFIX } from '@/utils/encryption'
 
 const payloadSchema = z.object({
   value: z.string(),

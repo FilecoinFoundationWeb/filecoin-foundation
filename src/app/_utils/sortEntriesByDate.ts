@@ -1,42 +1,25 @@
-import { type SortableByDate, type SortOption } from '@/types/sortTypes'
+import { type SortableByDate, type SortId } from '@/types/sortTypes'
 
 type SortEntriesByDateParams<Entry extends SortableByDate> = {
   entries: Entry[]
   sortBy: keyof SortableByDate
-  sortOption: SortOption
-}
-
-function validateDate(value?: string) {
-  if (!value) {
-    return new Date(0)
-  }
-
-  const date = new Date(value)
-  const isInvalidDate = Number.isNaN(date.getTime())
-  return isInvalidDate ? new Date(0) : date
+  sortId: SortId
 }
 
 export function sortEntriesByDate<Entry extends SortableByDate>({
   entries,
   sortBy,
-  sortOption,
+  sortId,
 }: SortEntriesByDateParams<Entry>) {
   return [...entries].sort((a, b) => {
-    const dateA = validateDate(
-      a[sortBy] instanceof Date ? a[sortBy].toISOString() : a[sortBy],
-    )
-    const dateB = validateDate(
-      b[sortBy] instanceof Date ? b[sortBy].toISOString() : b[sortBy],
-    )
+    const dateA = (a[sortBy] as Date).valueOf()
+    const dateB = (b[sortBy] as Date).valueOf()
 
-    const timeA = dateA.valueOf()
-    const timeB = dateB.valueOf()
-
-    switch (sortOption) {
+    switch (sortId) {
       case 'newest':
-        return timeB - timeA
+        return dateB - dateA
       case 'oldest':
-        return timeA - timeB
+        return dateA - dateB
       default:
         return 0
     }

@@ -5,7 +5,6 @@ updated-on: 2024-04-16T20:04:49.406Z
 published-on: 2024-04-16T20:04:49.422Z
 image:
   src: /assets/images/pyth.png
-  alt: Pyth Logo
 category: tooling-productivity
 subcategories:
   - bridges-oracles
@@ -17,8 +16,6 @@ website: https://pyth.network/
 tech:
   - filecoin
 repo: https://github.com/pyth-network
-news-update: null
-featured-content: null
 twitter: https://x.com/PythNetwork
 video-url: https://www.youtube.com/embed/7k5gh-1JT3c
 year-joined: 2024-04-16T20:04:49.437Z

@@ -1,28 +1,19 @@
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import { convertMarkdownToEcosystemProjectData } from '@/utils/convertMarkdownToEcosystemProjectData'
+import { getData, getAllData } from '@/utils/getData'
 
-import { mapMarkdownToEcosystemProjectData } from '@/utils/mapMarkdownToEcosystemProjectData'
-import { transformMarkdownToCollectionData } from '@/utils/transformMarkdownToCollectionData'
-import { transformMarkdownToItemData } from '@/utils/transformMarkdownToItemData'
+import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
-import { PATHS } from '@/constants/paths'
-
-const ECOSYSTEM_PROJECTS_COLLECTION_NAME = 'ecosystem_projects'
-const ECOSYSTEM_PROJECTS_DIRECTORY_PATH = PATHS.ECOSYSTEM_EXPLORER
-  .entriesContentPath as string
-
-export function getEcosystemProjectData(slug: string): EcosystemProjectData {
-  return transformMarkdownToItemData<EcosystemProjectData>(
+export function getEcosystemProjectData(slug: string) {
+  return getData(
     ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
-    ECOSYSTEM_PROJECTS_COLLECTION_NAME,
+    convertMarkdownToEcosystemProjectData,
     slug,
-    mapMarkdownToEcosystemProjectData,
   )
 }
 
-export function getEcosystemProjectsData(): EcosystemProjectData[] {
-  return transformMarkdownToCollectionData<EcosystemProjectData>(
+export function getEcosystemProjectsData() {
+  return getAllData(
     ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
-    ECOSYSTEM_PROJECTS_COLLECTION_NAME,
-    mapMarkdownToEcosystemProjectData,
+    convertMarkdownToEcosystemProjectData,
   )
 }

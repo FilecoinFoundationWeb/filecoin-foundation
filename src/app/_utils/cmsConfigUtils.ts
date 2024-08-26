@@ -1,7 +1,7 @@
-import {
-  CMSFieldConfig,
+import type {
   CMSCollectionConfig,
   CMSConfig,
+  CMSFieldConfig,
 } from '@/types/cmsConfig'
 
 import configJson from '@/data/cmsConfigSchema.json'

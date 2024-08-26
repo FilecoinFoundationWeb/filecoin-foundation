@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/eastore-logo.png
-  alt: Eastore Logo
-featured-content:
 website: https://devfolio.co/projects/eastore-e336
 repo: https://github.com/lordshashank/Eastore-Filecoin
-twitter:
-video-url:
 year-joined: 2024-04-05T00:15:15.170000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

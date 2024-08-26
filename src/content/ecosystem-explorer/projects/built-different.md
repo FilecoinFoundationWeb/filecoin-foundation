@@ -13,14 +13,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/660734bb2f8beb060933dd1d_builtdifferent.png
-  alt: Built Different Logo
 website: https://www.builtdifferent.foundation/
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-03-29T21:28:48.571000Z
-news-update:
 subcategories:
   - dapp
 seo:

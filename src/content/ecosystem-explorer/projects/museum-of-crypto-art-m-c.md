@@ -1,8 +1,8 @@
 ---
 title: "Museum of Crypto Art (M○C△)"
-created-on: "2024-01-04T22:40:26.888Z"
-updated-on: "2024-01-05T21:37:50.995Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:26.888Z
+updated-on: 2024-01-05T21:37:50.995Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "The Museum of Crypto Art is an art preservation tool and community of
   artists, collectors, and developers."
@@ -15,14 +15,8 @@ tech:
   - "ipfs"
 image:
   src: /assets/images/659751c70b1ecbf25f6faaf3_moca.png
-  alt: "Museum of Crypto Art Logo"
 website: "https://museumofcryptoart.com"
-featured-content:
-repo:
 twitter: "https://twitter.com/MuseumofCrypto"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - arts-collectibles-nfts
 seo:

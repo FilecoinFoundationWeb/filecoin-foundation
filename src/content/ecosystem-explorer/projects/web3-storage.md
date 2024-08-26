@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974d3c02cb39557a1ffd52_web3.Storage-Logo.png
-  alt: Web3.Storage Logo
 website: "https://web3.storage/"
-featured-content:
 repo: "https://github.com/web3-storage/web3.storage"
 twitter: "https://twitter.com/Web3Storage"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

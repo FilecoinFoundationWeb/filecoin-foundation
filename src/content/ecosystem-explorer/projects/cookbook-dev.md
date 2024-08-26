@@ -13,14 +13,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/cookbook.dev.png
-  alt: Cookbook Logo
 website: https://www.cookbook.dev/
-featured-content:
-repo:
 twitter: https://twitter.com/cookbook_dev
-video-url:
 year-joined: 2024-04-04T20:26:55.709000Z
-news-update:
 subcategories:
   - developer-tools
 seo:

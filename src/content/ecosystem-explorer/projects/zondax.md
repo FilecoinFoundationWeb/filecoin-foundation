@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974d3422e2d2883f4dff8f_zondax_logo.png
-  alt: Zondax Logo
 website: "https://zondax.ch/"
-featured-content:
 repo: "https://github.com/Zondax"
 twitter: "https://twitter.com/_zondax_"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - infrastructure
 seo:

@@ -7,9 +7,9 @@ import {
   createCategorySchema,
 } from '@/utils/categoryUtils'
 
-const { validCategoryOptions } = getEventsCategorySettings()
+const { validCategoryIds } = getEventsCategorySettings()
 
-const categorySchema = createCategorySchema(validCategoryOptions)
+const categorySchema = createCategorySchema(validCategoryIds)
 
 export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),

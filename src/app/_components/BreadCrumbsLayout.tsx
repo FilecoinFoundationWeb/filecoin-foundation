@@ -2,7 +2,7 @@ import React from 'react'
 
 import { BreadCrumbs } from '@/components/BreadCrumbs'
 
-import { LayoutProps } from '@/layout'
+import type { LayoutProps } from '@/layout'
 
 export function BreadCrumbsLayout({ children }: LayoutProps) {
   return (

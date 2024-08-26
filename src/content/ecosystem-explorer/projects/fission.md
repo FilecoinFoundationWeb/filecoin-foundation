@@ -14,14 +14,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974a282128bbdde2005e43_fission.png
-  alt: Fission Logo
 website: https://fission.codes
-featured-content:
 repo: https://github.com/fission-codes
 twitter: https://twitter.com/FISSIONcodes
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

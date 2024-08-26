@@ -5,7 +5,6 @@ updated-on: 2024-03-22T16:24:25.069Z
 published-on: 2024-03-22T16:24:25.078Z
 image:
   src: /assets/images/liquicert.png
-  alt: Liquicert Logo
 category: tooling-productivity
 subcategories:
   - wallets-identity-authentication
@@ -17,11 +16,6 @@ website: https://liquicert.io/
 tech:
   - filecoin
   - ipfs
-repo: null
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-03-22T16:24:25.092Z
 seo:
   title: LiquiCert

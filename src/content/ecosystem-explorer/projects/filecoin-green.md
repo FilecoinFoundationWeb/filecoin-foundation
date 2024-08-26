@@ -16,14 +16,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974726d10f3992a40f40f6_fil_green_outline.png
-  alt: Filecoin Green Logo
 website: https://green.filecoin.io
-featured-content:
-repo:
 twitter: https://twitter.com/filecoingreen
-video-url:
-year-joined:
-news-update:
 subcategories:
   - climate
 seo:

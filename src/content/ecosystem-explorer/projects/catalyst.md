@@ -16,16 +16,8 @@ tags:
 tech:
   - filecoin
   - ipfs
-image:
-  src:
-  alt: Catalyst Logo
 website: https://the-freaking-catalyst.vercel.app
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-04T20:29:53.874000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

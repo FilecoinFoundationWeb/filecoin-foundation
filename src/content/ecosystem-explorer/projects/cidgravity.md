@@ -11,14 +11,10 @@ tech:
   - filecoin
 image:
   src: /assets/images/cid-gravity.jpeg
-  alt: CIDgravity Logo
 website: https://www.cidgravity.com/
-featured-content:
 repo: https://github.com/CIDgravity/CIDgravity-X
 twitter: https://twitter.com/CiDgravity
-video-url:
 year-joined: 2024-04-03T17:39:33.807000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

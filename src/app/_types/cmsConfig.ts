@@ -1,7 +1,7 @@
 export type CMSCollectionName =
   | 'blog_posts'
   | 'digest'
-  | 'ecosystem'
+  | 'ecosystem_projects'
   | 'event_entries'
 
 export type CMSFieldOption = {

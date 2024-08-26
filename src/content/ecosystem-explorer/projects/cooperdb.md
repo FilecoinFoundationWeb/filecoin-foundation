@@ -11,16 +11,8 @@ tags:
   - data-storage-management
 tech:
   - filecoin
-image:
-  src:
-  alt: CooperDB Logo
 website: https://cooper-db.vercel.app/
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-05T14:44:50.326000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

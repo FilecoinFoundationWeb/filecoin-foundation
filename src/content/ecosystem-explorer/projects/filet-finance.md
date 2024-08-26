@@ -11,16 +11,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
-  alt: Filet Finance Logo
-featured-content:
 website: https://www.filet.finance
-repo:
-twitter:
-video-url:
 year-joined: 2024-03-29T21:28:51.053000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Filet Finance
   description:

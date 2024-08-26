@@ -11,14 +11,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/orbitvault_logo_white.png
-  alt: OrbitVault Logo
 website: http://orbitvault.io/
-featured-content:
-repo:
-twitter: https://twitter.com/OrbitVault?t=Mtulb1hLXkkqDLlmwAmE3g&s=09
-video-url:
+twitter: https://twitter.com/OrbitVault
 year-joined: 2024-03-07T14:09:03.780000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

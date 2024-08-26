@@ -14,14 +14,8 @@ tech:
   - ipfs
 image:
   src: /assets/images/hauska_logo_white.png
-  alt: Hauska   Design | Protect | Exchange
 website: https://www.hauska.ai/
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2023-12-27T20:42:42.062000Z
-news-update:
 subcategories:
   - artificial-productivity-utilities
 seo:

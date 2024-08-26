@@ -5,7 +5,6 @@ updated-on: 2024-04-05T14:14:29.925Z
 published-on: 2024-04-05T14:14:29.937Z
 image:
   src: /assets/images/vsharecloud.png
-  alt: VshareCloud Logo
 category: storage
 subcategories:
   - data-storage-management
@@ -24,10 +23,6 @@ tech:
   - ipfs
   - filecoin
 repo: https://github.com/vshareCloud-Project/
-news-update: null
-featured-content: null
-twitter: null
-video-url: null
 year-joined: 2024-04-05T14:14:29.953Z
 seo:
   title: VshareCloud

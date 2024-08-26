@@ -11,16 +11,8 @@ tech:
   - filecoin
 image:
   src: /assets/images/screenshot-2024-04-03-at-8.47-1.png
-  alt: Jackrabbit Finance Logo
 website: http://www.jackrabbitfinance.xyz/
-featured-content:
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-05T00:02:55.839000Z
-news-update:
-subcategories:
-  - finance
 seo:
   title: Jackrabbit Finance
   description:

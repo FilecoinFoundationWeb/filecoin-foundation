@@ -18,14 +18,10 @@ tech:
   - ipfs
 image:
   src: /assets/images/zentachain-white.png
-  alt: Zentachain Logo Chain Network
 website: "https://zentachain.io/"
-featured-content:
 repo: "https://github.com/ZentaChain"
 twitter: "https://twitter.com/zentachain"
-video-url:
 year-joined: 2024-02-28T23:55:57.805000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

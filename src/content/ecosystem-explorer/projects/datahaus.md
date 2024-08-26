@@ -14,14 +14,9 @@ tech:
   - filecoin
 image:
   src: /assets/images/6607329442b3d343f69c52d7_datahaus.png
-  alt: DataHaus Logo
-featured-content:
 website: https://datahaus.vercel.app/
-repo:
 twitter: https://twitter.com/DataHaus_
-video-url:
 year-joined: 2024-03-29T21:28:52.788000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:

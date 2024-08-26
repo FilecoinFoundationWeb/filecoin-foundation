@@ -16,14 +16,12 @@ tech:
   - ipfs
 image:
   src: /assets/images/659872da19567f4307ba3b38_bacalhua_logo_white.png
-  alt: Waterlily.ai Logo
 website: "https://www.waterlily.ai/"
 featured-content: "https://fil.org/blog/decentralizing-art-a-deep-dive-into-waterlily-ais-use-of-fvm-and-ai/"
 repo: "https://github.com/bacalhau-project/Waterlily"
 twitter: "https://twitter.com/Waterlily"
 video-url: "https://www.youtube.com/embed/AhCScfpeN3k"
-year-joined: "2023-04-25T22:00:00.000Z"
-news-update:
+year-joined: 2023-04-25T22:00:00.000Z
 subcategories:
   - artificial-productivity-utilities
 seo:

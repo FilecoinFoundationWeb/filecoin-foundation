@@ -1,8 +1,8 @@
 ---
 title: "MuckRock"
-created-on: "2024-01-10T18:11:13.040Z"
-updated-on: "2024-01-10T18:11:13.127Z"
-published-on: "2024-01-10T18:11:13.198Z"
+created-on: 2024-01-10T18:11:13.040Z
+updated-on: 2024-01-10T18:11:13.127Z
+published-on: 2024-01-10T18:11:13.198Z
 description:
   "MuckRock is a non-profit collaborative news site that gives people the
   tools to keep governments transparent and accountable."
@@ -15,14 +15,9 @@ tech:
   - "ipfs"
 image:
   src: "/assets/images/muckrock_logo_white.png"
-  alt: "MuckRock Logo Filecoin Ecosystem Explorer"
 website: "https://www.muckrock.com/"
 featured-content: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"
-repo:
 twitter: "https://twitter.com/MuckRock"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - dweb
 seo:

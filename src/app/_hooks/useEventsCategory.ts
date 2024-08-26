@@ -1,51 +1,22 @@
 import { useMemo } from 'react'
 
-import { UseCategoryProps, useCategory } from '@/hooks/useCategory'
+import { isBefore } from 'date-fns'
 
-import type { EventData } from '@/types/eventDataType'
+import { type UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
-import { isDateValid } from '@/utils/dateUtils'
+import type { Event } from '@/types/eventType'
 
-import { pastEventsSetting } from '@/constants/categoryConstants'
+import { getUTCMidnightToday } from '@/utils/dateUtils'
 
-function getUTCMidnightToday(): Date {
-  const today = new Date()
-  return new Date(
-    Date.UTC(
-      today.getUTCFullYear(),
-      today.getUTCMonth(),
-      today.getUTCDate(),
-      0,
-      0,
-      0,
-      0,
-    ),
-  )
-}
+import { pastEventsOption } from '@/constants/categoryConstants'
 
-function filterByPastEvents(entry: EventData): boolean {
-  const today = getUTCMidnightToday()
-  const { startDate, endDate, slug } = entry
-
-  if (endDate && !isDateValid(endDate)) {
-    throw new Error(`Invalid endDate provided for event: ${slug}`)
-  }
-
-  if (!isDateValid(startDate)) {
-    throw new Error(`Invalid startDate provided for event: ${slug}`)
-  }
-
-  const eventDate = endDate ? new Date(endDate) : new Date(startDate)
-  return eventDate < today
-}
-
-export function useEventsCategory(props: UseCategoryProps<EventData>) {
-  const { entries, searchParams, validCategoryOptions } = props
+export function useEventsCategory(props: UseCategoryProps<Event>) {
+  const { entries, searchParams, validCategoryIds } = props
 
   const results = useCategory({
     searchParams,
     entries,
-    validCategoryOptions,
+    validCategoryIds,
   })
   const { categoryQuery, categoryCounts, categorizedResults } = results
 
@@ -56,11 +27,11 @@ export function useEventsCategory(props: UseCategoryProps<EventData>) {
 
   const updatedCategoryCounts = useMemo(() => {
     const pastEventsCount = pastEvents.length
-    return { ...categoryCounts, [pastEventsSetting.id]: pastEventsCount }
+    return { ...categoryCounts, [pastEventsOption.id]: pastEventsCount }
   }, [categoryCounts, pastEvents])
 
   const updatedCategorizedResults = useMemo(() => {
-    if (categoryQuery === pastEventsSetting.id) {
+    if (categoryQuery === pastEventsOption.id) {
       return pastEvents
     }
     return categorizedResults
@@ -71,4 +42,12 @@ export function useEventsCategory(props: UseCategoryProps<EventData>) {
     categorizedResults: updatedCategorizedResults,
     categoryCounts: updatedCategoryCounts,
   }
+}
+
+function filterByPastEvents(entry: Event) {
+  const today = getUTCMidnightToday()
+  const { startDate, endDate } = entry
+  const eventDate = endDate || startDate
+
+  return isBefore(eventDate, today)
 }

@@ -1,8 +1,8 @@
 ---
 title: OpSci
-created-on: "2024-01-04T22:40:27.545Z"
-updated-on: "2024-01-05T21:38:22.351Z"
-published-on: "2024-01-11T13:26:59.787Z"
+created-on: 2024-01-04T22:40:27.545Z
+updated-on: 2024-01-05T21:38:22.351Z
+published-on: 2024-01-11T13:26:59.787Z
 description:
   "Opscientia (OpSci) is an open source DeSci project leveraging the power
   of Web3 to grow, sustain, and continuously improve a decentralized science movement
@@ -16,14 +16,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/6597519ebea972da31ebe933_opsci_clear-withtext_666x206.png
-  alt: OpSci Logo
 website: "https://www.opsci.io"
-featured-content:
 repo: "https://github.com/opscientia"
 twitter: "https://twitter.com/opscientia"
-video-url:
-year-joined:
-news-update:
 subcategories:
   - decentralized-science
 seo:

@@ -1,6 +1,6 @@
-import { StaticImageData } from 'next/image'
+import type { StaticImageData } from 'next/image'
 
-import { Route } from 'next'
+import type { Route } from 'next'
 
 export type MemberData = {
   name: string

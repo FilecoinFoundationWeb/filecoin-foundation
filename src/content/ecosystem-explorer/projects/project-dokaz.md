@@ -1,8 +1,8 @@
 ---
 title: Project Dokaz
-created-on: "2024-01-10T19:28:43.717Z"
-updated-on: "2024-01-10T19:28:43.727Z"
-published-on: "2024-01-10T19:28:43.735Z"
+created-on: 2024-01-10T19:28:43.717Z
+updated-on: 2024-01-10T19:28:43.727Z
+published-on: 2024-01-10T19:28:43.735Z
 description:
   "Project Dokaz is a set of accountability efforts in Ukraine that applies
   Starling Lab's work with especially vulnerable digital records."
@@ -18,11 +18,6 @@ image:
   src: /assets/images/dokaz_logo_white.png
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html"
-repo:
-twitter:
-video-url:
-year-joined:
-news-update:
 subcategories:
   - data-storage-management
 seo:

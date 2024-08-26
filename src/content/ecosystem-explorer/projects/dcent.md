@@ -16,14 +16,9 @@ tech:
   - ipfs
 image:
   src: /assets/images/6597471cd556a0c37caf9706_dcent_logo.png
-  alt: DCENT Logo
 website: https://dcent.nl
-featured-content: https://fil.org/blog/filecoin-storage-provider-spotlight-dcent/
-repo:
 twitter: https://twitter.com/Dcent_Web3
-video-url:
 year-joined: 2023-08-01T20:34:10.316000Z
-news-update:
 subcategories:
   - wallets-identity-authentication
 seo:

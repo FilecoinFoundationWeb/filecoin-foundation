@@ -9,13 +9,39 @@ import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
-import { NextServerSearchParams } from '@/types/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { formatDate } from '@/utils/dateUtils'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { fetchAndParseAirtableEvents } from '../services/airtable'
+
+type OrbitEventsSectionProps = {
+  searchParams: NextServerSearchParams
+}
+
+export async function OrbitEventsSection({
+  searchParams,
+}: OrbitEventsSectionProps) {
+  try {
+    const events = await fetchAndParseAirtableEvents()
+
+    if (events.length === 0) {
+      return <p>There are currently no upcoming events.</p>
+    }
+
+    return <OrbitEvents events={events} searchParams={searchParams} />
+  } catch (error) {
+    return (
+      <div className="flex max-w-readable">
+        <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
+          Check Upcoming Events
+        </Button>
+      </div>
+    )
+  }
+}
 
 type OrbitEventsProps = {
   events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>
@@ -71,30 +97,4 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
       )}
     </>
   )
-}
-
-type OrbitEventsSectionProps = {
-  searchParams: NextServerSearchParams
-}
-
-export async function OrbitEventsSection({
-  searchParams,
-}: OrbitEventsSectionProps) {
-  try {
-    const events = await fetchAndParseAirtableEvents()
-
-    if (events.length === 0) {
-      return <p>There are currently no upcoming events.</p>
-    }
-
-    return <OrbitEvents events={events} searchParams={searchParams} />
-  } catch (error) {
-    return (
-      <div className="flex max-w-readable">
-        <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
-          Check Upcoming Events
-        </Button>
-      </div>
-    )
-  }
 }
