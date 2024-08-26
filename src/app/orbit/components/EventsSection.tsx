@@ -1,3 +1,6 @@
+import * as Sentry from '@sentry/nextjs'
+import { ZodError } from 'zod'
+
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 
@@ -12,6 +15,7 @@ import { Search } from '@/components/Search'
 import { NextServerSearchParams } from '@/types/searchParams'
 
 import { formatDate } from '@/utils/dateUtils'
+import { logZodError } from '@/utils/zodUtils'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -33,6 +37,12 @@ export async function OrbitEventsSection({
 
     return <OrbitEvents events={events} searchParams={searchParams} />
   } catch (error) {
+    Sentry.captureException(error)
+
+    if (error instanceof ZodError) {
+      logZodError(error, { location: 'Orbit Events' })
+    }
+
     return (
       <div className="flex max-w-readable">
         <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
@@ -75,6 +85,10 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
             {paginatedResults.map((event, index) => {
               const { title, city, startDate, registrationLink } = event
 
+              const ctaProps = registrationLink
+                ? { text: 'View Event Details', href: registrationLink }
+                : undefined
+
               return (
                 <Card
                   key={index}
@@ -82,7 +96,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
                   metaData={[formatDate(startDate), city]}
                   borderColor="brand-400"
                   textIsClamped={true}
-                  cta={{ text: 'View Event Details', href: registrationLink }}
+                  cta={ctaProps}
                 />
               )
             })}
