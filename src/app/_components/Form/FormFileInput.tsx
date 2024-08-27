@@ -160,7 +160,7 @@ function getReadableAcceptedFormats(
   }
 
   if (formats.length === 1) {
-    return `${formats[0]} files`
+    return `${formats[0]} file`
   }
 
   if (formats.length === 2) {
