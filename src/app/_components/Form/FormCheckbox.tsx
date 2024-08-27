@@ -15,7 +15,7 @@ export function FormCheckbox({ label, ...rest }: FormCheckboxProps) {
     <Field className="flex items-center gap-3">
       <Checkbox
         {...rest}
-        className="group size-5 rounded bg-brand-100 p-0.5 text-brand-100 focus:brand-outline data-[disabled]:cursor-not-allowed ui-checked:bg-brand-500"
+        className="group size-5 rounded bg-brand-100 p-0.5 text-brand-100 focus:brand-outline data-[disabled]:cursor-not-allowed data-[checked]:bg-brand-400"
       >
         <span className="hidden group-data-[checked]:block">
           <Icon component={Check} size={16} weight="bold" />

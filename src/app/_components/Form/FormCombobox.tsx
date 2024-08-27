@@ -53,8 +53,8 @@ export function FormCombobox<Value extends OptionType = OptionType>({
           onClose={resetQuery}
         >
           <ComboboxInput<Value>
+            className="peer w-full rounded-lg border border-brand-300 bg-transparent px-3.5 py-3 text-brand-300 focus:brand-outline hover:border-brand-400 data-[disabled]:cursor-not-allowed"
             displayValue={(option) => option?.name}
-            className="peer w-full rounded-lg border border-brand-300 bg-transparent px-4 py-3 text-brand-300 focus:brand-outline hover:border-brand-400 data-[disabled]:cursor-not-allowed md:min-w-40"
             onChange={(event) => setQuery(event.target.value)}
           />
           <ComboboxButton className="absolute inset-y-0 right-0 px-2.5 text-brand-300 peer-hover:text-brand-400">

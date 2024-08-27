@@ -38,7 +38,7 @@ export function FormRadioInput<Value extends RadioType = RadioType>({
         >
           <Radio
             value={option}
-            className="group flex size-5 items-center justify-center rounded-full border-2 border-white bg-white focus:brand-outline data-[checked]:bg-blue-500"
+            className="group flex size-5 items-center justify-center rounded-full border-2 border-white bg-white focus:brand-outline data-[checked]:bg-blue-400"
           >
             <span className="invisible size-2 rounded-full bg-white group-data-[checked]:visible" />
           </Radio>

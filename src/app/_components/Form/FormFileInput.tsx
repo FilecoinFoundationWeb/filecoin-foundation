@@ -13,7 +13,7 @@ import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 import { Icon } from '@/components/Icon'
 
-type HardCodedProps = 'type' | 'onChange' | 'accept' | 'multiple'
+type HardCodedProps = 'type' | 'onChange' | 'accept' | 'multiple' | 'invalid'
 
 export type FormFileInputProps = {
   files: FileList | null
@@ -56,7 +56,7 @@ export function FormFileInput({
     <Field className="w-full">
       <FormLabel label={label} hideLabel={hideLabel} />
 
-      <div className="group relative h-48 w-full">
+      <div className="group relative h-60 w-full md:h-52">
         {loadedFile ? (
           <SelectedFile file={loadedFile} onReset={resetFiles} />
         ) : (
