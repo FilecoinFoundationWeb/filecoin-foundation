@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Governance Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.GOVERNANCE,
+    testPageMetadata(PATHS.GOVERNANCE, {
       overrideDefaultTitle: true,
     })
   })

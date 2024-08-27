@@ -4,17 +4,23 @@ import type { PathConfig } from '../../src/app/_constants/paths'
 import { verifyCanonicalLink } from '../support/verifyCanonicalLinkUtil'
 import { verifyPageTitle } from '../support/verifyPageTitleUtil'
 
-export function testPageMetadata({
-  path: { mainContentPath, path, entriesContentPath },
-  hasPageHeaderDescription = true,
-  includesFeaturedEntry = false,
-  overrideDefaultTitle = false,
-}: {
-  path: PathConfig
+type TestMetaDataOptions = {
   hasPageHeaderDescription?: boolean
   includesFeaturedEntry?: boolean
   overrideDefaultTitle?: boolean
-}) {
+}
+
+export function testPageMetadata(
+  pathConfig: PathConfig,
+  options: TestMetaDataOptions = {},
+) {
+  const { mainContentPath, path, entriesContentPath } = pathConfig
+  const {
+    hasPageHeaderDescription = true,
+    includesFeaturedEntry = false,
+    overrideDefaultTitle = false,
+  } = options
+
   it(`should use the correct metadata from the markdown file`, function () {
     const filePath = `${mainContentPath}.md`
 

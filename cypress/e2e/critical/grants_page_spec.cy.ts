@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Grants Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.GRANTS,
+    testPageMetadata(PATHS.GRANTS, {
       overrideDefaultTitle: true,
     })
   })

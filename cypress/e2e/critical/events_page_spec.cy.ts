@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Events Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.EVENTS,
+    testPageMetadata(PATHS.EVENTS, {
       overrideDefaultTitle: true,
     })
   })

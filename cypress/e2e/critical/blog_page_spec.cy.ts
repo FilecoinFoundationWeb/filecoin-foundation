@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Blog Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.BLOG,
+    testPageMetadata(PATHS.BLOG, {
       overrideDefaultTitle: true,
     })
   })
