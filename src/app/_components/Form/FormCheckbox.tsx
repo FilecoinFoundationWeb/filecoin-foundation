@@ -1,16 +1,16 @@
 import { Checkbox, Field, type CheckboxProps, Label } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react/dist/ssr'
-import { clsx } from 'clsx'
 
-import { type FormLabelProps } from '@/components/Form/FormLabel'
 import { Icon } from '@/components/Icon'
 
 type HardCodedProps = 'className'
 
-export type FormCheckboxProps = Omit<CheckboxProps, HardCodedProps> &
-  FormLabelProps
+export type FormCheckboxProps = { label: string } & Omit<
+  CheckboxProps,
+  HardCodedProps
+>
 
-export function FormCheckbox({ label, hideLabel, ...rest }: FormCheckboxProps) {
+export function FormCheckbox({ label, ...rest }: FormCheckboxProps) {
   return (
     <Field className="flex items-center gap-3">
       <Checkbox
@@ -21,9 +21,7 @@ export function FormCheckbox({ label, hideLabel, ...rest }: FormCheckboxProps) {
           <Icon component={Check} size={16} weight="bold" />
         </span>
       </Checkbox>
-      <Label className={clsx('text-brand-100', hideLabel && 'sr-only')}>
-        {label}
-      </Label>
+      <Label className="text-brand-100">{label}</Label>
     </Field>
   )
 }
