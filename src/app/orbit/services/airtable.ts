@@ -1,6 +1,8 @@
 import Airtable, { FieldSet, Records } from 'airtable'
 import { z } from 'zod'
 
+import { getUTCMidnightToday } from '@/utils/dateUtils'
+
 import { AIRTABLE_ORBIT_EVENTS_CONFIG } from '../constants/airtableOrbitEventsConfig'
 
 const airtable = new Airtable({ apiKey: process.env.AIRTABLE_READ_ONLY_TOKEN })
@@ -25,6 +27,9 @@ export async function fetchAndParseAirtableEvents() {
 }
 
 function fetchAirtableRecords() {
+  const today = getUTCMidnightToday()
+  const todayISO = today.toISOString()
+
   return airtable
     .base(BASE_ID)
     .table(EVENTS_TABLE_ID)
@@ -33,7 +38,7 @@ function fetchAirtableRecords() {
       returnFieldsByFieldId: true,
       filterByFormula: `AND(
       {${FIELDS.STATUS}} = '${APPROVED_STATUS_VALUE}',
-      IS_AFTER({${FIELDS.START_DATE}}, '${new Date().toISOString()}')
+      IS_AFTER({${FIELDS.START_DATE}}, '${todayISO}')
     )`,
       sort: [
         {
