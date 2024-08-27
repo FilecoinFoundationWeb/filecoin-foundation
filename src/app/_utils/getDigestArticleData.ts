@@ -28,7 +28,7 @@ export function getDigestArticleData(slug: string) {
     const digestData = convertMarkdownToDigestData({ ...data, content })
     return { ...digestData, slug }
   } catch (error) {
-    console.error('Error retrieving event data:', error)
+    console.error('Error retrieving digest data:', error)
     throw error
   }
 }
@@ -43,7 +43,7 @@ export function getDigestArticlesData() {
       return getDigestArticleData(slug)
     })
   } catch (error) {
-    console.error('Error retrieving events data:', error)
+    console.error('Error retrieving digest data:', error)
     throw error
   }
 }
