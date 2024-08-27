@@ -14,7 +14,7 @@ type HardCodedProps = 'invalid' | 'className'
 
 export type FormTextareaProps = {
   error?: FormErrorProps['error']
-  charcterLimit: number
+  characterLimit: number
   characterCount: number
 } & Omit<HeadlessTextareaProps, HardCodedProps> &
   FormLabelProps
@@ -24,7 +24,7 @@ export function FormTextarea({
   label,
   hideLabel,
   characterCount,
-  charcterLimit,
+  characterLimit,
   ...rest
 }: FormTextareaProps) {
   return (
@@ -40,7 +40,7 @@ export function FormTextarea({
       />
       <div className="mt-2 flex h-6 items-center justify-between">
         <FormError.Message error={error} />
-        <CharacterCounter count={characterCount} limit={charcterLimit} />
+        <CharacterCounter count={characterCount} limit={characterLimit} />
       </div>
     </Field>
   )
@@ -48,7 +48,7 @@ export function FormTextarea({
 
 type CharacterCounterProps = {
   count: FormTextareaProps['characterCount']
-  limit: FormTextareaProps['charcterLimit']
+  limit: FormTextareaProps['characterLimit']
 }
 
 function CharacterCounter({ count, limit }: CharacterCounterProps) {

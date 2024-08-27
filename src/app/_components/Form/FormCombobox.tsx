@@ -38,7 +38,7 @@ export function FormCombobox<Value extends OptionType = OptionType>({
 }: FormComboboxProps<Value>) {
   const [query, setQuery] = useState<string>('')
 
-  const filteredOptions = filerOptions(options, query)
+  const filteredOptions = filterOptions(options, query)
 
   return (
     <Field>
@@ -88,7 +88,7 @@ export function FormCombobox<Value extends OptionType = OptionType>({
     </Field>
   )
 
-  function filerOptions(options: Array<Value>, query: string) {
+  function filterOptions(options: Array<Value>, query: string) {
     if (query === '') {
       return options
     }

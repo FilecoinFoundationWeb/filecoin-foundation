@@ -213,7 +213,7 @@ export default function Storybook() {
         <ControlledFormTextarea<FormData>
           name="description"
           label="A text area"
-          charcterLimit={CHARACTER_LIMIT}
+          characterLimit={CHARACTER_LIMIT}
           placeholder="Write a brief summary of your project..."
         />
 
