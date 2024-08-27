@@ -23,8 +23,10 @@ export type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <PlausibleProvider domain="fil.org">
-      <SiteLayout>{children}</SiteLayout>
-      <SpeedInsights />
+      <SiteLayout>
+        {children}
+        <SpeedInsights />
+      </SiteLayout>
     </PlausibleProvider>
   )
 }
