@@ -4,6 +4,10 @@ import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
 
 export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
+  description: z.string(),
+  issueNumber: z.number(),
+  articleNumber: z.number(),
+  publicationDate: z.coerce.date().optional(),
   authors: z.array(
     z.object({
       name: z.string(),
@@ -15,9 +19,5 @@ export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
         .optional(),
     }),
   ),
-  description: z.string(),
-  issueNumber: z.number(),
-  articleNumber: z.number(),
-  publicationDate: z.coerce.date().optional(),
   content: z.string(),
 })
