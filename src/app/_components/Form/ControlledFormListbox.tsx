@@ -44,6 +44,7 @@ export function ControlledFormListbox<FormValues extends FieldValues>({
             value={value}
             error={error && String(error.message)}
             onChange={field.onChange}
+            onBlur={field.onBlur}
           />
         )
       }}
