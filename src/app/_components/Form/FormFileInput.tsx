@@ -13,7 +13,7 @@ import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 import { Icon } from '@/components/Icon'
 
-type HardCodedProps = 'type' | 'onChange' | 'accept'
+type HardCodedProps = 'type' | 'onChange' | 'accept' | 'multiple'
 
 export type FormFileInputProps = {
   files: FileList | null
@@ -61,22 +61,23 @@ export function FormFileInput({
           <SelectedFile file={loadedFile} onReset={resetFiles} />
         ) : (
           <>
-            <UploadInstructions
-              accept={accept}
-              maxSize={maxSize}
-              error={error}
-            />
             <Input
               {...rest}
               type="file"
               disabled={disabled}
               accept={accept.join(',')}
               invalid={Boolean(error)}
+              multiple={false}
               className={clsx(
-                'absolute inset-0 z-10 opacity-0',
+                'peer absolute inset-0 z-10 opacity-0',
                 disabled ? 'cursor-not-allowed' : 'cursor-pointer',
               )}
               onChange={loadFiles}
+            />
+            <UploadInstructions
+              accept={accept}
+              maxSize={maxSize}
+              error={error}
             />
           </>
         )}
@@ -130,7 +131,7 @@ function UploadInstructions({
     <div
       aria-label="Instructions to upload a file"
       className={clsx(
-        'flex h-full w-full items-center justify-center rounded-lg border border-dashed border-brand-300 group-hover:border-brand-400',
+        'flex h-full w-full items-center justify-center rounded-lg border border-dashed border-brand-300 peer-focus:brand-outline group-hover:border-brand-400',
         error && 'border-red-400',
       )}
     >
