@@ -2390,7 +2390,6 @@
           "name": "authors",
           "label": "Authors",
           "widget": "list",
-          "summary": "{{fields.name}}",
           "fields": [
             {
               "label": "Author Name",
