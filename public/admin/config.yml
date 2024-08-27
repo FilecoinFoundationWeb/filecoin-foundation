@@ -253,6 +253,13 @@ collections:
           - *header_config
           - *meta_config
 
+      - name: "security/bug-bounty"
+        label: "Bug Bounty"
+        file: "src/content/pages/security/bug-bounty.md"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "terms"
         label: "Terms"
         file: "src/content/pages/terms-of-use.md"

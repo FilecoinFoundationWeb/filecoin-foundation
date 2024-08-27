@@ -11,3 +11,10 @@ describe('Security - Coordinated Disclosure Policy Page', () => {
     overrideDefaultTitle: true,
   })
 })
+
+describe('Security - Bug Bounty Program Page', () => {
+  testPageMetadata({
+    path: PATHS.BUG_BOUNTY_PROGRAM,
+    overrideDefaultTitle: true,
+  })
+})
