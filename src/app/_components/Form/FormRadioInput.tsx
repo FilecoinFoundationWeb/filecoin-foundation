@@ -14,23 +14,25 @@ export type RadioType = {
 
 type HardCodedProps = 'as' | 'className'
 
+const renderAs = 'div'
+
 export type FormRadioInputProps<Value extends RadioType = RadioType> = {
   options: Array<Value>
-} & Omit<RadioGroupProps<'div', Value>, HardCodedProps>
+} & Omit<RadioGroupProps<typeof renderAs, Value>, HardCodedProps>
 
 export function FormRadioInput<Value extends RadioType = RadioType>({
   options,
   ...rest
 }: FormRadioInputProps<Value>) {
   return (
-    <RadioGroup<'div', Value>
+    <RadioGroup<typeof renderAs, Value>
       {...rest}
-      as="div"
+      as={renderAs}
       className="flex flex-wrap items-center gap-x-10 gap-y-6 data-[disabled]:cursor-not-allowed"
     >
       {options.map((option) => (
         <Field
-          key={option.name}
+          key={option.id}
           disabled={option.disabled}
           className="flex items-center gap-2"
         >
