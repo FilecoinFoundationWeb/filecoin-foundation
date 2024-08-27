@@ -6,6 +6,7 @@ export function convertMarkdownToDigestData(data: Record<string, any>) {
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
+    authors: data.authors,
     description: data.description,
     issueNumber: data['issue-number'],
     articleNumber: data['article-number'],
