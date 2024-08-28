@@ -10,3 +10,8 @@ export type PageAttributes = {
   featured_grant_graduates?: Array<string>
   seo: SeoMetadata
 }
+
+export type SecurityMaturityModelAttributes = {
+  title: string
+  order: number
+}
