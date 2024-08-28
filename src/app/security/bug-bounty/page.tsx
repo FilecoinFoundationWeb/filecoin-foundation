@@ -17,7 +17,7 @@ const { header, seo } = attributes
 
 export const metadata = createMetadata({
   seo,
-  path: PATHS.BUG_BOUNTY_PROGRAM.path,
+  path: PATHS.BUG_BOUNTY.path,
 })
 
 export default function BugBounty() {

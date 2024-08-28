@@ -14,7 +14,7 @@ describe('Security - Coordinated Disclosure Policy Page', () => {
 })
 
 describe('Security - Bug Bounty Program Page', () => {
-  testPageMetadata(PATHS.BUG_BOUNTY_PROGRAM, {
+  testPageMetadata(PATHS.BUG_BOUNTY, {
     overrideDefaultTitle: true,
   })
 })

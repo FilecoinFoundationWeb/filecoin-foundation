@@ -10,6 +10,6 @@ export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
   return generateWebPageStructuredData({
     title: seo.title,
     description: seo.description,
-    path: PATHS.BUG_BOUNTY_PROGRAM.path,
+    path: PATHS.BUG_BOUNTY.path,
   })
 }

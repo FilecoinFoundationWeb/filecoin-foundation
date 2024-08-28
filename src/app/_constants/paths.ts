@@ -75,10 +75,7 @@ export const PATHS = {
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
   ),
-  BUG_BOUNTY_PROGRAM: createPathObject(
-    '/security/bug-bounty',
-    'Bug Bounty Program',
-  ),
+  BUG_BOUNTY: createPathObject('/security/bug-bounty', 'Bug Bounty Program'),
   ECOSYSTEM_EXPLORER: createPathObject(
     '/ecosystem-explorer',
     'Ecosystem Explorer',
