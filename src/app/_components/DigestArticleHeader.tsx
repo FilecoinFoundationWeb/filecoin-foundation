@@ -20,8 +20,8 @@ export function DigestArticleHeader({
   image,
 }: DigestArticleHeaderProps) {
   return (
-    <header className="space-y-6">
-      <div className="space-y-6">
+    <header className="space-y-8">
+      <div className="space-y-4">
         <div className="space-x-3">
           <TagLabel borderColor="brand-100">{`Issue ${issueNumber.toString()}`}</TagLabel>
           <TagLabel>{`Article ${articleNumber}`}</TagLabel>

@@ -22,7 +22,7 @@ export function BlogPostHeader({
   category,
 }: BlogPostHeaderProps) {
   return (
-    <header className="space-y-6">
+    <header className="space-y-8">
       <div className="space-y-4">
         <TagLabel>
           {getCategoryLabel({ collectionName: 'blog_posts', category })}
