@@ -26,7 +26,7 @@ seo:
     Secure Sharing
   description: Protect against data breaches with blockchain-based storage. AHDX's
     decentralized marketplace on Filecoin and IPFS enables secure health data
-    sharing for patients ensuring immutability and efficient retrieval.
+    sharing for patients, ensuring immutability and efficient retrieval.
 ---
 
 For companies who are potentially at risk of experiencing data breaches, we offer blockchain based data storage that eliminates the possibility of almost all ransomware attacks, provides immutability and efficient data retrieval. For patients who would like to be involved in the monetization of their health data, we offer a decentralized patient health data marketplace, which allows organizations and patients to securely share or monetize health information.
