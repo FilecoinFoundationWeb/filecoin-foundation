@@ -6,7 +6,7 @@ published-on: 2024-04-25T17:07:12.844Z
 email: encrypted::U2FsdGVkX1/sxxboDNHuBNcfkzOZllTelTjXzT04SqJbIUWZgYtkS28GRceEvwVI
 full-name: encrypted::U2FsdGVkX1+28ZJ/ODXFKwFRJ2uHNi45q95Dx7UL6HU=
 image:
-  src: /assets/images/archly-logo-circle-1000.png
+  src: /assets/images/archly-logo-circle-1000.webp
 category: storage
 subcategories:
   - data-storage-management
