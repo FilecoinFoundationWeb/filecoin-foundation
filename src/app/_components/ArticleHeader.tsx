@@ -27,7 +27,7 @@ export function ArticleHeader({ image, children }: ArticleHeaderProps) {
           priority
           quality={100}
           src={image?.src || ''}
-          alt={image?.alt || ''}
+          alt={image?.alt || 'Article Header Image'}
           className="rounded-lg"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
           fallback={graphicsData.imageFallback}
