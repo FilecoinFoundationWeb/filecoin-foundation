@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+import { ZodError } from 'zod'
+
 import {
   extractSlugFromFilename,
   getFilenamesFromDirectory,
@@ -9,10 +11,11 @@ import {
   parseMarkdown,
   readFileContents,
 } from '@/utils/fileUtils'
+import { logZodError } from '@/utils/zodUtils'
 
 export function getData<T>(
   directoryPath: string,
-  convertMarkdownToData: (data: Record<string, any>, slug: string) => T,
+  convertMarkdownToData: (data: Record<string, any>) => T,
   slug: string,
 ) {
   try {
@@ -24,18 +27,24 @@ export function getData<T>(
 
     const fileContents = readFileContents(filePath)
     const { data, content } = parseMarkdown(fileContents)
-    const resultData = convertMarkdownToData({ ...data, content }, slug)
+    const resultData = convertMarkdownToData({ ...data, content })
 
     return { ...resultData, slug }
   } catch (error) {
-    console.error(`Error retrieving data for slug: ${slug}`, error)
+    if (error instanceof ZodError) {
+      logZodError(error, {
+        location: 'getData',
+        context: { path: directoryPath, slug },
+      })
+    }
+
     throw error
   }
 }
 
 export function getAllData<T>(
   directoryPath: string,
-  convertMarkdownToData: (data: Record<string, any>, slug: string) => T,
+  convertMarkdownToData: (data: Record<string, any>) => T,
 ) {
   try {
     const directory = path.join(process.cwd(), directoryPath)
