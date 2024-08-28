@@ -47,13 +47,12 @@ export default function Digest() {
       >
         <CardGrid cols="smTwo">
           {digests.map((digest, index) => {
-            const { title, description, image, slug, issueNumber } = digest
+            const { title, image, slug, issueNumber } = digest
 
             return (
               <Card
                 key={index}
                 title={title}
-                description={description}
                 textIsClamped={true}
                 tag={`Issue ${issueNumber}`}
                 cta={{

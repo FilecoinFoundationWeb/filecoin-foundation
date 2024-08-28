@@ -2332,7 +2332,7 @@
       ]
     },
     {
-      "name": "digest",
+      "name": "digest_articles",
       "label": "Digest Articles",
       "folder": "src/content/digest/",
       "preview_path": "digest/{{slug}}",
@@ -2377,11 +2377,6 @@
           "label": "Article Number",
           "widget": "number",
           "min": 1
-        },
-        {
-          "name": "publication-date",
-          "label": "Publication Date",
-          "widget": "datetime"
         },
         {
           "name": "authors",
