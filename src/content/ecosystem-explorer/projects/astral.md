@@ -1,25 +1,25 @@
 ---
 title: Astral
-created-on: 2024-03-29T21:28:48.588000Z
-updated-on: 2024-03-29T21:36:46.746000Z
-published-on: 2024-03-29T21:36:46.746000Z
-description:
-  "Astral is building tools to enable the location-based decentralized
-  web."
-category: storage
-tags:
-  - dapp
-tech:
-  - filecoin
+created-on: 2024-03-29T21:28:48.588Z
+updated-on: 2024-03-29T21:36:46.746Z
+published-on: 2024-03-29T21:36:46.746Z
+email: encrypted::U2FsdGVkX1+KC8ZZwzlZaJuAJxIHi94dRtzEdRdvavjtkCwEqXmrWthVpjWHVcFI
+full-name: encrypted::U2FsdGVkX1+jbfea1mNnXuyDTq4e8rYxvmTPZSTRcyQ=
 image:
   src: /assets/images/66073290d5091847d125282a_astral.png
-website: https://astral.global/
-twitter: https://twitter.com/astralprotocol
-year-joined: 2024-03-29T21:28:48.588000Z
+category: storage
 subcategories:
   - data-retrieval
+tags:
+  - dapp
+description: Astral is building tools to enable the location-based decentralized web.
+website: https://astral.global/
+tech:
+  - filecoin
+twitter: https://twitter.com/astralprotocol
+year-joined: 2024-03-29T21:28:48.588Z
 seo:
-  title: Astral
+  title: "Astral: Pioneering Location-Based Decentralized Web with GeoDIDs on IPFS"
   description: Astral offers decentralized solutions for data retrieval and management.
 ---
 
