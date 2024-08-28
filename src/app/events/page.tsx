@@ -31,6 +31,7 @@ import {
   getCategoryLabel,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { createTagsProp } from '@/utils/createTagsProp'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -192,6 +193,11 @@ export default function Events({ searchParams }: Props) {
                       const shouldLinkToExternalEventsPage =
                         !description && externalLink
 
+                      const tag = getCategoryLabel({
+                        collectionName: 'event_entries',
+                        category,
+                      })
+
                       return (
                         <Card
                           key={slug}
@@ -199,6 +205,7 @@ export default function Events({ searchParams }: Props) {
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
+                          tags={createTagsProp({ label: tag })}
                           image={{
                             alt: '',
                             ...(image || {
@@ -220,10 +227,6 @@ export default function Events({ searchParams }: Props) {
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
                           }}
-                          tag={getCategoryLabel({
-                            collectionName: 'event_entries',
-                            category,
-                          })}
                         />
                       )
                     })}

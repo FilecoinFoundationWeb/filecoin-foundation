@@ -8,7 +8,7 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-import { TagLabel } from '@/components/TagLabel'
+import { TagLabel, type TagProps } from '@/components/TagLabel'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
@@ -16,7 +16,7 @@ import { isExternalLink } from '@/utils/linkUtils'
 
 type CardProps = {
   title: string | React.ReactNode
-  tag?: string
+  tags?: Array<TagProps>
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
@@ -112,7 +112,7 @@ const borderStyles = {
 
 export function Card({
   title,
-  tag,
+  tags,
   metaData,
   description,
   cta,
@@ -131,9 +131,13 @@ export function Card({
       <CardImage image={image} />
 
       <div className="flex flex-col p-4">
-        {tag && (
-          <span className="mb-4">
-            <TagLabel>{tag}</TagLabel>
+        {tags && tags.length > 0 && (
+          <span className="mb-4 flex gap-2">
+            {tags.map((tag) => (
+              <TagLabel key={`${tag.children}`} borderColor={tag.borderColor}>
+                {tag.children}
+              </TagLabel>
+            ))}
           </span>
         )}
 

@@ -2,6 +2,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { createTagsProp } from '@/utils/createTagsProp'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
@@ -33,7 +34,7 @@ export function FeaturedBlogPosts() {
           <Card
             key={slug}
             metaData={getBlogPostMetaData(publishedOn)}
-            tag={category}
+            tags={createTagsProp({ label: category })}
             title={title}
             description={description}
             textIsClamped={true}

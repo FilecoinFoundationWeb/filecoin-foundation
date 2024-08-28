@@ -27,6 +27,7 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { createTagsProp } from '@/utils/createTagsProp'
 import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -189,6 +190,11 @@ export default function Blog({ searchParams }: Props) {
 
                       const isFirstTwoImages = i < 2
 
+                      const tag = getCategoryLabel({
+                        collectionName: 'blog_posts',
+                        category,
+                      })
+
                       return (
                         <Card
                           key={slug}
@@ -196,6 +202,7 @@ export default function Blog({ searchParams }: Props) {
                           description={description}
                           textIsClamped={true}
                           metaData={getBlogPostMetaData(publishedOn)}
+                          tags={createTagsProp({ label: tag })}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',
@@ -215,10 +222,6 @@ export default function Blog({ searchParams }: Props) {
                               lg: '360px',
                             }),
                           }}
-                          tag={getCategoryLabel({
-                            collectionName: 'blog_posts',
-                            category,
-                          })}
                         />
                       )
                     })}

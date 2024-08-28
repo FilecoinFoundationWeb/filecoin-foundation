@@ -29,6 +29,7 @@ import {
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { createTagsProp } from '@/utils/createTagsProp'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -165,7 +166,9 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           description={description}
-                          tag={categoryData[category]}
+                          tags={createTagsProp({
+                            label: categoryData[category],
+                          })}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
