@@ -1,20 +1,19 @@
 ---
 title: "Dev Grant Spotlight: Arlequin — the Artist’s Metaverse"
-created-on: 2023-04-21T07:26:31.815000Z
-updated-on: 2023-04-21T07:26:31.815000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  Arlequin — the Artists Metaverse — is a community-driven, ‘Paint-to-Earn’
-  system where users can collect NFT 3D animals, known as ‘Arlee’, in a creative ecosystem
-  powered by the Flow blockchain and using Interplanetary File System (IPFS) via nft.storage.
+created-on: 2023-04-21T07:26:31.815Z
+updated-on: 2023-04-21T07:26:31.815Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: Arlequin — the Artists Metaverse — is a community-driven,
+  ‘Paint-to-Earn’ system where users can collect NFT 3D animals, known as
+  ‘Arlee’, in a creative ecosystem powered by the Flow blockchain and using
+  Interplanetary File System (IPFS) via nft.storage.
 image:
   src: /assets/images/64423aa70425d34fa6f2743e_1-s1umhgp4fz8mfyk3fixjia.png
-category: reports
 seo:
   title: "Dev Grant Spotlight: Arlequin - The Artist’s Metaverse"
-  description:
-    Arlequin's Artist’s Metaverse project spotlight. Discover their journey
-    with the Filecoin dev grant.
+  description: Arlequin's Artist’s Metaverse project spotlight. Discover their
+    journey with the Filecoin Foundation Dev Grant.
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ _[Learn more](https://grants.filecoin.io/)_ _about the Filecoin Foundation’s Dev Grants program._
