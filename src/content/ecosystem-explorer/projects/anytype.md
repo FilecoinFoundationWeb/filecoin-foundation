@@ -6,7 +6,7 @@ published-on: 2024-04-05T17:13:02.007Z
 email: encrypted::U2FsdGVkX198M+LHOoKq+fWO97ku9XeZylR7t/+iM6X0KTiB8CroYpyESvSDDcMD
 full-name: encrypted::U2FsdGVkX184FcByCGxPtRIezALp8wP/rCPdbGHbbCU=
 image:
-  src: /assets/images/anytype.png
+  src: /assets/images/anytype.webp
 category: tooling-productivity
 subcategories:
   - dapp
