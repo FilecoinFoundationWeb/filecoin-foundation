@@ -3,6 +3,9 @@ import { DigestArticleFrontMatterSchema } from '@/schemas/digestArticleFrontMatt
 export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
   return DigestArticleFrontMatterSchema.parse({
     title: data.title,
+    createdOn: data['created-on'],
+    updatedOn: data['updated-on'],
+    publishedOn: data['published-on'],
     issueNumber: data['issue-number'],
     articleNumber: data['article-number'],
     authors: data.authors?.map((author: Record<string, any>) => ({
@@ -16,5 +19,7 @@ export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
         : undefined,
     })),
     content: data.content,
+    image: data.image,
+    seo: data.seo,
   })
 }

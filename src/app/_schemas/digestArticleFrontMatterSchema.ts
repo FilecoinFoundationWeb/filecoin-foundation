@@ -5,7 +5,7 @@ import { ImagePropsSchema } from '@/schemas/imagePropsSchema'
 
 export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
-  issueNumber: z.number(),
+  issueNumber: z.string(),
   articleNumber: z.number(),
   authors: z.array(
     z.object({

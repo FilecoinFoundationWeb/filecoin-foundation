@@ -1659,6 +1659,213 @@
       ]
     },
     {
+      "name": "digest_articles",
+      "label": "Digest Articles",
+      "folder": "src/content/digest/",
+      "preview_path": "digest/{{slug}}",
+      "label_singular": "Digest Article",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "issue-number",
+          "label": "Issue Number",
+          "widget": "select",
+          "options": [
+            "1"
+          ],
+          "default": "1"
+        },
+        {
+          "name": "article-number",
+          "label": "Article Number",
+          "widget": "number",
+          "min": 1
+        },
+        {
+          "name": "authors",
+          "label": "Authors",
+          "widget": "list",
+          "fields": [
+            {
+              "name": "first-name",
+              "label": "First Name",
+              "widget": "string"
+            },
+            {
+              "name": "last-name",
+              "label": "Last Name",
+              "widget": "string"
+            },
+            {
+              "name": "image",
+              "label": "Image",
+              "widget": "object",
+              "required": false,
+              "hint": "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback.",
+              "fields": [
+                {
+                  "name": "src",
+                  "label": "URL",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false,
+                  "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+                },
+                {
+                  "name": "alt",
+                  "label": "Alt Text",
+                  "widget": "hidden",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "widget": "markdown",
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ]
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "choose_url": false,
+              "required": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "hidden",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "pattern": [
+                "^.{0,220}$",
+                "Must have at most 220 characters."
+              ],
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "ecosystem_projects_categories",
       "label": "Ecosystem Projects Categories",
       "label_singular": "Ecosystem Projects Category",
