@@ -10,32 +10,30 @@ import { graphicsData } from '@/data/graphicsData'
 
 type DigestArticleHeaderProps = Pick<
   DigestArticleData,
-  'title' | 'issueNumber' | 'articleNumber' | 'image' | 'authors'
+  'issueNumber' | 'articleNumber' | 'title' | 'authors' | 'image'
 >
 
 export function DigestArticleHeader({
-  title,
   issueNumber,
   articleNumber,
-  image,
+  title,
   authors,
+  image,
 }: DigestArticleHeaderProps) {
   return (
     <header className="space-y-8">
       <div className="space-y-4">
         <div className="space-x-3">
-          <TagLabel borderColor="brand-100">{`Issue ${issueNumber.toString()}`}</TagLabel>
+          <TagLabel borderColor="brand-100">{`Issue ${issueNumber}`}</TagLabel>
           <TagLabel>{`Article ${articleNumber}`}</TagLabel>
         </div>
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>
-        <div className="space-x-3">
-          {authors.map((author) => (
-            <span key={author.name} className="text-sm text-blue-100">
-              {author.name}
-            </span>
-          ))}
+        <div>
+          <span className="text-sm text-blue-100">
+            {formatAuthors(authors)}
+          </span>
         </div>
       </div>
 
@@ -53,4 +51,22 @@ export function DigestArticleHeader({
       </div>
     </header>
   )
+}
+
+export function formatAuthors(authors: DigestArticleData['authors']) {
+  return authors
+    .map((author, index) => {
+      const isLastAuthor = index === authors.length - 1
+      const isSecondToLastAuthor = index === authors.length - 2
+
+      let separator = ''
+      if (isSecondToLastAuthor && authors.length > 1) {
+        separator = ' & '
+      } else if (!isLastAuthor) {
+        separator = ', '
+      }
+
+      return `${author.firstName} ${author.lastName}${separator}`
+    })
+    .join('')
 }
