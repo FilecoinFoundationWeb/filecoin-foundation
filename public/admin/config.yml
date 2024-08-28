@@ -620,16 +620,16 @@ collections:
         widget: "list"
         fields:
           - name: "first-name"
-            label: First Name
+            label: "First Name"
             widget: "string"
           - name: "last-name"
-            label: Last Name
+            label: "Last Name"
             widget: "string"
           - name: "image"
             label: "Image"
             widget: "object"
             required: false
-            hint: Adding an image is optional. If no image is added, the authors's initials will be used automatically. Simply leave the image field empty to use the fallback.
+            hint: "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback."
             fields:
               - name: "src"
                 label: "URL"

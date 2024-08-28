@@ -1,6 +1,7 @@
 import { z } from 'zod'
 
 import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
+import { ImagePropsSchema } from '@/schemas/imagePropsSchema'
 
 export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
@@ -10,13 +11,9 @@ export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   publicationDate: z.coerce.date().optional(),
   authors: z.array(
     z.object({
-      name: z.string(),
-      image: z
-        .object({
-          src: z.string().url().optional(),
-          alt: z.string().optional(),
-        })
-        .optional(),
+      firstName: z.string(),
+      lastName: z.string(),
+      image: ImagePropsSchema.optional(),
     }),
   ),
   content: z.string(),

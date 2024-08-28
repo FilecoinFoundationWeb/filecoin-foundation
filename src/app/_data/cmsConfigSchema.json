@@ -1576,16 +1576,7 @@
             "image",
             "video",
             "audio"
-          ],
-          "required": false,
-          "search_fields": [
-            "slug",
-            "title"
-          ],
-          "display_fields": [
-            "title"
-          ],
-          "multiple": true
+          ]
         },
         {
           "name": "seo",
@@ -2376,11 +2367,6 @@
           "required": false
         },
         {
-          "name": "description",
-          "label": "Description",
-          "widget": "string"
-        },
-        {
           "name": "issue-number",
           "label": "Issue Number",
           "widget": "number",
@@ -2403,27 +2389,35 @@
           "widget": "list",
           "fields": [
             {
-              "label": "Author Name",
-              "name": "name",
+              "name": "first-name",
+              "label": "First Name",
               "widget": "string"
             },
             {
-              "label": "Author Image",
+              "name": "last-name",
+              "label": "Last Name",
+              "widget": "string"
+            },
+            {
               "name": "image",
+              "label": "Image",
               "widget": "object",
+              "required": false,
+              "hint": "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback.",
               "fields": [
                 {
                   "name": "src",
-                  "label": "Image URL",
+                  "label": "URL",
                   "widget": "image",
                   "allow_multiple": false,
                   "choose_url": false,
-                  "required": false
+                  "required": false,
+                  "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
                 },
                 {
                   "name": "alt",
                   "label": "Alt Text",
-                  "widget": "string",
+                  "widget": "hidden",
                   "required": false
                 }
               ]
