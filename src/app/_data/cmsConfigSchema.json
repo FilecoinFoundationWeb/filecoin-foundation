@@ -52,6 +52,17 @@
       }
     ]
   },
+  "body_config": {
+    "name": "body",
+    "label": "Content",
+    "widget": "markdown",
+    "editor_components": [
+      "code-block",
+      "image",
+      "video",
+      "audio"
+    ]
+  },
   "image_config": {
     "name": "image",
     "label": "Image",
