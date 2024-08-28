@@ -30,7 +30,7 @@ export default function DigestArticle({ params }: DigestArticleProps) {
   const { slug } = params
   const data = getDigestArticleData(slug)
 
-  const { title, issueNumber, articleNumber, image, content } = data
+  const { title, issueNumber, articleNumber, image, authors, content } = data
 
   return (
     <PageLayout>
@@ -41,6 +41,7 @@ export default function DigestArticle({ params }: DigestArticleProps) {
           issueNumber={issueNumber}
           articleNumber={articleNumber}
           image={image}
+          authors={authors}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
       </div>
