@@ -1,4 +1,4 @@
-import Airtable, { FieldSet, Records } from 'airtable'
+import Airtable, { type FieldSet, type Records } from 'airtable'
 import { z } from 'zod'
 
 import { getUTCMidnightToday } from '@/utils/dateUtils'
