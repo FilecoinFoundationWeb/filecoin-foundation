@@ -622,22 +622,28 @@ collections:
         label: "Authors"
         widget: "list"
         fields:
-          - label: "Author Name"
-            name: "name"
+          - name: "first-name"
+            label: First Name
             widget: "string"
-          - label: "Author Image"
-            name: "image"
+          - name: "last-name"
+            label: Last Name
+            widget: "string"
+          - name: "image"
+            label: "Image"
             widget: "object"
+            required: false
+            hint: Adding an image is optional. If no image is added, the authors's initials will be used automatically. Simply leave the image field empty to use the fallback.
             fields:
               - name: "src"
-                label: "Image URL"
+                label: "URL"
                 widget: "image"
                 allow_multiple: false
                 choose_url: false
                 required: false
+                hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
               - name: "alt"
                 label: "Alt Text"
-                widget: "string"
+                widget: "hidden"
                 required: false
       - *body_config
       - *image_config
