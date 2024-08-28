@@ -35,6 +35,9 @@ export default function sitemap() {
   const blogPosts = getBlogPostsData()
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
+  const digests = getDigestArticlesData()
+  const dynamicDigestRoutes = generateDynamicRoutes(digests, PATHS.DIGEST.path)
+
   const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
     ecosystemProjects,
@@ -44,14 +47,11 @@ export default function sitemap() {
   const events = getEventsData()
   const dynamicEventRoutes = generateDynamicRoutes(events, PATHS.EVENTS.path)
 
-  const digests = getDigestArticlesData()
-  const dynamicDigestRoutes = generateDynamicRoutes(digests, PATHS.DIGEST.path)
-
   return [
     ...staticRoutes,
     ...dynamicBlogRoutes,
+    ...dynamicDigestRoutes,
     ...dynamicEcosystemProjectRoutes,
     ...dynamicEventRoutes,
-    ...dynamicDigestRoutes,
   ]
 }
