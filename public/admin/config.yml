@@ -48,6 +48,16 @@ header_config: &header_config
       label: "Description"
       widget: "text"
 
+body_config: &body_config
+  name: "body"
+  label: "Content"
+  widget: "markdown"
+  editor_components:
+    - "code-block"
+    - "image"
+    - "video"
+    - "audio"
+
 image_config: &image_config
   name: "image"
   label: "Image"
@@ -304,21 +314,7 @@ collections:
         label: "Description"
         widget: "text"
       - *image_config
-      - name: "body"
-        label: "Content"
-        widget: "markdown"
-        editor_components:
-          - "code-block"
-          - "image"
-          - "video"
-          - "audio"
-        required: false
-        search_fields:
-          - "slug"
-          - "title"
-        display_fields:
-          - "title"
-        multiple: true
+      - *body_config
       - *meta_config
 
   - name: "ecosystem_projects_categories"
@@ -643,13 +639,6 @@ collections:
                 label: "Alt Text"
                 widget: "string"
                 required: false
-      - name: "body"
-        label: "Content"
-        widget: "markdown"
-        editor_components:
-          - "code-block"
-          - "image"
-          - "video"
-          - "audio"
+      - *body_config
       - *image_config
       - *meta_config
