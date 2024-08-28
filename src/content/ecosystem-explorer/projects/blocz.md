@@ -1,25 +1,26 @@
 ---
 title: blocz
-created-on: 2024-04-05T02:22:34.349000Z
-updated-on: 2024-04-05T02:22:34.361000Z
-published-on: 2024-04-05T02:22:34.372000Z
-description:
-  "5G, edge, private cloud, cloud backup, disaster recovery, cloud migrations,
-  and complex secure data storage solutions."
+created-on: 2024-04-05T02:22:34.349Z
+updated-on: 2024-04-05T02:22:34.361Z
+published-on: 2024-04-05T02:22:34.372Z
+email: encrypted::U2FsdGVkX18j07Y12KG9/ZG/seIFycHOMf4yNXZdju7S10PEtL7JTYb1rnk7eySa
+full-name: encrypted::U2FsdGVkX18o8O8K0W6UJR9N1GBZgVB65w3WIqpwV/o=
+image:
+  src: /assets/images/blocz.png
 category: storage
+subcategories:
+  - data-storage-management
 tags:
   - data-storage-management
   - storage-infrastructure
+description: 5G, edge, private cloud, cloud backup, disaster recovery, cloud
+  migrations, and complex secure data storage solutions.
+website: https://www.blocz.io/
 tech:
   - filecoin
-image:
-  src: /assets/images/blocz.png
-website: https://www.blocz.io/
-year-joined: 2024-04-05T02:22:34.382000Z
-subcategories:
-  - data-storage-management
+year-joined: 2024-04-05T02:22:34.382Z
 seo:
-  title: Blocz
+  title: "Blocz: Delivering Secentralized Storage, Edge Computing, and CDN Services"
   description: Blocz provides blockchain-based solutions for data management.
 ---
 
