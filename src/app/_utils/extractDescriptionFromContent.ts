@@ -1,8 +1,13 @@
 export function extractDescriptionFromContent(content: string): string {
-  return content
-    .split('\n')
-    .filter((line) => !line.startsWith('#'))
-    .join('\n')
-    .trim()
-    .split('\n\n')[0]
+  const lines = content.split('\n')
+  const startIndex = lines[0].startsWith('#') ? 1 : 0
+
+  return (
+    lines
+      .slice(startIndex)
+      .join(' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .split('.')[0] + '.'
+  )
 }
