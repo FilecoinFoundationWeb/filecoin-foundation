@@ -12,7 +12,7 @@ import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
-import { NextServerSearchParams } from '@/types/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { formatDate } from '@/utils/dateUtils'
 import { logZodError } from '@/utils/zodUtils'

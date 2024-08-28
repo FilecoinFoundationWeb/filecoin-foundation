@@ -23,7 +23,7 @@ import { Sort } from '@/components/Sort'
 import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { NextServerSearchParams } from '@/types/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {

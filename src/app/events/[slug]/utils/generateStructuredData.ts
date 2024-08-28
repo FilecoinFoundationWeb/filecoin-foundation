@@ -1,4 +1,4 @@
-import {
+import type {
   Event as EventSchema,
   Place,
   VirtualLocation,

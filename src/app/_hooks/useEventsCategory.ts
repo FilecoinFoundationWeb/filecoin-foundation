@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 
 import { isBefore } from 'date-fns'
 
-import { UseCategoryProps, useCategory } from '@/hooks/useCategory'
+import { type UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
 import type { Event } from '@/types/eventType'
 

@@ -9,7 +9,7 @@ import { createCommit } from './api/createCommit'
 import { createPR } from './api/createPr'
 import { createTree } from './api/createTree'
 import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
-import { AllowedImageFormats } from './utils/fileUtils'
+import type { AllowedImageFormats } from './utils/fileUtils'
 import { getMarkdownTemplate } from './utils/markdownUtils'
 import { getFolderPaths } from './utils/pathUtils'
 

@@ -1,4 +1,4 @@
-import { Thing, WithContext } from 'schema-dts'
+import type { Thing, WithContext } from 'schema-dts'
 
 type StructuredDataScriptProps = {
   structuredData: WithContext<Thing>
