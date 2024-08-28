@@ -10,7 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 type DigestArticleHeaderProps = Pick<
   DigestArticleData,
-  'title' | 'issueNumber' | 'articleNumber' | 'image'
+  'title' | 'issueNumber' | 'articleNumber' | 'image' | 'authors'
 >
 
 export function DigestArticleHeader({
@@ -18,6 +18,7 @@ export function DigestArticleHeader({
   issueNumber,
   articleNumber,
   image,
+  authors,
 }: DigestArticleHeaderProps) {
   return (
     <header className="space-y-8">
@@ -29,6 +30,13 @@ export function DigestArticleHeader({
         <Heading tag="h1" variant="4xl">
           {title}
         </Heading>
+        <div className="space-x-3">
+          {authors.map((author) => (
+            <span key={author.name} className="text-sm text-blue-100">
+              {author.name}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="relative aspect-video">
