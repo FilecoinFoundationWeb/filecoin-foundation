@@ -245,6 +245,13 @@ collections:
             max: 6
           - *meta_config
 
+      - name: "maturity-model"
+        label: "Maturity Model"
+        file: "src/content/pages/maturity-model.md"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
