@@ -13,6 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { createTagsProp } from '@/utils/createTagsProp'
 import { extractDescriptionFromContent } from '@/utils/extractDescriptionFromContent'
 import { getDigestArticlesData } from '@/utils/getDigestArticleData'
+import { sortDigestArticles } from '@/utils/sortDigestArticles'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -48,54 +49,46 @@ export default function Digest() {
         description="Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and the data economy. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future."
       >
         <CardGrid cols="smTwo">
-          {digests
-            .sort((a, b) => Number(a.articleNumber) - Number(b.articleNumber))
-            .map((digest) => {
-              const {
-                title,
-                content,
-                image,
-                slug,
-                issueNumber,
-                articleNumber,
-              } = digest
+          {digests.sort(sortDigestArticles).map((digest) => {
+            const { title, content, image, slug, issueNumber, articleNumber } =
+              digest
 
-              return (
-                <Card
-                  key={title}
-                  title={title}
-                  description={extractDescriptionFromContent(content)}
-                  textIsClamped={true}
-                  tags={[
-                    ...createTagsProp({
-                      label: `Issue ${issueNumber}`,
-                      borderColor: 'brand-100',
-                    }),
-                    ...createTagsProp({
-                      label: `Article ${articleNumber}`,
-                    }),
-                  ]}
-                  cta={{
-                    href: `${PATHS.DIGEST.path}/${slug}`,
-                    text: 'Read Article',
-                    icon: BookOpen,
-                  }}
-                  image={{
-                    alt: '',
-                    ...(image || {
-                      ...graphicsData.imageFallback,
-                    }),
-                    fallback: graphicsData.imageFallback,
-                    sizes: buildImageSizeProp({
-                      startSize: '100vw',
-                      sm: '350px',
-                      md: '470px',
-                      lg: '360px',
-                    }),
-                  }}
-                />
-              )
-            })}
+            return (
+              <Card
+                key={title}
+                title={title}
+                description={extractDescriptionFromContent(content)}
+                textIsClamped={true}
+                tags={[
+                  ...createTagsProp({
+                    label: `Issue ${issueNumber}`,
+                    borderColor: 'brand-100',
+                  }),
+                  ...createTagsProp({
+                    label: `Article ${articleNumber}`,
+                  }),
+                ]}
+                cta={{
+                  href: `${PATHS.DIGEST.path}/${slug}`,
+                  text: 'Read Article',
+                  icon: BookOpen,
+                }}
+                image={{
+                  alt: '',
+                  ...(image || {
+                    ...graphicsData.imageFallback,
+                  }),
+                  fallback: graphicsData.imageFallback,
+                  sizes: buildImageSizeProp({
+                    startSize: '100vw',
+                    sm: '350px',
+                    md: '470px',
+                    lg: '360px',
+                  }),
+                }}
+              />
+            )
+          })}
         </CardGrid>
       </PageSection>
 
