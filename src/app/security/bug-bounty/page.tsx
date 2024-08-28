@@ -18,6 +18,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.BUG_BOUNTY.path,
+  overrideDefaultTitle: true,
 })
 
 export default function BugBounty() {
