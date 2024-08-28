@@ -604,9 +604,6 @@ collections:
       - *created_on
       - *updated_on
       - *published_on
-      - name: "description"
-        label: "Description"
-        widget: "string"
       - name: "issue-number"
         label: "Issue Number"
         widget: "number"
