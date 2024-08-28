@@ -49,7 +49,7 @@ export default function Digest() {
       >
         <CardGrid cols="smTwo">
           {digests
-            .sort((a, b) => Number(a.issueNumber) - Number(b.issueNumber))
+            .sort((a, b) => Number(a.articleNumber) - Number(b.articleNumber))
             .map((digest) => {
               const {
                 title,
