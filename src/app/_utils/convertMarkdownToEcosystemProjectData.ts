@@ -2,11 +2,9 @@ import { EcosystemProjectFrontMatter } from '@/schemas/ecosystemProject/FrontMat
 
 export function convertMarkdownToEcosystemProjectData(
   data: Record<string, any>,
-  slug: string,
 ) {
-  const result = EcosystemProjectFrontMatter.safeParse({
+  return EcosystemProjectFrontMatter.parse({
     title: data.title,
-    slug: data.slug,
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
     publishedOn: data['published-on'],
@@ -26,19 +24,4 @@ export function convertMarkdownToEcosystemProjectData(
     image: data.image,
     seo: data.seo,
   })
-
-  if (result.success) {
-    return result.data
-  } else {
-    console.error('🔥 Validation errors:')
-    console.error(`Title: ${data.title}`)
-    console.error(`Slug: ${slug}`)
-
-    result.error.errors.forEach((error) => {
-      console.error(`Path: ${error.path.join(' > ')}`)
-      console.error(`Issue: ${error.message}`)
-    })
-
-    throw new Error('Invalid ecosystem project data')
-  }
 }
