@@ -110,8 +110,8 @@ const FILECOIN_FOUNDATION_URLS = {
       filecoinCompatibility:
         'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
       auditReports: 'https://spec.filecoin.io/#section-appendix.audit_reports',
-      bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
     },
+    bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
   },
   social: {
     bluesky: {

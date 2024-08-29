@@ -4,9 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('__PAGE_NAME_START_CASE__ Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.__PATH_NAME__
-    })
+    testPageMetadata(PATHS.__PATH_NAME__)
   })
 
   it('should check links', () => {

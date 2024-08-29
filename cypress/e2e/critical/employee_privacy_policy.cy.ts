@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Employee Privacy Policy Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.EMPLOYEE_PRIVACY_POLICY,
+    testPageMetadata(PATHS.EMPLOYEE_PRIVACY_POLICY, {
       hasPageHeaderDescription: false,
     })
   })
