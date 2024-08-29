@@ -114,8 +114,8 @@ export default function Security() {
       <PageSection
         kicker="Report Bugs"
         title="Bug Bounty Program"
-        image={graphicsData.security4}
         description="Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities. Since launching our Bug Bounty program, we’ve paid out more than $400,000 in rewards."
+        image={graphicsData.security4}
         cta={[
           {
             href: PATHS.BUG_BOUNTY.path,
@@ -126,6 +126,17 @@ export default function Security() {
             text: 'Coordinated Disclosure Policy',
           },
         ]}
+      />
+
+      <PageSection
+        kicker="Maturity Model"
+        title="Web3 Security Maturity Model"
+        description="The Web3 Security Maturity Model, developed by Filecoin Foundation’s security team, is a comprehensive framework designed for organizations and projects building decentralized technology. It allows organizations to perform a structured self-assessment with the goal of helping Filecoin and Web3 contributions better evaluate and enhance their security posture across all aspects of development and operations."
+        image={graphicsData.security5}
+        cta={{
+          href: PATHS.MATURITY_MODEL.path,
+          text: 'Learn More About the Maturity Model',
+        }}
       />
 
       <CTASection
