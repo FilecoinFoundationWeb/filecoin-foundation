@@ -1,5 +1,6 @@
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -11,6 +12,7 @@ import { attributes } from '@/content/pages/security/bug-bounty.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { Leaderboard } from './components/Leaderboard'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -34,6 +36,10 @@ export default function BugBounty() {
           href: FILECOIN_FOUNDATION_URLS.security.bugBountyProgram,
         }}
       />
+
+      <PageSection kicker="Bug Hunters" title="Leaderboard">
+        <Leaderboard />
+      </PageSection>
     </PageLayout>
   )
 }
