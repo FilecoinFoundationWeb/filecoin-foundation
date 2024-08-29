@@ -143,16 +143,12 @@ export default function Security() {
         title="Engage with Our Security Team"
         description={[
           'Filecoin Foundation security team is always looking to better understand the perspectives and needs of the Filecoin ecosystem. Feedback is invaluable!',
-          <>
-            Don’t hesitate to{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.main.href}>
-              {extractEmailAddress(
-                FILECOIN_FOUNDATION_URLS.security.emails.main.href,
-              )}{' '}
-            </TextLink>{' '}
-            or meet our team at upcoming Foundation-hosted and community events.
-          </>,
+          'Don’t hesitate to contact to contact us or meet our team at upcoming Foundation-hosted and community events.',
         ]}
+        cta={{
+          href: FILECOIN_FOUNDATION_URLS.security.emails.main.href,
+          text: FILECOIN_FOUNDATION_URLS.security.emails.main.label,
+        }}
       />
     </PageLayout>
   )
