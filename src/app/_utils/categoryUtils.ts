@@ -1,9 +1,9 @@
 import { z } from 'zod'
 
 import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
-import { type CMSFieldOption, type CMSCollectionName } from '@/types/cmsConfig'
+import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
 import { pastEventsOption } from '@/constants/categoryConstants'
@@ -15,7 +15,7 @@ type GetCategoryLabelParams = {
 
 const CATEGORY_FIELD_NAME = 'category'
 
-function transformCategoryDataToSettings(options: CMSFieldOption[]) {
+function transformCategoryDataToSettings(options: Array<CMSFieldOption>) {
   return options.map((option) => ({
     id: option.value,
     name: option.label,

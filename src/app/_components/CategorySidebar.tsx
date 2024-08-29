@@ -16,7 +16,7 @@ const touchTarget = {
 
 type CategorySidebarProps = {
   selected: CategoryId
-  options: CategoryOption[]
+  options: Array<CategoryOption>
   counts?: CategoryCounts
   onChange: (selected: CategoryId) => void
 }
