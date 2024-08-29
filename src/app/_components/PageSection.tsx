@@ -21,8 +21,8 @@ type PageSectionProps = {
   title: string
   description?: DescriptionTextType
   image?: StaticImageProps
+  cta?: CTAProps | [CTAProps, CTAProps]
   children?: React.ReactNode
-  cta?: CTAProps
 }
 
 export function PageSection({
@@ -33,6 +33,8 @@ export function PageSection({
   children,
   cta,
 }: PageSectionProps) {
+  const ctaArray = Array.isArray(cta) ? cta : [cta]
+
   return (
     <section>
       <SectionDivider title={kicker} />
@@ -46,11 +48,31 @@ export function PageSection({
           <Heading tag="h2" variant="3xl">
             {title}
           </Heading>
+
           {description && <DescriptionText>{description}</DescriptionText>}
-          {cta && (
-            <Button href={cta.href} variant="primary" className="w-full">
-              {cta.text}
-            </Button>
+
+          {ctaArray && (
+            <div
+              className={clsx(
+                'grid gap-4',
+                ctaArray.length === 1
+                  ? 'lg:grid-cols-1'
+                  : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
+              )}
+            >
+              {ctaArray.map(
+                (button, index) =>
+                  button && (
+                    <Button
+                      key={index}
+                      href={button.href}
+                      variant={index === 0 ? 'primary' : 'ghost'}
+                    >
+                      {button.text}
+                    </Button>
+                  ),
+              )}
+            </div>
           )}
         </div>
         {image && (

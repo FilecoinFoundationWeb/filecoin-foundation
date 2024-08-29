@@ -116,10 +116,16 @@ export default function Security() {
         title="Bug Bounty Program"
         image={graphicsData.security4}
         description="Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities. Since launching our Bug Bounty program, we’ve paid out more than $400,000 in rewards."
-        cta={{
-          text: 'Filecoin Foundation Bug Bounty',
-          href: PATHS.BUG_BOUNTY.path,
-        }}
+        cta={[
+          {
+            href: PATHS.BUG_BOUNTY.path,
+            text: 'Learn More About the Program',
+          },
+          {
+            href: PATHS.COORDINATED_DISCLOSURE_POLICY.path,
+            text: 'Coordinated Disclosure Policy',
+          },
+        ]}
       />
 
       <CTASection
