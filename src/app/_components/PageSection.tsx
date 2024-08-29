@@ -1,9 +1,12 @@
 import { clsx } from 'clsx'
 
-import { Button } from '@/components/Button'
 import {
-  type DescriptionTextType,
+  type CTAButtonGroupProps,
+  CTAButtonGroup,
+} from '@/components/CTAButtonGroup'
+import {
   DescriptionText,
+  type DescriptionTextType,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import {
@@ -12,8 +15,6 @@ import {
 } from '@/components/SectionDivider'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
-import type { CTAProps } from '@/types/sharedProps/ctaType'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PageSectionProps = {
@@ -21,7 +22,7 @@ type PageSectionProps = {
   title: string
   description?: DescriptionTextType
   image?: StaticImageProps
-  cta?: CTAProps | [CTAProps, CTAProps]
+  cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
 }
 
@@ -33,8 +34,6 @@ export function PageSection({
   children,
   cta,
 }: PageSectionProps) {
-  const ctaArray = Array.isArray(cta) ? cta : [cta]
-
   return (
     <section>
       <SectionDivider title={kicker} />
@@ -51,30 +50,9 @@ export function PageSection({
 
           {description && <DescriptionText>{description}</DescriptionText>}
 
-          {ctaArray && (
-            <div
-              className={clsx(
-                'grid gap-4',
-                ctaArray.length === 1
-                  ? 'lg:grid-cols-1'
-                  : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
-              )}
-            >
-              {ctaArray.map(
-                (button, index) =>
-                  button && (
-                    <Button
-                      key={index}
-                      href={button.href}
-                      variant={index === 0 ? 'primary' : 'ghost'}
-                    >
-                      {button.text}
-                    </Button>
-                  ),
-              )}
-            </div>
-          )}
+          {cta && <CTAButtonGroup cta={cta} />}
         </div>
+
         {image && (
           <div className="relative aspect-video lg:aspect-auto">
             <StaticImage
@@ -86,6 +64,7 @@ export function PageSection({
           </div>
         )}
       </div>
+
       {children && <div className="flex flex-col gap-6">{children}</div>}
     </section>
   )

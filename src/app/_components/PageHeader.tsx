@@ -1,6 +1,9 @@
 import { clsx } from 'clsx'
 
-import { Button } from '@/components/Button'
+import {
+  type CTAButtonGroupProps,
+  CTAButtonGroup,
+} from '@/components/CTAButtonGroup'
 import {
   DescriptionText,
   type DescriptionTextType,
@@ -11,8 +14,6 @@ import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
-import { type CTAProps } from '@/types/sharedProps/ctaType'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type TitleProps = {
@@ -22,7 +23,7 @@ type TitleProps = {
 type PageHeaderProps = {
   title: TitleProps['children']
   description?: DescriptionTextType
-  cta?: CTAProps | [CTAProps, CTAProps]
+  cta?: CTAButtonGroupProps['cta']
   metaData?: MetaDataType
   isFeatured?: boolean
   image: StaticImageProps | DynamicImageProps
@@ -77,8 +78,6 @@ export function PageHeader({
   metaData,
   isFeatured = false,
 }: PageHeaderProps) {
-  const ctaArray = Array.isArray(cta) ? cta : [cta]
-
   return (
     <header className="grid gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
@@ -94,29 +93,7 @@ export function PageHeader({
 
           {description && <DescriptionText>{description}</DescriptionText>}
 
-          {ctaArray && (
-            <div
-              className={clsx(
-                'grid gap-4',
-                ctaArray.length === 1
-                  ? 'lg:grid-cols-1'
-                  : 'sm:grid-cols-2 sm:gap-3 lg:grid-cols-1 lg:gap-4',
-              )}
-            >
-              {ctaArray.map(
-                (button, index) =>
-                  button && (
-                    <Button
-                      key={index}
-                      href={button.href}
-                      variant={index === 0 ? 'primary' : 'ghost'}
-                    >
-                      {button.text}
-                    </Button>
-                  ),
-              )}
-            </div>
-          )}
+          {cta && <CTAButtonGroup cta={cta} />}
         </div>
 
         <div className="lg:w-1/2">
