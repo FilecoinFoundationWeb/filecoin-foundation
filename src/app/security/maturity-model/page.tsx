@@ -26,7 +26,7 @@ export default function MaturityModel() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback}
+        image={graphicsData.security5}
       />
     </PageLayout>
   )
