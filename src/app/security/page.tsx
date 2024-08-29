@@ -1,18 +1,12 @@
-import { Envelope } from '@phosphor-icons/react/dist/ssr'
-
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -21,7 +15,7 @@ import { attributes } from '@/content/pages/security/security.md'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { securityResourcesData } from './data/securityResourcesData'
+import { developerSupportData } from './data/developerSupportData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -58,21 +52,28 @@ export default function Security() {
         image={graphicsData.security2}
       />
 
-      <PageSection kicker="Resources" title="Security Resources">
+      <PageSection kicker="Secure Your Project" title="Developer Support">
         <CardGrid cols="smTwo">
-          {securityResourcesData.map((card) => {
-            const { title, cta } = card
+          {developerSupportData.map((card) => {
+            const {
+              heading: { title, icon },
+              description,
+            } = card
 
             return (
               <HomeExploreSectionCard
                 key={title}
-                cta={cta}
                 heading={{
                   tag: 'h3',
                   variant: 'lg',
                   children: title,
+                  iconProps: {
+                    component: icon,
+                  },
                 }}
-              />
+              >
+                {description}
+              </HomeExploreSectionCard>
             )
           })}
         </CardGrid>
