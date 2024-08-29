@@ -155,6 +155,7 @@ const newPageConfig = `      - name: "${pageName}"
           .map((word) => startCase(word))
           .join(' ')}"
         file: "src/content/pages/${pageName}.md"
+        preview_path: "${pageName}"
         fields:
           - *header_config
           - *meta_config`
