@@ -20,18 +20,15 @@ export function CTAButtonGroup({ cta }: CTAButtonGroupProps) {
 
   return (
     <div className={gridClasses}>
-      {ctaArray.map(
-        (button, index) =>
-          button && (
-            <Button
-              key={index}
-              href={button.href}
-              variant={index === 0 ? 'primary' : 'ghost'}
-            >
-              {button.text}
-            </Button>
-          ),
-      )}
+      {ctaArray.map((button, index) => (
+        <Button
+          key={index}
+          href={button.href}
+          variant={index === 0 ? 'primary' : 'ghost'}
+        >
+          {button.text}
+        </Button>
+      ))}
     </div>
   )
 }
