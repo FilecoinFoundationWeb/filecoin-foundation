@@ -1,12 +1,11 @@
-import { TextLink } from '@/components/TextLink'
-
 import { FileText, UserCircle } from '@phosphor-icons/react/dist/ssr'
 
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import type { IconProps } from '@/components/Icon'
+import { TextLink } from '@/components/TextLink'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
-import type { IconProps } from '@/components/Icon'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type DeveloperSupportData = {
   heading: {
@@ -16,7 +15,7 @@ type DeveloperSupportData = {
   description: React.ReactNode
 }
 
-export const developerSupportData: DeveloperSupportData[] = [
+export const developerSupportData: Array<DeveloperSupportData> = [
   {
     heading: {
       title: 'Auditor Network',
