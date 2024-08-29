@@ -6,6 +6,6 @@ export function createTagsProp({
 }: {
   label: TagProps['children']
   borderColor?: TagProps['borderColor']
-}): TagProps[] {
+}): Array<TagProps> {
   return [{ children: label, borderColor }]
 }
