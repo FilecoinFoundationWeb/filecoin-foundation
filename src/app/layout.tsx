@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import PlausibleProvider from 'next-plausible'
 
@@ -22,7 +23,10 @@ export type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <PlausibleProvider domain="fil.org">
-      <SiteLayout>{children}</SiteLayout>
+      <SiteLayout>
+        {children}
+        <SpeedInsights />
+      </SiteLayout>
     </PlausibleProvider>
   )
 }
