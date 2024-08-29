@@ -1,0 +1,30 @@
+---
+title: Akave
+created-on: "{{now}}"
+updated-on: "{{now}}"
+published-on: "{{now}}"
+email: encrypted::U2FsdGVkX18mDs0AjeKiX3kZ460wf8RMgqUNPbnR7bE=
+full-name: encrypted::U2FsdGVkX196sGdmdztYGNHo1bHrpU62Ia1Q0+xGfiQ=
+image:
+  src: /assets/images/primary_wht.png
+category: storage
+subcategories:
+  - data-storage-management
+description: Akave is the first L2 storage chain, enabling on-chain data lakes
+  for scalable and decentralized AI.
+website: akave.ai
+tech:
+  - filecoin
+  - ipfs
+twitter: Akave is the first L2 storage chain, enabling on-chain data lakes for
+  scalable and decentralized AI.
+seo:
+  twitter:
+    title: summary
+    card: summary
+  title: Akave - The First L2 Storage Chain for Scalable, Decentralized AI Data Lakes
+  description: Discover Akave, the pioneering L2 storage chain that enables
+    scalable, decentralized AI with on-chain data lakes, revolutionizing data
+    storage and accessibility in the AI ecosystem.
+---
+Akave is revolutionizing data management with a decentralized, modular L2 solution that combines the robust storage of Filecoin with cutting-edge encryption and easy-to-use interfaces.
