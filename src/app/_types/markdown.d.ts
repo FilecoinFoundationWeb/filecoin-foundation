@@ -1,4 +1,4 @@
-declare module '../security/maturity-model/content/*.md' {
+declare module '../content/*.md' {
   const attributes: import('@/types/pageTypes').SecurityMaturityModelAttributes
   const react: React.ComponentType
   export { attributes, react }

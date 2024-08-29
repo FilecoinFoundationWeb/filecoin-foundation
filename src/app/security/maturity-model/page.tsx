@@ -1,5 +1,6 @@
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'

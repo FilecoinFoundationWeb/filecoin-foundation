@@ -1,3 +1,5 @@
+import { type SecurityMaturityModelAttributes } from '@/types/pageTypes'
+
 import {
   attributes as assetManagementAttributes,
   react as AssetManagement,
@@ -36,57 +38,57 @@ import {
 } from '../content/software-security.md'
 
 type CoreFunction = {
-  title: string
-  order: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+  order: SecurityMaturityModelAttributes['order']
+  title: SecurityMaturityModelAttributes['title']
   Content: React.ComponentType
 }
 
-export const coreFunctionsData: CoreFunction[] = [
+export const coreFunctionsData: Array<CoreFunction> = [
   {
-    title: leadershipAndOrganizationalPrinciplesAttributes.title,
     order: leadershipAndOrganizationalPrinciplesAttributes.order,
+    title: leadershipAndOrganizationalPrinciplesAttributes.title,
     Content: LeadershipAndOrganizationalPrinciples,
   },
   {
-    title: relevantPoliciesAndMaturityLevelsAttributes.title,
     order: relevantPoliciesAndMaturityLevelsAttributes.order,
+    title: relevantPoliciesAndMaturityLevelsAttributes.title,
     Content: RelevantPoliciesAndMaturityLevels,
   },
   {
-    title: riskManagementAttributes.title,
     order: riskManagementAttributes.order,
+    title: riskManagementAttributes.title,
     Content: RiskManagement,
   },
   {
-    title: identityAndAccessManagementAttributes.title,
     order: identityAndAccessManagementAttributes.order,
+    title: identityAndAccessManagementAttributes.title,
     Content: IdentityAndAccessManagement,
   },
   {
-    title: assetManagementAttributes.title,
     order: assetManagementAttributes.order,
+    title: assetManagementAttributes.title,
     Content: AssetManagement,
   },
   {
-    title: dataProtectionPracticesAttributes.title,
     order: dataProtectionPracticesAttributes.order,
+    title: dataProtectionPracticesAttributes.title,
     Content: DataProtectionPractices,
   },
   {
-    title: softwareSecurityAttributes.title,
     order: softwareSecurityAttributes.order,
+    title: softwareSecurityAttributes.title,
     Content: SoftwareSecurity,
   },
   {
-    title:
-      MaturityOfSecurityDocumentationOutreachAndDeveloperTrainingAttributes.title,
     order:
       MaturityOfSecurityDocumentationOutreachAndDeveloperTrainingAttributes.order,
+    title:
+      MaturityOfSecurityDocumentationOutreachAndDeveloperTrainingAttributes.title,
     Content: MaturityOfSecurityDocumentationOutreachAndDeveloperTraining,
   },
   {
-    title: incidentResponseAttributes.title,
     order: incidentResponseAttributes.order,
+    title: incidentResponseAttributes.title,
     Content: IncidentResponse,
   },
 ]
