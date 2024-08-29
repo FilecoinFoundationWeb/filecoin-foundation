@@ -279,6 +279,14 @@ collections:
           - *header_config
           - *meta_config
 
+      - name: "security-maturity-model"
+        label: "Maturity Model"
+        file: "src/content/pages/security/maturity-model.md"
+        preview_path: "security/maturity-model"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "terms"
         label: "Terms"
         file: "src/content/pages/terms-of-use.md"
