@@ -58,39 +58,6 @@ export default function Security() {
         image={graphicsData.security2}
       />
 
-      <PageSection kicker="Audits" title="Security Audits">
-        <CardGrid cols="smTwo" hasGridAutoRows={false}>
-          <StaticImage
-            {...graphicsData.security3}
-            className="h-full w-full rounded-lg"
-            sizes={buildImageSizeProp({
-              startSize: '100vw',
-              lg: '50vw',
-            })}
-          />
-          <HomeExploreSectionCard
-            cta={{
-              href: FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
-              text: 'Email us',
-              icon: Envelope,
-            }}
-            heading={{
-              tag: 'h3',
-              variant: 'lg',
-              children: 'Get Your Project Audited',
-            }}
-          >
-            Filecoin Foundation supports a security auditor network for
-            developers in the Filecoin ecosystem. Interested in having your
-            project audited? Contact the Foundation’s security team at{' '}
-            {extractEmailAddress(
-              FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
-            )}
-            .
-          </HomeExploreSectionCard>
-        </CardGrid>
-      </PageSection>
-
       <PageSection kicker="Resources" title="Security Resources">
         <CardGrid cols="smTwo">
           {securityResourcesData.map((card) => {
