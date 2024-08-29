@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Digest Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.DIGEST,
+    testPageMetadata(PATHS.DIGEST, {
       overrideDefaultTitle: true,
     })
   })
