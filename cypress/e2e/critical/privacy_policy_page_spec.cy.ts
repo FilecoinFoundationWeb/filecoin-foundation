@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Privacy Policy Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.PRIVACY_POLICY,
+    testPageMetadata(PATHS.PRIVACY_POLICY, {
       hasPageHeaderDescription: false,
     })
   })

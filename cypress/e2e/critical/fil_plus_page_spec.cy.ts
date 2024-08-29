@@ -4,9 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Filecoin Plus Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.FIL_PLUS,
-    })
+    testPageMetadata(PATHS.FIL_PLUS)
   })
 
   it('should check links', () => {

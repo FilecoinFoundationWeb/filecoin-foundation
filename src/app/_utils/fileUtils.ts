@@ -25,7 +25,7 @@ export function parseMarkdown(fileContents: string): {
   return matter(fileContents)
 }
 
-export function getFilenamesFromDirectory(directory: string): string[] {
+export function getFilenamesFromDirectory(directory: string): Array<string> {
   return fs.readdirSync(directory)
 }
 

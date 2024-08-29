@@ -4,6 +4,7 @@
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -17,7 +18,7 @@
         "shorthandFirst": true
       }
     ],
-
+    "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     // Variable usage and definitions
     "no-unused-vars": "warn",
 

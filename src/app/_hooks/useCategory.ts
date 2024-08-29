@@ -10,13 +10,13 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
-  validCategoryIds: CategoryId[]
+  entries: Array<Entry>
+  validCategoryIds: Array<CategoryId>
 }
 
 function validateCategoryOption(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  validCategoryIds: CategoryId[],
+  validCategoryIds: Array<CategoryId>,
 ) {
   if (!normalizedQuery) {
     return undefined

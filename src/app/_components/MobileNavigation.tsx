@@ -79,7 +79,7 @@ type NestedMenuItemProps = {
 
 type NestedMenuProps = {
   title: string
-  items: NestedMenuItemProps[]
+  items: Array<NestedMenuItemProps>
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 

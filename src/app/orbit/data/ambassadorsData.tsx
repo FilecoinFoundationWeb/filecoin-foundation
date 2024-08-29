@@ -12,11 +12,11 @@ import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-
 export type AmbassadorData = {
   image: StaticImageProps
   name: string
-  testimonial: string[] | JSX.Element[]
+  testimonial: Array<string> | Array<JSX.Element>
   location: string
 }
 
-export const ambassadorsData: AmbassadorData[] = [
+export const ambassadorsData: Array<AmbassadorData> = [
   {
     name: 'Alex Mirran, Logan Lentz & Dante Cullari',
     location: 'Austin, USA',

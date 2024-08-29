@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Ecosystem Explorer Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.ECOSYSTEM_EXPLORER,
+    testPageMetadata(PATHS.ECOSYSTEM_EXPLORER, {
       overrideDefaultTitle: true,
     })
   })

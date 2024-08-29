@@ -23,6 +23,7 @@ export type PathValues =
   | '/orbit'
   | '/privacy-policy'
   | '/security'
+  | '/security/bug-bounty'
   | '/security/coordinated-disclosure-policy'
   | '/terms-of-use'
 
@@ -83,6 +84,7 @@ export const PATHS = {
   DIGEST: createPathObject('/digest', 'Digest', {
     includesEntries: true,
   }),
+  BUG_BOUNTY: createPathObject('/security/bug-bounty', 'Bug Bounty Program'),
   ECOSYSTEM_EXPLORER: createPathObject(
     '/ecosystem-explorer',
     'Ecosystem Explorer',

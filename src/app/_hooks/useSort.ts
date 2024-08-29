@@ -22,7 +22,7 @@ import {
 
 type UseSortProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
+  entries: Array<Entry>
   sortBy: keyof SortableByDate & keyof Entry
   defaultSortId: SortId
 }
