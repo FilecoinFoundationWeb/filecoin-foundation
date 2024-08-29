@@ -39,10 +39,16 @@ export default function Security() {
         title={header.title}
         description={header.description}
         image={graphicsData.security}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.security.emails.main.href,
-          text: FILECOIN_FOUNDATION_URLS.security.emails.main.label,
-        }}
+        cta={[
+          {
+            href: PATHS.BUG_BOUNTY.path,
+            text: 'Bug Bounty Program',
+          },
+          {
+            href: PATHS.MATURITY_MODEL.path,
+            text: 'Web3 Security Maturity Model',
+          },
+        ]}
       />
 
       <PageSection
