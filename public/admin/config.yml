@@ -256,6 +256,7 @@ collections:
       - name: "security/bug-bounty"
         label: "Bug Bounty"
         file: "src/content/pages/security/bug-bounty.md"
+        preview_path: "security/bug-bounty"
         fields:
           - *header_config
           - *meta_config
