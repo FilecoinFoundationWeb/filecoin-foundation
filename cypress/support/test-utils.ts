@@ -10,6 +10,8 @@ type TestMetaDataOptions = {
   overrideDefaultTitle?: boolean
 }
 
+type HeaderContentType = { title: string; description: string | Array<string> }
+
 export function testPageMetadata(
   pathConfig: PathConfig,
   options: TestMetaDataOptions = {},
@@ -30,7 +32,7 @@ export function testPageMetadata(
         seo,
         featured_entry: featuredSlug,
       } = matter(markdownContent).data as {
-        header: { title: string; description: string }
+        header: HeaderContentType
         seo: { title: string; description: string }
         featured_entry?: string
       }
@@ -43,7 +45,7 @@ export function testPageMetadata(
       if (includesFeaturedEntry && featuredSlug) {
         handleFeaturedEntry(entriesContentPath as string, featuredSlug)
       } else {
-        verifyHeaderContent(header, hasPageHeaderDescription)
+        verifyHeaderContent(header, { hasPageHeaderDescription })
       }
 
       verifyCanonicalLink(path)
@@ -64,17 +66,17 @@ function handleFeaturedEntry(entriesContentPath: string, slug: string) {
       title: string
       description: string
     }
-    verifyHeaderContent(entry, true)
+    verifyHeaderContent(entry)
   })
 }
 
 function verifyHeaderContent(
-  {
-    title,
-    description,
-  }: { title: string; description: string | Array<string> },
-  hasPageHeaderDescription: boolean,
+  header: HeaderContentType,
+  options: Pick<TestMetaDataOptions, 'hasPageHeaderDescription'> = {},
 ) {
+  const { title, description } = header
+  const { hasPageHeaderDescription = true } = options
+
   cy.get('header')
     .first()
     .should('exist')
