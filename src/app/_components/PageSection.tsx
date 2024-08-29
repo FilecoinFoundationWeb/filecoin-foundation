@@ -37,6 +37,7 @@ export function PageSection({
   return (
     <section>
       <SectionDivider title={kicker} />
+
       <div
         className={clsx(
           'mb-6 mt-4',
