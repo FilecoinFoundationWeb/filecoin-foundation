@@ -1,7 +1,7 @@
 import { type SortableByDate, type SortId } from '@/types/sortTypes'
 
 type SortEntriesByDateParams<Entry extends SortableByDate> = {
-  entries: Entry[]
+  entries: Array<Entry>
   sortBy: keyof SortableByDate
   sortId: SortId
 }

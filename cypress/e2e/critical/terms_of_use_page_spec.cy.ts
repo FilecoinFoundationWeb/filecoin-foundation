@@ -4,8 +4,7 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Terms of Use Page', () => {
   it('should check metadata', () => {
-    testPageMetadata({
-      path: PATHS.TERMS_OF_USE,
+    testPageMetadata(PATHS.TERMS_OF_USE, {
       hasPageHeaderDescription: false,
     })
   })

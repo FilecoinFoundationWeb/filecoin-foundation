@@ -2,14 +2,12 @@ import { PATHS } from '@/constants/paths'
 import { testPageMetadata } from '@/support/test-utils'
 import { verifyLinks } from '@/support/verifyLinksUtil'
 
-describe('Employee Privacy Policy Page', () => {
+describe('Maturity Model Page', () => {
   it('should check metadata', () => {
-    testPageMetadata(PATHS.EMPLOYEE_PRIVACY_POLICY, {
-      hasPageHeaderDescription: false,
-    })
+    testPageMetadata(PATHS.MATURITY_MODEL)
   })
 
   it('should check links', () => {
-    verifyLinks(PATHS.EMPLOYEE_PRIVACY_POLICY.path)
+    verifyLinks(PATHS.MATURITY_MODEL.path)
   })
-})
+});

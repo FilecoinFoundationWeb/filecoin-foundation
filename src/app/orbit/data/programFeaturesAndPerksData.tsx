@@ -13,7 +13,7 @@ type ProgramFeaturesAndPerksDataProps = {
   description: string
 }
 
-export const programFeaturesAndPerksData: ProgramFeaturesAndPerksDataProps[] = [
+export const programFeaturesAndPerksData: Array<ProgramFeaturesAndPerksDataProps> = [
   {
     icon: CurrencyCircleDollar,
     title: 'Funding and Promotion',

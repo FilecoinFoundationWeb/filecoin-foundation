@@ -5,7 +5,7 @@ type SortOption = {
 
 type SortType = {
   readonly default: string
-  readonly values: readonly SortOption[]
+  readonly values: ReadonlyArray<SortOption>
 }
 
 const createSortIds = (sortType: SortType) =>

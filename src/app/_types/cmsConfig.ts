@@ -13,16 +13,16 @@ export type CMSFieldConfig = {
   label: string
   widget: string
   required?: boolean
-  options?: CMSFieldOption[]
-  fields?: CMSFieldConfig[]
+  options?: Array<CMSFieldOption>
+  fields?: Array<CMSFieldConfig>
 }
 
 export type CMSCollectionConfig = {
   name: CMSCollectionName
   label: string
-  fields?: CMSFieldConfig[]
+  fields?: Array<CMSFieldConfig>
 }
 
 export type CMSConfig = {
-  collections: CMSCollectionConfig[]
+  collections: Array<CMSCollectionConfig>
 }

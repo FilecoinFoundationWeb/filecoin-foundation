@@ -20,7 +20,7 @@ import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 type CategoryListboxProps = {
   selected: CategoryId | undefined
-  options: CategoryOption[]
+  options: Array<CategoryOption>
   counts?: CategoryCounts
   onChange: (selected: CategoryId) => void
 }

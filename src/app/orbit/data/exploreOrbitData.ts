@@ -20,7 +20,7 @@ type ExploreOrbitData = {
   }
 }
 
-export const exploreOrbitData: ExploreOrbitData[] = [
+export const exploreOrbitData: Array<ExploreOrbitData> = [
   {
     heading: {
       title: '2023 Orbit Recap',

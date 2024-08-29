@@ -8,7 +8,7 @@ export type AboutData = {
   image: StaticImageProps
 }
 
-export const aboutData: AboutData[] = [
+export const aboutData: Array<AboutData> = [
   {
     title: 'Initial Allocation of DataCap',
     description:

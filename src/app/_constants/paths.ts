@@ -17,8 +17,11 @@ export type PathValues =
   | '/orbit'
   | '/privacy-policy'
   | '/security'
+  | '/security/bug-bounty'
+  | '/security/maturity-model'
   | '/security/coordinated-disclosure-policy'
   | '/terms-of-use'
+
 export interface PathConfig {
   path: PathValues
   label: string
@@ -73,6 +76,7 @@ export const PATHS = {
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
   ),
+  BUG_BOUNTY: createPathObject('/security/bug-bounty', 'Bug Bounty Program'),
   ECOSYSTEM_EXPLORER: createPathObject(
     '/ecosystem-explorer',
     'Ecosystem Explorer',
@@ -95,6 +99,10 @@ export const PATHS = {
   HOME: createPathObject('/', 'Home', {
     customMainContentPath: '/home',
   }),
+  MATURITY_MODEL: createPathObject(
+    '/security/maturity-model',
+    'Maturity Model',
+  ),
   PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
   TERMS_OF_USE: createPathObject('/terms-of-use', 'Terms of Use'),
   SECURITY: createPathObject('/security', 'Security', {
