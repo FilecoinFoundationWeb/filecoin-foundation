@@ -31,9 +31,49 @@ export default function MaturityModel() {
       />
 
       <PageSection
-        kicker="Application and Use"
-        title="Use the Model"
-        description="The Web3 Maturity Model for Security is broken up into 9 core functions –– from leadership and organizational principles to asset management and incident response. Each core function is divided into functional areas, which are each broken into two streams with control criteria. The control criteria must be met in order for the functional area to be measured."
+        kicker="Tailored Security Maturity"
+        title="How to Leverage the Model"
+        description="The Web3 Security Maturity Model is broken up into 9 core functions. Each core function is divided into functional areas that are broken into two streams with control criteria."
+      >
+        <div className="prose max-w-readable">
+          <p>
+            This maturity framework does not require all organizations to
+            achieve the maximum maturity level in every category. Instead, it
+            allows organizations to define and measure their security activities
+            in a way that is tailored to their specific needs, and it encourages
+            organizations, projects, and users to adapt the framework based on
+            their unique environment, goals, and existing security maturity.
+          </p>
+          <ul className="list-disc">
+            <li>
+              <span className="font-semibold">Level 1:</span> Initial and Ad-hoc
+              Represents an initial awareness and a basic understanding of the
+              concept being evaluated (e.g., security culture). There is minimal
+              formalization and process/documentation may not exist.
+            </li>
+            <li>
+              <span className="font-semibold">Level 2:</span> Defined and
+              Repeatable Indicates that structured programs are in place, aimed
+              at promoting, reinforcing, and sustaining the practices necessary
+              to support the area being evaluated. There is an emphasis on
+              proactive capabilities in security.
+            </li>
+            <li>
+              <span className="font-semibold">Level 3:</span> Optimized and
+              Measurable Reflects a focus on continuous improvement.
+              Practitioners use metrics and feedback loops to refine their
+              security processes and practices constantly. Capabilities are
+              driven by data and metrics to make informed security decisions,
+              and there is a focus on optimizing security efforts based on
+              evolving threats and lessons learned.
+            </li>
+          </ul>
+        </div>
+      </PageSection>
+
+      <PageSection
+        kicker="Building Blocks of Security"
+        title="Explore the Core Functions"
       >
         <CoreFunctions />
       </PageSection>
