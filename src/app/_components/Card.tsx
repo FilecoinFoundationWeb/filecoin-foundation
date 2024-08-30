@@ -134,7 +134,7 @@ export function Card({
         {tags && tags.length > 0 && (
           <span className="mb-4 flex gap-2">
             {tags.map((tag) => (
-              <TagLabel key={`${tag.children}`} borderColor={tag.borderColor}>
+              <TagLabel key={tag.children} borderColor={tag.borderColor}>
                 {tag.children}
               </TagLabel>
             ))}

@@ -19,17 +19,15 @@ export function BlogPostHeader({
 }: BlogPostHeaderProps) {
   return (
     <ArticleHeader image={image && { src: image.src, alt: image.alt || '' }}>
-      <>
-        <TagLabel>
-          {getCategoryLabel({ collectionName: 'blog_posts', category })}
-        </TagLabel>
-        <ArticleHeader.Title>{title}</ArticleHeader.Title>
-        {publishedOn && (
-          <span className="inline-block text-blue-300">
-            {formatDate(publishedOn)}
-          </span>
-        )}
-      </>
+      <TagLabel>
+        {getCategoryLabel({ collectionName: 'blog_posts', category })}
+      </TagLabel>
+      <ArticleHeader.Title>{title}</ArticleHeader.Title>
+      {publishedOn && (
+        <span className="inline-block text-blue-300">
+          {formatDate(publishedOn)}
+        </span>
+      )}
     </ArticleHeader>
   )
 }

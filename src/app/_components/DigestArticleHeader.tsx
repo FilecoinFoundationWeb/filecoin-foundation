@@ -17,18 +17,14 @@ export function DigestArticleHeader({
 }: DigestArticleHeaderProps) {
   return (
     <ArticleHeader image={image && { src: image.src, alt: image.alt || '' }}>
-      <>
-        <div className="space-x-3">
-          <TagLabel borderColor="brand-100">{`Issue ${issueNumber}`}</TagLabel>
-          <TagLabel>{`Article ${articleNumber}`}</TagLabel>
-        </div>
-        <ArticleHeader.Title>{title}</ArticleHeader.Title>
-        <div>
-          <span className="text-sm text-blue-100">
-            {formatAuthors(authors)}
-          </span>
-        </div>
-      </>
+      <div className="space-x-3">
+        <TagLabel borderColor="brand-100">{`Issue ${issueNumber}`}</TagLabel>
+        <TagLabel>{`Article ${articleNumber}`}</TagLabel>
+      </div>
+      <ArticleHeader.Title>{title}</ArticleHeader.Title>
+      <div>
+        <span className="text-sm text-blue-100">{formatAuthors(authors)}</span>
+      </div>
     </ArticleHeader>
   )
 }
