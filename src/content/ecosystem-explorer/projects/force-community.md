@@ -12,7 +12,7 @@ subcategories:
   - governance-daos-public-goods
 tags:
   - infrastructure
-description: "Force Community is a non-profit leading Web3 community. "
+description: "Force Community is a non-profit leading Web3 community."
 website: https://forcecommunity.io/
 tech:
   - filecoin
