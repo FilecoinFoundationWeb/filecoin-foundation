@@ -1,6 +1,4 @@
-export type WhiteHat = (typeof leaderboard)[number]
-
-export const leaderboard = [
+export const leaderboardData = [
   {
     reporter: 'Marten Seemann',
     points: 134250,
