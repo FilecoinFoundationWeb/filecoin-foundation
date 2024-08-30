@@ -1,21 +1,19 @@
 ---
 title: "Dev Grant Spotlight: 4EVERLAND"
-created-on: "2023-04-21T07:26:29.881Z"
-updated-on: "2023-04-21T07:26:29.881Z"
-published-on: "2023-04-21T07:33:56.200Z"
-description: >-
-  4EVERLAND is a blockchain technology-powered cloud computing platform designed
-  to help developers build Web3 applications efficiently, with technical
-  features such as global acceleration, privacy protection, and distributed
-  storage.
+created-on: 2023-04-21T07:26:29.881Z
+updated-on: 2023-04-21T07:26:29.881Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: 4EVERLAND is a blockchain technology-powered cloud computing
+  platform designed to help developers build Web3 applications efficiently, with
+  technical features such as global acceleration, privacy protection, and
+  distributed storage.
 image:
   src: /assets/images/64423aa58d1be7828cce7d89_1-45khiwwqpsgwtnrtjpkoqa.png
-category: reports
 seo:
   title: "Dev Grant Spotlight: 4EVERLAND"
-  description:
-    Spotlight on 4EVERLAND, a recipient of the Filecoin dev grant. Learn
-    about their contributions and innovations.
+  description: Spotlight on 4EVERLAND, a recipient of the Filecoin Foundation Dev
+    Grant. Learn about their contributions and innovations.
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about the Filecoin Foundation’s_ [_Dev Grants program_](https://grants.filecoin.io/)_._
