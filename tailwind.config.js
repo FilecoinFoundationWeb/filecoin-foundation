@@ -111,6 +111,22 @@ module.exports = {
           outlineOffset: 0,
           borderColor: 'transparent',
         },
+        '.row': {
+          height: 52,
+        },
+        '.cell': {
+          paddingLeft: theme('padding.5'),
+          paddingRight: theme('padding.5'),
+          textAlign: 'left',
+          textWrap: 'nowrap',
+          fontWeight: '400',
+          '&:first-child': {
+            paddingLeft: theme('padding.10'),
+          },
+          '&:last-child': {
+            paddingRight: theme('padding.10'),
+          },
+        },
       })
     }),
   ],
