@@ -1,4 +1,3 @@
-import { DigestArticleHeader } from '@/components/DigestArticleHeader'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -8,6 +7,7 @@ import { getDigestArticleData } from '@/utils/getDigestArticleData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {

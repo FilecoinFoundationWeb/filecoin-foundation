@@ -1,23 +1,27 @@
 ---
 title: Letter from the Guest Editor
-created-on: 2023-04-21T07:32:08.443Z
-updated-on: 2023-04-21T07:32:08.443Z
-published-on: 2023-04-21T07:32:08.443Z
+created-on: 2024-08-27T10:15:00.000Z
+updated-on: 2024-08-27T10:15:00.000Z
+published-on: 2024-08-27T10:15:00.000Z
 issue-number: "1"
 article-number: 1
 authors:
   - first-name: Jonathan
     last-name: Victor
-  - first-name: AuthorF
-    last-name: AuthorL
 seo:
-  title: Letter from the Guest Editor
-  description: Test
+  twitter:
+    title: summary
+    card: summary
+  title: "Letter from the Guest Editor: Welcome to The Filecoin Ecosystem Digest"
+  description:
+    Discover the transformative impact of the decentralized web in our
+    first issue, with insights on AI, space economy, sustainability, and more,
+    curated by Jonathan Victor.
 ---
 
 Dear Readers,
 
-Welcome to the inaugural edition of The Filecoin Ecosystem Digest: All Systems Go - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
+Welcome to the inaugural edition of _The Filecoin Ecosystem Digest: All Systems Go_ - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
 
 In this issue, we aim to spotlight the intersection of decentralized infrastructure with a number of key emerging trends - from the role of decentralized architectures in AI, to the rise of the space economy, to how sustainability intersects with the future of data centers, and more.
 
@@ -30,10 +34,10 @@ Next, we turn to AI - with two wonderful pieces. The first is from Sofia Yan and
 Our exploration doesn’t stop at Earth. Dietrich Ayala’s piece centers on the role of decentralized data in the space economy - and the importance of the current moment to embed our technologies into the emerging standards forming in this growing field.
 
 We ground ourselves with two pieces from Mara MacMahon from the DeStor team and Luke Behncke from Holon Investments focused on emerging trends in the enterprise sector and the future of sustainability within data centers.
-
 Then, we follow with a piece from Irma Jiang from ND Labs - reflecting on how Web3 offers a new paradigm of community based growth.
 
 Lastly, we look ahead to the future of decentralized storage and the emergence of the “Intelligence Economy” with a piece from Porter Sowell of the Filecoin Foundation.
+
 We hope this issue sparks your curiosity and inspires you to explore the boundless possibilities that decentralized infrastructure presents. As always, thank you for being a part of our journey.
 
 Warm regards,\

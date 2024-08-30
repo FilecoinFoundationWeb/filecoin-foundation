@@ -1,4 +1,3 @@
-import { BlogPostHeader } from '@/components/BlogPostHeader'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -8,6 +7,7 @@ import { getBlogPostData } from '@/utils/getBlogPostData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
