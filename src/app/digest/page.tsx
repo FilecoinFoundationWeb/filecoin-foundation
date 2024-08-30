@@ -43,8 +43,11 @@ export default function Digest() {
 
       <PageSection
         kicker="Issue 1 - Sep 2024"
-        title="The Inaugural Edition"
-        description="Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and the data economy. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future."
+        title="The Inaugural Edition: All Systems Go"
+        description={[
+          'Featuring Guest Editor Jonathan Victor, Co-Founder, Ansa Research',
+          'Published in September 2024, the inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and the data economy. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future.',
+        ]}
       >
         <CardGrid cols="smTwo">
           {articles.sort(sortArticlesByNumber).map((digest) => {
