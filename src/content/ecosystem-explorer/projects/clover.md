@@ -13,7 +13,7 @@ subcategories:
 tags:
   - governance-daos-public-goods
 description: Communication for DAO operators.
-website: " https://github.com/useclover/clover-warp"
+website: "https://github.com/useclover/clover-warp"
 tech:
   - filecoin
 repo: https://github.com/useclover/clover-warp
