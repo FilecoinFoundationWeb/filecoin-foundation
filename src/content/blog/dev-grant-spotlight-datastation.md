@@ -7,7 +7,7 @@ category: use-cases
 description: "DataStation is a platform that enhances the decentralized storage
   experience on the Filecoin network by providing storage providers and clients
   with standardized storage performance data in a format that's both easy to
-  store and to understand. "
+  store and to understand."
 image:
   src: /assets/images/image-c-22.png
 seo:
