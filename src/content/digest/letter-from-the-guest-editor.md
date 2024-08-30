@@ -8,6 +8,8 @@ article-number: 1
 authors:
   - first-name: Jonathan
     last-name: Victor
+image:
+  src: /assets/images/letter-from-the-guest-editor.webp
 seo:
   twitter:
     title: summary
