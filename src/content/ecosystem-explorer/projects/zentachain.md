@@ -1,31 +1,32 @@
 ---
-title: "Zentachain"
-created-on: 2024-02-28T23:55:57.776000Z
-updated-on: 2024-02-28T23:55:57.787000Z
-published-on: 2024-02-28T23:55:57.795000Z
-description:
-  "Privacy-focused IoT blockchain networking project that is focused on
-  communication and data storage."
+title: Zentachain
+created-on: 2024-02-28T23:55:57.776Z
+updated-on: 2024-02-28T23:55:57.787Z
+published-on: 2024-02-28T23:55:57.795Z
+email: encrypted::U2FsdGVkX1+76QUiIWwiwZqibUI16ek4a8Gx3q9k3xjrlkpBlVE3dMJEkr+CDBbY
+full-name: encrypted::U2FsdGVkX18icPx50znCVZFlLpduqJGZlUFRhejCRWU=
+image:
+  src: /assets/images/zentachain-white.png
 category: storage
+subcategories:
+  - data-storage-management
 tags:
   - ai-productivity-and-utilities
   - bridges-oracles
   - dweb
   - depin
   - data-storage-management
+description: Privacy-focused IoT blockchain networking project that is focused
+  on communication and data storage.
+website: https://zentachain.io/
 tech:
   - filecoin
   - ipfs
-image:
-  src: /assets/images/zentachain-white.png
-website: "https://zentachain.io/"
-repo: "https://github.com/ZentaChain"
-twitter: "https://twitter.com/zentachain"
-year-joined: 2024-02-28T23:55:57.805000Z
-subcategories:
-  - data-storage-management
+repo: https://github.com/ZentaChain
+twitter: https://twitter.com/zentachain
+year-joined: 2024-02-28T23:55:57.805Z
 seo:
-  title: Zentachain
+  title: "Zentachain: Privacy-focused IoT Blockchain"
   description: Zentachain offers decentralized solutions for data privacy and security.
 ---
 
