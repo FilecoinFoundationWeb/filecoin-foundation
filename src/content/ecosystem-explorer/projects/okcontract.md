@@ -13,7 +13,7 @@ subcategories:
 tags:
   - developer-tools
 description: "OKcontract is as an interaction layer between the user interface
-  and the smart contracts. "
+  and the smart contracts."
 website: https://okcontract.com/
 tech:
   - ipfs
