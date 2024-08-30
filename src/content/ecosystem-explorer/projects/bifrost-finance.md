@@ -21,7 +21,7 @@ twitter: https://twitter.com/Bifrost
 year-joined: 2024-03-29T21:28:48.639Z
 seo:
   title: "Bifrost Finance: A Modular, Scalable, Non-Custodial Omnichain Liquid
-    Staking Parachain "
+    Staking Parachain"
   description: Bifrost Finance offers decentralized financial services on the
     Filecoin network.
 ---
