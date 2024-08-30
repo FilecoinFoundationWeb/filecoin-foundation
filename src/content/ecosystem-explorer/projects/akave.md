@@ -1,8 +1,8 @@
 ---
 title: Akave
-created-on: "{{now}}"
-updated-on: "{{now}}"
-published-on: "{{now}}"
+created-on: 2024-08-30T06:15:28.063Z
+updated-on: 2024-08-30T06:15:28.063Z
+published-on: 2024-08-30T06:15:28.063Z
 email: encrypted::U2FsdGVkX18mDs0AjeKiX3kZ460wf8RMgqUNPbnR7bE=
 full-name: encrypted::U2FsdGVkX196sGdmdztYGNHo1bHrpU62Ia1Q0+xGfiQ=
 image:
@@ -27,4 +27,5 @@ seo:
     scalable, decentralized AI with on-chain data lakes, revolutionizing data
     storage and accessibility in the AI ecosystem.
 ---
+
 Akave is revolutionizing data management with a decentralized, modular L2 solution that combines the robust storage of Filecoin with cutting-edge encryption and easy-to-use interfaces.
