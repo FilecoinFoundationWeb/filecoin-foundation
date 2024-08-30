@@ -7,21 +7,17 @@ import {
   getCoreRowModel,
   useReactTable,
   getSortedRowModel,
+  type HeaderGroup,
+  type RowData,
+  type RowModel,
 } from '@tanstack/react-table'
 import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
-import { leaderboard, type Person } from '../data/leaderboard'
+import { leaderboard, type WhiteHat } from '../data/leaderboard'
 
-const columnHelper = createColumnHelper<Person>()
-
-const columnIds = {
-  rank: 'rank',
-  reporter: 'reporter',
-  points: 'points',
-  link: 'profileLink',
-}
+const columnHelper = createColumnHelper<WhiteHat>()
 
 const profileLinkLogos = {
   github: GithubLogo,
@@ -31,28 +27,31 @@ const profileLinkLogos = {
   website: Globe,
 }
 
-const tableRowStyle = 'h-12'
-const tableCellStyle =
-  'px-4 sm:px-5 sm:first:pl-10 sm:last:pr-10 text-nowrap font-light first:pl-8 last:pr-8'
-
-const columns = [
+const columnDefinitions = [
   columnHelper.accessor('reporter', {
-    id: columnIds.rank,
+    id: 'rank',
     header: '#',
     cell: (info) => info.row.index + 1,
   }),
   columnHelper.accessor('reporter', {
-    id: columnIds.reporter,
+    id: 'reporter',
     header: 'Reporter',
     cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'sm:min-w-72',
+      bodyCellStyle: 'text-brand-300',
+    },
   }),
   columnHelper.accessor('points', {
-    id: columnIds.points,
+    id: 'points',
     header: 'Total Points',
     cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-full',
+    },
   }),
   columnHelper.accessor('profileLink', {
-    id: columnIds.link,
+    id: 'profileLink',
     header: 'Profile Link',
     cell: (info) => {
       const profileLink = info.getValue()
@@ -62,27 +61,34 @@ const columns = [
         return null
       }
 
-      const hostname = getWebsiteLabel(profileLink)
-      const Logo = profileLinkLogos[hostname]
+      const label = getProfileLinkLabel(profileLink)
+      const Logo = profileLinkLogos[label]
 
       return (
         <a
           href={profileLink}
           rel="noopener noreferrer"
           className="inline-flex size-12 items-center justify-center"
-          aria-label={`Visit ${reporter}'s GitHub profile`}
+          aria-label={`Visit ${reporter}'s profile`}
         >
           <Icon component={Logo} size={20} />
         </a>
       )
     },
+    meta: {
+      bodyCellStyle: 'text-center text-brand-300',
+    },
   }),
 ]
+
+const ROW_HEIGHT = 'h-[52px]'
+
+const sharedCellStyle = 'px-5 text-nowrap font-light first:pl-10 last:pr-10'
 
 export function Leaderboard() {
   const table = useReactTable({
     data: leaderboard,
-    columns,
+    columns: columnDefinitions,
     initialState: {
       sorting: [{ id: 'points', desc: true }],
     },
@@ -90,76 +96,76 @@ export function Leaderboard() {
     getSortedRowModel: getSortedRowModel(),
   })
 
-  const headerGroups = table.getHeaderGroups()
-  const rows = table.getRowModel().rows
-
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full text-left">
-        <thead>
-          {headerGroups.map((headerGroup) => {
-            const { id, headers } = headerGroup
-
-            return (
-              <tr key={id} className={tableRowStyle}>
-                {headers.map((header) => {
-                  const { id } = header.column.columnDef
-
-                  return (
-                    <th
-                      key={header.id}
-                      className={clsx(
-                        tableCellStyle,
-                        id === columnIds.reporter && 'sm:min-w-72',
-                        id === columnIds.points && 'w-full',
-                      )}
-                    >
-                      {render(
-                        header.column.columnDef.header,
-                        header.getContext(),
-                      )}
-                    </th>
-                  )
-                })}
-              </tr>
-            )
-          })}
-        </thead>
-
-        <tbody className="border-t border-brand-500">
-          {rows.map((row) => {
-            return (
-              <tr
-                key={row.id}
-                className={clsx(tableRowStyle, 'odd:bg-brand-700')}
-              >
-                {row.getVisibleCells().map((cell) => {
-                  const { id: columnId } = cell.column.columnDef
-
-                  return (
-                    <td
-                      key={cell.id}
-                      className={clsx(
-                        tableCellStyle,
-                        columnId === columnIds.reporter && 'text-brand-300',
-                        columnId === columnIds.link &&
-                          'text-center text-brand-300',
-                      )}
-                    >
-                      {render(cell.column.columnDef.cell, cell.getContext())}
-                    </td>
-                  )
-                })}
-              </tr>
-            )
-          })}
-        </tbody>
+        <TableHeader headerGroups={table.getHeaderGroups()} />
+        <TableRows rowModel={table.getRowModel()} />
       </table>
     </div>
   )
 }
 
-function getWebsiteLabel(url: string) {
+type TableHeaderProps<Data extends RowData> = {
+  headerGroups: Array<HeaderGroup<Data>>
+}
+
+function TableHeader<Data extends RowData>({
+  headerGroups,
+}: TableHeaderProps<Data>) {
+  const firstHeaderGroup = headerGroups[0]
+  const { headers } = firstHeaderGroup
+
+  return (
+    <thead>
+      <tr className={ROW_HEIGHT}>
+        {headers.map((header) => {
+          const { meta } = header.column.columnDef
+
+          return (
+            <th
+              key={header.id}
+              className={clsx(sharedCellStyle, meta?.headerCellStyle)}
+            >
+              {render(header.column.columnDef.header, header.getContext())}
+            </th>
+          )
+        })}
+      </tr>
+    </thead>
+  )
+}
+
+type TableRowsProps<Data extends RowData> = {
+  rowModel: RowModel<Data>
+}
+
+function TableRows<Data extends RowData>({ rowModel }: TableRowsProps<Data>) {
+  const { rows } = rowModel
+
+  return (
+    <tbody className="border-t border-brand-500">
+      {rows.map((row) => (
+        <tr key={row.id} className={clsx(ROW_HEIGHT, 'odd:bg-brand-700')}>
+          {row.getVisibleCells().map((cell) => {
+            const { meta } = cell.column.columnDef
+
+            return (
+              <td
+                key={cell.id}
+                className={clsx(sharedCellStyle, meta?.bodyCellStyle)}
+              >
+                {render(cell.column.columnDef.cell, cell.getContext())}
+              </td>
+            )
+          })}
+        </tr>
+      ))}
+    </tbody>
+  )
+}
+
+function getProfileLinkLabel(url: string) {
   const hostname = new URL(url).hostname
 
   if (hostname.includes('linkedin.com')) {

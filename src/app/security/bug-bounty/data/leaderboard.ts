@@ -1,4 +1,4 @@
-export type Person = (typeof leaderboard)[number]
+export type WhiteHat = (typeof leaderboard)[number]
 
 export const leaderboard = [
   {
