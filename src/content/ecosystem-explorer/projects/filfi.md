@@ -1,23 +1,26 @@
 ---
 title: FilFi
-created-on: 2023-05-30T20:57:35.326000Z
-updated-on: 2024-03-20T20:57:35.335000Z
-published-on: 2024-03-20T20:57:35.342000Z
-description:
-  "Filecoin’s first 100% smart contract managed storage node joint construction
-  solution."
-category: finance
-tags:
-  - leasing-and-staking
-tech:
-  - filecoin
+created-on: 2023-05-30T20:57:35.326Z
+updated-on: 2024-03-20T20:57:35.335Z
+published-on: 2024-03-20T20:57:35.342Z
+email: encrypted::U2FsdGVkX1/icu8DX58Qa6qEF74h95IfBqIPKcbQvLVMo5cCZJx+qrCm5FCrkf2C
+full-name: encrypted::U2FsdGVkX19Kc1d9q0NVDP77BcNuxW1gst4ejjHp7jI=
 image:
   src: /assets/images/filfi_logo_white.png
+category: finance
+subcategories:
+  - leasing
+tags:
+  - leasing-and-staking
+description: Filecoin’s first 100% smart contract managed storage node joint
+  construction solution.
 website: https://filfi.io
+tech:
+  - filecoin
 repo: https://github.com/filfi
 twitter: https://twitter.com/filfi_io
 video-url: https://www.youtube.com/embed/oaaLTpKSbYU
-year-joined: 2023-05-30T20:57:35.326000Z
+year-joined: 2023-05-30T20:57:35.326Z
 seo:
   title: FilFi
   description: FilFi provides decentralized finance solutions for the Filecoin network.
