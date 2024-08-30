@@ -10,7 +10,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { extractDescriptionFromContent } from '@/utils/extractDescriptionFromContent'
 import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -56,7 +55,7 @@ export default function Digest() {
               <Card
                 key={title}
                 title={title}
-                description={extractDescriptionFromContent(content)}
+                description={content}
                 textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 cta={{

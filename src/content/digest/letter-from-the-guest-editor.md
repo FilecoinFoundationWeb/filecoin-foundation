@@ -16,6 +16,7 @@ seo:
 ---
 
 Dear Readers,
+
 Welcome to the inaugural edition of The Filecoin Ecosystem Digest: All Systems Go - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
 
 In this issue, we aim to spotlight the intersection of decentralized infrastructure with a number of key emerging trends - from the role of decentralized architectures in AI, to the rise of the space economy, to how sustainability intersects with the future of data centers, and more.
