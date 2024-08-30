@@ -14,7 +14,7 @@ order: 9
 - Level 2: Are these procedures more comprehensive, detailed, and tailored to decentralized environments and the specific nature of incidents?
 - Level 3: Is there a sophisticated, well-documented incident handling process, regularly tested and updated, incorporating advanced tools and strategies suitable for decentralized contexts?
 
-##### 2.1 Cross-Team Coordination
+##### 1.2 Cross-Team Coordination
 
 - Incident response plans or activities are not limited to one team or just the security tea
 - An incident response roster has been defined
