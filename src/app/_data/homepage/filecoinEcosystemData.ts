@@ -21,7 +21,7 @@ const EXTERNAL_URLS = {
   destor: 'https://destor.com/destor-network/overview',
 } as const
 
-export const filecoinEcosystemData: FilecoinEcosystemData[] = [
+export const filecoinEcosystemData: Array<FilecoinEcosystemData> = [
   {
     heading: {
       title: 'Grants Program',
