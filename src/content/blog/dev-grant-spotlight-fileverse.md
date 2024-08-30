@@ -1,20 +1,18 @@
 ---
 title: Dev Grant Spotlight - Fileverse
-created-on: 2023-04-21T07:26:37.139000Z
-updated-on: 2023-04-21T07:26:37.139000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  This is the latest post in our series highlighting the builders and innovators
-  creating new tools and services on the Filecoin network. Learn more about Filecoin
-  Foundation’s Dev Grants program.
+created-on: 2023-04-21T07:26:37.139Z
+updated-on: 2023-04-21T07:26:37.139Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: This is the latest post in our series highlighting the builders and
+  innovators creating new tools and services on the Filecoin network. Learn more
+  about Filecoin Foundation’s Dev Grants program.
 image:
   src: /assets/images/rectangle-31-.png
-category: reports
 seo:
   title: "Dev Grant Spotlight: Fileverse"
-  description:
-    "Fileverse project spotlight: Discover their innovations and contributions
-    as a Filecoin dev grant recipient."
+  description: "Fileverse project spotlight: Discover their innovations and
+    contributions as a Filecoin Foundation Dev Grant recipient."
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._
