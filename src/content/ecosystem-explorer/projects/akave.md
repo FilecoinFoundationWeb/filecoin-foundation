@@ -12,7 +12,7 @@ subcategories:
   - data-storage-management
 description: Akave is the first L2 storage chain, enabling on-chain data lakes
   for scalable and decentralized AI.
-website: akave.ai
+website: https://www.akave.ai/
 tech:
   - filecoin
   - ipfs
