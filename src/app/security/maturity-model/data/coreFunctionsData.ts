@@ -1,4 +1,4 @@
-import { type SecurityMaturityModelAttributes } from '@/types/pageTypes'
+import { type SecurityMaturityModelAttributes } from '@/types/attributesTypes'
 
 import {
   attributes as assetManagementAttributes,
