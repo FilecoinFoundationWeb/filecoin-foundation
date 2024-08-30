@@ -1,19 +1,17 @@
 ---
 title: Dev Grant Spotlight — Ukraine Art Collective
-created-on: 2023-04-21T07:26:48.887000Z
-updated-on: 2023-04-21T07:26:48.887000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  Ukraine Art Collective’s (UkraineArtCo) mission is to unite artists around
-  the world to contribute their creative talents to support the Ukrainian people in
-  their fight for freedom.
+created-on: 2023-04-21T07:26:48.887Z
+updated-on: 2023-04-21T07:26:48.887Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: Ukraine Art Collective’s (UkraineArtCo) mission is to unite artists
+  around the world to contribute their creative talents to support the Ukrainian
+  people in their fight for freedom.
 image:
   src: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
-category: reports
 seo:
   title: "Dev Grant Spotlight: Ukraine Art Collective"
-  description:
-    Ukraine Art Collective's impactful project highlighted in this dev
+  description: Ukraine Art Collective's impactful project highlighted in this dev
     grant spotlight. Discover their contributions.
 ---
 
