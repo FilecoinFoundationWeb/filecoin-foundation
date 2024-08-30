@@ -1,5 +1,9 @@
+import { Badge } from '@/components/Badge'
+import { BadgeCardGrid } from '@/components/BadgeCardGrid'
+import { CardWithBadge } from '@/components/CardWithBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -10,6 +14,8 @@ import { attributes } from '@/content/pages/maturity-model.md'
 
 import { PATHS } from '@/constants/paths'
 
+import { CoreFunctions } from './components/CoreFunctions'
+import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -28,6 +34,40 @@ export default function MaturityModel() {
         description={header.description}
         image={graphicsData.security5}
       />
+
+      <PageSection
+        kicker="Tailored Security Maturity"
+        title="How to Leverage the Model"
+        description="The Web3 Security Maturity Model is broken up into 9 core functions. Each core function is divided into functional areas that are broken into two streams with control criteria."
+      >
+        <p className="mb-2 max-w-readable">
+          This maturity framework does not require all organizations to achieve
+          the maximum maturity level in every category. Instead, it allows
+          organizations to define and measure their security activities in a way
+          that is tailored to their specific needs, and it encourages
+          organizations, projects, and users to adapt the framework based on
+          their unique environment, goals, and existing security maturity.
+        </p>
+
+        <BadgeCardGrid cols="smThree">
+          {applicationAndUseData.map((item) => {
+            const { step, title, description } = item
+
+            return (
+              <CardWithBadge key={step} title={title} description={description}>
+                <Badge number={step} />
+              </CardWithBadge>
+            )
+          })}
+        </BadgeCardGrid>
+      </PageSection>
+
+      <PageSection
+        kicker="Building Blocks of Security"
+        title="Explore the Core Functions"
+      >
+        <CoreFunctions />
+      </PageSection>
     </PageLayout>
   )
 }
