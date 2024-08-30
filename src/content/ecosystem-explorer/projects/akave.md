@@ -16,8 +16,7 @@ website: https://www.akave.ai/
 tech:
   - filecoin
   - ipfs
-twitter: Akave is the first L2 storage chain, enabling on-chain data lakes for
-  scalable and decentralized AI.
+twitter: https://x.com/akavenetwork
 seo:
   twitter:
     title: summary
