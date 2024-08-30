@@ -1,21 +1,18 @@
 ---
-title:
-  Dev Grant Spotlight - Numbers Protocol Puts Digital Creators in Control of
-  Their Assets
-created-on: 2023-04-21T07:26:43.215000Z
-updated-on: 2023-04-21T07:26:43.215000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  "Numbers Protocol: Revolutionizing the creator economy by empowering
-  artists to control, monetize, and protect their digital assets in the Web2 and Web3
-  landscape."
+title: Dev Grant Spotlight - Numbers Protocol Puts Digital Creators in Control
+  of Their Assets
+created-on: 2023-04-21T07:26:43.215Z
+updated-on: 2023-04-21T07:26:43.215Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: "Numbers Protocol: Revolutionizing the creator economy by
+  empowering artists to control, monetize, and protect their digital assets in
+  the Web2 and Web3 landscape."
 image:
   src: /assets/images/0315-dgs-numbers.png
-category: reports
 seo:
   title: "Dev Grant Spotlight: Numbers Protocol - Empowering Digital Creators"
-  description:
-    Numbers Protocol puts digital creators in control of their assets.
+  description: Numbers Protocol puts digital creators in control of their assets.
     Explore their journey as a dev grant recipient.
 ---
 

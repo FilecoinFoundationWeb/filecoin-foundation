@@ -1,19 +1,17 @@
 ---
 title: "Dev Grant Spotlight: Portrait"
-description: >-
-  Portrait is the first open-source web page builder, allowing people to turn
-  their blockchain address into a website.
+created-on: 2023-04-21T07:26:45.129Z
+updated-on: 2023-04-21T07:26:45.129Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: Portrait is the first open-source web page builder, allowing people
+  to turn their blockchain address into a website.
 image:
   src: /assets/images/64423ab50425d36d72f2895f_1-brm0bxgpfk7-tr5tfyq-la.png
-updated-on: "2023-04-21T07:26:45.129Z"
-created-on: "2023-04-21T07:26:45.129Z"
-published-on: "2023-04-21T07:33:56.200Z"
-category: reports
 seo:
   title: "Dev Grant Spotlight: Portrait"
-  description:
-    Portrait's contributions to the Filecoin ecosystem highlighted in this
-    dev grant spotlight. Learn more.
+  description: Portrait's contributions to the Filecoin ecosystem highlighted in
+    this dev grant spotlight. Learn more.
 ---
 
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._

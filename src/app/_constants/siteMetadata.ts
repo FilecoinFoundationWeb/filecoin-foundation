@@ -103,6 +103,7 @@ const FILECOIN_FOUNDATION_URLS = {
     email: 'mailto:impact@fil.org',
   },
   security: {
+    bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
     emails: {
       main: {
         label: 'Contact Security Team',
@@ -112,12 +113,11 @@ const FILECOIN_FOUNDATION_URLS = {
         href: 'mailto:audits@fil.org',
       },
     },
-    documents: {
-      filecoinCompatibility:
-        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
+    resources: {
       auditReports: 'https://spec.filecoin.io/#section-appendix.audit_reports',
+      filecoinEVMCompatibility:
+        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
     },
-    bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
   },
   social: {
     bluesky: {
