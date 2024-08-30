@@ -8,7 +8,7 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-import { TagLabel } from '@/components/TagLabel'
+import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
@@ -16,7 +16,7 @@ import { isExternalLink } from '@/utils/linkUtils'
 
 type CardProps = {
   title: string | React.ReactNode
-  tag?: string
+  tagLabel?: TagGroupProps['label']
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
@@ -112,7 +112,7 @@ const borderStyles = {
 
 export function Card({
   title,
-  tag,
+  tagLabel,
   metaData,
   description,
   cta,
@@ -130,18 +130,10 @@ export function Card({
     >
       <CardImage image={image} />
 
-      <div className="flex flex-col p-4">
-        {tag && (
-          <span className="mb-4">
-            <TagLabel>{tag}</TagLabel>
-          </span>
-        )}
+      <div className="flex flex-col gap-3 p-4">
+        {tagLabel && <TagGroup label={tagLabel} />}
 
-        {metaData && metaData.length > 0 && (
-          <span className="mb-3">
-            <Meta metaData={metaData} />
-          </span>
-        )}
+        {metaData && metaData.length > 0 && <Meta metaData={metaData} />}
 
         {title && typeof title === 'string' ? (
           <Heading isClamped tag="h3" variant="lg">
@@ -151,7 +143,7 @@ export function Card({
           title
         )}
 
-        <div className={clsx('mt-3', cta && 'mb-10')}>
+        <div className={clsx(cta && 'mb-10')}>
           {description && (
             <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
               {description}

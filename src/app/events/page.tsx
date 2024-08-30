@@ -192,6 +192,11 @@ export default function Events({ searchParams }: Props) {
                       const shouldLinkToExternalEventsPage =
                         !description && externalLink
 
+                      const tagLabel = getCategoryLabel({
+                        collectionName: 'event_entries',
+                        category,
+                      })
+
                       return (
                         <Card
                           key={slug}
@@ -199,6 +204,7 @@ export default function Events({ searchParams }: Props) {
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
+                          tagLabel={tagLabel}
                           image={{
                             alt: '',
                             ...(image || {
@@ -220,10 +226,6 @@ export default function Events({ searchParams }: Props) {
                             text: 'View Event Details',
                             icon: MagnifyingGlass,
                           }}
-                          tag={getCategoryLabel({
-                            collectionName: 'event_entries',
-                            category,
-                          })}
                         />
                       )
                     })}

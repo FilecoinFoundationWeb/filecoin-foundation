@@ -100,7 +100,7 @@ function MainNavItem({ label, href, isActive = false }: MainNavItemProps) {
   )
 }
 
-const { getInvolvedItems, communityItems, learnMoreItem } =
+const { getInvolvedItems, communityItems, resourcesItems, learnMoreItem } =
   desktopNavigationItems
 
 export function DesktopNavigation() {
@@ -114,6 +114,9 @@ export function DesktopNavigation() {
 
   const { isActive: isCommunityActive, internalItems: communityInternalItems } =
     useNavigationItems(communityItems)
+
+  const { isActive: isResourcesActive, internalItems: resourcesInternalItems } =
+    useNavigationItems(resourcesItems)
 
   return (
     <ul
@@ -165,11 +168,17 @@ export function DesktopNavigation() {
         </div>
       </NavigationPopover>
 
-      <MainNavItem
-        label={PATHS.BLOG.label}
-        href={PATHS.BLOG.path}
-        isActive={pathname === PATHS.BLOG.path}
-      />
+      <NavigationPopover
+        as="li"
+        label="Resources"
+        mainNavItemStyles={getMainNavItemStyles(isResourcesActive, true)}
+      >
+        <div className="w-80 space-y-4">
+          {resourcesInternalItems.map((item) => (
+            <SubNavItem key={item.label} {...item} linkType="internal" />
+          ))}
+        </div>
+      </NavigationPopover>
     </ul>
   )
 }

@@ -3,43 +3,45 @@ import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostData } from '@/utils/getBlogPostData'
+import { getDigestArticleData } from '@/utils/getDigestArticleData'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { BlogPostHeader } from './components/BlogPostHeader'
+import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-type BlogPostProps = {
+type DigestArticleProps = {
   params: {
     slug: string
   }
 }
 
-export function generateMetadata({ params }: BlogPostProps) {
+export function generateMetadata({ params }: DigestArticleProps) {
   const { slug } = params
-  const data = getBlogPostData(slug)
+  const data = getDigestArticleData(slug)
 
   return createMetadata({
     seo: data.seo,
-    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
+    path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
   })
 }
 
-export default function BlogPost({ params }: BlogPostProps) {
+export default function DigestArticle({ params }: DigestArticleProps) {
   const { slug } = params
-  const data = getBlogPostData(slug)
-  const { title, image, content, publishedOn, category } = data
+  const data = getDigestArticleData(slug)
+
+  const { title, issueNumber, articleNumber, image, authors, content } = data
 
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="m-auto max-w-2xl space-y-16">
-        <BlogPostHeader
+        <DigestArticleHeader
           title={title}
+          issueNumber={issueNumber}
+          articleNumber={articleNumber}
           image={image}
-          publishedOn={publishedOn}
-          category={category}
+          authors={authors}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
       </div>

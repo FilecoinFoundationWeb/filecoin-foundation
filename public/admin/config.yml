@@ -48,6 +48,16 @@ header_config: &header_config
       label: "Description"
       widget: "text"
 
+body_config: &body_config
+  name: "body"
+  label: "Content"
+  widget: "markdown"
+  editor_components:
+    - "code-block"
+    - "image"
+    - "video"
+    - "audio"
+
 image_config: &image_config
   name: "image"
   label: "Image"
@@ -152,6 +162,14 @@ collections:
               - "title"
             display_fields:
               - "title"
+          - *meta_config
+
+      - name: "digest"
+        label: "Digest"
+        file: "src/content/pages/digest.md"
+        preview_path: "digest"
+        fields:
+          - *header_config
           - *meta_config
 
       - name: "ecosystem"
@@ -312,21 +330,62 @@ collections:
         label: "Description"
         widget: "text"
       - *image_config
-      - name: "body"
-        label: "Content"
-        widget: "markdown"
-        editor_components:
-          - "code-block"
-          - "image"
-          - "video"
-          - "audio"
-        required: false
-        search_fields:
-          - "slug"
-          - "title"
-        display_fields:
-          - "title"
-        multiple: true
+      - *body_config
+      - *meta_config
+
+  - name: "digest_articles"
+    label: "Digest Articles"
+    folder: "src/content/digest/"
+    preview_path: "digest/{{slug}}"
+    label_singular: "Digest Article"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "select"
+        options: ["1"]
+        default: "1"
+      - name: "article-number"
+        label: "Article Number"
+        widget: "number"
+        min: 1
+      - name: "authors"
+        label: "Authors"
+        widget: "list"
+        fields:
+          - name: "first-name"
+            label: "First Name"
+            widget: "string"
+          - name: "last-name"
+            label: "Last Name"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "object"
+            required: false
+            hint: "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback."
+            fields:
+              - name: "src"
+                label: "URL"
+                widget: "image"
+                allow_multiple: false
+                choose_url: false
+                required: false
+                hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+              - name: "alt"
+                label: "Alt Text"
+                widget: "hidden"
+                required: false
+      - *body_config
+      - *image_config
       - *meta_config
 
   - name: "ecosystem_projects_categories"
