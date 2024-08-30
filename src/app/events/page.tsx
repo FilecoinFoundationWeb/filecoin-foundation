@@ -31,7 +31,6 @@ import {
   getCategoryLabel,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { createTagsProp } from '@/utils/createTagsProp'
 import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -193,7 +192,7 @@ export default function Events({ searchParams }: Props) {
                       const shouldLinkToExternalEventsPage =
                         !description && externalLink
 
-                      const tag = getCategoryLabel({
+                      const tagLabel = getCategoryLabel({
                         collectionName: 'event_entries',
                         category,
                       })
@@ -205,7 +204,7 @@ export default function Events({ searchParams }: Props) {
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
-                          tags={createTagsProp({ label: tag })}
+                          tagLabel={tagLabel}
                           image={{
                             alt: '',
                             ...(image || {

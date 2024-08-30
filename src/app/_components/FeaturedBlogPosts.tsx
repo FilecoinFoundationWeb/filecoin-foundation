@@ -2,7 +2,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { createTagsProp } from '@/utils/createTagsProp'
+import { getCategoryLabel } from '@/utils/categoryUtils'
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
@@ -30,32 +30,39 @@ export function FeaturedBlogPosts() {
   return (
     <CardGrid cols="smTwo">
       {featuredBlogPosts.map(
-        ({ title, description, slug, image, category, publishedOn }) => (
-          <Card
-            key={slug}
-            metaData={getBlogPostMetaData(publishedOn)}
-            tags={createTagsProp({ label: category })}
-            title={title}
-            description={description}
-            textIsClamped={true}
-            cta={{
-              href: `${PATHS.BLOG.path}/${slug}`,
-              text: 'Learn More',
-            }}
-            image={{
-              alt: '',
-              ...(image || {
-                ...graphicsData.imageFallback,
-              }),
-              fallback: graphicsData.imageFallback,
-              sizes: buildImageSizeProp({
-                startSize: '100vw',
-                sm: '350px',
-                md: '480px',
-              }),
-            }}
-          />
-        ),
+        ({ title, description, slug, image, category, publishedOn }) => {
+          const tagLabel = getCategoryLabel({
+            collectionName: 'blog_posts',
+            category,
+          })
+
+          return (
+            <Card
+              key={slug}
+              metaData={getBlogPostMetaData(publishedOn)}
+              tagLabel={tagLabel}
+              title={title}
+              description={description}
+              textIsClamped={true}
+              cta={{
+                href: `${PATHS.BLOG.path}/${slug}`,
+                text: 'Learn More',
+              }}
+              image={{
+                alt: '',
+                ...(image || {
+                  ...graphicsData.imageFallback,
+                }),
+                fallback: graphicsData.imageFallback,
+                sizes: buildImageSizeProp({
+                  startSize: '100vw',
+                  sm: '350px',
+                  md: '480px',
+                }),
+              }}
+            />
+          )
+        },
       )}
     </CardGrid>
   )

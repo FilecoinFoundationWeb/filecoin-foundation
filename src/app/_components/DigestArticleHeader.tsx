@@ -1,5 +1,5 @@
 import { ArticleHeader } from '@/components/ArticleHeader'
-import { TagLabel } from '@/components/TagLabel'
+import { TagGroup } from '@/components/TagGroup'
 
 import { type DigestArticleData } from '@/types/digestTypes'
 
@@ -17,14 +17,11 @@ export function DigestArticleHeader({
 }: DigestArticleHeaderProps) {
   return (
     <ArticleHeader image={image && { src: image.src, alt: image.alt || '' }}>
-      <div className="space-x-3">
-        <TagLabel borderColor="brand-100">{`Issue ${issueNumber}`}</TagLabel>
-        <TagLabel>{`Article ${articleNumber}`}</TagLabel>
-      </div>
+      <TagGroup label={[`Issue ${issueNumber}`, `Article ${articleNumber}`]} />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
-      <div>
-        <span className="text-sm text-blue-100">{formatAuthors(authors)}</span>
-      </div>
+      <span className="mt-3 block text-sm text-blue-100">
+        {formatAuthors(authors)}
+      </span>
     </ArticleHeader>
   )
 }

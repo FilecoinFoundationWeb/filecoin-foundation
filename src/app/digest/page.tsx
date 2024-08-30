@@ -10,7 +10,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { createTagsProp } from '@/utils/createTagsProp'
 import { extractDescriptionFromContent } from '@/utils/extractDescriptionFromContent'
 import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 import { sortDigestArticlesAscendingByIssueAndNumber } from '@/utils/sortDigestArticlesAscendingByIssueAndNumber'
@@ -67,14 +66,9 @@ export default function Digest() {
                   title={title}
                   description={extractDescriptionFromContent(content)}
                   textIsClamped={true}
-                  tags={[
-                    ...createTagsProp({
-                      label: `Issue ${issueNumber}`,
-                      borderColor: 'brand-100',
-                    }),
-                    ...createTagsProp({
-                      label: `Article ${articleNumber}`,
-                    }),
+                  tagLabel={[
+                    `Issue ${issueNumber}`,
+                    `Article ${articleNumber}`,
                   ]}
                   cta={{
                     href: `${PATHS.DIGEST.path}/${slug}`,
