@@ -10,8 +10,7 @@ image:
 category: artificial-intelligence
 subcategories:
   - artificial-productivity-utilities
-description: ‍‍Nuklai is a collaborative data ecosystem and infrastructure
-  provider for private data networks.
+description: ‍‍Nuklai is a collaborative data ecosystem and infrastructure provider for private data networks.
 website: https://www.nukl.ai/
 tech:
   - ipfs
