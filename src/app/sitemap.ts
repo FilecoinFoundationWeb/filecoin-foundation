@@ -3,6 +3,7 @@ import { formatISO } from 'date-fns'
 import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
+import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getEventsData } from '@/utils/getEventData'
 
@@ -34,6 +35,9 @@ export default function sitemap() {
   const blogPosts = getBlogPostsData()
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
+  const digests = getDigestArticlesData()
+  const dynamicDigestRoutes = generateDynamicRoutes(digests, PATHS.DIGEST.path)
+
   const ecosystemProjects = getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
     ecosystemProjects,
@@ -46,6 +50,7 @@ export default function sitemap() {
   return [
     ...staticRoutes,
     ...dynamicBlogRoutes,
+    ...dynamicDigestRoutes,
     ...dynamicEcosystemProjectRoutes,
     ...dynamicEventRoutes,
   ]

@@ -60,17 +60,15 @@ export default function FilPlus() {
       </PageSection>
 
       <PageSection kicker="Allocator Allocation" title="Become an Allocator">
-        <div className="max-w-readable">
-          <p>
-            Allocators are a core part of the Fil+ program and help incentivize
-            the storage of useful data of the Filecoin network. For a full list
-            of instructions and walk through please visit{' '}
-            <TextLink href={FIL_PLUS_URLS.allocatorsBlog}>
-              blog.allocator.tech
-            </TextLink>
-            .
-          </p>
-        </div>
+        <p className="mb-2 max-w-readable">
+          Allocators are a core part of the Fil+ program and help incentivize
+          the storage of useful data of the Filecoin network. For a full list of
+          instructions and walk through please visit{' '}
+          <TextLink href={FIL_PLUS_URLS.allocatorsBlog}>
+            blog.allocator.tech
+          </TextLink>
+          .
+        </p>
 
         <BadgeCardGrid cols="smThree">
           {applicationData.map((item) => {

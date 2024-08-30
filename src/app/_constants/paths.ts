@@ -1,13 +1,19 @@
 type BlogPostPath = `/blog/${string}`
+type DigestPath = `/digest/${string}`
 type EcosystemPath = `/ecosystem/${string}`
 type EventPath = `/events/${string}`
 
-export type DynamicPathValues = BlogPostPath | EcosystemPath | EventPath
+export type DynamicPathValues =
+  | BlogPostPath
+  | DigestPath
+  | EcosystemPath
+  | EventPath
 
 export type PathValues =
   | '/'
   | '/about'
   | '/blog'
+  | '/digest'
   | '/ecosystem-explorer'
   | '/employee-privacy-policy'
   | '/events'
@@ -76,6 +82,9 @@ export const PATHS = {
     '/security/coordinated-disclosure-policy',
     'Coordinated Disclosure Policy',
   ),
+  DIGEST: createPathObject('/digest', 'Digest', {
+    includesEntries: true,
+  }),
   BUG_BOUNTY: createPathObject('/security/bug-bounty', 'Bug Bounty Program'),
   ECOSYSTEM_EXPLORER: createPathObject(
     '/ecosystem-explorer',

@@ -1,0 +1,2746 @@
+{
+  "local_backend": true,
+  "site_url": "https://fil.org",
+  "display_url": "https://fil.org",
+  "backend": {
+    "name": "github",
+    "branch": "main",
+    "repo": "FilecoinFoundationWeb/filecoin-foundation",
+    "base_url": "https://decap-proxy.filecoin-foundation.workers.dev/"
+  },
+  "publish_mode": "editorial_workflow",
+  "media_folder": "public/assets/images",
+  "public_folder": "/assets/images",
+  "slug": {
+    "encoding": "ascii",
+    "clean_accents": true
+  },
+  "created_on": {
+    "name": "created-on",
+    "label": "Created On",
+    "widget": "datetime",
+    "default": "{{now}}"
+  },
+  "updated_on": {
+    "name": "updated-on",
+    "label": "Updated On",
+    "widget": "datetime",
+    "default": "{{now}}",
+    "required": false
+  },
+  "published_on": {
+    "name": "published-on",
+    "label": "Published On",
+    "widget": "datetime",
+    "default": "{{now}}",
+    "required": false
+  },
+  "header_config": {
+    "name": "header",
+    "label": "Header",
+    "widget": "object",
+    "fields": [
+      {
+        "name": "title",
+        "label": "Title",
+        "widget": "string"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "widget": "text"
+      }
+    ]
+  },
+  "body_config": {
+    "name": "body",
+    "label": "Content",
+    "widget": "markdown",
+    "editor_components": [
+      "code-block",
+      "image",
+      "video",
+      "audio"
+    ]
+  },
+  "image_config": {
+    "name": "image",
+    "label": "Image",
+    "widget": "object",
+    "required": false,
+    "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+    "fields": [
+      {
+        "name": "src",
+        "label": "URL",
+        "widget": "image",
+        "allow_multiple": false,
+        "choose_url": false,
+        "required": false,
+        "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+      },
+      {
+        "name": "alt",
+        "label": "Alt Text",
+        "widget": "hidden",
+        "required": false,
+        "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+      }
+    ]
+  },
+  "seo_metadata_description_max_characters": 220,
+  "meta_config": {
+    "name": "seo",
+    "label": "SEO Metadata",
+    "widget": "object",
+    "fields": [
+      {
+        "name": "title",
+        "label": "Meta Title",
+        "widget": "string"
+      },
+      {
+        "name": "description",
+        "label": "Meta Description",
+        "widget": "text",
+        "pattern": [
+          "^.{0,220}$",
+          "Must have at most 220 characters."
+        ],
+        "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+      },
+      {
+        "name": "og",
+        "label": "Open Graph Metadata",
+        "widget": "object",
+        "collapsed": true,
+        "fields": [
+          {
+            "name": "title",
+            "label": "Open Graph Title",
+            "widget": "string",
+            "required": false
+          },
+          {
+            "name": "image",
+            "label": "Open Graph Image",
+            "widget": "image",
+            "allow_multiple": false,
+            "choose_url": false,
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "twitter",
+        "label": "Twitter Metadata",
+        "widget": "object",
+        "collapsed": true,
+        "fields": [
+          {
+            "name": "title",
+            "label": "Twitter Title",
+            "widget": "string",
+            "default": "summary",
+            "required": false
+          },
+          {
+            "name": "card",
+            "label": "Twitter Card",
+            "widget": "string",
+            "default": "summary",
+            "required": false
+          },
+          {
+            "name": "site",
+            "label": "Twitter Site",
+            "widget": "string",
+            "required": false
+          },
+          {
+            "name": "creator",
+            "label": "Twitter Creator",
+            "widget": "string",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  "collections": [
+    {
+      "name": "pages",
+      "label": "Pages",
+      "files": [
+        {
+          "name": "about",
+          "label": "About",
+          "file": "src/content/pages/about.md",
+          "preview_path": "about",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "blog",
+          "label": "Blog",
+          "file": "src/content/pages/blog.md",
+          "preview_path": "blog",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "featured_entry",
+              "label": "Featured Post",
+              "widget": "relation",
+              "collection": "blog_posts",
+              "value_field": "src/content/blog/{{slug}}.md",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "digest",
+          "label": "Digest",
+          "file": "src/content/pages/digest.md",
+          "preview_path": "digest",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ecosystem",
+          "label": "Ecosystem",
+          "file": "src/content/pages/ecosystem-explorer.md",
+          "preview_path": "ecosystem-explorer",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "employee-privacy-policy",
+          "label": "Employee Privacy Policy",
+          "file": "src/content/pages/employee-privacy-policy.md",
+          "preview_path": "employee-privacy-policy",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "events",
+          "label": "Events",
+          "file": "src/content/pages/events.md",
+          "preview_path": "events",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "featured_entry",
+              "label": "Featured Event",
+              "widget": "relation",
+              "collection": "event_entries",
+              "value_field": "src/content/events/{{slug}}.md",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "filecoin-plus",
+          "label": "Filecoin Plus",
+          "file": "src/content/pages/filecoin-plus.md",
+          "preview_path": "filecoin-plus",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "governance",
+          "label": "Governance",
+          "file": "src/content/pages/governance.md",
+          "preview_path": "governance",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "grants",
+          "label": "Grants",
+          "file": "src/content/pages/grants.md",
+          "preview_path": "grants",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "featured_grant_graduates",
+              "label": "Featured Grant Graduates",
+              "widget": "relation",
+              "collection": "ecosystem_projects",
+              "value_field": "src/content/ecosystem-explorer/projects/{{slug}}.md",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "multiple": true,
+              "min": 6,
+              "max": 6
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "home",
+          "label": "Home",
+          "file": "src/content/pages/home.md",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "featured_ecosystem_projects",
+              "label": "Featured Ecosystem Projects",
+              "widget": "relation",
+              "collection": "ecosystem_projects",
+              "value_field": "src/content/ecosystem-explorer/projects/{{slug}}.md",
+              "search_fields": [
+                "slug",
+                "title"
+              ],
+              "display_fields": [
+                "title"
+              ],
+              "multiple": true,
+              "min": 6,
+              "max": 6
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "privacy-policy",
+          "label": "Privacy Policy",
+          "file": "src/content/pages/privacy-policy.md",
+          "preview_path": "privacy-policy",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "terms",
+          "label": "Terms",
+          "file": "src/content/pages/terms-of-use.md",
+          "preview_path": "terms-of-use",
+          "fields": [
+            {
+              "name": "header",
+              "label": "Header",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "seo",
+              "label": "SEO Metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Meta Title",
+                  "widget": "string"
+                },
+                {
+                  "name": "description",
+                  "label": "Meta Description",
+                  "widget": "text",
+                  "pattern": [
+                    "^.{0,220}$",
+                    "Must have at most 220 characters."
+                  ],
+                  "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+                },
+                {
+                  "name": "og",
+                  "label": "Open Graph Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Open Graph Title",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "image",
+                      "label": "Open Graph Image",
+                      "widget": "image",
+                      "allow_multiple": false,
+                      "choose_url": false,
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "twitter",
+                  "label": "Twitter Metadata",
+                  "widget": "object",
+                  "collapsed": true,
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Twitter Title",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "card",
+                      "label": "Twitter Card",
+                      "widget": "string",
+                      "default": "summary",
+                      "required": false
+                    },
+                    {
+                      "name": "site",
+                      "label": "Twitter Site",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "creator",
+                      "label": "Twitter Creator",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "blog_posts",
+      "label": "Blog Posts",
+      "label_singular": "Blog Post",
+      "folder": "src/content/blog/",
+      "preview_path": "blog/{{slug}}",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "widget": "select",
+          "options": [
+            {
+              "label": "Ecosystem",
+              "value": "ecosystem"
+            },
+            {
+              "label": "Events",
+              "value": "events"
+            },
+            {
+              "label": "Interviews",
+              "value": "interviews"
+            },
+            {
+              "label": "News",
+              "value": "news"
+            },
+            {
+              "label": "Reports",
+              "value": "reports"
+            },
+            {
+              "label": "Use Cases",
+              "value": "use-cases"
+            }
+          ]
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text"
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "choose_url": false,
+              "required": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "hidden",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "widget": "markdown",
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "pattern": [
+                "^.{0,220}$",
+                "Must have at most 220 characters."
+              ],
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "digest_articles",
+      "label": "Digest Articles",
+      "folder": "src/content/digest/",
+      "preview_path": "digest/{{slug}}",
+      "label_singular": "Digest Article",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "issue-number",
+          "label": "Issue Number",
+          "widget": "select",
+          "options": [
+            "1"
+          ],
+          "default": "1"
+        },
+        {
+          "name": "article-number",
+          "label": "Article Number",
+          "widget": "number",
+          "min": 1
+        },
+        {
+          "name": "authors",
+          "label": "Authors",
+          "widget": "list",
+          "fields": [
+            {
+              "name": "first-name",
+              "label": "First Name",
+              "widget": "string"
+            },
+            {
+              "name": "last-name",
+              "label": "Last Name",
+              "widget": "string"
+            },
+            {
+              "name": "image",
+              "label": "Image",
+              "widget": "object",
+              "required": false,
+              "hint": "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback.",
+              "fields": [
+                {
+                  "name": "src",
+                  "label": "URL",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false,
+                  "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+                },
+                {
+                  "name": "alt",
+                  "label": "Alt Text",
+                  "widget": "hidden",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "widget": "markdown",
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ]
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "choose_url": false,
+              "required": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "hidden",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "pattern": [
+                "^.{0,220}$",
+                "Must have at most 220 characters."
+              ],
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ecosystem_projects_categories",
+      "label": "Ecosystem Projects Categories",
+      "label_singular": "Ecosystem Projects Category",
+      "folder": "src/content/ecosystem-explorer/categories/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "yml",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Category Name",
+          "widget": "string"
+        },
+        {
+          "name": "subcategories",
+          "label": "Subcategories",
+          "widget": "relation",
+          "collection": "ecosystem_projects_subcategories",
+          "search_fields": [
+            "name"
+          ],
+          "value_field": "slug",
+          "display_fields": [
+            "name"
+          ],
+          "multiple": true
+        }
+      ]
+    },
+    {
+      "name": "ecosystem_projects_subcategories",
+      "label": "Ecosystem Projects Subcategories",
+      "label_singular": "Ecosystem Projects Subcategory",
+      "folder": "src/content/ecosystem-explorer/subcategories/",
+      "create": true,
+      "identifier_field": "name",
+      "extension": "yml",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "label": "Subcategory Name",
+          "name": "name",
+          "widget": "string"
+        },
+        {
+          "label": "Parent Category",
+          "name": "parent_category",
+          "widget": "relation",
+          "collection": "ecosystem_projects_categories",
+          "search_fields": [
+            "name"
+          ],
+          "value_field": "slug",
+          "display_fields": [
+            "name"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ecosystem_projects",
+      "label": "Ecosystem Projects",
+      "label_singular": "Ecosystem Project",
+      "folder": "src/content/ecosystem-explorer/projects/",
+      "preview_path": "ecosystem-explorer/{{slug}}",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Company Name",
+          "widget": "string"
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "email",
+          "label": "Submitter's Email",
+          "widget": "decrypted_widget"
+        },
+        {
+          "name": "full-name",
+          "label": "Submitter's Full Name",
+          "widget": "decrypted_widget"
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "choose_url": false,
+              "required": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "hidden",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "widget": "relation",
+          "collection": "ecosystem_projects_categories",
+          "value_field": "slug",
+          "search_fields": [
+            "name"
+          ],
+          "display_fields": [
+            "name"
+          ]
+        },
+        {
+          "name": "subcategories",
+          "label": "Subcategories",
+          "widget": "relation",
+          "collection": "ecosystem_projects_subcategories",
+          "value_field": "slug",
+          "search_fields": [
+            "name"
+          ],
+          "display_fields": [
+            "name"
+          ],
+          "multiple": true,
+          "filter": {
+            "field": "parent_category",
+            "value": "{{fields.category}}"
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "widget": "hidden",
+          "required": false,
+          "multiple": true,
+          "options": [
+            {
+              "label": "AI Productivity & Utilities",
+              "value": "ai-productivity-and-utilities"
+            },
+            {
+              "label": "Arts & Collectibles",
+              "value": "arts-collectibles"
+            },
+            {
+              "label": "Bridges & Oracles",
+              "value": "bridges-oracles"
+            },
+            {
+              "label": "Climate",
+              "value": "climate"
+            },
+            {
+              "label": "Communication & Social",
+              "value": "communication-social"
+            },
+            {
+              "label": "DApp",
+              "value": "dapp"
+            },
+            {
+              "label": "Data Curation & Monetization",
+              "value": "data-curation-monetization"
+            },
+            {
+              "label": "Data Preparation",
+              "value": "data-prep"
+            },
+            {
+              "label": "Data Retrieval",
+              "value": "data-retrieval"
+            },
+            {
+              "label": "Data Storage & Management",
+              "value": "data-storage-management"
+            },
+            {
+              "label": "Decentralized Personal Information Networks",
+              "value": "depin"
+            },
+            {
+              "label": "Decentralized Science",
+              "value": "desci"
+            },
+            {
+              "label": "Developer Tools",
+              "value": "developer-tools"
+            },
+            {
+              "label": "DWeb",
+              "value": "dweb"
+            },
+            {
+              "label": "Enterprise",
+              "value": "enterprise"
+            },
+            {
+              "label": "Gaming",
+              "value": "gaming"
+            },
+            {
+              "label": "GLAM (Galleries, Libraries, Archives, Museums)",
+              "value": "glam"
+            },
+            {
+              "label": "Governance, DAOs, & Public Goods",
+              "value": "governance-daos-public-goods"
+            },
+            {
+              "label": "GPUs",
+              "value": "gpus"
+            },
+            {
+              "label": "Health",
+              "value": "health"
+            },
+            {
+              "label": "Infrastructure",
+              "value": "infrastructure"
+            },
+            {
+              "label": "Leasing & Staking",
+              "value": "leasing-and-staking"
+            },
+            {
+              "label": "Metaverse",
+              "value": "metaverse"
+            },
+            {
+              "label": "Network Tools",
+              "value": "network-tools"
+            },
+            {
+              "label": "NFTs",
+              "value": "nfts"
+            },
+            {
+              "label": "Photo & Video",
+              "value": "photo-video"
+            },
+            {
+              "label": "Privacy & Security",
+              "value": "privacy-security"
+            },
+            {
+              "label": "Public Data",
+              "value": "public-data"
+            },
+            {
+              "label": "Publishing & News",
+              "value": "publishing-news"
+            },
+            {
+              "label": "RSS",
+              "value": "rss"
+            },
+            {
+              "label": "S3 APIs",
+              "value": "s3-apis"
+            },
+            {
+              "label": "Sealing",
+              "value": "sealing"
+            },
+            {
+              "label": "Social Impact",
+              "value": "social-impact"
+            },
+            {
+              "label": "Space",
+              "value": "space"
+            },
+            {
+              "label": "Storage Infrastructure",
+              "value": "storage-infrastructure"
+            },
+            {
+              "label": "Storage Provider",
+              "value": "storage-provider"
+            },
+            {
+              "label": "Storage Services",
+              "value": "storage-services"
+            },
+            {
+              "label": "Storage Software",
+              "value": "storage-software"
+            },
+            {
+              "label": "Universities",
+              "value": "universities"
+            },
+            {
+              "label": "Wallets, Identity & Authentication",
+              "value": "wallets-identity-authentication",
+              "multiple": true
+            }
+          ]
+        },
+        {
+          "name": "description",
+          "label": "Short Description",
+          "widget": "string",
+          "pattern": [
+            "^.{0,160}$",
+            "Must have at most 160 characters."
+          ],
+          "hint": "A short description of the project. Maximum 160 characters."
+        },
+        {
+          "name": "website",
+          "label": "Website",
+          "widget": "string"
+        },
+        {
+          "name": "tech",
+          "label": "Technologies Used",
+          "widget": "select",
+          "multiple": true,
+          "options": [
+            "filecoin",
+            "ipfs"
+          ]
+        },
+        {
+          "name": "repo",
+          "label": "GitHub Repo",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "featured-content",
+          "label": "Featured Content",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "twitter",
+          "label": "Twitter Handle",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "video-url",
+          "label": "YouTube Video URL",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "year-joined",
+          "label": "Using Filecoin Since",
+          "widget": "datetime",
+          "required": false
+        },
+        {
+          "name": "body",
+          "label": "Long Description",
+          "widget": "markdown",
+          "required": false
+        },
+        {
+          "name": "news-update",
+          "label": "What's New?",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "pattern": [
+                "^.{0,220}$",
+                "Must have at most 220 characters."
+              ],
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "event_entries",
+      "label": "Events",
+      "folder": "src/content/events/",
+      "preview_path": "events/{{slug}}",
+      "label_singular": "Event",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "widget": "select",
+          "options": [
+            {
+              "label": "Co-Hosted",
+              "value": "co-hosted"
+            },
+            {
+              "label": "Community",
+              "value": "community"
+            },
+            {
+              "label": "Hosted",
+              "value": "hosted"
+            },
+            {
+              "label": "Supported & Sponsored",
+              "value": "supported-sponsored"
+            }
+          ]
+        },
+        {
+          "name": "location",
+          "label": "Location",
+          "widget": "string"
+        },
+        {
+          "name": "start-date",
+          "label": "Start Date",
+          "widget": "datetime",
+          "hint": "First day of event"
+        },
+        {
+          "name": "end-date",
+          "label": "End Date",
+          "widget": "datetime",
+          "required": false,
+          "hint": "Last day of event"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "name": "external-link",
+          "label": "External Link URL",
+          "widget": "string",
+          "required": false,
+          "hint": "External link to the event page"
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "choose_url": false,
+              "required": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "hidden",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "pattern": [
+                "^.{0,220}$",
+                "Must have at most 220 characters."
+              ],
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "digest_articles",
+      "label": "Digest Articles",
+      "folder": "src/content/digest/",
+      "preview_path": "digest/{{slug}}",
+      "label_singular": "Digest Article",
+      "create": true,
+      "extension": "md",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "created-on",
+          "label": "Created On",
+          "widget": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "name": "updated-on",
+          "label": "Updated On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "published-on",
+          "label": "Published On",
+          "widget": "datetime",
+          "default": "{{now}}",
+          "required": false
+        },
+        {
+          "name": "issue-number",
+          "label": "Issue Number",
+          "widget": "number",
+          "min": 1
+        },
+        {
+          "name": "article-number",
+          "label": "Article Number",
+          "widget": "number",
+          "min": 1
+        },
+        {
+          "name": "authors",
+          "label": "Authors",
+          "widget": "list",
+          "fields": [
+            {
+              "name": "first-name",
+              "label": "First Name",
+              "widget": "string"
+            },
+            {
+              "name": "last-name",
+              "label": "Last Name",
+              "widget": "string"
+            },
+            {
+              "name": "image",
+              "label": "Image",
+              "widget": "object",
+              "required": false,
+              "hint": "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback.",
+              "fields": [
+                {
+                  "name": "src",
+                  "label": "URL",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false,
+                  "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+                },
+                {
+                  "name": "alt",
+                  "label": "Alt Text",
+                  "widget": "hidden",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "widget": "markdown",
+          "editor_components": [
+            "code-block",
+            "image",
+            "video",
+            "audio"
+          ]
+        },
+        {
+          "name": "image",
+          "label": "Image",
+          "widget": "object",
+          "required": false,
+          "hint": "Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.",
+          "fields": [
+            {
+              "name": "src",
+              "label": "URL",
+              "widget": "image",
+              "allow_multiple": false,
+              "choose_url": false,
+              "required": false,
+              "hint": "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+            },
+            {
+              "name": "alt",
+              "label": "Alt Text",
+              "widget": "hidden",
+              "required": false,
+              "hint": "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+            }
+          ]
+        },
+        {
+          "name": "seo",
+          "label": "SEO Metadata",
+          "widget": "object",
+          "fields": [
+            {
+              "name": "title",
+              "label": "Meta Title",
+              "widget": "string"
+            },
+            {
+              "name": "description",
+              "label": "Meta Description",
+              "widget": "text",
+              "pattern": [
+                "^.{0,220}$",
+                "Must have at most 220 characters."
+              ],
+              "hint": "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+            },
+            {
+              "name": "og",
+              "label": "Open Graph Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Open Graph Title",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "image",
+                  "label": "Open Graph Image",
+                  "widget": "image",
+                  "allow_multiple": false,
+                  "choose_url": false,
+                  "required": false
+                }
+              ]
+            },
+            {
+              "name": "twitter",
+              "label": "Twitter Metadata",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "title",
+                  "label": "Twitter Title",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "card",
+                  "label": "Twitter Card",
+                  "widget": "string",
+                  "default": "summary",
+                  "required": false
+                },
+                {
+                  "name": "site",
+                  "label": "Twitter Site",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "creator",
+                  "label": "Twitter Creator",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

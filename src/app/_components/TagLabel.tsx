@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from './Icon'
 
-type TagProps = {
+export type TagProps = {
   borderColor?: 'brand-100' | 'brand-500'
   icon?: IconProps['component']
   children: string

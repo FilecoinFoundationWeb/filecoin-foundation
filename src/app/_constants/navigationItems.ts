@@ -19,7 +19,7 @@ const communityItems = [
   PATHS.SECURITY,
 ]
 
-const resourcesItems = [PATHS.BLOG]
+const resourcesItems = [PATHS.BLOG, PATHS.DIGEST]
 
 const legalItems = [
   PATHS.TERMS_OF_USE,
