@@ -13,7 +13,7 @@ tech:
   - filecoin
   - ipfs
 image:
-  src: /assets/images/6597471366ba5cff0f03dfe7_cavalry_logo.pngs
+  src: /assets/images/6597471366ba5cff0f03dfe7_cavalry_logo.png
 website: "https://cavalry.scenegroup.co"
 twitter: "https://twitter.com/cavalry__app"
 video-url: "https://www.youtube.com/embed/MSkeo4pPYa0"

@@ -1,19 +1,17 @@
 ---
 title: Filecoin Mainnet Marks Three Years!
-created-on: 2023-10-16T17:45:17.415000Z
-updated-on: 2023-10-16T17:45:17.440000Z
-published-on: 2023-10-16T17:45:17.450000Z
-description:
-  This week, Filecoin Foundation celebrates the three-year anniversary
-  of the Filecoin network’s  mainnet launch.
+created-on: 2023-10-16T17:45:17.415Z
+updated-on: 2023-10-16T17:45:17.440Z
+published-on: 2023-10-16T17:45:17.450Z
+category: news
+description: This week, Filecoin Foundation celebrates the three-year
+  anniversary of the Filecoin network’s mainnet launch.
 image:
   src: /assets/images/image-3-.png
-category: news
 seo:
   title: Filecoin Mainnet Marks Three Years
-  description:
-    Celebrating three years of Filecoin mainnet. Reflecting on the achievements
-    and looking forward to the future.
+  description: Celebrating three years of Filecoin mainnet. Reflecting on the
+    achievements and looking forward to the future.
 ---
 
 This week, Filecoin Foundation celebrates the three-year anniversary of the Filecoin network’s Mainnet launch. And our vision for a better, more decentralized web has never been more urgent.

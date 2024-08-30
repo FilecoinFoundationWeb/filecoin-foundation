@@ -3,12 +3,13 @@ title: Nuklai
 created-on: 2024-07-08T10:11:00.000Z
 updated-on: 2024-07-08T10:11:00.000Z
 published-on: 2024-07-08T10:11:00.000Z
+email: encrypted::U2FsdGVkX19Bhy3Vb/xhEzHeAhAb+cE2DVtA4qFfNZivYi8gHLxTK+Kc7f4Hf+EH
+full-name: encrypted::U2FsdGVkX183Q7ymgvNdRvhHklXvolp8gxFav33VCqI=
 image:
   src: /assets/images/nuklai.png
 category: artificial-intelligence
 subcategories:
   - artificial-productivity-utilities
-  - data-storage-management
 description: ‍‍Nuklai is a collaborative data ecosystem and infrastructure provider for private data networks.
 website: https://www.nukl.ai/
 tech:
@@ -20,12 +21,10 @@ seo:
   twitter:
     title: summary
     card: summary
-  title: Nuklai - Empowering Innovation with Universal Data Access
-  description: >+
-    Nuklai: A Web3 & AI-driven ecosystem enabling secure, collaborative, and
-    monetizable private data networks for innovation and informed
-    decision-making.
-
+  title: "Nuklai: Empowering Innovation with Universal Data Access"
+  description: Nuklai is a Web3 & AI-driven ecosystem enabling secure,
+    collaborative, and monetizable private data networks for innovation and
+    informed decision-making.
 ---
 
 One of the key aspects of Nuklai’s technology and vision of creating a collaborative data ecosystem is metadata, i.e., data that deeply describes a dataset.

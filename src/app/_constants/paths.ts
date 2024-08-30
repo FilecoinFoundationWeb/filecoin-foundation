@@ -18,6 +18,7 @@ export type PathValues =
   | '/privacy-policy'
   | '/security'
   | '/security/bug-bounty'
+  | '/security/maturity-model'
   | '/security/coordinated-disclosure-policy'
   | '/terms-of-use'
 
@@ -98,6 +99,10 @@ export const PATHS = {
   HOME: createPathObject('/', 'Home', {
     customMainContentPath: '/home',
   }),
+  MATURITY_MODEL: createPathObject(
+    '/security/maturity-model',
+    'Maturity Model',
+  ),
   PRIVACY_POLICY: createPathObject('/privacy-policy', 'Privacy Policy'),
   TERMS_OF_USE: createPathObject('/terms-of-use', 'Terms of Use'),
   SECURITY: createPathObject('/security', 'Security', {

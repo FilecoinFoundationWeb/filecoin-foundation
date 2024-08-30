@@ -1,9 +1,12 @@
 import { clsx } from 'clsx'
 
-import { Button } from '@/components/Button'
 import {
-  type DescriptionTextType,
+  type CTAButtonGroupProps,
+  CTAButtonGroup,
+} from '@/components/CTAButtonGroup'
+import {
   DescriptionText,
+  type DescriptionTextType,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import {
@@ -12,8 +15,6 @@ import {
 } from '@/components/SectionDivider'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
-import type { CTAProps } from '@/types/sharedProps/ctaType'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PageSectionProps = {
@@ -21,8 +22,8 @@ type PageSectionProps = {
   title: string
   description?: DescriptionTextType
   image?: StaticImageProps
+  cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
-  cta?: CTAProps
 }
 
 export function PageSection({
@@ -36,6 +37,7 @@ export function PageSection({
   return (
     <section>
       <SectionDivider title={kicker} />
+
       <div
         className={clsx(
           'mb-6 mt-4',
@@ -46,13 +48,12 @@ export function PageSection({
           <Heading tag="h2" variant="3xl">
             {title}
           </Heading>
+
           {description && <DescriptionText>{description}</DescriptionText>}
-          {cta && (
-            <Button href={cta.href} variant="primary" className="w-full">
-              {cta.text}
-            </Button>
-          )}
+
+          {cta && <CTAButtonGroup cta={cta} />}
         </div>
+
         {image && (
           <div className="relative aspect-video lg:aspect-auto">
             <StaticImage
@@ -64,6 +65,7 @@ export function PageSection({
           </div>
         )}
       </div>
+
       {children && <div className="flex flex-col gap-6">{children}</div>}
     </section>
   )

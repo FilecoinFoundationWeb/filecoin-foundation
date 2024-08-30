@@ -3,22 +3,21 @@ title: OpenGate
 created-on: 2024-01-04T22:40:28.134Z
 updated-on: 2024-01-05T16:11:14.542Z
 published-on: 2024-01-11T13:26:59.787Z
-description:
-  "OpenGate has launched CryptoBear, the first NFT project within the Filecoin
-  ecosystem that accepts FIL as payment. Additionally, OpenGate has introduced the
-  FNS domain project for the FIL blockchain, accessible at www.opengatefns.com."
-category: storage
-tags:
-  - nfts
-tech:
-  - ipfs
+email: encrypted::U2FsdGVkX18DAxnwVx12HxGP6bJqmzQMymBttgOHUt/4HKClPwKCZTxMTftLffJX
+full-name: encrypted::U2FsdGVkX19Thu0eBMFECFKWOnUhJDbVJHy1OZdJid4=
 image:
   src: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
-website: https://www.opengatenft.com/
-twitter: https://twitter.com/OpenGateNFT
-year-joined: 2021-02-01T23:00:00.000Z
+category: storage
 subcategories:
   - data-storage-management
+tags:
+  - nfts
+description: OpenGate has launched CryptoBear, an NFT project within the Filecoin ecosystem.
+website: https://www.opengatenft.com/
+tech:
+  - ipfs
+twitter: https://twitter.com/OpenGateNFT
+year-joined: 2021-02-01T23:00:00.000Z
 seo:
   title: OpenGate
   description: OpenGate provides decentralized solutions for data storage and management.

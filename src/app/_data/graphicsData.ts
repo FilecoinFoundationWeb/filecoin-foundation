@@ -22,6 +22,7 @@ import security from '@/assets/graphics/Filorg_Security.webp'
 import security2 from '@/assets/graphics/Filorg_Security2.webp'
 import security3 from '@/assets/graphics/Filorg_Security3.webp'
 import security4 from '@/assets/graphics/Filorg_Security4.webp'
+import security5 from '@/assets/graphics/Filorg_Security5.webp'
 
 export const graphicsData: Record<string, StaticImageProps> = {
   home: {
@@ -95,6 +96,10 @@ export const graphicsData: Record<string, StaticImageProps> = {
   security4: {
     data: security4,
     alt: 'An illustration showing a magnifying glass focusing on a screen displaying lines of code. The scene is filled with abstract spherical elements connected by thin lines, and a small, stylized bug is visible near the bottom, symbolizing the concept of debugging or analyzing code.',
+  },
+  security5: {
+    data: security5,
+    alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
   },
   orbit: {
     data: orbit,
