@@ -5,7 +5,7 @@ import type { BlogPost } from '@/types/blogPostType'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import {
-  BASE_ORGANIZATION_SCHEMA,
+  ORGANIZATION_SCHEMA_BASE,
   SCHEMA_CONTEXT_URL,
 } from '@/constants/structuredDataConstants'
 
@@ -31,6 +31,6 @@ export function generateStructuredData(
       '@type': 'WebPage',
       '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,
     },
-    publisher: BASE_ORGANIZATION_SCHEMA,
+    publisher: ORGANIZATION_SCHEMA_BASE,
   }
 }
