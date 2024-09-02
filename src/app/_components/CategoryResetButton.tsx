@@ -1,13 +1,13 @@
 'use client'
 
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+
+import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { CategorySidebar } from '@/components/CategorySidebar'
-
-import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
-
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 type CategoryResetButtonProps = {
   counts: ReturnType<typeof useCategory>['categoryCounts']

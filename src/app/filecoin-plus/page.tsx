@@ -1,3 +1,12 @@
+import { PATHS } from '@/constants/paths'
+import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/filecoin-plus.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { Button } from '@/components/Button'
@@ -10,15 +19,6 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-
-import { createMetadata } from '@/utils/createMetadata'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/filecoin-plus.md'
-
-import { PATHS } from '@/constants/paths'
-import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'

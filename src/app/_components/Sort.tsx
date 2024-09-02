@@ -2,11 +2,6 @@
 
 import { useState, useEffect } from 'react'
 
-import { useSort } from '@/hooks/useSort'
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
-
-import { SortListbox } from '@/components/SortListbox'
-
 import {
   type DefaultSortType,
   type SortId,
@@ -14,6 +9,11 @@ import {
 } from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
+
+import { useSort } from '@/hooks/useSort'
+import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
+
+import { SortListbox } from '@/components/SortListbox'
 
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']

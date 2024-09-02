@@ -1,15 +1,15 @@
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
-import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
-
 import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { PATHS } from '@/constants/paths'
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
+import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 
 type FeaturedGrantsGraduatesProps = {
   grantGraduates: Array<EcosystemProject>

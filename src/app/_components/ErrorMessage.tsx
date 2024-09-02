@@ -1,10 +1,10 @@
-import { Button } from '@/components/Button'
-import { DescriptionText } from '@/components/DescriptionText'
-import { Heading } from '@/components/Heading'
-
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
 import { PATHS } from '@/constants/paths'
+
+import { Button } from '@/components/Button'
+import { DescriptionText } from '@/components/DescriptionText'
+import { Heading } from '@/components/Heading'
 
 type ErrorMessageProps = {
   kicker: string

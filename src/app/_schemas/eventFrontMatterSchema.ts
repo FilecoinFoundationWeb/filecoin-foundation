@@ -1,11 +1,11 @@
 import { z } from 'zod'
 
-import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
-
 import {
   getEventsCategorySettings,
   createCategorySchema,
 } from '@/utils/categoryUtils'
+
+import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 

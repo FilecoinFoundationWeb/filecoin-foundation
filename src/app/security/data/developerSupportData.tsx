@@ -1,11 +1,13 @@
 import { FileText, UserCircle } from '@phosphor-icons/react/dist/ssr'
 
-import type { IconProps } from '@/components/Icon'
-import { TextLink } from '@/components/TextLink'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import type { IconProps } from '@/components/Icon'
+import { TextLink } from '@/components/TextLink'
+
+
 
 type DeveloperSupportData = {
   heading: {

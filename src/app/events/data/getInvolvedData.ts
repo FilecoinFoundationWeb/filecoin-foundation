@@ -1,8 +1,8 @@
 import { Clipboard, Envelope, HandWaving } from '@phosphor-icons/react/dist/ssr'
 
-import { extractEmailAddress } from '@/utils/extractEmailAddress'
-
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 export const getInvolvedData = [
   {

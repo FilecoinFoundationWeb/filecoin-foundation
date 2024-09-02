@@ -1,8 +1,8 @@
 import { usePathname } from 'next/navigation'
 
-import { type SubNavItemProps } from '@/components/DesktopNavigation'
-
 import { isInternalLink, isExternalLink } from '@/utils/linkUtils'
+
+import { type SubNavItemProps } from '@/components/DesktopNavigation'
 
 export function useNavigationItems(items: Array<SubNavItemProps>) {
   const pathname = usePathname()

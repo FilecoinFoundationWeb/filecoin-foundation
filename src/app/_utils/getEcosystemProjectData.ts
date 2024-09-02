@@ -1,7 +1,7 @@
+import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
+
 import { convertMarkdownToEcosystemProjectData } from '@/utils/convertMarkdownToEcosystemProjectData'
 import { getData, getAllData } from '@/utils/getData'
-
-import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
 export function getEcosystemProjectData(slug: string) {
   return getData(

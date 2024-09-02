@@ -1,6 +1,16 @@
 import { Files } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/about.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
@@ -9,16 +19,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { createMetadata } from '@/utils/createMetadata'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/about.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'

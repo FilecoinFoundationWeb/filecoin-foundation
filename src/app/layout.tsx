@@ -4,9 +4,9 @@ import PlausibleProvider from 'next-plausible'
 
 import '@/styles/globals.scss'
 
-import { SiteLayout } from '@/components/SiteLayout'
-
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+
+import { SiteLayout } from '@/components/SiteLayout'
 
 export const metadata: Metadata = {
   title: {
