@@ -38,9 +38,9 @@ jobs:
           npx wait-on http://localhost:3000
 
       - name: Run Cypress Tests with Percy
-        if: ${{ !contains(github.event.head_commit.message, '[skip percy]') }}
+        if: ${{ !github.event.head_commit.message.contains('[skip percy]') }}
         run: npm run test:cypress:percy:critical
 
       - name: Run Cypress Tests without Percy
-        if: ${{ contains(github.event.head_commit.message, '[skip percy]') }}
+        if: ${{ github.event.head_commit.message.contains('[skip percy]') }}
         run: npm run test:cypress:critical
