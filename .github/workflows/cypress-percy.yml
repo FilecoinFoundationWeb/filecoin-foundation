@@ -37,10 +37,25 @@ jobs:
           echo "Waiting for server to start..."
           npx wait-on http://localhost:3000
 
+      - name: Determine Test Type
+        id: test-type
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            COMMIT_MESSAGE="${{ github.event.pull_request.title }}"
+          else
+            COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+          fi
+
+          if [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
+            echo "::set-output name=skip_percy::true"
+          else
+            echo "::set-output name=skip_percy::false"
+          fi
+
       - name: Run Cypress Tests without Percy
-        if: ${{ contains(github.event.head_commit.message, '[skip percy]') }}
+        if: steps.test-type.outputs.skip_percy == 'true'
         run: npm run test:cypress:critical
 
       - name: Run Cypress Tests with Percy
-        if: ${{ !contains(github.event.head_commit.message, '[skip percy]') }}
+        if: steps.test-type.outputs.skip_percy == 'false'
         run: npm run test:cypress:percy:critical
