@@ -1,7 +1,5 @@
 import React from 'react'
-
 import Image from 'next/image'
-
 import type { ImageProps } from '@/types/sharedProps/imageType'
 
 type ImagePropsWithoutAlt = Omit<ImageProps, 'alt'>
@@ -19,35 +17,43 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
     throw new Error('Avatar component requires at least one author')
   }
 
-  const authorsNames = authors
+  const authorNames = authors
     .map((author) => `${author.firstName} ${author.lastName}`)
     .join(' & ')
 
-  const renderContent = ({ firstName, lastName, image }: Author) => {
-    if (image?.src) {
-      return (
-        <Image
-          className="inline-block rounded-full object-cover ring-1 ring-brand-100"
-          src={image.src}
-          alt={`Photo of ${firstName} ${lastName}`}
-          width={imageSize}
-          height={imageSize}
-        />
-      )
-    } else {
-      const initials = (firstName[0] + lastName[0]).toUpperCase()
-      return (
-        <div
-          style={{ width: imageSize, height: imageSize }}
-          className="flex items-center justify-center rounded-full bg-brand-700 ring-1 ring-brand-100"
-          aria-label={`Initials of ${firstName} ${lastName}`}
-        >
-          <span className="text-sm font-medium leading-none text-brand-300">
-            {initials}
-          </span>
-        </div>
-      )
-    }
+  const renderImage = (
+    firstName: string,
+    lastName: string,
+    image: ImagePropsWithoutAlt,
+  ) => (
+    <Image
+      className="inline-block rounded-full object-cover ring-1 ring-brand-100"
+      src={image.src}
+      alt={`Photo of ${firstName} ${lastName}`}
+      width={imageSize}
+      height={imageSize}
+    />
+  )
+
+  const renderInitials = (firstName: string, lastName: string) => {
+    const initials = (firstName[0] + lastName[0]).toUpperCase()
+    return (
+      <div
+        style={{ width: imageSize, height: imageSize }}
+        className="flex items-center justify-center rounded-full bg-brand-700 ring-1 ring-brand-100"
+        aria-label={`Initials of ${firstName} ${lastName}`}
+      >
+        <span className="text-sm font-medium leading-none text-brand-300">
+          {initials}
+        </span>
+      </div>
+    )
+  }
+
+  const renderAuthorContent = ({ firstName, lastName, image }: Author) => {
+    return image?.src
+      ? renderImage(firstName, lastName, image)
+      : renderInitials(firstName, lastName)
   }
 
   return (
@@ -55,11 +61,11 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
       <div className="flex -space-x-1">
         {authors.map((author) => (
           <React.Fragment key={`${author.firstName}-${author.lastName}`}>
-            {renderContent(author)}
+            {renderAuthorContent(author)}
           </React.Fragment>
         ))}
       </div>
-      <span className="text-sm">{authorsNames}</span>
+      <span className="text-sm">{authorNames}</span>
     </div>
   )
 }
