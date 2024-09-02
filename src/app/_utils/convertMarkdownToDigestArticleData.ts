@@ -14,7 +14,6 @@ export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
       image: author.image
         ? {
             src: author.image.src,
-            alt: author.image.alt,
           }
         : undefined,
     })),

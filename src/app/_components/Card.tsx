@@ -2,6 +2,7 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
+import { type Author, Avatar } from '@/components/Avatar'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
@@ -24,6 +25,7 @@ type CardProps = {
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
+  avatar?: Array<Author>
 }
 
 type SpacingValue = keyof typeof theme.spacing
@@ -120,6 +122,7 @@ export function Card({
   borderColor = 'brand-500',
   textIsClamped = false,
   as: Tag = 'li',
+  avatar,
 }: CardProps) {
   return (
     <Tag
@@ -148,6 +151,12 @@ export function Card({
             <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
               {description}
             </p>
+          )}
+
+          {avatar && (
+            <div className="my-6">
+              <Avatar authors={avatar} />
+            </div>
           )}
 
           {cta && <Link {...cta} />}

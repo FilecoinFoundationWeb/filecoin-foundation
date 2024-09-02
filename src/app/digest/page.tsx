@@ -51,8 +51,15 @@ export default function Digest() {
       >
         <CardGrid cols="smTwo">
           {articles.sort(sortArticlesByNumber).map((digest) => {
-            const { title, content, image, slug, issueNumber, articleNumber } =
-              digest
+            const {
+              title,
+              content,
+              image,
+              slug,
+              issueNumber,
+              articleNumber,
+              authors,
+            } = digest
 
             return (
               <Card
@@ -61,6 +68,7 @@ export default function Digest() {
                 description={content}
                 textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
+                avatar={authors}
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
