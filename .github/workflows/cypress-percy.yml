@@ -47,9 +47,9 @@ jobs:
           fi
 
           if [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
-            echo "::set-output name=skip_percy::true"
+            echo "skip_percy=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=skip_percy::false"
+            echo "skip_percy=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Run Cypress Tests without Percy
