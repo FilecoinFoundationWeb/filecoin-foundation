@@ -21,21 +21,23 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
     .map((author) => `${author.firstName} ${author.lastName}`)
     .join(' & ')
 
-  const renderImage = (
+  function renderImage(
     firstName: string,
     lastName: string,
     image: ImagePropsWithoutAlt,
-  ) => (
-    <Image
-      className="inline-block rounded-full object-cover ring-1 ring-brand-100"
-      src={image.src}
-      alt={`Photo of ${firstName} ${lastName}`}
-      width={imageSize}
-      height={imageSize}
-    />
-  )
+  ) {
+    return (
+      <Image
+        className="inline-block rounded-full object-cover ring-1 ring-brand-100"
+        src={image.src}
+        alt={`Photo of ${firstName} ${lastName}`}
+        width={imageSize}
+        height={imageSize}
+      />
+    )
+  }
 
-  const renderInitials = (firstName: string, lastName: string) => {
+  function renderInitials(firstName: string, lastName: string) {
     const initials = (firstName[0] + lastName[0]).toUpperCase()
     return (
       <div
@@ -50,7 +52,7 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
     )
   }
 
-  const renderAuthorContent = ({ firstName, lastName, image }: Author) => {
+  function renderAuthorContent({ firstName, lastName, image }: Author) {
     return image?.src
       ? renderImage(firstName, lastName, image)
       : renderInitials(firstName, lastName)
