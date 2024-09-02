@@ -1,7 +1,7 @@
+import { PATHS } from '@/constants/paths'
+
 import { convertMarkdownToEventData } from '@/utils/convertMarkdownToEventData'
 import { getData, getAllData } from '@/utils/getData'
-
-import { PATHS } from '@/constants/paths'
 
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 

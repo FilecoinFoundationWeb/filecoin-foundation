@@ -1,11 +1,11 @@
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 
-import { DynamicImage } from '@/components/DynamicImage'
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { graphicsData } from '@/data/graphicsData'
+import { DynamicImage } from '@/components/DynamicImage'
 
 type MarkdownContentProps = {
   children: string

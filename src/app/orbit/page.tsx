@@ -1,3 +1,14 @@
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/orbit.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
@@ -12,17 +23,6 @@ import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
-
-import { createMetadata } from '@/utils/createMetadata'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/orbit.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { OrbitEventsSection } from './components/EventsSection'
 import { ambassadorsData } from './data/ambassadorsData'

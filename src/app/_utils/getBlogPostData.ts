@@ -1,7 +1,7 @@
+import { PATHS } from '@/constants/paths'
+
 import { convertMarkdownToBlogPostData } from '@/utils/covertMarkdowntoBlogPostData'
 import { getData, getAllData } from '@/utils/getData'
-
-import { PATHS } from '@/constants/paths'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 

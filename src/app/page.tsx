@@ -1,5 +1,17 @@
 import path from 'path'
 
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+
+import { attributes } from '@/content/pages/home.md'
+
+import { graphicsData } from '@/data/graphicsData'
+import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
+
+import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
@@ -11,18 +23,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-
-import { graphicsData } from '@/data/graphicsData'
-import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
-
-import { attributes } from '@/content/pages/home.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
-import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 const ecosystemProjects = getEcosystemProjectsData()
 

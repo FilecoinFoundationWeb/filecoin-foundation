@@ -1,8 +1,8 @@
 import { clsx } from 'clsx'
 
-import { Icon } from '@/components/Icon'
-
 import { socialLinksWithIcons } from '@/utils/socialConfig'
+
+import { Icon } from '@/components/Icon'
 
 const touchTarget = {
   class: 'p-2',

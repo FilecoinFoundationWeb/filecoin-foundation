@@ -1,9 +1,9 @@
 import { clsx } from 'clsx'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 import { BasicCard } from '@/components/BasicCard'
 import { StaticImage } from '@/components/StaticImage'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 

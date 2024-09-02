@@ -1,12 +1,12 @@
 import type { Organization, WithContext } from 'schema-dts'
 
-import { attributes } from '@/content/pages/about.md'
-
 import {
   BASE_URL,
   FILECOIN_FOUNDATION_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/about.md'
 
 const { header } = attributes
 const { social, email } = FILECOIN_FOUNDATION_URLS

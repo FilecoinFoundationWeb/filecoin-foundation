@@ -4,9 +4,9 @@ import { type CategoryCounts, type CategoryId } from '@/types/categoryTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
-
 import { CATEGORY_KEY } from '@/constants/searchParams'
+
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams

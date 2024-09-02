@@ -1,15 +1,15 @@
-import { PageHeader } from '@/components/PageHeader'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagLabel } from '@/components/TagLabel'
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
-import { graphicsData } from '@/data/graphicsData'
-
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { TagLabel } from '@/components/TagLabel'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 

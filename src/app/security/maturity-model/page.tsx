@@ -1,3 +1,11 @@
+import { PATHS } from '@/constants/paths'
+
+import { attributes } from '@/content/pages/maturity-model.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
@@ -5,14 +13,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { createMetadata } from '@/utils/createMetadata'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/maturity-model.md'
-
-import { PATHS } from '@/constants/paths'
 
 import { CoreFunctions } from './components/CoreFunctions'
 import { applicationAndUseData } from './data/applicationAndUseData'

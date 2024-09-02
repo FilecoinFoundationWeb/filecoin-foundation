@@ -1,5 +1,7 @@
 import { clsx } from 'clsx'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 import {
   type CTAButtonGroupProps,
   CTAButtonGroup,
@@ -14,8 +16,6 @@ import {
   type SectionDividerProps,
 } from '@/components/SectionDivider'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PageSectionProps = {
   kicker: SectionDividerProps['title']

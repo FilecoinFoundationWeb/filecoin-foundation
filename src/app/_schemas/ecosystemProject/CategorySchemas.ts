@@ -1,13 +1,13 @@
 import {
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+} from '@/constants/paths'
+
+import {
   createCategorySchema,
   getCategoryDataFromDirectory,
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
-
-import {
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-} from '@/constants/paths'
 
 function createSchemaForDirectory(directoryPath: string) {
   const categoryData = getCategoryDataFromDirectory(directoryPath)

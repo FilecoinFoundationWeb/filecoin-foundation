@@ -3,12 +3,12 @@
 import { Listbox } from '@headlessui/react'
 import { ArrowsDownUp, CaretDown } from '@phosphor-icons/react/dist/ssr'
 
+import { type SortOption, type SortId } from '@/types/sortTypes'
+
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
-
-import { type SortOption, type SortId } from '@/types/sortTypes'
 
 type SortListboxProps = {
   sortId: SortId

@@ -1,7 +1,7 @@
+import { PATHS } from '@/constants/paths'
+
 import { convertMarkdownToDigestArticleData } from '@/utils/convertMarkdownToDigestArticleData'
 import { getData, getAllData } from '@/utils/getData'
-
-import { PATHS } from '@/constants/paths'
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 
