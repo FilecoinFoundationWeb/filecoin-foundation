@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Image from 'next/image'
+
 import type { ImageProps } from '@/types/sharedProps/imageType'
 
 type ImagePropsWithoutAlt = Omit<ImageProps, 'alt'>

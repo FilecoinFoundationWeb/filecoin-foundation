@@ -78,6 +78,14 @@ function Link({ href, ariaLabel, icon, text, left = 'left-4' }: LinkProps) {
   )
 }
 
+function CardAvatar({ authors }: { authors: Array<Author> }) {
+  return (
+    <div className="my-6">
+      <Avatar authors={authors} />
+    </div>
+  )
+}
+
 const imageContainerBaseStyle = 'relative aspect-video'
 const imageBaseStyle = 'rounded-lg px-1 pt-1'
 const imagePaddingStyle = 'px-6 pt-4'
@@ -153,11 +161,7 @@ export function Card({
             </p>
           )}
 
-          {avatar && (
-            <div className="my-6">
-              <Avatar authors={avatar} />
-            </div>
-          )}
+          {avatar && <Card.Avatar authors={avatar} />}
 
           {cta && <Link {...cta} />}
         </div>
@@ -167,3 +171,4 @@ export function Card({
 }
 
 Card.Link = Link
+Card.Avatar = CardAvatar
