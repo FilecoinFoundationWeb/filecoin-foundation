@@ -37,10 +37,13 @@ jobs:
           echo "Waiting for server to start..."
           npx wait-on http://localhost:3000
 
+      - name: Debug GitHub Context
+        run: echo "Commit message: ${{ github.event.head_commit.message }}"
+
       - name: Run Cypress Tests without Percy
-        if: ${{ contains(github.event.head_commit.message, '[skip percy]') }}
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, '[skip percy]')
         run: npm run test:cypress:critical
 
       - name: Run Cypress Tests with Percy
-        if: ${{ !contains(github.event.head_commit.message, '[skip percy]') }}
+        if: github.event_name == 'push' && !contains(github.event.head_commit.message, '[skip percy]')
         run: npm run test:cypress:percy:critical
