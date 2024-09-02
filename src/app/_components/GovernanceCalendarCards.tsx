@@ -6,14 +6,14 @@ import { Clock, CalendarPlus } from '@phosphor-icons/react/dist/ssr'
 import useSWR from 'swr'
 import { z } from 'zod'
 
+import { GOOGLE_CALENDAR_API_URL } from '@/constants/apiUrls'
+
+import { formatDateComponentsFromISO } from '@/utils/dateUtils'
+
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagLabel'
-
-import { formatDateComponentsFromISO } from '@/utils/dateUtils'
-
-import { GOOGLE_CALENDAR_API_URL } from '@/constants/apiUrls'
 
 type CalendarProps = {
   startDate: string

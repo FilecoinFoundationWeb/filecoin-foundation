@@ -52,6 +52,36 @@
             "position": "before"
           },
           {
+            "pattern": "@/types/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/constants/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/content/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/data/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/schemas/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "@/hooks/**",
             "group": "internal",
             "position": "before"
@@ -63,31 +93,6 @@
           },
           {
             "pattern": "@/styles/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/types/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/schemas/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/utils/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/data/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/content/**",
             "group": "internal",
             "position": "before"
           },

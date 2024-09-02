@@ -1,10 +1,10 @@
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { isExternalLink } from '@/utils/linkUtils'
+
 import { CustomLink, type CustomLinkProps } from '@/components/CustomLink'
 import { Icon as IconComponent, type IconProps } from '@/components/Icon'
-
-import { isExternalLink } from '@/utils/linkUtils'
 
 const variantStyles = {
   primary:

@@ -1,6 +1,13 @@
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
 
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { formatDate } from '@/utils/dateUtils'
+import { logZodError } from '@/utils/zodUtils'
+
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 
@@ -11,13 +18,6 @@ import { FilterContainer } from '@/components/FilterContainer'
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
-
-import { formatDate } from '@/utils/dateUtils'
-import { logZodError } from '@/utils/zodUtils'
-
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { fetchAndParseAirtableEvents } from '../services/airtable'
 

@@ -1,5 +1,16 @@
 import path from 'path'
 
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/grants.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
@@ -12,17 +23,6 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-
-import { createMetadata } from '@/utils/createMetadata'
-import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/grants.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'

@@ -1,7 +1,8 @@
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import type { StaticImageProps } from '@/components/StaticImage'
 
 import annualReport from '@/assets/images/022624-ff-anualreport.png'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type ReportData = {
   title: string

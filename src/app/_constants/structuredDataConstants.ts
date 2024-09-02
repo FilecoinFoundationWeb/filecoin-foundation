@@ -1,12 +1,12 @@
 import type { Organization, WithContext } from 'schema-dts'
 
-import { attributes } from '@/content/pages/about.md'
-
 import {
   BASE_URL,
   FILECOIN_FOUNDATION_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/about.md'
 
 const { header } = attributes
 const { social, email } = FILECOIN_FOUNDATION_URLS
@@ -17,7 +17,7 @@ export const SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL =
 export const SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL =
   'https://schema.org/OfflineEventAttendanceMode'
 
-export const BASE_ORGANIZATION_SCHEMA: WithContext<Organization> = {
+export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
   '@type': 'Organization',
   name: ORGANIZATION_NAME,

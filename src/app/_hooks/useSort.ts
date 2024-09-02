@@ -9,16 +9,16 @@ import type {
 } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
-import { sortEntriesAlphabetically } from '@/utils/sortEntriesAlphabetically'
-import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
-
 import { SORT_KEY } from '@/constants/searchParams'
 import {
   ALPHABETICAL_SORT_IDS,
   CHRONOLOGICAL_SORT_IDS,
   VALID_SORT_IDS,
 } from '@/constants/sortConstants'
+
+import { normalizeQueryParam } from '@/utils/queryUtils'
+import { sortEntriesAlphabetically } from '@/utils/sortEntriesAlphabetically'
+import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 type UseSortProps<Entry extends Object> = {
   searchParams: NextServerSearchParams

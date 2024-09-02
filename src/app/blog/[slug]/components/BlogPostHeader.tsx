@@ -1,10 +1,10 @@
-import { ArticleHeader } from '@/components/ArticleHeader'
-import { TagLabel } from '@/components/TagLabel'
-
 import type { BlogPost } from '@/types/blogPostType'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/dateUtils'
+
+import { ArticleHeader } from '@/components/ArticleHeader'
+import { TagLabel } from '@/components/TagLabel'
 
 type BlogPostHeaderProps = Pick<
   BlogPost,

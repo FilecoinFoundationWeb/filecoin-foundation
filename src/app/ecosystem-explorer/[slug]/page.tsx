@@ -1,5 +1,20 @@
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
+import {
+  type DynamicPathValues,
+  PATHS,
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+} from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { formatDate } from '@/utils/dateUtils'
+import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
+
 import { DescriptionText } from '@/components/DescriptionText'
 import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
@@ -8,21 +23,6 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/dateUtils'
-import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import {
-  type DynamicPathValues,
-  PATHS,
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-} from '@/constants/paths'
 
 import { VideoSection } from './components/VideoSection'
 import { generateStructuredData } from './utils/generateStructuredData'

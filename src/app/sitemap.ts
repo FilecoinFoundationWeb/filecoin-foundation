@@ -1,14 +1,14 @@
 import { formatISO } from 'date-fns'
 
-import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
+import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getEventsData } from '@/utils/getEventData'
 
-import { PATHS } from '@/constants/paths'
-import { BASE_URL } from '@/constants/siteMetadata'
+import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
 
 type GenericEntryData = Pick<DynamicBaseData, 'updatedOn'> & { slug: string }
 

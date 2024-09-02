@@ -7,11 +7,11 @@ import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
-import { Icon } from '@/components/Icon'
+import { PATHS } from '@/constants/paths'
 
 import { capitalize } from '@/utils/capitalize'
 
-import { PATHS } from '@/constants/paths'
+import { Icon } from '@/components/Icon'
 
 export function BreadCrumbs() {
   const pathname = usePathname()

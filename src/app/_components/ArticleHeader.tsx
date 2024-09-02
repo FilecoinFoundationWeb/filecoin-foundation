@@ -1,11 +1,11 @@
-import { DynamicImage } from '@/components/DynamicImage'
-import { type HeadingProps, Heading } from '@/components/Heading'
-
 import type { ImageProps } from '@/types/sharedProps/imageType'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { graphicsData } from '@/data/graphicsData'
+import { DynamicImage } from '@/components/DynamicImage'
+import { type HeadingProps, Heading } from '@/components/Heading'
 
 type ArticleHeaderProps = {
   image?: ImageProps

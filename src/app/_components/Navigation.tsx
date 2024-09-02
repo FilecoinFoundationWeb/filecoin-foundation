@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
+import { PATHS } from '@/constants/paths'
+
 import { DesktopNavigation } from '@/components/DesktopNavigation'
 import { Logo } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
-
-import { PATHS } from '@/constants/paths'
 
 export function Navigation() {
   return (

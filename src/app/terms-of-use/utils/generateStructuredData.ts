@@ -2,9 +2,9 @@ import type { WebPage, WithContext } from 'schema-dts'
 
 import type { SeoMetadata } from '@/types/metadataTypes'
 
-import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
-
 import { PATHS } from '@/constants/paths'
+
+import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
   return generateWebPageStructuredData({

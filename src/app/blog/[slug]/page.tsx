@@ -1,11 +1,11 @@
-import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageLayout } from '@/components/PageLayout'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getBlogPostData } from '@/utils/getBlogPostData'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { MarkdownContent } from '@/components/MarkdownContent'
+import { PageLayout } from '@/components/PageLayout'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'

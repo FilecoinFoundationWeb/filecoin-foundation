@@ -3,10 +3,10 @@
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
+import { isExternalLink } from '@/utils/linkUtils'
+
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
-
-import { isExternalLink } from '@/utils/linkUtils'
 
 type TextLinkProps = {
   href: string

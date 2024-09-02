@@ -1,8 +1,8 @@
 import { z } from 'zod'
 
-import configJson from '@/data/cmsConfigSchema.json'
-
 import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
+
+import configJson from '@/data/cmsConfigSchema.json'
 
 const pathConfigSchema = z.object({
   media_folder: z.string(),

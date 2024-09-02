@@ -1,10 +1,10 @@
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 
+import type { MemberData } from '@/types/memberType'
+
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
 import { StaticImage } from '@/components/StaticImage'
-
-import type { MemberData } from '@/types/memberType'
 
 type KeyMemberCardProps = MemberData
 

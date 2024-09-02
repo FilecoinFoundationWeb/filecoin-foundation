@@ -1,7 +1,7 @@
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 import { Heading } from '@/components/Heading'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 export type FocusAreaCardProps = {
   title: string

@@ -2,6 +2,25 @@ import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+
+import { attributes } from '@/content/pages/ecosystem-explorer.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import {
+  getCategoryDataFromDirectory,
+  getCategorySettingsFromMap,
+} from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
+import { getSortOptions } from '@/utils/getSortOptions'
+
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
@@ -21,24 +40,10 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import {
-  getCategoryDataFromDirectory,
-  getCategorySettingsFromMap,
-} from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { getSortOptions } from '@/utils/getSortOptions'
 
-import { graphicsData } from '@/data/graphicsData'
 
-import { attributes } from '@/content/pages/ecosystem-explorer.md'
 
-import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
