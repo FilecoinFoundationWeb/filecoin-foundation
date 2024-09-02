@@ -11,43 +11,43 @@ import {
   type FormListboxProps,
 } from '@/components/Form/FormListbox'
 
-type ControlledProps =
-  | 'value'
+type ExcludedProps =
   | 'defaultValue'
   | 'error'
-  | 'onChange'
   | 'onBlur'
+  | 'onChange'
   | 'required'
-type AvailableListboxProps = Omit<FormListboxProps, ControlledProps>
+  | 'value'
 
-type ControlledFormListboxProps<FormValues extends FieldValues> = {
+type UncontrolledListboxProps = Omit<FormListboxProps, ExcludedProps>
+
+interface ControlledFormListboxProps<FormValues extends FieldValues>
+  extends UncontrolledListboxProps {
   name: FieldPathByValue<FormValues, OptionType>
-} & AvailableListboxProps
+}
 
 export function ControlledFormListbox<FormValues extends FieldValues>({
   name,
   ...rest
 }: ControlledFormListboxProps<FormValues>) {
-  const { control, formState } = useFormContext<FormValues>()
+  const {
+    control,
+    formState: { errors },
+  } = useFormContext<FormValues>()
 
   return (
     <Controller
       name={name}
       control={control}
-      render={({ field }) => {
-        const value = field.value
-        const error = formState.errors[name]
-
-        return (
-          <FormListbox
-            {...rest}
-            value={value}
-            error={error && String(error.message)}
-            onChange={field.onChange}
-            onBlur={field.onBlur}
-          />
-        )
-      }}
+      render={({ field: { value, onChange, onBlur } }) => (
+        <FormListbox
+          {...rest}
+          value={value}
+          error={errors[name]?.message?.toString()}
+          onChange={onChange}
+          onBlur={onBlur}
+        />
+      )}
     />
   )
 }

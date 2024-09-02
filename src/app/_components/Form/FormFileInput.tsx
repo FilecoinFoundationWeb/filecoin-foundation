@@ -13,7 +13,7 @@ import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 import { Icon } from '@/components/Icon'
 
-type HardCodedProps = 'type' | 'onChange' | 'accept' | 'multiple' | 'invalid'
+type ExcludedProps = 'type' | 'onChange' | 'accept' | 'multiple' | 'invalid'
 
 export type FormFileInputProps = {
   files: FileList | null
@@ -21,7 +21,7 @@ export type FormFileInputProps = {
   maxSize: number
   description?: string | React.ReactNode
   onChange: (files: FileList | null) => void
-} & Omit<HeadlessInputProps, HardCodedProps> &
+} & Omit<HeadlessInputProps, ExcludedProps> &
   FormLabelProps &
   FormErrorProps
 
@@ -30,7 +30,7 @@ export function FormFileInput({
   label,
   hideLabel,
   error,
-  hideError,
+  hideError = false,
   disabled,
   onChange,
   description,
@@ -82,7 +82,7 @@ export function FormFileInput({
           </>
         )}
       </div>
-
+      {/* FormHint? */}
       {description && (
         <Description className="mt-4 text-sm text-brand-100">
           {description}
@@ -94,6 +94,7 @@ export function FormFileInput({
   )
 }
 
+// #Q: I think I'd like to see these components in a different file
 type SelectedFileProps = {
   file: File
   onReset: () => void
@@ -122,11 +123,17 @@ function SelectedFile({ file, onReset }: SelectedFileProps) {
   )
 }
 
+// #Q: I think I'd like to see these components in a different file
+type UploadInstructionsProps = Pick<
+  FormFileInputProps,
+  'accept' | 'maxSize' | 'error'
+>
+
 function UploadInstructions({
   accept,
   maxSize,
   error,
-}: Pick<FormFileInputProps, 'accept' | 'maxSize' | 'error'>) {
+}: UploadInstructionsProps) {
   return (
     <div
       aria-label="Instructions to upload a file"
@@ -137,20 +144,23 @@ function UploadInstructions({
     >
       <div className="flex flex-col items-center justify-center gap-2 p-4">
         <Icon component={Image} size={80} weight="fill" />
-
-        <p className="text-center text-brand-100" role="button">
-          <strong className="text-brand-300 group-hover:text-brand-400">
+        {/* Does this need to be button? Are we not using input already? */}
+        <p className="max-w-xs text-center text-brand-100">
+          <span className="font-bold text-brand-300 group-hover:text-brand-400">
             Upload a file
-          </strong>{' '}
-          or drag and drop <br /> {getReadableAcceptedFormats(accept)} up to{' '}
-          {getReadableMaxSize(maxSize)}
+          </span>
+          <span>
+            {' '}
+            or drag and drop {getDisplayableFileFormats(accept)} up to{' '}
+            {getDisplayableMaxFileSize(maxSize)}
+          </span>
         </p>
       </div>
     </div>
   )
 }
 
-function getReadableAcceptedFormats(
+function getDisplayableFileFormats(
   formatsWithLeadingDot: FormFileInputProps['accept'],
 ) {
   const formats = formatsWithLeadingDot.map((format) => format.replace('.', ''))
@@ -167,14 +177,16 @@ function getReadableAcceptedFormats(
     return `${formats[0]} and ${formats[1]} files`
   }
 
-  const lastFormat = formats.pop()
+  const lastFormat = formats.pop() // #Q: What is lastForm?
   return `${formats.join(', ')}, and ${lastFormat} files`
 }
 
-function getReadableMaxSize(size: FormFileInputProps['maxSize']) {
-  if (size < 1_000_000) {
-    return `${(size / 1_000).toFixed()}KB`
+// #Q: Magic number 1_000_000 and 1_000?
+// #Q: What is the purpose of this function?
+function getDisplayableMaxFileSize(maxSize: FormFileInputProps['maxSize']) {
+  if (maxSize < 1_000_000) {
+    return `${(maxSize / 1_000).toFixed()}KB`
   }
 
-  return `${(size / 1_000_000).toFixed()}MB`
+  return `${(maxSize / 1_000_000).toFixed()}MB`
 }

@@ -9,43 +9,43 @@ import {
 
 import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
 
-type ControlledProps =
-  | 'value'
+type ExcludedProps =
   | 'defaultValue'
   | 'error'
-  | 'onChange'
   | 'onBlur'
+  | 'onChange'
   | 'required'
-type AvailableInputProps = Omit<FormInputProps, ControlledProps>
+  | 'value'
 
-type ControlledFormInputProps<FormValues extends FieldValues> = {
+type UncontrolledInputProps = Omit<FormInputProps, ExcludedProps>
+
+interface ControlledFormInputProps<FormValues extends FieldValues>
+  extends UncontrolledInputProps {
   name: FieldPathByValue<FormValues, string>
-} & AvailableInputProps
+}
 
 export function ControlledFormInput<FormValues extends FieldValues>({
   name,
   ...rest
 }: ControlledFormInputProps<FormValues>) {
-  const { control, formState } = useFormContext<FormValues>()
+  const {
+    control,
+    formState: { errors },
+  } = useFormContext<FormValues>()
 
   return (
     <Controller
       name={name}
       control={control}
-      render={({ field }) => {
-        const value = field.value || ''
-        const error = formState.errors[name]
-
-        return (
-          <FormInput
-            {...rest}
-            value={value}
-            error={error && String(error.message)}
-            onChange={field.onChange}
-            onBlur={field.onBlur}
-          />
-        )
-      }}
+      render={({ field: { value = '', onChange, onBlur } }) => (
+        <FormInput
+          {...rest}
+          value={value}
+          error={errors[name]?.message?.toString()}
+          onChange={onChange}
+          onBlur={onBlur}
+        />
+      )}
     />
   )
 }

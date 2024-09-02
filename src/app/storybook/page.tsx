@@ -173,7 +173,7 @@ export default function Storybook() {
           onChange={setSelectedRadio}
         />
       </div>
-
+      {/* #Q: Why does ours not start with a default like in the Tailwind example? */}
       <FormCombobox
         label="What is the name of your project?"
         options={cryptoProjects}

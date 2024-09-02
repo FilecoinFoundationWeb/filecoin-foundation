@@ -10,23 +10,25 @@ import {
   type FormCheckboxProps,
 } from '@/components/Form/FormCheckbox'
 
-type ControlledProps =
+type ExcludedProps =
   | 'checked'
   | 'defaultChecked'
-  | 'value'
   | 'defaultValue'
-  | 'onChange'
   | 'onBlur'
+  | 'onChange'
   | 'required'
-type AvailableCheckboxProps = Omit<FormCheckboxProps, ControlledProps>
+  | 'value'
 
-type ControlledFormCheckboxProps<FormValues extends FieldValues> = {
+type UncontrolledCheckboxProps = Omit<FormCheckboxProps, ExcludedProps>
+
+interface ControlledFormCheckboxProps<FormValues extends FieldValues>
+  extends UncontrolledCheckboxProps {
   name: FieldPathByValue<FormValues, boolean>
-} & AvailableCheckboxProps
+}
 
 export function ControlledFormCheckbox<FormValues extends FieldValues>({
   name,
-  ...props
+  ...rest
 }: ControlledFormCheckboxProps<FormValues>) {
   const { control } = useFormContext<FormValues>()
 
@@ -34,18 +36,14 @@ export function ControlledFormCheckbox<FormValues extends FieldValues>({
     <Controller
       name={name}
       control={control}
-      render={({ field }) => {
-        const value = Boolean(field.value)
-
-        return (
-          <FormCheckbox
-            {...props}
-            checked={value}
-            onChange={field.onChange}
-            onBlur={field.onBlur}
-          />
-        )
-      }}
+      render={({ field: { value, onChange, onBlur } }) => (
+        <FormCheckbox
+          {...rest}
+          checked={Boolean(value)}
+          onChange={onChange}
+          onBlur={onBlur}
+        />
+      )}
     />
   )
 }

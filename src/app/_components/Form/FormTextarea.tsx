@@ -10,13 +10,13 @@ import { clsx } from 'clsx'
 import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 
-type HardCodedProps = 'invalid' | 'className'
+type ExcludedProps = 'invalid' | 'className'
 
 export type FormTextareaProps = {
   error?: FormErrorProps['error']
   characterLimit: number
   characterCount: number
-} & Omit<HeadlessTextareaProps, HardCodedProps> &
+} & Omit<HeadlessTextareaProps, ExcludedProps> &
   FormLabelProps
 
 export function FormTextarea({
@@ -38,7 +38,7 @@ export function FormTextarea({
           error && 'border-red-400',
         )}
       />
-      <div className="mt-2 flex h-6 items-center justify-between">
+      <div className="mt-2 flex h-6 items-center justify-between gap-1">
         <FormError.Message error={error} />
         <CharacterCounter count={characterCount} limit={characterLimit} />
       </div>
@@ -55,7 +55,7 @@ function CharacterCounter({ count, limit }: CharacterCounterProps) {
   return (
     <p
       className={clsx(
-        'mb-1 text-sm',
+        'text-sm',
         count > limit ? 'text-red-400' : 'text-brand-300',
       )}
     >

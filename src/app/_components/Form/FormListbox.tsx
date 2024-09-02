@@ -20,13 +20,13 @@ export type OptionType = {
   disabled?: boolean
 }
 
-type HardCodedProps = 'as' | 'className' | 'id' | 'by' | 'invalid'
+type ExcludedProps = 'as' | 'className' | 'id' | 'by' | 'invalid'
 
 export type FormListboxProps<Option extends OptionType = OptionType> = {
   options: Array<Option>
   placeholder: string
   icon?: IconProps['component']
-} & Omit<ListboxProps<'div', Option>, HardCodedProps> &
+} & Omit<ListboxProps<'div', Option>, ExcludedProps> &
   FormLabelProps &
   FormErrorProps
 
@@ -34,7 +34,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
   label,
   hideLabel,
   error,
-  hideError,
+  hideError = false,
   options,
   value,
   placeholder,
@@ -64,22 +64,20 @@ export function FormListbox<Option extends OptionType = OptionType>({
           as="ul"
           className="absolute z-10 mt-2 w-full overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
         >
-          {options.map((option) => {
-            return (
-              <ListboxOption
-                key={option.id}
-                as="li"
-                value={option}
-                disabled={option.disabled}
-                className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500"
-              >
-                <ListboxOptionText option={option} />
-                <span className="mb-px [.group:not([data-selected])_&]:hidden">
-                  <Icon component={Check} size={20} />
-                </span>
-              </ListboxOption>
-            )
-          })}
+          {options.map((option) => (
+            <ListboxOption
+              key={option.id}
+              as="li"
+              value={option}
+              disabled={option.disabled}
+              className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500"
+            >
+              <ListboxOptionText option={option} />
+              <span className="mb-px [.group:not([data-selected])_&]:hidden">
+                <Icon component={Check} size={20} />
+              </span>
+            </ListboxOption>
+          ))}
         </ListboxOptions>
       </Listbox>
       <FormError error={error} hideError={hideError} />
@@ -90,14 +88,10 @@ export function FormListbox<Option extends OptionType = OptionType>({
 type ButtonTextProps = Pick<FormListboxProps, 'value' | 'placeholder' | 'icon'>
 
 function ButtonText({ value, placeholder, icon }: ButtonTextProps) {
-  if (!icon) {
-    return <span>{value?.name || placeholder}</span>
-  }
-
   return (
     <div className="inline-flex items-center gap-2">
       {icon && <Icon component={icon} />}
-      {value?.name || placeholder}
+      <span>{value?.name || placeholder}</span>
     </div>
   )
 }
@@ -107,14 +101,12 @@ type ListboxOptionTextProps = { option: OptionType }
 function ListboxOptionText({ option }: ListboxOptionTextProps) {
   const { name, count } = option
 
-  if (typeof count === 'undefined') {
-    return <span>{name}</span>
-  }
-
   return (
     <span>
       {name}
-      <span className="ml-2 text-sm font-light">({count})</span>
+      {count !== undefined && (
+        <span className="ml-2 text-sm font-light">({count})</span>
+      )}
     </span>
   )
 }

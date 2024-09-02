@@ -12,15 +12,17 @@ export type RadioType = {
   disabled?: boolean
 }
 
-type HardCodedProps = 'as' | 'className'
+type ExcludedProps = 'as' | 'className'
 
-const renderAs = 'div'
+const renderAs = 'div' // #Q: Why are we excluding as but using renderAs?
 
 export type FormRadioInputProps<Value extends RadioType = RadioType> = {
   options: Array<Value>
-} & Omit<RadioGroupProps<typeof renderAs, Value>, HardCodedProps>
+} & Omit<RadioGroupProps<typeof renderAs, Value>, ExcludedProps>
 
+// #Q: FormRadioGroup instead of FormRadioInput?
 export function FormRadioInput<Value extends RadioType = RadioType>({
+  // as="div", // #Q
   options,
   ...rest
 }: FormRadioInputProps<Value>) {

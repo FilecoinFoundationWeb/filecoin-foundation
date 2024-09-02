@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 import {
   Combobox,
+  type ComboboxProps,
   ComboboxButton,
   ComboboxInput,
   ComboboxOption,
   ComboboxOptions,
   Field,
-  type ComboboxProps,
 } from '@headlessui/react'
 import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
 
@@ -22,19 +22,20 @@ type OptionType = {
   disabled?: boolean
 }
 
-type HardCodedProps = 'virtual' | 'onClose'
+// #Q: Why do we need to exclude virtual?
+type ExcludedProps = 'virtual' | 'onClose'
 type MultipleChoice = false
 
 export type FormComboboxProps<Value extends OptionType = OptionType> = {
   options: Array<Value>
-} & Omit<ComboboxProps<Value, MultipleChoice>, HardCodedProps> &
+} & Omit<ComboboxProps<Value, MultipleChoice>, ExcludedProps> &
   FormLabelProps
 
 export function FormCombobox<Value extends OptionType = OptionType>({
   label,
   hideLabel,
   options,
-  ...props
+  ...rest
 }: FormComboboxProps<Value>) {
   const [query, setQuery] = useState<string>('')
 
@@ -45,7 +46,7 @@ export function FormCombobox<Value extends OptionType = OptionType>({
       <FormLabel label={label} hideLabel={hideLabel} />
       <div className="relative">
         <Combobox<Value, MultipleChoice>
-          {...props}
+          {...rest}
           virtual={{
             options: filteredOptions,
             disabled: (option) => !!option.disabled,
@@ -65,23 +66,18 @@ export function FormCombobox<Value extends OptionType = OptionType>({
             transition
             className="absolute z-10 mt-2 w-[var(--input-width)] rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 transition duration-100 ease-in focus:brand-outline empty:invisible data-[leave]:data-[closed]:opacity-0"
           >
-            {(props) => {
-              const option: Value = props.option
-
-              return (
-                <ComboboxOption
-                  key={option.id}
-                  value={option}
-                  className="group flex w-full cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500"
-                >
-                  <div className="text-brand-100">{option.name}</div>
-
-                  <div className="invisible text-brand-100 group-data-[selected]:visible">
-                    <Icon component={Check} size={20} />
-                  </div>
-                </ComboboxOption>
-              )
-            }}
+            {({ option }) => (
+              <ComboboxOption
+                key={option.id}
+                value={option}
+                className="group flex w-full cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500"
+              >
+                <div className="text-brand-100">{option.name}</div>
+                <div className="invisible text-brand-100 group-data-[selected]:visible">
+                  <Icon component={Check} size={20} />
+                </div>
+              </ComboboxOption>
+            )}
           </ComboboxOptions>
         </Combobox>
       </div>
@@ -93,9 +89,9 @@ export function FormCombobox<Value extends OptionType = OptionType>({
       return options
     }
 
-    return options.filter((option) => {
-      return option.name.toLowerCase().includes(query.toLowerCase())
-    })
+    return options.filter((option) =>
+      option.name.toLowerCase().includes(query.toLowerCase()),
+    )
   }
 
   function resetQuery() {

@@ -3,14 +3,22 @@ import React from 'react'
 import type { FieldValues, UseFormReturn, SubmitHandler } from 'react-hook-form'
 import { FormProvider } from 'react-hook-form'
 
-type FormProps<Type extends FieldValues> = {
+type ExcludedProps = 'onSubmit'
+
+type UncontrolledFormProps = Omit<React.ComponentProps<'form'>, ExcludedProps>
+
+interface FormProps<Type extends FieldValues> extends UncontrolledFormProps {
   onSubmit: SubmitHandler<Type>
   methods: UseFormReturn<Type>
-} & Omit<React.ComponentProps<'form'>, 'onSubmit'>
+}
 
-export function Form<Type extends FieldValues>(props: FormProps<Type>) {
-  const { methods, children, onSubmit, ...rest } = props
-
+// #Q: ControlledForm?
+export function Form<Type extends FieldValues>({
+  methods,
+  children,
+  onSubmit,
+  ...rest
+}: FormProps<Type>) {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)} {...rest}>

@@ -10,43 +10,43 @@ import {
   type FormFileInputProps,
 } from '@/components/Form/FormFileInput'
 
-type ControlledProps =
-  | 'value'
+type ExcludedProps =
   | 'defaultValue'
-  | 'files'
-  | 'onChange'
-  | 'onBlur'
   | 'error'
+  | 'files'
+  | 'onBlur'
+  | 'onChange'
   | 'required'
-type AvailableFileInputProps = Omit<FormFileInputProps, ControlledProps>
+  | 'value'
 
-type ControlledFormFileInputProps<FormValues extends FieldValues> = {
+type UncontrolledFileInputProps = Omit<FormFileInputProps, ExcludedProps>
+
+interface ControlledFormFileInputProps<FormValues extends FieldValues>
+  extends UncontrolledFileInputProps {
   name: FieldPathByValue<FormValues, FileList>
-} & AvailableFileInputProps
+}
 
 export function ControlledFormFileInput<FormValues extends FieldValues>({
   name,
   ...rest
 }: ControlledFormFileInputProps<FormValues>) {
-  const { control, formState } = useFormContext<FormValues>()
+  const {
+    control,
+    formState: { errors },
+  } = useFormContext<FormValues>()
 
   return (
     <Controller
       name={name}
       control={control}
-      render={({ field }) => {
-        const value = field.value
-        const error = formState.errors[name]
-
-        return (
-          <FormFileInput
-            {...rest}
-            files={value}
-            error={error && String(error.message)}
-            onChange={field.onChange}
-          />
-        )
-      }}
+      render={({ field: { value, onChange } }) => (
+        <FormFileInput
+          {...rest}
+          files={value}
+          error={errors[name]?.message?.toString()}
+          onChange={onChange}
+        />
+      )}
     />
   )
 }

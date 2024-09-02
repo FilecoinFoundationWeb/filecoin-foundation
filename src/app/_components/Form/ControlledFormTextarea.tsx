@@ -10,45 +10,45 @@ import {
   type FormTextareaProps,
 } from '@/components/Form/FormTextarea'
 
-type ControlledProps =
-  | 'value'
+type ExcludedProps =
+  | 'characterCount'
   | 'defaultValue'
   | 'error'
-  | 'onChange'
   | 'onBlur'
+  | 'onChange'
   | 'required'
-  | 'characterCount'
-type AvailableTextareaProps = Omit<FormTextareaProps, ControlledProps>
+  | 'value'
 
-type ControlledFormTextAreaProps<FormValues extends FieldValues> = {
+type UncontrolledTextareaProps = Omit<FormTextareaProps, ExcludedProps>
+
+interface ControlledFormTextareaProps<FormValues extends FieldValues>
+  extends UncontrolledTextareaProps {
   name: FieldPathByValue<FormValues, string>
-} & AvailableTextareaProps
+}
 
 export function ControlledFormTextarea<FormValues extends FieldValues>({
   name,
   ...rest
-}: ControlledFormTextAreaProps<FormValues>) {
-  const { control, formState } = useFormContext<FormValues>()
+}: ControlledFormTextareaProps<FormValues>) {
+  const {
+    control,
+    formState: { errors },
+  } = useFormContext<FormValues>()
 
   return (
     <Controller
       name={name}
       control={control}
-      render={({ field }) => {
-        const value = field.value ?? ''
-        const error = formState.errors[name]
-
-        return (
-          <FormTextarea
-            {...rest}
-            value={value}
-            error={error && String(error.message)}
-            characterCount={value.length}
-            onChange={field.onChange}
-            onBlur={field.onBlur}
-          />
-        )
-      }}
+      render={({ field: { value = '', onChange, onBlur } }) => (
+        <FormTextarea
+          {...rest}
+          value={value}
+          error={errors[name]?.message?.toString()}
+          characterCount={value.length}
+          onChange={onChange}
+          onBlur={onBlur}
+        />
+      )}
     />
   )
 }
