@@ -30,7 +30,7 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
   ) {
     return (
       <Image
-        className="inline-block rounded-full object-cover ring-1 ring-brand-100"
+        className="inline-block rounded-full object-cover ring-brand-700"
         src={image.src}
         alt={`Photo of ${firstName} ${lastName}`}
         width={imageSize}
@@ -44,7 +44,7 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
     return (
       <div
         style={{ width: imageSize, height: imageSize }}
-        className="flex items-center justify-center rounded-full bg-brand-700 ring-1 ring-brand-100"
+        className="flex items-center justify-center rounded-full bg-brand-700 ring-1 ring-brand-700"
         aria-label={`Initials of ${firstName} ${lastName}`}
       >
         <span className="text-sm font-medium leading-none text-brand-300">
