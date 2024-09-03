@@ -149,6 +149,53 @@ const redirects = [
     destination: '/ecosystem-explorer/bidlo',
     permanent: true,
   },
+
+  // IMAGE REDIRECTS
+  {
+    source: '/assets/images/benjamin-hung.png',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/images/bold-baatar.png',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/images/brian-lau-sinso.png',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/images/frame-7.png',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/images/simon-cooper.png',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/images/yann-lecun.png',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/svg/bg-index.svg',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/assets/svg/logo.svg',
+    destination: '/assets/images/logo.svg',
+    permanent: true,
+  },
+  {
+    source: '/symbol-defs.svg',
+    destination: '/',
+    permanent: true,
+  },
 ]
 
 module.exports = redirects
