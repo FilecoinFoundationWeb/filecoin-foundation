@@ -5,12 +5,12 @@ import { useState } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
-import { type FieldErrors, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
-import ControlledFormInput from '@/components/Form/ControlledFormInput'
-import Form from '@/components/Form/Form'
+import { ControlledForm } from '@/components/Form/ControlledForm'
+import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import type { IconProps } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
 
@@ -36,24 +36,23 @@ export function NewsletterForm() {
     useNewsletterForm()
 
   return (
-    <Form<NewsLetterFormType>
+    <ControlledForm<NewsLetterFormType>
       methods={methods}
       className="relative"
       onSubmit={onSubmit}
     >
-      <div className="flex items-end space-x-2">
+      <div className="-mb-8 flex items-start space-x-2">
         <div className="w-72">
           <ControlledFormInput<NewsLetterFormType>
             hideLabel
-            label="Email"
             name="email"
+            label="Email"
             type="email"
             placeholder="Enter your email"
             autoComplete="email"
-            error={getError(methods.formState.errors, 'email')}
           />
         </div>
-        <div className="flex min-w-44">
+        <div className="flex min-w-36">
           <Button type="submit" disabled={isSubmitting} className="flex-1">
             {isSubmitting ? 'Subscribing' : 'Subscribe'}
           </Button>
@@ -65,7 +64,7 @@ export function NewsletterForm() {
         isOpen={dialogState.isOpen}
         setIsOpen={handleCloseDialog}
       />
-    </Form>
+    </ControlledForm>
   )
 }
 
@@ -130,11 +129,4 @@ function useNewsletterForm() {
     displayNotification,
     onSubmit,
   }
-}
-
-function getError(
-  errors: FieldErrors<NewsLetterFormType>,
-  name: keyof NewsLetterFormType,
-) {
-  return errors[name]?.message
 }

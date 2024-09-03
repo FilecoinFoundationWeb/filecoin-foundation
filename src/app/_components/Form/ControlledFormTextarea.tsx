@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   useFormContext,
   Controller,
@@ -7,9 +5,13 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
+import {
+  FormTextarea,
+  type FormTextareaProps,
+} from '@/components/Form/FormTextarea/FormTextarea'
 
 type ExcludedReactHookFormProps =
+  | 'characterCount'
   | 'defaultValue'
   | 'error'
   | 'onBlur'
@@ -17,20 +19,20 @@ type ExcludedReactHookFormProps =
   | 'required'
   | 'value'
 
-type BaseControlledFormInputProps = Omit<
-  FormInputProps,
+type BaseControlledFormTextareaProps = Omit<
+  FormTextareaProps,
   ExcludedReactHookFormProps
 >
 
-interface ControlledFormInputProps<FormValues extends FieldValues>
-  extends BaseControlledFormInputProps {
+interface ControlledFormTextareaProps<FormValues extends FieldValues>
+  extends BaseControlledFormTextareaProps {
   name: FieldPathByValue<FormValues, string>
 }
 
-export function ControlledFormInput<FormValues extends FieldValues>({
+export function ControlledFormTextarea<FormValues extends FieldValues>({
   name,
   ...rest
-}: ControlledFormInputProps<FormValues>) {
+}: ControlledFormTextareaProps<FormValues>) {
   const {
     control,
     formState: { errors },
@@ -41,10 +43,11 @@ export function ControlledFormInput<FormValues extends FieldValues>({
       name={name}
       control={control}
       render={({ field: { value = '', onChange, onBlur } }) => (
-        <FormInput
+        <FormTextarea
           {...rest}
           value={value}
           error={errors[name]?.message?.toString()}
+          characterCount={value.length}
           onChange={onChange}
           onBlur={onBlur}
         />
