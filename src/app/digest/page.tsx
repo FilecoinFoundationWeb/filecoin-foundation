@@ -1,5 +1,4 @@
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
-import removeMarkdown from 'remove-markdown'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -21,8 +20,6 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-
-const CONTENT_PREVIEW_CHARACTER_LENGTH = 300
 
 const { header, seo } = attributes
 const articles = getDigestArticlesDataSortedByNumber()
@@ -53,19 +50,12 @@ export default function Digest() {
       >
         <CardGrid cols="smTwo">
           {articles.map((digest) => {
-            const { title, content, image, slug, issueNumber, articleNumber } =
-              digest
-
-            const plainAndTruncatedTextContent = removeMarkdown(
-              content,
-            ).substring(0, CONTENT_PREVIEW_CHARACTER_LENGTH)
+            const { title, image, slug, issueNumber, articleNumber } = digest
 
             return (
               <Card
                 key={slug}
                 title={title}
-                description={plainAndTruncatedTextContent}
-                textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
