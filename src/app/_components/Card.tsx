@@ -2,11 +2,11 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
-import { type Author, Avatar } from '@/components/Avatar'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
+import { type Author, Avatar } from '@/components/Avatar'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
