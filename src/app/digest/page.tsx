@@ -62,7 +62,7 @@ export default function Digest() {
 
             return (
               <Card
-                key={title}
+                key={slug}
                 title={title}
                 description={plainAndTruncatedTextContent}
                 textIsClamped={true}
