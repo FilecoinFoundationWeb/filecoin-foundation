@@ -129,6 +129,17 @@ const redirects = [
 
   // ECOSYSTEM PROJECTS REDIRECTS
   {
+    source: '/ecosystem/project/bela-supernova',
+    destination:
+      '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem/muckrock',
+    destination: '/ecosystem-explorer/muckrock',
+    permanent: true,
+  },
+  {
     source: '/ecosystem-explorer/solmedia/%E2%80%A6',
     destination: '/ecosystem-explorer/solmedia',
     permanent: true,
@@ -136,12 +147,6 @@ const redirects = [
   {
     source: '/ecosystem-explorer/bildo',
     destination: '/ecosystem-explorer/bidlo',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem/project/bela-supernova',
-    destination:
-      '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
     permanent: true,
   },
 ]
