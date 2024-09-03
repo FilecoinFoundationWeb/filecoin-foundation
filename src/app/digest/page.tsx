@@ -11,8 +11,6 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 
-
-
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
@@ -21,12 +19,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-
-
-
-
 import { generateStructuredData } from './utils/generateStructuredData'
-import { sortArticlesByNumber } from './utils/sortArticlesByNumber'
 
 const { header, seo } = attributes
 const articles = getDigestArticlesData()
@@ -56,7 +49,7 @@ export default function Digest() {
         ]}
       >
         <CardGrid cols="smTwo">
-          {articles.sort(sortArticlesByNumber).map((digest) => {
+          {articles.map((digest) => {
             const { title, content, image, slug, issueNumber, articleNumber } =
               digest
 
