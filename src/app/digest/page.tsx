@@ -22,6 +22,8 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
+const CONTENT_PREVIEW_CHARACTER_LENGTH = 300
+
 const { header, seo } = attributes
 const articles = getDigestArticlesData()
 
@@ -54,11 +56,15 @@ export default function Digest() {
             const { title, content, image, slug, issueNumber, articleNumber } =
               digest
 
+            const plainAndTruncatedTextContent = removeMarkdown(
+              content,
+            ).substring(0, CONTENT_PREVIEW_CHARACTER_LENGTH)
+
             return (
               <Card
                 key={title}
                 title={title}
-                description={removeMarkdown(content)}
+                description={plainAndTruncatedTextContent}
                 textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 cta={{
