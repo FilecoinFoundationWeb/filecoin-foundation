@@ -39,7 +39,7 @@ export function formatAuthors(authors: DigestArticleData['authors']) {
         separator = ', '
       }
 
-      return `${author.firstName} ${author.lastName}${separator}, ${author.company}`
+      return `${author.firstName} ${author.lastName}, ${author.company} ${separator}`
     })
     .join('')
 }
