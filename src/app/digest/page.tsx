@@ -10,7 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticlesData } from '@/utils/getDigestArticleData'
+import { getDigestArticlesDataSortedByNumber } from '@/utils/getDigestArticleData'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -25,7 +25,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const CONTENT_PREVIEW_CHARACTER_LENGTH = 300
 
 const { header, seo } = attributes
-const articles = getDigestArticlesData()
+const articles = getDigestArticlesDataSortedByNumber()
 
 export const metadata = createMetadata({
   seo,
