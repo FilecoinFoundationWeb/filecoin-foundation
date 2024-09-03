@@ -7,7 +7,11 @@ const CONTENT_PREVIEW_CHARACTER_LENGTH = 220
 export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
   const parsedData = parseDigestArticleData(data)
   const description = generateDescription(data.content)
+    .replace(/\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
 
+  console.log({ description })
   return {
     ...parsedData,
     description,
