@@ -9,7 +9,7 @@ import {
 
 import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
 
-type ExcludedProps =
+type ExcludedReactHookFormProps =
   | 'defaultValue'
   | 'error'
   | 'onBlur'
@@ -17,10 +17,13 @@ type ExcludedProps =
   | 'required'
   | 'value'
 
-type UncontrolledInputProps = Omit<FormInputProps, ExcludedProps>
+type BaseControlledFormInputProps = Omit<
+  FormInputProps,
+  ExcludedReactHookFormProps
+>
 
 interface ControlledFormInputProps<FormValues extends FieldValues>
-  extends UncontrolledInputProps {
+  extends BaseControlledFormInputProps {
   name: FieldPathByValue<FormValues, string>
 }
 

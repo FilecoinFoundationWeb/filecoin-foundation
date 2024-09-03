@@ -9,11 +9,11 @@ import {
   ComboboxInput,
   ComboboxOption,
   ComboboxOptions,
-  Field,
 } from '@headlessui/react'
 import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
-import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
+import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 import { Icon } from '@/components/Icon'
 
 type OptionType = {
@@ -22,16 +22,19 @@ type OptionType = {
   disabled?: boolean
 }
 
-// #Q: Why do we need to exclude virtual?
-type ExcludedProps = 'virtual' | 'onClose'
-type MultipleChoice = false
+type ExcludedHeadlessUIProps = 'virtual' | 'onClose'
+type HeadlessUIMultipleChoiceProp = false
 
 export type FormComboboxProps<Value extends OptionType = OptionType> = {
   options: Array<Value>
-} & Omit<ComboboxProps<Value, MultipleChoice>, ExcludedProps> &
-  FormLabelProps
+} & Omit<
+  ComboboxProps<Value, HeadlessUIMultipleChoiceProp>,
+  ExcludedHeadlessUIProps
+> &
+  FormFieldProps
 
 export function FormCombobox<Value extends OptionType = OptionType>({
+  error,
   label,
   hideLabel,
   options,
@@ -42,10 +45,9 @@ export function FormCombobox<Value extends OptionType = OptionType>({
   const filteredOptions = filterOptions(options, query)
 
   return (
-    <Field>
-      <FormLabel label={label} hideLabel={hideLabel} />
+    <FormField error={error} label={label} hideLabel={hideLabel}>
       <div className="relative">
-        <Combobox<Value, MultipleChoice>
+        <Combobox<Value, HeadlessUIMultipleChoiceProp>
           {...rest}
           virtual={{
             options: filteredOptions,
@@ -54,8 +56,11 @@ export function FormCombobox<Value extends OptionType = OptionType>({
           onClose={resetQuery}
         >
           <ComboboxInput<Value>
-            className="peer w-full rounded-lg border border-brand-300 bg-transparent px-3.5 py-3 text-brand-300 focus:brand-outline hover:border-brand-400 data-[disabled]:cursor-not-allowed"
             displayValue={(option) => option?.name}
+            className={clsx(
+              'peer w-full rounded-lg border border-brand-300 bg-transparent px-3.5 py-3 text-brand-300 focus:brand-outline hover:border-brand-400 data-[disabled]:cursor-not-allowed',
+              error && 'border-red-400',
+            )}
             onChange={(event) => setQuery(event.target.value)}
           />
           <ComboboxButton className="absolute inset-y-0 right-0 px-2.5 text-brand-300 peer-hover:text-brand-400">
@@ -81,7 +86,7 @@ export function FormCombobox<Value extends OptionType = OptionType>({
           </ComboboxOptions>
         </Combobox>
       </div>
-    </Field>
+    </FormField>
   )
 
   function filterOptions(options: Array<Value>, query: string) {

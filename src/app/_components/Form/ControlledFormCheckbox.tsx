@@ -10,7 +10,7 @@ import {
   type FormCheckboxProps,
 } from '@/components/Form/FormCheckbox'
 
-type ExcludedProps =
+type ExcludedReactHookFormProps =
   | 'checked'
   | 'defaultChecked'
   | 'defaultValue'
@@ -19,10 +19,13 @@ type ExcludedProps =
   | 'required'
   | 'value'
 
-type UncontrolledCheckboxProps = Omit<FormCheckboxProps, ExcludedProps>
+type BaseControlledFormCheckboxProps = Omit<
+  FormCheckboxProps,
+  ExcludedReactHookFormProps
+>
 
 interface ControlledFormCheckboxProps<FormValues extends FieldValues>
-  extends UncontrolledCheckboxProps {
+  extends BaseControlledFormCheckboxProps {
   name: FieldPathByValue<FormValues, boolean>
 }
 

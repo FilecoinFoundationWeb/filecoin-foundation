@@ -1,5 +1,4 @@
 import {
-  Field,
   Listbox,
   ListboxButton,
   ListboxOption,
@@ -9,9 +8,11 @@ import {
 import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { FormError, type FormErrorProps } from '@/components/Form/FormError'
-import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
+import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 import { Icon, type IconProps } from '@/components/Icon'
+
+import { ListboxButtonText } from './ListboxButtonText'
+import { ListboxOptionText } from './ListboxOptionText'
 
 export type OptionType = {
   id: string
@@ -20,21 +21,19 @@ export type OptionType = {
   disabled?: boolean
 }
 
-type ExcludedProps = 'as' | 'className' | 'id' | 'by' | 'invalid'
+type ExcludedHeadlessUIProps = 'as' | 'className' | 'id' | 'by' | 'invalid'
 
 export type FormListboxProps<Option extends OptionType = OptionType> = {
   options: Array<Option>
   placeholder: string
   icon?: IconProps['component']
-} & Omit<ListboxProps<'div', Option>, ExcludedProps> &
-  FormLabelProps &
-  FormErrorProps
+} & Omit<ListboxProps<'div', Option>, ExcludedHeadlessUIProps> &
+  FormFieldProps
 
 export function FormListbox<Option extends OptionType = OptionType>({
   label,
   hideLabel,
   error,
-  hideError = false,
   options,
   value,
   placeholder,
@@ -42,8 +41,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
   ...rest
 }: FormListboxProps<Option>) {
   return (
-    <Field className="relative w-full">
-      <FormLabel label={label} hideLabel={hideLabel} />
+    <FormField label={label} hideLabel={hideLabel} error={error}>
       <Listbox<'div', Option>
         {...rest}
         as="div"
@@ -57,7 +55,11 @@ export function FormListbox<Option extends OptionType = OptionType>({
             error && 'border-red-400',
           )}
         >
-          <ButtonText value={value} placeholder={placeholder} icon={icon} />
+          <ListboxButtonText
+            value={value}
+            placeholder={placeholder}
+            icon={icon}
+          />
           <Icon component={CaretDown} size={16} weight="bold" />
         </ListboxButton>
         <ListboxOptions
@@ -80,33 +82,6 @@ export function FormListbox<Option extends OptionType = OptionType>({
           ))}
         </ListboxOptions>
       </Listbox>
-      <FormError error={error} hideError={hideError} />
-    </Field>
-  )
-}
-
-type ButtonTextProps = Pick<FormListboxProps, 'value' | 'placeholder' | 'icon'>
-
-function ButtonText({ value, placeholder, icon }: ButtonTextProps) {
-  return (
-    <div className="inline-flex items-center gap-2">
-      {icon && <Icon component={icon} />}
-      <span>{value?.name || placeholder}</span>
-    </div>
-  )
-}
-
-type ListboxOptionTextProps = { option: OptionType }
-
-function ListboxOptionText({ option }: ListboxOptionTextProps) {
-  const { name, count } = option
-
-  return (
-    <span>
-      {name}
-      {count !== undefined && (
-        <span className="ml-2 text-sm font-light">({count})</span>
-      )}
-    </span>
+    </FormField>
   )
 }

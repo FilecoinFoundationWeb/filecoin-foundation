@@ -9,9 +9,9 @@ import {
   FormListbox,
   type OptionType,
   type FormListboxProps,
-} from '@/components/Form/FormListbox'
+} from '@/components/Form/FormListbox/FormListbox'
 
-type ExcludedProps =
+type ExcludedReactHookFormProps =
   | 'defaultValue'
   | 'error'
   | 'onBlur'
@@ -19,10 +19,13 @@ type ExcludedProps =
   | 'required'
   | 'value'
 
-type UncontrolledListboxProps = Omit<FormListboxProps, ExcludedProps>
+type BaseControlledFormListboxProps = Omit<
+  FormListboxProps,
+  ExcludedReactHookFormProps
+>
 
 interface ControlledFormListboxProps<FormValues extends FieldValues>
-  extends UncontrolledListboxProps {
+  extends BaseControlledFormListboxProps {
   name: FieldPathByValue<FormValues, OptionType>
 }
 

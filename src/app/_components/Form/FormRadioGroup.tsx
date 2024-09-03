@@ -1,3 +1,5 @@
+import type { ElementType } from 'react'
+
 import {
   Field,
   Label,
@@ -12,24 +14,19 @@ export type RadioType = {
   disabled?: boolean
 }
 
-type ExcludedProps = 'as' | 'className'
-
-const renderAs = 'div' // #Q: Why are we excluding as but using renderAs?
+type ExcludedHeadlessUIProps = 'className'
 
 export type FormRadioInputProps<Value extends RadioType = RadioType> = {
   options: Array<Value>
-} & Omit<RadioGroupProps<typeof renderAs, Value>, ExcludedProps>
+} & Omit<RadioGroupProps<ElementType, Value>, ExcludedHeadlessUIProps>
 
-// #Q: FormRadioGroup instead of FormRadioInput?
-export function FormRadioInput<Value extends RadioType = RadioType>({
-  // as="div", // #Q
+export function FormRadioGroup<Value extends RadioType = RadioType>({
   options,
   ...rest
 }: FormRadioInputProps<Value>) {
   return (
-    <RadioGroup<typeof renderAs, Value>
+    <RadioGroup<ElementType, Value>
       {...rest}
-      as={renderAs}
       className="flex flex-wrap items-center gap-x-10 gap-y-6 data-[disabled]:cursor-not-allowed"
     >
       {options.map((option) => (

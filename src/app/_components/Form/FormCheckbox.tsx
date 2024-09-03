@@ -3,12 +3,11 @@ import { Check } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 
-type ExcludedProps = 'className'
+type ExcludedHeadlessUIProps = 'className'
 
-// #Q: Do we need to set any defaults? Like checked = false?
 export type FormCheckboxProps = {
   label: string
-} & Omit<CheckboxProps, ExcludedProps>
+} & Omit<CheckboxProps, ExcludedHeadlessUIProps>
 
 export function FormCheckbox({ label, ...rest }: FormCheckboxProps) {
   return (
@@ -17,7 +16,6 @@ export function FormCheckbox({ label, ...rest }: FormCheckboxProps) {
         {...rest}
         className="group size-5 rounded bg-brand-100 p-0.5 text-brand-100 focus:brand-outline data-[disabled]:cursor-not-allowed data-[checked]:bg-brand-400"
       >
-        {/* Why use hidden instead of opacity? */}
         <span className="hidden group-data-[checked]:block">
           <Icon component={Check} size={16} weight="bold" />
         </span>

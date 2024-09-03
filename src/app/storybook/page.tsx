@@ -7,14 +7,14 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
+import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox'
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
 import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
-import { Form } from '@/components/Form/Form'
 import { FormCombobox } from '@/components/Form/FormCombobox'
-import { FormRadioInput } from '@/components/Form/FormRadioInput'
+import { FormRadioGroup } from '@/components/Form/FormRadioGroup'
 
 const MAX_FILE_SIZE_IN_BYTES = 10_000
 const CHARACTER_LIMIT = 1_600
@@ -167,13 +167,13 @@ export default function Storybook() {
       <h1 className="mb-8 text-2xl">Uncontrolled components</h1>
 
       <div className="max-w-sm">
-        <FormRadioInput<Choice>
+        <FormRadioGroup<Choice>
           options={choices}
           value={selectedRadio}
           onChange={setSelectedRadio}
         />
       </div>
-      {/* #Q: Why does ours not start with a default like in the Tailwind example? */}
+
       <FormCombobox
         label="What is the name of your project?"
         options={cryptoProjects}
@@ -188,7 +188,7 @@ export default function Storybook() {
       <br />
       <h1 className="mb-8 text-2xl">Controlled by React Hook Form</h1>
 
-      <Form<FormData>
+      <ControlledForm<FormData>
         methods={methods}
         className="space-y-4"
         onSubmit={console.log}
@@ -234,7 +234,7 @@ export default function Storybook() {
 
         <br />
         <Button type="submit">Submit</Button>
-      </Form>
+      </ControlledForm>
     </div>
   )
 }

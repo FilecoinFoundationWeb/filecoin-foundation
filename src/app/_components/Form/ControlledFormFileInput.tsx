@@ -8,9 +8,9 @@ import {
 import {
   FormFileInput,
   type FormFileInputProps,
-} from '@/components/Form/FormFileInput'
+} from '@/components/Form/FormFileInput/FormFileInput'
 
-type ExcludedProps =
+type ExcludedReactHookFormProps =
   | 'defaultValue'
   | 'error'
   | 'files'
@@ -19,10 +19,13 @@ type ExcludedProps =
   | 'required'
   | 'value'
 
-type UncontrolledFileInputProps = Omit<FormFileInputProps, ExcludedProps>
+type BaseControlledFormFileInputProps = Omit<
+  FormFileInputProps,
+  ExcludedReactHookFormProps
+>
 
 interface ControlledFormFileInputProps<FormValues extends FieldValues>
-  extends UncontrolledFileInputProps {
+  extends BaseControlledFormFileInputProps {
   name: FieldPathByValue<FormValues, FileList>
 }
 

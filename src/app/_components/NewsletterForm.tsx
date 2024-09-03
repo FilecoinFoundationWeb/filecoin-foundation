@@ -9,8 +9,8 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 import { Button } from '@/components/Button'
+import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
-import { Form } from '@/components/Form/Form'
 import type { IconProps } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
 
@@ -36,7 +36,7 @@ export function NewsletterForm() {
     useNewsletterForm()
 
   return (
-    <Form<NewsLetterFormType>
+    <ControlledForm<NewsLetterFormType>
       methods={methods}
       className="relative"
       onSubmit={onSubmit}
@@ -52,7 +52,7 @@ export function NewsletterForm() {
             autoComplete="email"
           />
         </div>
-        <div className="flex min-w-44">
+        <div className="flex min-w-36">
           <Button type="submit" disabled={isSubmitting} className="flex-1">
             {isSubmitting ? 'Subscribing' : 'Subscribe'}
           </Button>
@@ -64,7 +64,7 @@ export function NewsletterForm() {
         isOpen={dialogState.isOpen}
         setIsOpen={handleCloseDialog}
       />
-    </Form>
+    </ControlledForm>
   )
 }
 

@@ -1,49 +1,23 @@
 import React from 'react'
 
-import {
-  Field,
-  Input,
-  type InputProps as HeadlessInputProps,
-} from '@headlessui/react'
+import { Input, type InputProps as HeadlessInputProps } from '@headlessui/react'
 import { clsx } from 'clsx'
 
-import { FormError, type FormErrorProps } from '@/components/Form/FormError'
-import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
+import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 
-type ExcludedProps = 'invalid' | 'className'
+type ExcludedHeadlessUIProps = 'invalid' | 'className'
 
-export type FormInputProps = Omit<HeadlessInputProps, ExcludedProps> &
-  FormLabelProps &
-  FormErrorProps
+export type FormInputProps = Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
+  FormFieldProps
 
 export function FormInput({
   label,
   hideLabel,
   error,
-  hideError = false,
   ...rest
 }: FormInputProps) {
   return (
-    // We need to talk about how to handle spacing - FormLabel has mb-2, Input has py-3, FormError has mt-2 - Maybe we should move the spacing to a FormField component?
-
-    // export function FormField({
-    //   label,
-    //   hideLabel,
-    //   error,
-    //   hideError,
-    //   children,
-    // }: FormInputProps & { children: React.ReactNode }) {
-    //   return (
-    //     <Field className="w-full">
-    //       <FormLabel label={label} hideLabel={hideLabel} />
-    //       {children}
-    //       <FormError error={error} hideError={hideError} />
-    //     </Field>
-    //   )
-    // }
-
-    <Field className="w-full">
-      <FormLabel label={label} hideLabel={hideLabel} />
+    <FormField label={label} hideLabel={hideLabel} error={error}>
       <Input
         {...rest}
         invalid={Boolean(error)}
@@ -52,7 +26,6 @@ export function FormInput({
           error && 'border-red-400',
         )}
       />
-      <FormError error={error} hideError={hideError} />
-    </Field>
+    </FormField>
   )
 }

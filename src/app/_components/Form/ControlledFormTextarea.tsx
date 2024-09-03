@@ -8,9 +8,9 @@ import {
 import {
   FormTextarea,
   type FormTextareaProps,
-} from '@/components/Form/FormTextarea'
+} from '@/components/Form/FormTextarea/FormTextarea'
 
-type ExcludedProps =
+type ExcludedReactHookFormProps =
   | 'characterCount'
   | 'defaultValue'
   | 'error'
@@ -19,10 +19,13 @@ type ExcludedProps =
   | 'required'
   | 'value'
 
-type UncontrolledTextareaProps = Omit<FormTextareaProps, ExcludedProps>
+type BaseControlledFormTextareaProps = Omit<
+  FormTextareaProps,
+  ExcludedReactHookFormProps
+>
 
 interface ControlledFormTextareaProps<FormValues extends FieldValues>
-  extends UncontrolledTextareaProps {
+  extends BaseControlledFormTextareaProps {
   name: FieldPathByValue<FormValues, string>
 }
 
