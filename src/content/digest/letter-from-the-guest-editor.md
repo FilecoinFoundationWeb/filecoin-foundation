@@ -8,6 +8,7 @@ article-number: 1
 authors:
   - first-name: Jonathan
     last-name: Victor
+    company: Ansa Research
 image:
   src: /assets/images/letter-from-the-guest-editor.webp
 seo:

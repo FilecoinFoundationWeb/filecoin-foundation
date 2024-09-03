@@ -8,6 +8,7 @@ article-number: 6
 authors:
   - first-name: Mara
     last-name: McMahon
+    company: DeStor
 image:
   src: /assets/images/enterprise-storage-market-insights-from-the-field.webp
 seo:

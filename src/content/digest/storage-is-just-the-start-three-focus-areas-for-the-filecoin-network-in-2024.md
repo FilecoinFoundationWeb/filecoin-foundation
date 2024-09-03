@@ -8,6 +8,7 @@ article-number: 2
 authors:
   - first-name: Molly
     last-name: Mackinlay
+    company: FilOz
 image:
   src: /assets/images/storage-is-just-the-start.webp
 seo:

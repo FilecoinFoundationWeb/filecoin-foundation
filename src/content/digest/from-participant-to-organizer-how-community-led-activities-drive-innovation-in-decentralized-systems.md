@@ -9,6 +9,7 @@ article-number: 7
 authors:
   - first-name: Irma
     last-name: Jiang
+    company: ND Labs
 image:
   src: /assets/images/from-participant-to-organizer.webp
 seo:

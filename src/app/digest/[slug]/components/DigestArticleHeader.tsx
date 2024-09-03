@@ -1,7 +1,7 @@
 import { type DigestArticleData } from '@/types/digestTypes'
 
 import { ArticleHeader } from '@/components/ArticleHeader'
-import { Avatar } from '@/components/Avatar'
+import { AvatarGroup } from '@/components/AvatarGroup'
 import { TagGroup } from '@/components/TagGroup'
 
 type DigestArticleHeaderProps = Pick<
@@ -20,7 +20,7 @@ export function DigestArticleHeader({
     <ArticleHeader image={image && { src: image.src, alt: image.alt || '' }}>
       <TagGroup label={[`Issue ${issueNumber}`, `Article ${articleNumber}`]} />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
-      <Avatar authors={authors} />
+      <AvatarGroup authors={authors} />
     </ArticleHeader>
   )
 }

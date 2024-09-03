@@ -8,6 +8,7 @@ article-number: 9
 authors:
   - first-name: Porter
     last-name: Stowell
+    company: Filecoin Foundation
 image:
   src: /assets/images/the-intelligence-economy-is-coming.webp
 seo:

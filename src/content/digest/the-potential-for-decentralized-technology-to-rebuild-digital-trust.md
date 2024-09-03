@@ -6,12 +6,12 @@ published-on: 2024-08-27T14:00:00.000Z
 issue-number: "1"
 article-number: 3
 authors:
-  - name: Sofia Yan
-    first-name: Sofia
+  - first-name: Sofia
     last-name: Yan
-  - name: Matthew Ryan
-    first-name: Matthew
-    last-name: Ryan
+    company: Numbers Protocol
+  - first-name: Ryan
+    last-name: Matthew
+    company: Numbers Protocol
 image:
   src: /assets/images/the-potential-for-decentralized-technology-to-rebuild-media-trust-and-empower-content-creators.webp
 seo:

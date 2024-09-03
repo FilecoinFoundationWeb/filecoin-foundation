@@ -384,6 +384,9 @@ collections:
                 label: "Alt Text"
                 widget: "hidden"
                 required: false
+          - name: "company"
+            label: "Company Name"
+            widget: "string"
       - *body_config
       - *image_config
       - *meta_config

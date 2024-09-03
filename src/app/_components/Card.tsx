@@ -2,11 +2,12 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
+import { type DigestArticleData } from '@/types/digestTypes'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { type Author, Avatar } from '@/components/Avatar'
+import { AvatarGroup } from '@/components/AvatarGroup'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
@@ -25,7 +26,7 @@ type CardProps = {
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
-  avatar?: Array<Author>
+  avatar?: DigestArticleData['authors']
 }
 
 type SpacingValue = keyof typeof theme.spacing
@@ -78,10 +79,14 @@ function Link({ href, ariaLabel, icon, text, left = 'left-4' }: LinkProps) {
   )
 }
 
-function CardAvatar({ authors }: { authors: Array<Author> }) {
+function CardAvatarGroup({
+  authors,
+}: {
+  authors: DigestArticleData['authors']
+}) {
   return (
     <div className="my-6">
-      <Avatar authors={authors} />
+      <AvatarGroup authors={authors} />
     </div>
   )
 }
@@ -161,7 +166,7 @@ export function Card({
             </p>
           )}
 
-          {avatar && <Card.Avatar authors={avatar} />}
+          {avatar && <Card.AvatarGroup authors={avatar} />}
 
           {cta && <Link {...cta} />}
         </div>
@@ -171,4 +176,4 @@ export function Card({
 }
 
 Card.Link = Link
-Card.Avatar = CardAvatar
+Card.AvatarGroup = CardAvatarGroup

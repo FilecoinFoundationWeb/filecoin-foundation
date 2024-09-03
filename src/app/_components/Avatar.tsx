@@ -2,26 +2,17 @@ import React from 'react'
 
 import Image from 'next/image'
 
+import { type DigestArticleData } from '@/types/digestTypes'
 import type { ImageProps } from '@/types/sharedProps/imageType'
 
 type ImagePropsWithoutAlt = Omit<ImageProps, 'alt'>
 
-export type Author = {
-  firstName: string
-  lastName: string
-  image?: ImagePropsWithoutAlt
-}
-
-export function Avatar({ authors }: { authors: Array<Author> }) {
+export function Avatar({ authors }: { authors: DigestArticleData['authors'] }) {
   const imageSize = 32
 
   if (!authors || authors.length === 0) {
     throw new Error('Avatar component requires at least one author')
   }
-
-  const authorNames = authors
-    .map((author) => `${author.firstName} ${author.lastName}`)
-    .join(' & ')
 
   function renderImage(
     firstName: string,
@@ -30,7 +21,7 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
   ) {
     return (
       <Image
-        className="inline-block rounded-full object-cover ring-brand-700"
+        className="inline-block rounded-full object-cover ring-2 ring-brand-700 ring-opacity-30"
         src={image.src}
         alt={`Photo of ${firstName} ${lastName}`}
         width={imageSize}
@@ -44,7 +35,7 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
     return (
       <div
         style={{ width: imageSize, height: imageSize }}
-        className="flex items-center justify-center rounded-full bg-brand-700 ring-1 ring-brand-700"
+        className="flex items-center justify-center rounded-full bg-brand-700 ring-2 ring-brand-700 ring-opacity-30"
         aria-label={`Initials of ${firstName} ${lastName}`}
       >
         <span className="text-sm font-medium leading-none text-brand-300">
@@ -54,7 +45,11 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
     )
   }
 
-  function renderAuthorContent({ firstName, lastName, image }: Author) {
+  function renderAuthorContent({
+    firstName,
+    lastName,
+    image,
+  }: DigestArticleData['authors'][number]) {
     return image?.src
       ? renderImage(firstName, lastName, image)
       : renderInitials(firstName, lastName)
@@ -69,7 +64,6 @@ export function Avatar({ authors }: { authors: Array<Author> }) {
           </React.Fragment>
         ))}
       </div>
-      <span className="text-sm">{authorNames}</span>
     </div>
   )
 }
