@@ -7,8 +7,6 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-
-
 import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 

@@ -1,4 +1,5 @@
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+import removeMarkdown from 'remove-markdown'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -57,7 +58,7 @@ export default function Digest() {
               <Card
                 key={title}
                 title={title}
-                description={content}
+                description={removeMarkdown(content)}
                 textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 cta={{
