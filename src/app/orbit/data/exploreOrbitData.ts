@@ -4,9 +4,10 @@ import {
   Envelope,
 } from '@phosphor-icons/react/dist/ssr'
 
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import type { IconProps } from '@/components/Icon'
 
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type ExploreOrbitData = {
   heading: {

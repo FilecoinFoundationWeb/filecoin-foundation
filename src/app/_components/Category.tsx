@@ -2,16 +2,16 @@
 
 import { useEffect, useState } from 'react'
 
+import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
+
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+import { CATEGORY_KEY } from '@/constants/searchParams'
+
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { CategoryListbox } from '@/components/CategoryListbox'
 import { CategorySidebar } from '@/components/CategorySidebar'
-
-import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
-
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
-import { CATEGORY_KEY } from '@/constants/searchParams'
 
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']

@@ -1,5 +1,6 @@
-import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
+import { PATHS } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
@@ -7,9 +8,8 @@ import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
-import { graphicsData } from '@/data/graphicsData'
-
-import { PATHS } from '@/constants/paths'
+import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4

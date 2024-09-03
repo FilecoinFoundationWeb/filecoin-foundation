@@ -6,15 +6,15 @@ import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import { useDebounceCallback } from 'usehooks-ts'
 
+import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
+import { PAGE_KEY } from '@/constants/searchParams'
+
 import { usePagination } from '@/hooks/usePagination'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
 
 import { Icon } from '@/components/Icon'
-
-import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
-import { PAGE_KEY } from '@/constants/searchParams'
 
 type PaginationProps = {
   pageCount: ReturnType<typeof usePagination>['pageCount']

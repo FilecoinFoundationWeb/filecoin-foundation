@@ -2,13 +2,13 @@ import { useMemo } from 'react'
 
 import { isBefore } from 'date-fns'
 
-import { type UseCategoryProps, useCategory } from '@/hooks/useCategory'
-
 import type { Event } from '@/types/eventType'
+
+import { pastEventsOption } from '@/constants/categoryConstants'
 
 import { getUTCMidnightToday } from '@/utils/dateUtils'
 
-import { pastEventsOption } from '@/constants/categoryConstants'
+import { type UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
 export function useEventsCategory(props: UseCategoryProps<Event>) {
   const { entries, searchParams, validCategoryIds } = props

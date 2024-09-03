@@ -2,9 +2,9 @@ import Image, { type ImageProps } from 'next/image'
 
 import { clsx } from 'clsx'
 
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-
 import type { ImageObjectFit } from '@/types/sharedProps/imageType'
+
+import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 export type DynamicImageProps = {
   src: string

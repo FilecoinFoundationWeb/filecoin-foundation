@@ -3,10 +3,10 @@ import { z } from 'zod'
 import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
 import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
+import { pastEventsOption } from '@/constants/categoryConstants'
+
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
-
-import { pastEventsOption } from '@/constants/categoryConstants'
 
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName

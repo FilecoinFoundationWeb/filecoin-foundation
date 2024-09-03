@@ -1,11 +1,11 @@
 import { z } from 'zod'
 
-import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
-
 import {
   getCategorySettings,
   createCategorySchema,
 } from '@/utils/categoryUtils'
+
+import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
 
 const { validCategoryIds } = getCategorySettings('blog_posts')
 

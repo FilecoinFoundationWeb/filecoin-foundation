@@ -5,9 +5,9 @@ import slugify from 'slugify'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
-
 import { SEARCH_KEY } from '@/constants/searchParams'
+
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 type UseSearchProps<Entry extends Object> = {
   searchParams: NextServerSearchParams

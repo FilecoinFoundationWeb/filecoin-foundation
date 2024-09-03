@@ -3,20 +3,20 @@
 import { Listbox } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from '@/components/Icon'
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
-import { ListboxOptions } from '@/components/ListboxOptions'
-
 import {
   type CategoryCounts,
   type CategoryId,
   type CategoryOption,
 } from '@/types/categoryTypes'
 
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+
 import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+import { Icon } from '@/components/Icon'
+import { ListboxButton } from '@/components/ListboxButton'
+import { ListboxOption } from '@/components/ListboxOption'
+import { ListboxOptions } from '@/components/ListboxOptions'
 
 type CategoryListboxProps = {
   selected: CategoryId | undefined

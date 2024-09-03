@@ -1,8 +1,8 @@
+import { type DigestArticleData } from '@/types/digestTypes'
+
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { Avatar } from '@/components/Avatar'
 import { TagGroup } from '@/components/TagGroup'
-
-import { type DigestArticleData } from '@/types/digestTypes'
 
 type DigestArticleHeaderProps = Pick<
   DigestArticleData,

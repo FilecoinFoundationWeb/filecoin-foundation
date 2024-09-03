@@ -1,8 +1,8 @@
 import { clsx } from 'clsx'
 
-import { Button } from '@/components/Button'
-
 import type { CTAProps } from '@/types/sharedProps/ctaType'
+
+import { Button } from '@/components/Button'
 
 export type CTAButtonGroupProps = {
   cta: CTAProps | [CTAProps, CTAProps]

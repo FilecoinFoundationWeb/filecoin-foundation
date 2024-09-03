@@ -3,6 +3,10 @@ import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type Author, Avatar } from '@/components/Avatar'
+import { type CTAProps } from '@/types/sharedProps/ctaType'
+
+import { isExternalLink } from '@/utils/linkUtils'
+
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
@@ -10,10 +14,6 @@ import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
-
-import { type CTAProps } from '@/types/sharedProps/ctaType'
-
-import { isExternalLink } from '@/utils/linkUtils'
 
 type CardProps = {
   title: string | React.ReactNode

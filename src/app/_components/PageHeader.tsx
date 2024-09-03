@@ -1,5 +1,7 @@
 import { clsx } from 'clsx'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
 import {
   type CTAButtonGroupProps,
   CTAButtonGroup,
@@ -13,8 +15,6 @@ import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
 import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type TitleProps = {
   children: string

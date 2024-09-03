@@ -7,14 +7,14 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
+import { PATHS } from '@/constants/paths'
+
+import { desktopNavigationItems } from '@/data/components/navigationData'
+
 import { useNavigationItems } from '@/hooks/useNavigationItems'
 
 import { Icon } from '@/components/Icon'
 import { NavigationPopover } from '@/components/NavigationPopover'
-
-import { desktopNavigationItems } from '@/data/components/navigationData'
-
-import { PATHS } from '@/constants/paths'
 
 type MainNavItemProps = {
   href: Route

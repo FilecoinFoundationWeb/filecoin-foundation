@@ -4,9 +4,9 @@ import { Listbox } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
-import { Icon } from '@/components/Icon'
-
 import { type CategoryCounts } from '@/types/categoryTypes'
+
+import { Icon } from '@/components/Icon'
 
 type Option = {
   id: string

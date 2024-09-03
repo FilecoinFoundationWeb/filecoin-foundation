@@ -1,3 +1,12 @@
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/governance.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
@@ -7,15 +16,6 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
-
-import { createMetadata } from '@/utils/createMetadata'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/governance.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'

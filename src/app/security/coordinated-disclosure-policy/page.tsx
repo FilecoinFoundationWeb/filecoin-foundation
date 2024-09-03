@@ -1,14 +1,14 @@
-import { PageHeader } from '@/components/PageHeader'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { createMetadata } from '@/utils/createMetadata'
+import { PATHS } from '@/constants/paths'
 
 import {
   attributes,
   react as Content,
 } from '@/content/pages/security/coordinated-disclosure-policy.md'
 
-import { PATHS } from '@/constants/paths'
+import { createMetadata } from '@/utils/createMetadata'
+
+import { PageHeader } from '@/components/PageHeader'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 

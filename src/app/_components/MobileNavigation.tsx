@@ -8,16 +8,16 @@ import { ArrowUpRight, List, X } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
+import { mobileNavigationItems } from '@/constants/navigationItems'
+import { PATHS } from '@/constants/paths'
+
+import { isExternalLink } from '@/utils/linkUtils'
+
 import { Icon, type IconProps } from '@/components/Icon'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
 import { linkBaseStyles } from '@/components/TextLink'
-
-import { isExternalLink } from '@/utils/linkUtils'
-
-import { mobileNavigationItems } from '@/constants/navigationItems'
-import { PATHS } from '@/constants/paths'
 
 type IconButtonProps = {
   icon: IconProps['component']

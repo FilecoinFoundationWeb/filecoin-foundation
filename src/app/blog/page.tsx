@@ -4,6 +4,23 @@ import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
+import { type NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+
+import { attributes } from '@/content/pages/blog.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
+import { getBlogPostMetaData } from '@/utils/getMetaData'
+import { getSortOptions } from '@/utils/getSortOptions'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
@@ -21,23 +38,6 @@ import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { type NextServerSearchParams } from '@/types/searchParams'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
-import { getBlogPostMetaData } from '@/utils/getMetaData'
-import { getSortOptions } from '@/utils/getSortOptions'
-import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/blog.md'
-
-import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 

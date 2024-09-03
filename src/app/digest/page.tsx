@@ -1,5 +1,18 @@
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { attributes } from '@/content/pages/digest.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { createMetadata } from '@/utils/createMetadata'
+import { getDigestArticlesData } from '@/utils/getDigestArticleData'
+
+
+
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
@@ -8,16 +21,9 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 
-import { graphicsData } from '@/data/graphicsData'
 
-import { attributes } from '@/content/pages/digest.md'
 
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 import { sortArticlesByNumber } from './utils/sortArticlesByNumber'

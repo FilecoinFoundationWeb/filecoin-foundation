@@ -4,6 +4,26 @@ import dynamic from 'next/dynamic'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
+import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
+
+import { attributes } from '@/content/pages/events.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import {
+  getEventsCategorySettings,
+  getCategoryLabel,
+} from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { getEventData, getEventsData } from '@/utils/getEventData'
+import { getEventMetaData } from '@/utils/getMetaData'
+import { getSortOptions } from '@/utils/getSortOptions'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
 import { useEventsCategory } from '@/hooks/useEventsCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
@@ -22,26 +42,6 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import {
-  getEventsCategorySettings,
-  getCategoryLabel,
-} from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { getEventData, getEventsData } from '@/utils/getEventData'
-import { getEventMetaData } from '@/utils/getMetaData'
-import { getSortOptions } from '@/utils/getSortOptions'
-import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
-
-import { graphicsData } from '@/data/graphicsData'
-
-import { attributes } from '@/content/pages/events.md'
-
-import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
