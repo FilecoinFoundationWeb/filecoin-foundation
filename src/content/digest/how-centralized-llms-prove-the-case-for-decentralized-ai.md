@@ -8,6 +8,7 @@ article-number: 5
 authors:
   - first-name: Tom
     last-name: Trowbridge
+    company: Fluence
 image:
   src: /assets/images/how-centralized-llms-prove-the-case-for-decentralized-ai.webp
 seo:
