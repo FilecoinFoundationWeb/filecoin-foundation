@@ -10,7 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticlesData } from '@/utils/getDigestArticleData'
+import { getDigestArticlesDataSortedByNumber } from '@/utils/getDigestArticleData'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -22,8 +22,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
+const CONTENT_PREVIEW_CHARACTER_LENGTH = 300
+
 const { header, seo } = attributes
-const articles = getDigestArticlesData()
+const articles = getDigestArticlesDataSortedByNumber()
 
 export const metadata = createMetadata({
   seo,
@@ -54,11 +56,15 @@ export default function Digest() {
             const { title, content, image, slug, issueNumber, articleNumber } =
               digest
 
+            const plainAndTruncatedTextContent = removeMarkdown(
+              content,
+            ).substring(0, CONTENT_PREVIEW_CHARACTER_LENGTH)
+
             return (
               <Card
-                key={title}
+                key={slug}
                 title={title}
-                description={removeMarkdown(content)}
+                description={plainAndTruncatedTextContent}
                 textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 cta={{

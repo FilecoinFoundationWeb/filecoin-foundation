@@ -8,19 +8,21 @@ export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
     publishedOn: data['published-on'],
     issueNumber: data['issue-number'],
     articleNumber: data['article-number'],
-    authors: data.authors?.map((author: Record<string, any>) => ({
-      firstName: author['first-name'],
-      lastName: author['last-name'],
-      image: author.image
-        ? {
-            src: author.image.src,
-            alt: author.image.alt,
-          }
-        : undefined,
-      company: author['company'],
-    })),
+    authors: data.authors?.map(mapAuthor),
+
     content: data.content,
     image: data.image,
     seo: data.seo,
   })
+}
+
+function mapAuthor(author: Record<string, any>) {
+  return {
+    firstName: author['first-name'],
+    lastName: author['last-name'],
+    image: author.image
+      ? { src: author.image.src, alt: author.image.alt }
+      : undefined,
+    company: author['company'],
+  }
 }
