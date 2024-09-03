@@ -56,14 +56,12 @@ export function Avatar({ authors }: { authors: DigestArticleData['authors'] }) {
   }
 
   return (
-    <div className="flex items-center space-x-2 text-brand-100">
-      <div className="flex -space-x-1">
-        {authors.map((author) => (
-          <React.Fragment key={`${author.firstName}-${author.lastName}`}>
-            {renderAuthorContent(author)}
-          </React.Fragment>
-        ))}
-      </div>
+    <div className="flex -space-x-1">
+      {authors.map((author) => (
+        <React.Fragment key={`${author.firstName}-${author.lastName}`}>
+          {renderAuthorContent(author)}
+        </React.Fragment>
+      ))}
     </div>
   )
 }
