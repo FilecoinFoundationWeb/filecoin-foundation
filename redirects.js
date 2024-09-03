@@ -1,13 +1,30 @@
 const redirects = [
   // PAGE REDIRECTS
-  { source: '/board', destination: '/about', permanent: true },
-  { source: '/careers', destination: '/about', permanent: true },
+  {
+    source: '/admin',
+    destination: '/admin/index.html',
+    permanent: true,
+  },
+  {
+    source: '/board',
+    destination: '/about',
+    permanent: true,
+  },
+  {
+    source: '/careers',
+    destination: '/about',
+    permanent: true,
+  },
   {
     source: '/community',
     destination: '/ecosystem-explorer',
     permanent: true,
   },
-  { source: '/contact', destination: '/about', permanent: true },
+  {
+    source: '/contact',
+    destination: '/about',
+    permanent: true,
+  },
   {
     source: '/davos',
     destination: '/events/the-filecoin-sanctuary-davos-2024',
@@ -39,18 +56,26 @@ const redirects = [
     permanent: true,
   },
   {
+    source: '/filplus',
+    destination: '/filecoin-plus',
+    permanent: true,
+  },
+  {
     source: '/filplus/%20%22Filecoin%20Plus%22',
     destination: '/filecoin-plus',
     permanent: true,
   },
-  { source: '/filplus', destination: '/filecoin-plus', permanent: true },
   {
     source: '/fips',
     destination:
       '/blog/participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips',
     permanent: true,
   },
-  { source: '/get-involved', destination: '/', permanent: true },
+  {
+    source: '/get-involved',
+    destination: '/',
+    permanent: true,
+  },
   {
     source: '/governance/fips/:path*',
     destination: '/governance',
@@ -61,21 +86,44 @@ const redirects = [
     destination: '/governance',
     permanent: true,
   },
-  { source: '/philosophy', destination: '/about', permanent: true },
-  { source: '/policy', destination: '/privacy-policy', permanent: true },
-  { source: '/public-data', destination: '/', permanent: true },
-  { source: '/public-data/:path*', destination: '/', permanent: true },
-  { source: '/publicdata/awards', destination: '/grants', permanent: true },
+  {
+    source: '/philosophy',
+    destination: '/about',
+    permanent: true,
+  },
+  {
+    source: '/policy',
+    destination: '/privacy-policy',
+    permanent: true,
+  },
+  {
+    source: '/public-data',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/public-data/:path*',
+    destination: '/',
+    permanent: true,
+  },
+  {
+    source: '/publicdata/awards',
+    destination: '/grants',
+    permanent: true,
+  },
   {
     source: '/research/research-text.htm',
     destination: '/',
     permanent: true,
   },
-  { source: '/team', destination: '/about', permanent: true },
-  { source: '/terms', destination: '/terms-of-use', permanent: true },
   {
-    source: '/admin',
-    destination: '/admin/index.html',
+    source: '/team',
+    destination: '/about',
+    permanent: true,
+  },
+  {
+    source: '/terms',
+    destination: '/terms-of-use',
     permanent: true,
   },
 
@@ -129,14 +177,8 @@ const redirects = [
 
   // ECOSYSTEM PROJECTS REDIRECTS
   {
-    source: '/ecosystem/project/bela-supernova',
-    destination:
-      '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
-    permanent: true,
-  },
-  {
-    source: '/ecosystem/muckrock',
-    destination: '/ecosystem-explorer/muckrock',
+    source: '/ecosystem-explorer/bildo',
+    destination: '/ecosystem-explorer/bidlo',
     permanent: true,
   },
   {
@@ -145,8 +187,14 @@ const redirects = [
     permanent: true,
   },
   {
-    source: '/ecosystem-explorer/bildo',
-    destination: '/ecosystem-explorer/bidlo',
+    source: '/ecosystem/muckrock',
+    destination: '/ecosystem-explorer/muckrock',
+    permanent: true,
+  },
+  {
+    source: '/ecosystem/project/bela-supernova',
+    destination:
+      '/blog/bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle',
     permanent: true,
   },
 
