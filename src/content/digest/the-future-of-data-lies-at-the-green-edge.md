@@ -8,6 +8,7 @@ article-number: 8
 authors:
   - first-name: Heath
     last-name: Behncke
+    company: Holon Investments
 image:
   src: /assets/images/the-future-of-data-is-green-edge.webp
 seo:
