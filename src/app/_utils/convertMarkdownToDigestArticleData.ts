@@ -6,12 +6,8 @@ const CONTENT_PREVIEW_CHARACTER_LENGTH = 220
 
 export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
   const parsedData = parseDigestArticleData(data)
-  const description = generateDescription(data.content)
-    .replace(/\n+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
+  const description = generatePreviewDescription(data.content)
 
-  console.log({ description })
   return {
     ...parsedData,
     description,
@@ -26,24 +22,45 @@ function parseDigestArticleData(data: Record<string, any>) {
     publishedOn: data['published-on'],
     issueNumber: data['issue-number'],
     articleNumber: data['article-number'],
-    authors: data.authors?.map(mapAuthor),
+    authors: mapAuthors(data.authors),
     content: data.content,
     image: data.image,
     seo: data.seo,
   })
 }
 
+function mapAuthors(authors: Array<Record<string, any>>) {
+  return authors?.map(mapAuthor)
+}
+
 function mapAuthor(author: Record<string, any>) {
   return {
     firstName: author['first-name'],
     lastName: author['last-name'],
-    image: author.image
-      ? { src: author.image.src, alt: author.image.alt }
-      : undefined,
+    image: author.image ? mapAuthorImage(author.image) : undefined,
     company: author['company'],
   }
 }
 
-function generateDescription(content: string) {
-  return removeMarkdown(content).substring(0, CONTENT_PREVIEW_CHARACTER_LENGTH)
+function mapAuthorImage(image: Record<string, any>) {
+  return {
+    src: image.src,
+    alt: image.alt,
+  }
+}
+
+function generatePreviewDescription(content: string) {
+  const markdownFreeContent = removeMarkdown(content)
+  const formattedContent = markdownFreeContent.substring(
+    0,
+    CONTENT_PREVIEW_CHARACTER_LENGTH,
+  )
+  return cleanText(formattedContent)
+}
+
+function cleanText(text: string) {
+  return text
+    .replace(/\n+/g, ' ') // Replace newlines with a single space
+    .replace(/\s+/g, ' ') // Normalize multiple spaces
+    .trim()
 }
