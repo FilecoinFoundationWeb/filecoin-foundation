@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   useFormContext,
   Controller,
@@ -7,7 +5,11 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
+import {
+  FormListbox,
+  type OptionType,
+  type FormListboxProps,
+} from '@/components/Form/FormListbox/FormListbox'
 
 type ExcludedReactHookFormProps =
   | 'defaultValue'
@@ -17,20 +19,20 @@ type ExcludedReactHookFormProps =
   | 'required'
   | 'value'
 
-type BaseControlledFormInputProps = Omit<
-  FormInputProps,
+type BaseControlledFormListboxProps = Omit<
+  FormListboxProps,
   ExcludedReactHookFormProps
 >
 
-interface ControlledFormInputProps<FormValues extends FieldValues>
-  extends BaseControlledFormInputProps {
-  name: FieldPathByValue<FormValues, string>
+interface ControlledFormListboxProps<FormValues extends FieldValues>
+  extends BaseControlledFormListboxProps {
+  name: FieldPathByValue<FormValues, OptionType>
 }
 
-export function ControlledFormInput<FormValues extends FieldValues>({
+export function ControlledFormListbox<FormValues extends FieldValues>({
   name,
   ...rest
-}: ControlledFormInputProps<FormValues>) {
+}: ControlledFormListboxProps<FormValues>) {
   const {
     control,
     formState: { errors },
@@ -40,8 +42,8 @@ export function ControlledFormInput<FormValues extends FieldValues>({
     <Controller
       name={name}
       control={control}
-      render={({ field: { value = '', onChange, onBlur } }) => (
-        <FormInput
+      render={({ field: { value, onChange, onBlur } }) => (
+        <FormListbox
           {...rest}
           value={value}
           error={errors[name]?.message?.toString()}

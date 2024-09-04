@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   useFormContext,
   Controller,
@@ -7,30 +5,34 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
+import {
+  FormFileInput,
+  type FormFileInputProps,
+} from '@/components/Form/FormFileInput/FormFileInput'
 
 type ExcludedReactHookFormProps =
   | 'defaultValue'
   | 'error'
+  | 'files'
   | 'onBlur'
   | 'onChange'
   | 'required'
   | 'value'
 
-type BaseControlledFormInputProps = Omit<
-  FormInputProps,
+type BaseControlledFormFileInputProps = Omit<
+  FormFileInputProps,
   ExcludedReactHookFormProps
 >
 
-interface ControlledFormInputProps<FormValues extends FieldValues>
-  extends BaseControlledFormInputProps {
-  name: FieldPathByValue<FormValues, string>
+interface ControlledFormFileInputProps<FormValues extends FieldValues>
+  extends BaseControlledFormFileInputProps {
+  name: FieldPathByValue<FormValues, FileList>
 }
 
-export function ControlledFormInput<FormValues extends FieldValues>({
+export function ControlledFormFileInput<FormValues extends FieldValues>({
   name,
   ...rest
-}: ControlledFormInputProps<FormValues>) {
+}: ControlledFormFileInputProps<FormValues>) {
   const {
     control,
     formState: { errors },
@@ -40,13 +42,12 @@ export function ControlledFormInput<FormValues extends FieldValues>({
     <Controller
       name={name}
       control={control}
-      render={({ field: { value = '', onChange, onBlur } }) => (
-        <FormInput
+      render={({ field: { value, onChange } }) => (
+        <FormFileInput
           {...rest}
-          value={value}
+          files={value}
           error={errors[name]?.message?.toString()}
           onChange={onChange}
-          onBlur={onBlur}
         />
       )}
     />

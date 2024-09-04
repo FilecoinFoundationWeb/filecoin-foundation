@@ -16,10 +16,9 @@ export function getDigestArticleData(slug: string) {
 }
 
 export function getDigestArticlesData() {
-  const data = getAllData(
-    DIGEST_DIRECTORY_PATH,
-    convertMarkdownToDigestArticleData,
-  )
+  return getAllData(DIGEST_DIRECTORY_PATH, convertMarkdownToDigestArticleData)
+}
 
-  return data.sort(sortArticlesByNumber)
+export function getDigestArticlesDataSortedByNumber() {
+  return getDigestArticlesData().sort(sortArticlesByNumber)
 }
