@@ -8,7 +8,7 @@ article-number: 3
 authors:
   - first-name: Sofia
     last-name: Yan
-    company: Co-founder and CGO, Numbers Protocol
+    company: Numbers Protocol
   - first-name: Ryan
     last-name: Matthew
     company: Technology Communications Consultant
