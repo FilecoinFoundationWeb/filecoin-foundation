@@ -1,3 +1,5 @@
+import dynamic from 'next/dynamic'
+
 import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/maturity-model.md'
@@ -17,6 +19,14 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { CoreFunctions } from './components/CoreFunctions'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
+
+const DynamicTableOfContent = dynamic(
+  () =>
+    import('./components/TableOfContent').then(
+      (module) => module.TableOfContent,
+    ),
+  { ssr: false },
+)
 
 const { header, seo } = attributes
 
@@ -63,10 +73,18 @@ export default function MaturityModel() {
       </PageSection>
 
       <PageSection
+        fullWidth
         kicker="Building Blocks of Security"
         title="Explore the Core Functions"
       >
-        <CoreFunctions />
+        <div className="flex flex-col gap-8 lg:relative lg:flex-row lg:items-start lg:gap-12">
+          <div className="grow">
+            <CoreFunctions />
+          </div>
+          <div className="order-first lg:sticky lg:top-12 lg:order-last lg:w-72">
+            <DynamicTableOfContent />
+          </div>
+        </div>
       </PageSection>
     </PageLayout>
   )
