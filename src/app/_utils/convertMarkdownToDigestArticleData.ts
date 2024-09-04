@@ -22,27 +22,27 @@ function parseDigestArticleData(data: Record<string, any>) {
     publishedOn: data['published-on'],
     issueNumber: data['issue-number'],
     articleNumber: data['article-number'],
-    authors: formatAuthors(data.authors),
+    authors: mapAuthors(data.authors),
     content: data.content,
     image: data.image,
     seo: data.seo,
   })
 }
 
-function formatAuthors(authors: Array<Record<string, any>>) {
-  return authors?.map(formatAuthor)
+function mapAuthors(authors: Array<Record<string, any>>) {
+  return authors?.map(mapAuthor)
 }
 
-function formatAuthor(author: Record<string, any>) {
+function mapAuthor(author: Record<string, any>) {
   return {
     firstName: author['first-name'],
     lastName: author['last-name'],
-    image: author.image ? formatAuthorImage(author.image) : undefined,
+    image: author.image ? mapAuthorImage(author.image) : undefined,
     company: author['company'],
   }
 }
 
-function formatAuthorImage(image: Record<string, any>) {
+function mapAuthorImage(image: Record<string, any>) {
   return {
     src: image.src,
     alt: image.alt,
