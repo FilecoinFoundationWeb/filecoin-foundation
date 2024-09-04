@@ -15,11 +15,8 @@ seo:
   twitter:
     title: summary
     card: summary
-  title: "The Future of Data Lies at the Green Edge: Embracing Sustainable Web 3.0
-    Solutions"
-  description: Explore how green data centers and decentralized infrastructure are
-    driving sustainable growth in the Web 3.0 era, meeting the massive demands
-    of future data management.
+  title: "The Future of Data Lies at the Green Edge"
+  description: "As we move into the era of digital autonomy, driven by machines and machine-generated data, we need to vastly improve the world’s capacity to manage and process data at a scale previously unimaginable. At Holon..."
 ---
 
 As we move into the era of digital autonomy, driven by machines and machine-generated data, we need to vastly improve the world’s capacity to manage and process data at a scale previously unimaginable. At Holon, we believe the intersection of data infrastructure and green energy needs to be re-imagined and re-focused on commercial applications to enable significant, sustainable productivity gains and information resiliency for humanity.

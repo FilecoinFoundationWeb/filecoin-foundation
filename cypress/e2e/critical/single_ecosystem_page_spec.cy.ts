@@ -1,4 +1,5 @@
 import { PATHS } from '@/constants/paths'
+
 import { getRandomSlug } from '@/support/getRandomSlugUtil'
 import { verifyMetadata } from '@/support/verifyMetadataUtil'
 

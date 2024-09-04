@@ -15,14 +15,13 @@ seo:
   twitter:
     title: summary
     card: summary
-  title: "Letter from the Guest Editor: Welcome to The Filecoin Ecosystem Digest"
-  description: Discover the transformative impact of the decentralized web in our
-    first issue, with insights on AI, space economy, sustainability, and more,
-    curated by Jonathan Victor.
+  title: "Letter from the Guest Editor"
+  description: "Dear Readers, Welcome to the inaugural edition of The Filecoin Ecosystem Digest: All Systems Go - a journey into the transformative power of the decentralized web and its far-reaching implications across various..."
 ---
+
 Dear Readers,
 
-Welcome to the inaugural edition of *The Filecoin Ecosystem Digest: All Systems Go* - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
+Welcome to the inaugural edition of _The Filecoin Ecosystem Digest: All Systems Go_ - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
 
 In this issue, we aim to spotlight the intersection of decentralized infrastructure with a number of key emerging trends - from the role of decentralized architectures in AI, to the rise of the space economy, to how sustainability intersects with the future of data centers, and more.
 
