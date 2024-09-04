@@ -8,10 +8,10 @@ article-number: 3
 authors:
   - first-name: Sofia
     last-name: Yan
-    company: Numbers Protocol
+    company: Co-founder and CGO, Numbers Protocol
   - first-name: Ryan
     last-name: Matthew
-    company: Numbers Protocol
+    company: technology communications consultant and analyst
 image:
   src: /assets/images/the-potential-for-decentralized-technology-to-rebuild-media-trust-and-empower-content-creators.webp
 seo:
