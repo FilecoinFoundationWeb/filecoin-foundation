@@ -1,6 +1,7 @@
 import type { StaticImageProps } from '@/components/StaticImage'
 
 import about from '@/assets/graphics/Filorg_About.png'
+import digestCoverIssue1 from '@/assets/graphics/Filorg_Digest_Cover_Issue_1.webp'
 import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.png'
 import events1 from '@/assets/graphics/Filorg_Events1.png'
 import events2 from '@/assets/graphics/Filorg_Events2.png'
@@ -31,6 +32,10 @@ export const graphicsData: Record<string, StaticImageProps> = {
   about: {
     data: about,
     alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
+  },
+  digest: {
+    data: digestCoverIssue1,
+    alt: 'Cover of the Filecoin Ecosystem Digest showing a stylized globe with interconnected nodes representing a global network. The Filecoin logo appears at the top left, and the background has a gradient of soft blues, pinks, and oranges with light effects symbolizing data flow and connectivity.',
   },
   ecosystem: {
     data: ecosystem,
