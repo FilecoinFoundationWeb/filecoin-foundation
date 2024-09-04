@@ -8,7 +8,7 @@ article-number: 5
 authors:
   - first-name: Mara
     last-name: McMahon
-    company: DeStor
+    company: Co-founder and Chief Strategy Officer, DeStor
 image:
   src: /assets/images/enterprise-storage-market-insights-from-the-field.webp
 seo:
