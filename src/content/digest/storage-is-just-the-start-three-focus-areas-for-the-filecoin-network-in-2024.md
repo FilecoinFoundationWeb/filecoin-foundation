@@ -8,15 +8,14 @@ article-number: 2
 authors:
   - first-name: Molly
     last-name: Mackinlay
-    company: FilOz
+    company: CEO, FilOz
 image:
   src: /assets/images/storage-is-just-the-start.webp
 seo:
   twitter:
     title: summary
     card: summary
-  title:
-    "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
+  title: "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
     2024"
   description: Filecoin, the largest decentralized storage network, secures 1.5
     exbibytes of data across 3,000 providers. By 2025, it will lead in AI, Web3
