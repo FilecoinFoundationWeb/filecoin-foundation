@@ -18,9 +18,7 @@ seo:
   title:
     "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
     2024"
-  description: Filecoin, the largest decentralized storage network, secures 1.5
-    exbibytes of data across 3,000 providers. By 2025, it will lead in AI, Web3
-    storage, and economic scaling, driving the future of decentralized data.
+  description: "Data storage and retrieval are core to how the Internet works. Today’s data infrastructure is dominated by Big Tech. But technologies like the InterPlanetary File System (IPFS) and Filecoin..."
 ---
 
 Data storage and retrieval are core to how the Internet works. Today’s [data infrastructure](https://www.pcmag.com/news/four-companies-control-67-of-the-worlds-cloud-infrastructure) is dominated by Big Tech. But technologies like the InterPlanetary File System (IPFS) and Filecoin re-architecture that centralized framework to store humanity’s information on a decentralized network of storage providers.

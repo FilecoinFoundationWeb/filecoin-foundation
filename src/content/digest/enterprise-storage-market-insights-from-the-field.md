@@ -15,12 +15,10 @@ seo:
   twitter:
     title: summary
     card: summary
-  title: "Enterprise Storage Market Insights: Navigating Decentralized Solutions"
-  description: Explore DeStor's insights on enterprise adoption of decentralized
-    storage, highlighting key concerns like data security, privacy, and
-    integration complexity. Learn how to leverage Filecoin solutions
-    effectively.
+  title: "Enterprise Storage Market Insights From the Field"
+  description: "At DeStor, we are dedicated to revolutionizing decentralized storage solutions by seamlessly integrating them with enterprise applications. With over 50 years of combined experience in enterprise data storage, our..."
 ---
+
 At DeStor, we are dedicated to revolutionizing decentralized storage solutions by seamlessly integrating them with enterprise applications. With over 50 years of combined experience in enterprise data storage, our team has a deep understanding of this segment of the decentralized storage market. We specialize in connecting data owners with Filecoin storage providers through an intuitive and transparent platform.
 
 Why focus on the enterprise market? According to [Veritas](https://web.archive.org/web/20240126025856/https://www.veritas.com/resources/dark-data), the average enterprise has 10 petabytes of data, making even small gains in this sector translate into significant revenue for Filecoin storage providers.
