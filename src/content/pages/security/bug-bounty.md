@@ -8,5 +8,5 @@ header:
     ]
 seo:
   title: "Bug Bounty Program"
-  description: Filecoin Foundation is deeply committed to the integrity and security of the Filecoin network. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities.
+  description: Contribute to the security of the Filecoin network and earn up to $150,000 by reporting critical vulnerabilities. We've already paid out over $400,000 in rewards.
 ---

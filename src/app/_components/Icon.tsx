@@ -1,10 +1,10 @@
-import type { Icon } from '@phosphor-icons/react'
+import type { Icon, IconWeight } from '@phosphor-icons/react'
 
 export type IconProps = {
   component: Icon
   color?: keyof typeof colorStyles
   size?: number
-  weight?: 'light' | 'regular' | 'bold'
+  weight?: IconWeight
 }
 
 const colorStyles = {

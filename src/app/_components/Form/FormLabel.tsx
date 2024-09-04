@@ -5,15 +5,15 @@ import { clsx } from 'clsx'
 
 export type FormLabelProps = {
   label: string
-  isHidden?: boolean
+  hideLabel?: boolean
 }
 
-export function FormLabel({ label, isHidden = false }: FormLabelProps) {
+export function FormLabel({ label, hideLabel = false }: FormLabelProps) {
   return (
     <Label
       className={clsx(
-        'text-base font-bold capitalize text-brand-100',
-        isHidden && 'sr-only',
+        'inline-block text-base font-bold capitalize text-brand-100',
+        hideLabel && 'sr-only',
       )}
     >
       {label}

@@ -1,5 +1,5 @@
 ---
-title: Interplanetary Resiliance
+title: Interplanetary Resilience
 created-on: 2024-08-27T14:37:00.000Z
 updated-on: 2024-08-27T14:37:00.000Z
 published-on: 2024-08-27T14:37:00.000Z
@@ -8,17 +8,16 @@ article-number: 4
 authors:
   - first-name: Dietrich
     last-name: Ayala
+    company: Filecoin Foundation
 image:
   src: /assets/images/interplanetary-resilience.webp
 seo:
   twitter:
     title: summary
     card: summary
-  title: "Interplanetary Resilience: IPFS Paves the Way for Secure Space
+  title: "Interplanetary Resilience
     Communication"
-  description: Learn how Filecoin's IPFS supports cryptographically verifiable,
-    transport-agnostic data storage, enhancing resilient and secure
-    communication for the future of space exploration.
+  description: "The vision of Filecoin is of verifiably robust storage of data scaling to meet the needs of humanity over centuries. In order to achieve this vision we need to _literally_ aim for the stars. We’re at a turning..."
 ---
 
 The vision of Filecoin is of verifiably robust storage of data scaling to meet the needs of humanity over centuries. In order to achieve this vision we need to _literally_ aim for the stars.

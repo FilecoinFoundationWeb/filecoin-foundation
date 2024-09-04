@@ -4,26 +4,24 @@ created-on: 2024-08-27T16:05:00.000Z
 updated-on: 2024-08-27T16:05:00.000Z
 published-on: 2024-08-27T16:05:00.000Z
 issue-number: "1"
-article-number: 6
+article-number: 5
 authors:
   - first-name: Mara
     last-name: McMahon
+    company: DeStor
 image:
   src: /assets/images/enterprise-storage-market-insights-from-the-field.webp
 seo:
   twitter:
     title: summary
     card: summary
-  title: "Enterprise Storage Market Insights: Navigating Decentralized Solutions"
-  description: Explore DeStor's insights on enterprise adoption of decentralized
-    storage, highlighting key concerns like data security, privacy, and
-    integration complexity. Learn how to leverage Filecoin solutions
-    effectively.
+  title: "Enterprise Storage Market Insights From the Field"
+  description: "At DeStor, we are dedicated to revolutionizing decentralized storage solutions by seamlessly integrating them with enterprise applications. With over 50 years of combined experience in enterprise data storage, our..."
 ---
 
 At DeStor, we are dedicated to revolutionizing decentralized storage solutions by seamlessly integrating them with enterprise applications. With over 50 years of combined experience in enterprise data storage, our team has a deep understanding of this segment of the decentralized storage market. We specialize in connecting data owners with Filecoin storage providers through an intuitive and transparent platform.
 
-Why focus on the enterprise market? Enterprises today are storing an average of 10 petabytes of data, making even small gains in this sector translate into significant revenue for Filecoin storage providers.
+Why focus on the enterprise market? According to [Veritas](https://web.archive.org/web/20240126025856/https://www.veritas.com/resources/dark-data), the average enterprise has 10 petabytes of data, making even small gains in this sector translate into significant revenue for Filecoin storage providers.
 
 Since launching in April, 2024, we’ve secured 3 petabytes (PBs) of paid data storage deals and have an additional 39 PBs in the pipeline. Our early success with enterprise customers is no coincidence; it’s the culmination of months of research, conversations, and meetings with IT decision-makers.
 

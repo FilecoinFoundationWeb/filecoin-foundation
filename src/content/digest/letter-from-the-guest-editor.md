@@ -8,17 +8,15 @@ article-number: 1
 authors:
   - first-name: Jonathan
     last-name: Victor
+    company: Ansa Research
 image:
   src: /assets/images/letter-from-the-guest-editor.webp
 seo:
   twitter:
     title: summary
     card: summary
-  title: "Letter from the Guest Editor: Welcome to The Filecoin Ecosystem Digest"
-  description:
-    Discover the transformative impact of the decentralized web in our
-    first issue, with insights on AI, space economy, sustainability, and more,
-    curated by Jonathan Victor.
+  title: "Letter from the Guest Editor"
+  description: "Dear Readers, Welcome to the inaugural edition of The Filecoin Ecosystem Digest: All Systems Go - a journey into the transformative power of the decentralized web and its far-reaching implications across various..."
 ---
 
 Dear Readers,
@@ -35,7 +33,7 @@ Next, we turn to AI - with two wonderful pieces. The first is from Sofia Yan and
 
 Our exploration doesn’t stop at Earth. Dietrich Ayala’s piece centers on the role of decentralized data in the space economy - and the importance of the current moment to embed our technologies into the emerging standards forming in this growing field.
 
-We ground ourselves with two pieces from Mara MacMahon from the DeStor team and Luke Behncke from Holon Investments focused on emerging trends in the enterprise sector and the future of sustainability within data centers.
+We ground ourselves with two pieces from Mara MacMahon from the DeStor team and Heath Behncke from Holon Investments focused on emerging trends in the enterprise sector and the future of sustainability within data centers.
 Then, we follow with a piece from Irma Jiang from ND Labs - reflecting on how Web3 offers a new paradigm of community based growth.
 
 Lastly, we look ahead to the future of decentralized storage and the emergence of the “Intelligence Economy” with a piece from Porter Sowell of the Filecoin Foundation.

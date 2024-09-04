@@ -9,7 +9,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticlesData } from '@/utils/getDigestArticleData'
+import { getDigestArticlesDataSortedByNumber } from '@/utils/getDigestArticleData'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -22,12 +22,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
-const articles = getDigestArticlesData()
+const articles = getDigestArticlesDataSortedByNumber()
 
 export const metadata = createMetadata({
   seo,
   path: PATHS.DIGEST.path,
-  overrideDefaultTitle: true,
 })
 
 export default function Digest() {
@@ -37,7 +36,7 @@ export default function Digest() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback}
+        image={graphicsData.digest}
       />
 
       <PageSection
@@ -50,16 +49,24 @@ export default function Digest() {
       >
         <CardGrid cols="smTwo">
           {articles.map((digest) => {
-            const { title, content, image, slug, issueNumber, articleNumber } =
-              digest
+            const {
+              title,
+              image,
+              slug,
+              issueNumber,
+              articleNumber,
+              description,
+              authors,
+            } = digest
 
             return (
               <Card
-                key={title}
+                key={slug}
                 title={title}
-                description={content}
-                textIsClamped={true}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
+                avatar={authors}
+                description={description}
+                textIsClamped={true}
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',

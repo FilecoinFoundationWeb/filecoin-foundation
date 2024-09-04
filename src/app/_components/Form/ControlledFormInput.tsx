@@ -1,35 +1,52 @@
 import React from 'react'
 
-import { useFormContext, Controller } from 'react-hook-form'
-import type { RegisterOptions, FieldValues } from 'react-hook-form'
+import {
+  useFormContext,
+  Controller,
+  type FieldValues,
+  type FieldPathByValue,
+} from 'react-hook-form'
 
 import { FormInput, type FormInputProps } from '@/components/Form/FormInput'
 
-type ControlledFormInputProps<FormType extends FieldValues> = {
-  name: keyof FormType
-  rules?: RegisterOptions
-} & FormInputProps
+type ExcludedReactHookFormProps =
+  | 'defaultValue'
+  | 'error'
+  | 'onBlur'
+  | 'onChange'
+  | 'required'
+  | 'value'
 
-export default function ControlledFormInput<FormType extends FieldValues>({
+type BaseControlledFormInputProps = Omit<
+  FormInputProps,
+  ExcludedReactHookFormProps
+>
+
+interface ControlledFormInputProps<FormValues extends FieldValues>
+  extends BaseControlledFormInputProps {
+  name: FieldPathByValue<FormValues, string>
+}
+
+export function ControlledFormInput<FormValues extends FieldValues>({
   name,
-  rules,
-  type,
-  ...props
-}: ControlledFormInputProps<FormType>) {
-  const { control } = useFormContext()
+  ...rest
+}: ControlledFormInputProps<FormValues>) {
+  const {
+    control,
+    formState: { errors },
+  } = useFormContext<FormValues>()
 
   return (
     <Controller
       name={name}
       control={control}
-      rules={rules}
-      render={({ field }) => (
+      render={({ field: { value = '', onChange, onBlur } }) => (
         <FormInput
-          {...props}
-          type={type}
-          value={field.value ?? ''}
-          onChange={field.onChange}
-          onBlur={field.onBlur}
+          {...rest}
+          value={value}
+          error={errors[name]?.message?.toString()}
+          onChange={onChange}
+          onBlur={onBlur}
         />
       )}
     />

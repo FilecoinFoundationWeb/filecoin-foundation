@@ -5,10 +5,11 @@ created-on: 2024-09-03T10:32:00.000Z
 updated-on: 2024-09-03T10:32:00.000Z
 published-on: 2024-09-03T10:32:00.000Z
 issue-number: "1"
-article-number: 7
+article-number: 6
 authors:
   - first-name: Irma
     last-name: Jiang
+    company: ND Labs
 image:
   src: /assets/images/from-participant-to-organizer.webp
 seo:
@@ -16,8 +17,8 @@ seo:
     title: summary
     card: summary
   title: "From Participant to Organizer: How Community-Led Activities Drive
-    Innovation in Decentralized Systems"
-  description: Decentralized ecosystems thrive on diverse participation and in-person events, which foster stronger connections, shared insights, and collaborative problem-solving, driving global and local community growth.
+  Innovation in Decentralized Systems"
+  description: "Harnessing the Power of Decentralized Ecosystems — The strength of decentralized ecosystems lies in their broad participation and spirit of sharing.They are built on the diversity of thought and experience brought by..."
 ---
 
 ## Harnessing the Power of Decentralized Ecosystems
