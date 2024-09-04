@@ -4,7 +4,7 @@ created-on: 2024-08-28T08:31:00.000Z
 updated-on: 2024-08-28T08:31:00.000Z
 published-on: 2024-08-28T08:31:00.000Z
 issue-number: "1"
-article-number: 8
+article-number: 7
 authors:
   - first-name: Heath
     last-name: Behncke
@@ -15,11 +15,9 @@ seo:
   twitter:
     title: summary
     card: summary
-  title:
-    "The Future of Data Lies at the Green Edge: Embracing Sustainable Web 3.0
+  title: "The Future of Data Lies at the Green Edge: Embracing Sustainable Web 3.0
     Solutions"
-  description:
-    Explore how green data centers and decentralized infrastructure are
+  description: Explore how green data centers and decentralized infrastructure are
     driving sustainable growth in the Web 3.0 era, meeting the massive demands
     of future data management.
 ---
