@@ -22,8 +22,8 @@ import { generateStructuredData } from './utils/generateStructuredData'
 
 const DynamicTableOfContent = dynamic(
   () =>
-    import('./components/TableOfContent').then(
-      (module) => module.TableOfContent,
+    import('./components/TableOfContents').then(
+      (module) => module.TableOfContents,
     ),
   { ssr: false },
 )

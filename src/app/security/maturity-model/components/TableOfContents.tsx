@@ -10,7 +10,7 @@ import {
   type SectionHash,
 } from '../utils/useSectionHashObserver'
 
-export function TableOfContent() {
+export function TableOfContents() {
   const { currentHash } = useSectionHashObserver()
 
   return (
