@@ -21,7 +21,7 @@ export function Avatar({ authors }: { authors: DigestArticleData['authors'] }) {
   ) {
     return (
       <Image
-        className="inline-block rounded-full object-cover ring-2 ring-brand-700 ring-opacity-30"
+        className="inline-block rounded-full object-cover ring-2 ring-brand-700"
         src={image.src}
         alt={`Photo of ${firstName} ${lastName}`}
         width={imageSize}
@@ -35,10 +35,10 @@ export function Avatar({ authors }: { authors: DigestArticleData['authors'] }) {
     return (
       <div
         style={{ width: imageSize, height: imageSize }}
-        className="flex items-center justify-center rounded-full bg-brand-700 ring-2 ring-brand-700 ring-opacity-30"
+        className="flex items-center justify-center rounded-full bg-brand-600 ring-2 ring-brand-700"
         aria-label={`Initials of ${firstName} ${lastName}`}
       >
-        <span className="text-sm font-medium leading-none text-brand-300">
+        <span className="text-sm font-medium leading-none text-brand-200">
           {initials}
         </span>
       </div>
