@@ -27,7 +27,6 @@ const articles = getDigestArticlesDataSortedByNumber()
 export const metadata = createMetadata({
   seo,
   path: PATHS.DIGEST.path,
-  overrideDefaultTitle: true,
 })
 
 export default function Digest() {
