@@ -18,8 +18,8 @@ type TitleProps = {
 
 export function ArticleHeader({ image, children }: ArticleHeaderProps) {
   return (
-    <header className="space-y-8">
-      <div className="space-y-4">{children}</div>
+    <header className="space-y-6">
+      <div className="space-y-6">{children}</div>
 
       <div className="relative aspect-video">
         <DynamicImage

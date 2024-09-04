@@ -1,6 +1,7 @@
 import { type DigestArticleData } from '@/types/digestTypes'
 
 import { ArticleHeader } from '@/components/ArticleHeader'
+import { AvatarGroup } from '@/components/AvatarGroup'
 import { TagGroup } from '@/components/TagGroup'
 
 type DigestArticleHeaderProps = Pick<
@@ -19,27 +20,7 @@ export function DigestArticleHeader({
     <ArticleHeader image={image && { src: image.src, alt: image.alt || '' }}>
       <TagGroup label={[`Issue ${issueNumber}`, `Article ${articleNumber}`]} />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
-      <span className="mt-3 block text-sm text-blue-100">
-        {formatAuthors(authors)}
-      </span>
+      <AvatarGroup authors={authors} />
     </ArticleHeader>
   )
-}
-
-export function formatAuthors(authors: DigestArticleData['authors']) {
-  return authors
-    .map((author, index) => {
-      const isLastAuthor = index === authors.length - 1
-      const isSecondToLastAuthor = index === authors.length - 2
-
-      let separator = ''
-      if (isSecondToLastAuthor && authors.length > 1) {
-        separator = ' & '
-      } else if (!isLastAuthor) {
-        separator = ', '
-      }
-
-      return `${author.firstName} ${author.lastName}, ${author.company} ${separator}`
-    })
-    .join('')
 }

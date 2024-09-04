@@ -3,6 +3,8 @@ import { z } from 'zod'
 import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
 import { ImagePropsSchema } from '@/schemas/imagePropsSchema'
 
+const ImagePropsWithoutAltSchema = ImagePropsSchema.omit({ alt: true })
+
 export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   issueNumber: z.string(),
@@ -11,7 +13,7 @@ export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
     z.object({
       firstName: z.string(),
       lastName: z.string(),
-      image: ImagePropsSchema.optional(),
+      image: ImagePropsWithoutAltSchema.optional(),
       company: z.string(),
     }),
   ),

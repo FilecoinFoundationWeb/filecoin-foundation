@@ -45,7 +45,6 @@ function mapAuthor(author: Record<string, any>) {
 function mapAuthorImage(image: Record<string, any>) {
   return {
     src: image.src,
-    alt: image.alt,
   }
 }
 
