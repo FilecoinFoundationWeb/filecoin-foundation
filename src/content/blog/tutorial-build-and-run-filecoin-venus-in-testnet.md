@@ -23,9 +23,6 @@ seo:
 
 A step-by-step guide on running Filecoin node implementation Venus on your local machine with multipass. 
 
-By [Jenks Guo](mailto:jenks@fil.org)  
-4 June 2024
-
 # Intro & Overview
 
 [Venus](https://sophon.venus-fil.io/operation/\#introducing-venus-products) is an interoperable alternative Filecoin network node implementation, primarily based on Go language. Built by the [IPFS Force team](https://github.com/ipfs-force-community), it works like the the [main implementation Lotus](https://lotus.filecoin.io/) (based on Rust and Go), but with the added benefit of achieving high availability and miner modules designed for larger scale (for example more than 10PiB) operations of Filecoin storage nodes. 
