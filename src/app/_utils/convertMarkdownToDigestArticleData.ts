@@ -11,7 +11,6 @@ export function convertMarkdownToDigestArticleData(data: Record<string, any>) {
     .replace(/\s+/g, ' ')
     .trim()
 
-  console.log({ description })
   return {
     ...parsedData,
     description,

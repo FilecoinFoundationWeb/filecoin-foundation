@@ -14,10 +14,8 @@ export function AvatarGroup({ authors }: AvatarGroupProps) {
   return (
     <div className="flex items-center gap-2">
       <div className="flex -space-x-1">
-        {authors.map((author) => (
-          <React.Fragment key={`${author.firstName}-${author.lastName}`}>
-            <Avatar author={author} />
-          </React.Fragment>
+        {authors.map((author, index) => (
+          <Avatar key={index} author={author} />
         ))}
       </div>
       <span className="text-sm">{formatAuthors(authors)}</span>
