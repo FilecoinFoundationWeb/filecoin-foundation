@@ -8,7 +8,7 @@ article-number: 4
 authors:
   - first-name: Dietrich
     last-name: Ayala
-    company: Filecoin Foundation
+    company: Ecosystem Advisor, Filecoin Foundation
 image:
   src: /assets/images/interplanetary-resilience.webp
 seo:
