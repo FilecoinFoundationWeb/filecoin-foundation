@@ -1,4 +1,5 @@
 import { PATHS } from '@/constants/paths'
+
 import { testPageMetadata } from '@/support/test-utils'
 
 describe('Security - Main Page', () => {
@@ -14,7 +15,5 @@ describe('Security - Coordinated Disclosure Policy Page', () => {
 })
 
 describe('Security - Bug Bounty Program Page', () => {
-  testPageMetadata(PATHS.BUG_BOUNTY, {
-    overrideDefaultTitle: true,
-  })
+  testPageMetadata(PATHS.BUG_BOUNTY)
 })
