@@ -11,7 +11,7 @@ authors:
     company: Co-founder and CGO, Numbers Protocol
   - first-name: Ryan
     last-name: Matthew
-    company: technology communications consultant and analyst
+    company: Technology Communications Consultant
 image:
   src: /assets/images/the-potential-for-decentralized-technology-to-rebuild-media-trust-and-empower-content-creators.webp
 seo:
