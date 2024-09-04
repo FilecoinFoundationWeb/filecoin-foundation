@@ -16,9 +16,9 @@ import {
 type LinkTitleProps = {
   title: string
   slug: string
-}
+} & React.ComponentPropsWithoutRef<'article'>
 
-export function LinkTitle({ title, slug }: LinkTitleProps) {
+export function Article({ title, slug, children }: LinkTitleProps) {
   const { updateSectionHash } = useSectionHashObserver()
 
   const { ref } = useIntersectionObserver({
@@ -32,16 +32,19 @@ export function LinkTitle({ title, slug }: LinkTitleProps) {
   const sectionHash = HASH_SIGN + slug
 
   return (
-    <Link
-      href={sectionHash as Route}
-      className="group text-brand-100 hover:no-underline"
-    >
-      <h3 ref={ref} id={slug} className="flex items-center gap-2">
-        {title}
-        <span className="invisible group-hover:visible">
-          <Icon component={LinkSimple} size={18} />
-        </span>
-      </h3>
-    </Link>
+    <article ref={ref}>
+      <Link
+        href={sectionHash as Route}
+        className="group text-brand-100 hover:no-underline"
+      >
+        <h3 id={slug} className="flex items-center gap-2">
+          {title}
+          <span className="invisible group-hover:visible">
+            <Icon component={LinkSimple} size={18} />
+          </span>
+        </h3>
+      </Link>
+      {children}
+    </article>
   )
 }

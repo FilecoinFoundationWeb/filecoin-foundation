@@ -1,6 +1,7 @@
 'use client'
 
 import { clsx } from 'clsx'
+import { useIntersectionObserver } from 'usehooks-ts'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../data/scrollToSection'
@@ -11,10 +12,18 @@ import {
 } from '../utils/useSectionHashObserver'
 
 export function TableOfContents() {
-  const { currentHash } = useSectionHashObserver()
+  const { currentHash, clearSectionHash } = useSectionHashObserver()
+
+  const { ref } = useIntersectionObserver({
+    onChange: (isIntersecting) => {
+      if (!isIntersecting) {
+        clearSectionHash()
+      }
+    },
+  })
 
   return (
-    <nav>
+    <nav ref={ref}>
       <p className="mb-4 ml-6 text-sm font-semibold uppercase text-brand-200 lg:mb-6">
         Table of Contents
       </p>

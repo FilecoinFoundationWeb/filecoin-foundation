@@ -30,6 +30,14 @@ export function useSectionHashObserver() {
     }
   }
 
+  function clearSectionHash() {
+    router.replace(pathname as Route, { scroll: false })
+
+    if (windowIsDefined()) {
+      window.dispatchEvent(new CustomEvent('hashchange', { detail: HASH_SIGN }))
+    }
+  }
+
   function onHashChange(event: NewHashEvent) {
     const newHash = getHashFromEvent(event)
     setHash(newHash)
@@ -45,6 +53,7 @@ export function useSectionHashObserver() {
   return {
     currentHash: hash,
     updateSectionHash,
+    clearSectionHash,
   }
 }
 
