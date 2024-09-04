@@ -37,7 +37,7 @@ export default function Digest() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback}
+        image={graphicsData.digest}
       />
 
       <PageSection
