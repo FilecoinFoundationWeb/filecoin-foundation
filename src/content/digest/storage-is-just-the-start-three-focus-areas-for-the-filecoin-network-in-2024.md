@@ -15,12 +15,12 @@ seo:
   twitter:
     title: summary
     card: summary
-  title:
-    "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
+  title: "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
     2024"
-  description: "Data storage and retrieval are core to how the Internet works. Today’s data infrastructure is dominated by Big Tech. But technologies like the InterPlanetary File System (IPFS) and Filecoin..."
+  description: Data storage and retrieval are core to how the Internet works.
+    Today’s data infrastructure is dominated by Big Tech. But technologies like
+    the InterPlanetary File System (IPFS) and Filecoin...
 ---
-
 Data storage and retrieval are core to how the Internet works. Today’s [data infrastructure](https://www.pcmag.com/news/four-companies-control-67-of-the-worlds-cloud-infrastructure) is dominated by Big Tech. But technologies like the InterPlanetary File System (IPFS) and Filecoin re-architecture that centralized framework to store humanity’s information on a decentralized network of storage providers.
 
 Filecoin is the largest decentralized storage network in the world. Since the mainnet launch in 2020, [the network has grown](https://dashboard.starboard.ventures/dashboard) to nearly 3,000 storage providers (SPs), collectively storing 1.5 exbibytes of data. This information ranges from [experimental physics data](https://sealstorage.io/atlascern/) from the most prestigious research institutions in the world to [historical and cultural archives of entire island nations](https://blog.archive.org/2024/04/08/aruba-launches-digital-heritage-portal-preserving-its-history-and-culture-for-global-access/). As the amount of data we generate grows exponentially and the internet of tools building on it needs to scale accordingly, decentralized storage is emerging as the foundational layer of a new distributed web.
@@ -37,7 +37,7 @@ The [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM), which enables sm
 
 This infrastructure is fit for emerging AI use cases. The network's ability to provide seamless data access across different platforms and handle large datasets required for AI training and inference makes it an ideal host for decentralized AI model storage and distribution. L2 solutions like [Akave](https://akave.ai/) are building specifically for AI data with innovative on-chain data lakes. And Filecoin storage providers have the technological resources to get in on AI advancement, with [Bagel’s](https://www.bagel.net/) decentralized compute network aggregator that enables AI developers to train and store their models using the compute and storage power of the Filecoin network.
 
-A Layer 1 that provides real utility to Layer 2s can augment the _entire_ Web3 stack –– from storage onboarding platforms to compute marketplaces to AI model infra.
+A Layer 1 that provides real utility to Layer 2s can augment the *entire* Web3 stack –– from storage onboarding platforms to compute marketplaces to AI model infra.
 
 ## 2. The Hot, Fast Storage Layer for Web3
 
@@ -61,7 +61,7 @@ The emergence of decentralized exchanges and [F3](https://medium.com/@filoz/file
 
 And the wealth of data on Filecoin can also give rise to secondary markets on top of storage. The network is primed for marketplaces for storage clients to monetize their data for enterprise, research, and AI-training use cases. Already, [Nuklai](https://www.nukl.ai/), a collaborative data marketplace and infrastructure provider for data ecosystems, has integrated Filecoin via [Lighthouse](https://www.lighthouse.storage/) to make the platform’s metadata publicly accessible.
 
-**Looking Above and Beyond**
+## **Looking Above and Beyond**
 
 Storage is the bedrock of data’s lifespan on the web, and atop that bedrock, the world can build so much more.
 
