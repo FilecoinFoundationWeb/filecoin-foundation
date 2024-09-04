@@ -7,12 +7,14 @@ import type { ImageProps } from '@/types/sharedProps/imageType'
 
 type ImagePropsWithoutAlt = Omit<ImageProps, 'alt'>
 
-export function Avatar({ authors }: { authors: DigestArticleData['authors'] }) {
-  const imageSize = 32
+const imageSize = 32
 
-  if (!authors || authors.length === 0) {
-    throw new Error('Avatar component requires at least one author')
-  }
+export type AvatarProps = {
+  author: DigestArticleData['authors'][number]
+}
+
+export function Avatar({ author }: AvatarProps) {
+  const { firstName, lastName, image } = author
 
   function renderImage(
     firstName: string,
@@ -45,23 +47,7 @@ export function Avatar({ authors }: { authors: DigestArticleData['authors'] }) {
     )
   }
 
-  function renderAuthorContent({
-    firstName,
-    lastName,
-    image,
-  }: DigestArticleData['authors'][number]) {
-    return image?.src
-      ? renderImage(firstName, lastName, image)
-      : renderInitials(firstName, lastName)
-  }
-
-  return (
-    <div className="flex -space-x-1">
-      {authors.map((author) => (
-        <React.Fragment key={`${author.firstName}-${author.lastName}`}>
-          {renderAuthorContent(author)}
-        </React.Fragment>
-      ))}
-    </div>
-  )
+  return image?.src
+    ? renderImage(firstName, lastName, image)
+    : renderInitials(firstName, lastName)
 }

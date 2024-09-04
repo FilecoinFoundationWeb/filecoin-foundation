@@ -2,12 +2,11 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
-import { type DigestArticleData } from '@/types/digestTypes'
 import { type CTAProps } from '@/types/sharedProps/ctaType'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { AvatarGroup } from '@/components/AvatarGroup'
+import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { CustomLink } from '@/components/CustomLink'
 import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
@@ -26,7 +25,7 @@ type CardProps = {
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
-  avatar?: DigestArticleData['authors']
+  avatar?: AvatarGroupProps['authors']
 }
 
 type SpacingValue = keyof typeof theme.spacing
@@ -79,11 +78,7 @@ function Link({ href, ariaLabel, icon, text, left = 'left-4' }: LinkProps) {
   )
 }
 
-function CardAvatarGroup({
-  authors,
-}: {
-  authors: DigestArticleData['authors']
-}) {
+function CardAvatarGroup({ authors }: AvatarGroupProps) {
   return (
     <div className="my-6">
       <AvatarGroup authors={authors} />
