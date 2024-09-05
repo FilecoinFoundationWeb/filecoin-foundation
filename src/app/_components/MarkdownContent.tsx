@@ -1,5 +1,6 @@
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -15,6 +16,7 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
   return (
     <ReactMarkdown
       rehypePlugins={[rehypeRaw]}
+      remarkPlugins={[remarkGfm]}
       className="prose"
       components={{
         img: ({ src, alt }) => (
