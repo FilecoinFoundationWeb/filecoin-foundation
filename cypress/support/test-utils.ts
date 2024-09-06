@@ -38,9 +38,7 @@ export function testPageMetadata(
       }
 
       cy.visit(path)
-      cy.percySnapshot(path, {
-        widths: [1280],
-      })
+      cy.percySnapshot()
 
       verifyPageTitle(path, seo.title, overrideDefaultTitle)
 
