@@ -8,6 +8,7 @@ on:
 
 jobs:
   cypress-run:
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
 
     env:
@@ -36,5 +37,25 @@ jobs:
           echo "Waiting for server to start..."
           npx wait-on http://localhost:3000
 
+      - name: Determine Test Type
+        id: test-type
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            COMMIT_MESSAGE="${{ github.event.pull_request.title }}"
+          else
+            COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+          fi
+
+          if [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
+            echo "skip_percy=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip_percy=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run Cypress Tests without Percy
+        if: steps.test-type.outputs.skip_percy == 'true'
+        run: npm run test:cypress:critical
+
       - name: Run Cypress Tests with Percy
-        run: npm run test:critical
+        if: steps.test-type.outputs.skip_percy == 'false'
+        run: npm run test:cypress:percy:critical
