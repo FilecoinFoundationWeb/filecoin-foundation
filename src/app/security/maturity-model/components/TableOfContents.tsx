@@ -29,12 +29,12 @@ export function TableOfContents() {
       </p>
 
       <ul>
-        {coreFunctionsData.map(({ slug, title }, index) => {
+        {coreFunctionsData.map(({ slug, title }) => {
           const sectionHash: SectionHash = `${HASH_SIGN}${slug}`
           const isCurrentSection = currentHash === sectionHash
 
           return (
-            <li key={index}>
+            <li key={slug}>
               <button
                 className={clsx(
                   'appearance-none text-balance border border-transparent px-6 py-2.5 text-left focus-visible:brand-outline',

@@ -8,7 +8,7 @@ export function CoreFunctions() {
   return (
     <div className="prose first:prose-h3:mt-0 prose-h4:text-brand-300 prose-h5:text-brand-300">
       {coreFunctionsData.map(({ title, Content, slug }, index) => (
-        <Article key={index} title={title} slug={slug}>
+        <Article key={slug} title={title} slug={slug}>
           <Content />
           {index < coreFunctionsData.length - 1 && (
             <hr className="border-brand-300" />
