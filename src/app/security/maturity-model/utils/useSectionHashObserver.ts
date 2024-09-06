@@ -48,7 +48,7 @@ export function useSectionHashObserver() {
       window.addEventListener('hashchange', onHashChange)
       return () => window.removeEventListener('hashchange', onHashChange)
     }
-  }, [pathname])
+  }, [])
 
   return {
     currentHash: hash,
