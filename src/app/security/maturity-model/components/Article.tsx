@@ -32,6 +32,9 @@ export function Article({ title, slug, children }: LinkTitleProps) {
         <Link
           href={sectionHash as Route}
           className="group inline-flex items-center gap-2 text-brand-100 hover:no-underline"
+          style={{
+            fontWeight: 'inherit',
+          }}
         >
           {title}
           <span className="invisible group-hover:visible">
