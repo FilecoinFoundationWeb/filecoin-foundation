@@ -11,9 +11,11 @@
     "lint": "next lint --fix",
     "validate-md": "node scripts/validateMarkdown.js",
     "test:all": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
-    "test:critical": "percy exec -- cypress run --spec 'cypress/e2e/critical/**/*.cy.ts'",
+    "test:cypress:percy:critical": "percy exec -- cypress run --spec 'cypress/e2e/critical/**/*.cy.ts'",
+    "test:cypress:critical": "cypress run --spec 'cypress/e2e/critical/**/*.cy.ts'",
     "test:weekly_schedule": "cypress run --spec 'cypress/e2e/weekly_schedule/**/*.cy.ts'",
-    "generate:page": "node scripts/generatePageTemplates.js"
+    "generate:page": "node scripts/generatePageTemplates.js",
+    "prepare": "husky"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
@@ -73,6 +75,7 @@
     "eslint-config-next": "14.2.5",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react": "^7.35.0",
+    "husky": "^9.1.5",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
