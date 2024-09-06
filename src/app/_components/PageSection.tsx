@@ -24,7 +24,6 @@ type PageSectionProps = {
   image?: StaticImageProps
   cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
-  fullWidth?: boolean
 }
 
 export function PageSection({
@@ -34,7 +33,6 @@ export function PageSection({
   image,
   children,
   cta,
-  fullWidth,
 }: PageSectionProps) {
   return (
     <section>
@@ -43,7 +41,7 @@ export function PageSection({
       <div
         className={clsx('mb-6 mt-4', {
           'grid grid-cols-1 gap-6 lg:grid-cols-2': image,
-          'max-w-readable': !image && !fullWidth,
+          'max-w-readable': !image,
         })}
       >
         <div className="space-y-4">

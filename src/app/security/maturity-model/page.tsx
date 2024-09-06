@@ -73,7 +73,6 @@ export default function MaturityModel() {
       </PageSection>
 
       <PageSection
-        fullWidth
         kicker="Building Blocks of Security"
         title="Explore the Core Functions"
       >
