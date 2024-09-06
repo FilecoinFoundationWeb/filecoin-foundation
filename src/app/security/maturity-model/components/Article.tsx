@@ -8,10 +8,7 @@ import { useIntersectionObserver } from 'usehooks-ts'
 
 import { Icon } from '@/components/Icon'
 
-import {
-  useSectionHashObserver,
-  HASH_SIGN,
-} from '../utils/useSectionHashObserver'
+import { useUrlHash, HASH_SIGN } from '../utils/useUrlHash'
 
 type LinkTitleProps = {
   title: string
@@ -19,13 +16,11 @@ type LinkTitleProps = {
 } & React.ComponentPropsWithoutRef<'article'>
 
 export function Article({ title, slug, children }: LinkTitleProps) {
-  const { updateSectionHash } = useSectionHashObserver()
+  const { updateHash, clearHashIfPresent } = useUrlHash()
 
   const { ref } = useIntersectionObserver({
     onChange: (isIntersecting) => {
-      if (isIntersecting) {
-        updateSectionHash(slug)
-      }
+      isIntersecting ? updateHash(slug) : clearHashIfPresent(slug)
     },
   })
 

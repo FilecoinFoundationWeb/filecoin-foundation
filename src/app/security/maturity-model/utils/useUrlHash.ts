@@ -11,15 +11,19 @@ export const HASH_SIGN = '#'
 export type SectionHash = `${typeof HASH_SIGN}${string}`
 type NewHashEvent = HashChangeEvent | CustomEvent<SectionHash>
 
-export function useSectionHashObserver() {
+export function useUrlHash() {
   const pathname = usePathname()
   const router = useRouter()
 
   const [hash, setHash] = useState(getHashFromWindow)
 
-  function updateSectionHash(sectionId: string) {
+  function updateHash(sectionId: string) {
     const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
     const pathnameWithNewSectionHash = pathname + sectionHash
+
+    if (sectionHash === hash) {
+      return
+    }
 
     router.replace(pathnameWithNewSectionHash as Route, { scroll: false })
 
@@ -30,11 +34,18 @@ export function useSectionHashObserver() {
     }
   }
 
-  function clearSectionHash() {
+  function clearHash() {
     router.replace(pathname as Route, { scroll: false })
 
     if (windowIsDefined()) {
       window.dispatchEvent(new CustomEvent('hashchange', { detail: HASH_SIGN }))
+    }
+  }
+
+  function clearHashIfPresent(sectionId: string) {
+    const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
+    if (sectionHash === hash) {
+      clearHash()
     }
   }
 
@@ -52,8 +63,9 @@ export function useSectionHashObserver() {
 
   return {
     currentHash: hash,
-    updateSectionHash,
-    clearSectionHash,
+    updateHash,
+    clearHashIfPresent,
+    clearHash,
   }
 }
 
