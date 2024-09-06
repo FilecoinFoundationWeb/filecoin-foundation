@@ -33,17 +33,17 @@ export function Article({ title, slug, children }: LinkTitleProps) {
 
   return (
     <article ref={ref}>
-      <Link
-        href={sectionHash as Route}
-        className="group text-brand-100 hover:no-underline"
-      >
-        <h3 id={slug} className="flex items-center gap-2">
+      <h3 id={slug}>
+        <Link
+          href={sectionHash as Route}
+          className="group inline-flex items-center gap-2 text-brand-100 hover:no-underline"
+        >
           {title}
           <span className="invisible group-hover:visible">
             <Icon component={LinkSimple} size={18} />
           </span>
-        </h3>
-      </Link>
+        </Link>
+      </h3>
       {children}
     </article>
   )

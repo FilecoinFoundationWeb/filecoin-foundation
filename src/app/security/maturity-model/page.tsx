@@ -20,7 +20,7 @@ import { CoreFunctions } from './components/CoreFunctions'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const DynamicTableOfContent = dynamic(
+const DynamicTableOfContents = dynamic(
   () =>
     import('./components/TableOfContents').then(
       (module) => module.TableOfContents,
@@ -81,7 +81,7 @@ export default function MaturityModel() {
             <CoreFunctions />
           </div>
           <div className="order-first lg:sticky lg:top-12 lg:order-last lg:w-72">
-            <DynamicTableOfContent />
+            <DynamicTableOfContents />
           </div>
         </div>
       </PageSection>
