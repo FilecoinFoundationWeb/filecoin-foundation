@@ -8,7 +8,7 @@ import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
-import { attributes } from '@/content/pages/ecosystem-explorer.md'
+import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -39,11 +39,6 @@ import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-
-
-
-
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
