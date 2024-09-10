@@ -21,13 +21,11 @@ seo:
     image: /assets/images/09282024-africaagriculture.png
 ---
 
-![Filecoin Orbit crowd in Kenya](/assets/images/_mg_1825-1-resize.jpg)
-
 The intersection of blockchain technology and agriculture is opening up new frontiers for sustainable farming practices and supply chain management. Recently, a group of university students and developers explored how the Filecoin Virtual Machine (FVM) can address agricultural challenges in Africa. The Filecoin Orbit event took place at Dedan Kimathi University in Kenya, hosted byBlockchainHub DEKUT.
 
 Filecoin Orbit ambassador Allan Mang'eni chatted with FF about the potential impact of Filecoin on the rural agricultural sector.
 
-![Filecoin orbit classroom in Kenya](/assets/images/img_1400-2-resize.jpg)
+![Filecoin Orbit crowd in Kenya](/assets/images/_mg_1825-1-resize.jpg)
 
 ## _What would you say are the biggest agricultural challenges in the region, and how Filecoin can help address these challenges?_
 
@@ -50,6 +48,8 @@ In addition to an intro to Filecoin technology stack, we also discussed how mach
 We also explored a use case from YYTZ, a cashew processing company based in Tanzania that has integrated blockchain into its operations to enhance transparency, traceability and efficiency. This has ensured farmers get fair compensation for their products and also helps streamline their supply chain.
 
 The audience response was quite good, and we ended up having an ideation session. In groups of 10, we discussed and shared ideas on some products we can build to enhance farming practices. Over the coming months, we hope to have a hackathon at Dedan Kimathi University, where we will bring these ideas to life.
+
+![Filecoin orbit classroom in Kenya](/assets/images/img_1400-2-resize.jpg)
 
 ## _Describe your experience as an Orbit ambassador._
 
