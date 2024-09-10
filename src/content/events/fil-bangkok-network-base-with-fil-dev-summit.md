@@ -16,7 +16,7 @@ description: FIL Bangkok Network base is your home base in Bangkok to expand
   Filecoin Studio is a state-of-the-art content creation hub offering
   professional-grade equipment and space for rent to record content that
   elevates your vision. Book your session.
-external-link: https://lu.ma/vcdjb8pl
+external-link: https://lu.ma/no08u3bt
 image:
   src: /assets/images/fil-bangkok-nb-logo.png
 seo:
