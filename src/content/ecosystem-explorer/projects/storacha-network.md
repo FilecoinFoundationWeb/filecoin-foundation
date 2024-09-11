@@ -15,8 +15,8 @@ description: Storacha transforms web3.storage into a community-driven,
 website: https://storacha.network
 tech:
   - filecoin
-twitter: "@storachanetwork"
-video-url: https://www.youtube.com/watch?v=WLOdWD2bFOA&t=247s
+twitter: https://x.com/storachanetwork
+video-url: https://www.youtube.com/embed/WLOdWD2bFOA
 seo:
   twitter:
     title: summary
@@ -25,6 +25,7 @@ seo:
   description: Storacha is a blazing-fast, user-owned, and verifiable hot data
     storage and retrieval system built on the Filecoin network
 ---
+
 Storacha is the latest innovation in decentralized data storage, developed by the minds at Protocol Labs. By integrating the best features of web3.storage and Saturn (dCDN), Storacha is a blazing-fast, user-owned, and verifiable hot data storage and retrieval system built on the Filecoin network.
 
 Storacha has already managed petabytes of data for various open web projects, establishing itself as a leading production-grade storage solution in the decentralized internet space.
@@ -33,7 +34,7 @@ Storacha has already managed petabytes of data for various open web projects, es
 
 Storacha offers decentralized hot object storage and retrieval, optimized for large-scale data on the open web. Here are some of the unique approaches that set us apart:
 
-* **User Controlled Authorization Networks (UCAN):** Offline-first, cryptographic keypair-based tokens for user-owned storage with flexible permissioning.
-* **Battle-Tested Production Systems:** Leveraging experience from web3.storage and Saturn to build systems capable of efficiently storing and retrieving petabytes of data.
-* **IPFS Compatibility:** Seamless integration and migration with IPFS, ensuring trustless data handling and efficient retrieval.
-* **Filecoin Integration:** Utilizing Filecoin for redundant, geographically distributed storage with unmatched verifiable aggregation pipelines.
+- **User Controlled Authorization Networks (UCAN):** Offline-first, cryptographic keypair-based tokens for user-owned storage with flexible permissioning.
+- **Battle-Tested Production Systems:** Leveraging experience from web3.storage and Saturn to build systems capable of efficiently storing and retrieving petabytes of data.
+- **IPFS Compatibility:** Seamless integration and migration with IPFS, ensuring trustless data handling and efficient retrieval.
+- **Filecoin Integration:** Utilizing Filecoin for redundant, geographically distributed storage with unmatched verifiable aggregation pipelines.
