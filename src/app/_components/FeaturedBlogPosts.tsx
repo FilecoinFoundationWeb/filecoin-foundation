@@ -53,7 +53,7 @@ export function FeaturedBlogPosts() {
                 ...(image || {
                   ...graphicsData.imageFallback,
                 }),
-                fallback: graphicsData.imageFallback,
+                fill: true,
                 sizes: buildImageSizeProp({
                   startSize: '100vw',
                   sm: '350px',

@@ -40,11 +40,6 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-
-
-
-
-
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const NoSSRPagination = dynamic(
@@ -182,9 +177,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                               ...graphicsData.imageFallback,
                             }),
                             padding: true,
-                            priority: isFirstTwoImages,
                             objectFit: 'contain',
-                            fallback: graphicsData.imageFallback,
+                            priority: isFirstTwoImages,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '320px',

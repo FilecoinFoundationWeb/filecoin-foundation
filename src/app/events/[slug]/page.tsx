@@ -53,7 +53,6 @@ export default function EventEntry({ params }: EventProps) {
         image={{
           alt: '',
           ...(image || graphicsData.imageFallback),
-          fallback: graphicsData.imageFallback,
         }}
       />
     </>

@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
 
 import about from '@/assets/graphics/Filorg_About.png'
 import digestCoverIssue1 from '@/assets/graphics/Filorg_Digest_Cover_Issue_1.webp'
@@ -24,97 +24,97 @@ import security3 from '@/assets/graphics/Filorg_Security3.webp'
 import security4 from '@/assets/graphics/Filorg_Security4.webp'
 import security5 from '@/assets/graphics/Filorg_Security5.webp'
 
-export const graphicsData: Record<string, StaticImageProps> = {
+export const graphicsData: Record<string, StaticImageDataWithAlt> = {
   imageFallback: {
-    data: imageFallback,
+    ...imageFallback,
     alt: 'Image coming soon',
   },
   about: {
-    data: about,
+    ...about,
     alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
   },
   digest: {
-    data: digestCoverIssue1,
+    ...digestCoverIssue1,
     alt: 'Cover of the Filecoin Ecosystem Digest showing a stylized globe with interconnected nodes representing a global network. The Filecoin logo appears at the top left, and the background has a gradient of soft blues, pinks, and oranges with light effects symbolizing data flow and connectivity.',
   },
   ecosystem: {
-    data: ecosystem,
+    ...ecosystem,
     alt: 'Magnifying glass focusing on a network of interconnected blue and white spheres, symbolizing exploration and analysis of connections.',
   },
   events1: {
-    data: events1,
+    ...events1,
     alt: 'Auditorium with rows of seats facing a stage displaying a digital Earth image, surrounded by modern lighting and panels.',
   },
   events2: {
-    data: events2,
+    ...events2,
     alt: 'Large event space with people gathered around tables for networking, many wearing yellow backpacks, against a bright blue backdrop.',
   },
   events3: {
-    data: events3,
+    ...events3,
     alt: 'Speaker presenting to a full audience in a dark auditorium, with attendees attentively listening and engaged in the presentation.',
   },
   filPlus: {
-    data: filPlus,
+    ...filPlus,
     alt: 'Long row of modern, sleek server racks in a bright, white room, with blue LED lights glowing from within, creating a futuristic and high-tech atmosphere.',
   },
   filPlusAbout1: {
-    data: filPlusAbout1,
+    ...filPlusAbout1,
     alt: 'Stacked glossy white cubes arranged on a light surface.',
   },
   filPlusAbout2: {
-    data: filPlusAbout2,
+    ...filPlusAbout2,
     alt: 'Floating and stacked glossy white cubes in a futuristic, reflective room.',
   },
   filPlusAbout3: {
-    data: filPlusAbout3,
+    ...filPlusAbout3,
     alt: 'Glossy white cube with a glowing blue sphere inside.',
   },
   governance1: {
-    data: governance1,
+    ...governance1,
     alt: 'Interconnected network of blue and white spheres with icons of people, representing a social network or digital communication.',
   },
   governance2: {
-    data: governance2,
+    ...governance2,
     alt: 'Digital illustration of a futuristic bridge construction with cranes and vehicles on a circuit board-like surface, symbolizing advanced infrastructure.',
   },
   governance3: {
-    data: governance3,
+    ...governance3,
     alt: 'Modern conference room with people gathered around a circular table, discussing important issues, illuminated by natural light.',
   },
   grants: {
-    data: grants,
+    ...grants,
     alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
   },
   home: {
-    data: home,
+    ...home,
     alt: 'A grand library with modern server racks and a large network of spheres above, symbolizing data and technology.',
   },
   orbit: {
-    data: orbit,
+    ...orbit,
     alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
   },
   rAndD: {
-    data: rAndD,
+    ...rAndD,
     alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
   },
   security: {
-    data: security,
+    ...security,
     alt: 'An illustration depicting a large, old-fashioned key unlocking a futuristic padlock. The scene is set against a light background, with various abstract geometric shapes and elements around the key and lock, suggesting a theme of digital security or unlocking digital information.',
   },
   security2: {
-    data: security2,
+    ...security2,
     alt: 'A futuristic control room with a large central column displaying various data on high-tech screens. The room is filled with multiple workstations, each equipped with dual monitors showing complex graphs, charts, and data readouts. The walls and floor also feature integrated digital displays, creating an immersive environment of advanced technology and data analysis.',
   },
   security3: {
-    data: security3,
+    ...security3,
     alt: 'An illustration depicting a network of interconnected shields, each representing a node in a secure system. The shields are placed on circular platforms linked by glowing blue lines, symbolizing a robust and interconnected cybersecurity network.',
   },
   security4: {
-    data: security4,
+    ...security4,
     alt: 'An illustration showing a magnifying glass focusing on a screen displaying lines of code. The scene is filled with abstract spherical elements connected by thin lines, and a small, stylized bug is visible near the bottom, symbolizing the concept of debugging or analyzing code.',
   },
   security5: {
-    data: security5,
+    ...security5,
     alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
   },
 }

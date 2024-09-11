@@ -1,18 +1,21 @@
+import NextImage from 'next/image'
+
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
+import type { CardImageSource } from '@/types/sharedProps/imageType'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
 import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { CustomLink } from '@/components/CustomLink'
-import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
 
 type CardProps = {
@@ -21,7 +24,7 @@ type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  image?: (DynamicImageProps | StaticImageProps) & { padding?: boolean }
+  image?: CardImageSource
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -84,23 +87,23 @@ export function Card({
 Card.Image = function Image({ image }: Pick<CardProps, 'image'>) {
   if (!image) return null
 
-  const { padding, ...rest } = image
-  const isDynamicImage = 'src' in image
-  const isStaticImage = 'data' in image
+  const { alt, src, priority, sizes, padding, objectFit, ...restImageProps } =
+    image
 
-  if (!isDynamicImage && !isStaticImage) return null
-
-  const renderImage = (ImageComponent: React.ElementType) => (
+  return (
     <div className="relative aspect-video">
-      <ImageComponent
-        {...rest}
+      <NextImage
         fill
+        style={{ objectFit }}
+        alt={alt || graphicsData.imageFallback.alt}
+        src={src || graphicsData.imageFallback.src}
+        priority={priority}
+        sizes={sizes}
         className={clsx('rounded-lg px-1 pt-1', padding && 'px-6 pt-4')}
+        {...restImageProps}
       />
     </div>
   )
-
-  return isDynamicImage ? renderImage(DynamicImage) : renderImage(StaticImage)
 }
 
 Card.MetaAndTags = function MetaAndTags({

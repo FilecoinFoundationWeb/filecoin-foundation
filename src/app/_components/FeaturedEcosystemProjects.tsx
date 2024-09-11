@@ -38,12 +38,10 @@ export function FeaturedEcosystemProjects({
           }}
           image={{
             alt: '',
-            ...(image || {
-              ...graphicsData.imageFallback,
-            }),
-            fallback: graphicsData.imageFallback,
-            padding: true,
+            src: image?.src || '',
             objectFit: 'contain',
+            padding: true,
+            ...image,
             sizes: buildImageSizeProp({
               startSize: '100vw',
               sm: '320px',

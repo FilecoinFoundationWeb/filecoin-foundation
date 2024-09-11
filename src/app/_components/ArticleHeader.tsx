@@ -1,14 +1,15 @@
-import type { ImageProps } from '@/types/sharedProps/imageType'
+import Image from 'next/image'
+
+import type { DynamicImageData } from '@/types/sharedProps/imageType'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { DynamicImage } from '@/components/DynamicImage'
 import { type HeadingProps, Heading } from '@/components/Heading'
 
 type ArticleHeaderProps = {
-  image?: ImageProps
+  image?: DynamicImageData
   children?: React.ReactNode
 }
 
@@ -20,17 +21,15 @@ export function ArticleHeader({ image, children }: ArticleHeaderProps) {
   return (
     <header className="space-y-6">
       <div className="space-y-6">{children}</div>
-
       <div className="relative aspect-video">
-        <DynamicImage
+        <Image
           fill
           priority
           quality={100}
-          src={image?.src || ''}
-          alt={image?.alt || ''}
+          src={image?.src || graphicsData.imageFallback.src}
+          alt={image?.alt || graphicsData.imageFallback.alt}
           className="rounded-lg"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
-          fallback={graphicsData.imageFallback}
         />
       </div>
     </header>

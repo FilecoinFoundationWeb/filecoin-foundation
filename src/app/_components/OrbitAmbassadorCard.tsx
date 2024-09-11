@@ -1,9 +1,10 @@
+import Image from 'next/image'
+
 import { clsx } from 'clsx'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { BasicCard } from '@/components/BasicCard'
-import { StaticImage } from '@/components/StaticImage'
 
 import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 
@@ -20,6 +21,8 @@ export function OrbitAmbassadorCard({
 }: OrbitAmbassadorCardProps) {
   const isImagePositionOdd = index % 2 === 1
 
+  const { alt, ...restImageProps } = image
+
   return (
     <article
       className={clsx(
@@ -28,9 +31,10 @@ export function OrbitAmbassadorCard({
       )}
     >
       <div className="relative h-48 flex-shrink-0 sm:h-64 lg:h-auto lg:w-1/3">
-        <StaticImage
-          {...image}
+        <Image
           fill
+          alt={alt}
+          {...restImageProps}
           className="h-full w-full rounded-lg"
           sizes={buildImageSizeProp({
             startSize: '100vw',

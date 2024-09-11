@@ -1,6 +1,7 @@
 import path from 'path'
 
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
@@ -40,7 +41,6 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
-import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getInvolvedData } from './data/getInvolvedData'
@@ -106,6 +106,9 @@ export default function Events({ searchParams }: Props) {
 
   const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
+  const { alt: altEvent2, ...restEvent2 } = graphicsData.events2
+  const { alt: altEvent3, ...restEvent3 } = graphicsData.events3
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -117,7 +120,8 @@ export default function Events({ searchParams }: Props) {
         image={{
           alt: '',
           ...(featuredEvent.image || graphicsData.events1),
-          fallback: graphicsData.events1,
+          height: graphicsData.imageFallback.height,
+          width: graphicsData.imageFallback.width,
         }}
         cta={{
           href: featuredEvent.externalLink
@@ -207,10 +211,8 @@ export default function Events({ searchParams }: Props) {
                           tagLabel={tagLabel}
                           image={{
                             alt: '',
-                            ...(image || {
-                              ...graphicsData.imageFallback,
-                            }),
-                            fallback: graphicsData.imageFallback,
+                            src: image?.src || '',
+                            fill: true,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '350px',
@@ -249,8 +251,9 @@ export default function Events({ searchParams }: Props) {
       >
         <CardGrid cols="mdTwo" as="div">
           <div className="row-span-2 h-96 md:h-auto">
-            <StaticImage
-              {...graphicsData.events2}
+            <Image
+              alt={altEvent2}
+              {...restEvent2}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
@@ -266,8 +269,9 @@ export default function Events({ searchParams }: Props) {
             </div>
           ))}
           <div className="h-48 md:h-56">
-            <StaticImage
-              {...graphicsData.events3}
+            <Image
+              alt={altEvent3}
+              {...restEvent3}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />

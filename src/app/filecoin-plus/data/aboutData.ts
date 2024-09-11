@@ -1,11 +1,11 @@
-import { graphicsData } from '@/data/graphicsData'
+import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
 
-import type { StaticImageProps } from '@/components/StaticImage'
+import { graphicsData } from '@/data/graphicsData'
 
 export type AboutData = {
   title: string
   description: string
-  image: StaticImageProps
+  image: StaticImageDataWithAlt
 }
 
 export const aboutData: Array<AboutData> = [

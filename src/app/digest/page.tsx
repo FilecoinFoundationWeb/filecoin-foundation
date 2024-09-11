@@ -77,7 +77,6 @@ export default function Digest() {
                   ...(image || {
                     ...graphicsData.imageFallback,
                   }),
-                  fallback: graphicsData.imageFallback,
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',

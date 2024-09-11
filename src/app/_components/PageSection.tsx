@@ -1,3 +1,6 @@
+import type { ImageProps } from 'next/image'
+import Image from 'next/image'
+
 import { clsx } from 'clsx'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
@@ -15,13 +18,12 @@ import {
   SectionDivider,
   type SectionDividerProps,
 } from '@/components/SectionDivider'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 type PageSectionProps = {
   kicker: SectionDividerProps['title']
   title: string
   description?: DescriptionTextType
-  image?: StaticImageProps
+  image?: ImageProps
   cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
 }
@@ -34,6 +36,14 @@ export function PageSection({
   children,
   cta,
 }: PageSectionProps) {
+  const {
+    alt,
+    src,
+    width: _width,
+    height: _height,
+    ...restImageProps
+  } = image || {}
+
   return (
     <section>
       <SectionDivider title={kicker} />
@@ -56,11 +66,13 @@ export function PageSection({
 
         {image && (
           <div className="relative aspect-video lg:aspect-auto">
-            <StaticImage
-              {...image}
+            <Image
               fill
+              src={src || ''}
+              alt={alt || ''}
               className="rounded-lg"
               sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+              {...restImageProps}
             />
           </div>
         )}

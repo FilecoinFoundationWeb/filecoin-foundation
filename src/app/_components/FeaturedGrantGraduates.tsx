@@ -37,12 +37,10 @@ export function FeaturedGrantsGraduates({
           }}
           image={{
             alt: '',
-            ...(image || {
-              ...graphicsData.imageFallback,
-            }),
-            fallback: graphicsData.imageFallback,
-            objectFit: 'contain',
+            src: image?.src || '',
             padding: true,
+            objectFit: 'contain',
+            ...image,
             sizes: buildImageSizeProp({
               startSize: '100vw',
               sm: '175px',
