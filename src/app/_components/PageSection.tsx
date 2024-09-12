@@ -39,10 +39,11 @@ export function PageSection({
       <SectionDivider title={kicker} />
 
       <div
-        className={clsx(
-          'mb-6 mt-4',
-          image ? 'grid grid-cols-1 gap-6 lg:grid-cols-2' : 'max-w-readable',
-        )}
+        className={clsx('mt-4', {
+          'grid grid-cols-1 gap-6 lg:grid-cols-2': image,
+          'max-w-readable': !image,
+          'mb-6': children,
+        })}
       >
         <div className="space-y-4">
           <Heading tag="h2" variant="3xl">
