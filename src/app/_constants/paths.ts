@@ -91,6 +91,7 @@ export const PATHS = {
     '/ecosystem-explorer',
     'Ecosystem Explorer',
     {
+      hasSubpaths: true,
       includesEntries: true,
       customEntriesContentPath: '/ecosystem-explorer/projects/',
     },

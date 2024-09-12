@@ -34,12 +34,6 @@ const FILECOIN_FOUNDATION_URLS = {
       href: 'https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form',
     },
   },
-  ecosystem: {
-    submitOrUpdateProjectForm: {
-      label: 'Submit or Update Your Project',
-      href: 'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
-    },
-  },
   events: {
     orbitAmbassadorForm:
       'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',

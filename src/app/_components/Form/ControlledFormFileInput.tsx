@@ -26,7 +26,7 @@ type BaseControlledFormFileInputProps = Omit<
 
 interface ControlledFormFileInputProps<FormValues extends FieldValues>
   extends BaseControlledFormFileInputProps {
-  name: FieldPathByValue<FormValues, FileList>
+  name: FieldPathByValue<FormValues, Array<File>>
 }
 
 export function ControlledFormFileInput<FormValues extends FieldValues>({

@@ -1,18 +1,26 @@
-import { useForm } from 'react-hook-form'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { PATHS } from '@/constants/paths'
+import {
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+  PATHS,
+} from '@/constants/paths'
 
 import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
+import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 
-import { ControlledForm } from '@/components/Form/ControlledForm'
-import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { ErrorNotification } from './components/ErrorNotification'
+import { ProjectForm } from './components/ProjectForm'
+import { SuccessMessage } from './components/SuccessMessage'
+import { SearchParamsSchema } from './schema/searchParams'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getFormInitialValue } from './utils/getFormInitialValue'
 
 const { header, seo } = attributes
 
@@ -21,27 +29,39 @@ export const metadata = createMetadata({
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })
 
-export default function EcosystemExplorerProjectForm() {
-  const methods = useForm()
+const categoryData = getCategoryDataFromDirectory(
+  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
+)
+
+const subCategoryData = getCategoryDataFromDirectory(
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+)
+
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
+  const safeParams = SearchParamsSchema.safeParse(searchParams)
+
+  if (safeParams.data?.status === 'success') {
+    return <SuccessMessage prNumber={safeParams.data.prNumber} />
+  }
+
+  const initialValues = getFormInitialValue()
 
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader title={header.title} description={header.description} />
-
-      <ControlledForm methods={methods} onSubmit={console.log}>
-        <Heading tag="h3" variant="xl">
-          Personal Information
-        </Heading>
-        <p className="mt-2">
-          We'll use this to verify your site updates and reach out to you in
-          case of questions.
-        </p>
-
-        <Heading tag="h3" variant="xl">
-          Project Details
-        </Heading>
-      </ControlledForm>
+      <ProjectForm
+        categoryData={categoryData}
+        subCategoryData={subCategoryData}
+        initialValues={initialValues}
+      />
+      {safeParams.data?.status === 'error' && (
+        <ErrorNotification message={safeParams.data.message} />
+      )}
     </PageLayout>
   )
 }
