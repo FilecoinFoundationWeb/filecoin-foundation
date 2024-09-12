@@ -15,7 +15,7 @@ export function KeyMemberCard({
   linkedin,
   image,
 }: KeyMemberCardProps) {
-  const { src, alt: _alt, ...restImageProps } = image
+  const { src, ...restImageProps } = image
 
   return (
     <li className="relative flex rounded-lg border border-brand-500 p-1">

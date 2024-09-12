@@ -1,10 +1,10 @@
-import type { Route } from 'next'
+import type { StaticImageData } from 'next/image'
 
-import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
+import type { Route } from 'next'
 
 export type MemberData = {
   name: string
   title: string
   linkedin: Route
-  image: StaticImageDataWithAlt
+  image: StaticImageData
 }
