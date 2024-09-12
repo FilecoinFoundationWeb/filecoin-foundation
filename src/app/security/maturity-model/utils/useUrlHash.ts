@@ -19,12 +19,12 @@ export function useUrlHash() {
 
   function updateHash(sectionId: string) {
     const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
-    const pathnameWithNewSectionHash = pathname + sectionHash
 
     if (sectionHash === hash) {
       return
     }
 
+    const pathnameWithNewSectionHash = `${pathname}${sectionHash}`
     router.replace(pathnameWithNewSectionHash as Route, { scroll: false })
 
     if (windowIsDefined()) {

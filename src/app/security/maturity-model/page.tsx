@@ -48,17 +48,11 @@ export default function MaturityModel() {
       <PageSection
         kicker="Tailored Security Maturity"
         title="How to Leverage the Model"
-        description="The Web3 Security Maturity Model is broken up into 9 core functions. Each core function is divided into functional areas that are broken into two streams with control criteria."
+        description={[
+          'The Web3 Security Maturity Model is broken up into 9 core functions. Each core function is divided into functional areas that are broken into two streams with control criteria.',
+          'This maturity framework does not require all organizations to achieve the maximum maturity level in every category. Instead, it allows organizations to define and measure their security activities in a way that is tailored to their specific needs, and it encourages organizations, projects, and users to adapt the framework based on their unique environment, goals, and existing security maturity.',
+        ]}
       >
-        <p className="mb-2 max-w-readable">
-          This maturity framework does not require all organizations to achieve
-          the maximum maturity level in every category. Instead, it allows
-          organizations to define and measure their security activities in a way
-          that is tailored to their specific needs, and it encourages
-          organizations, projects, and users to adapt the framework based on
-          their unique environment, goals, and existing security maturity.
-        </p>
-
         <BadgeCardGrid cols="smThree">
           {applicationAndUseData.map((item) => {
             const { step, title, description } = item

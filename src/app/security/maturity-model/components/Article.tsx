@@ -8,14 +8,15 @@ import { useIntersectionObserver } from 'usehooks-ts'
 
 import { Icon } from '@/components/Icon'
 
-import { useUrlHash, HASH_SIGN } from '../utils/useUrlHash'
+import { scrollToSection } from '../utils/scrollToSection'
+import { useUrlHash, HASH_SIGN, type SectionHash } from '../utils/useUrlHash'
 
-type LinkTitleProps = {
+type ArticleProps = {
   title: string
   slug: string
 } & React.ComponentPropsWithoutRef<'article'>
 
-export function Article({ title, slug, children }: LinkTitleProps) {
+export function Article({ title, slug, children }: ArticleProps) {
   const { updateHash, clearHashIfPresent } = useUrlHash()
 
   const { ref } = useIntersectionObserver({
@@ -24,7 +25,7 @@ export function Article({ title, slug, children }: LinkTitleProps) {
     },
   })
 
-  const sectionHash = HASH_SIGN + slug
+  const sectionHash = `${HASH_SIGN}${slug}`
 
   return (
     <article ref={ref}>
@@ -32,8 +33,10 @@ export function Article({ title, slug, children }: LinkTitleProps) {
         <Link
           href={sectionHash as Route}
           className="group inline-flex items-center gap-2 text-brand-100 hover:no-underline"
-          style={{
-            fontWeight: 'inherit',
+          style={{ fontWeight: 'inherit' }}
+          onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+            e.preventDefault()
+            scrollToSection(sectionHash as SectionHash)
           }}
         >
           {title}
