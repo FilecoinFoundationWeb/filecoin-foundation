@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
-import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
+import type { DynamicImageData } from '@/types/sharedProps/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -24,7 +24,7 @@ type TitleProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  image: StaticImageDataWithAlt
+  image: DynamicImageData
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -89,7 +89,13 @@ PageHeader.Image = function PageHeaderImage({
 
   return (
     <div className={clsx('relative', 'aspect-video')}>
-      <Image fill src={src} alt={alt} {...layoutProps} {...restImageProps} />
+      <Image
+        fill
+        src={src}
+        alt={alt || ''}
+        {...layoutProps}
+        {...restImageProps}
+      />
     </div>
   )
 }
