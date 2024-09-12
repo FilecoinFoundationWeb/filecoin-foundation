@@ -4,7 +4,6 @@ created-on: 2024-03-21T16:47:39.923000Z
 updated-on: 2024-03-21T16:47:39.933000Z
 published-on: 2024-03-21T16:47:39.941000Z
 location: Tokyo, Japan
-external-link: https://en.web3.teamz.co.jp/
 start-date: 2024-04-13T16:47:39.948000Z
 end-date: 2024-04-14T16:47:39.955000Z
 image:
