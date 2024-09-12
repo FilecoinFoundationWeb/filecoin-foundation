@@ -1,4 +1,4 @@
-import type { EcosystemProjectFormData } from '../components/ProjectForm'
+import type { EcosystemProjectFormData } from '../components/EcosystemProjectForm'
 
 const unselectedOption = { id: '', name: '' }
 

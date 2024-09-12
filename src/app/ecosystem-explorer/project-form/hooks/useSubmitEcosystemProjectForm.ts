@@ -1,6 +1,6 @@
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { type EcosystemProjectFormData } from '../components/ProjectForm'
+import { type EcosystemProjectFormData } from '../components/EcosystemProjectForm'
 import { YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL } from '../constants'
 import { submitProjectToGithub } from '../services/github'
 import {

@@ -6,7 +6,7 @@ export type GetMarkdownTemplateParams = {
   projectName: string
   imagePath: `${string}.${AllowedImageFormats}`
   category: string
-  subcategories: [string]
+  subcategories: Array<string>
   tech: Array<string>
   shortDescription: string
   longDescription: string

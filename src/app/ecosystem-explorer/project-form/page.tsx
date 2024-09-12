@@ -15,8 +15,8 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
-import { ProjectForm } from './components/ProjectForm'
 import { SuccessMessage } from './components/SuccessMessage'
 import { SearchParamsSchema } from './schema/searchParams'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -54,7 +54,7 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader title={header.title} description={header.description} />
-      <ProjectForm
+      <EcosystemProjectForm
         categoryData={categoryData}
         subCategoryData={subCategoryData}
         initialValues={initialValues}

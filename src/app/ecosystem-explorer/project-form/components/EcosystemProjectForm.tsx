@@ -39,7 +39,7 @@ type ProjectFormProps = {
   initialValues: EcosystemProjectFormData
 }
 
-export function ProjectForm({
+export function EcosystemProjectForm({
   categoryData,
   subCategoryData,
   initialValues,
