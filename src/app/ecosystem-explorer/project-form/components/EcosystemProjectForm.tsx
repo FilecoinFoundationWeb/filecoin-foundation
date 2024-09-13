@@ -1,5 +1,6 @@
 'use client'
 
+import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
@@ -13,7 +14,9 @@ import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInp
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
 import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
-import { FormField } from '@/components/Form/FormField'
+import { FormError } from '@/components/Form/FormError'
+import { formFieldStyle } from '@/components/Form/FormField'
+import { FormLabel } from '@/components/Form/FormLabel'
 
 import {
   BRIEF_CHARACTER_LIMIT,
@@ -89,10 +92,12 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
 
-        <FormField
-          label="Which technology does your project utilize?"
-          error={form.formState.errors.tech?.root?.message}
-        >
+        <Field className={formFieldStyle}>
+          <FormLabel
+            passive
+            label="Which technology does your project utilize?"
+            as="div"
+          />
           <div className="flex flex-col gap-4">
             <ControlledFormCheckbox<EcosystemProjectFormData>
               name="tech.filecoin"
@@ -105,7 +110,8 @@ export function EcosystemProjectForm({
               disabled={isSubmitting}
             />
           </div>
-        </FormField>
+          <FormError error={form.formState.errors.tech?.root?.message} />
+        </Field>
 
         <ControlledFormListbox<EcosystemProjectFormData>
           name="yearJoined"
