@@ -17,7 +17,7 @@ const FILECOIN_FOUNDATION_GITHUB_PR_URL = `${FILECOIN_FOUNDATION_URLS.social.git
 
 export function SuccessMessage({ prNumber }: SuccessMessageProps) {
   return (
-    <section className="my-32 flex justify-center">
+    <section className="my-20 flex justify-center sm:my-32">
       <div className="max-w-[420px] space-y-6 sm:text-center">
         <div className="sm:flex sm:justify-center">
           <Icon
@@ -46,8 +46,13 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
           Explorer page.
         </p>
 
-        <Link href={PATHS.ECOSYSTEM_EXPLORER.path} className="inline-block">
-          <Button variant="primary">Go to Ecosystem Explorer Page</Button>
+        <Link
+          href={PATHS.ECOSYSTEM_EXPLORER.path}
+          className="inline-block w-full sm:w-auto"
+        >
+          <Button variant="primary" className="w-full">
+            Go to Ecosystem Explorer Page
+          </Button>
         </Link>
       </div>
     </section>

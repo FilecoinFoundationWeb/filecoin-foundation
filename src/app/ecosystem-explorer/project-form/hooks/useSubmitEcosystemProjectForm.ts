@@ -1,3 +1,5 @@
+import * as Sentry from '@sentry/nextjs'
+
 import { createDateFromYear } from '@/utils/dateUtils'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
@@ -40,7 +42,13 @@ export function useSubmitEcosystemProjectForm() {
       })
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
     } catch (error) {
-      updateSearchParams({ status: 'error', message: String(error) })
+      console.error('Error in submitProjectToGithub:', error)
+      Sentry.captureException(error)
+      updateSearchParams({
+        status: 'error',
+        message:
+          "We couldn't submit your project. Please try again or email us at info@fil.org",
+      })
     }
   }
 }

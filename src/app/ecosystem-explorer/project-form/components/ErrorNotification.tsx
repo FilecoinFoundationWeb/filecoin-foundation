@@ -11,7 +11,7 @@ import { NotificationDialog } from '@/components/NotificationDialog'
 type ErrorMessageProps = {
   message: string
 }
-const NOTIFICATION_DIALOG_DURATION_MS = 10_000
+const NOTIFICATION_DIALOG_DURATION_MS = 15_000
 
 export function ErrorNotification({ message }: ErrorMessageProps) {
   const [isOpen, setIsOpen] = useState(true)

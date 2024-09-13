@@ -31,7 +31,10 @@ export const EcosystemProjectFormSchema = z.object({
     .string()
     .min(1, { message: 'Your email is required' })
     .email({ message: 'The email format is invalid' }),
-  projectName: z.string().min(1, { message: 'Your project name is required' }),
+  projectName: z
+    .string()
+    .min(1, { message: 'Your project name is required' })
+    .max(96, { message: 'Your project name is too long' }),
   tech: z
     .object({
       filecoin: z.boolean(),
@@ -86,15 +89,15 @@ export const EcosystemProjectFormSchema = z.object({
 })
 
 function validateYoutubeUrlFormat(url: string) {
-  return url.startsWith(YOUTUBE_BASE_URL)
+  return url.includes(YOUTUBE_BASE_URL)
 }
 
 function validateGithubUrlFormat(url: string) {
-  return url.startsWith(GITHUB_BASE_URL)
+  return url.includes(GITHUB_BASE_URL)
 }
 
 function validateXUrlFormat(url: string) {
-  return url.startsWith(X_BASE_URL) || url.startsWith(TWITTER_BASE_URL)
+  return url.includes(X_BASE_URL) || url.includes(TWITTER_BASE_URL)
 }
 
 function validateOneFileSelected(files: Array<File>) {
