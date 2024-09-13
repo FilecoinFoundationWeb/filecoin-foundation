@@ -46,9 +46,9 @@ export function useSubmitEcosystemProjectForm() {
 }
 
 function keepTruthyKeysInArray(object: Record<string, boolean>) {
-  return Object.entries(object)
-    .filter(([, value]) => value)
-    .map(([key]) => key)
+  const entries = Object.entries(object)
+  const truthyValueEntries = entries.filter(([, value]) => Boolean(value))
+  return truthyValueEntries.map(([key]) => key)
 }
 
 function formatYoutubeEmbedUrl(url?: string) {
