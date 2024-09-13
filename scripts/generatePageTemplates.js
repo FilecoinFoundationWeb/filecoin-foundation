@@ -81,7 +81,7 @@ const updatePathFile = async (pageName) => {
   try {
     let data = await readFile(PATHS_FILE_PATH)
 
-    const newPathObject = `${constantCase(pageName)}: createPathObject(
+    const newPathObject = `${constantCase(pageName)}: createPathConfig(
       '/${pageName}',
       '${pageName
         .split('-')

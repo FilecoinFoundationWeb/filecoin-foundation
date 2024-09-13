@@ -13,18 +13,18 @@ type BaseControlledFormProps = Omit<
 interface ControlledFormProps<Type extends FieldValues>
   extends BaseControlledFormProps {
   onSubmit: SubmitHandler<Type>
-  methods: UseFormReturn<Type>
+  form: UseFormReturn<Type>
 }
 
 export function ControlledForm<Type extends FieldValues>({
-  methods,
+  form,
   children,
   onSubmit,
   ...rest
 }: ControlledFormProps<Type>) {
   return (
-    <FormProvider {...methods}>
-      <form onSubmit={methods.handleSubmit(onSubmit)} {...rest}>
+    <FormProvider {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} {...rest}>
         {children}
       </form>
     </FormProvider>

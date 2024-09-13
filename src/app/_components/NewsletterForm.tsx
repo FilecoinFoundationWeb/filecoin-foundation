@@ -32,12 +32,12 @@ type NotificationDialogState = {
 }
 
 export function NewsletterForm() {
-  const { methods, isSubmitting, dialogState, handleCloseDialog, onSubmit } =
+  const { form, isSubmitting, dialogState, handleCloseDialog, onSubmit } =
     useNewsletterForm()
 
   return (
     <ControlledForm<NewsLetterFormType>
-      methods={methods}
+      form={form}
       className="relative"
       onSubmit={onSubmit}
     >
@@ -69,11 +69,11 @@ export function NewsletterForm() {
 }
 
 function useNewsletterForm() {
-  const methods = useForm<NewsLetterFormType>({
+  const form = useForm<NewsLetterFormType>({
     resolver: zodResolver(NewsletterSchema),
   })
 
-  const { isSubmitting } = methods.formState
+  const { isSubmitting } = form.formState
   const [dialogState, setDialogState] = useState<NotificationDialogState>({
     isOpen: false,
   })
@@ -117,12 +117,12 @@ function useNewsletterForm() {
       })
       Sentry.captureException(error)
     } finally {
-      methods.resetField('email')
+      form.resetField('email')
     }
   }
 
   return {
-    methods,
+    form,
     isSubmitting,
     dialogState,
     handleCloseDialog,

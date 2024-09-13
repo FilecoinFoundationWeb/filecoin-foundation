@@ -22,7 +22,7 @@ type TitleProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  image: StaticImageProps | DynamicImageProps
+  image?: StaticImageProps | DynamicImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType

@@ -13,12 +13,17 @@ export const formFieldStyle = 'flex w-full flex-col gap-2'
 export function FormField({
   label,
   hideLabel,
+  addOptionalToLabel,
   error,
   children,
 }: FormFieldProps) {
   return (
     <Field className={formFieldStyle}>
-      <FormLabel label={label} hideLabel={hideLabel} />
+      <FormLabel
+        label={label}
+        hideLabel={hideLabel}
+        addOptionalToLabel={addOptionalToLabel}
+      />
       {children}
       <FormError error={error} />
     </Field>

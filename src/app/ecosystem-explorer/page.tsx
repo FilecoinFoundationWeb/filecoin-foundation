@@ -5,10 +5,9 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
-import { attributes } from '@/content/pages/ecosystem-explorer.md'
+import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -39,11 +38,6 @@ import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-
-
-
-
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -108,10 +102,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         description={header.description}
         image={graphicsData.ecosystem}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .href,
-          text: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .label,
+          text: 'Submit Your Project',
+          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
         }}
       />
 
@@ -213,10 +205,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         title="Become Part of the Expanding Ecosystem"
         description="If you’re building on Filecoin and don’t see your project or want to edit your listing, share your details."
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .href,
-          text: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .label,
+          text: 'Submit Your Project',
+          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
         }}
       />
     </PageLayout>
