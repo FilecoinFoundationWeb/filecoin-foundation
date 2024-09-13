@@ -1,6 +1,6 @@
 import type { AllowedImageFormats } from './fileUtils'
 
-export type GetMarkdownTemplateParams = {
+export type MarkdownTemplateParams = {
   encryptedName: string
   encryptedEmail: string
   projectName: string
@@ -20,7 +20,7 @@ export type GetMarkdownTemplateParams = {
   publishedOn: string
 }
 
-export function getMarkdownTemplate(data: GetMarkdownTemplateParams) {
+export function getMarkdownTemplate(data: MarkdownTemplateParams) {
   return `---
 ${renderValue('title', data.projectName)}
 ${renderValue('created-on', data.createdOn)}
@@ -48,9 +48,9 @@ ${data.longDescription.trim()}
 }
 
 type OptionalValues = {
-  repo: GetMarkdownTemplateParams['githubUrl']
-  'video-url': GetMarkdownTemplateParams['youtubeUrl']
-  twitter: GetMarkdownTemplateParams['xHandle']
+  repo: MarkdownTemplateParams['githubUrl']
+  'video-url': MarkdownTemplateParams['youtubeUrl']
+  twitter: MarkdownTemplateParams['xHandle']
 }
 
 function renderOptionalValues(values: OptionalValues) {

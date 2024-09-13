@@ -13,7 +13,7 @@ import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
 import type { AllowedImageFormats } from './utils/fileUtils'
 import {
   getMarkdownTemplate,
-  type GetMarkdownTemplateParams,
+  type MarkdownTemplateParams,
 } from './utils/markdownUtils'
 import { getFolderPaths } from './utils/pathUtils'
 
@@ -21,19 +21,22 @@ type SubmitProjectParams = {
   name: string
   email: string
   timestampISO: string
+  yearJoinedISO: string
   logo: {
     base64: string
     format: AllowedImageFormats
   }
-} & Omit<
-  GetMarkdownTemplateParams,
-  | 'imagePath'
-  | 'encryptedName'
-  | 'encryptedEmail'
-  | 'createdOn'
-  | 'updatedOn'
-  | 'publishedOn'
->
+  projectName: MarkdownTemplateParams['projectName']
+  category: MarkdownTemplateParams['category']
+  subcategories: MarkdownTemplateParams['subcategories']
+  tech: MarkdownTemplateParams['tech']
+  shortDescription: MarkdownTemplateParams['shortDescription']
+  longDescription: MarkdownTemplateParams['longDescription']
+  websiteUrl: MarkdownTemplateParams['websiteUrl']
+  youtubeUrl: MarkdownTemplateParams['youtubeUrl']
+  githubUrl: MarkdownTemplateParams['githubUrl']
+  xHandle: MarkdownTemplateParams['xHandle']
+}
 
 export async function submitProjectToGithub(data: SubmitProjectParams) {
   const { mediaFolder, ecosystemFolder, publicFolder } = getFolderPaths()
@@ -56,7 +59,7 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
     tech: data.tech,
     shortDescription: data.shortDescription,
     longDescription: data.longDescription,
-    yearJoined: data.yearJoined,
+    yearJoined: data.yearJoinedISO,
     websiteUrl: data.websiteUrl,
     youtubeUrl: data.youtubeUrl,
     githubUrl: data.githubUrl,

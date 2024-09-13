@@ -1,3 +1,5 @@
+import { createDateFromYear } from '@/utils/dateUtils'
+
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { type EcosystemProjectFormData } from '../components/EcosystemProjectForm'
@@ -12,9 +14,10 @@ export function useSubmitEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
 
   return async function submit(data: EcosystemProjectFormData) {
-    try {
-      const logo = data.files[0]
+    const logo = data.files[0]
+    const yearJoined = Number(data.yearJoined.name)
 
+    try {
       const pullRequest = await submitProjectToGithub({
         name: data.name,
         email: data.email,
@@ -28,7 +31,7 @@ export function useSubmitEcosystemProjectForm() {
         tech: keepTruthyKeysInArray(data.tech),
         shortDescription: data.briefSummary,
         longDescription: data.networkUseCase,
-        yearJoined: data.yearJoined.name,
+        yearJoinedISO: createDateFromYear(yearJoined).toISOString(),
         websiteUrl: data.websiteUrl,
         youtubeUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
         githubUrl: data.githubUrl,
