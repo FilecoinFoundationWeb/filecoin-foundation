@@ -33,9 +33,9 @@ type SubmitProjectParams = {
   shortDescription: MarkdownTemplateParams['shortDescription']
   longDescription: MarkdownTemplateParams['longDescription']
   websiteUrl: MarkdownTemplateParams['websiteUrl']
-  youtubeUrl: MarkdownTemplateParams['youtubeUrl']
+  youtubeEmbedUrl: MarkdownTemplateParams['youtubeUrl']
   githubUrl: MarkdownTemplateParams['githubUrl']
-  xHandle: MarkdownTemplateParams['xHandle']
+  xUrl: MarkdownTemplateParams['xUrl']
 }
 
 export async function submitProjectToGithub(data: SubmitProjectParams) {
@@ -61,9 +61,9 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
     longDescription: data.longDescription,
     yearJoined: data.yearJoinedISO,
     websiteUrl: data.websiteUrl,
-    youtubeUrl: data.youtubeUrl,
+    youtubeUrl: data.youtubeEmbedUrl,
     githubUrl: data.githubUrl,
-    xHandle: data.xHandle,
+    xUrl: data.xUrl,
     createdOn: data.timestampISO,
     updatedOn: data.timestampISO,
     publishedOn: data.timestampISO,

@@ -206,9 +206,9 @@ export function EcosystemProjectForm({
 
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           optionalLabel
-          name="xHandle"
-          label="X Handle"
-          placeholder="X Handle"
+          name="xUrl"
+          label="X (Twitter) Profile URL"
+          placeholder="X (Twitter) Profile URL"
           type="url"
           disabled={isSubmitting}
         />

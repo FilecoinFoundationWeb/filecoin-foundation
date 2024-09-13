@@ -14,7 +14,7 @@ export type MarkdownTemplateParams = {
   websiteUrl: string
   youtubeUrl?: string
   githubUrl?: string
-  xHandle?: string
+  xUrl?: string
   createdOn: string
   updatedOn: string
   publishedOn: string
@@ -40,7 +40,7 @@ ${renderValue('year-joined', data.yearJoined)}
 ${renderOptionalValues({
   repo: data.githubUrl,
   'video-url': data.youtubeUrl,
-  twitter: data.xHandle,
+  twitter: data.xUrl,
 })}
 seo:
   ${renderValue('title', data.projectName)}
@@ -54,7 +54,7 @@ ${data.longDescription.trim()}
 type OptionalValues = {
   repo: MarkdownTemplateParams['githubUrl']
   'video-url': MarkdownTemplateParams['youtubeUrl']
-  twitter: MarkdownTemplateParams['xHandle']
+  twitter: MarkdownTemplateParams['xUrl']
 }
 
 function renderOptionalValues(values: OptionalValues) {

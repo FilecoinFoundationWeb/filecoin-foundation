@@ -72,7 +72,7 @@ export const EcosystemProjectFormSchema = z.object({
     })
     .optional()
     .or(EmptyStringSchema),
-  xHandle: z
+  xUrl: z
     .string()
     .url(invalidUrlMessage)
     .refine(validateTwitterUrlFormat, {

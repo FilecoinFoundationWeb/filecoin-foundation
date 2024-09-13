@@ -33,9 +33,9 @@ export function useSubmitEcosystemProjectForm() {
         longDescription: data.networkUseCase,
         yearJoinedISO: createDateFromYear(yearJoined).toISOString(),
         websiteUrl: data.websiteUrl,
-        youtubeUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
+        youtubeEmbedUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
         githubUrl: data.githubUrl,
-        xHandle: data.xHandle,
+        xUrl: data.xUrl,
         timestampISO: new Date().toISOString(),
       })
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
