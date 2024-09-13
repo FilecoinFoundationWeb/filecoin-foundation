@@ -10,8 +10,13 @@ const payloadSchema = z.object({
   operation: z.enum(['encrypt', 'decrypt']),
 })
 
-async function handleRequest(request: NextRequest) {
+export async function POST(request: NextRequest) {
+  const bearerToken = request.headers.get('Authorization')
+
   try {
+    const token = getAuthToken(bearerToken)
+    validateAuthToken(token)
+
     const payload = await request.json()
     const { value, operation } = payloadSchema.parse(payload)
 
@@ -34,10 +39,6 @@ async function handleRequest(request: NextRequest) {
   }
 }
 
-export async function POST(request: NextRequest) {
-  return handleRequest(request)
-}
-
 export async function GET() {
   const { fields } = getCollectionConfig('ecosystem_projects')
 
@@ -57,4 +58,28 @@ export async function GET() {
   }
 
   return Response.json(config)
+}
+
+function validateAuthToken(token: string) {
+  if (token !== process.env.ENCRYPTION_ENDPOINT_ACCESS_KEY) {
+    throw new Error('Invalid access key')
+  }
+}
+
+function getAuthToken(bearerToken: string | null) {
+  if (!bearerToken) {
+    throw new Error('Missing Authorization header')
+  }
+
+  const [bearer, token] = bearerToken.split(' ')
+
+  if (bearer !== 'Bearer') {
+    throw new Error('Invalid Authorization header')
+  }
+
+  if (!token) {
+    throw new Error('Missing Authorization header')
+  }
+
+  return token
 }
