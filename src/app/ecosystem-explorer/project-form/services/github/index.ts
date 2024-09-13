@@ -8,7 +8,7 @@ import { encrypt } from '@/utils/encryption'
 import { createBlob } from './api/createBlob'
 import { createCommit } from './api/createCommit'
 import { createPR } from './api/createPr'
-import { createTree } from './api/createTree'
+import { createTreeBlobs } from './api/createTreeBlobs'
 import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
 import type { AllowedImageFormats } from './utils/fileUtils'
 import {
@@ -71,24 +71,20 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
 
   const latestCommitOnMain = await getLatestCommitOnMain()
 
-  const { markdownBlob, imageBlob } = await createProjectBlobs({
+  const { markdownBlob, imageBlob } = await createBlobs({
     markdownTemplate,
     logo: data.logo,
   })
 
-  const newTree = await createTree({
+  const newTree = await createTreeBlobs({
     baseTreeSha: latestCommitOnMain.commit.tree.sha,
-    newTrees: [
+    newBlobs: [
       {
         path: `${mediaFolder}/${slug}.${data.logo.format}`,
-        mode: '100644',
-        type: 'blob',
         sha: imageBlob.sha,
       },
       {
         path: `${ecosystemFolder}/${slug}.md`,
-        mode: '100644',
-        type: 'blob',
         sha: markdownBlob.sha,
       },
     ],
@@ -109,15 +105,12 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
   return newPullRequest
 }
 
-type CreateProjectBlobsParams = {
+type CreateBlobsParams = {
   markdownTemplate: string
   logo: SubmitProjectParams['logo']
 }
 
-async function createProjectBlobs({
-  markdownTemplate,
-  logo,
-}: CreateProjectBlobsParams) {
+async function createBlobs({ markdownTemplate, logo }: CreateBlobsParams) {
   const [markdownBlob, imageBlob] = await Promise.all([
     createBlob(markdownTemplate, 'utf-8'),
     createBlob(logo.base64, 'base64'),
