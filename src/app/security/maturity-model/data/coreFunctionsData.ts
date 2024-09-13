@@ -1,4 +1,4 @@
-import { type SecurityMaturityModelAttributes } from '@/types/attributesTypes'
+import slugify from 'slugify'
 
 import {
   attributes as assetManagementAttributes,
@@ -37,13 +37,7 @@ import {
   react as SoftwareSecurity,
 } from '../content/software-security.md'
 
-type CoreFunction = {
-  order: SecurityMaturityModelAttributes['order']
-  title: SecurityMaturityModelAttributes['title']
-  Content: React.ComponentType
-}
-
-export const coreFunctionsData: Array<CoreFunction> = [
+const coreFunctionsBaseData = [
   {
     order: leadershipAndOrganizationalPrinciplesAttributes.order,
     title: leadershipAndOrganizationalPrinciplesAttributes.title,
@@ -92,3 +86,8 @@ export const coreFunctionsData: Array<CoreFunction> = [
     Content: IncidentResponse,
   },
 ]
+
+export const coreFunctionsData = coreFunctionsBaseData.map((item) => ({
+  ...item,
+  slug: slugify(item.title, { lower: true, strict: true, trim: true }),
+}))
