@@ -6,13 +6,13 @@ import { clsx } from 'clsx'
 export type FormLabelProps = {
   label: string
   hideLabel?: boolean
-  optionalLabel?: boolean
+  addOptionalToLabel?: boolean
 }
 
 export function FormLabel({
   label,
   hideLabel = false,
-  optionalLabel = false,
+  addOptionalToLabel = false,
 }: FormLabelProps) {
   return (
     <Label
@@ -22,7 +22,7 @@ export function FormLabel({
       )}
     >
       {label}
-      {optionalLabel && (
+      {addOptionalToLabel && (
         <span className="ml-2 inline-block font-light lowercase">
           (optional)
         </span>

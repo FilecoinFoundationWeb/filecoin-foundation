@@ -13,7 +13,7 @@ export type FormInputProps = Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
 export function FormInput({
   label,
   hideLabel,
-  optionalLabel,
+  addOptionalToLabel,
   error,
   ...rest
 }: FormInputProps) {
@@ -21,7 +21,7 @@ export function FormInput({
     <FormField
       label={label}
       hideLabel={hideLabel}
-      optionalLabel={optionalLabel}
+      addOptionalToLabel={addOptionalToLabel}
       error={error}
     >
       <Input

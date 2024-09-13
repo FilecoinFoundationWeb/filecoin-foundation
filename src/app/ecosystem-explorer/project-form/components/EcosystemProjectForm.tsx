@@ -187,7 +187,7 @@ export function EcosystemProjectForm({
         />
 
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
-          optionalLabel
+          addOptionalToLabel
           name="youtubeUrl"
           label="Youtube Video URL"
           placeholder="Video URL"
@@ -196,7 +196,7 @@ export function EcosystemProjectForm({
         />
 
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
-          optionalLabel
+          addOptionalToLabel
           name="githubUrl"
           label="GitHub Repository URL"
           placeholder="GitHub Repository URL"
@@ -205,7 +205,7 @@ export function EcosystemProjectForm({
         />
 
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
-          optionalLabel
+          addOptionalToLabel
           name="xUrl"
           label="X (Twitter) Profile URL"
           placeholder="X (Twitter) Profile URL"
