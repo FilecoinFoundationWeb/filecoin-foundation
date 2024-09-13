@@ -15,6 +15,8 @@ import { Icon, type IconProps } from '@/components/Icon'
 import { ListboxButtonText } from './ListboxButtonText'
 import { ListboxOptionText } from './ListboxOptionText'
 
+const listboxRenderedAs = 'div'
+
 export type OptionType = {
   id: string
   name: string
@@ -29,7 +31,10 @@ export type FormListboxProps<Option extends OptionType = OptionType> = {
   placeholder: string
   icon?: IconProps['component']
   innerWidth?: `w-${keyof typeof theme.spacing}`
-} & Omit<ListboxProps<'div', Option>, ExcludedHeadlessUIProps> &
+} & Omit<
+  ListboxProps<typeof listboxRenderedAs, Option>,
+  ExcludedHeadlessUIProps
+> &
   FormFieldProps
 
 export function FormListbox<Option extends OptionType = OptionType>({
@@ -45,9 +50,9 @@ export function FormListbox<Option extends OptionType = OptionType>({
 }: FormListboxProps<Option>) {
   return (
     <FormField label={label} hideLabel={hideLabel} error={error}>
-      <Listbox<'div', Option>
+      <Listbox<typeof listboxRenderedAs, Option>
         {...rest}
-        as="div"
+        as={listboxRenderedAs}
         by="id"
         value={value}
         invalid={Boolean(error)}
@@ -71,7 +76,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
         </ListboxButton>
         <ListboxOptions
           as="ul"
-          className="absolute z-10 mt-2 w-full overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
+          className="absolute z-10 mt-2 max-h-80 w-full overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
         >
           {options.map((option) => (
             <ListboxOption
