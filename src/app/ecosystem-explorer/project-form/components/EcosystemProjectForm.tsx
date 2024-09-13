@@ -59,7 +59,7 @@ export function EcosystemProjectForm({
   return (
     <ControlledForm<EcosystemProjectFormData>
       form={form}
-      className="max-w-readable"
+      className="md:max-w-readable"
       onSubmit={submitForm}
     >
       <FormSection

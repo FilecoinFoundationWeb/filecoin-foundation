@@ -11,6 +11,7 @@ import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 
+import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -53,7 +54,12 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <PageHeader title={header.title} description={header.description} />
+
+      <div className="space-y-4 md:max-w-readable">
+        <PageHeader.Title>{header.title}</PageHeader.Title>
+        <DescriptionText>{header.description}</DescriptionText>
+      </div>
+
       <EcosystemProjectForm
         categoryData={categoryData}
         subCategoryData={subCategoryData}
