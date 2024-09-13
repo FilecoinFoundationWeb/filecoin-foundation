@@ -34,7 +34,9 @@ export const EcosystemProjectFormSchema = z.object({
   projectName: z
     .string()
     .min(1, { message: 'Your project name is required' })
-    .max(96, { message: 'Your project name is too long' }),
+    .max(NETWORK_USE_CASE_CHARACTER_LIMIT, {
+      message: 'Your project name is too long',
+    }),
   tech: z
     .object({
       filecoin: z.boolean(),
