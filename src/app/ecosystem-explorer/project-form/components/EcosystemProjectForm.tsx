@@ -94,9 +94,8 @@ export function EcosystemProjectForm({
 
         <Field className={formFieldStyle}>
           <FormLabel
-            passive
             label="Which technology does your project utilize?"
-            as="div"
+            as="p"
           />
           <div className="flex flex-col gap-4">
             <ControlledFormCheckbox<EcosystemProjectFormData>
