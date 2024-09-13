@@ -126,7 +126,7 @@ export function EcosystemProjectForm({
 
         <ControlledFormTextarea<EcosystemProjectFormData>
           name="networkUseCase"
-          label="Network Use Case"
+          label="How do you use the Filecoin Network?"
           placeholder="Describe how your project uses the Filecoin network..."
           characterLimit={NETWORK_USE_CASE_CHARACTER_LIMIT}
           disabled={isSubmitting}
@@ -169,9 +169,9 @@ export function EcosystemProjectForm({
                 className="text-brand-300 underline hover:text-brand-400"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label='Opens "Sqoosh" in a new tab'
+                aria-label='Opens "Squoosh" in a new tab'
               >
-                Sqoosh
+                Squoosh
               </a>{' '}
               to compress your image.
             </>

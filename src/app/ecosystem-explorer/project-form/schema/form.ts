@@ -16,7 +16,7 @@ const invalidUrlMessage = { message: 'Invalid URL format' } as const
 
 const EmptyStringSchema = z.literal('')
 
-const ObtionSchema = z
+const OptionSchema = z
   .object({
     id: z.string(),
     name: z.string(),
@@ -27,8 +27,11 @@ const ObtionSchema = z
 
 export const EcosystemProjectFormSchema = z.object({
   name: z.string().min(1, { message: 'Your name is required' }),
-  email: z.string().email({ message: 'The email format is invalid' }),
-  projectName: z.string().min(1, { message: 'Your name is required' }),
+  email: z
+    .string()
+    .min(1, { message: 'Your email is required' })
+    .email({ message: 'The email format is invalid' }),
+  projectName: z.string().min(1, { message: 'Your project name is required' }),
   tech: z
     .object({
       filecoin: z.boolean(),
@@ -38,7 +41,7 @@ export const EcosystemProjectFormSchema = z.object({
       message: 'Select at least one technology',
       path: ['root'],
     }),
-  yearJoined: ObtionSchema,
+  yearJoined: OptionSchema,
   briefSummary: z
     .string()
     .min(1, { message: 'The brief summary is required' })
@@ -49,8 +52,8 @@ export const EcosystemProjectFormSchema = z.object({
     .max(NETWORK_USE_CASE_CHARACTER_LIMIT, {
       message: 'The description is too long',
     }),
-  category: ObtionSchema,
-  topic: ObtionSchema,
+  category: OptionSchema,
+  topic: OptionSchema,
   files: z
     .array(z.instanceof(File))
     .refine(validateOneFileSelected, { message: 'A logo is required' })
@@ -75,7 +78,7 @@ export const EcosystemProjectFormSchema = z.object({
   xUrl: z
     .string()
     .url(invalidUrlMessage)
-    .refine(validateTwitterUrlFormat, {
+    .refine(validateXUrlFormat, {
       message: `URL must start with ${X_BASE_URL} or ${TWITTER_BASE_URL}`,
     })
     .optional()
@@ -90,7 +93,7 @@ function validateGithubUrlFormat(url: string) {
   return url.startsWith(GITHUB_BASE_URL)
 }
 
-function validateTwitterUrlFormat(url: string) {
+function validateXUrlFormat(url: string) {
   return url.startsWith(X_BASE_URL) || url.startsWith(TWITTER_BASE_URL)
 }
 
