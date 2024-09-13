@@ -18,7 +18,6 @@ tech:
   - filecoin
   - ipfs
 year-joined: 2024
-
 seo:
   title: Project Name Project Name Project Name
   description: Summary Summary Summary Summary
