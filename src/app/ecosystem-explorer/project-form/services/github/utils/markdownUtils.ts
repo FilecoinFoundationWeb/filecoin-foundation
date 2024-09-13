@@ -37,7 +37,11 @@ ${renderValue('description', data.shortDescription)}
 ${renderValue('website', data.websiteUrl)}
 ${renderArray('tech', data.tech)}
 ${renderValue('year-joined', data.yearJoined)}
-${renderOptionalValues({ repo: data.githubUrl, 'video-url': data.youtubeUrl, twitter: data.xHandle })}
+${renderOptionalValues({
+  repo: data.githubUrl,
+  'video-url': data.youtubeUrl,
+  twitter: data.xHandle,
+})}
 seo:
   ${renderValue('title', data.projectName)}
   ${renderValue('description', data.shortDescription)}
@@ -54,8 +58,14 @@ type OptionalValues = {
 }
 
 function renderOptionalValues(values: OptionalValues) {
-  return Object.entries(values)
-    .filter(([_, value]) => value)
+  const entries = Object.entries(values)
+  const truthyValueEntries = entries.filter(([, value]) => Boolean(value))
+
+  if (truthyValueEntries.length === 0) {
+    return ''
+  }
+
+  return truthyValueEntries
     .map(([key, value]) => renderValue(key, value!))
     .join('\n')
 }
