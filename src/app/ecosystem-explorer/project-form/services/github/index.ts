@@ -3,125 +3,118 @@
 import slugify from 'slugify'
 
 import { getTodayISO } from '@/utils/dateUtils'
+import { encrypt } from '@/utils/encryption'
 
 import { createBlob } from './api/createBlob'
 import { createCommit } from './api/createCommit'
 import { createPR } from './api/createPr'
-import { createTree } from './api/createTree'
+import { createTreeBlobs } from './api/createTreeBlobs'
 import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
 import type { AllowedImageFormats } from './utils/fileUtils'
-import { getMarkdownTemplate } from './utils/markdownUtils'
+import {
+  getMarkdownTemplate,
+  type MarkdownTemplateParams,
+} from './utils/markdownUtils'
 import { getFolderPaths } from './utils/pathUtils'
 
-type CreateProjectBlobsParams = {
-  markdownTemplate: string
-  logo: SubmitProjectParams['logo']
-}
-
-async function createProjectBlobs({
-  markdownTemplate,
-  logo,
-}: CreateProjectBlobsParams) {
-  const [markdownBlob, imageBlob] = await Promise.all([
-    createBlob(markdownTemplate, 'utf-8'),
-    createBlob(logo.base64, 'base64'),
-  ])
-  return { markdownBlob, imageBlob }
-}
-
-type CreateNewTreeParams = {
-  latestCommitOnMain: Awaited<ReturnType<typeof getLatestCommitOnMain>>
-  mediaFolder: string
-  ecosystemFolder: string
-  slug: string
-  logo: SubmitProjectParams['logo']
-  markdownBlob: Awaited<ReturnType<typeof createBlob>>
-  imageBlob: Awaited<ReturnType<typeof createBlob>>
-}
-
-function createProjectTree({
-  latestCommitOnMain,
-  mediaFolder,
-  ecosystemFolder,
-  slug,
-  logo,
-  markdownBlob,
-  imageBlob,
-}: CreateNewTreeParams) {
-  return createTree({
-    baseTreeSha: latestCommitOnMain.commit.tree.sha,
-    newTrees: [
-      {
-        path: `${mediaFolder}/${slug}.${logo.format}`,
-        mode: '100644',
-        type: 'blob',
-        sha: imageBlob.sha,
-      },
-      {
-        path: `${ecosystemFolder}/${slug}.md`,
-        mode: '100644',
-        type: 'blob',
-        sha: markdownBlob.sha,
-      },
-    ],
-  })
-}
-
 type SubmitProjectParams = {
-  projectName: string
+  name: string
+  email: string
+  timestampISO: string
+  yearJoinedISO: string
   logo: {
     base64: string
     format: AllowedImageFormats
   }
+  projectName: MarkdownTemplateParams['projectName']
+  category: MarkdownTemplateParams['category']
+  subcategories: MarkdownTemplateParams['subcategories']
+  tech: MarkdownTemplateParams['tech']
+  shortDescription: MarkdownTemplateParams['shortDescription']
+  longDescription: MarkdownTemplateParams['longDescription']
+  websiteUrl: MarkdownTemplateParams['websiteUrl']
+  youtubeEmbedUrl: MarkdownTemplateParams['youtubeUrl']
+  githubUrl: MarkdownTemplateParams['githubUrl']
+  xUrl: MarkdownTemplateParams['xUrl']
 }
 
-export async function submitProjectToGithub({
-  projectName,
-  logo,
-}: SubmitProjectParams) {
+export async function submitProjectToGithub(data: SubmitProjectParams) {
   const { mediaFolder, ecosystemFolder, publicFolder } = getFolderPaths()
-  const today = getTodayISO()
+  const todayISO = getTodayISO()
 
-  const slug = slugify(projectName, {
+  const slug = slugify(data.projectName, {
     lower: true,
     strict: true,
   })
 
-  const branchName = `ecosystem-submission/${slug}-${today}`
+  const branchName = `ecosystem-submission/${slug}-${todayISO}`
 
   const markdownTemplate = getMarkdownTemplate({
-    projectName,
-    imagePath: `${publicFolder}/${slug}.${logo.format}`,
+    encryptedEmail: encrypt(data.email),
+    encryptedName: encrypt(data.name),
+    projectName: data.projectName,
+    imagePath: `${publicFolder}/${slug}.${data.logo.format}`,
+    category: data.category,
+    subcategories: data.subcategories,
+    tech: data.tech,
+    shortDescription: data.shortDescription,
+    longDescription: data.longDescription,
+    yearJoined: data.yearJoinedISO,
+    websiteUrl: data.websiteUrl,
+    youtubeUrl: data.youtubeEmbedUrl,
+    githubUrl: data.githubUrl,
+    xUrl: data.xUrl,
+    createdOn: data.timestampISO,
+    updatedOn: data.timestampISO,
+    publishedOn: data.timestampISO,
   })
 
   const latestCommitOnMain = await getLatestCommitOnMain()
 
-  const { markdownBlob, imageBlob } = await createProjectBlobs({
+  const { markdownBlob, imageBlob } = await createBlobs({
     markdownTemplate,
-    logo,
+    logo: data.logo,
   })
 
-  const newTree = await createProjectTree({
-    latestCommitOnMain,
-    mediaFolder,
-    ecosystemFolder,
-    slug,
-    logo,
-    markdownBlob,
-    imageBlob,
+  const newTree = await createTreeBlobs({
+    baseTreeSha: latestCommitOnMain.commit.tree.sha,
+    newBlobs: [
+      {
+        path: `${mediaFolder}/${slug}.${data.logo.format}`,
+        sha: imageBlob.sha,
+      },
+      {
+        path: `${ecosystemFolder}/${slug}.md`,
+        sha: markdownBlob.sha,
+      },
+    ],
   })
 
   const newCommit = await createCommit({
     parentCommitSha: latestCommitOnMain.sha,
     treeSha: newTree.sha,
-    message: 'Form Submission',
+    message: `Ecosystem Project Form Submission: ${data.projectName}`,
   })
 
   const newPullRequest = await createPR({
-    title: `New submission for ${projectName}`,
+    title: `Ecosystem Project Form Submission: ${data.projectName}`,
     commitSha: newCommit.sha,
     branchName,
   })
 
   return newPullRequest
+}
+
+type CreateBlobsParams = {
+  markdownTemplate: string
+  logo: SubmitProjectParams['logo']
+}
+
+async function createBlobs({ markdownTemplate, logo }: CreateBlobsParams) {
+  const [markdownBlob, imageBlob] = await Promise.all([
+    createBlob(markdownTemplate, 'utf-8'),
+    createBlob(logo.base64, 'base64'),
+  ])
+
+  return { markdownBlob, imageBlob }
 }

@@ -17,11 +17,11 @@ type ExcludedHeadlessUIProps =
   | 'invalid'
 
 export type FormFileInputProps = {
-  files: FileList | null
+  files: Array<File> | null
   accept: Array<`.${string}`>
   maxSize: number
   description?: string | React.ReactNode
-  onChange: (files: FileList | null) => void
+  onChange: (files: Array<File> | null) => void
 } & Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
   FormFieldProps
 
@@ -47,7 +47,7 @@ export function FormFileInput({
     const files = e.target.files
 
     if (files) {
-      onChange(files)
+      onChange(Array.from(files))
     }
   }
 

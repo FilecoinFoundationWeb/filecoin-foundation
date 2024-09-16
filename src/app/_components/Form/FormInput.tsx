@@ -13,11 +13,17 @@ export type FormInputProps = Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
 export function FormInput({
   label,
   hideLabel,
+  addOptionalToLabel,
   error,
   ...rest
 }: FormInputProps) {
   return (
-    <FormField label={label} hideLabel={hideLabel} error={error}>
+    <FormField
+      label={label}
+      hideLabel={hideLabel}
+      addOptionalToLabel={addOptionalToLabel}
+      error={error}
+    >
       <Input
         {...rest}
         invalid={Boolean(error)}

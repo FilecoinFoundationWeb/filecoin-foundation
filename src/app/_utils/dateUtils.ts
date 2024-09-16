@@ -1,4 +1,4 @@
-import { format } from 'date-fns'
+import { format, isValid } from 'date-fns'
 
 export function formatDate(date: Date) {
   return format(date, 'MMM d, yyyy')
@@ -23,4 +23,14 @@ export function getUTCMidnightToday() {
   return new Date(
     Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
   )
+}
+
+export function createDateFromYear(year: number) {
+  const yearStart = new Date(year, 0, 1)
+
+  if (!isValid(yearStart)) {
+    throw new Error('Invalid year')
+  }
+
+  return yearStart
 }

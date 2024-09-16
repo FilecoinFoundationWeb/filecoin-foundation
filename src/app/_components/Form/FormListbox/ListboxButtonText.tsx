@@ -10,9 +10,9 @@ export function ListboxButtonText({
   icon,
 }: ButtonTextProps) {
   return (
-    <div className="inline-flex items-center gap-2">
+    <div className="flex w-full items-center gap-2">
       {icon && <Icon component={icon} />}
-      <span>{value?.name || placeholder}</span>
+      <span className="truncate text-left">{value?.name || placeholder}</span>
     </div>
   )
 }

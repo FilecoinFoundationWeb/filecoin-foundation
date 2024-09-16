@@ -7,12 +7,15 @@ import {
 } from '@headlessui/react'
 import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
+import theme from 'tailwindcss/defaultTheme'
 
 import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 import { Icon, type IconProps } from '@/components/Icon'
 
 import { ListboxButtonText } from './ListboxButtonText'
 import { ListboxOptionText } from './ListboxOptionText'
+
+const listboxRenderedAs = 'div'
 
 export type OptionType = {
   id: string
@@ -27,7 +30,11 @@ export type FormListboxProps<Option extends OptionType = OptionType> = {
   options: Array<Option>
   placeholder: string
   icon?: IconProps['component']
-} & Omit<ListboxProps<'div', Option>, ExcludedHeadlessUIProps> &
+  innerWidth?: `w-${keyof typeof theme.spacing}`
+} & Omit<
+  ListboxProps<typeof listboxRenderedAs, Option>,
+  ExcludedHeadlessUIProps
+> &
   FormFieldProps
 
 export function FormListbox<Option extends OptionType = OptionType>({
@@ -38,16 +45,18 @@ export function FormListbox<Option extends OptionType = OptionType>({
   value,
   placeholder,
   icon,
+  innerWidth,
   ...rest
 }: FormListboxProps<Option>) {
   return (
     <FormField label={label} hideLabel={hideLabel} error={error}>
-      <Listbox<'div', Option>
+      <Listbox<typeof listboxRenderedAs, Option>
         {...rest}
-        as="div"
+        as={listboxRenderedAs}
         by="id"
         value={value}
         invalid={Boolean(error)}
+        className={clsx('relative', innerWidth)}
       >
         <ListboxButton
           className={clsx(
@@ -55,16 +64,19 @@ export function FormListbox<Option extends OptionType = OptionType>({
             error && 'border-red-400',
           )}
         >
-          <ListboxButtonText
-            value={value}
-            placeholder={placeholder}
-            icon={icon}
-          />
+          <div className="w-11/12">
+            <ListboxButtonText
+              value={value}
+              placeholder={placeholder}
+              icon={icon}
+            />
+          </div>
+
           <Icon component={CaretDown} size={16} weight="bold" />
         </ListboxButton>
         <ListboxOptions
           as="ul"
-          className="absolute z-10 mt-2 w-full overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
+          className="absolute z-10 mt-2 max-h-80 w-full overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
         >
           {options.map((option) => (
             <ListboxOption

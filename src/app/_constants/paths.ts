@@ -15,6 +15,7 @@ export type PathValues =
   | '/blog'
   | '/digest'
   | '/ecosystem-explorer'
+  | '/ecosystem-explorer/project-form'
   | '/employee-privacy-policy'
   | '/events'
   | '/filecoin-plus'
@@ -90,9 +91,14 @@ export const PATHS = {
     '/ecosystem-explorer',
     'Ecosystem Explorer',
     {
+      hasSubpaths: true,
       includesEntries: true,
       customEntriesContentPath: '/ecosystem-explorer/projects/',
     },
+  ),
+  ECOSYSTEM_EXPLORER_PROJECT_FORM: createPathConfig(
+    '/ecosystem-explorer/project-form',
+    'Ecosystem Explorer Project Form',
   ),
   EMPLOYEE_PRIVACY_POLICY: createPathConfig(
     '/employee-privacy-policy',

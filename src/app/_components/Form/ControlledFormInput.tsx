@@ -22,15 +22,17 @@ type BaseControlledFormInputProps = Omit<
   ExcludedReactHookFormProps
 >
 
-interface ControlledFormInputProps<FormValues extends FieldValues>
-  extends BaseControlledFormInputProps {
-  name: FieldPathByValue<FormValues, string>
+interface ControlledFormInputProps<
+  FormValues extends FieldValues,
+  FieldValue extends string | undefined = string,
+> extends BaseControlledFormInputProps {
+  name: FieldPathByValue<FormValues, FieldValue>
 }
 
-export function ControlledFormInput<FormValues extends FieldValues>({
-  name,
-  ...rest
-}: ControlledFormInputProps<FormValues>) {
+export function ControlledFormInput<
+  FormValues extends FieldValues,
+  FieldValue extends string | undefined = string,
+>({ name, ...rest }: ControlledFormInputProps<FormValues, FieldValue>) {
   const {
     control,
     formState: { errors },
