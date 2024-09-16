@@ -120,8 +120,6 @@ export default function Events({ searchParams }: Props) {
         image={{
           alt: '',
           ...(featuredEvent.image || graphicsData.events1),
-          height: graphicsData.imageFallback.height,
-          width: graphicsData.imageFallback.width,
         }}
         cta={{
           href: featuredEvent.externalLink
