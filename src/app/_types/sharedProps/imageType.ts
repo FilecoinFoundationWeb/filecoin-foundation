@@ -1,6 +1,6 @@
 import type { StaticImageData } from 'next/image'
 
-export type StaticImageDataWithAlt = StaticImageData & {
+export type LocalImageData = StaticImageData & {
   alt: string
 }
 
@@ -12,12 +12,12 @@ type ImageLayoutProps = {
   objectFit?: 'cover' | 'contain'
 }
 
-export type DynamicImageData = {
+export type RemoteImageData = {
   src: string
   alt?: string
+  width?: number
+  height?: number
 }
 
-type StaticImageWithOptions = StaticImageDataWithAlt & ImageLayoutProps
-type ExternalImageWithOptions = DynamicImageData & ImageLayoutProps
-
-export type CardImageSource = StaticImageWithOptions | ExternalImageWithOptions
+export type LocalImageWithOptions = LocalImageData & ImageLayoutProps
+export type RemoteImageWithOptions = RemoteImageData & ImageLayoutProps

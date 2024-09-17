@@ -1,10 +1,10 @@
-import Image from 'next/image'
-
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+
+import { ImageWithFallback } from '@/_components/ImageWithFallback'
 
 type MarkdownContentProps = {
   children: string
@@ -18,7 +18,7 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
       className="prose"
       components={{
         img: ({ src, alt }) => (
-          <Image
+          <ImageWithFallback
             src={src || ''}
             alt={alt || ''}
             width={800}

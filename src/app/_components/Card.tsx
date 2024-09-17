@@ -1,13 +1,12 @@
-import NextImage from 'next/image'
-
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
-import type { CardImageSource } from '@/types/sharedProps/imageType'
-
-import { graphicsData } from '@/data/graphicsData'
+import type {
+  LocalImageWithOptions,
+  RemoteImageWithOptions,
+} from '@/types/sharedProps/imageType'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
@@ -15,6 +14,7 @@ import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
 
@@ -24,7 +24,7 @@ type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  image?: CardImageSource
+  image?: LocalImageWithOptions | RemoteImageWithOptions
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -92,11 +92,11 @@ Card.Image = function Image({ image }: Pick<CardProps, 'image'>) {
 
   return (
     <div className="relative aspect-video">
-      <NextImage
+      <ImageWithFallback
         fill
         style={{ objectFit }}
-        alt={alt || graphicsData.imageFallback.alt}
-        src={src || graphicsData.imageFallback.src}
+        alt={alt || ''}
+        src={src}
         priority={priority}
         sizes={sizes}
         className={clsx('rounded-lg px-1 pt-1', padding && 'px-6 pt-4')}

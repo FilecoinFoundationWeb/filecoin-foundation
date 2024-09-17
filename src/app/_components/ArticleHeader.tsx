@@ -1,15 +1,16 @@
-import Image from 'next/image'
-
-import type { DynamicImageData } from '@/types/sharedProps/imageType'
-
-import { graphicsData } from '@/data/graphicsData'
+import type {
+  RemoteImageData,
+  LocalImageData,
+} from '@/types/sharedProps/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { type HeadingProps, Heading } from '@/components/Heading'
 
+import { ImageWithFallback } from '@/_components/ImageWithFallback'
+
 type ArticleHeaderProps = {
-  image?: DynamicImageData
+  image?: RemoteImageData | LocalImageData
   children?: React.ReactNode
 }
 
@@ -22,12 +23,12 @@ export function ArticleHeader({ image, children }: ArticleHeaderProps) {
     <header className="space-y-6">
       <div className="space-y-6">{children}</div>
       <div className="relative aspect-video">
-        <Image
+        <ImageWithFallback
           fill
           priority
           quality={100}
-          src={image?.src || graphicsData.imageFallback.src}
-          alt={image?.alt || graphicsData.imageFallback.alt}
+          src={image?.src || ''}
+          alt={image?.alt || ''}
           className="rounded-lg"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
         />

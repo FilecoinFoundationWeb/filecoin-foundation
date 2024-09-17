@@ -24,33 +24,35 @@ export function FeaturedEcosystemProjects({
 
   return (
     <CardGrid cols="smTwoLgThree">
-      {ecosystemProjects.map(({ slug, title, description, image }) => (
-        <Card
-          key={slug}
-          title={title}
-          description={description}
-          borderColor="brand-300"
-          textIsClamped={true}
-          cta={{
-            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
-            text: 'Learn More',
-            icon: MagnifyingGlass,
-          }}
-          image={{
-            alt: '',
-            src: image?.src || '',
-            objectFit: 'contain',
-            padding: true,
-            ...image,
-            sizes: buildImageSizeProp({
-              startSize: '100vw',
-              sm: '320px',
-              md: '440px',
-              lg: '280px',
-            }),
-          }}
-        />
-      ))}
+      {ecosystemProjects.map(({ slug, title, description, image }) => {
+        const { src } = image || {}
+        return (
+          <Card
+            key={slug}
+            title={title}
+            description={description}
+            borderColor="brand-300"
+            textIsClamped={true}
+            cta={{
+              href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
+              text: 'Learn More',
+              icon: MagnifyingGlass,
+            }}
+            image={{
+              alt: '',
+              src: src || '',
+              objectFit: 'contain',
+              padding: true,
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '320px',
+                md: '440px',
+                lg: '280px',
+              }),
+            }}
+          />
+        )
+      })}
     </CardGrid>
   )
 }

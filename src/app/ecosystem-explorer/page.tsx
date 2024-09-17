@@ -155,6 +155,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                       const { slug, title, description, image, category } =
                         project
 
+                      const { src } = image || {}
+
                       const isFirstTwoImages = i < 2
 
                       return (
@@ -170,9 +172,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           }}
                           image={{
                             alt: '',
-                            ...(image || {
-                              ...graphicsData.imageFallback,
-                            }),
+                            src: src || '',
                             padding: true,
                             objectFit: 'contain',
                             priority: isFirstTwoImages,

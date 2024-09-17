@@ -1,7 +1,5 @@
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
@@ -35,6 +33,8 @@ export default function EventEntry({ params }: EventProps) {
 
   const { title, description, image, category, externalLink } = data
 
+  console.log({ image })
+
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -45,15 +45,12 @@ export default function EventEntry({ params }: EventProps) {
         title={title}
         description={description}
         metaData={getEventMetaData(data)}
+        image={image}
         cta={
           externalLink
             ? { href: externalLink, text: 'View More Event Details' }
             : undefined
         }
-        image={{
-          alt: '',
-          ...(image || graphicsData.imageFallback),
-        }}
       />
     </>
   )

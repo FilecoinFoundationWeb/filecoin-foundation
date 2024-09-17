@@ -1,4 +1,4 @@
-import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
+import type { LocalImageData } from '@/types/sharedProps/imageType'
 
 import { TextLink } from '@/components/TextLink'
 
@@ -11,7 +11,7 @@ import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen-orbit-china-roadsho
 import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-event.jpg'
 
 export type AmbassadorData = {
-  image: StaticImageDataWithAlt
+  image: LocalImageData
   name: string
   testimonial: Array<string> | Array<JSX.Element>
   location: string

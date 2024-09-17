@@ -1,15 +1,14 @@
-import Image from 'next/image'
-
-import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
+import type { LocalImageData } from '@/types/sharedProps/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Heading } from '@/components/Heading'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 export type FocusAreaCardProps = {
   title: string
   description: string
-  image: StaticImageDataWithAlt
+  image: LocalImageData
 }
 
 export function FocusAreaCard({
@@ -17,13 +16,17 @@ export function FocusAreaCard({
   description,
   image,
 }: FocusAreaCardProps) {
-  const { alt, ...restImageProps } = image
+  const { src, alt, height, width, blurDataURL } = image
+
   return (
     <li className="rounded-lg border border-brand-300 p-1 sm:flex lg:block">
-      <Image
+      <ImageWithFallback
+        src={src}
         alt={alt}
+        height={height}
+        width={width}
+        blurDataURL={blurDataURL}
         className="aspect-video w-full rounded object-cover sm:w-60 sm:shrink-0 md:w-80 lg:w-full"
-        {...restImageProps}
         sizes={buildImageSizeProp({
           startSize: '100vw',
           sm: '250px',

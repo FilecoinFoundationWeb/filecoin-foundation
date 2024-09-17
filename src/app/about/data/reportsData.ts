@@ -1,4 +1,4 @@
-import type { StaticImageDataWithAlt } from '@/types/sharedProps/imageType'
+import type { LocalImageData } from '@/types/sharedProps/imageType'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -8,7 +8,7 @@ type ReportData = {
   title: string
   description: string
   link: string
-  image?: StaticImageDataWithAlt
+  image?: LocalImageData
 }
 
 export const reportsData: Array<ReportData> = [

@@ -4,8 +4,6 @@ import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Card } from '@/components/Card'
@@ -24,31 +22,33 @@ export function FeaturedGrantsGraduates({
 
   return (
     <CardGrid cols="smTwo">
-      {grantGraduates.map(({ title, description, slug, image }) => (
-        <Card
-          key={slug}
-          title={title}
-          description={description}
-          textIsClamped={true}
-          cta={{
-            href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
-            text: 'Read More',
-            icon: BookOpen,
-          }}
-          image={{
-            alt: '',
-            src: image?.src || '',
-            padding: true,
-            objectFit: 'contain',
-            ...image,
-            sizes: buildImageSizeProp({
-              startSize: '100vw',
-              sm: '175px',
-              md: '250px',
-            }),
-          }}
-        />
-      ))}
+      {grantGraduates.map(({ title, description, slug, image }) => {
+        const { src } = image || {}
+        return (
+          <Card
+            key={slug}
+            title={title}
+            description={description}
+            textIsClamped={true}
+            cta={{
+              href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
+              text: 'Read More',
+              icon: BookOpen,
+            }}
+            image={{
+              alt: '',
+              src: src || '',
+              padding: true,
+              objectFit: 'contain',
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '175px',
+                md: '250px',
+              }),
+            }}
+          />
+        )
+      })}
     </CardGrid>
   )
 }

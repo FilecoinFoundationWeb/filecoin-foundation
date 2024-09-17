@@ -1,5 +1,4 @@
 import type { ImageProps } from 'next/image'
-import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
@@ -14,6 +13,7 @@ import {
   type DescriptionTextType,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 import {
   SectionDivider,
   type SectionDividerProps,
@@ -36,13 +36,9 @@ export function PageSection({
   children,
   cta,
 }: PageSectionProps) {
-  const {
-    alt,
-    src,
-    width: _width,
-    height: _height,
-    ...restImageProps
-  } = image || {}
+  const { alt, src, blurDataURL } = image || {}
+
+  console.log({ image })
 
   return (
     <section>
@@ -67,13 +63,16 @@ export function PageSection({
 
         {image && (
           <div className="relative aspect-video lg:aspect-auto">
-            <Image
+            <ImageWithFallback
               fill
               src={src || ''}
               alt={alt || ''}
               className="rounded-lg"
+              blurDataURL={blurDataURL}
               sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
-              {...restImageProps}
+              style={{
+                objectFit: 'cover',
+              }}
             />
           </div>
         )}

@@ -36,6 +36,8 @@ export function FeaturedBlogPosts() {
             category,
           })
 
+          const { src } = image || {}
+
           return (
             <Card
               key={slug}
@@ -50,9 +52,7 @@ export function FeaturedBlogPosts() {
               }}
               image={{
                 alt: '',
-                ...(image || {
-                  ...graphicsData.imageFallback,
-                }),
+                src: src || '',
                 fill: true,
                 sizes: buildImageSizeProp({
                   startSize: '100vw',
