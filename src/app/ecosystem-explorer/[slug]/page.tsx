@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
 import {
