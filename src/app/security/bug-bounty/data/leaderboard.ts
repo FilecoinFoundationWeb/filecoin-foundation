@@ -1,7 +1,7 @@
 export const leaderboardData = [
   {
     reporter: 'Marten Seemann',
-    points: 134250,
+    points: 140375,
     profileLink: 'https://github.com/marten-seemann',
   },
   {
@@ -18,6 +18,11 @@ export const leaderboardData = [
     reporter: 'MajorExcitement',
     points: 15625,
     profileLink: null,
+  },
+  {
+    reporter: '0xdeadbeef',
+    points: 15000,
+    profileLink: 'https://x.com/0xdeadbeef____',
   },
   {
     reporter: 'Joran Honig',
