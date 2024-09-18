@@ -1,5 +1,5 @@
 ---
-title: FIL Bangkok Network Base with FIL Dev Summit
+title: FIL Bangkok Co Working Base
 created-on: 2024-09-04T12:09:00.000Z
 updated-on: 2024-09-04T12:09:00.000Z
 published-on: 2024-09-04T12:09:00.000Z
@@ -7,7 +7,7 @@ category: hosted
 location: "Bangkok, Thailand "
 start-date: 2024-11-06T09:00:00.000Z
 end-date: 2024-11-08T20:00:00.000Z
-description: FIL Bangkok Network base is your home base in Bangkok to expand
+description: FIL Bangkok Co Working base is your home base in Bangkok to expand
   your network, knowledge, and opportunities within the Filecoin ecosystem. FIL
   Dev Summit is a gathering of developers, builders, and engaged community
   members who want to contribute to the core protocol and network evolution of
