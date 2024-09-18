@@ -9,13 +9,13 @@ import {
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { leaderboardData } from '../data/leaderboard'
-import { leaderboardTableData } from '../data/leaderboardTable'
+import { allocatorListData } from '../data/allocatorList'
+import { allocatorTableData } from '../data/allocatorTable'
 
-export function Leaderboard() {
+export function AllocatorsList() {
   const table = useReactTable({
-    data: leaderboardData,
-    columns: leaderboardTableData,
+    data: allocatorListData,
+    columns: allocatorTableData,
     initialState: {
       sorting: [{ id: 'points', desc: true }],
     },

@@ -12,6 +12,7 @@ export type DynamicPathValues =
 export type PathValues =
   | '/'
   | '/about'
+  | '/allocators'
   | '/blog'
   | '/digest'
   | '/ecosystem-explorer'
@@ -78,7 +79,11 @@ export const PATHS = {
   ABOUT: createPathConfig('/about', 'About'),
   BLOG: createPathConfig('/blog', 'Blog', {
     includesEntries: true,
-  }),
+ }),
+  ALLOCATORS: createPathConfig(
+      '/allocators',
+      'Allocators',
+    ),
   BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program'),
   COORDINATED_DISCLOSURE_POLICY: createPathConfig(
     '/security/coordinated-disclosure-policy',
@@ -86,7 +91,7 @@ export const PATHS = {
   ),
   DIGEST: createPathConfig('/digest', 'Digest', {
     includesEntries: true,
-  }),
+ }),
   ECOSYSTEM_EXPLORER: createPathConfig(
     '/ecosystem-explorer',
     'Ecosystem Explorer',
@@ -106,14 +111,14 @@ export const PATHS = {
   ),
   EVENTS: createPathConfig('/events', 'Events', {
     includesEntries: true,
-  }),
+ }),
   FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus'),
   GOVERNANCE: createPathConfig('/governance', 'Governance'),
   GRANTS: createPathConfig('/grants', 'Grants'),
   ORBIT: createPathConfig('/orbit', 'Orbit'),
   HOME: createPathConfig('/', 'Home', {
     customMainContentPath: '/home',
-  }),
+ }),
   MATURITY_MODEL: createPathConfig(
     '/security/maturity-model',
     'Maturity Model',
@@ -122,7 +127,7 @@ export const PATHS = {
   TERMS_OF_USE: createPathConfig('/terms-of-use', 'Terms of Use'),
   SECURITY: createPathConfig('/security', 'Security', {
     hasSubpaths: true,
-  }),
+ }),
 } as const
 
 export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/categories`

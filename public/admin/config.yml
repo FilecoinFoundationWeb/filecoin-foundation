@@ -185,6 +185,14 @@ collections:
           - *header_config
           - *meta_config
 
+      - name: "allocators"
+        label: "Allocators"
+        file: "src/content/pages/allocators.md"
+        preview_path: "allocators"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "blog"
         label: "Blog"
         file: "src/content/pages/blog.md"
