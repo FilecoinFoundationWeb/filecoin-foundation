@@ -115,11 +115,6 @@ meta_config: &meta_config
       widget: "object"
       collapsed: true
       fields:
-        - name: "title"
-          label: "Twitter Title"
-          widget: "string"
-          default: "summary"
-          required: false
         - name: "card"
           label: "Twitter Card"
           widget: "string"

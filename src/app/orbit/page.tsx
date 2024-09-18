@@ -35,6 +35,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const { header, seo } = attributes
 
 export const metadata = createMetadata({
+  image: { src: graphicsData.orbit.data.src },
   seo,
   path: PATHS.ORBIT.path,
   overrideDefaultTitle: true,

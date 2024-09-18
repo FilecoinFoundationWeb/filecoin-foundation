@@ -25,6 +25,7 @@ const { header, seo } = attributes
 const articles = getDigestArticlesDataSortedByNumber()
 
 export const metadata = createMetadata({
+  image: { src: graphicsData.digest.data.src },
   seo,
   path: PATHS.DIGEST.path,
 })

@@ -4,8 +4,7 @@ type OpenGraphMetadata = {
 }
 
 type TwitterMetadata = {
-  title?: string
-  card?: string
+  card?: 'summary' | 'summary_large_image' | 'player' | 'app'
   site?: string
   creator?: string
 }

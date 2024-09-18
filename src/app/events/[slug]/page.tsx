@@ -1,3 +1,5 @@
+import type { SeoMetadata } from '@/types/metadataTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -24,7 +26,7 @@ export function generateMetadata({ params }: EventProps) {
   const data = getEventData(slug)
 
   return createMetadata({
-    seo: data.seo,
+    seo: data.seo as SeoMetadata,
     path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
   })
 }

@@ -67,6 +67,7 @@ const featuredEventSlug = path.parse(featured_entry).name
 const featuredEvent = getEventData(featuredEventSlug)
 
 export const metadata = createMetadata({
+  image: { src: featuredEvent.image?.src },
   seo,
   path: PATHS.EVENTS.path,
   overrideDefaultTitle: true,
