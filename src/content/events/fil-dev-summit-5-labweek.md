@@ -15,13 +15,14 @@ description: ​FIL Dev Summit is a gathering of developers, builders, Storage
   conversations that help push Filecoin forward.
 external-link: https://lu.ma/vcdjb8pl
 image:
-  src: /assets/images/fds5.avif
+  src: /assets/images/fil-dev-summit.webp
 seo:
   twitter:
     title: summary
     card: summary
   title: "Join the FIL Dev Summit: Shape the Future of Filecoin"
-  description: Connect with developers, builders, and community members at the FIL
+  description:
+    Connect with developers, builders, and community members at the FIL
     Dev Summit. Collaborate on protocol improvements and tools to drive
     Filecoin's evolution forward.
 ---
