@@ -6,7 +6,6 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
-import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { AllocatorsList } from './components/AllocatorsList'
