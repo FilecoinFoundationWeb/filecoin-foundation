@@ -66,8 +66,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     subcategories,
   } = data
 
-  //! add rounded to fallback image
-
   return (
     <article>
       <header className="mb-8 space-y-10 md:space-y-16">

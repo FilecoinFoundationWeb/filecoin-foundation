@@ -38,8 +38,6 @@ export function PageSection({
 }: PageSectionProps) {
   const { alt, src, blurDataURL } = image || {}
 
-  console.log({ image })
-
   return (
     <section>
       <SectionDivider title={kicker} />

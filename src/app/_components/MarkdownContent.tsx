@@ -4,7 +4,7 @@ import remarkGfm from 'remark-gfm'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { ImageWithFallback } from '@/_components/ImageWithFallback'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 type MarkdownContentProps = {
   children: string

@@ -33,8 +33,6 @@ export default function EventEntry({ params }: EventProps) {
 
   const { title, description, image, category, externalLink } = data
 
-  console.log({ image })
-
   return (
     <>
       <StructuredDataScript structuredData={generateStructuredData(data)} />

@@ -6,8 +6,7 @@ import type {
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { type HeadingProps, Heading } from '@/components/Heading'
-
-import { ImageWithFallback } from '@/_components/ImageWithFallback'
+import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 type ArticleHeaderProps = {
   image?: RemoteImageData | LocalImageData
