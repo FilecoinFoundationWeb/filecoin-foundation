@@ -48,7 +48,7 @@ export default function About() {
         }}
       />
 
-      {/* <PageSection
+      <PageSection
         kicker="About"
         title="Our Mission"
         description="Filecoin Foundation’s mission is to preserve humanity’s most important information."
@@ -115,7 +115,7 @@ export default function About() {
             )
           })}
         </CardGrid>
-      </PageSection> */}
+      </PageSection>
     </PageLayout>
   )
 }
