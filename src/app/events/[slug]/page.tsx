@@ -27,7 +27,7 @@ export function generateMetadata({ params }: EventProps) {
 
   return createMetadata({
     image: { src: graphicsData.events1.data.src },
-    seo: data.seo as SeoMetadata,
+    seo: data.seo,
     path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
   })
 }

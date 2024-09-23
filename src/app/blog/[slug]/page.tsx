@@ -20,8 +20,6 @@ export function generateMetadata({ params }: BlogPostProps) {
   const { slug } = params
   const data = getBlogPostData(slug)
 
-  console.log(data.seo)
-
   return createMetadata({
     image: { src: data.image?.src },
     seo: data.seo,
