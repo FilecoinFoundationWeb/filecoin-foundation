@@ -4,6 +4,7 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
+import { attributes as digestAttributes } from '@/content/pages/digest.md'
 import { attributes } from '@/content/pages/home.md'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -27,6 +28,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 const ecosystemProjects = getEcosystemProjectsData()
 
 const { featured_ecosystem_projects, header, seo } = attributes
+const { header: digestHeader } = digestAttributes
 
 if (!featured_ecosystem_projects) {
   throw new Error('Featured ecosystem projects are undefined')
@@ -109,6 +111,17 @@ export default function Home() {
             View All
           </Button>
         </PageSection>
+
+        <PageSection
+          kicker="Digest"
+          title={digestHeader.title}
+          image={graphicsData.digest}
+          description={digestHeader.description}
+          cta={{
+            href: PATHS.DIGEST.path,
+            text: 'Read Digest',
+          }}
+        />
 
         <PageSection
           kicker="Stay Updated"
