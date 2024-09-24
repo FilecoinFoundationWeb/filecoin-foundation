@@ -14,6 +14,7 @@ import { TagLabel } from '@/components/TagLabel'
 
 import { buildCtaArray } from '../utils/buildCtaArray'
 
+import { SponsorsSection } from './components/SponsorsSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
@@ -44,7 +45,9 @@ export default function EventEntry({ params }: EventProps) {
     externalLink,
     lumaCalendarLink,
     lumaEventsSection,
+    sponsors,
   } = data
+  const { title, description, image, category, externalLink, sponsors } = data
 
   return (
     <>
@@ -73,6 +76,9 @@ export default function EventEntry({ params }: EventProps) {
             className="rounded-lg"
           ></iframe>
         </PageSection>
+
+      {sponsors && Object.keys(sponsors).length > 0 && (
+        <SponsorsSection sponsors={data.sponsors} />
       )}
     </>
   )
