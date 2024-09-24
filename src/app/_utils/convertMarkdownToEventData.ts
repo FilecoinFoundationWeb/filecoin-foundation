@@ -22,6 +22,7 @@ export function convertMarkdownToEventData(data: Record<string, any>) {
     startDate: data['start-date'],
     endDate: data['end-date'],
     image: data.image,
+    sponsors: data.sponsors,
     seo: data.seo,
   })
 }
