@@ -1,6 +1,3 @@
-import type { Event } from '@/types/eventType'
-import type { CTAProps } from '@/types/sharedProps/ctaType'
-
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -14,6 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
+import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
@@ -55,7 +53,7 @@ export default function EventEntry({ params }: EventProps) {
         title={title}
         description={description}
         metaData={getEventMetaData(data)}
-        cta={buildCtaArray(externalLink, lumaCalendarLink)}
+        cta={buildCtaArray({ externalLink, lumaCalendarLink })}
         image={{
           alt: '',
           ...(image || graphicsData.imageFallback),
@@ -64,21 +62,4 @@ export default function EventEntry({ params }: EventProps) {
       />
     </>
   )
-}
-
-function buildCtaArray(
-  externalLink: Event['externalLink'],
-  lumaCalendarLink?: Event['lumaCalendarLink'],
-) {
-  const ctaArray: Array<CTAProps> = []
-
-  if (externalLink) {
-    ctaArray.push({ href: externalLink, text: 'View More Event Details' })
-  }
-
-  if (lumaCalendarLink) {
-    ctaArray.push({ href: lumaCalendarLink, text: 'Check Event Calendar' })
-  }
-
-  return ctaArray.length > 0 ? ctaArray : undefined
 }
