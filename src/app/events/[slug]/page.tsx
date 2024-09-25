@@ -11,6 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
+import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
@@ -33,7 +34,14 @@ export default function EventEntry({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
 
-  const { title, description, image, category, externalLink } = data
+  const {
+    title,
+    description,
+    image,
+    category,
+    externalLink,
+    lumaCalendarLink,
+  } = data
 
   return (
     <>
@@ -45,11 +53,7 @@ export default function EventEntry({ params }: EventProps) {
         title={title}
         description={description}
         metaData={getEventMetaData(data)}
-        cta={
-          externalLink
-            ? { href: externalLink, text: 'View More Event Details' }
-            : undefined
-        }
+        cta={buildCtaArray({ externalLink, lumaCalendarLink })}
         image={{
           alt: '',
           ...(image || graphicsData.imageFallback),

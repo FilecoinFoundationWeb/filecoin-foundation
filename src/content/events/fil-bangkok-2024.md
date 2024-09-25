@@ -9,6 +9,7 @@ start-date: 2024-11-6T11:18:00.000Z
 end-date: 2024-11-12T11:18:00.000Z
 description: "Join the Filecoin Community in Bangkok! Dive into decentralized AI infrastructure, DePIN, and the data economy with the Filecoin community in Bangkok, ahead of Devcon. Set in the heart of Thailand, Filecoin Foundation will have dynamic programming, major announcements, and networking opportunities. Seize this opportunity to help shape the future of Filecoin and contribute to the next chapter of a better internet."
 external-link: https://lu.ma/aqyqwupe
+luma-calendar-link: https://lu.ma/filecoin-events?tag=fil%20bangkok%202024
 image:
   src: /assets/images/fil-bangkok-2024.webp
 seo:

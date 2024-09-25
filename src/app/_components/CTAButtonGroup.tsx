@@ -5,7 +5,7 @@ import type { CTAProps } from '@/types/sharedProps/ctaType'
 import { Button } from '@/components/Button'
 
 export type CTAButtonGroupProps = {
-  cta: CTAProps | [CTAProps, CTAProps]
+  cta: CTAProps | Array<CTAProps>
 }
 
 export function CTAButtonGroup({ cta }: CTAButtonGroupProps) {
