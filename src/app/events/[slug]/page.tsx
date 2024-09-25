@@ -11,7 +11,8 @@ import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
-import { buildCtaArray } from './utils/buildCtaArray'
+import { buildCtaArray } from '../utils/buildCtaArray'
+
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
