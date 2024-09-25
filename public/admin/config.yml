@@ -672,6 +672,6 @@ collections:
         label: "Luma Calendar URL"
         widget: "string"
         required: false
-        hint: "Luma Calendar URL for the event. Include relevant tags when appropriate, e.g., https://lu.ma/filecoin?tag=fil%20bangkok"
+        hint: "Luma Calendar URL for the event. Include relevant tags when appropriate, e.g., https://lu.ma/filecoin-events?tag=fil%20bangkok%202024"
       - *image_config
       - *meta_config
