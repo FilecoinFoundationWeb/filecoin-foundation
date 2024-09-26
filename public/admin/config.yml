@@ -665,8 +665,18 @@ collections:
         required: false
       - name: "external-link"
         label: "External Link URL"
-        widget: "string"
+        widget: "object"
         required: false
+        fields:
+          - name: "url"
+            label: "URL"
+            widget: "string"
+          - name: "text"
+            label: "Text"
+            widget: "string"
+            required: false
+            default: "View More Event Details"
+            hint: "Text for the external link. Defaults to 'View More Event Details.'"
         hint: "External link to the event page"
       - name: "luma-calendar-link"
         label: "Luma Calendar URL"
