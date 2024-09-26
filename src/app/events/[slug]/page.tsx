@@ -78,7 +78,7 @@ export default function EventEntry({ params }: EventProps) {
       )}
 
       {sponsors && Object.keys(sponsors).length > 0 && (
-        <SponsorSection sponsors={data.sponsors} />
+        <SponsorSection sponsors={sponsors} />
       )}
     </>
   )

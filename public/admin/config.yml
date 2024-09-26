@@ -98,7 +98,6 @@ event_sponsor_config: &event_sponsor_config
         widget: "image"
         allow_multiple: false
         choose_url: false
-        required: false
         hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 320px height. Make sure no whitespace is present around the logo."
       - *image_alt_config
 
@@ -735,22 +734,19 @@ collections:
             required: false
             min: 0
             max: 4
-            fields:
-              - *event_sponsor_config
+            fields: *event_sponsor_config
           - name: "second-tier"
             label: "Second Tier"
             widget: "list"
             required: false
             min: 0
             max: 5
-            fields:
-              - *event_sponsor_config
+            fields: *event_sponsor_config
           - name: "third-tier"
             label: "Third Tier"
             widget: "list"
             required: false
             min: 0
             max: 7
-            fields:
-              - *event_sponsor_config
+            fields: *event_sponsor_config
       - *meta_config

@@ -27,9 +27,9 @@ export function SponsorLogo({
   return (
     <div className={clsx('relative w-full', logoImageConfig.containerStyles)}>
       <Image
+        fill
         src={sponsor.image.src}
         alt={`${sponsor.name} Logo - ${formattedSponsorTier} sponsor`}
-        fill={true}
         sizes={logoImageConfig.imageSizes}
         className="object-contain object-left-bottom"
       />

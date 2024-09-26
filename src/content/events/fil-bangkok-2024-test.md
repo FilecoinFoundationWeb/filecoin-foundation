@@ -16,23 +16,23 @@ luma-events-section:
   title: "FIL Bangkok 2024 Events"
   embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
 sponsors:
-  first-tier:
-    - name: "Filecoin Foundation 1"
-      website: https://fil.org
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 1"
-      website: https://fil.org
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 1"
-      website: https://fil.org
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 1"
-      website: https://fil.org
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+  # first-tier:
+  #   - name: "Filecoin Foundation 1"
+  #     website: https://fil.org
+  #     image:
+  #       src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+  #   - name: "Filecoin Foundation 1"
+  #     website: https://fil.org
+  #     image:
+  #       src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+  #   - name: "Filecoin Foundation 1"
+  #     website: https://fil.org
+  #     image:
+  #       src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+  #   - name: "Filecoin Foundation 1"
+  #     website: https://fil.org
+  #     image:
+  #       src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
   second-tier:
     - name: "Filecoin Foundation 2"
       website: https://fil.org
