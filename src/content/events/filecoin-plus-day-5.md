@@ -5,7 +5,8 @@ updated-on: 2023-06-27T17:45:43.957Z
 published-on: 2023-05-03T08:22:38.798Z
 category: hosted
 location: Virtual
-external-link: https://www.youtube.com/watch?v=wP4Bk8lBNUc
+external-link:
+  url: https://www.youtube.com/watch?v=wP4Bk8lBNUc
 start-date: 2021-05-10T22:00:00.000Z
 image:
   src: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg

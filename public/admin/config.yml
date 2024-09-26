@@ -665,9 +665,19 @@ collections:
         required: false
       - name: "external-link"
         label: "External Link URL"
-        widget: "string"
+        widget: "object"
         required: false
-        hint: "External link to the event page"
+        fields:
+          - name: "url"
+            label: "URL"
+            widget: "string"
+            required: false
+          - name: "text"
+            label: "Text"
+            widget: "string"
+            required: false
+            default: "View Event Details"
+            hint: "Text for the external link CTA. Please use proper capitalization. Defaults to 'View Event Details.'"
       - name: "luma-calendar-link"
         label: "Luma Calendar URL"
         widget: "string"

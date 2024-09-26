@@ -7,7 +7,8 @@ category: supported-sponsored
 description: Join Filecoin Orbit Austin and the Filecoin Foundation for talks,
   drinks, BBQ, and networking during Consensus 2024!
 location: Austin, TX
-external-link: https://blocklive.io/event/consensus2024
+external-link:
+  url: https://blocklive.io/event/consensus2024
 start-date: 2024-05-30T16:00:00.000Z
 end-date: 2024-05-30T17:00:00.000Z
 image:

@@ -5,7 +5,8 @@ updated-on: 2024-01-29T15:38:54.811Z
 published-on: 2024-01-29T15:38:54.825Z
 category: supported-sponsored
 location: Denver, CO
-external-link: https://hub.fil.org/ethdenver2024
+external-link:
+  url: https://hub.fil.org/ethdenver2024
 start-date: 2024-02-28T15:38:54.833Z
 end-date: 2024-03-03T15:38:54.840Z
 image:

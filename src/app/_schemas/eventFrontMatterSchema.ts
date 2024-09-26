@@ -16,7 +16,12 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   category: categorySchema,
   description: z.string().optional(),
   location: z.string(),
-  externalLink: z.string().url().optional(),
+  externalLink: z
+    .object({
+      url: z.string().url(),
+      text: z.string().optional(),
+    })
+    .optional(),
   lumaCalendarLink: z.string().url().optional(),
   startDate: z.coerce.date(),
   endDate: z.coerce.date().optional(),

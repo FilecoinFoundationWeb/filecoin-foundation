@@ -12,7 +12,8 @@ description: "Experience the intersection of DePIN and AI as leading Filecoin
   cutting-edge L2 solutions built on Filecoin, crucial network upgrades, and the
   exciting trajectory of the Filecoin network. Space is limited - secure your
   spot now! "
-external-link: https://lu.ma/aqyqwupe
+external-link:
+  url: https://lu.ma/aqyqwupe
 image:
   src: /assets/images/fil-bangkok-ms-logo-2-.png
 seo:
