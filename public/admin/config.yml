@@ -675,8 +675,8 @@ collections:
             label: "Text"
             widget: "string"
             required: false
-            default: "View More Event Details"
-            hint: "Text for the external link. Defaults to 'View More Event Details.'"
+            default: "View Event Details"
+            hint: "Text for the external link. Defaults to 'View Event Details.'"
         hint: "External link to the event page"
       - name: "luma-calendar-link"
         label: "Luma Calendar URL"
