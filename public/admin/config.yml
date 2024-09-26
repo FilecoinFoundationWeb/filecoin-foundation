@@ -677,14 +677,17 @@ collections:
         label: "Luma Events Section"
         widget: "object"
         required: false
+        hint: Both the section title and the embed URL must be filled out for this section to appear on the page.
         fields:
           - name: "title"
             label: "Section Title"
             widget: "string"
             required: false
+            hint: This is the title for the section header. For example, "FIL Bangkok 2024 Events."
           - name: "embed-link"
             label: "Luma Embed URL"
             widget: "string"
             required: false
+            hint: Paste the embed URL for your Luma event here to display the events directly on the page. Include relevant tags when appropriate, e.g., https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024.
       - *image_config
       - *meta_config
