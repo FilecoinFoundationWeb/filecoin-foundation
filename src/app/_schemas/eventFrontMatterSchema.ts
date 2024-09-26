@@ -23,6 +23,12 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
     })
     .optional(),
   lumaCalendarLink: z.string().url().optional(),
+  lumaEventsSection: z
+    .object({
+      title: z.string(),
+      embedLink: z.string().url(),
+    })
+    .optional(),
   startDate: z.coerce.date(),
   endDate: z.coerce.date().optional(),
 })
