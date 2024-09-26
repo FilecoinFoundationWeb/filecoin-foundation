@@ -681,8 +681,10 @@ collections:
           - name: "title"
             label: "Section Title"
             widget: "string"
+            required: false
           - name: "embed-link"
             label: "Luma Embed URL"
             widget: "string"
+            required: false
       - *image_config
       - *meta_config
