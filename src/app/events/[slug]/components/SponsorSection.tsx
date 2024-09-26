@@ -48,7 +48,7 @@ export function SponsorSection({ sponsors }: SponsorSectionProps) {
     <PageSection kicker="sponsors" title="Sponsors">
       <div className="grid gap-8">
         {sponsorTierConfigs.map(({ tier, gridClassName, logoImageConfig }) => {
-          if (!sponsors[tier]) return null
+          if (!sponsors[tier] || sponsors[tier].length === 0) return null
 
           return (
             <SponsorGrid
