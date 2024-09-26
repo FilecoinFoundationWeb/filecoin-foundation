@@ -20,17 +20,12 @@ export type AllocatorProps = {
 }
 
 type AllocatorsListProps = {
-  allocators?: Array<AllocatorProps>
+  allocators: Array<AllocatorProps>
 }
 
 export function AllocatorsList({ allocators }: AllocatorsListProps) {
-  const validAllocators = (allocators || []).filter(
-    (allocator): allocator is AllocatorProps =>
-      allocator !== null && allocator !== undefined,
-  )
-
   const table = useReactTable({
-    data: validAllocators,
+    data: allocators,
     columns: mapAllocatorsToTableData(),
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),

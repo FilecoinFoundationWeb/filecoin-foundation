@@ -1,3 +1,5 @@
+import * as Sentry from '@sentry/nextjs'
+
 import type { AllocatorProps } from '../components/AllocatorsList'
 
 const GITHUB_ALLOCATORS_REPO =
@@ -9,6 +11,9 @@ async function getAllocatorUrlList() {
   try {
     const response = await fetch(GITHUB_ALLOCATORS_REPO)
     if (!response.ok) {
+      Sentry.captureException(
+        new Error(`Failed to fetch allocator URLs: ${response.statusText}`),
+      )
       console.error(`Failed to fetch allocator URLs: ${response.statusText}`)
       return []
     }
@@ -21,6 +26,9 @@ async function getAllocatorUrlList() {
 
     return urlList
   } catch (error) {
+    Sentry.captureException(error, {
+      extra: { context: 'Error fetching allocators' },
+    })
     console.error('Error fetching allocators:', error)
     return []
   }
@@ -39,6 +47,9 @@ export async function getAllocators() {
 
           return allocator
         } catch (error) {
+          Sentry.captureException(error, {
+            extra: { context: `Error fetching ${allocatorUrl}` },
+          })
           console.error(`Error fetching ${allocatorUrl}:`, error)
           return null
         }
@@ -49,6 +60,9 @@ export async function getAllocators() {
 
     return parsedAllocatorData
   } catch (error) {
+    Sentry.captureException(error, {
+      extra: { context: 'Error fetching allocator data' },
+    })
     console.error('Error fetching allocator data:', error)
     return []
   }
@@ -60,6 +74,9 @@ function parseAndFilterAllocatorData(allocatorData: any) {
       try {
         return parseAllocatorData(allocator)
       } catch (parseAllocatorError) {
+        Sentry.captureException(parseAllocatorError, {
+          extra: { context: 'Error in parseAllocatorData' },
+        })
         console.error('Error in parseAllocatorData:', parseAllocatorError)
         return null
       }
@@ -71,6 +88,7 @@ function parseAndFilterAllocatorData(allocatorData: any) {
 
 function parseAllocatorData(allocatorData: any) {
   if (!allocatorData.content) {
+    Sentry.captureMessage('Allocator data missing content field')
     console.error('Allocator data missing content field')
     return null
   }
@@ -88,6 +106,9 @@ function parseAllocatorData(allocatorData: any) {
       required_replicas: parsedData.application?.required_replicas || '',
     }
   } catch (error) {
+    Sentry.captureException(error, {
+      extra: { context: 'Error decoding or parsing JSON' },
+    })
     console.error('Error decoding or parsing JSON:', error)
     return null
   }
