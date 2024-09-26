@@ -35,9 +35,9 @@ export async function getAllocators() {
         try {
           const allocatorResponse = await fetch(allocatorUrl)
 
-          const allocatorJson = await allocatorResponse.json()
+          const allocator = await allocatorResponse.json()
 
-          return allocatorJson
+          return allocator
         } catch (error) {
           console.error(`Error fetching ${allocatorUrl}:`, error)
           return null
@@ -45,16 +45,17 @@ export async function getAllocators() {
       }),
     )
 
-    const validAllocatorData = validateAllocatorData(allocatorData)
+    const parsedAllocatorData = parseAndFilterAllocatorData(allocatorData)
 
-    return validAllocatorData
+    return parsedAllocatorData
   } catch (error) {
     console.error('Error fetching allocator data:', error)
+    return []
   }
 }
 
-function validateAllocatorData(allocatorData: any) {
-  const validAllocatorData = allocatorData
+function parseAndFilterAllocatorData(allocatorData: any) {
+  const parsedAllocatorData = allocatorData
     .map((allocator: any) => {
       try {
         return parseAllocatorData(allocator)
@@ -65,7 +66,7 @@ function validateAllocatorData(allocatorData: any) {
     })
     .filter((data: any): data is AllocatorProps => data !== null)
 
-  return validAllocatorData
+  return parsedAllocatorData
 }
 
 function parseAllocatorData(allocatorData: any) {
