@@ -13,7 +13,8 @@ description: ​FIL Dev Summit is a gathering of developers, builders, Storage
   FDS welcomes participation from the entire Filecoin ecosystem.  ​This summit
   is more than just a meetup—it's a place for meaningful and impactful
   conversations that help push Filecoin forward.
-external-link: https://lu.ma/vcdjb8pl
+external-link:
+  url: https://lu.ma/vcdjb8pl
 image:
   src: /assets/images/fil-dev-summit.webp
 seo:

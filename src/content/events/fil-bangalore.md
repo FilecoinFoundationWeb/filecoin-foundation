@@ -5,7 +5,8 @@ updated-on: 2023-06-27T15:50:53.888Z
 published-on: 2023-06-27T15:50:53.898Z
 category: supported-sponsored
 location: Bangalore, India
-external-link: https://fil-bangalore.io/
+external-link:
+  url: https://fil-bangalore.io/
 start-date: 2022-11-29T16:50:53.914Z
 end-date: 2022-11-30T16:50:00.000Z
 image:
