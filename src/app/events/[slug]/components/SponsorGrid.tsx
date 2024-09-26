@@ -1,7 +1,7 @@
 import { clsx } from 'clsx'
 
 import { type SponsorLogoProps, SponsorLogo } from './SponsorLogo'
-import type { Sponsor } from './SponsorsSection'
+import type { Sponsor } from './SponsorSection'
 
 type SponsorGridProps = {
   sponsors: Array<Sponsor>

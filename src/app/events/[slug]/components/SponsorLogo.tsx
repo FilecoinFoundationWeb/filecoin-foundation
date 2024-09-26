@@ -4,7 +4,7 @@ import { clsx } from 'clsx'
 
 import { capitalize } from '@/utils/capitalize'
 
-import type { Sponsor } from './SponsorsSection'
+import type { Sponsor } from './SponsorSection'
 
 export type ImageConfig = {
   containerStyles: string

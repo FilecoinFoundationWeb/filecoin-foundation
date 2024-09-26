@@ -14,7 +14,7 @@ import { TagLabel } from '@/components/TagLabel'
 
 import { buildCtaArray } from '../utils/buildCtaArray'
 
-import { SponsorsSection } from './components/SponsorsSection'
+import { SponsorSection } from './components/SponsorSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
@@ -78,7 +78,7 @@ export default function EventEntry({ params }: EventProps) {
       )}
 
       {sponsors && Object.keys(sponsors).length > 0 && (
-        <SponsorsSection sponsors={data.sponsors} />
+        <SponsorSection sponsors={data.sponsors} />
       )}
     </>
   )

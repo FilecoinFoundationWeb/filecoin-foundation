@@ -12,7 +12,7 @@ export type Sponsor = NonNullable<
   NonNullable<Event['sponsors']>['first-tier']
 >[number]
 
-type SponsorsSectionProps = {
+type SponsorSectionProps = {
   sponsors: Event['sponsors']
 }
 
@@ -46,7 +46,7 @@ const tiers: Array<keyof typeof sponsorTierConfigs> = [
   'third-tier',
 ]
 
-export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
+export function SponsorSection({ sponsors }: SponsorSectionProps) {
   if (!sponsors) return null
 
   return (
