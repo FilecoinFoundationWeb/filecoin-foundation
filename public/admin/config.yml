@@ -99,7 +99,7 @@ event_sponsor_config: &event_sponsor_config
         allow_multiple: false
         choose_url: false
         required: false
-        hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+        hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 320px height. Make sure no whitespace is present around the logo."
       - *image_alt_config
 
 seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
