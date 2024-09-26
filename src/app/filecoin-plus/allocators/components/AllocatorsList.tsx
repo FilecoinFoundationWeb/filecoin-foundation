@@ -34,6 +34,10 @@ export function AllocatorsList({ allocators }: AllocatorsListProps) {
     },
   })
 
+  if (allocators.length === 0) {
+    return <p>No allocators found</p>
+  }
+
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full">
