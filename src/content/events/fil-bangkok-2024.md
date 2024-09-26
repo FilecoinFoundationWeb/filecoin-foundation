@@ -17,56 +17,10 @@ luma-events-section:
   embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
 sponsors:
   first-tier:
-    - name: "Filecoin Foundation 1"
+    - name: "Boosty Labs"
+      website: https://boostylabs.com
       image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 1"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 1"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 1"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-  second-tier:
-    - name: "Filecoin Foundation 2"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 2"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 2"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 2"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 2"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-  third-tier:
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-    - name: "Filecoin Foundation 3"
-      image:
-        src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
+        src: /assets/images/boosty-logo.webp
 image:
   src: /assets/images/fil-bangkok-2024.webp
 seo:
