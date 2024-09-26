@@ -47,7 +47,6 @@ export default function EventEntry({ params }: EventProps) {
     lumaEventsSection,
     sponsors,
   } = data
-  const { title, description, image, category, externalLink, sponsors } = data
 
   return (
     <>
@@ -76,6 +75,7 @@ export default function EventEntry({ params }: EventProps) {
             className="rounded-lg"
           ></iframe>
         </PageSection>
+      )}
 
       {sponsors && Object.keys(sponsors).length > 0 && (
         <SponsorsSection sponsors={data.sponsors} />
