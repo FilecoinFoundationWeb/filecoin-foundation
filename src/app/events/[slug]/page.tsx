@@ -8,6 +8,7 @@ import { getEventData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
 import { PageHeader } from '@/components/PageHeader'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
@@ -42,6 +43,7 @@ export default function EventEntry({ params }: EventProps) {
     category,
     externalLink,
     lumaCalendarLink,
+    lumaEventsSection,
   } = data
 
   return (
@@ -61,6 +63,17 @@ export default function EventEntry({ params }: EventProps) {
           fallback: graphicsData.imageFallback,
         }}
       />
+
+      {lumaEventsSection && (
+        <PageSection kicker="Explore" title={lumaEventsSection.title}>
+          <iframe
+            src={lumaEventsSection.embedLink}
+            width="100%"
+            height="720"
+            className="rounded-lg"
+          ></iframe>
+        </PageSection>
+      )}
     </>
   )
 }
