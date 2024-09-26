@@ -198,6 +198,18 @@ const redirects = [
     permanent: true,
   },
 
+  // EVENTS REDIRECTS
+  {
+    source: '/events/fil-bangkok',
+    destination: '/events/fil-bangkok-2024',
+    permanent: true,
+  },
+  {
+    source: '/events/fil-bangkok-network-base-with-fil-dev-summit',
+    destination: '/events/fil-bangkok-2024',
+    permanent: true,
+  },
+
   // IMAGE REDIRECTS
   {
     source: '/assets/images/benjamin-hung.png',
