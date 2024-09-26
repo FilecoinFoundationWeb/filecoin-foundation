@@ -13,7 +13,10 @@ export function buildCtaArray({
   const ctaArray: Array<CTAProps> = []
 
   if (externalLink) {
-    ctaArray.push({ href: externalLink, text: 'View More Event Details' })
+    ctaArray.push({
+      href: externalLink.url,
+      text: externalLink.text || 'View More Event Details',
+    })
   }
 
   if (lumaCalendarLink) {
