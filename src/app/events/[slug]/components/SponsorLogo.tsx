@@ -22,14 +22,13 @@ export function SponsorLogo({
   tier,
   logoImageConfig,
 }: SponsorLogoProps) {
-  const formattedTier = capitalize(tier.replace('-', ' '))
+  const formattedSponsorTier = formatSponsorTier(tier)
 
   return (
     <div className={clsx('relative w-full', logoImageConfig.containerStyles)}>
       <Image
-        key={sponsor.name}
         src={sponsor.image.src}
-        alt={`${sponsor.name} Logo - ${formattedTier} sponsor`}
+        alt={`${sponsor.name} Logo - ${formattedSponsorTier} sponsor`}
         fill={true}
         sizes={logoImageConfig.imageSizes}
         className="object-contain object-left-bottom"
@@ -45,4 +44,8 @@ export function SponsorLogo({
       )}
     </div>
   )
+}
+
+function formatSponsorTier(tier: string) {
+  return capitalize(tier.replace('-', ' '))
 }

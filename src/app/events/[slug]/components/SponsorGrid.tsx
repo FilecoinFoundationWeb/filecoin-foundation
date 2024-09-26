@@ -6,22 +6,22 @@ import type { Sponsor } from './SponsorSection'
 type SponsorGridProps = {
   sponsors: Array<Sponsor>
   tier: string
-  columnsStyle: string
+  gridClassName: string
   logoImageConfig: SponsorLogoProps['logoImageConfig']
 }
 
 export function SponsorGrid({
   sponsors,
   tier,
-  columnsStyle,
+  gridClassName,
   logoImageConfig,
 }: SponsorGridProps) {
   return (
-    <div className={clsx('grid gap-8', columnsStyle)}>
-      {sponsors.map((sponsor, index) => (
+    <div className={clsx('grid gap-8', gridClassName)}>
+      {sponsors.map(({ name, ...sponsorProps }) => (
         <SponsorLogo
-          key={index}
-          sponsor={sponsor}
+          key={name}
+          sponsor={{ name, ...sponsorProps }}
           tier={tier}
           logoImageConfig={logoImageConfig}
         />
