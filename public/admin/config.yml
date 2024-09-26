@@ -673,5 +673,16 @@ collections:
         widget: "string"
         required: false
         hint: "Luma Calendar URL for the event. Include relevant tags when appropriate, e.g., https://lu.ma/filecoin-events?tag=fil%20bangkok%202024"
+      - name: luma-events-section
+        label: "Luma Events Section"
+        widget: "object"
+        required: false
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+          - name: "embed-link"
+            label: "Luma Embed URL"
+            widget: "string"
       - *image_config
       - *meta_config

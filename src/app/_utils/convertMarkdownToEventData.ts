@@ -11,6 +11,14 @@ export function convertMarkdownToEventData(data: Record<string, any>) {
     location: data.location,
     externalLink: data['external-link'],
     lumaCalendarLink: data['luma-calendar-link'],
+    lumaEventsSection:
+      data['luma-events-section']?.title &&
+      data['luma-events-section']['embed-link']
+        ? {
+            title: data['luma-events-section'].title,
+            embedLink: data['luma-events-section']['embed-link'],
+          }
+        : undefined,
     startDate: data['start-date'],
     endDate: data['end-date'],
     image: data.image,
