@@ -1,6 +1,6 @@
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/allocators.md'
+import { attributes } from '@/content/pages/filecoin-plus/allocators.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 

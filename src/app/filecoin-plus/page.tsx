@@ -1,7 +1,7 @@
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/filecoin-plus.md'
+import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
