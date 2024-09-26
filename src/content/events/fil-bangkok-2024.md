@@ -15,6 +15,12 @@ luma-calendar-link: https://lu.ma/filecoin-events?tag=fil%20bangkok%202024
 luma-events-section:
   title: "FIL Bangkok 2024 Events"
   embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
+sponsors:
+  first-tier:
+    - name: "Boosty Labs"
+      website: https://boostylabs.com
+      image:
+        src: /assets/images/boosty-logo.webp
 image:
   src: /assets/images/fil-bangkok-2024.webp
 seo:

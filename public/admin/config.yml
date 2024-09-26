@@ -58,6 +58,13 @@ body_config: &body_config
     - "video"
     - "audio"
 
+image_alt_config: &image_alt_config
+  name: "alt"
+  label: "Alt Text"
+  widget: "hidden"
+  required: false
+  hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+
 image_config: &image_config
   name: "image"
   label: "Image"
@@ -72,11 +79,27 @@ image_config: &image_config
       choose_url: false
       required: false
       hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
-    - name: "alt"
-      label: "Alt Text"
-      widget: "hidden"
-      required: false
-      hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+    - *image_alt_config
+
+event_sponsor_config: &event_sponsor_config
+  - name: "name"
+    label: "Name"
+    widget: "string"
+  - name: "website"
+    label: "website"
+    widget: "string"
+    required: false
+  - name: "image"
+    label: "Image"
+    widget: "object"
+    fields:
+      - name: "src"
+        label: "URL"
+        widget: "image"
+        allow_multiple: false
+        choose_url: false
+        hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 320px height. Make sure no whitespace is present around the logo."
+      - *image_alt_config
 
 seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
 
@@ -700,4 +723,30 @@ collections:
             required: false
             hint: Paste the embed URL for your Luma event here to display the events directly on the page. Include relevant tags when appropriate, e.g., https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024.
       - *image_config
+      - name: "sponsors"
+        label: "Sponsors"
+        widget: "object"
+        required: false
+        fields:
+          - name: "first-tier"
+            label: "First Tier"
+            widget: "list"
+            required: false
+            min: 0
+            max: 4
+            fields: *event_sponsor_config
+          - name: "second-tier"
+            label: "Second Tier"
+            widget: "list"
+            required: false
+            min: 0
+            max: 5
+            fields: *event_sponsor_config
+          - name: "third-tier"
+            label: "Third Tier"
+            widget: "list"
+            required: false
+            min: 0
+            max: 7
+            fields: *event_sponsor_config
       - *meta_config

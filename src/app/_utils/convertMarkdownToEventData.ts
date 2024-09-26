@@ -1,7 +1,7 @@
-import { EventFrontMatterSchema } from '@/schemas/eventFrontMatterSchema'
+import { FrontMatterSchema } from '@/schemas/event/FrontMatterSchema'
 
 export function convertMarkdownToEventData(data: Record<string, any>) {
-  return EventFrontMatterSchema.parse({
+  return FrontMatterSchema.parse({
     title: data.title,
     createdOn: data['created-on'],
     updatedOn: data['updated-on'],
@@ -22,6 +22,7 @@ export function convertMarkdownToEventData(data: Record<string, any>) {
     startDate: data['start-date'],
     endDate: data['end-date'],
     image: data.image,
+    sponsors: data.sponsors,
     seo: data.seo,
   })
 }

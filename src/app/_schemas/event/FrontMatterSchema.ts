@@ -6,12 +6,13 @@ import {
 } from '@/utils/categoryUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
+import { SponsorsSchema } from '@/schemas/event/SponsorSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 
 const categorySchema = createCategorySchema(validCategoryIds)
 
-export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
+export const FrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string().optional(),
@@ -31,4 +32,5 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
     .optional(),
   startDate: z.coerce.date(),
   endDate: z.coerce.date().optional(),
+  sponsors: SponsorsSchema.optional(),
 })
