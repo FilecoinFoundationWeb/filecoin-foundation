@@ -29,7 +29,7 @@ sponsors:
       image:
         src: /assets/images/boosty-logo.webp
     - image:
-        src: /assets/images/zetacube_logo_white2.webp
+        src: /assets/images/zetacube_logo_white2-1-.webp
       website: https://www.zetacube.net/
       name: ZETACUBE
 seo:
