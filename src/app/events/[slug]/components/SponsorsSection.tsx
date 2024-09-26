@@ -123,6 +123,15 @@ function SponsorLogo({ sponsor, tier, imageConfig }: SponsorLogoProps) {
         sizes={imageConfig.imageSizes}
         className="object-contain object-left-bottom"
       />
+      {sponsor.website && (
+        <a
+          href={sponsor.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Visit ${sponsor.name}'s website`}
+          className="absolute inset-0 rounded-lg focus:brand-outline"
+        />
+      )}
     </div>
   )
 }

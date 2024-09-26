@@ -4,6 +4,7 @@ import { ImagePropsSchema } from '@/schemas/imagePropsSchema'
 
 const sponsorSchema = z.object({
   name: z.string(),
+  website: z.string().url().optional(),
   image: ImagePropsSchema,
 })
 
