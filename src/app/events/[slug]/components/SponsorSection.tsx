@@ -19,21 +19,21 @@ type SponsorSectionProps = {
 const sponsorTierConfigs = {
   'first-tier': {
     columnsStyle: 'grid-cols-2 md:grid-cols-4',
-    imageConfig: {
+    logoImageConfig: {
       containerStyles: 'h-16 sm:h-20',
       imageSizes: buildImageSizeProp({ startSize: '140px', sm: '180px' }),
     },
   },
   'second-tier': {
     columnsStyle: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5',
-    imageConfig: {
+    logoImageConfig: {
       containerStyles: 'h-11 sm:h-16',
       imageSizes: buildImageSizeProp({ startSize: '100px', sm: '140px' }),
     },
   },
   'third-tier': {
     columnsStyle: 'grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-7',
-    imageConfig: {
+    logoImageConfig: {
       containerStyles: 'h-7 sm:h-11',
       imageSizes: buildImageSizeProp({ startSize: '60px', sm: '100px' }),
     },
@@ -62,7 +62,7 @@ export function SponsorSection({ sponsors }: SponsorSectionProps) {
                 sponsors={sponsors[tier]}
                 tier={tier}
                 columnsStyle={config.columnsStyle}
-                imageConfig={config.imageConfig}
+                logoImageConfig={config.logoImageConfig}
               />
             )
           }

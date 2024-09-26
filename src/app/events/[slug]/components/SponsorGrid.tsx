@@ -7,14 +7,14 @@ type SponsorGridProps = {
   sponsors: Array<Sponsor>
   tier: string
   columnsStyle: string
-  imageConfig: SponsorLogoProps['imageConfig']
+  logoImageConfig: SponsorLogoProps['logoImageConfig']
 }
 
 export function SponsorGrid({
   sponsors,
   tier,
   columnsStyle,
-  imageConfig,
+  logoImageConfig,
 }: SponsorGridProps) {
   return (
     <div className={clsx('grid gap-8', columnsStyle)}>
@@ -23,7 +23,7 @@ export function SponsorGrid({
           key={index}
           sponsor={sponsor}
           tier={tier}
-          imageConfig={imageConfig}
+          logoImageConfig={logoImageConfig}
         />
       ))}
     </div>

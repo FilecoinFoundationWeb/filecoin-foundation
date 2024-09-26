@@ -6,7 +6,7 @@ import { capitalize } from '@/utils/capitalize'
 
 import type { Sponsor } from './SponsorSection'
 
-export type ImageConfig = {
+export type LogoImageConfig = {
   containerStyles: string
   imageSizes: string
 }
@@ -14,20 +14,24 @@ export type ImageConfig = {
 export type SponsorLogoProps = {
   sponsor: Sponsor
   tier: string
-  imageConfig: ImageConfig
+  logoImageConfig: LogoImageConfig
 }
 
-export function SponsorLogo({ sponsor, tier, imageConfig }: SponsorLogoProps) {
+export function SponsorLogo({
+  sponsor,
+  tier,
+  logoImageConfig,
+}: SponsorLogoProps) {
   const formattedTier = capitalize(tier.replace('-', ' '))
 
   return (
-    <div className={clsx('relative w-full', imageConfig.containerStyles)}>
+    <div className={clsx('relative w-full', logoImageConfig.containerStyles)}>
       <Image
         key={sponsor.name}
         src={sponsor.image.src}
         alt={`${sponsor.name} Logo - ${formattedTier} sponsor`}
         fill={true}
-        sizes={imageConfig.imageSizes}
+        sizes={logoImageConfig.imageSizes}
         className="object-contain object-left-bottom"
       />
       {sponsor.website && (
