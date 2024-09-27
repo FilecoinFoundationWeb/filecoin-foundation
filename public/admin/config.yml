@@ -750,7 +750,7 @@ collections:
                 widget: "image"
                 allow_multiple: false
                 choose_url: false
-                hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+                hint: Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to max. 200px width, ensuring the aspect ratio is maintained at 2:3 (e.g., 200px width and 300px height).
               - *image_alt_config
       - name: "sponsors"
         label: "Sponsors"
