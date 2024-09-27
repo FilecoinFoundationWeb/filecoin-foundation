@@ -1,120 +1,40 @@
 import * as Sentry from '@sentry/nextjs'
 
-import type { AllocatorProps } from '../components/AllocatorsList'
-
-const GITHUB_ALLOCATORS_REPO =
-  'https://api.github.com/repos/filecoin-project/Allocator-Registry/contents/Allocators'
-
-const SPEC_FILE_NAME = 'Allocator JSON SPEC.json'
-
-async function getAllocatorUrlList() {
-  try {
-    const response = await fetch(GITHUB_ALLOCATORS_REPO, {
-      headers: {
-        Authorization: `token ${process.env.GITHUB_AUTH_TOKEN}`,
-      },
-    })
-    if (!response.ok) {
-      Sentry.captureException(
-        new Error(`Failed to fetch allocator URLs: ${response.statusText}`),
-      )
-      console.error(`Failed to fetch allocator URLs: ${response.statusText}`)
-      return []
-    }
-    const allocatorsData = await response.json()
-
-    const urlList = allocatorsData
-      .filter((file: any) => file.name.endsWith('.json'))
-      .filter((file: any) => file.name !== SPEC_FILE_NAME)
-      .map((file: any) => file.url)
-
-    return urlList
-  } catch (error) {
-    Sentry.captureException(error, {
-      extra: { context: 'Error fetching allocators' },
-    })
-    console.error('Error fetching allocators:', error)
-    return []
-  }
-}
+import { getAllocatorUrlList } from './getAllocatorUrlList'
+import { parseAndFilterAllocatorData } from './parseAndFilterAllocatorData'
 
 export async function getAllocators() {
   try {
     const allocatorUrlList = await getAllocatorUrlList()
-
-    const allocatorData = await Promise.all(
-      allocatorUrlList.map(async (allocatorUrl: any) => {
-        try {
-          const allocatorResponse = await fetch(allocatorUrl)
-
-          const allocator = await allocatorResponse.json()
-
-          return allocator
-        } catch (error) {
-          Sentry.captureException(error, {
-            extra: { context: `Error fetching ${allocatorUrl}` },
-          })
-          console.error(`Error fetching ${allocatorUrl}:`, error)
-          return null
-        }
-      }),
-    )
-
-    const parsedAllocatorData = parseAndFilterAllocatorData(allocatorData)
-
-    return parsedAllocatorData
+    const allocatorData = await fetchAllocatorsData(allocatorUrlList)
+    return parseAndFilterAllocatorData(allocatorData)
   } catch (error) {
-    Sentry.captureException(error, {
-      extra: { context: 'Error fetching allocator data' },
-    })
-    console.error('Error fetching allocator data:', error)
+    handleAllocatorFetchingError(error, 'Error fetching allocator data')
     return []
   }
 }
 
-function parseAndFilterAllocatorData(allocatorData: any) {
-  const parsedAllocatorData = allocatorData
-    .map((allocator: any) => {
-      try {
-        return parseAllocatorData(allocator)
-      } catch (parseAllocatorError) {
-        Sentry.captureException(parseAllocatorError, {
-          extra: { context: 'Error in parseAllocatorData' },
-        })
-        console.error('Error in parseAllocatorData:', parseAllocatorError)
-        return null
-      }
-    })
-    .filter((data: any): data is AllocatorProps => data !== null)
-
-  return parsedAllocatorData
+async function fetchAllocatorsData(allocatorUrlList: Array<string>) {
+  return Promise.all(allocatorUrlList.map(fetchAllocatorData))
 }
 
-function parseAllocatorData(allocatorData: any) {
-  if (!allocatorData.content) {
-    Sentry.captureMessage('Allocator data missing content field')
-    console.error('Allocator data missing content field')
-    return null
-  }
-
+async function fetchAllocatorData(allocatorUrl: string) {
   try {
-    const decodedContent = atob(allocatorData.content)
-
-    const parsedData = JSON.parse(decodedContent)
-
-    return {
-      name: parsedData.name || '',
-      type: parsedData.metapathway_type || '',
-      region: parsedData.location || '',
-      required_sps: parsedData.application?.required_sps || '',
-      required_replicas: parsedData.application?.required_replicas || '',
-      apply: parsedData.application?.allocation_bookkeeping || '',
-    }
+    const response = await fetch(allocatorUrl)
+    return await validateAllocatorResponse(response)
   } catch (error) {
-    Sentry.captureException(error, {
-      extra: { context: 'Error decoding or parsing JSON' },
-    })
-    console.error('Error decoding or parsing JSON:', error)
+    handleAllocatorFetchingError(error, `Error fetching ${allocatorUrl}`)
     return null
   }
+}
+
+async function validateAllocatorResponse(response: Response) {
+  if (!response.ok) {
+    throw new Error(`Failed to fetch allocator: ${response.statusText}`)
+  }
+  return response.json()
+}
+
+function handleAllocatorFetchingError(error: unknown, context: string) {
+  Sentry.captureException(error, { extra: { context } })
 }
