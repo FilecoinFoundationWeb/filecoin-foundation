@@ -44,7 +44,6 @@ import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getInvolvedData } from './data/getInvolvedData'
-import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const NoSSRPagination = dynamic(
@@ -120,12 +119,10 @@ export default function Events({ searchParams }: Props) {
           ...(featuredEvent.image || graphicsData.events1),
           fallback: graphicsData.events1,
         }}
-        cta={buildCtaArray({
-          externalLink: featuredEvent.externalLink || {
-            url: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
-          },
-          lumaCalendarLink: featuredEvent.lumaCalendarLink,
-        })}
+        cta={{
+          href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
+          text: 'View Event Details',
+        }}
       />
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
