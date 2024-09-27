@@ -100,10 +100,11 @@ function parseAllocatorData(allocatorData: any) {
 
     return {
       name: parsedData.name || '',
-      metapathway_type: parsedData.metapathway_type || '',
-      location: parsedData.location || '',
+      type: parsedData.metapathway_type || '',
+      region: parsedData.location || '',
       required_sps: parsedData.application?.required_sps || '',
       required_replicas: parsedData.application?.required_replicas || '',
+      apply: parsedData.application?.allocation_bookkeeping || '',
     }
   } catch (error) {
     Sentry.captureException(error, {

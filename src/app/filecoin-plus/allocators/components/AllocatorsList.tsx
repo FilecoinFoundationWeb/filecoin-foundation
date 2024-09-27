@@ -13,10 +13,11 @@ import { mapAllocatorsToTableData } from '../data/allocatorTable'
 
 export type AllocatorProps = {
   name: string
-  metapathway_type: string
-  location: string
+  type: string
+  region: string
   required_replicas: string
   required_sps: string
+  apply: string
 }
 
 type AllocatorsListProps = {
