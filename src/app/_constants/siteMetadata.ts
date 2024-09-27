@@ -22,6 +22,9 @@ const FILECOIN_DOCS_URLS = {
 }
 
 const FILECOIN_FOUNDATION_URLS = {
+  allocators: {
+    externalSite: 'https://allocator.tech/',
+  },
   annualReports: {
     '2024':
       'https://messari.io/report-pdf/20393d669df072af1672e1f2804d63ce27836bb3.pdf',
