@@ -22,6 +22,25 @@ luma-events-section:
   embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
 image:
   src: /assets/images/fil-bangkok-2024.webp
+speakers:
+  - name: Stefaan Vervaet
+    title: CEO
+    company: Akave.ai
+    linkedin: https://www.linkedin.com/in/stefaan-vervaet/
+    image:
+      src: /assets/images/stefaan-vervaet-headshot.webp
+  - name: Clara Tsao
+    title: Co-Founding Officer
+    company: Filecoin Foundation
+    linkedin: https://www.linkedin.com/in/claratsao/
+    image:
+      src: /assets/images/clara-tsao-headshot.webp
+  - name: Alexander Kinstler
+    title: Chief Product Officer, Co-Founder
+    company: Storacha
+    linkedin: https://www.linkedin.com/in/alexanderkinstler/
+    image:
+      src: /assets/images/alexander-kinstler-headshot.webp
 sponsors:
   first-tier:
     - name: Boosty Labs
