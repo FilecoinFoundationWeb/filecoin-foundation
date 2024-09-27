@@ -723,6 +723,35 @@ collections:
             required: false
             hint: Paste the embed URL for your Luma event here to display the events directly on the page. Include relevant tags when appropriate, e.g., https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024.
       - *image_config
+      - name: "speakers"
+        label: "Speakers"
+        widget: "list"
+        required: false
+        fields:
+          - name: "name"
+            label: "Name"
+            widget: "string"
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "company"
+            label: "Company"
+            widget: "string"
+          - name: "linkedin"
+            label: "LinkedIn"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "object"
+            required: false
+            fields:
+              - name: "src"
+                label: "URL"
+                widget: "image"
+                allow_multiple: false
+                choose_url: false
+                hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+              - *image_alt_config
       - name: "sponsors"
         label: "Sponsors"
         widget: "object"
