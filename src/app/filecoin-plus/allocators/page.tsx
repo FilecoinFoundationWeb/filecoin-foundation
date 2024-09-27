@@ -25,7 +25,7 @@ export default async function Allocators() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <PageHeader title={header.title} description={header.description} />
+      <PageHeader title={header.title} />
       <AllocatorsList allocators={allocators} />
     </PageLayout>
   )
