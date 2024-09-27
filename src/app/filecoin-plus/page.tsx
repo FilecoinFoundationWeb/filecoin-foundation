@@ -67,7 +67,7 @@ export default function FilPlus() {
           Allocators are a core part of the Fil+ program and help incentivize
           the storage of useful data of the Filecoin network. For a full list of
           instructions and walk through please visit{' '}
-          <TextLink href={FIL_PLUS_URLS.allocatorsBlog}>
+          <TextLink href={FIL_PLUS_URLS.allocators.blog}>
             blog.allocator.tech
           </TextLink>
           .
