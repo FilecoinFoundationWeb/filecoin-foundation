@@ -7,6 +7,8 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getEventData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
+import { CardGrid } from '@/components/CardGrid'
+import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -44,6 +46,7 @@ export default function EventEntry({ params }: EventProps) {
     externalLink,
     lumaCalendarLink,
     lumaEventsSection,
+    speakers,
     sponsors,
   } = data
 
@@ -73,6 +76,23 @@ export default function EventEntry({ params }: EventProps) {
             height="720"
             className="rounded-lg"
           ></iframe>
+        </PageSection>
+      )}
+
+      {speakers && (
+        <PageSection kicker="speakers" title="FIL Bangkok 2024 Speakers">
+          <CardGrid cols="mdTwo">
+            {speakers.map((speaker) => (
+              <KeyMemberCard
+                key={speaker.name}
+                {...speaker}
+                image={{
+                  ...speaker.image,
+                  alt: `Photo of ${speaker.name}`,
+                }}
+              />
+            ))}
+          </CardGrid>
         </PageSection>
       )}
 
