@@ -9,7 +9,11 @@ const SPEC_FILE_NAME = 'Allocator JSON SPEC.json'
 
 async function getAllocatorUrlList() {
   try {
-    const response = await fetch(GITHUB_ALLOCATORS_REPO)
+    const response = await fetch(GITHUB_ALLOCATORS_REPO, {
+      headers: {
+        Authorization: `token ${process.env.GITHUB_AUTH_TOKEN}`,
+      },
+    })
     if (!response.ok) {
       Sentry.captureException(
         new Error(`Failed to fetch allocator URLs: ${response.statusText}`),
