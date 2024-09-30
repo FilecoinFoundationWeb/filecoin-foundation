@@ -33,8 +33,8 @@ function mapParsedDataToAllocatorProps(parsedData: any) {
     name: parsedData.name || '',
     type: parsedData.metapathway_type || '',
     region: parsedData.location || '',
-    required_sps: parsedData.application?.required_sps || '',
-    required_replicas: parsedData.application?.required_replicas || '',
+    requiredSps: parsedData.application?.required_sps || '',
+    requiredReplicas: parsedData.application?.required_replicas || '',
     apply: parsedData.application?.allocation_bookkeeping || '',
   }
 }

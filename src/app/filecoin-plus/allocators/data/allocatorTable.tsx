@@ -1,6 +1,7 @@
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { createColumnHelper } from '@tanstack/react-table'
 
+import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
 import type { AllocatorProps } from '../components/AllocatorsList'
@@ -21,11 +22,11 @@ export function mapAllocatorsToTableData() {
       header: 'Region',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('required_replicas', {
+    columnHelper.accessor('requiredReplicas', {
       header: 'Required Replicas',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('required_sps', {
+    columnHelper.accessor('requiredSps', {
       header: 'Required SPs',
       cell: (info) => info.getValue(),
     }),
@@ -43,15 +44,14 @@ export function mapAllocatorsToTableData() {
         }
 
         return (
-          <a
+          <CustomLink
             href={link}
-            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 focus:brand-outline"
             aria-label={`Apply for ${name} allocator`}
           >
             <span>Apply</span>
             <Icon component={ArrowUpRight} size={20} />
-          </a>
+          </CustomLink>
         )
       },
     }),
