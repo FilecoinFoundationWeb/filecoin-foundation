@@ -9,16 +9,9 @@ import {
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { AllocatorsTableColumns } from './AllocatorsTableColumns'
+import type { AllocatorProps } from '../schema/AllocatorsSchema'
 
-export type AllocatorProps = {
-  name: string
-  type: string
-  region: string
-  requiredReplicas: string
-  requiredSps: string
-  apply: string
-}
+import { AllocatorsTableColumns } from './AllocatorsTableColumns'
 
 type AllocatorsTableProps = {
   allocators: Array<AllocatorProps>

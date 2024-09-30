@@ -4,8 +4,7 @@ import { createColumnHelper } from '@tanstack/react-table'
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
-import type { AllocatorProps } from '../components/AllocatorsTable'
-
+import type { AllocatorProps } from '../schema/AllocatorsSchema'
 const columnHelper = createColumnHelper<AllocatorProps>()
 
 export function AllocatorsTableColumns() {
@@ -14,23 +13,23 @@ export function AllocatorsTableColumns() {
       header: 'Organization Name',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('type', {
+    columnHelper.accessor('metapathway_type', {
       header: 'Type',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('region', {
+    columnHelper.accessor('location', {
       header: 'Region',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('requiredReplicas', {
+    columnHelper.accessor('application.required_replicas', {
       header: 'Required Replicas',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('requiredSps', {
+    columnHelper.accessor('application.required_sps', {
       header: 'Required SPs',
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor('apply', {
+    columnHelper.accessor('application.allocation_bookkeeping', {
       header: 'Apply',
       meta: {
         bodyCellStyle: 'text-center text-brand-300',

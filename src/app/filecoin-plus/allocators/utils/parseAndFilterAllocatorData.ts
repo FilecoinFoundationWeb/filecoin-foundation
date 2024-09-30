@@ -1,26 +1,25 @@
-import * as Sentry from '@sentry/nextjs'
+import { allocatorDataSchema } from '../schema/AllocatorsSchema'
 
 import { parseAllocatorData } from './parseAllocatorData'
 
 export function parseAndFilterAllocatorData(allocatorData: Array<any>) {
-  return allocatorData
-    .map(parseAllocatorWithErrorHandling)
-    .filter(isNonNullAllocator)
+  return allocatorData.map(validateAndParseAllocator).filter(isNonNullAllocator)
 }
 
-function parseAllocatorWithErrorHandling(allocator: any) {
-  try {
-    return parseAllocatorData(allocator)
-  } catch (error) {
-    handleParsingError(error, 'Error in parseAllocatorData')
-    return null
-  }
+function validateAndParseAllocator(allocator: any) {
+  const result = allocatorDataSchema.safeParse(allocator)
+
+  return parseAllocatorData(result.data)
 }
 
-function isNonNullAllocator(data: any) {
-  return data !== null
-}
-
-function handleParsingError(error: unknown, context: string) {
-  Sentry.captureException(error, { extra: { context } })
+function isNonNullAllocator(allocator: any) {
+  return (
+    allocator !== null &&
+    typeof allocator === 'object' &&
+    allocator.name &&
+    allocator.metapathway_type &&
+    allocator.location &&
+    allocator.application?.required_sps &&
+    allocator.application?.required_replicas
+  )
 }

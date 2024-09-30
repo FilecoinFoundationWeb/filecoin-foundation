@@ -1,17 +1,13 @@
-import * as Sentry from '@sentry/nextjs'
+import { allocatorDataSchema } from '../schema/AllocatorsSchema'
 
 import { getAllocatorUrlList } from './getAllocatorUrlList'
 import { parseAndFilterAllocatorData } from './parseAndFilterAllocatorData'
 
 export async function getAllocators() {
-  try {
-    const allocatorUrlList = await getAllocatorUrlList()
-    const allocatorData = await fetchAllocatorsData(allocatorUrlList)
-    return parseAndFilterAllocatorData(allocatorData)
-  } catch (error) {
-    handleAllocatorFetchingError(error, 'Error fetching allocator data')
-    return []
-  }
+  const allocatorUrlList = await getAllocatorUrlList()
+  const allocatorData = await fetchAllocatorsData(allocatorUrlList)
+
+  return parseAndFilterAllocatorData(allocatorData)
 }
 
 async function fetchAllocatorsData(allocatorUrlList: Array<string>) {
@@ -19,22 +15,10 @@ async function fetchAllocatorsData(allocatorUrlList: Array<string>) {
 }
 
 async function fetchAllocatorData(allocatorUrl: string) {
-  try {
-    const response = await fetch(allocatorUrl)
-    return await validateAllocatorResponse(response)
-  } catch (error) {
-    handleAllocatorFetchingError(error, `Error fetching ${allocatorUrl}`)
-    return null
-  }
-}
+  const response = await fetch(allocatorUrl)
+  const data = await response.json()
 
-async function validateAllocatorResponse(response: Response) {
-  if (!response.ok) {
-    throw new Error(`Failed to fetch allocator: ${response.statusText}`)
-  }
-  return response.json()
-}
+  const validatedResult = allocatorDataSchema.safeParse(data)
 
-function handleAllocatorFetchingError(error: unknown, context: string) {
-  Sentry.captureException(error, { extra: { context } })
+  return validatedResult.data
 }
