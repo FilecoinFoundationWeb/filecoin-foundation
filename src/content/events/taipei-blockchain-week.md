@@ -5,7 +5,8 @@ updated-on: 2023-06-27T17:19:06.311Z
 published-on: 2023-06-27T17:19:06.321Z
 category: supported-sponsored
 location: Taipei, Taiwan
-external-link: https://www.taipeiblockchainweek.com/
+external-link:
+  url: https://www.taipeiblockchainweek.com/
 start-date: 2022-12-12T18:19:06.330Z
 end-date: 2022-12-17T18:19:00.000Z
 image:

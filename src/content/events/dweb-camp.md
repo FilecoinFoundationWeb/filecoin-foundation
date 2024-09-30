@@ -5,7 +5,8 @@ updated-on: 2022-06-27T15:30:55.964Z
 published-on: 2022-06-27T15:30:55.978Z
 category: supported-sponsored
 location: Navarro, CA
-external-link: https://dwebcamp.org/
+external-link:
+  url: https://dwebcamp.org/
 start-date: 2022-08-24T11:30:00.000Z
 end-date: 2022-08-22T11:30:00.000Z
 image:

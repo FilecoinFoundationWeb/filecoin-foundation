@@ -5,7 +5,8 @@ updated-on: 2023-05-03T08:05:59.380Z
 published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
 location: Las Vegas, NV
-external-link: https://www.web3espa.io/
+external-link:
+  url: https://www.web3espa.io/
 start-date: 2022-10-13T00:00:00.000Z
 end-date: 2022-10-13T00:00:00.000Z
 image:

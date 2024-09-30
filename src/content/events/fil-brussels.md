@@ -13,7 +13,8 @@ description: The Filecoin community is descending upon Brussels, Belgium from
   workshops, networking opportunities, and can’t miss announcements from
   trailblazing Filecoin ecosystem teams building at the forefront of the data
   economy.
-external-link: https://www.fil-brussels.io/
+external-link:
+  url: https://www.fil-brussels.io/
 image:
   src: /assets/images/filbrussels.webp
 seo:

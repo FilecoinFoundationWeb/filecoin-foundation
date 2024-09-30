@@ -121,13 +121,10 @@ export default function Events({ searchParams }: Props) {
           fallback: graphicsData.events1,
         }}
         cta={{
-          href: featuredEvent.externalLink
-            ? featuredEvent.externalLink
-            : `${PATHS.EVENTS.path}/${featuredEventSlug}`,
+          href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
         }}
       />
-
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
@@ -191,7 +188,7 @@ export default function Events({ searchParams }: Props) {
 
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
-                        !description && externalLink
+                        !description && externalLink?.url
 
                       const tagLabel = getCategoryLabel({
                         collectionName: 'event_entries',
