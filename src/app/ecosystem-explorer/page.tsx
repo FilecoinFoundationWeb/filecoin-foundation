@@ -35,7 +35,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
-import { SearchNoResultsMessage } from '@/components/SearchNoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -150,7 +150,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             />
             <FilterContainer.ContentWrapper>
               {categorizedResults.length === 0 ? (
-                <SearchNoResultsMessage />
+                <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">

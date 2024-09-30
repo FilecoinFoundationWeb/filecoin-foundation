@@ -4,11 +4,11 @@ import { createColumnHelper } from '@tanstack/react-table'
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
-import type { AllocatorProps } from '../components/AllocatorsList'
+import type { AllocatorProps } from '../components/AllocatorsTable'
 
 const columnHelper = createColumnHelper<AllocatorProps>()
 
-export function mapAllocatorsToTableData() {
+export function AllocatorsTableColumns() {
   return [
     columnHelper.accessor('name', {
       header: 'Organization Name',

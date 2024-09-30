@@ -15,9 +15,9 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
-import { SearchNoResultsMessage } from '@/components/SearchNoResultsMessage'
 
 import { fetchAndParseAirtableEvents } from '../services/airtable'
 
@@ -78,7 +78,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
       </div>
 
       {paginatedResults.length === 0 ? (
-        <SearchNoResultsMessage />
+        <NoSearchResultsMessage />
       ) : (
         <>
           <CardGrid cols="smTwo">

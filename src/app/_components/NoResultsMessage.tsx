@@ -1,16 +1,21 @@
+import { type CTAProps } from '@/types/sharedProps/ctaType'
+
+import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Icon, type IconProps } from '@/components/Icon'
 
 type NoResultsMessageProps = {
   icon: IconProps['component']
   title: string
-  children: React.ReactNode
+  message: string
+  cta?: CTAProps
 }
 
 export function NoResultsMessage({
   icon,
   title,
-  children,
+  message,
+  cta,
 }: NoResultsMessageProps) {
   return (
     <div className="flex flex-col items-center gap-4 text-brand-200">
@@ -20,7 +25,12 @@ export function NoResultsMessage({
       <Heading tag="h3" variant="xl">
         {title}
       </Heading>
-      {children}
+      <p className="max-w-md text-center">{message}</p>
+      {cta && (
+        <Button href={cta.href} variant="primary">
+          {cta.text}
+        </Button>
+      )}
     </div>
   )
 }

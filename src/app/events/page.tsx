@@ -38,7 +38,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
-import { SearchNoResultsMessage } from '@/components/SearchNoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Sort } from '@/components/Sort'
 import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -174,7 +174,7 @@ export default function Events({ searchParams }: Props) {
             />
             <FilterContainer.ContentWrapper>
               {categorizedResults.length === 0 ? (
-                <SearchNoResultsMessage />
+                <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">

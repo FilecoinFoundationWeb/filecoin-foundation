@@ -9,7 +9,7 @@ import {
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { mapAllocatorsToTableData } from '../data/allocatorTable'
+import { AllocatorsTableColumns } from './AllocatorsTableColumns'
 
 export type AllocatorProps = {
   name: string
@@ -20,14 +20,14 @@ export type AllocatorProps = {
   apply: string
 }
 
-type AllocatorsListProps = {
+type AllocatorsTableProps = {
   allocators: Array<AllocatorProps>
 }
 
-export function AllocatorsList({ allocators }: AllocatorsListProps) {
+export function AllocatorsTable({ allocators }: AllocatorsTableProps) {
   const table = useReactTable({
     data: allocators,
-    columns: mapAllocatorsToTableData(),
+    columns: AllocatorsTableColumns(),
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     initialState: {
