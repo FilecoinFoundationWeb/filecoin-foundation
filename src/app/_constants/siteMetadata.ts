@@ -152,6 +152,10 @@ const FILECOIN_URLS = {
       href: 'https://filecoin.io/slack',
       label: 'Slack',
     },
+    twitter: {
+      handle: '@FilFoundation',
+      label: 'Twitter',
+    },
   },
 }
 

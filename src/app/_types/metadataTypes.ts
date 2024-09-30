@@ -12,6 +12,7 @@ type TwitterMetadata = {
 export type SeoMetadata = {
   title: string
   description: string
+  image?: { src?: string }
   og?: OpenGraphMetadata
   twitter?: TwitterMetadata
 }

@@ -38,8 +38,7 @@ export function generateMetadata({ params }: EcosystemProjectProps) {
   const data = getEcosystemProjectData(slug)
 
   return createMetadata({
-    image: { src: graphicsData.ecosystem.data.src },
-    seo: data.seo,
+    seo: { ...data.seo, image: { src: graphicsData.ecosystem.data.src } },
     path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
   })
 }

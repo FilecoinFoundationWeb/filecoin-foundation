@@ -31,8 +31,10 @@ const DynamicTableOfContents = dynamic(
 const { header, seo } = attributes
 
 export const metadata = createMetadata({
-  image: { src: graphicsData.security5.data.src },
-  seo,
+  seo: {
+    ...seo,
+    image: { src: graphicsData.security5.data.src },
+  },
   path: PATHS.MATURITY_MODEL.path,
 })
 

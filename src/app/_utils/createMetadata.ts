@@ -3,6 +3,7 @@ import { type Metadata as NextMetadata } from 'next'
 import { type SeoMetadata } from '@/types/metadataTypes'
 
 import type { DynamicPathValues, PathValues } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -11,19 +12,17 @@ const DEFAULT_IMAGE = graphicsData.home.data.src
 type CreateMetadataProps = {
   seo: SeoMetadata
   path: PathValues | DynamicPathValues
-  image?: { src?: string }
   overrideDefaultTitle?: boolean
 }
 
 export function createMetadata({
   seo,
   path,
-  image,
   overrideDefaultTitle = false,
 }: CreateMetadataProps): NextMetadata {
   const { title, description } = seo
 
-  const openGraphImage = seo.og?.image || image?.src || DEFAULT_IMAGE
+  const openGraphImage = seo.og?.image || seo.image?.src || DEFAULT_IMAGE
 
   return {
     title: overrideDefaultTitle ? { absolute: title } : title,
@@ -35,8 +34,8 @@ export function createMetadata({
     },
     twitter: {
       card: seo.twitter?.card,
-      site: seo.twitter?.site || '@FilFoundation',
-      creator: seo.twitter?.creator || '@FilFoundation',
+      site: seo.twitter?.site || FILECOIN_URLS.social.twitter.handle,
+      creator: seo.twitter?.creator || FILECOIN_URLS.social.twitter.handle,
     },
     alternates: {
       canonical: path,

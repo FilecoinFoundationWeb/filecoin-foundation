@@ -55,8 +55,10 @@ const ecosystemProjects = getEcosystemProjectsData()
 const { header, seo } = attributes
 
 export const metadata = createMetadata({
-  image: { src: graphicsData.ecosystem.data.src },
-  seo,
+  seo: {
+    ...seo,
+    image: { src: graphicsData.ecosystem.data.src },
+  },
   path: PATHS.ECOSYSTEM_EXPLORER.path,
   overrideDefaultTitle: true,
 })

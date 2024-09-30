@@ -18,8 +18,10 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const { header, seo } = attributes
 
 export const metadata = createMetadata({
-  image: { src: graphicsData.security4.data.src },
-  seo,
+  seo: {
+    ...seo,
+    image: { src: graphicsData.security4.data.src },
+  },
   path: PATHS.BUG_BOUNTY.path,
 })
 
