@@ -1,5 +1,3 @@
-import type { SeoMetadata } from '@/types/metadataTypes'
-
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
