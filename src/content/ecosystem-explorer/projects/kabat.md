@@ -12,11 +12,7 @@ subcategories:
   - data-storage-management
 tags:
   - data-storage-management
-description: SP from the beginning 
-eFIL+: from us - Motowizja, FBSNor 
-Cooperation: DeStor, Banyan, Darma, Holon 
-Based in Europe:Poland,Germany,Estonia,
-Tier4, 100%green
+description: "SP from the beginning eFIL+: from us - Motowizja, FBSNor Cooperation: DeStor, Banyan, Darma, Holon Based in Europe: Poland, Germany, Estonia, Tier4, 100%green"
 website: https://kabat-cloud.com/
 tech:
   - filecoin
@@ -24,11 +20,7 @@ year-joined: 2020-12-31T23:00:00.000Z
 
 seo:
   title: Kabat
-  description: SP from the beginning 
-eFIL+: from us - Motowizja, FBSNor 
-Cooperation: DeStor, Banyan, Darma, Holon 
-Based in Europe:Poland,Germany,Estonia,
-Tier4, 100%green
+  description: "SP from the beginning eFIL+: from us - Motowizja, FBSNor Cooperation: DeStor, Banyan, Darma, Holon Based in Europe: Poland, Germany, Estonia, Tier4, 100%green"
 ---
 
-we are storage provider
+Kabat is a storage provider on the storage network
