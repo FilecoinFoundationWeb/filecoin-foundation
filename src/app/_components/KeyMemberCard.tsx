@@ -22,7 +22,7 @@ export function KeyMemberCard(props: KeyMemberCardProps) {
     <li className="relative flex rounded-lg border border-brand-500 p-1">
       <Image
         src={image.src || fallbackSrc}
-        alt={`Photo of ${name}` || fallbackAlt}
+        alt={image.alt || fallbackAlt}
         sizes="150px"
         className="aspect-[3/4] w-32 rounded object-cover"
         width={150}
