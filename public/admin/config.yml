@@ -146,9 +146,17 @@ meta_config: &meta_config
       fields:
         - name: "card"
           label: "Twitter Card"
-          widget: "string"
+          widget: "select"
+          options:
+            - label: "Summary Card"
+              value: "summary"
+            - label: "Summary with Large Image"
+              value: "summary_large_image"
+            - label: "Player Card"
+              value: "player"
           required: false
-          hint: "If left empty, the default value will be 'summary'."
+          default: "summary"
+          hint: "If left empty, the default value will be 'Summary Card'."
         - name: "site"
           label: "Twitter Handle for Website"
           widget: "string"
