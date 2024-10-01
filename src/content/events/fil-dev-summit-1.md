@@ -5,7 +5,8 @@ updated-on: 2023-09-07T15:46:33.586Z
 published-on: 2023-09-07T15:46:33.609Z
 category: supported-sponsored
 location: Singapore
-external-link: https://fildev.io/
+external-link:
+  url: https://fildev.io/
 start-date: 2023-09-12T15:46:33.626Z
 end-date: 2023-09-14T15:46:33.644Z
 image:

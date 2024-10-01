@@ -9,7 +9,8 @@ description: "​Hosted by MetaPals and supported by Filecoin Foundation, FIL SG
   some of the sharpest minds and most innovative projects across Web3 and AI.
   ​Enjoy the incredible view of Singapore's skyline and F1 track at the highest
   food forest in the world: 1-Arden!"
-external-link: https://lu.ma/FILSingapore24
+external-link:
+  url: https://lu.ma/FILSingapore24
 image:
   src: /assets/images/fil-singapore-24.webp
 seo:

@@ -87,7 +87,7 @@ export function Card({
 Card.CardImage = function CardImage({ image }: Pick<CardProps, 'image'>) {
   if (!image) return null
 
-  const { alt, src, priority, sizes, padding, ...restImageProps } = image
+  const { alt, src, priority, sizes, padding } = image
 
   const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
@@ -101,7 +101,6 @@ Card.CardImage = function CardImage({ image }: Pick<CardProps, 'image'>) {
         priority={priority}
         sizes={sizes}
         className={clsx('rounded-lg px-1 pt-1', padding && 'px-6 pt-4')}
-        {...restImageProps}
       />
     </div>
   )
