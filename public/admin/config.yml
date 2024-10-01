@@ -262,7 +262,7 @@ collections:
           - *meta_config
 
       - name: "allocators"
-        label: "Allocators"
+        label: "Filecoin Plus - Allocators"
         file: "src/content/pages/filecoin-plus/allocators.md"
         preview_path: "filecoin-plus/allocators"
         fields:

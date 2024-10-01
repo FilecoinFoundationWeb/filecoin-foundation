@@ -1,19 +1,19 @@
 import { z } from 'zod'
 
-const applicationSchema = z.object({
+const ApplicationSchema = z.object({
   required_sps: z.string(),
   required_replicas: z.string(),
   allocation_bookkeeping: z.string(),
 })
 
-export const allocatorSchema = z.object({
+export const AllocatorSchema = z.object({
   name: z.string(),
   metapathway_type: z.string(),
   location: z.string(),
-  application: applicationSchema,
+  application: ApplicationSchema,
 })
 
-export const allocatorDataSchema = z.object({
+export const AllocatorMetaDataSchema = z.object({
   name: z.string(),
   path: z.string(),
   sha: z.string(),
@@ -34,7 +34,4 @@ export const allocatorDataSchema = z.object({
     .optional(),
 })
 
-export const allocatorsArraySchema = z.array(allocatorSchema)
-export const allocatorsDataArraySchema = z.array(allocatorDataSchema)
-
-export type AllocatorProps = z.infer<typeof allocatorSchema>
+export type Allocator = z.infer<typeof AllocatorSchema>

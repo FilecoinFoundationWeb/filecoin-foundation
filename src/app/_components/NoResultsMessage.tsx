@@ -1,4 +1,4 @@
-import { type CTAProps } from '@/types/sharedProps/ctaType'
+import type { CTAProps } from '@/types/sharedProps/ctaType'
 
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'

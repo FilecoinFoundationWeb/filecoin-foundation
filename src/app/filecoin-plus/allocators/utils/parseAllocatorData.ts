@@ -1,11 +1,8 @@
-import { allocatorSchema } from '../schema/AllocatorsSchema'
+import { AllocatorSchema } from '../schema/AllocatorsSchema'
 
 export function parseAllocatorData(allocatorData: any) {
   const parsedData = decodeAndParseContent(allocatorData.content)
-
-  const result = allocatorSchema.safeParse(parsedData)
-
-  return result.data
+  return AllocatorSchema.parse(parsedData)
 }
 
 function decodeAndParseContent(content: string) {

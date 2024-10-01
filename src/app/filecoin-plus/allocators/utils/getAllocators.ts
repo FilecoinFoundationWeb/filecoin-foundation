@@ -1,4 +1,4 @@
-import { allocatorDataSchema } from '../schema/AllocatorsSchema'
+import { AllocatorMetaDataSchema } from '../schema/AllocatorsSchema'
 
 import { getAllocatorUrlList } from './getAllocatorUrlList'
 import { parseAndFilterAllocatorData } from './parseAndFilterAllocatorData'
@@ -15,10 +15,12 @@ async function fetchAllocatorsData(allocatorUrlList: Array<string>) {
 }
 
 async function fetchAllocatorData(allocatorUrl: string) {
-  const response = await fetch(allocatorUrl)
-  const data = await response.json()
-
-  const validatedResult = allocatorDataSchema.safeParse(data)
-
-  return validatedResult.data
+  try {
+    const response = await fetch(allocatorUrl)
+    const data = await response.json()
+    return AllocatorMetaDataSchema.parse(data)
+  } catch (error) {
+    console.error('Error fetching allocator data:', error)
+    return null
+  }
 }

@@ -1,4 +1,4 @@
-import { allocatorDataSchema } from '../schema/AllocatorsSchema'
+import { AllocatorMetaDataSchema } from '../schema/AllocatorsSchema'
 
 import { parseAllocatorData } from './parseAllocatorData'
 
@@ -7,9 +7,9 @@ export function parseAndFilterAllocatorData(allocatorData: Array<any>) {
 }
 
 function validateAndParseAllocator(allocator: any) {
-  const result = allocatorDataSchema.safeParse(allocator)
+  const result = AllocatorMetaDataSchema.parse(allocator)
 
-  return parseAllocatorData(result.data)
+  return parseAllocatorData(result)
 }
 
 function isNonNullAllocator(allocator: any) {

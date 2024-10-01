@@ -9,12 +9,12 @@ import {
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import type { AllocatorProps } from '../schema/AllocatorsSchema'
+import type { Allocator } from '../schema/AllocatorsSchema'
 
 import { AllocatorsTableColumns } from './AllocatorsTableColumns'
 
 type AllocatorsTableProps = {
-  allocators: Array<AllocatorProps>
+  allocators: Array<Allocator>
 }
 
 export function AllocatorsTable({ allocators }: AllocatorsTableProps) {
