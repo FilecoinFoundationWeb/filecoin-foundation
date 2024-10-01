@@ -121,36 +121,44 @@ meta_config: &meta_config
     - name: "og"
       label: "Open Graph Metadata"
       widget: "object"
+      required: false
       collapsed: true
+      hint: "Expand for more information on default values."
       fields:
         - name: "title"
           label: "Open Graph Title"
           widget: "string"
           required: false
+          hint: "If left empty, the SEO meta title will be used."
         - name: "image"
           label: "Open Graph Image"
           widget: "image"
           allow_multiple: false
           choose_url: false
           required: false
+          hint: "If left empty, the page header image will be used. If no header image is present, a default homepage image will be used."
     - name: "twitter"
       label: "Twitter Metadata"
       widget: "object"
+      hint: "Expand for more information on default values."
+      required: false
       collapsed: true
       fields:
         - name: "card"
           label: "Twitter Card"
           widget: "string"
-          default: "summary"
           required: false
+          hint: "If left empty, the default value will be 'summary'."
         - name: "site"
-          label: "Twitter Site"
+          label: "Twitter Handle for Website"
           widget: "string"
           required: false
+          hint: "Enter the Twitter handle of the website or brand (e.g., @FilFoundation). Defaults to @FilFoundation."
         - name: "creator"
           label: "Twitter Creator"
           widget: "string"
           required: false
+          hint: "Enter the Twitter handle of the content creator (e.g., @juanbenet). Defaults to @FilFoundation."
 
 collections:
   - name: "pages"

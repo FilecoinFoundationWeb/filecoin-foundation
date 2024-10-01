@@ -129,6 +129,7 @@ const FILECOIN_FOUNDATION_URLS = {
     twitter: {
       label: 'Twitter',
       href: 'https://twitter.com/FilFoundation',
+      handle: '@FilFoundation',
     },
     youtube: {
       label: 'YouTube',
@@ -151,10 +152,6 @@ const FILECOIN_URLS = {
     slack: {
       href: 'https://filecoin.io/slack',
       label: 'Slack',
-    },
-    twitter: {
-      handle: '@FilFoundation',
-      label: 'Twitter',
     },
   },
 }

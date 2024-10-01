@@ -2,7 +2,6 @@
 header:
   title: Blog
   description: Filecoin Foundation Blog
-  featured_entry: src/content/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024.md
 featured_entry: src/content/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024.md
 seo:
   title: Filecoin Foundation Blog | Ecosystem Updates & Announcements
