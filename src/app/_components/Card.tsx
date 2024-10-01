@@ -1,12 +1,13 @@
+import Image from 'next/image'
+import type { ImageProps } from 'next/image'
+
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/sharedProps/ctaType'
-import type {
-  LocalImageWithOptions,
-  RemoteImageWithOptions,
-} from '@/types/sharedProps/imageType'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
@@ -14,7 +15,6 @@ import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
-import { ImageWithFallback } from '@/components/ImageWithFallback'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
 
@@ -24,7 +24,7 @@ type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  image?: LocalImageWithOptions | RemoteImageWithOptions
+  image?: ImageProps & { padding?: boolean }
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -67,7 +67,7 @@ export function Card({
         borderStyles[borderColor],
       )}
     >
-      <Card.Image image={image} />
+      <Card.CardImage image={image} />
       <div className="flex flex-col gap-3 p-4">
         <Card.MetaAndTags tagLabel={tagLabel} metaData={metaData} />
         <Card.Title title={title} />
@@ -84,19 +84,20 @@ export function Card({
   )
 }
 
-Card.Image = function Image({ image }: Pick<CardProps, 'image'>) {
+Card.CardImage = function CardImage({ image }: Pick<CardProps, 'image'>) {
   if (!image) return null
 
-  const { alt, src, priority, sizes, padding, objectFit, ...restImageProps } =
-    image
+  const { alt, src, priority, sizes, padding, ...restImageProps } = image
+
+  const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
   return (
     <div className="relative aspect-video">
-      <ImageWithFallback
+      <Image
         fill
-        style={{ objectFit }}
-        alt={alt || ''}
-        src={src}
+        style={{ objectFit: 'contain' }}
+        alt={alt || fallbackAlt}
+        src={src || fallbackSrc}
         priority={priority}
         sizes={sizes}
         className={clsx('rounded-lg px-1 pt-1', padding && 'px-6 pt-4')}

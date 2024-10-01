@@ -1,9 +1,13 @@
+import type { ImageProps } from 'next/image'
+import Image from 'next/image'
+
 import { clsx } from 'clsx'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { BasicCard } from '@/components/BasicCard'
-import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 
@@ -21,6 +25,7 @@ export function OrbitAmbassadorCard({
   const isImagePositionOdd = index % 2 === 1
 
   const { src, alt, blurDataURL } = image
+  const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
   return (
     <article
@@ -30,10 +35,10 @@ export function OrbitAmbassadorCard({
       )}
     >
       <div className="relative h-48 flex-shrink-0 sm:h-64 lg:h-auto lg:w-1/3">
-        <ImageWithFallback
+        <Image
           fill
-          alt={alt}
-          src={src}
+          alt={alt || fallbackAlt}
+          src={src || fallbackSrc}
           blurDataURL={blurDataURL}
           style={{ objectFit: 'cover' }}
           className="h-full w-full rounded-lg"

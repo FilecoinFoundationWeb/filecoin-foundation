@@ -1,14 +1,16 @@
-import type { LocalImageData } from '@/types/sharedProps/imageType'
+import Image from 'next/image'
+import type { ImageProps } from 'next/image'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Heading } from '@/components/Heading'
-import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 export type FocusAreaCardProps = {
   title: string
   description: string
-  image: LocalImageData
+  image: ImageProps
 }
 
 export function FocusAreaCard({
@@ -18,11 +20,13 @@ export function FocusAreaCard({
 }: FocusAreaCardProps) {
   const { src, alt, height, width, blurDataURL } = image
 
+  const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
+
   return (
     <li className="rounded-lg border border-brand-300 p-1 sm:flex lg:block">
-      <ImageWithFallback
-        src={src}
-        alt={alt}
+      <Image
+        src={src || fallbackSrc}
+        alt={alt || fallbackAlt}
         height={height}
         width={width}
         blurDataURL={blurDataURL}

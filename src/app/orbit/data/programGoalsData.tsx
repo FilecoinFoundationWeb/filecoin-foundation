@@ -1,4 +1,4 @@
-import type { LocalImageData } from '@/types/sharedProps/imageType'
+import type { ImageProps } from 'next/image'
 
 import audienceSeatedLargeAuditoriumImg from '@/assets/orbit/goals/audience-seated-large-auditorium.jpg'
 import speakerPresentationNewsPaperImg from '@/assets/orbit/goals/speaker-presentation-newspaper-tech-event.jpg'
@@ -7,7 +7,7 @@ import speakersAppreciationGroupPhoto from '@/assets/orbit/goals/speakers-apprec
 type ProgramGoalsData = {
   title: string
   description: string
-  image: LocalImageData
+  image: ImageProps
 }
 
 export const programGoalsData: Array<ProgramGoalsData> = [

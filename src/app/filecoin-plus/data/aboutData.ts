@@ -1,11 +1,11 @@
-import type { LocalImageData } from '@/types/sharedProps/imageType'
+import type { ImageProps } from 'next/image'
 
 import { graphicsData } from '@/data/graphicsData'
 
 export type AboutData = {
   title: string
   description: string
-  image: LocalImageData
+  image: ImageProps
 }
 
 export const aboutData: Array<AboutData> = [

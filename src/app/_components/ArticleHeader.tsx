@@ -1,15 +1,14 @@
-import type {
-  RemoteImageData,
-  LocalImageData,
-} from '@/types/sharedProps/imageType'
+import Image from 'next/image'
+import type { ImageProps } from 'next/image'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { type HeadingProps, Heading } from '@/components/Heading'
-import { ImageWithFallback } from '@/components/ImageWithFallback'
 
 type ArticleHeaderProps = {
-  image?: RemoteImageData | LocalImageData
+  image?: ImageProps
   children?: React.ReactNode
 }
 
@@ -17,17 +16,19 @@ type TitleProps = {
   children: HeadingProps['children']
 }
 
+const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
+
 export function ArticleHeader({ image, children }: ArticleHeaderProps) {
   return (
     <header className="space-y-6">
       <div className="space-y-6">{children}</div>
       <div className="relative aspect-video">
-        <ImageWithFallback
+        <Image
           fill
           priority
           quality={100}
-          src={image?.src || ''}
-          alt={image?.alt || ''}
+          src={image?.src || fallbackSrc}
+          alt={image?.alt || fallbackAlt}
           className="rounded-lg"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
         />

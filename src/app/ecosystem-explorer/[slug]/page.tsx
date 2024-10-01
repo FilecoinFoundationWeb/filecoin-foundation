@@ -1,3 +1,6 @@
+import type { ImageProps } from 'next/image'
+import Image from 'next/image'
+
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
 import {
@@ -6,6 +9,8 @@ import {
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
 } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
@@ -16,7 +21,6 @@ import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
-import { ImageWithFallback } from '@/components/ImageWithFallback'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
@@ -66,15 +70,17 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     subcategories,
   } = data
 
+  const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
+
   return (
     <article>
       <header className="mb-8 space-y-10 md:space-y-16">
         <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
-          <ImageWithFallback
+          <Image
             fill
             priority
-            src={image?.src || ''}
-            alt={image?.alt || ''}
+            src={image?.src || fallbackSrc}
+            alt={image?.alt || fallbackAlt}
             className="object-left-bottom"
             sizes={buildImageSizeProp({
               startSize: '100vw',
@@ -85,10 +91,10 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             style={{
               objectFit: 'contain',
             }}
-            fallbackStyle={{
-              objectFit: 'cover',
-              objectPosition: 'center',
-            }}
+            // fallbackStyle={{
+            //   objectFit: 'cover',
+            //   objectPosition: 'center',
+            // }}
           />
         </div>
         <div className="flex flex-wrap gap-2">

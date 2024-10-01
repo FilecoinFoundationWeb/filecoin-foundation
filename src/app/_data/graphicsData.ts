@@ -1,4 +1,4 @@
-import type { LocalImageData } from '@/types/sharedProps/imageType'
+import type { ImageProps } from 'next/image'
 
 import about from '@/assets/graphics/Filorg_About.png'
 import digestCoverIssue1 from '@/assets/graphics/Filorg_Digest_Cover_Issue_1.webp'
@@ -24,7 +24,7 @@ import security3 from '@/assets/graphics/Filorg_Security3.webp'
 import security4 from '@/assets/graphics/Filorg_Security4.webp'
 import security5 from '@/assets/graphics/Filorg_Security5.webp'
 
-export const graphicsData: Record<string, LocalImageData> = {
+export const graphicsData: Record<string, ImageProps> = {
   imageFallback: {
     ...imageFallback,
     alt: 'Image coming soon',

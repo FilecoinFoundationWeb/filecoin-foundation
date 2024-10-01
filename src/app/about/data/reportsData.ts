@@ -1,4 +1,4 @@
-import type { LocalImageData } from '@/types/sharedProps/imageType'
+import type { ImageProps } from 'next/image'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -8,7 +8,7 @@ type ReportData = {
   title: string
   description: string
   link: string
-  image?: LocalImageData
+  image?: ImageProps
 }
 
 export const reportsData: Array<ReportData> = [

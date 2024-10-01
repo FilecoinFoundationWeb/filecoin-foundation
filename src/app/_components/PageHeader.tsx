@@ -1,9 +1,9 @@
+import type { ImageProps } from 'next/image'
+import Image from 'next/image'
+
 import { clsx } from 'clsx'
 
-import type {
-  LocalImageData,
-  RemoteImageData,
-} from '@/types/sharedProps/imageType'
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -16,7 +16,6 @@ import {
   type DescriptionTextType,
 } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
-import { ImageWithFallback } from '@/components/ImageWithFallback'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
 
@@ -26,7 +25,7 @@ type TitleProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  image?: LocalImageData | RemoteImageData
+  image?: ImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -81,6 +80,7 @@ PageHeader.Image = function PageHeaderImage({
   if (!image) return null
 
   const { src, alt } = image
+  const { src: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
   const layoutProps = {
     priority: true,
@@ -91,7 +91,12 @@ PageHeader.Image = function PageHeaderImage({
 
   return (
     <div className={clsx('relative', 'aspect-video')}>
-      <ImageWithFallback fill src={src} alt={alt || ''} {...layoutProps} />
+      <Image
+        fill
+        src={src || fallbackSrc}
+        alt={alt || fallbackAlt}
+        {...layoutProps}
+      />
     </div>
   )
 }
