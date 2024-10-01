@@ -22,7 +22,7 @@ export default function Allocators() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <PageHeader title={header.title} />
+      <PageHeader title={header.title} description={header.description} />
       <AllocatorsTableSection />
     </PageLayout>
   )
