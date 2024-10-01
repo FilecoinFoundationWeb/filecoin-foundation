@@ -10,13 +10,10 @@ description:
 image:
   src: /assets/images/0215-ff-6-.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: "Fresh from FF: Mid May 2024"
   description:
     Discover the latest updates and news from Filecoin Foundation in mid-May
-    2024. Key highlights.
+    1.    Key highlights.
 ---
 
 _Check out the latest updates about what the Filecoin Foundation has been up to._

@@ -12,9 +12,6 @@ authors:
 image:
   src: /assets/images/interplanetary-resilience.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "Interplanetary Resilience
     Communication"
   description: "The vision of Filecoin is of verifiably robust storage of data scaling to meet the needs of humanity over centuries. In order to achieve this vision we need to _literally_ aim for the stars. We’re at a turning..."

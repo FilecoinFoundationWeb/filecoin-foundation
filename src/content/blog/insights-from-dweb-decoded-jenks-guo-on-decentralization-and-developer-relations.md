@@ -12,11 +12,6 @@ description:
 image:
   src: /assets/images/jenks-guo.png
 seo:
-  noindex: false
-  twitter:title: Jenks Guo, Developer Advocate, Filecoin Foundation on Dweb Decoded
-  twitter:card: summary
-  twitter:image: /assets/images/jenks-guo.png
-  og:image: /assets/images/jenks-guo.png
   title: "Insights from DWeb Decoded: Jenks Guo on Decentralization"
   description:
     Jenks Guo discusses decentralization and developer relations in this

@@ -12,9 +12,6 @@ authors:
 image:
   src: /assets/images/the-future-of-data-is-green-edge.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "The Future of Data Lies at the Green Edge"
   description: "As we move into the era of digital autonomy, driven by machines and machine-generated data, we need to vastly improve the world’s capacity to manage and process data at a scale previously unimaginable. At Holon..."
 ---

@@ -9,9 +9,6 @@ description: Check out the latest updates about what the Filecoin Foundation
 image:
   src: /assets/images/0215-ff-16-.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "Fresh From FF: Early September"
   description:
     "Learn how decentralized AI and data storage are building trust in

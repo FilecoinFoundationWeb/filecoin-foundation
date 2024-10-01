@@ -13,9 +13,6 @@ description:
 image:
   src: /assets/images/decentralized-compute-v2.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: Unleashing the Power of Decentralized Compute with Filecoin
   description:
     Discover how Filecoin unleashes the power of decentralized compute.

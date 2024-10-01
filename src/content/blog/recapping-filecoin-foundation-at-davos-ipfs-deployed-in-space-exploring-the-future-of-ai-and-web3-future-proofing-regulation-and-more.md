@@ -11,11 +11,6 @@ description: The Filecoin Sanctuary in Davos brought together the world’s
 image:
   src: /assets/images/020724-davos.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/020724-davos.png
-  og:image: /assets/images/020724-davos.png
   title: "Filecoin Foundation at Davos: Key Highlights and Future Prospects"
   description: Recap of Filecoin Foundation at Davos. Highlights include IPFS in
     space, AI and Web3 future, and more.

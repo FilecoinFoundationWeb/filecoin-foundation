@@ -10,11 +10,6 @@ category: news
 seo:
   title: "Fresh From Filecoin Foundation: Early June 2024 Updates"
   description: "Get the latest updates from Filecoin Foundation, including events, governance, and ecosystem highlights from early June 2024."
-  noindex: false
-  twitter:title: "Fresh From FF: Early June, 2024"
-  twitter:card: summary
-  og:image: /assets/images/0215-ff-7-.png
-  twitter:image: /assets/images/0215-ff-7-.png
 ---
 
 ⭐ Thanks for joining the [Filecoin ecosystem at Consensus](https://hub.fil.org/consensus-24)! FF hosted the Filecoin booth on the Consensus show floor, where attendees connected with community members and discovered how the Filecoin network enables decentralized AI, compute, and DePIN.

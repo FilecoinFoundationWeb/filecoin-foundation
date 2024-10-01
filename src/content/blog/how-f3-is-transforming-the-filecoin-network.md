@@ -9,9 +9,6 @@ description: "Fast Finality in Filecoin (F3) is coming to the network, speeding
 image:
   src: /assets/images/08282024-fastfinality.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   description:
     F3 dramatically reduces Filecoin's finality times from 7.5 hours to
     minutes, enhancing efficiency and usability for smart contracts, L2 subnets,

@@ -10,11 +10,6 @@ description:
 image:
   src: /assets/images/021224-guest-moca-1-.png
 seo:
-  noindex: false
-  twitter:title: "Guest Post: If the Library of Alexandria Were Built Better"
-  twitter:card: summary
-  twitter:image: /assets/images/021224-guest-moca-1-.png
-  og:image: /assets/images/021224-guest-moca-1-.png
   title: "Guest Post: If the Library of Alexandria Were Built Better"
   description:
     A thought-provoking guest post exploring the concept of a better-built

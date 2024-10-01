@@ -10,13 +10,8 @@ description:
 image:
   src: /assets/images/0215-ff-3-.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: "Fresh from FF: Early April 2024"
-  description:
-    Catch up on the latest updates from Filecoin Foundation in early April
-    2024. Key highlights and news.
+  description: Catch up on the latest updates from Filecoin Foundation in early April 2024.
 ---
 
 _Check out the latest updates about what the Filecoin Foundation team has been up to._

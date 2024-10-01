@@ -12,18 +12,16 @@ authors:
 image:
   src: /assets/images/letter-from-the-guest-editor.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: Letter from the Guest Editor
   description: "Dear Readers, Welcome to the inaugural edition of The Filecoin
     Ecosystem Digest: All Systems Go - a journey into the transformative power
     of the decentralized web and its far-reaching implications across
     various..."
 ---
+
 Dear Readers,
 
-Welcome to the inaugural edition of *The Filecoin Ecosystem Digest: All Systems Go* - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
+Welcome to the inaugural edition of _The Filecoin Ecosystem Digest: All Systems Go_ - a journey into the transformative power of the decentralized web and its far-reaching implications across various fields.
 
 In this issue, we aim to spotlight the intersection of decentralized infrastructure with a number of key emerging trends - from the role of decentralized architectures in AI, to the rise of the space economy, to how sustainability intersects with the future of data centers, and more.
 
@@ -31,12 +29,11 @@ The Filecoin community is filled with brilliant innovators - and in this Digest,
 
 First, we have a piece from Molly Mackinlay of the FilOz team highlighting the key focus areas for the Filecoin ecosystem - expanding outside just the domain of storage.
 
-Next, we turn to AI with an article from Sofia Yan and Ryan Matthew of the Numbers Protocol team - demonstrating the potential for decentralized technology to bring back trust to media via provenance and openness. 
+Next, we turn to AI with an article from Sofia Yan and Ryan Matthew of the Numbers Protocol team - demonstrating the potential for decentralized technology to bring back trust to media via provenance and openness.
 
 Our exploration doesn’t stop at Earth. Dietrich Ayala’s piece centers on the role of decentralized data in the space economy - and the importance of the current moment to embed our technologies into the emerging standards forming in this growing field.
 
 We ground ourselves with a piece from Mara McMahon from the DeStor team focused on emerging trends in the enterprise sector.
-
 
 Then, we join Irma Jiang from ND Labs to reflect on how Web3 offers a new paradigm of community-based growth.
 

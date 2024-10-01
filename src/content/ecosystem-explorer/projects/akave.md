@@ -18,9 +18,6 @@ tech:
   - ipfs
 twitter: https://x.com/akavenetwork
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: Akave - The First L2 Storage Chain for Scalable, Decentralized AI Data Lakes
   description: Discover Akave, the pioneering L2 storage chain that enables
     scalable, decentralized AI with on-chain data lakes, revolutionizing data

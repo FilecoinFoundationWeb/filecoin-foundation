@@ -14,9 +14,6 @@ description:
 image:
   src: /assets/images/050924-adoption.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: "Driving Widespread Filecoin Adoption: Key Initiatives for 2024"
   description:
     Explore key initiatives and community involvement driving widespread

@@ -11,11 +11,6 @@ description:
 image:
   src: /assets/images/032224-orbit-austin.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/032224-orbit-austin.png
-  og:image: /assets/images/032224-orbit-austin.png
   title: "Orbiting ETHDenver: Insights from a Filecoin Orbit Ambassador"
   description:
     Insights and perspectives from a Filecoin Orbit Ambassador at ETHDenver.

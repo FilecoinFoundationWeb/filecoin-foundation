@@ -14,11 +14,6 @@ description:
 image:
   src: /assets/images/01-lockheed.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/01-lockheed.png
-  og:image: /assets/images/01-lockheed.png
   title: Filecoin Foundation Successfully Deploys IPFS in Space
   description:
     Filecoin Foundation successfully deploys IPFS in space. Discover the

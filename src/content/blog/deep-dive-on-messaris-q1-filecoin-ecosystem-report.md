@@ -10,12 +10,6 @@ description:
 image:
   src: /assets/images/050824-messariq1.png
 seo:
-  noindex: false
-  twitter:title: Messari Filecoin Report Q1 2024
-  twitter:card: summary
-  twitter:image: /assets/images/050824-messariq1.png
-  og:image: /assets/images/050824-messariq1.png
-  og:title: Messari Filecoin Report Q1 2024
   title: Deep Dive on Messari's Q1 Filecoin Ecosystem Report
   description:
     An in-depth look at Messari's Q1 report on the Filecoin ecosystem.

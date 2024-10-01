@@ -13,9 +13,6 @@ description:
 image:
   src: /assets/images/022624-ff-anualreport.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: Filecoin Foundation 2023 Annual Report
   description:
     Explore the Filecoin Foundation's 2023 annual report. Highlights and
