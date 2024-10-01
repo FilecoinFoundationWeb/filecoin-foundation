@@ -1,12 +1,15 @@
+<<<<<<< HEAD
 import { AllocatorMetaDataSchema } from '../schema/AllocatorsSchema'
+=======
+import { AllocatorMetaDataSchema } from '../schemas/allocatorSchema'
+>>>>>>> c2ef38e (CR)
 
 import { getAllocatorUrlList } from './getAllocatorUrlList'
-import { parseAndFilterAllocatorData } from './parseAndFilterAllocatorData'
+import { parseAndFilterAllocatorData } from './parseAllocatorData'
 
 export async function getAllocators() {
   const allocatorUrlList = await getAllocatorUrlList()
   const allocatorData = await fetchAllocatorsData(allocatorUrlList)
-
   return parseAndFilterAllocatorData(allocatorData)
 }
 
