@@ -57,7 +57,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: { src: graphicsData.ecosystem.data.src },
+    image: graphicsData.ecosystem.data.src,
   },
   path: PATHS.ECOSYSTEM_EXPLORER.path,
   overrideDefaultTitle: true,

@@ -47,7 +47,7 @@ const grantGraduates = ecosystemProjects.filter((item) =>
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: { src: graphicsData.grants.data.src },
+    image: graphicsData.grants.data.src,
   },
   path: PATHS.GRANTS.path,
   overrideDefaultTitle: true,

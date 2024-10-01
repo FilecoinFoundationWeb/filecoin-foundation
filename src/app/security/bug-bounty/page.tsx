@@ -20,7 +20,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: { src: graphicsData.security4.data.src },
+    image: graphicsData.security4.data.src,
   },
   path: PATHS.BUG_BOUNTY.path,
 })

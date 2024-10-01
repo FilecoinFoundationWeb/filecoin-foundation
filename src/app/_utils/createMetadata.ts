@@ -22,7 +22,7 @@ export function createMetadata({
 }: CreateMetadataProps): NextMetadata {
   const { title, description } = seo
 
-  const openGraphImage = seo.og?.image || seo.image?.src || DEFAULT_IMAGE
+  const openGraphImage = seo.og?.image || seo.image || DEFAULT_IMAGE
 
   return {
     title: overrideDefaultTitle ? { absolute: title } : title,

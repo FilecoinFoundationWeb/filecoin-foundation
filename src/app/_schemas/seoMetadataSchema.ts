@@ -4,12 +4,7 @@ import configJson from '@/data/cmsConfigSchema.json'
 
 const { seo_metadata_description_max_characters } = configJson
 
-const TwitterCardType = z.enum([
-  'summary',
-  'summary_large_image',
-  'player',
-  'app',
-])
+const TwitterCardType = z.enum(['summary', 'summary_large_image', 'player'])
 
 export const SeoMetadataSchema = z.object({
   title: z.string(),

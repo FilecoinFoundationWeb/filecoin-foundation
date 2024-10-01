@@ -37,7 +37,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: { src: graphicsData.orbit.data.src },
+    image: graphicsData.orbit.data.src,
   },
   path: PATHS.ORBIT.path,
   overrideDefaultTitle: true,

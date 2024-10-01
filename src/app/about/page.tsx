@@ -31,7 +31,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: { src: graphicsData.about.data.src },
+    image: graphicsData.about.data.src,
   },
   path: PATHS.ABOUT.path,
   overrideDefaultTitle: true,
