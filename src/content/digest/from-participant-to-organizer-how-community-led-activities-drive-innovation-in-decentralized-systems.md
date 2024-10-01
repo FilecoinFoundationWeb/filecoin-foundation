@@ -13,16 +13,15 @@ authors:
 image:
   src: /assets/images/from-participant-to-organizer.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "From Participant to Organizer: How Community-Led Activities Drive
     Innovation in Decentralized Systems"
-  description: Harnessing the Power of Decentralized Ecosystems — The strength of
+  description:
+    Harnessing the Power of Decentralized Ecosystems — The strength of
     decentralized ecosystems lies in their broad participation and spirit of
     sharing. They are built on the diversity of thought and experience brought
     by...
 ---
+
 ## Harnessing the Power of Decentralized Ecosystems
 
 The strength of decentralized ecosystems lies in their broad participation and spirit of sharing. They are built on the diversity of thought and experience brought by their participants. Community-led and in-person activities are crucial for the continued prosperity of these ecosystems, as they enable members to connect, share perspectives, and collaboratively address challenges.

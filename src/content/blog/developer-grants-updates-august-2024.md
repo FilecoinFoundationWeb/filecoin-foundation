@@ -9,16 +9,11 @@ description: The Developer Grants Updates series brings news and highlights from
 image:
   src: /assets/images/0701-dg-updates.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: Filecoin Foundation Developer Grants Updates August 2024
   description:
     Explore the Filecoin Foundation's latest Developer Grants Updates,
     featuring 2024 highlights, new projects, and funding innovations. Discover
     integrations, tools, and impact in the Filecoin ecosystem.
-  og:
-    image: /assets/images/0701-dg-updates.webp
 ---
 
 Filecoin Foundation is excited to launch the Developer Grants Updates series, bringing news and highlights from the Filecoin Foundation Developer Grants team. The first issue will cover updates since the start of this fiscal year (FY’24), which began in October 2023.

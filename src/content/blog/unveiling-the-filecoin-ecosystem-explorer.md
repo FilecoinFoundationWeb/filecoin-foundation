@@ -10,11 +10,6 @@ description:
 image:
   src: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
 seo:
-  noindex: false
-  twitter:title: Filecoin Ecosystem Explorer
-  twitter:card: summary
-  twitter:image: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
-  og:image: /assets/images/240109-ecosystemexplorerlaunch_blogheader.png
   title: Unveiling the Filecoin Ecosystem Explorer
   description:
     Introducing the Filecoin Ecosystem Explorer. Navigate and discover

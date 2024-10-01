@@ -10,9 +10,6 @@ description: "The NV23 Waffle upgrade for the Filecoin network has successfully
 image:
   src: /assets/images/blog-header-nv23-upgrade.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: Filecoin NV23 Waffle Upgrade Goes Live with Major Enhancements
   description: The NV23 Waffle upgrade for Filecoin, live on Aug 6, 2024, brings
     streamlined processes, better cryptographic support, and optimized proof

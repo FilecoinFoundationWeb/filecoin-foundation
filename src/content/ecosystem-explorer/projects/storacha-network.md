@@ -18,9 +18,6 @@ tech:
 twitter: https://x.com/storachanetwork
 video-url: https://www.youtube.com/embed/WLOdWD2bFOA
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "Storacha: Decentralized Hot Data Storage Built on Filecoin"
   description: Storacha is a blazing-fast, user-owned, and verifiable hot data
     storage and retrieval system built on the Filecoin network

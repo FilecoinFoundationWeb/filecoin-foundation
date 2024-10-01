@@ -1,13 +1,15 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
 import type { BlogPost } from '@/types/blogPostType'
-import type { SeoMetadata } from '@/types/metadataTypes'
+
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
+
+import type { SeoMetadata } from '@/schemas/seoMetadataSchema'
 
 export function generateStructuredData(
   posts: Array<BlogPost>,

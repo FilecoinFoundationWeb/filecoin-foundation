@@ -21,7 +21,4 @@ seo:
   title: FIL Brussels
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
-  og:
-    image: /assets/images/og-image.png
-    title: FIL Brussels
 ---

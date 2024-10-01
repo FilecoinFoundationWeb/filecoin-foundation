@@ -21,7 +21,7 @@ export function generateMetadata({ params }: DigestArticleProps) {
   const data = getDigestArticleData(slug)
 
   return createMetadata({
-    seo: data.seo,
+    seo: { ...data.seo, image: data.image?.src },
     path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
   })
 }

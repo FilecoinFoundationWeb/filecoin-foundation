@@ -10,9 +10,6 @@ description: "Network announcements include collaborations with SingularityNET,
 image:
   src: /assets/images/120624-brussels.jpg
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "Leading AI Projects Collaborate with Filecoin Foundation to Drive AI
     Innovation"
   description: Filecoin Foundation collaborates with SingularityNET, Theoriq,

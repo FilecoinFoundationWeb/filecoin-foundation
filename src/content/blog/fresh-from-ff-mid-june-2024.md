@@ -9,9 +9,6 @@ description: Check out the latest updates about what the Filecoin Foundation
 image:
   src: /assets/images/0215-ff-8-.png
 seo:
-  twitter:
-    title: summary
-    card: summary
   description: "The latest updates about what the Filecoin Foundation team has been up to."
   title: "Fresh From FF: Mid-June, 2024"
 ---

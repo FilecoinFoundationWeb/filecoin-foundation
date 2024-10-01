@@ -10,11 +10,6 @@ category: reports
 seo:
   title: "Improve Filecoin Docs & Receive Grant Funding up to $50,000"
   description: "Enhance Filecoin documentation and educational resources with our grants program. Funding up to $50,000 available for critical development projects."
-  noindex: false
-  twitter:title: "Improve Filecoin Docs & Receive Grant Funding up to $50,000"
-  twitter:card: summary
-  og:image: /assets/images/052924-docgrants.png
-  twitter:image: /assets/images/052924-docgrants.png
 ---
 
 Filecoin Foundation awards grant funding for critical development projects to foster a more decentralized, efficient, and robust foundation for humanity’s information.
