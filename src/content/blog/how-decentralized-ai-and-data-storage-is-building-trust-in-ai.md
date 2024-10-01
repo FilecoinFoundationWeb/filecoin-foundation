@@ -9,9 +9,6 @@ description: The world of AI is rapidly growing. For AI models, data is fuel.
 image:
   src: /assets/images/08192024-decentralized-ai.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
   title: "Decentralized AI: Filecoin's Role in Transforming AI Data Storage and
     Integrity"
   description: Explore how Filecoin leverages decentralized storage to enhance

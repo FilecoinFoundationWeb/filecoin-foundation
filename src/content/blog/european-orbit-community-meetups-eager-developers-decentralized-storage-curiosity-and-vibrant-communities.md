@@ -11,9 +11,6 @@ description: "The Filecoin Orbit community teamed up with Filecoin Foundation
 image:
   src: /assets/images/110624-europe.png
 seo:
-  twitter:
-    title: summary
-    card: summary
   description:
     "The Filecoin Orbit community toured Europe, hosting events in six
     cities to strengthen the community ahead of EthCC in Brussels."

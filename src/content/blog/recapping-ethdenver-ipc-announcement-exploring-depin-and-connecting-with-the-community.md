@@ -13,9 +13,6 @@ description:
 image:
   src: /assets/images/ethdenver.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: "Recapping ETHDenver: IPC Announcement, DePIN, and Community Connections"
   description:
     Highlights from ETHDenver, including the IPC announcement, DePIN exploration,

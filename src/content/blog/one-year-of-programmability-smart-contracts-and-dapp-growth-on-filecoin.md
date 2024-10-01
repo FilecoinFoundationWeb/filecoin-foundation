@@ -10,11 +10,6 @@ description:
 image:
   src: /assets/images/031224-fvm-anniversary.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/031224-fvm-anniversary.png
-  og:image: /assets/images/031224-fvm-anniversary.png
   title: "One Year of Programmability: Smart Contracts and DApp Growth on Filecoin"
   description:
     Celebrating one year of programmability on Filecoin. Explore the growth

@@ -11,9 +11,6 @@ description: "There are dozens of ways to store data on Filecoin. From
 image:
   src: /assets/images/120624-spotlight.png
 seo:
-  twitter:
-    title: summary
-    card: summary
   description: Discover diverse storage options on Filecoin, from mobile apps to
     enterprise platforms, prioritizing privacy, decentralization, and seamless
     Web3 integration.

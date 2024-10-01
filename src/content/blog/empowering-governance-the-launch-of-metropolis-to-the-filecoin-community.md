@@ -10,11 +10,6 @@ description:
 image:
   src: /assets/images/blog-header-_-metropolis.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/blog-header-_-metropolis.png
-  og:image: /assets/images/blog-header-_-metropolis.png
   title: "Empowering Governance: Launch of Metropolis for Filecoin Community"
   description:
     Announcing the launch of Metropolis to empower governance in the Filecoin

@@ -13,11 +13,6 @@ category: ecosystem
 seo:
   title: "Ecosystem Spotlight: GhostDrive's Secure, Decentralized Storage Now on Mobile"
   description: "Explore GhostDrive’s secure decentralized storage on mobile, leveraging Filecoin for enhanced redundancy and security. Now available on App Store and Google Play."
-  noindex: false
-  twitter:title: "Ecosystem Spotlight: GhostDrive's Secure, Decentralized Storage Now on Mobile"
-  twitter:card: summary
-  og:image: /assets/images/0604-ghostdrive.png
-  twitter:image: /assets/images/0604-ghostdrive.png
 ---
 
 Last month, [Google Cloud](https://arstechnica.com/gadgets/2024/05/google-cloud-accidentally-nukes-customer-account-causes-two-weeks-of-downtime/) accidentally deleted a financial services provider’s private cloud account due to an ‘unprecedented misconfiguration.’ Although the client typically had redundancies in place, Google’s irreversible deletion of the client's cloud subscription caused a total loss of data. In reporting on this incident, ArsTechnica’s Ron Amadeo cautioned: "Don't put all your eggs in one cloud basket."

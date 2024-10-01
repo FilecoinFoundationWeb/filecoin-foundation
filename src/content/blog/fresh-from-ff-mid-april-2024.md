@@ -10,9 +10,6 @@ description:
 image:
   src: /assets/images/0215-ff-4-.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
   title: "Fresh from FF: Mid April 2024"
   description:
     Mid-April 2024 updates from Filecoin Foundation. Key news, events,

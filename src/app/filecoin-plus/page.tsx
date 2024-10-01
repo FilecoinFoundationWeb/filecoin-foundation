@@ -27,7 +27,10 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const { header, seo } = attributes
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.filPlus.data.src,
+  },
   path: PATHS.FIL_PLUS.path,
 })
 
