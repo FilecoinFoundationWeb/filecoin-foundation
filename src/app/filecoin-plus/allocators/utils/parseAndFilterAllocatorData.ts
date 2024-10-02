@@ -1,25 +1,27 @@
-import { AllocatorMetaDataSchema } from '../schema/AllocatorsSchema'
+import {
+  type AllocatorFileMetaData,
+  AllocatorSchema,
+} from '../schemas/allocatorSchema'
 
-import { parseAllocatorData } from './parseAllocatorData'
-
-export function parseAndFilterAllocatorData(allocatorData: Array<any>) {
-  return allocatorData.map(validateAndParseAllocator).filter(isNonNullAllocator)
-}
-
-function validateAndParseAllocator(allocator: any) {
-  const result = AllocatorMetaDataSchema.parse(allocator)
-
-  return parseAllocatorData(result)
-}
-
-function isNonNullAllocator(allocator: any) {
-  return (
-    allocator !== null &&
-    typeof allocator === 'object' &&
-    allocator.name &&
-    allocator.metapathway_type &&
-    allocator.location &&
-    allocator.application?.required_sps &&
-    allocator.application?.required_replicas
+export function extractAllocators(
+  allocatorFileMetaData: Array<AllocatorFileMetaData | null>,
+) {
+  const filteredAllocatorFileMetaData = allocatorFileMetaData.filter(
+    (file) => file !== null,
   )
+
+  return filteredAllocatorFileMetaData
+    .map((file) => decodeAllocatorFileMetaDataContent(file.content))
+    .map((decodedContent) => getParsedAllocator(decodedContent))
+}
+
+function decodeAllocatorFileMetaDataContent(
+  content: AllocatorFileMetaData['content'],
+) {
+  const decodedContent = atob(content)
+  return JSON.parse(decodedContent)
+}
+
+function getParsedAllocator(decodedContent: string) {
+  return AllocatorSchema.parse(decodedContent)
 }

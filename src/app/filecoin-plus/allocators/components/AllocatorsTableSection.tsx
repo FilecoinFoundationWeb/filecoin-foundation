@@ -8,6 +8,7 @@ import { NoAllocatorsMessage } from './NoAllocatorsMessage'
 export async function AllocatorsTableSection() {
   try {
     const allocators = await getAllocators()
+    console.log('allocators', allocators)
     return <AllocatorsTable allocators={allocators} />
   } catch (error) {
     console.error('Error fetching or validating allocators:', error)

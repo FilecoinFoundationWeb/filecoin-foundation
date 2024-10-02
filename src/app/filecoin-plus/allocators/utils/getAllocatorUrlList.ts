@@ -1,6 +1,6 @@
 import {
-  type AllocatorMetaData,
-  AllocatorsMetaDataSchema,
+  AllocatorFileListMetaDataBaseSchema,
+  type AllocatorFileMetaDataBase,
 } from '../schemas/allocatorSchema'
 
 const GITHUB_ALLOCATORS_REPO =
@@ -13,16 +13,17 @@ export async function getAllocatorUrlList() {
     },
   })
   const allocatorsData = await response.json()
-  console.log('🔥🔥🔥🔥🔥🔥🔥', { allocatorsData })
-  // const parsedData = AllocatorsMetaDataSchema.parse(allocatorsData)
-  return extractAllocatorUrls(allocatorsData)
+  const parsedData = AllocatorFileListMetaDataBaseSchema.parse(allocatorsData)
+  return extractAllocatorUrls(parsedData)
 }
 
-function extractAllocatorUrls(allocatorsData: Array<AllocatorMetaData>) {
+function extractAllocatorUrls(
+  allocatorsData: Array<AllocatorFileMetaDataBase>,
+) {
   return allocatorsData.filter(isValidAllocatorFile).map((file) => file.url)
 }
 
-function isValidAllocatorFile(file: AllocatorMetaData) {
+function isValidAllocatorFile(file: AllocatorFileMetaDataBase) {
   const allocatorFilePattern = /^\d{3,4}\.json$/
   return allocatorFilePattern.test(file.name)
 }

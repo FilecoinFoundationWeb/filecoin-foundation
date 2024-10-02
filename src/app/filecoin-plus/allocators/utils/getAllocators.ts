@@ -1,28 +1,32 @@
-<<<<<<< HEAD
-import { AllocatorMetaDataSchema } from '../schema/AllocatorsSchema'
-=======
-import { AllocatorMetaDataSchema } from '../schemas/allocatorSchema'
->>>>>>> c2ef38e (CR)
+import {
+  type AllocatorFileMetaData,
+  type AllocatorFileMetaDataBase,
+  AllocatorFileMetaDataSchema,
+} from '../schemas/allocatorSchema'
 
 import { getAllocatorUrlList } from './getAllocatorUrlList'
-import { parseAndFilterAllocatorData } from './parseAllocatorData'
+import { extractAllocators } from './parseAndFilterAllocatorData'
 
 export async function getAllocators() {
   const allocatorUrlList = await getAllocatorUrlList()
-  const allocatorData = await fetchAllocatorsData(allocatorUrlList)
-  return parseAndFilterAllocatorData(allocatorData)
+  const allocatorFileMetaData =
+    await fetchAllocatorListMetaData(allocatorUrlList)
+  return extractAllocators(allocatorFileMetaData)
 }
 
-async function fetchAllocatorsData(allocatorUrlList: Array<string>) {
-  return Promise.all(allocatorUrlList.map(fetchAllocatorData))
+async function fetchAllocatorListMetaData(
+  allocatorUrlList: Array<AllocatorFileMetaDataBase['git_url']>,
+) {
+  return Promise.all(allocatorUrlList.map(fetchAllocatorMetaData))
 }
 
-async function fetchAllocatorData(allocatorUrl: string) {
+async function fetchAllocatorMetaData(
+  allocatorUrl: AllocatorFileMetaData['git_url'],
+) {
   try {
     const response = await fetch(allocatorUrl)
     const data = await response.json()
-    // console.log('🔥🔥🔥🔥🔥🔥🔥', { data })
-    return AllocatorMetaDataSchema.parse(data)
+    return AllocatorFileMetaDataSchema.parse(data)
   } catch (error) {
     console.error('Error fetching allocator data:', error)
     return null

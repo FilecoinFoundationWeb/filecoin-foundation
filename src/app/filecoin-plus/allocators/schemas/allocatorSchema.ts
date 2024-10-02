@@ -13,7 +13,7 @@ export const AllocatorSchema = z.object({
   application: ApplicationSchema,
 })
 
-export const AllocatorMetaDataSchema = z.object({
+export const AllocatorFileMetaDataBaseSchema = z.object({
   name: z.string(),
   path: z.string(),
   sha: z.string(),
@@ -23,8 +23,6 @@ export const AllocatorMetaDataSchema = z.object({
   git_url: z.string().url(),
   download_url: z.string().url(),
   type: z.enum(['file']),
-  content: z.string().optional(),
-  encoding: z.enum(['base64']),
   _links: z
     .object({
       self: z.string().url(),
@@ -34,7 +32,22 @@ export const AllocatorMetaDataSchema = z.object({
     .optional(),
 })
 
-export const AllocatorsMetaDataSchema = z.array(AllocatorMetaDataSchema)
+export const AllocatorFileMetaDataSchema =
+  AllocatorFileMetaDataBaseSchema.extend({
+    content: z.string(),
+    encoding: z.enum(['base64']),
+  })
+
+export const AllocatorFileListMetaDataBaseSchema = z.array(
+  AllocatorFileMetaDataBaseSchema,
+)
+
+export const AllocatorFileListMetaDataSchema = z.array(
+  AllocatorFileMetaDataSchema,
+)
 
 export type Allocator = z.infer<typeof AllocatorSchema>
-export type AllocatorMetaData = z.infer<typeof AllocatorMetaDataSchema>
+export type AllocatorFileMetaDataBase = z.infer<
+  typeof AllocatorFileMetaDataBaseSchema
+>
+export type AllocatorFileMetaData = z.infer<typeof AllocatorFileMetaDataSchema>
