@@ -14,9 +14,10 @@ export const SeoMetadataSchema = z
     title: z.string(),
     description: z.string().max(seo_metadata_description_max_characters),
     image: z.string().optional().default(graphicsData.home.data.src),
-    og: z
+    'open-graph': z
       .object({
         title: z.string().optional(),
+        description: z.string().optional(),
         image: z.string().optional(),
       })
       .strict()

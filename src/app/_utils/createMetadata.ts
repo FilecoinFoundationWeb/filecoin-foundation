@@ -23,9 +23,11 @@ export function createMetadata({
   const enrichedSEO = {
     title: parsedSEO.title,
     description: parsedSEO.description,
-    og: {
-      title: parsedSEO.og?.title || parsedSEO.title,
-      image: parsedSEO.og?.image || parsedSEO.image,
+    'open-graph': {
+      title: parsedSEO['open-graph']?.title || parsedSEO.title,
+      description:
+        parsedSEO['open-graph']?.description || parsedSEO.description,
+      image: parsedSEO['open-graph']?.image || parsedSEO.image,
     },
     twitter: {
       card: parsedSEO.twitter?.card,
@@ -36,15 +38,15 @@ export function createMetadata({
 
   const parsedEnrichedSEO = SeoMetadataSchema.parse(enrichedSEO)
 
-  const meta = {
+  return {
     title: overrideDefaultTitle
       ? { absolute: parsedEnrichedSEO.title }
       : parsedEnrichedSEO.title,
     description: parsedEnrichedSEO.description,
     openGraph: {
-      title: parsedEnrichedSEO.og?.title,
+      title: parsedEnrichedSEO['open-graph']?.title,
       description: parsedEnrichedSEO.description,
-      images: parsedEnrichedSEO.og?.image,
+      images: parsedEnrichedSEO['open-graph']?.image,
     },
     twitter: {
       card: parsedEnrichedSEO.twitter?.card,
@@ -55,7 +57,4 @@ export function createMetadata({
       canonical: path,
     },
   }
-
-  console.log({ seo, parsedSEO, enrichedSEO, parsedEnrichedSEO, meta })
-  return meta
 }
