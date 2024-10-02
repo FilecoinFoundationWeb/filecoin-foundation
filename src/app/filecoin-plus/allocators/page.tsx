@@ -18,6 +18,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo,
   path: PATHS.ALLOCATORS.path,
+  overrideDefaultTitle: true,
 })
 
 export default function Allocators() {

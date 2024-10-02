@@ -5,10 +5,12 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('Allocators Page', () => {
   it('should check metadata', () => {
-    testPageMetadata(PATHS.ALLOCATORS)
+    testPageMetadata(PATHS.ALLOCATORS, {
+      overrideDefaultTitle: true,
+    })
   })
 
   it('should check links', () => {
     verifyLinks(PATHS.ALLOCATORS.path)
   })
-});
+})
