@@ -13,7 +13,7 @@ export const AllocatorSchema = z.object({
   application: ApplicationSchema,
 })
 
-export const AllocatorFileMetaDataBaseSchema = z.object({
+const AllocatorFileMetaDataBaseSchema = z.object({
   name: z.string(),
   path: z.string(),
   sha: z.string(),
@@ -40,10 +40,6 @@ export const AllocatorFileMetaDataSchema =
 
 export const AllocatorFileListMetaDataBaseSchema = z.array(
   AllocatorFileMetaDataBaseSchema,
-)
-
-export const AllocatorFileListMetaDataSchema = z.array(
-  AllocatorFileMetaDataSchema,
 )
 
 export type Allocator = z.infer<typeof AllocatorSchema>

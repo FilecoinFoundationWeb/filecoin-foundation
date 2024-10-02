@@ -9,7 +9,7 @@ const GITHUB_ALLOCATORS_REPO =
 export async function getAllocatorUrlList() {
   const response = await fetch(GITHUB_ALLOCATORS_REPO, {
     headers: {
-      Authorization: `token ${process.env.GITHUB_AUTH_TOKEN}`,
+      Authorization: `Bearer ${process.env.GITHUB_AUTH_TOKEN}`,
     },
   })
   const allocatorsData = await response.json()

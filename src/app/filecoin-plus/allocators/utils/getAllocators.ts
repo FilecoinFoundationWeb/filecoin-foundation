@@ -4,8 +4,8 @@ import {
   AllocatorFileMetaDataSchema,
 } from '../schemas/allocatorSchema'
 
+import { extractAllocators } from './extractAllocators'
 import { getAllocatorUrlList } from './getAllocatorUrlList'
-import { extractAllocators } from './parseAndFilterAllocatorData'
 
 export async function getAllocators() {
   const allocatorUrlList = await getAllocatorUrlList()

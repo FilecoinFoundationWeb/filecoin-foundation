@@ -5,9 +5,9 @@ import { NoResultsMessage } from '@/components/NoResultsMessage'
 export function NoSearchResultsMessage() {
   return (
     <NoResultsMessage
-      message="Try changing your search query."
       icon={MagnifyingGlass}
       title="No Results Found"
+      message="Try changing your search query."
     />
   )
 }
