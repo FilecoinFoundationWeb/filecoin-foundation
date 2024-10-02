@@ -3,7 +3,7 @@ import { z } from 'zod'
 const ApplicationSchema = z.object({
   required_sps: z.string(),
   required_replicas: z.string(),
-  allocation_bookkeeping: z.string(),
+  allocation_bookkeeping: z.string().nullable(),
 })
 
 export const AllocatorSchema = z.object({

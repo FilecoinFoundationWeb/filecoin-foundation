@@ -1,7 +1,7 @@
 import { AllocatorSchema } from '../schemas/allocatorSchema'
 
 export function parseAndFilterAllocatorData(allocatorData: Array<any>) {
-  return allocatorData.map(validateAndParseAllocator).filter(isNonNullAllocator)
+  return allocatorData.map(validateAndParseAllocator)
 }
 
 function validateAndParseAllocator(allocator: any) {
@@ -17,16 +17,4 @@ function parseAllocatorData(allocatorData: any) {
 function decodeAndParseContent(content: string) {
   const decodedContent = atob(content)
   return JSON.parse(decodedContent)
-}
-
-function isNonNullAllocator(allocator: any) {
-  return (
-    allocator !== null &&
-    typeof allocator === 'object' &&
-    allocator.name &&
-    allocator.metapathway_type &&
-    allocator.location &&
-    allocator.application?.required_sps &&
-    allocator.application?.required_replicas
-  )
 }
