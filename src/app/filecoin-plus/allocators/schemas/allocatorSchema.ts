@@ -34,4 +34,7 @@ export const AllocatorMetaDataSchema = z.object({
     .optional(),
 })
 
+export const AllocatorsMetaDataSchema = z.array(AllocatorMetaDataSchema)
+
 export type Allocator = z.infer<typeof AllocatorSchema>
+export type AllocatorMetaData = z.infer<typeof AllocatorMetaDataSchema>

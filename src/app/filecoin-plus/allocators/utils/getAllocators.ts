@@ -21,6 +21,7 @@ async function fetchAllocatorData(allocatorUrl: string) {
   try {
     const response = await fetch(allocatorUrl)
     const data = await response.json()
+    // console.log('🔥🔥🔥🔥🔥🔥🔥', { data })
     return AllocatorMetaDataSchema.parse(data)
   } catch (error) {
     console.error('Error fetching allocator data:', error)

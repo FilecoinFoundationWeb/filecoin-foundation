@@ -1,6 +1,7 @@
 import { AllocatorSchema } from '../schemas/allocatorSchema'
 
 export function parseAndFilterAllocatorData(allocatorData: Array<any>) {
+  console.log('🔥🔥🔥🔥🔥🔥🔥', { allocatorData })
   return allocatorData.map(validateAndParseAllocator)
 }
 
