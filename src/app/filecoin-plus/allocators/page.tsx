@@ -2,6 +2,8 @@ import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/filecoin-plus/allocators.md'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { PageHeader } from '@/components/PageHeader'
@@ -22,7 +24,11 @@ export default function Allocators() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <PageHeader title={header.title} description={header.description} />
+      <PageHeader
+        title={header.title}
+        description={header.description}
+        image={graphicsData.filPlusAllocators}
+      />
       <AllocatorsTableSection />
     </PageLayout>
   )
