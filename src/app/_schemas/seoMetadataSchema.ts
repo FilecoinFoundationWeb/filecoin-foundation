@@ -1,9 +1,6 @@
 import { z } from 'zod'
 
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
 import configJson from '@/data/cmsConfigSchema.json'
-import { graphicsData } from '@/data/graphicsData'
 
 const { seo_metadata_description_max_characters } = configJson
 
@@ -13,25 +10,20 @@ export const SeoMetadataSchema = z
   .object({
     title: z.string(),
     description: z.string().max(seo_metadata_description_max_characters),
-    image: z.string().default(graphicsData.home.data.src).optional(),
-    og: z
+    image: z.string().optional(),
+    'open-graph': z
       .object({
         title: z.string().optional(),
+        description: z.string().optional(),
         image: z.string().optional(),
       })
       .strict()
       .optional(),
     twitter: z
       .object({
-        card: TwitterCardType.default('summary').optional(),
-        site: z
-          .string()
-          .default(FILECOIN_FOUNDATION_URLS.social.twitter.handle)
-          .optional(),
-        creator: z
-          .string()
-          .default(FILECOIN_FOUNDATION_URLS.social.twitter.handle)
-          .optional(),
+        card: TwitterCardType.optional(),
+        site: z.string().optional(),
+        creator: z.string().optional(),
       })
       .strict()
       .optional(),

@@ -118,7 +118,7 @@ meta_config: &meta_config
         - "^.{0,220}$"
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
-    - name: "og"
+    - name: "open-graph"
       label: "Open Graph Metadata"
       widget: "object"
       required: false
@@ -130,6 +130,11 @@ meta_config: &meta_config
           widget: "string"
           required: false
           hint: "If left empty, the SEO meta title will be used."
+        - name: "description"
+          label: "Open Graph Description"
+          widget: "string"
+          required: false
+          hint: "If left empty, the SEO meta description will be used."
         - name: "image"
           label: "Open Graph Image"
           widget: "image"
