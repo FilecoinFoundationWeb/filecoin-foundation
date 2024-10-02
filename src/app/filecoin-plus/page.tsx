@@ -1,6 +1,7 @@
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
+import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
 import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -62,7 +63,18 @@ export default function FilPlus() {
         </div>
       </PageSection>
 
-      <PageSection kicker="Allocator Allocation" title="Become an Allocator">
+      <PageSection
+        kicker="Allocators"
+        title={allocatorsAttributes.header.title}
+        description={allocatorsAttributes.header.description}
+        image={graphicsData.filPlusAllocators}
+        cta={{
+          href: PATHS.ALLOCATORS.path,
+          text: 'Allocators List',
+        }}
+      />
+
+      <PageSection kicker="Allocator Application" title="Become an Allocator">
         <p className="mb-2 max-w-readable">
           Allocators are a core part of the Fil+ program and help incentivize
           the storage of useful data of the Filecoin network. For a full list of
