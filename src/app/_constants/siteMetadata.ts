@@ -6,6 +6,7 @@ const ORGANIZATION_NAME = 'Filecoin Foundation'
 const FIL_PLUS_URLS = {
   allocators: {
     blog: 'https://blog.allocator.tech/',
+    rfa: 'https://blog.allocator.tech/2024/04/allocator-tech-blog.html',
     site: 'https://allocator.tech/',
   },
   dataCapMetrics: 'https://datacapstats.io/',
