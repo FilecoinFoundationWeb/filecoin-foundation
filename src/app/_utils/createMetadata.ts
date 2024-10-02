@@ -1,6 +1,9 @@
 import { type Metadata as NextMetadata } from 'next'
 
 import type { DynamicPathValues, PathValues } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import {
   type SeoMetadataInput,
@@ -18,21 +21,21 @@ export function createMetadata({
   path,
   overrideDefaultTitle = false,
 }: CreateMetadataProps): NextMetadata {
-  const parsedSEO = SeoMetadataSchema.parse(seo)
-
   const enrichedSEO = {
-    title: parsedSEO.title,
-    description: parsedSEO.description,
+    title: seo.title,
+    description: seo.description,
+    image: seo.image || graphicsData.home.data.src,
     'open-graph': {
-      title: parsedSEO['open-graph']?.title || parsedSEO.title,
-      description:
-        parsedSEO['open-graph']?.description || parsedSEO.description,
-      image: parsedSEO['open-graph']?.image || parsedSEO.image,
+      title: seo['open-graph']?.title || seo.title,
+      description: seo['open-graph']?.description || seo.description,
+      image:
+        seo['open-graph']?.image || seo.image || graphicsData.home.data.src,
     },
     twitter: {
-      card: parsedSEO.twitter?.card,
-      site: parsedSEO.twitter?.site,
-      creator: parsedSEO.twitter?.creator,
+      card: seo.twitter?.card || 'summary',
+      site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+      creator:
+        seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
     },
   }
 
