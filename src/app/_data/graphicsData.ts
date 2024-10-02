@@ -10,6 +10,7 @@ import filPlus from '@/assets/graphics/Filorg_Fil_Plus.webp'
 import filPlusAbout1 from '@/assets/graphics/Filorg_Fil_Plus_About1.webp'
 import filPlusAbout2 from '@/assets/graphics/Filorg_Fil_Plus_About2.webp'
 import filPlusAbout3 from '@/assets/graphics/Filorg_Fil_Plus_About3.webp'
+import filPlusAllocators from '@/assets/graphics/Filorg_Fil_Plus_Allocators.webp'
 import governance1 from '@/assets/graphics/Filorg_Governance1.png'
 import governance2 from '@/assets/graphics/Filorg_Governance2.png'
 import governance3 from '@/assets/graphics/Filorg_Governance3.png'
@@ -68,6 +69,10 @@ export const graphicsData: Record<string, StaticImageProps> = {
   filPlusAbout3: {
     data: filPlusAbout3,
     alt: 'Glossy white cube with a glowing blue sphere inside.',
+  },
+  filPlusAllocators: {
+    data: filPlusAllocators,
+    alt: 'An abstract, minimalist graphic featuring a large folder with a checkmark symbol, positioned next to a rubber stamp. Several similar stamps are scattered in the background, along with small cube-like objects, suggesting themes of approval, validation, or document processing.',
   },
   governance1: {
     data: governance1,

@@ -255,8 +255,16 @@ collections:
 
       - name: "filecoin-plus"
         label: "Filecoin Plus"
-        file: "src/content/pages/filecoin-plus.md"
+        file: "src/content/pages/filecoin-plus/filecoin-plus.md"
         preview_path: "filecoin-plus"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "allocators"
+        label: "Filecoin Plus - Allocators"
+        file: "src/content/pages/filecoin-plus/allocators.md"
+        preview_path: "filecoin-plus/allocators"
         fields:
           - *header_config
           - *meta_config

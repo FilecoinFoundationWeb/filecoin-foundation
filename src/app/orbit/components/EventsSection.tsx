@@ -15,7 +15,7 @@ import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoResultsMessage } from '@/components/NoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
@@ -78,7 +78,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
       </div>
 
       {paginatedResults.length === 0 ? (
-        <NoResultsMessage />
+        <NoSearchResultsMessage />
       ) : (
         <>
           <CardGrid cols="smTwo">
