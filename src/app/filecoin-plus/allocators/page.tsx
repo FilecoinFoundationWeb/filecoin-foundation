@@ -8,6 +8,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
+import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { AllocatorsTableSection } from './components/AllocatorsTableSection'
@@ -30,7 +31,10 @@ export default function Allocators() {
         description={header.description}
         image={graphicsData.filPlusAllocators}
       />
-      <AllocatorsTableSection />
+
+      <PageSection kicker="List of Allocators" title="Find an Allocator">
+        <AllocatorsTableSection />
+      </PageSection>
     </PageLayout>
   )
 }
