@@ -3,12 +3,12 @@ import { type Metadata as NextMetadata } from 'next'
 import type { DynamicPathValues, PathValues } from '@/constants/paths'
 
 import {
-  type SeoMetadata,
+  type SeoMetadataInput,
   SeoMetadataSchema,
 } from '@/schemas/seoMetadataSchema'
 
 type CreateMetadataProps = {
-  seo: SeoMetadata
+  seo: SeoMetadataInput
   path: PathValues | DynamicPathValues
   overrideDefaultTitle?: boolean
 }

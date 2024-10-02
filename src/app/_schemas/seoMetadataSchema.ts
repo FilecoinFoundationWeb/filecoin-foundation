@@ -40,3 +40,4 @@ export const SeoMetadataSchema = z
   .strict()
 
 export type SeoMetadata = z.infer<typeof SeoMetadataSchema>
+export type SeoMetadataInput = z.input<typeof SeoMetadataSchema>
