@@ -6,12 +6,12 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import {
-  type SeoMetadataInput,
+  type SeoMetadata,
   SeoMetadataSchema,
 } from '@/schemas/seoMetadataSchema'
 
 type CreateMetadataProps = {
-  seo: SeoMetadataInput
+  seo: SeoMetadata
   path: PathValues | DynamicPathValues
   overrideDefaultTitle?: boolean
 }
