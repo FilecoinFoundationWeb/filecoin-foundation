@@ -13,7 +13,7 @@ export const SeoMetadataSchema = z
   .object({
     title: z.string(),
     description: z.string().max(seo_metadata_description_max_characters),
-    image: z.string().default(graphicsData.home.data.src).optional(),
+    image: z.string().optional().default(graphicsData.home.data.src),
     og: z
       .object({
         title: z.string().optional(),
@@ -23,15 +23,15 @@ export const SeoMetadataSchema = z
       .optional(),
     twitter: z
       .object({
-        card: TwitterCardType.default('summary').optional(),
+        card: TwitterCardType.optional().default('summary'),
         site: z
           .string()
-          .default(FILECOIN_FOUNDATION_URLS.social.twitter.handle)
-          .optional(),
+          .optional()
+          .default(FILECOIN_FOUNDATION_URLS.social.twitter.handle),
         creator: z
           .string()
-          .default(FILECOIN_FOUNDATION_URLS.social.twitter.handle)
-          .optional(),
+          .optional()
+          .default(FILECOIN_FOUNDATION_URLS.social.twitter.handle),
       })
       .strict()
       .optional(),
