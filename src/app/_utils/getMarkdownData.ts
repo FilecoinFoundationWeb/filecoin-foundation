@@ -42,7 +42,7 @@ export function getMarkdownData<T>({
   } catch (error) {
     if (error instanceof ZodError) {
       logZodError(error, {
-        location: 'getData',
+        location: 'getMarkdownData',
         context: { path: directoryPath, slug },
       })
     }
