@@ -203,16 +203,8 @@ collections:
               - "title"
           - *meta_config
 
-      - name: "digest"
-        label: "Digest"
-        file: "src/content/pages/digest.md"
-        preview_path: "digest"
-        fields:
-          - *header_config
-          - *meta_config
-
-      - name: "ecosystem"
-        label: "Ecosystem"
+      - name: "ecosystem-explorer"
+        label: "Ecosystem Explorer"
         file: "src/content/pages/ecosystem-explorer.md"
         preview_path: "ecosystem-explorer"
         fields:
@@ -220,7 +212,7 @@ collections:
           - *meta_config
 
       - name: "ecosystem-explorer/project-form"
-        label: "Ecosystem Explorer Project Form"
+        label: "Ecosystem Explorer - Project Form"
         file: "src/content/pages/ecosystem-explorer/project-form.md"
         preview_path: "ecosystem-explorer/project-form"
         fields:
@@ -265,6 +257,14 @@ collections:
         label: "Filecoin Plus - Allocators"
         file: "src/content/pages/filecoin-plus/allocators.md"
         preview_path: "filecoin-plus/allocators"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "digest"
+        label: "Digest"
+        file: "src/content/pages/digest.md"
+        preview_path: "digest"
         fields:
           - *header_config
           - *meta_config
@@ -318,6 +318,14 @@ collections:
             max: 6
           - *meta_config
 
+      - name: "orbit"
+        label: "Orbit"
+        file: "src/content/pages/orbit.md"
+        preview_path: "orbit"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
@@ -326,24 +334,32 @@ collections:
           - *header_config
           - *meta_config
 
-      - name: "security-maturity-model"
-        label: "Maturity Model"
-        file: "src/content/pages/security/maturity-model.md"
-        preview_path: "security/maturity-model"
+      - name: "security"
+        label: "Security"
+        file: "src/content/pages/security/security.md"
+        preview_path: "security"
         fields:
           - *header_config
           - *meta_config
 
       - name: "security/bug-bounty"
-        label: "Bug Bounty"
+        label: "Security - Bug Bounty"
         file: "src/content/pages/security/bug-bounty.md"
         preview_path: "security/bug-bounty"
         fields:
           - *header_config
           - *meta_config
 
+      - name: "security-maturity-model"
+        label: "Security - Maturity Model"
+        file: "src/content/pages/security/maturity-model.md"
+        preview_path: "security/maturity-model"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "terms"
-        label: "Terms"
+        label: "Terms of Use"
         file: "src/content/pages/terms-of-use.md"
         preview_path: "terms-of-use"
         fields:
