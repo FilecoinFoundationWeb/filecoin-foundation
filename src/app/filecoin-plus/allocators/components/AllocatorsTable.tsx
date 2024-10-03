@@ -33,7 +33,7 @@ export function AllocatorsTable({ allocators }: AllocatorsTableProps) {
       <table className="w-full">
         <TableHead
           headerGroups={table.getHeaderGroups()}
-          headerColor="text-brand-300"
+          textColor="text-brand-300"
         />
         <TableBody rowModel={table.getRowModel()} />
       </table>
