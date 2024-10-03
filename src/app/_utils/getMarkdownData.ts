@@ -1,8 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
-import camelCaseKeys from 'camelcase-keys'
-import { ZodError } from 'zod'
+import convertObjectKeysToCamelCase from 'camelcase-keys'
+import { ZodError, type ZodType } from 'zod'
 
 import {
   extractSlugFromFilename,
@@ -14,17 +14,18 @@ import {
 } from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
 
-type GetEntryParams<T> = {
+type GetData<T> = {
   slug: string
   directoryPath: string
-  zodParser: (data: object) => T
+  zodParser: ZodType<T>['parse']
 }
-
+// Variation of src/app/_utils/getData.ts
+// Necessary until we migrate all Zod schemas to kebab-case
 export function getMarkdownData<T>({
   slug,
   directoryPath,
   zodParser,
-}: GetEntryParams<T>) {
+}: GetData<T>) {
   try {
     const filePath = getFilePath(directoryPath, slug)
 
@@ -35,8 +36,9 @@ export function getMarkdownData<T>({
     const fileContents = readFileContents(filePath)
     const { data, content } = parseMarkdown(fileContents)
     const parsedData = zodParser({ ...data, content })
+    const parsedDataWithSlug = { ...parsedData, slug }
 
-    return camelCaseKeys({ ...parsedData, slug })
+    return convertObjectKeysToCamelCase(parsedDataWithSlug, { deep: true })
   } catch (error) {
     if (error instanceof ZodError) {
       logZodError(error, {
@@ -49,12 +51,15 @@ export function getMarkdownData<T>({
   }
 }
 
-type GetAllEntriesArgs<T> = Omit<GetEntryParams<T>, 'slug'>
+type GetAllData<T> = {
+  directoryPath: string
+  zodParser: ZodType<T>['parse']
+}
 
 export function getAllMarkdownData<T>({
   directoryPath,
   zodParser,
-}: GetAllEntriesArgs<T>) {
+}: GetAllData<T>) {
   try {
     const directory = path.join(process.cwd(), directoryPath)
     const filenames = getFilenamesFromDirectory(directory)

@@ -4,7 +4,7 @@ import { BaseDataSchemaKebabCase } from '@/schemas/dynamicDataBaseSchema'
 
 import { CategorySchema, SubcategorySchema } from './CategorySchemas'
 
-// email and full-name are optional until the comms team adds them to all entries
+// email and full-name are required in the CMS but optional here because some entries still don't have them
 export const EcosystemProjectFrontMatter = BaseDataSchemaKebabCase.extend({
   title: z.string(),
   category: CategorySchema,
