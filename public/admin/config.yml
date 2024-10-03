@@ -203,6 +203,14 @@ collections:
               - "title"
           - *meta_config
 
+      - name: "digest"
+        label: "Digest"
+        file: "src/content/pages/digest.md"
+        preview_path: "digest"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "ecosystem-explorer"
         label: "Ecosystem Explorer"
         file: "src/content/pages/ecosystem-explorer.md"
@@ -257,14 +265,6 @@ collections:
         label: "Filecoin Plus - Allocators"
         file: "src/content/pages/filecoin-plus/allocators.md"
         preview_path: "filecoin-plus/allocators"
-        fields:
-          - *header_config
-          - *meta_config
-
-      - name: "digest"
-        label: "Digest"
-        file: "src/content/pages/digest.md"
-        preview_path: "digest"
         fields:
           - *header_config
           - *meta_config
