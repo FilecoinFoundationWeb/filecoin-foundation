@@ -31,7 +31,10 @@ export function AllocatorsTable({ allocators }: AllocatorsTableProps) {
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full">
-        <TableHead headerGroups={table.getHeaderGroups()} />
+        <TableHead
+          headerGroups={table.getHeaderGroups()}
+          textColor="text-brand-300"
+        />
         <TableBody rowModel={table.getRowModel()} />
       </table>
     </div>
