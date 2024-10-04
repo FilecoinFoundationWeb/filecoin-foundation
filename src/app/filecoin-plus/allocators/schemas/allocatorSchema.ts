@@ -14,28 +14,28 @@ export const AllocatorSchema = z.object({
 })
 
 const AllocatorFileMetaDataBaseSchema = z.object({
-  name: z.string(),
-  path: z.string(),
-  sha: z.string(),
-  size: z.number(),
-  url: z.string().url(),
-  html_url: z.string().url(),
-  git_url: z.string().url(),
-  download_url: z.string().url(),
-  type: z.enum(['file']),
+  name: z.string().default(''),
+  path: z.string().default(''),
+  sha: z.string().default(''),
+  size: z.number().default(0),
+  url: z.string().url().default(''),
+  html_url: z.string().url().default(''),
+  git_url: z.string().url().default(''),
+  download_url: z.string().url().default(''),
+  type: z.enum(['file']).default('file'),
   _links: z
     .object({
-      self: z.string().url(),
-      git: z.string().url(),
-      html: z.string().url(),
+      self: z.string().url().default(''),
+      git: z.string().url().default(''),
+      html: z.string().url().default(''),
     })
     .optional(),
 })
 
 export const AllocatorFileMetaDataSchema =
   AllocatorFileMetaDataBaseSchema.extend({
-    content: z.string(),
-    encoding: z.enum(['base64']),
+    content: z.string().default(''),
+    encoding: z.enum(['base64']).default('base64'),
   })
 
 export const AllocatorFileListMetaDataBaseSchema = z.array(
