@@ -13,7 +13,11 @@ export async function getAllocatorUrlList() {
     },
   })
   const allocatorsData = await response.json()
+  console.log('allocatorsData', allocatorsData)
+
   const parsedData = AllocatorFileListMetaDataBaseSchema.parse(allocatorsData)
+  console.log('parsedData', parsedData)
+
   return extractAllocatorUrls(parsedData)
 }
 

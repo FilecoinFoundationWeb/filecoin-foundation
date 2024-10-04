@@ -9,9 +9,16 @@ import { getAllocatorUrlList } from './getAllocatorUrlList'
 
 export async function getAllocators() {
   const allocatorUrlList = await getAllocatorUrlList()
+  console.log('allocatorUrlList', allocatorUrlList)
+
   const allocatorFileMetaData =
     await fetchAllocatorListMetaData(allocatorUrlList)
-  return extractAllocators(allocatorFileMetaData)
+  console.log('allocatorFileMetaData', allocatorFileMetaData)
+
+  const allocators = extractAllocators(allocatorFileMetaData)
+  console.log('allocators', allocators)
+
+  return allocators
 }
 
 async function fetchAllocatorListMetaData(
@@ -26,6 +33,7 @@ async function fetchAllocatorMetaData(
   try {
     const response = await fetch(allocatorUrl)
     const data = await response.json()
+    console.log('fetchAllocatorMetaData - response.json()', data)
     return AllocatorFileMetaDataSchema.parse(data)
   } catch (error) {
     console.error('Error fetching allocator data:', error)
