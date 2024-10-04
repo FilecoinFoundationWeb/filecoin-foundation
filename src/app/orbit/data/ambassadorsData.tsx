@@ -1,4 +1,4 @@
-import type { StaticImageData } from 'next/image'
+import type { StaticImageProps } from '@/types/sharedProps/imageType'
 
 import { TextLink } from '@/components/TextLink'
 
@@ -14,7 +14,7 @@ export type AmbassadorData = {
   name: string
   location: string
   testimonial: Array<string> | Array<JSX.Element>
-  image: StaticImageData & { alt: string }
+  image: StaticImageProps
 }
 
 export const ambassadorsData: Array<AmbassadorData> = [
@@ -26,7 +26,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       'We focus on real-world use cases and tools developers can use today to build cost-effective, resilient systems. Join us for the main Filecoin Orbit event in North America at ETH Denver!',
     ],
     image: {
-      ...austinImg,
+      data: austinImg,
       alt: 'A group of people standing together at the Austin Web3 Filecoin Meetup Group event. They are indoors, and behind them is a screen displaying the event name and logo. The group consists of men and women, casually dressed, smiling and posing for the photo.',
     },
   },
@@ -39,7 +39,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       "This year during FILBangalore & ETHIndia'23 I had the opportunity to host an IPFS workshop and mentored at the booth, which was a great experience for me.",
     ],
     image: {
-      ...kolkataImg,
+      data: kolkataImg,
       alt: "A man and a woman posing and making peace signs at a Filecoin event booth. The man is sitting and wearing a green high-visibility vest, while the woman is standing and wearing a black 'LabWeek23' t-shirt. The booth has a purple backdrop with Filecoin branding and information, including a depiction of a cityscape. Bottles of water and promotional materials are on the table in front of them.",
     },
   },
@@ -52,7 +52,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       'We are excited to now welcome Robert Dowling in our next conference edition in Barcelona on April 17-19 to further raise awareness, educate and foster collaborations.',
     ],
     image: {
-      ...barcelonaImg,
+      data: barcelonaImg,
       alt: "A speaker presenting at a Web3FC event in Barcelona, Spain. The presenter is standing in front of a screen displaying a slide about 'Storage Provider Loan Markets' and 'What becomes possible with FVM?'. The audience is seated and listening attentively, with some taking notes on laptops. The room is well-lit with modern decor, and a camera is set up on a tripod to record the event.",
     },
   },
@@ -65,7 +65,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       "Here's to the exciting ventures that lie ahead as we continue to explore great possibilities.",
     ],
     image: {
-      ...tanzaniaImg,
+      data: tanzaniaImg,
       alt: 'A large group of people posing for a group photo outside a building at the Filecoin Orbit Community event in Tanzania. Many of the attendees are wearing white Filecoin t-shirts. Some individuals in the front row are holding large checks as awards for various projects. The group is standing in front of a building with large windows and plants in the foreground.',
     },
   },
@@ -78,7 +78,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       'Definitely one for the books!',
     ],
     image: {
-      ...buenosAiresImg,
+      data: buenosAiresImg,
       alt: 'A group of people seated in a brightly lit room with colorful chairs at an event in Buenos Aires. A woman in the foreground is smiling and holding a drink, while others around her are engaged and listening. The room has a vibrant atmosphere with neon lighting and artwork on the walls.',
     },
   },
@@ -122,7 +122,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       </>,
     ],
     image: {
-      ...shenzhenImg,
+      data: shenzhenImg,
       alt: 'A large group of attendees posing for a group photo at the Orbit China Decentralized Storage Roadshow in Shenzhen. They are holding various signs with logos and names of different organizations like Filecoin Foundation, Protocol Labs, ND Labs, and Origin Storage. The background displays a large banner with the event name and sponsors, in both Chinese and English. The attendees are smiling and standing together in a well-lit conference room.',
     },
   },
@@ -135,7 +135,7 @@ export const ambassadorsData: Array<AmbassadorData> = [
       'In 2023, we visited 20+ universities and also had a chance to host Robert at IIT Bombay, IIT Madras, and IIT Goa events. Had a great time interacting with the new age devs and collaborating with the universities.',
     ],
     image: {
-      ...indiaImg,
+      data: indiaImg,
       alt: 'A large group of students and organizers posing for a group photo in a classroom in India. They are all smiling and wearing ID badges, with some in white shirts featuring a logo. The room has a bright yellow-green color with a whiteboard and projector screen in the background.',
     },
   },

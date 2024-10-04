@@ -12,7 +12,7 @@ import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { attributes } from '@/content/pages/events.md'
 
-import { graphicsData, graphicsDataRefactored } from '@/data/graphicsData'
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import {
@@ -250,8 +250,8 @@ export default function Events({ searchParams }: Props) {
         <CardGrid cols="mdTwo" as="div">
           <div className="row-span-2 h-96 md:h-auto">
             <Image
-              src={graphicsDataRefactored.events2}
-              alt={graphicsDataRefactored.events2.alt}
+              src={graphicsData.events2.data}
+              alt={graphicsData.events2.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
@@ -268,8 +268,8 @@ export default function Events({ searchParams }: Props) {
           ))}
           <div className="h-48 md:h-56">
             <Image
-              src={graphicsDataRefactored.events3}
-              alt={graphicsDataRefactored.events3.alt}
+              src={graphicsData.events3.data}
+              alt={graphicsData.events3.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />

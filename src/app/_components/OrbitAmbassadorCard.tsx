@@ -29,7 +29,7 @@ export function OrbitAmbassadorCard({
       )}
     >
       <Image
-        src={image}
+        src={image.data}
         alt={image.alt}
         className="h-48 flex-shrink-0 rounded-lg object-cover sm:h-64 lg:h-auto lg:w-1/3"
         sizes={buildImageSizeProp({

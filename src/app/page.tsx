@@ -7,7 +7,7 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 import { attributes as digestAttributes } from '@/content/pages/digest.md'
 import { attributes } from '@/content/pages/home.md'
 
-import { graphicsData, graphicsDataRefactored } from '@/data/graphicsData'
+import { graphicsData } from '@/data/graphicsData'
 import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -115,7 +115,7 @@ export default function Home() {
         <PageSection
           kicker="Digest"
           title={digestHeader.title}
-          image={graphicsDataRefactored.digest}
+          image={graphicsData.digest}
           description={digestHeader.description}
           cta={{
             href: PATHS.DIGEST.path,

@@ -4,7 +4,7 @@ import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
 import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
-import { graphicsData, graphicsDataRefactored } from '@/data/graphicsData'
+import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractDomain } from '@/utils/extractDomain'
@@ -68,7 +68,7 @@ export default function FilPlus() {
         kicker="Allocators"
         title={allocatorsAttributes.header.title}
         description={allocatorsAttributes.header.description}
-        image={graphicsDataRefactored.filPlusAllocators}
+        image={graphicsData.filPlusAllocators}
         cta={{
           href: PATHS.ALLOCATORS.path,
           text: 'Allocators List',

@@ -18,11 +18,16 @@ import {
   type SectionDividerProps,
 } from '@/components/SectionDivider'
 
+type PageSectionImageProps = {
+  data: StaticImageData
+  alt: string
+}
+
 type PageSectionProps = {
   kicker: SectionDividerProps['title']
   title: string
   description?: DescriptionTextType
-  image?: StaticImageData & { alt: string }
+  image?: PageSectionImageProps
   cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
 }
@@ -36,7 +41,7 @@ export function PageSection({
   cta,
 }: PageSectionProps) {
   return (
-    <section className={clsx(image && 'border border-red-500')}>
+    <section>
       <SectionDivider title={kicker} />
       <div
         className={clsx('mt-4', {
@@ -54,7 +59,7 @@ export function PageSection({
         </div>
         {image && (
           <Image
-            src={image}
+            src={image.data}
             alt={image.alt}
             sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
             className="aspect-video h-full w-full rounded-lg object-cover lg:aspect-auto"

@@ -3,7 +3,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/security/security.md'
 
-import { graphicsData, graphicsDataRefactored } from '@/data/graphicsData'
+import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -52,7 +52,7 @@ export default function Security() {
         kicker="What We Do"
         title="Incident Response and Monitoring"
         description="Filecoin Foundation facilitates a collaborative approach to network security for the Filecoin network. This includes monitoring and network-wide responders, spanning multiple organizations and projects, to facilitate 24/7 monitoring of the chain across time zones&mdash;setting the ecosystem apart in fostering a secure and resilient network."
-        image={graphicsDataRefactored.security2}
+        image={graphicsData.security2}
       />
 
       <PageSection kicker="Secure Your Project" title="Developer Support">
@@ -86,7 +86,7 @@ export default function Security() {
         kicker="Report Bugs"
         title="Bug Bounty Program"
         description="Filecoin Foundation offers bug bounties for reported security vulnerabilities on the Filecoin protocol. Earn up to 150,000 USD, paid in USD/USDC, for reporting critical vulnerabilities. Since launching our Bug Bounty program, we’ve paid out more than $400,000 in rewards."
-        image={graphicsDataRefactored.security4}
+        image={graphicsData.security4}
         cta={[
           {
             href: PATHS.BUG_BOUNTY.path,
@@ -103,7 +103,7 @@ export default function Security() {
         kicker="Maturity Model"
         title="Web3 Security Maturity Model"
         description="The Web3 Security Maturity Model, developed by Filecoin Foundation’s security team, is a comprehensive framework designed for organizations and projects building decentralized technology. It allows organizations to perform a structured self-assessment with the goal of helping Filecoin and Web3 contributions better evaluate and enhance their security posture across all aspects of development and operations."
-        image={graphicsDataRefactored.security5}
+        image={graphicsData.security5}
         cta={{
           href: PATHS.MATURITY_MODEL.path,
           text: 'Learn More About the Maturity Model',
