@@ -123,3 +123,63 @@ export const graphicsData: Record<string, StaticImageProps> = {
     alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
   },
 }
+
+export const graphicsDataRefactored = {
+  digest: {
+    ...digestCoverIssue1,
+    alt: 'Cover of the Filecoin Ecosystem Digest showing a stylized globe with interconnected nodes representing a global network. The Filecoin logo appears at the top left, and the background has a gradient of soft blues, pinks, and oranges with light effects symbolizing data flow and connectivity.',
+  },
+  filPlus: {
+    ...filPlus,
+    alt: 'Long row of modern, sleek server racks in a bright, white room, with blue LED lights glowing from within, creating a futuristic and high-tech atmosphere.',
+  },
+  filPlusAbout1: {
+    ...filPlusAbout1,
+    alt: 'Stacked glossy white cubes arranged on a light surface.',
+  },
+  filPlusAbout2: {
+    ...filPlusAbout2,
+    alt: 'Floating and stacked glossy white cubes in a futuristic, reflective room.',
+  },
+  filPlusAbout3: {
+    ...filPlusAbout3,
+    alt: 'Glossy white cube with a glowing blue sphere inside.',
+  },
+  filPlusAllocators: {
+    ...filPlusAllocators,
+    alt: 'An abstract, minimalist graphic featuring a large folder with a checkmark symbol, positioned next to a rubber stamp. Several similar stamps are scattered in the background, along with small cube-like objects, suggesting themes of approval, validation, or document processing.',
+  },
+  governance1: {
+    ...governance1,
+    alt: 'Interconnected network of blue and white spheres with icons of people, representing a social network or digital communication.',
+  },
+  governance2: {
+    ...governance2,
+    alt: 'Digital illustration of a futuristic bridge construction with cranes and vehicles on a circuit board-like surface, symbolizing advanced infrastructure.',
+  },
+  governance3: {
+    ...governance3,
+    alt: 'Modern conference room with people gathered around a circular table, discussing important issues, illuminated by natural light.',
+  },
+  security: {
+    ...security,
+    alt: 'An illustration depicting a large, old-fashioned key unlocking a futuristic padlock. The scene is set against a light background, with various abstract geometric shapes and elements around the key and lock, suggesting a theme of digital security or unlocking digital information.',
+  },
+  security2: {
+    ...security2,
+    alt: 'A futuristic control room with a large central column displaying various data on high-tech screens. The room is filled with multiple workstations, each equipped with dual monitors showing complex graphs, charts, and data readouts. The walls and floor also feature integrated digital displays, creating an immersive environment of advanced technology and data analysis.',
+  },
+  security3: {
+    ...security3,
+    alt: 'An illustration depicting a network of interconnected shields, each representing a node in a secure system. The shields are placed on circular platforms linked by glowing blue lines, symbolizing a robust and interconnected cybersecurity network.',
+  },
+  security4: {
+    ...security4,
+    alt: 'An illustration showing a magnifying glass focusing on a screen displaying lines of code. The scene is filled with abstract spherical elements connected by thin lines, and a small, stylized bug is visible near the bottom, symbolizing the concept of debugging or analyzing code.',
+  },
+  security5: {
+    ...security5,
+    alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
+  },
+}
+console.log('here', graphicsData.digest.data)

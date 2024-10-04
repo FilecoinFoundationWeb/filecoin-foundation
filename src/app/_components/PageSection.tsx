@@ -1,4 +1,8 @@
+import Image from 'next/image'
+
 import { clsx } from 'clsx'
+
+import type { ImageProps } from '@/types/sharedProps/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -15,13 +19,12 @@ import {
   SectionDivider,
   type SectionDividerProps,
 } from '@/components/SectionDivider'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 type PageSectionProps = {
   kicker: SectionDividerProps['title']
   title: string
   description?: DescriptionTextType
-  image?: StaticImageProps
+  image?: ImageProps
   cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
 }
@@ -35,7 +38,7 @@ export function PageSection({
   cta,
 }: PageSectionProps) {
   return (
-    <section>
+    <section className={clsx(image && 'border border-red-500 p-2')}>
       <SectionDivider title={kicker} />
 
       <div
@@ -55,16 +58,19 @@ export function PageSection({
           {cta && <CTAButtonGroup cta={cta} />}
         </div>
 
-        {image && (
-          <div className="relative aspect-video lg:aspect-auto">
-            <StaticImage
-              {...image}
-              fill
-              className="rounded-lg"
-              sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
-            />
-          </div>
-        )}
+        {image &&
+          (console.log('PageSection Image', image),
+          (
+            <div className="relative aspect-video lg:aspect-auto">
+              <Image
+                fill
+                src={image.src}
+                alt={image.alt || ''}
+                sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+                className="rounded-lg object-cover"
+              />
+            </div>
+          ))}
       </div>
 
       {children && <div className="flex flex-col gap-6">{children}</div>}
