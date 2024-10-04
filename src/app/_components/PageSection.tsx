@@ -36,7 +36,7 @@ export function PageSection({
   cta,
 }: PageSectionProps) {
   return (
-    <section>
+    <section className={clsx(image && 'border border-red-500')}>
       <SectionDivider title={kicker} />
       <div
         className={clsx('mt-4', {
@@ -53,15 +53,12 @@ export function PageSection({
           {cta && <CTAButtonGroup cta={cta} />}
         </div>
         {image && (
-          <div className="relative aspect-video lg:aspect-auto">
-            <Image
-              fill
-              src={image.src}
-              alt={image.alt}
-              sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
-              className="rounded-lg object-cover"
-            />
-          </div>
+          <Image
+            src={image}
+            alt={image.alt}
+            sizes={buildImageSizeProp({ startSize: '100vw', lg: '480px' })}
+            className="aspect-video h-full w-full rounded-lg object-cover lg:aspect-auto"
+          />
         )}
       </div>
       {children && <div className="flex flex-col gap-6">{children}</div>}

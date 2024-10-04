@@ -18,7 +18,7 @@ export function FocusAreaCard({
   return (
     <li className="rounded-lg border border-brand-300 p-1 sm:flex lg:block">
       <Image
-        {...image}
+        src={image}
         alt={image.alt}
         className="aspect-video w-full rounded object-cover sm:w-60 sm:shrink-0 md:w-80 lg:w-full"
         sizes={buildImageSizeProp({

@@ -250,7 +250,7 @@ export default function Events({ searchParams }: Props) {
         <CardGrid cols="mdTwo" as="div">
           <div className="row-span-2 h-96 md:h-auto">
             <Image
-              {...graphicsDataRefactored.events2}
+              src={graphicsDataRefactored.events2}
               alt={graphicsDataRefactored.events2.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
@@ -268,7 +268,7 @@ export default function Events({ searchParams }: Props) {
           ))}
           <div className="h-48 md:h-56">
             <Image
-              {...graphicsDataRefactored.events3}
+              src={graphicsDataRefactored.events3}
               alt={graphicsDataRefactored.events3.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
