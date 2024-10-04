@@ -8,9 +8,7 @@ import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-const REVALIDATE_TIME_IN_SECONDS = 24 * 60 * 60
-
-export const revalidate = REVALIDATE_TIME_IN_SECONDS
+export const revalidate = 86400
 
 export const metadata: Metadata = {
   title: {
