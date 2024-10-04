@@ -4,13 +4,13 @@ import { createDateFromYear } from '@/utils/dateUtils'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { type EcosystemProjectFormData } from '../components/EcosystemProjectForm'
-import { YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL } from '../constants'
-import { submitProjectToGithub } from '../services/github'
+import { submitProjectToGithub } from '../actions/submitProjectToGithub'
+import type { EcosystemProjectFormData } from '../schema/form'
 import {
   convertToBase64,
   getFileFormat,
 } from '../services/github/utils/fileUtils'
+import { formatYoutubeEmbedUrl } from '../utils/formatYoutubeUrl'
 
 export function useSubmitEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
@@ -57,8 +57,4 @@ function keepTruthyKeysInArray(object: Record<string, boolean>) {
   const entries = Object.entries(object)
   const truthyValueEntries = entries.filter(([, value]) => Boolean(value))
   return truthyValueEntries.map(([key]) => key)
-}
-
-function formatYoutubeEmbedUrl(url?: string) {
-  return url?.replace(YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL)
 }

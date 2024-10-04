@@ -5,17 +5,17 @@ import slugify from 'slugify'
 import { getTodayISO } from '@/utils/dateUtils'
 import { encrypt } from '@/utils/encryption'
 
-import { createBlob } from './api/createBlob'
-import { createCommit } from './api/createCommit'
-import { createPR } from './api/createPr'
-import { createTreeBlobs } from './api/createTreeBlobs'
-import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
-import type { AllowedImageFormats } from './utils/fileUtils'
+import { createBlob } from '../services/github/api/createBlob'
+import { createCommit } from '../services/github/api/createCommit'
+import { createPR } from '../services/github/api/createPr'
+import { createTreeBlobs } from '../services/github/api/createTreeBlobs'
+import { getLatestCommitOnMain } from '../services/github/api/getLatestCommitOnMain'
+import type { AllowedImageFormats } from '../services/github/utils/fileUtils'
 import {
   getMarkdownTemplate,
   type MarkdownTemplateParams,
-} from './utils/markdownUtils'
-import { getFolderPaths } from './utils/pathUtils'
+} from '../services/github/utils/markdownUtils'
+import { getFolderPaths } from '../services/github/utils/pathUtils'
 
 type SubmitProjectParams = {
   name: string
