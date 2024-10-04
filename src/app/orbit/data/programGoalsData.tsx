@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageData } from 'next/image'
 
 import audienceSeatedLargeAuditoriumImg from '@/assets/orbit/goals/audience-seated-large-auditorium.jpg'
 import speakerPresentationNewsPaperImg from '@/assets/orbit/goals/speaker-presentation-newspaper-tech-event.jpg'
@@ -7,7 +7,7 @@ import speakersAppreciationGroupPhoto from '@/assets/orbit/goals/speakers-apprec
 type ProgramGoalsData = {
   title: string
   description: string
-  image: StaticImageProps
+  image: StaticImageData & { alt: string }
 }
 
 export const programGoalsData: Array<ProgramGoalsData> = [
@@ -16,7 +16,7 @@ export const programGoalsData: Array<ProgramGoalsData> = [
     description:
       'Orbit educates interested stakeholders about Filecoin and its technologies',
     image: {
-      data: speakerPresentationNewsPaperImg,
+      ...speakerPresentationNewsPaperImg,
       alt: 'A speaker presenting on stage with a large screen displaying a newspaper front page and a tech event banner.',
     },
   },
@@ -25,7 +25,7 @@ export const programGoalsData: Array<ProgramGoalsData> = [
     description:
       'This program inspires the Filecoin community to build and develop on the network',
     image: {
-      data: speakersAppreciationGroupPhoto,
+      ...speakersAppreciationGroupPhoto,
       alt: 'Group of five people standing on stage holding certificates of appreciation with a "Tech Fantasy" event banner in the background',
     },
   },
@@ -34,7 +34,7 @@ export const programGoalsData: Array<ProgramGoalsData> = [
     description:
       'Orbit identifies opportunities to improve the Filecoin ecosystem',
     image: {
-      data: audienceSeatedLargeAuditoriumImg,
+      ...audienceSeatedLargeAuditoriumImg,
       alt: 'Audience seated in a large auditorium, attentively watching a presentation.',
     },
   },

@@ -58,9 +58,10 @@ export function PageSection({
           {cta && <CTAButtonGroup cta={cta} />}
         </div>
 
-        {image &&
-          (console.log('PageSection Image', image),
-          (
+        {
+          image && (
+            // (console.log('PageSection Image', image),
+            // (
             <div className="relative aspect-video lg:aspect-auto">
               <Image
                 fill
@@ -70,7 +71,9 @@ export function PageSection({
                 className="rounded-lg object-cover"
               />
             </div>
-          ))}
+          )
+          // ))}
+        }
       </div>
 
       {children && <div className="flex flex-col gap-6">{children}</div>}

@@ -1,3 +1,5 @@
+import type { StaticImageData } from 'next/image'
+
 import type { StaticImageProps } from '@/components/StaticImage'
 
 import about from '@/assets/graphics/Filorg_About.png'
@@ -124,10 +126,25 @@ export const graphicsData: Record<string, StaticImageProps> = {
   },
 }
 
-export const graphicsDataRefactored = {
+export const graphicsDataRefactored: Record<
+  string,
+  StaticImageData & { alt: string }
+> = {
   digest: {
     ...digestCoverIssue1,
     alt: 'Cover of the Filecoin Ecosystem Digest showing a stylized globe with interconnected nodes representing a global network. The Filecoin logo appears at the top left, and the background has a gradient of soft blues, pinks, and oranges with light effects symbolizing data flow and connectivity.',
+  },
+  events1: {
+    ...events1,
+    alt: 'Auditorium with rows of seats facing a stage displaying a digital Earth image, surrounded by modern lighting and panels.',
+  },
+  events2: {
+    ...events2,
+    alt: 'Large event space with people gathered around tables for networking, many wearing yellow backpacks, against a bright blue backdrop.',
+  },
+  events3: {
+    ...events3,
+    alt: 'Speaker presenting to a full audience in a dark auditorium, with attendees attentively listening and engaged in the presentation.',
   },
   filPlus: {
     ...filPlus,
@@ -161,6 +178,10 @@ export const graphicsDataRefactored = {
     ...governance3,
     alt: 'Modern conference room with people gathered around a circular table, discussing important issues, illuminated by natural light.',
   },
+  rAndD: {
+    ...rAndD,
+    alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
+  },
   security: {
     ...security,
     alt: 'An illustration depicting a large, old-fashioned key unlocking a futuristic padlock. The scene is set against a light background, with various abstract geometric shapes and elements around the key and lock, suggesting a theme of digital security or unlocking digital information.',
@@ -182,4 +203,3 @@ export const graphicsDataRefactored = {
     alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
   },
 }
-console.log('here', graphicsData.digest.data)
