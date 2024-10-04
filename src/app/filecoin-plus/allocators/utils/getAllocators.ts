@@ -1,3 +1,7 @@
+import { ZodError } from 'zod'
+
+import { logZodError } from '@/utils/zodUtils'
+
 import {
   type AllocatorFileMetaData,
   type AllocatorFileMetaDataBase,
@@ -36,7 +40,12 @@ async function fetchAllocatorMetaData(
     console.log('fetchAllocatorMetaData - response.json()', data)
     return AllocatorFileMetaDataSchema.parse(data)
   } catch (error) {
-    console.error('Error fetching allocator data:', error)
+    if (error instanceof ZodError) {
+      logZodError(error, {
+        location: 'fetchAllocatorMetaData',
+        context: { allocatorUrl },
+      })
+    }
     return null
   }
 }
