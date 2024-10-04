@@ -1,15 +1,15 @@
 import { z } from 'zod'
 
 const ApplicationSchema = z.object({
-  required_sps: z.string(),
-  required_replicas: z.string(),
-  allocation_bookkeeping: z.string().nullable(),
+  required_sps: z.string().default(''),
+  required_replicas: z.string().default(''),
+  allocation_bookkeeping: z.string().nullable().default(null),
 })
 
 export const AllocatorSchema = z.object({
-  name: z.string(),
-  metapathway_type: z.string(),
-  location: z.string(),
+  name: z.string().default(''),
+  metapathway_type: z.string().default(''),
+  location: z.string().default(''),
   application: ApplicationSchema,
 })
 
