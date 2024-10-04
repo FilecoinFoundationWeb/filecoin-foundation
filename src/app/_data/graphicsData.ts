@@ -130,9 +130,21 @@ export const graphicsDataRefactored: Record<
   string,
   StaticImageData & { alt: string }
 > = {
+  imageFallback: {
+    ...imageFallback,
+    alt: 'Image coming soon',
+  },
+  about: {
+    ...about,
+    alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
+  },
   digest: {
     ...digestCoverIssue1,
     alt: 'Cover of the Filecoin Ecosystem Digest showing a stylized globe with interconnected nodes representing a global network. The Filecoin logo appears at the top left, and the background has a gradient of soft blues, pinks, and oranges with light effects symbolizing data flow and connectivity.',
+  },
+  ecosystem: {
+    ...ecosystem,
+    alt: 'Magnifying glass focusing on a network of interconnected blue and white spheres, symbolizing exploration and analysis of connections.',
   },
   events1: {
     ...events1,
@@ -177,6 +189,18 @@ export const graphicsDataRefactored: Record<
   governance3: {
     ...governance3,
     alt: 'Modern conference room with people gathered around a circular table, discussing important issues, illuminated by natural light.',
+  },
+  grants: {
+    ...grants,
+    alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
+  },
+  home: {
+    ...home,
+    alt: 'A grand library with modern server racks and a large network of spheres above, symbolizing data and technology.',
+  },
+  orbit: {
+    ...orbit,
+    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
   },
   rAndD: {
     ...rAndD,
