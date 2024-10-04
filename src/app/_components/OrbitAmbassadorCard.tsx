@@ -1,9 +1,10 @@
+import Image from 'next/image'
+
 import { clsx } from 'clsx'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { BasicCard } from '@/components/BasicCard'
-import { StaticImage } from '@/components/StaticImage'
 
 import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 
@@ -27,17 +28,15 @@ export function OrbitAmbassadorCard({
         isImagePositionOdd && 'lg:flex-row-reverse',
       )}
     >
-      <div className="relative h-48 flex-shrink-0 sm:h-64 lg:h-auto lg:w-1/3">
-        <StaticImage
-          {...image}
-          fill
-          className="h-full w-full rounded-lg"
-          sizes={buildImageSizeProp({
-            startSize: '100vw',
-            lg: '33vw',
-          })}
-        />
-      </div>
+      <Image
+        src={image.data}
+        alt={image.alt}
+        className="h-48 flex-shrink-0 rounded-lg object-cover sm:h-64 lg:h-auto lg:w-1/3"
+        sizes={buildImageSizeProp({
+          startSize: '100vw',
+          lg: '33vw',
+        })}
+      />
 
       <div className="flex-grow">
         <BasicCard>
@@ -45,7 +44,6 @@ export function OrbitAmbassadorCard({
             {testimonial.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
-
             <div>
               <p className="font-bold">{name}</p>
               <p className="text-brand-300">— {location}</p>
