@@ -1,8 +1,21 @@
-import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
+import { ChatCircleDots, GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
+import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export const governanceDocsData = [
+  {
+    heading: {
+      title: 'GovHub',
+      icon: ChatCircleDots,
+    },
+    description:
+      'Participate in the governance of the Filecoin network, by contributing to meaningful discussions and vote on critical proposals.',
+    cta: {
+      href: PATHS.GOVHUB.path,
+      text: 'Explore GovHub',
+    },
+  },
   {
     heading: {
       title: 'Governance GitHub',
