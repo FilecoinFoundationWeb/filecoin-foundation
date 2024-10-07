@@ -2,18 +2,27 @@
 
 import useSWR from 'swr'
 
-import { getInitialFormValue } from '../actions/getInitialFormValue'
+import { getInitialFormData } from '../actions/getInitialFormData'
+import { ACTIONS } from '../constants'
+import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
 
 import { EcosystemProjectForm } from './EcosystemProjectForm'
 
 export function CreateForm() {
-  const { data: initialFormValues } = useSWR('create', () =>
-    getInitialFormValue(),
+  const { data: initialFormData } = useSWR(ACTIONS.GET_INITIAL_FORM_DATA, () =>
+    getInitialFormData(),
   )
 
-  if (!initialFormValues) {
+  const { createProject } = useSubmitEcosystemProjectForm()
+
+  if (!initialFormData) {
     return
   }
 
-  return <EcosystemProjectForm initialValues={initialFormValues} />
+  return (
+    <EcosystemProjectForm
+      initial={{ formData: initialFormData }}
+      onSubmit={createProject}
+    />
+  )
 }

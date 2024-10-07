@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useQueryState, parseAsString } from 'nuqs'
 
 import { FormRadioGroup } from '@/components/Form/FormRadioGroup'
 
@@ -8,13 +8,20 @@ import { CreateForm } from './CreateForm'
 import { FormSection } from './FormSection'
 import { UpdateFormSelect } from './UpdateFormSelect'
 
-const options = [
+const URL_QUERY_NAME = 'action'
+
+const actionOptions = [
   { id: 'create', name: 'Submit Project' },
   { id: 'update', name: 'Update Project' },
-]
+] as const
+
+const createOption = actionOptions[0]
 
 export function CreateOrUpdateRouter() {
-  const [selectedOption, setSelectedOption] = useState(options[0])
+  const [action, setAction] = useQueryState(
+    URL_QUERY_NAME,
+    parseAsString.withDefault(createOption.id),
+  )
 
   return (
     <div className="md:max-w-readable">
@@ -23,14 +30,14 @@ export function CreateOrUpdateRouter() {
         description="Please select whether you are adding a new project to the Ecosystem Explorer or updating an existing one."
       >
         <FormRadioGroup
-          value={selectedOption}
-          options={options}
-          onChange={setSelectedOption}
+          options={actionOptions}
+          value={actionOptions.find((option) => option.id === action)}
+          onChange={(option) => setAction(option.id)}
         />
       </FormSection>
 
-      {selectedOption.id === 'create' && <CreateForm />}
-      {selectedOption.id === 'update' && <UpdateFormSelect />}
+      {action === 'create' && <CreateForm />}
+      {action === 'update' && <UpdateFormSelect />}
     </div>
   )
 }

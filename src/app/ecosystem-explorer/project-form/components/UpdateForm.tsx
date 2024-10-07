@@ -4,8 +4,11 @@ import useSWR from 'swr'
 
 import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
-import { getInitialFormValue } from '../actions/getInitialFormValue'
+import { getInitialFormData } from '../actions/getInitialFormData'
 import { getProjectData } from '../actions/getProjectData'
+import { ACTIONS } from '../constants'
+import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
+import { buildPlaceholderFileFromPath } from '../utils/buildPlaceholderFileFromPath'
 
 import { EcosystemProjectForm } from './EcosystemProjectForm'
 
@@ -14,20 +17,29 @@ type UpdateFormProps = {
 }
 
 export function UpdateForm({ slug }: UpdateFormProps) {
-  const { data: project } = useSWR(`projects-${slug}`, () =>
+  const { updateProject } = useSubmitEcosystemProjectForm()
+
+  const { data: project } = useSWR(ACTIONS.GET_PROJECTS_DATA + slug, () =>
     getProjectData(slug),
   )
 
-  const { data: initialFormValues } = useSWR(
-    project ? `update-${project.slug}` : null,
-    () => getInitialFormValue(project),
+  const { data: initialFormData } = useSWR(
+    project ? ACTIONS.GET_INITIAL_FORM_DATA + slug : null,
+    () => getInitialFormData(project),
   )
 
-  if (!initialFormValues) {
+  const { data: logo } = useSWR(project ? ACTIONS.GET_LOGO + slug : null, () =>
+    buildPlaceholderFileFromPath(project?.image?.src),
+  )
+
+  if (!initialFormData || !project) {
     return
   }
 
-  console.log(initialFormValues)
-
-  return <EcosystemProjectForm initialValues={initialFormValues} />
+  return (
+    <EcosystemProjectForm
+      initial={{ formData: initialFormData, logo }}
+      onSubmit={updateProject}
+    />
+  )
 }

@@ -2,9 +2,8 @@
 
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm } from 'react-hook-form'
+import { useForm, type FormState } from 'react-hook-form'
 import useSWR from 'swr'
-import { z } from 'zod'
 
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
@@ -23,10 +22,10 @@ import {
   MAX_FILE_SIZE_IN_BYTES,
   NETWORK_USE_CASE_CHARACTER_LIMIT,
 } from '../constants'
-import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
 import {
   EcosystemProjectFormSchema,
   type EcosystemProjectFormData,
+  type EcosystemProjectFormDataWithoutFiles,
 } from '../schema/form'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
@@ -35,20 +34,33 @@ import { FormSection } from './FormSection'
 
 type StringOrUndefined = string | undefined
 
-type ProjectFormProps = {
-  initialValues: EcosystemProjectFormData
+type Logo = EcosystemProjectFormData['files'][0]
+
+type EcosystemProjectFormProps = {
+  initial: {
+    formData: EcosystemProjectFormDataWithoutFiles
+    logo?: Logo
+  }
+  onSubmit: (
+    data: EcosystemProjectFormData,
+    formState: FormState<EcosystemProjectFormData>,
+  ) => void
 }
 
-export function EcosystemProjectForm({ initialValues }: ProjectFormProps) {
+export function EcosystemProjectForm({
+  initial,
+  onSubmit,
+}: EcosystemProjectFormProps) {
   const { data } = useSWR('categories', getCategoryData)
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
-    defaultValues: initialValues,
+    defaultValues: {
+      ...initial.formData,
+      files: initial.logo ? [initial.logo] : [],
+    },
   })
   const isSubmitting = form.formState.isSubmitting
-
-  const submitForm = useSubmitEcosystemProjectForm()
 
   if (!data) {
     return
@@ -62,7 +74,7 @@ export function EcosystemProjectForm({ initialValues }: ProjectFormProps) {
     <ControlledForm<EcosystemProjectFormData>
       form={form}
       className="md:max-w-readable"
-      onSubmit={submitForm}
+      onSubmit={(data) => onSubmit(data, form.formState)}
     >
       <FormSection
         title="Personal Information"

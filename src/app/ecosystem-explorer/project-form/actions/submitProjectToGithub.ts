@@ -17,15 +17,11 @@ import {
 } from '../services/github/utils/markdownUtils'
 import { getFolderPaths } from '../services/github/utils/pathUtils'
 
-type SubmitProjectParams = {
+export type ProjectData = {
   name: string
   email: string
   timestampISO: string
   yearJoinedISO: string
-  logo: {
-    base64: string
-    format: AllowedImageFormats
-  }
   projectName: MarkdownTemplateParams['projectName']
   category: MarkdownTemplateParams['category']
   subcategories: MarkdownTemplateParams['subcategories']
@@ -38,7 +34,20 @@ type SubmitProjectParams = {
   xUrl: MarkdownTemplateParams['xUrl']
 }
 
-export async function submitProjectToGithub(data: SubmitProjectParams) {
+type ProjectLogo = {
+  base64: string
+  format: AllowedImageFormats
+}
+
+type SubmitProjectParams = {
+  data: ProjectData
+  logo: ProjectLogo
+}
+
+export async function submitProjectToGithub({
+  data,
+  logo,
+}: SubmitProjectParams) {
   const { mediaFolder, ecosystemFolder, publicFolder } = getFolderPaths()
   const todayISO = getTodayISO()
 
@@ -53,7 +62,7 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
     encryptedEmail: encrypt(data.email),
     encryptedName: encrypt(data.name),
     projectName: data.projectName,
-    imagePath: `${publicFolder}/${slug}.${data.logo.format}`,
+    imagePath: `${publicFolder}/${slug}.${logo.format}`,
     category: data.category,
     subcategories: data.subcategories,
     tech: data.tech,
@@ -71,16 +80,16 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
 
   const latestCommitOnMain = await getLatestCommitOnMain()
 
-  const { markdownBlob, imageBlob } = await createBlobs({
-    markdownTemplate,
-    logo: data.logo,
-  })
+  const [markdownBlob, imageBlob] = await Promise.all([
+    createBlob(markdownTemplate, 'utf-8'),
+    createBlob(logo.base64, 'base64'),
+  ])
 
   const newTree = await createTreeBlobs({
     baseTreeSha: latestCommitOnMain.commit.tree.sha,
     newBlobs: [
       {
-        path: `${mediaFolder}/${slug}.${data.logo.format}`,
+        path: `${mediaFolder}/${slug}.${logo.format}`,
         sha: imageBlob.sha,
       },
       {
@@ -103,18 +112,4 @@ export async function submitProjectToGithub(data: SubmitProjectParams) {
   })
 
   return newPullRequest
-}
-
-type CreateBlobsParams = {
-  markdownTemplate: string
-  logo: SubmitProjectParams['logo']
-}
-
-async function createBlobs({ markdownTemplate, logo }: CreateBlobsParams) {
-  const [markdownBlob, imageBlob] = await Promise.all([
-    createBlob(markdownTemplate, 'utf-8'),
-    createBlob(logo.base64, 'base64'),
-  ])
-
-  return { markdownBlob, imageBlob }
 }
