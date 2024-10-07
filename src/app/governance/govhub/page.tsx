@@ -36,7 +36,7 @@ export default function GovHub() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.governance2}
+        image={graphicsData.imageFallback}
       />
 
       <PageSection kicker="Tools" title="Explore Our Governance Tools">
@@ -45,7 +45,7 @@ export default function GovHub() {
             <ToolsCardContent
               title={tool.title}
               description={tool.description}
-              purposeList={tool.purposeList}
+              listItems={tool.purposeList}
               cta={tool.cta}
             />
           </SplitContentCard>

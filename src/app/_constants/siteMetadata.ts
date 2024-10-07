@@ -52,11 +52,11 @@ const FILECOIN_FOUNDATION_URLS = {
   governance: {
     filPoll: {
       label: 'Fil Poll',
-      href: '#',
+      href: 'https://poll.fil.org/',
     },
     powerVote: {
       label: 'PowerVote',
-      href: '#',
+      href: 'https://vote.fil.org/',
     },
     social: {
       github: {

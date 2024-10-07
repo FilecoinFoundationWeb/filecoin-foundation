@@ -1,9 +1,22 @@
 import { ChatCircleDots, GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
+import type { CTAProps } from '@/types/sharedProps/ctaType'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-export const governanceDocsData = [
+import type { IconProps } from '@/components/Icon'
+
+type GovernanceDocsData = {
+  heading: {
+    title: string
+    icon: IconProps['component']
+  }
+  description: string
+  cta: CTAProps
+}
+
+export const governanceDocsData: Array<GovernanceDocsData> = [
   {
     heading: {
       title: 'GovHub',

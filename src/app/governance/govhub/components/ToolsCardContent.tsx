@@ -8,14 +8,14 @@ import { TextLink } from '@/components/TextLink'
 type ToolsCardContentProps = {
   title: string
   description: string
-  purposeList: Array<string>
+  listItems: Array<string>
   cta: CTAProps
 }
 
 export function ToolsCardContent({
   title,
   description,
-  purposeList,
+  listItems,
   cta,
 }: ToolsCardContentProps) {
   return (
@@ -28,11 +28,9 @@ export function ToolsCardContent({
         <Heading tag="h4" variant="md">
           Purpose
         </Heading>
-        <ul
-          className={clsx(purposeList.length > 1 && 'list-disc pl-6', 'mt-2')}
-        >
-          {purposeList.map((purpose, index) => (
-            <li key={index}>{purpose}</li>
+        <ul className={clsx(listItems.length > 1 && 'list-disc pl-6', 'mt-2')}>
+          {listItems.map((item, index) => (
+            <li key={index}>{item}</li>
           ))}
         </ul>
       </div>
