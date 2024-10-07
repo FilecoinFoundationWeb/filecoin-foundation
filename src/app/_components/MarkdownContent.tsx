@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
@@ -5,8 +7,6 @@ import remarkGfm from 'remark-gfm'
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-
-import { DynamicImage } from '@/components/DynamicImage'
 
 type MarkdownContentProps = {
   children: string
@@ -20,12 +20,12 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
       className="prose"
       components={{
         img: ({ src, alt }) => (
-          <DynamicImage
-            src={src || ''}
-            alt={alt || ''}
+          <Image
+            priority
+            src={src || graphicsData.imageFallback.data.src}
+            alt={!src ? graphicsData.imageFallback.alt : alt || ''}
             width={800}
             height={450}
-            fallback={graphicsData.imageFallback}
             sizes={buildImageSizeProp({ startSize: '100vw', md: '660px' })}
           />
         ),
