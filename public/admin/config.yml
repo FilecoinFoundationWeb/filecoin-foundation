@@ -277,6 +277,14 @@ collections:
           - *header_config
           - *meta_config
 
+      - name: "govhub"
+        label: "Governance - GovHub"
+        file: "src/content/pages/governance/govhub.md"
+        preview_path: "govhub"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "grants"
         label: "Grants"
         file: "src/content/pages/grants.md"

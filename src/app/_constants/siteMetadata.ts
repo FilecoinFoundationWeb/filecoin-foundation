@@ -50,7 +50,14 @@ const FILECOIN_FOUNDATION_URLS = {
     href: 'mailto:hello@fil.org',
   },
   governance: {
-    docs: '#',
+    filPoll: {
+      label: 'Fil Poll',
+      href: '#',
+    },
+    powerVote: {
+      label: 'PowerVote',
+      href: '#',
+    },
     social: {
       github: {
         label: 'GitHub',
