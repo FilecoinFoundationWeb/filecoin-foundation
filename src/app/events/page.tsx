@@ -1,6 +1,7 @@
 import path from 'path'
 
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
@@ -40,7 +41,6 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
-import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getInvolvedData } from './data/getInvolvedData'
@@ -249,8 +249,9 @@ export default function Events({ searchParams }: Props) {
       >
         <CardGrid cols="mdTwo" as="div">
           <div className="row-span-2 h-96 md:h-auto">
-            <StaticImage
-              {...graphicsData.events2}
+            <Image
+              src={graphicsData.events2.data}
+              alt={graphicsData.events2.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
@@ -266,8 +267,9 @@ export default function Events({ searchParams }: Props) {
             </div>
           ))}
           <div className="h-48 md:h-56">
-            <StaticImage
-              {...graphicsData.events3}
+            <Image
+              src={graphicsData.events3.data}
+              alt={graphicsData.events3.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />

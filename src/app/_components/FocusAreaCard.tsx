@@ -1,7 +1,10 @@
+import Image from 'next/image'
+
+import type { StaticImageProps } from '@/types/sharedProps/imageType'
+
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Heading } from '@/components/Heading'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 export type FocusAreaCardProps = {
   title: string
@@ -16,8 +19,9 @@ export function FocusAreaCard({
 }: FocusAreaCardProps) {
   return (
     <li className="rounded-lg border border-brand-300 p-1 sm:flex lg:block">
-      <StaticImage
-        {...image}
+      <Image
+        src={image.data}
+        alt={image.alt}
         className="aspect-video w-full rounded object-cover sm:w-60 sm:shrink-0 md:w-80 lg:w-full"
         sizes={buildImageSizeProp({
           startSize: '100vw',
