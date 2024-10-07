@@ -271,7 +271,7 @@ collections:
 
       - name: "governance"
         label: "Governance"
-        file: "src/content/pages/governance.md"
+        file: "src/content/pages/governance/governance.md"
         preview_path: "governance"
         fields:
           - *header_config

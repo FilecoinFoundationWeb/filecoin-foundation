@@ -1,7 +1,7 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/governance.md'
+import { attributes } from '@/content/pages/governance/governance.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
