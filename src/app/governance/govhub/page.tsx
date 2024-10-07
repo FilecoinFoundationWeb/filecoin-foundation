@@ -8,7 +8,6 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
-import { Heading } from '@/components/Heading'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -16,6 +15,7 @@ import { SplitContentCard } from '@/components/SplitContentCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
+import { ToolsCardContent } from './components/ToolsCardContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -40,60 +40,35 @@ export default function GovHub() {
 
       <PageSection kicker="Tools" title="Explore Our Governance Tools">
         <SplitContentCard image={graphicsData.imageFallback} index={0}>
-          <div className="space-y-6">
-            <div>
-              <Heading tag="h3" variant="lg">
-                PowerVote
-              </Heading>
-              <p className="mb-6 mt-3">
-                PowerVote is an on-chain voting tool that allows the Filecoin
-                community to vote on Filecoin Improvement Proposals (FIPs).
-              </p>
-              <Heading tag="h4" variant="md">
-                Purpose
-              </Heading>
-              <p className="mt-3">
-                Facilitate transparent and secure voting on final-stage FIPs.
-              </p>
-            </div>
-            <TextLink href={FILECOIN_FOUNDATION_URLS.governance.powerVote.href}>
-              Explore PowerVote
-            </TextLink>
-          </div>
+          <ToolsCardContent
+            title="PowerVote"
+            description="PowerVote is an on-chain voting tool that allows the Filecoin community to vote on Filecoin Improvement Proposals (FIPs)."
+            purposeList={[
+              'Facilitate transparent and secure voting on final-stage FIPs.',
+            ]}
+            cta={{
+              href: FILECOIN_FOUNDATION_URLS.governance.powerVote.href,
+              text: 'Explore PowerVote',
+            }}
+          />
         </SplitContentCard>
         <SplitContentCard image={graphicsData.imageFallback} index={1}>
-          <div className="space-y-6">
-            <div>
-              <Heading tag="h3" variant="lg">
-                Fil Poll
-              </Heading>
-              <p>
-                Fil Poll is a dynamic discussion and sentiment analysis tool
+          <ToolsCardContent
+            title="Fil Poll"
+            description="Fil Poll is a dynamic discussion and sentiment analysis tool
                 integrated with GitHub, designed to engage the community and
                 track FIPs through their governance journey. In the coming
                 months, a FIPs tracking feature would be deployed on Fil Poll,
-                it will visualize community proposals and their statuses.
-              </p>
-              <Heading tag="h4" variant="md">
-                Purpose
-              </Heading>
-              <ul>
-                <li>
-                  Engages the Community: Fil Poll allows community members to
-                  share their opinions on early-stage FIPs and other important
-                  topics through simple polls.
-                </li>
-                <li>
-                  Tracks Proposals: The tool includes a tracker that shows how
-                  FIPs are moving through different stages of the governance
-                  process, making it easy to see their status at a glance.
-                </li>
-              </ul>
-            </div>
-            <TextLink href={FILECOIN_FOUNDATION_URLS.governance.filPoll.href}>
-              Explore Fil Poll
-            </TextLink>
-          </div>
+                it will visualize community proposals and their statuses."
+            purposeList={[
+              'Engages the Community: Fil Poll allows community members to share their opinions on early-stage FIPs and other important topics through simple polls.',
+              'Tracks Proposals: The tool includes a tracker that shows how FIPs are moving through different stages of the governance process, making it easy to see their status at a glance.',
+            ]}
+            cta={{
+              href: FILECOIN_FOUNDATION_URLS.governance.filPoll.href,
+              text: 'Explore Fil Poll',
+            }}
+          />
         </SplitContentCard>
       </PageSection>
 
