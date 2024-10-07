@@ -1,4 +1,7 @@
+import Image from 'next/image'
+
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
 import {
   type DynamicPathValues,
@@ -16,7 +19,6 @@ import { formatDate } from '@/utils/dateUtils'
 import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { DescriptionText } from '@/components/DescriptionText'
-import { DynamicImage } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -72,23 +74,21 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     <article>
       <header className="mb-8 space-y-10 md:space-y-16">
         <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
-          <DynamicImage
+          <Image
             fill
             priority
-            src={image?.src || ''}
-            alt={image?.alt || ''}
-            objectFit="contain"
-            className="object-left-bottom"
+            src={image?.src || graphicsData.imageFallback.data.src}
+            alt={!image?.src ? graphicsData.imageFallback.alt : ''}
+            className={clsx(
+              image?.src && 'rounded-lg',
+              'object-contain object-left-bottom',
+            )}
             sizes={buildImageSizeProp({
               startSize: '100vw',
               md: '730px',
               lg: '660px',
               xl: '600px',
             })}
-            fallback={{
-              ...graphicsData.imageFallback,
-              className: 'rounded-lg',
-            }}
           />
         </div>
         <div className="flex flex-wrap gap-2">
