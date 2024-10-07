@@ -280,7 +280,7 @@ collections:
       - name: "govhub"
         label: "Governance - GovHub"
         file: "src/content/pages/governance/govhub.md"
-        preview_path: "govhub"
+        preview_path: "governance/govhub"
         fields:
           - *header_config
           - *meta_config
