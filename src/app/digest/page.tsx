@@ -76,11 +76,7 @@ export default function Digest() {
                   icon: BookOpen,
                 }}
                 image={{
-                  alt: '',
-                  ...(image || {
-                    ...graphicsData.imageFallback,
-                  }),
-                  fallback: graphicsData.imageFallback,
+                  ...image,
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
                     sm: '350px',

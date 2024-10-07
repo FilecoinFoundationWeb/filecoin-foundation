@@ -22,11 +22,15 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
         img: ({ src, alt }) => (
           <Image
             priority
-            src={src || graphicsData.imageFallback.data.src}
-            alt={!src ? graphicsData.imageFallback.alt : alt || ''}
+            src={src || graphicsData.imageFallback.data}
             width={800}
             height={450}
             sizes={buildImageSizeProp({ startSize: '100vw', md: '660px' })}
+            alt={
+              alt !== undefined && alt !== null
+                ? alt
+                : graphicsData.imageFallback.alt
+            }
           />
         ),
       }}

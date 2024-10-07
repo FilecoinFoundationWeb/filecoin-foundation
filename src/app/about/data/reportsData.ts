@@ -1,6 +1,6 @@
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import type { StaticImageProps } from '@/types/sharedProps/imageType'
 
-import type { StaticImageProps } from '@/components/StaticImage'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import annualReport from '@/assets/images/022624-ff-anualreport.png'
 

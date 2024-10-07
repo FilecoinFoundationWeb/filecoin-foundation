@@ -172,14 +172,12 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                           image={{
+                            ...image,
                             alt: '',
-                            ...(image || {
-                              ...graphicsData.imageFallback,
-                            }),
+
+                            objectFit: 'contain',
                             padding: true,
                             priority: isFirstTwoImages,
-                            objectFit: 'contain',
-                            fallback: graphicsData.imageFallback,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '320px',

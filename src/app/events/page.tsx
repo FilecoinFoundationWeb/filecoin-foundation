@@ -118,9 +118,8 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description}
         metaData={getEventMetaData(featuredEvent)}
         image={{
+          ...featuredEvent.image,
           alt: '',
-          ...(featuredEvent.image || graphicsData.events1),
-          fallback: graphicsData.events1,
         }}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
@@ -206,18 +205,16 @@ export default function Events({ searchParams }: Props) {
                           textIsClamped={true}
                           tagLabel={tagLabel}
                           image={{
+                            ...image,
                             alt: '',
-                            ...(image || {
-                              ...graphicsData.imageFallback,
-                            }),
-                            fallback: graphicsData.imageFallback,
+
+                            priority: isFirstTwoImages,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '350px',
                               md: '450px',
                               lg: '360px',
                             }),
-                            padding: isFirstTwoImages,
                           }}
                           cta={{
                             href:

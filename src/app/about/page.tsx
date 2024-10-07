@@ -88,16 +88,6 @@ export default function About() {
       <PageSection kicker="Insights" title="Reports">
         <CardGrid cols="lgTwo" hasGridAutoRows={false}>
           {reportsData.map(({ title, description, link, image }, index) => {
-            const imageProp = image && {
-              ...image,
-              sizes: buildImageSizeProp({
-                startSize: '100vw',
-                sm: '710px',
-                md: '980px',
-                lg: '480px',
-              }),
-            }
-
             return (
               <li
                 key={title}
@@ -107,7 +97,15 @@ export default function About() {
                   as="div"
                   title={title}
                   description={description}
-                  image={imageProp}
+                  image={{
+                    ...image,
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      sm: '710px',
+                      md: '980px',
+                      lg: '480px',
+                    }),
+                  }}
                   cta={{
                     href: link,
                     text: 'View Report',
