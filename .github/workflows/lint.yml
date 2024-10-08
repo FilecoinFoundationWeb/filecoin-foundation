@@ -2,9 +2,15 @@ name: Lint Code Base
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - cms/*
+      - ecosystem-submission/*
   pull_request:
-    branches: [main]
+    branches:
+      - main
+      - cms/*
+      - ecosystem-submission/*
 
 jobs:
   lint:
