@@ -30,7 +30,7 @@ import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
 import { CTASection } from '@/components/CTASection'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoResultsMessage } from '@/components/NoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -150,7 +150,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             />
             <FilterContainer.ContentWrapper>
               {categorizedResults.length === 0 ? (
-                <NoResultsMessage />
+                <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">

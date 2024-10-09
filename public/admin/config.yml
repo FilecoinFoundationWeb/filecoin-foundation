@@ -118,7 +118,7 @@ meta_config: &meta_config
         - "^.{0,220}$"
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
-    - name: "og"
+    - name: "open-graph"
       label: "Open Graph Metadata"
       widget: "object"
       required: false
@@ -130,6 +130,11 @@ meta_config: &meta_config
           widget: "string"
           required: false
           hint: "If left empty, the SEO meta title will be used."
+        - name: "description"
+          label: "Open Graph Description"
+          widget: "string"
+          required: false
+          hint: "If left empty, the SEO meta description will be used."
         - name: "image"
           label: "Open Graph Image"
           widget: "image"
@@ -206,8 +211,8 @@ collections:
           - *header_config
           - *meta_config
 
-      - name: "ecosystem"
-        label: "Ecosystem"
+      - name: "ecosystem-explorer"
+        label: "Ecosystem Explorer"
         file: "src/content/pages/ecosystem-explorer.md"
         preview_path: "ecosystem-explorer"
         fields:
@@ -215,7 +220,7 @@ collections:
           - *meta_config
 
       - name: "ecosystem-explorer/project-form"
-        label: "Ecosystem Explorer Project Form"
+        label: "Ecosystem Explorer - Project Form"
         file: "src/content/pages/ecosystem-explorer/project-form.md"
         preview_path: "ecosystem-explorer/project-form"
         fields:
@@ -250,8 +255,16 @@ collections:
 
       - name: "filecoin-plus"
         label: "Filecoin Plus"
-        file: "src/content/pages/filecoin-plus.md"
+        file: "src/content/pages/filecoin-plus/filecoin-plus.md"
         preview_path: "filecoin-plus"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "allocators"
+        label: "Filecoin Plus - Allocators"
+        file: "src/content/pages/filecoin-plus/allocators.md"
+        preview_path: "filecoin-plus/allocators"
         fields:
           - *header_config
           - *meta_config
@@ -305,6 +318,14 @@ collections:
             max: 6
           - *meta_config
 
+      - name: "orbit"
+        label: "Orbit"
+        file: "src/content/pages/orbit.md"
+        preview_path: "orbit"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
@@ -313,24 +334,32 @@ collections:
           - *header_config
           - *meta_config
 
-      - name: "security-maturity-model"
-        label: "Maturity Model"
-        file: "src/content/pages/security/maturity-model.md"
-        preview_path: "security/maturity-model"
+      - name: "security"
+        label: "Security"
+        file: "src/content/pages/security/security.md"
+        preview_path: "security"
         fields:
           - *header_config
           - *meta_config
 
       - name: "security/bug-bounty"
-        label: "Bug Bounty"
+        label: "Security - Bug Bounty"
         file: "src/content/pages/security/bug-bounty.md"
         preview_path: "security/bug-bounty"
         fields:
           - *header_config
           - *meta_config
 
+      - name: "security-maturity-model"
+        label: "Security - Maturity Model"
+        file: "src/content/pages/security/maturity-model.md"
+        preview_path: "security/maturity-model"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "terms"
-        label: "Terms"
+        label: "Terms of Use"
         file: "src/content/pages/terms-of-use.md"
         preview_path: "terms-of-use"
         fields:

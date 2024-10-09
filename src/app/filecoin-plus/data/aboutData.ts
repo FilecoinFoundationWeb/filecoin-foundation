@@ -1,6 +1,6 @@
-import { graphicsData } from '@/data/graphicsData'
+import type { StaticImageProps } from '@/types/sharedProps/imageType'
 
-import type { StaticImageProps } from '@/components/StaticImage'
+import { graphicsData } from '@/data/graphicsData'
 
 export type AboutData = {
   title: string

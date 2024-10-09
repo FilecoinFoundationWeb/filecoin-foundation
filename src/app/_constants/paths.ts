@@ -19,6 +19,7 @@ export type PathValues =
   | '/employee-privacy-policy'
   | '/events'
   | '/filecoin-plus'
+  | '/filecoin-plus/allocators'
   | '/governance'
   | '/grants'
   | '/orbit'
@@ -79,6 +80,7 @@ export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog', {
     includesEntries: true,
   }),
+  ALLOCATORS: createPathConfig('/filecoin-plus/allocators', 'Allocators'),
   BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program'),
   COORDINATED_DISCLOSURE_POLICY: createPathConfig(
     '/security/coordinated-disclosure-policy',

@@ -1,11 +1,13 @@
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/filecoin-plus.md'
+import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
+import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { extractDomain } from '@/utils/extractDomain'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -62,13 +64,30 @@ export default function FilPlus() {
         </div>
       </PageSection>
 
-      <PageSection kicker="Allocator Allocation" title="Become an Allocator">
+      <PageSection
+        kicker="Allocators"
+        title={allocatorsAttributes.header.title}
+        description={allocatorsAttributes.header.description}
+        image={graphicsData.filPlusAllocators}
+        cta={{
+          href: PATHS.ALLOCATORS.path,
+          text: 'Allocators List',
+        }}
+      />
+
+      <PageSection kicker="Allocator Application" title="Become an Allocator">
         <p className="mb-2 max-w-readable">
-          Allocators are a core part of the Fil+ program and help incentivize
-          the storage of useful data of the Filecoin network. For a full list of
-          instructions and walk through please visit{' '}
-          <TextLink href={FIL_PLUS_URLS.allocatorsBlog}>
-            blog.allocator.tech
+          An allocator’s primary responsibilities include allocating DataCap,
+          ensuring trust and compliance, and participating in community
+          governance. For a full list of instructions on how to become an
+          allocator, please visit{' '}
+          <TextLink href={FIL_PLUS_URLS.allocators.blog}>
+            {extractDomain(FIL_PLUS_URLS.allocators.blog)}
+          </TextLink>
+          . We are currently prioritizing new allocators that are developing
+          pathways according to our{' '}
+          <TextLink href={FIL_PLUS_URLS.allocators.rfa}>
+            Request for Allocators (RFA)
           </TextLink>
           .
         </p>

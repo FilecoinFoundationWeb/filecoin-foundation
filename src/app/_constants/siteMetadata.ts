@@ -4,7 +4,11 @@ const BASE_URL = 'https://fil.org'
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
 const FIL_PLUS_URLS = {
-  allocatorsBlog: 'https://blog.allocator.tech/',
+  allocators: {
+    blog: 'https://blog.allocator.tech/',
+    rfa: 'https://blog.allocator.tech/2024/04/allocator-tech-blog.html',
+    site: 'https://allocator.tech/',
+  },
   dataCapMetrics: 'https://datacapstats.io/',
   documentation:
     'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',

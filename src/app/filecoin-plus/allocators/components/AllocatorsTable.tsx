@@ -9,24 +9,32 @@ import {
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { leaderboardData } from '../data/leaderboard'
-import { leaderboardTableData } from '../data/leaderboardTable'
+import type { Allocator } from '../schemas/allocatorSchema'
 
-export function Leaderboard() {
+import { AllocatorsTableColumns } from './AllocatorsTableColumns'
+
+type AllocatorsTableProps = {
+  allocators: Array<Allocator>
+}
+
+export function AllocatorsTable({ allocators }: AllocatorsTableProps) {
   const table = useReactTable({
-    data: leaderboardData,
-    columns: leaderboardTableData,
-    initialState: {
-      sorting: [{ id: 'points', desc: true }],
-    },
+    data: allocators,
+    columns: AllocatorsTableColumns(),
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    initialState: {
+      sorting: [{ id: 'name', desc: false }],
+    },
   })
 
   return (
     <div className="w-full overflow-x-auto">
       <table className="w-full">
-        <TableHead headerGroups={table.getHeaderGroups()} />
+        <TableHead
+          headerGroups={table.getHeaderGroups()}
+          textColor="text-brand-300"
+        />
         <TableBody rowModel={table.getRowModel()} />
       </table>
     </div>
