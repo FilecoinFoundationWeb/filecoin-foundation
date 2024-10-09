@@ -771,6 +771,49 @@ collections:
             required: false
             hint: Paste the embed URL for your Luma event here to display the events directly on the page. Include relevant tags when appropriate, e.g., https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024.
       - *image_config
+      - name: "schedule"
+        label: "Schedule"
+        widget: "object"
+        collapsed: true
+        required: false
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+            required: false
+            hint: This is the title for the section header. For example, "FIL Bangkok 2024 Main Stage Schedule. Defaults to 'Schedule.'"
+          - name: "days"
+            widget: "list"
+            required: false
+            fields:
+              - name: "date"
+                label: "Date"
+                widget: "datetime"
+                hint: "The date of the events."
+              - name: "events"
+                label: "Events"
+                widget: "list"
+                fields:
+                  - name: "title"
+                    label: "Event Title"
+                    widget: "string"
+                  - name: "description"
+                    label: "Description"
+                    widget: "text"
+                  - name: "start"
+                    label: "Start Time"
+                    widget: "datetime"
+                  - name: "end"
+                    label: "End Time"
+                    widget: "datetime"
+                    required: false
+                  - name: "location"
+                    label: "Location"
+                    widget: "string"
+                  - name: "url"
+                    label: "URL"
+                    widget: "string"
+                    required: false
       - name: "speakers"
         label: "Speakers"
         widget: "list"
