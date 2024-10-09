@@ -99,6 +99,8 @@ export type EcosystemProjectFormDataWithoutFiles = Omit<
   'files'
 >
 
+export type EcosystemProjectFormFiles = EcosystemProjectFormData['files']
+
 function validateYoutubeUrlFormat(url: string) {
   return url.includes(YOUTUBE_BASE_URL)
 }

@@ -16,7 +16,7 @@ const MARKETING_DEPARTMENT_EMAIL = 'marketing@fil.org'
 const URL_QUERY_NAME = 'project'
 
 export function UpdateFormSelect() {
-  const { data: projects } = useSWR(ACTIONS.GET_PROJECTS_DATA, getProjectsData) // Fetch once on page load and never again
+  const { data: projects } = useSWR(ACTIONS.GET_PROJECTS_DATA, getProjectsData)
 
   const [project, setProject] = useQueryState(
     URL_QUERY_NAME,
@@ -29,14 +29,23 @@ export function UpdateFormSelect() {
 
   const selectedProject = projects.find((p) => p.slug === project)
 
+  const options = projects.map((project) => ({
+    id: project.slug,
+    name: project.title,
+  }))
+  const selectedOption = {
+    id: selectedProject?.slug || '',
+    name: selectedProject?.title || '',
+  }
+
   return (
     <>
       <FormSection
         title="Select Your Project"
         description={
           <p>
-            Welcome back! Please select your project. Don't see it? Select
-            "Submit Project" above, or reach out to{' '}
+            {`Welcome back! Please select your project. Don't see it? Select
+            Submit Project" above, or reach out to "`}
             <a
               className="text-brand-300 underline"
               href={`mailto:${MARKETING_DEPARTMENT_EMAIL}`}
@@ -49,14 +58,8 @@ export function UpdateFormSelect() {
       >
         <FormCombobox
           label="Select Your Project"
-          options={projects.map((project) => ({
-            id: project.slug,
-            name: project.title,
-          }))}
-          value={{
-            id: selectedProject?.slug || '',
-            name: selectedProject?.title || '',
-          }}
+          options={options}
+          value={selectedOption}
           onChange={(option) => {
             if (option) {
               setProject(option.id)

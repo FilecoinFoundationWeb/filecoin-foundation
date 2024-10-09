@@ -19,7 +19,8 @@ tech:
   - filecoin
 year-joined: 2024-03-29T21:28:48.571Z
 seo:
-  title: "Built Different: Supporting Decentralized Storage and Peer-to-Peer File
+  title:
+    "Built Different: Supporting Decentralized Storage and Peer-to-Peer File
     Sharing in Africa"
   description: Built Different creates innovative decentralized applications.
 ---

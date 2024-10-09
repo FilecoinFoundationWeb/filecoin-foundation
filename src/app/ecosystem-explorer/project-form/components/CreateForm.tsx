@@ -13,16 +13,13 @@ export function CreateForm() {
     getInitialFormData(),
   )
 
-  const { createProject } = useSubmitEcosystemProjectForm()
+  const { create } = useSubmitEcosystemProjectForm()
 
   if (!initialFormData) {
     return
   }
 
   return (
-    <EcosystemProjectForm
-      initial={{ formData: initialFormData }}
-      onSubmit={createProject}
-    />
+    <EcosystemProjectForm initialFormData={initialFormData} onSubmit={create} />
   )
 }

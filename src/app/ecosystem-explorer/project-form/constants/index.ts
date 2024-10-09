@@ -15,5 +15,3 @@ export const ACTIONS = {
   GET_PROJECTS_DATA: 'projects',
   GET_LOGO: 'logo',
 } as const
-
-export const EMPTY_PLACEHOLDER_FILE_NAME = ''

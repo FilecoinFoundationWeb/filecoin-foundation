@@ -34,21 +34,18 @@ import { FormSection } from './FormSection'
 
 type StringOrUndefined = string | undefined
 
-type Logo = EcosystemProjectFormData['files'][0]
-
 type EcosystemProjectFormProps = {
-  initial: {
-    formData: EcosystemProjectFormDataWithoutFiles
-    logo?: Logo
-  }
+  initialFormData: EcosystemProjectFormDataWithoutFiles
+  logo?: File
   onSubmit: (
-    data: EcosystemProjectFormData,
+    formData: EcosystemProjectFormData,
     formState: FormState<EcosystemProjectFormData>,
   ) => void
 }
 
 export function EcosystemProjectForm({
-  initial,
+  initialFormData,
+  logo,
   onSubmit,
 }: EcosystemProjectFormProps) {
   const { data } = useSWR('categories', getCategoryData)
@@ -56,8 +53,8 @@ export function EcosystemProjectForm({
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
     defaultValues: {
-      ...initial.formData,
-      files: initial.logo ? [initial.logo] : [],
+      ...initialFormData,
+      files: logo ? [logo] : [],
     },
   })
   const isSubmitting = form.formState.isSubmitting
