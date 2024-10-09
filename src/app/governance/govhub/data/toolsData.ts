@@ -25,7 +25,7 @@ export const toolsData: Array<ToolsData> = [
       href: FILECOIN_FOUNDATION_URLS.governance.powerVote.href,
       text: `Explore ${FILECOIN_FOUNDATION_URLS.governance.powerVote.label}`,
     },
-    image: graphicsData.imageFallback,
+    image: graphicsData.governancePowerVote,
   },
   {
     title: 'Fil Poll',
@@ -39,6 +39,6 @@ export const toolsData: Array<ToolsData> = [
       href: FILECOIN_FOUNDATION_URLS.governance.filPoll.href,
       text: `Explore ${FILECOIN_FOUNDATION_URLS.governance.filPoll.label}`,
     },
-    image: graphicsData.imageFallback,
+    image: graphicsData.governanceFilPoll,
   },
 ]

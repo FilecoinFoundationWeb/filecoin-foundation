@@ -14,6 +14,9 @@ import filPlusAllocators from '@/assets/graphics/Filorg_Fil_Plus_Allocators.webp
 import governance1 from '@/assets/graphics/Filorg_Governance1.png'
 import governance2 from '@/assets/graphics/Filorg_Governance2.png'
 import governance3 from '@/assets/graphics/Filorg_Governance3.png'
+import governanceFilPoll from '@/assets/graphics/Filorg_Governance_FilPoll.webp'
+import governanceGovHub from '@/assets/graphics/Filorg_Governance_GovHub.webp'
+import governancePowerVote from '@/assets/graphics/Filorg_Governance_PowerVote.webp'
 import grants from '@/assets/graphics/Filorg_Grants.png'
 import home from '@/assets/graphics/Filorg_Home.png'
 import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
@@ -85,6 +88,18 @@ export const graphicsData: Record<string, StaticImageProps> = {
   governance3: {
     data: governance3,
     alt: 'Modern conference room with people gathered around a circular table, discussing important issues, illuminated by natural light.',
+  },
+  governanceFilPoll: {
+    data: governanceFilPoll,
+    alt: 'The image depicts a thermometer standing on a round platform, with a sleek, minimalistic design and a soft gradient background, suggesting a concept related to measuring or tracking progress.',
+  },
+  governanceGovHub: {
+    data: governanceGovHub,
+    alt: 'The image shows a transparent ballot box filled with envelopes, symbolizing voting or submissions.',
+  },
+  governancePowerVote: {
+    data: governancePowerVote,
+    alt: 'The image shows a futuristic, sleek, white room with large windows, minimalist furnishings, and glowing accent lights, giving it a high-tech, sci-fi ambiance.',
   },
   grants: {
     data: grants,

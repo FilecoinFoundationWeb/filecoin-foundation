@@ -24,7 +24,7 @@ const { header, seo } = attributes
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: graphicsData.governance2.data.src,
+    image: graphicsData.governanceGovHub.data.src,
   },
   path: PATHS.GOVHUB.path,
 })
@@ -36,7 +36,7 @@ export default function GovHub() {
       <PageHeader
         title={header.title}
         description={header.description}
-        image={graphicsData.imageFallback}
+        image={graphicsData.governanceGovHub}
         cta={[
           {
             href: FILECOIN_FOUNDATION_URLS.governance.powerVote.href,
