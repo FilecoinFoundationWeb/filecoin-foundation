@@ -23,4 +23,4 @@ seo:
   description: "SP from the beginning eFIL+: from us - Motowizja, FBSNor Cooperation: DeStor, Banyan, Darma, Holon Based in Europe: Poland, Germany, Estonia, Tier4, 100%green"
 ---
 
-Kabat is a storage provider on the storage network
+Unleash the power of your data ​with Kabat! We deliver next-level ​decentralized storage and ​compute solutions, giving your ​business the speed, security, and ​scalability it deserves It's time to ​take charge of the cloud.
