@@ -23,6 +23,8 @@ seo:
   description:
     Hauska AI provides AI-driven solutions for decentralized data analysis
     and management.
+email: encrypted::U2FsdGVkX18X96LvsUG7lBrHY9FN512FjY5ixBpGyNASfeWcQURwtYWwdVSN+veD
+full-name: encrypted::U2FsdGVkX1+n0Ou9L1UTozk+n2YcabKziNJXMk3+HIM=
 ---
 
 Hauska leads in revolutionizing Home Design and Remodeling with AI and Web3 tech. Our platform offers specialized AI design tools, IP protection, decentralized storage, and a Web3 marketplace. Our innovative tools reduce manual sketching time, boosting client acquisition and aiding Design Professionals in closing deals efficiently.

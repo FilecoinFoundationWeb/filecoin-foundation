@@ -21,6 +21,8 @@ subcategories:
 seo:
   title: Defluencer
   description: Defluencer offers decentralized solutions for influencer marketing.
+email: encrypted::U2FsdGVkX1/pRNfoX+q8IEk2x9yZO7/j93LEYco/TNDapjjFNtvU1Pr95kgFNuV6
+full-name: encrypted::U2FsdGVkX1/vkO8fvhc+Oo2h0MHbSLdSbKgVgfOUhSE=
 ---
 
 Defluencer is a protocol built on top of the inter-planetary file system (IPFS). On IPFS, data is content addressed which means your content can be shared but never modified. As content goes viral, it is replicated by anyone who reads, watches or interacts with it in any way, resulting in social media without central servers.

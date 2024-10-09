@@ -20,6 +20,8 @@ seo:
   description:
     CooperDB provides decentralized database solutions for secure data
     management.
+email: encrypted::U2FsdGVkX1/klW08C43prYTciPTA0ZjhWSbPkejVLi+N09b09jzMhzwxCARysEVJ
+full-name: encrypted::U2FsdGVkX19ot9OHf3gG77W8LpIObQO3xAeQ0VioSHI=
 ---
 
 Decentralized Relational Database Management as a Service. built on IPFS, Chainlink and Polygon. Making your data management seamless and efficient.

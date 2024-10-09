@@ -24,6 +24,8 @@ seo:
   description:
     FileDrive provides decentralized storage solutions for personal and
     enterprise use.
+email: encrypted::U2FsdGVkX186Vx8QyocHglrjiy0h3pLCFBJ8MHaPTb91cccBiygkPRRYB68myVXb
+full-name: encrypted::U2FsdGVkX1+UI0+OtA/wIKZRwzaetCsp+ACF7worE5o=
 ---
 
 FileDrive is building tools, applications, solutions, and infrastructure for all data to create value in Web3.0.

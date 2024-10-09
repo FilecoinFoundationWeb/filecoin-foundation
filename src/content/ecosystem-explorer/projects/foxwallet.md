@@ -24,6 +24,8 @@ seo:
   description:
     FoxWallet provides decentralized wallet solutions for managing digital
     assets.
+email: encrypted::U2FsdGVkX1/pTe3FB7hpJL7UU/EIV1mofVSLtdj0Pk9cMOIP/Nb/rfiGf8XdBP9f
+full-name: encrypted::U2FsdGVkX19YJVVncCWWxtQS63f1JhhFOL4LfEIQdcw=
 ---
 
 FoxWallet is a safe and easy-to-use decentralized wallet, dedicated to creating an entrance and connection to the Web3 world. FoxWallet strives to provide a reliable and an industry-leading storage solution with encryption. By accommodating multiple chains and various sets of mnemonics, and ensuring compatibility with other wallets in terms of mnemonics and addresses, FoxWallet aims to empower users in conveniently managing multiple accounts with a single set of seed phrases while keeping every address independent of each other.

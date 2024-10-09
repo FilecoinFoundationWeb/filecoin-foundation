@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: OrbitVault
   description: OrbitVault provides decentralized storage solutions for digital assets.
+email: encrypted::U2FsdGVkX18OBtWWabjxXbR5dzDApRXiffrgCJz7OT1HwOib/Gkap0p4dd3ULVOA
+full-name: encrypted::U2FsdGVkX1+9LAqcDVE0lnVZjJ7E0V5mx25AGceIx50=
 ---
 
 Building a specific wallet for Filecoin Virtual Machine so that users have easy access, ability to see graphs, and prices inside the wallet.

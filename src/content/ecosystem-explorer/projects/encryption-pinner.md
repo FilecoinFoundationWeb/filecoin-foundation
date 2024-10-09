@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: Encryption Pinner
   description: Encryption Pinner offers secure and decentralized data pinning services.
+email: encrypted::U2FsdGVkX19irI5xwEIvelRPtM9LpOKtqU3GCt/FUTZypvztNfvaJ25SgBxDI5Rw
+full-name: encrypted::U2FsdGVkX188DJkgvVh1LaaQQ3Mo2VHReSZH8B7U85w=
 ---
 
 Encryption Pinner utilizes Node's "crypto" module for fast file encryption via the web browser. Users can choose between dozens of encryption methods, with a passcode of their choice.

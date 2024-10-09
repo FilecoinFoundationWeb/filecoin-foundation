@@ -22,6 +22,8 @@ seo:
   description:
     Hamster offers decentralized storage solutions for personal and enterprise
     use.
+email: encrypted::U2FsdGVkX19v1IrL8kvLdM4jV5pTr7rKUSK2zfrokIZ7Fay6Ot+oTN7+GCeuHQjc
+full-name: encrypted::U2FsdGVkX19Tn+X2SpM9rtbU9j16OWpJWI93D9wCvfs=
 ---
 
 Filecoin is an integral part of the data storage layer.

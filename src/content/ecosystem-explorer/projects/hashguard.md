@@ -23,6 +23,8 @@ seo:
   description:
     HashGuard provides decentralized security solutions for blockchain
     applications.
+email: encrypted::U2FsdGVkX1/I3CB5iE6zgZIIzhWLkxw9Ctag4DyuIWFSnc1FNZ4RY/xCoNvHpz4r
+full-name: encrypted::U2FsdGVkX19lF9woSYyqji4FaFSMaE8LWexOUGwzRaA=
 ---
 
 At Hashguard, we're building the future of data privacy and security. Our vision is to enable every individual and business to regain control of their digital information, with a focus on security, simplicity and uninterrupted data access. We aim to eliminate concerns about data loss due to hardware failure, hacker attacks or human error.

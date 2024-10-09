@@ -23,6 +23,8 @@ subcategories:
 seo:
   title: Fileverse
   description: Fileverse provides decentralized storage solutions for the metaverse.
+email: encrypted::U2FsdGVkX19VhJszfn2ttbAeReEqdZeEksZoFEPcSq6a73O6iJ2txOd0iR/HuBWj
+full-name: encrypted::U2FsdGVkX1+yZ5c+Mvufu5oj9Jn4R8XnERcBzBRiJng=
 ---
 
 Fileverse is a Web3 file-sharing tool leveraging peer-to-peer storage networks like IPFS. Fileverse serves individuals, DAOs, Web3 companies, content creators, and NFT communities with an open and composable alternative to today’s tools. Users can use wallets to create, store, manage, and share content including collaboration documents, blogs, personal notes, web pages, contracts, and more. Additionally, each Fileverse Portal is a self-deployed smart contract, which can run on Filecoin Virtual Machine.

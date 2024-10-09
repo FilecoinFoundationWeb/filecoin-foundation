@@ -20,6 +20,8 @@ seo:
   description: Explore Bagel, an AI and cryptography research lab pioneering GPU
     restaking for enhanced AI productivity. Partnered with Filecoin for
     cutting-edge developments.
+email: encrypted::U2FsdGVkX1/j91xbm+F1j+HhBBlzMQXkyDm0ztkSTIVr1O0YE7at4hfw3CwszEXA
+full-name: encrypted::U2FsdGVkX1+sjWl/6L3xBdtiQtkbiODfjpD62qzg+mU=
 ---
 
 Restaking multiplies the power of resources. It was originally derived from the concept of staking in blockchain networks, where users lock up digital currency to secure the network. Restaking extends the utility of these committed resources beyond their primary function. It enables participants to leverage assets already locked to one platform to simultaneously support and secure additional, distinct networks or services.

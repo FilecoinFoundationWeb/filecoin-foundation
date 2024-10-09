@@ -27,6 +27,8 @@ seo:
   description:
     SFT Chain offers decentralized solutions for supply chain management
     and tracking.
+email: encrypted::U2FsdGVkX19LCh/cTJv65i8V5fcwOcXPQE0PcLx45M54B85V61iLbwZ2bO9PgeOd
+full-name: encrypted::U2FsdGVkX1/J/DDoexYCIVr5ZQGWAEv4QV58cx2cwbY=
 ---
 
 SFT Chain, a dynamic 'Chain of Chains', plays a crucial role in the DePIN (Decentralized Physical Infrastructure Networks) landscape, specifically designed to augment the capabilities of Web3 infrastructure. At the core of our mission, we focus on creating a comprehensive platform that integrates critical components like storage, computing, and edge CDN, thereby pushing the boundaries of conventional infrastructure and paving the way for groundbreaking applications.

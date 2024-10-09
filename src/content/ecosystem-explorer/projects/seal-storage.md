@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Seal Storage
   description: Seal Storage provides decentralized storage solutions for enterprises.
+email: encrypted::U2FsdGVkX1/QGWr0qycz70IjHfApBCTG/G6f78FuKNWuBo4viqOHamBCTlHX+sp9
+full-name: encrypted::U2FsdGVkX1+AxhJEj4cMJa8Le5xKd83qMwDHtZAXZx4=
 ---
 
 As one of the earliest providers on the Filecoin network, Seal Storage is a top storage provider in North America, serving universities, research institutes, enterprises, and other firms.

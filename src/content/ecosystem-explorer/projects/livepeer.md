@@ -26,6 +26,8 @@ subcategories:
 seo:
   title: Livepeer
   description: Livepeer provides decentralized video streaming and transcoding services.
+email: encrypted::U2FsdGVkX1+7C08nY4YK4u/a3fURsuxiOoQoFXGv1Ba+1hYOa/YD1aMoViMg4Q/A
+full-name: encrypted::U2FsdGVkX1/HvNoHz+IX5eOXAO02Tlt3OcWfOVn1cDI=
 ---
 
 Livepeer is an open video infrastructure network for live and on-demand streaming. Via Filecoin Virtual Machine (FVM), Livepeer provides a video archival and storage solution to developers to provide live stream recording archival at an affordable price to its universe of live stream users that stream millions of minutes of video (representing TBs of data storage) per week.

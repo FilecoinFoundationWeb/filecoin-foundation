@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Ocean Protocol
   description: Ocean Protocol provides decentralized data exchange solutions.
+email: encrypted::U2FsdGVkX18Crb/AqRAtk/DeYxTNmJu9WblBAyKmVnZ9LEuLIzEXv5pr1grcW5cE
+full-name: encrypted::U2FsdGVkX1/LX/8eGWGA4Dd4WVm1K5A15MbWdNXKhJ8=
 ---
 
 Ocean data publishers, marketplaces, and dapps have access to storing data on the Filecoin network via Lighthouse. Ocean was founded to level the playing field for artificial intelligence and data by enabling people to privately and securely publish, exchange, and consume data.

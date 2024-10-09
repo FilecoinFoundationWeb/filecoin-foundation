@@ -28,6 +28,8 @@ subcategories:
 seo:
   title: FileMarket
   description: FileMarket offers decentralized marketplace solutions for digital assets.
+email: encrypted::U2FsdGVkX1/SlT9vk4zMX23EQ7brjnGv0cyR8SWlhmgQm9y91u7/IwraElAE9IBJ
+full-name: encrypted::U2FsdGVkX18x2Y7KZCSH6M7nR4nFtme+mVXfseQbpzc=
 ---
 
 FileMarket assists users of EVM-compatible blockchain wallets engaged in digital content creation to store it directly in the wallet without the risk of unauthorized access, with the ability to monetize through selling access on a public storefront.

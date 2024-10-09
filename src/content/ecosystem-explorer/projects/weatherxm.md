@@ -23,6 +23,8 @@ seo:
   description:
     WeatherXM offers decentralized solutions for weather data collection
     and analysis.
+email: encrypted::U2FsdGVkX18f7wIL3/7QgIziPGvmsHV4GGXI3sWoIB7aZR8t7YWRY3ZkVrEdywpj
+full-name: encrypted::U2FsdGVkX1+Fox9347Qf7+CEBVUA1zFh1G35qp48Ems=
 ---
 
 WeatherXM is a community-powered weather network that rewards weather station owners and provides accurate weather services to individuals, businesses, and research organizations. The data collected by WeatherXM stations are stored on IPFS, allowing permissionless access.

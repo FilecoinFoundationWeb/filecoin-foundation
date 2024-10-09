@@ -25,6 +25,8 @@ seo:
   description:
     Filecoin Saturn provides decentralized storage solutions for the Filecoin
     network.
+email: encrypted::U2FsdGVkX1+RjOEFZnZch0thYNqizyLvXg1D9PqAW0IE7ghdGLxaL1eFCTH4/T0R
+full-name: encrypted::U2FsdGVkX1/Am+If7LYPP4oZWIpA3htxsQF+Eh5y2mY=
 ---
 
 Filecoin Saturn is an open-source, community-run Content Delivery Network (CDN) built on Filecoin's retrieval market where its users serve as node operators. Saturn speeds up decentralized applications on IPFS and Filecoin, with fast data retrievals and minimal latency. On one side of the network, websites and decentralized applications can efficiently serve billions of users, and on the other side, Saturn node operators receive crypto incentives to fulfill requests.

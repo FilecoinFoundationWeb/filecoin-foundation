@@ -28,6 +28,8 @@ seo:
   description:
     Transfer Data Trust offers decentralized solutions for data transfer
     and security.
+email: encrypted::U2FsdGVkX1/92XC+4XjJ94INFSZx/Hy9K7wAFyMWJ9dZ0IzC0z7zrLRAgQUy0WXd
+full-name: encrypted::U2FsdGVkX19qBfh6/RVSxi9vMICyIwnvFR0QeOFQEKQ=
 ---
 
 TRANSFER Data Trust is a speculative design project to build an automated, non-profit cooperative trust powered by FVM. The outcomes of this project are both a non-profit entity holding data-based assets (artworks), and a set of governance contracts and UI that are open and available to any artist collective or organization to fork and implement. The vision is to shift how artists understand the value of their work, and how they grow that value over time through cooperative conservation and care practices.

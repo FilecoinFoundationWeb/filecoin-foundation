@@ -23,6 +23,8 @@ seo:
   description:
     SolMedia provides decentralized solutions for digital media storage
     and management.
+email: encrypted::U2FsdGVkX18cqgiAiAxm+fJv4ORmFtmCMoIE8Lc2xOkeZ7k7FgJvp17U1z1C88Tu
+full-name: encrypted::U2FsdGVkX1+z1jie+/SPikA1khIT2fr4TW7SWxBhcNA=
 ---
 
 Solmedia is the first decentralized content sharing platform on Solana. Integrating both Solana and Filecoin on-chain IPFS technology, Solmedia ensures a secure video streaming experience for content creators and consumers

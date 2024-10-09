@@ -21,6 +21,8 @@ seo:
   description:
     Murmuration Labs offers decentralized solutions for data analysis and
     management.
+email: encrypted::U2FsdGVkX19lsECS3JPgAhUOhE497qZ+Q3oskB2iBMtOG8ugn/+O2cqoDP2YUku8
+full-name: encrypted::U2FsdGVkX1+EpLcXdYdqB24n8BtIgckmCPZbDUWUoO8=
 ---
 
 Trust & Safety policy, operations, and software help for distributed web and blockchain projects.

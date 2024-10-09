@@ -20,6 +20,8 @@ subcategories:
 seo:
   title: Lotus
   description: Lotus offers decentralized storage solutions for the Filecoin network.
+email: encrypted::U2FsdGVkX1+0nFRrm0E/HRSHmjCPB+ut+IUggsSmmWn5QlVhfyo6Oor9ifgbFfcU
+full-name: encrypted::U2FsdGVkX1+5Eq20D2NRXL4AwKBPPNqLdOMrNvdAOwA=
 ---
 
 Lotus is the primary node implementation for the Filecoin network, designed to facilitate efficient and secure decentralized storage. It enables seamless data storage and retrieval across a global network, providing a robust foundation for the Filecoin ecosystem and users of all expertise levels.

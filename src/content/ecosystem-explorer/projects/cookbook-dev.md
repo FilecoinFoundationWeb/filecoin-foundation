@@ -21,6 +21,8 @@ subcategories:
 seo:
   title: Cookbook Dev
   description: Cookbook Dev offers decentralized development tools and resources.
+email: encrypted::U2FsdGVkX180elBw9qreUH2gRpV1J40jTDpVtaClljLevqXzLeYGE+RMrUJ4PlCe
+full-name: encrypted::U2FsdGVkX19o6c9U4OrRYvQpMtzk/cXQAnzEkv6CHLs=
 ---
 
 A platform to find smart contracts, solidity libraries, and discover protocols.
