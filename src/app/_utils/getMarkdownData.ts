@@ -19,6 +19,12 @@ type GetData<T> = {
   directoryPath: string
   zodParser: ZodType<T>['parse']
 }
+
+type GetAllData<T> = {
+  directoryPath: string
+  zodParser: ZodType<T>['parse']
+}
+
 // Variation of src/app/_utils/getData.ts
 // Necessary until we migrate all Zod schemas to kebab-case
 export function getMarkdownData<T>({
@@ -49,11 +55,6 @@ export function getMarkdownData<T>({
 
     throw error
   }
-}
-
-type GetAllData<T> = {
-  directoryPath: string
-  zodParser: ZodType<T>['parse']
 }
 
 export function getAllMarkdownData<T>({
