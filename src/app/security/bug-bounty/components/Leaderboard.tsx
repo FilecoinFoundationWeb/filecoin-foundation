@@ -10,7 +10,8 @@ import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
 import { leaderboardData } from '../data/leaderboard'
-import { leaderboardTableData } from '../data/leaderboardTable'
+
+import { leaderboardTableData } from './LeaderBoardTableColumns'
 
 export function Leaderboard() {
   const table = useReactTable({

@@ -2,7 +2,7 @@ import {
   type AllocatorFileMetaData,
   type AllocatorFileMetaDataBase,
   AllocatorFileMetaDataSchema,
-} from '../schemas/allocatorSchema'
+} from '../schemas/AllocatorSchema'
 
 import { extractAllocators } from './extractAllocators'
 import { getAllocatorUrlList } from './getAllocatorUrlList'

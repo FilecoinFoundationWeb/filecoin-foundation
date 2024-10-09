@@ -7,8 +7,8 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 import { attributes as digestAttributes } from '@/content/pages/digest.md'
 import { attributes } from '@/content/pages/home.md'
 
+import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
-import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'

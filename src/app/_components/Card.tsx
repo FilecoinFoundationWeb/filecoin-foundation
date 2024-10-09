@@ -2,7 +2,7 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
-import { type CTAProps } from '@/types/sharedProps/ctaType'
+import { type CTAProps } from '@/types/ctaType'
 
 import { isExternalLink } from '@/utils/linkUtils'
 

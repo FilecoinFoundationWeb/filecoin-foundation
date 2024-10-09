@@ -1,6 +1,6 @@
 import removeMarkdown from 'remove-markdown'
 
-import { DigestArticleFrontMatterSchema } from '@/schemas/digestArticleFrontMatterSchema'
+import { DigestArticleFrontMatterSchema } from '@/_schemas/DigestArticleFrontMatterSchema'
 
 const CONTENT_PREVIEW_CHARACTER_LENGTH = 220
 

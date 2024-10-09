@@ -4,7 +4,7 @@ import { createColumnHelper } from '@tanstack/react-table'
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
-import type { Allocator } from '../schemas/allocatorSchema'
+import type { Allocator } from '../schemas/AllocatorSchema'
 
 const columnHelper = createColumnHelper<Allocator>()
 

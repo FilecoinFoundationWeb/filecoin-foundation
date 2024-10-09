@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import type { StaticImageProps } from '@/types/sharedProps/imageType'
+import type { StaticImageProps } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
