@@ -28,7 +28,7 @@ export function ToolsCardContent({
         <Heading tag="h4" variant="md">
           Purpose
         </Heading>
-        <ul className={clsx(listItems.length > 1 && 'list-disc pl-6', 'mt-2')}>
+        <ul className={clsx('mt-1', listItems.length > 1 && 'list-disc pl-6')}>
           {listItems.map((item, index) => (
             <li key={index}>{item}</li>
           ))}

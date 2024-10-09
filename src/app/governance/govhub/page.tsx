@@ -7,16 +7,16 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { SplitContentCard } from '@/components/SplitContentCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { ToolsCardContent } from './components/ToolsCardContent'
-import { toolsData } from './data/ToolsData'
+import { toolsData } from './data/toolsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
@@ -37,18 +37,28 @@ export default function GovHub() {
         title={header.title}
         description={header.description}
         image={graphicsData.imageFallback}
+        cta={[
+          {
+            href: FILECOIN_FOUNDATION_URLS.governance.powerVote.href,
+            text: `Explore ${FILECOIN_FOUNDATION_URLS.governance.powerVote.label}`,
+          },
+          {
+            href: FILECOIN_FOUNDATION_URLS.governance.filPoll.href,
+            text: `Explore ${FILECOIN_FOUNDATION_URLS.governance.filPoll.label}`,
+          },
+        ]}
       />
 
       <PageSection kicker="Tools" title="Explore Our Governance Tools">
         {toolsData.map((tool, index) => (
-          <SplitContentCard key={index} image={tool.image} index={index}>
+          <AlternatingImageCard key={index} image={tool.image} index={index}>
             <ToolsCardContent
               title={tool.title}
               description={tool.description}
               listItems={tool.purposeList}
               cta={tool.cta}
             />
-          </SplitContentCard>
+          </AlternatingImageCard>
         ))}
       </PageSection>
 

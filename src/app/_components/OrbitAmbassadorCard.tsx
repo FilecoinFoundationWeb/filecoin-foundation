@@ -1,4 +1,4 @@
-import { SplitContentCard } from '@/components/SplitContentCard'
+import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 
 import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 
@@ -14,7 +14,7 @@ export function OrbitAmbassadorCard({
   location,
 }: OrbitAmbassadorCardProps) {
   return (
-    <SplitContentCard index={index} image={image} as="article">
+    <AlternatingImageCard index={index} image={image} as="article">
       <div className="space-y-6">
         {testimonial.map((text, index) => (
           <p key={index}>{text}</p>
@@ -24,6 +24,6 @@ export function OrbitAmbassadorCard({
           <p className="text-brand-300">— {location}</p>
         </div>
       </div>
-    </SplitContentCard>
+    </AlternatingImageCard>
   )
 }

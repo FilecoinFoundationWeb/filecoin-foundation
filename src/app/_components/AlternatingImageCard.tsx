@@ -8,19 +8,19 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { BasicCard } from '@/components/BasicCard'
 
-type SplitContentCardProps = {
+type AlternatingImageCardProps = {
   index: number
   image: StaticImageProps
   as?: React.ElementType
   children: React.ReactNode
 }
 
-export function SplitContentCard({
+export function AlternatingImageCard({
   index,
   image,
   as: Tag = 'div',
   children,
-}: SplitContentCardProps) {
+}: AlternatingImageCardProps) {
   const isImagePositionOdd = index % 2 === 1
 
   return (

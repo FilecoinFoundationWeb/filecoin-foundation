@@ -23,7 +23,7 @@ export const toolsData: Array<ToolsData> = [
     ],
     cta: {
       href: FILECOIN_FOUNDATION_URLS.governance.powerVote.href,
-      text: 'Explore PowerVote',
+      text: `Explore ${FILECOIN_FOUNDATION_URLS.governance.powerVote.label}`,
     },
     image: graphicsData.imageFallback,
   },
@@ -37,7 +37,7 @@ export const toolsData: Array<ToolsData> = [
     ],
     cta: {
       href: FILECOIN_FOUNDATION_URLS.governance.filPoll.href,
-      text: 'Explore Fil Poll',
+      text: `Explore ${FILECOIN_FOUNDATION_URLS.governance.filPoll.label}`,
     },
     image: graphicsData.imageFallback,
   },
