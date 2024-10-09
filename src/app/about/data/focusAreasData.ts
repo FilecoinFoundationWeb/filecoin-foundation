@@ -1,6 +1,14 @@
+import type { StaticImageProps } from '@/types/sharedProps/imageType'
+
 import { graphicsData } from '@/data/graphicsData'
 
-export const focusAreasData = [
+type FocusAreaData = {
+  title: string
+  description: string
+  image: StaticImageProps
+}
+
+export const focusAreasData: Array<FocusAreaData> = [
   {
     title: 'Governance',
     description:

@@ -1,4 +1,5 @@
-import type { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageProps } from '@/types/sharedProps/imageType'
+
 import { TextLink } from '@/components/TextLink'
 
 import austinImg from '@/assets/orbit/ambassadors/austin-web3-filecoin-meetup.jpg'
@@ -10,10 +11,10 @@ import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen-orbit-china-roadsho
 import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-event.jpg'
 
 export type AmbassadorData = {
-  image: StaticImageProps
   name: string
-  testimonial: Array<string> | Array<JSX.Element>
   location: string
+  testimonial: Array<string> | Array<JSX.Element>
+  image: StaticImageProps
 }
 
 export const ambassadorsData: Array<AmbassadorData> = [
