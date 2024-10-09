@@ -1,4 +1,4 @@
-import { Listbox } from '@headlessui/react'
+import { ListboxOptions as HeadlessListboxOptions } from '@headlessui/react'
 import { clsx } from 'clsx'
 
 type ListboxOptionsProps = {
@@ -13,7 +13,7 @@ export function ListboxOptions({
   const positionClass = position === 'right' ? 'right-6 md:right-auto' : ''
 
   return (
-    <Listbox.Options
+    <HeadlessListboxOptions
       aria-labelledby="listbox-button"
       className={clsx(
         'absolute z-10 mt-2 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2',
@@ -21,6 +21,6 @@ export function ListboxOptions({
       )}
     >
       {children}
-    </Listbox.Options>
+    </HeadlessListboxOptions>
   )
 }

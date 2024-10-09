@@ -2,7 +2,13 @@
 
 import { cloneElement, Fragment } from 'react'
 
-import { Popover, Transition } from '@headlessui/react'
+import {
+  Popover,
+  Transition,
+  PopoverButton,
+  PopoverPanel,
+  PopoverBackdrop,
+} from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
 
 import { Icon } from '@/components/Icon'
@@ -31,7 +37,7 @@ export function NavigationPopover({
 }: PopOverProps) {
   return (
     <Popover as={as}>
-      <Popover.Button
+      <PopoverButton
         aria-label={`${label} (opens a navigation menu)`}
         className={mainNavItemStyles}
       >
@@ -39,10 +45,10 @@ export function NavigationPopover({
         <span className="transition-transform ui-open:rotate-180">
           <Icon component={CaretDown} size={20} color="brand-400" />
         </span>
-      </Popover.Button>
-      <Popover.Overlay className="fixed inset-0 -z-10" />
+      </PopoverButton>
+      <PopoverBackdrop className="fixed inset-0 -z-10" />
       <Transition as={Fragment} {...TransitionProps}>
-        <Popover.Panel className="absolute right-0 z-10 mt-6 xl:-right-6">
+        <PopoverPanel className="absolute right-0 z-10 mt-6 xl:-right-6">
           {(props) => {
             const clonedChildren = cloneElement(children, {
               onClick: function closeOnClickWithin() {
@@ -56,7 +62,7 @@ export function NavigationPopover({
               </div>
             )
           }}
-        </Popover.Panel>
+        </PopoverPanel>
       </Transition>
     </Popover>
   )
