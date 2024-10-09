@@ -22,6 +22,8 @@ seo:
   description:
     DRPC provides decentralized solutions for remote procedure calls and
     data retrieval.
+email: encrypted::U2FsdGVkX19RLmNWb88EHk6g2r+DBs+6/eOSJSfDJK/6es5G22Akd9DuKbenE77y
+full-name: encrypted::U2FsdGVkX18QiITdsn3B9cx5xffdwY5Lc4XU3wOjx5c=
 ---
 
 dRPC is a decentralized RPC network that enhances security, reliability, and cost-efficiency for Web3 companies of all sizes. We are building the most reliable and cost-efficient Data providing solution for Filecoin and other chains via a decentralized platform.

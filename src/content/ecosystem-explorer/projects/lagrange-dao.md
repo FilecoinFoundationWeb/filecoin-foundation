@@ -24,6 +24,8 @@ seo:
   description:
     Lagrange DAO offers decentralized solutions for community management
     and governance.
+email: encrypted::U2FsdGVkX1+fHu7aB8qi1Kj+DQoeiT71/RMUEhlE4XURMtYEoCUgNILg57S9pS6+
+full-name: encrypted::U2FsdGVkX1+XwzcpYqA7i8ZVAYzVy4VHrKbEE3cnW6s=
 ---
 
 Lagrange’s Decentralized Auction Marketplace is designed to enable efficient and secure interactions between users and providers in a decentralized environment, using smart contracts, a bidding engine, and decentralized storage with Filecoin to ensure data security and transparency.

@@ -20,6 +20,8 @@ seo:
   description:
     Neyra AI provides AI-driven solutions for decentralized data analysis
     and management.
+email: encrypted::U2FsdGVkX1+GcrdnK/0NIAvTMo62O2e67wdBVuc67MvA92iTzutKdARfcNMAZWT1
+full-name: encrypted::U2FsdGVkX1+5mF+swBY/ZoFrtzqE925oTrWzHWR9cI4=
 ---
 
 At Neyra AI, we revolutionize data security and storage through our cutting-edge Neyra Drive, seamlessly integrating the boundless capabilities of the Filecoin network to ensure unparalleled protection and accessibility for your data. Our innovative platform redefines the paradigm of data storage in the AI era, leveraging Filecoin's decentralized infrastructure to provide secure, encrypted storage solutions that stand at the vanguard of technological advancement.

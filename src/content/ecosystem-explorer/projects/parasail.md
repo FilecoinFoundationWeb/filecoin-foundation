@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Parasail
   description: Parasail offers decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX18eNzdUFYfmb1TrvmJp8ctt02G7y8EvoDH3lxF9RmT2VBkak4VpQSp5
+full-name: encrypted::U2FsdGVkX19BX2mHaU+8IdkY+XJWJn55k78InKk3Ytk=
 ---
 
 Parasail is an incentive interface focused on creating seamless DePIN experiences. By aggregating capital, hardware resources, and DePIN users, Parasail breaks down silos and fosters strong synergies among various DePIN networks.

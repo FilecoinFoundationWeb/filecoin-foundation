@@ -13,7 +13,7 @@ const { validCategoryIds } = getEventsCategorySettings()
 
 const categorySchema = createCategorySchema(validCategoryIds)
 
-export const FrontMatterSchema = DynamicBaseDataSchema.extend({
+export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string().optional(),

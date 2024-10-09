@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: Spex
   description: Spex offers decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX19BXykXtHf3mfwwPo+lHlbDy+NKwEa2CAq9ueZkiKhYKhGjyt8fzTF6
+full-name: encrypted::U2FsdGVkX1+ellAe4XyTs8uE3U2NPcjYPo2yRhi2jl4=
 ---
 
 Providing an all-in-one marketplace for Storage Providers to trade, swap, bid and interact.

@@ -19,6 +19,8 @@ seo:
   description:
     Glitter Protocol provides decentralized finance solutions for the Filecoin
     network.
+email: encrypted::U2FsdGVkX19mwskoH9KmgE7tdu4yXqmaQ8jInrqDccdJEy7AEANlr5iUTwjHEPhX
+full-name: encrypted::U2FsdGVkX19Ch39Ujaf+aQ/Q5uVl+zk4xhs8AS3uxZA=
 ---
 
 Glitter Protocol is a decentralized data indexing protocol that aims to return the value of data back to users, as well as a powerful data infrastructure that provides a data service for the web3.0 world.

@@ -1,19 +1,20 @@
 import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
-import { convertMarkdownToEcosystemProjectData } from '@/utils/convertMarkdownToEcosystemProjectData'
-import { getData, getAllData } from '@/utils/getData'
+import { getMarkdownData, getAllMarkdownData } from '@/utils/getMarkdownData'
+
+import { EcosystemProjectFrontMatter } from '@/schemas/ecosystemProject/FrontMatterSchema'
 
 export function getEcosystemProjectData(slug: string) {
-  return getData(
-    ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
-    convertMarkdownToEcosystemProjectData,
+  return getMarkdownData({
     slug,
-  )
+    directoryPath: ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
+    zodParser: EcosystemProjectFrontMatter.parse,
+  })
 }
 
 export function getEcosystemProjectsData() {
-  return getAllData(
-    ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
-    convertMarkdownToEcosystemProjectData,
-  )
+  return getAllMarkdownData({
+    directoryPath: ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
+    zodParser: EcosystemProjectFrontMatter.parse,
+  })
 }

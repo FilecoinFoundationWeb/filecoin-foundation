@@ -23,6 +23,8 @@ seo:
   title: Pyth Network
   description: Pyth Network provides decentralized data oracle solutions for
     blockchain applications.
+email: encrypted::U2FsdGVkX1+U56Forn155XVBt6Jud47gcn77bscLvU+S2sHTxMpjFLPENeGXCW/d
+full-name: encrypted::U2FsdGVkX18vRHNKosZk8U/ePtOf6K/jQ8R09TGdRrw=
 ---
 
 The Pyth Network is a first-party financial data oracle network that delivers low-latency price data for various assets to blockchains securely. Over 450 Pyth price feeds are now permissionlessly available to smart contract developers on the Filecoin peer-to-peer network.

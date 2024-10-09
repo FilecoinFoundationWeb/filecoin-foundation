@@ -21,6 +21,8 @@ seo:
   description:
     DDrive offers decentralized storage solutions for personal and enterprise
     use.
+email: encrypted::U2FsdGVkX1+K+eOXu85Ljfefd2ex03Wd/N1htJ4Alr/s2DIWGaDh9dBFa2J610id
+full-name: encrypted::U2FsdGVkX1+O1lELlBLs5sWkADXtXd3hcgdXJ7iWkfM=
 ---
 
 dDrive is a fully decentralized and open-source Storage which replaces traditional storage providers having centralized governance, cumbersome infrastructure, inadequate security, and privacy measures with users datasets.

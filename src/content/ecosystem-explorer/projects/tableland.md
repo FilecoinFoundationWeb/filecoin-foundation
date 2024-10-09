@@ -23,6 +23,8 @@ subcategories:
 seo:
   title: Tableland
   description: Tableland offers decentralized database solutions for web3 applications.
+email: encrypted::U2FsdGVkX1/DeOaPm+YW7ukLKG8kFNlbgKOXob8Dtwx5MDmvJJw0OpOIUEtRHFbR
+full-name: encrypted::U2FsdGVkX1/KK8cFJO4UrIZ25f3tJnYp+LJioSgmxuM=
 ---
 
 Tableland is a Web3 database to store and query contract metadata with (structured query language) SQL. With Filecoin Virtual Machine (FVM) compatibility, Tableland developers can build on Filecoin, enabling Web3-native mutability and queries to data written by smart contracts, such as deal data or file metadata.

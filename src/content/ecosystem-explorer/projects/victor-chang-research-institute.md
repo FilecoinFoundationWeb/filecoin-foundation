@@ -26,6 +26,8 @@ seo:
   description:
     Victor Chang Research Institute provides decentralized solutions for
     healthcare data management.
+email: encrypted::U2FsdGVkX19ATaNLxJt52F0ES1D9pLZeZa1N1E2eXbl7nCs46HVUvHFswFH8Hcrk
+full-name: encrypted::U2FsdGVkX1/gBYoSsZEZFAC1Z5UwfUY38AHPoIjzxUU=
 ---
 
 As they work toward finding a cure for heart disease, researchers at Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share research data. The Institute is storing more than 125 TiBs of cardiac research data on Filecoin, including raw datasets from published papers consisting of thousands of images of cells and encrypted backups of their SyncroPatch machine, a laboratory technique for studying currents in living cells.

@@ -27,6 +27,8 @@ seo:
   description:
     Filecoin Incentive DesignLabs offers tools and resources for designing
     incentives on the Filecoin network.
+email: encrypted::U2FsdGVkX19Q4seqWyw1OXyUReXuLitxri686kOIxvvHoeiYiKm6jktrIpDZtnvG
+full-name: encrypted::U2FsdGVkX1/r4CFOK8PhjcoXrh8yMQKEgg3OaXYbuaE=
 ---
 
 Filecoin Incentive Design Labs (FIDL) incentivizes (good) behavior on Filecoin. We provide tooling and compliance services. Much of our initial effort is focused on the Filecoin plus program.

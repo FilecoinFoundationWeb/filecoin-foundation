@@ -20,6 +20,8 @@ subcategories:
 seo:
   title: NuLink
   description: NuLink provides decentralized solutions for data privacy and security.
+email: encrypted::U2FsdGVkX19dyPoBkL5+cRQk45r0pLj+w+AlipnorwoJdLqzJaHw5L74yVokxglP
+full-name: encrypted::U2FsdGVkX18ko/0cR0NQ+BBmCuRuLJBXnCmDlBcxEKA=
 ---
 
 NuLink is a ZK Provable Data Privacy Solution for DApps.
