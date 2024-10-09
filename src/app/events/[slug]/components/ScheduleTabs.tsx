@@ -8,14 +8,14 @@ import { TextLink } from '@/components/TextLink'
 
 import { formatDate, formatTime } from '../utils/dateUtils'
 
-type ScheduleProps = {
+type ScheduleTabsProps = {
   schedule: Event['schedule']
 }
 
-export function Schedule({ schedule }: ScheduleProps) {
+export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
   return (
-    <TabGroup className="grid gap-6">
-      <TabList className="-m-2 flex gap-4 overflow-auto p-2">
+    <TabGroup className="relative grid gap-6">
+      <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
         {schedule!.days.map((day) => (
           <Tab
             key={formatDate(day.date)}

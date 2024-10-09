@@ -15,6 +15,7 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
+import { ScheduleSection } from './components/ScheduleSection'
 import { SponsorSection } from './components/SponsorSection'
 import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -47,6 +48,7 @@ export default function EventEntry({ params }: EventProps) {
     externalLink,
     lumaCalendarLink,
     lumaEventsSection,
+    schedule,
     speakers,
     sponsors,
   } = data
@@ -69,6 +71,10 @@ export default function EventEntry({ params }: EventProps) {
           }}
         />
       </div>
+
+      {schedule && schedule.days && schedule.days.length > 0 && (
+        <ScheduleSection schedule={schedule} />
+      )}
 
       {lumaEventsSection && (
         <PageSection kicker="Explore" title={lumaEventsSection.title}>
