@@ -8,12 +8,12 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { AlternatingImageCard } from '@/components/AlternatingImageCard'
-import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
+
+import { CTAPageSection } from '../components/CTAPageSection'
 
 import { ToolsCardContent } from './components/ToolsCardContent'
 import { toolsData } from './data/toolsData'
@@ -62,32 +62,7 @@ export default function GovHub() {
         ))}
       </PageSection>
 
-      <CTASection
-        title="Connect With Us"
-        description={
-          <>
-            To get involved, visit the{' '}
-            <TextLink
-              href={FILECOIN_FOUNDATION_URLS.governance.social.github.href}
-            >
-              Governance GitHub
-            </TextLink>
-            , join the conversation in the{' '}
-            <TextLink
-              href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
-            >
-              #fil-gov Slack channel
-            </TextLink>
-            , or follow
-            <TextLink
-              href={FILECOIN_FOUNDATION_URLS.governance.social.twitter.href}
-            >
-              @fil_gov on X
-            </TextLink>
-            .
-          </>
-        }
-      />
+      <CTAPageSection />
     </PageLayout>
   )
 }
