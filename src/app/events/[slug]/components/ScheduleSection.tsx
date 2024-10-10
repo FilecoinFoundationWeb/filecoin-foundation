@@ -10,7 +10,7 @@ type ScheduleSectionProps = {
 
 export function ScheduleSection({ schedule }: ScheduleSectionProps) {
   return (
-    <PageSection kicker="Join Us" title={schedule!.title || 'Schedule'}>
+    <PageSection kicker="Join Us" title={schedule?.title || 'Schedule'}>
       <ScheduleTabs schedule={schedule} />
     </PageSection>
   )

@@ -1,4 +1,9 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
+import theme from 'tailwindcss/defaultTheme'
 
 import type { Event } from '@/types/eventType'
 
@@ -12,11 +17,33 @@ type ScheduleTabsProps = {
   schedule: Event['schedule']
 }
 
+const { screens } = theme
+
 export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
+  const tabGroupRef = useRef<HTMLDivElement>(null)
+  const hasMounted = useRef(false)
+
   const validDays = schedule!.days.filter((day) => day.events.length > 0)
 
+  useEffect(() => {
+    hasMounted.current = true
+  }, [])
+
+  function scrollToTabGroup() {
+    if (hasMounted.current && isScreenBelowLg() && tabGroupRef.current) {
+      tabGroupRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
+  }
+
   return (
-    <TabGroup className="relative grid gap-6">
+    <TabGroup
+      ref={tabGroupRef}
+      className="relative grid gap-6"
+      onChange={scrollToTabGroup}
+    >
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
         {validDays.map((day) => (
           <Tab
@@ -64,4 +91,9 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
       </TabPanels>
     </TabGroup>
   )
+}
+
+function isScreenBelowLg() {
+  return window.matchMedia(`(max-width: ${parseInt(screens.md, 10) - 1}px)`)
+    .matches
 }
