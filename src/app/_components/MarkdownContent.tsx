@@ -4,8 +4,6 @@ import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type MarkdownContentProps = {
@@ -22,15 +20,12 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
         img: ({ src, alt }) => (
           <Image
             priority
-            src={src || graphicsData.imageFallback.data}
+            quality={100}
+            src={src!}
             width={800}
             height={450}
             sizes={buildImageSizeProp({ startSize: '100vw', md: '660px' })}
-            alt={
-              alt !== undefined && alt !== null
-                ? alt
-                : graphicsData.imageFallback.alt
-            }
+            alt={alt!}
           />
         ),
       }}

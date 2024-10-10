@@ -64,7 +64,7 @@ export default function EventEntry({ params }: EventProps) {
           metaData={getEventMetaData(data)}
           cta={buildCtaArray({ externalLink, lumaCalendarLink })}
           image={{
-            ...image,
+            ...(image || graphicsData.imageFallback.data),
             alt: '',
           }}
         />

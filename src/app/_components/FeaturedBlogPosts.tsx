@@ -49,7 +49,7 @@ export function FeaturedBlogPosts() {
                 text: 'Learn More',
               }}
               image={{
-                ...image,
+                ...(image || graphicsData.imageFallback.data),
                 alt: '',
                 sizes: buildImageSizeProp({
                   startSize: '100vw',

@@ -2,9 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 
 import { clsx } from 'clsx'
 
-import type { StaticImageProps } from '@/types/sharedProps/imageType'
-
-import { graphicsData } from '@/data/graphicsData'
+import type { StaticImageProps } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -26,7 +24,7 @@ type TitleProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  image?: StaticImageProps | Partial<ImageProps>
+  image: StaticImageProps | ImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -72,40 +70,35 @@ PageHeader.Title = function Title({ children }: TitleProps) {
 PageHeader.Image = function PageHeaderImage({
   image,
 }: Pick<PageHeaderProps, 'image'>) {
-  const isDynamicImage = 'src' in image
   const isStaticImage = 'data' in image
-
-  if (!isDynamicImage && !isStaticImage) return null
-
   const commonProps = {
+    alt: image.alt,
     priority: true,
     quality: 100,
     sizes: buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
-    className: 'h-full w-full rounded-lg border border-brand-100',
+    className: 'rounded-lg border border-brand-100',
   }
 
-  function getImageProps() {
-    if (isStaticImage) {
-      return {
-        src: image.data,
-        alt: image.alt,
-      }
-    }
-
-    return {
-      src: image?.src || graphicsData.imageFallback.data.src,
-      alt:
-        image?.alt !== undefined && image?.alt !== null
-          ? image.alt
-          : graphicsData.imageFallback.alt,
-      width: 490,
-      height: 275,
-    }
+  if (isStaticImage) {
+    return (
+      <Image
+        {...commonProps}
+        className={clsx(commonProps.className, 'aspect-video')}
+        src={image.data}
+        alt={commonProps.alt}
+      />
+    )
   }
 
   return (
-    <div className={clsx('relative', 'aspect-video')}>
-      <Image {...commonProps} {...getImageProps()} alt={getImageProps().alt} />
+    <div className="relative aspect-video">
+      <Image
+        fill
+        {...commonProps}
+        className={clsx(commonProps.className, 'h-full w-full')}
+        src={image.src}
+        alt={commonProps.alt}
+      />
     </div>
   )
 }

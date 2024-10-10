@@ -118,7 +118,7 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description}
         metaData={getEventMetaData(featuredEvent)}
         image={{
-          ...featuredEvent.image,
+          ...(featuredEvent.image || graphicsData.imageFallback.data),
           alt: '',
         }}
         cta={{
@@ -205,7 +205,7 @@ export default function Events({ searchParams }: Props) {
                           textIsClamped={true}
                           tagLabel={tagLabel}
                           image={{
-                            ...image,
+                            ...(image || graphicsData.imageFallback.data),
                             alt: '',
 
                             priority: isFirstTwoImages,

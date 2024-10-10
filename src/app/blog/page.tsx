@@ -114,7 +114,7 @@ export default function Blog({ searchParams }: Props) {
         description={featuredPost.description}
         metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
-          ...featuredPost.image,
+          ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',
         }}
         cta={{
@@ -210,7 +210,7 @@ export default function Blog({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                           image={{
-                            ...image,
+                            ...(image || graphicsData.imageFallback.data),
                             alt: '',
                             priority: isFirstTwoImages,
                             sizes: buildImageSizeProp({

@@ -2,14 +2,12 @@ import Image from 'next/image'
 
 import type { ImageProps } from '@/types/imageType'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { type HeadingProps, Heading } from '@/components/Heading'
 
 type ArticleHeaderProps = {
-  image?: ImageProps
+  image: ImageProps
   children?: React.ReactNode
 }
 
@@ -25,8 +23,9 @@ export function ArticleHeader({ image, children }: ArticleHeaderProps) {
         <Image
           fill
           priority
-          src={image?.src || graphicsData.imageFallback.data.src}
-          alt={!image?.src ? graphicsData.imageFallback.alt : image.alt || ''}
+          quality={100}
+          src={image.src}
+          alt={image.alt}
           className="rounded-lg object-cover"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
         />

@@ -97,15 +97,18 @@ export default function About() {
                   as="div"
                   title={title}
                   description={description}
-                  image={{
-                    ...image,
-                    sizes: buildImageSizeProp({
-                      startSize: '100vw',
-                      sm: '710px',
-                      md: '980px',
-                      lg: '480px',
-                    }),
-                  }}
+                  image={
+                    image && {
+                      ...(image || graphicsData.imageFallback.data),
+                      alt: '',
+                      sizes: buildImageSizeProp({
+                        startSize: '100vw',
+                        sm: '710px',
+                        md: '980px',
+                        lg: '480px',
+                      }),
+                    }
+                  }
                   cta={{
                     href: link,
                     text: 'View Report',

@@ -6,8 +6,8 @@ published-on: 2024-10-01T17:02:00.000Z
 category: news
 description: "Check out the latest updates about what the Filecoin Foundation
   has been up to."
-# image:
-#   src: /assets/images/0215-ff-19-.webp
+image:
+  src: /assets/images/0215-ff-19-.webp
 seo:
   title: "Fresh From FF: October, 2024"
   description: Filecoin Foundation teams up with Aethir, the Filecoin Ecosystem

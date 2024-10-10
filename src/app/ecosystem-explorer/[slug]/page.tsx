@@ -78,7 +78,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             fill
             priority
             src={image?.src || graphicsData.imageFallback.data.src}
-            alt={!image?.src ? graphicsData.imageFallback.alt : ''}
+            alt={''}
             className={clsx(
               image?.src && 'rounded-lg',
               'object-contain object-left-bottom',

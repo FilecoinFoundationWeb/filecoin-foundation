@@ -7,8 +7,6 @@ import theme from 'tailwindcss/defaultTheme'
 import { type CTAProps } from '@/types/ctaType'
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { isExternalLink } from '@/utils/linkUtils'
 
@@ -19,7 +17,7 @@ import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
 
-type CardImageProps = (StaticImageProps | Partial<ImageProps>) & {
+type CardImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
   padding?: boolean
   priority?: boolean
@@ -75,7 +73,7 @@ export function Card({
         borderStyles[borderColor],
       )}
     >
-      <Card.Image image={image} />
+      {image && <Card.Image image={image} />}
       <div className="flex flex-col gap-3 p-4">
         <Card.MetaAndTags tagLabel={tagLabel} metaData={metaData} />
         <Card.Title title={title} />
@@ -92,51 +90,43 @@ export function Card({
   )
 }
 
-Card.Image = function ImageComponent({ image }: Pick<CardProps, 'image'>) {
-  const isDynamicImage = 'src' in image
+Card.Image = function ImageComponent({ image }: { image: CardImageProps }) {
   const isStaticImage = 'data' in image
 
   const commonProps = {
-    priority: image?.priority || true,
+    alt: image.alt,
+    priority: image.priority,
     quality: 100,
     sizes:
-      image?.sizes || buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
+      image.sizes || buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
     className: clsx(
       'rounded-lg px-1 pt-1',
-      image?.objectFit === 'cover' && 'object-cover',
-      image?.objectFit === 'contain' && 'object-contain',
-      image?.padding && isDynamicImage && 'px-6 pt-4',
+      image.objectFit === 'cover' && 'object-cover',
+      image.objectFit === 'contain' && 'object-contain',
+      image.padding && 'px-6 pt-4',
     ),
   }
 
-  function getImageProps() {
-    if (isStaticImage) {
-      return {
-        src: image.data,
-        alt: image.alt,
-      }
-    }
-
-    if (isDynamicImage) {
-      return {
-        fill: true,
-        src: image?.src || graphicsData.imageFallback.data.src,
-        alt:
-          image?.alt !== undefined && image?.alt !== null
-            ? image.alt
-            : graphicsData.imageFallback.alt,
-      }
-    }
-
-    return {
-      src: graphicsData.imageFallback.data,
-      alt: graphicsData.imageFallback.alt,
-    }
+  if (isStaticImage) {
+    return (
+      <Image
+        {...commonProps}
+        className={clsx(commonProps.className, 'aspect-video')}
+        src={image.data}
+        alt={commonProps.alt}
+      />
+    )
   }
 
   return (
     <div className="relative aspect-video">
-      <Image {...commonProps} {...getImageProps()} alt={getImageProps().alt} />
+      <Image
+        fill
+        {...commonProps}
+        className={clsx(commonProps.className, 'h-full w-full')}
+        src={image.src}
+        alt={commonProps.alt}
+      />
     </div>
   )
 }
