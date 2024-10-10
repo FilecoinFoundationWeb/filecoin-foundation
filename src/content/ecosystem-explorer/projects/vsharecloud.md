@@ -27,6 +27,8 @@ year-joined: 2024-04-05T14:14:29.953Z
 seo:
   title: VshareCloud
   description: VshareCloud offers decentralized storage solutions for digital data.
+email: encrypted::U2FsdGVkX1/SgKq2RNa3F0b3RtGj9CJUNrSazEHq9vrsmbzzc++SHrimTTpUxQxD
+full-name: encrypted::U2FsdGVkX1/qS71FFS7mIt8hPxj2JGv56UXzizkeYR0=
 ---
 
 VshareCloud is an innovative open-source distributed storage and computing platform, designed to offer an efficient, scalable, and cost-effective solution for the big data and cloud computing sectors. Leveraging advanced IPFS distributed technology, VshareCloud can seamlessly operate across a variety of hardware and network environments, supporting a wide range of application scenarios from small businesses to large data centers. Through in-depth research on IPFS and unique data management and processing mechanisms, VshareCloud optimizes data storage, access, and computation processes, thereby enhancing system performance, reducing latency, and ensuring data security and integrity.We are also committed to developing more Filecoin/IPFS applications to help Filecoin/IPFS technology better integrate into people's lives.

@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Chainstack
   description: Chainstack provides blockchain infrastructure and development tools.
+email: encrypted::U2FsdGVkX19FdYxtIAXza4rObxyDiDeMfSaRtvVl+I6PIXLRps2UyuSnSSMWG8DQ
+full-name: encrypted::U2FsdGVkX1/q8XIL64Ua+NUTUVrDPHd6uv8IU6yPnVs=
 ---
 
 Chainstack offers managed blockchain services making it simple to launch and scale decentralized networks and applications.

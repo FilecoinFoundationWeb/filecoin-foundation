@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: LedgerMail
   description: LedgerMail provides decentralized email solutions for secure communication.
+email: encrypted::U2FsdGVkX18iOadodUmQTwBo3polIk4GmSp32kDDwIAPqQBZck15sx89IPPNzH/W
+full-name: encrypted::U2FsdGVkX19TrcL6isZ+zuUzL42c8EMZkHTm5aqnrkg=
 ---
 
 LedgerMail is one of the flagship products of the LedgerFi Ecosystem, an IT solutions company focused on blockchain-enabled decentralized applications ecosystem. LedgerMail is an immutable, private, secure, customizable, and cost-effective email service leveraging the power of blockchain technology.

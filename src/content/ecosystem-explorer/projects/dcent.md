@@ -24,6 +24,8 @@ subcategories:
 seo:
   title: DCent
   description: DCent provides decentralized identity and authentication solutions.
+email: encrypted::U2FsdGVkX1+xUerzS2FpwpYZDkRzAYaW4/6tW1yG3aVINfi+N/GunQ9qFOsKa7ZC
+full-name: encrypted::U2FsdGVkX19LxxmGL9j/G1ZtdNIyo28D0myhBBBoD7c=
 ---
 
 DCENT is a Filecoin storage provider that specializes in onboarding data to the Filecoin network. DCENT operates in a way that is efficient, profitable, and environmentally friendly. DCENT is heavily invested in hardware and infrastructure. The company both operates and maintains its own data center and is co-located in shared data center space.

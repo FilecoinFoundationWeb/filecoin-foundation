@@ -23,6 +23,8 @@ seo:
   description:
     Third Storage provides decentralized storage solutions for digital
     data.
+email: encrypted::U2FsdGVkX19UUfJT8Y5D0BXussalUOikq3rDnJ0FW6NGVs8Bk9FLe8jOl5kw6QUi
+full-name: encrypted::U2FsdGVkX19p/AXqDytV5iMPKyEwqGCHu+AcEo6Xihg=
 ---
 
 With Third Storage, our mission is to evangelize the adoption of web3 native storage solutions by making it easy for developers to get started. We are strong advocates of data sovereignty and therefore, we provide a dev tooling layer for developers to build web3 dapps without caring about the jargons.

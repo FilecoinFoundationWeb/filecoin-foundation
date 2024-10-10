@@ -19,6 +19,8 @@ seo:
   description:
     HashMix offers decentralized finance solutions for cross-chain asset
     management.
+email: encrypted::U2FsdGVkX18Q1p+7p1WeFd605Qh8/5oAV3+7+fMAh7i2+Or8+wCgq1MqxEHK5mDs
+full-name: encrypted::U2FsdGVkX19ErwjzOTW+m0oX961GiihmKIaupIjFWZM=
 ---
 
 HashMix FIL Liquid Staking Protocol is a fully decentralized FIL liquid staking and lending protocol built on FVM. HashMix empowers token holders to earn stable returns without any lock-up period and offers storage providers permissionless pledges and flexible repayment plans. By connecting lenders and storage providers, HashMix strengthens the Filecoin network and improves capital efficiency as a vital component of the Filecoin DeFi ecosystem.

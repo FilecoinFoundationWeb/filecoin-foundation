@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Fission
   description: Fission provides decentralized storage and application hosting solutions.
+email: encrypted::U2FsdGVkX1+X69CsepI1J7d6qauqnoUBbqIFNPpq9AbpaxDpwiz2lGjqnSugDH5i
+full-name: encrypted::U2FsdGVkX1+ufPGmpW7IizFe4XEifgJntaOGqdf7HB0=
 ---
 
 Fission builds open source protocols and managed services that empower developers to construct scalable and secure software applications focused on identity, data, and compute solutions. This includes long-term maintenance and support of core open-source tools like FilSnap, a MetaMask plugin, adding support for Filecoin native accounts and functionality.

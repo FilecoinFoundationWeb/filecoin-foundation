@@ -25,6 +25,8 @@ seo:
   description:
     Lighthouse provides decentralized storage solutions for personal and
     enterprise use.
+email: encrypted::U2FsdGVkX1+XQlJTVbdgaio9n3G+bUh0Jb/feGnZLnF9ATuOLPlv35VehGOmBIWR
+full-name: encrypted::U2FsdGVkX1+G3+mxVNZz8Za0r6tix2By8+KeVhaAc3g=
 ---
 
 Lighthouse provides perpetual storage on the Filecoin network, allowing users to store their files long-term at a fixed price. Lighthouse also provides encryption and access control to keep data safe.

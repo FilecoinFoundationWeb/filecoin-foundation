@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Corgi
   description: Corgi provides decentralized storage solutions for digital assets.
+email: encrypted::U2FsdGVkX1/d8gW0Rk+DXRqkr430QiMckgPA0WmNqsyGnVBsOw40QsXnEHbbM/Y/
+full-name: encrypted::U2FsdGVkX18b3wK+8h6ZjJGOB9AzOLCVmfIbZ2TcEys=
 ---
 
 Welcome to the world of CORGI, Inspired by the lovable corgi, our memecoin introduces a unique blend of humor and innovation to the Filecoin blockchain.

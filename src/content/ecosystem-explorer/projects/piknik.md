@@ -24,4 +24,6 @@ subcategories:
 seo:
   title: Piknik
   description: Piknik provides decentralized storage solutions for digital media.
+email: encrypted::U2FsdGVkX18LgQrzHxvVrDpXKmWR3z/HlwVCMavsbTPUAwf6sTd6CCQfLIYFToA6
+full-name: encrypted::U2FsdGVkX19mPGOKdsYEPoFX1TpYbv2mEEjQRrpgTYE=
 ---

@@ -20,6 +20,8 @@ subcategories:
 seo:
   title: Mosaia
   description: Mosaia offers decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX18GQJ4innHIUuUL1cTYRb8J+wP6wFuKhX8rSChNVRktj5ZcDVGY9lHb
+full-name: encrypted::U2FsdGVkX18qYCbssakLTKHzLmPp6HY+xmlT6n0a6Bs=
 ---
 
 Trusted LLM to book web3 service providers 10x faster. Enable payment with service providers through smart contract, leveraging Filecoin Virtual Machine.

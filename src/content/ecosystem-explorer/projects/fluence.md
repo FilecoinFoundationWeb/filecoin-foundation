@@ -21,6 +21,8 @@ subcategories:
 seo:
   title: Fluence
   description: Fluence offers decentralized computing solutions for peer-to-peer applications.
+email: encrypted::U2FsdGVkX1/ciPJHiovcbSZdh2/Yz592T0WGVTWvf1HF34AhUfU+JLh5xfT43Wnj
+full-name: encrypted::U2FsdGVkX1/17/Yh5rUjXOVSUxR/qvnOkkHuvjbyMtI=
 ---
 
 Fluence is a decentralized serverless computing platform. Using Fluence, developers can build, host, and deploy peer-to-peer applications to a network of compute providers, where providers can range from professional data centers to home computers. Fluence facilitates building decentralized applications like P2P apps, decentralized protocols, community-run applications, computations on decentralized data, cloud-native computing, and blockchain infrastructure.

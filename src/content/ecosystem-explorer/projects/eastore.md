@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: EAStore
   description: EAStore provides decentralized storage solutions for enterprise applications.
+email: encrypted::U2FsdGVkX19eXg63RFCHAynLV95x69mUp8GnQCJRa5WLG7p0qY7wSWDt1rREPDyZ
+full-name: encrypted::U2FsdGVkX1/g3YwfBAf7V0meGE/ifvrabefZjwrvZcU=
 ---
 
 Eastore, a decentralized storage marketplace and full-sector bounty rewarder. Bringing filecoin deals to your fingertips through Eastore. This is made using Filecoin Virtual Machine and uses its miners to store and retrieve data, completely decentralized.

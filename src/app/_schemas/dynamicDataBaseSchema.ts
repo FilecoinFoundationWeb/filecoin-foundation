@@ -11,4 +11,15 @@ export const DynamicBaseDataSchema = z.object({
   seo: SeoMetadataSchema,
 })
 
+// Temporary schema duplication until all schemas are migrated to kebab-case to match the CMS
+export const BaseDataSchemaKebabCase = z
+  .object({
+    'created-on': z.coerce.date(),
+    'updated-on': z.coerce.date().optional(),
+    'published-on': z.coerce.date().optional(),
+    image: ImagePropsSchema.optional(),
+    seo: SeoMetadataSchema,
+  })
+  .strict()
+
 export type DynamicBaseData = z.infer<typeof DynamicBaseDataSchema>
