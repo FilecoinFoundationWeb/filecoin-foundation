@@ -71,24 +71,6 @@ schedule:
             modern, streamlined, composable toolkit for data preparation, hot
             retrieval, and Filecoin deal making.
           url: https://www.fil.org
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
     - events:
         - location: Lower Deck
           title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
@@ -120,7 +102,7 @@ schedule:
           start: 2024-11-07T12:00:00.000Z
           end: 2024-11-07T14:00:00.000Z
           url: https://www.fil.org
-      date: 2024-11-07T09:47:00.000Z
+      date: 2024-11-08T09:47:00.000Z
     - events:
         - location: Lower Deck
           title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
@@ -136,7 +118,7 @@ schedule:
           start: 2024-11-07T12:00:00.000Z
           end: 2024-11-07T14:00:00.000Z
           url: https://www.fil.org
-      date: 2024-11-07T09:47:00.000Z
+      date: 2024-11-09T09:47:00.000Z
     - events:
         - location: Lower Deck
           title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
@@ -152,7 +134,7 @@ schedule:
           start: 2024-11-07T12:00:00.000Z
           end: 2024-11-07T14:00:00.000Z
           url: https://www.fil.org
-      date: 2024-11-07T09:47:00.000Z
+      date: 2024-11-10T09:47:00.000Z
     - events:
         - location: Lower Deck
           title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
@@ -168,7 +150,7 @@ schedule:
           start: 2024-11-07T12:00:00.000Z
           end: 2024-11-07T14:00:00.000Z
           url: https://www.fil.org
-      date: 2024-11-07T09:47:00.000Z
+      date: 2024-11-11T09:47:00.000Z
     - events:
         - location: Lower Deck
           title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
@@ -184,8 +166,8 @@ schedule:
           start: 2024-11-07T12:00:00.000Z
           end: 2024-11-07T14:00:00.000Z
           url: https://www.fil.org
-      date: 2024-11-07T09:47:00.000Z
-  title: "Main Stage Schedule "
+      date: 2024-11-12T09:47:00.000Z
+  title: "Main Stage Schedule"
 speakers:
   - name: Stefaan Vervaet
     title: CEO
