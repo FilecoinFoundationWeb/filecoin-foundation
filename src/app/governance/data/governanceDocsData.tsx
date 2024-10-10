@@ -1,6 +1,6 @@
 import { ChatCircleDots, GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
-import type { CTAProps } from '@/types/sharedProps/ctaType'
+import type { CTAProps } from '@/types/ctaType'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
