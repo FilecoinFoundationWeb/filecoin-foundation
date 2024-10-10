@@ -5,7 +5,7 @@ import { createColumnHelper } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
 
-import { leaderboardData } from './leaderboard'
+import { leaderboardData } from '../data/leaderboard'
 
 type WhiteHat = (typeof leaderboardData)[number]
 

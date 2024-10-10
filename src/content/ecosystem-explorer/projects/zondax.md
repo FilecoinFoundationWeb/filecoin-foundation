@@ -24,6 +24,8 @@ seo:
   description:
     Zondax provides decentralized solutions for blockchain infrastructure
     and services.
+email: encrypted::U2FsdGVkX186/YNyq4MTvazXuFRsZ/hM5bNIYBq+C0RUiM+DNfPdal/LMKObj2M5
+full-name: encrypted::U2FsdGVkX18Rv1gOYZNwcH7tmLN1fB2QwcQIJW3cozI=
 ---
 
 Zondax is a blockchain service provider that delivers services and software solutions in the fields of security, data indexing, integration, and protocol engineering. Zondax’s contributions to the Filecoin ecosystem include Beryx API, Filecoin signing tools, Filecoin Ledger App, Assembly script SDK for FVM, Filecoin Gas, and more.

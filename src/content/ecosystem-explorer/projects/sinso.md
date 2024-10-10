@@ -26,6 +26,8 @@ seo:
   description:
     Sinso provides decentralized storage solutions for healthcare data
     management.
+email: encrypted::U2FsdGVkX18t8Ox+3zdf7faSNFboHQYdjw2F8zleSo4egBOL3uCk9z58/pzpFB7R
+full-name: encrypted::U2FsdGVkX19oHC+bk5P7PNSlM+azVQMF/N+Y6ehkEns=
 ---
 
 SINSO builds Web3 infrastructure simplifying decentralized hot data cache and data governance. As a Filecoin Layer2 infrastructure provider, SINO offers Filecoin developers the components and tools to build a Web3 application ecosystem. SINSO Getway is the distributed-cache secondary network based on Filecoin, built for Gamefi, virtual reality, augmented reality, and video streaming, as well as high-speed CDN and DAPP response.

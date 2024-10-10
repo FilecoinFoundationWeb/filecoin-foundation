@@ -26,6 +26,8 @@ subcategories:
 seo:
   title: Marlin Protocol
   description: Marlin Protocol offers decentralized network infrastructure solutions.
+email: encrypted::U2FsdGVkX19cvqpd6PMdbZoCQpEBR4hKGVCU9Il9D2x9MouX0WKzhJFkcLSp2Rpd
+full-name: encrypted::U2FsdGVkX1+JB5xQJNnUo6/hwiOGRxm4g8Uzbe86sqw=
 ---
 
 Traditional web hosting relies on centralized servers, creating potential vulnerabilities due to single points of failure. The InterPlanetary File System (IPFS), a peer-to-peer network for storing and accessing websites, offers a decentralized alternative. However, IPFS utilizes lengthy content hashes for data identification, hindering user experience.

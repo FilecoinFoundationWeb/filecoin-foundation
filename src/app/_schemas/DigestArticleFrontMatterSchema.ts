@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
-import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
-import { ImagePropsSchema } from '@/schemas/imagePropsSchema'
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
+import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 
 export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),

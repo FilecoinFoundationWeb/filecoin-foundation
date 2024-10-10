@@ -28,6 +28,8 @@ subcategories:
 seo:
   title: Banyan
   description: Banyan offers decentralized data management solutions for enterprises.
+email: encrypted::U2FsdGVkX1+aBk8bAf6fekov/9WaGvLz/5UNeNBce6ElFipZ0xkri1q1jiHzc6po
+full-name: encrypted::U2FsdGVkX1+/emHS5H5JyJtytspect2NInkGajToAJI=
 ---
 
 Banyan is making decentralized, content-addressed storage accessible for enterprise clients on the Filecoin network, with a focus on user-controlled privacy and verifiability. The company provides both hot and cold storage options for users with significant amounts of data, leveraging both Filecoin’s network of storage providers and its cryptographic proofs of storage to give users confidence in the continued security and longevity of their data.

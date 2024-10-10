@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Web3.Storage
   description: Web3.Storage provides decentralized storage solutions for web3 applications.
+email: encrypted::U2FsdGVkX19wPgEdr3NkCBu9nXZWlRzKaz5JV6XV2SyNhQc2D35WehvlPwT1RLQ2
+full-name: encrypted::U2FsdGVkX1+NhbJ2THSirApAikiAqrmZ0Doi9RHik/E=
 ---
 
 Web3.storage is a suite of APIs and services for developers and storage clients to interact with data that’s not physically stored. It natively uses decentralized data and identity protocols like IPFS, Filecoin, and UCAN that enable verifiable, data- and user-centric application architectures and workflows. All data is accessible via IPFS and Filecoin, with service authentication using decentralized identity.

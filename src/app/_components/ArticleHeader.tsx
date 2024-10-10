@@ -1,4 +1,4 @@
-import type { ImageProps } from '@/types/sharedProps/imageType'
+import type { ImageProps } from '@/types/imageType'
 
 import { graphicsData } from '@/data/graphicsData'
 

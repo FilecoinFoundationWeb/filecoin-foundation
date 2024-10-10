@@ -27,6 +27,8 @@ seo:
   description:
     Internet Development Studio Company provides decentralized solutions
     for web development.
+email: encrypted::U2FsdGVkX1+bKIQVPnQuaAut9ttJSGn7JyfWVgKxw06OxcNHlmNFI7fmlZLEo76R
+full-name: encrypted::U2FsdGVkX18bCv9U9Rrlh5b1DUKH7+yXSfWPMoKKY+I=
 ---
 
 Internet Development Studio is an engineering and design team based out of Seattle—WA, Boston—MA and New York—NY. We design, brand, market and code.

@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Filezilla
   description: Filezilla offers decentralized file storage and management solutions.
+email: encrypted::U2FsdGVkX1+g8an3PSXetYjodZ0459ma9Rzwz1HjJ8b9kGVLA4/MVu50XOx8X0UG
+full-name: encrypted::U2FsdGVkX18wwfhu3wGAYT8eDq+daob2Jsr59JcbLyc=
 ---
 
 The process of transferring $FIL coins to and from the File blockchain can be complex, deterring potential investors. They prefer a straightforward process. Establishing a bridge between Solana and Filecoin would simplify this process, making it more appealing for investors to join the FileCoin chain.

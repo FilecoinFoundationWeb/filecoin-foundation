@@ -1,7 +1,7 @@
 import {
   AllocatorFileListMetaDataBaseSchema,
   type AllocatorFileMetaDataBase,
-} from '../schemas/allocatorSchema'
+} from '../schemas/AllocatorSchema'
 
 const GITHUB_ALLOCATORS_REPO =
   'https://api.github.com/repos/filecoin-project/Allocator-Registry/contents/Allocators'

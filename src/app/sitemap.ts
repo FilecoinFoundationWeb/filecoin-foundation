@@ -8,7 +8,7 @@ import { getDigestArticlesData } from '@/utils/getDigestArticleData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getEventsData } from '@/utils/getEventData'
 
-import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
+import type { DynamicBaseData } from '@/schemas/DynamicDataBaseSchema'
 
 type GenericEntryData = Pick<DynamicBaseData, 'updatedOn'> & { slug: string }
 

@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import { type CTAProps } from '@/types/sharedProps/ctaType'
+import type { CTAProps } from '@/types/ctaType'
 
 import { Card } from '@/components/Card'
 import { type HeadingProps, Heading } from '@/components/Heading'

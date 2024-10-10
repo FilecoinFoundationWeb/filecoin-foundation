@@ -24,6 +24,8 @@ seo:
   description:
     Glif offers decentralized tools and infrastructure for the Filecoin
     network.
+email: encrypted::U2FsdGVkX18Nt5MMIL+OM70La7f4/IFsqgXIzxSSvqmhZVLTmvH7iB9lfNI1HyYH
+full-name: encrypted::U2FsdGVkX181KAtKo4gOMYHM+GF2LUPu6Eg08LUh3H8=
 ---
 
 In March 2023, GLIF began its rollout of the first Filecoin DeFi protocol to alleviate the capital inefficiencies on Filecoin between token holders and Storage Providers. Since then GLIF has become one of the fastest growing DeFi protocols in all of crypto, receiving venture investment from Multicoin Capital, Protocol Labs, Fintech Collective, Fenbushi Capital, and several others and amassing more than $100M USD in TVL within 6 months of launching. GLIF is the most popular DeFi protocol built on Filecoin.

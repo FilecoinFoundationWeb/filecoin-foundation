@@ -20,6 +20,8 @@ subcategories:
 seo:
   title: CIDGravity
   description: CIDGravity offers decentralized solutions for content addressable storage.
+email: encrypted::U2FsdGVkX19ZRigfAdHG/gks5UW+pCjDvys3lhZxo2yMbsRKQn2IOUqKFX7Q+iQf
+full-name: encrypted::U2FsdGVkX19+uTk/EBZyR8zpmJmDXbcZ9S8QllRebQI=
 ---
 
 A pricing and client management tool for Filecoin storage providers.

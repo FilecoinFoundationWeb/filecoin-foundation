@@ -21,6 +21,8 @@ subcategories:
 seo:
   title: NTENT
   description: NTENT offers decentralized solutions for digital art and collectibles.
+email: encrypted::U2FsdGVkX19YqEdzETvLgLKZftCusT0mK/8q3cYc7plUad71QQl2uiPqFn/sWkrE
+full-name: encrypted::U2FsdGVkX1+Sh5zhlFBzusuEvNOeD6oZOxD4m8ivz+A=
 ---
 
 ntent is a digital art and immersive experience collective and smart contract platform for generative and dynamic art. ntent’s mission is to empower artists and collectors to push the limits of art production technologies inclusively while positively impacting the environment. ntent curates collections and live art experiences that use advanced production technologies, and audience participation to create digital art. Ntent is hosted on IPFS to enable their art asset deployment workflows and ensure the longevity of their works, and they are building on Filecoin Virtual Machine.

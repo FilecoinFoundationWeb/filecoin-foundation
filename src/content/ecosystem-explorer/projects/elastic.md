@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: Elastic
   description: Elastic provides decentralized data storage and management solutions.
+email: encrypted::U2FsdGVkX1+evrKdHTJLD6B99t9rY0aw0xk+BzR1V5+EOANxp58ZkyOE2kwPE956
+full-name: encrypted::U2FsdGVkX1+v6XGh6Cbu/gsbAYzs0hXJcYC2MYU93pk=
 ---
 
 Elastic is a platform and search engine for renting and searching NFTs by their benefits provided to the owner.

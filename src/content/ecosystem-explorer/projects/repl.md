@@ -25,6 +25,8 @@ seo:
   description:
     Repl provides decentralized solutions for data replication and storage
     management.
+email: encrypted::U2FsdGVkX18ipIejpZGEzt72vG0IVZJxZcx4nIDmIwc9Q30ZDf2FfaWFBdMSnO1n
+full-name: encrypted::U2FsdGVkX19UH8YsCaaIq+pKmJ+dROaqh2biPNK6FTU=
 ---
 
 Repl tokenizes pledged FIL in the Filecoin Protocol and enables liquidity and extended utilities for these pledged assets.

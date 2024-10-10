@@ -22,6 +22,8 @@ year-joined: 2024-04-24T19:06:44.078Z
 seo:
   title: Reppo
   description: Reppo offers decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX1+vbZTfSrIjxWGTBcFnO449/B0+E3IqDJfPenTlZZJr0GoNKnJ6BCA9
+full-name: encrypted::U2FsdGVkX1/j1FtObc+tG5Hkmc02Vh3nItmF/du+6hE=
 ---
 
 Reppo is building a sovereign AI modelling network to address DePIN verification and broadly assess the quality of crypto networks. The Reppo chain acts as the execution layer to incentivize domain-specific risk & reputation models to be built and enable a new class of applications at the intersection of crypto and AI.
