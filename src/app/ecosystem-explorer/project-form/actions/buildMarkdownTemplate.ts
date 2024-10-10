@@ -1,5 +1,7 @@
 'use server'
 
+import type { EcosystemProject } from '@/types/ecosystemProjectType'
+
 import { encrypt } from '@/utils/encryption'
 
 import type { FormattedFormData } from '../utils/formatFormData'
@@ -15,12 +17,14 @@ type MarkdownTemplateParams = {
   formattedData: FormattedFormData
   imagePath: string
   timestamps: Timestamps
+  tags?: EcosystemProject['tags']
 }
 
 export async function buildMarkdownTemplate({
   formattedData,
   imagePath,
   timestamps,
+  tags,
 }: MarkdownTemplateParams) {
   return getEcosystemMarkdownTemplate({
     encryptedEmail: encrypt(formattedData.email),
@@ -40,5 +44,6 @@ export async function buildMarkdownTemplate({
     createdOn: timestamps.createdOn.toISOString(),
     updatedOn: timestamps.updatedOn.toISOString(),
     publishedOn: timestamps.publishedOn.toISOString(),
+    tags,
   })
 }

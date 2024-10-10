@@ -1,3 +1,5 @@
+import type { EcosystemProject } from '@/types/ecosystemProjectType'
+
 // Could re-use the value coming from the Zod schema once merged
 export type MarkdownTemplateParams = {
   encryptedName: string
@@ -17,6 +19,7 @@ export type MarkdownTemplateParams = {
   createdOn: string
   updatedOn: string
   publishedOn: string
+  tags: EcosystemProject['tags']
 }
 
 type OptionalValues = {
@@ -37,6 +40,7 @@ image:
   ${renderValue('src', data.imagePath)}
 ${renderValue('category', data.category)}
 ${renderArray('subcategories', data.subcategories)}
+${renderArray('tags', data.tags || [])}
 ${renderValue('description', data.shortDescription)}
 ${renderValue('website', data.websiteUrl)}
 ${renderArray('tech', data.tech)}
@@ -53,8 +57,6 @@ seo:
 
 ${data.longDescription.trim()}
 `
-
-  // ${renderArray('tags', data.subcategories)}
 }
 
 function renderOptionalValues(values: OptionalValues) {

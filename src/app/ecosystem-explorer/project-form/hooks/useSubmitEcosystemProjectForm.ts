@@ -31,9 +31,12 @@ export function useSubmitEcosystemProjectForm() {
 
       const { publicAssetsFolder, assetsFolder } = await getFolderPaths()
 
+      const assetPath = `${assetsFolder}/${slug}.${formattedLogo.format}`
+      const publicAssetPath = `${publicAssetsFolder}/${slug}.${formattedLogo.format}`
+
       const markdownTemplate = await buildMarkdownTemplate({
         formattedData,
-        imagePath: `${assetsFolder}/${slug}.${formattedLogo.format}`,
+        imagePath: assetPath,
         timestamps: {
           createdOn: nowTimestamp,
           updatedOn: nowTimestamp,
@@ -44,10 +47,7 @@ export function useSubmitEcosystemProjectForm() {
       const pullRequest = await submitProjectToGithub({
         slug,
         markdownTemplate,
-        logo: {
-          base64: formattedLogo.base64,
-          path: `${publicAssetsFolder}/${slug}.${formattedLogo.format}`,
-        },
+        logo: { base64: formattedLogo.base64, path: publicAssetPath },
       })
 
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
@@ -67,37 +67,46 @@ export function useSubmitEcosystemProjectForm() {
     formState: FormState<EcosystemProjectFormData>,
   ) {
     const projectNameHasChanged = formState.dirtyFields.projectName
-    const imageHasChanged = formState.dirtyFields.files
 
     if (projectNameHasChanged) {
       return create(formData)
     }
 
     const { files, ...formDataWithoutFiles } = formData
+    const nowTimestamp = new Date()
+
     const slug = slugify(formData.projectName, { lower: true, strict: true })
 
     try {
-      const { image, createdOn, publishedOn } = await getProjectData(slug)
-
+      const { image, createdOn, publishedOn, tags } = await getProjectData(slug)
       const { assetsFolder, publicAssetsFolder } = await getFolderPaths()
 
       const formattedLogo = await formatLogo(files)
       const formattedData = formatFormData(formDataWithoutFiles)
 
+      const logoHasChanged = formattedLogo.name !== image?.src
+      const useDefaultAssetPath = logoHasChanged || !image
+
+      const assetPath = `${assetsFolder}/${slug}.${formattedLogo.format}`
+      const publicAssetPath = `${publicAssetsFolder}/${slug}.${formattedLogo.format}`
+
       const markdownTemplate = await buildMarkdownTemplate({
         formattedData,
-        imagePath:
-          image?.src || `${assetsFolder}/${slug}.${formattedLogo.format}`,
-        timestamps: { updatedOn: new Date(), createdOn, publishedOn },
+        imagePath: useDefaultAssetPath ? assetPath : image.src,
+        tags,
+        timestamps: {
+          updatedOn: nowTimestamp,
+          createdOn,
+          publishedOn: publishedOn || nowTimestamp,
+        },
       })
 
       const pullRequest = await submitProjectToGithub({
         slug,
         markdownTemplate,
-        logo: imageHasChanged && {
-          base64: formattedLogo.base64,
-          path: `${publicAssetsFolder}/${slug}.${formattedLogo.format}`,
-        },
+        logo: logoHasChanged
+          ? { base64: formattedLogo.base64, path: publicAssetPath }
+          : undefined,
       })
 
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
