@@ -9,7 +9,7 @@ import {
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { Allocator } from '../schemas/AllocatorSchema'
+import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTableColumns } from './AllocatorsTableColumns'
 
