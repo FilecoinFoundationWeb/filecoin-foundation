@@ -24,7 +24,7 @@ import {
   NETWORK_USE_CASE_CHARACTER_LIMIT,
 } from '../constants'
 import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
-import { EcosystemProjectFormSchema } from '../schema/form'
+import { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 

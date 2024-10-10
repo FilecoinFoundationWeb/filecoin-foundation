@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
-import { ImagePropsSchema } from '@/schemas/imagePropsSchema'
-import { SeoMetadataSchema } from '@/schemas/seoMetadataSchema'
+import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
+import { SeoMetadataSchema } from '@/schemas/SeoMetadataSchema'
 
 export const DynamicBaseDataSchema = z.object({
   createdOn: z.coerce.date(),

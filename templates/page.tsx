@@ -1,23 +1,26 @@
-`import { CTASection } from '@/components/CTASection'
+;`import { PATHS } from '@/constants/paths'
+
+import { attributes } from '@/content/pages/__PAGE_NAME__.md'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+
+import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { createMetadata } from '@/utils/createMetadata'
-
-import { attributes } from '@/content/pages/__PAGE_NAME__.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.imageFallback.data.src,
+  },
   path: PATHS.__PATH_NAME__.path,
 })
 

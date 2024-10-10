@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { BaseDataSchemaKebabCase } from '@/schemas/dynamicDataBaseSchema'
+import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
 
 import { CategorySchema, SubcategorySchema } from './CategorySchemas'
 

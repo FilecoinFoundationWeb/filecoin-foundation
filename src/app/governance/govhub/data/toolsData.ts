@@ -1,5 +1,5 @@
-import type { CTAProps } from '@/types/sharedProps/ctaType'
-import type { StaticImageProps } from '@/types/sharedProps/imageType'
+import type { CTAProps } from '@/types/ctaType'
+import type { StaticImageProps } from '@/types/imageType'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 

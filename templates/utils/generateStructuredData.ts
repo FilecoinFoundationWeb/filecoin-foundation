@@ -1,10 +1,11 @@
 ;`import type { WebPage, WithContext } from 'schema-dts'
 
-import type { SeoMetadata } from '@/schemas/seoMetadataSchema'
+import { PATHS } from '@/constants/paths'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-import { PATHS } from '@/constants/paths'
+import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
+
 
 export function generateStructuredData(seo: SeoMetadata): WithContext<WebPage> {
   return generateWebPageStructuredData({

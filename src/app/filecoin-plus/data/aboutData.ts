@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/types/sharedProps/imageType'
+import type { StaticImageProps } from '@/types/imageType'
 
 import { graphicsData } from '@/data/graphicsData'
 

@@ -2,7 +2,7 @@ import type { Event } from '@/types/eventType'
 
 import { DEFAULT_SORT_OPTION, SORT_TYPES } from '@/constants/sortConstants'
 
-import type { DynamicBaseData } from '@/schemas/dynamicDataBaseSchema'
+import type { DynamicBaseData } from '@/schemas/DynamicDataBaseSchema'
 
 type BaseSortType = typeof SORT_TYPES
 

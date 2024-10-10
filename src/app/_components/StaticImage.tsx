@@ -2,7 +2,7 @@ import Image, { type StaticImageData, type ImageProps } from 'next/image'
 
 import { clsx } from 'clsx'
 
-import type { ImageObjectFit } from '@/types/sharedProps/imageType'
+import type { ImageObjectFit } from '@/types/imageType'
 
 export type StaticImageProps = {
   data: StaticImageData
