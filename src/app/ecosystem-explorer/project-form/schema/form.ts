@@ -90,6 +90,17 @@ export const EcosystemProjectFormSchema = z.object({
     .or(EmptyStringSchema),
 })
 
+export type EcosystemProjectFormData = z.infer<
+  typeof EcosystemProjectFormSchema
+>
+
+export type EcosystemProjectFormDataWithoutFiles = Omit<
+  EcosystemProjectFormData,
+  'files'
+>
+
+export type EcosystemProjectFormFiles = EcosystemProjectFormData['files']
+
 function validateYoutubeUrlFormat(url: string) {
   return url.includes(YOUTUBE_BASE_URL)
 }

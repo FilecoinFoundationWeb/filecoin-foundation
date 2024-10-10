@@ -1,64 +1,123 @@
-import * as Sentry from '@sentry/nextjs'
+'use client'
 
-import { createDateFromYear } from '@/utils/dateUtils'
+import * as Sentry from '@sentry/nextjs'
+import type { FormState } from 'react-hook-form'
+import slugify from 'slugify'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { type EcosystemProjectFormData } from '../components/EcosystemProjectForm'
-import { YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL } from '../constants'
-import { submitProjectToGithub } from '../services/github'
-import {
-  convertToBase64,
-  getFileFormat,
-} from '../services/github/utils/fileUtils'
+import { buildMarkdownTemplate } from '../actions/buildMarkdownTemplate'
+import { getFolderPaths } from '../actions/getFolderPaths'
+import { getProjectData } from '../actions/getProjectData'
+import { submitProjectToGithub } from '../actions/submitProjectToGithub'
+import type { EcosystemProjectFormData } from '../schema/form'
+import { formatLogo } from '../utils/fileUtils'
+import { formatFormData } from '../utils/formatFormData'
 
 export function useSubmitEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
 
-  return async function submit(data: EcosystemProjectFormData) {
-    const logo = data.files[0]
-    const yearJoined = Number(data.yearJoined.name)
+  return { create, update }
+
+  async function create(formData: EcosystemProjectFormData) {
+    const { files, ...formDataWithoutFiles } = formData
+    const nowTimestamp = new Date()
+
+    const slug = slugify(formData.projectName, { lower: true, strict: true })
 
     try {
-      const pullRequest = await submitProjectToGithub({
-        name: data.name,
-        email: data.email,
-        projectName: data.projectName,
-        logo: {
-          base64: await convertToBase64(logo),
-          format: getFileFormat(logo.name),
+      const formattedLogo = await formatLogo(files)
+      const formattedData = formatFormData(formDataWithoutFiles)
+
+      const { publicAssetsFolder, assetsFolder } = await getFolderPaths()
+
+      const assetPath = `${assetsFolder}/${slug}.${formattedLogo.format}`
+      const publicAssetPath = `${publicAssetsFolder}/${slug}.${formattedLogo.format}`
+
+      const markdownTemplate = await buildMarkdownTemplate({
+        formattedData,
+        imagePath: assetPath,
+        timestamps: {
+          createdOn: nowTimestamp,
+          updatedOn: nowTimestamp,
+          publishedOn: nowTimestamp,
         },
-        category: data.category.id,
-        subcategories: [data.topic.id],
-        tech: keepTruthyKeysInArray(data.tech),
-        shortDescription: data.briefSummary,
-        longDescription: data.networkUseCase,
-        yearJoinedISO: createDateFromYear(yearJoined).toISOString(),
-        websiteUrl: data.websiteUrl,
-        youtubeEmbedUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
-        githubUrl: data.githubUrl,
-        xUrl: data.xUrl,
-        timestampISO: new Date().toISOString(),
       })
+
+      const pullRequest = await submitProjectToGithub({
+        slug,
+        markdownTemplate,
+        logo: { base64: formattedLogo.base64, path: publicAssetPath },
+      })
+
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
     } catch (error) {
-      console.error('Error in submitProjectToGithub:', error)
+      console.error('useSubmitEcosystemProjectForm - create', error)
       Sentry.captureException(error)
       updateSearchParams({
         status: 'error',
         message:
-          "We couldn't submit your project. Please try again or email us at info@fil.org",
+          "We couldn't submit your information. Please try again or email us at info@fil.org",
       })
     }
   }
-}
 
-function keepTruthyKeysInArray(object: Record<string, boolean>) {
-  const entries = Object.entries(object)
-  const truthyValueEntries = entries.filter(([, value]) => Boolean(value))
-  return truthyValueEntries.map(([key]) => key)
-}
+  async function update(
+    formData: EcosystemProjectFormData,
+    formState: FormState<EcosystemProjectFormData>,
+  ) {
+    const projectNameHasChanged = formState.dirtyFields.projectName
 
-function formatYoutubeEmbedUrl(url?: string) {
-  return url?.replace(YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL)
+    if (projectNameHasChanged) {
+      return create(formData)
+    }
+
+    const { files, ...formDataWithoutFiles } = formData
+    const nowTimestamp = new Date()
+
+    const slug = slugify(formData.projectName, { lower: true, strict: true })
+
+    try {
+      const { image, createdOn, publishedOn, tags } = await getProjectData(slug)
+      const { assetsFolder, publicAssetsFolder } = await getFolderPaths()
+
+      const formattedLogo = await formatLogo(files)
+      const formattedData = formatFormData(formDataWithoutFiles)
+
+      const logoHasChanged = formattedLogo.name !== image?.src
+      const useDefaultAssetPath = logoHasChanged || !image
+
+      const assetPath = `${assetsFolder}/${slug}.${formattedLogo.format}`
+      const publicAssetPath = `${publicAssetsFolder}/${slug}.${formattedLogo.format}`
+
+      const markdownTemplate = await buildMarkdownTemplate({
+        formattedData,
+        imagePath: useDefaultAssetPath ? assetPath : image.src,
+        tags,
+        timestamps: {
+          updatedOn: nowTimestamp,
+          createdOn,
+          publishedOn: publishedOn || nowTimestamp,
+        },
+      })
+
+      const pullRequest = await submitProjectToGithub({
+        slug,
+        markdownTemplate,
+        logo: logoHasChanged
+          ? { base64: formattedLogo.base64, path: publicAssetPath }
+          : undefined,
+      })
+
+      updateSearchParams({ status: 'success', prNumber: pullRequest.number })
+    } catch (error) {
+      console.error('useSubmitEcosystemProjectForm - update', error)
+      Sentry.captureException(error)
+      updateSearchParams({
+        status: 'error',
+        message:
+          "We couldn't submit your information. Please try again or email us at info@fil.org",
+      })
+    }
+  }
 }
