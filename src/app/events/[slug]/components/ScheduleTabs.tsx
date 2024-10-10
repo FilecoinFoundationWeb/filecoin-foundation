@@ -13,10 +13,12 @@ type ScheduleTabsProps = {
 }
 
 export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
+  const validDays = schedule!.days.filter((day) => day.events.length > 0)
+
   return (
     <TabGroup className="relative grid gap-6">
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
-        {schedule!.days.map((day) => (
+        {validDays.map((day) => (
           <Tab
             key={formatDate(day.date)}
             className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-[hover]:bg-brand-700 data-[selected]:bg-brand-700 data-[selected]:text-brand-400"
@@ -26,7 +28,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
         ))}
       </TabList>
       <TabPanels>
-        {schedule!.days.map((day) => (
+        {validDays.map((day) => (
           <TabPanel
             key={formatDate(day.date)}
             className="rounded-lg focus:brand-outline"

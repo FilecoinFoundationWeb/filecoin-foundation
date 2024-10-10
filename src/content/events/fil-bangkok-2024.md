@@ -151,21 +151,7 @@ schedule:
           end: 2024-11-07T14:00:00.000Z
           url: https://www.fil.org
       date: 2024-11-11T09:47:00.000Z
-    - events:
-        - location: Lower Deck
-          title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
-          description:
-            Filecoin is on the verge of transforming how the internet works,
-            ensuring that our data is stored more safely, and more cost
-            effectively than with current generation of monolithic public
-            clouds. To speed up global adoption of decentralized storage,
-            Protocol Labs has partnered with leading Infrastructure as a Service
-            provider servers.com to reduce the barriers to entry for anyone
-            wishing to join the storage revolution. Come and learn how we can
-            get you started on your own Storage Provider journey!
-          start: 2024-11-07T12:00:00.000Z
-          end: 2024-11-07T14:00:00.000Z
-          url: https://www.fil.org
+    - events: []
       date: 2024-11-12T09:47:00.000Z
   title: "Main Stage Schedule"
 speakers:
