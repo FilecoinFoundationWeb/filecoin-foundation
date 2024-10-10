@@ -783,13 +783,13 @@ collections:
             required: false
             hint: This is the title for the section header. For example, "FIL Bangkok 2024 Main Stage Schedule. Defaults to 'Schedule.'"
           - name: "days"
+            label: "Event Days"
             widget: "list"
             required: false
             fields:
               - name: "date"
                 label: "Date"
                 widget: "datetime"
-                hint: "The date of the events."
               - name: "events"
                 label: "Events"
                 widget: "list"
