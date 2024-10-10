@@ -52,6 +52,10 @@ export default function EventEntry({ params }: EventProps) {
     sponsors,
   } = data
 
+  const eventHasSchedule = schedule && schedule.days.length > 0
+  const eventHasSpeakers = speakers && speakers.length > 0
+  const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -72,9 +76,7 @@ export default function EventEntry({ params }: EventProps) {
         />
       </div>
 
-      {schedule && schedule.days && schedule.days.length > 0 && (
-        <ScheduleSection schedule={schedule} />
-      )}
+      {eventHasSchedule && <ScheduleSection schedule={schedule} />}
 
       {lumaEventsSection && (
         <PageSection kicker="Explore" title={lumaEventsSection.title}>
@@ -87,13 +89,8 @@ export default function EventEntry({ params }: EventProps) {
         </PageSection>
       )}
 
-      {speakers && speakers.length > 0 && (
-        <SpeakersSection speakers={speakers} />
-      )}
-
-      {sponsors && Object.keys(sponsors).length > 0 && (
-        <SponsorSection sponsors={sponsors} />
-      )}
+      {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
+      {eventHasSponsors && <SponsorSection sponsors={sponsors} />}
     </PageLayout>
   )
 }
