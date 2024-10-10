@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { ImagePropsSchema } from '@/_schemas/ImagePropsSchema'
+import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 
 const sponsorSchema = z.object({
   name: z.string(),

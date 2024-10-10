@@ -5,10 +5,9 @@ import {
   getEventsCategorySettings,
 } from '@/utils/categoryUtils'
 
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 import { SpeakersSchema } from '@/schemas/event/SpeakerSchema'
 import { SponsorsSchema } from '@/schemas/event/SponsorSchema'
-
-import { DynamicBaseDataSchema } from '@/_schemas/DynamicDataBaseSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 

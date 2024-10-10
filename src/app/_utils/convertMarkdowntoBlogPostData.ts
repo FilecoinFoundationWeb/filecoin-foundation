@@ -1,4 +1,4 @@
-import { BlogPostFrontMatterSchema } from '@/_schemas/BlogPostFrontMatterSchema'
+import { BlogPostFrontMatterSchema } from '@/schemas/BlogPostFrontMatterSchema'
 
 export function convertMarkdownToBlogPostData(data: Record<string, any>) {
   return BlogPostFrontMatterSchema.parse({

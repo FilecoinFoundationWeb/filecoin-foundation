@@ -5,7 +5,7 @@ import {
   getCategorySettings,
 } from '@/utils/categoryUtils'
 
-import { DynamicBaseDataSchema } from '@/_schemas/DynamicDataBaseSchema'
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 const { validCategoryIds } = getCategorySettings('blog_posts')
 

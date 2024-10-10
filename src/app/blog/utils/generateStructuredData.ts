@@ -8,7 +8,7 @@ import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-import type { SeoMetadata } from '@/_schemas/SeoMetadataSchema'
+import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
 export function generateStructuredData(
   posts: Array<BlogPost>,
