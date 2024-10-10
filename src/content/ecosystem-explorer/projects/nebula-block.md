@@ -1,35 +1,26 @@
 ---
 title: Nebula Block
-created-on: 2024-03-20T13:58:36.655000Z
-updated-on: 2024-03-20T13:58:36.700000Z
-published-on: 2024-03-20T13:58:36.718000Z
-description:
-  "Web3 infrastructure provider, renowned for offering comprehensive Web3
-  hosting solutions worldwide."
-category: storage
-tags:
-  - data-storage-management
-  - gpus
-  - storage-software
-  - storage-infrastructure
-  - storage-provider
-  - storage-services
-tech:
-  - filecoin
+created-on: 2024-03-20T13:58:36.655Z
+updated-on: 2024-10-10T09:13:29.021Z
+published-on: 2024-03-20T13:58:36.718Z
+email: encrypted::U2FsdGVkX1+vBueWAOrsxbR8fBLiYv0zMPEHWHRNZik=
+full-name: encrypted::U2FsdGVkX19ASJfBN8KYKkXyqC2xzxoNWKoBWDz29tc=
 image:
   src: /assets/images/nebulahblock_logo_white.png
-website: https://www.nebulablock.com/
-repo: https://github.com/Nebula-Block-Data
-twitter: https://twitter.com/nebulablockdata
-video-url: https://www.youtube.com/embed/Sl4vI4QgFts
-year-joined: 2020-06-15T13:58:36.727000Z
+category: storage
 subcategories:
   - data-storage-management
+description: Web3 infrastructure provider, renowned for offering comprehensive Web3 hosting solutions worldwide.
+website: https://www.nebulablock.com/
+tech:
+  - filecoin
+year-joined: 2020-01-01T00:00:00.000Z
+repo: https://github.com/Nebula-Block-Data
+video-url: https://www.youtube.com/embed/Sl4vI4QgFts
+twitter: https://twitter.com/nebulablockdata
 seo:
   title: Nebula Block
-  description: Nebula Block offers decentralized solutions for data storage and management.
-email: encrypted::U2FsdGVkX1+IMOu3LkLot6qnm2eTDmFl0Cy3Z6LtnD7oMks9nhZHSffG9CxX7ax0
-full-name: encrypted::U2FsdGVkX1+OB44vzZHYCVXI2ZPAFPD0BGrrbErBhmc=
+  description: Web3 infrastructure provider, renowned for offering comprehensive Web3 hosting solutions worldwide.
 ---
 
 Nebula Block is a premier Web3 infrastructure provider, renowned for offering comprehensive Web3 hosting solutions worldwide. Our core competency lies in providing customized turnkey datacenter services, including high-performance GPUs and bare metal offerings, as well as decentralized computing, storage, and Blockchain as a Service solutions. Our commitment is to drive innovation and uphold excellence in Web3 infrastructure.
