@@ -768,7 +768,7 @@ collections:
             label: "Section Title"
             widget: "string"
             required: false
-            hint: This is the title for the section header. For example, "FIL Bangkok 2024 Events."
+            hint: This is the title for the Events section header. For example, "Main Stage Events. Defaults to 'Events.'"
           - name: "embed-link"
             label: "Luma Embed URL"
             widget: "string"
