@@ -768,7 +768,7 @@ collections:
             label: "Section Title"
             widget: "string"
             required: false
-            hint: This is the title for the Events section header. For example, "Main Stage Events". Defaults to 'Events.'
+            hint: This is the title for the Events section header. For example, "Main Stage Events." Defaults to 'Events.'
           - name: "embed-link"
             label: "Luma Embed URL"
             widget: "string"
@@ -784,7 +784,7 @@ collections:
             label: "Section Title"
             widget: "string"
             required: false
-            hint: This is the title for the Schedule section header. For example, "Main Stage Schedule". Defaults to 'Schedule'.
+            hint: This is the title for the Schedule section header. For example, "Main Stage Schedule." Defaults to 'Schedule.'
           - name: "days"
             label: "Event Days"
             widget: "list"
