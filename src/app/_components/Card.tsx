@@ -1,19 +1,28 @@
+import Image, { type ImageProps } from 'next/image'
+
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/ctaType'
+import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { isExternalLink } from '@/utils/linkUtils'
 
 import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { CustomLink } from '@/components/CustomLink'
-import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
+
+type CardImageProps = (StaticImageProps | ImageProps) & {
+  objectFit?: ImageObjectFit
+  padding?: boolean
+  priority?: boolean
+  sizes?: string
+}
 
 type CardProps = {
   title: string | React.ReactNode
@@ -21,7 +30,7 @@ type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAProps
-  image?: (DynamicImageProps | StaticImageProps) & { padding?: boolean }
+  image?: CardImageProps
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -64,7 +73,7 @@ export function Card({
         borderStyles[borderColor],
       )}
     >
-      <Card.Image image={image} />
+      {image && <Card.Image image={image} />}
       <div className="flex flex-col gap-3 p-4">
         <Card.MetaAndTags tagLabel={tagLabel} metaData={metaData} />
         <Card.Title title={title} />
@@ -81,26 +90,45 @@ export function Card({
   )
 }
 
-Card.Image = function Image({ image }: Pick<CardProps, 'image'>) {
-  if (!image) return null
-
-  const { padding, ...rest } = image
-  const isDynamicImage = 'src' in image
+Card.Image = function ImageComponent({ image }: { image: CardImageProps }) {
   const isStaticImage = 'data' in image
 
-  if (!isDynamicImage && !isStaticImage) return null
+  const commonProps = {
+    alt: image.alt,
+    priority: image.priority,
+    quality: 100,
+    sizes:
+      image.sizes || buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
+    className: clsx(
+      'rounded-lg px-1 pt-1',
+      image.objectFit === 'cover' && 'object-cover',
+      image.objectFit === 'contain' && 'object-contain',
+      image.padding && 'px-6 pt-4',
+    ),
+  }
 
-  const renderImage = (ImageComponent: React.ElementType) => (
+  if (isStaticImage) {
+    return (
+      <Image
+        {...commonProps}
+        className={clsx(commonProps.className, 'aspect-video')}
+        src={image.data}
+        alt={commonProps.alt}
+      />
+    )
+  }
+
+  return (
     <div className="relative aspect-video">
-      <ImageComponent
-        {...rest}
+      <Image
         fill
-        className={clsx('rounded-lg px-1 pt-1', padding && 'px-6 pt-4')}
+        {...commonProps}
+        className={clsx(commonProps.className, 'h-full w-full')}
+        src={image.src}
+        alt={commonProps.alt}
       />
     </div>
   )
-
-  return isDynamicImage ? renderImage(DynamicImage) : renderImage(StaticImage)
 }
 
 Card.MetaAndTags = function MetaAndTags({

@@ -37,13 +37,10 @@ export function FeaturedEcosystemProjects({
             icon: MagnifyingGlass,
           }}
           image={{
+            ...(image || graphicsData.imageFallback.data),
             alt: '',
-            ...(image || {
-              ...graphicsData.imageFallback,
-            }),
-            fallback: graphicsData.imageFallback,
-            padding: true,
             objectFit: 'contain',
+            padding: Boolean(image),
             sizes: buildImageSizeProp({
               startSize: '100vw',
               sm: '320px',

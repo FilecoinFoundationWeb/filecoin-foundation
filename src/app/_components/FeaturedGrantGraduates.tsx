@@ -36,13 +36,10 @@ export function FeaturedGrantsGraduates({
             icon: BookOpen,
           }}
           image={{
+            ...(image || graphicsData.imageFallback.data),
             alt: '',
-            ...(image || {
-              ...graphicsData.imageFallback,
-            }),
-            fallback: graphicsData.imageFallback,
             objectFit: 'contain',
-            padding: true,
+            padding: Boolean(image),
             sizes: buildImageSizeProp({
               startSize: '100vw',
               sm: '175px',

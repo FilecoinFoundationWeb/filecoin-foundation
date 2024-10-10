@@ -49,11 +49,8 @@ export function FeaturedBlogPosts() {
                 text: 'Learn More',
               }}
               image={{
+                ...(image || graphicsData.imageFallback.data),
                 alt: '',
-                ...(image || {
-                  ...graphicsData.imageFallback,
-                }),
-                fallback: graphicsData.imageFallback,
                 sizes: buildImageSizeProp({
                   startSize: '100vw',
                   sm: '350px',
