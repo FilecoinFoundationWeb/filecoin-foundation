@@ -21,6 +21,7 @@ export type PathValues =
   | '/filecoin-plus'
   | '/filecoin-plus/allocators'
   | '/governance'
+  | '/governance/govhub'
   | '/grants'
   | '/orbit'
   | '/privacy-policy'
@@ -111,11 +112,13 @@ export const PATHS = {
   }),
   FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus'),
   GOVERNANCE: createPathConfig('/governance', 'Governance'),
+  GOVHUB: createPathConfig('/governance/govhub', 'GovHub'),
   GRANTS: createPathConfig('/grants', 'Grants'),
   ORBIT: createPathConfig('/orbit', 'Orbit'),
   HOME: createPathConfig('/', 'Home', {
     customMainContentPath: '/home',
   }),
+
   MATURITY_MODEL: createPathConfig(
     '/security/maturity-model',
     'Maturity Model',
