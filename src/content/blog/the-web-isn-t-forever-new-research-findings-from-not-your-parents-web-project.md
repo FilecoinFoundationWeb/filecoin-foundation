@@ -5,24 +5,25 @@ created-on: 2024-10-10T12:35:00.000Z
 updated-on: 2024-10-10T12:35:00.000Z
 published-on: 2024-10-10T12:35:00.000Z
 category: reports
-description: Findings from the "Not Your Parents' Web" project –– an extensive
+description: Findings from the "Not Your Parents Web" project –– an extensive
   study that explores the lifespan of millions of web pages across the last 26
-  years
+  years.
 image:
   src: /assets/images/101024-nypw-1-.webp
 seo:
   twitter:
     card: summary
-  description: "The \"Not Your Parents' Web\" project reveals the fragile lifespan
-    of online content. "
+  description: The "Not Your Parents' Web" project reveals the fragile lifespan
+    of online content.
   title: "The Web Isn’t Forever: New Research Findings from “Not Your Parents'
     Web” Project"
 ---
+
 Today, we’re excited to share the release of findings from the "Not Your Parents' Web" project –– an extensive study that explores the lifespan of millions of web pages across the last 26 years. The collaborative project from Internet Archive, Old Dominion University’s Web Science & Digital Libraries Research Group, and Filecoin Foundation (FF) analyzed data from the Wayback Machine to reveal key insights into the lifespan of URLs and the ephemeral nature of the web.
 
 The study examined 27.3 million archived URLs across 7 million unique hosts, spanning from 1996 to 2021. The scale and depth of this analysis provide a fresh perspective on the transience of web content, highlighting both the fragility and longevity of the digital world.
 
-In uncovering the alarming rate at which web content disappears, this study underscores the critical role that decentralized storage solutions like the InterPlanetary File System (IPFS) and Filecoin can play in the future of digital preservation. Decentralized technology allows web content to be safely and redundantly stored across a distributed network, reducing the risks of centralization, such as single points of failure and content takedowns –– ensuring our digital heritage remains accessible for future generations. 
+In uncovering the alarming rate at which web content disappears, this study underscores the critical role that decentralized storage solutions like the InterPlanetary File System (IPFS) and Filecoin can play in the future of digital preservation. Decentralized technology allows web content to be safely and redundantly stored across a distributed network, reducing the risks of centralization, such as single points of failure and content takedowns –– ensuring our digital heritage remains accessible for future generations.
 
 ### Key Findings from "Not Your Parents' Web" Project
 
@@ -36,13 +37,13 @@ Recent data from [Pew Research Center](https://www.pewresearch.org/data-labs/202
 
 The "Not Your Parents' Web" project also sheds light on the varying lifespans of different types of URLs. Deep links –– URLs pointing to content deep within a website –– have a median lifespan of just 1.3 years, which means 50% disappear in less than 18 months. By contrast, root URLs, such as a website's homepage, show less fragility:
 
-* 10% disappear within a year
-* 50% have a lifespan of 10 years or more
-* 20% have lasted for over 20 years
+- 10% disappear within a year
+- 50% have a lifespan of 10 years or more
+- 20% have lasted for over 20 years
 
-These findings align with Pew’s research, which revealed that 23% of news web pages and 21% of government web pages contain at least one broken link, indicating the widespread issue of link rot across various sectors​. Additionally, a 2021 study by [Harvard Law School and the New York Times](https://www.cjr.org/analysis/linkrot-content-drift-new-york-times.php), which looked at 2.2 million URLs, found that 25% of links in New York Times articles were completely broken and no longer pointing to accurate sources. 
+These findings align with Pew’s research, which revealed that 23% of news web pages and 21% of government web pages contain at least one broken link, indicating the widespread issue of link rot across various sectors​. Additionally, a 2021 study by [Harvard Law School and the New York Times](https://www.cjr.org/analysis/linkrot-content-drift-new-york-times.php), which looked at 2.2 million URLs, found that 25% of links in New York Times articles were completely broken and no longer pointing to accurate sources.
 
-The implications of these findings are significant for the integrity and accessibility of online information. As deep links and root URLs vanish at an alarming rate, vast amounts of web-based content become lost to time, raising concerns about the long-term availability of critical resources, especially in sectors like journalism, government, and academia. 
+The implications of these findings are significant for the integrity and accessibility of online information. As deep links and root URLs vanish at an alarming rate, vast amounts of web-based content become lost to time, raising concerns about the long-term availability of critical resources, especially in sectors like journalism, government, and academia.
 
 The prevalence of broken links, as highlighted by studies from Pew and Harvard Law School and the New York Times, not only undermines trust in digital archives but also jeopardizes historical accuracy, transparency, and the public’s ability to access reliable information. This issue reinforces the need for resilient solutions, like decentralized storage, to safeguard knowledge in the digital age.
 
@@ -58,24 +59,24 @@ As part of the "Not Your Parents' Web" project, a fresh web crawl was conducted 
 
 **About 60% of the 27.3 million URLs** analyzed are no longer accessible on the live web:
 
-* **27%** returned HTTP response errors (e.g. a 404 error).
-* **9%** were unable to connect to the web server.
-* **23%** encountered DNS failures, indicating that the domain name could no longer be resolved.
+- **27%** returned HTTP response errors (e.g. a 404 error).
+- **9%** were unable to connect to the web server.
+- **23%** encountered DNS failures, indicating that the domain name could no longer be resolved.
 
-For users, this means encountering broken links, missing content, and gaps in the digital record ––  experiences that illustrate the importance of robust web preservation efforts to ensure that critical information remains accessible, despite the web's inherent instability.
+For users, this means encountering broken links, missing content, and gaps in the digital record –– experiences that illustrate the importance of robust web preservation efforts to ensure that critical information remains accessible, despite the web's inherent instability.
 
 Pew Research’s examination of broken links in various online spaces supports this narrative, revealing that **54% of Wikipedia pages** contain at least one link that points to a page that no longer exists, further highlighting the scope of digital decay​.
 
 ### Why This Matters
 
-The findings from the "Not Your Parents' Web" project offer critical insights into the lifecycle of web pages and raise important questions about the preservation of digital heritage. As the internet continues to evolve, much of its history is at risk of disappearing. Without the work of archiving projects, the early web — and even more recent digital content — would likely be lost forever. 
+The findings from the "Not Your Parents' Web" project offer critical insights into the lifecycle of web pages and raise important questions about the preservation of digital heritage. As the internet continues to evolve, much of its history is at risk of disappearing. Without the work of archiving projects, the early web — and even more recent digital content — would likely be lost forever.
 
-A look at projects supported by FF and Filecoin Foundation for the Decentralized Web (FFDW) that are focused on archiving on the web: 
+A look at projects supported by FF and Filecoin Foundation for the Decentralized Web (FFDW) that are focused on archiving on the web:
 
-* **Flickr Foundation** focuses on preserving digital heritage by archiving millions of photographs shared on the Flickr platform, ensuring visual culture remains accessible for future generations.
-* **Internet Archive**, best known for its Wayback Machine, is instrumental in preserving the web’s history by creating an extensive archive of web pages, allowing users to access snapshots of websites over time.
-* **Prelinger Archives** specializes in preserving historical films and ephemeral media, contributing to a comprehensive audiovisual record of 20th-century culture.
-* **Starling Lab** pioneers the use of decentralized technologies to ensure the permanence and integrity of digital records, tackling both the technological and ethical challenges of preserving digital content.
+- **Flickr Foundation** focuses on preserving digital heritage by archiving millions of photographs shared on the Flickr platform, ensuring visual culture remains accessible for future generations.
+- **Internet Archive**, best known for its Wayback Machine, is instrumental in preserving the web’s history by creating an extensive archive of web pages, allowing users to access snapshots of websites over time.
+- **Prelinger Archives** specializes in preserving historical films and ephemeral media, contributing to a comprehensive audiovisual record of 20th-century culture.
+- **Starling Lab** pioneers the use of decentralized technologies to ensure the permanence and integrity of digital records, tackling both the technological and ethical challenges of preserving digital content.
 
 These findings highlight the urgent need for broader awareness of the fragility of online content and the importance of web preservation. As digital archivists, developers, and users, we must continue to support initiatives that safeguard the web’s legacy. The "Not Your Parents' Web" project, serves as a powerful reminder of how quickly the web can change — and how easily its history can be lost if we do not act.
 
