@@ -5,7 +5,7 @@ import {
   getEventsCategorySettings,
 } from '@/utils/categoryUtils'
 
-import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
+import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
 import { SpeakersSchema } from '@/schemas/event/SpeakerSchema'
 import { SponsorsSchema } from '@/schemas/event/SponsorSchema'
 
@@ -13,26 +13,26 @@ const { validCategoryIds } = getEventsCategorySettings()
 
 const categorySchema = createCategorySchema(validCategoryIds)
 
-export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
+export const EventFrontMatterSchema = BaseDataSchemaKebabCase.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string().optional(),
   location: z.string(),
-  externalLink: z
+  'external-link': z
     .object({
       url: z.string().url(),
       text: z.string().optional(),
     })
     .optional(),
-  lumaCalendarLink: z.string().url().optional(),
-  lumaEventsSection: z
+  'luma-calendar-link': z.string().url().optional(),
+  'luma-events-section': z
     .object({
       title: z.string(),
-      embedLink: z.string().url(),
+      'embed-link': z.string().url(),
     })
     .optional(),
-  startDate: z.coerce.date(),
-  endDate: z.coerce.date().optional(),
+  'start-date': z.coerce.date(),
+  'end-date': z.coerce.date().optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
-})
+}).strict()
