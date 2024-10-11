@@ -5,14 +5,14 @@ import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageSection } from '@/components/PageSection'
 
 type SpeakersSectionProps = {
-  speakers: Event['speakers']
+  speakers: NonNullable<Event['speakers']>
 }
 
 export function SpeakersSection({ speakers }: SpeakersSectionProps) {
   return (
     <PageSection kicker="speakers" title="Speakers">
       <CardGrid cols="mdTwo">
-        {speakers!.map((speaker) => (
+        {speakers.map((speaker) => (
           <KeyMemberCard
             key={speaker.name}
             {...speaker}

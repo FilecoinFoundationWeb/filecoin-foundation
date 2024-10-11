@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import theme from 'tailwindcss/defaultTheme'
+import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 
 import type { Event } from '@/types/eventType'
 
@@ -14,23 +15,22 @@ import { TextLink } from '@/components/TextLink'
 import { formatDate, formatTime } from '../utils/dateUtils'
 
 type ScheduleTabsProps = {
-  schedule: Event['schedule']
+  schedule: NonNullable<Event['schedule']>
 }
 
 const { screens } = theme
 
 export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
   const tabGroupRef = useRef<HTMLDivElement>(null)
-  const hasMounted = useRef(false)
+  const isMounted = useIsMounted()
+  const isScreenBelowLg = useMediaQuery(
+    `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
+  )
 
-  const validDays = schedule!.days.filter((day) => day.events.length > 0)
-
-  useEffect(() => {
-    hasMounted.current = true
-  }, [])
+  const validDays = schedule.days.filter((day) => day.events.length > 0)
 
   function scrollToTabGroup() {
-    if (hasMounted.current && isScreenBelowLg() && tabGroupRef.current) {
+    if (isMounted() && isScreenBelowLg && tabGroupRef.current) {
       tabGroupRef.current.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
