@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageProps } from '@/types/imageType'
 
 import about from '@/assets/graphics/Filorg_About.png'
 import digestCoverIssue1 from '@/assets/graphics/Filorg_Digest_Cover_Issue_1.webp'

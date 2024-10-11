@@ -1,4 +1,8 @@
+import Image, { type ImageProps } from 'next/image'
+
 import { clsx } from 'clsx'
+
+import type { StaticImageProps } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -10,11 +14,9 @@ import {
   DescriptionText,
   type DescriptionTextType,
 } from '@/components/DescriptionText'
-import { DynamicImage, type DynamicImageProps } from '@/components/DynamicImage'
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
-import { StaticImage, type StaticImageProps } from '@/components/StaticImage'
 
 type TitleProps = {
   children: string
@@ -22,7 +24,7 @@ type TitleProps = {
 
 type PageHeaderProps = {
   title: TitleProps['children']
-  image?: StaticImageProps | DynamicImageProps
+  image: StaticImageProps | ImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -40,24 +42,18 @@ export function PageHeader({
   return (
     <header className="grid gap-4">
       {isFeatured && <SectionDivider title="Featured" />}
-
-      <div className="flex flex-col gap-6 lg:flex-row">
-        <div className="flex flex-col gap-4 lg:w-1/2">
+      <div className="grid gap-6 lg:grid-cols-2">
+        <div className="flex flex-col gap-4">
           <PageHeader.Title>{title}</PageHeader.Title>
-
           {metaData && (
             <span className="mb-2">
               <Meta metaData={metaData} />
             </span>
           )}
-
           {description && <DescriptionText>{description}</DescriptionText>}
           {cta && <CTAButtonGroup cta={cta} />}
         </div>
-
-        <div className="lg:w-1/2">
-          <PageHeader.Image image={image} />
-        </div>
+        {image && <PageHeader.Image image={image} />}
       </div>
     </header>
   )
@@ -74,25 +70,35 @@ PageHeader.Title = function Title({ children }: TitleProps) {
 PageHeader.Image = function PageHeaderImage({
   image,
 }: Pick<PageHeaderProps, 'image'>) {
-  if (!image) return null
-
-  const isDynamicImage = 'src' in image
   const isStaticImage = 'data' in image
-
-  if (!isDynamicImage && !isStaticImage) return null
-
   const commonProps = {
+    alt: image.alt,
     priority: true,
     quality: 100,
     sizes: buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
-    className: clsx('h-full w-full', 'rounded-lg border border-brand-100'),
+    className: 'rounded-lg border border-brand-100',
   }
 
-  const renderImage = (ImageComponent: React.ElementType) => (
-    <div className={clsx('relative', 'aspect-video')}>
-      <ImageComponent {...image} fill={isDynamicImage} {...commonProps} />
+  if (isStaticImage) {
+    return (
+      <Image
+        {...commonProps}
+        className={clsx(commonProps.className, 'aspect-video')}
+        src={image.data}
+        alt={commonProps.alt}
+      />
+    )
+  }
+
+  return (
+    <div className="relative aspect-video">
+      <Image
+        fill
+        {...commonProps}
+        className={clsx(commonProps.className, 'h-full w-full')}
+        src={image.src}
+        alt={commonProps.alt}
+      />
     </div>
   )
-
-  return isDynamicImage ? renderImage(DynamicImage) : renderImage(StaticImage)
 }
