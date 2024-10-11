@@ -6,6 +6,7 @@ import {
 } from '@/utils/categoryUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
+import { ScheduleSchema } from '@/schemas/event/ScheduleSchema'
 import { SpeakersSchema } from '@/schemas/event/SpeakerSchema'
 import { SponsorsSchema } from '@/schemas/event/SponsorSchema'
 
@@ -33,6 +34,7 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
     .optional(),
   startDate: z.coerce.date(),
   endDate: z.coerce.date().optional(),
+  schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
 })
