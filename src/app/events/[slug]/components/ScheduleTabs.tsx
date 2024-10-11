@@ -27,7 +27,9 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
     `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
   )
 
-  const validDays = schedule.days.filter((day) => day.events.length > 0)
+  const validDays = schedule.days
+    .filter((day) => day.events.length > 0)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
   function scrollToTabGroup() {
     if (isMounted() && isScreenBelowLg && tabGroupRef.current) {

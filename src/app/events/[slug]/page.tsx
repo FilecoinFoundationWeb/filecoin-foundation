@@ -74,9 +74,6 @@ export default function EventEntry({ params }: EventProps) {
           }}
         />
       </div>
-
-      {eventHasSchedule && <ScheduleSection schedule={schedule} />}
-
       {lumaEventsSection && (
         <PageSection kicker="Explore" title={lumaEventsSection.title}>
           <iframe
@@ -87,8 +84,8 @@ export default function EventEntry({ params }: EventProps) {
           ></iframe>
         </PageSection>
       )}
-
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
+      {eventHasSchedule && <ScheduleSection schedule={schedule} />}
       {eventHasSponsors && <SponsorSection sponsors={sponsors} />}
     </PageLayout>
   )
