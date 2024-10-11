@@ -73,8 +73,9 @@ PageHeader.Title = function Title({ children }: TitleProps) {
 
 PageHeader.Image = function PageHeaderImage({
   image,
-}: Required<Pick<PageHeaderProps, 'image'>>) {
+}: Pick<PageHeaderProps, 'image'>) {
   const isStaticImage = 'data' in image
+
   const commonProps = {
     alt: image.alt,
     priority: true,
