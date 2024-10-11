@@ -22,138 +22,6 @@ luma-events-section:
   embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
 image:
   src: /assets/images/fil-bangkok-2024.webp
-schedule:
-  days:
-    - date: 2024-11-06T09:33:00.000Z
-      events:
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
-        - start: 2024-11-06T09:00:00.000Z
-          end: 2024-01-01T11:00:00.000Z
-          location: Upper Deck
-          title: "Workshop: Introducing Filecoin Data Tools"
-          description:
-            This talk introduces Filecoin Data Tools(FDT). It encapsulates a
-            modern, streamlined, composable toolkit for data preparation, hot
-            retrieval, and Filecoin deal making.
-          url: https://www.fil.org
-    - events:
-        - location: Lower Deck
-          title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
-          description:
-            Filecoin is on the verge of transforming how the internet works,
-            ensuring that our data is stored more safely, and more cost
-            effectively than with current generation of monolithic public
-            clouds. To speed up global adoption of decentralized storage,
-            Protocol Labs has partnered with leading Infrastructure as a Service
-            provider servers.com to reduce the barriers to entry for anyone
-            wishing to join the storage revolution. Come and learn how we can
-            get you started on your own Storage Provider journey!
-          start: 2024-11-07T12:00:00.000Z
-          end: 2024-11-07T14:00:00.000Z
-          url: https://www.fil.org
-      date: 2024-11-07T09:47:00.000Z
-    - events:
-        - location: Lower Deck
-          title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
-          description:
-            Filecoin is on the verge of transforming how the internet works,
-            ensuring that our data is stored more safely, and more cost
-            effectively than with current generation of monolithic public
-            clouds. To speed up global adoption of decentralized storage,
-            Protocol Labs has partnered with leading Infrastructure as a Service
-            provider servers.com to reduce the barriers to entry for anyone
-            wishing to join the storage revolution. Come and learn how we can
-            get you started on your own Storage Provider journey!
-          start: 2024-11-07T12:00:00.000Z
-          end: 2024-11-07T14:00:00.000Z
-          url: https://www.fil.org
-      date: 2024-11-08T09:47:00.000Z
-    - events:
-        - location: Lower Deck
-          title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
-          description:
-            Filecoin is on the verge of transforming how the internet works,
-            ensuring that our data is stored more safely, and more cost
-            effectively than with current generation of monolithic public
-            clouds. To speed up global adoption of decentralized storage,
-            Protocol Labs has partnered with leading Infrastructure as a Service
-            provider servers.com to reduce the barriers to entry for anyone
-            wishing to join the storage revolution. Come and learn how we can
-            get you started on your own Storage Provider journey!
-          start: 2024-11-07T12:00:00.000Z
-          end: 2024-11-07T14:00:00.000Z
-          url: https://www.fil.org
-      date: 2024-11-09T09:47:00.000Z
-    - events:
-        - location: Lower Deck
-          title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
-          description:
-            Filecoin is on the verge of transforming how the internet works,
-            ensuring that our data is stored more safely, and more cost
-            effectively than with current generation of monolithic public
-            clouds. To speed up global adoption of decentralized storage,
-            Protocol Labs has partnered with leading Infrastructure as a Service
-            provider servers.com to reduce the barriers to entry for anyone
-            wishing to join the storage revolution. Come and learn how we can
-            get you started on your own Storage Provider journey!
-          start: 2024-11-07T12:00:00.000Z
-          end: 2024-11-07T14:00:00.000Z
-          url: https://www.fil.org
-      date: 2024-11-10T09:47:00.000Z
-    - events:
-        - location: Lower Deck
-          title: "Data Centers on Demand: Optimizing the path for new Storage Providers"
-          description:
-            Filecoin is on the verge of transforming how the internet works,
-            ensuring that our data is stored more safely, and more cost
-            effectively than with current generation of monolithic public
-            clouds. To speed up global adoption of decentralized storage,
-            Protocol Labs has partnered with leading Infrastructure as a Service
-            provider servers.com to reduce the barriers to entry for anyone
-            wishing to join the storage revolution. Come and learn how we can
-            get you started on your own Storage Provider journey!
-          start: 2024-11-07T12:00:00.000Z
-          end: 2024-11-07T14:00:00.000Z
-          url: https://www.fil.org
-      date: 2024-11-11T09:47:00.000Z
-    - events: []
-      date: 2024-11-12T09:47:00.000Z
-  title: "Main Stage Schedule"
 speakers:
   - name: Stefaan Vervaet
     title: CEO
@@ -179,10 +47,10 @@ sponsors:
       website: https://boostylabs.com
       image:
         src: /assets/images/boosty-logo.webp
-    - image:
-        src: /assets/images/zetacube_logo_white2-1-.webp
+    - name: ZETACUBE
       website: https://www.zetacube.net/
-      name: ZETACUBE
+      image:
+        src: /assets/images/zetacube_logo_white2-1-.webp
 seo:
   title: FIL Bangkok 2024
   description: Join the Filecoin Community in Bangkok for discussions on
