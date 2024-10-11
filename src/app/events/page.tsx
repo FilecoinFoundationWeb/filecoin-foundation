@@ -120,6 +120,7 @@ export default function Events({ searchParams }: Props) {
         image={{
           ...(featuredEvent.image || graphicsData.imageFallback.data),
           alt: '',
+          objectFit: 'cover',
         }}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
@@ -207,8 +208,8 @@ export default function Events({ searchParams }: Props) {
                           image={{
                             ...(image || graphicsData.imageFallback.data),
                             alt: '',
-
                             priority: isFirstTwoImages,
+                            objectFit: 'cover',
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '350px',

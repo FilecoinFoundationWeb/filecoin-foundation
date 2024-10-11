@@ -90,7 +90,9 @@ export function Card({
   )
 }
 
-Card.Image = function ImageComponent({ image }: { image: CardImageProps }) {
+Card.Image = function ImageComponent({
+  image,
+}: Required<Pick<CardProps, 'image'>>) {
   const isStaticImage = 'data' in image
 
   const commonProps = {
