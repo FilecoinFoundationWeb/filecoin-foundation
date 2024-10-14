@@ -1,32 +1,29 @@
 ---
 title: Acaisia
 created-on: 2024-01-12T19:56:32.789Z
-updated-on: 2024-01-12T19:56:32.835Z
+updated-on: 2024-10-14T10:44:35.881Z
 published-on: 2024-01-12T19:56:32.887Z
-email: encrypted::U2FsdGVkX18TAB5CnG9325PaJIO9DI+rKazftQAlcqF0busvXPVd2WE+VIDojuzw
-full-name: encrypted::U2FsdGVkX184mwMbwX2qkfbFqTTpci2lhWbXi85iWTo=
+email: encrypted::U2FsdGVkX1+3m3q7+W+ozS6Vmsu+fiBnO3uCd5zLODA=
+full-name: encrypted::U2FsdGVkX18EqYF7vduH3ELQh52krc983EYR1twVnxQ=
 image:
-  src: /assets/images/acaisia-logo_white.png
+  src: /assets/images/acaisia.jpg
 category: storage
 subcategories:
-  - data-storage-management
+  - dapp
 tags:
   - enterprise
   - gpus
   - sealing
-description: By leveraging decentralized technologies, Acaisia offers
-  affordable, secure, and transparent computing and storage options.
+description: By leveraging decentralized technologies, Acaisia offers affordable, secure, and transparent computing and storage options.
 website: https://acaisia.com
 tech:
   - filecoin
+  - ipfs
+year-joined: 2021-01-01T00:00:00.000Z
 repo: https://github.com/team-acaisia
-year-joined: 2023-09-01T18:56:33.186Z
 seo:
-  title: "Acaisia by Eliovp: Optimized Cloud Platform with Intelligent Workload
-    Distribution"
-  description: Acaisia's platform optimizes your cloud with smart workload
-    distribution and hardware autotuning. Reduce costs, minimize idle resources,
-    and maximize ROI with power-efficient scheduling and Sealing As A Service.
+  title: Acaisia
+  description: By leveraging decentralized technologies, Acaisia offers affordable, secure, and transparent computing and storage options.
 ---
 
 Acaisia's platform, an Eliovp Product, seamlessly connects your hardware with other clusters, creating a powerful, reliable, and cost-competitive cloud. Their intelligent workload distribution system reduces processing time and minimizes idle resources, all automatically, this to heavily optimize your ROI.
