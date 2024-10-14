@@ -4,7 +4,7 @@ import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { getDigestArticlesData } from '@/utils/getDigestArticleData'
+import { getAllDigestArticleData } from '@/utils/getDigestArticleData'
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getEventsData } from '@/utils/getEventData'
 
@@ -35,7 +35,7 @@ export default function sitemap() {
   const blogPosts = getBlogPostsData()
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
-  const digests = getDigestArticlesData()
+  const digests = getAllDigestArticleData()
   const dynamicDigestRoutes = generateDynamicRoutes(digests, PATHS.DIGEST.path)
 
   const ecosystemProjects = getEcosystemProjectsData()
