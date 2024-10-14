@@ -1,10 +1,11 @@
-import type { AllowedImageFormats } from './fileUtils'
+import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
+// Could re-use the value coming from the new Zod schema once merged?
 export type MarkdownTemplateParams = {
   encryptedName: string
   encryptedEmail: string
   projectName: string
-  imagePath: `${string}.${AllowedImageFormats}`
+  imagePath: string
   category: string
   subcategories: Array<string>
   tech: Array<string>
@@ -18,9 +19,18 @@ export type MarkdownTemplateParams = {
   createdOn: string
   updatedOn: string
   publishedOn: string
+  tags: EcosystemProject['tags']
 }
 
-export function getMarkdownTemplate(data: MarkdownTemplateParams) {
+type OptionalValues = {
+  repo: MarkdownTemplateParams['githubUrl']
+  'video-url': MarkdownTemplateParams['youtubeUrl']
+  twitter: MarkdownTemplateParams['xUrl']
+}
+
+export function getEcosystemMarkdownTemplate(data: MarkdownTemplateParams) {
+  const cleanDescription = stripLineBreaks(data.shortDescription)
+
   return `---
 ${renderValue('title', data.projectName)}
 ${renderValue('created-on', data.createdOn)}
@@ -32,8 +42,8 @@ image:
   ${renderValue('src', data.imagePath)}
 ${renderValue('category', data.category)}
 ${renderArray('subcategories', data.subcategories)}
-${renderArray('tags', data.subcategories)}
-${renderValue('description', data.shortDescription)}
+${renderArray('tags', data.tags || [])}
+${renderValue('description', cleanDescription)}
 ${renderValue('website', data.websiteUrl)}
 ${renderArray('tech', data.tech)}
 ${renderValue('year-joined', data.yearJoined)}
@@ -44,17 +54,20 @@ ${renderOptionalValues({
 })}
 seo:
   ${renderValue('title', data.projectName)}
-  ${renderValue('description', data.shortDescription)}
+  ${renderValue('description', cleanDescription)}
 ---
 
 ${data.longDescription.trim()}
 `
 }
 
-type OptionalValues = {
-  repo: MarkdownTemplateParams['githubUrl']
-  'video-url': MarkdownTemplateParams['youtubeUrl']
-  twitter: MarkdownTemplateParams['xUrl']
+function renderValue(key: string, value: string) {
+  return `${key}: ${value.trim()}`
+}
+
+function renderArray(key: string, array: Array<string>) {
+  if (array.length === 0) return ''
+  return `${key}:\n${array.map((item) => `  - ${item.trim()}`).join('\n')}`
 }
 
 function renderOptionalValues(values: OptionalValues) {
@@ -70,11 +83,6 @@ function renderOptionalValues(values: OptionalValues) {
     .join('\n')
 }
 
-function renderValue(key: string, value: string) {
-  return `${key}: ${value.trim()}`
-}
-
-function renderArray(key: string, array: Array<string>) {
-  if (array.length === 0) return ''
-  return `${key}:\n${array.map((item) => `  - ${item.trim()}`).join('\n')}`
+function stripLineBreaks(value: string) {
+  return value.replace(/(\r\n|\n|\r)+/g, ' ')
 }

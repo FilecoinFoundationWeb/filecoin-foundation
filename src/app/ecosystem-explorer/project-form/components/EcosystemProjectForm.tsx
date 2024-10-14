@@ -3,9 +3,7 @@
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-
-import type { CategoryMap } from '@/types/categoryTypes'
+import useSWR from 'swr'
 
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
@@ -18,52 +16,62 @@ import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
 
+import { getCategoryData } from '../actions/getCategoryData'
 import {
   BRIEF_CHARACTER_LIMIT,
   MAX_FILE_SIZE_IN_BYTES,
   NETWORK_USE_CASE_CHARACTER_LIMIT,
 } from '../constants'
-import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
-import { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
+import {
+  EcosystemProjectFormSchema,
+  type EcosystemProjectFormData,
+  type EcosystemProjectFormDataWithoutFiles,
+} from '../schema/EcosystemProjectFormSchema'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
 import { FormSection } from './FormSection'
+import { Loader } from './Loader'
 
 type StringOrUndefined = string | undefined
 
-export type EcosystemProjectFormData = z.infer<
-  typeof EcosystemProjectFormSchema
->
-
-type ProjectFormProps = {
-  categoryData: CategoryMap
-  subCategoryData: CategoryMap
-  initialValues: EcosystemProjectFormData
+type EcosystemProjectFormProps = {
+  initialFormData: EcosystemProjectFormDataWithoutFiles
+  logo?: File
+  onSubmit: (formData: EcosystemProjectFormData) => void
+  isUpdateForm?: boolean
 }
 
 export function EcosystemProjectForm({
-  categoryData,
-  subCategoryData,
-  initialValues,
-}: ProjectFormProps) {
-  const yearOptions = getYearOptions('desc')
-  const categoryOptions = getOptionsFromObject(categoryData)
-  const subCategoryOptions = getOptionsFromObject(subCategoryData)
+  initialFormData,
+  logo,
+  isUpdateForm,
+  onSubmit,
+}: EcosystemProjectFormProps) {
+  const { data } = useSWR('categories', getCategoryData)
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
-    defaultValues: initialValues,
+    defaultValues: {
+      ...initialFormData,
+      files: logo ? [logo] : [],
+    },
   })
   const isSubmitting = form.formState.isSubmitting
 
-  const submitForm = useSubmitEcosystemProjectForm()
+  if (!data) {
+    return <Loader />
+  }
+
+  const yearOptions = getYearOptions('desc')
+  const categoryOptions = getOptionsFromObject(data.categoryData)
+  const subCategoryOptions = getOptionsFromObject(data.subCategoryData)
 
   return (
     <ControlledForm<EcosystemProjectFormData>
       form={form}
       className="md:max-w-readable"
-      onSubmit={submitForm}
+      onSubmit={onSubmit}
     >
       <FormSection
         title="Personal Information"
@@ -89,7 +97,7 @@ export function EcosystemProjectForm({
           name="projectName"
           label="Project Name"
           placeholder="Project Name"
-          disabled={isSubmitting}
+          disabled={isUpdateForm || isSubmitting}
         />
 
         <Field className={formFieldStyle}>
