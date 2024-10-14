@@ -4,9 +4,9 @@ import { useQueryState, parseAsString } from 'nuqs'
 
 import { FormRadioGroup } from '@/components/Form/FormRadioGroup'
 
-import { CreateForm } from './CreateForm'
+import { EcosystemProjectCreateForm } from './EcosystemProjectCreateForm'
 import { FormSection } from './FormSection'
-import { UpdateFormSelect } from './UpdateFormSelect'
+import { SelectProjectToUpdate } from './SelectProjectToUpdate'
 
 const URL_QUERY_NAME = 'action'
 
@@ -36,8 +36,8 @@ export function CreateOrUpdateRouter() {
         />
       </FormSection>
 
-      {action === 'create' && <CreateForm />}
-      {action === 'update' && <UpdateFormSelect />}
+      {action === 'create' && <EcosystemProjectCreateForm />}
+      {action === 'update' && <SelectProjectToUpdate />}
     </div>
   )
 }

@@ -9,7 +9,7 @@ import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjec
 import { EcosystemProjectForm } from './EcosystemProjectForm'
 import { Loader } from './Loader'
 
-export function CreateForm() {
+export function EcosystemProjectCreateForm() {
   const { data: initialFormData } = useSWR(SWR_KEYS.formCreateData, () =>
     getInitialFormData(),
   )
