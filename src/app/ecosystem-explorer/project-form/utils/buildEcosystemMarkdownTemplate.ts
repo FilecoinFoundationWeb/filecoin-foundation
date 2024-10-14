@@ -1,22 +1,23 @@
-// Could re-use the value coming from the new Zod schema once merged?
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
+
 export type MarkdownTemplateParams = {
-  encryptedName: string
-  encryptedEmail: string
-  projectName: string
-  imagePath: string
-  category: string
-  subcategories: Array<string>
-  tech: Array<string>
-  shortDescription: string
-  longDescription: string
-  yearJoined: string
-  websiteUrl: string
-  youtubeUrl?: string
-  githubUrl?: string
-  xUrl?: string
-  createdOn: string
-  updatedOn: string
-  publishedOn: string
+  encryptedName: EcosystemProject['fullName']
+  encryptedEmail: EcosystemProject['email']
+  projectName: EcosystemProject['title']
+  imagePath: NonNullable<EcosystemProject['image']>['src']
+  category: EcosystemProject['category']
+  subcategories: NonNullable<EcosystemProject['subcategories']>
+  tech: EcosystemProject['tech']
+  shortDescription: EcosystemProject['description']
+  longDescription: NonNullable<EcosystemProject['content']>
+  yearJoined: NonNullable<EcosystemProject['yearJoined']>
+  websiteUrl: NonNullable<EcosystemProject['website']>
+  createdOn: EcosystemProject['createdOn']
+  updatedOn: NonNullable<EcosystemProject['updatedOn']>
+  publishedOn: NonNullable<EcosystemProject['publishedOn']>
+  youtubeUrl: EcosystemProject['videoUrl']
+  githubUrl: EcosystemProject['repo']
+  xUrl: EcosystemProject['twitter']
 }
 
 type OptionalValues = {
@@ -25,14 +26,14 @@ type OptionalValues = {
   twitter: MarkdownTemplateParams['xUrl']
 }
 
-export function getEcosystemMarkdownTemplate(data: MarkdownTemplateParams) {
+export function buildEcosystemMarkdownTemplate(data: MarkdownTemplateParams) {
   const cleanDescription = stripLineBreaks(data.shortDescription)
 
   return `---
 ${renderValue('title', data.projectName)}
-${renderValue('created-on', data.createdOn)}
-${renderValue('updated-on', data.updatedOn)}
-${renderValue('published-on', data.publishedOn)}
+${renderValue('created-on', data.createdOn.toISOString())}
+${renderValue('updated-on', data.updatedOn.toISOString())}
+${renderValue('published-on', data.publishedOn.toISOString())}
 ${renderValue('email', data.encryptedEmail)}
 ${renderValue('full-name', data.encryptedName)}
 image:
@@ -42,7 +43,7 @@ ${renderArray('subcategories', data.subcategories)}
 ${renderValue('description', cleanDescription)}
 ${renderValue('website', data.websiteUrl)}
 ${renderArray('tech', data.tech)}
-${renderValue('year-joined', data.yearJoined)}
+${renderValue('year-joined', data.yearJoined.toISOString())}
 ${renderOptionalValues({
   repo: data.githubUrl,
   'video-url': data.youtubeUrl,

@@ -31,6 +31,7 @@ import {
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
+import { ErrorMessage } from './ErrorMessage'
 import { FormSection } from './FormSection'
 import { Loader } from './Loader'
 
@@ -49,7 +50,10 @@ export function EcosystemProjectForm({
   isUpdateForm,
   onSubmit,
 }: EcosystemProjectFormProps) {
-  const { data: categories } = useSWR(SWR_KEYS.categories, getCategoryData)
+  const { data: categories, error } = useSWR(
+    SWR_KEYS.categories,
+    getCategoryData,
+  )
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
@@ -61,6 +65,10 @@ export function EcosystemProjectForm({
 
   if (!categories) {
     return <Loader />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Couldn't load categories" />
   }
 
   const yearOptions = getYearOptions('desc')

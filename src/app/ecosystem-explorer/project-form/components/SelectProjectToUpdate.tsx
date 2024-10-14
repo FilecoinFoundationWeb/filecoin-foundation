@@ -9,6 +9,7 @@ import { getProjectsData } from '../actions/getProjectsData'
 import { SWR_KEYS } from '../constants'
 
 import { EcosystemProjectUpdateForm } from './EcosystemProjectUpdateForm'
+import { ErrorMessage } from './ErrorMessage'
 import { FormSection } from './FormSection'
 import { Loader } from './Loader'
 
@@ -22,10 +23,14 @@ export function SelectProjectToUpdate() {
     parseAsString.withDefault(''),
   )
 
-  const { data: projects } = useSWR(SWR_KEYS.projects, getProjectsData)
+  const { data: projects, error } = useSWR(SWR_KEYS.projects, getProjectsData)
 
   if (!projects) {
     return <Loader />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Couldn't load projects" />
   }
 
   const options = projects.map((project) => ({

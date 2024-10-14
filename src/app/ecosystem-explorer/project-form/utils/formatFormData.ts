@@ -18,7 +18,7 @@ export function formatFormData(data: EcosystemProjectFormDataWithoutFiles) {
     tech: buildArrayFromTruthyKeys(data.tech),
     shortDescription: data.briefSummary.trim(),
     longDescription: data.networkUseCase.trim(),
-    yearJoinedISO: createDateFromYear(yearJoined).toISOString(),
+    yearJoined: createDateFromYear(yearJoined),
     websiteUrl: data.websiteUrl.trim(),
     youtubeEmbedUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
     githubUrl: data.githubUrl?.trim(),
