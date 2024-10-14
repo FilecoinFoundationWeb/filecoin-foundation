@@ -14,7 +14,6 @@ export function ListboxOptions({
 
   return (
     <HeadlessUIListboxOptions
-      aria-labelledby="listbox-button"
       className={clsx(
         'absolute z-10 mt-2 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2',
         positionClass,
