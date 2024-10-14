@@ -21,6 +21,7 @@ import {
   BRIEF_CHARACTER_LIMIT,
   MAX_FILE_SIZE_IN_BYTES,
   NETWORK_USE_CASE_CHARACTER_LIMIT,
+  SWR_KEYS,
 } from '../constants'
 import {
   EcosystemProjectFormSchema,
@@ -48,7 +49,7 @@ export function EcosystemProjectForm({
   isUpdateForm,
   onSubmit,
 }: EcosystemProjectFormProps) {
-  const { data } = useSWR('categories', getCategoryData)
+  const { data: categories } = useSWR(SWR_KEYS.categories, getCategoryData)
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
@@ -57,15 +58,16 @@ export function EcosystemProjectForm({
       files: logo ? [logo] : [],
     },
   })
-  const isSubmitting = form.formState.isSubmitting
 
-  if (!data) {
+  if (!categories) {
     return <Loader />
   }
 
   const yearOptions = getYearOptions('desc')
-  const categoryOptions = getOptionsFromObject(data.categoryData)
-  const subCategoryOptions = getOptionsFromObject(data.subCategoryData)
+  const categoryOptions = getOptionsFromObject(categories.categoryData)
+  const subCategoryOptions = getOptionsFromObject(categories.subCategoryData)
+
+  const isSubmitting = form.formState.isSubmitting
 
   return (
     <ControlledForm<EcosystemProjectFormData>

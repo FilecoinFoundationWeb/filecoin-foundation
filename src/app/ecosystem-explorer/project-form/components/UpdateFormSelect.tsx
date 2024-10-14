@@ -6,7 +6,7 @@ import useSWR from 'swr'
 import { FormCombobox } from '@/components/Form/FormCombobox'
 
 import { getProjectsData } from '../actions/getProjectsData'
-import { ACTIONS } from '../constants'
+import { SWR_KEYS } from '../constants'
 
 import { FormSection } from './FormSection'
 import { Loader } from './Loader'
@@ -22,7 +22,7 @@ export function UpdateFormSelect() {
     parseAsString.withDefault(''),
   )
 
-  const { data: projects } = useSWR(ACTIONS.GET_PROJECTS_DATA, getProjectsData)
+  const { data: projects } = useSWR(SWR_KEYS.projects, getProjectsData)
 
   if (!projects) {
     return <Loader />

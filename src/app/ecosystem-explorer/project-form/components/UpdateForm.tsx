@@ -6,9 +6,9 @@ import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
 import { getInitialFormData } from '../actions/getInitialFormData'
 import { getProjectData } from '../actions/getProjectData'
-import { ACTIONS } from '../constants'
+import { SWR_KEYS } from '../constants'
 import { useUpdateEcosystemProjectForm } from '../hooks/useUpdateEcosystemProjectForm'
-import { getFileFromPath } from '../utils/fileUtils'
+import { buildTemporaryLogoFile } from '../utils/fileUtils'
 
 import { EcosystemProjectForm } from './EcosystemProjectForm'
 import { Loader } from './Loader'
@@ -20,17 +20,17 @@ type UpdateFormProps = {
 export function UpdateForm({ slug }: UpdateFormProps) {
   const updateProject = useUpdateEcosystemProjectForm()
 
-  const { data: project } = useSWR(ACTIONS.GET_PROJECTS_DATA + slug, () =>
+  const { data: project } = useSWR(SWR_KEYS.project(slug), () =>
     getProjectData(slug),
   )
 
   const { data: initialFormData } = useSWR(
-    project ? ACTIONS.GET_INITIAL_FORM_DATA + slug : null,
+    SWR_KEYS.formUpdateData(project),
     () => getInitialFormData(project),
   )
 
-  const { data: logo } = useSWR(project ? ACTIONS.GET_LOGO + slug : null, () =>
-    getFileFromPath(project?.image?.src),
+  const { data: logo } = useSWR(SWR_KEYS.projectLogo(project), () =>
+    buildTemporaryLogoFile(project!.image),
   )
 
   if (!initialFormData || !project) {
