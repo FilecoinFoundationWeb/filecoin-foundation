@@ -1,6 +1,6 @@
-import { z } from 'zod'
+'use server'
 
-import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
+import { z } from 'zod'
 
 import configJson from '@/data/cmsConfigSchema.json'
 
@@ -9,12 +9,11 @@ const pathConfigSchema = z.object({
   public_folder: z.string(),
 })
 
-export function getFolderPaths() {
+export async function getFolderPaths() {
   const { media_folder, public_folder } = pathConfigSchema.parse(configJson)
 
   return {
-    mediaFolder: media_folder,
-    publicFolder: public_folder,
-    ecosystemFolder: ECOSYSTEM_PROJECTS_DIRECTORY_PATH,
+    publicAssetsFolder: media_folder, // public/assets/images
+    assetsFolder: public_folder, // assets/images
   } as const
 }

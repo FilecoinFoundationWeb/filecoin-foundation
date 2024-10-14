@@ -69,7 +69,7 @@ export function FormCombobox<Value extends OptionType = OptionType>({
 
           <ComboboxOptions
             transition
-            className="absolute z-10 mt-2 w-[var(--input-width)] rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 transition duration-100 ease-in focus:brand-outline empty:invisible data-[leave]:data-[closed]:opacity-0"
+            className="absolute z-10 mt-2 max-h-96 w-[var(--input-width)] overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 transition duration-100 ease-in focus:brand-outline empty:invisible data-[leave]:data-[closed]:opacity-0"
           >
             {({ option }) => (
               <ComboboxOption

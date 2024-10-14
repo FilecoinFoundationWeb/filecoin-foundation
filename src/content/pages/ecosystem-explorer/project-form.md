@@ -1,6 +1,6 @@
 ---
 header:
-  title: "Add a Project"
+  title: "Add or Update a Project"
   description:
     [
       "Let's get started with some basic information about what you're building. Please submit or update your entry to the Filecoin ecosystem page below.",

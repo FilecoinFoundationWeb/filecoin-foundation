@@ -72,6 +72,11 @@ const categoryData = getCategoryDataFromDirectory(
 const { categoryOptions, validCategoryIds } =
   getCategorySettingsFromMap(categoryData)
 
+const cta = {
+  text: 'Submit Or Update Your Project',
+  href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
+}
+
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
@@ -104,10 +109,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         title={header.title}
         description={header.description}
         image={graphicsData.ecosystem}
-        cta={{
-          text: 'Submit Your Project',
-          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
-        }}
+        cta={cta}
       />
 
       <PageSection
@@ -204,10 +206,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       <CTASection
         title="Become Part of the Expanding Ecosystem"
         description="If you’re building on Filecoin and don’t see your project or want to edit your listing, share your details."
-        cta={{
-          text: 'Submit Your Project',
-          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
-        }}
+        cta={cta}
       />
     </PageLayout>
   )

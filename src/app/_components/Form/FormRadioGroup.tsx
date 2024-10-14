@@ -17,7 +17,7 @@ export type RadioType = {
 type ExcludedHeadlessUIProps = 'className'
 
 export type FormRadioInputProps<Value extends RadioType = RadioType> = {
-  options: Array<Value>
+  options: ReadonlyArray<Value>
 } & Omit<RadioGroupProps<ElementType, Value>, ExcludedHeadlessUIProps>
 
 export function FormRadioGroup<Value extends RadioType = RadioType>({

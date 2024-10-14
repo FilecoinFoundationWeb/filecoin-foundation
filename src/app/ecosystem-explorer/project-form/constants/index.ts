@@ -8,3 +8,10 @@ export const YOUTUBE_EMBED_BASE_URL = 'https://www.youtube.com/embed/'
 export const GITHUB_BASE_URL = 'https://github.com/'
 export const X_BASE_URL = 'https://x.com/'
 export const TWITTER_BASE_URL = 'https://twitter.com/'
+
+export const ACTIONS = {
+  GET_INITIAL_FORM_DATA: 'intial',
+  GET_CATEGORY_DATA: 'categories',
+  GET_PROJECTS_DATA: 'projects',
+  GET_LOGO: 'logo',
+} as const
