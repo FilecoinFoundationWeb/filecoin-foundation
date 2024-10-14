@@ -11,7 +11,7 @@ export type Sponsor = NonNullable<
 >[number]
 
 type SponsorSectionProps = {
-  sponsors: Event['sponsors']
+  sponsors: NonNullable<Event['sponsors']>
 }
 
 const sponsorTierConfigs = [
@@ -42,8 +42,6 @@ const sponsorTierConfigs = [
 ] as const
 
 export function SponsorSection({ sponsors }: SponsorSectionProps) {
-  if (!sponsors) return null
-
   return (
     <PageSection kicker="sponsors" title="Sponsors">
       <div className="grid gap-8">
@@ -53,7 +51,7 @@ export function SponsorSection({ sponsors }: SponsorSectionProps) {
           return (
             <SponsorGrid
               key={tier}
-              sponsors={sponsors[tier]!}
+              sponsors={sponsors[tier]}
               tier={tier}
               gridClassName={gridClassName}
               logoImageConfig={logoImageConfig}

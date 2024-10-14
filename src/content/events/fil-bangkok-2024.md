@@ -47,10 +47,10 @@ sponsors:
       website: https://boostylabs.com
       image:
         src: /assets/images/boosty-logo.webp
-    - image:
-        src: /assets/images/zetacube_logo_white2-1-.webp
+    - name: ZETACUBE
       website: https://www.zetacube.net/
-      name: ZETACUBE
+      image:
+        src: /assets/images/zetacube_logo_white2-1-.webp
 seo:
   title: FIL Bangkok 2024
   description: Join the Filecoin Community in Bangkok for discussions on
