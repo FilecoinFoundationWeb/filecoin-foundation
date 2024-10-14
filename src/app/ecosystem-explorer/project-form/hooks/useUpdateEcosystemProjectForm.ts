@@ -29,8 +29,6 @@ export function useUpdateEcosystemProjectForm() {
 
       const logoIsTheSame = formattedLogo.name === image?.src
 
-      console.log(formattedLogo, image, logoIsTheSame)
-
       if (logoIsTheSame) {
         const markdownTemplate = await buildMarkdownTemplate({
           formattedData,
@@ -46,6 +44,7 @@ export function useUpdateEcosystemProjectForm() {
         const pullRequest = await submitProjectToGithub({
           slug,
           markdownTemplate,
+          prTitle: 'Ecosystem Project Update',
         })
 
         return updateSearchParams({
@@ -74,6 +73,7 @@ export function useUpdateEcosystemProjectForm() {
         slug,
         markdownTemplate,
         logo: { base64: formattedLogo.base64, path: publicAssetPath },
+        prTitle: 'Ecosystem Project Update',
       })
 
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })

@@ -60,7 +60,8 @@ export const EcosystemProjectFormSchema = z.object({
   category: OptionSchema,
   topic: OptionSchema,
   files: z
-    .array(z.instanceof(File), { message: 'A logo is required' })
+    .array(z.instanceof(File))
+    .nonempty({ message: 'A logo is required' })
     .refine(validateFileSizes, { message: 'Logo size exceeds the limit' }),
   websiteUrl: z.string().url({ message: 'Invalid website URL' }),
   youtubeUrl: z

@@ -45,6 +45,7 @@ export function useSubmitEcosystemProjectForm() {
         slug,
         markdownTemplate,
         logo: { base64: formattedLogo.base64, path: publicAssetPath },
+        prTitle: 'New Ecosystem Project',
       })
 
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
