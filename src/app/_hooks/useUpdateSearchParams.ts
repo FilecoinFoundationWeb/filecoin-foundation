@@ -23,9 +23,23 @@ export function useUpdateSearchParams() {
     [router, pathname, params],
   )
 
+  const removeSearchParams = useCallback(
+    (keysToRemove: Array<string>) => {
+      const newParams = new URLSearchParams(params.toString())
+
+      for (const key of keysToRemove) {
+        newParams.delete(key)
+      }
+
+      const newRoute = `${pathname}?${newParams.toString()}` as Route
+      router.push(newRoute, { scroll: false })
+    },
+    [router, pathname, params],
+  )
+
   const resetSearchParams = useCallback(() => {
     router.push(pathname as Route, { scroll: false })
   }, [router, pathname])
 
-  return { updateSearchParams, resetSearchParams }
+  return { updateSearchParams, resetSearchParams, removeSearchParams }
 }

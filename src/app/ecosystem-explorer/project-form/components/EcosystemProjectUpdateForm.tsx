@@ -10,6 +10,7 @@ import { useUpdateEcosystemProjectForm } from '../hooks/useUpdateEcosystemProjec
 import { buildTemporaryLogoFile } from '../utils/fileUtils'
 
 import { EcosystemProjectForm } from './EcosystemProjectForm'
+import { ErrorMessage } from './ErrorMessage'
 import { Loader } from './Loader'
 
 type UpdateFormProps = {
@@ -19,7 +20,7 @@ type UpdateFormProps = {
 export function EcosystemProjectUpdateForm({ project }: UpdateFormProps) {
   const updateProject = useUpdateEcosystemProjectForm()
 
-  const { data: initialFormData } = useSWR(
+  const { data: initialFormData, error } = useSWR(
     SWR_KEYS.formUpdateData(project),
     () => getInitialFormData(project),
   )
@@ -30,6 +31,10 @@ export function EcosystemProjectUpdateForm({ project }: UpdateFormProps) {
 
   if (!initialFormData) {
     return <Loader />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Couldn't load form data" />
   }
 
   return (

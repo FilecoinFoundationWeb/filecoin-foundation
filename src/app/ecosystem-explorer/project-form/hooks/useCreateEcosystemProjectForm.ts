@@ -12,8 +12,7 @@ import type { EcosystemProjectFormData } from '../schema/EcosystemProjectFormSch
 import { formatLogo } from '../utils/fileUtils'
 import { formatFormData } from '../utils/formatFormData'
 
-// Could be renamed as useCreateEcosystemProjectForm to be consistent
-export function useSubmitEcosystemProjectForm() {
+export function useCreateEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
 
   return async function create(formData: EcosystemProjectFormData) {
@@ -50,7 +49,7 @@ export function useSubmitEcosystemProjectForm() {
 
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })
     } catch (error) {
-      console.error('useSubmitEcosystemProjectForm', error)
+      console.error('useCreateEcosystemProjectForm', error)
       Sentry.captureException(error)
       updateSearchParams({
         status: 'error',

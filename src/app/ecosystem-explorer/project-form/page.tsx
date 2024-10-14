@@ -28,7 +28,7 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
+export default function EcosystemProjectFormPage({ searchParams }: Props) {
   const safeParams = SearchParamsSchema.safeParse(searchParams)
 
   if (safeParams.data?.status === 'success') {

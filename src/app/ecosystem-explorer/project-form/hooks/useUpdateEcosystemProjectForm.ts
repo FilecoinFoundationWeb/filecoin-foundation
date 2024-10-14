@@ -35,8 +35,8 @@ export function useUpdateEcosystemProjectForm() {
           imagePath: image.src,
           tags,
           timestamps: {
-            updatedOn: nowTimestamp,
             createdOn,
+            updatedOn: nowTimestamp,
             publishedOn: publishedOn || nowTimestamp,
           },
         })
