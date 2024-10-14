@@ -18,12 +18,14 @@ type SubmitProjectParams = {
     path: string
     base64: FormattedLogo['base64']
   }
+  prTitle: string
 }
 
 export async function submitProjectToGithub({
   slug,
   markdownTemplate,
   logo,
+  prTitle,
 }: SubmitProjectParams) {
   const todayISO = getTodayISO()
   const branchName = `ecosystem-submission/${slug}-${todayISO}`
@@ -58,7 +60,7 @@ export async function submitProjectToGithub({
   })
 
   const newPullRequest = await createPR({
-    title: `Ecosystem Project Form Submission: ${slug}`,
+    title: `${prTitle}: ${slug}`,
     commitSha: newCommit.sha,
     branchName,
   })
