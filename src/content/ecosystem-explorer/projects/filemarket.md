@@ -1,35 +1,33 @@
 ---
-title: "FileMarket"
-created-on: 2024-01-18T16:06:37.736000Z
-updated-on: 2024-01-18T16:06:37.771000Z
-published-on: 2024-01-18T16:06:37.786000Z
-description:
-  "Decentralized P2P file-sharing protocol & platform for storing, transferring,
-  and trading digital goods."
+title: FileMarket
+created-on: 2024-01-18T16:06:37.736Z
+updated-on: 2024-10-14T11:07:55.134Z
+published-on: 2024-01-18T16:06:37.786Z
+email: encrypted::U2FsdGVkX19WpYwtYXAnYFPwRwVrHJbaOcPT/Fz0XnE=
+full-name: encrypted::U2FsdGVkX1+2KV3WhmgKBsGAspSdDpSm5yupVteDSVA=
+image:
+  src: /assets/images/filemarket_logo_white.png
 category: finance
+subcategories:
+  - dapp
 tags:
   - data-curation-monetization
   - photo-video
   - depin
   - data-storage-management
   - public-data
+description: Decentralized P2P file-sharing protocol & platform for storing, transferring, and trading digital goods.
+website: https://filemarket.xyz21
 tech:
   - filecoin
   - ipfs
-image:
-  src: /assets/images/filemarket_logo_white.png
-website: "https://filemarket.xyz"
-repo: "https://github.com/Filemarket-xyz/file-market"
-twitter: "https://twitter.com/filemarket_xyz/"
-video-url: "https://www.youtube.com/embed/MSOpSJnoFvQ"
-year-joined: 2022-09-01T15:06:37.800000Z
-subcategories:
-  - dapp
+year-joined: 2022-01-01T00:00:00.000Z
+repo: https://github.com/Filemarket-xyz/file-market
+video-url: https://www.youtube.com/embed/MSOpSJnoFvQ
+twitter: https://twitter.com/filemarket_xyz/
 seo:
   title: FileMarket
-  description: FileMarket offers decentralized marketplace solutions for digital assets.
-email: encrypted::U2FsdGVkX1/SlT9vk4zMX23EQ7brjnGv0cyR8SWlhmgQm9y91u7/IwraElAE9IBJ
-full-name: encrypted::U2FsdGVkX18x2Y7KZCSH6M7nR4nFtme+mVXfseQbpzc=
+  description: Decentralized P2P file-sharing protocol & platform for storing, transferring, and trading digital goods.
 ---
 
 FileMarket assists users of EVM-compatible blockchain wallets engaged in digital content creation to store it directly in the wallet without the risk of unauthorized access, with the ability to monetize through selling access on a public storefront.
