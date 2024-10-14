@@ -15,11 +15,6 @@ export const SWR_KEYS = {
   formCreateData: `/form`,
   categories: `/categories`,
   projects: `/projects`,
-  project: (slug: string) => `/projects/${slug}`,
-  formUpdateData: (project?: EcosystemProject) => {
-    return project ? `/form/${project.slug}` : null
-  },
-  projectLogo: (project?: EcosystemProject) => {
-    return project ? `/projects/${project.title}/logo` : null
-  },
+  formUpdateData: (project: EcosystemProject) => `/form/${project.slug}`,
+  projectLogo: (project: EcosystemProject) => `/projects/${project.title}/logo`,
 } as const

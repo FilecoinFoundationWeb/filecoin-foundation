@@ -8,16 +8,16 @@ import { FormCombobox } from '@/components/Form/FormCombobox'
 import { getProjectsData } from '../actions/getProjectsData'
 import { SWR_KEYS } from '../constants'
 
+import { EcosystemProjectUpdateForm } from './EcosystemProjectUpdateForm'
 import { FormSection } from './FormSection'
 import { Loader } from './Loader'
-import { UpdateForm } from './UpdateForm'
 
 const MARKETING_DEPARTMENT_EMAIL = 'marketing@fil.org'
 
 const URL_QUERY_NAME = 'project'
 
-export function UpdateFormSelect() {
-  const [project, setProject] = useQueryState(
+export function SelectProjectToUpdate() {
+  const [projectSlug, setProjectSlug] = useQueryState(
     URL_QUERY_NAME,
     parseAsString.withDefault(''),
   )
@@ -28,12 +28,14 @@ export function UpdateFormSelect() {
     return <Loader />
   }
 
-  const selectedProject = projects.find((p) => p.slug === project)
-
   const options = projects.map((project) => ({
     id: project.slug,
     name: project.title,
   }))
+
+  const selectedProject = projects.find(
+    (project) => project.slug === projectSlug,
+  )
   const selectedOption = {
     id: selectedProject?.slug || '',
     name: selectedProject?.title || '',
@@ -63,18 +65,18 @@ export function UpdateFormSelect() {
           value={selectedOption}
           onChange={(option) => {
             if (option) {
-              setProject(option.id)
+              setProjectSlug(option.id)
             }
 
             if (!option) {
-              setProject('')
+              setProjectSlug('')
             }
           }}
         />
       </FormSection>
 
       {selectedProject && (
-        <UpdateForm key={selectedProject.slug} slug={selectedProject.slug} />
+        <EcosystemProjectUpdateForm project={selectedProject} />
       )}
     </>
   )
