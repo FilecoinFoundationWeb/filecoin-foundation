@@ -1,5 +1,7 @@
 import path from 'path'
 
+import type { EcosystemProject } from '@/types/ecosystemProjectType'
+
 import type { EcosystemProjectFormFiles } from '../schema/EcosystemProjectFormSchema'
 
 export type AllowedImageFormats = (typeof ALLOWED_IMAGE_FORMATS)[number]
@@ -19,23 +21,16 @@ export async function formatLogo(files: EcosystemProjectFormFiles) {
   return { base64, format, name: logo.name }
 }
 
-export async function getFileFromPath(path?: string) {
-  if (!path) {
+export async function buildTemporaryLogoFile(image: EcosystemProject['image']) {
+  if (!image) {
     return
   }
 
-  const response = await fetch(path)
+  const response = await fetch(image.src)
   const blob = await response.blob()
-  return new File([blob], path, { type: blob.type })
-}
 
-export const ALLOWED_IMAGE_FORMATS = [
-  'png',
-  'jpg',
-  'jpeg',
-  'svg',
-  'webp',
-] as const
+  return new File([blob], image.src, { type: blob.type })
+}
 
 function convertToBase64(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -49,6 +44,8 @@ function convertToBase64(file: File): Promise<string> {
     reader.onerror = (error) => reject(error)
   })
 }
+
+const ALLOWED_IMAGE_FORMATS = ['png', 'jpg', 'jpeg', 'svg', 'webp'] as const
 
 function getFileFormat(fileName: string) {
   const fileExtension = path.extname(fileName).slice(1)
