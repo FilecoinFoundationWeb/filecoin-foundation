@@ -9,7 +9,7 @@ description: This month on October 15, we’re thrilled to celebrate the
   Filecoin network has grown tremendously, becoming the world’s largest
   decentralized storage network.
 image:
-  src: /assets/images/anniversarypost.webp
+  src: /assets/images/ma-blogheader.webp
 seo:
   twitter:
     card: summary
@@ -17,6 +17,8 @@ seo:
   description: Today, we say a huge thank you to the incredible Filecoin community
     of builders, storage providers, data clients, and all those who are helping
     shape the future of the web.
+  open-graph:
+    image: /assets/images/ma-blogheader.webp
 ---
 This month on October 15, we’re thrilled to celebrate the anniversary of Filecoin’s Mainnet launch! Over the past four years, the Filecoin network has grown tremendously, becoming the world’s largest decentralized storage network.
 
