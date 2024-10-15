@@ -12,15 +12,11 @@ const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 const CONTENT_PREVIEW_CHARACTER_LENGTH = 220
 
 export function getDigestArticleData(slug: string) {
-  const article = getMarkdownData({
+  return getMarkdownData({
     slug,
     directoryPath: DIGEST_DIRECTORY_PATH,
     zodParser: DigestArticleFrontMatterSchema.parse,
   })
-
-  return {
-    ...article,
-  }
 }
 
 export function getAllDigestArticleData() {
@@ -28,6 +24,7 @@ export function getAllDigestArticleData() {
     directoryPath: DIGEST_DIRECTORY_PATH,
     zodParser: DigestArticleFrontMatterSchema.parse,
   })
+
   return articles.map((article) => ({
     ...article,
     description: generatePreviewDescription(article.content),
