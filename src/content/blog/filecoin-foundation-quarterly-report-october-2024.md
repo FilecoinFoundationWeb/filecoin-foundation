@@ -7,7 +7,7 @@ category: reports
 description: "This month, Filecoin Foundation (FF) is launching quarterly
   updates designed to hone in on different trends across our ecosystem. "
 image:
-  src: /assets/images/frame-5.webp
+  src: /assets/images/ff_q4report_hero-1-.webp
 seo:
   twitter:
     card: summary
