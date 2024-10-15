@@ -23,7 +23,7 @@ As the AI industry continues to expand, driving an increasing need for data stor
 
 By leveraging Filecoin’s infrastructure, developers and organizations can contribute to AI systems without concentrating power in the hands of a few players. This approach fosters innovation while ensuring that AI development remains open and transparent.
 
-This month, Filecoin Foundation (FF) is launching quarterly updates designed to hone in on different trends across our ecosystem. Our first quarterly report explores how the Filecoin network is enabling a more decentralized, open, and transparent AI-driven industry and highlights key developments and milestones from the Filecoin ecosystem over the past several months.
+This month, Filecoin Foundation (FF) is launching quarterly updates designed to hone in on different trends across our ecosystem. Our first quarterly update explores how the Filecoin network is enabling a more decentralized, open, and transparent AI-driven industry and highlights key developments and milestones from the Filecoin ecosystem over the past several months.
 
 ![](/assets/images/storage-is-just-the-start.webp)
 
