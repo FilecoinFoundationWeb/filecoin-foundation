@@ -1,4 +1,4 @@
-import type { SeoMetadata } from '@/schemas/seoMetadataSchema'
+import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
 export type PageAttributes = {
   header: {

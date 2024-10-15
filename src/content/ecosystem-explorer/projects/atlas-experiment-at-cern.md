@@ -23,6 +23,8 @@ subcategories:
 seo:
   title: ATLAS Experiment at CERN
   description: Explore the ATLAS Experiment at CERN using decentralized storage solutions.
+email: encrypted::U2FsdGVkX180yXAP8t71XhT8wj/uSaUpEhBy4q36CbXl7uTJlIhSMqHrZCO2L+VA
+full-name: encrypted::U2FsdGVkX18+69wboV7Pxfbbh79Zk3zZJeNJasDan0I=
 ---
 
 In this R&D project, Seal has provided 10 Pebibytes (PiBs) of cloud-based storage capacity to the ATLAS Experiment, hosted in Seal’s data centers.

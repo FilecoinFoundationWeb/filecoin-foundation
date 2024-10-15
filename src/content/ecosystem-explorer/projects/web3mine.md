@@ -19,6 +19,8 @@ subcategories:
 seo:
   title: Web3Mine
   description: Web3Mine offers decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX18fsr3rAmo2KFBvNvkGxQZKcKWdiE+u75dkpveFxwoVbCbq2m/ARduI
+full-name: encrypted::U2FsdGVkX190md8mih0cBULIYgCJmdI0L6dN1E6bn6Q=
 ---
 
 web3mine is an innovation lab that​ helps people collectively coordinate hardware and capital to build a more open and resilient internet infrastructure for everyone.

@@ -25,6 +25,8 @@ seo:
   description:
     Functionland Fula provides decentralized storage solutions for personal
     data management.
+email: encrypted::U2FsdGVkX1/7op7tXkra1X8i9zBkeSjitm46FjJcG36KY5oCgdeu1dKF2prSVzHt
+full-name: encrypted::U2FsdGVkX1831AAdCbRxKBQHKkZOL4PSaxUikHQLE/w=
 ---
 
 Functionland has built a peer-to-peer platform (Fula) that aims to disrupt traditional cloud storage and challenge the subscription-based model by enabling consumers to easily rent out the unused storage and compute resources of their computers. The platform promises faster speeds and lower costs than traditional cloud storage, while also giving users full control over their data; Creating a decentralized cloud alternative that provides the same UX of cloud mobile applications at much cheaper cost to users, without ads and central authority by combining blockchain, mining rewards and p2p data protocols.

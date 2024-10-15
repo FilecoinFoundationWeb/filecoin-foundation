@@ -29,6 +29,8 @@ seo:
   description:
     Waterlily AI provides AI-driven solutions for decentralized data analysis
     and management.
+email: encrypted::U2FsdGVkX1/ekqwkonvKmKqmbO7ETZJLuWhzPg9e1R9igZOrJ8tyYNqkY4Lj3Kpi
+full-name: encrypted::U2FsdGVkX19Hk4YNzU11BIvujxrSV42e/0l8wW4sY7A=
 ---
 
 Waterlilly.ai is a Filecoin-powered generative AI tool that allows artists to distribute their work while addressing the pain point of compensation when their art is used in AI training models. The tool uses generative AI to create images in the style of some of the world’s greatest artists – from Paul Klee to Jean-Michel Basquiat. Waterlilly.ai compensates original creators of artwork with micropayments whenever a user selects their style to create a new Stable Diffusion artwork from a prompt.

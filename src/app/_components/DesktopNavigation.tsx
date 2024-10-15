@@ -9,7 +9,7 @@ import type { Route } from 'next'
 
 import { PATHS } from '@/constants/paths'
 
-import { desktopNavigationItems } from '@/data/components/navigationData'
+import { desktopNavigationItems } from '@/data/navigationData'
 
 import { useNavigationItems } from '@/hooks/useNavigationItems'
 

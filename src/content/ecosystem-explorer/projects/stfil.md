@@ -21,6 +21,8 @@ seo:
   description:
     StFIL provides decentralized finance solutions for staking and yield
     generation.
+email: encrypted::U2FsdGVkX1/XItWlhps97CcSaxhM82syxGPvE81FZGy1yHMIb3YqVLLm5YD17jG5
+full-name: encrypted::U2FsdGVkX19OOgK2wQzKjEZkqfYuWuFfmB0kOmWtZgM=
 ---
 
 STFIL Protocol, launched on the Filecoin Virtual Machine (FVM) mainnet in April 2023, stands as the first and one of the largest liquidity staking protocols in the Filecoin ecosystem. We empower $FIL token holders with the ability to generate stable yields while providing storage providers with collateralized loans to facilitate leveraged mining.

@@ -19,7 +19,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
 import { SuccessMessage } from './components/SuccessMessage'
-import { SearchParamsSchema } from './schema/searchParams'
+import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 

@@ -1,10 +1,10 @@
 import { z } from 'zod'
 
-import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
+import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
 
 import { CategorySchema, SubcategorySchema } from './CategorySchemas'
 
-export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
+export const EcosystemProjectFrontMatter = BaseDataSchemaKebabCase.extend({
   title: z.string(),
   category: CategorySchema,
   subcategories: z.array(SubcategorySchema).optional(),
@@ -12,11 +12,13 @@ export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   description: z.string(),
   tech: z.array(z.string()),
   website: z.string().url().optional(),
-  featuredContent: z.string().url().optional(),
+  'featured-content': z.string().url().optional(),
   repo: z.string().url().optional(),
   twitter: z.string().url().optional(),
-  videoUrl: z.string().url().optional(),
-  yearJoined: z.coerce.date().optional(),
-  newsUpdate: z.string().optional(),
+  'video-url': z.string().url().optional(),
+  'year-joined': z.coerce.date().optional(),
+  'news-update': z.string().optional(),
   content: z.string().optional(),
-})
+  email: z.string(),
+  'full-name': z.string(),
+}).strict()

@@ -23,6 +23,8 @@ seo:
   description:
     FVM Dapp offers decentralized applications built on the Filecoin Virtual
     Machine.
+email: encrypted::U2FsdGVkX1+sOWXscrEVk0nemFmLFUMmU5SPUaid/nmLQ/rzswD9tnJ1Fo8xufgx
+full-name: encrypted::U2FsdGVkX1/gm3KiPGiG83WLnN0zMyJDsTkEIVaKe6c=
 ---
 
 A full-stack starter template with React & Hardhat to develop, deploy, and test Solidity smart contracts on the FEVM network.

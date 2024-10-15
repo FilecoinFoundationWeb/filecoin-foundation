@@ -24,6 +24,8 @@ seo:
   description:
     DomainFNS provides decentralized solutions for domain name services
     and management.
+email: encrypted::U2FsdGVkX18Vv+cwGqKHfVC95qqteGAlDkzjOYjs5v6LdF8DodU35O1bG04RVmv2
+full-name: encrypted::U2FsdGVkX19peln3p3VQD68ZhdB8GC+VnR1enalKxyU=
 ---
 
 FNS established the foundational infrastructure for the FVM’s Decentralized Identity (DID) track.

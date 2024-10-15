@@ -22,6 +22,8 @@ subcategories:
 seo:
   title: Starboard
   description: Starboard provides decentralized solutions for data analysis and management.
+email: encrypted::U2FsdGVkX18olSZoHycfv3kh6mZO/Wi7j01HF3kc27W69epSa4hSQyr/9BAWMhvH
+full-name: encrypted::U2FsdGVkX1+yUtcJnEcIhMk53OCq3FEFnDC8sAqWrqU=
 ---
 
 Starboard Ventures runs a Filecoin Dashboard and FVM Explorer.

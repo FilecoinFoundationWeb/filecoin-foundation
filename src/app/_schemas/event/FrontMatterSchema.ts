@@ -1,11 +1,12 @@
 import { z } from 'zod'
 
 import {
-  getEventsCategorySettings,
   createCategorySchema,
+  getEventsCategorySettings,
 } from '@/utils/categoryUtils'
 
-import { DynamicBaseDataSchema } from '@/schemas/dynamicDataBaseSchema'
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
+import { ScheduleSchema } from '@/schemas/event/ScheduleSchema'
 import { SpeakersSchema } from '@/schemas/event/SpeakerSchema'
 import { SponsorsSchema } from '@/schemas/event/SponsorSchema'
 
@@ -13,7 +14,7 @@ const { validCategoryIds } = getEventsCategorySettings()
 
 const categorySchema = createCategorySchema(validCategoryIds)
 
-export const FrontMatterSchema = DynamicBaseDataSchema.extend({
+export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string().optional(),
@@ -33,6 +34,7 @@ export const FrontMatterSchema = DynamicBaseDataSchema.extend({
     .optional(),
   startDate: z.coerce.date(),
   endDate: z.coerce.date().optional(),
+  schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
 })

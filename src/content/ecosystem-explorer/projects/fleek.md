@@ -28,6 +28,8 @@ seo:
   description:
     Fleek provides decentralized solutions for hosting and deploying web
     applications.
+email: encrypted::U2FsdGVkX188GCaPtuYyZHG98kM3J9jYZ9NP8wpJqn+NwL6aVntr9Ot4gzVcGz+P
+full-name: encrypted::U2FsdGVkX19FqnVuzWa7Yt0cWjEALwzVvL+VXRz0uSs=
 ---
 
 Fleek ​​allows users to host websites, store and deliver files, and develop dapps for the decentralized web. The platform provides user-friendly tools and services that enable users to implement decentralized website hosting with increased reliability and data integrity without technical complexities. Fleek leverages IPFS to let users deploy websites without needing to store anything on their own server or with centralized web hosting services, and provides automatic archiving on Filecoin (with no extra cost).

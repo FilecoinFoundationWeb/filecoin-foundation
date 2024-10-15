@@ -8,7 +8,7 @@ import { graphicsData } from '@/data/graphicsData'
 import {
   type SeoMetadata,
   SeoMetadataSchema,
-} from '@/schemas/seoMetadataSchema'
+} from '@/schemas/SeoMetadataSchema'
 
 type CreateMetadataProps = {
   seo: SeoMetadata

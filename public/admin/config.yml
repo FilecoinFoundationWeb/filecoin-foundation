@@ -70,6 +70,7 @@ image_config: &image_config
   label: "Image"
   widget: "object"
   required: false
+  collapsed: true
   hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
   fields:
     - name: "src"
@@ -271,8 +272,16 @@ collections:
 
       - name: "governance"
         label: "Governance"
-        file: "src/content/pages/governance.md"
+        file: "src/content/pages/governance/governance.md"
         preview_path: "governance"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "govhub"
+        label: "Governance - GovHub"
+        file: "src/content/pages/governance/govhub.md"
+        preview_path: "governance/govhub"
         fields:
           - *header_config
           - *meta_config
@@ -730,6 +739,7 @@ collections:
         label: "External Link URL"
         widget: "object"
         required: false
+        collapsed: true
         fields:
           - name: "url"
             label: "URL"
@@ -741,6 +751,7 @@ collections:
             required: false
             default: "View Event Details"
             hint: "Text for the external link CTA. Please use proper capitalization. Defaults to 'View Event Details.'"
+      - *image_config
       - name: "luma-calendar-link"
         label: "Luma Calendar URL"
         widget: "string"
@@ -750,19 +761,62 @@ collections:
         label: "Luma Events Section"
         widget: "object"
         required: false
-        hint: Both the section title and the embed URL must be filled out for this section to appear on the page.
+        collapsed: true
+        hint: The embed URL must be filled out for this section to appear on the page.
         fields:
           - name: "title"
             label: "Section Title"
             widget: "string"
             required: false
-            hint: This is the title for the section header. For example, "FIL Bangkok 2024 Events."
+            hint: This is the title for the Events section header. For example, "Main Stage Events." Defaults to 'Events.'
           - name: "embed-link"
             label: "Luma Embed URL"
             widget: "string"
             required: false
             hint: Paste the embed URL for your Luma event here to display the events directly on the page. Include relevant tags when appropriate, e.g., https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024.
-      - *image_config
+      - name: "schedule"
+        label: "Schedule"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+            required: false
+            hint: This is the title for the Schedule section header. For example, "Main Stage Schedule." Defaults to 'Schedule.'
+          - name: "days"
+            label: "Event Days"
+            widget: "list"
+            required: false
+            fields:
+              - name: "date"
+                label: "Date"
+                widget: "datetime"
+              - name: "events"
+                label: "Events"
+                widget: "list"
+                fields:
+                  - name: "title"
+                    label: "Event Title"
+                    widget: "string"
+                  - name: "description"
+                    label: "Description"
+                    widget: "text"
+                  - name: "start"
+                    label: "Start Time"
+                    widget: "datetime"
+                  - name: "end"
+                    label: "End Time"
+                    widget: "datetime"
+                    required: false
+                  - name: "location"
+                    label: "Location"
+                    widget: "string"
+                  - name: "url"
+                    label: "URL"
+                    widget: "string"
+                    required: false
       - name: "speakers"
         label: "Speakers"
         widget: "list"
@@ -783,7 +837,7 @@ collections:
           - name: "image"
             label: "Image"
             widget: "object"
-            required: false
+            collapsed: true
             fields:
               - name: "src"
                 label: "URL"
@@ -796,6 +850,7 @@ collections:
         label: "Sponsors"
         widget: "object"
         required: false
+        collapsed: true
         fields:
           - name: "first-tier"
             label: "First Tier"

@@ -20,6 +20,8 @@ subcategories:
 seo:
   title: Leto
   description: Leto offers decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX18QGOOEY3JHr+/PSBmxUNnXl1zFTGdGW2K2NRqqEsJCKNZsGuYPcnRf
+full-name: encrypted::U2FsdGVkX1+hd/xy/g0wTtPVB1N1WRZT1yVgHDi/Glc=
 ---
 
 Leto is an open-source, community-operated Metrics Engine built for the Open-Web and its users. Leto empowers developers and users by providing insights about data stored on IPFS by making it easy to collect anonymized information about IPFS content and generate insights needed to grow and protect applications, websites, NFTs, and more.

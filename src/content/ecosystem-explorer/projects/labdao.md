@@ -22,6 +22,8 @@ seo:
   description:
     LabDAO provides decentralized science solutions for data management
     and collaboration.
+email: encrypted::U2FsdGVkX195rqQ8L4zFTii2U3TzpNKhXzUfLg+4OkwNvtuIOZ5gTBMmSGsIEptE
+full-name: encrypted::U2FsdGVkX19QBpaoB//hP17xgdNpWzvgpUV+Ekn3wkc=
 ---
 
 LabDAO is an online organization of scientists and engineers, whose goal is to make BioML tools more accessible and clinically relevant. By breaking down barriers caused by poor usability and niche expertise, LabDAO aims to unlock progress in the field.

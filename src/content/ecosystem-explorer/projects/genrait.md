@@ -24,6 +24,8 @@ seo:
   description:
     GenRAIT offers decentralized solutions for genomic data storage and
     analysis.
+email: encrypted::U2FsdGVkX1+e92mPVKtgoWSiS9D6+7hV55R7edFF9hrk1pSGmMcgwrcw3hOXy5bs
+full-name: encrypted::U2FsdGVkX1+ELols0jrn98F3/V1Q87RiPwf8mp1J4L8=
 ---
 
 GenRAIT gives scientists a platform to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem. GenRAIT hosts genome research data on the Filecoin network, and enables scientists and researchers to upload their own genomic files they then can retrieve, analyze, and put into action. For GenRAIT, the Filecoin network is a Web3 solution that can scale with its data.

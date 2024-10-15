@@ -26,6 +26,8 @@ seo:
   description:
     Easier Data Initiative offers decentralized solutions for data management
     and accessibility.
+email: encrypted::U2FsdGVkX19MQx0QYy4lQLeHYmwx4egQPzYj0lmINooWJoMltHuSLgvip0LcsAry
+full-name: encrypted::U2FsdGVkX1+5OcVR8eSMSSlgLKtr/keF7zL39exJqI0=
 ---
 
 The EASIER Data Initiative, formed through a collaboration between researchers within the University of Maryland Department of Geographical Sciences and Filecoin Foundation for the Decentralized Web (FFDW), develops decentralized infrastructure for onloading and extracting large amounts of geospatial data using the Filecoin network. This effort aims to transform data access and computation in the geospatial field. They have also launched the world’s first Decentralized Geospatial Web Working Group for researchers and academics to highlight opportunities and challenges towards a decentralized geospatial web ecosystem.

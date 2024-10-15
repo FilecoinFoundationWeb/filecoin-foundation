@@ -21,4 +21,6 @@ seo:
   description:
     Flame Launch provides decentralized solutions for project launches
     and token sales.
+email: encrypted::U2FsdGVkX1+CdqpImk680chfXblOf+SsqHXgMlmTJ6xUpuXnbAGq6h6jNVlat3/1
+full-name: encrypted::U2FsdGVkX1+dIPhm9TE5Ly6Vfe9TyRJqiFRQL0U4dEE=
 ---

@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/types/sharedProps/imageType'
+import type { StaticImageProps } from '@/types/imageType'
 
 import audienceSeatedLargeAuditoriumImg from '@/assets/orbit/goals/audience-seated-large-auditorium.jpg'
 import speakerPresentationNewsPaperImg from '@/assets/orbit/goals/speaker-presentation-newspaper-tech-event.jpg'

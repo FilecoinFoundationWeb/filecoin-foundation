@@ -25,6 +25,8 @@ seo:
   description:
     Numbers Protocol offers decentralized solutions for digital asset verification
     and management.
+email: encrypted::U2FsdGVkX18VadWMEQdZNp25VoXN5f07BckhHYARpnQd/D/5YLA0agf51A/bVNPl
+full-name: encrypted::U2FsdGVkX18uODx47GCSrZPd+7kRDwAIvTCU8xHP+yc=
 ---
 
 Numbers Protocol is an open and decentralized network designed to ensure provenance for creative works created by humans and AI. Numbers creates an immutable record of attribution and ownership of public and private assets, such as images, videos, and NFTs, to verify the authenticity and value of digital collections. The Capture App — a blockchain-based camera application built on Numbers — allows users to store photos securely in the Filecoin ecosystem.

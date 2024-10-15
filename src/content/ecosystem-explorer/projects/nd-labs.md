@@ -21,6 +21,8 @@ subcategories:
 seo:
   title: ND Labs
   description: ND Labs provides decentralized solutions for data storage and management.
+email: encrypted::U2FsdGVkX19aF+TR5qU+/vEq7+cSaLdXyZtE5YUqjnsji0cgqfu97Bk5f+fNYULF
+full-name: encrypted::U2FsdGVkX18f44ABIGpWuLd5IYjA63SQngUBa6lqsFc=
 ---
 
 ND LABS is a DePIN service provider with decentralized storage nodes across Hong Kong, Singapore, North America, and the United Arab Emirates. Our aim is to eliminate the barriers and reduce costs when accessing decentralized storage networks.

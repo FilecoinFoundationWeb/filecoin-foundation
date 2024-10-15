@@ -20,6 +20,8 @@ seo:
   title: Ecko
   description: Ecko offers decentralized solutions for blockchain infrastructure
     and development.
+email: encrypted::U2FsdGVkX1//Xw16FyGK/X/HsElvHjvv0SeKrE+6BD4hBydwvd9lnF2l7H+iRCtp
+full-name: encrypted::U2FsdGVkX1/LcCc3/x2QAmc9bYv364RTLfL+/+JAit8=
 ---
 
 Ecko is a creative agency and a collaboration platform that seeks to empower and connect artists & fans around the world.

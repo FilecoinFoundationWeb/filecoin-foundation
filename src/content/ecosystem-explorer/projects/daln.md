@@ -21,6 +21,8 @@ year-joined: 2024-04-03T16:51:43.504Z
 seo:
   title: DALN
   description: DALN offers decentralized solutions for data archiving and long-term storage.
+email: encrypted::U2FsdGVkX1+xqqnoLLCnwwXss3cQyj0pA58MFsGD58T619nPMRCY82kIPvg93L5f
+full-name: encrypted::U2FsdGVkX1+dHmXUnjOw8mGZA/bMG8QtaPhPMX02PqE=
 ---
 
 DALN (Data as Labor Network) represents a paradigm shift from viewing user-generated data as free capital to recognizing it as labor that should be fairly compensated through a data DAO that empowers consumers to turn their credit card transaction data into assets and have direct control over the use and monetization of their data.

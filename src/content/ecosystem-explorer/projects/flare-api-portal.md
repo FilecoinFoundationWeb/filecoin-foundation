@@ -27,6 +27,8 @@ seo:
   description:
     Flare API Portal offers decentralized API solutions for blockchain
     applications.
+email: encrypted::U2FsdGVkX1+5WoCAurRXO9miJZfKlzsDLhfMtpcMPEq4AJCgmMOXjKaMIVU2C5yB
+full-name: encrypted::U2FsdGVkX1+t8VmKnPxE4WfD0R7RCPKdQiXb68aYWCQ=
 ---
 
 The API Portal from Flare Labs serving the Flare Networks community with Web3 APIs from all of Flare's chains, explorers, connected chains, and more. Create multichain dapps with future-proof tools & interact with 20+ blockchains, including Filecoin, seamlessly.
