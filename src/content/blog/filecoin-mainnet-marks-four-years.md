@@ -22,7 +22,7 @@ This month on October 15, we’re thrilled to celebrate the anniversary of Filec
 
 Today, we say a huge thank you to the incredible Filecoin community of builders, storage providers, data clients, and all those who are helping shape the future of the web.
 
-To catch up on the biggest developments taking place across this growing ecosystem, Filecoin Foundation is launching a [Quarterly Report](https://www.fil.org/blog/filecoin-foundation-quarterly-report-october-2024) for insights into the latest trends, network developments, and much more.
+To catch up on the biggest developments taking place across this growing ecosystem, Filecoin Foundation is launching a [Quarterly Update](https://www.fil.org/blog/filecoin-foundation-quarterly-report-october-2024) for insights into the latest trends, network developments, and much more.
 
 Let’s take a look at the highlights from the past year and check out what’s in store for the year ahead:
 
