@@ -21,7 +21,7 @@ const OptionSchema = z
     id: z.string(),
     name: z.string(),
   })
-  .refine(validateListboxSelected, {
+  .refine(validateOptionSelected, {
     message: 'Please select an option',
   })
 
@@ -59,10 +59,9 @@ export const EcosystemProjectFormSchema = z.object({
     }),
   category: OptionSchema,
   topic: OptionSchema,
-  files: z
-    .array(z.instanceof(File))
-    .nonempty({ message: 'A logo is required' })
-    .refine(validateFileSizes, { message: 'Logo size exceeds the limit' }),
+  logo: z
+    .instanceof(File, { message: 'A logo is required' })
+    .refine(validateFileSize, { message: 'Logo size exceeds the limit' }),
   websiteUrl: z.string().url({ message: 'Invalid website URL' }),
   youtubeUrl: z
     .string()
@@ -94,12 +93,12 @@ export type EcosystemProjectFormData = z.infer<
   typeof EcosystemProjectFormSchema
 >
 
-export type EcosystemProjectFormDataWithoutFiles = Omit<
+export type EcosystemProjectFormDataWithoutLogo = Omit<
   EcosystemProjectFormData,
-  'files'
+  'logo'
 >
 
-export type EcosystemProjectFormFiles = EcosystemProjectFormData['files']
+export type EcosystemProjectFormLogoData = EcosystemProjectFormData['logo']
 
 function validateYoutubeUrlFormat(url: string) {
   return url.includes(YOUTUBE_BASE_URL)
@@ -113,8 +112,8 @@ function validateXUrlFormat(url: string) {
   return url.includes(X_BASE_URL) || url.includes(TWITTER_BASE_URL)
 }
 
-function validateFileSizes(files: Array<File>) {
-  return files.every((file) => file.size <= MAX_FILE_SIZE_IN_BYTES)
+function validateFileSize(file: File) {
+  return file.size <= MAX_FILE_SIZE_IN_BYTES
 }
 
 function validateOneCheckboxSelected(
@@ -123,6 +122,6 @@ function validateOneCheckboxSelected(
   return tech.filecoin || tech.ipfs
 }
 
-function validateListboxSelected(data: OptionType) {
+function validateOptionSelected(data: OptionType) {
   return data.id && data.name
 }

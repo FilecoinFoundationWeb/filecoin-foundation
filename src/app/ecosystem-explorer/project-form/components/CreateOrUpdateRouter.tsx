@@ -8,7 +8,7 @@ import { EcosystemProjectCreateForm } from './EcosystemProjectCreateForm'
 import { FormSection } from './FormSection'
 import { SelectProjectToUpdate } from './SelectProjectToUpdate'
 
-const URL_QUERY_NAME = 'action'
+const URL_QUERY_KEY = 'action'
 
 const actionOptions = [
   { id: 'create', name: 'Submit Project' },
@@ -19,7 +19,7 @@ const createOption = actionOptions[0]
 
 export function CreateOrUpdateRouter() {
   const [action, setAction] = useQueryState(
-    URL_QUERY_NAME,
+    URL_QUERY_KEY,
     parseAsString.withDefault(createOption.id),
   )
 

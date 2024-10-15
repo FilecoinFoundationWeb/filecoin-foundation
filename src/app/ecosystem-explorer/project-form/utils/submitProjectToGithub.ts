@@ -9,16 +9,17 @@ import { createCommit } from '../services/github/api/createCommit'
 import { createPR } from '../services/github/api/createPr'
 import { createTreeBlobs } from '../services/github/api/createTreeBlobs'
 import { getLatestCommitOnMain } from '../services/github/api/getLatestCommitOnMain'
-import type { FormattedLogo } from '../utils/fileUtils'
 
-type SubmitProjectParams = {
+import type { FormattedLogo } from './fileUtils'
+
+export type SubmitProjectParams = {
   slug: string
   markdownTemplate: string
+  prTitle: string
   logo?: {
     path: string
     base64: FormattedLogo['base64']
   }
-  prTitle: string
 }
 
 export async function submitProjectToGithub({

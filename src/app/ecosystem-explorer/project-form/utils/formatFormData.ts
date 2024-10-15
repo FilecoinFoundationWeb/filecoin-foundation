@@ -1,28 +1,29 @@
 import { createDateFromYear } from '@/utils/dateUtils'
+import { encrypt } from '@/utils/encryption'
 
-import type { EcosystemProjectFormDataWithoutFiles } from '../schema/EcosystemProjectFormSchema'
+import type { EcosystemProjectFormDataWithoutLogo } from '../schema/EcosystemProjectFormSchema'
 
 import { formatYoutubeEmbedUrl } from './formatYoutubeUrl'
 
 export type FormattedFormData = ReturnType<typeof formatFormData>
 
-export function formatFormData(data: EcosystemProjectFormDataWithoutFiles) {
+export function formatFormData(data: EcosystemProjectFormDataWithoutLogo) {
   const yearJoined = Number(data.yearJoined.name)
 
   return {
-    name: data.name.trim(),
-    email: data.email.trim(),
-    projectName: data.projectName.trim(),
+    fullName: encrypt(data.name.trim()),
+    email: encrypt(data.email.trim()),
+    title: data.projectName.trim(),
     category: data.category.id,
     subcategories: [data.topic.id],
     tech: buildArrayFromTruthyKeys(data.tech),
-    shortDescription: data.briefSummary.trim(),
-    longDescription: data.networkUseCase.trim(),
+    description: data.briefSummary.trim(),
+    content: data.networkUseCase.trim(),
     yearJoined: createDateFromYear(yearJoined),
-    websiteUrl: data.websiteUrl.trim(),
-    youtubeEmbedUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
-    githubUrl: data.githubUrl?.trim(),
-    xUrl: data.xUrl?.trim(),
+    website: data.websiteUrl.trim(),
+    videoUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
+    repo: data.githubUrl?.trim(),
+    twitter: data.xUrl?.trim(),
   }
 }
 

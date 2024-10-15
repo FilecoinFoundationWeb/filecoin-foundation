@@ -1,60 +1,64 @@
 import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 export type MarkdownTemplateParams = {
-  encryptedName: EcosystemProject['fullName']
-  encryptedEmail: EcosystemProject['email']
-  projectName: EcosystemProject['title']
-  imagePath: NonNullable<EcosystemProject['image']>['src']
+  fullName: EcosystemProject['fullName']
+  email: EcosystemProject['email']
+  title: EcosystemProject['title']
+  image: NonNullable<EcosystemProject['image']>
   category: EcosystemProject['category']
   subcategories: NonNullable<EcosystemProject['subcategories']>
   tech: EcosystemProject['tech']
-  shortDescription: EcosystemProject['description']
-  longDescription: NonNullable<EcosystemProject['content']>
+  description: EcosystemProject['description']
+  content: NonNullable<EcosystemProject['content']>
   yearJoined: NonNullable<EcosystemProject['yearJoined']>
-  websiteUrl: NonNullable<EcosystemProject['website']>
+  website: NonNullable<EcosystemProject['website']>
   createdOn: EcosystemProject['createdOn']
   updatedOn: NonNullable<EcosystemProject['updatedOn']>
   publishedOn: NonNullable<EcosystemProject['publishedOn']>
-  youtubeUrl: EcosystemProject['videoUrl']
-  githubUrl: EcosystemProject['repo']
-  xUrl: EcosystemProject['twitter']
+  // Optional values
+  videoUrl?: EcosystemProject['videoUrl']
+  repo?: EcosystemProject['repo']
+  twitter?: EcosystemProject['twitter']
+  featuredContent?: EcosystemProject['featuredContent']
 }
 
 type OptionalValues = {
-  repo: MarkdownTemplateParams['githubUrl']
-  'video-url': MarkdownTemplateParams['youtubeUrl']
-  twitter: MarkdownTemplateParams['xUrl']
+  repo: MarkdownTemplateParams['repo']
+  'video-url': MarkdownTemplateParams['videoUrl']
+  twitter: MarkdownTemplateParams['twitter']
+  'featured-content': MarkdownTemplateParams['featuredContent']
 }
 
 export function buildEcosystemMarkdownTemplate(data: MarkdownTemplateParams) {
-  const cleanDescription = stripLineBreaks(data.shortDescription)
+  const cleanDescription = stripLineBreaks(data.description)
 
   return `---
-${renderValue('title', data.projectName)}
+${renderValue('title', data.title)}
 ${renderValue('created-on', data.createdOn.toISOString())}
 ${renderValue('updated-on', data.updatedOn.toISOString())}
 ${renderValue('published-on', data.publishedOn.toISOString())}
-${renderValue('email', data.encryptedEmail)}
-${renderValue('full-name', data.encryptedName)}
+${renderValue('email', data.email)}
+${renderValue('full-name', data.fullName)}
 image:
-  ${renderValue('src', data.imagePath)}
+  ${renderValue('src', data.image.src)}
 ${renderValue('category', data.category)}
 ${renderArray('subcategories', data.subcategories)}
 ${renderValue('description', cleanDescription)}
-${renderValue('website', data.websiteUrl)}
+${renderValue('website', data.website)}
 ${renderArray('tech', data.tech)}
 ${renderValue('year-joined', data.yearJoined.toISOString())}
 ${renderOptionalValues({
-  repo: data.githubUrl,
-  'video-url': data.youtubeUrl,
-  twitter: data.xUrl,
+  repo: data.repo,
+  'video-url': data.videoUrl,
+  twitter: data.twitter,
+  'featured-content': data.featuredContent,
 })}
 seo:
-  ${renderValue('title', data.projectName)}
+  ${renderValue('title', data.title)}
   ${renderValue('description', cleanDescription)}
 ---
 
-${data.longDescription.trim()}
+${data.content.trim()}
 `
 }
 

@@ -1,12 +1,13 @@
 'use client'
 
-import { useQueryState, parseAsString } from 'nuqs'
+import { useQueryState } from 'nuqs'
 import useSWR from 'swr'
 
 import { FormCombobox } from '@/components/Form/FormCombobox'
 
-import { getProjectsData } from '../actions/getProjectsData'
+import { getProjectListData } from '../actions/getProjectListData'
 import { SWR_KEYS } from '../constants'
+import { getProjectOptions } from '../utils/getProjectOptions'
 
 import { EcosystemProjectUpdateForm } from './EcosystemProjectUpdateForm'
 import { ErrorMessage } from './ErrorMessage'
@@ -15,15 +16,15 @@ import { Loader } from './Loader'
 
 const MARKETING_DEPARTMENT_EMAIL = 'marketing@fil.org'
 
-const URL_QUERY_NAME = 'project'
+const URL_QUERY_KEY = 'project'
 
 export function SelectProjectToUpdate() {
-  const [projectSlug, setProjectSlug] = useQueryState(
-    URL_QUERY_NAME,
-    parseAsString.withDefault(''),
-  )
+  const [projectSlug, setProjectSlug] = useQueryState(URL_QUERY_KEY)
 
-  const { data: projects, error } = useSWR(SWR_KEYS.projects, getProjectsData)
+  const { data: projects, error } = useSWR(
+    SWR_KEYS.projects,
+    getProjectListData,
+  )
 
   if (!projects) {
     return <Loader />
@@ -33,18 +34,9 @@ export function SelectProjectToUpdate() {
     return <ErrorMessage message="Couldn't load projects" />
   }
 
-  const options = projects.map((project) => ({
-    id: project.slug,
-    name: project.title,
-  }))
-
   const selectedProject = projects.find(
     (project) => project.slug === projectSlug,
   )
-  const selectedOption = {
-    id: selectedProject?.slug || '',
-    name: selectedProject?.title || '',
-  }
 
   return (
     <>
@@ -66,17 +58,12 @@ export function SelectProjectToUpdate() {
       >
         <FormCombobox
           label="Select Your Project"
-          options={options}
-          value={selectedOption}
-          onChange={(option) => {
-            if (option) {
-              setProjectSlug(option.id)
-            }
-
-            if (!option) {
-              setProjectSlug('')
-            }
+          options={getProjectOptions(projects)}
+          value={{
+            id: selectedProject?.slug || '',
+            name: selectedProject?.title || '',
           }}
+          onChange={(option) => setProjectSlug(option?.id || null)}
         />
       </FormSection>
 

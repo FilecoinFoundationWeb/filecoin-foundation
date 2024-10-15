@@ -2,19 +2,11 @@ import path from 'path'
 
 import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
-import type { EcosystemProjectFormFiles } from '../schema/EcosystemProjectFormSchema'
-
-export type AllowedImageFormats = (typeof ALLOWED_IMAGE_FORMATS)[number]
+import type { EcosystemProjectFormLogoData } from '../schema/EcosystemProjectFormSchema'
 
 export type FormattedLogo = Awaited<ReturnType<typeof formatLogo>>
 
-export async function formatLogo(files: EcosystemProjectFormFiles) {
-  const logo = files[0]
-
-  if (!logo) {
-    throw new Error('No logo found')
-  }
-
+export async function formatLogo(logo: EcosystemProjectFormLogoData) {
   const base64 = await convertToBase64(logo)
   const format = getFileFormat(logo.name)
 
@@ -26,10 +18,11 @@ export async function buildTemporaryLogoFile(image: EcosystemProject['image']) {
     return
   }
 
+  const dummyFileName = 'temporaryLogo'
   const response = await fetch(image.src)
   const blob = await response.blob()
 
-  return new File([blob], image.src, { type: blob.type })
+  return new File([blob], dummyFileName, { type: blob.type })
 }
 
 function convertToBase64(file: File): Promise<string> {

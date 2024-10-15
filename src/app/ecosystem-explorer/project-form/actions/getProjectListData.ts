@@ -2,6 +2,6 @@
 
 import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
-export async function getProjectsData() {
+export async function getProjectListData() {
   return getEcosystemProjectsData()
 }
