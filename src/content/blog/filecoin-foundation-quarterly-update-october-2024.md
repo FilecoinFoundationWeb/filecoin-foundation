@@ -1,5 +1,5 @@
 ---
-title: "Filecoin Foundation Quarterly Update: October 2024 "
+title: "Filecoin Foundation Quarterly Update: October 2024"
 created-on: 2024-10-14T10:20:00.000Z
 updated-on: 2024-10-14T10:20:00.000Z
 published-on: 2024-10-14T10:20:00.000Z
@@ -15,6 +15,7 @@ seo:
     updates designed to hone in on different trends across our ecosystem. "
   title: "Filecoin Foundation Quarterly Update: October 2024"
 ---
+
 ## Empowering AI through Decentralization and Innovation
 
 Twenty years ago, Web2 ushered in greater interactivity and collaboration on the web. It also gave rise to a few dominant players across the web who centralized control over networks and information online. Today, artificial intelligence (AI) is at risk of following a similar, centralized path. Major AI developers are [locking down their data and code](https://www.vice.com/en/article/5d3naz/openai-is-now-everything-it-promised-not-to-be-corporate-closed-source-and-for-profit), leaving builders and consumers with little visibility into how models function. The integrity of any AI model relies heavily on transparency around how it’s developed, what data it relies on, and how it operates. Yet, the current trend toward centralization and opacity threatens to [erode global trust in AI](https://assets.kpmg.com/content/dam/kpmg/au/pdf/2023/trust-in-ai-global-insights-2023.pdf).
@@ -29,14 +30,14 @@ This month, Filecoin Foundation (FF) is launching quarterly updates designed to 
 
 ## Filecoin is Key Infrastructure for Decentralized AI
 
-At a time when tech giants are [investing billions](https://www.datacenterdynamics.com/en/news/meta-plans-37bn-digital-infrastructure-investment-in-2024/) in [additional storage infrastructure](https://www.cbre.com/insights/reports/global-data-center-trends-2024) to account for [growing market demand](https://www.statista.com/outlook/tmo/data-center/storage/worldwide#revenue), the Filecoin network is designed to scale, built to accommodate storage in the petabyte or even exbibyte level — that’s more than one [quadrillion pages of plain-text type](https://www.techtarget.com/searchstorage/definition/exbibyte-EiB#:~:text=An%20exbibyte%20(EiB)%20is%20a,260%20or%201,152,921,504,606,846,976%20bytes).
+At a time when tech giants are [investing billions](https://www.datacenterdynamics.com/en/news/meta-plans-37bn-digital-infrastructure-investment-in-2024/) in [additional storage infrastructure](https://www.cbre.com/insights/reports/global-data-center-trends-2024) to account for [growing market demand](https://www.statista.com/outlook/tmo/data-center/storage/worldwide#revenue), the Filecoin network is designed to scale, built to accommodate storage in the petabyte or even exbibyte level — that’s more than one [quadrillion pages of plain-text type](<https://www.techtarget.com/searchstorage/definition/exbibyte-EiB#:~:text=An%20exbibyte%20(EiB)%20is%20a,260%20or%201,152,921,504,606,846,976%20bytes>).
 
 Filecoin offers other benefits for AI networks, too, including:
 
-* **Immutability and Proof of Storage:** A key advantage of Filecoin’s crypto-powered storage network is its built-in immutability, which provides a tamper-proof record or data provenance and usage. For AI, this ensures that records, datasets, or computations stored on the Filecoin network maintain a transparent history, supporting the development of trustworthy and transparent AI systems.
-* **Transparency, Provenance, and Authentication:** An open and robust record of AI data provenance and lineage, and assurance that data has not been tampered with, combats bias and promotes audibility and trust.
-* **Resilience:** Decentralized storage technologies like Filecoin rely on a robust network of storage providers around the globe to store multiple copies of data, rather than large corporations susceptible to single points of failure.
-* **Customization and Flexibility:** Organizations have control over how and where their data is stored, which can be tailored to meet specific compliance and performance needs.
+- **Immutability and Proof of Storage:** A key advantage of Filecoin’s crypto-powered storage network is its built-in immutability, which provides a tamper-proof record or data provenance and usage. For AI, this ensures that records, datasets, or computations stored on the Filecoin network maintain a transparent history, supporting the development of trustworthy and transparent AI systems.
+- **Transparency, Provenance, and Authentication:** An open and robust record of AI data provenance and lineage, and assurance that data has not been tampered with, combats bias and promotes audibility and trust.
+- **Resilience:** Decentralized storage technologies like Filecoin rely on a robust network of storage providers around the globe to store multiple copies of data, rather than large corporations susceptible to single points of failure.
+- **Customization and Flexibility:** Organizations have control over how and where their data is stored, which can be tailored to meet specific compliance and performance needs.
 
 ![](/assets/images/frame-5-1-.webp)
 
@@ -44,10 +45,10 @@ Filecoin offers other benefits for AI networks, too, including:
 
 FF recently [announced collaborations](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and [Aethir](https://cryptobriefing.com/aethir-filecoin-collaboration-gpu/), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin networks’ decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
 
-* SingularityNET: SingularityNET and FF are collaborating to store metadata on Filecoin via Lighthouse, enhancing the security and provenance of decentralized data storage.
-* Theoriq: FF and Theoriq are developing AI agents trained on open datasets stored on Filecoin, including a current project enabling natural language queries for Filecoin docs and a proposed project leveraging declassified CIA datasets for efficient and verifiable research.
-* Bagel: In collaboration with Bagel, FF is enabling AI developers to train and store models using Filecoin’s decentralized compute and storage network, optimizing resource utilization for machine learning workloads and driving the adoption of decentralized infrastructure.
-* Nuklai: Nuklai has integrated Filecoin to make metadata publicly accessible and is exploring Filecoin as a core storage cluster for enterprise use cases, offering secure, perpetual, and decentralized data storage.
+- SingularityNET: SingularityNET and FF are collaborating to store metadata on Filecoin via Lighthouse, enhancing the security and provenance of decentralized data storage.
+- Theoriq: FF and Theoriq are developing AI agents trained on open datasets stored on Filecoin, including a current project enabling natural language queries for Filecoin docs and a proposed project leveraging declassified CIA datasets for efficient and verifiable research.
+- Bagel: In collaboration with Bagel, FF is enabling AI developers to train and store models using Filecoin’s decentralized compute and storage network, optimizing resource utilization for machine learning workloads and driving the adoption of decentralized infrastructure.
+- Nuklai: Nuklai has integrated Filecoin to make metadata publicly accessible and is exploring Filecoin as a core storage cluster for enterprise use cases, offering secure, perpetual, and decentralized data storage.
 
 Looking ahead, as new blockchain networks and layer-2s gain traction, Filecoin can be deeply embedded within their architectures, serving as a reliable and trustless storage layer. With the emergence of more AI tools, Filecoin can serve as an ideal storage option to support data verifiability and traceability.
 
@@ -117,9 +118,9 @@ FF [debuted Metropolis](https://fil.org/blog/empowering-governance-the-launch-of
 
 As the network welcomes new builders and wider adoption, FF introduced three community groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG).
 
-* [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
-* [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.
-* [The DCWG](dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
+- [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
+- [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.
+- [The DCWG](dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
 
 ![](/assets/images/fip.webp)
 

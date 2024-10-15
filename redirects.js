@@ -155,6 +155,11 @@ const redirects = [
     permanent: true,
   },
   {
+    source: '/blog/filecoin-foundation-quarterly-report-october-2024',
+    destination: '/blog/filecoin-foundation-quarterly-update-october-2024',
+    permanent: true,
+  },
+  {
     source: '/blog/guest-post-if-the-library-of-alexandra-were-built-better',
     destination:
       '/blog/guest-post-if-the-library-of-alexandria-were-built-better',
