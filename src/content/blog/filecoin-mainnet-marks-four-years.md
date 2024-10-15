@@ -9,7 +9,7 @@ description: This month on October 15, we’re thrilled to celebrate the
   Filecoin network has grown tremendously, becoming the world’s largest
   decentralized storage network.
 image:
-  src: /assets/images/anniversarypost.webp
+  src: /assets/images/ma-blogheader-fixed.webp
 seo:
   twitter:
     card: summary
