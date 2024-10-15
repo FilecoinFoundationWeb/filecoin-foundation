@@ -14,12 +14,10 @@ seo:
   twitter:
     card: summary
   title: Filecoin Mainnet Marks Four Years
-  description:
-    Today, we say a huge thank you to the incredible Filecoin community
+  description: Today, we say a huge thank you to the incredible Filecoin community
     of builders, storage providers, data clients, and all those who are helping
     shape the future of the web.
 ---
-
 This month on October 15, we’re thrilled to celebrate the anniversary of Filecoin’s Mainnet launch! Over the past four years, the Filecoin network has grown tremendously, becoming the world’s largest decentralized storage network.
 
 Today, we say a huge thank you to the incredible Filecoin community of builders, storage providers, data clients, and all those who are helping shape the future of the web.
@@ -36,9 +34,7 @@ In January, Filecoin Foundation announced a successful first-of-its-kind mission
 
 ![](/assets/images/ipfs-transmission.webp)
 
-“Today’s centralized Internet model doesn’t work in space. On today’s Internet, every time you click something, that data has to be retrieved from a centralized server; if you’re on the Moon, there will be a multi-second delay with every click, as content is retrieved from Earth. Using IPFS, data does not need to go back and forth from Earth with every click; instead, when you put in an IPFS ‘content ID,’ that content is retrieved from wherever is closest, rather than being retrieved from a particular server in a particular place. That means if someone else nearby on the Moon has already retrieved that data, the data only has to travel a short distance and can get to you quickly instead of traveling back and forth from Earth with every click.”
-
-— Marta Belcher, President and Chair of Filecoin Foundation
+> Today’s centralized Internet model doesn’t work in space. On today’s Internet, every time you click something, that data has to be retrieved from a centralized server; if you’re on the Moon, there will be a multi-second delay with every click, as content is retrieved from Earth. Using IPFS, data does not need to go back and forth from Earth with every click; instead, when you put in an IPFS ‘content ID,’ that content is retrieved from wherever is closest, rather than being retrieved from a particular server in a particular place. That means if someone else nearby on the Moon has already retrieved that data, the data only has to travel a short distance and can get to you quickly instead of traveling back and forth from Earth with every click. — Marta Belcher, President and Chair of Filecoin Foundation
 
 ![](/assets/images/juan-breakpoint.webp)
 
