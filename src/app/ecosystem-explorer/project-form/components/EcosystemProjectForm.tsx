@@ -1,4 +1,5 @@
 'use client'
+import { useRef } from 'react'
 
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -26,8 +27,10 @@ import {
 import {
   EcosystemProjectFormSchema,
   type EcosystemProjectFormData,
-  type EcosystemProjectFormDataWithoutFiles,
+  type EcosystemProjectFormDataWithoutLogo,
+  type EcosystemProjectFormLogoData,
 } from '../schema/EcosystemProjectFormSchema'
+import type { SubmitOption } from '../types'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
@@ -38,9 +41,9 @@ import { Loader } from './Loader'
 type StringOrUndefined = string | undefined
 
 type EcosystemProjectFormProps = {
-  initialFormData: EcosystemProjectFormDataWithoutFiles
-  logo?: File
-  onSubmit: (formData: EcosystemProjectFormData) => void
+  initialFormData: EcosystemProjectFormDataWithoutLogo
+  logo?: EcosystemProjectFormLogoData
+  onSubmit: (formData: EcosystemProjectFormData, option: SubmitOption) => void
   isUpdateForm?: boolean
 }
 
@@ -50,6 +53,8 @@ export function EcosystemProjectForm({
   isUpdateForm,
   onSubmit,
 }: EcosystemProjectFormProps) {
+  const logoUpdateState = useRef<boolean>(false)
+
   const { data: categories, error } = useSWR(
     SWR_KEYS.categories,
     getCategoryData,
@@ -57,10 +62,7 @@ export function EcosystemProjectForm({
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
-    defaultValues: {
-      ...initialFormData,
-      files: logo ? [logo] : [],
-    },
+    defaultValues: { ...initialFormData, logo },
   })
 
   if (!categories) {
@@ -76,12 +78,19 @@ export function EcosystemProjectForm({
   const subCategoryOptions = getOptionsFromObject(categories.subCategoryData)
 
   const isSubmitting = form.formState.isSubmitting
+  const logoHasChanged = form.formState.dirtyFields.logo
+
+  if (logoHasChanged && isUpdateForm) {
+    logoUpdateState.current = true
+  }
 
   return (
     <ControlledForm<EcosystemProjectFormData>
       form={form}
       className="md:max-w-readable"
-      onSubmit={onSubmit}
+      onSubmit={(data) =>
+        onSubmit(data, { logoIsUpdated: logoUpdateState.current })
+      }
     >
       <FormSection
         title="Personal Information"
@@ -177,7 +186,7 @@ export function EcosystemProjectForm({
         </div>
 
         <ControlledFormFileInput<EcosystemProjectFormData>
-          name="files"
+          name="logo"
           label="Choose a Logo for your project"
           accept={['.png', '.jpg', '.svg', '.webp']}
           maxSize={MAX_FILE_SIZE_IN_BYTES}

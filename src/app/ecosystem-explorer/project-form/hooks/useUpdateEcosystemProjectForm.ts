@@ -5,75 +5,55 @@ import slugify from 'slugify'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { buildMarkdownTemplate } from '../actions/buildMarkdownTemplate'
-import { getFolderPaths } from '../actions/getFolderPaths'
 import { getProjectData } from '../actions/getProjectData'
-import { submitProjectToGithub } from '../actions/submitProjectToGithub'
+import { submitProjectWithLogo } from '../actions/submitProjectWithLogo'
+import { submitProjectWithoutNewLogo } from '../actions/submitProjectWithoutNewLogo'
 import type { EcosystemProjectFormData } from '../schema/EcosystemProjectFormSchema'
+import type { SubmitOption } from '../types'
 import { formatLogo } from '../utils/fileUtils'
-import { formatFormData } from '../utils/formatFormData'
 
 export function useUpdateEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
 
-  return async function update(formData: EcosystemProjectFormData) {
-    const { files, ...formDataWithoutFiles } = formData
-    const nowTimestamp = new Date()
+  return async function update(
+    formData: EcosystemProjectFormData,
+    option: SubmitOption,
+  ) {
+    const { logo, ...formDataWithoutLogo } = formData
+    const { logoIsUpdated } = option
 
+    const nowTimestamp = new Date()
     const slug = slugify(formData.projectName, { lower: true, strict: true })
 
     try {
-      const { image, createdOn, publishedOn, tags } = await getProjectData(slug)
-      const formattedLogo = await formatLogo(files)
-      const formattedData = formatFormData(formDataWithoutFiles)
+      const existingProjectData = await getProjectData(slug)
 
-      const logoIsTheSame = formattedLogo.name === image?.src
+      const timestamps = {
+        createdOn: existingProjectData.createdOn,
+        updatedOn: nowTimestamp,
+        publishedOn: existingProjectData.publishedOn || nowTimestamp,
+      }
 
-      if (logoIsTheSame) {
-        const markdownTemplate = await buildMarkdownTemplate({
-          formattedData,
-          imagePath: image.src,
-          tags,
-          timestamps: {
-            createdOn,
-            updatedOn: nowTimestamp,
-            publishedOn: publishedOn || nowTimestamp,
-          },
-        })
-
-        const pullRequest = await submitProjectToGithub({
-          slug,
-          markdownTemplate,
+      if (!logoIsUpdated && existingProjectData.image) {
+        const pullRequest = await submitProjectWithoutNewLogo({
+          formDataWithoutLogo,
+          existingProjectData,
+          image: existingProjectData.image,
+          timestamps,
           prTitle: 'Ecosystem Project Update',
         })
 
-        return updateSearchParams({
-          status: 'success',
-          prNumber: pullRequest.number,
-        })
+        updateSearchParams({ status: 'success', prNumber: pullRequest.number })
+        return
       }
 
-      // Tnis is duplicated from the create function
-      const { assetsFolder, publicAssetsFolder } = await getFolderPaths()
-      const assetPath = `${assetsFolder}/${slug}.${formattedLogo.format}`
-      const publicAssetPath = `${publicAssetsFolder}/${slug}.${formattedLogo.format}`
+      const formattedLogo = await formatLogo(logo)
 
-      const markdownTemplate = await buildMarkdownTemplate({
-        formattedData,
-        imagePath: assetPath,
-        tags,
-        timestamps: {
-          updatedOn: nowTimestamp,
-          createdOn,
-          publishedOn: publishedOn || nowTimestamp,
-        },
-      })
-
-      const pullRequest = await submitProjectToGithub({
-        slug,
-        markdownTemplate,
-        logo: { base64: formattedLogo.base64, path: publicAssetPath },
+      const pullRequest = await submitProjectWithLogo({
+        formattedLogo,
+        formDataWithoutLogo,
         prTitle: 'Ecosystem Project Update',
+        timestamps,
       })
 
       updateSearchParams({ status: 'success', prNumber: pullRequest.number })

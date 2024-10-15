@@ -2,7 +2,7 @@
 
 import type { EcosystemProject } from '@/types/ecosystemProjectType'
 
-import type { EcosystemProjectFormDataWithoutFiles } from '../schema/EcosystemProjectFormSchema'
+import type { EcosystemProjectFormDataWithoutLogo } from '../schema/EcosystemProjectFormSchema'
 import { formatYoutubeUrl } from '../utils/formatYoutubeUrl'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 
@@ -12,7 +12,7 @@ const emptyOption = { id: '', name: '' }
 
 export async function getInitialFormData(
   data?: EcosystemProject,
-): Promise<EcosystemProjectFormDataWithoutFiles> {
+): Promise<EcosystemProjectFormDataWithoutLogo> {
   const isCreateStep = !data
 
   if (isCreateStep) {
@@ -60,16 +60,16 @@ export async function getInitialFormData(
   return {
     name: '',
     email: '',
-    projectName: data.title,
+    projectName: data.title.trim(),
     tech,
     yearJoined,
-    briefSummary: data.description,
+    briefSummary: data.description.trim(),
     networkUseCase: data.content?.trim() || '',
     category,
     topic,
-    websiteUrl: data.website || '',
+    websiteUrl: data.website?.trim() || '',
     youtubeUrl: formatYoutubeUrl(data.videoUrl),
-    githubUrl: data.repo || '',
-    xUrl: data.twitter || '',
+    githubUrl: data.repo?.trim() || '',
+    xUrl: data.twitter?.trim() || '',
   }
 }
