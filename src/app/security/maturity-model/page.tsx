@@ -16,9 +16,9 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { CoreFunctions } from './components/CoreFunctions'
-import { applicationAndUseData } from './data/applicationAndUseData'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { CoreFunctions } from '@/security/maturity-model/components/CoreFunctions'
+import { applicationAndUseData } from '@/security/maturity-model/data/applicationAndUseData'
+import { generateStructuredData } from '@/security/maturity-model/utils/generateStructuredData'
 
 const DynamicTableOfContents = dynamic(
   () =>

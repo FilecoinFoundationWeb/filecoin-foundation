@@ -3,21 +3,21 @@ import { formatISO } from 'date-fns'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { getAllDigestArticleData } from '@/utils/getDigestArticleData'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-import { getEventsData } from '@/utils/getEventData'
-
 import type { DynamicBaseData } from '@/schemas/DynamicDataBaseSchema'
 
-type GenericEntryData = Pick<DynamicBaseData, 'updatedOn'> & { slug: string }
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { getAllDigestArticleData } from '@/digest/utils/getDigestArticleData'
+import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
+import { getEventsData } from '@/events/utils/getEventData'
+
+type GenericEntryData = Pick<DynamicBaseData, 'updated-on'> & { slug: string }
 
 function generateDynamicRoutes<T extends GenericEntryData>(
   data: Array<T>,
   basePath: string,
 ) {
   return data.map((item) => {
-    const lastModifiedDate = formatISO(item.updatedOn || new Date())
+    const lastModifiedDate = formatISO(item['updated-on'] || new Date())
 
     return {
       url: `${BASE_URL}${basePath}/${item.slug}`,

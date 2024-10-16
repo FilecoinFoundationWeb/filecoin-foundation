@@ -9,7 +9,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -24,10 +23,11 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
-import { applicationProcessData } from './data/applicationProcessData'
-import { opportunitiesData } from './data/opportunitiesData'
-import { submissionCriteriaData } from './data/submissionCriteriaData'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
+import { applicationProcessData } from '@/grants/data/applicationProcessData'
+import { opportunitiesData } from '@/grants/data/opportunitiesData'
+import { submissionCriteriaData } from '@/grants/data/submissionCriteriaData'
+import { generateStructuredData } from '@/grants/utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 const { featured_grant_graduates, header, seo } = attributes

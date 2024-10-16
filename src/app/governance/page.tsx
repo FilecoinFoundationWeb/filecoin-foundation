@@ -14,9 +14,9 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { CTAPageSection } from './components/CTAPageSection'
-import { governanceDocsData } from './data/governanceDocsData'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { CTAPageSection } from '@/governance/components/CTAPageSection'
+import { governanceDocsData } from '@/governance/data/governanceDocsData'
+import { generateStructuredData } from '@/governance/utils/generateStructuredData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata({

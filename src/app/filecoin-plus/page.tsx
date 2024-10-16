@@ -22,9 +22,9 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
-import { aboutData } from './data/aboutData'
-import { applicationData } from './data/applicationData'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { aboutData } from '@/filecoin-plus/data/aboutData'
+import { applicationData } from '@/filecoin-plus/data/applicationData'
+import { generateStructuredData } from '@/filecoin-plus/utils/generateStructuredData'
 
 const { header, seo } = attributes
 

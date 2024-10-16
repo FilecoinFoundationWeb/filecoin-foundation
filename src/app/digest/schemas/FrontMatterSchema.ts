@@ -1,9 +1,9 @@
 import { z } from 'zod'
 
-import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 
-export const DigestArticleFrontMatterSchema = BaseDataSchemaKebabCase.extend({
+export const DigestArticleFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   'issue-number': z.string(),
   'article-number': z.number(),

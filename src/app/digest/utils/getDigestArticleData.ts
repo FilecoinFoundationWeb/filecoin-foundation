@@ -4,12 +4,11 @@ import { PATHS } from '@/constants/paths'
 
 import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
-import { DigestArticleFrontMatterSchema } from '@/schemas/DigestArticleFrontMatterSchema'
-
+import { DigestArticleFrontMatterSchema } from '@/digest/schemas/FrontMatterSchema'
 import { sortArticlesByNumber } from '@/digest/utils/sortArticlesByNumber'
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
-const CONTENT_PREVIEW_CHARACTER_LENGTH = 220
+const DESCRIPTION_PREVIEW_MAX_LENGTH = 220
 
 export function getDigestArticleData(slug: string) {
   return getMarkdownData({
@@ -36,10 +35,7 @@ export function getAllDigestArticleDataSortedByNumber() {
 }
 
 function generatePreviewDescription(content: string) {
-  const truncatedContent = truncateText(
-    content,
-    CONTENT_PREVIEW_CHARACTER_LENGTH,
-  )
+  const truncatedContent = truncateText(content, DESCRIPTION_PREVIEW_MAX_LENGTH)
   const plainText = removeMarkdown(truncatedContent)
   return cleanAndTrim(plainText)
 }

@@ -1,10 +1,10 @@
-import { type DigestArticleData } from '@/types/digestTypes'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { AvatarGroup } from '@/components/AvatarGroup'
 import { TagGroup } from '@/components/TagGroup'
+
+import { type DigestArticleData } from '@/digest/types/digestTypes'
 
 type DigestArticleHeaderProps = Pick<
   DigestArticleData,

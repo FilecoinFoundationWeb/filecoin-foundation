@@ -4,14 +4,10 @@ import { attributes, react as Content } from '@/content/pages/terms-of-use.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-
-
-
-import { generateStructuredData } from './utils/generateStructuredData'
+import { generateStructuredData } from '@/terms-of-use/utils/generateStructuredData'
 
 const { header, seo } = attributes
 

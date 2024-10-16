@@ -1,7 +1,7 @@
-import type { BlogPost } from '@/types/blogPostType'
-import type { Event } from '@/types/eventType'
-
 import { formatDate } from '@/utils/dateUtils'
+
+import type { BlogPost } from '@/blog/types/blogPostType'
+import type { Event } from '@/events/types/eventType'
 
 export function getBlogPostMetaData(publishedOn?: BlogPost['publishedOn']) {
   return publishedOn ? [formatDate(publishedOn)] : []

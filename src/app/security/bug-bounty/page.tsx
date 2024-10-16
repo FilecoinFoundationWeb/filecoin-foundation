@@ -12,8 +12,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { Leaderboard } from './components/Leaderboard'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { Leaderboard } from '@/security/bug-bounty/components/Leaderboard'
+import { generateStructuredData } from '@/security/bug-bounty/utils/generateStructuredData'
 
 const { header, seo } = attributes
 

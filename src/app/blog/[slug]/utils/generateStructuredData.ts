@@ -1,13 +1,13 @@
 import type { BlogPosting, WithContext } from 'schema-dts'
 
-import type { BlogPost } from '@/types/blogPostType'
-
 import { PATHS } from '@/constants/paths'
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import {
   ORGANIZATION_SCHEMA_BASE,
   SCHEMA_CONTEXT_URL,
 } from '@/constants/structuredDataConstants'
+
+import type { BlogPost } from '@/blog/types/blogPostType'
 
 export function generateStructuredData(
   data: BlogPost,

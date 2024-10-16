@@ -1,5 +1,6 @@
 import type { CTAProps } from '@/types/ctaType'
-import type { Event } from '@/types/eventType'
+
+import type { Event } from '@/events/types/eventType'
 
 type ctaArrayProps = {
   externalLink?: Event['externalLink']

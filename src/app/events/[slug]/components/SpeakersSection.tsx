@@ -1,8 +1,8 @@
-import type { Event } from '@/types/eventType'
-
 import { CardGrid } from '@/components/CardGrid'
 import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageSection } from '@/components/PageSection'
+
+import type { Event } from '@/events/types/eventType'
 
 type SpeakersSectionProps = {
   speakers: NonNullable<Event['speakers']>

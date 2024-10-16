@@ -9,7 +9,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getAllDigestArticleDataSortedByNumber } from '@/utils/getDigestArticleData'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -19,7 +18,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { generateStructuredData } from './utils/generateStructuredData'
+import { generateStructuredData } from '@/digest/utils/generateStructuredData'
+import { getAllDigestArticleDataSortedByNumber } from '@/digest/utils/getDigestArticleData'
 
 const { header, seo } = attributes
 const articles = getAllDigestArticleDataSortedByNumber()

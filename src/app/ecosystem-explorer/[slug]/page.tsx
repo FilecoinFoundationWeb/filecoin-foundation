@@ -16,7 +16,6 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/dateUtils'
-import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
@@ -26,8 +25,9 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
 
-import { VideoSection } from './components/VideoSection'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { VideoSection } from '@/ecosystem-explorer/[slug]/components/VideoSection'
+import { generateStructuredData } from '@/ecosystem-explorer/[slug]/utils/generateStructuredData'
+import { getEcosystemProjectData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 type EcosystemProjectProps = {
   params: {

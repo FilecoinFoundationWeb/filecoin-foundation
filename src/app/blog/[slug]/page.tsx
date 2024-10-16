@@ -1,14 +1,14 @@
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostData } from '@/utils/getBlogPostData'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { BlogPostHeader } from './components/BlogPostHeader'
-import { generateStructuredData } from './utils/generateStructuredData'
+import { BlogPostHeader } from '@/blog/[slug]/components/BlogPostHeader'
+import { generateStructuredData } from '@/blog/[slug]/utils/generateStructuredData'
+import { getBlogPostData } from '@/blog/utils/getBlogPostData'
 
 type BlogPostProps = {
   params: {
