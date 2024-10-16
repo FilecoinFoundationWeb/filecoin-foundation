@@ -1,40 +1,40 @@
 import slugify from 'slugify'
 
 import {
-  attributes as assetManagementAttributes,
   react as AssetManagement,
+  attributes as assetManagementAttributes,
 } from '../content/asset-management.md'
 import {
-  attributes as dataProtectionPracticesAttributes,
   react as DataProtectionPractices,
+  attributes as dataProtectionPracticesAttributes,
 } from '../content/data-protection-practices.md'
 import {
-  attributes as identityAndAccessManagementAttributes,
   react as IdentityAndAccessManagement,
+  attributes as identityAndAccessManagementAttributes,
 } from '../content/identity-and-access-management.md'
 import {
-  attributes as incidentResponseAttributes,
   react as IncidentResponse,
+  attributes as incidentResponseAttributes,
 } from '../content/incident-response.md'
 import {
-  attributes as leadershipAndOrganizationalPrinciplesAttributes,
   react as LeadershipAndOrganizationalPrinciples,
+  attributes as leadershipAndOrganizationalPrinciplesAttributes,
 } from '../content/leadership-and-organizational-principles.md'
 import {
-  attributes as MaturityOfSecurityDocumentationOutreachAndDeveloperTrainingAttributes,
   react as MaturityOfSecurityDocumentationOutreachAndDeveloperTraining,
+  attributes as MaturityOfSecurityDocumentationOutreachAndDeveloperTrainingAttributes,
 } from '../content/maturity-of-security-documentation-outreach-and-developer-training.md'
 import {
-  attributes as relevantPoliciesAndMaturityLevelsAttributes,
   react as RelevantPoliciesAndMaturityLevels,
+  attributes as relevantPoliciesAndMaturityLevelsAttributes,
 } from '../content/relevant-policies-and-maturity-levels.md'
 import {
-  attributes as riskManagementAttributes,
   react as RiskManagement,
+  attributes as riskManagementAttributes,
 } from '../content/risk-management.md'
 import {
-  attributes as softwareSecurityAttributes,
   react as SoftwareSecurity,
+  attributes as softwareSecurityAttributes,
 } from '../content/software-security.md'
 
 const coreFunctionsBaseData = [
@@ -91,3 +91,10 @@ export const coreFunctionsData = coreFunctionsBaseData.map((item) => ({
   ...item,
   slug: slugify(item.title, { lower: true, strict: true, trim: true }),
 }))
+
+export const coreFunctionsTableOfContents = coreFunctionsBaseData.map(
+  (item) => ({
+    title: item.title,
+    slug: slugify(item.title, { lower: true, strict: true, trim: true }),
+  }),
+)

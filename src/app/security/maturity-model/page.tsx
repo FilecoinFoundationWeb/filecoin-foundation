@@ -17,24 +17,12 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CoreFunctions } from './components/CoreFunctions'
+import {
+  DesktopTableOfContents,
+  MobileTableOfContents,
+} from './components/TableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-const DesktopTableOfContents = dynamic(
-  () =>
-    import('./components/TableOfContents').then(
-      (module) => module.DesktopTableOfContents,
-    ),
-  { ssr: false },
-)
-
-const MobileTableOfContents = dynamic(
-  () =>
-    import('./components/TableOfContents').then(
-      (module) => module.MobileTableOfContents,
-    ),
-  { ssr: false },
-)
 
 const { header, seo } = attributes
 
