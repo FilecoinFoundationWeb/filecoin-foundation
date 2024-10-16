@@ -58,7 +58,7 @@ export default function FilPlus() {
         </CardGrid>
 
         <div className="mt-2 flex flex-col sm:flex-row sm:justify-center">
-          <Button href={FIL_PLUS_URLS.filPlusParticipants} variant="primary">
+          <Button href={FIL_PLUS_URLS.filPlusParticipants}>
             Learn More About Fil+ Participants
           </Button>
         </div>
