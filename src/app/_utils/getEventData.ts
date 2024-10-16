@@ -1,14 +1,22 @@
 import { PATHS } from '@/constants/paths'
 
-import { convertMarkdownToEventData } from '@/utils/convertMarkdownToEventData'
-import { getData, getAllData } from '@/utils/getData'
+import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+
+import { EventFrontMatterSchema } from '@/schemas/event/FrontMatterSchema'
 
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
 export function getEventData(slug: string) {
-  return getData(EVENTS_DIRECTORY_PATH, convertMarkdownToEventData, slug)
+  return getMarkdownData({
+    slug,
+    directoryPath: EVENTS_DIRECTORY_PATH,
+    zodParser: EventFrontMatterSchema.parse,
+  })
 }
 
 export function getEventsData() {
-  return getAllData(EVENTS_DIRECTORY_PATH, convertMarkdownToEventData)
+  return getAllMarkdownData({
+    directoryPath: EVENTS_DIRECTORY_PATH,
+    zodParser: EventFrontMatterSchema.parse,
+  })
 }

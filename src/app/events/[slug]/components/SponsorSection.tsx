@@ -7,7 +7,7 @@ import { PageSection } from '@/components/PageSection'
 import { SponsorGrid } from './SponsorGrid'
 
 export type Sponsor = NonNullable<
-  NonNullable<Event['sponsors']>['first-tier']
+  NonNullable<Event['sponsors']>['firstTier']
 >[number]
 
 type SponsorSectionProps = {
@@ -16,7 +16,7 @@ type SponsorSectionProps = {
 
 const sponsorTierConfigs = [
   {
-    tier: 'first-tier',
+    tier: 'firstTier',
     gridClassName: 'grid-cols-2 md:grid-cols-4',
     logoImageConfig: {
       containerStyles: 'h-16 sm:h-20',
@@ -24,7 +24,7 @@ const sponsorTierConfigs = [
     },
   },
   {
-    tier: 'second-tier',
+    tier: 'secondTier',
     gridClassName: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5',
     logoImageConfig: {
       containerStyles: 'h-11 sm:h-16',
@@ -32,7 +32,7 @@ const sponsorTierConfigs = [
     },
   },
   {
-    tier: 'third-tier',
+    tier: 'thirdTier',
     gridClassName: 'grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-7',
     logoImageConfig: {
       containerStyles: 'h-7 sm:h-11',
