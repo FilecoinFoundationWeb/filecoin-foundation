@@ -1,14 +1,22 @@
 import { PATHS } from '@/constants/paths'
 
-import { convertMarkdownToBlogPostData } from '@/utils/convertMarkdowntoBlogPostData'
-import { getAllData, getData } from '@/utils/getData'
+import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+
+import { BlogPostFrontMatterSchema } from '@/schemas/BlogPostFrontMatterSchema'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
 export function getBlogPostData(slug: string) {
-  return getData(BLOG_DIRECTORY_PATH, convertMarkdownToBlogPostData, slug)
+  return getMarkdownData({
+    slug,
+    directoryPath: BLOG_DIRECTORY_PATH,
+    zodParser: BlogPostFrontMatterSchema.parse,
+  })
 }
 
 export function getBlogPostsData() {
-  return getAllData(BLOG_DIRECTORY_PATH, convertMarkdownToBlogPostData)
+  return getAllMarkdownData({
+    directoryPath: BLOG_DIRECTORY_PATH,
+    zodParser: BlogPostFrontMatterSchema.parse,
+  })
 }
