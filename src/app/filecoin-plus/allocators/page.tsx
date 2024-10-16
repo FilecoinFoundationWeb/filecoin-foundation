@@ -11,8 +11,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { AllocatorsTableSection } from '@/filecoin-plus/allocators/components/AllocatorsTableSection'
-import { generateStructuredData } from '@/filecoin-plus/allocators/utils/generateStructuredData'
+import { AllocatorsTableSection } from './components/AllocatorsTableSection'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 

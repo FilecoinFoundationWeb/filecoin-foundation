@@ -12,12 +12,13 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
-import { ScheduleSection } from '@/events/[slug]/components/ScheduleSection'
-import { SpeakersSection } from '@/events/[slug]/components/SpeakersSection'
-import { SponsorSection } from '@/events/[slug]/components/SponsorSection'
-import { buildCtaArray } from '@/events/[slug]/utils/buildCtaArray'
-import { generateStructuredData } from '@/events/[slug]/utils/generateStructuredData'
-import { getEventData } from '@/events/utils/getEventData'
+import { getEventData } from '../utils/getEventData'
+
+import { ScheduleSection } from './components/ScheduleSection'
+import { SpeakersSection } from './components/SpeakersSection'
+import { SponsorSection } from './components/SponsorSection'
+import { buildCtaArray } from './utils/buildCtaArray'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
   params: {

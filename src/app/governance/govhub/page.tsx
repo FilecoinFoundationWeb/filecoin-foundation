@@ -13,10 +13,11 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { CTAPageSection } from '@/governance/components/CTAPageSection'
-import { ToolsCardContent } from '@/governance/govhub/components/ToolsCardContent'
-import { toolsData } from '@/governance/govhub/data/toolsData'
-import { generateStructuredData } from '@/governance/govhub/utils/generateStructuredData'
+import { CTAPageSection } from '../components/CTAPageSection'
+
+import { ToolsCardContent } from './components/ToolsCardContent'
+import { toolsData } from './data/toolsData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 

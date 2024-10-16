@@ -2,7 +2,7 @@ import { PATHS } from '@/constants/paths'
 
 import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
-import { EventFrontMatterSchema } from '@/events/schemas/FrontMatterSchema'
+import { EventFrontMatterSchema } from '../schemas/FrontMatterSchema'
 
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 

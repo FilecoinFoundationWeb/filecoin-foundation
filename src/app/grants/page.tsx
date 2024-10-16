@@ -24,10 +24,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
-import { applicationProcessData } from '@/grants/data/applicationProcessData'
-import { opportunitiesData } from '@/grants/data/opportunitiesData'
-import { submissionCriteriaData } from '@/grants/data/submissionCriteriaData'
-import { generateStructuredData } from '@/grants/utils/generateStructuredData'
+
+import { applicationProcessData } from './data/applicationProcessData'
+import { opportunitiesData } from './data/opportunitiesData'
+import { submissionCriteriaData } from './data/submissionCriteriaData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 const { featured_grant_graduates, header, seo } = attributes

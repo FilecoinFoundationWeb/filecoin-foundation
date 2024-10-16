@@ -2,7 +2,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { PageSection } from '@/components/PageSection'
 
-import type { Event } from '@/events/types/eventType'
+import type { Event } from '../../types/eventType'
 
 import { SponsorGrid } from './SponsorGrid'
 

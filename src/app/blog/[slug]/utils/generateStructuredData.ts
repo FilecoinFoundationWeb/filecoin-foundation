@@ -7,7 +7,7 @@ import {
   SCHEMA_CONTEXT_URL,
 } from '@/constants/structuredDataConstants'
 
-import type { BlogPost } from '@/blog/types/blogPostType'
+import type { BlogPost } from '../../types/blogPostType'
 
 export function generateStructuredData(
   data: BlogPost,

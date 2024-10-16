@@ -13,7 +13,7 @@ import {
   SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL,
 } from '@/constants/structuredDataConstants'
 
-import type { Event } from '@/events/types/eventType'
+import type { Event } from '../../types/eventType'
 
 type LocationType = Place | VirtualLocation | undefined
 

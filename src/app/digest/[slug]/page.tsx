@@ -6,9 +6,10 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { DigestArticleHeader } from '@/digest/[slug]/components/DigestArticleHeader'
-import { generateStructuredData } from '@/digest/[slug]/utils/generateStructuredData'
-import { getDigestArticleData } from '@/digest/utils/getDigestArticleData'
+import { getDigestArticleData } from '../utils/getDigestArticleData'
+
+import { DigestArticleHeader } from './components/DigestArticleHeader'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
   params: {

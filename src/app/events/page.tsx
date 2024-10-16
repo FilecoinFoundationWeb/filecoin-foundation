@@ -42,9 +42,9 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getInvolvedData } from '@/events/data/getInvolvedData'
-import { generateStructuredData } from '@/events/utils/generateStructuredData'
-import { getEventData, getEventsData } from '@/events/utils/getEventData'
+import { getInvolvedData } from './data/getInvolvedData'
+import { generateStructuredData } from './utils/generateStructuredData'
+import { getEventData, getEventsData } from './utils/getEventData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

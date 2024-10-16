@@ -16,12 +16,12 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { EcosystemProjectForm } from '@/ecosystem-explorer/project-form/components/EcosystemProjectForm'
-import { ErrorNotification } from '@/ecosystem-explorer/project-form/components/ErrorNotification'
-import { SuccessMessage } from '@/ecosystem-explorer/project-form/components/SuccessMessage'
-import { SearchParamsSchema } from '@/ecosystem-explorer/project-form/schema/SearchParamsSchema'
-import { generateStructuredData } from '@/ecosystem-explorer/project-form/utils/generateStructuredData'
-import { getFormInitialValue } from '@/ecosystem-explorer/project-form/utils/getFormInitialValue'
+import { EcosystemProjectForm } from './components/EcosystemProjectForm'
+import { ErrorNotification } from './components/ErrorNotification'
+import { SuccessMessage } from './components/SuccessMessage'
+import { SearchParamsSchema } from './schema/SearchParamsSchema'
+import { generateStructuredData } from './utils/generateStructuredData'
+import { getFormInitialValue } from './utils/getFormInitialValue'
 
 const { header, seo } = attributes
 

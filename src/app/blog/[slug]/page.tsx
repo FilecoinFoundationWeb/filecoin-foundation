@@ -6,9 +6,10 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { BlogPostHeader } from '@/blog/[slug]/components/BlogPostHeader'
-import { generateStructuredData } from '@/blog/[slug]/utils/generateStructuredData'
-import { getBlogPostData } from '@/blog/utils/getBlogPostData'
+import { getBlogPostData } from '../utils/getBlogPostData'
+
+import { BlogPostHeader } from './components/BlogPostHeader'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
   params: {

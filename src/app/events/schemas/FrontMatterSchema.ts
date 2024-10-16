@@ -7,9 +7,9 @@ import {
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
-import { ScheduleSchema } from '@/events/schemas/ScheduleSchema'
-import { SpeakersSchema } from '@/events/schemas/SpeakerSchema'
-import { SponsorsSchema } from '@/events/schemas/SponsorSchema'
+import { ScheduleSchema } from './ScheduleSchema'
+import { SpeakersSchema } from './SpeakerSchema'
+import { SponsorsSchema } from './SponsorSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 

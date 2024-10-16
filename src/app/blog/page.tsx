@@ -38,8 +38,8 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { generateStructuredData } from '@/blog/utils/generateStructuredData'
-import { getBlogPostData, getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { generateStructuredData } from './utils/generateStructuredData'
+import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

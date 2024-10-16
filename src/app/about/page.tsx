@@ -20,11 +20,11 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { advisorsData } from '@/about/data/advisorsData'
-import { boardMembersData } from '@/about/data/boardMembersData'
-import { focusAreasData } from '@/about/data/focusAreasData'
-import { reportsData } from '@/about/data/reportsData'
-import { generateStructuredData } from '@/about/utils/generateStructuredData'
+import { advisorsData } from './data/advisorsData'
+import { boardMembersData } from './data/boardMembersData'
+import { focusAreasData } from './data/focusAreasData'
+import { reportsData } from './data/reportsData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 

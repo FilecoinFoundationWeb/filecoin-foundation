@@ -15,8 +15,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { developerSupportData } from '@/security/data/developerSupportData'
-import { generateStructuredData } from '@/security/utils/generateStructuredData'
+import { developerSupportData } from './data/developerSupportData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 export const metadata = createMetadata({

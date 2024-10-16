@@ -25,9 +25,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
 
-import { VideoSection } from '@/ecosystem-explorer/[slug]/components/VideoSection'
-import { generateStructuredData } from '@/ecosystem-explorer/[slug]/utils/generateStructuredData'
-import { getEcosystemProjectData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
+import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
+
+import { VideoSection } from './components/VideoSection'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
   params: {

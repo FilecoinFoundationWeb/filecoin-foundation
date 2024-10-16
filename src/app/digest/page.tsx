@@ -18,8 +18,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { generateStructuredData } from '@/digest/utils/generateStructuredData'
-import { getAllDigestArticleDataSortedByNumber } from '@/digest/utils/getDigestArticleData'
+import { generateStructuredData } from './utils/generateStructuredData'
+import { getAllDigestArticleDataSortedByNumber } from './utils/getDigestArticleData'
 
 const { header, seo } = attributes
 const articles = getAllDigestArticleDataSortedByNumber()

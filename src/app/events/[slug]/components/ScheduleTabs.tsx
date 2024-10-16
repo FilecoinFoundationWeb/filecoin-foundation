@@ -10,8 +10,7 @@ import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
-import type { Event } from '@/events/types/eventType'
-
+import type { Event } from '../../types/eventType'
 import { formatDate, formatTime } from '../utils/dateUtils'
 
 type ScheduleTabsProps = {

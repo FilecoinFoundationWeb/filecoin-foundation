@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { clsx } from 'clsx'
 
-import { type DigestArticleData } from '@/digest/types/digestTypes'
+import type { DigestArticleData } from '@/digest/types/digestTypes'
 
 const imageSize = 32
 const sharedAvatarStyle = 'rounded-full ring-2 ring-brand-700'

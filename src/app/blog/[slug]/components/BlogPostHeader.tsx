@@ -6,7 +6,7 @@ import { formatDate } from '@/utils/dateUtils'
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { TagLabel } from '@/components/TagLabel'
 
-import type { BlogPost } from '@/blog/types/blogPostType'
+import type { BlogPost } from '../../types/blogPostType'
 
 type BlogPostHeaderProps = Pick<
   BlogPost,

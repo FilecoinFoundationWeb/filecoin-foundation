@@ -24,13 +24,13 @@ import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TextLink } from '@/components/TextLink'
 
-import { OrbitEventsSection } from '@/orbit/components/EventsSection'
-import { ambassadorsData } from '@/orbit/data/ambassadorsData'
-import { exploreOrbitData } from '@/orbit/data/exploreOrbitData'
-import { programFeaturesAndPerksData } from '@/orbit/data/programFeaturesAndPerksData'
-import { programGoalsData } from '@/orbit/data/programGoalsData'
-import { statisticsData } from '@/orbit/data/statisticsData'
-import { generateStructuredData } from '@/orbit/utils/generateStructuredData'
+import { OrbitEventsSection } from './components/EventsSection'
+import { ambassadorsData } from './data/ambassadorsData'
+import { exploreOrbitData } from './data/exploreOrbitData'
+import { programFeaturesAndPerksData } from './data/programFeaturesAndPerksData'
+import { programGoalsData } from './data/programGoalsData'
+import { statisticsData } from './data/statisticsData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 
