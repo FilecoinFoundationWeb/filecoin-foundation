@@ -23,7 +23,7 @@ type SubmitProjectWithoutLogoParams = {
   timestamps: Timestamps
 }
 
-export async function submitProjectWithoutNewLogo({
+export async function submitProjectWithoutLogo({
   formDataWithoutLogo,
   timestamps,
   existingProjectData,

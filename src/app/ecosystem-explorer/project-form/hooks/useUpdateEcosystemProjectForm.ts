@@ -7,7 +7,7 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { getProjectData } from '../actions/getProjectData'
 import { submitProjectWithLogo } from '../actions/submitProjectWithLogo'
-import { submitProjectWithoutNewLogo } from '../actions/submitProjectWithoutNewLogo'
+import { submitProjectWithoutLogo } from '../actions/submitProjectWithoutLogo'
 import type { EcosystemProjectFormData } from '../schema/EcosystemProjectFormSchema'
 import type { SubmitOption } from '../types'
 import { formatLogo } from '../utils/fileUtils'
@@ -35,7 +35,7 @@ export function useUpdateEcosystemProjectForm() {
       }
 
       if (!logoIsUpdated && existingProjectData.image) {
-        const pullRequest = await submitProjectWithoutNewLogo({
+        const pullRequest = await submitProjectWithoutLogo({
           formDataWithoutLogo,
           existingProjectData,
           image: existingProjectData.image,
