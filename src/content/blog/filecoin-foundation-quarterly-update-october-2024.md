@@ -1,19 +1,19 @@
 ---
-title: "Filecoin Foundation Quarterly Report: October 2024 "
+title: "Filecoin Foundation Quarterly Update: October 2024"
 created-on: 2024-10-14T10:20:00.000Z
 updated-on: 2024-10-14T10:20:00.000Z
 published-on: 2024-10-14T10:20:00.000Z
 category: reports
 description: "This month, Filecoin Foundation (FF) is launching quarterly
-  reports designed to hone in on different trends across our ecosystem. "
+  updates designed to hone in on different trends across our ecosystem. "
 image:
-  src: /assets/images/frame-5.webp
+  src: /assets/images/ff_q4report_hero-1-.webp
 seo:
   twitter:
     card: summary
   description: "This month, Filecoin Foundation (FF) is launching quarterly
-    reports designed to hone in on different trends across our ecosystem. "
-  title: "Filecoin Foundation Quarterly Report: October 2024"
+    updates designed to hone in on different trends across our ecosystem. "
+  title: "Filecoin Foundation Quarterly Update: October 2024"
 ---
 
 ## Empowering AI through Decentralization and Innovation
@@ -24,7 +24,7 @@ As the AI industry continues to expand, driving an increasing need for data stor
 
 By leveraging Filecoin’s infrastructure, developers and organizations can contribute to AI systems without concentrating power in the hands of a few players. This approach fosters innovation while ensuring that AI development remains open and transparent.
 
-This month, Filecoin Foundation (FF) is launching quarterly reports designed to hone in on different trends across our ecosystem. Our first quarterly report explores how the Filecoin network is enabling a more decentralized, open, and transparent AI-driven industry and highlights key developments and milestones from the Filecoin ecosystem over the past several months.
+This month, Filecoin Foundation (FF) is launching quarterly updates designed to hone in on different trends across our ecosystem. Our first quarterly update explores how the Filecoin network is enabling a more decentralized, open, and transparent AI-driven industry and highlights key developments and milestones from the Filecoin ecosystem over the past several months.
 
 ![](/assets/images/storage-is-just-the-start.webp)
 

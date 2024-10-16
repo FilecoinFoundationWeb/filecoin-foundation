@@ -5,15 +5,15 @@ import {
   getCategorySettings,
 } from '@/utils/categoryUtils'
 
-import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
+import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
 
 const { validCategoryIds } = getCategorySettings('blog_posts')
 
 const categorySchema = createCategorySchema(validCategoryIds)
 
-export const BlogPostFrontMatterSchema = DynamicBaseDataSchema.extend({
+export const BlogPostFrontMatterSchema = BaseDataSchemaKebabCase.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string(),
   content: z.string(),
-})
+}).strict()
