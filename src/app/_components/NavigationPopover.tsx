@@ -1,13 +1,8 @@
 'use client'
 
-import { cloneElement, Fragment } from 'react'
+import { cloneElement } from 'react'
 
-import {
-  Popover,
-  Transition,
-  PopoverButton,
-  PopoverPanel,
-} from '@headlessui/react'
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
 
 import { Icon } from '@/components/Icon'
@@ -18,6 +13,9 @@ type PopOverProps = {
   as: React.ElementType
   children: React.ReactElement
 }
+
+const SPACE_BETWEEN_PANEL_AND_BUTTON = 24
+const SPACE_BETWEEN_PANEL_AND_VIEWPORT = 8
 
 export function NavigationPopover({
   label,
@@ -36,31 +34,30 @@ export function NavigationPopover({
           <Icon component={CaretDown} size={20} color="brand-400" />
         </span>
       </PopoverButton>
-      <Transition
-        as={Fragment}
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 translate-y-1"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
-      >
-        <PopoverPanel className="absolute right-0 z-10 mt-6 xl:-right-6">
-          {(props) => {
-            const clonedChildren = cloneElement(children, {
-              onClick: function closeOnClickWithin() {
-                props.close()
-              },
-            })
 
-            return (
-              <div className="overflow-hidden rounded-2xl border border-brand-500 bg-brand-800 p-4">
-                {clonedChildren}
-              </div>
-            )
-          }}
-        </PopoverPanel>
-      </Transition>
+      <PopoverPanel
+        transition
+        className="z-10 transition duration-200 ease-out data-[closed]:translate-y-1 data-[open]:translate-y-0 data-[closed]:opacity-0 data-[open]:opacity-100"
+        anchor={{
+          to: 'bottom',
+          gap: SPACE_BETWEEN_PANEL_AND_BUTTON,
+          padding: SPACE_BETWEEN_PANEL_AND_VIEWPORT,
+        }}
+      >
+        {(props) => {
+          const clonedChildren = cloneElement(children, {
+            onClick: function closeOnClickWithin() {
+              props.close()
+            },
+          })
+
+          return (
+            <div className="overflow-hidden rounded-2xl border border-brand-500 bg-brand-800 p-4">
+              {clonedChildren}
+            </div>
+          )
+        }}
+      </PopoverPanel>
     </Popover>
   )
 }
