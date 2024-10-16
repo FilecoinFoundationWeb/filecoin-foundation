@@ -58,14 +58,15 @@ export default function EventEntry({ params }: EventProps) {
     schedule,
     speakers,
     sponsors,
+    recapYoutubeEmbedUrl,
   } = data
 
+  const eventHasConcluded = isEventConcluded(startDate, endDate)
   const eventHasEventsSection = lumaEventsSection && lumaEventsSection.embedLink
+  const eventHasRecap = eventHasConcluded && recapYoutubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
   const eventHasSpeakers = speakers && speakers.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
-  const eventHasConcluded = isEventConcluded(startDate, endDate)
-  const eventHasRecap = eventHasConcluded
 
   return (
     <PageLayout>
@@ -92,7 +93,7 @@ export default function EventEntry({ params }: EventProps) {
           }}
         />
       </div>
-      {eventHasRecap && <RecapSection />}
+      {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
       {eventHasEventsSection && (
         <EventsSection
           title={lumaEventsSection.title}

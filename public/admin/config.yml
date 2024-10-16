@@ -874,7 +874,7 @@ collections:
             min: 0
             max: 7
             fields: *event_sponsor_config
-          - name: recap-youtube-video-url
+          - name: recap-youtube-embed-url
             label: Event Recap YouTube Embed URL
             widget: string
             required: false

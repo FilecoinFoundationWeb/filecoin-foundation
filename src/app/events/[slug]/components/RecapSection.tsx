@@ -1,13 +1,19 @@
+import type { Event } from '@/types/eventType'
+
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { PageSection } from '@/components/PageSection'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
-export function RecapSection() {
+type RecapSectionProps = {
+  youtubeEmbedUrl: NonNullable<Event['recapYoutubeEmbedUrl']>
+}
+
+export function RecapSection({ youtubeEmbedUrl }: RecapSectionProps) {
   return (
     <PageSection kicker="Event Recap" title="Thank You for Joining Us">
-      <YouTubeVideoEmbed videoUrl="https://www.youtube.com/embed/m-lWAQqLI6A" />
+      <YouTubeVideoEmbed videoUrl={youtubeEmbedUrl} />
       <Button className="sm:self-center" href={PATHS.EVENTS.path}>
         View Upcoming Events
       </Button>
