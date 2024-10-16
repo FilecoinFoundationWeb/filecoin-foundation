@@ -1,5 +1,3 @@
-'use server'
-
 import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
 import { getTodayISO } from '@/utils/dateUtils'
@@ -40,9 +38,9 @@ export async function submitProjectToGithub({
   ]
 
   if (logo) {
-    const imageBlob = await createBlob(logo.base64, 'base64')
+    const logoBlob = await createBlob(logo.base64, 'base64')
     treeBlobs.push({
-      sha: imageBlob.sha,
+      sha: logoBlob.sha,
       path: logo.path,
     })
   }

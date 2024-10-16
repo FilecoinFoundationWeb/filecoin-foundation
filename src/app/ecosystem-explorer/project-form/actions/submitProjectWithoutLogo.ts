@@ -18,16 +18,16 @@ import {
 type SubmitProjectWithoutLogoParams = {
   formDataWithoutLogo: EcosystemProjectFormDataWithoutLogo
   existingProjectData: EnrichFormDataParams['existingProjectData']
-  image: EnrichFormDataParams['image']
+  currentLogo: EnrichFormDataParams['image']
   prTitle: SubmitProjectParams['prTitle']
   timestamps: Timestamps
 }
 
-export async function submitProjectWithoutNewLogo({
+export async function submitProjectWithoutLogo({
   formDataWithoutLogo,
-  timestamps,
   existingProjectData,
-  image,
+  currentLogo,
+  timestamps,
 }: SubmitProjectWithoutLogoParams) {
   const slug = slugify(formDataWithoutLogo.projectName, {
     lower: true,
@@ -39,7 +39,7 @@ export async function submitProjectWithoutNewLogo({
   const enrichedFormData = enrichFormData({
     formattedFormData,
     existingProjectData,
-    image,
+    image: currentLogo,
     timestamps,
   })
 
