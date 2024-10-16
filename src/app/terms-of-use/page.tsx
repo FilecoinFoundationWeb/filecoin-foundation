@@ -7,7 +7,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { generateStructuredData } from '@/terms-of-use/utils/generateStructuredData'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = attributes
 

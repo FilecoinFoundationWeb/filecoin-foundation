@@ -4,7 +4,7 @@ import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
-import type { DigestArticleData } from '@/digest/types/digestTypes'
+import type { DigestArticleData } from '../../types/digestType'
 
 export function generateStructuredData(
   data: DigestArticleData,

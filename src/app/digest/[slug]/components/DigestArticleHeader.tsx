@@ -4,7 +4,7 @@ import { ArticleHeader } from '@/components/ArticleHeader'
 import { AvatarGroup } from '@/components/AvatarGroup'
 import { TagGroup } from '@/components/TagGroup'
 
-import type { DigestArticleData } from '@/digest/types/digestTypes'
+import type { DigestArticleData } from '../../types/digestType'
 
 type DigestArticleHeaderProps = Pick<
   DigestArticleData,

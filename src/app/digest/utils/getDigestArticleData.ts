@@ -4,8 +4,8 @@ import { PATHS } from '@/constants/paths'
 
 import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
-import { DigestArticleFrontMatterSchema } from '@/digest/schemas/FrontMatterSchema'
-import { sortArticlesByNumber } from '@/digest/utils/sortArticlesByNumber'
+import { DigestArticleFrontMatterSchema } from '../schemas/FrontMatterSchema'
+import { sortArticlesByNumber } from '../utils/sortArticlesByNumber'
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 const DESCRIPTION_PREVIEW_MAX_LENGTH = 220

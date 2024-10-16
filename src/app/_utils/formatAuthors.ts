@@ -1,4 +1,4 @@
-import type { DigestArticleData } from '@/digest/types/digestTypes'
+import type { DigestArticleData } from '@/digest/types/digestType'
 
 export function formatAuthors(authors: DigestArticleData['authors']) {
   return authors

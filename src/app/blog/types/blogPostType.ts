@@ -1,3 +1,3 @@
-import { getBlogPostData } from '@/blog/utils/getBlogPostData'
+import { getBlogPostData } from '../utils/getBlogPostData'
 
 export type BlogPost = ReturnType<typeof getBlogPostData>

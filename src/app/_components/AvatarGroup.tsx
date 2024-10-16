@@ -4,7 +4,7 @@ import { formatAuthors } from '@/utils/formatAuthors'
 
 import { Avatar } from '@/components/Avatar'
 
-import type { DigestArticleData } from '@/digest/types/digestTypes'
+import type { DigestArticleData } from '@/digest/types/digestType'
 
 export type AvatarGroupProps = {
   authors: DigestArticleData['authors']

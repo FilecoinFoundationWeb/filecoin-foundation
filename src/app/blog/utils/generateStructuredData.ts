@@ -8,7 +8,7 @@ import { generateWebPageStructuredData } from '@/utils/generateWebPageStructured
 
 import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
-import type { BlogPost } from '@/blog/types/blogPostType'
+import type { BlogPost } from '../types/blogPostType'
 
 export function generateStructuredData(
   posts: Array<BlogPost>,
