@@ -1,6 +1,6 @@
-import type { Event } from '@/types/eventType'
-
 import { PageSection } from '@/components/PageSection'
+
+import type { Event } from '../../types/eventType'
 
 import { ScheduleTabs } from './ScheduleTabs'
 

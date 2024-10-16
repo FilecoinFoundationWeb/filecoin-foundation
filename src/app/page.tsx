@@ -11,7 +11,6 @@ import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -24,6 +23,8 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 

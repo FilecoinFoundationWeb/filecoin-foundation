@@ -6,12 +6,11 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import theme from 'tailwindcss/defaultTheme'
 import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 
-import type { Event } from '@/types/eventType'
-
 import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
 import { TextLink } from '@/components/TextLink'
 
+import type { Event } from '../../types/eventType'
 import { formatDate, formatTime } from '../utils/dateUtils'
 
 type ScheduleTabsProps = {

@@ -25,8 +25,6 @@ type GetAllData<T> = {
   zodParser: ZodType<T>['parse']
 }
 
-// Variation of src/app/_utils/getData.ts
-// Necessary until we migrate all Zod schemas to kebab-case
 export function getMarkdownData<T>({
   slug,
   directoryPath,

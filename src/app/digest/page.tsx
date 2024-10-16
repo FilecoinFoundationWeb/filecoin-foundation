@@ -9,7 +9,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getDigestArticlesDataSortedByNumber } from '@/utils/getDigestArticleData'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -20,9 +19,10 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getAllDigestArticleDataSortedByNumber } from './utils/getDigestArticleData'
 
 const { header, seo } = attributes
-const articles = getDigestArticlesDataSortedByNumber()
+const articles = getAllDigestArticleDataSortedByNumber()
 
 export const metadata = createMetadata({
   seo: {

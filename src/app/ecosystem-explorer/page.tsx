@@ -17,7 +17,6 @@ import {
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useCategory } from '@/hooks/useCategory'
@@ -40,6 +39,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

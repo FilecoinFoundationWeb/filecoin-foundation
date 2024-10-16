@@ -1,4 +1,4 @@
-import { type DigestArticleData } from '@/types/digestTypes'
+import type { DigestArticleData } from '../types/digestType'
 
 export function sortArticlesByNumber(
   a: DigestArticleData,

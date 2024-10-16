@@ -16,7 +16,6 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/dateUtils'
-import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
 
 import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
@@ -25,6 +24,8 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
+
+import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
 import { VideoSection } from './components/VideoSection'
 import { generateStructuredData } from './utils/generateStructuredData'

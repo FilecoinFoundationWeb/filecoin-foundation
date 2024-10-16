@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { type DigestArticleData } from '@/types/digestTypes'
-
 import { formatAuthors } from '@/utils/formatAuthors'
 
 import { Avatar } from '@/components/Avatar'
+
+import type { DigestArticleData } from '@/digest/types/digestType'
 
 export type AvatarGroupProps = {
   authors: DigestArticleData['authors']

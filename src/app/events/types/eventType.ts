@@ -1,3 +1,3 @@
-import { getEventData } from '@/utils/getEventData'
+import { getEventData } from '../utils/getEventData'
 
 export type Event = ReturnType<typeof getEventData>

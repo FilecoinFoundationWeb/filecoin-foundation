@@ -1,8 +1,8 @@
 import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
-import { getMarkdownData, getAllMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
-import { EcosystemProjectFrontMatter } from '@/schemas/ecosystemProject/FrontMatterSchema'
+import { EcosystemProjectFrontMatter } from '../schemas/FrontMatterSchema'
 
 export function getEcosystemProjectData(slug: string) {
   return getMarkdownData({

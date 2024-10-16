@@ -1,8 +1,8 @@
-import type { Event } from '@/types/eventType'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { PageSection } from '@/components/PageSection'
+
+import type { Event } from '../../types/eventType'
 
 import { SponsorGrid } from './SponsorGrid'
 

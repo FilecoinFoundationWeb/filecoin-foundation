@@ -4,12 +4,13 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
+
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
