@@ -77,7 +77,11 @@ export default function EventEntry({ params }: EventProps) {
           title={title}
           description={description}
           metaData={getEventMetaData(data)}
-          cta={buildCtaArray({ externalLink, lumaCalendarLink })}
+          cta={
+            !eventHasRecap
+              ? buildCtaArray({ externalLink, lumaCalendarLink })
+              : undefined
+          }
           image={{
             ...(image || graphicsData.imageFallback.data),
             alt: '',
