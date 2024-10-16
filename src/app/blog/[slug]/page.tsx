@@ -1,11 +1,12 @@
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostData } from '@/utils/getBlogPostData'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { getBlogPostData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'

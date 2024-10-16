@@ -1,3 +1,3 @@
-import { getEcosystemProjectData } from '@/utils/getEcosystemProjectData'
+import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
 export type EcosystemProject = ReturnType<typeof getEcosystemProjectData>

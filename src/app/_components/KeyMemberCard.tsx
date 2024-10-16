@@ -4,10 +4,10 @@ import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 
 import type { MemberData } from '@/types/memberType'
 
-import type { Speaker } from '@/schemas/event/SpeakerSchema'
-
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
+
+import type { Speaker } from '@/events/schemas/SpeakerSchema'
 
 type KeyMemberCardProps = MemberData | Speaker
 

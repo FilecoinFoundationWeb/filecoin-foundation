@@ -5,8 +5,6 @@ import type {
   WithContext,
 } from 'schema-dts'
 
-import type { Event } from '@/types/eventType'
-
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import {
@@ -14,6 +12,8 @@ import {
   SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL,
   SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL,
 } from '@/constants/structuredDataConstants'
+
+import type { Event } from '../../types/eventType'
 
 type LocationType = Place | VirtualLocation | undefined
 

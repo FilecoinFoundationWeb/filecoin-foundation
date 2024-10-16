@@ -16,7 +16,6 @@ import { graphicsData } from '@/data/graphicsData'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostData, getBlogPostsData } from '@/utils/getBlogPostData'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
@@ -40,6 +39,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

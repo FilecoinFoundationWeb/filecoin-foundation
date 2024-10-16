@@ -20,7 +20,6 @@ import {
   getCategoryLabel,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getEventData, getEventsData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
@@ -45,6 +44,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getEventData, getEventsData } from './utils/getEventData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

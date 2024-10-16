@@ -1,10 +1,10 @@
 import { z } from 'zod'
 
-import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 import { CategorySchema, SubcategorySchema } from './CategorySchemas'
 
-export const EcosystemProjectFrontMatter = BaseDataSchemaKebabCase.extend({
+export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
   subcategories: z.array(SubcategorySchema).optional(),

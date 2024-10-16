@@ -1,8 +1,8 @@
-import type { Event } from '@/types/eventType'
-
 import { DEFAULT_SORT_OPTION, SORT_TYPES } from '@/constants/sortConstants'
 
 import type { DynamicBaseData } from '@/schemas/DynamicDataBaseSchema'
+
+import type { Event } from '@/events/types/eventType'
 
 type BaseSortType = typeof SORT_TYPES
 
@@ -23,7 +23,7 @@ export type SortOption = {
 }
 
 export type SortableByDate = {
-  publishedOn?: DynamicBaseData['publishedOn']
+  publishedOn?: DynamicBaseData['published-on']
   startDate?: Event['startDate']
 }
 

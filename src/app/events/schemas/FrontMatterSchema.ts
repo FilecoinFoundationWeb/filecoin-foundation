@@ -5,16 +5,17 @@ import {
   getEventsCategorySettings,
 } from '@/utils/categoryUtils'
 
-import { BaseDataSchemaKebabCase } from '@/schemas/DynamicDataBaseSchema'
-import { ScheduleSchema } from '@/schemas/event/ScheduleSchema'
-import { SpeakersSchema } from '@/schemas/event/SpeakerSchema'
-import { SponsorsSchema } from '@/schemas/event/SponsorSchema'
+import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
+
+import { ScheduleSchema } from './ScheduleSchema'
+import { SpeakersSchema } from './SpeakerSchema'
+import { SponsorsSchema } from './SponsorSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 
 const categorySchema = createCategorySchema(validCategoryIds)
 
-export const EventFrontMatterSchema = BaseDataSchemaKebabCase.extend({
+export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: categorySchema,
   description: z.string().optional(),

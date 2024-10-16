@@ -4,7 +4,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getEventData } from '@/utils/getEventData'
 import { getEventMetaData } from '@/utils/getMetaData'
 
 import { PageHeader } from '@/components/PageHeader'
@@ -12,6 +11,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
+
+import { getEventData } from '../utils/getEventData'
 
 import { ScheduleSection } from './components/ScheduleSection'
 import { SpeakersSection } from './components/SpeakersSection'
