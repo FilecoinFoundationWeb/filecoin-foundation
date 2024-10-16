@@ -36,11 +36,11 @@ export function useUpdateEcosystemProjectForm() {
 
       if (!logoIsUpdated && existingProjectData.image) {
         const pullRequest = await submitProjectWithoutLogo({
-          formDataWithoutLogo,
           existingProjectData,
-          image: existingProjectData.image,
-          timestamps,
+          formDataWithoutLogo,
+          currentLogo: existingProjectData.image,
           prTitle: 'Ecosystem Project Update',
+          timestamps,
         })
 
         updateSearchParams({ status: 'success', prNumber: pullRequest.number })
