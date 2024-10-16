@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 
 import { clsx } from 'clsx'
 
-import type { StaticImageProps } from '@/types/imageType'
+import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -22,9 +22,13 @@ type TitleProps = {
   children: string
 }
 
+type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
+  objectFit?: ImageObjectFit
+}
+
 type PageHeaderProps = {
   title: TitleProps['children']
-  image: StaticImageProps | ImageProps
+  image: PageHeaderImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -71,12 +75,17 @@ PageHeader.Image = function PageHeaderImage({
   image,
 }: Pick<PageHeaderProps, 'image'>) {
   const isStaticImage = 'data' in image
+
   const commonProps = {
     alt: image.alt,
     priority: true,
     quality: 100,
     sizes: buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
-    className: 'rounded-lg border border-brand-100',
+    className: clsx(
+      'rounded-lg border border-brand-100',
+      image.objectFit === 'cover' && 'object-cover',
+      image.objectFit === 'contain' && 'object-contain',
+    ),
   }
 
   if (isStaticImage) {

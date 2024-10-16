@@ -67,7 +67,7 @@ export default function Digest() {
                 key={slug}
                 title={title}
                 tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
-                avatar={authors}
+                avatars={authors}
                 description={description}
                 textIsClamped={true}
                 cta={{
