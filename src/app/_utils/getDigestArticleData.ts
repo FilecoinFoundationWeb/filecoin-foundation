@@ -36,17 +36,18 @@ export function getAllDigestArticleDataSortedByNumber() {
 }
 
 function generatePreviewDescription(content: string) {
-  const markdownFreeContent = removeMarkdown(content)
-  const formattedContent = markdownFreeContent.substring(
-    0,
+  const truncatedContent = truncateText(
+    content,
     CONTENT_PREVIEW_CHARACTER_LENGTH,
   )
-  return cleanText(formattedContent)
+  const plainText = removeMarkdown(truncatedContent)
+  return cleanAndTrim(plainText)
 }
 
-function cleanText(text: string) {
-  return text
-    .replace(/\n+/g, ' ') // Replace newlines with a single space
-    .replace(/\s+/g, ' ') // Normalize multiple spaces
-    .trim()
+function truncateText(text: string, maxLength: number) {
+  return text.substring(0, maxLength)
+}
+
+function cleanAndTrim(text: string) {
+  return text.replace(/\s+/g, ' ').trim()
 }
