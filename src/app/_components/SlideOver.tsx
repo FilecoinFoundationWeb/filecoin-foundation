@@ -1,18 +1,25 @@
 import { Fragment } from 'react'
 
-import { Dialog, Transition } from '@headlessui/react'
+import {
+  Dialog,
+  DialogPanel,
+  DialogBackdrop,
+  Transition,
+  TransitionChild,
+  type DialogProps,
+} from '@headlessui/react'
 
 type SlideOverProps = {
-  open: boolean
-  setOpen: (open: boolean) => void
+  open: DialogProps['open']
+  setOpen: DialogProps['onClose']
   children: React.ReactNode
 }
 
 export function SlideOver({ open, setOpen, children }: SlideOverProps) {
   return (
-    <Transition.Root show={open} as={Fragment}>
+    <Transition show={open} as={Fragment}>
       <Dialog className="relative z-10" onClose={setOpen}>
-        <Transition.Child
+        <TransitionChild
           as={Fragment}
           enter="ease-in-out duration-500 sm:duration-700"
           enterFrom="opacity-0"
@@ -21,13 +28,13 @@ export function SlideOver({ open, setOpen, children }: SlideOverProps) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 backdrop-blur-lg" />
-        </Transition.Child>
+          <DialogBackdrop className="fixed inset-0 backdrop-blur-lg" />
+        </TransitionChild>
 
         <div className="fixed inset-0 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
             <div className="pointer-events-none fixed inset-y-0 right-0 flex w-full max-w-[480px]">
-              <Transition.Child
+              <TransitionChild
                 as={Fragment}
                 enter="transform transition ease-in-out duration-500 sm:duration-700"
                 enterFrom="translate-x-full"
@@ -36,16 +43,16 @@ export function SlideOver({ open, setOpen, children }: SlideOverProps) {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="pointer-events-auto w-full">
+                <DialogPanel className="pointer-events-auto w-full">
                   <div className="flex h-full flex-col overflow-y-scroll bg-brand-800">
                     {children}
                   </div>
-                </Dialog.Panel>
-              </Transition.Child>
+                </DialogPanel>
+              </TransitionChild>
             </div>
           </div>
         </div>
       </Dialog>
-    </Transition.Root>
+    </Transition>
   )
 }

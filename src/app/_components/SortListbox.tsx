@@ -22,26 +22,22 @@ export function SortListbox({ sortId, onChange, options }: SortListboxProps) {
 
   return (
     <Listbox value={sortId} onChange={onChange}>
-      {({ open }) => (
-        <>
-          <ListboxButton ariaLabel="Sort options" open={open}>
-            <div className="inline-flex items-center gap-2">
-              <Icon component={ArrowsDownUp} />
-              <span className="hidden text-nowrap md:block">
-                {selectedOption.name}
-              </span>
-            </div>
-            <span className="hidden md:block">
-              <Icon component={CaretDown} size={16} weight="bold" />
-            </span>
-          </ListboxButton>
-          <ListboxOptions position="right">
-            {options.map((option) => (
-              <ListboxOption key={option.id} option={option} />
-            ))}
-          </ListboxOptions>
-        </>
-      )}
+      <ListboxButton>
+        <div className="inline-flex items-center gap-2">
+          <Icon component={ArrowsDownUp} />
+          <span className="hidden text-nowrap md:block">
+            {selectedOption.name}
+          </span>
+        </div>
+        <span className="hidden md:block">
+          <Icon component={CaretDown} size={16} weight="bold" />
+        </span>
+      </ListboxButton>
+      <ListboxOptions position="right">
+        {options.map((option) => (
+          <ListboxOption key={option.id} option={option} />
+        ))}
+      </ListboxOptions>
     </Listbox>
   )
 }

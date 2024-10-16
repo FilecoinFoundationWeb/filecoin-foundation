@@ -35,25 +35,21 @@ export function CategoryListbox({
 
   return (
     <Listbox value={selected} onChange={onChange}>
-      {({ open }) => (
-        <>
-          <ListboxButton ariaLabel="Category options" open={open}>
-            <span>Category</span>
-            <Icon component={CaretDown} size={16} weight="bold" />
-          </ListboxButton>
-          <ListboxOptions>
-            {totalCategoryCount && (
-              <ListboxOption
-                option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
-                counts={totalCategoryCount}
-              />
-            )}
-            {options.map((option) => (
-              <ListboxOption key={option.id} option={option} counts={counts} />
-            ))}
-          </ListboxOptions>
-        </>
-      )}
+      <ListboxButton>
+        <span>Category</span>
+        <Icon component={CaretDown} size={16} weight="bold" />
+      </ListboxButton>
+      <ListboxOptions>
+        {totalCategoryCount && (
+          <ListboxOption
+            option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
+            counts={totalCategoryCount}
+          />
+        )}
+        {options.map((option) => (
+          <ListboxOption key={option.id} option={option} counts={counts} />
+        ))}
+      </ListboxOptions>
     </Listbox>
   )
 }
