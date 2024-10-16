@@ -24,7 +24,7 @@ import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
-import { useEventsCategory } from '@/hooks/useEventsCategory'
+import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -93,12 +93,11 @@ export default function Events({ searchParams }: Props) {
     defaultSortId: DEFAULT_SORT_OPTION.chronological,
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } =
-    useEventsCategory({
-      searchParams,
-      entries: sortedResults,
-      validCategoryIds,
-    })
+  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
+    searchParams,
+    entries: sortedResults,
+    validCategoryIds,
+  })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -106,8 +105,6 @@ export default function Events({ searchParams }: Props) {
   })
 
   const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
-
-  const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
   return (
     <PageLayout>
@@ -132,7 +129,7 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             results={
               <CategoryResetButton
-                counts={filteredCategoryCounts}
+                counts={categoryCounts}
                 isSelected={hasNoFiltersApplied(searchParams)}
               />
             }
