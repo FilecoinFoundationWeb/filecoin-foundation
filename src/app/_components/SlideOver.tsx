@@ -2,14 +2,16 @@ import { Fragment } from 'react'
 
 import {
   Dialog,
+  DialogPanel,
+  DialogBackdrop,
   Transition,
   TransitionChild,
-  DialogPanel,
+  type DialogProps,
 } from '@headlessui/react'
 
 type SlideOverProps = {
-  open: boolean
-  setOpen: (open: boolean) => void
+  open: DialogProps['open']
+  setOpen: DialogProps['onClose']
   children: React.ReactNode
 }
 
@@ -26,7 +28,7 @@ export function SlideOver({ open, setOpen, children }: SlideOverProps) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 backdrop-blur-lg" />
+          <DialogBackdrop className="fixed inset-0 backdrop-blur-lg" />
         </TransitionChild>
 
         <div className="fixed inset-0 overflow-hidden">
