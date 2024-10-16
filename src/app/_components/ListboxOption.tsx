@@ -1,8 +1,7 @@
 import { Fragment } from 'react'
 
-import { Listbox } from '@headlessui/react'
+import { ListboxOption as HeadlessUIListboxOption } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react'
-import { clsx } from 'clsx'
 
 import { type CategoryCounts } from '@/types/categoryTypes'
 
@@ -31,22 +30,13 @@ function OptionContent({ option, counts }: ListboxOptionProps) {
 
 export function ListboxOption({ option, counts }: ListboxOptionProps) {
   return (
-    <Listbox.Option value={option.id} as={Fragment}>
-      {({ active, selected }) => (
-        <li
-          className={clsx(
-            'flex cursor-default items-center justify-between gap-12 px-5 py-2',
-            { 'bg-brand-500': active, 'bg-transparent': !active },
-          )}
-        >
-          <OptionContent option={option} counts={counts} />
-          {selected && (
-            <span className="mb-px">
-              <Icon component={Check} size={20} />
-            </span>
-          )}
-        </li>
-      )}
-    </Listbox.Option>
+    <HeadlessUIListboxOption value={option.id} as={Fragment}>
+      <li className="group flex cursor-default items-center justify-between gap-12 bg-transparent px-5 py-2 data-[focus]:bg-brand-500">
+        <OptionContent option={option} counts={counts} />
+        <span className="mb-px group-data-[selected]:visible">
+          <Icon component={Check} size={20} />
+        </span>
+      </li>
+    </HeadlessUIListboxOption>
   )
 }

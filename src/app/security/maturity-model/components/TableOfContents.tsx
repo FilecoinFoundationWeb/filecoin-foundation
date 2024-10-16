@@ -85,19 +85,15 @@ export function MobileTableOfContents() {
 
   return (
     <Listbox value={selectedSlug} onChange={handleChange}>
-      {({ open }) => (
-        <>
-          <ListboxButton ariaLabel="Table of Contents" open={open}>
-            <span>{selectedTitle}</span>
-            <Icon component={CaretDown} size={16} weight="bold" />
-          </ListboxButton>
-          <ListboxOptions>
-            {options.map((option) => (
-              <ListboxOption key={option.id} option={option} />
-            ))}
-          </ListboxOptions>
-        </>
-      )}
+      <ListboxButton>
+        <span>{selectedTitle}</span>
+        <Icon component={CaretDown} size={16} weight="bold" />
+      </ListboxButton>
+      <ListboxOptions>
+        {options.map((option) => (
+          <ListboxOption key={option.id} option={option} />
+        ))}
+      </ListboxOptions>
     </Listbox>
   )
 }
