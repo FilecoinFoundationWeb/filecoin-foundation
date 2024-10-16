@@ -10,7 +10,7 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagLabel } from '@/components/TagLabel'
+import { TagGroup } from '@/components/TagGroup'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
@@ -64,21 +64,25 @@ export default function EventEntry({ params }: EventProps) {
   const eventHasSchedule = schedule && schedule.days.length > 0
   const eventHasSpeakers = speakers && speakers.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
-  const eventHasRecap = isEventConcluded(startDate, endDate)
+  const eventHasConcluded = isEventConcluded(startDate, endDate)
+  const eventHasRecap = eventHasConcluded
 
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="grid gap-4">
-        <TagLabel borderColor="brand-100">
-          {getCategoryLabel({ collectionName: 'event_entries', category })}
-        </TagLabel>
+        <TagGroup
+          label={[
+            getCategoryLabel({ collectionName: 'event_entries', category }),
+            eventHasConcluded ? 'Concluded Event' : undefined,
+          ]}
+        />
         <PageHeader
           title={title}
           description={description}
           metaData={getEventMetaData(data)}
           cta={
-            !eventHasRecap
+            !eventHasConcluded
               ? buildCtaArray({ externalLink, lumaCalendarLink })
               : undefined
           }
