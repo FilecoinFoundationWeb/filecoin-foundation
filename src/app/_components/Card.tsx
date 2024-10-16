@@ -29,12 +29,12 @@ type CardProps = {
   tagLabel?: TagGroupProps['label']
   metaData?: MetaDataType
   description?: string
-  cta?: CTAProps
+  cta?: CTAPropsWithSpacing
   image?: CardImageProps
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
-  avatar?: AvatarGroupProps['authors']
+  avatars?: AvatarGroupProps['authors']
 }
 
 type SpacingValue = keyof typeof theme.spacing
@@ -43,7 +43,7 @@ type BreakpointValue = keyof typeof theme.screens
 type LeftProperty = `left-${SpacingValue}`
 type ResponsiveLeftProperty = `${BreakpointValue}:${LeftProperty}`
 
-type LinkProps = {
+type CTAPropsWithSpacing = {
   left?: LeftProperty | [LeftProperty, ResponsiveLeftProperty]
 } & CTAProps
 
@@ -64,7 +64,7 @@ export function Card({
   borderColor = 'brand-500',
   textIsClamped = false,
   as: Tag = 'li',
-  avatar,
+  avatars,
 }: CardProps) {
   return (
     <Tag
@@ -75,14 +75,17 @@ export function Card({
     >
       {image && <Card.Image image={image} />}
       <div className="flex flex-col gap-3 p-4">
-        <Card.MetaAndTags tagLabel={tagLabel} metaData={metaData} />
+        {tagLabel && <TagGroup label={tagLabel} />}
+        {metaData && <Meta metaData={metaData} />}
         <Card.Title title={title} />
         <div className={clsx(cta && 'mb-10')}>
-          <Card.Description
-            description={description}
-            textIsClamped={textIsClamped}
-          />
-          <Card.Avatar avatar={avatar} />
+          {description && (
+            <Card.Description
+              description={description}
+              textIsClamped={textIsClamped}
+            />
+          )}
+          {avatars && <Card.Avatars avatars={avatars} />}
           {cta && <Card.Link {...cta} />}
         </div>
       </div>
@@ -90,7 +93,9 @@ export function Card({
   )
 }
 
-Card.Image = function ImageComponent({ image }: { image: CardImageProps }) {
+Card.Image = function ImageComponent({
+  image,
+}: Required<Pick<CardProps, 'image'>>) {
   const isStaticImage = 'data' in image
 
   const commonProps = {
@@ -131,21 +136,7 @@ Card.Image = function ImageComponent({ image }: { image: CardImageProps }) {
   )
 }
 
-Card.MetaAndTags = function MetaAndTags({
-  tagLabel,
-  metaData,
-}: Pick<CardProps, 'tagLabel' | 'metaData'>) {
-  return (
-    <>
-      {tagLabel && <TagGroup label={tagLabel} />}
-      {metaData && metaData.length > 0 && <Meta metaData={metaData} />}
-    </>
-  )
-}
-
 Card.Title = function Title({ title }: Pick<CardProps, 'title'>) {
-  if (!title) return null
-
   return typeof title === 'string' ? (
     <Heading isClamped tag="h3" variant="lg">
       {title}
@@ -158,9 +149,7 @@ Card.Title = function Title({ title }: Pick<CardProps, 'title'>) {
 Card.Description = function Description({
   description,
   textIsClamped,
-}: Pick<CardProps, 'description' | 'textIsClamped'>) {
-  if (!description) return null
-
+}: Required<Pick<CardProps, 'description' | 'textIsClamped'>>) {
   return (
     <p className={clsx(textIsClamped && 'line-clamp-3 text-ellipsis')}>
       {description}
@@ -168,16 +157,12 @@ Card.Description = function Description({
   )
 }
 
-Card.Avatar = function Avatar({
-  avatar,
-}: {
-  avatar?: AvatarGroupProps['authors']
-}) {
-  if (!avatar) return null
-
+Card.Avatars = function Avatars({
+  avatars,
+}: Required<Pick<CardProps, 'avatars'>>) {
   return (
     <div className="mt-6">
-      <AvatarGroup authors={avatar} />
+      <AvatarGroup authors={avatars} />
     </div>
   )
 }
@@ -188,7 +173,7 @@ Card.Link = function Link({
   icon,
   text,
   left = 'left-4',
-}: LinkProps) {
+}: NonNullable<CardProps['cta']>) {
   const isExternal = isExternalLink(href)
   const textElement = <span>{text}</span>
 

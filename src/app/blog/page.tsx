@@ -116,6 +116,7 @@ export default function Blog({ searchParams }: Props) {
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',
+          objectFit: 'cover',
         }}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
@@ -213,6 +214,7 @@ export default function Blog({ searchParams }: Props) {
                             ...(image || graphicsData.imageFallback.data),
                             alt: '',
                             priority: isFirstTwoImages,
+                            objectFit: 'cover',
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '350px',
