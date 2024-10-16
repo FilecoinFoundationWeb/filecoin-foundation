@@ -678,6 +678,7 @@ collections:
         label: YouTube Video URL
         widget: string
         required: false
+        hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
       - name: year-joined
         label: Using Filecoin Since
         widget: datetime
@@ -873,4 +874,9 @@ collections:
             min: 0
             max: 7
             fields: *event_sponsor_config
+          - name: recap-youtube-video-url
+            label: Event Recap YouTube Embed URL
+            widget: string
+            required: false
+            hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
       - *meta_config

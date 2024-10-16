@@ -15,7 +15,9 @@ import { TagLabel } from '@/components/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
+import { isEventConcluded } from '../utils/isEventConcluded'
 
+import { RecapSection } from './components/RecapSection'
 import { ScheduleSection } from './components/ScheduleSection'
 import { SpeakersSection } from './components/SpeakersSection'
 import { SponsorSection } from './components/SponsorSection'
@@ -50,6 +52,8 @@ export default function EventEntry({ params }: EventProps) {
     category,
     externalLink,
     lumaCalendarLink,
+    startDate,
+    endDate,
     lumaEventsSection,
     schedule,
     speakers,
@@ -59,6 +63,7 @@ export default function EventEntry({ params }: EventProps) {
   const eventHasSchedule = schedule && schedule.days.length > 0
   const eventHasSpeakers = speakers && speakers.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
+  const eventHasRecap = isEventConcluded(startDate, endDate)
 
   return (
     <PageLayout>
@@ -78,6 +83,7 @@ export default function EventEntry({ params }: EventProps) {
           }}
         />
       </div>
+      {eventHasRecap && <RecapSection />}
       {lumaEventsSection && (
         <PageSection kicker="Explore" title={lumaEventsSection.title}>
           <iframe
@@ -88,8 +94,8 @@ export default function EventEntry({ params }: EventProps) {
           ></iframe>
         </PageSection>
       )}
-      {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
       {eventHasSchedule && <ScheduleSection schedule={schedule} />}
+      {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
       {eventHasSponsors && <SponsorSection sponsors={sponsors} />}
 
       <CTASection
