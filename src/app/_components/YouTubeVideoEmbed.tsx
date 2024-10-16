@@ -3,7 +3,7 @@
 import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 import useSWR from 'swr'
 
-import { fetchYouTubeVideoMetadata } from '../ecosystem-explorer/[slug]/services/youtube'
+import { fetchYouTubeVideoMetadata } from '@/services/youtube'
 
 type PlaceholderProps = {
   text: string
