@@ -41,7 +41,10 @@ export function getMarkdownData<T>({
 
     const fileContents = readFileContents(filePath)
     const { data, content } = parseMarkdown(fileContents)
-    const parsedData = zodParser({ ...data, content })
+
+    const dataToValidate = content ? { ...data, content } : data
+
+    const parsedData = zodParser(dataToValidate)
     const parsedDataWithSlug = { ...parsedData, slug }
 
     return convertObjectKeysToCamelCase(parsedDataWithSlug, { deep: true })
