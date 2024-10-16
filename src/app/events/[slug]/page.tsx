@@ -9,7 +9,6 @@ import { getEventMetaData } from '@/utils/getMetaData'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
-import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
@@ -17,6 +16,7 @@ import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
 import { isEventConcluded } from '../utils/isEventConcluded'
 
+import { EventsSection } from './components/EventsSection'
 import { RecapSection } from './components/RecapSection'
 import { ScheduleSection } from './components/ScheduleSection'
 import { SpeakersSection } from './components/SpeakersSection'
@@ -60,6 +60,7 @@ export default function EventEntry({ params }: EventProps) {
     sponsors,
   } = data
 
+  const eventHasEventsSection = lumaEventsSection && lumaEventsSection.embedLink
   const eventHasSchedule = schedule && schedule.days.length > 0
   const eventHasSpeakers = speakers && speakers.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
@@ -84,15 +85,11 @@ export default function EventEntry({ params }: EventProps) {
         />
       </div>
       {eventHasRecap && <RecapSection />}
-      {lumaEventsSection && (
-        <PageSection kicker="Explore" title={lumaEventsSection.title}>
-          <iframe
-            src={lumaEventsSection.embedLink}
-            width="100%"
-            height="720"
-            className="rounded-lg"
-          ></iframe>
-        </PageSection>
+      {eventHasEventsSection && (
+        <EventsSection
+          title={lumaEventsSection.title}
+          embedLink={lumaEventsSection.embedLink}
+        />
       )}
       {eventHasSchedule && <ScheduleSection schedule={schedule} />}
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
