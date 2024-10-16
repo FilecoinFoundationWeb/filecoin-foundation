@@ -21,7 +21,7 @@ type ListboxOptionProps = {
 function OptionContent({ option, counts }: ListboxOptionProps) {
   return (
     <span className="inline-flex items-baseline gap-2">
-      <span className="text-nowrap">{option.name}</span>
+      <span>{option.name}</span>
       {counts && (
         <span className="text-sm font-light">({counts[option.id]})</span>
       )}
