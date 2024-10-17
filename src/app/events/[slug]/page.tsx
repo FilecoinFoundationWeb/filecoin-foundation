@@ -6,12 +6,14 @@ import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getEventMetaData } from '@/utils/getMetaData'
 
+import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 
+import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
 
 import { ScheduleSection } from './components/ScheduleSection'
@@ -39,6 +41,7 @@ export function generateMetadata({ params }: EventProps) {
 export default function EventEntry({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
+  const sponsorEventData = getInvolvedData[0]
 
   const {
     title,
@@ -88,6 +91,15 @@ export default function EventEntry({ params }: EventProps) {
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
       {eventHasSchedule && <ScheduleSection schedule={schedule} />}
       {eventHasSponsors && <SponsorSection sponsors={sponsors} />}
+
+      <CTASection
+        title={sponsorEventData.title}
+        description={sponsorEventData.description}
+        cta={{
+          href: sponsorEventData.cta.href,
+          text: sponsorEventData.cta.text,
+        }}
+      />
     </PageLayout>
   )
 }
