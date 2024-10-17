@@ -26,11 +26,7 @@ export function NoResultsMessage({
         {title}
       </Heading>
       <p className="max-w-md text-center">{message}</p>
-      {cta && (
-        <Button href={cta.href} variant="primary">
-          {cta.text}
-        </Button>
-      )}
+      {cta && <Button href={cta.href}>{cta.text}</Button>}
     </div>
   )
 }

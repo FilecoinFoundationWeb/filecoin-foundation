@@ -31,9 +31,7 @@ export default function ErrorMessage({
         {title}
       </Heading>
       <DescriptionText>{children}</DescriptionText>
-      <Button href={href} variant="primary">
-        {text}
-      </Button>
+      <Button href={href}>{text}</Button>
     </div>
   )
 }

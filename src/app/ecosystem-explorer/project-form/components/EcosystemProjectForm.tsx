@@ -218,11 +218,7 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
       </FormSection>
-      <Button
-        variant="primary"
-        disabled={isSubmitting}
-        className="w-full sm:w-auto"
-      >
+      <Button disabled={isSubmitting} className="w-full sm:w-auto">
         {isSubmitting ? 'Submitting...' : 'Submit Project'}
       </Button>
     </ControlledForm>

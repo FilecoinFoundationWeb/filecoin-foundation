@@ -24,10 +24,10 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
+import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
-import { VideoSection } from './components/VideoSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
@@ -109,7 +109,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             {content && <MarkdownContent>{content}</MarkdownContent>}
           </div>
 
-          {videoUrl && <VideoSection videoUrl={videoUrl} />}
+          {videoUrl && <YouTubeVideoEmbed videoUrl={videoUrl} />}
 
           {newsUpdate && (
             <div className="prose">

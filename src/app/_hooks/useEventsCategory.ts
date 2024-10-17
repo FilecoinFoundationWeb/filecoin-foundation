@@ -1,14 +1,11 @@
 import { useMemo } from 'react'
 
-import { isBefore } from 'date-fns'
-
 import { pastEventsOption } from '@/constants/categoryConstants'
-
-import { getUTCMidnightToday } from '@/utils/dateUtils'
 
 import { type UseCategoryProps, useCategory } from '@/hooks/useCategory'
 
 import type { Event } from '@/events/types/eventType'
+import { isEventConcluded } from '@/events/utils/isEventConcluded'
 
 export function useEventsCategory(props: UseCategoryProps<Event>) {
   const { entries, searchParams, validCategoryIds } = props
@@ -21,7 +18,10 @@ export function useEventsCategory(props: UseCategoryProps<Event>) {
   const { categoryQuery, categoryCounts, categorizedResults } = results
 
   const pastEvents = useMemo(
-    () => entries.filter(filterByPastEvents),
+    () =>
+      entries.filter(({ startDate, endDate }) =>
+        isEventConcluded(startDate, endDate),
+      ),
     [entries],
   )
 
@@ -42,12 +42,4 @@ export function useEventsCategory(props: UseCategoryProps<Event>) {
     categorizedResults: updatedCategorizedResults,
     categoryCounts: updatedCategoryCounts,
   }
-}
-
-function filterByPastEvents(entry: Event) {
-  const today = getUTCMidnightToday()
-  const { startDate, endDate } = entry
-  const eventDate = endDate || startDate
-
-  return isBefore(eventDate, today)
 }

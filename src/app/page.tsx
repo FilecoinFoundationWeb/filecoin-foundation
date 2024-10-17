@@ -106,7 +106,6 @@ export default function Home() {
           />
           <Button
             className="sm:self-center"
-            variant="primary"
             href={PATHS.ECOSYSTEM_EXPLORER.path}
           >
             View All
@@ -130,11 +129,7 @@ export default function Home() {
           description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
         >
           <FeaturedBlogPosts />
-          <Button
-            className="sm:self-center"
-            variant="primary"
-            href={PATHS.BLOG.path}
-          >
+          <Button className="sm:self-center" href={PATHS.BLOG.path}>
             View All
           </Button>
         </PageSection>
