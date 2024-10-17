@@ -16,6 +16,7 @@ import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
+import { TextLink } from '@/components/TextLink'
 
 import { getCategoryData } from '../actions/getCategoryData'
 import {
@@ -142,7 +143,7 @@ export function EcosystemProjectForm({
         <ControlledFormListbox<EcosystemProjectFormData>
           name="yearJoined"
           label="What year did your project start using Filecoin or IPFS?"
-          placeholder="Select year"
+          placeholder="Select Year"
           options={yearOptions}
           disabled={isSubmitting}
           innerWidth="w-40"
@@ -169,7 +170,7 @@ export function EcosystemProjectForm({
             <ControlledFormListbox<EcosystemProjectFormData>
               name="category"
               label="Category"
-              placeholder="Select category"
+              placeholder="Select Category"
               options={categoryOptions}
               disabled={isSubmitting}
             />
@@ -177,8 +178,8 @@ export function EcosystemProjectForm({
           <div className="min-w-0 sm:w-1/2">
             <ControlledFormListbox<EcosystemProjectFormData>
               name="topic"
-              label="Topic"
-              placeholder="Select topic"
+              label="Subcategory"
+              placeholder="Select Subcategory"
               options={subCategoryOptions}
               disabled={isSubmitting}
             />
@@ -187,7 +188,7 @@ export function EcosystemProjectForm({
 
         <ControlledFormFileInput<EcosystemProjectFormData>
           name="logo"
-          label="Choose a Logo for your project"
+          label="Choose a logo for your project"
           accept={['.png', '.jpg', '.svg', '.webp']}
           maxSize={MAX_FILE_SIZE_IN_BYTES}
           disabled={isSubmitting}
@@ -196,16 +197,8 @@ export function EcosystemProjectForm({
               For best quality, please submit a white logo with a transparent
               background, at least 1000px by 1000px, and under 100KB. You can
               use tools like{' '}
-              <a
-                href="https://squoosh.app/"
-                className="text-brand-300 underline hover:text-brand-400"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label='Opens "Squoosh" in a new tab'
-              >
-                Squoosh
-              </a>{' '}
-              to compress your image.
+              <TextLink href="https://squoosh.app/">Squoosh</TextLink> to
+              compress your image.
             </>
           }
         />
@@ -221,7 +214,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="youtubeUrl"
-          label="Youtube Video URL"
+          label="YouTube Video URL"
           placeholder="Video URL"
           type="url"
           disabled={isSubmitting}
@@ -239,8 +232,8 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="xUrl"
-          label="X (Twitter) Profile URL"
-          placeholder="X (Twitter) Profile URL"
+          label="X Profile URL"
+          placeholder="X Profile URL"
           type="url"
           disabled={isSubmitting}
         />

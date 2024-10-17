@@ -24,7 +24,7 @@ export function CreateOrUpdateRouter() {
   )
 
   return (
-    <div className="md:max-w-readable">
+    <>
       <FormSection
         title="Submit or Update Project"
         description="Please select whether you are adding a new project to the Ecosystem Explorer or updating an existing one."
@@ -38,6 +38,6 @@ export function CreateOrUpdateRouter() {
 
       {action === 'create' && <EcosystemProjectCreateForm />}
       {action === 'update' && <SelectProjectToUpdate />}
-    </div>
+    </>
   )
 }

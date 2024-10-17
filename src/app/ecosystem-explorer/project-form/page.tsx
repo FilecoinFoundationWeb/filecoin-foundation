@@ -39,12 +39,14 @@ export default function EcosystemProjectFormPage({ searchParams }: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
 
-      <div className="space-y-4 md:max-w-readable">
-        <PageHeader.Title>{header.title}</PageHeader.Title>
-        <DescriptionText>{header.description}</DescriptionText>
-      </div>
+      <div className="md:max-w-readable">
+        <div className="space-y-4">
+          <PageHeader.Title>{header.title}</PageHeader.Title>
+          <DescriptionText>{header.description}</DescriptionText>
+        </div>
 
-      <CreateOrUpdateRouter />
+        <CreateOrUpdateRouter />
+      </div>
 
       {safeParams.data?.status === 'error' && (
         <ErrorNotification message={safeParams.data.message} />

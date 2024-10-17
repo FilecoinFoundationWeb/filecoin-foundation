@@ -1,7 +1,6 @@
 import path from 'path'
 
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
-
+import type { EcosystemProject } from '../../types/ecosystemProjectType'
 import type { EcosystemProjectFormLogoData } from '../schema/EcosystemProjectFormSchema'
 
 export type FormattedLogo = Awaited<ReturnType<typeof formatLogo>>
