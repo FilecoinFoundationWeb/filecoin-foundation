@@ -17,12 +17,24 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CoreFunctions } from './components/CoreFunctions'
-import {
-  DesktopTableOfContents,
-  MobileTableOfContents,
-} from './components/TableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
+
+const DynamicDesktopTableOfContents = dynamic(
+  () =>
+    import('./components/DesktopTableOfContents').then(
+      (module) => module.DesktopTableOfContents,
+    ),
+  { ssr: false },
+)
+
+const DynamicMobileTableOfContents = dynamic(
+  () =>
+    import('./components/MobileTableOfContents').then(
+      (module) => module.MobileTableOfContents,
+    ),
+  { ssr: false },
+)
 
 const { header, seo } = attributes
 
@@ -74,10 +86,10 @@ export default function MaturityModel() {
             <CoreFunctions />
           </div>
           <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
-            <DesktopTableOfContents />
+            <DynamicDesktopTableOfContents />
           </div>
-          <div className="sticky top-2 z-10 order-first block lg:hidden">
-            <MobileTableOfContents />
+          <div className="sticky top-4 z-10 order-first block lg:hidden">
+            <DynamicMobileTableOfContents />
           </div>
         </div>
       </PageSection>

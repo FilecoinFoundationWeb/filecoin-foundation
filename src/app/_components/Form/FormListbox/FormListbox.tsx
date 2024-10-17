@@ -41,6 +41,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
   label,
   hideLabel,
   error,
+  hideError,
   options,
   value,
   placeholder,
@@ -49,7 +50,12 @@ export function FormListbox<Option extends OptionType = OptionType>({
   ...rest
 }: FormListboxProps<Option>) {
   return (
-    <FormField label={label} hideLabel={hideLabel} error={error}>
+    <FormField
+      label={label}
+      hideLabel={hideLabel}
+      error={error}
+      hideError={hideError}
+    >
       <Listbox<typeof listboxRenderedAs, Option>
         {...rest}
         as={listboxRenderedAs}
@@ -60,7 +66,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
       >
         <ListboxButton
           className={clsx(
-            'inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 px-3.5 py-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400 data-[disabled]:cursor-not-allowed',
+            'inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 px-3.5 py-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400 data-[disabled]:cursor-not-allowed',
             error && 'border-red-400',
           )}
         >

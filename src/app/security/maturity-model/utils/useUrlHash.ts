@@ -62,6 +62,7 @@ export function useUrlHash() {
   }, [])
 
   return {
+    currentSlug: hash.replace(HASH_SIGN, ''),
     currentHash: hash,
     updateHash,
     clearHashIfPresent,

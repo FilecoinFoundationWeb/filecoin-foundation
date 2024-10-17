@@ -91,10 +91,3 @@ export const coreFunctionsData = coreFunctionsBaseData.map((item) => ({
   ...item,
   slug: slugify(item.title, { lower: true, strict: true, trim: true }),
 }))
-
-export const coreFunctionsTableOfContents = coreFunctionsBaseData.map(
-  (item) => ({
-    title: item.title,
-    slug: slugify(item.title, { lower: true, strict: true, trim: true }),
-  }),
-)
