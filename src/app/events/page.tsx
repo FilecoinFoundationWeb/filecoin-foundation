@@ -8,7 +8,6 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { attributes } from '@/content/pages/events.md'
 
@@ -43,6 +42,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getInvolvedData } from './data/getInvolvedData'
+import { eventsSortData } from './data/sortData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 
@@ -58,6 +58,8 @@ type Props = {
 const events = getEventsData()
 const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
 const { featured_entry, seo } = attributes
+
+const sortOptions = getSortOptions(eventsSortData)
 
 if (!featured_entry) {
   throw new Error('Featured entry is undefined')
@@ -86,11 +88,10 @@ export default function Events({ searchParams }: Props) {
     searchBy: ['title', 'location'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'startDate',
-    defaultSortId: DEFAULT_SORT_OPTION.chronological,
+    configs: eventsSortData,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -103,8 +104,6 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
-
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
 
   return (
     <PageLayout>
@@ -148,7 +147,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultOption={defaultQuery}
                 />
               }
             />
@@ -158,7 +157,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultOption={defaultQuery}
                 />
               }
               category={

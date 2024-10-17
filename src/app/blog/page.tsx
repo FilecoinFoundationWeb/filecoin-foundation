@@ -7,7 +7,6 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { attributes } from '@/content/pages/blog.md'
 
@@ -38,6 +37,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { blogSortData } from './data/sortData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 
@@ -83,11 +83,10 @@ export default function Blog({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'publishedOn',
-    defaultSortId: DEFAULT_SORT_OPTION.chronological,
+    configs: blogSortData,
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -101,7 +100,7 @@ export default function Blog({ searchParams }: Props) {
     entries: categorizedResults,
   })
 
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
+  const sortOptions = getSortOptions(blogSortData)
 
   return (
     <PageLayout>
@@ -152,7 +151,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultOption={defaultQuery}
                 />
               }
             />
@@ -163,7 +162,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultOption={defaultQuery}
                 />
               }
               category={

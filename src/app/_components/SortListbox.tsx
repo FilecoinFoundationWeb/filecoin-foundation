@@ -3,7 +3,7 @@
 import { Listbox } from '@headlessui/react'
 import { ArrowsDownUp, CaretDown } from '@phosphor-icons/react/dist/ssr'
 
-import { type SortOption, type SortId } from '@/types/sortTypes'
+import { type SortOption, type ValidSortKey } from '@/types/sortTypes'
 
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
@@ -11,8 +11,8 @@ import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 type SortListboxProps = {
-  sortId: SortId
-  onChange: (selectedOption: SortId) => void
+  sortId: ValidSortKey
+  onChange: (selectedOption: ValidSortKey) => void
   options: ReadonlyArray<SortOption>
 }
 
