@@ -1,11 +1,10 @@
 'use client'
+import { useRef } from 'react'
 
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-
-import type { CategoryMap } from '@/types/categoryTypes'
+import useSWR from 'swr'
 
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
@@ -17,53 +16,82 @@ import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
+import { TextLink } from '@/components/TextLink'
 
+import { getCategoryData } from '../actions/getCategoryData'
 import {
   BRIEF_CHARACTER_LIMIT,
   MAX_FILE_SIZE_IN_BYTES,
   NETWORK_USE_CASE_CHARACTER_LIMIT,
+  SWR_KEYS,
 } from '../constants'
-import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
-import { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
+import {
+  EcosystemProjectFormSchema,
+  type EcosystemProjectFormData,
+  type EcosystemProjectFormDataWithoutLogo,
+  type EcosystemProjectFormLogoData,
+} from '../schema/EcosystemProjectFormSchema'
+import type { SubmitOption } from '../types'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
+import { ErrorMessage } from './ErrorMessage'
 import { FormSection } from './FormSection'
+import { Loader } from './Loader'
 
 type StringOrUndefined = string | undefined
 
-export type EcosystemProjectFormData = z.infer<
-  typeof EcosystemProjectFormSchema
->
-
-type ProjectFormProps = {
-  categoryData: CategoryMap
-  subCategoryData: CategoryMap
-  initialValues: EcosystemProjectFormData
+type EcosystemProjectFormProps = {
+  initialFormData: EcosystemProjectFormDataWithoutLogo
+  logo?: EcosystemProjectFormLogoData
+  onSubmit: (formData: EcosystemProjectFormData, option: SubmitOption) => void
+  isUpdateForm?: boolean
 }
 
 export function EcosystemProjectForm({
-  categoryData,
-  subCategoryData,
-  initialValues,
-}: ProjectFormProps) {
-  const yearOptions = getYearOptions('desc')
-  const categoryOptions = getOptionsFromObject(categoryData)
-  const subCategoryOptions = getOptionsFromObject(subCategoryData)
+  initialFormData,
+  logo,
+  isUpdateForm,
+  onSubmit,
+}: EcosystemProjectFormProps) {
+  const logoUpdateState = useRef<boolean>(false)
+
+  const { data: categories, error } = useSWR(
+    SWR_KEYS.categories,
+    getCategoryData,
+  )
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
-    defaultValues: initialValues,
+    defaultValues: { ...initialFormData, logo },
   })
-  const isSubmitting = form.formState.isSubmitting
 
-  const submitForm = useSubmitEcosystemProjectForm()
+  if (!categories) {
+    return <Loader />
+  }
+
+  if (error) {
+    return <ErrorMessage message="Couldn't load categories" />
+  }
+
+  const yearOptions = getYearOptions('desc')
+  const categoryOptions = getOptionsFromObject(categories.categoryData)
+  const subCategoryOptions = getOptionsFromObject(categories.subCategoryData)
+
+  const isSubmitting = form.formState.isSubmitting
+  const logoHasChanged = form.formState.dirtyFields.logo
+
+  if (logoHasChanged && isUpdateForm) {
+    logoUpdateState.current = true
+  }
 
   return (
     <ControlledForm<EcosystemProjectFormData>
       form={form}
       className="md:max-w-readable"
-      onSubmit={submitForm}
+      onSubmit={(data) =>
+        onSubmit(data, { logoIsUpdated: logoUpdateState.current })
+      }
     >
       <FormSection
         title="Personal Information"
@@ -89,7 +117,7 @@ export function EcosystemProjectForm({
           name="projectName"
           label="Project Name"
           placeholder="Project Name"
-          disabled={isSubmitting}
+          disabled={isUpdateForm || isSubmitting}
         />
 
         <Field className={formFieldStyle}>
@@ -115,7 +143,7 @@ export function EcosystemProjectForm({
         <ControlledFormListbox<EcosystemProjectFormData>
           name="yearJoined"
           label="What year did your project start using Filecoin or IPFS?"
-          placeholder="Select year"
+          placeholder="Select Year"
           options={yearOptions}
           disabled={isSubmitting}
           innerWidth="w-40"
@@ -142,7 +170,7 @@ export function EcosystemProjectForm({
             <ControlledFormListbox<EcosystemProjectFormData>
               name="category"
               label="Category"
-              placeholder="Select category"
+              placeholder="Select Category"
               options={categoryOptions}
               disabled={isSubmitting}
             />
@@ -150,8 +178,8 @@ export function EcosystemProjectForm({
           <div className="min-w-0 sm:w-1/2">
             <ControlledFormListbox<EcosystemProjectFormData>
               name="topic"
-              label="Topic"
-              placeholder="Select topic"
+              label="Subcategory"
+              placeholder="Select Subcategory"
               options={subCategoryOptions}
               disabled={isSubmitting}
             />
@@ -159,8 +187,8 @@ export function EcosystemProjectForm({
         </div>
 
         <ControlledFormFileInput<EcosystemProjectFormData>
-          name="files"
-          label="Choose a Logo for your project"
+          name="logo"
+          label="Choose a logo for your project"
           accept={['.png', '.jpg', '.svg', '.webp']}
           maxSize={MAX_FILE_SIZE_IN_BYTES}
           disabled={isSubmitting}
@@ -169,16 +197,8 @@ export function EcosystemProjectForm({
               For best quality, please submit a white logo with a transparent
               background, at least 1000px by 1000px, and under 100KB. You can
               use tools like{' '}
-              <a
-                href="https://squoosh.app/"
-                className="text-brand-300 underline hover:text-brand-400"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label='Opens "Squoosh" in a new tab'
-              >
-                Squoosh
-              </a>{' '}
-              to compress your image.
+              <TextLink href="https://squoosh.app/">Squoosh</TextLink> to
+              compress your image.
             </>
           }
         />
@@ -194,7 +214,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="youtubeUrl"
-          label="Youtube Video URL"
+          label="YouTube Video URL"
           placeholder="Video URL"
           type="url"
           disabled={isSubmitting}
@@ -212,17 +232,13 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="xUrl"
-          label="X (Twitter) Profile URL"
-          placeholder="X (Twitter) Profile URL"
+          label="X Profile URL"
+          placeholder="X Profile URL"
           type="url"
           disabled={isSubmitting}
         />
       </FormSection>
-      <Button
-        variant="primary"
-        disabled={isSubmitting}
-        className="w-full sm:w-auto"
-      >
+      <Button disabled={isSubmitting} className="w-full sm:w-auto">
         {isSubmitting ? 'Submitting...' : 'Submit Project'}
       </Button>
     </ControlledForm>
