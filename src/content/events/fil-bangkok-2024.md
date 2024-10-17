@@ -151,6 +151,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/alexanderkinstler/
     image:
       src: /assets/images/alexander-kinstler-headshot.webp
+  - name: Leah Callon-Butler
+    title: "Director "
+    company: Emfarsis
+    linkedin: https://www.linkedin.com/in/leahcallonbutler/
+    image:
+      src: /assets/images/screen-shot-2024-10-17-at-1.14.37-pm.png
 sponsors:
   first-tier:
     - name: Boosty Labs
