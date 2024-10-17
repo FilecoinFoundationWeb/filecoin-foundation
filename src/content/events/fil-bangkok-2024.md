@@ -50,6 +50,20 @@ schedule:
           start: 2024-11-06T11:00:00.000Z
           end: 2024-11-06T18:30:00.000Z
           location: Gaysorn Urban Resort
+        - title: FIL Dev Summit 5
+          description: >-
+            FIL Dev Summit is a gathering of developers, builders, and engaged
+            community members who want to contribute to the core protocol and
+            network evolution of Filecoin (think IPFS Thing, but bigger!). This
+            summit is more than just a meetup—it's a place for meaningful and
+            impactful conversations that help push Filecoin forward.
+
+
+            Find the full agenda at /fil-dev.io/FDS-5
+          start: 2024-11-06T11:00:00.000Z
+          end: 2024-11-06T20:00:00.000Z
+          location: Gaysorn Urban Resort
+          url: https://fil-dev.io/FDS-5
       date: 2024-11-06T11:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
