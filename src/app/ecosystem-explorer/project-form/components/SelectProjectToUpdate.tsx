@@ -3,7 +3,12 @@
 import { useQueryState } from 'nuqs'
 import useSWR from 'swr'
 
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
+
 import { FormCombobox } from '@/components/Form/FormCombobox'
+import { TextLink } from '@/components/TextLink'
 
 import { getProjectListData } from '../actions/getProjectListData'
 import { SWR_KEYS } from '../constants'
@@ -13,8 +18,6 @@ import { EcosystemProjectUpdateForm } from './EcosystemProjectUpdateForm'
 import { ErrorMessage } from './ErrorMessage'
 import { FormSection } from './FormSection'
 import { Loader } from './Loader'
-
-const MARKETING_DEPARTMENT_EMAIL = 'marketing@fil.org'
 
 const URL_QUERY_KEY = 'project'
 
@@ -44,14 +47,13 @@ export function SelectProjectToUpdate() {
         title="Select Your Project"
         description={
           <p>
-            {`Welcome back! Please select your project. Don't see it? Select
-            "Submit Project" above, or reach out to `}
-            <a
-              className="text-brand-300 underline"
-              href={`mailto:${MARKETING_DEPARTMENT_EMAIL}`}
-            >
-              {MARKETING_DEPARTMENT_EMAIL}
-            </a>{' '}
+            Welcome back! Please select your project. Don&apos;t see it? Select
+            &quot;Submit Project&quot; above, or reach out to{' '}
+            <TextLink href={FILECOIN_FOUNDATION_URLS.marketing.email.href}>
+              {extractEmailAddress(
+                FILECOIN_FOUNDATION_URLS.marketing.email.href,
+              )}
+            </TextLink>{' '}
             for more support.
           </p>
         }
