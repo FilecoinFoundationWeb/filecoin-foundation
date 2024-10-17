@@ -20,10 +20,18 @@ import { CoreFunctions } from './components/CoreFunctions'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const DynamicTableOfContents = dynamic(
+const DynamicDesktopTableOfContents = dynamic(
   () =>
-    import('./components/TableOfContents').then(
-      (module) => module.TableOfContents,
+    import('./components/DesktopTableOfContents').then(
+      (module) => module.DesktopTableOfContents,
+    ),
+  { ssr: false },
+)
+
+const DynamicMobileTableOfContents = dynamic(
+  () =>
+    import('./components/MobileTableOfContents').then(
+      (module) => module.MobileTableOfContents,
     ),
   { ssr: false },
 )
@@ -77,8 +85,11 @@ export default function MaturityModel() {
           <div className="grow">
             <CoreFunctions />
           </div>
-          <div className="order-first lg:sticky lg:top-12 lg:order-last lg:w-72">
-            <DynamicTableOfContents />
+          <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
+            <DynamicDesktopTableOfContents />
+          </div>
+          <div className="sticky top-4 z-10 order-first block lg:hidden">
+            <DynamicMobileTableOfContents />
           </div>
         </div>
       </PageSection>

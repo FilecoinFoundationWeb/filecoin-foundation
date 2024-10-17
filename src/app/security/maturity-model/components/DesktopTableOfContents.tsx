@@ -8,7 +8,7 @@ import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash, HASH_SIGN, type SectionHash } from '../utils/useUrlHash'
 
-export function TableOfContents() {
+export function DesktopTableOfContents() {
   const { currentHash } = useUrlHash()
 
   return (
