@@ -90,6 +90,7 @@ export default function EventEntry({ params }: EventProps) {
           image={{
             ...(image || graphicsData.imageFallback.data),
             alt: '',
+            objectFit: 'cover',
           }}
         />
       </div>

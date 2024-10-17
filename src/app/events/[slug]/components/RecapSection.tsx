@@ -1,10 +1,10 @@
-import type { Event } from '@/types/eventType'
-
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
 import { PageSection } from '@/components/PageSection'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
+
+import type { Event } from '../../types/eventType'
 
 type RecapSectionProps = {
   youtubeEmbedUrl: NonNullable<Event['recapYoutubeEmbedUrl']>

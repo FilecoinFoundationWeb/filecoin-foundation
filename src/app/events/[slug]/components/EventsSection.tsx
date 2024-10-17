@@ -1,11 +1,8 @@
-import type { Event } from '@/types/eventType'
-
 import { PageSection } from '@/components/PageSection'
 
-type EventsSectionProps = Pick<
-  NonNullable<Event['lumaEventsSection']>,
-  'title' | 'embedLink'
->
+import type { Event } from '../../types/eventType'
+
+type EventsSectionProps = NonNullable<Event['lumaEventsSection']>
 
 export function EventsSection({ title, embedLink }: EventsSectionProps) {
   return (
