@@ -27,7 +27,8 @@ schedule:
   days:
     - events:
         - title: Doors Open
-          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description:
+            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
