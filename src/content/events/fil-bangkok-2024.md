@@ -99,6 +99,39 @@ schedule:
           location: Gaysorn Urban Resort
           start: 2024-11-07T09:00:00.000Z
           end: 2024-11-07T18:30:00.000Z
+    - date: 2024-11-08T09:00:00.000Z
+      events:
+        - title: FIL Bangkok Co-Working Space
+          description: >-
+            FIL Bangkok Co-Working Space at Gaysorn Urban Resort. FIL Bangkok
+            Co-Working Space is your home base in Bangkok to expand your
+            network, knowledge, and opportunities within the Filecoin ecosystem.
+            From November 6th to 8th, this space is perfect for co-working,
+            meetings, and more!
+
+
+            ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward. (separate registration required).
+
+
+            ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
+          start: 2024-11-08T09:00:00.000Z
+          end: 2024-11-08T18:00:00.000Z
+          location: Gaysorn Urban Resort
+          url: https://lu.ma/no08u3bt
+        - title: FIL Dev Summit 5
+          description: >-
+            FIL Dev Summit is a gathering of developers, builders, and engaged
+            community members who want to contribute to the core protocol and
+            network evolution of Filecoin (think IPFS Thing, but bigger!). This
+            summit is more than just a meetup—it's a place for meaningful and
+            impactful conversations that help push Filecoin forward.
+
+
+            Find the full agenda at /fil-dev.io/FDS-5
+          url: https://fil-dev.io/FDS-5
+          location: Gaysorn Urban Resort
+          start: 2024-11-08T09:00:00.000Z
+          end: 2024-11-08T20:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
     title: CEO
