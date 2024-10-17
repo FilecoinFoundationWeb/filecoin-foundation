@@ -39,4 +39,5 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
   'recap-youtube-embed-url': z.string().url().optional(),
+  'recap-youtube-playlist-url': z.string().url().optional(),
 }).strict()

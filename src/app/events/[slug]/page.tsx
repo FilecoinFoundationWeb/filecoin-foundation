@@ -59,6 +59,7 @@ export default function EventEntry({ params }: EventProps) {
     speakers,
     sponsors,
     recapYoutubeEmbedUrl,
+    recapYoutubePlaylistUrl,
   } = data
 
   const eventHasConcluded = isEventConcluded(startDate, endDate)
@@ -82,26 +83,28 @@ export default function EventEntry({ params }: EventProps) {
           title={title}
           description={description}
           metaData={getEventMetaData(data)}
-          cta={
-            !eventHasConcluded
-              ? buildCtaArray({ externalLink, lumaCalendarLink })
-              : undefined
-          }
+          cta={buildCtaArray({
+            links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
+            eventHasConcluded,
+          })}
           image={{
             ...(image || graphicsData.imageFallback.data),
             alt: '',
           }}
         />
       </div>
+
       {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
+
       {eventHasEventsSection && (
         <EventsSection
           title={lumaEventsSection.title}
           embedLink={lumaEventsSection.embedLink}
         />
       )}
-      {eventHasSchedule && <ScheduleSection schedule={schedule} />}
+
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
+      {eventHasSchedule && <ScheduleSection schedule={schedule} />}
       {eventHasSponsors && <SponsorSection sponsors={sponsors} />}
 
       <CTASection
