@@ -156,7 +156,7 @@ speakers:
     company: Emfarsis
     linkedin: https://www.linkedin.com/in/leahcallonbutler/
     image:
-      src: /assets/images/screen-shot-2024-10-17-at-1.14.37-pm.png
+      src: /assets/images/frame-1-1-.webp
 sponsors:
   first-tier:
     - name: Boosty Labs
