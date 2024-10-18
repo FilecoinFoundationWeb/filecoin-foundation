@@ -59,10 +59,6 @@ export function Search({ query, id }: SearchProps) {
   }
 
   return (
-    <SearchInput
-      id={id}
-      searchQuery={value || ''}
-      onSearchChange={handleSearchChange}
-    />
+    <SearchInput id={id} query={value || ''} onChange={handleSearchChange} />
   )
 }
