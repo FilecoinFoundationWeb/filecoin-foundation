@@ -14,20 +14,20 @@ import { SortListbox } from '@/components/SortListbox'
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']
   options: ReadonlyArray<SortOption>
-  defaultOption: ReturnType<typeof useSort>['defaultQuery']
+  defaultQuery: ReturnType<typeof useSort>['defaultSortQuery']
 }
 
-export function Sort({ query, options, defaultOption }: SortProps) {
+export function Sort({ query, options, defaultQuery }: SortProps) {
   const [sortId, setSortId] = useState<ValidSortKey>(query)
   const { updateSearchParams } = useUpdateSearchParams()
 
   useEffect(() => {
-    const sortIsReset = query === defaultOption
+    const sortIsReset = query === defaultQuery
 
     if (sortIsReset) {
-      setSortId(defaultOption)
+      setSortId(defaultQuery)
     }
-  }, [query, defaultOption])
+  }, [query, defaultQuery])
 
   function handleSortChange(newValue: ValidSortKey) {
     setSortId(newValue)

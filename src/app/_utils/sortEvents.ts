@@ -17,11 +17,7 @@ export function getUpcomingEvents(events: Array<Event>) {
     return isAfter(eventDate, yesterday)
   })
 
-  const upcomingEventsSortedAsc = [...upcomingEvents].sort((eventA, eventB) => {
-    return compareAsc(eventA.startDate, eventB.startDate)
-  })
-
-  return upcomingEventsSortedAsc
+  return sortEventsAsc(upcomingEvents)
 }
 
 export function getPastEvents(events: Array<Event>) {
@@ -32,15 +28,17 @@ export function getPastEvents(events: Array<Event>) {
     return isBefore(eventDate, tomorrow)
   })
 
-  const pastEventsSortedDesc = sortEventsDesc(pastEvents)
-
-  return pastEventsSortedDesc
+  return sortEventsDesc(pastEvents)
 }
 
-// Look into endDate / pastDate
-// Events can start at the same time but one can end before the other
 export function sortEventsDesc(events: Array<Event>) {
   return [...events].sort((eventA, eventB) => {
     return compareDesc(eventA.startDate, eventB.startDate)
+  })
+}
+
+function sortEventsAsc(events: Array<Event>) {
+  return [...events].sort((eventA, eventB) => {
+    return compareAsc(eventA.startDate, eventB.startDate)
   })
 }

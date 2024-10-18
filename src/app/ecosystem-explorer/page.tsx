@@ -77,7 +77,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults, defaultQuery } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
     configs: ecosystemProjectsSortData,
@@ -129,7 +129,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={defaultQuery}
+                  defaultQuery={defaultSortQuery}
                 />
               }
             />
@@ -140,7 +140,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={defaultQuery}
+                  defaultQuery={defaultSortQuery}
                 />
               }
               category={

@@ -9,7 +9,6 @@ import { VALID_SORT_KEYS } from '@/constants/sortConstants'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
-// Maybe add a defaultConfig or defaultKey to make it more explicit
 type UseSortProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
@@ -23,23 +22,28 @@ export function useSort<Entry extends Object>({
 }: UseSortProps<Entry>) {
   const defaultConfig = configs[0]
 
-  const queryValue = normalizeQueryParam(searchParams, SORT_KEY)
+  if (!defaultConfig) {
+    throw new Error('At least one sort config must be provided')
+  }
 
-  const validQueryValue =
-    VALID_SORT_KEYS.find((key) => key === queryValue) || defaultConfig.key
+  const queryParamValue = normalizeQueryParam(searchParams, SORT_KEY)
 
-  const sortConfig = useMemo(() => {
-    const config = configs.find((c) => c.key === validQueryValue)
-    return config || defaultConfig
-  }, [configs, defaultConfig, validQueryValue])
+  const validSortKey = useMemo(() => {
+    const sortKey = VALID_SORT_KEYS.find((key) => key === queryParamValue)
+
+    return sortKey || defaultConfig.key
+  }, [defaultConfig.key, queryParamValue])
 
   const sortedResults = useMemo(() => {
+    const config = configs.find((config) => config.key === validSortKey)
+    const sortConfig = config || defaultConfig
+
     return sortConfig.sortFn(entries)
-  }, [sortConfig, entries])
+  }, [configs, defaultConfig, entries, validSortKey])
 
   return {
-    sortQuery: validQueryValue,
+    sortQuery: validSortKey,
     sortedResults,
-    defaultQuery: defaultConfig.key,
+    defaultSortQuery: defaultConfig.key,
   }
 }

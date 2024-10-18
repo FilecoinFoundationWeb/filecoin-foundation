@@ -88,7 +88,7 @@ export default function Events({ searchParams }: Props) {
     searchBy: ['title', 'location'],
   })
 
-  const { sortQuery, sortedResults, defaultQuery } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
     configs: eventsSortData,
@@ -147,7 +147,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={defaultQuery}
+                  defaultQuery={defaultSortQuery}
                 />
               }
             />
@@ -157,7 +157,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={defaultQuery}
+                  defaultQuery={defaultSortQuery}
                 />
               }
               category={

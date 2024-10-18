@@ -83,7 +83,7 @@ export default function Blog({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults, defaultQuery } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
     configs: blogSortData,
@@ -151,7 +151,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={defaultQuery}
+                  defaultQuery={defaultSortQuery}
                 />
               }
             />
@@ -162,7 +162,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={defaultQuery}
+                  defaultQuery={defaultSortQuery}
                 />
               }
               category={
