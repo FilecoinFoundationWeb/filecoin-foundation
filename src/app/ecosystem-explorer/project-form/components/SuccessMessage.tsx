@@ -50,9 +50,7 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
           href={PATHS.ECOSYSTEM_EXPLORER.path}
           className="inline-block w-full sm:w-auto"
         >
-          <Button variant="primary" className="w-full">
-            Go to Ecosystem Explorer Page
-          </Button>
+          <Button className="w-full">Go to Ecosystem Explorer Page</Button>
         </Link>
       </div>
     </section>

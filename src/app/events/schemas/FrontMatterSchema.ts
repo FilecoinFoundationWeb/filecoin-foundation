@@ -29,7 +29,7 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   'luma-calendar-link': z.string().url().optional(),
   'luma-events-section': z
     .object({
-      title: z.string(),
+      title: z.string().optional(),
       'embed-link': z.string().url(),
     })
     .optional(),
@@ -38,4 +38,6 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
+  'recap-youtube-embed-url': z.string().url().optional(),
+  'recap-youtube-playlist-url': z.string().url().optional(),
 }).strict()

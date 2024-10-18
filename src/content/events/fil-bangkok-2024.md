@@ -16,12 +16,24 @@ description: Join the Filecoin Community in Bangkok! Dive into decentralized AI
 external-link:
   url: https://lu.ma/aqyqwupe
   text: Register for Main Stage
+image:
+  src: /assets/images/fil-bangkok-2024.webp
 luma-calendar-link: https://lu.ma/filecoin?tag=fil%20bangkok%202024
 luma-events-section:
   title: FIL Bangkok 2024 Events
   embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
-image:
-  src: /assets/images/fil-bangkok-2024.webp
+schedule:
+  title: "FIL Bangkok: DePIN Meets AI Schedule"
+  days:
+    - events:
+        - title: Doors Open
+          description:
+            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+            Thai milk teas and networking. Come check out our sponsor booths and
+            massage stations!"
+          start: 2024-11-11T09:00:00.000Z
+          location: Samyan Mitrtown
+      date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
     title: CEO

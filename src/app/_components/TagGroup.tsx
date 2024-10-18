@@ -1,11 +1,21 @@
 import { type TagProps, TagLabel } from '@/components/TagLabel'
 
 export type TagGroupProps = {
-  label: TagProps['children'] | Array<TagProps['children']>
+  label: TagProps['children'] | Array<TagProps['children'] | undefined>
 }
 
 export function TagGroup({ label }: TagGroupProps) {
-  const labelsArray = Array.isArray(label) ? label : [label]
+  const labelsArray = (Array.isArray(label) ? label : [label]).filter(
+    (label) => label !== undefined,
+  )
+
+  if (labelsArray.length === 0) {
+    throw new Error('At least one label must be provided.')
+  }
+
+  if (labelsArray.length === 1) {
+    return <TagLabel borderColor="brand-100">{labelsArray[0]}</TagLabel>
+  }
 
   return (
     <span className="flex gap-2">
