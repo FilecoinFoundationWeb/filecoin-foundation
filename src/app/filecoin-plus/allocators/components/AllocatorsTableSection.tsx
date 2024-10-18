@@ -2,7 +2,7 @@ import * as Sentry from '@sentry/nextjs'
 
 import { getAllocators } from '../utils/getAllocators'
 
-import { AllocatorsTable } from './AllocatorsTable'
+import { FilterableAllocatorsTable } from './FilterableAllocatorsTable'
 import { NoAllocatorsMessage } from './NoAllocatorsMessage'
 
 export async function AllocatorsTableSection() {
@@ -13,7 +13,7 @@ export async function AllocatorsTableSection() {
       return <NoAllocatorsMessage />
     }
 
-    return <AllocatorsTable allocators={allocators} />
+    return <FilterableAllocatorsTable data={allocators} />
   } catch (error) {
     console.error('Error fetching or validating allocators:', error)
 
