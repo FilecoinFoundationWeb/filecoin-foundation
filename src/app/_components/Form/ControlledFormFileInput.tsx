@@ -13,7 +13,7 @@ import {
 type ExcludedReactHookFormProps =
   | 'defaultValue'
   | 'error'
-  | 'files'
+  | 'file'
   | 'onBlur'
   | 'onChange'
   | 'required'
@@ -26,7 +26,7 @@ type BaseControlledFormFileInputProps = Omit<
 
 interface ControlledFormFileInputProps<FormValues extends FieldValues>
   extends BaseControlledFormFileInputProps {
-  name: FieldPathByValue<FormValues, Array<File>>
+  name: FieldPathByValue<FormValues, File>
 }
 
 export function ControlledFormFileInput<FormValues extends FieldValues>({
@@ -45,7 +45,7 @@ export function ControlledFormFileInput<FormValues extends FieldValues>({
       render={({ field: { value, onChange } }) => (
         <FormFileInput
           {...rest}
-          files={value}
+          file={value}
           error={errors[name]?.message?.toString()}
           onChange={onChange}
         />

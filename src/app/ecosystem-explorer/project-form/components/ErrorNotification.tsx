@@ -16,17 +16,17 @@ const NOTIFICATION_DIALOG_DURATION_MS = 15_000
 export function ErrorNotification({ message }: ErrorMessageProps) {
   const [isOpen, setIsOpen] = useState(true)
 
-  const { resetSearchParams } = useUpdateSearchParams()
+  const { removeSearchParams } = useUpdateSearchParams()
 
   const handleOpen = useCallback(
     (isOpen: boolean) => {
       setIsOpen(isOpen)
 
       if (isOpen === false) {
-        resetSearchParams()
+        removeSearchParams(['status', 'message'])
       }
     },
-    [resetSearchParams],
+    [removeSearchParams],
   )
 
   useEffect(() => {
