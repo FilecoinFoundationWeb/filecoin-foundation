@@ -1,5 +1,6 @@
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
 import type { ValidSortKey } from '@/types/sortTypes'
+
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 export function sortEcosystemProjectsAlphabeticalAsc(
   projects: Array<EcosystemProject>,

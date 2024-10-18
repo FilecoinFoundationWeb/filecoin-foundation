@@ -1,7 +1,8 @@
-import type { BlogPost } from '@/types/blogPostType'
 import type { SortConfig } from '@/types/sortTypes'
 
 import { sortPostsByDateAsc, sortPostsByDateDesc } from '@/utils/sortBlogPosts'
+
+import type { BlogPost } from '@/blog/types/blogPostType'
 
 export const blogSortData: ReadonlyArray<SortConfig<BlogPost>> = [
   {

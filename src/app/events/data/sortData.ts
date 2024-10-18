@@ -1,4 +1,3 @@
-import type { Event } from '@/types/eventType'
 import type { SortConfig } from '@/types/sortTypes'
 
 import {
@@ -6,6 +5,8 @@ import {
   getUpcomingEvents,
   getPastEvents,
 } from '@/utils/sortEvents'
+
+import type { Event } from '@/events/types/eventType'
 
 export const eventsSortData: ReadonlyArray<SortConfig<Event>> = [
   {

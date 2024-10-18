@@ -7,7 +7,7 @@ import {
   startOfYesterday,
 } from 'date-fns'
 
-import type { Event } from '@/types/eventType'
+import type { Event } from '@/events/types/eventType'
 
 export function getUpcomingEvents(events: Array<Event>) {
   const yesterday = startOfYesterday()

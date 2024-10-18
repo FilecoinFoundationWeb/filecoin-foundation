@@ -1,7 +1,8 @@
 import { compareAsc, compareDesc } from 'date-fns'
 
-import type { BlogPost } from '@/types/blogPostType'
 import type { ValidSortKey } from '@/types/sortTypes'
+
+import type { BlogPost } from '@/blog/types/blogPostType'
 
 export function sortPostsByDateDesc(blogPosts: Array<BlogPost>) {
   return sortPostsByDate(blogPosts, 'newest')
