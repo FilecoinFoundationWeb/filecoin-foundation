@@ -3,8 +3,6 @@ import { z } from 'zod'
 import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
 import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
-import { pastEventsOption } from '@/constants/categoryConstants'
-
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
@@ -51,10 +49,7 @@ export function getEventsCategorySettings() {
   const eventSettings = getCategorySettings('event_entries')
   const { categoryOptions, validCategoryIds } = eventSettings
 
-  return {
-    categoryOptions: [...categoryOptions, pastEventsOption],
-    validCategoryIds: [...validCategoryIds, pastEventsOption.id],
-  }
+  return { categoryOptions, validCategoryIds }
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
