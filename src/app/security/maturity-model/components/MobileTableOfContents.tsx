@@ -4,7 +4,7 @@ import { FormListbox } from '@/components/Form/FormListbox/FormListbox'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
-import { useUrlHash, HASH_SIGN } from '../utils/useUrlHash'
+import { useUrlHash } from '../utils/useUrlHash'
 
 const options = coreFunctionsData.map(({ slug, title }) => ({
   id: slug,
@@ -12,15 +12,17 @@ const options = coreFunctionsData.map(({ slug, title }) => ({
 }))
 
 export function MobileTableOfContents() {
-  const { updateHash, currentSlug } = useUrlHash()
+  const { updateHash, isSectionActive, getHashFromSlug } = useUrlHash()
 
   function handleChange(slug: string) {
     updateHash(slug)
-    scrollToSection(`${HASH_SIGN}${slug}`)
+
+    const sectionHash = getHashFromSlug(slug)
+    scrollToSection(sectionHash)
   }
 
-  const selectedItem = coreFunctionsData.find(
-    (item) => item.slug === currentSlug,
+  const selectedItem = coreFunctionsData.find((item) =>
+    isSectionActive(item.slug),
   )
 
   return (

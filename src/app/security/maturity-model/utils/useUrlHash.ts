@@ -6,9 +6,9 @@ import { useRouter, usePathname } from 'next/navigation'
 
 import type { Route } from 'next'
 
-export const HASH_SIGN = '#'
+const HASH_SIGN = '#'
 
-export type SectionHash = `${typeof HASH_SIGN}${string}`
+type SectionHash = `${typeof HASH_SIGN}${string}`
 type NewHashEvent = HashChangeEvent | CustomEvent<SectionHash>
 
 export function useUrlHash() {
@@ -18,7 +18,7 @@ export function useUrlHash() {
   const [hash, setHash] = useState(getHashFromWindow)
 
   function updateHash(sectionId: string) {
-    const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
+    const sectionHash = getHashFromSlug(sectionId)
 
     if (sectionHash === hash) {
       return
@@ -43,7 +43,8 @@ export function useUrlHash() {
   }
 
   function clearHashIfPresent(sectionId: string) {
-    const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
+    const sectionHash = getHashFromSlug(sectionId)
+
     if (sectionHash === hash) {
       clearHash()
     }
@@ -54,6 +55,15 @@ export function useUrlHash() {
     setHash(newHash)
   }
 
+  function getHashFromSlug(slug: string) {
+    return `${HASH_SIGN}${slug}` as SectionHash
+  }
+
+  function isSectionActive(sectionId: string) {
+    const sectionHash = getHashFromSlug(sectionId)
+    return sectionHash === hash
+  }
+
   useEffect(() => {
     if (windowIsDefined()) {
       window.addEventListener('hashchange', onHashChange)
@@ -62,11 +72,11 @@ export function useUrlHash() {
   }, [])
 
   return {
-    currentSlug: hash.replace(HASH_SIGN, ''),
-    currentHash: hash,
     updateHash,
-    clearHashIfPresent,
     clearHash,
+    clearHashIfPresent,
+    isSectionActive,
+    getHashFromSlug,
   }
 }
 
@@ -79,6 +89,7 @@ function getHashFromWindow() {
     }
     return currentHash as SectionHash
   }
+
   return HASH_SIGN
 }
 

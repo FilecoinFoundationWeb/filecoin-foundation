@@ -88,7 +88,7 @@ export default function MaturityModel() {
           <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
             <DynamicDesktopTableOfContents />
           </div>
-          <div className="sticky top-4 z-10 order-first block lg:hidden">
+          <div className="sticky top-6 z-10 order-first block lg:hidden">
             <DynamicMobileTableOfContents />
           </div>
         </div>

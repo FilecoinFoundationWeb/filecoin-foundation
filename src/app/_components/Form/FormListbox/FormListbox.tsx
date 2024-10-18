@@ -82,7 +82,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
         </ListboxButton>
         <ListboxOptions
           as="ul"
-          className="absolute z-10 mt-2 max-h-80 w-full overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
+          className="absolute z-10 mt-2 max-h-96 w-full overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
         >
           {options.map((option) => (
             <ListboxOption

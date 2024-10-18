@@ -6,10 +6,10 @@ import { clsx } from 'clsx'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
-import { useUrlHash, HASH_SIGN, type SectionHash } from '../utils/useUrlHash'
+import { useUrlHash } from '../utils/useUrlHash'
 
 export function DesktopTableOfContents() {
-  const { currentHash } = useUrlHash()
+  const { isSectionActive, getHashFromSlug } = useUrlHash()
 
   return (
     <nav aria-label="Table of Contents">
@@ -19,8 +19,8 @@ export function DesktopTableOfContents() {
 
       <ol>
         {coreFunctionsData.map(({ slug, title }) => {
-          const sectionHash: SectionHash = `${HASH_SIGN}${slug}`
-          const isCurrentSection = currentHash === sectionHash
+          const sectionHash = getHashFromSlug(slug)
+          const isCurrentSection = isSectionActive(slug)
 
           return (
             <li key={slug}>
