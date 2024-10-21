@@ -6,14 +6,14 @@ import {
 
 export const eventsSortConfigs = [
   {
-    key: 'upcoming-events',
-    label: 'Upcoming Events',
-    sortFn: getUpcomingEvents,
-  },
-  {
     key: 'all-events',
     label: 'All Events',
     sortFn: sortEventsDesc,
+  },
+  {
+    key: 'upcoming-events',
+    label: 'Upcoming Events',
+    sortFn: getUpcomingEvents,
   },
   {
     key: 'past-events',
