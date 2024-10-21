@@ -8,7 +8,6 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { attributes } from '@/content/pages/events.md'
 
@@ -24,7 +23,7 @@ import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
-import { useEventsCategory } from '@/hooks/useEventsCategory'
+import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -42,6 +41,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
@@ -58,6 +58,8 @@ type Props = {
 const events = getEventsData()
 const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
 const { featured_entry, seo } = attributes
+
+const sortOptions = getSortOptions(eventsSortConfigs)
 
 if (!featured_entry) {
   throw new Error('Featured entry is undefined')
@@ -86,28 +88,23 @@ export default function Events({ searchParams }: Props) {
     searchBy: ['title', 'location'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'startDate',
-    defaultSortId: DEFAULT_SORT_OPTION.chronological,
+    configs: eventsSortConfigs,
+    defaultsTo: 'all-events',
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } =
-    useEventsCategory({
-      searchParams,
-      entries: sortedResults,
-      validCategoryIds,
-    })
+  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
+    searchParams,
+    entries: sortedResults,
+    validCategoryIds,
+  })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: categorizedResults,
   })
-
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
-
-  const { 'past-events': _, ...filteredCategoryCounts } = categoryCounts
 
   return (
     <PageLayout>
@@ -132,7 +129,7 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             results={
               <CategoryResetButton
-                counts={filteredCategoryCounts}
+                counts={categoryCounts}
                 isSelected={hasNoFiltersApplied(searchParams)}
               />
             }
@@ -151,7 +148,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultQuery={defaultSortQuery}
                 />
               }
             />
@@ -161,7 +158,7 @@ export default function Events({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultQuery={defaultSortQuery}
                 />
               }
               category={

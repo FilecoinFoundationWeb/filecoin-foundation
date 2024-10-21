@@ -1,71 +1,55 @@
 import { useMemo } from 'react'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
-import type {
-  AlphabeticalSortId,
-  ChronologicalSortId,
-  SortableByDate,
-  SortId,
-} from '@/types/sortTypes'
+import type { SortConfig } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
 import { SORT_KEY } from '@/constants/searchParams'
-import {
-  ALPHABETICAL_SORT_IDS,
-  CHRONOLOGICAL_SORT_IDS,
-  VALID_SORT_IDS,
-} from '@/constants/sortConstants'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
-import { sortEntriesAlphabetically } from '@/utils/sortEntriesAlphabetically'
-import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
-type UseSortProps<Entry extends Object> = {
+type NonEmptyReadonlyArray<T> = readonly [T, ...Array<T>]
+
+type UseSortProps<
+  Entry extends Object,
+  Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
+> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
-  sortBy: keyof SortableByDate & keyof Entry
-  defaultSortId: SortId
+  configs: Configs
+  defaultsTo: Configs[number]['key']
 }
 
-export function useSort<Entry extends Object>({
+export function useSort<
+  Entry extends Object,
+  Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
+>({
   searchParams,
   entries,
-  sortBy,
-  defaultSortId,
-}: UseSortProps<Entry>) {
-  const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
-  const validatedSortId = getValidatedSortId(normalizedQuery, defaultSortId)
+  configs,
+  defaultsTo,
+}: UseSortProps<Entry, Configs>) {
+  const queryParamValue = normalizeQueryParam(searchParams, SORT_KEY)
+  const defaultConfig =
+    configs.find((config) => config.key === defaultsTo) || configs[0]
+
+  const validSortKey = useMemo(() => {
+    const validSortKeys = configs.map((config) => config.key)
+    const sortKey = validSortKeys.find((key) => key === queryParamValue)
+
+    return sortKey || defaultConfig.key
+  }, [configs, defaultConfig.key, queryParamValue])
 
   const sortedResults = useMemo(() => {
-    if (ALPHABETICAL_SORT_IDS.includes(validatedSortId)) {
-      return sortEntriesAlphabetically({
-        entries,
-        sortId: validatedSortId as AlphabeticalSortId,
-      })
-    }
+    const config = configs.find((config) => config.key === validSortKey)
+    const sortConfig = config || defaultConfig
 
-    if (CHRONOLOGICAL_SORT_IDS.includes(validatedSortId)) {
-      return sortEntriesByDate({
-        entries,
-        sortBy,
-        sortId: validatedSortId as ChronologicalSortId,
-      })
-    }
-
-    return entries
-  }, [entries, sortBy, validatedSortId])
+    return sortConfig.sortFn(entries)
+  }, [configs, defaultConfig, entries, validSortKey])
 
   return {
-    sortQuery: validatedSortId,
+    sortQuery: validSortKey,
     sortedResults,
+    defaultSortQuery: defaultConfig.key,
   }
-}
-
-function getValidatedSortId<Entry extends Object>(
-  normalizedQuery: string | undefined,
-  defaultSortId: UseSortProps<Entry>['defaultSortId'],
-): SortId {
-  return VALID_SORT_IDS.includes(normalizedQuery as SortId)
-    ? (normalizedQuery as SortId)
-    : defaultSortId
 }

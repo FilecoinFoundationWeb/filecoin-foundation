@@ -7,7 +7,6 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { attributes } from '@/content/pages/blog.md'
 
@@ -38,6 +37,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 
@@ -51,6 +51,8 @@ type Props = {
 }
 
 const posts = getBlogPostsData()
+
+const sortOptions = getSortOptions(blogSortConfigs)
 
 const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
 
@@ -83,11 +85,11 @@ export default function Blog({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'publishedOn',
-    defaultSortId: DEFAULT_SORT_OPTION.chronological,
+    configs: blogSortConfigs,
+    defaultsTo: 'newest',
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
@@ -100,8 +102,6 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
-
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.chronological)
 
   return (
     <PageLayout>
@@ -152,7 +152,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultQuery={defaultSortQuery}
                 />
               }
             />
@@ -163,7 +163,7 @@ export default function Blog({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.chronological}
+                  defaultQuery={defaultSortQuery}
                 />
               }
               category={

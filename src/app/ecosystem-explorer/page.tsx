@@ -5,7 +5,6 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
 
 import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
 
@@ -38,6 +37,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
@@ -51,6 +51,8 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
+
+const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
 const { header, seo } = attributes
 
@@ -77,11 +79,11 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'publishedOn',
-    defaultSortId: DEFAULT_SORT_OPTION.alphabetical,
+    configs: ecosystemProjectsSortConfigs,
+    defaultsTo: 'a-z',
   })
 
   const { categoryQuery, categorizedResults } = useCategory({
@@ -94,8 +96,6 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
-
-  const sortOptions = getSortOptions(DEFAULT_SORT_OPTION.alphabetical)
 
   return (
     <PageLayout>
@@ -130,7 +130,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.alphabetical}
+                  defaultQuery={defaultSortQuery}
                 />
               }
             />
@@ -141,7 +141,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
-                  defaultOption={DEFAULT_SORT_OPTION.alphabetical}
+                  defaultQuery={defaultSortQuery}
                 />
               }
               category={

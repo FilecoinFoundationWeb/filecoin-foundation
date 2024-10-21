@@ -5,21 +5,17 @@ import { graphicsData } from '@/data/graphicsData'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
-import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
 
-const sortedBlogPosts = sortEntriesByDate({
-  entries: blogPosts,
-  sortBy: 'publishedOn',
-  sortId: 'newest',
-})
+const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
 
 const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
 
