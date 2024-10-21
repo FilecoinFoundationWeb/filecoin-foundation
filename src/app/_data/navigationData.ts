@@ -1,5 +1,8 @@
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_DOCS_URLS } from '@/constants/siteMetadata'
+import {
+  FILECOIN_DOCS_URLS,
+  FILECOIN_FOUNDATION_URLS,
+} from '@/constants/siteMetadata'
 
 export const desktopNavigationItems = {
   getInvolvedItems: [
@@ -13,6 +16,11 @@ export const desktopNavigationItems = {
       href: PATHS.GRANTS.path,
       description:
         'Information on funding opportunities supporting projects that contribute to the growth of the Filecoin Network',
+    },
+    {
+      label: FILECOIN_FOUNDATION_URLS.careers.label,
+      href: FILECOIN_FOUNDATION_URLS.careers.href,
+      description: 'Explore open opportunities across the Filecoin ecosystem',
     },
     {
       label: 'Become a Storage Provider',
