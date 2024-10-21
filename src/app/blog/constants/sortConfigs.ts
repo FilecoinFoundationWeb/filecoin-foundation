@@ -1,6 +1,9 @@
-import { sortPostsByDateAsc, sortPostsByDateDesc } from '@/utils/sortBlogPosts'
+import {
+  sortPostsByDateAsc,
+  sortPostsByDateDesc,
+} from '@/blog/utils/sortBlogPosts'
 
-export const blogSortData = [
+export const blogSortConfigs = [
   {
     key: 'newest',
     label: 'Newest',

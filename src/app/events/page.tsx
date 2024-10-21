@@ -41,8 +41,8 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
-import { eventsSortData } from './data/sortData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 
@@ -59,7 +59,7 @@ const events = getEventsData()
 const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
 const { featured_entry, seo } = attributes
 
-const sortOptions = getSortOptions(eventsSortData)
+const sortOptions = getSortOptions(eventsSortConfigs)
 
 if (!featured_entry) {
   throw new Error('Featured entry is undefined')
@@ -91,7 +91,7 @@ export default function Events({ searchParams }: Props) {
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    configs: eventsSortData,
+    configs: eventsSortConfigs,
     defaultsTo: 'all-events',
   })
 

@@ -37,7 +37,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { ecosystemProjectsSortData } from './data/sortData'
+import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
@@ -51,6 +51,8 @@ type Props = {
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
+
+const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
 const { header, seo } = attributes
 
@@ -80,7 +82,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    configs: ecosystemProjectsSortData,
+    configs: ecosystemProjectsSortConfigs,
     defaultsTo: 'a-z',
   })
 
@@ -94,8 +96,6 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
-
-  const sortOptions = getSortOptions(ecosystemProjectsSortData)
 
   return (
     <PageLayout>

@@ -1,9 +1,9 @@
 import {
   sortEcosystemProjectsAlphabeticalAsc,
   sortEcosystemProjectsAlphabeticalDesc,
-} from '@/utils/sortEcosystemProjects'
+} from '@/ecosystem-explorer/utils/sortEcosystemProjects'
 
-export const ecosystemProjectsSortData = [
+export const ecosystemProjectsSortConfigs = [
   {
     key: 'a-z',
     label: 'Alphabetical (A-Z)',

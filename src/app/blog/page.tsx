@@ -37,7 +37,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { blogSortData } from './data/sortData'
+import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 
@@ -51,6 +51,8 @@ type Props = {
 }
 
 const posts = getBlogPostsData()
+
+const sortOptions = getSortOptions(blogSortConfigs)
 
 const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
 
@@ -86,7 +88,7 @@ export default function Blog({ searchParams }: Props) {
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    configs: blogSortData,
+    configs: blogSortConfigs,
     defaultsTo: 'newest',
   })
 
@@ -100,8 +102,6 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: categorizedResults,
   })
-
-  const sortOptions = getSortOptions(blogSortData)
 
   return (
     <PageLayout>

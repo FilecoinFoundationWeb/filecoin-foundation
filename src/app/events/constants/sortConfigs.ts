@@ -2,9 +2,9 @@ import {
   sortEventsDesc,
   getUpcomingEvents,
   getPastEvents,
-} from '@/utils/sortEvents'
+} from '@/events/utils/sortEvents'
 
-export const eventsSortData = [
+export const eventsSortConfigs = [
   {
     key: 'upcoming-events',
     label: 'Upcoming Events',
