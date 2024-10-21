@@ -146,7 +146,7 @@ export default function Events({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} id="web-search" />}
+              search={<Search query={searchQuery} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -156,7 +156,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} id="mobile-search" />}
+              search={<Search query={searchQuery} />}
               sort={
                 <Sort
                   query={sortQuery}
