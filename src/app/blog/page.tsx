@@ -87,6 +87,7 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     configs: blogSortData,
+    defaultsTo: 'newest',
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({

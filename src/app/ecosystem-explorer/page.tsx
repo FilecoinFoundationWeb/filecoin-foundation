@@ -81,6 +81,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     configs: ecosystemProjectsSortData,
+    defaultsTo: 'a-z',
   })
 
   const { categoryQuery, categorizedResults } = useCategory({

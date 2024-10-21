@@ -92,6 +92,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: searchResults,
     configs: eventsSortData,
+    defaultsTo: 'all-events',
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({

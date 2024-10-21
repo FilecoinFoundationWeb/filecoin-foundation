@@ -5,34 +5,40 @@ import type { SortConfig } from '@/types/sortTypes'
 import { type Object } from '@/types/utils'
 
 import { SORT_KEY } from '@/constants/searchParams'
-import { VALID_SORT_KEYS } from '@/constants/sortConstants'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
-type UseSortProps<Entry extends Object> = {
+type NonEmptyReadonlyArray<T> = readonly [T, ...Array<T>]
+
+type UseSortProps<
+  Entry extends Object,
+  Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
+> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
-  configs: ReadonlyArray<SortConfig<Entry>>
+  configs: Configs
+  defaultsTo: Configs[number]['key']
 }
 
-export function useSort<Entry extends Object>({
+export function useSort<
+  Entry extends Object,
+  Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
+>({
   searchParams,
   entries,
   configs,
-}: UseSortProps<Entry>) {
-  const defaultConfig = configs[0]
-
-  if (!defaultConfig) {
-    throw new Error('At least one sort config must be provided')
-  }
-
+  defaultsTo,
+}: UseSortProps<Entry, Configs>) {
   const queryParamValue = normalizeQueryParam(searchParams, SORT_KEY)
+  const defaultConfig =
+    configs.find((config) => config.key === defaultsTo) || configs[0]
 
   const validSortKey = useMemo(() => {
-    const sortKey = VALID_SORT_KEYS.find((key) => key === queryParamValue)
+    const validSortKeys = configs.map((config) => config.key)
+    const sortKey = validSortKeys.find((key) => key === queryParamValue)
 
     return sortKey || defaultConfig.key
-  }, [defaultConfig.key, queryParamValue])
+  }, [configs, defaultConfig.key, queryParamValue])
 
   const sortedResults = useMemo(() => {
     const config = configs.find((config) => config.key === validSortKey)
