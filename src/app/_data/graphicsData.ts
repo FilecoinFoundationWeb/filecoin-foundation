@@ -1,6 +1,7 @@
 import type { StaticImageProps } from '@/types/imageType'
 
 import about from '@/assets/graphics/Filorg_About.png'
+import blog from '@/assets/graphics/Filorg_Blog.webp'
 import digestCoverIssue1 from '@/assets/graphics/Filorg_Digest_Cover_Issue_1.webp'
 import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.png'
 import events1 from '@/assets/graphics/Filorg_Events1.png'
@@ -35,6 +36,10 @@ export const graphicsData: Record<string, StaticImageProps> = {
   },
   about: {
     data: about,
+    alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
+  },
+  blog: {
+    data: blog,
     alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
   },
   digest: {
