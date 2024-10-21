@@ -9,7 +9,14 @@ const companyItems = [
   },
 ]
 
-const getInvolvedItems = [PATHS.EVENTS, PATHS.GRANTS]
+const getInvolvedItems = [
+  PATHS.EVENTS,
+  PATHS.GRANTS,
+  {
+    path: FILECOIN_FOUNDATION_URLS.careers.href,
+    label: FILECOIN_FOUNDATION_URLS.careers.label,
+  },
+]
 
 const communityItems = [
   PATHS.ECOSYSTEM_EXPLORER,
