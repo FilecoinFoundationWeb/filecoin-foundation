@@ -13,7 +13,7 @@ import { allocatorsTableColumnDef } from '../data/allocatorsTableColumnDef'
 import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
-import { NoFilterResults } from './NoFilterResults'
+import { NoFilterResultsMessage } from './NoFilterResultsMessage'
 
 type FilterableAllocatorsTableProps = {
   data: Array<Allocator>
@@ -36,7 +36,6 @@ export function FilterableAllocatorsTable({
   const { getState, setGlobalFilter, getRowModel, getHeaderGroups } = table
 
   const searchQuery = getState().globalFilter || ''
-
   const rowModel = getRowModel()
   const headerGroups = getHeaderGroups()
 
@@ -51,7 +50,7 @@ export function FilterableAllocatorsTable({
       {hasSearchResults ? (
         <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
       ) : (
-        <NoFilterResults />
+        <NoFilterResultsMessage />
       )}
     </>
   )

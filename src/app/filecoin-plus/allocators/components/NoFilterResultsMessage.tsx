@@ -2,7 +2,7 @@ import { CloudSlash } from '@phosphor-icons/react/dist/ssr'
 
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 
-export function NoFilterResults() {
+export function NoFilterResultsMessage() {
   return (
     <div className="flex w-full justify-center">
       <NoResultsMessage
