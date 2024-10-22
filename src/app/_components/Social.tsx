@@ -4,7 +4,7 @@ import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { Icon } from '@/components/Icon'
 
-const touchTarget = {
+export const touchTarget = {
   class: 'p-2',
   offsetClass: '-m-2 sm:mx-0',
 }
