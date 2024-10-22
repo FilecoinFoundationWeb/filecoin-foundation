@@ -4,14 +4,9 @@ import { Description } from '@headlessui/react'
 
 export type FormErrorProps = {
   error?: string
-  hideError?: boolean
 }
 
-export function FormError({ error, hideError }: FormErrorProps) {
-  if (hideError) {
-    return null
-  }
-
+export function FormError({ error }: FormErrorProps) {
   return (
     <FormError.Container>
       {error && <FormError.Message error={error} />}

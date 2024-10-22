@@ -30,7 +30,6 @@ export function MobileTableOfContents() {
       <nav aria-label="Table of Contents" className="w-full max-w-sm">
         <FormListbox
           hideLabel
-          hideError
           label="Table of Contents"
           placeholder="Select a section"
           options={options}

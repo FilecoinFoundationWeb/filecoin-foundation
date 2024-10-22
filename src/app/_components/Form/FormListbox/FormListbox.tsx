@@ -41,7 +41,6 @@ export function FormListbox<Option extends OptionType = OptionType>({
   label,
   hideLabel,
   error,
-  hideError,
   options,
   value,
   placeholder,
@@ -50,12 +49,7 @@ export function FormListbox<Option extends OptionType = OptionType>({
   ...rest
 }: FormListboxProps<Option>) {
   return (
-    <FormField
-      label={label}
-      hideLabel={hideLabel}
-      error={error}
-      hideError={hideError}
-    >
+    <FormField label={label} hideLabel={hideLabel} error={error}>
       <Listbox<typeof listboxRenderedAs, Option>
         {...rest}
         as={listboxRenderedAs}
