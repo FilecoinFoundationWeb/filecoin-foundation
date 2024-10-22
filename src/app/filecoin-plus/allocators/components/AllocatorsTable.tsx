@@ -2,6 +2,7 @@
 
 import { type HeaderGroup, type RowModel } from '@tanstack/react-table'
 
+import { Table } from '@/components/Table/Table'
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
@@ -17,11 +18,9 @@ export function AllocatorsTable({
   rowModel,
 }: AllocatorsTableProps) {
   return (
-    <div className="w-full overflow-x-auto">
-      <table className="w-full">
-        <TableHead headerGroups={headerGroups} textColor="text-brand-300" />
-        <TableBody rowModel={rowModel} />
-      </table>
-    </div>
+    <Table layout="fixed">
+      <TableHead headerGroups={headerGroups} textColor="text-brand-300" />
+      <TableBody rowModel={rowModel} />
+    </Table>
   )
 }

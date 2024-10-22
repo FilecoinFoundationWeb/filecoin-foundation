@@ -35,7 +35,8 @@ export function FilterableAllocatorsTable({
   })
   const { getState, setGlobalFilter, getRowModel, getHeaderGroups } = table
 
-  const searchQuery = getState().globalFilter
+  const searchQuery = getState().globalFilter || ''
+
   const rowModel = getRowModel()
   const headerGroups = getHeaderGroups()
 
