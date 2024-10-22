@@ -17,6 +17,16 @@ export type SubNavItemProps = {
     | 'externalSecondary'
 }
 
+const baseStyles = 'group w-full rounded-lg focus:brand-outline'
+const extendedStyles = {
+  internal: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
+  externalGhost: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
+  externalPrimary:
+    'inline-block border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent',
+  externalSecondary:
+    'inline-flex items-center justify-center gap-1 bg-brand-800 px-3 py-5 text-brand-300 hover:bg-brand-700',
+}
+
 export function SubNavItem({
   href,
   label,
@@ -24,16 +34,6 @@ export function SubNavItem({
   linkType = 'internal',
 }: SubNavItemProps) {
   const external = linkType !== 'internal'
-
-  const baseStyles = 'focus:brand-outline group w-full rounded-lg'
-  const extendedStyles = {
-    internal: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
-    externalGhost: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
-    externalPrimary:
-      'inline-block border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent',
-    externalSecondary:
-      'inline-flex items-center justify-center gap-1 bg-brand-800 px-3 py-5 text-brand-300 hover:bg-brand-700',
-  }
 
   const linkClasses = clsx(baseStyles, extendedStyles[linkType])
   const commonProps = {

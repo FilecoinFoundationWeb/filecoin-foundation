@@ -12,7 +12,11 @@ import { useNavigationItems } from '@/hooks/useNavigationItems'
 
 import { NavigationPopover } from '@/components/NavigationPopover'
 
-import { TOUCH_TARGET_MAIN_NAV_ITEM, MainNavItem } from './MainNavItem'
+import {
+  TOUCH_TARGET_MAIN_NAV_ITEM,
+  getMainNavItemStyles,
+  MainNavItem,
+} from './MainNavItem'
 import { SubNavItem } from './SubNavItem'
 
 const {
@@ -101,20 +105,5 @@ export function DesktopNavigation() {
         </div>
       </NavigationPopover>
     </ul>
-  )
-}
-
-function getMainNavItemStyles(isActive: boolean, isPopover = false) {
-  const baseStyles =
-    'focus:brand-outline rounded-xl py-1.5 text-base hover:bg-brand-700'
-
-  const extendedStyles = isPopover
-    ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
-    : clsx('inline-block', TOUCH_TARGET_MAIN_NAV_ITEM.width)
-
-  return clsx(
-    baseStyles,
-    extendedStyles,
-    isActive ? 'text-brand-400' : 'text-brand-300',
   )
 }

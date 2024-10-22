@@ -14,21 +14,6 @@ export const TOUCH_TARGET_MAIN_NAV_ITEM = {
   offsetWidth: '-mr-4',
 } as const
 
-function getMainNavItemStyles(isActive: boolean, isPopover = false) {
-  const baseStyles =
-    'focus:brand-outline rounded-xl py-1.5 text-base hover:bg-brand-700'
-
-  const extendedStyles = isPopover
-    ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
-    : clsx('inline-block', TOUCH_TARGET_MAIN_NAV_ITEM.width)
-
-  return clsx(
-    baseStyles,
-    extendedStyles,
-    isActive ? 'text-brand-400' : 'text-brand-300',
-  )
-}
-
 export function MainNavItem({
   label,
   href,
@@ -40,5 +25,20 @@ export function MainNavItem({
         {label}
       </Link>
     </li>
+  )
+}
+
+export function getMainNavItemStyles(isActive: boolean, isPopover = false) {
+  const baseStyles =
+    'rounded-xl py-1.5 text-base focus:brand-outline hover:bg-brand-700'
+
+  const extendedStyles = isPopover
+    ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
+    : clsx('inline-block', TOUCH_TARGET_MAIN_NAV_ITEM.width)
+
+  return clsx(
+    baseStyles,
+    extendedStyles,
+    isActive ? 'text-brand-400' : 'text-brand-300',
   )
 }
