@@ -10,7 +10,11 @@ export type SubNavItemProps = {
   href: string | Route
   label: string
   description?: string
-  linkType?: 'internal' | 'externalPrimary' | 'externalSecondary'
+  linkType?:
+    | 'internal'
+    | 'externalGhost'
+    | 'externalPrimary'
+    | 'externalSecondary'
 }
 
 export function SubNavItem({
@@ -24,6 +28,7 @@ export function SubNavItem({
   const baseStyles = 'focus:brand-outline group w-full rounded-lg'
   const extendedStyles = {
     internal: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
+    externalGhost: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
     externalPrimary:
       'inline-block border border-brand-500 bg-brand-700 p-4 hover:border-brand-400 focus:border-transparent',
     externalSecondary:
@@ -44,7 +49,7 @@ export function SubNavItem({
           <Icon component={ArrowUpRight} size={20} />
         </span>
       </div>
-      {description && <p className="mt-4 text-brand-300">{description}</p>}
+      {description && <p className="mt-1 text-brand-300">{description}</p>}
     </a>
   ) : (
     <Link href={href as Route} {...commonProps}>

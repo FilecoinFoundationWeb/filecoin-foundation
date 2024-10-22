@@ -15,8 +15,13 @@ import { NavigationPopover } from '@/components/NavigationPopover'
 import { TOUCH_TARGET_MAIN_NAV_ITEM, MainNavItem } from './MainNavItem'
 import { SubNavItem } from './SubNavItem'
 
-const { getInvolvedItems, communityItems, resourcesItems, learnMoreItem } =
-  desktopNavigationItems
+const {
+  careersItem,
+  communityItems,
+  getInvolvedItems,
+  learnMoreItem,
+  resourcesItems,
+} = desktopNavigationItems
 
 export function DesktopNavigation() {
   const pathname = usePathname()
@@ -57,7 +62,7 @@ export function DesktopNavigation() {
             {getInvolvedInternalItems.map((item) => (
               <SubNavItem key={item.href} {...item} linkType="internal" />
             ))}
-            <SubNavItem {...learnMoreItem} linkType="externalSecondary" />
+            <SubNavItem {...careersItem} linkType="externalGhost" />
           </div>
           <div className="space-y-4">
             {getInvolvedExternalItems.map((item) => (

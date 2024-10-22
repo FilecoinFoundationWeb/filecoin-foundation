@@ -5,36 +5,11 @@ import {
 } from '@/constants/siteMetadata'
 
 export const desktopNavigationItems = {
-  getInvolvedItems: [
-    {
-      label: PATHS.EVENTS.label,
-      href: PATHS.EVENTS.path,
-      description: 'Overview of upcoming and past events',
-    },
-    {
-      label: PATHS.GRANTS.label,
-      href: PATHS.GRANTS.path,
-      description:
-        'Information on funding opportunities supporting projects that contribute to the growth of the Filecoin Network',
-    },
-    {
-      label: FILECOIN_FOUNDATION_URLS.careers.label,
-      href: FILECOIN_FOUNDATION_URLS.careers.href,
-      description: 'Explore open opportunities across the Filecoin ecosystem',
-    },
-    {
-      label: 'Become a Storage Provider',
-      href: 'https://destor.com/destor-network/overview',
-      description:
-        'Dive right in and become an essential part of the ecosystem',
-    },
-    {
-      label: 'Contribute to the Filecoin Project',
-      href: FILECOIN_DOCS_URLS.waysToContribute,
-      description:
-        'Shape the future of Filecoin by contributing to its code, research, or docs.',
-    },
-  ],
+  careersItem: {
+    label: FILECOIN_FOUNDATION_URLS.careers.label,
+    href: FILECOIN_FOUNDATION_URLS.careers.href,
+    description: 'Explore open opportunities across the Filecoin ecosystem',
+  },
   communityItems: [
     {
       label: PATHS.ECOSYSTEM_EXPLORER.label,
@@ -65,6 +40,35 @@ export const desktopNavigationItems = {
         "Learn about Filecoin's robust security practices, ensuring the integrity and resilience of the protocol",
     },
   ],
+  getInvolvedItems: [
+    {
+      label: PATHS.EVENTS.label,
+      href: PATHS.EVENTS.path,
+      description: 'Overview of upcoming and past events',
+    },
+    {
+      label: PATHS.GRANTS.label,
+      href: PATHS.GRANTS.path,
+      description:
+        'Information on funding opportunities supporting projects that contribute to the growth of the Filecoin Network',
+    },
+    {
+      label: 'Become a Storage Provider',
+      href: 'https://destor.com/destor-network/overview',
+      description:
+        'Dive right in and become an essential part of the ecosystem',
+    },
+    {
+      label: 'Contribute to the Filecoin Project',
+      href: FILECOIN_DOCS_URLS.waysToContribute,
+      description:
+        'Shape the future of Filecoin by contributing to its code, research, or docs.',
+    },
+  ],
+  learnMoreItem: {
+    label: 'Learn more about Filecoin',
+    href: FILECOIN_DOCS_URLS.site,
+  },
   resourcesItems: [
     {
       label: PATHS.BLOG.label,
@@ -77,8 +81,4 @@ export const desktopNavigationItems = {
       description: 'Explore a publication focused on the Filecoin ecosystem',
     },
   ],
-  learnMoreItem: {
-    label: 'Learn more about Filecoin',
-    href: FILECOIN_DOCS_URLS.site,
-  },
 }
