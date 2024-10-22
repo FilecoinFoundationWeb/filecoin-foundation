@@ -25,16 +25,10 @@ export function getAllDigestArticleData() {
 
   return articles.map((article) => ({
     ...article,
-    description: generatePreviewDescription(article.content),
+    description: removeMarkdown(article.content),
   }))
 }
 
 export function getAllDigestArticleDataSortedByNumber() {
   return getAllDigestArticleData().sort(sortArticlesByNumber)
-}
-
-function generatePreviewDescription(content: string) {
-  const plainText = removeMarkdown(content)
-
-  return plainText
 }
