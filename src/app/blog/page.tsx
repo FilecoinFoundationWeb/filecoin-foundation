@@ -68,7 +68,7 @@ const featuredPost = getBlogPostData(featuredPostSlug)
 export const metadata = createMetadata({
   seo: {
     ...seo,
-    image: featuredPost.image?.src,
+    image: graphicsData.blog.data.src,
   },
   path: PATHS.BLOG.path,
   overrideDefaultTitle: true,
