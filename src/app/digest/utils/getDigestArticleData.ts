@@ -35,15 +35,17 @@ export function getAllDigestArticleDataSortedByNumber() {
 }
 
 function generatePreviewDescription(content: string) {
-  const truncatedContent = truncateText(content, DESCRIPTION_PREVIEW_MAX_LENGTH)
-  const plainText = removeMarkdown(truncatedContent)
-  return cleanAndTrim(plainText)
+  // const truncatedContent = truncateText(content, DESCRIPTION_PREVIEW_MAX_LENGTH)
+  const plainText = removeMarkdown(content)
+
+  // const text = cleanAndTrim(plainText)
+  return plainText
 }
 
-function truncateText(text: string, maxLength: number) {
-  return text.substring(0, maxLength)
-}
+// function truncateText(text: string, maxLength: number) {
+//   return text.substring(0, maxLength)
+// }
 
-function cleanAndTrim(text: string) {
-  return text.replace(/\s+/g, ' ').trim()
-}
+// function cleanAndTrim(text: string) {
+//   return text.replace(/\s+/g, ' ').trim()
+// }
