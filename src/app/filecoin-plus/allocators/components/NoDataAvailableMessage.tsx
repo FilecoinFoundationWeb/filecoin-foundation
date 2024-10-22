@@ -4,7 +4,7 @@ import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 import { NoResultsMessage } from '@/components/NoResultsMessage'
 
-export function NoAllocatorsMessage() {
+export function NoDataAvailableMessage() {
   return (
     <NoResultsMessage
       title="Allocator Data Unavailable"

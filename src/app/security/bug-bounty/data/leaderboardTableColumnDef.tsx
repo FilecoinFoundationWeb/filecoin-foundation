@@ -3,6 +3,7 @@
 import { GithubLogo, Globe, LinkedinLogo, XLogo } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
+import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
 import { leaderboardData } from './leaderboard'
@@ -51,14 +52,14 @@ export const leaderboardTableColumnDef = [
       const Logo = getProfileLinkLogo(profileLink)
 
       return (
-        <a
+        <CustomLink
           href={profileLink}
           rel="noopener noreferrer"
           className="inline-flex size-12 items-center justify-center focus:brand-outline"
           aria-label={`Visit ${reporter}'s profile`}
         >
           <Icon component={Logo} size={20} />
-        </a>
+        </CustomLink>
       )
     },
   }),

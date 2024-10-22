@@ -7,13 +7,13 @@ import {
   getFilteredRowModel,
 } from '@tanstack/react-table'
 
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { SearchInput } from '@/components/SearchInput'
 
 import { allocatorsTableColumnDef } from '../data/allocatorsTableColumnDef'
 import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
-import { NoFilterResultsMessage } from './NoFilterResultsMessage'
 
 type FilterableAllocatorsTableProps = {
   data: Array<Allocator>
@@ -50,7 +50,9 @@ export function FilterableAllocatorsTable({
       {hasSearchResults ? (
         <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
       ) : (
-        <NoFilterResultsMessage />
+        <div className="flex w-full justify-center">
+          <NoSearchResultsMessage />
+        </div>
       )}
     </>
   )
