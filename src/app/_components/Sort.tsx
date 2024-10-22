@@ -2,11 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import {
-  type DefaultSortType,
-  type SortId,
-  type SortOption,
-} from '@/types/sortTypes'
+import { type SortOption, type ValidSortKey } from '@/types/sortTypes'
 
 import { SORT_KEY } from '@/constants/searchParams'
 
@@ -18,22 +14,22 @@ import { SortListbox } from '@/components/SortListbox'
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']
   options: ReadonlyArray<SortOption>
-  defaultOption: DefaultSortType
+  defaultQuery: ReturnType<typeof useSort>['defaultSortQuery']
 }
 
-export function Sort({ query, options, defaultOption }: SortProps) {
-  const [sortId, setSortId] = useState<SortId>(query)
+export function Sort({ query, options, defaultQuery }: SortProps) {
+  const [sortId, setSortId] = useState<ValidSortKey>(query)
   const { updateSearchParams } = useUpdateSearchParams()
 
   useEffect(() => {
-    const sortIsReset = query === defaultOption
+    const sortIsReset = query === defaultQuery
 
     if (sortIsReset) {
-      setSortId(defaultOption)
+      setSortId(defaultQuery)
     }
-  }, [query, defaultOption])
+  }, [query, defaultQuery])
 
-  function handleSortChange(newValue: SortId) {
+  function handleSortChange(newValue: ValidSortKey) {
     setSortId(newValue)
     updateSearchParams({ [SORT_KEY]: newValue })
   }

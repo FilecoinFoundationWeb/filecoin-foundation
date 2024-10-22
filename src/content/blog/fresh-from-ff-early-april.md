@@ -22,7 +22,7 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 🧰 **Filecoin Foundation’s [Comms Toolkit](https://hub.fil.org/comms) is live!** This new site connects you with FF’s Marketing and Communications team so we can help spread the word about projects you're building and the work you’re doing in the Filecoin ecosystem. Fill out this [intake form](https://airtable.com/appNJXvQHmep8Dx9E/shr3Kc8Ort7T5ehuX), and our team will follow up with you to help you tell your story.
 
-📈**Submissions to the Filecoin Ecosystem Explorer have doubled since its launch in January!** The [Ecosystem Explorer](https://fil.org/ecosystem/) is a crowd-sourced and open database that showcases the incredible breadth of projects in the Filecoin ecosystem. Thank you to all of those who have submitted use cases and applications! If you’re working on something in the Filecoin ecosystem and don’t yet see your project, submit your application to the Explorer [here](https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O).
+📈**Submissions to the Filecoin Ecosystem Explorer have doubled since its launch in January!** The [Ecosystem Explorer](https://fil.org/ecosystem/) is a crowd-sourced and open database that showcases the incredible breadth of projects in the Filecoin ecosystem. Thank you to all of those who have submitted use cases and applications! If you’re working on something in the Filecoin ecosystem and don’t yet see your project, submit your application to the Explorer [here](https://fil.org/ecosystem-explorer/project-form).
 
 ## Ecosystem
 
