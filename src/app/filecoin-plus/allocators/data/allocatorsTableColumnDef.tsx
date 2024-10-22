@@ -51,6 +51,7 @@ export const allocatorsTableColumnDef = [
       headerCellStyle: 'w-32',
       bodyCellStyle: 'text-brand-300',
     },
+    enableGlobalFilter: false,
     cell: (info) => {
       const link = info.getValue()
       const name = info.row.original.name
