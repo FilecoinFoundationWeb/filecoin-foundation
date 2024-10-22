@@ -48,6 +48,7 @@ export function FeaturedBlogPosts() {
               image={{
                 ...(image || graphicsData.imageFallback.data),
                 alt: '',
+                objectFit: 'cover',
                 sizes: buildImageSizeProp({
                   startSize: '100vw',
                   sm: '350px',
