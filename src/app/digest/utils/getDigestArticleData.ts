@@ -8,7 +8,6 @@ import { DigestArticleFrontMatterSchema } from '../schemas/FrontMatterSchema'
 import { sortArticlesByNumber } from '../utils/sortArticlesByNumber'
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
-const DESCRIPTION_PREVIEW_MAX_LENGTH = 220
 
 export function getDigestArticleData(slug: string) {
   return getMarkdownData({
@@ -35,17 +34,7 @@ export function getAllDigestArticleDataSortedByNumber() {
 }
 
 function generatePreviewDescription(content: string) {
-  // const truncatedContent = truncateText(content, DESCRIPTION_PREVIEW_MAX_LENGTH)
   const plainText = removeMarkdown(content)
 
-  // const text = cleanAndTrim(plainText)
   return plainText
 }
-
-// function truncateText(text: string, maxLength: number) {
-//   return text.substring(0, maxLength)
-// }
-
-// function cleanAndTrim(text: string) {
-//   return text.replace(/\s+/g, ' ').trim()
-// }
