@@ -5,13 +5,13 @@ import { createColumnHelper } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
 
-import { leaderboardData } from '../data/leaderboard'
+import { leaderboardData } from './leaderboard'
 
 type WhiteHat = (typeof leaderboardData)[number]
 
 const columnHelper = createColumnHelper<WhiteHat>()
 
-export const leaderboardTableData = [
+export const leaderboardTableColumnDef = [
   columnHelper.accessor('reporter', {
     id: 'rank',
     header: '#',
