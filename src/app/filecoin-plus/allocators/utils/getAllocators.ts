@@ -9,8 +9,10 @@ import { getAllocatorUrlList } from './getAllocatorUrlList'
 
 export async function getAllocators() {
   const allocatorUrlList = await getAllocatorUrlList()
+
   const allocatorFileMetaData =
     await fetchAllocatorListMetaData(allocatorUrlList)
+
   return extractAllocators(allocatorFileMetaData)
 }
 
@@ -24,11 +26,14 @@ async function fetchAllocatorMetaData(
   allocatorUrl: AllocatorFileMetaData['git_url'],
 ) {
   try {
-    const response = await fetch(allocatorUrl)
+    const response = await fetch(allocatorUrl, {
+      headers: {
+        Authorization: `Bearer ${process.env.GITHUB_AUTH_TOKEN}`,
+      },
+    })
     const data = await response.json()
     return AllocatorFileMetaDataSchema.parse(data)
   } catch (error) {
-    console.error('Error fetching allocator data:', error)
     return null
   }
 }

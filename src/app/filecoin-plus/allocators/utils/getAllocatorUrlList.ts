@@ -1,20 +1,15 @@
+import { Octokit } from '@octokit/rest'
+
 import {
   AllocatorFileListMetaDataBaseSchema,
   type AllocatorFileMetaDataBase,
 } from '../schemas/AllocatorSchema'
 
-const GITHUB_ALLOCATORS_REPO =
-  'https://api.github.com/repos/filecoin-project/Allocator-Registry/contents/Allocators'
+const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 export async function getAllocatorUrlList() {
-  const response = await fetch(GITHUB_ALLOCATORS_REPO, {
-    headers: {
-      Authorization: `Bearer ${process.env.GITHUB_AUTH_TOKEN}`,
-    },
-  })
-  const allocatorsData = await response.json()
-  const parsedData = AllocatorFileListMetaDataBaseSchema.parse(allocatorsData)
-  return extractAllocatorUrls(parsedData)
+  const allocatorsData = await getAllocatorList()
+  return extractAllocatorUrls(allocatorsData)
 }
 
 function extractAllocatorUrls(
@@ -26,4 +21,14 @@ function extractAllocatorUrls(
 function isValidAllocatorFile(file: AllocatorFileMetaDataBase) {
   const allocatorFilePattern = /^\d{3,4}\.json$/
   return allocatorFilePattern.test(file.name)
+}
+
+async function getAllocatorList() {
+  const { data: allocatorsData } = await octokit.repos.getContent({
+    owner: 'filecoin-project',
+    repo: 'Allocator-Registry',
+    path: 'Allocators',
+  })
+
+  return AllocatorFileListMetaDataBaseSchema.parse(allocatorsData)
 }
