@@ -34,6 +34,6 @@ The [Filecoin Ecosystem Explorer](https://fil.org/ecosystem/) highlights project
 
 **Add Your Project**
 
-This index is only as good as the ecosystem makes it! If you don't see your project listed, add it today by [filling out this form](https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O) to let us know your project or about additional projects that you’d like to see included.
+This index is only as good as the ecosystem makes it! If you don't see your project listed, add it today by [filling out this form](https://fil.org/ecosystem-explorer/project-form) to let us know your project or about additional projects that you’d like to see included.
 
 Thank you to all of those who have submitted use cases and applications, and those who contribute time, ideas and efforts to bring the Filecoin network to life!
