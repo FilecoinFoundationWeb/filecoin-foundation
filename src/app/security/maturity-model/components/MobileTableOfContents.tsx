@@ -26,20 +26,18 @@ export function MobileTableOfContents() {
   )
 
   return (
-    <div className="flex justify-center">
-      <nav aria-label="Table of Contents" className="w-full max-w-sm">
-        <FormListbox
-          hideLabel
-          label="Table of Contents"
-          placeholder="Select a section"
-          options={options}
-          value={{
-            id: selectedItem?.slug || '',
-            name: selectedItem?.title || '',
-          }}
-          onChange={(option) => handleChange(option.id)}
-        />
-      </nav>
-    </div>
+    <nav aria-label="Table of Contents" className="w-full max-w-sm">
+      <FormListbox
+        hideLabel
+        label="Table of Contents"
+        placeholder="Select a section"
+        options={options}
+        value={{
+          id: selectedItem?.slug || '',
+          name: selectedItem?.title || '',
+        }}
+        onChange={(option) => handleChange(option.id)}
+      />
+    </nav>
   )
 }
