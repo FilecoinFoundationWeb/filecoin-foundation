@@ -157,6 +157,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/leahcallonbutler/
     image:
       src: /assets/images/frame-1-1-.webp
+  - name: Vitalii Yatskiv
+    title: CTO
+    company: Boosty Labs
+    image:
+      src: /assets/images/1718436285615.jpeg
+    linkedin: https://www.linkedin.com/in/vitalii-yatskiv/
 sponsors:
   first-tier:
     - name: Boosty Labs
