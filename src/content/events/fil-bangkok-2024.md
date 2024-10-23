@@ -211,7 +211,7 @@ speakers:
     company: "Filecoin Foundation "
     image:
       src: /assets/images/marta.jpeg
-    title: "President "
+    title: "President & Chair "
 sponsors:
   first-tier:
     - name: Boosty Labs
