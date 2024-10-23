@@ -10,8 +10,6 @@ image:
 category: science-climate-space
 subcategories:
   - decentralized-science
-tags:
-  - desci
 description: Opscientia (OpSci) is an open source DeSci project leveraging the
   power of Web3 to grow, sustain, and continuously improve decentralized
   science.
@@ -23,7 +21,8 @@ repo: https://github.com/opscientia
 twitter: https://twitter.com/opscientia
 seo:
   title: Opsci
-  description: Opsci offers decentralized solutions for scientific data management
+  description:
+    Opsci offers decentralized solutions for scientific data management
     and collaboration.
 ---
 

@@ -8,9 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - governance-daos-public-goods
-  - data-storage-management
 description: A data DAO for monetizing credit card transaction data.
 website: https://app.daln.io/
 tech:

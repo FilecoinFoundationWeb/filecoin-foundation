@@ -8,15 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - data-retrieval
-  - infrastructure
-  - data-storage-management
-  - enterprise
-  - developer-tools
-  - s3-apis
-  - storage-services
-  - ai-productivity-and-utilities
 description: Open-source distributed storage and computing platform.
 website: https://vshare.Cloud
 tech:

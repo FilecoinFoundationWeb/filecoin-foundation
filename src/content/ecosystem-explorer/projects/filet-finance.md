@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - leasing
-tags:
-  - leasing-and-staking
 description: A trustworthy platform providing staking service stably.
 website: https://www.filet.finance
 tech:

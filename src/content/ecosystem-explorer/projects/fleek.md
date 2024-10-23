@@ -7,10 +7,6 @@ description:
   "Fleek ​​allows users to host websites, store and deliver files, and
   develop dapps for the decentralized web."
 category: tooling-productivity
-tags:
-  - developer-tools
-  - depin
-  - dapp
 tech:
   - filecoin
   - ipfs

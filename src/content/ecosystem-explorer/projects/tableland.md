@@ -7,8 +7,6 @@ description:
   "Tableland is a Web3 database to store and query contract metadata with
   (structured query language) SQL."
 category: tooling-productivity
-tags:
-  - developer-tools
 tech:
   - filecoin
   - ipfs

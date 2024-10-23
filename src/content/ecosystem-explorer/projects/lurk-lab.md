@@ -8,8 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - developer-tools
 description: Lurk is a Turing-complete programming language for recursive
   zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge)
   enabling new possibilities for SNARK proofs, blockchain consensus, the

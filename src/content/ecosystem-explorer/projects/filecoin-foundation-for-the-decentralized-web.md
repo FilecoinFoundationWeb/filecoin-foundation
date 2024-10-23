@@ -10,8 +10,6 @@ image:
 category: public-goods-dweb
 subcategories:
   - dweb
-tags:
-  - social-impact
 description: Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3)
   nonprofit with the mission of preserving humanity’s most important
   information.

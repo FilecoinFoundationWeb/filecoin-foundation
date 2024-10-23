@@ -10,8 +10,6 @@ image:
 category: artificial-intelligence
 subcategories:
   - developer-tools
-tags:
-  - ai-productivity-and-utilities
 description: Algovera is a collaboration platform for large language model
   applications, allowing users to build AI apps easily, quickly, and with
   no-code.
@@ -22,7 +20,8 @@ repo: https://github.com/AlgoveraAI
 twitter: https://twitter.com/algoveraai
 seo:
   title: "Algovera: No-Code Platform for Building AI Apps & Data Science Tools"
-  description: Build AI apps effortlessly with Algovera's no-code platform. Access
+  description:
+    Build AI apps effortlessly with Algovera's no-code platform. Access
     an AI hub for data scientists, decentralized storage, and integrations with
     HuggingFace, Activeloop, and JupyterLab—built on IPFS and Ocean Protocol.
 ---

@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - bridges-oracles
-tags:
-  - dweb
 description: Decentralized Bond Exchange on Filecoin Virtual Machine
 website: http://www.jackrabbitfinance.xyz/
 tech:

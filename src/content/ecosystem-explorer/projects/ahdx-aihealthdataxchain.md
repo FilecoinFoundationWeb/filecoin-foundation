@@ -10,8 +10,6 @@ image:
 category: education-academia-health
 subcategories:
   - health
-tags:
-  - health
 description: We offer a decentralized patient health data marketplace, which
   allows organizations and patients to securely share or monetize health
   information.
@@ -22,9 +20,11 @@ tech:
 twitter: https://twitter.com/aihdxc/
 year-joined: 2023-10-09T16:51:25.169Z
 seo:
-  title: Blockchain-Based Data Storage & Decentralized Health Data Marketplace for
+  title:
+    Blockchain-Based Data Storage & Decentralized Health Data Marketplace for
     Secure Sharing
-  description: Protect against data breaches with blockchain-based storage. AHDX's
+  description:
+    Protect against data breaches with blockchain-based storage. AHDX's
     decentralized marketplace on Filecoin and IPFS enables secure health data
     sharing for patients, ensuring immutability and efficient retrieval.
 ---

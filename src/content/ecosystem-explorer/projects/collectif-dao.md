@@ -7,9 +7,6 @@ description:
   "Decentralized non-custodial liquid staking protocol bringing capital
   efficient storage an mining to the Filecoin network"
 category: public-goods-dweb
-tags:
-  - dapp
-  - leasing-and-staking
 tech:
   - filecoin
 image:

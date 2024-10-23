@@ -15,9 +15,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/dateUtils'
 
-import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -67,8 +65,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     repo,
     twitter,
     featuredContent,
-    updatedOn,
-    newsUpdate,
     category,
     subcategories,
   } = data
@@ -116,22 +112,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           </div>
 
           {videoUrl && <YouTubeVideoEmbed videoUrl={videoUrl} />}
-
-          {newsUpdate && (
-            <div className="prose">
-              <span className="not-prose text-brand-300">
-                <Heading tag="h3" variant="xl">
-                  Latest Update
-                </Heading>
-              </span>
-              <DescriptionText>{newsUpdate}</DescriptionText>
-              {updatedOn && (
-                <span className="inline-block text-sm text-blue-300">
-                  {formatDate(updatedOn)}
-                </span>
-              )}
-            </div>
-          )}
         </div>
 
         <ul className="mt-4 flex flex-col gap-5">

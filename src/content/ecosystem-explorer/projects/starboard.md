@@ -7,8 +7,6 @@ description:
   "Starboard Ventures empowers Web3 data economies with network analytics
   and product incubation."
 category: storage
-tags:
-  - network-tools
 tech:
   - filecoin
   - ipfs

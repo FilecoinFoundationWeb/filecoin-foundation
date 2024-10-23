@@ -7,8 +7,6 @@ description:
   "$Corgi is memecoin on Filecoin, but not just a memecoin, building on
   Filecoin with utility and community."
 category: storage
-tags:
-  - communication-social
 tech:
   - filecoin
 image:

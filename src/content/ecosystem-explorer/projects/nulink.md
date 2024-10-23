@@ -5,8 +5,6 @@ updated-on: 2024-03-20T13:35:36.273000Z
 published-on: 2024-03-20T13:35:36.295000Z
 description: "ZK Provable Data Privacy Solution for DApps"
 category: storage
-tags:
-  - infrastructure
 tech:
   - filecoin
 image:

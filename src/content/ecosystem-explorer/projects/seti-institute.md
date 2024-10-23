@@ -8,8 +8,6 @@ description:
   to lead humanity's quest to understand the origins and prevalence of life and intelligence
   in the universe and share that knowledge with the world."
 category: science-climate-space
-tags:
-  - space
 tech:
   - filecoin
   - ipfs

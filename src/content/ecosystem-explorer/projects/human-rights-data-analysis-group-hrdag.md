@@ -8,9 +8,6 @@ description:
   used by UN missions, truth commissions, small and large human rights groups, and
   criminal prosecutions for war crimes and crimes against humanity."
 category: public-goods-dweb
-tags:
-  - dweb
-  - social-impact
 tech:
   - filecoin
   - ipfs
