@@ -1,7 +1,7 @@
 'use client'
 
 import { Listbox as HeadlessUIListbox } from '@headlessui/react'
-import { ArrowsDownUp, CaretDown } from '@phosphor-icons/react/dist/ssr'
+import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
