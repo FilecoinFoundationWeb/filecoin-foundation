@@ -49,6 +49,15 @@ export const allocatorsTableColumnsData = [
       bodyCellStyle: 'text-brand-300',
     },
     enableGlobalFilter: false,
-    cell: ApplyLink,
+    cell: (info) => {
+      const link = info.getValue()
+      const name = info.row.original.name
+
+      if (!link) {
+        return null
+      }
+
+      return <ApplyLink link={link} name={name} />
+    },
   }),
 ]

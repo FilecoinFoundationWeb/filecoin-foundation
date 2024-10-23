@@ -1,22 +1,16 @@
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
-import type { CellContext } from '@tanstack/react-table'
 
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
 
-type LinkValueType = string | null
-type ApplyLinkProps = CellContext<Allocator, LinkValueType>
+type ApplyLinkProps = {
+  link: NonNullable<Allocator['application']['allocation_bookkeeping']>
+  name: Allocator['name']
+}
 
-export function ApplyLink({ getValue, row }: ApplyLinkProps) {
-  const link = getValue()
-  const name = row.original.name
-
-  if (!link) {
-    return null
-  }
-
+export function ApplyLink({ link, name }: ApplyLinkProps) {
   return (
     <CustomLink
       href={link}

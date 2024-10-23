@@ -1,24 +1,19 @@
-import type { CellContext } from '@tanstack/react-table'
-
 import { CustomLink } from '@/components/CustomLink'
-import { Icon } from '@/components/Icon'
+import { Icon, type IconProps } from '@/components/Icon'
 
 import type { WhiteHat } from '../types'
-import { getLogoFromLink } from '../utils/getLogoFromLink'
 
-type ProfileLinkValueType = string | null
-type SocialIconLinkProps = CellContext<WhiteHat, ProfileLinkValueType>
+type SocialIconLinkProps = {
+  profileLink: NonNullable<WhiteHat['profileLink']>
+  reporter: WhiteHat['reporter']
+  logo: IconProps['component']
+}
 
-export function SocialIconLink({ getValue, row }: SocialIconLinkProps) {
-  const profileLink = getValue()
-  const reporter = row.original.reporter
-
-  if (!profileLink) {
-    return null
-  }
-
-  const logo = getLogoFromLink(profileLink)
-
+export function SocialIconLink({
+  profileLink,
+  reporter,
+  logo,
+}: SocialIconLinkProps) {
   return (
     <CustomLink
       href={profileLink}

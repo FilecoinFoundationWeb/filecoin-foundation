@@ -2,6 +2,7 @@ import { createColumnHelper } from '@tanstack/react-table'
 
 import { SocialIconLink } from '../components/SocialIconLink'
 import type { WhiteHat } from '../types'
+import { getLogoFromLink } from '../utils/getLogoFromLink'
 
 const columnHelper = createColumnHelper<WhiteHat>()
 
@@ -34,6 +35,23 @@ export const leaderboardTableColumnsData = [
     meta: {
       bodyCellStyle: 'text-center text-brand-300',
     },
-    cell: SocialIconLink,
+    cell: (info) => {
+      const profileLink = info.getValue()
+      const reporter = info.row.original.reporter
+
+      if (!profileLink) {
+        return null
+      }
+
+      const logo = getLogoFromLink(profileLink)
+
+      return (
+        <SocialIconLink
+          profileLink={profileLink}
+          reporter={reporter}
+          logo={logo}
+        />
+      )
+    },
   }),
 ]
