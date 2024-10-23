@@ -7,9 +7,6 @@ description:
   "Planet-scale data pipeline addressing composability of on & off-chain
   data"
 category: storage
-tags:
-  - data-storage-management
-  - data-retrieval
 tech:
   - filecoin
 image:

@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - leasing
-tags:
-  - dapp
 description: FILLiquid is a liquidity pool implemented on FVM (Filecoin Virtual
   Machine) as a fully open-sourced, decentralized, algorithmic-based lending
   platform.

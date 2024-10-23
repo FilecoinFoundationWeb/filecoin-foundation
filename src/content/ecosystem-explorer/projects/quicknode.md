@@ -5,8 +5,6 @@ updated-on: 2024-03-29T21:47:37.035000Z
 published-on: 2024-03-29T21:47:37.035000Z
 description: "Filecoin RPC Endpoint Support for FVM"
 category: tooling-productivity
-tags:
-  - developer-tools
 tech:
   - filecoin
 image:

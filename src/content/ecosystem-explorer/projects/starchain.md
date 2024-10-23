@@ -10,8 +10,6 @@ image:
 category: science-climate-space
 subcategories:
   - storage-software
-tags:
-  - storage-software
 description: StarChain leverages Filecoin and IPFS to build a decentralized repository of scientific data where every researcher can freely share their datasets.
 website: https://starchain.dev
 tech:
@@ -24,6 +22,6 @@ seo:
   description: StarChain leverages Filecoin and IPFS to build a decentralized repository of scientific data where every researcher can freely share their datasets.
 ---
 
-StarChain integrates the Filecoin network to provide decentralized storage solutions within our DataStore application. By utilizing Filecoin's robust and secure storage capabilities, we ensure that data stored on our platform is immutable, verifiable, and accessible. 
+StarChain integrates the Filecoin network to provide decentralized storage solutions within our DataStore application. By utilizing Filecoin's robust and secure storage capabilities, we ensure that data stored on our platform is immutable, verifiable, and accessible.
 
 Specifically, we use IPFS for efficient content addressing and Filecoin for incentivized storage, enabling our users to store and retrieve data in a decentralized manner.

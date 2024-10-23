@@ -7,8 +7,6 @@ description:
   "Aims to lower the entry barriers and costs for Web3 users accessing
   decentralized storage networks."
 category: storage
-tags:
-  - depin
 tech:
   - filecoin
 image:

@@ -10,8 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - developer-tools
 description: Portable User Storage for Dapps
 website: https://ceramic.network/s
 tech:

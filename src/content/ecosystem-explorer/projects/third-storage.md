@@ -7,8 +7,6 @@ description:
   "Third Storage is a web3 infra which enables developers to build the
   next gen applications."
 category: storage
-tags:
-  - developer-tools
 tech:
   - filecoin
 image:

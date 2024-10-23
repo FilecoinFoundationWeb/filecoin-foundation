@@ -7,8 +7,6 @@ description:
   "Expanso helps leading organizations innovate quickly by helping them
   architect, implement, and maintain enterprise-grade distributed compute platforms."
 category: storage
-tags:
-  - enterprise
 tech:
   - filecoin
 image:

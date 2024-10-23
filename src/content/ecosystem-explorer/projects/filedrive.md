@@ -7,8 +7,6 @@ description:
   "FileDrive is focused on research and development for distributed storage
   on the Filecoin network."
 category: storage
-tags:
-  - storage-services
 tech:
   - filecoin
   - ipfs

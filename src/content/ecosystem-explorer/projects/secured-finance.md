@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - bridges-oracles
-tags:
-  - network-tools
 description: Interbank-grade P2P Capital Markets Protocol
 website: https://secured-finance.com/
 tech:

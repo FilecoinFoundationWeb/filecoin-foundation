@@ -10,12 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - infrastructure
-  - data-storage-management
-  - storage-infrastructure
-  - storage-services
-  - bridges-oracles
 description: Empower any user on any chain to engage in seamless cross-chain
   experiences through our DEX and Rainbow Road platforms.
 website: https://archly.fi

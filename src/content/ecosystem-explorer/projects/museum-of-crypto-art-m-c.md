@@ -7,9 +7,6 @@ description:
   "The Museum of Crypto Art is an art preservation tool and community of
   artists, collectors, and developers."
 category: "media-entertainment"
-tags:
-  - "arts-collectibles"
-  - "glam"
 tech:
   - "filecoin"
   - "ipfs"

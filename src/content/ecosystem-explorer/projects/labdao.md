@@ -5,9 +5,6 @@ updated-on: 2024-03-29T21:44:57.882000Z
 published-on: 2024-03-29T21:44:57.882000Z
 description: "The first open research organization built for computational life sciences"
 category: science-climate-space
-tags:
-  - desci
-  - governance-daos-public-goods
 tech:
   - ipfs
 image:

@@ -10,8 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - nfts
 description: OpenGate has launched CryptoBear, an NFT project within the Filecoin ecosystem.
 website: https://www.opengatenft.com/
 tech:

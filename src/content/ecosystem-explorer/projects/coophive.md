@@ -5,8 +5,6 @@ updated-on: 2024-04-24T19:28:43.535000Z
 published-on: 2024-04-24T19:28:43.548000Z
 description: "Compute marketplace that can facilitate a number of diverse applications."
 category: public-goods-dweb
-tags:
-  - desci
 tech:
   - filecoin
   - ipfs

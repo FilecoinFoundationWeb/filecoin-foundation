@@ -7,8 +7,6 @@ description:
   "Simple access to the decentralized cloud, guaranteeing the sovereignty
   and resilience of your data."
 category: tooling-productivity
-tags:
-  - data-storage-management
 tech:
   - ipfs
 image:

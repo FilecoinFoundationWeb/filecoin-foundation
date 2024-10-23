@@ -8,8 +8,6 @@ image:
 category: media-entertainment
 subcategories:
   - arts-collectibles-nfts
-tags:
-  - arts-collectibles
 description: Mona's mission is to empower billions of people to create, collect,
   and share high quality experiences on the blockchain.
 website: https://monaverse.com

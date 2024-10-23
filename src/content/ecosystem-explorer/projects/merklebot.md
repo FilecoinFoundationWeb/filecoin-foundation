@@ -9,8 +9,6 @@ description:
   approach working with both big cloud providers and leveraging the Filecoin network
   to offer affordable data storage."
 category: storage
-tags:
-  - data-storage-management
 tech:
   - filecoin
 image:

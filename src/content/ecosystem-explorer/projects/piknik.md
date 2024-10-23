@@ -8,10 +8,6 @@ description:
   decentralized storage provider that makes it easy for anyone to store and provide
   storage on the Filecoin network, without any technical knowledge required."
 category: storage
-tags:
-  - storage-provider
-  - storage-software
-  - data-storage-management
 tech:
   - filecoin
   - ipfs

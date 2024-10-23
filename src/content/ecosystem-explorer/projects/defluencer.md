@@ -7,8 +7,6 @@ description:
   "Defluencer is a protocol built on top of the inter-planetary file system
   (IPFS)."
 category: media-entertainment
-tags:
-  - communication-social
 tech:
   - ipfs
 image:

@@ -8,8 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - infrastructure
 description: EVM-compatible L2 network based on Filecoin.
 website: https://filenova.org/
 tech:

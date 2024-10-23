@@ -8,8 +8,6 @@ image:
 category: tooling-productivity
 subcategories:
   - infrastructure
-tags:
-  - arts-collectibles
 description: Ecko is a collaboration platform for the planning, creation, and
   monetisation of multi-drop mission driven NFT campaigns.
 website: https://www.ecko.ac

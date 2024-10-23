@@ -5,9 +5,6 @@ updated-on: 2024-04-05T23:01:19.919000Z
 published-on: 2024-04-05T23:01:19.933000Z
 description: "Metrics for users and devs to help manage data on IPFS."
 category: storage
-tags:
-  - developer-tools
-  - data-curation-monetization
 tech:
   - ipfs
 image:
