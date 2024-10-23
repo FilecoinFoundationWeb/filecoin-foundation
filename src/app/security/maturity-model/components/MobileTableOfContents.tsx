@@ -35,7 +35,7 @@ export function MobileTableOfContents() {
           <Icon component={CaretDown} size={16} weight="bold" />
         </ListboxButton>
 
-        <ListboxOptions position="left">
+        <ListboxOptions>
           {options.map((option) => (
             <ListboxOption key={option.id} option={option} />
           ))}
