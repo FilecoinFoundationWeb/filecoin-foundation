@@ -15,13 +15,13 @@ import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
 
-type FilterableAllocatorsTableProps = {
+type AllocatorsTableWithFiltersProps = {
   data: Array<Allocator>
 }
 
-export function FilterableAllocatorsTable({
+export function AllocatorsTableWithFilters({
   data,
-}: FilterableAllocatorsTableProps) {
+}: AllocatorsTableWithFiltersProps) {
   const table = useReactTable({
     data,
     columns: allocatorsTableColumnsData,
