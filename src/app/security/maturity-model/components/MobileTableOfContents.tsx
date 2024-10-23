@@ -29,13 +29,10 @@ export function MobileTableOfContents() {
         onChange={(value) => handleChange(value.id)}
       >
         <ListboxButton>
-          <div className="inline-flex w-full items-center gap-2">
-            <Icon component={ArrowsDownUp} />
-            <span className="grow truncate text-left">
-              {selectedOption?.name || 'Select a section'}
-            </span>
-            <Icon component={CaretDown} size={16} weight="bold" />
-          </div>
+          <span className="truncate">
+            {selectedOption?.name || 'Go to Section'}
+          </span>
+          <Icon component={CaretDown} size={16} weight="bold" />
         </ListboxButton>
 
         <ListboxOptions position="left">
