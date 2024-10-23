@@ -37,6 +37,12 @@ schedule:
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: "TRUST 2024: Combating Misinformation in Election Media with
+            Decentralized Tools"
+          description: "Speaker: Sherry Chung, Numbers Protocol"
+          start: 2024-11-11T15:45:00.000Z
+          end: 2024-11-11T15:52:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
     - events:
         - title: FIL Bangkok Co-Working Space
