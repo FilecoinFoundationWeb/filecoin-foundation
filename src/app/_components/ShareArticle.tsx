@@ -4,10 +4,10 @@ import { clsx } from 'clsx'
 
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
+
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
-
-import { generateSharePostLinks } from '@/blog/[slug]/utils/generateSharePostLinks'
 
 type ShareArticleProps = {
   articleTitle: string
@@ -25,7 +25,7 @@ export function ShareArticle({
   path,
   sectionTitle = 'Share Article',
 }: ShareArticleProps) {
-  const socialLinksWithIcons = generateSharePostLinks(
+  const socialLinksWithIcons = generateShareArticleLinks(
     `${BASE_URL}${path}`,
     articleTitle,
   )

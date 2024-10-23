@@ -31,7 +31,7 @@ export const SHARE_SOCIAL_LINKS_CONFIG = [
   },
 ]
 
-export function generateSharePostLinks(URL: string, title: string) {
+export function generateShareArticleLinks(URL: string, title: string) {
   const formattedURL = `– ${encodeURIComponent(URL)}`
 
   return SHARE_SOCIAL_LINKS_CONFIG.map(({ icon, label, href }) => ({
