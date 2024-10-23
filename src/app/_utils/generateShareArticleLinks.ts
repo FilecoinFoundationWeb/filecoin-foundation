@@ -5,8 +5,10 @@ import {
   XLogo,
 } from '@phosphor-icons/react/dist/ssr'
 
-const PLACEHOLDER_URL = 'URL'
-const PLACEHOLDER_TITLE = 'title'
+import { BASE_URL } from '@/constants/siteMetadata'
+
+const PLACEHOLDER_URL = BASE_URL
+const PLACEHOLDER_TITLE = 'Explore more on our website!'
 
 export const SHARE_SOCIAL_LINKS_CONFIG = [
   {
@@ -32,11 +34,13 @@ export const SHARE_SOCIAL_LINKS_CONFIG = [
 ]
 
 export function generateShareArticleLinks(URL: string, title: string) {
-  const formattedURL = `– ${encodeURIComponent(URL)}`
+  const formattedURL = URL ? encodeURIComponent(URL) : PLACEHOLDER_URL
 
   return SHARE_SOCIAL_LINKS_CONFIG.map(({ icon, label, href }) => ({
     icon,
     label,
-    href: href.replace('URL', formattedURL).replace('title', title),
+    href: href
+      .replace(PLACEHOLDER_URL, formattedURL)
+      .replace(PLACEHOLDER_TITLE, title || PLACEHOLDER_TITLE),
   }))
 }

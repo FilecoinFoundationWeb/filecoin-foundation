@@ -52,8 +52,8 @@ export default function DigestArticle({ params }: DigestArticleProps) {
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
         <ShareArticle
-          path={`${PATHS.DIGEST.path}/${slug}`}
           articleTitle={title}
+          path={`${PATHS.DIGEST.path}/${slug}`}
         />
       </div>
     </PageLayout>
