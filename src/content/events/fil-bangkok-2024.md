@@ -32,6 +32,11 @@ schedule:
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
           location: Samyan Mitrtown
+        - title: "Where DePIN Meets AI: A Filecoin Ecosystem Survey"
+          description: "Speaker: Clara Tsao, Filecoin Foundation "
+          start: 2024-11-11T15:02:00.000Z
+          end: 2024-11-11T15:12:00.000Z
+          location: Main Hall
       date: 2024-11-11T09:00:00.000Z
     - events:
         - title: FIL Bangkok Co-Working Space
