@@ -18,6 +18,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@date-fns/utc": "^2.1.0",
     "@headlessui/react": "^2.1.10",
     "@headlessui/tailwindcss": "^0.2.1",
     "@hookform/resolvers": "^3.9.0",
