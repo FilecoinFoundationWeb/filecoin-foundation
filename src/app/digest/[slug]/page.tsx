@@ -6,6 +6,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
+import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getDigestArticleData } from '../utils/getDigestArticleData'
@@ -50,6 +51,10 @@ export default function DigestArticle({ params }: DigestArticleProps) {
           authors={authors}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
+        <ShareArticle
+          articleTitle={title}
+          path={`${PATHS.DIGEST.path}/${slug}`}
+        />
       </div>
     </PageLayout>
   )
