@@ -24,7 +24,7 @@ export const SHARE_SOCIAL_LINKS_CONFIG = [
   {
     icon: RedditLogo,
     label: 'Reddit',
-    href: `https://reddit.com/submit?url=${PLACEHOLDER_URL}&title=${PLACEHOLDER_TITLE}`,
+    href: `https://old.reddit.com/submit?url=${PLACEHOLDER_URL}&title=${PLACEHOLDER_TITLE}`,
   },
   {
     icon: XLogo,
