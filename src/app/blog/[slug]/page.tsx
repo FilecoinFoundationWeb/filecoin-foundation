@@ -6,12 +6,12 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageLayout } from '@/components/PageLayout'
+import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getBlogPostData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
-import { SharePost } from './components/SharePost'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
@@ -49,7 +49,7 @@ export default function BlogPost({ params }: BlogPostProps) {
           category={category}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
-        <SharePost title="Share post" postTitle={title} />
+        <ShareArticle sectionTitle="Share Post" postTitle={title} />
       </div>
     </PageLayout>
   )

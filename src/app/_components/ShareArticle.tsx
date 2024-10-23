@@ -4,29 +4,28 @@ import { clsx } from 'clsx'
 
 import { BASE_URL } from '@/constants/siteMetadata'
 
+import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 import { touchTarget } from '@/components/Social'
 
-import { getSharePostSocialIcons } from '../utils/getSharePostSocialIcons'
+import { generateSharePostLinks } from '@/blog/[slug]/utils/generateSharePostLinks'
 
-type SharePostProps = {
-  title: string
+type ShareArticleProps = {
+  sectionTitle: string
   postTitle: string
 }
 
-export function SharePost({ title, postTitle }: SharePostProps) {
-  const socialMediaIcons = getSharePostSocialIcons(BASE_URL, postTitle)
+export function ShareArticle({ sectionTitle, postTitle }: ShareArticleProps) {
+  const socialMediaIcons = generateSharePostLinks(BASE_URL, postTitle)
 
   return (
     <div className="space-y-3 font-bold">
-      <p className="text-brand-300">{title}</p>
+      <p className="capitalize text-brand-300">{sectionTitle}</p>
       <ul className="flex w-full gap-6">
-        {socialMediaIcons.map(({ icon, href, label }, key) => (
-          <li key={key}>
-            <a
+        {socialMediaIcons.map(({ icon, href, label }) => (
+          <li key={label}>
+            <CustomLink
               href={href}
-              title={label}
-              rel="noopener noreferrer"
               className={clsx(
                 'inline-block hover:text-brand-400',
                 touchTarget.class,
@@ -34,7 +33,7 @@ export function SharePost({ title, postTitle }: SharePostProps) {
             >
               <Icon component={icon} size={32} weight="light" />
               <span className="sr-only">{`Share on ${label}`}</span>
-            </a>
+            </CustomLink>
           </li>
         ))}
       </ul>
