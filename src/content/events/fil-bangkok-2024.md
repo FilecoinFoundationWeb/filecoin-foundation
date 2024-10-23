@@ -48,6 +48,33 @@ schedule:
           start: 2024-11-11T15:53:00.000Z
           end: 2024-11-11T16:00:00.000Z
           location: "Samyan Mitrtown: Main Hall "
+        - title: "L2 Spotlight: Introducing Decentralized Onchain Data Lakes"
+          description: "Speaker: Stefaan Vervaet, Akave "
+          start: 2024-11-11T16:01:00.000Z
+          end: 2024-11-11T16:08:00.000Z
+          location: "Samyan Mitrtown: Main Hall "
+        - title: "L2 Spotlight: Data Storage Doesn’t Have to be Spicy"
+          description: "Speaker: Alexander Kinstler, Storacha"
+          location: "Samyan Mitrtown: Main Hall "
+          start: 2024-11-11T16:32:00.000Z
+          end: 2024-11-11T16:39:00.000Z
+        - title: "Closing Remarks "
+          description: "Speaker: Marta Belcher, Filecoin Foundation "
+          start: 2024-11-11T16:48:00.000Z
+          end: 2024-11-11T16:51:00.000Z
+          location: "Samyan Mitrtown: Main Hall "
+        - title: Onboarding a Million Users to DePIN
+          description: "Speaker: Roman, GhostDrive"
+          start: 2024-11-11T15:29:00.000Z
+          end: 2024-11-11T15:36:00.000Z
+          location: "Samyan Mitrtown: Main Hall "
+        - location: "Samyan Mitrtown: Main Hall "
+          title: "Filecoin Nexus: Decentralized Tools for Environmental Change"
+          description: |-
+            Moderator: Megan Klimen, Filecoin Foundation 
+            Speakers: Vitalii Yatskiv, Boosty Labs and Alan Ransil, Devonian
+          start: 2024-11-11T12:00:00.000Z
+          end: 2024-11-11T12:30:00.000Z
       date: 2024-11-11T09:00:00.000Z
     - events:
         - title: FIL Bangkok Co-Working Space
