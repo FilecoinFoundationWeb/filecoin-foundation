@@ -2,9 +2,10 @@ import { clsx } from 'clsx'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
+import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
-export const touchTarget = {
+const TOUCH_TARGET = {
   class: 'p-2',
   offsetClass: '-m-2 sm:mx-0',
 }
@@ -14,24 +15,23 @@ export function Social() {
     <ul
       className={clsx(
         'flex flex-wrap items-center justify-between gap-4',
-        touchTarget.offsetClass,
+        TOUCH_TARGET.offsetClass,
       )}
     >
-      {socialLinksWithIcons.map(({ label, href, icon }, key) => {
+      {socialLinksWithIcons.map(({ label, href, icon }) => {
         return (
-          <li key={key} className="inline-flex">
-            <a
+          <li key={label} className="inline-flex">
+            <CustomLink
               href={href}
-              rel="noopener noreferrer"
               title={label}
               className={clsx(
-                'text-brand-100 focus:brand-outline hover:text-brand-400',
-                touchTarget.class,
+                'focus:brand-outline hover:text-brand-400',
+                TOUCH_TARGET.class,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
               <span className="sr-only">{label}</span>
-            </a>
+            </CustomLink>
           </li>
         )
       })}

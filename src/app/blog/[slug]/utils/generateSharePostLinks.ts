@@ -5,8 +5,8 @@ import {
   XLogo,
 } from '@phosphor-icons/react/dist/ssr'
 
-const PLACEHOLDER_URL = 'currentURL'
-const PLACEHOLDER_TITLE = 'postTitle'
+const PLACEHOLDER_URL = 'URL'
+const PLACEHOLDER_TITLE = 'title'
 
 export const SHARE_SOCIAL_LINKS_CONFIG = [
   {
@@ -31,15 +31,12 @@ export const SHARE_SOCIAL_LINKS_CONFIG = [
   },
 ]
 
-export function generateSharePostLinks(currentURL: string, postTitle: string) {
-  const formattedTitle = `${postTitle}`
-  const formattedURL = `${encodeURIComponent(currentURL)}`
+export function generateSharePostLinks(URL: string, title: string) {
+  const formattedURL = `– ${encodeURIComponent(URL)}`
 
   return SHARE_SOCIAL_LINKS_CONFIG.map(({ icon, label, href }) => ({
     icon,
     label,
-    href: href
-      .replace('currentURL', formattedURL)
-      .replace('postTitle', formattedTitle),
+    href: href.replace('URL', formattedURL).replace('title', title),
   }))
 }

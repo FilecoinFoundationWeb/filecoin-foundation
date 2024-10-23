@@ -49,7 +49,11 @@ export default function BlogPost({ params }: BlogPostProps) {
           category={category}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
-        <ShareArticle sectionTitle="Share Post" postTitle={title} />
+        <ShareArticle
+          articleTitle={title}
+          path={`${PATHS.BLOG.path}/${slug}`}
+          sectionTitle="Share Post"
+        />
       </div>
     </PageLayout>
   )
