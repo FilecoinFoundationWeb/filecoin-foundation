@@ -5,7 +5,7 @@ import type { Allocator } from '../schemas/AllocatorSchema'
 
 const columnHelper = createColumnHelper<Allocator>()
 
-export const allocatorsTableColumnDef = [
+export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
     header: 'Organization Name',
     cell: (info) => info.getValue(),

@@ -11,12 +11,12 @@ import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
 import { leaderboardData } from '../data/leaderboard'
-import { leaderboardTableColumnDef } from '../data/leaderboardTableColumnDef'
+import { leaderboardTableColumnsData } from '../data/leaderboardTableColumnsData'
 
 export function Leaderboard() {
   const table = useReactTable({
     data: leaderboardData,
-    columns: leaderboardTableColumnDef,
+    columns: leaderboardTableColumnsData,
     initialState: {
       sorting: [{ id: 'points', desc: true }],
     },

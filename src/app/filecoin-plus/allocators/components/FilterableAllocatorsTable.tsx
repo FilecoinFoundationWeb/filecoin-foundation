@@ -10,7 +10,7 @@ import {
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { SearchInput } from '@/components/SearchInput'
 
-import { allocatorsTableColumnDef } from '../data/allocatorsTableColumnDef'
+import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
@@ -24,7 +24,7 @@ export function FilterableAllocatorsTable({
 }: FilterableAllocatorsTableProps) {
   const table = useReactTable({
     data,
-    columns: allocatorsTableColumnDef,
+    columns: allocatorsTableColumnsData,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),

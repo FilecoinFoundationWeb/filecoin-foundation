@@ -5,7 +5,7 @@ import type { WhiteHat } from '../types'
 
 const columnHelper = createColumnHelper<WhiteHat>()
 
-export const leaderboardTableColumnDef = [
+export const leaderboardTableColumnsData = [
   columnHelper.accessor('reporter', {
     id: 'rank',
     header: '#',
