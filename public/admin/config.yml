@@ -21,13 +21,16 @@ created_on: &created_on
   label: "Created On"
   widget: "datetime"
   default: "{{now}}"
+  picker_utc: true
 
 updated_on: &updated_on
   name: "updated-on"
   label: "Updated On"
   widget: "datetime"
+
   default: "{{now}}"
   required: false
+  picker_utc: true
 
 published_on: &published_on
   name: "published-on"
@@ -35,6 +38,7 @@ published_on: &published_on
   widget: "datetime"
   default: "{{now}}"
   required: false
+  picker_utc: true
 
 header_config: &header_config
   name: "header"
@@ -683,6 +687,7 @@ collections:
         label: Using Filecoin Since
         widget: datetime
         required: false
+        picker_utc: true
       - name: body
         label: Long Description
         widget: markdown
@@ -727,11 +732,13 @@ collections:
         label: "Start Date"
         widget: "datetime"
         hint: "First day of event"
+        picker_utc: true
       - name: "end-date"
         label: "End Date"
         widget: "datetime"
         required: false
         hint: "Last day of event"
+        picker_utc: true
       - name: "description"
         label: "Description"
         widget: "string"
@@ -807,9 +814,11 @@ collections:
                   - name: "start"
                     label: "Start Time"
                     widget: "datetime"
+                    picker_utc: true
                   - name: "end"
                     label: "End Time"
                     widget: "datetime"
+                    picker_utc: true
                     required: false
                   - name: "location"
                     label: "Location"
