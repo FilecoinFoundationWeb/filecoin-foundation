@@ -195,7 +195,7 @@ speakers:
     image:
       src: /assets/images/alexander-kinstler-headshot.webp
   - name: Leah Callon-Butler
-    title: "Director "
+    title: Director
     company: Emfarsis
     linkedin: https://www.linkedin.com/in/leahcallonbutler/
     image:
