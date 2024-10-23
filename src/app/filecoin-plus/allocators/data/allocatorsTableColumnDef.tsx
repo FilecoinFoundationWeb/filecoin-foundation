@@ -1,9 +1,6 @@
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { createColumnHelper } from '@tanstack/react-table'
 
-import { CustomLink } from '@/components/CustomLink'
-import { Icon } from '@/components/Icon'
-
+import { ApplyLink } from '../components/ApplyLink'
 import type { Allocator } from '../schemas/AllocatorSchema'
 
 const columnHelper = createColumnHelper<Allocator>()
@@ -52,24 +49,6 @@ export const allocatorsTableColumnDef = [
       bodyCellStyle: 'text-brand-300',
     },
     enableGlobalFilter: false,
-    cell: (info) => {
-      const link = info.getValue()
-      const name = info.row.original.name
-
-      if (!link) {
-        return null
-      }
-
-      return (
-        <CustomLink
-          href={link}
-          className="inline-flex items-center justify-center gap-2 focus:brand-outline"
-          aria-label={`Apply for ${name} allocator`}
-        >
-          <span>Apply</span>
-          <Icon component={ArrowUpRight} size={20} />
-        </CustomLink>
-      )
-    },
+    cell: ApplyLink,
   }),
 ]
