@@ -86,7 +86,7 @@ schedule:
             meetings, and more!
 
 
-            ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward. (separate registration required).
+            ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). 
 
 
             ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
