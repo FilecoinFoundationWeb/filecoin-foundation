@@ -9,6 +9,11 @@ type MainNavItemProps = {
   isActive?: boolean
 }
 
+type MainNavItemStylesOptions = {
+  isActive: boolean
+  isPopover?: boolean
+}
+
 export const TOUCH_TARGET_MAIN_NAV_ITEM = {
   width: 'px-4',
   offsetWidth: '-mr-4',
@@ -21,14 +26,17 @@ export function MainNavItem({
 }: MainNavItemProps) {
   return (
     <li>
-      <Link href={href} className={getMainNavItemStyles(isActive)}>
+      <Link href={href} className={getMainNavItemStyles({ isActive })}>
         {label}
       </Link>
     </li>
   )
 }
 
-export function getMainNavItemStyles(isActive: boolean, isPopover = false) {
+export function getMainNavItemStyles({
+  isActive,
+  isPopover = false,
+}: MainNavItemStylesOptions) {
   const baseStyles =
     'rounded-xl py-1.5 text-base focus:brand-outline hover:bg-brand-700'
 

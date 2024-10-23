@@ -59,7 +59,10 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Get Involved"
-        mainNavItemStyles={getMainNavItemStyles(isGetInvolvedActive, true)}
+        mainNavItemStyles={getMainNavItemStyles({
+          isActive: isGetInvolvedActive,
+          isPopover: true,
+        })}
       >
         <div className="grid w-screen max-w-2xl grid-cols-2 gap-4">
           <div className="space-y-4">
@@ -84,7 +87,10 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Community"
-        mainNavItemStyles={getMainNavItemStyles(isCommunityActive, true)}
+        mainNavItemStyles={getMainNavItemStyles({
+          isActive: isCommunityActive,
+          isPopover: true,
+        })}
       >
         <div className="w-80 space-y-4">
           {communityInternalItems.map((item) => (
@@ -96,7 +102,10 @@ export function DesktopNavigation() {
       <NavigationPopover
         as="li"
         label="Resources"
-        mainNavItemStyles={getMainNavItemStyles(isResourcesActive, true)}
+        mainNavItemStyles={getMainNavItemStyles({
+          isActive: isResourcesActive,
+          isPopover: true,
+        })}
       >
         <div className="w-80 space-y-4">
           {resourcesInternalItems.map((item) => (

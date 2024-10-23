@@ -1,10 +1,8 @@
-import Link from 'next/link'
-
-import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
-import { Icon } from '@/components/Icon'
+import { ExternalLink } from './ExternalLink'
+import { InternalLink } from './InternalLink'
 
 export type SubNavItemProps = {
   href: string | Route
@@ -15,6 +13,13 @@ export type SubNavItemProps = {
     | 'externalGhost'
     | 'externalPrimary'
     | 'externalSecondary'
+}
+
+export type LinkProps = Omit<SubNavItemProps, 'linkType'> & {
+  commonProps: {
+    className: string
+    'aria-label': string
+  }
 }
 
 const baseStyles = 'group w-full rounded-lg focus:brand-outline'
@@ -34,7 +39,6 @@ export function SubNavItem({
   linkType = 'internal',
 }: SubNavItemProps) {
   const external = linkType !== 'internal'
-
   const linkClasses = clsx(baseStyles, extendedStyles[linkType])
   const commonProps = {
     className: linkClasses,
@@ -42,19 +46,18 @@ export function SubNavItem({
   }
 
   return external ? (
-    <a href={href} {...commonProps} rel="noopener noreferrer">
-      <div className="inline-flex items-center gap-1">
-        <p className="font-bold">{label}</p>
-        <span className="text-brand-400 group-hover:text-brand-100">
-          <Icon component={ArrowUpRight} size={20} />
-        </span>
-      </div>
-      {description && <p className="mt-1 text-brand-300">{description}</p>}
-    </a>
+    <ExternalLink
+      href={href}
+      label={label}
+      description={description}
+      commonProps={commonProps}
+    />
   ) : (
-    <Link href={href as Route} {...commonProps}>
-      <p className="mb-1 font-bold">{label}</p>
-      <p className="text-brand-300">{description}</p>
-    </Link>
+    <InternalLink
+      href={href}
+      label={label}
+      description={description}
+      commonProps={commonProps}
+    />
   )
 }

@@ -1,3 +1,5 @@
+import { Button } from '@headlessui/react'
+
 import { Icon, type IconProps } from '@/components/Icon'
 
 type IconButtonProps = {
@@ -6,14 +8,14 @@ type IconButtonProps = {
   onClick: React.ComponentPropsWithoutRef<'button'>['onClick']
 }
 
-export function IconButton({ icon, label, onClick }: IconButtonProps) {
+export function ToggleButton({ icon, label, onClick }: IconButtonProps) {
   return (
-    <button
+    <Button
       aria-label={label}
       className="grid size-12 place-items-center rounded-lg border border-brand-300 text-brand-300 focus:brand-outline"
       onClick={onClick}
     >
       <Icon size={20} component={icon} />
-    </button>
+    </Button>
   )
 }

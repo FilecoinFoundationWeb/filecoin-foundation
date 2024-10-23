@@ -13,16 +13,16 @@ import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
 
-import { IconButton } from './IconButton'
 import { LinkItem } from './LinkItem'
 import { NestedMenu } from './NestedMenu'
+import { ToggleButton } from './ToggleButton'
 
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
 
   return (
     <div className="lg:hidden">
-      <IconButton
+      <ToggleButton
         icon={List}
         label="Open mobile navigation"
         onClick={() => setOpen(true)}
@@ -39,7 +39,7 @@ export function MobileNavigation() {
             >
               <Logo />
             </Link>
-            <IconButton
+            <ToggleButton
               icon={X}
               label="Close mobile navigation"
               onClick={() => setOpen(false)}
