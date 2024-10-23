@@ -1,5 +1,3 @@
-import slugify from 'slugify'
-
 import {
   react as AssetManagement,
   attributes as assetManagementAttributes,
@@ -36,6 +34,7 @@ import {
   react as SoftwareSecurity,
   attributes as softwareSecurityAttributes,
 } from '../content/software-security.md'
+import { validateAndSortContent } from '../utils/validateAndSortContent'
 
 const coreFunctionsBaseData = [
   {
@@ -87,7 +86,4 @@ const coreFunctionsBaseData = [
   },
 ]
 
-export const coreFunctionsData = coreFunctionsBaseData.map((item) => ({
-  ...item,
-  slug: slugify(item.title, { lower: true, strict: true, trim: true }),
-}))
+export const coreFunctionsData = validateAndSortContent(coreFunctionsBaseData)

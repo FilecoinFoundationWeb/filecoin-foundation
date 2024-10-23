@@ -16,11 +16,13 @@ const options = coreFunctionsData.map(({ slug, title }) => ({
   id: slug,
   name: title,
 }))
+const firstOption = options[0]
 
 export function MobileTableOfContents() {
   const { updateHash, isSectionActive, getHashFromSlug } = useUrlHash()
 
-  const selectedOption = options.find((option) => isSectionActive(option.id))
+  const selectedOption =
+    options.find((option) => isSectionActive(option.id)) || firstOption
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
@@ -29,9 +31,7 @@ export function MobileTableOfContents() {
         onChange={(value) => handleChange(value.id)}
       >
         <ListboxButton>
-          <span className="truncate">
-            {selectedOption?.name || 'Go to Section'}
-          </span>
+          <span className="truncate">{selectedOption.name}</span>
           <Icon component={CaretDown} size={16} weight="bold" />
         </ListboxButton>
 
