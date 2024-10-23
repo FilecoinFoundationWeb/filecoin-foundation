@@ -206,6 +206,12 @@ speakers:
     image:
       src: /assets/images/1718436285615.jpeg
     linkedin: https://www.linkedin.com/in/vitalii-yatskiv/
+  - name: "Marta Belcher "
+    linkedin: https://www.linkedin.com/in/martabelcher/
+    company: "Filecoin Foundation "
+    image:
+      src: /assets/images/marta.jpeg
+    title: "President "
 sponsors:
   first-tier:
     - name: Boosty Labs
