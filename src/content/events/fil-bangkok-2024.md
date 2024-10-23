@@ -103,7 +103,7 @@ schedule:
             impactful conversations that help push Filecoin forward.
 
 
-            Find the full agenda at /fil-dev.io/FDS-5
+            Find the full agenda at fil-dev.io/FDS-5
           start: 2024-11-06T11:00:00.000Z
           end: 2024-11-06T20:00:00.000Z
           location: Gaysorn Urban Resort
