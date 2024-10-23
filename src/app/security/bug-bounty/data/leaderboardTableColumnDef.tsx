@@ -54,7 +54,6 @@ export const leaderboardTableColumnDef = [
       return (
         <CustomLink
           href={profileLink}
-          rel="noopener noreferrer"
           className="inline-flex size-12 items-center justify-center focus:brand-outline"
           aria-label={`Visit ${reporter}'s profile`}
         >
