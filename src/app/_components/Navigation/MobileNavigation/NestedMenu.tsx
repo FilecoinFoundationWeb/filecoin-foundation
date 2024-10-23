@@ -3,7 +3,7 @@ import type { Dispatch, SetStateAction } from 'react'
 import { type LinkItemProps, LinkItem } from './LinkItem'
 
 type NestedMenuItemProps = {
-  path: LinkItemProps['path']
+  href: LinkItemProps['href']
   label: LinkItemProps['label']
 }
 
@@ -20,10 +20,10 @@ export function NestedMenu({ title, items, setOpen }: NestedMenuProps) {
       <ul className="space-y-6 border-l">
         {items.map((item) => (
           <LinkItem
-            key={item.path}
+            key={item.href}
             nested
             label={item.label}
-            path={item.path}
+            href={item.href}
             setOpen={setOpen}
           />
         ))}

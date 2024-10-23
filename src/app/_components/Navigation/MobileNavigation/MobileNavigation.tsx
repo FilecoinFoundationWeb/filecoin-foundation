@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import { List, X } from '@phosphor-icons/react'
 
-import { mobileNavigationItems } from '@/constants/navigationItems'
+import { mobileNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
 
 import { Logo } from '@/components/Logo'
@@ -48,7 +48,7 @@ export function MobileNavigation() {
           <ul className="space-y-6" aria-label="Navigation options">
             <LinkItem
               label={PATHS.ABOUT.label}
-              path={PATHS.ABOUT.path}
+              href={PATHS.ABOUT.path}
               setOpen={setOpen}
             />
             {Object.entries(mobileNavigationItems).map(([title, items]) => (

@@ -4,13 +4,9 @@ import {
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
-export const desktopNavigationItems = {
-  careersItem: {
-    label: FILECOIN_FOUNDATION_URLS.careers.label,
-    href: FILECOIN_FOUNDATION_URLS.careers.href,
-    description: 'Explore open opportunities across the Filecoin ecosystem',
-  },
-  communityItems: [
+/** Shared items across desktop, mobile, and footer navigation */
+const sharedItems = {
+  community: [
     {
       label: PATHS.ECOSYSTEM_EXPLORER.label,
       href: PATHS.ECOSYSTEM_EXPLORER.path,
@@ -40,7 +36,7 @@ export const desktopNavigationItems = {
         "Learn about Filecoin's robust security practices, ensuring the integrity and resilience of the protocol",
     },
   ],
-  getInvolvedItems: [
+  getInvolved: [
     {
       label: PATHS.EVENTS.label,
       href: PATHS.EVENTS.path,
@@ -52,6 +48,38 @@ export const desktopNavigationItems = {
       description:
         'Information on funding opportunities supporting projects that contribute to the growth of the Filecoin Network',
     },
+    {
+      ...FILECOIN_FOUNDATION_URLS.careers,
+      description: 'Explore open opportunities across the Filecoin ecosystem',
+    },
+  ],
+  resources: [
+    {
+      label: PATHS.BLOG.label,
+      href: PATHS.BLOG.path,
+      description: 'Stay updated with the latest news and insights',
+    },
+    {
+      label: PATHS.DIGEST.label,
+      href: PATHS.DIGEST.path,
+      description: 'Explore a publication focused on the Filecoin ecosystem',
+    },
+  ],
+  legal: [
+    { label: PATHS.TERMS_OF_USE.label, href: PATHS.TERMS_OF_USE.path },
+    {
+      label: PATHS.EMPLOYEE_PRIVACY_POLICY.label,
+      href: PATHS.EMPLOYEE_PRIVACY_POLICY.path,
+    },
+    { label: PATHS.PRIVACY_POLICY.label, href: PATHS.PRIVACY_POLICY.path },
+  ],
+}
+
+export const desktopNavigationItems = {
+  careersItem: sharedItems.getInvolved[2],
+  communityItems: sharedItems.community,
+  getInvolvedItems: [
+    ...sharedItems.getInvolved,
     {
       label: 'Become a Storage Provider',
       href: 'https://destor.com/destor-network/overview',
@@ -69,16 +97,30 @@ export const desktopNavigationItems = {
     label: 'Learn more about Filecoin',
     href: FILECOIN_DOCS_URLS.site,
   },
-  resourcesItems: [
+  resourcesItems: sharedItems.resources,
+}
+
+/** Base navigation items for footer and mobile */
+const baseNavigationItems = {
+  'Get Involved': sharedItems.getInvolved.map(({ label, href }) => ({
+    label,
+    href,
+  })),
+  Community: sharedItems.community.map(({ label, href }) => ({ label, href })),
+  Resources: sharedItems.resources.map(({ label, href }) => ({ label, href })),
+}
+
+export const footerNavigationItems = {
+  Company: [
+    { label: PATHS.ABOUT.label, href: PATHS.ABOUT.path },
     {
-      label: PATHS.BLOG.label,
-      href: PATHS.BLOG.path,
-      description: 'Stay updated with the latest news and insights',
-    },
-    {
-      label: PATHS.DIGEST.label,
-      href: PATHS.DIGEST.path,
-      description: 'Explore a publication focused on the Filecoin ecosystem',
+      ...FILECOIN_FOUNDATION_URLS.email,
     },
   ],
+  ...baseNavigationItems,
+  Legal: sharedItems.legal,
+}
+
+export const mobileNavigationItems = {
+  ...baseNavigationItems,
 }

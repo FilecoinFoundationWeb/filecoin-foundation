@@ -2,26 +2,25 @@
 
 import type { Dispatch, SetStateAction } from 'react'
 
-import Link from 'next/link'
-
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
+import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 import { linkBaseStyles } from '@/components/TextLink'
 
 export type LinkItemProps = {
   label: string
-  path: Route
+  href: Route | string
   nested?: boolean
   setOpen: Dispatch<SetStateAction<boolean>>
 }
 
-export function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
-  const isExternal = isExternalLink(path)
+export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
+  const isExternal = isExternalLink(href)
 
   return (
     <li
@@ -31,8 +30,8 @@ export function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
         isExternal && 'inline-flex items-center gap-1',
       )}
     >
-      <Link
-        href={path}
+      <CustomLink
+        href={href}
         className={clsx(
           linkBaseStyles,
           "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
@@ -40,7 +39,7 @@ export function LinkItem({ label, path, nested, setOpen }: LinkItemProps) {
         onClick={() => setOpen(false)}
       >
         {label}
-      </Link>
+      </CustomLink>
       {isExternal && (
         <Icon size={16} component={ArrowUpRight} color="brand-400" />
       )}

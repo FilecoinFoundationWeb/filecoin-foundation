@@ -4,9 +4,8 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
+import { desktopNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
-
-import { desktopNavigationItems } from '@/data/navigationData'
 
 import { useNavigationItems } from '@/hooks/useNavigationItems'
 
