@@ -34,7 +34,7 @@ import {
   react as SoftwareSecurity,
   attributes as softwareSecurityAttributes,
 } from '../content/software-security.md'
-import { validateAndSortContent } from '../utils/validateAndSortContent'
+import { parseAndSortContentData } from '../utils/parseAndSortContentData'
 
 const coreFunctionsBaseData = [
   {
@@ -86,4 +86,4 @@ const coreFunctionsBaseData = [
   },
 ]
 
-export const coreFunctionsData = validateAndSortContent(coreFunctionsBaseData)
+export const coreFunctionsData = parseAndSortContentData(coreFunctionsBaseData)
