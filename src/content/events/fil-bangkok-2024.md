@@ -43,6 +43,11 @@ schedule:
           start: 2024-11-11T15:45:00.000Z
           end: 2024-11-11T15:52:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: Unlocking Non-Financial Applications on Ethereum
+          description: "Speaker: Ted Liao, Glitter Protocol"
+          start: 2024-11-11T15:53:00.000Z
+          end: 2024-11-11T16:00:00.000Z
+          location: "Samyan Mitrtown: Main Hall "
       date: 2024-11-11T09:00:00.000Z
     - events:
         - title: FIL Bangkok Co-Working Space
