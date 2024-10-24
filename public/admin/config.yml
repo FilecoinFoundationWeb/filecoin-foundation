@@ -184,6 +184,7 @@ meta_optional_title_config: &meta_optional_title_config
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - *open_graph_config
+    - *twitter_config
 
 meta_config: &meta_config
   name: "seo"
@@ -201,6 +202,7 @@ meta_config: &meta_config
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - *open_graph_config
+    - *twitter_config
 
 collections:
   - name: "pages"
