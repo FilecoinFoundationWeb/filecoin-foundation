@@ -5,7 +5,9 @@ import { verifyLinks } from '@/support/verifyLinksUtil'
 
 describe('GovHub Page', () => {
   it('should check metadata', () => {
-    testPageMetadata(PATHS.GOVHUB)
+    testPageMetadata(PATHS.GOVHUB, {
+      overrideDefaultTitle: true,
+    })
   })
 
   it('should check links', () => {
