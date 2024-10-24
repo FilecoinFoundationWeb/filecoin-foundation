@@ -8,5 +8,5 @@ header:
     ]
 seo:
   title: "GovHub | Participate in Filecoin Governance"
-  description: "GovHub is your gateway to participating in the governance of the Filecoin network, featuring tools like PowerVote for on-chain voting and Fil Poll for off-chain poling."
+  description: "GovHub is your gateway to participating in the governance of the Filecoin network, featuring tools like PowerVote for on-chain voting and Fil Poll for off-chain polling."
 ---
