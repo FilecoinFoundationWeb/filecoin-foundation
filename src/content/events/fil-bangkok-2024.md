@@ -26,8 +26,7 @@ schedule:
   days:
     - events:
         - title: Doors Open
-          description:
-            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -58,7 +57,7 @@ schedule:
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:32:00.000Z
           end: 2024-11-11T16:39:00.000Z
-        - title: "Closing Remarks"
+        - title: Closing Remarks
           description: "Speaker: Marta Belcher, Filecoin Foundation"
           start: 2024-11-11T16:48:00.000Z
           end: 2024-11-11T16:51:00.000Z
@@ -174,7 +173,7 @@ speakers:
     image:
       src: /assets/images/stefaan-vervaet-headshot.webp
   - name: Clara Tsao
-    title: Co-Founding Officer
+    title: Founding Officer
     company: Filecoin Foundation
     linkedin: https://www.linkedin.com/in/claratsao/
     image:
@@ -197,12 +196,12 @@ speakers:
     image:
       src: /assets/images/1718436285615.jpeg
     linkedin: https://www.linkedin.com/in/vitalii-yatskiv/
-  - name: "Marta Belcher"
+  - name: Marta Belcher
     linkedin: https://www.linkedin.com/in/martabelcher/
-    company: "Filecoin Foundation"
+    company: Filecoin Foundation
     image:
       src: /assets/headshots/Marta_Belcher.png
-    title: "President & Chair"
+    title: President & Chair
 sponsors:
   first-tier:
     - name: Boosty Labs
