@@ -17,7 +17,7 @@ import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
-import { NameSearchFilter } from './NameSearchFilter'
+import { SearchFilter } from './SearchFilter'
 
 type AllocatorsTableWithFiltersProps = {
   data: Array<Allocator>
@@ -53,7 +53,7 @@ export function AllocatorsTableWithFilters({
   return (
     <>
       <div className="mb-6 max-w-readable">
-        {nameColumn && <NameSearchFilter column={nameColumn} />}
+        {nameColumn && <SearchFilter column={nameColumn} />}
       </div>
 
       {hasSearchResults ? (

@@ -8,7 +8,7 @@ export type NameFilterProps = {
   column: Column<Allocator>
 }
 
-export function NameSearchFilter({ column }: NameFilterProps) {
+export function SearchFilter({ column }: NameFilterProps) {
   const columnFilterValue = column.getFilterValue()?.toString() || ''
 
   return (
