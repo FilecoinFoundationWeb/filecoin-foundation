@@ -24,13 +24,9 @@ const TwitterMetadataSchema = z
   .strict()
   .optional()
 
-const AbsoluteStringSchema = z.object({
-  absolute: z.string(),
-})
-
 export const SeoMetadataSchema = z
   .object({
-    title: z.union([z.string(), AbsoluteStringSchema]).optional(),
+    title: z.string(),
     description: z.string().max(seo_metadata_description_max_characters),
     image: z.string().optional(),
     'open-graph': OpenGraphMetadataSchema,
