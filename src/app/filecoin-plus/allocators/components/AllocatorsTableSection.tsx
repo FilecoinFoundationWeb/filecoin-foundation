@@ -2,18 +2,18 @@ import * as Sentry from '@sentry/nextjs'
 
 import { getAllocators } from '../utils/getAllocators'
 
-import { AllocatorsTable } from './AllocatorsTable'
-import { NoAllocatorsMessage } from './NoAllocatorsMessage'
+import { AllocatorsTableWithFilters } from './AllocatorsTableWithFilters'
+import { NoDataAvailableMessage } from './NoDataAvailableMessage'
 
 export async function AllocatorsTableSection() {
   try {
     const allocators = await getAllocators()
 
     if (!allocators.length) {
-      return <NoAllocatorsMessage />
+      return <NoDataAvailableMessage />
     }
 
-    return <AllocatorsTable allocators={allocators} />
+    return <AllocatorsTableWithFilters data={allocators} />
   } catch (error) {
     console.error('Error fetching or validating allocators:', error)
 
@@ -22,6 +22,6 @@ export async function AllocatorsTableSection() {
       extra: { message: 'Error fetching or validating allocators' },
     })
 
-    return <NoAllocatorsMessage />
+    return <NoDataAvailableMessage />
   }
 }

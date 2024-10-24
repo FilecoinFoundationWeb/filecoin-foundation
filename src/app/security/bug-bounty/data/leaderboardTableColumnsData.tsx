@@ -1,17 +1,12 @@
-'use client'
-
-import { GithubLogo, Globe, LinkedinLogo, XLogo } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
-import { Icon } from '@/components/Icon'
-
-import { leaderboardData } from '../data/leaderboard'
-
-type WhiteHat = (typeof leaderboardData)[number]
+import { SocialIconLink } from '../components/SocialIconLink'
+import type { WhiteHat } from '../types'
+import { getLogoFromLink } from '../utils/getLogoFromLink'
 
 const columnHelper = createColumnHelper<WhiteHat>()
 
-export const leaderboardTableData = [
+export const leaderboardTableColumnsData = [
   columnHelper.accessor('reporter', {
     id: 'rank',
     header: '#',
@@ -48,36 +43,15 @@ export const leaderboardTableData = [
         return null
       }
 
-      const Logo = getProfileLinkLogo(profileLink)
+      const logo = getLogoFromLink(profileLink)
 
       return (
-        <a
-          href={profileLink}
-          rel="noopener noreferrer"
-          className="inline-flex size-12 items-center justify-center focus:brand-outline"
-          aria-label={`Visit ${reporter}'s profile`}
-        >
-          <Icon component={Logo} size={20} />
-        </a>
+        <SocialIconLink
+          profileLink={profileLink}
+          reporter={reporter}
+          logo={logo}
+        />
       )
     },
   }),
 ]
-
-function getProfileLinkLogo(url: string) {
-  const { hostname } = new URL(url)
-
-  if (hostname.includes('linkedin.com')) {
-    return LinkedinLogo
-  }
-
-  if (hostname.includes('x.com') || hostname.includes('twitter.com')) {
-    return XLogo
-  }
-
-  if (hostname.includes('github.com')) {
-    return GithubLogo
-  }
-
-  return Globe
-}
