@@ -6,17 +6,17 @@ import {
   getSortedRowModel,
 } from '@tanstack/react-table'
 
+import { Table } from '@/components/Table/Table'
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
 import { leaderboardData } from '../data/leaderboard'
-
-import { leaderboardTableData } from './LeaderBoardTableColumns'
+import { leaderboardTableColumnsData } from '../data/leaderboardTableColumnsData'
 
 export function Leaderboard() {
   const table = useReactTable({
     data: leaderboardData,
-    columns: leaderboardTableData,
+    columns: leaderboardTableColumnsData,
     initialState: {
       sorting: [{ id: 'points', desc: true }],
     },
@@ -25,11 +25,9 @@ export function Leaderboard() {
   })
 
   return (
-    <div className="w-full overflow-x-auto">
-      <table className="w-full">
-        <TableHead headerGroups={table.getHeaderGroups()} />
-        <TableBody rowModel={table.getRowModel()} />
-      </table>
-    </div>
+    <Table>
+      <TableHead headerGroups={table.getHeaderGroups()} />
+      <TableBody rowModel={table.getRowModel()} />
+    </Table>
   )
 }

@@ -19,6 +19,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
+import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
 import { TextLink } from '@/components/TextLink'
@@ -47,6 +48,7 @@ export function generateMetadata({ params }: EcosystemProjectProps) {
 export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
+
   const categoryData = getCategoryDataFromDirectory(
     ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   )
@@ -69,6 +71,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
   return (
     <article>
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
+
       <header className="mb-8 space-y-10 md:space-y-16">
         <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
           <Image
@@ -88,6 +92,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             })}
           />
         </div>
+
         <div className="flex flex-wrap gap-2">
           <TagLabel borderColor="brand-100">{categoryData[category]}</TagLabel>
           {subcategories.map((subcategory, i) => (
@@ -95,7 +100,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           ))}
         </div>
       </header>
-      <div className="flex flex-wrap justify-between gap-8">
+
+      <div className="mb-16 flex flex-wrap justify-between gap-8">
         <div className="max-w-readable space-y-8">
           <div className="space-y-6">
             <Heading tag="h1" variant="4xl">
@@ -135,7 +141,11 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         </ul>
       </div>
 
-      <StructuredDataScript structuredData={generateStructuredData(data)} />
+      <ShareArticle
+        articleTitle={title}
+        path={`${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`}
+        sectionTitle="Share Project"
+      />
     </article>
   )
 }
