@@ -32,7 +32,7 @@ export function createMetadata({
         seo['open-graph']?.image || seo.image || graphicsData.home.data.src,
     },
     twitter: {
-      card: seo.twitter?.card || 'summary',
+      card: seo.twitter?.card,
       site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
       creator:
         seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
@@ -43,8 +43,8 @@ export function createMetadata({
 
   return {
     title: overrideDefaultTitle
-      ? { absolute: parsedEnrichedSEO.title }
-      : parsedEnrichedSEO.title,
+      ? { absolute: parsedEnrichedSEO.title as string }
+      : (parsedEnrichedSEO.title as string),
     description: parsedEnrichedSEO.description,
     openGraph: {
       title: parsedEnrichedSEO['open-graph']?.title,
@@ -52,7 +52,7 @@ export function createMetadata({
       images: parsedEnrichedSEO['open-graph']?.image,
     },
     twitter: {
-      card: parsedEnrichedSEO.twitter?.card,
+      card: parsedEnrichedSEO.twitter?.card ?? 'summary',
       site: parsedEnrichedSEO.twitter?.site,
       creator: parsedEnrichedSEO.twitter?.creator,
     },
