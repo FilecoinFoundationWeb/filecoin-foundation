@@ -154,7 +154,7 @@ twitter_config: &twitter_config
           value: "player"
       required: false
       default: "summary"
-      hint: "If left empty, the default value will be 'Summary Card'."
+      hint: "If left empty, the default value will be 'Summary Card.'"
     - name: "site"
       label: "Twitter Handle for Website"
       widget: "string"
@@ -166,7 +166,7 @@ twitter_config: &twitter_config
       required: false
       hint: "Enter the Twitter handle of the content creator (e.g., @juanbenet). Defaults to @FilFoundation."
 
-meta_optional_title_config: &meta_optional_title_config
+meta_config_with_title_fallback: &meta_config_with_title_fallback
   name: "seo"
   label: "SEO Metadata"
   widget: "object"
@@ -175,7 +175,7 @@ meta_optional_title_config: &meta_optional_title_config
       label: "Meta Title"
       widget: "string"
       required: false
-      hint: "If left empty, the page title will be used as the SEO title. For events, '- Event' will be appended, and for ecosystem projects, '- Ecosystem Project'. Examples: 'Acasia - Ecosystem Project', 'FIL Bangkok 2024 - Event'."
+      hint: "If left empty, the main entry title will automatically become the SEO title. '- Filecoin Event' will be added for events, and '- Ecosystem Project' for ecosystem projects. For example: 'Acasia - Filecoin Ecosystem Project' or 'FIL Bangkok 2024 - Filecoin Event'."
     - name: "description"
       label: "Meta Description"
       widget: "text"
@@ -184,6 +184,7 @@ meta_optional_title_config: &meta_optional_title_config
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - *open_graph_config
+    - *twitter_config
 
 meta_config: &meta_config
   name: "seo"
@@ -201,6 +202,7 @@ meta_config: &meta_config
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
     - *open_graph_config
+    - *twitter_config
 
 collections:
   - name: "pages"
@@ -439,7 +441,7 @@ collections:
         widget: "text"
       - *image_config
       - *body_config
-      - *meta_optional_title_config
+      - *meta_config_with_title_fallback
 
   - name: "digest_articles"
     label: "Digest Articles"
@@ -497,7 +499,7 @@ collections:
             widget: "string"
       - *body_config
       - *image_config
-      - *meta_optional_title_config
+      - *meta_config_with_title_fallback
 
   - name: "ecosystem_projects_categories"
     label: "Ecosystem Projects Categories"
@@ -629,7 +631,7 @@ collections:
         label: Long Description
         widget: markdown
         required: false
-      - *meta_optional_title_config
+      - *meta_config_with_title_fallback
 
   - name: "event_entries"
     label: "Events"
@@ -850,4 +852,4 @@ collections:
             label: Event Recap YouTube Playlist URL
             widget: string
             required: false
-      - *meta_optional_title_config
+      - *meta_config_with_title_fallback

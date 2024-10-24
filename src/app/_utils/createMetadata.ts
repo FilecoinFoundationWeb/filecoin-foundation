@@ -7,7 +7,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import {
   type SeoMetadata,
-  SeoMetadataSchema,
+  SeoMetadataSchemaWithOptionalTitle,
 } from '@/schemas/SeoMetadataSchema'
 
 type CreateMetadataProps = {
@@ -39,12 +39,13 @@ export function createMetadata({
     },
   }
 
-  const parsedEnrichedSEO = SeoMetadataSchema.parse(enrichedSEO)
+  const parsedEnrichedSEO =
+    SeoMetadataSchemaWithOptionalTitle.parse(enrichedSEO)
 
   return {
     title: overrideDefaultTitle
       ? { absolute: parsedEnrichedSEO.title as string }
-      : (parsedEnrichedSEO.title as string),
+      : parsedEnrichedSEO.title,
     description: parsedEnrichedSEO.description,
     openGraph: {
       title: parsedEnrichedSEO['open-graph']?.title,
@@ -52,7 +53,7 @@ export function createMetadata({
       images: parsedEnrichedSEO['open-graph']?.image,
     },
     twitter: {
-      card: parsedEnrichedSEO.twitter?.card ?? 'summary',
+      card: parsedEnrichedSEO.twitter?.card || 'summary',
       site: parsedEnrichedSEO.twitter?.site,
       creator: parsedEnrichedSEO.twitter?.creator,
     },

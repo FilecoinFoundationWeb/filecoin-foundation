@@ -27,7 +27,7 @@ export function generateMetadata({ params }: DigestArticleProps) {
   return createMetadata({
     seo: {
       ...data.seo,
-      title: data.title,
+      title: data.seo.title || data.title,
       image: data.image?.src || graphicsData.digest.data.src,
     },
     path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,

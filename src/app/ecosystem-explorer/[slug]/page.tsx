@@ -42,7 +42,7 @@ export function generateMetadata({ params }: EcosystemProjectProps) {
   return createMetadata({
     seo: {
       ...data.seo,
-      title: `${data.title} - Ecosystem Project`,
+      title: data.seo.title || `${data.title} - Filecoin Ecosystem Project`,
       image: graphicsData.ecosystem.data.src,
     },
     path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,

@@ -34,4 +34,14 @@ export const SeoMetadataSchema = z
   })
   .strict()
 
+export const SeoMetadataSchemaWithOptionalTitle = z
+  .object({
+    title: z.string().optional(),
+    description: z.string().max(seo_metadata_description_max_characters),
+    image: z.string().optional(),
+    'open-graph': OpenGraphMetadataSchema,
+    twitter: TwitterMetadataSchema,
+  })
+  .strict()
+
 export type SeoMetadata = z.infer<typeof SeoMetadataSchema>
