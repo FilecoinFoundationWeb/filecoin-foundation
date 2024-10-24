@@ -15,9 +15,11 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
+import { createOptionsFromData } from '../utils/createOptionsFromData'
 
 import { AllocatorsTable } from './AllocatorsTable'
 import { SearchFilter } from './SearchFilter'
+import { SelectFilter } from './SelectFilter'
 
 type AllocatorsTableWithFiltersProps = {
   data: Array<Allocator>
@@ -49,11 +51,17 @@ export function AllocatorsTableWithFilters({
   const hasSearchResults = Boolean(rowModel.rows.length)
 
   const nameColumn = getColumn('name')
+  const locationColumn = getColumn('location')
+
+  const locations = createOptionsFromData(data, 'location')
 
   return (
     <>
-      <div className="mb-6 max-w-readable">
+      <div className="mb-6 flex max-w-readable gap-4">
         {nameColumn && <SearchFilter column={nameColumn} />}
+        {locationColumn && (
+          <SelectFilter column={locationColumn} values={locations} />
+        )}
       </div>
 
       {hasSearchResults ? (
