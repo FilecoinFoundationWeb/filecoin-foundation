@@ -6,9 +6,9 @@ import { useRouter, usePathname } from 'next/navigation'
 
 import type { Route } from 'next'
 
-export const HASH_SIGN = '#'
+const HASH_SIGN = '#'
 
-export type SectionHash = `${typeof HASH_SIGN}${string}`
+type SectionHash = `${typeof HASH_SIGN}${string}`
 type NewHashEvent = HashChangeEvent | CustomEvent<SectionHash>
 
 export function useUrlHash() {
@@ -17,33 +17,30 @@ export function useUrlHash() {
 
   const [hash, setHash] = useState(getHashFromWindow)
 
-  function updateHash(sectionId: string) {
-    const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
-
-    if (sectionHash === hash) {
-      return
+  useEffect(() => {
+    if (windowIsAvailable()) {
+      window.addEventListener('hashchange', onHashChange)
+      return () => window.removeEventListener('hashchange', onHashChange)
     }
+  }, [])
 
-    const pathnameWithNewSectionHash = `${pathname}${sectionHash}`
-    router.replace(pathnameWithNewSectionHash as Route, { scroll: false })
+  function updateHash(sectionId: string) {
+    const sectionHash = getHashFromSlug(sectionId)
 
-    if (windowIsDefined()) {
-      window.dispatchEvent(
-        new CustomEvent('hashchange', { detail: sectionHash }),
-      )
+    if (sectionHash !== hash) {
+      router.replace(`${pathname}${sectionHash}` as Route, { scroll: false })
+      dispatchCustomHashChangeEvent(sectionHash)
     }
   }
 
   function clearHash() {
     router.replace(pathname as Route, { scroll: false })
-
-    if (windowIsDefined()) {
-      window.dispatchEvent(new CustomEvent('hashchange', { detail: HASH_SIGN }))
-    }
+    dispatchCustomHashChangeEvent(HASH_SIGN)
   }
 
   function clearHashIfPresent(sectionId: string) {
-    const sectionHash: SectionHash = `${HASH_SIGN}${sectionId}`
+    const sectionHash = getHashFromSlug(sectionId)
+
     if (sectionHash === hash) {
       clearHash()
     }
@@ -54,43 +51,45 @@ export function useUrlHash() {
     setHash(newHash)
   }
 
-  useEffect(() => {
-    if (windowIsDefined()) {
-      window.addEventListener('hashchange', onHashChange)
-      return () => window.removeEventListener('hashchange', onHashChange)
-    }
-  }, [])
+  function isSectionActive(sectionId: string) {
+    const sectionHash = getHashFromSlug(sectionId)
+    return sectionHash === hash
+  }
 
   return {
-    currentHash: hash,
     updateHash,
-    clearHashIfPresent,
     clearHash,
+    clearHashIfPresent,
+    isSectionActive,
+    getHashFromSlug,
+  }
+}
+
+function dispatchCustomHashChangeEvent(newHash: SectionHash) {
+  if (windowIsAvailable()) {
+    window.dispatchEvent(new CustomEvent('hashchange', { detail: newHash }))
   }
 }
 
 function getHashFromWindow() {
-  if (windowIsDefined()) {
-    const currentHash = window.location.hash
-
-    if (currentHash === '') {
-      return HASH_SIGN
-    }
-    return currentHash as SectionHash
-  }
-  return HASH_SIGN
+  return windowIsAvailable()
+    ? ((window.location.hash || HASH_SIGN) as SectionHash)
+    : HASH_SIGN
 }
 
 function getHashFromEvent(event: NewHashEvent) {
   if (event instanceof HashChangeEvent) {
     const slug = event.newURL.split(HASH_SIGN)[1]
-    if (!slug) return HASH_SIGN
-    return `${HASH_SIGN}${slug}` as SectionHash
+    return slug ? getHashFromSlug(slug) : HASH_SIGN
   }
 
   return event.detail
 }
 
-function windowIsDefined() {
+function getHashFromSlug(slug: string) {
+  return `${HASH_SIGN}${slug}` as SectionHash
+}
+
+function windowIsAvailable() {
   return typeof window !== 'undefined'
 }
