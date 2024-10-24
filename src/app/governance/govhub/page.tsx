@@ -27,6 +27,7 @@ export const metadata = createMetadata({
     image: graphicsData.governanceGovHub.data.src,
   },
   path: PATHS.GOVHUB.path,
+  overrideDefaultTitle: true,
 })
 
 export default function GovHub() {

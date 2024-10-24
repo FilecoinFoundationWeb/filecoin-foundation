@@ -74,7 +74,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
   return (
     <>
       <div className="lg:max-w-readable">
-        <Search query={searchQuery} id="search" />
+        <Search query={searchQuery} />
       </div>
 
       {paginatedResults.length === 0 ? (
