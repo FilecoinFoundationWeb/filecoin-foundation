@@ -1,12 +1,10 @@
 'use client'
 
-import { type SectionHash } from './useUrlHash'
-
-export function scrollToSection(sectionHash: SectionHash) {
-  const element = document.querySelector(sectionHash)
+export function scrollToSection(selector: string) {
+  const element = document.querySelector(selector)
 
   if (!element) {
-    console.error(`Element with hash ${sectionHash} does not exist`)
+    console.error(`Element with selector "${selector}" does not exist`)
   }
 
   element?.scrollIntoView({
