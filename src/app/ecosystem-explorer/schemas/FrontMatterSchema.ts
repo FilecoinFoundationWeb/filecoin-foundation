@@ -7,7 +7,7 @@ import { CategorySchema, SubcategorySchema } from './CategorySchemas'
 export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
-  subcategories: z.array(SubcategorySchema).optional(),
+  subcategories: z.array(SubcategorySchema),
   description: z.string(),
   tech: z.array(z.string()),
   website: z.string().url().optional(),
