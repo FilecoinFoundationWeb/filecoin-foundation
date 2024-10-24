@@ -4,6 +4,8 @@ import {
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
+import { findOrThrow } from '@/utils/findOrThrow'
+
 /** Shared items across desktop, mobile, and footer navigation */
 const sharedItems = {
   community: [
@@ -75,11 +77,13 @@ const sharedItems = {
   ],
 }
 
+const { getInvolved, community, resources, legal } = sharedItems
+
 export const desktopNavigationItems = {
-  careersItem: sharedItems.getInvolved[2],
-  communityItems: sharedItems.community,
+  careersItem: findOrThrow(getInvolved, (item) => item.label === 'Careers'),
+  communityItems: community,
   getInvolvedItems: [
-    ...sharedItems.getInvolved,
+    ...getInvolved,
     {
       label: 'Become a Storage Provider',
       href: 'https://destor.com/destor-network/overview',
@@ -97,28 +101,26 @@ export const desktopNavigationItems = {
     label: 'Learn more about Filecoin',
     href: FILECOIN_DOCS_URLS.site,
   },
-  resourcesItems: sharedItems.resources,
+  resourcesItems: resources,
 }
 
 /** Base navigation items for footer and mobile */
 const baseNavigationItems = {
-  'Get Involved': sharedItems.getInvolved.map(({ label, href }) => ({
+  'Get Involved': getInvolved.map(({ label, href }) => ({
     label,
     href,
   })),
-  Community: sharedItems.community.map(({ label, href }) => ({ label, href })),
-  Resources: sharedItems.resources.map(({ label, href }) => ({ label, href })),
+  Community: community.map(({ label, href }) => ({ label, href })),
+  Resources: resources.map(({ label, href }) => ({ label, href })),
 }
 
 export const footerNavigationItems = {
   Company: [
     { label: PATHS.ABOUT.label, href: PATHS.ABOUT.path },
-    {
-      ...FILECOIN_FOUNDATION_URLS.email,
-    },
+    { ...FILECOIN_FOUNDATION_URLS.email },
   ],
   ...baseNavigationItems,
-  Legal: sharedItems.legal,
+  Legal: legal,
 }
 
 export const mobileNavigationItems = {

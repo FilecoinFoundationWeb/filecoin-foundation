@@ -35,7 +35,7 @@ export function MainNavItem({
 
 export function getMainNavItemStyles({
   isActive,
-  isPopover = false,
+  isPopover,
 }: MainNavItemStylesOptions) {
   const baseStyles =
     'rounded-xl py-1.5 text-base focus:brand-outline hover:bg-brand-700'

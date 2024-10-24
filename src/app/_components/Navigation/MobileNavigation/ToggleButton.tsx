@@ -1,11 +1,11 @@
-import { Button } from '@headlessui/react'
+import { Button, type ButtonProps } from '@headlessui/react'
 
 import { Icon, type IconProps } from '@/components/Icon'
 
 type IconButtonProps = {
   icon: IconProps['component']
   label: string
-  onClick: React.ComponentPropsWithoutRef<'button'>['onClick']
+  onClick: ButtonProps['onClick']
 }
 
 export function ToggleButton({ icon, label, onClick }: IconButtonProps) {
