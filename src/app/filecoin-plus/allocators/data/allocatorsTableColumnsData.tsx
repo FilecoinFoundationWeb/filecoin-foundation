@@ -13,6 +13,7 @@ export const allocatorsTableColumnsData = [
       headerCellStyle: 'w-72 sm:w-80 lg:w-96',
       bodyCellStyle: 'truncate',
     },
+    filterFn: 'includesString',
   }),
   columnHelper.accessor('metapathway_type', {
     header: 'Type',
@@ -20,6 +21,7 @@ export const allocatorsTableColumnsData = [
     meta: {
       headerCellStyle: 'w-44',
     },
+    filterFn: 'includesString',
   }),
   columnHelper.accessor('location', {
     header: 'Region',
@@ -27,6 +29,7 @@ export const allocatorsTableColumnsData = [
     meta: {
       headerCellStyle: 'w-44',
     },
+    filterFn: 'includesString',
   }),
   columnHelper.accessor('application.required_replicas', {
     header: 'Required Replicas',
@@ -48,7 +51,6 @@ export const allocatorsTableColumnsData = [
       headerCellStyle: 'w-32',
       bodyCellStyle: 'text-brand-300',
     },
-    enableGlobalFilter: false,
     cell: (info) => {
       const link = info.getValue()
       const name = info.row.original.name
