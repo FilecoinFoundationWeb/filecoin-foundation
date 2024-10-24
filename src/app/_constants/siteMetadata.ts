@@ -32,6 +32,10 @@ const FILECOIN_FOUNDATION_URLS = {
     '2023': `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
     '2022': `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
   },
+  careers: {
+    href: 'https://careers.fil.org/jobs',
+    label: 'Careers',
+  },
   digest: {
     submitIdea: {
       label: 'Submit Idea',

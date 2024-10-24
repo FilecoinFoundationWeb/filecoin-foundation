@@ -1,4 +1,4 @@
-import { footerNavigationItems } from '@/constants/navigationItems'
+import { footerNavigationItems } from '@/constants/navigation'
 
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
@@ -38,8 +38,8 @@ export function Footer() {
             <span className="mb-4 block font-bold">{title}</span>
             <ul className="flex w-max flex-col gap-3">
               {items.map((item) => (
-                <li key={item.path}>
-                  <TextLink href={item.path}>{item.label}</TextLink>
+                <li key={item.href}>
+                  <TextLink href={item.href}>{item.label}</TextLink>
                 </li>
               ))}
             </ul>
