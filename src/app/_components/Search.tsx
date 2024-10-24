@@ -16,12 +16,11 @@ import { SearchInput } from '@/components/SearchInput'
 
 export type SearchProps = {
   query: ReturnType<typeof useSearch>['searchQuery']
-  id: 'mobile-search' | 'web-search' | 'search'
 }
 
 const DEBOUNCE_DELAY = 400
 
-export function Search({ query, id }: SearchProps) {
+export function Search({ query }: SearchProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
 
@@ -58,11 +57,5 @@ export function Search({ query, id }: SearchProps) {
     }
   }
 
-  return (
-    <SearchInput
-      id={id}
-      searchQuery={value || ''}
-      onSearchChange={handleSearchChange}
-    />
-  )
+  return <SearchInput query={value || ''} onChange={handleSearchChange} />
 }
