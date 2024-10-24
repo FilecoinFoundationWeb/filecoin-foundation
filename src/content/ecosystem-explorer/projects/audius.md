@@ -10,8 +10,6 @@ image:
 category: media-entertainment
 subcategories:
   - dapp
-tags:
-  - dapp
 description: Audius is a music and audio-sharing platform designed to provide
   artists with a direct link to their listeners.
 website: https://audius.co

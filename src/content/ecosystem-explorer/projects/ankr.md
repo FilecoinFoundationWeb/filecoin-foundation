@@ -8,8 +8,6 @@ image:
 category: tooling-productivity
 subcategories:
   - infrastructure
-tags:
-  - developer-tools
 description: Ankr x Filecoin RPC Integration
 website: https://www.ankr.com/
 tech:

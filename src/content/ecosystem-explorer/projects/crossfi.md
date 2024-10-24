@@ -10,9 +10,6 @@ image:
 category: finance
 subcategories:
   - wallets-identity-authentication
-tags:
-  - dapp
-  - governance-daos-public-goods
 description: CrossFi aims to democratize decentralized finance through the CrossFi platform.
 website: https://crossfimain.com/
 tech:

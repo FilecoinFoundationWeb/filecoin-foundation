@@ -10,8 +10,6 @@ image:
 category: public-goods-dweb
 subcategories:
   - governance-daos-public-goods
-tags:
-  - infrastructure
 description: "Force Community is a non-profit leading Web3 community."
 website: https://forcecommunity.io/
 tech:

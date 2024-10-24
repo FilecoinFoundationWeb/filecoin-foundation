@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - leasing
-tags:
-  - leasing-and-staking
 description: Filecoin’s first 100% smart contract managed storage node joint
   construction solution.
 website: https://filfi.io

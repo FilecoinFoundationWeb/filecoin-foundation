@@ -7,10 +7,6 @@ description:
   "EQTY Lab weaves together machine and human processes to establish new
   trust in AI."
 category: storage
-tags:
-  - ai-productivity-and-utilities
-  - data-storage-management
-  - governance-daos-public-goods
 tech:
   - filecoin
 image:

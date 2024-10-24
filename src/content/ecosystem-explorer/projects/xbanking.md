@@ -10,9 +10,6 @@ image:
 category: finance
 subcategories:
   - leasing
-tags:
-  - leasing-and-staking
-  - dapp
 description: Non-custodial staking & liquid pools provider. Liquid pool provider
   and market maker for FIL tokens.
 website: https://xbanking.org
@@ -26,4 +23,5 @@ seo:
   title: XBanking
   description: XBanking provides decentralized finance solutions for secure transactions.
 ---
+
 Non-custodial staking & liquid pools provider. Liquid pool provider and market maker for FIL tokens.

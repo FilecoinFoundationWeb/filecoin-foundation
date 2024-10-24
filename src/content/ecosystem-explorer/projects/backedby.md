@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - dapp
-tags:
-  - dapp
 description: Bankless, Decentralized, Privacy-First content subscription
   protocol for creators.
 website: https://backed.by/

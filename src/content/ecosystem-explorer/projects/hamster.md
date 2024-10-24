@@ -5,9 +5,6 @@ updated-on: 2024-03-29T21:43:26.916000Z
 published-on: 2024-03-29T21:43:26.916000Z
 description: "Developer Toolkit and Middleware for Filecoin"
 category: storage
-tags:
-  - ai-productivity-and-utilities
-  - developer-tools
 tech:
   - filecoin
 image:

@@ -7,9 +7,6 @@ description:
   "Quest Chains is a protocol, an SDK, and a platform that allows users
   to create and complete quests."
 category: tooling-productivity
-tags:
-  - ai-productivity-and-utilities
-  - arts-collectibles
 tech:
   - filecoin
 image:

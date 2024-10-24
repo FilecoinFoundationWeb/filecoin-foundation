@@ -5,8 +5,6 @@ updated-on: 2024-01-05T21:37:04.956000Z
 published-on: 2024-01-11T13:26:59.787000Z
 description: "Fluence is a decentralized serverless computing platform."
 category: tooling-productivity
-tags:
-  - developer-tools
 tech:
   - filecoin
   - ipfs

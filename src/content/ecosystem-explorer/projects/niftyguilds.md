@@ -5,9 +5,6 @@ updated-on: 2024-03-29T21:47:03.349000Z
 published-on: 2024-03-29T21:47:03.349000Z
 description: "A web3 based NFT gated group chat platform with blockchain level security."
 category: media-entertainment
-tags:
-  - communication-social
-  - nfts
 tech:
   - ipfs
 image:

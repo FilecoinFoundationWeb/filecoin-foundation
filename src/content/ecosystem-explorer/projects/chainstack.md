@@ -7,9 +7,6 @@ description:
   "Chainstack offers managed blockchain services making it simple to launch
   and scale decentralized networks and applications."
 category: tooling-productivity
-tags:
-  - dapp
-  - infrastructure
 tech:
   - filecoin
 image:

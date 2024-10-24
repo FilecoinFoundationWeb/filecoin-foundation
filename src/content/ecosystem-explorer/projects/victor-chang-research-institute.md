@@ -8,8 +8,6 @@ description:
   Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share
   research data."
 category: education-academia-health
-tags:
-  - health
 tech:
   - filecoin
   - ipfs

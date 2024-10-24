@@ -5,8 +5,6 @@ updated-on: 2024-04-05T00:15:15.152000Z
 published-on: 2024-04-05T00:15:15.159000Z
 description: "It is a complete storage solution for Filecoin network"
 category: storage
-tags:
-  - data-storage-management
 tech:
   - filecoin
 image:

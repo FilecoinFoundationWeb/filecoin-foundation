@@ -10,8 +10,6 @@ image:
 category: tooling-productivity
 subcategories:
   - dapp
-tags:
-  - dapp
 description: 3Pad is a trustless web3 platform that provides users with an
   WYSIWYG link page for building and managing their online presence by deploying
   their own Dapp.
@@ -21,9 +19,11 @@ tech:
 repo: https://github.com/3Pad
 year-joined: 2024-04-05T17:29:47.737Z
 seo:
-  title: Transition to Web3 Effortlessly with 3Pad - Secure, Decentralized Landing
+  title:
+    Transition to Web3 Effortlessly with 3Pad - Secure, Decentralized Landing
     Pages
-  description: Seamlessly engage your audience with 3Pad's decentralized platform.
+  description:
+    Seamlessly engage your audience with 3Pad's decentralized platform.
     Experience web3 with secure IPFS hosting, passwordless NFT logins, and
     real-time communication—all on one page.
 ---

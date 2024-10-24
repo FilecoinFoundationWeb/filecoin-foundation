@@ -8,9 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - data-storage-management
-  - privacy-security
 description: Protects user privacy and data sovereignty with client-side
   encryption and decentralized storage.
 website: https://ghostdrive.com/

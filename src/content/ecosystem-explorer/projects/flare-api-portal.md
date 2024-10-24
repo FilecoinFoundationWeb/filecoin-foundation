@@ -8,11 +8,6 @@ image:
 category: tooling-productivity
 subcategories:
   - developer-tools
-tags:
-  - developer-tools
-  - infrastructure
-  - network-tools
-  - storage-infrastructure
 description: The API Portal from Flare Labs serving the Flare Networks community
   with Web3 APIs from all of Flare's chains, explorers, connected chains, and
   more.

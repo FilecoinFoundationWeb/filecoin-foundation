@@ -8,10 +8,6 @@ full-name: encrypted::U2FsdGVkX1+PFWmxy/RHYoVHRWtsR9aKcPaNeUMJ6NU=
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - dapp
-  - storage-services
-  - data-storage-management
 description: Catalyst is an innovative app that revolutionizes the way you store
   and manage your photos and videos.
 website: https://the-freaking-catalyst.vercel.app

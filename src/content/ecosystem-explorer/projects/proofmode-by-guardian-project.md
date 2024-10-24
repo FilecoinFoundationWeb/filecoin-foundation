@@ -7,9 +7,6 @@ description:
   "Open-source mobile camera app, toolkit and protocol that adds verifiable
   digital proof to photos and video at the point of capture."
 category: storage
-tags:
-  - photo-video
-  - dapp
 tech:
   - filecoin
   - ipfs

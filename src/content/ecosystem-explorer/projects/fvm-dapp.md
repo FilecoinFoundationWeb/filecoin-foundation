@@ -7,9 +7,6 @@ description:
   "A full-stack starter template with React & Hardhat to develop, deploy,
   and test Solidity smart contracts on the FEVM network."
 category: tooling-productivity
-tags:
-  - dapp
-  - developer-tools
 tech:
   - filecoin
 image:

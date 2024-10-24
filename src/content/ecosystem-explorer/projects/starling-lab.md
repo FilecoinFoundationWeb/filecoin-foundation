@@ -8,9 +8,6 @@ description:
   cryptographic methods and decentralized web protocols to meet the technical and
   ethical challenges of establishing trust in our most sensitive digital records."
 category: storage
-tags:
-  - dweb
-  - social-impact
 tech:
   - filecoin
   - ipfs

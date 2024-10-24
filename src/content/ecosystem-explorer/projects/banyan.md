@@ -8,10 +8,6 @@ description:
   for enterprise clients on the Filecoin network, with a focus on user-controlled
   privacy and verifiability."
 category: storage
-tags:
-  - data-storage-management
-  - enterprise
-  - storage-software
 tech:
   - filecoin
   - ipfs

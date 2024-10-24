@@ -10,8 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - data-storage-management
 description: "Unleash the power of your data with Kabat! We deliver next-level decentralized storage and compute solutions, giving your business the speed, security, and scalability it deserves. It’s time to take charge of the cloud."
 website: https://kabat-cloud.com/
 tech:

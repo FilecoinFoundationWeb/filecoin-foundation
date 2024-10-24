@@ -8,9 +8,6 @@ image:
 category: tooling-productivity
 subcategories:
   - infrastructure
-tags:
-  - bridges-oracles
-  - data-retrieval
 description: ENS support for Filecoin
 website: https://ens.domains/
 tech:

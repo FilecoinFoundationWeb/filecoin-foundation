@@ -10,8 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - data-storage-management
 description: DataHaus is a decentralized data economy, built on Filecoin, which
   provides a reliable web3 data foundation.
 website: https://datahaus.vercel.app/

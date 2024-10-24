@@ -7,8 +7,6 @@ description:
   "Titan Storage, a market-leading decentralized, secure, and efficient
   storage solution."
 category: storage
-tags:
-  - depin
 tech:
   - filecoin
 image:

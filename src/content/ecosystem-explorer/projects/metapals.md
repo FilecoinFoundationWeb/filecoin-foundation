@@ -8,8 +8,6 @@ description:
   about reshaping how we perceive and interact with AI. By focusing on emotional resonance,
   MetaPals is fostering a new era of digital companionship."
 category: media-entertainment
-tags:
-  - ai-productivity-and-utilities
 tech:
   - ipfs
 image:

@@ -7,10 +7,6 @@ description:
   "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates
   with the Filecoin ecosystem, focusing on DePIN."
 category: tooling-productivity
-tags:
-  - depin
-  - infrastructure
-  - storage-infrastructure
 tech:
   - filecoin
 image:

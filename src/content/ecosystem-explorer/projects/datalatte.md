@@ -7,8 +7,6 @@ description:
   "Compute-over-data pipelines for survey storage systems using knowledge
   graphs"
 category: storage
-tags:
-  - ai-productivity-and-utilities
 tech:
   - filecoin
 image:

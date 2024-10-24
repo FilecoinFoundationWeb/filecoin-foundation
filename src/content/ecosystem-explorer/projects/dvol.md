@@ -8,8 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - dweb
 description: Innovative Tokenized Structured Products for On-chain Assets
 website: https://www.dvol.finance/
 tech:

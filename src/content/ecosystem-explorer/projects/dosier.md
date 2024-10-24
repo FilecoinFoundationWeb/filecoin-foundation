@@ -8,8 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - governance-daos-public-goods
 description: Decentralized ZK Content Delivery Network
 website: https://dosier.ai/
 tech:

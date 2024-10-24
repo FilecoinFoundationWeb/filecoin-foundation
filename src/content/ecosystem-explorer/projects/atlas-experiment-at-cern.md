@@ -8,8 +8,6 @@ description:
   a pilot project to explore decentralized cloud storage as an efficient and cost-effective
   option for archival data storage."
 category: science-climate-space
-tags:
-  - desci
 tech:
   - filecoin
   - ipfs
