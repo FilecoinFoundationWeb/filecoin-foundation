@@ -93,8 +93,3 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
     </TabGroup>
   )
 }
-
-function isScreenBelowLg() {
-  return window.matchMedia(`(max-width: ${parseInt(screens.md, 10) - 1}px)`)
-    .matches
-}

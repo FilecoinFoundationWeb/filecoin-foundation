@@ -17,16 +17,16 @@ type ExcludedHeadlessUIProps =
   | 'invalid'
 
 export type FormFileInputProps = {
-  files: Array<File> | null
+  file: File | null
   accept: Array<`.${string}`>
   maxSize: number
   description?: string | React.ReactNode
-  onChange: (files: Array<File> | null) => void
+  onChange: (file: File | null) => void
 } & Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
   FormFieldProps
 
 export function FormFileInput({
-  files,
+  file,
   label,
   hideLabel,
   error,
@@ -37,26 +37,21 @@ export function FormFileInput({
   accept,
   ...rest
 }: FormFileInputProps) {
-  const loadedFile = files?.[0]
-
   function resetFiles() {
     onChange(null)
   }
 
   function loadFiles(e: React.ChangeEvent<HTMLInputElement>) {
     const files = e.target.files
-
-    if (files) {
-      onChange(Array.from(files))
-    }
+    onChange(files ? files[0] : null)
   }
 
   return (
     <FormField label={label} hideLabel={hideLabel} error={error}>
       <div>
         <div className="group relative h-60 w-full md:h-52">
-          {loadedFile ? (
-            <SelectedFile file={loadedFile} onReset={resetFiles} />
+          {file ? (
+            <SelectedFile file={file} onReset={resetFiles} />
           ) : (
             <>
               <Input
