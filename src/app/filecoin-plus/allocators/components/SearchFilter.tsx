@@ -12,9 +12,6 @@ export function SearchFilter({ column }: NameFilterProps) {
   const columnFilterValue = column.getFilterValue()?.toString() || ''
 
   return (
-    <SearchInput
-      query={columnFilterValue}
-      onChange={(value) => column.setFilterValue(value)}
-    />
+    <SearchInput query={columnFilterValue} onChange={column.setFilterValue} />
   )
 }
