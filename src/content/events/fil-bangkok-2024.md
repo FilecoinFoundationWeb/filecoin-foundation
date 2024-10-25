@@ -209,7 +209,7 @@ speakers:
     image:
       src: /assets/images/headshot-anjali-george.webp
   - name: Megan Klimen
-    title: Founding Officer
+    title: Founding Oficer
     company: Filecoin Foundation
     linkedin: https://www.linkedin.com/in/megan-klimen/
     image:
