@@ -26,8 +26,14 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
     `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
   )
 
-  const validDays = schedule.days
+  const sortedValidDays = schedule.days
     .filter((day) => day.events.length > 0)
+    .map((day) => ({
+      ...day,
+      events: day.events.sort(
+        (a, b) => new Date(a.start).getTime() - new Date(b.start).getTime(),
+      ),
+    }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
 
   function scrollToTabGroup() {
@@ -46,7 +52,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
       onChange={scrollToTabGroup}
     >
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
-        {validDays.map((day) => (
+        {sortedValidDays.map((day) => (
           <Tab
             key={formatDate(day.date)}
             className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-[hover]:bg-brand-700 data-[selected]:bg-brand-700 data-[selected]:text-brand-400"
@@ -56,7 +62,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
         ))}
       </TabList>
       <TabPanels>
-        {validDays.map((day) => (
+        {sortedValidDays.map((day) => (
           <TabPanel
             key={formatDate(day.date)}
             className="rounded-lg focus:brand-outline"
