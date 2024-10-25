@@ -1,4 +1,5 @@
 import { UTCDate } from '@date-fns/utc'
+import { compareAsc } from 'date-fns'
 
 import type { Event } from '../../types/eventType'
 
@@ -11,16 +12,16 @@ export function filterAndSortScheduleDays(
     const daysWithEventsSortedByTime = daysWithEvents.map((day) => ({
       ...day,
       events: day.events.sort((a, b) => {
-        const startA = new UTCDate(a.start).getTime()
-        const startB = new UTCDate(b.start).getTime()
-        return startA - startB
+        const startA = new UTCDate(a.start)
+        const startB = new UTCDate(b.start)
+        return compareAsc(startA, startB)
       }),
     }))
 
     const sortedDays = daysWithEventsSortedByTime.sort((a, b) => {
-      const dateA = new UTCDate(a.date).getTime()
-      const dateB = new UTCDate(b.date).getTime()
-      return dateA - dateB
+      const dateA = new UTCDate(a.date)
+      const dateB = new UTCDate(b.date)
+      return compareAsc(dateA, dateB)
     })
 
     return sortedDays
