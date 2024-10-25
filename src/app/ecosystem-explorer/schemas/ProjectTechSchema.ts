@@ -17,6 +17,6 @@ const ecosystemFields = ecosystemCollection.fields as Array<CMSFieldConfig>
 const techField = findOrThrow(ecosystemFields, (field) => field.name === 'tech')
 const options = techField.options as unknown as Array<string>
 
-const OptionValueSchema = createCategorySchema(options)
+const TechOptionEnum = createCategorySchema(options)
 
-export const ProjectTechSchema = z.array(OptionValueSchema).nonempty()
+export const ProjectTechSchema = z.array(TechOptionEnum).nonempty()
