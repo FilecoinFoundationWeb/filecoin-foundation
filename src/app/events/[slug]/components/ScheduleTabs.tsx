@@ -12,6 +12,7 @@ import { TextLink } from '@/components/TextLink'
 
 import type { Event } from '../../types/eventType'
 import { formatDate, formatTime } from '../utils/dateUtils'
+import { getSortedValidDays } from '../utils/getSortedValidayDats'
 
 type ScheduleTabsProps = {
   schedule: NonNullable<Event['schedule']>
@@ -26,15 +27,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
     `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
   )
 
-  const sortedValidDays = schedule.days
-    .filter((day) => day.events.length > 0)
-    .map((day) => ({
-      ...day,
-      events: day.events.sort(
-        (a, b) => new Date(a.start).getTime() - new Date(b.start).getTime(),
-      ),
-    }))
-    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+  const sortedValidDays = getSortedValidDays(schedule)
 
   function scrollToTabGroup() {
     if (isMounted() && isScreenBelowLg && tabGroupRef.current) {
@@ -98,9 +91,4 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
       </TabPanels>
     </TabGroup>
   )
-}
-
-function isScreenBelowLg() {
-  return window.matchMedia(`(max-width: ${parseInt(screens.md, 10) - 1}px)`)
-    .matches
 }
