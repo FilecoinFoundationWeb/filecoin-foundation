@@ -12,7 +12,7 @@ import { TextLink } from '@/components/TextLink'
 
 import type { Event } from '../../types/eventType'
 import { formatDate, formatTime } from '../utils/dateUtils'
-import { getSortedValidDays } from '../utils/getSortedValidayDats'
+import { filterAndSortScheduleDays } from '../utils/filterAndSortScheduleDays'
 
 type ScheduleTabsProps = {
   schedule: NonNullable<Event['schedule']>
@@ -21,13 +21,13 @@ type ScheduleTabsProps = {
 const { screens } = theme
 
 export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
+  const sortedDays = filterAndSortScheduleDays(schedule)
+
   const tabGroupRef = useRef<HTMLDivElement>(null)
   const isMounted = useIsMounted()
   const isScreenBelowLg = useMediaQuery(
     `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
   )
-
-  const sortedValidDays = getSortedValidDays(schedule)
 
   function scrollToTabGroup() {
     if (isMounted() && isScreenBelowLg && tabGroupRef.current) {
@@ -45,7 +45,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
       onChange={scrollToTabGroup}
     >
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
-        {sortedValidDays.map((day) => (
+        {sortedDays.map((day) => (
           <Tab
             key={formatDate(day.date)}
             className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-[hover]:bg-brand-700 data-[selected]:bg-brand-700 data-[selected]:text-brand-400"
@@ -55,7 +55,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
         ))}
       </TabList>
       <TabPanels>
-        {sortedValidDays.map((day) => (
+        {sortedDays.map((day) => (
           <TabPanel
             key={formatDate(day.date)}
             className="rounded-lg focus:brand-outline"
