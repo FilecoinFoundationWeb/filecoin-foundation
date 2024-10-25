@@ -172,6 +172,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/stefaan-vervaet/
     image:
       src: /assets/images/stefaan-vervaet-headshot.webp
+  - name: Marta Belcher
+    linkedin: https://www.linkedin.com/in/martabelcher/
+    company: Filecoin Foundation
+    image:
+      src: /assets/headshots/Marta_Belcher.png
+    title: President & Chair
   - name: Clara Tsao
     title: Founding Officer
     company: Filecoin Foundation
@@ -196,12 +202,12 @@ speakers:
     image:
       src: /assets/images/1718436285615.jpeg
     linkedin: https://www.linkedin.com/in/vitalii-yatskiv/
-  - name: Marta Belcher
-    linkedin: https://www.linkedin.com/in/martabelcher/
-    company: Filecoin Foundation
+  - name: Anjali George
+    title: CMO
+    company: Theoriq
+    linkedin: https://www.linkedin.com/in/anjaliegeorge/
     image:
-      src: /assets/headshots/Marta_Belcher.png
-    title: President & Chair
+      src: /assets/images/headshot-anjali-george.webp
 sponsors:
   first-tier:
     - name: Boosty Labs
