@@ -208,6 +208,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/anjaliegeorge/
     image:
       src: /assets/images/headshot-anjali-george.webp
+  - name: Megan Klimen
+    title: Founding Officer
+    company: Filecoin Foundation
+    linkedin: https://www.linkedin.com/in/megan-klimen/
+    image:
+      src: /assets/images/megan_klimen.webp
 sponsors:
   first-tier:
     - name: Boosty Labs
