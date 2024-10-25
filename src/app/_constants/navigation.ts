@@ -4,10 +4,12 @@ import {
   FILECOIN_FOUNDATION_URLS,
 } from '@/constants/siteMetadata'
 
-import { findOrThrow } from '@/utils/findOrThrow'
-
 /** Shared items across desktop, mobile, and footer navigation */
 const sharedItems = {
+  careersItem: {
+    ...FILECOIN_FOUNDATION_URLS.careers,
+    description: 'Explore open opportunities across the Filecoin ecosystem',
+  },
   community: [
     {
       label: PATHS.ECOSYSTEM_EXPLORER.label,
@@ -50,10 +52,6 @@ const sharedItems = {
       description:
         'Information on funding opportunities supporting projects that contribute to the growth of the Filecoin Network',
     },
-    {
-      ...FILECOIN_FOUNDATION_URLS.careers,
-      description: 'Explore open opportunities across the Filecoin ecosystem',
-    },
   ],
   resources: [
     {
@@ -77,10 +75,10 @@ const sharedItems = {
   ],
 }
 
-const { getInvolved, community, resources, legal } = sharedItems
+const { careersItem, getInvolved, community, resources, legal } = sharedItems
 
 export const desktopNavigationItems = {
-  careersItem: findOrThrow(getInvolved, (item) => item.label === 'Careers'),
+  careersItem,
   communityItems: community,
   getInvolvedItems: [
     ...getInvolved,
@@ -106,10 +104,15 @@ export const desktopNavigationItems = {
 
 /** Base navigation items for footer and mobile */
 const baseNavigationItems = {
-  'Get Involved': getInvolved.map(({ label, href }) => ({
-    label,
-    href,
-  })),
+  'Get Involved': [
+    ...getInvolved.map(({ label, href }) => ({
+      label,
+      href,
+    })),
+    {
+      ...careersItem,
+    },
+  ],
   Community: community.map(({ label, href }) => ({ label, href })),
   Resources: resources.map(({ label, href }) => ({ label, href })),
 }
