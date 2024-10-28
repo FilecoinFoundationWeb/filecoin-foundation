@@ -116,7 +116,8 @@ schedule:
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description:
+            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -159,7 +160,8 @@ schedule:
           location: "Samyan Mitrtown: Main Hall"
         - location: "Samyan Mitrtown: Main Hall"
           title: "Filecoin Nexus: Decentralized Tools for Environmental Change"
-          description: "Participants: Megan Klimen, Filecoin Foundation; Vitalii Yatskiv,
+          description:
+            "Participants: Megan Klimen, Filecoin Foundation; Vitalii Yatskiv,
             Boosty Labs; Alan Ransil, Devonian; and David Dao, GainForest"
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
@@ -218,7 +220,7 @@ speakers:
     company: GainForest.Earth
     linkedin: https://www.linkedin.com/in/dwddao/
     image:
-      src: /assets/images/david_dao_headshot.png
+      src: /assets/images/david_dao_headshot.webp
 sponsors:
   first-tier:
     - name: Boosty Labs
