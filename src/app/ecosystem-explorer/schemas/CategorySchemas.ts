@@ -4,15 +4,15 @@ import {
 } from '@/constants/paths'
 
 import {
-  createCategorySchema,
   getCategoryDataFromDirectory,
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
+import { createEnumSchema } from '@/utils/zodUtils'
 
 function createSchemaForDirectory(directoryPath: string) {
   const categoryData = getCategoryDataFromDirectory(directoryPath)
   const { validCategoryIds } = getCategorySettingsFromMap(categoryData)
-  return createCategorySchema(validCategoryIds)
+  return createEnumSchema(validCategoryIds)
 }
 
 export const CategorySchema = createSchemaForDirectory(

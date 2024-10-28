@@ -1,17 +1,15 @@
 import { z } from 'zod'
 
-import { createCategorySchema } from '@/utils/categoryUtils'
 import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { createEnumSchema } from '@/utils/zodUtils'
 
 const ecosystemConfig = getCollectionConfig('ecosystem_projects')
 
-const ecosystemFields = ecosystemConfig.fields
-
 const techOptions = getCMSFieldOptions(
-  ecosystemFields,
+  ecosystemConfig.fields,
   'tech',
 ) as unknown as Array<string>
 
-const TechOptionEnum = createCategorySchema(techOptions)
+const TechEnumSchema = createEnumSchema(techOptions)
 
-export const ProjectTechSchema = z.array(TechOptionEnum).nonempty()
+export const ProjectTechSchema = z.array(TechEnumSchema).nonempty()

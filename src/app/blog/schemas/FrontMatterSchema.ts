@@ -1,19 +1,17 @@
 import { z } from 'zod'
 
-import {
-  createCategorySchema,
-  getCategorySettings,
-} from '@/utils/categoryUtils'
+import { getCategorySettings } from '@/utils/categoryUtils'
+import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 const { validCategoryIds } = getCategorySettings('blog_posts')
 
-const categorySchema = createCategorySchema(validCategoryIds)
+const CategoryEnumSchema = createEnumSchema(validCategoryIds)
 
 export const BlogPostFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
-  category: categorySchema,
+  category: CategoryEnumSchema,
   description: z.string(),
   content: z.string(),
 }).strict()
