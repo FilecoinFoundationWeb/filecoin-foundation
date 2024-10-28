@@ -7,11 +7,11 @@ import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 const { validCategoryIds } = getCategorySettings('blog_posts')
 
-const CategoryEnumSchema = createEnumSchema(validCategoryIds)
+const CategorySchema = createEnumSchema(validCategoryIds)
 
 export const BlogPostFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
-  category: CategoryEnumSchema,
+  category: CategorySchema,
   description: z.string(),
   content: z.string(),
 }).strict()

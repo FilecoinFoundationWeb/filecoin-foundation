@@ -10,6 +10,6 @@ const techOptions = getCMSFieldOptions(
   'tech',
 ) as unknown as Array<string>
 
-const TechEnumSchema = createEnumSchema(techOptions)
+const TechSchema = createEnumSchema(techOptions)
 
-export const ProjectTechSchema = z.array(TechEnumSchema).nonempty()
+export const ProjectTechSchema = z.array(TechSchema).nonempty()

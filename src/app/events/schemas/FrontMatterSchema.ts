@@ -11,11 +11,11 @@ import { SponsorsSchema } from './SponsorSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 
-const CategoryEnumSchema = createEnumSchema(validCategoryIds)
+const CategorySchema = createEnumSchema(validCategoryIds)
 
 export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
-  category: CategoryEnumSchema,
+  category: CategorySchema,
   description: z.string().optional(),
   location: z.string(),
   'external-link': z
