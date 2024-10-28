@@ -1,22 +1,17 @@
 import { z } from 'zod'
 
-import type { CMSFieldConfig } from '@/types/cmsConfig'
-
-import configJson from '@/data/cmsConfigSchema.json'
-
 import { createCategorySchema } from '@/utils/categoryUtils'
-import { findOrThrow } from '@/utils/findOrThrow'
+import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
 
-const ecosystemCollection = findOrThrow(
-  configJson.collections,
-  (collection) => collection.name === 'ecosystem_projects',
-)
+const ecosystemConfig = getCollectionConfig('ecosystem_projects')
 
-const ecosystemFields = ecosystemCollection.fields as Array<CMSFieldConfig>
+const ecosystemFields = ecosystemConfig.fields
 
-const techField = findOrThrow(ecosystemFields, (field) => field.name === 'tech')
-const options = techField.options as unknown as Array<string>
+const techOptions = getCMSFieldOptions(
+  ecosystemFields,
+  'tech',
+) as unknown as Array<string>
 
-const TechOptionEnum = createCategorySchema(options)
+const TechOptionEnum = createCategorySchema(techOptions)
 
 export const ProjectTechSchema = z.array(TechOptionEnum).nonempty()
