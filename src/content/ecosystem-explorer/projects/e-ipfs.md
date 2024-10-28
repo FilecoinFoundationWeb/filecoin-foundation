@@ -5,9 +5,6 @@ updated-on: 2024-04-05T00:10:47.096000Z
 published-on: 2024-04-05T00:10:47.104000Z
 description: "Hybrid IPFS service"
 category: storage
-tags:
-  - enterprise
-  - data-storage-management
 tech:
   - ipfs
   - filecoin

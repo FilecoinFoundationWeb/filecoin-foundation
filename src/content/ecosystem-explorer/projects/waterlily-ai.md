@@ -8,9 +8,6 @@ description:
   to distribute their work while addressing the pain point of compensation when their
   art is used in AI training models."
 category: artificial-intelligence
-tags:
-  - ai-productivity-and-utilities
-  - arts-collectibles
 tech:
   - filecoin
   - ipfs

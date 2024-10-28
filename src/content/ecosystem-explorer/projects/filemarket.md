@@ -7,12 +7,6 @@ description:
   "Decentralized P2P file-sharing protocol & platform for storing, transferring,
   and trading digital goods."
 category: finance
-tags:
-  - data-curation-monetization
-  - photo-video
-  - depin
-  - data-storage-management
-  - public-data
 tech:
   - filecoin
   - ipfs

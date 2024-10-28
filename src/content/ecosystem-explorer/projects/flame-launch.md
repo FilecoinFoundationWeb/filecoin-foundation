@@ -5,8 +5,6 @@ updated-on: 2024-01-18T17:27:13.436000Z
 published-on: 2024-01-18T17:27:13.451000Z
 description: "Empowered Filecoin ecosystem launchpad based on FVM."
 category: finance
-tags:
-  - infrastructure
 tech:
   - filecoin
 image:

@@ -10,8 +10,6 @@ image:
 category: network
 subcategories:
   - network-tools
-tags:
-  - network-tools
 description: Filecoin Foundation facilitates governance of the Filecoin network
   and supports the growth of the Filecoin ecosystem and community.
 website: https://fil.org

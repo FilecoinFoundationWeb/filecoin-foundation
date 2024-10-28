@@ -8,11 +8,6 @@ description:
   efficient, secure, and cost-effective decentralized solutions, tooling and resources
   that can help your projects stand out in a competitive marketplace."
 category: tooling-productivity
-tags:
-  - data-retrieval
-  - data-prep
-  - data-storage-management
-  - developer-tools
 image:
   src: /assets/images/65974d743ddd7ef7851595fe_titan-svg2.png
 tech:

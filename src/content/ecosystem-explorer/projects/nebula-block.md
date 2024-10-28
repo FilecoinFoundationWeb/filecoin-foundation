@@ -7,13 +7,6 @@ description:
   "Web3 infrastructure provider, renowned for offering comprehensive Web3
   hosting solutions worldwide."
 category: storage
-tags:
-  - data-storage-management
-  - gpus
-  - storage-software
-  - storage-infrastructure
-  - storage-provider
-  - storage-services
 tech:
   - filecoin
 image:

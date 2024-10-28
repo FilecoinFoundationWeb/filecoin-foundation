@@ -10,9 +10,6 @@ description:
   bots, or backends for arbitrary computations using external APIs with baked-in auto-scaling
   and fault tolerance."
 category: tooling-productivity
-tags:
-  - ai-productivity-and-utilities
-  - infrastructure
 tech:
   - ipfs
 image:

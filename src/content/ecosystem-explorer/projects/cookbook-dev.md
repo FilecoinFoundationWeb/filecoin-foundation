@@ -7,8 +7,6 @@ description:
   "A platform to find smart contracts, solidity libraries, and discover
   protocols."
 category: tooling-productivity
-tags:
-  - developer-tools
 tech:
   - filecoin
 image:

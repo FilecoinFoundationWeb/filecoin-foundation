@@ -10,8 +10,6 @@ image:
 category: storage
 subcategories:
   - data-retrieval
-tags:
-  - dapp
 description: Astral is building tools to enable the location-based decentralized web.
 website: https://astral.global/
 tech:

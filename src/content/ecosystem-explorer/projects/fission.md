@@ -7,8 +7,6 @@ description:
   "Fission is building the identity, data, and compute protocols for the
   future of the Internet."
 category: storage
-tags:
-  - developer-tools
 tech:
   - filecoin
   - ipfs

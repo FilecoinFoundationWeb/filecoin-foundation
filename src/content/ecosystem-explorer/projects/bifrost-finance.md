@@ -10,8 +10,6 @@ image:
 category: finance
 subcategories:
   - leasing
-tags:
-  - leasing-and-staking
 description: Bifrost is a modular, scalable, non-custodial omnichain liquid
   staking parachain based on Polkadot.
 website: https://bifrost.finance/

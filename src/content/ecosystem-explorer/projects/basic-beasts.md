@@ -8,8 +8,6 @@ image:
 category: media-entertainment
 subcategories:
   - arts-collectibles-nfts
-tags:
-  - gaming
 description: A fully on-chain interactive Pokémon-inspired NFT collectibles game.
 website: https://www.basicbeasts.io/
 tech:

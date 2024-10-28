@@ -7,8 +7,6 @@ description:
   "A product and service company developing hardware-accelerated cryptography
   for verifiable and confidential computing."
 category: storage
-tags:
-  - storage-infrastructure
 tech:
   - filecoin
   - ipfs

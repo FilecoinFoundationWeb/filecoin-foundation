@@ -8,8 +8,6 @@ description:
   Filecoin mainnets. This will increase the existing partnership that has already
   been established between both chains."
 category: storage
-tags:
-  - network-tools
 tech:
   - filecoin
 image:

@@ -10,9 +10,6 @@ image:
 category: tooling-productivity
 subcategories:
   - developer-tools
-tags:
-  - data-retrieval
-  - depin
 description: Filecoin Station is a desktop app that securely connects your
   computer's idle resource to the Filecoin network by completing jobs on behalf
   of the network.

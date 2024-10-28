@@ -5,8 +5,6 @@ updated-on: 2024-03-29T21:49:49.078000Z
 published-on: 2024-03-29T21:49:49.078000Z
 description: "A Decentralized Oracle Protocol"
 category: tooling-productivity
-tags:
-  - data-storage-management
 tech:
   - filecoin
 image:

@@ -8,10 +8,6 @@ full-name: encrypted::U2FsdGVkX189dE98kDV2rGebkogRlBBjDDWCfXR3swA=
 category: tooling-productivity
 subcategories:
   - developer-tools
-tags:
-  - arts-collectibles
-  - nfts
-  - developer-tools
 description: Cavalry is 2D animation software for Mac and Windows.
 website: https://cavalry.scenegroup.co
 tech:

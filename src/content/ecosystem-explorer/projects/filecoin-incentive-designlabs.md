@@ -7,12 +7,6 @@ description:
   "Incentivizes (good) behavior on Filecoin. We provide tooling and compliance
   services."
 category: tooling-productivity
-tags:
-  - data-curation-monetization
-  - data-prep
-  - developer-tools
-  - data-storage-management
-  - network-tools
 tech:
   - filecoin
 image:

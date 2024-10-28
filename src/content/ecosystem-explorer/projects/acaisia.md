@@ -10,10 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - enterprise
-  - gpus
-  - sealing
 description: By leveraging decentralized technologies, Acaisia offers
   affordable, secure, and transparent computing and storage options.
 website: https://acaisia.com

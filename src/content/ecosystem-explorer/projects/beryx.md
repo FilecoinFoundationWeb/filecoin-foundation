@@ -10,8 +10,6 @@ image:
 category: tooling-productivity
 subcategories:
   - wallets-identity-authentication
-tags:
-  - network-tools
 description: Beryx indexes and exposes via a public API Filecoin historical and
   real-time data.
 website: https://beryx.io/

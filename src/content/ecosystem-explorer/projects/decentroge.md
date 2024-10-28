@@ -8,8 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - data-storage-management
 description: Decentroge is a decentralized online storage platform with NFT and
   chatting capabilities.
 website: https://decentroge.netlify.app/

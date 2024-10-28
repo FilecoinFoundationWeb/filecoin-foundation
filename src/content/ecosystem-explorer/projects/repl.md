@@ -8,10 +8,6 @@ description:
   to enhance the efficiency of pledged FIL, remove idiosyncratic risks among Filecoin
   storage providers, and lower the complexity for people to earn Filecoin rewards."
 category: storage
-tags:
-  - dapp
-  - infrastructure
-  - leasing-and-staking
 tech:
   - filecoin
 image:

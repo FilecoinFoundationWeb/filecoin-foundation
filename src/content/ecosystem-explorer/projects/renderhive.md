@@ -10,8 +10,6 @@ image:
 category: media-entertainment
 subcategories:
   - photo-video
-tags:
-  - developer-tools
 description: Renderhive is going to be the first fully decentralized render farm
   for Blender built on Web3 technologies.
 website: https://www.renderhive.io/

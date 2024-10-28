@@ -7,9 +7,6 @@ description:
   "Numbers Protocol is an open and decentralized network designed to ensure
   provenance for creative works created by humans and AI."
 category: "tooling-productivity"
-tags:
-  - "photo-video"
-  - "ai-productivity-and-utilities"
 tech:
   - "filecoin"
   - "ipfs"

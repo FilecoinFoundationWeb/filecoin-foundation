@@ -10,8 +10,6 @@ image:
 category: science-climate-space
 subcategories:
   - climate
-tags:
-  - climate
 description: "Filecoin Green measures the environmental impacts of Filecoin with
   the goal to verifiably drive impacts below zero."
 website: https://green.filecoin.io

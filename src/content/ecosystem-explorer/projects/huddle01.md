@@ -10,8 +10,6 @@ image:
 category: media-entertainment
 subcategories:
   - photo-video
-tags:
-  - photo-video
 description: Built on top of Filecoin, Huddle01 is a decentralized, real-time
   communication network with live audio and video software development kit
   (SDK).
