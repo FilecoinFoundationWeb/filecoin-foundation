@@ -13,14 +13,14 @@ import { Icon } from '@/components/Icon'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
 
-type SortOption = {
+type FilterOption = {
   id: string
   name: string
 }
 
 type SortListboxProps = {
   column: Column<Allocator>
-  options: ReadonlyArray<SortOption>
+  options: ReadonlyArray<FilterOption>
   resetOptionName: string
 }
 
@@ -34,7 +34,7 @@ export function SelectFilter({
   const currentFilterValue =
     column.getFilterValue()?.toString() || EMPTY_FILTER_VALUE
 
-  const resetOption: SortOption = {
+  const resetOption: FilterOption = {
     id: EMPTY_FILTER_VALUE,
     name: resetOptionName,
   }
