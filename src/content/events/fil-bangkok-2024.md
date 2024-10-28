@@ -229,7 +229,7 @@ sponsors:
       website: https://boostylabs.com
       image:
         src: /assets/images/boosty-logo.webp
-    - name: LIGHTHOUSE
+    - name: Lighthouse
       website: https://x.com/lighthouseweb3
       image:
         src: /assets/images/lighthouselogo-1-.svg
