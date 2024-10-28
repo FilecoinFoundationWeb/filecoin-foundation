@@ -15,7 +15,7 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
-import { extractUniqueValues } from '../utils/extractUniqueValues'
+import { createUniqueOptionsFromData } from '../utils/createUniqueOptionsFromData'
 
 import { AllocatorsTable } from './AllocatorsTable'
 import { AllocatorsTableFiltersLayout } from './AllocatorsTableFiltersLayout'
@@ -57,8 +57,8 @@ export function AllocatorsTableWithFilters({
     throw new Error('Missing table columns in AllocatorsTableWithFilters')
   }
 
-  const locationOptions = extractUniqueValues(data, 'location')
-  const typeOptions = extractUniqueValues(data, 'metapathway_type')
+  const locationOptions = createUniqueOptionsFromData(data, 'location')
+  const typeOptions = createUniqueOptionsFromData(data, 'metapathway_type')
 
   const hasSearchResults = Boolean(rowModel.rows.length)
 

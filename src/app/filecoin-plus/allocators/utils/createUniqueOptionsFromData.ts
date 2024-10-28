@@ -2,7 +2,7 @@ import type { Allocator } from '../schemas/AllocatorSchema'
 
 type AllocatorStringValues = Omit<Allocator, 'application'>
 
-export function extractUniqueValues(
+export function createUniqueOptionsFromData(
   data: Array<Allocator>,
   key: keyof AllocatorStringValues,
 ) {
