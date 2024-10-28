@@ -21,36 +21,33 @@ type FilterOption = {
 type SortListboxProps = {
   column: Column<Allocator>
   options: ReadonlyArray<FilterOption>
-  resetOptionName: string
+  defaultOptionLabel: string
 }
 
-const EMPTY_FILTER_VALUE = ''
+const DEFAULT_FILTER_ID = ''
+const RESET_FILTER_VALUE = undefined
 
 export function SelectFilter({
   column,
   options,
-  resetOptionName,
+  defaultOptionLabel,
 }: SortListboxProps) {
-  const currentFilterValue =
-    column.getFilterValue()?.toString() || EMPTY_FILTER_VALUE
+  const currentFilterId = column.getFilterValue()
 
-  const resetOption: FilterOption = {
-    id: EMPTY_FILTER_VALUE,
-    name: resetOptionName,
+  const defaultOption: FilterOption = {
+    id: DEFAULT_FILTER_ID,
+    name: defaultOptionLabel,
   }
 
-  const allOptions = [resetOption, ...options]
+  const allOptions = [defaultOption, ...options]
 
-  const currentOption =
-    allOptions.find((option) => option.id === currentFilterValue) || resetOption
+  const selectedOption =
+    allOptions.find((option) => option.id === currentFilterId) || defaultOption
 
   return (
-    <HeadlessUIListbox
-      value={currentOption}
-      onChange={(newOption) => column.setFilterValue(newOption.id)}
-    >
+    <HeadlessUIListbox value={selectedOption} onChange={handleOptionChange}>
       <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
-        <span>{currentOption.name}</span>
+        <span>{selectedOption.name}</span>
         <Icon component={CaretDown} size={16} weight="bold" />
       </HeadlessUIListboxButton>
 
@@ -75,4 +72,11 @@ export function SelectFilter({
       </HeadlessUIListboxOptions>
     </HeadlessUIListbox>
   )
+
+  function handleOptionChange(newOption: FilterOption) {
+    if (newOption.id === DEFAULT_FILTER_ID) {
+      column.setFilterValue(RESET_FILTER_VALUE)
+    }
+    column.setFilterValue(newOption.id)
+  }
 }

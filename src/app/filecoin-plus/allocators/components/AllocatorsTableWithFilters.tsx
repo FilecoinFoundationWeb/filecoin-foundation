@@ -68,14 +68,14 @@ export function AllocatorsTableWithFilters({
           <SelectFilter
             column={typeColumn}
             options={typeOptions}
-            resetOptionName="All Types"
+            defaultOptionLabel="All Types"
           />
         }
         locationFilter={
           <SelectFilter
             column={locationColumn}
             options={locationOptions}
-            resetOptionName="All Regions"
+            defaultOptionLabel="All Regions"
           />
         }
       />
