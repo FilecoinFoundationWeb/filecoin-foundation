@@ -16,6 +16,7 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
 import { createUniqueOptionsFromData } from '../utils/createUniqueOptionsFromData'
+import { getColumnOrThrow } from '../utils/getColumnOrThrow'
 
 import { AllocatorsTable } from './AllocatorsTable'
 import { AllocatorsTableFiltersLayout } from './AllocatorsTableFiltersLayout'
@@ -45,17 +46,14 @@ export function AllocatorsTableWithFilters({
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
   })
-  const { getRowModel, getHeaderGroups, getColumn } = table
+  const { getRowModel, getHeaderGroups } = table
 
   const rowModel = getRowModel()
   const headerGroups = getHeaderGroups()
-  const nameColumn = getColumn('name')
-  const locationColumn = getColumn('location')
-  const typeColumn = getColumn('metapathway_type')
 
-  if (!nameColumn || !locationColumn || !typeColumn) {
-    throw new Error('Missing table columns in AllocatorsTableWithFilters')
-  }
+  const nameColumn = getColumnOrThrow(table, 'name')
+  const locationColumn = getColumnOrThrow(table, 'location')
+  const typeColumn = getColumnOrThrow(table, 'metapathway_type')
 
   const locationOptions = createUniqueOptionsFromData(data, 'location')
   const typeOptions = createUniqueOptionsFromData(data, 'metapathway_type')
@@ -65,7 +63,7 @@ export function AllocatorsTableWithFilters({
   return (
     <>
       <AllocatorsTableFiltersLayout
-        nameSearch={nameColumn && <SearchFilter column={nameColumn} />}
+        nameSearch={<SearchFilter column={nameColumn} />}
         typeFilter={
           <SelectFilter
             column={typeColumn}
