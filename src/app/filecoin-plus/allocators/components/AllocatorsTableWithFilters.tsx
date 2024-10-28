@@ -62,23 +62,25 @@ export function AllocatorsTableWithFilters({
 
   return (
     <>
-      <AllocatorsTableFiltersLayout
-        nameSearch={<SearchFilter column={nameColumn} />}
-        typeFilter={
-          <SelectFilter
-            column={typeColumn}
-            options={typeOptions}
-            defaultOptionLabel="All Types"
-          />
-        }
-        locationFilter={
-          <SelectFilter
-            column={locationColumn}
-            options={locationOptions}
-            defaultOptionLabel="All Regions"
-          />
-        }
-      />
+      <div className="mb-6">
+        <AllocatorsTableFiltersLayout
+          nameSearch={<SearchFilter column={nameColumn} />}
+          typeFilter={
+            <SelectFilter
+              column={typeColumn}
+              options={typeOptions}
+              defaultOptionLabel="All Types"
+            />
+          }
+          locationFilter={
+            <SelectFilter
+              column={locationColumn}
+              options={locationOptions}
+              defaultOptionLabel="All Regions"
+            />
+          }
+        />
+      </div>
 
       {hasSearchResults ? (
         <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />

@@ -12,7 +12,7 @@ export function AllocatorsTableFiltersLayout({
   locationFilter,
 }: AllocatorsTableFiltersLayoutProps) {
   return (
-    <div className="mb-6 flex flex-col gap-4 sm:flex-row">
+    <div className="flex flex-col gap-4 sm:flex-row">
       <div className="w-full">{nameSearch}</div>
 
       <div className="flex shrink-0 grow gap-4">
