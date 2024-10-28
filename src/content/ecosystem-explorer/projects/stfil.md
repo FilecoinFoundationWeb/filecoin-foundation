@@ -8,7 +8,7 @@ description:
   and leveraged mining protocol launched on the Filecoin Virtual Machine (FVM). We
   aim to build the most decentralized staking ecosystem."
 category: finance
-tags:
+subcategories:
   - dapp
 tech:
   - filecoin

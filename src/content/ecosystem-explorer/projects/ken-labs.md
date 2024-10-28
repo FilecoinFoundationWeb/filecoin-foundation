@@ -8,8 +8,6 @@ image:
 category: tooling-productivity
 subcategories:
   - infrastructure
-tags:
-  - developer-tools
 description: "Building a New Economy: Data, AI, and Web3."
 website: https://kenlabs.io/
 tech:

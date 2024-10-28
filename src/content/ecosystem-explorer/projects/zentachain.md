@@ -10,12 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - ai-productivity-and-utilities
-  - bridges-oracles
-  - dweb
-  - depin
-  - data-storage-management
 description: Privacy-focused IoT blockchain networking project that is focused
   on communication and data storage.
 website: https://zentachain.io/

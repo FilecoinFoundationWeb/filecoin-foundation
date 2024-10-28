@@ -8,9 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - communication-social
-  - dapp
 description: Decentralized content sharing platform on Solana, integrating both
   Solana and Filecoin on-chain IPFS technology.
 website: https://sm.network

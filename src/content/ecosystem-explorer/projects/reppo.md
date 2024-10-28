@@ -8,9 +8,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - ai-productivity-and-utilities
-  - depin
 description: Building a sovereign AI modelling network to address DePIN
   verification and broadly assess the quality of crypto networks.
 website: https://reppo.xyz/

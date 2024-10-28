@@ -8,8 +8,6 @@ image:
 category: tooling-productivity
 subcategories:
   - wallets-identity-authentication
-tags:
-  - developer-tools
 description: Allows you to find a chain of social proof from a trusted community
   to a dataset.
 website: https://liquicert.io/

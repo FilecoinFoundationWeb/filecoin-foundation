@@ -7,10 +7,6 @@ description:
   "Livepeer is an open video infrastructure network for live and on-demand
   streaming."
 category: "media-entertainment"
-tags:
-  - "photo-video"
-  - "communication-social"
-  - "depin"
 tech:
   - "filecoin"
   - "ipfs"

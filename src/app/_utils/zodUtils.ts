@@ -1,13 +1,13 @@
-import type { ZodError } from 'zod'
+import { z, type ZodError } from 'zod'
 
 import { capitalize } from '@/utils/capitalize'
 
-type Config = {
+type LogConfig = {
   location?: string
   context?: Record<string, string>
 }
 
-export function logZodError(zodError: ZodError, config: Config = {}) {
+export function logZodError(zodError: ZodError, config: LogConfig = {}) {
   const { location, context } = config
 
   const errorTitle = createErrorTitle(location)
@@ -20,6 +20,17 @@ export function logZodError(zodError: ZodError, config: Config = {}) {
   }
 
   console.error('------')
+}
+
+export function createEnumSchema(list: Array<string>) {
+  if (list.length === 0) {
+    return z.never()
+  } else if (list.length === 1) {
+    return z.literal(list[0])
+  } else {
+    const [first, ...rest] = list
+    return z.enum([first, ...rest])
+  }
 }
 
 function createErrorTitle(location?: string) {

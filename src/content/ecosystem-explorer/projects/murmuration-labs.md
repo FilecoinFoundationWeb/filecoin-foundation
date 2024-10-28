@@ -5,8 +5,6 @@ updated-on: 2024-03-29T21:46:18.273000Z
 published-on: 2024-03-29T21:46:18.273000Z
 description: "Content moderation tools for blockchain applications."
 category: storage
-tags:
-  - dweb
 tech:
   - filecoin
 image:

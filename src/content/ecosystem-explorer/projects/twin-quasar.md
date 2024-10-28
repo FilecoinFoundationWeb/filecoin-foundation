@@ -10,9 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - storage-infrastructure
-  - climate
 description: Twin Quasar provides infrastructure and open-source tooling for
   Filecoin storage providers.
 website: https://www.twinquasar.io/
@@ -22,7 +19,8 @@ tech:
 featured-content: https://fil.org/blog/storage-spotlight-how-twin-quasar-and-celeste-are-bringing-green-data-hosting-to-european-data-storage-clients/
 seo:
   title: Twin Quasar
-  description: Twin Quasar offers decentralized storage solutions for data hosting
+  description:
+    Twin Quasar offers decentralized storage solutions for data hosting
     and management.
 ---
 

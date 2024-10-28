@@ -5,8 +5,6 @@ updated-on: 2024-03-29T21:45:06.750000Z
 published-on: 2024-03-29T21:45:06.750000Z
 description: "The world's first Decentralized Email Service"
 category: tooling-productivity
-tags:
-  - dapp
 tech:
   - filecoin
 image:

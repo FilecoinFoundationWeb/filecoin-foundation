@@ -32,7 +32,6 @@ image:
   ${renderValue('src', data.imagePath)}
 ${renderValue('category', data.category)}
 ${renderArray('subcategories', data.subcategories)}
-${renderArray('tags', data.subcategories)}
 ${renderValue('description', data.shortDescription)}
 ${renderValue('website', data.websiteUrl)}
 ${renderArray('tech', data.tech)}

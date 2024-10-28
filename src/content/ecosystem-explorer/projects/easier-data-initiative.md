@@ -7,10 +7,6 @@ description:
   "Develops decentralized infrastructure for onloading and extracting large
   amounts of geospatial data."
 category: storage
-tags:
-  - universities
-  - space
-  - data-storage-management
 tech:
   - filecoin
 image:

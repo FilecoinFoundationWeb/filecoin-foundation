@@ -7,8 +7,6 @@ description:
   "A new intermediation business for Depin that will start with a focus
   on Filecoin"
 category: storage
-tags:
-  - storage-infrastructure
 tech:
   - filecoin
 image:

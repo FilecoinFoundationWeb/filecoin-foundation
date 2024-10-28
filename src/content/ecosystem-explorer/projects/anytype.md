@@ -10,8 +10,6 @@ image:
 category: tooling-productivity
 subcategories:
   - dapp
-tags:
-  - dapp
 description: Private, local-first, P2P computing no-code dapp to compose
   beautifully. Available on Mac, Windows, Linux, iOS & Android.
 website: https://anytype.io/
@@ -22,7 +20,8 @@ year-joined: 2024-04-05T17:13:02.017Z
 seo:
   title: "Anytype: Private Hub for Data with Privacy-First Architecture and IPFS
     Storage"
-  description: Protect your data with Anytype, a private hub for docs, tasks, and
+  description:
+    Protect your data with Anytype, a private hub for docs, tasks, and
     more. Create dashboards and knowledge graphs with privacy across devices
     using a private IPFS network.
 ---

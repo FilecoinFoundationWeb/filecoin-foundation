@@ -10,8 +10,6 @@ image:
 category: media-entertainment
 subcategories:
   - arts-collectibles-nfts
-tags:
-  - glam
 description: Artifact Labs preserves and connects culture and history on the blockchain.
 website: https://www.artifactlabs.com
 tech:

@@ -10,8 +10,6 @@ image:
 category: science-climate-space
 subcategories:
   - decentralized-science
-tags:
-  - climate
 description: Chemotronix leverages Filecoin for decentralized data storage.
 website: https://chemotronix.org/s
 tech:

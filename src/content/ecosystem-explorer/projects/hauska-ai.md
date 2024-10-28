@@ -7,8 +7,6 @@ description:
   "Leads in revolutionizing home design and remodeling with AI and Web3
   tech"
 category: artificial-intelligence
-tags:
-  - ai-productivity-and-utilities
 tech:
   - filecoin
   - ipfs

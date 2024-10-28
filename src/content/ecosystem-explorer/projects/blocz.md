@@ -10,9 +10,6 @@ image:
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - data-storage-management
-  - storage-infrastructure
 description: 5G, edge, private cloud, cloud backup, disaster recovery, cloud
   migrations, and complex secure data storage solutions.
 website: https://www.blocz.io/

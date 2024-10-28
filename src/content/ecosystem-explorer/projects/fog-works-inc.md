@@ -5,13 +5,6 @@ updated-on: 2024-03-04T19:44:10.420000Z
 published-on: 2024-03-04T19:44:10.434000Z
 description: "Leading web3 company in decentralized data storage."
 category: tooling-productivity
-tags:
-  - depin
-  - storage-software
-  - dapp
-  - data-storage-management
-  - storage-infrastructure
-  - nfts
 tech:
   - ipfs
   - filecoin

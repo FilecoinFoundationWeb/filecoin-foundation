@@ -10,8 +10,6 @@ image:
 category: tooling-productivity
 subcategories:
   - developer-tools
-tags:
-  - developer-tools
 description: "OKcontract is as an interaction layer between the user interface
   and the smart contracts."
 website: https://okcontract.com/

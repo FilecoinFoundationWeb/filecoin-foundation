@@ -5,9 +5,6 @@ updated-on: 2024-01-05T21:37:56.613Z
 published-on: 2024-01-11T13:26:59.787Z
 description: "NFT.Storage offers decentralized storage of NFT data on IPFS and Filecoin."
 category: "storage"
-tags:
-  - "nfts"
-  - "storage-infrastructure"
 tech:
   - "filecoin"
   - "ipfs"

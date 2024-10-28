@@ -1,9 +1,7 @@
 import { z } from 'zod'
 
-import {
-  createCategorySchema,
-  getEventsCategorySettings,
-} from '@/utils/categoryUtils'
+import { getEventsCategorySettings } from '@/utils/categoryUtils'
+import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
@@ -13,11 +11,11 @@ import { SponsorsSchema } from './SponsorSchema'
 
 const { validCategoryIds } = getEventsCategorySettings()
 
-const categorySchema = createCategorySchema(validCategoryIds)
+const CategorySchema = createEnumSchema(validCategoryIds)
 
 export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
-  category: categorySchema,
+  category: CategorySchema,
   description: z.string().optional(),
   location: z.string(),
   'external-link': z

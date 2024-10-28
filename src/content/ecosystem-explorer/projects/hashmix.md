@@ -5,8 +5,8 @@ updated-on: 2024-03-29T21:29:46.580000Z
 published-on: 2024-03-29T21:29:46.580000Z
 description: "FIL Liquid Staking"
 category: finance
-tags:
-  - leasing-and-staking
+subcategories:
+  - leasing
 tech:
   - filecoin
 image:

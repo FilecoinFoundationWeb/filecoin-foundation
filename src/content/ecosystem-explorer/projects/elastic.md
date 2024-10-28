@@ -7,9 +7,6 @@ description:
   "Elastic is an NFT Renting Marketplace where listers can highlight the
   benefits gained from renting their NFT."
 category: storage
-tags:
-  - arts-collectibles
-  - data-retrieval
 tech:
   - ipfs
 website: https://elastic-nft-renting-protocol.netlify.app/
