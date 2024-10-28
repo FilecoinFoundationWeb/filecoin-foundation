@@ -15,13 +15,9 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
-import { generateSortedOptions } from '../utils/generateSortedOptions'
-import { getColumnOrThrow } from '../utils/getColumnOrThrow'
 
 import { AllocatorsTable } from './AllocatorsTable'
-import { AllocatorsTableFiltersLayout } from './AllocatorsTableFiltersLayout'
-import { SearchFilter } from './SearchFilter'
-import { SelectFilter } from './SelectFilter'
+import { AllocatorsTableFilters } from './AllocatorsTableFilters'
 
 type AllocatorsTableWithFiltersProps = {
   data: Array<Allocator>
@@ -51,35 +47,12 @@ export function AllocatorsTableWithFilters({
   const rowModel = getRowModel()
   const headerGroups = getHeaderGroups()
 
-  const nameColumn = getColumnOrThrow(table, 'name')
-  const locationColumn = getColumnOrThrow(table, 'location')
-  const typeColumn = getColumnOrThrow(table, 'metapathway_type')
-
-  const locationOptions = generateSortedOptions(data, 'location')
-  const typeOptions = generateSortedOptions(data, 'metapathway_type')
-
   const hasSearchResults = Boolean(rowModel.rows.length)
 
   return (
     <>
       <div className="mb-6">
-        <AllocatorsTableFiltersLayout
-          nameSearch={<SearchFilter column={nameColumn} />}
-          typeFilter={
-            <SelectFilter
-              column={typeColumn}
-              options={typeOptions}
-              defaultOptionLabel="All Types"
-            />
-          }
-          locationFilter={
-            <SelectFilter
-              column={locationColumn}
-              options={locationOptions}
-              defaultOptionLabel="All Regions"
-            />
-          }
-        />
+        <AllocatorsTableFilters table={table} />
       </div>
 
       {hasSearchResults ? (
