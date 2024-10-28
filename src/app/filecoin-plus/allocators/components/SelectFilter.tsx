@@ -18,20 +18,19 @@ type FilterOption = {
   name: string
 }
 
-type SortListboxProps = {
+type SelectFilterProps = {
   column: Column<Allocator>
   options: ReadonlyArray<FilterOption>
   defaultOptionLabel: string
 }
 
 const DEFAULT_FILTER_ID = ''
-const RESET_FILTER_VALUE = undefined
 
 export function SelectFilter({
   column,
   options,
   defaultOptionLabel,
-}: SortListboxProps) {
+}: SelectFilterProps) {
   const currentFilterId = column.getFilterValue()
 
   const defaultOption: FilterOption = {
@@ -75,8 +74,12 @@ export function SelectFilter({
 
   function handleOptionChange(newOption: FilterOption) {
     if (newOption.id === DEFAULT_FILTER_ID) {
-      column.setFilterValue(RESET_FILTER_VALUE)
+      resetFilter()
     }
     column.setFilterValue(newOption.id)
+  }
+
+  function resetFilter() {
+    column.setFilterValue(undefined)
   }
 }
