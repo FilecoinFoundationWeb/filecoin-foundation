@@ -16,8 +16,8 @@ export function AllocatorsTableFiltersLayout({
       <div className="w-full">{nameSearch}</div>
 
       <div className="flex shrink-0 grow gap-4">
-        <div className="grow md:w-44 lg:w-48">{typeFilter}</div>
-        <div className="grow md:w-44 lg:w-48">{locationFilter}</div>
+        <div className="w-1/2 sm:w-40 md:w-44 lg:w-56">{typeFilter}</div>
+        <div className="w-1/2 sm:w-40 md:w-44 lg:w-56">{locationFilter}</div>
       </div>
     </div>
   )
