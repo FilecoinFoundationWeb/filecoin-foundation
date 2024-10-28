@@ -15,7 +15,7 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
-import { createUniqueOptionsFromData } from '../utils/createUniqueOptionsFromData'
+import { generateSortedOptions } from '../utils/generateSortedOptions'
 import { getColumnOrThrow } from '../utils/getColumnOrThrow'
 
 import { AllocatorsTable } from './AllocatorsTable'
@@ -55,8 +55,8 @@ export function AllocatorsTableWithFilters({
   const locationColumn = getColumnOrThrow(table, 'location')
   const typeColumn = getColumnOrThrow(table, 'metapathway_type')
 
-  const locationOptions = createUniqueOptionsFromData(data, 'location')
-  const typeOptions = createUniqueOptionsFromData(data, 'metapathway_type')
+  const locationOptions = generateSortedOptions(data, 'location')
+  const typeOptions = generateSortedOptions(data, 'metapathway_type')
 
   const hasSearchResults = Boolean(rowModel.rows.length)
 
