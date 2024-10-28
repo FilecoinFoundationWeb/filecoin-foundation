@@ -223,14 +223,18 @@ speakers:
       src: /assets/images/david_dao_headshot.webp
 sponsors:
   first-tier:
-    - name: Boosty Labs
-      website: https://boostylabs.com
-      image:
-        src: /assets/images/boosty-logo.webp
     - name: ZETACUBE
       website: https://www.zetacube.net/
       image:
         src: /assets/images/zetacube_logo_white2-1-.webp
+    - name: Boosty Labs
+      website: https://boostylabs.com
+      image:
+        src: /assets/images/boosty-logo.webp
+    - name: Lighthouse
+      website: https://x.com/lighthouseweb3
+      image:
+        src: /assets/images/lighthouse-logo.svg
 seo:
   title: FIL Bangkok 2024
   description: Join the Filecoin Community in Bangkok for discussions on
