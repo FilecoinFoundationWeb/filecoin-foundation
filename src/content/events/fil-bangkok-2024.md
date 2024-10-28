@@ -213,6 +213,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/megan-klimen/
     image:
       src: /assets/images/megan_klimen.webp
+  - name: David Dao
+    title: Co-Founder & Chief Scientist
+    company: GainForest.Earth
+    linkedin: https://www.linkedin.com/in/dwddao/
+    image:
+      src: /assets/images/david_dao_headshot.png
 sponsors:
   first-tier:
     - name: Boosty Labs
