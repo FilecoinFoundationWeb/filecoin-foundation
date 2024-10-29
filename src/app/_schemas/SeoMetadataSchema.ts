@@ -34,7 +34,7 @@ export const SeoMetadataSchema = z
   })
   .strict()
 
-export const SeoMetadataSchemaWithOptionalTitle = z
+export const SeoMetadataWithOptionalTitleSchema = z
   .object({
     title: z.string().optional(),
     description: z.string().max(seo_metadata_description_max_characters),

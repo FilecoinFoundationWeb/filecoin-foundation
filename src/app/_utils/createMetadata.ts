@@ -7,7 +7,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import {
   type SeoMetadata,
-  SeoMetadataSchemaWithOptionalTitle,
+  SeoMetadataWithOptionalTitleSchema,
 } from '@/schemas/SeoMetadataSchema'
 
 type CreateMetadataProps = {
@@ -33,14 +33,13 @@ export function createMetadata({
     },
     twitter: {
       card: seo.twitter?.card,
-      site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
-      creator:
-        seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+      site: seo.twitter?.site,
+      creator: seo.twitter?.creator,
     },
   }
 
   const parsedEnrichedSEO =
-    SeoMetadataSchemaWithOptionalTitle.parse(enrichedSEO)
+    SeoMetadataWithOptionalTitleSchema.parse(enrichedSEO)
 
   return {
     title: overrideDefaultTitle
@@ -54,8 +53,12 @@ export function createMetadata({
     },
     twitter: {
       card: parsedEnrichedSEO.twitter?.card || 'summary',
-      site: parsedEnrichedSEO.twitter?.site,
-      creator: parsedEnrichedSEO.twitter?.creator,
+      site:
+        parsedEnrichedSEO.twitter?.site ||
+        FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+      creator:
+        parsedEnrichedSEO.twitter?.creator ||
+        FILECOIN_FOUNDATION_URLS.social.twitter.handle,
     },
     alternates: {
       canonical: path,

@@ -1,7 +1,7 @@
 import { z } from 'zod'
 
 import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
-import { SeoMetadataSchemaWithOptionalTitle } from '@/schemas/SeoMetadataSchema'
+import { SeoMetadataWithOptionalTitleSchema } from '@/schemas/SeoMetadataSchema'
 
 export const DynamicBaseDataSchema = z
   .object({
@@ -9,7 +9,7 @@ export const DynamicBaseDataSchema = z
     'updated-on': z.coerce.date().optional(),
     'published-on': z.coerce.date().optional(),
     image: ImagePropsSchema.optional(),
-    seo: SeoMetadataSchemaWithOptionalTitle,
+    seo: SeoMetadataWithOptionalTitleSchema,
   })
   .strict()
 
