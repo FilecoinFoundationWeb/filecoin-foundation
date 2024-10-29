@@ -30,14 +30,14 @@ export function AllocatorsTableFilters({ table }: AllocatorsTableFiltersProps) {
       </div>
 
       <div className="flex shrink-0 grow gap-4">
-        <div className="w-1/2 grow sm:w-36">
+        <div className="w-1/2 sm:w-36">
           <SelectFilter
             column={typeColumn}
             options={typeOptions}
             defaultOptionLabel="All Types"
           />
         </div>
-        <div className="w-1/2 grow sm:w-36">
+        <div className="w-1/2 sm:w-36">
           <SelectFilter
             column={locationColumn}
             options={locationOptions}

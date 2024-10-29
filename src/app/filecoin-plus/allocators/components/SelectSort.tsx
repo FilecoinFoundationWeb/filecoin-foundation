@@ -7,12 +7,16 @@ import {
   ListboxOption as HeadlessUIListboxOption,
 } from '@headlessui/react'
 import { ArrowsDownUp, CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
-import type { Column } from '@tanstack/react-table'
+import type { Column, SortDirection } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
-import type { TableSortOption } from '../types'
+
+export type TableSortOption = {
+  id: SortDirection
+  name: string
+}
 
 type SortFilterProps = {
   column: Column<Allocator>

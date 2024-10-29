@@ -2,7 +2,7 @@ import type { ColumnSort, SortDirection } from '@tanstack/react-table'
 
 import { findOrThrow } from '@/utils/findOrThrow'
 
-import type { TableSortOption } from '../types'
+import type { TableSortOption } from '../components/SelectSort'
 
 const NAME_INITIAL_TABLE_STATE = {
   id: 'name',
@@ -21,7 +21,8 @@ const NAME_SORT_OPTIONS = [
 export const NAME_SORT_CONFIG = {
   INITIAL_TABLE_STATE: NAME_INITIAL_TABLE_STATE,
   OPTIONS: NAME_SORT_OPTIONS,
-  DEFAULT_OPTION: findOrThrow(NAME_SORT_OPTIONS, (option) => {
-    return option.id === DEFAULT_SORT_OPTION_ID
-  }),
+  DEFAULT_OPTION: findOrThrow(
+    NAME_SORT_OPTIONS,
+    (option) => option.id === DEFAULT_SORT_OPTION_ID,
+  ),
 } as const
