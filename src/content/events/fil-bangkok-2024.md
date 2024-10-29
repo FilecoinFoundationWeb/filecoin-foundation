@@ -116,51 +116,74 @@ schedule:
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description:
+            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
           location: Samyan Mitrtown
         - title: "Where DePIN Meets AI: A Filecoin Ecosystem Survey"
-          description: "Speaker: Clara Tsao, Filecoin Foundation"
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: "TRUST 2024: Combating Misinformation in Election Media with
             Decentralized Tools"
-          description: "Speaker: Sherry Chung, Numbers Protocol"
+          speakers:
+            - name: Sherry Chung
+              company: Numbers Protocol
           start: 2024-11-11T15:45:00.000Z
           end: 2024-11-11T15:52:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: Unlocking Non-Financial Applications on Ethereum
-          description: "Speaker: Ted Liao, Glitter Protocol"
+          speakers:
+            - name: Ted Liao
+              company: Glitter Protocol
           start: 2024-11-11T15:53:00.000Z
           end: 2024-11-11T16:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: "L2 Spotlight: Introducing Decentralized Onchain Data Lakes"
-          description: "Speaker: Stefaan Vervaet, Akave"
+          speakers:
+            - name: Stefaan Vervaet
+              company: Akave.ai
           start: 2024-11-11T16:01:00.000Z
           end: 2024-11-11T16:08:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: "L2 Spotlight: Data Storage Doesn’t Have to be Spicy"
-          description: "Speaker: Alexander Kinstler, Storacha"
+          speakers:
+            - name: Alexander Kinstler
+              company: Storacha
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:32:00.000Z
           end: 2024-11-11T16:39:00.000Z
         - title: Closing Remarks
-          description: "Speaker: Marta Belcher, Filecoin Foundation"
+          speakers:
+            - name: Marta Belcher
+              company: Filecoin Foundation
           start: 2024-11-11T16:48:00.000Z
           end: 2024-11-11T16:51:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: Onboarding a Million Users to DePIN
-          description: "Speaker: Roman, GhostDrive"
+          speakers:
+            - name: Roman
+              company: GhostDrive
           start: 2024-11-11T15:29:00.000Z
           end: 2024-11-11T15:36:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - location: "Samyan Mitrtown: Main Hall"
           title: "Filecoin Nexus: Decentralized Tools for Environmental Change"
-          description: "Participants: Megan Klimen, Filecoin Foundation; Vitalii Yatskiv,
-            Boosty Labs; Alan Ransil, Devonian; and David Dao, GainForest"
+          moderators:
+            - name: Megan Klimen
+              company: Filecoin Foundation
+          speakers:
+            - name: Vitalii Yatskiv
+              company: Boosty Labs
+            - name: Alan Ransil
+              company: Devonian
+            - name: David Dao
+              company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
       date: 2024-11-11T09:00:00.000Z
