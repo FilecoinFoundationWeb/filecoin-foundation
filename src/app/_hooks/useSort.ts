@@ -1,14 +1,12 @@
 import { useMemo } from 'react'
 
-import { type NextServerSearchParams } from '@/types/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 import type { SortConfig } from '@/types/sortTypes'
-import { type Object } from '@/types/utils'
+import type { NonEmptyReadonlyArray, Object } from '@/types/utils'
 
 import { SORT_KEY } from '@/constants/searchParams'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
-
-type NonEmptyReadonlyArray<T> = readonly [T, ...Array<T>]
 
 type UseSortProps<
   Entry extends Object,
