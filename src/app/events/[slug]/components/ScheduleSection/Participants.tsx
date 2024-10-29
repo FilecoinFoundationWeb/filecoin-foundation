@@ -1,5 +1,7 @@
 import React from 'react'
 
+import pluralize from 'pluralize'
+
 import type { Participant } from '../../../schemas/ScheduleSchema'
 
 export type ParticipantsProps = {
@@ -8,11 +10,13 @@ export type ParticipantsProps = {
 }
 
 export function Participants({ title, participants }: ParticipantsProps) {
+  const formattedTitle = pluralize(title, participants.length)
   const formattedParticipants = formatParticipants(participants)
 
   return (
     <p className="text-sm">
-      <span className="font-semibold">{title}:</span> {formattedParticipants}
+      <span className="font-semibold">{formattedTitle}:</span>{' '}
+      {formattedParticipants}
     </p>
   )
 }
