@@ -11,8 +11,8 @@ const EventSchema = z
   .object({
     title: z.string(),
     description: z.string().optional(),
-    moderators: z.array(ParticipantSchema).optional(),
-    speakers: z.array(ParticipantSchema).optional(),
+    moderators: z.array(ParticipantSchema).nonempty().optional(),
+    speakers: z.array(ParticipantSchema).nonempty().optional(),
     start: z.coerce.date(),
     end: z.coerce.date().optional(),
     location: z.string(),

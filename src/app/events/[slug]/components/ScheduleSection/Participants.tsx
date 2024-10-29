@@ -1,26 +1,33 @@
 import React from 'react'
 
-import type { NonEmptyArray } from '@/types/utils'
-
 import type { Participant } from '../../../schemas/ScheduleSchema'
 
 export type ParticipantsProps = {
   title: string
-  participants: NonEmptyArray<Participant>
+  participants: Array<Participant>
 }
 
-export function ScheduleParticipants({
-  title,
-  participants,
-}: ParticipantsProps) {
+export function Participants({ title, participants }: ParticipantsProps) {
+  const formattedParticipants = formatParticipants(participants)
+
   return (
     <p className="text-sm">
-      <span className="font-semibold">{title}:</span>{' '}
-      <span>{participants.map(formatParticipant).join('; ')}</span>
+      <span className="font-semibold">{title}:</span> {formattedParticipants}
     </p>
   )
 }
 
-function formatParticipant({ name, company }: Participant) {
-  return `${name}, ${company}`
+function formatParticipants(participants: Array<Participant>) {
+  const formattedList = participants.map(
+    ({ name, company }) => `${name} (${company})`,
+  )
+
+  if (formattedList.length === 1) return formattedList[0]
+  if (formattedList.length === 2) return formattedList.join(' and ')
+
+  return (
+    formattedList.slice(0, -1).join(', ') +
+    ', and ' +
+    formattedList[formattedList.length - 1]
+  )
 }

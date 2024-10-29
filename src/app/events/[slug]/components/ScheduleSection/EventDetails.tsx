@@ -7,7 +7,7 @@ import { TextLink } from '@/components/TextLink'
 import type { Event } from '../../../schemas/ScheduleSchema'
 import { formatTime } from '../../utils/dateUtils'
 
-import { type ParticipantsProps, ScheduleParticipants } from './Participants'
+import { Participants } from './Participants'
 
 export function EventDetails(event: Event) {
   return (
@@ -28,21 +28,14 @@ export function EventDetails(event: Event) {
             {event.description && (
               <p className="max-w-readable">{event.description}</p>
             )}
-            {event.moderators && event.moderators.length > 0 && (
-              <ScheduleParticipants
+            {event.moderators && (
+              <Participants
                 title="Moderators"
-                participants={
-                  event.moderators as ParticipantsProps['participants']
-                }
+                participants={event.moderators}
               />
             )}
-            {event.speakers && event.speakers.length > 0 && (
-              <ScheduleParticipants
-                title="Speakers"
-                participants={
-                  event.speakers as ParticipantsProps['participants']
-                }
-              />
+            {event.speakers && (
+              <Participants title="Speakers" participants={event.speakers} />
             )}
           </div>
           {event.url && (
