@@ -1,9 +1,18 @@
 import { z } from 'zod'
 
+const ParticipantSchema = z
+  .object({
+    name: z.string(),
+    company: z.string(),
+  })
+  .strict()
+
 const EventSchema = z
   .object({
     title: z.string(),
-    description: z.string(),
+    description: z.string().optional(),
+    moderators: z.array(ParticipantSchema).nonempty().optional(),
+    speakers: z.array(ParticipantSchema).nonempty().optional(),
     start: z.coerce.date(),
     end: z.coerce.date().optional(),
     location: z.string(),
@@ -25,4 +34,6 @@ export const ScheduleSchema = z
   })
   .strict()
 
+export type Event = z.infer<typeof EventSchema>
+export type Participant = z.infer<typeof ParticipantSchema>
 export type Schedule = z.infer<typeof ScheduleSchema>

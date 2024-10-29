@@ -720,6 +720,31 @@ collections:
                   - name: "description"
                     label: "Description"
                     widget: "text"
+                    required: false
+                  - name: "moderators"
+                    label: "Moderators"
+                    label_singular: "Moderator"
+                    widget: "list"
+                    fields:
+                      - name: "name"
+                        label: "Full Name"
+                        widget: "string"
+                      - name: "company"
+                        label: "Company"
+                        widget: "string"
+                    required: false
+                  - name: "speakers"
+                    label: "Speakers"
+                    label_singular: "Speaker"
+                    widget: "list"
+                    fields:
+                      - name: "name"
+                        label: "Full Name"
+                        widget: "string"
+                      - name: "company"
+                        label: "Company"
+                        widget: "string"
+                    required: false
                   - name: "start"
                     label: "Start Time"
                     widget: "datetime"

@@ -6,21 +6,19 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import theme from 'tailwindcss/defaultTheme'
 import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 
-import { BasicCard } from '@/components/BasicCard'
-import { Heading } from '@/components/Heading'
-import { TextLink } from '@/components/TextLink'
+import type { Event } from '../../../types/eventType'
+import { formatDate } from '../../utils/dateUtils'
+import { filterAndSortScheduleDays } from '../../utils/filterAndSortScheduleDays'
 
-import type { Event } from '../../types/eventType'
-import { formatDate, formatTime } from '../utils/dateUtils'
-import { filterAndSortScheduleDays } from '../utils/filterAndSortScheduleDays'
+import { EventDetails } from './EventDetails'
 
-type ScheduleTabsProps = {
+type TabsProps = {
   schedule: NonNullable<Event['schedule']>
 }
 
 const { screens } = theme
 
-export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
+export function Tabs({ schedule }: TabsProps) {
   const sortedDays = filterAndSortScheduleDays(schedule)
 
   const tabGroupRef = useRef<HTMLDivElement>(null)
@@ -62,28 +60,7 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
           >
             <div className="grid gap-4">
               {day.events.map((event) => (
-                <BasicCard key={event.title}>
-                  <div className="grid gap-6 lg:grid-cols-3">
-                    <div className="flex gap-6 text-brand-300 lg:flex-col lg:gap-1">
-                      <div className="text-sm font-bold">
-                        <span>{formatTime(event.start)}</span>
-                        {event.end && <span> – {formatTime(event.end)}</span>}
-                      </div>
-                      <span className="text-sm">{event.location}</span>
-                    </div>
-                    <div className="lg:col-span-2">
-                      <Heading tag="h3" variant="lg">
-                        {event.title}
-                      </Heading>
-                      <p className="mb-4 mt-2 max-w-readable">
-                        {event.description}
-                      </p>
-                      {event.url && (
-                        <TextLink href={event.url}>View Details</TextLink>
-                      )}
-                    </div>
-                  </div>
-                </BasicCard>
+                <EventDetails key={event.title} {...event} />
               ))}
             </div>
           </TabPanel>
