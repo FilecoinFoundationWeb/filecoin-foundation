@@ -6,61 +6,55 @@ import {
   ListboxOptions as HeadlessUIListboxOptions,
   ListboxOption as HeadlessUIListboxOption,
 } from '@headlessui/react'
-import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { ArrowsDownUp, CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
 import type { Column } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
+import type { TableSortOption } from '../types'
 
-type FilterOption = {
-  id: string
-  name: string
-}
-
-type SelectFilterProps = {
+type SortFilterProps = {
   column: Column<Allocator>
-  options: ReadonlyArray<FilterOption>
-  defaultOptionLabel: string
+  options: ReadonlyArray<TableSortOption>
+  defaultOption: TableSortOption
 }
 
-const DEFAULT_FILTER_ID = ''
-
-export function SelectFilter({
+export function SelectSort({
   column,
   options,
-  defaultOptionLabel,
-}: SelectFilterProps) {
-  const currentFilterId = column.getFilterValue()
-
-  const defaultOption: FilterOption = {
-    id: DEFAULT_FILTER_ID,
-    name: defaultOptionLabel,
-  }
-
-  const allOptions = [defaultOption, ...options]
+  defaultOption,
+}: SortFilterProps) {
+  const currentSortId = column.getIsSorted()
 
   const selectedOption =
-    allOptions.find((option) => option.id === currentFilterId) || defaultOption
+    options.find((option) => option.id === currentSortId) || defaultOption
 
   return (
-    <HeadlessUIListbox value={selectedOption} onChange={handleOptionChange}>
+    <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
       <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
-        <span className="truncate">{selectedOption.name}</span>
-        <Icon component={CaretDown} size={16} weight="bold" />
+        <div className="inline-flex items-center gap-2">
+          <Icon component={ArrowsDownUp} />
+          <span className="hidden text-nowrap md:block">
+            {selectedOption.name}
+          </span>
+        </div>
+        <span className="hidden md:block">
+          <Icon component={CaretDown} size={16} weight="bold" />
+        </span>
       </HeadlessUIListboxButton>
 
       <HeadlessUIListboxOptions
         as="ul"
-        anchor={{ to: 'bottom start', gap: 12 }}
+        anchor={{ to: 'bottom end', gap: 12 }}
         className="rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
       >
-        {allOptions.map((option) => (
+        {options.map((option) => (
           <HeadlessUIListboxOption
             key={option.id}
             as="li"
             value={option}
-            className="group flex cursor-default items-center justify-between gap-12 bg-transparent px-5 py-2 data-[focus]:bg-brand-500"
+            className="group flex cursor-default items-center justify-between gap-12 text-nowrap bg-transparent px-5 py-2 data-[focus]:bg-brand-500"
           >
             <span>{option.name}</span>
             <span className="invisible mb-px group-data-[selected]:visible">
@@ -72,14 +66,9 @@ export function SelectFilter({
     </HeadlessUIListbox>
   )
 
-  function handleOptionChange(newOption: FilterOption) {
-    if (newOption.id === DEFAULT_FILTER_ID) {
-      resetFilter()
+  function handleSortChange(newOption: TableSortOption) {
+    if (newOption.id !== currentSortId) {
+      column.toggleSorting()
     }
-    column.setFilterValue(newOption.id)
-  }
-
-  function resetFilter() {
-    column.setFilterValue(undefined)
   }
 }
