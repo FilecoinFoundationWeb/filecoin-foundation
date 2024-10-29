@@ -1,19 +1,23 @@
 'use client'
 
+import { useState } from 'react'
+
 import {
   useReactTable,
   getCoreRowModel,
   getSortedRowModel,
   getFilteredRowModel,
+  type ColumnFiltersState,
+  type SortingState,
 } from '@tanstack/react-table'
 
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
-import { SearchInput } from '@/components/SearchInput'
 
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
+import { AllocatorsTableFilters } from './AllocatorsTableFilters'
 
 type AllocatorsTableWithFiltersProps = {
   data: Array<Allocator>
@@ -22,20 +26,24 @@ type AllocatorsTableWithFiltersProps = {
 export function AllocatorsTableWithFilters({
   data,
 }: AllocatorsTableWithFiltersProps) {
+  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
+
+  const [sorting, setSorting] = useState<SortingState>([
+    { id: 'name', desc: false },
+  ])
+
   const table = useReactTable({
     data,
     columns: allocatorsTableColumnsData,
+    state: { columnFilters, sorting },
+    onSortingChange: setSorting,
+    onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
-    initialState: {
-      sorting: [{ id: 'name', desc: false }],
-    },
-    globalFilterFn: 'includesString',
   })
-  const { getState, setGlobalFilter, getRowModel, getHeaderGroups } = table
+  const { getRowModel, getHeaderGroups } = table
 
-  const searchQuery = getState().globalFilter || ''
   const rowModel = getRowModel()
   const headerGroups = getHeaderGroups()
 
@@ -43,8 +51,8 @@ export function AllocatorsTableWithFilters({
 
   return (
     <>
-      <div className="mb-6 max-w-readable">
-        <SearchInput query={searchQuery} onChange={setGlobalFilter} />
+      <div className="mb-6">
+        <AllocatorsTableFilters table={table} />
       </div>
 
       {hasSearchResults ? (
