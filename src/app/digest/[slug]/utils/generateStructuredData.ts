@@ -12,7 +12,7 @@ export function generateStructuredData(
   const { seo } = data
 
   return generateWebPageStructuredData({
-    title: seo.title,
+    title: seo.title || data.title,
     description: seo.description,
     path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
   })

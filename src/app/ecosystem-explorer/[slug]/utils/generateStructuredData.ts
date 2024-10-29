@@ -8,7 +8,7 @@ export function generateStructuredData(data: EcosystemProject) {
   const { seo } = data
 
   return generateWebPageStructuredData({
-    title: seo.title,
+    title: data.seo.title || `${data.title} - Filecoin Ecosystem Project`,
     description: seo.description,
     path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
   })
