@@ -57,10 +57,69 @@ export default function EventEntry({ params }: EventProps) {
     lumaEventsSection,
     schedule,
     speakers,
-    sponsors,
+    // sponsors,
     recapYoutubeEmbedUrl,
     recapYoutubePlaylistUrl,
   } = data
+
+  const sponsors = {
+    firstTier: [
+      {
+        name: 'ZETACUBE',
+        website: 'https://www.zetacube.net/',
+        image: { src: '/assets/images/zetacube_logo_white2-1-.webp' },
+      },
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+    ],
+    secondTier: [
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+      {
+        name: 'ZETACUBE',
+        website: 'https://www.zetacube.net/',
+        image: { src: '/assets/images/zetacube_logo_white2-1-.webp' },
+      },
+    ],
+    thirdTier: [
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+      {
+        name: 'Boosty Labs',
+        website: 'https://boostylabs.com',
+        image: { src: '/assets/images/boosty-logo.webp' },
+      },
+      {
+        name: 'ZETACUBE',
+        website: 'https://www.zetacube.net/',
+        image: { src: '/assets/images/zetacube_logo_white2-1-.webp' },
+      },
+    ],
+  }
 
   const eventHasConcluded = isEventConcluded(startDate, endDate)
   const eventHasEventsSection = lumaEventsSection && lumaEventsSection.embedLink

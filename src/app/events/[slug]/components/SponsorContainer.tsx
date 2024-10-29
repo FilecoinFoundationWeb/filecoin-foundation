@@ -3,21 +3,26 @@ import { clsx } from 'clsx'
 import { type SponsorLogoProps, SponsorLogo } from './SponsorLogo'
 import type { Sponsor } from './SponsorSection'
 
-type SponsorGridProps = {
+type SponsorContainerProps = {
   sponsors: Array<Sponsor>
   tier: string
-  gridClassName: string
+  gap: string
   logoImageConfig: SponsorLogoProps['logoImageConfig']
 }
 
-export function SponsorGrid({
+export function SponsorContainer({
   sponsors,
   tier,
-  gridClassName,
+  gap,
   logoImageConfig,
-}: SponsorGridProps) {
+}: SponsorContainerProps) {
   return (
-    <div className={clsx('grid gap-8', gridClassName)}>
+    <div
+      className={clsx(
+        gap,
+        'flex flex-col flex-wrap justify-start sm:flex-row sm:justify-center sm:gap-8',
+      )}
+    >
       {sponsors.map(({ name, ...sponsorProps }) => (
         <SponsorLogo
           key={name}
