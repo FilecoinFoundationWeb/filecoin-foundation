@@ -14,6 +14,8 @@ import type { Event } from '../../types/eventType'
 import { formatDate, formatTime } from '../utils/dateUtils'
 import { filterAndSortScheduleDays } from '../utils/filterAndSortScheduleDays'
 
+import { type ParticipantsProps, Participants } from './Participants'
+
 type ScheduleTabsProps = {
   schedule: NonNullable<Event['schedule']>
 }
@@ -75,11 +77,33 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
                       <Heading tag="h3" variant="lg">
                         {event.title}
                       </Heading>
-                      <p className="mb-4 mt-2 max-w-readable">
-                        {event.description}
-                      </p>
+                      <div className="mt-2 space-y-2">
+                        {event.description && (
+                          <p className="max-w-readable">{event.description}</p>
+                        )}
+                        <div>
+                          {event.moderators && event.moderators?.length > 0 && (
+                            <Participants
+                              title="Moderators"
+                              participants={
+                                event.moderators as ParticipantsProps['participants']
+                              }
+                            />
+                          )}
+                          {event.speakers && event.speakers.length > 0 && (
+                            <Participants
+                              title="Speakers"
+                              participants={
+                                event.speakers as ParticipantsProps['participants']
+                              }
+                            />
+                          )}
+                        </div>
+                      </div>
                       {event.url && (
-                        <TextLink href={event.url}>View Details</TextLink>
+                        <div className="mt-4">
+                          <TextLink href={event.url}>View Details</TextLink>
+                        </div>
                       )}
                     </div>
                   </div>
@@ -92,3 +116,4 @@ export function ScheduleTabs({ schedule }: ScheduleTabsProps) {
     </TabGroup>
   )
 }
+// mb-4 mt-2
