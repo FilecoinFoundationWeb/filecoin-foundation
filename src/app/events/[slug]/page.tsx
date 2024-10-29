@@ -18,7 +18,7 @@ import { isEventConcluded } from '../utils/isEventConcluded'
 
 import { EventsSection } from './components/EventsSection'
 import { RecapSection } from './components/RecapSection'
-import { ScheduleSection } from './components/ScheduleSection'
+import { ScheduleSection } from './components/ScheduleSection/ScheduleSection'
 import { SpeakersSection } from './components/SpeakersSection'
 import { SponsorSection } from './components/SponsorSection'
 import { buildCtaArray } from './utils/buildCtaArray'

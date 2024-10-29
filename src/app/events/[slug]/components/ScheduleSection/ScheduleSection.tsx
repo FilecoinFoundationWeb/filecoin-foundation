@@ -1,8 +1,8 @@
 import { PageSection } from '@/components/PageSection'
 
-import type { Event } from '../../types/eventType'
+import type { Event } from '../../../types/eventType'
 
-import { ScheduleTabs } from './ScheduleTabs'
+import { Tabs } from './Tabs'
 
 type ScheduleSectionProps = {
   schedule: NonNullable<Event['schedule']>
@@ -11,7 +11,7 @@ type ScheduleSectionProps = {
 export function ScheduleSection({ schedule }: ScheduleSectionProps) {
   return (
     <PageSection kicker="Join Us" title={schedule.title || 'Schedule'}>
-      <ScheduleTabs schedule={schedule} />
+      <Tabs schedule={schedule} />
     </PageSection>
   )
 }

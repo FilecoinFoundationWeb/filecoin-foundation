@@ -34,5 +34,6 @@ export const ScheduleSchema = z
   })
   .strict()
 
+export type Event = z.infer<typeof EventSchema>
 export type Participant = z.infer<typeof ParticipantSchema>
 export type Schedule = z.infer<typeof ScheduleSchema>
