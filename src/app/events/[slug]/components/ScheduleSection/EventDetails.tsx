@@ -29,13 +29,10 @@ export function EventDetails(event: Event) {
               <p className="max-w-readable">{event.description}</p>
             )}
             {event.moderators && (
-              <Participants
-                title="Moderators"
-                participants={event.moderators}
-              />
+              <Participants title="Moderator" participants={event.moderators} />
             )}
             {event.speakers && (
-              <Participants title="Speakers" participants={event.speakers} />
+              <Participants title="Speaker" participants={event.speakers} />
             )}
           </div>
           {event.url && (
