@@ -204,6 +204,10 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
+        - title: "GhostDrive Workshop and Demo "
+          start: 2024-11-11T10:00:00.000Z
+          end: 2024-11-11T12:00:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
