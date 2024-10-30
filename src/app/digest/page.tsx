@@ -19,10 +19,10 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getAllDigestArticleDataSortedByNumber } from './utils/getDigestArticleData'
+import { getDigestArticlesData } from './utils/getDigestArticleData'
 
 const { header, seo } = attributes
-const articles = getAllDigestArticleDataSortedByNumber()
+const articles = getDigestArticlesData()
 
 export const metadata = createMetadata({
   seo: {
@@ -51,7 +51,7 @@ export default function Digest() {
         ]}
       >
         <CardGrid cols="smTwo">
-          {articles.map((digest) => {
+          {articles.map((article) => {
             const {
               title,
               image,
@@ -60,7 +60,7 @@ export default function Digest() {
               articleNumber,
               description,
               authors,
-            } = digest
+            } = article
 
             return (
               <Card

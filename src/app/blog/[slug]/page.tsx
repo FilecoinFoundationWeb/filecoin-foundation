@@ -27,7 +27,6 @@ export function generateMetadata({ params }: BlogPostProps) {
   return createMetadata({
     seo: {
       ...data.seo,
-      title: data.seo.title || data.title,
       image: data.image?.src || graphicsData.blog.data.src,
     },
     path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,

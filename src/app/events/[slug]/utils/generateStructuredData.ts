@@ -14,7 +14,6 @@ import {
 } from '@/constants/structuredDataConstants'
 
 import type { Event } from '../../types/eventType'
-import { SEO_TITLE_SUFFIX } from '../page'
 
 type LocationType = Place | VirtualLocation | undefined
 
@@ -48,7 +47,6 @@ function getLocation({
 
 export function generateStructuredData(data: Event): WithContext<EventSchema> {
   const {
-    title,
     slug,
     description,
     startDate,
@@ -56,6 +54,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     image,
     location,
     externalLink,
+    seo,
   } = data
 
   const eventLocation: LocationType = getLocation({
@@ -73,7 +72,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     '@context': SCHEMA_CONTEXT_URL,
     '@type': 'Event',
     eventAttendanceMode,
-    name: data.seo.title || `${title} ${SEO_TITLE_SUFFIX}`,
+    name: seo.title,
     description,
     startDate: startDate.toISOString(),
     endDate: (endDate || startDate)?.toISOString(),
