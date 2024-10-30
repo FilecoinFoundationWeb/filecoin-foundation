@@ -1,13 +1,15 @@
 import { clsx } from 'clsx'
 
-import { type SponsorLogoProps, SponsorLogo } from './SponsorLogo'
+import type { SponsorTierConfig } from '../utils/sponsorTierConfigs'
+
+import { SponsorLogo } from './SponsorLogo'
 import type { Sponsor } from './SponsorSection'
 
 type SponsorContainerProps = {
   sponsors: Array<Sponsor>
-  tier: string
-  logoImageConfig: SponsorLogoProps['logoImageConfig']
-  gap?: string
+  tier: SponsorTierConfig['tier']
+  logoImageConfig: SponsorTierConfig['logoImageConfig']
+  gap: SponsorTierConfig['gap']
 }
 
 export function SponsorContainer({
@@ -19,8 +21,8 @@ export function SponsorContainer({
   return (
     <div
       className={clsx(
-        gap,
         'flex flex-col flex-wrap justify-start sm:flex-row sm:justify-center sm:gap-8',
+        gap,
       )}
     >
       {sponsors.map(({ name, ...sponsorProps }) => (

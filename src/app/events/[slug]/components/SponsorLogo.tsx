@@ -4,17 +4,14 @@ import { clsx } from 'clsx'
 
 import { capitalize } from '@/utils/capitalize'
 
-import type { Sponsor } from './SponsorSection'
+import type { SponsorTierConfig } from '../utils/sponsorTierConfigs'
 
-export type LogoImageConfig = {
-  containerStyles: string
-  imageSizes: string
-}
+import type { Sponsor } from './SponsorSection'
 
 export type SponsorLogoProps = {
   sponsor: Sponsor
-  tier: string
-  logoImageConfig: LogoImageConfig
+  tier: SponsorTierConfig['tier']
+  logoImageConfig: SponsorTierConfig['logoImageConfig']
 }
 
 export function SponsorLogo({

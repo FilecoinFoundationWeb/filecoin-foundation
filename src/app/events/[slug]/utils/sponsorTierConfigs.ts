@@ -1,6 +1,15 @@
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-export const sponsorTierConfigs = [
+export type SponsorTierConfig = {
+  tier: 'firstTier' | 'secondTier' | 'thirdTier'
+  gap: string
+  logoImageConfig: {
+    containerStyles: string
+    imageSizes: string
+  }
+}
+
+export const sponsorTierConfigs: Array<SponsorTierConfig> = [
   {
     tier: 'firstTier',
     gap: 'gap-8 sm:gap-20',
@@ -11,7 +20,7 @@ export const sponsorTierConfigs = [
   },
   {
     tier: 'secondTier',
-    gap: 'gap-6 sm:gap-16 ',
+    gap: 'gap-6 sm:gap-16',
     logoImageConfig: {
       containerStyles: 'h-10 w-36 sm:h-16',
       imageSizes: buildImageSizeProp({ startSize: '100px', sm: '140px' }),
