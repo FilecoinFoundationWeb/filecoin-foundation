@@ -32,13 +32,3 @@ jobs:
 
       - name: Run linter
         run: npm run lint
-
-      # - name: Post to a Slack channel
-      #   id: slack
-      #   uses: slackapi/slack-github-action@v1.27.0
-      #   with:
-      #     channel-id: "C07UH9HAURX"
-      #     slack-message: |
-      #       ${{ github.actor }} opened a pull request: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
-      #   env:
-      #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
