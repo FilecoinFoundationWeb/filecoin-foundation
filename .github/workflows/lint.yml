@@ -38,6 +38,8 @@ jobs:
         uses: slackapi/slack-github-action@v1.27.0
         with:
           channel-id: "C07UH9HAURX"
-          slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+          slack-message: |
+            ${{ github.actor }} opened a pull request: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
+            Requesting review from: ${{ join(github.event.pull_request.requested_reviewers.*.login, ", ") }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
