@@ -6,15 +6,15 @@ import type { Sponsor } from './SponsorSection'
 type SponsorContainerProps = {
   sponsors: Array<Sponsor>
   tier: string
-  gap: string
   logoImageConfig: SponsorLogoProps['logoImageConfig']
+  gap?: string
 }
 
 export function SponsorContainer({
   sponsors,
   tier,
-  gap,
   logoImageConfig,
+  gap = 'gap-8',
 }: SponsorContainerProps) {
   return (
     <div
