@@ -35,7 +35,7 @@ export function CopyToClipboard({ text }: CopyToClipboardProps) {
       <NotificationDialog
         isOpen={isCopied}
         setIsOpen={setIsCopied}
-        title="Link successfully copied"
+        title="Link copied to clipboard!"
       />
       <button
         className="touch-target focus:brand-outline hover:text-brand-400"
