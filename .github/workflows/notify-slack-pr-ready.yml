@@ -1,0 +1,28 @@
+name: Notify Slack When PR is Ready for Review
+
+on:
+  pull_request:
+    types: [ready_for_review]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Format Reviewers List
+        id: format_reviewers
+        run: |
+          REVIEWERS=$(echo "${{ toJson(github.event.pull_request.requested_reviewers) }}" | jq -r '.[].login' | paste -sd ", " -)
+          echo "reviewers=$REVIEWERS" >> $GITHUB_ENV
+
+      - name: Notify Slack
+        uses: slackapi/slack-github-action@v1.27.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          channel-id: C07UH9HAURX
+          slack-message: |
+            ${{ github.actor }} has marked a pull request as ready for review: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
+            Reviewers: ${{ env.reviewers }}
