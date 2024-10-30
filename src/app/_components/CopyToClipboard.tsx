@@ -6,7 +6,11 @@ import { Link } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
 import { useCopyToClipboard } from 'usehooks-ts'
 
+import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
+
 import { Icon } from '@/components/Icon'
+import { NotificationDialog } from '@/components/NotificationDialog'
+
 
 type CopyToClipboardProps = {
   text: string
@@ -20,7 +24,7 @@ export function CopyToClipboard({ text }: CopyToClipboardProps) {
     try {
       await copy(text)
       setIsCopied(true)
-      setTimeout(() => setIsCopied(false), 2000)
+      setTimeout(() => setIsCopied(false), NOTIFICATION_DIALOG_DURATION_MS)
     } catch (error) {
       console.error('Failed to copy!', error)
       Sentry.captureException(error)
@@ -28,11 +32,18 @@ export function CopyToClipboard({ text }: CopyToClipboardProps) {
   }
 
   return (
-    <button
-      className={`${isCopied && 'text-brand-300'} touch-target focus:brand-outline hover:text-brand-400`}
-      onClick={() => handleCopy(text)}
-    >
-      <Icon component={Link} size={32} weight="light" />
-    </button>
+    <>
+      <NotificationDialog
+        isOpen={isCopied}
+        setIsOpen={setIsCopied}
+        title="Link successfully copied"
+      />
+      <button
+        className={`${isCopied && 'text-brand-300'} touch-target focus:brand-outline hover:text-brand-400`}
+        onClick={() => handleCopy(text)}
+      >
+        <Icon component={Link} size={32} weight="light" />
+      </button>
+    </>
   )
 }
