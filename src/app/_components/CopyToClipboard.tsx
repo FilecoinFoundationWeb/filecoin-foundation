@@ -11,7 +11,6 @@ import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogD
 import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
 
-
 type CopyToClipboardProps = {
   text: string
 }
@@ -39,7 +38,7 @@ export function CopyToClipboard({ text }: CopyToClipboardProps) {
         title="Link successfully copied"
       />
       <button
-        className={`${isCopied && 'text-brand-300'} touch-target focus:brand-outline hover:text-brand-400`}
+        className="touch-target focus:brand-outline hover:text-brand-400"
         onClick={() => handleCopy(text)}
       >
         <Icon component={Link} size={32} weight="light" />
