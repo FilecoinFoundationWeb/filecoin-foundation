@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423bf8da735f52ab392c9a_0-gxap0iqlhpvsxnst.png
 category: news
 seo:
-  title: Filecoin Foundation Announces $50,000 FIL Grant to Internet Archive
   description:
     The Filecoin Foundation awards a $50,000 FIL grant to the Internet
     Archive. Learn about the initiative.

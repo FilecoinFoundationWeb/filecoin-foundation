@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:53.071000Z
 subcategories:
   - decentralized-science
 seo:
-  title: LabDAO
   description:
     LabDAO provides decentralized science solutions for data management
     and collaboration.

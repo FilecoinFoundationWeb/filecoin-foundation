@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-16.png
 category: reports
 seo:
-  title: 2021 Developer Grants Wrap-Up by Filecoin Foundation
   description:
     A comprehensive wrap-up of the 2021 developer grants by Filecoin Foundation.
     See the innovative projects funded.

@@ -11,7 +11,6 @@ start-date: 2021-05-05T22:00:00.000Z
 image:
   src: /assets/images/64521600a359ff88f536ffc5_ethereal-2021.png
 seo:
-  title: Ethereal 2021
   description:
     Join Ethereal 2021 to explore the intersection of blockchain, art,
     and technology.

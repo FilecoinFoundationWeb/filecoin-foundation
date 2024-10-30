@@ -18,7 +18,6 @@ twitter: "https://twitter.com/MuckRock"
 subcategories:
   - dweb
 seo:
-  title: MuckRock
   description: MuckRock provides decentralized solutions for public records and transparency.
 email: encrypted::U2FsdGVkX1/M4EUDPR7JGFr/tGCgeSpZMG95MfAA3VkNkEX6Ri8f5FxqSBia97v0
 full-name: encrypted::U2FsdGVkX1/5eEJyLhChhwAqF+bzjIR2oGWvsRykquA=

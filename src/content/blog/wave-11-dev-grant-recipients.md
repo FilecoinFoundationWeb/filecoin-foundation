@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-17.png
 category: news
 seo:
-  title: Announcing the Wave 11 Dev Grant Recipients
   description:
     Meet the new recipients of the Filecoin Wave 11 developer grants. Discover
     their innovative projects.

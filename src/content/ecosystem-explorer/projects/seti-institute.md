@@ -19,7 +19,6 @@ featured-content: "https://destor.com/seti"
 subcategories:
   - decentralized-science
 seo:
-  title: SETI Institute
   description:
     SETI Institute provides decentralized solutions for scientific data
     management and analysis.

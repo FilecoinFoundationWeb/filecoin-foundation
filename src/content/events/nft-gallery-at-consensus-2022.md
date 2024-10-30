@@ -12,7 +12,6 @@ start-date: 2022-06-08T16:00:10.000Z
 image:
   src: /assets/images/645215f075d57ed1e4d02693_nft-gallery-at-consensus.png
 seo:
-  title: NFT Gallery at Consensus 2022
   description: Visit the NFT Gallery at Consensus 2022 to explore the latest in
     NFT art and technology.
 ---

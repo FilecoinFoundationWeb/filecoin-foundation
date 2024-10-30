@@ -18,7 +18,6 @@ twitter: https://twitter.com/FISSIONcodes
 subcategories:
   - data-storage-management
 seo:
-  title: Fission
   description: Fission provides decentralized storage and application hosting solutions.
 email: encrypted::U2FsdGVkX1+X69CsepI1J7d6qauqnoUBbqIFNPpq9AbpaxDpwiz2lGjqnSugDH5i
 full-name: encrypted::U2FsdGVkX1+ufPGmpW7IizFe4XEifgJntaOGqdf7HB0=

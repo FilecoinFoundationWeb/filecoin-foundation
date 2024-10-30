@@ -19,7 +19,6 @@ start-date: 2023-04-15T15:30:53.222Z
 image:
   src: /assets/images/destore-hk-2023.png
 seo:
-  title: DeStorHK
   description:
     Participate in DeStorHK to explore decentralized storage solutions
     and network with industry experts.

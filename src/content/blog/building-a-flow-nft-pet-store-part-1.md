@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423a9bd1b0256d85f907e2_0-al1sv2xu4ah_bwdo.png
 category: use-cases
 seo:
-  title: "Building a Flow NFT Pet Store: Part 1"
   description:
     Learn how to build an NFT pet store on Flow blockchain. Step-by-step
     guide for developers. Part 1 of the series.

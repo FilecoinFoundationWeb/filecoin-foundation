@@ -8,7 +8,6 @@ location: Virtual
 start-date: 2021-07-31T22:00:00.000Z
 end-date: 2021-10-30T22:00:00.000Z
 seo:
-  title: Asia Hackathon Season 2021
   description: Join the Asia Hackathon Season 2021 to showcase your skills and
     innovations in blockchain technology.
 ---

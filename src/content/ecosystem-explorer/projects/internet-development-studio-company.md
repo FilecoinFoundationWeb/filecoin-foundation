@@ -19,7 +19,6 @@ year-joined: 2024-01-12T20:15:45.807000Z
 subcategories:
   - developer-tools
 seo:
-  title: Internet Development Studio Company
   description:
     Internet Development Studio Company provides decentralized solutions
     for web development.

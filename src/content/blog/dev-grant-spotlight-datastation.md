@@ -11,7 +11,6 @@ description: "DataStation is a platform that enhances the decentralized storage
 image:
   src: /assets/images/image-c-22.png
 seo:
-  title: "Dev Grant Spotlight: Datastation"
   description: Datastation's innovative solutions highlighted in this Filecoin
     Foundation Dev Grant spotlight. Learn more about their work.
 ---

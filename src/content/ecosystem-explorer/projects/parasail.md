@@ -15,7 +15,6 @@ year-joined: 2024-05-15T13:46:37.162000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Parasail
   description: Parasail offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18eNzdUFYfmb1TrvmJp8ctt02G7y8EvoDH3lxF9RmT2VBkak4VpQSp5
 full-name: encrypted::U2FsdGVkX19BX2mHaU+8IdkY+XJWJn55k78InKk3Ytk=

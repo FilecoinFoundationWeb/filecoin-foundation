@@ -11,7 +11,6 @@ image:
   src: /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
 category: use-cases
 seo:
-  title: "Building an NFT Store on Flow: Part 2"
   description:
     Continue building your NFT store on Flow blockchain. Follow this detailed
     guide for developers. Part 2 of the series.

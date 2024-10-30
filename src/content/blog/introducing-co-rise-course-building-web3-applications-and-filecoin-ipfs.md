@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423af4e3c08f6f124f519f_1-gvlzuxsp3dbmsdxwobsexq.png
 category: news
 seo:
-  title: "Introducing Co-Rise Course: Building Web3 Applications"
   description:
     Learn to build Web3 applications with Filecoin and IPFS in the new
     Co-Rise course. Enroll now!

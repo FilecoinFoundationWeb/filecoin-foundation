@@ -14,7 +14,6 @@ year-joined: 2024-04-03T17:23:12.660000Z
 subcategories:
   - data-storage-management
 seo:
-  title: DDrive
   description:
     DDrive offers decentralized storage solutions for personal and enterprise
     use.

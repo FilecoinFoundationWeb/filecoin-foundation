@@ -9,7 +9,6 @@ image:
   src: /assets/images/web3-infra-2023.png
 category: supported-sponsored
 seo:
-  title: Web3 Infrastructure Summit 2023
   description:
     Join the Web3 Infrastructure Summit 2023 to explore the latest in decentralized
     infrastructure.

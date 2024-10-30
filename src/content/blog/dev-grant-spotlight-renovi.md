@@ -10,7 +10,6 @@ description: If you build it they will come. That’s the aim of Renovi, a
 image:
   src: /assets/images/image-c-11.png
 seo:
-  title: "Dev Grant Spotlight: Renovi"
   description: Renovi's journey and innovative solutions as a recipient of the
     Filecoin Foundation Dev Grant. Explore their work.
 ---

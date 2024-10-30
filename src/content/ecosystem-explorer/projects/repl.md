@@ -17,7 +17,6 @@ twitter: "https://twitter.com/Repl_fi"
 subcategories:
   - data-storage-management
 seo:
-  title: Repl
   description:
     Repl provides decentralized solutions for data replication and storage
     management.

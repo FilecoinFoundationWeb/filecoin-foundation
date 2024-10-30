@@ -17,7 +17,6 @@ twitter: "https://twitter.com/fluence_project"
 subcategories:
   - arts-collectibles-nfts
 seo:
-  title: NTENT
   description: NTENT offers decentralized solutions for digital art and collectibles.
 email: encrypted::U2FsdGVkX19YqEdzETvLgLKZftCusT0mK/8q3cYc7plUad71QQl2uiPqFn/sWkrE
 full-name: encrypted::U2FsdGVkX1+Sh5zhlFBzusuEvNOeD6oZOxD4m8ivz+A=

@@ -10,7 +10,6 @@ image:
   src: /assets/images/davos-2023-pic.png
 category: hosted
 seo:
-  title: The Filecoin Sanctuary Davos 2024
   description:
     Join The Filecoin Sanctuary at Davos 2024 to connect with the Filecoin
     community and explore new innovations.

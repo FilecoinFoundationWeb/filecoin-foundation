@@ -11,7 +11,6 @@ end-date: 2023-04-15T15:30:53.477Z
 image:
   src: /assets/images/fil-hong-kong.png
 seo:
-  title: FIL Hong Kong 2023
   description:
     Join FIL Hong Kong 2023 to connect with the Filecoin community and
     explore the latest innovations.

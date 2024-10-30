@@ -11,7 +11,6 @@ created-on: "2023-04-21T07:27:18.330Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: reports
 seo:
-  title: Filecoin Foundation First Half-Year in Review
   description:
     A review of the Filecoin Foundation's achievements in the first half
     of the year. Highlights and milestones.

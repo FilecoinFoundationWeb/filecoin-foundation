@@ -16,7 +16,6 @@ twitter: "https://twitter.com/nftdotstorage"
 subcategories:
   - data-storage-management
 seo:
-  title: NFT.Storage
   description: NFT.Storage offers decentralized storage solutions for NFT data.
 email: encrypted::U2FsdGVkX1/o50b/tIWu2FHfsZRbN4/CE8mVZmBjaojKOGYLVsafIaWsN5RQQvGv
 full-name: encrypted::U2FsdGVkX1/kb6jw5h7V/l9a/LI6eo1drmcprhIZ9ms=

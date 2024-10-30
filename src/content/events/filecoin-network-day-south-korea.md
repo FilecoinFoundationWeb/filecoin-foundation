@@ -9,7 +9,6 @@ image:
   src: /assets/images/network-day-korea-2022.png
 category: hosted
 seo:
-  title: Filecoin Network Day South Korea
   description:
     Participate in Filecoin Network Day in South Korea to network with
     the community and learn about the latest updates.

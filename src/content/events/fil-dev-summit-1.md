@@ -12,7 +12,6 @@ end-date: 2023-09-14T15:46:33.644Z
 image:
   src: /assets/images/fil-dev-summit.png
 seo:
-  title: FIL Dev Summit Singapore
   description: Join the FIL Dev Summit Singapore to collaborate with developers
     and explore the latest in Filecoin technology.
 ---

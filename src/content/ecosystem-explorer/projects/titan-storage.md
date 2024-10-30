@@ -18,7 +18,6 @@ year-joined: 2023-04-01T13:04:49.683000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Titan Storage
   description: Titan Storage provides decentralized storage solutions for enterprises.
 email: encrypted::U2FsdGVkX18mBGoTqKE0ibTQqDFTjVyE3Zo5Sv7GBqymDcIiKguyaaBn6rK6rcwO
 full-name: encrypted::U2FsdGVkX18pmF5P9gAtexmyRtnQclIVpiHOn43ilNY=

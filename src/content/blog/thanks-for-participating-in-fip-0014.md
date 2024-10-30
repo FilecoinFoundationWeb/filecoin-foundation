@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423bf6ba1528b0814f3496_0-w3wa_u-ynigzoedy.png
 category: news
 seo:
-  title: Thank You for Participating in FIP-0014
   description:
     A thank you note to the community for participating in FIP-0014. Your
     contributions are valued.

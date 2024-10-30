@@ -13,7 +13,6 @@ description: Businesses hold trillions of dollars of valuable data which,
 image:
   src: /assets/images/0405-dgs-180protocol.png
 seo:
-  title: "Dev Grant Spotlight: Encloud"
   description: Encloud's contributions to the ecosystem as a Filecoin Foundation
     Dev Grant recipient. Explore their achievements.
 ---

@@ -14,7 +14,6 @@ year-joined: 2024-04-05T00:28:51.844000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Elastic
   description: Elastic provides decentralized data storage and management solutions.
 email: encrypted::U2FsdGVkX1+evrKdHTJLD6B99t9rY0aw0xk+BzR1V5+EOANxp58ZkyOE2kwPE956
 full-name: encrypted::U2FsdGVkX1+v6XGh6Cbu/gsbAYzs0hXJcYC2MYU93pk=

@@ -10,7 +10,6 @@ image:
   src: /assets/images/0114-orbitcommunity-twitter.png
 category: news
 seo:
-  title: Introducing the Orbit Community Program
   description:
     Join the new Orbit Community Program by Filecoin Foundation to connect
     and collaborate with peers.

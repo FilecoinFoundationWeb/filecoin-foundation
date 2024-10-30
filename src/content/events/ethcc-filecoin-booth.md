@@ -10,7 +10,6 @@ end-date: 2024-07-11T14:51:57.409Z
 image:
   src: /assets/images/ethcc-24.png
 seo:
-  title: ETHCC Filecoin Booth
   description: Visit the Filecoin Booth at ETHCC to discover the latest updates
     and innovations in Filecoin.
 ---

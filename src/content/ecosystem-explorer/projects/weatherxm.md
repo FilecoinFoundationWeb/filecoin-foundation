@@ -16,7 +16,6 @@ video-url: "https://www.youtube.com/embed/w7_wLlA6n8I"
 subcategories:
   - data-storage-management
 seo:
-  title: WeatherXM
   description:
     WeatherXM offers decentralized solutions for weather data collection
     and analysis.

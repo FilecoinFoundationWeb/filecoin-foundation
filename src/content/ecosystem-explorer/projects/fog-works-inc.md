@@ -16,9 +16,7 @@ year-joined: 2022-11-22T19:44:10.444000Z
 subcategories:
   - infrastructure
 seo:
-  title: Fog Works Inc
-  description:
-    Fog Works Inc provides decentralized solutions for edge computing and
+  description: Fog Works provides decentralized solutions for edge computing and
     data storage.
 email: encrypted::U2FsdGVkX18O8WVEsV6BmzTK7FtJ8FaqIY3VWo7ExH3nrNF5X4fFyCIRZpSkimj0
 full-name: encrypted::U2FsdGVkX1/NwVviSV5ER7Zi+SiKko/1WoyhygJiksw=

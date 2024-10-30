@@ -10,7 +10,6 @@ description:
 image:
   src: /assets/images/021224-guest-moca-1-.png
 seo:
-  title: "Guest Post: If the Library of Alexandria Were Built Better"
   description:
     A thought-provoking guest post exploring the concept of a better-built
     Library of Alexandria.

@@ -13,7 +13,6 @@ description:
 image:
   src: /assets/images/231017-fip0001v2.png
 seo:
-  title: "Community Feedback: New Filecoin Governance Proposal"
   description:
     Weigh in on the new Filecoin governance process proposal FIP0001v2.
     Your feedback is crucial for the community.

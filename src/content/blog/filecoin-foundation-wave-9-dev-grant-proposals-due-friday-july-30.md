@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-17.png
 category: news
 seo:
-  title: Filecoin Foundation Wave 9 Dev Grant Proposals Due
   description:
     Submit your proposals for Filecoin Foundation's Wave 9 Dev Grant by
     Friday, July 30. Learn more about the application process.

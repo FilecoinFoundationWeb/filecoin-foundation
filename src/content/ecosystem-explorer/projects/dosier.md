@@ -15,7 +15,6 @@ tech:
 twitter: https://twitter.com/dosier_ai
 year-joined: 2024-04-05T23:07:24.336Z
 seo:
-  title: Dosier
   description: Dosier offers decentralized storage solutions for digital documents.
 email: encrypted::U2FsdGVkX19t2udgs3CCoKH2sf/GJ7d5X4Z/e5wq69s+SpD/PI/+nMSwfelUevLy
 full-name: encrypted::U2FsdGVkX1979eBYW+lUnTMKK5YaLreBplrBq0PjAKw=

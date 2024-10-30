@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-07.png
 category: events
 seo:
-  title: FIL Toronto 2022 Recap
   description: Recap of FIL Toronto 2022. Highlights and key takeaways from the event.
 ---
 

@@ -13,7 +13,6 @@ description:
 image:
   src: /assets/images/twitter-_-nv21_upgrade.png
 seo:
-  title: Announcing Watermelon NV21 Upgrade by Filecoin Foundation
   description:
     Watermelon NV21 upgrade announced. Includes extended sector commitments,
     synthetic PoRep, FVM enhancements, and more.

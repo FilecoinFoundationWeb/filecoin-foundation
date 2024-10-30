@@ -16,7 +16,6 @@ image:
   src: /assets/images/070723-qa-artifactlabs.png
 category: use-cases
 seo:
-  title: How Artifact Labs Uses Blockchain to Preserve History
   description:
     Discover how Artifact Labs preserves and connects history and culture
     using blockchain technology.

@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
 category: interviews
 seo:
-  title: Meet Filecoin Foundation Developer Advocate Sonia John
   description:
     Get to know Sonia John, developer advocate at Filecoin Foundation.
     Learn about her role and contributions.
