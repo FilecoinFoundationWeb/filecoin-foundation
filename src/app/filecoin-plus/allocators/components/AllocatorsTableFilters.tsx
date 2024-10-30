@@ -1,6 +1,6 @@
 import type { Table } from '@tanstack/react-table'
 
-import { NAME_SORT_CONFIG } from '../constants/sorting'
+import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
 import type { Allocator } from '../schemas/AllocatorSchema'
 import { generateSortedOptions } from '../utils/generateSortedOptions'
 import { getColumnOrThrow } from '../utils/getColumnOrThrow'
@@ -47,8 +47,8 @@ export function AllocatorsTableFilters({ table }: AllocatorsTableFiltersProps) {
         <div className="shrink md:min-w-60">
           <SelectSort
             column={nameColumn}
-            options={NAME_SORT_CONFIG.OPTIONS}
-            defaultOption={NAME_SORT_CONFIG.DEFAULT_OPTION}
+            options={NAME_COLUMN_SORT_CONFIG.options}
+            defaultOption={NAME_COLUMN_SORT_CONFIG.defaultOption}
           />
         </div>
       </div>

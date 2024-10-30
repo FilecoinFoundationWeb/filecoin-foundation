@@ -1,28 +1,20 @@
-import type { ColumnSort, SortDirection } from '@tanstack/react-table'
-
-import { findOrThrow } from '@/utils/findOrThrow'
-
-import type { TableSortOption } from '../components/SelectSort'
-
-const NAME_INITIAL_TABLE_STATE = {
+const initialTableState = {
   id: 'name',
   desc: false,
-} as const satisfies ColumnSort
+} as const
 
-const DEFAULT_SORT_OPTION_ID = (
-  NAME_INITIAL_TABLE_STATE.desc ? 'desc' : 'asc'
-) satisfies SortDirection
+const defaultSortId = initialTableState.desc ? 'desc' : 'asc'
 
-const NAME_SORT_OPTIONS = [
-  { id: 'asc', name: 'Organization (A-Z)' },
-  { id: 'desc', name: 'Organization (Z-A)' },
-] as const satisfies Array<TableSortOption>
+const ascSortOption = { id: 'asc', name: 'Organization (A-Z)' } as const
+const descSortOption = { id: 'desc', name: 'Organization (Z-A)' } as const
 
-export const NAME_SORT_CONFIG = {
-  INITIAL_TABLE_STATE: NAME_INITIAL_TABLE_STATE,
-  OPTIONS: NAME_SORT_OPTIONS,
-  DEFAULT_OPTION: findOrThrow(
-    NAME_SORT_OPTIONS,
-    (option) => option.id === DEFAULT_SORT_OPTION_ID,
-  ),
+const NAME_COLUMN_SORT_OPTIONS =
+  defaultSortId === 'asc'
+    ? [ascSortOption, descSortOption]
+    : [descSortOption, ascSortOption]
+
+export const NAME_COLUMN_SORT_CONFIG = {
+  initialTableState,
+  options: NAME_COLUMN_SORT_OPTIONS,
+  defaultOption: NAME_COLUMN_SORT_OPTIONS[0],
 } as const
