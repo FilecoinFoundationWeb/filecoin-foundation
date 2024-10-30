@@ -52,7 +52,7 @@ schedule:
           start: 2024-11-06T11:00:00.000Z
           end: 2024-11-06T20:00:00.000Z
           location: Gaysorn Urban Resort
-          url: https://fildev.io/FDS-5
+          url: https://www.fildev.io/FDS-5
       date: 2024-11-06T11:00:00.000Z
     - date: 2024-11-07T09:00:00.000Z
       events:
@@ -260,6 +260,30 @@ speakers:
     linkedin: https://www.linkedin.com/in/dwddao/
     image:
       src: /assets/images/david_dao_headshot.webp
+  - name: Ted Liao
+    title: CEO
+    company: Glitter Protocol
+    image:
+      src: /assets/images/img_4614.webp
+    linkedin: https://www.linkedin.com/in/ted-liao-2694b8242/
+  - name: Masa Kikuchi
+    title: Founder & CEO
+    company: Secured Finance
+    linkedin: https://www.linkedin.com/in/masa-senshi-kikuchi-55185a23/
+    image:
+      src: /assets/images/masa-square-color-2-.webp
+  - name: Alex Blagirev
+    title: Strategic Initiatives Officer
+    company: SingularityNET
+    linkedin: https://www.linkedin.com/in/alexei-blagirev/
+    image:
+      src: /assets/images/alex-blagirev-headshot.webp
+  - image:
+      src: /assets/images/alan_coast.webp
+    name: Alan Ransil
+    title: CEO
+    company: Devonian Systems
+    linkedin: https://www.linkedin.com/in/alan-ransil-53573873/
 sponsors:
   first-tier:
     - name: ZETACUBE
