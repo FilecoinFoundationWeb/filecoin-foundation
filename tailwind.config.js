@@ -127,6 +127,12 @@ module.exports = {
             paddingRight: theme('padding.10'),
           },
         },
+        '.touch-target': {
+          padding: theme('padding.2'),
+        },
+        '.offset-touch-target': {
+          margin: `-${theme('padding.2')}`,
+        },
       })
     }),
   ],
