@@ -1,20 +1,15 @@
-const initialTableState = {
+const INITIAL_REACT_TABLE_STATE = {
   id: 'name',
   desc: false,
 } as const
 
-const defaultSortId = initialTableState.desc ? 'desc' : 'asc'
-
-const ascSortOption = { id: 'asc', name: 'Organization (A-Z)' } as const
-const descSortOption = { id: 'desc', name: 'Organization (Z-A)' } as const
-
-const NAME_COLUMN_SORT_OPTIONS =
-  defaultSortId === 'asc'
-    ? [ascSortOption, descSortOption]
-    : [descSortOption, ascSortOption]
+const NAME_COLUMN_SORT_OPTIONS = [
+  { id: 'asc', name: 'Organization (A-Z)' },
+  { id: 'desc', name: 'Organization (Z-A)' },
+] as const
 
 export const NAME_COLUMN_SORT_CONFIG = {
-  initialTableState,
+  initialReactTableState: INITIAL_REACT_TABLE_STATE,
   options: NAME_COLUMN_SORT_OPTIONS,
   defaultOption: NAME_COLUMN_SORT_OPTIONS[0],
 } as const

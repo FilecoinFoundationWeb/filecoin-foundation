@@ -34,6 +34,11 @@ export function SelectSort({
   const selectedOption =
     options.find((option) => option.id === currentSortId) || defaultOption
 
+  function handleSortChange(newOption: TableSortOption) {
+    const isSortDesc = newOption.id === 'desc'
+    column.toggleSorting(isSortDesc)
+  }
+
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
       <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
@@ -69,9 +74,4 @@ export function SelectSort({
       </HeadlessUIListboxOptions>
     </HeadlessUIListbox>
   )
-
-  function handleSortChange(newOption: TableSortOption) {
-    const isSortDesc = newOption.id === 'desc'
-    column.toggleSorting(isSortDesc)
-  }
 }

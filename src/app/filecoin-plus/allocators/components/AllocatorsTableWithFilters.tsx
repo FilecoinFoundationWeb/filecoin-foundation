@@ -29,7 +29,7 @@ export function AllocatorsTableWithFilters({
 }: AllocatorsTableWithFiltersProps) {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
   const [sorting, setSorting] = useState<SortingState>([
-    NAME_COLUMN_SORT_CONFIG.initialTableState,
+    NAME_COLUMN_SORT_CONFIG.initialReactTableState,
   ])
 
   const table = useReactTable({
