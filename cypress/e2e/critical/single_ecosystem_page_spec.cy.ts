@@ -1,7 +1,8 @@
 import { PATHS } from '@/constants/paths'
 
+import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
 import { getRandomSlug } from '@/support/getRandomSlugUtil'
-import { verifyMetadata } from '@/support/verifyMetadataUtil'
+import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
 
 describe('Random Ecosystem Explorer Project', () => {
   it('should check metadata', () => {
@@ -9,11 +10,14 @@ describe('Random Ecosystem Explorer Project', () => {
       .entriesContentPath as string
 
     getRandomSlug(ecosystemDirectoryPath).then((slug) => {
-      verifyMetadata(
-        ecosystemDirectoryPath,
-        `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
-        slug,
-      )
+      const fullPath = `${ecosystemDirectoryPath}/${slug}.md`
+      const pagePath = `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`
+
+      verifyMetadataForDynamicPages({
+        fullPath,
+        pagePath,
+        seoTitleSuffix: METADATA_TITLE_SUFFIX,
+      })
     })
   })
 })

@@ -1,14 +1,20 @@
 import { PATHS } from '@/constants/paths'
 
 import { getRandomSlug } from '@/support/getRandomSlugUtil'
-import { verifyMetadata } from '@/support/verifyMetadataUtil'
+import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
 
 describe('Random Digest Article', () => {
   it('should check metadata', () => {
     const digestDirectoryPath = PATHS.DIGEST.entriesContentPath as string
 
     getRandomSlug(digestDirectoryPath).then((slug) => {
-      verifyMetadata(digestDirectoryPath, `${PATHS.DIGEST.path}/${slug}`, slug)
+      const fullPath = `${digestDirectoryPath}/${slug}.md`
+      const pagePath = `${PATHS.DIGEST.path}/${slug}`
+
+      verifyMetadataForDynamicPages({
+        fullPath,
+        pagePath,
+      })
     })
   })
 })
