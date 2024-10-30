@@ -24,24 +24,19 @@ const TwitterMetadataSchema = z
   .strict()
   .optional()
 
-export const SeoMetadataSchema = z
-  .object({
-    title: z.string(),
-    description: z.string().max(seo_metadata_description_max_characters),
-    image: z.string().optional(),
-    'open-graph': OpenGraphMetadataSchema,
-    twitter: TwitterMetadataSchema,
-  })
-  .strict()
+const BaseSeoMetadataSchema = z.object({
+  description: z.string().max(seo_metadata_description_max_characters),
+  image: z.string().optional(),
+  'open-graph': OpenGraphMetadataSchema,
+  twitter: TwitterMetadataSchema,
+})
 
-export const SeoMetadataWithOptionalTitleSchema = z
-  .object({
-    title: z.string().optional(),
-    description: z.string().max(seo_metadata_description_max_characters),
-    image: z.string().optional(),
-    'open-graph': OpenGraphMetadataSchema,
-    twitter: TwitterMetadataSchema,
-  })
-  .strict()
+export const SeoMetadataSchema = BaseSeoMetadataSchema.extend({
+  title: z.string(),
+}).strict()
+
+export const SeoMetadataWithOptionalTitleSchema = BaseSeoMetadataSchema.extend({
+  title: z.string().optional(),
+}).strict()
 
 export type SeoMetadata = z.infer<typeof SeoMetadataSchema>

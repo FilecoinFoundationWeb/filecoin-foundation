@@ -7,7 +7,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import {
   type SeoMetadata,
-  SeoMetadataWithOptionalTitleSchema,
+  SeoMetadataSchema,
 } from '@/schemas/SeoMetadataSchema'
 
 type CreateMetadataProps = {
@@ -32,18 +32,18 @@ export function createMetadata({
         seo['open-graph']?.image || seo.image || graphicsData.home.data.src,
     },
     twitter: {
-      card: seo.twitter?.card,
-      site: seo.twitter?.site,
-      creator: seo.twitter?.creator,
+      card: seo.twitter?.card || 'summary',
+      site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+      creator:
+        seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
     },
   }
 
-  const parsedEnrichedSEO =
-    SeoMetadataWithOptionalTitleSchema.parse(enrichedSEO)
+  const parsedEnrichedSEO = SeoMetadataSchema.parse(enrichedSEO)
 
   return {
     title: overrideDefaultTitle
-      ? { absolute: parsedEnrichedSEO.title as string }
+      ? { absolute: parsedEnrichedSEO.title }
       : parsedEnrichedSEO.title,
     description: parsedEnrichedSEO.description,
     openGraph: {
@@ -52,13 +52,9 @@ export function createMetadata({
       images: parsedEnrichedSEO['open-graph']?.image,
     },
     twitter: {
-      card: parsedEnrichedSEO.twitter?.card || 'summary',
-      site:
-        parsedEnrichedSEO.twitter?.site ||
-        FILECOIN_FOUNDATION_URLS.social.twitter.handle,
-      creator:
-        parsedEnrichedSEO.twitter?.creator ||
-        FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+      card: parsedEnrichedSEO.twitter?.card,
+      site: parsedEnrichedSEO.twitter?.site,
+      creator: parsedEnrichedSEO.twitter?.creator,
     },
     alternates: {
       canonical: path,

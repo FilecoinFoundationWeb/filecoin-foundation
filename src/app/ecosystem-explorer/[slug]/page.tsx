@@ -35,6 +35,8 @@ type EcosystemProjectProps = {
   }
 }
 
+export const SEO_TITLE_SUFFIX = ' - Filecoin Ecosystem Project'
+
 export function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
@@ -42,7 +44,7 @@ export function generateMetadata({ params }: EcosystemProjectProps) {
   return createMetadata({
     seo: {
       ...data.seo,
-      title: data.seo.title || `${data.title} - Filecoin Ecosystem Project`,
+      title: data.seo.title || `${data.title} ${SEO_TITLE_SUFFIX}`,
       image: graphicsData.ecosystem.data.src,
     },
     path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,

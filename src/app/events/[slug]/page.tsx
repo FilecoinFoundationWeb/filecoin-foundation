@@ -30,6 +30,8 @@ type EventProps = {
   }
 }
 
+export const SEO_TITLE_SUFFIX = ' - Filecoin Event'
+
 export function generateMetadata({ params }: EventProps) {
   const { slug } = params
   const data = getEventData(slug)
@@ -37,7 +39,7 @@ export function generateMetadata({ params }: EventProps) {
   return createMetadata({
     seo: {
       ...data.seo,
-      title: data.seo.title || `${data.title} - Filecoin Event`,
+      title: data.seo.title || `${data.title} ${SEO_TITLE_SUFFIX}`,
       image: graphicsData.events1.data.src,
     },
     path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
