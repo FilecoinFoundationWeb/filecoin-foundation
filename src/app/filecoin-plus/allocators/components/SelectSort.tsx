@@ -71,8 +71,7 @@ export function SelectSort({
   )
 
   function handleSortChange(newOption: TableSortOption) {
-    if (newOption.id !== currentSortId) {
-      column.toggleSorting()
-    }
+    const isSortDesc = newOption.id === 'desc'
+    column.toggleSorting(isSortDesc)
   }
 }
