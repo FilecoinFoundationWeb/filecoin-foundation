@@ -278,6 +278,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/alexei-blagirev/
     image:
       src: /assets/images/alex-blagirev-headshot.webp
+  - image:
+      src: /assets/images/alan_coast.webp
+    name: Alan Ransil
+    title: CEO
+    company: Devonian Systems
+    linkedin: https://www.linkedin.com/in/alan-ransil-53573873/
 sponsors:
   first-tier:
     - name: ZETACUBE
