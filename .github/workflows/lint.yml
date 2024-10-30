@@ -40,6 +40,5 @@ jobs:
           channel-id: "C07UH9HAURX"
           slack-message: |
             ${{ github.actor }} opened a pull request: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
-            Requesting review from: ${{ env.reviewers }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
