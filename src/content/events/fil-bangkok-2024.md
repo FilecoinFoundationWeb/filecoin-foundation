@@ -48,11 +48,11 @@ schedule:
             summit is more than just a meetup—it's a place for meaningful and
             impactful conversations that help push Filecoin forward.
 
-            Find the full agenda at fil-dev.io/FDS-5.
+            Find the full agenda at fildev.io/FDS-5.
           start: 2024-11-06T11:00:00.000Z
           end: 2024-11-06T20:00:00.000Z
           location: Gaysorn Urban Resort
-          url: https://fil-dev.io/FDS-5
+          url: https://www.fildev.io/FDS-5
       date: 2024-11-06T11:00:00.000Z
     - date: 2024-11-07T09:00:00.000Z
       events:
@@ -79,8 +79,8 @@ schedule:
             summit is more than just a meetup—it's a place for meaningful and
             impactful conversations that help push Filecoin forward.
 
-            Find the full agenda at fil-dev.io/FDS-5.
-          url: https://fil-dev.io/FDS-5
+            Find the full agenda at fildev.io/FDS-5.
+          url: https://fildev.io/FDS-5
           location: Gaysorn Urban Resort
           start: 2024-11-07T09:00:00.000Z
           end: 2024-11-07T18:30:00.000Z
@@ -109,15 +109,14 @@ schedule:
             summit is more than just a meetup—it's a place for meaningful and
             impactful conversations that help push Filecoin forward.
 
-            Find the full agenda at fil-dev.io/FDS-5.
-          url: https://fil-dev.io/FDS-5
+            Find the full agenda at fildev.io/FDS-5.
+          url: https://fildev.io/FDS-5
           location: Gaysorn Urban Resort
           start: 2024-11-08T09:00:00.000Z
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description:
-            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -129,8 +128,7 @@ schedule:
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            "In the realms of DePIN and AI, storage isn’t the endgame — it’s
+          description: "In the realms of DePIN and AI, storage isn’t the endgame — it’s
             just the beginning. The dynamic Filecoin ecosystem features an
             evolving world of L2s, tools for cross-chain applications, and a
             core protocol serving as the DePIN primitive for AI. Check out
@@ -144,8 +142,7 @@ schedule:
           start: 2024-11-11T15:45:00.000Z
           end: 2024-11-11T15:52:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            In a historic year of global elections, billions of voters face the
+          description: In a historic year of global elections, billions of voters face the
             near-certainty of encountering AI-generated misinformation impacting
             democratic processes. Numbers Protocol is deploying novel
             decentralized tools worldwide to establish provenance for digital
@@ -158,8 +155,7 @@ schedule:
           start: 2024-11-11T15:53:00.000Z
           end: 2024-11-11T16:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            "Ethereum’s future lies in expanding beyond financial use cases by
+          description: "Ethereum’s future lies in expanding beyond financial use cases by
             enabling large-scale, data-intensive applications across industries
             like AI, media, healthcare, and scientific research. Glitter
             Protocol’s CCIP serves as a data bridge between Filecoin and
@@ -282,6 +278,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/alexei-blagirev/
     image:
       src: /assets/images/alex-blagirev-headshot.webp
+  - image:
+      src: /assets/images/alan_coast.webp
+    name: Alan Ransil
+    title: CEO
+    company: Devonian Systems
+    linkedin: https://www.linkedin.com/in/alan-ransil-53573873/
 sponsors:
   first-tier:
     - name: ZETACUBE
