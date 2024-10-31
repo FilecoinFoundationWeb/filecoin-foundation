@@ -1,6 +1,7 @@
 'use client'
 
 import { BASE_URL } from '@/constants/siteMetadata'
+import { clsx } from 'clsx'
 
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
@@ -12,6 +13,11 @@ type ShareArticleProps = {
   articleTitle: string
   path: string
   sectionTitle?: string
+}
+
+export const TOUCH_TARGET = {
+  class: 'p-2',
+  offsetClass: '-m-2',
 }
 
 export function ShareArticle({
@@ -29,7 +35,12 @@ export function ShareArticle({
   return (
     <div className="space-y-3">
       <p className="font-bold capitalize text-brand-300">{sectionTitle}</p>
-      <ul className="offset-touch-target flex flex-wrap items-center gap-6">
+      <ul
+        className={clsx(
+          'flex flex-wrap items-center gap-6',
+          TOUCH_TARGET.offsetClass,
+        )}
+      >
         <CopyToClipboard
           text={articleUrl}
           notificationTitle="Link copied to clipboard!"
@@ -38,7 +49,10 @@ export function ShareArticle({
           <li key={label} className="inline-flex">
             <CustomLink
               href={href}
-              className="touch-target focus:brand-outline hover:text-brand-400"
+              className={clsx(
+                'focus:brand-outline hover:text-brand-400',
+                TOUCH_TARGET.class,
+              )}
             >
               <Icon component={icon} size={32} weight="light" />
               <span className="sr-only">{`Share on ${label}`}</span>

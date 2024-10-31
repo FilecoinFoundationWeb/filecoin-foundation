@@ -1,7 +1,9 @@
 'use client'
+import { clsx } from 'clsx'
 
 import { useState } from 'react'
 
+import { Button } from '@headlessui/react'
 import { Link } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
 import { useCopyToClipboard } from 'usehooks-ts'
@@ -10,7 +12,7 @@ import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogD
 
 import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
-import { Button } from '@headlessui/react'
+import { TOUCH_TARGET } from '@/components/ShareArticle'
 
 type CopyToClipboardProps = {
   text: string
@@ -45,7 +47,10 @@ export function CopyToClipboard({
         title={notificationTitle}
       />
       <Button
-        className="touch-target focus:brand-outline hover:text-brand-400"
+        className={clsx(
+          'focus:brand-outline hover:text-brand-400',
+          TOUCH_TARGET.class,
+        )}
         onClick={() => handleCopy(text)}
       >
         <Icon component={Link} size={32} weight="light" />
