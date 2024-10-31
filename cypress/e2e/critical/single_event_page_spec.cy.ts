@@ -1,23 +1,25 @@
 import { PATHS } from '@/constants/paths'
 
-import { METADATA_TITLE_SUFFIX } from '@/events/constants/metadata'
+import { generateDynamicPaths } from '@/support/generateDynamicPathsUtil'
 import { getRandomSlug } from '@/support/getRandomSlugUtil'
 import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
 
-describe('Random Event Entry', () => {
+describe('Random Digest Article', () => {
   it('should check metadata', () => {
-    const EVENTS_CONTENT_PATH = PATHS.EVENTS.entriesContentPath as string
-    const EVENTS_BASE_URL = PATHS.EVENTS.path
+    const DIGEST_BASE_PATHS = PATHS.DIGEST
 
-    getRandomSlug(EVENTS_CONTENT_PATH).then((slug) => {
-      const ENTRY_FILE_PATH = `${EVENTS_CONTENT_PATH}/${slug}.md`
-      const PAGE_URL = `${EVENTS_BASE_URL}/${slug}`
+    getRandomSlug(DIGEST_BASE_PATHS.entriesContentPath as string).then(
+      (slug) => {
+        const { contentFilePath, pageUrl } = generateDynamicPaths(
+          DIGEST_BASE_PATHS,
+          slug,
+        )
 
-      verifyMetadataForDynamicPages({
-        contentFilePath: ENTRY_FILE_PATH,
-        urlPath: PAGE_URL,
-        metadataTitleSuffix: METADATA_TITLE_SUFFIX,
-      })
-    })
+        verifyMetadataForDynamicPages({
+          contentFilePath,
+          urlPath: pageUrl,
+        })
+      },
+    )
   })
 })

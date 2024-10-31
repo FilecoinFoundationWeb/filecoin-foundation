@@ -1,21 +1,25 @@
 import { PATHS } from '@/constants/paths'
 
+import { generateDynamicPaths } from '@/support/generateDynamicPathsUtil'
 import { getRandomSlug } from '@/support/getRandomSlugUtil'
 import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
 
 describe('Random Digest Article', () => {
   it('should check metadata', () => {
-    const DIGEST_CONTENT_PATH = PATHS.DIGEST.entriesContentPath as string
-    const DIGEST_BASE_URL = PATHS.DIGEST.path
+    const DIGEST_BASE_PATHS = PATHS.DIGEST
 
-    getRandomSlug(DIGEST_CONTENT_PATH).then((slug) => {
-      const ENTRY_FILE_PATH = `${DIGEST_CONTENT_PATH}/${slug}.md`
-      const PAGE_URL = `${DIGEST_BASE_URL}/${slug}`
+    getRandomSlug(DIGEST_BASE_PATHS.entriesContentPath as string).then(
+      (slug) => {
+        const { contentFilePath, pageUrl } = generateDynamicPaths(
+          DIGEST_BASE_PATHS,
+          slug,
+        )
 
-      verifyMetadataForDynamicPages({
-        contentFilePath: ENTRY_FILE_PATH,
-        urlPath: PAGE_URL,
-      })
-    })
+        verifyMetadataForDynamicPages({
+          contentFilePath,
+          urlPath: pageUrl,
+        })
+      },
+    )
   })
 })

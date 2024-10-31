@@ -1,24 +1,27 @@
 import { PATHS } from '@/constants/paths'
 
 import { METADATA_TITLE_SUFFIX } from '@/ecosystem-explorer/constants/metadata'
+import { generateDynamicPaths } from '@/support/generateDynamicPathsUtil'
 import { getRandomSlug } from '@/support/getRandomSlugUtil'
 import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynamicPagesUtil'
 
 describe('Random Ecosystem Explorer Project', () => {
   it('should check metadata', () => {
-    const ECOSYSTEM_CONTENT_PATH = PATHS.ECOSYSTEM_EXPLORER
-      .entriesContentPath as string
-    const ECOSYSTEM_BASE_URL = PATHS.ECOSYSTEM_EXPLORER.path
+    const ECOSYSTEM_BASE_PATHS = PATHS.ECOSYSTEM_EXPLORER
 
-    getRandomSlug(ECOSYSTEM_CONTENT_PATH).then((slug) => {
-      const ENTRY_FILE_PATH = `${ECOSYSTEM_CONTENT_PATH}/${slug}.md`
-      const PAGE_URL = `${ECOSYSTEM_BASE_URL}/${slug}`
+    getRandomSlug(ECOSYSTEM_BASE_PATHS.entriesContentPath as string).then(
+      (slug) => {
+        const { contentFilePath, pageUrl } = generateDynamicPaths(
+          ECOSYSTEM_BASE_PATHS,
+          slug,
+        )
 
-      verifyMetadataForDynamicPages({
-        contentFilePath: ENTRY_FILE_PATH,
-        urlPath: PAGE_URL,
-        metadataTitleSuffix: METADATA_TITLE_SUFFIX,
-      })
-    })
+        verifyMetadataForDynamicPages({
+          contentFilePath,
+          urlPath: pageUrl,
+          metadataTitleSuffix: METADATA_TITLE_SUFFIX,
+        })
+      },
+    )
   })
 })
