@@ -10,7 +10,6 @@ image:
   src: /assets/images/davos-2023-pic.png
 category: hosted
 seo:
-  title: The Filecoin Sanctuary Davos
   description:
     Participate in The Filecoin Sanctuary at Davos to engage with the Filecoin
     community and learn about the latest developments.

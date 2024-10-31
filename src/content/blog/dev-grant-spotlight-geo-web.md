@@ -10,7 +10,6 @@ description: The Geo Web project, a participant in Filecoin’s Developer Grants
 image:
   src: /assets/images/64423aafa6ec4151d52a3dc9_0-eczvdfkkiozsdvgv.jpeg
 seo:
-  title: "Dev Grant Spotlight: Geo Web"
   description: Spotlight on Geo Web, exploring their innovative solutions and
     contributions to the Filecoin ecosystem.
 ---

@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-21.png
 category: news
 seo:
-  title: Introducing the Filecoin Storage Provider Incubation Center
   description:
     Filecoin Foundation launches the Storage Provider Incubation Center
     to support new providers.

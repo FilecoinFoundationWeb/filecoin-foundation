@@ -1,6 +1,6 @@
 ---
 title:
-  "Announcing the Filecoin nv22 Dragon Upgrade: A Leap Forward in Network Efficiency
+  "Announcing the Filecoin NV22 Dragon Upgrade: A Leap Forward in Network Efficiency
   and Flexibility"
 created-on: 2024-04-24T13:19:08.153000Z
 updated-on: 2024-04-24T13:19:08.172000Z
@@ -10,7 +10,6 @@ description: Filecoin nv22 Dragon upgrade has launched on mainnet.
 image:
   src: /assets/images/blog-header-_-nv22-upgrade.png
 seo:
-  title: "Filecoin NV22 Dragon Upgrade: Enhancing Network Efficiency"
   description:
     Announcing the Filecoin NV22 Dragon upgrade. Discover the leap forward
     in network efficiency and flexibility.

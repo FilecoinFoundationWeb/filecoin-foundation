@@ -12,7 +12,6 @@ image:
   src: /assets/images/06012023-lightningupgrade.png
 category: news
 seo:
-  title: Filecoin NV19 Lightning Upgrade
   description:
     Announcing the Filecoin NV19 Lightning upgrade. Discover the improvements
     and new features.

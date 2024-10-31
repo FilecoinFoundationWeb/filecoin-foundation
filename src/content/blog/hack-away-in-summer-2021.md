@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-31.png
 category: events
 seo:
-  title: Hack Away in Summer 2021
   description:
     Join the hacking events in summer 2021. Learn, build, and collaborate
     with the Filecoin community.

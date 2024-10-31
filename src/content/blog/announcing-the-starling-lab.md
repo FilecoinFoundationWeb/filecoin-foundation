@@ -10,7 +10,6 @@ description: >-
   trust in the most sensitive digital records of our human history.
 category: news
 seo:
-  title: Announcing the Starling Lab by Filecoin Foundation
   description:
     Filecoin Foundation announces the Starling Lab. Discover how it aims
     to protect human history with decentralized tech.

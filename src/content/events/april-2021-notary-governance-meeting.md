@@ -11,7 +11,6 @@ start-date: 2021-04-12T22:00:00.000Z
 image:
   src: /assets/images/governance-logo.jpg
 seo:
-  title: April 2021 Notary Governance Meeting
   description:
     Participate in the April 2021 Notary Governance Meeting to discuss
     Filecoin governance issues.

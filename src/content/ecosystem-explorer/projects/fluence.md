@@ -17,7 +17,6 @@ featured-content: "https://www.youtube.com/watch?v=uFhPJ1wR1GQ"
 subcategories:
   - infrastructure
 seo:
-  title: Fluence
   description: Fluence offers decentralized computing solutions for peer-to-peer applications.
 email: encrypted::U2FsdGVkX1/ciPJHiovcbSZdh2/Yz592T0WGVTWvf1HF34AhUfU+JLh5xfT43Wnj
 full-name: encrypted::U2FsdGVkX1/17/Yh5rUjXOVSUxR/qvnOkkHuvjbyMtI=

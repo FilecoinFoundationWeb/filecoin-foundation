@@ -18,7 +18,6 @@ year-joined: 2024-01-24T13:50:38.359000Z
 subcategories:
   - governance-daos-public-goods
 seo:
-  title: Collectif DAO
   description:
     Collectif DAO is a decentralized autonomous organization for creative
     communities.

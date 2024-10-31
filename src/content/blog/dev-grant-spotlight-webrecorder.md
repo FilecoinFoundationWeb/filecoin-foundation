@@ -13,7 +13,6 @@ image:
   src: /assets/images/image-c-14.png
 category: reports
 seo:
-  title: "Dev Grant Spotlight: Webrecorder"
   description:
     Webrecorder's journey and achievements as a recipient of the Filecoin
     dev grant. Learn more about their project.

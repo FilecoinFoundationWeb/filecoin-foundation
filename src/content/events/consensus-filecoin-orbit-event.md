@@ -14,7 +14,6 @@ end-date: 2024-05-30T17:00:00.000Z
 image:
   src: /assets/images/consensus-2024.png
 seo:
-  title: Consensus Filecoin Orbit Event
   description: Attend the Consensus Filecoin Orbit Event to connect with the
     Filecoin community and learn the latest updates.
 ---

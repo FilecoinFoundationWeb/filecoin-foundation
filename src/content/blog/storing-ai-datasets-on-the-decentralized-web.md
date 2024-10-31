@@ -13,7 +13,6 @@ image:
   src: /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
 category: use-cases
 seo:
-  title: Storing AI Datasets on the Decentralized Web
   description:
     Learn how AI datasets are stored on the decentralized web using Filecoin.
     Benefits and challenges.

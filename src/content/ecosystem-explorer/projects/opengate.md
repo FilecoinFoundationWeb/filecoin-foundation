@@ -17,7 +17,6 @@ tech:
 twitter: https://twitter.com/OpenGateNFT
 year-joined: 2021-02-01T23:00:00.000Z
 seo:
-  title: OpenGate
   description: OpenGate provides decentralized solutions for data storage and management.
 ---
 

@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-29.png
 category: news
 seo:
-  title: Meet the Newest Members of the Filecoin Foundation Team
   description:
     Introducing the newest members of the Filecoin Foundation team. Learn
     about their roles and backgrounds.

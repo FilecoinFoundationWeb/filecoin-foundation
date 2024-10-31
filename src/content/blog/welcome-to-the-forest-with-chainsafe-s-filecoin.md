@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-19.png
 category: ecosystem
 seo:
-  title: Welcome to the Forest with ChainSafe's Filecoin
   description:
     Explore ChainSafe's Filecoin project, 'Welcome to the Forest.' Learn
     about its features and benefits.

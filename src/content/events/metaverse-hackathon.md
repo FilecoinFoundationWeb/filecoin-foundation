@@ -11,7 +11,6 @@ start-date: 2022-04-19T16:00:45.000Z
 image:
   src: /assets/images/645215fba2b7469c5c5546ea_image_ldbpld.png
 seo:
-  title: Metaverse Hackathon
   description: Participate in the Metaverse Hackathon to innovate and build
     applications for the metaverse.
 ---

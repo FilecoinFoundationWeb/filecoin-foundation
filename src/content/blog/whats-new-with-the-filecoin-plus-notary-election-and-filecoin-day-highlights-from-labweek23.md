@@ -14,7 +14,6 @@ category: news
 image:
   src: /assets/images/231120-fd-fpd.png
 seo:
-  title: Highlights from Filecoin Plus Notary Election and Filecoin Day at LabWeek23
   description: Discover the latest updates from Filecoin Plus Notary Election and Filecoin Day at LabWeek23, including AI and decentralized storage discussions.
 ---
 

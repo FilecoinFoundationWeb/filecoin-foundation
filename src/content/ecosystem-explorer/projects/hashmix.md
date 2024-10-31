@@ -15,7 +15,6 @@ website: https://fvm.hashmix.org/
 twitter: https://twitter.com/HashMixOfficial
 year-joined: 2020-12-31T15:00:00Z
 seo:
-  title: HashMix
   description:
     HashMix offers decentralized finance solutions for cross-chain asset
     management.

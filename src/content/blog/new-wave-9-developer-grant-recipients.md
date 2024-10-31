@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-17.png
 category: news
 seo:
-  title: Announcing the New Wave 9 Developer Grant Recipients
   description:
     Meet the new recipients of the Filecoin Wave 9 developer grants. Discover
     their innovative projects.

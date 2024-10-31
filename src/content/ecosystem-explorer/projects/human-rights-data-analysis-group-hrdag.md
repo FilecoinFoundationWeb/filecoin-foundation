@@ -19,7 +19,6 @@ twitter: https://twitter.com/hrdag
 subcategories:
   - social-impact
 seo:
-  title: Human Rights Data Analysis Group (HRDAG)
   description:
     HRDAG offers decentralized solutions for human rights data collection
     and analysis.

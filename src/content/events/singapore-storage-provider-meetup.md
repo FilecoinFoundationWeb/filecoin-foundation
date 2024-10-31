@@ -12,7 +12,6 @@ image:
   src: /assets/images/6452194af82dbf21df953f96_singapore-sp.jpg
 category: hosted
 seo:
-  title: Singapore Storage Provider Meetup
   description:
     Participate in the Singapore Storage Provider Meetup to network and
     learn about Filecoin storage solutions.

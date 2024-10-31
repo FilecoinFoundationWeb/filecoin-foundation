@@ -47,7 +47,6 @@ function getLocation({
 
 export function generateStructuredData(data: Event): WithContext<EventSchema> {
   const {
-    title,
     slug,
     description,
     startDate,
@@ -55,6 +54,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     image,
     location,
     externalLink,
+    seo,
   } = data
 
   const eventLocation: LocationType = getLocation({
@@ -72,7 +72,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     '@context': SCHEMA_CONTEXT_URL,
     '@type': 'Event',
     eventAttendanceMode,
-    name: title,
+    name: seo.title,
     description,
     startDate: startDate.toISOString(),
     endDate: (endDate || startDate)?.toISOString(),

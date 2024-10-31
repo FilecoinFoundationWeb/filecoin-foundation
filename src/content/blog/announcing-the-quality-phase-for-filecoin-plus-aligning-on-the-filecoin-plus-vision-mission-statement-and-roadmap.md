@@ -13,7 +13,6 @@ image:
   src: /assets/images/03292023-filplusmission.png
 category: ecosystem
 seo:
-  title: "Filecoin Plus Quality Phase: Vision and Roadmap"
   description:
     Announcing the Filecoin Plus quality phase. Learn about the vision,
     mission, and roadmap for the initiative.

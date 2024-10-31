@@ -19,7 +19,6 @@ tech:
 repo: https://github.com/AlgoveraAI
 twitter: https://twitter.com/algoveraai
 seo:
-  title: "Algovera: No-Code Platform for Building AI Apps & Data Science Tools"
   description:
     Build AI apps effortlessly with Algovera's no-code platform. Access
     an AI hub for data scientists, decentralized storage, and integrations with

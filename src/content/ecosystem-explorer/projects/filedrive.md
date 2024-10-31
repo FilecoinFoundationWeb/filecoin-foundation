@@ -18,7 +18,6 @@ twitter: "https://twitter.com/FileDrive1"
 subcategories:
   - data-storage-management
 seo:
-  title: FileDrive
   description:
     FileDrive provides decentralized storage solutions for personal and
     enterprise use.

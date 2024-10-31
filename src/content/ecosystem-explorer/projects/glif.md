@@ -18,7 +18,6 @@ year-joined: 2024-02-07T20:17:14.469000Z
 subcategories:
   - developer-tools
 seo:
-  title: Glif
   description:
     Glif offers decentralized tools and infrastructure for the Filecoin
     network.

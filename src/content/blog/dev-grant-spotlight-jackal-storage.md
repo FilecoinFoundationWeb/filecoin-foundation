@@ -9,8 +9,8 @@ description: JACKAL Storage is a platform that provides a secure, private, and
 image:
   src: /assets/images/64423ab18d1be70ae7ce9031_1-qwnolzesajrp3gjwrthflg.png
 seo:
-  title: "Dev Grant Spotlight: Jackal Storage"
-  description: Jackal Storage's impactful work as a Filecoin Foundation Dev Grant
+  description:
+    Jackal Storage's impactful work as a Filecoin Foundation Dev Grant
     recipient. Dive into their project and achievements.
 ---
 

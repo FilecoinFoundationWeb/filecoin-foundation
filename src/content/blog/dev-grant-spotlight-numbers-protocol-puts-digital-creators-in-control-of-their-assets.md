@@ -11,8 +11,8 @@ description: "Numbers Protocol: Revolutionizing the creator economy by
 image:
   src: /assets/images/0315-dgs-numbers.png
 seo:
-  title: "Dev Grant Spotlight: Numbers Protocol - Empowering Digital Creators"
-  description: Numbers Protocol puts digital creators in control of their assets.
+  description:
+    Numbers Protocol puts digital creators in control of their assets.
     Explore their journey as a dev grant recipient.
 ---
 

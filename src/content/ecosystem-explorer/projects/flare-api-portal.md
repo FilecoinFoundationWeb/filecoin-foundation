@@ -18,7 +18,6 @@ twitter: https://twitter.com/APIPortal
 video-url: https://www.youtube.com/embed/mBTyTwh-Wzo
 year-joined: 2024-04-05T13:18:56.264Z
 seo:
-  title: Flare API Portal
   description:
     Flare API Portal offers decentralized API solutions for blockchain
     applications.

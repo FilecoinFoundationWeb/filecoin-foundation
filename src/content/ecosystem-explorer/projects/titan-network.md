@@ -20,7 +20,6 @@ year-joined: 2024-01-11T13:26:59.787Z
 subcategories:
   - infrastructure
 seo:
-  title: Titan Network
   description: Titan Network offers decentralized solutions for blockchain infrastructure.
 email: encrypted::U2FsdGVkX19sf+hxz6eg44v03StOEchjqiUonXPGpP7iLIzY5lIqXsmMdBSDOJoW
 full-name: encrypted::U2FsdGVkX1+UIXHL7nrSIX2MMgl0/SUDQzRBMU0AVAs=

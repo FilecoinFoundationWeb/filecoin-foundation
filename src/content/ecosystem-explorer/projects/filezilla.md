@@ -18,7 +18,6 @@ year-joined: 2024-02-21T15:20:11.125000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Filezilla
   description: Filezilla offers decentralized file storage and management solutions.
 email: encrypted::U2FsdGVkX1+g8an3PSXetYjodZ0459ma9Rzwz1HjJ8b9kGVLA4/MVu50XOx8X0UG
 full-name: encrypted::U2FsdGVkX18wwfhu3wGAYT8eDq+daob2Jsr59JcbLyc=

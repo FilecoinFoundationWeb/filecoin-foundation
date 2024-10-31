@@ -9,7 +9,6 @@ image:
   src: /assets/images/synbiobeta-2023.png
 category: supported-sponsored
 seo:
-  title: SynBioBeta
   description:
     Join SynBioBeta to connect with the synthetic biology community and
     explore innovations in the field.

@@ -16,7 +16,6 @@ tech:
 twitter: https://x.com/bagel_network
 year-joined: 2024-07-08T16:00:00.000Z
 seo:
-  title: Bagel
   description: Explore Bagel, an AI and cryptography research lab pioneering GPU
     restaking for enhanced AI productivity. Partnered with Filecoin for
     cutting-edge developments.

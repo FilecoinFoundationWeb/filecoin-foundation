@@ -9,7 +9,6 @@ description: Portrait is the first open-source web page builder, allowing people
 image:
   src: /assets/images/64423ab50425d36d72f2895f_1-brm0bxgpfk7-tr5tfyq-la.png
 seo:
-  title: "Dev Grant Spotlight: Portrait"
   description: Portrait's contributions to the Filecoin ecosystem highlighted in
     this dev grant spotlight. Learn more.
 ---

@@ -12,7 +12,6 @@ created-on: "2023-04-21T07:27:29.284Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Meta Blockchain"
   description:
     Meta Blockchain's contributions to the Filecoin storage network. Learn
     more about their innovations.

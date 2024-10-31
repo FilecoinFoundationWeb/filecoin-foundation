@@ -13,7 +13,6 @@ image:
   src: /assets/images/0621-2022-01.png
 category: news
 seo:
-  title: "FIP0056 Update: Proposal Rejected"
   description:
     FIP0056 proposal rejected following community feedback and deliberation.
     Explore the details.

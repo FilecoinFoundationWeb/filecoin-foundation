@@ -11,7 +11,6 @@ image:
   src: /assets/images/645244ea3a4dd637ee3c0347_0609-ffxunfinished.jpg
 category: news
 seo:
-  title: Recognizing the Recipients of the Explorer Awards
   description:
     Celebrate the recipients of the Explorer Awards. Recognizing innovation
     and excellence in decentralized tech.

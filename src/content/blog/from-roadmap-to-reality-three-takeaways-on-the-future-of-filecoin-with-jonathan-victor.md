@@ -14,7 +14,6 @@ description:
 image:
   src: /assets/images/jonathan-victor.png
 seo:
-  title: "From Roadmap to Reality: Future of Filecoin with Jonathan Victor"
   description:
     Three key takeaways on the future of Filecoin with Jonathan Victor.
     From roadmap to reality.

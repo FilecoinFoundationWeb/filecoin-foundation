@@ -21,7 +21,6 @@ year-joined: 2023-12-01T15:08:38.544000Z
 subcategories:
   - infrastructure
 seo:
-  title: Marlin Protocol
   description: Marlin Protocol offers decentralized network infrastructure solutions.
 email: encrypted::U2FsdGVkX19cvqpd6PMdbZoCQpEBR4hKGVCU9Il9D2x9MouX0WKzhJFkcLSp2Rpd
 full-name: encrypted::U2FsdGVkX1+JB5xQJNnUo6/hwiOGRxm4g8Uzbe86sqw=
