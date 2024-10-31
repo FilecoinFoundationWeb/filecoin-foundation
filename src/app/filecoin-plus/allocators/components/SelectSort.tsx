@@ -11,7 +11,7 @@ import type { Column, SortDirection } from '@tanstack/react-table'
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 export type TableSortOption = {
   id: SortDirection
@@ -19,7 +19,7 @@ export type TableSortOption = {
 }
 
 type SortFilterProps = {
-  column: Column<Allocator>
+  column: Column<AllocatorWithDatacap>
   options: ReadonlyArray<TableSortOption>
   defaultOption: TableSortOption
 }

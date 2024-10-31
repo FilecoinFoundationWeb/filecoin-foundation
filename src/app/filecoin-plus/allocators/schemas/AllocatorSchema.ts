@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { DatacapSchema } from './DatacapSchema'
 
 const ApplicationSchema = z.object({
   required_sps: z.string(),
@@ -8,6 +9,7 @@ const ApplicationSchema = z.object({
 
 export const AllocatorSchema = z.object({
   name: z.string(),
+  address: z.string(),
   metapathway_type: z.string(),
   location: z.string(),
   application: ApplicationSchema,
@@ -42,8 +44,11 @@ export const AllocatorFileListMetaDataBaseSchema = z.array(
   AllocatorFileMetaDataBaseSchema,
 )
 
+export const AllocatorWithDatacapSchema = AllocatorSchema.merge(DatacapSchema)
+
 export type Allocator = z.infer<typeof AllocatorSchema>
 export type AllocatorFileMetaDataBase = z.infer<
   typeof AllocatorFileMetaDataBaseSchema
 >
 export type AllocatorFileMetaData = z.infer<typeof AllocatorFileMetaDataSchema>
+export type AllocatorWithDatacap = z.infer<typeof AllocatorWithDatacapSchema>

@@ -3,9 +3,9 @@ import { createColumnHelper } from '@tanstack/react-table'
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
-const columnHelper = createColumnHelper<Allocator>()
+const columnHelper = createColumnHelper<AllocatorWithDatacap>()
 
 export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
@@ -28,6 +28,22 @@ export const allocatorsTableColumnsData = [
     cell: (info) => info.getValue(),
     filterFn: 'includesString',
   }),
+  columnHelper.accessor('remainingDatacap', {
+    header: 'Remaining Datacap',
+    cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-44',
+    },
+    filterFn: 'includesString',
+  }),
+  columnHelper.accessor('allowance', {
+    header: 'Used Datacap',
+    cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-44',
+    },
+    filterFn: 'includesString',
+  }),
   columnHelper.accessor('application.required_replicas', {
     header: () => (
       <TooltipHeader
@@ -45,6 +61,13 @@ export const allocatorsTableColumnsData = [
       />
     ),
     cell: (info) => info.getValue(),
+  }),
+  columnHelper.accessor('application.required_sps', {
+    header: 'Required SPs',
+    cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-44',
+    },
   }),
   columnHelper.accessor('application.allocation_bookkeeping', {
     header: 'Apply',

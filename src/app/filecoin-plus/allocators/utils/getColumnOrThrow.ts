@@ -1,10 +1,10 @@
 import type { Table } from '@tanstack/react-table'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 export function getColumnOrThrow(
-  table: Table<Allocator>,
-  columnName: keyof Allocator,
+  table: Table<AllocatorWithDatacap>,
+  columnName: keyof AllocatorWithDatacap,
 ) {
   const column = table.getColumn(columnName)
 
