@@ -17,7 +17,6 @@ year-joined: 2022-03-01T15:02:57.607000Z
 subcategories:
   - data-storage-management
 seo:
-  title: ND Labs
   description: ND Labs provides decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX19aF+TR5qU+/vEq7+cSaLdXyZtE5YUqjnsji0cgqfu97Bk5f+fNYULF
 full-name: encrypted::U2FsdGVkX18f44ABIGpWuLd5IYjA63SQngUBa6lqsFc=

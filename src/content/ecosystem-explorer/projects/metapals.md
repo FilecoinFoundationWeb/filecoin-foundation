@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:53.034000Z
 subcategories:
   - dapp
 seo:
-  title: MetaPals
   description: MetaPals offers decentralized solutions for social networking and collaboration.
 email: encrypted::U2FsdGVkX18wp4ly7Gm4cBQk9+0iAt96/fuFy/IjPcA62lvqUlEf8WdvgNcgivI+
 full-name: encrypted::U2FsdGVkX1+BcLuGvjcS1OYaoWUARwTFoRVj+loQKrc=

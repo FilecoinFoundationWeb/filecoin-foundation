@@ -19,7 +19,6 @@ twitter: https://twitter.com/LighthouseWeb3
 subcategories:
   - data-storage-management
 seo:
-  title: Lighthouse
   description:
     Lighthouse provides decentralized storage solutions for personal and
     enterprise use.

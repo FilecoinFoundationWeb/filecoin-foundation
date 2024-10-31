@@ -18,8 +18,6 @@ tech:
 repo: https://github.com/team-acaisia
 year-joined: 2023-09-01T18:56:33.186Z
 seo:
-  title: "Acaisia by Eliovp: Optimized Cloud Platform with Intelligent Workload
-    Distribution"
   description: Acaisia's platform optimizes your cloud with smart workload
     distribution and hardware autotuning. Reduce costs, minimize idle resources,
     and maximize ROI with power-efficient scheduling and Sealing As A Service.

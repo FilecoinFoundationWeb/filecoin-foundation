@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-20.png
 category: ecosystem
 seo:
-  title: "Get Involved in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"
   description:
     Learn how to participate in the Filecoin ecosystem through bounties,
     microgrants, and FIPs.

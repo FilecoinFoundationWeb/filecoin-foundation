@@ -11,7 +11,6 @@ image:
   src: /assets/images/fip18.png
 category: news
 seo:
-  title: Filecoin Community Approves Change to Storage Provider Terminology
   description:
     The Filecoin community approves a change in storage provider terminology.
     Learn more.

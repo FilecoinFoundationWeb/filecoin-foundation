@@ -12,7 +12,6 @@ image:
   src: /assets/images/fip-header.png
 category: ecosystem
 seo:
-  title: Gathering Community Input on FIP-0018
   description:
     Weigh in on FIP-0018 for changing miner to storage provider terminology.
     Community feedback needed.

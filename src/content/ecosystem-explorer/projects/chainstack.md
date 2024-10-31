@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:49.352000Z
 subcategories:
   - infrastructure
 seo:
-  title: Chainstack
   description: Chainstack provides blockchain infrastructure and development tools.
 email: encrypted::U2FsdGVkX19FdYxtIAXza4rObxyDiDeMfSaRtvVl+I6PIXLRps2UyuSnSSMWG8DQ
 full-name: encrypted::U2FsdGVkX1/q8XIL64Ua+NUTUVrDPHd6uv8IU6yPnVs=

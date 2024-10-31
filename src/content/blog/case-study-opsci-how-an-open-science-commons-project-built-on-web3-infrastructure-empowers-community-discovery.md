@@ -12,7 +12,6 @@ image:
   src: /assets/images/0224-cs-opsci.png
 category: use-cases
 seo:
-  title: "Case Study: OpSci Empowers Community Discovery with Web3"
   description:
     Discover how OpSci uses Web3 infrastructure to empower community discovery.
     A comprehensive case study.

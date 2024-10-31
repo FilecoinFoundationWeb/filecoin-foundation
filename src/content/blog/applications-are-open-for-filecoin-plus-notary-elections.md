@@ -10,7 +10,6 @@ image:
   src: /assets/images/0218-filpluselection.png
 category: news
 seo:
-  title: Applications Open for Filecoin Plus Notary Elections
   description:
     Filecoin Plus notary elections are now open. Apply to contribute to
     the network's governance and trust framework.

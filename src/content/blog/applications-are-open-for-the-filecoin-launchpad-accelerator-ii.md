@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-26.png
 category: news
 seo:
-  title: "Apply Now: Filecoin Launchpad Accelerator II"
   description:
     Applications are open for the Filecoin Launchpad Accelerator II. Join
     and accelerate your blockchain project.

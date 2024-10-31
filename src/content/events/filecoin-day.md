@@ -12,7 +12,6 @@ end-date: 2023-11-14T18:30:36.580Z
 image:
   src: /assets/images/signal-2023-11-12-145615_002.jpeg
 seo:
-  title: Filecoin Day
   description: Celebrate Filecoin Day and learn about the latest updates and
     innovations in the Filecoin ecosystem.
 ---

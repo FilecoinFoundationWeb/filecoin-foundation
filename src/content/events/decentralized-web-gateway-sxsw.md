@@ -15,7 +15,6 @@ start-date: 2022-03-15T07:23:50.000Z
 image:
   src: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
 seo:
-  title: Decentralized Web Gateway SXSW
   description: Join the Decentralized Web Gateway at SXSW to explore the
     innovations in decentralized web technologies.
 ---

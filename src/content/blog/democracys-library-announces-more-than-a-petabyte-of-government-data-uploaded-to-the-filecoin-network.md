@@ -8,7 +8,6 @@ image:
   src: /assets/images/1018-sps-democracyslibrary.png
 category: news
 seo:
-  title: Democracy’s Library Uploads Over a Petabyte of Government Data to Filecoin Network
   description: Discover how Democracy’s Library has successfully uploaded over a petabyte of U.S. government data to the Filecoin network, ensuring long-term preservation and accessibility.
 ---
 

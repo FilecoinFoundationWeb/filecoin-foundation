@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:52.162000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Expanso
   description:
     Expanso provides decentralized storage solutions for data archiving
     and management.

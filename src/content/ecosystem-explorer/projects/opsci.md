@@ -20,7 +20,6 @@ tech:
 repo: https://github.com/opscientia
 twitter: https://twitter.com/opscientia
 seo:
-  title: Opsci
   description:
     Opsci offers decentralized solutions for scientific data management
     and collaboration.

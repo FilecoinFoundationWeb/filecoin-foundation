@@ -13,7 +13,6 @@ image:
   src: /assets/images/645215f691cf5c91a16146aa_https___cdn-evbuc-com_images_239998219_264947572824_1_original.jpeg
 category: supported-sponsored
 seo:
-  title: Web3 Hacker House at SXSW
   description:
     Participate in the Web3 Hacker House at SXSW to innovate and build
     decentralized applications.

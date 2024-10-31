@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-30.png
 category: reports
 seo:
-  title: Exploring Blockchain and Copyright Law
   description:
     A deep dive into the intersection of blockchain technology and copyright
     law. Understand the legal implications.

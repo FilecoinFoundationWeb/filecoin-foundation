@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423a88f053c985627f3ae7_1-ko-wwh4crpe6t8ioqymtfq.png
 category: news
 seo:
-  title: Announcing Network Upgrade Skyr by Filecoin Foundation
   description:
     Filecoin Foundation announces Skyr network upgrade. Learn about the
     enhancements and new features.

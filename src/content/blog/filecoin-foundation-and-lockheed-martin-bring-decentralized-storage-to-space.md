@@ -15,7 +15,6 @@ image:
   src: /assets/images/01-lockheed-p-1080.png
 category: news
 seo:
-  title: Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space
   description:
     Learn about the collaboration between Filecoin Foundation and Lockheed
     Martin to bring decentralized storage to space.

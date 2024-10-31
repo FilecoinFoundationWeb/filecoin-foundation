@@ -16,7 +16,6 @@ image:
   src: /assets/images/n-schneider-blogpost-banner.png
 category: ecosystem
 seo:
-  title: Decentralization in Online Community Governance in Five Minutes
   description:
     Understand the uses of decentralization in online community governance
     in this brief overview.

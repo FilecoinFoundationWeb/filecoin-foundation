@@ -19,7 +19,6 @@ twitter: https://twitter.com/fileverse
 subcategories:
   - data-storage-management
 seo:
-  title: Fileverse
   description: Fileverse provides decentralized storage solutions for the metaverse.
 email: encrypted::U2FsdGVkX19VhJszfn2ttbAeReEqdZeEksZoFEPcSq6a73O6iJ2txOd0iR/HuBWj
 full-name: encrypted::U2FsdGVkX1+yZ5c+Mvufu5oj9Jn4R8XnERcBzBRiJng=

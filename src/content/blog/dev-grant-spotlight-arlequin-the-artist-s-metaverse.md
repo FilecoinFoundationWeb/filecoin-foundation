@@ -11,7 +11,6 @@ description: Arlequin — the Artists Metaverse — is a community-driven,
 image:
   src: /assets/images/64423aa70425d34fa6f2743e_1-s1umhgp4fz8mfyk3fixjia.png
 seo:
-  title: "Dev Grant Spotlight: Arlequin - The Artist’s Metaverse"
   description: Arlequin's Artist’s Metaverse project spotlight. Discover their
     journey with the Filecoin Foundation Dev Grant.
 ---

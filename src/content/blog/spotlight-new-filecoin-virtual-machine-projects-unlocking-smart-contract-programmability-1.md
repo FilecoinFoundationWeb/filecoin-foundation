@@ -13,7 +13,6 @@ image:
   src: /assets/images/rectangle-32-.png
 category: news
 seo:
-  title: "Spotlight: New Filecoin Virtual Machine Projects"
   description:
     Highlighting new projects on the Filecoin Virtual Machine. Unlocking
     smart contract programmability.

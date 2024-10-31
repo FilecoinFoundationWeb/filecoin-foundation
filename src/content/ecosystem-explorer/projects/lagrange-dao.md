@@ -18,7 +18,6 @@ twitter: "https://twitter.com/lagrangedao"
 subcategories:
   - governance-daos-public-goods
 seo:
-  title: Lagrange DAO
   description:
     Lagrange DAO offers decentralized solutions for community management
     and governance.

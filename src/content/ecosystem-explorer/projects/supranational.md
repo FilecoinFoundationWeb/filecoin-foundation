@@ -21,7 +21,6 @@ year-joined: 2024-01-11T13:26:59.787Z
 subcategories:
   - data-storage-management
 seo:
-  title: Supranational
   description:
     Supranational offers decentralized solutions for data security and
     cryptography.

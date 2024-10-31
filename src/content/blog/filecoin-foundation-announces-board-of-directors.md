@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-06.png
 category: news
 seo:
-  title: Filecoin Foundation Announces Board of Directors
   description:
     Filecoin Foundation announces the new board of directors. Learn about
     the new members.

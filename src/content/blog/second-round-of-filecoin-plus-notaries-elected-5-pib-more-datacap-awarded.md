@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-34.png
 category: news
 seo:
-  title: Second Round of Filecoin Plus Notaries Elected
   description:
     Announcing the second round of Filecoin Plus notaries. Over 5 PiB of
     Datacap awarded. Learn more.

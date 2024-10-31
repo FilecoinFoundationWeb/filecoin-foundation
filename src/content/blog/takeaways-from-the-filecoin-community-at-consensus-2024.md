@@ -8,7 +8,6 @@ image:
   src: /assets/images/060624-consensus.png
 category: events
 seo:
-  title: "Filecoin Community Highlights from Consensus 2024"
   description: "Discover key highlights and innovations presented by the Filecoin community at Consensus 2024 in Austin."
 ---
 

@@ -16,7 +16,6 @@ tech:
   - filecoin
 year-joined: 2024-03-29T21:28:51.053Z
 seo:
-  title: Filet Finance
   description: Filet Finance offers decentralized finance solutions on the Filecoin network.
 ---
 

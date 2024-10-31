@@ -16,7 +16,6 @@ tech:
 twitter: https://x.com/SolMediaTech
 year-joined: 2024-04-25T17:21:06.512Z
 seo:
-  title: SolMedia
   description:
     SolMedia provides decentralized solutions for digital media storage
     and management.

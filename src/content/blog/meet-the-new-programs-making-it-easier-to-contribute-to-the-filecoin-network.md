@@ -10,7 +10,6 @@ image:
   src: /assets/images/12202022-saturnandstation.png
 category: ecosystem
 seo:
-  title: New Programs to Contribute to the Filecoin Network
   description:
     Discover the new programs designed to make it easier to contribute
     to the Filecoin network.

@@ -18,6 +18,5 @@ tech:
   - ipfs
 twitter: https://twitter.com/filscanio
 seo:
-  title: FilScan
   description: FilScan provides blockchain explorer services for the Filecoin network.
 ---

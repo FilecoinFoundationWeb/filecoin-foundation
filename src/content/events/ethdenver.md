@@ -9,7 +9,6 @@ start-date: 2022-02-11T06:57:49.000Z
 image:
   src: /assets/images/645215f9a2b74616855546de_ethdenver.png
 seo:
-  title: ETHDenver
   description:
     Participate in ETHDenver to engage with the Ethereum community and
     explore the latest blockchain innovations.

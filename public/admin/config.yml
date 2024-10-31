@@ -108,6 +108,84 @@ event_sponsor_config: &event_sponsor_config
 
 seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
 
+open_graph_config: &open_graph_config
+  name: "open-graph"
+  label: "Open Graph Metadata"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: "Expand for more information on default values."
+  fields:
+    - name: "title"
+      label: "Open Graph Title"
+      widget: "string"
+      required: false
+      hint: "If left empty, the SEO meta title will be used."
+    - name: "description"
+      label: "Open Graph Description"
+      widget: "string"
+      required: false
+      hint: "If left empty, the SEO meta description will be used."
+    - name: "image"
+      label: "Open Graph Image"
+      widget: "image"
+      allow_multiple: false
+      choose_url: false
+      required: false
+      hint: "If left empty, the page header image will be used. If no header image is present, a default homepage image will be used."
+
+twitter_config: &twitter_config
+  name: "twitter"
+  label: "Twitter Metadata"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: "Expand for more information on default values."
+  fields:
+    - name: "card"
+      label: "Twitter Card"
+      widget: "select"
+      options:
+        - label: "Summary Card"
+          value: "summary"
+        - label: "Summary with Large Image"
+          value: "summary_large_image"
+        - label: "Player Card"
+          value: "player"
+      required: false
+      default: "summary"
+      hint: "If left empty, the default value will be 'Summary Card.'"
+    - name: "site"
+      label: "Twitter Handle for Website"
+      widget: "string"
+      required: false
+      hint: "Enter the Twitter handle of the website or brand (e.g., @FilFoundation). Defaults to @FilFoundation."
+    - name: "creator"
+      label: "Twitter Creator"
+      widget: "string"
+      required: false
+      hint: "Enter the Twitter handle of the content creator (e.g., @juanbenet). Defaults to @FilFoundation."
+
+meta_config_with_title_fallback: &meta_config_with_title_fallback
+  name: "seo"
+  label: "SEO Metadata"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "Meta Title"
+      widget: "string"
+      required: false
+      hint: "If left empty, the main entry title will automatically become the SEO title. '- Filecoin Event' will be added for events, and '- Ecosystem Project' for ecosystem projects. For example: 'Acasia - Filecoin Ecosystem Project' or 'FIL Bangkok 2024 - Filecoin Event'."
+    - name: "description"
+      label: "Meta Description"
+      widget: "text"
+      pattern:
+        - "^.{0,220}$"
+        - "Must have at most 220 characters."
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+    - *open_graph_config
+    - *twitter_config
+
 meta_config: &meta_config
   name: "seo"
   label: "SEO Metadata"
@@ -123,60 +201,8 @@ meta_config: &meta_config
         - "^.{0,220}$"
         - "Must have at most 220 characters."
       hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
-    - name: "open-graph"
-      label: "Open Graph Metadata"
-      widget: "object"
-      required: false
-      collapsed: true
-      hint: "Expand for more information on default values."
-      fields:
-        - name: "title"
-          label: "Open Graph Title"
-          widget: "string"
-          required: false
-          hint: "If left empty, the SEO meta title will be used."
-        - name: "description"
-          label: "Open Graph Description"
-          widget: "string"
-          required: false
-          hint: "If left empty, the SEO meta description will be used."
-        - name: "image"
-          label: "Open Graph Image"
-          widget: "image"
-          allow_multiple: false
-          choose_url: false
-          required: false
-          hint: "If left empty, the page header image will be used. If no header image is present, a default homepage image will be used."
-    - name: "twitter"
-      label: "Twitter Metadata"
-      widget: "object"
-      hint: "Expand for more information on default values."
-      required: false
-      collapsed: true
-      fields:
-        - name: "card"
-          label: "Twitter Card"
-          widget: "select"
-          options:
-            - label: "Summary Card"
-              value: "summary"
-            - label: "Summary with Large Image"
-              value: "summary_large_image"
-            - label: "Player Card"
-              value: "player"
-          required: false
-          default: "summary"
-          hint: "If left empty, the default value will be 'Summary Card'."
-        - name: "site"
-          label: "Twitter Handle for Website"
-          widget: "string"
-          required: false
-          hint: "Enter the Twitter handle of the website or brand (e.g., @FilFoundation). Defaults to @FilFoundation."
-        - name: "creator"
-          label: "Twitter Creator"
-          widget: "string"
-          required: false
-          hint: "Enter the Twitter handle of the content creator (e.g., @juanbenet). Defaults to @FilFoundation."
+    - *open_graph_config
+    - *twitter_config
 
 collections:
   - name: "pages"
@@ -415,7 +441,7 @@ collections:
         widget: "text"
       - *image_config
       - *body_config
-      - *meta_config
+      - *meta_config_with_title_fallback
 
   - name: "digest_articles"
     label: "Digest Articles"
@@ -473,7 +499,7 @@ collections:
             widget: "string"
       - *body_config
       - *image_config
-      - *meta_config
+      - *meta_config_with_title_fallback
 
   - name: "ecosystem_projects_categories"
     label: "Ecosystem Projects Categories"
@@ -605,7 +631,7 @@ collections:
         label: Long Description
         widget: markdown
         required: false
-      - *meta_config
+      - *meta_config_with_title_fallback
 
   - name: "event_entries"
     label: "Events"
@@ -826,4 +852,4 @@ collections:
             label: Event Recap YouTube Playlist URL
             widget: string
             required: false
-      - *meta_config
+      - *meta_config_with_title_fallback

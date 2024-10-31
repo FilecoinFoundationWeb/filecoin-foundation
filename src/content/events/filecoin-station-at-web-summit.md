@@ -10,7 +10,6 @@ image:
   src: /assets/images/websummit-2023.png
 category: supported-sponsored
 seo:
-  title: Filecoin Station at Web Summit
   description:
     Visit the Filecoin Station at Web Summit to discover the latest updates
     and innovations in Filecoin.

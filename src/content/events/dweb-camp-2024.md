@@ -12,7 +12,6 @@ end-date: 2024-08-11T14:55:19.882Z
 image:
   src: /assets/images/dweb-camp24.png
 seo:
-  title: DWeb Camp 2024
   description:
     Attend DWeb Camp 2024 to engage in workshops, talks, and activities
     focused on the decentralized web.

@@ -19,7 +19,6 @@ twitter: "https://twitter.com/tableland"
 subcategories:
   - developer-tools
 seo:
-  title: Tableland
   description: Tableland offers decentralized database solutions for web3 applications.
 email: encrypted::U2FsdGVkX1/DeOaPm+YW7ukLKG8kFNlbgKOXob8Dtwx5MDmvJJw0OpOIUEtRHFbR
 full-name: encrypted::U2FsdGVkX1/KK8cFJO4UrIZ25f3tJnYp+LJioSgmxuM=

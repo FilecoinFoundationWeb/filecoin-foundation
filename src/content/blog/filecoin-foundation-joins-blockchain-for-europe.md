@@ -11,7 +11,6 @@ created-on: "2023-04-21T07:27:21.334Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: news
 seo:
-  title: Filecoin Foundation Joins Blockchain for Europe
   description:
     Filecoin Foundation joins Blockchain for Europe. Learn about the significance
     and objectives of this partnership.

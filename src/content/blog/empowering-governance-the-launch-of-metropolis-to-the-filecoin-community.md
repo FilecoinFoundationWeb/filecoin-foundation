@@ -10,7 +10,6 @@ description:
 image:
   src: /assets/images/blog-header-_-metropolis.png
 seo:
-  title: "Empowering Governance: Launch of Metropolis for Filecoin Community"
   description:
     Announcing the launch of Metropolis to empower governance in the Filecoin
     community. Learn more.

@@ -311,7 +311,6 @@ sponsors:
       image:
         src: /assets/images/long_white.webp
 seo:
-  title: FIL Bangkok 2024
   description: Join the Filecoin Community in Bangkok for discussions on
     decentralized AI, DePIN, and the data economy. Network, hear major
     announcements, and shape the future of Filecoin ahead of Devcon.

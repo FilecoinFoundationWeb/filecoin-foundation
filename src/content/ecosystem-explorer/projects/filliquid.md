@@ -21,7 +21,6 @@ twitter: https://twitter.com/FILLiquid
 video-url: https://www.youtube.com/embed/wYYGW7Rxc0E
 year-joined: 2024-01-24T13:45:47.646Z
 seo:
-  title: FilLiquid
   description: FilLiquid offers decentralized liquidity solutions for the Filecoin network.
 ---
 

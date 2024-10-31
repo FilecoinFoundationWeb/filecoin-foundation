@@ -20,7 +20,6 @@ video-url: https://www.youtube.com/embed/q_5hAe2AzhE
 subcategories:
   - decentralized-science
 seo:
-  title: DeSci Labs
   description:
     DeSci Labs offers decentralized science solutions for data management
     and collaboration.

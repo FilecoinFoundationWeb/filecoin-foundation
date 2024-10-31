@@ -16,7 +16,6 @@ year-joined: 2024-04-04T20:33:26.476000Z
 subcategories:
   - dapp
 seo:
-  title: FVM Dapp
   description:
     FVM Dapp offers decentralized applications built on the Filecoin Virtual
     Machine.

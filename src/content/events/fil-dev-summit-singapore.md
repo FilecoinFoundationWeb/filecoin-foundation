@@ -11,7 +11,6 @@ start-date: 2023-09-25T14:00:04.428Z
 image:
   src: /assets/images/fil-dev-summit.png
 seo:
-  title: FIL Dev Summit Iceland
   description:
     Join the FIL Dev Summit Iceland to collaborate with developers and
     explore the latest in Filecoin technology.

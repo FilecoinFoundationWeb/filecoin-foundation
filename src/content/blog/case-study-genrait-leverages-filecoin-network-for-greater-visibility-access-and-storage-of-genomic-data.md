@@ -14,7 +14,6 @@ image:
   src: /assets/images/image-c-02.png
 category: use-cases
 seo:
-  title: "Case Study: GenRait Leverages Filecoin for Genomic Data Storage"
   description:
     GenRait leverages Filecoin for greater visibility, access, and storage
     of genomic data. Read the full case study.

@@ -8,7 +8,6 @@ location: Virtual
 start-date: 2021-07-07T22:00:00.000Z
 end-date: 2021-08-19T22:00:00.000Z
 seo:
-  title: "Hackathon: Browsers 3000"
   description: "Participate in the Hackathon: Browsers 3000 to innovate and
     showcase your skills in web development."
 ---

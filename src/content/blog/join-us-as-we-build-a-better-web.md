@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423b02e3c08f20a74f51df_1-l9a-l_g2zxiuk3zdsi5lwq-1-.png
 category: ecosystem
 seo:
-  title: Join Us as We Build a Better Web
   description:
     Collaborate with us at Filecoin Foundation to build a better, decentralized
     web. Get involved today.

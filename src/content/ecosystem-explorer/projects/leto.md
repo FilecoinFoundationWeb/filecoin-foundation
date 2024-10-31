@@ -15,7 +15,6 @@ year-joined: 2024-04-05T23:01:19.950000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Leto
   description: Leto offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18QGOOEY3JHr+/PSBmxUNnXl1zFTGdGW2K2NRqqEsJCKNZsGuYPcnRf
 full-name: encrypted::U2FsdGVkX1+hd/xy/g0wTtPVB1N1WRZT1yVgHDi/Glc=

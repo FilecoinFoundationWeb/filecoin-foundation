@@ -11,8 +11,8 @@ description: 4EVERLAND is a blockchain technology-powered cloud computing
 image:
   src: /assets/images/64423aa58d1be7828cce7d89_1-45khiwwqpsgwtnrtjpkoqa.png
 seo:
-  title: "Dev Grant Spotlight: 4EVERLAND"
-  description: Spotlight on 4EVERLAND, a recipient of the Filecoin Foundation Dev
+  description:
+    Spotlight on 4EVERLAND, a recipient of the Filecoin Foundation Dev
     Grant. Learn about their contributions and innovations.
 ---
 

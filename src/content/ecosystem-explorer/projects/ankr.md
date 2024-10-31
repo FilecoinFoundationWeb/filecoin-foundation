@@ -15,7 +15,6 @@ tech:
 twitter: https://twitter.com/ankr
 year-joined: 2024-03-29T21:28:48.751Z
 seo:
-  title: Ankr
   description: Ankr offers decentralized cloud computing and blockchain infrastructure.
 email: encrypted::U2FsdGVkX18K4Lsav7+8cvMqPjAXgx30b4YXLU8yNorkCATKRANgM/omt99+Ic4A
 full-name: encrypted::U2FsdGVkX19hG8+au1vZlMfou3BPcMh6qX6UJByr/b0=
