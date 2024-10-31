@@ -116,8 +116,7 @@ schedule:
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description:
-            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -129,8 +128,7 @@ schedule:
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            "In the realms of DePIN and AI, storage isn’t the endgame — it’s
+          description: "In the realms of DePIN and AI, storage isn’t the endgame — it’s
             just the beginning. The dynamic Filecoin ecosystem features an
             evolving world of L2s, tools for cross-chain applications, and a
             core protocol serving as the DePIN primitive for AI. Check out
@@ -144,22 +142,20 @@ schedule:
           start: 2024-11-11T15:45:00.000Z
           end: 2024-11-11T15:52:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            In a historic year of global elections, billions of voters face the
+          description: In a historic year of global elections, billions of voters face the
             near-certainty of encountering AI-generated misinformation impacting
             democratic processes. Numbers Protocol is deploying novel
             decentralized tools worldwide to establish provenance for digital
             content, enhancing media transparency and safeguarding democratic
             integrity.
-        - title: Unlocking Non-Financial Applications on Ethereum
+        - title: Unlocking Non-Financial Applications on Ethereum with Filecoin
           speakers:
             - name: Ted Liao
               company: Glitter Protocol
           start: 2024-11-11T15:53:00.000Z
           end: 2024-11-11T16:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            "Ethereum’s future lies in expanding beyond financial use cases by
+          description: "Ethereum’s future lies in expanding beyond financial use cases by
             enabling large-scale, data-intensive applications across industries
             like AI, media, healthcare, and scientific research. Glitter
             Protocol’s CCIP serves as a data bridge between Filecoin and
@@ -212,6 +208,29 @@ schedule:
           start: 2024-11-11T10:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
+            Infra"
+          description: "Industry leaders at the intersection of DePIN and AI break down
+            the evolving tech stack layer by layer — from decentralized storage
+            and compute to models, agents, and real-world data integrations.
+            Critical components for this converging market come together to
+            interrogate: Why does AI need DePIN? And equally existential: Does
+            DePIN need AI?"
+          moderators:
+            - name: Rachel Horn
+              company: "Filecoin Foundation "
+          speakers:
+            - name: Anjali George
+              company: Theoriq
+            - name: Alex Blagirev
+              company: SingularityNET
+            - name: Ayush Ranjan
+              company: Huddle01
+            - name: Mark Rydon
+              company: Aethir
+          location: "Samyan Mitrtown: Main Hall"
+          start: 2024-11-11T14:02:00.000Z
+          end: 1904-11-11T14:30:00.000Z
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
