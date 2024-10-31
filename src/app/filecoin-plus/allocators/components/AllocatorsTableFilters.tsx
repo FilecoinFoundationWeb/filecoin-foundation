@@ -1,7 +1,7 @@
 import type { Table } from '@tanstack/react-table'
 
 import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 import { generateSortedOptions } from '../utils/generateSortedOptions'
 import { getColumnOrThrow } from '../utils/getColumnOrThrow'
 
@@ -10,7 +10,7 @@ import { SelectFilter } from './SelectFilter'
 import { SelectSort } from './SelectSort'
 
 type AllocatorsTableFiltersProps = {
-  table: Table<Allocator>
+  table: Table<AllocatorWithDatacap>
 }
 
 export function AllocatorsTableFilters({ table }: AllocatorsTableFiltersProps) {

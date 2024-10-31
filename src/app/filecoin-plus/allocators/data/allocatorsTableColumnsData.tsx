@@ -1,9 +1,9 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
 import { ApplyLink } from '../components/ApplyLink'
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
-const columnHelper = createColumnHelper<Allocator>()
+const columnHelper = createColumnHelper<AllocatorWithDatacap>()
 
 export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
@@ -31,8 +31,31 @@ export const allocatorsTableColumnsData = [
     },
     filterFn: 'includesString',
   }),
+  columnHelper.accessor('remainingDatacap', {
+    header: 'Remaining Datacap',
+    cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-44',
+    },
+    filterFn: 'includesString',
+  }),
+  columnHelper.accessor('allowance', {
+    header: 'Used Datacap',
+    cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-44',
+    },
+    filterFn: 'includesString',
+  }),
   columnHelper.accessor('application.required_replicas', {
     header: 'Required Replicas',
+    cell: (info) => info.getValue(),
+    meta: {
+      headerCellStyle: 'w-44',
+    },
+  }),
+  columnHelper.accessor('application.required_sps', {
+    header: 'Required SPs',
     cell: (info) => info.getValue(),
     meta: {
       headerCellStyle: 'w-44',
