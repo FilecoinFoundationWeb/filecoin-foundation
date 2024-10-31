@@ -311,6 +311,36 @@ speakers:
     title: CEO
     company: Devonian Systems
     linkedin: https://www.linkedin.com/in/alan-ransil-53573873/
+  - name: Rachel Green Horn
+    title: Head of Marketing and Communications
+    company: Filecoin Foundation
+    linkedin: https://www.linkedin.com/in/rachelgreenhorn/
+    image:
+      src: /assets/images/rgh-headshot-2-.webp
+  - name: Mark Rydon
+    title: CSO
+    company: Aethir
+    linkedin: https://www.linkedin.com/in/markrydon/
+    image:
+      src: /assets/images/mark-r-photo-1-.webp
+  - name: Ethan Chae
+    title: Co-CEO
+    company: Hippocrat
+    linkedin: https://www.linkedin.com/in/ethanchae/
+    image:
+      src: /assets/images/1-.webp
+  - name: Sherry Chung
+    title: Business Development & Solution Architect
+    company: "Numbers Co., Ltd. "
+    linkedin: https://www.linkedin.com/in/sherry-chung-18223138/
+    image:
+      src: /assets/images/_-_-.webp
+  - name: "Roman Nebo "
+    title: "CEO & Founder "
+    company: "Ghost Drive "
+    linkedin: https://www.linkedin.com/in/romansky
+    image:
+      src: /assets/images/6824849a-d33b-4a0d-b701-713354dffd29.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
