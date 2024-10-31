@@ -9,7 +9,6 @@ description: "Check out the latest updates about what the Filecoin Foundation
 image:
   src: /assets/images/0215-ff-13-.webp
 seo:
-  title: "Early August Highlights: Filecoin Upgrades, Events, and New Developments"
   description: Discover Filecoin's upcoming upgrade, FIL Bangkok, the redesigned
     fil.org, and more in our early August highlights. Stay updated on events,
     governance, and community news!

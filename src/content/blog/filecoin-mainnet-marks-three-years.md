@@ -9,7 +9,6 @@ description: This week, Filecoin Foundation celebrates the three-year
 image:
   src: /assets/images/image-3-.png
 seo:
-  title: Filecoin Mainnet Marks Three Years
   description: Celebrating three years of Filecoin mainnet. Reflecting on the
     achievements and looking forward to the future.
 ---

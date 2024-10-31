@@ -18,7 +18,6 @@ external-link:
 image:
   src: /assets/images/filbrussels.webp
 seo:
-  title: FIL Brussels
   description: Join FIL Brussels to connect with the Filecoin community and
     explore new developments.
 ---

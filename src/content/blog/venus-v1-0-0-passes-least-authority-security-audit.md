@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-28.png
 category: news
 seo:
-  title: Venus v1.0.0 Passes Least Authority Security Audit
   description:
     Announcing that Venus v1.0.0 has passed the Least Authority security
     audit. Learn more about the results.

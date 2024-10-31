@@ -10,7 +10,6 @@ created-on: "2023-04-21T07:28:07.363Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: reports
 seo:
-  title: "Looking Back and Forward: Filecoin Foundation in 2021 and 2022"
   description:
     A retrospective and future outlook for Filecoin Foundation's activities
     in 2021 and 2022.

@@ -17,7 +17,6 @@ tech:
 twitter: https://twitter.com/astralprotocol
 year-joined: 2024-03-29T21:28:48.588Z
 seo:
-  title: "Astral: Pioneering Location-Based Decentralized Web with GeoDIDs on IPFS"
   description: Astral offers decentralized solutions for data retrieval and management.
 ---
 

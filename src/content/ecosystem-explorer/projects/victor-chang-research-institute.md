@@ -20,7 +20,6 @@ twitter: "https://twitter.com/VictorChangInst"
 subcategories:
   - health
 seo:
-  title: Victor Chang Research Institute
   description:
     Victor Chang Research Institute provides decentralized solutions for
     healthcare data management.

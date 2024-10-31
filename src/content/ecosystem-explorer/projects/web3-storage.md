@@ -18,7 +18,6 @@ twitter: "https://twitter.com/Web3Storage"
 subcategories:
   - data-storage-management
 seo:
-  title: Web3.Storage
   description: Web3.Storage provides decentralized storage solutions for web3 applications.
 email: encrypted::U2FsdGVkX19wPgEdr3NkCBu9nXZWlRzKaz5JV6XV2SyNhQc2D35WehvlPwT1RLQ2
 full-name: encrypted::U2FsdGVkX1+NhbJ2THSirApAikiAqrmZ0Doi9RHik/E=

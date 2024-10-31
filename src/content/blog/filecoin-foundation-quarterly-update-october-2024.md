@@ -13,7 +13,6 @@ seo:
     card: summary
   description: "This month, Filecoin Foundation (FF) is launching quarterly
     updates designed to hone in on different trends across our ecosystem. "
-  title: "Filecoin Foundation Quarterly Update: October 2024"
 ---
 
 ## Empowering AI through Decentralization and Innovation

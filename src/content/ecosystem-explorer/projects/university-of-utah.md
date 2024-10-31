@@ -19,7 +19,6 @@ tech:
   - ipfs
 featured-content: https://www.sealstorage.io/blog/utah#:~:text=The%20University%20of%20Utah%20is,of%20Seal's%20underlying%20network%2C%20Filecoin
 seo:
-  title: University of Utah
   description:
     University of Utah offers decentralized solutions for academic data
     management and research.

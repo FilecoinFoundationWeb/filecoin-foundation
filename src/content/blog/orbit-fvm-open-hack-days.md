@@ -13,7 +13,6 @@ image:
   src: /assets/images/0208-orbitfvm.png
 category: events
 seo:
-  title: Join the Orbit FVM Open Hack Days
   description:
     Participate in the Orbit FVM Open Hack Days. Collaborate, innovate,
     and build with the Filecoin community.

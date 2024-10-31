@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-04.png
 category: ecosystem
 seo:
-  title: "Supporting the Community: The Filecoin Storage Provider Group"
   description:
     Discover how the Filecoin Storage Provider Group supports the community.
     Learn about their initiatives.

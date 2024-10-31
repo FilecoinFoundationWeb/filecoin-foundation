@@ -12,7 +12,6 @@ image:
   src: /assets/images/protocol-village-2023.png
 category: supported-sponsored
 seo:
-  title: Protocol Village at Consensus 2023
   description:
     Visit the Protocol Village at Consensus 2023 to connect with blockchain
     protocol developers.

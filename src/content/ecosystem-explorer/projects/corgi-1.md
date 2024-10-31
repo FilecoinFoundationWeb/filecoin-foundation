@@ -18,7 +18,6 @@ year-joined: 2024-02-28T23:14:40.521000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Corgi
   description: Corgi provides decentralized storage solutions for digital assets.
 email: encrypted::U2FsdGVkX1/d8gW0Rk+DXRqkr430QiMckgPA0WmNqsyGnVBsOw40QsXnEHbbM/Y/
 full-name: encrypted::U2FsdGVkX18b3wK+8h6ZjJGOB9AzOLCVmfIbZ2TcEys=

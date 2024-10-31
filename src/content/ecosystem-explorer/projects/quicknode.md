@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:54.885000Z
 subcategories:
   - infrastructure
 seo:
-  title: QuickNode
   description:
     QuickNode provides decentralized solutions for blockchain infrastructure
     and services.

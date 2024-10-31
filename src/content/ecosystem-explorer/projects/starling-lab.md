@@ -19,7 +19,6 @@ repo: "https://github.com/filecoin-project/starling"
 subcategories:
   - data-storage-management
 seo:
-  title: Starling Lab
   description:
     Starling Lab offers decentralized solutions for digital archiving and
     preservation.

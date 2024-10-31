@@ -11,7 +11,6 @@ image:
   src: /assets/images/0604-ghostdrive.png
 category: ecosystem
 seo:
-  title: "Ecosystem Spotlight: GhostDrive's Secure, Decentralized Storage Now on Mobile"
   description: "Explore GhostDrive’s secure decentralized storage on mobile, leveraging Filecoin for enhanced redundancy and security. Now available on App Store and Google Play."
 ---
 

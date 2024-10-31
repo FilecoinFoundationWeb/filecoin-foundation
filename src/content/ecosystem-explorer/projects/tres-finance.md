@@ -19,7 +19,6 @@ twitter: https://twitter.com/TresDotFinance
 video-url: https://www.youtube.com/embed/4YHdkICYvJc
 year-joined: 2024-01-12T20:09:29.935Z
 seo:
-  title: Tres Finance
   description: Tres Finance provides decentralized finance solutions for secure
     transactions.
 ---

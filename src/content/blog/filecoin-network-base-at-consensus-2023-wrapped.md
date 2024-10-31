@@ -12,7 +12,6 @@ image:
   src: /assets/images/051823-austin-recap.png
 category: events
 seo:
-  title: Filecoin Network Base at Consensus 2023 Wrapped
   description:
     Wrapping up the Filecoin Network Base at Consensus 2023. Highlights
     and key takeaways from the event.

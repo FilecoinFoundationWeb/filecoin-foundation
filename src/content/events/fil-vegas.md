@@ -12,7 +12,6 @@ end-date: 2023-10-05T17:09:07.051Z
 image:
   src: /assets/images/fil-vegas-event-header.png
 seo:
-  title: FIL Vegas
   description: Attend FIL Vegas to engage with the Filecoin community and learn
     about the latest developments.
 ---

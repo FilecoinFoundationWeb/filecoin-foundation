@@ -11,7 +11,6 @@ image:
   src: /assets/images/0928-filecoinfortnight.png
 category: ecosystem
 seo:
-  title: The Future of Digital Public Infrastructure in Five Minutes
   description:
     Learn about the future of digital public infrastructure in this quick,
     five-minute read.

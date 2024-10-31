@@ -8,7 +8,6 @@ image:
   src: /assets/images/64423ae2ef619d69dab60e9f_0-qyjcuk2pe_bhv2jh.png
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Nonentropy"
   description:
     Discover Nonentropy's role and impact as a Filecoin storage provider
     in this spotlight feature.

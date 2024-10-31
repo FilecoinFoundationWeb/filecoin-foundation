@@ -8,7 +8,6 @@ image:
   src: /assets/images/0215-ff-7-.png
 category: news
 seo:
-  title: "Fresh From Filecoin Foundation: Early June 2024 Updates"
   description: "Get the latest updates from Filecoin Foundation, including events, governance, and ecosystem highlights from early June 2024."
 ---
 

@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
 category: use-cases
 seo:
-  title: Social Media on the Decentralized Web
   description:
     Explore how social media operates on the decentralized web. Benefits,
     challenges, and future prospects.

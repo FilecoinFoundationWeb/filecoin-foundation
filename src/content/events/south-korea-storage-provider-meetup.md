@@ -11,7 +11,6 @@ image:
   src: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
 category: hosted
 seo:
-  title: South Korea Storage Provider Meetup
   description:
     Attend the South Korea Storage Provider Meetup to network and learn
     about Filecoin storage solutions.

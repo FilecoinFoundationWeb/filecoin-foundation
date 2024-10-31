@@ -14,7 +14,6 @@ start-date: 2022-05-22T12:00:00.000Z
 image:
   src: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg
 seo:
-  title: Decentralized Web Gateway Davos
   description: Explore the Decentralized Web Gateway at Davos and discover the
     future of decentralized technologies.
 ---

@@ -13,7 +13,6 @@ description: >
 image:
   src: /assets/images/020124-transfer.png
 seo:
-  title: "Ecosystem Spotlight: Transfer Q&A on Decentralized Technology"
   description:
     "Transfer Q&A: Preserving artistic value, data sovereignty, and harnessing
     data value with decentralized tech."

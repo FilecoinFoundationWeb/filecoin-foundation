@@ -14,7 +14,6 @@ description:
 image:
   src: /assets/images/050924-adoption.png
 seo:
-  title: "Driving Widespread Filecoin Adoption: Key Initiatives for 2024"
   description:
     Explore key initiatives and community involvement driving widespread
     Filecoin adoption in 2024.

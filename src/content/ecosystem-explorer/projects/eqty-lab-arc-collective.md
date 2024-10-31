@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:50.218000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Eqty Lab ARC Collective
   description:
     Eqty Lab ARC Collective provides decentralized solutions for data management
     and collaboration.

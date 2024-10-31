@@ -20,7 +20,6 @@ featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-pres
 subcategories:
   - data-storage-management
 seo:
-  title: Transfer Data Trust
   description:
     Transfer Data Trust offers decentralized solutions for data transfer
     and security.

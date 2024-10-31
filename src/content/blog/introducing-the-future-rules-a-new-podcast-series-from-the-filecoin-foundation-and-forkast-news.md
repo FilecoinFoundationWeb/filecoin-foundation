@@ -13,7 +13,6 @@ image:
   src: /assets/images/image-c-33.png
 category: news
 seo:
-  title: Introducing 'The Future Rules' Podcast by Filecoin Foundation
   description:
     Check out 'The Future Rules', a new podcast series by Filecoin Foundation
     and Forkast News.

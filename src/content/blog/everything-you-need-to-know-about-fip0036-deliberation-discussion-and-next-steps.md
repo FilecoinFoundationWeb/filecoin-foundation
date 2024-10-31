@@ -13,7 +13,6 @@ created-on: "2023-04-21T07:26:54.116Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: "FIP0036: Deliberation, Discussion, and Next Steps"
   description:
     "Everything you need to know about FIP0036: Deliberation, discussion,
     and next steps. Get involved."

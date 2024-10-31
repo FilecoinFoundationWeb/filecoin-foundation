@@ -13,7 +13,6 @@ created-on: "2023-04-21T07:26:52.479Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: news
 seo:
-  title: DZK Foundation Awarded Grant for ZK-Rollup Research
   description:
     DZK Foundation receives Chainlink-Filecoin joint grant to support ZK-Rollup
     research. Learn more.

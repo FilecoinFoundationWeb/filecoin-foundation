@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:53.260000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Murmuration Labs
   description:
     Murmuration Labs offers decentralized solutions for data analysis and
     management.

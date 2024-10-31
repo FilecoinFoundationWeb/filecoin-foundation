@@ -12,7 +12,6 @@ image:
   src: /assets/images/0621-2022-01.png
 category: ecosystem
 seo:
-  title: "FIP0056: Introducing Sector Duration Multiplier"
   description:
     Learn about FIP0056, which introduces a sector duration multiplier
     and increases sector duration times.

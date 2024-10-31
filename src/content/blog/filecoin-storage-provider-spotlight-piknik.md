@@ -11,7 +11,6 @@ created-on: "2023-04-21T07:27:34.032Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Piknik"
   description:
     Learn about Piknik's offerings and impact as a Filecoin storage provider
     in this spotlight feature.

@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-15.png
 category: events
 seo:
-  title: "FIL Austin 2022 Recap: FIL-ling You In"
   description:
     Recap of FIL Austin 2022. Get FIL-led in on the highlights and key
     takeaways from the event.

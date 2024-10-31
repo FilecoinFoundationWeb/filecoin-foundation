@@ -17,7 +17,6 @@ repo: "https://github.com/stfil-io"
 twitter: "https://twitter.com/stfil_io"
 year-joined: 2024-01-17T14:55:43.749Z
 seo:
-  title: StFIL
   description:
     StFIL provides decentralized finance solutions for staking and yield
     generation.

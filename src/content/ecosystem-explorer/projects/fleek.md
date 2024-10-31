@@ -20,7 +20,6 @@ year-joined: 2024-01-19T18:50:41.292000Z
 subcategories:
   - dapp
 seo:
-  title: Fleek
   description:
     Fleek provides decentralized solutions for hosting and deploying web
     applications.

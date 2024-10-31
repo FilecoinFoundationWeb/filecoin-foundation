@@ -12,7 +12,6 @@ description:
 image:
   src: /assets/images/jenks-guo.png
 seo:
-  title: "Insights from DWeb Decoded: Jenks Guo on Decentralization"
   description:
     Jenks Guo discusses decentralization and developer relations in this
     insightful DWeb Decoded session.

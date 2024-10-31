@@ -18,7 +18,6 @@ twitter: "https://twitter.com/numbersprotocol"
 subcategories:
   - wallets-identity-authentication
 seo:
-  title: Numbers Protocol
   description:
     Numbers Protocol offers decentralized solutions for digital asset verification
     and management.

@@ -9,7 +9,6 @@ description: Check out the latest updates about what the Filecoin Foundation
 image:
   src: /assets/images/0215-ff-15-.webp
 seo:
-  title: NV23 Waffle Upgrade and Filecoin's Latest Developments
   description: Discover Filecoin's NV23 Waffle upgrade and its enhancements. Get
     insights from Messari’s Q2 2024 report, join FIL Singapore, and stay updated
     with the latest FIPs, governance proposals, and community events.

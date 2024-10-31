@@ -14,7 +14,6 @@ image:
   src: /assets/images/0905-dweb-on-the-rise.png
 category: ecosystem
 seo:
-  title: "DWeb on the Rise: Uses for Decentralized Storage"
   description:
     Decentralized web (DWeb) on the rise. Discover the many uses for decentralized
     storage solutions.

@@ -12,7 +12,6 @@ end-date: 2024-05-15T15:48:19.530Z
 image:
   src: /assets/images/foresight.svg
 seo:
-  title: AGI Cryptography Security Multipolar Scenarios Workshop
   description: Join the AGI Cryptography Security Workshop to explore multipolar
     scenarios in cryptography and security.
 ---

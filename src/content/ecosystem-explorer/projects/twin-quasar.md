@@ -18,7 +18,6 @@ tech:
   - ipfs
 featured-content: https://fil.org/blog/storage-spotlight-how-twin-quasar-and-celeste-are-bringing-green-data-hosting-to-european-data-storage-clients/
 seo:
-  title: Twin Quasar
   description:
     Twin Quasar offers decentralized storage solutions for data hosting
     and management.

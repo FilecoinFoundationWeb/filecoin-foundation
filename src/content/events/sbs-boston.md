@@ -10,7 +10,6 @@ end-date: 2023-04-13T15:36:00.000Z
 image:
   src: /assets/images/sbs-boston-2023.png
 seo:
-  title: SBS Boston
   description:
     Join SBS Boston to engage with the blockchain community and explore
     sustainable blockchain solutions.

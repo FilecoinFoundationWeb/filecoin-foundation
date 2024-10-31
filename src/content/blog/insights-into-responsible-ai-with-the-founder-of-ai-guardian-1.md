@@ -16,7 +16,6 @@ description: >-
 image:
   src: /assets/images/chris-hackney.png
 seo:
-  title: Insights into Responsible AI with AI Guardian Founder
   description:
     AI Guardian founder shares insights into responsible AI development
     and deployment.

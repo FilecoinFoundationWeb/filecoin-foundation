@@ -14,7 +14,6 @@ image:
   src: /assets/images/64423acca6ec4184be2a4866_1-kequqilr3jvs6nq_e7naqq.png
 category: news
 seo:
-  title: Filecoin Foundation and FFDW Expand Boards
   description:
     Filecoin Foundation and Filecoin Foundation for the Decentralized Web
     announce board expansions.

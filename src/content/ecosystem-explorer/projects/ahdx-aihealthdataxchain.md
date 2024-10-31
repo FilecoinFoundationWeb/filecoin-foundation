@@ -20,9 +20,6 @@ tech:
 twitter: https://twitter.com/aihdxc/
 year-joined: 2023-10-09T16:51:25.169Z
 seo:
-  title:
-    Blockchain-Based Data Storage & Decentralized Health Data Marketplace for
-    Secure Sharing
   description:
     Protect against data breaches with blockchain-based storage. AHDX's
     decentralized marketplace on Filecoin and IPFS enables secure health data

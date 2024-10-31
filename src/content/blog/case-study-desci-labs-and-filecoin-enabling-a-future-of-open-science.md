@@ -14,7 +14,6 @@ image:
   src: /assets/images/0719-cs-desci.png
 category: use-cases
 seo:
-  title: "Case Study: DeSci Labs and Filecoin - Enabling a Future of Open Science"
   description:
     Explore how DeSci Labs uses Filecoin to enable a future of open science.
     A detailed case study.

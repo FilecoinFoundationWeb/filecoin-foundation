@@ -17,7 +17,6 @@ featured-content: "https://fil.org/blog/case-study-genrait-leverages-filecoin-ne
 subcategories:
   - health
 seo:
-  title: GenRAIT
   description:
     GenRAIT offers decentralized solutions for genomic data storage and
     analysis.

@@ -10,7 +10,6 @@ created-on: "2023-04-21T07:31:35.155Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: news
 seo:
-  title: Filecoin and Electric Coin Co. Simplify Halo Licensing, Create Joint Grants Pool
   description: Filecoin Foundation and Electric Coin Co. simplify Halo licensing and establish a $5 million joint grants pool for Filecoin and Zcash projects.
 ---
 

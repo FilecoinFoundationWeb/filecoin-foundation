@@ -19,7 +19,6 @@ tech:
 featured-content: https://fil.org/blog/
 twitter: https://twitter.com/FilFoundation
 seo:
-  title: Filecoin Foundation
   description: The Filecoin Foundation supports the Filecoin network and its ecosystem.
 ---
 

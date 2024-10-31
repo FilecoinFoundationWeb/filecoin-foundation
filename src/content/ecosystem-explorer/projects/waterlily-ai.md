@@ -22,7 +22,6 @@ year-joined: 2023-04-25T22:00:00.000Z
 subcategories:
   - artificial-productivity-utilities
 seo:
-  title: Waterlily AI
   description:
     Waterlily AI provides AI-driven solutions for decentralized data analysis
     and management.

@@ -9,7 +9,6 @@ start-date: 2023-09-02T11:00:23.071Z
 image:
   src: /assets/images/fil-jakarta.png
 seo:
-  title: "FIL Jakarta"
   description: Participate in FIL Jakarta to network with the Filecoin community
     and discover new opportunities.
 ---

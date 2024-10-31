@@ -14,7 +14,6 @@ image:
   src: /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
 category: supported-sponsored
 seo:
-  title: Filecoin Club
   description:
     Join the Filecoin Club to connect with enthusiasts and explore the
     latest in Filecoin.

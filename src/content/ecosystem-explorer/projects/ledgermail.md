@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:53.257000Z
 subcategories:
   - wallets-identity-authentication
 seo:
-  title: LedgerMail
   description: LedgerMail provides decentralized email solutions for secure communication.
 email: encrypted::U2FsdGVkX18iOadodUmQTwBo3polIk4GmSp32kDDwIAPqQBZck15sx89IPPNzH/W
 full-name: encrypted::U2FsdGVkX19TrcL6isZ+zuUzL42c8EMZkHTm5aqnrkg=
