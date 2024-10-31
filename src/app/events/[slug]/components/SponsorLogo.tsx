@@ -4,7 +4,7 @@ import { clsx } from 'clsx'
 
 import { capitalize } from '@/utils/capitalize'
 
-import type { SponsorTierConfig } from '../utils/sponsorTierConfigs'
+import type { SponsorTierConfig } from '../../constants/sponsorTierConfigs'
 
 import type { Sponsor } from './SponsorSection'
 

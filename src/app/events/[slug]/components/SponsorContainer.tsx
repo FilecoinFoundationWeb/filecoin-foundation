@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import type { SponsorTierConfig } from '../utils/sponsorTierConfigs'
+import type { SponsorTierConfig } from '../../constants/sponsorTierConfigs'
 
 import { SponsorLogo } from './SponsorLogo'
 import type { Sponsor } from './SponsorSection'

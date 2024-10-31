@@ -1,7 +1,7 @@
 import { PageSection } from '@/components/PageSection'
 
+import { sponsorTierConfigs } from '../../constants/sponsorTierConfigs'
 import type { Event } from '../../types/eventType'
-import { sponsorTierConfigs } from '../utils/sponsorTierConfigs'
 
 import { SponsorContainer } from './SponsorContainer'
 
