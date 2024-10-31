@@ -204,6 +204,13 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
+          description: The current system for addressing the climate crisis is inefficient
+            and ineffective, with ESG metrics difficult to track and valuable
+            data locked up in silos. These projects are bringing blockchain
+            technology and AI together to introduce transparency and
+            verifiability to environmental efforts. By making data globally
+            available and authenticating energy and environmental claims,
+            they’re cultivating a world where we’re accountable for our impact.
         - title: "GhostDrive Workshop and Demo "
           start: 2024-11-11T10:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
