@@ -10,7 +10,6 @@ end-date: 2023-04-26T15:46:15.151Z
 image:
   src: /assets/images/network-base-austin-2023-pic.png
 seo:
-  title: Filecoin Network Base
   description: Join the Filecoin Network Base to connect with the community and
     explore the latest innovations.
 ---

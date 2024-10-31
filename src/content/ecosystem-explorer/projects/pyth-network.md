@@ -18,7 +18,6 @@ twitter: https://x.com/PythNetwork
 video-url: https://www.youtube.com/embed/7k5gh-1JT3c
 year-joined: 2024-04-16T20:04:49.437Z
 seo:
-  title: Pyth Network
   description: Pyth Network provides decentralized data oracle solutions for
     blockchain applications.
 email: encrypted::U2FsdGVkX1+U56Forn155XVBt6Jud47gcn77bscLvU+S2sHTxMpjFLPENeGXCW/d

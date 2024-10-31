@@ -18,7 +18,6 @@ repo: https://github.com/useclover/clover-warp
 twitter: https://twitter.com/cloversuite
 year-joined: 2024-03-29T21:28:50.458Z
 seo:
-  title: Clover
   description: Clover provides tools for decentralized finance and blockchain
     interoperability.
 ---

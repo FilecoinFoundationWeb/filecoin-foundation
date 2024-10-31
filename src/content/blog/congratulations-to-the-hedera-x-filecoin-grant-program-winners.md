@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423aa44e4c6826a3f40982_0-3uh8nohy2qqafnfv.png
 category: news
 seo:
-  title: Congratulations to the Hedera x Filecoin Grant Program Winners
   description:
     Announcing the winners of the Hedera x Filecoin grant program. Congratulations
     to all the innovative projects.

@@ -11,7 +11,6 @@ description:
 image:
   src: /assets/images/032224-orbit-austin.png
 seo:
-  title: "Orbiting ETHDenver: Insights from a Filecoin Orbit Ambassador"
   description:
     Insights and perspectives from a Filecoin Orbit Ambassador at ETHDenver.
     Explore the experiences.

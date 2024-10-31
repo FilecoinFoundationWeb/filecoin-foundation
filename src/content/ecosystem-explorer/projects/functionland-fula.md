@@ -19,7 +19,6 @@ year-joined: 2021-03-03T16:17:36.608000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Functionland Fula
   description:
     Functionland Fula provides decentralized storage solutions for personal
     data management.

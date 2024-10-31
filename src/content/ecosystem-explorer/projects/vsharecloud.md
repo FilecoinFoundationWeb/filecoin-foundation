@@ -16,7 +16,6 @@ tech:
 repo: https://github.com/vshareCloud-Project/
 year-joined: 2024-04-05T14:14:29.953Z
 seo:
-  title: VshareCloud
   description: VshareCloud offers decentralized storage solutions for digital data.
 email: encrypted::U2FsdGVkX1/SgKq2RNa3F0b3RtGj9CJUNrSazEHq9vrsmbzzc++SHrimTTpUxQxD
 full-name: encrypted::U2FsdGVkX1/qS71FFS7mIt8hPxj2JGv56UXzizkeYR0=

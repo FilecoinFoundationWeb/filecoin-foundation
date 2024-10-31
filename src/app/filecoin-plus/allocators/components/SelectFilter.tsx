@@ -46,13 +46,13 @@ export function SelectFilter({
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleOptionChange}>
       <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
-        <span>{selectedOption.name}</span>
+        <span className="truncate">{selectedOption.name}</span>
         <Icon component={CaretDown} size={16} weight="bold" />
       </HeadlessUIListboxButton>
 
       <HeadlessUIListboxOptions
         as="ul"
-        anchor={{ to: 'bottom', gap: 8 }}
+        anchor={{ to: 'bottom start', gap: 12 }}
         className="rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
       >
         {allOptions.map((option) => (

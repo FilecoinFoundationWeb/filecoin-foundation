@@ -18,7 +18,6 @@ year-joined: 2022-10-12T20:29:27.704000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Easier Data Initiative
   description:
     Easier Data Initiative offers decentralized solutions for data management
     and accessibility.

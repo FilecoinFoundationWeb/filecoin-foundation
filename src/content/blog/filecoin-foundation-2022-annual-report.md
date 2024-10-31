@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423ac6b068b0a9945c5010_0206-ff-22-annual-report.png
 category: reports
 seo:
-  title: Filecoin Foundation 2022 Annual Report
   description:
     Review the Filecoin Foundation's 2022 annual report. Key achievements
     and milestones.

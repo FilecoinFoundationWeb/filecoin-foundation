@@ -12,7 +12,6 @@ authors:
 image:
   src: /assets/images/letter-from-the-guest-editor.webp
 seo:
-  title: Letter from the Guest Editor
   description: "Dear Readers, Welcome to the inaugural edition of The Filecoin
     Ecosystem Digest: All Systems Go - a journey into the transformative power
     of the decentralized web and its far-reaching implications across

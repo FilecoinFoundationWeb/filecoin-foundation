@@ -20,7 +20,6 @@ tech:
 repo: https://github.com/filecoin-station/desktop
 featured-content: https://blog.filecointldr.io/filecoins-retrieval-markets-update-spotlight-on-project-saturn-9f233ed133ed
 seo:
-  title: Filecoin Station
   description: Filecoin Station offers decentralized tools and resources for the
     Filecoin community.
 ---

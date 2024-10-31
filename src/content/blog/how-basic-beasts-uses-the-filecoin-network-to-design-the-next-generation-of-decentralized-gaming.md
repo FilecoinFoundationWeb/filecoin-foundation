@@ -17,7 +17,6 @@ image:
   src: /assets/images/0517-dgs-_.png
 category: use-cases
 seo:
-  title: How Basic Beasts Uses Filecoin for Decentralized Gaming
   description:
     Learn how Basic Beasts leverages the Filecoin network to design the
     next generation of decentralized gaming.

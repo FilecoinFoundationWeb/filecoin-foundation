@@ -19,7 +19,6 @@ year-joined: 2024-04-03T18:37:09.314000Z
 subcategories:
   - data-storage-management
 seo:
-  title: MerkleBot
   description: MerkleBot provides decentralized automation and data management solutions.
 email: encrypted::U2FsdGVkX18wMR0BisqthYUADNti5mCZK7bJXFPc1lRE3SQNrevI+FOo5tPiU/Bi
 full-name: encrypted::U2FsdGVkX1/GTa9gvOyRXXsigyn62kAbqe6LsswnxLo=

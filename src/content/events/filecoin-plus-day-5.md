@@ -11,7 +11,6 @@ start-date: 2021-05-10T22:00:00.000Z
 image:
   src: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg
 seo:
-  title: "Filecoin Plus Day"
   description: Join Filecoin Plus Day to connect with the community and explore
     the latest innovations in the Filecoin ecosystem.
 ---

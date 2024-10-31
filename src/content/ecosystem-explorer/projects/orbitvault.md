@@ -15,7 +15,6 @@ year-joined: 2024-03-07T14:09:03.780000Z
 subcategories:
   - data-storage-management
 seo:
-  title: OrbitVault
   description: OrbitVault provides decentralized storage solutions for digital assets.
 email: encrypted::U2FsdGVkX18OBtWWabjxXbR5dzDApRXiffrgCJz7OT1HwOib/Gkap0p4dd3ULVOA
 full-name: encrypted::U2FsdGVkX1+9LAqcDVE0lnVZjJ7E0V5mx25AGceIx50=

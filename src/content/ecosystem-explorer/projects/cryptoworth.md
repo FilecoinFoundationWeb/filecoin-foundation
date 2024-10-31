@@ -18,7 +18,6 @@ tech:
 twitter: https://twitter.com/cryptoworthapp/
 year-joined: 2023-08-01T20:34:10.316Z
 seo:
-  title: Cryptoworth
   description:
     Cryptoworth provides tools for managing and tracking cryptocurrency
     portfolios.

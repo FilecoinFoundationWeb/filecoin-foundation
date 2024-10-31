@@ -15,7 +15,6 @@ tech:
   - filecoin
 year-joined: 2024-04-05T00:20:25.941Z
 seo:
-  title: Ecko
   description: Ecko offers decentralized solutions for blockchain infrastructure
     and development.
 email: encrypted::U2FsdGVkX1//Xw16FyGK/X/HsElvHjvv0SeKrE+6BD4hBydwvd9lnF2l7H+iRCtp

@@ -14,7 +14,6 @@ tech:
   - ipfs
 year-joined: 2024-04-05T01:47:43.309Z
 seo:
-  title: Ethereum Name Service
   description:
     Ethereum Name Service offers decentralized domain name services for
     the Ethereum network.

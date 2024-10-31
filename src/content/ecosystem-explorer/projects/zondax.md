@@ -18,7 +18,6 @@ twitter: "https://twitter.com/_zondax_"
 subcategories:
   - infrastructure
 seo:
-  title: Zondax
   description:
     Zondax provides decentralized solutions for blockchain infrastructure
     and services.

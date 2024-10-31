@@ -10,8 +10,8 @@ description: Freenet is free software that lets users anonymously chat, share
 image:
   src: /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
 seo:
-  title: "Dev Grant Spotlight: Freenet 2"
-  description: Freenet 2's journey and achievements as a recipient of the Filecoin
+  description:
+    Freenet 2's journey and achievements as a recipient of the Filecoin
     Foundation Dev Grant. Learn more about their project.
 ---
 

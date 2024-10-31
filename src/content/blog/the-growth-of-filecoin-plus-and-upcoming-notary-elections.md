@@ -12,7 +12,6 @@ image:
   src: /assets/images/64524524a1a3e64e1d97de7f_0202-filpluselection.jpg
 category: news
 seo:
-  title: The Growth of Filecoin Plus and Upcoming Notary Elections
   description:
     Explore the growth of Filecoin Plus and get ready for the upcoming
     notary elections.

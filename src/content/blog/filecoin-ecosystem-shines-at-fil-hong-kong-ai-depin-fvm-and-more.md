@@ -10,7 +10,6 @@ description:
 image:
   src: /assets/images/blogheader-filhk24recap-1-.png
 seo:
-  title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
   description:
     Highlights from FIL Hong Kong, showcasing AI, DePIN, FVM, and more
     in the Filecoin ecosystem.

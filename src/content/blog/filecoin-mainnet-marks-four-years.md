@@ -13,7 +13,6 @@ image:
 seo:
   twitter:
     card: summary
-  title: Filecoin Mainnet Marks Four Years
   description:
     Today, we say a huge thank you to the incredible Filecoin community
     of builders, storage providers, data clients, and all those who are helping

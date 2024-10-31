@@ -16,7 +16,6 @@ year-joined: 2024-04-03T17:39:33.807000Z
 subcategories:
   - data-storage-management
 seo:
-  title: CIDGravity
   description: CIDGravity offers decentralized solutions for content addressable storage.
 email: encrypted::U2FsdGVkX19ZRigfAdHG/gks5UW+pCjDvys3lhZxo2yMbsRKQn2IOUqKFX7Q+iQf
 full-name: encrypted::U2FsdGVkX19+uTk/EBZyR8zpmJmDXbcZ9S8QllRebQI=

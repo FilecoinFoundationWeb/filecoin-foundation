@@ -10,9 +10,6 @@ image:
   src: /assets/images/0905-cs-ff.png
 category: use-cases
 seo:
-  title:
-    "Case Study: Redefining Web Presence with No-Code Tools and Decentralized
-    Hosting"
   description:
     Explore how no-code tools and decentralized hosting redefine web presence
     in this detailed case study.

@@ -12,7 +12,6 @@ end-date: 2022-11-30T16:50:00.000Z
 image:
   src: /assets/images/fil-bangalore-2022.png
 seo:
-  title: FIL Bangalore
   description:
     Participate in FIL Bangalore to network with the Filecoin community
     and explore new opportunities.

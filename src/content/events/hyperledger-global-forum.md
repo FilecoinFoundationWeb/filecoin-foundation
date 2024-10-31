@@ -12,7 +12,6 @@ image:
   src: /assets/images/645215feaee26f3101cebc4b_hyperledger-global-forum.jpeg
 category: supported-sponsored
 seo:
-  title: Hyperledger Global Forum
   description:
     Join the Hyperledger Global Forum to connect with the blockchain community
     and explore enterprise solutions.

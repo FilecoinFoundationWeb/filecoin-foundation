@@ -14,7 +14,6 @@ external-link:
 image:
   src: /assets/images/fil-singapore-24.webp
 seo:
-  title: FIL Singapore 2024
   description: "Join FILSG: Web3 Wonderland at 1-Arden with stunning Singapore
     views. Discover top Web3 and AI innovations alongside TOKEN2049."
 ---

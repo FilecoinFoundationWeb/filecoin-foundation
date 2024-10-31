@@ -17,7 +17,6 @@ featured-content: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockc
 subcategories:
   - data-storage-management
 seo:
-  title: Project Dokaz
   description:
     Project Dokaz provides decentralized solutions for data verification
     and management.

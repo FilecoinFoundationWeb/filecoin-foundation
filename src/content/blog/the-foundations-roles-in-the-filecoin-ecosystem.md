@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423bfbca39dd7d4d1f170f_1-mbcuqyncw-uoyzwsbrapqw.png
 category: ecosystem
 seo:
-  title: The Foundation's Roles in the Filecoin Ecosystem
   description:
     Learn about the roles and responsibilities of the foundation within
     the Filecoin ecosystem.

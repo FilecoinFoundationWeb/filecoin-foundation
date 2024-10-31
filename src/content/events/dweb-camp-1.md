@@ -12,7 +12,6 @@ end-date: 2023-06-25T15:30:55.996Z
 image:
   src: /assets/images/dweb-camp.png
 seo:
-  title: DWeb Camp 2023
   description: Join DWeb Camp 2023 to learn about the decentralized web and
     collaborate with like-minded individuals.
 ---

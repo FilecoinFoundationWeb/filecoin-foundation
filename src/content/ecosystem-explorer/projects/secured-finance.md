@@ -17,7 +17,6 @@ tech:
 twitter: https://twitter.com/Secured_Fi
 year-joined: 2024-03-29T21:28:54.282Z
 seo:
-  title: Secured Finance
   description: Secured Finance offers decentralized finance solutions for secure
     transactions.
 ---

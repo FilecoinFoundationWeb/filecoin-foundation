@@ -11,7 +11,6 @@ image:
   src: /assets/images/06262023-waterlilly.png
 category: use-cases
 seo:
-  title: "Decentralizing Art: Waterlily AI's Use of FVM and AI"
   description:
     Explore how Waterlily AI uses FVM and AI to decentralize art. A deep
     dive into their technology.

@@ -20,7 +20,6 @@ twitter: https://twitter.com/filfi_io
 video-url: https://www.youtube.com/embed/oaaLTpKSbYU
 year-joined: 2023-05-30T20:57:35.326Z
 seo:
-  title: FilFi
   description: FilFi provides decentralized finance solutions for the Filecoin network.
 ---
 

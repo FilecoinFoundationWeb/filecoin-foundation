@@ -15,7 +15,6 @@ year-joined: 2022-12-01T17:27:13.497000Z
 subcategories:
   - dapp
 seo:
-  title: Flame Launch
   description:
     Flame Launch provides decentralized solutions for project launches
     and token sales.

@@ -11,7 +11,6 @@ description: >-
 image:
   src: /assets/images/filvegas_recap_header.png
 seo:
-  title: "AI, Data Verifiability, and Decentralized Storage: FIL Vegas Recap"
   description:
     "Recap of FIL Vegas: Exploring AI, data verifiability, and decentralized
     storage innovations."

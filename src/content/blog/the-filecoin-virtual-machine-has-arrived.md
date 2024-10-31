@@ -12,7 +12,6 @@ image:
   src: /assets/images/64423bf9da735f547c392f21_unnamed-14.png
 category: news
 seo:
-  title: The Filecoin Virtual Machine Has Arrived
   description:
     Announcing the arrival of the Filecoin Virtual Machine. Explore its
     features and capabilities.

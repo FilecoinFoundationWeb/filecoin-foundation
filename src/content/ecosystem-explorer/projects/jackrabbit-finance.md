@@ -16,7 +16,6 @@ tech:
   - filecoin
 year-joined: 2024-04-05T00:02:55.839Z
 seo:
-  title: Jackrabbit Finance
   description: Jackrabbit Finance offers decentralized finance solutions on the
     Filecoin network.
 ---

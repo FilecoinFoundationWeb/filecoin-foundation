@@ -12,7 +12,6 @@ end-date: 2022-08-22T11:30:00.000Z
 image:
   src: /assets/images/dweb-camp.png
 seo:
-  title: DWeb Camp 2022
   description:
     Explore the decentralized web at DWeb Camp 2022 through workshops,
     discussions, and collaborative activities.

@@ -14,7 +14,6 @@ image:
   src: /assets/images/sis24.png
 category: co-hosted
 seo:
-  title: Social Impact Summit 2024
   description:
     Join the Social Impact Summit 2024 to explore the intersection of blockchain
     and social good.

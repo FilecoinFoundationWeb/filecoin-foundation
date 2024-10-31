@@ -12,7 +12,6 @@ end-date: 2023-11-14T22:00:00.270Z
 image:
   src: /assets/images/03292023-filplusmission.png
 seo:
-  title: "Filecoin Plus Day"
   description:
     Celebrate Filecoin Plus Day and learn about the latest updates and
     innovations in the Filecoin ecosystem.

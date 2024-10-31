@@ -14,7 +14,6 @@ created-on: "2023-04-21T07:27:37.543Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: news
 seo:
-  title: Filswan Awarded Chainlink-Filecoin Joint Grant
   description:
     Filswan receives Chainlink-Filecoin joint grant to develop a multi-chain
     decentralized data storage payment solution.

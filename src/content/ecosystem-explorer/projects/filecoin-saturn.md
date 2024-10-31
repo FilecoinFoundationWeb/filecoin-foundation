@@ -18,7 +18,6 @@ year-joined: 2024-01-19T18:46:07.011000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Filecoin Saturn
   description:
     Filecoin Saturn provides decentralized storage solutions for the Filecoin
     network.

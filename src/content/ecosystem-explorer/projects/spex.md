@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:54.676000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Spex
   description: Spex offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX19BXykXtHf3mfwwPo+lHlbDy+NKwEa2CAq9ueZkiKhYKhGjyt8fzTF6
 full-name: encrypted::U2FsdGVkX1+ellAe4XyTs8uE3U2NPcjYPo2yRhi2jl4=

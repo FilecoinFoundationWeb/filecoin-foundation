@@ -11,7 +11,6 @@ image:
   src: /assets/images/0609-ffxunfinished.png
 category: news
 seo:
-  title: Filecoin Foundation and Unfinished Announce Explorer Awards
   description:
     Explorer Awards announced by Filecoin Foundation and Unfinished to
     celebrate innovation in decentralized tech.

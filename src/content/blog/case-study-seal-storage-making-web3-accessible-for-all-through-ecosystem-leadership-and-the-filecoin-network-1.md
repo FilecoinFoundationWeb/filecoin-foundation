@@ -14,7 +14,6 @@ image:
   src: /assets/images/64423aa28d1be743ddce7ab2_1-inwzqgetwegv3q8q0c4fea.webp
 category: use-cases
 seo:
-  title: "Case Study: Seal Storage - Making Web3 Accessible for All"
   description:
     Seal Storage makes Web3 accessible through ecosystem leadership and
     the Filecoin network. Read the case study.

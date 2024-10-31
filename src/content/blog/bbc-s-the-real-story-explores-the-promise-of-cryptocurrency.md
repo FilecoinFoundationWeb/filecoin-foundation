@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423a958d1be740f4ce6485_1-idr5jnytk_i2rab2ggn9uq.png
 category: news
 seo:
-  title: "BBC's The Real Story: The Promise of Cryptocurrency"
   description:
     BBC's The Real Story delves into the promise of cryptocurrency. Explore
     the potential and challenges of digital currencies.

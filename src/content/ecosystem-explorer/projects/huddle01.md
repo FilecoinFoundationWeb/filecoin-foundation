@@ -20,7 +20,6 @@ tech:
 repo: https://github.com/Huddle01
 twitter: https://twitter.com/huddle01com
 seo:
-  title: Huddle01
   description: Huddle01 provides decentralized solutions for video conferencing
     and collaboration.
 ---

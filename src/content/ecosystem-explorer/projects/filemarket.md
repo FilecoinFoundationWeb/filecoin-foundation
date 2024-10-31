@@ -20,7 +20,6 @@ year-joined: 2022-09-01T15:06:37.800000Z
 subcategories:
   - dapp
 seo:
-  title: FileMarket
   description: FileMarket offers decentralized marketplace solutions for digital assets.
 email: encrypted::U2FsdGVkX1/SlT9vk4zMX23EQ7brjnGv0cyR8SWlhmgQm9y91u7/IwraElAE9IBJ
 full-name: encrypted::U2FsdGVkX18x2Y7KZCSH6M7nR4nFtme+mVXfseQbpzc=

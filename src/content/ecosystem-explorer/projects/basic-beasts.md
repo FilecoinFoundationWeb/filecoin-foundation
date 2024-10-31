@@ -15,7 +15,6 @@ tech:
 twitter: https://twitter.com/basicbeastsnft
 year-joined: 2024-03-29T21:28:48.611Z
 seo:
-  title: Basic Beasts
   description: Basic Beasts creates NFT-based collectibles on the Filecoin network.
 email: encrypted::U2FsdGVkX19i92+k9CGS3qh1wH2lwEuCcb4/oe1q7qFa2lVIwsR0TzUv04zmg3QM
 full-name: encrypted::U2FsdGVkX1+7nV/qiGeik6dXC5BFS23hGDItKpMnPzs=

@@ -12,7 +12,6 @@ image:
   src: /assets/images/64423aceef619d5dc5b60e52_1-e009tiaipq2vndk-evb9ng.png
 category: news
 seo:
-  title: Filecoin Foundation and FFDW Gain Momentum
   description:
     The Filecoin Foundation and Filecoin Foundation for the Decentralized
     Web gain momentum. Discover their latest initiatives.

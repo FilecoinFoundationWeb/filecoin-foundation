@@ -48,11 +48,11 @@ schedule:
             summit is more than just a meetup—it's a place for meaningful and
             impactful conversations that help push Filecoin forward.
 
-            Find the full agenda at fil-dev.io/FDS-5.
+            Find the full agenda at fildev.io/FDS-5.
           start: 2024-11-06T11:00:00.000Z
           end: 2024-11-06T20:00:00.000Z
           location: Gaysorn Urban Resort
-          url: https://fil-dev.io/FDS-5
+          url: https://www.fildev.io/FDS-5
       date: 2024-11-06T11:00:00.000Z
     - date: 2024-11-07T09:00:00.000Z
       events:
@@ -79,8 +79,8 @@ schedule:
             summit is more than just a meetup—it's a place for meaningful and
             impactful conversations that help push Filecoin forward.
 
-            Find the full agenda at fil-dev.io/FDS-5.
-          url: https://fil-dev.io/FDS-5
+            Find the full agenda at fildev.io/FDS-5.
+          url: https://fildev.io/FDS-5
           location: Gaysorn Urban Resort
           start: 2024-11-07T09:00:00.000Z
           end: 2024-11-07T18:30:00.000Z
@@ -109,8 +109,8 @@ schedule:
             summit is more than just a meetup—it's a place for meaningful and
             impactful conversations that help push Filecoin forward.
 
-            Find the full agenda at fil-dev.io/FDS-5.
-          url: https://fil-dev.io/FDS-5
+            Find the full agenda at fildev.io/FDS-5.
+          url: https://fildev.io/FDS-5
           location: Gaysorn Urban Resort
           start: 2024-11-08T09:00:00.000Z
           end: 2024-11-08T20:00:00.000Z
@@ -208,6 +208,10 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
+        - title: "GhostDrive Workshop and Demo "
+          start: 2024-11-11T10:00:00.000Z
+          end: 2024-11-11T12:00:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
@@ -282,6 +286,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/alexei-blagirev/
     image:
       src: /assets/images/alex-blagirev-headshot.webp
+  - image:
+      src: /assets/images/alan_coast.webp
+    name: Alan Ransil
+    title: CEO
+    company: Devonian Systems
+    linkedin: https://www.linkedin.com/in/alan-ransil-53573873/
 sponsors:
   first-tier:
     - name: ZETACUBE
@@ -301,7 +311,6 @@ sponsors:
       image:
         src: /assets/images/long_white.webp
 seo:
-  title: FIL Bangkok 2024
   description: Join the Filecoin Community in Bangkok for discussions on
     decentralized AI, DePIN, and the data economy. Network, hear major
     announcements, and shape the future of Filecoin ahead of Devcon.

@@ -17,7 +17,6 @@ year-joined: 2022-09-07T14:14:44.368000Z
 subcategories:
   - infrastructure
 seo:
-  title: HashGuard
   description:
     HashGuard provides decentralized security solutions for blockchain
     applications.

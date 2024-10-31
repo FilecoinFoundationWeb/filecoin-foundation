@@ -19,7 +19,6 @@ repo: https://github.com/ArtifactLabsOfficial/EIPs
 featured-content: https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/
 twitter: https://twitter.com/ArtifactLabs_
 seo:
-  title: "Artifact Labs: Preserving Culture and History on the Filecoin Network"
   description: Artifact Labs stores and shares cultural artifacts on the
     blockchain. Explore thousands of preserved items from the Titanic and
     beyond, secured on the Filecoin network for future generations.

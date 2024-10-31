@@ -13,7 +13,6 @@ image:
   src: /assets/images/64423af3e3c08f488e4f519c_1-pyb3swiscnbniykvqyrrdq.png
 category: use-cases
 seo:
-  title: How Swash Uses Filecoin to Protect Consumer Data
   description:
     Explore how Swash leverages Filecoin's decentralized storage network
     to preserve and protect consumer data.

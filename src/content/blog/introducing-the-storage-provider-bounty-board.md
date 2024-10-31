@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-08.png
 category: news
 seo:
-  title: Introducing the Storage Provider Bounty Board
   description:
     Filecoin Foundation launches the Storage Provider Bounty Board. Learn
     how to participate and earn rewards.

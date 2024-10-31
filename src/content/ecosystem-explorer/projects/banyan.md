@@ -22,7 +22,6 @@ year-joined: 2024-02-01T20:41:25.602Z
 subcategories:
   - data-storage-management
 seo:
-  title: Banyan
   description: Banyan offers decentralized data management solutions for enterprises.
 email: encrypted::U2FsdGVkX1+aBk8bAf6fekov/9WaGvLz/5UNeNBce6ElFipZ0xkri1q1jiHzc6po
 full-name: encrypted::U2FsdGVkX1+/emHS5H5JyJtytspect2NInkGajToAJI=

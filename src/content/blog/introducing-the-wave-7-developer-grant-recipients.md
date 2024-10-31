@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-32.png
 category: news
 seo:
-  title: Introducing the Wave 7 Developer Grant Recipients
   description:
     Meet the recipients of Filecoin Foundation's Wave 7 developer grants.
     Discover their innovative projects.
