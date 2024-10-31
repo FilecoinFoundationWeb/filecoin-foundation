@@ -30,7 +30,10 @@ export function ShareArticle({
     <div className="space-y-3">
       <p className="font-bold capitalize text-brand-300">{sectionTitle}</p>
       <ul className="offset-touch-target flex flex-wrap items-center gap-6">
-        <CopyToClipboard text={articleUrl} />
+        <CopyToClipboard
+          text={articleUrl}
+          notificationTitle="Link copied to clipboard!"
+        />
         {socialLinksWithIcons.map(({ label, href, icon }) => (
           <li key={label} className="inline-flex">
             <CustomLink
