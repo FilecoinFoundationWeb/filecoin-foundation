@@ -1,7 +1,9 @@
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
+import type { SponsorTier } from '../types/sponsorType'
+
 export type SponsorTierConfig = {
-  tier: 'firstTier' | 'secondTier' | 'thirdTier'
+  tier: SponsorTier
   containerGap: string
   logoImageConfig: {
     containerStyles: string

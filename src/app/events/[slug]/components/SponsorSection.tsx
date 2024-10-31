@@ -1,16 +1,12 @@
 import { PageSection } from '@/components/PageSection'
 
 import { sponsorTierConfigs } from '../../constants/sponsorTierConfigs'
-import type { Event } from '../../types/eventType'
+import type { Sponsors } from '../../types/sponsorType'
 
 import { SponsorContainer } from './SponsorContainer'
 
-export type Sponsor = NonNullable<
-  NonNullable<Event['sponsors']>['firstTier']
->[number]
-
 type SponsorSectionProps = {
-  sponsors: NonNullable<Event['sponsors']>
+  sponsors: Sponsors
 }
 
 export function SponsorSection({ sponsors }: SponsorSectionProps) {

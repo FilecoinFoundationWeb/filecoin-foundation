@@ -1,9 +1,9 @@
 import { clsx } from 'clsx'
 
 import type { SponsorTierConfig } from '../../constants/sponsorTierConfigs'
+import type { Sponsor } from '../../types/sponsorType'
 
 import { SponsorLogo } from './SponsorLogo'
-import type { Sponsor } from './SponsorSection'
 
 type SponsorContainerProps = {
   sponsors: Array<Sponsor>
