@@ -5,36 +5,28 @@ import { verifyMetaDescription } from './verifyMetaDescriptionUtil'
 import { verifyPageTitle } from './verifyPageTitleUtil'
 
 export function verifyMetadataForDynamicPages({
-  fullPath,
-  pagePath,
-  seoTitleSuffix,
+  contentFilePath,
+  urlPath,
+  metadataTitleSuffix,
 }: {
-  fullPath: string
-  pagePath: string
-  seoTitleSuffix?: string
+  contentFilePath: string
+  urlPath: string
+  metadataTitleSuffix?: string
 }) {
-  cy.visit(pagePath)
+  cy.visit(urlPath)
 
-  // Verify the canonical link
-  verifyCanonicalLink(pagePath)
+  verifyCanonicalLink(urlPath)
 
-  // Retrieve and process the page's metadata
-  cy.readFile(fullPath).then((markdownContent: string) => {
-    const { title, seo } = matter(markdownContent).data as {
-      title: string
-      seo: {
-        title?: string
-        description: string
-        overrideDefaultTitle?: boolean
-      }
-    }
+  cy.readFile(contentFilePath).then((markdownContent: string) => {
+    const { title, seo } = matter(markdownContent).data
+    const seoTitle = generateSeoTitle(title, seo?.title, metadataTitleSuffix)
 
-    const fallbackTitle = seoTitleSuffix ? `${title}${seoTitleSuffix}` : title
-
-    const seoTitle = seo?.title || fallbackTitle
-
-    // Verify the page title and meta description
-    verifyPageTitle(pagePath, seoTitle, seo.overrideDefaultTitle ?? false)
+    verifyPageTitle(urlPath, seoTitle, seo.overrideDefaultTitle ?? false)
     verifyMetaDescription(seo.description)
   })
+}
+
+function generateSeoTitle(title: string, seoTitle?: string, suffix?: string) {
+  if (seoTitle) return seoTitle
+  return suffix ? `${title}${suffix}` : title
 }

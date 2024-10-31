@@ -6,16 +6,17 @@ import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynami
 
 describe('Random Event Entry', () => {
   it('should check metadata', () => {
-    const eventsDirectoryPath = PATHS.EVENTS.entriesContentPath as string
+    const EVENTS_CONTENT_PATH = PATHS.EVENTS.entriesContentPath as string
+    const EVENTS_BASE_URL = PATHS.EVENTS.path
 
-    getRandomSlug(eventsDirectoryPath).then((slug) => {
-      const fullPath = `${eventsDirectoryPath}/${slug}.md`
-      const pagePath = `${PATHS.EVENTS.path}/${slug}`
+    getRandomSlug(EVENTS_CONTENT_PATH).then((slug) => {
+      const ENTRY_FILE_PATH = `${EVENTS_CONTENT_PATH}/${slug}.md`
+      const PAGE_URL = `${EVENTS_BASE_URL}/${slug}`
 
       verifyMetadataForDynamicPages({
-        fullPath,
-        pagePath,
-        seoTitleSuffix: METADATA_TITLE_SUFFIX,
+        contentFilePath: ENTRY_FILE_PATH,
+        urlPath: PAGE_URL,
+        metadataTitleSuffix: METADATA_TITLE_SUFFIX,
       })
     })
   })

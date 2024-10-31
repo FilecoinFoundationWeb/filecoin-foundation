@@ -6,17 +6,18 @@ import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynami
 
 describe('Random Ecosystem Explorer Project', () => {
   it('should check metadata', () => {
-    const ecosystemDirectoryPath = PATHS.ECOSYSTEM_EXPLORER
+    const ECOSYSTEM_CONTENT_PATH = PATHS.ECOSYSTEM_EXPLORER
       .entriesContentPath as string
+    const ECOSYSTEM_BASE_URL = PATHS.ECOSYSTEM_EXPLORER.path
 
-    getRandomSlug(ecosystemDirectoryPath).then((slug) => {
-      const fullPath = `${ecosystemDirectoryPath}/${slug}.md`
-      const pagePath = `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`
+    getRandomSlug(ECOSYSTEM_CONTENT_PATH).then((slug) => {
+      const ENTRY_FILE_PATH = `${ECOSYSTEM_CONTENT_PATH}/${slug}.md`
+      const PAGE_URL = `${ECOSYSTEM_BASE_URL}/${slug}`
 
       verifyMetadataForDynamicPages({
-        fullPath,
-        pagePath,
-        seoTitleSuffix: METADATA_TITLE_SUFFIX,
+        contentFilePath: ENTRY_FILE_PATH,
+        urlPath: PAGE_URL,
+        metadataTitleSuffix: METADATA_TITLE_SUFFIX,
       })
     })
   })

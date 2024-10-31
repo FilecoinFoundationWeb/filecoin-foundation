@@ -5,15 +5,16 @@ import { verifyMetadataForDynamicPages } from '@/support/verifyMetadataForDynami
 
 describe('Random Blog Post', () => {
   it('should check metadata', () => {
-    const blogDirectoryPath = PATHS.BLOG.entriesContentPath as string
+    const BLOG_CONTENT_PATH = PATHS.BLOG.entriesContentPath as string
+    const BLOG_BASE_URL = PATHS.BLOG.path
 
-    getRandomSlug(blogDirectoryPath).then((slug) => {
-      const fullPath = `${blogDirectoryPath}/${slug}.md`
-      const pagePath = `${PATHS.BLOG.path}/${slug}`
+    getRandomSlug(BLOG_CONTENT_PATH).then((slug) => {
+      const ENTRY_FILE_PATH = `${BLOG_CONTENT_PATH}/${slug}.md`
+      const PAGE_URL = `${BLOG_BASE_URL}/${slug}`
 
       verifyMetadataForDynamicPages({
-        fullPath,
-        pagePath,
+        contentFilePath: ENTRY_FILE_PATH,
+        urlPath: PAGE_URL,
       })
     })
   })
