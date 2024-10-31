@@ -8,10 +8,8 @@ import type { SponsorTierConfig } from '../utils/sponsorTierConfigs'
 
 import type { Sponsor } from './SponsorSection'
 
-export type SponsorLogoProps = {
+type SponsorLogoProps = Omit<SponsorTierConfig, 'gap'> & {
   sponsor: Sponsor
-  tier: SponsorTierConfig['tier']
-  logoImageConfig: SponsorTierConfig['logoImageConfig']
 }
 
 export function SponsorLogo({

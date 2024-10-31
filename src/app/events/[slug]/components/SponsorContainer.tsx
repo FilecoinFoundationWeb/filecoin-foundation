@@ -7,10 +7,7 @@ import type { Sponsor } from './SponsorSection'
 
 type SponsorContainerProps = {
   sponsors: Array<Sponsor>
-  tier: SponsorTierConfig['tier']
-  logoImageConfig: SponsorTierConfig['logoImageConfig']
-  gap: SponsorTierConfig['gap']
-}
+} & SponsorTierConfig
 
 export function SponsorContainer({
   sponsors,
