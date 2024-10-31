@@ -4,17 +4,11 @@ import { clsx } from 'clsx'
 
 import { capitalize } from '@/utils/capitalize'
 
-import type { Sponsor } from './SponsorSection'
+import type { SponsorTierConfig } from '../../constants/sponsorTierConfigs'
+import type { Sponsor } from '../../types/sponsorType'
 
-export type LogoImageConfig = {
-  containerStyles: string
-  imageSizes: string
-}
-
-export type SponsorLogoProps = {
+type SponsorLogoProps = Omit<SponsorTierConfig, 'containerGap'> & {
   sponsor: Sponsor
-  tier: string
-  logoImageConfig: LogoImageConfig
 }
 
 export function SponsorLogo({
@@ -25,13 +19,13 @@ export function SponsorLogo({
   const formattedSponsorTier = formatSponsorTier(tier)
 
   return (
-    <div className={clsx('relative w-full', logoImageConfig.containerStyles)}>
+    <div className={clsx('relative', logoImageConfig.containerStyles)}>
       <Image
         fill
         src={sponsor.image.src}
         alt={`${sponsor.name} Logo - ${formattedSponsorTier} sponsor`}
         sizes={logoImageConfig.imageSizes}
-        className="object-contain object-left-bottom"
+        className="object-contain"
       />
       {sponsor.website && (
         <a
