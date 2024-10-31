@@ -1,4 +1,5 @@
 import { z } from 'zod'
+
 import { DatacapSchema } from './DatacapSchema'
 
 const ApplicationSchema = z.object({
