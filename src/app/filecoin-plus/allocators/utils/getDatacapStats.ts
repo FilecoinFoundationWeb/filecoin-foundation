@@ -2,7 +2,7 @@ import { DatacapSchema, type Datacap } from '../schemas/DatacapSchema'
 
 const api = 'https://api.datacapstats.io/api/getVerifiers'
 
-export async function getDatacapStats(): Promise<Datacap[]> {
+export async function getDatacapStats(): Promise<Array<Datacap>> {
   try {
     const response = await fetch(api)
     const { data } = await response.json()
