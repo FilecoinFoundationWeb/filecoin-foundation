@@ -11,7 +11,6 @@ image:
   src: /assets/images/06012023-ntent.png
 category: interviews
 seo:
-  title: "Remixing the Art World with Blockchain: A Q&A with Ntent"
   description:
     A Q&A with Ntent on how blockchain technology is remixing the art world.
     Explore their insights.

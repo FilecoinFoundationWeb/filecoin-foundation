@@ -14,7 +14,6 @@ year-joined: 2023-11-01T18:39:58.216Z
 subcategories:
   - artificial-productivity-utilities
 seo:
-  title: Neyra AI from Wise Data PTE
   description:
     Neyra AI provides AI-driven solutions for decentralized data analysis
     and management.

@@ -10,7 +10,6 @@ external-link:
   url: https://www.youtube.com/watch?v=LU_WjU0mUuM
 start-date: 2021-03-04T23:00:00.000Z
 seo:
-  title: GBBC Virtual Members Forum with Marta Belcher
   description: Join the GBBC Virtual Members Forum with Marta Belcher to learn
     about the latest in blockchain and decentralized technologies.
 ---

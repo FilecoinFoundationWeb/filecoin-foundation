@@ -9,7 +9,6 @@ description: "Check out the latest updates about what the Filecoin Foundation
 image:
   src: /assets/images/0215-ff-19-.webp
 seo:
-  title: "Fresh From FF: October, 2024"
   description: Filecoin Foundation teams up with Aethir, the Filecoin Ecosystem
     Digest is published, and DocumentCloud is now using Filecoin to ensure
     long-term preservation and distribution of documents.

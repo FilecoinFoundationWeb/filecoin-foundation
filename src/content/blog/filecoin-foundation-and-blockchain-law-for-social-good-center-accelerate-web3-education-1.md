@@ -12,9 +12,6 @@ created-on: "2023-04-21T07:27:04.336Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: news
 seo:
-  title:
-    Filecoin Foundation and Blockchain Law for Social Good Center Accelerate
-    Web3 Education
   description:
     Collaborative efforts to accelerate Web3 education by Filecoin Foundation
     and Blockchain Law for Social Good Center.

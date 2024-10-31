@@ -13,7 +13,6 @@ image:
   src: /assets/images/64423a97d1b025cf67f903ec_1-k1bbzfo-mulctcjeu5e_da.png
 category: news
 seo:
-  title: Bela Supernova Receives Chainlink-Filecoin Joint Grant
   description:
     Bela Supernova awarded a joint grant by Chainlink and Filecoin to support
     public health data oracle development.

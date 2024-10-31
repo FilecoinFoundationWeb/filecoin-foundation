@@ -18,7 +18,6 @@ twitter: "https://twitter.com/sinsonetwork"
 subcategories:
   - health
 seo:
-  title: Sinso
   description:
     Sinso provides decentralized storage solutions for healthcare data
     management.

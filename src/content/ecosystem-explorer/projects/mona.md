@@ -16,7 +16,6 @@ tech:
 twitter: https://twitter.com/monaverse
 year-joined: 2024-03-29T21:28:53.652Z
 seo:
-  title: Mona
   description: Mona provides decentralized solutions for virtual worlds and digital assets.
 email: encrypted::U2FsdGVkX199/QcVuMBxGxIdJW23r8uSXehn4qu/nL76IB5eBSCgrZTVie4+aeWc
 full-name: encrypted::U2FsdGVkX1/c9YcWy1H4h1xw0PoxpokLAh44q1CkqZ0=

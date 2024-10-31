@@ -15,8 +15,6 @@ seo:
     card: summary
   description: The "Not Your Parents' Web" project reveals the fragile lifespan
     of online content.
-  title: "The Web Isn’t Forever: New Research Findings from “Not Your Parents'
-    Web” Project"
 ---
 
 Today, we’re excited to share the release of findings from the "Not Your Parents' Web" project –– an extensive study that explores the lifespan of millions of web pages across the last 26 years. The collaborative project from Internet Archive, Old Dominion University’s Web Science & Digital Libraries Research Group, and Filecoin Foundation (FF) analyzed data from the Wayback Machine to reveal key insights into the lifespan of URLs and the ephemeral nature of the web.

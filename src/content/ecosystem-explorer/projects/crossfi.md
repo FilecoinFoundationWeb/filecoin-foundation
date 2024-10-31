@@ -17,7 +17,6 @@ tech:
 twitter: https://twitter.com/globalcrossfi/
 year-joined: 2024-01-17T14:44:30.896Z
 seo:
-  title: CrossFi
   description: CrossFi offers decentralized finance solutions for cross-chain
     interoperability.
 ---

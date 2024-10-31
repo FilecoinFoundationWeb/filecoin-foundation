@@ -11,7 +11,6 @@ image:
   src: /assets/images/643e66c80a810364460c68bb_1-b1odemnhfczn_24q2linww.png
 category: use-cases
 seo:
-  title: Storage Company Ewesion Uses Filecoin for Data Preservation
   description:
     Ewesion utilizes the Filecoin network for preserving data. Learn more
     about their approach.

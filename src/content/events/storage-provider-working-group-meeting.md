@@ -11,7 +11,6 @@ start-date: 2021-08-24T22:00:00.000Z
 image:
   src: /assets/images/64521604a359ff699f3705ec_storage-provider-working-group.png
 seo:
-  title: Storage Provider Working Group Meeting
   description:
     Join the Storage Provider Working Group Meeting to collaborate and
     discuss Filecoin storage solutions.

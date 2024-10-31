@@ -13,7 +13,6 @@ description:
 image:
   src: /assets/images/0215-ff.png
 seo:
-  title: "Fresh from FF: Mid February 2024"
   description:
     Catch up on the latest news and updates from Filecoin Foundation in
     mid-February 2024.

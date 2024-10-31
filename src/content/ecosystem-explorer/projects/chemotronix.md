@@ -17,7 +17,6 @@ tech:
 twitter: https://twitter.com/chemotronix
 year-joined: 2024-03-29T21:28:49.980Z
 seo:
-  title: Chemotronix
   description: Chemotronix offers decentralized science solutions for data management.
 ---
 

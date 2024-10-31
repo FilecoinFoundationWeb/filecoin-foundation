@@ -9,7 +9,6 @@ description: The Developer Grants Updates series brings news and highlights from
 image:
   src: /assets/images/0701-dg-updates.webp
 seo:
-  title: Filecoin Foundation Developer Grants Updates August 2024
   description:
     Explore the Filecoin Foundation's latest Developer Grants Updates,
     featuring 2024 highlights, new projects, and funding innovations. Discover

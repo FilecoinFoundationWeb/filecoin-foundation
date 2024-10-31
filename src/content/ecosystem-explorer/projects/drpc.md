@@ -16,7 +16,6 @@ year-joined: 2024-04-05T13:32:22.117000Z
 subcategories:
   - data-retrieval
 seo:
-  title: DRPC
   description:
     DRPC provides decentralized solutions for remote procedure calls and
     data retrieval.

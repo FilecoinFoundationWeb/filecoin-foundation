@@ -13,7 +13,6 @@ image:
   src: /assets/images/64423b0f4e4c686c88f481d6_1-mg36oqbqdetgd3sn8-bgsq.png
 category: ecosystem
 seo:
-  title: Meet the Filecoin Foundations
   description:
     Meet the teams behind the Filecoin Foundation and the Filecoin Foundation
     for the Decentralized Web.

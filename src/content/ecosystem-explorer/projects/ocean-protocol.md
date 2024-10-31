@@ -18,7 +18,6 @@ twitter: "https://twitter.com/oceanprotocol"
 subcategories:
   - data-storage-management
 seo:
-  title: Ocean Protocol
   description: Ocean Protocol provides decentralized data exchange solutions.
 email: encrypted::U2FsdGVkX18Crb/AqRAtk/DeYxTNmJu9WblBAyKmVnZ9LEuLIzEXv5pr1grcW5cE
 full-name: encrypted::U2FsdGVkX1/LX/8eGWGA4Dd4WVm1K5A15MbWdNXKhJ8=

@@ -10,7 +10,6 @@ description: This is the latest post in our series highlighting the builders and
 image:
   src: /assets/images/rectangle-31-.png
 seo:
-  title: "Dev Grant Spotlight: Fileverse"
   description: "Fileverse project spotlight: Discover their innovations and
     contributions as a Filecoin Foundation Dev Grant recipient."
 ---

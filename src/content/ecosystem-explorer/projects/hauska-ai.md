@@ -17,7 +17,6 @@ year-joined: 2023-12-27T20:42:42.062000Z
 subcategories:
   - artificial-productivity-utilities
 seo:
-  title: Hauska AI
   description:
     Hauska AI provides AI-driven solutions for decentralized data analysis
     and management.

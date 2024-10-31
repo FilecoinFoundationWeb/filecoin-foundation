@@ -12,7 +12,6 @@ authors:
 image:
   src: /assets/images/enterprise-storage-market-insights-from-the-field.webp
 seo:
-  title: "Enterprise Storage Market Insights From the Field"
   description: "At DeStor, we are dedicated to revolutionizing decentralized storage solutions by seamlessly integrating them with enterprise applications. With over 50 years of combined experience in enterprise data storage, our..."
 ---
 

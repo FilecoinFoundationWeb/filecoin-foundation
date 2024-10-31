@@ -11,7 +11,6 @@ image:
   src: /assets/images/64423a8c4e4c682bdff3f2e5_1-1hvgrfumdxuavwm1qy5flw.webp
 category: news
 seo:
-  title: Public Data Commons and Awards Program Announcement
   description:
     Filecoin Foundation announces the Public Data Commons and Awards Program.
     Recognizing contributions to open data.

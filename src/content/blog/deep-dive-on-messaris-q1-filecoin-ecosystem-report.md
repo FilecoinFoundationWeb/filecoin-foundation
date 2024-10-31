@@ -10,7 +10,6 @@ description:
 image:
   src: /assets/images/050824-messariq1.png
 seo:
-  title: Deep Dive on Messari's Q1 Filecoin Ecosystem Report
   description:
     An in-depth look at Messari's Q1 report on the Filecoin ecosystem.
     Key insights and analysis.

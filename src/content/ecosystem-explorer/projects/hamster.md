@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:51.960000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Hamster
   description:
     Hamster offers decentralized storage solutions for personal and enterprise
     use.

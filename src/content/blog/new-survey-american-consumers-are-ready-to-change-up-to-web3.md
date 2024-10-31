@@ -11,7 +11,6 @@ image:
   src: /assets/images/643e66ba7403cdfbea565a6e_1-57prfcg89azmw_kf5bqvjw.webp
 category: reports
 seo:
-  title: "New Survey: American Consumers Ready to Embrace Web3"
   description:
     A new survey reveals that American consumers are ready to embrace Web3.
     Explore the findings.

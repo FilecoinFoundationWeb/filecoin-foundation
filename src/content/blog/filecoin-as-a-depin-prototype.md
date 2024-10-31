@@ -9,7 +9,6 @@ description: The Decentralized Physical Infrastructure Network (DePIN) movement
 image:
   src: /assets/images/022624-depin.png
 seo:
-  title: Filecoin as a DePIN Prototype
   description: Exploring Filecoin's role as a decentralized physical
     infrastructure network (DePIN) prototype.
 ---

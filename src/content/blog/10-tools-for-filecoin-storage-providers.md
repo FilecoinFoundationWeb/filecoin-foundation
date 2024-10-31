@@ -11,7 +11,6 @@ image:
   src: /assets/images/92523-sptooling.png
 category: ecosystem
 seo:
-  title: Top 10 Tools for Filecoin Storage Providers
   description:
     Discover the top 10 tools for Filecoin storage providers to enhance
     performance and efficiency. Learn more now!

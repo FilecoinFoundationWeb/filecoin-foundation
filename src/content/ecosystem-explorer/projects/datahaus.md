@@ -18,7 +18,6 @@ tech:
 twitter: https://twitter.com/DataHaus_
 year-joined: 2024-03-29T21:28:52.788Z
 seo:
-  title: DataHaus
   description: DataHaus provides decentralized data management and analytics solutions.
 ---
 

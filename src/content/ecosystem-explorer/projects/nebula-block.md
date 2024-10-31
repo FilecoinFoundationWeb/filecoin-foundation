@@ -19,7 +19,6 @@ year-joined: 2020-06-15T13:58:36.727000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Nebula Block
   description: Nebula Block offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX1+IMOu3LkLot6qnm2eTDmFl0Cy3Z6LtnD7oMks9nhZHSffG9CxX7ax0
 full-name: encrypted::U2FsdGVkX1+OB44vzZHYCVXI2ZPAFPD0BGrrbErBhmc=

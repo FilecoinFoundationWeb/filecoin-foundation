@@ -18,7 +18,6 @@ featured-content: "https://fil.org/blog/case-study-seal-storage-making-web3-acce
 subcategories:
   - data-storage-management
 seo:
-  title: Seal Storage
   description: Seal Storage provides decentralized storage solutions for enterprises.
 email: encrypted::U2FsdGVkX1/QGWr0qycz70IjHfApBCTG/G6f78FuKNWuBo4viqOHamBCTlHX+sp9
 full-name: encrypted::U2FsdGVkX1+AxhJEj4cMJa8Le5xKd83qMwDHtZAXZx4=

@@ -17,7 +17,6 @@ twitter: "https://twitter.com/MuseumofCrypto"
 subcategories:
   - arts-collectibles-nfts
 seo:
-  title: Museum of Crypto Art (M○C△)
   description:
     Museum of Crypto Art offers decentralized solutions for digital art
     and collectibles.

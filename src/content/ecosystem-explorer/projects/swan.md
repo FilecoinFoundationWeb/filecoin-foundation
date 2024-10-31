@@ -16,7 +16,6 @@ year-joined: 2024-01-11T13:26:59.787Z
 subcategories:
   - data-storage-management
 seo:
-  title: Swan
   description: Swan provides decentralized storage solutions for digital assets.
 email: encrypted::U2FsdGVkX1+nd+tkEgibXUU5gK4xyn+f/AcM/GgJToJG4sXesUUFrJc+GuiO5wg8
 full-name: encrypted::U2FsdGVkX1+BhJbsirg0bs3FYJWI+igkfph70tUWOLQ=

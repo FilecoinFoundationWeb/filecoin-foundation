@@ -18,8 +18,6 @@ tech:
 twitter: https://twitter.com/AnytypeLabs
 year-joined: 2024-04-05T17:13:02.017Z
 seo:
-  title: "Anytype: Private Hub for Data with Privacy-First Architecture and IPFS
-    Storage"
   description:
     Protect your data with Anytype, a private hub for docs, tasks, and
     more. Create dashboards and knowledge graphs with privacy across devices

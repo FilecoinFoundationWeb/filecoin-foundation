@@ -12,7 +12,6 @@ image:
   src: /assets/images/64423afe4e4c68b60af47060_0-8alsa5xsesgbjyrr.png
 category: events
 seo:
-  title: Join Filecoin Launchpad Accelerator Demo Day on September 28
   description:
     Join us on September 28 for the Filecoin Launchpad Accelerator Demo
     Day and meet 20 fascinating startups.

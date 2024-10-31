@@ -12,7 +12,6 @@ created-on: "2023-04-21T07:27:26.180Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Filswan"
   description:
     Explore the achievements and offerings of Filswan, a key player in
     the Filecoin storage ecosystem.

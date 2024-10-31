@@ -10,7 +10,6 @@ description: "Q&A with Filecoin Orbit ambassador about the potential impact of
 image:
   src: /assets/images/09282024-africaagriculture.png
 seo:
-  title: Filecoin and Blockchain Revolutionizing Agriculture in Africa
   description: Discover how Filecoin’s blockchain technology is addressing
     agricultural challenges in Africa through supply chain transparency,
     sustainable farming, and smart contracts for crop insurance.

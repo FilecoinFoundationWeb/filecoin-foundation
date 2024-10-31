@@ -11,7 +11,6 @@ created-on: "2023-04-21T07:27:36.061Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Seal Storage Technology"
   description:
     Seal Storage Technology's role and contributions to the Filecoin storage
     network. Discover more.

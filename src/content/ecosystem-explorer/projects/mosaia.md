@@ -15,7 +15,6 @@ year-joined: 2024-01-12T20:30:19.649Z
 subcategories:
   - data-storage-management
 seo:
-  title: Mosaia
   description: Mosaia offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18GQJ4innHIUuUL1cTYRb8J+wP6wFuKhX8rSChNVRktj5ZcDVGY9lHb
 full-name: encrypted::U2FsdGVkX18qYCbssakLTKHzLmPp6HY+xmlT6n0a6Bs=

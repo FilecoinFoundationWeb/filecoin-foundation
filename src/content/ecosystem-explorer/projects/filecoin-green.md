@@ -18,7 +18,6 @@ tech:
   - ipfs
 twitter: https://twitter.com/filecoingreen
 seo:
-  title: Filecoin Green
   description: Filecoin Green provides sustainable solutions for decentralized storage.
 ---
 

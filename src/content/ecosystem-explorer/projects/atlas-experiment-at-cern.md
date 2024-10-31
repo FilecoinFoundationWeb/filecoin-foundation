@@ -19,7 +19,6 @@ twitter: "https://twitter.com/ATLASexperiment"
 subcategories:
   - decentralized-science
 seo:
-  title: ATLAS Experiment at CERN
   description: Explore the ATLAS Experiment at CERN using decentralized storage solutions.
 email: encrypted::U2FsdGVkX180yXAP8t71XhT8wj/uSaUpEhBy4q36CbXl7uTJlIhSMqHrZCO2L+VA
 full-name: encrypted::U2FsdGVkX18+69wboV7Pxfbbh79Zk3zZJeNJasDan0I=

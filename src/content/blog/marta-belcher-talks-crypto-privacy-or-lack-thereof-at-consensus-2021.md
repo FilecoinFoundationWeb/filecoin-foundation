@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423b080425d3dc88f2efd0_0-ujllypeozzx_ebfb.png
 category: events
 seo:
-  title: Marta Belcher Discusses Crypto Privacy at Consensus 2021
   description:
     Marta Belcher talks about crypto privacy and its challenges at Consensus
     2021.

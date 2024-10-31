@@ -15,7 +15,6 @@ image:
   src: /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
 category: news
 seo:
-  title: Filecoin Foundation and Protocol Labs' NYC Open Data Project
   description:
     Experimental project by Filecoin Foundation and Protocol Labs to put
     New York City open data on the Filecoin network.

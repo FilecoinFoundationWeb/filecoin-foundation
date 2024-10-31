@@ -10,7 +10,6 @@ external-link:
 start-date: 2021-04-30T22:00:00.000Z
 end-date: 2021-07-17T22:00:00.000Z
 seo:
-  title: Filecoin Grant Global Online Hackathon
   description: Participate in the Filecoin Grant Global Online Hackathon to
     showcase your skills and win grants.
 ---

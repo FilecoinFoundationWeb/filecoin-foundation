@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423b004e4c68dc35f473ac_0-zlsuhdrlo5hqa1zy.png
 category: news
 seo:
-  title: Join the Filecoin Foundation Team for a Hiring Webinar
   description:
     Learn about career opportunities at Filecoin Foundation. Join our hiring
     webinar to get started.

@@ -14,7 +14,6 @@ year-joined: 2024-03-29T21:28:53.605000Z
 subcategories:
   - arts-collectibles-nfts
 seo:
-  title: NiftyGuilds
   description:
     NiftyGuilds provides decentralized solutions for NFT communities and
     projects.

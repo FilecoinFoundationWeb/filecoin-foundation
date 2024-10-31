@@ -15,7 +15,6 @@ year-joined: 2024-03-29T21:28:55.457000Z
 subcategories:
   - bridges-oracles
 seo:
-  title: Tellor
   description:
     Tellor provides decentralized data oracle solutions for blockchain
     applications.

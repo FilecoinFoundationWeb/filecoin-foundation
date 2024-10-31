@@ -10,8 +10,8 @@ description: Ukraine Art Collective’s (UkraineArtCo) mission is to unite artis
 image:
   src: /assets/images/64423ab8fa70d13d126ff4f7_1-4bia5dzrvjftkirryi_bxq.png
 seo:
-  title: "Dev Grant Spotlight: Ukraine Art Collective"
-  description: Ukraine Art Collective's impactful project highlighted in this dev
+  description:
+    Ukraine Art Collective's impactful project highlighted in this dev
     grant spotlight. Discover their contributions.
 ---
 
