@@ -1,11 +1,11 @@
 'use client'
-import { clsx } from 'clsx'
 
 import { useState } from 'react'
 
 import { Button } from '@headlessui/react'
 import { Link } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
+import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'

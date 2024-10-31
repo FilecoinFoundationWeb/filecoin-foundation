@@ -1,7 +1,8 @@
 'use client'
 
-import { BASE_URL } from '@/constants/siteMetadata'
 import { clsx } from 'clsx'
+
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
