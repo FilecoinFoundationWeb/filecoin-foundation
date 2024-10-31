@@ -8,7 +8,7 @@ import type { SponsorTierConfig } from '../utils/sponsorTierConfigs'
 
 import type { Sponsor } from './SponsorSection'
 
-type SponsorLogoProps = Omit<SponsorTierConfig, 'gap'> & {
+type SponsorLogoProps = Omit<SponsorTierConfig, 'containerGap'> & {
   sponsor: Sponsor
 }
 

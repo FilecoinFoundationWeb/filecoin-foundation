@@ -17,7 +17,7 @@ export function SponsorSection({ sponsors }: SponsorSectionProps) {
   return (
     <PageSection kicker="sponsors" title="Sponsors">
       <div className="grid gap-16">
-        {sponsorTierConfigs.map(({ tier, logoImageConfig, gap }) => {
+        {sponsorTierConfigs.map(({ tier, logoImageConfig, containerGap }) => {
           if (!sponsors[tier] || sponsors[tier].length === 0) return null
 
           return (
@@ -25,7 +25,7 @@ export function SponsorSection({ sponsors }: SponsorSectionProps) {
               key={tier}
               sponsors={sponsors[tier]}
               tier={tier}
-              gap={gap}
+              containerGap={containerGap}
               logoImageConfig={logoImageConfig}
             />
           )
