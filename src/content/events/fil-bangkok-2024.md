@@ -362,10 +362,15 @@ sponsors:
       website: https://x.com/lighthouseweb3
       image:
         src: /assets/images/lighthouse-logo.svg
+  second-tier:
+    - name: Fleek
+      image:
+        src: /assets/images/fleek-logo_darkmode.webp
+      website: https://fleek.co/
     - name: GLIF
-      website: https://www.glif.io/en
       image:
         src: /assets/images/long_white.webp
+      website: https://www.glif.io/en
 seo:
   description: Join the Filecoin Community in Bangkok for discussions on
     decentralized AI, DePIN, and the data economy. Network, hear major
