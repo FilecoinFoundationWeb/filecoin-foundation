@@ -69,7 +69,7 @@ In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbo
 
 We had the pleasure of hosting at Poolside – which is an exciting new accelerator, co-work space and event hub serving the Lisbon Web3 community. The city has an incredibly eclectic community of both native Portuguese builders and expats who have set up in the city to take advantage of its favorable crypto climate.
 
-Stef Magdalinski, Head of Technical Programs at the Filecoin Foundation, discussed the Foundation's [grants programs](https://fil.org/grants/), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
+Stef Magdalinski, Head of Technical Programs at Filecoin Foundation, discussed the Foundation's [grants programs](https://fil.org/grants/), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
 
 ## Munich: Student Fanfare at Technical University of Munich
 

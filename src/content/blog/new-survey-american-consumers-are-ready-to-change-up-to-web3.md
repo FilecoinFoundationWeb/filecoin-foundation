@@ -4,7 +4,7 @@ created-on: "2023-04-21T07:31:36.890Z"
 updated-on: "2023-04-21T07:31:36.890Z"
 published-on: "2023-04-21T07:33:56.200Z"
 description: >-
-  The results of a new survey of American consumers from the Filecoin Foundation
+  The results of a new survey of American consumers from Filecoin Foundation
   reveal that — while Americans trust the internet’s overall resilience, they
   don’t like how their data is managed by the current gatekeepers.
 image:
@@ -16,7 +16,7 @@ seo:
     Explore the findings.
 ---
 
-The results of a new survey of American consumers from the Filecoin Foundation reveal that — while Americans trust the internet’s overall resilience, they don’t like how their data is managed by the current gatekeepers. In the survey results, they speak of precious memories lost online, worry about losing control of their personal information, and that they see the benefits of a decentralized internet. The survey provides insights into Americans’ perceptions of and experience with digital storage, today’s centralized web and decentralized alternatives — including Web3 technologies such as NFTs, metaverse, and cryptocurrencies.
+The results of a new survey of American consumers from Filecoin Foundation reveal that — while Americans trust the internet’s overall resilience, they don’t like how their data is managed by the current gatekeepers. In the survey results, they speak of precious memories lost online, worry about losing control of their personal information, and that they see the benefits of a decentralized internet. The survey provides insights into Americans’ perceptions of and experience with digital storage, today’s centralized web and decentralized alternatives — including Web3 technologies such as NFTs, metaverse, and cryptocurrencies.
 
 The survey of over 1,000 American adults found that only 22% think that the internet is extremely or very fragile, yet over half (55%) indicate that they have lost digital information that they cared about.
 

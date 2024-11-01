@@ -15,7 +15,7 @@ image:
 category: news
 seo:
   description:
-    Announcing the Filecoin Foundation and Lockheed Martin mission collaboration.
+    Announcing Filecoin Foundation and Lockheed Martin mission collaboration.
     Explore the details.
 ---
 

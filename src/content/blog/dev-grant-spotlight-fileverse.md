@@ -48,4 +48,4 @@ This decentralized journey has led the Fileverse team to their new and most anti
 
 The owner(s) of a Fileverse Portal can customize their Portal with different plugins for collaboration (eg. whiteboard, live collab, image generation, 3D visualization), enable end-to-end encryption, and leverage wallets to create unique access-tokens (for any file) and send them to their collaborators, friends or community on-chain. Learn more or start using [Fileverse](https://fileverse.io/) today and follow them on Twitter at [@Fileverse](https://twitter.com/fileverse).
 
-_The Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._
+_Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._

@@ -25,4 +25,4 @@ It is inherently useful for blockchain protocols to host multiple implementation
 
 For example, the first version of the Forest testnet already includes some ‘MVP features’ for users to test out. These include blockchain message pools, command-line wallet functionality, performance metrics, and others.
 
-The Filecoin Foundation looks forward to supporting Chainsafe in maintaining and constantly improving the Forest client. In the coming months, teams from both organizations will work collaboratively to develop new use cases for Forest, develop additional features, and onboard new developers to the network.
+Filecoin Foundation looks forward to supporting Chainsafe in maintaining and constantly improving the Forest client. In the coming months, teams from both organizations will work collaboratively to develop new use cases for Forest, develop additional features, and onboard new developers to the network.

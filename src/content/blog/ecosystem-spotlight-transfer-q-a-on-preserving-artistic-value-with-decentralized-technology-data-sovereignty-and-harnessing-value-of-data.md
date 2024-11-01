@@ -78,4 +78,4 @@ In our earliest calculation with only 10 of our 60+ international artists collec
 
 **Learn more about [TRANSFER Data Trust](https://fil.org/ecosystem-projects/transfer-data-trust/) on the Filecoin Ecosystem Explorer, the interactive showcase of diverse projects that make up the Filecoin ecosystem.**
 
-_The Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for [Open Grants and Microgrants](https://fil.org/grants)._
+_Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for [Open Grants and Microgrants](https://fil.org/grants)._
