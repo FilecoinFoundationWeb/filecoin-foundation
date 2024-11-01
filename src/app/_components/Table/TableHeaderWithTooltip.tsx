@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 import { ClickTooltip, type ClickTooltipProps } from '@/components/ClickTooltip'
 import { Icon } from '@/components/Icon'
 
-type HeaderWithTooltipProps = {
+type TableHeaderWithTooltipProps = {
   header: string
   description: ClickTooltipProps['description']
 }
@@ -17,10 +17,10 @@ const touchTarget = {
   offsetClass: '-m-2',
 }
 
-export function HeaderWithTooltip({
+export function TableHeaderWithTooltip({
   header,
   description,
-}: HeaderWithTooltipProps) {
+}: TableHeaderWithTooltipProps) {
   return (
     <div className="flex items-center gap-1">
       <span>{header}</span>
