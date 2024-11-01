@@ -1,5 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
+import { HeaderWithTooltip } from '@/components/Table/HeaderWithTooltip'
+
 import { ApplyLink } from '../components/ApplyLink'
 import type { Allocator } from '../schemas/AllocatorSchema'
 
@@ -16,7 +18,12 @@ export const allocatorsTableColumnsData = [
     filterFn: 'includesString',
   }),
   columnHelper.accessor('metapathway_type', {
-    header: 'Type',
+    header: () => (
+      <HeaderWithTooltip
+        header="Type"
+        description="The allocation method used to distribute DataCap to clients."
+      />
+    ),
     cell: (info) => info.getValue(),
     meta: {
       headerCellStyle: 'w-44',
@@ -32,17 +39,27 @@ export const allocatorsTableColumnsData = [
     filterFn: 'includesString',
   }),
   columnHelper.accessor('application.required_replicas', {
-    header: 'Required Replicas',
+    header: () => (
+      <HeaderWithTooltip
+        header="Required Replicas"
+        description="The minimum number of data copies that must be stored."
+      />
+    ),
     cell: (info) => info.getValue(),
     meta: {
-      headerCellStyle: 'w-44',
+      headerCellStyle: 'w-52',
     },
   }),
   columnHelper.accessor('application.required_sps', {
-    header: 'Required SPs',
+    header: () => (
+      <HeaderWithTooltip
+        header="Required SPs"
+        description="The minimum number of distinct storage providers needed for data storage."
+      />
+    ),
     cell: (info) => info.getValue(),
     meta: {
-      headerCellStyle: 'w-44',
+      headerCellStyle: 'w-52',
     },
   }),
   columnHelper.accessor('application.allocation_bookkeeping', {
