@@ -44,4 +44,4 @@ The Numbers Mainnet launched in November 2022, lowering the cost of registration
 
 In February 2023, Numbers Protocol integrated Numbers Blockchain into the Capture App, enabling digital assets to be migrated to the Numbers Mainnet and set as the NFT minting chain for the Capture App. Moving forward, the focus will be continued integration of other applications onto Mainnet, including the API, Numbers Search Engine, and SDKs. Numbers Protocol will continue to build on these successes by further integrating with Filecoin and IPFS, improving the platform's features and user experience, and expanding to new markets.
 
-_The Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._
+_Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._

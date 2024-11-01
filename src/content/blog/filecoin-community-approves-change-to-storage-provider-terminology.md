@@ -20,7 +20,7 @@ Today, the Filecoin community approved [Filecoin Improvement Proposal 18 (FIP-00
 
 [FIPs](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0001.md) are the primary way that Filecoin community members can submit, discuss, and approve changes to the Filecoin protocol. FIP-0018 formally changes the nomenclature from “miners” to “storage providers” in marketing assets, documentation, communication channels. With this proposal, we are moving toward a naming convention that better represents our community partners who provide the storage infrastructure and services to the Filecoin network. This change also helps highlight the usefulness of the Filecoin network and is a start of a series of gradual changes we are proposing to help the network in creating a new narrative.
 
-This change will be implemented across Filecoin docs sites, as well as Github, the Filecoin Foundation’s owned media channels, and other ecosystem tools. We encourage the Filecoin community to adopt and help communicate these new changes as well.
+This change will be implemented across Filecoin docs sites, as well as Github, Filecoin Foundation’s owned media channels, and other ecosystem tools. We encourage the Filecoin community to adopt and help communicate these new changes as well.
 
 # Change Motivation
 

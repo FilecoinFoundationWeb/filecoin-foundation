@@ -19,7 +19,7 @@ tech:
 featured-content: https://fil.org/blog/
 twitter: https://twitter.com/FilFoundation
 seo:
-  description: The Filecoin Foundation supports the Filecoin network and its ecosystem.
+  description: Filecoin Foundation supports the Filecoin network and its ecosystem.
 ---
 
 Filecoin Foundation (FF) facilitates governance of the Filecoin network, funds research and development projects for decentralized web technologies, and supports the growth of the Filecoin ecosystem and community. Its mission is to preserve humanity's most important information.

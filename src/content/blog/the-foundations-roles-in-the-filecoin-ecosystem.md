@@ -17,9 +17,9 @@ seo:
 
 In 2017, the creators of Filecoin envisioned an independent foundation that would serve as the long-term governance body for the Filecoin ecosystem. Its mandate would be to grow an open ecosystem for decentralized storage and to give developers an open and sustainable platform to build, enhance and monetize those services.
 
-Today, the Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web. FF coordinates and supports the creation and improvement of open-source software and open protocols for decentralized data storage and retrieval networks.
+Today, Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web. FF coordinates and supports the creation and improvement of open-source software and open protocols for decentralized data storage and retrieval networks.
 
-The Filecoin Foundation for the Decentralized Web (FFDW) focuses on charitable activities, including building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web.
+Filecoin Foundation for the Decentralized Web (FFDW) focuses on charitable activities, including building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web.
 
 The FF and FFDW combined have an allocation of 100 million FIL that vest linearly over 6 years beginning at network launch, as explained in the Filecoin PPM (link previously available but now unavailable). FF and FFDW use FIL to support their missions as often as possible, and periodically convert a portion of their annual operating budgets from FIL to fiat currency or other cryptocurrencies to support project funding and to cover administrative expenses.
 

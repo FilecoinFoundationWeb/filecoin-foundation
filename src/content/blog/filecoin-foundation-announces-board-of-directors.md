@@ -3,8 +3,7 @@ title: Filecoin Foundation Announces Board of Directors
 created-on: 2023-04-21T07:27:15.321000Z
 updated-on: 2023-04-21T07:27:15.321000Z
 published-on: 2023-04-21T07:33:56.200000Z
-description:
-  The Filecoin Foundation and Filecoin Foundation for the Decentralized
+description: Filecoin Foundation and Filecoin Foundation for the Decentralized
   Web shared their board of directors.
 image:
   src: /assets/images/image-c-06.png

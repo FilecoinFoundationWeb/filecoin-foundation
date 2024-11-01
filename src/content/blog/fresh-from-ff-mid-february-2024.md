@@ -18,11 +18,11 @@ seo:
     mid-February 2024.
 ---
 
-_Check out the latest updates about what the Filecoin Foundation team has been up to._
+_Check out the latest updates about what Filecoin Foundation team has been up to._
 
 ## Mid-February Highlight
 
-Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/ethdenver/see-the-schedule). Join the Filecoin Foundation team February 29 through March 3, at ETHDenver Devtopia, Booth 204, to explore the ecosystem with our team and engage in immersive demonstrations and discussions. On March 1, join us for the [Filecoin Orbit Ecosystem Showcase](https://filecoindenver.io/) to hear projects across the ecosystem present lightning talks and demos. You can also hear from Filecoin Foundation staff at [FIL Dev Summit](https://fildev.io/FDS-3), which FF is sponsoring. The summit is a gathering of developers, builders, and engaged community members who contribute to the core protocol and network evolution of Filecoin.
+Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/ethdenver/see-the-schedule). Join Filecoin Foundation team February 29 through March 3, at ETHDenver Devtopia, Booth 204, to explore the ecosystem with our team and engage in immersive demonstrations and discussions. On March 1, join us for the [Filecoin Orbit Ecosystem Showcase](https://filecoindenver.io/) to hear projects across the ecosystem present lightning talks and demos. You can also hear from Filecoin Foundation staff at [FIL Dev Summit](https://fildev.io/FDS-3), which FF is sponsoring. The summit is a gathering of developers, builders, and engaged community members who contribute to the core protocol and network evolution of Filecoin.
 
 ## Ecosystem
 
