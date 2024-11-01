@@ -151,7 +151,7 @@ schedule:
             decentralized tools worldwide to establish provenance for digital
             content, enhancing media transparency and safeguarding democratic
             integrity.
-        - title: Unlocking Non-Financial Applications on Ethereum
+        - title: Unlocking Non-Financial Applications on Ethereum with Filecoin
           speakers:
             - name: Ted Liao
               company: Glitter Protocol
@@ -208,10 +208,43 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
+          description:
+            The current system for addressing the climate crisis is inefficient
+            and ineffective, with ESG metrics difficult to track and valuable
+            data locked up in silos. These projects are bringing blockchain
+            technology and AI together to introduce transparency and
+            verifiability to environmental efforts. By making data globally
+            available and authenticating energy and environmental claims,
+            they’re cultivating a world where we’re accountable for our impact.
         - title: "GhostDrive Workshop and Demo "
           start: 2024-11-11T10:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title:
+            "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
+            Infra"
+          description:
+            "Industry leaders at the intersection of DePIN and AI break down
+            the evolving tech stack layer by layer — from decentralized storage
+            and compute to models, agents, and real-world data integrations.
+            Critical components for this converging market come together to
+            interrogate: Why does AI need DePIN? And equally existential: Does
+            DePIN need AI?"
+          moderators:
+            - name: Rachel Horn
+              company: "Filecoin Foundation"
+          speakers:
+            - name: Anjali George
+              company: Theoriq
+            - name: Alex Blagirev
+              company: SingularityNET
+            - name: Ayush Ranjan
+              company: Huddle01
+            - name: Mark Rydon
+              company: Aethir
+          location: "Samyan Mitrtown: Main Hall"
+          start: 2024-11-11T14:02:00.000Z
+          end: 1904-11-11T14:30:00.000Z
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
@@ -243,7 +276,7 @@ speakers:
     company: Emfarsis
     linkedin: https://www.linkedin.com/in/leahcallonbutler/
     image:
-      src: /assets/images/headshot-leah-callon-butler.webp
+      src: /assets/images/leah-callon-butler-headshot.webp
   - name: Vitalii Yatskiv
     title: CTO
     company: Boosty Labs
@@ -255,31 +288,31 @@ speakers:
     company: Theoriq
     linkedin: https://www.linkedin.com/in/anjaliegeorge/
     image:
-      src: /assets/images/headshot-anjali-george.webp
+      src: /assets/images/anjali-george-headshot.webp
   - name: Megan Klimen
     title: Founding Officer
     company: Filecoin Foundation
     linkedin: https://www.linkedin.com/in/megan-klimen/
     image:
-      src: /assets/images/megan_klimen.webp
+      src: /assets/images/megan-klimen-headshot.webp
   - name: David Dao
     title: Co-Founder & Chief Scientist
     company: GainForest.Earth
     linkedin: https://www.linkedin.com/in/dwddao/
     image:
-      src: /assets/images/david_dao_headshot.webp
+      src: /assets/images/david-dao-headshot.webp
   - name: Ted Liao
     title: CEO
     company: Glitter Protocol
     image:
-      src: /assets/images/img_4614.webp
+      src: /assets/images/ted-liao-headshot.webp
     linkedin: https://www.linkedin.com/in/ted-liao-2694b8242/
   - name: Masa Kikuchi
     title: Founder & CEO
     company: Secured Finance
     linkedin: https://www.linkedin.com/in/masa-senshi-kikuchi-55185a23/
     image:
-      src: /assets/images/masa-square-color-2-.webp
+      src: /assets/images/masa-kikuchi-headshot.webp
   - name: Alex Blagirev
     title: Strategic Initiatives Officer
     company: SingularityNET
@@ -292,12 +325,42 @@ speakers:
     title: CEO
     company: Devonian Systems
     linkedin: https://www.linkedin.com/in/alan-ransil-53573873/
+  - name: Rachel Green Horn
+    title: Head of Marketing and Communications
+    company: Filecoin Foundation
+    linkedin: https://www.linkedin.com/in/rachelgreenhorn/
+    image:
+      src: /assets/images/rachel-green-horn-headshot.webp
+  - name: Mark Rydon
+    title: CSO
+    company: Aethir
+    linkedin: https://www.linkedin.com/in/markrydon/
+    image:
+      src: /assets/images/mark-rydon-headshot.webp
+  - name: Ethan Chae
+    title: Co-CEO
+    company: Hippocrat
+    linkedin: https://www.linkedin.com/in/ethanchae/
+    image:
+      src: /assets/images/ethan-chae-headshot.webp
+  - name: Sherry Chung
+    title: Business Development & Solution Architect
+    company: "Numbers Co., Ltd."
+    linkedin: https://www.linkedin.com/in/sherry-chung-18223138/
+    image:
+      src: /assets/images/sherry-chung-headshot.webp
+  - name: "Roman Nebo"
+    title: "CEO & Founder"
+    company: "Ghost Drive"
+    linkedin: https://www.linkedin.com/in/romansky
+    image:
+      src: /assets/images/6824849a-d33b-4a0d-b701-713354dffd29.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
       website: https://www.zetacube.net/
       image:
-        src: /assets/images/zetacube_logo_white2-1-.webp
+        src: /assets/images/zetacube-logo.webp
     - name: Boosty Labs
       website: https://boostylabs.com
       image:
@@ -306,10 +369,15 @@ sponsors:
       website: https://x.com/lighthouseweb3
       image:
         src: /assets/images/lighthouse-logo.svg
-    - name: GLIF
-      website: https://www.glif.io/en
+  second-tier:
+    - name: Fleek
       image:
-        src: /assets/images/long_white.webp
+        src: /assets/images/fleek-logo.webp
+      website: https://fleek.co/
+    - name: GLIF
+      image:
+        src: /assets/images/glif-logo.webp
+      website: https://www.glif.io/en
 seo:
   description: Join the Filecoin Community in Bangkok for discussions on
     decentralized AI, DePIN, and the data economy. Network, hear major
