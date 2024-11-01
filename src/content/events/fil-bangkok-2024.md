@@ -369,6 +369,9 @@ sponsors:
       website: https://x.com/lighthouseweb3
       image:
         src: /assets/images/lighthouse-logo.svg
+    - name: Protocol Labs
+      image:
+        src: /assets/images/protocol-labs-logo-white-1-.png
   second-tier:
     - name: Fleek
       image:
