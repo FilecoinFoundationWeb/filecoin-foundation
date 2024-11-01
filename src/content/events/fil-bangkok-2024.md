@@ -116,8 +116,7 @@ schedule:
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description:
-            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -129,8 +128,7 @@ schedule:
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            "In the realms of DePIN and AI, storage isn’t the endgame — it’s
+          description: "In the realms of DePIN and AI, storage isn’t the endgame — it’s
             just the beginning. The dynamic Filecoin ecosystem features an
             evolving world of L2s, tools for cross-chain applications, and a
             core protocol serving as the DePIN primitive for AI. Check out
@@ -144,8 +142,7 @@ schedule:
           start: 2024-11-11T15:45:00.000Z
           end: 2024-11-11T15:52:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            In a historic year of global elections, billions of voters face the
+          description: In a historic year of global elections, billions of voters face the
             near-certainty of encountering AI-generated misinformation impacting
             democratic processes. Numbers Protocol is deploying novel
             decentralized tools worldwide to establish provenance for digital
@@ -158,8 +155,7 @@ schedule:
           start: 2024-11-11T15:53:00.000Z
           end: 2024-11-11T16:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            "Ethereum’s future lies in expanding beyond financial use cases by
+          description: "Ethereum’s future lies in expanding beyond financial use cases by
             enabling large-scale, data-intensive applications across industries
             like AI, media, healthcare, and scientific research. Glitter
             Protocol’s CCIP serves as a data bridge between Filecoin and
@@ -173,6 +169,13 @@ schedule:
           start: 2024-11-11T16:01:00.000Z
           end: 2024-11-11T16:08:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+          description: Meet a data onboarding solution making it easier than ever for
+            enterprises and other data-intensive industries to harness the
+            potential of their data. Akave is an L2 and spin-off from Protocol
+            Labs that enables DePIN and decentralized AI networks with a hot
+            storage layer to leverage onchain data lakes on Filecoin –– bringing
+            the power of big data analysis to the world’s largest decentralized
+            storage network.
         - title: "L2 Spotlight: Data Storage Doesn’t Have to be Spicy"
           speakers:
             - name: Alexander Kinstler
@@ -208,8 +211,7 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
-          description:
-            The current system for addressing the climate crisis is inefficient
+          description: The current system for addressing the climate crisis is inefficient
             and ineffective, with ESG metrics difficult to track and valuable
             data locked up in silos. These projects are bringing blockchain
             technology and AI together to introduce transparency and
@@ -220,11 +222,9 @@ schedule:
           start: 2024-11-11T10:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title:
-            "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
+        - title: "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
             Infra"
-          description:
-            "Industry leaders at the intersection of DePIN and AI break down
+          description: "Industry leaders at the intersection of DePIN and AI break down
             the evolving tech stack layer by layer — from decentralized storage
             and compute to models, agents, and real-world data integrations.
             Critical components for this converging market come together to
@@ -232,7 +232,7 @@ schedule:
             DePIN need AI?"
           moderators:
             - name: Rachel Horn
-              company: "Filecoin Foundation"
+              company: Filecoin Foundation
           speakers:
             - name: Anjali George
               company: Theoriq
@@ -345,13 +345,13 @@ speakers:
       src: /assets/images/ethan-chae-headshot.webp
   - name: Sherry Chung
     title: Business Development & Solution Architect
-    company: "Numbers Co., Ltd."
+    company: Numbers Co., Ltd.
     linkedin: https://www.linkedin.com/in/sherry-chung-18223138/
     image:
       src: /assets/images/sherry-chung-headshot.webp
-  - name: "Roman Nebo"
-    title: "CEO & Founder"
-    company: "Ghost Drive"
+  - name: Roman Nebo
+    title: CEO & Founder
+    company: Ghost Drive
     linkedin: https://www.linkedin.com/in/romansky
     image:
       src: /assets/images/6824849a-d33b-4a0d-b701-713354dffd29.webp
