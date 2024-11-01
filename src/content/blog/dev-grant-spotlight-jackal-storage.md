@@ -14,7 +14,7 @@ seo:
     recipient. Dive into their project and achievements.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about the Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._
 
 [JACKAL Storage](https://jackaldao.com/) is a platform that provides a secure, private, and user-friendly solution for decentralized storage on the Filecoin network. JACKAL Storage helps to lower barriers to decentralized file storage by acting as a top layer to organize user data between the decentralized storage network and its users. Its goal is to create an incentivized, peer-to-peer caching layer between the [Secret Network](https://scrt.network/), a blockchain with data privacy by default, and the Filecoin network.
 

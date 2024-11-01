@@ -11,8 +11,7 @@ image:
   src: /assets/images/image-c-18.png
 category: events
 seo:
-  description:
-    A comprehensive recap of the Filecoin Foundation's 2021 Governance
+  description: A comprehensive recap of Filecoin Foundation's 2021 Governance
     Summit. Key discussions and outcomes.
 ---
 

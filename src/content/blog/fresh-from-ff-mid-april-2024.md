@@ -4,8 +4,7 @@ created-on: 2024-04-15T19:44:56.431000Z
 updated-on: 2024-04-15T19:44:56.446000Z
 published-on: 2024-04-15T19:44:56.460000Z
 category: news
-description:
-  "Check out the latest updates about what the Filecoin Foundation team
+description: "Check out the latest updates about what Filecoin Foundation team
   has been up to."
 image:
   src: /assets/images/0215-ff-4-.png
@@ -15,7 +14,7 @@ seo:
     and highlights.
 ---
 
-_Check out the latest updates about what the Filecoin Foundation team has been up to._
+_Check out the latest updates about what Filecoin Foundation team has been up to._
 
 ## Mid-April Highlights
 

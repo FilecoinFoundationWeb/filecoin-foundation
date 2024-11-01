@@ -20,7 +20,7 @@ tech:
 featured-content: https://ffdweb.org/resources/
 twitter: https://twitter.com/ffdweb
 seo:
-  description: The Filecoin Foundation for the Decentralized Web supports the
+  description: Filecoin Foundation for the Decentralized Web supports the
     growth of decentralized web technologies.
 ---
 

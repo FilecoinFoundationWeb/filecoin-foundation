@@ -15,7 +15,7 @@ seo:
     Datacap awarded. Learn more.
 ---
 
-The Filecoin Plus community recently held elections for notaries for the second time since its launch. Applications to receive Notary status and DataCap grants were due May 25 and were reviewed by the governance team, which includes members of the Filecoin Foundation and Protocol Labs, as well as highly-engaged members of the community who were not applying to be notaries.
+The Filecoin Plus community recently held elections for notaries for the second time since its launch. Applications to receive Notary status and DataCap grants were due May 25 and were reviewed by the governance team, which includes members of Filecoin Foundation and Protocol Labs, as well as highly-engaged members of the community who were not applying to be notaries.
 
 Filecoin Plus promotes storage of valuable data by adding a layer of social trust to the Filecoin network. Trusted clients looking to utilize storage on the network apply to receive DataCap, which can be used to incentivize miners to make storage deals. Notaries are Filecoin Plus community-elected trustees responsible for allocating DataCap to parties storing useful data on the network.
 

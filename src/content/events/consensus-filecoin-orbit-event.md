@@ -4,7 +4,7 @@ created-on: 2024-01-29T15:50:42.605Z
 updated-on: 2024-01-29T15:50:42.614Z
 published-on: 2024-01-29T15:50:42.621Z
 category: supported-sponsored
-description: Join Filecoin Orbit Austin and the Filecoin Foundation for talks,
+description: Join Filecoin Orbit Austin and Filecoin Foundation for talks,
   drinks, BBQ, and networking during Consensus 2024!
 location: Austin, TX
 external-link:

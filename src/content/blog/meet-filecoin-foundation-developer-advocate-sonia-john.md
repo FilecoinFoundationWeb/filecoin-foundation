@@ -4,7 +4,7 @@ created-on: 2023-04-21T07:28:11.027000Z
 updated-on: 2023-04-21T07:28:11.027000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
-  "The Filecoin Foundation is thrilled to welcome Sonia John to the Filecoin
+  "Filecoin Foundation is thrilled to welcome Sonia John to the Filecoin
   Foundation team! "
 image:
   src: /assets/images/64423b0ae3c08f37be4f5200_1-ollwmtygvgvih2kjh6jffq.png
@@ -15,7 +15,7 @@ seo:
     Learn about her role and contributions.
 ---
 
-The Filecoin Foundation is thrilled to welcome Sonia John to the Filecoin Foundation team! As Developer Advocate, Sonia is a critical connection between the Foundation and Filecoin developers. She works to understand developers’ needs and help them to succeed within the community. She’s also working to expand the funnel of incoming developers to the Filecoin network to maintain a healthy community.
+Filecoin Foundation is thrilled to welcome Sonia John to Filecoin Foundation team! As Developer Advocate, Sonia is a critical connection between the Foundation and Filecoin developers. She works to understand developers’ needs and help them to succeed within the community. She’s also working to expand the funnel of incoming developers to the Filecoin network to maintain a healthy community.
 
 Based in Kenya, Sonia previously served as Community Lead for IPFS Africa. She’s the co-founder of [PlayMaker Chain](https://github.com/playmakerchain), an open-source blockchain-based sports science solution, and [Tesrab Network](https://github.com/TesrabNetwork), a decentralized exchange service for crypto-assets.
 

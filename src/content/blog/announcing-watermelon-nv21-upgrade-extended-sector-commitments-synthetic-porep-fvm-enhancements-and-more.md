@@ -34,6 +34,6 @@ What the upgrade means for the Filecoin network:
 
 Network upgrades are no small feat. They involve extensive collaboration across various teams within the Filecoin ecosystem. For the ‘Watermelon’ upgrade, this collaborative effort was particularly crucial. We thank the teams who rigorously tested the upgrade over several weeks. Their dedication ensured the stability and integrity of the network, paving the way for a smooth transition as Watermelon went live on the mainnet.
 
-In the coming months, the Filecoin Foundation will continue to steward proposed changes to the Filecoin governance system as pushed forward through the [FIP0001v2 initiative](https://github.com/filecoin-project/FIPs/pull/850) in addition to supporting other technical improvements to the network that would land in future network upgrades.
+In the coming months, Filecoin Foundation will continue to steward proposed changes to the Filecoin governance system as pushed forward through the [FIP0001v2 initiative](https://github.com/filecoin-project/FIPs/pull/850) in addition to supporting other technical improvements to the network that would land in future network upgrades.
 
 You can keep tabs on [Governance](https://fil.org/governance/) by following us on X at [@Fil_Gov](https://twitter.com/fil_gov), joining our monthly governance calls, and following discussions and new ideas in the [FIPs GitHub repo](https://github.com/filecoin-project/FIPs).

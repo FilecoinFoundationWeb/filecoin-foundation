@@ -9,7 +9,7 @@ seo:
 
 **Last Updated: April 05, 2024**
 
-To honor all the security researcher contributions that help us keep the Filecoin network secure, the Filecoin Foundation offers a bug bounty program through Immunefi. As part of that program, you can expect us to work with you to understand and validate your report, respond in a timely manner, work to remediate the discovered vulnerability, and, for qualifying reports, recognize your contribution to improving the Filecoin ecosystem security. In return, we ask that you follow our procedures for coordinated vulnerability disclosure.
+To honor all the security researcher contributions that help us keep the Filecoin network secure, Filecoin Foundation offers a bug bounty program through Immunefi. As part of that program, you can expect us to work with you to understand and validate your report, respond in a timely manner, work to remediate the discovered vulnerability, and, for qualifying reports, recognize your contribution to improving the Filecoin ecosystem security. In return, we ask that you follow our procedures for coordinated vulnerability disclosure.
 
 ## Disclosure Channels
 
@@ -66,6 +66,6 @@ We consider security research conducted in alignment with our Bug Bounty program
 3. Exempt from restrictions in our Terms of Use that would interfere with conducting security research, and we waive those restrictions on a limited basis.
 4. Lawful, helpful to the overall security of the Internet, and conducted in good faith.
 
-You are expected to comply with all applicable laws. If legal action is initiated by a third party against you and you have complied with this policy, we will take steps to make it known that your actions were conducted in compliance with this policy. If at any time you have concerns or are uncertain whether your security research is consistent with this policy, please submit a report through Immunefi before going any further. Note that the Safe Harbor applies only to legal claims under the control of the Filecoin Foundation and that the policy does not bind independent third parties.
+You are expected to comply with all applicable laws. If legal action is initiated by a third party against you and you have complied with this policy, we will take steps to make it known that your actions were conducted in compliance with this policy. If at any time you have concerns or are uncertain whether your security research is consistent with this policy, please submit a report through Immunefi before going any further. Note that the Safe Harbor applies only to legal claims under the control of Filecoin Foundation and that the policy does not bind independent third parties.
 
 These are based on recommendations from [disclose.io](https://disclose.io/) to accelerate the adoption of vulnerability disclosure best practices.
