@@ -116,7 +116,8 @@ schedule:
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description:
+            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -128,7 +129,8 @@ schedule:
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description: "In the realms of DePIN and AI, storage isn’t the endgame — it’s
+          description:
+            "In the realms of DePIN and AI, storage isn’t the endgame — it’s
             just the beginning. The dynamic Filecoin ecosystem features an
             evolving world of L2s, tools for cross-chain applications, and a
             core protocol serving as the DePIN primitive for AI. Check out
@@ -142,7 +144,8 @@ schedule:
           start: 2024-11-11T15:45:00.000Z
           end: 2024-11-11T15:52:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description: In a historic year of global elections, billions of voters face the
+          description:
+            In a historic year of global elections, billions of voters face the
             near-certainty of encountering AI-generated misinformation impacting
             democratic processes. Numbers Protocol is deploying novel
             decentralized tools worldwide to establish provenance for digital
@@ -155,7 +158,8 @@ schedule:
           start: 2024-11-11T15:53:00.000Z
           end: 2024-11-11T16:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description: "Ethereum’s future lies in expanding beyond financial use cases by
+          description:
+            "Ethereum’s future lies in expanding beyond financial use cases by
             enabling large-scale, data-intensive applications across industries
             like AI, media, healthcare, and scientific research. Glitter
             Protocol’s CCIP serves as a data bridge between Filecoin and
@@ -204,7 +208,8 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
-          description: The current system for addressing the climate crisis is inefficient
+          description:
+            The current system for addressing the climate crisis is inefficient
             and ineffective, with ESG metrics difficult to track and valuable
             data locked up in silos. These projects are bringing blockchain
             technology and AI together to introduce transparency and
@@ -215,9 +220,11 @@ schedule:
           start: 2024-11-11T10:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
+        - title:
+            "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
             Infra"
-          description: "Industry leaders at the intersection of DePIN and AI break down
+          description:
+            "Industry leaders at the intersection of DePIN and AI break down
             the evolving tech stack layer by layer — from decentralized storage
             and compute to models, agents, and real-world data integrations.
             Critical components for this converging market come together to
@@ -225,7 +232,7 @@ schedule:
             DePIN need AI?"
           moderators:
             - name: Rachel Horn
-              company: "Filecoin Foundation "
+              company: "Filecoin Foundation"
           speakers:
             - name: Anjali George
               company: Theoriq
@@ -269,7 +276,7 @@ speakers:
     company: Emfarsis
     linkedin: https://www.linkedin.com/in/leahcallonbutler/
     image:
-      src: /assets/images/headshot-leah-callon-butler.webp
+      src: /assets/images/leah-callon-butler-headshot.webp
   - name: Vitalii Yatskiv
     title: CTO
     company: Boosty Labs
@@ -281,31 +288,31 @@ speakers:
     company: Theoriq
     linkedin: https://www.linkedin.com/in/anjaliegeorge/
     image:
-      src: /assets/images/headshot-anjali-george.webp
+      src: /assets/images/anjali-george-headshot.webp
   - name: Megan Klimen
     title: Founding Officer
     company: Filecoin Foundation
     linkedin: https://www.linkedin.com/in/megan-klimen/
     image:
-      src: /assets/images/megan_klimen.webp
+      src: /assets/images/megan-klimen-headshot.webp
   - name: David Dao
     title: Co-Founder & Chief Scientist
     company: GainForest.Earth
     linkedin: https://www.linkedin.com/in/dwddao/
     image:
-      src: /assets/images/david_dao_headshot.webp
+      src: /assets/images/david-dao-headshot.webp
   - name: Ted Liao
     title: CEO
     company: Glitter Protocol
     image:
-      src: /assets/images/img_4614.webp
+      src: /assets/images/ted-liao-headshot.webp
     linkedin: https://www.linkedin.com/in/ted-liao-2694b8242/
   - name: Masa Kikuchi
     title: Founder & CEO
     company: Secured Finance
     linkedin: https://www.linkedin.com/in/masa-senshi-kikuchi-55185a23/
     image:
-      src: /assets/images/masa-square-color-2-.webp
+      src: /assets/images/masa-kikuchi-headshot.webp
   - name: Alex Blagirev
     title: Strategic Initiatives Officer
     company: SingularityNET
@@ -323,28 +330,28 @@ speakers:
     company: Filecoin Foundation
     linkedin: https://www.linkedin.com/in/rachelgreenhorn/
     image:
-      src: /assets/images/rgh-headshot-2-.webp
+      src: /assets/images/rachel-green-horn-headshot.webp
   - name: Mark Rydon
     title: CSO
     company: Aethir
     linkedin: https://www.linkedin.com/in/markrydon/
     image:
-      src: /assets/images/mark-r-photo-1-.webp
+      src: /assets/images/mark-rydon-headshot.webp
   - name: Ethan Chae
     title: Co-CEO
     company: Hippocrat
     linkedin: https://www.linkedin.com/in/ethanchae/
     image:
-      src: /assets/images/1-.webp
+      src: /assets/images/ethan-chae-headshot.webp
   - name: Sherry Chung
     title: Business Development & Solution Architect
-    company: "Numbers Co., Ltd. "
+    company: "Numbers Co., Ltd."
     linkedin: https://www.linkedin.com/in/sherry-chung-18223138/
     image:
-      src: /assets/images/_-_-.webp
-  - name: "Roman Nebo "
-    title: "CEO & Founder "
-    company: "Ghost Drive "
+      src: /assets/images/sherry-chung-headshot.webp
+  - name: "Roman Nebo"
+    title: "CEO & Founder"
+    company: "Ghost Drive"
     linkedin: https://www.linkedin.com/in/romansky
     image:
       src: /assets/images/6824849a-d33b-4a0d-b701-713354dffd29.webp
@@ -353,7 +360,7 @@ sponsors:
     - name: ZETACUBE
       website: https://www.zetacube.net/
       image:
-        src: /assets/images/zetacube_logo_white2-1-.webp
+        src: /assets/images/zetacube-logo.webp
     - name: Boosty Labs
       website: https://boostylabs.com
       image:
@@ -365,11 +372,11 @@ sponsors:
   second-tier:
     - name: Fleek
       image:
-        src: /assets/images/fleek-logo_darkmode.webp
+        src: /assets/images/fleek-logo.webp
       website: https://fleek.co/
     - name: GLIF
       image:
-        src: /assets/images/long_white.webp
+        src: /assets/images/glif-logo.webp
       website: https://www.glif.io/en
 seo:
   description: Join the Filecoin Community in Bangkok for discussions on

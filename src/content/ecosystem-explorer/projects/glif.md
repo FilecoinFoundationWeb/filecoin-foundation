@@ -10,7 +10,7 @@ category: tooling-productivity
 tech:
   - filecoin
 image:
-  src: /assets/images/long_white.png
+  src: /assets/images/glif-logo.webp
 website: https://www.glif.io/en
 repo: https://github.com/glifio
 twitter: https://twitter.com/glifio
