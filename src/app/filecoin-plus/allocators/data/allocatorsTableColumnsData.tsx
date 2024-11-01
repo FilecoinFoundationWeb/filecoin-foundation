@@ -1,6 +1,6 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
-import { HeaderWithTooltip } from '@/components/Table/HeaderWithTooltip'
+import { TableHeaderWithTooltip } from '@/components/Table/TableHeaderWithTooltip'
 
 import { ApplyLink } from '../components/ApplyLink'
 import type { Allocator } from '../schemas/AllocatorSchema'
@@ -19,7 +19,7 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('metapathway_type', {
     header: () => (
-      <HeaderWithTooltip
+      <TableHeaderWithTooltip
         header="Type"
         description="The allocation method used to distribute DataCap to clients."
       />
@@ -40,7 +40,7 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('application.required_replicas', {
     header: () => (
-      <HeaderWithTooltip
+      <TableHeaderWithTooltip
         header="Required Replicas"
         description="The minimum number of data copies that must be stored."
       />
@@ -52,7 +52,7 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('application.required_sps', {
     header: () => (
-      <HeaderWithTooltip
+      <TableHeaderWithTooltip
         header="Required SPs"
         description="The minimum number of distinct storage providers needed for data storage."
       />
