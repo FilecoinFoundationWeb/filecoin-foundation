@@ -371,6 +371,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/romansky
     image:
       src: /assets/images/6824849a-d33b-4a0d-b701-713354dffd29.webp
+  - name: Patrick Kearney
+    title: Head of Growth
+    company: Fleek
+    linkedin: https://www.linkedin.com/in/palerthanale/
+    image:
+      src: /assets/images/patrick-kearney-headshot.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
