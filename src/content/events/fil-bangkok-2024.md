@@ -240,11 +240,24 @@ schedule:
               company: SingularityNET
             - name: Ayush Ranjan
               company: Huddle01
-            - name: Mark Rydon
+            - name: Jaden Yan
               company: Aethir
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T14:02:00.000Z
           end: 1904-11-11T14:30:00.000Z
+        - title: "Announcement: Driving Onchain Activity with a FIL-Backed Stablecoin"
+          description: Backed by FIL, USDFC is more than just a stablecoin. It’s a
+            catalyst for the next level of onchain activity for the Filecoin
+            network. This new addition to Filecoin’s storage marketplace
+            provides a new kind of stability and flexibility for clients and
+            storage providers to execute deals and stimulate onboarding of
+            valuable data to the network.
+          speakers:
+            - name: Masa Kikuchi
+              company: "Secured Finance "
+          start: 2024-11-11T16:34:00.000Z
+          end: 2024-11-11T16:41:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
