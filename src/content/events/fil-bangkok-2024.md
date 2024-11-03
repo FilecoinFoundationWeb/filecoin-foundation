@@ -331,12 +331,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/rachelgreenhorn/
     image:
       src: /assets/images/rachel-green-horn-headshot.webp
-  - name: Mark Rydon
-    title: CSO
+  - name: Jaden Yan
+    title: Web3 Chief Architect
     company: Aethir
-    linkedin: https://www.linkedin.com/in/markrydon/
+    linkedin: https://www.linkedin.com/in/jaden-yan-898b65188/
     image:
-      src: /assets/images/mark-rydon-headshot.webp
+      src: /assets/images/jaden-yan-headshot.webp
   - name: Ethan Chae
     title: Co-CEO
     company: Hippocrat
