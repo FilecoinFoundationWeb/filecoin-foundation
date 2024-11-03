@@ -187,8 +187,8 @@ schedule:
           speakers:
             - name: Marta Belcher
               company: Filecoin Foundation
-          start: 2024-11-11T16:48:00.000Z
-          end: 2024-11-11T16:51:00.000Z
+          start: 2024-11-11T16:42:00.000Z
+          end: 2024-11-11T16:57:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           moderators:
             - name: Leah Callon-Butler
