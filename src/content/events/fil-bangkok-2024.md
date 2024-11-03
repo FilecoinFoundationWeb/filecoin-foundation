@@ -183,13 +183,16 @@ schedule:
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:32:00.000Z
           end: 2024-11-11T16:39:00.000Z
-        - title: Closing Remarks
+        - title: Fireside Chat with FF President Marta Belcher
           speakers:
             - name: Marta Belcher
               company: Filecoin Foundation
           start: 2024-11-11T16:48:00.000Z
           end: 2024-11-11T16:51:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+          moderators:
+            - name: Leah Callon-Butler
+              company: Emfarsis
         - title: Onboarding a Million Users to DePIN
           speakers:
             - name: Roman
