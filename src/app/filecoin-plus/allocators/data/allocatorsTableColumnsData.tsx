@@ -53,7 +53,7 @@ export const allocatorsTableColumnsData = [
   columnHelper.accessor('application.required_sps', {
     header: () => (
       <TableHeaderWithTooltip
-        header="Required SPs"
+        header="Required Storage Providers"
         description="The minimum number of distinct storage providers needed for data storage."
       />
     ),
