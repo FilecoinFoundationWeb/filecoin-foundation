@@ -60,13 +60,13 @@ function KeyMemberImage({
         src={image}
         alt={`Photo of ${name}`}
         sizes="150px"
-        className="aspect-[3/4] w-32 rounded object-cover"
+        className="aspect-[3/4] w-32 shrink-0 rounded object-cover"
       />
     )
   }
 
   return (
-    <div className="relative aspect-[3/4] w-32">
+    <div className="relative aspect-[3/4] w-32 shrink-0">
       <Image
         fill
         src={image}
