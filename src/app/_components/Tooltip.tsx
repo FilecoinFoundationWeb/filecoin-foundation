@@ -13,7 +13,6 @@ type TooltipRenderProps = {
 export type TooltipProps = {
   children: ReactNode | ((props: TooltipRenderProps) => ReactNode)
   description: string
-  gap?: RadixPopover.PopoverContentProps['sideOffset']
   side?: RadixPopover.PopoverContentProps['side']
 }
 
@@ -24,12 +23,9 @@ const animationClasses = {
   top: 'data-[state=open]:data-[side=top]:animate-slideDownAndFade',
 }
 
-export function Tooltip({
-  children,
-  description,
-  gap = 8,
-  side = 'top',
-}: TooltipProps) {
+const GAP_BETWEEN_TOOLTIP_AND_TRIGGER = 0
+
+export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
   const [open, setOpen] = useState(false)
   const id = useId()
 
@@ -47,7 +43,7 @@ export function Tooltip({
         <RadixPopover.Content
           hideWhenDetached
           id={tooltipId}
-          sideOffset={gap}
+          sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
           side={side}
           role="tooltip"
           className={clsx(

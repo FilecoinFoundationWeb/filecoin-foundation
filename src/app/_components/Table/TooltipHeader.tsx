@@ -24,7 +24,7 @@ export function TooltipHeader({
   return (
     <div className="flex items-center gap-1">
       <span>{title}</span>
-      <Tooltip description={description} gap={0}>
+      <Tooltip description={description}>
         {({ open, tooltipId }) => (
           <Button
             aria-label={`More info on ${title}`}
