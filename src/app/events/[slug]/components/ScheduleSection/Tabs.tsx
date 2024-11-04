@@ -10,6 +10,7 @@ import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 import type { Event } from '../../../types/eventType'
 import { formatDate } from '../../utils/dateUtils'
 import { filterAndSortScheduleDays } from '../../utils/filterAndSortScheduleDays'
+import { scrollRefIntoView } from '../../utils/scrollRefIntoView'
 
 import { EventDetails } from './EventDetails'
 
@@ -41,11 +42,8 @@ export function Tabs({ schedule }: TabsProps) {
   function handleIndexChange(index: number) {
     setActiveTabIndex(index)
 
-    if (isMounted() && isScreenBelowLg && tabGroupRef.current) {
-      tabGroupRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      })
+    if (isMounted() && isScreenBelowLg) {
+      scrollRefIntoView(tabGroupRef)
     }
   }
 
