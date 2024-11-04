@@ -5,13 +5,13 @@ import { useId, useState, type ReactNode } from 'react'
 import * as RadixPopover from '@radix-ui/react-popover'
 import { clsx } from 'clsx'
 
-type TooltipChildrenRenderProps = {
+type TooltipRenderProps = {
   open: boolean
   tooltipId: string
 }
 
-export type ClickTooltipProps = {
-  children: ReactNode | ((props: TooltipChildrenRenderProps) => ReactNode)
+export type TooltipProps = {
+  children: ReactNode | ((props: TooltipRenderProps) => ReactNode)
   description: string
   gap?: RadixPopover.PopoverContentProps['sideOffset']
   side?: RadixPopover.PopoverContentProps['side']
@@ -24,12 +24,12 @@ const animationClasses = {
   top: 'data-[state=open]:data-[side=top]:animate-slideDownAndFade',
 }
 
-export function ClickTooltip({
+export function Tooltip({
   children,
   description,
   gap = 8,
   side = 'top',
-}: ClickTooltipProps) {
+}: TooltipProps) {
   const [open, setOpen] = useState(false)
   const id = useId()
 

@@ -2,12 +2,12 @@ import { Button } from '@headlessui/react'
 import { Question } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { ClickTooltip, type ClickTooltipProps } from '@/components/ClickTooltip'
 import { Icon } from '@/components/Icon'
+import { Tooltip, type TooltipProps } from '@/components/Tooltip'
 
 type TableHeaderWithTooltipProps = {
   header: string
-  description: ClickTooltipProps['description']
+  description: TooltipProps['description']
 }
 
 const touchTarget = {
@@ -24,7 +24,7 @@ export function TableHeaderWithTooltip({
   return (
     <div className="flex items-center gap-1">
       <span>{header}</span>
-      <ClickTooltip description={description} gap={0}>
+      <Tooltip description={description} gap={0}>
         {({ open, tooltipId }) => (
           <Button
             aria-label={`Help information about ${header} (click to open)`}
@@ -48,7 +48,7 @@ export function TableHeaderWithTooltip({
             </span>
           </Button>
         )}
-      </ClickTooltip>
+      </Tooltip>
     </div>
   )
 }
