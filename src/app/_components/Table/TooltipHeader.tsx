@@ -6,7 +6,7 @@ import { Icon } from '@/components/Icon'
 import { Tooltip, type TooltipProps } from '@/components/Tooltip'
 
 type TableHeaderWithTooltipProps = {
-  header: string
+  title: string
   description: TooltipProps['description']
 }
 
@@ -17,17 +17,17 @@ const TOUCH_TARGET = {
   offsetClass: '-m-2',
 } as const
 
-export function TableHeaderWithTooltip({
-  header,
+export function TooltipHeader({
+  title,
   description,
 }: TableHeaderWithTooltipProps) {
   return (
     <div className="flex items-center gap-1">
-      <span>{header}</span>
+      <span>{title}</span>
       <Tooltip description={description} gap={0}>
         {({ open, tooltipId }) => (
           <Button
-            aria-label={`Help information about ${header} (click to open)`}
+            aria-label={`More info on ${title}`}
             aria-describedby={tooltipId}
             className={clsx(
               'group focus-visible:brand-outline',
