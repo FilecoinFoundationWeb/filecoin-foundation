@@ -67,9 +67,9 @@ export default function About() {
 
       <PageSection kicker="Board" title="Board of Directors">
         <CardGrid cols="mdTwo">
-          {boardMembersData.map((boardMember, i) => (
+          {boardMembersData.map((boardMember) => (
             <KeyMemberCard
-              key={i}
+              key={boardMember.name}
               name={boardMember.name}
               title={boardMember.title}
               linkedin={boardMember.linkedin}
@@ -85,9 +85,9 @@ export default function About() {
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
         <CardGrid cols="mdTwo">
-          {advisorsData.map((advisor, i) => (
+          {advisorsData.map((advisor) => (
             <KeyMemberCard
-              key={i}
+              key={advisor.name}
               name={advisor.name}
               title={advisor.title}
               linkedin={advisor.linkedin}
