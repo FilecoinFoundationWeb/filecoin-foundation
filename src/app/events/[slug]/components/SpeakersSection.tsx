@@ -15,11 +15,11 @@ export function SpeakersSection({ speakers }: SpeakersSectionProps) {
         {speakers.map((speaker) => (
           <KeyMemberCard
             key={speaker.name}
-            {...speaker}
-            image={{
-              ...speaker.image,
-              alt: `Photo of ${speaker.name}`,
-            }}
+            name={speaker.name}
+            title={speaker.title}
+            company={speaker.company}
+            linkedin={speaker.linkedin}
+            image={speaker.image.src}
           />
         ))}
       </CardGrid>

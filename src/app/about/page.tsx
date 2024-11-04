@@ -68,7 +68,13 @@ export default function About() {
       <PageSection kicker="Board" title="Board of Directors">
         <CardGrid cols="mdTwo">
           {boardMembersData.map((boardMember, i) => (
-            <KeyMemberCard key={i} {...boardMember} />
+            <KeyMemberCard
+              key={i}
+              name={boardMember.name}
+              title={boardMember.title}
+              linkedin={boardMember.linkedin}
+              image={boardMember.image}
+            />
           ))}
         </CardGrid>
       </PageSection>
@@ -80,7 +86,13 @@ export default function About() {
       >
         <CardGrid cols="mdTwo">
           {advisorsData.map((advisor, i) => (
-            <KeyMemberCard key={i} {...advisor} />
+            <KeyMemberCard
+              key={i}
+              name={advisor.name}
+              title={advisor.title}
+              linkedin={advisor.linkedin}
+              image={advisor.image}
+            />
           ))}
         </CardGrid>
       </PageSection>
