@@ -261,6 +261,21 @@ schedule:
           start: 2024-11-11T16:34:00.000Z
           end: 2024-11-11T16:41:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: "Fireside Chat: How Filecoin and Axelar are Building to Scale Web3 "
+          description: >
+            Two veteran L1 innovators come together to discuss the imperative of
+            building interoperable Web3 infra. They’ll dive into the work being
+            done to create composable and scalable frameworks in the Filecoin
+            and Axelar universes and the possibilities unlocked by technical
+            integrations between these two chains. 
+          speakers:
+            - name: Molly Mackinlay
+              company: FilOZ
+            - name: Georgios Vlacho
+              company: Axelar
+          start: 2024-11-11T15:57:00.000Z
+          end: 2024-11-11T16:17:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Stefaan Vervaet
