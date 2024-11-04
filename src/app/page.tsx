@@ -49,6 +49,10 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
+// To test if Vercel is picking up the env variable from GitHub Actions
+// ⚠️⚠️⚠️ To remove after testing
+console.log({ GITHUB_AUTH_TOKEN: process.env.GITHUB_AUTH_TOKEN })
+
 export default function Home() {
   return (
     <NoBreadCrumbsLayout>
