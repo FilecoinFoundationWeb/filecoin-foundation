@@ -332,6 +332,12 @@ speakers:
     linkedin: https://www.linkedin.com/in/dwddao/
     image:
       src: /assets/images/david-dao-headshot.webp
+  - linkedin: https://www.linkedin.com/in/mollymackinlay/
+    name: "Molly Mackinlay "
+    title: CEO
+    company: FilOz
+    image:
+      src: /assets/images/molly-headshot.webp
   - name: Ted Liao
     title: CEO
     company: Glitter Protocol
