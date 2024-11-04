@@ -51,12 +51,12 @@ export function Tooltip({
           side={side}
           role="tooltip"
           className={clsx(
-            'tooltip-content focus-visible:outline-none',
+            'max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 will-change-[transform,opacity] focus-visible:outline-none',
             animationClasses[side],
           )}
         >
           {description}
-          <RadixPopover.Arrow className="tooltip-arrow" />
+          <RadixPopover.Arrow className="fill-brand-200" />
         </RadixPopover.Content>
       </RadixPopover.Portal>
     </RadixPopover.Root>
