@@ -392,6 +392,18 @@ speakers:
     linkedin: https://www.linkedin.com/in/palerthanale/
     image:
       src: /assets/images/patrick-kearney-headshot.webp
+  - name: "Ayush Ranjan "
+    title: Co-founder & CEO
+    company: Huddle01
+    linkedin: https://www.linkedin.com/in/ranjan18/
+    image:
+      src: /assets/images/ayush.webp
+  - name: Georgios Vlachos
+    title: "Co-Founder and Director "
+    company: Axelar
+    linkedin: https://www.linkedin.com/in/georgiosvlachos
+    image:
+      src: /assets/images/georgios-headshot-upscale-.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
