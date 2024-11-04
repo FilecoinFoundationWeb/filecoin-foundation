@@ -10,12 +10,12 @@ type TableHeaderWithTooltipProps = {
   description: TooltipProps['description']
 }
 
-const touchTarget = {
+const TOUCH_TARGET = {
   iconSize: 20,
   iconWrapperPadding: 'p-1.5',
   class: 'p-2',
   offsetClass: '-m-2',
-}
+} as const
 
 export function TableHeaderWithTooltip({
   header,
@@ -31,20 +31,20 @@ export function TableHeaderWithTooltip({
             aria-describedby={tooltipId}
             className={clsx(
               'group focus-visible:brand-outline',
-              touchTarget.class,
-              touchTarget.offsetClass,
+              TOUCH_TARGET.class,
+              TOUCH_TARGET.offsetClass,
             )}
           >
             <span
               className={clsx(
-                touchTarget.iconWrapperPadding,
+                TOUCH_TARGET.iconWrapperPadding,
                 'flex items-center justify-center rounded-full transition ease-in-out',
                 open
                   ? 'bg-brand-600/70 text-brand-200'
                   : 'text-brand-400 group-hover:bg-brand-700 group-hover:text-brand-300',
               )}
             >
-              <Icon component={Question} size={touchTarget.iconSize} />
+              <Icon component={Question} size={TOUCH_TARGET.iconSize} />
             </span>
           </Button>
         )}
