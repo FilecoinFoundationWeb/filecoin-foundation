@@ -11,10 +11,6 @@ export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
     header: 'Organization Name',
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-72 sm:w-80 lg:w-96',
-      bodyCellStyle: 'truncate',
-    },
     filterFn: 'includesString',
   }),
   columnHelper.accessor('metapathway_type', {
@@ -25,17 +21,11 @@ export const allocatorsTableColumnsData = [
       />
     ),
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-44',
-    },
     filterFn: 'includesString',
   }),
   columnHelper.accessor('location', {
     header: 'Region',
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-44',
-    },
     filterFn: 'includesString',
   }),
   columnHelper.accessor('application.required_replicas', {
@@ -46,9 +36,6 @@ export const allocatorsTableColumnsData = [
       />
     ),
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-52',
-    },
   }),
   columnHelper.accessor('application.required_sps', {
     header: () => (
@@ -58,14 +45,10 @@ export const allocatorsTableColumnsData = [
       />
     ),
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-52',
-    },
   }),
   columnHelper.accessor('application.allocation_bookkeeping', {
     header: 'Apply',
     meta: {
-      headerCellStyle: 'w-32',
       bodyCellStyle: 'text-brand-300',
     },
     cell: (info) => {
