@@ -1,5 +1,7 @@
 import type { Route } from 'next'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 type Link = string | Route
 
 export function isExternalLink(href: string) {
@@ -8,6 +10,6 @@ export function isExternalLink(href: string) {
 
 export function isInternalLink(href: Link) {
   return (
-    href.startsWith('/') || href.startsWith('#') || href.includes('fil.org')
+    href.startsWith('/') || href.startsWith('#') || href.includes(BASE_DOMAIN)
   )
 }
