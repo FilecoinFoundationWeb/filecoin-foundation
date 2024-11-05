@@ -59,21 +59,26 @@ export default function About() {
 
       <PageSection kicker="What We Do" title="Focus Areas">
         <CardGrid cols="lgThree">
-          {focusAreasData.map((area, i) => (
-            <FocusAreaCard key={i} {...area} />
+          {focusAreasData.map(({ title, description, image }) => (
+            <FocusAreaCard
+              key={title}
+              title={title}
+              description={description}
+              image={image}
+            />
           ))}
         </CardGrid>
       </PageSection>
 
       <PageSection kicker="Board" title="Board of Directors">
         <CardGrid cols="mdTwo">
-          {boardMembersData.map((boardMember) => (
+          {boardMembersData.map(({ name, title, linkedin, image }) => (
             <KeyMemberCard
-              key={boardMember.name}
-              name={boardMember.name}
-              title={boardMember.title}
-              linkedin={boardMember.linkedin}
-              image={boardMember.image}
+              key={name}
+              name={name}
+              title={title}
+              linkedin={linkedin}
+              image={image}
             />
           ))}
         </CardGrid>
@@ -85,13 +90,13 @@ export default function About() {
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
         <CardGrid cols="mdTwo">
-          {advisorsData.map((advisor) => (
+          {advisorsData.map(({ name, title, linkedin, image }) => (
             <KeyMemberCard
-              key={advisor.name}
-              name={advisor.name}
-              title={advisor.title}
-              linkedin={advisor.linkedin}
-              image={advisor.image}
+              key={name}
+              name={name}
+              title={title}
+              linkedin={linkedin}
+              image={image}
             />
           ))}
         </CardGrid>

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
 import type { StaticImageProps, ImageProps } from '@/types/imageType'
 
@@ -54,13 +55,20 @@ function KeyMemberImage({
 }: Pick<KeyMemberCardProps, 'image' | 'name'>) {
   const isStaticImage = typeof image === 'object'
 
+  const commonProps = {
+    alt: `Photo of ${name}`,
+    quality: 100,
+    sizes: '150px',
+    className: 'rounded object-cover',
+  }
+
   if (isStaticImage) {
     return (
       <Image
+        {...commonProps}
+        className={clsx(commonProps.className, 'aspect-[3/4] w-32 shrink-0')}
         src={image}
-        alt={`Photo of ${name}`}
-        sizes="150px"
-        className="aspect-[3/4] w-32 shrink-0 rounded object-cover"
+        alt={commonProps.alt}
       />
     )
   }
@@ -69,10 +77,10 @@ function KeyMemberImage({
     <div className="relative aspect-[3/4] w-32 shrink-0">
       <Image
         fill
+        {...commonProps}
+        className={commonProps.className}
         src={image}
-        alt={`Photo of ${name}`}
-        sizes="150px"
-        className="rounded object-cover"
+        alt={commonProps.alt}
       />
     </div>
   )
