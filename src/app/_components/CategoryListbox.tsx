@@ -1,7 +1,6 @@
 'use client'
 
 import { Listbox } from '@headlessui/react'
-import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
 import {
   type CategoryCounts,
@@ -13,7 +12,6 @@ import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
@@ -35,10 +33,7 @@ export function CategoryListbox({
 
   return (
     <Listbox value={selected} onChange={onChange}>
-      <ListboxButton>
-        <span>Category</span>
-        <Icon component={CaretDown} size={16} weight="bold" />
-      </ListboxButton>
+      <ListboxButton label="Category" />
       <ListboxOptions>
         {totalCategoryCount && (
           <ListboxOption

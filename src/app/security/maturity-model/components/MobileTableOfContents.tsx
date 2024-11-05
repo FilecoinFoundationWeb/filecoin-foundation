@@ -5,7 +5,7 @@ import {
   ListboxOptions as HeadlessUIListboxOptions,
   ListboxOption as HeadlessUIListboxOption,
 } from '@headlessui/react'
-import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { Check } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
@@ -32,10 +32,7 @@ export function MobileTableOfContents() {
         value={selectedOption}
         onChange={(value) => handleChange(value.id)}
       >
-        <ListboxButton>
-          <span className="truncate">{selectedOption.name}</span>
-          <Icon component={CaretDown} size={16} weight="bold" />
-        </ListboxButton>
+        <ListboxButton truncateLabel label={selectedOption.name} />
 
         <HeadlessUIListboxOptions
           as="ul"

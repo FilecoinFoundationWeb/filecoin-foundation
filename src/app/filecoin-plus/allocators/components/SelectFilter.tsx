@@ -11,6 +11,8 @@ import type { Column } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
 
+import { ListboxButton } from '@/_components/ListboxButton'
+
 import type { Allocator } from '../schemas/AllocatorSchema'
 
 type FilterOption = {
@@ -45,10 +47,12 @@ export function SelectFilter({
 
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleOptionChange}>
-      <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
+      {/* <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
         <span className="truncate">{selectedOption.name}</span>
         <Icon component={CaretDown} size={16} weight="bold" />
-      </HeadlessUIListboxButton>
+      </HeadlessUIListboxButton> */}
+
+      <ListboxButton truncateLabel label={selectedOption.name} />
 
       <HeadlessUIListboxOptions
         as="ul"
