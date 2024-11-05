@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import * as Sentry from '@sentry/node'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
@@ -30,7 +31,17 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
             alt={alt!}
           />
         ),
-        a: ({ href, children }) => <TextLink href={href!}>{children}</TextLink>,
+        a: ({ href, children }) => {
+          if (!href) {
+            Sentry.captureException(
+              new Error(
+                `Invalid markdown: link is missing href attribute for text "${children}"`,
+              ),
+            )
+            return <>{children}</>
+          }
+          return <TextLink href={href}>{children}</TextLink>
+        },
       }}
     >
       {children}
