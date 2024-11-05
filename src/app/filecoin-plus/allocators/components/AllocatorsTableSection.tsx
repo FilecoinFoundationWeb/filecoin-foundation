@@ -1,5 +1,6 @@
 import * as Sentry from '@sentry/nextjs'
 
+import { convertDatacapToPiB } from '../utils/convertDatacapToPiB'
 import { getAllocators } from '../utils/getAllocators'
 import { getDatacapStats } from '../utils/getDatacapStats'
 
@@ -19,8 +20,8 @@ export async function AllocatorsTableSection() {
 
       return {
         ...allocator,
-        remainingDatacap: stats ? stats.remainingDatacap : null,
-        allowance: stats ? stats.allowance : null,
+        remainingDatacap: convertDatacapToPiB(stats?.remainingDatacap),
+        allowance: convertDatacapToPiB(stats?.allowance),
       }
     })
 
