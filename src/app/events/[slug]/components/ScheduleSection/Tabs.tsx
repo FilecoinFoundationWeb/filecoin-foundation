@@ -42,8 +42,8 @@ export function Tabs({ schedule }: TabsProps) {
   function handleTabIndexChange(index: number) {
     setActiveTabIndex(index)
 
-    if (isMounted() && isScreenBelowLg) {
-      scrollTabContentIntoView(tabGroupRef)
+    if (isMounted() && isScreenBelowLg && tabGroupRef.current) {
+      scrollTabContentIntoView(tabGroupRef.current)
     }
   }
 

@@ -1,3 +1,5 @@
-export function scrollTabContentIntoView(ref: React.RefObject<HTMLElement>) {
-  ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+export function scrollTabContentIntoView(
+  refCurrent: NonNullable<React.RefObject<HTMLElement>['current']>,
+) {
+  refCurrent.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
