@@ -4,12 +4,11 @@ created-on: 2024-07-31T21:44:00.000Z
 updated-on: 2024-07-31T21:44:00.000Z
 published-on: 2024-07-31T21:44:00.000Z
 category: news
-description: "Check out the latest updates about what the Filecoin Foundation
+description: "Check out the latest updates about what Filecoin Foundation
   team has been up to."
 image:
   src: /assets/images/0215-ff-13-.webp
 seo:
-  title: "Early August Highlights: Filecoin Upgrades, Events, and New Developments"
   description: Discover Filecoin's upcoming upgrade, FIL Bangkok, the redesigned
     fil.org, and more in our early August highlights. Stay updated on events,
     governance, and community news!

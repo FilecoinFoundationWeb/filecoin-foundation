@@ -14,7 +14,6 @@ year-joined: 2024-04-05T14:44:50.326000Z
 subcategories:
   - data-storage-management
 seo:
-  title: CooperDB
   description:
     CooperDB provides decentralized database solutions for secure data
     management.

@@ -11,7 +11,6 @@ image:
   src: /assets/images/image-c-28.png
 category: news
 seo:
-  title: Venus v1.0.0 Passes Least Authority Security Audit
   description:
     Announcing that Venus v1.0.0 has passed the Least Authority security
     audit. Learn more about the results.
@@ -23,4 +22,4 @@ Venus is the Go language implementation of Filecoin dedicated to the improvement
 
 Since IPFSForce took over Venus in October 2020, the project has now achieved two milestones, including the first node deployed and the first storage (mining) pool built on the Filecoin network.
 
-Read more about the new [venus v1.0.0](https://ipfsforce-1751.medium.com/venus-v1-0-is-here-security-audit-for-venus-has-done-f6b8a3dbff4a) implementation and check out the official [audit report](https://leastauthority.com/blog/audits/audit-of-venus-for-filecoin-foundation/). Security audits are critical to the health and growth of the Filecoin network, and the Filecoin Foundation will support future audits of Filecoin implementations.
+Read more about the new [venus v1.0.0](https://ipfsforce-1751.medium.com/venus-v1-0-is-here-security-audit-for-venus-has-done-f6b8a3dbff4a) implementation and check out the official [audit report](https://leastauthority.com/blog/audits/audit-of-venus-for-filecoin-foundation/). Security audits are critical to the health and growth of the Filecoin network, and Filecoin Foundation will support future audits of Filecoin implementations.

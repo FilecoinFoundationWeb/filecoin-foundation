@@ -10,7 +10,6 @@ image:
   src: /assets/images/64423a911fe00b2cb076101a_1-_gcjaae5jjlt5kkzewfd6g.png
 category: news
 seo:
-  title: Filecoin Foundation Announces the Venushub Platform
   description:
     Introducing the Venushub platform by Filecoin Foundation. Learn how
     it fosters decentralized application development.

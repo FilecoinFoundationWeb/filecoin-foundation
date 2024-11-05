@@ -13,7 +13,6 @@ image:
   src: /assets/images/64423bdeb13e032a58960cfb_1-xicc70v_m64rcu1wlbq6qq.png
 category: ecosystem
 seo:
-  title: Participate in Filecoin's Poll on Extending V1 Sector Lifetime
   description:
     Weigh in on extending the maximum lifetime of V1 sectors in the Filecoin
     network. Your input matters.

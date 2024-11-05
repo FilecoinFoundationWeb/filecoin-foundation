@@ -12,7 +12,6 @@ created-on: "2023-04-21T07:27:45.806Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: Help Us Increase Utility for Filecoin and Zcash Chains
   description:
     Join the initiative to enhance utility for Filecoin and Zcash chains.
     Learn how you can contribute.
@@ -24,7 +23,7 @@ Proposals can be submitted through GitHub (link previously available but now una
 
 FF and ECC are considering any proposals that expand the utility of Filecoin and Zcash as well as their respective ecosystems. The [new website](http://ff-ecc-grants.org/) details examples of projects that are ideal for the grant program, such as projects that support Filecoin storage payments in ZEC, media and file support in Zcash encrypted memos and NFTs, and zero-knowledge technology.
 
-Applications and requirements for submission are being accepted on a rolling basis through December 31st, 2023. Grants will be funded by a pool of more than 300,000 FIL, provided by the Filecoin Foundation. Additional funds may be added by ECC and FF.
+Applications and requirements for submission are being accepted on a rolling basis through December 31st, 2023. Grants will be funded by a pool of more than 300,000 FIL, provided by Filecoin Foundation. Additional funds may be added by ECC and FF.
 
 As part of this latest round of grant funding, FF and ECC announced that the Halo 2 codebase is also now shared via the MIT license — simpler and more permissive than its previous open-source license — in addition to the launch of the RFP-style grants program. All work funded through this RFP must be open-sourced via MIT and Apache2 licenses.
 

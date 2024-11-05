@@ -4,12 +4,11 @@ created-on: 2024-07-01T13:00:00.000Z
 updated-on: 2024-07-01T13:00:00.000Z
 published-on: 2024-07-01T13:00:00.000Z
 category: news
-description: Check out the latest updates about what the Filecoin Foundation
+description: Check out the latest updates about what Filecoin Foundation
   team has been up to.
 image:
   src: /assets/images/0215-ff-16-.webp
 seo:
-  title: "Fresh From FF: Early July, 2024"
   description: "Discover FIL Brussels events, including sessions with top
     innovators, software storage solutions, new grants, and the Data Economy
     Day. Explore decentralized AI and more. "

@@ -13,7 +13,6 @@ created-on: "2023-04-21T07:27:07.444Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: news
 seo:
-  title: Filecoin Foundation and FFDW Team Up with Internet Archive
   description:
     Filecoin Foundation, FFDW, and Internet Archive collaborate to preserve
     government datasets in Democracy’s Library initiative.
@@ -25,7 +24,7 @@ The Internet Archive has spent the past 26 years building the world’s largest 
 
 This week in San Francisco, Marta Belcher, president and chair of Filecoin Foundation and FFDW, took the stage with Brewster Kahle, founder of the Internet Archive, to discuss the vision for Democracy’s Library and how decentralized technologies can ensure that collections of government data are preserved into the future and accessible to everyone.
 
-Working hand-in-hand with the Internet Archive, the Filecoin Foundation and FFDW will help to store these collections on decentralized technologies like the Filecoin network to ensure robust and secure long-term preservation, in line with the Foundation’s mission to preserve humanity’s most important information. This builds on the Filecoin Foundation’s other [work](https://blog.archive.org/2021/04/01/filecoin-foundation-grants-50000-fil-to-the-internet-archive/) with the Internet Archive.
+Working hand-in-hand with the Internet Archive, Filecoin Foundation and FFDW will help to store these collections on decentralized technologies like the Filecoin network to ensure robust and secure long-term preservation, in line with the Foundation’s mission to preserve humanity’s most important information. This builds on Filecoin Foundation’s other [work](https://blog.archive.org/2021/04/01/filecoin-foundation-grants-50000-fil-to-the-internet-archive/) with the Internet Archive.
 
 “Today, books, newspapers, research, and more sit behind paywalls. Our dominant information ecosystem is one of scarcity — it’s time to rethink that, especially when it comes to public data,” said Brewster Kahle, founder of the Internet Archive. “Governments spend exorbitant amounts of taxpayer dollars to publish documents and educate their citizens, but this information is not always accessible. Democracy’s Library is a vision — to bring that ongoing investment from governments around the world to the internet generation. It will leverage technology to build an information ecosystem of abundance — where information can be uncovered, unlocked, and reused in new and different ways. This is a stepping stone to citizens who are more empowered and more engaged.”
 

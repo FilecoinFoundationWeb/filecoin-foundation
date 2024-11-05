@@ -8,6 +8,8 @@ import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
+import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
+
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
@@ -22,8 +24,6 @@ const NewsletterSchema = z.object({
 })
 
 export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
-
-const NOTIFICATION_DIALOG_DURATION_MS = 5000
 
 type NotificationDialogState = {
   isOpen: boolean

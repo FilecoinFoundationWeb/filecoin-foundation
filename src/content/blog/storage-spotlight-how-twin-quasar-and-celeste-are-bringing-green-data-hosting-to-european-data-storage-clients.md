@@ -12,7 +12,6 @@ image:
   src: /assets/images/twin-quasar-celeste-filecoin-blog-image.png
 category: use-cases
 seo:
-  title: "Storage Spotlight: Green Data Hosting with Twin Quasar and Celeste"
   description:
     Twin Quasar and Celeste bring green data hosting to European clients.
     Explore their sustainable approach.

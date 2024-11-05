@@ -14,7 +14,6 @@ image:
   src: /assets/images/645215fc18e20d1c30805b6c_2021-filecoin-orbit-lounge-event.png
 category: supported-sponsored
 seo:
-  title: Filecoin Orbit Lounge at DC Fintech Week
   description:
     Join the Filecoin Orbit Lounge at DC Fintech Week to connect with the
     community and explore the latest innovations.

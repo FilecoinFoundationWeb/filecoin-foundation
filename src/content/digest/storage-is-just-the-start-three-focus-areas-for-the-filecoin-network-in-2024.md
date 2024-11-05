@@ -12,9 +12,6 @@ authors:
 image:
   src: /assets/images/storage-is-just-the-start.webp
 seo:
-  title:
-    "Storage is Just the Start: Three Focus Areas for the Filecoin Network in
-    2024"
   description: Data storage and retrieval are core to how the Internet works.
     Today’s data infrastructure is dominated by Big Tech. But technologies like
     the InterPlanetary File System (IPFS) and Filecoin...

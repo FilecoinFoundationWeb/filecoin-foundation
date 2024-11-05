@@ -11,7 +11,6 @@ image:
   src: /assets/images/0524-sps-dcent.png
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Dcent"
   description:
     Spotlight on Dcent, a prominent Filecoin storage provider. Discover
     their contributions and innovations.

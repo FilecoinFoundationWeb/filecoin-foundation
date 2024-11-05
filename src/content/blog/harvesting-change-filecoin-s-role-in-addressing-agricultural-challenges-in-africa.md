@@ -10,7 +10,6 @@ description: "Q&A with Filecoin Orbit ambassador about the potential impact of
 image:
   src: /assets/images/09282024-africaagriculture.png
 seo:
-  title: Filecoin and Blockchain Revolutionizing Agriculture in Africa
   description: Discover how Filecoin’s blockchain technology is addressing
     agricultural challenges in Africa through supply chain transparency,
     sustainable farming, and smart contracts for crop insurance.
@@ -50,7 +49,7 @@ The audience response was quite good, and we ended up having an ideation session
 
 As a Filecoin Orbit lead in Kenya, I have been actively involved in creating awareness on the benefits of decentralized storage and computing on the Filecoin network. Our efforts involve hosting workshops, speaking at conferences, and networking with developers and entrepreneurs to grow a community that can facilitate a shift from web2 to Web3.
 
-My experience with the Filecoin Foundation has been incredibly positive. They have been instrumental in providing resources for our events, which has been a tremendous help. Our team of volunteers and the media team plays a crucial role in the logistics and overall success of the events. Additionally, the support from student clubs at different universities in Kenya has been invaluable in organizing and executing these events. Their involvement has made a significant impact, and I am grateful for their dedication and enthusiasm.
+My experience with Filecoin Foundation has been incredibly positive. They have been instrumental in providing resources for our events, which has been a tremendous help. Our team of volunteers and the media team plays a crucial role in the logistics and overall success of the events. Additionally, the support from student clubs at different universities in Kenya has been invaluable in organizing and executing these events. Their involvement has made a significant impact, and I am grateful for their dedication and enthusiasm.
 
 ## _Is there anything else you would like to add?_
 

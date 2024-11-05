@@ -15,7 +15,6 @@ website: https://glitterprotocol.io/
 twitter: https://twitter.com/GlitterProtocol
 year-joined: 2024-03-29T21:28:51.837000Z
 seo:
-  title: Glitter Protocol
   description:
     Glitter Protocol provides decentralized finance solutions for the Filecoin
     network.

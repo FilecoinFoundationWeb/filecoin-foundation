@@ -13,6 +13,7 @@ import {
 
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
+import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
 import { type Allocator } from '../schemas/AllocatorSchema'
 
@@ -27,9 +28,8 @@ export function AllocatorsTableWithFilters({
   data,
 }: AllocatorsTableWithFiltersProps) {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
-
   const [sorting, setSorting] = useState<SortingState>([
-    { id: 'name', desc: false },
+    NAME_COLUMN_SORT_CONFIG.initialReactTableState,
   ])
 
   const table = useReactTable({

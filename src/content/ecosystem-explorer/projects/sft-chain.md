@@ -19,7 +19,6 @@ year-joined:
 subcategories:
   - infrastructure
 seo:
-  title: SFT Chain
   description:
     SFT Chain offers decentralized solutions for supply chain management
     and tracking.

@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:55.910000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Third Storage
   description:
     Third Storage provides decentralized storage solutions for digital
     data.

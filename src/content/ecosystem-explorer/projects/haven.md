@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:52.020000Z
 subcategories:
   - data-storage-management
 seo:
-  title: Haven
   description:
     Haven offers decentralized storage solutions for digital documents
     and assets.

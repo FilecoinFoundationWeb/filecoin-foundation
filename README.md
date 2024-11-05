@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is developed for the Filecoin Foundation, aiming to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web. Utilizing Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and other dependencies for Markdown processing and validation, this project aims to offer an accessible and user-friendly website for the Filecoin community.
+This project is developed for Filecoin Foundation, aiming to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web. Utilizing Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and other dependencies for Markdown processing and validation, this project aims to offer an accessible and user-friendly website for the Filecoin community.
 
 ## Getting Started
 
@@ -310,7 +310,7 @@ Following these guidelines helps ensure that our website remains consistent, acc
 
 ## Contributing
 
-We welcome contributions to the Filecoin Foundation website!
+We welcome contributions to Filecoin Foundation website!
 
 ## License
 

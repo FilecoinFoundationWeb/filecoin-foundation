@@ -9,7 +9,6 @@ description: This week, Filecoin Foundation celebrates the three-year
 image:
   src: /assets/images/image-3-.png
 seo:
-  title: Filecoin Mainnet Marks Three Years
   description: Celebrating three years of Filecoin mainnet. Reflecting on the
     achievements and looking forward to the future.
 ---
@@ -80,7 +79,7 @@ Learn more at [fil.space](https://fil.space/).
 
 **Governance**
 
-FIP001v2 initiative is a project led by the Filecoin Foundation introducing changes to the Filecoin Improvement Process (FIPs) and governance process.
+FIP001v2 initiative is a project led by Filecoin Foundation introducing changes to the Filecoin Improvement Process (FIPs) and governance process.
 
 **Thank you!**
 

@@ -6,6 +6,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
+import { CopyToClipboard } from '@/components/CopyToClipboard'
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
@@ -15,7 +16,7 @@ type ShareArticleProps = {
   sectionTitle?: string
 }
 
-const TOUCH_TARGET = {
+export const TOUCH_TARGET = {
   class: 'p-2',
   offsetClass: '-m-2',
 }
@@ -25,8 +26,10 @@ export function ShareArticle({
   path,
   sectionTitle = 'Share Article',
 }: ShareArticleProps) {
+  const articleUrl = `${BASE_URL}${path}`
+
   const socialLinksWithIcons = generateShareArticleLinks(
-    `${BASE_URL}${path}`,
+    articleUrl,
     articleTitle,
   )
 
@@ -39,6 +42,10 @@ export function ShareArticle({
           TOUCH_TARGET.offsetClass,
         )}
       >
+        <CopyToClipboard
+          text={articleUrl}
+          notificationTitle="Link copied to clipboard!"
+        />
         {socialLinksWithIcons.map(({ label, href, icon }) => (
           <li key={label} className="inline-flex">
             <CustomLink

@@ -1,6 +1,6 @@
 ---
 title:
-  Introducing The Future Rules, a New Podcast Series from the Filecoin Foundation
+  Introducing The Future Rules, a New Podcast Series from Filecoin Foundation
   and Forkast News
 created-on: 2023-04-21T07:27:52.137000Z
 updated-on: 2023-04-21T07:27:52.137000Z
@@ -13,7 +13,6 @@ image:
   src: /assets/images/image-c-33.png
 category: news
 seo:
-  title: Introducing 'The Future Rules' Podcast by Filecoin Foundation
   description:
     Check out 'The Future Rules', a new podcast series by Filecoin Foundation
     and Forkast News.

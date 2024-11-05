@@ -15,7 +15,6 @@ image:
   src: /assets/images/64423ad4d7488e39d6b03c3a_0-oh5oa7medvgzjscu.png
 category: news
 seo:
-  title: Filecoin Foundation Chair Testifies Before US Senate
   description:
     Filecoin Foundation Chair Marta Belcher testifies before the US Senate
     Banking Committee. Key points and implications.

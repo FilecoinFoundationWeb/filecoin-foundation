@@ -10,7 +10,6 @@ end-date: 2023-03-01T16:39:25.716Z
 image:
   src: /assets/images/fvm-hackerbase-2023.png
 seo:
-  title: Filecoin Virtual Machine Hacker Base
   description: Join the Filecoin Virtual Machine Hacker Base to collaborate and
     innovate with the Filecoin community.
 ---

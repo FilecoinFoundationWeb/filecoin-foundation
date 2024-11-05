@@ -19,8 +19,6 @@ repo: https://github.com/AudiusProject
 featured-content: https://docs.ipfs.tech/case-studies/audius/
 twitter: https://twitter.com/audius
 seo:
-  title: "Audius: Decentralized Music Platform Empowering Artists with Control
-    Over Their Content"
   description: Audius offers artists a direct connection to listeners using
     decentralized technology and IPFS, ensuring control over their music and
     distribution without the need for record labels.

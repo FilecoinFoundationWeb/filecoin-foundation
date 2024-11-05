@@ -1,7 +1,7 @@
 ---
 title: Meet Filecoin Foundation Senior Fellow Danny O’Brien
 description: >-
-  The Filecoin Foundation (FF) and the Filecoin Foundation for the Decentralized
+  Filecoin Foundation (FF) and Filecoin Foundation for the Decentralized
   Web (FFDW) are delighted to welcome Danny O’Brien to the team.
 image:
   src: /assets/images/64423b0c0425d33126f2f20d_0-62iqqktk7czvo78e.jpeg
@@ -10,7 +10,6 @@ created-on: "2023-04-21T07:28:12.620Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: interviews
 seo:
-  title: Meet Filecoin Foundation Senior Fellow Danny O'Brien
   description:
     Introducing Danny O'Brien, senior fellow at Filecoin Foundation. Learn
     about his work and insights.
@@ -18,7 +17,7 @@ seo:
 
 The [Filecoin Foundation](http://fil.org/) (FF) and the [Filecoin Foundation for the Decentralized Web](http://ffdweb.org/) (FFDW) are delighted to welcome Danny O’Brien to the team. As a Senior Fellow, Danny will use his breadth of first-hand experience in numerous sectors of the crypto and digital rights worlds to act as the Foundation’s “primary source” advisor and collaborator to globalize Web3.
 
-Danny joins the Filecoin Foundation from the [Electronic Frontier Foundation](https://www.eff.org/)where he spent more than a decade as an activist, international director, and finally, director of strategy.
+Danny joins Filecoin Foundation from the [Electronic Frontier Foundation](https://www.eff.org/)where he spent more than a decade as an activist, international director, and finally, director of strategy.
 
 As Danny describes it, his career path has always been “twisted around questions of privacy, free speech, and human rights in the digital space.” He started out as a journalist embedded in the emerging world of the internet and digital rights. He sat in Netscape’s operations room at midnight on New Years’ Eve 1999, watching the creators of the first popular web browser fight Y2K bugs. He reported on the seminal “cypherpunks” meet-ups where the pioneers of crypto freedom first expanded on their ideas, and he read Satoshi’s original [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf) when it was first sent to the cryptography mailing list.
 

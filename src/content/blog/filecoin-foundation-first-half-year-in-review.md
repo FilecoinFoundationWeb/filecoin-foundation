@@ -11,9 +11,7 @@ created-on: "2023-04-21T07:27:18.330Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: reports
 seo:
-  title: Filecoin Foundation First Half-Year in Review
-  description:
-    A review of the Filecoin Foundation's achievements in the first half
+  description: A review of Filecoin Foundation's achievements in the first half
     of the year. Highlights and milestones.
 ---
 
@@ -25,7 +23,7 @@ Here’s a look back at all that’s taken place across the Filecoin community i
 
 **Dev Grant Spotlights**
 
-The Filecoin Foundation (FF) and Protocol Labs regularly award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. Last year saw [113 grants to organizations](https://filecoinfoundation.medium.com/2021-developer-grants-wrap-fab78b27a9fe) from more than a dozen countries around the world, a 69% YoY increase from the number of grants awarded in 2020. In the first half of 2022, we awarded 191 grants.
+Filecoin Foundation (FF) and Protocol Labs regularly award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. Last year saw [113 grants to organizations](https://filecoinfoundation.medium.com/2021-developer-grants-wrap-fab78b27a9fe) from more than a dozen countries around the world, a 69% YoY increase from the number of grants awarded in 2020. In the first half of 2022, we awarded 191 grants.
 
 In the first half of 2022, Filecoin Foundation spotlighted a number of new developer grants, including:
 

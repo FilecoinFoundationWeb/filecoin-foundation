@@ -19,7 +19,6 @@ twitter: "https://twitter.com/guardianproject"
 subcategories:
   - data-storage-management
 seo:
-  title: ProofMode by Guardian Project
   description:
     ProofMode offers decentralized solutions for data verification and
     security.

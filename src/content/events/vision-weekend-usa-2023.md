@@ -12,7 +12,6 @@ image:
   src: /assets/images/vision-weekend.jpeg
 category: supported-sponsored
 seo:
-  title: Vision Weekend USA 2023
   description:
     Join Vision Weekend USA 2023 to engage with visionary leaders and explore
     future technologies.

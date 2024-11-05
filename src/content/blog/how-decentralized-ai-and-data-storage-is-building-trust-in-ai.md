@@ -9,8 +9,6 @@ description: The world of AI is rapidly growing. For AI models, data is fuel.
 image:
   src: /assets/images/08192024-decentralized-ai.webp
 seo:
-  title: "Decentralized AI: Filecoin's Role in Transforming AI Data Storage and
-    Integrity"
   description: Explore how Filecoin leverages decentralized storage to enhance
     AI's security, transparency, and scalability, preventing centralization
     risks and promoting a future where AI benefits everyone.
@@ -52,7 +50,7 @@ Filecoin is built to handle the unprecedented scale of AI data growth on a futur
 Leading AI companies are integrating Filecoin into their networks and tools.
 
 - Theoriq is developing AI agents trained using open data hosted on the Filecoin network.
-- Nuklai is collaborating with the Filecoin Foundation to archive the world’s data, empowering AI with contextualized data ontology.
+- Nuklai is collaborating with Filecoin Foundation to archive the world’s data, empowering AI with contextualized data ontology.
 - SingularityNET is taking an important step toward ethical AI development and decentralized infrastructure, aiming to enhance security data management and set new AI ethical norms.
 - Bagel Network is enabling AI developers to train and store their models using Filecoin’s compute and storage capabilities, offering unprecedented efficiency and flexibility for decentralized AI development.
 - EQTY Labs is on a mission to build solutions that accelerate trust and innovation in AI, starting with the creation of ClimateGPT. Built on Filecoin, ClimateGPT is the first open-sourced ensemble of AI models designed to address climate change’s rapid and ever-changing impact.

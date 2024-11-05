@@ -13,7 +13,6 @@ year-joined: 2024-04-05T00:10:47.116000Z
 subcategories:
   - data-storage-management
 seo:
-  title: E-IPFS
   description:
     E-IPFS provides enhanced IPFS solutions for decentralized storage and
     retrieval.

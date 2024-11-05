@@ -10,8 +10,8 @@ description: Freenet is free software that lets users anonymously chat, share
 image:
   src: /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
 seo:
-  title: "Dev Grant Spotlight: Freenet 2"
-  description: Freenet 2's journey and achievements as a recipient of the Filecoin
+  description:
+    Freenet 2's journey and achievements as a recipient of the Filecoin
     Foundation Dev Grant. Learn more about their project.
 ---
 
@@ -29,7 +29,7 @@ Specifically, [Freenet 2](https://github.com/freenet/locutus) will be a distribu
 
 Moreover, as an infrastructure layer, Freenet 2 will open up IPFS and Filecoin to more use cases, such as mobile-native protocols for low-bandwidth, low-power applications over mobile. In addition, a “chainless” smart contract approach will generate learnings and use cases for [Filecoin’s smart contract initiative](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
 
-Filecoin Foundation dev grants are intended to enhance the Filecoin ecosystem. FF’s grant to Freenet is a new type of discretionary award by the Filecoin Foundation that did not involve an RFP. Rather, the grant awarded to Freenet is a sponsored open grant. This type of grant will be periodically given to organizations that we proactively identify as sharing Filecoin Foundation’s civic values around free speech and data preservation— but need help shifting their infrastructures more fully from web2 centralization into a decentralized Web3 environment.
+Filecoin Foundation dev grants are intended to enhance the Filecoin ecosystem. FF’s grant to Freenet is a new type of discretionary award by Filecoin Foundation that did not involve an RFP. Rather, the grant awarded to Freenet is a sponsored open grant. This type of grant will be periodically given to organizations that we proactively identify as sharing Filecoin Foundation’s civic values around free speech and data preservation— but need help shifting their infrastructures more fully from web2 centralization into a decentralized Web3 environment.
 
 We’re proud to support Freenet in maturing to an even more decentralized operating model to back up its worthy mission!
 

@@ -3,21 +3,19 @@ title: Filecoin Foundation Wave 9 Dev Grant Proposals Due Friday, July 30
 created-on: 2023-04-21T07:27:22.778000Z
 updated-on: 2023-04-21T07:27:22.778000Z
 published-on: 2023-04-21T07:33:56.200000Z
-description:
-  The Filecoin Foundation and Protocol Labs periodically award funding
+description: Filecoin Foundation and Protocol Labs periodically award funding
   to critical development projects to foster a more robust and efficient decentralized
   web through the Filecoin ecosystem.
 image:
   src: /assets/images/image-c-17.png
 category: news
 seo:
-  title: Filecoin Foundation Wave 9 Dev Grant Proposals Due
   description:
     Submit your proposals for Filecoin Foundation's Wave 9 Dev Grant by
     Friday, July 30. Learn more about the application process.
 ---
 
-The Filecoin Foundation and Protocol Labs periodically award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem.
+Filecoin Foundation and Protocol Labs periodically award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem.
 
 Dev Grants are a way to reward those who are adding value to the Filecoin ecosystem, encourage new builders to get involved and seed new products and businesses that increase the utility of Filecoin.
 

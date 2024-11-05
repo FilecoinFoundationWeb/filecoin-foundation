@@ -12,7 +12,6 @@ image:
   src: /assets/images/fip-header.png
 category: ecosystem
 seo:
-  title: Gathering Community Input on FIP-0018
   description:
     Weigh in on FIP-0018 for changing miner to storage provider terminology.
     Community feedback needed.
@@ -28,4 +27,4 @@ FIP-0018 will remain in “Last Call” status until Friday, August 20 in order 
 
 If you would like to learn more about this FIP, deliberate the proposed change, or in any other way share your perspective, we encourage you to do so via the Filecoin [Slack](http://filecoinproject.slack.com/) and [Github](https://github.com/filecoin-project) channels. The Filecoin community and Filecoin governance protocols are open to everyone, including those who may be new to Web3 or have not previously contributed to the network.
 
-In view of FIP-0018 and other FIPs advancing in the coming months, the Filecoin Foundation will audit existing governance policies to ensure that Filecoin governance remains a robust, open, and accessible process as the network continues to grow and evolve.
+In view of FIP-0018 and other FIPs advancing in the coming months, Filecoin Foundation will audit existing governance policies to ensure that Filecoin governance remains a robust, open, and accessible process as the network continues to grow and evolve.

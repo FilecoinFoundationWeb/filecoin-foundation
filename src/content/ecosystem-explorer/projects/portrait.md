@@ -18,7 +18,6 @@ twitter: "https://twitter.com/portrait_gg"
 subcategories:
   - arts-collectibles-nfts
 seo:
-  title: Portrait
   description: Portrait offers decentralized solutions for digital art and collectibles.
 email: encrypted::U2FsdGVkX18vbGYF+gpIkqlHJrTU2svRzzPEssOkpdOD/FLX62+tW9u3VoPp1V1w
 full-name: encrypted::U2FsdGVkX18WztmSEoC4BnaYKXF/7Zh3x3o+3ZRhMjI=

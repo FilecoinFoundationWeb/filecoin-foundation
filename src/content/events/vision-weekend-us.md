@@ -12,7 +12,6 @@ end-date: 2022-12-04T18:27:00.000Z
 image:
   src: /assets/images/vision-sf-2022.png
 seo:
-  title: Vision Weekend US
   description:
     Attend Vision Weekend US to connect with the visionary leaders and
     explore future innovations.

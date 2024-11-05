@@ -7,7 +7,6 @@ category: hosted
 location: Virtual
 start-date: 2022-05-11T06:00:24.000Z
 seo:
-  title: Filecoin Plus Day
   description:
     Celebrate Filecoin Plus Day and learn about the latest updates and
     innovations in the Filecoin ecosystem.

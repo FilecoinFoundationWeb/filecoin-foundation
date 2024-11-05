@@ -18,7 +18,6 @@ tech:
   - ipfs
 featured-content: https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group
 seo:
-  title: UC Berkeley Underground Physics Group
   description: UC Berkeley Underground Physics Group provides decentralized
     solutions for scientific data management.
 ---

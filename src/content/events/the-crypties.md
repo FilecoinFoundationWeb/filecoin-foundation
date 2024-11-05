@@ -9,6 +9,5 @@ start-date: 2022-11-30T18:24:48.715Z
 image:
   src: /assets/images/crypties-2022.png
 seo:
-  title: The Crypties
   description: Attend The Crypties to celebrate achievements in the cryptocurrency industry.
 ---

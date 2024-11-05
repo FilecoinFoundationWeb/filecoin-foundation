@@ -3,12 +3,11 @@ title: "Fresh From FF: Early June, 2024"
 created-on: 2024-05-31T17:08:54.166Z
 updated-on: 2024-05-31T17:08:54.178Z
 published-on: 2024-05-31T17:08:54.189Z
-description: "Check out the latest updates about what the Filecoin Foundation has been up to."
+description: "Check out the latest updates about what Filecoin Foundation has been up to."
 image:
   src: /assets/images/0215-ff-7-.png
 category: news
 seo:
-  title: "Fresh From Filecoin Foundation: Early June 2024 Updates"
   description: "Get the latest updates from Filecoin Foundation, including events, governance, and ecosystem highlights from early June 2024."
 ---
 

@@ -12,7 +12,6 @@ end-date: 2024-03-03T15:38:54.840Z
 image:
   src: /assets/images/ethdenver24.png
 seo:
-  title: ETH Denver Filecoin Booth & Filecoin Orbit Event
   description: Join us at ETH Denver for the Filecoin Booth and Filecoin Orbit
     Event to connect with the community.
 ---

@@ -4,14 +4,13 @@ created-on: 2023-04-21T07:32:01.414000Z
 updated-on: 2023-04-21T07:32:01.414000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
-  "Since its founding, the Filecoin Foundation has been committed to providing
+  "Since its founding, Filecoin Foundation has been committed to providing
   resources, community support, and guidance to everyone involved in building the
   Filecoin and Web3 ecosystems. "
 image:
   src: /assets/images/image-c-04.png
 category: ecosystem
 seo:
-  title: "Supporting the Community: The Filecoin Storage Provider Group"
   description:
     Discover how the Filecoin Storage Provider Group supports the community.
     Learn about their initiatives.
@@ -19,7 +18,7 @@ seo:
 
 **What is the Filecoin Storage Provider Working group?**
 
-Since its founding, the Filecoin Foundation has been committed to providing resources, community support, and guidance to everyone involved in building the Filecoin and Web3 ecosystems. We believe that Filecoin and Web3 can be part of a better future for storing humanity’s most important information. To fulfill this mission, the Filecoin Foundation is launching the Filecoin Storage Provider Working Group (SPWG), a voluntary, non-paid working group that allows Filecoin storage providers of all sizes to work collaboratively with other esteemed storage providers on the Filecoin network.
+Since its founding, Filecoin Foundation has been committed to providing resources, community support, and guidance to everyone involved in building the Filecoin and Web3 ecosystems. We believe that Filecoin and Web3 can be part of a better future for storing humanity’s most important information. To fulfill this mission, Filecoin Foundation is launching the Filecoin Storage Provider Working Group (SPWG), a voluntary, non-paid working group that allows Filecoin storage providers of all sizes to work collaboratively with other esteemed storage providers on the Filecoin network.
 
 Through partnerships with local storage providers in North America, Europe, and Asia, the SPWG aims to improve the storage provisioning experience for all Filecoin storage providers while also providing resources and education to bridge gaps between Filecoin storage providers and Filecoin developers, storage providers, and the broader community worldwide.
 
@@ -37,7 +36,7 @@ Additionally, all members of the Storage Provider Working Group pledge to follow
 
 **Responsibilities and Benefits**
 
-Members of the working group collaborate with fellow members of the Filecoin community to address their community’s needs and requirements. They serve as trusted advisors to the Filecoin Foundation team, providing input and feedback on RFPs for developer grants that will serve storage providers and clients, as well as receiving early previews and news on Filecoin storage provisioning updates.
+Members of the working group collaborate with fellow members of the Filecoin community to address their community’s needs and requirements. They serve as trusted advisors to Filecoin Foundation team, providing input and feedback on RFPs for developer grants that will serve storage providers and clients, as well as receiving early previews and news on Filecoin storage provisioning updates.
 
 SPWG members hold leadership roles in the Filecoin storage provisioning community and play a crucial role in spearheading the growth of the storage provider community and advocating for clients and storage providers. They also have the opportunity to participate in regular working group meetings and roundtables. Here they can discuss updates and provide feedback for the development and implementation of the Filecoin network.
 
@@ -45,11 +44,11 @@ In addition to serving as spokespeople for the Filecoin storage provider communi
 
 As leaders in their communities, SPWG members are responsible for promoting equal access to helpful information and resources for storage providers. They arrange for storage providers to receive educational materials, and they can lead workshops that address technical aspects of Filecoin storage provisioning.
 
-SPWG members work closely with storage providers and collaborate with the Filecoin Foundation’s Enterprise working group, testing client and retrieval deals and identifying potential clients that partner with Filecoin Plus. They have the opportunity to test new code while also contributing to the development of best practices for content policy challenges, Filecoin documentation, and other resources for storage providers.
+SPWG members work closely with storage providers and collaborate with Filecoin Foundation’s Enterprise working group, testing client and retrieval deals and identifying potential clients that partner with Filecoin Plus. They have the opportunity to test new code while also contributing to the development of best practices for content policy challenges, Filecoin documentation, and other resources for storage providers.
 
 **Selection Process**
 
-The SPWG looks for storage providers who stand out in the community through their dedication to improving the Filecoin ecosystem. The SPWG is run by a full-time program manager who leads the working group and manages the representatives from each region. Members are nominated for consideration either through direct recommendations from participants in storage provisioning programs such as MinerX, or by the community. The Filecoin Foundation reviews all nominations.
+The SPWG looks for storage providers who stand out in the community through their dedication to improving the Filecoin ecosystem. The SPWG is run by a full-time program manager who leads the working group and manages the representatives from each region. Members are nominated for consideration either through direct recommendations from participants in storage provisioning programs such as MinerX, or by the community. Filecoin Foundation reviews all nominations.
 
 The SPWG currently consists of two sub-working groups, one in North America/Europe and the other in Asia (including China, Japan, and Korea). The different regions work collaboratively but meet on a slightly different basis and function under slightly different criteria.
 
@@ -65,7 +64,7 @@ SPWG storage providers in Asia will be also meeting on a regular basis and will 
 
 Every month, the team is expected to post updates for their respective geographical communities on these channels and make themselves available to storage providers who want to reach out for additional help or information.
 
-Members of the Asia regional group meet online with the North American/European teams on a quarterly basis. These meetings will be hosted by the Filecoin Foundation and serve as a space to share efforts that each region has made to support their community, along with providing feedback on lessons learned, issues encountered and new opportunities discovered.
+Members of the Asia regional group meet online with the North American/European teams on a quarterly basis. These meetings will be hosted by Filecoin Foundation and serve as a space to share efforts that each region has made to support their community, along with providing feedback on lessons learned, issues encountered and new opportunities discovered.
 
 **Conclusion**
 

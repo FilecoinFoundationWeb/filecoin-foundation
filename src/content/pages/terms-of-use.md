@@ -9,7 +9,7 @@ seo:
 
 **Effective Date: October 20, 2021**
 
-These Terms of Use (“Terms”) govern your use of the Filecoin Foundation website and any other website that the Filecoin Foundation operates and that links to these Terms (collectively, the “Website”).
+These Terms of Use (“Terms”) govern your use of Filecoin Foundation website and any other website that Filecoin Foundation operates and that links to these Terms (collectively, the “Website”).
 
 Please review these Terms carefully before using the Website. We may change these Terms or modify any features of the Website at any time. The most current version of the Terms can be viewed by clicking on the “Terms of Use” link posted through the Website. You accept the Terms by using the Website, and you accept any changes to the Terms by continuing to use the Website after we post the changes.
 
@@ -32,7 +32,7 @@ Violations of system or network security may result in civil or criminal liabili
 
 ## Intellectual Property
 
-The Website is owned and operated by the Filecoin Foundation. You acknowledge and agree that, as between the parties, we own all right, title, and interest in and to the Website, including:
+The Website is owned and operated by Filecoin Foundation. You acknowledge and agree that, as between the parties, we own all right, title, and interest in and to the Website, including:
 
 - All information, data, software, text, displays, and visual interfaces, graphics, images, video, and audio, and all other elements of the Website, and the design, selection, and arrangement thereof.
 - All intellectual property and other legal rights (including, but not limited to, any and all copyrights, patents, patent applications, trade secrets, trademarks, and other intangible rights) therein.

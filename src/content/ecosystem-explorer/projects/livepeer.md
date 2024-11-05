@@ -20,7 +20,6 @@ year-joined: 2024-01-19T18:26:58.022Z
 subcategories:
   - photo-video
 seo:
-  title: Livepeer
   description: Livepeer provides decentralized video streaming and transcoding services.
 email: encrypted::U2FsdGVkX1+7C08nY4YK4u/a3fURsuxiOoQoFXGv1Ba+1hYOa/YD1aMoViMg4Q/A
 full-name: encrypted::U2FsdGVkX1/HvNoHz+IX5eOXAO02Tlt3OcWfOVn1cDI=

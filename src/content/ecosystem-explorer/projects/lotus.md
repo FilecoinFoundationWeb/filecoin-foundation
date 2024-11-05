@@ -16,7 +16,6 @@ year-joined: 2020-10-15T19:36:51.302Z
 subcategories:
   - data-storage-management
 seo:
-  title: Lotus
   description: Lotus offers decentralized storage solutions for the Filecoin network.
 email: encrypted::U2FsdGVkX1+0nFRrm0E/HRSHmjCPB+ut+IUggsSmmWn5QlVhfyo6Oor9ifgbFfcU
 full-name: encrypted::U2FsdGVkX1+5Eq20D2NRXL4AwKBPPNqLdOMrNvdAOwA=

@@ -18,6 +18,5 @@ tech:
 repo: https://github.com/okcontract
 year-joined: 2022-09-11T14:47:28.444Z
 seo:
-  title: OkContract
   description: OkContract offers decentralized solutions for smart contract management.
 ---

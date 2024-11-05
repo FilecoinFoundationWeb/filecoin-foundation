@@ -4,17 +4,15 @@ created-on: 2024-04-01T21:51:19.589000Z
 updated-on: 2024-04-01T21:51:19.602000Z
 published-on: 2024-04-01T21:51:19.614000Z
 category: news
-description:
-  Check out the latest updates about what the Filecoin Foundation team
+description: Check out the latest updates about what Filecoin Foundation team
   has been up to.
 image:
   src: /assets/images/0215-ff-3-.png
 seo:
-  title: "Fresh from FF: Early April 2024"
   description: Catch up on the latest updates from Filecoin Foundation in early April 2024.
 ---
 
-_Check out the latest updates about what the Filecoin Foundation team has been up to._
+_Check out the latest updates about what Filecoin Foundation team has been up to._
 
 ## Early April Highlights
 

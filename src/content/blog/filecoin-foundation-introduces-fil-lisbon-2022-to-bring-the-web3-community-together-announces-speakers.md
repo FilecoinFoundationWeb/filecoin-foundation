@@ -12,7 +12,6 @@ created-on: "2023-04-21T07:27:19.915Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: events
 seo:
-  title: Filecoin Foundation Introduces FIL Lisbon 2022
   description:
     Introducing FIL Lisbon 2022 by Filecoin Foundation. Bringing the Web3
     community together. Announcing speakers.
@@ -45,7 +44,7 @@ Amidst hackathons and meetups, FIL Lisbon includes the following events:
 
 Additionally, from October 24 — November 4, Filecoin Foundation is hosting a [hacker base](https://hackerbase.eventbrite.com/) with Fission Codes and Lightshift. It will be a place for co-working, workshops, and lightning talks throughout the week.
 
-“The Filecoin Foundation is so thrilled to be bringing together the Filecoin community in Lisbon, two years after Filecoin mainnet launch, following a year of tremendous network growth,” says Marta Belcher, President and Chair of Filecoin Foundation.
+“Filecoin Foundation is so thrilled to be bringing together the Filecoin community in Lisbon, two years after Filecoin mainnet launch, following a year of tremendous network growth,” says Marta Belcher, President and Chair of Filecoin Foundation.
 
 FIL Lisbon is open to everyone and provides a unique opportunity for people within and outside of the blockchain industry to learn, build, connect, and venture into the exciting prospects of the future of Web3. You can register for the FIL Lisbon kickoff party and Main Stage days [here](https://fil-lisbon.io/register-now/). For more information about the event, visit [https://fil-lisbon.io/](https://fil-lisbon.io/ "https://fil-lisbon.io/")
 

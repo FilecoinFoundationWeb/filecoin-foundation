@@ -14,7 +14,6 @@ tech:
   - ipfs
 year-joined: 2024-04-04T01:31:54.160Z
 seo:
-  title: Ken Labs
   description: Ken Labs offers decentralized solutions for blockchain
     infrastructure and services.
 email: encrypted::U2FsdGVkX18JbLgvvGne4VnNDJyu5+xj2wk76wIJtc3EZG7oKE0LzcxDwYQ56Pqi

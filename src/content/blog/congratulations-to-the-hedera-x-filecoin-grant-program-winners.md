@@ -4,19 +4,18 @@ created-on: 2023-04-21T07:26:28.269000Z
 updated-on: 2023-04-21T07:26:28.269000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
-  "The Filecoin Foundation is pleased to announce the winners of the Hedera
+  "Filecoin Foundation is pleased to announce the winners of the Hedera
   x Filecoin grant program. "
 image:
   src: /assets/images/64423aa44e4c6826a3f40982_0-3uh8nohy2qqafnfv.png
 category: news
 seo:
-  title: Congratulations to the Hedera x Filecoin Grant Program Winners
   description:
     Announcing the winners of the Hedera x Filecoin grant program. Congratulations
     to all the innovative projects.
 ---
 
-The Filecoin Foundation is pleased to announce the winners of the Hedera x Filecoin grant program. This collaboration combines Filecoin’s peer-to-peer storage network with the Hedera public ledger for fast, low-cost transactions. The Hedera x Filecoin grant program will collectively award $200,000 USD to six winning projects.
+Filecoin Foundation is pleased to announce the winners of the Hedera x Filecoin grant program. This collaboration combines Filecoin’s peer-to-peer storage network with the Hedera public ledger for fast, low-cost transactions. The Hedera x Filecoin grant program will collectively award $200,000 USD to six winning projects.
 
 The largest prize is a $75,000 USD **Decentralized Storage SDK for Hedera & Demo Application Award** to fund a project that seamlessly integrates existing Hedera and Filecoin toolchains. This award goes to the [Xact-Team](https://github.com/bhed/devgrants/blob/master/rfp-proposals/rfp-proposal-nft-sdk-hedera.md). They will build a program that will provide developers with an SDK that uses both the Hedera Token Service and Filecoin storage to make it easy to mint NFTs on the Hedera network, while storing metadata and multimedia on Filecoin’s decentralized storage network using [nft.storage](https://nft.storage/).
 

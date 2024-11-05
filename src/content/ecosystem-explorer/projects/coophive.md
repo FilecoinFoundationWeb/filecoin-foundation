@@ -17,7 +17,6 @@ year-joined: 2024-04-24T19:28:43.576000Z
 subcategories:
   - governance-daos-public-goods
 seo:
-  title: CoopHive
   description:
     CoopHive offers decentralized solutions for cooperative management
     and governance.

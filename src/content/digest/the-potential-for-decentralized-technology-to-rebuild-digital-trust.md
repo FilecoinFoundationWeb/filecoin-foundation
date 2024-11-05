@@ -15,7 +15,6 @@ authors:
 image:
   src: /assets/images/the-potential-for-decentralized-technology-to-rebuild-media-trust-and-empower-content-creators.webp
 seo:
-  title: "Rebuilding Digital Trust: The Role of Decentralized Technology"
   description: "In April 2024, a 30-second video featuring Bollywood star Aamir Khan circulated widely across the Indian internet. Khan was seen criticizing Indian Prime Minister Narendra Modi for unfulfilled campaign promises..."
 ---
 

@@ -13,7 +13,6 @@ created-on: "2023-04-21T07:27:27.712Z"
 published-on: "2023-04-21T07:33:56.200Z"
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Linix"
   description:
     Linix's role and impact as a Filecoin storage provider highlighted
     in this spotlight feature.

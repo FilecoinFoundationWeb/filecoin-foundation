@@ -12,8 +12,6 @@ authors:
 image:
   src: /assets/images/interplanetary-resilience.webp
 seo:
-  title: "Interplanetary Resilience
-    Communication"
   description: "The vision of Filecoin is of verifiably robust storage of data scaling to meet the needs of humanity over centuries. In order to achieve this vision we need to _literally_ aim for the stars. We’re at a turning..."
 ---
 
@@ -67,7 +65,7 @@ Once you can trust that you will receive –– cryptographically, verifiably un
 
 ## Mission Accomplished
 
-The Filecoin Foundation, Protocol Labs, Lockheed Martin, and Little Bear Labs collaborated to show that IPFS can deliver on this vision, and after a couple of years of planning, design, and testing, the mission completed in October 2023.
+Filecoin Foundation, Protocol Labs, Lockheed Martin, and Little Bear Labs collaborated to show that IPFS can deliver on this vision, and after a couple of years of planning, design, and testing, the mission completed in October 2023.
 
 The mission goals were to:
 

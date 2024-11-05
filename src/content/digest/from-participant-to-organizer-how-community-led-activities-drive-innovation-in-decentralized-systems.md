@@ -13,8 +13,6 @@ authors:
 image:
   src: /assets/images/from-participant-to-organizer.webp
 seo:
-  title: "From Participant to Organizer: How Community-Led Activities Drive
-    Innovation in Decentralized Systems"
   description:
     Harnessing the Power of Decentralized Ecosystems — The strength of
     decentralized ecosystems lies in their broad participation and spirit of
@@ -46,7 +44,7 @@ Building and maintaining brand identity and community buy-in across a decentrali
 
 Perhaps counterintuitively, decentralized ecosystems thrive when there is a clear and standardized collaboration process. In the Filecoin Orbit community, the process for logo and imagery design exemplifies this idea.
 
-[Fil-city.io](http://Fil-city.io), developed by the Filecoin Foundation, is a versatile branding platform tailored for global Filecoin events. It provides modular, customizable toolkits that enable event organizers to quickly create visual materials that adhere to brand standards while reflecting the unique style of each city. For example, at FIL HK, Fil-city.io set the primary visual color to bright yellow, inspired by Hong Kong’s night market culture, which was seamlessly integrated across the event website, promotional posters, and on-site decorations. These pre-designed assets allowed our designers to make swift adjustments based on event needs, saving time while ensuring brand consistency. This efficiency lets organizers focus on creative design ideas, maintaining alignment with Filecoin’s design principles, ensuring events are instantly recognizable, and enhancing community engagement and impact.
+[Fil-city.io](http://Fil-city.io), developed by Filecoin Foundation, is a versatile branding platform tailored for global Filecoin events. It provides modular, customizable toolkits that enable event organizers to quickly create visual materials that adhere to brand standards while reflecting the unique style of each city. For example, at FIL HK, Fil-city.io set the primary visual color to bright yellow, inspired by Hong Kong’s night market culture, which was seamlessly integrated across the event website, promotional posters, and on-site decorations. These pre-designed assets allowed our designers to make swift adjustments based on event needs, saving time while ensuring brand consistency. This efficiency lets organizers focus on creative design ideas, maintaining alignment with Filecoin’s design principles, ensuring events are instantly recognizable, and enhancing community engagement and impact.
 
 ## Maximizing Event Impact with Tailored Promotion Strategies
 

@@ -3,20 +3,18 @@ title: Hack Away in Summer 2021
 created-on: 2023-04-21T07:27:44.240000Z
 updated-on: 2023-04-21T07:27:44.240000Z
 published-on: 2023-04-21T07:33:56.200000Z
-description:
-  This summer, the Filecoin Foundation is supporting numerous hackathons
+description: This summer, Filecoin Foundation is supporting numerous hackathons
   for community members.
 image:
   src: /assets/images/image-c-31.png
 category: events
 seo:
-  title: Hack Away in Summer 2021
   description:
     Join the hacking events in summer 2021. Learn, build, and collaborate
     with the Filecoin community.
 ---
 
-This summer, the Filecoin Foundation is supporting numerous hackathons for community members. Hackathons let developers and other creatives collaborate on a project over a set period of time with the goal of producing a functioning software by the end of the event. When community members participate in hackathons using Filecoin, they add valuable new tools and programs to the Filecoin ecosystem. Not to mention, the most innovative creators have the chance to win big prizes!
+This summer, Filecoin Foundation is supporting numerous hackathons for community members. Hackathons let developers and other creatives collaborate on a project over a set period of time with the goal of producing a functioning software by the end of the event. When community members participate in hackathons using Filecoin, they add valuable new tools and programs to the Filecoin ecosystem. Not to mention, the most innovative creators have the chance to win big prizes!
 
 Below are the details on hackathons you can participate in this summer, plus some bonus events to put on your calendar.
 
@@ -34,7 +32,7 @@ Browsers 3000 (link previously available but now unavailable) is a virtual hacka
 
 **HackFS**
 
-This ETHGlobal virtual hackathon, sponsored by the Filecoin Foundation, challenges developers to help build the foundation for Web3 by innovating in the world of dapps, decentralized storage, and more. [HackFS](https://hackfs.com/) offers participants support from the Filecoin and Protocol Labs ecosystems by connecting teams to mentors and community experts to help them deliver a product that advances the decentralized web (and gives them a shot at the more than $100,000 USD prize pool). Mark your calendars for July 30 to August 20 and don’t wait to register to help create a better future for the web.
+This ETHGlobal virtual hackathon, sponsored by Filecoin Foundation, challenges developers to help build the foundation for Web3 by innovating in the world of dapps, decentralized storage, and more. [HackFS](https://hackfs.com/) offers participants support from the Filecoin and Protocol Labs ecosystems by connecting teams to mentors and community experts to help them deliver a product that advances the decentralized web (and gives them a shot at the more than $100,000 USD prize pool). Mark your calendars for July 30 to August 20 and don’t wait to register to help create a better future for the web.
 
 **Filecoin Club**
 
@@ -42,6 +40,6 @@ Encode Club, a community of university students, researchers, and developers bui
 
 **Need Inspiration?**
 
-Check out these winners of past hackathons that the Filecoin Foundation has supported. Last summer’s [Spark University Hackathon](https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-one/) winner, [DeepVerse](https://deepverse.co.uk/), enabled researchers to make the machine-learning models they’ve developed publicly available, using the Filecoin network to store and distribute them. A location-based NFT AR game called [CryptoLlama](https://testnets.opensea.io/) was named the best tool for easing storage and retrieval of data with Filecoin at the [Chainlink Spring 2021 Hackathon](https://blog.ipfs.io/2021-05-03-chainlink-recap/). Most recently, NiftySubs (link previously available but now unavailable), a decentralized video streaming platform where users can watch premium content from their favorite creators, won the Protocol Labs prize at [HackMoney 2021](https://defi.ethglobal.co/).
+Check out these winners of past hackathons that Filecoin Foundation has supported. Last summer’s [Spark University Hackathon](https://filecoin.io/blog/posts/spark-university-hackathon-winners-challenge-one/) winner, [DeepVerse](https://deepverse.co.uk/), enabled researchers to make the machine-learning models they’ve developed publicly available, using the Filecoin network to store and distribute them. A location-based NFT AR game called [CryptoLlama](https://testnets.opensea.io/) was named the best tool for easing storage and retrieval of data with Filecoin at the [Chainlink Spring 2021 Hackathon](https://blog.ipfs.io/2021-05-03-chainlink-recap/). Most recently, NiftySubs (link previously available but now unavailable), a decentralized video streaming platform where users can watch premium content from their favorite creators, won the Protocol Labs prize at [HackMoney 2021](https://defi.ethglobal.co/).
 
 For more hackathon updates, follow us on Twitter [@FilFoundation.](https://twitter.com/filfoundation) You can also join us in chat in the [Filecoin Slack.](http://filecoin.io/slack) We’ll see you there!

@@ -16,7 +16,6 @@ year-joined: 2024-01-18T17:56:20.324000Z
 subcategories:
   - data-storage-management
 seo:
-  title: FilScriptions
   description: FilScriptions offers decentralized subscription management solutions.
 email: encrypted::U2FsdGVkX19jGBUJe+UqqCtN6NKVOksfiSZ4bAM/mKSjSnVY7GHzFujS5HJbneWq
 full-name: encrypted::U2FsdGVkX1/F9XdNv2Uv/iTEO50suveQ+tEURS3OxGY=

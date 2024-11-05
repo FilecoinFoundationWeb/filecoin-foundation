@@ -10,7 +10,6 @@ end-date: 2024-04-19T14:45:39.332Z
 image:
   src: /assets/images/token2049_dubai24.png
 seo:
-  title: Token2049 Dubai Filecoin Orbit Event
   description: Attend the Token2049 Dubai Filecoin Orbit Event to network and
     explore the latest in Filecoin.
 ---

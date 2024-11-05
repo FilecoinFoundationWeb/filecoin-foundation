@@ -19,7 +19,6 @@ twitter: https://twitter.com/GainForestNow
 subcategories:
   - climate
 seo:
-  title: Gainforest
   description:
     Gainforest provides decentralized solutions for climate impact monitoring
     and reporting.

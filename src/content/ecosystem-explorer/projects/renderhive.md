@@ -18,7 +18,6 @@ tech:
 twitter: https://twitter.com/renderhive
 year-joined: 2024-03-29T21:28:53.783Z
 seo:
-  title: RenderHive
   description: RenderHive offers decentralized solutions for rendering and
     processing digital media.
 ---

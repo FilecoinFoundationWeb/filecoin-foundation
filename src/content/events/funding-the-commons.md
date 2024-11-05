@@ -10,7 +10,6 @@ end-date: 2024-04-14T14:47:33.405Z
 image:
   src: /assets/images/funding-the-commons24.png
 seo:
-  title: Funding the Commons
   description: Participate in Funding the Commons to explore opportunities for
     funding and supporting the commons.
 ---

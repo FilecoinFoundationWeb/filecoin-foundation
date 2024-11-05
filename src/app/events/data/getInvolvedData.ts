@@ -17,7 +17,7 @@ export const getInvolvedData = [
   {
     title: 'Speak at a Filecoin Event',
     description:
-      'Interested in joining the Filecoin Foundation on stage? Complete the speaker intake form.',
+      'Interested in joining Filecoin Foundation on stage? Complete the speaker intake form.',
     cta: {
       href: FILECOIN_FOUNDATION_URLS.events.speakerEngagementForm,
       text: 'Submit Form',

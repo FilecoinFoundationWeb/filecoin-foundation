@@ -10,7 +10,6 @@ image:
   src: /assets/images/image-c-26.png
 category: news
 seo:
-  title: "Apply Now: Filecoin Launchpad Accelerator II"
   description:
     Applications are open for the Filecoin Launchpad Accelerator II. Join
     and accelerate your blockchain project.
@@ -24,7 +23,7 @@ The Filecoin Launchpad Accelerator is a full-time, fully-remote program designed
 
 Tachyon, one of the organizing forces behind the program, is a leading accelerator for early-stage blockchain and Web 3.0 startups. Launchpad is designed to be an intense sprint to help teams hone their value proposition, test their assumptions and prepare for the next phase of their growth.
 
-The Filecoin Foundation, which facilitates governance of the Filecoin network, funds critical development projects, and supports the growth of the Filecoin ecosystem, is here to support and foster these teams, too, through community events, dev grant applications and promotion.
+Filecoin Foundation, which facilitates governance of the Filecoin network, funds critical development projects, and supports the growth of the Filecoin ecosystem, is here to support and foster these teams, too, through community events, dev grant applications and promotion.
 
 The first round of the Filecoin Launchpad Accelerator included 13 teams and 32 founders from 11 countries. Projects included WrappedFil, the first Filecoin wrapped token on Ethereum; [Parcel](https://parcel.money/), a self-custodial treasury management system with end-to-end data encryption; and Voodfy, a private, decentralized video hosting platform, among many others. Watch the [Demo Day presentations](https://www.youtube.com/playlist?list=PL_0VrY55uV19AJ9uqZODM16cL8oj3uAO-)from this first cohort to see what can be accomplished with the support of this program. And learn more about the overall program and its structure in [this video](https://www.youtube.com/watch?v=yFn0eDn3QBc).
 

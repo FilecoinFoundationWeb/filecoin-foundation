@@ -17,7 +17,6 @@ year-joined: 2024-03-29T21:28:54.146000Z
 subcategories:
   - dapp
 seo:
-  title: Quest Chains
   description:
     Quest Chains offers decentralized solutions for task management and
     collaboration.

@@ -4,16 +4,12 @@ created-on: 2024-03-14T13:04:08.972000Z
 updated-on: 2024-03-14T13:04:09.018000Z
 published-on: 2024-03-14T13:04:09.031000Z
 category: ecosystem
-description:
-  One year ago on March 14, 2023, the launch of the Filecoin Virtual Machine
-  (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet.
+description: "One year ago on March 14, 2023, the launch of the Filecoin Virtual Machine (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet."
 image:
   src: /assets/images/031224-fvm-anniversary.png
 seo:
-  title: "One Year of Programmability: Smart Contracts and DApp Growth on Filecoin"
-  description:
-    Celebrating one year of programmability on Filecoin. Explore the growth
-    of smart contracts and DApps.
+  description: "Celebrating one year of programmability on Filecoin. Explore the growth
+  of smart contracts and DApps."
 ---
 
 One year ago at 3:14 PM UTC on March 14, 2023 (epoch 2,683,348), the launch of the [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM) brought onchain programmability and smart contracts to Filecoin Mainnet. Dapps can tap into storage primitives on Filecoin with valuable workflows including perpetual storage, data access control, compute-over-data, Data DAOs, and more. These capabilities solidify Filecoin’s position as the Layer-1 blockchain uniquely positioned to power an open data economy.
@@ -51,7 +47,7 @@ Here are a few more early-stage projects building on FVM to keep an eye on**:**
 
 There has been incredible builder growth on the Filecoin network since launch. FVM’s full compatibility with the Ethereum Virtual Machine (EVM), helps many new-to-Filecoin developers make rapid progress when deploying their projects on the Filecoin blockchain.
 
-- More than one-third of approved projects of the Filecoin Foundation Dev Grants Program in FY23 were to empower FVM, including block explorers, libraries, toolsets, and more.
+- More than one-third of approved projects of Filecoin Foundation Dev Grants Program in FY23 were to empower FVM, including block explorers, libraries, toolsets, and more.
 - At launch, early builders shipped 30+ projects to Mainnet, with 20 of them entering leading accelerator cohorts with Graph Paper Capital, Longhash, and more.
 - The [Filecoin Orbit Ambassador program](https://fil.org/blog/orbit-year-in-review-growing-a-global-community-of-builders/) hosted more than 30 FVM workshops and over 10 FVM hackathons in just as many cities to introduce builders to Filecoin. These events generated 150 new projects deployed on Filecoin, IPFS, or FVM test- and mainnets, like a voting machine Filecoin dapp from a team in Tanzania.
 - The wider dev community demonstrated significant engagement with Filecoin over the past year alongside the launch of FVM. Hundreds of new projects using Filecoin have come in through participation in hackathons with ETHGlobal, ETHDenver, Encode, DevFolio, Huddle01, and DoraHacks.
