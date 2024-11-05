@@ -3,7 +3,7 @@ import { Question } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
-import { Tooltip, type TooltipProps } from '@/components/Tooltip'
+import { Tooltip, type TooltipProps } from '@/components/Tooltip/Tooltip'
 
 type TableHeaderWithTooltipProps = {
   title: string
