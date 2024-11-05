@@ -12,14 +12,14 @@ export function SpeakersSection({ speakers }: SpeakersSectionProps) {
   return (
     <PageSection kicker="speakers" title="Speakers">
       <CardGrid cols="mdTwo">
-        {speakers.map((speaker) => (
+        {speakers.map(({ name, title, company, linkedin, image }) => (
           <KeyMemberCard
-            key={speaker.name}
-            {...speaker}
-            image={{
-              ...speaker.image,
-              alt: `Photo of ${speaker.name}`,
-            }}
+            key={name}
+            name={name}
+            title={title}
+            company={company}
+            linkedin={linkedin}
+            image={image.src}
           />
         ))}
       </CardGrid>

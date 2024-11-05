@@ -7,7 +7,7 @@ type TableProps = {
 
 export function Table({ children, layout = 'auto' }: TableProps) {
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full overflow-x-auto focus:brand-outline">
       <table
         className={clsx(
           'w-full',

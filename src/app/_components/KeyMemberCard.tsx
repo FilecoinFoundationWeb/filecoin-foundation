@@ -1,50 +1,86 @@
 import Image from 'next/image'
 
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
+import { clsx } from 'clsx'
 
-import type { MemberData } from '@/types/memberType'
+import type { StaticImageProps, ImageProps } from '@/types/imageType'
 
-import { Card } from '@/components/Card'
+import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 
-import type { Speaker } from '@/events/schemas/SpeakerSchema'
+type KeyMemberCardProps = {
+  name: string
+  title: string
+  company?: string
+  linkedin: string
+  image: StaticImageProps['data'] | ImageProps['src']
+}
 
-type KeyMemberCardProps = MemberData | Speaker
-
-export function KeyMemberCard(props: KeyMemberCardProps) {
-  const { name, title, linkedin, image } = props
-  const isStaticImage = typeof image.src === 'object'
-
+export function KeyMemberCard({
+  name,
+  title,
+  company,
+  linkedin,
+  image,
+}: KeyMemberCardProps) {
   return (
     <li className="relative flex rounded-lg border border-brand-500 p-1">
-      <Image
-        src={image.src}
-        alt={`Photo of ${name}`}
-        sizes="150px"
-        className="aspect-[3/4] w-32 rounded object-cover"
-        {...(isStaticImage
-          ? { placeholder: 'blur' }
-          : { width: 150, height: 200 })}
-      />
+      <KeyMemberImage image={image} name={name} />
 
       <div className="m-3 grow">
         <Heading tag="h3" variant="lg">
           {name}
         </Heading>
 
-        <p className="mt-1 text-brand-300">
+        <p className="mb-10 mt-1 text-brand-300">
           {title}
-          {'company' in props && props.company && `, ${props.company}`}
+          {company && `, ${company}`}
         </p>
 
-        <Card.Link
+        <CustomLink
           href={linkedin}
-          icon={LinkedinLogo}
-          text="LinkedIn"
-          ariaLabel={`Visit ${name}'s LinkedIn profile.`}
-          left="left-36"
-        />
+          aria-label={`Visit ${name}'s LinkedIn profile.`}
+          className="absolute inset-0 rounded-lg pb-10 focus:brand-outline"
+        >
+          <span className="absolute bottom-4 left-36 inline-flex items-center gap-2 text-brand-300">
+            <Icon component={LinkedinLogo} />
+            LinkedIn
+          </span>
+        </CustomLink>
       </div>
     </li>
+  )
+}
+
+function KeyMemberImage({
+  image,
+  name,
+}: Pick<KeyMemberCardProps, 'image' | 'name'>) {
+  const commonProps = {
+    src: image,
+    alt: `Photo of ${name}`,
+    quality: 100,
+    sizes: '150px',
+    className: 'rounded object-cover',
+  }
+
+  const containerClass = 'aspect-[3/4] w-32 shrink-0'
+  const isStaticImage = typeof image === 'object'
+
+  if (isStaticImage) {
+    return (
+      <Image
+        {...commonProps}
+        className={clsx(commonProps.className, containerClass)}
+        alt={commonProps.alt}
+      />
+    )
+  }
+
+  return (
+    <div className={clsx('relative', containerClass)}>
+      <Image fill {...commonProps} alt={commonProps.alt} />
+    </div>
   )
 }
