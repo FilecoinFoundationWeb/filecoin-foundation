@@ -25,7 +25,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         with:
-          channel-id: C07UWFB0FBM
+          channel-id: C07UH9HAURX
           slack-message: |
             ${{ github.actor }} has marked a pull request as ready for review: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
             Reviewers: ${{ env.REVIEWERS }}
