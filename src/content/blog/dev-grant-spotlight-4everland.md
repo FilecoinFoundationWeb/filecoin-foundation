@@ -11,12 +11,11 @@ description: 4EVERLAND is a blockchain technology-powered cloud computing
 image:
   src: /assets/images/64423aa58d1be7828cce7d89_1-45khiwwqpsgwtnrtjpkoqa.png
 seo:
-  description:
-    Spotlight on 4EVERLAND, a recipient of the Filecoin Foundation Dev
+  description: Spotlight on 4EVERLAND, a recipient of Filecoin Foundation Dev
     Grant. Learn about their contributions and innovations.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about the Filecoin Foundation’s_ [_Dev Grants program_](https://grants.filecoin.io/)_._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://grants.filecoin.io/)_._
 
 [4EVERLAND](https://4everland.org/) is a blockchain technology-powered cloud computing platform designed to help developers build Web3 applications efficiently, with technical features such as global acceleration, privacy protection, and distributed storage. Based on the technology of IPFS and Ethereum, 4EVERLAND significantly improves Data I/O efficiency and enables stable content storage, more efficient content distribution, faster network access, and storage fraud prevention.
 

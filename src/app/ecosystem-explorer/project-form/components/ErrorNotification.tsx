@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from 'react'
 
 import { XCircle } from '@phosphor-icons/react'
 
+import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@/constants/notificationDialogDuration'
+
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { NotificationDialog } from '@/components/NotificationDialog'
@@ -11,7 +13,6 @@ import { NotificationDialog } from '@/components/NotificationDialog'
 type ErrorMessageProps = {
   message: string
 }
-const NOTIFICATION_DIALOG_DURATION_MS = 15_000
 
 export function ErrorNotification({ message }: ErrorMessageProps) {
   const [isOpen, setIsOpen] = useState(true)
@@ -32,7 +33,7 @@ export function ErrorNotification({ message }: ErrorMessageProps) {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       handleOpen(false)
-    }, NOTIFICATION_DIALOG_DURATION_MS)
+    }, NOTIFICATION_DIALOG_ERROR_DURATION_MS)
 
     return () => clearTimeout(timeoutId)
   }, [handleOpen])

@@ -79,7 +79,7 @@ Learn more at [fil.space](https://fil.space/).
 
 **Governance**
 
-FIP001v2 initiative is a project led by the Filecoin Foundation introducing changes to the Filecoin Improvement Process (FIPs) and governance process.
+FIP001v2 initiative is a project led by Filecoin Foundation introducing changes to the Filecoin Improvement Process (FIPs) and governance process.
 
 **Thank you!**
 

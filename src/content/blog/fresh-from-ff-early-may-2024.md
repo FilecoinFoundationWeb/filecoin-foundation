@@ -4,8 +4,7 @@ created-on: 2024-05-01T13:24:09.834000Z
 updated-on: 2024-05-01T13:24:09.858000Z
 published-on: 2024-05-01T13:24:09.872000Z
 category: news
-description:
-  "Check out the latest updates about what the Filecoin Foundation team
+description: "Check out the latest updates about what Filecoin Foundation team
   has been up to."
 image:
   src: /assets/images/fresh-from-ff-early-may.png
@@ -15,7 +14,7 @@ seo:
     May 2024. Highlights and events.
 ---
 
-_Check out the latest updates about what the Filecoin Foundation team has been up to._
+_Check out the latest updates about what Filecoin Foundation team has been up to._
 
 ## Early May Highlights
 

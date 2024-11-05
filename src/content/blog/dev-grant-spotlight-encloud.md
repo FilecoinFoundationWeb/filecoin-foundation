@@ -45,4 +45,4 @@ With large-scale enterprise data sets come increased risk and concern about the 
 
 \_\_
 
-_The Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._
+_Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._

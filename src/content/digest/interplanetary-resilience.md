@@ -65,7 +65,7 @@ Once you can trust that you will receive –– cryptographically, verifiably un
 
 ## Mission Accomplished
 
-The Filecoin Foundation, Protocol Labs, Lockheed Martin, and Little Bear Labs collaborated to show that IPFS can deliver on this vision, and after a couple of years of planning, design, and testing, the mission completed in October 2023.
+Filecoin Foundation, Protocol Labs, Lockheed Martin, and Little Bear Labs collaborated to show that IPFS can deliver on this vision, and after a couple of years of planning, design, and testing, the mission completed in October 2023.
 
 The mission goals were to:
 
