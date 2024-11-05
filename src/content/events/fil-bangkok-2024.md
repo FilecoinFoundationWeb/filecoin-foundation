@@ -196,6 +196,9 @@ schedule:
           moderators:
             - name: Leah Callon-Butler
               company: Emfarsis
+          description: Sit down with Marta Belcher for a wrap up of the newest
+            developments in the ecosystem and a look into how Filecoin
+            Foundation plans to support the network in 2025.
         - title: Onboarding a Million Users to DePIN
           speakers:
             - name: Roman
