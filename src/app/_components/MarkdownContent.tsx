@@ -5,6 +5,8 @@ import ReactMarkdown, { type Components } from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { TextLink } from '@/components/TextLink'
@@ -13,17 +15,29 @@ type MarkdownContentProps = {
   children: string
 }
 
-const MarkdownImage: Components['img'] = ({ src, alt }) => (
-  <Image
-    priority
-    quality={100}
-    src={src!}
-    width={800}
-    height={450}
-    sizes={buildImageSizeProp({ startSize: '100vw', md: '660px' })}
-    alt={alt!}
-  />
-)
+const MarkdownImage: Components['img'] = ({ src, alt }) => {
+  const commonProps = {
+    quality: 100,
+    width: 800,
+    height: 450,
+    sizes: buildImageSizeProp({ startSize: '100vw', md: '660px' }),
+  }
+
+  if (!src) {
+    Sentry.captureException(
+      new Error('Invalid markdown: image is missing src attribute'),
+    )
+    return (
+      <Image
+        {...commonProps}
+        src={graphicsData.imageFallback.data}
+        alt={graphicsData.imageFallback.alt}
+      />
+    )
+  }
+
+  return <Image {...commonProps} src={src} alt={alt || ''} />
+}
 
 const MarkdownLink: Components['a'] = ({ href, children }) => {
   if (!href) {
