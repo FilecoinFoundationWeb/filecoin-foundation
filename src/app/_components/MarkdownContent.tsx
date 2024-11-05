@@ -6,6 +6,8 @@ import remarkGfm from 'remark-gfm'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
+import { TextLink } from '@/components/TextLink'
+
 type MarkdownContentProps = {
   children: string
 }
@@ -28,6 +30,7 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
             alt={alt!}
           />
         ),
+        a: ({ href, children }) => <TextLink href={href!}>{children}</TextLink>,
       }}
     >
       {children}
