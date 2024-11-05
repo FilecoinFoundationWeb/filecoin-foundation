@@ -5,8 +5,9 @@ import { clsx } from 'clsx'
 
 import type { StaticImageProps, ImageProps } from '@/types/imageType'
 
-import { Card } from '@/components/Card'
+import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
+import { Icon } from '@/components/Icon'
 
 type KeyMemberCardProps = {
   name: string
@@ -32,18 +33,21 @@ export function KeyMemberCard({
           {name}
         </Heading>
 
-        <p className="mt-1 text-brand-300">
+        <p className="mb-10 mt-1 text-brand-300">
           {title}
           {company && `, ${company}`}
         </p>
 
-        <Card.Link
+        <CustomLink
           href={linkedin}
-          icon={LinkedinLogo}
-          text="LinkedIn"
-          ariaLabel={`Visit ${name}'s LinkedIn profile.`}
-          left="left-36"
-        />
+          aria-label={`Visit ${name}'s LinkedIn profile.`}
+          className="absolute inset-0 rounded-lg pb-10 focus:brand-outline"
+        >
+          <span className="absolute bottom-4 left-36 inline-flex items-center gap-2 text-brand-300">
+            <Icon component={LinkedinLogo} />
+            LinkedIn
+          </span>
+        </CustomLink>
       </div>
     </li>
   )
@@ -53,35 +57,30 @@ function KeyMemberImage({
   image,
   name,
 }: Pick<KeyMemberCardProps, 'image' | 'name'>) {
-  const isStaticImage = typeof image === 'object'
-
   const commonProps = {
+    src: image,
     alt: `Photo of ${name}`,
     quality: 100,
     sizes: '150px',
     className: 'rounded object-cover',
   }
 
+  const containerClass = 'aspect-[3/4] w-32 shrink-0'
+  const isStaticImage = typeof image === 'object'
+
   if (isStaticImage) {
     return (
       <Image
         {...commonProps}
-        className={clsx(commonProps.className, 'aspect-[3/4] w-32 shrink-0')}
-        src={image}
+        className={clsx(commonProps.className, containerClass)}
         alt={commonProps.alt}
       />
     )
   }
 
   return (
-    <div className="relative aspect-[3/4] w-32 shrink-0">
-      <Image
-        fill
-        {...commonProps}
-        className={commonProps.className}
-        src={image}
-        alt={commonProps.alt}
-      />
+    <div className={clsx('relative', containerClass)}>
+      <Image fill {...commonProps} alt={commonProps.alt} />
     </div>
   )
 }
