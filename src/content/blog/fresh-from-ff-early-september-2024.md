@@ -14,9 +14,9 @@ seo:
     AI, the launch of FF's new Developer Grants blog series, and more. "
 ---
 
-How decentralized AI and data storage are [building trust in AI](https://www.fil.org/blog/how-f3-is-transforming-the-filecoin-network). For AI models, data is fuel. And, for AI developers, researchers, and individuals, data is a vital asset. Explore decentralized AI's approach to advancing artificial intelligence that distributes the core functions of AI systems and how [the Filecoin ecosystem](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) creates a more open, equitable, and trustworthy AI infrastructure by leveraging the benefits of decentralized data storage and computation.
+How decentralized AI and data storage are [building trust in AI](/blog/how-f3-is-transforming-the-filecoin-network). For AI models, data is fuel. And, for AI developers, researchers, and individuals, data is a vital asset. Explore decentralized AI's approach to advancing artificial intelligence that distributes the core functions of AI systems and how [the Filecoin ecosystem](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) creates a more open, equitable, and trustworthy AI infrastructure by leveraging the benefits of decentralized data storage and computation.
 
-Filecoin Foundation is excited to launch the [Developer Grants Updates series](https://www.fil.org/blog/developer-grants-updates-august-2024), bringing news and highlights from Filecoin Foundation Developer Grants team. The first issue will cover updates since the start of this fiscal year (FY’24), which began in October 2023, and highlights proposals demonstrating impressive innovation within the community. [Read more](https://www.fil.org/blog/developer-grants-updates-august-2024).
+Filecoin Foundation is excited to launch the [Developer Grants Updates series](/blog/developer-grants-updates-august-2024), bringing news and highlights from Filecoin Foundation Developer Grants team. The first issue will cover updates since the start of this fiscal year (FY’24), which began in October 2023, and highlights proposals demonstrating impressive innovation within the community. [Read more](/blog/developer-grants-updates-august-2024).
 
 ## Ecosystem
 

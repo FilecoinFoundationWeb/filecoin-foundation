@@ -42,7 +42,7 @@ Filecoin offers other benefits for AI networks, too, including:
 
 ### How Prominent AI Organizations Are Leveraging Filecoin
 
-FF recently [announced collaborations](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and [Aethir](https://cryptobriefing.com/aethir-filecoin-collaboration-gpu/), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin networks’ decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
+FF recently [announced collaborations](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and [Aethir](https://cryptobriefing.com/aethir-filecoin-collaboration-gpu/), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin networks’ decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
 
 - SingularityNET: SingularityNET and FF are collaborating to store metadata on Filecoin via Lighthouse, enhancing the security and provenance of decentralized data storage.
 - Theoriq: FF and Theoriq are developing AI agents trained on open datasets stored on Filecoin, including a current project enabling natural language queries for Filecoin docs and a proposed project leveraging declassified CIA datasets for efficient and verifiable research.
@@ -59,7 +59,7 @@ Looking ahead, as new blockchain networks and layer-2s gain traction, Filecoin c
 
 #### Not Your Parents’ Web Project Finds that the Median Lifespan of a Website is Just Over 2 Years
 
-The "[Not Your Parents' Web](https://www.fil.org/blog/the-web-isn-t-forever-new-research-findings-from-not-your-parents-web-project)" project, a collaboration between Internet Archive, Old Dominion University’s Web Science & Digital Libraries Research Group, and FF, reveals critical insights into the fleeting nature of online content. Analyzing 27.3 million archived URLs across 26 years, the study found that the median lifespan of a web page is just 2.3 years, with deep links disappearing even faster. These findings underscore the need for decentralized storage solutions like IPFS and Filecoin, which can preserve web content securely and redundantly, ensuring the longevity of our digital heritage in an increasingly ephemeral online environment.
+The "[Not Your Parents' Web](/blog/the-web-isn-t-forever-new-research-findings-from-not-your-parents-web-project)" project, a collaboration between Internet Archive, Old Dominion University’s Web Science & Digital Libraries Research Group, and FF, reveals critical insights into the fleeting nature of online content. Analyzing 27.3 million archived URLs across 26 years, the study found that the median lifespan of a web page is just 2.3 years, with deep links disappearing even faster. These findings underscore the need for decentralized storage solutions like IPFS and Filecoin, which can preserve web content securely and redundantly, ensuring the longevity of our digital heritage in an increasingly ephemeral online environment.
 
 ![](/assets/images/08282024-fastfinality.webp)
 
@@ -71,7 +71,7 @@ Fast Finality in Filecoin (F3) represents one of the [biggest storage-retrieval 
 
 #### All Systems Go: FF Launches the Filecoin Ecosystem Digest
 
-In August, FF launched [The Filecoin Ecosystem Digest](https://www.fil.org/digest), a collection of seven editorial articles authored by individuals from the ecosystem. This inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future with expert contributors from FilOz, Numbers Protocol, DeStor, ND Labs, Holon Investments, and Ansa Research.
+In August, FF launched [The Filecoin Ecosystem Digest](/digest), a collection of seven editorial articles authored by individuals from the ecosystem. This inaugural issue explores topics that impact the ecosystem –– from interplanetary resilience to AI-generated media and sustainable data centers. The Digest highlights the voices behind the technology being developed in the Filecoin network –– as we embark on a collective journey towards a decentralized future with expert contributors from FilOz, Numbers Protocol, DeStor, ND Labs, Holon Investments, and Ansa Research.
 
 #### Meet the New Organizations Developing the Network
 
@@ -83,7 +83,7 @@ The Filecoin ecosystem offers a thriving ecosystem for projects, teams, and comp
 
 ### How Filecoin Developer Grants are Fueling Decentralized Innovation
 
-FF’s [Developer Grants Updates](https://www.fil.org/blog/developer-grants-updates-august-2024) series brings news and highlights from the FFDeveloper Grants team. The first issue, published in August, offers a recap of recent program developments, grant pool updates, and the future program outlook while showcasing proposals demonstrating impressive innovation within the community.
+FF’s [Developer Grants Updates](/blog/developer-grants-updates-august-2024) series brings news and highlights from the FFDeveloper Grants team. The first issue, published in August, offers a recap of recent program developments, grant pool updates, and the future program outlook while showcasing proposals demonstrating impressive innovation within the community.
 
 #### Filecoin: Core Web3 Infrastructure
 
@@ -93,7 +93,7 @@ In July, FF announced the [Data Onboarding RFP](https://github.com/filecoin-proj
 
 #### Filecoin Storage Solutions to Watch
 
-From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes [a range of tools designed to cater to different storage needs](https://www.fil.org/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch). Whether you prioritize perpetual archiving, data privacy, or seamless integration with Web3 applications, there's a Filecoin-based solution tailored to your requirements. This vibrant ecosystem empowers users to take control of their data, leveraging the power of decentralization, encryption, and robust storage optimization techniques.
+From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes [a range of tools designed to cater to different storage needs](/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch). Whether you prioritize perpetual archiving, data privacy, or seamless integration with Web3 applications, there's a Filecoin-based solution tailored to your requirements. This vibrant ecosystem empowers users to take control of their data, leveraging the power of decentralization, encryption, and robust storage optimization techniques.
 
 Filecoin storage provider Holon is building modular micro-data centers, which use immersion cooling technology, to provide a green solution for data storage, enhancing security and efficiency while reducing the carbon footprint.
 
@@ -103,7 +103,7 @@ Filecoin storage provider Holon is building modular micro-data centers, which us
 
 #### Two Defining Upgrades for a more Efficient, Flexible Filecoin Network
 
-[NV23, codenamed "Waffle"](https://www.fil.org/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), went live on Mainnet on August 6, bringing significant enhancements focused on simplified processes, optimized proof mechanisms, streamlined sector commitments, enhanced cryptographic support, and strengthened security. Several Filecoin Improvement Proposals (FIPs), such as [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), help the network operate more efficiently and lay the groundwork for more flexible data commitment methods. [NV22 codenamed "Dragon"](https://fil.org/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility/) introduced a suite of improvements and changes aimed at enhancing the network's efficiency, reliability, and user experience.
+[NV23, codenamed "Waffle"](/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), went live on Mainnet on August 6, bringing significant enhancements focused on simplified processes, optimized proof mechanisms, streamlined sector commitments, enhanced cryptographic support, and strengthened security. Several Filecoin Improvement Proposals (FIPs), such as [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), help the network operate more efficiently and lay the groundwork for more flexible data commitment methods. [NV22 codenamed "Dragon"](https://fil.org/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility/) introduced a suite of improvements and changes aimed at enhancing the network's efficiency, reliability, and user experience.
 
 ![](/assets/images/blog-metropolis.webp)
 
@@ -133,17 +133,17 @@ FF introduced Filecoin Improvement Proposal (FIP) one-pagers. These one-pagers o
 
 #### New Allocator Dashboard to Support Clients' Storage Needs
 
-In October, Filecoin Foundation added an Allocator Registry to the [Filecoin Plus (Fil+) website](https://www.fil.org/filecoin-plus/allocators) as part of its ongoing efforts to simplify how data clients can connect with prospective Allocators. Users can use the registry to learn more about each Allocator, and utilize its filters to find allocators based on their needs.
+In October, Filecoin Foundation added an Allocator Registry to the [Filecoin Plus (Fil+) website](/filecoin-plus/allocators) as part of its ongoing efforts to simplify how data clients can connect with prospective Allocators. Users can use the registry to learn more about each Allocator, and utilize its filters to find allocators based on their needs.
 
 #### Request for Allocators (RFA) for New Pathway Creations
 
-Earlier this year, the [Filecoin Incentive Design Lab (FIDL)](https://www.fil.org/ecosystem-explorer/filecoin-incentive-designlabs) and FF’s Fil+team announced the [Request for Allocators](https://blog.allocator.tech/2024/04/allocator-tech-blog.html) (RFA) to seek out new pathway creations with the goal of encouraging the Filecoin community to develop and run novel meta-pathways. New meta-pathways will help promote faster allocation of DataCap to compliant storage providers and contribute to a growing, healthy ecosystem by better matching the needs of its data clients.
+Earlier this year, the [Filecoin Incentive Design Lab (FIDL)](/ecosystem-explorer/filecoin-incentive-designlabs) and FF’s Fil+team announced the [Request for Allocators](https://blog.allocator.tech/2024/04/allocator-tech-blog.html) (RFA) to seek out new pathway creations with the goal of encouraging the Filecoin community to develop and run novel meta-pathways. New meta-pathways will help promote faster allocation of DataCap to compliant storage providers and contribute to a growing, healthy ecosystem by better matching the needs of its data clients.
 
 ![](/assets/images/from-participant-to-organizer-1-.webp)
 
 #### Improved Documentation for Builders
 
-To better support the community and builders looking to engage with the program, the Fil+team has improved the supporting documentation for the Fil+ program by consolidating more information on <https://www.fil.org/filecoin-plus>.
+To better support the community and builders looking to engage with the program, the Fil+team has improved the supporting documentation for the Fil+ program by consolidating more information on [fil.org/filecoin-plus](/filecoin-plus).
 
 ### Events: Building the Global Filecoin Community
 
@@ -165,4 +165,4 @@ At FIL Singapore, [hosted by MetaPals and supported by FF](https://lu.ma/escdw9d
 
 At FIL Brussels, organized by FF alongside EthCC, Filecoin cemented its pivotal role as the DePIN backbone for advancements in AI by announcing [six prominent collaborations](https://fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai). FIL Brussels brought together hundreds of members of the Filecoin community for an exploration of decentralized AI, DePIN, and compute through a week of insightful talks, hands-on workshops, and networking opportunities.
 
-As the network progresses as core infrastructure for a wide range of applications across Web2, Web3, and emerging technologies like AI, now is the time to get involved and experience why Filecoin is the ideal platform to help decentralize and support AI development. Whether you can join us at [FIL Bangkok](https://www.fil.org/events/fil-bangkok-2024), the premier community gathering of 2024; attend your [local orbit workshop](https://www.fil.org/orbit); or choose to work with the [organizations in the ecosystem](https://www.fil.org/ecosystem-explorer), we invite you to contribute to the network — and the future of the Internet.
+As the network progresses as core infrastructure for a wide range of applications across Web2, Web3, and emerging technologies like AI, now is the time to get involved and experience why Filecoin is the ideal platform to help decentralize and support AI development. Whether you can join us at [FIL Bangkok](/events/fil-bangkok-2024), the premier community gathering of 2024; attend your [local orbit workshop](/orbit); or choose to work with the [organizations in the ecosystem](/ecosystem-explorer), we invite you to contribute to the network — and the future of the Internet.
