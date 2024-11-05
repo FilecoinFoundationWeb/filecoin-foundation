@@ -7,25 +7,30 @@ import { getDatacapStats } from '../utils/getDatacapStats'
 import { AllocatorsTableWithFilters } from './AllocatorsTableWithFilters'
 import { NoDataAvailableMessage } from './NoDataAvailableMessage'
 
+async function fetchAllocatorsWithDatacap() {
+  const allocators = await getAllocators()
+  const datacapStats = await getDatacapStats()
+
+  const allocatorsWithDatacap = allocators.map((allocator) => {
+    const stats = datacapStats.find(
+      (stats) => stats.address === allocator.address,
+    )
+
+    return {
+      ...allocator,
+      remainingDatacap: convertDatacapToPiB(stats?.remainingDatacap),
+      allowance: convertDatacapToPiB(stats?.allowance),
+    }
+  })
+
+  return allocatorsWithDatacap
+}
+
 export async function AllocatorsTableSection() {
   try {
-    const allocators = await getAllocators()
+    const allocatorsWithDatacap = await fetchAllocatorsWithDatacap()
 
-    const datacapStats = await getDatacapStats()
-
-    const allocatorsWithDatacap = allocators.map((allocator) => {
-      const stats = datacapStats.find(
-        (stats) => stats.address === allocator.address,
-      )
-
-      return {
-        ...allocator,
-        remainingDatacap: convertDatacapToPiB(stats?.remainingDatacap),
-        allowance: convertDatacapToPiB(stats?.allowance),
-      }
-    })
-
-    if (!allocators.length) {
+    if (!allocatorsWithDatacap.length) {
       return <NoDataAvailableMessage />
     }
 
