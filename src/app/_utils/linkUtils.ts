@@ -7,5 +7,7 @@ export function isExternalLink(href: string) {
 }
 
 export function isInternalLink(href: Link) {
-  return href.startsWith('/') || href.startsWith('#')
+  return (
+    href.startsWith('/') || href.startsWith('#') || href.includes('fil.org')
+  )
 }
