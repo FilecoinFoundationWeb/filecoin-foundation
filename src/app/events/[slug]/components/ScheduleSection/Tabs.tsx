@@ -39,7 +39,7 @@ export function Tabs({ schedule }: TabsProps) {
     `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
   )
 
-  function handleIndexChange(index: number) {
+  function handleTabIndexChange(index: number) {
     setActiveTabIndex(index)
 
     if (isMounted() && isScreenBelowLg) {
@@ -52,7 +52,7 @@ export function Tabs({ schedule }: TabsProps) {
       ref={tabGroupRef}
       className="relative grid gap-6"
       selectedIndex={activeTabIndex}
-      onChange={handleIndexChange}
+      onChange={handleTabIndexChange}
     >
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
         {sortedDays.map((day) => (
