@@ -196,6 +196,9 @@ schedule:
           moderators:
             - name: Leah Callon-Butler
               company: Emfarsis
+          description: Sit down with Marta Belcher for a wrap up of the newest
+            developments in the ecosystem and a look into how Filecoin
+            Foundation plans to support the network in 2025.
         - title: Onboarding a Million Users to DePIN
           speakers:
             - name: Roman
@@ -278,6 +281,24 @@ schedule:
               company: Axelar
           start: 2024-11-11T15:57:00.000Z
           end: 2024-11-11T16:17:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
+        - title: Serving DePIN Builders with Modular + Performant Web Infrastructure
+          description: An exploration into the abridged history of modern web infra with a
+            specific focus on the recent crossover of DePIN, AI, and how Fleek
+            provides developers with  modular, decentralized infrastructure to
+            unlock the full potential of projects building with DePIN, AI, or
+            both. We’ll walk through each layer of the stack — from
+            decentralized storage to dynamic hosting, to DNS and beyond — while
+            also highlighting the significance of supporting bleeding-edge tech
+            like TEEs, in particular, Intel SGX. Understanding Fleek’s unique
+            approach to development of these core parts of the stack will enable
+            any builder to seamlessly deploy robust, decentralized applications
+            without compromising on performance, security, or cost.
+          speakers:
+            - name: Patrick Kearney
+              company: Fleek
+          start: 2024-11-11T14:47:00.000Z
+          end: 2024-11-11T15:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
