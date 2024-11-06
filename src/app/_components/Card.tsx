@@ -175,7 +175,7 @@ Card.Link = function Link({
   left = 'left-4',
 }: NonNullable<CardProps['cta']>) {
   const isExternal = isExternalLink(href)
-  const textElement = <span>{text}</span>
+  const textElement = <span key="text">{text}</span>
 
   const textIcon = icon
     ? [<Icon key="custom" component={icon} />, textElement]

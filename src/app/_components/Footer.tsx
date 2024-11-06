@@ -37,9 +37,9 @@ export function Footer() {
           <div key={title}>
             <span className="mb-4 block font-bold">{title}</span>
             <ul className="flex w-max flex-col gap-3">
-              {items.map((item) => (
-                <li key={item.href}>
-                  <TextLink href={item.href}>{item.label}</TextLink>
+              {items.map(({ href, label }) => (
+                <li key={href}>
+                  <TextLink href={href}>{label}</TextLink>
                 </li>
               ))}
             </ul>

@@ -5,17 +5,19 @@ import type { Route } from 'next'
 import { isInternalLink } from '@/utils/linkUtils'
 
 export type CustomLinkProps = {
-  href: string
+  href: string | Route
   children: React.ReactNode
-} & React.ComponentPropsWithoutRef<'a'>
+} & Omit<React.ComponentProps<'a'>, 'href'>
 
 export function CustomLink({
   href,
+  title,
   className,
   children,
   ...rest
 }: CustomLinkProps) {
   const isInternal = isInternalLink(href)
+  const rel = href.startsWith('mailto:') ? undefined : 'noopener noreferrer'
 
   if (isInternal) {
     return (
@@ -25,13 +27,11 @@ export function CustomLink({
     )
   }
 
-  const rel = href.startsWith('mailto:') ? undefined : 'noopener noreferrer'
-
   return (
     <a
-      href={href}
       rel={rel}
-      aria-label="Opens external link"
+      title={title || 'External link'}
+      href={href}
       className={className}
       {...rest}
     >

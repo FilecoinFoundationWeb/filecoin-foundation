@@ -13,10 +13,10 @@ export function ExternalLink({
 }: LinkProps) {
   return (
     <a
-      href={href as string}
       aria-label={ariaLabel}
-      className={className}
+      href={href}
       rel="noopener noreferrer"
+      className={className}
     >
       <div className="inline-flex items-center gap-1">
         <p className="font-bold">{label}</p>

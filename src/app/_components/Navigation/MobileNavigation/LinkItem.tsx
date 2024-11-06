@@ -21,21 +21,20 @@ export type LinkItemProps = {
 
 export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
   const isExternal = isExternalLink(href)
+  const containerStyles = clsx(
+    nested && 'ml-6',
+    isExternal && 'inline-flex items-center gap-1',
+  )
+  const linkStyles = clsx(
+    linkBaseStyles,
+    "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
+  )
 
   return (
-    <li
-      className={clsx(
-        'text-brand-300',
-        nested && 'ml-6',
-        isExternal && 'inline-flex items-center gap-1',
-      )}
-    >
+    <li className={containerStyles}>
       <CustomLink
         href={href}
-        className={clsx(
-          linkBaseStyles,
-          "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
-        )}
+        className={linkStyles}
         onClick={() => setOpen(false)}
       >
         {label}

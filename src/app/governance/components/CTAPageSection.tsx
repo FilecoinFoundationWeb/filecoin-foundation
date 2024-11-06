@@ -19,8 +19,7 @@ export function CTAPageSection() {
           <TextLink
             href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
           >
-            {FILECOIN_FOUNDATION_URLS.governance.social.slack.label} Slack
-            channel
+            {`${FILECOIN_FOUNDATION_URLS.governance.social.slack.label} Slack channel`}
           </TextLink>
           , or follow{' '}
           <TextLink
