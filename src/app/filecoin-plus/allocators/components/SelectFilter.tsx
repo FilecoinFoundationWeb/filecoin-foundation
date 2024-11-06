@@ -2,16 +2,14 @@
 
 import {
   Listbox as HeadlessUIListbox,
-  ListboxButton as HeadlessUIListboxButton,
   ListboxOptions as HeadlessUIListboxOptions,
   ListboxOption as HeadlessUIListboxOption,
 } from '@headlessui/react'
-import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { Check } from '@phosphor-icons/react/dist/ssr'
 import type { Column } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
-
-import { ListboxButton } from '@/_components/ListboxButton'
+import { ListboxButton } from '@/components/ListboxButton'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
 
@@ -47,13 +45,7 @@ export function SelectFilter({
 
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleOptionChange}>
-      {/* <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
-        <span className="truncate">{selectedOption.name}</span>
-        <Icon component={CaretDown} size={16} weight="bold" />
-      </HeadlessUIListboxButton> */}
-
       <ListboxButton truncateLabel label={selectedOption.name} />
-
       <HeadlessUIListboxOptions
         as="ul"
         anchor={{ to: 'bottom start', gap: 12 }}
