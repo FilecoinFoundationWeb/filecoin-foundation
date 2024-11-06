@@ -466,6 +466,10 @@ sponsors:
       image:
         src: /assets/images/glif-logo.webp
       website: https://www.glif.io/en
+    - website: https://ceramic.network/
+      name: "Ceramic "
+      image:
+        src: /assets/images/logo-ceramic-full-white-text-1-.webp
 seo:
   description: Join the Filecoin Community in Bangkok for discussions on
     decentralized AI, DePIN, and the data economy. Network, hear major
