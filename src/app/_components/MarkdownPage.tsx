@@ -22,7 +22,7 @@ export function MarkdownPage({
   const { header, seo } = attributes
 
   return (
-    <article>
+    <article className="prose">
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <header className="mb-6">
         <PageHeader.Title>{header.title}</PageHeader.Title>
