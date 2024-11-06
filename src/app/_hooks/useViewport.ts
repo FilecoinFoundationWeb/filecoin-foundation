@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 import theme from 'tailwindcss/defaultTheme'
 
@@ -18,7 +18,7 @@ export function useViewport() {
     setWidth(window.innerWidth)
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange)
 
     return () => {
