@@ -11,7 +11,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 type MarkdownPageProps = {
   attributes: PageAttributes
   body: string
-  children?: React.ReactNode
   generateStructuredData: (seo: SeoMetadata) => WithContext<Thing>
 }
 
@@ -19,8 +18,6 @@ export function MarkdownPage({
   attributes,
   body,
   generateStructuredData,
-
-  children,
 }: MarkdownPageProps) {
   const { header, seo } = attributes
 
@@ -31,7 +28,6 @@ export function MarkdownPage({
         <PageHeader.Title>{header.title}</PageHeader.Title>
       </header>
       <MarkdownContent>{body}</MarkdownContent>
-      {children}
     </article>
   )
 }
