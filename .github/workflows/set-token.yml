@@ -1,0 +1,27 @@
+name: Set Vercel ENV
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  set-env:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Set Vercel Environment Variable
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VARIABLE_VALUE: $GITHUB_AUTH_TOKEN
+        run: |
+          vercel env add GITHUB_AUTH_TOKEN $VARIABLE_VALUE --token $VERCEL_TOKEN --environment production
