@@ -46,6 +46,7 @@
     "next-plausible": "^3.12.1",
     "nuqs": "^2.1.1",
     "pluralize": "^8.0.0",
+    "pretty-bytes": "^6.1.1",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.2",
