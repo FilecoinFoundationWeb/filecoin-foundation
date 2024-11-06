@@ -12,7 +12,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { TextLink } from '@/components/TextLink'
 
 type MarkdownContentProps = {
-  children: string
+  children: Parameters<typeof ReactMarkdown>[0]['children']
 }
 
 const MarkdownImage: Components['img'] = ({ src, alt }) => {
