@@ -1,5 +1,3 @@
-import path from 'path'
-
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -8,16 +6,18 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/blog.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
+import { PageDataWithFeaturedEntrySchema } from '@/schemas/PageDataSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -50,24 +50,23 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
+const blogPageData = getPageMarkdownData({
+  slug: 'blog',
+  zodParser: PageDataWithFeaturedEntrySchema.parse,
+})
+
 const posts = getBlogPostsData()
 
 const sortOptions = getSortOptions(blogSortConfigs)
 
 const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
 
-const { featured_entry, seo } = attributes
-
-if (!featured_entry) {
-  throw new Error('Featured entry is undefined')
-}
-
-const featuredPostSlug = path.parse(featured_entry).name
+const featuredPostSlug = extractSlugFromFilename(blogPageData.featuredEntry)
 const featuredPost = getBlogPostData(featuredPostSlug)
 
 export const metadata = createMetadata({
   seo: {
-    ...seo,
+    ...blogPageData.seo,
     image: graphicsData.blog.data.src,
   },
   path: PATHS.BLOG.path,
@@ -75,10 +74,6 @@ export const metadata = createMetadata({
 })
 
 export default function Blog({ searchParams }: Props) {
-  if (!featuredPost) {
-    throw new Error('Featured post not found')
-  }
-
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: posts,
@@ -106,7 +101,7 @@ export default function Blog({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript
-        structuredData={generateStructuredData(posts, seo)}
+        structuredData={generateStructuredData(posts, blogPageData.seo)}
       />
       <PageHeader
         isFeatured

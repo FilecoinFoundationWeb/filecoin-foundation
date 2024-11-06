@@ -1,16 +1,18 @@
-import path from 'path'
-
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
-
-import { attributes as digestAttributes } from '@/content/pages/digest.md'
-import { attributes } from '@/content/pages/home.md'
 
 import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import {
+  GenericPageDataSchema,
+  HomePageDataSchema,
+} from '@/schemas/PageDataSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -28,23 +30,25 @@ import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosyste
 
 const ecosystemProjects = getEcosystemProjectsData()
 
-const { featured_ecosystem_projects, header, seo } = attributes
-const { header: digestHeader } = digestAttributes
+const homePageData = getPageMarkdownData({
+  slug: 'home',
+  zodParser: HomePageDataSchema.parse,
+})
 
-if (!featured_ecosystem_projects) {
-  throw new Error('Featured ecosystem projects are undefined')
-}
+const digestPageData = getPageMarkdownData({
+  slug: 'digest',
+  zodParser: GenericPageDataSchema.parse,
+})
 
-const featuredEcosystemProjectsSlugs = featured_ecosystem_projects.map(
-  (item) => path.parse(item).name,
-)
+const featuredEcosystemProjectsSlugs =
+  homePageData.featuredEcosystemProjects.map(extractSlugFromFilename)
 
 const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
 )
 
 export const metadata = createMetadata({
-  seo,
+  seo: homePageData.seo,
   path: PATHS.HOME.path,
   overrideDefaultTitle: true,
 })
@@ -55,8 +59,8 @@ export default function Home() {
       <PageLayout>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <PageHeader
-          title={header.title}
-          description={header.description}
+          title={homePageData.header.title}
+          description={homePageData.header.description}
           image={graphicsData.home}
           cta={[
             { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
@@ -114,9 +118,9 @@ export default function Home() {
 
         <PageSection
           kicker="Digest"
-          title={digestHeader.title}
+          title={digestPageData.header.title}
           image={graphicsData.digest}
-          description={digestHeader.description}
+          description={digestPageData.header.description}
           cta={{
             href: PATHS.DIGEST.path,
             text: 'Read Digest',

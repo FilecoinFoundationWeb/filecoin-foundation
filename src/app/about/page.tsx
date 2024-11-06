@@ -4,12 +4,13 @@ import { clsx } from 'clsx'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/about.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -26,11 +27,14 @@ import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const aboutPageData = getPageMarkdownData({
+  slug: 'about',
+  zodParser: GenericPageDataSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {
-    ...seo,
+    ...aboutPageData.seo,
     image: graphicsData.about.data.src,
   },
   path: PATHS.ABOUT.path,
@@ -40,10 +44,12 @@ export const metadata = createMetadata({
 export default function About() {
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript
+        structuredData={generateStructuredData(aboutPageData.seo)}
+      />
       <PageHeader
-        title={header.title}
-        description={header.description}
+        title={aboutPageData.header.title}
+        description={aboutPageData.header.description}
         image={graphicsData.about}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.annualReports['2023'],
