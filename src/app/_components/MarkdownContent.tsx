@@ -11,22 +11,33 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { TextLink } from '@/components/TextLink'
 
-type MarkdownContentProps = {
+export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']
 }
 
+const IMAGE_DIMENSIONS = {
+  containerWidth: 672,
+  aspectRatioHeight: Math.round(672 * (9 / 16)),
+} as const
+
 const MarkdownImage: Components['img'] = ({ src, alt }) => {
   const commonProps = {
+    priority: true,
     quality: 100,
-    width: 800,
-    height: 450,
-    sizes: buildImageSizeProp({ startSize: '100vw', md: '660px' }),
+    width: IMAGE_DIMENSIONS.containerWidth,
+    height: IMAGE_DIMENSIONS.aspectRatioHeight,
+    sizes: buildImageSizeProp({
+      startSize: '100vw',
+      md: `${IMAGE_DIMENSIONS.containerWidth}px`,
+    }),
   }
 
   if (!src) {
-    Sentry.captureException(
-      new Error('Invalid markdown: image is missing src attribute'),
-    )
+    const errorMessage = 'Invalid markdown: image is missing src attribute'
+
+    console.error(errorMessage)
+    Sentry.captureException(new Error(errorMessage))
+
     return (
       <Image
         {...commonProps}
@@ -40,12 +51,12 @@ const MarkdownImage: Components['img'] = ({ src, alt }) => {
 }
 
 const MarkdownLink: Components['a'] = ({ href, children }) => {
+  const errorMessage = `Invalid markdown: link is missing href attribute for text "${children}"`
+
   if (!href) {
-    Sentry.captureException(
-      new Error(
-        `Invalid markdown: link is missing href attribute for text "${children}"`,
-      ),
-    )
+    console.error(errorMessage)
+    Sentry.captureException(new Error(errorMessage))
+
     return <>{children}</>
   }
   return <TextLink href={href}>{children}</TextLink>

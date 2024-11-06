@@ -8,8 +8,8 @@ export function isExternalLink(href: string) {
   return !isInternalLink(href)
 }
 
+const DOMAIN_REGEX = new RegExp(`^(https?:\/\/)?(www\.)?${BASE_DOMAIN}`)
+
 export function isInternalLink(href: Link) {
-  return (
-    href.startsWith('/') || href.startsWith('#') || href.includes(BASE_DOMAIN)
-  )
+  return href.startsWith('/') || href.startsWith('#') || DOMAIN_REGEX.test(href)
 }
