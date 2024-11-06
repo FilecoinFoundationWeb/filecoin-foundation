@@ -7,12 +7,12 @@ category: ecosystem
 description: University blockchain organizations are invited to design and
   propose decentralized AI applications leveraging the Filecoin network.
 image:
-  src: /assets/images/08192024-decentralized-ai.webp
+  src: /assets/images/orbit-university-challenge.webp
 seo:
   twitter:
     card: summary
-  description: "University blockchain organizations are invited to design and
-    propose decentralized AI applications leveraging the Filecoin network."
+  description: University blockchain organizations are invited to design and
+    propose decentralized AI applications leveraging the Filecoin network.
 ---
 
 We are excited to announce that Filecoin Foundation is hosting our first-ever Orbit University Challenge, a competition for university blockchain organizations to propose and design decentralized AI applications leveraging the Filecoin network. This challenge explores how decentralized storage can power AI models, enhance privacy, and drive impactful, real-world solutions. The winning team will receive two all-expenses-paid tickets to ETH Denver 2025 to present their idea and network with the global blockchain community.
@@ -88,7 +88,7 @@ Looking for more inspiration? Check out [why leading AI projects choose Filecoin
 
 Let the brainstorming begin! Submit your ideas and join us in building the future of AI on Filecoin! 🧠 #DecentralizedAIChallenge
 
-Subject to rules below.
+**_Subject to rules below._**
 
 ### Rules
 
