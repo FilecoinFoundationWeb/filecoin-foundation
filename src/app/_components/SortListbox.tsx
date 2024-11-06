@@ -21,13 +21,13 @@ export function SortListbox({ sortId, onChange, options }: SortListboxProps) {
   const selectedOption =
     options.find((option) => option.id === sortId) || options[0]
 
-  const isBelowSm = useIsBelowBreakpoint('sm')
+  const isSmOrBelow = useIsBelowBreakpoint('sm')
 
   return (
     <Listbox value={sortId} onChange={onChange}>
       <ListboxButton
         prefixIcon={ArrowsDownUp}
-        isCompact={isBelowSm}
+        isCompact={isSmOrBelow}
         text={selectedOption.name}
       />
 

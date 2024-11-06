@@ -41,13 +41,13 @@ export function SelectSort({
     column.toggleSorting(isSortDesc)
   }
 
-  const isBelowSm = useIsBelowBreakpoint('sm')
+  const isSmOrBelow = useIsBelowBreakpoint('sm')
 
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
       <ListboxButton
         prefixIcon={ArrowsDownUp}
-        isCompact={isBelowSm}
+        isCompact={isSmOrBelow}
         text={selectedOption.name}
       />
       <HeadlessUIListboxOptions
