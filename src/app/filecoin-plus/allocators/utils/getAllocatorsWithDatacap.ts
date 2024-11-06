@@ -1,0 +1,27 @@
+import prettyBytes from 'pretty-bytes'
+
+import { getAllocators } from '../utils/getAllocators'
+import { getDatacapStats } from '../utils/getDatacapStats'
+
+export async function getAllocatorsWithDatacap() {
+  const allocators = await getAllocators()
+  const datacapStats = await getDatacapStats()
+
+  const allocatorsWithDatacap = allocators.map((allocator) => {
+    const stats = datacapStats.find(
+      (stats) => stats.address === allocator.address,
+    )
+
+    return {
+      ...allocator,
+      remainingDatacap: formatDatacap(stats?.remainingDatacap),
+      allowance: formatDatacap(stats?.allowance),
+    }
+  })
+
+  return allocatorsWithDatacap
+}
+
+function formatDatacap(value?: string) {
+  return value ? prettyBytes(Number(value)) : 'No data available'
+}
