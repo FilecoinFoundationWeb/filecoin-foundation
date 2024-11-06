@@ -45,8 +45,8 @@ interface CMSConfig {
   hasSubpaths?: boolean
 }
 
-const CONTENT_ROOT = 'src/content'
-const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
+export const CONTENT_ROOT = 'src/content'
+export const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 
 function createPathConfig(
   path: PathValues,
