@@ -30,7 +30,9 @@ const webpackRules = [
   {
     test: /\.md$/,
     loader: 'frontmatter-markdown-loader',
-    options: { mode: ['react-component'] },
+    options: {
+      mode: ['body', 'attributes', 'react-component'],
+    },
   },
   {
     test: /\.svg$/,
