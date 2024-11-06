@@ -32,7 +32,7 @@ export function MobileTableOfContents() {
         value={selectedOption}
         onChange={(value) => handleChange(value.id)}
       >
-        <ListboxButton truncateLabel label={selectedOption.name} />
+        <ListboxButton text={selectedOption.name} />
 
         <HeadlessUIListboxOptions
           as="ul"

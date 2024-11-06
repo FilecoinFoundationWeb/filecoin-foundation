@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import theme from 'tailwindcss/defaultTheme'
 
@@ -14,20 +14,19 @@ export function useViewport() {
     typeof window !== 'undefined' ? window.innerWidth : 0,
   )
 
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth)
-  }
-
-  useLayoutEffect(() => {
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const handleWindowSizeChange = () => setWidth(window.innerWidth)
     window.addEventListener('resize', handleWindowSizeChange)
+    handleWindowSizeChange()
 
     return () => {
       window.removeEventListener('resize', handleWindowSizeChange)
     }
   }, [])
 
-  const isMobile = width <= getBreakpointValue('md')
-  const isDesktop = width > getBreakpointValue('lg')
+  const isSmOrBelow = width <= getBreakpointValue('md')
+  const isLgOrAbove = width > getBreakpointValue('lg')
 
-  return { isMobile, isDesktop }
+  return { isSmOrBelow, isLgOrAbove }
 }

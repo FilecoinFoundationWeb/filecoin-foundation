@@ -33,7 +33,7 @@ export function CategoryListbox({
 
   return (
     <Listbox value={selected} onChange={onChange}>
-      <ListboxButton label="Category" />
+      <ListboxButton text="Category" />
       <ListboxOptions>
         {totalCategoryCount && (
           <ListboxOption

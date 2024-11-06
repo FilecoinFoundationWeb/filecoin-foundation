@@ -10,13 +10,9 @@ type ListboxButtonWrapperProps = {
 }
 
 type ListboxButtonProps = {
-  label: string
+  text: string
   prefixIcon?: IconProps['component']
-  truncateLabel?: boolean
-}
-
-type CompactListboxButtonProps = {
-  prefixIcon: IconProps['component']
+  isCompact?: boolean
 }
 
 function ListboxButtonWrapper({ children }: ListboxButtonWrapperProps) {
@@ -27,54 +23,24 @@ function ListboxButtonWrapper({ children }: ListboxButtonWrapperProps) {
   )
 }
 
-function ButtonContent({
-  label,
-  prefixIcon,
-  truncateLabel = false,
-}: Omit<ListboxButtonProps, 'truncateLabel'> & {
-  truncateLabel?: boolean
-}) {
-  const iconElement = prefixIcon && <Icon component={prefixIcon} />
-  const labelElement = (
-    <span className={truncateLabel ? 'truncate' : 'text-nowrap'}>{label}</span>
-  )
-
-  return truncateLabel ? (
-    <>
-      {iconElement}
-      {labelElement}
-    </>
-  ) : (
-    <div className="inline-flex items-center gap-2">
-      {iconElement}
-      {labelElement}
-    </div>
-  )
-}
-
 export function ListboxButton({
-  label,
+  text,
   prefixIcon,
-  truncateLabel = false,
+  isCompact,
 }: ListboxButtonProps) {
   return (
     <ListboxButtonWrapper>
-      <ButtonContent
-        label={label}
-        prefixIcon={prefixIcon}
-        truncateLabel={truncateLabel}
-      />
-      <Icon component={CaretDown} size={16} weight="bold" />
-    </ListboxButtonWrapper>
-  )
-}
+      <div
+        className={`${
+          isCompact ? 'hidden md:flex' : 'flex'
+        } w-full items-center justify-between gap-2 md:inline-flex`}
+      >
+        {prefixIcon && <Icon component={prefixIcon} />}
+        <span className="min-w-0 truncate">{text}</span>
+        <Icon component={CaretDown} size={16} weight="bold" />
+      </div>
 
-export function CompactListboxButton({
-  prefixIcon,
-}: CompactListboxButtonProps) {
-  return (
-    <ListboxButtonWrapper>
-      <div className="inline-flex items-center gap-2">
+      <div className={`${isCompact ? 'flex md:hidden' : 'hidden'}`}>
         <Icon component={prefixIcon ?? CaretDown} />
       </div>
     </ListboxButtonWrapper>

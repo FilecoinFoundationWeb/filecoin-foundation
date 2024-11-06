@@ -7,7 +7,7 @@ import { type SortOption, type ValidSortKey } from '@/types/sortTypes'
 
 import { useViewport } from '@/hooks/useViewport'
 
-import { CompactListboxButton, ListboxButton } from '@/components/ListboxButton'
+import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
@@ -21,15 +21,16 @@ export function SortListbox({ sortId, onChange, options }: SortListboxProps) {
   const selectedOption =
     options.find((option) => option.id === sortId) || options[0]
 
-  const { isMobile } = useViewport()
+  const { isSmOrBelow } = useViewport()
 
   return (
     <Listbox value={sortId} onChange={onChange}>
-      {isMobile ? (
-        <CompactListboxButton prefixIcon={ArrowsDownUp} />
-      ) : (
-        <ListboxButton prefixIcon={ArrowsDownUp} label={selectedOption.name} />
-      )}
+      <ListboxButton
+        prefixIcon={ArrowsDownUp}
+        isCompact={isSmOrBelow}
+        text={selectedOption.name}
+      />
+
       <ListboxOptions position="right">
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />

@@ -11,7 +11,7 @@ import type { Column, SortDirection } from '@tanstack/react-table'
 import { useViewport } from '@/hooks/useViewport'
 
 import { Icon } from '@/components/Icon'
-import { CompactListboxButton, ListboxButton } from '@/components/ListboxButton'
+import { ListboxButton } from '@/components/ListboxButton'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
 
@@ -32,7 +32,6 @@ export function SelectSort({
   defaultOption,
 }: SortFilterProps) {
   const currentSortId = column.getIsSorted()
-  const { isMobile } = useViewport()
 
   const selectedOption =
     options.find((option) => option.id === currentSortId) || defaultOption
@@ -42,14 +41,15 @@ export function SelectSort({
     column.toggleSorting(isSortDesc)
   }
 
+  const { isSmOrBelow } = useViewport()
+
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
-      {isMobile ? (
-        <CompactListboxButton prefixIcon={ArrowsDownUp} />
-      ) : (
-        <ListboxButton prefixIcon={ArrowsDownUp} label={selectedOption.name} />
-      )}
-
+      <ListboxButton
+        prefixIcon={ArrowsDownUp}
+        isCompact={isSmOrBelow}
+        text={selectedOption.name}
+      />
       <HeadlessUIListboxOptions
         as="ul"
         anchor={{ to: 'bottom end', gap: 12 }}
