@@ -116,8 +116,7 @@ schedule:
           end: 2024-11-08T20:00:00.000Z
     - events:
         - title: Doors Open
-          description:
-            "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
+          description: "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
           start: 2024-11-11T09:00:00.000Z
@@ -129,8 +128,7 @@ schedule:
           start: 2024-11-11T15:02:00.000Z
           end: 2024-11-11T15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            In the realms of DePIN and AI, storage isn’t the endgame — it’s
+          description: In the realms of DePIN and AI, storage isn’t the endgame — it’s
             just the beginning. The dynamic Filecoin ecosystem features an
             evolving world of L2s, tools for cross-chain applications, and a
             core protocol serving as the DePIN primitive for AI. Check out
@@ -141,11 +139,10 @@ schedule:
           speakers:
             - name: Sherry Chung
               company: Numbers Protocol
-          start: 2024-11-11T15:45:00.000Z
-          end: 2024-11-11T15:52:00.000Z
+          start: 2024-11-11T15:30:00.000Z
+          end: 2024-11-11T15:37:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            In a historic year of global elections, billions of voters face the
+          description: In a historic year of global elections, billions of voters face the
             near-certainty of encountering AI-generated misinformation impacting
             democratic processes. Numbers Protocol is deploying novel
             decentralized tools worldwide to establish provenance for digital
@@ -155,11 +152,10 @@ schedule:
           speakers:
             - name: Ted Liao
               company: Glitter Protocol
-          start: 2024-11-11T15:53:00.000Z
-          end: 2024-11-11T16:00:00.000Z
+          start: 2024-11-11T15:38:00.000Z
+          end: 2024-11-11T15:45:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            Ethereum’s future lies in expanding beyond financial use cases by
+          description: Ethereum’s future lies in expanding beyond financial use cases by
             enabling large-scale, data-intensive applications across industries
             like AI, media, healthcare, and scientific research. Glitter
             Protocol’s CCIP serves as a data bridge between Filecoin and
@@ -170,11 +166,10 @@ schedule:
           speakers:
             - name: Stefaan Vervaet
               company: Akave.ai
-          start: 2024-11-11T16:01:00.000Z
-          end: 2024-11-11T16:08:00.000Z
+          start: 2024-11-11T15:46:00.000Z
+          end: 2024-11-11T15:53:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-          description:
-            Meet a data onboarding solution making it easier than ever for
+          description: Meet a data onboarding solution making it easier than ever for
             enterprises and other data-intensive industries to harness the
             potential of their data. Akave is an L2 and spin-off from Protocol
             Labs that enables DePIN and decentralized AI networks with a hot
@@ -188,16 +183,15 @@ schedule:
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:17:00.000Z
           end: 2024-11-11T16:31:00.000Z
-          description:
-            Find out how Storacha is adding spice to the Filecoin network by
+          description: Find out how Storacha is adding spice to the Filecoin network by
             unlocking hot object storage and making it easy to onboard small or
             large data onto Filecoin!
         - title: Fireside Chat with FF President Marta Belcher
           speakers:
             - name: Marta Belcher
               company: Filecoin Foundation
-          start: 2024-11-11T16:42:00.000Z
-          end: 2024-11-11T16:57:00.000Z
+          start: 2024-11-11T16:40:00.000Z
+          end: 2024-11-11T16:55:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           moderators:
             - name: Leah Callon-Butler
@@ -209,8 +203,8 @@ schedule:
           speakers:
             - name: Roman
               company: GhostDrive
-          start: 2024-11-11T15:29:00.000Z
-          end: 2024-11-11T15:36:00.000Z
+          start: 2024-11-11T15:13:00.000Z
+          end: 2024-11-11T15:20:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - location: "Samyan Mitrtown: Main Hall"
           title: "Filecoin Nexus: Decentralized Tools for Environmental Change"
@@ -226,8 +220,7 @@ schedule:
               company: GainForest
           start: 2024-11-11T12:00:00.000Z
           end: 2024-11-11T12:30:00.000Z
-          description:
-            The current system for addressing the climate crisis is inefficient
+          description: The current system for addressing the climate crisis is inefficient
             and ineffective, with ESG metrics difficult to track and valuable
             data locked up in silos. These projects are bringing blockchain
             technology and AI together to introduce transparency and
@@ -235,14 +228,12 @@ schedule:
             available and authenticating energy and environmental claims,
             they’re cultivating a world where we’re accountable for our impact.
         - title: GhostDrive Workshop and Demo
-          start: 2024-11-11T10:00:00.000Z
+          start: 2024-11-11T11:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title:
-            "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
+        - title: "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
             Infra"
-          description:
-            "Industry leaders at the intersection of DePIN and AI break down
+          description: "Industry leaders at the intersection of DePIN and AI break down
             the evolving tech stack layer by layer — from decentralized storage
             and compute to models, agents, and real-world data integrations.
             Critical components for this converging market come together to
@@ -261,11 +252,10 @@ schedule:
             - name: Jaden Yan
               company: Aethir
           location: "Samyan Mitrtown: Main Hall"
-          start: 2024-11-11T14:02:00.000Z
+          start: 2024-11-11T14:00:00.000Z
           end: 1904-11-11T14:30:00.000Z
         - title: "Announcement: Driving Onchain Activity with a FIL-Backed Stablecoin"
-          description:
-            Backed by FIL, USDFC is more than just a stablecoin. It’s a
+          description: Backed by FIL, USDFC is more than just a stablecoin. It’s a
             catalyst for the next level of onchain activity for the Filecoin
             network. This new addition to Filecoin’s storage marketplace
             provides a new kind of stability and flexibility for clients and
@@ -274,8 +264,8 @@ schedule:
           speakers:
             - name: Masa Kikuchi
               company: "Secured Finance "
-          start: 2024-11-11T16:34:00.000Z
-          end: 2024-11-11T16:41:00.000Z
+          start: 2024-11-11T16:32:00.000Z
+          end: 2024-11-11T16:39:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: "Fireside Chat: How Filecoin and Axelar are Building to Scale Web3"
           description: >
@@ -289,12 +279,11 @@ schedule:
               company: FilOZ
             - name: Georgios Vlacho
               company: Axelar
-          start: 2024-11-11T15:57:00.000Z
-          end: 2024-11-11T16:17:00.000Z
+          start: 2024-11-11T15:55:00.000Z
+          end: 2024-11-11T16:15:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: Serving DePIN Builders with Modular + Performant Web Infrastructure
-          description:
-            An exploration into the abridged history of modern web infra with a
+          description: An exploration into the abridged history of modern web infra with a
             specific focus on the recent crossover of DePIN, AI, and how Fleek
             provides developers with  modular, decentralized infrastructure to
             unlock the full potential of projects building with DePIN, AI, or
@@ -310,6 +299,16 @@ schedule:
               company: Fleek
           start: 2024-11-11T14:47:00.000Z
           end: 2024-11-11T15:00:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
+        - title: "Filecoin Nexus: Revolutionizing Healthcare Data Sovereignty: Hippocrat
+            Data Protocol"
+          description: Learn how Hippocrat is empowering healthcare data sovereignty
+            through zero-knowledge proofs and decentralized storage.
+          speakers:
+            - name: Ethan Chae
+              company: Hippocrat
+          start: 2024-11-11T14:34:00.000Z
+          end: 2024-11-11T14:46:00.000Z
           location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
@@ -478,7 +477,7 @@ sponsors:
         src: /assets/images/glif-logo.webp
       website: https://www.glif.io/en
     - website: https://ceramic.network/
-      name: "Ceramic"
+      name: Ceramic
       image:
         src: /assets/images/ceramic-logo.webp
 seo:
