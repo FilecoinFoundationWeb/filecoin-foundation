@@ -1,12 +1,10 @@
 import { PATHS } from '@/constants/paths'
 
-import {
-  attributes,
-  react as Content,
-} from '@/content/pages/employee-privacy-policy.md'
+import { attributes, body } from '@/content/pages/employee-privacy-policy.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -25,12 +23,10 @@ export default function EmployeePrivacyPolicy() {
   return (
     <article>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <header>
+      <header className="mb-6">
         <PageHeader.Title>{title}</PageHeader.Title>
       </header>
-      <section className="prose mt-6">
-        <Content />
-      </section>
+      <MarkdownContent>{body}</MarkdownContent>
     </article>
   )
 }

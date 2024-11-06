@@ -2,11 +2,12 @@ import { PATHS } from '@/constants/paths'
 
 import {
   attributes,
-  react as Content,
+  body,
 } from '@/content/pages/security/coordinated-disclosure-policy.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
@@ -26,12 +27,10 @@ export default function CoordinatedDisclosurePolicy() {
   return (
     <article>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <header>
+      <header className="mb-6">
         <PageHeader.Title>{title}</PageHeader.Title>
       </header>
-      <section className="prose mt-6">
-        <Content />
-      </section>
+      <MarkdownContent>{body}</MarkdownContent>
     </article>
   )
 }
