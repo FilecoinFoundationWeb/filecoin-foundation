@@ -1,6 +1,7 @@
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import PlausibleProvider from 'next-plausible'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import '@/styles/globals.scss'
 
@@ -24,11 +25,13 @@ export type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <PlausibleProvider domain="fil.org">
-      <SiteLayout>
-        {children}
-        <SpeedInsights />
-      </SiteLayout>
-    </PlausibleProvider>
+    <NuqsAdapter>
+      <PlausibleProvider domain="fil.org">
+        <SiteLayout>
+          {children}
+          <SpeedInsights />
+        </SiteLayout>
+      </PlausibleProvider>
+    </NuqsAdapter>
   )
 }
