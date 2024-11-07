@@ -51,9 +51,9 @@ const MarkdownImage: Components['img'] = ({ src, alt }) => {
 }
 
 const MarkdownLink: Components['a'] = ({ href, children }) => {
-  const errorMessage = `Invalid markdown: link is missing href attribute for text "${children}"`
-
   if (!href) {
+    const errorMessage = `Invalid markdown: link is missing href attribute for text "${children}"`
+
     console.error(errorMessage)
     Sentry.captureException(new Error(errorMessage))
 
