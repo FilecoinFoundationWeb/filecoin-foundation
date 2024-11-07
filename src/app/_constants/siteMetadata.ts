@@ -1,6 +1,7 @@
 import { PATHS } from './paths'
 
-const BASE_URL = 'https://fil.org'
+const BASE_DOMAIN = 'fil.org'
+const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
 const FIL_PLUS_URLS = {
@@ -172,6 +173,7 @@ const FILECOIN_URLS = {
 }
 
 export {
+  BASE_DOMAIN,
   BASE_URL,
   FIL_PLUS_URLS,
   FILECOIN_DOCS_URLS,

@@ -23,7 +23,7 @@ This month on October 15, we’re thrilled to celebrate the anniversary of Filec
 
 Today, we say a huge thank you to the incredible Filecoin community of builders, storage providers, data clients, and all those who are helping shape the future of the web.
 
-To catch up on the biggest developments taking place across this growing ecosystem, Filecoin Foundation is launching a [Quarterly Update](https://www.fil.org/blog/filecoin-foundation-quarterly-update-october-2024) for insights into the latest trends, network developments, and much more.
+To catch up on the biggest developments taking place across this growing ecosystem, Filecoin Foundation is launching a [Quarterly Update](/blog/filecoin-foundation-quarterly-update-october-2024) for insights into the latest trends, network developments, and much more.
 
 Let’s take a look at the highlights from the past year and check out what’s in store for the year ahead:
 
@@ -47,7 +47,7 @@ Filecoin's ZK Storage is securing the entire Solana ledger, making all of Solana
 
 ## Unlocking Seamless Data Onboarding Solutions
 
-From easy-to-use mobile apps to enterprise-grade platforms, the Filecoin ecosystem now offers a range of tools for different storage needs. [Lighthouse](https://www.fil.org/ecosystem-explorer/lighthouse) offers a perpetual data storage solution built on the Filecoin network; [CIDgravity’s](https://www.fil.org/ecosystem-explorer/cidgravity) novel storage optimization focuses on deal matching and tracking while enabling direct data access between clients and storage providers; and [Ghost Drive](https://ghostdrive.com/) offers data redundancy and security through encryption and features like data tokenization for efficient and secure digital asset management. Each is scaling data onboarding to the Filecoin network, making Filecoin a top choice for the benefits of decentralized storage.
+From easy-to-use mobile apps to enterprise-grade platforms, the Filecoin ecosystem now offers a range of tools for different storage needs. [Lighthouse](/ecosystem-explorer/lighthouse) offers a perpetual data storage solution built on the Filecoin network; [CIDgravity’s](/ecosystem-explorer/cidgravity) novel storage optimization focuses on deal matching and tracking while enabling direct data access between clients and storage providers; and [Ghost Drive](https://ghostdrive.com/) offers data redundancy and security through encryption and features like data tokenization for efficient and secure digital asset management. Each is scaling data onboarding to the Filecoin network, making Filecoin a top choice for the benefits of decentralized storage.
 
 ![](/assets/images/basin-storacha-akave.webp)
 
@@ -61,7 +61,7 @@ Are you looking for the right storage solution to scale your business? Reach out
 
 ## Decentralizing AI
 
-A growing number of AI projects are joining the Filecoin network to provide data provenance, authenticity, and verifiability in the high-frequency information age. [SingularityNET](https://singularitynet.io/), [Theoriq](https://www.theoriq.ai/), [Bagel](https://www.bagel.net/), [Nuklai](https://www.nukl.ai/), and [Aethir](https://aethir.com/) are some of the organizations using the [Filecoin network ](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai)as an alternative to centralized models. Filecoin promotes decentralization, verifiability and transparency, addressing the pressing need for open AI systems and promoting the resilience of digital infrastructure.
+A growing number of AI projects are joining the Filecoin network to provide data provenance, authenticity, and verifiability in the high-frequency information age. [SingularityNET](https://singularitynet.io/), [Theoriq](https://www.theoriq.ai/), [Bagel](https://www.bagel.net/), [Nuklai](https://www.nukl.ai/), and [Aethir](https://aethir.com/) are some of the organizations using the [Filecoin network ](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai)as an alternative to centralized models. Filecoin promotes decentralization, verifiability and transparency, addressing the pressing need for open AI systems and promoting the resilience of digital infrastructure.
 
 ![](/assets/images/08282024-fastfinality.webp)
 
@@ -77,7 +77,7 @@ Filecoin Virtual Machine (FVM) brings onchain programmability and smart contract
 
 ## Redefining the Power of Compute
 
-Thanks to our network of more than 2,100 storage provider systems globally contributing more than 4.5 exbibytes of raw storage capacity to the network, Filecoin is the leading protocol for decentralized storage and is at the forefront of enabling decentralized compute. Projects like [Bacalhau](https://fil.org/ecosystem-projects/bacalhau/), [Ramo](https://www.ramo.io/), [Fluence](https://fil.org/ecosystem-projects/fluence/), and [Bagel](https://www.fil.org/ecosystem-explorer/bagel) are just some of the teams using the FVM to broker computational resources, incentivize compute execution, and distribute workloads across available storage providers, offering a compelling alternative to centralized models.
+Thanks to our network of more than 2,100 storage provider systems globally contributing more than 4.5 exbibytes of raw storage capacity to the network, Filecoin is the leading protocol for decentralized storage and is at the forefront of enabling decentralized compute. Projects like [Bacalhau](https://fil.org/ecosystem-projects/bacalhau/), [Ramo](https://www.ramo.io/), [Fluence](https://fil.org/ecosystem-projects/fluence/), and [Bagel](/ecosystem-explorer/bagel) are just some of the teams using the FVM to broker computational resources, incentivize compute execution, and distribute workloads across available storage providers, offering a compelling alternative to centralized models.
 
 ![](/assets/images/dataclients.webp)
 
@@ -87,7 +87,7 @@ The Filecoin network provides the key storage infrastructure for better data acc
 
 ## Accelerating Enterprise Adoption
 
-The Filecoin network is equipped to serve the most pressing storage challenges from organizations across a variety of industries. [DeStor](https://www.fil.org/ecosystem-explorer/destor), a leading provider of decentralized storage solutions, is helping businesses explore the transformative potential of decentralized storage by making Web3 accessible through user-friendly, enterprise-grade decentralized solutions.
+The Filecoin network is equipped to serve the most pressing storage challenges from organizations across a variety of industries. [DeStor](/ecosystem-explorer/destor), a leading provider of decentralized storage solutions, is helping businesses explore the transformative potential of decentralized storage by making Web3 accessible through user-friendly, enterprise-grade decentralized solutions.
 
 Over the past several months, DeStor has added more partners to its [S3 Cloud portfolio](https://filecoin.io/blog/posts/expanding-the-decentralized-frontier-destors-s3-cloud-solutions-and-new-partnerships/), announcing collaborations with [DCENT](https://destor.com/resources/blog/introducing-destor-s3-cloud-solutions-featuring-dcent), [Future Tech Holdings](https://destor.com/resources/blog/welcoming-future-tech-holdings-to-the-destor-s3-cloud-family), [Akave](https://destor.com/resources/blog/welcoming-akave-to-the-destor-family-a-new-chapter-in-decentralized-storage), and [Seal Storage](https://destor.com/resources/blog/seal-storage-joins-destors-s3-cloud-solutions-portfolio), positioning it to spearhead decentralized cloud storage on the Filecoin Network.
 
@@ -99,10 +99,10 @@ Filecoin Foundation is committed to creating more pathways for Web2 companies to
 
 And the network will continue to grow thanks to the thousands of contributors around the world who are helping to make Filecoin an indispensable layer of the next generation of the web. Looking for more ways to get involved?
 
-[Attend a Filecoin event](https://fil.org/events/). [Become a storage provider](https://destor.com/destor-network/overview?utm_campaign=sp-nav&utm_content=en-us&utm_medium=referral&utm_source=filecoin). Apply for a [dev grant](https://www.fil.org/grants). Join the [governance conversation](https://www.fil.org/governance). Sign up for the [Orbit ambassador program](https://www.fil.org/orbit) and help build communities of Filecoin supporters in your backyard. There are dozens of ways to support the growth of the Filecoin ecosystem.
+[Attend a Filecoin event](https://fil.org/events/). [Become a storage provider](https://destor.com/destor-network/overview?utm_campaign=sp-nav&utm_content=en-us&utm_medium=referral&utm_source=filecoin). Apply for a [dev grant](/grants). Join the [governance conversation](/governance). Sign up for the [Orbit ambassador program](/orbit) and help build communities of Filecoin supporters in your backyard. There are dozens of ways to support the growth of the Filecoin ecosystem.
 
 ## Thank You
 
-The Filecoin network moves fast. Join us at upcoming Filecoin events by [subscribing to our event calendar](https://lu.ma/user/usr-gg4kgr2WJSdk6UG), or attending your [local orbit workshop](https://www.fil.org/orbit) to hear about the latest developments throughout the ecosystem and connect with a vibrant community building the next generation of the web.
+The Filecoin network moves fast. Join us at upcoming Filecoin events by [subscribing to our event calendar](https://lu.ma/user/usr-gg4kgr2WJSdk6UG), or attending your [local orbit workshop](/orbit) to hear about the latest developments throughout the ecosystem and connect with a vibrant community building the next generation of the web.
 
 As we look back and celebrate the leaps forward the network has taken since Mainnet launch four years ago today, we again say a big thank you to all the people who have contributed to the Filecoin network in the last year!

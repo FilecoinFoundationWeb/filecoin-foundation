@@ -86,7 +86,7 @@ The LINUSS satellite is designed to be updatable, and is described as “[the si
 
 ![A satellite orbiting near Earth alongside a floating red toaster. Another satellite is visible in the background. The phrase "Yeah, pretty close I guess" is written in white text next to the Earth.](/assets/images/space.webp "Satellite Near Earth with Toaste")
 
-You can read more about the mission in the [official Filecoin Foundation announcement](https://www.fil.org/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space).
+You can read more about the mission in the [official Filecoin Foundation announcement](/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space).
 
 ## Distant Horizons?
 
