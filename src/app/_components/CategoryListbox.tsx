@@ -1,8 +1,9 @@
 'use client'
 
+import { useEffect } from 'react'
+
 import {
   Listbox,
-  ListboxOption,
   ListboxOptions,
   ListboxOption as HeadlessUIListboxOption,
   ListboxOptions as HeadlessUIListboxOptions,
@@ -22,7 +23,7 @@ import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 import { ListboxOptionText } from '@/components/Form/FormListbox/ListboxOptionText'
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
-// import { ListboxOption } from '@/components/ListboxOption'
+import { ListboxOption } from '@/components/ListboxOption'
 // import { ListboxOptions } from '@/components/ListboxOptions'
 
 type CategoryListboxProps = {
@@ -32,6 +33,11 @@ type CategoryListboxProps = {
   onChange: (selected: CategoryId) => void
 }
 
+export type OptionWithCategoryCount = {
+  options: Array<CategoryOption>
+  counts?: CategoryCounts
+}
+
 export function CategoryListbox({
   selected,
   options,
@@ -39,11 +45,7 @@ export function CategoryListbox({
   onChange,
 }: CategoryListboxProps) {
   const totalCategoryCount = getTotalCategoryCount(counts)
-
-  const optionsWithCounts = options.map((option) => ({
-    ...option,
-    count: counts?.[option.id] || 0,
-  }))
+  const optionsWithCounts = getOptionsWithCounts({ options, counts })
 
   return (
     <Listbox value={selected} onChange={onChange}>
@@ -53,40 +55,28 @@ export function CategoryListbox({
       </ListboxButton>
       <HeadlessUIListboxOptions
         as="ul"
-        className="absolute z-10 mt-2 max-h-96 min-w-40 overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
+        className="absolute z-10 mt-2 max-h-96 overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
       >
         {totalCategoryCount && (
-          <HeadlessUIListboxOption
-            as="li"
-            value={DEFAULT_CATEGORY}
-            className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500"
-          >
-            <ListboxOptionText
-              option={{
-                id: DEFAULT_CATEGORY,
-                name: DEFAULT_CATEGORY,
-                count: totalCategoryCount.All,
-              }}
-            />
-            <span className="mb-px [.group:not([data-selected])_&]:hidden">
-              <Icon component={Check} size={20} />
-            </span>
-          </HeadlessUIListboxOption>
+          <ListboxOption
+            option={{
+              id: DEFAULT_CATEGORY,
+              name: DEFAULT_CATEGORY,
+              count: totalCategoryCount.All,
+            }}
+          />
         )}
         {optionsWithCounts.map((option) => (
-          <HeadlessUIListboxOption
-            key={option.id}
-            as="li"
-            value={option.id}
-            className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500"
-          >
-            <ListboxOptionText option={option} />
-            <span className="mb-px [.group:not([data-selected])_&]:hidden">
-              <Icon component={Check} size={20} />
-            </span>
-          </HeadlessUIListboxOption>
+          <ListboxOption key={option.id} option={option} />
         ))}
       </HeadlessUIListboxOptions>
     </Listbox>
   )
+}
+
+function getOptionsWithCounts({ options, counts }: OptionWithCategoryCount) {
+  return options.map((option) => ({
+    ...option,
+    ...(counts && { count: counts[option.id] || 0 }),
+  }))
 }
