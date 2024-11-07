@@ -31,18 +31,10 @@ export const allocatorsTableColumnsData = [
   columnHelper.accessor('remainingDatacap', {
     header: 'Remaining Datacap',
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-44',
-    },
-    filterFn: 'includesString',
   }),
   columnHelper.accessor('allowance', {
     header: 'Used Datacap',
     cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-44',
-    },
-    filterFn: 'includesString',
   }),
   columnHelper.accessor('application.required_replicas', {
     header: () => (
