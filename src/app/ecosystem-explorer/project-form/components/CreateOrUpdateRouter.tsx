@@ -6,7 +6,7 @@ import { FormRadioGroup } from '@/components/Form/FormRadioGroup'
 
 import { EcosystemProjectCreateForm } from './EcosystemProjectCreateForm'
 import { FormSection } from './FormSection'
-import { SelectProjectToUpdate } from './SelectProjectToUpdate'
+import { ProjectSelector } from './ProjectSelector'
 
 const URL_QUERY_KEY = 'action'
 
@@ -37,7 +37,7 @@ export function CreateOrUpdateRouter() {
       </FormSection>
 
       {action === 'create' && <EcosystemProjectCreateForm />}
-      {action === 'update' && <SelectProjectToUpdate />}
+      {action === 'update' && <ProjectSelector />}
     </>
   )
 }

@@ -21,7 +21,7 @@ import { Loader } from './Loader'
 
 const URL_QUERY_KEY = 'project'
 
-export function SelectProjectToUpdate() {
+export function ProjectSelector() {
   const [projectSlug, setProjectSlug] = useQueryState(URL_QUERY_KEY)
 
   const { data: projects, error } = useSWR(
