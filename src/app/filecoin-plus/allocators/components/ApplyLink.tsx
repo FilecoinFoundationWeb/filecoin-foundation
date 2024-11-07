@@ -3,11 +3,13 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 type ApplyLinkProps = {
-  link: NonNullable<Allocator['application']['allocation_bookkeeping']>
-  name: Allocator['name']
+  link: NonNullable<
+    AllocatorWithDatacap['application']['allocation_bookkeeping']
+  >
+  name: AllocatorWithDatacap['name']
 }
 
 export function ApplyLink({ link, name }: ApplyLinkProps) {

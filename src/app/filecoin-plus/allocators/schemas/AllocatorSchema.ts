@@ -49,7 +49,6 @@ export const AllocatorWithDatacapSchema = AllocatorSchema.extend(
   DatacapSchema.shape,
 )
 
-export type Allocator = z.infer<typeof AllocatorSchema>
 export type AllocatorFileMetaDataBase = z.infer<
   typeof AllocatorFileMetaDataBaseSchema
 >
