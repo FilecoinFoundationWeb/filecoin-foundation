@@ -17,7 +17,7 @@ seo:
 
 The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by ND Labs and supported by Filecoin Foundation.
 
-The Filecoin ecosystem was on full display at [FIL Hong Kong](https://www.fil.org/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs and supported by Filecoin Foundation. Hundreds of attendees from around the world gathered in the burgeoning Web3 hub of Hong Kong to explore the latest developments in the Filecoin ecosystem and envision the future of decentralized storage.
+The Filecoin ecosystem was on full display at [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs and supported by Filecoin Foundation. Hundreds of attendees from around the world gathered in the burgeoning Web3 hub of Hong Kong to explore the latest developments in the Filecoin ecosystem and envision the future of decentralized storage.
 
 Spread across three days of talks and presentations, reps from many exciting projects built on the Filecoin network came together to share their latest developments in decentralized AI tech, decentralized physical infrastructure networks (DePIN), and Filecoin Virtual Machine (FVM) projects.
 

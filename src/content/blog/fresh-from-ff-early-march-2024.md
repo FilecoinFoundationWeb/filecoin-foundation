@@ -70,7 +70,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 - The Filecoin Orbit team announced an ETHDenver bounty to build an app to track and reward the activities of the Filecoin Orbit ambassador program in the form of NFT “achievements” and associated ERC20 token reward points. The aim of the bounty is to build an app that creates a standard rewards system for the Orbit program on FVM.
 - Don’t miss our upcoming community events!
 
-  - 4/5-4/8 - [FIL Hong Kong](https://www.fil.org/events/fil-hong-kong-hosted-by-ndlabs) hosted by NDLabs alongside Hong Kong Web3 Festival
+  - 4/5-4/8 - [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs) hosted by NDLabs alongside Hong Kong Web3 Festival
   - 4/13-4/14 - [Funding the Commons SF](https://fil.org/events/funding-the-commons), sponsored by FF
   - 4/16 - 4/19 - Token2049 Dubai Filecoin Orbit Meetup Event
 
