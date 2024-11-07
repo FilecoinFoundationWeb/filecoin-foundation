@@ -2,7 +2,7 @@
 
 import useSWR from 'swr'
 
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 import { getInitialFormData } from '../actions/getInitialFormData'
 import { SWR_KEYS } from '../constants'

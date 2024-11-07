@@ -1,6 +1,6 @@
 'use server'
 
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 import type { EcosystemProjectFormDataWithoutLogo } from '../schema/EcosystemProjectFormSchema'
 import { formatYoutubeUrl } from '../utils/formatYoutubeUrl'

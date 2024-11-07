@@ -1,4 +1,4 @@
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 export type Timestamps = {
   createdOn: EcosystemProject['createdOn']

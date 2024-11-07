@@ -1,4 +1,4 @@
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 export const MAX_FILE_SIZE_IN_BYTES = 100_000
 export const BRIEF_CHARACTER_LIMIT = 160

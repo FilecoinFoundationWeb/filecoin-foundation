@@ -1,4 +1,4 @@
-import type { EcosystemProject } from '@/types/ecosystemProjectType'
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 export function getProjectOptions(projects: Array<EcosystemProject>) {
   return projects.map((project) => ({
