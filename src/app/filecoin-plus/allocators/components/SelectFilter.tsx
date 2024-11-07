@@ -5,7 +5,7 @@ import {
   ListboxButton as HeadlessUIListboxButton,
   ListboxOptions as HeadlessUIListboxOptions,
 } from '@headlessui/react'
-import { CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import type { Column } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
@@ -45,8 +45,10 @@ export function SelectFilter({
 
   return (
     <HeadlessUIListbox
-      value={selectedOption}
-      onChange={(option: FilterOption) => handleOptionChange(option.id)}
+      value={currentFilterId ?? DEFAULT_FILTER_ID}
+      onChange={(selectedOptionId: FilterOption['id']) =>
+        handleOptionChange(selectedOptionId)
+      }
     >
       <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
         <span className="truncate">{selectedOption.name}</span>
@@ -65,11 +67,10 @@ export function SelectFilter({
     </HeadlessUIListbox>
   )
 
-  function handleOptionChange(newOption: FilterOption['id']) {
-    if (newOption === DEFAULT_FILTER_ID) {
-      resetFilter()
-    }
-    column.setFilterValue(newOption)
+  function handleOptionChange(selectedOptionId: FilterOption['id']) {
+    selectedOptionId === DEFAULT_FILTER_ID
+      ? resetFilter()
+      : column.setFilterValue(selectedOptionId)
   }
 
   function resetFilter() {
