@@ -16,9 +16,11 @@ type ExcludedHeadlessUIProps =
   | 'multiple'
   | 'invalid'
 
+type FileExtension = `.${string}`
+
 export type FormFileInputProps = {
   file: File | null
-  accept: Array<`.${string}`>
+  accept: Array<FileExtension> | ReadonlyArray<FileExtension>
   maxSize: number
   description?: string | React.ReactNode
   onChange: (file: File | null) => void

@@ -1,6 +1,9 @@
 import path from 'path'
 
+import { findOrThrow } from '@/utils/findOrThrow'
+
 import type { EcosystemProject } from '../../types/ecosystemProjectType'
+import { ALLOWED_IMAGE_FORMATS } from '../constants'
 import type { EcosystemProjectFormLogoData } from '../schema/EcosystemProjectFormSchema'
 
 export type FormattedLogo = Awaited<ReturnType<typeof formatLogo>>
@@ -37,22 +40,13 @@ function convertToBase64(file: File): Promise<string> {
   })
 }
 
-const ALLOWED_IMAGE_FORMATS = ['png', 'jpg', 'jpeg', 'svg', 'webp'] as const
-
 function getFileFormat(fileName: string) {
-  const fileExtension = path.extname(fileName).slice(1)
+  const extensionWithDot = path.extname(fileName)
 
-  if (!fileExtension) {
-    throw new Error('File extension not found')
-  }
-
-  const validFileExtension = ALLOWED_IMAGE_FORMATS.find(
-    (format) => format === fileExtension,
+  const validFileExtension = findOrThrow(
+    ALLOWED_IMAGE_FORMATS,
+    (format) => format === extensionWithDot,
   )
 
-  if (!validFileExtension) {
-    throw new Error('Invalid file extension')
-  }
-
-  return validFileExtension
+  return validFileExtension.slice(1)
 }
