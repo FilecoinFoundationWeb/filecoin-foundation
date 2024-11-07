@@ -4,15 +4,13 @@ import {
   Listbox,
   ListboxOptions as HeadlessUIListboxOptions,
 } from '@headlessui/react'
-import { ArrowsDownUp, CaretDown, Check } from '@phosphor-icons/react/dist/ssr'
+import { ArrowsDownUp, CaretDown } from '@phosphor-icons/react/dist/ssr'
 
 import { type SortOption, type ValidSortKey } from '@/types/sortTypes'
 
-import { ListboxOptionText } from '@/components/Form/FormListbox/ListboxOptionText'
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
-// import { ListboxOptions } from '@/components/ListboxOptions'
 
 type SortListboxProps = {
   sortId: ValidSortKey

@@ -1,14 +1,10 @@
 'use client'
 
-import { useEffect } from 'react'
-
 import {
   Listbox,
-  ListboxOptions,
-  ListboxOption as HeadlessUIListboxOption,
   ListboxOptions as HeadlessUIListboxOptions,
 } from '@headlessui/react'
-import { Check, CaretDown } from '@phosphor-icons/react/dist/ssr'
+import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
 import {
   type CategoryCounts,
@@ -20,11 +16,9 @@ import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-import { ListboxOptionText } from '@/components/Form/FormListbox/ListboxOptionText'
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
-// import { ListboxOptions } from '@/components/ListboxOptions'
 
 type CategoryListboxProps = {
   selected: CategoryId | undefined
