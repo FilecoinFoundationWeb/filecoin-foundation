@@ -11,7 +11,6 @@ export type CustomLinkProps = {
 
 export function CustomLink({
   href,
-  title,
   className,
   children,
   ...rest
@@ -28,13 +27,7 @@ export function CustomLink({
   }
 
   return (
-    <a
-      rel={rel}
-      title={title || 'External link'}
-      href={href}
-      className={className}
-      {...rest}
-    >
+    <a rel={rel} href={href} className={className} {...rest}>
       {children}
     </a>
   )

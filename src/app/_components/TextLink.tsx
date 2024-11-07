@@ -15,7 +15,7 @@ export function TextLink({
   className,
   children,
   ...rest
-}: Omit<CustomLinkProps, 'children'> & { children: string }) {
+}: Omit<CustomLinkProps, 'children'> & { children: React.ReactNode }) {
   const isExternal = !isInternalLink(rest.href)
 
   return (
