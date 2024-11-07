@@ -1,4 +1,5 @@
 import { createColumnHelper } from '@tanstack/react-table'
+import prettyBytes from 'pretty-bytes'
 
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
@@ -30,11 +31,11 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('remainingDatacap', {
     header: 'Remaining Datacap',
-    cell: (info) => info.getValue(),
+    cell: (info) => formatDatacap(info.getValue()),
   }),
   columnHelper.accessor('allowance', {
     header: 'Used Datacap',
-    cell: (info) => info.getValue(),
+    cell: (info) => formatDatacap(info.getValue()),
   }),
   columnHelper.accessor('application.required_replicas', {
     header: () => (
@@ -53,13 +54,6 @@ export const allocatorsTableColumnsData = [
       />
     ),
     cell: (info) => info.getValue(),
-  }),
-  columnHelper.accessor('application.required_sps', {
-    header: 'Required SPs',
-    cell: (info) => info.getValue(),
-    meta: {
-      headerCellStyle: 'w-44',
-    },
   }),
   columnHelper.accessor('application.allocation_bookkeeping', {
     header: 'Apply',
@@ -85,3 +79,7 @@ export const allocatorsTableColumnsData = [
     },
   }),
 ]
+
+function formatDatacap(value?: string) {
+  return value ? prettyBytes(Number(value)) : 'No data available'
+}

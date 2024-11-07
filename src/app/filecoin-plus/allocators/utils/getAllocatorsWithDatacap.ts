@@ -1,5 +1,3 @@
-import prettyBytes from 'pretty-bytes'
-
 import { getAllocators } from '../utils/getAllocators'
 import { getDatacapStats } from '../utils/getDatacapStats'
 
@@ -14,14 +12,10 @@ export async function getAllocatorsWithDatacap() {
 
     return {
       ...allocator,
-      remainingDatacap: formatDatacap(stats?.remainingDatacap),
-      allowance: formatDatacap(stats?.allowance),
+      remainingDatacap: stats?.remainingDatacap,
+      allowance: stats?.allowance,
     }
   })
 
   return allocatorsWithDatacap
-}
-
-function formatDatacap(value?: string) {
-  return value ? prettyBytes(Number(value)) : 'No data available'
 }
