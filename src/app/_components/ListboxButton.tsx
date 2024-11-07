@@ -2,6 +2,7 @@ import React from 'react'
 
 import { ListboxButton as HeadlessUIListboxButton } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
+import clsx from 'clsx'
 
 import { Icon, type IconProps } from '@/components/Icon'
 
@@ -17,17 +18,19 @@ export function ListboxButton({
   isCompact,
 }: ListboxButtonProps) {
   return (
-    <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
+    <HeadlessUIListboxButton className="relative inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
       <div
-        className={`${
-          isCompact ? 'hidden' : 'flex'
-        } w-full items-center justify-between gap-2`}
+        className={clsx(
+          'w-full items-center justify-start gap-2',
+          isCompact ? 'hidden' : 'flex',
+        )}
       >
-        <div className="flex w-3/4 gap-2">
-          {prefixIcon && <Icon component={prefixIcon} />}
-          <span className="min-w-0 truncate">{text}</span>
+        {prefixIcon && <Icon component={prefixIcon} />}
+        <span className="block truncate pr-6">{text}</span>
+
+        <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+          <Icon component={CaretDown} size={16} weight="bold" />
         </div>
-        <Icon component={CaretDown} size={16} weight="bold" />
       </div>
       <div className={`${isCompact ? 'flex' : 'hidden'}`}>
         <Icon component={prefixIcon ?? CaretDown} />
