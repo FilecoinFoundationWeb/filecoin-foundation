@@ -4,13 +4,16 @@ import type { PageAttributes } from '@/types/attributesTypes'
 
 import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
-import { MarkdownContent } from '@/components/MarkdownContent'
+import {
+  type MarkdownContentProps,
+  MarkdownContent,
+} from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 type MarkdownPageProps = {
   attributes: PageAttributes
-  body: string
+  body: MarkdownContentProps['children']
   generateStructuredData: (seo: SeoMetadata) => WithContext<Thing>
 }
 

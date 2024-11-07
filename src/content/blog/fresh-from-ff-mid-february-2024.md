@@ -33,7 +33,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
   1. The [Data Economy Hackathon](https://dorahacks.io/hackathon/filecoin-data-economy/detail) is a six-week virtual hackathon beginning on February 18 and focusing on Filecoin and IPC. The hackathon emphasizes projects that harness data value, innovate for scalability, create dApps utilizing Filecoin, and enhance the network.
   2. The [Filecoin track at ETHGlobal London](https://ethglobal.com/events/london2024/prizes/filecoin), March 15-17, will be an in-person Filecoin hackathon — track details will be announced soon.
 
-- FF’s developer advocacy team will be on the ground at [ETHDenver](https://hub.fil.org/events/ethdenver/see-the-schedule) and [FIL Hong Kong](https://www.fil.org/events/fil-hong-kong-hosted-by-ndlabs). Reach out if you want to set up time to chat with developer advocates at either event.
+- FF’s developer advocacy team will be on the ground at [ETHDenver](https://hub.fil.org/events/ethdenver/see-the-schedule) and [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs). Reach out if you want to set up time to chat with developer advocates at either event.
 
 **Storage**
 
