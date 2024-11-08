@@ -8,8 +8,6 @@ import {
 import { ArrowsDownUp, Check } from '@phosphor-icons/react/dist/ssr'
 import type { Column, SortDirection } from '@tanstack/react-table'
 
-import { useIsBelowBreakpoint } from '@/hooks/useIsBelowBreakpoint'
-
 import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 
@@ -41,15 +39,9 @@ export function SelectSort({
     column.toggleSorting(isSortDesc)
   }
 
-  const isSmOrBelow = useIsBelowBreakpoint('sm')
-
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
-      <ListboxButton
-        prefixIcon={ArrowsDownUp}
-        isCompact={isSmOrBelow}
-        text={selectedOption.name}
-      />
+      <ListboxButton leadingIcon={ArrowsDownUp} text={selectedOption.name} />
       <HeadlessUIListboxOptions
         as="ul"
         anchor={{ to: 'bottom end', gap: 12 }}
