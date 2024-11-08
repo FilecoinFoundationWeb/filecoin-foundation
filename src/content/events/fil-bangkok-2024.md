@@ -356,12 +356,12 @@ speakers:
     company: FilOz
     image:
       src: /assets/images/molly-mackinlay-headshot.webp
-  - name: Alex Blagirev
-    title: Strategic Initiatives Officer
+  - name: Alejandro Rodríguez
+    title: Value Engineer
     company: SingularityNET
-    linkedin: https://www.linkedin.com/in/alexei-blagirev/
+    linkedin: https://www.linkedin.com/in/-alejandro-rodriguez/
     image:
-      src: /assets/images/alex-blagirev-headshot.webp
+      src: /assets/images/alejandro-rodri-guez-headshot.webp
   - image:
       src: /assets/images/alan_coast.webp
     name: Alan Ransil
