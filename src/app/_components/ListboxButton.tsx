@@ -10,7 +10,7 @@ type Breakpoint = keyof TailwindConfig['theme']['screens']
 
 type ListboxButtonProps = {
   text: string
-  prefixIcon?: IconProps['component']
+  leadingIcon?: IconProps['component']
   compactBelow?: Breakpoint
 }
 
@@ -31,7 +31,7 @@ const breakpointStyles: BreakpointStyles = {
 
 export function ListboxButton({
   text,
-  prefixIcon,
+  leadingIcon,
   compactBelow,
 }: ListboxButtonProps) {
   return (
@@ -42,7 +42,7 @@ export function ListboxButton({
           compactBelow && breakpointStyles[compactBelow].hide,
         )}
       >
-        {prefixIcon && <Icon component={prefixIcon} />}
+        {leadingIcon && <Icon component={leadingIcon} />}
         <span className="block truncate pr-6">{text}</span>
 
         <div className="pointer-events-none absolute inset-y-0 right-4 flex items-center">
@@ -56,7 +56,7 @@ export function ListboxButton({
           compactBelow && breakpointStyles[compactBelow].show,
         )}
       >
-        <Icon component={prefixIcon ?? CaretDown} />
+        <Icon component={leadingIcon ?? CaretDown} />
       </div>
     </HeadlessUIListboxButton>
   )
