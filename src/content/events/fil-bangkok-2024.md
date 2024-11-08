@@ -308,6 +308,10 @@ schedule:
           start: 2024-11-11T14:34:00.000Z
           end: 2024-11-11T14:46:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: Lunch
+          start: 2024-11-11T12:30:00.000Z
+          end: 2024-11-11T14:00:00.000Z
+          location: Samyan Mitrtown
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Juan Benet
