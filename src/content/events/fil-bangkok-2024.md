@@ -282,18 +282,16 @@ schedule:
           start: 2024-11-11T15:55:00.000Z
           end: 2024-11-11T16:15:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: Serving DePIN Builders with Modular + Performant Web Infrastructure
-          description: An exploration into the abridged history of modern web infra with a
-            specific focus on the recent crossover of DePIN, AI, and how Fleek
-            provides developers with  modular, decentralized infrastructure to
-            unlock the full potential of projects building with DePIN, AI, or
-            both. We’ll walk through each layer of the stack — from
-            decentralized storage to dynamic hosting, to DNS and beyond — while
-            also highlighting the significance of supporting bleeding-edge tech
-            like TEEs, in particular, Intel SGX. Understanding Fleek’s unique
-            approach to development of these core parts of the stack will enable
-            any builder to seamlessly deploy robust, decentralized applications
-            without compromising on performance, security, or cost.
+        - title: "Filecoin Nexus: Building AI agents in the era of DePin: ensuring trust
+            and integrity with TEEs"
+          description: In a world increasingly powered by decentralized infrastructures,
+            building simultaneously trustworthy and autonomous AI agents is
+            essential. This session will explore how Trusted Execution
+            Environments (TEEs) safeguard AI integrity within DePIN ecosystems,
+            offering a practical approach to verifying agent independence and
+            data security. Join us as we uncover how this versatile technology
+            can enable the next wave of secure, decentralized AI applications
+            and revolutionize digital trust.
           speakers:
             - name: Patrick Kearney
               company: Fleek
