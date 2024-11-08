@@ -452,6 +452,18 @@ speakers:
     linkedin: https://www.linkedin.com/in/palerthanale/
     image:
       src: /assets/images/patrick-kearney-headshot.webp
+  - name: "Hannah Howard "
+    title: CTO
+    company: Storacha
+    linkedin: https://www.linkedin.com/in/techgirlwonder/
+    image:
+      src: /assets/images/hannahhoward-headshot.webp
+  - name: Konstantin Tkachuk
+    title: Co-founder and CSO
+    company: Titan Network
+    linkedin: https://www.linkedin.com/in/tkachukk/
+    image:
+      src: /assets/images/konstantin-tkachuk.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
