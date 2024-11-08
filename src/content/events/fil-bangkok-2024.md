@@ -245,7 +245,7 @@ schedule:
           speakers:
             - name: Anjali George
               company: Theoriq
-            - name: Alex Blagirev
+            - name: Alejandro Rodríguez
               company: SingularityNET
             - name: Ayush Ranjan
               company: Huddle01
