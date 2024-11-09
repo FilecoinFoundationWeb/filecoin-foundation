@@ -50,7 +50,7 @@ Provide a 500-700 word summary of your concept, outlining:
 * The role of decentralized AI and Filecoin in your solution.
 * Technical feasibility and impact of your project.
 
-Submit the proposal via a designated portal and post a short description on X (formerly Twitter) with the hashtag #DecentralizedAIChallenge and tag [@FilFoundation](https://twitter.com/FilFoundation). Then, join the [Filecoin Discord](https://discord.gg/filecoin) community.
+Submit the [proposal in the portal](https://airtable.com/appAGdqyYrqoFNuPI/pagYJ8TDX9cDly1LI/form) and post a short description on X (formerly Twitter) with the hashtag #DecentralizedAIChallenge and tag [@FilFoundation](https://twitter.com/FilFoundation). Then, join the [Filecoin Discord](https://discord.gg/filecoin) community.
 
 ***Submission Deadline: All entries must be submitted by November 30, 2024.***
 
