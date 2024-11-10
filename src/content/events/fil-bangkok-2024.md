@@ -206,8 +206,13 @@ schedule:
           start: 2024-11-11T15:13:00.000Z
           end: 2024-11-11T15:20:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+          description: "With AI-generated content expected to represent 90% of online data
+            by 2026, we need smart platforms that democratize data ownership
+            while embedding necessary privacy protections. Ghostdrive delivers
+            an affordable, secure, AI-driven Web3 data platform empowering one
+            million users to control and monetize their data via AI. "
         - location: "Samyan Mitrtown: Main Hall"
-          title: "Filecoin Nexus: Decentralized Tools for Environmental Change"
+          title: "Sponsored Content: Decentralized Tools for Environmental Change"
           moderators:
             - name: Megan Klimen
               company: Filecoin Foundation
