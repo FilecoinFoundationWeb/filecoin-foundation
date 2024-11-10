@@ -289,8 +289,8 @@ schedule:
           start: 2024-11-11T15:55:00.000Z
           end: 2024-11-11T16:15:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: "Sponsored Content: Building AI agents in the era of DePin: ensuring
-            trust and integrity with TEEs"
+        - title: "Sponsor Content: Building AI Agents in the Era of DePIN: Ensuring Trust
+            and Integrity with TEEs"
           description: In a world increasingly powered by decentralized infrastructures,
             building simultaneously trustworthy and autonomous AI agents is
             essential. This session will explore how Trusted Execution
