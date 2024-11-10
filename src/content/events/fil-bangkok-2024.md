@@ -340,6 +340,11 @@ schedule:
           speakers:
             - name: Konstantin Tkachuk
               company: "Titan Network "
+          description: "Billions of devices sit idle for over 21 hours daily; Titan
+            Network is harnessing this untapped potential for a people-powered
+            DePIN cloud. Titan’s Data Availability layer on Filecoin creates a
+            decentralized cloud infra designed to onboard the masses in a highly
+            accessible and scalable approach to DePIN. "
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Juan Benet
