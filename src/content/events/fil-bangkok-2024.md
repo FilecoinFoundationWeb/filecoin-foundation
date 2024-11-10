@@ -318,6 +318,21 @@ schedule:
           start: 2024-11-11T12:30:00.000Z
           end: 2024-11-11T14:00:00.000Z
           location: Samyan Mitrtown
+        - title: "Fireside Chat: Juan Benet on DePIN and AI"
+          description: Hear from Juan Benet, founder of Protocol Labs and inventor of IPFS
+            and Filecoin, as he reflects on the driving forces behind building
+            humanity's global decentralized storage network. Alongside Ansa
+            Research’s Jonathan Victor, Juan will share the core philosophies of
+            DePIN and his vision for how AI and decentralized infrastructure
+            will converge to reshape the future of the internet.
+          speakers:
+            - name: Juan Benet
+              company: Protocol Labs
+            - name: Jonathan Victor
+              company: "Ansa Research "
+          start: 2024-11-11T17:05:00.000Z
+          end: 2024-11-11T17:30:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Juan Benet
