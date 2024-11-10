@@ -337,8 +337,8 @@ schedule:
               company: Protocol Labs
             - name: Jonathan Victor
               company: Ansa Research
-          start: 2024-11-11T17:05:00.000Z
-          end: 2024-11-11T17:30:00.000Z
+          start: 2024-11-11T17:30:00.000Z
+          end: 2024-11-11T18:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: The Role of People in Our DePIN Future
           start: 2024-11-11T15:21:00.000Z
