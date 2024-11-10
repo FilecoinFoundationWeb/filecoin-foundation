@@ -333,6 +333,13 @@ schedule:
           start: 2024-11-11T17:05:00.000Z
           end: 2024-11-11T17:30:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: The Role of People in Our DePIN Future
+          start: 2024-11-11T15:21:00.000Z
+          end: 2024-11-11T15:29:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
+          speakers:
+            - name: Konstantin Tkachuk
+              company: "Titan Network "
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Juan Benet
