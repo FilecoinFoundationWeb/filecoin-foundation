@@ -180,6 +180,8 @@ schedule:
           speakers:
             - name: Alexander Kinstler
               company: Storacha
+            - name: "Hannah Howard "
+              company: "Storacha "
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:17:00.000Z
           end: 2024-11-11T16:31:00.000Z
