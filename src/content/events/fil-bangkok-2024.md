@@ -274,18 +274,17 @@ schedule:
           start: 2024-11-11T16:32:00.000Z
           end: 2024-11-11T16:39:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: "Fireside Chat: How Filecoin and Axelar are Building to Scale Web3"
+        - title: "From Milestones to Moonshots: A 2024 Filecoin Network Retrospective and
+            Look Ahead to 2025"
           description: >
-            Two veteran L1 innovators come together to discuss the imperative of
-            building interoperable Web3 infra. They’ll dive into the work being
-            done to create composable and scalable frameworks in the Filecoin
-            and Axelar universes and the possibilities unlocked by technical
-            integrations between these two chains.
+            Join FilOz CEO and Protocol Labs Engineering & Research Lead Molly
+            Mackinlay as she unpacks the network’s game-changing technical
+            developments in 2024. Then, she’ll sit down to give an inside
+            preview of Filecoin's roadmap for 2025 and the future of
+            decentralized storage. 
           speakers:
             - name: Molly Mackinlay
               company: FilOZ
-            - name: Georgios Vlacho
-              company: Axelar
           start: 2024-11-11T15:55:00.000Z
           end: 2024-11-11T16:15:00.000Z
           location: "Samyan Mitrtown: Main Hall"
