@@ -471,6 +471,18 @@ speakers:
     linkedin: https://www.linkedin.com/in/tkachukk/
     image:
       src: /assets/images/konstantin-tkachuk.webp
+  - name: Jonathan Victor
+    title: Co-Founder
+    company: "Ansa Research "
+    linkedin: https://www.linkedin.com/in/jonathan-victor-69a44255/
+    image:
+      src: /assets/images/jonathan-victor-headshot-.webp
+  - name: Sarah Thiam
+    title: Founder and CEO
+    linkedin: https://www.linkedin.com/in/sarahthiam/
+    company: FIL-B
+    image:
+      src: /assets/images/sarah-thiam.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
