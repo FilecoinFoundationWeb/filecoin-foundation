@@ -50,7 +50,7 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-const blogPageData = getPageMarkdownData({
+const { seo, featuredEntry: featuredEntryPath } = getPageMarkdownData({
   path: PATHS.BLOG,
   zodParser: PageDataWithFeaturedEntrySchema.parse,
 })
@@ -61,12 +61,12 @@ const sortOptions = getSortOptions(blogSortConfigs)
 
 const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
 
-const featuredPostSlug = extractSlugFromFilename(blogPageData.featuredEntry)
+const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
 const featuredPost = getBlogPostData(featuredPostSlug)
 
 export const metadata = createMetadata({
   seo: {
-    ...blogPageData.seo,
+    ...seo,
     image: graphicsData.blog.data.src,
   },
   path: PATHS.BLOG.path,
@@ -101,7 +101,7 @@ export default function Blog({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript
-        structuredData={generateStructuredData(posts, blogPageData.seo)}
+        structuredData={generateStructuredData(posts, seo)}
       />
       <PageHeader
         isFeatured

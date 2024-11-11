@@ -30,25 +30,30 @@ import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosyste
 
 const ecosystemProjects = getEcosystemProjectsData()
 
-const homePageData = getPageMarkdownData({
+const {
+  header,
+  seo,
+  featuredEcosystemProjects: featuredEcosystemProjectPaths,
+} = getPageMarkdownData({
   path: PATHS.HOME,
   zodParser: HomePageDataSchema.parse,
 })
 
-const digestPageData = getPageMarkdownData({
+const { header: digestPageHeader } = getPageMarkdownData({
   path: PATHS.DIGEST,
   zodParser: GenericPageDataSchema.parse,
 })
 
-const featuredEcosystemProjectsSlugs =
-  homePageData.featuredEcosystemProjects.map(extractSlugFromFilename)
+const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
+  extractSlugFromFilename,
+)
 
 const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
 )
 
 export const metadata = createMetadata({
-  seo: homePageData.seo,
+  seo,
   path: PATHS.HOME.path,
   overrideDefaultTitle: true,
 })
@@ -59,8 +64,8 @@ export default function Home() {
       <PageLayout>
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <PageHeader
-          title={homePageData.header.title}
-          description={homePageData.header.description}
+          title={header.title}
+          description={header.description}
           image={graphicsData.home}
           cta={[
             { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
@@ -118,9 +123,9 @@ export default function Home() {
 
         <PageSection
           kicker="Digest"
-          title={digestPageData.header.title}
+          title={digestPageHeader.title}
           image={graphicsData.digest}
-          description={digestPageData.header.description}
+          description={digestPageHeader.description}
           cta={{
             href: PATHS.DIGEST.path,
             text: 'Read Digest',

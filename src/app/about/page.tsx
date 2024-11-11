@@ -27,14 +27,14 @@ import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const aboutPageData = getPageMarkdownData({
+const { header, seo } = getPageMarkdownData({
   path: PATHS.ABOUT,
   zodParser: GenericPageDataSchema.parse,
 })
 
 export const metadata = createMetadata({
   seo: {
-    ...aboutPageData.seo,
+    ...seo,
     image: graphicsData.about.data.src,
   },
   path: PATHS.ABOUT.path,
@@ -44,12 +44,10 @@ export const metadata = createMetadata({
 export default function About() {
   return (
     <PageLayout>
-      <StructuredDataScript
-        structuredData={generateStructuredData(aboutPageData.seo)}
-      />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        title={aboutPageData.header.title}
-        description={aboutPageData.header.description}
+        title={header.title}
+        description={header.description}
         image={graphicsData.about}
         cta={{
           href: FILECOIN_FOUNDATION_URLS.annualReports['2023'],
