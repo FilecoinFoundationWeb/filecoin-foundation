@@ -41,7 +41,11 @@ export function SelectSort({
 
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
-      <ListboxButton leadingIcon={ArrowsDownUp} text={selectedOption.name} />
+      <ListboxButton
+        leadingIcon={ArrowsDownUp}
+        text={selectedOption.name}
+        compactBelow="md"
+      />
       <HeadlessUIListboxOptions
         as="ul"
         anchor={{ to: 'bottom end', gap: 12 }}
