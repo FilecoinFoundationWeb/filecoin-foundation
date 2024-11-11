@@ -170,7 +170,11 @@ export function EcosystemProjectForm({
               For best quality, please submit a white logo with a transparent
               background, at least 1000px by 1000px, and under 100KB. You can
               use tools like{' '}
-              <ExternalTextLink href="https://squoosh.app/">
+              <ExternalTextLink
+                href="https://squoosh.app/"
+                target="_blank"
+                rel="noreferrer noopenner"
+              >
                 Squoosh
               </ExternalTextLink>{' '}
               to compress your image.
