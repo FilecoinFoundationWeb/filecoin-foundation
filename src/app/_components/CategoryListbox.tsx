@@ -23,6 +23,11 @@ type CategoryListboxProps = {
   onChange: (selected: CategoryId) => void
 }
 
+type OptionWithCategoryCount = {
+  options: Array<CategoryOption>
+  counts?: CategoryCounts
+}
+
 export function CategoryListbox({
   selected,
   options,
@@ -30,6 +35,7 @@ export function CategoryListbox({
   onChange,
 }: CategoryListboxProps) {
   const totalCategoryCount = getTotalCategoryCount(counts)
+  const optionsWithCounts = getOptionsWithCounts({ options, counts })
 
   return (
     <Listbox value={selected} onChange={onChange}>
@@ -37,14 +43,24 @@ export function CategoryListbox({
       <ListboxOptions>
         {totalCategoryCount && (
           <ListboxOption
-            option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
-            counts={totalCategoryCount}
+            option={{
+              id: DEFAULT_CATEGORY,
+              name: DEFAULT_CATEGORY,
+              count: totalCategoryCount.All,
+            }}
           />
         )}
-        {options.map((option) => (
-          <ListboxOption key={option.id} option={option} counts={counts} />
+        {optionsWithCounts.map((option) => (
+          <ListboxOption key={option.id} option={option} />
         ))}
       </ListboxOptions>
     </Listbox>
   )
+}
+
+function getOptionsWithCounts({ options, counts }: OptionWithCategoryCount) {
+  return options.map((option) => ({
+    ...option,
+    ...(counts && { count: counts[option.id] || 0 }),
+  }))
 }
