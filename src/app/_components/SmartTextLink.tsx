@@ -16,11 +16,11 @@ type TextLinkProps = Omit<BaseLinkProps, 'children'> & {
 export const linkBaseStyles =
   'text-brand-300 focus:brand-outline hover:underline'
 
-export function TextLink({ className, children, ...rest }: TextLinkProps) {
+export function SmartTextLink({ className, children, ...rest }: TextLinkProps) {
   const isExternal = isExternalLink(rest.href)
 
   return (
-    <Baselink
+    <BaseLink
       className={clsx(
         isExternal && 'inline-flex items-center gap-1',
         linkBaseStyles,
@@ -32,6 +32,6 @@ export function TextLink({ className, children, ...rest }: TextLinkProps) {
       {isExternal && (
         <Icon component={ArrowUpRight} size={16} color="brand-400" />
       )}
-    </Baselink>
+    </BaseLink>
   )
 }

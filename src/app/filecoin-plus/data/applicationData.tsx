@@ -1,6 +1,6 @@
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { TextLink } from '@/components/TextLink'
+import { SmartTextLink } from '@/components/SmartTextLink'
 
 export const applicationData = [
   {
@@ -9,9 +9,9 @@ export const applicationData = [
     description: (
       <>
         Visit the{' '}
-        <TextLink href={FIL_PLUS_URLS.notary}>
+        <SmartTextLink href={FIL_PLUS_URLS.notary}>
           Allocator Governance GitHub
-        </TextLink>{' '}
+        </SmartTextLink>{' '}
         page. Create a pull request, name the file “Allocator application”, and
         commit the change as a branch.
       </>

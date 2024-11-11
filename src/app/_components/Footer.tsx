@@ -2,8 +2,8 @@ import { footerNavigationItems } from '@/constants/navigation'
 
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
+import { SmartTextLink } from '@/components/SmartTextLink'
 import { Social } from '@/components/Social'
-import { TextLink } from '@/components/TextLink'
 
 export function Footer() {
   return (
@@ -39,7 +39,7 @@ export function Footer() {
             <ul className="flex w-max flex-col gap-3">
               {items.map(({ href, label }) => (
                 <li key={href}>
-                  <TextLink href={href}>{label}</TextLink>
+                  <SmartTextLink href={href}>{label}</SmartTextLink>
                 </li>
               ))}
             </ul>
@@ -51,9 +51,9 @@ export function Footer() {
       <p className="text-center text-sm">
         &copy; {new Date().getFullYear()} Content on this site is licensed under
         a{' '}
-        <TextLink href="https://creativecommons.org/licenses/by/4.0/">
+        <SmartTextLink href="https://creativecommons.org/licenses/by/4.0/">
           Creative Commons Attribution 4.0 International license
-        </TextLink>
+        </SmartTextLink>
       </p>
     </footer>
   )

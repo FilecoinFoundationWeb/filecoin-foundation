@@ -2,7 +2,7 @@
 
 import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
-import { TextLink } from '@/components/TextLink'
+import { SmartTextLink } from '@/components/SmartTextLink'
 
 import type { Event } from '../../../schemas/ScheduleSchema'
 import { formatTime } from '../../utils/dateUtils'
@@ -37,7 +37,7 @@ export function EventDetails(event: Event) {
           </div>
           {event.url && (
             <div className="mt-4">
-              <TextLink href={event.url}>View Details</TextLink>
+              <SmartTextLink href={event.url}>View Details</SmartTextLink>
             </div>
           )}
         </div>

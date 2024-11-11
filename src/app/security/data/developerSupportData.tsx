@@ -5,9 +5,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 import type { IconProps } from '@/components/Icon'
-import { TextLink } from '@/components/TextLink'
-
-
+import { SmartTextLink } from '@/components/SmartTextLink'
 
 type DeveloperSupportData = {
   heading: {
@@ -28,11 +26,13 @@ export const developerSupportData: Array<DeveloperSupportData> = [
         Filecoin Foundation supports a security auditor network for developers
         in the Filecoin ecosystem. Interested in having your project audited?
         Contact the Foundation’s security team at{' '}
-        <TextLink href={FILECOIN_FOUNDATION_URLS.security.emails.audits.href}>
+        <SmartTextLink
+          href={FILECOIN_FOUNDATION_URLS.security.emails.audits.href}
+        >
           {extractEmailAddress(
             FILECOIN_FOUNDATION_URLS.security.emails.audits.href,
           )}
-        </TextLink>
+        </SmartTextLink>
         .
       </>
     ),
@@ -45,19 +45,19 @@ export const developerSupportData: Array<DeveloperSupportData> = [
     description: (
       <>
         Check out the latest security resources, including{' '}
-        <TextLink
+        <SmartTextLink
           href={
             FILECOIN_FOUNDATION_URLS.security.resources.filecoinEVMCompatibility
           }
         >
           Filecoin EVM Compatibility
-        </TextLink>{' '}
+        </SmartTextLink>{' '}
         and{' '}
-        <TextLink
+        <SmartTextLink
           href={FILECOIN_FOUNDATION_URLS.security.resources.auditReports}
         >
           Audit Reports
-        </TextLink>
+        </SmartTextLink>
         .
       </>
     ),
