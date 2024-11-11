@@ -14,15 +14,15 @@ import {
 } from './fileUtils'
 import { logZodError } from './zodUtils'
 
-type GetPageData<T> = {
+type GetFrontmatterOptions<T> = {
   zodParser: ZodType<T>['parse']
   path: PathConfig
 }
 
-export function getPageMarkdownData<T extends Object>({
+export function getFrontmatter<T extends Object>({
   path,
   zodParser,
-}: GetPageData<T>) {
+}: GetFrontmatterOptions<T>) {
   const filePath = path.mainContentPath + MARKDOWN_EXTENSION
 
   try {
@@ -31,17 +31,14 @@ export function getPageMarkdownData<T extends Object>({
     }
 
     const fileContents = readFileContents(filePath)
-    const { data, content } = parseMarkdown(fileContents)
+    const { data: frontmatter } = parseMarkdown(fileContents)
 
-    const dataToValidate = content ? { ...data, content } : data
-
-    const parsedData = zodParser(dataToValidate)
-
-    return convertObjectKeysToCamelCase(parsedData, { deep: true })
+    const validatedData = zodParser(frontmatter)
+    return convertObjectKeysToCamelCase(validatedData, { deep: true })
   } catch (error) {
     if (error instanceof ZodError) {
       logZodError(error, {
-        location: 'getPageMarkdownData',
+        location: getFrontmatter.name,
         context: { path: filePath },
       })
     }

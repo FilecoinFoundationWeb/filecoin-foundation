@@ -4,42 +4,42 @@ import { z } from 'zod'
 
 import { CONTENT_ROOT, MARKDOWN_EXTENSION } from '@/constants/paths'
 
-const HeaderSchema = z.object({
+const FrontmatterHeaderSchema = z.object({
   title: z.string(),
   description: z.string().or(z.array(z.string())),
 })
 
-const SeoSchema = z.object({
+const FrontmatterSeoSchema = z.object({
   title: z.string(),
   description: z.string(),
 })
 
-const MarkdownEntryPathSchema = z
+const MarkdownPathSchema = z
   .string()
-  .refine(validateMarkdownEntryPathFormat, {
-    message: 'Invalid markdown entry path format',
+  .refine(isValidMarkdownPath, {
+    message: 'Invalid markdown file path format',
   })
   .refine(fs.existsSync, {
-    message: 'Markdown entry does not exist',
+    message: 'Markdown file does not exist',
   })
 
-export const GenericPageDataSchema = z.object({
-  header: HeaderSchema,
-  seo: SeoSchema,
+export const BaseFrontmatterSchema = z.object({
+  header: FrontmatterHeaderSchema,
+  seo: FrontmatterSeoSchema,
 })
 
-export const PageDataWithFeaturedEntrySchema = GenericPageDataSchema.extend({
-  featured_entry: MarkdownEntryPathSchema,
+export const FeaturedPageFrontmatterSchema = BaseFrontmatterSchema.extend({
+  featured_entry: MarkdownPathSchema,
 })
 
-export const HomePageDataSchema = GenericPageDataSchema.extend({
-  featured_ecosystem_projects: z.array(MarkdownEntryPathSchema),
+export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
+  featured_ecosystem_projects: z.array(MarkdownPathSchema),
 })
 
-export const GrantPageDataSchema = GenericPageDataSchema.extend({
-  featured_grant_graduates: z.array(MarkdownEntryPathSchema),
+export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
+  featured_grant_graduates: z.array(MarkdownPathSchema),
 })
 
-function validateMarkdownEntryPathFormat(value: string) {
-  return value.startsWith(CONTENT_ROOT) && value.endsWith(MARKDOWN_EXTENSION)
+function isValidMarkdownPath(path: string): boolean {
+  return path.startsWith(CONTENT_ROOT) && path.endsWith(MARKDOWN_EXTENSION)
 }

@@ -14,10 +14,10 @@ import {
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 import { getSortOptions } from '@/utils/getSortOptions'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -55,9 +55,9 @@ const ecosystemProjects = getEcosystemProjectsData()
 
 const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
-const { header, seo } = getPageMarkdownData({
+const { header, seo } = getFrontmatter({
   path: PATHS.ECOSYSTEM_EXPLORER,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

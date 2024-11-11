@@ -13,11 +13,11 @@ import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
-import { PageDataWithFeaturedEntrySchema } from '@/schemas/PageDataSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -50,9 +50,9 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
-const { seo, featuredEntry: featuredEntryPath } = getPageMarkdownData({
+const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({
   path: PATHS.BLOG,
-  zodParser: PageDataWithFeaturedEntrySchema.parse,
+  zodParser: FeaturedPageFrontmatterSchema.parse,
 })
 
 const posts = getBlogPostsData()

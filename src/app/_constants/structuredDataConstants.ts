@@ -7,13 +7,13 @@ import {
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
-const { header: aboutPageHeader } = getPageMarkdownData({
+const { header: aboutPageHeader } = getFrontmatter({
   path: PATHS.ABOUT,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 const { social, email } = FILECOIN_FOUNDATION_URLS

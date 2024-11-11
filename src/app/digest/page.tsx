@@ -7,9 +7,9 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -22,9 +22,9 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesData } from './utils/getDigestArticleData'
 
-const { header, seo } = getPageMarkdownData({
+const { header, seo } = getFrontmatter({
   path: PATHS.DIGEST,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 const articles = getDigestArticlesData()

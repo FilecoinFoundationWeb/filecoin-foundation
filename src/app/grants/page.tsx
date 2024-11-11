@@ -6,9 +6,9 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GrantPageDataSchema } from '@/schemas/PageDataSchema'
+import { GrantsPageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -36,9 +36,9 @@ const {
   header,
   seo,
   featuredGrantGraduates: featuredGrantGraduatePaths,
-} = getPageMarkdownData({
+} = getFrontmatter({
   path: PATHS.GRANTS,
-  zodParser: GrantPageDataSchema.parse,
+  zodParser: GrantsPageFrontmatterSchema.parse,
 })
 
 const grantGraduatesSlugs = featuredGrantGraduatePaths.map(

@@ -4,9 +4,9 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -16,9 +16,9 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { Leaderboard } from './components/Leaderboard'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getPageMarkdownData({
+const { header, seo } = getFrontmatter({
   path: PATHS.BUG_BOUNTY,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

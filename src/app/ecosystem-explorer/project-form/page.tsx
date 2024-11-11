@@ -8,9 +8,9 @@ import {
 
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
@@ -24,9 +24,9 @@ import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 
-const { header, seo } = getPageMarkdownData({
+const { header, seo } = getFrontmatter({
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

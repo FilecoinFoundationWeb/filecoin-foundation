@@ -7,9 +7,9 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractDomain } from '@/utils/extractDomain'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -28,9 +28,9 @@ import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getPageMarkdownData({
+const { header, seo } = getFrontmatter({
   path: PATHS.FIL_PLUS,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

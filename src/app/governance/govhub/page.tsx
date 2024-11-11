@@ -4,9 +4,9 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
-import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -20,9 +20,9 @@ import { ToolsCardContent } from './components/ToolsCardContent'
 import { toolsData } from './data/toolsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getPageMarkdownData({
+const { header, seo } = getFrontmatter({
   path: PATHS.GOVHUB,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

@@ -7,11 +7,11 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 
 import {
-  GenericPageDataSchema,
-  HomePageDataSchema,
+  BaseFrontmatterSchema,
+  HomePageFrontmatterSchema,
 } from '@/schemas/PageDataSchema'
 
 import { Button } from '@/components/Button'
@@ -34,14 +34,14 @@ const {
   header,
   seo,
   featuredEcosystemProjects: featuredEcosystemProjectPaths,
-} = getPageMarkdownData({
+} = getFrontmatter({
   path: PATHS.HOME,
-  zodParser: HomePageDataSchema.parse,
+  zodParser: HomePageFrontmatterSchema.parse,
 })
 
-const { header: digestPageHeader } = getPageMarkdownData({
+const { header: digestPageHeader } = getFrontmatter({
   path: PATHS.DIGEST,
-  zodParser: GenericPageDataSchema.parse,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
 const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(

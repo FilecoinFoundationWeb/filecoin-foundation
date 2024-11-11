@@ -17,11 +17,11 @@ import {
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getEventMetaData } from '@/utils/getMetaData'
-import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getPageMarkdownData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
-import { PageDataWithFeaturedEntrySchema } from '@/schemas/PageDataSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -58,9 +58,9 @@ type Props = {
 const events = getEventsData()
 const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
 
-const { featuredEntry: featuredEventPath, seo } = getPageMarkdownData({
+const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
   path: PATHS.EVENTS,
-  zodParser: PageDataWithFeaturedEntrySchema.parse,
+  zodParser: FeaturedPageFrontmatterSchema.parse,
 })
 
 const sortOptions = getSortOptions(eventsSortConfigs)

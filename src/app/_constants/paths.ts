@@ -47,6 +47,7 @@ interface CMSConfig {
 
 export const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
+export const MARKDOWN_EXTENSION = '.md'
 
 function createPathConfig(
   path: PathValues,
@@ -138,5 +139,3 @@ export const PATHS = {
 export const ECOSYSTEM_CATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/categories`
 export const ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/subcategories`
 export const ECOSYSTEM_PROJECTS_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/projects`
-
-export const MARKDOWN_EXTENSION = '.md'
