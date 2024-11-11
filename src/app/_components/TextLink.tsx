@@ -5,10 +5,10 @@ import { clsx } from 'clsx'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { type CustomLinkProps, CustomLink } from '@/components/CustomLink'
+import { type BaseLinkProps, BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
 
-type TextLinkProps = Omit<CustomLinkProps, 'children'> & {
+type TextLinkProps = Omit<BaseLinkProps, 'children'> & {
   className?: string
   children: React.ReactNode
 }
@@ -20,7 +20,7 @@ export function TextLink({ className, children, ...rest }: TextLinkProps) {
   const isExternal = isExternalLink(rest.href)
 
   return (
-    <CustomLink
+    <Baselink
       className={clsx(
         isExternal && 'inline-flex items-center gap-1',
         linkBaseStyles,
@@ -32,6 +32,6 @@ export function TextLink({ className, children, ...rest }: TextLinkProps) {
       {isExternal && (
         <Icon component={ArrowUpRight} size={16} color="brand-400" />
       )}
-    </CustomLink>
+    </Baselink>
   )
 }

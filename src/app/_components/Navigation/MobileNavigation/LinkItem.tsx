@@ -8,7 +8,7 @@ import type { Route } from 'next'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { CustomLink } from '@/components/CustomLink'
+import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
 import { linkBaseStyles } from '@/components/TextLink'
 
@@ -32,13 +32,13 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
 
   return (
     <li className={containerStyles}>
-      <CustomLink
+      <BaseLink
         href={href}
         className={linkStyles}
         onClick={() => setOpen(false)}
       >
         {label}
-      </CustomLink>
+      </BaseLink>
       {isExternal && (
         <Icon size={16} component={ArrowUpRight} color="brand-400" />
       )}

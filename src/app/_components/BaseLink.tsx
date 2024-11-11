@@ -4,11 +4,11 @@ import type { Route } from 'next'
 
 import { isInternalLink } from '@/utils/linkUtils'
 
-export type CustomLinkProps = {
+export type BaseLinkProps = {
   href: string | Route
 } & Omit<React.ComponentProps<'a'>, 'href'>
 
-export function CustomLink({ href, ...rest }: CustomLinkProps) {
+export function BaseLink({ href, ...rest }: BaseLinkProps) {
   const isInternal = isInternalLink(href)
   const rel = href.startsWith('mailto:') ? undefined : 'noopener noreferrer'
 
