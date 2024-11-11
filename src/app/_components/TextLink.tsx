@@ -3,20 +3,21 @@
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 
-import { isInternalLink } from '@/utils/linkUtils'
+import { isExternalLink } from '@/utils/linkUtils'
 
 import { type CustomLinkProps, CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
+type TextLinkProps = Omit<CustomLinkProps, 'children'> & {
+  className?: string
+  children: React.ReactNode
+}
+
 export const linkBaseStyles =
   'text-brand-300 focus:brand-outline hover:underline'
 
-export function TextLink({
-  className,
-  children,
-  ...rest
-}: Omit<CustomLinkProps, 'children'> & { children: React.ReactNode }) {
-  const isExternal = !isInternalLink(rest.href)
+export function TextLink({ className, children, ...rest }: TextLinkProps) {
+  const isExternal = isExternalLink(rest.href)
 
   return (
     <CustomLink
