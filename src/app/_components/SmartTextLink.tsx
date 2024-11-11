@@ -16,22 +16,35 @@ type TextLinkProps = Omit<BaseLinkProps, 'children'> & {
 export const linkBaseStyles =
   'text-brand-300 focus:brand-outline hover:underline'
 
-export function SmartTextLink({ className, children, ...rest }: TextLinkProps) {
-  const isExternal = isExternalLink(rest.href)
+export function SmartTextLink(props: TextLinkProps) {
+  const isExternal = isExternalLink(props.href)
+  return isExternal ? (
+    <ExternalTextLink {...props} />
+  ) : (
+    <InternalTextLink {...props} />
+  )
+}
 
+function InternalTextLink({ className, children, ...rest }: TextLinkProps) {
+  return (
+    <BaseLink className={clsx(linkBaseStyles, className)} {...rest}>
+      {children}
+    </BaseLink>
+  )
+}
+
+function ExternalTextLink({ className, children, ...rest }: TextLinkProps) {
   return (
     <BaseLink
       className={clsx(
-        isExternal && 'inline-flex items-center gap-1',
+        'inline-flex items-center gap-1',
         linkBaseStyles,
         className,
       )}
       {...rest}
     >
       {children}
-      {isExternal && (
-        <Icon component={ArrowUpRight} size={16} color="brand-400" />
-      )}
+      <Icon component={ArrowUpRight} size={16} color="brand-400" />
     </BaseLink>
   )
 }
