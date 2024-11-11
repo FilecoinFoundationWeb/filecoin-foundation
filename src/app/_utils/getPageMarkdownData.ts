@@ -3,9 +3,9 @@ import fs from 'fs'
 import convertObjectKeysToCamelCase from 'camelcase-keys'
 import { ZodError, type ZodType } from 'zod'
 
-import { MARKDOWN_EXTENSION, type PathConfig } from '@/constants/paths'
+import type { Object } from '@/types/utils'
 
-import type { Object } from '@/_types/utils'
+import { MARKDOWN_EXTENSION, type PathConfig } from '@/constants/paths'
 
 import {
   handleFileNotFound,
