@@ -1,6 +1,6 @@
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 export const applicationData = [
   {

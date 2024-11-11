@@ -1,6 +1,6 @@
 import { Code, BracketsAngle, Users } from '@phosphor-icons/react/dist/ssr'
 
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 export const submissionCriteriaData = [
   {

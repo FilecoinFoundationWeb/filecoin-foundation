@@ -2,8 +2,8 @@ import { footerNavigationItems } from '@/constants/navigation'
 
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
-import { SmartTextLink } from '@/components/SmartTextLink'
 import { Social } from '@/components/Social'
+import { SmartTextLink } from '@/components/TextLink'
 
 export function Footer() {
   return (

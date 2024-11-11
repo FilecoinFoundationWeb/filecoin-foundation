@@ -1,4 +1,4 @@
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 export const applicationProcessData = [
   {

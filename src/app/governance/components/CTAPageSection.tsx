@@ -1,7 +1,7 @@
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { CTASection } from '@/components/CTASection'
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 export function CTAPageSection() {
   return (

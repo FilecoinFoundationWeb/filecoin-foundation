@@ -10,7 +10,7 @@ import { isExternalLink } from '@/utils/linkUtils'
 
 import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
-import { linkBaseStyles } from '@/components/SmartTextLink'
+import { linkBaseStyles } from '@/components/TextLink'
 
 export type LinkItemProps = {
   label: string

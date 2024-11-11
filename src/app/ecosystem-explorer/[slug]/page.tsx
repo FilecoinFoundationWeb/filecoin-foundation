@@ -20,10 +20,11 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { ShareArticle } from '@/components/ShareArticle'
-import { SmartTextLink } from '@/components/SmartTextLink'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
+import { SmartTextLink } from '@/components/TextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
+
 
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 

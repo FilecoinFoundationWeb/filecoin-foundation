@@ -2,7 +2,7 @@
 
 import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 import type { Event } from '../../../schemas/ScheduleSchema'
 import { formatTime } from '../../utils/dateUtils'

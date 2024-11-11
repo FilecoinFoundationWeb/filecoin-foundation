@@ -20,8 +20,8 @@ import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { SmartTextLink } from '@/components/SmartTextLink'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { SmartTextLink } from '@/components/TextLink'
 
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 

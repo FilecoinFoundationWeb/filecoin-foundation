@@ -1,6 +1,6 @@
 import type { StaticImageProps } from '@/types/imageType'
 
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 import austinImg from '@/assets/orbit/ambassadors/austin-web3-filecoin-meetup.jpg'
 import barcelonaImg from '@/assets/orbit/ambassadors/barcelona-web3fc-event.jpg'

@@ -9,7 +9,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { SmartTextLink } from '@/components/SmartTextLink'
+import { SmartTextLink } from '@/components/TextLink'
 
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']

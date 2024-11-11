@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
-import { SmartTextLink } from '@/components/SmartTextLink'
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
+import { SmartTextLink } from '@/components/TextLink'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
 
