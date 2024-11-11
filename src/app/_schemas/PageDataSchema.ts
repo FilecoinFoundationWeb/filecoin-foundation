@@ -14,7 +14,7 @@ const SeoSchema = z.object({
   description: z.string(),
 })
 
-const MarkdownEntrySchema = z
+const MarkdownEntryPathSchema = z
   .string()
   .refine(validateMarkdownEntryPathFormat, {
     message: 'Invalid markdown entry path format',
@@ -29,11 +29,11 @@ export const GenericPageDataSchema = z.object({
 })
 
 export const PageDataWithFeaturedEntrySchema = GenericPageDataSchema.extend({
-  featured_entry: MarkdownEntrySchema,
+  featured_entry: MarkdownEntryPathSchema,
 })
 
 export const HomePageDataSchema = GenericPageDataSchema.extend({
-  featured_ecosystem_projects: z.array(MarkdownEntrySchema),
+  featured_ecosystem_projects: z.array(MarkdownEntryPathSchema),
 })
 
 function validateMarkdownEntryPathFormat(value: string) {
