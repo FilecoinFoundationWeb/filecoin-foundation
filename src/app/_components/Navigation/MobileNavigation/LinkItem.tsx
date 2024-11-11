@@ -8,9 +8,9 @@ import type { Route } from 'next'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { CustomLink } from '@/components/CustomLink'
+import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
-import { linkBaseStyles } from '@/components/TextLink'
+import styles from '@/components/TextLink/TextLink.module.scss'
 
 export type LinkItemProps = {
   label: string
@@ -21,25 +21,24 @@ export type LinkItemProps = {
 
 export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
   const isExternal = isExternalLink(href)
+  const containerStyles = clsx(
+    nested && 'ml-6',
+    isExternal && 'inline-flex items-center gap-1',
+  )
+  const linkStyles = clsx(
+    styles.base,
+    "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
+  )
 
   return (
-    <li
-      className={clsx(
-        'text-brand-300',
-        nested && 'ml-6',
-        isExternal && 'inline-flex items-center gap-1',
-      )}
-    >
-      <CustomLink
+    <li className={containerStyles}>
+      <BaseLink
         href={href}
-        className={clsx(
-          linkBaseStyles,
-          "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
-        )}
+        className={linkStyles}
         onClick={() => setOpen(false)}
       >
         {label}
-      </CustomLink>
+      </BaseLink>
       {isExternal && (
         <Icon size={16} component={ArrowUpRight} color="brand-400" />
       )}

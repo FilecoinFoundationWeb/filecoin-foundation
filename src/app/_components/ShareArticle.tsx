@@ -7,7 +7,6 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
 import { CopyToClipboard } from '@/components/CopyToClipboard'
-import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
 type ShareArticleProps = {
@@ -48,16 +47,18 @@ export function ShareArticle({
         />
         {socialLinksWithIcons.map(({ label, href, icon }) => (
           <li key={label} className="inline-flex">
-            <CustomLink
+            <a
+              aria-label={`Share on ${label}`}
               href={href}
+              rel="noopener noreferrer"
+              title={`Share on ${label}`}
               className={clsx(
                 'focus:brand-outline hover:text-brand-400',
                 TOUCH_TARGET.class,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
-              <span className="sr-only">{`Share on ${label}`}</span>
-            </CustomLink>
+            </a>
           </li>
         ))}
       </ul>

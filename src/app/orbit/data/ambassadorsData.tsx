@@ -1,6 +1,6 @@
 import type { StaticImageProps } from '@/types/imageType'
 
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import austinImg from '@/assets/orbit/ambassadors/austin-web3-filecoin-meetup.jpg'
 import barcelonaImg from '@/assets/orbit/ambassadors/barcelona-web3fc-event.jpg'
@@ -101,14 +101,17 @@ export const ambassadorsData: Array<AmbassadorData> = [
         In September, we participated in the Fil Dev Summit Singapore event,
         serving as a volunteer leader. In the same year, we jointly became
         leaders of the Orbit Greater China region with ND Labs, establishing{' '}
-        <TextLink href="https://twitter.com/OrbitChina">Twitter</TextLink>,{' '}
-        <TextLink href="https://orbiteventsinchina.huodongxing.com/">
+        <ExternalTextLink href="https://twitter.com/OrbitChina">
+          Twitter
+        </ExternalTextLink>
+        ,{' '}
+        <ExternalTextLink href="https://orbiteventsinchina.huodongxing.com/">
           event accounts
-        </TextLink>
+        </ExternalTextLink>
         , and a{' '}
-        <TextLink href="https://www.notion.so/orbitcommunityingreaterchina/Filecoin-Orbit-Community-in-Greater-China-0d94acfa59484ef6a6a9b62d41afa2c0?pvs=4">
+        <ExternalTextLink href="https://www.notion.so/orbitcommunityingreaterchina/Filecoin-Orbit-Community-in-Greater-China-0d94acfa59484ef6a6a9b62d41afa2c0?pvs=4">
           Notion page
-        </TextLink>{' '}
+        </ExternalTextLink>{' '}
         for the Chinese region. We also assisted in the overall planning of the
         Orbit Community for 2023, recruited new ambassadors in the Chinese
         region, and promoted the organization of offline activities.

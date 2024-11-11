@@ -23,7 +23,7 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { OrbitEventsSection } from './components/EventsSection'
 import { ambassadorsData } from './data/ambassadorsData'
@@ -180,9 +180,9 @@ export default function Orbit({ searchParams }: Props) {
             <p>
               If you’re looking for the Filecoin Orbit 2021 virtual conference
               celebrating the first year of Filecoin Mainnet, the{' '}
-              <TextLink href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
+              <ExternalTextLink href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
                 event recordings are on YouTube
-              </TextLink>
+              </ExternalTextLink>
               .
             </p>
           </div>
@@ -196,13 +196,13 @@ export default function Orbit({ searchParams }: Props) {
               </li>
               <li>
                 Complete the{' '}
-                <TextLink
+                <ExternalTextLink
                   href={
                     FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm
                   }
                 >
                   application form
-                </TextLink>
+                </ExternalTextLink>
                 . After submitting, your application will undergo review. Keep
                 an eye on your email for updates on the status of your
                 application and next steps. This may take up to two weeks.

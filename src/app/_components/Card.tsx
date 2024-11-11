@@ -11,7 +11,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { isExternalLink } from '@/utils/linkUtils'
 
 import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
-import { CustomLink } from '@/components/CustomLink'
+import { BaseLink } from '@/components/BaseLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
@@ -175,7 +175,7 @@ Card.Link = function Link({
   left = 'left-4',
 }: NonNullable<CardProps['cta']>) {
   const isExternal = isExternalLink(href)
-  const textElement = <span>{text}</span>
+  const textElement = <span key="text">{text}</span>
 
   const textIcon = icon
     ? [<Icon key="custom" component={icon} />, textElement]
@@ -184,7 +184,7 @@ Card.Link = function Link({
       : textElement
 
   return (
-    <CustomLink
+    <BaseLink
       href={href}
       aria-label={ariaLabel}
       className="absolute inset-0 rounded-lg focus:brand-outline"
@@ -197,6 +197,6 @@ Card.Link = function Link({
       >
         {textIcon}
       </span>
-    </CustomLink>
+    </BaseLink>
   )
 }
