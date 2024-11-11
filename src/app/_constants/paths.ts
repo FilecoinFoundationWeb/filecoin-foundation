@@ -45,6 +45,7 @@ interface CMSConfig {
   hasSubpaths?: boolean
 }
 
+// Should they still be exported?
 export const CONTENT_ROOT = 'src/content'
 export const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 

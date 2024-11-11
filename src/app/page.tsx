@@ -31,12 +31,12 @@ import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosyste
 const ecosystemProjects = getEcosystemProjectsData()
 
 const homePageData = getPageMarkdownData({
-  slug: 'home',
+  path: PATHS.HOME,
   zodParser: HomePageDataSchema.parse,
 })
 
 const digestPageData = getPageMarkdownData({
-  slug: 'digest',
+  path: PATHS.DIGEST,
   zodParser: GenericPageDataSchema.parse,
 })
 

@@ -51,7 +51,7 @@ type Props = {
 }
 
 const blogPageData = getPageMarkdownData({
-  slug: 'blog',
+  path: PATHS.BLOG,
   zodParser: PageDataWithFeaturedEntrySchema.parse,
 })
 

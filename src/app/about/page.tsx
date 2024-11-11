@@ -28,7 +28,7 @@ import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const aboutPageData = getPageMarkdownData({
-  slug: 'about',
+  path: PATHS.ABOUT,
   zodParser: GenericPageDataSchema.parse,
 })
 

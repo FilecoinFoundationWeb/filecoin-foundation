@@ -14,7 +14,7 @@ import {
 } from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
 
-export type GetData<T> = {
+type GetData<T> = {
   slug: string
   directoryPath: string
   zodParser: ZodType<T>['parse']
