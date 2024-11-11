@@ -2,7 +2,6 @@ import { clsx } from 'clsx'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { CustomLink } from '@/components/CustomLink'
 import { Icon } from '@/components/Icon'
 
 const TOUCH_TARGET = {
@@ -21,17 +20,18 @@ export function Social() {
       {socialLinksWithIcons.map(({ label, href, icon }) => {
         return (
           <li key={label} className="inline-flex">
-            <CustomLink
+            <a
+              aria-label={`Go to ${label}`}
               href={href}
-              title={label}
+              rel="noopener noreferrer"
+              title={`Go to ${label}`}
               className={clsx(
                 'focus:brand-outline hover:text-brand-400',
                 TOUCH_TARGET.class,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
-              <span className="sr-only">{label}</span>
-            </CustomLink>
+            </a>
           </li>
         )
       })}

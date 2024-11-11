@@ -3,7 +3,7 @@ import { clsx } from 'clsx'
 
 import { isExternalLink } from '@/utils/linkUtils'
 
-import { CustomLink, type CustomLinkProps } from '@/components/CustomLink'
+import { BaseLink, type BaseLinkProps } from '@/components/BaseLink'
 import { Icon as IconComponent, type IconProps } from '@/components/Icon'
 
 const variantStyles = {
@@ -17,7 +17,7 @@ type ButtonProps = {
   children: React.ReactNode
   variant?: keyof typeof variantStyles
   icon?: IconProps['component']
-  href?: CustomLinkProps['href']
+  href?: BaseLinkProps['href']
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
@@ -65,10 +65,10 @@ export function Button({
   }
 
   return (
-    <CustomLink className={className} href={href}>
+    <BaseLink className={className} href={href}>
       <ButtonInner isExternalLink={isExternalLink(href)} icon={icon}>
         {children}
       </ButtonInner>
-    </CustomLink>
+    </BaseLink>
   )
 }

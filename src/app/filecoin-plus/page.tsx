@@ -20,7 +20,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'
@@ -81,14 +81,14 @@ export default function FilPlus() {
           ensuring trust and compliance, and participating in community
           governance. For a full list of instructions on how to become an
           allocator, please visit{' '}
-          <TextLink href={FIL_PLUS_URLS.allocators.blog}>
+          <ExternalTextLink href={FIL_PLUS_URLS.allocators.blog}>
             {extractDomain(FIL_PLUS_URLS.allocators.blog)}
-          </TextLink>
+          </ExternalTextLink>
           . We are currently prioritizing new allocators that are developing
           pathways according to our{' '}
-          <TextLink href={FIL_PLUS_URLS.allocators.rfa}>
+          <ExternalTextLink href={FIL_PLUS_URLS.allocators.rfa}>
             Request for Allocators (RFA)
-          </TextLink>
+          </ExternalTextLink>
           .
         </p>
 

@@ -5,7 +5,6 @@ import { clsx } from 'clsx'
 
 import type { StaticImageProps, ImageProps } from '@/types/imageType'
 
-import { CustomLink } from '@/components/CustomLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 
@@ -38,16 +37,17 @@ export function KeyMemberCard({
           {company && `, ${company}`}
         </p>
 
-        <CustomLink
-          href={linkedin}
+        <a
           aria-label={`Visit ${name}'s LinkedIn profile.`}
-          className="absolute inset-0 rounded-lg pb-10 focus:brand-outline"
+          href={linkedin}
+          rel="noopener noreferrer"
+          className="absolute inset-0 rounded-lg focus:brand-outline"
         >
           <span className="absolute bottom-4 left-36 inline-flex items-center gap-2 text-brand-300">
             <Icon component={LinkedinLogo} />
             LinkedIn
           </span>
-        </CustomLink>
+        </a>
       </div>
     </li>
   )
