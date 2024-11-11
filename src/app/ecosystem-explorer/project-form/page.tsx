@@ -8,7 +8,7 @@ import {
 
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 

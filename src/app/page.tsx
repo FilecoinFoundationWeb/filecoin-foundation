@@ -7,7 +7,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getFrontmatter } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import {
   BaseFrontmatterSchema,

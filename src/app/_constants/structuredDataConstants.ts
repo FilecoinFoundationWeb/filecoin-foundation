@@ -7,7 +7,7 @@ import {
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
-import { getFrontmatter } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
 

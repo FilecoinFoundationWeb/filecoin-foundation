@@ -14,7 +14,7 @@ import {
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'

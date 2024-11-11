@@ -6,7 +6,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getFrontmatter } from '@/utils/getPageMarkdownData'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { GrantsPageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
