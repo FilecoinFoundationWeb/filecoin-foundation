@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/security/bug-bounty.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -15,7 +16,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { Leaderboard } from './components/Leaderboard'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getPageMarkdownData({
+  path: PATHS.BUG_BOUNTY,
+  zodParser: GenericPageDataSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {

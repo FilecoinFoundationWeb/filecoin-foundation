@@ -3,11 +3,12 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/orbit.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -32,7 +33,10 @@ import { programGoalsData } from './data/programGoalsData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getPageMarkdownData({
+  path: PATHS.ORBIT,
+  zodParser: GenericPageDataSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {

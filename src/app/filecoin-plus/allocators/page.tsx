@@ -1,10 +1,11 @@
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/filecoin-plus/allocators.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -14,7 +15,10 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { AllocatorsTableSection } from './components/AllocatorsTableSection'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getPageMarkdownData({
+  path: PATHS.ALLOCATORS,
+  zodParser: GenericPageDataSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo,

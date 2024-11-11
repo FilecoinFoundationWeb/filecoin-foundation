@@ -36,6 +36,10 @@ export const HomePageDataSchema = GenericPageDataSchema.extend({
   featured_ecosystem_projects: z.array(MarkdownEntryPathSchema),
 })
 
+export const GrantPageDataSchema = GenericPageDataSchema.extend({
+  featured_grant_graduates: z.array(MarkdownEntryPathSchema),
+})
+
 function validateMarkdownEntryPathFormat(value: string) {
   return value.startsWith(CONTENT_ROOT) && value.endsWith(MARKDOWN_EXTENSION)
 }

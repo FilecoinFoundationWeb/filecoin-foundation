@@ -1,14 +1,14 @@
-import path from 'path'
-
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
-import { attributes } from '@/content/pages/grants.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GrantPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -31,14 +31,18 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
-const { featured_grant_graduates, header, seo } = attributes
 
-if (!featured_grant_graduates) {
-  throw new Error('Featured grant graduates are undefined')
-}
+const {
+  header,
+  seo,
+  featuredGrantGraduates: featuredGrantGraduatePaths,
+} = getPageMarkdownData({
+  path: PATHS.GRANTS,
+  zodParser: GrantPageDataSchema.parse,
+})
 
-const grantGraduatesSlugs = featured_grant_graduates.map(
-  (item) => path.parse(item).name,
+const grantGraduatesSlugs = featuredGrantGraduatePaths.map(
+  extractSlugFromFilename,
 )
 
 const grantGraduates = ecosystemProjects.filter((item) =>

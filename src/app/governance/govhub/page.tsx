@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/governance/govhub.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -19,7 +20,10 @@ import { ToolsCardContent } from './components/ToolsCardContent'
 import { toolsData } from './data/toolsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getPageMarkdownData({
+  path: PATHS.GOVHUB,
+  zodParser: GenericPageDataSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {

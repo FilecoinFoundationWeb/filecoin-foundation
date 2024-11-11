@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/security/security.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
+
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
 
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
@@ -18,7 +19,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { developerSupportData } from './data/developerSupportData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getPageMarkdownData({
+  path: PATHS.SECURITY,
+  zodParser: GenericPageDataSchema.parse,
+})
+
 export const metadata = createMetadata({
   seo: {
     ...seo,

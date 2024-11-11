@@ -1,14 +1,21 @@
 import type { Organization, WithContext } from 'schema-dts'
 
+import { PATHS } from '@/constants/paths'
 import {
   BASE_URL,
   FILECOIN_FOUNDATION_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/about.md'
+import { getPageMarkdownData } from '@/utils/getPageMarkdownData'
 
-const { header } = attributes
+import { GenericPageDataSchema } from '@/schemas/PageDataSchema'
+
+const { header: aboutPageHeader } = getPageMarkdownData({
+  path: PATHS.ABOUT,
+  zodParser: GenericPageDataSchema.parse,
+})
+
 const { social, email } = FILECOIN_FOUNDATION_URLS
 
 export const SCHEMA_CONTEXT_URL = 'https://schema.org'
@@ -21,7 +28,7 @@ export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
   '@type': 'Organization',
   name: ORGANIZATION_NAME,
-  description: header.description,
+  description: aboutPageHeader.description,
   url: BASE_URL,
   sameAs: [
     social.bluesky.href,
