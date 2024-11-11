@@ -14,19 +14,19 @@ type ListboxButtonProps = {
   compactBelow?: Breakpoint
 }
 
-type ViewTransition = {
-  hide: string
-  show: string
+type LayoutVariant = {
+  full: string
+  compact: string
 }
 
-type BreakpointStyles = Record<Breakpoint, ViewTransition>
+type BreakpointStyles = Record<Breakpoint, LayoutVariant>
 
 const breakpointStyles: BreakpointStyles = {
-  sm: { hide: 'sm:hidden', show: 'sm:flex' },
-  md: { hide: 'md:hidden', show: 'md:flex' },
-  lg: { hide: 'lg:hidden', show: 'lg:flex' },
-  xl: { hide: 'xl:hidden', show: 'xl:flex' },
-  '2xl': { hide: '2xl:hidden', show: '2xl:flex' },
+  sm: { full: 'hidden sm:flex', compact: 'flex sm:hidden' },
+  md: { full: 'hidden md:flex', compact: 'flex md:hidden' },
+  lg: { full: 'hidden lg:flex', compact: 'flex lg:hidden' },
+  xl: { full: 'hidden xl:flex', compact: 'flex xl:hidden' },
+  '2xl': { full: 'hidden 2xl:flex', compact: 'flex 2xl:hidden' },
 } as const
 
 export function ListboxButton({
@@ -38,8 +38,8 @@ export function ListboxButton({
     <HeadlessUIListboxButton className="relative inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
       <div
         className={clsx(
-          'flex w-full items-center justify-start gap-2',
-          compactBelow && breakpointStyles[compactBelow].hide,
+          'w-full items-center justify-start gap-2',
+          compactBelow ? breakpointStyles[compactBelow].full : 'flex',
         )}
       >
         {leadingIcon && <Icon component={leadingIcon} />}
@@ -52,8 +52,8 @@ export function ListboxButton({
 
       <div
         className={clsx(
-          'hidden',
-          compactBelow && breakpointStyles[compactBelow].show,
+          'items-center justify-center',
+          compactBelow ? breakpointStyles[compactBelow].compact : 'hidden',
         )}
       >
         <Icon component={leadingIcon ?? CaretDown} />
