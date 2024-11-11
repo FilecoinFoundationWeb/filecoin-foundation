@@ -1,6 +1,8 @@
+import fs from 'fs'
+
 import { z } from 'zod'
 
-import { CONTENT_ROOT } from '@/constants/paths'
+import { CONTENT_ROOT, MARKDOWN_EXTENSION } from '@/constants/paths'
 
 const HeaderSchema = z.object({
   title: z.string(),
@@ -12,10 +14,13 @@ const SeoSchema = z.object({
   description: z.string(),
 })
 
-const MarkdownEntryPathSchema = z
+const MarkdownEntrySchema = z
   .string()
   .refine(validateMarkdownEntryPathFormat, {
     message: 'Invalid markdown entry path format',
+  })
+  .refine(fs.existsSync, {
+    message: 'Markdown entry does not exist',
   })
 
 export const GenericPageDataSchema = z.object({
@@ -24,13 +29,13 @@ export const GenericPageDataSchema = z.object({
 })
 
 export const PageDataWithFeaturedEntrySchema = GenericPageDataSchema.extend({
-  featured_entry: MarkdownEntryPathSchema,
+  featured_entry: MarkdownEntrySchema,
 })
 
 export const HomePageDataSchema = GenericPageDataSchema.extend({
-  featured_ecosystem_projects: z.array(MarkdownEntryPathSchema),
+  featured_ecosystem_projects: z.array(MarkdownEntrySchema),
 })
 
 function validateMarkdownEntryPathFormat(value: string) {
-  return value.startsWith(CONTENT_ROOT) && value.endsWith('.md')
+  return value.startsWith(CONTENT_ROOT) && value.endsWith(MARKDOWN_EXTENSION)
 }

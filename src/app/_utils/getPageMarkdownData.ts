@@ -3,7 +3,7 @@ import fs from 'fs'
 import convertObjectKeysToCamelCase from 'camelcase-keys'
 import { ZodError, type ZodType } from 'zod'
 
-import { type PathConfig } from '@/constants/paths'
+import { MARKDOWN_EXTENSION, type PathConfig } from '@/constants/paths'
 
 import type { Object } from '@/_types/utils'
 
@@ -18,8 +18,6 @@ type GetPageData<T> = {
   zodParser: ZodType<T>['parse']
   path: PathConfig
 }
-
-const MARKDOWN_EXTENSION = '.md'
 
 export function getPageMarkdownData<T extends Object>({
   path,
