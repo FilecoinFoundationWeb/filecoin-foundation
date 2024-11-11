@@ -2,7 +2,7 @@ import fs from 'fs'
 
 import { z } from 'zod'
 
-import { CONTENT_ROOT, MARKDOWN_EXTENSION } from '@/constants/paths'
+import { isValidMarkdownPath } from '@/utils/fileUtils'
 
 const FrontmatterHeaderSchema = z.object({
   title: z.string(),
@@ -39,7 +39,3 @@ export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
 export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
   featured_grant_graduates: z.array(MarkdownPathSchema),
 })
-
-function isValidMarkdownPath(path: string): boolean {
-  return path.startsWith(CONTENT_ROOT) && path.endsWith(MARKDOWN_EXTENSION)
-}
