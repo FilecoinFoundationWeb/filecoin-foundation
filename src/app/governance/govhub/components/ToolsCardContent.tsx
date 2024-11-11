@@ -3,7 +3,7 @@ import { clsx } from 'clsx'
 import type { CTAProps } from '@/types/ctaType'
 
 import { Heading } from '@/components/Heading'
-import { ExternalTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type ToolsCardContentProps = {
   title: string

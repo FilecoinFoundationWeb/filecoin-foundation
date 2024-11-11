@@ -1,6 +1,6 @@
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { ExternalTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 export const applicationData = [
   {

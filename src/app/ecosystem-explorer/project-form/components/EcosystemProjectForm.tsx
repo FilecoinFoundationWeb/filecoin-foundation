@@ -17,7 +17,7 @@ import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
-import { ExternalTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
   BRIEF_CHARACTER_LIMIT,

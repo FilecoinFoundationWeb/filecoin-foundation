@@ -3,7 +3,8 @@ import { footerNavigationItems } from '@/constants/navigation'
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { Social } from '@/components/Social'
-import { ExternalTextLink, SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
+import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 export function Footer() {
   return (

@@ -10,7 +10,7 @@ import { isExternalLink } from '@/utils/linkUtils'
 
 import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
-import { linkBaseStyles } from '@/components/TextLink'
+import styles from '@/components/TextLink/TextLink.module.scss'
 
 export type LinkItemProps = {
   label: string
@@ -26,7 +26,7 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
     isExternal && 'inline-flex items-center gap-1',
   )
   const linkStyles = clsx(
-    linkBaseStyles,
+    styles.base,
     "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
   )
 

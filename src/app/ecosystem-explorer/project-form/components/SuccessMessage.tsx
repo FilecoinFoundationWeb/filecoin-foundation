@@ -8,7 +8,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
-import { ExternalTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type SuccessMessageProps = {
   prNumber: number
