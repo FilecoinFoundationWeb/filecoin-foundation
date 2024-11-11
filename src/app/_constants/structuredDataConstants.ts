@@ -9,7 +9,7 @@ import {
 
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 const { header: aboutPageHeader } = getFrontmatter({
   path: PATHS.ABOUT,

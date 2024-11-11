@@ -6,7 +6,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'

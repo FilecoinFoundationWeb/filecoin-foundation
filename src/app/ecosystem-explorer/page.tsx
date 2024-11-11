@@ -17,7 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'

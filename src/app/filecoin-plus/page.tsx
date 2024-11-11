@@ -9,7 +9,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { extractDomain } from '@/utils/extractDomain'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'

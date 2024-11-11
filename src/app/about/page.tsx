@@ -10,7 +10,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'

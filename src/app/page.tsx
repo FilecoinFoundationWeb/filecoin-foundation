@@ -12,7 +12,7 @@ import { getFrontmatter } from '@/utils/getFrontmatter'
 import {
   BaseFrontmatterSchema,
   HomePageFrontmatterSchema,
-} from '@/schemas/PageDataSchema'
+} from '@/schemas/FrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'

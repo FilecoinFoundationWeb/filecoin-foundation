@@ -8,7 +8,7 @@ import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { GrantsPageFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { GrantsPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'

@@ -21,7 +21,7 @@ import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
-import { FeaturedPageFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
