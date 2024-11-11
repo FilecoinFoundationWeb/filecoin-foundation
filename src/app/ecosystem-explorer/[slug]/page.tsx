@@ -22,9 +22,8 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink, SmartTextLink } from '@/components/TextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
-
 
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
@@ -127,13 +126,13 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           {repo && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={GitFork} />
-              <SmartTextLink href={repo}>GitHub</SmartTextLink>
+              <ExternalTextLink href={repo}>GitHub</ExternalTextLink>
             </li>
           )}
           {twitter && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={XLogo} />
-              <SmartTextLink href={twitter}>X.com</SmartTextLink>
+              <ExternalTextLink href={twitter}>X.com</ExternalTextLink>
             </li>
           )}
           {featuredContent && (

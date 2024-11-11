@@ -17,7 +17,7 @@ import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink'
 
 import {
   BRIEF_CHARACTER_LIMIT,
@@ -170,7 +170,9 @@ export function EcosystemProjectForm({
               For best quality, please submit a white logo with a transparent
               background, at least 1000px by 1000px, and under 100KB. You can
               use tools like{' '}
-              <SmartTextLink href="https://squoosh.app/">Squoosh</SmartTextLink>{' '}
+              <ExternalTextLink href="https://squoosh.app/">
+                Squoosh
+              </ExternalTextLink>{' '}
               to compress your image.
             </>
           }

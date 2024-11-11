@@ -21,7 +21,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink'
 
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
@@ -155,18 +155,18 @@ export default function Grants() {
         description={
           <>
             Please visit our{' '}
-            <SmartTextLink href={FILECOIN_FOUNDATION_URLS.grants.github}>
+            <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.grants.github}>
               GitHub repo
-            </SmartTextLink>{' '}
+            </ExternalTextLink>{' '}
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
-            <SmartTextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
+            <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
               {extractEmailAddress(FILECOIN_FOUNDATION_URLS.grants.email.href)}
-            </SmartTextLink>{' '}
+            </ExternalTextLink>{' '}
             or join our{' '}
-            <SmartTextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
+            <ExternalTextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
               monthly office hours
-            </SmartTextLink>
+            </ExternalTextLink>
             !
           </>
         }

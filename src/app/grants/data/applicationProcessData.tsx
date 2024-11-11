@@ -1,4 +1,4 @@
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink'
 
 export const applicationProcessData = [
   {
@@ -7,13 +7,13 @@ export const applicationProcessData = [
     description: (
       <>
         After reviewing the{' '}
-        <SmartTextLink href="https://github.com/filecoin-project/devgrants">
+        <ExternalTextLink href="https://github.com/filecoin-project/devgrants">
           grant criteria
-        </SmartTextLink>
+        </ExternalTextLink>
         , create a new issue using the proposal template on{' '}
-        <SmartTextLink href="https://github.com/filecoin-project/devgrants/issues/new/choose">
+        <ExternalTextLink href="https://github.com/filecoin-project/devgrants/issues/new/choose">
           GitHub
-        </SmartTextLink>
+        </ExternalTextLink>
         .
       </>
     ),

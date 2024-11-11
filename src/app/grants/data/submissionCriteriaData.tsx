@@ -1,6 +1,6 @@
 import { Code, BracketsAngle, Users } from '@phosphor-icons/react/dist/ssr'
 
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink'
 
 export const submissionCriteriaData = [
   {
@@ -13,13 +13,13 @@ export const submissionCriteriaData = [
     description: (
       <>
         All projects must be dual-licensed under{' '}
-        <SmartTextLink href="https://opensource.org/license/mit">
+        <ExternalTextLink href="https://opensource.org/license/mit">
           MIT
-        </SmartTextLink>{' '}
+        </ExternalTextLink>{' '}
         and{' '}
-        <SmartTextLink href="https://opensource.org/licenses/Apache-2.0">
+        <ExternalTextLink href="https://opensource.org/licenses/Apache-2.0">
           APACHE2
-        </SmartTextLink>{' '}
+        </ExternalTextLink>{' '}
         licenses.
       </>
     ),

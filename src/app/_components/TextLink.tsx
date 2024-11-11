@@ -33,7 +33,11 @@ function InternalTextLink({ className, children, ...rest }: TextLinkProps) {
   )
 }
 
-function ExternalTextLink({ className, children, ...rest }: TextLinkProps) {
+export function ExternalTextLink({
+  className,
+  children,
+  ...rest
+}: TextLinkProps) {
   return (
     <BaseLink
       className={clsx(

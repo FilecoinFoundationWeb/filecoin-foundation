@@ -3,7 +3,7 @@ import { footerNavigationItems } from '@/constants/navigation'
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { Social } from '@/components/Social'
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink, SmartTextLink } from '@/components/TextLink'
 
 export function Footer() {
   return (
@@ -51,9 +51,9 @@ export function Footer() {
       <p className="text-center text-sm">
         &copy; {new Date().getFullYear()} Content on this site is licensed under
         a{' '}
-        <SmartTextLink href="https://creativecommons.org/licenses/by/4.0/">
+        <ExternalTextLink href="https://creativecommons.org/licenses/by/4.0/">
           Creative Commons Attribution 4.0 International license
-        </SmartTextLink>
+        </ExternalTextLink>
       </p>
     </footer>
   )

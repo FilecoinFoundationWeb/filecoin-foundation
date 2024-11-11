@@ -3,7 +3,7 @@ import { clsx } from 'clsx'
 import type { CTAProps } from '@/types/ctaType'
 
 import { Heading } from '@/components/Heading'
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink'
 
 type ToolsCardContentProps = {
   title: string
@@ -34,7 +34,7 @@ export function ToolsCardContent({
           ))}
         </ul>
       </div>
-      <SmartTextLink href={cta.href}>{cta.text}</SmartTextLink>
+      <ExternalTextLink href={cta.href}>{cta.text}</ExternalTextLink>
     </div>
   )
 }

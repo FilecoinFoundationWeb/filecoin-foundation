@@ -1,7 +1,7 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
-import { SmartTextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
 
@@ -60,9 +60,12 @@ export const allocatorsTableColumnsData = [
       }
 
       return (
-        <SmartTextLink aria-label={`Apply for ${name} allocator`} href={link}>
+        <ExternalTextLink
+          aria-label={`Apply for ${name} allocator`}
+          href={link}
+        >
           Apply
-        </SmartTextLink>
+        </ExternalTextLink>
       )
     },
   }),
