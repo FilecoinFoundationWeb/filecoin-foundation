@@ -15,11 +15,13 @@ export async function AllocatorsTableSection() {
 
     return <AllocatorsTableWithFilters data={allocatorsWithDatacap} />
   } catch (error) {
-    console.error('Error fetching or validating allocators:', error)
+    const message = 'Error fetching or validating allocators'
+
+    console.error({ message, error })
 
     Sentry.captureException(error, {
-      tags: { component: 'AllocatorsTableSection' },
-      extra: { message: 'Error fetching or validating allocators' },
+      tags: { component: AllocatorsTableSection.name },
+      extra: { message },
     })
 
     return <NoDataAvailableMessage />

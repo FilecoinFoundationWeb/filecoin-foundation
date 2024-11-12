@@ -2,13 +2,15 @@ import { getAllocators } from '../utils/getAllocators'
 import { getDatacapStats } from '../utils/getDatacapStats'
 
 export async function getAllocatorsWithDatacap() {
-  const allocators = await getAllocators()
-  const datacapStats = await getDatacapStats()
+  const [allocators, datacapStats] = await Promise.all([
+    getAllocators(),
+    getDatacapStats(),
+  ])
+
+  const statsMap = new Map(datacapStats.map((stats) => [stats.address, stats]))
 
   const allocatorsWithDatacap = allocators.map((allocator) => {
-    const stats = datacapStats.find(
-      (stats) => stats.address === allocator.address,
-    )
+    const stats = statsMap.get(allocator.address)
 
     return {
       ...allocator,

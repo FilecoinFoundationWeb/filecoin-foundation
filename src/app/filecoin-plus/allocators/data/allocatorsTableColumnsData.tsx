@@ -1,10 +1,10 @@
 import { createColumnHelper } from '@tanstack/react-table'
-import prettyBytes from 'pretty-bytes'
 
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import { formatDatacap } from '../utils/formatDatacap'
 
 const columnHelper = createColumnHelper<AllocatorWithDatacap>()
 
@@ -79,7 +79,3 @@ export const allocatorsTableColumnsData = [
     },
   }),
 ]
-
-function formatDatacap(value?: string) {
-  return value ? prettyBytes(Number(value)) : 'No data available'
-}

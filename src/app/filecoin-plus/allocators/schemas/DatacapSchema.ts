@@ -1,12 +1,6 @@
 import { z } from 'zod'
 
-export const DatacapSchema = z.object({
-  address: z.string(),
-  remainingDatacap: z.string(),
-  allowance: z.string(),
-})
-
-const AllowanceArrayItemSchema = z.object({
+const APIDatacapAllowanceHistorySchema = z.object({
   id: z.number(),
   error: z.string(),
   height: z.number(),
@@ -21,7 +15,7 @@ const AllowanceArrayItemSchema = z.object({
   createMessageTimestamp: z.number(),
 })
 
-const BaseDatacapSchema = z.object({
+const APIDatacapSchema = z.object({
   id: z.number(),
   addressId: z.string(),
   address: z.string(),
@@ -39,10 +33,17 @@ const BaseDatacapSchema = z.object({
   createMessageTimestamp: z.number(),
   verifiedClientsCount: z.number(),
   receivedDatacapChange: z.string(),
-  allowanceArray: z.array(AllowanceArrayItemSchema),
+  allowanceArray: z.array(APIDatacapAllowanceHistorySchema),
   auditStatus: z.string().nullable(),
   remainingDatacap: z.string(),
 })
 
-export type Datacap = z.infer<typeof DatacapSchema>
-export type BaseDatacap = z.infer<typeof BaseDatacapSchema>
+export const InternalDatacapSchema = APIDatacapSchema.pick({
+  address: true,
+  remainingDatacap: true,
+  allowance: true,
+})
+
+export const GetDatacapStatsResponseSchema = z.object({
+  data: z.array(APIDatacapSchema),
+})
