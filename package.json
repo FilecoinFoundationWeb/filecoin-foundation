@@ -36,7 +36,7 @@
     "clsx": "^2.1.1",
     "crypto-js": "^4.2.0",
     "date-fns": "^3.6.0",
-    "decap-cms-app": "^3.3.2",
+    "decap-cms-app": "^3.4.0",
     "frontmatter-markdown-loader": "^3.7.0",
     "gray-matter": "^4.0.3",
     "joi": "^17.13.3",
