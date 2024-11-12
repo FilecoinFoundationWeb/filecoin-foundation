@@ -3,12 +3,13 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/digest.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -21,7 +22,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getDigestArticlesData } from './utils/getDigestArticleData'
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.DIGEST,
+  zodParser: BaseFrontmatterSchema.parse,
+})
+
 const articles = getDigestArticlesData()
 
 export const metadata = createMetadata({

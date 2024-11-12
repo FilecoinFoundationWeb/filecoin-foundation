@@ -6,10 +6,11 @@ import {
   PATHS,
 } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
-
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
@@ -23,7 +24,10 @@ import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo,

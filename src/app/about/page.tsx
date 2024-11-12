@@ -4,12 +4,13 @@ import { clsx } from 'clsx'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { attributes } from '@/content/pages/about.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -26,7 +27,10 @@ import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.ABOUT,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {

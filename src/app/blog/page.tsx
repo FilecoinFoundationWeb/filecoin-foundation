@@ -1,5 +1,3 @@
-import path from 'path'
-
 import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -8,16 +6,18 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/blog.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -50,19 +50,18 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
+const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({
+  path: PATHS.BLOG,
+  zodParser: FeaturedPageFrontmatterSchema.parse,
+})
+
 const posts = getBlogPostsData()
 
 const sortOptions = getSortOptions(blogSortConfigs)
 
 const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
 
-const { featured_entry, seo } = attributes
-
-if (!featured_entry) {
-  throw new Error('Featured entry is undefined')
-}
-
-const featuredPostSlug = path.parse(featured_entry).name
+const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
 const featuredPost = getBlogPostData(featuredPostSlug)
 
 export const metadata = createMetadata({
@@ -75,10 +74,6 @@ export const metadata = createMetadata({
 })
 
 export default function Blog({ searchParams }: Props) {
-  if (!featuredPost) {
-    throw new Error('Featured post not found')
-  }
-
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: posts,
