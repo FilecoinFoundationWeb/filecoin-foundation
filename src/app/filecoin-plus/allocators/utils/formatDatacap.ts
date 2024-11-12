@@ -1,7 +1,8 @@
 import prettyBytes from 'pretty-bytes'
 
 export function formatDatacap(bytes?: string) {
-  return !isNaN(Number(bytes)) && Number.isFinite(Number(bytes))
-    ? prettyBytes(Number(bytes), { binary: true })
-    : 'N/A'
+  if (bytes === undefined || bytes === '') return 'N/A'
+  const num = Number(bytes)
+  if (isNaN(num) || !Number.isFinite(num) || num === 0) return 'N/A'
+  return prettyBytes(num, { binary: true })
 }
