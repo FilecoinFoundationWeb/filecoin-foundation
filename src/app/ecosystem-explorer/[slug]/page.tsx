@@ -22,7 +22,8 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagLabel } from '@/components/TagLabel'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
+import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
@@ -120,25 +121,27 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
           {website && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={Globe} />
-              <TextLink href={website}>Website</TextLink>
+              <SmartTextLink href={website}>Website</SmartTextLink>
             </li>
           )}
           {repo && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={GitFork} />
-              <TextLink href={repo}>GitHub</TextLink>
+              <ExternalTextLink href={repo}>GitHub</ExternalTextLink>
             </li>
           )}
           {twitter && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={XLogo} />
-              <TextLink href={twitter}>X.com</TextLink>
+              <ExternalTextLink href={twitter}>X.com</ExternalTextLink>
             </li>
           )}
           {featuredContent && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={BookOpen} />
-              <TextLink href={featuredContent}>Featured Content</TextLink>
+              <SmartTextLink href={featuredContent}>
+                Featured Content
+              </SmartTextLink>
             </li>
           )}
         </ul>

@@ -45,8 +45,9 @@ interface CMSConfig {
   hasSubpaths?: boolean
 }
 
-const CONTENT_ROOT = 'src/content'
+export const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
+export const MARKDOWN_EXTENSION = '.md'
 
 function createPathConfig(
   path: PathValues,
@@ -78,10 +79,11 @@ function createPathConfig(
 
 export const PATHS = {
   ABOUT: createPathConfig('/about', 'About'),
+  ALLOCATORS: createPathConfig('/filecoin-plus/allocators', 'Allocators'),
   BLOG: createPathConfig('/blog', 'Blog', {
     includesEntries: true,
   }),
-  ALLOCATORS: createPathConfig('/filecoin-plus/allocators', 'Allocators'),
+
   BUG_BOUNTY: createPathConfig('/security/bug-bounty', 'Bug Bounty Program'),
   COORDINATED_DISCLOSURE_POLICY: createPathConfig(
     '/security/coordinated-disclosure-policy',
@@ -110,8 +112,12 @@ export const PATHS = {
   EVENTS: createPathConfig('/events', 'Events', {
     includesEntries: true,
   }),
-  FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus'),
-  GOVERNANCE: createPathConfig('/governance', 'Governance'),
+  FIL_PLUS: createPathConfig('/filecoin-plus', 'Filecoin Plus', {
+    hasSubpaths: true,
+  }),
+  GOVERNANCE: createPathConfig('/governance', 'Governance', {
+    hasSubpaths: true,
+  }),
   GOVHUB: createPathConfig('/governance/govhub', 'GovHub'),
   GRANTS: createPathConfig('/grants', 'Grants'),
   ORBIT: createPathConfig('/orbit', 'Orbit'),

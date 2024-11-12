@@ -2,11 +2,12 @@ import dynamic from 'next/dynamic'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/maturity-model.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -29,7 +30,10 @@ const DynamicDesktopTableOfContents = dynamic(
   { ssr: false },
 )
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.MATURITY_MODEL,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {

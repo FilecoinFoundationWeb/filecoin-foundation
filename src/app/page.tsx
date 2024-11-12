@@ -1,16 +1,18 @@
-import path from 'path'
-
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
-
-import { attributes as digestAttributes } from '@/content/pages/digest.md'
-import { attributes } from '@/content/pages/home.md'
 
 import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import {
+  BaseFrontmatterSchema,
+  HomePageFrontmatterSchema,
+} from '@/schemas/FrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -28,15 +30,22 @@ import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosyste
 
 const ecosystemProjects = getEcosystemProjectsData()
 
-const { featured_ecosystem_projects, header, seo } = attributes
-const { header: digestHeader } = digestAttributes
+const {
+  header,
+  seo,
+  featuredEcosystemProjects: featuredEcosystemProjectPaths,
+} = getFrontmatter({
+  path: PATHS.HOME,
+  zodParser: HomePageFrontmatterSchema.parse,
+})
 
-if (!featured_ecosystem_projects) {
-  throw new Error('Featured ecosystem projects are undefined')
-}
+const { header: digestPageHeader } = getFrontmatter({
+  path: PATHS.DIGEST,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
-const featuredEcosystemProjectsSlugs = featured_ecosystem_projects.map(
-  (item) => path.parse(item).name,
+const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
+  extractSlugFromFilename,
 )
 
 const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
@@ -114,9 +123,9 @@ export default function Home() {
 
         <PageSection
           kicker="Digest"
-          title={digestHeader.title}
+          title={digestPageHeader.title}
           image={graphicsData.digest}
-          description={digestHeader.description}
+          description={digestPageHeader.description}
           cta={{
             href: PATHS.DIGEST.path,
             text: 'Read Digest',

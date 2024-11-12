@@ -6,8 +6,6 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
@@ -16,7 +14,10 @@ import {
   getCategorySettingsFromMap,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -54,7 +55,10 @@ const ecosystemProjects = getEcosystemProjectsData()
 
 const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.ECOSYSTEM_EXPLORER,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {

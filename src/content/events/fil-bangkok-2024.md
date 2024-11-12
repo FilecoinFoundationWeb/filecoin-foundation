@@ -180,6 +180,8 @@ schedule:
           speakers:
             - name: Alexander Kinstler
               company: Storacha
+            - name: "Hannah Howard "
+              company: "Storacha "
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:17:00.000Z
           end: 2024-11-11T16:31:00.000Z
@@ -206,8 +208,13 @@ schedule:
           start: 2024-11-11T15:13:00.000Z
           end: 2024-11-11T15:20:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+          description: "With AI-generated content expected to represent 90% of online data
+            by 2026, we need smart platforms that democratize data ownership
+            while embedding necessary privacy protections. Ghostdrive delivers
+            an affordable, secure, AI-driven Web3 data platform empowering one
+            million users to control and monetize their data via AI. "
         - location: "Samyan Mitrtown: Main Hall"
-          title: "Filecoin Nexus: Decentralized Tools for Environmental Change"
+          title: "Sponsored Content: Decentralized Tools for Environmental Change"
           moderators:
             - name: Megan Klimen
               company: Filecoin Foundation
@@ -227,10 +234,17 @@ schedule:
             verifiability to environmental efforts. By making data globally
             available and authenticating energy and environmental claims,
             they’re cultivating a world where we’re accountable for our impact.
-        - title: GhostDrive Workshop and Demo
+        - title: "Demo: GhostDrive: An AI-Enabled Data Platform"
           start: 2024-11-11T11:00:00.000Z
           end: 2024-11-11T12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+          description: Join the GhostDrive team for a hands-on demo of their Web3 data
+            management platform built on Filecoin.  Dive deep into the product
+            roadmap and learn how GD empowers users to collaborate on generative
+            AI training data –– and become a validator of AI data yourself!
+          speakers:
+            - name: "Roman Nebo "
+              company: "Ghost Drive "
         - title: "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
             Infra"
           description: "Industry leaders at the intersection of DePIN and AI break down
@@ -245,7 +259,7 @@ schedule:
           speakers:
             - name: Anjali George
               company: Theoriq
-            - name: Alex Blagirev
+            - name: Alejandro Rodríguez
               company: SingularityNET
             - name: Ayush Ranjan
               company: Huddle01
@@ -254,7 +268,7 @@ schedule:
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T14:00:00.000Z
           end: 1904-11-11T14:30:00.000Z
-        - title: "Announcement: Driving Onchain Activity with a FIL-Backed Stablecoin"
+        - title: "Sponsor Content: Driving Onchain Activity with a FIL-Backed Stablecoin"
           description: Backed by FIL, USDFC is more than just a stablecoin. It’s a
             catalyst for the next level of onchain activity for the Filecoin
             network. This new addition to Filecoin’s storage marketplace
@@ -267,41 +281,38 @@ schedule:
           start: 2024-11-11T16:32:00.000Z
           end: 2024-11-11T16:39:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: "Fireside Chat: How Filecoin and Axelar are Building to Scale Web3"
+        - title: "From Milestones to Moonshots: A 2024 Filecoin Network Retrospective and
+            Look Ahead to 2025"
           description: >
-            Two veteran L1 innovators come together to discuss the imperative of
-            building interoperable Web3 infra. They’ll dive into the work being
-            done to create composable and scalable frameworks in the Filecoin
-            and Axelar universes and the possibilities unlocked by technical
-            integrations between these two chains.
+            Join FilOz CEO and Protocol Labs Engineering & Research Lead Molly
+            Mackinlay as she unpacks the network’s game-changing technical
+            developments in 2024. Then, she’ll sit down to give an inside
+            preview of Filecoin's roadmap for 2025 and the future of
+            decentralized storage.
           speakers:
             - name: Molly Mackinlay
               company: FilOZ
-            - name: Georgios Vlacho
-              company: Axelar
           start: 2024-11-11T15:55:00.000Z
           end: 2024-11-11T16:15:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: Serving DePIN Builders with Modular + Performant Web Infrastructure
-          description: An exploration into the abridged history of modern web infra with a
-            specific focus on the recent crossover of DePIN, AI, and how Fleek
-            provides developers with  modular, decentralized infrastructure to
-            unlock the full potential of projects building with DePIN, AI, or
-            both. We’ll walk through each layer of the stack — from
-            decentralized storage to dynamic hosting, to DNS and beyond — while
-            also highlighting the significance of supporting bleeding-edge tech
-            like TEEs, in particular, Intel SGX. Understanding Fleek’s unique
-            approach to development of these core parts of the stack will enable
-            any builder to seamlessly deploy robust, decentralized applications
-            without compromising on performance, security, or cost.
+        - title: "Sponsor Content: Building AI Agents in the Era of DePIN: Ensuring Trust
+            and Integrity with TEEs"
+          description: In a world increasingly powered by decentralized infrastructures,
+            building simultaneously trustworthy and autonomous AI agents is
+            essential. This session will explore how Trusted Execution
+            Environments (TEEs) safeguard AI integrity within DePIN ecosystems,
+            offering a practical approach to verifying agent independence and
+            data security. Join us as we uncover how this versatile technology
+            can enable the next wave of secure, decentralized AI applications
+            and revolutionize digital trust.
           speakers:
             - name: Patrick Kearney
               company: Fleek
           start: 2024-11-11T14:47:00.000Z
           end: 2024-11-11T15:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
-        - title: "Filecoin Nexus: Revolutionizing Healthcare Data Sovereignty: Hippocrat
-            Data Protocol"
+        - title: "Sponsored Content: Revolutionizing Healthcare Data Sovereignty:
+            Hippocrat Data Protocol"
           description: Learn how Hippocrat is empowering healthcare data sovereignty
             through zero-knowledge proofs and decentralized storage.
           speakers:
@@ -310,6 +321,60 @@ schedule:
           start: 2024-11-11T14:34:00.000Z
           end: 2024-11-11T14:46:00.000Z
           location: "Samyan Mitrtown: Main Hall"
+        - title: Lunch
+          start: 2024-11-11T12:30:00.000Z
+          end: 2024-11-11T14:00:00.000Z
+          location: Samyan Mitrtown
+        - title: "Fireside Chat: Juan Benet on DePIN and AI"
+          description: Hear from Juan Benet, founder of Protocol Labs and inventor of IPFS
+            and Filecoin, as he reflects on the driving forces behind building
+            humanity's global decentralized storage network. Alongside Ansa
+            Research’s Jonathan Victor, Juan will share the core philosophies of
+            DePIN and his vision for how AI and decentralized infrastructure
+            will converge to reshape the future of the internet.
+          speakers:
+            - name: Juan Benet
+              company: Protocol Labs
+            - name: Jonathan Victor
+              company: Ansa Research
+          start: 2024-11-11T17:30:00.000Z
+          end: 2024-11-11T18:00:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
+        - title: The Role of People in Our DePIN Future
+          start: 2024-11-11T15:21:00.000Z
+          end: 2024-11-11T15:29:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
+          speakers:
+            - name: Konstantin Tkachuk
+              company: Titan Network
+          description: Billions of devices sit idle for over 21 hours daily; Titan Network
+            is harnessing this untapped potential for a people-powered DePIN
+            cloud. Titan’s Data Availability layer on Filecoin creates a
+            decentralized cloud infra designed to onboard the masses in a highly
+            accessible and scalable approach to DePIN.
+        - title: How Huddle01 and Filecoin are Revolutionizing Decentralized Communication
+            Infrastructure
+          description: Huddle01 and Filecoin show how DePIN is transforming communication
+            with community-driven nodes and new economic models, building a
+            faster, fairer internet for all.
+          speakers:
+            - company: Huddle01
+              name: Ayush Ranjan
+          start: 2024-11-11T17:15:00.000Z
+          end: 2024-11-11T17:30:00.000Z
+          location: "Samyan Mitrtown: Main Hall"
+        - location: "Samyan Mitrtown: Main Hall"
+          start: 2024-11-11T17:00:00.000Z
+          end: 2024-11-11T17:15:00.000Z
+          title: " Calling All Developers: What to Build on Filecoin and How to Start
+            Today"
+          speakers:
+            - company: FIL-B
+              name: Sarah Thiam
+          description: Looking to get started building in the Filecoin network? Catch this
+            rapid-fire overview of the startups and tools the Filecoin network
+            needs built and how FIL-B is making it easy for devs to onboard and
+            contribute to the future of Filecoin.
       date: 2024-11-11T09:00:00.000Z
 speakers:
   - name: Juan Benet
@@ -330,12 +395,6 @@ speakers:
     linkedin: https://www.linkedin.com/in/anjaliegeorge/
     image:
       src: /assets/images/anjali-george-headshot.webp
-  - name: Georgios Vlachos
-    title: Co-Founder and Director
-    company: Axelar
-    linkedin: https://www.linkedin.com/in/georgiosvlachos
-    image:
-      src: /assets/images/georgios-vlachos-headshot.webp
   - name: Ayush Ranjan
     title: Co-founder & CEO
     company: Huddle01
@@ -354,12 +413,12 @@ speakers:
     company: FilOz
     image:
       src: /assets/images/molly-mackinlay-headshot.webp
-  - name: Alex Blagirev
-    title: Strategic Initiatives Officer
+  - name: Alejandro Rodríguez
+    title: Value Engineer
     company: SingularityNET
-    linkedin: https://www.linkedin.com/in/alexei-blagirev/
+    linkedin: https://www.linkedin.com/in/-alejandro-rodriguez/
     image:
-      src: /assets/images/alex-blagirev-headshot.webp
+      src: /assets/images/alejandro-rodri-guez-headshot.webp
   - image:
       src: /assets/images/alan_coast.webp
     name: Alan Ransil
@@ -450,6 +509,30 @@ speakers:
     linkedin: https://www.linkedin.com/in/palerthanale/
     image:
       src: /assets/images/patrick-kearney-headshot.webp
+  - name: Hannah Howard
+    title: CTO
+    company: Storacha
+    linkedin: https://www.linkedin.com/in/techgirlwonder/
+    image:
+      src: /assets/images/hannahhoward-headshot.webp
+  - name: Konstantin Tkachuk
+    title: Co-founder and CSO
+    company: Titan Network
+    linkedin: https://www.linkedin.com/in/tkachukk/
+    image:
+      src: /assets/images/konstantin-tkachuk.webp
+  - name: Jonathan Victor
+    title: Co-Founder
+    company: "Ansa Research "
+    linkedin: https://www.linkedin.com/in/jonathan-victor-69a44255/
+    image:
+      src: /assets/images/jonathan-victor-headshot-.webp
+  - name: Sarah Thiam
+    title: Founder and CEO
+    linkedin: https://www.linkedin.com/in/sarahthiam/
+    company: FIL-B
+    image:
+      src: /assets/images/sarah-thiam.webp
 sponsors:
   first-tier:
     - name: ZETACUBE
