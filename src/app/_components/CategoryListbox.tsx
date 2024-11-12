@@ -1,10 +1,6 @@
 'use client'
 
-import {
-  Listbox,
-  ListboxOptions as HeadlessUIListboxOptions,
-} from '@headlessui/react'
-import { CaretDown } from '@phosphor-icons/react/dist/ssr'
+import { Listbox } from '@headlessui/react'
 
 import {
   type CategoryCounts,
@@ -16,9 +12,9 @@ import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
+import { ListboxOptions } from '@/components/ListboxOptions'
 
 type CategoryListboxProps = {
   selected: CategoryId | undefined
@@ -27,7 +23,7 @@ type CategoryListboxProps = {
   onChange: (selected: CategoryId) => void
 }
 
-export type OptionWithCategoryCount = {
+type OptionWithCategoryCount = {
   options: Array<CategoryOption>
   counts?: CategoryCounts
 }
@@ -43,14 +39,8 @@ export function CategoryListbox({
 
   return (
     <Listbox value={selected} onChange={onChange}>
-      <ListboxButton>
-        <span>Category</span>
-        <Icon component={CaretDown} size={16} weight="bold" />
-      </ListboxButton>
-      <HeadlessUIListboxOptions
-        as="ul"
-        className="absolute z-10 mt-2 max-h-96 overflow-scroll rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
-      >
+      <ListboxButton text="Category" />
+      <ListboxOptions>
         {totalCategoryCount && (
           <ListboxOption
             option={{
@@ -63,7 +53,7 @@ export function CategoryListbox({
         {optionsWithCounts.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}
-      </HeadlessUIListboxOptions>
+      </ListboxOptions>
     </Listbox>
   )
 }

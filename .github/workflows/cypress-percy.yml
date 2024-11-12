@@ -46,7 +46,7 @@ jobs:
             COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
           fi
 
-          if [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
+          if [[ "$BRANCH_NAME" == cms/* ]] || [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
             echo "skip_percy=true" >> $GITHUB_OUTPUT
           else
             echo "skip_percy=false" >> $GITHUB_OUTPUT

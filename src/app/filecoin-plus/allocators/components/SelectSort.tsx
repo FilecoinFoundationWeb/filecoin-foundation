@@ -2,13 +2,12 @@
 
 import {
   Listbox as HeadlessUIListbox,
-  ListboxButton as HeadlessUIListboxButton,
   ListboxOptions as HeadlessUIListboxOptions,
 } from '@headlessui/react'
-import { ArrowsDownUp, CaretDown } from '@phosphor-icons/react/dist/ssr'
+import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
 import type { Column, SortDirection } from '@tanstack/react-table'
 
-import { Icon } from '@/components/Icon'
+import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 
 import type { Allocator } from '../schemas/AllocatorSchema'
@@ -35,23 +34,12 @@ export function SelectSort({
     options.find((option) => option.id === currentSortId) || defaultOption
 
   return (
-    <HeadlessUIListbox
-      value={selectedOption.id}
-      onChange={(selectedOptionId: TableSortOption['id']) =>
-        handleSortChange(selectedOptionId)
-      }
-    >
-      <HeadlessUIListboxButton className="inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
-        <div className="inline-flex items-center gap-2">
-          <Icon component={ArrowsDownUp} />
-          <span className="hidden text-nowrap md:block">
-            {selectedOption.name}
-          </span>
-        </div>
-        <span className="hidden md:block">
-          <Icon component={CaretDown} size={16} weight="bold" />
-        </span>
-      </HeadlessUIListboxButton>
+    <HeadlessUIListbox value={selectedOption.id} onChange={handleSortChange}>
+      <ListboxButton
+        leadingIcon={ArrowsDownUp}
+        text={selectedOption.name}
+        compactBelow="md"
+      />
       <HeadlessUIListboxOptions
         as="ul"
         anchor={{ to: 'bottom end', gap: 12 }}

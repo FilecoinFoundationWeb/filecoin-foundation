@@ -2,12 +2,14 @@ import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
-import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractDomain } from '@/utils/extractDomain'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -20,13 +22,16 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.FIL_PLUS,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
   seo: {
@@ -81,14 +86,14 @@ export default function FilPlus() {
           ensuring trust and compliance, and participating in community
           governance. For a full list of instructions on how to become an
           allocator, please visit{' '}
-          <TextLink href={FIL_PLUS_URLS.allocators.blog}>
+          <ExternalTextLink href={FIL_PLUS_URLS.allocators.blog}>
             {extractDomain(FIL_PLUS_URLS.allocators.blog)}
-          </TextLink>
+          </ExternalTextLink>
           . We are currently prioritizing new allocators that are developing
           pathways according to our{' '}
-          <TextLink href={FIL_PLUS_URLS.allocators.rfa}>
+          <ExternalTextLink href={FIL_PLUS_URLS.allocators.rfa}>
             Request for Allocators (RFA)
-          </TextLink>
+          </ExternalTextLink>
           .
         </p>
 

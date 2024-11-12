@@ -4,9 +4,7 @@ import {
   Listbox as HeadlessUIListbox,
   ListboxOptions as HeadlessUIListboxOptions,
 } from '@headlessui/react'
-import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 
@@ -14,16 +12,10 @@ import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
-type Option = {
-  id: string
-  name: string
-}
-
-const options: Array<Option> = coreFunctionsData.map(({ slug, title }) => ({
+const options = coreFunctionsData.map(({ slug, title }) => ({
   id: slug,
   name: title,
 }))
-
 const firstOption = options[0]
 
 export function MobileTableOfContents() {
@@ -34,16 +26,8 @@ export function MobileTableOfContents() {
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
-      <HeadlessUIListbox
-        value={selectedOption.id}
-        onChange={(selectedOptionId: Option['id']) =>
-          handleChange(selectedOptionId)
-        }
-      >
-        <ListboxButton>
-          <span className="truncate">{selectedOption.name}</span>
-          <Icon component={CaretDown} size={16} weight="bold" />
-        </ListboxButton>
+      <HeadlessUIListbox value={selectedOption.id} onChange={handleChange}>
+        <ListboxButton text={selectedOption.name} />
 
         <HeadlessUIListboxOptions
           as="ul"
@@ -58,7 +42,7 @@ export function MobileTableOfContents() {
     </nav>
   )
 
-  function handleChange(slug: Option['id']) {
+  function handleChange(slug: string) {
     updateHash(slug)
 
     const sectionHash = getHashFromSlug(slug)

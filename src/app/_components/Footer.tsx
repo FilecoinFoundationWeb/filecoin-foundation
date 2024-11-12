@@ -3,7 +3,8 @@ import { footerNavigationItems } from '@/constants/navigation'
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { Social } from '@/components/Social'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
+import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 export function Footer() {
   return (
@@ -37,9 +38,9 @@ export function Footer() {
           <div key={title}>
             <span className="mb-4 block font-bold">{title}</span>
             <ul className="flex w-max flex-col gap-3">
-              {items.map((item) => (
-                <li key={item.href}>
-                  <TextLink href={item.href}>{item.label}</TextLink>
+              {items.map(({ href, label }) => (
+                <li key={href}>
+                  <SmartTextLink href={href}>{label}</SmartTextLink>
                 </li>
               ))}
             </ul>
@@ -51,9 +52,9 @@ export function Footer() {
       <p className="text-center text-sm">
         &copy; {new Date().getFullYear()} Content on this site is licensed under
         a{' '}
-        <TextLink href="https://creativecommons.org/licenses/by/4.0/">
+        <ExternalTextLink href="https://creativecommons.org/licenses/by/4.0/">
           Creative Commons Attribution 4.0 International license
-        </TextLink>
+        </ExternalTextLink>
       </p>
     </footer>
   )

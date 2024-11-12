@@ -1,8 +1,8 @@
 import { createColumnHelper } from '@tanstack/react-table'
 
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import { ApplyLink } from '../components/ApplyLink'
 import type { Allocator } from '../schemas/AllocatorSchema'
 
 const columnHelper = createColumnHelper<Allocator>()
@@ -59,7 +59,14 @@ export const allocatorsTableColumnsData = [
         return null
       }
 
-      return <ApplyLink link={link} name={name} />
+      return (
+        <ExternalTextLink
+          aria-label={`Apply for ${name} allocator`}
+          href={link}
+        >
+          Apply
+        </ExternalTextLink>
+      )
     },
   }),
 ]

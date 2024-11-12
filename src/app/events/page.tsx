@@ -1,5 +1,3 @@
-import path from 'path'
-
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 
@@ -9,8 +7,6 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
-import { attributes } from '@/content/pages/events.md'
-
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
@@ -19,9 +15,13 @@ import {
   getCategoryLabel,
 } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -57,15 +57,15 @@ type Props = {
 
 const events = getEventsData()
 const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
-const { featured_entry, seo } = attributes
+
+const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
+  path: PATHS.EVENTS,
+  zodParser: FeaturedPageFrontmatterSchema.parse,
+})
 
 const sortOptions = getSortOptions(eventsSortConfigs)
 
-if (!featured_entry) {
-  throw new Error('Featured entry is undefined')
-}
-
-const featuredEventSlug = path.parse(featured_entry).name
+const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
 const featuredEvent = getEventData(featuredEventSlug)
 
 export const metadata = createMetadata({

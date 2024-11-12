@@ -8,6 +8,7 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type SuccessMessageProps = {
   prNumber: number
@@ -35,13 +36,11 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
         <p>
           We’ve received your submission and it will now be reviewed by our
           team. You can follow the progress on GitHub{' '}
-          <a
+          <ExternalTextLink
             href={`${FILECOIN_FOUNDATION_GITHUB_PR_URL}/${prNumber}`}
-            rel="noopener noreferrer"
-            className="text-brand-300 underline hover:text-brand-400"
           >
-            PR #{prNumber}
-          </a>
+            {`PR #${prNumber}`}
+          </ExternalTextLink>
           . Once accepted, your project will be featured on the Ecosystem
           Explorer page.
         </p>
