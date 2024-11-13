@@ -64,4 +64,4 @@ In partnership with ByteBase, Ewesion found that being able to handpick its data
 
 With ByteBase, Ewesion enjoys collaborating with a provider that is local to its own operations. This partnership, which started in 21st May 2021, has shown fruitful already. In the past few months, the company has moved 27.5TiB data to the Filecoin network and has the expectations of 180TiB by the end of the year. It also plans to expand its content offering to audio and visual files in the coming year to be the leader of creative repositories in Beijing, China.
 
-To learn more about Filecoin, storage providers, and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](https://fil.org/).
+To learn more about Filecoin, storage providers, and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](/).

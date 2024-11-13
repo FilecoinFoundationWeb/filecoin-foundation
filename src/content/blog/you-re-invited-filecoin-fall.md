@@ -29,9 +29,9 @@ While you’re in the Big Apple, stop by [Unfinished Live 2022](https://live.unf
 
 **Community Gathering: FIL-Singapore ’22 Summit (Sept. 26–27)**
 
-With a theme of “Empowering a Web3 world,” [FIL-Singapore](https://fil.org/events/fil-singapore) will feature educational tracks on building a Web3 ecosystem, visionary discussions of the impact of decentralized storage and an overview of new developments in the metaverse.
+With a theme of “Empowering a Web3 world,” [FIL-Singapore](/events/fil-singapore) will feature educational tracks on building a Web3 ecosystem, visionary discussions of the impact of decentralized storage and an overview of new developments in the metaverse.
 
-Hosted by the IPFS Force, with support from [Filecoin Foundation](http://fil.org/), [Protocol Labs](https://protocol.ai/) and many more, this collaborative event will feature more than 100 speakers and over 20 panels. If you’re planning to attend [Token2049](https://www.token2049.com/) (Sept. 28–29), make sure to join the Filecoin Community for progress updates on the Filecoin Roadmap, the latest on Filecoin Virtual Machine, Filecoin cryptoeconomics, and more.
+Hosted by the IPFS Force, with support from [Filecoin Foundation](/), [Protocol Labs](https://protocol.ai/) and many more, this collaborative event will feature more than 100 speakers and over 20 panels. If you’re planning to attend [Token2049](https://www.token2049.com/) (Sept. 28–29), make sure to join the Filecoin Community for progress updates on the Filecoin Roadmap, the latest on Filecoin Virtual Machine, Filecoin cryptoeconomics, and more.
 
 Use the [promo code FFVIP](http://www.eventbrite.com/e/396630501507/?discount=FFVIP) for free registration!
 

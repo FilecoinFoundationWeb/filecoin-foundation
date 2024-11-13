@@ -29,4 +29,4 @@ Filecoin Foundation awarded 4EVERLAND a microgrant in recognition of its platfor
 
 Filecoin Foundation is proud to support 4EVERLAND as it continues to smooth the way for more innovation on the Filecoin ecosystem and broader adoption in the developer community of Web3 technologies!
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) and [Documentation Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md)._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

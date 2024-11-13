@@ -36,4 +36,4 @@ Network upgrades are no small feat. They involve extensive collaboration across 
 
 In the coming months, Filecoin Foundation will continue to steward proposed changes to the Filecoin governance system as pushed forward through the [FIP0001v2 initiative](https://github.com/filecoin-project/FIPs/pull/850) in addition to supporting other technical improvements to the network that would land in future network upgrades.
 
-You can keep tabs on [Governance](https://fil.org/governance/) by following us on X at [@Fil_Gov](https://twitter.com/fil_gov), joining our monthly governance calls, and following discussions and new ideas in the [FIPs GitHub repo](https://github.com/filecoin-project/FIPs).
+You can keep tabs on [Governance](/governance/) by following us on X at [@Fil_Gov](https://twitter.com/fil_gov), joining our monthly governance calls, and following discussions and new ideas in the [FIPs GitHub repo](https://github.com/filecoin-project/FIPs).

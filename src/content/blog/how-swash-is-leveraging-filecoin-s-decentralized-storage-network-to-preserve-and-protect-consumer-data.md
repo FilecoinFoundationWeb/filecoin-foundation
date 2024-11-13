@@ -38,4 +38,4 @@ As the adoption of Web3 continues to accelerate, Swash aims to rebalance the dig
 
 _“The Filecoin integration marks an important milestone in the evolution of Data Unions in Web3. The goal is to unlock the new ways for stakeholders to interact with consented data while addressing concerns around centralised data storage and governance. We are excited to be on this journey with the Filecoin community.”_ — Reza Naeeni, Swash
 
-If you’re interested in learning more about the Filecoin ecosystem, visit [Filecoin.io](https://filecoin.io/) or [Fil.org](https://fil.org/). You can also join the conversation on [Slack](http://filecoinproject.slack.com/), [Github](https://github.com/filecoin-project), [Reddit](https://www.reddit.com/r/filecoin/), and [Twitter](https://twitter.com/Filecoin).
+If you’re interested in learning more about the Filecoin ecosystem, visit [Filecoin.io](https://filecoin.io/) or [Fil.org](/). You can also join the conversation on [Slack](http://filecoinproject.slack.com/), [Github](https://github.com/filecoin-project), [Reddit](https://www.reddit.com/r/filecoin/), and [Twitter](https://twitter.com/Filecoin).

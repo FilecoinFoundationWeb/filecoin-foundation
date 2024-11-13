@@ -85,10 +85,10 @@ const FILECOIN_FOUNDATION_URLS = {
       href: 'mailto:grants@fil.org',
     },
     documents: {
+      builderNextStepGrants:
+        'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Builder%20Next%20Step%20Grants.md',
       openGrants:
         'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md',
-      documentationGrants:
-        'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md',
       requestsForProposals:
         'https://github.com/filecoin-project/devgrants?tab=readme-ov-file#requests-for-proposals-rfps',
     },
