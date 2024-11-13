@@ -15,13 +15,13 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
-import { type Allocator } from '../schemas/AllocatorSchema'
+import { type AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
 import { AllocatorsTableFilters } from './AllocatorsTableFilters'
 
 type AllocatorsTableWithFiltersProps = {
-  data: Array<Allocator>
+  data: Array<AllocatorWithDatacap>
 }
 
 export function AllocatorsTableWithFilters({

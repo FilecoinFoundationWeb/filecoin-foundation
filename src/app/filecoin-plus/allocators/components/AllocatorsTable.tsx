@@ -6,11 +6,11 @@ import { Table } from '@/components/Table/Table'
 import { TableBody } from '@/components/Table/TableBody'
 import { TableHead } from '@/components/Table/TableHead'
 
-import { type Allocator } from '../schemas/AllocatorSchema'
+import { type AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 type AllocatorsTableProps = {
-  headerGroups: Array<HeaderGroup<Allocator>>
-  rowModel: RowModel<Allocator>
+  headerGroups: Array<HeaderGroup<AllocatorWithDatacap>>
+  rowModel: RowModel<AllocatorWithDatacap>
 }
 
 export function AllocatorsTable({

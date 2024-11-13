@@ -1,25 +1,27 @@
 import * as Sentry from '@sentry/nextjs'
 
-import { getAllocators } from '../utils/getAllocators'
+import { getAllocatorsWithDatacap } from '../utils/getAllocatorsWithDatacap'
 
 import { AllocatorsTableWithFilters } from './AllocatorsTableWithFilters'
 import { NoDataAvailableMessage } from './NoDataAvailableMessage'
 
 export async function AllocatorsTableSection() {
   try {
-    const allocators = await getAllocators()
+    const allocatorsWithDatacap = await getAllocatorsWithDatacap()
 
-    if (!allocators.length) {
+    if (!allocatorsWithDatacap.length) {
       return <NoDataAvailableMessage />
     }
 
-    return <AllocatorsTableWithFilters data={allocators} />
+    return <AllocatorsTableWithFilters data={allocatorsWithDatacap} />
   } catch (error) {
-    console.error('Error fetching or validating allocators:', error)
+    const message = 'Error fetching or validating allocators'
+
+    console.error({ message, error })
 
     Sentry.captureException(error, {
-      tags: { component: 'AllocatorsTableSection' },
-      extra: { message: 'Error fetching or validating allocators' },
+      tags: { component: AllocatorsTableSection.name },
+      extra: { message },
     })
 
     return <NoDataAvailableMessage />

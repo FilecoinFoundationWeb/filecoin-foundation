@@ -2,10 +2,10 @@ import type { Column } from '@tanstack/react-table'
 
 import { SearchInput } from '@/components/SearchInput'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 export type NameFilterProps = {
-  column: Column<Allocator>
+  column: Column<AllocatorWithDatacap>
 }
 
 export function SearchFilter({ column }: NameFilterProps) {
