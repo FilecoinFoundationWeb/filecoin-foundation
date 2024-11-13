@@ -13,7 +13,7 @@ seo:
     this dev grant spotlight. Learn more.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
 
 [Portrait](https://www.portrait.gg/) is the first open-source web page builder, allowing people to turn their blockchain address into a website. Portrait provides cryptographic proofs that verify the ownership and history of web pages designed on the platform. And Portrait web pages are automatically pinned to IPFS and Filecoin, allowing the sites to be secure and resilient by design.
 
@@ -27,4 +27,4 @@ Portrait is currently accepting entries to the beta waiting list at [portrait.gg
 
 As a decentralized web page builder, Portrait is putting the user experience first. They are opening the door for everyone to experience the benefits of Web3 with a user-friendly solution for decentralized web development. Filecoin Foundation is proud to support Portrait as it continues to drive innovation in the Filecoin ecosystem and support the broader adoption of Web3 technologies!
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants_](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants) _and_ [_Microgrants_](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)_._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

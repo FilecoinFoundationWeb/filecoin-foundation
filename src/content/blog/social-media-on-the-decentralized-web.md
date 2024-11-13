@@ -63,6 +63,6 @@ These are just a few of the many companies and non-profits creating an alternati
 
 **Learn more about FF and FFDW Grants**
 
-The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) and [Documentation Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md).
+The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md).
 
 Find out more about [FFDW’s grants](https://ffdweb.org/) program.

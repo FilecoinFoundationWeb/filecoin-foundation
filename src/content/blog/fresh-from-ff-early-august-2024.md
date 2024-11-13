@@ -18,9 +18,9 @@ seo:
 
 🧇 The Nv23 Upgrade, codenamed "Waffle," is arriving on Mainnet on August 6. The upgrade was successfully deployed to the calibnet on July 11, and will feature 6 FIPs including [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md), [FIP0079](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0079.md), [FIP0084](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0084.md), [FIP0085](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0085.md), [FIP0091](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0091.md), and [FIP0092](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0092.md). Stay tuned to the [Filecoin Governance X](https://x.com/fil_gov?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=why-leading-projects-are-choosing-filecoin-to-advance-ai) account for the latest updates.
 
-🇹🇭 It's Official: The Filecoin community is heading to Bangkok. Dive into decentralized AI infrastructure, DePIN, and the evolving data economy at FIL Bangkok. Set in Thailand's vibrant capital and hosted by Filecoin Foundation, FIL Bangkok unites the Filecoin ecosystem and broader Web3 community for innovation and collaboration. [Reserve your spot](https://fil.org/events/fil-bangkok) now and keep an eye out for programming announcements.
+🇹🇭 It's Official: The Filecoin community is heading to Bangkok. Dive into decentralized AI infrastructure, DePIN, and the evolving data economy at FIL Bangkok. Set in Thailand's vibrant capital and hosted by Filecoin Foundation, FIL Bangkok unites the Filecoin ecosystem and broader Web3 community for innovation and collaboration. [Reserve your spot](/events/fil-bangkok) now and keep an eye out for programming announcements.
 
-🔭 Take the tour of the brand-new [fil.org](http://fil.org/)! FF's website got a redesign to make it easier than ever to explore the ever-expanding Filecoin community featuring new pages and content, faster load times, and better searchability. Whether you're browsing decentralized projects and use cases or looking for ways to get involved with the network, get started at [fil.org](http://fil.org/).
+🔭 Take the tour of the brand-new [fil.org](/)! FF's website got a redesign to make it easier than ever to explore the ever-expanding Filecoin community featuring new pages and content, faster load times, and better searchability. Whether you're browsing decentralized projects and use cases or looking for ways to get involved with the network, get started at [fil.org](/).
 
 ## Ecosystem
 
@@ -39,13 +39,13 @@ Due to popular demand, the [Developer Working Group](https://github.com/filecoin
 
 ### Governance
 
-- Join the community [governance conversation](https://fil.org/governance)! In the Filecoin ecosystem, governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol. Anyone is welcome to participate through the monthly [Community Governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto), the [Fil-Gov Slack](https://filecoinproject.slack.com/archives/C0535S9TUUF) channel, [Metropolis](https://fil.org/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), or attending a [Filecoin event](https://fil.org/events).
+- Join the community [governance conversation](/governance)! In the Filecoin ecosystem, governance refers to the rights, rules, processes, and norms that empower community members to collectively determine the development of the protocol. Anyone is welcome to participate through the monthly [Community Governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto), the [Fil-Gov Slack](https://filecoinproject.slack.com/archives/C0535S9TUUF) channel, [Metropolis](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community), or attending a [Filecoin event](/events).
 - [FIP0086: Fast Finality in Filecoin](https://x.com/fil_gov/status/1816907389200924988) is now in Last Call. This FIP proposes to significantly speed up the time it takes for Filecoin transactions to be considered final and irreversible, reducing transaction times from 7.5 hours to just a few seconds.
 
 ### Fil Plus
 
 - Rolling allocator applications are open for submissions. Allocators are a core part of the Fil+ program and help incentivize the storage of useful data on the Filecoin network. Visit the [FIDL blog](https://blog.allocator.tech/2024/05/rolling-applications-are-open-for.html) for application instructions and a walkthrough.
-- [The Fil+ page](https://fil.org/filecoin-plus) is live on fil.org. Learn about the purpose of Fil+ and how to become an allocator, and explore DataCap projects within the program.
+- [The Fil+ page](/filecoin-plus) is live on fil.org. Learn about the purpose of Fil+ and how to become an allocator, and explore DataCap projects within the program.
 - The FIL Plus team is conducting audits on the initial 5 Pib of DataCap distribution as part of the ongoing DataCap refresh. These allocators will either receive a full, partial, or no DataCap refresh.
 
 ## Comms, Marketing, & Events
@@ -55,7 +55,7 @@ Due to popular demand, the [Developer Working Group](https://github.com/filecoin
 - Missing Brussels? [Check out the playlist](https://youtube.com/playlist?list=PLp3zrT1ewY0novXWnDnDvlgyRdBTOevsL&feature=shared)! All Network Base sessions are now available on Filecoin Foundation's YouTube. Subscribe for recaps of governance meetings, event programming, new DWeb Decoded episodes, and more.
 - Grayscale’s latest research report featured Filecoin as key infrastructure for decentralized AI. According to their new report: “Grayscale Research believes that decentralized AI holds the potential to bring these important decisions out from walled gardens and into public ownership.” Grayscale’s research includes Al services (chatbots, image generators), solutions to centralized Al problems (authenticity checks, fighting deepfakes), and infrastructure for Al development (data storage, GPU computation). Filecoin provides the decentralized storage solutions crucial for decentralized AI's growth, ensuring data can be securely and transparently managed. [Read the full report](https://www.grayscale.com/research/reports/ai-is-coming-crypto-can-help-make-it-right).
 - Join Filecoin Foundation and FFDW at [DWeb Camp 2024](https://dwebcamp.org/), a collaborative space for people to connect, learn, share, and have fun while working towards building a better, decentralized web.
-- Check out the global Orbit events happening near you at [fil.org/orbit](http://fil.org/orbit)! Network with members of your local Filecoin community at these always welcoming, free-to-attend Orbit events.
+- Check out the global Orbit events happening near you at [fil.org/orbit](/orbit)! Network with members of your local Filecoin community at these always welcoming, free-to-attend Orbit events.
 
 ### Featured Datasets on Filecoin
 

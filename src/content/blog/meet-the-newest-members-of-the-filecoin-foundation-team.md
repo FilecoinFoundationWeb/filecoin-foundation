@@ -15,7 +15,7 @@ seo:
     about their roles and backgrounds.
 ---
 
-The [Filecoin Foundation](http://fil.org/) is delighted to welcome new members to our growing workforce of professionals dedicated to research, development, and community engagement around open source, decentralized storage, and nurturing the Filecoin ecosystem. And our team continues to expand. We’re still looking for talented grant program managers, communications professionals and more to join us in this mission.
+The [Filecoin Foundation](/) is delighted to welcome new members to our growing workforce of professionals dedicated to research, development, and community engagement around open source, decentralized storage, and nurturing the Filecoin ecosystem. And our team continues to expand. We’re still looking for talented grant program managers, communications professionals and more to join us in this mission.
 
 Here’s a snapshot of our newest colleagues, including the range of skill sets and experience they bring and their thoughts on joining Filecoin in our collective mission to preserve humanity’s most important information:
 

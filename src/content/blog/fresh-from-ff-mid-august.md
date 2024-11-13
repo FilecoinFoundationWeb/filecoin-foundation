@@ -48,8 +48,8 @@ Join [FIL Singapore](/events/fil-singapore-alongside-token2049-2024), hosted by 
 
 - Filecoin Foundation President and Chair Marta Belcher joined Chainalysis CMO Ian Andrews on the [Public Key Podcast](https://www.chainalysis.com/blog/ipfs-filecoin-and-crypto-policy-developments-ep-121/) to talk about the evolving landscape of crypto policy.
 - Filecoin Foundation [joined the NFT.Storage community](https://nft.storage/blog/filecoin-foundation-joins-the-nft-storage-community) as a gold member to help preserve digital assets and ensure that NFTs remain accessible and verifiable for future generations.
-- Join the Filecoin community in Bangkok to explore decentralized AI infrastructure, DePIN, and the evolving data economy at FIL Bangkok. [Reserve your spot](https://fil.org/events/fil-bangkok) now and keep an eye out for programming announcements!
-- Check out the global Orbit events happening near you at [fil.org/orbit](http://fil.org/orbit)! Network with members of your local Filecoin community at these always welcoming, free-to-attend Orbit events.
+- Join the Filecoin community in Bangkok to explore decentralized AI infrastructure, DePIN, and the evolving data economy at FIL Bangkok. [Reserve your spot](/events/fil-bangkok) now and keep an eye out for programming announcements!
+- Check out the global Orbit events happening near you at [fil.org/orbit](/orbit)! Network with members of your local Filecoin community at these always welcoming, free-to-attend Orbit events.
 
 ### Featured Datasets on Filecoin
 

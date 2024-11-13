@@ -42,7 +42,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
   1. Paid storage: FF is focused on supporting the launch of 6+ software platforms in Q1-Q2 2024 (complete with SP integrations) by supporting testing, design, partnerships, contracts, enablement, community engagement, and amplification. Multiple UIs aimed at supporting deal-making with different target users will help increase network activity.   AI & Filecoin: FF is incubating 3 AI-specific initiatives that use Filecoin as a key part of their value proposition.
   2. AI & Filecoin: FF is incubating 3 AI-specific initiatives that use Filecoin as a key part of their value proposition.
   3. New Entrants: FF is focusing on community recruitment of MSP/VAR/GSIs and improving the underlying health of the ecosystem.
-  4. Community Activations: Since December 2023, FF supported five events across the globe to create opportunities to discuss key topics and to drive awareness of capabilities, with [more planned throughout 2024](https://fil.org/events/).
+  4. Community Activations: Since December 2023, FF supported five events across the globe to create opportunities to discuss key topics and to drive awareness of capabilities, with [more planned throughout 2024](/events/).
   5. Creating actionable community content: Weekly Storage Provider Working Group meetings, the [Zero To One Program](https://www.youtube.com/watch?v=QqhV8Pj7xpA&list=PLp3zrT1ewY0mxPnE89z5NCb_pgCAMhuO3) for potential and new ecosystem entrants, a monthly Customer Working Group, and multiple [DWeb Decoded](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy) episodes on the future of Filecoin/AI/DePiN and other prominent community topics are just some of the ways FF is here to support the storage provider community.
 
 ## Network Operations
@@ -75,7 +75,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 **Events**
 
-- FF announced its 2024 events calendar! Visit [fil.org/events](http://fil.org/events) to find the events FF will host, sponsor, and support, and discover how to get involved in some of the best opportunities to learn, build, and network with community members around the globe.
+- FF announced its 2024 events calendar! Visit [fil.org/events](/events) to find the events FF will host, sponsor, and support, and discover how to get involved in some of the best opportunities to learn, build, and network with community members around the globe.
 - Check out the [Filecoin at ETHDenver website](https://hub.fil.org/ethdenver2024) for all of the ecosystem events happening throughout the week. This site will serve as the place to list all events for the Filecoin community. If you are organizing an event and do not see it listed, please add it via the form on the website.
 - FF and FFDW San Francisco Events
 
