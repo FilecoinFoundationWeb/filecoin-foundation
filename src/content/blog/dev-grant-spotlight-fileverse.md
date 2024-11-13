@@ -14,16 +14,7 @@ seo:
     contributions as a Filecoin Foundation Dev Grant recipient."
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._
-=======
 _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
-
-> > > > > > > # 36bb7eb4 (Update copy)
-> > > > > > >
-> > > > > > > _This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](/grants/)_._
-> > > > > > > 86e3395b (Scout CR - Use relative links)
 
 [Fileverse](https://fileverse.io/) is part of an emerging subset of decentralized apps (dApps) focused on everyday online activities and privacy. Supported by more than 14,000 Gitcoin contributors, the current Fileverse dApp ([Fileverse Solo](https://beta.fileverse.io/)) gives people tools to store, encrypt, share, and manage multimedia files — image, video, documents — as well as encrypted chat rooms using a digital wallet.
 
