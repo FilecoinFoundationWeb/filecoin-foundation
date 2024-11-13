@@ -18,7 +18,7 @@ seo:
     dev grant. Learn more about their project.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](https://fil.org/grants/)._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
 
 The [Webrecorder](https://webrecorder.net/) project builds and maintains an ecosystem of open-source Web archiving tools that can be used by anyone to create high-fidelity and accurate archives of any web content. Webrecorder’s mission is to support ‘web archiving for all’, building browser-based tools to enable institutions all over the world to create web archives, from a single to running larger crawls in the cloud. Additionally, the company provides services to digital preservation specialists, activists, journalists, digital humanists and independent researchers and archivists to create their own web archives and store them in portable, open data formats that will be accessible in the future.
 

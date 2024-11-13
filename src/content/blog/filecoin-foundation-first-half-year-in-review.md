@@ -90,7 +90,7 @@ In March, we were among the tens of thousands who descended on Austin, Texas for
 
 **Decentralized Web Gateway at Davos**
 
-Hosted by Filecoin Foundation, the [Decentralized Web Gateway at Davos](https://fil.org/events/decentralized-web-gateway-davos), was a multi-day event held in late May in Davos, Switzerland. The week of content and events, held at a stunning historical English Church in Davos known as The Sanctuary, was dedicated to the benefits of decentralization and how decentralized tools can protect civil liberties and preserve humanity’s most important information., the Decentralized Web Gateway will bring the top voices from across crypto and Web3 to discuss the evolution of the internet and its ramifications for society.
+Hosted by Filecoin Foundation, the [Decentralized Web Gateway at Davos](/events/decentralized-web-gateway-davos), was a multi-day event held in late May in Davos, Switzerland. The week of content and events, held at a stunning historical English Church in Davos known as The Sanctuary, was dedicated to the benefits of decentralization and how decentralized tools can protect civil liberties and preserve humanity’s most important information., the Decentralized Web Gateway will bring the top voices from across crypto and Web3 to discuss the evolution of the internet and its ramifications for society.
 
 **FIL Austin**
 

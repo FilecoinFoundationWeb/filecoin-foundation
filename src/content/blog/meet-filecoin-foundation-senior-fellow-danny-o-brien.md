@@ -15,7 +15,7 @@ seo:
     about his work and insights.
 ---
 
-The [Filecoin Foundation](http://fil.org/) (FF) and the [Filecoin Foundation for the Decentralized Web](http://ffdweb.org/) (FFDW) are delighted to welcome Danny O’Brien to the team. As a Senior Fellow, Danny will use his breadth of first-hand experience in numerous sectors of the crypto and digital rights worlds to act as the Foundation’s “primary source” advisor and collaborator to globalize Web3.
+The [Filecoin Foundation](/) (FF) and the [Filecoin Foundation for the Decentralized Web](http://ffdweb.org/) (FFDW) are delighted to welcome Danny O’Brien to the team. As a Senior Fellow, Danny will use his breadth of first-hand experience in numerous sectors of the crypto and digital rights worlds to act as the Foundation’s “primary source” advisor and collaborator to globalize Web3.
 
 Danny joins Filecoin Foundation from the [Electronic Frontier Foundation](https://www.eff.org/)where he spent more than a decade as an activist, international director, and finally, director of strategy.
 

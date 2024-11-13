@@ -76,6 +76,6 @@ In our earliest calculation with only 10 of our 60+ international artists collec
 
 **Nichole:** History has shown that avant-garde artists shape major shifts in culture and technology. We believe that if the TRANSFER Data Trust is successful in rethinking the value of data, these behaviors and beliefs can capture the imagination of popular culture. In the future, everyone will think of the value in their data in a new way, and it will ignite a widespread movement of data sovereignty.
 
-**Learn more about [TRANSFER Data Trust](https://fil.org/ecosystem-projects/transfer-data-trust/) on the Filecoin Ecosystem Explorer, the interactive showcase of diverse projects that make up the Filecoin ecosystem.**
+**Learn more about [TRANSFER Data Trust](/ecosystem-projects/transfer-data-trust/) on the Filecoin Ecosystem Explorer, the interactive showcase of diverse projects that make up the Filecoin ecosystem.**
 
 _The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

@@ -11,7 +11,7 @@ image:
   src: /assets/images/nulink.png
 website: https://www.nulink.org/
 repo: https://github.com/NuLink-network
-twitter: https://fil.org/ecosystem-projects/orbitvault/
+twitter: /ecosystem-projects/orbitvault/
 year-joined: 2022-02-01T14:35:36.326000Z
 subcategories:
   - data-storage-management

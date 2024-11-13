@@ -31,6 +31,6 @@ The successful launch of the Lightning Upgrade represents the collective efforts
 
 The nv19 Lightning Upgrade represents a remarkable achievement, made possible by the dedication and innovative spirit of the entire Filecoin community and implementation teams. This milestone sets the tone for the future of the network, pushing the boundaries of decentralized storage and reaffirming Filecoin's position at the forefront of the industry.
 
-Looking ahead, governance and community engagement remain critical components of designing, driving and instantiating robust governing systems, tools, and methodologies. Filecoin Foundation through the governance team has put together monthly Community Governance Calls. You can register and be part of this process [here](https://fil.org/governance).
+Looking ahead, governance and community engagement remain critical components of designing, driving and instantiating robust governing systems, tools, and methodologies. Filecoin Foundation through the governance team has put together monthly Community Governance Calls. You can register and be part of this process [here](/governance).
 
 Head to the FIPs Github repo [here](https://github.com/filecoin-project/FIPs) to learn more. You can also check [this](https://github.com/filecoin-project/core-devs) out if you want more information about the nv19 & nv20 upgrades.

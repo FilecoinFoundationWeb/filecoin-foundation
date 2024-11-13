@@ -17,7 +17,7 @@ seo:
     community together. Announcing speakers.
 ---
 
-**OCTOBER 17, 2022** — [Filecoin Foundation](https://fil.org/) — an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web — unveils the details of [FIL Lisbon](https://fil-lisbon.io/), the first major gathering of the Filecoin community in Lisbon, Portugal, taking place October 30 — November 4.
+**OCTOBER 17, 2022** — [Filecoin Foundation](/) — an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web — unveils the details of [FIL Lisbon](https://fil-lisbon.io/), the first major gathering of the Filecoin community in Lisbon, Portugal, taking place October 30 — November 4.
 
 The six-day event will feature over 50 industry-leading speakers and will convene builders, developers, storage providers, ecosystem partners, clients, and investors from across Web3 and the Filecoin ecosystem. FIL Lisbon is bringing the community together for workshops, hackathons, panels, meetups, networking, happy hours and more in one of the world’s preeminent cities for blockchain technology.
 

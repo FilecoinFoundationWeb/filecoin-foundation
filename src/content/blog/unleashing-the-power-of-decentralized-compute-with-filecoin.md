@@ -50,9 +50,9 @@ Several teams across the Filecoin ecosystem are already leveraging the network f
 
 Teams in the Filecoin ecosystem working to solve today’s computing challenges include:
 
-- [Bacalhau](https://fil.org/ecosystem-projects/bacalhau/): A platform for fast, cost-efficient, and secure computation by running jobs where the data is generated and stored. It supports large-scale parallel compute of Filecoin data.
-- [Web3Mine](https://fil.org/ecosystem-projects/web3mine/): An innovation lab that​ helps people collectively coordinate hardware and capital to build a more open and resilient internet infrastructure for everyone.
-- [Fluence](https://fil.org/ecosystem-projects/fluence/): A decentralized, serverless computing platform where developers can build, host, and deploy peer-to-peer applications to a network of compute providers. Providers can range from professional data centers to home computers.
+- [Bacalhau](/ecosystem-projects/bacalhau/): A platform for fast, cost-efficient, and secure computation by running jobs where the data is generated and stored. It supports large-scale parallel compute of Filecoin data.
+- [Web3Mine](/ecosystem-projects/web3mine/): An innovation lab that​ helps people collectively coordinate hardware and capital to build a more open and resilient internet infrastructure for everyone.
+- [Fluence](/ecosystem-projects/fluence/): A decentralized, serverless computing platform where developers can build, host, and deploy peer-to-peer applications to a network of compute providers. Providers can range from professional data centers to home computers.
 - [Io.net](http://io.net): Utilizing Filecoin hardware, io.net is a state-of-the-art decentralized computing network that allows machine learning engineers to access scalable distributed clusters at a fraction of the cost of comparable centralized services.
 
 ## The Future of Decentralized Compute
