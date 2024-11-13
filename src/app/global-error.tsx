@@ -11,7 +11,11 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import ErrorMessage from '@/components/ErrorMessage'
 import { SiteLayout } from '@/components/SiteLayout'
 
-export default function GlobalError({ error }: { error: Error }) {
+type GlobalErrorProps = {
+  error: Error
+}
+
+export default function GlobalError({ error }: GlobalErrorProps) {
   useEffect(() => {
     Sentry.captureException(error)
   }, [error])
