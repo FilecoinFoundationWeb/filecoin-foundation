@@ -41,8 +41,10 @@ jobs:
         id: test-type
         run: |
           if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            BRANCH_NAME="${{ github.head_ref }}"
             COMMIT_MESSAGE="${{ github.event.pull_request.title }}"
           else
+            BRANCH_NAME="${{ github.ref_name }}"
             COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
           fi
 
