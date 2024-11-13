@@ -25,7 +25,7 @@ const APIDatacapSchema = z.object({
   orgName: z.string().nullish(),
   removed: z.boolean(),
   initialAllowance: z.string(),
-  allowance: z.string().nullish(),
+  allowance: z.string(),
   inffered: z.boolean(),
   isMultisig: z.boolean(),
   createdAtHeight: z.number(),
@@ -35,7 +35,7 @@ const APIDatacapSchema = z.object({
   receivedDatacapChange: z.string(),
   allowanceArray: z.array(APIDatacapAllowanceHistorySchema),
   auditStatus: z.string().nullable(),
-  remainingDatacap: z.string().nullish(),
+  remainingDatacap: z.string(),
 })
 
 export const InternalDatacapSchema = APIDatacapSchema.pick({
