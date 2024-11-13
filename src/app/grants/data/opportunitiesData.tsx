@@ -14,12 +14,12 @@ export const opportunitiesData = [
     },
   },
   {
-    title: 'Documentation Grants',
+    title: 'FIL Builder Next Step Grants',
     description:
-      'Grants are available to support the creation of new resources related to the Filecoin network or the improvement of existing documentation. Refer to GitHub for more details.',
+      'Grants between $5k and $10k are available to support builders taking their Filecoin projects to the next level! Refer to Github for more details.',
     icon: Coin,
     cta: {
-      href: FILECOIN_FOUNDATION_URLS.grants.documents.documentationGrants,
+      href: FILECOIN_FOUNDATION_URLS.grants.documents.builderNextStepGrants,
       text: 'Learn More',
     },
   },
