@@ -14,7 +14,7 @@ export async function getAllocatorsWithDatacap() {
 
     return {
       ...allocator,
-      remainingDatacap: stats?.allowance ?? '',
+      availableDatacap: stats?.allowance ?? '',
       usedDatacap: stats?.remainingDatacap ?? '',
     }
   })

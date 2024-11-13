@@ -47,8 +47,8 @@ export const AllocatorFileListMetaDataBaseSchema = z.array(
 
 export const AllocatorWithInternalDatacapSchema = AllocatorSchema.extend({
   address: InternalDatacapSchema.shape.address,
-  remainingDatacap: InternalDatacapSchema.shape.allowance,
-  usedDatacap: InternalDatacapSchema.shape.remainingDatacap,
+  availableDatacap: InternalDatacapSchema.shape.allowance,
+  usedDatacap: InternalDatacapSchema.shape.remainingDatacap, // remainingDatacap shows how much datacap allocator has used
 })
 
 export type AllocatorFileMetaDataBase = z.infer<

@@ -29,7 +29,7 @@ export const allocatorsTableColumnsData = [
     cell: (info) => info.getValue(),
     filterFn: 'includesString',
   }),
-  columnHelper.accessor('remainingDatacap', {
+  columnHelper.accessor('availableDatacap', {
     header: 'Remaining Datacap',
     cell: (info) => formatDatacap(info.getValue()),
   }),
