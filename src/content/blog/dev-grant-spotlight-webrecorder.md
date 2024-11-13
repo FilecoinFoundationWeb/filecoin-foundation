@@ -18,7 +18,7 @@ seo:
     dev grant. Learn more about their project.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](https://fil.org/grants/)._
 
 The [Webrecorder](https://webrecorder.net/) project builds and maintains an ecosystem of open-source Web archiving tools that can be used by anyone to create high-fidelity and accurate archives of any web content. Webrecorder’s mission is to support ‘web archiving for all’, building browser-based tools to enable institutions all over the world to create web archives, from a single to running larger crawls in the cloud. Additionally, the company provides services to digital preservation specialists, activists, journalists, digital humanists and independent researchers and archivists to create their own web archives and store them in portable, open data formats that will be accessible in the future.
 
@@ -37,4 +37,4 @@ In addition, Webrecorder actively helps a number of web archiving initiatives th
 
 Webrecorder is looking for additional developers to help build and improve its open-source tools. Individuals interested to learn more about fully remote openings are to visit the Webrecorder [Jobs](https://webrecorder.net/jobs) page. Read more about the [grant announcement](https://webrecorder.net/2022/06/21/announcing-new-grant-from-filecoin.html).
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants_](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants) _and_ [_Microgrants_](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)_._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

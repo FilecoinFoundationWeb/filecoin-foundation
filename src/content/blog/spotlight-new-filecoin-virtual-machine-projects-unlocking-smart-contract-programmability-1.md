@@ -37,7 +37,7 @@ A few recent projects creating new FVM tools and services with support from File
 - **IPFSForce** — The team behind the Venus implementation of the Filecoin network is working on a TinyGo SDK for the FVM.
 - **Yatima** — Sitting at the intersection of formal proofs and zero-knowledge proofs, Yatima is integrating Lurk, a programming language for Turing-complete recursive zkSNARKs with FVM. This will enable zero-knowledge proofs written in Lurk to be verified natively on Filecoin, enabling implementation of simple examples of zero-knowledge applications such as proofs of membership, private tokens, WASM, or EVM state rollups. Yatima plans to create several novel applications of the Lean-Lurk-FVM stack, such as an on-chain marketplace where parties can trustlessly buy and sell verifiably correct typed programs and data. Learn more about [Yatima’s FVM project](https://github.com/filecoin-project/devgrants/issues/808).
 
-Filecoin Foundation’s Dev Grants program is advancing projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants) and [Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants).
+Filecoin Foundation’s Dev Grants program is advancing projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md).
 
 **Join the FVM Foundry’s Early Builders Program**
 

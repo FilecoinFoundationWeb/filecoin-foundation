@@ -37,4 +37,4 @@ Longer-term, the group is looking to establish blockchain-native nonprofit organ
 
 To learn more about [UkraineArtCo](https://ukraineartco.org/)’s efforts, you can find them on [Instagram](https://www.instagram.com/UkraineArtCo/), [Twitter](https://twitter.com/UkraineArtCo), [TikTok](https://www.tiktok.com/@UkraineArtCo), [Facebook](https://www.facebook.com/UkraineArtCo), and [Discord](https://discord.com/invite/5T6NTEQSq5).
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) and [Documentation Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md)._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._
