@@ -43,6 +43,4 @@ Encloud are also developing key partnerships with both large-scale SPs and criti
 
 With large-scale enterprise data sets come increased risk and concern about the privacy of confidential information. The [data privacy software market is valued](https://www.fortunebusinessinsights.com/data-privacy-software-market-105420) at $1.68 billion and is forecasted to grow by nearly 41% to more than $25 billion by 2029. This market growth will transform IPFS by delivering real-world data and use cases to the network at scale, meaning more privacy, which leads to greater enterprise centricity and more value creation for the entire network.
 
-\_\_
-
-_Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._
