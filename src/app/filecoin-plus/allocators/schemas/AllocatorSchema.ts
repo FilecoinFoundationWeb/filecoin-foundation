@@ -1,5 +1,7 @@
 import { z } from 'zod'
 
+import { InternalDatacapSchema } from './DatacapSchema'
+
 const ApplicationSchema = z.object({
   required_sps: z.string(),
   required_replicas: z.string(),
@@ -8,6 +10,7 @@ const ApplicationSchema = z.object({
 
 export const AllocatorSchema = z.object({
   name: z.string(),
+  address: z.string(),
   metapathway_type: z.string(),
   location: z.string(),
   application: ApplicationSchema,
@@ -42,8 +45,16 @@ export const AllocatorFileListMetaDataBaseSchema = z.array(
   AllocatorFileMetaDataBaseSchema,
 )
 
-export type Allocator = z.infer<typeof AllocatorSchema>
+export const AllocatorWithInternalDatacapSchema = AllocatorSchema.extend({
+  address: InternalDatacapSchema.shape.address,
+  availableDatacap: InternalDatacapSchema.shape.allowance,
+  usedDatacap: InternalDatacapSchema.shape.remainingDatacap, // remainingDatacap shows how much datacap allocator has used
+})
+
 export type AllocatorFileMetaDataBase = z.infer<
   typeof AllocatorFileMetaDataBaseSchema
 >
 export type AllocatorFileMetaData = z.infer<typeof AllocatorFileMetaDataSchema>
+export type AllocatorWithDatacap = z.infer<
+  typeof AllocatorWithInternalDatacapSchema
+>

@@ -10,7 +10,7 @@ import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 export type TableSortOption = {
   id: SortDirection
@@ -18,7 +18,7 @@ export type TableSortOption = {
 }
 
 type SortFilterProps = {
-  column: Column<Allocator>
+  column: Column<AllocatorWithDatacap>
   options: ReadonlyArray<TableSortOption>
   defaultOption: TableSortOption
 }

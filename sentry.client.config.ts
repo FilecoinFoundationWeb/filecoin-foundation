@@ -4,15 +4,11 @@
 
 import * as Sentry from '@sentry/nextjs'
 
-if (process.env.NEXT_PUBLIC_DISABLE_SENTRY !== 'true') {
-  Sentry.init({
-    dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-    tracesSampleRate: 0.05,
-    debug: false,
-    replaysOnErrorSampleRate: 1.0,
-    replaysSessionSampleRate: 0.01,
-    environment: process.env.NODE_ENV || 'production',
-  })
-} else {
-  console.log('Sentry is disabled on the client.')
-}
+Sentry.init({
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+  tracesSampleRate: 0.05,
+  debug: false,
+  replaysOnErrorSampleRate: 1.0,
+  replaysSessionSampleRate: 0.01,
+  environment: process.env.NODE_ENV,
+})
