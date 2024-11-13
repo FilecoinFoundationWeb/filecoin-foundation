@@ -88,4 +88,4 @@ The team believes that decentralized storage is a building block to Web3, and is
 
 Learn more about [Seal Storage](https://www.sealstorage.io/).
 
-And to learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](https://fil.org/).
+And to learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](/).

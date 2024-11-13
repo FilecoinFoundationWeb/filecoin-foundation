@@ -50,11 +50,11 @@ This year some Orbit Ambassadors hosted larger, multi-day conferences in Jakarta
 
 ![Filecoin Orbit Events](https://lh7-us.googleusercontent.com/XNeOoVWzGM_EYVuSDzPhd6WCoHHWfiFhgQji2D4xzsOzp8T8YshHA_JZelsau0qqeMogW4ZU4s-NxvAbUJ49fJ4TAH2DBN4h4JYPhmSMVZNxBWNpQSM4j61XJW9H4GFlVL0p5v-FEEJ5-nRPRfGw4v4)
 
-Hosted by Orbit Ambassador Ryan Long and [MetaPals](https://metapals.pet/), [FIL Jakarta](https://fil.org/events/fil-jakarta) was the most-attended in-person Filecoin event in Indonesia, drawing over 700 developers, students, storage providers, and community members participating in insightful discussions and hands-on workshops led by industry experts.
+Hosted by Orbit Ambassador Ryan Long and [MetaPals](https://metapals.pet/), [FIL Jakarta](/events/fil-jakarta) was the most-attended in-person Filecoin event in Indonesia, drawing over 700 developers, students, storage providers, and community members participating in insightful discussions and hands-on workshops led by industry experts.
 
 ![Filecoin Orbit FIL Seoul with Secured Finance Event](https://lh7-us.googleusercontent.com/hi_I6856UzIAelg8ra4od-KZVF--dQjVIgJh8Kz1ySV377EKN5Qcyt6BvdCEc3h7CudP7Ptwopq0p0aGk2T3fwhDXYFiWw2ZcoqXPdM9iDnL8sBPv3C1ar-Mwp7k3FfG3kLD9mJBwbtgRPWImu0mD8c)
 
-This two-day community-FIL event hosted by Orbit Regional Lead East Asia [Secured Finance](https://secured.finance/) served as a forum for storage providers to convene and discuss the future of the ecosystem. Watch the [FIL Seoul](https://fil.org/events/fil-seoul-network-base-1) recap [video](https://drive.google.com/file/d/1G8Uxy6Zz8IqofqPqIHVb4CqeQd7qSJJA/view?usp=sharing).
+This two-day community-FIL event hosted by Orbit Regional Lead East Asia [Secured Finance](https://secured.finance/) served as a forum for storage providers to convene and discuss the future of the ecosystem. Watch the [FIL Seoul](/events/fil-seoul-network-base-1) recap [video](https://drive.google.com/file/d/1G8Uxy6Zz8IqofqPqIHVb4CqeQd7qSJJA/view?usp=sharing).
 
 ![FIL Cape Town Event](https://lh7-us.googleusercontent.com/8qK4gQJ4qxR3y1rTg4X-5FTbdKdmYjjzetDe0sgpPWd72sIiurD79A7GgBDiEpciUrKIwZ9_KOLTsmQOkXRzrzRt5JnaLNPkh1GF-3Omkc-0bIZjGw6oHfGujgBEZxoQgZxKQ3KV6nAYPpX0RKoXIKk)
 

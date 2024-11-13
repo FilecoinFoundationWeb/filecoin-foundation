@@ -20,4 +20,4 @@ Filecoin Foundation (FF) is one of many organizations in the thriving Filecoin e
 
 This report is a brief look at what the Filecoin ecosystem has achieved in 2022, and what’s ahead for Filecoin Foundation in 2023. The Filecoin ecosystem could not have continued to grow and succeed last year without the support of an incredible community of developers, storage providers, storage partners, advocates, and more.
 
-You can access the full [Filecoin Foundation Annual Report here](https://fil.org/blog/filecoin-foundation-2022-annual-report).
+You can access the full [Filecoin Foundation Annual Report here](/blog/filecoin-foundation-2022-annual-report).

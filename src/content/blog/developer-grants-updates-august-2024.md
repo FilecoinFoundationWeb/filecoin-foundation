@@ -42,7 +42,7 @@ In May, Filecoin Foundation launched [Documentation Enhancement Grants](https://
 
 ## Grant Pool Updates
 
-The [FF Annual Report](https://fil.org/blog/filecoin-foundation-2023-annual-report), published in February 2024, provided an extensive look into FF-supported projects from the previous fiscal year (FY’23).
+The [FF Annual Report](/blog/filecoin-foundation-2023-annual-report), published in February 2024, provided an extensive look into FF-supported projects from the previous fiscal year (FY’23).
 
 In FY’24, we’re continuing to fund projects that drive the ecosystem forward. In addition to 24 active projects (as August 2024), we had several projects complete their grant milestones, including:
 

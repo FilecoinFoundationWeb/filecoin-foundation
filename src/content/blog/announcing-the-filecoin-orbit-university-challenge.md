@@ -14,6 +14,7 @@ seo:
   description: University blockchain organizations are invited to design and
     propose decentralized AI applications leveraging the Filecoin network.
 ---
+
 We are excited to announce that Filecoin Foundation is hosting our first-ever Orbit University Challenge, a competition for university blockchain organizations to propose and design decentralized AI applications leveraging the Filecoin network. This challenge explores how decentralized storage can power AI models, enhance privacy, and drive impactful, real-world solutions. The winning team will receive two all-expenses-paid tickets to ETH Denver 2025 to present their idea and network with the global blockchain community.
 
 ## Challenge Brief
@@ -46,48 +47,48 @@ Create a concept for a decentralized AI application that leverages Filecoin’s 
 
 Provide a 500-700 word summary of your concept, outlining:
 
-* The problem being solved.
-* The role of decentralized AI and Filecoin in your solution.
-* Technical feasibility and impact of your project.
+- The problem being solved.
+- The role of decentralized AI and Filecoin in your solution.
+- Technical feasibility and impact of your project.
 
 Submit the [proposal in the portal](https://airtable.com/appAGdqyYrqoFNuPI/pagYJ8TDX9cDly1LI/form) and post a short description on X (formerly Twitter) with the hashtag #DecentralizedAIChallenge and tag [@FilFoundation](https://twitter.com/FilFoundation). Then, join the [Filecoin Discord](https://discord.gg/filecoin) community.
 
-***Submission Deadline: All entries must be submitted by November 30, 2024.***
+**_Submission Deadline: All entries must be submitted by November 30, 2024._**
 
 #### 3. Inspiration Examples
 
-* Healthcare Federated Learning System: A privacy-preserving AI model trained across hospitals, with encrypted patient data stored on Filecoin.
-* Supply Chain Forecasting Tool: An AI-powered system that analyzes supply chain data stored across decentralized nodes to predict demand and mitigate risks.
-* Decentralized AI Model Repository: A platform where AI researchers share and retrieve models using Filecoin, ensuring availability and version control through blockchain-backed proofs.
+- Healthcare Federated Learning System: A privacy-preserving AI model trained across hospitals, with encrypted patient data stored on Filecoin.
+- Supply Chain Forecasting Tool: An AI-powered system that analyzes supply chain data stored across decentralized nodes to predict demand and mitigate risks.
+- Decentralized AI Model Repository: A platform where AI researchers share and retrieve models using Filecoin, ensuring availability and version control through blockchain-backed proofs.
 
 Looking for more inspiration? Check out [why leading AI projects choose Filecoin](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) to advance AI, and how they're building on the network.
 
 ### Judging Criteria
 
-* Innovation: How creative and novel is the solution?
-* Feasibility: Can this application be realistically built using Filecoin?
-* Impact: Does the solution address a significant real-world problem?
-* Technical Depth: How well does the proposal integrate AI with decentralized storage?
-* Community Engagement: Social media activity will factor into judging, so teams are encouraged to share and promote their ideas.
+- Innovation: How creative and novel is the solution?
+- Feasibility: Can this application be realistically built using Filecoin?
+- Impact: Does the solution address a significant real-world problem?
+- Technical Depth: How well does the proposal integrate AI with decentralized storage?
+- Community Engagement: Social media activity will factor into judging, so teams are encouraged to share and promote their ideas.
 
 ### Timeline
 
-* Launch Date: November 1, 2024
-* Submission Deadline: November 30, 2024
-* Winner Announcement: December 15, 2024
+- Launch Date: November 1, 2024
+- Submission Deadline: November 30, 2024
+- Winner Announcement: December 15, 2024
 
 ### Prizes
 
-* Grand Prize: Two all expenses-paid tickets to ETH Denver 2025.*
-* Opportunity to represent Filecoin Orbit Community at Filecoin Foundation ETH Denver booth
-* Interview on Filecoin Foundation DWeb Decoded Podcast
-* Mentions in Filecoin Foundation blog/social media/newsletters
-* Endorsement for Filecoin Foundation grants funding
-* Honorable Mentions: Swag and invitations to Filecoin meetups or workshops.*
+- Grand Prize: Two all expenses-paid tickets to ETH Denver 2025.\*
+- Opportunity to represent Filecoin Orbit Community at Filecoin Foundation ETH Denver booth
+- Interview on Filecoin Foundation DWeb Decoded Podcast
+- Mentions in Filecoin Foundation blog/social media/newsletters
+- Endorsement for Filecoin Foundation grants funding
+- Honorable Mentions: Swag and invitations to Filecoin meetups or workshops.\*
 
 Let the brainstorming begin! Submit your ideas and join us in building the future of AI on Filecoin! 🧠 #DecentralizedAIChallenge
 
-***(*Subject to rules below.)***
+***(*Subject to rules below.)\***
 
 ### Rules
 
@@ -109,4 +110,4 @@ Prizes are non-transferable and may not be redeemed for cash. The Foundation res
 
 **Multiple Entries:** Participants may propose and submit multiple designs but may only win once, and participants may not utilize multiple accounts.
 
-**General Conditions:** The Foundation reserves the right to modify the content, duration, and/or cancel the competition at its sole discretion, and to disqualify any entry for any reason at the Foundation’s sole discretion. Any personal information will be handled pursuant to the [Foundation’s privacy policy](https://fil.org/policy/). X/Twitter, Facebook, TikTok, Instagram, and any other 3rd party social media platforms, are not affiliated with this competition. To the extent permitted by applicable law, the Foundation’s liability under or in connection with the competition or these terms and conditions shall be limited to the price of the prize in question.
+**General Conditions:** The Foundation reserves the right to modify the content, duration, and/or cancel the competition at its sole discretion, and to disqualify any entry for any reason at the Foundation’s sole discretion. Any personal information will be handled pursuant to the [Foundation’s privacy policy](/policy/). X/Twitter, Facebook, TikTok, Instagram, and any other 3rd party social media platforms, are not affiliated with this competition. To the extent permitted by applicable law, the Foundation’s liability under or in connection with the competition or these terms and conditions shall be limited to the price of the prize in question.

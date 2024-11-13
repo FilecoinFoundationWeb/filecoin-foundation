@@ -15,7 +15,7 @@ seo:
     and collaborate with peers.
 ---
 
-We’re excited to announce the launch of the [Orbit Community Program](https://orbitcommunity.filecoin.io/), powered by [Filecoin Foundation](https://fil.org/) and [Protocol Labs](https://protocol.ai/). This program will foster a global community of advocates dedicated to advancing the larger Web3 ecosystem by amplifying the voice of Filecoin, IPFS, and libp2p (both online and offline!), organizing meetups and events, and creating unique content and educational resources.
+We’re excited to announce the launch of the [Orbit Community Program](https://orbitcommunity.filecoin.io/), powered by [Filecoin Foundation](/) and [Protocol Labs](https://protocol.ai/). This program will foster a global community of advocates dedicated to advancing the larger Web3 ecosystem by amplifying the voice of Filecoin, IPFS, and libp2p (both online and offline!), organizing meetups and events, and creating unique content and educational resources.
 
 Today, we’re kicking off the search for the _very first_ cohort of Cadets, and applications are open! If you’re passionate about decentralized storage, [Filecoin](https://filecoin.io/), [IPFS](https://ipfs.io/), [libp2p](https://libp2p.io/), and the mission to preserve humanity’s most important information, we want you to [apply](https://btktvjuobzm.typeform.com/to/Dv6FWzlr)!
 

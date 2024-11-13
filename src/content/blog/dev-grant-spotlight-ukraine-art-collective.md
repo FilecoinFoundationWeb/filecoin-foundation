@@ -15,7 +15,7 @@ seo:
     grant spotlight. Discover their contributions.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ _[Dev Grants program](https://fil.org/grants/)._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
 
 [Ukraine Art Collective](https://ukraineartco.org/)’s (UkraineArtCo) mission is to unite artists around the world to contribute their creative talents to support the Ukrainian people in their fight for freedom. Founded in early March 2022, shortly after the start of the Russian invasion, the group deployed its fundraising platform using IPFS and Filecoin to create, mint, and sell NFTs. The NFTs are based on physical and digital art contributed by the art community, such as paintings, music, photography, mixed media, and more. Proceeds from sales of the NFTs on Rarible and OpenSea have been donated to [Razom for Ukraine](https://razomforukraine.org/about-us/), a nonprofit providing critical humanitarian war relief.
 
@@ -37,4 +37,4 @@ Longer-term, the group is looking to establish blockchain-native nonprofit organ
 
 To learn more about [UkraineArtCo](https://ukraineartco.org/)’s efforts, you can find them on [Instagram](https://www.instagram.com/UkraineArtCo/), [Twitter](https://twitter.com/UkraineArtCo), [TikTok](https://www.tiktok.com/@UkraineArtCo), [Facebook](https://www.facebook.com/UkraineArtCo), and [Discord](https://discord.com/invite/5T6NTEQSq5).
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md) and [Documentation Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md)._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

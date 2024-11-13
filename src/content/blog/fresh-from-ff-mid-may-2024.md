@@ -18,7 +18,7 @@ _Check out the latest updates about what Filecoin Foundation has been up to._
 
 ## Mid-May Highlights
 
-🏛️Filecoin Foundation is pleased to announce [the launch of Metropolis](https://fil.org/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community/), a temperature check and crowdsource polling tool to enhance the network governance process, built in collaboration with Canvas Technologies. Metropolis was created as a fork of the open-source Pol.is tool, which has been used to support digital democracy efforts in countries around the world.
+🏛️Filecoin Foundation is pleased to announce [the launch of Metropolis](/blog/empowering-governance-the-launch-of-metropolis-to-the-filecoin-community/), a temperature check and crowdsource polling tool to enhance the network governance process, built in collaboration with Canvas Technologies. Metropolis was created as a fork of the open-source Pol.is tool, which has been used to support digital democracy efforts in countries around the world.
 
 🏰Thanks for joining us on the Orbit Europe Tour! Over the past few weeks, more than 600 builders attended Filecoin Orbit events in Barcelona, Madrid, Lisbon, Warsaw, Katowice, and Munich. Thanks to our Ambassador hosts Adrien Berthou, Ainhoa Aldave, Martyna Jeute, Diogo Almeida, and Timo Lee. For more information on upcoming Orbit events and how to get involved, visit the [Filecoin Orbit](https://hub.fil.org/orbit) hub.
 
@@ -55,7 +55,7 @@ _Check out the latest updates about what Filecoin Foundation has been up to._
 **Marketing & Comms**
 
 - FF’s Aaron Stanley interviewed Austin Federa, head of strategy at the Solana Foundation, on the latest episode of [DWeb Decoded](https://www.youtube.com/watch?v=_yMmmISZG2Q). Check out the interview to learn more about Solana's Filecoin integration.
-- The Q1 2024 Messari Report for the [Filecoin Ecosystem is live](https://x.com/MessariCrypto/status/1784954174523822215)! Check out the latest edition of the [Upload](https://upload.fil.org/p/network-insights-messaris-q1-2024-filecoin-report) and the [FF blog](https://fil.org/blog/deep-dive-on-messaris-q1-filecoin-ecosystem-report) for takeaways from [the report](https://messari.io/project/filecoin/quarterly-reports/q1-2024).
+- The Q1 2024 Messari Report for the [Filecoin Ecosystem is live](https://x.com/MessariCrypto/status/1784954174523822215)! Check out the latest edition of the [Upload](https://upload.fil.org/p/network-insights-messaris-q1-2024-filecoin-report) and the [FF blog](/blog/deep-dive-on-messaris-q1-filecoin-ecosystem-report) for takeaways from [the report](https://messari.io/project/filecoin/quarterly-reports/q1-2024).
 - Leaders from across Web2, Web3, research, and philanthropy came together at [Funding the Commons](https://fundingthecommons.io/), featuring several [Filecoin Foundation for the Decentralized Web (FFDW)](https://ffdweb.org/blog/seeding-sustainable-growth-for-public-goods-in-tech-insights-from-funding-the-commons/) project partners, who shared their visions for the path forward for public goods and OSS funding in domains from human rights to visual art.
 
 **Events**
