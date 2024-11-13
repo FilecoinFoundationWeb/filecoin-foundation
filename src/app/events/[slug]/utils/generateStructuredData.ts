@@ -1,17 +1,26 @@
-import { Event, WithContext, Place, VirtualLocation } from 'schema-dts'
-
-import { EventData } from '@/types/eventTypes'
+import type {
+  Event as EventSchema,
+  Place,
+  VirtualLocation,
+  WithContext,
+} from 'schema-dts'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
-import { SCHEMA_CONTEXT_URL } from '@/constants/structuredDataConstants'
+import {
+  SCHEMA_CONTEXT_URL,
+  SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL,
+  SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL,
+} from '@/constants/structuredDataConstants'
+
+import type { Event } from '../../types/eventType'
 
 type LocationType = Place | VirtualLocation | undefined
 
 type GetLocationProps = {
-  location: EventData['location']
-  externalLink: EventData['externalLink']
-  slug: EventData['slug']
+  location: Event['location']
+  externalLink: Event['externalLink']
+  slug: Event['slug']
 }
 
 function getLocation({
@@ -26,7 +35,7 @@ function getLocation({
   if (location === 'Virtual') {
     return {
       '@type': 'VirtualLocation',
-      url: externalLink || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
+      url: externalLink?.url || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
     }
   }
 
@@ -36,9 +45,8 @@ function getLocation({
   }
 }
 
-export function generateStructuredData(data: EventData): WithContext<Event> {
+export function generateStructuredData(data: Event): WithContext<EventSchema> {
   const {
-    title,
     slug,
     description,
     startDate,
@@ -46,6 +54,7 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     image,
     location,
     externalLink,
+    seo,
   } = data
 
   const eventLocation: LocationType = getLocation({
@@ -54,15 +63,21 @@ export function generateStructuredData(data: EventData): WithContext<Event> {
     slug,
   })
 
+  const eventAttendanceMode =
+    location === 'Virtual'
+      ? SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL
+      : SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL
+
   return {
     '@context': SCHEMA_CONTEXT_URL,
     '@type': 'Event',
-    name: title,
+    eventAttendanceMode,
+    name: seo.title,
     description,
-    startDate,
-    endDate,
+    startDate: startDate.toISOString(),
+    endDate: (endDate || startDate)?.toISOString(),
     ...(eventLocation && { location: eventLocation }),
-    image: image.url,
+    image: image?.src,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
   }
 }

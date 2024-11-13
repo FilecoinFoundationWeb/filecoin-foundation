@@ -1,32 +1,22 @@
 ---
 title: Filet Finance
-slug: filet-finance
-created-on: 2024-03-29T21:28:51.053000Z
-updated-on: 2024-03-29T21:42:03.195000Z
-published-on: 2024-03-29T21:42:03.195000Z
-description: "A trustworthy platform providing staking service stably."
+created-on: 2024-03-29T21:28:51.053Z
+updated-on: 2024-03-29T21:42:03.195Z
+published-on: 2024-03-29T21:42:03.195Z
+email: encrypted::U2FsdGVkX1/YOg7Hm+fmyx0I6thyt0DTa3gnfZsBAx4CKKPH4nPtLx5L4dZWgzsN
+full-name: encrypted::U2FsdGVkX1+H3otR+zgxXJOE3zVpEGE9WjnbUMv+cck=
+image:
+  src: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
 category: finance
-tags:
-  - leasing-and-staking
+subcategories:
+  - leasing
+description: A trustworthy platform providing staking service stably.
+website: https://www.filet.finance
 tech:
   - filecoin
-image:
-  url: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
-  alt: Filet Finance Logo
-featured-content:
-website: https://www.filet.finance
-repo:
-twitter:
-video-url:
-year-joined: 2024-03-29T21:28:51.053000Z
-news-update:
-subcategories:
-  - finance
+year-joined: 2024-03-29T21:28:51.053Z
 seo:
-  title: Filet Finance
-  description:
-    Filet Finance offers decentralized finance solutions on the Filecoin
-    network.
+  description: Filet Finance offers decentralized finance solutions on the Filecoin network.
 ---
 
 Filet Finance is a trustworthy platform providing staking service stably.

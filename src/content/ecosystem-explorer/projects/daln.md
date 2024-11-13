@@ -4,28 +4,21 @@ created-on: 2024-04-03T16:51:43.448Z
 updated-on: 2024-04-03T16:51:43.470Z
 published-on: 2024-04-03T16:51:43.478Z
 image:
-  url: /assets/images/daln.png
-  alt: Data as Labor Network (DALN) Logo
+  src: /assets/images/daln.png
 category: storage
 subcategories:
-  - data-storage-management
-tags:
-  - governance-daos-public-goods
   - data-storage-management
 description: A data DAO for monetizing credit card transaction data.
 website: https://app.daln.io/
 tech:
   - filecoin
 repo: https://github.com/DALN-app/monorepo_v2
-news-update: null
-slug: daln
-featured-content: null
 twitter: https://twitter.com/DataHaus_
-video-url: null
 year-joined: 2024-04-03T16:51:43.504Z
 seo:
-  title: DALN
   description: DALN offers decentralized solutions for data archiving and long-term storage.
+email: encrypted::U2FsdGVkX1+xqqnoLLCnwwXss3cQyj0pA58MFsGD58T619nPMRCY82kIPvg93L5f
+full-name: encrypted::U2FsdGVkX1+dHmXUnjOw8mGZA/bMG8QtaPhPMX02PqE=
 ---
 
 DALN (Data as Labor Network) represents a paradigm shift from viewing user-generated data as free capital to recognizing it as labor that should be fairly compensated through a data DAO that empowers consumers to turn their credit card transaction data into assets and have direct control over the use and monetization of their data.

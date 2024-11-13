@@ -81,11 +81,27 @@ module.exports = {
       maxWidth: {
         readable: '60ch',
       },
+      animation: {
+        'slide-in-from-top':
+          'slide-in-from-top 300ms cubic-bezier(.41,.73,.51,1.02)',
+        'shrink-and-fade-out': 'shrink-and-fade-out 150ms ease-in forwards',
+      },
+      keyframes: {
+        'shrink-and-fade-out': {
+          '0%': { transform: 'scale(1)', opacity: 1 },
+          '100%': { transform: 'scale(0.9)', opacity: 0 },
+        },
+        'slide-in-from-top': {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@headlessui/tailwindcss'),
+    require('@tailwindcss/forms'),
     plugin(function addBrandOutline({ addComponents, theme }) {
       addComponents({
         '.brand-outline': {
@@ -94,6 +110,22 @@ module.exports = {
           outlineWidth: 2,
           outlineOffset: 0,
           borderColor: 'transparent',
+        },
+        '.row': {
+          height: 52,
+        },
+        '.cell': {
+          paddingLeft: theme('padding.5'),
+          paddingRight: theme('padding.5'),
+          textAlign: 'left',
+          textWrap: 'nowrap',
+          fontWeight: '400',
+          '&:first-child': {
+            paddingLeft: theme('padding.10'),
+          },
+          '&:last-child': {
+            paddingRight: theme('padding.10'),
+          },
         },
       })
     }),

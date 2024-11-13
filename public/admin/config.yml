@@ -1,10 +1,44 @@
 local_backend: true
+site_url: https://fil.org
+display_url: https://fil.org
+
 backend:
-  name: "git-gateway"
-  branch: "main"
+  name: github
+  branch: main
+  repo: FilecoinFoundationWeb/filecoin-foundation
+  base_url: https://decap-proxy.filecoin-foundation.workers.dev/
+
 publish_mode: editorial_workflow
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+created_on: &created_on
+  name: "created-on"
+  label: "Created On"
+  widget: "datetime"
+  default: "{{now}}"
+  picker_utc: true
+
+updated_on: &updated_on
+  name: "updated-on"
+  label: "Updated On"
+  widget: "datetime"
+
+  default: "{{now}}"
+  required: false
+  picker_utc: true
+
+published_on: &published_on
+  name: "published-on"
+  label: "Published On"
+  widget: "datetime"
+  default: "{{now}}"
+  required: false
+  picker_utc: true
 
 header_config: &header_config
   name: "header"
@@ -18,6 +52,140 @@ header_config: &header_config
       label: "Description"
       widget: "text"
 
+body_config: &body_config
+  name: "body"
+  label: "Content"
+  widget: "markdown"
+  editor_components:
+    - "code-block"
+    - "image"
+    - "video"
+    - "audio"
+
+image_alt_config: &image_alt_config
+  name: "alt"
+  label: "Alt Text"
+  widget: "hidden"
+  required: false
+  hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+
+image_config: &image_config
+  name: "image"
+  label: "Image"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
+  fields:
+    - name: "src"
+      label: "URL"
+      widget: "image"
+      allow_multiple: false
+      choose_url: false
+      required: false
+      hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+    - *image_alt_config
+
+event_sponsor_config: &event_sponsor_config
+  - name: "name"
+    label: "Name"
+    widget: "string"
+  - name: "website"
+    label: "website"
+    widget: "string"
+    required: false
+  - name: "image"
+    label: "Image"
+    widget: "object"
+    fields:
+      - name: "src"
+        label: "URL"
+        widget: "image"
+        allow_multiple: false
+        choose_url: false
+        hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 320px height. Make sure no whitespace is present around the logo."
+      - *image_alt_config
+
+seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
+
+open_graph_config: &open_graph_config
+  name: "open-graph"
+  label: "Open Graph Metadata"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: "Expand for more information on default values."
+  fields:
+    - name: "title"
+      label: "Open Graph Title"
+      widget: "string"
+      required: false
+      hint: "If left empty, the SEO meta title will be used."
+    - name: "description"
+      label: "Open Graph Description"
+      widget: "string"
+      required: false
+      hint: "If left empty, the SEO meta description will be used."
+    - name: "image"
+      label: "Open Graph Image"
+      widget: "image"
+      allow_multiple: false
+      choose_url: false
+      required: false
+      hint: "If left empty, the page header image will be used. If no header image is present, a default homepage image will be used."
+
+twitter_config: &twitter_config
+  name: "twitter"
+  label: "Twitter Metadata"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: "Expand for more information on default values."
+  fields:
+    - name: "card"
+      label: "Twitter Card"
+      widget: "select"
+      options:
+        - label: "Summary Card"
+          value: "summary"
+        - label: "Summary with Large Image"
+          value: "summary_large_image"
+        - label: "Player Card"
+          value: "player"
+      required: false
+      default: "summary"
+      hint: "If left empty, the default value will be 'Summary Card.'"
+    - name: "site"
+      label: "Twitter Handle for Website"
+      widget: "string"
+      required: false
+      hint: "Enter the Twitter handle of the website or brand (e.g., @FilFoundation). Defaults to @FilFoundation."
+    - name: "creator"
+      label: "Twitter Creator"
+      widget: "string"
+      required: false
+      hint: "Enter the Twitter handle of the content creator (e.g., @juanbenet). Defaults to @FilFoundation."
+
+meta_config_with_title_fallback: &meta_config_with_title_fallback
+  name: "seo"
+  label: "SEO Metadata"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "Meta Title"
+      widget: "string"
+      required: false
+      hint: "If left empty, the main entry title will automatically become the SEO title. '- Filecoin Event' will be added for events, and '- Ecosystem Project' for ecosystem projects. For example: 'Acasia - Filecoin Ecosystem Project' or 'FIL Bangkok 2024 - Filecoin Event'."
+    - name: "description"
+      label: "Meta Description"
+      widget: "text"
+      pattern:
+        - "^.{0,220}$"
+        - "Must have at most 220 characters."
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+    - *open_graph_config
+    - *twitter_config
+
 meta_config: &meta_config
   name: "seo"
   label: "SEO Metadata"
@@ -26,50 +194,15 @@ meta_config: &meta_config
     - name: "title"
       label: "Meta Title"
       widget: "string"
-      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
     - name: "description"
       label: "Meta Description"
       widget: "text"
-      hint: Copy and paste the content into ChatGPT 4.0, then ask it to generate a meta title and a meta description (under 165 characters).
-    - name: "og"
-      label: "Open Graph Metadata"
-      widget: "object"
-      collapsed: true
-      fields:
-        - name: "title"
-          label: "Open Graph Title"
-          widget: "string"
-          required: false
-        - name: "image"
-          label: "Open Graph Image"
-          widget: "image"
-          required: false
-          media_library:
-            config:
-              multiple: false
-    - name: "twitter"
-      label: "Twitter Metadata"
-      widget: "object"
-      collapsed: true
-      fields:
-        - name: "title"
-          label: "Twitter Title"
-          widget: "string"
-          default: "summary"
-          required: false
-        - name: "card"
-          label: "Twitter Card"
-          widget: "string"
-          default: "summary"
-          required: false
-        - name: "site"
-          label: "Twitter Site"
-          widget: "string"
-          required: false
-        - name: "creator"
-          label: "Twitter Creator"
-          widget: "string"
-          required: false
+      pattern:
+        - "^.{0,220}$"
+        - "Must have at most 220 characters."
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+    - *open_graph_config
+    - *twitter_config
 
 collections:
   - name: "pages"
@@ -78,6 +211,7 @@ collections:
       - name: "about"
         label: "About"
         file: "src/content/pages/about.md"
+        preview_path: "about"
         fields:
           - *header_config
           - *meta_config
@@ -85,13 +219,14 @@ collections:
       - name: "blog"
         label: "Blog"
         file: "src/content/pages/blog.md"
+        preview_path: "blog"
         fields:
           - *header_config
           - name: "featured_entry"
             label: "Featured Post"
             widget: "relation"
-            collection: "blog"
-            value_field: "slug"
+            collection: "blog_posts"
+            value_field: "src/content/blog/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -99,9 +234,26 @@ collections:
               - "title"
           - *meta_config
 
-      - name: "ecosystem"
-        label: "Ecosystem"
+      - name: "digest"
+        label: "Digest"
+        file: "src/content/pages/digest.md"
+        preview_path: "digest"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "ecosystem-explorer"
+        label: "Ecosystem Explorer"
         file: "src/content/pages/ecosystem-explorer.md"
+        preview_path: "ecosystem-explorer"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "ecosystem-explorer/project-form"
+        label: "Ecosystem Explorer - Project Form"
+        file: "src/content/pages/ecosystem-explorer/project-form.md"
+        preview_path: "ecosystem-explorer/project-form"
         fields:
           - *header_config
           - *meta_config
@@ -109,13 +261,72 @@ collections:
       - name: "employee-privacy-policy"
         label: "Employee Privacy Policy"
         file: "src/content/pages/employee-privacy-policy.md"
+        preview_path: "employee-privacy-policy"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "events"
+        label: "Events"
+        file: "src/content/pages/events.md"
+        preview_path: "events"
+        fields:
+          - *header_config
+          - name: "featured_entry"
+            label: "Featured Event"
+            widget: "relation"
+            collection: "event_entries"
+            value_field: "src/content/events/{{slug}}.md"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
+          - *meta_config
+
+      - name: "filecoin-plus"
+        label: "Filecoin Plus"
+        file: "src/content/pages/filecoin-plus/filecoin-plus.md"
+        preview_path: "filecoin-plus"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "allocators"
+        label: "Filecoin Plus - Allocators"
+        file: "src/content/pages/filecoin-plus/allocators.md"
+        preview_path: "filecoin-plus/allocators"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "governance"
+        label: "Governance"
+        file: "src/content/pages/governance/governance.md"
+        preview_path: "governance"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "govhub"
+        label: "Governance - GovHub"
+        file: "src/content/pages/governance/govhub.md"
+        preview_path: "governance/govhub"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "grants"
+        label: "Grants"
+        file: "src/content/pages/grants.md"
+        preview_path: "grants"
         fields:
           - *header_config
           - name: "featured_grant_graduates"
             label: "Featured Grant Graduates"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "slug"
+            value_field: "src/content/ecosystem-explorer/projects/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -124,37 +335,6 @@ collections:
             multiple: true
             min: 6
             max: 6
-          - *meta_config
-
-      - name: "events"
-        label: "Events"
-        file: "src/content/pages/events.md"
-        fields:
-          - *header_config
-          - name: "featured_entry"
-            label: "Featured Event"
-            widget: "relation"
-            collection: "events"
-            value_field: "slug"
-            search_fields:
-              - "slug"
-              - "title"
-            display_fields:
-              - "title"
-          - *meta_config
-
-      - name: "governance"
-        label: "Governance"
-        file: "src/content/pages/governance.md"
-        fields:
-          - *header_config
-          - *meta_config
-
-      - name: "grants"
-        label: "Grants"
-        file: "src/content/pages/grants.md"
-        fields:
-          - *header_config
           - *meta_config
 
       - name: "home"
@@ -166,7 +346,7 @@ collections:
             label: "Featured Ecosystem Projects"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "slug"
+            value_field: "src/content/ecosystem-explorer/projects/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -177,43 +357,69 @@ collections:
             max: 6
           - *meta_config
 
+      - name: "orbit"
+        label: "Orbit"
+        file: "src/content/pages/orbit.md"
+        preview_path: "orbit"
+        fields:
+          - *header_config
+          - *meta_config
+
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "src/content/pages/privacy-policy.md"
+        preview_path: "privacy-policy"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "security"
+        label: "Security"
+        file: "src/content/pages/security/security.md"
+        preview_path: "security"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "security/bug-bounty"
+        label: "Security - Bug Bounty"
+        file: "src/content/pages/security/bug-bounty.md"
+        preview_path: "security/bug-bounty"
+        fields:
+          - *header_config
+          - *meta_config
+
+      - name: "security-maturity-model"
+        label: "Security - Maturity Model"
+        file: "src/content/pages/security/maturity-model.md"
+        preview_path: "security/maturity-model"
         fields:
           - *header_config
           - *meta_config
 
       - name: "terms"
-        label: "Terms"
+        label: "Terms of Use"
         file: "src/content/pages/terms-of-use.md"
+        preview_path: "terms-of-use"
         fields:
           - *header_config
           - *meta_config
 
-  - name: "blog"
+  - name: "blog_posts"
     label: "Blog Posts"
     label_singular: "Blog Post"
     folder: "src/content/blog/"
+    preview_path: "blog/{{slug}}"
     create: true
-    identifier_field: "name"
     extension: "md"
     slug: "{{slug}}"
     fields:
       - name: "title"
         label: "Title"
         widget: "string"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
       - name: "category"
         label: "Category"
         widget: "select"
@@ -233,41 +439,67 @@ collections:
       - name: "description"
         label: "Description"
         widget: "text"
-      - name: "image"
-        label: "Image"
-        widget: "object"
+      - *image_config
+      - *body_config
+      - *meta_config_with_title_fallback
+
+  - name: "digest_articles"
+    label: "Digest Articles"
+    folder: "src/content/digest/"
+    preview_path: "digest/{{slug}}"
+    label_singular: "Digest Article"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "select"
+        options: ["1"]
+        default: "1"
+      - name: "article-number"
+        label: "Article Number"
+        widget: "number"
+        min: 1
+      - name: "authors"
+        label: "Authors"
+        widget: "list"
         fields:
-          - name: "url"
-            label: "URL"
-            widget: "image"
-            allow_multiple: false
-          - name: "alt"
-            label: "Alt Text"
+          - name: "first-name"
+            label: "First Name"
             widget: "string"
+          - name: "last-name"
+            label: "Last Name"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "object"
             required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
-      - name: "body"
-        label: "Content"
-        widget: "markdown"
-        editor_components:
-          - "code-block"
-          - "image"
-          - "video"
-          - "audio"
-        required: false
-      - name: "recommended-posts"
-        label: "Recommended Posts"
-        widget: "hidden"
-        required: false
-        collection: "blog"
-        value_field: "src/content/blog/{{slug}}.md"
-        search_fields:
-          - "slug"
-          - "title"
-        display_fields:
-          - "title"
-        multiple: true
-      - *meta_config
+            hint: "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback."
+            fields:
+              - name: "src"
+                label: "URL"
+                widget: "image"
+                allow_multiple: false
+                choose_url: false
+                required: false
+                hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+              - name: "alt"
+                label: "Alt Text"
+                widget: "hidden"
+                required: false
+          - name: "company"
+            label: "Company Name"
+            widget: "string"
+      - *body_config
+      - *image_config
+      - *meta_config_with_title_fallback
 
   - name: "ecosystem_projects_categories"
     label: "Ecosystem Projects Categories"
@@ -316,38 +548,24 @@ collections:
     label: Ecosystem Projects
     label_singular: Ecosystem Project
     folder: "src/content/ecosystem-explorer/projects/"
+    preview_path: "ecosystem-explorer/{{slug}}"
     create: true
-    identifier_field: name
     extension: md
     slug: "{{slug}}"
     fields:
       - name: title
         label: Company Name
         widget: string
-      - name: created-on
-        label: Created On
-        widget: datetime
-      - name: updated-on
-        label: Updated On
-        widget: datetime
-        required: false
-      - name: published-on
-        label: Published On
-        widget: datetime
-        required: false
-      - name: image
-        label: Image
-        widget: object
-        fields:
-          - name: url
-            label: URL
-            widget: image
-            allow_multiple: false
-          - name: alt
-            label: Alt Text
-            widget: string
-            required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: email
+        label: Submitter's Email
+        widget: decrypted_widget
+      - name: full-name
+        label: Submitter's Full Name
+        widget: decrypted_widget
+      - *image_config
       - name: category
         label: Category
         widget: relation
@@ -370,97 +588,13 @@ collections:
         filter:
           field: "parent_category"
           value: "{{fields.category}}"
-      - name: tags
-        label: Tags
-        widget: hidden
-        required: false
-        multiple: true
-        options:
-          - label: "AI Productivity & Utilities"
-            value: ai-productivity-and-utilities
-          - label: "Arts & Collectibles"
-            value: arts-collectibles
-          - label: "Bridges & Oracles"
-            value: bridges-oracles
-          - label: "Climate"
-            value: climate
-          - label: "Communication & Social"
-            value: communication-social
-          - label: "DApp"
-            value: dapp
-          - label: "Data Curation & Monetization"
-            value: data-curation-monetization
-          - label: "Data Preparation"
-            value: data-prep
-          - label: "Data Retrieval"
-            value: data-retrieval
-          - label: "Data Storage & Management"
-            value: data-storage-management
-          - label: "Decentralized Personal Information Networks"
-            value: depin
-          - label: "Decentralized Science"
-            value: desci
-          - label: "Developer Tools"
-            value: developer-tools
-          - label: "DWeb"
-            value: dweb
-          - label: "Enterprise"
-            value: enterprise
-          - label: "Gaming"
-            value: gaming
-          - label: "GLAM (Galleries, Libraries, Archives, Museums)"
-            value: glam
-          - label: "Governance, DAOs, & Public Goods"
-            value: governance-daos-public-goods
-          - label: "GPUs"
-            value: gpus
-          - label: "Health"
-            value: health
-          - label: "Infrastructure"
-            value: infrastructure
-          - label: "Leasing & Staking"
-            value: leasing-and-staking
-          - label: "Metaverse"
-            value: metaverse
-          - label: "Network Tools"
-            value: network-tools
-          - label: "NFTs"
-            value: nfts
-          - label: "Photo & Video"
-            value: photo-video
-          - label: "Privacy & Security"
-            value: privacy-security
-          - label: "Public Data"
-            value: public-data
-          - label: "Publishing & News"
-            value: publishing-news
-          - label: "RSS"
-            value: rss
-          - label: "S3 APIs"
-            value: s3-apis
-          - label: "Sealing"
-            value: sealing
-          - label: "Social Impact"
-            value: social-impact
-          - label: "Space"
-            value: space
-          - label: "Storage Infrastructure"
-            value: storage-infrastructure
-          - label: "Storage Provider"
-            value: storage-provider
-          - label: "Storage Services"
-            value: storage-services
-          - label: "Storage Software"
-            value: storage-software
-          - label: "Universities"
-            value: universities
-          - label: "Wallets, Identity & Authentication"
-            value: wallets-identity-authentication
-            multiple: true
       - name: description
         label: Short Description
         widget: string
-        required: true
+        pattern:
+          - "^.{0,160}$"
+          - "Must have at most 160 characters."
+        hint: "A short description of the project. Maximum 160 characters."
       - name: website
         label: Website
         widget: string
@@ -487,84 +621,235 @@ collections:
         label: YouTube Video URL
         widget: string
         required: false
+        hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
       - name: year-joined
         label: Using Filecoin Since
         widget: datetime
         required: false
+        picker_utc: true
       - name: body
         label: Long Description
         widget: markdown
         required: false
-      - name: news-update
-        label: What's New?
-        widget: text
-        required: false
-      - *meta_config
+      - *meta_config_with_title_fallback
 
-  - name: "events"
+  - name: "event_entries"
     label: "Events"
     folder: "src/content/events/"
+    preview_path: "events/{{slug}}"
     label_singular: "Event"
     create: true
-    identifier_field: "name"
     extension: "md"
     slug: "{{slug}}"
     fields:
       - name: "title"
         label: "Title"
         widget: "string"
-      - name: "created-on"
-        label: "Created On"
-        widget: "datetime"
-      - name: "updated-on"
-        label: "Updated On"
-        widget: "datetime"
-        required: false
-      - name: "published-on"
-        label: "Published On"
-        widget: "datetime"
-        required: false
-      - name: "description"
-        label: "Description"
-        widget: "string"
-        required: false
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "category"
+        label: "Category"
+        widget: "select"
+        options:
+          - label: "Co-Hosted"
+            value: "co-hosted"
+          - label: "Community"
+            value: "community"
+          - label: "Hosted"
+            value: "hosted"
+          - label: "Supported & Sponsored"
+            value: "supported-sponsored"
       - name: "location"
         label: "Location"
         widget: "string"
-      - name: "external-link"
-        label: "External Link URL"
-        widget: "string"
-        required: false
-        hint: "External link to the event page"
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
         hint: "First day of event"
+        picker_utc: true
       - name: "end-date"
         label: "End Date"
         widget: "datetime"
         required: false
         hint: "Last day of event"
-      - name: "image"
-        label: "Image"
+        picker_utc: true
+      - name: "description"
+        label: "Description"
+        widget: "string"
+        required: false
+      - name: "external-link"
+        label: "External Link URL"
         widget: "object"
+        required: false
+        collapsed: true
         fields:
           - name: "url"
             label: "URL"
-            widget: "image"
-          - name: "alt"
-            label: "Alt Text"
             widget: "string"
             required: false
-            hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/"
-      - name: "involvement"
-        label: "FF Involvement"
-        widget: "select"
-        options:
-          - label: "Hosted"
-            value: "hosted"
-          - label: "Sponsored"
-            value: "sponsored"
-          - label: "Supported"
-            value: "supported"
-      - *meta_config
+          - name: "text"
+            label: "Text"
+            widget: "string"
+            required: false
+            default: "View Event Details"
+            hint: "Text for the external link CTA. Please use proper capitalization. Defaults to 'View Event Details.'"
+      - *image_config
+      - name: "luma-calendar-link"
+        label: "Luma Calendar URL"
+        widget: "string"
+        required: false
+        hint: "Luma Calendar URL for the event. Include relevant tags when appropriate, e.g., https://lu.ma/filecoin-events?tag=fil%20bangkok%202024"
+      - name: luma-events-section
+        label: "Luma Events Section"
+        widget: "object"
+        required: false
+        collapsed: true
+        hint: The embed URL must be filled out for this section to appear on the page.
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+            required: false
+            hint: This is the title for the Events section header. For example, "Main Stage Events." Defaults to 'Events.'
+          - name: "embed-link"
+            label: "Luma Embed URL"
+            widget: "string"
+            required: false
+            hint: Paste the embed URL for your Luma event here to display the events directly on the page. Include relevant tags when appropriate, e.g., https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024.
+      - name: "schedule"
+        label: "Schedule"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - name: "title"
+            label: "Section Title"
+            widget: "string"
+            required: false
+            hint: This is the title for the Schedule section header. For example, "Main Stage Schedule." Defaults to 'Schedule.'
+          - name: "days"
+            label: "Event Days"
+            widget: "list"
+            required: false
+            fields:
+              - name: "date"
+                label: "Date"
+                widget: "datetime"
+              - name: "events"
+                label: "Events"
+                widget: "list"
+                fields:
+                  - name: "title"
+                    label: "Event Title"
+                    widget: "string"
+                  - name: "description"
+                    label: "Description"
+                    widget: "text"
+                    required: false
+                  - name: "moderators"
+                    label: "Moderators"
+                    label_singular: "Moderator"
+                    widget: "list"
+                    fields:
+                      - name: "name"
+                        label: "Full Name"
+                        widget: "string"
+                      - name: "company"
+                        label: "Company"
+                        widget: "string"
+                    required: false
+                  - name: "speakers"
+                    label: "Speakers"
+                    label_singular: "Speaker"
+                    widget: "list"
+                    fields:
+                      - name: "name"
+                        label: "Full Name"
+                        widget: "string"
+                      - name: "company"
+                        label: "Company"
+                        widget: "string"
+                    required: false
+                  - name: "start"
+                    label: "Start Time"
+                    widget: "datetime"
+                    picker_utc: true
+                  - name: "end"
+                    label: "End Time"
+                    widget: "datetime"
+                    picker_utc: true
+                    required: false
+                  - name: "location"
+                    label: "Location"
+                    widget: "string"
+                  - name: "url"
+                    label: "URL"
+                    widget: "string"
+                    required: false
+      - name: "speakers"
+        label: "Speakers"
+        widget: "list"
+        required: false
+        fields:
+          - name: "name"
+            label: "Full Name"
+            widget: "string"
+          - name: "title"
+            label: "Job Title"
+            widget: "string"
+          - name: "company"
+            label: "Company"
+            widget: "string"
+          - name: "linkedin"
+            label: "LinkedIn Profile URL"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "object"
+            collapsed: true
+            fields:
+              - name: "src"
+                label: "URL"
+                widget: "image"
+                allow_multiple: false
+                choose_url: false
+                hint: Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to max. 200px width, ensuring the aspect ratio is maintained at 2:3 (e.g., 200px width and 300px height).
+              - *image_alt_config
+      - name: "sponsors"
+        label: "Sponsors"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - name: "first-tier"
+            label: "First Tier"
+            widget: "list"
+            required: false
+            min: 0
+            max: 4
+            fields: *event_sponsor_config
+          - name: "second-tier"
+            label: "Second Tier"
+            widget: "list"
+            required: false
+            min: 0
+            max: 5
+            fields: *event_sponsor_config
+          - name: "third-tier"
+            label: "Third Tier"
+            widget: "list"
+            required: false
+            min: 0
+            max: 7
+            fields: *event_sponsor_config
+          - name: recap-youtube-embed-url
+            label: Event Recap YouTube Embed URL
+            widget: string
+            required: false
+            hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
+          - name: recap-youtube-playlist-url
+            label: Event Recap YouTube Playlist URL
+            widget: string
+            required: false
+      - *meta_config_with_title_fallback

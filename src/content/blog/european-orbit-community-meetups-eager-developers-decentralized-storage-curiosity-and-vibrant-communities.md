@@ -1,7 +1,6 @@
 ---
 title: "European Orbit Community Meetups: Eager Developers, Decentralized
   Storage Curiosity, and Vibrant Communities"
-slug: "european-orbit-community-meetups-eager-developers-decentralized-storage-curiosity-and-vibrant-communities"
 created-on: 2024-06-13T11:49:00.000Z
 updated-on: 2024-06-13T11:49:00.000Z
 published-on: 2024-06-13T11:49:00.000Z
@@ -10,12 +9,8 @@ description: "The Filecoin Orbit community teamed up with Filecoin Foundation
   recently on a Europe roadshow tour to engage builders, strengthen the
   community, and drive interest in the region. "
 image:
-  url: /assets/images/110624-europe.png
-recommended-posts: []
+  src: /assets/images/110624-europe.png
 seo:
-  twitter:
-    title: summary
-    card: summary
   description:
     "The Filecoin Orbit community toured Europe, hosting events in six
     cities to strengthen the community ahead of EthCC in Brussels."
@@ -74,7 +69,7 @@ In Portugal, we joined forces with Diogo Almeida of Lightshift Ventures, a Lisbo
 
 We had the pleasure of hosting at Poolside – which is an exciting new accelerator, co-work space and event hub serving the Lisbon Web3 community. The city has an incredibly eclectic community of both native Portuguese builders and expats who have set up in the city to take advantage of its favorable crypto climate.
 
-Stef Magdalinski, Head of Technical Programs at the Filecoin Foundation, discussed the Foundation's [grants programs](https://fil.org/grants/), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
+Stef Magdalinski, Head of Technical Programs at Filecoin Foundation, discussed the Foundation's [grants programs](/grants/), the many opportunities for builders to get involved in the Filecoin world, and how people can apply for grant funding. Diogo Coimbra of Lisbon-based Haven Digital Partners was also onhand to present a new solution for Filecoin storage deals that matches investors with storage providers in need of Filecoin collateral.
 
 ## Munich: Student Fanfare at Technical University of Munich
 

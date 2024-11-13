@@ -1,24 +1,17 @@
 ---
 title: "Dev Grant Spotlight: Geo Web"
-description: >-
-  The Geo Web project, a participant in Filecoin’s Developer Grants program, is
-  a set of open protocols that creates novel property rights for augmented
-  reality (AR) content.
+created-on: 2023-04-21T07:26:40.008Z
+updated-on: 2023-04-21T07:26:40.008Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: The Geo Web project, a participant in Filecoin’s Developer Grants
+  program, is a set of open protocols that creates novel property rights for
+  augmented reality (AR) content.
 image:
-  url: >-
-    /assets/images/64423aafa6ec4151d52a3dc9_0-eczvdfkkiozsdvgv.jpeg
-  alt:
-slug: dev-grant-spotlight-geo-web
-updated-on: "2023-04-21T07:26:40.008Z"
-created-on: "2023-04-21T07:26:40.008Z"
-published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
-category: reports
+  src: /assets/images/64423aafa6ec4151d52a3dc9_0-eczvdfkkiozsdvgv.jpeg
 seo:
-  title: "Dev Grant Spotlight: Geo Web"
-  description:
-    Spotlight on Geo Web, exploring their innovative solutions and contributions
-    to the Filecoin ecosystem.
+  description: Spotlight on Geo Web, exploring their innovative solutions and
+    contributions to the Filecoin ecosystem.
 ---
 
 _This is the first post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about our Dev Grants program, including how to apply for grants,_ [_here_](https://grants.filecoin.io/)_. And_ [_read up_](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) _on Wave 8 recipients._
@@ -37,6 +30,6 @@ Prest is excited about the potential for the Geo Web as devices like smart glass
 
 Co-founder Cody Hatfield stressed the benefits of being selected for the Filecoin Developer Grants program. “The Filecoin grant has given us the opportunity to provide persistent, long-term storage for content on the Geo Web, faster than we ever thought possible,” he said. “Without the grant, we would not have been able to prioritize this effort and our impending launch would lack the robust UX features we are now developing.”
 
-The team’s next step is to launch the mainnet and improve UX to make purchasing a digital parcel seamless. The Geo Web’s more equitable and efficient gold rush might still be in our future, but you can interact with the project now by exploring the [testnet](https://cadastre.geoweb.eth.link/) and visiting their [GitHub](https://github.com/Geo-Web-Project) and [Discord](https://discord.com/invite/reXgPru7ck) channels.
+The team’s next step is to launch the mainnet and improve UX to make purchasing a digital parcel seamless. The Geo Web’s more equitable and efficient gold rush might still be in our future, but you can interact with the project now by exploring the testnet (link previously available but now unavailable) and visiting their [GitHub](https://github.com/Geo-Web-Project) and [Discord](https://discord.com/invite/reXgPru7ck) channels.
 
-**The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Check out** [**other grant recipients**](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) **and learn how you can apply for** [**open grants**](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md) **and** [**Microgrants**](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md)**. You can also submit a** [**Filecoin x Hedera proposal**](https://github.com/filecoin-project/devgrants/blob/master/rfps/hedera-and-filecoin.md) **utilizing both protocols’ technologies.**
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

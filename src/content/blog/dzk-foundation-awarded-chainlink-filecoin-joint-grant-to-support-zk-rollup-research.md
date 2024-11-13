@@ -6,19 +6,13 @@ description: >-
   In 2021, Chainlink and Filecoin launched a joint grant initiative to
   accelerate the development of hybrid smart contracts that combine Chainlink
   decentralized oracles and Filecoin decentralized storage.
-slug: >-
-  dzk-foundation-awarded-chainlink-filecoin-joint-grant-to-support-zk-rollup-research
 image:
-  url: >-
-    /assets/images/64423abce3c08f49114f50eb_1-9utuc70k3mbyvlsllf7dqa.png
-  alt:
+  src: /assets/images/64423abce3c08f49114f50eb_1-9utuc70k3mbyvlsllf7dqa.png
 updated-on: "2023-04-21T07:26:52.479Z"
 created-on: "2023-04-21T07:26:52.479Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: news
 seo:
-  title: DZK Foundation Awarded Grant for ZK-Rollup Research
   description:
     DZK Foundation receives Chainlink-Filecoin joint grant to support ZK-Rollup
     research. Learn more.
@@ -40,4 +34,4 @@ Rami Akeela, DZK Foundation’s VP of Engineering, has received Ph.D.s from Sant
 
 “We are excited to receive this Chainlink-Filecoin Joint Grant. Chainlink External Adapters offer an unparalleled solution for sharing data between different chains, and we are exploring using External Adapters to solve the data availability problem of zk-Rollups,” stated Weikeng Chen. “By making Web3 technologies more interoperable, we can drastically improve their scalability and support the growth of the entire decentralized ecosystem.”
 
-The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md) and [Microgrants](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md).
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

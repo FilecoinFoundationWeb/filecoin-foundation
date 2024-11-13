@@ -2,8 +2,6 @@
 title: >-
   Case Study: Seal Storage Making Web3 Accessible for All Through Ecosystem
   Leadership and the Filecoin Network
-slug: >-
-  case-study-seal-storage-making-web3-accessible-for-all-through-ecosystem-leadership-and-the-filecoin-network-1
 created-on: "2023-04-21T07:26:26.517Z"
 updated-on: "2023-04-21T07:26:26.517Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -13,13 +11,9 @@ description: >-
   North America, with over 20PB of capacity across the U.S. and Canada, and is
   looking to add over 100PiBs more.
 image:
-  url: >-
-    /assets/images/64423aa28d1be743ddce7ab2_1-inwzqgetwegv3q8q0c4fea.webp
-  alt:
-recommended-posts: []
+  src: /assets/images/64423aa28d1be743ddce7ab2_1-inwzqgetwegv3q8q0c4fea.webp
 category: use-cases
 seo:
-  title: "Case Study: Seal Storage - Making Web3 Accessible for All"
   description:
     Seal Storage makes Web3 accessible through ecosystem leadership and
     the Filecoin network. Read the case study.
@@ -34,7 +28,7 @@ seo:
 
 **Providing an alternative data storage solution**
 
-The use of cloud infrastructure services has [spiked](https://www.idc.com/getdoc.jsp?containerId=IDC_P31615) over the past few years, since companies around the world were forced to digitize their businesses during the pandemic. In Q4 2021, spending on these services [grew by 13.5% YoY to an average of $21.1 billion](https://www.idc.com/getdoc.jsp?containerId=prUS48998722), and tech research firm IDC predicts a continuous growth and need for these services as supply continues to catch up to demand.
+The use of cloud infrastructure services has [spiked](https://www.idc.com/getdoc.jsp?containerId=IDC_P31615) over the past few years, since companies around the world were forced to digitize their businesses during the pandemic. In Q4 2021, spending on these services grew by 13.5% YoY to an average of $21.1 billion, and tech research firm IDC predicts a continuous growth and need for these services as supply continues to catch up to demand.
 
 Founded in 2021 to shake up the [$76 billion cloud storage market](https://www.fortunebusinessinsights.com/cloud-storage-market-102773) largely controlled by a few big tech companies, [Seal Storage](https://www.sealstorage.io/) provides Web3 data storage for enterprises, research institutes, and Web3 firms in need of a more sustainable, secure, and affordable home for their valuable data. Michael Horowitz, the CEO; Andrew McFarlane, CIO; and Alex Altman, COO, are the founders of Seal Storage and have been working in blockchain for the past five years on a quest to revolutionize the cloud storage industry and make Web3 accessible for all.
 
@@ -94,4 +88,4 @@ The team believes that decentralized storage is a building block to Web3, and is
 
 Learn more about [Seal Storage](https://www.sealstorage.io/).
 
-And to learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](https://fil.org/).
+And to learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](/).

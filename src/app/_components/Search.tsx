@@ -6,22 +6,21 @@ import { useSearchParams } from 'next/navigation'
 
 import { useDebounceCallback } from 'usehooks-ts'
 
+import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
+import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
+
 import { useSearch } from '@/hooks/useSearch'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SearchInput } from '@/components/SearchInput'
 
-import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
-import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
-
 export type SearchProps = {
   query: ReturnType<typeof useSearch>['searchQuery']
-  id: 'mobile-search' | 'web-search'
 }
 
 const DEBOUNCE_DELAY = 400
 
-export function Search({ query, id }: SearchProps) {
+export function Search({ query }: SearchProps) {
   const [value, setValue] = useState(query)
   const params = useSearchParams()
 
@@ -40,8 +39,7 @@ export function Search({ query, id }: SearchProps) {
     DEBOUNCE_DELAY,
   )
 
-  function handleSearchChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const newValue = event.target.value
+  function handleSearchChange(newValue: string) {
     setValue(newValue)
 
     const existingPageParam = params.get(PAGE_KEY)
@@ -59,11 +57,5 @@ export function Search({ query, id }: SearchProps) {
     }
   }
 
-  return (
-    <SearchInput
-      id={id}
-      searchQuery={value || ''}
-      onSearchChange={handleSearchChange}
-    />
-  )
+  return <SearchInput query={value || ''} onChange={handleSearchChange} />
 }

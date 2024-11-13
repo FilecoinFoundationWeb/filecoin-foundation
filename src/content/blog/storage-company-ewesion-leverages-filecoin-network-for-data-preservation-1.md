@@ -1,6 +1,5 @@
 ---
 title: Storage Company Ewesion Leverages Filecoin Network for Data Preservation
-slug: storage-company-ewesion-leverages-filecoin-network-for-data-preservation-1
 created-on: "2023-04-21T07:31:55.493Z"
 updated-on: "2023-04-21T07:31:55.493Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,13 +8,9 @@ description: >-
   serves everyone from large and medium-sized enterprises to media and
   individual users.
 image:
-  url: >-
-    /assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
-  alt:
-recommended-posts: []
+  src: /assets/images/643e66c80a81033d920c68ba_1-b1odemnhfczn_24q2linww.webp
 category: use-cases
 seo:
-  title: Storage Company Ewesion Leverages Filecoin for Data Preservation
   description:
     How Ewesion leverages the Filecoin network for data preservation. Discover
     their use case.
@@ -69,4 +64,4 @@ In partnership with ByteBase, Ewesion found that being able to handpick its data
 
 With ByteBase, Ewesion enjoys collaborating with a provider that is local to its own operations. This partnership, which started in 21st May 2021, has shown fruitful already. In the past few months, the company has moved 27.5TiB data to the Filecoin network and has the expectations of 180TiB by the end of the year. It also plans to expand its content offering to audio and visual files in the coming year to be the leader of creative repositories in Beijing, China.
 
-To learn more about Filecoin, storage providers, and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](https://fil.org/).
+To learn more about Filecoin, storage providers, and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](/).

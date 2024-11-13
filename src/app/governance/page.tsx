@@ -1,29 +1,36 @@
+import { PATHS } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+
 import { CardGrid } from '@/components/CardGrid'
-import { CTASection } from '@/components/CTASection'
 import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
 
-import { createMetadata } from '@/utils/createMetadata'
-
-import { attributes } from '@/content/pages/governance.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
-
+import { CTAPageSection } from './components/CTAPageSection'
 import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.GOVERNANCE,
+  zodParser: BaseFrontmatterSchema.parse,
+})
+
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.governance2.data.src,
+  },
   path: PATHS.GOVERNANCE.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Governance() {
@@ -79,33 +86,7 @@ export default function Governance() {
         <GovernanceCalendarCards />
       </PageSection>
 
-      <CTASection
-        title="Connect With Us"
-        description={
-          <>
-            To get involved, visit the{' '}
-            <TextLink
-              href={FILECOIN_FOUNDATION_URLS.governance.social.github.href}
-            >
-              Governance GitHub
-            </TextLink>
-            , join the conversation in the{' '}
-            <TextLink
-              href={FILECOIN_FOUNDATION_URLS.governance.social.slack.href}
-            >
-              {FILECOIN_FOUNDATION_URLS.governance.social.slack.label} Slack
-              channel
-            </TextLink>
-            , or follow{' '}
-            <TextLink
-              href={FILECOIN_FOUNDATION_URLS.governance.social.twitter.href}
-            >
-              {FILECOIN_FOUNDATION_URLS.governance.social.twitter.label}
-            </TextLink>{' '}
-            on X.
-          </>
-        }
-      />
+      <CTAPageSection />
     </PageLayout>
   )
 }

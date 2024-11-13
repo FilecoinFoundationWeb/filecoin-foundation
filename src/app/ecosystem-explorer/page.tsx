@@ -2,6 +2,23 @@ import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import {
+  getCategoryDataFromDirectory,
+  getCategorySettingsFromMap,
+} from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+import { getSortOptions } from '@/utils/getSortOptions'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
@@ -12,7 +29,7 @@ import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
 import { CTASection } from '@/components/CTASection'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoResultsMessage } from '@/components/NoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -21,24 +38,9 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { NextServerSearchParams } from '@/types/searchParams'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import {
-  getCategoryDataFromDirectory,
-  getCategorySettingsFromMap,
-} from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-
-import { attributes } from '@/content/pages/ecosystem-explorer.md'
-
-import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-import { graphicsData } from '@/data/graphicsData'
-
+import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -51,18 +53,27 @@ type Props = {
 
 const ecosystemProjects = getEcosystemProjectsData()
 
-const { header, seo } = attributes
+const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
+
+const { header, seo } = getFrontmatter({
+  path: PATHS.ECOSYSTEM_EXPLORER,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.ecosystem.data.src,
+  },
   path: PATHS.ECOSYSTEM_EXPLORER.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
-const { categorySettings, validCategoryOptions } =
+
+const { categoryOptions, validCategoryIds } =
   getCategorySettingsFromMap(categoryData)
 
 export default function EcosystemExplorer({ searchParams }: Props) {
@@ -72,18 +83,17 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'publishedOn',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    configs: ecosystemProjectsSortConfigs,
+    defaultsTo: 'a-z',
   })
 
   const { categoryQuery, categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
-    categorizeBy: 'category',
-    validCategoryOptions: validCategoryOptions,
+    validCategoryIds: validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -99,10 +109,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         description={header.description}
         image={graphicsData.ecosystem}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .href,
-          text: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .label,
+          text: 'Submit Your Project',
+          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
         }}
       />
 
@@ -113,27 +121,40 @@ export default function EcosystemExplorer({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset />}
+            gapSize="wide"
+            results={<ResultsAndReset results={categorizedResults.length} />}
             category={
-              <Category query={categoryQuery} settings={categorySettings} />
+              <Category query={categoryQuery} options={categoryOptions} />
             }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              search={<Search query={searchQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultQuery={defaultSortQuery}
+                />
+              }
             />
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset />}
+              search={<Search query={searchQuery} />}
+              results={<ResultsAndReset results={categorizedResults.length} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultQuery={defaultSortQuery}
+                />
+              }
               category={
-                <Category query={categoryQuery} settings={categorySettings} />
+                <Category query={categoryQuery} options={categoryOptions} />
               }
             />
             <FilterContainer.ContentWrapper>
               {categorizedResults.length === 0 ? (
-                <NoResultsMessage />
+                <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">
@@ -148,19 +169,18 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           description={description}
-                          tag={categoryData[category]}
+                          tagLabel={categoryData[category]}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
                             icon: BookOpen,
                           }}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
-                            padding: true,
-                            priority: isFirstTwoImages,
+                            ...(image || graphicsData.imageFallback.data),
+                            alt: '',
                             objectFit: 'contain',
-                            fallback: graphicsData.imageFallback,
+                            padding: Boolean(image),
+                            priority: isFirstTwoImages,
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '320px',
@@ -189,10 +209,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         title="Become Part of the Expanding Ecosystem"
         description="If you’re building on Filecoin and don’t see your project or want to edit your listing, share your details."
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .href,
-          text: FILECOIN_FOUNDATION_URLS.ecosystem.submitOrUpdateProjectForm
-            .label,
+          text: 'Submit Your Project',
+          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
         }}
       />
     </PageLayout>

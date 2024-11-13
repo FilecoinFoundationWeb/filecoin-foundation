@@ -1,25 +1,20 @@
 ---
 title: "Dev Grant Spotlight: encloud"
-slug: dev-grant-spotlight-encloud
-created-on: 2023-04-21T07:26:35.386000Z
-updated-on: 2023-04-21T07:26:35.386000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  "Businesses hold trillions of dollars of valuable data which, according
-  to research firm Ocean Tomo, comprise 90% of the value of S&P 500 companies. New
-  tools leveraging decentralized storage solutions like Filecoin are helping businesses
-  capture more value. Encloud, formerly known as 180Protocol that lets you easily
-  onboard and ecrypt data to the decentralized web."
-image:
-  url: /assets/images/0405-dgs-180protocol.png
-  alt:
-recommended-posts: []
+created-on: 2023-04-21T07:26:35.386Z
+updated-on: 2023-04-21T07:26:35.386Z
+published-on: 2023-04-21T07:33:56.200Z
 category: reports
+description: Businesses hold trillions of dollars of valuable data which,
+  according to research firm Ocean Tomo, comprise 90% of the value of S&P 500
+  companies. New tools leveraging decentralized storage solutions like Filecoin
+  are helping businesses capture more value. Encloud, formerly known as
+  180Protocol that lets you easily onboard and ecrypt data to the decentralized
+  web.
+image:
+  src: /assets/images/0405-dgs-180protocol.png
 seo:
-  title: "Dev Grant Spotlight: Encloud"
-  description:
-    Encloud's contributions to the Filecoin ecosystem as a dev grant recipient.
-    Explore their achievements.
+  description: Encloud's contributions to the ecosystem as a Filecoin Foundation
+    Dev Grant recipient. Explore their achievements.
 ---
 
 Businesses hold trillions of dollars of valuable data which, according to research firm Ocean Tomo, [comprise 90%](https://www.oceantomo.com/intangible-asset-market-value-study/) of the value of S&P 500 companies. New tools leveraging decentralized storage solutions like Filecoin are helping businesses capture more value. Encloud, formerly known as 180Protocol that lets you easily onboard and ecrypt data to the decentralized web.
@@ -48,6 +43,4 @@ Encloud are also developing key partnerships with both large-scale SPs and criti
 
 With large-scale enterprise data sets come increased risk and concern about the privacy of confidential information. The [data privacy software market is valued](https://www.fortunebusinessinsights.com/data-privacy-software-market-105420) at $1.68 billion and is forecasted to grow by nearly 41% to more than $25 billion by 2029. This market growth will transform IPFS by delivering real-world data and use cases to the network at scale, meaning more privacy, which leads to greater enterprise centricity and more value creation for the entire network.
 
-\_\_
-
-_The Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

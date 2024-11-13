@@ -1,6 +1,5 @@
 ---
 title: Announcing the VenusHub Platform
-slug: announcing-the-venushub-platform
 created-on: "2023-04-21T07:26:09.179Z"
 updated-on: "2023-04-21T07:26:09.179Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -8,13 +7,9 @@ description: >-
   One of the main goals in building out the Filecoin network is to ensure the
   Mainnet is secure and resilient.
 image:
-  url: >-
-    /assets/images/64423a911fe00b2cb076101a_1-_gcjaae5jjlt5kkzewfd6g.png
-  alt:
-recommended-posts: []
+  src: /assets/images/64423a911fe00b2cb076101a_1-_gcjaae5jjlt5kkzewfd6g.png
 category: news
 seo:
-  title: Filecoin Foundation Announces the Venushub Platform
   description:
     Introducing the Venushub platform by Filecoin Foundation. Learn how
     it fosters decentralized application development.

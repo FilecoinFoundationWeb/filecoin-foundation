@@ -1,3 +1,15 @@
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { GrantsPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
@@ -9,17 +21,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import { createMetadata } from '@/utils/createMetadata'
-import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-
-import { attributes } from '@/content/pages/grants.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
+import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
@@ -27,19 +31,31 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const ecosystemProjects = getEcosystemProjectsData()
+
 const {
-  featured_grant_graduates: grantGraduatesSlugs,
   header,
   seo,
-} = attributes
+  featuredGrantGraduates: featuredGrantGraduatePaths,
+} = getFrontmatter({
+  path: PATHS.GRANTS,
+  zodParser: GrantsPageFrontmatterSchema.parse,
+})
+
+const grantGraduatesSlugs = featuredGrantGraduatePaths.map(
+  extractSlugFromFilename,
+)
+
 const grantGraduates = ecosystemProjects.filter((item) =>
   grantGraduatesSlugs?.includes(item.slug),
 )
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.grants.data.src,
+  },
   path: PATHS.GRANTS.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Grants() {
@@ -143,18 +159,18 @@ export default function Grants() {
         description={
           <>
             Please visit our{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.github}>
+            <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.grants.github}>
               GitHub repo
-            </TextLink>{' '}
+            </ExternalTextLink>{' '}
             to learn more about the proposal process, review process, timeline
             guidance, and more. For other questions, email{' '}
-            <TextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
+            <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.grants.email.href}>
               {extractEmailAddress(FILECOIN_FOUNDATION_URLS.grants.email.href)}
-            </TextLink>{' '}
+            </ExternalTextLink>{' '}
             or join our{' '}
-            <TextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
+            <ExternalTextLink href="https://calendly.com/filecoin-grants/office-hours-ama?month=2024-06">
               monthly office hours
-            </TextLink>
+            </ExternalTextLink>
             !
           </>
         }

@@ -2,9 +2,15 @@ name: Lint Code Base
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - cms/*
+      - ecosystem-submission/*
   pull_request:
-    branches: [main]
+    branches:
+      - main
+      - cms/*
+      - ecosystem-submission/*
 
 jobs:
   lint:
@@ -20,6 +26,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Generate CMS configuration schema
+        run: npm run prebuild
 
       - name: Run linter
         run: npm run lint

@@ -7,13 +7,9 @@ description:
   "This winter, two new programs launched that make it easier than ever
   to contribute to the Filecoin network: Filecoin Saturn and Filecoin Station."
 image:
-  url: /assets/images/12202022-saturnandstation.png
-  alt:
-slug: meet-the-new-programs-making-it-easier-to-contribute-to-the-filecoin-network
-recommended-posts: []
+  src: /assets/images/12202022-saturnandstation.png
 category: ecosystem
 seo:
-  title: New Programs to Contribute to the Filecoin Network
   description:
     Discover the new programs designed to make it easier to contribute
     to the Filecoin network.

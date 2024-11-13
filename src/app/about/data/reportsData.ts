@@ -1,7 +1,8 @@
-import type { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageProps } from '@/types/imageType'
+
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import annualReport from '@/assets/images/022624-ff-anualreport.png'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type ReportData = {
   title: string
@@ -10,7 +11,7 @@ type ReportData = {
   image?: StaticImageProps
 }
 
-export const reportsData: ReportData[] = [
+export const reportsData: Array<ReportData> = [
   {
     title: 'Filecoin Foundation 2023 Annual Report',
     description: `Read the full report to learn more about the Foundation's work in 2023.`,

@@ -2,7 +2,6 @@
 title:
   "Filecoin Foundation Successfully Deploys InterPlanetary File System (IPFS)
   in Space"
-slug: filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space
 created-on: 2024-01-16T02:43:22.627000Z
 updated-on: 2024-01-16T02:43:22.642000Z
 published-on: 2024-01-16T02:43:22.656000Z
@@ -13,16 +12,8 @@ description:
   involved sending files from Earth to orbit and back using an implementation of the
   IPFS protocol designed for space communications.
 image:
-  url: /assets/images/01-lockheed.png
-  alt: IPFS in Space
-recommended-posts: []
+  src: /assets/images/01-lockheed.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/01-lockheed.png
-  og:image: /assets/images/01-lockheed.png
-  title: Filecoin Foundation Successfully Deploys IPFS in Space
   description:
     Filecoin Foundation successfully deploys IPFS in space. Discover the
     details of this groundbreaking achievement.
@@ -38,7 +29,7 @@ This mission, conducted with Lockheed Martin-developed software, demonstrated ho
 
 As part of the demonstration, [the IPFS white paper](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf) and an image of FF’s mascot (Biscuit, the “FileCorgi”) were transmitted to an orbiting LM LINUSS ™CubeSat and back using a purpose-built IPFS implementation that ran atop [Lockheed Martin’s SmartSat technology](https://www.lockheedmartin.com/content/lockheed-martin/en-us/news/features/2024/smartsat-equipped-satellite-uploads-new-mission-on-orbit.html), a software platform that makes it easier to dynamically add and quickly change missions in orbit through simple app uploads.
 
-This successful demonstration follows nearly three years of collaboration. FF and Lockheed Martin Space initially [announced the collaboration](https://fil.org/blog/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space/) in Davos in May 2022, and [announced details of the mission](https://fil.org/blog/ff-x-lockheed-martin-mission-announcement/) in Davos in January 2023.
+This successful demonstration follows nearly three years of collaboration. FF and Lockheed Martin Space initially [announced the collaboration](/blog/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space/) in Davos in May 2022, and [announced details of the mission](/blog/ff-x-lockheed-martin-mission-announcement/) in Davos in January 2023.
 
 “IPFS is called the ‘interplanetary’ file system because, from the beginning, IPFS was envisioned as a technology that could enable networking in space,” said Marta Belcher, president and chair of FF. “We could not be more thrilled to make that vision a reality, thanks to the amazing team at Lockheed Martin Space.”
 

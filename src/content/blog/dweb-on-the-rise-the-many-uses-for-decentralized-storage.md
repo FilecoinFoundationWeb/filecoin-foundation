@@ -1,6 +1,5 @@
 ---
 title: "DWeb on the Rise: The Many Uses for Decentralized Storage"
-slug: dweb-on-the-rise-the-many-uses-for-decentralized-storage
 created-on: 2023-05-15T11:00:00Z
 updated-on: 2023-05-15T11:00:00Z
 published-on: 2023-05-15T11:00:00Z
@@ -12,12 +11,9 @@ description:
   be run by any one of thousands of hosting providers around the world, instead of
   just being run by Amazon by default."
 image:
-  url: /assets/images/0905-dweb-on-the-rise.png
-  alt:
-recommended-posts: []
+  src: /assets/images/0905-dweb-on-the-rise.png
 category: ecosystem
 seo:
-  title: "DWeb on the Rise: Uses for Decentralized Storage"
   description:
     Decentralized web (DWeb) on the rise. Discover the many uses for decentralized
     storage solutions.
@@ -35,7 +31,7 @@ As a leading decentralized data storage provider, Filecoin plays an important ro
 
 _Mona_
 
-[Mona](https://monaverse.com/) is building a gallery in the metaverse for 3D art, with composable 3D spaces built by artists for artists. Recently, Mona launched the [Filecoin Forum](https://forum.mona.gallery/), which offers more than $200,000 in bounties for artists, architects and gamers to spur the creation of new 3D art spaces.
+[Mona](https://monaverse.com/) is building a gallery in the metaverse for 3D art, with composable 3D spaces built by artists for artists. Recently, Mona launched the Filecoin Forum (link previously available but now unavailable), which offers more than $200,000 in bounties for artists, architects and gamers to spur the creation of new 3D art spaces.
 
 _OP Games_
 

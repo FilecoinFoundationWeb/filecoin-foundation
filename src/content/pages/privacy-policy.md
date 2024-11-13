@@ -4,12 +4,12 @@ header:
   description: ""
 seo:
   title: "Privacy Policy"
-  description: "Discover how the Filecoin Foundation safeguards your data. Read our comprehensive Privacy Policy for detailed information."
+  description: "Discover how Filecoin Foundation safeguards your data. Read our comprehensive Privacy Policy for detailed information."
 ---
 
 **Last Updated: January 25, 2023**
 
-Filecoin Foundation and Filecoin Foundation for the Decentralized Web (collectively, "Filecoin Foundation," "we," "us") provide this Privacy Policy to explain our practices regarding the collection, use, and disclosure of your personal information both online and offline. This Privacy Policy applies to the [fil.org](https://fil.org/) and [ffdweb.org](https://ffdweb.org/) websites ("Websites") and any websites, apps, or services that link to this Privacy Policy ("Services"), unless otherwise indicated. The Privacy Policy that applies to information obtained as part of job applications can be found at [fil.org/employee-privacy-policy](/employee-privacy-policy).
+Filecoin Foundation and Filecoin Foundation for the Decentralized Web (collectively, "Filecoin Foundation," "we," "us") provide this Privacy Policy to explain our practices regarding the collection, use, and disclosure of your personal information both online and offline. This Privacy Policy applies to the [fil.org](/) and [ffdweb.org](https://ffdweb.org/) websites ("Websites") and any websites, apps, or services that link to this Privacy Policy ("Services"), unless otherwise indicated. The Privacy Policy that applies to information obtained as part of job applications can be found at [fil.org/employee-privacy-policy](/employee-privacy-policy).
 
 ## I. What Personal Information is Collected
 

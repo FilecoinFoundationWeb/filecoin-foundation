@@ -1,33 +1,26 @@
-import {
-  type CategoryMap,
-  type CategorySetting,
-  type CMSCategoryFieldMapping,
-  type CategoryYAMLData,
-} from '@/types/categoryTypes'
-import { type CMSFieldOption } from '@/types/cmsConfig'
+import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
+import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
-import { CMS_CATEGORY_FIELD_MAPPING } from '@/constants/cmsConstants'
+type GetCategoryLabelParams = {
+  collectionName: CMSCollectionName
+  category: string
+}
 
-function transformCategoryDataToSettings(
-  options: CMSFieldOption[],
-): CategorySetting[] {
+const CATEGORY_FIELD_NAME = 'category'
+
+function transformCategoryDataToSettings(options: Array<CMSFieldOption>) {
   return options.map((option) => ({
     id: option.value,
     name: option.label,
   }))
 }
 
-function getCategoryData(
-  CMSCollectionKey: keyof CMSCategoryFieldMapping,
-): CMSFieldOption[] {
-  const { collection, field } = CMS_CATEGORY_FIELD_MAPPING[CMSCollectionKey]
-  const { fields } = getCollectionConfig(collection)
-  const categoriesData = getCMSFieldOptions(fields, field)
-
-  return categoriesData
+function getCategoryData(collectionName: CMSCollectionName) {
+  const { fields } = getCollectionConfig(collectionName)
+  return getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
 }
 
 export function getCategoryDataFromDirectory(directoryPath: string) {
@@ -35,29 +28,45 @@ export function getCategoryDataFromDirectory(directoryPath: string) {
     readAndValidateYamlFiles<CategoryYAMLData>(directoryPath)
   const categoryMap: CategoryMap = {}
 
-  categoriesData.forEach((category) => {
-    categoryMap[category.slug] = category.name
+  categoriesData.forEach(({ slug, name }) => {
+    categoryMap[slug] = name
   })
 
   return categoryMap
 }
 
-export function getCategorySettings(
-  CMSCollectionKey: keyof CMSCategoryFieldMapping,
-) {
-  const rawCategories = getCategoryData(CMSCollectionKey)
-  const categorySettings = transformCategoryDataToSettings(rawCategories)
-  const categoryIds = categorySettings.map((setting) => setting.id)
+export function getCategorySettings(collectionName: CMSCollectionName) {
+  const rawCategories = getCategoryData(collectionName)
+  const categoryOptions = transformCategoryDataToSettings(rawCategories)
+  const categoryIds = categoryOptions.map((setting) => setting.id)
 
-  return { categorySettings, validCategoryOptions: categoryIds }
+  return { categoryOptions, validCategoryIds: categoryIds }
+}
+
+export function getEventsCategorySettings() {
+  const eventSettings = getCategorySettings('event_entries')
+  const { categoryOptions, validCategoryIds } = eventSettings
+
+  return { categoryOptions, validCategoryIds }
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
-  const categorySettings = Object.entries(categoryMap).map(([id, name]) => ({
+  const categoryOptions = Object.entries(categoryMap).map(([id, name]) => ({
     id,
     name,
   }))
-  const categoryIds = categorySettings.map((setting) => setting.id)
+  const categoryIds = categoryOptions.map((setting) => setting.id)
 
-  return { categorySettings, validCategoryOptions: categoryIds }
+  return { categoryOptions, validCategoryIds: categoryIds }
+}
+
+export function getCategoryLabel({
+  collectionName,
+  category,
+}: GetCategoryLabelParams) {
+  const { fields } = getCollectionConfig(collectionName)
+  const categoryOptions = getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
+  const option = categoryOptions.find((option) => option.value === category)
+
+  return option ? option.label : category
 }

@@ -1,21 +1,16 @@
-export type CategoryOption = string
+export type CategoryId = string
 export type CategoryMap = Record<string, string>
-export type CategoryCounts = Record<CategoryOption, number>
+export type CategoryCounts = Record<CategoryId, number>
 
-export type CategorySetting = {
-  id: CategoryOption
+export type CategoryOption = {
+  id: CategoryId
   name: string
-}
-
-export type CategorizableBy = {
-  category?: CategoryOption
-  involvement?: CategoryOption
 }
 
 export type CategoryYAMLData = {
   name: string
   slug: string
-  subcategories: string[]
+  subcategories: Array<string>
 }
 
 type CMSCategoryField = {

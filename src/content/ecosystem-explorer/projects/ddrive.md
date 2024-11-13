@@ -1,33 +1,24 @@
 ---
 title: dDrive
-slug: ddrive
 created-on: 2024-04-03T17:23:12.584000Z
 updated-on: 2024-04-03T17:23:12.612000Z
 published-on: 2024-04-03T17:23:12.644000Z
 description: "A fully decentralized and open-source Web3 Cloud Storage solution."
 category: storage
-tags:
-  - dapp
-  - data-storage-management
 tech:
   - ipfs
 image:
-  url: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
-  alt: dDrive Logo
-featured-content:
+  src: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
 website: https://app.valist.io/d-drive/d-drive-pwa
-repo:
-twitter:
-video-url:
 year-joined: 2024-04-03T17:23:12.660000Z
-news-update:
 subcategories:
   - data-storage-management
 seo:
-  title: DDrive
   description:
     DDrive offers decentralized storage solutions for personal and enterprise
     use.
+email: encrypted::U2FsdGVkX1+K+eOXu85Ljfefd2ex03Wd/N1htJ4Alr/s2DIWGaDh9dBFa2J610id
+full-name: encrypted::U2FsdGVkX1+O1lELlBLs5sWkADXtXd3hcgdXJ7iWkfM=
 ---
 
 dDrive is a fully decentralized and open-source Storage which replaces traditional storage providers having centralized governance, cumbersome infrastructure, inadequate security, and privacy measures with users datasets.

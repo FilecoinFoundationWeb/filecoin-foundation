@@ -2,7 +2,6 @@
 title:
   Announcing Watermelon nv21 Upgrade - Extended Sector Commitments, Synthetic
   PoRep, FVM Enhancements, and more
-slug: announcing-watermelon-nv21-upgrade-extended-sector-commitments-synthetic-porep-fvm-enhancements-and-more
 created-on: 2023-12-12T14:04:50.147000Z
 updated-on: 2023-12-12T14:04:50.157000Z
 published-on: 2023-12-12T14:04:50.164000Z
@@ -12,11 +11,8 @@ description:
   codenamed ‘Watermelon’ brings a wave of enhancements and new features aimed at bolstering
   the network’s efficiency and robustness.
 image:
-  url: /assets/images/twitter-_-nv21_upgrade.png
-  alt: The arrival of the nv21 Network Upgrade on Filecoin mainnet is here.
-recommended-posts: []
+  src: /assets/images/twitter-_-nv21_upgrade.png
 seo:
-  title: Announcing Watermelon NV21 Upgrade by Filecoin Foundation
   description:
     Watermelon NV21 upgrade announced. Includes extended sector commitments,
     synthetic PoRep, FVM enhancements, and more.
@@ -38,6 +34,6 @@ What the upgrade means for the Filecoin network:
 
 Network upgrades are no small feat. They involve extensive collaboration across various teams within the Filecoin ecosystem. For the ‘Watermelon’ upgrade, this collaborative effort was particularly crucial. We thank the teams who rigorously tested the upgrade over several weeks. Their dedication ensured the stability and integrity of the network, paving the way for a smooth transition as Watermelon went live on the mainnet.
 
-In the coming months, the Filecoin Foundation will continue to steward proposed changes to the Filecoin governance system as pushed forward through the [FIP0001v2 initiative](https://github.com/filecoin-project/FIPs/pull/850) in addition to supporting other technical improvements to the network that would land in future network upgrades.
+In the coming months, Filecoin Foundation will continue to steward proposed changes to the Filecoin governance system as pushed forward through the [FIP0001v2 initiative](https://github.com/filecoin-project/FIPs/pull/850) in addition to supporting other technical improvements to the network that would land in future network upgrades.
 
-You can keep tabs on [Governance](https://fil.org/governance/) by following us on X at [@Fil_Gov](https://twitter.com/fil_gov), joining our monthly governance calls, and following discussions and new ideas in the [FIPs GitHub repo](https://github.com/filecoin-project/FIPs).
+You can keep tabs on [Governance](/governance/) by following us on X at [@Fil_Gov](https://twitter.com/fil_gov), joining our monthly governance calls, and following discussions and new ideas in the [FIPs GitHub repo](https://github.com/filecoin-project/FIPs).

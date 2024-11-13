@@ -1,6 +1,5 @@
 ---
 title: "Case Study: DeSci Labs and Filecoin: Enabling a Future of Open Science"
-slug: case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science
 created-on: 2023-07-20T12:26:44.398000Z
 updated-on: 2023-07-20T12:26:44.412000Z
 published-on: 2023-07-20T12:26:44.426000Z
@@ -12,12 +11,9 @@ description:
   systems for years without significant progress. The vision is a world without vendor
   lock-in, paywalls, proprietary analytics, link rot and fake science.
 image:
-  url: /assets/images/0719-cs-desci.png
-  alt:
-recommended-posts: []
+  src: /assets/images/0719-cs-desci.png
 category: use-cases
 seo:
-  title: "Case Study: DeSci Labs and Filecoin - Enabling a Future of Open Science"
   description:
     Explore how DeSci Labs uses Filecoin to enable a future of open science.
     A detailed case study.
@@ -33,7 +29,7 @@ Key Highlights:
   - There exists a lack of incentives for scientists to embrace replicability.
   - The **scientific world lacks a robust technology stack** that can enable knowledge sharing for easy reproducibility;  the infrastructure does not exist currently to do this quickly, easily, and cheaply.
 
-- Solving science’s Replication Crisis is the basis of the work by [DeSci Labs](https://www.desci.com/), which aims to address these challenges by leveraging decentralized technologies like lnterPlanetary File System (IPFS) and Filecoin, which operate "under the hood" of its scientific publication app called [DeSci Nodes](https://nodes.desci.com/web).
+- Solving science’s Replication Crisis is the basis of the work by [DeSci Labs](https://www.desci.com/), which aims to address these challenges by leveraging decentralized technologies like lnterPlanetary File System (IPFS) and Filecoin, which operate "under the hood" of its scientific publication app called DeSci Nodes.
 - **Filecoin provides a needed solution** by making storage affordable, preventing vendor lock-in and fostering a culture of openness. By storing research objects in a decentralized repository, it becomes possible to share the entire research object with data and code, provide versioning, and ensure reproducibility.
 - By embracing open science principles and leveraging decentralized web technologies such as **Filecoin and IPFS, the scientific community can overcome the challenges posed by the lack of transparency and reproducibility.** These tools are the foundation of DeSci Labs’ vision for creating an open-access network without paywalls, barriers, and vendor lock-in, where scientific data is stored and accessed in a way that facilitates collaboration, transparency, and the free flow of knowledge.
 

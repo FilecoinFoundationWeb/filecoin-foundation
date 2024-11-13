@@ -8,13 +8,9 @@ description:
   technology solutions for the Web3 ecosystem with safe, flexible, and reliable products
   and services. "
 image:
-  url: /assets/images/image-c-01.png
-  alt:
-slug: filecoin-storage-provider-spotlight-origin-storage
-recommended-posts: []
+  src: /assets/images/image-c-01.png
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Origin Storage"
   description:
     Spotlight on Origin Storage, a key player in the Filecoin storage ecosystem.
     Explore their contributions.

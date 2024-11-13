@@ -2,7 +2,6 @@
 title:
   "Case Study: OpSci - How an Open Science Commons Project Built on Web3 Infrastructure
   Empowers Community Discovery"
-slug: case-study-opsci-how-an-open-science-commons-project-built-on-web3-infrastructure-empowers-community-discovery
 created-on: 2023-04-21T07:26:24.934000Z
 updated-on: 2023-04-21T07:26:24.934000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -10,12 +9,9 @@ description:
   How an Open Science Commons Project Built on Web3 Infrastructure Empowers
   Community Discovery
 image:
-  url: /assets/images/0224-cs-opsci.png
-  alt:
-recommended-posts: []
+  src: /assets/images/0224-cs-opsci.png
 category: use-cases
 seo:
-  title: "Case Study: OpSci Empowers Community Discovery with Web3"
   description:
     Discover how OpSci uses Web3 infrastructure to empower community discovery.
     A comprehensive case study.
@@ -30,4 +26,4 @@ Key Highlights:
 - OpSci is designed to facilitate a peer-to-peer science data commons for web-native scientists. The **Filecoin network, IPFS, and other decentralized web technologies are key components of this vision**.
 - OpSci was one of the **earliest DeSci DAOs** with a strong academic contributing core. OpSci has been utilized to fund a number of community events, starting with the Open Web Fellowship, the first DeSci conference at ethDenver, and later helping prop up the DeSci.eth community fund.
 
-Read the full Filecoin Foundation [Case Study: OpSci - How an Open Science Commons Project Built on Web3 Infrastructure Empowers Community Discovery](https://fil-foundation.on.fleek.co/hosting/OpSci-CaseStudy.pdf).
+Read the full Filecoin Foundation [Case Study: OpSci - How an Open Science Commons Project Built on Web3 Infrastructure Empowers Community Discovery](/blog/case-study-opsci-how-an-open-science-commons-project-built-on-web3-infrastructure-empowers-community-discovery).

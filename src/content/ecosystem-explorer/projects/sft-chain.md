@@ -1,36 +1,29 @@
 ---
 title: SFT Chain
-slug: sft-chain
-created-on: "2024-02-05T17:57:11.340Z"
-updated-on: "2024-02-05T17:57:11.357Z"
-published-on: "2024-02-05T17:57:11.368Z"
+created-on: 2024-02-05T17:57:11.340Z
+updated-on: 2024-02-05T17:57:11.357Z
+published-on: 2024-02-05T17:57:11.368Z
 description:
   "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates
   with the Filecoin ecosystem, focusing on DePIN."
 category: tooling-productivity
-tags:
-  - depin
-  - infrastructure
-  - storage-infrastructure
 tech:
   - filecoin
 image:
-  url: /assets/images/group.png
-  alt: SFT Chain
+  src: /assets/images/group.png
 website: "https://www.sftproject.io/"
-featured-content:
 repo: "https://github.com/SFT-project"
 twitter: "https://twitter.com/sftprotocol/"
 video-url: "https://www.youtube.com/embed/FOyv43DGH48"
 year-joined:
-news-update:
 subcategories:
   - infrastructure
 seo:
-  title: SFT Chain
   description:
     SFT Chain offers decentralized solutions for supply chain management
     and tracking.
+email: encrypted::U2FsdGVkX19LCh/cTJv65i8V5fcwOcXPQE0PcLx45M54B85V61iLbwZ2bO9PgeOd
+full-name: encrypted::U2FsdGVkX1/J/DDoexYCIVr5ZQGWAEv4QV58cx2cwbY=
 ---
 
 SFT Chain, a dynamic 'Chain of Chains', plays a crucial role in the DePIN (Decentralized Physical Infrastructure Networks) landscape, specifically designed to augment the capabilities of Web3 infrastructure. At the core of our mission, we focus on creating a comprehensive platform that integrates critical components like storage, computing, and edge CDN, thereby pushing the boundaries of conventional infrastructure and paving the way for groundbreaking applications.

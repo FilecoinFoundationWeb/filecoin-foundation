@@ -1,34 +1,23 @@
 ---
-title: "UC Berkeley Underground Physics Group"
-slug: "uc-berkeley-underground-physics-group"
-created-on: "2024-01-05T21:39:48.054Z"
-updated-on: "2024-01-04T22:40:28.806Z"
-published-on: "2024-01-11T13:26:59.787Z"
-description:
-  "UC Berkeley Underground Physics Group stores neutrino physics research
-  data to support the development of novel detection technology on the Filecoin network
-  through storage provider Seal Storage."
-category: "science-climate-space"
-tags:
-  - "universities"
-tech:
-  - "filecoin"
-  - "ipfs"
+title: UC Berkeley Underground Physics Group
+created-on: 2024-01-05T21:39:48.054Z
+updated-on: 2024-01-04T22:40:28.806Z
+published-on: 2024-01-11T13:26:59.787Z
+email: encrypted::U2FsdGVkX18rWKOZDg2uu+Dt3ZVN5M1iqdx8pldGP4gV/K+VMdGRE4DUJPDQxQrp
+full-name: encrypted::U2FsdGVkX183QnwgV82um3BtvFtT1/mGmvpBIhkcQaM=
 image:
-  url: /assets/images/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
-  alt: "UC Berkeley Underground Physics Group Logo"
-website: "https://underground.physics.berkeley.edu/"
-repo:
-twitter:
-video-url:
-year-joined:
-news-update:
-featured-content: "https://www.sealstorage.io/blog/uc-berkeley-uses-web3-decentralized-storage-for-neutrino-research-data"
+  src: /assets/images/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
+category: science-climate-space
 subcategories:
   - decentralized-science
+description: UC Berkeley Underground Physics Group stores research data on the
+  Filecoin network through Seal Storage.
+website: https://sealstorage.io/uc-berkeley-uses-web3-decentralized-storage-for-neutrino-research-data/
+tech:
+  - filecoin
+  - ipfs
+featured-content: https://physics.berkeley.edu/news-events/news/seal-storage-technology-partners-with-orebi-gann-group
 seo:
-  title: UC Berkeley Underground Physics Group
-  description:
-    UC Berkeley Underground Physics Group provides decentralized solutions
-    for scientific data management.
+  description: UC Berkeley Underground Physics Group provides decentralized
+    solutions for scientific data management.
 ---

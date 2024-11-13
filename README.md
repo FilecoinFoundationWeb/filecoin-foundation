@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is developed for the Filecoin Foundation, aiming to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web. Utilizing Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and other dependencies for Markdown processing and validation, this project aims to offer an accessible and user-friendly website for the Filecoin community.
+This project is developed for Filecoin Foundation, aiming to provide comprehensive information and resources about Filecoin's initiatives and contributions to the decentralized web. Utilizing Next.js for server-side rendering and static site generation, Tailwind CSS for styling, and other dependencies for Markdown processing and validation, this project aims to offer an accessible and user-friendly website for the Filecoin community.
 
 ## Getting Started
 
@@ -175,6 +175,21 @@ You can connect Decap CMS to the local Git repository. To do this, follow these 
 
 Please refer to the Decap CMS documentation for more information and detailed instructions on [working with a local Git repository](https://decapcms.org/docs/working-with-a-local-git-repository/).
 
+## Creating Page Templates
+
+To create a new page template, run the following command:
+
+`npm run generate:page <page-name>`
+
+Replace `<page-name>` with the desired name of the page. This command will generate the following files with boilerplate content:
+
+- `app/page-name/page.tsx`
+- `app/page-name/layout.tsx`
+- `app/page-name/utils/generateStructuredData.tsx`
+- `cypress/e2e/page_name_spec.cy.ts`
+
+It will also update `paths.ts` to include the new page.
+
 ## Continuous Integration and Deployment
 
 Our project leverages GitHub Actions for Continuous Integration (CI) to automate the testing and linting of code. This ensures that every push and pull request to the `main` branch meets our quality standards and passes all tests. Below are the key workflows integrated into our CI process:
@@ -295,7 +310,7 @@ Following these guidelines helps ensure that our website remains consistent, acc
 
 ## Contributing
 
-We welcome contributions to the Filecoin Foundation website!
+We welcome contributions to Filecoin Foundation website!
 
 ## License
 

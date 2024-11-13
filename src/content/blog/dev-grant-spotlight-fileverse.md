@@ -1,26 +1,20 @@
 ---
 title: Dev Grant Spotlight - Fileverse
-slug: dev-grant-spotlight-fileverse
-created-on: 2023-04-21T07:26:37.139000Z
-updated-on: 2023-04-21T07:26:37.139000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  This is the latest post in our series highlighting the builders and innovators
-  creating new tools and services on the Filecoin network. Learn more about Filecoin
-  Foundation’s Dev Grants program.
+created-on: 2023-04-21T07:26:37.139Z
+updated-on: 2023-04-21T07:26:37.139Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: This is the latest post in our series highlighting the builders and
+  innovators creating new tools and services on the Filecoin network. Learn more
+  about Filecoin Foundation’s Dev Grants program.
 image:
-  url: /assets/images/rectangle-31-.png
-  alt:
-recommended-posts: []
-category: reports
+  src: /assets/images/rectangle-31-.png
 seo:
-  title: "Dev Grant Spotlight: Fileverse"
-  description:
-    "Fileverse project spotlight: Discover their innovations and contributions
-    as a Filecoin dev grant recipient."
+  description: "Fileverse project spotlight: Discover their innovations and
+    contributions as a Filecoin Foundation Dev Grant recipient."
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://fil.org/grants/)_._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
 
 [Fileverse](https://fileverse.io/) is part of an emerging subset of decentralized apps (dApps) focused on everyday online activities and privacy. Supported by more than 14,000 Gitcoin contributors, the current Fileverse dApp ([Fileverse Solo](https://beta.fileverse.io/)) gives people tools to store, encrypt, share, and manage multimedia files — image, video, documents — as well as encrypted chat rooms using a digital wallet.
 
@@ -54,4 +48,4 @@ This decentralized journey has led the Fileverse team to their new and most anti
 
 The owner(s) of a Fileverse Portal can customize their Portal with different plugins for collaboration (eg. whiteboard, live collab, image generation, 3D visualization), enable end-to-end encryption, and leverage wallets to create unique access-tokens (for any file) and send them to their collaborators, friends or community on-chain. Learn more or start using [Fileverse](https://fileverse.io/) today and follow them on Twitter at [@Fileverse](https://twitter.com/fileverse).
 
-_The Filecoin Foundation Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ [_Open Grants and Microgrants_](https://fil.org/grants)_._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

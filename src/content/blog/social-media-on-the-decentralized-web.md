@@ -1,6 +1,5 @@
 ---
 title: Social Media on the Decentralized Web
-slug: social-media-on-the-decentralized-web
 created-on: "2023-04-21T07:31:50.469Z"
 updated-on: "2023-04-21T07:31:50.469Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -9,13 +8,9 @@ description: >-
   decentralized social media network Mastodon, in the face of controversial
   layoffs, and leadership and product changes.
 image:
-  url: >-
-    /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
-  alt:
-recommended-posts: []
+  src: /assets/images/64423be63db3a0a2416bac69_1-vcqlzywn6ec6brxs8lmzng.webp
 category: use-cases
 seo:
-  title: Social Media on the Decentralized Web
   description:
     Explore how social media operates on the decentralized web. Benefits,
     challenges, and future prospects.
@@ -25,7 +20,7 @@ In recent days, many Twitter users have sought alternative platforms, like the d
 
 Users have many complaints about the governance of centralized social media issues, ranging from the security of private information to content moderation policies. Most platforms we know and use every day are part of a centralized ecosystem, which gives a small group of companies control over the personal and professional information of the masses.
 
-Building a decentralized alternative to these giants requires time and effort: Mastodon, while new to many people, is based on work that stretches back [over a decade](https://www.franklinstreetstatement.org/). And while Mastodon is a worthy match for Twitter’s current feature-set, it’s not enough for these tools to simply match the social media giants. New entrants will need to offer different and unique benefits, like enhanced privacy, security, and stability, that compel users to switch, and embrace new platforms and solutions.
+Building a decentralized alternative to these giants requires time and effort: Mastodon, while new to many people, is based on work that stretches back over a decade. And while Mastodon is a worthy match for Twitter’s current feature-set, it’s not enough for these tools to simply match the social media giants. New entrants will need to offer different and unique benefits, like enhanced privacy, security, and stability, that compel users to switch, and embrace new platforms and solutions.
 
 At Filecoin Foundation, we see the technologies in the Filecoin ecosystem offering rock-steady stepping stones to this better future. [Libp2p](https://libp2p.io/) lets individual users find and talk to each other, without needing central servers. [IPFS](https://ipfs.tech/) gives new services a way to find data, wherever it is stored — freeing them from dependence on one social media company over another and letting users move from one service to another. The Filecoin network itself, with incentivized storage, not only provides a provably stable basis for hosting content, but also shines a light on the kind of incentive systems that will enable independent social media to sustain and provide for itself for the long run, without relying on the largesse of the current tech giants.
 
@@ -68,6 +63,6 @@ These are just a few of the many companies and non-profits creating an alternati
 
 **Learn more about FF and FFDW Grants**
 
-The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Check out [other grant recipients](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) and learn how you can apply for [open grants](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md) and [Microgrants](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md).
+The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md).
 
 Find out more about [FFDW’s grants](https://ffdweb.org/) program.

@@ -1,51 +1,50 @@
 'use client'
 
 import { Listbox } from '@headlessui/react'
-import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from '@/components/Icon'
+import {
+  type CategoryCounts,
+  type CategoryId,
+  type CategoryOption,
+} from '@/types/categoryTypes'
+
+import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+
+import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
-import {
-  type CategoryCounts,
-  type CategoryOption,
-  type CategorySetting,
-} from '@/types/categoryTypes'
-
 type CategoryListboxProps = {
-  categoryOption: CategoryOption | undefined
-  categorySettings: CategorySetting[]
-  categoryCounts?: CategoryCounts
-  onCategoryOptionChange: (selectedCategoryOption: CategoryOption) => void
+  selected: CategoryId | undefined
+  options: Array<CategoryOption>
+  counts?: CategoryCounts
+  onChange: (selected: CategoryId) => void
 }
 
 export function CategoryListbox({
-  categoryOption,
-  categorySettings,
-  categoryCounts,
-  onCategoryOptionChange,
+  selected,
+  options,
+  counts,
+  onChange,
 }: CategoryListboxProps) {
+  const totalCategoryCount = getTotalCategoryCount(counts)
+
   return (
-    <Listbox value={categoryOption} onChange={onCategoryOptionChange}>
-      {({ open }) => (
-        <>
-          <ListboxButton ariaLabel="Category options" open={open}>
-            <span>Category</span>
-            <Icon component={CaretDown} size={16} weight="bold" />
-          </ListboxButton>
-          <ListboxOptions>
-            {categorySettings.map((option) => (
-              <ListboxOption
-                key={option.id}
-                option={option}
-                counts={categoryCounts}
-              />
-            ))}
-          </ListboxOptions>
-        </>
-      )}
+    <Listbox value={selected} onChange={onChange}>
+      <ListboxButton text="Category" />
+      <ListboxOptions>
+        {totalCategoryCount && (
+          <ListboxOption
+            option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}
+            counts={totalCategoryCount}
+          />
+        )}
+        {options.map((option) => (
+          <ListboxOption key={option.id} option={option} counts={counts} />
+        ))}
+      </ListboxOptions>
     </Listbox>
   )
 }

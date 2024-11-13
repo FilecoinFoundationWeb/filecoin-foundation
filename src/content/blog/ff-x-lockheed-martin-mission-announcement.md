@@ -11,15 +11,11 @@ description:
   place in 2023 aboard Lockheed Martin’s [NYSE: LMT] LM 400 Technology Demonstrator
   spacecraft."
 image:
-  url: /assets/images/01-lockheed-p-1080.png
-  alt:
-slug: ff-x-lockheed-martin-mission-announcement
-recommended-posts: []
+  src: /assets/images/01-lockheed-p-1080.png
 category: news
 seo:
-  title: Filecoin Foundation x Lockheed Martin Mission Announcement
   description:
-    Announcing the Filecoin Foundation and Lockheed Martin mission collaboration.
+    Announcing Filecoin Foundation and Lockheed Martin mission collaboration.
     Explore the details.
 ---
 

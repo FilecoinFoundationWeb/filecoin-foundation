@@ -1,17 +1,18 @@
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
-import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
+import { PATHS } from '@/constants/paths'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { PATHS } from '@/constants/paths'
-import { graphicsData } from '@/data/graphicsData'
+import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
+
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 type FeaturedGrantsGraduatesProps = {
-  grantGraduates: EcosystemProjectData[]
+  grantGraduates: Array<EcosystemProject>
 }
 
 export function FeaturedGrantsGraduates({
@@ -35,11 +36,10 @@ export function FeaturedGrantsGraduates({
             icon: BookOpen,
           }}
           image={{
-            src: image.url,
-            alt: image.alt,
-            fallback: graphicsData.imageFallback,
+            ...(image || graphicsData.imageFallback.data),
+            alt: '',
             objectFit: 'contain',
-            padding: true,
+            padding: Boolean(image),
             sizes: buildImageSizeProp({
               startSize: '100vw',
               sm: '175px',

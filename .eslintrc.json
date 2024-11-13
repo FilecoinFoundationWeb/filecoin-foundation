@@ -4,6 +4,7 @@
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -17,7 +18,7 @@
         "shorthandFirst": true
       }
     ],
-
+    "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     // Variable usage and definitions
     "no-unused-vars": "warn",
 
@@ -51,6 +52,41 @@
             "position": "before"
           },
           {
+            "pattern": "@/types/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/constants/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/content/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/data/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/schemas/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/services/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
             "pattern": "@/hooks/**",
             "group": "internal",
             "position": "before"
@@ -62,21 +98,6 @@
           },
           {
             "pattern": "@/styles/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/types/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/utils/**",
-            "group": "internal",
-            "position": "before"
-          },
-          {
-            "pattern": "@/content/**",
             "group": "internal",
             "position": "before"
           },
@@ -101,5 +122,13 @@
     ],
 
     "eqeqeq": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": ["./tsconfig.json", "./cypress/tsconfig.json"]
+      }
+    }
   }
 }

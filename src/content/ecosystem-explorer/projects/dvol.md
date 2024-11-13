@@ -4,27 +4,20 @@ created-on: 2024-04-05T00:07:23.530Z
 updated-on: 2024-04-05T00:07:23.555Z
 published-on: 2024-04-05T00:07:23.578Z
 image:
-  url: /assets/images/dvol.png
-  alt: DVol Logo
+  src: /assets/images/dvol.png
 category: storage
 subcategories:
   - data-storage-management
-tags:
-  - dweb
 description: Innovative Tokenized Structured Products for On-chain Assets
 website: https://www.dvol.finance/
 tech:
   - filecoin
-repo: null
-news-update: null
-slug: dvol
-featured-content: null
 twitter: https://twitter.com/dvolfinance
-video-url: null
 year-joined: 2024-04-05T00:07:23.591Z
 seo:
-  title: DVol
   description: DVol offers decentralized solutions for volume storage and data management.
+email: encrypted::U2FsdGVkX1/oGOrU62BdGDrd0JrwkM8EyqKk/wD4ltRkQ6JClzUKewj2ao+NmU/w
+full-name: encrypted::U2FsdGVkX19WgeO3+WqSZN/5D+ElFKgfl27o08n65S8=
 ---
 
 ## What is dVOL?

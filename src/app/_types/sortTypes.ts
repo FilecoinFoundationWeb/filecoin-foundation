@@ -1,11 +1,14 @@
-export type SortOption = 'newest' | 'oldest'
+import { VALID_SORT_KEYS } from '@/constants/sortConstants'
 
-export type SortSetting = {
-  id: SortOption
-  name: string
+export type ValidSortKey = (typeof VALID_SORT_KEYS)[number]
+
+export type SortConfig<Entry extends Record<string, any>> = {
+  key: ValidSortKey
+  label: string
+  sortFn: (entries: Array<Entry>) => Array<Entry>
 }
 
-export type SortableByDate = {
-  publishedOn?: string
-  startDate?: string
+export type SortOption = {
+  id: ValidSortKey
+  name: string
 }

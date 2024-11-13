@@ -1,53 +1,53 @@
 import { useMemo } from 'react'
 
-import { type NextServerSearchParams } from '@/types/searchParams'
-import { type SortableByDate, type SortOption } from '@/types/sortTypes'
-import { type Object } from '@/types/utils'
-
-import { normalizeQueryParam } from '@/utils/queryUtils'
-import { sortEntriesByDate } from '@/utils/sortEntriesByDate'
+import type { NextServerSearchParams } from '@/types/searchParams'
+import type { SortConfig } from '@/types/sortTypes'
+import type { NonEmptyReadonlyArray, Object } from '@/types/utils'
 
 import { SORT_KEY } from '@/constants/searchParams'
-import { VALID_SORT_OPTIONS } from '@/constants/sortConstants'
 
-type UseSortProps<Entry extends Object> = {
+import { normalizeQueryParam } from '@/utils/queryUtils'
+
+type UseSortProps<
+  Entry extends Object,
+  Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
+> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
-  sortBy: keyof SortableByDate & keyof Entry
-  sortByDefault: SortOption
+  entries: Array<Entry>
+  configs: Configs
+  defaultsTo: Configs[number]['key']
 }
 
-function validateSortOption<Entry extends Object>(
-  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  defaultSortBy: UseSortProps<Entry>['sortByDefault'],
-) {
-  if (!normalizedQuery) {
-    return defaultSortBy
-  }
-
-  const validSortOption = VALID_SORT_OPTIONS.find(
-    (option) => option === normalizedQuery,
-  )
-
-  return validSortOption || defaultSortBy
-}
-
-export function useSort<Entry extends Object>({
+export function useSort<
+  Entry extends Object,
+  Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
+>({
   searchParams,
   entries,
-  sortBy,
-  sortByDefault,
-}: UseSortProps<Entry>) {
-  const normalizedQuery = normalizeQueryParam(searchParams, SORT_KEY)
-  const validatedSortOption = validateSortOption(normalizedQuery, sortByDefault)
+  configs,
+  defaultsTo,
+}: UseSortProps<Entry, Configs>) {
+  const queryParamValue = normalizeQueryParam(searchParams, SORT_KEY)
+  const defaultConfig =
+    configs.find((config) => config.key === defaultsTo) || configs[0]
+
+  const validSortKey = useMemo(() => {
+    const validSortKeys = configs.map((config) => config.key)
+    const sortKey = validSortKeys.find((key) => key === queryParamValue)
+
+    return sortKey || defaultConfig.key
+  }, [configs, defaultConfig.key, queryParamValue])
 
   const sortedResults = useMemo(() => {
-    return sortEntriesByDate({
-      entries,
-      sortBy,
-      sortOption: validatedSortOption,
-    })
-  }, [entries, sortBy, validatedSortOption])
+    const config = configs.find((config) => config.key === validSortKey)
+    const sortConfig = config || defaultConfig
 
-  return { sortQuery: validatedSortOption, sortedResults }
+    return sortConfig.sortFn(entries)
+  }, [configs, defaultConfig, entries, validSortKey])
+
+  return {
+    sortQuery: validSortKey,
+    sortedResults,
+    defaultSortQuery: defaultConfig.key,
+  }
 }

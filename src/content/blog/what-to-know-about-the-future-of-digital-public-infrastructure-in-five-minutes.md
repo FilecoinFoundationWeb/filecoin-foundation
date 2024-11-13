@@ -1,6 +1,5 @@
 ---
 title: What to know about the Future of Digital Public Infrastructure in Five Minutes
-slug: what-to-know-about-the-future-of-digital-public-infrastructure-in-five-minutes
 created-on: 2023-07-07T15:01:07.700000Z
 updated-on: 2023-07-07T15:01:07.716000Z
 published-on: 2023-07-07T15:01:07.728000Z
@@ -9,12 +8,9 @@ description:
   a professor at the University of Massachusetts at Amherst, about the future of digital
   public infrastructure and how communities can govern their own digital spaces.
 image:
-  url: /assets/images/0928-filecoinfortnight.png
-  alt:
-recommended-posts: []
+  src: /assets/images/0928-filecoinfortnight.png
 category: ecosystem
 seo:
-  title: The Future of Digital Public Infrastructure in Five Minutes
   description:
     Learn about the future of digital public infrastructure in this quick,
     five-minute read.

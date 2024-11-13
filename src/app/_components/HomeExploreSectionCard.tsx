@@ -1,9 +1,9 @@
-import clsx from 'clsx'
+import { clsx } from 'clsx'
+
+import type { CTAProps } from '@/types/ctaType'
 
 import { Card } from '@/components/Card'
 import { type HeadingProps, Heading } from '@/components/Heading'
-
-import { type CTAProps } from '@/types/sharedProps/ctaType'
 
 type HomeExploreSectionCardProps = {
   heading: HeadingProps

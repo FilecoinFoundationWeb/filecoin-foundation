@@ -2,28 +2,19 @@
 title: >-
   Filecoin Foundation and Protocol Labs Embark on Experimental Project to put
   New York City Open Data on the Filecoin Network
-slug: >-
-  filecoin-foundation-and-protocol-labs-embark-on-experimental-project-to-put-new-york-city-open-data-on-the-filecoin-network
 created-on: "2023-04-21T07:27:13.911Z"
 updated-on: "2023-04-21T07:32:22.903Z"
 published-on: "2023-04-21T07:33:56.200Z"
 description: >-
-  The Filecoin Foundation, an independent organization that supports the
+  Filecoin Foundation, an independent organization that supports the
   Filecoin ecosystem and promotes the growth of the decentralized web, and
   Protocol Labs, an open-source research and development lab, are working
   together to store and maintain New York City Open Data on the decentralized
   web for the next five years.
 image:
-  url: >-
-    /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
-  alt:
-recommended-posts:
-  - src/content/blog/applications-are-open-for-filecoin-plus-notary-elections.md
-  - src/content/blog/announcing-the-venushub-platform.md
-  - src/content/blog/announcing-the-starling-lab.md
+  src: /assets/images/64423ad14e4c686170f43f8e_1-_l1pjw5m2ayuddshdifbcg.png
 category: news
 seo:
-  title: Filecoin Foundation and Protocol Labs' NYC Open Data Project
   description:
     Experimental project by Filecoin Foundation and Protocol Labs to put
     New York City open data on the Filecoin network.
@@ -31,7 +22,7 @@ seo:
 
 _Project Explores how Decentralized Data Storage can Benefit Public Data and City Governance in New York City_
 
-The Filecoin Foundation, an independent organization that supports the Filecoin ecosystem and promotes the growth of the decentralized web, and Protocol Labs, an open-source research and development lab, are working together to store and maintain [New York City Open Data](https://opendata.cityofnewyork.us/) on the decentralized web for the next five years. This project will allow New York City, at no cost, to explore decentralized storage technology and how it can be an asset to the City and improve government operations.
+Filecoin Foundation, an independent organization that supports the Filecoin ecosystem and promotes the growth of the decentralized web, and Protocol Labs, an open-source research and development lab, are working together to store and maintain [New York City Open Data](https://opendata.cityofnewyork.us/) on the decentralized web for the next five years. This project will allow New York City, at no cost, to explore decentralized storage technology and how it can be an asset to the City and improve government operations.
 
 “As CTO, I’m constantly thinking about how we can use new technology to better serve New Yorkers, including how we store and safeguard New York City’s data,” said John Paul Farmer, Chief Technology Officer of New York City. “We are a global hub for innovation and home to the second-largest tech sector on the planet. It is important for us to be at the vanguard. This is a terrific opportunity to test how decentralized technology can benefit New York City.”
 
@@ -47,9 +38,9 @@ On the decentralized web, websites will stay up even if some nodes fail, and mos
 
 **Cost Effective**: Filecoin network storage is much more cost effective than traditional storage providers. It costs only 0.02% of the cost of storing the same data using Amazon S3.
 
-Open Data was developed to improve accessibility, accountability, and transparency of New York City’s public data. It makes the data published by New York City agencies and other partners publicly available and helps foster trust by enabling community members to play a role in advocating for a more effective government. Open data sets, like those collected by the city of New York, are valuable resources, used by activists, journalists, researchers, entrepreneurs, teachers, and government agencies for a [wide variety of projects](https://opendata.cityofnewyork.us/projects/) — from [connecting communities to volunteer opportunities](https://opendata.cityofnewyork.us/projects/nyc-connector/) to [mapping NYC Street Trees](https://opendata.cityofnewyork.us/projects/an-interactive-visualization-of-nyc-street-trees-contest-winner/).
+Open Data was developed to improve accessibility, accountability, and transparency of New York City’s public data. It makes the data published by New York City agencies and other partners publicly available and helps foster trust by enabling community members to play a role in advocating for a more effective government. Open data sets, like those collected by the city of New York, are valuable resources, used by activists, journalists, researchers, entrepreneurs, teachers, and government agencies for a [wide variety of projects](https://opendata.cityofnewyork.us/projects/) — from connecting communities to volunteer opportunities to [mapping NYC Street Trees](https://opendata.cityofnewyork.us/projects/an-interactive-visualization-of-nyc-street-trees-contest-winner/).
 
-“The best way to preserve and protect humanity’s most important information is to expand and strengthen the decentralized web,” said Marta Belcher, board chair of the Filecoin Foundation. “No single person, company, or nation should be responsible for preserving our collective history.”
+“The best way to preserve and protect humanity’s most important information is to expand and strengthen the decentralized web,” said Marta Belcher, board chair of Filecoin Foundation. “No single person, company, or nation should be responsible for preserving our collective history.”
 
 Filecoin is a peer-to-peer network that stores files, with built-in economic incentives to ensure files are stored reliably over time. The mission of the Filecoin project is to create a decentralized, efficient, and robust foundation for humanity’s information. Today, more than 3,500 storage providers around the world collectively offer more than 13EiB of storage capacity to the network — equivalent to the complete Wikipedia stored 76,826,821 times.
 

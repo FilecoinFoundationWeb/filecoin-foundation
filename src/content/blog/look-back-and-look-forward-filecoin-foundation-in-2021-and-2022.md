@@ -4,17 +4,12 @@ description: >-
   Filecoin Foundation experienced tremendous growth in 2021, both in size and
   scope.
 image:
-  url: >-
-    /assets/images/64423b078d1be7013acecd8c_0-wrv5zur8bytkshra.png
-  alt:
-slug: look-back-and-look-forward-filecoin-foundation-in-2021-and-2022
+  src: /assets/images/64423b078d1be7013acecd8c_0-wrv5zur8bytkshra.png
 updated-on: "2023-04-21T07:28:07.363Z"
 created-on: "2023-04-21T07:28:07.363Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: reports
 seo:
-  title: "Looking Back and Forward: Filecoin Foundation in 2021 and 2022"
   description:
     A retrospective and future outlook for Filecoin Foundation's activities
     in 2021 and 2022.
@@ -34,4 +29,4 @@ Filecoin Foundation experienced tremendous growth in 2021, both in size and scop
 
 **Looking Ahead**
 
-We’ve made outstanding progress in 2021, and will continue working to grow and foster the Filecoin ecosystem in 2022. We have plans to double the size of our team over the next year. We’ll focus on building tooling around the ecosystem. We’re ramping up our developer grants review/approval process while also working to reduce our time-to-build cycle by 100%. We’ll continue to expand geographical distribution of storage providers and increase the client funnel. We’re hosting a number of large-scale, in-person events including the [Decentralized Web Gateway at SXSW](http://lu.ma/fil-sxsw) (March 15) and our massive community event, [FIL Austin](http://fil.org/filaustin) (June 8). The Governance team is working to codify better FIPs processes and workflows by expanding community deliberation channels and incorporating quantitative analysis or benchmarking for governance behavior. And our Enablement team continues to build a feedback-oriented organization that values team members and supports the organization’s overall mission to preserve humanity’s most important information by building the next generation of the web.
+We’ve made outstanding progress in 2021, and will continue working to grow and foster the Filecoin ecosystem in 2022. We have plans to double the size of our team over the next year. We’ll focus on building tooling around the ecosystem. We’re ramping up our developer grants review/approval process while also working to reduce our time-to-build cycle by 100%. We’ll continue to expand geographical distribution of storage providers and increase the client funnel. We’re hosting a number of large-scale, in-person events including the [Decentralized Web Gateway at SXSW](http://lu.ma/fil-sxsw) (March 15) and our massive community event, [FIL Austin](/filaustin) (June 8). The Governance team is working to codify better FIPs processes and workflows by expanding community deliberation channels and incorporating quantitative analysis or benchmarking for governance behavior. And our Enablement team continues to build a feedback-oriented organization that values team members and supports the organization’s overall mission to preserve humanity’s most important information by building the next generation of the web.

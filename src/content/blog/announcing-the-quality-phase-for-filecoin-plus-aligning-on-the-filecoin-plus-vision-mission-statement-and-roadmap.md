@@ -2,7 +2,6 @@
 title:
   "Announcing the Quality Phase for Filecoin Plus: Aligning on the Filecoin Plus
   Vision, Mission Statement and Roadmap"
-slug: announcing-the-quality-phase-for-filecoin-plus-aligning-on-the-filecoin-plus-vision-mission-statement-and-roadmap
 created-on: 2023-04-21T07:26:06.472000Z
 updated-on: 2023-04-21T07:26:06.472000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -11,12 +10,9 @@ description:
   information by incentivizing data onboarding across use-cases with community governed
   trust mechanisms.
 image:
-  url: /assets/images/03292023-filplusmission.png
-  alt:
-recommended-posts: []
+  src: /assets/images/03292023-filplusmission.png
 category: ecosystem
 seo:
-  title: "Filecoin Plus Quality Phase: Vision and Roadmap"
   description:
     Announcing the Filecoin Plus quality phase. Learn about the vision,
     mission, and roadmap for the initiative.
@@ -71,7 +67,7 @@ To scope and organize our tactical work towards these three top-level goals, we 
 5.  Legitimate client use-cases have scoped pathways for attaining DataCap
 6.  Governance model encourages rapid iteration and process improvement for diverse stakeholders
 
-Our [public roadmap](https://hub.fil.org/fil-plus-roadmap) has more details and timelines around the specific tactical projects, and we will also be updating this Medium publication space with more announcements over the coming months. Some of the key deliverables that we are excited to ship during this next phase include:
+Our public roadmap (link previously available but now unavailable) has more details and timelines around the specific tactical projects, and we will also be updating this Medium publication space with more announcements over the coming months. Some of the key deliverables that we are excited to ship during this next phase include:
 
 - New KPI dashboard metrics, for tracking abuse and governance efficiency
 - Public dispute tracker with clear consequences for abuse cases

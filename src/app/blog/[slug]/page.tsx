@@ -1,13 +1,17 @@
-import { BlogPostHeader } from '@/components/BlogPostHeader'
-import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageLayout } from '@/components/PageLayout'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostData } from '@/utils/getBlogPostData'
-
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+
+import { MarkdownContent } from '@/components/MarkdownContent'
+import { PageLayout } from '@/components/PageLayout'
+import { ShareArticle } from '@/components/ShareArticle'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { getBlogPostData } from '../utils/getBlogPostData'
+
+import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
@@ -21,7 +25,10 @@ export function generateMetadata({ params }: BlogPostProps) {
   const data = getBlogPostData(slug)
 
   return createMetadata({
-    seo: data.seo,
+    seo: {
+      ...data.seo,
+      image: data.image?.src || graphicsData.blog.data.src,
+    },
     path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
   })
 }
@@ -42,6 +49,11 @@ export default function BlogPost({ params }: BlogPostProps) {
           category={category}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
+        <ShareArticle
+          articleTitle={title}
+          path={`${PATHS.BLOG.path}/${slug}`}
+          sectionTitle="Share Post"
+        />
       </div>
     </PageLayout>
   )

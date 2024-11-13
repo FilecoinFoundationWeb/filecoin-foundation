@@ -1,6 +1,5 @@
 ---
 title: Announcing Explorer Awards by Filecoin Foundation and Unfinished
-slug: announcing-explorer-awards-by-filecoin-foundation-and-unfinished
 created-on: 2023-04-21T07:25:58.996000Z
 updated-on: 2023-04-21T07:25:58.996000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,12 +8,9 @@ description: >-
   Explorer Awards, a joint program to support the growth of the decentralized web
   movement and help others catalyze their Web3 learning.
 image:
-  url: /assets/images/0609-ffxunfinished.png
-  alt:
-recommended-posts: []
+  src: /assets/images/0609-ffxunfinished.png
 category: news
 seo:
-  title: Filecoin Foundation and Unfinished Announce Explorer Awards
   description:
     Explorer Awards announced by Filecoin Foundation and Unfinished to
     celebrate innovation in decentralized tech.
@@ -31,5 +27,3 @@ Both Filecoin Foundation and Unfinished share an underlying commitment to using 
 As we’re seeing [incredible growth](https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d) in the Web3 space, Filecoin Foundation and Unfinished will help more people learn about the benefits of decentralized technology and why it’s critical in building the next generation of the web. The Explorer Awards program will fund activists, artists, developers, hackers, and passionate learners who are ready to learn about decentralized technology and explore what it takes to create a web that works better for everyone.
 
 We’re living in an age where very few entities control the vast amount of information on the internet, and that information is vulnerable to single points of failure. Decentralized technology can enable a better future — where users have more control over their data. This joint initiative will support that trajectory — bringing more people from different backgrounds into the space and providing resources for education and learning.
-
-To learn more about the project, visit [explorerawards.org](https://explorerawards.org/).

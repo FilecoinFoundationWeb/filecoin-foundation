@@ -1,28 +1,18 @@
 ---
 title: "Fresh From FF: Early April, 2024"
-slug: fresh-from-ff-early-april
 created-on: 2024-04-01T21:51:19.589000Z
 updated-on: 2024-04-01T21:51:19.602000Z
 published-on: 2024-04-01T21:51:19.614000Z
 category: news
-description:
-  Check out the latest updates about what the Filecoin Foundation team
+description: Check out the latest updates about what Filecoin Foundation team
   has been up to.
 image:
-  url: /assets/images/0215-ff-3-.png
-  alt: Fresh From FF Early April, 2024
-recommended-posts: []
+  src: /assets/images/0215-ff-3-.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  title: "Fresh from FF: Early April 2024"
-  description:
-    Catch up on the latest updates from Filecoin Foundation in early April
-    2024. Key highlights and news.
+  description: Catch up on the latest updates from Filecoin Foundation in early April 2024.
 ---
 
-_Check out the latest updates about what the Filecoin Foundation team has been up to._
+_Check out the latest updates about what Filecoin Foundation team has been up to._
 
 ## Early April Highlights
 
@@ -30,7 +20,7 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 🧰 **Filecoin Foundation’s [Comms Toolkit](https://hub.fil.org/comms) is live!** This new site connects you with FF’s Marketing and Communications team so we can help spread the word about projects you're building and the work you’re doing in the Filecoin ecosystem. Fill out this [intake form](https://airtable.com/appNJXvQHmep8Dx9E/shr3Kc8Ort7T5ehuX), and our team will follow up with you to help you tell your story.
 
-📈**Submissions to the Filecoin Ecosystem Explorer have doubled since its launch in January!** The [Ecosystem Explorer](https://fil.org/ecosystem/) is a crowd-sourced and open database that showcases the incredible breadth of projects in the Filecoin ecosystem. Thank you to all of those who have submitted use cases and applications! If you’re working on something in the Filecoin ecosystem and don’t yet see your project, submit your application to the Explorer [here](https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O).
+📈**Submissions to the Filecoin Ecosystem Explorer have doubled since its launch in January!** The [Ecosystem Explorer](/ecosystem/) is a crowd-sourced and open database that showcases the incredible breadth of projects in the Filecoin ecosystem. Thank you to all of those who have submitted use cases and applications! If you’re working on something in the Filecoin ecosystem and don’t yet see your project, submit your application to the Explorer [here](/ecosystem-explorer/project-form).
 
 ## Ecosystem
 
@@ -69,4 +59,4 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 
 **Events**
 
-- The program schedule is live for [FIL Hong Kong](https://fil-hk.io/), hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).
+- The program schedule is live for [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).

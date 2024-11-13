@@ -3,24 +3,19 @@ title: Introducing the Storage Provider Bounty Board
 created-on: 2023-04-21T07:27:55.426000Z
 updated-on: 2023-04-21T07:27:55.426000Z
 published-on: 2023-04-21T07:33:56.200000Z
-description:
-  The Filecoin Foundation has launched Storage Provider Bounty Board, an
+description: Filecoin Foundation has launched Storage Provider Bounty Board, an
   open tool for coordinating work priorities and tapping the collective knowledge
   of the Filecoin ecosystem in crowdsourcing solutions for the storage provider community.
 image:
-  url: /assets/images/image-c-08.png
-  alt:
-slug: introducing-the-storage-provider-bounty-board
-recommended-posts: []
+  src: /assets/images/image-c-08.png
 category: news
 seo:
-  title: Introducing the Storage Provider Bounty Board
   description:
     Filecoin Foundation launches the Storage Provider Bounty Board. Learn
     how to participate and earn rewards.
 ---
 
-The Filecoin Foundation has launched [Storage Provider Bounty Board](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program), an open tool for coordinating work priorities and tapping the collective knowledge of the Filecoin ecosystem in crowdsourcing solutions for the storage provider community.
+Filecoin Foundation has launched [Storage Provider Bounty Board](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program), an open tool for coordinating work priorities and tapping the collective knowledge of the Filecoin ecosystem in crowdsourcing solutions for the storage provider community.
 
 The goal of the Storage Provider Bounty Board is to:
 
@@ -31,20 +26,20 @@ Visit the [Storage Provider Bounty Board panel](https://github.com/filecoin-proj
 
 ## **What is the Storage Provider Bounty system?**
 
-Bounties are a way to solve simple tasks like fixing minor bugs, adding test cases, updating or translating documentation, or building small, well-specified features. Bounties are priced based upon severity and urgency. Higher prioritized bounties would receive higher rewards. Prioritization and rewards are established by the Filecoin Foundation and the Storage Provider Working Group.
+Bounties are a way to solve simple tasks like fixing minor bugs, adding test cases, updating or translating documentation, or building small, well-specified features. Bounties are priced based upon severity and urgency. Higher prioritized bounties would receive higher rewards. Prioritization and rewards are established by Filecoin Foundation and the Storage Provider Working Group.
 
 Bounties can be small or large, technical or nontechnical. Regardless of who you are, what skills you have, or your prior participation in the Filecoin network, there may be ways for you to participate in the Bounty Board. Harness your writing, coding, or foreign language skills and give it a go!
 
 ## **Awarding System**
 
-Bounties are awarded for closing and/or fixing an issue. Bounties range from $50 to $5,000 (or equivalent FIL). Awards are determined based on the urgency and complexity of the task at hand. Rewards are determined by the Filecoin Foundation and the Storage Provider Working Group. Additional details can be found [here](https://github.com/filecoin-project/community/blob/master/storage-provider-bounty-program/BOUNTIES.md).
+Bounties are awarded for closing and/or fixing an issue. Bounties range from $50 to $5,000 (or equivalent FIL). Awards are determined based on the urgency and complexity of the task at hand. Rewards are determined by Filecoin Foundation and the Storage Provider Working Group.
 
 ## **How to submit an open issue**
 
-Open issues can be proposed by anyone in the Filecoin community. The Filecoin Foundation provides templates to help address your issue to make sure you describe them clearly and as detail as possible. Issues can be proposed [here](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program#contributing-to-an-open-issue).
+Open issues can be proposed by anyone in the Filecoin community. Filecoin Foundation provides templates to help address your issue to make sure you describe them clearly and as detail as possible. Issues can be proposed [here](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program#contributing-to-an-open-issue).
 
 ## **Reward Distribution**
 
-In order to distribute rewards after closing the issue, contributors must submit a [Bounty Claim](https://github.com/filecoin-project/community/issues/new/choose) which will notify the Filecoin Foundation team regarding their work and payment details.
+In order to distribute rewards after closing the issue, contributors must submit a [Bounty Claim](https://github.com/filecoin-project/community/issues/new/choose) which will notify Filecoin Foundation team regarding their work and payment details.
 
 What are you waiting for? Get started with [Storage Provider Bounty Board](https://github.com/filecoin-project/community/tree/master/storage-provider-bounty-program) today, and join the community in the #web3-storage channel in [Filecoin Slack](https://app.slack.com/client/TEHTVS1L6/C027XP5BTGB/thread/G01KU7G441Y-1616053098.177800).

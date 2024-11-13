@@ -1,10 +1,10 @@
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
-
-import { CustomLink, type CustomLinkProps } from '@/components/CustomLink'
-import { Icon as IconComponent, type IconProps } from '@/components/Icon'
+import { clsx } from 'clsx'
 
 import { isExternalLink } from '@/utils/linkUtils'
+
+import { BaseLink, type BaseLinkProps } from '@/components/BaseLink'
+import { Icon as IconComponent, type IconProps } from '@/components/Icon'
 
 const variantStyles = {
   primary:
@@ -17,7 +17,7 @@ type ButtonProps = {
   children: React.ReactNode
   variant?: keyof typeof variantStyles
   icon?: IconProps['component']
-  href?: CustomLinkProps['href']
+  href?: BaseLinkProps['href']
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
@@ -43,28 +43,32 @@ export function Button({
   className,
   icon,
   children,
+  disabled,
   href,
   ...rest
 }: ButtonProps) {
   className = clsx(
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition focus:brand-outline hover:no-underline sm:whitespace-nowrap sm:px-9',
+    'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition focus:brand-outline hover:no-underline sm:px-9',
     variantStyles[variant],
+    {
+      'bg-brand-200 disabled:pointer-events-none': disabled,
+    },
     className,
   )
 
   if (typeof href === 'undefined') {
     return (
-      <button className={className} {...rest}>
+      <button className={className} disabled={disabled} {...rest}>
         <ButtonInner icon={icon}>{children}</ButtonInner>
       </button>
     )
   }
 
   return (
-    <CustomLink className={className} href={href}>
+    <BaseLink className={className} href={href}>
       <ButtonInner isExternalLink={isExternalLink(href)} icon={icon}>
         {children}
       </ButtonInner>
-    </CustomLink>
+    </BaseLink>
   )
 }

@@ -1,6 +1,6 @@
 import { Code, BracketsAngle, Users } from '@phosphor-icons/react/dist/ssr'
 
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 export const submissionCriteriaData = [
   {
@@ -13,10 +13,13 @@ export const submissionCriteriaData = [
     description: (
       <>
         All projects must be dual-licensed under{' '}
-        <TextLink href="https://opensource.org/license/mit">MIT</TextLink> and{' '}
-        <TextLink href="https://opensource.org/licenses/Apache-2.0">
+        <ExternalTextLink href="https://opensource.org/license/mit">
+          MIT
+        </ExternalTextLink>{' '}
+        and{' '}
+        <ExternalTextLink href="https://opensource.org/licenses/Apache-2.0">
           APACHE2
-        </TextLink>{' '}
+        </ExternalTextLink>{' '}
         licenses.
       </>
     ),

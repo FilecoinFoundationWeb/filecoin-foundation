@@ -1,6 +1,5 @@
 ---
 title: "Participating in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"
-slug: participating-in-the-filecoin-ecosystem-bounties-microgrants-and-fips
 created-on: 2023-04-21T07:31:43.965000Z
 updated-on: 2023-04-21T07:31:43.965000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -8,24 +7,21 @@ description:
   "As an open-source, decentralized protocol, the success of the Filecoin
   network is inextricably linked with the development of its community. "
 image:
-  url: /assets/images/image-c-20.png
-  alt:
-recommended-posts: []
+  src: /assets/images/image-c-20.png
 category: ecosystem
 seo:
-  title: "Get Involved in the Filecoin Ecosystem: Bounties, Microgrants, and FIPs"
   description:
     Learn how to participate in the Filecoin ecosystem through bounties,
     microgrants, and FIPs.
 ---
 
-As an open-source, decentralized protocol, the success of the Filecoin network is inextricably linked with the development of its community. It is for this reason that the Filecoin Foundation supports community capacity building, or finding ways to empower the development of individuals, ideas, resources, and solutions within the Filecoin ecosystem.
+As an open-source, decentralized protocol, the success of the Filecoin network is inextricably linked with the development of its community. It is for this reason that Filecoin Foundation supports community capacity building, or finding ways to empower the development of individuals, ideas, resources, and solutions within the Filecoin ecosystem.
 
 In order to achieve the ecosystem’s long-term vision, it is important that all community members are empowered to engage with the growing network in a variety of ways. Critically, this includes both technical and non-technical opportunities for engagement. Humanity’s most important data, as well as the vision of a fully decentralized web, benefit everyone. A robust ecosystem must therefore include everyone’s buy-in, allowing individuals to engage with and contribute to the network regardless of their background, skills, or prior experiences.
 
 Recent blog posts have highlighted some of the new and/or revamped community capacity building programs supported by the Foundation. We recap these programs below.
 
-The [Storage Provider Bounty Board](https://github.com/filecoin-project/community/projects/1)is a tool for crowdsourcing work requests. Requests can come from and be filled by anyone. Once a request is successfully completed, the Filecoin Foundation will pay out an agreed upon price (or ‘bounty’) to the person or organization that successfully completed the task. The board was built and is maintained by the Storage Provider Working Groups, though any need is welcome. Potential activities could include building a dashboard, translating materials, organizing Filecoin events, or improving documentation.
+The [Storage Provider Bounty Board](https://github.com/filecoin-project/community/projects/1)is a tool for crowdsourcing work requests. Requests can come from and be filled by anyone. Once a request is successfully completed, Filecoin Foundation will pay out an agreed upon price (or ‘bounty’) to the person or organization that successfully completed the task. The board was built and is maintained by the Storage Provider Working Groups, though any need is welcome. Potential activities could include building a dashboard, translating materials, organizing Filecoin events, or improving documentation.
 
 Many bounty board tasks are small, quick, and even non-technical! For this reason, the bounty board is an excellent place for folks who may be new to the Filecoin community to get involved for the first time. Aside from helping to address an active community need, completing bounties rewards individuals with FIL and allows them to network with other community members and resources. For more information, see [our recent blog post](https://filecoinfoundation.medium.com/introducing-the-storage-provider-bounty-board-b98eace44dd0).
 

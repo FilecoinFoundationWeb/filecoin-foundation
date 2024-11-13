@@ -1,22 +1,21 @@
+import { PATHS } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@/utils/categoryUtils'
+import { getBlogPostMetaData } from '@/utils/getMetaData'
+
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { getBlogPostMetaData } from '@/utils/getMetaData'
-
-import { sortEntriesByDate } from '@/_utils/sortEntriesByDate'
-import { PATHS } from '@/constants/paths'
-import { graphicsData } from '@/data/graphicsData'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
 
-const sortedBlogPosts = sortEntriesByDate({
-  entries: blogPosts,
-  sortBy: 'publishedOn',
-  sortOption: 'newest',
-})
+const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
 
 const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
 
@@ -28,30 +27,37 @@ export function FeaturedBlogPosts() {
   return (
     <CardGrid cols="smTwo">
       {featuredBlogPosts.map(
-        ({ title, description, slug, image, category, publishedOn }) => (
-          <Card
-            key={slug}
-            metaData={getBlogPostMetaData(publishedOn)}
-            tag={category}
-            title={title}
-            description={description}
-            textIsClamped={true}
-            cta={{
-              href: `${PATHS.BLOG.path}/${slug}`,
-              text: 'Learn More',
-            }}
-            image={{
-              src: image.url,
-              alt: image.alt,
-              fallback: graphicsData.imageFallback,
-              sizes: buildImageSizeProp({
-                startSize: '100vw',
-                sm: '350px',
-                md: '480px',
-              }),
-            }}
-          />
-        ),
+        ({ title, description, slug, image, category, publishedOn }) => {
+          const tagLabel = getCategoryLabel({
+            collectionName: 'blog_posts',
+            category,
+          })
+
+          return (
+            <Card
+              key={slug}
+              metaData={getBlogPostMetaData(publishedOn)}
+              tagLabel={tagLabel}
+              title={title}
+              description={description}
+              textIsClamped={true}
+              cta={{
+                href: `${PATHS.BLOG.path}/${slug}`,
+                text: 'Learn More',
+              }}
+              image={{
+                ...(image || graphicsData.imageFallback.data),
+                alt: '',
+                objectFit: 'cover',
+                sizes: buildImageSizeProp({
+                  startSize: '100vw',
+                  sm: '350px',
+                  md: '480px',
+                }),
+              }}
+            />
+          )
+        },
       )}
     </CardGrid>
   )

@@ -1,6 +1,5 @@
 ---
 title: "Building an NFT Store on Flow: Part 2"
-slug: building-an-nft-store-on-flow-part-2
 created-on: "2023-04-21T07:26:21.578Z"
 updated-on: "2023-05-03T11:29:18.473Z"
 published-on: "2023-05-03T12:47:09.568Z"
@@ -9,13 +8,9 @@ description: >-
   create a simple NFT marketplace app on the Flow blockchain from scratch, using
   the Flow blockchain and IPFS/Filecoin storage via nft.storage.
 image:
-  url: >-
-    /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
-  alt:
-recommended-posts: []
+  src: /assets/images/6452458c4af3f5baef0c433c_0-4zwhgcutykrxqrsw.jpg
 category: use-cases
 seo:
-  title: "Building an NFT Store on Flow: Part 2"
   description:
     Continue building your NFT store on Flow blockchain. Follow this detailed
     guide for developers. Part 2 of the series.
@@ -126,7 +121,7 @@ There are a few FCL functions to send a transaction, but `fcl.send([...])` is th
 
 We pass the Cadence `code` to `fcl.transaction`, and any integer from 0 - 999 to `fcl.limit` for the gas fee limit we are happy with. The `payload` is the metadata we converted previously.
 
-The `payer`, `proposer`, and `authorizations` accept a function known as _authorization function_, which decides the account (and effectively the keys) used to authorize the transaction. (If you're interested in deep-diving into this, check out [Authorization Function](https://docs.onflow.org/fcl/reference/api/#authorization-function)). Here, `fcl` provided an `authz` default authorization function to makes signing with the emulator account easier.
+The `payer`, `proposer`, and `authorizations` accept a function known as _authorization function_, which decides the account (and effectively the keys) used to authorize the transaction. Here, `fcl` provided an `authz` default authorization function to makes signing with the emulator account easier.
 
 # 3\. Return the transaction ID
 

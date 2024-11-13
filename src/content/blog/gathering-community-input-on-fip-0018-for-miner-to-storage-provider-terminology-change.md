@@ -2,7 +2,6 @@
 title:
   Gathering Community Input on FIP-0018 for ‘Miner’ to ‘Storage Provider’ Terminology
   Change
-slug: gathering-community-input-on-fip-0018-for-miner-to-storage-provider-terminology-change
 created-on: 2023-04-21T07:27:42.678000Z
 updated-on: 2023-04-21T07:27:42.678000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -10,12 +9,9 @@ description:
   The Filecoin community is currently considering Filecoin Improvement
   Proposal (FIP) 0018, which proposes to rebrand network “miners” as “storage providers”.
 image:
-  url: /assets/images/fip-header.png
-  alt:
-recommended-posts: []
+  src: /assets/images/fip-header.png
 category: ecosystem
 seo:
-  title: Gathering Community Input on FIP-0018
   description:
     Weigh in on FIP-0018 for changing miner to storage provider terminology.
     Community feedback needed.
@@ -31,4 +27,4 @@ FIP-0018 will remain in “Last Call” status until Friday, August 20 in order 
 
 If you would like to learn more about this FIP, deliberate the proposed change, or in any other way share your perspective, we encourage you to do so via the Filecoin [Slack](http://filecoinproject.slack.com/) and [Github](https://github.com/filecoin-project) channels. The Filecoin community and Filecoin governance protocols are open to everyone, including those who may be new to Web3 or have not previously contributed to the network.
 
-In view of FIP-0018 and other FIPs advancing in the coming months, the Filecoin Foundation will audit existing governance policies to ensure that Filecoin governance remains a robust, open, and accessible process as the network continues to grow and evolve.
+In view of FIP-0018 and other FIPs advancing in the coming months, Filecoin Foundation will audit existing governance policies to ensure that Filecoin governance remains a robust, open, and accessible process as the network continues to grow and evolve.

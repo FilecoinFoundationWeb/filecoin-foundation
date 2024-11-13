@@ -2,6 +2,23 @@ import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
+import { type NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+import { getBlogPostMetaData } from '@/utils/getMetaData'
+import { getSortOptions } from '@/utils/getSortOptions'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
@@ -10,32 +27,19 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
+import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoResultsMessage } from '@/components/NoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { type NextServerSearchParams } from '@/types/searchParams'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings } from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { getBlogPostsData } from '@/utils/getBlogPostData'
-import { getBlogPostMetaData } from '@/utils/getMetaData'
-
-import { attributes } from '@/content/pages/blog.md'
-
-import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-import { graphicsData } from '@/data/graphicsData'
-
+import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getCategoryLabel } from './utils/getCategoryLabel'
+import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -46,40 +50,47 @@ type Props = {
   searchParams: NextServerSearchParams
 }
 
+const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({
+  path: PATHS.BLOG,
+  zodParser: FeaturedPageFrontmatterSchema.parse,
+})
+
 const posts = getBlogPostsData()
-const { categorySettings, validCategoryOptions } = getCategorySettings('blog')
-const { featured_entry: featuredPostSlug, seo } = attributes
-const featuredPost = posts.find((post) => post.slug === featuredPostSlug)
+
+const sortOptions = getSortOptions(blogSortConfigs)
+
+const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
+
+const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
+const featuredPost = getBlogPostData(featuredPostSlug)
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.blog.data.src,
+  },
   path: PATHS.BLOG.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Blog({ searchParams }: Props) {
-  if (!featuredPost) {
-    throw new Error('Featured post not found')
-  }
-
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: posts,
     searchBy: ['title', 'description'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'publishedOn',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    configs: blogSortConfigs,
+    defaultsTo: 'newest',
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
-    categorizeBy: 'category',
-    validCategoryOptions: validCategoryOptions,
+    validCategoryIds: validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -98,9 +109,9 @@ export default function Blog({ searchParams }: Props) {
         description={featuredPost.description}
         metaData={getBlogPostMetaData(featuredPost.publishedOn)}
         image={{
-          ...featuredPost.image,
-          src: featuredPost.image.url,
-          fallback: graphicsData.imageFallback,
+          ...(featuredPost.image || graphicsData.imageFallback.data),
+          alt: '',
+          objectFit: 'cover',
         }}
         cta={{
           href: `${PATHS.BLOG.path}/${featuredPostSlug}`,
@@ -115,36 +126,52 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset results={categorizedResults.length} />}
+            results={
+              <CategoryResetButton
+                counts={categoryCounts}
+                isSelected={hasNoFiltersApplied(searchParams)}
+              />
+            }
             category={
               <Category
                 query={categoryQuery}
-                settings={categorySettings}
+                options={categoryOptions}
                 counts={categoryCounts}
               />
             }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              search={<Search query={searchQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultQuery={defaultSortQuery}
+                />
+              }
             />
 
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
+              search={<Search query={searchQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultQuery={defaultSortQuery}
+                />
+              }
               category={
                 <Category
                   query={categoryQuery}
-                  settings={categorySettings}
+                  options={categoryOptions}
                   counts={categoryCounts}
                 />
               }
             />
             <FilterContainer.ContentWrapper>
               {categorizedResults.length === 0 ? (
-                <NoResultsMessage />
+                <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">
@@ -160,24 +187,29 @@ export default function Blog({ searchParams }: Props) {
 
                       const isFirstTwoImages = i < 2
 
+                      const tagLabel = getCategoryLabel({
+                        collectionName: 'blog_posts',
+                        category,
+                      })
+
                       return (
                         <Card
                           key={slug}
-                          tag={getCategoryLabel(category)}
                           title={title}
                           description={description}
                           textIsClamped={true}
                           metaData={getBlogPostMetaData(publishedOn)}
+                          tagLabel={tagLabel}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',
                             icon: BookOpen,
                           }}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
-                            fallback: graphicsData.imageFallback,
+                            ...(image || graphicsData.imageFallback.data),
+                            alt: '',
                             priority: isFirstTwoImages,
+                            objectFit: 'cover',
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '350px',

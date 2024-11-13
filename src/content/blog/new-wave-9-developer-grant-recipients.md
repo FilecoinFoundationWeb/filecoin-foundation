@@ -1,26 +1,21 @@
 ---
 title: New Wave 9 Developer Grant Recipients
-slug: new-wave-9-developer-grant-recipients
 created-on: 2023-04-21T07:31:38.800000Z
 updated-on: 2023-04-21T07:31:38.800000Z
 published-on: 2023-04-21T07:33:56.200000Z
-description:
-  "The Filecoin Foundation and Protocol Labs award funding on a monthly
+description: "Filecoin Foundation and Protocol Labs award funding on a monthly
   basis to critical development projects to foster a more robust and efficient decentralized
   web through the Filecoin ecosystem. "
 image:
-  url: /assets/images/image-c-17.png
-  alt:
-recommended-posts: []
+  src: /assets/images/image-c-17.png
 category: news
 seo:
-  title: Announcing the New Wave 9 Developer Grant Recipients
   description:
     Meet the new recipients of the Filecoin Wave 9 developer grants. Discover
     their innovative projects.
 ---
 
-The Filecoin Foundation and Protocol Labs award funding on a monthly basis to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. You can learn more about the DevGrants [here](https://github.com/markg85/devgrants/blob/IPFS-support-in-FFmpeg-based-media-players/open-grants/open-proposal-IPFS-support-in-FFmpeg-based-media-players.md).
+Filecoin Foundation and Protocol Labs award funding on a monthly basis to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. You can learn more about the DevGrants [here](https://github.com/markg85/devgrants/blob/IPFS-support-in-FFmpeg-based-media-players/open-grants/open-proposal-IPFS-support-in-FFmpeg-based-media-players.md).
 
 For Wave 9, we’ve reviewed and awarded the following projects aligned with our strategic goals in providing a healthier ecosystem.
 
@@ -41,22 +36,22 @@ This project aims to use Filecoin storage network as data foundation to simplify
 
 [IPFSpace](https://github.com/ZhangPeibin/devgrants/blob/master/open-grant-proposals/IPFSpace.md) This project will look to build IPFS networkDisk, dataSharing, and dataQuery components for a data sharing platform based on the network disk model.
 
-[Metatron Protocol](https://github.com/Flaxscrip/devgrants/blob/Flaxscrip-patch-1/open-grant-proposals/open-proposal-metatron.md) Metatron is a generic blockchain-agnostic P2P metadata versioning system that provides a way to establish universal ownership of 128-bit random numbers called eXtensible Identifier. This grant will support the launch of the protocol, which will allow Metatron to design and add an economic layer, such as Filecoin, to the protocol.
+Metatron Protocol (link previously available but now unavailable) is a generic blockchain-agnostic P2P metadata versioning system that provides a way to establish universal ownership of 128-bit random numbers called eXtensible Identifier. This grant will support the launch of the protocol, which will allow Metatron to design and add an economic layer, such as Filecoin, to the protocol.
 
 [CryptoDocs](https://github.com/polluterofminds/devgrants/blob/crypto-docs-proposal/open-grants/open-proposal-crypto-docs.md) This project will deliver a production-ready and business-capable alternative to Google Docs leveraging IPFS, Filecoin and Ethereum by building a collaborative document editing application that supports docs creation and editing, team-based access with SC Controls, encryption and more
 
 # **Wave 10 and other upcoming grants**
 
-Wave 10 proposals are due Tuesday, August 31, by 11:59 p.m. PT for priority consideration. You can submit your proposal [here](https://github.com/filecoin-project/devgrants/blob/master/rfps/near-and-filecoin.md). You can also find examples of previous proposals [here](https://github.com/filecoin-project/devgrants/labels/proposal-type%3Aopen).
+Wave 10 proposals are due Tuesday, August 31, by 11:59 p.m. PT for priority consideration. You can also find examples of previous proposals [here](https://github.com/filecoin-project/devgrants/labels/proposal-type%3Aopen).
 
 Additionally, there are other grants that Filecoin Foundation is currently funding:
 
 **Hedera x Filecoin (Due August 30)**\
-To encourage new projects that make creative use of these possibilities, Hedera and Filecoin are jointly offering up to USD $200,000 in grant funding for projects that focus on decentralized storage SDK and real-world applications. You can apply and find more information [here](https://github.com/filecoin-project/devgrants/blob/master/rfps/hedera-and-filecoin.md).
+To encourage new projects that make creative use of these possibilities, Hedera and Filecoin are jointly offering up to USD $200,000 in grant funding for projects that focus on decentralized storage SDK and real-world applications.
 
 **Chainlink x Filecoin (Due September 17)**\
-Chainlink and Filecoin are launching a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application. Full details can be found [here](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/). If you’d like to apply, submit a proposal [here](https://github.com/filecoin-project/devgrants/blob/master/rfps/chainlink-and-filecoin.md).
+Chainlink and Filecoin are launching a joint grant initiative to accelerate development of hybrid smart contracts that combine Chainlink decentralized oracles and Filecoin decentralized storage within a single application.
 
 **NEAR Protocol x Filecoin (due October 30)**
 
-Near and Filecoin are collaborating to find a USD $300,000 joint grants program designed to support developers interested in exploring new opportunities at the intersection of these two protocols. Upon receiving a grant, projects will also gain access to the global collectives of both NEAR and Filecoin to support product development and user growth. You can apply for the grant [here](https://github.com/filecoin-project/devgrants/blob/master/rfps/near-and-filecoin.md).
+Near and Filecoin are collaborating to find a USD $300,000 joint grants program designed to support developers interested in exploring new opportunities at the intersection of these two protocols. Upon receiving a grant, projects will also gain access to the global collectives of both NEAR and Filecoin to support product development and user growth.

@@ -3,17 +3,17 @@ import { useMemo } from 'react'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
-
 import {
   DEFAULT_ENTRIES_PER_PAGE,
   DEFAULT_PAGE_NUMBER,
 } from '@/constants/paginationConstants'
 import { PAGE_KEY } from '@/constants/searchParams'
 
+import { normalizeQueryParam } from '@/utils/queryUtils'
+
 type UsePaginationProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
-  entries: Entry[]
+  entries: Array<Entry>
   entriesPerPage?: number
 }
 

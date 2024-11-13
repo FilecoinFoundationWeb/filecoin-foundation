@@ -1,14 +1,15 @@
 'use client'
+
 import { useEffect } from 'react'
 
 import Error from 'next/error'
 
 import * as Sentry from '@sentry/nextjs'
 
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import ErrorMessage from '@/components/ErrorMessage'
 import { SiteLayout } from '@/components/SiteLayout'
-
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 export default function GlobalError({ error }: { error: Error }) {
   useEffect(() => {

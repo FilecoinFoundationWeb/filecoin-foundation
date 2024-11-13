@@ -1,31 +1,17 @@
-import { BlogPostData } from '@/types/blogPostTypes'
-import { EventData } from '@/types/eventTypes'
+import { formatDate } from '@/utils/dateUtils'
 
-import { formatDate } from './formatDate'
+import type { BlogPost } from '@/blog/types/blogPostType'
+import type { Event } from '@/events/types/eventType'
 
-export function getBlogPostMetaData(publishedOn?: BlogPostData['publishedOn']) {
+export function getBlogPostMetaData(publishedOn?: BlogPost['publishedOn']) {
   return publishedOn ? [formatDate(publishedOn)] : []
 }
 
-export function getEventMetaData(event: EventData) {
-  if (!event.startDate) {
-    return []
-  }
-
+export function getEventMetaData(event: Event) {
   const { startDate, endDate, location } = event
-
   const formattedStartDate = formatDate(startDate)
-  const formattedEndDate = endDate ? formatDate(endDate) : null
+  const formattedEndDate = endDate ? ` - ${formatDate(endDate)}` : ''
+  const formattedDate = `${formattedStartDate}${formattedEndDate}`
 
-  const metaDataContent = [formattedStartDate]
-
-  if (formattedEndDate) {
-    metaDataContent[0] += ` - ${formattedEndDate}`
-  }
-
-  if (location) {
-    metaDataContent.push(location)
-  }
-
-  return metaDataContent
+  return location ? [formattedDate, location] : [formattedDate]
 }

@@ -12,13 +12,9 @@ description:
   the benefits of cryptocurrency and explained Filecoin as one example of a use case
   that could serve as the foundation for the next generation of the Internet."
 image:
-  url: /assets/images/64423ad4d7488e39d6b03c3a_0-oh5oa7medvgzjscu.png
-  alt:
-slug: filecoin-foundation-chair-marta-belcher-testifies-before-us-senate-banking-committee
-recommended-posts: []
+  src: /assets/images/64423ad4d7488e39d6b03c3a_0-oh5oa7medvgzjscu.png
 category: news
 seo:
-  title: Filecoin Foundation Chair Testifies Before US Senate
   description:
     Filecoin Foundation Chair Marta Belcher testifies before the US Senate
     Banking Committee. Key points and implications.

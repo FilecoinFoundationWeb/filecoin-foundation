@@ -1,5 +1,16 @@
 import { Files } from '@phosphor-icons/react/dist/ssr'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
+
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -10,27 +21,24 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { createMetadata } from '@/utils/createMetadata'
-
-import { attributes } from '@/content/pages/about.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
-
 import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'
 import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
+const { header, seo } = getFrontmatter({
+  path: PATHS.ABOUT,
+  zodParser: BaseFrontmatterSchema.parse,
+})
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.about.data.src,
+  },
   path: PATHS.ABOUT.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function About() {
@@ -55,16 +63,27 @@ export default function About() {
 
       <PageSection kicker="What We Do" title="Focus Areas">
         <CardGrid cols="lgThree">
-          {focusAreasData.map((area, i) => (
-            <FocusAreaCard key={i} {...area} />
+          {focusAreasData.map(({ title, description, image }) => (
+            <FocusAreaCard
+              key={title}
+              title={title}
+              description={description}
+              image={image}
+            />
           ))}
         </CardGrid>
       </PageSection>
 
       <PageSection kicker="Board" title="Board of Directors">
         <CardGrid cols="mdTwo">
-          {boardMembersData.map((boardMember, i) => (
-            <KeyMemberCard key={i} {...boardMember} />
+          {boardMembersData.map(({ name, title, linkedin, image }) => (
+            <KeyMemberCard
+              key={name}
+              name={name}
+              title={title}
+              linkedin={linkedin}
+              image={image}
+            />
           ))}
         </CardGrid>
       </PageSection>
@@ -75,8 +94,14 @@ export default function About() {
         description="Leaders from across web3 and the open-source technology communities have come together to foster the Filecoin ecosystem."
       >
         <CardGrid cols="mdTwo">
-          {advisorsData.map((advisor, i) => (
-            <KeyMemberCard key={i} {...advisor} />
+          {advisorsData.map(({ name, title, linkedin, image }) => (
+            <KeyMemberCard
+              key={name}
+              name={name}
+              title={title}
+              linkedin={linkedin}
+              image={image}
+            />
           ))}
         </CardGrid>
       </PageSection>
@@ -84,16 +109,6 @@ export default function About() {
       <PageSection kicker="Insights" title="Reports">
         <CardGrid cols="lgTwo" hasGridAutoRows={false}>
           {reportsData.map(({ title, description, link, image }, index) => {
-            const imageProp = image && {
-              ...image,
-              sizes: buildImageSizeProp({
-                startSize: '100vw',
-                sm: '710px',
-                md: '980px',
-                lg: '480px',
-              }),
-            }
-
             return (
               <li
                 key={title}
@@ -103,7 +118,18 @@ export default function About() {
                   as="div"
                   title={title}
                   description={description}
-                  image={imageProp}
+                  image={
+                    image && {
+                      ...(image || graphicsData.imageFallback.data),
+                      alt: '',
+                      sizes: buildImageSizeProp({
+                        startSize: '100vw',
+                        sm: '710px',
+                        md: '980px',
+                        lg: '480px',
+                      }),
+                    }
+                  }
                   cta={{
                     href: link,
                     text: 'View Report',

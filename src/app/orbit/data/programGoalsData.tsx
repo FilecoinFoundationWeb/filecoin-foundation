@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageProps } from '@/types/imageType'
 
 import audienceSeatedLargeAuditoriumImg from '@/assets/orbit/goals/audience-seated-large-auditorium.jpg'
 import speakerPresentationNewsPaperImg from '@/assets/orbit/goals/speaker-presentation-newspaper-tech-event.jpg'
@@ -10,7 +10,7 @@ type ProgramGoalsData = {
   image: StaticImageProps
 }
 
-export const programGoalsData: ProgramGoalsData[] = [
+export const programGoalsData: Array<ProgramGoalsData> = [
   {
     title: 'Educate',
     description:

@@ -2,7 +2,6 @@
 title:
   How Artifact Labs is Preserving and Connecting History and Culture with Blockchain
   Technology
-slug: how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain
 created-on: 2023-09-18T14:06:54.734000Z
 updated-on: 2023-09-18T14:06:54.741000Z
 published-on: 2023-09-18T14:06:54.746000Z
@@ -14,12 +13,9 @@ description: >-
   facilitate rights management of digital assets, and unlock fundraising and
   commercialization opportunities.
 image:
-  url: /assets/images/070723-qa-artifactlabs.png
-  alt:
-recommended-posts: []
+  src: /assets/images/070723-qa-artifactlabs.png
 category: use-cases
 seo:
-  title: How Artifact Labs Uses Blockchain to Preserve History
   description:
     Discover how Artifact Labs preserves and connects history and culture
     using blockchain technology.
@@ -34,8 +30,6 @@ Artifact Labs has partnered with E/M Group and its affiliate RMS Titanic Inc. to
 Artifact Labs is working with Filecoin Foundation to upload, store, and share thousands of important artifacts and cultural objects from the _Titanic_ and other projects using the Filecoin network and the InterPlanetary File System (IPFS).
 
 ![Photo courtesy of nft.discovertitanic.com ](/assets/images/image1.png)
-
-_Photo courtsey of [nft.discovertitanic.com](http://nft.discovertitanic.com/)_
 
 Recently, we had an opportunity to talk with Henry Chan, Artifact Labs co-founder and head of product and innovation. Read on for his thoughts on using blockchain to preserve history, how NFTs play a part in engaging the global _Titanic_ enthusiast community, and what’s next for the organization.
 

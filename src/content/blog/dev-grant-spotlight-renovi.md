@@ -1,26 +1,20 @@
 ---
 title: Dev Grant Spotlight — Renovi
-created-on: 2023-04-21T07:26:46.825000Z
-updated-on: 2023-04-21T07:26:46.825000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  If you build it they will come. That’s the aim of Renovi, a metaverse
-  marketplace and design studio that works with global brands and businesses to create,
-  develop, and implement their Web3 strategies.
+created-on: 2023-04-21T07:26:46.825Z
+updated-on: 2023-04-21T07:26:46.825Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: If you build it they will come. That’s the aim of Renovi, a
+  metaverse marketplace and design studio that works with global brands and
+  businesses to create, develop, and implement their Web3 strategies.
 image:
-  url: /assets/images/image-c-11.png
-  alt:
-slug: dev-grant-spotlight-renovi
-recommended-posts: []
-category: reports
+  src: /assets/images/image-c-11.png
 seo:
-  title: "Dev Grant Spotlight: Renovi"
-  description:
-    Renovi's journey and innovative solutions as a recipient of the Filecoin
-    dev grant. Explore their work.
+  description: Renovi's journey and innovative solutions as a recipient of the
+    Filecoin Foundation Dev Grant. Explore their work.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ _[Dev Grants program](https://fil.org/grants/)._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
 
 [If you build it they will come](https://en.wikipedia.org/wiki/Field_of_Dreams). That’s the aim of Renovi, a metaverse marketplace and design studio that works with global brands and businesses to create, develop, and implement their Web3 strategies.
 
@@ -44,4 +38,4 @@ Zachariades says in the future the metaverse will serve as a new source for free
 
 “We are committed to supporting what is a very niche and specific market,” Zachariades said. “Architects and artists can be particular about their work, and because the files they produce are so large, quality is often sacrificed when uploaded to Web2 platforms. We want to empower architects and 3D designers and their ability to unleash their designs away from physical limitations, while still allowing the public to experience them.”
 
-_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for_ _[Open Grants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)_ _and_ _[Microgrants](https://github.com/filecoin-project/devgrants/blob/master/README.md#submit-a-proposal-for-open-grants)._
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

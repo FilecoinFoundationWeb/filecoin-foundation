@@ -1,17 +1,13 @@
 ---
 title: Democracy’s Library Announces More than a Petabyte of Data Uploaded to the Filecoin Network
-slug: democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network
 created-on: 2023-09-21T17:34:18.773Z
 updated-on: 2023-09-21T17:34:18.789Z
 published-on: 2023-09-21T17:34:18.798Z
 description: Democracy’s Library announces over a petabyte of government data uploaded to the Filecoin network. Learn about the project and its impact.
 image:
-  url: /assets/images/1018-sps-democracyslibrary.png
-  alt: null
-recommended-posts: []
+  src: /assets/images/1018-sps-democracyslibrary.png
 category: news
 seo:
-  title: Democracy’s Library Uploads Over a Petabyte of Government Data to Filecoin Network
   description: Discover how Democracy’s Library has successfully uploaded over a petabyte of U.S. government data to the Filecoin network, ensuring long-term preservation and accessibility.
 ---
 
@@ -21,7 +17,7 @@ To put one petabyte (PB) in perspective, a single PB could store [500 billion pa
 
 Uploading these materials to the Filecoin network, where it is replicated multiple times, helps ensure that government data collections are preserved for the long term and remain accessible to the public. Storing these collections on Filecoin instead of traditional web2 storage services like AWS and Google Cloud ensures that humanity’s most important information is preserved into the future.
 
-The Democracy’s Library project kicked off in October 2022, when Filecoin Foundation (FF) and Filecoin Foundation for the Decentralized Web (FFDW) [announced](https://fil.org/blog/filecoin-foundation-and-ffdw-team-up-with-the-internet-archive-to-preserve-government-datasets-in-new-democracy-s-library-initiative/) a collaboration with the Internet Archive to support the Archive’s latest initiative. Democracy’s Library is a [free, open collection](https://archive.org/details/democracys-library?tab=collection) of government data that ensures that government research and publications from around the world remain permanently accessible to the public.
+The Democracy’s Library project kicked off in October 2022, when Filecoin Foundation (FF) and Filecoin Foundation for the Decentralized Web (FFDW) [announced](/blog/filecoin-foundation-and-ffdw-team-up-with-the-internet-archive-to-preserve-government-datasets-in-new-democracy-s-library-initiative/) a collaboration with the Internet Archive to support the Archive’s latest initiative. Democracy’s Library is a [free, open collection](https://archive.org/details/democracys-library?tab=collection) of government data that ensures that government research and publications from around the world remain permanently accessible to the public.
 
 “Our goal is to empower citizens to access public data and information – uncovering and unlocking this information is vital for democracy and an engaged society,” said Brewster Kahle, Digital Librarian and founder of the Internet Archive. “It’s been a joy collaborating with FF and FFDW to protect and make accessible these archival documents to help bring the vision of Democracy’s Library to life.”
 

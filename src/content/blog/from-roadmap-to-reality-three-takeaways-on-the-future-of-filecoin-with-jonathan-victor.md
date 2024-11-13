@@ -2,7 +2,6 @@
 title:
   "From Roadmap to Reality: Three Takeaways on the Future of Filecoin with Jonathan
   Victor"
-slug: from-roadmap-to-reality-three-takeaways-on-the-future-of-filecoin-with-jonathan-victor
 created-on: 2023-11-29T16:52:21.803000Z
 updated-on: 2023-11-29T16:52:21.817000Z
 published-on: 2023-11-29T16:52:21.826000Z
@@ -13,11 +12,8 @@ description:
   in the Filecoin ecosystem.​​​​​​​​​​ In the latest episode, we chatted with Jonathan
   Victor, Ecosystem Lead at Protocol Labs.
 image:
-  url: /assets/images/jonathan-victor.png
-  alt: From Roadmap to Reality. DWeb Decoded podcast with Jonathan Victor
-recommended-posts: []
+  src: /assets/images/jonathan-victor.png
 seo:
-  title: "From Roadmap to Reality: Future of Filecoin with Jonathan Victor"
   description:
     Three key takeaways on the future of Filecoin with Jonathan Victor.
     From roadmap to reality.
@@ -59,7 +55,7 @@ Scale
 
 [Interplanetary Consensus (IPC)](https://www.ipc.space/) which will bring scalability to the Filecoin network, will unlock unmatched capacity and customizability, and enable new use cases.
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/8dZjqd3SzBo?si=Oe81_skdtgz2L_3X"
   title="From Roadmap to Reality"
   height="315"

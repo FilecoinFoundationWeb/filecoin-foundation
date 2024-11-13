@@ -1,39 +1,38 @@
-import { ChangeEvent } from 'react'
-
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+import { Input, Label, Field, Button } from '@headlessui/react'
+import { MagnifyingGlass, X } from '@phosphor-icons/react/dist/ssr'
 
 import { Icon } from '@/components/Icon'
 
 type SearchInputProps = {
-  id: React.ComponentProps<'input'>['id']
-  searchQuery: string
-  onSearchChange: (event: ChangeEvent<HTMLInputElement>) => void
+  query: string
+  onChange: (value: string) => void
 }
 
-export function SearchInput({
-  id,
-  searchQuery = '',
-  onSearchChange,
-}: SearchInputProps) {
+export function SearchInput({ query, onChange }: SearchInputProps) {
   return (
-    <div className="w-full">
-      <label htmlFor={id} className="sr-only">
-        Search
-      </label>
+    <Field className="w-full">
+      <Label className="sr-only">Search</Label>
       <div className="relative">
-        <input
-          id={id}
-          name="search"
-          className="peer block w-full rounded-lg border border-brand-300 bg-brand-800 py-3 pl-10 pr-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100"
+        <Input
+          className="peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-11 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none"
           placeholder="Search"
           type="search"
-          value={searchQuery}
-          onChange={onSearchChange}
+          value={query}
+          onChange={(event) => onChange(event.target.value)}
         />
-        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-brand-300 peer-hover:text-brand-400 peer-focus:text-brand-100">
+        <div className="peer pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-brand-300 peer-hover:text-brand-400 peer-focus:text-brand-100">
           <Icon component={MagnifyingGlass} />
         </div>
+        {query && (
+          <Button
+            className="absolute right-1 top-1 flex size-[42px] items-center justify-center rounded text-brand-300 focus:brand-outline peer-hover:text-brand-400 peer-focus:text-brand-100"
+            aria-label="Clear search input"
+            onClick={() => onChange('')}
+          >
+            <Icon component={X} size={16} weight="bold" />
+          </Button>
+        )}
       </div>
-    </div>
+    </Field>
   )
 }

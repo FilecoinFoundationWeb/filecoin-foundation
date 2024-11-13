@@ -1,32 +1,50 @@
-import { StaticImageProps } from '@/components/StaticImage'
+import type { StaticImageProps } from '@/types/imageType'
 
-import about from '@/assets/graphics/Filorg_About.png'
-import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.png'
-import events1 from '@/assets/graphics/Filorg_Events1.png'
-import events2 from '@/assets/graphics/Filorg_Events2.png'
-import events3 from '@/assets/graphics/Filorg_Events3.png'
-import governance1 from '@/assets/graphics/Filorg_Governance1.png'
-import governance2 from '@/assets/graphics/Filorg_Governance2.png'
-import governance3 from '@/assets/graphics/Filorg_Governance3.png'
-import grants from '@/assets/graphics/Filorg_Grants.png'
-import home from '@/assets/graphics/Filorg_Home.png'
-import imageFallback from '@/assets/graphics/Filorg_ImageFallback.png'
-import logoFallback from '@/assets/graphics/Filorg_LogoFallback.png'
+import about from '@/assets/graphics/Filorg_About.webp'
+import blog from '@/assets/graphics/Filorg_Blog.webp'
+import digestCoverIssue1 from '@/assets/graphics/Filorg_Digest_Cover_Issue_1.webp'
+import ecosystem from '@/assets/graphics/Filorg_Ecosystem_Explorer.webp'
+import events1 from '@/assets/graphics/Filorg_Events1.webp'
+import events2 from '@/assets/graphics/Filorg_Events2.webp'
+import events3 from '@/assets/graphics/Filorg_Events3.webp'
+import filPlus from '@/assets/graphics/Filorg_Fil_Plus.webp'
+import filPlusAbout1 from '@/assets/graphics/Filorg_Fil_Plus_About1.webp'
+import filPlusAbout2 from '@/assets/graphics/Filorg_Fil_Plus_About2.webp'
+import filPlusAbout3 from '@/assets/graphics/Filorg_Fil_Plus_About3.webp'
+import filPlusAllocators from '@/assets/graphics/Filorg_Fil_Plus_Allocators.webp'
+import governance1 from '@/assets/graphics/Filorg_Governance1.webp'
+import governance2 from '@/assets/graphics/Filorg_Governance2.webp'
+import governance3 from '@/assets/graphics/Filorg_Governance3.webp'
+import governanceFilPoll from '@/assets/graphics/Filorg_Governance_FilPoll.webp'
+import governanceGovHub from '@/assets/graphics/Filorg_Governance_GovHub.webp'
+import governancePowerVote from '@/assets/graphics/Filorg_Governance_PowerVote.webp'
+import grants from '@/assets/graphics/Filorg_Grants.webp'
+import home from '@/assets/graphics/Filorg_Home.webp'
+import imageFallback from '@/assets/graphics/Filorg_ImageFallback.webp'
 import orbit from '@/assets/graphics/Filorg_Orbit.webp'
-import rAndD from '@/assets/graphics/Filorg_RandD.png'
+import rAndD from '@/assets/graphics/Filorg_RandD.webp'
 import security from '@/assets/graphics/Filorg_Security.webp'
 import security2 from '@/assets/graphics/Filorg_Security2.webp'
 import security3 from '@/assets/graphics/Filorg_Security3.webp'
 import security4 from '@/assets/graphics/Filorg_Security4.webp'
+import security5 from '@/assets/graphics/Filorg_Security5.webp'
 
 export const graphicsData: Record<string, StaticImageProps> = {
-  home: {
-    data: home,
-    alt: 'A grand library with modern server racks and a large network of spheres above, symbolizing data and technology.',
+  imageFallback: {
+    data: imageFallback,
+    alt: 'Image coming soon',
   },
   about: {
     data: about,
     alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
+  },
+  blog: {
+    data: blog,
+    alt: 'A digital rendering of the Earth with interconnected points, highlighting global connectivity and communication.',
+  },
+  digest: {
+    data: digestCoverIssue1,
+    alt: 'Cover of the Filecoin Ecosystem Digest showing a stylized globe with interconnected nodes representing a global network. The Filecoin logo appears at the top left, and the background has a gradient of soft blues, pinks, and oranges with light effects symbolizing data flow and connectivity.',
   },
   ecosystem: {
     data: ecosystem,
@@ -44,6 +62,26 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: events3,
     alt: 'Speaker presenting to a full audience in a dark auditorium, with attendees attentively listening and engaged in the presentation.',
   },
+  filPlus: {
+    data: filPlus,
+    alt: 'Long row of modern, sleek server racks in a bright, white room, with blue LED lights glowing from within, creating a futuristic and high-tech atmosphere.',
+  },
+  filPlusAbout1: {
+    data: filPlusAbout1,
+    alt: 'Stacked glossy white cubes arranged on a light surface.',
+  },
+  filPlusAbout2: {
+    data: filPlusAbout2,
+    alt: 'Floating and stacked glossy white cubes in a futuristic, reflective room.',
+  },
+  filPlusAbout3: {
+    data: filPlusAbout3,
+    alt: 'Glossy white cube with a glowing blue sphere inside.',
+  },
+  filPlusAllocators: {
+    data: filPlusAllocators,
+    alt: 'An abstract, minimalist graphic featuring a large folder with a checkmark symbol, positioned next to a rubber stamp. Several similar stamps are scattered in the background, along with small cube-like objects, suggesting themes of approval, validation, or document processing.',
+  },
   governance1: {
     data: governance1,
     alt: 'Interconnected network of blue and white spheres with icons of people, representing a social network or digital communication.',
@@ -56,9 +94,33 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: governance3,
     alt: 'Modern conference room with people gathered around a circular table, discussing important issues, illuminated by natural light.',
   },
+  governanceFilPoll: {
+    data: governanceFilPoll,
+    alt: 'The image depicts a thermometer standing on a round platform, with a sleek, minimalistic design and a soft gradient background, suggesting a concept related to measuring or tracking progress.',
+  },
+  governanceGovHub: {
+    data: governanceGovHub,
+    alt: 'The image shows a transparent ballot box filled with envelopes, symbolizing voting or submissions.',
+  },
+  governancePowerVote: {
+    data: governancePowerVote,
+    alt: 'The image shows a futuristic, sleek, white room with large windows, minimalist furnishings, and glowing accent lights, giving it a high-tech, sci-fi ambiance.',
+  },
   grants: {
     data: grants,
     alt: 'Futuristic garden with blue plants and a waterfall, set in a modern architectural space with columns and curved structures.',
+  },
+  home: {
+    data: home,
+    alt: 'A grand library with modern server racks and a large network of spheres above, symbolizing data and technology.',
+  },
+  orbit: {
+    data: orbit,
+    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
+  },
+  rAndD: {
+    data: rAndD,
+    alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
   },
   security: {
     data: security,
@@ -76,20 +138,8 @@ export const graphicsData: Record<string, StaticImageProps> = {
     data: security4,
     alt: 'An illustration showing a magnifying glass focusing on a screen displaying lines of code. The scene is filled with abstract spherical elements connected by thin lines, and a small, stylized bug is visible near the bottom, symbolizing the concept of debugging or analyzing code.',
   },
-  orbit: {
-    data: orbit,
-    alt: 'An illustration of a stylized Earth surrounded by numerous smaller spheres and planets, some with rings, floating in space. The Earth is depicted with vibrant blue and white colors, while the surrounding spheres are in varying shades of blue and grey, suggesting a cosmic or orbital theme.',
-  },
-  rAndD: {
-    data: rAndD,
-    alt: 'A high-tech R&D lab with workstations and a large spherical network structure above a central platform.',
-  },
-  imageFallback: {
-    data: imageFallback,
-    alt: 'Image coming soon',
-  },
-  logoFallback: {
-    data: logoFallback,
-    alt: 'Logo coming soon',
+  security5: {
+    data: security5,
+    alt: 'A futuristic digital shield with a lock icon in the center, surrounded by binary code and glowing blue circular elements, symbolizing cybersecurity and data protection.',
   },
 }

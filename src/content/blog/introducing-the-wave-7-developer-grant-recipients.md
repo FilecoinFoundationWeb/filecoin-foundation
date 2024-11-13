@@ -3,24 +3,19 @@ title: Introducing the Wave 7 Developer Grant Recipients
 created-on: 2023-04-21T07:27:56.968000Z
 updated-on: 2023-04-21T07:27:56.968000Z
 published-on: 2023-04-21T07:33:56.200000Z
-description:
-  "The Filecoin Foundation and Protocol Labs periodically award funding
+description: "Filecoin Foundation and Protocol Labs periodically award funding
   to critical development projects to foster a more robust and efficient decentralized
   web through the Filecoin ecosystem. "
 image:
-  url: /assets/images/image-c-32.png
-  alt:
-slug: introducing-the-wave-7-developer-grant-recipients
-recommended-posts: []
+  src: /assets/images/image-c-32.png
 category: news
 seo:
-  title: Introducing the Wave 7 Developer Grant Recipients
   description:
     Meet the recipients of Filecoin Foundation's Wave 7 developer grants.
     Discover their innovative projects.
 ---
 
-The Filecoin Foundation and Protocol Labs periodically award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. The Filecoin Dev Grants program is designed to:
+Filecoin Foundation and Protocol Labs periodically award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. The Filecoin Dev Grants program is designed to:
 
 - Reward ongoing and existing contributions that add great value to the Filecoin ecosystem
 - Inspire more contributors to solve open problems and engage with the Filecoin project

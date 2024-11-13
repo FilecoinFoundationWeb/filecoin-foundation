@@ -1,24 +1,18 @@
 ---
-title:
-  " Meet the Filecoin Foundation and the Filecoin Foundation for the Decentralized
+title: " Meet Filecoin Foundation and Filecoin Foundation for the Decentralized
   Web"
 created-on: 2023-04-21T07:28:16.571000Z
 updated-on: 2023-04-21T07:28:16.571000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
-  The boards and advisors of the Filecoin Foundation (FF) and the Filecoin
+  The boards and advisors of Filecoin Foundation (FF) and the Filecoin
   Foundation for the Decentralized Web (FFDW) took the stage at Filecoin Liftoff Week
   to talk about the future of the organizations and the promise of Web3.
 image:
-  url: /assets/images/64423b0f4e4c686c88f481d6_1-mg36oqbqdetgd3sn8-bgsq.png
-  alt:
-slug: meet-the-filecoin-foundation-and-the-filecoin-foundation-for-the-decentralized-web
-recommended-posts: []
+  src: /assets/images/64423b0f4e4c686c88f481d6_1-mg36oqbqdetgd3sn8-bgsq.png
 category: ecosystem
 seo:
-  title: Meet the Filecoin Foundations
-  description:
-    Meet the teams behind the Filecoin Foundation and the Filecoin Foundation
+  description: Meet the teams behind Filecoin Foundation and Filecoin Foundation
     for the Decentralized Web.
 ---
 
@@ -40,7 +34,7 @@ _“The decentralized web can help us preserve humanity’s most important data.
 Board of Directors, FFDW**
 Rainey has dedicated her career to creating informed and powerful movements of technology users who can organize to defend free expression, preserve privacy, and oppose government overreach. She is currently the Chief Program Officer of the Electronic Frontier Foundation and is a co-founder and board member for the Freedom of the Press Foundation. Previously, she was a co-founder and steering committee member for the Chelsea Manning Support Network and served as Communications Director for the Privacy Rights Clearinghouse.
 
-_“Every day, I see how the centralized web fails ordinary technology users. An internet that has been built for profit at the cost of consumer choice and privacy isn’t what people need. We have to create a digital ecosystem that can’t be controlled by a few tech monopolies. The Filecoin Foundation will be a crucial link in that ecosystem.”_
+_“Every day, I see how the centralized web fails ordinary technology users. An internet that has been built for profit at the cost of consumer choice and privacy isn’t what people need. We have to create a digital ecosystem that can’t be controlled by a few tech monopolies. Filecoin Foundation will be a crucial link in that ecosystem.”_
 
 ![](/assets/images/643e68c10a5fe4193c97f1b3_1-xyuwxyvdthi94i42kdqgzg.jpeg)
 
@@ -64,7 +58,7 @@ _“The promise of the decentralized web is to shift decision-making power from 
 Advisor, FF and FFDW**
 A passionate advocate for public Internet access and a successful entrepreneur, Brewster has spent his career intent on a singular focus: providing _Universal Access to All Knowledge_. He is the founder and Digital Librarian of the Internet Archive, one of the largest digital libraries in the world, serving 1.5 million patrons each day. With 150 staff members in the United States, Canada, England, and China and digitization centers across the world, the Internet Archive works with more than 800 library and university partners to create a free digital library, accessible to all.
 
-_“Decentralized storage offers hope for long term digital preservation and access — in this way many archives and memory institutions can help back each other up. The Filecoin Foundation and IPFS community understand the importance of digital stewardship and are concretely helping support these efforts.”_
+_“Decentralized storage offers hope for long term digital preservation and access — in this way many archives and memory institutions can help back each other up. Filecoin Foundation and IPFS community understand the importance of digital stewardship and are concretely helping support these efforts.”_
 
 ![](/assets/images/643e68c10a5fe49b3a97f1b8_1-mb02kuruwgjh1x-7u_3zlw.png)
 
@@ -80,7 +74,7 @@ _“It’s beginning to become axiomatic that any innovative tech stack has a bl
 Advisor, FF and FFDW**
 Joseph is a co-founder of Ethereum and founder and CEO of ConsenSys, one of the world’s leading blockchain technology companies. In 2014, Joseph co-founded the Ethereum Project and founded ConsenSys to focus on building infrastructure, developer tools, and decentralized applications on the Ethereum platform.
 
-_“I see deep parallels between the Ethereum ecosystem and the Filecoin ecosystem. As the Filecoin ecosystem grows, it will occupy a crucial role in the re-architecturing of the world’s information and economic systems. We’re only now really initiating the transition to a fully decentralized web space. I see the Filecoin Foundation as a way to accelerate that transition and make the decentralized web a reality, and I’m excited to be a part of it.”_
+_“I see deep parallels between the Ethereum ecosystem and the Filecoin ecosystem. As the Filecoin ecosystem grows, it will occupy a crucial role in the re-architecturing of the world’s information and economic systems. We’re only now really initiating the transition to a fully decentralized web space. I see Filecoin Foundation as a way to accelerate that transition and make the decentralized web a reality, and I’m excited to be a part of it.”_
 
 ![](/assets/images/643e68c10a5fe4aa3e97f1ae_1-augyiyl2pjkwtddthjqepg.jpeg)
 
@@ -120,7 +114,7 @@ _“Fundamentally, building the decentralized web is about building back better 
 Advisor, FF and FFDW\*\*
 Alex leads Murmuration Labs, a project aimed at fostering trust within distributed blockchain projects, including the Filecoin network. He serves as a content policy advisor for publishing platform Medium (where he spent four years as Head of Legal and Head of Trust and Safety) and on the board of the Responsible Data Economy Foundation. As lead advisor to the Digital Trust and Safety Partnership, he helped launch the first industry-led initiative for creating best practices for online trust and safety.
 
-_“People want to make their own decisions about what content they interact with and about how they distribute and share it. Only the decentralized web has the potential to fully distribute decisionmaking in this area and empower ordinary web users to choose for themselves. I’m incredibly excited to join the Filecoin Foundation and help change the way the world shares content.”_
+_“People want to make their own decisions about what content they interact with and about how they distribute and share it. Only the decentralized web has the potential to fully distribute decisionmaking in this area and empower ordinary web users to choose for themselves. I’m incredibly excited to join Filecoin Foundation and help change the way the world shares content.”_
 
 ![](/assets/images/643e68c10a5fe4679c97f1b2_1-xfify3ekgvwoeqejoikxqw.jpeg)
 

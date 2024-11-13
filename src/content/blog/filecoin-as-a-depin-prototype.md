@@ -1,30 +1,17 @@
 ---
-title: "Filecoin as a DePIN Prototype"
-slug: filecoin-as-a-depin-prototype
-created-on: 2024-03-04T15:11:05.167000Z
-updated-on: 2024-03-04T15:11:05.193000Z
-published-on: 2024-03-04T15:11:05.224000Z
+title: Filecoin as a DePIN Prototype
+created-on: 2024-03-04T15:11:05.167Z
+updated-on: 2024-03-04T15:11:05.193Z
+published-on: 2024-03-04T15:11:05.224Z
 category: ecosystem
-description:
-  The Decentralized Physical Infrastructure Network (DePIN) movement is
-  re-architecting the Internet's physical and digital backbone.
+description: The Decentralized Physical Infrastructure Network (DePIN) movement
+  is re-architecting the Internet's physical and digital backbone.
 image:
-  url: /assets/images/022624-depin.png
-  alt: Filecoin DePIN
-recommended-posts: []
+  src: /assets/images/022624-depin.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/022624-depin.png
-  og:image: /assets/images/022624-depin.png
-  title: Filecoin as a DePIN Prototype
-  description:
-    Exploring Filecoin's role as a decentralized physical infrastructure
-    network (DePIN) prototype.
+  description: Exploring Filecoin's role as a decentralized physical
+    infrastructure network (DePIN) prototype.
 ---
-
-The Decentralized Physical Infrastructure Network (DePIN) movement is re-architecting the Internet's physical and digital backbone.
 
 The Decentralized Physical Infrastructure Network (DePIN) movement is re-architecting the Internet's physical and digital backbone.
 
@@ -72,10 +59,10 @@ Real-World Impact**: At the end of the day, a DePIN network needs actual users t
 
 The Filecoin network is also uniquely positioned to empower other DePIN networks:
 
-- Retrievals/Content Delivery Networks: [Filecoin Saturn](https://fil.org/ecosystem-projects/filecoin-saturn/), [Filecoin Station](https://fil.org/ecosystem-projects/filecoin-station/), and similar projects create decentralized mechanisms for retrieving and distributing data stored on the Filecoin network with lightning-fast data retrievals and minimal latency.
+- Retrievals/Content Delivery Networks: [Filecoin Saturn](/ecosystem-projects/filecoin-saturn/), [Filecoin Station](/ecosystem-projects/filecoin-station/), and similar projects create decentralized mechanisms for retrieving and distributing data stored on the Filecoin network with lightning-fast data retrievals and minimal latency.
 - Compute: Projects like [io.net](https://io.net/) allow individuals to rent out GPU capacity and cloud computing resources, while companies like Expanso are bringing decentralized compute solutions to enterprise.
-- Video Infrastructure: [Livepeer](https://fil.org/ecosystem-projects/livepeer/) is an open video infrastructure network for live and on-demand streaming.
-- Sensors: [WeatherXM](https://fil.org/ecosystem-projects/weatherxm/) is a community-powered weather network that rewards weather station owners and provides accurate weather services to individuals, businesses, and research organizations. The data collected by WeatherXM stations are stored on IPFS, allowing permissionless access.
+- Video Infrastructure: [Livepeer](/ecosystem-projects/livepeer/) is an open video infrastructure network for live and on-demand streaming.
+- Sensors: [WeatherXM](/ecosystem-projects/weatherxm/) is a community-powered weather network that rewards weather station owners and provides accurate weather services to individuals, businesses, and research organizations. The data collected by WeatherXM stations are stored on IPFS, allowing permissionless access.
 
 ## Path Forward
 

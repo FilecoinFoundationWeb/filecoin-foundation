@@ -1,31 +1,23 @@
 ---
-title: "Cryptoworth"
-slug: "cryptoworth"
-created-on: 2024-02-26T21:34:10.287000Z
-updated-on: 2024-02-26T21:34:10.297000Z
-published-on: 2024-02-26T21:34:10.305000Z
-description:
-  "Helps businesses of all sizes to automate their back-office crypto accounting
-  tasks."
+title: Cryptoworth
+created-on: 2024-02-26T21:34:10.287Z
+updated-on: 2024-02-26T21:34:10.297Z
+published-on: 2024-02-26T21:34:10.305Z
+email: encrypted::U2FsdGVkX1/eTRdhsEoVDfvcvUy9h7qTXMI/8j/VArMqcx4bUOvYMljo3GZHB66g
+full-name: encrypted::U2FsdGVkX19FDqUbhydWqTaOfRhRgdzhnV/ZTqBf30A=
+image:
+  src: /assets/images/cw-logo-square-1-.png
 category: finance
-tags:
-  - data-retrieval
+subcategories:
+  - developer-tools
+description: Helps businesses of all sizes to automate their back-office crypto
+  accounting tasks.
+website: https://Cryptoworth.com
 tech:
   - filecoin
-image:
-  url: /assets/images/cw-logo-square-1-.png
-  alt: Cryptoworth Logo
-website: https://Cryptoworth.com
-featured-content:
-repo:
 twitter: https://twitter.com/cryptoworthapp/
-video-url:
-year-joined: 2023-08-01T20:34:10.316000Z
-news-update:
-subcategories:
-  - finance
+year-joined: 2023-08-01T20:34:10.316Z
 seo:
-  title: Cryptoworth
   description:
     Cryptoworth provides tools for managing and tracking cryptocurrency
     portfolios.

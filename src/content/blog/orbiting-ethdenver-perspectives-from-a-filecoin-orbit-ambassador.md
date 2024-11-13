@@ -1,6 +1,5 @@
 ---
 title: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
-slug: orbiting-ethdenver-perspectives-from-a-filecoin-orbit-ambassador
 created-on: 2024-03-25T15:21:33.080000Z
 updated-on: 2024-03-25T15:21:33.092000Z
 published-on: 2024-03-25T15:21:33.100000Z
@@ -10,16 +9,8 @@ description:
   America came together to host a Filecoin Ecosystem Showcase event. Read about what
   this event meant for the community and the future of the Orbit program.
 image:
-  url: /assets/images/032224-orbit-austin.png
-  alt: "Orbiting ETHDenver: Perspectives From a Filecoin Orbit Ambassador"
-recommended-posts: []
+  src: /assets/images/032224-orbit-austin.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/032224-orbit-austin.png
-  og:image: /assets/images/032224-orbit-austin.png
-  title: "Orbiting ETHDenver: Insights from a Filecoin Orbit Ambassador"
   description:
     Insights and perspectives from a Filecoin Orbit Ambassador at ETHDenver.
     Explore the experiences.
@@ -37,11 +28,11 @@ Planning and hosting the Filecoin Orbit event in Denver was a great experience f
 
 ![](https://lh7-us.googleusercontent.com/eT7EAmIj2qscVzZFHiPPi4E2-Zy7CBF4TAEw-JKnhtWOGWrHQF_4pRKp2Tb_5xyi5Wi2eJqxdv_mdk8kMg-wbkL5srvgKooHLoMVoKQNM2VnXnhKvltlnLOC5g86sQ_W8E2U-Xe_eErWrV8xNagQMII)
 
-Our [North America team](https://austinorbit.io) is based in Austin, Texas, and hosts a monthly meetup with developer workshops, demos, or speakers. Our goal is to host awesome speakers as well as organize events that bring individuals and companies together. The focus is often on developer tooling used to implement open web networks and tools into a typical software stack. Supported by the Filecoin Foundation, [Leto](https://leto.gg/), and [Cloud Forest](https://cloudforest.cloud/), we aim to bring builders and the community together to share ideas, collaborate, and have some fun! Join us in downtown Austin for the [next event](https://www.meetup.com/austin-filecoin-orbit-meetup-group/). The events hosted in Austin are also available on the [Filecoin Orbit Austin Github](https://github.com/Filecoin-Orbit-Austin).
+Our [North America team](https://austinorbit.io) is based in Austin, Texas, and hosts a monthly meetup with developer workshops, demos, or speakers. Our goal is to host awesome speakers as well as organize events that bring individuals and companies together. The focus is often on developer tooling used to implement open web networks and tools into a typical software stack. Supported by Filecoin Foundation, [Leto](https://leto.gg/), and [Cloud Forest](https://cloudforest.cloud/), we aim to bring builders and the community together to share ideas, collaborate, and have some fun! Join us in downtown Austin for the [next event](https://www.meetup.com/austin-filecoin-orbit-meetup-group/). The events hosted in Austin are also available on the [Filecoin Orbit Austin Github](https://github.com/Filecoin-Orbit-Austin).
 
 **Do you want to be a  Filecoin Orbit Ambassador?**
 
-The Filecoin Orbit program engages with the next generation of builders at top universities through workshops at hackathons, blockchain conferences, and blockchain clubs. Orbit Ambassadors have delivered educational talks at the University of Oxford, National University of Singapore, Hong Kong University of Science and Technology, University of Pennsylvania, Indian Institutes of Technology, University of Lagos, and many more. Read more about the Filecoin Orbit program milestones in the [2023 Orbit Year in Review](https://fil.org/events/).
+The Filecoin Orbit program engages with the next generation of builders at top universities through workshops at hackathons, blockchain conferences, and blockchain clubs. Orbit Ambassadors have delivered educational talks at the University of Oxford, National University of Singapore, Hong Kong University of Science and Technology, University of Pennsylvania, Indian Institutes of Technology, University of Lagos, and many more. Read more about the Filecoin Orbit program milestones in the [2023 Orbit Year in Review](/events/).
 
 And apply to become a [Filecoin Orbit ambassador](https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C) for your city or university.
 
@@ -54,6 +45,6 @@ And apply to become a [Filecoin Orbit ambassador](https://airtable.com/appAGdqyY
 - April 16 - 19, 2024 - Token2049 Dubai Filecoin Orbit Meetup Event
 - May 29 - 31, 2024 - Consensus Filecoin Orbit Meetup Event
 - July 8 - 11, 2024 - FIL Brussels alongside EthCC
-- Sept 4 - 10, 2024 - FIL Seoul Network Base alongside Korea Blockchain Week
+- ~~Sept 4 - 10, 2024 - FIL Seoul Network Base alongside Korea Blockchain Week~~
 
-Find the full [Filecoin Foundation event schedule](https://fil.org/events/).
+Find the full [Filecoin Foundation event schedule](/events/).

@@ -1,11 +1,15 @@
-import { Metadata } from 'next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { Metadata } from 'next'
 import PlausibleProvider from 'next-plausible'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import '@/styles/globals.scss'
 
+import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+
 import { SiteLayout } from '@/components/SiteLayout'
 
-import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
+export const revalidate = 86400
 
 export const metadata: Metadata = {
   title: {
@@ -21,8 +25,13 @@ export type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <PlausibleProvider domain="fil.org">
-      <SiteLayout>{children}</SiteLayout>
-    </PlausibleProvider>
+    <NuqsAdapter>
+      <PlausibleProvider domain="fil.org">
+        <SiteLayout>
+          {children}
+          <SpeedInsights />
+        </SiteLayout>
+      </PlausibleProvider>
+    </NuqsAdapter>
   )
 }

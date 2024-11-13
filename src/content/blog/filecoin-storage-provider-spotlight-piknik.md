@@ -4,18 +4,13 @@ description: >-
   Established in October 2020 by several founding members of the Filecoin
   Storage Provider Working Group and Protocol Labs MinerX Fellows, PiKNiK joined
   the Filecoin community as a bootstrapped Web3 storage provider.
-slug: filecoin-storage-provider-spotlight-piknik
 image:
-  url: >-
-    /assets/images/64423ae5a6ec4107462a6350_0-dab1y7whx7fuaol0.png
-  alt:
+  src: /assets/images/64423ae5a6ec4107462a6350_0-dab1y7whx7fuaol0.png
 updated-on: "2023-04-21T07:27:34.032Z"
 created-on: "2023-04-21T07:27:34.032Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Piknik"
   description:
     Learn about Piknik's offerings and impact as a Filecoin storage provider
     in this spotlight feature.

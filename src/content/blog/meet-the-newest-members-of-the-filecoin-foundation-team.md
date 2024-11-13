@@ -1,26 +1,21 @@
 ---
-title: Meet the Newest Members of the Filecoin Foundation Team
+title: Meet the Newest Members of Filecoin Foundation Team
 created-on: 2023-04-21T07:28:20.092000Z
 updated-on: 2023-04-21T07:28:20.092000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
-  The Filecoin Foundation is delighted to welcome new members to our growing
+  Filecoin Foundation is delighted to welcome new members to our growing
   workforce of professionals dedicated to research, development, and community engagement
   around open source, decentralized storage, and nurturing the Filecoin ecosystem.
 image:
-  url: /assets/images/image-c-29.png
-  alt:
-slug: meet-the-newest-members-of-the-filecoin-foundation-team
-recommended-posts: []
+  src: /assets/images/image-c-29.png
 category: news
 seo:
-  title: Meet the Newest Members of the Filecoin Foundation Team
-  description:
-    Introducing the newest members of the Filecoin Foundation team. Learn
+  description: Introducing the newest members of Filecoin Foundation team. Learn
     about their roles and backgrounds.
 ---
 
-The [Filecoin Foundation](http://fil.org/) is delighted to welcome new members to our growing workforce of professionals dedicated to research, development, and community engagement around open source, decentralized storage, and nurturing the Filecoin ecosystem. And our team continues to expand. We’re still looking for talented grant program managers, communications professionals and more to join us in this mission.
+The [Filecoin Foundation](/) is delighted to welcome new members to our growing workforce of professionals dedicated to research, development, and community engagement around open source, decentralized storage, and nurturing the Filecoin ecosystem. And our team continues to expand. We’re still looking for talented grant program managers, communications professionals and more to join us in this mission.
 
 Here’s a snapshot of our newest colleagues, including the range of skill sets and experience they bring and their thoughts on joining Filecoin in our collective mission to preserve humanity’s most important information:
 
@@ -34,7 +29,7 @@ Nicole previously worked in operations for a serverless software development com
 
 **Kaitlin Beegle, Technical PM, Governance**
 
-Based in Palo Alto, Kaitlin joins the Filecoin Foundation after conducting research at the Technical University of Munich’s School of Governance, where she used Web3 to conceptualize new forms of digital democracy. “Web3 provides both the conceptual and technical framework for us to solve some of humanity’s most complex, existential challenges,” Kaitlin explained. “To me, Filecoin is not just an exciting proof-of-concept in this nascent space, but an opportunity to scale a technical ecosystem in a way that is sustainable, mission-driven, and human-centered.” Kaitlin will be leading Filecoin governance, building pathways for diverse stakeholders across the ecosystem to share ideas, envision network changes, and implement both technical and operational improvements. Kaitlin also speaks several languages, including Spanish, German, and Arabic, which will come in handy as she interfaces with Filecoin’s diverse global community.
+Based in Palo Alto, Kaitlin joins Filecoin Foundation after conducting research at the Technical University of Munich’s School of Governance, where she used Web3 to conceptualize new forms of digital democracy. “Web3 provides both the conceptual and technical framework for us to solve some of humanity’s most complex, existential challenges,” Kaitlin explained. “To me, Filecoin is not just an exciting proof-of-concept in this nascent space, but an opportunity to scale a technical ecosystem in a way that is sustainable, mission-driven, and human-centered.” Kaitlin will be leading Filecoin governance, building pathways for diverse stakeholders across the ecosystem to share ideas, envision network changes, and implement both technical and operational improvements. Kaitlin also speaks several languages, including Spanish, German, and Arabic, which will come in handy as she interfaces with Filecoin’s diverse global community.
 
 **Galen McAndrew, Startup Operator**
 

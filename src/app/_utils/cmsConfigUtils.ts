@@ -1,7 +1,7 @@
-import {
-  CMSFieldConfig,
+import type {
   CMSCollectionConfig,
   CMSConfig,
+  CMSFieldConfig,
 } from '@/types/cmsConfig'
 
 import configJson from '@/data/cmsConfigSchema.json'
@@ -9,7 +9,7 @@ import configJson from '@/data/cmsConfigSchema.json'
 const config: CMSConfig = configJson as CMSConfig
 
 export function getCollectionConfig(collectionName: string): {
-  fields: CMSFieldConfig[]
+  fields: Array<CMSFieldConfig>
 } {
   const collection = config.collections.find(
     (col) => col.name === collectionName,
@@ -25,7 +25,7 @@ export function getCollectionConfig(collectionName: string): {
 }
 
 export function getCMSCollection(
-  collections: CMSCollectionConfig[] = [],
+  collections: Array<CMSCollectionConfig> = [],
   collectionName: string,
 ) {
   const collection = collections.find(
@@ -41,7 +41,7 @@ export function getCMSCollection(
 }
 
 export function getCMSFieldOptions(
-  fields: CMSFieldConfig[] = [],
+  fields: Array<CMSFieldConfig> = [],
   fieldName: string,
 ) {
   const field = fields.find((field) => field.name === fieldName)

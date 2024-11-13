@@ -1,6 +1,5 @@
 ---
 title: Filecoin nv19 Lightning Upgrade
-slug: filecoin-nv19-lightning-upgrade
 created-on: 2023-06-01T11:00:30.238000Z
 updated-on: 2023-06-01T11:00:00Z
 published-on: 2023-06-01T11:00:00Z
@@ -10,12 +9,9 @@ description:
   storage. This technical milestone brings a host of enhancements and improvements
   to the Filecoin ecosystem, enabling greater efficiency, security, and usability.
 image:
-  url: /assets/images/06012023-lightningupgrade.png
-  alt:
-recommended-posts: []
+  src: /assets/images/06012023-lightningupgrade.png
 category: news
 seo:
-  title: Filecoin NV19 Lightning Upgrade
   description:
     Announcing the Filecoin NV19 Lightning upgrade. Discover the improvements
     and new features.
@@ -35,6 +31,6 @@ The successful launch of the Lightning Upgrade represents the collective efforts
 
 The nv19 Lightning Upgrade represents a remarkable achievement, made possible by the dedication and innovative spirit of the entire Filecoin community and implementation teams. This milestone sets the tone for the future of the network, pushing the boundaries of decentralized storage and reaffirming Filecoin's position at the forefront of the industry.
 
-Looking ahead, governance and community engagement remain critical components of designing, driving and instantiating robust governing systems, tools, and methodologies. Filecoin Foundation through the governance team has put together monthly Community Governance Calls. You can register and be part of this process [here](https://fil-org.zoom.us/meeting/register/tZMkf-2qpjIqEt3nkeKh_7f7_F6wPm76zbTw).
+Looking ahead, governance and community engagement remain critical components of designing, driving and instantiating robust governing systems, tools, and methodologies. Filecoin Foundation through the governance team has put together monthly Community Governance Calls. You can register and be part of this process [here](/governance).
 
 Head to the FIPs Github repo [here](https://github.com/filecoin-project/FIPs) to learn more. You can also check [this](https://github.com/filecoin-project/core-devs) out if you want more information about the nv19 & nv20 upgrades.

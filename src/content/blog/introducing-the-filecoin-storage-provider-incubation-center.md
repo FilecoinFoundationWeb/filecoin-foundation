@@ -4,22 +4,18 @@ created-on: 2023-04-21T07:27:50.623000Z
 updated-on: 2023-04-21T07:27:50.623000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description:
-  "The Filecoin Foundation is committed to growing and supporting the Filecoin
+  "Filecoin Foundation is committed to growing and supporting the Filecoin
   ecosystem — miners, developers, and storage clients alike. "
 image:
-  url: /assets/images/image-c-21.png
-  alt:
-slug: introducing-the-filecoin-storage-provider-incubation-center
-recommended-posts: []
+  src: /assets/images/image-c-21.png
 category: news
 seo:
-  title: Introducing the Filecoin Storage Provider Incubation Center
   description:
     Filecoin Foundation launches the Storage Provider Incubation Center
     to support new providers.
 ---
 
-The Filecoin Foundation is committed to growing and supporting the Filecoin ecosystem — miners, developers, and storage clients alike. To date, more than 2,500 miners participate in the Filecoin economy, collectively contributing more than [7 EiB](https://filscan.io/) of storage capacity.
+Filecoin Foundation is committed to growing and supporting the Filecoin ecosystem — miners, developers, and storage clients alike. To date, more than 2,500 miners participate in the Filecoin economy, collectively contributing more than [7 EiB](https://filscan.io/) of storage capacity.
 
 The original idea behind Filecoin is that anyone can contribute to creating this new storage backbone for the internet — regardless of size, resources, or computing power. While many large mining companies are already up and running on the network, the Foundation wants to encourage more small and medium-sized miners to join us in our mission to build a more robust and resilient internet infrastructure and preserve humanity’s most important information.
 
@@ -27,16 +23,16 @@ Today, we’re thrilled to announce the launch of the Filecoin **Storage Provide
 
 **About the Storage Provider Incubation Center**
 
-The Storage Provider Incubation Center brings together the resources of the Filecoin Foundation and the Venus Team to provide funding and technical support to small and medium-sized miners.
+The Storage Provider Incubation Center brings together the resources of Filecoin Foundation and the Venus Team to provide funding and technical support to small and medium-sized miners.
 
 The idea is to make it simple and convenient for small miners to join the network by lowering the barrier to entry. There are two ways for miners to participate:
 
-- **The Filecoin Storage Provider Incubation Center Program** aims to bring more small miners to the Filecoin network with financial support from the Filecoin Foundation and technical support from the Venus Team.
+- **The Filecoin Storage Provider Incubation Center Program** aims to bring more small miners to the Filecoin network with financial support from Filecoin Foundation and technical support from the Venus Team.
 - **The Venus Master Fellowship Program** is a sub-project of the Filecoin Storage Provider Incubation Center designed to incubate teams or individuals capable of providing the service of the Filecoin distributed mining pool service based on Venus to improve the productivity of miners and the fault tolerance of the Filecoin network.
 
 Maintained by the IPFS Force community, Venus is one of four implementations in development on the Filecoin ecosystem. Venus is unique because it supports a distributed mining pool, which is a cost-effective way to reduce the overall cost of hardware maintenance and save time when mining on the Filecoin network. Thus, it can bring more miners to the Filecoin network with lower barriers to entry.
 
-Thanks to [Venus’s Distributed Mining Pool Architecture](https://venus.filecoin.io/guide/How-To-Deploy-MingPool.html#mining-architecture), the Incubation Center will run shared modules. Miners can start mining with just [venus-sealer](https://github.com/filecoin-project/venus-sealer) and [venus-wallet](https://github.com/filecoin-project/venus-wallet) along with the shared modules maintained by the Incubation Center. Then, they can run with one or more nodes at the same time.
+Thanks to Venus’s Distributed Mining Pool Architecture (link previously available but now unavailable), the Incubation Center will run shared modules. Miners can start mining with just [venus-sealer](https://github.com/filecoin-project/venus-sealer) and [venus-wallet](https://github.com/filecoin-project/venus-wallet) along with the shared modules maintained by the Incubation Center. Then, they can run with one or more nodes at the same time.
 
 **About the Incubation Center Program**
 
@@ -63,7 +59,7 @@ In exchange for their work, Masters will receive access to a prize pool of more 
 
 We hope this program can empower miners around the world to participate in the Filecoin network. In the first year of the program, we hope to onboard more than 165 new miners. Note that the [Filecoin Community Code of Conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md#:~:text=We%20believe%20that%20our%20mission,practices%20will%20not%20be%20tolerated.)applies to this program.
 
-Learn more about the program tracks by joining the Filecoin Foundation and the Venus team at the [Filecoin Meetup](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsycckbrb/) on July 13, at 4 pm PDT.
+Learn more about the program tracks by joining Filecoin Foundation and the Venus team at the [Filecoin Meetup](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsycckbrb/) on July 13, at 4 pm PDT.
 
 **How to Apply**
 

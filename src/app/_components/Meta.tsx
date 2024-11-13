@@ -1,12 +1,12 @@
 import { Fragment } from 'react'
 
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 type MetaProps = {
   metaData: MetaDataType
 }
 
-export type MetaDataType = (string | null | undefined)[]
+export type MetaDataType = Array<string | null | undefined>
 
 export function Meta({ metaData }: MetaProps) {
   if (metaData.length === 0) {

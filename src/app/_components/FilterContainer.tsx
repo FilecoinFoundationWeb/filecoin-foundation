@@ -1,4 +1,6 @@
-import React, { ReactNode } from 'react'
+import type { ReactNode } from 'react'
+
+import { clsx } from 'clsx'
 
 type LayoutProps = {
   children: ReactNode
@@ -11,71 +13,14 @@ type FilterProps = {
   results?: ReactNode
 }
 
-type ResultsAndCategoryProps = {
+type ResultsProps = {
   category: ReactNode
   results: ReactNode
+  gapSize?: 'default' | 'wide'
 }
 
-type ContentProps = {
+type WrapperProps = {
   children: ReactNode
-}
-
-type PaginationProps = {
-  children: ReactNode
-}
-
-function MobileFiltersAndResults({
-  search,
-  category,
-  sort,
-  results,
-}: FilterProps) {
-  return (
-    <div className="flex flex-col gap-4 lg:hidden">
-      <div className="flex flex-col gap-3 sm:flex-row">
-        {search}
-        <div className="flex flex-1 gap-3 sm:flex-row">
-          <div className="w-full">{category}</div>
-          <div className="max-fit">{sort}</div>
-        </div>
-      </div>
-      {results}
-    </div>
-  )
-}
-
-function DesktopFilters({ search, sort }: FilterProps) {
-  return (
-    <div className="hidden justify-end gap-6 lg:flex">
-      {search}
-      <div className="min-w-40">{sort}</div>
-    </div>
-  )
-}
-
-function ResultsAndCategory({ results, category }: ResultsAndCategoryProps) {
-  return (
-    <div className="hidden flex-col gap-10 lg:flex">
-      {results}
-      {category}
-    </div>
-  )
-}
-
-function ContentWrapper({ children }: ContentProps) {
-  return <div className="flex flex-col gap-6">{children}</div>
-}
-
-function PaginationWrapper({ children }: PaginationProps) {
-  return <div className="sm:w-fit sm:self-center">{children}</div>
-}
-
-function MainWrapper({ children }: ContentProps) {
-  return (
-    <div className="flex w-full flex-col gap-4 lg:flex-1 lg:gap-6">
-      {children}
-    </div>
-  )
 }
 
 export function FilterContainer({ children }: LayoutProps) {
@@ -86,9 +31,72 @@ export function FilterContainer({ children }: LayoutProps) {
   )
 }
 
-FilterContainer.ContentWrapper = ContentWrapper
-FilterContainer.MainWrapper = MainWrapper
-FilterContainer.MobileFiltersAndResults = MobileFiltersAndResults
-FilterContainer.PaginationWrapper = PaginationWrapper
-FilterContainer.ResultsAndCategory = ResultsAndCategory
-FilterContainer.DesktopFilters = DesktopFilters
+FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
+  search,
+  category,
+  sort,
+  results,
+}: FilterProps) {
+  return (
+    <div className="flex flex-col gap-4 lg:hidden">
+      <div className="flex flex-col gap-3 sm:flex-row">
+        {search}
+        <div className="flex flex-1 gap-3 sm:flex-row">
+          <div className="w-full md:w-40">{category}</div>
+          <div className="max-fit md:w-40">{sort}</div>
+        </div>
+      </div>
+      {results}
+    </div>
+  )
+}
+
+FilterContainer.DesktopFilters = function DesktopFilters({
+  search,
+  sort,
+}: FilterProps) {
+  return (
+    <div className="hidden justify-end gap-6 lg:flex">
+      {search}
+      <div>{sort}</div>
+    </div>
+  )
+}
+
+FilterContainer.ResultsAndCategory = function ResultsAndCategory({
+  results,
+  category,
+  gapSize = 'default',
+}: ResultsProps) {
+  return (
+    <div
+      className={clsx('hidden flex-col lg:flex', {
+        'gap-8': gapSize === 'default',
+        'gap-10': gapSize === 'wide',
+      })}
+    >
+      {results}
+      {category}
+    </div>
+  )
+}
+
+FilterContainer.ContentWrapper = function ContentWrapper({
+  children,
+}: WrapperProps) {
+  return <div className="flex flex-col gap-6">{children}</div>
+}
+
+FilterContainer.PaginationWrapper = function PaginationWrapper({
+  children,
+}: WrapperProps) {
+  return <div className="sm:w-fit sm:self-center">{children}</div>
+}
+
+FilterContainer.MainWrapper = function MainWrapper({ children }: WrapperProps) {
+  return (
+    <div className="flex w-full flex-col gap-4 lg:flex-1 lg:gap-6">
+      {children}
+    </div>
+  )
+}

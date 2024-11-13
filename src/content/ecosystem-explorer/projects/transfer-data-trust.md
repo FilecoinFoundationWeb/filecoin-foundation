@@ -1,37 +1,30 @@
 ---
 title: "TRANSFER Data Trust"
-slug: "transfer-data-trust"
-created-on: "2024-02-01T15:51:35.125Z"
-updated-on: "2024-02-01T15:51:35.133Z"
-published-on: "2024-02-01T15:51:35.145Z"
+created-on: 2024-02-01T15:51:35.125Z
+updated-on: 2024-02-01T15:51:35.133Z
+published-on: 2024-02-01T15:51:35.145Z
 description:
   "TRANSFER Data Trust is a speculative design project to build an automated,
   non-profit cooperative trust powered by FVM."
 category: "storage"
-tags:
-  - "arts-collectibles"
-  - "glam"
-  - "governance-daos-public-goods"
 tech:
   - "ipfs"
   - "filecoin"
 image:
-  url: /assets/images/transfer_logo_white.png
-  alt: "TRANSFER Data Trust Logo"
+  src: /assets/images/transfer_logo_white.png
 website: "http://transfer.art"
 repo: "https://github.com/TRANSFERArchive"
 twitter: "https://twitter.com/transfergallery/"
-video-url:
-year-joined: "2024-02-01T15:51:35.152Z"
-news-update:
+year-joined: 2024-02-01T15:51:35.152Z
 featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data/"
 subcategories:
   - data-storage-management
 seo:
-  title: Transfer Data Trust
   description:
     Transfer Data Trust offers decentralized solutions for data transfer
     and security.
+email: encrypted::U2FsdGVkX1/92XC+4XjJ94INFSZx/Hy9K7wAFyMWJ9dZ0IzC0z7zrLRAgQUy0WXd
+full-name: encrypted::U2FsdGVkX19qBfh6/RVSxi9vMICyIwnvFR0QeOFQEKQ=
 ---
 
 TRANSFER Data Trust is a speculative design project to build an automated, non-profit cooperative trust powered by FVM. The outcomes of this project are both a non-profit entity holding data-based assets (artworks), and a set of governance contracts and UI that are open and available to any artist collective or organization to fork and implement. The vision is to shift how artists understand the value of their work, and how they grow that value over time through cooperative conservation and care practices.

@@ -1,26 +1,21 @@
 ---
 title: "Dev Grant Spotlight: DataStation"
-slug: dev-grant-spotlight-datastation
-created-on: 2023-04-21T07:26:33.536000Z
-updated-on: 2023-04-21T07:26:33.536000Z
-published-on: 2023-04-21T07:33:56.200000Z
-description:
-  "DataStation is a platform that enhances the decentralized storage experience
-  on the Filecoin network by providing storage providers and clients with standardized
-  storage performance data in a format that's both easy to store and to understand. "
+created-on: 2023-04-21T07:26:33.536Z
+updated-on: 2023-04-21T07:26:33.536Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: "DataStation is a platform that enhances the decentralized storage
+  experience on the Filecoin network by providing storage providers and clients
+  with standardized storage performance data in a format that's both easy to
+  store and to understand."
 image:
-  url: /assets/images/image-c-22.png
-  alt:
-recommended-posts: []
-category: reports
+  src: /assets/images/image-c-22.png
 seo:
-  title: "Dev Grant Spotlight: Datastation"
-  description:
-    Datastation's innovative solutions highlighted in this dev grant spotlight.
-    Learn more about their work.
+  description: Datastation's innovative solutions highlighted in this Filecoin
+    Foundation Dev Grant spotlight. Learn more about their work.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about the Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._
 
 DataStation is a platform that enhances the decentralized storage experience on the Filecoin network by providing storage providers and clients with standardized storage performance data in a format that's both easy to store and to understand. This information aids clients in building the right plan for their storage needs and bridges the gap between decentralized storage providers and enterprise clients seeking to leverage the Filecoin network for data storage.
 
@@ -30,4 +25,4 @@ DataStation occupies a unique corner of the marketspace because it can break dow
 
 The platform helps users find the right storage provider for individualized use cases and requirement sets. It also offers a built-in quote calculator that helps prospects choose a storage provider that fits their budget and storage needs. By providing transparent insights into data points like reputation scores, users can choose the storage provider that best fits their needs and fosters the greatest sense of security and trust. You can take a sneak peek of DataStations’s platform on its [website](https://medium.com/buidl-labs/datastation-enhancing-the-experience-of-decentralised-storage-on-filecoin-79e8807b854d), as well as its full proposal on [GitHub](https://github.com/filecoin-project/devgrants/blob/8d801d378e4dc7231792f958e7b077a8519452ad/open-grant-proposals/open-miner-marketplace.md).
 
-**The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Check out** [**other grant recipients**](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) **and learn how you can apply for** [**open grants**](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md) **and** [**Microgrants**](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md)**.**
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

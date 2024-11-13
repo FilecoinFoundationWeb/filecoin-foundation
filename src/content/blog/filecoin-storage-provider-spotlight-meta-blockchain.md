@@ -6,17 +6,12 @@ description: >-
   business has two data centers in Seoul and provides enterprise cloud storage
   services via a subsidiary called Meta Cloud and Creation (Meta C&C).
 image:
-  url: >-
-    /assets/images/64423ae18d1be72cd2ceb12e_1-avr_3ujwveph-055eq1s_q.png
-  alt:
-slug: filecoin-storage-provider-spotlight-meta-blockchain
+  src: /assets/images/64423ae18d1be72cd2ceb12e_1-avr_3ujwveph-055eq1s_q.png
 updated-on: "2023-04-21T07:27:29.284Z"
 created-on: "2023-04-21T07:27:29.284Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Meta Blockchain"
   description:
     Meta Blockchain's contributions to the Filecoin storage network. Learn
     more about their innovations.
@@ -24,7 +19,7 @@ seo:
 
 _This is one in a series of periodic blog posts devoted to profiling Filecoin storage providers. In these posts, we examine what they bring to — and the benefits they derive from — the Filecoin ecosystem._
 
-Founded in 2018, [Meta Blockchain](http://www.meta-blockchain.co.kr/) is a rapidly growing, ambitious South Korean storage company. A multi-million-dollar company with 28 employees, the business has two data centers in Seoul and provides enterprise cloud storage services via a subsidiary called Meta Cloud and Creation (Meta C&C).
+Founded in 2018, Meta Blockchain (link previously available but now unavailable) is a rapidly growing, ambitious South Korean storage company. A multi-million-dollar company with 28 employees, the business has two data centers in Seoul and provides enterprise cloud storage services via a subsidiary called Meta Cloud and Creation (Meta C&C).
 
 Meta C&C works with corporate customers across a wide range of industries including law, healthcare, entertainment, and education, providing decentralized storage for media files. The company was an early participant in the Filecoin ecosystem and built a Filecoin test node in 2020. Today they operate 34 Filecoin nodes and provide about 20 PiB of decentralized storage. They are also equipped with a high-speed sealing machine and the capacity to supply more than 10 PiB per month for enterprise use–for both easy retrievals and for backup only.
 

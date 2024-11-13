@@ -1,6 +1,5 @@
 ---
 title: "Guest Post: If the Library of Alexandria Were Built Better"
-slug: guest-post-if-the-library-of-alexandria-were-built-better
 created-on: 2024-02-12T15:40:26.928000Z
 updated-on: 2024-02-12T15:40:26.957000Z
 published-on: 2024-02-12T15:40:26.981000Z
@@ -9,16 +8,8 @@ description:
   Guest Post from Museum of Crypto Art on preserving the crypto art movement
   on the Filecoin network.
 image:
-  url: /assets/images/021224-guest-moca-1-.png
-  alt: "Guest Post: If the Library of Alexandria Were Built Better"
-recommended-posts: []
+  src: /assets/images/021224-guest-moca-1-.png
 seo:
-  noindex: false
-  twitter:title: "Guest Post: If the Library of Alexandria Were Built Better"
-  twitter:card: summary
-  twitter:image: /assets/images/021224-guest-moca-1-.png
-  og:image: /assets/images/021224-guest-moca-1-.png
-  title: "Guest Post: If the Library of Alexandria Were Built Better"
   description:
     A thought-provoking guest post exploring the concept of a better-built
     Library of Alexandria.

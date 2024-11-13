@@ -1,28 +1,20 @@
 ---
 title: "Fresh From FF: Mid-April, 2024"
-slug: fresh-from-ff-mid-april-2024
 created-on: 2024-04-15T19:44:56.431000Z
 updated-on: 2024-04-15T19:44:56.446000Z
 published-on: 2024-04-15T19:44:56.460000Z
 category: news
-description:
-  "Check out the latest updates about what the Filecoin Foundation team
+description: "Check out the latest updates about what Filecoin Foundation team
   has been up to."
 image:
-  url: /assets/images/0215-ff-4-.png
-  alt: "Fresh From FF: Mid-April, 2024"
-recommended-posts: []
+  src: /assets/images/0215-ff-4-.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  title: "Fresh from FF: Mid April 2024"
   description:
     Mid-April 2024 updates from Filecoin Foundation. Key news, events,
     and highlights.
 ---
 
-_Check out the latest updates about what the Filecoin Foundation team has been up to._
+_Check out the latest updates about what Filecoin Foundation team has been up to._
 
 ## Mid-April Highlights
 
@@ -65,13 +57,13 @@ _Check out the latest updates about what the Filecoin Foundation team has been u
 **Marketing & Comms**
 
 - Don't miss your chance to be featured in the [Filecoin Ecosystem Digest](https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form), a digital and in-print magazine to showcase the innovation unfolding across the ecosystem. Submit an abstract for consideration by April 19.
-- Explore FF's deep dive into [Decentralized Compute](https://fil.org/blog/unleashing-the-power-of-decentralized-compute-with-filecoin/) and how the Filecoin network can foster a more open, resilient, and democratized computing ecosystem.
+- Explore FF's deep dive into [Decentralized Compute](/blog/unleashing-the-power-of-decentralized-compute-with-filecoin/) and how the Filecoin network can foster a more open, resilient, and democratized computing ecosystem.
 
 **Events**
 
 - FF President Marta Belcher joined a crypto policy and regulation panel at [Links NYC 2024](https://www.chainalysis.com/links-nyc/), hosted by Chainalysis. [Read the event recap](https://www.chainalysis.com/blog/links-nyc-2024-day1/).
-- Megan Klimen spoke at [Earth Commons](https://fundingthecommons.io/earth-commons-san-francisco-bay-area-2024), a conference series exploring the nexus of Web3 and climate at [LabWeek Public Goods](https://www.labweek.io/24-pg).
-- Danny O'Brien led workshops on the topics of public goods profit sharing and Internet/Web3 standards at [Funding the Commons](https://fundingthecommons.io/san-francisco-bay-area-2024). Keep an eye out on the [Funding the Commons YouTube channel](https://www.youtube.com/@Funding-the-Commons/videos) for an event recap!
+- Megan Klimen spoke at Earth Commons, a conference series exploring the nexus of Web3 and climate at [LabWeek Public Goods](https://www.labweek.io/24-pg).
+- Danny O'Brien led workshops on the topics of public goods profit sharing and Internet/Web3 standards at [Funding the Commons](/events/funding-the-commons). Keep an eye out on the [Funding the Commons YouTube channel](https://www.youtube.com/@Funding-the-Commons/videos) for an event recap!
 - FF supported the [Filecoin Orbit Ecosystem Showcase at Teamz Summit](https://lu.ma/fil-teamz), where Orbit Ambassadors outlined the unprecedented growth the Filecoin ecosystem is experiencing because of the Filecoin Virtual Machine (FVM) and InterPlanetary Consensus (IPC).
 - Brynn O’Donnell and Jefferson Sankara from the social impact team spoke at the University of Maryland’s EASIER Data Initiative workshop on [Open Geospatial Science and the Decentralized Geospatial Web](https://workshop.easierdata.org/).
 - See you at [Consensus](https://consensus2024.coindesk.com/), May 29-31 in Austin, TX. Find FF and teams across the Filecoin ecosystem in Austin at events throughout the week. Stay tuned for more details.

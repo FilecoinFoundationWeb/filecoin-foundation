@@ -1,0 +1,20 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "..",
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@/components/*": ["src/app/_components/*"],
+      "@/constants/*": ["src/app/_constants/*"],
+      "@/content/*": ["src/content/*"],
+      "@/data/*": ["src/app/_data/*"],
+      "@/hooks/*": ["src/app/_hooks/*"],
+      "@/styles/*": ["src/app/_styles/*"],
+      "@/types/*": ["src/app/_types/*"],
+      "@/utils/*": ["src/app/_utils/*"],
+      "@/assets/*": ["public/assets/*"],
+      "@/support/*": ["cypress/support/*"]
+    }
+  },
+  "include": ["../cypress/**/*.ts"]
+}

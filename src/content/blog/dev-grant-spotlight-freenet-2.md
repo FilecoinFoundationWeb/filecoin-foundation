@@ -1,23 +1,18 @@
 ---
 title: "Dev Grant Spotlight: Freenet 2"
-description: >-
-  Freenet is free software that lets users anonymously chat, share files, use
-  email, browse, and publish Freenet-accessible websites known as “freesites.”
-slug: dev-grant-spotlight-freenet-2
+created-on: 2023-04-21T07:26:38.609Z
+updated-on: 2023-04-21T07:26:38.609Z
+published-on: 2023-04-21T07:33:56.200Z
+category: use-cases
+description: Freenet is free software that lets users anonymously chat, share
+  files, use email, browse, and publish Freenet-accessible websites known as
+  “freesites.”
 image:
-  url: >-
-    /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
-  alt:
-updated-on: "2023-04-21T07:26:38.609Z"
-created-on: "2023-04-21T07:26:38.609Z"
-published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
-category: reports
+  src: /assets/images/64423aae5b72a20c3b84a368_0-y9cgmvjvrgwywsvt.png
 seo:
-  title: "Dev Grant Spotlight: Freenet 2"
   description:
     Freenet 2's journey and achievements as a recipient of the Filecoin
-    dev grant. Learn more about their project.
+    Foundation Dev Grant. Learn more about their project.
 ---
 
 _This is the latest post in our series highlighting the builders creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://grants.filecoin.io/)_._
@@ -34,8 +29,8 @@ Specifically, [Freenet 2](https://github.com/freenet/locutus) will be a distribu
 
 Moreover, as an infrastructure layer, Freenet 2 will open up IPFS and Filecoin to more use cases, such as mobile-native protocols for low-bandwidth, low-power applications over mobile. In addition, a “chainless” smart contract approach will generate learnings and use cases for [Filecoin’s smart contract initiative](https://filecoin.io/blog/posts/announcing-chainlink-filecoin-joint-grants-for-dapps-combining-decentralized-storage-and-oracles/).
 
-Filecoin Foundation dev grants are intended to enhance the Filecoin ecosystem. FF’s grant to Freenet is a new type of discretionary award by the Filecoin Foundation that did not involve an RFP. Rather, the grant awarded to Freenet is a sponsored open grant. This type of grant will be periodically given to organizations that we proactively identify as sharing Filecoin Foundation’s civic values around free speech and data preservation— but need help shifting their infrastructures more fully from web2 centralization into a decentralized Web3 environment.
+Filecoin Foundation dev grants are intended to enhance the Filecoin ecosystem. FF’s grant to Freenet is a new type of discretionary award by Filecoin Foundation that did not involve an RFP. Rather, the grant awarded to Freenet is a sponsored open grant. This type of grant will be periodically given to organizations that we proactively identify as sharing Filecoin Foundation’s civic values around free speech and data preservation— but need help shifting their infrastructures more fully from web2 centralization into a decentralized Web3 environment.
 
 We’re proud to support Freenet in maturing to an even more decentralized operating model to back up its worthy mission!
 
-**The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Check out** [**other grant recipients**](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) **and learn how you can apply for** [**open grants**](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md) **and** [**Microgrants**](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md)**.**
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

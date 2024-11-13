@@ -1,5 +1,4 @@
 import {
-  Butterfly,
   GithubLogo,
   LinkedinLogo,
   XLogo,
@@ -8,8 +7,10 @@ import {
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import BlueskyLogo from '@/assets/logos/bluesky-logo.svg'
+
 const socialIcons = {
-  bluesky: Butterfly,
+  bluesky: BlueskyLogo,
   github: GithubLogo,
   linkedin: LinkedinLogo,
   twitter: XLogo,

@@ -1,6 +1,5 @@
 ---
 title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
-slug: filecoin-ecosystem-shines-at-fil-hong-kong-ai-depin-fvm-and-more
 created-on: 2024-04-22T15:09:42.759000Z
 updated-on: 2024-04-22T15:09:42.769000Z
 published-on: 2024-04-22T15:09:42.779000Z
@@ -9,19 +8,8 @@ description:
   The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by
   ND Labs and supported by Filecoin Foundation.
 image:
-  url: /assets/images/blogheader-filhk24recap-1-.png
-  alt: Filecoin Ecosystem at FIL Hong Kong
-recommended-posts: []
+  src: /assets/images/blogheader-filhk24recap-1-.png
 seo:
-  noindex: false
-  twitter:title:
-    "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and
-    More"
-  twitter:card: summary
-  twitter:site: ""
-  twitter:image: /assets/images/blogheader-filhk24recap-1-.png
-  og:image: /assets/images/blogheader-filhk24recap-1-.png
-  title: "Filecoin Ecosystem Shines at FIL Hong Kong: AI, DePIN, FVM, and More"
   description:
     Highlights from FIL Hong Kong, showcasing AI, DePIN, FVM, and more
     in the Filecoin ecosystem.
@@ -29,7 +17,7 @@ seo:
 
 The Filecoin ecosystem was on full display at FIL Hong Kong, hosted by ND Labs and supported by Filecoin Foundation.
 
-The Filecoin ecosystem was on full display at [FIL Hong Kong](http://fil-hk.io), hosted by ND Labs and supported by Filecoin Foundation. Hundreds of attendees from around the world gathered in the burgeoning Web3 hub of Hong Kong to explore the latest developments in the Filecoin ecosystem and envision the future of decentralized storage.
+The Filecoin ecosystem was on full display at [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs and supported by Filecoin Foundation. Hundreds of attendees from around the world gathered in the burgeoning Web3 hub of Hong Kong to explore the latest developments in the Filecoin ecosystem and envision the future of decentralized storage.
 
 Spread across three days of talks and presentations, reps from many exciting projects built on the Filecoin network came together to share their latest developments in decentralized AI tech, decentralized physical infrastructure networks (DePIN), and Filecoin Virtual Machine (FVM) projects.
 

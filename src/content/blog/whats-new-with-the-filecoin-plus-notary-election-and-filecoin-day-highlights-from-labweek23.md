@@ -1,7 +1,6 @@
 ---
 title: What’s New with the Filecoin Plus Notary Election and Filecoin Day
   Highlights from LabWeek23
-slug: whats-new-with-the-filecoin-plus-notary-election-and-filecoin-day-highlights-from-labweek23
 created-on: 2023-11-20T20:49:32.196Z
 updated-on: 2023-11-20T20:49:32.209Z
 published-on: 2023-11-20T20:49:32.216Z
@@ -13,11 +12,8 @@ description: >-
   intersection of artificial intelligence and decentralized storage, and more.
 category: news
 image:
-  url: /assets/images/231120-fd-fpd.png
-  alt: Filecoin Day and Filecoin Plus Day Recap
-recommended-posts: []
+  src: /assets/images/231120-fd-fpd.png
 seo:
-  title: Highlights from Filecoin Plus Notary Election and Filecoin Day at LabWeek23
   description: Discover the latest updates from Filecoin Plus Notary Election and Filecoin Day at LabWeek23, including AI and decentralized storage discussions.
 ---
 
@@ -29,7 +25,7 @@ Here’s a quick rundown:
 
 **Filecoin Plus Day**
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/57Ua4AEWe_g?si=nFb8apksN6EgLB_w"
   title="Filecoin Plus Day"
   height="315"
@@ -66,7 +62,7 @@ FF Co-Founding Officer Megan Klimen outlined the Foundation’s work governing t
 She also recapped a busy year of impactful events for the Foundation:
 
 - FIL Paris welcomed over 1,000 attendees in Paris during EthCC.
-- [FIL Vegas](https://fil.org/blog/ai-data-verifiability-and-decentralized-storage-a-recap-from-fil-vegas/) shined a spotlight on storage providers and catalyzed conversations about decentralized storage, AI, and enterprise.
+- [FIL Vegas](/blog/ai-data-verifiability-and-decentralized-storage-a-recap-from-fil-vegas/) shined a spotlight on storage providers and catalyzed conversations about decentralized storage, AI, and enterprise.
 - Filecoin Orbit –– a community-run program of volunteers that host Filecoin events around the world –– had 150 ambassadors host over 190 events in 40+ countries.
 
 Klimen outlined FF and FFDW’s social impact work with partners like Democracy’s Library, MuckRock, MIT Open Learning, and University of Maryland’s Easier Data Initiative, and highlighted the newly launched [DWeb Impact Resources Hub](https://ffdweb.org/resources/) –– a massive collection of blog posts, research papers, news, and tutorials at the intersection of the decentralized web and social good.
@@ -83,7 +79,7 @@ FF Co-Founding Officer Clara Tsao discussed why the future of AI and enterprise 
 
 **Crossing the Streams: A Ghostbusters-themed Approach to Scaling the Filecoin Ecosystem**
 
-<iframe 
+<iframe
   src="https://www.youtube.com/embed/yEQz2Bfis0Y?si=29gKIzFdScqYlLdQ"
   title="Crossing the Streams"
   height="315"

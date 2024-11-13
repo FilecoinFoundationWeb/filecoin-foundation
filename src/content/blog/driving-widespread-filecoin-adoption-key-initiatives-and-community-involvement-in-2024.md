@@ -2,7 +2,6 @@
 title:
   "Driving Widespread Filecoin Adoption: Key Initiatives and Community Involvement
   in 2024"
-slug: driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024
 created-on: 2024-05-17T19:51:58.627000Z
 updated-on: 2024-05-17T19:51:58.641000Z
 published-on: 2024-05-17T19:51:58.651000Z
@@ -13,14 +12,8 @@ description:
   growth metrics and outline what some Ecosystem leaders suggest are the keys to further
   expansion in 2024."
 image:
-  url: /assets/images/050924-adoption.png
-  alt:
-recommended-posts: []
+  src: /assets/images/050924-adoption.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  title: "Driving Widespread Filecoin Adoption: Key Initiatives for 2024"
   description:
     Explore key initiatives and community involvement driving widespread
     Filecoin adoption in 2024.
@@ -32,7 +25,7 @@ Filecoin Foundation is one of many teams in the Filecoin network committed to th
 
 ## The Data Economy 
 
-We are living in an era defined by data. [Ninety percent](https://bernardmarr.com/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/) of the world's data was produced in just the last two years. The rise of artificial intelligence and machine learning technologies, which require vast amounts of data for training and operation, is a major contributor to the rapid increase in data generation. By 2025, it's predicted that [463 exabytes of data will be created each day](https://www.weforum.org/agenda/2019/04/how-much-data-is-generated-each-day-cf4bddf29f/).
+We are living in an era defined by data. Ninety percent of the world's data was produced in just the last two years. The rise of artificial intelligence and machine learning technologies, which require vast amounts of data for training and operation, is a major contributor to the rapid increase in data generation. By 2025, it's predicted that 463 exabytes of data will be created each day.
 
 Data fuels every sector of our global economy. In this data-driven world, digital assets of value will inevitably be recorded and tracked on blockchain networks to ensure transparency, security, and verifiability of ownership and transactions. These datasets will require continuous proofs that demonstrate in real-time that they are globally available, immutable, and verified without a single point of failure. Without such quality assurances, datasets, like any digital asset, will be at risk of losing value in this new digital economy.
 
@@ -84,7 +77,7 @@ The amalgamation of these efforts should have a major, positive network effect. 
 
 There are more ways to help expand the Filecoin ecosystem than to build. You can get involved by connecting with the Filecoin community and with the team at Filecoin Foundation:
 
-1. **[Attend a Filecoin event](https://fil.org/events/).** There is nothing like meeting in person with a potential partner, client, or team to shake hands, make a deal, be inspired, or learn something new. The Filecoin Foundation team will be on the ground at [Consensus](https://hub.fil.org/consensus-24), [EthCC](https://ethcc.io/), [Token2049](https://www.token2049.com/), [Permissionless](https://blockworks.co/event/permissionless-iii), and [DevCon](https://devcon.org/en/). And the [Filecoin Orbit program](https://hub.fil.org/orbit) hosts dozens of community events in cities around the world each year. We hope you’ll join us at one or more of these events and connect with the Filecoin community.
+1. **[Attend a Filecoin event](/events/).** There is nothing like meeting in person with a potential partner, client, or team to shake hands, make a deal, be inspired, or learn something new. Filecoin Foundation team will be on the ground at [Consensus](https://hub.fil.org/consensus-24), [EthCC](https://ethcc.io/), [Token2049](https://www.token2049.com/), [Permissionless](https://blockworks.co/event/permissionless-iii), and [DevCon](https://devcon.org/en/). And the [Filecoin Orbit program](https://hub.fil.org/orbit) hosts dozens of community events in cities around the world each year. We hope you’ll join us at one or more of these events and connect with the Filecoin community.
 2. **Sell storage.** Work with one of Filecoin’s existing software platform providers to bring the value of decentralized storage to your own network and client list. Most software providers in our community are willing to white-label or partner with master service providers, system integrators, or value-added resellers to help drive client demand and growth.
 3. **Apply for a dev grant.** Filecoin Foundation awards grant funding for critical development projects to foster a more decentralized, efficient, and robust foundation for humanity’s information. Grants support a wide range of projects – from developer and data tooling and integrations to applications and research – that benefit ecosystem participants like developers and storage providers. [Learn more](https://github.com/filecoin-project/devgrants) about what kinds of projects the Foundation funds and how to apply.
 4. **Join the governance conversation.** The Foundation coordinates community governance of the Filecoin protocol. Through the Filecoin Improvement Proposal (FIP) process, our goal is to build a decentralized, innovative, and transparent system to support community decision-making and collective ownership of the Filecoin technology. [Dive deeper](https://github.com/filecoin-project/FIPs) into the governance process, including proposals, discussions, and technical documentation.

@@ -8,13 +8,9 @@ description:
   course focused on building applications on a blockchain with decentralized storage
   on Filecoin/IPFS.
 image:
-  url: /assets/images/64423af4e3c08f6f124f519f_1-gvlzuxsp3dbmsdxwobsexq.png
-  alt:
-slug: introducing-co-rise-course-building-web3-applications-and-filecoin-ipfs
-recommended-posts: []
+  src: /assets/images/64423af4e3c08f6f124f519f_1-gvlzuxsp3dbmsdxwobsexq.png
 category: news
 seo:
-  title: "Introducing Co-Rise Course: Building Web3 Applications"
   description:
     Learn to build Web3 applications with Filecoin and IPFS in the new
     Co-Rise course. Enroll now!

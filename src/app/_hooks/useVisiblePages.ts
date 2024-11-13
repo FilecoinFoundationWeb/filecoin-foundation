@@ -8,7 +8,7 @@ export function useVisiblePages(
   pageCount: number,
   currentPage: number,
   range: number,
-): (number | typeof ELLIPSIS)[] {
+): Array<number | typeof ELLIPSIS> {
   if (range <= 0) {
     throw new Error('range must be greater than 0')
   }
@@ -28,10 +28,10 @@ export function useVisiblePages(
 }
 
 function getVisiblePages(
-  pageNumbers: number[],
+  pageNumbers: Array<number>,
   currentPage: number,
   range: number,
-): (number | typeof ELLIPSIS)[] {
+): Array<number | typeof ELLIPSIS> {
   const needsStartEllipsis = currentPage - DISTANCE_FROM_START > 0
   const needsEndEllipsis = currentPage + DISTANCE_FROM_END < pageNumbers.length
 
@@ -62,10 +62,10 @@ function getVisiblePages(
 }
 
 function getMiddlePages(
-  pageNumbers: number[],
+  pageNumbers: Array<number>,
   currentPage: number,
   range: number,
-): number[] {
+): Array<number> {
   const remainingArraySlots = range - 4
   const currentPageIndex = pageNumbers.indexOf(currentPage)
 
@@ -76,10 +76,10 @@ function getMiddlePages(
 }
 
 function getVisiblePagesSmallRange(
-  pageNumbers: number[],
+  pageNumbers: Array<number>,
   currentPage: number,
   range: number,
-): (number | typeof ELLIPSIS)[] {
+): Array<number | typeof ELLIPSIS> {
   const firstPage = pageNumbers[0]
   const lastPage = pageNumbers[pageNumbers.length - 1]
 

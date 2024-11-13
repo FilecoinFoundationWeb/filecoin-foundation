@@ -2,7 +2,6 @@
 title:
   "Case Study: GenRAIT Leverages Filecoin Network for Greater Visibility, Access,
   and Storage of Genomic Data"
-slug: case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data
 created-on: 2023-04-21T07:26:23.379000Z
 updated-on: 2023-04-21T07:26:23.379000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -12,12 +11,9 @@ description:
   ecosystem. In the GenRAIT ecosystem, scientists retain full autonomy and flexibility
   with regards to their data and analytics processes.
 image:
-  url: /assets/images/image-c-02.png
-  alt:
-recommended-posts: []
+  src: /assets/images/image-c-02.png
 category: use-cases
 seo:
-  title: "Case Study: GenRait Leverages Filecoin for Genomic Data Storage"
   description:
     GenRait leverages Filecoin for greater visibility, access, and storage
     of genomic data. Read the full case study.
@@ -28,7 +24,7 @@ seo:
 - [GenRAIT](https://www.genrait.com/) provides scientists with the platform they need to analyze genomic data, generate scientific breakthroughs, and experiment at scale, all in one unified ecosystem. In the GenRAIT ecosystem, scientists retain full autonomy and flexibility with regards to their data and analytics processes.
 - GenRAIT will initially host over 100 terabytes of genome research data on the Filecoin network and enable scientists and researchers to upload their own genomic files they then can retrieve, analyze, and put into action.
 - GenRAIT currently uses the open-source interface [Estuary](https://estuary.tech/) to upload genomic data to the Filecoin network, leveraging the power of blockchain-based technology as a cost-effective storage solution. For GenRAIT, the Filecoin network is a Web3 solution that will scale with its data.
-- Read the full [GenRAIT Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-GenRAIT.pdf).
+- Read the full [GenRAIT Case Study](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data).
 
 **Data storage needs in the biotech space**
 
@@ -78,4 +74,4 @@ GenRAIT has already seen success with the Filecoin network for its open-source a
 
 _“We continue to find more relevant use cases in the genomics field for hosting data on Filecoin. The potential here is huge and it just shows how decentralized technologies are the future for enabling emerging technologies like genomics to grow and flourish,” says Capito._
 
-To learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](https://fil.org/). And read the full [GenRAIT Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-GenRAIT.pdf).
+To learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](https://filecoin.io/) or [fil.org](/).

@@ -1,3 +1,19 @@
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
+
+import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import {
+  BaseFrontmatterSchema,
+  HomePageFrontmatterSchema,
+} from '@/schemas/FrontmatterSchema'
+
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
@@ -10,24 +26,27 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { createMetadata } from '@/utils/createMetadata'
-import { getEcosystemProjectsData } from '@/utils/getEcosystemProjectData'
-
-import { attributes } from '@/content/pages/home.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
-import { BASE_ORGANIZATION_SCHEMA } from '@/constants/structuredDataConstants'
-import { graphicsData } from '@/data/graphicsData'
-import { filecoinEcosystemData } from '@/data/homepage/filecoinEcosystemData'
+import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 const ecosystemProjects = getEcosystemProjectsData()
 
 const {
-  featured_ecosystem_projects: featuredEcosystemProjectsSlugs,
   header,
   seo,
-} = attributes
+  featuredEcosystemProjects: featuredEcosystemProjectPaths,
+} = getFrontmatter({
+  path: PATHS.HOME,
+  zodParser: HomePageFrontmatterSchema.parse,
+})
+
+const { header: digestPageHeader } = getFrontmatter({
+  path: PATHS.DIGEST,
+  zodParser: BaseFrontmatterSchema.parse,
+})
+
+const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
+  extractSlugFromFilename,
+)
 
 const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
   featuredEcosystemProjectsSlugs?.includes(item.slug),
@@ -36,15 +55,14 @@ const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
 export const metadata = createMetadata({
   seo,
   path: PATHS.HOME.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Home() {
   return (
     <NoBreadCrumbsLayout>
       <PageLayout>
-        <StructuredDataScript structuredData={BASE_ORGANIZATION_SCHEMA} />
-
+        <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <PageHeader
           title={header.title}
           description={header.description}
@@ -97,7 +115,6 @@ export default function Home() {
           />
           <Button
             className="sm:self-center"
-            variant="primary"
             href={PATHS.ECOSYSTEM_EXPLORER.path}
           >
             View All
@@ -105,16 +122,23 @@ export default function Home() {
         </PageSection>
 
         <PageSection
+          kicker="Digest"
+          title={digestPageHeader.title}
+          image={graphicsData.digest}
+          description={digestPageHeader.description}
+          cta={{
+            href: PATHS.DIGEST.path,
+            text: 'Read Digest',
+          }}
+        />
+
+        <PageSection
           kicker="Stay Updated"
           title="News & Blog"
           description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
         >
           <FeaturedBlogPosts />
-          <Button
-            className="sm:self-center"
-            variant="primary"
-            href={PATHS.BLOG.path}
-          >
+          <Button className="sm:self-center" href={PATHS.BLOG.path}>
             View All
           </Button>
         </PageSection>

@@ -4,25 +4,20 @@ description: >-
   It’s been one year since the Filecoin Mainnet launch, and there’s a lot
   planned to celebrate this first year in orbit!
 image:
-  url: >-
-    /assets/images/64423b04fa70d18281705693_0-0y1ex6vkr4htxclc.png
-  alt:
-slug: join-us-in-celebrating-filecoin-mainnet-s-one-year-milestone
+  src: /assets/images/64423b04fa70d18281705693_0-0y1ex6vkr4htxclc.png
 updated-on: "2023-04-21T07:28:04.262Z"
 created-on: "2023-04-21T07:28:04.262Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: events
 seo:
-  title: Celebrate Filecoin Mainnet's One-Year Milestone with Us
   description:
     Join us in celebrating the one-year milestone of Filecoin mainnet.
     Reflect on achievements and future goals.
 ---
 
-It’s been one year since the Filecoin Mainnet launch, and there’s a lot planned to celebrate this first year in orbit! Join the Filecoin Foundation as we host a series of events the week of October 18 to mark Filecoin Mainnet’s one-year milestone.
+It’s been one year since the Filecoin Mainnet launch, and there’s a lot planned to celebrate this first year in orbit! Join Filecoin Foundation as we host a series of events the week of October 18 to mark Filecoin Mainnet’s one-year milestone.
 
-**On Monday, October 18, we’re hosting a virtual** [**Web3 Recruiting Happy Hour.**](https://www.eventbrite.com/e/web3-recruiting-happy-hour-tickets-180240844217) Join us to learn more about open roles at the Filecoin Foundation and with our community grantees. We’ll have reps on hand from the Filecoin Foundation as well as from Guardian Project, Internet Archive, The Starling Lab, and others to talk about their projects and their hiring needs. Join us in [Gathertown](https://www.gather.town/) from 5–6 PM ET to learn more about these opportunities. \[The first 10 people who show up at the event will receive a swag bag filled with goodies from our grantees.\] [**RSVP**](https://www.eventbrite.com/e/web3-recruiting-happy-hour-tickets-180240844217)**.**
+**On Monday, October 18, we’re hosting a virtual** [**Web3 Recruiting Happy Hour.**](https://www.eventbrite.com/e/web3-recruiting-happy-hour-tickets-180240844217) Join us to learn more about open roles at Filecoin Foundation and with our community grantees. We’ll have reps on hand from Filecoin Foundation as well as from Guardian Project, Internet Archive, The Starling Lab, and others to talk about their projects and their hiring needs. Join us in [Gathertown](https://www.gather.town/) from 5–6 PM ET to learn more about these opportunities. \[The first 10 people who show up at the event will receive a swag bag filled with goodies from our grantees.\] [**RSVP**](https://www.eventbrite.com/e/web3-recruiting-happy-hour-tickets-180240844217)**.**
 
 **On Tuesday, October 19, join us for a one-hour, virtual** [**Filecoin Governance Town Hall**](https://www.eventbrite.com/e/filecoin-governance-town-hall-tickets-182696428937)**.** In this Zoom workshop, we’ll discuss the idea of web3 governance and dive deeper into how it relates to the Filecoin ecosystem. We’ll also walk through the development of governance in mature crypto ecosystems, chat about opportunities for on- and off-chain governance in web3, and gather participant feedback on their experiences with community decision-making. This event will serve as a precursor to the Filecoin ecosystem’s internal stakeholder governance meetings planned for November 10–12. [**RSVP**](https://www.eventbrite.com/e/filecoin-governance-town-hall-tickets-182696428937)**.**
 

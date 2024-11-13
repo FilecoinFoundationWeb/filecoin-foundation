@@ -8,7 +8,13 @@ on:
 
 jobs:
   cypress-run:
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+
+    env:
+      AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
+      PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+      ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
 
     steps:
       - name: Checkout Repository
@@ -31,7 +37,25 @@ jobs:
           echo "Waiting for server to start..."
           npx wait-on http://localhost:3000
 
+      - name: Determine Test Type
+        id: test-type
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            COMMIT_MESSAGE="${{ github.event.pull_request.title }}"
+          else
+            COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
+          fi
+
+          if [[ "$BRANCH_NAME" == cms/* ]] || [[ "$COMMIT_MESSAGE" == *"[skip percy]"* ]]; then
+            echo "skip_percy=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip_percy=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run Cypress Tests without Percy
+        if: steps.test-type.outputs.skip_percy == 'true'
+        run: npm run test:cypress:critical
+
       - name: Run Cypress Tests with Percy
-        env:
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: npm run test
+        if: steps.test-type.outputs.skip_percy == 'false'
+        run: npm run test:cypress:percy:critical

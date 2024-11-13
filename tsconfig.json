@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "verbatimModuleSyntax": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -25,10 +26,13 @@
       "@/content/*": ["./src/content/*"],
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
+      "@/services/*": ["./src/app/_services/*"],
       "@/styles/*": ["./src/app/_styles/*"],
       "@/types/*": ["./src/app/_types/*"],
+      "@/schemas/*": ["./src/app/_schemas/*"],
       "@/utils/*": ["./src/app/_utils/*"],
-      "@/assets/*": ["./public/assets/*"]
+      "@/assets/*": ["./public/assets/*"],
+      "@/support/*": ["./cypress/support/*"]
     }
   },
   "include": [
@@ -37,7 +41,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/_types/**/*.d.ts",
-    "src/app/events/[slug]"
+    "src/app/events/[slug]",
+    "cypress/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

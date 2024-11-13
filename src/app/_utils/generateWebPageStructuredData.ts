@@ -1,10 +1,10 @@
 import type { WebPage, WithContext } from 'schema-dts'
 
-import { type SeoMetadata } from '@/types/metadataTypes'
-
-import { type PathValues, type DynamicPathValues } from '@/constants/paths'
+import { type DynamicPathValues, type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import { SCHEMA_CONTEXT_URL } from '@/constants/structuredDataConstants'
+
+import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
 type GenerateWebPageStructuredDataProps = {
   title: SeoMetadata['title']

@@ -2,8 +2,6 @@
 title: >-
   Bela Supernova Awarded Chainlink-Filecoin Joint Grant To Support Public Health
   Data Oracle
-slug: >-
-  bela-supernova-awarded-chainlink-filecoin-joint-grant-to-support-public-health-data-oracle
 created-on: "2023-04-21T07:26:16.008Z"
 updated-on: "2023-04-21T07:26:16.008Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -12,13 +10,9 @@ description: >-
   accelerate the development of hybrid smart contracts that combine Chainlink
   decentralized oracles and Filecoin decentralized storage.
 image:
-  url: >-
-    /assets/images/64423a97d1b025cf67f903ec_1-k1bbzfo-mulctcjeu5e_da.png
-  alt:
-recommended-posts: []
+  src: /assets/images/64423a97d1b025cf67f903ec_1-k1bbzfo-mulctcjeu5e_da.png
 category: news
 seo:
-  title: Bela Supernova Receives Chainlink-Filecoin Joint Grant
   description:
     Bela Supernova awarded a joint grant by Chainlink and Filecoin to support
     public health data oracle development.
@@ -46,4 +40,4 @@ Leaders from Bela Supernova and [Medicohealth](https://medicohealth.io/) with ex
 
 “We’re excited to have received this grant from the Chainlink and Filecoin Communities,” stated Sergey Cymbal of Bela Supernova. “With cutting-edge decentralized technologies from Chainlink and Filecoin and expertise from Medicohealth and Bela Supernova, we believe that we can empower smart contract developers to make a positive impact by supporting public health initiatives with decentralized infrastructure.”
 
-The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for [Open Grants](https://github.com/filecoin-project/devgrants/blob/master/open-grants/README.md) and [Microgrants](https://github.com/filecoin-project/devgrants/blob/master/microgrants/microgrants.md).
+_The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md)._

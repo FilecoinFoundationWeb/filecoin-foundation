@@ -1,27 +1,15 @@
 ---
 title: "One Year of Programmability, Smart Contracts, and Dapp Growth on Filecoin"
-slug: one-year-of-programmability-smart-contracts-and-dapp-growth-on-filecoin
 created-on: 2024-03-14T13:04:08.972000Z
 updated-on: 2024-03-14T13:04:09.018000Z
 published-on: 2024-03-14T13:04:09.031000Z
 category: ecosystem
-description:
-  One year ago on March 14, 2023, the launch of the Filecoin Virtual Machine
-  (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet.
+description: "One year ago on March 14, 2023, the launch of the Filecoin Virtual Machine (FVM) brought onchain programmability and smart contracts live on Filecoin mainnet."
 image:
-  url: /assets/images/031224-fvm-anniversary.png
-  alt: "One Year of Programmability, Smart Contracts, and Dapp Growth on Filecoin"
-recommended-posts: []
+  src: /assets/images/031224-fvm-anniversary.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  twitter:image: /assets/images/031224-fvm-anniversary.png
-  og:image: /assets/images/031224-fvm-anniversary.png
-  title: "One Year of Programmability: Smart Contracts and DApp Growth on Filecoin"
-  description:
-    Celebrating one year of programmability on Filecoin. Explore the growth
-    of smart contracts and DApps.
+  description: "Celebrating one year of programmability on Filecoin. Explore the growth
+  of smart contracts and DApps."
 ---
 
 One year ago at 3:14 PM UTC on March 14, 2023 (epoch 2,683,348), the launch of the [Filecoin Virtual Machine](https://fvm.filecoin.io/) (FVM) brought onchain programmability and smart contracts to Filecoin Mainnet. Dapps can tap into storage primitives on Filecoin with valuable workflows including perpetual storage, data access control, compute-over-data, Data DAOs, and more. These capabilities solidify Filecoin’s position as the Layer-1 blockchain uniquely positioned to power an open data economy.
@@ -44,11 +32,11 @@ Cross-chain interoperability. The Filecoin Network has taken a significant leap 
 
 Reward contracts from [Filecoin Saturn](https://saturn.tech/), a decentralized content delivery network for fast retrievals on Filecoin, and [Filecoin Station](https://www.filstation.app/), which connects your computer’s idle resources to the Filecoin network and rewards you with FIL.
 
-Important tooling was added with [six new block explorers](https://filecoin-io.ipns.dweb.link/blog/posts/the-fvm-imaginarium-block-explorers/) including [Filfox](https://filfox.info/), [Beryx Explorer](https://beryx.zondax.ch/), and [Starboard](https://fvm.starboard.ventures/calibration/explorer). And the newly refreshed [Filecoin Dataset Explorer](https://datasets.filecoin.io/) has FVM-enabled retrieval of public datasets for easy discovery of open-access datasets stored on the Filecoin network.
+Important tooling was added with six new block explorers including [Filfox](https://filfox.info/), [Beryx Explorer](https://beryx.zondax.ch/), and [Starboard](https://fvm.starboard.ventures/calibration/explorer). And the newly refreshed [Filecoin Dataset Explorer](https://datasets.filecoin.io/) has FVM-enabled retrieval of public datasets for easy discovery of open-access datasets stored on the Filecoin network.
 
 Here are a few more early-stage projects building on FVM to keep an eye on**:**
 
-- [Clover](https://useclover.xyz/): Building a workplace suite dedicated to improving communication and community engagement within DAO organizations.
+- Clover (link previously available but now unavailable): Building a workplace suite dedicated to improving communication and community engagement within DAO organizations.
 - [FileMarket](https://filemarket.xyz/): Assists users of EVM-compatible wallets used for digital content creation to store files directly in the wallet without the risk of unauthorized access, with the ability to monetize through selling access on a public storefront. In the Encrypted FileToken protocol (EFT), FileMarket aims to decentralize the role of the trusted third party responsible for fraud checks.
 - [Hashcase](https://www.hashcase.co/): Helping brands create, launch, and distribute digital collectibles to non-Web3 audiences.
 - [Eastore](https://eastore-filecoin.vercel.app/): A decentralized solution on Filecoin that stores files directly to the Filecoin network using smart contracts completely onchain.
@@ -59,9 +47,9 @@ Here are a few more early-stage projects building on FVM to keep an eye on**:**
 
 There has been incredible builder growth on the Filecoin network since launch. FVM’s full compatibility with the Ethereum Virtual Machine (EVM), helps many new-to-Filecoin developers make rapid progress when deploying their projects on the Filecoin blockchain.
 
-- More than one-third of approved projects of the Filecoin Foundation Dev Grants Program in FY23 were to empower FVM, including block explorers, libraries, toolsets, and more.
+- More than one-third of approved projects of Filecoin Foundation Dev Grants Program in FY23 were to empower FVM, including block explorers, libraries, toolsets, and more.
 - At launch, early builders shipped 30+ projects to Mainnet, with 20 of them entering leading accelerator cohorts with Graph Paper Capital, Longhash, and more.
-- The [Filecoin Orbit Ambassador program](https://fil.org/blog/orbit-year-in-review-growing-a-global-community-of-builders/) hosted more than 30 FVM workshops and over 10 FVM hackathons in just as many cities to introduce builders to Filecoin. These events generated 150 new projects deployed on Filecoin, IPFS, or FVM test- and mainnets, like a voting machine Filecoin dapp from a team in Tanzania.
+- The [Filecoin Orbit Ambassador program](/blog/orbit-year-in-review-growing-a-global-community-of-builders/) hosted more than 30 FVM workshops and over 10 FVM hackathons in just as many cities to introduce builders to Filecoin. These events generated 150 new projects deployed on Filecoin, IPFS, or FVM test- and mainnets, like a voting machine Filecoin dapp from a team in Tanzania.
 - The wider dev community demonstrated significant engagement with Filecoin over the past year alongside the launch of FVM. Hundreds of new projects using Filecoin have come in through participation in hackathons with ETHGlobal, ETHDenver, Encode, DevFolio, Huddle01, and DoraHacks.
 
 ## Advancement of Platform Capabilities

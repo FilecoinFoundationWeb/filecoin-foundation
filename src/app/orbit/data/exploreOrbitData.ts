@@ -4,9 +4,10 @@ import {
   Envelope,
 } from '@phosphor-icons/react/dist/ssr'
 
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import type { IconProps } from '@/components/Icon'
 
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type ExploreOrbitData = {
   heading: {
@@ -20,7 +21,7 @@ type ExploreOrbitData = {
   }
 }
 
-export const exploreOrbitData: ExploreOrbitData[] = [
+export const exploreOrbitData: Array<ExploreOrbitData> = [
   {
     heading: {
       title: '2023 Orbit Recap',

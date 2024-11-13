@@ -4,20 +4,14 @@ description: >-
   As we charge into the second half of 2022, we’ve found ourselves looking back
   to the first six months of what’s been a packed year and all that’s taken
   place within the rapidly growing Filecoin community.
-slug: filecoin-foundation-first-half-year-in-review
 image:
-  url: >-
-    /assets/images/64423ad6d7488e70c7b03c3d_1-6lpmwpmsydkqniohiklqla.png
-  alt:
+  src: /assets/images/64423ad6d7488e70c7b03c3d_1-6lpmwpmsydkqniohiklqla.png
 updated-on: "2023-04-21T07:27:18.330Z"
 created-on: "2023-04-21T07:27:18.330Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: reports
 seo:
-  title: Filecoin Foundation First Half-Year in Review
-  description:
-    A review of the Filecoin Foundation's achievements in the first half
+  description: A review of Filecoin Foundation's achievements in the first half
     of the year. Highlights and milestones.
 ---
 
@@ -29,7 +23,7 @@ Here’s a look back at all that’s taken place across the Filecoin community i
 
 **Dev Grant Spotlights**
 
-The Filecoin Foundation (FF) and Protocol Labs regularly award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. Last year saw [113 grants to organizations](https://filecoinfoundation.medium.com/2021-developer-grants-wrap-fab78b27a9fe) from more than a dozen countries around the world, a 69% YoY increase from the number of grants awarded in 2020. In the first half of 2022, we awarded 191 grants.
+Filecoin Foundation (FF) and Protocol Labs regularly award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. Last year saw [113 grants to organizations](https://filecoinfoundation.medium.com/2021-developer-grants-wrap-fab78b27a9fe) from more than a dozen countries around the world, a 69% YoY increase from the number of grants awarded in 2020. In the first half of 2022, we awarded 191 grants.
 
 In the first half of 2022, Filecoin Foundation spotlighted a number of new developer grants, including:
 
@@ -96,7 +90,7 @@ In March, we were among the tens of thousands who descended on Austin, Texas for
 
 **Decentralized Web Gateway at Davos**
 
-Hosted by Filecoin Foundation, the [Decentralized Web Gateway at Davos](https://hub.fil.org/davos), was a multi-day event held in late May in Davos, Switzerland. The week of content and events, held at a stunning historical English Church in Davos known as The Sanctuary, was dedicated to the benefits of decentralization and how decentralized tools can protect civil liberties and preserve humanity’s most important information., the Decentralized Web Gateway will bring the top voices from across crypto and Web3 to discuss the evolution of the internet and its ramifications for society.
+Hosted by Filecoin Foundation, the [Decentralized Web Gateway at Davos](/events/decentralized-web-gateway-davos), was a multi-day event held in late May in Davos, Switzerland. The week of content and events, held at a stunning historical English Church in Davos known as The Sanctuary, was dedicated to the benefits of decentralization and how decentralized tools can protect civil liberties and preserve humanity’s most important information., the Decentralized Web Gateway will bring the top voices from across crypto and Web3 to discuss the evolution of the internet and its ramifications for society.
 
 **FIL Austin**
 

@@ -2,7 +2,6 @@
 title:
   "Storage Spotlight: How Twin Quasar and CELESTE are bringing green data hosting
   to European data storage clients"
-slug: storage-spotlight-how-twin-quasar-and-celeste-are-bringing-green-data-hosting-to-european-data-storage-clients
 created-on: 2023-10-18T16:05:08.163000Z
 updated-on: 2023-10-18T16:05:08.181000Z
 published-on: 2023-10-18T16:05:08.197000Z
@@ -10,12 +9,9 @@ description:
   Twin Quasar and CELESTE have teamed up to build an environmentally friendly
   and cost-effective alternative for data storage on the Filecoin network.
 image:
-  url: /assets/images/twin-quasar-celeste-filecoin-blog-image.png
-  alt: Twin Quasar and CELESTE logos for Filecoin Foundation blog
-recommended-posts: []
+  src: /assets/images/twin-quasar-celeste-filecoin-blog-image.png
 category: use-cases
 seo:
-  title: "Storage Spotlight: Green Data Hosting with Twin Quasar and Celeste"
   description:
     Twin Quasar and Celeste bring green data hosting to European clients.
     Explore their sustainable approach.

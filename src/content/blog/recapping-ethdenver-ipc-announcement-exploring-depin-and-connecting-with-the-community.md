@@ -2,7 +2,6 @@
 title:
   "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
   the Community"
-slug: recapping-ethdenver-ipc-announcement-exploring-depin-and-connecting-with-the-community
 created-on: 2024-03-18T13:25:31.946000Z
 updated-on: 2024-03-18T13:25:31.957000Z
 published-on: 2024-03-18T13:25:31.966000Z
@@ -12,16 +11,8 @@ description:
   the Filecoin ecosystem for a week of collaboration and innovation –– to usher the
   network into a new era of adoption and growth."
 image:
-  url: /assets/images/ethdenver.png
-  alt:
-    "Recapping ETHDenver: IPC Announcement, Exploring DePIN, and Connecting with
-    the Community"
-recommended-posts: []
+  src: /assets/images/ethdenver.png
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
-  title: "Recapping ETHDenver: IPC Announcement, DePIN, and Community Connections"
   description:
     Highlights from ETHDenver, including the IPC announcement, DePIN exploration,
     and community connections.
@@ -29,7 +20,7 @@ seo:
 
 ETHDenver brought together founders, developers, and builders from across the Filecoin ecosystem for a week of collaboration and innovation –– to usher the network into a new era of adoption and growth.
 
-At the Spork Castle, the Filecoin Foundation team hosted lightning talks and demos in our booth. Juan Benet stopped by the Filecoin Orbit Ecosystem Showcase for a community AMA. And FF’s Clara Tsao took the ETHDenver stage to talk about building the next generation of data storage for artificial intelligence systems.
+At the Spork Castle, Filecoin Foundation team hosted lightning talks and demos in our booth. Juan Benet stopped by the Filecoin Orbit Ecosystem Showcase for a community AMA. And FF’s Clara Tsao took the ETHDenver stage to talk about building the next generation of data storage for artificial intelligence systems.
 
 Read on to see what you might have missed.
 
@@ -43,7 +34,7 @@ Molly Mackinlay, EngRes Lead at Protocol Labs, took to the ETHDenver stage for h
 2. Filecoin: the storage layer for Web3
 3. Scaling the Filecoin economy
 
-Sarah Thiam gave a [Crash Course to Getting Started with InterPlanetary Consensus](https://www.youtube.com/watch?v=h3qERnJyz2U) at the Filecoin Foundation Booth, outlining how IPC enables highly customizable L2s and subnets, and hierarchical consensus that traces back to the L1, ensuring security and creating more building options for dapp developers.
+Sarah Thiam gave a [Crash Course to Getting Started with InterPlanetary Consensus](https://www.youtube.com/watch?v=h3qERnJyz2U) at Filecoin Foundation Booth, outlining how IPC enables highly customizable L2s and subnets, and hierarchical consensus that traces back to the L1, ensuring security and creating more building options for dapp developers.
 
 ![](/assets/images/ghikuhlwoaauewy.jpeg)
 
@@ -53,7 +44,7 @@ Sarah Thiam gave a [Crash Course to Getting Started with InterPlanetary Consensu
 
 ### Web3 and AI
 
-The intersection of AI and Web3 was a hot topic at ETHDenver. FF Founding Officer Clara Tsao shared her talk, [Filecoin and AI: Building the Next Generation of Data Storage](https://twitter.com/EthereumDenver/status/1763723498042659294), with the ETHDenver audience. Yan Bo Ng supported the AI discussion by participating in an [AI & DePIN panel](https://www.youtube.com/live/k1HxuhBBvPg?si=2z6Y4RwVvrrtjqk7&t=5362) at Fluence’s DE:PIN Day and delivering a talk on Filecoin, FVM, and AI at the Filecoin Foundation Booth.
+The intersection of AI and Web3 was a hot topic at ETHDenver. FF Founding Officer Clara Tsao shared her talk, [Filecoin and AI: Building the Next Generation of Data Storage](https://twitter.com/EthereumDenver/status/1763723498042659294), with the ETHDenver audience. Yan Bo Ng supported the AI discussion by participating in an [AI & DePIN panel](https://www.youtube.com/live/k1HxuhBBvPg?si=2z6Y4RwVvrrtjqk7&t=5362) at Fluence’s DE:PIN Day and delivering a talk on Filecoin, FVM, and AI at Filecoin Foundation Booth.
 
 With decentralized storage, we can avoid paths that concentrate the power of AI into fewer hands while providing solutions for a wealth of decentralized players to build and maintain their AI data responsibly. Filecoin is built to handle the unprecedented scale of AI data growth on a future-proof network. And in addition to decentralizing data storage, decentralized computing capabilities made possible by Filecoin help decentralize and speed up the [resource-intensive computation of AI models](https://blogs.nvidia.com/blog/2023/01/20/what-is-ai-computing/#:~:text=AI%20computing%20multiplies%20together%20every,data%20on%20fast%20computer%20networks.).
 

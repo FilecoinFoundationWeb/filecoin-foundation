@@ -3,21 +3,12 @@ title: "Takeaways from the Filecoin Community at Consensus 2024"
 created-on: 2024-06-07T01:34:20.364Z
 updated-on: 2024-06-07T01:34:20.372Z
 published-on: 2024-06-07T01:34:20.379Z
-slug: takeaways-from-the-filecoin-community-at-consensus-2024
 description: "Last week, the Filecoin community convened in Austin against the backdrop of Consensus to hear from some of the ecosystem's leading voices and check out the latest projects building on the network. Filecoin Foundation team members took the stage at events across the conference to highlight what the ecosystem is working on and to underscore the innovation happening throughout the network."
 image:
-  url: /assets/images/060624-consensus.png
-  alt: "Filecoin Foundation at Consensus 2024"
+  src: /assets/images/060624-consensus.png
 category: events
-recommended-posts: []
 seo:
-  title: "Filecoin Community Highlights from Consensus 2024"
   description: "Discover key highlights and innovations presented by the Filecoin community at Consensus 2024 in Austin."
-  noindex: false
-  twitter:title: "Filecoin Community Highlights from Consensus 2024"
-  twitter:card: summary
-  og:image: /assets/images/060624-consensus.png
-  twitter:image: /assets/images/060624-consensus.png
 ---
 
 Last week, the Filecoin community convened in Austin against the backdrop of Consensus to hear from some of the ecosystem's leading voices and check out the latest projects building on the network. Filecoin Foundation team members took the stage at events across the conference to highlight what the ecosystem is working on and to underscore the innovation happening throughout the network.
@@ -28,7 +19,7 @@ FF Founding Officer Megan Klimen joined Akash Accelerate and the [R3al World DeP
 
 In today's digital age, data is the lifeblood of nearly every industry, and the demand for computing resources is skyrocketing. As AI continues to generate data and consume compute resources at an increasingly frenzied pace, Decentralized Physical Infrastructure Networks (DePIN) like Filecoin will become an even more important layer of the Internet. Recently, [IoTeX](https://iotex.io/) and [WeatherXM](https://weatherxm.com/) completed a [proof of concept](https://blog.textile.io/weeknotes-basin-launch-poc) with [Basin](https://basin.textile.io/), a high-throughput data layer powered by Filecoin for long-term data availability. This spotlights the growing demand for scalability, security, and resilience that DePINs offer over centralized solutions and Filecoin’s unique position to empower other DePIN networks.
 
-The Filecoin network can broker [computational resources](https://fil.org/blog/unleashing-the-power-of-decentralized-compute-with-filecoin/?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=unleashing-the-power-of-decentralized-compute-with-filecoin), incentivize compute execution, distribute workloads across available storage providers, and prove the validity of the computation's results. By harnessing the power of global networks, we can foster a more open, resilient, and democratized computing ecosystem.
+The Filecoin network can broker [computational resources](/blog/unleashing-the-power-of-decentralized-compute-with-filecoin/?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=unleashing-the-power-of-decentralized-compute-with-filecoin), incentivize compute execution, distribute workloads across available storage providers, and prove the validity of the computation's results. By harnessing the power of global networks, we can foster a more open, resilient, and democratized computing ecosystem.
 
 ## Filecoin and AI 
 
@@ -57,7 +48,7 @@ FF Founding Officer Clara Tsao spotlighted Filecoin's value proposition in her p
 
 By focusing on three community growth areas, including more deals, more onchain activity, and more concrete examples of value-add over other storage alternatives, the network is primed to thrive in 2024 and beyond. Filecoin complements emerging compute protocols, where companies like [Lighthouse](http://lighthouse.storage/) and [Akave](https://akave.ai/) are making it the go-to solution for secure and decentralized data storage and archiving. As new blockchain networks and layer-2s gain traction, Filecoin can be deeply embedded within their architectures, serving as a reliable and trustless storage layer. With the emergence of more AI tools, every AI marketplace could offer Filecoin as the default storage option for this data verifiability and traceability, creating a great opportunity for DePIN and compute networks to build on and build with Filecoin.
 
-With a thriving ecosystem of developers, storage providers, and partners, the Filecoin network is positioned to drive widespread adoption and become the foremost decentralized storage infrastructure for the data economy. It’s [an indispensable tool](https://fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024/) for all companies that rely on big data –– across Web2, Web2.5, and Web3.
+With a thriving ecosystem of developers, storage providers, and partners, the Filecoin network is positioned to drive widespread adoption and become the foremost decentralized storage infrastructure for the data economy. It’s [an indispensable tool](/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024/) for all companies that rely on big data –– across Web2, Web2.5, and Web3.
 
 ---
 

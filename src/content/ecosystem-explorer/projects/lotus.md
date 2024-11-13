@@ -1,34 +1,24 @@
 ---
 title: "Lotus"
-slug: "lotus"
-created-on: "2024-02-26T20:36:51.261Z"
-updated-on: "2024-02-26T20:36:51.280Z"
-published-on: "2024-02-26T20:36:51.289Z"
+created-on: 2024-02-26T20:36:51.261Z
+updated-on: 2024-02-26T20:36:51.280Z
+published-on: 2024-02-26T20:36:51.289Z
 description:
   "Lotus is the primary node implementation for the Filecoin network, designed
   to facilitate efficient and secure decentralized storage."
 category: storage
-tags:
-  - data-storage-management
 tech:
   - ipfs
-image:
-  url: # "/assets/images/lotus-logo-big-1-.png"
-  alt:
-    "Lotus: The gateway to secure and decentralized digital storage on the Filecoin
-    network."
 website: "https://lotus.filecoin.io/"
-featured-content:
 repo: "https://github.com/filecoin-project/lotus"
 twitter: "https://twitter.com/lotus_web3"
-year-joined: "2020-10-15T19:36:51.302Z"
-video-url:
-news-update:
+year-joined: 2020-10-15T19:36:51.302Z
 subcategories:
   - data-storage-management
 seo:
-  title: Lotus
   description: Lotus offers decentralized storage solutions for the Filecoin network.
+email: encrypted::U2FsdGVkX1+0nFRrm0E/HRSHmjCPB+ut+IUggsSmmWn5QlVhfyo6Oor9ifgbFfcU
+full-name: encrypted::U2FsdGVkX1+5Eq20D2NRXL4AwKBPPNqLdOMrNvdAOwA=
 ---
 
 Lotus is the primary node implementation for the Filecoin network, designed to facilitate efficient and secure decentralized storage. It enables seamless data storage and retrieval across a global network, providing a robust foundation for the Filecoin ecosystem and users of all expertise levels.

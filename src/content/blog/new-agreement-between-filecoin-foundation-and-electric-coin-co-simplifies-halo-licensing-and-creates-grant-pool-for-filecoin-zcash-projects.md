@@ -2,20 +2,14 @@
 title: >-
   New agreement between Filecoin Foundation and Electric Coin Co. simplifies
   Halo licensing and creates grant pool for Filecoin-Zcash projects
-slug: >-
-  new-agreement-between-filecoin-foundation-and-electric-coin-co-simplifies-halo-licensing-and-creates-grant-pool-for-filecoin-zcash-projects
-description: null
+description: Filecoin Foundation and Electric Coin Co. simplify Halo licensing and establish a $5 million joint grants pool for Filecoin and Zcash projects.
 image:
-  url: >-
-    /assets/images/64423bd7ba1528be454f2e64_0211-zcash-twitter.png
-  alt: null
+  src: /assets/images/64423bd7ba1528be454f2e64_0211-zcash-twitter.png
 updated-on: "2023-04-21T07:31:35.155Z"
 created-on: "2023-04-21T07:31:35.155Z"
 published-on: "2023-04-21T07:33:56.200Z"
-recommended-posts: []
 category: news
 seo:
-  title: Filecoin and Electric Coin Co. Simplify Halo Licensing, Create Joint Grants Pool
   description: Filecoin Foundation and Electric Coin Co. simplify Halo licensing and establish a $5 million joint grants pool for Filecoin and Zcash projects.
 ---
 

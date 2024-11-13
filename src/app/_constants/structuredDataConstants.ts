@@ -1,23 +1,34 @@
 import type { Organization, WithContext } from 'schema-dts'
 
-import { attributes } from '@/content/pages/about.md'
-
+import { PATHS } from '@/constants/paths'
 import {
   BASE_URL,
   FILECOIN_FOUNDATION_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
-const { header } = attributes
-const { social, email, grants } = FILECOIN_FOUNDATION_URLS
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+
+const { header: aboutPageHeader } = getFrontmatter({
+  path: PATHS.ABOUT,
+  zodParser: BaseFrontmatterSchema.parse,
+})
+
+const { social, email } = FILECOIN_FOUNDATION_URLS
 
 export const SCHEMA_CONTEXT_URL = 'https://schema.org'
+export const SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL =
+  'https://schema.org/OnlineEventAttendanceMode'
+export const SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL =
+  'https://schema.org/OfflineEventAttendanceMode'
 
-export const BASE_ORGANIZATION_SCHEMA: WithContext<Organization> = {
+export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
   '@type': 'Organization',
   name: ORGANIZATION_NAME,
-  description: header.description,
+  description: aboutPageHeader.description,
   url: BASE_URL,
   sameAs: [
     social.bluesky.href,
@@ -37,11 +48,6 @@ export const BASE_ORGANIZATION_SCHEMA: WithContext<Organization> = {
       '@type': 'ContactPoint',
       contactType: email.label,
       email: email.href,
-    },
-    {
-      '@type': 'ContactPoint',
-      contactType: grants.email.label,
-      email: grants.email.href,
     },
   ],
 } as const

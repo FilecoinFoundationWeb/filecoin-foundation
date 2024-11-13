@@ -1,6 +1,5 @@
 ---
 title: Storing AI Datasets on the Decentralized Web
-slug: storing-ai-datasets-on-the-decentralized-web
 created-on: "2023-04-21T07:31:59.463Z"
 updated-on: "2023-04-21T07:31:59.463Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -11,13 +10,9 @@ description: >-
   private partners together to develop model AI initiatives, drive policy, and
   facilitate investment, with a special focus on underserved communities.
 image:
-  url: >-
-    /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
-  alt:
-recommended-posts: []
+  src: /assets/images/643e66c9def161164793d8aa_0-ykastlsfwq52kr4r.png
 category: use-cases
 seo:
-  title: Storing AI Datasets on the Decentralized Web
   description:
     Learn how AI datasets are stored on the decentralized web using Filecoin.
     Benefits and challenges.
@@ -43,7 +38,7 @@ Datasets are curated and owned by governments, academic institutions, private or
 
 Local, state, and federal governments collect myriads of data, but those datasets are often not in a machine-readable format or may contain the personal data of constituents. So it can be difficult to get this data released to the public or the research community. That said, there has been substantial progress in recent years in the federal government.
 
-Academic institutions will often compile or generate datasets, many of which become public resources, such as the [Berkeley DeepDrive](https://bdd-data.berkeley.edu/) data. And, of course, the private sector collects data from their business operations and compiles other datasets, most of which stays private, though they do often release choice datasets to the public or to researchers that they believe benefit the community.
+Academic institutions will often compile or generate datasets, many of which become public resources, such as the Berkeley DeepDrive data (link previously available but now unavailable). And, of course, the private sector collects data from their business operations and compiles other datasets, most of which stays private, though they do often release choice datasets to the public or to researchers that they believe benefit the community.
 
 Kaggle, GitHub, and Google database search are good starting places to search for datasets. The other big cloud storage providers (CSPs), academic institutions, and government agencies, such as NASA, also make datasets available for AI training.
 

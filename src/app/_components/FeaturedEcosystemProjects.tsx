@@ -1,17 +1,18 @@
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
+import { PATHS } from '@/constants/paths'
 
-import { EcosystemProjectData } from '@/types/ecosystemProjectTypes'
+import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { PATHS } from '@/constants/paths'
-import { graphicsData } from '@/data/graphicsData'
+import { Card } from '@/components/Card'
+import { CardGrid } from '@/components/CardGrid'
+
+import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
 type FeaturedEcosystemProjectsProps = {
-  ecosystemProjects: EcosystemProjectData[]
+  ecosystemProjects: Array<EcosystemProject>
 }
 
 export function FeaturedEcosystemProjects({
@@ -36,11 +37,10 @@ export function FeaturedEcosystemProjects({
             icon: MagnifyingGlass,
           }}
           image={{
-            src: image.url,
-            alt: image.alt,
-            fallback: graphicsData.imageFallback,
-            padding: true,
+            ...(image || graphicsData.imageFallback.data),
+            alt: '',
             objectFit: 'contain',
+            padding: Boolean(image),
             sizes: buildImageSizeProp({
               startSize: '100vw',
               sm: '320px',

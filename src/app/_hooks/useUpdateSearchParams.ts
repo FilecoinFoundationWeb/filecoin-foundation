@@ -1,8 +1,10 @@
+'use client'
+
 import { useCallback } from 'react'
 
-import { useRouter, usePathname, useSearchParams } from 'next/navigation'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
-import { Route } from 'next'
+import type { Route } from 'next'
 
 import { type ParamsObject, buildSearchParams } from '@/utils/buildSearchParams'
 

@@ -1,6 +1,5 @@
 ---
 title: Announcing the Filecoin Community Roadmap
-slug: announcing-the-filecoin-community-roadmap
 created-on: 2023-04-21T07:26:03.192000Z
 updated-on: 2023-04-21T07:26:03.192000Z
 published-on: 2023-04-21T07:33:56.200000Z
@@ -9,12 +8,9 @@ description: >-
   overview of significant, upcoming enhancements to the Filecoin protocol and network
   implementations.
 image:
-  url: /assets/images/64423a8ab068b0286f5c29dc_1-puuomuuoq9o-ezxjtdpppw.png
-  alt:
-recommended-posts: []
+  src: /assets/images/64423a8ab068b0286f5c29dc_1-puuomuuoq9o-ezxjtdpppw.png
 category: news
 seo:
-  title: Filecoin Community Roadmap Announcement
   description:
     Introducing the Filecoin Community Roadmap. Explore the future plans
     and upcoming projects.

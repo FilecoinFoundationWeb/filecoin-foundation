@@ -2,8 +2,6 @@
 title: >-
   Xinshu Technology: How the “Chinese Shutterfly” Uses the Filecoin Network to
   Keep a Competitive Edge in the Photo Sharing Industry
-slug: >-
-  xinshu-technology-how-the-chinese-shutterfly-uses-the-filecoin-network-to-keep-a-competitive-edge-in-the-photo-sharing-industry
 created-on: "2023-04-21T07:32:20.158Z"
 updated-on: "2023-04-21T07:32:20.158Z"
 published-on: "2023-04-21T07:33:56.200Z"
@@ -12,13 +10,9 @@ description: >-
   last a lifetime — and then some — for thousands of Chinese families and
   businesses.
 image:
-  url: >-
-    /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
-  alt:
-recommended-posts: []
+  src: /assets/images/643e66da3820f63a69cf3f15_1-mspvlfvj4hi7yykisqwcfg.png
 category: use-cases
 seo:
-  title: "Xinshu Technology: How the Chinese Shutterfly Uses Filecoin"
   description:
     Discover how Xinshu Technology uses the Filecoin network to stay competitive
     in the photo-sharing industry.
@@ -26,7 +20,7 @@ seo:
 
 **Key highlights:**
 
-- [Shanghai Xinshu Information Technology Company Limited](http://iaphoto.cn/) (Xinshu Technology for short) is a customized photography products and image sharing company aiming to provide a “Bank of Emotion.”
+- Shanghai Xinshu Information Technology Company Limited (Xinshu Technology for short) is a customized photography products and image sharing company aiming to provide a “Bank of Emotion.”
 - The company’s business is based on a B2B2C approach, meaning they provide services to other businesses, through their network of freelance photographers, while also providing services to the end-users through prints and other customized products as well as acting storage for their photos.
 - Xinshu saw the need for a new approach to conducting its business. Leveraging Alibaba Cloud — the largest cloud computing service in China — was becoming too complex and costly for the future goals of the company. The limitations in terms of costs, flexibility, and scalability made the co-founders look for new paths.
 - Through [Bytebase](https://www.bytebase.cn/#/), a decentralized storage provider in the Filecoin network, Xinshu is introducing decentralized storage for its network of photographers and ultimately helping thousands of people preserve their memories — in photographs.
@@ -79,4 +73,4 @@ With the new capabilities they offer, Xinshu continues to grow. Today, with a hy
 
 The company’s storage size is estimated to grow to 40–50 TiB per month (480–600 TiB a year) in the future, which showcases the potential for future applications with massive storage that will ultimately help preserve people’s most wonderful memories.
 
-By working with Bytebase, Xinshu was able to truly realize the value of blockchain and the Filecoin protocol for its unique business needs. To learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](http://filecoin.io/)or [fil.org](http://fil.org/).
+By working with Bytebase, Xinshu was able to truly realize the value of blockchain and the Filecoin protocol for its unique business needs. To learn more about Filecoin, storage providers and developer use cases, please visit: [Filecoin.io](http://filecoin.io/)or [fil.org](/).

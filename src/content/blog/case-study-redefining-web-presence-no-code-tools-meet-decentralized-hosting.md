@@ -1,6 +1,5 @@
 ---
 title: "Case Study: Redefining Web Presence, No-Code Tools Meet Decentralized Hosting"
-slug: case-study-redefining-web-presence-no-code-tools-meet-decentralized-hosting
 created-on: 2023-09-06T14:03:54.229000Z
 updated-on: 2023-09-06T14:03:54.256000Z
 published-on: 2023-09-06T14:03:54.272000Z
@@ -8,14 +7,9 @@ description:
   In this case study, we at Filecoin Foundation explore an innovative approach
   to website design workflow.
 image:
-  url: /assets/images/0905-cs-ff.png
-  alt:
-recommended-posts: []
+  src: /assets/images/0905-cs-ff.png
 category: use-cases
 seo:
-  title:
-    "Case Study: Redefining Web Presence with No-Code Tools and Decentralized
-    Hosting"
   description:
     Explore how no-code tools and decentralized hosting redefine web presence
     in this detailed case study.

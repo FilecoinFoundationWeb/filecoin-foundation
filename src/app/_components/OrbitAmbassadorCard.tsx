@@ -1,9 +1,4 @@
-import clsx from 'clsx'
-
-import { BasicCard } from '@/components/BasicCard'
-import { StaticImage } from '@/components/StaticImage'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { AlternatingImageCard } from '@/components/AlternatingImageCard'
 
 import type { AmbassadorData } from '@/orbit/data/ambassadorsData'
 
@@ -18,41 +13,17 @@ export function OrbitAmbassadorCard({
   testimonial,
   location,
 }: OrbitAmbassadorCardProps) {
-  const isImagePositionOdd = index % 2 === 1
-
   return (
-    <article
-      className={clsx(
-        'flex flex-col gap-4 lg:flex-row lg:gap-6',
-        isImagePositionOdd && 'lg:flex-row-reverse',
-      )}
-    >
-      <div className="relative h-48 flex-shrink-0 sm:h-64 lg:h-auto lg:w-1/3">
-        <StaticImage
-          {...image}
-          fill
-          className="h-full w-full rounded-lg"
-          sizes={buildImageSizeProp({
-            startSize: '100vw',
-            lg: '33vw',
-          })}
-        />
+    <AlternatingImageCard index={index} image={image} as="article">
+      <div className="space-y-6">
+        {testimonial.map((text, index) => (
+          <p key={index}>{text}</p>
+        ))}
+        <div>
+          <p className="font-bold">{name}</p>
+          <p className="text-brand-300">— {location}</p>
+        </div>
       </div>
-
-      <div className="flex-grow">
-        <BasicCard>
-          <div className="space-y-6">
-            {testimonial.map((text, index) => (
-              <p key={index}>{text}</p>
-            ))}
-
-            <div>
-              <p className="font-bold">{name}</p>
-              <p className="text-brand-300">— {location}</p>
-            </div>
-          </div>
-        </BasicCard>
-      </div>
-    </article>
+    </AlternatingImageCard>
   )
 }

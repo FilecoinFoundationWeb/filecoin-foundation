@@ -1,10 +1,21 @@
 import { PATHS } from './paths'
 
-const BASE_URL = 'https://fil.org'
+const BASE_DOMAIN = 'fil.org'
+const BASE_URL = `https://${BASE_DOMAIN}`
 const ORGANIZATION_NAME = 'Filecoin Foundation'
 
 const FIL_PLUS_URLS = {
-  notary: 'https://github.com/filecoin-project/notary-governance/',
+  allocators: {
+    blog: 'https://blog.allocator.tech/',
+    rfa: 'https://blog.allocator.tech/2024/04/allocator-tech-blog.html',
+    site: 'https://allocator.tech/',
+  },
+  dataCapMetrics: 'https://datacapstats.io/',
+  documentation:
+    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus',
+  filPlusParticipants:
+    'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#filecoin-processes-and-participants',
+  notary: 'https://github.com/filecoin-project/Allocator-Governance',
   site: 'https://plus.fil.org/',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
 }
@@ -22,10 +33,14 @@ const FILECOIN_FOUNDATION_URLS = {
     '2023': `${PATHS.BLOG.path}/filecoin-foundation-2023-annual-report/`,
     '2022': `${PATHS.BLOG.path}/filecoin-foundation-2022-annual-report/`,
   },
-  ecosystem: {
-    submitOrUpdateProjectForm: {
-      label: 'Submit or Update Your Project',
-      href: 'https://airtable.com/apppNMXvdW3i9P1BY/shrvrv4B9JKCP1e4O',
+  careers: {
+    href: 'https://careers.fil.org/jobs',
+    label: 'Careers',
+  },
+  digest: {
+    submitIdea: {
+      label: 'Submit Idea',
+      href: 'https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form',
     },
   },
   events: {
@@ -36,11 +51,18 @@ const FILECOIN_FOUNDATION_URLS = {
     sponsorshipsEmail: 'mailto:sponsorships@fil.org',
   },
   email: {
-    label: 'Media and collaboration inquiries',
+    label: 'Contact Us',
     href: 'mailto:hello@fil.org',
   },
   governance: {
-    docs: '#',
+    filPoll: {
+      label: 'Fil Poll',
+      href: 'https://poll.fil.org/',
+    },
+    powerVote: {
+      label: 'PowerVote',
+      href: 'https://vote.fil.org/',
+    },
     social: {
       github: {
         label: 'GitHub',
@@ -63,10 +85,10 @@ const FILECOIN_FOUNDATION_URLS = {
       href: 'mailto:grants@fil.org',
     },
     documents: {
+      builderNextStepGrants:
+        'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Builder%20Next%20Step%20Grants.md',
       openGrants:
         'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Open%20Grants%20README.md',
-      documentationGrants:
-        'https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md',
       requestsForProposals:
         'https://github.com/filecoin-project/devgrants?tab=readme-ov-file#requests-for-proposals-rfps',
     },
@@ -91,6 +113,7 @@ const FILECOIN_FOUNDATION_URLS = {
     email: 'mailto:impact@fil.org',
   },
   security: {
+    bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
     emails: {
       main: {
         label: 'Contact Security Team',
@@ -100,11 +123,10 @@ const FILECOIN_FOUNDATION_URLS = {
         href: 'mailto:audits@fil.org',
       },
     },
-    documents: {
-      filecoinCompatibility:
-        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
+    resources: {
       auditReports: 'https://spec.filecoin.io/#section-appendix.audit_reports',
-      bugBountyProgram: 'https://immunefi.com/bug-bounty/filecoin/',
+      filecoinEVMCompatibility:
+        'https://docs.filecoin.io/smart-contracts/filecoin-evm-runtime/difference-with-ethereum',
     },
   },
   social: {
@@ -123,6 +145,7 @@ const FILECOIN_FOUNDATION_URLS = {
     twitter: {
       label: 'Twitter',
       href: 'https://twitter.com/FilFoundation',
+      handle: '@FilFoundation',
     },
     youtube: {
       label: 'YouTube',
@@ -150,10 +173,11 @@ const FILECOIN_URLS = {
 }
 
 export {
+  BASE_DOMAIN,
   BASE_URL,
+  FIL_PLUS_URLS,
   FILECOIN_DOCS_URLS,
   FILECOIN_FOUNDATION_URLS,
   FILECOIN_URLS,
-  FIL_PLUS_URLS,
   ORGANIZATION_NAME,
 }

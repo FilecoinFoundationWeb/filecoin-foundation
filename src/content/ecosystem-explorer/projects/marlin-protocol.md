@@ -1,6 +1,5 @@
 ---
 title: Marlin Protocol
-slug: marlin-protocol
 created-on: 2024-03-20T14:08:38.399000Z
 updated-on: 2024-03-20T14:08:38.456000Z
 published-on: 2024-03-20T14:08:38.488000Z
@@ -11,26 +10,20 @@ description:
   bots, or backends for arbitrary computations using external APIs with baked-in auto-scaling
   and fault tolerance."
 category: tooling-productivity
-tags:
-  - ai-productivity-and-utilities
-  - infrastructure
 tech:
   - ipfs
 image:
-  url: /assets/images/marlin-logo-whitehigh-res.png
-  alt: Marlin Logo
-featured-content:
-website: www.marlin.org
+  src: /assets/images/marlin-logo-whitehigh-res.png
+website: https://www.marlin.org/
 repo: https://github.com/marlinprotocol
 twitter: https://twitter.com/marlinprotocol
-video-url:
 year-joined: 2023-12-01T15:08:38.544000Z
-news-update:
 subcategories:
   - infrastructure
 seo:
-  title: Marlin Protocol
   description: Marlin Protocol offers decentralized network infrastructure solutions.
+email: encrypted::U2FsdGVkX19cvqpd6PMdbZoCQpEBR4hKGVCU9Il9D2x9MouX0WKzhJFkcLSp2Rpd
+full-name: encrypted::U2FsdGVkX1+JB5xQJNnUo6/hwiOGRxm4g8Uzbe86sqw=
 ---
 
 Traditional web hosting relies on centralized servers, creating potential vulnerabilities due to single points of failure. The InterPlanetary File System (IPFS), a peer-to-peer network for storing and accessing websites, offers a decentralized alternative. However, IPFS utilizes lengthy content hashes for data identification, hindering user experience.

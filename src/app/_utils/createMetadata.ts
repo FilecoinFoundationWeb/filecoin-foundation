@@ -1,25 +1,61 @@
 import { type Metadata as NextMetadata } from 'next'
 
-import { type SeoMetadata } from '@/types/metadataTypes'
+import type { DynamicPathValues, PathValues } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { PathValues, DynamicPathValues } from '@/constants/paths'
+import { graphicsData } from '@/data/graphicsData'
+
+import {
+  type SeoMetadata,
+  SeoMetadataSchema,
+} from '@/schemas/SeoMetadataSchema'
 
 type CreateMetadataProps = {
   seo: SeoMetadata
   path: PathValues | DynamicPathValues
-  useAbsoluteTitle?: boolean
+  overrideDefaultTitle?: boolean
 }
 
 export function createMetadata({
   seo,
   path,
-  useAbsoluteTitle = false,
+  overrideDefaultTitle = false,
 }: CreateMetadataProps): NextMetadata {
-  const { title, description } = seo
+  const enrichedSEO = {
+    title: seo.title,
+    description: seo.description,
+    image: seo.image || graphicsData.home.data.src,
+    'open-graph': {
+      title: seo['open-graph']?.title || seo.title,
+      description: seo['open-graph']?.description || seo.description,
+      image:
+        seo['open-graph']?.image || seo.image || graphicsData.home.data.src,
+    },
+    twitter: {
+      card: seo.twitter?.card || 'summary',
+      site: seo.twitter?.site || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+      creator:
+        seo.twitter?.creator || FILECOIN_FOUNDATION_URLS.social.twitter.handle,
+    },
+  }
+
+  const parsedEnrichedSEO = SeoMetadataSchema.parse(enrichedSEO)
 
   return {
-    title: useAbsoluteTitle ? { absolute: title } : title,
-    description,
+    title: overrideDefaultTitle
+      ? { absolute: parsedEnrichedSEO.title }
+      : parsedEnrichedSEO.title,
+    description: parsedEnrichedSEO.description,
+    openGraph: {
+      title: parsedEnrichedSEO['open-graph']?.title,
+      description: parsedEnrichedSEO.description,
+      images: parsedEnrichedSEO['open-graph']?.image,
+    },
+    twitter: {
+      card: parsedEnrichedSEO.twitter?.card,
+      site: parsedEnrichedSEO.twitter?.site,
+      creator: parsedEnrichedSEO.twitter?.creator,
+    },
     alternates: {
       canonical: path,
     },

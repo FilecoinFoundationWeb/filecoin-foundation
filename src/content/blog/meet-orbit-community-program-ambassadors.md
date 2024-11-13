@@ -9,13 +9,9 @@ description:
   by Filecoin Foundation and Protocol Labs to amplify the voice of the Filecoin, IPFS,
   and libp2p communities.
 image:
-  url: /assets/images/0713-orbitcommunity.png
-  alt:
-slug: meet-orbit-community-program-ambassadors
-recommended-posts: []
+  src: /assets/images/0713-orbitcommunity.png
 category: ecosystem
 seo:
-  title: Meet Orbit Community Program Ambassadors
   description:
     Get to know the ambassadors of the Orbit Community Program. Learn about
     their roles and contributions.

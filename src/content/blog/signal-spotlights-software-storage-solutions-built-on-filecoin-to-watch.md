@@ -1,6 +1,5 @@
 ---
 title: "Signal Spotlights: Software Storage Solutions Built on Filecoin to Watch"
-slug: signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch
 created-on: 2024-06-24T11:12:00.000Z
 updated-on: 2024-06-24T11:12:00.000Z
 published-on: 2024-06-24T11:12:00.000Z
@@ -10,15 +9,8 @@ description: "There are dozens of ways to store data on Filecoin. From
   Filecoin ecosystem includes a range of tools designed to cater to different
   storage needs."
 image:
-  url: /assets/images/120624-spotlight.png
-  alt: >-
-    Logos for Lighthouse, Titan Storage, CIDgravity, GhostDrive, SteelDome, and
-    Decentrally
-recommended-posts: []
+  src: /assets/images/120624-spotlight.png
 seo:
-  twitter:
-    title: summary
-    card: summary
   description: Discover diverse storage options on Filecoin, from mobile apps to
     enterprise platforms, prioritizing privacy, decentralization, and seamless
     Web3 integration.
@@ -27,11 +19,11 @@ seo:
 
 There are dozens of ways to store data on Filecoin. From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes a range of tools designed to cater to different storage needs. Whether you prioritize perpetual archiving, data privacy, or seamless integration with Web3 applications, there's a Filecoin-based solution tailored to your requirements. This vibrant ecosystem empowers users to take control of their data, leveraging the power of decentralization, encryption, and robust storage optimization techniques.
 
-As a continuation of Filecoin Foundation’s recent outline of [key initiatives and community involvement to drive widespread decentralized storage adoption](https://fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024), let’s explore some of the growing software services making a big impact in the Filecoin ecosystem.
+As a continuation of Filecoin Foundation’s recent outline of [key initiatives and community involvement to drive widespread decentralized storage adoption](/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024), let’s explore some of the growing software services making a big impact in the Filecoin ecosystem.
 
 ## Lighthouse
 
-[Lighthouse](https://fil.org/ecosystem-projects/lighthouse/), a perpetual data storage solution built on the Filecoin network, lets users make storage deals once, and store their files perpetually. Lighthouse incorporates encryption features and access control mechanisms to enhance data security and privacy.
+[Lighthouse](/ecosystem-projects/lighthouse/), a perpetual data storage solution built on the Filecoin network, lets users make storage deals once, and store their files perpetually. Lighthouse incorporates encryption features and access control mechanisms to enhance data security and privacy.
 
 Lighthouse focuses on serving as a decentralized storage layer for Web3 projects and applications across various sectors like NFTs, AI, and DePIN. The platform aims to cater to the storage requirements of blockchain ecosystems by offering tailored services aligned with the principles of decentralization.
 
@@ -39,7 +31,7 @@ Lighthouse focuses on serving as a decentralized storage layer for Web3 projects
 
 ## CIDgravity
 
-[CIDgravity](https://fil.org/ecosystem-projects/cidgravity/) is a marketplace streamlining enterprise and ISV data onboarding onto Filecoin, providing a cost-effective and automated pathway using a zero-knowledge solution. With over 38 PiB of live data and 44 million transactions across 200 miners globally, CIDgravity is a premier data onboarding solution within the Filecoin ecosystem, driving the adoption of decentralized storage.
+[CIDgravity](/ecosystem-projects/cidgravity/) is a marketplace streamlining enterprise and ISV data onboarding onto Filecoin, providing a cost-effective and automated pathway using a zero-knowledge solution. With over 38 PiB of live data and 44 million transactions across 200 miners globally, CIDgravity is a premier data onboarding solution within the Filecoin ecosystem, driving the adoption of decentralized storage.
 
 CIDgravity focuses on deal matching and tracking while enabling direct data access between clients and storage providers in the Filecoin ecosystem. With 540 clients served, CID Gravity offers a comprehensive pricing and client management solution tailored for Filecoin storage providers.
 
@@ -49,7 +41,7 @@ CIDgravity is a great tool for enterprises and independent software vendors look
 
 ## GhostDrive
 
-[GhostDrive](https://ghostdrive.com/) is a data storage platform prioritizing [privacy and security](https://fil.org/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) through encryption, decentralization, and novel storage optimization techniques.
+[GhostDrive](https://ghostdrive.com/) is a data storage platform prioritizing [privacy and security](/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) through encryption, decentralization, and novel storage optimization techniques.
 
 Ghost Drive offers data redundancy and security through encryption and features like data tokenization, designed for efficient and secure digital asset management. Ghost Drive also provides storage optimization by employing a compression algorithm that reduces file sizes without compromising data integrity, allowing users to store more data within the same capacity. For example, 1TB of uncompressed data could occupy approximately 2TB of optimized storage.
 
@@ -79,6 +71,6 @@ Through [Datadrop](https://www.decentrally.cloud/datadrop/) and [Filecoin S3](ht
 
 Titan Network is a digital resource network that incentivizes matching community idle resources with global demand, making it easy for everyone to leverage the power of DePIN services and participate in the construction of the Internet of Value. Right now, Titan Network is building a DePIN platform for aggregating digital resources like compute, storage, and bandwidth.
 
-For the storage element of the platform, [Titan Network](https://storage.titannet.io/) is behind [Titan Storage](https://fil.org/ecosystem-projects/titan-storage/), a hot data storage solution integrated with the Filecoin network. Titan Storage enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics.
+For the storage element of the platform, [Titan Network](https://storage.titannet.io/) is behind [Titan Storage](/ecosystem-projects/titan-storage/), a hot data storage solution integrated with the Filecoin network. Titan Storage enables users to efficiently store data on Filecoin through an intuitive graphical interface, eliminating the necessity for an in-depth understanding of Filecoin’s mechanics.
 
 **What’s new with Titan?** The [Herschel Testnet](https://titannet.gitbook.io/titan-network-en/herschel-testnet/herschel-testnet) is Titan Network’s second testnet, offering enhanced rewards and gameplay, and more efficient solutions for data storage and processing.

@@ -9,13 +9,9 @@ description:
   FIP0056, a proposal aiming to address some of the broader challenges
   facing the Filecoin network, is in its last call until Friday, March 24.
 image:
-  url: /assets/images/0621-2022-01.png
-  alt:
-slug: fip0056-in-last-call-until-03-24-introducing-a-sector-duration-multiplier-and-increasing-sector-duration-times
-recommended-posts: []
+  src: /assets/images/0621-2022-01.png
 category: ecosystem
 seo:
-  title: "FIP0056: Introducing Sector Duration Multiplier"
   description:
     Learn about FIP0056, which introduces a sector duration multiplier
     and increases sector duration times.

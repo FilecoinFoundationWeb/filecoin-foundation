@@ -1,21 +1,14 @@
 ---
 title: "Fresh From FF: Early July, 2024"
-slug: fresh-from-ff-early-july-2024
 created-on: 2024-07-01T13:00:00.000Z
 updated-on: 2024-07-01T13:00:00.000Z
 published-on: 2024-07-01T13:00:00.000Z
 category: news
-description: Check out the latest updates about what the Filecoin Foundation
+description: Check out the latest updates about what Filecoin Foundation
   team has been up to.
 image:
-  url: /assets/images/0215-ff-9-.jpg
-  alt:
-recommended-posts: []
+  src: /assets/images/0215-ff-16-.webp
 seo:
-  twitter:
-    title: summary
-    card: summary
-  title: "Fresh From FF: Early July, 2024"
   description: "Discover FIL Brussels events, including sessions with top
     innovators, software storage solutions, new grants, and the Data Economy
     Day. Explore decentralized AI and more. "
@@ -25,7 +18,7 @@ seo:
 
 🇧🇪 The FIL Brussels schedule is live! Explore decentralized AI, DePIN, and compute with more than a dozen innovators speaking across three days, including Akash Network CEO Greg Osuri, Theoriq Head of Marketing Anjali George, Bagel Network CEO Bidhan Roy, Futurist Michael Clark, Lighthouse Founder Nandit Mehra, Filecoin Foundation Founding Officer Clara Tsao, FF Head of Community Porter Stowell, and more! [See the full schedule](https://www.fil-brussels.io/).
 
-💾 Software storage solutions to watch. There are dozens of ways to store data on Filecoin. From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes various tools designed to cater to different storage needs. [Read Filecoin Foundation's deep dive](https://fil.org/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch) into the growing list of software services making a big impact in the Filecoin ecosystem.
+💾 Software storage solutions to watch. There are dozens of ways to store data on Filecoin. From user-friendly mobile apps to enterprise-grade data onboarding platforms, the Filecoin ecosystem includes various tools designed to cater to different storage needs. [Read Filecoin Foundation's deep dive](/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch) into the growing list of software services making a big impact in the Filecoin ecosystem.
 
 📣 Announcing the data onboarding RFP. The program supports teams building paid products focused on embedding Filecoin as core infrastructure in the broader Web3 community. Applications can range from use cases making Filecoin the default storage layer for compute, to helping scale the archiving requirements for DA layers and L1s, to enabling Filecoin to be the home for decentralized social networks. [Learn more](https://github.com/filecoin-project/devgrants/blob/master/Archive/Data-Onboarding.md).
 

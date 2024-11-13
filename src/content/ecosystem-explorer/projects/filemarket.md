@@ -1,6 +1,5 @@
 ---
 title: "FileMarket"
-slug: "filemarket"
 created-on: 2024-01-18T16:06:37.736000Z
 updated-on: 2024-01-18T16:06:37.771000Z
 published-on: 2024-01-18T16:06:37.786000Z
@@ -8,30 +7,22 @@ description:
   "Decentralized P2P file-sharing protocol & platform for storing, transferring,
   and trading digital goods."
 category: finance
-tags:
-  - data-curation-monetization
-  - photo-video
-  - depin
-  - data-storage-management
-  - public-data
 tech:
   - filecoin
   - ipfs
 image:
-  url: /assets/images/filemarket_logo_white.png
-  alt: FileMarket Logo
+  src: /assets/images/filemarket_logo_white.png
 website: "https://filemarket.xyz"
-featured-content:
 repo: "https://github.com/Filemarket-xyz/file-market"
 twitter: "https://twitter.com/filemarket_xyz/"
 video-url: "https://www.youtube.com/embed/MSOpSJnoFvQ"
 year-joined: 2022-09-01T15:06:37.800000Z
-news-update:
 subcategories:
   - dapp
 seo:
-  title: FileMarket
   description: FileMarket offers decentralized marketplace solutions for digital assets.
+email: encrypted::U2FsdGVkX1/SlT9vk4zMX23EQ7brjnGv0cyR8SWlhmgQm9y91u7/IwraElAE9IBJ
+full-name: encrypted::U2FsdGVkX18x2Y7KZCSH6M7nR4nFtme+mVXfseQbpzc=
 ---
 
 FileMarket assists users of EVM-compatible blockchain wallets engaged in digital content creation to store it directly in the wallet without the risk of unauthorized access, with the ability to monetize through selling access on a public storefront.

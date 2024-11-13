@@ -1,6 +1,27 @@
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import {
+  getEventsCategorySettings,
+  getCategoryLabel,
+} from '@/utils/categoryUtils'
+import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+import { getEventMetaData } from '@/utils/getMetaData'
+import { getSortOptions } from '@/utils/getSortOptions'
+import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
+
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
@@ -10,34 +31,20 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
+import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoResultsMessage } from '@/components/NoResultsMessage'
+import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
-import { StaticImage } from '@/components/StaticImage'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { NextServerSearchParams } from '@/types/searchParams'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings } from '@/utils/categoryUtils'
-import { createMetadata } from '@/utils/createMetadata'
-import { getEventsData } from '@/utils/getEventData'
-import { getEventMetaData } from '@/utils/getMetaData'
-
-import { attributes } from '@/content/pages/events.md'
-
-import { PATHS } from '@/constants/paths'
-import { DEFAULT_SORT_OPTION } from '@/constants/sortConstants'
-import { graphicsData } from '@/data/graphicsData'
-
+import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getInvolvementLabel } from './utils/getInvolvementLabel'
+import { getEventData, getEventsData } from './utils/getEventData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -49,14 +56,25 @@ type Props = {
 }
 
 const events = getEventsData()
-const { categorySettings, validCategoryOptions } = getCategorySettings('events')
-const { featured_entry: featuredEventSlug, seo } = attributes
-const featuredEvent = events.find((event) => event.slug === featuredEventSlug)
+const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
+
+const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
+  path: PATHS.EVENTS,
+  zodParser: FeaturedPageFrontmatterSchema.parse,
+})
+
+const sortOptions = getSortOptions(eventsSortConfigs)
+
+const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
+const featuredEvent = getEventData(featuredEventSlug)
 
 export const metadata = createMetadata({
-  seo,
+  seo: {
+    ...seo,
+    image: graphicsData.events1.data.src,
+  },
   path: PATHS.EVENTS.path,
-  useAbsoluteTitle: true,
+  overrideDefaultTitle: true,
 })
 
 export default function Events({ searchParams }: Props) {
@@ -67,22 +85,20 @@ export default function Events({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: events,
-
     searchBy: ['title', 'location'],
   })
 
-  const { sortQuery, sortedResults } = useSort({
+  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
     searchParams,
     entries: searchResults,
-    sortBy: 'startDate',
-    sortByDefault: DEFAULT_SORT_OPTION,
+    configs: eventsSortConfigs,
+    defaultsTo: 'all-events',
   })
 
   const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
-    categorizeBy: 'involvement',
-    validCategoryOptions: validCategoryOptions,
+    validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -99,50 +115,63 @@ export default function Events({ searchParams }: Props) {
         description={featuredEvent.description}
         metaData={getEventMetaData(featuredEvent)}
         image={{
-          ...featuredEvent.image,
-          src: featuredEvent.image.url,
-          fallback: graphicsData.events1,
+          ...(featuredEvent.image || graphicsData.imageFallback.data),
+          alt: '',
+          objectFit: 'cover',
         }}
         cta={{
-          href: featuredEvent.externalLink
-            ? featuredEvent.externalLink
-            : `${PATHS.EVENTS.path}/${featuredEventSlug}`,
+          href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
           text: 'View Event Details',
         }}
       />
-
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={<ResultsAndReset results={categorizedResults.length} />}
+            results={
+              <CategoryResetButton
+                counts={categoryCounts}
+                isSelected={hasNoFiltersApplied(searchParams)}
+              />
+            }
             category={
               <Category
                 query={categoryQuery}
-                settings={categorySettings}
+                options={categoryOptions}
                 counts={categoryCounts}
               />
             }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} id="web-search" />}
-              sort={<Sort query={sortQuery} />}
+              search={<Search query={searchQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultQuery={defaultSortQuery}
+                />
+              }
             />
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} id="mobile-search" />}
-              sort={<Sort query={sortQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
+              search={<Search query={searchQuery} />}
+              sort={
+                <Sort
+                  query={sortQuery}
+                  options={sortOptions}
+                  defaultQuery={defaultSortQuery}
+                />
+              }
               category={
                 <Category
                   query={categoryQuery}
-                  settings={categorySettings}
+                  options={categoryOptions}
                   counts={categoryCounts}
                 />
               }
             />
             <FilterContainer.ContentWrapper>
               {categorizedResults.length === 0 ? (
-                <NoResultsMessage />
+                <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">
@@ -151,41 +180,46 @@ export default function Events({ searchParams }: Props) {
                         slug,
                         title,
                         image,
-                        involvement,
+                        category,
                         description,
                         externalLink,
                       } = event
 
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
-                        !description && externalLink
+                        !description && externalLink?.url
+
+                      const tagLabel = getCategoryLabel({
+                        collectionName: 'event_entries',
+                        category,
+                      })
 
                       return (
                         <Card
                           key={slug}
                           title={title}
-                          tag={getInvolvementLabel(involvement)}
                           metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
-                          cta={{
-                            href:
-                              shouldLinkToExternalEventsPage ||
-                              `${PATHS.EVENTS.path}/${slug}`,
-                            text: 'View Event Details',
-                            icon: MagnifyingGlass,
-                          }}
+                          tagLabel={tagLabel}
                           image={{
-                            src: image.url,
-                            alt: image.alt,
+                            ...(image || graphicsData.imageFallback.data),
+                            alt: '',
                             priority: isFirstTwoImages,
-                            fallback: graphicsData.imageFallback,
+                            objectFit: 'cover',
                             sizes: buildImageSizeProp({
                               startSize: '100vw',
                               sm: '350px',
                               md: '450px',
                               lg: '360px',
                             }),
+                          }}
+                          cta={{
+                            href:
+                              shouldLinkToExternalEventsPage ||
+                              `${PATHS.EVENTS.path}/${slug}`,
+                            text: 'View Event Details',
+                            icon: MagnifyingGlass,
                           }}
                         />
                       )
@@ -210,8 +244,9 @@ export default function Events({ searchParams }: Props) {
       >
         <CardGrid cols="mdTwo" as="div">
           <div className="row-span-2 h-96 md:h-auto">
-            <StaticImage
-              {...graphicsData.events2}
+            <Image
+              src={graphicsData.events2.data}
+              alt={graphicsData.events2.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />
@@ -227,8 +262,9 @@ export default function Events({ searchParams }: Props) {
             </div>
           ))}
           <div className="h-48 md:h-56">
-            <StaticImage
-              {...graphicsData.events3}
+            <Image
+              src={graphicsData.events3.data}
+              alt={graphicsData.events3.alt}
               className="h-full rounded-lg object-cover"
               sizes={buildImageSizeProp({ startSize: '100vw', md: '480px' })}
             />

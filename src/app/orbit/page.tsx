@@ -1,6 +1,17 @@
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
+import { graphicsData } from '@/data/graphicsData'
+
+import { createMetadata } from '@/utils/createMetadata'
+import { getFrontmatter } from '@/utils/getFrontmatter'
+
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
-import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
@@ -12,16 +23,9 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TextLink } from '@/components/TextLink'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import { createMetadata } from '@/utils/createMetadata'
-
-import { attributes } from '@/content/pages/orbit.md'
-
-import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { graphicsData } from '@/data/graphicsData'
-
+import { OrbitEventsSection } from './components/EventsSection'
 import { ambassadorsData } from './data/ambassadorsData'
 import { exploreOrbitData } from './data/exploreOrbitData'
 import { programFeaturesAndPerksData } from './data/programFeaturesAndPerksData'
@@ -29,15 +33,25 @@ import { programGoalsData } from './data/programGoalsData'
 import { statisticsData } from './data/statisticsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = attributes
-
-export const metadata = createMetadata({
-  seo,
-  path: PATHS.ORBIT.path,
-  useAbsoluteTitle: true,
+const { header, seo } = getFrontmatter({
+  path: PATHS.ORBIT,
+  zodParser: BaseFrontmatterSchema.parse,
 })
 
-export default function Orbit() {
+export const metadata = createMetadata({
+  seo: {
+    ...seo,
+    image: graphicsData.orbit.data.src,
+  },
+  path: PATHS.ORBIT.path,
+  overrideDefaultTitle: true,
+})
+
+type Props = {
+  searchParams: NextServerSearchParams
+}
+
+export default function Orbit({ searchParams }: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -87,11 +101,7 @@ export default function Orbit() {
         title="Global Orbit Events"
         description="All Orbit events are free to attend! Come meet the members of your Filecoin community in our upcoming events."
       >
-        <div className="max-w-readable">
-          <Button href={FILECOIN_FOUNDATION_URLS.orbit.eventsCalendar}>
-            Check Upcoming Events
-          </Button>
-        </div>
+        <OrbitEventsSection searchParams={searchParams} />
       </PageSection>
 
       <PageSection
@@ -170,9 +180,9 @@ export default function Orbit() {
             <p>
               If you’re looking for the Filecoin Orbit 2021 virtual conference
               celebrating the first year of Filecoin Mainnet, the{' '}
-              <TextLink href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
+              <ExternalTextLink href="https://www.youtube.com/playlist?list=PL_0VrY55uV1_HE_bE-frkYUPGybjYHbNz">
                 event recordings are on YouTube
-              </TextLink>
+              </ExternalTextLink>
               .
             </p>
           </div>
@@ -186,13 +196,13 @@ export default function Orbit() {
               </li>
               <li>
                 Complete the{' '}
-                <TextLink
+                <ExternalTextLink
                   href={
                     FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm
                   }
                 >
                   application form
-                </TextLink>
+                </ExternalTextLink>
                 . After submitting, your application will undergo review. Keep
                 an eye on your email for updates on the status of your
                 application and next steps. This may take up to two weeks.

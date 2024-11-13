@@ -5,13 +5,9 @@ updated-on: 2023-04-21T07:27:30.951000Z
 published-on: 2023-04-21T07:33:56.200000Z
 description: NonEntropy is on a mission to protect the digital future.
 image:
-  url: /assets/images/64423ae2ef619d69dab60e9f_0-qyjcuk2pe_bhv2jh.png
-  alt:
-slug: filecoin-storage-provider-spotlight-nonentropy
-recommended-posts: []
+  src: /assets/images/64423ae2ef619d69dab60e9f_0-qyjcuk2pe_bhv2jh.png
 category: ecosystem
 seo:
-  title: "Filecoin Storage Provider Spotlight: Nonentropy"
   description:
     Discover Nonentropy's role and impact as a Filecoin storage provider
     in this spotlight feature.
@@ -29,7 +25,7 @@ Even before the global pandemic, the team at NonEntropy understood that rapid ad
 
 NonEntropy’s business model focuses on keeping the “data highway” clear of obstruction so that the world can travel freely with their data. For the last three and a half years, NonEntropy has been working on information collaboration with Protocol Labs. Today, NonEntropy manages and operates the world’s largest Filecoin storage equipment in Asia. The company has more than 160 PiB of storage across its businesses and recently added 10 PiB in a one-month period. This aggressive growth is largely attributed to the promising opportunity of decentralized web services.
 
-Additionally, the company’s [IPFS Gateway](https://nonentropy.jp/about-services/#ipfs-gateway) and [Nonepool](https://nonentropy.jp/about-services/#nonepool) services utilize the Filecoin Network to provide a combination of data storage and data management consulting to its customers, mainly companies, museums, schools, and local governments interested in managing and protecting large amounts of data.
+Additionally, the company’s IPFS Gateway (link previously available but now unavailable) and Nonepool services utilize the Filecoin Network (link previously available but now unavailable) to provide a combination of data storage and data management consulting to its customers, mainly companies, museums, schools, and local governments interested in managing and protecting large amounts of data.
 
 NonEntropy works with many large brands around the world. It is the official development partner of American company [Matterport](https://matterport.com/), a 3D data platform used to securely store and manage 3D digital twins of properties, which plans to scan buildings or cities around the world and save 3D data into Filecoin storage. Most recently it scanned a large Tokyo nightclub and saved it to the Filecoin network.
 
