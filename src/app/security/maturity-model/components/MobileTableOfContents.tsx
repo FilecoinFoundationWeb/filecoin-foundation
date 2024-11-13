@@ -1,12 +1,10 @@
 'use client'
 
-import {
-  Listbox as HeadlessUIListbox,
-  ListboxOptions as HeadlessUIListboxOptions,
-} from '@headlessui/react'
+import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
+import { ListboxOptions } from '@/components/ListboxOptions'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
@@ -28,16 +26,11 @@ export function MobileTableOfContents() {
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
       <HeadlessUIListbox value={selectedOption.id} onChange={handleChange}>
         <ListboxButton text={selectedOption.name} />
-
-        <HeadlessUIListboxOptions
-          as="ul"
-          anchor={{ to: 'bottom', gap: 8 }}
-          className="w-[var(--button-width)] rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
-        >
+        <ListboxOptions position="bottom" inheritWidth="button">
           {options.map((option) => (
             <ListboxOption key={option.id} option={option} />
           ))}
-        </HeadlessUIListboxOptions>
+        </ListboxOptions>
       </HeadlessUIListbox>
     </nav>
   )
