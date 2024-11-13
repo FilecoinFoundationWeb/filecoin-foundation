@@ -7,8 +7,6 @@ type ListboxOptionsProps = {
   inheritWidth?: 'button'
 }
 
-//! review gaps in figma
-
 export function ListboxOptions({
   children,
   position = 'left',
