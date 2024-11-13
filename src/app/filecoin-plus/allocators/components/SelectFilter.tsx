@@ -42,10 +42,7 @@ export function SelectFilter({
     allOptions.find((option) => option.id === currentFilterId) || defaultOption
 
   return (
-    <HeadlessUIListbox
-      value={currentFilterId ?? DEFAULT_FILTER_ID}
-      onChange={handleOptionChange}
-    >
+    <HeadlessUIListbox value={selectedOption} onChange={setColumnFilter}>
       <ListboxButton text={selectedOption.name} />
 
       <HeadlessUIListboxOptions
@@ -60,10 +57,10 @@ export function SelectFilter({
     </HeadlessUIListbox>
   )
 
-  function handleOptionChange(selectedOptionId: FilterOption['id']) {
-    selectedOptionId === DEFAULT_FILTER_ID
+  function setColumnFilter(newOption: FilterOption) {
+    newOption.id === DEFAULT_FILTER_ID
       ? resetFilter()
-      : column.setFilterValue(selectedOptionId)
+      : column.setFilterValue(newOption.id)
   }
 
   function resetFilter() {

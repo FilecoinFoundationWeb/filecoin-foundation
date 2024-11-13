@@ -11,7 +11,7 @@ import { ListboxOptions } from '@/components/ListboxOptions'
 
 type SortListboxProps = {
   sortId: ValidSortKey
-  onChange: (selectedOption: ValidSortKey) => void
+  onChange: (selectedOption: SortOption) => void
   options: ReadonlyArray<SortOption>
 }
 
@@ -20,7 +20,7 @@ export function SortListbox({ sortId, onChange, options }: SortListboxProps) {
     options.find((option) => option.id === sortId) || options[0]
 
   return (
-    <Listbox value={sortId} onChange={onChange}>
+    <Listbox value={selectedOption} onChange={onChange}>
       <ListboxButton leadingIcon={ArrowsDownUp} text={selectedOption.name} />
 
       <ListboxOptions position="right">

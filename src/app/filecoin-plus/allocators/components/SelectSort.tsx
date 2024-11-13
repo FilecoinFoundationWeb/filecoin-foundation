@@ -34,7 +34,7 @@ export function SelectSort({
     options.find((option) => option.id === currentSortId) || defaultOption
 
   return (
-    <HeadlessUIListbox value={selectedOption.id} onChange={handleSortChange}>
+    <HeadlessUIListbox value={selectedOption} onChange={setColumnSort}>
       <ListboxButton
         leadingIcon={ArrowsDownUp}
         text={selectedOption.name}
@@ -52,8 +52,8 @@ export function SelectSort({
     </HeadlessUIListbox>
   )
 
-  function handleSortChange(selectedOptionId: TableSortOption['id']) {
-    const isSortDesc = selectedOptionId === 'desc'
+  function setColumnSort(newOption: TableSortOption) {
+    const isSortDesc = newOption.id === 'desc'
     column.toggleSorting(isSortDesc)
   }
 }

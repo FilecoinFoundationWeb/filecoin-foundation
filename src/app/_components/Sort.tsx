@@ -29,9 +29,9 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
     }
   }, [query, defaultQuery])
 
-  function handleSortChange(newValue: ValidSortKey) {
-    setSortId(newValue)
-    updateSearchParams({ [SORT_KEY]: newValue })
+  function handleSortChange(newValue: SortOption) {
+    setSortId(newValue.id)
+    updateSearchParams({ [SORT_KEY]: newValue.id })
   }
 
   return (

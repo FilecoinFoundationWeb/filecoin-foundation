@@ -1,5 +1,7 @@
 'use client'
 
+import type { ElementType } from 'react'
+
 import { clsx } from 'clsx'
 
 import {
@@ -18,12 +20,12 @@ type CategorySidebarProps = {
   selected: CategoryId
   options: Array<CategoryOption>
   counts?: CategoryCounts
-  onChange: (selected: CategoryId) => void
+  onChange: (selected: CategoryOption) => void
 }
 
 type CategoryContainerProps = {
   children: React.ReactNode
-  as?: keyof JSX.IntrinsicElements
+  as?: ElementType
 }
 
 type CategoryItemProps = {
@@ -47,7 +49,7 @@ export function CategorySidebar({
           name={option.name}
           isSelected={selected === option.id}
           count={counts?.[option.id]}
-          handleClick={() => onChange(option.id)}
+          handleClick={() => onChange(option)}
         />
       ))}
     </CategorySidebar.Container>

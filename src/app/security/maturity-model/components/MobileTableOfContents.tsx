@@ -6,7 +6,7 @@ import {
 } from '@headlessui/react'
 
 import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
+import { ListboxOption, type OptionType } from '@/components/ListboxOption'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
@@ -26,7 +26,10 @@ export function MobileTableOfContents() {
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
-      <HeadlessUIListbox value={selectedOption.id} onChange={handleChange}>
+      <HeadlessUIListbox
+        value={selectedOption}
+        onChange={scrollToActiveSection}
+      >
         <ListboxButton text={selectedOption.name} />
 
         <HeadlessUIListboxOptions
@@ -42,10 +45,10 @@ export function MobileTableOfContents() {
     </nav>
   )
 
-  function handleChange(slug: string) {
-    updateHash(slug)
+  function scrollToActiveSection(option: OptionType) {
+    updateHash(option.id)
 
-    const sectionHash = getHashFromSlug(slug)
+    const sectionHash = getHashFromSlug(option.id)
     scrollToSection(sectionHash)
   }
 }

@@ -2,11 +2,7 @@
 
 import { Listbox } from '@headlessui/react'
 
-import {
-  type CategoryCounts,
-  type CategoryId,
-  type CategoryOption,
-} from '@/types/categoryTypes'
+import { type CategoryCounts, type CategoryOption } from '@/types/categoryTypes'
 
 import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
@@ -17,16 +13,13 @@ import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 type CategoryListboxProps = {
-  selected: CategoryId | undefined
+  selected?: CategoryOption
   options: Array<CategoryOption>
   counts?: CategoryCounts
-  onChange: (selected: CategoryId) => void
+  onChange: (selected: CategoryOption) => void
 }
 
-type OptionWithCategoryCount = {
-  options: Array<CategoryOption>
-  counts?: CategoryCounts
-}
+type OptionWithCategoryCount = Pick<CategoryListboxProps, 'options' | 'counts'>
 
 export function CategoryListbox({
   selected,
@@ -37,19 +30,17 @@ export function CategoryListbox({
   const totalCategoryCount = getTotalCategoryCount(counts)
   const optionsWithCounts = getOptionsWithCounts({ options, counts })
 
+  const allOption = {
+    id: DEFAULT_CATEGORY,
+    name: DEFAULT_CATEGORY,
+    count: totalCategoryCount?.All || 0,
+  }
+
   return (
-    <Listbox value={selected} onChange={onChange}>
-      <ListboxButton text="Category" />
+    <Listbox value={selected || allOption} onChange={onChange}>
+      <ListboxButton text={selected?.name || 'Category'} />
       <ListboxOptions>
-        {totalCategoryCount && (
-          <ListboxOption
-            option={{
-              id: DEFAULT_CATEGORY,
-              name: DEFAULT_CATEGORY,
-              count: totalCategoryCount.All,
-            }}
-          />
-        )}
+        {totalCategoryCount && <ListboxOption option={allOption} />}
         {optionsWithCounts.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}
