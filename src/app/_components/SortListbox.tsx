@@ -20,7 +20,11 @@ export function SortListbox({ selected, onChange, options }: SortListboxProps) {
 
   return (
     <Listbox value={selectedOption} onChange={onChange}>
-      <ListboxButton leadingIcon={ArrowsDownUp} text={selectedOption.name} />
+      <ListboxButton
+        leadingIcon={ArrowsDownUp}
+        text={selectedOption.name}
+        compactBelow="md"
+      />
 
       <ListboxOptions position="right">
         {options.map((option) => (
