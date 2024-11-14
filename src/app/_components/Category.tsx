@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
 
@@ -20,16 +20,18 @@ type CategoryProps = {
 }
 
 export function Category({ query, options, counts }: CategoryProps) {
-  const [selectedCategory, setSelectedCategory] = useState<CategoryId>(
+  const [categoryId, setCategoryId] = useState<CategoryId>(
     query || DEFAULT_CATEGORY,
   )
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
+
+  const selectedCategory = options.find((option) => option.id === categoryId)
 
   return (
     <>
       <div className="hidden lg:block">
         <CategorySidebar
-          selected={selectedCategory}
+          selectedId={categoryId}
           options={options}
           counts={counts}
           onChange={updateCategoryAndParams}
@@ -37,7 +39,7 @@ export function Category({ query, options, counts }: CategoryProps) {
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
-          selected={options.find((option) => option.id === selectedCategory)}
+          selected={selectedCategory}
           options={options}
           counts={counts}
           onChange={updateCategoryAndParams}
@@ -47,7 +49,7 @@ export function Category({ query, options, counts }: CategoryProps) {
   )
 
   function updateCategoryAndParams(category: CategoryOption) {
-    setSelectedCategory(category.id)
+    setCategoryId(category.id)
     updateParams(category.id)
   }
 

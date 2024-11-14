@@ -43,7 +43,7 @@ export function SelectSort({
       <HeadlessUIListboxOptions
         as="ul"
         anchor={{ to: 'bottom end', gap: 12 }}
-        className="min-w-60 rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
+        className="rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
       >
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />

@@ -1,6 +1,7 @@
 'use client'
 
 import { Listbox } from '@headlessui/react'
+import { FunnelSimple } from '@phosphor-icons/react'
 
 import { type CategoryCounts, type CategoryOption } from '@/types/categoryTypes'
 
@@ -13,7 +14,7 @@ import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 type CategoryListboxProps = {
-  selected?: CategoryOption
+  selected: CategoryOption | undefined
   options: Array<CategoryOption>
   counts?: CategoryCounts
   onChange: (selected: CategoryOption) => void
@@ -30,17 +31,20 @@ export function CategoryListbox({
   const totalCategoryCount = getTotalCategoryCount(counts)
   const optionsWithCounts = getOptionsWithCounts({ options, counts })
 
-  const allOption = {
+  const defaultOption = {
     id: DEFAULT_CATEGORY,
     name: DEFAULT_CATEGORY,
     count: totalCategoryCount?.All || 0,
   }
 
   return (
-    <Listbox value={selected || allOption} onChange={onChange}>
-      <ListboxButton text={selected?.name || 'Category'} />
+    <Listbox value={selected || defaultOption} onChange={onChange}>
+      <ListboxButton
+        text={selected?.name || 'Category'}
+        leadingIcon={FunnelSimple}
+      />
       <ListboxOptions>
-        {totalCategoryCount && <ListboxOption option={allOption} />}
+        {totalCategoryCount && <ListboxOption option={defaultOption} />}
         {optionsWithCounts.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}
