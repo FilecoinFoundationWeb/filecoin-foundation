@@ -4,7 +4,9 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 
 import { createCategoryTests } from '@/support/categoryUtils'
 
-const { validCategoryIds } = getCategorySettings('blog_posts')
+const { validIds: validCategoryIds } = getCategorySettings({
+  collectionName: 'blog_posts',
+})
 
 createCategoryTests({
   pathConfig: PATHS.BLOG,

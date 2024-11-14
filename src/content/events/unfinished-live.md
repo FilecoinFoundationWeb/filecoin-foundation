@@ -5,6 +5,7 @@ updated-on: 2023-05-03T08:05:56.433Z
 published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
 location: New York, NY
+region: north-america
 external-link:
   url: https://live.unfinished.com/
 start-date: 2022-09-21T00:00:00.000Z

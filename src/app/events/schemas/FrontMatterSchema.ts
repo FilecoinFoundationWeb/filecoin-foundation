@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { getEventsCategorySettings } from '@/utils/categoryUtils'
+import { getFieldSettings } from '@/utils/cmsFieldUtils'
 import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
@@ -9,15 +9,24 @@ import { ScheduleSchema } from './ScheduleSchema'
 import { SpeakersSchema } from './SpeakerSchema'
 import { SponsorsSchema } from './SponsorSchema'
 
-const { validCategoryIds } = getEventsCategorySettings()
+const { validIds: validCategoryIds } = getFieldSettings({
+  collectionName: 'event_entries',
+  fieldName: 'category',
+})
+const { validIds: validRegionIds } = getFieldSettings({
+  collectionName: 'event_entries',
+  fieldName: 'region',
+})
 
 const CategorySchema = createEnumSchema(validCategoryIds)
+const RegionSchema = createEnumSchema(validRegionIds)
 
 export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
   description: z.string().optional(),
   location: z.string(),
+  region: RegionSchema.optional(),
   'external-link': z
     .object({
       url: z.string().url(),

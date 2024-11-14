@@ -4,7 +4,9 @@ import { getCategorySettings } from '@/utils/categoryUtils'
 
 import { createCategoryTests } from '@/support/categoryUtils'
 
-const { validCategoryIds } = getCategorySettings('event_entries')
+const { validIds: validCategoryIds } = getCategorySettings({
+  collectionName: 'event_entries',
+})
 
 createCategoryTests({
   pathConfig: PATHS.EVENTS,

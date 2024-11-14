@@ -59,7 +59,8 @@ const posts = getBlogPostsData()
 
 const sortOptions = getSortOptions(blogSortConfigs)
 
-const { categoryOptions, validCategoryIds } = getCategorySettings('blog_posts')
+const { options: categoryOptions, validIds: validCategoryIds } =
+  getCategorySettings({ collectionName: 'blog_posts' })
 
 const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
 const featuredPost = getBlogPostData(featuredPostSlug)

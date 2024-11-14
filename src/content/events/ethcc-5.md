@@ -5,6 +5,7 @@ updated-on: 2023-05-03T08:06:05.771Z
 published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
 location: Paris, France
+region: europe
 external-link:
   url: https://ethcc.io/
 start-date: 2022-07-19T00:00:00.000Z

@@ -15,6 +15,7 @@ description: Come to DeStor HK — a half day event created specifically
   improved utility and efficiency. DeStor HK is a must-attend event as you
   look to stay ahead of the curve and drive your business forward.
 location: Hong Kong, China
+region: apac-asia
 start-date: 2023-04-15T15:30:53.222Z
 image:
   src: /assets/images/destore-hk-2023.png

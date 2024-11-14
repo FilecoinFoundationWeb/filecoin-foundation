@@ -5,7 +5,9 @@ import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
-const { validCategoryIds } = getCategorySettings('blog_posts')
+const { validIds: validCategoryIds } = getCategorySettings({
+  collectionName: 'blog_posts',
+})
 
 const CategorySchema = createEnumSchema(validCategoryIds)
 
