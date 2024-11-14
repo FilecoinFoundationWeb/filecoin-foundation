@@ -9,7 +9,7 @@ import type { Column } from '@tanstack/react-table'
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 type FilterOption = {
   id: string
@@ -17,7 +17,7 @@ type FilterOption = {
 }
 
 type SelectFilterProps = {
-  column: Column<Allocator>
+  column: Column<AllocatorWithDatacap>
   options: ReadonlyArray<FilterOption>
   defaultOptionLabel: string
 }

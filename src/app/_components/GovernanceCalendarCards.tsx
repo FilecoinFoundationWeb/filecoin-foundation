@@ -6,7 +6,7 @@ import { Clock, CalendarPlus } from '@phosphor-icons/react/dist/ssr'
 import useSWR from 'swr'
 import { z } from 'zod'
 
-import { GOOGLE_CALENDAR_API_URL } from '@/constants/apiUrls'
+import { API_URLS } from '@/constants/apiUrls'
 
 import { formatDateComponentsFromISO } from '@/utils/dateUtils'
 
@@ -73,7 +73,7 @@ export function GovernanceCalendarCards() {
   const [currentDate] = useState(new Date())
   const timeMin = encodeURIComponent(currentDate.toISOString())
 
-  const url = `${GOOGLE_CALENDAR_API_URL}${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?maxResults=6&singleEvents=true&timeMin=${timeMin}&key=${process.env.NEXT_PUBLIC_CALENDAR_API_KEY}`
+  const url = `${API_URLS.googleCalendar}${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?maxResults=6&singleEvents=true&timeMin=${timeMin}&key=${process.env.NEXT_PUBLIC_CALENDAR_API_KEY}`
 
   const { data: events, error } = useSWR(url, getEvents)
 

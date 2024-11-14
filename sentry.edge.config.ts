@@ -5,12 +5,8 @@
 
 import * as Sentry from '@sentry/nextjs'
 
-if (process.env.NEXT_PUBLIC_DISABLE_SENTRY !== 'true') {
-  Sentry.init({
-    dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-    tracesSampleRate: 0.05,
-    debug: false,
-  })
-} else {
-  console.log('Sentry is disabled on the edge.')
-}
+Sentry.init({
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+  tracesSampleRate: 0.05,
+  debug: false,
+})

@@ -3,9 +3,10 @@ import { createColumnHelper } from '@tanstack/react-table'
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import { formatDatacap } from '../utils/formatDatacap'
 
-const columnHelper = createColumnHelper<Allocator>()
+const columnHelper = createColumnHelper<AllocatorWithDatacap>()
 
 export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
@@ -27,6 +28,14 @@ export const allocatorsTableColumnsData = [
     header: 'Region',
     cell: (info) => info.getValue(),
     filterFn: 'includesString',
+  }),
+  columnHelper.accessor('availableDatacap', {
+    header: 'Remaining Datacap',
+    cell: (info) => formatDatacap(info.getValue()),
+  }),
+  columnHelper.accessor('usedDatacap', {
+    header: 'Used Datacap',
+    cell: (info) => formatDatacap(info.getValue()),
   }),
   columnHelper.accessor('application.required_replicas', {
     header: () => (

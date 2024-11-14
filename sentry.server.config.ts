@@ -4,13 +4,21 @@
 
 import * as Sentry from '@sentry/nextjs'
 
-if (process.env.NEXT_PUBLIC_DISABLE_SENTRY !== 'true') {
-  Sentry.init({
-    dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-    tracesSampleRate: 0.05,
-    debug: false,
-    environment: process.env.NODE_ENV || 'production',
-  })
+const dsn = process.env.NEXT_PUBLIC_SENTRY_DSN
+const environment = process.env.NODE_ENV
+
+// If dsn is undefined, Sentry SDK will be disabled
+Sentry.init({
+  dsn,
+  tracesSampleRate: 0.05,
+  debug: false,
+  environment,
+})
+
+if (dsn) {
+  console.log(`✅ Sentry is enabled in ${environment}`)
 } else {
-  console.log('Sentry is disabled on the server.')
+  console.log(
+    `ℹ️ Sentry is disabled in ${environment}: To enable it, set NEXT_PUBLIC_SENTRY_DSN in the associated .env for this environment`,
+  )
 }

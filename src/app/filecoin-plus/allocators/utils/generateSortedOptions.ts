@@ -1,9 +1,9 @@
-import type { Allocator } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
-type AllocatorStringValues = Omit<Allocator, 'application'>
+type AllocatorStringValues = Omit<AllocatorWithDatacap, 'application'>
 
 export function generateSortedOptions(
-  data: Array<Allocator>,
+  data: Array<AllocatorWithDatacap>,
   key: keyof AllocatorStringValues,
 ) {
   const valuesArray = data.map((item) => item[key])
