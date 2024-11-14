@@ -681,6 +681,7 @@ collections:
             value: "africa"
           - label: "Middle East"
             value: "middle-east"
+        hint: "Select the region where the in-person event takes place. Leave empty for virtual events."
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
