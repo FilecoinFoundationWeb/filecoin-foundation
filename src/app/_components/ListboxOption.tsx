@@ -1,41 +1,42 @@
+import { Fragment } from 'react'
+
 import { ListboxOption as HeadlessUIListboxOption } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react'
-import { clsx } from 'clsx'
+
+import { type CategoryCounts } from '@/types/categoryTypes'
 
 import { Icon } from '@/components/Icon'
 
-export type OptionType = {
+type Option = {
   id: string
   name: string
-  count?: number
-  disabled?: boolean
 }
 
 type ListboxOptionProps = {
-  option: OptionType
+  option: Option
+  counts?: CategoryCounts
 }
 
-export function ListboxOption({ option }: ListboxOptionProps) {
+function OptionContent({ option, counts }: ListboxOptionProps) {
   return (
-    <HeadlessUIListboxOption
-      as="li"
-      value={option.id}
-      disabled={option.disabled}
-      className={clsx(
-        'group flex cursor-default items-center justify-between gap-12 px-5 py-2 ui-active:bg-brand-500',
-        option.disabled && 'cursor-not-allowed',
+    <span className="inline-flex items-baseline gap-2">
+      <span className="text-nowrap">{option.name}</span>
+      {counts && (
+        <span className="text-sm font-light">({counts[option.id]})</span>
       )}
-    >
-      <span>
-        {option.name}
-        {typeof option.count === 'number' && (
-          <span className="ml-2 text-sm font-light">({option.count})</span>
-        )}
-      </span>
+    </span>
+  )
+}
 
-      <span className="invisible mb-px group-data-[selected]:visible">
-        <Icon component={Check} size={20} />
-      </span>
+export function ListboxOption({ option, counts }: ListboxOptionProps) {
+  return (
+    <HeadlessUIListboxOption value={option.id} as={Fragment}>
+      <li className="group flex cursor-default items-center justify-between gap-12 bg-transparent px-5 py-2 data-[focus]:bg-brand-500">
+        <OptionContent option={option} counts={counts} />
+        <span className="invisible mb-px group-data-[selected]:visible">
+          <Icon component={Check} size={20} />
+        </span>
+      </li>
     </HeadlessUIListboxOption>
   )
 }

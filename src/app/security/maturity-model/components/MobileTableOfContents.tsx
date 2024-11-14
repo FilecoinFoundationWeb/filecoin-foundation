@@ -1,9 +1,13 @@
 'use client'
 
-import { Listbox as HeadlessUIListbox } from '@headlessui/react'
+import {
+  Listbox as HeadlessUIListbox,
+  ListboxOption as HeadlessUIListboxOption,
+} from '@headlessui/react'
+import { Check } from '@phosphor-icons/react/dist/ssr'
 
+import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
@@ -24,11 +28,25 @@ export function MobileTableOfContents() {
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
-      <HeadlessUIListbox value={selectedOption.id} onChange={handleChange}>
+      <HeadlessUIListbox
+        value={selectedOption}
+        onChange={(value) => handleChange(value.id)}
+      >
         <ListboxButton text={selectedOption.name} />
-        <ListboxOptions position="bottom" inheritWidth="button">
+
+        <ListboxOptions matchButtonWidth anchor={{ to: 'bottom', gap: 8 }}>
           {options.map((option) => (
-            <ListboxOption key={option.id} option={option} />
+            <HeadlessUIListboxOption
+              key={option.id}
+              as="li"
+              value={option}
+              className="group flex cursor-default items-center justify-between gap-12 bg-transparent px-5 py-2 data-[focus]:bg-brand-500"
+            >
+              <span>{option.name}</span>
+              <span className="invisible mb-px group-data-[selected]:visible">
+                <Icon component={Check} size={20} />
+              </span>
+            </HeadlessUIListboxOption>
           ))}
         </ListboxOptions>
       </HeadlessUIListbox>
