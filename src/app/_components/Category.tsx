@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
 
@@ -20,36 +20,21 @@ type CategoryProps = {
 }
 
 export function Category({ query, options, counts }: CategoryProps) {
-  const [selectedCategory, setSelectedCategory] = useState<CategoryId>(
+  const [categoryId, setCategoryId] = useState<CategoryId>(
     query || DEFAULT_CATEGORY,
   )
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
-  useEffect(() => {
-    setSelectedCategory(query || DEFAULT_CATEGORY)
-  }, [query])
-
-  function handleChange(category: CategoryId) {
-    setSelectedCategory(category)
-    updateParams(category)
-  }
-
-  function updateParams(category: CategoryId) {
-    if (category === DEFAULT_CATEGORY) {
-      resetSearchParams()
-    } else {
-      updateSearchParams({ [CATEGORY_KEY]: category })
-    }
-  }
+  const selectedCategory = options.find((option) => option.id === categoryId)
 
   return (
     <>
       <div className="hidden lg:block">
         <CategorySidebar
-          selected={selectedCategory}
+          selectedId={categoryId}
           options={options}
           counts={counts}
-          onChange={handleChange}
+          onChange={updateCategoryAndParams}
         />
       </div>
       <div className="block lg:hidden">
@@ -57,9 +42,22 @@ export function Category({ query, options, counts }: CategoryProps) {
           selected={selectedCategory}
           options={options}
           counts={counts}
-          onChange={handleChange}
+          onChange={updateCategoryAndParams}
         />
       </div>
     </>
   )
+
+  function updateCategoryAndParams(category: CategoryOption) {
+    setCategoryId(category.id)
+    updateParams(category.id)
+  }
+
+  function updateParams(categoryId: CategoryId) {
+    if (categoryId === DEFAULT_CATEGORY) {
+      resetSearchParams()
+    } else {
+      updateSearchParams({ [CATEGORY_KEY]: categoryId })
+    }
+  }
 }
