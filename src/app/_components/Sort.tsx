@@ -21,6 +21,8 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
   const [sortId, setSortId] = useState<ValidSortKey>(query)
   const { updateSearchParams } = useUpdateSearchParams()
 
+  const selectedOption = options.find((option) => option.id === sortId)
+
   useEffect(() => {
     const sortIsReset = query === defaultQuery
 
@@ -29,15 +31,15 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
     }
   }, [query, defaultQuery])
 
-  function handleSortChange(newValue: ValidSortKey) {
-    setSortId(newValue)
-    updateSearchParams({ [SORT_KEY]: newValue })
+  function handleSortChange(newOption: SortOption) {
+    setSortId(newOption.id)
+    updateSearchParams({ [SORT_KEY]: newOption.id })
   }
 
   return (
     <SortListbox
       options={options}
-      sortId={sortId}
+      selected={selectedOption}
       onChange={handleSortChange}
     />
   )

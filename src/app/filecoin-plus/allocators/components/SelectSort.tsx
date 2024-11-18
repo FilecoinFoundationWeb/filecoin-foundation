@@ -1,14 +1,11 @@
 'use client'
 
-import {
-  Listbox as HeadlessUIListbox,
-  ListboxOption as HeadlessUIListboxOption,
-} from '@headlessui/react'
-import { ArrowsDownUp, Check } from '@phosphor-icons/react/dist/ssr'
+import { Listbox as HeadlessUIListbox } from '@headlessui/react'
+import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
 import type { Column, SortDirection } from '@tanstack/react-table'
 
-import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
+import { ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
@@ -34,13 +31,8 @@ export function SelectSort({
   const selectedOption =
     options.find((option) => option.id === currentSortId) || defaultOption
 
-  function handleSortChange(newOption: TableSortOption) {
-    const isSortDesc = newOption.id === 'desc'
-    column.toggleSorting(isSortDesc)
-  }
-
   return (
-    <HeadlessUIListbox value={selectedOption} onChange={handleSortChange}>
+    <HeadlessUIListbox value={selectedOption} onChange={setColumnSort}>
       <ListboxButton
         leadingIcon={ArrowsDownUp}
         text={selectedOption.name}
@@ -48,19 +40,14 @@ export function SelectSort({
       />
       <ListboxOptions position="bottom end">
         {options.map((option) => (
-          <HeadlessUIListboxOption
-            key={option.id}
-            as="li"
-            value={option}
-            className="group flex cursor-default items-center justify-between gap-12 text-nowrap bg-transparent px-5 py-2 data-[focus]:bg-brand-500"
-          >
-            <span>{option.name}</span>
-            <span className="invisible mb-px group-data-[selected]:visible">
-              <Icon component={Check} size={20} />
-            </span>
-          </HeadlessUIListboxOption>
+          <ListboxOption key={option.id} option={option} />
         ))}
       </ListboxOptions>
     </HeadlessUIListbox>
   )
+
+  function setColumnSort(newOption: TableSortOption) {
+    const isSortDesc = newOption.id === 'desc'
+    column.toggleSorting(isSortDesc)
+  }
 }

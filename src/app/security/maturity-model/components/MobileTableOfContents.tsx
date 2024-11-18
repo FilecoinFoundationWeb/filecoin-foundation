@@ -1,13 +1,9 @@
 'use client'
 
-import {
-  Listbox as HeadlessUIListbox,
-  ListboxOption as HeadlessUIListboxOption,
-} from '@headlessui/react'
-import { Check } from '@phosphor-icons/react/dist/ssr'
+import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 
-import { Icon } from '@/components/Icon'
 import { ListboxButton } from '@/components/ListboxButton'
+import { ListboxOption, type OptionType } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
@@ -30,33 +26,23 @@ export function MobileTableOfContents() {
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
       <HeadlessUIListbox
         value={selectedOption}
-        onChange={(value) => handleChange(value.id)}
+        onChange={scrollToActiveSection}
       >
         <ListboxButton text={selectedOption.name} />
 
         <ListboxOptions matchButtonWidth>
           {options.map((option) => (
-            <HeadlessUIListboxOption
-              key={option.id}
-              as="li"
-              value={option}
-              className="group flex cursor-default items-center justify-between gap-12 bg-transparent px-5 py-2 data-[focus]:bg-brand-500"
-            >
-              <span>{option.name}</span>
-              <span className="invisible mb-px group-data-[selected]:visible">
-                <Icon component={Check} size={20} />
-              </span>
-            </HeadlessUIListboxOption>
+            <ListboxOption key={option.id} option={option} />
           ))}
         </ListboxOptions>
       </HeadlessUIListbox>
     </nav>
   )
 
-  function handleChange(slug: string) {
-    updateHash(slug)
+  function scrollToActiveSection(option: OptionType) {
+    updateHash(option.id)
 
-    const sectionHash = getHashFromSlug(slug)
+    const sectionHash = getHashFromSlug(option.id)
     scrollToSection(sectionHash)
   }
 }
