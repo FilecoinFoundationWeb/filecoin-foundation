@@ -23,7 +23,7 @@ export function SortListbox({ sortId, onChange, options }: SortListboxProps) {
     <Listbox value={sortId} onChange={onChange}>
       <ListboxButton leadingIcon={ArrowsDownUp} text={selectedOption.name} />
 
-      <ListboxOptions anchor={{ to: 'bottom end', gap: 12 }}>
+      <ListboxOptions position="bottom end">
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}

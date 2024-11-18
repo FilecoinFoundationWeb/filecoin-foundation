@@ -46,7 +46,7 @@ export function SelectFilter({
   return (
     <HeadlessUIListbox value={selectedOption} onChange={handleOptionChange}>
       <ListboxButton text={selectedOption.name} />
-      <ListboxOptions anchor={{ to: 'bottom start', gap: 12 }}>
+      <ListboxOptions>
         {allOptions.map((option) => (
           <HeadlessUIListboxOption
             key={option.id}

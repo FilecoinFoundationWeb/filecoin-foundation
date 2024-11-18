@@ -34,7 +34,7 @@ export function MobileTableOfContents() {
       >
         <ListboxButton text={selectedOption.name} />
 
-        <ListboxOptions matchButtonWidth anchor={{ to: 'bottom', gap: 8 }}>
+        <ListboxOptions matchButtonWidth>
           {options.map((option) => (
             <HeadlessUIListboxOption
               key={option.id}

@@ -34,7 +34,7 @@ export function CategoryListbox({
   return (
     <Listbox value={selected} onChange={onChange}>
       <ListboxButton text="Category" />
-      <ListboxOptions anchor={{ to: 'bottom start', gap: 12 }}>
+      <ListboxOptions>
         {totalCategoryCount && (
           <ListboxOption
             option={{ id: DEFAULT_CATEGORY, name: DEFAULT_CATEGORY }}

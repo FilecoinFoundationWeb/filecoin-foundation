@@ -46,7 +46,7 @@ export function SelectSort({
         text={selectedOption.name}
         compactBelow="md"
       />
-      <ListboxOptions anchor={{ to: 'bottom end', gap: 12 }}>
+      <ListboxOptions position="bottom end">
         {options.map((option) => (
           <HeadlessUIListboxOption
             key={option.id}
