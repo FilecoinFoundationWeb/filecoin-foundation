@@ -7,7 +7,7 @@ description:
   "Titan is a leading DePIN service provider, that is committed to delivering
   efficient, secure, and cost-effective decentralized solutions, tooling and resources
   that can help your projects stand out in a competitive marketplace."
-category: tooling-productivity
+category: storage
 image:
   src: /assets/images/65974d743ddd7ef7851595fe_titan-svg2.png
 tech:

@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1+KC8ZZwzlZaJuAJxIHi94dRtzEdRdvavjtkCwEqXmrWthVpjWHVc
 full-name: encrypted::U2FsdGVkX1+jbfea1mNnXuyDTq4e8rYxvmTPZSTRcyQ=
 image:
   src: /assets/images/66073290d5091847d125282a_astral.png
-category: storage
+category: tooling-productivity
 subcategories:
   - data-retrieval
 description: Astral is building tools to enable the location-based decentralized web.
