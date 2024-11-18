@@ -4,29 +4,23 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import {
-  getCategoryDataFromDirectory,
-  getCategorySettingsFromMap,
-} from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category } from '@/components/Category'
 import { CTASection } from '@/components/CTASection'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
@@ -38,9 +32,14 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { SubcategoriesSidebar } from './components/SubcategoriesSidebar'
+import { SubcategorySlider } from './components/SubcategorySlider'
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
+import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
+import { getSubcategoriesFromDirectory } from './utils/getSubcategoriesFromDirectory'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -69,12 +68,8 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const categoryData = getCategoryDataFromDirectory(
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-)
-
-const { categoryOptions, validCategoryIds } =
-  getCategorySettingsFromMap(categoryData)
+const categories = getCategoriesFromDirectory()
+const subcategories = getSubcategoriesFromDirectory()
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -90,11 +85,13 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { categoryQuery, categorizedResults } = useCategory({
-    searchParams,
-    entries: sortedResults,
-    validCategoryIds: validCategoryIds,
-  })
+  const { categoriesWithSubcategories, categorizedResults } =
+    useEcosystemCategory({
+      searchParams,
+      entries: sortedResults,
+      categories,
+      subcategories,
+    })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -124,7 +121,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             gapSize="wide"
             results={<ResultsAndReset results={categorizedResults.length} />}
             category={
-              <Category query={categoryQuery} options={categoryOptions} />
+              <SubcategoriesSidebar categories={categoriesWithSubcategories} />
             }
           />
           <FilterContainer.MainWrapper>
@@ -141,15 +138,15 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
+              category={
+                <SubcategorySlider categories={categoriesWithSubcategories} />
+              }
               sort={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
                   defaultQuery={defaultSortQuery}
                 />
-              }
-              category={
-                <Category query={categoryQuery} options={categoryOptions} />
               }
             />
             <FilterContainer.ContentWrapper>
@@ -163,13 +160,16 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                         project
 
                       const isFirstTwoImages = i < 2
+                      const categoryName = categories.find(
+                        (c) => c.slug === category,
+                      )?.name
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={categoryData[category]}
+                          tagLabel={categoryName}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
