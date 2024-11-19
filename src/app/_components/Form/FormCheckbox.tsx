@@ -13,8 +13,8 @@ export type FormCheckboxProps = {
 
 const TOUCH_TARGET = {
   base: 'size-5',
-  augmentingClass: 'p-3.5',
-  offsettingClass: '-m-3.5',
+  clickArea: 'p-3.5',
+  clickAreaOffset: '-m-3.5',
 }
 
 export function FormCheckbox({
@@ -28,8 +28,8 @@ export function FormCheckbox({
         {...rest}
         className={clsx(
           'group cursor-pointer focus:outline-none',
-          TOUCH_TARGET.augmentingClass,
-          TOUCH_TARGET.offsettingClass,
+          TOUCH_TARGET.clickArea,
+          TOUCH_TARGET.clickAreaOffset,
         )}
       >
         <div

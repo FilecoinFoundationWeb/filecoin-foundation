@@ -10,8 +10,8 @@ type SliderCloseButtonProps = {
 
 const TOUCH_TARGET = {
   base: 24,
-  augmentingClass: 'p-3',
-  offsettingClass: '-m-3',
+  clickArea: 'p-3',
+  clickAreaOffset: '-m-3',
 }
 
 export function SliderCloseButton({ closeSlider }: SliderCloseButtonProps) {
@@ -20,8 +20,8 @@ export function SliderCloseButton({ closeSlider }: SliderCloseButtonProps) {
       aria-label="Close ecosystem explorer filters"
       className={clsx(
         'text-brand-300 focus:brand-outline',
-        TOUCH_TARGET.augmentingClass,
-        TOUCH_TARGET.offsettingClass,
+        TOUCH_TARGET.clickArea,
+        TOUCH_TARGET.clickAreaOffset,
       )}
       onClick={closeSlider}
     >
