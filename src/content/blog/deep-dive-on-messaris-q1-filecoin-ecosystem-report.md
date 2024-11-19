@@ -35,7 +35,7 @@ As of Q1 2024, 2,007 clients have onboarded datasets on Filecoin, with 508 large
 
 ![](https://lh7-us.googleusercontent.com/VCIFvRUFoG0yQBcGplK-u_yiYmJN9PBn-n2rOFhLZc3c_4f-8D_4Evmk9guGI2IIU6sPE7MR6tp1fL2tqx1D3aj2XBXCHrd5wrmrUUyF__bLEyNqbld212wMN1EBffYWyoSZyxyxGBhrg63naJ6X5pw)
 
-Data clients range from the [Democracy’s Library](/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/) storing American presidential administration data collected by the Internet Archive, to [Solana’s](https://twitter.com/triton_one/status/1681761297170325506) archival of their chain state, to the [SETI Institute](https://destor.com/seti) storing astronomical research data. Explore other data clients with the [Filecoin Network Data Client Explorer](https://destor.com/en-us/filecoin-network-client-explorer).
+Data clients range from the [Democracy’s Library](/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network) storing American presidential administration data collected by the Internet Archive, to [Solana’s](https://twitter.com/triton_one/status/1681761297170325506) archival of their chain state, to the [SETI Institute](https://destor.com/seti) storing astronomical research data. Explore other data clients with the [Filecoin Network Data Client Explorer](https://destor.com/en-us/filecoin-network-client-explorer).
 
 Interested in joining Filecoin Foundation’s (FF) Data Clients Working Group? Participants focus on sharing their data upload experiences, identifying hurdles and solutions for uploading data, and discussing how the Filecoin ecosystem can support data onboarding. To join, [drop us a note](<mailto: dataclients@fil.org>).
 
@@ -47,12 +47,12 @@ Are you building on Filecoin? The FF Developer Working Group (DevWG) is open to 
 
 ⭐ **The Filecoin ecosystem expands.**
 
-The Messari report also provides an ecosystem overview featuring the [Filecoin Ecosystem Explorer](/ecosystem/), a community-powered database of projects in the network. As of March 2024, over 160 [known projects](/ecosystem/) are highlighted, such as:
+The Messari report also provides an ecosystem overview featuring the [Filecoin Ecosystem Explorer](/ecosystem), a community-powered database of projects in the network. As of March 2024, over 160 known projects are highlighted, such as:
 
-- [EQTY Lab](/ecosystem-projects/eqty-lab-arc-collective/): Uses cryptographic methods to validate snapshots of an AI model's lineage, leveraging decentralized technologies, like IPFS and Filecoin, to anchor model data.
-- [Banyan](/ecosystem-projects/banyan/): Web2-like decentralized storage for enterprises beyond archival.
-- [Lighthouse](/ecosystem-projects/lighthouse/): Perpetual data storage service with a one-time payment pricing model.
-- [Numbers Protocol](/ecosystem-projects/numbers-protocol/): Preserves data authenticity for digital media and generative AI.
-- [Fluence](/ecosystem-projects/fluence/): a decentralized, serverless computing platform empowering developers to scale their Web3 project.
+- [EQTY Lab](/ecosystem-projects/eqty-lab-arc-collective): Uses cryptographic methods to validate snapshots of an AI model's lineage, leveraging decentralized technologies, like IPFS and Filecoin, to anchor model data.
+- [Banyan](/ecosystem-projects/banyan): Web2-like decentralized storage for enterprises beyond archival.
+- [Lighthouse](/ecosystem-projects/lighthouse): Perpetual data storage service with a one-time payment pricing model.
+- [Numbers Protocol](/ecosystem-projects/numbers-protocol): Preserves data authenticity for digital media and generative AI.
+- [Fluence](/ecosystem-projects/fluence): a decentralized, serverless computing platform empowering developers to scale their Web3 project.
 
 Dive deeper into the insights and metrics from Messari’s [Q1 2024 Filecoin Ecosystem Report](https://messari.io/project/filecoin/quarterly-reports/q1-2024).

@@ -77,7 +77,7 @@ Filecoin Virtual Machine (FVM) brings onchain programmability and smart contract
 
 ## Redefining the Power of Compute
 
-Thanks to our network of more than 2,100 storage provider systems globally contributing more than 4.5 exbibytes of raw storage capacity to the network, Filecoin is the leading protocol for decentralized storage and is at the forefront of enabling decentralized compute. Projects like [Bacalhau](/ecosystem-projects/bacalhau/), [Ramo](https://www.ramo.io/), [Fluence](/ecosystem-projects/fluence/), and [Bagel](/ecosystem-explorer/bagel) are just some of the teams using the FVM to broker computational resources, incentivize compute execution, and distribute workloads across available storage providers, offering a compelling alternative to centralized models.
+Thanks to our network of more than 2,100 storage provider systems globally contributing more than 4.5 exbibytes of raw storage capacity to the network, Filecoin is the leading protocol for decentralized storage and is at the forefront of enabling decentralized compute. Projects like [Bacalhau](/ecosystem-projects/bacalhau), [Ramo](https://www.ramo.io/), [Fluence](/ecosystem-projects/fluence) and [Bagel](/ecosystem-explorer/bagel) are just some of the teams using the FVM to broker computational resources, incentivize compute execution, and distribute workloads across available storage providers, offering a compelling alternative to centralized models.
 
 ![](/assets/images/dataclients.webp)
 
@@ -99,7 +99,7 @@ Filecoin Foundation is committed to creating more pathways for Web2 companies to
 
 And the network will continue to grow thanks to the thousands of contributors around the world who are helping to make Filecoin an indispensable layer of the next generation of the web. Looking for more ways to get involved?
 
-[Attend a Filecoin event](/events/). [Become a storage provider](https://destor.com/destor-network/overview?utm_campaign=sp-nav&utm_content=en-us&utm_medium=referral&utm_source=filecoin). Apply for a [dev grant](/grants). Join the [governance conversation](/governance). Sign up for the [Orbit ambassador program](/orbit) and help build communities of Filecoin supporters in your backyard. There are dozens of ways to support the growth of the Filecoin ecosystem.
+[Attend a Filecoin event](/events). [Become a storage provider](https://destor.com/destor-network/overview?utm_campaign=sp-nav&utm_content=en-us&utm_medium=referral&utm_source=filecoin). Apply for a [dev grant](/grants). Join the [governance conversation](/governance). Sign up for the [Orbit ambassador program](/orbit) and help build communities of Filecoin supporters in your backyard. There are dozens of ways to support the growth of the Filecoin ecosystem.
 
 ## Thank You
 

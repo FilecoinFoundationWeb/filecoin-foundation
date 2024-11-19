@@ -16,7 +16,7 @@ website: https://fil.org
 tech:
   - filecoin
   - ipfs
-featured-content: https://fil.org/blog/
+featured-content: https://fil.org/blog
 twitter: https://twitter.com/FilFoundation
 seo:
   description: Filecoin Foundation supports the Filecoin network and its ecosystem.

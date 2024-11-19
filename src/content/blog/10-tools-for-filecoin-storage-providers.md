@@ -58,4 +58,4 @@ Don’t miss these speakers and sessions:
 
 Check out the full [speaker lineup](https://fil-vegas.io/#speakers) and [agenda](https://fil-vegas.io/#agenda). Still need to register? Secure your spot for [FIL Vegas](https://fil-vegas.io/register/) now.
 
-_P.S. A version of this content was featured in the latest edition of The Upload, Filecoin Foundation’s newsletter for big ideas and news about the Filecoin ecosystem and the decentralized web. Sign up to receive: [upload.fil.org/](https://upload.fil.org/)._
+_P.S. A version of this content was featured in the latest edition of The Upload, Filecoin Foundation’s newsletter for big ideas and news about the Filecoin ecosystem and the decentralized web. Sign up to receive: [upload.fil.org](https://upload.fil.org)._

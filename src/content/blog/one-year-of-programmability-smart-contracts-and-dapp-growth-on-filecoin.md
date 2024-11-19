@@ -49,7 +49,7 @@ There has been incredible builder growth on the Filecoin network since launch. F
 
 - More than one-third of approved projects of Filecoin Foundation Dev Grants Program in FY23 were to empower FVM, including block explorers, libraries, toolsets, and more.
 - At launch, early builders shipped 30+ projects to Mainnet, with 20 of them entering leading accelerator cohorts with Graph Paper Capital, Longhash, and more.
-- The [Filecoin Orbit Ambassador program](/blog/orbit-year-in-review-growing-a-global-community-of-builders/) hosted more than 30 FVM workshops and over 10 FVM hackathons in just as many cities to introduce builders to Filecoin. These events generated 150 new projects deployed on Filecoin, IPFS, or FVM test- and mainnets, like a voting machine Filecoin dapp from a team in Tanzania.
+- The [Filecoin Orbit Ambassador program](/blog/orbit-year-in-review-growing-a-global-community-of-builders) hosted more than 30 FVM workshops and over 10 FVM hackathons in just as many cities to introduce builders to Filecoin. These events generated 150 new projects deployed on Filecoin, IPFS, or FVM test- and mainnets, like a voting machine Filecoin dapp from a team in Tanzania.
 - The wider dev community demonstrated significant engagement with Filecoin over the past year alongside the launch of FVM. Hundreds of new projects using Filecoin have come in through participation in hackathons with ETHGlobal, ETHDenver, Encode, DevFolio, Huddle01, and DoraHacks.
 
 ## Advancement of Platform Capabilities

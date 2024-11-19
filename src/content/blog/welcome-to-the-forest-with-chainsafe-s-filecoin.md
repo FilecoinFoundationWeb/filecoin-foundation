@@ -19,9 +19,9 @@ Filecoin Mainnet launched one year ago this week, opening up the decentralized s
 
 Implementations are a critical component of protocol infrastructure which allow developers, clients, and storage providers to securely connect to and build on the blockchain. Forest now joins Lotus, the reference implementation written in Go, as the second implementation devnet available within the Filecoin ecosystem.
 
-Built by the team at Chainsafe, this first-iteration of Forest is an alpha release that is now fully synced with the various [protocol enhancements and network upgrades](/fips/) that have been delivered in recent months. As a next step, developers are invited to install, test, and run the Forest client in order to generate feedback and future use-cases.
+Built by the team at Chainsafe, this first-iteration of Forest is an alpha release that is now fully synced with the various protocol enhancements and network upgrades that have been delivered in recent months. As a next step, developers are invited to install, test, and run the Forest client in order to generate feedback and future use-cases.
 
-It is inherently useful for blockchain protocols to host multiple implementations. Not only does it increase overall network security, and resilience, but it also empowers the creation of various developer experiences. Although each implementation is required to verify the Filecion protocol ‘core’ codebase, they are also independent product offerings that can develop additional tools and features which users may enjoy.
+It is inherently useful for blockchain protocols to host multiple implementations. Not only does it increase overall network security, and resilience, but it also empowers the creation of various developer experiences. Although each implementation is required to verify the Filecoin protocol ‘core’ codebase, they are also independent product offerings that can develop additional tools and features which users may enjoy.
 
 For example, the first version of the Forest testnet already includes some ‘MVP features’ for users to test out. These include blockchain message pools, command-line wallet functionality, performance metrics, and others.
 
