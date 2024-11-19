@@ -32,7 +32,7 @@ function getLocation({
     return undefined
   }
 
-  if (location === 'Virtual') {
+  if (location.primary === 'Virtual') {
     return {
       '@type': 'VirtualLocation',
       url: externalLink?.url || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
@@ -41,7 +41,7 @@ function getLocation({
 
   return {
     '@type': 'Place',
-    name: location,
+    name: location.primary,
   }
 }
 
@@ -64,7 +64,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
   })
 
   const eventAttendanceMode =
-    location === 'Virtual'
+    location?.primary === 'Virtual'
       ? SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL
       : SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL
 
