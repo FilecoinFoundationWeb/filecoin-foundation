@@ -9,15 +9,6 @@ function formatFieldOptions(options: Array<CMSFieldOption>) {
   }))
 }
 
-/**
- * Retrieves and formats field settings for a specified collection and field.
- *
- * @param {CMSCollectionName} collectionName - The name of the CMS collection.
- * @param {string} fieldName - The name of the field within the collection.
- * @returns {{ options: { id: string; name: string }[]; validIds: string[] }}
- * An object containing formatted options for the field and a list of valid IDs.
- */
-
 export function getFieldSettings({
   collectionName,
   fieldName,

@@ -182,7 +182,6 @@ export default function Events({ searchParams }: Props) {
                         category,
                         description,
                         externalLink,
-                        region,
                       } = event
 
                       const isFirstTwoImages = i < 2

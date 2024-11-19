@@ -4,8 +4,9 @@ created-on: 2024-09-25T11:03:42.572Z
 updated-on: 2024-09-25T11:03:42.572Z
 published-on: 2024-09-25T11:03:42.572Z
 category: hosted
-location: Bangkok, Thailand
-region: apac-asia
+location:
+  primary: Bangkok, Thailand
+  region: apac-asia
 start-date: 2024-11-6T11:18:00.000Z
 end-date: 2024-11-12T11:18:00.000Z
 description: Join the Filecoin Community in Bangkok! Dive into decentralized AI

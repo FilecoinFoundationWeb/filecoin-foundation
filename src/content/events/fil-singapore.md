@@ -4,8 +4,9 @@ created-on: 2023-05-03T08:05:54.983Z
 updated-on: 2023-06-27T17:46:15.427Z
 published-on: 2023-05-03T08:22:38.798Z
 category: hosted
-location: Singapore
-region: apac-asia
+location:
+  primary: Singapore
+  region: apac-asia
 start-date: 2022-09-24T00:00:00.000Z
 end-date: 2022-09-26T00:00:00.000Z
 image:

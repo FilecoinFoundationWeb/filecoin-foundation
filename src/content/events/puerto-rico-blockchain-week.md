@@ -4,8 +4,9 @@ created-on: 2023-06-27T17:15:30.355Z
 updated-on: 2023-06-27T17:15:30.380Z
 published-on: 2023-06-27T17:15:30.400Z
 category: supported-sponsored
-location: Puerto Rico
-region: south-america
+location:
+  primary: San Juan, Puerto Rico
+  region: south-america
 external-link:
   url: https://www.prblockchainweek.io/
 start-date: 2022-12-05T18:15:30.421Z

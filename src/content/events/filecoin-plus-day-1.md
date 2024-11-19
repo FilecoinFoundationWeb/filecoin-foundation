@@ -4,8 +4,9 @@ created-on: 2023-11-13T18:13:00.239Z
 updated-on: 2023-11-13T18:13:00.249Z
 published-on: 2023-11-13T18:13:00.256Z
 category: hosted
-location: Istanbul, Turkey
-region: europe
+location:
+  primary: Istanbul, Turkey
+  region: europe
 external-link:
   url: https://23.labweek.io/fil-plus
 start-date: 2023-11-14T19:30:00.264Z

@@ -4,7 +4,9 @@ created-on: 2024-02-21T16:48:19.477Z
 updated-on: 2024-02-21T16:48:19.493Z
 published-on: 2024-02-21T16:48:19.506Z
 category: supported-sponsored
-location: San Francisco, CA
+location:
+  primary: San Francisco, CA
+  region: north-america
 start-date: 2024-05-14T15:48:19.518Z
 end-date: 2024-05-15T15:48:19.530Z
 external-link:

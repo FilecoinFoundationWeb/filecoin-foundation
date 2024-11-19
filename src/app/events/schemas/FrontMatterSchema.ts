@@ -15,7 +15,7 @@ const { validIds: validCategoryIds } = getFieldSettings({
 })
 const { validIds: validRegionIds } = getFieldSettings({
   collectionName: 'event_entries',
-  fieldName: 'region',
+  fieldName: 'location.region',
 })
 
 const CategorySchema = createEnumSchema(validCategoryIds)
@@ -25,8 +25,12 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
   description: z.string().optional(),
-  location: z.string(),
-  region: RegionSchema.optional(),
+  location: z
+    .object({
+      primary: z.string(),
+      region: RegionSchema.optional(),
+    })
+    .optional(),
   'external-link': z
     .object({
       url: z.string().url(),

@@ -44,11 +44,17 @@ export function getCMSFieldOptions(
   fields: Array<CMSFieldConfig> = [],
   fieldName: string,
 ) {
-  const field = fields.find((field) => field.name === fieldName)
+  const [currentFieldName, ...nestedFieldName] = fieldName.split('.')
 
-  if (!field) {
+  const currentField = fields.find((field) => field.name === currentFieldName)
+
+  if (!currentField) {
     throw new Error(`Field "${fieldName}" does not exist.`)
   }
 
-  return field.options || []
+  if (nestedFieldName.length > 0) {
+    return getCMSFieldOptions(fields, nestedFieldName.join('.'))
+  }
+
+  return currentField.options || []
 }

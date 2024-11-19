@@ -7,7 +7,8 @@ description: >-
   Encode Club, a community of university students, researchers, and developers
   building in blockchain, is introducing Filecoin Club to educate the next
   generation of students about Filecoin’s technology.
-location: Virtual
+location:
+  primary: Virtual
 start-date: 2021-09-30T22:00:00.000Z
 end-date: 2021-12-30T23:00:00.000Z
 image:
