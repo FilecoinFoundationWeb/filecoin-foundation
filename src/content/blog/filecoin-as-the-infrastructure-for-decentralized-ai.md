@@ -1,8 +1,8 @@
 ---
-title: "Filecoin as the Infrastructure for Decentralized AI"
+title: Filecoin as the Infrastructure for Decentralized AI
 created-on: 2024-11-18T21:22:00.000Z
-updated-on: 2024-11-18T21:22:00.000Z
-published-on: 2024-11-18T21:22:00.000Z
+updated-on: 2024-11-19T12:37:00.000Z
+published-on: 2024-11-19T12:37:00.000Z
 category: news
 description: Filecoin Network Named in the AI and Data category for Fast
   Company’s 2024 Next Big Things in Tech Awards.
@@ -11,7 +11,7 @@ image:
 seo:
   twitter:
     card: summary
-  title: "Filecoin as the Infrastructure for Decentralized AI"
+  title: Filecoin as the Infrastructure for Decentralized AI
   description: Filecoin Network Named in the AI and Data category for Fast
     Company’s 2024 Next Big Things in Tech Awards.
 ---
