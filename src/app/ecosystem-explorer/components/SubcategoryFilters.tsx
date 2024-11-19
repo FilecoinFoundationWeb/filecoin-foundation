@@ -24,7 +24,7 @@ export function SubcategoryFilters({ categoryName, subcategories }: Props) {
 
   return (
     <div>
-      <h3 className="pb-7 text-sm font-bold text-blue-300 lg:pb-4">
+      <h3 className="pb-7 text-sm font-bold text-brand-300 lg:pb-4">
         {categoryName}
       </h3>
       <div className="flex flex-col gap-7 pl-3 lg:gap-4">

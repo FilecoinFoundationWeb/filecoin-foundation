@@ -17,7 +17,7 @@ const TOUCH_TARGET = {
 export function SliderCloseButton({ closeSlider }: SliderCloseButtonProps) {
   return (
     <Button
-      aria-label="Close filters"
+      aria-label="Close ecosystem explorer filters"
       className={clsx(
         'text-brand-300 focus:brand-outline',
         TOUCH_TARGET.augmentingClass,

@@ -55,11 +55,11 @@ export function SubcategorySlider({ categories }: Props) {
               variant="ghost"
               onClick={resetParamsAndCloseSlider}
             >
-              Clear all
+              Clear All
             </Button>
 
             <Button className="basis-1/2" onClick={closeSlider}>
-              See results
+              See Results
             </Button>
           </div>
         </div>
