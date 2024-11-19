@@ -47,12 +47,12 @@ Are you building on Filecoin? The FF Developer Working Group (DevWG) is open to 
 
 ⭐ **The Filecoin ecosystem expands.**
 
-The Messari report also provides an ecosystem overview featuring the [Filecoin Ecosystem Explorer](/ecosystem), a community-powered database of projects in the network. As of March 2024, over 160 known projects are highlighted, such as:
+The Messari report also provides an ecosystem overview featuring the [Filecoin Ecosystem Explorer](/ecosystem-explorer), a community-powered database of projects in the network. As of March 2024, over 160 known projects are highlighted, such as:
 
-- [EQTY Lab](/ecosystem-projects/eqty-lab-arc-collective): Uses cryptographic methods to validate snapshots of an AI model's lineage, leveraging decentralized technologies, like IPFS and Filecoin, to anchor model data.
-- [Banyan](/ecosystem-projects/banyan): Web2-like decentralized storage for enterprises beyond archival.
-- [Lighthouse](/ecosystem-projects/lighthouse): Perpetual data storage service with a one-time payment pricing model.
-- [Numbers Protocol](/ecosystem-projects/numbers-protocol): Preserves data authenticity for digital media and generative AI.
-- [Fluence](/ecosystem-projects/fluence): a decentralized, serverless computing platform empowering developers to scale their Web3 project.
+- [EQTY Lab](/ecosystem-explorer/eqty-lab-arc-collective): Uses cryptographic methods to validate snapshots of an AI model's lineage, leveraging decentralized technologies, like IPFS and Filecoin, to anchor model data.
+- [Banyan](/ecosystem-explorer/banyan): Web2-like decentralized storage for enterprises beyond archival.
+- [Lighthouse](/ecosystem-explorer/lighthouse): Perpetual data storage service with a one-time payment pricing model.
+- [Numbers Protocol](/ecosystem-explorer/numbers-protocol): Preserves data authenticity for digital media and generative AI.
+- [Fluence](/ecosystem-explorer/fluence): a decentralized, serverless computing platform empowering developers to scale their Web3 project.
 
 Dive deeper into the insights and metrics from Messari’s [Q1 2024 Filecoin Ecosystem Report](https://messari.io/project/filecoin/quarterly-reports/q1-2024).

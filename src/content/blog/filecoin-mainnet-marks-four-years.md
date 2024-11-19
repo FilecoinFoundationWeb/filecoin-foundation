@@ -77,7 +77,7 @@ Filecoin Virtual Machine (FVM) brings onchain programmability and smart contract
 
 ## Redefining the Power of Compute
 
-Thanks to our network of more than 2,100 storage provider systems globally contributing more than 4.5 exbibytes of raw storage capacity to the network, Filecoin is the leading protocol for decentralized storage and is at the forefront of enabling decentralized compute. Projects like [Bacalhau](/ecosystem-projects/bacalhau), [Ramo](https://www.ramo.io/), [Fluence](/ecosystem-projects/fluence) and [Bagel](/ecosystem-explorer/bagel) are just some of the teams using the FVM to broker computational resources, incentivize compute execution, and distribute workloads across available storage providers, offering a compelling alternative to centralized models.
+Thanks to our network of more than 2,100 storage provider systems globally contributing more than 4.5 exbibytes of raw storage capacity to the network, Filecoin is the leading protocol for decentralized storage and is at the forefront of enabling decentralized compute. Projects like [Bacalhau](/ecosystem-explorer/bacalhau), [Ramo](https://www.ramo.io/), [Fluence](/ecosystem-explorer/fluence) and [Bagel](/ecosystem-explorer/bagel) are just some of the teams using the FVM to broker computational resources, incentivize compute execution, and distribute workloads across available storage providers, offering a compelling alternative to centralized models.
 
 ![](/assets/images/dataclients.webp)
 
