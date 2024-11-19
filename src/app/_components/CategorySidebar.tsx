@@ -1,5 +1,7 @@
 'use client'
 
+import type { ElementType } from 'react'
+
 import { clsx } from 'clsx'
 
 import {
@@ -15,15 +17,15 @@ const touchTarget = {
 } as const
 
 type CategorySidebarProps = {
-  selected: CategoryId
+  selectedId: CategoryId
   options: Array<CategoryOption>
   counts?: CategoryCounts
-  onChange: (selected: CategoryId) => void
+  onChange: (selected: CategoryOption) => void
 }
 
 type CategoryContainerProps = {
   children: React.ReactNode
-  as?: keyof JSX.IntrinsicElements
+  as?: ElementType
 }
 
 type CategoryItemProps = {
@@ -34,7 +36,7 @@ type CategoryItemProps = {
 }
 
 export function CategorySidebar({
-  selected,
+  selectedId,
   options,
   counts,
   onChange,
@@ -45,9 +47,9 @@ export function CategorySidebar({
         <CategorySidebar.Item
           key={option.id}
           name={option.name}
-          isSelected={selected === option.id}
+          isSelected={selectedId === option.id}
           count={counts?.[option.id]}
-          handleClick={() => onChange(option.id)}
+          handleClick={() => onChange(option)}
         />
       ))}
     </CategorySidebar.Container>
