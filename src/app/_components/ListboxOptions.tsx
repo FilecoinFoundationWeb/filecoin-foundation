@@ -1,22 +1,39 @@
-import { ListboxOptions as HeadlessUIListboxOptions } from '@headlessui/react'
+import type { ElementType } from 'react'
+
+import {
+  ListboxOptions as HeadlessUIListboxOptions,
+  type ListboxOptionsProps as HeadlessUIListboxOptionsProps,
+} from '@headlessui/react'
 import { clsx } from 'clsx'
 
+type HeadlessUIAnchorProps = NonNullable<
+  HeadlessUIListboxOptionsProps['anchor']
+>
+type Position = Extract<HeadlessUIAnchorProps, string>
+
 type ListboxOptionsProps = {
-  position?: 'left' | 'right'
+  as?: ElementType
+  position?: Position
+  matchButtonWidth?: boolean
   children: React.ReactNode
 }
 
-export function ListboxOptions({
-  position = 'left',
-  children,
-}: ListboxOptionsProps) {
-  const positionClass = position === 'right' ? 'right-6 md:right-auto' : ''
+const GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX = 8
 
+export function ListboxOptions({
+  as = 'ul',
+  children,
+  position = 'bottom start',
+  matchButtonWidth,
+}: ListboxOptionsProps) {
   return (
     <HeadlessUIListboxOptions
+      transition
+      as={as}
+      anchor={{ to: position, gap: GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX }}
       className={clsx(
-        'absolute z-10 mt-2 overflow-hidden rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2',
-        positionClass,
+        'min-w-[var(--button-width)] rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2',
+        matchButtonWidth && 'w-[var(--button-width)]',
       )}
     >
       {children}
