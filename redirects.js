@@ -219,6 +219,16 @@ const redirects = [
     destination: '/events/fil-bangkok-2024',
     permanent: true,
   },
+  {
+    source: '/events/fil-dev-summit-1',
+    destination: '/events/fil-dev-summit-singapore-2023',
+    permanent: true,
+  },
+  {
+    source: '/events/fil-dev-summit-singapore',
+    destination: '/events/fil-dev-summit-singapore-2023',
+    permanent: true,
+  },
 
   // IMAGE REDIRECTS
   {
