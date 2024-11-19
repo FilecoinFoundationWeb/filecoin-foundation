@@ -26,7 +26,7 @@ export function SortListbox({ selected, onChange, options }: SortListboxProps) {
         compactBelow="md"
       />
 
-      <ListboxOptions position="right">
+      <ListboxOptions position="bottom end">
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}

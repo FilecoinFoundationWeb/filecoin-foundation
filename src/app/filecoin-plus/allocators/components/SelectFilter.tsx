@@ -1,13 +1,11 @@
 'use client'
 
-import {
-  Listbox as HeadlessUIListbox,
-  ListboxOptions as HeadlessUIListboxOptions,
-} from '@headlessui/react'
+import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 import type { Column } from '@tanstack/react-table'
 
 import { ListboxButton } from '@/components/ListboxButton'
 import { ListboxOption } from '@/components/ListboxOption'
+import { ListboxOptions } from '@/components/ListboxOptions'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
@@ -44,16 +42,11 @@ export function SelectFilter({
   return (
     <HeadlessUIListbox value={selectedOption} onChange={setColumnFilter}>
       <ListboxButton text={selectedOption.name} />
-
-      <HeadlessUIListboxOptions
-        as="ul"
-        anchor={{ to: 'bottom start', gap: 12 }}
-        className="rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2"
-      >
+      <ListboxOptions>
         {allOptions.map((option) => (
           <ListboxOption key={option.id} option={option} />
         ))}
-      </HeadlessUIListboxOptions>
+      </ListboxOptions>
     </HeadlessUIListbox>
   )
 
