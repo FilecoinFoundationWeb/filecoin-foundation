@@ -15,7 +15,7 @@ seo:
     Foundation Dev Grant spotlight. Learn more about their work.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network._ [_Learn more_](https://grants.filecoin.io/) _about Filecoin Foundation’s Dev Grants program, and_ [_read up_](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) _on Wave 9 recipients._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. [Learn more](https://grants.filecoin.io/) about Filecoin Foundation’s Dev Grants program, and [read up](https://filecoinfoundation.medium.com/new-wave-9-developer-grant-recipients-d3f92868ba1f) on Wave 9 recipients._
 
 DataStation is a platform that enhances the decentralized storage experience on the Filecoin network by providing storage providers and clients with standardized storage performance data in a format that's both easy to store and to understand. This information aids clients in building the right plan for their storage needs and bridges the gap between decentralized storage providers and enterprise clients seeking to leverage the Filecoin network for data storage.
 
