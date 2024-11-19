@@ -53,7 +53,7 @@ export function getCMSFieldOptions(
   }
 
   if (nestedFieldName.length > 0) {
-    return getCMSFieldOptions(fields, nestedFieldName.join('.'))
+    return getCMSFieldOptions(currentField.fields, nestedFieldName.join('.'))
   }
 
   return currentField.options || []
