@@ -30,7 +30,8 @@ const slideFromStyles = {
   },
 } as const
 
-const animationStyles = 'transition ease-in-out duration-500 sm:duration-700'
+const animationStylesEnter = 'transition ease-out duration-500'
+const animationStylesLeave = 'transition ease-in duration-300'
 
 export function SlideOver({
   open,
@@ -46,10 +47,10 @@ export function SlideOver({
       <Dialog className="relative z-10" onClose={setOpen}>
         <TransitionChild
           as={Fragment}
-          enter={animationStyles}
+          enter={animationStylesEnter}
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave={animationStyles}
+          leave={animationStylesLeave}
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -66,8 +67,8 @@ export function SlideOver({
             >
               <TransitionChild
                 as={Fragment}
-                enter={clsx('transform', animationStyles)}
-                leave={clsx('transform', animationStyles)}
+                enter={clsx('transform', animationStylesEnter)}
+                leave={clsx('transform', animationStylesLeave)}
                 enterFrom={closedPosition}
                 enterTo={openPosition}
                 leaveFrom={openPosition}
