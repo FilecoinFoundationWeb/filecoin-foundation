@@ -30,7 +30,7 @@ export function MobileTableOfContents() {
       >
         <ListboxButton text={selectedOption.name} />
 
-        <ListboxOptions matchButtonWidth>
+        <ListboxOptions width="button">
           {options.map((option) => (
             <ListboxOption key={option.id} option={option} />
           ))}

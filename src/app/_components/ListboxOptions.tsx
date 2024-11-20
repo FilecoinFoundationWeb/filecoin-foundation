@@ -11,20 +11,30 @@ type HeadlessUIAnchorProps = NonNullable<
 >
 type Position = Extract<HeadlessUIAnchorProps, string>
 
-type ListboxOptionsProps = {
+export type ListboxOptionsProps = {
   as?: ElementType
   position?: Position
-  matchButtonWidth?: boolean
+  width?: keyof typeof widthClasses
   children: React.ReactNode
 }
 
 const GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX = 8
 
+const widthClasses = {
+  auto: 'w-auto',
+  button: 'w-[var(--button-width)]',
+  xs: 'w-[16rem]',
+  sm: 'w-[20rem]',
+  md: 'w-[24rem]',
+  lg: 'w-[28rem]',
+  xl: 'w-[32rem]',
+} as const
+
 export function ListboxOptions({
   as = 'ul',
   children,
   position = 'bottom start',
-  matchButtonWidth,
+  width = 'auto',
 }: ListboxOptionsProps) {
   return (
     <HeadlessUIListboxOptions
@@ -33,7 +43,7 @@ export function ListboxOptions({
       anchor={{ to: position, gap: GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX }}
       className={clsx(
         'min-w-[var(--button-width)] rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2',
-        matchButtonWidth && 'w-[var(--button-width)]',
+        widthClasses[width],
       )}
     >
       {children}

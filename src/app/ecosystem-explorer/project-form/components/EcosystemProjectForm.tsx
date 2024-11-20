@@ -119,7 +119,7 @@ export function EcosystemProjectForm({
           placeholder="Select year"
           options={yearOptions}
           disabled={isSubmitting}
-          innerWidth="w-40"
+          buttonWidth="w-40"
         />
 
         <ControlledFormTextarea<EcosystemProjectFormData>
@@ -155,6 +155,8 @@ export function EcosystemProjectForm({
               placeholder="Select topic"
               options={subCategoryOptions}
               disabled={isSubmitting}
+              optionsWidth="lg"
+              optionsPosition="bottom end"
             />
           </div>
         </div>
