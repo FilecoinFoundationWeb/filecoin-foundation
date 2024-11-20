@@ -9,7 +9,8 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategorySettings, getCategoryLabel } from '@/utils/categoryUtils'
+import { getCategoryLabel } from '@/utils/categoryUtils'
+import { getFieldSettings } from '@/utils/cmsFieldUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
@@ -60,7 +61,7 @@ const posts = getBlogPostsData()
 const sortOptions = getSortOptions(blogSortConfigs)
 
 const { options: categoryOptions, validIds: validCategoryIds } =
-  getCategorySettings({ collectionName: 'blog_posts' })
+  getFieldSettings({ collectionName: 'blog_posts', fieldName: 'category' })
 
 const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
 const featuredPost = getBlogPostData(featuredPostSlug)

@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 
-import { getCategorySettings } from '@/utils/categoryUtils'
+import { getFieldSettings } from '@/utils/cmsFieldUtils'
 
 import { createCategoryTests } from '@/support/categoryUtils'
 
-const { validIds: validCategoryIds } = getCategorySettings({
+const { validIds: validCategoryIds } = getFieldSettings({
   collectionName: 'blog_posts',
+  fieldName: 'category',
 })
 
 createCategoryTests({

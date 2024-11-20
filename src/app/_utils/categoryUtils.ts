@@ -2,15 +2,12 @@ import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
 import { type CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
-import { getFieldSettings } from '@/utils/cmsFieldUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName
   category: string
 }
-
-const CATEGORY_FIELD_NAME = 'category'
 
 export function getCategoryDataFromDirectory(directoryPath: string) {
   const categoriesData =
@@ -22,14 +19,6 @@ export function getCategoryDataFromDirectory(directoryPath: string) {
   })
 
   return categoryMap
-}
-
-export function getCategorySettings({
-  collectionName,
-}: {
-  collectionName: CMSCollectionName
-}) {
-  return getFieldSettings({ collectionName, fieldName: CATEGORY_FIELD_NAME })
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
@@ -47,7 +36,7 @@ export function getCategoryLabel({
   category,
 }: GetCategoryLabelParams) {
   const { fields } = getCollectionConfig(collectionName)
-  const categoryOptions = getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
   const option = categoryOptions.find((option) => option.value === category)
 
   return option ? option.label : category
