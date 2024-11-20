@@ -4,7 +4,9 @@ created-on: 2023-05-03T08:06:03.608Z
 updated-on: 2023-05-03T08:06:03.608Z
 published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
-location: Paris, France
+location:
+  primary: Paris, France
+  region: europe
 start-date: 2022-07-22T00:00:00.000Z
 end-date: 2022-07-23T00:00:00.000Z
 image:

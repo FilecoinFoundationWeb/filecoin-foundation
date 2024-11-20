@@ -4,7 +4,9 @@ created-on: 2024-01-29T15:55:19.827Z
 updated-on: 2024-01-29T15:55:19.834Z
 published-on: 2024-01-29T15:55:19.842Z
 category: supported-sponsored
-location: Navarro, CA
+location:
+  primary: Navarro, CA
+  region: north-america
 external-link:
   url: https://dwebcamp.org/
 start-date: 2024-08-07T14:55:19.871Z

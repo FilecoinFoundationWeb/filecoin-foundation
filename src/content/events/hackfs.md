@@ -4,7 +4,8 @@ created-on: 2023-05-03T08:06:35.161Z
 updated-on: 2023-05-03T08:06:35.161Z
 published-on: 2023-05-03T08:22:38.798Z
 category: supported-sponsored
-location: Virtual
+location:
+  primary: Virtual
 external-link:
   url: https://www.youtube.com/watch?v=RWxd9X2bKfo
 start-date: 2021-07-29T22:00:00.000Z

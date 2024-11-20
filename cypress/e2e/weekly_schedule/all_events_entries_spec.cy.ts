@@ -1,10 +1,13 @@
 import { PATHS } from '@/constants/paths'
 
-import { getCategorySettings } from '@/utils/categoryUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
 import { createCategoryTests } from '@/support/categoryUtils'
 
-const { validCategoryIds } = getCategorySettings('event_entries')
+const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'event_entries',
+  fieldName: 'category',
+})
 
 createCategoryTests({
   pathConfig: PATHS.EVENTS,

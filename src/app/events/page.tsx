@@ -10,12 +10,10 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import {
-  getEventsCategorySettings,
-  getCategoryLabel,
-} from '@/utils/categoryUtils'
+import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -56,7 +54,11 @@ type Props = {
 }
 
 const events = getEventsData()
-const { categoryOptions, validCategoryIds } = getEventsCategorySettings()
+const { options: categoryOptions, validIds: validCategoryIds } =
+  getCMSFieldOptionsAndValidIds({
+    collectionName: 'event_entries',
+    fieldName: 'category',
+  })
 
 const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
   path: PATHS.EVENTS,
