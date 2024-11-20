@@ -8,7 +8,9 @@ description: Join us at SXSW for the Decentralized Web Gateway, powered by
   Filecoin Foundation, to learn more about the benefits of decentralization and
   how these decentralized tools can protect civil liberties and preserve
   humanity’s most important information.
-location: Austin, TX
+location:
+  primary: Austin, TX
+  region: north-america
 external-link:
   url: https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y
 start-date: 2022-03-15T07:23:50.000Z

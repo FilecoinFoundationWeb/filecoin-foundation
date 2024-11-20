@@ -13,5 +13,5 @@ export function getEventMetaData(event: Event) {
   const formattedEndDate = endDate ? ` - ${formatDate(endDate)}` : ''
   const formattedDate = `${formattedStartDate}${formattedEndDate}`
 
-  return location ? [formattedDate, location] : [formattedDate]
+  return [formattedDate, location.primary]
 }

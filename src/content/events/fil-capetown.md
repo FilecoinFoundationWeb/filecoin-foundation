@@ -4,7 +4,9 @@ created-on: 2023-11-08T13:58:58.089Z
 updated-on: 2023-11-08T13:58:58.102Z
 published-on: 2023-11-08T13:58:58.110Z
 category: supported-sponsored
-location: Cape Town, Africa
+location:
+  primary: Cape Town, South Africa
+  region: africa
 external-link:
   url: https://fil-capetown.io/
 start-date: 2023-11-21T13:58:58.117Z

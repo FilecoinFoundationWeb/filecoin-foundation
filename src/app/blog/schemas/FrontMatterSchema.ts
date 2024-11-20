@@ -1,11 +1,14 @@
 import { z } from 'zod'
 
-import { getCategorySettings } from '@/utils/categoryUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
-const { validCategoryIds } = getCategorySettings('blog_posts')
+const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'blog_posts',
+  fieldName: 'category',
+})
 
 const CategorySchema = createEnumSchema(validCategoryIds)
 

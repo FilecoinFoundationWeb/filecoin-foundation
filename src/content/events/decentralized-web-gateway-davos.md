@@ -9,7 +9,9 @@ description: Filecoin Foundation, in partnership with CNBC and CoinDesk, will
   Switzerland, May 22-26. The gathering will be held in the prominent FEG Davos
   venue, across the street from the WEF gates, and will feature three full days
   of programming, receptions, and A-List celebrity events.
-location: Davos, Switzerland
+location:
+  primary: Davos, Switzerland
+  region: europe
 start-date: 2022-05-22T12:00:00.000Z
 image:
   src: /assets/images/64521829e09e4e566257e24c_dweb-gateway-davos.jpg

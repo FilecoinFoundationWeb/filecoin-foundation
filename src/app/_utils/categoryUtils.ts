@@ -1,5 +1,5 @@
 import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
-import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
+import { type CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
@@ -7,20 +7,6 @@ import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName
   category: string
-}
-
-const CATEGORY_FIELD_NAME = 'category'
-
-function transformCategoryDataToSettings(options: Array<CMSFieldOption>) {
-  return options.map((option) => ({
-    id: option.value,
-    name: option.label,
-  }))
-}
-
-function getCategoryData(collectionName: CMSCollectionName) {
-  const { fields } = getCollectionConfig(collectionName)
-  return getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
 }
 
 export function getCategoryDataFromDirectory(directoryPath: string) {
@@ -33,21 +19,6 @@ export function getCategoryDataFromDirectory(directoryPath: string) {
   })
 
   return categoryMap
-}
-
-export function getCategorySettings(collectionName: CMSCollectionName) {
-  const rawCategories = getCategoryData(collectionName)
-  const categoryOptions = transformCategoryDataToSettings(rawCategories)
-  const categoryIds = categoryOptions.map((setting) => setting.id)
-
-  return { categoryOptions, validCategoryIds: categoryIds }
-}
-
-export function getEventsCategorySettings() {
-  const eventSettings = getCategorySettings('event_entries')
-  const { categoryOptions, validCategoryIds } = eventSettings
-
-  return { categoryOptions, validCategoryIds }
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
@@ -65,7 +36,7 @@ export function getCategoryLabel({
   category,
 }: GetCategoryLabelParams) {
   const { fields } = getCollectionConfig(collectionName)
-  const categoryOptions = getCMSFieldOptions(fields, CATEGORY_FIELD_NAME)
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
   const option = categoryOptions.find((option) => option.value === category)
 
   return option ? option.label : category
