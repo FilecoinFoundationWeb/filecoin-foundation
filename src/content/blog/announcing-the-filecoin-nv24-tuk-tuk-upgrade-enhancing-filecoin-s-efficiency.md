@@ -6,7 +6,7 @@ published-on: 2024-11-20T23:53:00.000Z
 category: ecosystem
 description: The Filecoin network has completed its NV24 upgrade, marking another significant step in enhancing the network's security, efficiency, and developer capabilities.
 image:
-  src: /assets/images/asset-2-_-nv24-upgrade.webp
+  src: /assets/images/blog-post-header-nv24-upgrade.webp
 seo:
   twitter:
     card: summary
