@@ -2,12 +2,15 @@ import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 
-type FieldParams = {
+type CMSFieldOptionsAndValidIdsParams = {
   collectionName: CMSCollectionName
   fieldName: string
 }
 
-export function getFieldSettings({ collectionName, fieldName }: FieldParams) {
+export function getCMSFieldOptionsAndValidIds({
+  collectionName,
+  fieldName,
+}: CMSFieldOptionsAndValidIdsParams) {
   const { fields } = getCollectionConfig(collectionName)
   const cmsOptions = getCMSFieldOptions(fields, fieldName)
   const options = mapCMSOptionsToComponentFormat(cmsOptions)

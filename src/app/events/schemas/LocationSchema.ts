@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { getFieldSettings } from '@/utils/cmsFieldUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { createEnumSchema } from '@/utils/zodUtils'
 
 type Location = {
@@ -8,7 +8,7 @@ type Location = {
   region?: string
 }
 
-const { validIds: validRegionIds } = getFieldSettings({
+const { validIds: validRegionIds } = getCMSFieldOptionsAndValidIds({
   collectionName: 'event_entries',
   fieldName: 'location.region',
 })

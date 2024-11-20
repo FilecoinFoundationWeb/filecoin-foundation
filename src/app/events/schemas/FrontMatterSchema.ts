@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { getFieldSettings } from '@/utils/cmsFieldUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
@@ -10,7 +10,7 @@ import { ScheduleSchema } from './ScheduleSchema'
 import { SpeakersSchema } from './SpeakerSchema'
 import { SponsorsSchema } from './SponsorSchema'
 
-const { validIds: validCategoryIds } = getFieldSettings({
+const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
   collectionName: 'event_entries',
   fieldName: 'category',
 })

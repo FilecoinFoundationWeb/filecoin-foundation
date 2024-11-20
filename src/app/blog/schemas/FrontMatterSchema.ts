@@ -1,11 +1,11 @@
 import { z } from 'zod'
 
-import { getFieldSettings } from '@/utils/cmsFieldUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
-const { validIds: validCategoryIds } = getFieldSettings({
+const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
   collectionName: 'blog_posts',
   fieldName: 'category',
 })
