@@ -22,7 +22,7 @@ export function FormLabel({
       {...rest}
       as={as}
       className={clsx(
-        'inline-block text-base font-bold capitalize text-brand-100',
+        'inline-block text-base font-bold text-brand-100',
         hideLabel && 'sr-only',
       )}
     >
