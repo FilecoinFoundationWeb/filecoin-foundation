@@ -30,7 +30,7 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
       primary: z.string(),
       region: RegionSchema.optional(),
     })
-    .optional(),
+    .strict(),
   'external-link': z
     .object({
       url: z.string().url(),

@@ -23,28 +23,6 @@ type GetLocationProps = {
   slug: Event['slug']
 }
 
-function getLocation({
-  location,
-  externalLink,
-  slug,
-}: GetLocationProps): LocationType {
-  if (!location) {
-    return undefined
-  }
-
-  if (location.primary === 'Virtual') {
-    return {
-      '@type': 'VirtualLocation',
-      url: externalLink?.url || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
-    }
-  }
-
-  return {
-    '@type': 'Place',
-    name: location.primary,
-  }
-}
-
 export function generateStructuredData(data: Event): WithContext<EventSchema> {
   const {
     slug,
@@ -64,7 +42,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
   })
 
   const eventAttendanceMode =
-    location?.primary === 'Virtual'
+    location.primary === 'Virtual'
       ? SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL
       : SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL
 
@@ -76,8 +54,26 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     description,
     startDate: startDate.toISOString(),
     endDate: (endDate || startDate)?.toISOString(),
-    ...(eventLocation && { location: eventLocation }),
+    location: eventLocation,
     image: image?.src,
     url: `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
+  }
+}
+
+function getLocation({
+  location,
+  externalLink,
+  slug,
+}: GetLocationProps): LocationType {
+  if (location.primary === 'Virtual') {
+    return {
+      '@type': 'VirtualLocation',
+      url: externalLink?.url || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
+    }
+  }
+
+  return {
+    '@type': 'Place',
+    name: location.primary,
   }
 }
