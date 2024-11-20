@@ -99,7 +99,7 @@ Filecoin Foundation is committed to creating more pathways for Web2 companies to
 
 And the network will continue to grow thanks to the thousands of contributors around the world who are helping to make Filecoin an indispensable layer of the next generation of the web. Looking for more ways to get involved?
 
-[Attend a Filecoin event](/events). [Become a storage provider](https://destor.com/destor-network/overview?utm_campaign=sp-nav&utm_content=en-us&utm_medium=referral&utm_source=filecoin). Apply for a [dev grant](/grants). Join the [governance conversation](/governance). Sign up for the [Orbit ambassador program](/orbit) and help build communities of Filecoin supporters in your backyard. There are dozens of ways to support the growth of the Filecoin ecosystem.
+[Attend a Filecoin event](/events). [Become a storage provider](https://destor.com/destor-network/overview). Apply for a [dev grant](/grants). Join the [governance conversation](/governance). Sign up for the [Orbit ambassador program](/orbit) and help build communities of Filecoin supporters in your backyard. There are dozens of ways to support the growth of the Filecoin ecosystem.
 
 ## Thank You
 
