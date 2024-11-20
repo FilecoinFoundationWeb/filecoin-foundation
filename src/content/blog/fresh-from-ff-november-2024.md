@@ -14,7 +14,7 @@ seo:
   description: "Check out the latest updates about what Filecoin Foundation has been up to."
 ---
 
-Announcing new speakers for [FIL Bangkok](https://lu.ma/aqyqwupe?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=collaboration-with-aethir-solana-leverages-filecoin-and-zk-storage-and-more-from-singapore) and [FIL Dev Summit](https://www.fildev.io/FDS-5)! Get ready for a week of events dedicated to the future of decentralized storage. FIL Bangkok is bringing together the brightest minds in Web3 to tackle the industry’s biggest challenges and opportunities – from restoring trust in an AI-driven web to revolutionizing data infrastructure. If you’re unable to join us in person, tune into the FIL Bangkok livestream on Nov 11.
+Announcing new speakers for [FIL Bangkok](https://lu.ma/aqyqwupe) and [FIL Dev Summit](https://www.fildev.io/FDS-5)! Get ready for a week of events dedicated to the future of decentralized storage. FIL Bangkok is bringing together the brightest minds in Web3 to tackle the industry’s biggest challenges and opportunities – from restoring trust in an AI-driven web to revolutionizing data infrastructure. If you’re unable to join us in person, tune into the FIL Bangkok livestream on Nov 11.
 
 [Filecoin Mainnet Marks Four Years](/blog/filecoin-mainnet-marks-four-years)! On October 15, we’re celebrating the four-year anniversary of Filecoin Mainnet launch. Since 2020, Filecoin has become the world’s largest decentralized storage network. Read more about the past year's highlights and check out what's in store for the year ahead on Filecoin Foundation blog. And check out our birthday gift to the community – an [animated corgi sticker pack](https://hub.fil.org/stickers) featuring our very own Biscuit!
 

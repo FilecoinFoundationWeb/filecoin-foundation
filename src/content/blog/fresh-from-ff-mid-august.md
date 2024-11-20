@@ -14,7 +14,7 @@ seo:
     with the latest FIPs, governance proposals, and community events.
 ---
 
-[NV23 upgrade](/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), codenamed "Waffle," went live on Mainnet on August 6. This upgrade brings significant enhancements focused on simplified processes, optimized proof mechanisms, streamlined sector commitments, enhanced cryptographic support, and strengthened security. Several Filecoin Improvement Proposals (FIPs), such as [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), help the network operate more efficiently and lay the groundwork for more flexible data commitment methods.
+[NV23 upgrade](/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security), codenamed "Waffle," went live on Mainnet on August 6. This upgrade brings significant enhancements focused on simplified processes, optimized proof mechanisms, streamlined sector commitments, enhanced cryptographic support, and strengthened security. Several Filecoin Improvement Proposals (FIPs), such as [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md), help the network operate more efficiently and lay the groundwork for more flexible data commitment methods.
 
 Messari’s [State of Filecoin Q2 2024 report is out](https://messari.io/report/state-of-filecoin-q2-2024). Read it for a detailed overview of the network, including increased network utilization rates, more data client onboarding, continued network maturation as the DePIN backbone for AI advancements, and more.
 
@@ -41,7 +41,7 @@ Join [FIL Singapore](/events/fil-singapore-alongside-token2049-2024), hosted by 
 
 ### Fil Plus
 
-- Rolling allocator applications are open for submissions. Allocators are a core part of the Fil+ program and help incentivize the storage of useful data on the Filecoin network. Allocators designing new pathways, such as those listed in the [Request for Allocators (RFA)](https://blog.allocator.tech/2024/05/rolling-applications-are-open-for.html?utm_source=upload.fil.org&utm_medium=referral&utm_campaign=network-insights-from-messari-s-q2-2024-filecoin-report), are receiving priority review.
+- Rolling allocator applications are open for submissions. Allocators are a core part of the Fil+ program and help incentivize the storage of useful data on the Filecoin network. Allocators designing new pathways, such as those listed in the [Request for Allocators (RFA)](https://blog.allocator.tech/2024/05/rolling-applications-are-open-for.html), are receiving priority review.
 - [The August 6 Allocator Call is available on YouTube](https://youtu.be/wvsaEgabhc8). If you would like to attend these meetings live, add the [Fil+ Allocator Governance calendar](https://calendar.google.com/calendar/embed?src=c_k1gkfoom17g0j8c6bam6uf43j0%40group.calendar.google.com&ctz=America%2FLos_Angeles).
 
 ### Comms, Marketing, & Events

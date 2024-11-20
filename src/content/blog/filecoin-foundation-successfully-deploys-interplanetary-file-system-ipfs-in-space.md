@@ -29,7 +29,7 @@ This mission, conducted with Lockheed Martin-developed software, demonstrated ho
 
 As part of the demonstration, [the IPFS white paper](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf) and an image of FF’s mascot (Biscuit, the “FileCorgi”) were transmitted to an orbiting LM LINUSS ™CubeSat and back using a purpose-built IPFS implementation that ran atop [Lockheed Martin’s SmartSat technology](https://www.lockheedmartin.com/content/lockheed-martin/en-us/news/features/2024/smartsat-equipped-satellite-uploads-new-mission-on-orbit.html), a software platform that makes it easier to dynamically add and quickly change missions in orbit through simple app uploads.
 
-This successful demonstration follows nearly three years of collaboration. FF and Lockheed Martin Space initially [announced the collaboration](/blog/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space/) in Davos in May 2022, and [announced details of the mission](/blog/ff-x-lockheed-martin-mission-announcement/) in Davos in January 2023.
+This successful demonstration follows nearly three years of collaboration. FF and Lockheed Martin Space initially [announced the collaboration](/blog/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space) in Davos in May 2022, and [announced details of the mission](/blog/ff-x-lockheed-martin-mission-announcement) in Davos in January 2023.
 
 “IPFS is called the ‘interplanetary’ file system because, from the beginning, IPFS was envisioned as a technology that could enable networking in space,” said Marta Belcher, president and chair of FF. “We could not be more thrilled to make that vision a reality, thanks to the amazing team at Lockheed Martin Space.”
 

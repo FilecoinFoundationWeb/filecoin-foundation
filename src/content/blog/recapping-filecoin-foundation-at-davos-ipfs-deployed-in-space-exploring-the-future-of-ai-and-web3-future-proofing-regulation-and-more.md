@@ -57,7 +57,7 @@ Commissioner Pham applauded the successful completion of this mission, adding, â
   allowfullscreen>
 </iframe>
 
-And ICYMI: [Dive deeper](/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/) into why this milestone is critical for advancing networking in space.
+And ICYMI: [Dive deeper](/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space) into why this milestone is critical for advancing networking in space.
 
 **Using Al, Blockchain, and Predictive Modeling to Protect our Planet**
 

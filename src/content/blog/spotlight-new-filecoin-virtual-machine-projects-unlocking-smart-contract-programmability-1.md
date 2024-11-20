@@ -30,7 +30,7 @@ Last month, the [Skyr upgrade](https://filecoinfoundation.medium.com/announcing-
 
 **New FVM Projects**
 
-A few recent projects creating new FVM tools and services with support from Filecoin Foundation’s [Dev Grants program](/grants/):
+A few recent projects creating new FVM tools and services with support from Filecoin Foundation’s [Dev Grants program](/grants):
 
 - **Zondax** — Combining FVM and Assemblyscript, Zondax is developing an easy-to-use software development kit (SDK) for the developers that are more familiar with Javascript-like languages. Zondax will build a set of tools to use AssemblyScript to write new smart contracts that will compile to WebAssembly (or WASM) code at the end. Currently, there are two SDKs for FVM smart contracts: Go and Rust. Zondax will add the popular and widely-used Javascript/Typescript family. Learn more about [Zondax’s FVM project](https://docs.zondax.ch/filecoin-virtual-machine/fvm-as-sdk/) and watch a [demo](https://www.youtube.com/watch?v=V-hg_bxsFLc&list=PL_0VrY55uV18DBdFIkN0jdBMF8nadVxWQ&index=7).
 - **Polyphene** — At the forefront of development for the native FVM, Polyphene is integrating a testing library into the main code base and developing a high-level Rust SDK to make the FVM accessible to everyone. Watch a [demo](https://www.youtube.com/watch?v=5vC0otJ5AYU&list=PL_0VrY55uV18DBdFIkN0jdBMF8nadVxWQ&index=13) of Polyphene’s Rust SDK and developers can learn more about the possibilities with the SDK in the [documentation repository](https://github.com/polyphene/fvm-rs-sdk-docs). The project is currently in beta phase and Polyphene is looking for feedback on this SDK. Learn more about [Polyphene’s FVM project](https://polyphene.github.io/fvm-rs-sdk-docs/) here.

@@ -53,16 +53,16 @@ Filecoin isn't just another storage solution; it's effectively a prototype versi
 
 **Open and Accessible**: Anyone can join the Filecoin network, whether as a storage provider, data client, or developer. This fosters an open and inclusive environment, which is crucial for realizing a distributed model for DePIN networks.
 
-**Innovation Mindset**: The Filecoin community is constantly pushing boundaries, developing new features and functionality that enhance the network's capabilities and security. For example, the Filecoin Virtual Machine was rolled out in 2023 – bringing smart contract programmability and EVM compatibility to the network.\
-**\
-Real-World Impact**: At the end of the day, a DePIN network needs actual users to be of any value. There are hundreds of [real-world institutions](https://destor.com/en-us/filecoin-network-client-explorer) storing data on Filecoin, including universities and research institutions, media properties, non-profit groups, leading Web3 projects like Solana, and more.
+**Innovation Mindset**: The Filecoin community is constantly pushing boundaries, developing new features and functionality that enhance the network's capabilities and security. For example, the Filecoin Virtual Machine was rolled out in 2023 – bringing smart contract programmability and EVM compatibility to the network.
+
+**Real-World Impact**: At the end of the day, a DePIN network needs actual users to be of any value. There are hundreds of [real-world institutions](https://destor.com/en-us/filecoin-network-client-explorer) storing data on Filecoin, including universities and research institutions, media properties, non-profit groups, leading Web3 projects like Solana, and more.
 
 The Filecoin network is also uniquely positioned to empower other DePIN networks:
 
-- Retrievals/Content Delivery Networks: [Filecoin Saturn](/ecosystem-projects/filecoin-saturn/), [Filecoin Station](/ecosystem-projects/filecoin-station/), and similar projects create decentralized mechanisms for retrieving and distributing data stored on the Filecoin network with lightning-fast data retrievals and minimal latency.
+- Retrievals/Content Delivery Networks: [Filecoin Saturn](/ecosystem-explorer/filecoin-saturn), [Filecoin Station](/ecosystem-explorer/filecoin-station), and similar projects create decentralized mechanisms for retrieving and distributing data stored on the Filecoin network with lightning-fast data retrievals and minimal latency.
 - Compute: Projects like [io.net](https://io.net/) allow individuals to rent out GPU capacity and cloud computing resources, while companies like Expanso are bringing decentralized compute solutions to enterprise.
-- Video Infrastructure: [Livepeer](/ecosystem-projects/livepeer/) is an open video infrastructure network for live and on-demand streaming.
-- Sensors: [WeatherXM](/ecosystem-projects/weatherxm/) is a community-powered weather network that rewards weather station owners and provides accurate weather services to individuals, businesses, and research organizations. The data collected by WeatherXM stations are stored on IPFS, allowing permissionless access.
+- Video Infrastructure: [Livepeer](/ecosystem-explorer/livepeer) is an open video infrastructure network for live and on-demand streaming.
+- Sensors: [WeatherXM](/ecosystem-explorer/weatherxm) is a community-powered weather network that rewards weather station owners and provides accurate weather services to individuals, businesses, and research organizations. The data collected by WeatherXM stations are stored on IPFS, allowing permissionless access.
 
 ## Path Forward
 

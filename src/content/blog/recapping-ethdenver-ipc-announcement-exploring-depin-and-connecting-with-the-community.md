@@ -38,7 +38,7 @@ Sarah Thiam gave a [Crash Course to Getting Started with InterPlanetary Consensu
 
 ![](/assets/images/ghikuhlwoaauewy.jpeg)
 
-[Fluence announced the upcoming mainnet launch](https://filecoin.io/blog/posts/interplanetary-consensus--fluence-power-the-future-of-cloudless-computing/?utm_source=upload.fil.org&utm_medium=newsletter&utm_campaign=the-depin-opportunity) of its Interplanetary Consensus (IPC)-powered decentralized serverless computing platform, which offers cheaper, provable, and truly decentralized computing for Web3 builders. With Fluence and IPC, developers will be able to create and monetize next-gen web applications.
+[Fluence announced the upcoming mainnet launch](https://filecoin.io/blog/posts/interplanetary-consensus--fluence-power-the-future-of-cloudless-computing) of its Interplanetary Consensus (IPC)-powered decentralized serverless computing platform, which offers cheaper, provable, and truly decentralized computing for Web3 builders. With Fluence and IPC, developers will be able to create and monetize next-gen web applications.
 
 ![](/assets/images/ghywxzyxwaahyct.jpeg)
 

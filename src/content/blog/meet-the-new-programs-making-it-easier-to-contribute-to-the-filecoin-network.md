@@ -31,7 +31,7 @@ Faster, more robust retrievals will unlock the next generation of Filecoin growt
 
 ![](/assets/images/643e68c395dde7170b2b8771_screen-shot-2023-01-05-at-12-01-41-pm.png)
 
-Learn how to set up a [Filecoin Saturn](https://strn.network/) node and learn more in [The Block](https://www.theblock.co/post/180450/filecoin-releases-new-content-delivery-network-called-saturn) and [Axios.](https://www.axios.com/newsletters/axios-crypto-db0eb110-3321-4160-b08f-93f104c5700a.html?utm_source=newsletter&utm_medium=email&utm_campaign=newsletter_axioscryptocurrency&stream=business)
+Learn how to set up a [Filecoin Saturn](https://strn.network/) node and learn more in [The Block](https://www.theblock.co/post/180450/filecoin-releases-new-content-delivery-network-called-saturn) and [Axios.](https://www.axios.com/newsletters/axios-crypto-db0eb110-3321-4160-b08f-93f104c5700a.html)
 
 **Filecoin Station**
 

@@ -16,7 +16,7 @@ tech:
   - filecoin
   - ipfs
 repo: https://github.com/ArtifactLabsOfficial/EIPs
-featured-content: https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain/
+featured-content: https://fil.org/blog/how-artifact-labs-is-preserving-and-connecting-history-and-culture-using-the-blockchain
 twitter: https://twitter.com/ArtifactLabs_
 seo:
   description: Artifact Labs stores and shares cultural artifacts on the

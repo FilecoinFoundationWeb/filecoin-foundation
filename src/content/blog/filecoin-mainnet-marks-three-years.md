@@ -15,7 +15,7 @@ seo:
 
 This week, Filecoin Foundation celebrates the three-year anniversary of the Filecoin network’s Mainnet launch. And our vision for a better, more decentralized web has never been more urgent.
 
-Today’s internet is largely centralized, and most people say they don’t like that their data is in the hands of a few, ultra-powerful companies. In fact, 65% of Americans say they do not feel in control of how the information they share with websites and companies is used, according to a 2022 [Filecoin Foundation survey](/blog/new-survey-american-consumers-are-ready-to-change-up-to-web3/).
+Today’s internet is largely centralized, and most people say they don’t like that their data is in the hands of a few, ultra-powerful companies. In fact, 65% of Americans say they do not feel in control of how the information they share with websites and companies is used, according to a 2022 [Filecoin Foundation survey](/blog/new-survey-american-consumers-are-ready-to-change-up-to-web3).
 
 Since 2020, Filecoin’s open ecosystem of developers, storage providers, storage clients and other network participants has become the world’s largest decentralized storage network:
 
@@ -39,11 +39,11 @@ Our community soared to new heights in the past three years and accomplished som
 
 - **UC Berkeley** is collaborating with Seal Storage for [storing physics research](https://www.newswire.ca/news-releases/uc-berkeley-engages-seal-storage-web3-technology-to-advance-innovative-neutrino-physics-research-883282087.html) on the network.
 - **Atlas Experiment at CERN** also collaborated with Seal Storage on a pilot project to explore decentralized cloud storage as an efficient and cost-effective option for archival data storage. In this R&D project, Seal Storage Technology has provided 10 pebibytes (PiBs) of cloud-based storage capacity to the ATLAS Experiment.
-- **GenRAIT** is leveraging Filecoin to store critical [genomics data](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data/).
+- **GenRAIT** is leveraging Filecoin to store critical [genomics data](/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data).
 - **The Starling Lab and Rolling Stone** created an [interactive Web3 archive](https://investigation.rollingstone.com/dj-photo-war-crimes-bosnia/) to authenticate and preserve records of alleged war crimes. The complete digital records are stored on Filecoin and IPFS.
 - China's fastest-growing host of photographs, illustrations, and vector files, **Ewesion**, uses Filecoin for [data preservation](https://filecoinfoundation.medium.com/storage-company-ewesion-leverages-filecoin-network-for-data-preservation-e36cecc84e0e).
-- **DeSci Labs** is tackling the “Replication Crisis,” in scientific research by [leveraging Filecoin](/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science/) and IPFS. Results reported in scientific papers are frequently unable to be reproduced and independently verified by other researchers – and DeSci is using decentralized data storage to help address this problem.
-- **Democracy’s Library** has uploaded over 1 petabyte of data to the Filecoin network with [datasets](/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/) that include information collected by the Internet Archive in a 16-year-old project, called the “End of Term Crawl,” capturing and saving U.S. government websites at the end of presidential administrations.
+- **DeSci Labs** is tackling the “Replication Crisis,” in scientific research by [leveraging Filecoin](/blog/case-study-desci-labs-and-filecoin-enabling-a-future-of-open-science) and IPFS. Results reported in scientific papers are frequently unable to be reproduced and independently verified by other researchers – and DeSci is using decentralized data storage to help address this problem.
+- **Democracy’s Library** has uploaded over 1 petabyte of data to the Filecoin network with [datasets](/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network) that include information collected by the Internet Archive in a 16-year-old project, called the “End of Term Crawl,” capturing and saving U.S. government websites at the end of presidential administrations.
 
 Filecoin Foundation (FF) is one of many contributors to the Filecoin ecosystem, facilitating governance of the Filecoin network, funding research and development projects, and supporting the growth of the Filecoin ecosystem and community.
 
@@ -85,4 +85,4 @@ FIP001v2 initiative is a project led by Filecoin Foundation introducing changes 
 
 Today, we say a big thank you to the storage providers, builders, researchers, enterprises, clients, and all those helping to build a better internet and preserve humanity's most important information!
 
-**To celebrate, we’re offering 10% on the [Filecoin Foundation Swag Store](https://swag.fil.org/) with the code HBDFILECOIN (ends on Friday, Oct. 20).**
+**To celebrate, we’re offering 10% on the [Filecoin Foundation Swag Store](https://swag.fil.org) with the code HBDFILECOIN (ends on Friday, Oct. 20).**

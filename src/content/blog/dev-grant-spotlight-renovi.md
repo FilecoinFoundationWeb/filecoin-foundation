@@ -14,7 +14,7 @@ seo:
     Filecoin Foundation Dev Grant. Explore their work.
 ---
 
-_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants/)._
+_This is the latest post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](/grants)._
 
 [If you build it they will come](https://en.wikipedia.org/wiki/Field_of_Dreams). That’s the aim of Renovi, a metaverse marketplace and design studio that works with global brands and businesses to create, develop, and implement their Web3 strategies.
 
