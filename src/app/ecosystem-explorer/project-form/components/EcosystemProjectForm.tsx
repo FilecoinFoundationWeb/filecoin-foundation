@@ -94,10 +94,7 @@ export function EcosystemProjectForm({
         />
 
         <Field className={formFieldStyle}>
-          <FormLabel
-            label="Which technology does your project utilize?"
-            as="p"
-          />
+          <FormLabel label="Which technology does your project use?" as="p" />
           <div className="flex flex-col gap-4">
             <ControlledFormCheckbox<EcosystemProjectFormData>
               name="tech.filecoin"
@@ -116,7 +113,7 @@ export function EcosystemProjectForm({
         <ControlledFormListbox<EcosystemProjectFormData>
           name="yearJoined"
           label="What year did your project start using Filecoin or IPFS?"
-          placeholder="Select year"
+          placeholder="Select Year"
           options={yearOptions}
           disabled={isSubmitting}
           buttonWidth="w-40"
@@ -132,7 +129,7 @@ export function EcosystemProjectForm({
 
         <ControlledFormTextarea<EcosystemProjectFormData>
           name="networkUseCase"
-          label="How do you use the Filecoin Network?"
+          label="How does your project use the Filecoin network?"
           placeholder="Describe how your project uses the Filecoin network..."
           characterLimit={NETWORK_USE_CASE_CHARACTER_LIMIT}
           disabled={isSubmitting}
@@ -143,7 +140,7 @@ export function EcosystemProjectForm({
             <ControlledFormListbox<EcosystemProjectFormData>
               name="category"
               label="Category"
-              placeholder="Select category"
+              placeholder="Select Category"
               options={categoryOptions}
               disabled={isSubmitting}
             />
@@ -162,7 +159,7 @@ export function EcosystemProjectForm({
 
         <ControlledFormFileInput<EcosystemProjectFormData>
           name="files"
-          label="Choose a Logo for your project"
+          label="Choose a logo for your project"
           accept={['.png', '.jpg', '.svg', '.webp']}
           maxSize={MAX_FILE_SIZE_IN_BYTES}
           disabled={isSubmitting}
@@ -194,7 +191,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="youtubeUrl"
-          label="Youtube Video URL"
+          label="Youtube video URL"
           placeholder="Video URL"
           type="url"
           disabled={isSubmitting}
@@ -203,7 +200,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="githubUrl"
-          label="GitHub Repository URL"
+          label="GitHub repository URL"
           placeholder="GitHub Repository URL"
           type="url"
           disabled={isSubmitting}
@@ -212,7 +209,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="xUrl"
-          label="X (Twitter) Profile URL"
+          label="X (Twitter) profile URL"
           placeholder="X (Twitter) Profile URL"
           type="url"
           disabled={isSubmitting}
