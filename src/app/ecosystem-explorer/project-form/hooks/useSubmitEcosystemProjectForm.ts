@@ -1,6 +1,9 @@
 import * as Sentry from '@sentry/nextjs'
 
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+
 import { createDateFromYear } from '@/utils/dateUtils'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
@@ -46,8 +49,7 @@ export function useSubmitEcosystemProjectForm() {
       Sentry.captureException(error)
       updateSearchParams({
         status: 'error',
-        message:
-          "We couldn't submit your project. Please try again or email us at info@fil.org",
+        message: `We couldn't submit your project. Please try again or email us at ${extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}`,
       })
     }
   }
