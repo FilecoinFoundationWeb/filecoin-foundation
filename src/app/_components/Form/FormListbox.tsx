@@ -3,12 +3,15 @@ import theme from 'tailwindcss/defaultTheme'
 
 import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 import { type IconProps } from '@/components/Icon'
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption, type OptionType } from '@/components/ListboxOption'
+import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import {
+  ListboxOption,
+  type OptionType,
+} from '@/components/Listbox/ListboxOption'
 import {
   ListboxOptions,
   type ListboxOptionsProps,
-} from '@/components/ListboxOptions'
+} from '@/components/Listbox/ListboxOptions'
 
 export type FormListboxProps = {
   value: OptionType

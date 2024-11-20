@@ -2,9 +2,12 @@
 
 import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption, type OptionType } from '@/components/ListboxOption'
-import { ListboxOptions } from '@/components/ListboxOptions'
+import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import {
+  ListboxOption,
+  type OptionType,
+} from '@/components/Listbox/ListboxOption'
+import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import type { OptionType } from '@/components/ListboxOption'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 import {
   BRIEF_CHARACTER_LIMIT,

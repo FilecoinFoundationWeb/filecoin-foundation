@@ -3,9 +3,9 @@
 import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 import type { Column } from '@tanstack/react-table'
 
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
-import { ListboxOptions } from '@/components/ListboxOptions'
+import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import { ListboxOption } from '@/components/Listbox/ListboxOption'
+import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
