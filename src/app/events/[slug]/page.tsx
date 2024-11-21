@@ -57,6 +57,7 @@ export default function EventEntry({ params }: EventProps) {
     lumaCalendarLink,
     startDate,
     endDate,
+    location,
     lumaEventsSection,
     schedule,
     speakers,
@@ -85,7 +86,11 @@ export default function EventEntry({ params }: EventProps) {
         <PageHeader
           title={title}
           description={description}
-          metaData={getEventMetaData(data)}
+          metaData={getEventMetaData({
+            startDate,
+            endDate,
+            location: location.primary,
+          })}
           cta={buildCtaArray({
             links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
             eventHasConcluded,

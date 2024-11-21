@@ -115,7 +115,11 @@ export default function Events({ searchParams }: Props) {
         isFeatured
         title={featuredEvent.title}
         description={featuredEvent.description}
-        metaData={getEventMetaData(featuredEvent)}
+        metaData={getEventMetaData({
+          startDate: featuredEvent.startDate,
+          endDate: featuredEvent.endDate,
+          location: featuredEvent.location.primary,
+        })}
         image={{
           ...(featuredEvent.image || graphicsData.imageFallback.data),
           alt: '',
@@ -185,6 +189,9 @@ export default function Events({ searchParams }: Props) {
                         category,
                         description,
                         externalLink,
+                        startDate,
+                        endDate,
+                        location,
                       } = event
 
                       const isFirstTwoImages = i < 2
@@ -200,10 +207,14 @@ export default function Events({ searchParams }: Props) {
                         <Card
                           key={slug}
                           title={title}
-                          metaData={getEventMetaData(event)}
                           borderColor="brand-400"
                           textIsClamped={true}
                           tagLabel={tagLabel}
+                          metaData={getEventMetaData({
+                            startDate,
+                            endDate,
+                            location: location.primary,
+                          })}
                           image={{
                             ...(image || graphicsData.imageFallback.data),
                             alt: '',
