@@ -16,7 +16,6 @@ import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
-import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -42,8 +41,6 @@ import { getInvolvedData } from './data/getInvolvedData'
 import { useEventFilters } from './hooks/useEventFilters'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
-import { getFilterOptions } from './utils/getFilterOptions'
-import type { CMSCollectionName } from '@/types/cmsConfig'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),

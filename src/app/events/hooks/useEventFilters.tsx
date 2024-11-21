@@ -5,8 +5,9 @@ import { CATEGORY_KEY, REGION_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
-import { getNestedValue, useFilter } from '../utils/useFilter'
 import { normalizeQueryParam } from '@/_utils/queryUtils'
+
+import { useFilter } from '../utils/useFilter'
 
 type UseEventFiltersProps = {
   searchParams: NextServerSearchParams
