@@ -3,7 +3,6 @@
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
 
 import type { CategoryMap } from '@/types/categoryTypes'
 
@@ -26,6 +25,10 @@ import {
 } from '../constants'
 import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
 import { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
+import type {
+  EcosystemProjectFormData,
+  EcosystemProjectFormDataWithoutLogo,
+} from '../types'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
@@ -33,14 +36,10 @@ import { FormSection } from './FormSection'
 
 type StringOrUndefined = string | undefined
 
-export type EcosystemProjectFormData = z.infer<
-  typeof EcosystemProjectFormSchema
->
-
 type ProjectFormProps = {
   categoryData: CategoryMap
   subCategoryData: CategoryMap
-  initialValues: EcosystemProjectFormData
+  initialValues: EcosystemProjectFormDataWithoutLogo
 }
 
 export function EcosystemProjectForm({
@@ -87,7 +86,7 @@ export function EcosystemProjectForm({
 
       <FormSection title="Project Details">
         <ControlledFormInput<EcosystemProjectFormData>
-          name="projectName"
+          name="title"
           label="Project Name"
           placeholder="Project Name"
           disabled={isSubmitting}
@@ -147,9 +146,9 @@ export function EcosystemProjectForm({
           </div>
           <div className="min-w-0 sm:w-1/2">
             <ControlledFormListbox<EcosystemProjectFormData>
-              name="topic"
-              label="Topic"
-              placeholder="Select topic"
+              name="subcategory"
+              label="Subcategory"
+              placeholder="Select Subcategory"
               options={subCategoryOptions}
               disabled={isSubmitting}
               optionsPosition="bottom end"
@@ -158,7 +157,7 @@ export function EcosystemProjectForm({
         </div>
 
         <ControlledFormFileInput<EcosystemProjectFormData>
-          name="files"
+          name="logo"
           label="Choose a logo for your project"
           accept={['.png', '.jpg', '.svg', '.webp']}
           maxSize={MAX_FILE_SIZE_IN_BYTES}

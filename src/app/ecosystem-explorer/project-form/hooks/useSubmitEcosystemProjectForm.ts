@@ -7,38 +7,39 @@ import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { type EcosystemProjectFormData } from '../components/EcosystemProjectForm'
-import { YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL } from '../constants'
 import { submitProjectToGithub } from '../services/github'
 import {
   convertToBase64,
   getFileFormat,
 } from '../services/github/utils/fileUtils'
+import type { EcosystemProjectFormData } from '../types'
+import { formatYoutubeUrl } from '../utils/formatYoutubeUrl'
 
 export function useSubmitEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
 
   return async function submit(data: EcosystemProjectFormData) {
-    const logo = data.files[0]
+    const logo = data.logo
     const yearJoined = Number(data.yearJoined.name)
 
     try {
       const pullRequest = await submitProjectToGithub({
         name: data.name,
         email: data.email,
-        projectName: data.projectName,
+        projectName: data.title,
         logo: {
           base64: await convertToBase64(logo),
           format: getFileFormat(logo.name),
         },
         category: data.category.id,
-        subcategories: [data.topic.id],
+        subcategories: [data.subcategory.id],
         tech: keepTruthyKeysInArray(data.tech),
         shortDescription: data.briefSummary,
         longDescription: data.networkUseCase,
         yearJoinedISO: createDateFromYear(yearJoined).toISOString(),
         websiteUrl: data.websiteUrl,
-        youtubeEmbedUrl: formatYoutubeEmbedUrl(data.youtubeUrl),
+        youtubeEmbedUrl:
+          data.youtubeUrl && formatYoutubeUrl(data.youtubeUrl, { to: 'embed' }),
         githubUrl: data.githubUrl,
         xUrl: data.xUrl,
         timestampISO: new Date().toISOString(),
@@ -59,8 +60,4 @@ function keepTruthyKeysInArray(object: Record<string, boolean>) {
   const entries = Object.entries(object)
   const truthyValueEntries = entries.filter(([, value]) => Boolean(value))
   return truthyValueEntries.map(([key]) => key)
-}
-
-function formatYoutubeEmbedUrl(url?: string) {
-  return url?.replace(YOUTUBE_BASE_URL, YOUTUBE_EMBED_BASE_URL)
 }

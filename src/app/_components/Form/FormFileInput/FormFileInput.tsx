@@ -16,17 +16,20 @@ type ExcludedHeadlessUIProps =
   | 'multiple'
   | 'invalid'
 
+type FileExtension = `.${string}`
+type FileOrNull = File | null
+
 export type FormFileInputProps = {
-  files: Array<File> | null
-  accept: Array<`.${string}`>
+  file: FileOrNull
+  accept: Array<FileExtension> | ReadonlyArray<FileExtension>
   maxSize: number
   description?: string | React.ReactNode
-  onChange: (files: Array<File> | null) => void
+  onChange: (file: FileOrNull) => void
 } & Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
   FormFieldProps
 
 export function FormFileInput({
-  files,
+  file,
   label,
   hideLabel,
   error,
@@ -37,26 +40,21 @@ export function FormFileInput({
   accept,
   ...rest
 }: FormFileInputProps) {
-  const loadedFile = files?.[0]
-
-  function resetFiles() {
+  function resetFile() {
     onChange(null)
   }
 
-  function loadFiles(e: React.ChangeEvent<HTMLInputElement>) {
+  function loadFile(e: React.ChangeEvent<HTMLInputElement>) {
     const files = e.target.files
-
-    if (files) {
-      onChange(Array.from(files))
-    }
+    onChange(files ? files[0] : null)
   }
 
   return (
     <FormField label={label} hideLabel={hideLabel} error={error}>
       <div>
         <div className="group relative h-60 w-full md:h-52">
-          {loadedFile ? (
-            <SelectedFile file={loadedFile} onReset={resetFiles} />
+          {file ? (
+            <SelectedFile file={file} onReset={resetFile} />
           ) : (
             <>
               <Input
@@ -67,7 +65,7 @@ export function FormFileInput({
                 invalid={Boolean(error)}
                 multiple={false}
                 className="peer absolute inset-0 z-10 opacity-0 ui-disabled:cursor-not-allowed ui-not-disabled:cursor-pointer"
-                onChange={loadFiles}
+                onChange={loadFile}
               />
               <UploadInstructions
                 accept={accept}

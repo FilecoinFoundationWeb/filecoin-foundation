@@ -31,7 +31,7 @@ export const EcosystemProjectFormSchema = z.object({
     .string()
     .min(1, { message: 'Your email is required' })
     .email({ message: 'The email format is invalid' }),
-  projectName: z
+  title: z
     .string()
     .min(1, { message: 'Your project name is required' })
     .max(NETWORK_USE_CASE_CHARACTER_LIMIT, {
@@ -42,7 +42,7 @@ export const EcosystemProjectFormSchema = z.object({
       filecoin: z.boolean(),
       ipfs: z.boolean(),
     })
-    .refine(validateOneCheckboxSelected, {
+    .refine(validateOneTechSelected, {
       message: 'Select at least one technology',
       path: ['root'],
     }),
@@ -58,11 +58,10 @@ export const EcosystemProjectFormSchema = z.object({
       message: 'The description is too long',
     }),
   category: OptionSchema,
-  topic: OptionSchema,
-  files: z
-    .array(z.instanceof(File))
-    .refine(validateOneFileSelected, { message: 'A logo is required' })
-    .refine(validateFileSizes, { message: 'Logo size exceeds the limit' }),
+  subcategory: OptionSchema,
+  logo: z
+    .instanceof(File, { message: 'A logo is required' })
+    .refine(validateFileSize, { message: 'Logo size exceeds the limit' }),
   websiteUrl: z.string().url({ message: 'Invalid website URL' }),
   youtubeUrl: z
     .string()
@@ -102,17 +101,11 @@ function validateXUrlFormat(url: string) {
   return url.includes(X_BASE_URL) || url.includes(TWITTER_BASE_URL)
 }
 
-function validateOneFileSelected(files: Array<File>) {
-  return files.length > 0
+function validateFileSize(file: File) {
+  return file.size <= MAX_FILE_SIZE_IN_BYTES
 }
 
-function validateFileSizes(files: Array<File>) {
-  return files.every((file) => file.size <= MAX_FILE_SIZE_IN_BYTES)
-}
-
-function validateOneCheckboxSelected(
-  tech: Record<'ipfs' | 'filecoin', boolean>,
-) {
+function validateOneTechSelected(tech: Record<'ipfs' | 'filecoin', boolean>) {
   return tech.filecoin || tech.ipfs
 }
 
