@@ -1,83 +1,94 @@
+import type { CMSCollectionName } from '@/types/cmsConfig'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { useFilter } from '@/hooks/useFilter'
 import { CATEGORY_KEY, REGION_KEY } from '@/constants/searchParams'
-import type { CMSCollectionName } from '@/types/cmsConfig'
 
-const FILTERS = {
-  CATEGORY: 'category',
-  REGION: 'location.region',
-  REGION_PRIMARY: 'location.primary',
-} as const
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
+
+import { getNestedValue, useFilter } from '../utils/useFilter'
+import { normalizeQueryParam } from '@/_utils/queryUtils'
+
+type UseEventFiltersProps = {
+  searchParams: NextServerSearchParams
+  entries: Array<any>
+  filters: {
+    fields: {
+      CATEGORY: string
+      LOCATION: string
+    }
+  }
+}
+
+const EVENT_COLLECTION_NAME = 'event_entries' as CMSCollectionName
 
 export const useEventFilters = ({
   searchParams,
   entries,
-  collectionName,
-}: {
-  searchParams: NextServerSearchParams
-  entries: Array<any>
-  collectionName: CMSCollectionName
-}) => {
-  const { category, location } = getCMSOptions(collectionName)
+  filters,
+}: UseEventFiltersProps) => {
+  const { category, location } = createFilterOptions(filters)
 
-  const {
-    locationQuery,
-    categoryQuery,
-    filteredByCategory,
-    filteredByLocation,
-  } = applyFilters({
+  const validatedCategoryQuery = getValidatedQuery(
     searchParams,
-    entries,
-    categoryValidIds: category.validIds,
-    locationValidIds: location.validIds,
-  })
+    CATEGORY_KEY,
+    category.validIds,
+  )
+
+  const validatedLocationQuery = getValidatedQuery(
+    searchParams,
+    REGION_KEY,
+    location.validIds,
+  )
+
+  const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
+    useFilter({
+      searchParams,
+      entries,
+      validatedOption: validatedLocationQuery,
+      filterKey: 'location.region',
+    })
+
+  const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
+    useFilter({
+      searchParams,
+      entries: filteredByLocation,
+      validatedOption: validatedCategoryQuery,
+      filterKey: 'category',
+    })
 
   const filteredResults = filteredByCategory
 
-  const dynamicCategoryOptions = category.options.map((option) => {
-    const count = filteredByLocation.filter(
-      (entry) => entry.category === option.id,
-    ).length
-
-    return {
-      ...option,
-      count,
-    }
-  })
-
-  const totalCount = dynamicCategoryOptions.reduce(
-    (sum, option) => sum + option.count,
-    0,
+  const finalCategoryOptions = createCategoryOptionsWithCounts(
+    category.options,
+    filteredByLocation,
   )
-  const allOption = { id: 'all', name: 'All', count: totalCount }
-  const finalCategoryOptions = [allOption, ...dynamicCategoryOptions]
 
   return {
     filteredResults,
-    category: {
-      query: categoryQuery,
-      options: finalCategoryOptions,
-    },
-    location: {
-      query: locationQuery,
-      options: location.options,
+    filters: {
+      category: {
+        query: categoryQuery,
+        options: finalCategoryOptions,
+      },
+      location: {
+        query: locationQuery,
+        options: location.options,
+      },
     },
   }
 }
 
-const getCMSOptions = (collectionName: CMSCollectionName) => {
+const createFilterOptions = (filters: UseEventFiltersProps['filters']) => {
   const { validIds: validCategoryIds, options: categoryOptions } =
     getCMSFieldOptionsAndValidIds({
-      collectionName,
-      fieldName: FILTERS.CATEGORY,
+      collectionName: EVENT_COLLECTION_NAME,
+      fieldName: filters.fields.CATEGORY,
     })
 
   const { validIds: validLocationIds, options: locationOptions } =
     getCMSFieldOptionsAndValidIds({
-      collectionName,
-      fieldName: FILTERS.REGION,
+      collectionName: EVENT_COLLECTION_NAME,
+      fieldName: filters.fields.LOCATION,
     })
 
   return {
@@ -86,43 +97,35 @@ const getCMSOptions = (collectionName: CMSCollectionName) => {
   }
 }
 
-const applyFilters = ({
-  searchParams,
-  entries,
-  categoryValidIds,
-  locationValidIds,
-}: {
-  searchParams: NextServerSearchParams
-  entries: Array<any>
-  categoryValidIds: string[]
-  locationValidIds: string[]
-}) => {
-  const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
-    useFilter({
-      searchParams,
-      entries,
-      validIds: locationValidIds,
-      filterKey: {
-        searchParamKey: REGION_KEY,
-        fieldName: FILTERS.REGION,
-      },
-    })
+function getValidatedQuery(
+  searchParams: NextServerSearchParams,
+  searchParamKey: string,
+  validIds: Array<string>,
+) {
+  const normalizedQuery = normalizeQueryParam(searchParams, searchParamKey)
 
-  const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
-    useFilter({
-      searchParams,
-      entries: filteredByLocation,
-      validIds: categoryValidIds,
-      filterKey: {
-        searchParamKey: CATEGORY_KEY,
-        fieldName: FILTERS.CATEGORY,
-      },
-    })
-
-  return {
-    locationQuery,
-    categoryQuery,
-    filteredByCategory,
-    filteredByLocation,
+  if (!normalizedQuery) {
+    return undefined
   }
+  return validIds.includes(normalizedQuery || '') ? normalizedQuery : undefined
+}
+
+const createCategoryOptionsWithCounts = (
+  categoryOptions: Array<{ id: string; name: string }>,
+  entries: Array<any>,
+) => {
+  const dynamicCategoryOptions = categoryOptions.map((option) => ({
+    ...option,
+    count: entries.filter((entry) => entry.category === option.id).length,
+  }))
+
+  const totalCount = dynamicCategoryOptions.reduce(
+    (sum, option) => sum + option.count,
+    0,
+  )
+
+  return [
+    { id: 'all', name: 'All', count: totalCount },
+    ...dynamicCategoryOptions,
+  ]
 }

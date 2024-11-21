@@ -43,6 +43,7 @@ import { useEventFilters } from './hooks/useEventFilters'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 import { getFilterOptions } from './utils/getFilterOptions'
+import type { CMSCollectionName } from '@/types/cmsConfig'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -92,19 +93,20 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  // const { category: category2, location: location2 } = getFilterOptions(
-  //   'event_entries',
-  //   {
-  //     category: 'category',
-  //     'location.region': 'location.region',
-  //   },
-  // )
+  const FILTERS = {
+    fields: {
+      CATEGORY: 'category',
+      LOCATION: 'location.region',
+    },
+  }
 
-  const { filteredResults, category, location } = useEventFilters({
+  const { filteredResults, filters } = useEventFilters({
     searchParams,
     entries: sortedResults,
-    collectionName: 'event_entries',
+    filters: FILTERS,
   })
+
+  const { category, location } = filters
 
   const { options: categoryOptions, query: categoryQuery } = category
   const { options: locationOptions, query: locationQuery } = location

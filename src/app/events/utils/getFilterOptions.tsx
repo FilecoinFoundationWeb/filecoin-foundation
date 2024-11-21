@@ -1,5 +1,6 @@
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { type CMSCollectionName } from '@/types/cmsConfig'
+
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
 type EventFilter = 'category' | 'location.region'
 
