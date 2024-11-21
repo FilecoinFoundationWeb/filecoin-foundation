@@ -16,7 +16,7 @@ website: https://archive.org/details/democracys-library
 tech:
   - ipfs
   - filecoin
-featured-content: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network/
+featured-content: https://fil.org/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network
 twitter: https://twitter.com/internetarchive
 seo:
   description:

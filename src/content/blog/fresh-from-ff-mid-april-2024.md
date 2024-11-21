@@ -57,7 +57,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 **Marketing & Comms**
 
 - Don't miss your chance to be featured in the [Filecoin Ecosystem Digest](https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form), a digital and in-print magazine to showcase the innovation unfolding across the ecosystem. Submit an abstract for consideration by April 19.
-- Explore FF's deep dive into [Decentralized Compute](/blog/unleashing-the-power-of-decentralized-compute-with-filecoin/) and how the Filecoin network can foster a more open, resilient, and democratized computing ecosystem.
+- Explore FF's deep dive into [Decentralized Compute](/blog/unleashing-the-power-of-decentralized-compute-with-filecoin) and how the Filecoin network can foster a more open, resilient, and democratized computing ecosystem.
 
 **Events**
 

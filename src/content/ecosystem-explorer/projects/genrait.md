@@ -13,7 +13,7 @@ tech:
 image:
   src: /assets/images/65974a4a0cea1eb2d9c5b69b_genrait-logo.png
 website: "https://www.genrait.com"
-featured-content: "https://fil.org/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data/"
+featured-content: "https://fil.org/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data"
 subcategories:
   - health
 seo:

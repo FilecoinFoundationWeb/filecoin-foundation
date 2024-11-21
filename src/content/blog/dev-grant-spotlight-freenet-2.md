@@ -15,7 +15,7 @@ seo:
     Foundation Dev Grant. Learn more about their project.
 ---
 
-_This is the latest post in our series highlighting the builders creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s_ [_Dev Grants program_](https://grants.filecoin.io/)_._
+_This is the latest post in our series highlighting the builders creating new tools and services on the Filecoin network. Learn more about Filecoin Foundation’s [Dev Grants program](https://grants.filecoin.io/)._
 
 [Freenet](https://freenetproject.org/) is free software that lets users anonymously chat, share files, use email, browse, and publish Freenet-accessible websites known as “freesites.” Users contribute to the Freenet network by offering bandwidth and a portion of their hard drive (called the “data store”) for storing files.
 

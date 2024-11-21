@@ -32,7 +32,7 @@ Our [North America team](https://austinorbit.io) is based in Austin, Texas, and 
 
 **Do you want to be a  Filecoin Orbit Ambassador?**
 
-The Filecoin Orbit program engages with the next generation of builders at top universities through workshops at hackathons, blockchain conferences, and blockchain clubs. Orbit Ambassadors have delivered educational talks at the University of Oxford, National University of Singapore, Hong Kong University of Science and Technology, University of Pennsylvania, Indian Institutes of Technology, University of Lagos, and many more. Read more about the Filecoin Orbit program milestones in the [2023 Orbit Year in Review](/events/).
+The Filecoin Orbit program engages with the next generation of builders at top universities through workshops at hackathons, blockchain conferences, and blockchain clubs. Orbit Ambassadors have delivered educational talks at the University of Oxford, National University of Singapore, Hong Kong University of Science and Technology, University of Pennsylvania, Indian Institutes of Technology, University of Lagos, and many more. Read more about the Filecoin Orbit program milestones in the [2023 Orbit Year in Review](/blog/orbit-year-in-review-growing-a-global-community-of-builders).
 
 And apply to become a [Filecoin Orbit ambassador](https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C) for your city or university.
 
@@ -47,4 +47,4 @@ And apply to become a [Filecoin Orbit ambassador](https://airtable.com/appAGdqyY
 - July 8 - 11, 2024 - FIL Brussels alongside EthCC
 - ~~Sept 4 - 10, 2024 - FIL Seoul Network Base alongside Korea Blockchain Week~~
 
-Find the full [Filecoin Foundation event schedule](/events/).
+Find the full [Filecoin Foundation event schedule](/events).

@@ -16,7 +16,7 @@ const FIL_PLUS_URLS = {
   filPlusParticipants:
     'https://docs.filecoin.io/basics/how-storage-works/filecoin-plus#filecoin-processes-and-participants',
   notary: 'https://github.com/filecoin-project/Allocator-Governance',
-  site: 'https://plus.fil.org/',
+  site: 'https://plus.fil.org',
   slack: 'https://filecoinproject.slack.com/archives/C01DLAPKDGX',
 }
 
@@ -57,11 +57,11 @@ const FILECOIN_FOUNDATION_URLS = {
   governance: {
     filPoll: {
       label: 'Fil Poll',
-      href: 'https://poll.fil.org/',
+      href: 'https://poll.fil.org',
     },
     powerVote: {
       label: 'PowerVote',
-      href: 'https://vote.fil.org/',
+      href: 'https://vote.fil.org',
     },
     social: {
       github: {

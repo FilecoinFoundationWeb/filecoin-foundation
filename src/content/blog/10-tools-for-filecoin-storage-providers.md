@@ -34,7 +34,7 @@ Sealing is an important but nuanced process in the Filecoin ecosystem. However, 
 
 **Software-as-a-Service**
 
-Software solutions can significantly enhance user experience and operational efficiency. Companies like [GhostDrive](https://ghostdrive.com/), Holon, and [SteelDome](https://www.steeldomecyber.com/?doing_wp_cron=1695407596.3194169998168945312500) offer software tools, such as a consumer user interface, data recovery, protection, and optimization. And the [Filecoin REST API](https://filecoin-project.github.io/filecoin-http-api/?utm_source) provides clear documentation for the S3 gateway.
+Software solutions can significantly enhance user experience and operational efficiency. Companies like [GhostDrive](https://ghostdrive.com/), Holon, and [SteelDome](https://www.steeldomecyber.com/?doing_wp_cron=1695407596.3194169998168945312500) offer software tools, such as a consumer user interface, data recovery, protection, and optimization. And the [Filecoin REST API](https://filecoin-project.github.io/filecoin-http-api) provides clear documentation for the S3 gateway.
 
 **Client Services**
 
@@ -58,4 +58,4 @@ Don’t miss these speakers and sessions:
 
 Check out the full [speaker lineup](https://fil-vegas.io/#speakers) and [agenda](https://fil-vegas.io/#agenda). Still need to register? Secure your spot for [FIL Vegas](https://fil-vegas.io/register/) now.
 
-_P.S. A version of this content was featured in the latest edition of The Upload, Filecoin Foundation’s newsletter for big ideas and news about the Filecoin ecosystem and the decentralized web. Sign up to receive: [upload.fil.org/](https://upload.fil.org/)._
+_P.S. A version of this content was featured in the latest edition of The Upload, Filecoin Foundation’s newsletter for big ideas and news about the Filecoin ecosystem and the decentralized web. Sign up to receive: [upload.fil.org](https://upload.fil.org)._
