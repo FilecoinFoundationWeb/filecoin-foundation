@@ -15,7 +15,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
@@ -43,6 +42,7 @@ import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
+import { getMetaData } from './utils/getMetaData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -115,7 +115,7 @@ export default function Events({ searchParams }: Props) {
         isFeatured
         title={featuredEvent.title}
         description={featuredEvent.description}
-        metaData={getEventMetaData({
+        metaData={getMetaData({
           startDate: featuredEvent.startDate,
           endDate: featuredEvent.endDate,
           location: featuredEvent.location.primary,
@@ -210,7 +210,7 @@ export default function Events({ searchParams }: Props) {
                           borderColor="brand-400"
                           textIsClamped={true}
                           tagLabel={tagLabel}
-                          metaData={getEventMetaData({
+                          metaData={getMetaData({
                             startDate,
                             endDate,
                             location: location.primary,
