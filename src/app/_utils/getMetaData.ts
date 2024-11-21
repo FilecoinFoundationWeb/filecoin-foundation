@@ -7,11 +7,20 @@ export function getBlogPostMetaData(publishedOn?: BlogPost['publishedOn']) {
   return publishedOn ? [formatDate(publishedOn)] : []
 }
 
-export function getEventMetaData(event: Event) {
-  const { startDate, endDate, location } = event
+type getEventMetaDataParams = {
+  startDate: Event['startDate']
+  endDate?: Event['endDate']
+  location: Event['location']['primary']
+}
+
+export function getEventMetaData({
+  startDate,
+  endDate,
+  location,
+}: getEventMetaDataParams) {
   const formattedStartDate = formatDate(startDate)
   const formattedEndDate = endDate ? ` - ${formatDate(endDate)}` : ''
   const formattedDate = `${formattedStartDate}${formattedEndDate}`
 
-  return [formattedDate, location.primary]
+  return [formattedDate, location]
 }
