@@ -14,7 +14,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-import { getBlogPostMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
@@ -41,6 +40,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
+import { getMetaData } from './utils/getMetaData'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -112,7 +112,7 @@ export default function Blog({ searchParams }: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getBlogPostMetaData(featuredPost.publishedOn)}
+        metaData={getMetaData(featuredPost.publishedOn)}
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',
@@ -203,7 +203,7 @@ export default function Blog({ searchParams }: Props) {
                           title={title}
                           description={description}
                           textIsClamped={true}
-                          metaData={getBlogPostMetaData(publishedOn)}
+                          metaData={getMetaData(publishedOn)}
                           tagLabel={tagLabel}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,

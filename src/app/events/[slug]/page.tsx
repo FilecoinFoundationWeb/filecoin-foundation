@@ -4,7 +4,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { getEventMetaData } from '@/utils/getMetaData'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -14,6 +13,7 @@ import { TagGroup } from '@/components/TagGroup'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
+import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
 
 import { EventsSection } from './components/EventsSection'
@@ -57,6 +57,7 @@ export default function EventEntry({ params }: EventProps) {
     lumaCalendarLink,
     startDate,
     endDate,
+    location,
     lumaEventsSection,
     schedule,
     speakers,
@@ -85,7 +86,11 @@ export default function EventEntry({ params }: EventProps) {
         <PageHeader
           title={title}
           description={description}
-          metaData={getEventMetaData(data)}
+          metaData={getMetaData({
+            startDate,
+            endDate,
+            location: location.primary,
+          })}
           cta={buildCtaArray({
             links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
             eventHasConcluded,
