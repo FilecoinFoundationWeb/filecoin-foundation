@@ -28,11 +28,17 @@ export function FormTextarea({
   hideLabel,
   characterCount,
   characterLimit,
+  description,
   ...rest
 }: FormTextareaProps) {
   return (
     <Field className={formFieldStyle}>
-      <FormLabel label={label} hideLabel={hideLabel} />
+      <FormLabel
+        label={label}
+        hideLabel={hideLabel}
+        description={description}
+      />
+
       <Textarea
         {...rest}
         invalid={Boolean(error)}

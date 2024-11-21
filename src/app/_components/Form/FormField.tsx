@@ -15,6 +15,7 @@ export function FormField({
   hideLabel,
   addOptionalToLabel,
   error,
+  description,
   children,
 }: FormFieldProps) {
   return (
@@ -23,6 +24,7 @@ export function FormField({
         label={label}
         hideLabel={hideLabel}
         addOptionalToLabel={addOptionalToLabel}
+        description={description}
       />
       {children}
       <FormError error={error} />

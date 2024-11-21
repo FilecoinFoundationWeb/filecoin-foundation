@@ -130,6 +130,7 @@ export function EcosystemProjectForm({
         <ControlledFormTextarea<EcosystemProjectFormData>
           name="networkUseCase"
           label="How does your project use the Filecoin network?"
+          description="You can use Markdown in this field."
           placeholder="Describe how your project uses the Filecoin network..."
           characterLimit={NETWORK_USE_CASE_CHARACTER_LIMIT}
           disabled={isSubmitting}

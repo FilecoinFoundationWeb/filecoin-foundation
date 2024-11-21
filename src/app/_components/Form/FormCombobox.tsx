@@ -37,6 +37,7 @@ export function FormCombobox<Value extends OptionType = OptionType>({
   error,
   label,
   hideLabel,
+  description,
   options,
   ...rest
 }: FormComboboxProps<Value>) {
@@ -45,7 +46,12 @@ export function FormCombobox<Value extends OptionType = OptionType>({
   const filteredOptions = filterOptions(options, query)
 
   return (
-    <FormField error={error} label={label} hideLabel={hideLabel}>
+    <FormField
+      error={error}
+      label={label}
+      hideLabel={hideLabel}
+      description={description}
+    >
       <div className="relative">
         <Combobox<Value, HeadlessUIMultipleChoiceProp>
           {...rest}

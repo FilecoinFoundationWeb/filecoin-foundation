@@ -1,10 +1,11 @@
-import {
-  Input,
-  Description,
-  type InputProps as HeadlessInputProps,
-} from '@headlessui/react'
+import { Input, type InputProps as HeadlessInputProps } from '@headlessui/react'
 
 import { FormField, type FormFieldProps } from '@/components/Form/FormField'
+
+import {
+  FormLabelDescription,
+  type FormLabelDescriptionProps,
+} from '../FormLabelDescription'
 
 import { SelectedFile } from './SelectedFile'
 import { UploadInstructions } from './UploadInstructions'
@@ -23,7 +24,7 @@ export type FormFileInputProps = {
   file: FileOrNull
   accept: Array<FileExtension> | ReadonlyArray<FileExtension>
   maxSize: number
-  description?: string | React.ReactNode
+  description?: FormLabelDescriptionProps['children']
   onChange: (file: FileOrNull) => void
 } & Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
   FormFieldProps
@@ -77,9 +78,9 @@ export function FormFileInput({
         </div>
 
         {description && (
-          <Description className="mt-4 text-sm text-brand-100">
-            {description}
-          </Description>
+          <div className="mt-4">
+            <FormLabelDescription>{description}</FormLabelDescription>
+          </div>
         )}
       </div>
     </FormField>
