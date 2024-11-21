@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import type { CategoryCounts } from '@/types/categoryTypes'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
@@ -28,7 +27,6 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -44,6 +42,7 @@ import { getInvolvedData } from './data/getInvolvedData'
 import { useEventFilters } from './hooks/useEventFilters'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
+import { getFilterOptions } from './utils/getFilterOptions'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -93,27 +92,27 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
+  // const { category: category2, location: location2 } = getFilterOptions(
+  //   'event_entries',
+  //   {
+  //     category: 'category',
+  //     'location.region': 'location.region',
+  //   },
+  // )
+
   const { filteredResults, category, location } = useEventFilters({
     searchParams,
     entries: sortedResults,
+    collectionName: 'event_entries',
   })
+
+  const { options: categoryOptions, query: categoryQuery } = category
+  const { options: locationOptions, query: locationQuery } = location
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
     entries: filteredResults,
   })
-
-  const {
-    counts: categoryCounts,
-    options: categoryOptions,
-    query: categoryQuery,
-  } = category
-
-  const {
-    counts: locationCounts,
-    options: locationOptions,
-    query: locationQuery,
-  } = location
 
   return (
     <PageLayout>
@@ -136,29 +135,15 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={
-              <CategoryResetButton
-                counts={categoryCounts}
-                isSelected={hasNoFiltersApplied(searchParams)}
-              />
-            }
             category={
-              <Category
-                query={categoryQuery}
-                options={categoryOptions}
-                counts={categoryCounts}
-              />
+              <Category query={categoryQuery} options={categoryOptions} />
             }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
               location={
-                <Region
-                  query={locationQuery}
-                  options={locationOptions}
-                  counts={locationCounts}
-                />
+                <Region query={locationQuery} options={locationOptions} />
               }
               sort={
                 <Sort
@@ -178,18 +163,10 @@ export default function Events({ searchParams }: Props) {
                 />
               }
               category={
-                <Category
-                  query={categoryQuery}
-                  options={categoryOptions}
-                  counts={categoryCounts}
-                />
+                <Category query={categoryQuery} options={categoryOptions} />
               }
               location={
-                <Region
-                  query={locationQuery}
-                  options={locationOptions}
-                  counts={locationCounts}
-                />
+                <Region query={locationQuery} options={locationOptions} />
               }
             />
             <FilterContainer.ContentWrapper>

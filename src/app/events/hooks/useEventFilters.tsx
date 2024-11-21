@@ -1,65 +1,128 @@
 import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
+import { useFilter } from '@/hooks/useFilter'
+import { CATEGORY_KEY, REGION_KEY } from '@/constants/searchParams'
+import type { CMSCollectionName } from '@/types/cmsConfig'
 
-import { useCategory } from '@/hooks/useCategory'
-import { useLocation } from '@/hooks/useLocation'
+const FILTERS = {
+  CATEGORY: 'category',
+  REGION: 'location.region',
+  REGION_PRIMARY: 'location.primary',
+} as const
 
 export const useEventFilters = ({
   searchParams,
   entries,
+  collectionName,
 }: {
   searchParams: NextServerSearchParams
   entries: Array<any>
+  collectionName: CMSCollectionName
 }) => {
-  const { options: categoryOptions, validIds: validCategoryIds } =
-    getCMSFieldOptionsAndValidIds({
-      collectionName: 'event_entries',
-      fieldName: 'category',
-    })
+  const { category, location } = getCMSOptions(collectionName)
 
-  const { options: locationOptions, validIds: validLocationIds } =
-    getCMSFieldOptionsAndValidIds({
-      collectionName: 'event_entries',
-      fieldName: 'location.region',
-    })
-
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
+  const {
+    locationQuery,
+    categoryQuery,
+    filteredByCategory,
+    filteredByLocation,
+  } = applyFilters({
     searchParams,
     entries,
-    validCategoryIds,
+    categoryValidIds: category.validIds,
+    locationValidIds: location.validIds,
   })
 
-  const { locationQuery, categorizedLocationResults, locationCounts } =
-    useLocation({
-      searchParams,
-      entries,
-      validLocationIds,
-    })
+  const filteredResults = filteredByCategory
 
-  const filters = [
-    (entry: any) =>
-      locationQuery === '' || categorizedLocationResults.includes(entry),
-    (entry: any) => categoryQuery === '' || categorizedResults.includes(entry),
-  ]
+  const dynamicCategoryOptions = category.options.map((option) => {
+    const count = filteredByLocation.filter(
+      (entry) => entry.category === option.id,
+    ).length
 
-  const filteredResults = entries.filter((entry) =>
-    filters.every((filterFn) => filterFn(entry)),
+    return {
+      ...option,
+      count,
+    }
+  })
+
+  const totalCount = dynamicCategoryOptions.reduce(
+    (sum, option) => sum + option.count,
+    0,
   )
+  const allOption = { id: 'all', name: 'All', count: totalCount }
+  const finalCategoryOptions = [allOption, ...dynamicCategoryOptions]
 
   return {
     filteredResults,
     category: {
       query: categoryQuery,
-      counts: categoryCounts,
-      options: categoryOptions,
-      validIds: validCategoryIds,
+      options: finalCategoryOptions,
     },
     location: {
       query: locationQuery,
-      counts: locationCounts,
-      options: locationOptions,
-      validIds: validLocationIds,
+      options: location.options,
     },
+  }
+}
+
+const getCMSOptions = (collectionName: CMSCollectionName) => {
+  const { validIds: validCategoryIds, options: categoryOptions } =
+    getCMSFieldOptionsAndValidIds({
+      collectionName,
+      fieldName: FILTERS.CATEGORY,
+    })
+
+  const { validIds: validLocationIds, options: locationOptions } =
+    getCMSFieldOptionsAndValidIds({
+      collectionName,
+      fieldName: FILTERS.REGION,
+    })
+
+  return {
+    category: { validIds: validCategoryIds, options: categoryOptions },
+    location: { validIds: validLocationIds, options: locationOptions },
+  }
+}
+
+const applyFilters = ({
+  searchParams,
+  entries,
+  categoryValidIds,
+  locationValidIds,
+}: {
+  searchParams: NextServerSearchParams
+  entries: Array<any>
+  categoryValidIds: string[]
+  locationValidIds: string[]
+}) => {
+  const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
+    useFilter({
+      searchParams,
+      entries,
+      validIds: locationValidIds,
+      filterKey: {
+        searchParamKey: REGION_KEY,
+        fieldName: FILTERS.REGION,
+      },
+    })
+
+  const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
+    useFilter({
+      searchParams,
+      entries: filteredByLocation,
+      validIds: categoryValidIds,
+      filterKey: {
+        searchParamKey: CATEGORY_KEY,
+        fieldName: FILTERS.CATEGORY,
+      },
+    })
+
+  return {
+    locationQuery,
+    categoryQuery,
+    filteredByCategory,
+    filteredByLocation,
   }
 }

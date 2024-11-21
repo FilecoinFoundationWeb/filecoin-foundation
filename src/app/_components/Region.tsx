@@ -15,10 +15,9 @@ import { RegionListbox } from '@/components/RegionListbox'
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
   options: Array<CategoryOption>
-  counts?: ReturnType<typeof useCategory>['categoryCounts']
 }
 
-export function Region({ query, options, counts }: CategoryProps) {
+export function Region({ query, options }: CategoryProps) {
   const [categoryId, setCategoryId] = useState<CategoryId>(
     query || DEFAULT_CATEGORY,
   )
@@ -30,7 +29,6 @@ export function Region({ query, options, counts }: CategoryProps) {
     <RegionListbox
       selected={selectedCategory}
       options={options}
-      counts={counts}
       onChange={updateCategoryAndParams}
     />
   )

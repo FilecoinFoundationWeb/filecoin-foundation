@@ -16,10 +16,9 @@ import { CategorySidebar } from '@/components/CategorySidebar'
 type CategoryProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
   options: Array<CategoryOption>
-  counts?: ReturnType<typeof useCategory>['categoryCounts']
 }
 
-export function Category({ query, options, counts }: CategoryProps) {
+export function Category({ query, options }: CategoryProps) {
   const [categoryId, setCategoryId] = useState<CategoryId>(
     query || DEFAULT_CATEGORY,
   )
@@ -33,7 +32,6 @@ export function Category({ query, options, counts }: CategoryProps) {
         <CategorySidebar
           selectedId={categoryId}
           options={options}
-          counts={counts}
           onChange={updateCategoryAndParams}
         />
       </div>
@@ -41,7 +39,6 @@ export function Category({ query, options, counts }: CategoryProps) {
         <CategoryListbox
           selected={selectedCategory}
           options={options}
-          counts={counts}
           onChange={updateCategoryAndParams}
         />
       </div>

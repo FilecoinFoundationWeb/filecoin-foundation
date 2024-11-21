@@ -14,6 +14,7 @@ export function getCMSFieldOptionsAndValidIds({
   const { fields } = getCollectionConfig(collectionName)
   const cmsOptions = getCMSFieldOptions(fields, fieldName)
   const options = mapCMSOptionsToComponentFormat(cmsOptions)
+
   const validIds = options.map((setting) => setting.id)
 
   return { options, validIds }

@@ -5,6 +5,7 @@ export type CategoryCounts = Record<CategoryId, number>
 export type CategoryOption = {
   id: CategoryId
   name: string
+  count?: number
 }
 
 export type CategoryYAMLData = {

@@ -1,38 +1,38 @@
-'use client'
+// 'use client'
 
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+// import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
-import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+// import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-import { useCategory } from '@/hooks/useCategory'
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
+// import { useCategory } from '@/hooks/useCategory'
+// import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { CategorySidebar } from '@/components/CategorySidebar'
+// import { CategorySidebar } from '@/components/CategorySidebar'
 
-type CategoryResetButtonProps = {
-  counts: ReturnType<typeof useCategory>['categoryCounts']
-  isSelected: boolean
-}
+// type CategoryResetButtonProps = {
+//   counts: ReturnType<typeof useCategory>['categoryCounts']
+//   isSelected: boolean
+// }
 
-export function CategoryResetButton({
-  counts,
-  isSelected,
-}: CategoryResetButtonProps) {
-  const { resetSearchParams } = useUpdateSearchParams()
-  const totalCount = getTotalCategoryCount(counts)
+// export function CategoryResetButton({
+//   counts,
+//   isSelected,
+// }: CategoryResetButtonProps) {
+//   const { resetSearchParams } = useUpdateSearchParams()
+//   const totalCount = getTotalCategoryCount(counts)
 
-  function handleResetClick() {
-    resetSearchParams()
-  }
+//   function handleResetClick() {
+//     resetSearchParams()
+//   }
 
-  return (
-    <CategorySidebar.Container as="div">
-      <CategorySidebar.Button
-        name={DEFAULT_CATEGORY}
-        isSelected={isSelected}
-        count={totalCount?.[DEFAULT_CATEGORY]}
-        handleClick={handleResetClick}
-      />
-    </CategorySidebar.Container>
-  )
-}
+//   return (
+//     <CategorySidebar.Container as="div">
+//       <CategorySidebar.Button
+//         name={DEFAULT_CATEGORY}
+//         isSelected={isSelected}
+//         count={totalCount?.[DEFAULT_CATEGORY]}
+//         handleClick={handleResetClick}
+//       />
+//     </CategorySidebar.Container>
+//   )
+// }

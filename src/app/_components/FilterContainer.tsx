@@ -16,7 +16,7 @@ type FilterProps = {
 
 type ResultsProps = {
   category: ReactNode
-  results: ReactNode
+  results?: ReactNode
   gapSize?: 'default' | 'wide'
 }
 
