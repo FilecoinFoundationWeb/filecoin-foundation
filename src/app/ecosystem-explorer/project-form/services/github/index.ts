@@ -10,7 +10,6 @@ import { createCommit } from './api/createCommit'
 import { createPR } from './api/createPr'
 import { createTreeBlobs } from './api/createTreeBlobs'
 import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
-import type { AllowedImageFormats } from './utils/fileUtils'
 import {
   getMarkdownTemplate,
   type MarkdownTemplateParams,
@@ -24,7 +23,7 @@ type SubmitProjectParams = {
   yearJoinedISO: string
   logo: {
     base64: string
-    format: AllowedImageFormats
+    format: string
   }
   projectName: MarkdownTemplateParams['projectName']
   category: MarkdownTemplateParams['category']

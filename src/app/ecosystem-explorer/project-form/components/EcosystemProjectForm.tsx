@@ -19,6 +19,7 @@ import { FormLabel } from '@/components/Form/FormLabel'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
+  ALLOWED_IMAGE_FORMATS,
   BRIEF_CHARACTER_LIMIT,
   MAX_FILE_SIZE_IN_BYTES,
   NETWORK_USE_CASE_CHARACTER_LIMIT,
@@ -159,7 +160,7 @@ export function EcosystemProjectForm({
         <ControlledFormFileInput<EcosystemProjectFormData>
           name="logo"
           label="Choose a logo for your project"
-          accept={['.png', '.jpg', '.svg', '.webp']}
+          accept={ALLOWED_IMAGE_FORMATS}
           maxSize={MAX_FILE_SIZE_IN_BYTES}
           disabled={isSubmitting}
           description={

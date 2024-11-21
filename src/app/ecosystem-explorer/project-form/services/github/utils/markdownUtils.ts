@@ -1,10 +1,8 @@
-import type { AllowedImageFormats } from './fileUtils'
-
 export type MarkdownTemplateParams = {
   encryptedName: string
   encryptedEmail: string
   projectName: string
-  imagePath: `${string}.${AllowedImageFormats}`
+  imagePath: string
   category: string
   subcategories: Array<string>
   tech: Array<string>
