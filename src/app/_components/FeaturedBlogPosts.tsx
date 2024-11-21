@@ -4,12 +4,12 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { getBlogPostMetaData } from '@/utils/getMetaData'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { getMetaData } from '@/blog/utils/getMetaData'
 import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const blogPosts = getBlogPostsData()
@@ -36,7 +36,7 @@ export function FeaturedBlogPosts() {
           return (
             <Card
               key={slug}
-              metaData={getBlogPostMetaData(publishedOn)}
+              metaData={getMetaData(publishedOn)}
               tagLabel={tagLabel}
               title={title}
               description={description}
