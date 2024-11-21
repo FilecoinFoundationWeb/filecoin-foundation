@@ -27,7 +27,6 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -41,6 +40,8 @@ import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
+
+import { CategoryResetButton } from '@/components/CategoryResetButton'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -92,11 +93,13 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
-    searchParams,
-    entries: sortedResults,
-    validCategoryIds: validCategoryIds,
-  })
+  const { categoryQuery, categorizedResults, categoryOptionsWithCount } =
+    useCategory({
+      searchParams,
+      entries: sortedResults,
+      validCategoryIds: validCategoryIds,
+      categoryOptions: categoryOptions,
+    })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -133,15 +136,14 @@ export default function Blog({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             results={
               <CategoryResetButton
-                counts={categoryCounts}
+                categoryOptionsWithCount={categoryOptionsWithCount}
                 isSelected={hasNoFiltersApplied(searchParams)}
               />
             }
             category={
               <Category
                 query={categoryQuery}
-                options={categoryOptions}
-                counts={categoryCounts}
+                options={categoryOptionsWithCount}
               />
             }
           />
@@ -169,8 +171,7 @@ export default function Blog({ searchParams }: Props) {
               category={
                 <Category
                   query={categoryQuery}
-                  options={categoryOptions}
-                  counts={categoryCounts}
+                  options={categoryOptionsWithCount}
                 />
               }
             />
