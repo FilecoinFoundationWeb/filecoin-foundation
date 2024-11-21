@@ -10,6 +10,7 @@ type FilterProps = {
   search: ReactNode
   sort: ReactNode
   category?: ReactNode
+  location?: ReactNode
   results?: ReactNode
 }
 
@@ -34,6 +35,7 @@ export function FilterContainer({ children }: LayoutProps) {
 FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   search,
   category,
+  location,
   sort,
   results,
 }: FilterProps) {
@@ -42,6 +44,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
       <div className="flex flex-col gap-3 sm:flex-row">
         {search}
         <div className="flex flex-1 gap-3 sm:flex-row">
+          <div className="w-full sm:w-64 md:w-44">{location}</div>
           <div className="w-full sm:w-64 md:w-44">{category}</div>
           <div className="md:w-44">{sort}</div>
         </div>
@@ -53,11 +56,13 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
 
 FilterContainer.DesktopFilters = function DesktopFilters({
   search,
+  location,
   sort,
 }: FilterProps) {
   return (
     <div className="hidden justify-end gap-6 lg:flex">
       {search}
+      <div>{location}</div>
       <div>{sort}</div>
     </div>
   )

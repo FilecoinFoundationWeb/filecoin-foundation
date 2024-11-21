@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
+import type { CategoryCounts } from '@/types/categoryTypes'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
@@ -13,7 +14,6 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getEventMetaData } from '@/utils/getMetaData'
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -21,7 +21,6 @@ import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -35,12 +34,14 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
+import { Region } from '@/components/Region'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
+import { useEventFilters } from './hooks/useEventFilters'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 
@@ -54,11 +55,6 @@ type Props = {
 }
 
 const events = getEventsData()
-const { options: categoryOptions, validIds: validCategoryIds } =
-  getCMSFieldOptionsAndValidIds({
-    collectionName: 'event_entries',
-    fieldName: 'category',
-  })
 
 const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
   path: PATHS.EVENTS,
@@ -97,16 +93,27 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
+  const { filteredResults, category, location } = useEventFilters({
     searchParams,
     entries: sortedResults,
-    validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: categorizedResults,
+    entries: filteredResults,
   })
+
+  const {
+    counts: categoryCounts,
+    options: categoryOptions,
+    query: categoryQuery,
+  } = category
+
+  const {
+    counts: locationCounts,
+    options: locationOptions,
+    query: locationQuery,
+  } = location
 
   return (
     <PageLayout>
@@ -146,6 +153,13 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
+              location={
+                <Region
+                  query={locationQuery}
+                  options={locationOptions}
+                  counts={locationCounts}
+                />
+              }
               sort={
                 <Sort
                   query={sortQuery}
@@ -170,9 +184,16 @@ export default function Events({ searchParams }: Props) {
                   counts={categoryCounts}
                 />
               }
+              location={
+                <Region
+                  query={locationQuery}
+                  options={locationOptions}
+                  counts={locationCounts}
+                />
+              }
             />
             <FilterContainer.ContentWrapper>
-              {categorizedResults.length === 0 ? (
+              {filteredResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>
