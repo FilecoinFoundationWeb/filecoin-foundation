@@ -5,6 +5,8 @@ import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
+import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
+import { EventSectionSchema } from './EventSectionSchema'
 import { LocationSchema } from './LocationSchema'
 import { ScheduleSchema } from './ScheduleSchema'
 import { SpeakersSchema } from './SpeakerSchema'
@@ -18,25 +20,11 @@ const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
 const CategorySchema = createEnumSchema(validCategoryIds)
 
 export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
-  title: z.string(),
+  ...EventBaseFrontMatterSchema.shape,
   category: CategorySchema,
-  description: z.string().optional(),
   location: LocationSchema,
-  'external-link': z
-    .object({
-      url: z.string().url(),
-      text: z.string().optional(),
-    })
-    .optional(),
   'luma-calendar-link': z.string().url().optional(),
-  'luma-events-section': z
-    .object({
-      title: z.string().optional(),
-      'embed-link': z.string().url(),
-    })
-    .optional(),
-  'start-date': z.coerce.date(),
-  'end-date': z.coerce.date().optional(),
+  'event-section': EventSectionSchema.optional(),
   schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
