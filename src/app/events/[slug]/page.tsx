@@ -16,7 +16,7 @@ import { getEventData } from '../utils/getEventData'
 import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
 
-import { EventsSection } from './components/EventsSection'
+import { ProgramSection } from './components/ProgramSection'
 import { RecapSection } from './components/RecapSection'
 import { ScheduleSection } from './components/ScheduleSection/ScheduleSection'
 import { SpeakersSection } from './components/SpeakersSection'
@@ -58,7 +58,7 @@ export default function EventEntry({ params }: EventProps) {
     startDate,
     endDate,
     location,
-    lumaEventsSection,
+    program,
     schedule,
     speakers,
     sponsors,
@@ -67,7 +67,7 @@ export default function EventEntry({ params }: EventProps) {
   } = data
 
   const eventHasConcluded = isEventConcluded(startDate, endDate)
-  const eventHasEventsSection = lumaEventsSection && lumaEventsSection.embedLink
+  const eventHasProgram = program && program.events.length > 0
   const eventHasRecap = eventHasConcluded && recapYoutubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
   const eventHasSpeakers = speakers && speakers.length > 0
@@ -105,11 +105,8 @@ export default function EventEntry({ params }: EventProps) {
 
       {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
 
-      {eventHasEventsSection && (
-        <EventsSection
-          title={lumaEventsSection.title}
-          embedLink={lumaEventsSection.embedLink}
-        />
+      {eventHasProgram && (
+        <ProgramSection title={program.title} events={program.events} />
       )}
 
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}

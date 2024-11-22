@@ -21,9 +21,95 @@ external-link:
 image:
   src: /assets/images/fil-bangkok-2024.webp
 luma-calendar-link: https://lu.ma/filecoin?tag=fil%20bangkok%202024
-luma-events-section:
-  title: FIL Bangkok 2024 Events
-  embed-link: https://lu.ma/embed/calendar/cal-nlDvL4B7Ko1swF0/events?lt=light&tag=FIL%20Bangkok%202024
+program:
+  "events":
+    [
+      {
+        title: "DePIN Day Bangkok",
+        description: "By Fluence, Spheron Network, Parasail & Livepeer",
+        location: "Carlton Hotel Bangkok Sukhumvit",
+        start-date: "2024-11-15T03:00:00.000Z",
+        external-link: { url: "https://lu.ma/depin-bangkok" },
+      },
+      {
+        title: "Build & Bloom: Akave's Decentralized Storage Workshop",
+        description: "By Akave",
+        location: "SOCO WORK&LIVE EmQuartier",
+        start-date: "2024-11-14T04:00:00.000Z",
+        external-link: { url: "https://lu.ma/qrk28iw4" },
+      },
+      {
+        title: "Hot Ones & Zeros Party by Storacha",
+        description: "By Storacha & Cosmik Agency",
+        location: "Chim Chim",
+        start-date: "2024-11-13T10:30:00.000Z",
+        external-link: { url: "https://lu.ma/xh9ca6fs" },
+      },
+      {
+        title: "Code n' Corgi: Filecoin Builders Night",
+        description: "By FIL-B, Sarah Thiam, TPG & La Christa",
+        location: "SOCO WORK&LIVE EmQuartier",
+        start-date: "2024-11-13T10:00:00.000Z",
+        external-link: { url: "https://lu.ma/udulaer4" },
+      },
+      {
+        title: "Threshold Summit - Bangkok",
+        description: "By Randamu, Dave Grantham & Kent Bull",
+        location: "U Sathorn Bangkok",
+        start-date: "2024-11-12T05:00:00.000Z",
+        external-link: { url: "https://lu.ma/2hqvjjzl" },
+      },
+      {
+        title: "FIL Bangkok: DePIN Meets AI, in partnership with CoinDesk Studios",
+        description: "By Filecoin Foundation",
+        location: "Samyan Mitrtown",
+        start-date: "2024-11-11T02:00:00.000Z",
+        external-link: { url: "https://lu.ma/aqyqwupe" },
+      },
+      {
+        title: "IPFS Bangkok",
+        description: "By Miwa Events, Mosh & Daniel",
+        location: "JustCo – Samyan Mitrtown | Coworking & Office Space",
+        start-date: "2024-11-10T06:00:00.000Z",
+        external-link: { url: "https://lu.ma/ipfs-bangkok" },
+      },
+      {
+        title: "Filecoin Orbit: AI Commu-night #4",
+        description: "By Filecoin Orbit",
+        location: "Such A Small World",
+        start-date: "2024-11-09T10:00:00.000Z",
+        external-link:
+          { url: "https://www.eventpop.me/e/54742/filecoinplayground15" },
+      },
+      {
+        title: "Protocol Labs Cowork Hub",
+        description: "By Protocol Labs",
+        location: "SOCO WORK&LIVE EmQuartier",
+        start-date: "2024-11-07T03:00:00.000Z",
+        external-link: { url: "https://lu.ma/htkj4b43" },
+      },
+      {
+        title: "FIL Dev Summit 5 @ LabWeek",
+        description: "By Molly, Marta Geater Piekarska & Filecoin Foundation",
+        location: "Gaysorn Urban Resort",
+        start-date: "2024-11-06T04:00:00.000Z",
+        external-link: { url: "https://lu.ma/vcdjb8pl" },
+      },
+      {
+        title: "FIL Bangkok Co-Working Space",
+        description: "By Filecoin Foundation",
+        location: "Gaysorn Urban Resort",
+        start-date: "2024-11-06T04:00:00.000Z",
+        external-link: { url: "https://lu.ma/no08u3bt" },
+      },
+      {
+        title: "Filecoin Hacker House",
+        description: "By Filecoin Foundation",
+        location: "Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai",
+        start-date: "2024-10-26T09:00:00.000Z",
+        external-link: { url: "https://lu.ma/j49yitcw" },
+      },
+    ]
 schedule:
   days:
     - events:
