@@ -19,6 +19,8 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
+import { DEFAULT_CTA_TEXT } from '@/events/constants/constants'
+
 import { fetchAndParseAirtableEvents } from '../services/airtable'
 
 type OrbitEventsSectionProps = {
@@ -86,7 +88,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
               const { title, city, startDate, registrationLink } = event
 
               const ctaProps = registrationLink
-                ? { href: registrationLink, text: 'View Event Details' }
+                ? { href: registrationLink, text: DEFAULT_CTA_TEXT }
                 : undefined
 
               return (
