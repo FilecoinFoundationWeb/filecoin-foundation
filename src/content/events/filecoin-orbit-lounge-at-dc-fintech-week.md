@@ -9,8 +9,7 @@ description: >-
 location:
   primary: Washington, D.C.
   region: north-america
-external-link:
-  url: https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407
+external-link: https://www.eventbrite.com/e/filecoin-orbit-lounge-at-dc-fintech-week-tickets-182039955407
 start-date: 2021-10-19T22:00:00.000Z
 image:
   src: /assets/images/645215fc18e20d1c30805b6c_2021-filecoin-orbit-lounge-event.png

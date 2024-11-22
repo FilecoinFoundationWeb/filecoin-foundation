@@ -7,8 +7,7 @@ category: hosted
 location:
   primary: Las Vegas, NV
   region: north-america
-external-link:
-  url: https://fil-vegas.io/
+external-link: https://fil-vegas.io/
 start-date: 2023-10-03T17:09:07.043Z
 end-date: 2023-10-05T17:09:07.051Z
 image:

@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: Paris, France
   region: europe
-external-link:
-  url: https://ethcc.io/
+external-link: https://ethcc.io/
 start-date: 2022-07-19T00:00:00.000Z
 end-date: 2022-07-21T00:00:00.000Z
 image:

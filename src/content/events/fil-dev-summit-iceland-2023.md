@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: Reykjavík, Iceland
   region: europe
-external-link:
-  url: https://www.fildev.io/FDS-2
+external-link: https://www.fildev.io/FDS-2
 start-date: 2023-09-25T14:00:04.428Z
 image:
   src: /assets/images/fil-dev-summit.png

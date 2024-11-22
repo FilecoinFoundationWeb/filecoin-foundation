@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: San Juan, Puerto Rico
   region: south-america
-external-link:
-  url: https://www.prblockchainweek.io/
+external-link: https://www.prblockchainweek.io/
 start-date: 2022-12-05T18:15:30.421Z
 end-date: 2022-12-10T18:15:00.000Z
 image:
