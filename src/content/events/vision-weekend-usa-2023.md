@@ -6,8 +6,7 @@ published-on: 2023-11-08T14:08:27.285Z
 location:
   primary: San Francisco, CA
   region: north-america
-external-link:
-  url: https://foresight.org/vision-weekends-2023/
+external-link: https://foresight.org/vision-weekends-2023/
 start-date: 2023-12-01T14:08:27.294Z
 end-date: 2023-12-03T14:08:27.299Z
 image:

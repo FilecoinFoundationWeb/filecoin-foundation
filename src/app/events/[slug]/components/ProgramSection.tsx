@@ -4,6 +4,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { PageSection } from '@/components/PageSection'
 
+import { DEFAULT_CTA_TEXT } from '../../constants/constants'
 import type { Event } from '../../types/eventType'
 import { getMetaData } from '../../utils/getMetaData'
 import { sortEventsAsc } from '../../utils/sortEvents'
@@ -28,8 +29,8 @@ export function ProgramSection({ title, events }: ProgramSectionProps) {
 
           const ctaProps = externalLink && {
             cta: {
-              href: externalLink.url,
-              text: externalLink.text || 'View Event Details',
+              href: externalLink,
+              text: DEFAULT_CTA_TEXT,
               icon: MagnifyingGlass,
             },
           }

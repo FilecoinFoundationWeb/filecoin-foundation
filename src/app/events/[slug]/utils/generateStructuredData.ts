@@ -68,7 +68,7 @@ function getLocation({
   if (location.primary === 'Virtual') {
     return {
       '@type': 'VirtualLocation',
-      url: externalLink?.url || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
+      url: externalLink || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
     }
   }
 

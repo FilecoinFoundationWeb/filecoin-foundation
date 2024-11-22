@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: Las Vegas, NV
   region: north-america
-external-link:
-  url: https://www.web3espa.io/
+external-link: https://www.web3espa.io/
 start-date: 2022-10-13T00:00:00.000Z
 end-date: 2022-10-13T00:00:00.000Z
 image:

@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: Cape Town, South Africa
   region: africa
-external-link:
-  url: https://fil-capetown.io/
+external-link: https://fil-capetown.io/
 start-date: 2023-11-21T13:58:58.117Z
 image:
   src: /assets/images/filcapetown.png

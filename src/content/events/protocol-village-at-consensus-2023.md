@@ -6,8 +6,7 @@ published-on: 2023-04-28T15:31:08.670Z
 location:
   primary: Austin, TX
   region: north-america
-external-link:
-  url: https://consensus2023.coindesk.com/agenda/venue/-protocol-village
+external-link: https://consensus2023.coindesk.com/agenda/venue/-protocol-village
 start-date: 2023-04-26T15:31:08.683Z
 end-date: 2023-04-28T15:31:08.707Z
 image:
