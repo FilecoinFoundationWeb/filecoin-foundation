@@ -10,37 +10,46 @@ import {
 import type { Event } from '../types/eventType'
 
 type DateFields = Pick<Event, 'startDate' | 'endDate'>
+type CompareFunction = typeof compareAsc | typeof compareDesc
+
+function sortEvents<T extends DateFields>(
+  events: Array<T>,
+  compareFn: CompareFunction,
+) {
+  return [...events].sort((a, b) => compareFn(a.startDate, b.startDate))
+}
+
+export function sortEventsDesc<T extends DateFields>(events: Array<T>) {
+  return sortEvents(events, compareDesc)
+}
+
+export function sortEventsAsc<T extends DateFields>(events: Array<T>) {
+  return sortEvents(events, compareAsc)
+}
 
 export function getUpcomingEvents<T extends DateFields>(events: Array<T>) {
   const yesterday = startOfYesterday()
 
-  const upcomingEvents = events.filter((event) => {
-    const eventDate = event.endDate || event.startDate
-    return isAfter(new Date(eventDate), yesterday)
-  })
-
-  return sortEventsAsc(upcomingEvents)
+  return sortEventsAsc(
+    events.filter(({ startDate, endDate }) =>
+      isAfter(getEventDate(startDate, endDate), yesterday),
+    ),
+  )
 }
 
 export function getPastEvents<T extends DateFields>(events: Array<T>) {
   const tomorrow = startOfTomorrow()
 
-  const pastEvents = events.filter((event) => {
-    const eventDate = event.endDate || event.startDate
-    return isBefore(new Date(eventDate), tomorrow)
-  })
-
-  return sortEventsDesc(pastEvents)
+  return sortEventsDesc(
+    events.filter(({ startDate, endDate }) =>
+      isBefore(getEventDate(startDate, endDate), tomorrow),
+    ),
+  )
 }
 
-export function sortEventsDesc<T extends DateFields>(events: Array<T>) {
-  return [...events].sort((eventA, eventB) => {
-    return compareDesc(new Date(eventA.startDate), new Date(eventB.startDate))
-  })
-}
-
-export function sortEventsAsc<T extends DateFields>(events: Array<T>) {
-  return [...events].sort((eventA, eventB) => {
-    return compareAsc(new Date(eventA.startDate), new Date(eventB.startDate))
-  })
+function getEventDate(
+  startDate: Event['startDate'],
+  endDate: DateFields['endDate'],
+) {
+  return endDate || startDate
 }
