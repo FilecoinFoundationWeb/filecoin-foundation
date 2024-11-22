@@ -28,8 +28,8 @@ export function ProgramSection({ title, events }: ProgramSectionProps) {
 
           const ctaProps = externalLink && {
             cta: {
-              href: externalLink.url,
-              text: externalLink.text || 'View Event Details',
+              href: externalLink,
+              text: 'View Event Details',
               icon: MagnifyingGlass,
             },
           }

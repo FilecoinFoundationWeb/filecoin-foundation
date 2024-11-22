@@ -86,7 +86,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
               const { title, city, startDate, registrationLink } = event
 
               const ctaProps = registrationLink
-                ? { text: 'View Event Details', href: registrationLink }
+                ? { href: registrationLink, text: 'View Event Details' }
                 : undefined
 
               return (

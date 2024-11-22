@@ -196,7 +196,7 @@ export default function Events({ searchParams }: Props) {
 
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
-                        !description && externalLink?.url
+                        !description && externalLink
 
                       const tagLabel = getCategoryLabel({
                         collectionName: 'event_entries',

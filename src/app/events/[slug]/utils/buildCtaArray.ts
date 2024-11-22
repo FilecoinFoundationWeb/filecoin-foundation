@@ -31,8 +31,8 @@ export function buildCtaArray({
   } else {
     if (externalLink) {
       ctaArray.push({
-        href: externalLink.url,
-        text: externalLink.text || 'View Event Details',
+        href: externalLink,
+        text: 'View Event Details',
       })
     }
 

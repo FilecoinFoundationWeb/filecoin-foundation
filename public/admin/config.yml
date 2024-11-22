@@ -705,20 +705,8 @@ collections:
         picker_utc: true
       - name: "external-link"
         label: "External Link URL"
-        widget: "object"
+        widget: "string"
         required: false
-        collapsed: true
-        fields:
-          - name: "url"
-            label: "URL"
-            widget: "string"
-            required: false
-          - name: "text"
-            label: "Text"
-            widget: "string"
-            required: false
-            default: "View Event Details"
-            hint: "Text for the external link CTA. Please use proper capitalization. Defaults to 'View Event Details.'"
       - *image_config
       - name: "luma-calendar-link"
         label: "Luma Calendar URL"
@@ -764,20 +752,8 @@ collections:
                 required: false
               - name: "external-link"
                 label: "External Link URL"
-                widget: "object"
+                widget: "string"
                 required: false
-                collapsed: true
-                fields:
-                  - name: "url"
-                    label: "URL"
-                    widget: "string"
-                    required: false
-                  - name: "text"
-                    label: "Text"
-                    widget: "string"
-                    required: false
-                    default: "View Event Details"
-                    hint: "Text for the external link CTA. Please use proper capitalization. Defaults to 'View Event Details.'"
       - name: "schedule"
         label: "Schedule"
         widget: "object"
