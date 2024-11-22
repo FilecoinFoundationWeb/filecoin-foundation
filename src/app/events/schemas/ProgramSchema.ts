@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
 
-export const EventSectionSchema = z
+export const ProgramSchema = z
   .object({
     title: z.string().optional(),
     events: z

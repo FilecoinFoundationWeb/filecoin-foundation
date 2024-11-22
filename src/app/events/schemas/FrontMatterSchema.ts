@@ -6,8 +6,8 @@ import { createEnumSchema } from '@/utils/zodUtils'
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
-import { EventSectionSchema } from './EventSectionSchema'
 import { LocationSchema } from './LocationSchema'
+import { ProgramSchema } from './ProgramSchema'
 import { ScheduleSchema } from './ScheduleSchema'
 import { SpeakersSchema } from './SpeakerSchema'
 import { SponsorsSchema } from './SponsorSchema'
@@ -24,7 +24,7 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   category: CategorySchema,
   location: LocationSchema,
   'luma-calendar-link': z.string().url().optional(),
-  'event-section': EventSectionSchema.optional(),
+  program: ProgramSchema.optional(),
   schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),

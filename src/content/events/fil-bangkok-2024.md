@@ -21,7 +21,7 @@ external-link:
 image:
   src: /assets/images/fil-bangkok-2024.webp
 luma-calendar-link: https://lu.ma/filecoin?tag=fil%20bangkok%202024
-event-section:
+program:
   "events":
     [
       {

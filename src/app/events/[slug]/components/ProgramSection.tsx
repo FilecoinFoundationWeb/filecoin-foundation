@@ -8,9 +8,9 @@ import type { Event } from '../../types/eventType'
 import { getMetaData } from '../../utils/getMetaData'
 import { sortEventsAsc } from '../../utils/sortEvents'
 
-type EventSectionProps = NonNullable<Event['eventSection']>
+type ProgramSectionProps = NonNullable<Event['program']>
 
-export function EventSection({ title, events }: EventSectionProps) {
+export function ProgramSection({ title, events }: ProgramSectionProps) {
   const sortedEvents = sortEventsAsc(events)
 
   return (
