@@ -10,12 +10,11 @@ end-date: 2025-01-23T17:00:00.000Z
 description: Your destination for high-level connections and conversations.
   Explore the latest in Web3 and decentralization. Open daily 9am - 5pm at
   Promenade 95.
-external-link:
-  text: View Event Details
 seo:
   twitter:
     card: summary
-  description: Join FIL.org in Davos for high-level connections and conversations
+  description:
+    Join FIL.org in Davos for high-level connections and conversations
     on Web3, decentralization, and the future of the internet. Open daily
     9am-5pm at Promenade 95. Don’t miss this premier event!
   title: Explore Web3 at Davos | FIL.org @ Promenade 95
