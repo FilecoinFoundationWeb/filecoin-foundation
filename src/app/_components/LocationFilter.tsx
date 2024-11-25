@@ -45,7 +45,7 @@ export function LocationFilter({ query, options }: LocationFilterProps) {
 
   function updateParams(optionId: OptionType['id']) {
     if (optionId === ALL_LOCATIONS_OPTION.id) {
-      resetSearchParams()
+      updateSearchParams({ [LOCATION_KEY]: false })
     } else {
       updateSearchParams({ [LOCATION_KEY]: optionId })
     }

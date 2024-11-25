@@ -56,7 +56,7 @@ export function Category({ query, options }: CategoryProps) {
 
   function updateParams(categoryId: OptionType['id']) {
     if (categoryId === ALL_CATEGORIES_OPTION.id) {
-      resetSearchParams()
+      updateSearchParams({ [CATEGORY_KEY]: false })
     } else {
       updateSearchParams({ [CATEGORY_KEY]: categoryId })
     }
