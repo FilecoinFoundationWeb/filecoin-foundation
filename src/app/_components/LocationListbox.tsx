@@ -18,13 +18,9 @@ export function LocationListbox({
   options,
   onChange,
 }: LocationListboxProps) {
-  console.log(options)
   return (
     <Listbox value={selected} onChange={onChange}>
-      <ListboxButton
-        text={selected?.name || 'Location'}
-        leadingIcon={FunnelSimple}
-      />
+      <ListboxButton text={selected.name} leadingIcon={FunnelSimple} />
       <ListboxOptions>
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />
