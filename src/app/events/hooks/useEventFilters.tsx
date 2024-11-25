@@ -14,7 +14,7 @@ import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import type { OptionType } from '@/components/ListboxOption'
 
-import { useFilter } from '../utils/useFilter'
+import { useFilteredEntries } from '../utils/useFilteredEntries'
 
 type UseEventFiltersProps = {
   searchParams: NextServerSearchParams
@@ -43,34 +43,36 @@ export const useEventFilters = ({
   searchParams,
   entries,
 }: UseEventFiltersProps) => {
+  // 1. get options from CMS
   const { category, location } = getFilterOptionsAndValidIdsFromCMS(
     filters.fields,
   )
 
-  const validatedCategoryQuery = validatedFilterQueryParams({
-    searchParams,
-    searchParamKey: CATEGORY_KEY,
-    validIds: category.validIds,
-  })
-
-  const validatedLocationQuery = validatedFilterQueryParams({
-    searchParams,
-    searchParamKey: LOCATION_KEY,
-    validIds: location.validIds,
-  })
-
+  // 2. filter the entries based on the search params
   const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
-    useFilter({
-      entries,
-      validatedOption: validatedLocationQuery,
-      filterKey: filters.fields.LOCATION,
+    useFilteredEntries({
+      validation: {
+        searchParams,
+        queryParamKey: LOCATION_KEY,
+        validFilterValues: location.validIds,
+      },
+      filtering: {
+        entries,
+        filterKey: filters.fields.LOCATION,
+      },
     })
 
   const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
-    useFilter({
-      entries: filteredByLocation,
-      validatedOption: validatedCategoryQuery,
-      filterKey: filters.fields.CATEGORY,
+    useFilteredEntries({
+      validation: {
+        searchParams,
+        queryParamKey: CATEGORY_KEY,
+        validFilterValues: category.validIds,
+      },
+      filtering: {
+        entries: filteredByLocation,
+        filterKey: filters.fields.CATEGORY,
+      },
     })
 
   const filteredResults = filteredByCategory
@@ -116,25 +118,6 @@ function getFilterOptionsAndValidIdsFromCMS(filters: EventFilters['fields']) {
       options: locationOptions,
     },
   }
-}
-
-type ValidatedFilterQueryParamsProps = {
-  searchParams: NextServerSearchParams
-  searchParamKey: string
-  validIds: Array<string>
-}
-
-function validatedFilterQueryParams({
-  searchParams,
-  searchParamKey,
-  validIds,
-}: ValidatedFilterQueryParamsProps) {
-  const normalizedQuery = normalizeQueryParam(searchParams, searchParamKey)
-
-  if (!normalizedQuery || normalizedQuery === ALL_FILTER_ID) {
-    return ALL_FILTER_ID
-  }
-  return validIds.includes(normalizedQuery || '') ? normalizedQuery : undefined
 }
 
 type AddCountsAndDefaultToOptionsProps = {
