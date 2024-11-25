@@ -62,8 +62,8 @@ FilterContainer.DesktopFilters = function DesktopFilters({
   return (
     <div className="hidden justify-end gap-6 lg:flex">
       {search}
-      <div className="w-full lg:max-w-44">{location}</div>
-      <div>{sort}</div>
+      {location && <div className="w-full lg:max-w-44">{location}</div>}
+      <div className="w-full lg:max-w-44">{sort}</div>
     </div>
   )
 }
