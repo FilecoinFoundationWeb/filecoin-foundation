@@ -94,6 +94,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: sortedResults,
     validCategoryIds: validCategoryIds,
+    categoryOptions: categoryOptions,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
