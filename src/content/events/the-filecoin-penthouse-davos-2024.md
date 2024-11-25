@@ -1,5 +1,5 @@
 ---
-title: The Filecoin Penthouse | Davos 2024
+title: The Filecoin Penthouse | Davos 2025
 description: Your destination for high-level connections and conversations.
   Explore the latest in Web3 and decentralization. Open daily 9am - 5pm at
   Promenade 95.
