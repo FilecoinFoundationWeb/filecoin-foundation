@@ -75,7 +75,7 @@ export function SlideOver({
                 leaveTo={closedPosition}
               >
                 <DialogPanel className="pointer-events-auto w-full">
-                  <div className="flex h-full flex-col overflow-y-scroll bg-brand-800">
+                  <div className="flex h-full flex-col overflow-y-scroll bg-brand-800 focus-visible:brand-outline">
                     {children}
                   </div>
                 </DialogPanel>
