@@ -9,7 +9,6 @@ published-on: 2024-11-19T17:29:00.000Z
 category: hosted
 location:
   primary: Davos, Switzerland
-  Switzerland: null
   region: europe
 start-date: 2025-01-20T09:00:00.000Z
 end-date: 2025-01-23T17:00:00.000Z

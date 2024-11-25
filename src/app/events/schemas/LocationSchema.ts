@@ -20,6 +20,7 @@ export const LocationSchema = z
     primary: z.string(),
     region: RegionSchema.optional(),
   })
+  .strict()
   .refine(virtualEventHasNoRegion, {
     message: 'Virtual events cannot have a region.',
     path: ['region'],
