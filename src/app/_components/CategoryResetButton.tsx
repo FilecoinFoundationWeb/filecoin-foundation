@@ -2,7 +2,7 @@
 
 import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
-import { getTotalCategoryCountFromOptions } from '@/utils/getTotalCategoryCount'
+import { getTotalCategoryCountFromOptions } from '@/utils/getTotalCategoryCountFromOptions'
 
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
