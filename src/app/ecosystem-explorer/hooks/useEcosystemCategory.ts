@@ -6,7 +6,7 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getCategoriesFromDirectory } from '../utils/getCategoriesFromDirectory'
-import { getSubcategoriesFromQueryParam } from '../utils/getSubcategoriesFromQueryParam'
+import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 
 type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   searchParams: NextServerSearchParams
@@ -23,7 +23,7 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
 }: UseEcosystemCategoryProps<Entry>) {
   const categoryParams = searchParams[CATEGORY_KEY]
 
-  const categoryIds = getSubcategoriesFromQueryParam(categoryParams)
+  const categoryIds = parseCategoryQueryParam(categoryParams)
 
   const getEntrySubcategory = useCallback((entry: Entry) => {
     return entry.subcategories[0]

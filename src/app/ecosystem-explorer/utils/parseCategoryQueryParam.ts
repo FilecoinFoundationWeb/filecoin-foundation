@@ -6,7 +6,7 @@ import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
 
 type CategoryParams = NextServerSearchParams[typeof CATEGORY_KEY]
 
-export function getSubcategoriesFromQueryParam(categoryParams: CategoryParams) {
+export function parseCategoryQueryParam(categoryParams: CategoryParams) {
   const categoryIds =
     typeof categoryParams === 'string'
       ? categoryParams.split(CATEGORY_QUERY_SEPARATOR_SYMBOL)
