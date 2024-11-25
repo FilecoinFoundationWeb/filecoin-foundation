@@ -21,7 +21,6 @@ export type FormListboxProps = {
   placeholder: string
   icon?: IconProps['component']
   buttonWidth?: `w-${keyof typeof theme.spacing}`
-  optionsWidth?: ListboxOptionsProps['width']
   optionsPosition?: ListboxOptionsProps['position']
   disabled?: boolean
 } & FormFieldProps
@@ -35,7 +34,6 @@ export function FormListbox({
   placeholder,
   icon,
   buttonWidth,
-  optionsWidth,
   optionsPosition,
   ...rest
 }: FormListboxProps) {
@@ -53,7 +51,7 @@ export function FormListbox({
           leadingIcon={icon}
           hasError={Boolean(error)}
         />
-        <ListboxOptions width={optionsWidth} position={optionsPosition}>
+        <ListboxOptions position={optionsPosition}>
           {options.map((option) => (
             <ListboxOption key={option.id} option={option} />
           ))}

@@ -155,7 +155,6 @@ export function EcosystemProjectForm({
               placeholder="Select topic"
               options={subCategoryOptions}
               disabled={isSubmitting}
-              optionsWidth="lg"
               optionsPosition="bottom end"
             />
           </div>

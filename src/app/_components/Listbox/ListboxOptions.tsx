@@ -23,11 +23,6 @@ const GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX = 8
 const widthClasses = {
   auto: 'w-auto',
   button: 'w-[var(--button-width)]',
-  xs: 'w-[16rem]',
-  sm: 'w-[20rem]',
-  md: 'w-[24rem]',
-  lg: 'w-[28rem]',
-  xl: 'w-[32rem]',
 } as const
 
 export function ListboxOptions({
