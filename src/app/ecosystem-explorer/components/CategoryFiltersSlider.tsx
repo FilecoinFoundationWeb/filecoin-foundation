@@ -14,13 +14,15 @@ import { SlideOver } from '@/components/SlideOver'
 
 import type { CategoriesAndSubcategoriesWithCount } from '../types/ecosystemCategoryType'
 
-import { SubcategoriesSidebar } from './SubcategoriesSidebar'
+import { CategoryFilters } from './CategoryFilters'
 
-type Props = {
+type CategoryFiltersSliderProps = {
   categories: CategoriesAndSubcategoriesWithCount
 }
 
-export function SubcategorySlider({ categories }: Props) {
+export function CategoryFiltersSlider({
+  categories,
+}: CategoryFiltersSliderProps) {
   const [open, setOpen] = useState(false)
   const { resetSearchParams } = useUpdateSearchParams()
 
@@ -49,7 +51,7 @@ export function SubcategorySlider({ categories }: Props) {
         </div>
 
         <div className="flex flex-col gap-12 p-6">
-          <SubcategoriesSidebar categories={categories} />
+          <CategoryFilters categories={categories} />
         </div>
 
         <div className="sticky bottom-0 z-10 border-t border-brand-300 bg-brand-800 p-6">

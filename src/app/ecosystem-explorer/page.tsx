@@ -33,8 +33,8 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { SubcategoriesSidebar } from './components/SubcategoriesSidebar'
-import { SubcategorySlider } from './components/SubcategorySlider'
+import { CategoryFilters } from './components/CategoryFilters'
+import { CategoryFiltersSlider } from './components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -120,7 +120,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             gapSize="wide"
             results={<ResultsAndReset results={categorizedResults.length} />}
             category={
-              <SubcategoriesSidebar categories={categoriesWithSubcategories} />
+              <CategoryFilters categories={categoriesWithSubcategories} />
             }
           />
           <FilterContainer.MainWrapper>
@@ -138,7 +138,9 @@ export default function EcosystemExplorer({ searchParams }: Props) {
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
               category={
-                <SubcategorySlider categories={categoriesWithSubcategories} />
+                <CategoryFiltersSlider
+                  categories={categoriesWithSubcategories}
+                />
               }
               sort={
                 <Sort
