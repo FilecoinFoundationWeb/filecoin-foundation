@@ -35,7 +35,7 @@ export function FormCheckbox({
         <div
           className={clsx(
             TOUCH_TARGET.base,
-            'rounded bg-brand-100 p-0.5 text-brand-100 group-focus:brand-outline group-data-[disabled]:cursor-not-allowed group-data-[checked]:bg-brand-400',
+            'rounded bg-brand-100 p-0.5 text-brand-100 group-focus:brand-dark-outline group-data-[disabled]:cursor-not-allowed group-data-[checked]:bg-brand-400',
           )}
         >
           <span className="hidden group-data-[checked]:block">

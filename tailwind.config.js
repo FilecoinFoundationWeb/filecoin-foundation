@@ -111,6 +111,13 @@ module.exports = {
           outlineOffset: 0,
           borderColor: 'transparent',
         },
+        '.brand-dark-outline': {
+          outlineStyle: 'solid',
+          outlineColor: theme('colors.brand.400'),
+          outlineWidth: 2,
+          outlineOffset: 0,
+          borderColor: 'transparent',
+        },
         '.row': {
           height: 52,
         },
