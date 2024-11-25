@@ -27,6 +27,7 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
+import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -41,7 +42,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
-import { CategoryResetButton } from '@/components/CategoryResetButton'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
