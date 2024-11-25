@@ -6,8 +6,7 @@ published-on: 2023-05-03T08:22:38.798Z
 location:
   primary: Singapore
   region: apac-asia
-external-link:
-  url: https://lu.ma/singapore-sp-meetup
+external-link: https://lu.ma/singapore-sp-meetup
 start-date: 2022-08-16T00:00:00.000Z
 end-date: 2022-08-16T00:00:00.000Z
 image:

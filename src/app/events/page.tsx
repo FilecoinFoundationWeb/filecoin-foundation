@@ -35,6 +35,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { useEventFilters } from './hooks/useEventFilters'
@@ -132,7 +133,7 @@ export default function Events({ searchParams }: Props) {
         }}
         cta={{
           href: `${PATHS.EVENTS.path}/${featuredEventSlug}`,
-          text: 'View Event Details',
+          text: DEFAULT_CTA_TEXT,
         }}
       />
       <PageSection kicker="Events" title="Network Events">
@@ -193,7 +194,7 @@ export default function Events({ searchParams }: Props) {
 
                       const isFirstTwoImages = i < 2
                       const shouldLinkToExternalEventsPage =
-                        !description && externalLink?.url
+                        !description && externalLink
 
                       const tagLabel = getCategoryLabel({
                         collectionName: 'event_entries',
@@ -228,7 +229,7 @@ export default function Events({ searchParams }: Props) {
                             href:
                               shouldLinkToExternalEventsPage ||
                               `${PATHS.EVENTS.path}/${slug}`,
-                            text: 'View Event Details',
+                            text: DEFAULT_CTA_TEXT,
                             icon: MagnifyingGlass,
                           }}
                         />

@@ -11,8 +11,7 @@ description: Join us at SXSW for the Decentralized Web Gateway, powered by
 location:
   primary: Austin, TX
   region: north-america
-external-link:
-  url: https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y
+external-link: https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y
 start-date: 2022-03-15T07:23:50.000Z
 image:
   src: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg

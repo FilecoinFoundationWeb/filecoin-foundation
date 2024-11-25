@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: Navarro, CA
   region: north-america
-external-link:
-  url: https://dwebcamp.org/
+external-link: https://dwebcamp.org/
 start-date: 2024-08-07T14:55:19.871Z
 end-date: 2024-08-11T14:55:19.882Z
 image:

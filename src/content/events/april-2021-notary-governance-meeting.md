@@ -6,8 +6,7 @@ published-on: 2023-05-03T08:22:38.798Z
 category: hosted
 location:
   primary: Virtual
-external-link:
-  url: https://www.youtube.com/watch?v=BIvFtwCeOjU
+external-link: https://www.youtube.com/watch?v=BIvFtwCeOjU
 start-date: 2021-04-12T22:00:00.000Z
 image:
   src: /assets/images/governance-logo.jpg

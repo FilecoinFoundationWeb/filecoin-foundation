@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: Denver, CO
   region: north-america
-external-link:
-  url: https://hub.fil.org/ethdenver2024
+external-link: https://hub.fil.org/ethdenver2024
 start-date: 2024-02-28T15:38:54.833Z
 end-date: 2024-03-03T15:38:54.840Z
 image:

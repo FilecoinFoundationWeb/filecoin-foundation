@@ -8,8 +8,7 @@ published-on: 2024-01-29T15:35:51.019Z
 location:
   primary: San Francisco, CA
   region: north-america
-external-link:
-  url: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367
+external-link: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367
 start-date: 2024-02-27T14:00:51.036Z
 end-date: 2024-02-27T21:00:51.050Z
 image:

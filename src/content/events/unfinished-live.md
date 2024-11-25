@@ -7,8 +7,7 @@ category: supported-sponsored
 location:
   primary: New York, NY
   region: north-america
-external-link:
-  url: https://live.unfinished.com/
+external-link: https://live.unfinished.com/
 start-date: 2022-09-21T00:00:00.000Z
 end-date: 2022-08-24T00:00:00.000Z
 image:

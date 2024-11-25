@@ -9,8 +9,7 @@ description: Join Filecoin Orbit Austin and Filecoin Foundation for talks,
 location:
   primary: Austin, TX
   region: north-america
-external-link:
-  url: https://blocklive.io/event/consensus2024
+external-link: https://blocklive.io/event/consensus2024
 start-date: 2024-05-30T16:00:00.000Z
 end-date: 2024-05-30T17:00:00.000Z
 image:

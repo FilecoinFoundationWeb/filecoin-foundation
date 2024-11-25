@@ -1,5 +1,6 @@
 import type { CTAProps } from '@/types/ctaType'
 
+import { DEFAULT_CTA_TEXT } from '../../constants/constants'
 import type { Event } from '../../types/eventType'
 
 type Links = {
@@ -31,8 +32,8 @@ export function buildCtaArray({
   } else {
     if (externalLink) {
       ctaArray.push({
-        href: externalLink.url,
-        text: externalLink.text || 'View Event Details',
+        href: externalLink,
+        text: DEFAULT_CTA_TEXT,
       })
     }
 
