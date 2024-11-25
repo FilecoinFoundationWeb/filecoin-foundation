@@ -12,9 +12,9 @@ export type FormCheckboxProps = {
 } & Omit<CheckboxProps, ExcludedHeadlessUIProps>
 
 const TOUCH_TARGET = {
-  base: 'size-5',
-  clickArea: 'p-3.5',
-  clickAreaOffset: '-m-3.5',
+  visibleElementSize: 'size-5',
+  expandTouchAreaPadding: 'p-3.5',
+  offsetTouchAreaPadding: '-m-3.5',
 }
 
 export function FormCheckbox({
@@ -28,13 +28,13 @@ export function FormCheckbox({
         {...rest}
         className={clsx(
           'group cursor-pointer focus:outline-none',
-          TOUCH_TARGET.clickArea,
-          TOUCH_TARGET.clickAreaOffset,
+          TOUCH_TARGET.expandTouchAreaPadding,
+          TOUCH_TARGET.offsetTouchAreaPadding,
         )}
       >
         <div
           className={clsx(
-            TOUCH_TARGET.base,
+            TOUCH_TARGET.visibleElementSize,
             'rounded bg-brand-100 p-0.5 text-brand-100 group-focus:brand-dark-outline group-data-[disabled]:cursor-not-allowed group-data-[checked]:bg-brand-400',
           )}
         >
