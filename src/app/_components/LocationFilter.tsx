@@ -8,8 +8,8 @@ import { LOCATION_KEY } from '@/constants/searchParams'
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
+import { FilterListbox } from '@/components/FilterListbox'
 import { type OptionType } from '@/components/ListboxOption'
-import { LocationListbox } from '@/components/LocationListbox'
 
 type LocationFilterProps = {
   query: ReturnType<typeof useCategory>['categoryQuery']
@@ -31,7 +31,7 @@ export function LocationFilter({ query, options }: LocationFilterProps) {
   }, [query])
 
   return (
-    <LocationListbox
+    <FilterListbox
       selected={selectedCategory}
       options={options}
       onChange={updateCategoryAndParams}

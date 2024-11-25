@@ -8,8 +8,8 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 import { useCategory } from '@/hooks/useCategory'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { CategoryListbox } from '@/components/CategoryListbox'
 import { CategorySidebar } from '@/components/CategorySidebar'
+import { FilterListbox } from '@/components/FilterListbox'
 import type { OptionType } from '@/components/ListboxOption'
 
 type CategoryProps = {
@@ -40,7 +40,7 @@ export function Category({ query, options }: CategoryProps) {
         />
       </div>
       <div className="block lg:hidden">
-        <CategoryListbox
+        <FilterListbox
           selected={selectedCategory}
           options={options}
           onChange={updateCategoryAndParams}
