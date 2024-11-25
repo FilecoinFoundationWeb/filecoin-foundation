@@ -3,14 +3,12 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 
 import {
   ALL_CATEGORIES_OPTION,
-  ALL_FILTER_ID,
   ALL_LOCATIONS_OPTION,
   type FilterOption,
 } from '@/constants/filterConstants'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import type { OptionType } from '@/components/ListboxOption'
 
@@ -48,13 +46,13 @@ export const useEventFilters = ({
     filters.fields,
   )
 
-  // 2. filter the entries based on the search params
+  // 2. filter entries by location
   const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
     useFilteredEntries({
       validation: {
         searchParams,
         queryParamKey: LOCATION_KEY,
-        validFilterValues: location.validIds,
+        validOptionIds: location.validIds,
       },
       filtering: {
         entries,
@@ -62,12 +60,13 @@ export const useEventFilters = ({
       },
     })
 
+  // 3. filter entries by category
   const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
     useFilteredEntries({
       validation: {
         searchParams,
         queryParamKey: CATEGORY_KEY,
-        validFilterValues: category.validIds,
+        validOptionIds: category.validIds,
       },
       filtering: {
         entries: filteredByLocation,
@@ -75,20 +74,19 @@ export const useEventFilters = ({
       },
     })
 
+  // 4. return final filtered results after applying both location and category filters
   const filteredResults = filteredByCategory
-
-  const categoryOptionsWithCountAndDefault = addCountsAndDefaultToOptions({
-    options: category.options,
-    entries: filteredByLocation,
-    defaultOption: ALL_CATEGORIES_OPTION,
-  })
 
   return {
     filteredResults,
     filters: {
       category: {
         query: categoryQuery,
-        options: categoryOptionsWithCountAndDefault,
+        options: addCountsAndDefaultToOptions({
+          options: category.options,
+          entries: filteredByLocation,
+          defaultOption: ALL_CATEGORIES_OPTION,
+        }),
       },
       location: {
         query: locationQuery,

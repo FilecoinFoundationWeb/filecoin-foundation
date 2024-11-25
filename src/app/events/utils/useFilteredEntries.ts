@@ -10,7 +10,7 @@ import { normalizeQueryParam } from '@/_utils/queryUtils'
 type QueryValidationProps = {
   searchParams: NextServerSearchParams
   queryParamKey: string
-  validFilterValues: Array<string>
+  validOptionIds: Array<string>
 }
 
 type FilterEntriesProps<Entry extends Object> = {
@@ -27,28 +27,28 @@ export function useFilteredEntries<Entry extends Object>({
   validation,
   filtering,
 }: UseFilteredEntriesProps<Entry>) {
-  const { searchParams, queryParamKey, validFilterValues } = validation
+  const { searchParams, queryParamKey, validOptionIds } = validation
   const { entries, filterKey } = filtering
 
-  const validatedFilterValue = validatedFilterQueryParams({
+  const selectedFilterValue = validateFilterQueryParam({
     searchParams,
     queryParamKey,
-    validIds: validFilterValues,
+    validOptionIds,
   })
 
   const filteredResults = useMemo(() => {
-    if (!validatedFilterValue || validatedFilterValue === ALL_FILTER_ID) {
+    if (!selectedFilterValue || selectedFilterValue === ALL_FILTER_ID) {
       return entries
     }
 
     return entries.filter((entry) => {
       const fieldValue = getNestedValue(entry, filterKey)
-      return fieldValue === validatedFilterValue
+      return fieldValue === selectedFilterValue
     })
-  }, [entries, filterKey, validatedFilterValue])
+  }, [entries, filterKey, selectedFilterValue])
 
   return {
-    filterQuery: validatedFilterValue,
+    filterQuery: selectedFilterValue,
     filteredResults,
   }
 }
@@ -57,21 +57,23 @@ export const getNestedValue = (obj: any, path: string) => {
   return path.split('.').reduce((acc, key) => acc?.[key], obj)
 }
 
-type ValidatedFilterQueryParamsProps = {
+type ValidateFilterQueryParamProps = {
   searchParams: NextServerSearchParams
   queryParamKey: string
-  validIds: Array<string>
+  validOptionIds: Array<string>
 }
 
-function validatedFilterQueryParams({
+function validateFilterQueryParam({
   searchParams,
   queryParamKey,
-  validIds,
-}: ValidatedFilterQueryParamsProps) {
+  validOptionIds,
+}: ValidateFilterQueryParamProps) {
   const normalizedQuery = normalizeQueryParam(searchParams, queryParamKey)
 
   if (!normalizedQuery || normalizedQuery === ALL_FILTER_ID) {
     return ALL_FILTER_ID
   }
-  return validIds.includes(normalizedQuery || '') ? normalizedQuery : undefined
+  return validOptionIds.includes(normalizedQuery || '')
+    ? normalizedQuery
+    : undefined
 }
