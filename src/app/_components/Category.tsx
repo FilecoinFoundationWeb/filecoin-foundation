@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { useCategory } from '@/hooks/useCategory'
@@ -19,19 +19,15 @@ type CategoryProps = {
 
 export function Category({ query, options }: CategoryProps) {
   const [categoryId, setCategoryId] = useState<OptionType['id']>(
-    query || DEFAULT_CATEGORY,
+    query || ALL_CATEGORIES_OPTION.id,
   )
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
-  const selectedCategory = options.find(
-    (option) => option.id === categoryId,
-  ) || {
-    id: DEFAULT_CATEGORY,
-    name: 'Category',
-  }
+  const selectedCategory =
+    options.find((option) => option.id === categoryId) || ALL_CATEGORIES_OPTION
 
   useEffect(() => {
-    setCategoryId(query || DEFAULT_CATEGORY)
+    setCategoryId(query || ALL_CATEGORIES_OPTION.id)
   }, [query])
 
   return (
@@ -59,7 +55,7 @@ export function Category({ query, options }: CategoryProps) {
   }
 
   function updateParams(categoryId: OptionType['id']) {
-    if (categoryId === DEFAULT_CATEGORY) {
+    if (categoryId === ALL_CATEGORIES_OPTION.id) {
       resetSearchParams()
     } else {
       updateSearchParams({ [CATEGORY_KEY]: categoryId })

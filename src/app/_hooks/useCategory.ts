@@ -12,14 +12,14 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
+import { ALL_CATEGORIES_OPTION } from '@/_constants/filterConstants'
+
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
   validCategoryIds: Array<CategoryId>
   categoryOptions: Array<CategoryOption>
 }
-
-export const ALL_CATEGORIES_OPTION = { id: 'all', name: 'All Categories' }
 
 function validateCategoryOption(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,

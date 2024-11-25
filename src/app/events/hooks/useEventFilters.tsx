@@ -1,12 +1,14 @@
 import type { CMSCollectionName } from '@/types/cmsConfig'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import {
+  ALL_CATEGORIES_OPTION,
+  ALL_LOCATIONS_OPTION,
+} from '@/constants/filterConstants'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { normalizeQueryParam } from '@/utils/queryUtils'
-
-import { ALL_CATEGORIES_OPTION } from '@/_hooks/useCategory'
 
 import { useFilter } from '../utils/useFilter'
 
@@ -25,7 +27,6 @@ type EventFilters = {
 }
 
 const EVENT_COLLECTION_NAME = 'event_entries' as CMSCollectionName
-const ALL_LOCATIONS_OPTION = { id: 'all', name: 'All Locations' }
 
 const filters: EventFilters = {
   fields: {

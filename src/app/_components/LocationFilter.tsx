@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+import { ALL_LOCATIONS_OPTION } from '@/constants/filterConstants'
 import { LOCATION_KEY } from '@/constants/searchParams'
 
 import { useCategory } from '@/hooks/useCategory'
@@ -18,7 +18,7 @@ type LocationFilterProps = {
 
 export function LocationFilter({ query, options }: LocationFilterProps) {
   const [optionId, setOptionId] = useState<OptionType['id']>(
-    query || DEFAULT_CATEGORY,
+    query || ALL_LOCATIONS_OPTION.id,
   )
 
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
@@ -27,7 +27,7 @@ export function LocationFilter({ query, options }: LocationFilterProps) {
     options.find((option) => option.id === optionId) || options[0]
 
   useEffect(() => {
-    setOptionId(query || DEFAULT_CATEGORY)
+    setOptionId(query || ALL_LOCATIONS_OPTION.id)
   }, [query])
 
   return (
@@ -44,7 +44,7 @@ export function LocationFilter({ query, options }: LocationFilterProps) {
   }
 
   function updateParams(optionId: OptionType['id']) {
-    if (optionId === DEFAULT_CATEGORY) {
+    if (optionId === ALL_LOCATIONS_OPTION.id) {
       resetSearchParams()
     } else {
       updateSearchParams({ [LOCATION_KEY]: optionId })
