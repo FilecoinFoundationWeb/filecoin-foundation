@@ -94,7 +94,6 @@ export default function Blog({ searchParams }: Props) {
     useCategory({
       searchParams,
       entries: sortedResults,
-      validCategoryIds: validCategoryIds,
       categoryOptions: categoryOptions,
     })
 

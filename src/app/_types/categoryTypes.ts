@@ -5,6 +5,9 @@ export type CategoryCounts = Record<CategoryId, number>
 export type CategoryOption = {
   id: CategoryId
   name: string
+}
+
+export type CategoryOptionWithCount = CategoryOption & {
   count?: number
 }
 

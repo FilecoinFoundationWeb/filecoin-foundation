@@ -93,7 +93,6 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   const { categoryQuery, categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
-    validCategoryIds: validCategoryIds,
     categoryOptions: categoryOptions,
   })
 

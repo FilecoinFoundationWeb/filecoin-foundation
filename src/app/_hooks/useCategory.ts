@@ -4,6 +4,7 @@ import {
   type CategoryCounts,
   type CategoryId,
   type CategoryOption,
+  type CategoryOptionWithCount,
 } from '@/types/categoryTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
@@ -16,7 +17,6 @@ import { normalizeQueryParam } from '@/utils/queryUtils'
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
-  validCategoryIds: Array<CategoryId>
   categoryOptions: Array<CategoryOption>
 }
 
@@ -38,9 +38,13 @@ function validateCategoryOption(
 export function useCategory<Entry extends Object>({
   searchParams,
   entries,
-  validCategoryIds,
   categoryOptions,
 }: UseCategoryProps<Entry>) {
+  const validCategoryIds = useMemo(
+    () => categoryOptions.map((option) => option.id),
+    [categoryOptions],
+  )
+
   const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
   const validatedCategoryOption = validateCategoryOption(
     normalizedQuery,
@@ -68,14 +72,15 @@ export function useCategory<Entry extends Object>({
   }, [entries, validCategoryIds])
 
   const categoryOptionsWithCountAndAll = useMemo(() => {
-    const optionsWithCount = validCategoryIds.map((id) => ({
-      id,
-      name: categoryOptions.find((option) => option.id === id)?.name ?? id,
-      count: categoryCounts[id],
-    }))
+    const optionsWithCount: Array<CategoryOptionWithCount> =
+      validCategoryIds.map((id) => ({
+        id,
+        name: categoryOptions.find((option) => option.id === id)?.name ?? id,
+        count: categoryCounts[id],
+      }))
 
     const totalCount = optionsWithCount.reduce(
-      (sum, option) => sum + option.count,
+      (sum, option) => sum + (option.count ?? 0),
       0,
     )
 
