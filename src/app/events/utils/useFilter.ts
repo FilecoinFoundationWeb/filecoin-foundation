@@ -2,6 +2,8 @@ import { useMemo } from 'react'
 
 import { type Object } from '@/types/utils'
 
+import { ALL_FILTER_ID } from '@/constants/filterConstants'
+
 export type ApplyEventFilterProps<Entry extends Object> = {
   entries: Array<Entry>
   validatedOption: string | undefined
@@ -14,7 +16,7 @@ export function useFilter<Entry extends Object>({
   filterKey,
 }: ApplyEventFilterProps<Entry>) {
   const filteredResults = useMemo(() => {
-    if (!validatedOption || validatedOption === 'all') {
+    if (!validatedOption || validatedOption === ALL_FILTER_ID) {
       return entries
     }
 

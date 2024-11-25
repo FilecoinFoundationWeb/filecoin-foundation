@@ -1,2 +1,15 @@
-export const ALL_CATEGORIES_OPTION = { id: 'all', name: 'All Categories' }
-export const ALL_LOCATIONS_OPTION = { id: 'all', name: 'All Locations' }
+export const ALL_FILTER_ID = 'all' as const
+
+export type FilterOption = {
+  id: typeof ALL_FILTER_ID
+  name: string
+}
+
+export const ALL_CATEGORIES_OPTION: FilterOption = {
+  id: ALL_FILTER_ID,
+  name: 'All Categories',
+}
+export const ALL_LOCATIONS_OPTION: FilterOption = {
+  id: ALL_FILTER_ID,
+  name: 'All Locations',
+}

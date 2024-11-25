@@ -3,12 +3,16 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 
 import {
   ALL_CATEGORIES_OPTION,
+  ALL_FILTER_ID,
   ALL_LOCATIONS_OPTION,
+  type FilterOption,
 } from '@/constants/filterConstants'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { normalizeQueryParam } from '@/utils/queryUtils'
+
+import type { OptionType } from '@/components/ListboxOption'
 
 import { useFilter } from '../utils/useFilter'
 
@@ -39,47 +43,50 @@ export const useEventFilters = ({
   searchParams,
   entries,
 }: UseEventFiltersProps) => {
-  const { category, location } = getFilterOptionsFromCMS(filters)
-
-  const validatedCategoryQuery = getValidatedQuery(
-    searchParams,
-    CATEGORY_KEY,
-    category.validIds,
+  const { category, location } = getFilterOptionsAndValidIdsFromCMS(
+    filters.fields,
   )
 
-  const validatedLocationQuery = getValidatedQuery(
+  const validatedCategoryQuery = validatedFilterQueryParams({
     searchParams,
-    LOCATION_KEY,
-    location.validIds,
-  )
+    searchParamKey: CATEGORY_KEY,
+    validIds: category.validIds,
+  })
+
+  const validatedLocationQuery = validatedFilterQueryParams({
+    searchParams,
+    searchParamKey: LOCATION_KEY,
+    validIds: location.validIds,
+  })
 
   const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
     useFilter({
       entries,
       validatedOption: validatedLocationQuery,
-      filterKey: 'location.region',
+      filterKey: filters.fields.LOCATION,
     })
 
   const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
     useFilter({
       entries: filteredByLocation,
       validatedOption: validatedCategoryQuery,
-      filterKey: 'category',
+      filterKey: filters.fields.CATEGORY,
     })
 
   const filteredResults = filteredByCategory
 
-  const finalCategoryOptions = createCategoryOptionsWithCounts(
-    category.options,
-    filteredByLocation,
-  )
+  const categoryOptionsWithCountAndDefault = addCountsAndDefaultToOptions({
+    options: category.options,
+    entries: filteredByLocation,
+    defaultOption: ALL_CATEGORIES_OPTION,
+  })
 
   return {
     filteredResults,
     filters: {
       category: {
         query: categoryQuery,
-        options: finalCategoryOptions,
+        options: categoryOptionsWithCountAndDefault,
       },
       location: {
         query: locationQuery,
@@ -89,17 +96,17 @@ export const useEventFilters = ({
   }
 }
 
-const getFilterOptionsFromCMS = (filters: EventFilters) => {
+function getFilterOptionsAndValidIdsFromCMS(filters: EventFilters['fields']) {
   const { validIds: validCategoryIds, options: categoryOptions } =
     getCMSFieldOptionsAndValidIds({
       collectionName: EVENT_COLLECTION_NAME,
-      fieldName: filters.fields.CATEGORY,
+      fieldName: filters.CATEGORY,
     })
 
   const { validIds: validLocationIds, options: locationOptions } =
     getCMSFieldOptionsAndValidIds({
       collectionName: EVENT_COLLECTION_NAME,
-      fieldName: filters.fields.LOCATION,
+      fieldName: filters.LOCATION,
     })
 
   return {
@@ -111,24 +118,37 @@ const getFilterOptionsFromCMS = (filters: EventFilters) => {
   }
 }
 
-function getValidatedQuery(
-  searchParams: NextServerSearchParams,
-  searchParamKey: string,
-  validIds: Array<string>,
-) {
+type ValidatedFilterQueryParamsProps = {
+  searchParams: NextServerSearchParams
+  searchParamKey: string
+  validIds: Array<string>
+}
+
+function validatedFilterQueryParams({
+  searchParams,
+  searchParamKey,
+  validIds,
+}: ValidatedFilterQueryParamsProps) {
   const normalizedQuery = normalizeQueryParam(searchParams, searchParamKey)
 
-  if (!normalizedQuery || normalizedQuery === 'all') {
-    return 'all'
+  if (!normalizedQuery || normalizedQuery === ALL_FILTER_ID) {
+    return ALL_FILTER_ID
   }
   return validIds.includes(normalizedQuery || '') ? normalizedQuery : undefined
 }
 
-const createCategoryOptionsWithCounts = (
-  categoryOptions: Array<{ id: string; name: string }>,
-  entries: Array<any>,
-) => {
-  const dynamicCategoryOptions = categoryOptions.map((option) => ({
+type AddCountsAndDefaultToOptionsProps = {
+  options: Array<OptionType>
+  entries: Array<Record<string, any>>
+  defaultOption: FilterOption
+}
+
+function addCountsAndDefaultToOptions({
+  options,
+  entries,
+  defaultOption,
+}: AddCountsAndDefaultToOptionsProps) {
+  const dynamicCategoryOptions = options.map((option) => ({
     ...option,
     count: entries.filter((entry) => entry.category === option.id).length,
   }))
@@ -138,8 +158,5 @@ const createCategoryOptionsWithCounts = (
     0,
   )
 
-  return [
-    { ...ALL_CATEGORIES_OPTION, count: totalCount },
-    ...dynamicCategoryOptions,
-  ]
+  return [{ ...defaultOption, count: totalCount }, ...dynamicCategoryOptions]
 }

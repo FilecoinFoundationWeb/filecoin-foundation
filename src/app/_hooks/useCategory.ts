@@ -8,11 +8,10 @@ import {
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
+import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
-
-import { ALL_CATEGORIES_OPTION } from '@/_constants/filterConstants'
 
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
