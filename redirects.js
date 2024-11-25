@@ -229,6 +229,11 @@ const redirects = [
     destination: '/events/fil-dev-summit-singapore-2023',
     permanent: true,
   },
+  {
+    source: '/events/the-filecoin-penthouse-davos-2024',
+    destination: '/events/the-filecoin-penthouse-davos-2025',
+    permanent: true,
+  },
 
   // IMAGE REDIRECTS
   {
