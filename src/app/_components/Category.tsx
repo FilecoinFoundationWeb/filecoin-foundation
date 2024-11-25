@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
@@ -21,14 +21,10 @@ export function Category({ query, options }: CategoryProps) {
   const [categoryId, setCategoryId] = useState<OptionType['id']>(
     query || ALL_CATEGORIES_OPTION.id,
   )
-  const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
+  const { updateSearchParams } = useUpdateSearchParams()
 
   const selectedCategory =
     options.find((option) => option.id === categoryId) || ALL_CATEGORIES_OPTION
-
-  useEffect(() => {
-    setCategoryId(query || ALL_CATEGORIES_OPTION.id)
-  }, [query])
 
   return (
     <>

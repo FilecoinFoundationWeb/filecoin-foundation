@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { ALL_LOCATIONS_OPTION } from '@/constants/filterConstants'
 import { LOCATION_KEY } from '@/constants/searchParams'
@@ -21,14 +21,10 @@ export function LocationFilter({ query, options }: LocationFilterProps) {
     query || ALL_LOCATIONS_OPTION.id,
   )
 
-  const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
+  const { updateSearchParams } = useUpdateSearchParams()
 
   const selectedCategory =
     options.find((option) => option.id === optionId) || options[0]
-
-  useEffect(() => {
-    setOptionId(query || ALL_LOCATIONS_OPTION.id)
-  }, [query])
 
   return (
     <FilterListbox
