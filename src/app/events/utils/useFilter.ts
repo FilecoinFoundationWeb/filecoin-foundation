@@ -1,23 +1,20 @@
 import { useMemo } from 'react'
 
-import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
 export type ApplyEventFilterProps<Entry extends Object> = {
-  searchParams: NextServerSearchParams
   entries: Array<Entry>
   validatedOption: string | undefined
   filterKey: string
 }
 
 export function useFilter<Entry extends Object>({
-  searchParams,
   entries,
   validatedOption,
   filterKey,
 }: ApplyEventFilterProps<Entry>) {
   const filteredResults = useMemo(() => {
-    if (!validatedOption) {
+    if (!validatedOption || validatedOption === 'all') {
       return entries
     }
 
@@ -25,7 +22,7 @@ export function useFilter<Entry extends Object>({
       const fieldValue = getNestedValue(entry, filterKey)
       return fieldValue === validatedOption
     })
-  }, [searchParams, entries, filterKey])
+  }, [entries, filterKey, validatedOption])
 
   return {
     filterQuery: validatedOption,

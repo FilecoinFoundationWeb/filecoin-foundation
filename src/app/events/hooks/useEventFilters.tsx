@@ -1,7 +1,7 @@
 import type { CMSCollectionName } from '@/types/cmsConfig'
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { CATEGORY_KEY, REGION_KEY } from '@/constants/searchParams'
+import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 
@@ -37,13 +37,12 @@ export const useEventFilters = ({
 
   const validatedLocationQuery = getValidatedQuery(
     searchParams,
-    REGION_KEY,
+    LOCATION_KEY,
     location.validIds,
   )
 
   const { filterQuery: locationQuery, filteredResults: filteredByLocation } =
     useFilter({
-      searchParams,
       entries,
       validatedOption: validatedLocationQuery,
       filterKey: 'location.region',
@@ -51,7 +50,6 @@ export const useEventFilters = ({
 
   const { filterQuery: categoryQuery, filteredResults: filteredByCategory } =
     useFilter({
-      searchParams,
       entries: filteredByLocation,
       validatedOption: validatedCategoryQuery,
       filterKey: 'category',
@@ -73,7 +71,7 @@ export const useEventFilters = ({
       },
       location: {
         query: locationQuery,
-        options: location.options,
+        options: [{ id: 'all', name: 'All Location' }, ...location.options],
       },
     },
   }
@@ -94,7 +92,10 @@ const createFilterOptions = (filters: UseEventFiltersProps['filters']) => {
 
   return {
     category: { validIds: validCategoryIds, options: categoryOptions },
-    location: { validIds: validLocationIds, options: locationOptions },
+    location: {
+      validIds: validLocationIds,
+      options: locationOptions,
+    },
   }
 }
 
@@ -106,7 +107,7 @@ function getValidatedQuery(
   const normalizedQuery = normalizeQueryParam(searchParams, searchParamKey)
 
   if (!normalizedQuery) {
-    return undefined
+    return 'all'
   }
   return validIds.includes(normalizedQuery || '') ? normalizedQuery : undefined
 }

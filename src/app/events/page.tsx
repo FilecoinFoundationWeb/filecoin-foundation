@@ -26,11 +26,11 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
 import { FilterContainer } from '@/components/FilterContainer'
+import { LocationFilter } from '@/components/LocationFilter'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
-import { Region } from '@/components/Region'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
@@ -147,7 +147,10 @@ export default function Events({ searchParams }: Props) {
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
               location={
-                <Region query={locationQuery} options={locationOptions} />
+                <LocationFilter
+                  query={locationQuery}
+                  options={locationOptions}
+                />
               }
               sort={
                 <Sort
@@ -170,7 +173,10 @@ export default function Events({ searchParams }: Props) {
                 <Category query={categoryQuery} options={categoryOptions} />
               }
               location={
-                <Region query={locationQuery} options={locationOptions} />
+                <LocationFilter
+                  query={locationQuery}
+                  options={locationOptions}
+                />
               }
             />
             <FilterContainer.ContentWrapper>

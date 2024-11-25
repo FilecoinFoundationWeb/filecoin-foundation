@@ -69,7 +69,7 @@ export function useCategory<Entry extends Object>({
       name: categoryOptions.find((option) => option.id === id)?.name ?? id,
       count: categoryCounts[id],
     }))
-  }, [validCategoryIds, categoryCounts])
+  }, [validCategoryIds, categoryCounts, categoryOptions])
 
   return {
     categoryQuery: validatedCategoryOption,

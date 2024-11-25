@@ -3,27 +3,26 @@
 import { Listbox } from '@headlessui/react'
 import { FunnelSimple } from '@phosphor-icons/react'
 
-import { type CategoryOption } from '@/types/categoryTypes'
-
 import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
+import { type OptionType, ListboxOption } from '@/components/ListboxOption'
 import { ListboxOptions } from '@/components/ListboxOptions'
 
-type RegionListboxProps = {
-  selected: CategoryOption | undefined
-  options: Array<CategoryOption>
-  onChange: (selected: CategoryOption) => void
+type LocationListboxProps = {
+  selected: OptionType
+  options: Array<OptionType>
+  onChange: (selected: OptionType) => void
 }
 
-export function RegionListbox({
+export function LocationListbox({
   selected,
   options,
   onChange,
-}: RegionListboxProps) {
+}: LocationListboxProps) {
+  console.log(options)
   return (
     <Listbox value={selected} onChange={onChange}>
       <ListboxButton
-        text={selected?.name || 'Region'}
+        text={selected?.name || 'Location'}
         leadingIcon={FunnelSimple}
       />
       <ListboxOptions>
