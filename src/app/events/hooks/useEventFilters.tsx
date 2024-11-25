@@ -75,7 +75,10 @@ export const useEventFilters = ({
     })
 
   // 4. return final filtered results after applying both location and category filters
-  const filteredResults = filteredByCategory
+  const filteredResults = entries.filter(
+    (entry) =>
+      filteredByLocation.includes(entry) && filteredByCategory.includes(entry),
+  )
 
   return {
     filteredResults,

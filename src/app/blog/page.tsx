@@ -90,7 +90,7 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categoryQuery, categorizedResults, categoryOptionsWithCount } =
+  const { categoryQuery, categorizedResults, categoryOptionsWithCountAndAll } =
     useCategory({
       searchParams,
       entries: sortedResults,
@@ -134,7 +134,7 @@ export default function Blog({ searchParams }: Props) {
             category={
               <Category
                 query={categoryQuery}
-                options={categoryOptionsWithCount}
+                options={categoryOptionsWithCountAndAll}
               />
             }
           />
@@ -162,7 +162,7 @@ export default function Blog({ searchParams }: Props) {
               category={
                 <Category
                   query={categoryQuery}
-                  options={categoryOptionsWithCount}
+                  options={categoryOptionsWithCountAndAll}
                 />
               }
             />

@@ -67,7 +67,7 @@ export function useCategory<Entry extends Object>({
     }, {} as CategoryCounts)
   }, [entries, validCategoryIds])
 
-  const categoryOptionsWithCount = useMemo(() => {
+  const categoryOptionsWithCountAndAll = useMemo(() => {
     const optionsWithCount = validCategoryIds.map((id) => ({
       id,
       name: categoryOptions.find((option) => option.id === id)?.name ?? id,
@@ -88,6 +88,6 @@ export function useCategory<Entry extends Object>({
   return {
     categoryQuery: validatedCategoryOption,
     categorizedResults,
-    categoryOptionsWithCount,
+    categoryOptionsWithCountAndAll,
   }
 }
