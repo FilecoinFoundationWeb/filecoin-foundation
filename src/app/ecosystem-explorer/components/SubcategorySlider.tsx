@@ -3,17 +3,17 @@
 import { useState } from 'react'
 
 import { Button as HeadlessUIButton } from '@headlessui/react'
-import { FunnelSimple } from '@phosphor-icons/react'
+import { FunnelSimple, X } from '@phosphor-icons/react'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { Button } from '@/components/Button'
 import { Icon } from '@/components/Icon'
+import { IconButton } from '@/components/IconButton'
 import { SlideOver } from '@/components/SlideOver'
 
 import type { CategoriesAndSubcategoriesWithCount } from '../types/ecosystemCategoryType'
 
-import { SliderCloseButton } from './SliderCloseButton'
 import { SubcategoriesSidebar } from './SubcategoriesSidebar'
 
 type Props = {
@@ -41,7 +41,11 @@ export function SubcategorySlider({ categories }: Props) {
             <h2 className="text-xl font-bold">Filters</h2>
           </div>
 
-          <SliderCloseButton closeSlider={closeSlider} />
+          <IconButton
+            icon={X}
+            label="Close category filters"
+            onClick={closeSlider}
+          />
         </div>
 
         <div className="flex flex-col gap-12 p-6">
