@@ -21,7 +21,6 @@ export function LocationFilter({ query, options }: LocationFilterProps) {
     query || DEFAULT_CATEGORY,
   )
 
-  console.log({ options })
   const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
   const selectedCategory =

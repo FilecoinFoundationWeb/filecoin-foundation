@@ -4,7 +4,7 @@ import type { ElementType } from 'react'
 
 import { clsx } from 'clsx'
 
-import { type CategoryId, type CategoryOption } from '@/types/categoryTypes'
+import type { OptionType } from '@/components/ListboxOption'
 
 const touchTarget = {
   class: 'px-4',
@@ -13,9 +13,9 @@ const touchTarget = {
 } as const
 
 type CategorySidebarProps = {
-  selectedId: CategoryId
-  options: Array<CategoryOption>
-  onChange: (selected: CategoryOption) => void
+  selectedId: OptionType['id']
+  options: Array<OptionType>
+  onChange: (selected: OptionType) => void
 }
 
 type CategoryContainerProps = {

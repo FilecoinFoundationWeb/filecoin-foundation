@@ -44,7 +44,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
       <div className="flex flex-col gap-3 sm:flex-row">
         {search}
         <div className="flex flex-1 gap-3 sm:flex-row">
-          <div className="w-full sm:w-64 md:w-44">{location}</div>
+          {location && <div className="w-full sm:w-64 md:w-44">{location}</div>}
           <div className="w-full sm:w-64 md:w-44">{category}</div>
           <div className="md:w-44">{sort}</div>
         </div>

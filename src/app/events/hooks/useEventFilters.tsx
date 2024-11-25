@@ -4,30 +4,41 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
-import { normalizeQueryParam } from '@/_utils/queryUtils'
+import { ALL_CATEGORIES_OPTION } from '@/_hooks/useCategory'
 
 import { useFilter } from '../utils/useFilter'
 
 type UseEventFiltersProps = {
   searchParams: NextServerSearchParams
   entries: Array<any>
-  filters: {
-    fields: {
-      CATEGORY: string
-      LOCATION: string
-    }
+}
+
+type EventFilter = 'category' | 'location.region'
+
+type EventFilters = {
+  fields: {
+    CATEGORY: EventFilter
+    LOCATION: EventFilter
   }
 }
 
 const EVENT_COLLECTION_NAME = 'event_entries' as CMSCollectionName
+const ALL_LOCATIONS_OPTION = { id: 'all', name: 'All Locations' }
+
+const filters: EventFilters = {
+  fields: {
+    CATEGORY: 'category',
+    LOCATION: 'location.region',
+  },
+} as const
 
 export const useEventFilters = ({
   searchParams,
   entries,
-  filters,
 }: UseEventFiltersProps) => {
-  const { category, location } = createFilterOptions(filters)
+  const { category, location } = getFilterOptionsFromCMS(filters)
 
   const validatedCategoryQuery = getValidatedQuery(
     searchParams,
@@ -71,13 +82,13 @@ export const useEventFilters = ({
       },
       location: {
         query: locationQuery,
-        options: [{ id: 'all', name: 'All Location' }, ...location.options],
+        options: [ALL_LOCATIONS_OPTION, ...location.options],
       },
     },
   }
 }
 
-const createFilterOptions = (filters: UseEventFiltersProps['filters']) => {
+const getFilterOptionsFromCMS = (filters: EventFilters) => {
   const { validIds: validCategoryIds, options: categoryOptions } =
     getCMSFieldOptionsAndValidIds({
       collectionName: EVENT_COLLECTION_NAME,
@@ -106,7 +117,7 @@ function getValidatedQuery(
 ) {
   const normalizedQuery = normalizeQueryParam(searchParams, searchParamKey)
 
-  if (!normalizedQuery) {
+  if (!normalizedQuery || normalizedQuery === 'all') {
     return 'all'
   }
   return validIds.includes(normalizedQuery || '') ? normalizedQuery : undefined
@@ -127,7 +138,7 @@ const createCategoryOptionsWithCounts = (
   )
 
   return [
-    { id: 'all', name: 'All', count: totalCount },
+    { ...ALL_CATEGORIES_OPTION, count: totalCount },
     ...dynamicCategoryOptions,
   ]
 }

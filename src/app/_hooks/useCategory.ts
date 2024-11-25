@@ -19,12 +19,14 @@ export type UseCategoryProps<Entry extends Object> = {
   categoryOptions: Array<CategoryOption>
 }
 
+export const ALL_CATEGORIES_OPTION = { id: 'all', name: 'All Categories' }
+
 function validateCategoryOption(
   normalizedQuery: ReturnType<typeof normalizeQueryParam>,
   validCategoryIds: Array<CategoryId>,
 ) {
-  if (!normalizedQuery) {
-    return undefined
+  if (!normalizedQuery || normalizedQuery === ALL_CATEGORIES_OPTION.id) {
+    return ALL_CATEGORIES_OPTION.id
   }
 
   const validCategoryId = validCategoryIds.find(
@@ -47,7 +49,10 @@ export function useCategory<Entry extends Object>({
   )
 
   const categorizedResults = useMemo(() => {
-    if (!validatedCategoryOption) {
+    if (
+      !validatedCategoryOption ||
+      validatedCategoryOption === ALL_CATEGORIES_OPTION.id
+    ) {
       return entries
     }
 
@@ -64,11 +69,21 @@ export function useCategory<Entry extends Object>({
   }, [entries, validCategoryIds])
 
   const categoryOptionsWithCount = useMemo(() => {
-    return validCategoryIds.map((id) => ({
+    const optionsWithCount = validCategoryIds.map((id) => ({
       id,
       name: categoryOptions.find((option) => option.id === id)?.name ?? id,
       count: categoryCounts[id],
     }))
+
+    const totalCount = optionsWithCount.reduce(
+      (sum, option) => sum + option.count,
+      0,
+    )
+
+    return [
+      { ...ALL_CATEGORIES_OPTION, count: totalCount },
+      ...optionsWithCount,
+    ]
   }, [validCategoryIds, categoryCounts, categoryOptions])
 
   return {

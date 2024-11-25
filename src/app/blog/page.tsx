@@ -15,7 +15,6 @@ import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
-import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -27,7 +26,6 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -41,7 +39,6 @@ import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
-
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -134,12 +131,6 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={
-              <CategoryResetButton
-                categoryOptionsWithCount={categoryOptionsWithCount}
-                isSelected={hasNoFiltersApplied(searchParams)}
-              />
-            }
             category={
               <Category
                 query={categoryQuery}

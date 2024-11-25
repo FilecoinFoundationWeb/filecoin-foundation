@@ -91,23 +91,13 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const FILTERS = {
-    fields: {
-      CATEGORY: 'category',
-      LOCATION: 'location.region',
-    },
-  }
-
   const { filteredResults, filters } = useEventFilters({
     searchParams,
     entries: sortedResults,
-    filters: FILTERS,
   })
 
-  const { category, location } = filters
-
-  const { options: categoryOptions, query: categoryQuery } = category
-  const { options: locationOptions, query: locationQuery } = location
+  const { options: categoryOptions, query: categoryQuery } = filters.category
+  const { options: locationOptions, query: locationQuery } = filters.location
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
