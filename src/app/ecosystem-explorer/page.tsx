@@ -10,6 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { findOrThrow } from '@/utils/findOrThrow'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -39,7 +40,6 @@ import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
-import { getSubcategoriesFromDirectory } from './utils/getSubcategoriesFromDirectory'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -68,8 +68,7 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const categories = getCategoriesFromDirectory()
-const subcategories = getSubcategoriesFromDirectory()
+const { categories, subcategories } = getCategoriesFromDirectory()
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -156,20 +155,26 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 <>
                   <CardGrid cols="smTwo">
                     {paginatedResults.map((project, i) => {
-                      const { slug, title, description, image, category } =
-                        project
+                      const {
+                        slug,
+                        title,
+                        description,
+                        image,
+                        category: categoryId,
+                      } = project
 
                       const isFirstTwoImages = i < 2
-                      const categoryName = categories.find(
-                        (c) => c.slug === category,
-                      )?.name
+                      const category = findOrThrow(
+                        categories,
+                        (category) => category.slug === categoryId,
+                      )
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={categoryName}
+                          tagLabel={category.name}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',

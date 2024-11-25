@@ -6,13 +6,12 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getCategoriesFromDirectory } from '../utils/getCategoriesFromDirectory'
-import { getSubcategoriesFromDirectory } from '../utils/getSubcategoriesFromDirectory'
 import { getSubcategoriesFromQueryParam } from '../utils/getSubcategoriesFromQueryParam'
 
 type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   searchParams: NextServerSearchParams
-  categories: ReturnType<typeof getCategoriesFromDirectory>
-  subcategories: ReturnType<typeof getSubcategoriesFromDirectory>
+  categories: ReturnType<typeof getCategoriesFromDirectory>['categories']
+  subcategories: ReturnType<typeof getCategoriesFromDirectory>['subcategories']
   entries: Array<Entry>
 }
 
