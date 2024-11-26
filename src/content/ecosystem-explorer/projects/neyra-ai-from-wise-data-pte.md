@@ -12,7 +12,7 @@ tech:
 website: "https://drive.neyra.ai/"
 year-joined: 2023-11-01T18:39:58.216Z
 subcategories:
-  - artificial-productivity-utilities
+  - ai-productivity-utilities
 seo:
   description:
     Neyra AI provides AI-driven solutions for decentralized data analysis

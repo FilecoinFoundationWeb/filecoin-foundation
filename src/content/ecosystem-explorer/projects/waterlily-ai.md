@@ -20,7 +20,7 @@ twitter: "https://twitter.com/Waterlily"
 video-url: "https://www.youtube.com/embed/AhCScfpeN3k"
 year-joined: 2023-04-25T22:00:00.000Z
 subcategories:
-  - artificial-productivity-utilities
+  - ai-productivity-utilities
 seo:
   description:
     Waterlily AI provides AI-driven solutions for decentralized data analysis
