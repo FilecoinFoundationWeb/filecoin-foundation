@@ -4,6 +4,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
+import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -36,6 +37,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { blogSortConfigs } from './constants/sortConfigs'
+import { filterBlogPostsByCategory } from './utils/filterBlogPosts'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
@@ -93,6 +95,8 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: sortedResults,
     categoryOptions: categoryOptions,
+    allOption: ALL_CATEGORIES_OPTION,
+    filterFn: filterBlogPostsByCategory,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({

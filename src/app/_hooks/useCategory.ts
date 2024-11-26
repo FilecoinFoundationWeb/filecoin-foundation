@@ -1,29 +1,33 @@
 import { useMemo } from 'react'
 
-import {
-  type CategoryCounts,
-  type CategoryId,
-  type CategoryOption,
-  type CategoryOptionWithCount,
-} from '@/types/categoryTypes'
+import { type CategoryId } from '@/types/categoryTypes'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
-import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
+import type { ALL_FILTER_ID } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { normalizeQueryParam } from '@/utils/queryUtils'
+
+type CMSOption = ReturnType<
+  typeof getCMSFieldOptionsAndValidIds
+>['options'][number]
 
 export type UseCategoryProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
-  categoryOptions: Array<CategoryOption>
+  categoryOptions: Array<CMSOption>
+  allOption: { id: typeof ALL_FILTER_ID; name: string }
+  filterFn: (entries: Array<Entry>, id?: CMSOption['id']) => Array<Entry>
 }
 
 export function useCategory<Entry extends Object>({
   searchParams,
   entries,
   categoryOptions,
+  allOption,
+  filterFn,
 }: UseCategoryProps<Entry>) {
   const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
 
@@ -32,67 +36,55 @@ export function useCategory<Entry extends Object>({
     [categoryOptions],
   )
 
+  const filtersAreUnset = useMemo(() => {
+    return !normalizedQuery || normalizedQuery === allOption.id
+  }, [allOption.id, normalizedQuery])
+
   const validatedCategoryOption = validateCategoryOption(
     normalizedQuery,
     validCategoryIds,
   )
 
   const categorizedResults = useMemo(() => {
-    if (
-      !validatedCategoryOption ||
-      validatedCategoryOption === ALL_CATEGORIES_OPTION.id
-    ) {
+    if (filtersAreUnset) {
       return entries
     }
 
-    return entries.filter((entry) => {
-      return entry.category === validatedCategoryOption
-    })
-  }, [entries, validatedCategoryOption])
-
-  const categoryCounts = useMemo(() => {
-    return validCategoryIds.reduce((counts, id) => {
-      counts[id] = entries.filter((entry) => entry.category === id).length
-      return counts
-    }, {} as CategoryCounts)
-  }, [entries, validCategoryIds])
+    return filterFn(entries, validatedCategoryOption)
+  }, [filtersAreUnset, validatedCategoryOption, entries, filterFn])
 
   const categoryOptionsWithCountAndAll = useMemo(() => {
-    const optionsWithCount: Array<CategoryOptionWithCount> =
-      validCategoryIds.map((id) => ({
-        id,
-        name: categoryOptions.find((option) => option.id === id)?.name ?? id,
-        count: categoryCounts[id],
-      }))
+    const optionsWithCount = validCategoryIds.map((id) => ({
+      id,
+      name: categoryOptions.find((option) => option.id === id)?.name ?? id,
+      count: filterFn(entries, id).length,
+    }))
 
     const totalCount = optionsWithCount.reduce(
-      (sum, option) => sum + (option.count ?? 0),
+      (sum, option) => sum + option.count,
       0,
     )
 
-    return [
-      { ...ALL_CATEGORIES_OPTION, count: totalCount },
-      ...optionsWithCount,
-    ]
-  }, [validCategoryIds, categoryCounts, categoryOptions])
+    return [{ ...allOption, count: totalCount }, ...optionsWithCount]
+  }, [validCategoryIds, allOption, categoryOptions, filterFn, entries])
 
   return {
     categorizedResults,
     categoryOptionsWithCountAndAll,
   }
-}
 
-function validateCategoryOption(
-  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  validCategoryIds: Array<CategoryId>,
-) {
-  if (!normalizedQuery || normalizedQuery === ALL_CATEGORIES_OPTION.id) {
-    return ALL_CATEGORIES_OPTION.id
+  function validateCategoryOption(
+    normalizedQuery: ReturnType<typeof normalizeQueryParam>,
+    validCategoryIds: Array<CategoryId>,
+  ) {
+    if (filtersAreUnset) {
+      return allOption.id
+    }
+
+    const validCategoryId = validCategoryIds.find(
+      (option) => option === normalizedQuery,
+    )
+
+    return validCategoryId
   }
-
-  const validCategoryId = validCategoryIds.find(
-    (option) => option === normalizedQuery,
-  )
-
-  return validCategoryId
 }

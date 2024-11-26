@@ -4,6 +4,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
+import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -39,6 +40,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
+import { filterEcosystemProjectsByCategory } from './utils/filterEcosystemProjects'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
@@ -73,8 +75,7 @@ const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
 
-const { categoryOptions, validCategoryIds } =
-  getCategorySettingsFromMap(categoryData)
+const { categoryOptions } = getCategorySettingsFromMap(categoryData)
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -94,6 +95,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     searchParams,
     entries: sortedResults,
     categoryOptions: categoryOptions,
+    allOption: ALL_CATEGORIES_OPTION,
+    filterFn: filterEcosystemProjectsByCategory,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({

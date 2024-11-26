@@ -1,4 +1,4 @@
-export const ALL_FILTER_ID = 'all' as const
+export const ALL_FILTER_ID = 'all'
 
 export type FilterOption = {
   id: typeof ALL_FILTER_ID
