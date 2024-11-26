@@ -5,7 +5,12 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
+import {
+  ALL_CATEGORIES_OPTION,
+  ALL_LOCATIONS_OPTION,
+} from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
+import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -13,11 +18,13 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
+import { useCategory } from '@/hooks/useCategory'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -38,7 +45,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
-import { useEventFilters } from './hooks/useEventFilters'
+// import { useEventFilters } from './hooks/useEventFilters'
+import {
+  filterEventsByCategory,
+  filterEventsByLocation,
+} from './utils/filterEvents'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
@@ -63,6 +74,16 @@ const sortOptions = getSortOptions(eventsSortConfigs)
 
 const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
 const featuredEvent = getEventData(featuredEventSlug)
+
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'event_entries',
+  fieldName: 'category',
+})
+
+const { options: locationOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'event_entries',
+  fieldName: 'location.region',
+})
 
 export const metadata = createMetadata({
   seo: {
@@ -91,17 +112,28 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { filteredResults, filters } = useEventFilters({
-    searchParams,
-    entries: sortedResults,
-  })
+  const { categorizedResults: filteredByLocation, categoryOptionsWithAll } =
+    useCategory({
+      key: LOCATION_KEY,
+      searchParams,
+      entries: sortedResults,
+      categoryOptions: locationOptions,
+      allOption: ALL_LOCATIONS_OPTION,
+      filterFn: filterEventsByLocation,
+    })
 
-  const { options: categoryOptions } = filters.category
-  const { options: locationOptions } = filters.location
+  const { categorizedResults, categoryOptionsWithCountAndAll } = useCategory({
+    key: CATEGORY_KEY,
+    searchParams,
+    entries: filteredByLocation,
+    categoryOptions: categoryOptions,
+    allOption: ALL_CATEGORIES_OPTION,
+    filterFn: filterEventsByCategory,
+  })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredResults,
+    entries: filteredByLocation,
   })
 
   return (
@@ -129,12 +161,12 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={<Category options={categoryOptions} />}
+            category={<Category options={categoryOptionsWithCountAndAll} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
-              location={<LocationFilter options={locationOptions} />}
+              location={<LocationFilter options={categoryOptionsWithAll} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -145,8 +177,8 @@ export default function Events({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              location={<LocationFilter options={locationOptions} />}
-              category={<Category options={categoryOptions} />}
+              category={<Category options={categoryOptionsWithCountAndAll} />}
+              location={<LocationFilter options={categoryOptionsWithAll} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -156,7 +188,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredResults.length === 0 ? (
+              {categorizedResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

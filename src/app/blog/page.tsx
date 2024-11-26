@@ -6,6 +6,7 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
+import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -92,6 +93,7 @@ export default function Blog({ searchParams }: Props) {
   })
 
   const { categorizedResults, categoryOptionsWithCountAndAll } = useCategory({
+    key: CATEGORY_KEY,
     searchParams,
     entries: sortedResults,
     categoryOptions: categoryOptions,

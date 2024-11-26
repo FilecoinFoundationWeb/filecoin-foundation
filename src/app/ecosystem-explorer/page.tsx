@@ -6,6 +6,7 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
+import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -92,6 +93,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   })
 
   const { categorizedResults } = useCategory({
+    key: CATEGORY_KEY,
     searchParams,
     entries: sortedResults,
     categoryOptions: categoryOptions,

@@ -5,7 +5,6 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
 import type { ALL_FILTER_ID } from '@/constants/filterConstants'
-import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { normalizeQueryParam } from '@/utils/queryUtils'
@@ -15,6 +14,7 @@ type CMSOption = ReturnType<
 >['options'][number]
 
 export type UseCategoryProps<Entry extends Object> = {
+  key: string
   searchParams: NextServerSearchParams
   entries: Array<Entry>
   categoryOptions: Array<CMSOption>
@@ -23,13 +23,14 @@ export type UseCategoryProps<Entry extends Object> = {
 }
 
 export function useCategory<Entry extends Object>({
+  key,
   searchParams,
   entries,
   categoryOptions,
   allOption,
   filterFn,
 }: UseCategoryProps<Entry>) {
-  const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
+  const normalizedQuery = normalizeQueryParam(searchParams, key)
 
   const validCategoryIds = useMemo(
     () => categoryOptions.map((option) => option.id),
@@ -53,6 +54,10 @@ export function useCategory<Entry extends Object>({
     return filterFn(entries, validatedCategoryOption)
   }, [filtersAreUnset, validatedCategoryOption, entries, filterFn])
 
+  const categoryOptionsWithAll = useMemo(() => {
+    return [allOption, ...categoryOptions]
+  }, [allOption, categoryOptions])
+
   const categoryOptionsWithCountAndAll = useMemo(() => {
     const optionsWithCount = validCategoryIds.map((id) => ({
       id,
@@ -70,6 +75,7 @@ export function useCategory<Entry extends Object>({
 
   return {
     categorizedResults,
+    categoryOptionsWithAll,
     categoryOptionsWithCountAndAll,
   }
 
