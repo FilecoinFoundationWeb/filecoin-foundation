@@ -13,7 +13,7 @@ const touchTarget = {
 } as const
 
 type CategorySidebarProps = {
-  selectedId: OptionType['id']
+  selected: OptionType
   options: Array<OptionType>
   onChange: (selected: OptionType) => void
 }
@@ -31,7 +31,7 @@ type CategoryItemProps = {
 }
 
 export function CategorySidebar({
-  selectedId,
+  selected,
   options,
   onChange,
 }: CategorySidebarProps) {
@@ -41,7 +41,7 @@ export function CategorySidebar({
         <CategorySidebar.Item
           key={option.id}
           name={option.name}
-          isSelected={selectedId === option.id}
+          isSelected={selected.id === option.id}
           count={option.count}
           handleClick={() => onChange(option)}
         />

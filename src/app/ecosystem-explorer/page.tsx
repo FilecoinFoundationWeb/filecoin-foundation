@@ -90,7 +90,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { categoryQuery, categorizedResults } = useCategory({
+  const { categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
     categoryOptions: categoryOptions,
@@ -123,9 +123,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
             results={<ResultsAndReset results={categorizedResults.length} />}
-            category={
-              <Category query={categoryQuery} options={categoryOptions} />
-            }
+            category={<Category options={categoryOptions} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -141,15 +139,13 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
+              category={<Category options={categoryOptions} />}
               sort={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
                   defaultQuery={defaultSortQuery}
                 />
-              }
-              category={
-                <Category query={categoryQuery} options={categoryOptions} />
               }
             />
             <FilterContainer.ContentWrapper>

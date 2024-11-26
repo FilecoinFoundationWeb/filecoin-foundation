@@ -96,8 +96,8 @@ export default function Events({ searchParams }: Props) {
     entries: sortedResults,
   })
 
-  const { options: categoryOptions, query: categoryQuery } = filters.category
-  const { options: locationOptions, query: locationQuery } = filters.location
+  const { options: categoryOptions } = filters.category
+  const { options: locationOptions } = filters.location
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -129,19 +129,12 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={
-              <Category query={categoryQuery} options={categoryOptions} />
-            }
+            category={<Category options={categoryOptions} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
-              location={
-                <LocationFilter
-                  query={locationQuery}
-                  options={locationOptions}
-                />
-              }
+              location={<LocationFilter options={locationOptions} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -152,20 +145,13 @@ export default function Events({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
+              location={<LocationFilter options={locationOptions} />}
+              category={<Category options={categoryOptions} />}
               sort={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
                   defaultQuery={defaultSortQuery}
-                />
-              }
-              category={
-                <Category query={categoryQuery} options={categoryOptions} />
-              }
-              location={
-                <LocationFilter
-                  query={locationQuery}
-                  options={locationOptions}
                 />
               }
             />

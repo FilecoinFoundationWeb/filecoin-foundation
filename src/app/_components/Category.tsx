@@ -1,27 +1,25 @@
 'use client'
 
-import { useState } from 'react'
+import { useQueryState, parseAsString } from 'nuqs'
 
 import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
-
-import { useCategory } from '@/hooks/useCategory'
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { CategorySidebar } from '@/components/CategorySidebar'
 import { FilterListbox } from '@/components/FilterListbox'
 import type { OptionType } from '@/components/ListboxOption'
 
 type CategoryProps = {
-  query: ReturnType<typeof useCategory>['categoryQuery']
   options: Array<OptionType>
 }
 
-export function Category({ query, options }: CategoryProps) {
-  const [categoryId, setCategoryId] = useState<OptionType['id']>(
-    query || ALL_CATEGORIES_OPTION.id,
+export function Category({ options }: CategoryProps) {
+  const [categoryId, setCategoryId] = useQueryState<OptionType['id']>(
+    CATEGORY_KEY,
+    parseAsString
+      .withDefault(ALL_CATEGORIES_OPTION.id)
+      .withOptions({ shallow: false }),
   )
-  const { updateSearchParams } = useUpdateSearchParams()
 
   const selectedCategory =
     options.find((option) => option.id === categoryId) || ALL_CATEGORIES_OPTION
@@ -30,31 +28,18 @@ export function Category({ query, options }: CategoryProps) {
     <>
       <div className="hidden lg:block">
         <CategorySidebar
-          selectedId={categoryId}
+          selected={selectedCategory}
           options={options}
-          onChange={updateCategoryAndParams}
+          onChange={(option) => setCategoryId(option.id)}
         />
       </div>
       <div className="block lg:hidden">
         <FilterListbox
           selected={selectedCategory}
           options={options}
-          onChange={updateCategoryAndParams}
+          onChange={(option) => setCategoryId(option.id)}
         />
       </div>
     </>
   )
-
-  function updateCategoryAndParams(category: OptionType) {
-    setCategoryId(category.id)
-    updateParams(category.id)
-  }
-
-  function updateParams(categoryId: OptionType['id']) {
-    if (categoryId === ALL_CATEGORIES_OPTION.id) {
-      updateSearchParams({ [CATEGORY_KEY]: false })
-    } else {
-      updateSearchParams({ [CATEGORY_KEY]: categoryId })
-    }
-  }
 }

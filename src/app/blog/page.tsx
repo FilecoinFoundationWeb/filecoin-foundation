@@ -58,11 +58,10 @@ const posts = getBlogPostsData()
 
 const sortOptions = getSortOptions(blogSortConfigs)
 
-const { options: categoryOptions, validIds: validCategoryIds } =
-  getCMSFieldOptionsAndValidIds({
-    collectionName: 'blog_posts',
-    fieldName: 'category',
-  })
+const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
+  collectionName: 'blog_posts',
+  fieldName: 'category',
+})
 
 const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
 const featuredPost = getBlogPostData(featuredPostSlug)
@@ -90,12 +89,11 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categoryQuery, categorizedResults, categoryOptionsWithCountAndAll } =
-    useCategory({
-      searchParams,
-      entries: sortedResults,
-      categoryOptions: categoryOptions,
-    })
+  const { categorizedResults, categoryOptionsWithCountAndAll } = useCategory({
+    searchParams,
+    entries: sortedResults,
+    categoryOptions: categoryOptions,
+  })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -130,12 +128,7 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={
-              <Category
-                query={categoryQuery}
-                options={categoryOptionsWithCountAndAll}
-              />
-            }
+            category={<Category options={categoryOptionsWithCountAndAll} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -151,17 +144,12 @@ export default function Blog({ searchParams }: Props) {
 
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
+              category={<Category options={categoryOptionsWithCountAndAll} />}
               sort={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
                   defaultQuery={defaultSortQuery}
-                />
-              }
-              category={
-                <Category
-                  query={categoryQuery}
-                  options={categoryOptionsWithCountAndAll}
                 />
               }
             />

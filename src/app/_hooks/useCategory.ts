@@ -20,32 +20,18 @@ export type UseCategoryProps<Entry extends Object> = {
   categoryOptions: Array<CategoryOption>
 }
 
-function validateCategoryOption(
-  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  validCategoryIds: Array<CategoryId>,
-) {
-  if (!normalizedQuery || normalizedQuery === ALL_CATEGORIES_OPTION.id) {
-    return ALL_CATEGORIES_OPTION.id
-  }
-
-  const validCategoryId = validCategoryIds.find(
-    (option) => option === normalizedQuery,
-  )
-
-  return validCategoryId
-}
-
 export function useCategory<Entry extends Object>({
   searchParams,
   entries,
   categoryOptions,
 }: UseCategoryProps<Entry>) {
+  const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
+
   const validCategoryIds = useMemo(
     () => categoryOptions.map((option) => option.id),
     [categoryOptions],
   )
 
-  const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
   const validatedCategoryOption = validateCategoryOption(
     normalizedQuery,
     validCategoryIds,
@@ -91,8 +77,22 @@ export function useCategory<Entry extends Object>({
   }, [validCategoryIds, categoryCounts, categoryOptions])
 
   return {
-    categoryQuery: validatedCategoryOption,
     categorizedResults,
     categoryOptionsWithCountAndAll,
   }
+}
+
+function validateCategoryOption(
+  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
+  validCategoryIds: Array<CategoryId>,
+) {
+  if (!normalizedQuery || normalizedQuery === ALL_CATEGORIES_OPTION.id) {
+    return ALL_CATEGORIES_OPTION.id
+  }
+
+  const validCategoryId = validCategoryIds.find(
+    (option) => option === normalizedQuery,
+  )
+
+  return validCategoryId
 }
