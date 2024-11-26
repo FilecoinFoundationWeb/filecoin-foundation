@@ -41,7 +41,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
-import { filterEcosystemProjectsByCategory } from './utils/filterEcosystemProjects'
+import { filterEcosystemProjectByCategory } from './utils/filterEcosystemProjects'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
@@ -93,12 +93,9 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   })
 
   const { categorizedResults } = useCategory({
-    key: CATEGORY_KEY,
     searchParams,
     entries: sortedResults,
-    categoryOptions: categoryOptions,
-    allOption: ALL_CATEGORIES_OPTION,
-    filterFn: filterEcosystemProjectsByCategory,
+    filterConfig: { [CATEGORY_KEY]: filterEcosystemProjectByCategory },
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -128,7 +125,9 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
             results={<ResultsAndReset results={categorizedResults.length} />}
-            category={<Category options={categoryOptions} />}
+            category={
+              <Category options={[ALL_CATEGORIES_OPTION, ...categoryOptions]} />
+            }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -144,7 +143,11 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={categorizedResults.length} />}
-              category={<Category options={categoryOptions} />}
+              category={
+                <Category
+                  options={[ALL_CATEGORIES_OPTION, ...categoryOptions]}
+                />
+              }
               sort={
                 <Sort
                   query={sortQuery}

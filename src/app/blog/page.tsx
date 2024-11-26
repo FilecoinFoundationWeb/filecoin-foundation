@@ -92,13 +92,10 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categorizedResults, categoryOptionsWithCountAndAll } = useCategory({
-    key: CATEGORY_KEY,
+  const { categorizedResults } = useCategory({
     searchParams,
     entries: sortedResults,
-    categoryOptions: categoryOptions,
-    allOption: ALL_CATEGORIES_OPTION,
-    filterFn: filterBlogPostsByCategory,
+    filterConfig: { [CATEGORY_KEY]: filterBlogPostsByCategory },
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -134,7 +131,9 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={<Category options={categoryOptionsWithCountAndAll} />}
+            category={
+              <Category options={[ALL_CATEGORIES_OPTION, ...categoryOptions]} />
+            }
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -150,7 +149,11 @@ export default function Blog({ searchParams }: Props) {
 
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              category={<Category options={categoryOptionsWithCountAndAll} />}
+              category={
+                <Category
+                  options={[ALL_CATEGORIES_OPTION, ...categoryOptions]}
+                />
+              }
               sort={
                 <Sort
                   query={sortQuery}
