@@ -9,9 +9,9 @@ import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
 
 import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
-import { ListboxOptions } from '@/components/ListboxOptions'
+import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import { ListboxOption } from '@/components/Listbox/ListboxOption'
+import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 type CategoryListboxProps = {
   selected: CategoryOption | undefined

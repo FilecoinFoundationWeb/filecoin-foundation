@@ -11,7 +11,7 @@ type HeadlessUIAnchorProps = NonNullable<
 >
 type Position = Extract<HeadlessUIAnchorProps, string>
 
-type ListboxOptionsProps = {
+export type ListboxOptionsProps = {
   as?: ElementType
   position?: Position
   matchButtonWidth?: boolean

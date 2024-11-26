@@ -5,9 +5,9 @@ import { ArrowsDownUp } from '@phosphor-icons/react/dist/ssr'
 
 import { type SortOption } from '@/types/sortTypes'
 
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption } from '@/components/ListboxOption'
-import { ListboxOptions } from '@/components/ListboxOptions'
+import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import { ListboxOption } from '@/components/Listbox/ListboxOption'
+import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 type SortListboxProps = {
   selected: SortOption | undefined
