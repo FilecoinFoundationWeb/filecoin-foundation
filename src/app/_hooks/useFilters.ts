@@ -6,23 +6,23 @@ import { type Object } from '@/types/utils'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
-export type UseCategoryProps<Entry extends Object> = {
+export type UseFiltersProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
-  filterConfig: FilterConfig<Entry>
+  filtersConfig: FilterConfig<Entry>
 }
 
-export function useCategory<Entry extends Object>({
+export function useFilters<Entry extends Object>({
   searchParams,
   entries,
-  filterConfig,
-}: UseCategoryProps<Entry>) {
+  filtersConfig,
+}: UseFiltersProps<Entry>) {
   const filterSearchParamKeys = Object.keys(searchParams).filter((key) => {
-    return filterConfig[key]
+    return filtersConfig[key]
   })
   const searchParamsAreEmpty = filterSearchParamKeys.length === 0
 
-  const categorizedResults = useMemo(() => {
+  const filteredResults = useMemo(() => {
     if (searchParamsAreEmpty) {
       return entries
     }
@@ -30,7 +30,7 @@ export function useCategory<Entry extends Object>({
     return entries.filter((entry) => {
       return filterSearchParamKeys.every((searchParamKey) => {
         const filterQuery = normalizeQueryParam(searchParams, searchParamKey)
-        const filterFn = filterConfig[searchParamKey]
+        const filterFn = filtersConfig[searchParamKey]
         return filterFn(entry, filterQuery)
       })
     })
@@ -38,9 +38,9 @@ export function useCategory<Entry extends Object>({
     searchParamsAreEmpty,
     entries,
     searchParams,
-    filterConfig,
+    filtersConfig,
     filterSearchParamKeys,
   ])
 
-  return { categorizedResults }
+  return { filteredResults }
 }

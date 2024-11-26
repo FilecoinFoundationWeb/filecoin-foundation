@@ -24,7 +24,7 @@ import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
+import { useFilters } from '@/hooks/useFilters'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -111,10 +111,10 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { categorizedResults } = useCategory({
+  const { filteredResults } = useFilters({
     searchParams,
     entries: sortedResults,
-    filterConfig: {
+    filtersConfig: {
       [CATEGORY_KEY]: filterEventByCategory,
       [LOCATION_KEY]: filterEventByLocation,
     },
@@ -122,7 +122,7 @@ export default function Events({ searchParams }: Props) {
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: categorizedResults,
+    entries: filteredResults,
   })
 
   return (
@@ -191,7 +191,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {categorizedResults.length === 0 ? (
+              {filteredResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

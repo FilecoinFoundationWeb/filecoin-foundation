@@ -21,7 +21,7 @@ import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
+import { useFilters } from '@/hooks/useFilters'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -92,15 +92,15 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { categorizedResults } = useCategory({
+  const { filteredResults } = useFilters({
     searchParams,
     entries: sortedResults,
-    filterConfig: { [CATEGORY_KEY]: filterEcosystemProjectByCategory },
+    filtersConfig: { [CATEGORY_KEY]: filterEcosystemProjectByCategory },
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: categorizedResults,
+    entries: filteredResults,
   })
 
   return (
@@ -124,7 +124,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
-            results={<ResultsAndReset results={categorizedResults.length} />}
+            results={<ResultsAndReset results={filteredResults.length} />}
             category={
               <Category options={[ALL_CATEGORIES_OPTION, ...categoryOptions]} />
             }
@@ -142,7 +142,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
+              results={<ResultsAndReset results={filteredResults.length} />}
               category={
                 <Category
                   options={[ALL_CATEGORIES_OPTION, ...categoryOptions]}
@@ -157,7 +157,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {categorizedResults.length === 0 ? (
+              {filteredResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

@@ -20,7 +20,7 @@ import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
+import { useFilters } from '@/hooks/useFilters'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -92,15 +92,15 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categorizedResults } = useCategory({
+  const { filteredResults } = useFilters({
     searchParams,
     entries: sortedResults,
-    filterConfig: { [CATEGORY_KEY]: filterBlogPostsByCategory },
+    filtersConfig: { [CATEGORY_KEY]: filterBlogPostsByCategory },
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: categorizedResults,
+    entries: filteredResults,
   })
 
   return (
@@ -163,7 +163,7 @@ export default function Blog({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {categorizedResults.length === 0 ? (
+              {filteredResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>
