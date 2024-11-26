@@ -1,5 +1,5 @@
 ---
-title: The Filecoin Sanctuary 2024 January 15–18 | Davos, Switzerland
+title: "Filecoin Orbit Kampala: FVM Hack Day"
 description: ​This orbit event is designed for developers, students, and
   blockchain enthusiasts to collaborate, innovate, and build impactful projects
   with FVM on Filecoin.
