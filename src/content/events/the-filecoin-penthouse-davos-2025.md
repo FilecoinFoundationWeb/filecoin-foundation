@@ -1,8 +1,8 @@
 ---
 title: The Filecoin Penthouse | Davos 2025
 description: Your destination for high-level connections and conversations.
-  Explore the latest in Web3 and decentralization. Open daily 9am - 5pm. <a
-  href="mailto:marketing@fil.org">Request an Invitation</a>
+  Explore the latest in Web3 and decentralization. Open daily 9am - 5pm. Request
+  an Invitation from marketing@fil.org
 created-on: 2024-11-19T17:29:00.000Z
 updated-on: 2024-11-19T17:29:00.000Z
 published-on: 2024-11-19T17:29:00.000Z
