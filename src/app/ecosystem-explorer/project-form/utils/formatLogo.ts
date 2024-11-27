@@ -2,9 +2,16 @@ import path from 'path'
 
 import { findOrThrow } from '@/utils/findOrThrow'
 
-import { ALLOWED_IMAGE_FORMATS } from '../../../constants'
+import { ALLOWED_IMAGE_FORMATS } from '../constants'
 
-export function convertToBase64(file: File): Promise<string> {
+export async function formatLogo(logo: File) {
+  const base64 = await convertToBase64(logo)
+  const format = getFileFormat(logo.name)
+
+  return { base64, format, name: logo.name }
+}
+
+function convertToBase64(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
     reader.readAsDataURL(file)
@@ -17,7 +24,7 @@ export function convertToBase64(file: File): Promise<string> {
   })
 }
 
-export function getFileFormat(fileName: string) {
+function getFileFormat(fileName: string) {
   const extensionWithDot = path.extname(fileName)
 
   const validFileExtension = findOrThrow(
