@@ -27,7 +27,7 @@ import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category } from '@/components/Category'
+import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -134,7 +134,7 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={<Category options={optionsWithAllAndCount} />}
+            category={<CategoryFilter options={optionsWithAllAndCount} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -150,7 +150,7 @@ export default function Blog({ searchParams }: Props) {
 
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              category={<Category options={optionsWithAllAndCount} />}
+              category={<CategoryFilter options={optionsWithAllAndCount} />}
               sort={
                 <Sort
                   query={sortQuery}

@@ -26,7 +26,7 @@ import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category } from '@/components/Category'
+import { CategoryFilter } from '@/components/CategoryFilter'
 import { CTASection } from '@/components/CTASection'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
@@ -129,7 +129,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
             results={<ResultsAndReset results={filteredResults.length} />}
-            category={<Category options={optionsWithAllAndCount} />}
+            category={<CategoryFilter options={optionsWithAllAndCount} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -145,7 +145,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={filteredResults.length} />}
-              category={<Category options={optionsWithAllAndCount} />}
+              category={<CategoryFilter options={optionsWithAllAndCount} />}
               sort={
                 <Sort
                   query={sortQuery}

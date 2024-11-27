@@ -32,7 +32,7 @@ import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category } from '@/components/Category'
+import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { LocationFilter } from '@/components/LocationFilter'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
@@ -161,7 +161,7 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={<Category options={categoryOptions} />}
+            category={<CategoryFilter options={categoryOptions} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -177,7 +177,7 @@ export default function Events({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              category={<Category options={categoryOptions} />}
+              category={<CategoryFilter options={categoryOptions} />}
               location={<LocationFilter options={locationOptions} />}
               sort={
                 <Sort

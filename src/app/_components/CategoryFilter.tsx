@@ -13,7 +13,7 @@ type CategoryProps = {
   options: Array<OptionType>
 }
 
-export function Category({ options }: CategoryProps) {
+export function CategoryFilter({ options }: CategoryProps) {
   const [categoryId, setCategoryId] = useQueryState<OptionType['id']>(
     CATEGORY_KEY,
     parseAsString
