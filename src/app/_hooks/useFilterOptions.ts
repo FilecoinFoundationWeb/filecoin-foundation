@@ -1,16 +1,14 @@
 import { useMemo } from 'react'
 
+import type { AllFilterOption } from '@/types/filterTypes'
+
 import {
   getCMSFieldOptionsAndValidIds,
   type CMSFieldOptionsAndValidIdsParams,
 } from '@/utils/getCMSFieldOptionsAndValidIds'
 
-type Option = ReturnType<
-  typeof getCMSFieldOptionsAndValidIds
->['options'][number]
-
 export type UseFilterOptionsProps = CMSFieldOptionsAndValidIdsParams & {
-  allOption: Option
+  allOption: AllFilterOption
 }
 
 export function useFilterOptions({

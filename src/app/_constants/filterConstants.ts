@@ -1,15 +1,11 @@
 export const ALL_FILTER_ID = 'all'
 
-export type FilterOption = {
-  id: typeof ALL_FILTER_ID
-  name: string
-}
-
-export const ALL_CATEGORIES_OPTION: FilterOption = {
+export const ALL_CATEGORIES_OPTION = {
   id: ALL_FILTER_ID,
   name: 'All Categories',
-}
-export const ALL_LOCATIONS_OPTION: FilterOption = {
+} as const
+
+export const ALL_LOCATIONS_OPTION = {
   id: ALL_FILTER_ID,
   name: 'All Locations',
-}
+} as const

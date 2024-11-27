@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 
+import type { AllFilterOption } from '@/types/filterTypes'
 import { type Object } from '@/types/utils'
 
 import {
@@ -7,13 +8,9 @@ import {
   type CMSFieldOptionsAndValidIdsParams,
 } from '@/utils/getCMSFieldOptionsAndValidIds'
 
-type Option = ReturnType<
-  typeof getCMSFieldOptionsAndValidIds
->['options'][number]
-
 type UseFilterOptionsWithCountProps<Entry extends Object> =
   CMSFieldOptionsAndValidIdsParams & {
-    allOption: Option
+    allOption: AllFilterOption
     entries: Array<Entry>
   }
 
