@@ -27,12 +27,12 @@ const redirects = [
   },
   {
     source: '/davos',
-    destination: '/events/the-filecoin-sanctuary-davos-2024',
+    destination: '/events/davos',
     permanent: true,
   },
   {
     source: '/davos-registration',
-    destination: '/events/the-filecoin-sanctuary-davos-2024',
+    destination: '/events/davos',
     permanent: true,
   },
   {
@@ -227,6 +227,12 @@ const redirects = [
   {
     source: '/events/fil-dev-summit-singapore',
     destination: '/events/fil-dev-summit-singapore-2023',
+    permanent: true,
+  },
+  {
+    source: '/events/the-filecoin-penthouse-davos-2024',
+    destination: '/events/davos',
+    // With Davos 2026, this should point to '/events/the-filecoin-penthouse-davos-2025',
     permanent: true,
   },
 

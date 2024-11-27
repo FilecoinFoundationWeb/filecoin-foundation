@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX18sSlitZJiCtHCiJv9eXEB0S0XS2wJZxRlvLQ51zIKHLY1QX0ttla
 full-name: encrypted::U2FsdGVkX189ctq9yWrgZTAQyNbuO3MobCWwr7mbH4c=
 image:
   src: /assets/images/660732916a689d42cb0e1eb4_clover.png
-category: finance
+category: public-goods-dweb
 subcategories:
   - governance-daos-public-goods
 description: Communication for DAO operators.

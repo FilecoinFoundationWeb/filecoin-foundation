@@ -7,7 +7,7 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { CategorySidebar } from '@/components/CategorySidebar'
 import { FilterListbox } from '@/components/FilterListbox'
-import type { OptionType } from '@/components/ListboxOption'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 type CategoryProps = {
   options: Array<OptionType>

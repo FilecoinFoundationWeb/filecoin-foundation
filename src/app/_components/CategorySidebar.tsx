@@ -4,7 +4,7 @@ import type { ElementType } from 'react'
 
 import { clsx } from 'clsx'
 
-import type { OptionType } from '@/components/ListboxOption'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 const touchTarget = {
   class: 'px-4',

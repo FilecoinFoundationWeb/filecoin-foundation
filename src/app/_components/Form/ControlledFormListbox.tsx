@@ -5,11 +5,9 @@ import {
   type FieldPathByValue,
 } from 'react-hook-form'
 
-import {
-  FormListbox,
-  type OptionType,
-  type FormListboxProps,
-} from '@/components/Form/FormListbox/FormListbox'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
+
+import { FormListbox, type FormListboxProps } from './FormListbox'
 
 type ExcludedReactHookFormProps =
   | 'defaultValue'

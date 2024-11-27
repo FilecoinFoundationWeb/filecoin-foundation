@@ -6,7 +6,7 @@ published-on: 2024-01-18T16:06:37.786000Z
 description:
   "Decentralized P2P file-sharing protocol & platform for storing, transferring,
   and trading digital goods."
-category: finance
+category: tooling-productivity
 tech:
   - filecoin
   - ipfs

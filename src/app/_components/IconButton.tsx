@@ -8,7 +8,7 @@ type IconButtonProps = {
   onClick: ButtonProps['onClick']
 }
 
-export function ToggleButton({ icon, label, onClick }: IconButtonProps) {
+export function IconButton({ icon, label, onClick }: IconButtonProps) {
   return (
     <Button
       aria-label={label}

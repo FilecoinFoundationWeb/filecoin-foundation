@@ -8,23 +8,49 @@ import {
   TransitionChild,
   type DialogProps,
 } from '@headlessui/react'
+import { clsx } from 'clsx'
 
 type SlideOverProps = {
   open: DialogProps['open']
   setOpen: DialogProps['onClose']
   children: React.ReactNode
+  slideFrom?: keyof typeof slideFromStyles
 }
 
-export function SlideOver({ open, setOpen, children }: SlideOverProps) {
+const slideFromStyles = {
+  right: {
+    startingPosition: 'right-0',
+    openPosition: 'translate-x-0',
+    closedPosition: 'translate-x-full',
+  },
+  left: {
+    startingPosition: 'left-0',
+    openPosition: 'translate-x-0',
+    closedPosition: '-translate-x-full',
+  },
+} as const
+
+const animationStylesEnter = 'transition ease-out duration-500'
+const animationStylesLeave = 'transition ease-in duration-300'
+
+export function SlideOver({
+  open,
+  setOpen,
+  children,
+  slideFrom = 'right',
+}: SlideOverProps) {
+  const { startingPosition, openPosition, closedPosition } =
+    slideFromStyles[slideFrom]
+
   return (
     <Transition show={open} as={Fragment}>
       <Dialog className="relative z-10" onClose={setOpen}>
         <TransitionChild
           as={Fragment}
-          enter="ease-in-out duration-500 sm:duration-700"
+          enter={animationStylesEnter}
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="ease-in-out duration-500 sm:duration-700"
+          leave={animationStylesLeave}
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
@@ -33,18 +59,23 @@ export function SlideOver({ open, setOpen, children }: SlideOverProps) {
 
         <div className="fixed inset-0 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden">
-            <div className="pointer-events-none fixed inset-y-0 right-0 flex w-full max-w-[480px]">
+            <div
+              className={clsx(
+                'pointer-events-none fixed inset-y-0 flex w-full max-w-[480px]',
+                startingPosition,
+              )}
+            >
               <TransitionChild
                 as={Fragment}
-                enter="transform transition ease-in-out duration-500 sm:duration-700"
-                enterFrom="translate-x-full"
-                enterTo="translate-x-0"
-                leave="transform transition ease-in-out duration-500 sm:duration-700"
-                leaveFrom="translate-x-0"
-                leaveTo="translate-x-full"
+                enter={clsx('transform', animationStylesEnter)}
+                leave={clsx('transform', animationStylesLeave)}
+                enterFrom={closedPosition}
+                enterTo={openPosition}
+                leaveFrom={openPosition}
+                leaveTo={closedPosition}
               >
                 <DialogPanel className="pointer-events-auto w-full">
-                  <div className="flex h-full flex-col overflow-y-scroll bg-brand-800">
+                  <div className="flex h-full flex-col overflow-y-scroll bg-brand-800 focus-visible:brand-outline">
                     {children}
                   </div>
                 </DialogPanel>

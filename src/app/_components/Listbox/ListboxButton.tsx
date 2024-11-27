@@ -12,6 +12,7 @@ type ListboxButtonProps = {
   text: string
   leadingIcon?: IconProps['component']
   compactBelow?: Breakpoint
+  hasError?: boolean
 }
 
 type LayoutVariant = {
@@ -27,15 +28,21 @@ const breakpointStyles: BreakpointStyles = {
   lg: { full: 'hidden lg:flex', compact: 'flex lg:hidden' },
   xl: { full: 'hidden xl:flex', compact: 'flex xl:hidden' },
   '2xl': { full: 'hidden 2xl:flex', compact: 'flex 2xl:hidden' },
-} as const
+}
 
 export function ListboxButton({
   text,
   leadingIcon,
   compactBelow,
+  hasError,
 }: ListboxButtonProps) {
   return (
-    <HeadlessUIListboxButton className="relative inline-flex w-full items-center justify-between gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400">
+    <HeadlessUIListboxButton
+      className={clsx(
+        'relative inline-flex w-full items-center justify-between gap-2 rounded-lg border bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400',
+        hasError ? 'border-red-400' : 'border-brand-300',
+      )}
+    >
       <div
         className={clsx(
           'w-full items-center justify-start gap-2',

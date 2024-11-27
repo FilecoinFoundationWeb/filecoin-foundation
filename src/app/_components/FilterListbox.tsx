@@ -3,9 +3,12 @@
 import { Listbox } from '@headlessui/react'
 import { FunnelSimple } from '@phosphor-icons/react'
 
-import { ListboxButton } from '@/components/ListboxButton'
-import { ListboxOption, type OptionType } from '@/components/ListboxOption'
-import { ListboxOptions } from '@/components/ListboxOptions'
+import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import {
+  ListboxOption,
+  type OptionType,
+} from '@/components/Listbox/ListboxOption'
+import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 type FilterListboxProps = {
   selected: OptionType

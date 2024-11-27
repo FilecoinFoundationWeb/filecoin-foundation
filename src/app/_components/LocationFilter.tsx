@@ -6,7 +6,7 @@ import { ALL_LOCATIONS_OPTION } from '@/constants/filterConstants'
 import { LOCATION_KEY } from '@/constants/searchParams'
 
 import { FilterListbox } from '@/components/FilterListbox'
-import { type OptionType } from '@/components/ListboxOption'
+import { type OptionType } from '@/components/Listbox/ListboxOption'
 
 type LocationFilterProps = {
   options: Array<OptionType>

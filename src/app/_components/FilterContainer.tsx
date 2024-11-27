@@ -48,7 +48,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   const filterStyle = mobileFilterContainerStyle[filtersCount]
 
   return (
-    <div className="flex flex-col gap-4 lg:hidden">
+    <aside className="flex flex-col gap-4 lg:hidden">
       <div className="flex flex-col gap-3 sm:flex-row">
         {search}
         <div className="flex flex-1 gap-3 sm:flex-row">
@@ -58,7 +58,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
         </div>
       </div>
       {results}
-    </div>
+    </aside>
   )
 }
 
@@ -70,8 +70,8 @@ FilterContainer.DesktopFilters = function DesktopFilters({
   return (
     <div className="hidden justify-end gap-6 lg:flex">
       {search}
-      {location && <div className="w-full lg:w-44">{location}</div>}
-      <div className="w-full lg:w-44">{sort}</div>
+      {location && <div className="w-full lg:max-w-44">{location}</div>}
+      <div className="w-full lg:max-w-44">{sort}</div>
     </div>
   )
 }
@@ -82,7 +82,7 @@ FilterContainer.ResultsAndCategory = function ResultsAndCategory({
   gapSize = 'default',
 }: ResultsProps) {
   return (
-    <div
+    <aside
       className={clsx('hidden flex-col lg:flex', {
         'gap-8': gapSize === 'default',
         'gap-10': gapSize === 'wide',
@@ -90,7 +90,7 @@ FilterContainer.ResultsAndCategory = function ResultsAndCategory({
     >
       {results}
       {category}
-    </div>
+    </aside>
   )
 }
 

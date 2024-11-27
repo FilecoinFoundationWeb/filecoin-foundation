@@ -4,29 +4,24 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
-import { PATHS, ECOSYSTEM_CATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { findOrThrow } from '@/utils/findOrThrow'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useFilter } from '@/hooks/useFilter'
-import { useFilterOptionsWithCount } from '@/hooks/useFilterOptionsWithCount'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { CategoryFilter } from '@/components/CategoryFilter'
 import { CTASection } from '@/components/CTASection'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
@@ -38,9 +33,12 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { CategoryFilters } from './components/CategoryFilters'
+import { CategoryFiltersSlider } from './components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
-import { ecosystemProjectMatchesCategory } from './utils/filterEcosystemProjects'
+import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 const NoSSRPagination = dynamic(
@@ -70,9 +68,7 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const categoryData = getCategoryDataFromDirectory(
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-)
+const { categories, subcategories } = getCategoriesFromDirectory()
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -88,25 +84,16 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { filteredResults } = useFilter({
+  const { categoryTree, filteredEntries } = useEcosystemCategory({
     searchParams,
     entries: sortedResults,
-    filterKey: CATEGORY_KEY,
-    filterFn: ecosystemProjectMatchesCategory,
+    categories,
+    subcategories,
   })
-
-  const { optionsWithAllAndCount: categoryOptions } = useFilterOptionsWithCount(
-    {
-      collectionName: 'ecosystem_projects',
-      fieldName: 'category',
-      allOption: ALL_CATEGORIES_OPTION,
-      entries: sortedResults,
-    },
-  )
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredResults,
+    entries: filteredEntries,
   })
 
   return (
@@ -130,8 +117,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
-            results={<ResultsAndReset results={filteredResults.length} />}
-            category={<CategoryFilter options={categoryOptions} />}
+            results={<ResultsAndReset results={filteredEntries.length} />}
+            category={<CategoryFilters categories={categoryTree} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -146,8 +133,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              results={<ResultsAndReset results={filteredResults.length} />}
-              category={<CategoryFilter options={categoryOptions} />}
+              results={<ResultsAndReset results={filteredEntries.length} />}
+              category={<CategoryFiltersSlider categories={categoryTree} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -157,23 +144,32 @@ export default function EcosystemExplorer({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredResults.length === 0 ? (
+              {filteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>
                   <CardGrid cols="smTwo">
                     {paginatedResults.map((project, i) => {
-                      const { slug, title, description, image, category } =
-                        project
+                      const {
+                        slug,
+                        title,
+                        description,
+                        image,
+                        category: categoryId,
+                      } = project
 
                       const isFirstTwoImages = i < 2
+                      const category = findOrThrow(
+                        categories,
+                        (category) => category.slug === categoryId,
+                      )
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={categoryData[category]}
+                          tagLabel={category.name}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
