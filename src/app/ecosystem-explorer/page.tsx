@@ -95,12 +95,14 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     filterFn: ecosystemProjectMatchesCategory,
   })
 
-  const { optionsWithAllAndCount } = useFilterOptionsWithCount({
-    collectionName: 'ecosystem_projects',
-    fieldName: 'category',
-    allOption: ALL_CATEGORIES_OPTION,
-    entries: sortedResults,
-  })
+  const { optionsWithAllAndCount: categoryOptions } = useFilterOptionsWithCount(
+    {
+      collectionName: 'ecosystem_projects',
+      fieldName: 'category',
+      allOption: ALL_CATEGORIES_OPTION,
+      entries: sortedResults,
+    },
+  )
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
@@ -129,7 +131,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
             results={<ResultsAndReset results={filteredResults.length} />}
-            category={<CategoryFilter options={optionsWithAllAndCount} />}
+            category={<CategoryFilter options={categoryOptions} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -145,7 +147,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={filteredResults.length} />}
-              category={<CategoryFilter options={optionsWithAllAndCount} />}
+              category={<CategoryFilter options={categoryOptions} />}
               sort={
                 <Sort
                   query={sortQuery}

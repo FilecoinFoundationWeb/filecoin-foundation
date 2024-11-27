@@ -1,6 +1,8 @@
+import { type Object } from '@/types/utils'
+
 import type { ALL_FILTER_ID } from '@/_constants/filterConstants'
 
-export type FilterConfig<Entry extends Record<string, any>> = {
+export type FilterConfig<Entry extends Object> = {
   filterKey: string
   filterFn: (entry: Entry, query?: string) => boolean
 }
