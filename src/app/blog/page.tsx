@@ -14,13 +14,13 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useFilters } from '@/hooks/useFilters'
+import { useFilter } from '@/hooks/useFilter'
+import { useFilterOptionsWithCount } from '@/hooks/useFilterOptionsWithCount'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -38,7 +38,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { blogSortConfigs } from './constants/sortConfigs'
-import { filterBlogPostsByCategory } from './utils/filterBlogPosts'
+import { blogPostMatchesCategory } from './utils/filterBlogPosts'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
@@ -60,11 +60,6 @@ const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({
 const posts = getBlogPostsData()
 
 const sortOptions = getSortOptions(blogSortConfigs)
-
-const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
-  collectionName: 'blog_posts',
-  fieldName: 'category',
-})
 
 const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
 const featuredPost = getBlogPostData(featuredPostSlug)
@@ -92,10 +87,18 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { filteredResults } = useFilters({
+  const { filteredResults } = useFilter({
     searchParams,
     entries: sortedResults,
-    filtersConfig: { [CATEGORY_KEY]: filterBlogPostsByCategory },
+    filterKey: CATEGORY_KEY,
+    filterFn: blogPostMatchesCategory,
+  })
+
+  const { optionsWithAllAndCount } = useFilterOptionsWithCount({
+    collectionName: 'blog_posts',
+    fieldName: 'category',
+    allOption: ALL_CATEGORIES_OPTION,
+    entries: sortedResults,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -131,9 +134,7 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={
-              <Category options={[ALL_CATEGORIES_OPTION, ...categoryOptions]} />
-            }
+            category={<Category options={optionsWithAllAndCount} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -149,11 +150,7 @@ export default function Blog({ searchParams }: Props) {
 
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              category={
-                <Category
-                  options={[ALL_CATEGORIES_OPTION, ...categoryOptions]}
-                />
-              }
+              category={<Category options={optionsWithAllAndCount} />}
               sort={
                 <Sort
                   query={sortQuery}

@@ -11,17 +11,15 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import {
-  getCategoryDataFromDirectory,
-  getCategorySettingsFromMap,
-} from '@/utils/categoryUtils'
+import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useFilters } from '@/hooks/useFilters'
+import { useFilter } from '@/hooks/useFilter'
+import { useFilterOptionsWithCount } from '@/hooks/useFilterOptionsWithCount'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -41,7 +39,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
-import { filterEcosystemProjectByCategory } from './utils/filterEcosystemProjects'
+import { ecosystemProjectMatchesCategory } from './utils/filterEcosystemProjects'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
@@ -76,8 +74,6 @@ const categoryData = getCategoryDataFromDirectory(
   ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
 )
 
-const { categoryOptions } = getCategorySettingsFromMap(categoryData)
-
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
@@ -92,10 +88,18 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { filteredResults } = useFilters({
+  const { filteredResults } = useFilter({
     searchParams,
     entries: sortedResults,
-    filtersConfig: { [CATEGORY_KEY]: filterEcosystemProjectByCategory },
+    filterKey: CATEGORY_KEY,
+    filterFn: ecosystemProjectMatchesCategory,
+  })
+
+  const { optionsWithAllAndCount } = useFilterOptionsWithCount({
+    collectionName: 'ecosystem_projects',
+    fieldName: 'category',
+    allOption: ALL_CATEGORIES_OPTION,
+    entries: sortedResults,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -125,9 +129,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
             results={<ResultsAndReset results={filteredResults.length} />}
-            category={
-              <Category options={[ALL_CATEGORIES_OPTION, ...categoryOptions]} />
-            }
+            category={<Category options={optionsWithAllAndCount} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -143,11 +145,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               results={<ResultsAndReset results={filteredResults.length} />}
-              category={
-                <Category
-                  options={[ALL_CATEGORIES_OPTION, ...categoryOptions]}
-                />
-              }
+              category={<Category options={optionsWithAllAndCount} />}
               sort={
                 <Sort
                   query={sortQuery}

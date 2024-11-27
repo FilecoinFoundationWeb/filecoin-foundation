@@ -2,7 +2,7 @@ import type { CategoryId } from '@/types/categoryTypes'
 
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 
-export function filterEcosystemProjectByCategory(
+export function ecosystemProjectMatchesCategory(
   ecosystemProject: EcosystemProject,
   categoryId?: CategoryId,
 ) {

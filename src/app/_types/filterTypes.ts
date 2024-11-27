@@ -1,4 +1,4 @@
-export type FilterConfig<Entry extends Record<string, any>> = Record<
-  string,
-  (entry: Entry, query?: string) => boolean
->
+export type FilterConfig<Entry extends Record<string, any>> = {
+  filterKey: string
+  filterFn: (entry: Entry, query?: string) => boolean
+}

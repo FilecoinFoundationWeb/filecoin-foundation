@@ -2,7 +2,7 @@ import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 
-type CMSFieldOptionsAndValidIdsParams = {
+export type CMSFieldOptionsAndValidIdsParams = {
   collectionName: CMSCollectionName
   fieldName: string
 }
