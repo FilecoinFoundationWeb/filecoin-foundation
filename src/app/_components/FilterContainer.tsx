@@ -38,7 +38,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   results,
 }: FilterProps) {
   return (
-    <div className="flex flex-col gap-4 lg:hidden">
+    <aside className="flex flex-col gap-4 lg:hidden">
       <div className="flex flex-col gap-3 sm:flex-row">
         {search}
         <div className="flex flex-1 gap-3 sm:flex-row">
@@ -47,7 +47,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
         </div>
       </div>
       {results}
-    </div>
+    </aside>
   )
 }
 
@@ -69,7 +69,7 @@ FilterContainer.ResultsAndCategory = function ResultsAndCategory({
   gapSize = 'default',
 }: ResultsProps) {
   return (
-    <div
+    <aside
       className={clsx('hidden flex-col lg:flex', {
         'gap-8': gapSize === 'default',
         'gap-10': gapSize === 'wide',
@@ -77,7 +77,7 @@ FilterContainer.ResultsAndCategory = function ResultsAndCategory({
     >
       {results}
       {category}
-    </div>
+    </aside>
   )
 }
 

@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react'
+import { useMemo } from 'react'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
@@ -14,7 +14,6 @@ type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   subcategories: ReturnType<typeof getCategoriesFromDirectory>['subcategories']
   entries: Array<Entry>
 }
-
 export function useEcosystemCategory<Entry extends EcosystemProject>({
   searchParams,
   entries,
@@ -22,54 +21,49 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
   subcategories,
 }: UseEcosystemCategoryProps<Entry>) {
   const categoryParams = searchParams[CATEGORY_KEY]
-
   const categoryIds = parseCategoryQueryParam(categoryParams)
-
-  const getEntrySubcategory = useCallback((entry: Entry) => {
-    return entry.subcategories[0]
-  }, [])
 
   const categorizedResults = useMemo(() => {
     if (!categoryIds) {
       return entries
     }
 
-    return entries.filter((entry) => {
-      const entrySubcategory = getEntrySubcategory(entry)
-      return categoryIds.includes(entrySubcategory)
+    return entries.filter((entry) =>
+      categoryIds.includes(entry.subcategories[0]),
+    )
+  }, [categoryIds, entries])
+
+  const entriesPerSubcategory = useMemo(() => {
+    const counts = new Map()
+
+    entries.forEach((entry) => {
+      const subcategory = entry.subcategories[0]
+      counts.set(subcategory, (counts.get(subcategory) || 0) + 1)
     })
-  }, [categoryIds, entries, getEntrySubcategory])
 
-  const categoriesWithSubcategories = useMemo(() => {
-    return categories.map((category) => {
-      const nestedSubcategories = subcategories.filter(
-        (subcategory) => subcategory.parent_category === category.slug,
-      )
+    return counts
+  }, [entries])
 
-      const nestedSubcategoriesWithCount = nestedSubcategories.map(
-        (subcategory) => {
-          const subcategoryMatches = entries.filter((entry) => {
-            return getEntrySubcategory(entry) === subcategory.slug
-          })
-
-          return {
-            ...subcategory,
-            count: subcategoryMatches.length,
-          }
-        },
-      )
-
-      return {
+  const categoriesWithSubcategories = useMemo(
+    () =>
+      categories.map((category) => ({
         slug: category.slug,
         name: category.name,
-        subcategories: nestedSubcategoriesWithCount,
-      }
-    })
-  }, [categories, entries, getEntrySubcategory, subcategories])
+        subcategories: subcategories
+          .filter(
+            (subcategory) => subcategory.parent_category === category.slug,
+          )
+          .map((subcategory) => ({
+            ...subcategory,
+            count: entriesPerSubcategory.get(subcategory.slug) || 0,
+          })),
+      })),
+    [categories, subcategories, entriesPerSubcategory],
+  )
 
   return {
-    categorizedResults,
-    categoriesWithSubcategories,
-    categoryQueries: categoryIds,
+    categorizedResults, // filteredEntries?
+    categoriesWithSubcategories, // categoryTree?
+    categoryQueries: categoryIds, // selectedCategoryIds?
   }
 }

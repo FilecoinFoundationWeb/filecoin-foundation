@@ -8,14 +8,14 @@ import { FormCheckbox } from '@/components/Form/FormCheckbox'
 
 import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
 import type { CategoriesAndSubcategoriesWithCount } from '../types/ecosystemCategoryType'
-import { toggleArrayElement } from '../utils/toggleArrayElement'
+import { toggleArraySelection } from '../utils/toggleArraySelection'
 
 type CategoryFiltersProps = {
   categories: CategoriesAndSubcategoriesWithCount
 }
 
 export function CategoryFilters({ categories }: CategoryFiltersProps) {
-  const [subcategory, setSubcategory] = useQueryState(
+  const [selectedFilters, setSelectedFilters] = useQueryState(
     CATEGORY_KEY,
     parseAsArrayOf(parseAsString, CATEGORY_QUERY_SEPARATOR_SYMBOL)
       .withDefault([])
@@ -23,9 +23,9 @@ export function CategoryFilters({ categories }: CategoryFiltersProps) {
   )
 
   return (
-    <div className="w-full space-y-10 lg:max-w-72">
+    <ul className="w-full space-y-10 lg:max-w-72">
       {categories.map(({ slug, name, subcategories }) => (
-        <div key={slug}>
+        <li key={slug}>
           <h3 className="pb-7 text-sm font-bold text-brand-300 lg:pb-4">
             {name}
           </h3>
@@ -36,20 +36,20 @@ export function CategoryFilters({ categories }: CategoryFiltersProps) {
                   key={slug}
                   label={`${name} (${count})`}
                   labelSize="sm"
-                  checked={subcategory.includes(slug)}
-                  onChange={() => toggleSubcategoryFilter(slug)}
+                  checked={selectedFilters.includes(slug)}
+                  onChange={() => handleFilterToggle(slug)}
                 />
               )
             })}
           </div>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 
-  function toggleSubcategoryFilter(slug: string) {
-    setSubcategory((prevCategories) => {
-      return toggleArrayElement(prevCategories, slug)
+  function handleFilterToggle(slug: string) {
+    setSelectedFilters((prevSelected) => {
+      return toggleArraySelection(prevSelected, slug)
     })
   }
 }

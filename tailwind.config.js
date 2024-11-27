@@ -103,20 +103,21 @@ module.exports = {
     require('@headlessui/tailwindcss'),
     require('@tailwindcss/forms'),
     plugin(function addBrandOutline({ addComponents, theme }) {
+      const baseOutline = {
+        outlineStyle: 'solid',
+        outlineWidth: 2,
+        outlineOffset: 0,
+        borderColor: 'transparent',
+      }
+
       addComponents({
         '.brand-outline': {
-          outlineStyle: 'solid',
+          ...baseOutline,
           outlineColor: theme('colors.brand.100'),
-          outlineWidth: 2,
-          outlineOffset: 0,
-          borderColor: 'transparent',
         },
         '.brand-dark-outline': {
-          outlineStyle: 'solid',
+          ...baseOutline,
           outlineColor: theme('colors.brand.400'),
-          outlineWidth: 2,
-          outlineOffset: 0,
-          borderColor: 'transparent',
         },
         '.row': {
           height: 52,
