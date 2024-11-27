@@ -84,17 +84,16 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { categoriesWithSubcategories, categorizedResults } =
-    useEcosystemCategory({
-      searchParams,
-      entries: sortedResults,
-      categories,
-      subcategories,
-    })
+  const { categoryTree, filteredEntries } = useEcosystemCategory({
+    searchParams,
+    entries: sortedResults,
+    categories,
+    subcategories,
+  })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: categorizedResults,
+    entries: filteredEntries,
   })
 
   return (
@@ -118,10 +117,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
             gapSize="wide"
-            results={<ResultsAndReset results={categorizedResults.length} />}
-            category={
-              <CategoryFilters categories={categoriesWithSubcategories} />
-            }
+            results={<ResultsAndReset results={filteredEntries.length} />}
+            category={<CategoryFilters categories={categoryTree} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -136,12 +133,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              results={<ResultsAndReset results={categorizedResults.length} />}
-              category={
-                <CategoryFiltersSlider
-                  categories={categoriesWithSubcategories}
-                />
-              }
+              results={<ResultsAndReset results={filteredEntries.length} />}
+              category={<CategoryFiltersSlider categories={categoryTree} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -151,7 +144,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {categorizedResults.length === 0 ? (
+              {filteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

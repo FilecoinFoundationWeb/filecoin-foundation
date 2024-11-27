@@ -23,7 +23,7 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
   const categoryParams = searchParams[CATEGORY_KEY]
   const categoryIds = parseCategoryQueryParam(categoryParams)
 
-  const categorizedResults = useMemo(() => {
+  const filteredEntries = useMemo(() => {
     if (!categoryIds) {
       return entries
     }
@@ -44,7 +44,7 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
     return counts
   }, [entries])
 
-  const categoriesWithSubcategories = useMemo(
+  const categoryTree = useMemo(
     () =>
       categories.map((category) => ({
         slug: category.slug,
@@ -62,8 +62,8 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
   )
 
   return {
-    categorizedResults, // filteredEntries?
-    categoriesWithSubcategories, // categoryTree?
-    categoryQueries: categoryIds, // selectedCategoryIds?
+    filteredEntries,
+    categoryTree,
+    categoryQueries: categoryIds,
   }
 }

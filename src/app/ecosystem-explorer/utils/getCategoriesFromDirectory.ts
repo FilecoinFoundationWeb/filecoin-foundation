@@ -13,6 +13,7 @@ import {
 } from '../schemas/CategorySchemas'
 
 export function getCategoriesFromDirectory() {
+  // getEcosystemCategoryHierarchy
   const rawCategories = readAndValidateYamlFiles(
     ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   )
