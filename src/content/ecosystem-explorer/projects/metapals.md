@@ -7,7 +7,7 @@ description:
   "MetaPals is not just about introducing another digital platform; it's
   about reshaping how we perceive and interact with AI. By focusing on emotional resonance,
   MetaPals is fostering a new era of digital companionship."
-category: media-entertainment
+category: tooling-productivity
 tech:
   - ipfs
 image:

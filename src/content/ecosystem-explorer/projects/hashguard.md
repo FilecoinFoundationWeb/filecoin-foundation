@@ -6,7 +6,7 @@ published-on: 2024-03-20T14:14:44.167000Z
 description:
   "Simple access to the decentralized cloud, guaranteeing the sovereignty
   and resilience of your data."
-category: tooling-productivity
+category: storage
 tech:
   - ipfs
 image:

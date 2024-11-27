@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1+nQotLDoYpimfCHuQOJnyXTYE/+tc5SEIJeOJ46Oaa5iDKIHox7W
 full-name: encrypted::U2FsdGVkX1/k5CFhUE0naIQa5r3L0qAdyZUG93tPGLw=
 image:
   src: /assets/images/tres_logo_white.png
-category: finance
+category: network
 subcategories:
   - network-tools
 description: TRES.Finance is an enterprise-grade accounting, audit, fund admin,
