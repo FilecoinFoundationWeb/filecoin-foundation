@@ -93,7 +93,7 @@ event_sponsor_config: &event_sponsor_config
   - name: "website"
     label: "website"
     widget: "string"
-    required: false
+    required: true
   - name: "image"
     label: "Image"
     widget: "object"
