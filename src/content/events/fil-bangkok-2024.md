@@ -655,6 +655,7 @@ sponsors:
       image:
         src: /assets/images/lighthouse-logo.svg
     - name: Protocol Labs
+      website: https://www.protocol.ai/
       image:
         src: /assets/images/protocol-labs-logo.png
   second-tier:
