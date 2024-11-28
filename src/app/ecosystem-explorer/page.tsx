@@ -10,7 +10,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { findOrThrow } from '@/utils/findOrThrow'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -40,6 +39,7 @@ import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
+import { getEcosystemTagLabels } from './utils/getEcosystemTagLabels'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -155,21 +155,23 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                         title,
                         description,
                         image,
-                        category: categoryId,
+                        category,
+                        subcategories,
                       } = project
 
                       const isFirstTwoImages = i < 2
-                      const category = findOrThrow(
-                        categories,
-                        (category) => category.slug === categoryId,
-                      )
+
+                      const tagLabel = getEcosystemTagLabels({
+                        category,
+                        subcategories,
+                      })
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={category.name}
+                          tagLabel={tagLabel}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
