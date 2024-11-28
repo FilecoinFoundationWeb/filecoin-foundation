@@ -38,8 +38,8 @@ import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
+import { getEcosystemCategoryLabels } from './utils/getEcosystemCategoryLabels'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
-import { getEcosystemTagLabels } from './utils/getEcosystemTagLabels'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -161,7 +161,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
 
                       const isFirstTwoImages = i < 2
 
-                      const tagLabel = getEcosystemTagLabels({
+                      const tagLabels = getEcosystemCategoryLabels({
                         category,
                         subcategories,
                       })
@@ -171,7 +171,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={tagLabel}
+                          tagLabel={tagLabels}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',

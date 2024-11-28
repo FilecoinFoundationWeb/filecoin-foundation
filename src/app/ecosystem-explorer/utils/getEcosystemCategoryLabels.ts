@@ -5,17 +5,17 @@ import {
 
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 
-import type { Category, Subcategory } from '../schemas/CategorySchemas'
+import type { EcosystemProject } from '../types/ecosystemProjectType'
 
-type GetEcosystemTagLabelsProps = {
-  category: Category
-  subcategories?: Array<Subcategory>
+type GetEcosystemCategoryLabelsProps = {
+  category: EcosystemProject['category']
+  subcategories: EcosystemProject['subcategories']
 }
 
-export function getEcosystemTagLabels({
+export function getEcosystemCategoryLabels({
   category,
   subcategories,
-}: GetEcosystemTagLabelsProps) {
+}: GetEcosystemCategoryLabelsProps) {
   const subcategoryData = getCategoryDataFromDirectory(
     ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
   )
@@ -24,12 +24,8 @@ export function getEcosystemTagLabels({
     ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   )
 
-  const tagLabel = [
+  return [
     categoryData[category],
-    ...(subcategories
-      ? subcategories.map((subcategory) => subcategoryData[subcategory])
-      : []),
+    ...subcategories.map((subcategory) => subcategoryData[subcategory]),
   ]
-
-  return tagLabel
 }

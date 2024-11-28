@@ -20,8 +20,8 @@ import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
+import { getEcosystemCategoryLabels } from '../utils/getEcosystemCategoryLabels'
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
-import { getEcosystemTagLabels } from '../utils/getEcosystemTagLabels'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -61,7 +61,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     subcategories,
   } = data
 
-  const tagLabel = getEcosystemTagLabels({ category, subcategories })
+  const tagLabels = getEcosystemCategoryLabels({ category, subcategories })
 
   return (
     <article>
@@ -88,7 +88,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {tagLabel && <TagGroup label={tagLabel} />}
+          {tagLabels.length > 0 && <TagGroup label={tagLabels} />}
         </div>
       </header>
 
