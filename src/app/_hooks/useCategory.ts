@@ -40,7 +40,7 @@ export function useCategory<Entry extends Object>({
     validCategoryIds,
   )
 
-  const categorizedResults = useMemo(() => {
+  const filteredEntries = useMemo(() => {
     if (!validatedCategoryOption) {
       return entries
     }
@@ -64,7 +64,7 @@ export function useCategory<Entry extends Object>({
 
   return {
     categoryQuery: validatedCategoryOption,
-    categorizedResults,
+    filteredEntries,
     categoryCounts,
   }
 }

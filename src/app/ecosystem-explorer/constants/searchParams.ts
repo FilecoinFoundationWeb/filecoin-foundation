@@ -1,0 +1,1 @@
+export const CATEGORY_QUERY_SEPARATOR_SYMBOL = ','

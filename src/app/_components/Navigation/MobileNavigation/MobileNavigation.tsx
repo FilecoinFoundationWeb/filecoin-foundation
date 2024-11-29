@@ -9,20 +9,20 @@ import { List, X } from '@phosphor-icons/react'
 import { mobileNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
 
+import { IconButton } from '@/components/IconButton'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
 import { Social } from '@/components/Social'
 
 import { LinkItem } from './LinkItem'
 import { NestedMenu } from './NestedMenu'
-import { ToggleButton } from './ToggleButton'
 
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
 
   return (
     <div className="lg:hidden">
-      <ToggleButton
+      <IconButton
         icon={List}
         label="Open mobile navigation"
         onClick={() => setOpen(true)}
@@ -39,7 +39,7 @@ export function MobileNavigation() {
             >
               <Logo />
             </Link>
-            <ToggleButton
+            <IconButton
               icon={X}
               label="Close mobile navigation"
               onClick={() => setOpen(false)}

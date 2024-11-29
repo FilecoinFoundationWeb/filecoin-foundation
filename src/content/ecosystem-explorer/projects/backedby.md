@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX19IHL2qfhwrU8FlpePze+4d2RFF4JFQ57Kn58RA1nVubDYw6L5DFb
 full-name: encrypted::U2FsdGVkX19+pN6GgaANY6kTmkcXljyxjtk9Yd9soEQ=
 image:
   src: /assets/images/backedby.webp
-category: finance
+category: tooling-productivity
 subcategories:
   - dapp
 description: Bankless, Decentralized, Privacy-First content subscription

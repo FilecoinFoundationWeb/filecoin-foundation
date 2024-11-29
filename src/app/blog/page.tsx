@@ -92,7 +92,7 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categoryQuery, categorizedResults, categoryCounts } = useCategory({
+  const { categoryQuery, filteredEntries, categoryCounts } = useCategory({
     searchParams,
     entries: sortedResults,
     validCategoryIds: validCategoryIds,
@@ -100,7 +100,7 @@ export default function Blog({ searchParams }: Props) {
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: categorizedResults,
+    entries: filteredEntries,
   })
 
   return (
@@ -175,7 +175,7 @@ export default function Blog({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {categorizedResults.length === 0 ? (
+              {filteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

@@ -6,7 +6,7 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Zondax is a blockchain service provider that delivers services and software
   solutions in the fields of security, data indexing, integration, and protocol engineering."
-category: tooling-productivity
+category: storage
 tech:
   - filecoin
   - ipfs
