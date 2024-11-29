@@ -1,5 +1,5 @@
 ---
-title: "Vision Weekend"
+title: "Vision Weekend 2024"
 created-on: 2024-11-26T18:05:00.000Z
 updated-on: 2024-11-26T18:05:00.000Z
 published-on: 2024-11-26T18:05:00.000Z
