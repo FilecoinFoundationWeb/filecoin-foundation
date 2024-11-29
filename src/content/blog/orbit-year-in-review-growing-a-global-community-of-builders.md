@@ -60,7 +60,7 @@ This two-day community-FIL event hosted by Orbit Regional Lead East Asia [Secure
 
 ![Filecoin Orbit Events](https://lh7-us.googleusercontent.com/g7Xoyhp8gzsIaancAgKJVS1kkopfF0pLnB3WZz3R_IVf7UmQS5jWKQRJh-dl4sVKenzeb63n0rny199gsE55FlwqHqVbgKzC_fJodO6wNwgkAy8DIcTfaCs13ASAkXudhDUhZUEQtIEq9RW8lte3VvQ)
 
-And Orbit Regional Leads for Africa hosted [FIL Cape Town](https://fil-capetown.io/), the first major Filecoin event in South Africa, drawing over 100 attendees for a day of talks on the most recent developments in the Filecoin ecosystem.
+And Orbit Regional Leads for Africa hosted FIL Cape Town, the first major Filecoin event in South Africa, drawing over 100 attendees for a day of talks on the most recent developments in the Filecoin ecosystem.
 
 Watch Clara Tsao’s talk on Orbit from LabWeek
 
