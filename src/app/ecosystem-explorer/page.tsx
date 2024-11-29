@@ -155,12 +155,12 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                         title,
                         description,
                         image,
-                        category: categoryId,
+                        subcategories: [categoryId],
                       } = project
 
                       const isFirstTwoImages = i < 2
                       const category = findOrThrow(
-                        categories,
+                        subcategories,
                         (category) => category.slug === categoryId,
                       )
 

@@ -6,7 +6,6 @@ import { clsx } from 'clsx'
 import {
   type DynamicPathValues,
   PATHS,
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
   ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
 } from '@/constants/paths'
 
@@ -53,9 +52,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 
-  const categoryData = getCategoryDataFromDirectory(
-    ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  )
   const subcategoryData = getCategoryDataFromDirectory(
     ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
   )
@@ -69,7 +65,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     repo,
     twitter,
     featuredContent,
-    category,
     subcategories,
   } = data
 
@@ -98,7 +93,6 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          <TagLabel borderColor="brand-100">{categoryData[category]}</TagLabel>
           {subcategories.map((subcategory, i) => (
             <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
           ))}
