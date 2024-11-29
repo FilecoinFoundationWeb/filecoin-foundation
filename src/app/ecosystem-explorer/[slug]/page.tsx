@@ -3,11 +3,16 @@ import Image from 'next/image'
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import {
+  type DynamicPathValues,
+  PATHS,
+  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+} from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { Heading } from '@/components/Heading'
@@ -15,12 +20,11 @@ import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagGroup } from '@/components/TagGroup'
+import { TagLabel } from '@/components/TagLabel'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
-import { getEcosystemCategoryLabels } from '../utils/getEcosystemCategoryLabels'
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -48,6 +52,10 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 
+  const subcategoryData = getCategoryDataFromDirectory(
+    ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
+  )
+
   const {
     image,
     title,
@@ -57,11 +65,8 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     repo,
     twitter,
     featuredContent,
-    category,
     subcategories,
   } = data
-
-  const tagLabels = getEcosystemCategoryLabels({ category, subcategories })
 
   return (
     <article>
@@ -88,7 +93,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {tagLabels.length > 0 && <TagGroup label={tagLabels} />}
+          {subcategories.map((subcategory, i) => (
+            <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
+          ))}
         </div>
       </header>
 

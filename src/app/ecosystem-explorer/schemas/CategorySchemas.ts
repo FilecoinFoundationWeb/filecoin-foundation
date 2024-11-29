@@ -39,6 +39,3 @@ export const DirectorySubcategorySchema = z.object({
   name: z.string(),
   parent_category: CategorySlug,
 })
-
-export type Category = z.infer<typeof CategorySchema>
-export type Subcategory = z.infer<typeof SubcategorySchema>

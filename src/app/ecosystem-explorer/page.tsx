@@ -10,6 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { findOrThrow } from '@/utils/findOrThrow'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -38,7 +39,6 @@ import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
-import { getEcosystemCategoryLabels } from './utils/getEcosystemCategoryLabels'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 const NoSSRPagination = dynamic(
@@ -155,23 +155,21 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                         title,
                         description,
                         image,
-                        category,
-                        subcategories,
+                        subcategories: [categoryId],
                       } = project
 
                       const isFirstTwoImages = i < 2
-
-                      const tagLabels = getEcosystemCategoryLabels({
-                        category,
+                      const category = findOrThrow(
                         subcategories,
-                      })
+                        (category) => category.slug === categoryId,
+                      )
 
                       return (
                         <Card
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={tagLabels}
+                          tagLabel={category.name}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',
