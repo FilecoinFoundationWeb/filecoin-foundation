@@ -2,6 +2,7 @@
 
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
+import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
 import type { CategoryMap } from '@/types/categoryTypes'
@@ -167,8 +168,8 @@ export function EcosystemProjectForm({
           description={
             <>
               For best quality, please submit a white logo with a transparent
-              background, at least 1000px by 1000px, and under 100KB. You can
-              use tools like{' '}
+              background, at least 1000px by 1000px, and under{' '}
+              {prettyBytes(MAX_FILE_SIZE_IN_BYTES)}. You can use tools like{' '}
               <ExternalTextLink
                 href="https://squoosh.app/"
                 target="_blank"

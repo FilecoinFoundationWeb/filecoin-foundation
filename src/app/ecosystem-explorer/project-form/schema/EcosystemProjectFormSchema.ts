@@ -1,3 +1,4 @@
+import prettyBytes from 'pretty-bytes'
 import { z } from 'zod'
 
 import type { OptionType } from '@/components/Listbox/ListboxOption'
@@ -61,7 +62,9 @@ export const EcosystemProjectFormSchema = z.object({
   subcategory: OptionSchema,
   logo: z
     .instanceof(File, { message: 'A logo is required' })
-    .refine(validateFileSize, { message: 'Logo size exceeds the limit' }),
+    .refine(validateFileSize, {
+      message: `Logo size exceeds the limit of ${prettyBytes(MAX_FILE_SIZE_IN_BYTES)}`,
+    }),
   websiteUrl: z.string().url({ message: 'Invalid website URL' }),
   youtubeUrl: z
     .string()
