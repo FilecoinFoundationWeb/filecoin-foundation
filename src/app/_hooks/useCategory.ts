@@ -6,16 +6,16 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
-type EntryWithCategory = {
+type WithCategory = {
   category: string
 }
 
-export type UseCategoryProps<Entry extends EntryWithCategory> = {
+export type UseCategoryProps<Entry extends WithCategory> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
 }
 
-export function useCategory<Entry extends EntryWithCategory>({
+export function useCategory<Entry extends WithCategory>({
   searchParams,
   entries,
 }: UseCategoryProps<Entry>) {
