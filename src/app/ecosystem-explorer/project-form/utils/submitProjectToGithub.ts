@@ -2,13 +2,12 @@ import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
 import { getTodayISO } from '@/utils/dateUtils'
 
-import type { FormattedFile } from '../../types'
-
-import { createBlob } from './api/createBlob'
-import { createCommit } from './api/createCommit'
-import { createPR } from './api/createPr'
-import { createTreeBlobs } from './api/createTreeBlobs'
-import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
+import { createBlob } from '../services/github/api/createBlob'
+import { createCommit } from '../services/github/api/createCommit'
+import { createPR } from '../services/github/api/createPr'
+import { createTreeBlobs } from '../services/github/api/createTreeBlobs'
+import { getLatestCommitOnMain } from '../services/github/api/getLatestCommitOnMain'
+import type { FormattedFile } from '../types'
 
 export type SubmitProjectToGitHubParams = {
   slug: string

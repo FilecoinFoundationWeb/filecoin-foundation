@@ -2,7 +2,6 @@
 
 import slugify from 'slugify'
 
-import { submitProjectToGithub } from '../services/github'
 import type {
   EcosystemProjectFormDataWithoutLogo,
   FormattedFile,
@@ -10,6 +9,7 @@ import type {
 import { buildEcosystemMarkdownTemplate } from '../utils/buildEcosystemMarkdownTemplate'
 import { formatFormData } from '../utils/formatFormData'
 import { getFolderPaths } from '../utils/getFolderPaths'
+import { submitProjectToGithub } from '../utils/submitProjectToGithub'
 
 type SubmitProjectParams = {
   formattedFile: FormattedFile
