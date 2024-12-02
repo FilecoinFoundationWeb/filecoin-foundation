@@ -10,6 +10,7 @@ import {
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
+import type { SectionRefsProps } from '../types/sectionRefsTypes'
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
@@ -17,11 +18,11 @@ const options = coreFunctionsData.map(({ slug, title }) => ({
   id: slug,
   name: title,
 }))
+
 const firstOption = options[0]
 
-export function MobileTableOfContents() {
-  const { updateHash, isSectionActive, getHashFromSlug } = useUrlHash()
-
+export function MobileTableOfContents({ sectionRefs }: SectionRefsProps) {
+  const { isSectionActive, updateHash } = useUrlHash()
   const selectedOption =
     options.find((option) => isSectionActive(option.id)) || firstOption
 
@@ -32,7 +33,6 @@ export function MobileTableOfContents() {
         onChange={scrollToActiveSection}
       >
         <ListboxButton text={selectedOption.name} />
-
         <ListboxOptions matchButtonWidth>
           {options.map((option) => (
             <ListboxOption key={option.id} option={option} />
@@ -45,7 +45,7 @@ export function MobileTableOfContents() {
   function scrollToActiveSection(option: OptionType) {
     updateHash(option.id)
 
-    const sectionHash = getHashFromSlug(option.id)
-    scrollToSection(sectionHash)
+    const sectionRef = sectionRefs[option.id]
+    scrollToSection({ sectionRef })
   }
 }

@@ -1,13 +1,14 @@
-'use client'
+type ScrollToSectionProps = {
+  sectionRef: React.RefObject<HTMLElement>
+}
 
-export function scrollToSection(selector: string) {
-  const element = document.querySelector(selector)
-
-  if (!element) {
-    console.error(`Element with selector "${selector}" does not exist`)
+export function scrollToSection({ sectionRef }: ScrollToSectionProps) {
+  if (!sectionRef.current) {
+    console.error(`The referenced element does not exist`)
+    return
   }
 
-  element?.scrollIntoView({
+  sectionRef.current.scrollIntoView({
     block: 'start',
     behavior: 'smooth',
   })

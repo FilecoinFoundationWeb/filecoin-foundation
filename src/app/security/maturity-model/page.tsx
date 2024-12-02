@@ -1,5 +1,3 @@
-import dynamic from 'next/dynamic'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -17,18 +15,10 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { CoreFunctions } from './components/CoreFunctions'
-import { MobileTableOfContents } from './components/MobileTableOfContents'
+import { TableOfContents } from './components/TableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
+import { coreFunctionsData } from './data/coreFunctionsData'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-const DynamicDesktopTableOfContents = dynamic(
-  () =>
-    import('./components/DesktopTableOfContents').then(
-      (module) => module.DesktopTableOfContents,
-    ),
-  { ssr: false },
-)
 
 const { header, seo } = getFrontmatter({
   path: PATHS.MATURITY_MODEL,
@@ -79,15 +69,7 @@ export default function MaturityModel() {
         title="Explore the Core Functions"
       >
         <div className="flex flex-col gap-8 lg:relative lg:flex-row lg:items-start lg:gap-12">
-          <div className="grow">
-            <CoreFunctions />
-          </div>
-          <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
-            <DynamicDesktopTableOfContents />
-          </div>
-          <div className="sticky top-6 z-10 order-first block lg:hidden">
-            <MobileTableOfContents />
-          </div>
+          <TableOfContents />
         </div>
       </PageSection>
     </PageLayout>

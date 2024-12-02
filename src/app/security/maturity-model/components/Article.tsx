@@ -1,4 +1,4 @@
-'use client'
+import React, { forwardRef } from 'react'
 
 import Link from 'next/link'
 
@@ -14,21 +14,34 @@ import { useUrlHash } from '../utils/useUrlHash'
 type ArticleProps = {
   title: string
   slug: string
+  children: React.ReactNode
 } & React.ComponentPropsWithoutRef<'article'>
 
-export function Article({ title, slug, children }: ArticleProps) {
+function ArticleComponent(
+  { title, slug, children }: ArticleProps,
+  ref: React.Ref<HTMLElement>,
+) {
   const { updateHash, clearHashIfPresent, getHashFromSlug } = useUrlHash()
 
-  const { ref } = useIntersectionObserver({
+  const { ref: observerRef } = useIntersectionObserver({
     onChange: (isIntersecting) => {
       isIntersecting ? updateHash(slug) : clearHashIfPresent(slug)
     },
   })
 
+  function combinedRef(node: HTMLElement | null) {
+    if (typeof ref === 'function') {
+      ref(node)
+    } else if (ref) {
+      ;(ref as React.MutableRefObject<HTMLElement | null>).current = node
+    }
+    observerRef(node)
+  }
+
   const sectionHash = getHashFromSlug(slug)
 
   return (
-    <article ref={ref}>
+    <article ref={combinedRef}>
       <h3 id={slug}>
         <Link
           href={sectionHash as Route}
@@ -36,7 +49,9 @@ export function Article({ title, slug, children }: ArticleProps) {
           style={{ fontWeight: 'inherit' }}
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
             e.preventDefault()
-            scrollToSection(sectionHash)
+            if (ref && 'current' in ref) {
+              scrollToSection({ sectionRef: ref })
+            }
           }}
         >
           {title}
@@ -49,3 +64,5 @@ export function Article({ title, slug, children }: ArticleProps) {
     </article>
   )
 }
+
+export const Article = forwardRef<HTMLElement, ArticleProps>(ArticleComponent)
