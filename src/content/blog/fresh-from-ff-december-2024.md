@@ -21,14 +21,6 @@ seo:
 
 ## Ecosystem
 
-* Introducing Next Step Builder Grants. Filecoin Foundation is working with FIL-B to provide $5k to $10k support for builders taking their Filecoin projects to the next level! Focus areas include developer and data tooling, integrations, storage, retrieval, technical content creation, and FVM. 
-
-  [Learn more](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Builder%20Next%20Step%20Grants.md)
-
-  ! 
-* Get ready for Fast Finality in Filecoin (F3), the biggest network upgrade since FVM. F3 is coming to the network in Q1 of 2025, speeding up finality on the network by 450X. With F3, finalization times are reduced from 7.5 hours (900 epochs) to just minutes, improving user experience and opening the door for applications, exchanges, and interoperability to build on the network.
-
-  [ Read more! ](https://www.fil.org/blog/how-f3-is-transforming-the-filecoin-network)
-
-
+* Introducing Next Step Builder Grants. Filecoin Foundation is working with FIL-B to provide $5k to $10k support for builders taking their Filecoin projects to the next level! Focus areas include developer and data tooling, integrations, storage, retrieval, technical content creation, and FVM. [Learn more](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Builder%20Next%20Step%20Grants.md)! 
+* Get ready for Fast Finality in Filecoin (F3), the biggest network upgrade since FVM. F3 is coming to the network in Q1 of 2025, speeding up finality on the network by 450X. With F3, finalization times are reduced from 7.5 hours (900 epochs) to just minutes, improving user experience and opening the door for applications, exchanges, and interoperability to build on the network. [Read more! ](https://www.fil.org/blog/how-f3-is-transforming-the-filecoin-network)
 * FF's Storage and Community team supported several tracks at FDS-5 to help share business strategies on how to drive demand, create additional revenue streams for storage providers, and solidify Filecoin's market positioning, including:
