@@ -1,4 +1,4 @@
-import { Image, X } from '@phosphor-icons/react/dist/ssr'
+import { Image } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import prettyBytes from 'pretty-bytes'
 
