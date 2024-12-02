@@ -12,10 +12,7 @@ authors:
 image:
   src: /assets/images/letter-from-the-guest-editor.webp
 seo:
-  description: "Dear Readers, Welcome to the inaugural edition of The Filecoin
-    Ecosystem Digest: All Systems Go - a journey into the transformative power
-    of the decentralized web and its far-reaching implications across
-    various..."
+  description: Dive into the inaugural edition of The Filecoin Ecosystem Digest with Jonathan Victor, exploring decentralized web innovations, AI, sustainability, the space economy, and community-led growth.
 ---
 
 Dear Readers,

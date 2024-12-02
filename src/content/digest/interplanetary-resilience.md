@@ -12,7 +12,7 @@ authors:
 image:
   src: /assets/images/interplanetary-resilience.webp
 seo:
-  description: "The vision of Filecoin is of verifiably robust storage of data scaling to meet the needs of humanity over centuries. In order to achieve this vision we need to _literally_ aim for the stars. We’re at a turning..."
+  description: Discover how Filecoin Foundation and partners successfully deployed IPFS in space, showcasing cryptographic verifiability, open standards, and the future of resilient interplanetary communication.
 ---
 
 The vision of Filecoin is of verifiably robust storage of data scaling to meet the needs of humanity over centuries. In order to achieve this vision we need to _literally_ aim for the stars.
