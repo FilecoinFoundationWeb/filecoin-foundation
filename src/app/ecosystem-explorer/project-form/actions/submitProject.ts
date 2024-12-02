@@ -5,26 +5,26 @@ import slugify from 'slugify'
 import { submitProjectToGithub } from '../services/github'
 import type {
   EcosystemProjectFormDataWithoutLogo,
-  FormattedLogo,
+  FormattedFile,
 } from '../types'
 import { buildEcosystemMarkdownTemplate } from '../utils/buildEcosystemMarkdownTemplate'
 import { formatFormData } from '../utils/formatFormData'
 import { getFolderPaths } from '../utils/getFolderPaths'
 
 type SubmitProjectParams = {
-  formattedLogo: FormattedLogo
+  formattedFile: FormattedFile
   formDataWithoutLogo: EcosystemProjectFormDataWithoutLogo
 }
 
 export async function submitProject({
-  formattedLogo,
+  formattedFile,
   formDataWithoutLogo,
 }: SubmitProjectParams) {
   const slug = slugify(formDataWithoutLogo.title, {
     lower: true,
     strict: true,
   })
-  const logoName = `${slug}.${formattedLogo.format}`
+  const fileName = `${slug}.${formattedFile.format}`
 
   const { publicAssetsFolder, assetsFolder } = getFolderPaths()
 
@@ -32,15 +32,15 @@ export async function submitProject({
 
   const markdownTemplate = buildEcosystemMarkdownTemplate({
     ...formattedFormData,
-    image: { src: `${assetsFolder}/${logoName}` },
+    image: { src: `${assetsFolder}/${fileName}` },
   })
 
   const pullRequest = await submitProjectToGithub({
     slug,
     markdownTemplate,
     logo: {
-      path: `${publicAssetsFolder}/${logoName}`,
-      base64: formattedLogo.base64,
+      path: `${publicAssetsFolder}/${fileName}`,
+      base64: formattedFile.base64,
     },
     prTitle: 'New Ecosystem Project',
   })

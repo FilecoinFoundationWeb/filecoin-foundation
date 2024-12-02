@@ -1,7 +1,7 @@
 import type { z } from 'zod'
 
 import type { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
-import type { formatLogo } from '../utils/formatLogo'
+import type { formatFile } from '../utils/formatFile'
 
 export type EcosystemProjectFormData = z.infer<
   typeof EcosystemProjectFormSchema
@@ -12,4 +12,4 @@ export type EcosystemProjectFormDataWithoutLogo = Omit<
   'logo'
 >
 
-export type FormattedLogo = Awaited<ReturnType<typeof formatLogo>>
+export type FormattedFile = Awaited<ReturnType<typeof formatFile>>

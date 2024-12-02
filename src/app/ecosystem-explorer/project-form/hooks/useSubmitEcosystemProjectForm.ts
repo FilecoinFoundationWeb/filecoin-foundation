@@ -8,7 +8,7 @@ import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { submitProject } from '../actions/submitProject'
 import type { EcosystemProjectFormData } from '../types'
-import { formatLogo } from '../utils/formatLogo'
+import { formatFile } from '../utils/formatFile'
 
 export function useSubmitEcosystemProjectForm() {
   const { updateSearchParams } = useUpdateSearchParams()
@@ -17,10 +17,10 @@ export function useSubmitEcosystemProjectForm() {
     const { logo, ...formDataWithoutLogo } = data
 
     try {
-      const formattedLogo = await formatLogo(logo)
+      const formattedFile = await formatFile(logo)
 
       const pullRequest = await submitProject({
-        formattedLogo,
+        formattedFile,
         formDataWithoutLogo,
       })
 

@@ -2,7 +2,7 @@ import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
 
 import { getTodayISO } from '@/utils/dateUtils'
 
-import type { FormattedLogo } from '../../types'
+import type { FormattedFile } from '../../types'
 
 import { createBlob } from './api/createBlob'
 import { createCommit } from './api/createCommit'
@@ -16,7 +16,7 @@ export type SubmitProjectParams = {
   prTitle: string
   logo: {
     path: string
-    base64: FormattedLogo['base64']
+    base64: FormattedFile['base64']
   }
 }
 

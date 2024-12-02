@@ -4,11 +4,11 @@ import { findOrThrow } from '@/utils/findOrThrow'
 
 import { ALLOWED_IMAGE_FORMATS } from '../constants'
 
-export async function formatLogo(logo: File) {
-  const base64 = await convertToBase64(logo)
-  const format = getFileFormat(logo.name)
+export async function formatFile(file: File) {
+  const base64 = await convertToBase64(file)
+  const format = getFileFormat(file.name)
 
-  return { base64, format, name: logo.name }
+  return { base64, format, name: file.name }
 }
 
 function convertToBase64(file: File): Promise<string> {
