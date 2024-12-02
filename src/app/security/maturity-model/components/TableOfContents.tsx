@@ -5,6 +5,7 @@ import React, { createRef, useRef } from 'react'
 import dynamic from 'next/dynamic'
 
 import { coreFunctionsData } from '../data/coreFunctionsData'
+import type { SectionRefsProps } from '../types/sectionRefsTypes'
 
 import { CoreFunctions } from './CoreFunctions'
 import { MobileTableOfContents } from './MobileTableOfContents'
@@ -25,7 +26,7 @@ export function TableOfContents() {
         return acc
       },
 
-      {} as Record<string, React.RefObject<HTMLElement>>,
+      {} as SectionRefsProps['sectionRefs'],
     ),
   )
 

@@ -19,7 +19,7 @@ type ArticleProps = {
 
 function ArticleComponent(
   { title, slug, children }: ArticleProps,
-  ref: React.Ref<HTMLElement>,
+  ref: React.ForwardedRef<HTMLElement>,
 ) {
   const { updateHash, clearHashIfPresent, getHashFromSlug } = useUrlHash()
 
@@ -29,11 +29,11 @@ function ArticleComponent(
     },
   })
 
+  const isRefObject = ref && 'current' in ref
+
   function combinedRef(node: HTMLElement | null) {
-    if (typeof ref === 'function') {
-      ref(node)
-    } else if (ref) {
-      ;(ref as React.MutableRefObject<HTMLElement | null>).current = node
+    if (isRefObject) {
+      ref.current = node
     }
     observerRef(node)
   }
@@ -49,7 +49,7 @@ function ArticleComponent(
           style={{ fontWeight: 'inherit' }}
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
             e.preventDefault()
-            if (ref && 'current' in ref) {
+            if (isRefObject) {
               scrollToSection({ sectionRef: ref })
             }
           }}

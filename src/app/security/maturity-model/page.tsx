@@ -17,7 +17,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { TableOfContents } from './components/TableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
-import { coreFunctionsData } from './data/coreFunctionsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo } = getFrontmatter({
