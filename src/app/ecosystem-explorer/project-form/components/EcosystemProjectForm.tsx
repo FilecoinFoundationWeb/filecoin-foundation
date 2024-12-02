@@ -192,7 +192,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="youtubeUrl"
-          label="Youtube video URL"
+          label="YouTube video URL"
           placeholder="Video URL"
           type="url"
           disabled={isSubmitting}
