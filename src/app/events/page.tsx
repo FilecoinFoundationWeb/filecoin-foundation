@@ -92,10 +92,9 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { categoryQuery, filteredEntries, categoryCounts } = useCategory({
+  const { filteredEntries } = useCategory({
     searchParams,
     entries: sortedResults,
-    validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({

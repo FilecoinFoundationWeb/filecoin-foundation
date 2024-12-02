@@ -85,10 +85,9 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { categoryQuery, filteredEntries, categoryCounts } = useCategory({
+  const { filteredEntries } = useCategory({
     searchParams,
     entries: sortedResults,
-    validCategoryIds: validCategoryIds,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
