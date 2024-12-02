@@ -3,8 +3,14 @@ import { Field } from '@headlessui/react'
 import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 
+import {
+  FormLabelDescription,
+  type FormLabelDescriptionProps,
+} from './FormLabelDescription'
+
 export type FormFieldProps = {
   children?: React.ReactNode
+  description?: FormLabelDescriptionProps['children']
 } & FormLabelProps &
   FormErrorProps
 
@@ -20,12 +26,24 @@ export function FormField({
 }: FormFieldProps) {
   return (
     <Field className={formFieldStyle}>
-      <FormLabel
-        label={label}
-        hideLabel={hideLabel}
-        addOptionalToLabel={addOptionalToLabel}
-        description={description}
-      />
+      {description ? (
+        <div className="space-y-1">
+          <FormLabel
+            label={label}
+            hideLabel={hideLabel}
+            addOptionalToLabel={addOptionalToLabel}
+          />
+
+          <FormLabelDescription>{description}</FormLabelDescription>
+        </div>
+      ) : (
+        <FormLabel
+          label={label}
+          hideLabel={hideLabel}
+          addOptionalToLabel={addOptionalToLabel}
+        />
+      )}
+
       {children}
       <FormError error={error} />
     </Field>

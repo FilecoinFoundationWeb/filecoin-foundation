@@ -11,6 +11,11 @@ import { FormError, type FormErrorProps } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel, type FormLabelProps } from '@/components/Form/FormLabel'
 
+import {
+  FormLabelDescription,
+  type FormLabelDescriptionProps,
+} from '../FormLabelDescription'
+
 import { CharacterCounter } from './CharacterCounter'
 
 type ExcludedHeadlessUIProps = 'invalid' | 'className'
@@ -18,6 +23,7 @@ type ExcludedHeadlessUIProps = 'invalid' | 'className'
 export type FormTextareaProps = {
   characterLimit: number
   characterCount: number
+  description?: FormLabelDescriptionProps['children']
 } & Omit<HeadlessTextareaProps, ExcludedHeadlessUIProps> &
   FormLabelProps &
   FormErrorProps
@@ -33,11 +39,14 @@ export function FormTextarea({
 }: FormTextareaProps) {
   return (
     <Field className={formFieldStyle}>
-      <FormLabel
-        label={label}
-        hideLabel={hideLabel}
-        description={description}
-      />
+      {description ? (
+        <div className="space-y-1">
+          <FormLabel label={label} hideLabel={hideLabel} />
+          <FormLabelDescription>{description}</FormLabelDescription>
+        </div>
+      ) : (
+        <FormLabel label={label} hideLabel={hideLabel} />
+      )}
 
       <Textarea
         {...rest}
