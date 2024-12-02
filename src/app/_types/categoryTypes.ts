@@ -20,7 +20,7 @@ export type CMSCategoryFieldMapping = {
   events: CMSCategoryField
 }
 
-export type AllCategoryOption = {
+export type AllCategoriesOptionType = {
   id: typeof ALL_CATEGORIES_ID
   name: string
 }

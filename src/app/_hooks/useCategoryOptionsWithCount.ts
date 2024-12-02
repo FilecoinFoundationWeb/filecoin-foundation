@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import type { AllCategoryOption } from '@/types/categoryTypes'
+import type { AllCategoriesOptionType } from '@/types/categoryTypes'
 import { type Object } from '@/types/utils'
 
 import {
@@ -11,7 +11,7 @@ import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
 type UseCategoryCountProps<Entry extends Object> =
   CMSFieldOptionsAndValidIdsParams & {
-    allOption: AllCategoryOption
+    allOption: AllCategoriesOptionType
     entries: Array<Entry>
   }
 
