@@ -12,9 +12,7 @@ authors:
 image:
   src: /assets/images/storage-is-just-the-start.webp
 seo:
-  description: Data storage and retrieval are core to how the Internet works.
-    Today’s data infrastructure is dominated by Big Tech. But technologies like
-    the InterPlanetary File System (IPFS) and Filecoin...
+  description: Discover how Filecoin is expanding beyond storage in 2024 with innovations in AI, DePIN, hot storage, and economic scaling, driving adoption and shaping the future of decentralized data infrastructure.
 ---
 
 Data storage and retrieval are core to how the Internet works. Today’s [data infrastructure](https://www.pcmag.com/news/four-companies-control-67-of-the-worlds-cloud-infrastructure) is dominated by Big Tech. But technologies like the InterPlanetary File System (IPFS) and Filecoin re-architecture that centralized framework to store humanity’s information on a decentralized network of storage providers.

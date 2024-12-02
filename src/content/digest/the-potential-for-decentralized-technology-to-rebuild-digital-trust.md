@@ -15,7 +15,7 @@ authors:
 image:
   src: /assets/images/the-potential-for-decentralized-technology-to-rebuild-media-trust-and-empower-content-creators.webp
 seo:
-  description: "In April 2024, a 30-second video featuring Bollywood star Aamir Khan circulated widely across the Indian internet. Khan was seen criticizing Indian Prime Minister Narendra Modi for unfulfilled campaign promises..."
+  description: Explore how blockchain-based provenance and decentralized solutions combat AI-driven disinformation, restoring media trust and empowering content creators in a digital age.
 ---
 
 In April 2024, a 30-second video featuring Bollywood star Aamir Khan circulated widely across the Indian internet. Khan was seen criticizing Indian Prime Minister Narendra Modi for unfulfilled campaign promises and neglecting critical economic issues during his two terms. The video concludes with the election symbol for Congress, Modi’s rival party, and the slogan: “Vote for Justice, Vote for Congress.” Khan's immense popularity in India and the video's release during the general election period likely contributed to its explosive distribution.

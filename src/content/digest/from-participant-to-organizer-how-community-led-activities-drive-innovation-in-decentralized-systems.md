@@ -13,11 +13,7 @@ authors:
 image:
   src: /assets/images/from-participant-to-organizer.webp
 seo:
-  description:
-    Harnessing the Power of Decentralized Ecosystems — The strength of
-    decentralized ecosystems lies in their broad participation and spirit of
-    sharing. They are built on the diversity of thought and experience brought
-    by...
+  description: Explore how community-led events drive innovation in decentralized ecosystems. Learn strategies for engagement, regional impact, and the transformative power of collaboration.
 ---
 
 ## Harnessing the Power of Decentralized Ecosystems
