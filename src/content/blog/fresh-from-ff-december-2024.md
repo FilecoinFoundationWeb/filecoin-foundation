@@ -6,7 +6,7 @@ published-on: 2024-12-01T18:20:00.000Z
 category: reports
 description: "Check out the latest updates about what Filecoin Foundation has been up to. "
 image:
-  src: /assets/images/0215-ff-21-.png
+  src: /assets/images/0215-ff-21-.webp
 seo:
   twitter:
     card: summary
