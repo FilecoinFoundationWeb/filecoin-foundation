@@ -1,63 +1,49 @@
 'use client'
 
-import { useState } from 'react'
+import { useQueryState, parseAsString } from 'nuqs'
 
-import type { CategoryOption, CategoryId } from '@/types/categoryTypes'
-
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
+import { ALL_CATEGORIES_OPTION } from '@/constants/categoryConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
-
-import { useCategory } from '@/hooks/useCategory'
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { CategoryListbox } from '@/components/CategoryListbox'
 import { CategorySidebar } from '@/components/CategorySidebar'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 type CategoryProps = {
-  query: ReturnType<typeof useCategory>['categoryQuery']
-  options: Array<CategoryOption>
-  counts?: ReturnType<typeof useCategory>['categoryCounts']
+  options: Array<OptionType>
 }
 
-export function Category({ query, options, counts }: CategoryProps) {
-  const [categoryId, setCategoryId] = useState<CategoryId>(
-    query || DEFAULT_CATEGORY,
+export function Category({ options }: CategoryProps) {
+  const [categoryId, setCategoryId] = useQueryState<OptionType['id']>(
+    CATEGORY_KEY,
+    parseAsString
+      .withDefault(ALL_CATEGORIES_OPTION.id)
+      .withOptions({ shallow: false }),
   )
-  const { updateSearchParams, resetSearchParams } = useUpdateSearchParams()
 
-  const selectedCategory = options.find((option) => option.id === categoryId)
+  const selectedCategory =
+    options.find((option) => option.id === categoryId) || ALL_CATEGORIES_OPTION
+
+  function handleChange(option: OptionType) {
+    setCategoryId(option.id)
+  }
 
   return (
     <>
       <div className="hidden lg:block">
         <CategorySidebar
-          selectedId={categoryId}
+          selected={selectedCategory}
           options={options}
-          counts={counts}
-          onChange={updateCategoryAndParams}
+          onChange={handleChange}
         />
       </div>
       <div className="block lg:hidden">
         <CategoryListbox
           selected={selectedCategory}
           options={options}
-          counts={counts}
-          onChange={updateCategoryAndParams}
+          onChange={handleChange}
         />
       </div>
     </>
   )
-
-  function updateCategoryAndParams(category: CategoryOption) {
-    setCategoryId(category.id)
-    updateParams(category.id)
-  }
-
-  function updateParams(categoryId: CategoryId) {
-    if (categoryId === DEFAULT_CATEGORY) {
-      resetSearchParams()
-    } else {
-      updateSearchParams({ [CATEGORY_KEY]: categoryId })
-    }
-  }
 }

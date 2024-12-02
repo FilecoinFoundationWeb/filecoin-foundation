@@ -5,6 +5,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
+import { ALL_CATEGORIES_OPTION } from '@/constants/categoryConstants'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -13,14 +14,13 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
-import { hasNoFiltersApplied } from '@/utils/searchParamsUtils'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useCategory } from '@/hooks/useCategory'
+import { useCategoryOptionsWithCount } from '@/hooks/useCategoryOptionsWithCount'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -28,7 +28,6 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Category } from '@/components/Category'
-import { CategoryResetButton } from '@/components/CategoryResetButton'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -55,11 +54,6 @@ type Props = {
 }
 
 const events = getEventsData()
-const { options: categoryOptions, validIds: validCategoryIds } =
-  getCMSFieldOptionsAndValidIds({
-    collectionName: 'event_entries',
-    fieldName: 'category',
-  })
 
 const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
   path: PATHS.EVENTS,
@@ -109,6 +103,13 @@ export default function Events({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
+  const { categoryOptionsWithCount } = useCategoryOptionsWithCount({
+    collectionName: 'event_entries',
+    fieldName: 'category',
+    allOption: ALL_CATEGORIES_OPTION,
+    entries: searchResults,
+  })
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
@@ -134,19 +135,7 @@ export default function Events({ searchParams }: Props) {
       <PageSection kicker="Events" title="Network Events">
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            results={
-              <CategoryResetButton
-                counts={categoryCounts}
-                isSelected={hasNoFiltersApplied(searchParams)}
-              />
-            }
-            category={
-              <Category
-                query={categoryQuery}
-                options={categoryOptions}
-                counts={categoryCounts}
-              />
-            }
+            category={<Category options={categoryOptionsWithCount} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
@@ -161,18 +150,12 @@ export default function Events({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
+              category={<Category options={categoryOptionsWithCount} />}
               sort={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
                   defaultQuery={defaultSortQuery}
-                />
-              }
-              category={
-                <Category
-                  query={categoryQuery}
-                  options={categoryOptions}
-                  counts={categoryCounts}
                 />
               }
             />
