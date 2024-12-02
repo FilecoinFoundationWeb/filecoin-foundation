@@ -2,6 +2,8 @@
 
 import slugify from 'slugify'
 
+import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
+
 import type {
   EcosystemProjectFormDataWithoutLogo,
   FormattedFile,
@@ -24,7 +26,7 @@ export async function submitProject({
     lower: true,
     strict: true,
   })
-  const fileName = `${slug}.${formattedFile.format}`
+  const fileNameWithExtension = `${slug}.${formattedFile.format}`
 
   const { publicAssetsFolder, assetsFolder } = getFolderPaths()
 
@@ -32,17 +34,20 @@ export async function submitProject({
 
   const markdownTemplate = buildEcosystemMarkdownTemplate({
     ...formattedFormData,
-    image: { src: `${assetsFolder}/${fileName}` },
+    image: { src: `${assetsFolder}/${fileNameWithExtension}` },
   })
 
   const pullRequest = await submitProjectToGithub({
     slug,
-    markdownTemplate,
-    logo: {
-      path: `${publicAssetsFolder}/${fileName}`,
-      base64: formattedFile.base64,
+    message: 'New Ecosystem Project',
+    markdown: {
+      template: markdownTemplate,
+      path: `${ECOSYSTEM_PROJECTS_DIRECTORY_PATH}/${slug}.md`,
     },
-    prTitle: 'New Ecosystem Project',
+    file: {
+      base64: formattedFile.base64,
+      path: `${publicAssetsFolder}/${fileNameWithExtension}`,
+    },
   })
 
   return pullRequest

@@ -1,5 +1,3 @@
-import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
-
 import { getTodayISO } from '@/utils/dateUtils'
 
 import { createBlob } from '../services/github/api/createBlob'
@@ -9,11 +7,16 @@ import { createTreeBlobs } from '../services/github/api/createTreeBlobs'
 import { getLatestCommitOnMain } from '../services/github/api/getLatestCommitOnMain'
 import type { FormattedFile } from '../types'
 
+import type { buildEcosystemMarkdownTemplate } from './buildEcosystemMarkdownTemplate'
+
 export type SubmitProjectToGitHubParams = {
   slug: string
-  markdownTemplate: string
-  prTitle: string
-  logo: {
+  message: string
+  markdown: {
+    path: string
+    template: ReturnType<typeof buildEcosystemMarkdownTemplate>
+  }
+  file: {
     path: string
     base64: FormattedFile['base64']
   }
@@ -21,27 +24,22 @@ export type SubmitProjectToGitHubParams = {
 
 export async function submitProjectToGithub({
   slug,
-  markdownTemplate,
-  logo,
-  prTitle,
+  markdown,
+  file,
+  message,
 }: SubmitProjectToGitHubParams) {
   const todayISO = getTodayISO()
   const branchName = `ecosystem-submission/${slug}-${todayISO}`
+  const formattedMessage = `${message}: ${slug}`
 
   const [markdownBlob, logoBlob] = await Promise.all([
-    createBlob(markdownTemplate, 'utf-8'),
-    createBlob(logo.base64, 'base64'),
+    createBlob(markdown.template, 'utf-8'),
+    createBlob(file.base64, 'base64'),
   ])
 
   const treeBlobs = [
-    {
-      path: `${ECOSYSTEM_PROJECTS_DIRECTORY_PATH}/${slug}.md`,
-      sha: markdownBlob.sha,
-    },
-    {
-      path: logo.path,
-      sha: logoBlob.sha,
-    },
+    { path: markdown.path, sha: markdownBlob.sha },
+    { path: file.path, sha: logoBlob.sha },
   ]
 
   const latestCommitOnMain = await getLatestCommitOnMain()
@@ -54,11 +52,11 @@ export async function submitProjectToGithub({
   const newCommit = await createCommit({
     parentCommitSha: latestCommitOnMain.sha,
     treeSha: newTree.sha,
-    message: `Ecosystem Project Form Submission: ${slug}`,
+    message: formattedMessage,
   })
 
   const newPullRequest = await createPR({
-    title: `${prTitle}: ${slug}`,
+    title: formattedMessage,
     commitSha: newCommit.sha,
     branchName,
   })
