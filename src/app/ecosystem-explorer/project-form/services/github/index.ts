@@ -10,7 +10,7 @@ import { createPR } from './api/createPr'
 import { createTreeBlobs } from './api/createTreeBlobs'
 import { getLatestCommitOnMain } from './api/getLatestCommitOnMain'
 
-export type SubmitProjectParams = {
+export type SubmitProjectToGitHubParams = {
   slug: string
   markdownTemplate: string
   prTitle: string
@@ -25,7 +25,7 @@ export async function submitProjectToGithub({
   markdownTemplate,
   logo,
   prTitle,
-}: SubmitProjectParams) {
+}: SubmitProjectToGitHubParams) {
   const todayISO = getTodayISO()
   const branchName = `ecosystem-submission/${slug}-${todayISO}`
 
