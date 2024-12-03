@@ -7,6 +7,7 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
+import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -40,6 +41,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
+import { eventMatchesCategoryQuery } from './utils/filterEvent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
@@ -92,14 +94,16 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { filteredEntries } = useFilter({
+  const { filteredResults } = useFilter({
     searchParams,
     entries: sortedResults,
+    filterKey: CATEGORY_KEY,
+    filterFn: eventMatchesCategoryQuery,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredEntries,
+    entries: filteredResults,
   })
 
   const categoryOptionsWithCount = useFilterOptionsWithCount({
@@ -159,7 +163,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredEntries.length === 0 ? (
+              {filteredResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

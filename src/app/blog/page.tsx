@@ -6,6 +6,7 @@ import { type NextServerSearchParams } from '@/types/searchParams'
 
 import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
+import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -37,6 +38,7 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { blogSortConfigs } from './constants/sortConfigs'
+import { blogPostMatchesCategoryQuery } from './utils/filterBlogPosts'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
@@ -85,14 +87,16 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { filteredEntries } = useFilter({
+  const { filteredResults } = useFilter({
     searchParams,
     entries: sortedResults,
+    filterKey: CATEGORY_KEY,
+    filterFn: blogPostMatchesCategoryQuery,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredEntries,
+    entries: filteredResults,
   })
 
   const categoryOptionsWithCount = useFilterOptionsWithCount({
@@ -156,7 +160,7 @@ export default function Blog({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredEntries.length === 0 ? (
+              {filteredResults.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

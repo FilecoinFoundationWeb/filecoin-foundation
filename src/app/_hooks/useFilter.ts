@@ -1,35 +1,39 @@
-import { useMemo } from 'react'
+import { useCallback, useMemo } from 'react'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
+import { type Object } from '@/types/utils'
 
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import { ALL_FILTERS_ID } from '@/constants/filterConstants'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
-type WithCategory = {
-  category: string
-}
-
-export type UseFilterProps<Entry extends WithCategory> = {
+export type UseFilterProps<Entry extends Object> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
+  filterKey: string
+  filterFn: (entry: Entry, query?: string) => boolean
 }
 
-export function useFilter<Entry extends WithCategory>({
+export function useFilter<Entry extends Object>({
   searchParams,
   entries,
+  filterKey,
+  filterFn,
 }: UseFilterProps<Entry>) {
-  const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
+  const filterQuery = normalizeQueryParam(searchParams, filterKey)
 
-  const filteredEntries = useMemo(() => {
-    if (!normalizedQuery) {
+  const filterByQuery = useCallback(
+    (entry: Entry) => filterFn(entry, filterQuery),
+    [filterFn, filterQuery],
+  )
+
+  const filteredResults = useMemo(() => {
+    if (!filterQuery || filterQuery === ALL_FILTERS_ID) {
       return entries
     }
 
-    return entries.filter((entry) => {
-      return entry.category === normalizedQuery
-    })
-  }, [entries, normalizedQuery])
+    return entries.filter(filterByQuery)
+  }, [filterQuery, entries, filterByQuery])
 
-  return { filteredEntries }
+  return { filteredResults }
 }
