@@ -1,5 +1,7 @@
 'use client'
 
+import { useMemo } from 'react'
+
 import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 
 import { ListboxButton } from '@/components/Listbox/ListboxButton'
@@ -9,21 +11,28 @@ import {
 } from '@/components/Listbox/ListboxOption'
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
-import { coreFunctionsData } from '../data/coreFunctionsData'
-import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
-const options = coreFunctionsData.map(({ slug, title }) => ({
-  id: slug,
-  name: title,
-}))
-const firstOption = options[0]
+import type { DataWithRef } from './TableOfContents'
 
-export function MobileTableOfContents() {
-  const { updateHash, isSectionActive, getHashFromSlug } = useUrlHash()
+type MobileTableOfContentsProps = {
+  data: Array<DataWithRef>
+  scrollToSection: (slug: string) => void
+}
+
+export function MobileTableOfContents({
+  data,
+  scrollToSection,
+}: MobileTableOfContentsProps) {
+  const { isSectionActive, updateHash } = useUrlHash()
+
+  const options = useMemo(
+    () => data.map(({ slug, title }) => ({ id: slug, name: title })),
+    [data],
+  )
 
   const selectedOption =
-    options.find((option) => isSectionActive(option.id)) || firstOption
+    options.find((option) => isSectionActive(option.id)) || options[0]
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
@@ -32,7 +41,6 @@ export function MobileTableOfContents() {
         onChange={scrollToActiveSection}
       >
         <ListboxButton text={selectedOption.name} />
-
         <ListboxOptions matchButtonWidth>
           {options.map((option) => (
             <ListboxOption key={option.id} option={option} />
@@ -44,8 +52,6 @@ export function MobileTableOfContents() {
 
   function scrollToActiveSection(option: OptionType) {
     updateHash(option.id)
-
-    const sectionHash = getHashFromSlug(option.id)
-    scrollToSection(sectionHash)
+    scrollToSection(option.id)
   }
 }
