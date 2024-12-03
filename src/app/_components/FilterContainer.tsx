@@ -15,7 +15,7 @@ type FilterProps = {
 
 type ResultsProps = {
   category: ReactNode
-  results: ReactNode
+  results?: ReactNode
   gapSize?: 'default' | 'wide'
 }
 
@@ -35,7 +35,6 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   search,
   category,
   sort,
-  results,
 }: FilterProps) {
   return (
     <aside className="flex flex-col gap-4 lg:hidden">
@@ -46,7 +45,6 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
           <div className="md:w-44">{sort}</div>
         </div>
       </div>
-      {results}
     </aside>
   )
 }

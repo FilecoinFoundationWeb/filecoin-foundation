@@ -1,15 +1,14 @@
-import type { CategoryCounts } from '@/types/categoryTypes'
-
-import { DEFAULT_CATEGORY } from '@/constants/categoryConstants'
-
-export function getTotalCategoryCount(counts?: CategoryCounts) {
-  if (!counts) return undefined
-
-  const totalSum = calculateTotalSum(counts)
-
-  return totalSum > 0 ? { [DEFAULT_CATEGORY]: totalSum } : undefined
+type EntryWithCount = {
+  count: number
 }
 
-function calculateTotalSum(counts: CategoryCounts): number {
-  return Object.values(counts).reduce((sum, value) => sum + value, 0)
+const COUNT_INITIAL_VALUE = 0
+
+export function getTotalCategoryCount<Entry extends EntryWithCount>(
+  entriesWithCount: Array<Entry>,
+) {
+  return entriesWithCount.reduce(
+    (sum, entry) => sum + entry.count,
+    COUNT_INITIAL_VALUE,
+  )
 }

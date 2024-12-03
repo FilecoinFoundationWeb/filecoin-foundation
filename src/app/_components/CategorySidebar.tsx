@@ -4,11 +4,7 @@ import type { ElementType } from 'react'
 
 import { clsx } from 'clsx'
 
-import {
-  type CategoryCounts,
-  type CategoryId,
-  type CategoryOption,
-} from '@/types/categoryTypes'
+import type { OptionType } from './Listbox/ListboxOption'
 
 const touchTarget = {
   class: 'px-4',
@@ -17,10 +13,9 @@ const touchTarget = {
 } as const
 
 type CategorySidebarProps = {
-  selectedId: CategoryId
-  options: Array<CategoryOption>
-  counts?: CategoryCounts
-  onChange: (selected: CategoryOption) => void
+  selected: OptionType
+  options: Array<OptionType>
+  onChange: (selected: OptionType) => void
 }
 
 type CategoryContainerProps = {
@@ -36,9 +31,8 @@ type CategoryItemProps = {
 }
 
 export function CategorySidebar({
-  selectedId,
+  selected,
   options,
-  counts,
   onChange,
 }: CategorySidebarProps) {
   return (
@@ -47,8 +41,8 @@ export function CategorySidebar({
         <CategorySidebar.Item
           key={option.id}
           name={option.name}
-          isSelected={selectedId === option.id}
-          count={counts?.[option.id]}
+          count={option.count}
+          isSelected={selected.id === option.id}
           handleClick={() => onChange(option)}
         />
       ))}
