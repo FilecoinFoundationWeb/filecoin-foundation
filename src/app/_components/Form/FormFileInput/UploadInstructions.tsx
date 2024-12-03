@@ -1,5 +1,6 @@
-import { Image, X } from '@phosphor-icons/react/dist/ssr'
+import { Image } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
+import prettyBytes from 'pretty-bytes'
 
 import { Icon } from '@/components/Icon'
 
@@ -32,7 +33,7 @@ export function UploadInstructions({
           <span>
             {' '}
             or drag and drop {getDisplayableFileFormats(accept)} up to{' '}
-            {getDisplayableMaxFileSize(maxSize)}
+            {prettyBytes(maxSize)}
           </span>
         </p>
       </div>
@@ -59,15 +60,4 @@ function getDisplayableFileFormats(
 
   const lastFormat = formats.pop()
   return `${formats.join(', ')}, and ${lastFormat} files`
-}
-
-const ONE_KB = 1_000
-const ONE_MB = 1_000_000
-
-function getDisplayableMaxFileSize(maxSize: FormFileInputProps['maxSize']) {
-  if (maxSize < ONE_MB) {
-    return `${(maxSize / ONE_KB).toFixed()}KB`
-  }
-
-  return `${(maxSize / ONE_MB).toFixed()}MB`
 }
