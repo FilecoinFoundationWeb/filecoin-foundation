@@ -7,7 +7,7 @@ import {
   getCMSFieldOptionsAndValidIds,
   type CMSFieldOptionsAndValidIdsParams,
 } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
+import { sumObjectCounts } from '@/utils/sumObjectCounts'
 
 type UseFilterOptionsWithCountProps<Entry extends Object> =
   CMSFieldOptionsAndValidIdsParams & {
@@ -40,7 +40,7 @@ export function useFilterOptionsWithCount<Entry extends Object>({
   const optionsWithAllAndCount = useMemo(() => {
     const allOptionWithCount = {
       ...allOption,
-      count: getTotalCategoryCount(optionsWithCount),
+      count: sumObjectCounts(optionsWithCount),
     }
 
     return [allOptionWithCount, ...optionsWithCount]

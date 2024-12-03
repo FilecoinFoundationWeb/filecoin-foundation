@@ -4,7 +4,7 @@ type EntryWithCount = {
 
 const COUNT_INITIAL_VALUE = 0
 
-export function getTotalCategoryCount<Entry extends EntryWithCount>(
+export function sumObjectCounts<Entry extends EntryWithCount>(
   entriesWithCount: Array<Entry>,
 ) {
   return entriesWithCount.reduce(
