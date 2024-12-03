@@ -4,14 +4,14 @@ created-on: 2024-12-01T18:20:00.000Z
 updated-on: 2024-12-01T18:20:00.000Z
 published-on: 2024-12-01T18:20:00.000Z
 category: reports
-description: "Check out the latest updates about what Filecoin Foundation has been up to. "
+description: "Check out the latest updates about what Filecoin Foundation has been up to."
 image:
   src: /assets/images/fresh-from-ff-december-2024.webp
 seo:
   twitter:
     card: summary
   description: "Check out the latest updates about what Filecoin Foundation has
-    been up to. "
+    been up to."
 ---
 
 **On stage at FIL Bangkok, teams unveiled new L2 data storage solutions,** signaling a new era of what’s possible with Filecoin by extending the network's capabilities. Akave, a decentralized, modular L2 solution offering cutting-edge encryption, [announced the launch of its Yucca testnet](https://www.akave.ai/blog/akave-secures-3-45-million-to-accelerate-on-chain-data-management). Storacha, a high-performance decentralized storage solution built with Filecoin, [launched its closed alpha network tailored](https://medium.com/@storacha/storachas-alpha-network-ignites-unleashing-decentralized-hot-storage-on-filecoin-bddad58bd1be) for gaming, AI, and DePIN networks. [Read more about the latest L2 announcements](/blog/filecoin-ecosystem-teams-unveil-l2s) on our blog.
