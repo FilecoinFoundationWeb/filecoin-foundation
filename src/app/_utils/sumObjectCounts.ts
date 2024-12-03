@@ -1,14 +1,14 @@
-type EntryWithCount = {
+type WithCount = {
   count: number
 }
 
 const COUNT_INITIAL_VALUE = 0
 
-export function sumObjectCounts<Entry extends EntryWithCount>(
-  entriesWithCount: Array<Entry>,
+export function sumObjectCounts<AnyObject extends WithCount>(
+  objectsWithCount: Array<AnyObject>,
 ) {
-  return entriesWithCount.reduce(
-    (sum, entry) => sum + entry.count,
+  return objectsWithCount.reduce(
+    (sum, object) => sum + object.count,
     COUNT_INITIAL_VALUE,
   )
 }
