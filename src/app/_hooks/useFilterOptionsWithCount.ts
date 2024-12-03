@@ -9,18 +9,18 @@ import {
 } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getTotalCategoryCount } from '@/utils/getTotalCategoryCount'
 
-type UseCategoryCountProps<Entry extends Object> =
+type UseFilterOptionsWithCountProps<Entry extends Object> =
   CMSFieldOptionsAndValidIdsParams & {
     allOption: AllFiltersOptionType
     entries: Array<Entry>
   }
 
-export function useCategoryOptionsWithCount<Entry extends Object>({
+export function useFilterOptionsWithCount<Entry extends Object>({
   collectionName,
   fieldName,
   allOption,
   entries,
-}: UseCategoryCountProps<Entry>) {
+}: UseFilterOptionsWithCountProps<Entry>) {
   const { options } = getCMSFieldOptionsAndValidIds({
     collectionName,
     fieldName,
@@ -46,5 +46,5 @@ export function useCategoryOptionsWithCount<Entry extends Object>({
     return [allOptionWithCount, ...optionsWithCount]
   }, [allOption, optionsWithCount])
 
-  return { categoryOptionsWithCount: optionsWithAllAndCount }
+  return optionsWithAllAndCount
 }

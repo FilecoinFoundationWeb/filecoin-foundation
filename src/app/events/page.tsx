@@ -19,8 +19,8 @@ import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategoryOptionsWithCount } from '@/hooks/useCategoryOptionsWithCount'
 import { useFilter } from '@/hooks/useFilter'
+import { useFilterOptionsWithCount } from '@/hooks/useFilterOptionsWithCount'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -102,7 +102,7 @@ export default function Events({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
-  const { categoryOptionsWithCount } = useCategoryOptionsWithCount({
+  const categoryOptionsWithCount = useFilterOptionsWithCount({
     collectionName: 'event_entries',
     fieldName: 'category',
     allOption: ALL_CATEGORIES_OPTION,
