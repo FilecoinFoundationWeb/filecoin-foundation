@@ -2,8 +2,8 @@
 
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
+import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
-import { z } from 'zod'
 
 import type { CategoryMap } from '@/types/categoryTypes'
 
@@ -20,12 +20,17 @@ import { FormLabel } from '@/components/Form/FormLabel'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
+  ALLOWED_IMAGE_FORMATS,
   BRIEF_CHARACTER_LIMIT,
   MAX_FILE_SIZE_IN_BYTES,
   NETWORK_USE_CASE_CHARACTER_LIMIT,
 } from '../constants'
 import { useSubmitEcosystemProjectForm } from '../hooks/useSubmitEcosystemProjectForm'
 import { EcosystemProjectFormSchema } from '../schema/EcosystemProjectFormSchema'
+import type {
+  EcosystemProjectFormData,
+  EcosystemProjectFormDataWithoutLogo,
+} from '../types'
 import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
@@ -33,14 +38,10 @@ import { FormSection } from './FormSection'
 
 type StringOrUndefined = string | undefined
 
-export type EcosystemProjectFormData = z.infer<
-  typeof EcosystemProjectFormSchema
->
-
 type ProjectFormProps = {
   categoryData: CategoryMap
   subCategoryData: CategoryMap
-  initialValues: EcosystemProjectFormData
+  initialValues: EcosystemProjectFormDataWithoutLogo
 }
 
 export function EcosystemProjectForm({
@@ -87,17 +88,14 @@ export function EcosystemProjectForm({
 
       <FormSection title="Project Details">
         <ControlledFormInput<EcosystemProjectFormData>
-          name="projectName"
+          name="title"
           label="Project Name"
           placeholder="Project Name"
           disabled={isSubmitting}
         />
 
         <Field className={formFieldStyle}>
-          <FormLabel
-            label="Which technology does your project utilize?"
-            as="p"
-          />
+          <FormLabel label="Which technology does your project use?" as="p" />
           <div className="flex flex-col gap-4">
             <ControlledFormCheckbox<EcosystemProjectFormData>
               name="tech.filecoin"
@@ -116,7 +114,7 @@ export function EcosystemProjectForm({
         <ControlledFormListbox<EcosystemProjectFormData>
           name="yearJoined"
           label="What year did your project start using Filecoin or IPFS?"
-          placeholder="Select year"
+          placeholder="Select Year"
           options={yearOptions}
           disabled={isSubmitting}
           buttonWidth="w-40"
@@ -132,7 +130,8 @@ export function EcosystemProjectForm({
 
         <ControlledFormTextarea<EcosystemProjectFormData>
           name="networkUseCase"
-          label="How do you use the Filecoin Network?"
+          label="How does your project use the Filecoin network?"
+          description="You can use Markdown in this field."
           placeholder="Describe how your project uses the Filecoin network..."
           characterLimit={NETWORK_USE_CASE_CHARACTER_LIMIT}
           disabled={isSubmitting}
@@ -143,16 +142,16 @@ export function EcosystemProjectForm({
             <ControlledFormListbox<EcosystemProjectFormData>
               name="category"
               label="Category"
-              placeholder="Select category"
+              placeholder="Select Category"
               options={categoryOptions}
               disabled={isSubmitting}
             />
           </div>
           <div className="min-w-0 sm:w-1/2">
             <ControlledFormListbox<EcosystemProjectFormData>
-              name="topic"
-              label="Topic"
-              placeholder="Select topic"
+              name="subcategory"
+              label="Subcategory"
+              placeholder="Select Subcategory"
               options={subCategoryOptions}
               disabled={isSubmitting}
               optionsPosition="bottom end"
@@ -161,16 +160,16 @@ export function EcosystemProjectForm({
         </div>
 
         <ControlledFormFileInput<EcosystemProjectFormData>
-          name="files"
-          label="Choose a Logo for your project"
-          accept={['.png', '.jpg', '.svg', '.webp']}
+          name="logo"
+          label="Choose a logo for your project"
+          accept={ALLOWED_IMAGE_FORMATS}
           maxSize={MAX_FILE_SIZE_IN_BYTES}
           disabled={isSubmitting}
           description={
             <>
               For best quality, please submit a white logo with a transparent
-              background, at least 1000px by 1000px, and under 100KB. You can
-              use tools like{' '}
+              background, at least 1000px by 1000px, and under{' '}
+              {prettyBytes(MAX_FILE_SIZE_IN_BYTES)}. You can use tools like{' '}
               <ExternalTextLink
                 href="https://squoosh.app/"
                 target="_blank"
@@ -194,7 +193,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="youtubeUrl"
-          label="Youtube Video URL"
+          label="YouTube video URL"
           placeholder="Video URL"
           type="url"
           disabled={isSubmitting}
@@ -203,7 +202,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="githubUrl"
-          label="GitHub Repository URL"
+          label="GitHub repository URL"
           placeholder="GitHub Repository URL"
           type="url"
           disabled={isSubmitting}
@@ -212,7 +211,7 @@ export function EcosystemProjectForm({
         <ControlledFormInput<EcosystemProjectFormData, StringOrUndefined>
           addOptionalToLabel
           name="xUrl"
-          label="X (Twitter) Profile URL"
+          label="X (Twitter) profile URL"
           placeholder="X (Twitter) Profile URL"
           type="url"
           disabled={isSubmitting}

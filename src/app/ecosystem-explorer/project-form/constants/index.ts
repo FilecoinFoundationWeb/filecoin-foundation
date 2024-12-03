@@ -8,3 +8,11 @@ export const YOUTUBE_EMBED_BASE_URL = 'https://www.youtube.com/embed/'
 export const GITHUB_BASE_URL = 'https://github.com/'
 export const X_BASE_URL = 'https://x.com/'
 export const TWITTER_BASE_URL = 'https://twitter.com/'
+
+export const ALLOWED_IMAGE_FORMATS = [
+  '.png',
+  '.jpg',
+  '.jpeg',
+  '.svg',
+  '.webp',
+] as const

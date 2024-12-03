@@ -1,6 +1,6 @@
 import { Octokit } from '@octokit/rest'
 
-import { repoConfig } from '../config/repoConfig'
+import { repoConfig } from '../repoConfig'
 
 import { createBranch } from './createBranch'
 

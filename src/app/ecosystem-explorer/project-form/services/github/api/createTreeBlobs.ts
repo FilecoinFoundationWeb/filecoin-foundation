@@ -1,6 +1,6 @@
 import { Octokit, type RestEndpointMethodTypes } from '@octokit/rest'
 
-import { repoConfig } from '../config/repoConfig'
+import { repoConfig } from '../repoConfig'
 
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 

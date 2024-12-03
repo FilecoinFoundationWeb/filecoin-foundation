@@ -15,6 +15,7 @@ export function FormInput({
   hideLabel,
   addOptionalToLabel,
   error,
+  description,
   ...rest
 }: FormInputProps) {
   return (
@@ -23,6 +24,7 @@ export function FormInput({
       hideLabel={hideLabel}
       addOptionalToLabel={addOptionalToLabel}
       error={error}
+      description={description}
     >
       <Input
         {...rest}

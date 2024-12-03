@@ -4,17 +4,17 @@ import { Label } from '@headlessui/react'
 import { clsx } from 'clsx'
 
 export type FormLabelProps = {
+  as?: ElementType
   label: string
   hideLabel?: boolean
   addOptionalToLabel?: boolean
-  as?: ElementType
 }
 
 export function FormLabel({
+  as = 'label',
   label,
   hideLabel = false,
   addOptionalToLabel = false,
-  as = 'label',
   ...rest
 }: FormLabelProps) {
   return (
@@ -22,7 +22,7 @@ export function FormLabel({
       {...rest}
       as={as}
       className={clsx(
-        'inline-block text-base font-bold capitalize text-brand-100',
+        'inline-block text-base font-bold text-brand-100',
         hideLabel && 'sr-only',
       )}
     >

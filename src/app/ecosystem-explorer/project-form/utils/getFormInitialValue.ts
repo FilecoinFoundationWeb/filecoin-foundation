@@ -1,19 +1,18 @@
-import type { EcosystemProjectFormData } from '../components/EcosystemProjectForm'
+import type { EcosystemProjectFormDataWithoutLogo } from '../types'
 
 const unselectedOption = { id: '', name: '' }
 
-export function getFormInitialValue(): EcosystemProjectFormData {
+export function getFormInitialValue(): EcosystemProjectFormDataWithoutLogo {
   return {
     name: '',
     email: '',
-    projectName: '',
+    title: '',
     tech: { filecoin: false, ipfs: false },
     yearJoined: unselectedOption,
     briefSummary: '',
     networkUseCase: '',
     category: unselectedOption,
-    topic: unselectedOption,
-    files: [],
+    subcategory: unselectedOption,
     websiteUrl: '',
   }
 }
