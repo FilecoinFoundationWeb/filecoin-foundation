@@ -5,8 +5,8 @@ import { useQueryState, parseAsString } from 'nuqs'
 import { ALL_CATEGORIES_OPTION } from '@/constants/categoryConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
-import { CategoryListbox } from '@/components/CategoryListbox'
 import { CategorySidebar } from '@/components/CategorySidebar'
+import { FilterListbox } from '@/components/FilterListbox'
 import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 type CategoryProps = {
@@ -38,7 +38,7 @@ export function Category({ options }: CategoryProps) {
         />
       </div>
       <div className="block lg:hidden">
-        <CategoryListbox
+        <FilterListbox
           selected={selectedCategory}
           options={options}
           onChange={handleChange}
