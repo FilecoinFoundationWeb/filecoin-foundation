@@ -1,4 +1,4 @@
-import type { ALL_CATEGORIES_ID } from '@/constants/filterConstants'
+import type { ALL_FILTERS_ID } from '@/constants/filterConstants'
 
 export type CategoryId = string
 export type CategoryMap = Record<string, string>
@@ -20,7 +20,7 @@ export type CMSCategoryFieldMapping = {
   events: CMSCategoryField
 }
 
-export type AllCategoriesOptionType = {
-  id: typeof ALL_CATEGORIES_ID
+export type AllFiltersOptionType = {
+  id: typeof ALL_FILTERS_ID
   name: string
 }
