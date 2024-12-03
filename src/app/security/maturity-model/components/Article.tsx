@@ -1,6 +1,6 @@
 'use client'
 
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 import Link from 'next/link'
 
@@ -10,40 +10,40 @@ import { useIntersectionObserver } from 'usehooks-ts'
 
 import { Icon } from '@/components/Icon'
 
-import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
 type ArticleProps = {
   title: string
   slug: string
   children: React.ReactNode
+  setRef: (slug: string, element: HTMLElement | null) => void
+  scrollToSection: (slug: string) => void
 } & React.ComponentPropsWithoutRef<'article'>
 
-function ArticleComponent(
-  { title, slug, children }: ArticleProps,
-  ref: React.ForwardedRef<HTMLElement>,
-) {
+export function Article({
+  title,
+  slug,
+  children,
+  setRef,
+  scrollToSection,
+}: ArticleProps) {
   const { updateHash, clearHashIfPresent, getHashFromSlug } = useUrlHash()
 
-  const { ref: observerRef } = useIntersectionObserver({
+  const { ref: setHookRef } = useIntersectionObserver({
     onChange: (isIntersecting) => {
       isIntersecting ? updateHash(slug) : clearHashIfPresent(slug)
     },
   })
 
-  const isRefObject = ref && 'current' in ref
-
-  function combinedRef(node: HTMLElement | null) {
-    if (isRefObject) {
-      ref.current = node
-    }
-    observerRef(node)
+  function setRefs(node: HTMLElement | null) {
+    setRef(slug, node)
+    setHookRef(node)
   }
 
   const sectionHash = getHashFromSlug(slug)
 
   return (
-    <article ref={combinedRef}>
+    <article ref={setRefs}>
       <h3 id={slug}>
         <Link
           href={sectionHash as Route}
@@ -51,9 +51,7 @@ function ArticleComponent(
           style={{ fontWeight: 'inherit' }}
           onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
             e.preventDefault()
-            if (isRefObject) {
-              scrollToSection({ sectionRef: ref })
-            }
+            scrollToSection(slug)
           }}
         >
           {title}
@@ -66,5 +64,3 @@ function ArticleComponent(
     </article>
   )
 }
-
-export const Article = forwardRef<HTMLElement, ArticleProps>(ArticleComponent)

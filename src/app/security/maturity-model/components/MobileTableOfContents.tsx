@@ -1,5 +1,7 @@
 'use client'
 
+import { useMemo } from 'react'
+
 import { Listbox as HeadlessUIListbox } from '@headlessui/react'
 
 import { ListboxButton } from '@/components/Listbox/ListboxButton'
@@ -9,22 +11,28 @@ import {
 } from '@/components/Listbox/ListboxOption'
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
-import { coreFunctionsData } from '../data/coreFunctionsData'
-import type { SectionRefsProps } from '../types/sectionRefsTypes'
-import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
-const options = coreFunctionsData.map(({ slug, title }) => ({
-  id: slug,
-  name: title,
-}))
+import type { DataWithRef } from './TableOfContents'
 
-const firstOption = options[0]
+type MobileTableOfContentsProps = {
+  data: Array<DataWithRef>
+  scrollToSection: (slug: string) => void
+}
 
-export function MobileTableOfContents({ sectionRefs }: SectionRefsProps) {
+export function MobileTableOfContents({
+  data,
+  scrollToSection,
+}: MobileTableOfContentsProps) {
   const { isSectionActive, updateHash } = useUrlHash()
+
+  const options = useMemo(
+    () => data.map(({ slug, title }) => ({ id: slug, name: title })),
+    [data],
+  )
+
   const selectedOption =
-    options.find((option) => isSectionActive(option.id)) || firstOption
+    options.find((option) => isSectionActive(option.id)) || options[0]
 
   return (
     <nav aria-label="Table of Contents" className="w-full max-w-sm">
@@ -44,8 +52,6 @@ export function MobileTableOfContents({ sectionRefs }: SectionRefsProps) {
 
   function scrollToActiveSection(option: OptionType) {
     updateHash(option.id)
-
-    const sectionRef = sectionRefs[option.id]
-    scrollToSection({ sectionRef })
+    scrollToSection(option.id)
   }
 }
