@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import type { AllFiltersOptionType } from '@/types/categoryTypes'
+import type { AllFiltersOptionType } from '@/types/filterTypes'
 import { type Object } from '@/types/utils'
 
 import {
