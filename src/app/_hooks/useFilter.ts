@@ -10,15 +10,15 @@ type WithCategory = {
   category: string
 }
 
-export type UseCategoryProps<Entry extends WithCategory> = {
+export type UseFilterProps<Entry extends WithCategory> = {
   searchParams: NextServerSearchParams
   entries: Array<Entry>
 }
 
-export function useCategory<Entry extends WithCategory>({
+export function useFilter<Entry extends WithCategory>({
   searchParams,
   entries,
-}: UseCategoryProps<Entry>) {
+}: UseFilterProps<Entry>) {
   const normalizedQuery = normalizeQueryParam(searchParams, CATEGORY_KEY)
 
   const filteredEntries = useMemo(() => {

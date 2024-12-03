@@ -18,8 +18,8 @@ import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
 import { useCategoryOptionsWithCount } from '@/hooks/useCategoryOptionsWithCount'
+import { useFilter } from '@/hooks/useFilter'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -85,7 +85,7 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { filteredEntries } = useCategory({
+  const { filteredEntries } = useFilter({
     searchParams,
     entries: sortedResults,
   })
