@@ -5,7 +5,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { ALL_CATEGORIES_OPTION } from '@/constants/categoryConstants'
+import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'

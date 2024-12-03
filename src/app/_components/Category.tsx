@@ -2,7 +2,7 @@
 
 import { useQueryState, parseAsString } from 'nuqs'
 
-import { ALL_CATEGORIES_OPTION } from '@/constants/categoryConstants'
+import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { CategorySidebar } from '@/components/CategorySidebar'

@@ -1,4 +1,4 @@
-import type { ALL_CATEGORIES_ID } from '@/constants/categoryConstants'
+import type { ALL_CATEGORIES_ID } from '@/constants/filterConstants'
 
 export type CategoryId = string
 export type CategoryMap = Record<string, string>
