@@ -13,7 +13,7 @@ subcategories:
 description: University of Utah’s Center for Extreme Data Management Analysis
   and Visualization works with Filecoin SP Seal Storage to store scientific
   research data.
-website: http://cedmav.org/
+website: https://cedmav.sci.utah.edu/
 tech:
   - filecoin
   - ipfs
