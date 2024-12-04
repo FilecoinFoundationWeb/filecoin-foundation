@@ -5,9 +5,11 @@ import {
   ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
   PATHS,
 } from '@/constants/paths'
+import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
+import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
@@ -16,6 +18,7 @@ import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
@@ -55,13 +58,30 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
 
   const initialValues = getFormInitialValue()
 
+  function appendCtaToDescription(description: string) {
+    return (
+      <>
+        {description} To update an existing project, send an email to{' '}
+        <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.ecosystem.email.href}>
+          {extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}
+        </ExternalTextLink>
+        .
+      </>
+    )
+  }
+
+  const descriptionWithCta = [
+    appendCtaToDescription(header.description[0]),
+    ...[header.description[1]],
+  ]
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
 
       <div className="space-y-4 md:max-w-readable">
         <PageHeader.Title>{header.title}</PageHeader.Title>
-        <DescriptionText>{header.description}</DescriptionText>
+        <DescriptionText>{descriptionWithCta}</DescriptionText>
       </div>
 
       <EcosystemProjectForm

@@ -3,7 +3,7 @@ header:
   title: "Add a Project"
   description:
     [
-      "Let's get started with some basic information about what you're building. Please submit your project to the Filecoin ecosystem page below. To update an existing project, send an email to info@fil.org.",
+      "Let's get started with some basic information about what you're building. Please submit your project to the Filecoin ecosystem page below.",
       "Want to be a featured project? Share your project page on X, tag @filfoundation, and you'll be considered!",
     ]
 seo:
