@@ -119,7 +119,7 @@ As the network welcomes new builders and wider adoption, FF introduced three com
 
 - [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
 - [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.
-- [The DCWG](dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
+- [The DCWG](mailto:dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
 
 ![](/assets/images/fip.webp)
 
