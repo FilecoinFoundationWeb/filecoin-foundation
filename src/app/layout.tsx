@@ -26,7 +26,12 @@ export type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <NuqsAdapter>
-      <PlausibleProvider domain="fil.org">
+      <PlausibleProvider
+        trackOutboundLinks
+        hash
+        trackFileDownloads
+        domain="fil.org"
+      >
         <SiteLayout>
           {children}
           <SpeedInsights />
