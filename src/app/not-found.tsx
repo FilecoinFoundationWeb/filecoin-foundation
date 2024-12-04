@@ -1,6 +1,6 @@
 import ErrorMessage from '@/components/ErrorMessage'
 
-import NotFoundAnalytics from './not-found-analytics'
+import { NotFoundAnalytics } from './not-found-analytics'
 
 export default function NotFound() {
   return (
