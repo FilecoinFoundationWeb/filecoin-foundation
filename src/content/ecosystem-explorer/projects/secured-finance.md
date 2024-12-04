@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1/Gt/BXXDMjyCCUTRByyhw5DQbnykMUhLk=
 image:
   src: /assets/images/660732963cc8098d637f66b8_securedfinance.png
 category: tooling-productivity
-subcategories:
-  - bridges-oracles
+subcategory: bridges-oracles
 description: Interbank-grade P2P Capital Markets Protocol
 website: https://secured-finance.com/
 tech:

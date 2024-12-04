@@ -17,8 +17,7 @@ featured-content: "https://medium.com/livepeer-blog/video-streaming-with-fvm-and
 repo: "https://github.com/livepeer/org"
 twitter: "https://twitter.com/Livepeer"
 year-joined: 2024-01-19T18:26:58.022Z
-subcategories:
-  - photo-video
+subcategory: photo-video
 seo:
   description: Livepeer provides decentralized video streaming and transcoding services.
 email: encrypted::U2FsdGVkX1+7C08nY4YK4u/a3fURsuxiOoQoFXGv1Ba+1hYOa/YD1aMoViMg4Q/A

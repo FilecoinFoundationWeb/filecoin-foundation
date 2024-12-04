@@ -16,8 +16,7 @@ website: https://gainforest.earth
 featured-content: https://green.filecoin.io/web3-and-the-sustainable-data-movement/
 repo: https://github.com/gainforest
 twitter: https://twitter.com/GainForestNow
-subcategories:
-  - climate
+subcategory: climate
 seo:
   description:
     Gainforest provides decentralized solutions for climate impact monitoring

@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX18o8O8K0W6UJR9N1GBZgVB65w3WIqpwV/o=
 image:
   src: /assets/images/blocz.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: 5G, edge, private cloud, cloud backup, disaster recovery, cloud
   migrations, and complex secure data storage solutions.
 website: https://www.blocz.io/

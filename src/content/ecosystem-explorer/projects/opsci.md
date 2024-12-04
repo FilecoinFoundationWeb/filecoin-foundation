@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX18w2G9/+nbd7ASxWTyqNSbDXL6AiQ3N40k=
 image:
   src: /assets/images/6597519ebea972da31ebe933_opsci_clear-withtext_666x206.png
 category: science-climate-space
-subcategories:
-  - decentralized-science
+subcategory: decentralized-science
 description: Opscientia (OpSci) is an open source DeSci project leveraging the
   power of Web3 to grow, sustain, and continuously improve decentralized
   science.

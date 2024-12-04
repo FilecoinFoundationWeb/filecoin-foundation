@@ -6,8 +6,7 @@ published-on: 2024-04-25T17:21:06.448Z
 image:
   src: /assets/images/solmedia.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Decentralized content sharing platform on Solana, integrating both
   Solana and Filecoin on-chain IPFS technology.
 website: https://sm.network

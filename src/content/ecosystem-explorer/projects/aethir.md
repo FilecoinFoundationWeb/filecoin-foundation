@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX18VOu5kZJIT+zS0M45M65W92p3FHH5vm24=
 image:
   src: /assets/images/aethir.png
 category: artificial-intelligence
-subcategories:
-  - infrastructure
+subcategory: infrastructure
 description: Aethir is revolutionizing DePIN with its advanced, distributed enterprise-grade GPU-based compute infrastructure tailored for AI and gaming.
 website: https://aethir.com/
 tech:

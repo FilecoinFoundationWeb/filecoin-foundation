@@ -6,8 +6,7 @@ published-on: 2024-03-29T21:36:57.674Z
 image:
   src: /assets/images/basic-beasts-logo.webp
 category: media-entertainment
-subcategories:
-  - arts-collectibles-nfts
+subcategory: arts-collectibles-nfts
 description: A fully on-chain interactive Pokémon-inspired NFT collectibles game.
 website: https://www.basicbeasts.io/
 tech:
