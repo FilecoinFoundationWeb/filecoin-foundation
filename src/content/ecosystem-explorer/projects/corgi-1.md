@@ -15,8 +15,7 @@ website: "https://filecorgi.xyz/"
 repo: "https://github.com/CORGIFILE/whitepaper"
 twitter: "https://twitter.com/file_corgi"
 year-joined: 2024-02-28T23:14:40.521000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Corgi provides decentralized storage solutions for digital assets.
 email: encrypted::U2FsdGVkX1/d8gW0Rk+DXRqkr430QiMckgPA0WmNqsyGnVBsOw40QsXnEHbbM/Y/

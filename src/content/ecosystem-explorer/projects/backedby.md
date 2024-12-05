@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX19+pN6GgaANY6kTmkcXljyxjtk9Yd9soEQ=
 image:
   src: /assets/images/backedby.webp
 category: tooling-productivity
-subcategories:
-  - dapp
+subcategory: dapp
 description: Bankless, Decentralized, Privacy-First content subscription
   protocol for creators.
 website: https://backed.by/

@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX183Q7ymgvNdRvhHklXvolp8gxFav33VCqI=
 image:
   src: /assets/images/nuklai.png
 category: artificial-intelligence
-subcategories:
-  - ai-productivity-utilities
+subcategory: ai-productivity-utilities
 description: ‍‍Nuklai is a collaborative data ecosystem and infrastructure provider for private data networks.
 website: https://www.nukl.ai/
 tech:

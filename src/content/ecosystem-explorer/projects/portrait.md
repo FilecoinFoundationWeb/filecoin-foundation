@@ -15,8 +15,7 @@ image:
 website: "https://portrait.gg/"
 repo: "https://github.com/portraitgg"
 twitter: "https://twitter.com/portrait_gg"
-subcategories:
-  - arts-collectibles-nfts
+subcategory: arts-collectibles-nfts
 seo:
   description: Portrait offers decentralized solutions for digital art and collectibles.
 email: encrypted::U2FsdGVkX18vbGYF+gpIkqlHJrTU2svRzzPEssOkpdOD/FLX62+tW9u3VoPp1V1w

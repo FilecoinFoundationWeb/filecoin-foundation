@@ -15,8 +15,7 @@ image:
 website: "https://oceanprotocol.com"
 repo: "https://github.com/oceanprotocol"
 twitter: "https://twitter.com/oceanprotocol"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Ocean Protocol provides decentralized data exchange solutions.
 email: encrypted::U2FsdGVkX18Crb/AqRAtk/DeYxTNmJu9WblBAyKmVnZ9LEuLIzEXv5pr1grcW5cE

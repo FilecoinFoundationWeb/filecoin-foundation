@@ -15,8 +15,7 @@ image:
 website: https://www.numbersprotocol.io/
 repo: "https://github.com/numbersprotocol"
 twitter: "https://twitter.com/numbersprotocol"
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 seo:
   description:
     Numbers Protocol offers decentralized solutions for digital asset verification

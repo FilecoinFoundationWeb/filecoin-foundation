@@ -6,8 +6,7 @@ published-on: 2024-04-16T20:04:49.422Z
 image:
   src: /assets/images/pyth.png
 category: tooling-productivity
-subcategories:
-  - bridges-oracles
+subcategory: bridges-oracles
 description: First-party financial data oracle network that delivers low-latency
   price data for various assets to blockchains securely.
 website: https://pyth.network/

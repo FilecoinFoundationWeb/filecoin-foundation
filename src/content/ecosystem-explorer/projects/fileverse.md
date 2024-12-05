@@ -16,8 +16,7 @@ website: "https://fileverse.io"
 featured-content: "https://www.youtube.com/watch?v=-RTvaZVSzi0&list=PL_0VrY55uV1_B19kuAg-ExQ-Wa2d1hCbf&index=5"
 repo: https://github.com/fileverse
 twitter: https://twitter.com/fileverse
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Fileverse provides decentralized storage solutions for the metaverse.
 email: encrypted::U2FsdGVkX19VhJszfn2ttbAeReEqdZeEksZoFEPcSq6a73O6iJ2txOd0iR/HuBWj

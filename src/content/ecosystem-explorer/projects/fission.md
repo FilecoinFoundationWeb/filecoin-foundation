@@ -15,8 +15,7 @@ image:
 website: https://github.com/fission-codes
 repo: https://github.com/fission-codes
 twitter: https://twitter.com/FISSIONcodes
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Fission provides decentralized storage and application hosting solutions.
 email: encrypted::U2FsdGVkX1+X69CsepI1J7d6qauqnoUBbqIFNPpq9AbpaxDpwiz2lGjqnSugDH5i
