@@ -12,8 +12,7 @@ image:
 website: https://hamsternet.io/
 twitter: https://twitter.com/Hamsternetio
 year-joined: 2024-03-29T21:28:51.960000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Hamster offers decentralized storage solutions for personal and enterprise

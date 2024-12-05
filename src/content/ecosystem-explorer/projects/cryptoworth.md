@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX19FDqUbhydWqTaOfRhRgdzhnV/ZTqBf30A=
 image:
   src: /assets/images/cw-logo-square-1-.png
 category: tooling-productivity
-subcategories:
-  - developer-tools
+subcategory: developer-tools
 description: Helps businesses of all sizes to automate their back-office crypto
   accounting tasks.
 website: https://Cryptoworth.com

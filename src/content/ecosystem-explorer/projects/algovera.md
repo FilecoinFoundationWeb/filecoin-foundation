@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1+es4h7OpJH72NG6k+RJwO2N+suh7ukV7c=
 image:
   src: /assets/images/659872d2b2c229176c8ae210_algovera-whitebackground.png
 category: tooling-productivity
-subcategories:
-  - developer-tools
+subcategory: developer-tools
 description: Algovera is a collaboration platform for large language model
   applications, allowing users to build AI apps easily, quickly, and with
   no-code.

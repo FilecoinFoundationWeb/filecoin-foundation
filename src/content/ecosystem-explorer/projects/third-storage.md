@@ -14,8 +14,7 @@ image:
 website: https://thirdstorage.com
 twitter: https://twitter.com/thirdstorage
 year-joined: 2024-03-29T21:28:55.910000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Third Storage provides decentralized storage solutions for digital

@@ -14,8 +14,7 @@ image:
   src: /assets/images/repl_logo_white.png
 website: "https://www.repl.fi/"
 twitter: "https://twitter.com/Repl_fi"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Repl provides decentralized solutions for data replication and storage

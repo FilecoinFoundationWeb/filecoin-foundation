@@ -15,8 +15,7 @@ image:
 website: https://saturn.tech
 repo: https://github.com/filecoin-saturn/L1-node
 year-joined: 2024-01-19T18:46:07.011000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Filecoin Saturn provides decentralized storage solutions for the Filecoin

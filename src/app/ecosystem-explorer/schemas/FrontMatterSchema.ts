@@ -8,7 +8,7 @@ import { ProjectTechSchema } from './ProjectTechSchema'
 export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
-  subcategories: z.array(SubcategorySchema).nonempty(),
+  subcategory: SubcategorySchema,
   description: z.string(),
   tech: ProjectTechSchema,
   website: z.string().url().optional(),
@@ -20,4 +20,8 @@ export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   content: z.string().optional(),
   email: z.string(),
   'full-name': z.string(),
-}).strict()
+})
+  .strict()
+  .transform(function temporaryForBackwardCompatibility(data) {
+    return { ...data, subcategories: [data.subcategory] }
+  })

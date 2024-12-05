@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1/87p/osN2ZhIDELEOR4uzls2SFOaG1jAg=
 image:
   src: /assets/images/ahdx-update-3-2-.png
 category: education-academia-health
-subcategories:
-  - health
+subcategory: health
 description: We offer a decentralized patient health data marketplace, which
   allows organizations and patients to securely share or monetize health
   information.

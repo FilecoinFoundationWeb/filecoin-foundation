@@ -6,8 +6,7 @@ published-on: 2024-04-03T16:51:43.478Z
 image:
   src: /assets/images/daln.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: A data DAO for monetizing credit card transaction data.
 website: https://app.daln.io/
 tech:

@@ -16,8 +16,7 @@ image:
 website: https://hrdag.org/
 featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/
 twitter: https://twitter.com/hrdag
-subcategories:
-  - social-impact
+subcategory: social-impact
 seo:
   description:
     HRDAG offers decentralized solutions for human rights data collection

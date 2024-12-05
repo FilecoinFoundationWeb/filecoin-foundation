@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX184FcByCGxPtRIezALp8wP/rCPdbGHbbCU=
 image:
   src: /assets/images/anytype.webp
 category: tooling-productivity
-subcategories:
-  - dapp
+subcategory: dapp
 description: Private, local-first, P2P computing no-code dapp to compose
   beautifully. Available on Mac, Windows, Linux, iOS & Android.
 website: https://anytype.io/

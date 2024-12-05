@@ -15,8 +15,7 @@ website: https://storage.titannet.io
 repo: https://github.com/Filecoin-Titan/titan-storage-sdk
 twitter: https://twitter.com/titannet_dao/
 year-joined: 2023-04-01T13:04:49.683000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Titan Storage provides decentralized storage solutions for enterprises.
 email: encrypted::U2FsdGVkX18mBGoTqKE0ibTQqDFTjVyE3Zo5Sv7GBqymDcIiKguyaaBn6rK6rcwO

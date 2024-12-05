@@ -12,8 +12,7 @@ image:
 website: https://ledgermail.io
 twitter: https://twitter.com/LedgerMail
 year-joined: 2024-03-29T21:28:53.257000Z
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 seo:
   description: LedgerMail provides decentralized email solutions for secure communication.
 email: encrypted::U2FsdGVkX18iOadodUmQTwBo3polIk4GmSp32kDDwIAPqQBZck15sx89IPPNzH/W

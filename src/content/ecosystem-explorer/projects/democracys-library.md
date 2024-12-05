@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1+xIf5e1L8cYtHBNtNlS8StJaIBpBxpjCI=
 image:
   src: /assets/images/democracys-library-logo.png
 category: public-goods-dweb
-subcategories:
-  - dweb
+subcategory: dweb
 description: The Internet Archive’s Democracy’s Library project is a free, open
   collection of government data and ensuring it remains permanently accessible.
 website: https://archive.org/details/democracys-library
