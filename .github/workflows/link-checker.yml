@@ -1,37 +1,22 @@
-name: Link Checker
+name: Check Broken Links
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: "0 4 * * 1" # 4 AM UTC (5 AM CET)
+    - cron: "0 2 * * 0"
+  workflow_dispatch:
 
 jobs:
-  cypress-weekly:
+  linkChecker:
     runs-on: ubuntu-latest
-
-    env:
-      AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.8.0
         with:
-          node-version: "20.11.1"
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Build Project
-        run: npm run build
-
-      - name: Start Server
-        run: |
-          npm start &
-          echo "Waiting for server to start..."
-          npx wait-on http://localhost:3000
-
-      - name: Run Weekly Cypress Test
-        run: npm run test:weekly_schedule
+          args: --accept 200,429,403 --timeout 60 --retry-wait-time 15 --max-retries 10 '**/*.md'
+          fail: true
