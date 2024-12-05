@@ -12,7 +12,7 @@ tech:
   - ipfs
 image:
   src: /assets/images/65974a282128bbdde2005e43_fission.png
-website: https://fission.codes
+website: https://github.com/fission-codes
 repo: https://github.com/fission-codes
 twitter: https://twitter.com/FISSIONcodes
 subcategory: data-storage-management
