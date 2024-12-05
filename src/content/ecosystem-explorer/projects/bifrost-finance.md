@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1+22QemtgvAFD5AshQ64ybkTaZZuWoAN80=
 image:
   src: /assets/images/660732908635f037e25b982f_bifrost.png
 category: finance
-subcategories:
-  - leasing
+subcategory: leasing
 description: Bifrost is a modular, scalable, non-custodial omnichain liquid
   staking parachain based on Polkadot.
 website: https://bifrost.finance/

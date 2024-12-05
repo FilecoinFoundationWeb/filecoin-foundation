@@ -12,8 +12,7 @@ image:
 website: https://www.quicknode.com/
 twitter: https://twitter.com/quicknode
 year-joined: 2024-03-29T21:28:54.885000Z
-subcategories:
-  - infrastructure
+subcategory: infrastructure
 seo:
   description:
     QuickNode provides decentralized solutions for blockchain infrastructure

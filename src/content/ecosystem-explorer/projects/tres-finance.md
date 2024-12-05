@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1/k5CFhUE0naIQa5r3L0qAdyZUG93tPGLw=
 image:
   src: /assets/images/tres_logo_white.png
 category: network
-subcategories:
-  - network-tools
+subcategory: network-tools
 description: TRES.Finance is an enterprise-grade accounting, audit, fund admin,
   and treasury management platform.
 website: https://tres.finance/

@@ -6,8 +6,7 @@ published-on: 2024-04-05T14:14:29.937Z
 image:
   src: /assets/images/vsharecloud.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Open-source distributed storage and computing platform.
 website: https://vshare.Cloud
 tech:

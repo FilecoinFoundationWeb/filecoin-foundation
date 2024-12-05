@@ -16,8 +16,7 @@ website: "https://proofmode.org"
 featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"
 repo: "https://github.com/guardianproject/proofmode-android "
 twitter: "https://twitter.com/guardianproject"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     ProofMode offers decentralized solutions for data verification and

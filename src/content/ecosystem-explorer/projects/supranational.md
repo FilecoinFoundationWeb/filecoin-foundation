@@ -18,8 +18,7 @@ featured-content: >-
 repo: "https://github.com/supranational"
 website: "https://www.supranational.net/"
 year-joined: 2024-01-11T13:26:59.787Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Supranational offers decentralized solutions for data security and

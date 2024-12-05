@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX18eII72dGIMNe87g8Da/YlS6O/suqfEpos=
 image:
   src: /assets/images/660732902f8beb060931f9cb_ceramic.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Portable User Storage for Dapps
 website: https://ceramic.network
 tech:

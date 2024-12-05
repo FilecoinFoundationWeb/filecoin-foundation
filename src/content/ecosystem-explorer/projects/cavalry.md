@@ -6,8 +6,7 @@ published-on: 2024-01-11T13:26:59.787Z
 email: encrypted::U2FsdGVkX1/5gRhQv6iIlbmJVgI3ZyfMs+N55wxLKsjq0fVzuKDB6p1ecApGha8d
 full-name: encrypted::U2FsdGVkX189dE98kDV2rGebkogRlBBjDDWCfXR3swA=
 category: tooling-productivity
-subcategories:
-  - developer-tools
+subcategory: developer-tools
 description: Cavalry is 2D animation software for Mac and Windows.
 website: https://cavalry.scenegroup.co
 tech:

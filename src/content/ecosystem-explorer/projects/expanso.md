@@ -14,8 +14,7 @@ image:
 website: https://expanso.io
 twitter: https://twitter.com/BacalhauProject
 year-joined: 2024-03-29T21:28:52.162000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Expanso provides decentralized storage solutions for data archiving
