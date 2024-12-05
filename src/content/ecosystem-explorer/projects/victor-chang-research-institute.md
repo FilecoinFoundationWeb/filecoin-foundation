@@ -17,8 +17,7 @@ website: "https://www.victorchang.edu.au/"
 featured-content: "https://destor.com/victor-chang-cardiac-research-institute-case-study"
 repo: "https://github.com/VCCRI"
 twitter: "https://twitter.com/VictorChangInst"
-subcategories:
-  - health
+subcategory: health
 seo:
   description:
     Victor Chang Research Institute provides decentralized solutions for

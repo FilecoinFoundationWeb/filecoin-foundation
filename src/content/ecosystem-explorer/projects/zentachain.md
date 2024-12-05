@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX18icPx50znCVZFlLpduqJGZlUFRhejCRWU=
 image:
   src: /assets/images/zentachain-white.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Privacy-focused IoT blockchain networking project that is focused
   on communication and data storage.
 website: https://zentachain.io/

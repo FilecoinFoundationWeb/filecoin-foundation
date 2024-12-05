@@ -12,8 +12,7 @@ image:
 website: https://app.lab.bio/experiments/new/protein-binder-design
 twitter: https://twitter.com/lab_dao
 year-joined: 2024-03-29T21:28:53.071000Z
-subcategories:
-  - decentralized-science
+subcategory: decentralized-science
 seo:
   description:
     LabDAO provides decentralized science solutions for data management

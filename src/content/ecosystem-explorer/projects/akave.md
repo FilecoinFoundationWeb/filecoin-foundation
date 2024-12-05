@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX196sGdmdztYGNHo1bHrpU62Ia1Q0+xGfiQ=
 image:
   src: /assets/images/primary_wht.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Akave is the first L2 storage chain, enabling on-chain data lakes
   for scalable and decentralized AI.
 website: https://www.akave.ai/

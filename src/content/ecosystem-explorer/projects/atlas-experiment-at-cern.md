@@ -16,8 +16,7 @@ image:
 website: "https://atlas.cern"
 featured-content: "https://www.sealstorage.io/blog/atlascern"
 twitter: "https://twitter.com/ATLASexperiment"
-subcategories:
-  - decentralized-science
+subcategory: decentralized-science
 seo:
   description: Explore the ATLAS Experiment at CERN using decentralized storage solutions.
 email: encrypted::U2FsdGVkX180yXAP8t71XhT8wj/uSaUpEhBy4q36CbXl7uTJlIhSMqHrZCO2L+VA

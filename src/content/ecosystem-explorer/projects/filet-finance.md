@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1+H3otR+zgxXJOE3zVpEGE9WjnbUMv+cck=
 image:
   src: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
 category: finance
-subcategories:
-  - leasing
+subcategory: leasing
 description: A trustworthy platform providing staking service stably.
 website: https://www.filet.finance
 tech:

@@ -6,8 +6,7 @@ published-on: 2024-04-05T01:47:43.298Z
 image:
   src: /assets/images/ethereum-name-service.png
 category: storage
-subcategories:
-  - infrastructure
+subcategory: infrastructure
 description: ENS support for Filecoin
 website: https://ens.domains/
 tech:

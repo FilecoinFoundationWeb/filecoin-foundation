@@ -14,8 +14,7 @@ image:
   src: /assets/images/6607367ee29bf508686a1043_metapals.png
 website: https://metapals.pet/
 year-joined: 2024-03-29T21:28:53.034000Z
-subcategories:
-  - dapp
+subcategory: dapp
 seo:
   description: MetaPals offers decentralized solutions for social networking and collaboration.
 email: encrypted::U2FsdGVkX18wp4ly7Gm4cBQk9+0iAt96/fuFy/IjPcA62lvqUlEf8WdvgNcgivI+

@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX19Qmkoardih0KK8A60gD2HZ/R8XEC5N4TQ=
 image:
   src: /assets/images/pad_logo_white.png
 category: tooling-productivity
-subcategories:
-  - dapp
+subcategory: dapp
 description: 3Pad is a trustless web3 platform that provides users with an
   WYSIWYG link page for building and managing their online presence by deploying
   their own Dapp.

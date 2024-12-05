@@ -8,8 +8,7 @@ description:
   and leveraged mining protocol launched on the Filecoin Virtual Machine (FVM). We
   aim to build the most decentralized staking ecosystem."
 category: tooling-productivity
-subcategories:
-  - dapp
+subcategory: dapp
 tech:
   - filecoin
 website: https://stfil.io/

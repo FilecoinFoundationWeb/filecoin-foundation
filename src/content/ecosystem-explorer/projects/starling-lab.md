@@ -16,8 +16,7 @@ image:
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.fastcompany.com/90731729/inside-starling-lab-a-moonshot-project-to-preserve-the-worlds-most-important-information"
 repo: "https://github.com/filecoin-project/starling"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Starling Lab offers decentralized solutions for digital archiving and

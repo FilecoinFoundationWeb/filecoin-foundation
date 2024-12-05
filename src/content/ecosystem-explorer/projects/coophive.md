@@ -14,8 +14,7 @@ website: https://www.coophive.network/
 repo: https://github.com/CoopHive/coophive
 twitter: https://twitter.com/coophive
 year-joined: 2024-04-24T19:28:43.576000Z
-subcategories:
-  - governance-daos-public-goods
+subcategory: governance-daos-public-goods
 seo:
   description:
     CoopHive offers decentralized solutions for cooperative management

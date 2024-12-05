@@ -69,8 +69,6 @@ Learn more at [retrieval.market](https://retrieval.market/).
 
 Compute-over-data (CoD) platforms, like Bacalhau, aim to shift computational resources to where data is stored, rather than moving data for processing. This approach, particularly when deployed on decentralized protocols like Filecoin, offers flexible and scalable solutions for data processing, providing more efficient alternatives to traditional centralized systems in the era of Big Data and AI.
 
-Learn more at [cod.cloud](https://www.cod.cloud/).
-
 **Interplanetary Consensus**
 
 The next frontier in Filecoin scalability is Interplanetary Consensus (IPC), unlocking unmatched capacity and customizability, and enabling new use cases.
