@@ -37,7 +37,7 @@ As of Q1 2024, 2,007 clients have onboarded datasets on Filecoin, with 508 large
 
 Data clients range from the [Democracy’s Library](/blog/democracy%E2%80%99s-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network) storing American presidential administration data collected by the Internet Archive, to [Solana’s](https://twitter.com/triton_one/status/1681761297170325506) archival of their chain state, to the [SETI Institute](https://destor.com/seti) storing astronomical research data. Explore other data clients with the [Filecoin Network Data Client Explorer](https://destor.com/en-us/filecoin-network-client-explorer).
 
-Interested in joining Filecoin Foundation’s (FF) Data Clients Working Group? Participants focus on sharing their data upload experiences, identifying hurdles and solutions for uploading data, and discussing how the Filecoin ecosystem can support data onboarding. To join, [drop us a note](mailto: dataclients@fil.org).
+Interested in joining Filecoin Foundation’s (FF) Data Clients Working Group? Participants focus on sharing their data upload experiences, identifying hurdles and solutions for uploading data, and discussing how the Filecoin ecosystem can support data onboarding. To join, [drop us a note](mailto:dataclients@fil.org).
 
 📝 **Over 3,400 unique smart contracts deployed on Filecoin, up 26% from last quarter.**
 

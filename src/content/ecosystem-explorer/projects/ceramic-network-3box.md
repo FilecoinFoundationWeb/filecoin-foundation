@@ -10,7 +10,7 @@ image:
 category: storage
 subcategory: data-storage-management
 description: Portable User Storage for Dapps
-website: https://ceramic.network/s
+website: https://ceramic.network
 tech:
   - ipfs
 twitter: https://twitter.com/ceramicnetwork

@@ -23,4 +23,4 @@ Belcher closed out the session with a statement about the value of privacy coins
 
 Marta was joined on the virtual stage by Chen Ared, COO of Solidus Labs; Craig Salm, vice president of legal at Grayscale Investments; and moderator Colin Harper of _CoinDesk_.
 
-To learn more, [read](https://www.coindesk.com/can-exchanges-privacy-coins-coexist) the _CoinDesk_ recap.
+To learn more, [read](https://www.coindesk.com/policy/2021/05/27/consensus-2021-can-privacy-coins-exchanges-and-regulators-coexist) the _CoinDesk_ recap.
