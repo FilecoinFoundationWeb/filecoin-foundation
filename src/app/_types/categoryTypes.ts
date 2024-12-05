@@ -1,5 +1,3 @@
-import type { ALL_CATEGORIES_ID } from '@/constants/categoryConstants'
-
 export type CategoryId = string
 export type CategoryMap = Record<string, string>
 
@@ -18,9 +16,4 @@ export type CMSCategoryFieldMapping = {
   blog: CMSCategoryField
   ecosystem: CMSCategoryField
   events: CMSCategoryField
-}
-
-export type AllCategoriesOptionType = {
-  id: typeof ALL_CATEGORIES_ID
-  name: string
 }
