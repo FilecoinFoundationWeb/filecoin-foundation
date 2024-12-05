@@ -29,8 +29,6 @@ This tutorial from Filecoin Developer [Pan Chasinga](https://pancy.medium.com/) 
 
 Although this tutorial is built for Flow blockchain, I am focusing on building up a general understanding of smart contracts and Non-fungible tokens (NFTs). If you have a working familiarity in JavaScript and React, but a passing familiarity with blockchains, you will be just fine catching up.
 
-If you are very new to the concept of smart contracts and NFTs, it’s worth checking out this [quick guide on NFT School](https://nftschool.dev/concepts/non-fungible-tokens/).
-
 # Set up
 
 Before we begin, you will need to install a few things:
@@ -429,5 +427,3 @@ Et voila! You have come very far and dare I say you are ready to start building 
 However, user experience is a crucial part in any app. It is more than likely that your users won’t be as proficient at the command line as you are. Moreover, it is a bit boring for an NFT store to have faceless NFTs. In the second part, we will start building the UI on top and using [nft.storage](https://nft.storage/) service to upload and store images of our NFTs instead of the command line using React.
 
 #### Check out Pan’s original tutorial.
-
-#### In a hurry to get to part 2? Find the [original version on NFT School](https://nftschool.dev/tutorial/flow-nft-marketplace/).

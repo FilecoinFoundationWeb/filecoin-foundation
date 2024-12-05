@@ -14,8 +14,7 @@ image:
   src: /assets/images/659751c70b1ecbf25f6faaf3_moca.png
 website: "https://museumofcryptoart.com"
 twitter: "https://twitter.com/MuseumofCrypto"
-subcategories:
-  - arts-collectibles-nfts
+subcategory: arts-collectibles-nfts
 seo:
   description:
     Museum of Crypto Art offers decentralized solutions for digital art

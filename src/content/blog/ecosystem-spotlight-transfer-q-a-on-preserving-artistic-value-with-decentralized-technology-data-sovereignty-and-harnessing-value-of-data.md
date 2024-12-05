@@ -38,7 +38,7 @@ Recently, we had an opportunity to talk with Kelani Nichole, Founder of TRANSFER
 
 The TRANSFER Data Trust aims to be a future-proofed method of thinking about data stewardship.
 
-With support from FF’s Dev Grant program, TRANSFER was able to build a [proof-of-concept prototype](https://transfer-trust.fission.app/) for the public-facing component. Working with another project in the Filecoin ecosystem, [Fission](https://fission.codes/), we built and deployed a decentralized catalog for works in the trust, which essentially makes an end-user a node in our decentralized data network, authenticating their browser as an access point, and delivering data from the decentralized web about the inventory of works available.
+With support from FF’s Dev Grant program, TRANSFER was able to build a [proof-of-concept prototype](https://transfer-trust.fission.app/) for the public-facing component. Working with another project in the Filecoin ecosystem, [Fission](https://github.com/fission-codes), we built and deployed a decentralized catalog for works in the trust, which essentially makes an end-user a node in our decentralized data network, authenticating their browser as an access point, and delivering data from the decentralized web about the inventory of works available.
 
 ![](https://lh7-us.googleusercontent.com/HLW1nVm4lBmb31IeL3Ph2sXq2-ueNSHlGynm9V34ePot3pXrTVBNJA1O2YPv4XOngmI9rxVQjqlLiMJ2l_rdZ78_2-JX94wEwWXOoAVPHGr0SVJDlMJv7Kv08ObYoi77P-0TEwYGFBpfFxK3DovFU6I)
 

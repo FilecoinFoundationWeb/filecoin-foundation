@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX19Kc1d9q0NVDP77BcNuxW1gst4ejjHp7jI=
 image:
   src: /assets/images/filfi_logo_white.png
 category: finance
-subcategories:
-  - leasing
+subcategory: leasing
 description: Filecoin’s first 100% smart contract managed storage node joint
   construction solution.
 website: https://filfi.io

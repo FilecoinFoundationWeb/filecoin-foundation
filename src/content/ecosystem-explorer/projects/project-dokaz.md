@@ -14,8 +14,7 @@ image:
   src: /assets/images/dokaz_logo_white.png
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Project Dokaz provides decentralized solutions for data verification

@@ -12,8 +12,7 @@ image:
 website: http://parasail.network/
 twitter: https://twitter.com/parasailnetwork
 year-joined: 2024-05-15T13:46:37.162000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Parasail offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18eNzdUFYfmb1TrvmJp8ctt02G7y8EvoDH3lxF9RmT2VBkak4VpQSp5

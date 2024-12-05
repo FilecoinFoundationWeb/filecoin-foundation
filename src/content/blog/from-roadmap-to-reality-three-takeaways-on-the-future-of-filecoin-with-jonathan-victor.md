@@ -49,7 +49,7 @@ Widening the aperture of what the Filecoin network can serve, retrieval markets 
 
 Compute
 
-Compute-over-data ([CoD](https://www.cod.cloud/)) platforms like [Bacalhau](https://www.bacalhau.org/) aim to shift computational resources to where data is stored, rather than moving data for processing. When deployed on decentralized protocols like Filecoin, this approach offers flexible solutions for data processing, providing efficient alternatives to traditional centralized systems in a world with Big Data and artificial intelligence.
+Compute-over-data (CoD) platforms like [Bacalhau](https://www.bacalhau.org/) aim to shift computational resources to where data is stored, rather than moving data for processing. When deployed on decentralized protocols like Filecoin, this approach offers flexible solutions for data processing, providing efficient alternatives to traditional centralized systems in a world with Big Data and artificial intelligence.
 
 Scale
 

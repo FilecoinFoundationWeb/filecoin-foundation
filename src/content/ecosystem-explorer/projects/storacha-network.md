@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1/WiIexgdD/uiEFGR3oWQdq1JHGTYXKQ9Q=
 image:
   src: /assets/images/storacha_logo_lightmode_horizontal.webp
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Storacha transforms web3.storage into a community-driven,
   decentralized hot storage network.
 website: https://storacha.network

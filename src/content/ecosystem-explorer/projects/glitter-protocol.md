@@ -5,8 +5,7 @@ updated-on: 2024-03-29T21:43:04.850000Z
 published-on: 2024-03-29T21:43:04.850000Z
 description: "An Open Data Indexing Protocol For All"
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 tech:
   - filecoin
 image:

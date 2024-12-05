@@ -12,8 +12,7 @@ image:
 website: https://www.flamelaunch.com/
 twitter: https://twitter.com/flamelaunch
 year-joined: 2022-12-01T17:27:13.497000Z
-subcategories:
-  - dapp
+subcategory: dapp
 seo:
   description:
     Flame Launch provides decentralized solutions for project launches

@@ -15,8 +15,7 @@ image:
 website: "https://dashboard.starboard.ventures/dashboard"
 repo: "https://github.com/starboard-ventures"
 twitter: "https://twitter.com/starboard_v"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Starboard provides decentralized solutions for data analysis and management.
 email: encrypted::U2FsdGVkX18olSZoHycfv3kh6mZO/Wi7j01HF3kc27W69epSa4hSQyr/9BAWMhvH

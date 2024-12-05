@@ -15,8 +15,7 @@ website: "https://collectif.finance/"
 repo: "https://github.com/collectif-dao"
 twitter: "https://twitter.com/CollectifDAO"
 year-joined: 2024-01-24T13:50:38.359000Z
-subcategories:
-  - governance-daos-public-goods
+subcategory: governance-daos-public-goods
 seo:
   description:
     Collectif DAO is a decentralized autonomous organization for creative

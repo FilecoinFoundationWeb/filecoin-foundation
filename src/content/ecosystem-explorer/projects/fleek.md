@@ -17,8 +17,7 @@ repo: "https://github.com/FleekHQ"
 twitter: "https://twitter.com/fleekxyz"
 featured-content: "https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/"
 year-joined: 2024-01-19T18:50:41.292000Z
-subcategories:
-  - dapp
+subcategory: dapp
 seo:
   description:
     Fleek provides decentralized solutions for hosting and deploying web

@@ -16,8 +16,7 @@ repo: "https://github.com/SFT-project"
 twitter: "https://twitter.com/sftprotocol/"
 video-url: "https://www.youtube.com/embed/FOyv43DGH48"
 year-joined:
-subcategories:
-  - infrastructure
+subcategory: infrastructure
 seo:
   description:
     SFT Chain offers decentralized solutions for supply chain management

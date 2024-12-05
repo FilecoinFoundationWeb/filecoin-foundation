@@ -17,8 +17,7 @@ repo: "https://github.com/TRANSFERArchive"
 twitter: "https://twitter.com/transfergallery/"
 year-joined: 2024-02-01T15:51:35.152Z
 featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     Transfer Data Trust offers decentralized solutions for data transfer

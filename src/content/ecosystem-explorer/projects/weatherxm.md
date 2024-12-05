@@ -13,8 +13,7 @@ website: "https://weatherxm.com/"
 repo: "https://github.com/WeatherXM/docs"
 twitter: "https://twitter.com/weatherxm"
 video-url: "https://www.youtube.com/embed/w7_wLlA6n8I"
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     WeatherXM offers decentralized solutions for weather data collection

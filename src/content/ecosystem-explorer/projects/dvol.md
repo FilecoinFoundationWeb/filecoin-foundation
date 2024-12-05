@@ -6,8 +6,7 @@ published-on: 2024-04-05T00:07:23.578Z
 image:
   src: /assets/images/dvol.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Innovative Tokenized Structured Products for On-chain Assets
 website: https://www.dvol.finance/
 tech:

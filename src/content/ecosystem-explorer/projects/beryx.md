@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX18LYyWQmUElksX2f4IwCM4F5DHFIYcx0oo=
 image:
   src: /assets/images/beryx_logo_white.png
 category: tooling-productivity
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 description: Beryx indexes and exposes via a public API Filecoin historical and
   real-time data.
 website: https://beryx.io/

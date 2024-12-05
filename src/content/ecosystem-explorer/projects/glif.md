@@ -15,8 +15,7 @@ website: https://www.glif.io/en
 repo: https://github.com/glifio
 twitter: https://twitter.com/glifio
 year-joined: 2024-02-07T20:17:14.469000Z
-subcategories:
-  - developer-tools
+subcategory: developer-tools
 seo:
   description:
     Glif offers decentralized tools and infrastructure for the Filecoin
