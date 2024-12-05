@@ -54,17 +54,7 @@ CategorySidebar.Container = function List({
   children,
   as: Component = 'ul',
 }: CategoryContainerProps) {
-  return (
-    <Component
-      className={clsx(
-        'space-y-4',
-        touchTarget.offsetClassX,
-        touchTarget.offsetClassY,
-      )}
-    >
-      {children}
-    </Component>
-  )
+  return <Component className="space-y-4">{children}</Component>
 }
 
 CategorySidebar.Item = function Item({
