@@ -5,7 +5,7 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { DEFAULT_FILTER_OPTION } from '@/constants/filterConstants'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
@@ -109,7 +109,7 @@ export default function Events({ searchParams }: Props) {
   const categoryOptionsWithCount = useListboxOptions({
     collectionName: 'event_entries',
     fieldName: 'category',
-    defaultOption: DEFAULT_FILTER_OPTION,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
     entries: searchResults,
   })
 
