@@ -14,6 +14,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -38,7 +39,6 @@ import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { blogSortConfigs } from './constants/sortConfigs'
-import { blogPostMatchesCategoryQuery } from './utils/filterBlogPosts'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
@@ -91,7 +91,7 @@ export default function Blog({ searchParams }: Props) {
     searchParams,
     entries: sortedResults,
     filterKey: CATEGORY_KEY,
-    filterFn: blogPostMatchesCategoryQuery,
+    filterFn: entryMatchesCategoryQuery,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({

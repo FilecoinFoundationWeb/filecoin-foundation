@@ -15,6 +15,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -41,7 +42,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
-import { eventMatchesCategoryQuery } from './utils/filterEvent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
@@ -98,7 +98,7 @@ export default function Events({ searchParams }: Props) {
     searchParams,
     entries: sortedResults,
     filterKey: CATEGORY_KEY,
-    filterFn: eventMatchesCategoryQuery,
+    filterFn: entryMatchesCategoryQuery,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
