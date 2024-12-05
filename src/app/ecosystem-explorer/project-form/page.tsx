@@ -58,21 +58,21 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
 
   const initialValues = getFormInitialValue()
 
-  function appendCtaToDescription(description: string) {
-    return (
-      <>
-        {description} To update an existing project, send an email to{' '}
-        <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.ecosystem.email.href}>
-          {extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}
-        </ExternalTextLink>
-        .
-      </>
-    )
-  }
-
   const descriptionWithCta = [
-    appendCtaToDescription(header.description[0]),
-    ...[header.description[1]],
+    <>
+      {header.description[0]} To update an existing project, send an email to{' '}
+      <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.ecosystem.email.href}>
+        {extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}
+      </ExternalTextLink>
+      .
+    </>,
+    <>
+      {header.description[1]} Share your project page on X and tag{' '}
+      <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.social.twitter.href}>
+        {FILECOIN_FOUNDATION_URLS.social.twitter.handle}
+      </ExternalTextLink>{' '}
+      to be considered!
+    </>,
   ]
 
   return (
