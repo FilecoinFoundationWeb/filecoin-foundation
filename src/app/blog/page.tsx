@@ -87,7 +87,7 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { filteredResults } = useFilter({
+  const { filteredEntries } = useFilter({
     searchParams,
     entries: sortedResults,
     filterKey: CATEGORY_KEY,
@@ -96,7 +96,7 @@ export default function Blog({ searchParams }: Props) {
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredResults,
+    entries: filteredEntries,
   })
 
   const categoryOptionsWithCount = useFilterOptionsWithCount({
@@ -160,7 +160,7 @@ export default function Blog({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredResults.length === 0 ? (
+              {filteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>

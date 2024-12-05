@@ -27,7 +27,7 @@ export function useFilter<Entry extends Object>({
     [filterFn, filterQuery],
   )
 
-  const filteredResults = useMemo(() => {
+  const filteredEntries = useMemo(() => {
     if (!filterQuery || filterQuery === ALL_FILTERS_ID) {
       return entries
     }
@@ -35,5 +35,5 @@ export function useFilter<Entry extends Object>({
     return entries.filter(filterByQuery)
   }, [filterQuery, entries, filterByQuery])
 
-  return { filteredResults }
+  return { filteredEntries }
 }

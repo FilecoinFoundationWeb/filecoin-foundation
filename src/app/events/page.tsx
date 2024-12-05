@@ -94,7 +94,7 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { filteredResults } = useFilter({
+  const { filteredEntries } = useFilter({
     searchParams,
     entries: sortedResults,
     filterKey: CATEGORY_KEY,
@@ -103,7 +103,7 @@ export default function Events({ searchParams }: Props) {
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredResults,
+    entries: filteredEntries,
   })
 
   const categoryOptionsWithCount = useFilterOptionsWithCount({
@@ -163,7 +163,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredResults.length === 0 ? (
+              {filteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>
