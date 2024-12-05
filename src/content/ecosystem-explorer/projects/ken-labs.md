@@ -8,7 +8,6 @@ image:
 category: storage
 subcategory: infrastructure
 description: "Building a New Economy: Data, AI, and Web3."
-website: https://kenlabs.io/
 tech:
   - ipfs
 year-joined: 2024-04-04T01:31:54.160Z

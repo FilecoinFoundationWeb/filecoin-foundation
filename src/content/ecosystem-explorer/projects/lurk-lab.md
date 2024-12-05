@@ -12,10 +12,8 @@ description: Lurk is a Turing-complete programming language for recursive
   enabling new possibilities for SNARK proofs, blockchain consensus, the
   Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS
   and IPLD, and more.
-website: https://lurk-lang.org/
 tech:
   - filecoin
-twitter: https://twitter.com/LurkLab
 year-joined: 2024-03-29T21:28:53.087Z
 seo:
   description: Lurk Lab provides decentralized solutions for data analysis and management.
