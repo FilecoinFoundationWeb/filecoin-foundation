@@ -15,7 +15,7 @@ type UseFilterOptionsWithCountProps<Entry extends Object> =
     entries: Array<Entry>
   }
 
-export function useFilterOptionsWithCount<Entry extends Object>({
+export function useListboxOptions<Entry extends Object>({
   collectionName,
   fieldName,
   allOption,

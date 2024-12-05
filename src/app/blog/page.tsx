@@ -21,7 +21,7 @@ import { getSortOptions } from '@/utils/getSortOptions'
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { useFilter } from '@/hooks/useFilter'
-import { useFilterOptionsWithCount } from '@/hooks/useFilterOptionsWithCount'
+import { useListboxOptions } from '@/hooks/useListboxOptions'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -99,7 +99,7 @@ export default function Blog({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
-  const categoryOptionsWithCount = useFilterOptionsWithCount({
+  const categoryOptionsWithCount = useListboxOptions({
     collectionName: 'blog_posts',
     fieldName: 'category',
     allOption: ALL_CATEGORIES_OPTION,
