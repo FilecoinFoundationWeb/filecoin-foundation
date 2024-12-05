@@ -21,5 +21,7 @@ jobs:
             --accept 200,429,403
             --timeout 60
             --retry-wait-time 15
+            --exclude https://twitter.com/*
+            --exclude https://x.com/*
             --max-retries 10
             '**/*.md'
