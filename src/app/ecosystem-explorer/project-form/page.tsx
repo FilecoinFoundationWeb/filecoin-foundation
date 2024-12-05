@@ -5,20 +5,20 @@ import {
   ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
   PATHS,
 } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
-import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import {
+  type FrontmatterHeaderSchemaType,
+  BaseFrontmatterSchema,
+} from '@/schemas/FrontmatterSchema'
 
-import { DescriptionText } from '@/components/DescriptionText'
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
@@ -58,30 +58,13 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
 
   const initialValues = getFormInitialValue()
 
-  const descriptionWithCta = [
-    <>
-      {header.description[0]} To update an existing project, send an email to{' '}
-      <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.ecosystem.email.href}>
-        {extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}
-      </ExternalTextLink>
-      .
-    </>,
-    <>
-      {header.description[1]} Share your project page on X and tag{' '}
-      <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.social.twitter.href}>
-        {FILECOIN_FOUNDATION_URLS.social.twitter.handle}
-      </ExternalTextLink>{' '}
-      to be considered!
-    </>,
-  ]
-
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
 
       <div className="space-y-4 md:max-w-readable">
         <PageHeader.Title>{header.title}</PageHeader.Title>
-        <DescriptionText>{descriptionWithCta}</DescriptionText>
+        {renderDescription(header.description)}
       </div>
 
       <EcosystemProjectForm
@@ -94,4 +77,16 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
       )}
     </PageLayout>
   )
+}
+
+function renderDescription(
+  description: FrontmatterHeaderSchemaType['description'],
+) {
+  if (!Array.isArray(description)) {
+    return <MarkdownContent>{description}</MarkdownContent>
+  }
+
+  return description.map((descriptionItem, index) => (
+    <MarkdownContent key={index}>{descriptionItem}</MarkdownContent>
+  ))
 }
