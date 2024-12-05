@@ -84,7 +84,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
             <ExternalTextLink
               href={FILECOIN_FOUNDATION_URLS.ecosystem.email.href}
             >
-              {`${extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}`}
+              {extractEmailAddress(
+                FILECOIN_FOUNDATION_URLS.ecosystem.email.href,
+              )}
             </ExternalTextLink>{' '}
             with the updated details.
           </>
