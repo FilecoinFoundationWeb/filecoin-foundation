@@ -5,9 +5,12 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
+import {
+  DEFAULT_CATEGORY_FILTER_OPTION,
+  DEFAULT_LOCATION_FILTER_OPTION,
+} from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -15,12 +18,16 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
+import {
+  entryMatchesCategoryQuery,
+  entryMatchesLocationQuery,
+} from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
+import { useCombineFilteredEntries } from '@/hooks/useCombineFilteredEntries'
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
 import { usePagination } from '@/hooks/usePagination'
@@ -31,6 +38,7 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
+import { LocationFilter } from '@/components/LocationFilter'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -94,23 +102,42 @@ export default function Events({ searchParams }: Props) {
     defaultsTo: 'all-events',
   })
 
-  const { filteredEntries } = useFilter({
+  const { filteredEntries: filteredEventsByCategory } = useFilter({
     searchParams,
     entries: sortedResults,
     filterKey: CATEGORY_KEY,
     filterFn: entryMatchesCategoryQuery,
   })
 
-  const { currentPage, pageCount, paginatedResults } = usePagination({
+  const { filteredEntries: filteredEventsByLocation } = useFilter({
     searchParams,
-    entries: filteredEntries,
+    entries: sortedResults,
+    filterKey: LOCATION_KEY,
+    filterFn: entryMatchesLocationQuery,
   })
+
+  const combinedFilteredEntries = useCombineFilteredEntries([
+    filteredEventsByLocation,
+    filteredEventsByCategory,
+  ])
 
   const { optionsWithCount: categoryOptionsWithCount } = useListboxOptions({
     collectionName: 'event_entries',
     fieldName: 'category',
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
+    entries: filteredEventsByLocation,
+  })
+
+  const { options: locationOptions } = useListboxOptions({
+    collectionName: 'event_entries',
+    fieldName: 'location.region',
+    defaultOption: DEFAULT_LOCATION_FILTER_OPTION,
     entries: searchResults,
+  })
+
+  const { currentPage, pageCount, paginatedResults } = usePagination({
+    searchParams,
+    entries: combinedFilteredEntries,
   })
 
   return (
@@ -143,6 +170,7 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
+              location={<LocationFilter options={locationOptions} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -154,6 +182,7 @@ export default function Events({ searchParams }: Props) {
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
               category={<CategoryFilter options={categoryOptionsWithCount} />}
+              location={<LocationFilter options={locationOptions} />}
               sort={
                 <Sort
                   query={sortQuery}
@@ -163,7 +192,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredEntries.length === 0 ? (
+              {combinedFilteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>
