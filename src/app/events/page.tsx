@@ -106,7 +106,7 @@ export default function Events({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
-  const categoryOptionsWithCount = useListboxOptions({
+  const { optionsWithCount: categoryOptionsWithCount } = useListboxOptions({
     collectionName: 'event_entries',
     fieldName: 'category',
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,

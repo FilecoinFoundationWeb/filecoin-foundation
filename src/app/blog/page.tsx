@@ -99,7 +99,7 @@ export default function Blog({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
-  const categoryOptionsWithCount = useListboxOptions({
+  const { optionsWithCount: categoryOptionsWithCount } = useListboxOptions({
     collectionName: 'blog_posts',
     fieldName: 'category',
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
