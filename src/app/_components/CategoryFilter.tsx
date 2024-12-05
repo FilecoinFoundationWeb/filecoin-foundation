@@ -4,7 +4,7 @@ import { useQueryState, parseAsString } from 'nuqs'
 
 import {
   DEFAULT_FILTER_ID,
-  DEFAULT_FILTER_OPTION,
+  DEFAULT_CATEGORY_FILTER_OPTION,
 } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
@@ -25,7 +25,8 @@ export function CategoryFilter({ options }: CategoryProps) {
   )
 
   const selectedCategory =
-    options.find((option) => option.id === categoryId) || DEFAULT_FILTER_OPTION
+    options.find((option) => option.id === categoryId) ||
+    DEFAULT_CATEGORY_FILTER_OPTION
 
   function handleChange(option: OptionType) {
     setCategoryId(option.id)
