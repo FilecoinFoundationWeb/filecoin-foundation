@@ -14,8 +14,7 @@ image:
 website: https://fidl.tech
 repo: https://github.com/fidlabs
 year-joined: 2024-05-16T14:44:42.714000Z
-subcategories:
-  - developer-tools
+subcategory: developer-tools
 seo:
   description:
     Filecoin Incentive DesignLabs offers tools and resources for designing

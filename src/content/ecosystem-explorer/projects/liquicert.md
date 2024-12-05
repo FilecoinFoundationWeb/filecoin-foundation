@@ -6,8 +6,7 @@ published-on: 2024-03-22T16:24:25.078Z
 image:
   src: /assets/images/liquicert.png
 category: tooling-productivity
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 description: Allows you to find a chain of social proof from a trusted community
   to a dataset.
 website: https://liquicert.io/

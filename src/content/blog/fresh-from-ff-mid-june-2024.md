@@ -42,7 +42,7 @@ seo:
 
   - [The SPWG](https://filecoinproject.slack.com/archives/C02GQUMFQVA) holds weekly calls to discuss the latest developments for Filecoin Storage Providers.
   - [The DevWG](https://github.com/filecoin-project/DeveloperWG) is a space to connect with developers, community members, researchers, and others interested in the development of new tools, technologies, and use cases that leverage the Filecoin protocol.
-  - [The DCWG](dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
+  - [The DCWG](mailto:dataclients@fil.org) welcomes participants to share their data upload experiences, identify hurdles and solutions for uploading data, and discuss how the Filecoin ecosystem can support data onboarding.
 
 ### Fil Plus
 
@@ -56,6 +56,6 @@ seo:
 - Read the latest [Ecosystem Spotlight on GhostDrive](/blog/ecosystem-spotlight-ghostdrives-secure-decentralized-storage-now-on-mobile) and how it leverages Filecoin's decentralized storage to improve redundancy and security.
 - FIL Brussels opportunities for Filecoin ecosystem members are available:
 
-  - For sponsorship interest, please contact [sponsorships@fil.org](sponsorships@fil.org).
-  - For interest in speaking at the FIL Brussels Network Base, please contact [events@fil.org](events@fil.org).
-  - To request an FF speaker at your event, please contact [comms@fil.org](comms@fil.org).
+  - For sponsorship interest, please contact [sponsorships@fil.org](mailto:sponsorships@fil.org).
+  - For interest in speaking at the FIL Brussels Network Base, please contact [events@fil.org](mailto:events@fil.org).
+  - To request an FF speaker at your event, please contact [comms@fil.org](mailto:comms@fil.org).

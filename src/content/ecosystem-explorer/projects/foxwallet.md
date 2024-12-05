@@ -15,8 +15,7 @@ website: "https://foxwallet.com/en"
 repo: https://github.com/foxwallet
 twitter: "https://twitter.com/FoxWallet"
 year-joined: 2024-02-27T20:36:33.551000Z
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 seo:
   description:
     FoxWallet provides decentralized wallet solutions for managing digital

@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1+ns8s6AVutv5VlqlW1wJ+wjVhbr38GB+c=
 image:
   src: /assets/images/65974726d10f3992a40f40f6_fil_green_outline.png
 category: science-climate-space
-subcategories:
-  - climate
+subcategory: climate
 description: "Filecoin Green measures the environmental impacts of Filecoin with
   the goal to verifiably drive impacts below zero."
 website: https://green.filecoin.io

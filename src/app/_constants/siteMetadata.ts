@@ -93,6 +93,11 @@ const FILECOIN_FOUNDATION_URLS = {
         'https://github.com/filecoin-project/devgrants?tab=readme-ov-file#requests-for-proposals-rfps',
     },
   },
+  ecosystem: {
+    email: {
+      href: 'mailto:info@fil.org',
+    },
+  },
   orbit: {
     ambassadorsApplicationForm:
       'https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C',

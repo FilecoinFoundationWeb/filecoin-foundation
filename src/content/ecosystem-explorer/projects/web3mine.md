@@ -12,8 +12,7 @@ image:
 website: https://web3mine.io/
 twitter: https://twitter.com/web3mine
 year-joined: 2024-03-29T21:28:55.160000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Web3Mine offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18fsr3rAmo2KFBvNvkGxQZKcKWdiE+u75dkpveFxwoVbCbq2m/ARduI

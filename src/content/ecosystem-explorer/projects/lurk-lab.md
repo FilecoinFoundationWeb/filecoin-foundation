@@ -6,17 +6,14 @@ published-on: 2024-03-29T21:45:16.786Z
 image:
   src: /assets/images/lurk.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Lurk is a Turing-complete programming language for recursive
   zk-SNARKs (zero knowledge Succinct Non-interactive ARguments of Knowledge)
   enabling new possibilities for SNARK proofs, blockchain consensus, the
   Filecoin Virtual Machine (FVM), decentralized apps, data integration with IPFS
   and IPLD, and more.
-website: https://lurk-lang.org/
 tech:
   - filecoin
-twitter: https://twitter.com/LurkLab
 year-joined: 2024-03-29T21:28:53.087Z
 seo:
   description: Lurk Lab provides decentralized solutions for data analysis and management.

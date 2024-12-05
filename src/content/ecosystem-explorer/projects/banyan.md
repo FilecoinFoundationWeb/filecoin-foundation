@@ -19,8 +19,7 @@ repo: "https://github.com/banyancomputer"
 twitter: "https://twitter.com/BanyanComputer"
 video-url: "https://www.youtube.com/embed/LFhw2qeMzkc"
 year-joined: 2024-02-01T20:41:25.602Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description: Banyan offers decentralized data management solutions for enterprises.
 email: encrypted::U2FsdGVkX1+aBk8bAf6fekov/9WaGvLz/5UNeNBce6ElFipZ0xkri1q1jiHzc6po
