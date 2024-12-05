@@ -1,6 +1,6 @@
-export const ALL_FILTERS_ID = 'all'
+export const DEFAULT_FILTER_ID = 'all'
 
-export const ALL_CATEGORIES_OPTION = {
-  id: ALL_FILTERS_ID,
+export const DEFAULT_FILTER_OPTION = {
+  id: DEFAULT_FILTER_ID,
   name: 'All Categories',
 } as const

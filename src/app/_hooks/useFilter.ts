@@ -3,7 +3,7 @@ import { useCallback, useMemo } from 'react'
 import { type NextServerSearchParams } from '@/types/searchParams'
 import { type Object } from '@/types/utils'
 
-import { ALL_FILTERS_ID } from '@/constants/filterConstants'
+import { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
 
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
@@ -28,7 +28,7 @@ export function useFilter<Entry extends Object>({
   )
 
   const filteredEntries = useMemo(() => {
-    if (!filterQuery || filterQuery === ALL_FILTERS_ID) {
+    if (!filterQuery || filterQuery === DEFAULT_FILTER_ID) {
       return entries
     }
 

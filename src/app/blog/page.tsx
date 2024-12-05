@@ -4,7 +4,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { ALL_CATEGORIES_OPTION } from '@/constants/filterConstants'
+import { DEFAULT_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
@@ -102,7 +102,7 @@ export default function Blog({ searchParams }: Props) {
   const categoryOptionsWithCount = useListboxOptions({
     collectionName: 'blog_posts',
     fieldName: 'category',
-    allOption: ALL_CATEGORIES_OPTION,
+    defaultOption: DEFAULT_FILTER_OPTION,
     entries: searchResults,
   })
 

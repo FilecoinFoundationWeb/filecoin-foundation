@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import type { AllFiltersOptionType } from '@/types/filterTypes'
+import type { DefaultFilterOptionType } from '@/types/filterTypes'
 import { type Object } from '@/types/utils'
 
 import {
@@ -11,23 +11,23 @@ import { sumObjectCounts } from '@/utils/sumObjectCounts'
 
 type UseFilterOptionsWithCountProps<Entry extends Object> =
   CMSFieldOptionsAndValidIdsParams & {
-    allOption: AllFiltersOptionType
+    defaultOption: DefaultFilterOptionType
     entries: Array<Entry>
   }
 
 export function useListboxOptions<Entry extends Object>({
   collectionName,
   fieldName,
-  allOption,
+  defaultOption,
   entries,
 }: UseFilterOptionsWithCountProps<Entry>) {
-  const { options } = getCMSFieldOptionsAndValidIds({
+  const { options: CMSOptions } = getCMSFieldOptionsAndValidIds({
     collectionName,
     fieldName,
   })
 
   const optionsWithCount = useMemo(() => {
-    return options.map((option) => {
+    const CMSOptionsWithCount = CMSOptions.map((option) => {
       const matches = entries.filter((entry) => entry[fieldName] === option.id)
 
       return {
@@ -35,16 +35,14 @@ export function useListboxOptions<Entry extends Object>({
         count: matches.length,
       }
     })
-  }, [entries, fieldName, options])
 
-  const optionsWithAllAndCount = useMemo(() => {
-    const allOptionWithCount = {
-      ...allOption,
-      count: sumObjectCounts(optionsWithCount),
+    const defaultOptionWithCount = {
+      ...defaultOption,
+      count: sumObjectCounts(CMSOptionsWithCount),
     }
 
-    return [allOptionWithCount, ...optionsWithCount]
-  }, [allOption, optionsWithCount])
+    return [defaultOptionWithCount, ...CMSOptionsWithCount]
+  }, [CMSOptions, defaultOption, entries, fieldName])
 
-  return optionsWithAllAndCount
+  return optionsWithCount
 }
