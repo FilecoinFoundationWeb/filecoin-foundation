@@ -11,8 +11,7 @@ tech:
   - filecoin
 website: https://cooper-db.vercel.app/
 year-joined: 2024-04-05T14:44:50.326000Z
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 seo:
   description:
     CooperDB provides decentralized database solutions for secure data

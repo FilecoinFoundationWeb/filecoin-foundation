@@ -15,8 +15,7 @@ image:
 website: https://dcent.nl
 twitter: https://twitter.com/Dcent_Web3
 year-joined: 2023-08-01T20:34:10.316000Z
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 seo:
   description: DCent provides decentralized identity and authentication solutions.
 email: encrypted::U2FsdGVkX1+xUerzS2FpwpYZDkRzAYaW4/6tW1yG3aVINfi+N/GunQ9qFOsKa7ZC

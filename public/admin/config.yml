@@ -574,8 +574,8 @@ collections:
           - name
         display_fields:
           - name
-      - name: subcategories
-        label: Subcategories
+      - name: subcategory
+        label: Subcategory
         widget: relation
         collection: "ecosystem_projects_subcategories"
         value_field: "slug"
@@ -583,7 +583,6 @@ collections:
           - name
         display_fields:
           - name
-        multiple: true
         filter:
           field: "parent_category"
           value: "{{fields.category}}"

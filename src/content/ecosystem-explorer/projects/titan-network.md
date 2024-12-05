@@ -17,8 +17,7 @@ website: "https://www.titannet.io/"
 repo: "https://github.com/Filecoin-Titan/titan"
 twitter: "https://twitter.com/FilecoinTitan"
 year-joined: 2024-01-11T13:26:59.787Z
-subcategories:
-  - infrastructure
+subcategory: infrastructure
 seo:
   description: Titan Network offers decentralized solutions for blockchain infrastructure.
 email: encrypted::U2FsdGVkX19sf+hxz6eg44v03StOEchjqiUonXPGpP7iLIzY5lIqXsmMdBSDOJoW

@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX19f1ThRZmEHmQL1kxZXLSdaBlCVYuTFjC0=
 image:
   src: /assets/images/bidlo.png
 category: storage
-subcategories:
-  - data-storage-management
+subcategory: data-storage-management
 description: Built on top of Filecoin, Bidlo offers storage bounties, where
   storage providers compete to win deals, bringing the price down for clients.
 website: https://bidlo.vercel.app/

@@ -16,8 +16,7 @@ image:
 website: "https://www.seti.org/"
 twitter: "https://twitter.com/SETIInstitute"
 featured-content: "https://destor.com/seti"
-subcategories:
-  - decentralized-science
+subcategory: decentralized-science
 seo:
   description:
     SETI Institute provides decentralized solutions for scientific data

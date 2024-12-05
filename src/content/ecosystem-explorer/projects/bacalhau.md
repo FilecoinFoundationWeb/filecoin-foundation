@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX19jmBDchTG1iF27vuOzaYxj38dkGsptsro=
 image:
   src: /assets/images/659872da19567f4307ba3b38_bacalhua_logo_white.png
 category: storage
-subcategories:
-  - infrastructure
+subcategory: infrastructure
 description: Bacalhau is a platform for fast, cost-efficient, and secure
   computation by running jobs where the data is generated and stored.
 website: https://www.bacalhau.org

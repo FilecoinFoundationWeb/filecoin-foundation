@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1/abisEWSDswdjzokw334rUFquMNyBtIyM=
 image:
   src: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.webp
 category: media-entertainment
-subcategories:
-  - arts-collectibles-nfts
+subcategory: arts-collectibles-nfts
 description: Artifact Labs preserves and connects culture and history on the blockchain.
 website: https://www.artifactlabs.com
 tech:

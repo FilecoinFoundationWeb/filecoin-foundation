@@ -8,8 +8,7 @@ full-name: encrypted::U2FsdGVkX1/spij3VSs6yPeigTLwWnI8cGO3dI2GktA=
 image:
   src: /assets/images/crossfi_logo_white.png
 category: tooling-productivity
-subcategories:
-  - wallets-identity-authentication
+subcategory: wallets-identity-authentication
 description: CrossFi aims to democratize decentralized finance through the CrossFi platform.
 website: https://crossfimain.com/
 tech:
