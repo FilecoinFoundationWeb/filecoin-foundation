@@ -21,10 +21,16 @@ export function useListboxOptions<Entry extends Object>({
   defaultOption,
   entries,
 }: UseFilterOptionsWithCountProps<Entry>) {
-  const { options: CMSOptions } = getCMSFieldOptionsAndValidIds({
-    collectionName,
-    fieldName,
-  })
+  const { options: CMSOptions } = useMemo(
+    () =>
+      getCMSFieldOptionsAndValidIds({
+        collectionName,
+        fieldName,
+      }),
+    [collectionName, fieldName],
+  )
+
+  const options = [defaultOption, ...CMSOptions]
 
   const optionsWithCount = useMemo(() => {
     const CMSOptionsWithCount = CMSOptions.map((option) => {
@@ -44,5 +50,5 @@ export function useListboxOptions<Entry extends Object>({
     return [defaultOptionWithCount, ...CMSOptionsWithCount]
   }, [CMSOptions, defaultOption, entries, fieldName])
 
-  return optionsWithCount
+  return { options, optionsWithCount }
 }
