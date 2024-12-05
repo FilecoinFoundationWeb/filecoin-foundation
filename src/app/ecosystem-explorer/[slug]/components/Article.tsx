@@ -12,7 +12,7 @@ import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
-type EcosystemProjectArticleProps = {
+type ArticleProps = {
   title: string
   content?: string
   videoUrl?: string
@@ -23,7 +23,7 @@ type EcosystemProjectArticleProps = {
   subcategories: Array<string>
 }
 
-export function EcosystemProjectArticle({
+export function Article({
   title,
   content,
   videoUrl,
@@ -32,7 +32,7 @@ export function EcosystemProjectArticle({
   twitter,
   featuredContent,
   subcategories,
-}: EcosystemProjectArticleProps) {
+}: ArticleProps) {
   const subcategoryData = getCategoryDataFromDirectory(
     ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
   )

@@ -14,7 +14,7 @@ import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
-import { EcosystemProjectArticle } from './components/EcosystemProjectArticle'
+import { Article } from './components/Article'
 import { PageHeader } from './components/PageHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -58,7 +58,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <PageHeader image={image} />
 
-      <EcosystemProjectArticle
+      <Article
         title={title}
         content={content}
         videoUrl={videoUrl}
