@@ -7,7 +7,7 @@ import {
   getCMSFieldOptionsAndValidIds,
   type CMSFieldOptionsAndValidIdsParams,
 } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { sumObjectCounts } from '@/utils/sumObjectCounts'
+import { sumCountValues } from '@/utils/sumCountValues'
 
 type UseFilterOptionsWithCountProps<Entry extends Object> =
   CMSFieldOptionsAndValidIdsParams & {
@@ -38,7 +38,7 @@ export function useListboxOptions<Entry extends Object>({
 
     const defaultOptionWithCount = {
       ...defaultOption,
-      count: sumObjectCounts(CMSOptionsWithCount),
+      count: sumCountValues(CMSOptionsWithCount),
     }
 
     return [defaultOptionWithCount, ...CMSOptionsWithCount]
