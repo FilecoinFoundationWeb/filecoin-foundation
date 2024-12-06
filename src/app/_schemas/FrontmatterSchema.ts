@@ -39,7 +39,3 @@ export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
 export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
   featured_grant_graduates: z.array(MarkdownPathSchema),
 })
-
-export type FrontmatterHeaderSchemaType = z.infer<
-  typeof FrontmatterHeaderSchema
->
