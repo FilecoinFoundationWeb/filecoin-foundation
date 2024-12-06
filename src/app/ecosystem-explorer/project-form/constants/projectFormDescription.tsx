@@ -12,6 +12,7 @@ export const PROJECT_FORM_DESCRIPTION = [
     <ExternalTextLink href={FILECOIN_FOUNDATION_URLS.ecosystem.email.href}>
       {extractEmailAddress(FILECOIN_FOUNDATION_URLS.ecosystem.email.href)}
     </ExternalTextLink>
+    .
   </>,
   <>
     Want to be a featured project? Share your project page on X and tag{' '}
