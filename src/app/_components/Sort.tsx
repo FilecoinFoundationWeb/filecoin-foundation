@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { startTransition, useState, useEffect } from 'react'
 
 import { type SortOption, type ValidSortKey } from '@/types/sortTypes'
 
@@ -27,12 +27,16 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
     const sortIsReset = query === defaultQuery
 
     if (sortIsReset) {
-      setSortId(defaultQuery)
+      startTransition(() => {
+        setSortId(defaultQuery)
+      })
     }
   }, [query, defaultQuery])
 
   function handleSortChange(newOption: SortOption) {
-    setSortId(newOption.id)
+    startTransition(() => {
+      setSortId(newOption.id)
+    })
     updateSearchParams({ [SORT_KEY]: newOption.id })
   }
 
