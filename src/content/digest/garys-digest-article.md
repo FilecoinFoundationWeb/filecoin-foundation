@@ -1,12 +1,12 @@
 ---
-title: Gary Moran's Digest Article
+title: Gary Moran's Digest Article!
 created-on: 2024-12-06T14:21:00.000Z
 updated-on: 2024-12-06T14:21:00.000Z
 published-on: 2024-12-06T14:21:00.000Z
 issue-number: "1"
 article-number: 1
 authors:
-  - first-name: Gary
+  - first-name: Gary Famous For A Day
     last-name: Moran
     company: Gary Inc.
 seo:
