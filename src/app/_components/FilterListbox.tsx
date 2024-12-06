@@ -10,17 +10,17 @@ import {
 } from '@/components/Listbox/ListboxOption'
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
-type CategoryListboxProps = {
+type FilterListboxProps = {
   selected: OptionType
   options: Array<OptionType>
   onChange: (selected: OptionType) => void
 }
 
-export function CategoryListbox({
+export function FilterListbox({
   selected,
   options,
   onChange,
-}: CategoryListboxProps) {
+}: FilterListboxProps) {
   return (
     <Listbox value={selected} onChange={onChange}>
       <ListboxButton text={selected.name} leadingIcon={FunnelSimple} />

@@ -4,8 +4,9 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { ALL_CATEGORIES_OPTION } from '@/constants/categoryConstants'
+import { DEFAULT_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
+import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -13,13 +14,14 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-import { useCategory } from '@/hooks/useCategory'
-import { useCategoryOptionsWithCount } from '@/hooks/useCategoryOptionsWithCount'
+import { useFilter } from '@/hooks/useFilter'
+import { useListboxOptions } from '@/hooks/useListboxOptions'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -85,9 +87,11 @@ export default function Blog({ searchParams }: Props) {
     defaultsTo: 'newest',
   })
 
-  const { filteredEntries } = useCategory({
+  const { filteredEntries } = useFilter({
     searchParams,
     entries: sortedResults,
+    filterKey: CATEGORY_KEY,
+    filterFn: entryMatchesCategoryQuery,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -95,10 +99,10 @@ export default function Blog({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
-  const { categoryOptionsWithCount } = useCategoryOptionsWithCount({
+  const categoryOptionsWithCount = useListboxOptions({
     collectionName: 'blog_posts',
     fieldName: 'category',
-    allOption: ALL_CATEGORIES_OPTION,
+    defaultOption: DEFAULT_FILTER_OPTION,
     entries: searchResults,
   })
 

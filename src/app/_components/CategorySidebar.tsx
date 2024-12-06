@@ -6,10 +6,9 @@ import { clsx } from 'clsx'
 
 import type { OptionType } from './Listbox/ListboxOption'
 
-const touchTarget = {
-  class: 'px-4',
-  offsetClassY: '-mt-4',
-  offsetClassX: '-ml-4',
+const TOUCH_TARGET = {
+  touchAreaPaddingX: 'px-4',
+  touchAreaOffsetX: '-ml-4',
 } as const
 
 type CategorySidebarProps = {
@@ -55,13 +54,7 @@ CategorySidebar.Container = function List({
   as: Component = 'ul',
 }: CategoryContainerProps) {
   return (
-    <Component
-      className={clsx(
-        'space-y-4',
-        touchTarget.offsetClassX,
-        touchTarget.offsetClassY,
-      )}
-    >
+    <Component className={clsx('space-y-4', TOUCH_TARGET.touchAreaOffsetX)}>
       {children}
     </Component>
   )
@@ -99,7 +92,7 @@ CategorySidebar.Button = function Button({
           ? 'bg-brand-700 text-brand-400'
           : 'bg-transparent text-brand-300',
         count !== undefined && 'inline-flex items-baseline gap-2',
-        touchTarget.class,
+        TOUCH_TARGET.touchAreaPaddingX,
       )}
       onClick={handleClick}
     >
