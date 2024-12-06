@@ -9,11 +9,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "validate-md": "node scripts/validateMarkdown.js",
     "test:all": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
-    "test:cypress:percy:critical": "percy exec -- cypress run --spec 'cypress/e2e/critical/**/*.cy.ts'",
-    "test:cypress:critical": "cypress run --spec 'cypress/e2e/critical/**/*.cy.ts'",
-    "test:weekly_schedule": "cypress run --spec 'cypress/e2e/weekly_schedule/**/*.cy.ts'",
+    "test:cypress:percy": "percy exec -- cypress run --spec 'cypress/e2e/**/*.cy.ts'",
+    "test:cypress": "cypress run --spec 'cypress/e2e/**/*.cy.ts'",
     "generate:page": "node scripts/generatePageTemplates.js",
     "prepare": "husky"
   },
