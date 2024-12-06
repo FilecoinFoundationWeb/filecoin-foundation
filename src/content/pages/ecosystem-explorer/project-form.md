@@ -1,11 +1,7 @@
 ---
 header:
   title: "Add a Project"
-  description:
-    [
-      "Let's get started with some basic information about what you're building. Please submit your project to the Filecoin ecosystem page below. To update an existing project, send an email to [info@fil.org](mailto:info@fil.org).",
-      "Want to be a featured project? Share your project page on X and tag [@filfoundation](https://twitter.com/filfoundation) to be considered!",
-    ]
+  description: ""
 seo:
   title: "Add a Project to the Filecoin Ecosystem"
   description: "Submit or update your entry on the Filecoin ecosystem. Want to be a featured project? Share your project page on X and tag @filfoundation to be considered!"
