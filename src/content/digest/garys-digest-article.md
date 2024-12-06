@@ -8,7 +8,7 @@ article-number: 1
 authors:
   - first-name: Gary
     last-name: Moran
-    company: Gary Co.
+    company: Gary Inc.
 seo:
   twitter:
     card: summary
