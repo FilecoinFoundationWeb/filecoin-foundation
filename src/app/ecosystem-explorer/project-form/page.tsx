@@ -20,6 +20,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
 import { SuccessMessage } from './components/SuccessMessage'
+import { PROJECT_FORM_DESCRIPTION } from './constants/projectFormDescription'
 import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
@@ -61,7 +62,7 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
 
       <div className="space-y-4 md:max-w-readable">
         <PageHeader.Title>{header.title}</PageHeader.Title>
-        <DescriptionText>{header.description}</DescriptionText>
+        <DescriptionText>{PROJECT_FORM_DESCRIPTION}</DescriptionText>
       </div>
 
       <EcosystemProjectForm
