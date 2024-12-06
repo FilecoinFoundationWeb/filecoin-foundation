@@ -207,7 +207,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
 
       <CTASection
         title="Become Part of the Expanding Ecosystem"
-        description="If you’re building on Filecoin and don’t see your project or want to edit your listing, share your details."
+        description="If you’re building on Filecoin and don’t see your project, share your details."
         cta={{
           text: 'Submit Your Project',
           href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,

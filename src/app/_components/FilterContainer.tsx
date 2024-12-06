@@ -25,7 +25,7 @@ type WrapperProps = {
 
 export function FilterContainer({ children }: LayoutProps) {
   return (
-    <div className="flex flex-col items-baseline gap-6 lg:flex-row">
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
       {children}
     </div>
   )
