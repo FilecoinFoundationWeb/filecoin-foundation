@@ -5,10 +5,6 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import {
-  DEFAULT_CATEGORY_FILTER_OPTION,
-  DEFAULT_LOCATION_FILTER_OPTION,
-} from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
@@ -47,7 +43,10 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { DEFAULT_CTA_TEXT } from './constants/constants'
+import {
+  DEFAULT_CTA_TEXT,
+  EVENT_FILTER_OPTION_SETTINGS,
+} from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -85,9 +84,9 @@ export const metadata = createMetadata({
 })
 
 const locationOptions = getCMSOptionsWithDefault({
-  collectionName: 'event_entries',
-  fieldName: 'location.region',
-  defaultOption: DEFAULT_LOCATION_FILTER_OPTION,
+  collectionName: EVENT_FILTER_OPTION_SETTINGS.location.collectionName,
+  fieldName: EVENT_FILTER_OPTION_SETTINGS.location.fieldName,
+  defaultOption: EVENT_FILTER_OPTION_SETTINGS.location.defaultOption,
 })
 
 export default function Events({ searchParams }: Props) {
@@ -123,9 +122,9 @@ export default function Events({ searchParams }: Props) {
   })
 
   const { optionsWithCount: categoryOptionsWithCount } = useListboxOptions({
-    collectionName: 'event_entries',
-    fieldName: 'category',
-    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
+    collectionName: EVENT_FILTER_OPTION_SETTINGS.category.collectionName,
+    fieldName: EVENT_FILTER_OPTION_SETTINGS.category.fieldName,
+    defaultOption: EVENT_FILTER_OPTION_SETTINGS.category.defaultOption,
     entries: filteredEventsByLocation,
   })
 
