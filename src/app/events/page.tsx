@@ -115,7 +115,7 @@ export default function Events({ searchParams }: Props) {
     filterFn: entryMatchesLocationQuery,
   })
 
-  const { filteredEntries: filteredEventsByCategory } = useFilter({
+  const { filteredEntries } = useFilter({
     searchParams,
     entries: filteredEventsByLocation,
     filterKey: CATEGORY_KEY,
@@ -131,7 +131,7 @@ export default function Events({ searchParams }: Props) {
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
     searchParams,
-    entries: filteredEventsByCategory,
+    entries: filteredEntries,
   })
 
   return (
@@ -186,7 +186,7 @@ export default function Events({ searchParams }: Props) {
               }
             />
             <FilterContainer.ContentWrapper>
-              {filteredEventsByCategory.length === 0 ? (
+              {filteredEntries.length === 0 ? (
                 <NoSearchResultsMessage />
               ) : (
                 <>
