@@ -1,3 +1,13 @@
 .base {
   @apply text-brand-300 focus:brand-outline hover:underline;
 }
+
+.arrow {
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background: url('/assets/icons/arrow-up-right.svg') center no-repeat;
+  }
+}
