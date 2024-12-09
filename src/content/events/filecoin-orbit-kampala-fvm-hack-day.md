@@ -6,7 +6,7 @@ description: ​This orbit event is designed for developers, students, and
 created-on: 2024-11-26T17:55:00.000Z
 updated-on: 2024-11-26T17:55:00.000Z
 published-on: 2024-11-26T17:55:00.000Z
-category: community
+category: supported-sponsored
 location:
   primary: Kampala, Uganda
   region: africa
