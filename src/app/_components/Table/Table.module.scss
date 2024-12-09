@@ -1,0 +1,15 @@
+.row {
+  @apply h-[52px];
+}
+
+.cell {
+  @apply whitespace-nowrap pl-5 pr-5 text-left font-normal;
+
+  &:first-child {
+    @apply pl-10;
+  }
+
+  &:last-child {
+    @apply pr-10;
+  }
+}
