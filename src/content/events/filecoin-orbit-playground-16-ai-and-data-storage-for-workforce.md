@@ -9,7 +9,7 @@ description: 'On December 23rd 2024, from 17:00 - 20:00 at Next Tech Zone, 4th
 created-on: 2024-11-26T17:57:00.000Z
 updated-on: 2024-11-26T17:57:00.000Z
 published-on: 2024-11-26T17:57:00.000Z
-category: community
+category: supported-sponsored
 location:
   primary: Bangkok, Thailand
   region: apac-asia
