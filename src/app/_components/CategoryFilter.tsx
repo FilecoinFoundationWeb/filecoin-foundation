@@ -1,12 +1,9 @@
 'use client'
 
-import { useQueryState, parseAsString } from 'nuqs'
-
-import {
-  DEFAULT_FILTER_ID,
-  DEFAULT_CATEGORY_FILTER_OPTION,
-} from '@/constants/filterConstants'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
+
+import { useFilterListboxState } from '@/hooks/useFilterListboxState'
 
 import { CategorySidebar } from '@/components/CategorySidebar'
 import { FilterListbox } from '@/components/FilterListbox'
@@ -17,35 +14,26 @@ type CategoryProps = {
 }
 
 export function CategoryFilter({ options }: CategoryProps) {
-  const [categoryId, setCategoryId] = useQueryState<OptionType['id']>(
-    CATEGORY_KEY,
-    parseAsString
-      .withDefault(DEFAULT_FILTER_ID)
-      .withOptions({ shallow: false }),
-  )
-
-  const selectedCategory =
-    options.find((option) => option.id === categoryId) ||
-    DEFAULT_CATEGORY_FILTER_OPTION
-
-  function handleChange(option: OptionType) {
-    setCategoryId(option.id)
-  }
+  const [categoryOption, setCategoryOption] = useFilterListboxState({
+    key: CATEGORY_KEY,
+    options,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
+  })
 
   return (
     <>
       <div className="hidden lg:block">
         <CategorySidebar
-          selected={selectedCategory}
+          selected={categoryOption}
           options={options}
-          onChange={handleChange}
+          onChange={setCategoryOption}
         />
       </div>
       <div className="block lg:hidden">
         <FilterListbox
-          selected={selectedCategory}
+          selected={categoryOption}
           options={options}
-          onChange={handleChange}
+          onChange={setCategoryOption}
         />
       </div>
     </>

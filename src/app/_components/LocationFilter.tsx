@@ -1,12 +1,9 @@
 'use client'
 
-import { useQueryState, parseAsString } from 'nuqs'
-
-import {
-  DEFAULT_FILTER_ID,
-  DEFAULT_LOCATION_FILTER_OPTION,
-} from '@/constants/filterConstants'
+import { DEFAULT_LOCATION_FILTER_OPTION } from '@/constants/filterConstants'
 import { LOCATION_KEY } from '@/constants/searchParams'
+
+import { useFilterListboxState } from '@/hooks/useFilterListboxState'
 
 import { FilterListbox } from '@/components/FilterListbox'
 import { type OptionType } from '@/components/Listbox/ListboxOption'
@@ -16,22 +13,17 @@ type LocationFilterProps = {
 }
 
 export function LocationFilter({ options }: LocationFilterProps) {
-  const [optionId, setOptionId] = useQueryState(
-    LOCATION_KEY,
-    parseAsString
-      .withDefault(DEFAULT_FILTER_ID)
-      .withOptions({ shallow: false }),
-  )
-
-  const selectedLocation =
-    options.find((option) => option.id === optionId) ||
-    DEFAULT_LOCATION_FILTER_OPTION
+  const [locationOption, setLocationOption] = useFilterListboxState({
+    key: LOCATION_KEY,
+    options,
+    defaultOption: DEFAULT_LOCATION_FILTER_OPTION,
+  })
 
   return (
     <FilterListbox
-      selected={selectedLocation}
+      selected={locationOption}
       options={options}
-      onChange={(option) => setOptionId(option.id)}
+      onChange={setLocationOption}
     />
   )
 }
