@@ -30,8 +30,6 @@ export function useListboxOptions<Entry extends Object>({
     [collectionName, fieldName],
   )
 
-  const options = [defaultOption, ...CMSOptions]
-
   const optionsWithCount = useMemo(() => {
     const CMSOptionsWithCount = CMSOptions.map((option) => {
       const matches = entries.filter((entry) => entry[fieldName] === option.id)
@@ -50,5 +48,5 @@ export function useListboxOptions<Entry extends Object>({
     return [defaultOptionWithCount, ...CMSOptionsWithCount]
   }, [CMSOptions, defaultOption, entries, fieldName])
 
-  return { options, optionsWithCount }
+  return { optionsWithCount }
 }

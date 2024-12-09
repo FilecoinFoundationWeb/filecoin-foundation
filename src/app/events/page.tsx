@@ -22,6 +22,7 @@ import {
   entryMatchesCategoryQuery,
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
+import { getCMSOptionsWithDefault } from '@/utils/getCMSOptionsWithDefault'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -83,6 +84,12 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
+const locationOptions = getCMSOptionsWithDefault({
+  collectionName: 'event_entries',
+  fieldName: 'location.region',
+  defaultOption: DEFAULT_LOCATION_FILTER_OPTION,
+})
+
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
     throw new Error('Featured event not found')
@@ -120,13 +127,6 @@ export default function Events({ searchParams }: Props) {
     fieldName: 'category',
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
     entries: filteredEventsByLocation,
-  })
-
-  const { options: locationOptions } = useListboxOptions({
-    collectionName: 'event_entries',
-    fieldName: 'location.region',
-    defaultOption: DEFAULT_LOCATION_FILTER_OPTION,
-    entries: searchResults,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
