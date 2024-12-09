@@ -2,21 +2,21 @@ import type { ReactNode } from 'react'
 
 import { clsx } from 'clsx'
 
-import type { NonEmptyReadonlyArray } from '@/types/utils'
-
 type LayoutProps = {
   children: ReactNode
 }
 
+type FilterComponents = [ReactNode, ReactNode?]
+
 type DesktopFiltersProps = {
   search: ReactNode
-  filters?: NonEmptyReadonlyArray<ReactNode>
+  filters?: FilterComponents
   sort: ReactNode
 }
 
 type MobileFiltersProps = {
   search: ReactNode
-  filters: NonEmptyReadonlyArray<ReactNode>
+  filters: FilterComponents
   sort: ReactNode
 }
 
@@ -44,10 +44,9 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   sort,
 }: MobileFiltersProps) {
   const filtersCount = filters.length
-
-  const defaultWidth = clsx(
+  const filterContainerWidth = clsx(
     filtersCount === 1 && 'flex-1 sm:w-64 md:w-44',
-    filtersCount >= 2 && 'w-2/5 flex-1 min-w-0 sm:w-52 md:w-44',
+    filtersCount === 2 && 'w-2/5 flex-1 min-w-0 sm:w-52 md:w-44',
   )
 
   return (
@@ -55,7 +54,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
       {search}
       <div className="flex flex-1 gap-3 sm:flex-row">
         {filters.map((filter, index) => (
-          <div key={index} className={defaultWidth}>
+          <div key={index} className={filterContainerWidth}>
             {filter}
           </div>
         ))}
@@ -65,22 +64,22 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   )
 }
 
-const desktopFiltersWidth = 'lg:w-44'
-
 FilterContainer.DesktopFilters = function DesktopFilters({
   search,
   filters,
   sort,
 }: DesktopFiltersProps) {
+  const filterContainerWidth = 'lg:w-44'
+
   return (
     <div className="hidden justify-end gap-6 lg:flex">
       {search}
       {filters?.map((filter, index) => (
-        <div key={index} className={desktopFiltersWidth}>
+        <div key={index} className={filterContainerWidth}>
           {filter}
         </div>
       ))}
-      <div className={desktopFiltersWidth}>{sort}</div>
+      <div className={filterContainerWidth}>{sort}</div>
     </div>
   )
 }
