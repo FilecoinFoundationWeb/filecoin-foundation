@@ -131,10 +131,15 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 />
               }
             />
+
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              results={<ResultsAndReset results={filteredEntries.length} />}
-              category={<CategoryFiltersSlider categories={categoryTree} />}
+              filters={[
+                <CategoryFiltersSlider
+                  key="category"
+                  categories={categoryTree}
+                />,
+              ]}
               sort={
                 <Sort
                   query={sortQuery}
