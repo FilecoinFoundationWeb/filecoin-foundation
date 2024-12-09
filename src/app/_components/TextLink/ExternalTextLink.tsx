@@ -1,6 +1,9 @@
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { type BaseLinkProps } from '@/components/BaseLink'
+
+import { Icon } from '../Icon'
 
 import styles from './TextLink.module.scss'
 
@@ -14,11 +17,11 @@ export function ExternalTextLink({
   ...rest
 }: ExternalLinkProps) {
   return (
-    <a
-      className={clsx('inline-flex items-center gap-1', styles.base, className)}
-      {...rest}
-    >
-      <span className={styles.arrow}>{children}</span>
+    <a className={clsx(styles.base, className)} {...rest}>
+      {children}
+      <span className="ml-1 inline-flex align-text-top">
+        <Icon component={ArrowUpRight} size={16} color="brand-400" />
+      </span>
     </a>
   )
 }
