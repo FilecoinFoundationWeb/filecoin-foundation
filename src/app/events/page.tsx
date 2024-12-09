@@ -163,7 +163,9 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               search={<Search query={searchQuery} />}
-              location={<LocationFilter options={locationOptions} />}
+              filters={[
+                <LocationFilter key="location" options={locationOptions} />,
+              ]}
               sort={
                 <Sort
                   query={sortQuery}
@@ -174,8 +176,13 @@ export default function Events({ searchParams }: Props) {
             />
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              category={<CategoryFilter options={categoryOptionsWithCount} />}
-              location={<LocationFilter options={locationOptions} />}
+              filters={[
+                <CategoryFilter
+                  key="category"
+                  options={categoryOptionsWithCount}
+                />,
+                <LocationFilter key="location" options={locationOptions} />,
+              ]}
               sort={
                 <Sort
                   query={sortQuery}

@@ -150,7 +150,12 @@ export default function Blog({ searchParams }: Props) {
 
             <FilterContainer.MobileFiltersAndResults
               search={<Search query={searchQuery} />}
-              category={<CategoryFilter options={categoryOptionsWithCount} />}
+              filters={[
+                <CategoryFilter
+                  key="category"
+                  options={categoryOptionsWithCount}
+                />,
+              ]}
               sort={
                 <Sort
                   query={sortQuery}
