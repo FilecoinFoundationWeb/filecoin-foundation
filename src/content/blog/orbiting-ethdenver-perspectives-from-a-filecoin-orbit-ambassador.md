@@ -36,7 +36,7 @@ The Filecoin Orbit program engages with the next generation of builders at top u
 
 And apply to become a [Filecoin Orbit ambassador](https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C) for your city or university.
 
-![](https://lh7-us.googleusercontent.com/lPGlGnds3qGCC9ZGjFICk93WO83EdB6_zBjGF6Ct-sVcL43NOV0r_OLxEXNcWxgfOE0nzHtJ7rlEMSiUKKAss0ZBtATXmr8oQ-UuSXV-ASuOCHLbwPjhgOO6eNFuk-WgELAvJhzdvrE5NscWbgwgdbM)![]()
+![](https://lh7-us.googleusercontent.com/lPGlGnds3qGCC9ZGjFICk93WO83EdB6_zBjGF6Ct-sVcL43NOV0r_OLxEXNcWxgfOE0nzHtJ7rlEMSiUKKAss0ZBtATXmr8oQ-UuSXV-ASuOCHLbwPjhgOO6eNFuk-WgELAvJhzdvrE5NscWbgwgdbM)
 
 **Upcoming Filecoin Ecosystem Events**
 
