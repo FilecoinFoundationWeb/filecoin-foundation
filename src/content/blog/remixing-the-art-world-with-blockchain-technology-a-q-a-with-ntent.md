@@ -22,7 +22,7 @@ Filecoin Foundation recently spoke with [Dr.Banner](https://www.ntent.art/drbann
 
 Read on to learn how ntent is redefining how art is experienced and appreciated with its Web3 technology.
 
-![](/assets/images/635abee7cc410c701027bf56_ntentlogopostergifhalf.gif)
+![](/assets/images/635abee7cc410c701027bf56_ntentlogopostergifhalf.webm)
 
 **What is ntent, and how does it aim to revolutionize the art world?**
 

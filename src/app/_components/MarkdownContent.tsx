@@ -22,7 +22,6 @@ const IMAGE_DIMENSIONS = {
 
 const MarkdownImage: Components['img'] = ({ src, alt }) => {
   const commonProps = {
-    priority: true,
     quality: 100,
     width: IMAGE_DIMENSIONS.containerWidth,
     height: IMAGE_DIMENSIONS.aspectRatioHeight,
