@@ -138,8 +138,8 @@ export default function Blog({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
-              sort={
+              searchComponent={<Search query={searchQuery} />}
+              sortComponent={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
@@ -149,9 +149,14 @@ export default function Blog({ searchParams }: Props) {
             />
 
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
-              category={<CategoryFilter options={categoryOptionsWithCount} />}
-              sort={
+              searchComponent={<Search query={searchQuery} />}
+              filterComponents={[
+                <CategoryFilter
+                  key="category"
+                  options={categoryOptionsWithCount}
+                />,
+              ]}
+              sortComponent={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}

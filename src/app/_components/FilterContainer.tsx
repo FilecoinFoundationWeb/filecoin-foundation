@@ -6,18 +6,18 @@ type LayoutProps = {
   children: ReactNode
 }
 
-type DesktopFilterProps = {
-  search: ReactNode
-  location?: ReactNode
-  sort: ReactNode
+type FilterComponents = [ReactNode, ReactNode?]
+
+type DesktopFiltersProps = {
+  searchComponent: ReactNode
+  filterComponents?: FilterComponents
+  sortComponent: ReactNode
 }
 
-type MobileFilterProps = {
-  search: ReactNode
-  sort: ReactNode
-  category: ReactNode
-  location?: ReactNode
-  results?: ReactNode
+type MobileFiltersProps = {
+  searchComponent: ReactNode
+  filterComponents: FilterComponents
+  sortComponent: ReactNode
 }
 
 type ResultsProps = {
@@ -38,44 +38,52 @@ export function FilterContainer({ children }: LayoutProps) {
   )
 }
 
-const mobileFilterContainerStyle = {
-  1: 'w-full sm:w-64 md:w-44',
-  2: 'w-full sm:w-52 md:w-44',
-} as const
-
 FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
-  search,
-  category,
-  location,
-  sort,
-}: MobileFilterProps) {
-  const filtersCount = location ? 2 : 1
-  const filterStyle = mobileFilterContainerStyle[filtersCount]
+  searchComponent,
+  filterComponents,
+  sortComponent,
+}: MobileFiltersProps) {
+  const filterComponentsCount = filterComponents.length
+  const minWidthMd = 'md:w-44'
+  const flexGrow = 'flex-1'
+
+  const filterContainerWidth = clsx(
+    filterComponentsCount === 1 && clsx(flexGrow, 'sm:w-64'),
+    filterComponentsCount === 2 &&
+      clsx('min-w-0 sm:w-52', minWidthMd, flexGrow),
+  )
 
   return (
-    <aside className="flex flex-col gap-4 lg:hidden">
-      <div className="flex flex-col gap-3 sm:flex-row">
-        {search}
-        <div className="flex flex-1 gap-3 sm:flex-row">
-          {location && <div className={filterStyle}>{location}</div>}
-          <div className={filterStyle}>{category}</div>
-          <div className="md:w-44">{sort}</div>
-        </div>
+    <aside className="flex flex-col gap-3 sm:flex-row lg:hidden">
+      {searchComponent}
+      <div className="flex flex-1 gap-3 sm:flex-row">
+        {filterComponents.map((filterComponent, index) => (
+          <div key={index} className={filterContainerWidth}>
+            {filterComponent}
+          </div>
+        ))}
+        <div className={minWidthMd}>{sortComponent}</div>
       </div>
     </aside>
   )
 }
 
 FilterContainer.DesktopFilters = function DesktopFilters({
-  search,
-  location,
-  sort,
-}: DesktopFilterProps) {
+  searchComponent,
+  filterComponents,
+  sortComponent,
+}: DesktopFiltersProps) {
+  const filterContainerWidth = 'lg:w-48 shrink-0'
+
   return (
     <div className="hidden justify-end gap-6 lg:flex">
-      {search}
-      {location && <div className="w-full lg:max-w-44">{location}</div>}
-      <div className="w-full lg:max-w-44">{sort}</div>
+      {searchComponent}
+      {filterComponents?.map((filterComponent, index) => (
+        <div key={index} className={filterContainerWidth}>
+          {filterComponent}
+        </div>
+      ))}
+      <div className={filterContainerWidth}>{sortComponent}</div>
     </div>
   )
 }
