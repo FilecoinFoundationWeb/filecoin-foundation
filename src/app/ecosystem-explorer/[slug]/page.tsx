@@ -12,6 +12,7 @@ import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
+import { getCategoriesFromDirectory } from '../utils/getCategoriesFromDirectory'
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
 import { Article } from './components/Article'
@@ -23,6 +24,8 @@ type EcosystemProjectProps = {
     slug: string
   }
 }
+
+const { subcategories: subCategoryOptions } = getCategoriesFromDirectory()
 
 export function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
@@ -66,7 +69,9 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         repo={repo}
         twitter={twitter}
         featuredContent={featuredContent}
-        subcategories={subcategories}
+        subcategories={subCategoryOptions
+          .filter((subcategory) => subcategories.includes(subcategory.slug))
+          .map((subcategory) => subcategory.name)}
       />
 
       <ShareArticle

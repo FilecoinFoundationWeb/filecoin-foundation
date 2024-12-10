@@ -1,9 +1,5 @@
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
-import { ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH } from '@/constants/paths'
-
-import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
-
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -33,14 +29,11 @@ export function Article({
   featuredContent,
   subcategories,
 }: ArticleProps) {
-  const subcategoryData = getCategoryDataFromDirectory(
-    ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-  )
   return (
     <article className="space-y-8">
       <div className="flex flex-wrap gap-2">
         {subcategories.map((subcategory, i) => (
-          <TagLabel key={i}>{subcategoryData[subcategory]}</TagLabel>
+          <TagLabel key={i}>{subcategory}</TagLabel>
         ))}
       </div>
       <div className="flex flex-wrap justify-between gap-16">

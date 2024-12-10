@@ -5,8 +5,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
-import type { CategoryMap } from '@/types/categoryTypes'
-
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox'
@@ -17,6 +15,7 @@ import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
@@ -31,7 +30,6 @@ import type {
   EcosystemProjectFormData,
   EcosystemProjectFormDataWithoutLogo,
 } from '../types'
-import { getOptionsFromObject } from '../utils/getOptionsFromObject'
 import { getYearOptions } from '../utils/getYearOptions'
 
 import { FormSection } from './FormSection'
@@ -39,19 +37,17 @@ import { FormSection } from './FormSection'
 type StringOrUndefined = string | undefined
 
 type ProjectFormProps = {
-  categoryData: CategoryMap
-  subCategoryData: CategoryMap
+  categoryOptions: Array<OptionType>
+  subCategoryOptions: Array<OptionType>
   initialValues: EcosystemProjectFormDataWithoutLogo
 }
 
 export function EcosystemProjectForm({
-  categoryData,
-  subCategoryData,
+  categoryOptions,
+  subCategoryOptions,
   initialValues,
 }: ProjectFormProps) {
   const yearOptions = getYearOptions('desc')
-  const categoryOptions = getOptionsFromObject(categoryData)
-  const subCategoryOptions = getOptionsFromObject(subCategoryData)
 
   const form = useForm<EcosystemProjectFormData>({
     resolver: zodResolver(EcosystemProjectFormSchema),
