@@ -9,15 +9,15 @@ type LayoutProps = {
 type FilterComponents = [ReactNode, ReactNode?]
 
 type DesktopFiltersProps = {
-  search: ReactNode
-  filters?: FilterComponents
-  sort: ReactNode
+  searchComponent: ReactNode
+  filterComponents?: FilterComponents
+  sortComponent: ReactNode
 }
 
 type MobileFiltersProps = {
-  search: ReactNode
-  filters: FilterComponents
-  sort: ReactNode
+  searchComponent: ReactNode
+  filterComponents: FilterComponents
+  sortComponent: ReactNode
 }
 
 type ResultsProps = {
@@ -39,47 +39,47 @@ export function FilterContainer({ children }: LayoutProps) {
 }
 
 FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
-  search,
-  filters,
-  sort,
+  searchComponent,
+  filterComponents,
+  sortComponent,
 }: MobileFiltersProps) {
-  const filtersCount = filters.length
+  const filterComponentsCount = filterComponents.length
   const filterContainerWidth = clsx(
-    filtersCount === 1 && 'flex-1 sm:w-64 md:w-44',
-    filtersCount === 2 && 'w-2/5 flex-1 min-w-0 sm:w-52 md:w-44',
+    filterComponentsCount === 1 && 'flex-1 sm:w-64 md:w-44',
+    filterComponentsCount === 2 && 'w-2/5 flex-1 min-w-0 sm:w-52 md:w-44',
   )
 
   return (
     <aside className="flex flex-col gap-3 sm:flex-row lg:hidden">
-      {search}
+      {searchComponent}
       <div className="flex flex-1 gap-3 sm:flex-row">
-        {filters.map((filter, index) => (
+        {filterComponents.map((filterComponent, index) => (
           <div key={index} className={filterContainerWidth}>
-            {filter}
+            {filterComponent}
           </div>
         ))}
-        <div className="md:w-44">{sort}</div>
+        <div className="md:w-44">{sortComponent}</div>
       </div>
     </aside>
   )
 }
 
 FilterContainer.DesktopFilters = function DesktopFilters({
-  search,
-  filters,
-  sort,
+  searchComponent,
+  filterComponents,
+  sortComponent,
 }: DesktopFiltersProps) {
   const filterContainerWidth = 'lg:w-48 shrink-0'
 
   return (
     <div className="hidden justify-end gap-6 lg:flex">
-      {search}
-      {filters?.map((filter, index) => (
+      {searchComponent}
+      {filterComponents?.map((filterComponent, index) => (
         <div key={index} className={filterContainerWidth}>
-          {filter}
+          {filterComponent}
         </div>
       ))}
-      <div className={filterContainerWidth}>{sort}</div>
+      <div className={filterContainerWidth}>{sortComponent}</div>
     </div>
   )
 }
