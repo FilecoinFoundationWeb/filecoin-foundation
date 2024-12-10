@@ -656,8 +656,6 @@ collections:
         options:
           - label: "Co-Hosted"
             value: "co-hosted"
-          - label: "Community"
-            value: "community"
           - label: "Hosted"
             value: "hosted"
           - label: "Supported & Sponsored"
