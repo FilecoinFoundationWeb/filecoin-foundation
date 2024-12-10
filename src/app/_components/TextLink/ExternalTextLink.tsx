@@ -17,11 +17,13 @@ export function ExternalTextLink({
 }: ExternalLinkProps) {
   return (
     <a
-      className={clsx('inline-flex items-center gap-1', styles.base, className)}
+      className={clsx('inline-block text-pretty', styles.base, className)}
       {...rest}
     >
       {children}
-      <Icon component={ArrowUpRight} size={16} color="brand-400" />
+      <span className="ml-1 inline-flex self-center">
+        <Icon component={ArrowUpRight} size={16} color="brand-400" />
+      </span>
     </a>
   )
 }
