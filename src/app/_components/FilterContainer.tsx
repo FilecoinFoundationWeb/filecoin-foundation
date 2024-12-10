@@ -44,9 +44,13 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   sortComponent,
 }: MobileFiltersProps) {
   const filterComponentsCount = filterComponents.length
+  const minWidthMd = 'md:w-44'
+  const flexGrow = 'flex-1'
+
   const filterContainerWidth = clsx(
-    filterComponentsCount === 1 && 'flex-1 sm:w-64 md:w-44',
-    filterComponentsCount === 2 && 'w-2/5 flex-1 min-w-0 sm:w-52 md:w-44',
+    filterComponentsCount === 1 && clsx(flexGrow, 'sm:w-64'),
+    filterComponentsCount === 2 &&
+      clsx('min-w-0 sm:w-52', minWidthMd, flexGrow),
   )
 
   return (
@@ -58,7 +62,7 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
             {filterComponent}
           </div>
         ))}
-        <div className="md:w-44">{sortComponent}</div>
+        <div className={minWidthMd}>{sortComponent}</div>
       </div>
     </aside>
   )
