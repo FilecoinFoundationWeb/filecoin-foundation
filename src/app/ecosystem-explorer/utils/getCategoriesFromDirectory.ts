@@ -1,11 +1,6 @@
 import { z } from 'zod'
 
-import {
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-} from '@/constants/paths'
-
-import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
+import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 
 import {
   DirectoryCategorySchema,
@@ -13,20 +8,19 @@ import {
 } from '../schemas/CategorySchemas'
 
 export function getCategoriesFromDirectory() {
-  // getEcosystemCategoryHierarchy
-  const rawCategories = readAndValidateYamlFiles(
-    ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  )
+  const rawCategories = getCMSOptionsFor('category')
+  const rawSubcategories = getCMSOptionsFor('subcategory')
 
   const categories = z.array(DirectoryCategorySchema).parse(rawCategories)
-
-  const rawSubcategories = readAndValidateYamlFiles(
-    ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-  )
 
   const subcategories = z
     .array(DirectorySubcategorySchema)
     .parse(rawSubcategories)
 
   return { categories, subcategories }
+}
+
+function getCMSOptionsFor(fieldName: 'category' | 'subcategory') {
+  const { fields } = getCollectionConfig('ecosystem_projects')
+  return getCMSFieldOptions(fields, fieldName)
 }
