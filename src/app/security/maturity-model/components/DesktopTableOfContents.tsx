@@ -4,11 +4,19 @@ import Link from 'next/link'
 
 import { clsx } from 'clsx'
 
-import { coreFunctionsData } from '../data/coreFunctionsData'
-import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
-export function DesktopTableOfContents() {
+import type { DataWithRef } from './TableOfContents'
+
+type DesktopTableOfContentsProps = {
+  data: Array<DataWithRef>
+  scrollToSection: (slug: string) => void
+}
+
+export function DesktopTableOfContents({
+  data,
+  scrollToSection,
+}: DesktopTableOfContentsProps) {
   const { isSectionActive, getHashFromSlug } = useUrlHash()
 
   return (
@@ -18,7 +26,7 @@ export function DesktopTableOfContents() {
       </p>
 
       <ol>
-        {coreFunctionsData.map(({ slug, title }) => {
+        {data.map(({ slug, title }) => {
           const sectionHash = getHashFromSlug(slug)
           const isCurrentSection = isSectionActive(slug)
 
@@ -34,7 +42,7 @@ export function DesktopTableOfContents() {
                 )}
                 onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                   e.preventDefault()
-                  scrollToSection(sectionHash)
+                  scrollToSection(slug)
                 }}
               >
                 {title}
