@@ -18,7 +18,6 @@ import {
   entryMatchesCategoryQuery,
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
-import { getCMSOptionsWithDefault } from '@/utils/getCMSOptionsWithDefault'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
@@ -48,6 +47,7 @@ import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventData, getEventsData } from './utils/getEventData'
+import { getLocationListboxOptions } from './utils/getLocationFilterOptions'
 import { getMetaData } from './utils/getMetaData'
 
 const NoSSRPagination = dynamic(
@@ -80,11 +80,7 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const locationOptions = getCMSOptionsWithDefault({
-  collectionName: FILTERS_CONFIG.location.collectionName,
-  fieldName: FILTERS_CONFIG.location.fieldName,
-  defaultOption: FILTERS_CONFIG.location.defaultOption,
-})
+const locationOptions = getLocationListboxOptions()
 
 export default function Events({ searchParams }: Props) {
   if (!featuredEvent) {
