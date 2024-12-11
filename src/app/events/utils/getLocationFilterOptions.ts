@@ -6,10 +6,14 @@ import {
 } from '../constants/constants'
 
 export function getLocationListboxOptions() {
+  const {
+    location: { collectionName, fieldName, defaultOption },
+  } = FILTERS_CONFIG
+
   const locationOptions = getCMSOptionsWithDefault({
-    collectionName: FILTERS_CONFIG.location.collectionName,
-    fieldName: FILTERS_CONFIG.location.fieldName,
-    defaultOption: FILTERS_CONFIG.location.defaultOption,
+    collectionName,
+    fieldName,
+    defaultOption,
   })
 
   return [...locationOptions, VIRTUAL_EVENT_FILTER_OPTION]
