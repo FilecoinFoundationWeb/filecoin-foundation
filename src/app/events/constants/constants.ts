@@ -1,11 +1,11 @@
 import {
   DEFAULT_CATEGORY_FILTER_OPTION,
   DEFAULT_LOCATION_FILTER_OPTION,
-} from '@/_constants/filterConstants'
+} from '@/constants/filterConstants'
 
 export const DEFAULT_CTA_TEXT = 'View Event Details'
 
-export const EVENT_FILTER_OPTION_SETTINGS = {
+export const FILTERS_CONFIG = {
   location: {
     collectionName: 'event_entries',
     fieldName: 'location.region',

@@ -2,7 +2,7 @@ import { parseAsString, useQueryState } from 'nuqs'
 
 import { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
 
-import { type OptionType } from '@/components/Listbox/ListboxOption'
+import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 type FilterListboxStateConfig = {
   key: string

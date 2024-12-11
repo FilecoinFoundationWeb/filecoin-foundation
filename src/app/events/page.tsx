@@ -43,10 +43,7 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import {
-  DEFAULT_CTA_TEXT,
-  EVENT_FILTER_OPTION_SETTINGS,
-} from './constants/constants'
+import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -84,9 +81,9 @@ export const metadata = createMetadata({
 })
 
 const locationOptions = getCMSOptionsWithDefault({
-  collectionName: EVENT_FILTER_OPTION_SETTINGS.location.collectionName,
-  fieldName: EVENT_FILTER_OPTION_SETTINGS.location.fieldName,
-  defaultOption: EVENT_FILTER_OPTION_SETTINGS.location.defaultOption,
+  collectionName: FILTERS_CONFIG.location.collectionName,
+  fieldName: FILTERS_CONFIG.location.fieldName,
+  defaultOption: FILTERS_CONFIG.location.defaultOption,
 })
 
 export default function Events({ searchParams }: Props) {
@@ -122,9 +119,9 @@ export default function Events({ searchParams }: Props) {
   })
 
   const { optionsWithCount: categoryOptionsWithCount } = useListboxOptions({
-    collectionName: EVENT_FILTER_OPTION_SETTINGS.category.collectionName,
-    fieldName: EVENT_FILTER_OPTION_SETTINGS.category.fieldName,
-    defaultOption: EVENT_FILTER_OPTION_SETTINGS.category.defaultOption,
+    collectionName: FILTERS_CONFIG.category.collectionName,
+    fieldName: FILTERS_CONFIG.category.fieldName,
+    defaultOption: FILTERS_CONFIG.category.defaultOption,
     entries: filteredEventsByLocation,
   })
 
