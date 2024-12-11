@@ -43,26 +43,23 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   filterComponents,
   sortComponent,
 }: MobileFiltersProps) {
-  const filterComponentsCount = filterComponents.length
-  const minWidthMd = 'md:w-44'
-  const flexGrow = 'flex-1'
-
-  const filterContainerWidth = clsx(
-    filterComponentsCount === 1 && clsx(flexGrow, 'sm:w-64'),
-    filterComponentsCount === 2 &&
-      clsx('min-w-0 sm:w-52', minWidthMd, flexGrow),
-  )
-
   return (
     <aside className="flex flex-col gap-3 sm:flex-row lg:hidden">
       {searchComponent}
       <div className="flex flex-1 gap-3 sm:flex-row">
         {filterComponents.map((filterComponent, index) => (
-          <div key={index} className={filterContainerWidth}>
+          <div
+            key={index}
+            className={clsx(
+              'flex-1',
+              filterComponents.length === 1 && 'sm:w-64',
+              filterComponents.length === 2 && 'min-w-0 sm:w-52 md:w-44',
+            )}
+          >
             {filterComponent}
           </div>
         ))}
-        <div className={minWidthMd}>{sortComponent}</div>
+        <div className="md:w-44">{sortComponent}</div>
       </div>
     </aside>
   )
@@ -73,17 +70,15 @@ FilterContainer.DesktopFilters = function DesktopFilters({
   filterComponents,
   sortComponent,
 }: DesktopFiltersProps) {
-  const filterContainerWidth = 'lg:w-48 shrink-0'
-
   return (
     <div className="hidden justify-end gap-6 lg:flex">
       {searchComponent}
       {filterComponents?.map((filterComponent, index) => (
-        <div key={index} className={filterContainerWidth}>
+        <div key={index} className="shrink-0 lg:w-48">
           {filterComponent}
         </div>
       ))}
-      <div className={filterContainerWidth}>{sortComponent}</div>
+      <div className="shrink-0 lg:w-48">{sortComponent}</div>
     </div>
   )
 }
