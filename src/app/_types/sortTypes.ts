@@ -7,8 +7,3 @@ export type SortConfig<Entry extends Record<string, any>> = {
   label: string
   sortFn: (entries: Array<Entry>) => Array<Entry>
 }
-
-export type SortOption = {
-  id: ValidSortKey
-  name: string
-}

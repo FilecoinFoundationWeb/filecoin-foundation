@@ -2,26 +2,28 @@
 
 import { useState, useEffect } from 'react'
 
-import { type SortOption, type ValidSortKey } from '@/types/sortTypes'
+import { ArrowsDownUp } from '@phosphor-icons/react'
 
 import { SORT_KEY } from '@/constants/searchParams'
 
 import { useSort } from '@/hooks/useSort'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { SortListbox } from '@/components/SortListbox'
+import type { OptionType } from './Listbox/ListboxOption'
+import { SortListbox } from './SortListbox'
 
 type SortProps = {
   query: ReturnType<typeof useSort>['sortQuery']
-  options: ReadonlyArray<SortOption>
+  options: ReadonlyArray<OptionType>
   defaultQuery: ReturnType<typeof useSort>['defaultSortQuery']
 }
 
 export function Sort({ query, options, defaultQuery }: SortProps) {
-  const [sortId, setSortId] = useState<ValidSortKey>(query)
+  const [sortId, setSortId] = useState<OptionType['id']>(query)
   const { updateSearchParams } = useUpdateSearchParams()
 
-  const selectedOption = options.find((option) => option.id === sortId)
+  const selectedOption =
+    options.find((option) => option.id === sortId) || options[0]
 
   useEffect(() => {
     const sortIsReset = query === defaultQuery
@@ -31,7 +33,7 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
     }
   }, [query, defaultQuery])
 
-  function handleSortChange(newOption: SortOption) {
+  function handleSortChange(newOption: OptionType) {
     setSortId(newOption.id)
     updateSearchParams({ [SORT_KEY]: newOption.id })
   }
@@ -40,6 +42,7 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
     <SortListbox
       options={options}
       selected={selectedOption}
+      icon={ArrowsDownUp}
       onChange={handleSortChange}
     />
   )
