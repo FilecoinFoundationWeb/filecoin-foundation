@@ -524,25 +524,138 @@ collections:
       - *image_config
       - name: category
         label: Category
-        widget: relation
-        collection: "ecosystem_projects_categories"
-        value_field: "slug"
-        search_fields:
-          - name
-        display_fields:
-          - name
+        widget: select
+        options:
+          - label: "Artificial Intelligence"
+            value: "artificial-intelligence"
+            subcategories: ["ai-productivity-utilities"]
+          - label: "Education, Academia & Health"
+            value: "education-academia-health"
+            subcategories: ["health"]
+          - label: "Finance"
+            value: "finance"
+            subcategories: ["leasing"]
+          - label: "Media & Entertainment"
+            value: "media-entertainment"
+            subcategories: ["arts-collectibles-nfts", "photo-video"]
+          - label: "Network"
+            value: "network"
+            subcategories: ["network-tools"]
+          - label: "Public Goods & DWeb"
+            value: "public-goods-dweb"
+            subcategories:
+              ["dweb", "governance-daos-public-goods", "social-impact"]
+          - label: "Science, Climate & Space"
+            value: "science-climate-space"
+            subcategories: ["climate", "space", "decentralized-science"]
+          - label: "Storage"
+            value: "storage"
+            subcategories:
+              [
+                "data-storage-management",
+                "storage-provider",
+                "storage-services",
+                "storage-software",
+                "infrastructure",
+              ]
+          - label: "Tooling & Productivity"
+            value: "tooling-productivity"
+            subcategories:
+              [
+                "data-retrieval",
+                "developer-tools",
+                "dapp",
+                "wallets-identity-authentication",
+                "bridges-oracles",
+              ]
       - name: subcategory
         label: Subcategory
-        widget: relation
-        collection: "ecosystem_projects_subcategories"
-        value_field: "slug"
-        search_fields:
-          - name
-        display_fields:
-          - name
-        filter:
-          field: "parent_category"
-          value: "{{fields.category}}"
+        widget: select
+        options:
+          # Artificial Intelligence subcategories
+          - label: "AI Productivity & Utilities"
+            value: "ai-productivity-utilities"
+            parent_category: "artificial-intelligence"
+
+          # Education, Academia & Health subcategories
+          - label: "Health"
+            value: "health"
+            parent_category: "education-academia-health"
+
+          # Finance subcategories
+          - label: "Leasing"
+            value: "leasing"
+            parent_category: "finance"
+
+          # Media & Entertainment subcategories
+          - label: "Arts, Collectibles & NFTs"
+            value: "arts-collectibles-nfts"
+            parent_category: "media-entertainment"
+          - label: "Photo & Video"
+            value: "photo-video"
+            parent_category: "media-entertainment"
+
+          # Network subcategories
+          - label: "Network Tools"
+            value: "network-tools"
+            parent_category: "network"
+
+          # Public Goods & DWeb subcategories
+          - label: "DWeb"
+            value: "dweb"
+            parent_category: "public-goods-dweb"
+          - label: "Governance, DAOs & Public Goods"
+            value: "governance-daos-public-goods"
+            parent_category: "public-goods-dweb"
+          - label: "Social Impact"
+            value: "social-impact"
+            parent_category: "public-goods-dweb"
+
+          # Science, Climate & Space subcategories
+          - label: "Climate"
+            value: "climate"
+            parent_category: "science-climate-space"
+          - label: "Space"
+            value: "space"
+            parent_category: "science-climate-space"
+          - label: "Decentralized Science"
+            value: "decentralized-science"
+            parent_category: "science-climate-space"
+
+          # Storage subcategories
+          - label: "Data Storage & Management"
+            value: "data-storage-management"
+            parent_category: "storage"
+          - label: "Storage Provider"
+            value: "storage-provider"
+            parent_category: "storage"
+          - label: "Storage Services"
+            value: "storage-services"
+            parent_category: "storage"
+          - label: "Storage Software"
+            value: "storage-software"
+            parent_category: "storage"
+          - label: "Infrastructure"
+            value: "infrastructure"
+            parent_category: "storage"
+
+          # Tooling & Productivity subcategories
+          - label: "Data Retrieval"
+            value: "data-retrieval"
+            parent_category: "tooling-productivity"
+          - label: "Developer Tools"
+            value: "developer-tools"
+            parent_category: "tooling-productivity"
+          - label: "Dapp"
+            value: "dapp"
+            parent_category: "tooling-productivity"
+          - label: "Wallets, Identity & Authentication"
+            value: "wallets-identity-authentication"
+            parent_category: "tooling-productivity"
+          - label: "Bridges & Oracles"
+            value: "bridges-oracles"
+            parent_category: "tooling-productivity"
+        hint: "Select a subcategory that matches the chosen main category"
       - name: description
         label: Short Description
         widget: string
