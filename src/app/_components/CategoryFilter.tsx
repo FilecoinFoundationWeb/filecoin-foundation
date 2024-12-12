@@ -5,7 +5,7 @@ import { FunnelSimple } from '@phosphor-icons/react'
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
-import { useFilterListboxState } from '@/hooks/useFilterListboxState'
+import { useListboxQueryState } from '@/hooks/useListboxQueryState'
 
 import { CategorySidebar } from '@/components/CategorySidebar'
 import { FilterListbox } from '@/components/FilterListbox'
@@ -16,7 +16,7 @@ type CategoryProps = {
 }
 
 export function CategoryFilter({ options }: CategoryProps) {
-  const [categoryOption, setCategoryOption] = useFilterListboxState({
+  const [categoryOption, setCategoryOption] = useListboxQueryState({
     key: CATEGORY_KEY,
     options,
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
