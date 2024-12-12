@@ -13,6 +13,7 @@ import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']
+  components?: Components
 }
 
 const IMAGE_DIMENSIONS = {
@@ -66,13 +67,16 @@ const markdownComponents: Components = {
   a: MarkdownLink,
 }
 
-export function MarkdownContent({ children }: MarkdownContentProps) {
+export function MarkdownContent({
+  children,
+  components,
+}: MarkdownContentProps) {
   return (
     <ReactMarkdown
       rehypePlugins={[rehypeRaw]}
       remarkPlugins={[remarkGfm]}
       className="prose"
-      components={markdownComponents}
+      components={{ ...markdownComponents, ...components }}
     >
       {children}
     </ReactMarkdown>

@@ -20,6 +20,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { CoreFunctions } from './components/CoreFunctions'
 import { MobileTableOfContents } from './components/MobileTableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
+import { coreFunctionsData } from './data/coreFunctionsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const DynamicDesktopTableOfContents = dynamic(
@@ -83,7 +84,12 @@ export default function MaturityModel() {
             <CoreFunctions />
           </div>
           <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
-            <DynamicDesktopTableOfContents />
+            <DynamicDesktopTableOfContents
+              data={coreFunctionsData.map(({ slug, title }) => ({
+                slug,
+                title,
+              }))}
+            />
           </div>
           <div className="sticky top-6 z-10 order-first block lg:hidden">
             <MobileTableOfContents />

@@ -4,11 +4,17 @@ import Link from 'next/link'
 
 import { clsx } from 'clsx'
 
-import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
-export function DesktopTableOfContents() {
+type Props = {
+  data: Array<{
+    slug: string
+    title: string
+  }>
+}
+
+export function DesktopTableOfContents({ data }: Props) {
   const { isSectionActive, getHashFromSlug } = useUrlHash()
 
   return (
@@ -18,7 +24,7 @@ export function DesktopTableOfContents() {
       </p>
 
       <ol>
-        {coreFunctionsData.map(({ slug, title }) => {
+        {data.map(({ slug, title }) => {
           const sectionHash = getHashFromSlug(slug)
           const isCurrentSection = isSectionActive(slug)
 
