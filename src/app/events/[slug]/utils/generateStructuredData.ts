@@ -51,7 +51,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     '@type': 'Event',
     eventAttendanceMode,
     name: seo.title,
-    description,
+    description: description || seo.description,
     startDate: startDate.toISOString(),
     endDate: (endDate || startDate)?.toISOString(),
     location: eventLocation,
