@@ -17,3 +17,8 @@ export const FILTERS_CONFIG = {
     defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
   },
 } as const
+
+export const VIRTUAL_EVENT_FILTER_OPTION = {
+  id: 'virtual',
+  name: 'Virtual',
+} as const
