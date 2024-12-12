@@ -1,5 +1,7 @@
 'use client'
 
+import { GlobeSimple } from '@phosphor-icons/react'
+
 import { DEFAULT_LOCATION_FILTER_OPTION } from '@/constants/filterConstants'
 import { LOCATION_KEY } from '@/constants/searchParams'
 
@@ -23,6 +25,7 @@ export function LocationFilter({ options }: LocationFilterProps) {
     <FilterListbox
       selected={locationOption}
       options={options}
+      icon={GlobeSimple}
       onChange={setLocationOption}
     />
   )
