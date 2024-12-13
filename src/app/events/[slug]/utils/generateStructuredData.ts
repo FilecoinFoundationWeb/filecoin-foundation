@@ -15,7 +15,7 @@ import {
 
 import type { Event } from '../../types/eventType'
 
-type LocationType = Place | VirtualLocation | undefined
+type LocationType = Place | VirtualLocation
 
 type GetLocationProps = {
   location: Event['location']
@@ -51,7 +51,7 @@ export function generateStructuredData(data: Event): WithContext<EventSchema> {
     '@type': 'Event',
     eventAttendanceMode,
     name: seo.title,
-    description,
+    description: description || seo.description,
     startDate: startDate.toISOString(),
     endDate: (endDate || startDate)?.toISOString(),
     location: eventLocation,
@@ -69,6 +69,22 @@ function getLocation({
     return {
       '@type': 'VirtualLocation',
       url: externalLink || `${BASE_URL}${PATHS.EVENTS.path}/${slug}`,
+    }
+  }
+
+  const locationComponents = location.primary.split(', ')
+
+  if (locationComponents.length === 2) {
+    const [city, country] = locationComponents
+    return {
+      '@type': 'Place',
+      name: location.primary,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: city,
+        addressCountry: country,
+        addressRegion: location.region,
+      },
     }
   }
 
