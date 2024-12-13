@@ -89,27 +89,27 @@ Here's how we're measuring our ecosystem progress in 2025:
 
 FF is looking forward to supporting the community in 2025, and we have designed FF’s budget to support these objectives, key results, and strategic priorities. Here is a look into FF’s planned budget for its 2025 fiscal year (subject to change):
 
-| Categories                                                          | USD        | FIL       |
-| ------------------------------------------------------------------- | ---------- | --------- |
+| Categories                                                          |        USD |       FIL |
+| ------------------------------------------------------------------- | ---------: | --------: |
 | Ecosystem Grants - General & Support                                | $4,837,869 | 1,331,814 |
-| Ecosystem Grants - Network Metrics                                  | $1,380,000 | 156,000   |
-| Ecosystem Grants - FVM-Related                                      | $354,020   | 0         |
-| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $3,279,842 | 131,412   |
-| Token Holder-Related Grants and Research                            | $563,700   | 0         |
-| Use Case Grants and Support                                         | $709,453   | 88,836    |
-| Solutions Architecture                                              | $419,655   | 31,100    |
-| Developer Relations                                                 | $615,641   | 42,307    |
-| User Experience Improvement                                         | $831,000   | 0         |
-| Protocol Implementation Grants                                      | $2,821,000 | 0         |
-| Network Security (Including Bug Bounty and Network Audits)          | $2,206,955 | 119,988   |
-| Network Governance                                                  | $927,608   | 46,596    |
-| Filecoin+ Grants and Support                                        | $1,354,763 | 63,648    |
-| Network Infrastructure Grants                                       | $1,484,000 | 0         |
-| Network Tooling Grants                                              | $960,000   | 0         |
-| Events, Comms, Marketing, and Design                                | $7,799,258 | 373,096   |
-| Regulatory and Policy                                               | $1,656,712 | 36,374    |
-| Enablement (Legal, Finance, HR, IT, etc.)                           | $3,757,148 | 545,813   |
-| Other Operating Expenses (Insurance, Taxes, etc.)                   | $4,609,723 | 71,579    |
-| Cross-Functional Personnel                                          | $762,087   | 409,995   |
+| Ecosystem Grants - Network Metrics                                  | $1,380,000 |   156,000 |
+| Ecosystem Grants - FVM-Related                                      |   $354,020 |         0 |
+| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $3,279,842 |   131,412 |
+| Token Holder-Related Grants and Research                            |   $563,700 |         0 |
+| Use Case Grants and Support                                         |   $709,453 |    88,836 |
+| Solutions Architecture                                              |   $419,655 |    31,100 |
+| Developer Relations                                                 |   $615,641 |    42,307 |
+| User Experience Improvement                                         |   $831,000 |         0 |
+| Protocol Implementation Grants                                      | $2,821,000 |         0 |
+| Network Security (Including Bug Bounty and Network Audits)          | $2,206,955 |   119,988 |
+| Network Governance                                                  |   $927,608 |    46,596 |
+| Filecoin+ Grants and Support                                        | $1,354,763 |    63,648 |
+| Network Infrastructure Grants                                       | $1,484,000 |         0 |
+| Network Tooling Grants                                              |   $960,000 |         0 |
+| Events, Comms, Marketing, and Design                                | $7,799,258 |   373,096 |
+| Regulatory and Policy                                               | $1,656,712 |    36,374 |
+| Enablement (Legal, Finance, HR, IT, etc.)                           | $3,757,148 |   545,813 |
+| Other Operating Expenses (Insurance, Taxes, etc.)                   | $4,609,723 |    71,579 |
+| Cross-Functional Personnel                                          |   $762,087 |   409,995 |
 
 We’ll be sharing more about FF’s impact in 2024 and our plans for 2025 in our upcoming annual report. We are looking forward to working alongside the entire Filecoin community in 2025 to bring our shared vision to life. Join us in building a resilient, decentralized, and user-empowered Web.
