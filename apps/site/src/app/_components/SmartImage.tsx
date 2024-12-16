@@ -75,7 +75,7 @@ async function checkRemoteImageExists(url: string) {
   }
 }
 
-async function checkAssetImageExists(src: string): Promise<boolean> {
+async function checkAssetImageExists(src: string) {
   const publicPath = path.join(process.cwd(), 'public', src)
   try {
     await fs.access(publicPath, fs.constants.F_OK)
