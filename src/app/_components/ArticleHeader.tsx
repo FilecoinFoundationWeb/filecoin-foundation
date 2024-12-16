@@ -1,8 +1,7 @@
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { type HeadingProps, Heading } from '@/components/Heading'
-
-import { SmartImage, type SmartImageProps } from './SmartImage'
+import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
 
 type ArticleHeaderProps = {
   image: SmartImageProps
