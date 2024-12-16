@@ -82,7 +82,7 @@ export default function EventEntry({ params }: EventProps) {
         <TagGroup
           label={[
             getCategoryLabel({ collectionName: 'event_entries', category }),
-            eventHasConcluded ? 'Concluded Event' : undefined,
+            eventHasConcluded ? 'Past Event' : undefined,
           ]}
         />
         <PageHeader
