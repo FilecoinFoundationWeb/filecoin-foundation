@@ -96,7 +96,7 @@ export default function EventEntry({ params }: EventProps) {
             eventHasConcluded,
           })}
           image={{
-            ...(image || graphicsData.imageFallback.data),
+            ...image,
             alt: '',
             objectFit: 'cover',
           }}

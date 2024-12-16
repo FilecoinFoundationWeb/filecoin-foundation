@@ -126,7 +126,7 @@ export default function Events({ searchParams }: Props) {
           location: featuredEvent.location.primary,
         })}
         image={{
-          ...(featuredEvent.image || graphicsData.imageFallback.data),
+          ...featuredEvent.image,
           alt: '',
           objectFit: 'cover',
         }}
@@ -203,7 +203,7 @@ export default function Events({ searchParams }: Props) {
                             location: location.primary,
                           })}
                           image={{
-                            ...(image || graphicsData.imageFallback.data),
+                            ...image,
                             alt: '',
                             priority: isFirstTwoImages,
                             objectFit: 'cover',
