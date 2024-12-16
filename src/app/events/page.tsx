@@ -19,7 +19,6 @@ import {
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-import { getSortOptions } from '@/utils/getSortOptions'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -39,9 +38,9 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { Search } from '@/components/Search'
-import { Sort } from '@/components/Sort'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { EventSort } from './components/EventSort'
 import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from './constants/constants'
 import { eventsSortConfigs } from './constants/sortConfigs'
 import { getInvolvedData } from './data/getInvolvedData'
@@ -65,8 +64,6 @@ const { featuredEntry: featuredEventPath, seo } = getFrontmatter({
   path: PATHS.EVENTS,
   zodParser: FeaturedPageFrontmatterSchema.parse,
 })
-
-const sortOptions = getSortOptions(eventsSortConfigs)
 
 const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
 const featuredEvent = getEventData(featuredEventSlug)
@@ -93,7 +90,7 @@ export default function Events({ searchParams }: Props) {
     searchBy: ['title', 'location'],
   })
 
-  const { sortQuery, sortedResults, defaultSortQuery } = useSort({
+  const { sortedResults } = useSort({
     searchParams,
     entries: searchResults,
     configs: eventsSortConfigs,
@@ -156,19 +153,14 @@ export default function Events({ searchParams }: Props) {
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
               searchComponent={<Search query={searchQuery} />}
+              sortComponent={<EventSort />}
               filterComponents={[
                 <LocationFilter key="location" options={locationOptions} />,
               ]}
-              sortComponent={
-                <Sort
-                  query={sortQuery}
-                  options={sortOptions}
-                  defaultQuery={defaultSortQuery}
-                />
-              }
             />
             <FilterContainer.MobileFiltersAndResults
               searchComponent={<Search query={searchQuery} />}
+              sortComponent={<EventSort />}
               filterComponents={[
                 <CategoryFilter
                   key="category"
@@ -176,13 +168,6 @@ export default function Events({ searchParams }: Props) {
                 />,
                 <LocationFilter key="location" options={locationOptions} />,
               ]}
-              sortComponent={
-                <Sort
-                  query={sortQuery}
-                  options={sortOptions}
-                  defaultQuery={defaultSortQuery}
-                />
-              }
             />
             <FilterContainer.ContentWrapper>
               {filteredEntries.length === 0 ? (

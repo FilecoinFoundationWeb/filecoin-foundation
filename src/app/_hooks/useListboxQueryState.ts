@@ -1,25 +1,21 @@
 import { parseAsString, useQueryState } from 'nuqs'
 
-import { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
-
 import type { OptionType } from '@/components/Listbox/ListboxOption'
 
-type FilterListboxStateConfig = {
+type ListboxQueryStateConfig = {
   key: string
   options: Array<OptionType>
   defaultOption: OptionType
 }
 
-export function useFilterListboxState({
+export function useListboxQueryState({
   key,
   options,
   defaultOption,
-}: FilterListboxStateConfig) {
+}: ListboxQueryStateConfig) {
   const [optionId, setOptionId] = useQueryState<OptionType['id']>(
     key,
-    parseAsString
-      .withDefault(DEFAULT_FILTER_ID)
-      .withOptions({ shallow: false }),
+    parseAsString.withDefault(defaultOption.id).withOptions({ shallow: false }),
   )
 
   const selectedOption =

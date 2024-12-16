@@ -51,9 +51,9 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
           <div
             key={index}
             className={clsx(
-              'flex-1',
+              'min-w-0 flex-1',
               filterComponents.length === 1 && 'sm:w-64',
-              filterComponents.length === 2 && 'min-w-0 sm:w-52 md:w-44',
+              filterComponents.length === 2 && 'sm:w-52 md:w-44',
             )}
           >
             {filterComponent}
