@@ -15,11 +15,7 @@ import {
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
-
-import type { StaticImageProps } from '@/_types/imageType'
-
-import { SmartImage } from './SmartImage'
-import type { SmartImageProps } from './SmartImage'
+import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
 
 type TitleProps = {
   children: string

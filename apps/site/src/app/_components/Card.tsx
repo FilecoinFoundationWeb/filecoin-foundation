@@ -1,11 +1,10 @@
-import Image, { type ImageProps, type StaticImageData } from 'next/image'
+import { type StaticImageData } from 'next/image'
 
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/ctaType'
-import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { isExternalLink } from '@/utils/linkUtils'
@@ -15,20 +14,11 @@ import { BaseLink } from '@/components/BaseLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
+import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
 import {
   type TagGroupProps,
   TagGroup,
 } from '@/components/TagComponents/TagGroup'
-
-import { SmartImage } from './SmartImage'
-import type { SmartImageProps } from './SmartImage'
-
-type CardImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-  padding?: boolean
-  priority?: boolean
-  sizes?: string
-}
 
 type CardProps = {
   title: string | React.ReactNode

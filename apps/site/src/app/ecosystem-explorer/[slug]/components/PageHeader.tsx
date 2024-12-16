@@ -1,17 +1,11 @@
-import { type ImageProps } from 'next/image'
-
 import { clsx } from 'clsx'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-import { SmartImage } from '@/components/SmartImage'
-
-type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & {
-  alt?: string
-}
+import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
 
 type PageHeaderProps = {
-  image?: ImagePropsWithOptionalAlt
+  image?: SmartImageProps
 }
 
 export function PageHeader({ image }: PageHeaderProps) {
