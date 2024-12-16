@@ -1,6 +1,7 @@
-import { type CMSCollectionName, type CMSFieldOption } from '@/types/cmsConfig'
+import { type CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
+import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 export type CMSFieldOptionsAndValidIdsParams = {
   collectionName: CMSCollectionName
@@ -13,15 +14,8 @@ export function getCMSFieldOptionsAndValidIds({
 }: CMSFieldOptionsAndValidIdsParams) {
   const { fields } = getCollectionConfig(collectionName)
   const cmsOptions = getCMSFieldOptions(fields, fieldName)
-  const options = mapCMSOptionsToComponentFormat(cmsOptions)
+  const options = mapCMSOptionsToListboxFormat(cmsOptions)
   const validIds = options.map((setting) => setting.id)
 
   return { options, validIds }
-}
-
-function mapCMSOptionsToComponentFormat(options: Array<CMSFieldOption>) {
-  return options.map((option) => ({
-    id: option.value,
-    name: option.label,
-  }))
 }

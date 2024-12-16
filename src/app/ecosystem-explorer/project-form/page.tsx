@@ -4,6 +4,7 @@ import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
+import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -34,15 +35,8 @@ export const metadata = createMetadata({
 
 const { categories, subcategories } = getEcosystemCMSCategories()
 
-const categoryOptions = categories.map((category) => ({
-  id: category.value,
-  name: category.label,
-}))
-
-const subcategoryOptions = subcategories.map((subcategory) => ({
-  id: subcategory.value,
-  name: subcategory.label,
-}))
+const categoryOptions = mapCMSOptionsToListboxFormat(categories)
+const subcategoryOptions = mapCMSOptionsToListboxFormat(subcategories)
 
 type Props = {
   searchParams: NextServerSearchParams
