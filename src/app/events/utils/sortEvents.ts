@@ -7,6 +7,8 @@ import {
   startOfYesterday,
 } from 'date-fns'
 
+import type { NonEmptyArray } from '@/types/utils'
+
 import type { Event } from '../types/eventType'
 
 type DateFields = Pick<Event, 'startDate' | 'endDate'>
@@ -25,6 +27,12 @@ export function sortEventsDesc<T extends DateFields>(events: Array<T>) {
 
 export function sortEventsAsc<T extends DateFields>(events: Array<T>) {
   return sortEvents(events, compareAsc)
+}
+
+export function sortNonEmptyEventsAsc<T extends DateFields>(
+  events: NonEmptyArray<T>,
+) {
+  return sortEvents(events, compareAsc) as NonEmptyArray<T>
 }
 
 export function getUpcomingEvents<T extends DateFields>(events: Array<T>) {
