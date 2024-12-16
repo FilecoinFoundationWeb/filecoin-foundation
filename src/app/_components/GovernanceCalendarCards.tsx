@@ -107,7 +107,7 @@ export function GovernanceCalendarCards() {
               <div className="flex flex-col gap-3 p-4">
                 <div className="flex gap-2">
                   <TagLabel
-                    borderColor="brand-100"
+                    variant="primary"
                     icon={Clock}
                   >{`UTC ${startTime} - ${endTime}`}</TagLabel>
                   <TagLabel>Zoom</TagLabel>
