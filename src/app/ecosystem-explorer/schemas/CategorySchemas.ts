@@ -1,41 +1,31 @@
 import { z } from 'zod'
 
-import {
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-} from '@/constants/paths'
-
-import {
-  getCategoryDataFromDirectory,
-  getCategorySettingsFromMap,
-} from '@/utils/categoryUtils'
+import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { createEnumSchema } from '@/utils/zodUtils'
 
-function createSchemaForDirectory(directoryPath: string) {
-  const categoryData = getCategoryDataFromDirectory(directoryPath)
-  const { validCategoryIds } = getCategorySettingsFromMap(categoryData)
-  return createEnumSchema(validCategoryIds)
+export const CategorySchema = createSchemaForField('category')
+export const SubcategorySchema = createSchemaForField('subcategory')
+
+const CategoryValue = z.string()
+const SubcategoryValue = z.string()
+
+export const CategoryOptionSchema = z.object({
+  value: CategoryValue,
+  label: z.string(),
+  subcategories: z.array(SubcategoryValue),
+})
+
+export const SubcategoryOptionSchema = z.object({
+  value: SubcategoryValue,
+  label: z.string(),
+  parent_category: CategoryValue,
+})
+
+function createSchemaForField(fieldName: 'category' | 'subcategory') {
+  const { fields } = getCollectionConfig('ecosystem_projects')
+  const cmsOptions = getCMSFieldOptions(fields, fieldName)
+
+  const values = cmsOptions.map((option) => option.value)
+
+  return createEnumSchema(values)
 }
-
-export const CategorySchema = createSchemaForDirectory(
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-)
-
-export const SubcategorySchema = createSchemaForDirectory(
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-)
-
-const CategorySlug = z.string()
-const SubcategorySlug = z.string()
-
-export const DirectoryCategorySchema = z.object({
-  slug: CategorySlug,
-  name: z.string(),
-  subcategories: z.array(SubcategorySlug),
-})
-
-export const DirectorySubcategorySchema = z.object({
-  slug: SubcategorySlug,
-  name: z.string(),
-  parent_category: CategorySlug,
-})
