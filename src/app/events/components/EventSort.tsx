@@ -25,7 +25,7 @@ export function EventSort() {
     <SortListbox
       options={options}
       selected={selectedSort}
-      icon={CalendarBlank}
+      buttonIcon={CalendarBlank}
       onChange={setSelectedSort}
     />
   )

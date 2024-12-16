@@ -1,6 +1,7 @@
 'use client'
 
 import { Listbox } from '@headlessui/react'
+import { ArrowsDownUp } from '@phosphor-icons/react'
 
 import {
   ListboxButton,
@@ -14,19 +15,19 @@ export type SortListboxProps = {
   selected: OptionType
   onChange: (newOption: OptionType) => void
   options: ReadonlyArray<OptionType>
-  icon: ListboxButtonProps['leadingIcon']
+  buttonIcon?: ListboxButtonProps['leadingIcon']
 }
 
 export function SortListbox({
   selected,
   onChange,
   options,
-  icon,
+  buttonIcon = ArrowsDownUp,
 }: SortListboxProps) {
   return (
     <Listbox value={selected} onChange={onChange}>
       <ListboxButton
-        leadingIcon={icon}
+        leadingIcon={buttonIcon}
         text={selected.name}
         compactBelow="md"
       />

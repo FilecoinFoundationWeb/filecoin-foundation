@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from 'react'
 
-import { ArrowsDownUp } from '@phosphor-icons/react'
-
 import { SORT_KEY } from '@/constants/searchParams'
 
 import { useSort } from '@/hooks/useSort'
@@ -42,7 +40,6 @@ export function Sort({ query, options, defaultQuery }: SortProps) {
     <SortListbox
       options={options}
       selected={selectedOption}
-      icon={ArrowsDownUp}
       onChange={handleSortChange}
     />
   )
