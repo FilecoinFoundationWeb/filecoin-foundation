@@ -1,7 +1,5 @@
 'use client'
 
-import { FunnelSimple } from '@phosphor-icons/react'
-
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
@@ -35,7 +33,6 @@ export function CategoryFilter({ options }: CategoryProps) {
         <FilterListbox
           selected={categoryOption}
           options={options}
-          icon={FunnelSimple}
           onChange={setCategoryOption}
         />
       </div>

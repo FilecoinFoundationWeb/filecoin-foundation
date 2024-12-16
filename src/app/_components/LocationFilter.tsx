@@ -25,7 +25,7 @@ export function LocationFilter({ options }: LocationFilterProps) {
     <FilterListbox
       selected={locationOption}
       options={options}
-      icon={GlobeSimple}
+      buttonIcon={GlobeSimple}
       onChange={setLocationOption}
     />
   )

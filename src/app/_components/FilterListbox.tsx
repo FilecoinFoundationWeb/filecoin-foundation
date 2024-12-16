@@ -17,18 +17,18 @@ type FilterListboxProps = {
   selected: OptionType
   options: Array<OptionType>
   onChange: (selected: OptionType) => void
-  icon: ListboxButtonProps['leadingIcon']
+  buttonIcon?: ListboxButtonProps['leadingIcon']
 }
 
 export function FilterListbox({
   selected,
   options,
   onChange,
-  icon,
+  buttonIcon = FunnelSimple,
 }: FilterListboxProps) {
   return (
     <Listbox value={selected} onChange={onChange}>
-      <ListboxButton text={selected.name} leadingIcon={icon} />
+      <ListboxButton text={selected.name} leadingIcon={buttonIcon} />
       <ListboxOptions>
         {options.map((option) => (
           <ListboxOption key={option.id} option={option} />
