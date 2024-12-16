@@ -9,7 +9,8 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagGroup } from '@/components/TagGroup'
+import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
+import { TagLabel } from '@/components/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
@@ -77,12 +78,15 @@ export default function EventEntry({ params }: EventProps) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="grid gap-4">
-        <TagGroup
-          label={[
-            getCategoryLabel({ collectionName: 'event_entries', category }),
-            eventHasConcluded ? 'Past Event' : undefined,
-          ]}
-        />
+        <TagGroupContainer>
+          <TagLabel variant="primary">
+            {getCategoryLabel({ collectionName: 'event_entries', category })}
+          </TagLabel>
+          {eventHasConcluded && (
+            <TagLabel variant="callout">Past Event</TagLabel>
+          )}
+        </TagGroupContainer>
+
         <PageHeader
           title={title}
           description={description}
