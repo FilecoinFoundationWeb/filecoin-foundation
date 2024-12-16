@@ -5,6 +5,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
+import { findOrThrow } from '@/utils/findOrThrow'
 
 import { CTASection } from '@/components/CTASection'
 import { PageLayout } from '@/components/PageLayout'
@@ -12,6 +13,7 @@ import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
+import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
 import { Article } from './components/Article'
@@ -23,6 +25,8 @@ type EcosystemProjectProps = {
     slug: string
   }
 }
+
+const { subcategories: cmsSubcategories } = getEcosystemCMSCategories()
 
 export function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
@@ -53,6 +57,11 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     subcategories,
   } = data
 
+  const projectSubcategory = findOrThrow(
+    cmsSubcategories,
+    (cmsSubcategory) => cmsSubcategory.value === subcategories[0],
+  )
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
@@ -66,7 +75,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         repo={repo}
         twitter={twitter}
         featuredContent={featuredContent}
-        subcategories={subcategories}
+        subcategory={projectSubcategory.label}
       />
 
       <ShareArticle
