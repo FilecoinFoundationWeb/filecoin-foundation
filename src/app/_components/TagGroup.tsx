@@ -1,3 +1,4 @@
+import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
 import { type TagProps, TagLabel } from '@/components/TagLabel'
 
 export type TagGroupProps = {
@@ -18,7 +19,7 @@ export function TagGroup({ label }: TagGroupProps) {
   }
 
   return (
-    <span className="flex gap-2">
+    <TagGroupContainer>
       {labelsArray.map((label, index) => (
         <TagLabel
           key={label}
@@ -27,6 +28,6 @@ export function TagGroup({ label }: TagGroupProps) {
           {label}
         </TagLabel>
       ))}
-    </span>
+    </TagGroupContainer>
   )
 }
