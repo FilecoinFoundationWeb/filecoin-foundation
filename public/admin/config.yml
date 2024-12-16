@@ -654,8 +654,6 @@ collections:
         label: "Category"
         widget: "select"
         options:
-          - label: "Co-Hosted"
-            value: "co-hosted"
           - label: "Hosted"
             value: "hosted"
           - label: "Supported & Sponsored"

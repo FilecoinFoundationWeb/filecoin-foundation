@@ -13,7 +13,7 @@ start-date: 2024-02-27T14:00:51.036Z
 end-date: 2024-02-27T21:00:51.050Z
 image:
   src: /assets/images/sis24.png
-category: co-hosted
+category: hosted
 seo:
   description:
     Join the Social Impact Summit 2024 to explore the intersection of blockchain
