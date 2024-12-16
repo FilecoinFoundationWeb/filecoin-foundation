@@ -14,7 +14,7 @@ const { data: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
 export type SmartImageProps = {
   src?: string | StaticImageProps['data']
-  alt: string
+  alt?: string
   className?: string
   objectFit?: ImageObjectFit
   padding?: boolean
@@ -22,7 +22,7 @@ export type SmartImageProps = {
 
 export async function SmartImage({
   src,
-  alt,
+  alt = '',
   className,
   ...props
 }: SmartImageProps) {
