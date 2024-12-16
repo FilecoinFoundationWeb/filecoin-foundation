@@ -15,16 +15,13 @@ export function TagGroup({ label }: TagGroupProps) {
   }
 
   if (labelsArray.length === 1) {
-    return <TagLabel borderColor="brand-100">{labelsArray[0]}</TagLabel>
+    return <TagLabel variant="primary">{labelsArray[0]}</TagLabel>
   }
 
   return (
     <TagGroupContainer>
       {labelsArray.map((label, index) => (
-        <TagLabel
-          key={label}
-          borderColor={index === 0 ? 'brand-100' : 'brand-500'}
-        >
+        <TagLabel key={label} variant={index === 0 ? 'primary' : 'secondary'}>
           {label}
         </TagLabel>
       ))}
