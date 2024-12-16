@@ -22,7 +22,7 @@ export function BlogPostHeader({
   return (
     <ArticleHeader
       image={{
-        src: image?.src || graphicsData.imageFallback.data.src,
+        src: image?.src,
         alt: '',
       }}
     >

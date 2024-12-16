@@ -114,7 +114,7 @@ export default async function EventEntry(props: EventProps) {
             eventHasConcluded,
           })}
           image={{
-            ...(image || graphicsData.imageFallback.data),
+            ...image,
             alt: '',
             objectFit: 'cover',
           }}

@@ -1,4 +1,4 @@
-import Image, { type ImageProps } from 'next/image'
+import Image, { type ImageProps, type StaticImageData } from 'next/image'
 
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
@@ -20,6 +20,9 @@ import {
   TagGroup,
 } from '@/components/TagComponents/TagGroup'
 
+import { SmartImage } from './SmartImage'
+import type { SmartImageProps } from './SmartImage'
+
 type CardImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
   padding?: boolean
@@ -33,7 +36,7 @@ type CardProps = {
   metaData?: MetaDataType
   description?: string
   cta?: CTAPropsWithSpacing
-  image?: CardImageProps
+  image?: SmartImageProps
   borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
   textIsClamped?: boolean
   as?: React.ElementType
@@ -117,10 +120,10 @@ Card.Image = function ImageComponent({
 
   if (isStaticImage) {
     return (
-      <Image
+      <SmartImage
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
-        src={image.data}
+        src={(image.data as StaticImageData).src}
         alt={commonProps.alt}
       />
     )
@@ -128,7 +131,7 @@ Card.Image = function ImageComponent({
 
   return (
     <div className="relative aspect-video">
-      <Image
+      <SmartImage
         fill
         {...commonProps}
         className={clsx(commonProps.className, 'h-full w-full')}

@@ -1,13 +1,11 @@
-import Image from 'next/image'
-
-import type { ImageProps } from '@/types/imageType'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { type HeadingProps, Heading } from '@/components/Heading'
 
+import { SmartImage, type SmartImageProps } from './SmartImage'
+
 type ArticleHeaderProps = {
-  image: ImageProps
+  image: SmartImageProps
   children?: React.ReactNode
 }
 
@@ -20,7 +18,7 @@ export function ArticleHeader({ image, children }: ArticleHeaderProps) {
     <header className="space-y-6">
       <div className="space-y-6">{children}</div>
       <div className="relative aspect-video">
-        <Image
+        <SmartImage
           fill
           priority
           quality={100}

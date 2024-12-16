@@ -1,5 +1,3 @@
-import { graphicsData } from '@/data/graphicsData'
-
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { AvatarGroup } from '@/components/AvatarGroup'
 import { TagGroup } from '@/components/TagComponents/TagGroup'
@@ -21,7 +19,7 @@ export function DigestArticleHeader({
   return (
     <ArticleHeader
       image={{
-        src: image?.src || graphicsData.imageFallback.data.src,
+        src: image?.src,
         alt: '',
       }}
     >
