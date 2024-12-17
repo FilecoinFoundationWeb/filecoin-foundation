@@ -8,21 +8,10 @@ import { API_URLS } from '@/constants/apiUrls'
 
 import { CardGrid } from '@/components/CardGrid'
 
-import { CalendarEventsSchema } from '../../schemas/CalendarEventSchemas'
+import { getCalendarEvents } from '../../utils/getCalendarEvents'
 
 import { CalendarCard } from './CalendarCard'
 import { Placeholder } from './Placeholder'
-
-async function getEvents(endpoint: string) {
-  const response = await fetch(endpoint)
-
-  if (!response.ok) {
-    throw new Error('getEvents: Failed to fetch events')
-  }
-
-  const data = await response.json()
-  return CalendarEventsSchema.parse(data)
-}
 
 export function CalendarCards() {
   const [currentDate] = useState(new Date())
@@ -30,7 +19,7 @@ export function CalendarCards() {
 
   const url = `${API_URLS.googleCalendar}${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?maxResults=6&singleEvents=true&timeMin=${timeMin}&key=${process.env.NEXT_PUBLIC_CALENDAR_API_KEY}`
 
-  const { data: events, error } = useSWR(url, getEvents)
+  const { data: events, error } = useSWR(url, getCalendarEvents)
 
   if (error) {
     return <Placeholder text="Failed to load events" />
