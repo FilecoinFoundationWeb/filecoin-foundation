@@ -20,8 +20,4 @@ export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   content: z.string().optional(),
   email: z.string(),
   'full-name': z.string(),
-})
-  .strict()
-  .transform(function temporaryForBackwardCompatibility(data) {
-    return { ...data, subcategories: [data.subcategory] }
-  })
+}).strict()
