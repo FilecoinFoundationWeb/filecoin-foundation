@@ -10,9 +10,9 @@ import { getMetaData } from '../../utils/getMetaData'
 
 type ProgramSectionProps = NonNullable<Event['program']>
 
-export function ProgramSection({ title, events }: ProgramSectionProps) {
+export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
   return (
-    <PageSection kicker="Explore" title={title || 'Events'}>
+    <PageSection kicker={kicker || 'Explore'} title={title || 'Events'}>
       <CardGrid cols="smTwo">
         {events.map((event) => {
           const {

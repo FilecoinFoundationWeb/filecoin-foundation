@@ -718,6 +718,11 @@ collections:
             widget: "string"
             required: false
             hint: This is the title for the Events section header. For example, "Main Stage Events." Defaults to 'Events.'
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the subtitle text that appears above the section title. Defaults to 'Explore'."
           - name: "events"
             label: "Events"
             widget: "list"
@@ -759,6 +764,11 @@ collections:
             widget: "string"
             required: false
             hint: This is the title for the Schedule section header. For example, "Main Stage Schedule." Defaults to 'Schedule.'
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the subtitle text that appears above the section title. Defaults to 'Join Us'."
           - name: "days"
             label: "Event Days"
             widget: "list"
