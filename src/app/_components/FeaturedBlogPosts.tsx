@@ -37,7 +37,7 @@ export function FeaturedBlogPosts() {
             <Card
               key={slug}
               metaData={getMetaData(publishedOn)}
-              tagLabel={tagLabel}
+              tagLabels={tagLabel}
               title={title}
               description={description}
               textIsClamped={true}

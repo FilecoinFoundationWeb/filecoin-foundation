@@ -203,7 +203,7 @@ export default function Events({ searchParams }: Props) {
                           title={title}
                           borderColor="brand-400"
                           textIsClamped={true}
-                          tagLabel={tagLabel}
+                          tagLabels={tagLabel}
                           metaData={getMetaData({
                             startDate,
                             endDate,

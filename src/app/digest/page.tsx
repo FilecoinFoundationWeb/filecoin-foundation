@@ -71,7 +71,7 @@ export default function Digest() {
               <Card
                 key={slug}
                 title={title}
-                tagLabel={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
+                tagLabels={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 avatars={authors}
                 description={description}
                 textIsClamped={true}
