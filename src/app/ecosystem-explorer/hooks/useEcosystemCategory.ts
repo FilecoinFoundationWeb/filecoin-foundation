@@ -28,16 +28,14 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
       return entries
     }
 
-    return entries.filter((entry) =>
-      categoryIds.includes(entry.subcategories[0]),
-    )
+    return entries.filter((entry) => categoryIds.includes(entry.subcategory))
   }, [categoryIds, entries])
 
   const entriesPerSubcategory = useMemo(() => {
     const counts = new Map()
 
     entries.forEach((entry) => {
-      const subcategory = entry.subcategories[0]
+      const subcategory = entry.subcategory
       counts.set(subcategory, (counts.get(subcategory) || 0) + 1)
     })
 

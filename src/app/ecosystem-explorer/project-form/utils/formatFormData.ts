@@ -16,7 +16,7 @@ export function formatFormData(data: EcosystemProjectFormDataWithoutLogo) {
     email: encrypt(data.email.trim()),
     title: data.title,
     category: data.category.id,
-    subcategories: [data.subcategory.id],
+    subcategory: data.subcategory.id,
     tech: buildArrayFromTruthyKeys(data.tech),
     description: data.briefSummary,
     content: data.networkUseCase,
