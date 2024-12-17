@@ -13,6 +13,7 @@ import { formatDateComponentsFromISO } from '@/utils/dateUtils'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { Heading } from '@/components/Heading'
+import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
 import { TagLabel } from '@/components/TagLabel'
 
 type CalendarProps = {
@@ -105,13 +106,13 @@ export function GovernanceCalendarCards() {
             <Calendar startDate={start.dateTime} />
             <div className="flex-1 pb-14 sm:pb-0">
               <div className="flex flex-col gap-3 p-4">
-                <div className="flex gap-2">
+                <TagGroupContainer>
                   <TagLabel
-                    variant="primary"
                     icon={Clock}
                   >{`UTC ${startTime} - ${endTime}`}</TagLabel>
                   <TagLabel variant="secondary">Zoom</TagLabel>
-                </div>
+                </TagGroupContainer>
+
                 <Heading tag="h3" variant="lg">
                   {summary}
                 </Heading>
