@@ -70,7 +70,7 @@ function Calendar({ startDate }: CalendarProps) {
   )
 }
 
-export function GovernanceCalendarCards() {
+export function CalendarCards() {
   const [currentDate] = useState(new Date())
   const timeMin = encodeURIComponent(currentDate.toISOString())
 
