@@ -15,6 +15,7 @@ import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
 import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
+import { sortNonEmptyEventsAsc } from '../utils/sortEvents'
 
 import { ProgramSection } from './components/ProgramSection'
 import { RecapSection } from './components/RecapSection'
@@ -106,9 +107,11 @@ export default function EventEntry({ params }: EventProps) {
       {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
 
       {eventHasProgram && (
-        <ProgramSection title={program.title} events={program.events} />
+        <ProgramSection
+          title={program.title}
+          events={sortNonEmptyEventsAsc(program.events)}
+        />
       )}
-
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
       {eventHasSchedule && <ScheduleSection schedule={schedule} />}
       {eventHasSponsors && <SponsorSection sponsors={sponsors} />}
