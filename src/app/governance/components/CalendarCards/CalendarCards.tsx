@@ -3,28 +3,15 @@
 import { useState } from 'react'
 
 import useSWR from 'swr'
-import { z } from 'zod'
 
 import { API_URLS } from '@/constants/apiUrls'
 
 import { CardGrid } from '@/components/CardGrid'
 
+import { CalendarEventsSchema } from '../../schemas/CalendarEventSchemas'
+
 import { CalendarCard } from './CalendarCard'
 import { Placeholder } from './Placeholder'
-
-const eventSchema = z.object({
-  id: z.string(),
-  start: z.object({ dateTime: z.string() }),
-  end: z.object({ dateTime: z.string() }),
-  htmlLink: z.string(),
-  summary: z.string(),
-})
-
-export type EventType = z.infer<typeof eventSchema>
-
-const eventsSchema = z.object({
-  items: z.array(eventSchema),
-})
 
 async function getEvents(endpoint: string) {
   const response = await fetch(endpoint)
@@ -34,7 +21,7 @@ async function getEvents(endpoint: string) {
   }
 
   const data = await response.json()
-  return eventsSchema.parse(data)
+  return CalendarEventsSchema.parse(data)
 }
 
 export function CalendarCards() {

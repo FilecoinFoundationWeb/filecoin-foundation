@@ -7,10 +7,11 @@ import { Heading } from '@/components/Heading'
 import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
 import { TagLabel } from '@/components/TagLabel'
 
-import { Calendar } from './Calendar'
-import type { EventType } from './CalendarCards'
+import type { CalendarEventType } from '../../schemas/CalendarEventSchemas'
 
-type CalendarCardProps = Omit<EventType, 'id'>
+import { Calendar } from './Calendar'
+
+type CalendarCardProps = Omit<CalendarEventType, 'id'>
 
 export function CalendarCard({
   start,

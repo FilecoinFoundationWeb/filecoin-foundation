@@ -1,9 +1,9 @@
 import { formatDateComponentsFromISO } from '@/utils/dateUtils'
 
-import type { EventType } from './CalendarCards'
+import type { CalendarEventType } from '../../schemas/CalendarEventSchemas'
 
 type CalendarProps = {
-  startDate: EventType['start']['dateTime']
+  startDate: CalendarEventType['start']['dateTime']
 }
 
 export function Calendar({ startDate }: CalendarProps) {
