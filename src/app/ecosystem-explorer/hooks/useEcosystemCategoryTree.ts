@@ -8,7 +8,7 @@ type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   subcategories: ReturnType<typeof getEcosystemCMSCategories>['subcategories']
   entries: Array<Entry>
 }
-export function useEcosystemCategory<Entry extends EcosystemProject>({
+export function useEcosystemCategoryTree<Entry extends EcosystemProject>({
   entries,
   categories,
   subcategories,
@@ -41,5 +41,5 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
     [categories, subcategories, entriesPerSubcategory],
   )
 
-  return { categoryTree }
+  return categoryTree
 }

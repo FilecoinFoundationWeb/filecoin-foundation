@@ -39,7 +39,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { CategoryFilters } from './components/CategoryFilters'
 import { CategoryFiltersSlider } from './components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
-import { useEcosystemCategory } from './hooks/useEcosystemCategory'
+import { useEcosystemCategoryTree } from './hooks/useEcosystemCategoryTree'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemCMSCategories } from './utils/getEcosystemCMSCategories'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
@@ -94,7 +94,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     filterFn: entryMatchesSubcategoryQuery,
   })
 
-  const { categoryTree } = useEcosystemCategory({
+  const categoryTree = useEcosystemCategoryTree({
     entries: sortedResults,
     categories,
     subcategories,
