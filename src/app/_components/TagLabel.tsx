@@ -25,7 +25,7 @@ export type TagProps = {
   children: string
 }
 
-export function TagLabel({ variant = 'secondary', icon, children }: TagProps) {
+export function TagLabel({ variant = 'primary', icon, children }: TagProps) {
   const { base, variants } = styles
 
   return (

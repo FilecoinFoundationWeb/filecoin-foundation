@@ -81,7 +81,7 @@ export default function EventEntry({ params }: EventProps) {
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="grid gap-4">
         <TagGroupContainer>
-          <TagLabel variant="primary">
+          <TagLabel>
             {getCategoryLabel({ collectionName: 'event_entries', category })}
           </TagLabel>
           {eventHasConcluded && (
