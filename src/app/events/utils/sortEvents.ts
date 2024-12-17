@@ -7,7 +7,7 @@ import {
   startOfYesterday,
 } from 'date-fns'
 
-import type { NonEmptyArray } from '@/types/utils'
+import type { NonEmptyMutableArray } from '@/types/utils'
 
 import type { Event } from '../types/eventType'
 
@@ -29,10 +29,11 @@ export function sortEventsAsc<T extends DateFields>(events: Array<T>) {
   return sortEvents(events, compareAsc)
 }
 
-export function sortNonEmptyEventsAsc<T extends DateFields>(
-  events: NonEmptyArray<T>,
-) {
-  return sortEvents(events, compareAsc) as NonEmptyArray<T>
+export function sortNonEmptyEventsAsc<
+  T extends DateFields,
+  Array extends NonEmptyMutableArray<T>,
+>(events: Array) {
+  return sortEvents(events, compareAsc) as Array
 }
 
 export function getUpcomingEvents<T extends DateFields>(events: Array<T>) {
