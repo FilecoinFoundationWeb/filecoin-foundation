@@ -1,5 +1,14 @@
+import { VIRTUAL_EVENT_FILTER_OPTION } from '@/events/constants/constants'
+
 type WithCategory = {
   category: string
+}
+
+type WithLocation = {
+  location: {
+    primary: string
+    region?: string
+  }
 }
 
 export function entryMatchesCategoryQuery<Entry extends WithCategory>(
@@ -7,4 +16,15 @@ export function entryMatchesCategoryQuery<Entry extends WithCategory>(
   query?: string,
 ) {
   return entry.category === query
+}
+
+export function entryMatchesLocationQuery<Entry extends WithLocation>(
+  entry: Entry,
+  query?: string,
+) {
+  if (query === VIRTUAL_EVENT_FILTER_OPTION.id) {
+    return entry.location.primary === VIRTUAL_EVENT_FILTER_OPTION.name
+  }
+
+  return entry.location.region === query
 }

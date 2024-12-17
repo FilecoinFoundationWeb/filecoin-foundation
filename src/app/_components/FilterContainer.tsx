@@ -6,11 +6,18 @@ type LayoutProps = {
   children: ReactNode
 }
 
-type FilterProps = {
-  search: ReactNode
-  sort: ReactNode
-  category?: ReactNode
-  results?: ReactNode
+type FilterComponents = [ReactNode, ReactNode?]
+
+type DesktopFiltersProps = {
+  searchComponent: ReactNode
+  filterComponents?: FilterComponents
+  sortComponent: ReactNode
+}
+
+type MobileFiltersProps = {
+  searchComponent: ReactNode
+  filterComponents: FilterComponents
+  sortComponent: ReactNode
 }
 
 type ResultsProps = {
@@ -32,31 +39,46 @@ export function FilterContainer({ children }: LayoutProps) {
 }
 
 FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
-  search,
-  category,
-  sort,
-}: FilterProps) {
+  searchComponent,
+  filterComponents,
+  sortComponent,
+}: MobileFiltersProps) {
   return (
-    <aside className="flex flex-col gap-4 lg:hidden">
-      <div className="flex flex-col gap-3 sm:flex-row">
-        {search}
-        <div className="flex flex-1 gap-3 sm:flex-row">
-          <div className="w-full sm:w-64 md:w-44">{category}</div>
-          <div className="md:w-44">{sort}</div>
-        </div>
+    <aside className="flex flex-col gap-3 sm:flex-row lg:hidden">
+      {searchComponent}
+      <div className="flex flex-1 gap-3 sm:flex-row">
+        {filterComponents.map((filterComponent, index) => (
+          <div
+            key={index}
+            className={clsx(
+              'min-w-0 flex-1',
+              filterComponents.length === 1 && 'sm:w-64',
+              filterComponents.length === 2 && 'sm:w-52 md:w-44',
+            )}
+          >
+            {filterComponent}
+          </div>
+        ))}
+        <div className="md:w-44">{sortComponent}</div>
       </div>
     </aside>
   )
 }
 
 FilterContainer.DesktopFilters = function DesktopFilters({
-  search,
-  sort,
-}: FilterProps) {
+  searchComponent,
+  filterComponents,
+  sortComponent,
+}: DesktopFiltersProps) {
   return (
     <div className="hidden justify-end gap-6 lg:flex">
-      {search}
-      <div>{sort}</div>
+      {searchComponent}
+      {filterComponents?.map((filterComponent, index) => (
+        <div key={index} className="shrink-0 lg:w-48">
+          {filterComponent}
+        </div>
+      ))}
+      <div className="shrink-0 lg:w-48">{sortComponent}</div>
     </div>
   )
 }
