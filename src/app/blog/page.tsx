@@ -194,7 +194,7 @@ export default function Blog({ searchParams }: Props) {
                           description={description}
                           textIsClamped={true}
                           metaData={getMetaData(publishedOn)}
-                          tagLabel={tagLabel}
+                          tagLabels={tagLabel}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',

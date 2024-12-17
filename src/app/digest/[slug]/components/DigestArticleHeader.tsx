@@ -25,7 +25,7 @@ export function DigestArticleHeader({
         alt: '',
       }}
     >
-      <TagGroup label={[`Issue ${issueNumber}`, `Article ${articleNumber}`]} />
+      <TagGroup labels={[`Issue ${issueNumber}`, `Article ${articleNumber}`]} />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
       <AvatarGroup authors={authors} />
     </ArticleHeader>

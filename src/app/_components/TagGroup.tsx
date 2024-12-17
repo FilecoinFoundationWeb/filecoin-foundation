@@ -2,12 +2,12 @@ import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
 import { type TagProps, TagLabel } from '@/components/TagLabel'
 
 export type TagGroupProps = {
-  label: TagProps['children'] | Array<TagProps['children'] | undefined>
+  labels: TagProps['children'] | Array<TagProps['children']>
 }
 
-export function TagGroup({ label }: TagGroupProps) {
-  const labelsArray = (Array.isArray(label) ? label : [label]).filter(
-    (label) => label !== undefined,
+export function TagGroup({ labels }: TagGroupProps) {
+  const labelsArray = (Array.isArray(labels) ? labels : [labels]).filter(
+    Boolean,
   )
 
   if (labelsArray.length === 0) {

@@ -26,7 +26,7 @@ type CardImageProps = (StaticImageProps | ImageProps) & {
 
 type CardProps = {
   title: string | React.ReactNode
-  tagLabel?: TagGroupProps['label']
+  tagLabels?: TagGroupProps['labels']
   metaData?: MetaDataType
   description?: string
   cta?: CTAPropsWithSpacing
@@ -56,7 +56,7 @@ const borderStyles = {
 
 export function Card({
   title,
-  tagLabel,
+  tagLabels,
   metaData,
   description,
   cta,
@@ -75,7 +75,7 @@ export function Card({
     >
       {image && <Card.Image image={image} />}
       <div className="flex flex-col gap-3 p-4">
-        {tagLabel && <TagGroup label={tagLabel} />}
+        {tagLabels && <TagGroup labels={tagLabels} />}
         {metaData && <Meta metaData={metaData} />}
         <Card.Title title={title} />
         <div className={clsx(cta && 'mb-10')}>
