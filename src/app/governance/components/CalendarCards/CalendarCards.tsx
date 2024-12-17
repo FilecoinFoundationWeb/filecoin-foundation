@@ -16,7 +16,7 @@ import { Heading } from '@/components/Heading'
 import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
 import { TagLabel } from '@/components/TagLabel'
 
-import { Calendar } from './CalendarCards/Calendar'
+import { Calendar } from './Calendar'
 
 type PlaceholderProps = {
   text: string
