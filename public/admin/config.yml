@@ -894,13 +894,13 @@ collections:
             min: 0
             max: 7
             fields: *event_sponsor_config
-          - name: recap-youtube-embed-url
-            label: Event Recap YouTube Embed URL
-            widget: string
-            required: false
-            hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
-          - name: recap-youtube-playlist-url
-            label: Event Recap YouTube Playlist URL
-            widget: string
-            required: false
+      - name: recap-youtube-embed-url
+        label: Event Recap YouTube Embed URL
+        widget: string
+        required: false
+        hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
+      - name: recap-youtube-playlist-url
+        label: Event Recap YouTube Playlist URL
+        widget: string
+        required: false
       - *meta_config_with_title_fallback
