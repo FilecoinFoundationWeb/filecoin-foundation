@@ -2,25 +2,15 @@
 
 import { useState } from 'react'
 
-import { Clock, CalendarPlus } from '@phosphor-icons/react/dist/ssr'
 import useSWR from 'swr'
 import { z } from 'zod'
 
 import { API_URLS } from '@/constants/apiUrls'
 
-import { formatDateComponentsFromISO } from '@/utils/dateUtils'
-
-import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Heading } from '@/components/Heading'
-import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
-import { TagLabel } from '@/components/TagLabel'
 
-import { Calendar } from './Calendar'
-
-type PlaceholderProps = {
-  text: string
-}
+import { CalendarCard } from './CalendarCard'
+import { Placeholder } from './Placeholder'
 
 const eventSchema = z.object({
   id: z.string(),
@@ -29,6 +19,8 @@ const eventSchema = z.object({
   htmlLink: z.string(),
   summary: z.string(),
 })
+
+export type EventType = z.infer<typeof eventSchema>
 
 const eventsSchema = z.object({
   items: z.array(eventSchema),
@@ -43,14 +35,6 @@ async function getEvents(endpoint: string) {
 
   const data = await response.json()
   return eventsSchema.parse(data)
-}
-
-function Placeholder({ text }: PlaceholderProps) {
-  return (
-    <div className="py-8 lg:flex lg:h-[558px] lg:items-center lg:justify-center">
-      {text}
-    </div>
-  )
 }
 
 export function CalendarCards() {
@@ -75,42 +59,15 @@ export function CalendarCards() {
 
   return (
     <CardGrid cols="lgTwo">
-      {events.items.map((event) => {
-        const { id, start, end, htmlLink, summary } = event
-
-        const { time: startTime } = formatDateComponentsFromISO(start.dateTime)
-        const { time: endTime } = formatDateComponentsFromISO(end.dateTime)
-
-        return (
-          <li
-            key={id}
-            className="relative flex flex-col rounded-lg border border-brand-300 p-1 sm:flex-row"
-          >
-            <Calendar startDate={start.dateTime} />
-            <div className="flex-1 pb-14 sm:pb-0">
-              <div className="flex flex-col gap-3 p-4">
-                <TagGroupContainer>
-                  <TagLabel
-                    icon={Clock}
-                  >{`UTC ${startTime} - ${endTime}`}</TagLabel>
-                  <TagLabel variant="secondary">Zoom</TagLabel>
-                </TagGroupContainer>
-
-                <Heading tag="h3" variant="lg">
-                  {summary}
-                </Heading>
-              </div>
-
-              <Card.Link
-                href={htmlLink}
-                icon={CalendarPlus}
-                text="Add to Google Calendar"
-                left={['left-4', 'sm:left-40']}
-              />
-            </div>
-          </li>
-        )
-      })}
+      {events.items.map(({ id, start, end, htmlLink, summary }) => (
+        <CalendarCard
+          key={id}
+          start={start}
+          end={end}
+          htmlLink={htmlLink}
+          summary={summary}
+        />
+      ))}
     </CardGrid>
   )
 }
