@@ -15,7 +15,7 @@ export function TagGroup({ label }: TagGroupProps) {
   }
 
   if (labelsArray.length === 1) {
-    return <TagLabel variant="primary">{labelsArray[0]}</TagLabel>
+    return <TagLabel>{labelsArray[0]}</TagLabel>
   }
 
   return (

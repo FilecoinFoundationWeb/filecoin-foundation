@@ -110,7 +110,7 @@ export function GovernanceCalendarCards() {
                     variant="primary"
                     icon={Clock}
                   >{`UTC ${startTime} - ${endTime}`}</TagLabel>
-                  <TagLabel>Zoom</TagLabel>
+                  <TagLabel variant="secondary">Zoom</TagLabel>
                 </div>
                 <Heading tag="h3" variant="lg">
                   {summary}
