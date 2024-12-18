@@ -12,13 +12,13 @@ subcategory: "decentralized-science"
 tech:
   - filecoin
   - ipfs
-description: Hippocrat is a Healthcare Data Protocol that transforms healthcare data collection and utilization by leveraging blockchain technology and zero-knowledge proofs
+description: Hippocrat is a Healthcare Data Protocol that transforms healthcare data collection and utilization by leveraging blockchain technology and zero-knowledge proofs.
 website: https://hippocrat.io
 year-joined: 2024-01-01T00:00:00.000Z
 repo: https://github.com/hippocrat-dao
 twitter: https://x.com/hippocrat_io
 seo:
-  description: Hippocrat is a Healthcare Data Protocol that transforms healthcare data collection and utilization by leveraging blockchain technology and zero-knowledge proofs
+  description: Hippocrat is a Healthcare Data Protocol that transforms healthcare data collection and utilization by leveraging blockchain technology and zero-knowledge proofs.
 ---
 
 Hippocrat project leverages Filecoin for securely storing encrypted user healthcare data, utilizing the Lighthouse SDK for efficient integration. By harnessing the decentralized storage power of Filecoin, we ensure that sensitive healthcare information is securely encrypted before being stored, providing both confidentiality and integrity. This approach also enhances data availability and durability while benefiting from the decentralized nature of the Filecoin network, which reduces the risk of data loss or tampering.
