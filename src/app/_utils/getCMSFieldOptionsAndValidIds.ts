@@ -1,4 +1,4 @@
-import { type CMSCollectionName } from '@/types/cmsConfig'
+import type { CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'

@@ -1,5 +1,5 @@
-import { type CategoryMap } from '@/types/categoryTypes'
-import { type CMSCollectionName } from '@/types/cmsConfig'
+import type { CategoryMap } from '@/types/categoryTypes'
+import type { CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 
