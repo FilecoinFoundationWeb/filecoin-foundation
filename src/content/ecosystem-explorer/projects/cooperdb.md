@@ -6,7 +6,6 @@ published-on: 2024-04-05T14:44:50.309000Z
 description:
   "Relational Database Management built on top of IPFS/Filecoin and FilSwan
   MCS."
-category: storage
 tech:
   - filecoin
 website: https://cooper-db.vercel.app/

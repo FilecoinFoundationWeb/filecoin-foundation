@@ -7,7 +7,6 @@ description:
   "Repl is the first repledging Protocol for pledged FIL assets. It aims
   to enhance the efficiency of pledged FIL, remove idiosyncratic risks among Filecoin
   storage providers, and lower the complexity for people to earn Filecoin rewards."
-category: storage
 tech:
   - filecoin
 image:

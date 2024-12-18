@@ -5,7 +5,6 @@ updated-on: 2024-04-25T17:21:06.439Z
 published-on: 2024-04-25T17:21:06.448Z
 image:
   src: /assets/images/solmedia.png
-category: storage
 subcategory: data-storage-management
 description: Decentralized content sharing platform on Solana, integrating both
   Solana and Filecoin on-chain IPFS technology.

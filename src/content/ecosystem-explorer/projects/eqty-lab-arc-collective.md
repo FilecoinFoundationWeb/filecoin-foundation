@@ -6,7 +6,6 @@ published-on: 2024-03-29T21:41:34.450000Z
 description:
   "EQTY Lab weaves together machine and human processes to establish new
   trust in AI."
-category: storage
 tech:
   - filecoin
 image:

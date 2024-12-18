@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Livepeer is an open video infrastructure network for live and on-demand
   streaming."
-category: "media-entertainment"
 tech:
   - "filecoin"
   - "ipfs"

@@ -6,7 +6,6 @@ published-on: 2024-05-16T14:44:42.701000Z
 description:
   "Incentivizes (good) behavior on Filecoin. We provide tooling and compliance
   services."
-category: tooling-productivity
 tech:
   - filecoin
 image:

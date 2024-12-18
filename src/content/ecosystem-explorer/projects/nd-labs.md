@@ -6,7 +6,6 @@ published-on: 2024-03-20T14:02:57.599000Z
 description:
   "Aims to lower the entry barriers and costs for Web3 users accessing
   decentralized storage networks."
-category: storage
 tech:
   - filecoin
 image:

@@ -7,7 +7,6 @@ description:
   "The Starling Lab is the academic research lab innovating with the latest
   cryptographic methods and decentralized web protocols to meet the technical and
   ethical challenges of establishing trust in our most sensitive digital records."
-category: storage
 tech:
   - filecoin
   - ipfs

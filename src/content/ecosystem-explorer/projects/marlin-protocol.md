@@ -9,7 +9,6 @@ description:
   provisioned using smart contract calls host LLMs, AI/ML models, gateways, MEV, automation
   bots, or backends for arbitrary computations using external APIs with baked-in auto-scaling
   and fault tolerance."
-category: storage
 tech:
   - ipfs
 image:

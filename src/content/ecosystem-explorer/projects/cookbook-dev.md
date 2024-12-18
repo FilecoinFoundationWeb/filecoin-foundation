@@ -6,7 +6,6 @@ published-on: 2024-04-04T20:26:55.704000Z
 description:
   "A platform to find smart contracts, solidity libraries, and discover
   protocols."
-category: tooling-productivity
 tech:
   - filecoin
 image:

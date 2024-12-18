@@ -6,7 +6,6 @@ published-on: 2024-03-29T21:39:14.213000Z
 description:
   "Chainstack offers managed blockchain services making it simple to launch
   and scale decentralized networks and applications."
-category: storage
 tech:
   - filecoin
 image:

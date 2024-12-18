@@ -4,7 +4,6 @@ created-on: 2024-01-04T22:40:28.333Z
 updated-on: 2024-01-05T21:39:15.639Z
 published-on: 2024-01-11T13:26:59.787Z
 description: "Swan is a distributed data and computing platform."
-category: storage
 tech:
   - filecoin
   - ipfs

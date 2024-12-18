@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Portrait is an open-source web page builder that lets you turn your
   blockchain address into a website."
-category: media-entertainment
 tech:
   - filecoin
   - ipfs

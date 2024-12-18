@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "DCENT is a Filecoin storage provider that specializes in onboarding
   data to the Filecoin network."
-category: tooling-productivity
 tech:
   - filecoin
   - ipfs

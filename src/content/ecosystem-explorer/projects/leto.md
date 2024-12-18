@@ -4,7 +4,6 @@ created-on: 2024-04-05T23:01:19.895000Z
 updated-on: 2024-04-05T23:01:19.919000Z
 published-on: 2024-04-05T23:01:19.933000Z
 description: "Metrics for users and devs to help manage data on IPFS."
-category: storage
 tech:
   - ipfs
 image:

@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX19K/Rc2O2JNeZi38bFGWJgNEn47t7lHVqeMxcWrQtvRhEVtX1OjQm
 full-name: encrypted::U2FsdGVkX1+CyhLiKGfB16sYpDbywVK8c1uvlxgQ+T4=
 image:
   src: /assets/images/66073711d5091847d128f8b2_renderhive.png
-category: media-entertainment
 subcategory: photo-video
 description: Renderhive is going to be the first fully decentralized render farm
   for Blender built on Web3 technologies.

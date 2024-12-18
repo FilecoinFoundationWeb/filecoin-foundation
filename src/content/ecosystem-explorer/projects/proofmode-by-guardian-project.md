@@ -6,7 +6,6 @@ published-on: 2024-02-27T19:57:29.861Z
 description:
   "Open-source mobile camera app, toolkit and protocol that adds verifiable
   digital proof to photos and video at the point of capture."
-category: storage
 tech:
   - filecoin
   - ipfs

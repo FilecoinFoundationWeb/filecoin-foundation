@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX1+CeQoE58NHdw0vPsYYZF4dSIgZLZvcHcchlr2huTniFo3xSm+Z+a
 full-name: encrypted::U2FsdGVkX19COzpdoCo8EvyIWrRSOn4/3kkb11OwO/o=
 image:
   src: /assets/images/660734bb2f8beb060933dd1d_builtdifferent.png
-category: tooling-productivity
 subcategory: dapp
 description: Introducing, Teaching and Supporting Decentralized Storage and
   Peer-to-Peer File Sharing in Africa

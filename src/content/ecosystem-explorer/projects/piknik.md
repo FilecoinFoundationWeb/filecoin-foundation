@@ -7,7 +7,6 @@ description:
   "Headquartered in San Diego, California, PiKNiK is an enterprise-grade
   decentralized storage provider that makes it easy for anyone to store and provide
   storage on the Filecoin network, without any technical knowledge required."
-category: storage
 tech:
   - filecoin
   - ipfs

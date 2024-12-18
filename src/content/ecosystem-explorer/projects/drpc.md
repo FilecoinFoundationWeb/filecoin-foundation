@@ -4,7 +4,6 @@ created-on: 2024-04-05T13:32:22.074000Z
 updated-on: 2024-04-05T13:32:22.089000Z
 published-on: 2024-04-05T13:32:22.105000Z
 description: "Decentralized RPC node provider for Filecoin network."
-category: tooling-productivity
 tech:
   - filecoin
 image:

@@ -6,7 +6,6 @@ published-on: 2024-03-29T21:41:02.169000Z
 description:
   "Compute-over-data pipelines for survey storage systems using knowledge
   graphs"
-category: storage
 tech:
   - filecoin
 image:

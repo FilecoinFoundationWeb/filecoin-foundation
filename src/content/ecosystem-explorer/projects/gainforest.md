@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "GainForest is a non-profit focused on reversing deforestation and climate
   change through blockchain technology."
-category: science-climate-space
 tech:
   - filecoin
   - ipfs

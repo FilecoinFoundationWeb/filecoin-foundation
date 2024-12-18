@@ -6,7 +6,6 @@ published-on: 2024-03-20T13:58:36.718000Z
 description:
   "Web3 infrastructure provider, renowned for offering comprehensive Web3
   hosting solutions worldwide."
-category: storage
 tech:
   - filecoin
 image:

@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX18LJoyomAiMhB9/7pPxEvetp5DeQkGgRAQt50VmQP/UVpdqoFh293
 full-name: encrypted::U2FsdGVkX18eII72dGIMNe87g8Da/YlS6O/suqfEpos=
 image:
   src: /assets/images/660732902f8beb060931f9cb_ceramic.png
-category: storage
 subcategory: data-storage-management
 description: Portable User Storage for Dapps
 website: https://ceramic.network

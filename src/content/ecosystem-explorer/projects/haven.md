@@ -6,7 +6,6 @@ published-on: 2024-03-29T21:44:28.465000Z
 description:
   "A new intermediation business for Depin that will start with a focus
   on Filecoin"
-category: storage
 tech:
   - filecoin
 image:

@@ -6,7 +6,6 @@ published-on: 2024-02-26T21:29:27.688000Z
 description:
   "Develops decentralized infrastructure for onloading and extracting large
   amounts of geospatial data."
-category: storage
 tech:
   - filecoin
 image:

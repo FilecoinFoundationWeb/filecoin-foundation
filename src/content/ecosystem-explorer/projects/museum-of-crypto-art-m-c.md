@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "The Museum of Crypto Art is an art preservation tool and community of
   artists, collectors, and developers."
-category: "media-entertainment"
 tech:
   - "filecoin"
   - "ipfs"

@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Lighthouse provides perpetual storage on the Filecoin network, allowing
   users to store their files long-term at a fixed price."
-category: storage
 tech:
   - filecoin
   - ipfs

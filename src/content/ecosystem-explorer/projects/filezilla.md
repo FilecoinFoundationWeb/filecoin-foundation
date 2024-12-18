@@ -7,7 +7,6 @@ description:
   "Filezilla aims to create a cross-chain bridge that connects Solana and
   Filecoin mainnets. This will increase the existing partnership that has already
   been established between both chains."
-category: storage
 tech:
   - filecoin
 image:

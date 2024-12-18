@@ -4,7 +4,6 @@ created-on: 2024-03-29T21:28:51.960000Z
 updated-on: 2024-03-29T21:43:26.916000Z
 published-on: 2024-03-29T21:43:26.916000Z
 description: "Developer Toolkit and Middleware for Filecoin"
-category: storage
 tech:
   - filecoin
 image:

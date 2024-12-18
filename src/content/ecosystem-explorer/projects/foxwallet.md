@@ -6,7 +6,6 @@ published-on: 2024-02-27T20:36:33.539000Z
 description:
   "FoxWallet is a safe and easy-to-use decentralized wallet, dedicated
   to creating an entrance and connection to the Web3 world."
-category: tooling-productivity
 tech:
   - filecoin
 image:

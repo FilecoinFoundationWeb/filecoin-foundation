@@ -6,7 +6,6 @@ published-on: 2024-02-01T15:51:35.145Z
 description:
   "TRANSFER Data Trust is a speculative design project to build an automated,
   non-profit cooperative trust powered by FVM."
-category: "storage"
 tech:
   - "ipfs"
   - "filecoin"

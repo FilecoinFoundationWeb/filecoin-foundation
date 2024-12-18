@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Ntent is a digital art and immersive experience collective and smart
   contract platform for generative and dynamic art."
-category: "media-entertainment"
 tech:
   - "ipfs"
 image:

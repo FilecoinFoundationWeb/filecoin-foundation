@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX1/eTRdhsEoVDfvcvUy9h7qTXMI/8j/VArMqcx4bUOvYMljo3GZHB6
 full-name: encrypted::U2FsdGVkX19FDqUbhydWqTaOfRhRgdzhnV/ZTqBf30A=
 image:
   src: /assets/images/cw-logo-square-1-.png
-category: tooling-productivity
 subcategory: developer-tools
 description: Helps businesses of all sizes to automate their back-office crypto
   accounting tasks.

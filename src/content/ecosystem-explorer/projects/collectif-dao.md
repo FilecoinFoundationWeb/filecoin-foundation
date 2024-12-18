@@ -6,7 +6,6 @@ published-on: 2024-01-24T13:50:38.349000Z
 description:
   "Decentralized non-custodial liquid staking protocol bringing capital
   efficient storage an mining to the Filecoin network"
-category: public-goods-dweb
 tech:
   - filecoin
 image:

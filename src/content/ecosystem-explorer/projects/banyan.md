@@ -7,7 +7,6 @@ description:
   "Banyan is making decentralized, content-addressed storage accessible
   for enterprise clients on the Filecoin network, with a focus on user-controlled
   privacy and verifiability."
-category: storage
 tech:
   - filecoin
   - ipfs

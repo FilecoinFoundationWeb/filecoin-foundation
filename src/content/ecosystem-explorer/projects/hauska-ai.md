@@ -6,7 +6,6 @@ published-on: 2024-03-20T19:42:42.053000Z
 description:
   "Leads in revolutionizing home design and remodeling with AI and Web3
   tech"
-category: artificial-intelligence
 tech:
   - filecoin
   - ipfs

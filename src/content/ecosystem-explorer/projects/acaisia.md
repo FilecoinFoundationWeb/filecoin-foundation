@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX18TAB5CnG9325PaJIO9DI+rKazftQAlcqF0busvXPVd2WE+VIDoju
 full-name: encrypted::U2FsdGVkX184mwMbwX2qkfbFqTTpci2lhWbXi85iWTo=
 image:
   src: /assets/images/acaisia-logo_white.png
-category: storage
 subcategory: data-storage-management
 description: By leveraging decentralized technologies, Acaisia offers
   affordable, secure, and transparent computing and storage options.

@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX1/xCUu/Ci2vANFUkMZ70CuhQUsPwTMmDdk54Yg76ampppQgldjwrS
 full-name: encrypted::U2FsdGVkX1/abisEWSDswdjzokw334rUFquMNyBtIyM=
 image:
   src: /assets/images/659746e70b1ecbf25f67cd3c_artifact-labs-logo.webp
-category: media-entertainment
 subcategory: arts-collectibles-nfts
 description: Artifact Labs preserves and connects culture and history on the blockchain.
 website: https://www.artifactlabs.com

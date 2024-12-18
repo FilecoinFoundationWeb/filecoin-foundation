@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "A product and service company developing hardware-accelerated cryptography
   for verifiable and confidential computing."
-category: storage
 tech:
   - filecoin
   - ipfs

@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Web3.storage is a suite of APIs and services for developers and storage
   clients to interact with data that’s not physically stored."
-category: storage
 tech:
   - filecoin
   - ipfs

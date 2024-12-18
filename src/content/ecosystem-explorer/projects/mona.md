@@ -5,7 +5,6 @@ updated-on: 2024-03-29T21:45:56.946Z
 published-on: 2024-03-29T21:45:56.946Z
 image:
   src: /assets/images/mona.png
-category: media-entertainment
 subcategory: arts-collectibles-nfts
 description: Mona's mission is to empower billions of people to create, collect,
   and share high quality experiences on the blockchain.

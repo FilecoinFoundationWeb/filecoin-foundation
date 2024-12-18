@@ -4,7 +4,6 @@ created-on: 2024-01-12T20:30:19.591Z
 updated-on: 2024-01-12T20:30:19.621Z
 published-on: 2024-01-12T20:30:19.636Z
 description: "Trusted LLM to book web3 service providers 10x faster."
-category: "storage"
 tech:
   - "filecoin"
 image:

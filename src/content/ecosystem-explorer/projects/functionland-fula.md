@@ -6,7 +6,6 @@ published-on: 2024-01-18T16:17:36.584000Z
 description:
   "Functionland has built a peer-to-peer platform (Fula) that aims to disrupt
   traditional cloud storage."
-category: storage
 tech:
   - ipfs
 image:

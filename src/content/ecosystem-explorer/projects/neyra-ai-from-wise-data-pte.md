@@ -6,7 +6,6 @@ published-on: 2024-02-22T19:39:58.195Z
 description:
   "Neyra AI is an innovative personal assistant and storage solution designed
   to enhance productivity and asset management."
-category: artificial-intelligence
 tech:
   - filecoin
 website: "https://drive.neyra.ai/"

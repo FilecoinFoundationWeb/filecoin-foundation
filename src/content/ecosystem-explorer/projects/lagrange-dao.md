@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Lagrange DAO is a DAO for data value realization, providing data sharing
   and analytic spaces for decentralized science."
-category: "public-goods-dweb"
 tech:
   - "filecoin"
   - "ipfs"

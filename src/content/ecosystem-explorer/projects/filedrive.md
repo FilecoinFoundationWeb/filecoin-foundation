@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "FileDrive is focused on research and development for distributed storage
   on the Filecoin network."
-category: storage
 tech:
   - filecoin
   - ipfs

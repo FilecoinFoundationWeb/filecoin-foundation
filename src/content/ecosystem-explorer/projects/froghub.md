@@ -4,7 +4,6 @@ created-on: 2024-04-05T23:10:27.358000Z
 updated-on: 2024-04-05T23:10:27.374000Z
 published-on: 2024-04-05T23:10:27.385000Z
 description: "Permanent Storage and Processing of Data"
-category: tooling-productivity
 tech:
   - filecoin
 image:

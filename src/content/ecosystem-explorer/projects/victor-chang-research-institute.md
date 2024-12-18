@@ -7,7 +7,6 @@ description:
   "As they work toward finding a cure for heart disease, researchers at
   Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share
   research data."
-category: education-academia-health
 tech:
   - filecoin
   - ipfs

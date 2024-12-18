@@ -6,7 +6,6 @@ published-on: 2024-04-04T02:05:42.613000Z
 description:
   "Planet-scale data pipeline addressing composability of on & off-chain
   data"
-category: storage
 tech:
   - filecoin
 image:

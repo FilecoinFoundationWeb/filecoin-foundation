@@ -5,7 +5,6 @@ updated-on: 2024-07-30T16:00:00.000Z
 published-on: 2024-07-30T16:00:00.000Z
 image:
   src: /assets/images/bagel-logo.webp
-category: artificial-intelligence
 subcategory: ai-productivity-utilities
 description: Bagel is an AI and cryptography research lab, building a credibly
   neutral, peer-to-peer machine learning ecosystem.

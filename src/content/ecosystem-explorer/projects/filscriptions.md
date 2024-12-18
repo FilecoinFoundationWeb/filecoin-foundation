@@ -4,7 +4,6 @@ created-on: 2024-01-18T17:56:20.233000Z
 updated-on: 2024-01-18T17:56:20.306000Z
 published-on: 2024-01-18T17:56:20.316000Z
 description: "The first inscription aggregation trading platform on Filecoin."
-category: storage
 tech:
   - filecoin
   - ipfs

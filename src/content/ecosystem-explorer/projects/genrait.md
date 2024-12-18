@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "GenRAIT gives scientists a platform to analyze genomic data, generate
   scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
-category: education-academia-health
 tech:
   - filecoin
   - ipfs

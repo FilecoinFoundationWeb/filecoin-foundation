@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX1+h6RmMi4t0WYFT7T1ji3kGSZgrg6tmlThtvdenSRtZLk9QnL17fS
 full-name: encrypted::U2FsdGVkX1+Qex0HbOHhF5/VzUQqHgl/hblpV0vhgbs=
 image:
   src: /assets/images/6597243633c341e0379b9712_nj6wqvn7kai05ws5irrbrcma4zz_ctatdako4sxlrio.png
-category: storage
 subcategory: data-storage-management
 description: Twin Quasar provides infrastructure and open-source tooling for
   Filecoin storage providers.

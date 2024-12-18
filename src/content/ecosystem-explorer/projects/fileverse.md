@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Fileverse is a Web3 file-sharing tool leveraging peer-to-peer storage
   networks like IPFS."
-category: storage
 tech:
   - filecoin
   - ipfs

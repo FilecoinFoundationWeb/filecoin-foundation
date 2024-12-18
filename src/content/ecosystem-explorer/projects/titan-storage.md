@@ -6,7 +6,6 @@ published-on: 2024-03-20T13:04:49.640000Z
 description:
   "Titan Storage, a market-leading decentralized, secure, and efficient
   storage solution."
-category: storage
 tech:
   - filecoin
 image:

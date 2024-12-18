@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX18UoWWBsJuaN7kJtfMcrSH8gEU6yp0at9+u04eBX4Xfy2H2CkPEHU
 full-name: encrypted::U2FsdGVkX19f1ThRZmEHmQL1kxZXLSdaBlCVYuTFjC0=
 image:
   src: /assets/images/bidlo.png
-category: storage
 subcategory: data-storage-management
 description: Built on top of Filecoin, Bidlo offers storage bounties, where
   storage providers compete to win deals, bringing the price down for clients.

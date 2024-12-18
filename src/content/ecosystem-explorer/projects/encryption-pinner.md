@@ -7,7 +7,6 @@ description:
   "Encryption Pinner is a simple development tool, which allows users to
   encrypt their files with an encryption method of their choice, and then pin them
   to their personal business Pinata gateway."
-category: storage
 tech:
   - ipfs
 website: https://devpost.com/software/encryption-pinner?ref_content=user-portfolio&ref_feature=in_progress

@@ -4,7 +4,6 @@ created-on: 2024-04-03T17:39:33.777000Z
 updated-on: 2024-04-03T17:39:33.788000Z
 published-on: 2024-04-03T17:39:33.799000Z
 description: "Enable storage deals on Filecoin storage providers with tailored pricing."
-category: storage
 tech:
   - filecoin
 image:

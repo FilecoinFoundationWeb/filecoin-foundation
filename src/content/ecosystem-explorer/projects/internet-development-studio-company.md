@@ -6,7 +6,6 @@ published-on: 2024-01-12T20:15:45.772000Z
 description:
   "Internet Development Studio is an engineering and design team based
   out of Seattle—WA, Boston—MA, and New York—NY. We design, brand, market, and code."
-category: tooling-productivity
 tech:
   - filecoin
   - ipfs

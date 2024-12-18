@@ -7,7 +7,6 @@ description:
   "The SETI Institute is a non-profit research organization with the mission
   to lead humanity's quest to understand the origins and prevalence of life and intelligence
   in the universe and share that knowledge with the world."
-category: science-climate-space
 tech:
   - filecoin
   - ipfs

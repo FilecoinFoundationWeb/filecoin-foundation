@@ -4,7 +4,6 @@ created-on: 2024-03-29T21:28:55.160000Z
 updated-on: 2024-03-29T21:50:12.309000Z
 published-on: 2024-03-29T21:50:12.309000Z
 description: "AWS of decentralized computing"
-category: storage
 tech:
   - filecoin
 image:

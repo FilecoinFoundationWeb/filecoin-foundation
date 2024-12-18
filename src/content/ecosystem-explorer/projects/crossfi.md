@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX1+y5LlX25sOPR2353bt0rPp+TaRyA7zkWrAZG3OQkmCwRRnYmmGoL
 full-name: encrypted::U2FsdGVkX1/spij3VSs6yPeigTLwWnI8cGO3dI2GktA=
 image:
   src: /assets/images/crossfi_logo_white.png
-category: tooling-productivity
 subcategory: wallets-identity-authentication
 description: CrossFi aims to democratize decentralized finance through the CrossFi platform.
 website: https://crossfimain.com/

@@ -8,7 +8,6 @@ description:
   innovative business models and save on cloud costs. Merklebot offers hybrid cloud
   approach working with both big cloud providers and leveraging the Filecoin network
   to offer affordable data storage."
-category: storage
 tech:
   - filecoin
 image:

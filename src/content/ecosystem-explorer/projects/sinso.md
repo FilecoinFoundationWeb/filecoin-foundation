@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "SINSO builds Web3 infrastructure simplifying decentralized hot data
   cache and data governance."
-category: education-academia-health
 tech:
   - filecoin
   - ipfs

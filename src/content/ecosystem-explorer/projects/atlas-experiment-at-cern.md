@@ -7,7 +7,6 @@ description:
   "The ATLAS Collaboration has partnered with Seal Storage Technology in
   a pilot project to explore decentralized cloud storage as an efficient and cost-effective
   option for archival data storage."
-category: science-climate-space
 tech:
   - filecoin
   - ipfs

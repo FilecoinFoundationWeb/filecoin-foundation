@@ -5,7 +5,6 @@ updated-on: 2024-04-03T17:57:20.173Z
 published-on: 2024-04-03T17:57:20.191Z
 image:
   src: /assets/images/decentroge.png
-category: storage
 subcategory: data-storage-management
 description: Decentroge is a decentralized online storage platform with NFT and
   chatting capabilities.

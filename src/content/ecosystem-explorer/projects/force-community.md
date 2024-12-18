@@ -7,7 +7,6 @@ email: encrypted::U2FsdGVkX18tCE8m91lISJpCwsEheiOA++M0jqJf/yj8/LxBLK/hKwGTakC3+l
 full-name: encrypted::U2FsdGVkX19kDe6kAMvxfsZnpfagIsaJNw7OwR9+9qw=
 image:
   src: /assets/images/66073292f68243b0fc173909_forcecommunity.png
-category: public-goods-dweb
 subcategory: governance-daos-public-goods
 description: "Force Community is a non-profit leading Web3 community."
 website: https://forcecommunity.io/

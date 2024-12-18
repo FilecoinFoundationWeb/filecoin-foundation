@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Ocean Protocol is a decentralized data exchange protocol to unlock data
   for AI."
-category: "storage"
 tech:
   - "filecoin"
   - "ipfs"
