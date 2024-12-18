@@ -759,6 +759,11 @@ collections:
         required: false
         collapsed: true
         fields:
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Join Us'."
           - name: "title"
             label: "Section Title"
             widget: "string"
@@ -776,6 +781,11 @@ collections:
                 label: "Events"
                 widget: "list"
                 fields:
+                  - name: "tag"
+                    label: "Event Tag"
+                    widget: "string"
+                    required: false
+                    hint: "A short label or category (e.g., event location or host) displayed above the event title."
                   - name: "title"
                     label: "Event Title"
                     widget: "string"
