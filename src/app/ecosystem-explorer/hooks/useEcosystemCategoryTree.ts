@@ -26,16 +26,15 @@ export function useEcosystemCategoryTree<Entry extends EcosystemProject>({
 
   const categoryTree = useMemo(
     () =>
-      categories.map((category) => ({
-        value: category.value,
-        label: category.label,
+      categories.map(({ value, label }) => ({
+        value,
+        label,
         subcategories: subcategories
-          .filter(
-            (subcategory) => subcategory.parent_category === category.value,
-          )
-          .map((subcategory) => ({
-            ...subcategory,
-            count: entriesPerSubcategory.get(subcategory.value) || 0,
+          .filter(({ parent_category }) => parent_category === value)
+          .map(({ value, label }) => ({
+            value,
+            label,
+            count: entriesPerSubcategory.get(value) || 0,
           })),
       })),
     [categories, subcategories, entriesPerSubcategory],
