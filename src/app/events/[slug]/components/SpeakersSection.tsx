@@ -9,10 +9,16 @@ type SpeakersSectionProps = {
 }
 
 export function SpeakersSection({ speakers }: SpeakersSectionProps) {
+  const { title, kicker, description, speakersList } = speakers
+
   return (
-    <PageSection kicker="speakers" title="Speakers">
+    <PageSection
+      kicker={kicker || 'Speakers'}
+      title={title || 'Speakers'}
+      description={description}
+    >
       <CardGrid cols="mdTwo">
-        {speakers.map(({ name, title, company, linkedin, image }) => (
+        {speakersList.map(({ name, title, company, linkedin, image }) => (
           <KeyMemberCard
             key={name}
             name={name}
