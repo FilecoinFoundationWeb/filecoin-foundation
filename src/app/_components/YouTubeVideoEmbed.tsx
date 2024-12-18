@@ -50,6 +50,7 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
         params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
         playerClass="sr-only"
         poster="maxresdefault"
+        webp={true}
         wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
       />
       <YouTubeLogoIcon
