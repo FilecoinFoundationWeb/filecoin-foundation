@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 
-const speakersListSchema = z.object({
+const speakerSchema = z.object({
   name: z.string(),
   title: z.string(),
   company: z.string(),
@@ -11,8 +11,8 @@ const speakersListSchema = z.object({
 })
 
 export const SpeakersSchema = z.object({
-  kicker: z.string().optional().default('Speakers'),
-  title: z.string().optional().default('Speakers'),
+  kicker: z.string().default('Speakers').optional(),
+  title: z.string().default('Speakers').optional(),
   description: z.string().optional(),
-  speakers_list: z.array(speakersListSchema),
+  speakers_list: z.array(speakerSchema),
 })
