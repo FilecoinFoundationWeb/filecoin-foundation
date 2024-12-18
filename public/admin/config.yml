@@ -754,6 +754,11 @@ collections:
         required: false
         collapsed: true
         fields:
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Join Us'."
           - name: "title"
             label: "Section Title"
             widget: "string"

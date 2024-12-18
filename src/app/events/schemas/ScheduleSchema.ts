@@ -29,7 +29,8 @@ const EventDaySchema = z
 
 export const ScheduleSchema = z
   .object({
-    title: z.string().optional(),
+    kicker: z.string().optional().default('Join Us'),
+    title: z.string().optional().default('Schedule'),
     days: z.array(EventDaySchema),
   })
   .strict()
