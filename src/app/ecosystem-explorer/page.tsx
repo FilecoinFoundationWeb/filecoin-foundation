@@ -38,7 +38,7 @@ import { CategoryFiltersSlider } from './components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { useEcosystemCategory } from './hooks/useEcosystemCategory'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
+import { getEcosystemCMSCategories } from './utils/getEcosystemCMSCategories'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 const NoSSRPagination = dynamic(
@@ -68,7 +68,7 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const { categories, subcategories } = getCategoriesFromDirectory()
+const { categories, subcategories } = getEcosystemCMSCategories()
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -161,7 +161,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                       const isFirstTwoImages = i < 2
                       const category = findOrThrow(
                         subcategories,
-                        (category) => category.slug === categoryId,
+                        ({ value }) => value === categoryId,
                       )
 
                       return (
@@ -169,7 +169,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabel={category.name}
+                          tagLabel={category.label}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',

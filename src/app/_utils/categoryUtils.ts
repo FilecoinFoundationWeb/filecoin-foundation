@@ -1,24 +1,11 @@
-import { type CategoryMap, type CategoryYAMLData } from '@/types/categoryTypes'
-import { type CMSCollectionName } from '@/types/cmsConfig'
+import type { CategoryMap } from '@/types/categoryTypes'
+import type { CMSCollectionName } from '@/types/cmsConfig'
 
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
-import { readAndValidateYamlFiles } from '@/utils/yamlUtils'
 
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName
   category: string
-}
-
-export function getCategoryDataFromDirectory(directoryPath: string) {
-  const categoriesData =
-    readAndValidateYamlFiles<CategoryYAMLData>(directoryPath)
-  const categoryMap: CategoryMap = {}
-
-  categoriesData.forEach(({ slug, name }) => {
-    categoryMap[slug] = name
-  })
-
-  return categoryMap
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
