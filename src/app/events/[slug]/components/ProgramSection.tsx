@@ -12,7 +12,7 @@ type ProgramSectionProps = NonNullable<Event['program']>
 
 export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
   return (
-    <PageSection kicker={kicker || 'Explore'} title={title || 'Events'}>
+    <PageSection kicker={kicker} title={title}>
       <CardGrid cols="smTwo">
         {events.map((event) => {
           const {
