@@ -71,10 +71,13 @@ export default function Digest() {
               <Card
                 key={slug}
                 title={title}
-                tagLabels={[`Issue ${issueNumber}`, `Article ${articleNumber}`]}
                 avatars={authors}
                 description={description}
                 textIsClamped={true}
+                tags={[
+                  { text: `Issue ${issueNumber}` },
+                  { text: `Article ${articleNumber}` },
+                ]}
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',

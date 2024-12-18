@@ -174,7 +174,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           description={description}
-                          tagLabels={category.name}
+                          tags={[{ text: category.name }]}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',

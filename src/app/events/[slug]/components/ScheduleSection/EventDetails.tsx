@@ -2,7 +2,7 @@
 
 import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
-import { TagLabel } from '@/components/TagLabel'
+import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 import type { Event } from '../../../schemas/ScheduleSchema'

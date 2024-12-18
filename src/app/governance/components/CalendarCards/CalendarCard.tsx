@@ -4,8 +4,7 @@ import { formatDateComponentsFromISO } from '@/utils/dateUtils'
 
 import { Card } from '@/components/Card'
 import { Heading } from '@/components/Heading'
-import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
-import { TagLabel } from '@/components/TagLabel'
+import { TagGroup } from '@/components/TagComponents/TagGroup'
 
 import type { CalendarEventType } from '../../schemas/CalendarEventSchemas'
 
@@ -28,10 +27,12 @@ export function CalendarCard({
 
       <div className="flex-1 pb-14 sm:pb-0">
         <div className="flex flex-col gap-3 p-4">
-          <TagGroupContainer>
-            <TagLabel icon={Clock}>{`UTC ${startTime} - ${endTime}`}</TagLabel>
-            <TagLabel variant="secondary">Zoom</TagLabel>
-          </TagGroupContainer>
+          <TagGroup
+            tags={[
+              { text: `UTC ${startTime} - ${endTime}`, icon: Clock },
+              { text: 'Zoom' },
+            ]}
+          />
 
           <Heading tag="h3" variant="lg">
             {summary}

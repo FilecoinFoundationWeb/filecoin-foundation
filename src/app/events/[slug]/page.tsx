@@ -10,7 +10,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
-import { TagLabel } from '@/components/TagLabel'
+import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'

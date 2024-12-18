@@ -181,8 +181,7 @@ export default function Blog({ searchParams }: Props) {
                       } = post
 
                       const isFirstTwoImages = i < 2
-
-                      const tagLabel = getCategoryLabel({
+                      const categoryLabel = getCategoryLabel({
                         collectionName: 'blog_posts',
                         category,
                       })
@@ -194,7 +193,7 @@ export default function Blog({ searchParams }: Props) {
                           description={description}
                           textIsClamped={true}
                           metaData={getMetaData(publishedOn)}
-                          tagLabels={tagLabel}
+                          tags={[{ text: categoryLabel }]}
                           cta={{
                             href: `${PATHS.BLOG.path}/${slug}`,
                             text: 'Read Post',

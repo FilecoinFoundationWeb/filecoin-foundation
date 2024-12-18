@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import { Icon, type IconProps } from './Icon'
+import { Icon, type IconProps } from '../Icon'
 
 const styles = {
   base: 'inline-flex max-w-fit gap-1 rounded-lg border bg-brand-800 px-2 py-1 text-xs font-semibold capitalize text-brand-100',
