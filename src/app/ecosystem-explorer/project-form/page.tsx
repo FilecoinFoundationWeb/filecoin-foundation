@@ -1,14 +1,10 @@
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import {
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-  PATHS,
-} from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
-import { getCategoryDataFromDirectory } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
+import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -16,6 +12,8 @@ import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
@@ -35,13 +33,10 @@ export const metadata = createMetadata({
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })
 
-const categoryData = getCategoryDataFromDirectory(
-  ECOSYSTEM_CATEGORIES_DIRECTORY_PATH,
-)
+const { categories, subcategories } = getEcosystemCMSCategories()
 
-const subCategoryData = getCategoryDataFromDirectory(
-  ECOSYSTEM_SUBCATEGORIES_DIRECTORY_PATH,
-)
+const categoryOptions = mapCMSOptionsToListboxFormat(categories)
+const subcategoryOptions = mapCMSOptionsToListboxFormat(subcategories)
 
 type Props = {
   searchParams: NextServerSearchParams
@@ -66,8 +61,8 @@ export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
       </div>
 
       <EcosystemProjectForm
-        categoryData={categoryData}
-        subCategoryData={subCategoryData}
+        categoryOptions={categoryOptions}
+        subCategoryOptions={subcategoryOptions}
         initialValues={initialValues}
       />
       {safeParams.data?.status === 'error' && (

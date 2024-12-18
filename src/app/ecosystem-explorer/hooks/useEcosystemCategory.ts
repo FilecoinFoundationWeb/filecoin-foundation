@@ -5,13 +5,13 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import type { EcosystemProject } from '../types/ecosystemProjectType'
-import { getCategoriesFromDirectory } from '../utils/getCategoriesFromDirectory'
+import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 
 type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   searchParams: NextServerSearchParams
-  categories: ReturnType<typeof getCategoriesFromDirectory>['categories']
-  subcategories: ReturnType<typeof getCategoriesFromDirectory>['subcategories']
+  categories: ReturnType<typeof getEcosystemCMSCategories>['categories']
+  subcategories: ReturnType<typeof getEcosystemCMSCategories>['subcategories']
   entries: Array<Entry>
 }
 export function useEcosystemCategory<Entry extends EcosystemProject>({
@@ -47,15 +47,15 @@ export function useEcosystemCategory<Entry extends EcosystemProject>({
   const categoryTree = useMemo(
     () =>
       categories.map((category) => ({
-        slug: category.slug,
-        name: category.name,
+        value: category.value,
+        label: category.label,
         subcategories: subcategories
           .filter(
-            (subcategory) => subcategory.parent_category === category.slug,
+            (subcategory) => subcategory.parent_category === category.value,
           )
           .map((subcategory) => ({
             ...subcategory,
-            count: entriesPerSubcategory.get(subcategory.slug) || 0,
+            count: entriesPerSubcategory.get(subcategory.value) || 0,
           })),
       })),
     [categories, subcategories, entriesPerSubcategory],
