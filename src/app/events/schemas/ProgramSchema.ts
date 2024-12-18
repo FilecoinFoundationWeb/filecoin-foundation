@@ -4,8 +4,8 @@ import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
 
 export const ProgramSchema = z
   .object({
-    kicker: z.string().default('Explore').optional(),
-    title: z.string().default('Events').optional(),
+    kicker: z.string().optional().default('Explore'),
+    title: z.string().optional().default('Events'),
     events: z
       .array(
         EventBaseFrontMatterSchema.extend({
