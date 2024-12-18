@@ -11,8 +11,8 @@ const speakerSchema = z.object({
 })
 
 export const SpeakersSchema = z.object({
-  kicker: z.string().default('Speakers').optional(),
-  title: z.string().default('Speakers').optional(),
+  kicker: z.string().optional().default('Speakers'),
+  title: z.string().optional().default('Speakers'),
   description: z.string().optional(),
   speakers_list: z.array(speakerSchema),
 })
