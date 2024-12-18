@@ -71,7 +71,7 @@ export default function EventEntry({ params }: EventProps) {
   const eventHasProgram = program && program.events.length > 0
   const eventHasRecap = eventHasConcluded && recapYoutubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
-  const eventHasSpeakers = speakers && speakers.length > 0
+  const eventHasSpeakers = speakers && speakers.speakersList.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
 
   return (
