@@ -9,12 +9,12 @@ import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { CardGrid } from '@/components/CardGrid'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
-import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { CalendarCards } from './components/CalendarCards/CalendarCards'
 import { CTAPageSection } from './components/CTAPageSection'
 import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -83,7 +83,7 @@ export default function Governance() {
       />
 
       <PageSection kicker="Upcoming Events" title="Community Calls">
-        <GovernanceCalendarCards />
+        <CalendarCards />
       </PageSection>
 
       <CTAPageSection />
