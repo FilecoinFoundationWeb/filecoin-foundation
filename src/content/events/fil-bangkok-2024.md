@@ -1,5 +1,11 @@
 ---
 title: FIL Bangkok 2024
+description: Join the Filecoin Community in Bangkok! Dive into decentralized AI
+  infrastructure, DePIN, and the data economy with the Filecoin community in
+  Bangkok, ahead of Devcon. Set in the heart of Thailand, Filecoin Foundation
+  will have dynamic programming, major announcements, and networking
+  opportunities. Seize this opportunity to help shape the future of Filecoin and
+  contribute to the next chapter of a better internet.
 created-on: 2024-09-25T11:03:42.572Z
 updated-on: 2024-09-25T11:03:42.572Z
 published-on: 2024-09-25T11:03:42.572Z
@@ -9,103 +15,71 @@ location:
   region: apac-asia
 start-date: 2024-11-6T11:18:00.000Z
 end-date: 2024-11-12T11:18:00.000Z
-description: Join the Filecoin Community in Bangkok! Dive into decentralized AI
-  infrastructure, DePIN, and the data economy with the Filecoin community in
-  Bangkok, ahead of Devcon. Set in the heart of Thailand, Filecoin Foundation
-  will have dynamic programming, major announcements, and networking
-  opportunities. Seize this opportunity to help shape the future of Filecoin and
-  contribute to the next chapter of a better internet.
 image:
   src: /assets/images/fil-bangkok-2024.webp
 luma-calendar-link: https://lu.ma/filecoin?tag=fil%20bangkok%202024
 program:
-  "events":
-    [
-      {
-        title: "DePIN Day Bangkok",
-        description: "By Fluence, Spheron Network, Parasail & Livepeer",
-        location: "Carlton Hotel Bangkok Sukhumvit",
-        start-date: "2024-11-15T03:00:00.000Z",
-        external-link: "https://lu.ma/depin-bangkok",
-      },
-      {
-        title: "Build & Bloom: Akave's Decentralized Storage Workshop",
-        description: "By Akave",
-        location: "SOCO WORK&LIVE EmQuartier",
-        start-date: "2024-11-14T04:00:00.000Z",
-        external-link: "https://lu.ma/qrk28iw4",
-      },
-      {
-        title: "Hot Ones & Zeros Party by Storacha",
-        description: "By Storacha & Cosmik Agency",
-        location: "Chim Chim",
-        start-date: "2024-11-13T10:30:00.000Z",
-        external-link: "https://lu.ma/xh9ca6fs",
-      },
-      {
-        title: "Code n' Corgi: Filecoin Builders Night",
-        description: "By FIL-B, Sarah Thiam, TPG & La Christa",
-        location: "SOCO WORK&LIVE EmQuartier",
-        start-date: "2024-11-13T10:00:00.000Z",
-        external-link: "https://lu.ma/udulaer4",
-      },
-      {
-        title: "Threshold Summit - Bangkok",
-        description: "By Randamu, Dave Grantham & Kent Bull",
-        location: "U Sathorn Bangkok",
-        start-date: "2024-11-12T05:00:00.000Z",
-        external-link: "https://lu.ma/2hqvjjzl",
-      },
-      {
-        title: "FIL Bangkok: DePIN Meets AI, in partnership with CoinDesk Studios",
-        description: "By Filecoin Foundation",
-        location: "Samyan Mitrtown",
-        start-date: "2024-11-11T02:00:00.000Z",
-        external-link: "https://lu.ma/aqyqwupe",
-      },
-      {
-        title: "IPFS Bangkok",
-        description: "By Miwa Events, Mosh & Daniel",
-        location: "JustCo – Samyan Mitrtown | Coworking & Office Space",
-        start-date: "2024-11-10T06:00:00.000Z",
-        external-link: "https://lu.ma/ipfs-bangkok",
-      },
-      {
-        title: "Filecoin Orbit: AI Commu-night #4",
-        description: "By Filecoin Orbit",
-        location: "Such A Small World",
-        start-date: "2024-11-09T10:00:00.000Z",
-        external-link: "https://www.eventpop.me/e/54742/filecoinplayground15",
-      },
-      {
-        title: "Protocol Labs Cowork Hub",
-        description: "By Protocol Labs",
-        location: "SOCO WORK&LIVE EmQuartier",
-        start-date: "2024-11-07T03:00:00.000Z",
-        external-link: "https://lu.ma/htkj4b43",
-      },
-      {
-        title: "FIL Dev Summit 5 @ LabWeek",
-        description: "By Molly, Marta Geater Piekarska & Filecoin Foundation",
-        location: "Gaysorn Urban Resort",
-        start-date: "2024-11-06T04:00:00.000Z",
-        external-link: "https://lu.ma/vcdjb8pl",
-      },
-      {
-        title: "FIL Bangkok Co-Working Space",
-        description: "By Filecoin Foundation",
-        location: "Gaysorn Urban Resort",
-        start-date: "2024-11-06T04:00:00.000Z",
-        external-link: "https://lu.ma/no08u3bt",
-      },
-      {
-        title: "Filecoin Hacker House",
-        description: "By Filecoin Foundation",
-        location: "Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai",
-        start-date: "2024-10-26T09:00:00.000Z",
-        external-link: "https://lu.ma/j49yitcw",
-      },
-    ]
+  events:
+    - title: DePIN Day Bangkok
+      description: By Fluence, Spheron Network, Parasail & Livepeer
+      location: Carlton Hotel Bangkok Sukhumvit
+      start-date: 2024-11-15T03:00:00.000Z
+      external-link: https://lu.ma/depin-bangkok
+    - title: "Build & Bloom: Akave's Decentralized Storage Workshop"
+      description: By Akave
+      location: SOCO WORK&LIVE EmQuartier
+      start-date: 2024-11-14T04:00:00.000Z
+      external-link: https://lu.ma/qrk28iw4
+    - title: Hot Ones & Zeros Party by Storacha
+      description: By Storacha & Cosmik Agency
+      location: Chim Chim
+      start-date: 2024-11-13T10:30:00.000Z
+      external-link: https://lu.ma/xh9ca6fs
+    - title: "Code n' Corgi: Filecoin Builders Night"
+      description: By FIL-B, Sarah Thiam, TPG & La Christa
+      location: SOCO WORK&LIVE EmQuartier
+      start-date: 2024-11-13T10:00:00.000Z
+      external-link: https://lu.ma/udulaer4
+    - title: Threshold Summit - Bangkok
+      description: By Randamu, Dave Grantham & Kent Bull
+      location: U Sathorn Bangkok
+      start-date: 2024-11-12T05:00:00.000Z
+      external-link: https://lu.ma/2hqvjjzl
+    - title: "FIL Bangkok: DePIN Meets AI, in partnership with CoinDesk Studios"
+      description: By Filecoin Foundation
+      location: Samyan Mitrtown
+      start-date: 2024-11-11T02:00:00.000Z
+      external-link: https://lu.ma/aqyqwupe
+    - title: IPFS Bangkok
+      description: By Miwa Events, Mosh & Daniel
+      location: JustCo – Samyan Mitrtown | Coworking & Office Space
+      start-date: 2024-11-10T06:00:00.000Z
+      external-link: https://lu.ma/ipfs-bangkok
+    - title: "Filecoin Orbit: AI Commu-night #4"
+      description: By Filecoin Orbit
+      location: Such A Small World
+      start-date: 2024-11-09T10:00:00.000Z
+      external-link: https://www.eventpop.me/e/54742/filecoinplayground15
+    - title: Protocol Labs Cowork Hub
+      description: By Protocol Labs
+      location: SOCO WORK&LIVE EmQuartier
+      start-date: 2024-11-07T03:00:00.000Z
+      external-link: https://lu.ma/htkj4b43
+    - title: FIL Dev Summit 5 @ LabWeek
+      description: By Molly, Marta Geater Piekarska & Filecoin Foundation
+      location: Gaysorn Urban Resort
+      start-date: 2024-11-06T04:00:00.000Z
+      external-link: https://lu.ma/vcdjb8pl
+    - title: FIL Bangkok Co-Working Space
+      description: By Filecoin Foundation
+      location: Gaysorn Urban Resort
+      start-date: 2024-11-06T04:00:00.000Z
+      external-link: https://lu.ma/no08u3bt
+    - title: Filecoin Hacker House
+      description: By Filecoin Foundation
+      location: Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai
+      start-date: 2024-10-26T09:00:00.000Z
+      external-link: https://lu.ma/j49yitcw
 schedule:
   days:
     - events:
@@ -115,11 +89,7 @@ schedule:
             Co-Working Space is your home base in Bangkok to expand your
             network, knowledge, and opportunities within the Filecoin ecosystem.
             From November 6th to 8th, this space is perfect for co-working,
-            meetings, and more!
-
-            ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required).
-
-            ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
+            meetings, and more! ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
           start: 2024-11-06T11:00:00.000Z
           end: 2024-11-06T18:30:00.000Z
           location: Gaysorn Urban Resort
@@ -146,11 +116,7 @@ schedule:
             Co-Working Space is your home base in Bangkok to expand your
             network, knowledge, and opportunities within the Filecoin ecosystem.
             From November 6th to 8th, this space is perfect for co-working,
-            meetings, and more!
-
-            ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required).
-
-            ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
+            meetings, and more! ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
           start: 2024-11-07T09:00:00.000Z
           end: 2024-11-07T18:30:00.000Z
           location: Gaysorn Urban Resort
@@ -176,11 +142,7 @@ schedule:
             Co-Working Space is your home base in Bangkok to expand your
             network, knowledge, and opportunities within the Filecoin ecosystem.
             From November 6th to 8th, this space is perfect for co-working,
-            meetings, and more!
-
-            ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required).
-
-            ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
+            meetings, and more! ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
           start: 2024-11-08T09:00:00.000Z
           end: 2024-11-08T18:00:00.000Z
           location: Gaysorn Urban Resort
@@ -269,8 +231,8 @@ schedule:
           speakers:
             - name: Alexander Kinstler
               company: Storacha
-            - name: "Hannah Howard "
-              company: "Storacha "
+            - name: "Hannah Howard"
+              company: "Storacha"
           location: "Samyan Mitrtown: Main Hall"
           start: 2024-11-11T16:17:00.000Z
           end: 2024-11-11T16:31:00.000Z
@@ -303,7 +265,7 @@ schedule:
             by 2026, we need smart platforms that democratize data ownership
             while embedding necessary privacy protections. Ghostdrive delivers
             an affordable, secure, AI-driven Web3 data platform empowering one
-            million users to control and monetize their data via AI. "
+            million users to control and monetize their data via AI."
         - location: "Samyan Mitrtown: Main Hall"
           title: "Sponsored Content: Decentralized Tools for Environmental Change"
           moderators:
@@ -336,8 +298,8 @@ schedule:
             roadmap and learn how GD empowers users to collaborate on generative
             AI training data –– and become a validator of AI data yourself!
           speakers:
-            - name: "Roman Nebo "
-              company: "Ghost Drive "
+            - name: "Roman Nebo"
+              company: "Ghost Drive"
         - title:
             "From Models to Marketplaces: AI, DePIN, and a New Approach to Data
             Infra"
@@ -373,7 +335,7 @@ schedule:
             valuable data to the network.
           speakers:
             - name: Masa Kikuchi
-              company: "Secured Finance "
+              company: "Secured Finance"
           start: 2024-11-11T16:32:00.000Z
           end: 2024-11-11T16:39:00.000Z
           location: "Samyan Mitrtown: Main Hall"
@@ -672,6 +634,9 @@ sponsors:
       name: Ceramic
       image:
         src: /assets/images/ceramic-logo.webp
+recap:
+  youtube-embed-url: https://www.youtube.com/embed/zMrXaGt5jv8
+  youtube-playlist-url: https://youtube.com/playlist?list=PLp3zrT1ewY0klX50yHbrNjEB2Js95jAGU
 seo:
   description: Join the Filecoin Community in Bangkok for discussions on
     decentralized AI, DePIN, and the data economy. Network, hear major

@@ -7,7 +7,7 @@ import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 import type { Event } from '../../types/eventType'
 
 type RecapSectionProps = {
-  youtubeEmbedUrl: NonNullable<Event['recapYoutubeEmbedUrl']>
+  youtubeEmbedUrl: NonNullable<NonNullable<Event['recap']>['youtubeEmbedUrl']>
 }
 
 export function RecapSection({ youtubeEmbedUrl }: RecapSectionProps) {
