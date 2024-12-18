@@ -43,6 +43,7 @@ import { useEcosystemCategoryTree } from './hooks/useEcosystemCategoryTree'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemCMSCategories } from './utils/getEcosystemCMSCategories'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
+import { parseCategoryQueryParam } from './utils/parseCategoryQueryParam'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -88,9 +89,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   })
 
   const { filteredEntries } = useFilter({
-    searchParams,
     entries: sortedResults,
-    filterKey: CATEGORY_KEY,
+    filterQuery: parseCategoryQueryParam(searchParams, CATEGORY_KEY),
     filterFn: entryMatchesSubcategoryQuery,
   })
 

@@ -15,7 +15,7 @@ export function entryMatchesCategoryQuery<Entry extends WithCategory>(
 
 export function entryMatchesSubcategoryQuery<Entry extends WithSubcategory>(
   entry: Entry,
-  query?: string,
+  queries?: Array<string>,
 ) {
-  return entry.subcategory === query
+  return Boolean(queries?.includes(entry.subcategory))
 }
