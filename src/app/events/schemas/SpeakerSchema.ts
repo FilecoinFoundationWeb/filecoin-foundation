@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 
-const speakerSchema = z.object({
+const SpeakerSchema = z.object({
   name: z.string(),
   title: z.string(),
   company: z.string(),
@@ -10,6 +10,6 @@ const speakerSchema = z.object({
   image: ImagePropsSchema,
 })
 
-export const SpeakersSchema = z.array(speakerSchema)
+export const SpeakersSchema = z.array(SpeakerSchema)
 
-export type Speaker = z.infer<typeof speakerSchema>
+export type Speaker = z.infer<typeof SpeakerSchema>
