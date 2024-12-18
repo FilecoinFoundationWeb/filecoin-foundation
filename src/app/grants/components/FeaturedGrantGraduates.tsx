@@ -15,7 +15,7 @@ type FeaturedGrantsGraduatesProps = {
   grantGraduates: Array<EcosystemProject>
 }
 
-export function FeaturedGrantsGraduates({
+export function FeaturedGrantGraduates({
   grantGraduates,
 }: FeaturedGrantsGraduatesProps) {
   return (

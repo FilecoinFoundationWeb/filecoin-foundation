@@ -24,7 +24,7 @@ import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
-import { FeaturedGrantsGraduates } from './components/FeaturedGrantGraduates'
+import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
@@ -101,9 +101,11 @@ export default function Grants() {
         </CardGrid>
       </PageSection>
 
-      <PageSection kicker="Past Recipients" title="Grant Graduates">
-        <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
-      </PageSection>
+      {grantGraduates.length > 0 && (
+        <PageSection kicker="Past Recipients" title="Grant Graduates">
+          <FeaturedGrantGraduates grantGraduates={grantGraduates} />
+        </PageSection>
+      )}
 
       <PageSection
         kicker="Application Process"
