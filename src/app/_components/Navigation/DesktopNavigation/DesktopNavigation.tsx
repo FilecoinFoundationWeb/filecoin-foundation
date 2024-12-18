@@ -7,15 +7,13 @@ import { clsx } from 'clsx'
 import { desktopNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
 
+import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
+
 import { useNavigationItems } from '@/hooks/useNavigationItems'
 
 import { NavigationPopover } from '@/components/NavigationPopover'
 
-import {
-  TOUCH_TARGET_MAIN_NAV_ITEM,
-  getMainNavItemStyles,
-  MainNavItem,
-} from './MainNavItem'
+import { getMainNavItemStyles, MainNavItem } from './MainNavItem'
 import { SubNavItem } from './SubNavItem'
 
 const {
@@ -41,12 +39,14 @@ export function DesktopNavigation() {
   const { isActive: isResourcesActive, internalItems: resourcesInternalItems } =
     useNavigationItems(resourcesItems)
 
+  const { touchAreaOffset } = getTouchTargetStyles('desktopNavigation')
+
   return (
     <ul
       aria-label="Navigation items"
       className={clsx(
         'relative z-10 hidden lg:flex lg:items-center lg:gap-0.5',
-        TOUCH_TARGET_MAIN_NAV_ITEM.offsetWidth,
+        touchAreaOffset,
       )}
     >
       <MainNavItem
