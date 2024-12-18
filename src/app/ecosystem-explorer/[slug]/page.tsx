@@ -59,7 +59,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
 
   const projectSubcategory = findOrThrow(
     cmsSubcategories,
-    (cmsSubcategory) => cmsSubcategory.value === subcategories[0],
+    ({ value }) => value === subcategories[0],
   )
 
   return (
