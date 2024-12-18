@@ -823,16 +823,16 @@ collections:
         widget: "object"
         required: false
         fields:
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Speakers'."
           - name: "title"
             label: "Section Title"
             widget: "string"
             required: false
             hint: "The main heading for the speakers section. Defaults to 'Speakers'."
-          - name: "kicker"
-            label: "Section Kicker"
-            widget: "string"
-            required: false
-            hint: "A short phrase that appears above the section title. Defaults to 'Speakers'."
           - name: "description"
             label: "Section Description"
             widget: "text"

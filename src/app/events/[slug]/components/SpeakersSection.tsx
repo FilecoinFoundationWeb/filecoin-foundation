@@ -12,11 +12,7 @@ export function SpeakersSection({ speakers }: SpeakersSectionProps) {
   const { title, kicker, description, speakersList } = speakers
 
   return (
-    <PageSection
-      kicker={kicker || 'Speakers'}
-      title={title || 'Speakers'}
-      description={description}
-    >
+    <PageSection kicker={kicker} title={title} description={description}>
       <CardGrid cols="mdTwo">
         {speakersList.map(({ name, title, company, linkedin, image }) => (
           <KeyMemberCard
