@@ -51,7 +51,7 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
         playerClass="sr-only"
         poster="maxresdefault"
         webp={true}
-        wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
+        wrapperClass="aspect-video bg-cover rounded-lg overflow-hidden cursor-pointer"
       />
       <YouTubeLogoIcon
         aria-hidden="true"
