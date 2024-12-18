@@ -445,6 +445,7 @@ schedule:
             needs built and how FIL-B is making it easy for devs to onboard and
             contribute to the future of Filecoin.
       date: 2024-11-11T09:00:00.000Z
+speakers:
   speakers_list:
     - name: Juan Benet
       title: Founder & CEO
