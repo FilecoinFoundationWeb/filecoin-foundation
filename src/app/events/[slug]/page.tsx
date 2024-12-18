@@ -72,7 +72,7 @@ export default function EventEntry({ params }: EventProps) {
   const eventHasProgram = program && program.events.length > 0
   const eventHasRecap = eventHasConcluded && youtubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
-  const eventHasSpeakers = speakers && speakers.length > 0
+  const eventHasSpeakers = speakers && speakers.speakersList.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
 
   return (
@@ -114,6 +114,7 @@ export default function EventEntry({ params }: EventProps) {
       {eventHasProgram && (
         <ProgramSection
           title={program.title}
+          kicker={program.kicker}
           events={sortNonEmptyEventsAsc(program.events)}
         />
       )}

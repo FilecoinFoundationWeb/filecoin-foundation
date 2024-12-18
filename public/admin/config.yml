@@ -713,6 +713,11 @@ collections:
         required: false
         collapsed: true
         fields:
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Explore'."
           - name: "title"
             label: "Section Title"
             widget: "string"
@@ -754,6 +759,11 @@ collections:
         required: false
         collapsed: true
         fields:
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Join Us'."
           - name: "title"
             label: "Section Title"
             widget: "string"
@@ -771,6 +781,11 @@ collections:
                 label: "Events"
                 widget: "list"
                 fields:
+                  - name: "tag"
+                    label: "Event Tag"
+                    widget: "string"
+                    required: false
+                    hint: "A short label or category (e.g., event location or host) displayed above the event title."
                   - name: "title"
                     label: "Event Title"
                     widget: "string"
@@ -819,34 +834,54 @@ collections:
                     widget: "string"
                     required: false
       - name: "speakers"
-        label: "Speakers"
-        widget: "list"
+        label: "Speakers Section"
+        widget: "object"
         required: false
         fields:
-          - name: "name"
-            label: "Full Name"
+          - name: "kicker"
+            label: "Section Kicker"
             widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Speakers'."
           - name: "title"
-            label: "Job Title"
+            label: "Section Title"
             widget: "string"
-          - name: "company"
-            label: "Company"
-            widget: "string"
-          - name: "linkedin"
-            label: "LinkedIn Profile URL"
-            widget: "string"
-          - name: "image"
-            label: "Image"
-            widget: "object"
-            collapsed: true
+            required: false
+            hint: "The main heading for the speakers section. Defaults to 'Speakers'."
+          - name: "description"
+            label: "Section Description"
+            widget: "text"
+            required: false
+            hint: "A brief description of the speakers section"
+          - name: "speakers_list"
+            label: "Speakers List"
+            widget: "list"
+            required: false
             fields:
-              - name: "src"
-                label: "URL"
-                widget: "image"
-                allow_multiple: false
-                choose_url: false
-                hint: Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to max. 200px width, ensuring the aspect ratio is maintained at 2:3 (e.g., 200px width and 300px height).
-              - *image_alt_config
+              - name: "name"
+                label: "Full Name"
+                widget: "string"
+              - name: "title"
+                label: "Job Title"
+                widget: "string"
+              - name: "company"
+                label: "Company"
+                widget: "string"
+              - name: "linkedin"
+                label: "LinkedIn Profile URL"
+                widget: "string"
+              - name: "image"
+                label: "Image"
+                widget: "object"
+                collapsed: true
+                fields:
+                  - name: "src"
+                    label: "URL"
+                    widget: "image"
+                    allow_multiple: false
+                    choose_url: false
+                    hint: Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to max. 200px width, ensuring the aspect ratio is maintained at 2:3 (e.g., 200px width and 300px height).
+                  - *image_alt_config
       - name: "sponsors"
         label: "Sponsors"
         widget: "object"

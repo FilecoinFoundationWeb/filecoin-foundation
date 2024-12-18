@@ -10,6 +10,9 @@ const SpeakerSchema = z.object({
   image: ImagePropsSchema,
 })
 
-export const SpeakersSchema = z.array(SpeakerSchema)
-
-export type Speaker = z.infer<typeof SpeakerSchema>
+export const SpeakersSchema = z.object({
+  kicker: z.string().optional().default('Speakers'),
+  title: z.string().optional().default('Speakers'),
+  description: z.string().optional(),
+  speakers_list: z.array(SpeakerSchema),
+})
