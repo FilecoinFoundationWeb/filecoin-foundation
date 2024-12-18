@@ -2,6 +2,7 @@
 
 import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
+import { TagLabel } from '@/components/TagLabel'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 import type { Event } from '../../../schemas/ScheduleSchema'
@@ -20,11 +21,12 @@ export function EventDetails(event: Event) {
           </div>
           <span className="text-sm">{event.location}</span>
         </div>
-        <div className="lg:col-span-2">
-          <Heading tag="h3" variant="lg">
-            {event.title}
-          </Heading>
-          <div className="mt-2 space-y-2">
+        <div className="space-y-4 lg:col-span-2">
+          {event.tag && <TagLabel>{event.tag}</TagLabel>}
+          <div className="space-y-2">
+            <Heading tag="h3" variant="lg">
+              {event.title}
+            </Heading>
             {event.description && (
               <p className="max-w-readable">{event.description}</p>
             )}
@@ -36,9 +38,7 @@ export function EventDetails(event: Event) {
             )}
           </div>
           {event.url && (
-            <div className="mt-4">
-              <SmartTextLink href={event.url}>View Details</SmartTextLink>
-            </div>
+            <SmartTextLink href={event.url}>View Details</SmartTextLink>
           )}
         </div>
       </div>

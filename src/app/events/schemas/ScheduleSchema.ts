@@ -9,6 +9,7 @@ const ParticipantSchema = z
 
 const EventSchema = z
   .object({
+    tag: z.string().optional(),
     title: z.string(),
     description: z.string().optional(),
     moderators: z.array(ParticipantSchema).nonempty().optional(),

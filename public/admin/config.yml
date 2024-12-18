@@ -776,6 +776,11 @@ collections:
                 label: "Events"
                 widget: "list"
                 fields:
+                  - name: "tag"
+                    label: "Event Tag"
+                    widget: "string"
+                    required: false
+                    hint: "A short label or category (e.g., event location or host) displayed above the event title."
                   - name: "title"
                     label: "Event Title"
                     widget: "string"
