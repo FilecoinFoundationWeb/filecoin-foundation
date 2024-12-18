@@ -8,6 +8,7 @@ import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
 import { LocationSchema } from './LocationSchema'
 import { ProgramSchema } from './ProgramSchema'
+import { RecapSchema } from './RecapSchema'
 import { ScheduleSchema } from './ScheduleSchema'
 import { SpeakersSchema } from './SpeakerSchema'
 import { SponsorsSchema } from './SponsorSchema'
@@ -25,9 +26,8 @@ export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
   location: LocationSchema,
   'luma-calendar-link': z.string().url().optional(),
   program: ProgramSchema.optional(),
+  recap: RecapSchema.optional(),
   schedule: ScheduleSchema.optional(),
   speakers: SpeakersSchema.optional(),
   sponsors: SponsorsSchema.optional(),
-  'recap-youtube-embed-url': z.string().url().optional(),
-  'recap-youtube-playlist-url': z.string().url().optional(),
 }).strict()

@@ -63,15 +63,16 @@ export default function EventEntry({ params }: EventProps) {
     schedule,
     speakers,
     sponsors,
-    recapYoutubeEmbedUrl,
-    recapYoutubePlaylistUrl,
+    recap,
   } = data
+
+  const { youtubeEmbedUrl, youtubePlaylistUrl } = recap ?? {}
 
   const eventHasConcluded = isEventConcluded(startDate, endDate)
   const eventHasProgram = program && program.events.length > 0
-  const eventHasRecap = eventHasConcluded && recapYoutubeEmbedUrl
+  const eventHasRecap = eventHasConcluded && youtubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
-  const eventHasSpeakers = speakers && speakers.length > 0
+  const eventHasSpeakers = speakers && speakers.speakersList.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
 
   return (
@@ -93,7 +94,11 @@ export default function EventEntry({ params }: EventProps) {
             location: location.primary,
           })}
           cta={buildCtaArray({
-            links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
+            links: {
+              externalLink,
+              lumaCalendarLink,
+              youtubePlaylistUrl,
+            },
             eventHasConcluded,
           })}
           image={{
@@ -104,11 +109,12 @@ export default function EventEntry({ params }: EventProps) {
         />
       </div>
 
-      {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
+      {eventHasRecap && <RecapSection youtubeEmbedUrl={youtubeEmbedUrl} />}
 
       {eventHasProgram && (
         <ProgramSection
           title={program.title}
+          kicker={program.kicker}
           events={sortNonEmptyEventsAsc(program.events)}
         />
       )}
