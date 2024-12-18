@@ -49,6 +49,7 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
         iframeClass="h-full w-full cursor-pointer focus:brand-outline"
         params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
         playerClass="sr-only"
+        poster="maxresdefault"
         wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
       />
       <YouTubeLogoIcon
