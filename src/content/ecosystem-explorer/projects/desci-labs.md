@@ -16,7 +16,7 @@ featured-content: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabli
 repo: https://github.com/desci-labs
 twitter: https://twitter.com/DeSciLabs
 video-url: https://www.youtube.com/embed/q_5hAe2AzhE
-subcategory: decentralized-science
+category: decentralized-science
 seo:
   description:
     DeSci Labs offers decentralized science solutions for data management

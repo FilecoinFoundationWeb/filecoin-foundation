@@ -12,7 +12,7 @@ image:
 website: "https://nft.storage"
 repo: "https://github.com/nftstorage"
 twitter: "https://twitter.com/nftdotstorage"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: NFT.Storage offers decentralized storage solutions for NFT data.
 email: encrypted::U2FsdGVkX1/o50b/tIWu2FHfsZRbN4/CE8mVZmBjaojKOGYLVsafIaWsN5RQQvGv

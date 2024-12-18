@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX18cBZb+u+o2hqNjSYcl4xvUhfiKT2mo2qh9ELnV1G2EFEVKNokmQv
 full-name: encrypted::U2FsdGVkX1/WiIexgdD/uiEFGR3oWQdq1JHGTYXKQ9Q=
 image:
   src: /assets/images/storacha_logo_lightmode_horizontal.webp
-subcategory: data-storage-management
+category: data-storage-management
 description: Storacha transforms web3.storage into a community-driven,
   decentralized hot storage network.
 website: https://storacha.network

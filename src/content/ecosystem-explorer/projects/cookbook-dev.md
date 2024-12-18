@@ -13,7 +13,7 @@ image:
 website: https://www.cookbook.dev/
 twitter: https://twitter.com/cookbook_dev
 year-joined: 2024-04-04T20:26:55.709000Z
-subcategory: developer-tools
+category: developer-tools
 seo:
   description: Cookbook Dev offers decentralized development tools and resources.
 email: encrypted::U2FsdGVkX180elBw9qreUH2gRpV1J40jTDpVtaClljLevqXzLeYGE+RMrUJ4PlCe

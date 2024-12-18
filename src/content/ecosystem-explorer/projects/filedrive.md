@@ -14,7 +14,7 @@ image:
 website: "https://filedrive.io"
 repo: "https://github.com/filedrive-team"
 twitter: "https://twitter.com/FileDrive1"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     FileDrive provides decentralized storage solutions for personal and

@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX19dXHRpds1jlJYYANMoIbLnJzfR/Eio/56WXPTdUEUQ4aaYGpE0wJ
 full-name: encrypted::U2FsdGVkX19lAxuZZNXuKfjdYgJDVxVWqssf8Tij5N8=
 image:
   src: /assets/images/filliquid_logo_white.png
-subcategory: leasing
+category: leasing
 description: FILLiquid is a liquidity pool implemented on FVM (Filecoin Virtual
   Machine) as a fully open-sourced, decentralized, algorithmic-based lending
   platform.

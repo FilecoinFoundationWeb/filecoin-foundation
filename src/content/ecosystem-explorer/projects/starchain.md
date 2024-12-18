@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1/MrDqr1+h4m16wu4J+gQdcxXb41SSzBdB+k/evPtkrl+5E7IbQxU
 full-name: encrypted::U2FsdGVkX19awUTytVShpf5/mJrsp8mJr8qJfoLi2XAb5XAvd389q/EzMjVtcIw6
 image:
   src: /assets/images/starchain.jpg
-subcategory: storage-software
+category: storage-software
 description: StarChain leverages Filecoin and IPFS to build a decentralized repository of scientific data where every researcher can freely share their datasets.
 website: https://starchain.dev
 tech:

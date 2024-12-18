@@ -5,7 +5,7 @@ updated-on: 2024-05-16T14:33:32.598Z
 published-on: 2024-05-16T14:33:32.612Z
 image:
   src: /assets/images/domainfns.png
-subcategory: infrastructure
+category: infrastructure
 description: Decentralized name service based on FVM.
 website: https://opengatefns.com/
 tech:

@@ -9,7 +9,7 @@ tech:
   - filecoin
 website: https://e-ipfs.web.app/
 year-joined: 2024-04-05T00:10:47.116000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     E-IPFS provides enhanced IPFS solutions for decentralized storage and

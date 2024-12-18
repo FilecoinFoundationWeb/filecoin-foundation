@@ -10,7 +10,7 @@ tech:
   - filecoin
 website: "https://drive.neyra.ai/"
 year-joined: 2023-11-01T18:39:58.216Z
-subcategory: ai-productivity-utilities
+category: ai-productivity-utilities
 seo:
   description:
     Neyra AI provides AI-driven solutions for decentralized data analysis

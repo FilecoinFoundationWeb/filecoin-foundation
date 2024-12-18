@@ -11,7 +11,7 @@ image:
 website: https://froghub.io/
 repo: https://github.com/froghub-io
 year-joined: 2024-04-05T23:10:27.396000Z
-subcategory: dapp
+category: dapp
 seo:
   description: FrogHub offers decentralized solutions for project management and collaboration.
 email: encrypted::U2FsdGVkX18WALd/e0jqbdNj7f/qZ78ItzQyv7m40D7lyGru2uiXoLcoUddWMP1C

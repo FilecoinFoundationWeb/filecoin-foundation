@@ -14,7 +14,7 @@ image:
 website: "https://zondax.ch/"
 repo: "https://github.com/Zondax"
 twitter: "https://twitter.com/_zondax_"
-subcategory: infrastructure
+category: infrastructure
 seo:
   description:
     Zondax provides decentralized solutions for blockchain infrastructure

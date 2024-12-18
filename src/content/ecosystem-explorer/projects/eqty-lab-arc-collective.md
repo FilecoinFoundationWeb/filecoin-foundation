@@ -13,7 +13,7 @@ image:
 website: https://eqtylab.io
 twitter: https://twitter.com/EQTYLab
 year-joined: 2024-03-29T21:28:50.218000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Eqty Lab ARC Collective provides decentralized solutions for data management

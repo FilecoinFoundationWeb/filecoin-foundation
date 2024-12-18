@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1+uOTMtUV5lMYhBkgdqSSya0F/ybpKD0emJTZHfh0ebjRIa71se+i
 full-name: encrypted::U2FsdGVkX1+Kt+AZdZRn5gxFJ8edPG+ti4HpV5I1YOg=
 image:
   src: /assets/images/65974d55ccb76baf40726b38_university_of_utah_horizontal_logo.svg.png
-subcategory: decentralized-science
+category: decentralized-science
 description: University of Utah’s Center for Extreme Data Management Analysis
   and Visualization works with Filecoin SP Seal Storage to store scientific
   research data.

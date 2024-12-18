@@ -12,7 +12,7 @@ image:
 website: https://www.filscriptions.market/
 twitter: https://twitter.com/filscriptions
 year-joined: 2024-01-18T17:56:20.324000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: FilScriptions offers decentralized subscription management solutions.
 email: encrypted::U2FsdGVkX19jGBUJe+UqqCtN6NKVOksfiSZ4bAM/mKSjSnVY7GHzFujS5HJbneWq

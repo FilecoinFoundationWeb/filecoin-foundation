@@ -5,7 +5,7 @@ updated-on: 2024-04-05T00:20:25.917Z
 published-on: 2024-04-05T00:20:25.930Z
 image:
   src: /assets/images/ecko.png
-subcategory: infrastructure
+category: infrastructure
 description: Ecko is a collaboration platform for the planning, creation, and
   monetisation of multi-drop mission driven NFT campaigns.
 website: https://www.ecko.ac

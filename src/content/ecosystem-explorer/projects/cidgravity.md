@@ -12,7 +12,7 @@ website: https://www.cidgravity.com/
 repo: https://github.com/CIDgravity/CIDgravity-X
 twitter: https://twitter.com/CiDgravity
 year-joined: 2024-04-03T17:39:33.807000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: CIDGravity offers decentralized solutions for content addressable storage.
 email: encrypted::U2FsdGVkX19ZRigfAdHG/gks5UW+pCjDvys3lhZxo2yMbsRKQn2IOUqKFX7Q+iQf

@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1+V9YN9kfWos9l/GdiLL6B2/2OB5dFzrWSuh/OFkU1i1sD0D7U81R
 full-name: encrypted::U2FsdGVkX18kSf9FQl03866gvrBALJImlqgfaeLp2Vo=
 image:
   src: /assets/images/6607329442b3d343f69c52d7_datahaus.png
-subcategory: data-storage-management
+category: data-storage-management
 description: DataHaus is a decentralized data economy, built on Filecoin, which
   provides a reliable web3 data foundation.
 website: https://datahaus.vercel.app/

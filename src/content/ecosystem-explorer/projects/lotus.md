@@ -12,7 +12,7 @@ website: "https://lotus.filecoin.io/"
 repo: "https://github.com/filecoin-project/lotus"
 twitter: "https://twitter.com/lotus_web3"
 year-joined: 2020-10-15T19:36:51.302Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Lotus offers decentralized storage solutions for the Filecoin network.
 email: encrypted::U2FsdGVkX1+0nFRrm0E/HRSHmjCPB+ut+IUggsSmmWn5QlVhfyo6Oor9ifgbFfcU

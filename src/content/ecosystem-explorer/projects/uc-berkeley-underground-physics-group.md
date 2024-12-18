@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX18rWKOZDg2uu+Dt3ZVN5M1iqdx8pldGP4gV/K+VMdGRE4DUJPDQxQ
 full-name: encrypted::U2FsdGVkX183QnwgV82um3BtvFtT1/mGmvpBIhkcQaM=
 image:
   src: /assets/images/65974d64d556a0c37cb3ddbb_logo-ucberkeley-white.png
-subcategory: decentralized-science
+category: decentralized-science
 description: UC Berkeley Underground Physics Group stores research data on the
   Filecoin network through Seal Storage.
 website: https://sealstorage.io/uc-berkeley-uses-web3-decentralized-storage-for-neutrino-research-data/

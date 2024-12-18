@@ -11,7 +11,7 @@ image:
 website: https://murmuration.ai/
 repo: https://github.com/Murmuration-Labs/filecoin-node-operator-kit
 year-joined: 2024-03-29T21:28:53.260000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Murmuration Labs offers decentralized solutions for data analysis and

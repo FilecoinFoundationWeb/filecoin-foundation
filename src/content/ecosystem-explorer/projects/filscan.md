@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX19N9SSFWzn6PODpYmUO1wJDqsbtjaMFXb7kF/3xaWQZGNImKQSWqR
 full-name: encrypted::U2FsdGVkX18m5H9Jwxej/P5Xv9p9jIzIG6luSB4zQdE=
 image:
   src: /assets/images/65974a1e84648b50ab0c7214_filscanlogo-text.png
-subcategory: network-tools
+category: network-tools
 description: Filscan.io is a Filecoin blockchain explorer and data service
   platform, offering a range of one-stop data services.
 website: https://filscan.io/en

@@ -14,7 +14,7 @@ image:
   src: /assets/images/6597518e66ba5cff0f0ab78f_piknik-logo.png
 website: "https://www.piknik.com"
 twitter: "https://twitter.com/PiKNiK_US"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Piknik provides decentralized storage solutions for digital media.
 email: encrypted::U2FsdGVkX18LgQrzHxvVrDpXKmWR3z/HlwVCMavsbTPUAwf6sTd6CCQfLIYFToA6

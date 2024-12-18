@@ -13,7 +13,7 @@ website: "https://fluence.network"
 repo: "https://github.com/fluencelabs"
 twitter: "https://twitter.com/fluence_project"
 featured-content: "https://www.youtube.com/watch?v=uFhPJ1wR1GQ"
-subcategory: infrastructure
+category: infrastructure
 seo:
   description: Fluence offers decentralized computing solutions for peer-to-peer applications.
 email: encrypted::U2FsdGVkX1/ciPJHiovcbSZdh2/Yz592T0WGVTWvf1HF34AhUfU+JLh5xfT43Wnj

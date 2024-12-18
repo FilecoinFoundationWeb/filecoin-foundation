@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX19Ed5RCghf6V6eTLEZLlPXeZSBA8SO/TBITHuCES7ztyjRd2ruHn3
 full-name: encrypted::U2FsdGVkX18LYyWQmUElksX2f4IwCM4F5DHFIYcx0oo=
 image:
   src: /assets/images/beryx_logo_white.png
-subcategory: wallets-identity-authentication
+category: wallets-identity-authentication
 description: Beryx indexes and exposes via a public API Filecoin historical and
   real-time data.
 website: https://beryx.io/

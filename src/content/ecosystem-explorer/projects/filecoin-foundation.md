@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1829n+ZqyIZpVQFpzII5i5yDRCje5kwIxHgs0ksRbCO92DazJEkQw
 full-name: encrypted::U2FsdGVkX18atNrC4L8duxafaKlGJNM7LwWo0DstUn4=
 image:
   src: /assets/images/659733d82e7f66b9fcc1207e_f6wivrnb4g_jcnxz5nbjgibuwdr2lejvhqh4hpyebuc.svg
-subcategory: network-tools
+category: network-tools
 description: Filecoin Foundation facilitates governance of the Filecoin network
   and supports the growth of the Filecoin ecosystem and community.
 website: https://fil.org

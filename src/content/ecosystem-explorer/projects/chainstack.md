@@ -13,7 +13,7 @@ image:
 website: https://chainstack.com/
 twitter: https://twitter.com/ChainstackHQ
 year-joined: 2024-03-29T21:28:49.352000Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description: Chainstack provides blockchain infrastructure and development tools.
 email: encrypted::U2FsdGVkX19FdYxtIAXza4rObxyDiDeMfSaRtvVl+I6PIXLRps2UyuSnSSMWG8DQ

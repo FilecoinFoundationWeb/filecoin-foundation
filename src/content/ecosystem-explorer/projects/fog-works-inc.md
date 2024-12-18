@@ -12,7 +12,7 @@ image:
 website: https://fogworks.io/
 twitter: https://twitter.com/fogworksinc
 year-joined: 2022-11-22T19:44:10.444000Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description: Fog Works provides decentralized solutions for edge computing and
     data storage.

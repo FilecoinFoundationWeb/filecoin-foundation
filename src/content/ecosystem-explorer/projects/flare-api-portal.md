@@ -5,7 +5,7 @@ updated-on: 2024-04-05T13:18:56.169Z
 published-on: 2024-04-05T13:18:56.214Z
 image:
   src: /assets/images/flare.png
-subcategory: developer-tools
+category: developer-tools
 description: The API Portal from Flare Labs serving the Flare Networks community
   with Web3 APIs from all of Flare's chains, explorers, connected chains, and
   more.

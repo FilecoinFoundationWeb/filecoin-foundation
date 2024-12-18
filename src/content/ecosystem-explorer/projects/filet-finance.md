@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1/YOg7Hm+fmyx0I6thyt0DTa3gnfZsBAx4CKKPH4nPtLx5L4dZWgz
 full-name: encrypted::U2FsdGVkX1+H3otR+zgxXJOE3zVpEGE9WjnbUMv+cck=
 image:
   src: /assets/images/66073292d3ce5e439caf9f7f_filetfinance.png
-subcategory: leasing
+category: leasing
 description: A trustworthy platform providing staking service stably.
 website: https://www.filet.finance
 tech:

@@ -16,7 +16,7 @@ repo: "https://github.com/Filemarket-xyz/file-market"
 twitter: "https://twitter.com/filemarket_xyz/"
 video-url: "https://www.youtube.com/embed/MSOpSJnoFvQ"
 year-joined: 2022-09-01T15:06:37.800000Z
-subcategory: dapp
+category: dapp
 seo:
   description: FileMarket offers decentralized marketplace solutions for digital assets.
 email: encrypted::U2FsdGVkX1/SlT9vk4zMX23EQ7brjnGv0cyR8SWlhmgQm9y91u7/IwraElAE9IBJ

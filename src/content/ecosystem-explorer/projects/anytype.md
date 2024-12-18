@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX198M+LHOoKq+fWO97ku9XeZylR7t/+iM6X0KTiB8CroYpyESvSDDc
 full-name: encrypted::U2FsdGVkX184FcByCGxPtRIezALp8wP/rCPdbGHbbCU=
 image:
   src: /assets/images/anytype.webp
-subcategory: dapp
+category: dapp
 description: Private, local-first, P2P computing no-code dapp to compose
   beautifully. Available on Mac, Windows, Linux, iOS & Android.
 website: https://anytype.io/

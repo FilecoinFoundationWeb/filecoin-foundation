@@ -13,7 +13,7 @@ image:
   src: /assets/images/hauska_logo_white.png
 website: https://www.hauska.ai/
 year-joined: 2023-12-27T20:42:42.062000Z
-subcategory: ai-productivity-utilities
+category: ai-productivity-utilities
 seo:
   description:
     Hauska AI provides AI-driven solutions for decentralized data analysis

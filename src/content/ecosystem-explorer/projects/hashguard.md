@@ -13,7 +13,7 @@ image:
 website: https://hashguard.io/
 twitter: https://twitter.com/hashguard_/
 year-joined: 2022-09-07T14:14:44.368000Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description:
     HashGuard provides decentralized security solutions for blockchain

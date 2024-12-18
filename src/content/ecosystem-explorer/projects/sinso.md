@@ -14,7 +14,7 @@ image:
 website: "https://sinso.io/"
 repo: "https://github.com/sinsoio"
 twitter: "https://twitter.com/sinsonetwork"
-subcategory: health
+category: health
 seo:
   description:
     Sinso provides decentralized storage solutions for healthcare data

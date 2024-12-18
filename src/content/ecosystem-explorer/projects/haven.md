@@ -13,7 +13,7 @@ image:
 website: https://havendp.com
 twitter: https://twitter.com/HashMixOfficial
 year-joined: 2024-03-29T21:28:52.020000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Haven offers decentralized storage solutions for digital documents

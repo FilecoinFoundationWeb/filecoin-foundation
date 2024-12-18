@@ -15,7 +15,7 @@ repo: "https://github.com/functionland"
 twitter: "https://twitter.com/functionland/"
 video-url: "https://www.youtube.com/embed/YJ-K7SKmIPk"
 year-joined: 2021-03-03T16:17:36.608000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Functionland Fula provides decentralized storage solutions for personal

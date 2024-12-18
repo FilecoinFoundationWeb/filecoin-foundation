@@ -14,7 +14,7 @@ image:
 website: "https://www.muckrock.com/"
 featured-content: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"
 twitter: "https://twitter.com/MuckRock"
-subcategory: dweb
+category: dweb
 seo:
   description: MuckRock provides decentralized solutions for public records and transparency.
 email: encrypted::U2FsdGVkX1/M4EUDPR7JGFr/tGCgeSpZMG95MfAA3VkNkEX6Ri8f5FxqSBia97v0

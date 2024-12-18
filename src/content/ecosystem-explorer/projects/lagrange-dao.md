@@ -14,7 +14,7 @@ image:
 website: "https://lagrangedao.org"
 repo: "https://github.com/lagrangedao"
 twitter: "https://twitter.com/lagrangedao"
-subcategory: governance-daos-public-goods
+category: governance-daos-public-goods
 seo:
   description:
     Lagrange DAO offers decentralized solutions for community management

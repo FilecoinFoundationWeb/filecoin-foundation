@@ -15,7 +15,7 @@ website: https://internet.dev
 repo: https://github.com/internet-development
 twitter: https://twitter.com/internetxstudio
 year-joined: 2024-01-12T20:15:45.807000Z
-subcategory: developer-tools
+category: developer-tools
 seo:
   description:
     Internet Development Studio Company provides decentralized solutions

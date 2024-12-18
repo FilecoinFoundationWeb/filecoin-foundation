@@ -7,7 +7,7 @@ email: encrypted::U2FsdGVkX1/xchX2ERBonZHEAh/uEhoj6zD+ZX/TEVe990HC26oFskap5/7gMs
 full-name: encrypted::U2FsdGVkX19GOyLVN1m/0/Xi7cAT71PaPAGIVGgoSm4=
 image:
   src: /assets/images/xbanking_logo_white.png
-subcategory: leasing
+category: leasing
 description: Non-custodial staking & liquid pools provider. Liquid pool provider
   and market maker for FIL tokens.
 website: https://xbanking.org
