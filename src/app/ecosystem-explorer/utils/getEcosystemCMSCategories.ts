@@ -1,11 +1,11 @@
 import { z } from 'zod'
 
-import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
-
 import {
   CategoryOptionSchema,
   SubcategoryOptionSchema,
 } from '../schemas/CategorySchemas'
+
+import { getCMSOptionsForField } from './getCMSOptionsForField'
 
 export function getEcosystemCMSCategories() {
   const rawCategoryOptions = getCMSOptionsForField('category')
@@ -23,9 +23,4 @@ export function getEcosystemCMSCategories() {
     categories: parsedCategoryOptions,
     subcategories: parsedSubcategoryOptions,
   }
-}
-
-function getCMSOptionsForField(fieldName: 'category' | 'subcategory') {
-  const { fields } = getCollectionConfig('ecosystem_projects')
-  return getCMSFieldOptions(fields, fieldName)
 }

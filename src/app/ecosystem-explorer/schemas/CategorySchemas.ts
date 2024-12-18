@@ -1,7 +1,6 @@
 import { z } from 'zod'
 
-import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
-import { createEnumSchema } from '@/utils/zodUtils'
+import { createSchemaForField } from '../utils/createSchemaForField'
 
 export const CategorySchema = createSchemaForField('category')
 export const SubcategorySchema = createSchemaForField('subcategory')
@@ -20,12 +19,3 @@ export const SubcategoryOptionSchema = z.object({
   label: z.string(),
   parent_category: CategoryValue,
 })
-
-function createSchemaForField(fieldName: 'category' | 'subcategory') {
-  const { fields } = getCollectionConfig('ecosystem_projects')
-  const cmsOptions = getCMSFieldOptions(fields, fieldName)
-
-  const values = cmsOptions.map((option) => option.value)
-
-  return createEnumSchema(values)
-}
