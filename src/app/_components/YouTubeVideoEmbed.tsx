@@ -5,6 +5,8 @@ import useSWR from 'swr'
 
 import { fetchYouTubeVideoMetadata } from '@/services/youtube'
 
+import YouTubeLogoIcon from '@/assets/logos/youtube-logo-icon.svg'
+
 type PlaceholderProps = {
   text: string
 }
@@ -39,15 +41,21 @@ export function YouTubeVideoEmbed({ videoUrl }: YouTubeVideoEmbedProps) {
   }
 
   return (
-    <LiteYouTubeEmbed
-      id={videoId}
-      title={data.title}
-      wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
-      iframeClass="focus:brand-outline w-full h-full cursor-pointer"
-      playerClass="sr-only"
-      noCookie={true}
-      params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
-    />
+    <div className="relative">
+      <LiteYouTubeEmbed
+        id={videoId}
+        title={data.title}
+        activatedClass="lyt-activated"
+        iframeClass="h-full w-full cursor-pointer focus:brand-outline"
+        params={REMOVE_MORE_VIDEOS_SUGGESTIONS}
+        playerClass="sr-only"
+        wrapperClass="aspect-video bg-cover bg-center rounded-lg overflow-hidden cursor-pointer"
+      />
+      <YouTubeLogoIcon
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-12 -translate-x-1/2 -translate-y-1/2 opacity-100 transition-all duration-300 ease-in-out [.lyt-activated_+_&]:invisible [.lyt-activated_+_&]:opacity-0"
+      />
+    </div>
   )
 }
 
