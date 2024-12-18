@@ -21,22 +21,28 @@ export function EventDetails(event: Event) {
           </div>
           <span className="text-sm">{event.location}</span>
         </div>
+
         <div className="space-y-4 lg:col-span-2">
           {event.tag && <TagLabel>{event.tag}</TagLabel>}
+
           <div className="space-y-2">
             <Heading tag="h3" variant="lg">
               {event.title}
             </Heading>
+
             {event.description && (
               <p className="max-w-readable">{event.description}</p>
             )}
+
             {event.moderators && (
               <Participants title="Moderator" participants={event.moderators} />
             )}
+
             {event.speakers && (
               <Participants title="Speaker" participants={event.speakers} />
             )}
           </div>
+
           {event.url && (
             <SmartTextLink href={event.url}>View Details</SmartTextLink>
           )}
