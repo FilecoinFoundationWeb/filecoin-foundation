@@ -109,6 +109,7 @@ export default function EventEntry({ params }: EventProps) {
       {eventHasProgram && (
         <ProgramSection
           title={program.title}
+          kicker={program.kicker}
           events={sortNonEmptyEventsAsc(program.events)}
         />
       )}
