@@ -15,7 +15,6 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
-import { FeaturedGrantsGraduates } from '@/components/FeaturedGrantGraduates'
 import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -25,6 +24,7 @@ import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
+import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
@@ -101,9 +101,11 @@ export default function Grants() {
         </CardGrid>
       </PageSection>
 
-      <PageSection kicker="Past Recipients" title="Grant Graduates">
-        <FeaturedGrantsGraduates grantGraduates={grantGraduates} />
-      </PageSection>
+      {grantGraduates.length > 0 && (
+        <PageSection kicker="Past Recipients" title="Grant Graduates">
+          <FeaturedGrantGraduates grantGraduates={grantGraduates} />
+        </PageSection>
+      )}
 
       <PageSection
         kicker="Application Process"
