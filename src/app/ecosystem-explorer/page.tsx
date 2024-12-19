@@ -122,8 +122,8 @@ export default function EcosystemExplorer({ searchParams }: Props) {
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
-              sort={
+              searchComponent={<Search query={searchQuery} />}
+              sortComponent={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
@@ -131,11 +131,16 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                 />
               }
             />
+
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
-              results={<ResultsAndReset results={filteredEntries.length} />}
-              category={<CategoryFiltersSlider categories={categoryTree} />}
-              sort={
+              searchComponent={<Search query={searchQuery} />}
+              filterComponents={[
+                <CategoryFiltersSlider
+                  key="category"
+                  categories={categoryTree}
+                />,
+              ]}
+              sortComponent={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}

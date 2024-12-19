@@ -6,7 +6,7 @@ import type { Event } from '../../types/eventType'
 type Links = {
   externalLink?: Event['externalLink']
   lumaCalendarLink?: Event['lumaCalendarLink']
-  recapYoutubePlaylistUrl?: Event['recapYoutubePlaylistUrl']
+  youtubePlaylistUrl?: NonNullable<Event['recap']>['youtubePlaylistUrl']
 }
 
 type CtaArrayProps = {
@@ -15,15 +15,15 @@ type CtaArrayProps = {
 }
 
 export function buildCtaArray({
-  links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
+  links: { externalLink, lumaCalendarLink, youtubePlaylistUrl },
   eventHasConcluded,
 }: CtaArrayProps) {
   const ctaArray: Array<CTAProps> = []
 
   if (eventHasConcluded) {
-    if (recapYoutubePlaylistUrl) {
+    if (youtubePlaylistUrl) {
       ctaArray.push({
-        href: recapYoutubePlaylistUrl,
+        href: youtubePlaylistUrl,
         text: 'Watch Event Highlights',
       })
     } else {

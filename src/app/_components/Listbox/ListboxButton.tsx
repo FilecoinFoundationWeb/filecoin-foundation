@@ -8,7 +8,7 @@ import { Icon, type IconProps } from '@/components/Icon'
 type TailwindConfig = ReturnType<typeof resolveConfig>
 type Breakpoint = keyof TailwindConfig['theme']['screens']
 
-type ListboxButtonProps = {
+export type ListboxButtonProps = {
   text: string
   leadingIcon?: IconProps['component']
   compactBelow?: Breakpoint

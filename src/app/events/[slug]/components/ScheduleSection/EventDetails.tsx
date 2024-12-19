@@ -2,6 +2,7 @@
 
 import { BasicCard } from '@/components/BasicCard'
 import { Heading } from '@/components/Heading'
+import { TagLabel } from '@/components/TagLabel'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 import type { Event } from '../../../schemas/ScheduleSchema'
@@ -9,37 +10,48 @@ import { formatTime } from '../../utils/dateUtils'
 
 import { Participants } from './Participants'
 
-export function EventDetails(event: Event) {
+export function EventDetails({
+  start,
+  end,
+  location,
+  tag,
+  title,
+  description,
+  moderators,
+  speakers,
+  url,
+}: Event) {
   return (
     <BasicCard>
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="flex gap-6 text-brand-300 lg:flex-col lg:gap-1">
           <div className="text-sm font-bold">
-            <span>{formatTime(event.start)}</span>
-            {event.end && <span> – {formatTime(event.end)}</span>}
+            <span>{formatTime(start)}</span>
+            {end && <span> – {formatTime(end)}</span>}
           </div>
-          <span className="text-sm">{event.location}</span>
+          <span className="text-sm">{location}</span>
         </div>
-        <div className="lg:col-span-2">
-          <Heading tag="h3" variant="lg">
-            {event.title}
-          </Heading>
-          <div className="mt-2 space-y-2">
-            {event.description && (
-              <p className="max-w-readable">{event.description}</p>
+
+        <div className="space-y-4 lg:col-span-2">
+          {tag && <TagLabel>{tag}</TagLabel>}
+
+          <div className="space-y-2">
+            <Heading tag="h3" variant="lg">
+              {title}
+            </Heading>
+
+            {description && <p className="max-w-readable">{description}</p>}
+
+            {moderators && (
+              <Participants title="Moderator" participants={moderators} />
             )}
-            {event.moderators && (
-              <Participants title="Moderator" participants={event.moderators} />
-            )}
-            {event.speakers && (
-              <Participants title="Speaker" participants={event.speakers} />
+
+            {speakers && (
+              <Participants title="Speaker" participants={speakers} />
             )}
           </div>
-          {event.url && (
-            <div className="mt-4">
-              <SmartTextLink href={event.url}>View Details</SmartTextLink>
-            </div>
-          )}
+
+          {url && <SmartTextLink href={url}>View Details</SmartTextLink>}
         </div>
       </div>
     </BasicCard>

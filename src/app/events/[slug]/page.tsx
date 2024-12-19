@@ -15,6 +15,7 @@ import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
 import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
+import { sortNonEmptyEventsAsc } from '../utils/sortEvents'
 
 import { ProgramSection } from './components/ProgramSection'
 import { RecapSection } from './components/RecapSection'
@@ -62,15 +63,16 @@ export default function EventEntry({ params }: EventProps) {
     schedule,
     speakers,
     sponsors,
-    recapYoutubeEmbedUrl,
-    recapYoutubePlaylistUrl,
+    recap,
   } = data
+
+  const { youtubeEmbedUrl, youtubePlaylistUrl } = recap ?? {}
 
   const eventHasConcluded = isEventConcluded(startDate, endDate)
   const eventHasProgram = program && program.events.length > 0
-  const eventHasRecap = eventHasConcluded && recapYoutubeEmbedUrl
+  const eventHasRecap = eventHasConcluded && youtubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
-  const eventHasSpeakers = speakers && speakers.length > 0
+  const eventHasSpeakers = speakers && speakers.speakersList.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
 
   return (
@@ -92,7 +94,11 @@ export default function EventEntry({ params }: EventProps) {
             location: location.primary,
           })}
           cta={buildCtaArray({
-            links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
+            links: {
+              externalLink,
+              lumaCalendarLink,
+              youtubePlaylistUrl,
+            },
             eventHasConcluded,
           })}
           image={{
@@ -103,12 +109,15 @@ export default function EventEntry({ params }: EventProps) {
         />
       </div>
 
-      {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
+      {eventHasRecap && <RecapSection youtubeEmbedUrl={youtubeEmbedUrl} />}
 
       {eventHasProgram && (
-        <ProgramSection title={program.title} events={program.events} />
+        <ProgramSection
+          title={program.title}
+          kicker={program.kicker}
+          events={sortNonEmptyEventsAsc(program.events)}
+        />
       )}
-
       {eventHasSpeakers && <SpeakersSection speakers={speakers} />}
       {eventHasSchedule && <ScheduleSection schedule={schedule} />}
       {eventHasSponsors && <SponsorSection sponsors={sponsors} />}

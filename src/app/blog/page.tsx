@@ -4,7 +4,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { type NextServerSearchParams } from '@/types/searchParams'
 
-import { DEFAULT_FILTER_OPTION } from '@/constants/filterConstants'
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
@@ -28,7 +28,7 @@ import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
-import { Category } from '@/components/Category'
+import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { PageHeader } from '@/components/PageHeader'
@@ -99,10 +99,10 @@ export default function Blog({ searchParams }: Props) {
     entries: filteredEntries,
   })
 
-  const categoryOptionsWithCount = useListboxOptions({
+  const { optionsWithCount: categoryOptionsWithCount } = useListboxOptions({
     collectionName: 'blog_posts',
     fieldName: 'category',
-    defaultOption: DEFAULT_FILTER_OPTION,
+    defaultOption: DEFAULT_CATEGORY_FILTER_OPTION,
     entries: searchResults,
   })
 
@@ -134,12 +134,12 @@ export default function Blog({ searchParams }: Props) {
       >
         <FilterContainer>
           <FilterContainer.ResultsAndCategory
-            category={<Category options={categoryOptionsWithCount} />}
+            category={<CategoryFilter options={categoryOptionsWithCount} />}
           />
           <FilterContainer.MainWrapper>
             <FilterContainer.DesktopFilters
-              search={<Search query={searchQuery} />}
-              sort={
+              searchComponent={<Search query={searchQuery} />}
+              sortComponent={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}
@@ -149,9 +149,14 @@ export default function Blog({ searchParams }: Props) {
             />
 
             <FilterContainer.MobileFiltersAndResults
-              search={<Search query={searchQuery} />}
-              category={<Category options={categoryOptionsWithCount} />}
-              sort={
+              searchComponent={<Search query={searchQuery} />}
+              filterComponents={[
+                <CategoryFilter
+                  key="category"
+                  options={categoryOptionsWithCount}
+                />,
+              ]}
+              sortComponent={
                 <Sort
                   query={sortQuery}
                   options={sortOptions}

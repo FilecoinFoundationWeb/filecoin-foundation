@@ -7,17 +7,14 @@ import { PageSection } from '@/components/PageSection'
 import { DEFAULT_CTA_TEXT } from '../../constants/constants'
 import type { Event } from '../../types/eventType'
 import { getMetaData } from '../../utils/getMetaData'
-import { sortEventsAsc } from '../../utils/sortEvents'
 
 type ProgramSectionProps = NonNullable<Event['program']>
 
-export function ProgramSection({ title, events }: ProgramSectionProps) {
-  const sortedEvents = sortEventsAsc(events)
-
+export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
   return (
-    <PageSection kicker="Explore" title={title || 'Events'}>
+    <PageSection kicker={kicker} title={title}>
       <CardGrid cols="smTwo">
-        {sortedEvents.map((event) => {
+        {events.map((event) => {
           const {
             title,
             startDate,
