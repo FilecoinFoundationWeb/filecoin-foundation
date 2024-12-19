@@ -17,16 +17,17 @@ import {
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
-import { FeaturedBlogPosts } from '@/components/FeaturedBlogPosts'
-import { FeaturedEcosystemProjects } from '@/components/FeaturedEcosystemProjects'
-import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
-import { NoBreadCrumbsLayout } from '@/components/NoBreadCrumbsLayout'
+import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
+
+import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
+import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
+import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
 
 const ecosystemProjects = getEcosystemProjectsData()
 
@@ -86,7 +87,7 @@ export default function Home() {
               } = card
 
               return (
-                <HomeExploreSectionCard
+                <ExploreSectionCard
                   key={title}
                   cta={cta}
                   heading={{
@@ -99,7 +100,7 @@ export default function Home() {
                   }}
                 >
                   {description}
-                </HomeExploreSectionCard>
+                </ExploreSectionCard>
               )
             })}
           </CardGrid>

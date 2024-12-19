@@ -8,8 +8,8 @@ import { getFrontmatter } from '@/utils/getFrontmatter'
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { CardGrid } from '@/components/CardGrid'
+import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { GovernanceCalendarCards } from '@/components/GovernanceCalendarCards'
-import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -53,7 +53,7 @@ export default function Governance() {
             } = card
 
             return (
-              <HomeExploreSectionCard
+              <ExploreSectionCard
                 key={title}
                 cta={cta}
                 heading={{
@@ -66,7 +66,7 @@ export default function Governance() {
                 }}
               >
                 {description}
-              </HomeExploreSectionCard>
+              </ExploreSectionCard>
             )
           })}
         </CardGrid>
