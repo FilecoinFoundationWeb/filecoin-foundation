@@ -28,7 +28,7 @@ program:
         Secure Zone, the venue requires a WEF Hotel Badge or other official WEF
         event badge or credential for entry. Book a private meeting room:
         events@fil.org "
-      external-link: www.google.com
+      external-link: www.typeform.com
     - title: " With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
