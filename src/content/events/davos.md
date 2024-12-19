@@ -20,7 +20,7 @@ program:
     - title: The Filecoin Penthouse. Hosted by Filecoin Foundation
       start-date: 2025-01-20T09:00:00.000Z
       end-date: 2025-01-23T17:30:00.000Z
-      location: Apply to Attend
+      location: Davos, Switzerland
       description: "The Filecoin Penthouse is an exclusive lounge in the heart of
         Davos, designed for networking, casual meetings, and relaxing with
         coffee while enjoying breathtaking views. A private meeting room
@@ -28,7 +28,7 @@ program:
         Secure Zone, the venue requires a WEF Hotel Badge or other official WEF
         event badge or credential for entry. Book a private meeting room:
         events@fil.org "
-      external-link: https://www.google.com
+      external-link: ""
     - title: " With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
@@ -39,12 +39,12 @@ program:
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Wednesday night. Space is limited, and attendance is by prior
         confirmation only.
-      location: Invitation Only
+      location: Davos, Switzerland
     - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
         GBBC.
       start-date: 2025-01-22T17:00:00.000Z
       end-date: 2025-01-22T18:30:00.000Z
-      location: Apply to Attend
+      location: Davos, Switzerland
       description: The Policy in Draft Reception, hosted by Filecoin Foundation,
         Hedera, and GBBC, will bring together senior industry leaders and
         policymakers from around the globe for an engaging dialogue on the
