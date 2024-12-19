@@ -48,8 +48,6 @@ schedule:
           description: " "
           location: " "
           start: 2025-01-21T00:00:00.000Z
-    - date: 2025-01-22T09:00:00.000Z
-    - date: 2025-01-23T09:00:00.000Z
   kicker: Don't miss out
 seo:
   twitter:
