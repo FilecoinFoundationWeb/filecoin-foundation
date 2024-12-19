@@ -86,7 +86,7 @@ speakers:
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/martabelcher/
       image:
-        src: /assets/images/marta-belcher-davos.webp
+        src: /assets/images/643e68c10a5fe40dd997f1b0_1-sljgxdvn3ixspjp8v2-i4g.jpeg
     - name: Megan Klimen
       title: Founding Officer
       company: Filecoin Foundation
