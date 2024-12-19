@@ -110,7 +110,7 @@ speakers:
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/rachelgreenhorn/
       image:
-        src: /assets/images/meredith-pallante-davos.webp
+        src: /assets/images/rachel-green-horn-headshot.webp
     - image:
         src: /assets/images/porter-stowell-davos.jpg
       name: Porter Stowell
