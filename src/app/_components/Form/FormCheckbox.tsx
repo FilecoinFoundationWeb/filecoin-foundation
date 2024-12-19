@@ -2,6 +2,8 @@ import { Checkbox, type CheckboxProps, Field, Label } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
+import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
+
 import { Icon } from '@/components/Icon'
 
 type ExcludedHeadlessUIProps = 'className'
@@ -11,11 +13,8 @@ export type FormCheckboxProps = {
   labelSize?: 'sm' | 'md'
 } & Omit<CheckboxProps, ExcludedHeadlessUIProps>
 
-const TOUCH_TARGET = {
-  visibleElementSize: 'size-5',
-  touchAreaPadding: 'p-3.5',
-  touchAreaOffset: '-m-3.5',
-}
+const { visibleElementSize, touchAreaPadding, touchAreaOffset } =
+  getTouchTargetStyles('formCheckbox')
 
 export function FormCheckbox({
   label,
@@ -28,13 +27,13 @@ export function FormCheckbox({
         {...rest}
         className={clsx(
           'group cursor-pointer focus:outline-none',
-          TOUCH_TARGET.touchAreaPadding,
-          TOUCH_TARGET.touchAreaOffset,
+          touchAreaPadding,
+          touchAreaOffset,
         )}
       >
         <div
           className={clsx(
-            TOUCH_TARGET.visibleElementSize,
+            visibleElementSize,
             'rounded bg-brand-100 p-0.5 text-brand-100 group-focus:outline group-focus:outline-1 group-focus:outline-offset-2 group-focus:outline-brand-100 group-data-[disabled]:cursor-not-allowed group-data-[checked]:bg-brand-400',
           )}
         >

@@ -10,14 +10,17 @@ import { useCopyToClipboard } from 'usehooks-ts'
 
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 
+import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
+
 import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
-import { TOUCH_TARGET } from '@/components/ShareArticle'
 
 type CopyToClipboardProps = {
   text: string
   notificationTitle: string
 }
+
+const { touchAreaPadding } = getTouchTargetStyles('copyToClipboard')
 
 export function CopyToClipboard({
   text,
@@ -49,7 +52,7 @@ export function CopyToClipboard({
       <Button
         className={clsx(
           'focus:brand-outline hover:text-brand-400',
-          TOUCH_TARGET.class,
+          touchAreaPadding,
         )}
         onClick={() => handleCopy(text)}
       >
