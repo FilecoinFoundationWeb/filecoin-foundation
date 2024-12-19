@@ -52,6 +52,7 @@ program:
         priorities, the evolving landscape of blockchain use cases, and
         strategies for meaningful collaboration between industry and government
         as we look toward 2025 and beyond.
+      external-link: https://cvent.me/xbZ2w2
   title: Featured Events
   kicker: Find us around Davos
 schedule:
