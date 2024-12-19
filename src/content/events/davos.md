@@ -28,6 +28,7 @@ program:
         Secure Zone, the venue requires a WEF Hotel Badge or other official WEF
         event badge or credential for entry. Book a private meeting room:
         events@fil.org "
+      external-link: www.google.com
     - title: " With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
@@ -38,7 +39,7 @@ program:
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Wednesday night. Space is limited, and attendance is by prior
         confirmation only.
-      location: " "
+      location: Invitation Only
     - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
         GBBC.
       start-date: 2025-01-22T17:00:00.000Z
@@ -130,8 +131,8 @@ sponsors:
 seo:
   twitter:
     card: summary
-  description: Join FIL.org in Davos for high-level connections and conversations
-    on Web3, decentralization, and the future of the internet. Open daily
-    9am-5pm. Don’t miss this premier event!
-  title: Explore Web3 at Davos | FIL.org
+  description: Join the Filecoin community in Davos during the World Economic
+    Forum (Jan 20-23, 2025). Explore speaking engagements and events shaping the
+    future of the decentralized web.
+  title: FF at Davos 2025 | fil.org
 ---
