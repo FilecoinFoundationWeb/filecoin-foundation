@@ -13,13 +13,13 @@ const { data: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
 export type SmartImageProps = {
   src?: string | StaticImageProps['data']
-  alt: string
+  alt?: string
   className?: string
   objectFit?: ImageObjectFit
   padding?: boolean
 } & Omit<ImageProps, 'src' | 'alt' | 'className'>
 
-export async function SmartImage({ src, alt, ...props }: SmartImageProps) {
+export async function SmartImage({ src, alt = '', ...props }: SmartImageProps) {
   const imageSrc = await getImageSrc(src)
 
   const imageExists = imageSrc !== fallbackSrc
