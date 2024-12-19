@@ -38,10 +38,16 @@ schedule:
           location: GBBC’s Blockchain Central Davos | Promenade 89, 7270 Davos,
             Switzerland
           tag: GBBC
-          start: 2025-01-20T09:00:00.000Z
-          end: 2025-01-22T10:00:00.000Z
-      date: 2025-01-20T09:00:00.000Z
+          start: 2025-01-20T00:00:00.000Z
+          end: 2025-01-22T00:00:00.000Z
+      date: 2025-01-20T10:00:00.000Z
     - date: 2025-01-21T09:00:00.000Z
+      events:
+        - tag: " "
+          title: " "
+          description: " "
+          location: " "
+          start: 2025-01-21T00:00:00.000Z
     - date: 2025-01-22T09:00:00.000Z
     - date: 2025-01-23T09:00:00.000Z
   kicker: Don't miss out
