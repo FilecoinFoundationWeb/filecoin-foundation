@@ -92,7 +92,7 @@ Card.Image = function ImageComponent({
   const isStaticImage = 'data' in image
 
   const commonProps = {
-    alt: image.alt,
+    alt: image.alt || '',
     priority: image.priority,
     quality: 100,
     sizes:
