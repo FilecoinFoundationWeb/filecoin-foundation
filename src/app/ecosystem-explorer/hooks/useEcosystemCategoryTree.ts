@@ -1,5 +1,7 @@
 import { useMemo } from 'react'
 
+import { groupBy } from 'ramda'
+
 import { categoryGroupMap } from '../constants/categoryGroupMap'
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
@@ -34,8 +36,9 @@ export function useEcosystemCategoryTree<Entry extends EcosystemProject>({
   )
 
   const categoryTree = useMemo(() => {
-    const groupedCategories = Object.groupBy(categoriesWithCount, (item) =>
-      getCategoryGroupNameOrThrow(item.value),
+    const groupedCategories = groupBy(
+      (item) => getCategoryGroupNameOrThrow(item.value),
+      categoriesWithCount,
     )
 
     return Object.entries(groupedCategories)
