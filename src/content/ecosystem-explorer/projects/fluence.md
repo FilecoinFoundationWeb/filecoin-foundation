@@ -4,7 +4,6 @@ created-on: 2024-01-04T22:40:26Z
 updated-on: 2024-01-05T21:37:04.956000Z
 published-on: 2024-01-11T13:26:59.787000Z
 description: "Fluence is a decentralized serverless computing platform."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -14,7 +13,7 @@ website: "https://fluence.network"
 repo: "https://github.com/fluencelabs"
 twitter: "https://twitter.com/fluence_project"
 featured-content: "https://www.youtube.com/watch?v=uFhPJ1wR1GQ"
-subcategory: infrastructure
+category: infrastructure
 seo:
   description: Fluence offers decentralized computing solutions for peer-to-peer applications.
 email: encrypted::U2FsdGVkX1/ciPJHiovcbSZdh2/Yz592T0WGVTWvf1HF34AhUfU+JLh5xfT43Wnj

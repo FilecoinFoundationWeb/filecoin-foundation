@@ -6,7 +6,6 @@ published-on: 2024-03-20T14:14:44.167000Z
 description:
   "Simple access to the decentralized cloud, guaranteeing the sovereignty
   and resilience of your data."
-category: storage
 tech:
   - ipfs
 image:
@@ -14,7 +13,7 @@ image:
 website: https://hashguard.io/
 twitter: https://twitter.com/hashguard_/
 year-joined: 2022-09-07T14:14:44.368000Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description:
     HashGuard provides decentralized security solutions for blockchain

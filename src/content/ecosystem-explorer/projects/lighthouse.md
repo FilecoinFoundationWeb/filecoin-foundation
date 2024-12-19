@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Lighthouse provides perpetual storage on the Filecoin network, allowing
   users to store their files long-term at a fixed price."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -16,7 +15,7 @@ website: https://www.lighthouse.storage
 featured-content: https://filecoin.io/blog/posts/lighthouse-makes-permanent-storage-on-filecoin-easy-and-affordable/
 repo: https://github.com/lighthouse-web3
 twitter: https://twitter.com/LighthouseWeb3
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Lighthouse provides decentralized storage solutions for personal and

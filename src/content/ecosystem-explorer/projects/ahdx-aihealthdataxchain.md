@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1+bsVcxawX7Z3EcAxgeD8EbHf3fF2JCl9Iwzzj75ijMFwQZZqEiGA
 full-name: encrypted::U2FsdGVkX1/87p/osN2ZhIDELEOR4uzls2SFOaG1jAg=
 image:
   src: /assets/images/ahdx-update-3-2-.png
-category: education-academia-health
-subcategory: health
+category: health
 description: We offer a decentralized patient health data marketplace, which
   allows organizations and patients to securely share or monetize health
   information.

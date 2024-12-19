@@ -6,14 +6,13 @@ published-on: 2024-04-04T02:05:42.613000Z
 description:
   "Planet-scale data pipeline addressing composability of on & off-chain
   data"
-category: storage
 tech:
   - filecoin
 image:
   src: /assets/images/kamu-logo.svg
 website: https://www.kamu.dev/
 year-joined: 2024-04-04T02:05:42.624000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Kamu provides decentralized data management and collaboration tools.
 email: encrypted::U2FsdGVkX1+Ik/KXt1It8KHPX6z0L/PN2dAu1K6OknmchIF/m3axlsjBCV0FUPxW

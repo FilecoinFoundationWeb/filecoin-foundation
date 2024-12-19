@@ -5,8 +5,7 @@ updated-on: 2024-04-24T19:06:44.057Z
 published-on: 2024-04-24T19:06:44.068Z
 image:
   src: /assets/images/reppo.png
-category: storage
-subcategory: data-storage-management
+category: data-storage-management
 description: Building a sovereign AI modelling network to address DePIN
   verification and broadly assess the quality of crypto networks.
 website: https://reppo.xyz/

@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Solving science’s “Replication Crisis” is the basis of the work by DeSci
   Labs using decentralized technologies like IPFS and Filecoin."
-category: science-climate-space
 tech:
   - filecoin
   - ipfs
@@ -17,7 +16,7 @@ featured-content: https://fil.org/blog/case-study-desci-labs-and-filecoin-enabli
 repo: https://github.com/desci-labs
 twitter: https://twitter.com/DeSciLabs
 video-url: https://www.youtube.com/embed/q_5hAe2AzhE
-subcategory: decentralized-science
+category: decentralized-science
 seo:
   description:
     DeSci Labs offers decentralized science solutions for data management

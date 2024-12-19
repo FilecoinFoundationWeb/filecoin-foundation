@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Fission is building the identity, data, and compute protocols for the
   future of the Internet."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -15,7 +14,7 @@ image:
 website: https://github.com/fission-codes
 repo: https://github.com/fission-codes
 twitter: https://twitter.com/FISSIONcodes
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Fission provides decentralized storage and application hosting solutions.
 email: encrypted::U2FsdGVkX1+X69CsepI1J7d6qauqnoUBbqIFNPpq9AbpaxDpwiz2lGjqnSugDH5i

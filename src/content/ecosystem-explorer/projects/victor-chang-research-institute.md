@@ -7,7 +7,6 @@ description:
   "As they work toward finding a cure for heart disease, researchers at
   Victor Chang Cardiac Research Institute are using Filecoin to safeguard and share
   research data."
-category: education-academia-health
 tech:
   - filecoin
   - ipfs
@@ -17,7 +16,7 @@ website: "https://www.victorchang.edu.au/"
 featured-content: "https://destor.com/victor-chang-cardiac-research-institute-case-study"
 repo: "https://github.com/VCCRI"
 twitter: "https://twitter.com/VictorChangInst"
-subcategory: health
+category: health
 seo:
   description:
     Victor Chang Research Institute provides decentralized solutions for

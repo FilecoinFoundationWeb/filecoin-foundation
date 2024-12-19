@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Ntent is a digital art and immersive experience collective and smart
   contract platform for generative and dynamic art."
-category: "media-entertainment"
 tech:
   - "ipfs"
 image:
@@ -14,7 +13,7 @@ image:
 website: "https://www.ntent.art"
 repo: "https://github.com/fluencelabs"
 twitter: "https://twitter.com/fluence_project"
-subcategory: arts-collectibles-nfts
+category: arts-collectibles-nfts
 seo:
   description: NTENT offers decentralized solutions for digital art and collectibles.
 email: encrypted::U2FsdGVkX19YqEdzETvLgLKZftCusT0mK/8q3cYc7plUad71QQl2uiPqFn/sWkrE

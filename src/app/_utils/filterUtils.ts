@@ -2,20 +2,13 @@ type WithCategory = {
   category: string
 }
 
-type WithSubcategory = {
-  subcategory: string
-}
-
 export function entryMatchesCategoryQuery<Entry extends WithCategory>(
   entry: Entry,
-  query?: string,
+  query?: string | Array<string>,
 ) {
-  return entry.category === query
-}
+  if (Array.isArray(query)) {
+    return query.includes(entry.category)
+  }
 
-export function entryMatchesSubcategoryQuery<Entry extends WithSubcategory>(
-  entry: Entry,
-  queries?: Array<string>,
-) {
-  return Boolean(queries?.includes(entry.subcategory))
+  return entry.category === query
 }

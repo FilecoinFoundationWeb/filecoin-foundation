@@ -6,7 +6,6 @@ published-on: 2024-05-16T14:44:42.701000Z
 description:
   "Incentivizes (good) behavior on Filecoin. We provide tooling and compliance
   services."
-category: tooling-productivity
 tech:
   - filecoin
 image:
@@ -14,7 +13,7 @@ image:
 website: https://fidl.tech
 repo: https://github.com/fidlabs
 year-joined: 2024-05-16T14:44:42.714000Z
-subcategory: developer-tools
+category: developer-tools
 seo:
   description:
     Filecoin Incentive DesignLabs offers tools and resources for designing

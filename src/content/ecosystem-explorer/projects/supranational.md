@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "A product and service company developing hardware-accelerated cryptography
   for verifiable and confidential computing."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -18,7 +17,7 @@ featured-content: >-
 repo: "https://github.com/supranational"
 website: "https://www.supranational.net/"
 year-joined: 2024-01-11T13:26:59.787Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Supranational offers decentralized solutions for data security and

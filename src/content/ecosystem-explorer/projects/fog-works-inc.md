@@ -4,7 +4,6 @@ created-on: 2024-03-04T19:44:10.411000Z
 updated-on: 2024-03-04T19:44:10.420000Z
 published-on: 2024-03-04T19:44:10.434000Z
 description: "Leading web3 company in decentralized data storage."
-category: storage
 tech:
   - ipfs
   - filecoin
@@ -13,7 +12,7 @@ image:
 website: https://fogworks.io/
 twitter: https://twitter.com/fogworksinc
 year-joined: 2022-11-22T19:44:10.444000Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description: Fog Works provides decentralized solutions for edge computing and
     data storage.

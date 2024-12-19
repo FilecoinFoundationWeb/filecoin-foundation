@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1/BJ/zzLmMjaafinNNU+Y9PJLNAAYDSW3FkU4vdwW1yLEQPu8rAlA
 full-name: encrypted::U2FsdGVkX1+wbOjwZYitlXfptvBSUqIKa5l+Aplaam4=
 image:
   src: /assets/images/65974732c5826a2570dfd210_filecoin-station-logo.png
-category: tooling-productivity
-subcategory: developer-tools
+category: developer-tools
 description: Filecoin Station is a desktop app that securely connects your
   computer's idle resource to the Filecoin network by completing jobs on behalf
   of the network.

@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Tableland is a Web3 database to store and query contract metadata with
   (structured query language) SQL."
-category: tooling-productivity
 tech:
   - filecoin
   - ipfs
@@ -16,7 +15,7 @@ website: "https://tableland.xyz/"
 featured-content: "https://mirror.xyz/tableland.eth/cLDRyLa7aMEf1y2sy-PhQtllnZ1YK_oxoS-U2Sf30_Y"
 repo: "https://github.com/tablelandnetwork"
 twitter: "https://twitter.com/tableland"
-subcategory: developer-tools
+category: developer-tools
 seo:
   description: Tableland offers decentralized database solutions for web3 applications.
 email: encrypted::U2FsdGVkX1/DeOaPm+YW7ukLKG8kFNlbgKOXob8Dtwx5MDmvJJw0OpOIUEtRHFbR
