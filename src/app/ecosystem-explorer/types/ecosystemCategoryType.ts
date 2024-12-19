@@ -1,8 +1,8 @@
-import type { useEcosystemCategory } from '../hooks/useEcosystemCategory'
+import type { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
 
 export type CategoriesAndSubcategoriesWithCount = ReturnType<
-  typeof useEcosystemCategory
->['categoryTree']
+  typeof useEcosystemCategoryTree
+>
 
 export type SubcategoriesWithCount =
   CategoriesAndSubcategoriesWithCount[number]['subcategories']
