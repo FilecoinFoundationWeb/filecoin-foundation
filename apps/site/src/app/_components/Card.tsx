@@ -113,7 +113,7 @@ Card.Image = function ImageComponent({
       <SmartImage
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
-        src={(image.data as StaticImageData).src}
+        src={image.data as StaticImageData}
         alt={commonProps.alt}
       />
     )
