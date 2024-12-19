@@ -110,9 +110,9 @@ speakers:
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/rachelgreenhorn/
       image:
-        src: /assets/images/rachel-horn-davos.webp
+        src: /assets/images/meredith-pallante-davos.webp
     - image:
-        src: /assets/images/porter-stowell-davos.webp
+        src: /assets/images/porter-stowell-davos.jpg
       name: Porter Stowell
       title: Head of Ecosystem & Community
       company: Filecoin Foundation
@@ -134,7 +134,7 @@ speakers:
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/jlfahle/
       image:
-        src: /assets/images/jordan-fahle-davos.png
+        src: /assets/images/jordan-fahle-davos.webp
 sponsors:
   first-tier:
     - name: GBBC
