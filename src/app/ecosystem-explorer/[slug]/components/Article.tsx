@@ -16,7 +16,7 @@ type ArticleProps = {
   repo?: string
   twitter?: string
   featuredContent?: string
-  subcategory: string
+  category: string
 }
 
 export function Article({
@@ -27,12 +27,12 @@ export function Article({
   repo,
   twitter,
   featuredContent,
-  subcategory,
+  category,
 }: ArticleProps) {
   return (
     <article className="space-y-8">
       <div className="flex flex-wrap gap-2">
-        <TagLabel>{subcategory}</TagLabel>
+        <TagLabel>{category}</TagLabel>
       </div>
       <div className="flex flex-wrap justify-between gap-16">
         <div className="max-w-readable gap-8 space-y-8">

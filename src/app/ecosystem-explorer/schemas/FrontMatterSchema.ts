@@ -2,13 +2,12 @@ import { z } from 'zod'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
-import { CategorySchema, SubcategorySchema } from './CategorySchemas'
+import { CategorySchema } from './CategorySchemas'
 import { ProjectTechSchema } from './ProjectTechSchema'
 
 export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
-  subcategory: SubcategorySchema,
   description: z.string(),
   tech: ProjectTechSchema,
   website: z.string().url().optional(),
