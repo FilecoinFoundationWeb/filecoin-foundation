@@ -28,7 +28,7 @@ program:
         Secure Zone, the venue requires a WEF Hotel Badge or other official WEF
         event badge or credential for entry. Book a private meeting room:
         events@fil.org "
-      external-link: https://cvent.me/Z5Gk11
+      external-link: https://www.cvent.me/Z5Gk11
     - title: " With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
@@ -52,7 +52,7 @@ program:
         priorities, the evolving landscape of blockchain use cases, and
         strategies for meaningful collaboration between industry and government
         as we look toward 2025 and beyond.
-      external-link: https://cvent.me/xbZ2w2
+      external-link: https://www.cvent.me/xbZ2w2
   title: Featured Events
   kicker: Find us around Davos
 schedule:
