@@ -11,6 +11,7 @@
       "@/hooks/*": ["src/app/_hooks/*"],
       "@/styles/*": ["src/app/_styles/*"],
       "@/types/*": ["src/app/_types/*"],
+      "@/api/*": ["src/app/_api/*"],
       "@/utils/*": ["src/app/_utils/*"],
       "@/assets/*": ["public/assets/*"],
       "@/support/*": ["cypress/support/*"]
