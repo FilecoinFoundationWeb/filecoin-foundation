@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Portrait is an open-source web page builder that lets you turn your
   blockchain address into a website."
-category: media-entertainment
 tech:
   - filecoin
   - ipfs
@@ -15,7 +14,7 @@ image:
 website: "https://portrait.gg/"
 repo: "https://github.com/portraitgg"
 twitter: "https://twitter.com/portrait_gg"
-subcategory: arts-collectibles-nfts
+category: arts-collectibles-nfts
 seo:
   description: Portrait offers decentralized solutions for digital art and collectibles.
 email: encrypted::U2FsdGVkX18vbGYF+gpIkqlHJrTU2svRzzPEssOkpdOD/FLX62+tW9u3VoPp1V1w

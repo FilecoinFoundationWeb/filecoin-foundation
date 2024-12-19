@@ -26,7 +26,7 @@ type EcosystemProjectProps = {
   }
 }
 
-const { subcategories: cmsSubcategories } = getEcosystemCMSCategories()
+const categories = getEcosystemCMSCategories()
 
 export function generateMetadata({ params }: EcosystemProjectProps) {
   const { slug } = params
@@ -54,12 +54,12 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     repo,
     twitter,
     featuredContent,
-    subcategory,
+    category,
   } = data
 
-  const projectSubcategory = findOrThrow(
-    cmsSubcategories,
-    (cmsSubcategory) => cmsSubcategory.value === subcategory,
+  const projectCategory = findOrThrow(
+    categories,
+    ({ value }) => value === category,
   )
 
   return (
@@ -75,7 +75,7 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
         repo={repo}
         twitter={twitter}
         featuredContent={featuredContent}
-        subcategory={projectSubcategory.label}
+        category={projectCategory.label}
       />
 
       <ShareArticle

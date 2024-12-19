@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Lagrange DAO is a DAO for data value realization, providing data sharing
   and analytic spaces for decentralized science."
-category: "public-goods-dweb"
 tech:
   - "filecoin"
   - "ipfs"
@@ -15,7 +14,7 @@ image:
 website: "https://lagrangedao.org"
 repo: "https://github.com/lagrangedao"
 twitter: "https://twitter.com/lagrangedao"
-subcategory: governance-daos-public-goods
+category: governance-daos-public-goods
 seo:
   description:
     Lagrange DAO offers decentralized solutions for community management

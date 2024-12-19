@@ -7,7 +7,6 @@ description:
   "Titan is a leading DePIN service provider, that is committed to delivering
   efficient, secure, and cost-effective decentralized solutions, tooling and resources
   that can help your projects stand out in a competitive marketplace."
-category: storage
 image:
   src: /assets/images/65974d743ddd7ef7851595fe_titan-svg2.png
 tech:
@@ -17,7 +16,7 @@ website: "https://www.titannet.io/"
 repo: "https://github.com/Filecoin-Titan/titan"
 twitter: "https://twitter.com/FilecoinTitan"
 year-joined: 2024-01-11T13:26:59.787Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description: Titan Network offers decentralized solutions for blockchain infrastructure.
 email: encrypted::U2FsdGVkX19sf+hxz6eg44v03StOEchjqiUonXPGpP7iLIzY5lIqXsmMdBSDOJoW

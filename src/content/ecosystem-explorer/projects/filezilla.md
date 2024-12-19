@@ -7,7 +7,6 @@ description:
   "Filezilla aims to create a cross-chain bridge that connects Solana and
   Filecoin mainnets. This will increase the existing partnership that has already
   been established between both chains."
-category: storage
 tech:
   - filecoin
 image:
@@ -15,7 +14,7 @@ image:
 website: https://file-zilla.pro/
 twitter: https://twitter.com/FileZillaToken
 year-joined: 2024-02-21T15:20:11.125000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Filezilla offers decentralized file storage and management solutions.
 email: encrypted::U2FsdGVkX1+g8an3PSXetYjodZ0459ma9Rzwz1HjJ8b9kGVLA4/MVu50XOx8X0UG

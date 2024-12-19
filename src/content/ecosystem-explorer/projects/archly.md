@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1/sxxboDNHuBNcfkzOZllTelTjXzT04SqJbIUWZgYtkS28GRceEvw
 full-name: encrypted::U2FsdGVkX1+28ZJ/ODXFKwFRJ2uHNi45q95Dx7UL6HU=
 image:
   src: /assets/images/archly-logo-circle-1000.webp
-category: storage
-subcategory: data-storage-management
+category: data-storage-management
 description: Empower any user on any chain to engage in seamless cross-chain
   experiences through our DEX and Rainbow Road platforms.
 website: https://archly.fi

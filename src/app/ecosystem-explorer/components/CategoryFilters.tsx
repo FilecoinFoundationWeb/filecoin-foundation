@@ -7,11 +7,11 @@ import { CATEGORY_KEY } from '@/constants/searchParams'
 import { FormCheckbox } from '@/components/Form/FormCheckbox'
 
 import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
-import type { CategoriesAndSubcategoriesWithCount } from '../types/ecosystemCategoryType'
+import type { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
 import { toggleArraySelection } from '../utils/toggleArraySelection'
 
-type CategoryFiltersProps = {
-  categories: CategoriesAndSubcategoriesWithCount
+export type CategoryFiltersProps = {
+  categories: ReturnType<typeof useEcosystemCategoryTree>
 }
 
 export function CategoryFilters({ categories }: CategoryFiltersProps) {
@@ -24,13 +24,13 @@ export function CategoryFilters({ categories }: CategoryFiltersProps) {
 
   return (
     <ul className="w-full space-y-10 lg:max-w-72">
-      {categories.map(({ value, label, subcategories }) => (
-        <li key={value}>
+      {categories.map(([categoryGroupName, categories]) => (
+        <li key={categoryGroupName}>
           <h3 className="pb-7 text-sm font-bold text-brand-300 lg:pb-4">
-            {label}
+            {categoryGroupName}
           </h3>
           <div className="flex flex-col gap-7 pl-3 lg:gap-4">
-            {subcategories.map(({ value, label, count }) => (
+            {categories?.map(({ value, label, count }) => (
               <FormCheckbox
                 key={value}
                 label={`${label} (${count})`}

@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX19OF/kIWk41ZdOEgVcCacqfR1VJKvFNPRDbWCwbwXe9zhinD8KGjE
 full-name: encrypted::U2FsdGVkX18DlthsMxVPpKNUWM3lNVz9HUJtKos3aLY=
 image:
   src: /assets/images/okcontract-logo-white.png
-category: tooling-productivity
-subcategory: developer-tools
+category: developer-tools
 description: "OKcontract is as an interaction layer between the user interface
   and the smart contracts."
 website: https://okcontract.com/

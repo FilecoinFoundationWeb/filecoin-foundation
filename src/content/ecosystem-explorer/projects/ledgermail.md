@@ -4,7 +4,6 @@ created-on: 2024-03-29T21:28:53.257000Z
 updated-on: 2024-03-29T21:45:06.750000Z
 published-on: 2024-03-29T21:45:06.750000Z
 description: "The world's first Decentralized Email Service"
-category: tooling-productivity
 tech:
   - filecoin
 image:
@@ -12,7 +11,7 @@ image:
 website: https://ledgermail.io
 twitter: https://twitter.com/LedgerMail
 year-joined: 2024-03-29T21:28:53.257000Z
-subcategory: wallets-identity-authentication
+category: wallets-identity-authentication
 seo:
   description: LedgerMail provides decentralized email solutions for secure communication.
 email: encrypted::U2FsdGVkX18iOadodUmQTwBo3polIk4GmSp32kDDwIAPqQBZck15sx89IPPNzH/W

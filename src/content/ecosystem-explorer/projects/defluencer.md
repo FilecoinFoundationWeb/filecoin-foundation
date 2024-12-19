@@ -6,7 +6,6 @@ published-on: 2024-04-03T18:07:28.332000Z
 description:
   "Defluencer is a protocol built on top of the inter-planetary file system
   (IPFS)."
-category: tooling-productivity
 tech:
   - ipfs
 image:
@@ -14,7 +13,7 @@ image:
 website: https://social.defluencer.eth.limo/#/
 repo: https://github.com/Defluencer
 year-joined: 2024-04-03T18:07:28.347000Z
-subcategory: dapp
+category: dapp
 seo:
   description: Defluencer offers decentralized solutions for influencer marketing.
 email: encrypted::U2FsdGVkX1/pRNfoX+q8IEk2x9yZO7/j93LEYco/TNDapjjFNtvU1Pr95kgFNuV6

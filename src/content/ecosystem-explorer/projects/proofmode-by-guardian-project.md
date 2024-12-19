@@ -6,7 +6,6 @@ published-on: 2024-02-27T19:57:29.861Z
 description:
   "Open-source mobile camera app, toolkit and protocol that adds verifiable
   digital proof to photos and video at the point of capture."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -16,7 +15,7 @@ website: "https://proofmode.org"
 featured-content: "https://www.ffdweb.org/blog/guardian-project-annoucement/"
 repo: "https://github.com/guardianproject/proofmode-android "
 twitter: "https://twitter.com/guardianproject"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     ProofMode offers decentralized solutions for data verification and

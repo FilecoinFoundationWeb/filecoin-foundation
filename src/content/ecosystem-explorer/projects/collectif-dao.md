@@ -6,7 +6,6 @@ published-on: 2024-01-24T13:50:38.349000Z
 description:
   "Decentralized non-custodial liquid staking protocol bringing capital
   efficient storage an mining to the Filecoin network"
-category: public-goods-dweb
 tech:
   - filecoin
 image:
@@ -15,7 +14,7 @@ website: "https://collectif.finance/"
 repo: "https://github.com/collectif-dao"
 twitter: "https://twitter.com/CollectifDAO"
 year-joined: 2024-01-24T13:50:38.359000Z
-subcategory: governance-daos-public-goods
+category: governance-daos-public-goods
 seo:
   description:
     Collectif DAO is a decentralized autonomous organization for creative

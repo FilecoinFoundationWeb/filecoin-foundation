@@ -12,7 +12,6 @@ export function getFormInitialValue(): EcosystemProjectFormDataWithoutLogo {
     briefSummary: '',
     networkUseCase: '',
     category: unselectedOption,
-    subcategory: unselectedOption,
     websiteUrl: '',
   }
 }

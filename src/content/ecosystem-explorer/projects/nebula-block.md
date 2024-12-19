@@ -6,7 +6,6 @@ published-on: 2024-03-20T13:58:36.718000Z
 description:
   "Web3 infrastructure provider, renowned for offering comprehensive Web3
   hosting solutions worldwide."
-category: storage
 tech:
   - filecoin
 image:
@@ -16,7 +15,7 @@ repo: https://github.com/Nebula-Block-Data
 twitter: https://twitter.com/nebulablockdata
 video-url: https://www.youtube.com/embed/Sl4vI4QgFts
 year-joined: 2020-06-15T13:58:36.727000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Nebula Block offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX1+IMOu3LkLot6qnm2eTDmFl0Cy3Z6LtnD7oMks9nhZHSffG9CxX7ax0

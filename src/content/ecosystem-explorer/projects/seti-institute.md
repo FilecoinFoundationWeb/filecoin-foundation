@@ -7,7 +7,6 @@ description:
   "The SETI Institute is a non-profit research organization with the mission
   to lead humanity's quest to understand the origins and prevalence of life and intelligence
   in the universe and share that knowledge with the world."
-category: science-climate-space
 tech:
   - filecoin
   - ipfs
@@ -16,7 +15,7 @@ image:
 website: "https://www.seti.org/"
 twitter: "https://twitter.com/SETIInstitute"
 featured-content: "https://destor.com/seti"
-subcategory: decentralized-science
+category: decentralized-science
 seo:
   description:
     SETI Institute provides decentralized solutions for scientific data

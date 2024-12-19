@@ -38,13 +38,11 @@ type StringOrUndefined = string | undefined
 
 type ProjectFormProps = {
   categoryOptions: Array<OptionType>
-  subCategoryOptions: Array<OptionType>
   initialValues: EcosystemProjectFormDataWithoutLogo
 }
 
 export function EcosystemProjectForm({
   categoryOptions,
-  subCategoryOptions,
   initialValues,
 }: ProjectFormProps) {
   const yearOptions = getYearOptions('desc')
@@ -133,27 +131,13 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
 
-        <div className="flex flex-col gap-2 sm:flex-row sm:justify-evenly sm:gap-6">
-          <div className="min-w-0 sm:w-1/2">
-            <ControlledFormListbox<EcosystemProjectFormData>
-              name="category"
-              label="Category"
-              placeholder="Select Category"
-              options={categoryOptions}
-              disabled={isSubmitting}
-            />
-          </div>
-          <div className="min-w-0 sm:w-1/2">
-            <ControlledFormListbox<EcosystemProjectFormData>
-              name="subcategory"
-              label="Subcategory"
-              placeholder="Select Subcategory"
-              options={subCategoryOptions}
-              disabled={isSubmitting}
-              optionsPosition="bottom end"
-            />
-          </div>
-        </div>
+        <ControlledFormListbox<EcosystemProjectFormData>
+          name="category"
+          label="Category"
+          placeholder="Select Category"
+          options={categoryOptions}
+          disabled={isSubmitting}
+        />
 
         <ControlledFormFileInput<EcosystemProjectFormData>
           name="logo"

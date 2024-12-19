@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "SINSO builds Web3 infrastructure simplifying decentralized hot data
   cache and data governance."
-category: education-academia-health
 tech:
   - filecoin
   - ipfs
@@ -15,7 +14,7 @@ image:
 website: "https://sinso.io/"
 repo: "https://github.com/sinsoio"
 twitter: "https://twitter.com/sinsonetwork"
-subcategory: health
+category: health
 seo:
   description:
     Sinso provides decentralized storage solutions for healthcare data

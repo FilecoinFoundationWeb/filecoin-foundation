@@ -4,7 +4,6 @@ created-on: 2024-03-29T21:28:54.885000Z
 updated-on: 2024-03-29T21:47:37.035000Z
 published-on: 2024-03-29T21:47:37.035000Z
 description: "Filecoin RPC Endpoint Support for FVM"
-category: storage
 tech:
   - filecoin
 image:
@@ -12,7 +11,7 @@ image:
 website: https://www.quicknode.com/
 twitter: https://twitter.com/quicknode
 year-joined: 2024-03-29T21:28:54.885000Z
-subcategory: infrastructure
+category: infrastructure
 seo:
   description:
     QuickNode provides decentralized solutions for blockchain infrastructure

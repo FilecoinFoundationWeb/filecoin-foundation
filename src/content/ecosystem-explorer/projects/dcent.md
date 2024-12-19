@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "DCENT is a Filecoin storage provider that specializes in onboarding
   data to the Filecoin network."
-category: tooling-productivity
 tech:
   - filecoin
   - ipfs
@@ -15,7 +14,7 @@ image:
 website: https://dcent.nl
 twitter: https://twitter.com/Dcent_Web3
 year-joined: 2023-08-01T20:34:10.316000Z
-subcategory: wallets-identity-authentication
+category: wallets-identity-authentication
 seo:
   description: DCent provides decentralized identity and authentication solutions.
 email: encrypted::U2FsdGVkX1+xUerzS2FpwpYZDkRzAYaW4/6tW1yG3aVINfi+N/GunQ9qFOsKa7ZC

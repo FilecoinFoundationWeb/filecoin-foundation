@@ -7,7 +7,6 @@ description:
   "Human Rights Data Analysis Group (HRDAG) turns raw data into analysis
   used by UN missions, truth commissions, small and large human rights groups, and
   criminal prosecutions for war crimes and crimes against humanity."
-category: public-goods-dweb
 tech:
   - filecoin
   - ipfs
@@ -16,7 +15,7 @@ image:
 website: https://hrdag.org/
 featured-content: https://ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/
 twitter: https://twitter.com/hrdag
-subcategory: social-impact
+category: social-impact
 seo:
   description:
     HRDAG offers decentralized solutions for human rights data collection

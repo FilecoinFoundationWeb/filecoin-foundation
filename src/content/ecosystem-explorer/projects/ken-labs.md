@@ -5,8 +5,7 @@ updated-on: 2024-04-04T01:31:54.122Z
 published-on: 2024-04-04T01:31:54.137Z
 image:
   src: /assets/images/ken.png
-category: storage
-subcategory: infrastructure
+category: infrastructure
 description: "Building a New Economy: Data, AI, and Web3."
 tech:
   - ipfs

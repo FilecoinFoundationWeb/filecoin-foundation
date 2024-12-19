@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "GenRAIT gives scientists a platform to analyze genomic data, generate
   scientific breakthroughs, and experiment at scale, all in one unified ecosystem."
-category: education-academia-health
 tech:
   - filecoin
   - ipfs
@@ -14,7 +13,7 @@ image:
   src: /assets/images/65974a4a0cea1eb2d9c5b69b_genrait-logo.png
 website: "https://www.genrait.com"
 featured-content: "https://fil.org/blog/case-study-genrait-leverages-filecoin-network-for-greater-visibility-access-and-storage-of-genomic-data"
-subcategory: health
+category: health
 seo:
   description:
     GenRAIT offers decentralized solutions for genomic data storage and

@@ -11,7 +11,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { entryMatchesSubcategoryQuery } from '@/utils/filterUtils'
+import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
@@ -72,7 +72,7 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const { categories, subcategories } = getEcosystemCMSCategories()
+const categories = getEcosystemCMSCategories()
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -91,13 +91,12 @@ export default function EcosystemExplorer({ searchParams }: Props) {
   const { filteredEntries } = useFilter({
     entries: sortedResults,
     filterQuery: parseCategoryQueryParam(searchParams, CATEGORY_KEY),
-    filterFn: entryMatchesSubcategoryQuery,
+    filterFn: entryMatchesCategoryQuery,
   })
 
   const categoryTree = useEcosystemCategoryTree({
     entries: sortedResults,
     categories,
-    subcategories,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -164,13 +163,13 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                         title,
                         description,
                         image,
-                        subcategory: subcategoryId,
+                        category: categoryId,
                       } = project
 
                       const isFirstTwoImages = i < 2
                       const category = findOrThrow(
-                        subcategories,
-                        ({ value }) => value === subcategoryId,
+                        categories,
+                        ({ value }) => value === categoryId,
                       )
 
                       return (

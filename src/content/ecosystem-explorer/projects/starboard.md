@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Starboard Ventures empowers Web3 data economies with network analytics
   and product incubation."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -15,7 +14,7 @@ image:
 website: "https://dashboard.starboard.ventures/dashboard"
 repo: "https://github.com/starboard-ventures"
 twitter: "https://twitter.com/starboard_v"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Starboard provides decentralized solutions for data analysis and management.
 email: encrypted::U2FsdGVkX18olSZoHycfv3kh6mZO/Wi7j01HF3kc27W69epSa4hSQyr/9BAWMhvH
