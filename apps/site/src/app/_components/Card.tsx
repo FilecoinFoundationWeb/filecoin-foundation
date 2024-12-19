@@ -1,4 +1,4 @@
-import { type StaticImageData } from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
@@ -110,7 +110,7 @@ Card.Image = function ImageComponent({
 
   if (isStaticImage) {
     return (
-      <SmartImage
+      <Image
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
         src={image.data as StaticImageData}
