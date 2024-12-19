@@ -12,13 +12,9 @@ import { Icon } from '@/components/Icon'
 import { IconButton } from '@/components/IconButton'
 import { SlideOver } from '@/components/SlideOver'
 
-import type { CategoriesAndSubcategoriesWithCount } from '../types/ecosystemCategoryType'
+import { CategoryFilters, type CategoryFiltersProps } from './CategoryFilters'
 
-import { CategoryFilters } from './CategoryFilters'
-
-type CategoryFiltersSliderProps = {
-  categories: CategoriesAndSubcategoriesWithCount
-}
+type CategoryFiltersSliderProps = CategoryFiltersProps
 
 export function CategoryFiltersSlider({
   categories,
