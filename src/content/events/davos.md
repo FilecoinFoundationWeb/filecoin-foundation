@@ -20,7 +20,7 @@ program:
     - title: The Filecoin Penthouse. Hosted by Filecoin Foundation
       start-date: 2025-01-20T09:00:00.000Z
       end-date: 2025-01-23T17:30:00.000Z
-      location: Revealed upon registration approval
+      location: Apply to Attend
       description: "The Filecoin Penthouse is an exclusive lounge in the heart of
         Davos, designed for networking, casual meetings, and relaxing with
         coffee while enjoying breathtaking views. A private meeting room
@@ -38,12 +38,12 @@ program:
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Wednesday night. Space is limited, and attendance is by prior
         confirmation only.
-      location: Revealed to Invited Guests
+      location: " "
     - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
         GBBC.
       start-date: 2025-01-22T17:00:00.000Z
       end-date: 2025-01-22T18:30:00.000Z
-      location: Revealed upon registration approval.
+      location: Apply to Attend
       description: The Policy in Draft Reception, hosted by Filecoin Foundation,
         Hedera, and GBBC, will bring together senior industry leaders and
         policymakers from around the globe for an engaging dialogue on the
