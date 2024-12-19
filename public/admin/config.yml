@@ -759,6 +759,11 @@ collections:
         required: false
         collapsed: true
         fields:
+          - name: "kicker"
+            label: "Section Kicker"
+            widget: "string"
+            required: false
+            hint: "This is the text that appears above the section title. Defaults to 'Join Us'."
           - name: "title"
             label: "Section Title"
             widget: "string"
@@ -776,6 +781,11 @@ collections:
                 label: "Events"
                 widget: "list"
                 fields:
+                  - name: "tag"
+                    label: "Event Tag"
+                    widget: "string"
+                    required: false
+                    hint: "A short label or category (e.g., event location or host) displayed above the event title."
                   - name: "title"
                     label: "Event Title"
                     widget: "string"
@@ -899,13 +909,20 @@ collections:
             min: 0
             max: 7
             fields: *event_sponsor_config
-          - name: recap-youtube-embed-url
-            label: Event Recap YouTube Embed URL
-            widget: string
+      - name: "recap"
+        label: "Recap"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - name: "youtube-embed-url"
+            label: "Event Recap YouTube Embed URL"
+            widget: "string"
             required: false
-            hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters."
-          - name: recap-youtube-playlist-url
-            label: Event Recap YouTube Playlist URL
-            widget: string
+            hint: "Please enter the YouTube embed URL in the format: 'https://www.youtube.com/embed/{videoId}', without additional query parameters. Will be shown in the recap section."
+          - name: "youtube-playlist-url"
+            label: "Event Recap YouTube Playlist URL"
+            widget: "string"
             required: false
+            hint: "Please enter the YouTube playlist URL in the format: 'https://www.youtube.com/playlist?list={playlistId}', without additional query parameters. Will be shown in the page header."
       - *meta_config_with_title_fallback
