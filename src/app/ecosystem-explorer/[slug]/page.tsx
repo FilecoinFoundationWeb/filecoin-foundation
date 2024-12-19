@@ -54,12 +54,12 @@ export default function EcosystemProject({ params }: EcosystemProjectProps) {
     repo,
     twitter,
     featuredContent,
-    subcategories,
+    subcategory,
   } = data
 
   const projectSubcategory = findOrThrow(
     cmsSubcategories,
-    ({ value }) => value === subcategories[0],
+    (cmsSubcategory) => cmsSubcategory.value === subcategory,
   )
 
   return (

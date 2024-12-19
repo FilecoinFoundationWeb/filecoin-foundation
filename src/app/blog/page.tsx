@@ -17,6 +17,7 @@ import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -88,9 +89,8 @@ export default function Blog({ searchParams }: Props) {
   })
 
   const { filteredEntries } = useFilter({
-    searchParams,
     entries: sortedResults,
-    filterKey: CATEGORY_KEY,
+    filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
     filterFn: entryMatchesCategoryQuery,
   })
 
