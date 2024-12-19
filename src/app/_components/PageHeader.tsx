@@ -72,7 +72,7 @@ PageHeader.Image = function PageHeaderImage({
   const isStaticImage = 'data' in image
 
   const commonProps = {
-    alt: image.alt,
+    alt: image.alt || '',
     priority: true,
     quality: 100,
     sizes: buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
