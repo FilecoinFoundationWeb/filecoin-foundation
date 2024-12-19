@@ -9,7 +9,7 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagGroupContainer } from '@/components/TagComponents/TagGroupContainer'
+import { TagGroup } from '@/components/TagComponents/TagGroup'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
@@ -66,6 +66,10 @@ export default function EventEntry({ params }: EventProps) {
     sponsors,
     recap,
   } = data
+  const categoryLabel = getCategoryLabel({
+    collectionName: 'event_entries',
+    category,
+  })
 
   const { youtubeEmbedUrl, youtubePlaylistUrl } = recap ?? {}
 
@@ -80,14 +84,18 @@ export default function EventEntry({ params }: EventProps) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="grid gap-4">
-        <TagGroupContainer>
-          <TagLabel>
-            {getCategoryLabel({ collectionName: 'event_entries', category })}
-          </TagLabel>
-          {eventHasConcluded && (
-            <TagLabel variant="callout">Past Event</TagLabel>
-          )}
-        </TagGroupContainer>
+        {eventHasConcluded ? (
+          <TagGroup
+            tags={[
+              {
+                text: categoryLabel,
+              },
+              { variant: 'callout', text: 'Past Event' },
+            ]}
+          />
+        ) : (
+          <TagLabel>{categoryLabel}</TagLabel>
+        )}
 
         <PageHeader
           title={title}

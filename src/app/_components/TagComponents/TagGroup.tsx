@@ -1,7 +1,7 @@
-import { TagGroupContainer } from './TagGroupContainer'
 import { type TagProps, TagLabel } from './TagLabel'
 
 type TagItem = {
+  variant?: TagProps['variant']
   text: TagProps['children']
   icon?: TagProps['icon']
 }
@@ -17,16 +17,18 @@ export function TagGroup({ tags }: TagGroupProps) {
   }
 
   return (
-    <TagGroupContainer>
-      {tags.map(({ icon, text }, index) => (
+    <span className="flex gap-2">
+      {tags.map(({ variant, text, icon }, index) => (
         <TagLabel
           key={index}
-          variant={index === 0 ? 'primary' : 'secondary'}
           icon={icon}
+          variant={
+            index === 0 ? 'primary' : index === 1 ? variant : 'secondary'
+          }
         >
           {text}
         </TagLabel>
       ))}
-    </TagGroupContainer>
+    </span>
   )
 }
