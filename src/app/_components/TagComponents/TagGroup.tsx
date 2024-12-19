@@ -23,7 +23,7 @@ export function TagGroup({ tags }: TagGroupProps) {
           key={index}
           icon={icon}
           variant={
-            index === 0 ? 'primary' : index === 1 ? variant : 'secondary'
+            index === 0 ? 'primary' : (variant ?? 'secondary')
           }
         >
           {text}
