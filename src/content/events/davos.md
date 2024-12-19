@@ -39,7 +39,7 @@ program:
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Wednesday night. Space is limited, and attendance is by prior
         confirmation only.
-      location: Davos, Switzerland
+      location: "Davos, Switzerland "
     - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
         GBBC.
       start-date: 2025-01-22T17:00:00.000Z
@@ -110,6 +110,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/rachelgreenhorn/
       image:
         src: /assets/images/rachel-horn-davos.webp
+    - image:
+        src: /assets/images/porter-stowell-davos.webp
+      name: Porter Stowell
+      title: Head of Ecosystem & Community
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/porterstowell/
     - name: Aaron Stanley
       title: Editorial Director
       company: Filecoin Foundation
@@ -122,6 +128,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/meredith-pallante-cem-cmp-7270549/
       image:
         src: /assets/images/meredith-pallante-davos.webp
+    - title: Deputy Head of Marketing and Communications
+      name: Jordan Fahle
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/jlfahle/
+      image:
+        src: /assets/images/jordan-fahle-davos.png
 sponsors:
   first-tier:
     - name: GBBC
