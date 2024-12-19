@@ -3,8 +3,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 
-import { type ImageProps } from 'next/image'
-import Image from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
@@ -14,29 +13,19 @@ const { data: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
 export type SmartImageProps = {
   src?: string | StaticImageProps['data']
-  alt?: string
+  alt: string
   className?: string
   objectFit?: ImageObjectFit
   padding?: boolean
 } & Omit<ImageProps, 'src' | 'alt' | 'className'>
 
-export async function SmartImage({
-  src,
-  alt = '',
-  className,
-  ...props
-}: SmartImageProps) {
+export async function SmartImage({ src, alt, ...props }: SmartImageProps) {
   const imageSrc = await getImageSrc(src)
 
   const imageExists = imageSrc !== fallbackSrc
 
   return (
-    <Image
-      className={className}
-      src={imageSrc}
-      alt={imageExists ? alt : fallbackAlt}
-      {...props}
-    />
+    <Image src={imageSrc} alt={imageExists ? alt : fallbackAlt} {...props} />
   )
 }
 
@@ -44,14 +33,9 @@ async function getImageSrc(src: SmartImageProps['src']) {
   if (!src) {
     return fallbackSrc
   }
-  const isStaticImport = typeof src === 'object'
   const isAssetImage = typeof src === 'string' && src.startsWith('/assets')
   const isRemoteImage =
     typeof src === 'string' && (src.startsWith('http') || src.startsWith('//'))
-
-  if (isStaticImport) {
-    return src
-  }
 
   if (isAssetImage) {
     const assetExists = await checkAssetImageExists(src)

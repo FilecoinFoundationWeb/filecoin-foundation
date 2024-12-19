@@ -1,4 +1,4 @@
-import type { StaticImageData } from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 
 import { clsx } from 'clsx'
 
@@ -85,7 +85,7 @@ PageHeader.Image = function PageHeaderImage({
 
   if (isStaticImage) {
     return (
-      <SmartImage
+      <Image
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
         src={image.data as StaticImageData}
