@@ -18,6 +18,7 @@ const TOUCH_TARGET: TouchTarget = {
 }
 
 const TOUCH_TARGET_ICON: TouchTarget = {
+  visibleElementSize: 20,
   touchAreaPadding: 'p-1.5',
 }
 
@@ -48,7 +49,10 @@ export function TooltipHeader({
                   : 'text-brand-400 group-hover:bg-brand-700 group-hover:text-brand-300',
               )}
             >
-              <Icon component={Question} size={20} />
+              <Icon
+                component={Question}
+                size={TOUCH_TARGET_ICON.visibleElementSize as number}
+              />
             </span>
           </Button>
         )}
