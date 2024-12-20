@@ -5,17 +5,17 @@ import type { CTAProps } from '@/types/ctaType'
 import { Card } from '@/components/Card'
 import { type HeadingProps, Heading } from '@/components/Heading'
 
-type HomeExploreSectionCardProps = {
+type ExploreSectionCardProps = {
   heading: HeadingProps
   cta?: CTAProps
   children?: React.ReactNode
 }
 
-export function HomeExploreSectionCard({
+export function ExploreSectionCard({
   heading,
   cta,
   children,
-}: HomeExploreSectionCardProps) {
+}: ExploreSectionCardProps) {
   return (
     <div className="relative flex flex-col justify-between gap-3 rounded-lg border border-brand-500 bg-brand-700 bg-opacity-10 p-4 backdrop-blur-md">
       <div className={clsx('flex flex-col gap-3', cta && 'mb-10')}>

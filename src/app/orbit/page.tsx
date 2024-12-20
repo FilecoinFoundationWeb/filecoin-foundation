@@ -15,8 +15,8 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
+import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
-import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -135,7 +135,7 @@ export default function Orbit({ searchParams }: Props) {
             } = data
 
             return (
-              <HomeExploreSectionCard
+              <ExploreSectionCard
                 key={index}
                 cta={cta}
                 heading={{
@@ -148,7 +148,7 @@ export default function Orbit({ searchParams }: Props) {
                 }}
               >
                 {description}
-              </HomeExploreSectionCard>
+              </ExploreSectionCard>
             )
           })}
         </CardGrid>

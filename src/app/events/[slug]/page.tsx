@@ -9,7 +9,8 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagGroup } from '@/components/TagGroup'
+import { TagGroup } from '@/components/TagComponents/TagGroup'
+import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData } from '../utils/getEventData'
@@ -63,13 +64,18 @@ export default function EventEntry({ params }: EventProps) {
     schedule,
     speakers,
     sponsors,
-    recapYoutubeEmbedUrl,
-    recapYoutubePlaylistUrl,
+    recap,
   } = data
+  const categoryLabel = getCategoryLabel({
+    collectionName: 'event_entries',
+    category,
+  })
+
+  const { youtubeEmbedUrl, youtubePlaylistUrl } = recap ?? {}
 
   const eventHasConcluded = isEventConcluded(startDate, endDate)
   const eventHasProgram = program && program.events.length > 0
-  const eventHasRecap = eventHasConcluded && recapYoutubeEmbedUrl
+  const eventHasRecap = eventHasConcluded && youtubeEmbedUrl
   const eventHasSchedule = schedule && schedule.days.length > 0
   const eventHasSpeakers = speakers && speakers.speakersList.length > 0
   const eventHasSponsors = sponsors && Object.keys(sponsors).length > 0
@@ -78,12 +84,19 @@ export default function EventEntry({ params }: EventProps) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
       <div className="grid gap-4">
-        <TagGroup
-          label={[
-            getCategoryLabel({ collectionName: 'event_entries', category }),
-            eventHasConcluded ? 'Concluded Event' : undefined,
-          ]}
-        />
+        {eventHasConcluded ? (
+          <TagGroup
+            tags={[
+              {
+                text: categoryLabel,
+              },
+              { variant: 'callout', text: 'Past Event' },
+            ]}
+          />
+        ) : (
+          <TagLabel>{categoryLabel}</TagLabel>
+        )}
+
         <PageHeader
           title={title}
           description={description}
@@ -93,7 +106,11 @@ export default function EventEntry({ params }: EventProps) {
             location: location.primary,
           })}
           cta={buildCtaArray({
-            links: { externalLink, lumaCalendarLink, recapYoutubePlaylistUrl },
+            links: {
+              externalLink,
+              lumaCalendarLink,
+              youtubePlaylistUrl,
+            },
             eventHasConcluded,
           })}
           image={{
@@ -104,7 +121,7 @@ export default function EventEntry({ params }: EventProps) {
         />
       </div>
 
-      {eventHasRecap && <RecapSection youtubeEmbedUrl={recapYoutubeEmbedUrl} />}
+      {eventHasRecap && <RecapSection youtubeEmbedUrl={youtubeEmbedUrl} />}
 
       {eventHasProgram && (
         <ProgramSection
