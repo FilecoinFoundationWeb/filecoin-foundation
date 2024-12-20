@@ -1,21 +1,8 @@
-import { z } from 'zod'
+import { createEnumSchema } from '@/utils/zodUtils'
 
-import { createSchemaForField } from '../utils/createSchemaForField'
+import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 
-export const CategorySchema = createSchemaForField('category')
-export const SubcategorySchema = createSchemaForField('subcategory')
+const categoryOptions = getEcosystemCMSCategories()
+const categoryValues = categoryOptions.map((option) => option.value)
 
-const CategoryValue = z.string()
-const SubcategoryValue = z.string()
-
-export const CategoryOptionSchema = z.object({
-  value: CategoryValue,
-  label: z.string(),
-  subcategories: z.array(SubcategoryValue),
-})
-
-export const SubcategoryOptionSchema = z.object({
-  value: SubcategoryValue,
-  label: z.string(),
-  parent_category: CategoryValue,
-})
+export const CategorySchema = createEnumSchema(categoryValues)

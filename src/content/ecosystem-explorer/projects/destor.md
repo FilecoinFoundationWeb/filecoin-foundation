@@ -5,8 +5,7 @@ updated-on: 2024-07-30T16:28:00.000Z
 published-on: 2024-07-30T16:28:00.000Z
 image:
   src: /assets/images/destor-logo-white.webp
-category: storage
-subcategory: storage-services
+category: storage-services
 description: DeStor is a leader in decentralized storage solutions, leveraging
   blockchain technology to provide secure, scalable, and verifiable storage
   services.

@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1+XQlJTVbdgaio9n3G+bUh0Jb/feGnZLnF9ATuOLPlv35VehGOmBI
 full-name: encrypted::U2FsdGVkX1+G3+mxVNZz8Za0r6tix2By8+KeVhaAc3g=
 image:
   src: /assets/images/65974a6233564725198bb791_lighthouse.storage.png
-category: storage
-subcategory: storage-provider
+category: storage-provider
 description: Lighthouse provides perpetual storage on the Filecoin network,
   allowing users to store their files long-term at a fixed price.
 website: https://www.lighthouse.storage

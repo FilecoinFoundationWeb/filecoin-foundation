@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX18LgQrzHxvVrDpXKmWR3z/HlwVCMavsbTPUAwf6sTd6CCQfLIYFTo
 full-name: encrypted::U2FsdGVkX19mPGOKdsYEPoFX1TpYbv2mEEjQRrpgTYE=
 image:
   src: /assets/images/6597518e66ba5cff0f0ab78f_piknik-logo.png
-category: storage
-subcategory: storage-provider
+category: storage-provider
 description: "PiKNiK is an enterprise-grade decentralized storage provider for
   anyone to store and provide storage on the Filecoin network. "
 website: https://www.piknik.com

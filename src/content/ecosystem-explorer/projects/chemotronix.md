@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1+0qR+xzJMLjpdaSBszI7LxjuVEnbTwnc35s/h7zxqWlmEsL7/Qsv
 full-name: encrypted::U2FsdGVkX1/56DOgNifk9uL6u45gkPGHsoO9O4aX04M=
 image:
   src: /assets/images/66073291e29bf5086866ba7e_chemotronix.png
-category: science-climate-space
-subcategory: decentralized-science
+category: decentralized-science
 description: Chemotronix leverages Filecoin for decentralized data storage.
 website: https://chemotronix.org/s
 tech:

@@ -8,7 +8,6 @@ export type MarkdownTemplateParams = {
   title: EcosystemProject['title']
   image: NonNullable<EcosystemProject['image']>
   category: EcosystemProject['category']
-  subcategory: EcosystemProject['subcategory']
   tech: Array<Tech>
   description: EcosystemProject['description']
   content: NonNullable<EcosystemProject['content']>
@@ -35,7 +34,6 @@ ${renderLine('full-name', data.fullName)}
 image:
   ${renderLine('src', data.image.src)}
 ${renderLine('category', data.category)}
-${renderLine('subcategory', data.subcategory)}
 ${renderArray('tech', data.tech)}
 ${renderLine('description', cleanDescription)}
 ${renderLine('website', data.website)}

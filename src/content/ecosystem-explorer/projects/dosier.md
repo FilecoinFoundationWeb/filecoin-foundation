@@ -5,8 +5,7 @@ updated-on: 2024-04-05T23:07:24.311Z
 published-on: 2024-04-05T23:07:24.324Z
 image:
   src: /assets/images/dosier.png
-category: storage
-subcategory: data-storage-management
+category: data-storage-management
 description: Decentralized ZK Content Delivery Network
 website: https://dosier.ai/
 tech:

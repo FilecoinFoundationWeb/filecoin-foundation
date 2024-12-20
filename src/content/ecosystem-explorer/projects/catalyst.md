@@ -5,8 +5,7 @@ updated-on: 2024-04-04T20:29:53.862Z
 published-on: 2024-04-04T20:29:53.867Z
 email: encrypted::U2FsdGVkX1+knl+XxP114avgY2s2waOwkRBYp4vRMrY3dm0jctw/38l+L4LmfRuB
 full-name: encrypted::U2FsdGVkX1+PFWmxy/RHYoVHRWtsR9aKcPaNeUMJ6NU=
-category: storage
-subcategory: data-storage-management
+category: data-storage-management
 description: Catalyst is an innovative app that revolutionizes the way you store
   and manage your photos and videos.
 website: https://the-freaking-catalyst.vercel.app

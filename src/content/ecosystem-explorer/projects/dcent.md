@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1+xUerzS2FpwpYZDkRzAYaW4/6tW1yG3aVINfi+N/GunQ9qFOsKa7
 full-name: encrypted::U2FsdGVkX19LxxmGL9j/G1ZtdNIyo28D0myhBBBoD7c=
 image:
   src: /assets/images/6597471cd556a0c37caf9706_dcent_logo.png
-category: storage
-subcategory: storage-provider
+category: storage-provider
 description: DCENT is a Filecoin storage provider that specializes in onboarding
   data to the Filecoin network.
 website: https://dcent.nl

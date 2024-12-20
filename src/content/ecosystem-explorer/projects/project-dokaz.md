@@ -6,7 +6,6 @@ published-on: 2024-01-10T19:28:43.735Z
 description:
   "Project Dokaz is a set of accountability efforts in Ukraine that applies
   Starling Lab's work with especially vulnerable digital records."
-category: storage
 tech:
   - ipfs
   - filecoin
@@ -14,7 +13,7 @@ image:
   src: /assets/images/dokaz_logo_white.png
 website: "https://www.starlinglab.org/"
 featured-content: "https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Project Dokaz provides decentralized solutions for data verification
