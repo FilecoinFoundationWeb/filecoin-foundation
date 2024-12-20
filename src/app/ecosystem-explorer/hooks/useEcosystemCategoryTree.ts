@@ -2,9 +2,9 @@ import { useMemo } from 'react'
 
 import { groupBy } from 'ramda'
 
-import { categoryGroupMap } from '../constants/categoryGroupMap'
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
+import { splitCategoryAndGroup } from '../utils/splitCategoryAndGroup'
 
 type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   categories: ReturnType<typeof getEcosystemCMSCategories>
@@ -27,32 +27,24 @@ export function useEcosystemCategoryTree<Entry extends EcosystemProject>({
 
   const categoriesWithCount = useMemo(
     () =>
-      categories.map(({ value, label }) => ({
-        value,
-        label,
-        count: entriesPerCategory.get(value) || 0,
-      })),
+      categories.map(({ value, label }) => {
+        const { category, group } = splitCategoryAndGroup(label)
+        const count = entriesPerCategory.get(value) || 0
+
+        return {
+          value,
+          label: category,
+          group,
+          count,
+        }
+      }),
     [categories, entriesPerCategory],
   )
 
   const categoryTree = useMemo(() => {
-    const groupedCategories = groupBy(
-      (item) => getCategoryGroupNameOrThrow(item.value),
-      categoriesWithCount,
-    )
-
+    const groupedCategories = groupBy((item) => item.group, categoriesWithCount)
     return Object.entries(groupedCategories)
   }, [categoriesWithCount])
 
   return categoryTree
-}
-
-function getCategoryGroupNameOrThrow(category: string) {
-  const categoryGroupName = categoryGroupMap.get(category)
-
-  if (!categoryGroupName) {
-    throw new Error(`categoryGroupName not found for category: ${category}`)
-  }
-
-  return categoryGroupName
 }
