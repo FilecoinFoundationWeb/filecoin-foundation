@@ -10,7 +10,7 @@ export function splitCategoryAndGroup(label: string) {
   const [group, category] = label.split(SEPARATOR)
 
   if (!category) {
-    throw new Error(`"${category}" is not a valid category name`)
+    throw new Error(`Category is missing from "${label}"`)
   }
 
   if (!allowedCategoryGroups.includes(group)) {
