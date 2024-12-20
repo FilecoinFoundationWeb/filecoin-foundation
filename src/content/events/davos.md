@@ -33,7 +33,7 @@ program:
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
       start-date: 2025-01-22T20:30:00.000Z
-      end-date: 2025-01-22T22:30:00.000Z
+      end-date: ""
       description: With Honor Action, in partnership with Filecoin Foundation, is
         hosting the 4th Annual Reception for the bipartisan U.S. Congressional
         Delegation to the World Economic Forum. This invitation-only event will
