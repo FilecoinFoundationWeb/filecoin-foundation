@@ -12,9 +12,9 @@ import { useNavigationItems } from '@/hooks/useNavigationItems'
 import { NavigationPopover } from '@/components/NavigationPopover'
 
 import {
-  TOUCH_TARGET_MAIN_NAV_ITEM,
   getMainNavItemStyles,
   MainNavItem,
+  TOUCH_TARGET_MAIN_NAV_ITEM,
 } from './MainNavItem'
 import { SubNavItem } from './SubNavItem'
 
@@ -46,7 +46,7 @@ export function DesktopNavigation() {
       aria-label="Navigation items"
       className={clsx(
         'relative z-10 hidden lg:flex lg:items-center lg:gap-0.5',
-        TOUCH_TARGET_MAIN_NAV_ITEM.offsetWidth,
+        TOUCH_TARGET_MAIN_NAV_ITEM.touchAreaOffset,
       )}
     >
       <MainNavItem

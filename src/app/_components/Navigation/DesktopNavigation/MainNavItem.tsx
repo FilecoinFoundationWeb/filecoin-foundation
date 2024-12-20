@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
+import type { TouchTarget } from '@/types/touchTargetType'
+
 type MainNavItemProps = {
   href: Route
   label: string
@@ -14,10 +16,10 @@ type MainNavItemStylesOptions = {
   isPopover?: boolean
 }
 
-export const TOUCH_TARGET_MAIN_NAV_ITEM = {
-  width: 'px-4',
-  offsetWidth: '-mr-4',
-} as const
+export const TOUCH_TARGET_MAIN_NAV_ITEM: TouchTarget = {
+  touchAreaPadding: 'px-4',
+  touchAreaOffset: '-mr-4',
+}
 
 export function MainNavItem({
   label,
@@ -42,7 +44,7 @@ export function getMainNavItemStyles({
 
   const extendedStyles = isPopover
     ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
-    : clsx('inline-block', TOUCH_TARGET_MAIN_NAV_ITEM.width)
+    : clsx('inline-block', TOUCH_TARGET_MAIN_NAV_ITEM.touchAreaPadding)
 
   return clsx(
     baseStyles,

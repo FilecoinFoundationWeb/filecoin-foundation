@@ -4,12 +4,9 @@ import type { ElementType } from 'react'
 
 import { clsx } from 'clsx'
 
-import type { OptionType } from './Listbox/ListboxOption'
+import type { TouchTarget } from '@/types/touchTargetType'
 
-const TOUCH_TARGET = {
-  touchAreaPaddingX: 'px-4',
-  touchAreaOffsetX: '-ml-4',
-} as const
+import type { OptionType } from './Listbox/ListboxOption'
 
 type CategorySidebarProps = {
   selected: OptionType
@@ -27,6 +24,11 @@ type CategoryItemProps = {
   count?: number
   isSelected: boolean
   handleClick: () => void
+}
+
+const TOUCH_TARGET: TouchTarget = {
+  touchAreaPadding: 'px-4',
+  touchAreaOffset: '-ml-4',
 }
 
 export function CategorySidebar({
@@ -54,7 +56,7 @@ CategorySidebar.Container = function List({
   as: Component = 'ul',
 }: CategoryContainerProps) {
   return (
-    <Component className={clsx('space-y-4', TOUCH_TARGET.touchAreaOffsetX)}>
+    <Component className={clsx('space-y-4', TOUCH_TARGET.touchAreaOffset)}>
       {children}
     </Component>
   )
@@ -92,7 +94,7 @@ CategorySidebar.Button = function Button({
           ? 'bg-brand-700 text-brand-400'
           : 'bg-transparent text-brand-300',
         count !== undefined && 'inline-flex items-baseline gap-2',
-        TOUCH_TARGET.touchAreaPaddingX,
+        TOUCH_TARGET.touchAreaPadding,
       )}
       onClick={handleClick}
     >
