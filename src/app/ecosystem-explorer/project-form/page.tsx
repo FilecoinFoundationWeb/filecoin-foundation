@@ -3,8 +3,8 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { getFrontmatter } from '@/utils/getFrontmatter'
+import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -12,6 +12,8 @@ import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
+
+import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
@@ -31,10 +33,8 @@ export const metadata = createMetadata({
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })
 
-const { options: categoryOptions } = getCMSFieldOptionsAndValidIds({
-  collectionName: 'ecosystem_projects',
-  fieldName: 'category',
-})
+const categories = getEcosystemCMSCategories()
+const categoryOptions = mapCMSOptionsToListboxFormat(categories)
 
 type Props = {
   searchParams: NextServerSearchParams

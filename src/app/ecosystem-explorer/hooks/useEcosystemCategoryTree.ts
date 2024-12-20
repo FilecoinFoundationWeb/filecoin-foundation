@@ -4,7 +4,6 @@ import { groupBy } from 'ramda'
 
 import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
-import { splitCategoryAndGroup } from '../utils/splitCategoryAndGroup'
 
 type UseEcosystemCategoryProps<Entry extends EcosystemProject> = {
   categories: ReturnType<typeof getEcosystemCMSCategories>
@@ -27,17 +26,12 @@ export function useEcosystemCategoryTree<Entry extends EcosystemProject>({
 
   const categoriesWithCount = useMemo(
     () =>
-      categories.map(({ value, label }) => {
-        const { category, group } = splitCategoryAndGroup(label)
-        const count = entriesPerCategory.get(value) || 0
-
-        return {
-          value,
-          label: category,
-          group,
-          count,
-        }
-      }),
+      categories.map(({ value, label, group }) => ({
+        value,
+        label,
+        group,
+        count: entriesPerCategory.get(value) || 0,
+      })),
     [categories, entriesPerCategory],
   )
 
