@@ -10,7 +10,7 @@ import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
-import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
+import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -69,7 +69,7 @@ export default function Security() {
             } = card
 
             return (
-              <HomeExploreSectionCard
+              <ExploreSectionCard
                 key={title}
                 heading={{
                   tag: 'h3',
@@ -81,7 +81,7 @@ export default function Security() {
                 }}
               >
                 {description}
-              </HomeExploreSectionCard>
+              </ExploreSectionCard>
             )
           })}
         </CardGrid>

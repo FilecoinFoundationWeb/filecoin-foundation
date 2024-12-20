@@ -15,7 +15,7 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
-import { HomeExploreSectionCard } from '@/components/HomeExploreSectionCard'
+import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -82,7 +82,7 @@ export default function Grants() {
             const { title, description, icon, cta } = card
 
             return (
-              <HomeExploreSectionCard
+              <ExploreSectionCard
                 key={title}
                 cta={cta}
                 heading={{
@@ -95,7 +95,7 @@ export default function Grants() {
                 }}
               >
                 {description}
-              </HomeExploreSectionCard>
+              </ExploreSectionCard>
             )
           })}
         </CardGrid>
@@ -138,7 +138,7 @@ export default function Grants() {
             const { title, description, icon } = data
 
             return (
-              <HomeExploreSectionCard
+              <ExploreSectionCard
                 key={title}
                 heading={{
                   tag: 'h3',
@@ -150,7 +150,7 @@ export default function Grants() {
                 }}
               >
                 {description}
-              </HomeExploreSectionCard>
+              </ExploreSectionCard>
             )
           })}
         </CardGrid>
