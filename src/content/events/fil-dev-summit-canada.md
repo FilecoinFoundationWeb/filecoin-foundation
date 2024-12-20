@@ -1,5 +1,5 @@
 ---
-title: FIL Dev Summit Canada
+title: "FIL Dev Summit Canada"
 description: FIL Dev Summit is a gathering of developers, builders, and engaged
   community members who want to contribute to the core protocol and network
   evolution of Filecoin (think IPFS Thing, but bigger!). This summit is more
@@ -24,9 +24,9 @@ image:
 seo:
   twitter:
     card: summary
-  title: FIL Dev Summit - Toronto, Canada | May 12-13, 2025
+  title: FIL Dev Summit 6 - Toronto, Canada | May 12-13, 2025
   description:
     Join us at the FIL Dev Summit 6 in Toronto, Canada, from May 12-13,
-    2025. A premier event for developers, tech enthusiasts, and innovators.
+    1.    A premier event for developers, tech enthusiasts, and innovators.
     Don't miss out!
 ---
