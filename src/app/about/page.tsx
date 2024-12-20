@@ -120,7 +120,7 @@ export default function About() {
                   description={description}
                   image={
                     image && {
-                      ...(image || graphicsData.imageFallback.data),
+                      ...image,
                       alt: '',
                       sizes: buildImageSizeProp({
                         startSize: '100vw',

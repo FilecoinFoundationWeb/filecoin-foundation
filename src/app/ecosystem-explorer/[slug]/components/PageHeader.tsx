@@ -1,27 +1,21 @@
-import Image, { type ImageProps } from 'next/image'
-
 import { clsx } from 'clsx'
-
-import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & {
-  alt?: string
-}
+import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
 
 type PageHeaderProps = {
-  image?: ImagePropsWithOptionalAlt
+  image?: SmartImageProps
 }
 
 export function PageHeader({ image }: PageHeaderProps) {
   return (
     <header className="space-y-10 md:space-y-16">
       <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
-        <Image
+        <SmartImage
           fill
           priority
-          src={image?.src || graphicsData.imageFallback.data.src}
+          src={image?.src}
           alt={''}
           className={clsx(
             image?.src && 'rounded-lg',
