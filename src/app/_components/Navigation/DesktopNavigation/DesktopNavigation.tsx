@@ -38,7 +38,7 @@ export function DesktopNavigation() {
   return (
     <ul
       aria-label="Navigation items"
-      className="relative z-10 hidden lg:flex lg:items-center lg:gap-0.5"
+      className="relative z-10 -mr-4 hidden lg:flex lg:items-center lg:gap-0.5"
     >
       <MainNavItem
         label={PATHS.ABOUT.label}

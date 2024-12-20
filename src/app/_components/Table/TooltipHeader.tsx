@@ -17,7 +17,7 @@ const TOUCH_TARGET: TouchTarget = {
   touchAreaOffset: '-m-2',
 }
 
-const TOUCH_TARGET_ICON: TouchTarget = {
+const TOUCH_TARGET_ICON: TouchTarget & { visibleElementSize: number } = {
   visibleElementSize: 20,
   touchAreaPadding: 'p-1.5',
 }
@@ -51,7 +51,7 @@ export function TooltipHeader({
             >
               <Icon
                 component={Question}
-                size={TOUCH_TARGET_ICON.visibleElementSize as number}
+                size={TOUCH_TARGET_ICON.visibleElementSize}
               />
             </span>
           </Button>
