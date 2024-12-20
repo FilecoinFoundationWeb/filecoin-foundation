@@ -43,7 +43,7 @@ program:
     - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
         GBBC.
       start-date: 2025-01-22T17:00:00.000Z
-      end-date: 2025-01-22T18:30:00.000Z
+      end-date: ""
       location: Davos, Switzerland
       description: The Policy in Draft Reception, hosted by Filecoin Foundation,
         Hedera, and GBBC, will bring together senior industry leaders and
