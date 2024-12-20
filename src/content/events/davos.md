@@ -70,7 +70,7 @@ schedule:
       events:
         - tag: " Registration Needed"
           title: " Marta Belcher at Project Liberty Event"
-          description: " Web3’s Role in a Responsible Internet"
+          description: "Fixing the System: How Decentralization Can Upgrade the Internet"
           location: " Hotel Europe | Promenade 63, 7270 Davos, Switzerland"
           start: 2025-01-21T17:00:00.000Z
           end: 2025-01-21T18:00:00.000Z
@@ -141,6 +141,10 @@ sponsors:
       website: https://www.gbbc.io/
       image:
         src: /assets/images/gbbc-logo-davos.webp
+    - name: Hedera
+      website: https://hedera.com/
+      image:
+        src: /assets/images/hedera-white-logo-davos.webp
 seo:
   twitter:
     card: summary
