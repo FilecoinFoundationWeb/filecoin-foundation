@@ -2,6 +2,8 @@
 
 import { usePathname } from 'next/navigation'
 
+import { clsx } from 'clsx'
+
 import { desktopNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
 
@@ -9,7 +11,11 @@ import { useNavigationItems } from '@/hooks/useNavigationItems'
 
 import { NavigationPopover } from '@/components/NavigationPopover'
 
-import { getMainNavItemStyles, MainNavItem } from './MainNavItem'
+import {
+  getMainNavItemStyles,
+  MainNavItem,
+  TOUCH_TARGET_MAIN_NAV_ITEM,
+} from './MainNavItem'
 import { SubNavItem } from './SubNavItem'
 
 const {
@@ -38,7 +44,10 @@ export function DesktopNavigation() {
   return (
     <ul
       aria-label="Navigation items"
-      className="relative z-10 -mr-4 hidden lg:flex lg:items-center lg:gap-0.5"
+      className={clsx(
+        'relative z-10 hidden lg:flex lg:items-center lg:gap-0.5',
+        TOUCH_TARGET_MAIN_NAV_ITEM.touchAreaOffset,
+      )}
     >
       <MainNavItem
         label={PATHS.ABOUT.label}
