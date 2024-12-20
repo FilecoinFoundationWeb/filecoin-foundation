@@ -5,23 +5,19 @@ import { type Object } from '@/types/utils'
 
 import { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
+type QueryValue = NextServerSearchParams[keyof NextServerSearchParams]
 
-export type UseFilterProps<Entry extends Object> = {
-  searchParams: NextServerSearchParams
+export type UseFilterProps<Entry extends Object, Query extends QueryValue> = {
   entries: Array<Entry>
-  filterKey: string
-  filterFn: (entry: Entry, query?: string) => boolean
+  filterQuery: Query
+  filterFn: (entry: Entry, filterQuery: Query) => boolean
 }
 
-export function useFilter<Entry extends Object>({
-  searchParams,
+export function useFilter<Entry extends Object, Query extends QueryValue>({
   entries,
-  filterKey,
+  filterQuery,
   filterFn,
-}: UseFilterProps<Entry>) {
-  const filterQuery = normalizeQueryParam(searchParams, filterKey)
-
+}: UseFilterProps<Entry, Query>) {
   const filterByQuery = useCallback(
     (entry: Entry) => filterFn(entry, filterQuery),
     [filterFn, filterQuery],

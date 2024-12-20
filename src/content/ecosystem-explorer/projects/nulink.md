@@ -4,7 +4,6 @@ created-on: 2024-03-20T13:35:36.210000Z
 updated-on: 2024-03-20T13:35:36.273000Z
 published-on: 2024-03-20T13:35:36.295000Z
 description: "ZK Provable Data Privacy Solution for DApps"
-category: storage
 tech:
   - filecoin
 image:
@@ -13,7 +12,7 @@ website: https://www.nulink.org/
 repo: https://github.com/NuLink-network
 twitter: https://twitter.com/NuLink_
 year-joined: 2022-02-01T14:35:36.326000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: NuLink provides decentralized solutions for data privacy and security.
 email: encrypted::U2FsdGVkX19dyPoBkL5+cRQk45r0pLj+w+AlipnorwoJdLqzJaHw5L74yVokxglP

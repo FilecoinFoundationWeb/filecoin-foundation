@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787Z
 description:
   "Numbers Protocol is an open and decentralized network designed to ensure
   provenance for creative works created by humans and AI."
-category: "tooling-productivity"
 tech:
   - "filecoin"
   - "ipfs"
@@ -15,7 +14,7 @@ image:
 website: https://www.numbersprotocol.io/
 repo: "https://github.com/numbersprotocol"
 twitter: "https://twitter.com/numbersprotocol"
-subcategory: wallets-identity-authentication
+category: wallets-identity-authentication
 seo:
   description:
     Numbers Protocol offers decentralized solutions for digital asset verification

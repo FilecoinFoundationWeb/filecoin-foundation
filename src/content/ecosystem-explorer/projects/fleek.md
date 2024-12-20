@@ -6,7 +6,6 @@ published-on: 2024-01-11T13:26:59.787000Z
 description:
   "Fleek ​​allows users to host websites, store and deliver files, and
   develop dapps for the decentralized web."
-category: tooling-productivity
 tech:
   - filecoin
   - ipfs
@@ -17,7 +16,7 @@ repo: "https://github.com/FleekHQ"
 twitter: "https://twitter.com/fleekxyz"
 featured-content: "https://filecoin.io/blog/posts/the-next-phase-of-fleek-with-filecoin/"
 year-joined: 2024-01-19T18:50:41.292000Z
-subcategory: dapp
+category: dapp
 seo:
   description:
     Fleek provides decentralized solutions for hosting and deploying web

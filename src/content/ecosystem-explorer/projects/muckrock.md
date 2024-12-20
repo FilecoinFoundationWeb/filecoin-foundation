@@ -6,7 +6,6 @@ published-on: 2024-01-10T18:11:13.198Z
 description:
   "MuckRock is a non-profit collaborative news site that gives people the
   tools to keep governments transparent and accountable."
-category: "public-goods-dweb"
 tech:
   - "filecoin"
   - "ipfs"
@@ -15,7 +14,7 @@ image:
 website: "https://www.muckrock.com/"
 featured-content: "https://ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/"
 twitter: "https://twitter.com/MuckRock"
-subcategory: dweb
+category: dweb
 seo:
   description: MuckRock provides decentralized solutions for public records and transparency.
 email: encrypted::U2FsdGVkX1/M4EUDPR7JGFr/tGCgeSpZMG95MfAA3VkNkEX6Ri8f5FxqSBia97v0

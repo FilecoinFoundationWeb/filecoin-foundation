@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1/6bPUuUH1W5MFtPgswkJg9kxb2N+GmxBlYw/l/c+/GacfyKx7f5Z
 full-name: encrypted::U2FsdGVkX19KZdDZ+CsyAJZ/iuXXpP0WFURXwIRDtaE=
 image:
   src: /assets/images/659746fdd59f6b944d45ca8f_audius_logo.png
-category: tooling-productivity
-subcategory: dapp
+category: dapp
 description: Audius is a music and audio-sharing platform designed to provide
   artists with a direct link to their listeners.
 website: https://audius.co

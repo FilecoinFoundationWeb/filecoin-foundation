@@ -6,7 +6,6 @@ published-on: 2024-02-05T17:57:11.368Z
 description:
   "SFT Chain is a pioneering 'Chain of Chains' that seamlessly integrates
   with the Filecoin ecosystem, focusing on DePIN."
-category: storage
 tech:
   - filecoin
 image:
@@ -16,7 +15,7 @@ repo: "https://github.com/SFT-project"
 twitter: "https://twitter.com/sftprotocol/"
 video-url: "https://www.youtube.com/embed/FOyv43DGH48"
 year-joined:
-subcategory: infrastructure
+category: infrastructure
 seo:
   description:
     SFT Chain offers decentralized solutions for supply chain management

@@ -4,7 +4,6 @@ created-on: 2024-01-04T22:40:28.333Z
 updated-on: 2024-01-05T21:39:15.639Z
 published-on: 2024-01-11T13:26:59.787Z
 description: "Swan is a distributed data and computing platform."
-category: storage
 tech:
   - filecoin
   - ipfs
@@ -13,7 +12,7 @@ image:
 website: "https://www.swanchain.io"
 repo: "https://github.com/filswan"
 year-joined: 2024-01-11T13:26:59.787Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Swan provides decentralized storage solutions for digital assets.
 email: encrypted::U2FsdGVkX1+nd+tkEgibXUU5gK4xyn+f/AcM/GgJToJG4sXesUUFrJc+GuiO5wg8

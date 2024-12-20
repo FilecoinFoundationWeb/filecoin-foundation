@@ -4,7 +4,6 @@ created-on: 2024-04-05T23:01:19.895000Z
 updated-on: 2024-04-05T23:01:19.919000Z
 published-on: 2024-04-05T23:01:19.933000Z
 description: "Metrics for users and devs to help manage data on IPFS."
-category: storage
 tech:
   - ipfs
 image:
@@ -12,7 +11,7 @@ image:
 website: https://leto.gg/
 repo: https://github.com/Leto-gg
 year-joined: 2024-04-05T23:01:19.950000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Leto offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18QGOOEY3JHr+/PSBmxUNnXl1zFTGdGW2K2NRqqEsJCKNZsGuYPcnRf

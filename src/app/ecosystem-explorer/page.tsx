@@ -5,17 +5,20 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
+import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
+import { useFilter } from '@/hooks/useFilter'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
@@ -36,10 +39,11 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { CategoryFilters } from './components/CategoryFilters'
 import { CategoryFiltersSlider } from './components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
-import { useEcosystemCategory } from './hooks/useEcosystemCategory'
+import { useEcosystemCategoryTree } from './hooks/useEcosystemCategoryTree'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getCategoriesFromDirectory } from './utils/getCategoriesFromDirectory'
+import { getEcosystemCMSCategories } from './utils/getEcosystemCMSCategories'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
+import { parseCategoryQueryParam } from './utils/parseCategoryQueryParam'
 
 const NoSSRPagination = dynamic(
   () => import('@/components/Pagination').then((module) => module.Pagination),
@@ -68,7 +72,7 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const { categories, subcategories } = getCategoriesFromDirectory()
+const categories = getEcosystemCMSCategories()
 
 export default function EcosystemExplorer({ searchParams }: Props) {
   const { searchQuery, searchResults } = useSearch({
@@ -84,11 +88,15 @@ export default function EcosystemExplorer({ searchParams }: Props) {
     defaultsTo: 'a-z',
   })
 
-  const { categoryTree, filteredEntries } = useEcosystemCategory({
-    searchParams,
+  const { filteredEntries } = useFilter({
+    entries: sortedResults,
+    filterQuery: parseCategoryQueryParam(searchParams, CATEGORY_KEY),
+    filterFn: entryMatchesCategoryQuery,
+  })
+
+  const categoryTree = useEcosystemCategoryTree({
     entries: sortedResults,
     categories,
-    subcategories,
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
@@ -160,13 +168,13 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                         title,
                         description,
                         image,
-                        subcategories: [categoryId],
+                        category: categoryId,
                       } = project
 
                       const isFirstTwoImages = i < 2
                       const category = findOrThrow(
-                        subcategories,
-                        (category) => category.slug === categoryId,
+                        categories,
+                        ({ value }) => value === categoryId,
                       )
 
                       return (
@@ -174,7 +182,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                           key={slug}
                           title={title}
                           description={description}
-                          tags={[{ text: category.name }]}
+                          tags={[{ text: category.label }]}
                           cta={{
                             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                             text: 'Learn More',

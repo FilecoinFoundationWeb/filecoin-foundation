@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX1+kR4s4CFRfHAuWnaPDz/y/ckVyo9Ut3WwRhfjkVoPIh7GE/z1xaH
 full-name: encrypted::U2FsdGVkX18PQRdHVNw985D2M1pi3y2js4BSA91XAgc=
 image:
   src: /assets/images/659733d8ebbc2392eda725b0_nidrogvqqb87r8e6c8ygsc2llv7o2zu11hlqz-blvti.png
-category: public-goods-dweb
-subcategory: dweb
+category: dweb
 description: Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3)
   nonprofit with the mission of preserving humanity’s most important
   information.

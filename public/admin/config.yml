@@ -500,49 +500,6 @@ collections:
       - *image_config
       - *meta_config_with_title_fallback
 
-  - name: "ecosystem_projects_categories"
-    label: "Ecosystem Projects Categories"
-    label_singular: Ecosystem Projects Category
-    folder: "src/content/ecosystem-explorer/categories/"
-    create: true
-    identifier_field: name
-    extension: "yml"
-    slug: "{{slug}}"
-    fields:
-      - name: "name"
-        label: "Category Name"
-        widget: "string"
-      - name: "subcategories"
-        label: "Subcategories"
-        widget: "relation"
-        collection: "ecosystem_projects_subcategories"
-        search_fields: ["name"]
-        value_field: "slug"
-        display_fields: ["name"]
-        multiple: true
-
-  - name: "ecosystem_projects_subcategories"
-    label: "Ecosystem Projects Subcategories"
-    label_singular: Ecosystem Projects Subcategory
-    folder: "src/content/ecosystem-explorer/subcategories/"
-    create: true
-    identifier_field: name
-    extension: "yml"
-    slug: "{{slug}}"
-    fields:
-      - label: "Subcategory Name"
-        name: "name"
-        widget: "string"
-      - label: "Parent Category"
-        name: "parent_category"
-        widget: "relation"
-        collection: "ecosystem_projects_categories"
-        search_fields:
-          - name
-        value_field: "slug"
-        display_fields:
-          - name
-
   - name: ecosystem_projects
     label: Ecosystem Projects
     label_singular: Ecosystem Project
@@ -567,25 +524,52 @@ collections:
       - *image_config
       - name: category
         label: Category
-        widget: relation
-        collection: "ecosystem_projects_categories"
-        value_field: "slug"
-        search_fields:
-          - name
-        display_fields:
-          - name
-      - name: subcategory
-        label: Subcategory
-        widget: relation
-        collection: "ecosystem_projects_subcategories"
-        value_field: "slug"
-        search_fields:
-          - name
-        display_fields:
-          - name
-        filter:
-          field: "parent_category"
-          value: "{{fields.category}}"
+        widget: select
+        options:
+          - label: "Artificial Intelligence - AI Productivity & Utilities"
+            value: "ai-productivity-utilities"
+          - label: "Education, Academia & Health - Health"
+            value: "health"
+          - label: "Finance - Leasing"
+            value: "leasing"
+          - label: "Media & Entertainment - Arts, Collectibles & NFTs"
+            value: "arts-collectibles-nfts"
+          - label: "Media & Entertainment - Photo & Video"
+            value: "photo-video"
+          - label: "Network - Network Tools"
+            value: "network-tools"
+          - label: "Public Goods & DWeb - DWeb"
+            value: "dweb"
+          - label: "Public Goods & DWeb - Governance, DAOs & Public Goods"
+            value: "governance-daos-public-goods"
+          - label: "Public Goods & DWeb - Social Impact"
+            value: "social-impact"
+          - label: "Science, Climate & Space - Climate"
+            value: "climate"
+          - label: "Science, Climate & Space - Decentralized Science"
+            value: "decentralized-science"
+          - label: "Science, Climate & Space - Space"
+            value: "space"
+          - label: "Storage - Data Storage & Management"
+            value: "data-storage-management"
+          - label: "Storage - Infrastructure"
+            value: "infrastructure"
+          - label: "Storage - Storage Provider"
+            value: "storage-provider"
+          - label: "Storage - Storage Services"
+            value: "storage-services"
+          - label: "Storage - Storage Software"
+            value: "storage-software"
+          - label: "Tooling & Productivity - Bridges & Oracles"
+            value: "bridges-oracles"
+          - label: "Tooling & Productivity - Dapp"
+            value: "dapp"
+          - label: "Tooling & Productivity - Data Retrieval"
+            value: "data-retrieval"
+          - label: "Tooling & Productivity - Developer Tools"
+            value: "developer-tools"
+          - label: "Tooling & Productivity - Wallets, Identity & Authentication"
+            value: "wallets-identity-authentication"
       - name: description
         label: Short Description
         widget: string
