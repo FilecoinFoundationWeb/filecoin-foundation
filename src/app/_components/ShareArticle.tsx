@@ -2,6 +2,8 @@
 
 import { clsx } from 'clsx'
 
+import type { TouchTarget } from '@/types/touchTargetType'
+
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
@@ -15,9 +17,9 @@ type ShareArticleProps = {
   sectionTitle?: string
 }
 
-export const TOUCH_TARGET = {
-  class: 'p-2',
-  offsetClass: '-m-2',
+const TOUCH_TARGET: TouchTarget = {
+  touchAreaPadding: 'p-2',
+  touchAreaOffset: '-m-2',
 }
 
 export function ShareArticle({
@@ -38,7 +40,7 @@ export function ShareArticle({
       <ul
         className={clsx(
           'flex flex-wrap items-center gap-6',
-          TOUCH_TARGET.offsetClass,
+          TOUCH_TARGET.touchAreaOffset,
         )}
       >
         <CopyToClipboard
@@ -54,7 +56,7 @@ export function ShareArticle({
               title={`Share on ${label}`}
               className={clsx(
                 'focus:brand-outline hover:text-brand-400',
-                TOUCH_TARGET.class,
+                TOUCH_TARGET.touchAreaPadding,
               )}
             >
               <Icon component={icon} size={32} weight="light" />
