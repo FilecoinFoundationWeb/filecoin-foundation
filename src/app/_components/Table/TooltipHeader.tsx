@@ -2,7 +2,7 @@ import { Button } from '@headlessui/react'
 import { Question } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
+import type { TouchTarget } from '@/types/touchTargetType'
 
 import { Icon } from '@/components/Icon'
 import { Tooltip, type TooltipProps } from '@/components/Tooltip/Tooltip'
@@ -12,11 +12,14 @@ type TableHeaderWithTooltipProps = {
   description: TooltipProps['description']
 }
 
-const { touchAreaOffset, touchAreaPadding } =
-  getTouchTargetStyles('tooltipHeader')
+const TOUCH_TARGET: TouchTarget = {
+  touchAreaPadding: 'p-2',
+  touchAreaOffset: '-m-2',
+}
 
-const { touchAreaPadding: iconTouchAreaPadding } =
-  getTouchTargetStyles('tooltipHeaderIcon')
+const TOUCH_TARGET_ICON: TouchTarget = {
+  touchAreaPadding: 'p-1.5',
+}
 
 export function TooltipHeader({
   title,
@@ -32,13 +35,13 @@ export function TooltipHeader({
             aria-describedby={tooltipId}
             className={clsx(
               'group focus-visible:brand-outline',
-              touchAreaPadding,
-              touchAreaOffset,
+              TOUCH_TARGET.touchAreaPadding,
+              TOUCH_TARGET.touchAreaOffset,
             )}
           >
             <span
               className={clsx(
-                iconTouchAreaPadding,
+                TOUCH_TARGET_ICON.touchAreaPadding,
                 'flex items-center justify-center rounded-full transition ease-in-out',
                 open
                   ? 'bg-brand-600/70 text-brand-200'

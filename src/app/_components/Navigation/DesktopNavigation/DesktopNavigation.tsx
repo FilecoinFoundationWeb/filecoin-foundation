@@ -2,12 +2,8 @@
 
 import { usePathname } from 'next/navigation'
 
-import { clsx } from 'clsx'
-
 import { desktopNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
-
-import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
 
 import { useNavigationItems } from '@/hooks/useNavigationItems'
 
@@ -39,15 +35,10 @@ export function DesktopNavigation() {
   const { isActive: isResourcesActive, internalItems: resourcesInternalItems } =
     useNavigationItems(resourcesItems)
 
-  const { touchAreaOffset } = getTouchTargetStyles('desktopNavigation')
-
   return (
     <ul
       aria-label="Navigation items"
-      className={clsx(
-        'relative z-10 hidden lg:flex lg:items-center lg:gap-0.5',
-        touchAreaOffset,
-      )}
+      className="relative z-10 hidden lg:flex lg:items-center lg:gap-0.5"
     >
       <MainNavItem
         label={PATHS.ABOUT.label}

@@ -8,9 +8,9 @@ import * as Sentry from '@sentry/nextjs'
 import { clsx } from 'clsx'
 import { useCopyToClipboard } from 'usehooks-ts'
 
-import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
+import type { TouchTarget } from '@/types/touchTargetType'
 
-import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
+import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 
 import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
@@ -20,7 +20,9 @@ type CopyToClipboardProps = {
   notificationTitle: string
 }
 
-const { touchAreaPadding } = getTouchTargetStyles('copyToClipboard')
+const TOUCH_TARGET: TouchTarget = {
+  touchAreaPadding: 'p-2',
+}
 
 export function CopyToClipboard({
   text,
@@ -52,7 +54,7 @@ export function CopyToClipboard({
       <Button
         className={clsx(
           'focus:brand-outline hover:text-brand-400',
-          touchAreaPadding,
+          TOUCH_TARGET.touchAreaPadding,
         )}
         onClick={() => handleCopy(text)}
       >

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
-import { getTouchTargetStyles } from '@/utils/getTouchTargetStyles'
+import type { TouchTarget } from '@/types/touchTargetType'
 
 type MainNavItemProps = {
   href: Route
@@ -16,7 +16,9 @@ type MainNavItemStylesOptions = {
   isPopover?: boolean
 }
 
-const { touchAreaPadding } = getTouchTargetStyles('mainNavItem')
+const TOUCH_TARGET: TouchTarget = {
+  touchAreaPadding: 'px-4',
+}
 
 export function MainNavItem({
   label,
@@ -41,7 +43,7 @@ export function getMainNavItemStyles({
 
   const extendedStyles = isPopover
     ? 'inline-flex items-center gap-2 pl-4 pr-3 ui-open:bg-brand-700 ui-open:text-brand-400'
-    : clsx('inline-block', touchAreaPadding)
+    : clsx('inline-block', TOUCH_TARGET.touchAreaPadding)
 
   return clsx(
     baseStyles,
