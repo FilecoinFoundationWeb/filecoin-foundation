@@ -15,11 +15,14 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
-import { type TagGroupProps, TagGroup } from '@/components/TagGroup'
+import {
+  type TagGroupProps,
+  TagGroup,
+} from '@/components/TagComponents/TagGroup'
 
 type CardProps = {
   title: string | React.ReactNode
-  tagLabel?: TagGroupProps['label']
+  tags?: TagGroupProps['tags']
   metaData?: MetaDataType
   description?: string
   cta?: CTAPropsWithSpacing
@@ -49,7 +52,7 @@ const borderStyles = {
 
 export function Card({
   title,
-  tagLabel,
+  tags,
   metaData,
   description,
   cta,
@@ -68,7 +71,7 @@ export function Card({
     >
       {image && <Card.Image image={image} />}
       <div className="flex flex-col gap-3 p-4">
-        {tagLabel && <TagGroup label={tagLabel} />}
+        {tags && <TagGroup tags={tags} />}
         {metaData && <Meta metaData={metaData} />}
         <Card.Title title={title} />
         <div className={clsx(cta && 'mb-10')}>

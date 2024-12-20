@@ -1,6 +1,6 @@
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { AvatarGroup } from '@/components/AvatarGroup'
-import { TagGroup } from '@/components/TagGroup'
+import { TagGroup } from '@/components/TagComponents/TagGroup'
 
 import type { DigestArticleData } from '../../types/digestType'
 
@@ -23,7 +23,12 @@ export function DigestArticleHeader({
         alt: '',
       }}
     >
-      <TagGroup label={[`Issue ${issueNumber}`, `Article ${articleNumber}`]} />
+      <TagGroup
+        tags={[
+          { text: `Issue ${issueNumber}` },
+          { text: `Article ${articleNumber}` },
+        ]}
+      />
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
       <AvatarGroup authors={authors} />
     </ArticleHeader>

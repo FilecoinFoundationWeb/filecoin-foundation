@@ -15,13 +15,9 @@ type FeaturedGrantsGraduatesProps = {
   grantGraduates: Array<EcosystemProject>
 }
 
-export function FeaturedGrantsGraduates({
+export function FeaturedGrantGraduates({
   grantGraduates,
 }: FeaturedGrantsGraduatesProps) {
-  if (grantGraduates.length === 0) {
-    return <p>No featured grants graduates available.</p>
-  }
-
   return (
     <CardGrid cols="smTwo">
       {grantGraduates.map(({ title, description, slug, image }) => (
