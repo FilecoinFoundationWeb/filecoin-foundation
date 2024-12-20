@@ -4,7 +4,6 @@ created-on: 2024-03-29T21:28:54.676000Z
 updated-on: 2024-03-29T21:48:26.877000Z
 published-on: 2024-03-29T21:48:26.877000Z
 description: "SPex is a decentralized storage provider exchange space on FVM"
-category: storage
 tech:
   - filecoin
 image:
@@ -12,7 +11,7 @@ image:
 website: https://www.spex.website/
 twitter: https://twitter.com/FVM_Spex
 year-joined: 2024-03-29T21:28:54.676000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Spex offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX19BXykXtHf3mfwwPo+lHlbDy+NKwEa2CAq9ueZkiKhYKhGjyt8fzTF6

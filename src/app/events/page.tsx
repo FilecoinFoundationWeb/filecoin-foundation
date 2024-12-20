@@ -19,6 +19,7 @@ import {
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -98,16 +99,14 @@ export default function Events({ searchParams }: Props) {
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
-    searchParams,
     entries: sortedResults,
-    filterKey: LOCATION_KEY,
+    filterQuery: normalizeQueryParam(searchParams, LOCATION_KEY),
     filterFn: entryMatchesLocationQuery,
   })
 
   const { filteredEntries } = useFilter({
-    searchParams,
     entries: filteredEventsByLocation,
-    filterKey: CATEGORY_KEY,
+    filterQuery: normalizeQueryParam(searchParams, CATEGORY_KEY),
     filterFn: entryMatchesCategoryQuery,
   })
 

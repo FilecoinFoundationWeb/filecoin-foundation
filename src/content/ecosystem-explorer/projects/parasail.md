@@ -4,7 +4,6 @@ created-on: 2024-05-15T13:46:37.124000Z
 updated-on: 2024-05-15T13:46:37.134000Z
 published-on: 2024-05-15T13:46:37.146000Z
 description: "Incentive interface for seamless DePIN experiences."
-category: storage
 tech:
   - filecoin
 image:
@@ -12,7 +11,7 @@ image:
 website: http://parasail.network/
 twitter: https://twitter.com/parasailnetwork
 year-joined: 2024-05-15T13:46:37.162000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: Parasail offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX18eNzdUFYfmb1TrvmJp8ctt02G7y8EvoDH3lxF9RmT2VBkak4VpQSp5

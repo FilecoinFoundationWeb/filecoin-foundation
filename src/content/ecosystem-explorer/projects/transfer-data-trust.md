@@ -6,7 +6,6 @@ published-on: 2024-02-01T15:51:35.145Z
 description:
   "TRANSFER Data Trust is a speculative design project to build an automated,
   non-profit cooperative trust powered by FVM."
-category: "storage"
 tech:
   - "ipfs"
   - "filecoin"
@@ -17,7 +16,7 @@ repo: "https://github.com/TRANSFERArchive"
 twitter: "https://twitter.com/transfergallery/"
 year-joined: 2024-02-01T15:51:35.152Z
 featured-content: "https://fil.org/blog/ecosystem-spotlight-transfer-q-a-on-preserving-artistic-value-with-decentralized-technology-data-sovereignty-and-harnessing-value-of-data"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     Transfer Data Trust offers decentralized solutions for data transfer

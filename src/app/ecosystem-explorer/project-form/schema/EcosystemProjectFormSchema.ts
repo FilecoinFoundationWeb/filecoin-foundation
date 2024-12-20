@@ -59,7 +59,6 @@ export const EcosystemProjectFormSchema = z.object({
       message: 'The description is too long',
     }),
   category: OptionSchema,
-  subcategory: OptionSchema,
   logo: z
     .instanceof(File, { message: 'A logo is required' })
     .refine(validateFileSize, {

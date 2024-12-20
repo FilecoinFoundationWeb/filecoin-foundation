@@ -6,7 +6,6 @@ published-on: 2024-03-20T14:02:57.599000Z
 description:
   "Aims to lower the entry barriers and costs for Web3 users accessing
   decentralized storage networks."
-category: storage
 tech:
   - filecoin
 image:
@@ -14,7 +13,7 @@ image:
 website: https://www.ndlabs.io/#/
 twitter: https://twitter.com/imNDLABS
 year-joined: 2022-03-01T15:02:57.607000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: ND Labs provides decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX19aF+TR5qU+/vEq7+cSaLdXyZtE5YUqjnsji0cgqfu97Bk5f+fNYULF

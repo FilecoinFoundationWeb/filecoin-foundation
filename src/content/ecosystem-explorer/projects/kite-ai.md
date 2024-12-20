@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX18EkDTeVWH/IsFwGsh+vdtIGnBnM9X1FezhoHWGYyqiAZiZ/OqJ/H
 full-name: encrypted::U2FsdGVkX19YfihgsJSELxzIF1XltYIRSKkNZ+ljYQk=
 image:
   src: /assets/images/kite-ai.png
-category: artificial-intelligence
-subcategory: developer-tools
+category: developer-tools
 tech:
   - filecoin
 description: Kite AI is the Proof of Attributable Intelligence Layer 1 that connects AI agents, models and data.

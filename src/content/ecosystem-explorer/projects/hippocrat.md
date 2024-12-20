@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX19jvE4EYIKdBzrXs2S7L4X5oxJVW5JQ2OQ=
 full-name: encrypted::U2FsdGVkX1+Zkm76LfzWlhBqAsR3vMPovVMQy9M7uJk=
 image:
   src: /assets/images/hippocrat.png
-category: science-climate-space
-subcategory: "decentralized-science"
+category: decentralized-science
 tech:
   - filecoin
   - ipfs

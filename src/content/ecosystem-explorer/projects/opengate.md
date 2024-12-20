@@ -7,8 +7,7 @@ email: encrypted::U2FsdGVkX18DAxnwVx12HxGP6bJqmzQMymBttgOHUt/4HKClPwKCZTxMTftLff
 full-name: encrypted::U2FsdGVkX19Thu0eBMFECFKWOnUhJDbVJHy1OZdJid4=
 image:
   src: /assets/images/659751960cea1eb2d9ca9d33_opengate_logo.png
-category: storage
-subcategory: data-storage-management
+category: data-storage-management
 description: OpenGate has launched CryptoBear, an NFT project within the Filecoin ecosystem.
 website: https://www.opengatenft.com/
 tech:

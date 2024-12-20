@@ -6,14 +6,13 @@ published-on: 2024-03-29T21:41:02.169000Z
 description:
   "Compute-over-data pipelines for survey storage systems using knowledge
   graphs"
-category: storage
 tech:
   - filecoin
 image:
   src: /assets/images/66073567a94418c44efc8fa2_datalatte.png
 website: https://www.datalatte.com/
 year-joined: 2024-03-29T21:28:49.704000Z
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description: DataLatte offers decentralized data storage and retrieval services.
 email: encrypted::U2FsdGVkX1/eZS4gxwa4w1YvUZDhonLOsgK9fH6MuT84wLdoNUWGJZeFjJxmlot4

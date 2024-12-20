@@ -4,7 +4,6 @@ created-on: 2024-01-04T22:40:29.749000Z
 updated-on: 2024-01-05T16:11:14.388000Z
 published-on: 2024-01-11T13:26:59.787000Z
 description: "WeatherXM is a community-powered weather network."
-category: storage
 tech:
   - ipfs
 image:
@@ -13,7 +12,7 @@ website: "https://weatherxm.com/"
 repo: "https://github.com/WeatherXM/docs"
 twitter: "https://twitter.com/weatherxm"
 video-url: "https://www.youtube.com/embed/w7_wLlA6n8I"
-subcategory: data-storage-management
+category: data-storage-management
 seo:
   description:
     WeatherXM offers decentralized solutions for weather data collection

@@ -7,7 +7,6 @@ description:
   "The ATLAS Collaboration has partnered with Seal Storage Technology in
   a pilot project to explore decentralized cloud storage as an efficient and cost-effective
   option for archival data storage."
-category: science-climate-space
 tech:
   - filecoin
   - ipfs
@@ -16,7 +15,7 @@ image:
 website: "https://atlas.cern"
 featured-content: "https://www.sealstorage.io/blog/atlascern"
 twitter: "https://twitter.com/ATLASexperiment"
-subcategory: decentralized-science
+category: decentralized-science
 seo:
   description: Explore the ATLAS Experiment at CERN using decentralized storage solutions.
 email: encrypted::U2FsdGVkX180yXAP8t71XhT8wj/uSaUpEhBy4q36CbXl7uTJlIhSMqHrZCO2L+VA

@@ -1,6 +1,5 @@
 import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 
-type Subcategory = EcosystemProject['subcategories'][number]
 type Tech = EcosystemProject['tech'][number]
 
 export type MarkdownTemplateParams = {
@@ -9,7 +8,6 @@ export type MarkdownTemplateParams = {
   title: EcosystemProject['title']
   image: NonNullable<EcosystemProject['image']>
   category: EcosystemProject['category']
-  subcategories: Array<Subcategory>
   tech: Array<Tech>
   description: EcosystemProject['description']
   content: NonNullable<EcosystemProject['content']>
@@ -36,7 +34,6 @@ ${renderLine('full-name', data.fullName)}
 image:
   ${renderLine('src', data.image.src)}
 ${renderLine('category', data.category)}
-${renderArray('subcategories', data.subcategories)}
 ${renderArray('tech', data.tech)}
 ${renderLine('description', cleanDescription)}
 ${renderLine('website', data.website)}
