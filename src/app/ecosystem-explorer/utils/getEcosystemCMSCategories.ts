@@ -1,18 +1,18 @@
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 
-import { splitCategoryAndGroup } from './splitCategoryAndGroup'
+import { splitGroupAndCategoryLabel } from './splitGroupAndCategoryLabel'
 
 export function getEcosystemCMSCategories() {
   const { fields } = getCollectionConfig('ecosystem_projects')
-  const categories = getCMSFieldOptions(fields, 'category')
+  const categoryOptions = getCMSFieldOptions(fields, 'category')
 
-  const categoriesWithGroup = categories.map((categoryOption) => {
-    const { category, group } = splitCategoryAndGroup(categoryOption.label)
+  const categoriesWithGroup = categoryOptions.map(({ value, label }) => {
+    const { groupLabel, categoryLabel } = splitGroupAndCategoryLabel(label)
 
     return {
-      value: categoryOption.value,
-      label: category,
-      group,
+      value,
+      label: categoryLabel,
+      group: groupLabel,
     }
   })
 
