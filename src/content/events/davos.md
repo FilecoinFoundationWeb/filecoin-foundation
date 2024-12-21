@@ -154,5 +154,5 @@ seo:
   description: Join the Filecoin community in Davos during the World Economic
     Forum (Jan 20-23, 2025). Explore speaking engagements and events shaping the
     future of the decentralized web.
-  title: FF at Davos 2025 | fil.org
+  title: FF at Davos 2025
 ---
