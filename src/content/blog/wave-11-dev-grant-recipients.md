@@ -22,7 +22,7 @@ Dev Grants are a way to reward those who are adding value to the Filecoin ecosys
 
 Wave 12 closes Tuesday, November 30, so be sure to [submit your proposal](https://github.com/filecoin-project/devgrants#-how-to-apply)! Read more about grantees from this last cycle below.
 
-**Microgrants**
+## Microgrants
 
 Filecoin Foundation awards microgrants to early-stage projects that have developed initial prototypes using Filecoin. Offered to independent developers, small studios, non-profits, activists, and researchers (among others), the latest group of successful Microgrant recipients includes:
 
@@ -36,7 +36,7 @@ Filecoin Foundation awards microgrants to early-stage projects that have develop
 
 [Flutter IPFS Plugin](https://github.com/ipfs/devgrants/issues/121) — Flutter is a rapidly growing cross-platform development framework, and this plugin uses IPFS HTTP API along with Infura to easily store and retrieve strings, files, and JSON objects on IPFS. The code is implemented in Dart, and the plugin can be imported and used in android application projects.
 
-**Open Grants**
+## Open Grants
 
 Open Grants are awarded to projects that advance the Filecoin ecosystem, scale users, or directly advance Filecoin’s mission to preserve humanity’s most important information. Successful submissions from Waves 11 include:
 

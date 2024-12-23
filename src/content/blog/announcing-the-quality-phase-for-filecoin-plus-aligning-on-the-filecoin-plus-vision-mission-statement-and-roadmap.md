@@ -50,9 +50,9 @@ We have been polling our community and tracking the conversations happening in S
 
 This feedback, along with the vision and mission statement laid out above, is informing the governance team’s current prioritization and roadmap efforts. While there are still improvements to be made in growth and scaling up, the emphasis is now shifting from speed to quality. To mark this transition and label the changes being made as a result of it, we are officially launching the “Quality Phase” for the Fil+ program. We are proposing the following three top level goals for the program:
 
-1.  100% of valid types of clients have a path to getting DataCap
-2.  95% of new DataCap is allocated to quality data & use cases
-3.  Public visibility into all key initiatives and goals
+1. 100% of valid types of clients have a path to getting DataCap
+2. 95% of new DataCap is allocated to quality data & use cases
+3. Public visibility into all key initiatives and goals
 
 The Filecoin Plus Working Groups (including Trust & Transparency, E-Fil+) will be responsible for tracking towards these top-level goals of efficacy, abuse minimization, and visibility. We are continuing to see new types of projects, services, and use cases coming to the Filecoin network, and the launch of FVM is just one exciting example. The Fil+ program has supported DataCap distribution through different pathways based on the scale of need. Through “right-sized” solutions, new tooling, and refinements to processes, we can continue to rapidly and efficiently meet the diverse needs of clients. While we strive for that efficiency, we are also aware that abuse in the system must be minimized. The first critical step to reaching this goal will be aligning the community on standards, threat risks, and expectations.
 
@@ -60,12 +60,12 @@ Not everyone in the community will likely agree with everything, and the next fe
 
 To scope and organize our tactical work towards these three top-level goals, we are proposing the following objective initiatives:
 
-1.  The program enables Filecoin’s Master Plan to onboard massive amounts of data to the network
-2.  DataCap abuse in the system is minimized
-3.  Notaries perform robust diligence commensurate with the DataCap granted
-4.  Disputes and allegations of abuse are investigated with an emphasis on restorative justice
-5.  Legitimate client use-cases have scoped pathways for attaining DataCap
-6.  Governance model encourages rapid iteration and process improvement for diverse stakeholders
+1. The program enables Filecoin’s Master Plan to onboard massive amounts of data to the network
+2. DataCap abuse in the system is minimized
+3. Notaries perform robust diligence commensurate with the DataCap granted
+4. Disputes and allegations of abuse are investigated with an emphasis on restorative justice
+5. Legitimate client use-cases have scoped pathways for attaining DataCap
+6. Governance model encourages rapid iteration and process improvement for diverse stakeholders
 
 Our public roadmap (link previously available but now unavailable) has more details and timelines around the specific tactical projects, and we will also be updating this Medium publication space with more announcements over the coming months. Some of the key deliverables that we are excited to ship during this next phase include:
 

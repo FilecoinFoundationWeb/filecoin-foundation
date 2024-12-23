@@ -16,7 +16,7 @@ seo:
     guide for developers. Part 2 of the series.
 ---
 
-This is part two in Filecoin Developer [Pan Chasinga](https://pancy.medium.com/)’s tutorial on how to create a simple NFT marketplace app on the [Flow](https://www.onflow.org/) blockchain from scratch, using the Flow blockchain and IPFS/Filecoin storage via [nft.storage](https://nft.storage/). Catch up on Part One [HERE](https://filecoinfoundation.medium.com/building-a-flow-nft-pet-store-part-1-e69077d885da).
+This is part two in Filecoin Developer [Pan Chasinga](https://pancy.medium.com/)’s tutorial on how to create a simple NFT marketplace app on the [Flow](https://www.onflow.org/) blockchain from scratch, using the Flow blockchain and IPFS/Filecoin storage via [nft.storage](https://nft.storage/). Catch up on Part One [HERE](/blog/building-a-flow-nft-pet-store-part-1).
 
 In this second part of the tutorial, we will work on building the UI with React.js and Flow’s [fcl.js](https://docs.onflow.org/fcl/) library to interact with the on-chain smart contract we deployed in the [first part](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9).
 
@@ -71,15 +71,15 @@ Here I create a JavaScript module that interacts with each Cadence transaction o
 
 Since there are quite a few things involved in the minting process, we are going to go through a bit slowly on this one. We will create a `mintToken` function that takes a `pet` object and does the following:
 
-1.  **Upload to NFT.storage.** This uploads the metadata and image asset to NFT.storage, and retrieves the returned metadata that includes the [CID](https://proto.school/anatomy-of-a-cid/01) of the data.
-2.  **Send a minting transaction** with the metadata to Flow (in this case, the name, age, breed, and the CID of the data stored on IPFS).
-3.  **Return the Flow transaction ID** if successful.
+1. **Upload to NFT.storage.** This uploads the metadata and image asset to NFT.storage, and retrieves the returned metadata that includes the [CID](https://proto.school/anatomy-of-a-cid/01) of the data.
+2. **Send a minting transaction** with the metadata to Flow (in this case, the name, age, breed, and the CID of the data stored on IPFS).
+3. **Return the Flow transaction ID** if successful.
 
 First, let’s sketch up some placeholder functions to outline the steps:
 
     // MintToken.tx.jsasync function mintToken(pet) {  let metadata = await uploadToStorage(pet);  let txId = await mintPet(metadata);  return txId;}// We will fill in these functions nextasync function uploadToStorage(pet) {    return {};}async function mintPet(metadata) {    return '';}
 
-# 1\. Upload to NFT.Storage
+## 1. Upload to NFT.Storage
 
 Next, fill in the body of `uploadToStorage` function. You will need to replace the placeholder string with your API key from [NFT.Storage](https://nft.storage/). Note that in production, you will be reading this key as an environment variable for better security.
 
@@ -91,7 +91,7 @@ Then, we return the metadata returned from the call to the caller.
 
     // Import required modules from nft.storageimport { NFTStorage, File } from 'nft.storage';const API_KEY = "DROP_YOUR_API_KEY_HERE";// Initialize the NFTStorage clientconst storage = new NFTStorage({ token: API_KEY });async function uploadToStorage(pet) {  // Call `store(...)` on the NFTStorage client with an object  // containing all of pet's attributes, and required image and  // description attributes.  let metadata = await storage.store({    ...pet,    image: pet.image && new File([pet.image], `${pet.name}.jpg`, { type: 'image/jpg' }),    description: `${pet.name}'s metadata`,  });  // If all goes well, return the metadata.  return metadata;}
 
-# 2\. Send a minting transaction
+## 2. Send a minting transaction
 
 Once we have the metadata uploaded to NFT.storage, we will have to send a transaction to mint the token with the metadata. Let’s fill in the `mintPet`function.
 
@@ -123,7 +123,7 @@ We pass the Cadence `code` to `fcl.transaction`, and any integer from 0 - 999 to
 
 The `payer`, `proposer`, and `authorizations` accept a function known as _authorization function_, which decides the account (and effectively the keys) used to authorize the transaction. Here, `fcl` provided an `authz` default authorization function to makes signing with the emulator account easier.
 
-# 3\. Return the transaction ID
+## 3. Return the transaction ID
 
 Now all that is left to do is to return to the main `mintToken` function with a transaction ID:
 
@@ -137,7 +137,7 @@ This wraps up token minting. Now you can test the UI, select an image file, fill
 
 Now is the time to fill up your coffee and take a well-deserved break before we move on to the last bit of the tutorial — Querying tokens’ data.
 
-# Querying the token
+## Querying the token
 
 Now that we can mint our pet tokens, let’s build another form UI to query them for metadata and image.
 
@@ -193,7 +193,7 @@ Now, try to mint an NFT with the mint form, and query it with the query form! Ho
 
 Congratulations! You have single-handedly built a NFT minting and querying marketplace on Flow. This has been a great achievement!
 
-# Next steps
+## Next steps
 
 Flow’s focus on developer’s experience and the accessibility of its smart contract language Cadence, plus its low gas fee and high throughput, make it an extremely promising blockchain to build NFT-related apps on.
 

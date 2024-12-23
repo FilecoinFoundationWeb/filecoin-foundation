@@ -31,7 +31,7 @@ The [Filecoin Ecosystem Explorer](/ecosystem-explorer) highlights projects acros
 - [Starling Lab](/ecosystem-explorer/starling-lab) is the academic research lab innovating with the latest cryptographic methods and decentralized web protocols to meet the technical and ethical challenges of establishing trust in our most sensitive digital records. Starling Lab has worked with many different organizations and fellows on data integrity projects across the domains of history, journalism, and law and incorporates the Filecoin network to support data provenance and authenticity.
 - The Filecoin network also stores large genomic, geospatial, satellite, and climate datasets, from institutions including the [University of Utah](/ecosystem-explorer/university-of-utah), [Berkeley’s Underground Physics Group](/ecosystem-explorer/uc-berkeley-underground-physics-group), and the [ATLAS Experiment at CERN](/ecosystem-explorer/atlas-experiment-at-cern).
 
-**Add Your Project**
+## Add Your Project
 
 This index is only as good as the ecosystem makes it! If you don't see your project listed, add it today by [filling out this form](/ecosystem-explorer/project-form) to let us know your project or about additional projects that you’d like to see included.
 

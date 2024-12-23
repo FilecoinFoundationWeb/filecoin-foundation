@@ -31,7 +31,7 @@ Five additional prizes, ranging from $5,000 USD to $50,000 USD, go to winning pr
 
 **5th Prize** ($10,000): [Taskbar](https://github.com/victorholo/devgrants/blob/master/rfp-proposals/rfp-proposal-taskbar.md), to build a decentralized storage solution enabling intermediate use of the Hedera File Service for temporary storage, with transfer of the transcript file into permanence on IPFS with Filecoin. Leveraging [web3.storage](https://web3.storage/), this project supports the preservation of metadata into a Hedera smart contract to facilitate auditing.
 
-**Why the Hedera x Filecoin grants program was created**
+## Why the Hedera x Filecoin Grants Program Was Created
 
 Hedera is a decentralized public ledger designed for efficient, low-cost transactions, such as supply chain, verifiable proofs for data, payments, advertising, tokenization of assets, and more. However, the public DLT is not optimized for persistent storage of large files or object data. By collaborating with the Filecoin project, these grants are a way to spur joint innovation using Hedera network services and Filecoin’s decentralized peer-to-peer storage network, which allows anyone to store and validate large-scale data as part of a global, 12-exabyte (and growing) network.
 

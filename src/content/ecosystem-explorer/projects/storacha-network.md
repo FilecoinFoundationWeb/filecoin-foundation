@@ -25,7 +25,7 @@ Storacha is the latest innovation in decentralized data storage, developed by th
 
 Storacha has already managed petabytes of data for various open web projects, establishing itself as a leading production-grade storage solution in the decentralized internet space.
 
-**Key Features of Storacha**
+## Key Features of Storacha
 
 Storacha offers decentralized hot object storage and retrieval, optimized for large-scale data on the open web. Here are some of the unique approaches that set us apart:
 

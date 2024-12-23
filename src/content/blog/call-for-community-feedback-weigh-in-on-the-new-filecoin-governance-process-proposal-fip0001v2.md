@@ -35,7 +35,7 @@ The FIP0001v2 draft introduces procedural changes to the governance process. For
 
 The new categorization of the FIPs aims to streamline reviews and decision making leading to more community engagement and transparency, and reducing ambiguity throughout the process.
 
-**Consensus Pathway**
+## Consensus Pathway
 
 This FIP draft also introduces defined consensus mechanisms and pathways aimed at optimizing governance within Filecoin. Part of this includes setting up distinct governance constituencies thus, empowering the Filecoin community with greater decision-making autonomy.
 
@@ -53,7 +53,7 @@ Taken together, these three consensus pathways offer consensus mechanisms that e
 
 During the initial roll-out, governance stewards from Filecoin Foundation will be working to institute additional rules and policies to help guide the usage of new mechanisms. Community members are also welcome to suggest changes, modifications, and propose policies that further specify the changes laid out in FIP0001v2.
 
-**Pathways for Different FIP Types**
+## Pathways for Different FIP Types
 
 FIP0001v2 also introduces new categories of FIP, which map to various consensus pathways and requirements. The purpose of these categories is to colloquially describe the type of change proposed by different FIPs, and to ensure that these different FIPs are appropriately reviewed, deliberated and that the standard for acceptance is appropriate for the scope of changes proposed.
 
@@ -67,11 +67,11 @@ FIP Editors are asked to determine the FIP type as soon as the FIP PR is accepte
 
 **FRCs (Filecoin Request for Comments)**: Do not require consensus and are essentially community standards or recommendations.
 
-**Community Engagement**
+## Community Engagement
 
 The FIP0001v2 initiative has been a community-driven project and to this end, all improvements proposed were developed in close consultation with a wide range of stakeholders within the Filecoin ecosystem. Community members are always encouraged to weigh in, ask questions, make suggestions, and generally participate in this process to refine our governance procedures. More information related to community feedback regarding this initiative can be found [here](https://github.com/filecoin-project/FIPs/discussions/799).
 
-**Conclusion**
+## Conclusion
 
 The introduction of FIP0001v2 offers an opportunity to enhance the governance of the Filecoin network making it more effective, resilient, and responsive to the community's needs and responding to the scale at which Filecoin is growing. We strongly encourage community engagement with this FIP.
 

@@ -19,14 +19,14 @@ seo:
     the Filecoin network. Read the case study.
 ---
 
-**Key Highlights:**
+## Key Highlights
 
 - Seal Storage is a data platform that aims to make Web3 accessible for all by providing sustainable, immutable, and affordable Web3 cloud storage.
 - As one of the earliest providers on the Filecoin network, Seal Storage is an established leader in the ecosystem. The company is a top storage provider in North America, with over 20PB of capacity across the U.S. and Canada, and is looking to add over 100PiBs more.
 - Seal Storage currently serves universities, research institutes, enterprises, and other firms to store their data in a more sustainable, affordable, and immutable way.
-- **Read the full** [**Seal Storage Case Study**](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-SealStorage.pdf)
+- **Read the full** [Seal Storage Case Study](https://fil-foundation.on.fleek.co/hosting/FF-CaseStudy-SealStorage.pdf)
 
-**Providing an alternative data storage solution**
+## Providing an Alternative Data Storage Solution
 
 The use of cloud infrastructure services has [spiked](https://www.idc.com/getdoc.jsp?containerId=IDC_P31615) over the past few years, since companies around the world were forced to digitize their businesses during the pandemic. In Q4 2021, spending on these services grew by 13.5% YoY to an average of $21.1 billion, and tech research firm IDC predicts a continuous growth and need for these services as supply continues to catch up to demand.
 
@@ -38,13 +38,13 @@ In its early days, the Seal Storage team found that after speaking with current 
 
 _“Present day costs to store large +PB scale datasets into centralized storage is cost prohibitive and the egress charges alone to access your data is a challenge for our customers. Seal Storage provides the same access workflows that our customers are accustomed to, without a decrease in productivity, and most importantly at a fraction of the cost,” said Jacques Swanepoel, CTO at Seal Storage._
 
-**Keeping an eye on IPFS**
+## Keeping an Eye on IPFS
 
 After a few years, Michael, Andrew, and Alex began taking note of the growth of [IPFS](https://ipfs.tech/) and the successful Filecoin mainnet [launch](https://filecoin.io/blog/posts/filecoin-mainnet-is-live/) in the decentralized storage space, and began building a technical team to serve as the foundation for Seal Storage. In Dec 2021, Seal Storage officially joined the larger Filecoin network, as one of the earliest storage providers.
 
 As Seal Storage continued to build out its team and nodes on the Filecon network, the team began stewarding clients into decentralized cloud storage. They were effective by showing clients the cost savings, security, and added sustainability that the company could provide any entity with large data sets, powered by renewable energy.
 
-**What’s Ahead: Onboarding Real Use-Cases to Web3**
+## What’s Ahead: Onboarding Real Use-Cases to Web3
 
 Now a leader in the ecosystem, Seal Storage is continually adding more capacity to the Filecoin network and bringing in new organizations that are in need of the benefits that decentralized storage provides.
 
@@ -58,19 +58,19 @@ Seal Storage decided to provide storage on the Filecoin network because:
 - **Open market:** On the Filecoin network, file storage and retrieval deals are negotiated in open markets. By lowering the barriers to entry, Filecoin enables a thriving ecosystem of many independent storage providers.
 - **Competitive prices:** Prices for storage and retrieval are determined by supply and demand, not corporate pricing departments. The Filecoin network makes reliable storage available at hyper-competitive prices.
 
-**The Seal Storage team**
+## The Seal Storage Team
 
 Seal is an established leader in the ecosystem. The team is made up of enterprise data experts from Seagate, Oracle, and Cisco, and the company has established itself as a top storage provider in North America, with more than 20PB of capacity across the U.S. and Canada, with more on the way.
 
-**CEO and Co-Founder —** [**Michael Horowitz**](https://www.linkedin.com/in/michael-horowitz-870aa036/) **—** a seasoned financial and capital markets professional. He previously held principal portfolio management and advisory roles with a $100mm family office venture debt fund. Michael also held senior executive positions within the capital markets groups of both the Canadian Imperial Bank of Commerce (CIBC) and the Bank of Montreal (BMO).
+**CEO and Co-Founder —** [Michael Horowitz](https://www.linkedin.com/in/michael-horowitz-870aa036/) — a seasoned financial and capital markets professional. He previously held principal portfolio management and advisory roles with a $100mm family office venture debt fund. Michael also held senior executive positions within the capital markets groups of both the Canadian Imperial Bank of Commerce (CIBC) and the Bank of Montreal (BMO).
 
-**CIO and Co-Founder —** [**Andrew McFarlane**](https://www.linkedin.com/in/mcfarlaneandrew/) **—** bringing more than four years of blockchain engineering and business experience, Andrew is deep in the crypto space having launched node infrastructure and invested in 20+ cryptonetworks. Andrew specialized in cybersecurity at Deloitte, and built network infrastructure for video streaming at Canada’s largest telecom. Andrew holds a bachelor’s degree in Computer Engineering and an MBA from The University of Toronto.
+**CIO and Co-Founder —** [Andrew McFarlane](https://www.linkedin.com/in/mcfarlaneandrew/) — bringing more than four years of blockchain engineering and business experience, Andrew is deep in the crypto space having launched node infrastructure and invested in 20+ cryptonetworks. Andrew specialized in cybersecurity at Deloitte, and built network infrastructure for video streaming at Canada’s largest telecom. Andrew holds a bachelor’s degree in Computer Engineering and an MBA from The University of Toronto.
 
-**COO and Co-Founder —** [**Alex Altman**](https://www.linkedin.com/in/alex-altman-1b9499134/)— an established leader in the Canadian crypto space, with 5+ years of experience as an investor, consultant and financial manager. Alex began his career working in private equity where he was directly involved with the diligence and underwriting of investment opportunities primarily in the real-estate space.
+**COO and Co-Founder —** [Alex Altman](https://www.linkedin.com/in/alex-altman-1b9499134/) — an established leader in the Canadian crypto space, with 5+ years of experience as an investor, consultant and financial manager. Alex began his career working in private equity where he was directly involved with the diligence and underwriting of investment opportunities primarily in the real-estate space.
 
-**CTO —** [**Jacques Swanepoel**](https://www.linkedin.com/in/jacques-swanepoel/)— bringing 30 years of experience as a chief technology officer, entrepreneur and software engineer, Jacques is an expert in virtualization, disaster recovery planning, designing and managing multi-cloud solutions. He has in-depth knowledge of a vast range of networking and storage systems, including distributed systems.
+**CTO —** [Jacques Swanepoel](https://www.linkedin.com/in/jacques-swanepoel/) — bringing 30 years of experience as a chief technology officer, entrepreneur and software engineer, Jacques is an expert in virtualization, disaster recovery planning, designing and managing multi-cloud solutions. He has in-depth knowledge of a vast range of networking and storage systems, including distributed systems.
 
-**Seal’s success to date**
+## Seal’s Success to Date
 
 Seal Storage now stores data for organizations and companies including [UC Berkeley](https://www.newswire.ca/news-releases/uc-berkeley-engages-seal-storage-web3-technology-to-advance-innovative-neutrino-physics-research-883282087.html), [Starling Lab,](https://www.starlinglab.org/) and [Casper Network](https://casperlabs.io/) — all of which were in need of verifiable, secure storage for various types of data.
 
@@ -80,7 +80,7 @@ Starling Lab, the first center in the world dedicated to using decentralized too
 
 And Casper Network, an open source blockchain optimized for enterprise and developer adoption, partnered with Seal Storage to better secure its NFTs against the risk of loss and manipulation by providing secure scalable storage and provenance. Seal Storage’s solution will provide Casper Network with NFT media backup, insurance, and encryption.
 
-**Growing within the network**
+## Growing within the Network
 
 Seal Storage continues to add more capacity and bring new data clients to the Filecoin network and its other storage provider partners, and is now looking to expand that support by even more. Seal Storage has plans to add over 100 PiBs of data storage to the network, and currently has projects in the pipeline that could extend that addition.
 

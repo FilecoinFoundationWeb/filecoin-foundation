@@ -20,10 +20,6 @@ seo:
     Martin to bring decentralized storage to space.
 ---
 
-# **Filecoin Foundation and Lockheed Martin Bring Decentralized Storage to Space**
-
-### _The companies are working together to deploy the Interplanetary File System in space as key digital infrastructure to transform how data is shared in the space economy_
-
 Filecoin Foundation (FF) and Lockheed Martin are working together to develop a program for deploying the Interplanetary File System (IPFS) in space.
 
 The space economy is [rapidly emerging](https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/lockheed-martins-joe-landon-on-the-emerging-space-economy), and [space-based services](https://transmitter.ieee.org/to-the-moon-space-based-infrastructure-is-growing-rapidly/) are increasingly used for everything from communication, to GPS, to environmental monitoring. As more tools are put into orbit, and as private space development and exploration continues, building out communications infrastructure in space is key to ensuring the space economy can thrive. This collaboration is the next step in establishing critical infrastructure that will transform how we share and access data in space.
@@ -44,10 +40,10 @@ As initial steps, between now and the end of August 2022, Lockheed Martin and Fi
 
 This project requires designing for considerations around power, mass, and volume and ensuring the electronics will function in space. The initial payload demonstration is designed to focus on a Low-Earth Orbit mission, with eventual plans for lunar and interplanetary use.
 
-**About Lockheed Martin Space**
+## About Lockheed Martin Space
 
 Going to space is just the beginning. It’s what you do when you get there that matters. We build satellites and spacecraft that do amazing things in space for government and commercial customers. We’ve partnered with NASA to explore every planet in our solar system. Lockheed Martin-built satellites give earlier warning of severe weather, connect troops on the battlefield, and deliver GPS directions to a billion people worldwide. As we look to the future, we’re driving innovations to help our customers do even more in orbit. That’s why we’re designing smarter satellites that operate like smartphones in the sky, with apps that can be updated in orbit so they can adapt as mission needs on the ground change.
 
-**About Filecoin Foundation**
+## About Filecoin Foundation
 
 Filecoin is a decentralized storage system designed to store humanity’s most important information. Filecoin Foundation (FF) is an independent organization that facilitates governance of the Filecoin network, funds critical development projects, supports the growth of the Filecoin ecosystem, and advocates for Filecoin and the decentralized web.

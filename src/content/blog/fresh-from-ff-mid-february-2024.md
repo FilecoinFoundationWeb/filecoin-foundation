@@ -26,7 +26,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - Calling all builders! Join us for the first Filecoin hackathons of 2024:
 
@@ -35,7 +35,7 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 - FF’s developer advocacy team will be on the ground at [ETHDenver](https://hub.fil.org/events/ethdenver/see-the-schedule) and [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs). Reach out if you want to set up time to chat with developer advocates at either event.
 
-**Storage**
+### Storage
 
 - This month we laid out FF's 2024 priorities for supporting the storage provider community; read more [on Filecoin Slack](https://filecoinproject.slack.com/archives/C02GQUMFQVA/p1707172145882549). Some of FF’s 2024 focus areas for supporting storage providers include:
 
@@ -47,17 +47,17 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - FF’s governance team is finalizing an audit for on-chain voting tooling and refining edits to a public plan to test sentiment analysis tooling.
 - Additional documentation and support work for new Working Groups and FIP0001v2 remains ongoing.
 - Follow the [governance GitHub](https://github.com/filecoin-project/FIPs/discussions) for weekly updates on the latest topics and developments surrounding network FIPs and governance.
 
-**Fil Plus**
+### Fil Plus
 
 - Wrapping up the v5 Notary Allocator election process, Filecoin Foundation’s Fil Plus team reviewed and scored 97 allocator applications and selected 85 new allocators. New allocators were announced in the [February 6 Governance call](https://www.youtube.com/watch?v=HdyFRW2-CYY). The Fil Plus team provided information to organizations not selected as an allocator on how to update their applications and resubmit during the next cycle, beginning in March.
 
-**User Experience Improvement Team (UXIT)**
+### User Experience Improvement Team (UXIT)
 
 - The UXIT completed its dogfooding exercise for [dashboard.starboard.ventures](https://dashboard.starboard.ventures/dashboard). Once the team compiles implementation recommendations, it will share feedback with the Starboard team.
 - Following its dogfooding session last year, UXIT is planning to implement usability fixes to CID.Contact.
@@ -69,11 +69,11 @@ Connect with the [Filecoin community at ETHDenver](https://hub.fil.org/events/et
 
 ## Comms, Marketing, & Events
 
-**Marketing & Comms**
+### Marketing & Comms
 
 - The Filecoin Sanctuary [playlist is available on YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0lsLIsGAQYREZnP9QKE6zlU)! Learn more about the conversations in Davos with the world’s brightest minds across business, government, and technology about Filecoin’s value as a vital piece of infrastructure for the next generation of the web.
 
-**Events**
+### Events
 
 - FF announced its 2024 events calendar! Visit [fil.org/events](/events) to find the events FF will host, sponsor, and support, and discover how to get involved in some of the best opportunities to learn, build, and network with community members around the globe.
 - Check out the [Filecoin at ETHDenver website](https://hub.fil.org/ethdenver2024) for all of the ecosystem events happening throughout the week. This site will serve as the place to list all events for the Filecoin community. If you are organizing an event and do not see it listed, please add it via the form on the website.

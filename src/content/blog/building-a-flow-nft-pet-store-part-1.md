@@ -20,16 +20,16 @@ This tutorial from Filecoin Developer [Pan Chasinga](https://pancy.medium.com/) 
 
 ![](/assets/images/64423a9bd1b0256d85f907e2_0-al1sv2xu4ah_bwdo.png)The tutorial is broken into two parts:
 
-1.  NFT and blockchain basic, understanding Flow and Cadence, and interacting with the smart contract using the Flow command line tool.
-2.  Building a front-end React app and using the FCL library to interact with the smart contract.
+1. NFT and blockchain basic, understanding Flow and Cadence, and interacting with the smart contract using the Flow command line tool.
+2. Building a front-end React app and using the FCL library to interact with the smart contract.
 
 **This is the first part of the tutorial.**
 
-# Who this is for
+## Who this is for
 
 Although this tutorial is built for Flow blockchain, I am focusing on building up a general understanding of smart contracts and Non-fungible tokens (NFTs). If you have a working familiarity in JavaScript and React, but a passing familiarity with blockchains, you will be just fine catching up.
 
-# Set up
+## Set up
 
 Before we begin, you will need to install a few things:
 
@@ -39,7 +39,7 @@ Before we begin, you will need to install a few things:
 
 You’re free to use any code editor, but [VSCode](https://code.visualstudio.com/) with Cadence Language support (link previously available but now unavailable) is a great option.
 
-# What you will learn
+## What you will learn
 
 As we build a minimal version of the [Flowwow NFT pet store](https://github.com/jochasinga/flowwow/), you will learn the basic NFT building blocks from the ground up, including:
 
@@ -48,7 +48,7 @@ As we build a minimal version of the [Flowwow NFT pet store](https://github.com/
 - Minting tokens and storing metadata on Filecoin/IPFS via [NFT.storage](https://nft.storage/)
 - Transferring tokens
 
-# Understanding ownership and resource
+## Understanding ownership and resource
 
 A blockchain is a digital distributed ledger that tracks an _ownership_ of some _resource_. There is nothing new about the ledger part — Your bank account is a ledger that keeps track of how much money you _own_ and how much is spent (change of ownership) at any time. The key components to a ledger are:
 
@@ -56,22 +56,22 @@ A blockchain is a digital distributed ledger that tracks an _ownership_ of some 
 - Accounts to own the resource, or the access to it.
 - Contract or a ruleset to govern the economy.
 
-# Resource
+### Resource
 
 A resource can be any _thing_ — from currency, crop, to digital monster — as long as the type of resource is agreed upon commonly by all accounts.
 
-# Accounts
+### Accounts
 
 Each account owns a ledger of its own to keep track of the spending (transferring) and imbursing (receiving) of the resource.
 
-# Contract
+### Contract
 
 A contract is a ruleset governing how the “game” is played. Accounts that break the ruleset may be punished in some way. Normally, it is a central authority like a bank who creates this contract for all accounts.
 
 Because the conventional ledgers are owned and managed by a trusted authority like your bank, when you transfer the ownership of a few dollars (`-$4.00`) to buy a cup of coffee from Mr. Peet, the bank needs to be consistent and update the ledgers on both sides to reflect the ownership change (Peet has `+$4.00` and you have `-$4.00`). Because both ledgers are not openly visible to both of Peet and you and the the currency is likely digital, there is no guarantee that the bank won't mistakenly or intentionally update either ledger with the incorrect value.
 
-> **_💡 Your bank probably owes you_**\_
-> If you have a saving account with some money in it, you might be loaning your money to your bank. You are trusting it to have your money for you when you want to withdraw. This is why if you had a billion dollars in your account and you want to withdraw today, your teller will freak out. Your money is just part of the stream of digital currency your bank is free to do anything with.\_
+> _💡 Your bank probably owes you_
+> If you have a saving account with some money in it, you might be loaning your money to your bank. You are trusting it to have your money for you when you want to withdraw. This is why if you had a billion dollars in your account and you want to withdraw today, your teller will freak out. Your money is just part of the stream of digital currency your bank is free to do anything with.
 
 What is interesting about the blockchain is the distributed part. Because there is only a single, open _decentralized_ ledger, there is no central authority (like a bank) for you to trust with bookkeeping. In fact, there is no need for you to trust anyone at all. You only need to trust the copy of the software run by other computers in the network to uphold the legitimacy of the book. Moreover, it is very hard for one (or more) of the computers to run an altered version of that software to bend the rule.
 
@@ -79,24 +79,24 @@ A good analogy is an umpire-less tennis game where any dispute (like determining
 
 “Why such emphasis on ownership?” you may ask. This was leading to the concept of resource ownership baked right into the smart contract in Flow. Learning to visualize everything as resources will help in getting up to speed.
 
-# Quick tour of Cadence
+## Quick tour of Cadence
 
 Like Solidity language for Ethereum, Flow uses [Cadence Language](https://docs.onflow.org/cadence/language/) for smart contracts, transactions, and scripts. Inspired by the [Rust](https://rust-lang.org/) and [Move](https://move-book.com/) languages, the interpreter tracks when a resource is being _moved_ from a variable to the next and makes sure it can never be mutually accessible in the program.
 
 The three types of Cadence programs you will be writing are [contracts](https://docs.onflow.org/cadence/language/contracts/#gatsby-focus-wrapper), [transactions](https://docs.onflow.org/cadence/language/transactions/#gatsby-focus-wrapper), and scripts.
 
-# Contract
+## Contract
 
 A contract is an initial program that gets deployed to the blockchain, initiating the logic for your app and allowing access to resources you create and the capabilities that come with them.
 
 Two of the most common constructs in a contract are **resources** and **interfaces**.
 
-## Resources
+### Resources
 
 Resources are items stored in user accounts that are accessible
 through access control measures defined in the contract. They are usually the assets being tracked or some capabilities, such as a capability to withdraw an asset from an account. They are akin to classes or structs in some languages. Resources can only be in one place at a time, and they are said to be _moved_ rather than _assigned_.
 
-## Interfaces
+### Interfaces
 
 Interfaces define the behaviors or capabilities of resources. They are akin to interfaces in some languages. They are usually implemented by other resources. Interfaces are also defined with the keyword `resource`.
 
@@ -104,7 +104,7 @@ Here is an example of an `NFT` resource and an `Ownable` interface (à la [ERC72
 
     pub contract PetShop {    // A map recording owners of NFTs    pub var owners: {UInt64 : Address}    // A Transferrable interface declaring some methods or "capabilities"    pub resource interface Transferrable {      pub fun owner(): Address      pub fun transferTo(recipient: Address)    }    // NFT resource implements Transferrable    pub resource NFT: Transferrable {        // Unique id for each NFT.        pub let id: UInt64        // Constructor method        init(initId: UInt64) {            self.id = initId        }        pub fun owner(): Address {          return owners[self.id]!        }        pub fun transferTo(recipient: Address) {          // Code to transfer this NFT resource to the recipient's address.        }    }}
 
-# Script
+## Script
 
 Scripts are Cadence programs that are run **on the client** to _read_ the state of the chain. Therefore, they do not incur any gas fee and do not need an account to sign them. A common use case is a blockchain explorer that queries the state of the chain.
 
@@ -116,7 +116,7 @@ Nevermind if you don’t understand the syntax. As long as you understand the ov
 
 Both transactions and scripts are invoked on the client side, usually with the help of a command line tool or JavaScript library, both of which will be covered in this tutorial series.
 
-# Building pet store
+## Building pet store
 
 Now that we had a glance at Cadence, the smart contract language, we are ready to start building some of the features for our NFT pet store.
 
@@ -132,7 +132,7 @@ And then, initialize a Flow project:
 
 You should see a new React project created with a `flow.json` configuration file inside. This file is important as it tells the command line tool and the FCL library where to find things in the project. Let's take a closer look at the newly created directory and add some configurations to the project.
 
-# Project structure
+## Project structure
 
 First of all, note the `flow.json` file under the root directory. This configuration file was created when we typed the command `flow init` and tells Flow that this is a Flow project. We will leave most of the initial settings as they were, but make sure it contains these fields by adding or changing them accordingly:
 
@@ -154,7 +154,7 @@ Your `src` directory should now look like this:
 
     .|— flow|   |— contract|   |   ||   |   `— PetStore.cdc|   |— script|   |   ||   |   `— GetTokenIds.cdc|   `— transaction|       ||       `— MintToken.cdc|...
 
-# `PetStore` contract
+## `PetStore` contract
 
 it is about time we write our smart contract. It is the most involved code in this project, so it is the ideal place to learn the language.
 
@@ -173,7 +173,7 @@ In the body of `NFT` resource, we declare `id` field and a constructor method to
 
 Now we are ready to move on to the next step.
 
-# `NFTReceiver`
+## `NFTReceiver`
 
 Now, we will add the `NFTReceiver` interface to define the _capabilities_ of a _receiver of NFTs_. What this means is only the accounts with these capabilities can receive tokens from another addresses.
 
@@ -195,7 +195,7 @@ The `getTokenMetadata(id: UInt64) : {String : String}` method takes a token ID, 
 
 The `updateTokenMetadata(id: UInt64, metadata: {String: String})` method takes an ID of an `NFT` and a metadata dictionary to update the target NFT's metadata.
 
-# `NFTCollection`
+## `NFTCollection`
 
 Now let’s create an `NFTCollection` resource to implement the `NFTReceiver`interface. Think of this as a "vault" where NFTs can be deposited or withdrawn.
 
@@ -209,8 +209,8 @@ This dictionary stores the NFTs for this collection by mapping the ID to NFT res
 
 In the contructor method, `init()`, we instantiate the `ownedNFTs` with an empty dictionary. A resource also needs a `destroy()` destructor method to make sure it is being freed.
 
-> **_💡 Nested Resource_**\_
-> A\_ [_composite structure_](https://docs.onflow.org/cadence/language/composite-types/) _including a dictionary can store resources, but when they do they will be treated as resources. Which means they need to be moved rather than assigned and their type will be annotated with `@`._
+> _💡 Nested Resource_
+> A [_composite structure_](https://docs.onflow.org/cadence/language/composite-types/) including a dictionary can store resources, but when they do they will be treated as resources. Which means they need to be moved rather than assigned and their type will be annotated with `@`.
 
 The `withdraw(id: UInt64): @NFT` method removes an NFT from the collection's `ownedNFTs` array and return it.
 
@@ -236,7 +236,7 @@ In the body of the method, we loop over all the keys of the given metadata, inse
 
 We have successfully implemented the `@NFTReceiver` interface for the `@NFTCollection` resource.
 
-# `NFTMinter`
+## `NFTMinter`
 
 The last and very important component for our `PetStore` contract is `@NFTMinter`resource, which will contain an exclusive code for the contract owner to mint all the tokens. Without it, our store will not be able to mint any pet tokens. It is very simplistic though, since we have already blazed through the more complex components. Its only `mint(): @NFT` method creates an `@NFT` resource, gives it an ID, saves the address of the first owner to the contract (which is the address of the contract owner, although you could change it to mint and transfer to the creator's address in one step), increments the universal ID counter, and returns the new token.
 
@@ -276,22 +276,22 @@ Open up a new shell, making sure you are inside the project directory, then type
 
 Congratulations! You have learned how to write and deploy your first smart contract.
 
-> **_⚠️ Oops! That didn’t work_**\_
-> Check `flow.json` configuration and make sure the\_ [_path to the contract_](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#project-structure) _is correct._
+> _⚠️ Oops! That didn’t work_
+> Check `flow.json` configuration and make sure the [_path to the contract_](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#project-structure) is correct.
 
-# `MintToken` transaction
+## `MintToken` transaction
 
 The first and most important transaction for _any_ NFT app is perhaps the one that mints tokens into existence! Without it there won’t be any cute tokens to sell and trade. So let’s start coding:
 
     // MintToken.cdc// Import the `PetStore` contract instance from the master account address.// This is a fixed address for used with the emulator only.import PetStore from 0xf8d6e0586b0a20c7transaction(metadata: {String: String}) {    // Declare an "unauthorized" reference to `NFTReceiver` interface.    let receiverRef: &{PetStore.NFTReceiver}    // Declare an "authorized" reference to the `NFTMinter` interface.    let minterRef: &PetStore.NFTMinter    // `prepare` block always take one or more `AuthAccount` parameter(s) to indicate    // who are signing the transaction.    // It takes the account info of the user trying to execute the transaction and    // validate. In this case, the contract owner's account.    // Here we try to "borrow" the capabilities available on `NFTMinter` and `NFTReceiver`    // resources, and will fail if the user executing this transaction does not have access    // to these resources.    prepare(account: AuthAccount) {        // Note that we have to call `getCapability(_ domain: Domain)` on the account        // object before we can `borrow()`.        self.receiverRef = account.getCapability<&{PetStore.NFTReceiver}>(/public/NFTReceiver)            .borrow()            ?? panic("Could not borrow receiver reference")        // With an authorized reference, we can just `borrow()` it.        // Note that `NFTMinter` is borrowed from `/storage` domain namespace, which        // means it is only accessible to this account.        self.minterRef = account.borrow<&PetStore.NFTMinter>(from: /storage/NFTMinter)            ?? panic("Could not borrow minter reference")    }    // `execute` block executes after the `prepare` block is signed and validated.    execute {        // Mint the token by calling `mint(metadata: {String: String})` on `@NFTMinter` resource, which returns an `@NFT` resource, and move it to a variable `newToken`.        let newToken <- self.minterRef.mint(metadata)        // Call `deposit(token: @NFT)` on the `@NFTReceiver` resource to deposit the token.        // Note that this is where the metadata can be changed before transferring.        self.receiverRef.deposit(token: <-newToken)    }}
 
-> **_⚠️ Ambiguous type warning_**\_
+> _⚠️ Ambiguous type warning_
 > If you are using VSCode, chances are you might see the editor flagging the
 > lines referring to `PetStore.NFTReceiver` and `PetStore.NFTMinter` types
 > with an "ambiguous type not found". Try to reset the running emulator
 > by pressing `Ctrl+C` in the shell where you ran the emulator to interrupt it
 > and run it again with `flow emulator` and on a different shell, don't forget
-> to redeploy the contract with `flow project deploy`.\_
+> to redeploy the contract with `flow project deploy`.
 
 The first line of the transaction code imports the `PetStore` contract instance.
 
@@ -315,7 +315,7 @@ Note the **transaction ID** returned from the transaction. Every transaction ret
 
 Congratulations on minting your first NFT pet! It does not have a face yet besides just a name and a breed. But later in this tutorial, we will upload static images for our pets onto the Filecoin/IPFS networks using [nft.storage](https://nft.storage/).
 
-# `TransferToken` transaction
+## `TransferToken` transaction
 
 Now that we know how to mint Flow NFTs, the next natural step is to learn how to transfer them to different users. Since this transfer action writes to the blockchain and mutates the state, it is also a transaction.
 
@@ -373,7 +373,7 @@ Recall that the `transaction` block of `TransferToken.cdc` accepts two arguments
 
 Well done! You have just withdrawn and deposited your NFT to another account!
 
-# `GetTokenOwner` script
+## `GetTokenOwner` script
 
 We have learned to write and send transactions. Now, we will learn how to create scripts to read state from the blockchain.
 
@@ -395,7 +395,7 @@ Here’s how to execute a script with the Flow CLI:
 
 `<TOKEN_ID>` is an unsigned integer token ID starting from 1. If you have [minted an NFT](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#minttoken-transaction) and [transferred it to the `test-account`](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#transfertoken-transaction), then replace `<TOKEN_ID>` with the token ID. You should get back the address of the `test-account` you have created.
 
-# `GetTokenMetadata` script
+## `GetTokenMetadata` script
 
 From `GetTokenOwner.cdc` script, it takes only a few more steps to create a script that returns a token's metadata.
 
@@ -413,17 +413,15 @@ Now, execute the script:
 
 If we have minted an NFT with the metadata `{"name": "Max", "breed": "Bulldog"}` in the [previous minting step](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#minttoken-transaction), then that is what you will get after running the script.
 
-# `GetAllTokenIds` (Bonus)
+## `GetAllTokenIds` (Bonus)
 
 This script is very short and straightforward, and it will become handy
 when we build a UI to query tokens based on their IDs.
 
     // GetAllTokenIds.cdcimport PetStore from 0xPetStorepub fun main() : [UInt64] {    // We basically just return all the UInt64 keys of `owners`    // dictionary as an array to get all IDs of all tokens in existence.    return PetStore.owners.keys}
 
-# Wrapping up
+## Wrapping up
 
 Et voila! You have come very far and dare I say you are ready to start building your own Flow NFT app.
 
 However, user experience is a crucial part in any app. It is more than likely that your users won’t be as proficient at the command line as you are. Moreover, it is a bit boring for an NFT store to have faceless NFTs. In the second part, we will start building the UI on top and using [nft.storage](https://nft.storage/) service to upload and store images of our NFTs instead of the command line using React.
-
-#### Check out Pan’s original tutorial.

@@ -15,7 +15,7 @@ seo:
     year of progress, milestones, and innovation across the Filecoin ecosystem.
 ---
 
-As 2024 comes to a close, it's time to look back and celebrate a year of progress, milestones, and innovation across the Filecoin ecosystem. This year, developers [built more apps](/blog/one-year-of-programmability-smart-contracts-and-dapp-growth-on-filecoin) on Filecoin than ever before, storage providers[ expanded their services](/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch), and AI teams found new ways to [collaborate](/blog/how-decentralized-ai-and-data-storage-is-building-trust-in-ai) with the Filecoin ecosystem to build decentralized storage and compute into their offerings. Let’s dive in and replay the highlights.
+As 2024 comes to a close, it's time to look back and celebrate a year of progress, milestones, and innovation across the Filecoin ecosystem. This year, developers [built more apps](/blog/one-year-of-programmability-smart-contracts-and-dapp-growth-on-filecoin) on Filecoin than ever before, storage providers [expanded their services](/blog/signal-spotlights-software-storage-solutions-built-on-filecoin-to-watch), and AI teams found new ways to [collaborate](/blog/how-decentralized-ai-and-data-storage-is-building-trust-in-ai) with the Filecoin ecosystem to build decentralized storage and compute into their offerings. Let’s dive in and replay the highlights.
 
 ## A Year of Milestones: In Space and Across L1s
 
@@ -45,6 +45,6 @@ The Filecoin ecosystem offers a thriving ecosystem for projects, teams, and comp
 
 [FIL-B](https://fil.builders), [FilOz](https://www.filoz.org), [Akave](/ecosystem-explorer/akave), [Curio](https://curiostorage.org), [Storacha](/ecosystem-explorer/storacha-network), [Filponto](https://filponto.io), [IPC](https://docs.ipc.space), [ANSA Research](https://ansaresearch.ai), [CryptoEconLab](https://cryptoeconlab.io), [DeStor](/ecosystem-explorer/destor), and [Space Meridian](https://meridian.space) are just some of the new organizations helping to make Filecoin the base layer of the decentralized web.
 
-## Thank You!
+## Thank You
 
 As we get ready to turn the page on another great year in the Filecoin ecosystem, we want to thank the incredible community of builders, storage providers, data clients, and all those who are helping shape the future of the web. And we invite you to [get involved](https://docs.filecoin.io/basics/project-and-community/ways-to-contribute) and help us make the upcoming year our best one yet.

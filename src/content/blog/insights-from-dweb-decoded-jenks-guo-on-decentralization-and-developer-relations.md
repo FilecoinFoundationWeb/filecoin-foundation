@@ -23,13 +23,13 @@ Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights on d
 
 Jenks Guo, a developer advocate at Filecoin Foundation, shared his insights on decentralization and its role in shaping the future of the internet on a recent episode of Dweb Decoded, Filecoin Foundation's podcast dedicated to discussing the latest advancements in decentralized technology, and exciting projects and ideas in the Filecoin ecosystem. Here are three key highlights from the discussion.
 
-**The Impact of Decentralization on Developer Relations**
+### The Impact of Decentralization on Developer Relations
 
 Guo [highlighted](https://youtu.be/C8NFJqlXu3E?t=948) the unique role of developer relations in the decentralized web. Unlike in traditional Web2 environments, developer relations in Web3 plays a critical role in building a community around the technology. Guo emphasized that Web3 requires a multifaceted approach to developer relations, combining technical prowess with community building. This approach is essential for reaching developers who value direct and authentic engagement.
 
 "This makes the developer relations role kind of the first-class citizen in a Web3 company. Developers are very hard to market to and convince. They're smart, they're direct, they're short on time, and they smell a sales pitch a mile away,” Guo said. “To be able to market to them, the only way is to demonstrate that the tool is indeed better.”
 
-**The Rise of Decentralized Technologies**
+### The Rise of Decentralized Technologies
 
 Guo expressed enthusiasm for the potential of decentralized technologies. He underlined how decentralization counters the problems of centralization, such as misuse and abuse of power.
 
@@ -42,7 +42,7 @@ Guo elaborated on the Filecoin ecosystem's “Builders Funnel,” a program desi
 
 “Grants is one of the ways to give out public funds for public goods to be able to accelerate certain things. And then we have a team that works with startups, accelerators, and VCs to be able to provide funding to some more established projects,” Jenks added.
 
-### A Path Forward in Web3
+## A Path Forward in Web3
 
 Guo's insights envision the potential of decentralization and its transformative impact on the internet and society. He emphasizes not just technological advancements but a rethinking of our digital and social structures. As we move forward in the era of Web3, it's clear that embracing decentralization can unlock new possibilities, and build a more equitable and resilient digital world.
 

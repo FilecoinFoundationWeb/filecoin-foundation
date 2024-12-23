@@ -55,7 +55,7 @@ The emergence of decentralized exchanges and [F3](https://medium.com/@filoz/file
 
 And the wealth of data on Filecoin can also give rise to secondary markets on top of storage. The network is primed for marketplaces for storage clients to monetize their data for enterprise, research, and AI-training use cases. Already, [Nuklai](https://www.nukl.ai/), a collaborative data marketplace and infrastructure provider for data ecosystems, has integrated Filecoin via [Lighthouse](https://www.lighthouse.storage/) to make the platform’s metadata publicly accessible.
 
-## **Looking Above and Beyond**
+## Looking Above and Beyond
 
 Storage is the bedrock of data’s lifespan on the web, and atop that bedrock, the world can build so much more.
 

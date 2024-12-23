@@ -25,7 +25,7 @@ Take a look at all the talks from FIL Network Base [here](https://www.youtube.c
 
 ![](/assets/images/filecoin-network-base-1.jpg)
 
-**Day 1 - Gaming on Filecoin**
+## Day 1 - Gaming on Filecoin
 
 On our first day open to the public it was all about gaming on the Filecoin Network! We hosted a Chess meet up and watched some of our Gigabrains battle it out.
 
@@ -37,7 +37,7 @@ Jacob Homanics, a former web2 developer who crossed over to web3, talked about t
 
 The evening closed out with a talk from Leon Do, a software engineer for Open Source, on discovering the possibilities of the web3 gaming tech stack. He demoed his game built on IPFS, [IPFS FPS](https://ipfs-fps-website.on.fleek.co/).
 
-**Day 2 - CryptoEconDay**
+## Day 2 - CryptoEconDay
 
 We had a packed house on Day Two for CryptoEconLab’s CryptoEconDay, gathering of web3 researchers and practitioners coming together to share findings, lessons learned and working together to answer some of the most pressing questions surrounding cryptoeconomics.
 
@@ -51,7 +51,7 @@ The day had a wide range of topics including:
 
 ![](/assets/images/filecoin-network-base-3.jpg)
 
-**Day 3 - Filecoin Virtual Machine**
+## Day 3 - Filecoin Virtual Machine
 
 Our last full day in the Riley building was dedicated to all things FVM! We provided our visitors with some strong use cases for how others are utilizing the network and proved just how far we’ve come as a community! Discussions featured a mix of developers, storage providers and even some of our Filecoin Foundation for the Decentralized Web (FFDW) project partners on the amazing work they are doing to champion the Dweb.
 
