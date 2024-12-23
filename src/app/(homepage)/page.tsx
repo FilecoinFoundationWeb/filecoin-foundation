@@ -28,6 +28,8 @@ import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosyste
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const ecosystemProjects = getEcosystemProjectsData()
 
@@ -45,21 +47,27 @@ const { header: digestPageHeader } = getFrontmatter({
   zodParser: BaseFrontmatterSchema.parse,
 })
 
-const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
-  extractSlugFromFilename,
-)
-
-const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
-  featuredEcosystemProjectsSlugs?.includes(item.slug),
-)
-
 export const metadata = createMetadata({
   seo,
   path: PATHS.HOME.path,
   overrideDefaultTitle: true,
 })
 
+const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
+  extractSlugFromFilename,
+)
+const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
+  featuredEcosystemProjectsSlugs?.includes(item.slug),
+)
+
+const blogPosts = getBlogPostsData()
+const MAX_POSTS = 4
+const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
+const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
+
 export default function Home() {
+  const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
+
   return (
     <NoBreadCrumbsLayout>
       <PageLayout>
@@ -114,6 +122,7 @@ export default function Home() {
           <FeaturedEcosystemProjects
             ecosystemProjects={featuredEcosystemProjects}
           />
+
           <Button
             className="sm:self-center"
             href={PATHS.ECOSYSTEM_EXPLORER.path}
@@ -138,7 +147,11 @@ export default function Home() {
           title="News & Blog"
           description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
         >
-          <FeaturedBlogPosts />
+          {hasFeaturedBlogPosts ? (
+            <FeaturedBlogPosts featuredBlogPosts={featuredBlogPosts} />
+          ) : (
+            <p>No featured posts available.</p>
+          )}
           <Button className="sm:self-center" href={PATHS.BLOG.path}>
             View All
           </Button>
