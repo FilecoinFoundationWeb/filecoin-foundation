@@ -64,7 +64,6 @@ export function getAllMarkdownData<T>({
 }: GetAllData<T>) {
   try {
     const directory = path.join(process.cwd(), directoryPath)
-
     const filenames = getFilenamesFromDirectory(directory)
 
     return filenames.map((filename) => {
