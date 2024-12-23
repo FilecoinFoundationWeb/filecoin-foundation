@@ -45,11 +45,9 @@ Participants will also hear from **Max Galka, CEO at Elementus** and **Pan Chasi
 
 Decentralized file storage provides a more secure and robust way to store and access files on the internet, and serves as a key infrastructure for the new decentralized web. Filecoin’s decentralized storage system is designed to store humanity’s most important information.
 
----
-
 ## More about the Course
 
-Learn more about the topics and projects, and enroll for the course (space is limited) by July 8: corise.com/course/web3-filecoin (link previously available but now unavailable)
+Learn more about the topics and projects, and enroll for the course (space is limited) by July 8: corise.com/course/web3-filecoin (link previously available but now unavailable).
 
 ![](/assets/images/image-c-05.png)
 

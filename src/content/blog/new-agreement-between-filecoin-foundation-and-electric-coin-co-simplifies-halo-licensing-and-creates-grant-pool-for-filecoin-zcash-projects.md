@@ -36,12 +36,15 @@ The grant program includes a base pool of $5M, provided by Filecoin Foundation, 
 Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. A few of the specific opportunities that have been discussed to date are below. Teams are welcome to build proposals based on these ideas or on other collaborations that will add utility to the FIL and ZEC chains. :
 
 - **Filecoin storage payments in ZEC**
+
   It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.
 
 - **Media and file support in Zcash encrypted memos and NFTs**
+
   This support would add the ability to encrypt files in Filecoin storage and add support to mobile clients so that they could “attach” media or files to a Zcash encrypted memo.
 
 - **Zero-knowledge virtual machine**
+
   The [Filecoin Virtual Machine](https://fvm.filecoin.io/) project will be released in milestones across 2022 has been announced, and ECC is interested in a general programming capability, as well. There are a number of projects exploring zero-knowledge technology to improve the privacy and security of virtual machine execution.
 
-_For more information about the program, email [ff-ecc-grants@fil.org](mailto:ff-ecc-grants@fil.org)._
+For more information about the program, email [ff-ecc-grants@fil.org](mailto:ff-ecc-grants@fil.org).
