@@ -98,7 +98,7 @@ export const PATHS = {
     {
       hasSubpaths: true,
       includesEntries: true,
-      customEntriesContentPath: '/ecosystem-explorer/projects/',
+      customEntriesContentPath: '/ecosystem-explorer',
     },
   ),
   ECOSYSTEM_EXPLORER_PROJECT_FORM: createPathConfig(
@@ -135,5 +135,3 @@ export const PATHS = {
     hasSubpaths: true,
   }),
 } as const
-
-export const ECOSYSTEM_PROJECTS_DIRECTORY_PATH = `${CONTENT_ROOT}${PATHS.ECOSYSTEM_EXPLORER.path}/projects`
