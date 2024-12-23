@@ -64,8 +64,7 @@ schedule:
         - title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
           location: Grandhotel Belvedere | Promenade 89, 7270 Davos, Switzerland
           tag: Registration Needed
-          start: 2025-01-20T00:00:00.000Z
-          end: 2025-01-22T00:00:00.000Z
+          start: 2025-01-20T12:00:00.000Z
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
       date: 2025-01-20T10:00:00.000Z
     - date: 2025-01-21T09:00:00.000Z
@@ -154,5 +153,4 @@ seo:
   description: Join the Filecoin community in Davos during the World Economic
     Forum (Jan 20-23, 2025). Explore speaking engagements and events shaping the
     future of the decentralized web.
-  title: FF at Davos 2025
 ---
