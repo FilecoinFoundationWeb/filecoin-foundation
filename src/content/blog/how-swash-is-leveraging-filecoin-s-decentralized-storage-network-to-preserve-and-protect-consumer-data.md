@@ -24,11 +24,11 @@ One of the benefits of decentralized technology is the opportunity to create com
 
 Today, we’re diving deep on [Swash](https://swashapp.io/). It’s reimaging the future of data ownership, giving people greater power and control over how their data is collected, accessed, and used and compensating people for data that they generate on the web. Swash is integrating Filecoin’s decentralized storage network to further preserve and protect that data– web browser data that creates essential value in the digital economy. Swash will leverage [Estuary](https://estuary.tech/), a solution that allows developers to easily upload data to Filecoin, to integrate decentralized storage.
 
-**Improving data agency and portability with ease**
+## Improving Data Agency and Portability with Ease
 
 As the [Swash app moves toward a quarter of a million members](https://swashapp.io/apps/extension), the project continues to explore new avenues that will empower the entire community. Integrating storage that is decentralized, robust, and efficient, is a key piece of this puzzle. Here are a few reasons why Swash chose to shift its data onto the decentralized web:
 
-**Decentralization:** As a peer-to-peer network, where data can be distributed across multiple storage providers around the globe, the Filecoin network \_protects_against single-point failures, meaning that websites will stay up even if some nodes fail. And most importantly, the availability of information is not dependent on any one server or company, unlike the current data economy.
+**Decentralization:** As a peer-to-peer network, where data can be distributed across multiple storage providers around the globe, the Filecoin network protects against single-point failures, meaning that websites will stay up even if some nodes fail. And most importantly, the availability of information is not dependent on any one server or company, unlike the current data economy.
 
 **Robustness:** The Filecoin blockchain _verifies_ data storage, providing cryptographic proofs that data remains available and unchanged over time, meaning there is redundancy built into the system.
 
@@ -36,6 +36,6 @@ As the [Swash app moves toward a quarter of a million members](https://swashapp.
 
 As the adoption of Web3 continues to accelerate, Swash aims to rebalance the digital economy and set new standards for the data economy. Its adoption of decentralized storage will drive greater power and control for users, help guarantee high-quality and sustainable data for businesses, and encourage developers to be a part of a new generation of data solutions.
 
-_“The Filecoin integration marks an important milestone in the evolution of Data Unions in Web3. The goal is to unlock the new ways for stakeholders to interact with consented data while addressing concerns around centralised data storage and governance. We are excited to be on this journey with the Filecoin community.”_ — Reza Naeeni, Swash
+> The Filecoin integration marks an important milestone in the evolution of Data Unions in Web3. The goal is to unlock the new ways for stakeholders to interact with consented data while addressing concerns around centralised data storage and governance. We are excited to be on this journey with the Filecoin community. — Reza Naeeni, Swash
 
 If you’re interested in learning more about the Filecoin ecosystem, visit [Filecoin.io](https://filecoin.io/) or [Fil.org](/). You can also join the conversation on [Slack](http://filecoinproject.slack.com/), [Github](https://github.com/filecoin-project), [Reddit](https://www.reddit.com/r/filecoin/), and [Twitter](https://twitter.com/Filecoin).

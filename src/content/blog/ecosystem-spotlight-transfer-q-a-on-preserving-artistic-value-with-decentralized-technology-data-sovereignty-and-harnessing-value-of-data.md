@@ -24,9 +24,8 @@ Experimental media art has long been overlooked by the traditional art world, an
 
 [TRANSFER](http://transfer.art) is an experimental space exhibiting virtual worlds and decentralized networks in contemporary art since 2013. Post-pandemic TRANSFER has been virtual-first, exhibiting internationally at institutions, art fairs, and pop-ups. In 2023, TRANSFER launched an initiative to preserve all of the works they’ve supported over the years with the [TRANSFER Data Trust](https://transfergallery.com/data-trust/), an artist-owned cooperative trust model that artists can use to maintain and grow the value of their artwork.
 
-![](https://lh7-us.googleusercontent.com/q-4Qu09242_zGqUTAU4OcblGN5ZPs7cy-LRgQzE9fLoczigTxKKtoDKqrDbRQKBZW3WRs23oF0etAJ6ter-ATP7Zv6yTWWAKiBdhORgvYaAPbvGpN9qz_Ee-cftIfrab1iFw6UQ3-rdoraO5ptI3JqU)
-
-_Installation View TRANSFER Download at The Thoma Foundation in Santa Fe, 2018_
+![Installation View TRANSFER Download at The Thoma Foundation in Santa Fe, 2018](https://lh7-us.googleusercontent.com/q-4Qu09242_zGqUTAU4OcblGN5ZPs7cy-LRgQzE9fLoczigTxKKtoDKqrDbRQKBZW3WRs23oF0etAJ6ter-ATP7Zv6yTWWAKiBdhORgvYaAPbvGpN9qz_Ee-cftIfrab1iFw6UQ3-rdoraO5ptI3JqU)
+_Installation view of TRANSFER Download exhibition at The Thoma Foundation in Santa Fe, 2018._
 
 TRANSFER received a Dev Grant from Filecoin Foundation to help bring the TRANSFER Data Trust to life based on the emergent concept of Data DAOs, providing the necessary foundation on the Filecoin Virtual Machine (FVM).
 
@@ -49,14 +48,13 @@ The concepts in this prototype have allowed us to bring these ideas into the art
 Finally, we are developing a conservation protocol layer on top of the data to allow for efficiency in keeping the artworks maintained as they evolve over time. Doing this specialized work of conservation and care – which is currently centralized in institutions – in a decentralized and distributed way will create great efficiencies can ensure the work stands the test of time.
 
 ![](https://lh7-us.googleusercontent.com/Vm9X8zYn6LuIjr3qQHu1AOZGT5f5Ww2V3C8aDllYVA8uY8RfCQ0AbFgGpbWwJdcQhpZVzjyGuXJXcpf04lw950KxyMXDccVRWUOY3wobbr92No_jzDpl6GPuNbGu-Su8KwcDiwLjEucmOzePUy6AIfo)
-
 _Tinsel Poycarbonate (2019) by Huntrezz Janos, Augmented Reality Face Filter Installation represented by the TRANSFER Data Trust featured at [PHOTOFAIRS New York](https://www.photofairs.org/newyork/) 2023_
 
 **Talk about the automated governance system you are building.**
 
 **Nicole:** Post-pandemic, the landscape of cultural institutions is in a crisis of funding and operations. The slow rate of change and antiquated organizational models make it difficult for institutions to adapt quickly, which is essential in our contemporary world.
 
-The TRANSFER Data Trust organizational model is based on a ‘[Perpetual Purpose Trust](https://www.purpose-us.com/writing/whats-a-perpetual-purpose-trust)’ coupled with the legal structure being developed in part from research coming out of MED Lab Boulder ‘[Exit to Community](https://e2c.how/)’ and the ‘[Colorado Trust](https://www.coloradotrust.org/)’ model.
+The TRANSFER Data Trust organizational model is based on a [Perpetual Purpose Trust](https://www.purpose-us.com/writing/whats-a-perpetual-purpose-trust) coupled with the legal structure being developed in part from research coming out of MED Lab Boulder [Exit to Community](https://e2c.how/) and the [Colorado Trust](https://www.coloradotrust.org/) model.
 
 We are taking inspiration from this work and seeking to establish a cooperative member-owned data trust for artists which runs on automated bylaws, essentially replacing a board and membership co-op structure with smart contracts. The non-profit organizational model will be open sourced so any artist collective or organization can easily form an entity and start to build equity in their data.
 
@@ -66,8 +64,7 @@ We recognize that there is an immense amount of human labor that will be involve
 
 **Nichole:** TRANSFER and our artists are in a very unique position. First, we have a decade of learnings from our cooperative experimental practice to build tooling for collaboration and trust around real-world use cases. Second, the contemporary art market is one of the only industries that has a well tested means for assigning financial value to what is essentially data via appraisal of time-based media artworks. There is a decades-long practice of independent 3rd party appraisal for insurance and valuation of artworks that are media-based, video, installation, software, etc. By combining the emergent ideas of data DAOs being pioneered by Filecoin with these industry practices, we are in a unique position to effectively hold data that has certified financial data.
 
-![](https://lh7-us.googleusercontent.com/fkNd9l4Gm9vXjiG_HEEi8XyUV_9SUuZQ8cB3icHP7UiVhOZr_gs5Zfk8VmABLswlmzEhkeCPeUNYS_7o7pHnHU20_7p8-IQYcPQDNFR3LmjmZ15PuVIVR_Pm4Gx5urPxe7bRwSa8Erz7Q2i9A0w7r1Q)
-
+![Still from Epic Biblical (2020) by Lorna Mills, Animated GIF Installation represented by the TRANSFER Data Trust](https://lh7-us.googleusercontent.com/fkNd9l4Gm9vXjiG_HEEi8XyUV_9SUuZQ8cB3icHP7UiVhOZr_gs5Zfk8VmABLswlmzEhkeCPeUNYS_7o7pHnHU20_7p8-IQYcPQDNFR3LmjmZ15PuVIVR_Pm4Gx5urPxe7bRwSa8Erz7Q2i9A0w7r1Q)
 _Still from Epic Biblical (2020) by Lorna Mills, Animated GIF Installation represented by the TRANSFER Data Trust_
 
 In our earliest calculation with only 10 of our 60+ international artists collectively holding inventory together the TRANSFER Data Trust will represent over $5.7M in data-based assets (art works) cooperatively held in a non-profit entity. We believe this is a very unique position to build out a provable use-case for harnessing the value of data through the Filecoin ecosystem. Further, this is in line with the traditional art market, not the rapidly fluctuating speculative NFT market that has emerged since 2020, so it has stability and longevity that is proven in art historical time frames, beyond short cycles of speculation. If the model propagates, this idea can change how artists think about growing the value of their artworks.

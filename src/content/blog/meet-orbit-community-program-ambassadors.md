@@ -23,7 +23,7 @@ Filecoin Orbit Ambassadors work to organize events, create content around their 
 
 Here are several stories from Filecoin Orbit Ambassadors including what they do in the community, how they got started in Web3, and where you can get started when you’re ready to join the Filecoin Community.
 
-**Leading the Next Generation of Learning, Brian Ahimbisibwe**
+## Leading the Next Generation of Learning, Brian Ahimbisibwe
 
 ![](/assets/images/643e68bf3820f68204d1de11_brian_720.jpeg)
 
@@ -39,7 +39,7 @@ Community connection is key to Web3, and that extends to the way we talk about i
 
 Head over to the [Orbit Uganda Meetup Group](https://mobile.twitter.com/UgandaOrbit) for details on upcoming events, and follow [Orbit Uganda Twitter](https://mobile.twitter.com/UgandaOrbit) for the latest developments in the Ugandan Filecoin Community. Follow [Brian](https://twitter.com/ahimbis07260494) on Twitter to keep up with his work in the Filecoin Community.
 
-**Creating Stronger Bonds through Filecoin, Chukwuemeka Enoch Mbaebie — ETH Nigeria**
+## Creating Stronger Bonds through Filecoin, Chukwuemeka Enoch Mbaebie — ETH Nigeria
 
 ![](/assets/images/643e68bf3820f61378d1de13_code-pix-1062x598.jpeg)
 
@@ -55,7 +55,7 @@ Less than two years after becoming involved in the blockchain space, Enoch is he
 
 Explore the [Orbit Nigeria Meetup Group](https://www.meetup.com/orbit-community-program-lagos-nigeria/) page and ETH Nigeria [Twitter](https://twitter.com/EthereumNigeria) for details on upcoming events, and follow Enoch on [Medium](https://medium.com/@Divinevessel) to keep up with his work in the Filecoin Community.
 
-**Building The Future of Decentralized Markets, Timo Lee — Secured Finance**
+## Building The Future of Decentralized Markets, Timo Lee — Secured Finance
 
 ![](/assets/images/643e68bf3820f64ae7d1de26_timo_lee_360.jpeg)
 
@@ -69,7 +69,7 @@ Timo sees the Filecoin Orbit Community Program as a crucial opportunity to provi
 
 Secured Finance is aiming to build robust financial and crypto finance markets and key business collateral management building a yield curve for cryptocurrencies. Learn more about [Secured Finance](https://secured-finance.com/) here, and follow Timo on [Twitter](https://twitter.com/timowlee) and [LinkedIn](https://www.linkedin.com/in/timo-lee-a64b69136/) for news about upcoming Orbit events to get involved in.
 
-**Advocating Filecoin Developer Success, Allan Mang’eni — Wengi Web**
+## Advocating Filecoin Developer Success, Allan Mang’eni — Wengi Web
 
 ![](/assets/images/643e68bf3820f6eab8d1de10_allan-mang-eni.jpeg)
 
@@ -87,7 +87,7 @@ Wengi Web is a blockchain research and education company fueling the next genera
 
 Get involved by checking out the [Orbit Kenya Meetup Group](https://www.meetup.com/orbit-community-program-nairobi-kenya/) page and [Twitter](https://twitter.com/wengi_web)for details on the next gathering and registration information.
 
-**Activating the Filecoin Community, Martin Silvester Kyanja**
+## Activating the Filecoin Community, Martin Silvester Kyanja
 
 ![](/assets/images/643e68bf3820f655edd1de12_martin_720.jpeg)
 
@@ -101,7 +101,7 @@ As the Filecoin network continues to expand, he believes that it can benefit eve
 
 Head over to the [Orbit Tanzania Meetup Group](https://www.meetup.com/orbit-community-program-dar-es-salaam-tanzania/) for details on upcoming events, and follow [Orbit Tanzania Twitter](https://mobile.twitter.com/orbittanzania1) for the latest developments in the local community. Follow [Martin](https://mobile.twitter.com/kyanja_m) on Twitter to keep up with his work in the Filecoin Community.
 
-**Get Started With Filecoin**
+## Get Started With Filecoin
 
 Joining the Filecoin community is easy and has a place for everyone of all interests, backgrounds, and skill sets. Follow [Filecoin](https://twitter.com/Filecoin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) and [Filecoin Foundation](https://twitter.com/FilFoundation?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)on Twitter to stay up to date on the latest information, then join the conversation on [Slack](https://filecoinproject.slack.com/).
 

@@ -14,7 +14,7 @@ seo:
     Day. Explore decentralized AI and more. "
 ---
 
-# Early July Highlights
+## Early July Highlights
 
 🇧🇪 The FIL Brussels schedule is live! Explore decentralized AI, DePIN, and compute with more than a dozen innovators speaking across three days, including Akash Network CEO Greg Osuri, Theoriq Head of Marketing Anjali George, Bagel Network CEO Bidhan Roy, Futurist Michael Clark, Lighthouse Founder Nandit Mehra, Filecoin Foundation Founding Officer Clara Tsao, FF Head of Community Porter Stowell, and more! [See the full schedule](https://www.fil-brussels.io/).
 

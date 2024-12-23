@@ -21,7 +21,7 @@ The [Filecoin Plus](/filecoin-plus) (Fil+) program is a layer of social trust on
 
 This winter, Filecoin Plus held its fourth round of Notary elections. The Filecoin Plus team solicited applications from hundreds of community members and organizations, and a final list of [Notaries](https://github.com/filecoin-project/notary-governance/tree/main/notaries) was selected are are now active.
 
-**What is a Filecoin Plus Notary?**
+## Filecoin Plus Notary Explained
 
 Filecoin Notaries are selected to serve as fiduciaries for the Filecoin Network and are responsible for allocating DataCap to clients with valuable storage use cases. While the Filecoin Plus program is open to anyone in the broader community, notaries play an important role in shaping the direction of the program through governance decisions. The base responsibilities of notaries include:
 
@@ -31,7 +31,7 @@ Filecoin Notaries are selected to serve as fiduciaries for the Filecoin Network 
 
 The Filecoin Plus community adds yet another level of trust to the network so everyone can be sure their data is living on a trustworthy source for good.
 
-**Notary Applications and Election:**
+## Notary Applications and Election
 
 The most recent Filecoin Plus application program saw nearly double the amount of applicants from the last round and more than four times the number from round two. More than 90 new organizations and individuals joined the Filecoin Plus community recently, putting the number of notaries over 100 globally, representing North America, Europe, Asia, Africa, and Oceania.
 
@@ -44,7 +44,7 @@ The Governance team is looking ahead and projecting another election cycle in Q3
 - **Allocation Strategy:** Detailed allocation strategy for Datacap requests and anticipated distribution rate for Datacap
 - **Engagement:** Commitment to service agreements for both the amount of time and participation an applicant will make
 
-**Recent Growth of Filecoin Plus**
+## Recent Growth of Filecoin Plus
 
 More than 300 clients have onboarded large datasets through the Filecoin Plus program (e.g., datasets that exceed 100TiB in storage size). Clients range from the USC Shoah Foundation, to Web3 platforms such as OpenSea. Other notable efforts to onboard valuable data into the Filecoin network include:
 
@@ -53,7 +53,7 @@ More than 300 clients have onboarded large datasets through the Filecoin Plus pr
 - Starling Labs research center storing sensitive [digital records of human history](https://medium.com/@FFDWeb/announcing-the-starling-lab-4f1ce0204f07).
 - Eweison (a fast growing host of photographs, illustrations, and vector files in China) using Filecoin for [data preservation](https://filecoinfoundation.medium.com/storage-company-ewesion-leverages-filecoin-network-for-data-preservation-e36cecc84e0e).
 
-**Get Involved**
+## Get Involved
 
 There are many ways to get involved with the Filecoin Plus program. [Join the Filecoin Plus community](https://github.com/filecoin-project/filecoin-plus-client-onboarding) by participating in issues and discussions on GitHub. There, you’ll find both client onboarding repos and Filecoin Plus project repos. And find the selected notaries and process outline for the [Filecoin Plus program in our GitHub here](https://github.com/filecoin-project/notary-governance/tree/main/notaries).
 

@@ -16,7 +16,7 @@ seo:
     about their approach.
 ---
 
-**Key highlights:**
+## Key Highlights
 
 - [Beijing Yiweishi Network Technology Company, Ltd.](http://www.ewesion.com/) (commonly referred to as Ewesion) is one of China’s fastest-growing online hosts of photographs, illustrations, and vector files.
 - Ewesion’s library currently uses around 1EB of storage in the public cloud. That number is set to increase even further as the company expands into audio and video capabilities.
@@ -24,7 +24,7 @@ seo:
 - The benefits Ewesion is seeing by adopting the Filecoin network include lower-cost for storage while maintaining ease of image retrieval for customers; security and peace of mind for its business partners (photographers, illustrators, and designers) in terms of copyright and data ownership challenges; and longer-term storage solutions for the current client base.
 - Ewesion has found the Filecoin network to be “a very multifunctional solution” for its business and plans to utilize the network more as it reaches new markets such as audio and video.
 
-**Fast Growth & Expanding Storage Needs**
+## Fast Growth & Expanding Storage Needs
 
 Founded in 2019 by Benny Li, Ewesion is a platform for creative artists that serves everyone from large and medium-sized enterprises to media and individual users.
 
@@ -34,7 +34,7 @@ Ewesion is the largest picture provider for the Tencent public cloud today. It p
 
 While Ewesion is just a few years old, it is growing rapidly. In fact, the company has added more than 20 people to its staff in the past 6 months and plans to expand its storage capabilities to audio and video by the end of 2022.
 
-**Opening New Doors**
+## Opening New Doors
 
 ByteBase, a storage provider in the Filecoin network, helped Ewesion grasp the application and potential of blockchain, helping the company realize how decentralized technology could benefit its unique business model.
 
@@ -42,11 +42,11 @@ Ewesion’s library of images currently uses around 1EB of storage, and the need
 
 The company needed a solution that would be both cost-effective, but also secure and long-term in order to propel its business forward.
 
-> **_“Filecoin network is a very multifunctional solution for our business. At Ewesion, our main goal is to ensure data is safe and easily accessible for our customers’ needs. With ByteBase and through the Filecoin ecosystem, we are not only doing that — we are future-proofing our operations, ensuring we continue to hold the highest storage standards as we grow.’ — Benny Li, CEO, Ewesion_**
+> Filecoin network is a very multifunctional solution for our business. At Ewesion, our main goal is to ensure data is safe and easily accessible for our customers’ needs. With ByteBase and through the Filecoin ecosystem, we are not only doing that — we are future-proofing our operations, ensuring we continue to hold the highest storage standards as we grow. — Benny Li, CEO, Ewesion
 
 With decentralized storage, the Ewesion team can protect their customers with the right tools. In addition, the blockchain component acts as copyright protection since it provides what in China is called “electronic evidence,” which in turn gives end-users peace of mind knowing their data is protected.
 
-**A Partner for Growth**
+## A Partner for Growth
 
 Ewesion was able to leverage ByteBase API to upload data into the Filecoin network and has already started to see the benefits.
 
@@ -58,9 +58,9 @@ And, the Filecoin network provides Ewesion with enhanced data storage capabiliti
 
 In partnership with ByteBase, Ewesion found that being able to handpick its data center also helped reduce costs and maintain an agile business model.
 
-> **_“At the foundational level, Ewesion needed a solution that would decrease costs and help keep their data safe. The Filecoin network does this very well.” — Eric Liu, Director of Ecosystem, IPFS at ByteBase_**
+> At the foundational level, Ewesion needed a solution that would decrease costs and help keep their data safe. The Filecoin network does this very well. — Eric Liu, Director of Ecosystem, IPFS at ByteBase
 
-**What the future holds for image, video, and audio storage**
+## What the Future Holds for Image, Video, and Audio Storage
 
 With ByteBase, Ewesion enjoys collaborating with a provider that is local to its own operations. This partnership, which started in 21st May 2021, has shown fruitful already. In the past few months, the company has moved 27.5TiB data to the Filecoin network and has the expectations of 180TiB by the end of the year. It also plans to expand its content offering to audio and visual files in the coming year to be the leader of creative repositories in Beijing, China.
 

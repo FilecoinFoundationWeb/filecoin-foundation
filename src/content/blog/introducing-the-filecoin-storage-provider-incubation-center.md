@@ -21,7 +21,7 @@ The original idea behind Filecoin is that anyone can contribute to creating this
 
 Today, we’re thrilled to announce the launch of the Filecoin **Storage Provider (Miner)** Incubation Center. In collaboration with the Venus Team, the Center will provide financial support and educational resources to smaller miners around the world working with the Venus implementation of Filecoin.
 
-**About the Storage Provider Incubation Center**
+## About the Storage Provider Incubation Center
 
 The Storage Provider Incubation Center brings together the resources of Filecoin Foundation and the Venus Team to provide funding and technical support to small and medium-sized miners.
 
@@ -34,13 +34,13 @@ Maintained by the IPFS Force community, Venus is one of four implementations in 
 
 Thanks to Venus’s Distributed Mining Pool Architecture (link previously available but now unavailable), the Incubation Center will run shared modules. Miners can start mining with just [venus-sealer](https://github.com/filecoin-project/venus-sealer) and [venus-wallet](https://github.com/filecoin-project/venus-wallet) along with the shared modules maintained by the Incubation Center. Then, they can run with one or more nodes at the same time.
 
-**About the Incubation Center Program**
+## About the Incubation Center Program
 
 Miners must seal at least 64 sectors per day (2TiB) to join the Incubation Center. Miners can continue to participate in the program until their storage power reaches 1PiB or when they have participated in the program for more than 90 days, to allow others who meet the requirements to participate. Access to shared modules is free for participating miners who join this program.
 
 The first term of the Miner Incubation Center will run from July 26, 2021 through October 24, 2021.
 
-**About the Masters Fellowship Program**
+## About the Masters Fellowship Program
 
 To join the Venus Master Fellowship Program, miners must continuously contribute to Filecoin network development with full experience of Filecoin’s coding and mining. Selected Masters will provide consulting services and technical support to the miners in the Incubation Center to help ensure that miners can continue to expand the distributed mining pool service in the Filecoin network.
 
@@ -55,13 +55,13 @@ Specifically, Venus Masters must be willing to:
 
 In exchange for their work, Masters will receive access to a prize pool of more than 1,000 FIL tokens, which will be distributed based on the length and quality of service. At the end of each phase, Masters can choose to continue their work by applying to be a part of the next phase.
 
-**Center Goals**
+## Center Goals
 
 We hope this program can empower miners around the world to participate in the Filecoin network. In the first year of the program, we hope to onboard more than 165 new miners. Note that the [Filecoin Community Code of Conduct](https://github.com/filecoin-project/community/blob/master/CODE_OF_CONDUCT.md#:~:text=We%20believe%20that%20our%20mission,practices%20will%20not%20be%20tolerated.)applies to this program.
 
 Learn more about the program tracks by joining Filecoin Foundation and the Venus team at the [Filecoin Meetup](https://www.meetup.com/Filecoin-San-Francisco/events/dcqjfsycckbrb/) on July 13, at 4 pm PDT.
 
-**How to Apply**
+## How to Apply
 
 To join the **Incubation Center Program**, fill out this [Application Form](http://venusteam.mikecrm.com/1lmpQtj) with as much information as possible. Applications for this first wave of candidates open on July 12 and close July 19.
 

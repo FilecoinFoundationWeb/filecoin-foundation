@@ -19,24 +19,24 @@ seo:
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - HackFS, one of the ecosystem's largest annual hackathons, is offering $40,000 in prizes across Filecoin tracks. Running [May 17 - June 7](https://ethglobal.com/events/hackfs2024#schedule), FF Developer Advocates Robert Dowling and Jenks Guo are supporting as project judges and mentors.
 - The [Web3 AI Hackathon](https://www.encode.club/web3-ai-hackathon) powered by Encode Club kicked off on May 30 with three Filecoin tracks: Privacy in AI Data, Trusted AI Development, and Filecoin and AI.
 
-**Storage**
+### Storage
 
 - At Consensus, Head of Community Porter Stowell hosted a discussion and demo on AI agents specifically designed for the Filecoin ecosystem at [Theoriq’s AI Odyssey: Unlocking Web3’s Next Frontier](https://consensus2024.coindesk.com/agenda/event/-theoriqs-ai-odyssey-unlocking-web3s-next-frontier-344) and gave a lightning talk about Data as an Asset Class. Follow more of the latest discussions across the [storage provider community on Slack](https://filecoinproject.slack.com/archives/C02GQUMFQVA) and tune in to the monthly Network Growth 2.0 call for some of the developments happening across the ecosystem.
 - The Foundation hosted the Good Morning Filecoin Ecosystem networking breakfast at Consensus to unite experienced storage providers with newcomers in the Filecoin ecosystem, where attendees discussed advancements in the network and built connections with the community.
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - The FIP 0092 one-pager about a caller-specified proving deadline for NI-PoRep is [available on X](https://x.com/fil_gov/status/1795476606770643042). The FIP proposes allowing SPs to specify the window PoST proving deadline for sectors onboarded with NI-PoRep.
 - The monthly Community Governance call has been rescheduled to June 3. To stay up to date on meetings, join the [\#fil-gov](https://filecoinproject.slack.com/archives/C0535S9TUUF) Slack channel and [add the meeting calendar](https://calendar.google.com/calendar/u/0/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98@group.calendar.google.com&ctz=America/Toronto).
 
-**Fil Plus**
+### Fil Plus
 
 - Learn more about the Filecoin Plus (Fil+) program and its role in the Filecoin ecosystem on the [Filecoin Incentive Design Labs (FIDL) blog](https://blog.allocator.tech/), where you can find program news and information about topics such as [Who are Allocators?](https://blog.allocator.tech/2024/05/who-are-allocators.html) and the [basics of becoming one](https://blog.allocator.tech/2024/04/how-to-become-allocator.html).
 

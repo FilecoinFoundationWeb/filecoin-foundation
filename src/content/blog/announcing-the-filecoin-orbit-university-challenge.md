@@ -39,11 +39,11 @@ The Filecoin network offers an alternative to centralized models by enabling dec
 
 ### How to Participate
 
-#### 1. Develop Your Idea:
+#### 1. Develop Your Idea
 
 Create a concept for a decentralized AI application that leverages Filecoin’s storage network. Think creatively: The application could target healthcare, supply chain, media, finance, or research collaboration.
 
-#### 2. Submit Your Proposal:
+#### 2. Submit Your Proposal
 
 Provide a 500-700 word summary of your concept, outlining:
 
@@ -88,7 +88,7 @@ Looking for more inspiration? Check out [why leading AI projects choose Filecoin
 
 Let the brainstorming begin! Submit your ideas and join us in building the future of AI on Filecoin! 🧠 #DecentralizedAIChallenge
 
-***(*Subject to rules below.)\***
+_\*Subject to rules below._
 
 ### Rules
 

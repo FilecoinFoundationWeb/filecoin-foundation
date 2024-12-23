@@ -23,7 +23,7 @@ Filecoin Foundation is one of many teams in the Filecoin network committed to th
 
 Filecoin Foundation is one of many teams in the Filecoin network committed to the growth and success of the protocol. In this post, we highlight Filecoin's growth metrics and outline what some Ecosystem leaders suggest are the keys to further expansion in 2024, focusing on 1) growing the client pipeline, 2) increasing on-chain activity, and 3) demonstrating value over centralized storage options. Then we propose seven key initiatives to drive widespread Filecoin adoption, before featuring seven ways for the community to get involved with the ecosystem.
 
-## The Data Economy 
+## The Data Economy
 
 We are living in an era defined by data. Ninety percent of the world's data was produced in just the last two years. The rise of artificial intelligence and machine learning technologies, which require vast amounts of data for training and operation, is a major contributor to the rapid increase in data generation. By 2025, it's predicted that 463 exabytes of data will be created each day.
 
@@ -33,7 +33,7 @@ Looking ahead, as more data is transacted, securitized, and monetized, data will
 
 No tool is better positioned to support the data economy than Filecoin: the key to data provenance, authenticity, and verifiability in the high-frequency information age.
 
-## Network Growth Metrics 
+## Network Growth Metrics
 
 Three years after the Filecoin mainnet launch, we’re at a pivotal moment in the growth of the ecosystem. Adoption is up. Data on the network is up. And network utilization is up – fueled by a burgeoning interest in DePIN, compute, and an explosion of data in the data economy.
 
@@ -73,7 +73,7 @@ To catalyze widespread adoption of Filecoin, the Foundation is proposing these s
 
 The amalgamation of these efforts should have a major, positive network effect. By pursuing these complementary avenues, stakeholders across the Filecoin ecosystem can help propel the network toward becoming the preeminent, go-to platform for decentralized storage and data services across the digital world.
 
-## Seven Ways to Get Involved! 
+## Seven Ways to Get Involved
 
 There are more ways to help expand the Filecoin ecosystem than to build. You can get involved by connecting with the Filecoin community and with the team at Filecoin Foundation:
 
