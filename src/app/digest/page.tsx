@@ -84,7 +84,7 @@ export default function Digest() {
                   icon: BookOpen,
                 }}
                 image={{
-                  ...(image || graphicsData.imageFallback.data),
+                  ...image,
                   alt: image?.alt || '',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',

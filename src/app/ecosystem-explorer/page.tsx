@@ -189,7 +189,7 @@ export default function EcosystemExplorer({ searchParams }: Props) {
                             icon: BookOpen,
                           }}
                           image={{
-                            ...(image || graphicsData.imageFallback.data),
+                            ...image,
                             alt: '',
                             objectFit: 'contain',
                             padding: Boolean(image),

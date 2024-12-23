@@ -1,8 +1,6 @@
-import Image, { type ImageProps } from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 
 import { clsx } from 'clsx'
-
-import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -17,18 +15,15 @@ import {
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
+import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
 
 type TitleProps = {
   children: string
 }
 
-type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-}
-
 type PageHeaderProps = {
   title: TitleProps['children']
-  image: PageHeaderImageProps
+  image: SmartImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -77,7 +72,7 @@ PageHeader.Image = function PageHeaderImage({
   const isStaticImage = 'data' in image
 
   const commonProps = {
-    alt: image.alt,
+    alt: image.alt || '',
     priority: true,
     quality: 100,
     sizes: buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
@@ -93,7 +88,7 @@ PageHeader.Image = function PageHeaderImage({
       <Image
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
-        src={image.data}
+        src={image.data as StaticImageData}
         alt={commonProps.alt}
       />
     )
@@ -101,7 +96,7 @@ PageHeader.Image = function PageHeaderImage({
 
   return (
     <div className="relative aspect-video">
-      <Image
+      <SmartImage
         fill
         {...commonProps}
         className={clsx(commonProps.className, 'h-full w-full')}
