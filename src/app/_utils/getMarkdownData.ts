@@ -65,9 +65,7 @@ export function getAllMarkdownData<T>({
   try {
     const directory = path.join(process.cwd(), directoryPath)
 
-    const filenames = getFilenamesFromDirectory(directory).filter((filename) =>
-      filename.endsWith('.md'),
-    )
+    const filenames = getFilenamesFromDirectory(directory)
 
     return filenames.map((filename) => {
       const slug = extractSlugFromFilename(filename)
