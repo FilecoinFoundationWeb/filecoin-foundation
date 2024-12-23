@@ -8,8 +8,8 @@ import { getCategoryLabel } from '@/utils/categoryUtils'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
-import { getMetaData } from '@/blog/utils/getMetaData'
 import type { BlogPost } from '@/blog/types/blogPostType'
+import { getMetaData } from '@/blog/utils/getMetaData'
 
 type FeaturedBlogPostsProps = {
   featuredBlogPosts: Array<BlogPost>

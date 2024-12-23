@@ -101,11 +101,9 @@ export default function Grants() {
         </CardGrid>
       </PageSection>
 
-      {grantGraduates.length > 0 && (
-        <PageSection kicker="Past Recipients" title="Grant Graduates">
-          <FeaturedGrantGraduates grantGraduates={grantGraduates} />
-        </PageSection>
-      )}
+      <PageSection kicker="Past Recipients" title="Grant Graduates">
+        <FeaturedGrantGraduates grantGraduates={grantGraduates} />
+      </PageSection>
 
       <PageSection
         kicker="Application Process"

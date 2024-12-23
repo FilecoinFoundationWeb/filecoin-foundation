@@ -23,13 +23,13 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const ecosystemProjects = getEcosystemProjectsData()
 
