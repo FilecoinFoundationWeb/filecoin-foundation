@@ -5,10 +5,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-
-import { GrantsPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -22,32 +19,17 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
-
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const ecosystemProjects = getEcosystemProjectsData()
-
-const {
-  header,
-  seo,
-  featuredGrantGraduates: featuredGrantGraduatePaths,
-} = getFrontmatter({
+const { header, seo, featuredGrantGraduates } = getFrontmatter({
   path: PATHS.GRANTS,
-  zodParser: GrantsPageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
-
-const grantGraduatesSlugs = featuredGrantGraduatePaths.map(
-  extractSlugFromFilename,
-)
-
-const grantGraduates = ecosystemProjects.filter((item) =>
-  grantGraduatesSlugs?.includes(item.slug),
-)
 
 export const metadata = createMetadata({
   seo: {
@@ -101,11 +83,9 @@ export default function Grants() {
         </CardGrid>
       </PageSection>
 
-      {grantGraduates.length > 0 && (
-        <PageSection kicker="Past Recipients" title="Grant Graduates">
-          <FeaturedGrantGraduates grantGraduates={grantGraduates} />
-        </PageSection>
-      )}
+      <PageSection kicker="Past Recipients" title="Grant Graduates">
+        <FeaturedGrantGraduates grantGraduates={featuredGrantGraduates} />
+      </PageSection>
 
       <PageSection
         kicker="Application Process"

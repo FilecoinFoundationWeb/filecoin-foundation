@@ -14,7 +14,7 @@ const FrontmatterSeoSchema = z.object({
   description: z.string(),
 })
 
-const MarkdownPathSchema = z
+export const MarkdownPathSchema = z
   .string()
   .refine(isValidMarkdownPath, {
     message: 'Invalid markdown file path format',
@@ -30,12 +30,4 @@ export const BaseFrontmatterSchema = z.object({
 
 export const FeaturedPageFrontmatterSchema = BaseFrontmatterSchema.extend({
   featured_entry: MarkdownPathSchema,
-})
-
-export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_ecosystem_projects: z.array(MarkdownPathSchema),
-})
-
-export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_grant_graduates: z.array(MarkdownPathSchema),
 })

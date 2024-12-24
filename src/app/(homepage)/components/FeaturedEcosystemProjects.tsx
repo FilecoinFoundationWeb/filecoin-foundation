@@ -18,10 +18,6 @@ type FeaturedEcosystemProjectsProps = {
 export function FeaturedEcosystemProjects({
   ecosystemProjects,
 }: FeaturedEcosystemProjectsProps) {
-  if (ecosystemProjects.length === 0) {
-    return <p>No featured ecosystem projects available.</p>
-  }
-
   return (
     <CardGrid cols="smTwoLgThree">
       {ecosystemProjects.map(({ slug, title, description, image }) => (
