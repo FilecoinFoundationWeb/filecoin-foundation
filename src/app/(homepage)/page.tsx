@@ -8,10 +8,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import {
-  BaseFrontmatterSchema,
-  HomePageFrontmatterSchema,
-} from '@/schemas/FrontmatterSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -25,11 +22,12 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 
 const { header, seo, featuredEcosystemProjects } = getFrontmatter({
   path: PATHS.HOME,
-  zodParser: HomePageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 const { header: digestPageHeader } = getFrontmatter({

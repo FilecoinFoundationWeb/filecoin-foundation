@@ -7,8 +7,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { GrantsPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
-
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardGrid } from '@/components/CardGrid'
@@ -25,11 +23,12 @@ import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const { header, seo, featuredGrantGraduates } = getFrontmatter({
   path: PATHS.GRANTS,
-  zodParser: GrantsPageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({
