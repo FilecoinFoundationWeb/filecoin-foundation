@@ -5,9 +5,13 @@
 .cell {
   @apply whitespace-nowrap px-5 text-left font-normal;
 
+  &:first-child {
+    @apply sticky left-0 z-10 bg-inherit;
+  }
+
   thead & {
     &:first-child {
-      @apply rounded-l-lg;
+      @apply rounded-l-lg bg-brand-800;
     }
 
     &:last-child {
