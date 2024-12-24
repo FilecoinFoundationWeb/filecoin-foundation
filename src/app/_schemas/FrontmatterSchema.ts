@@ -2,9 +2,9 @@ import fs from 'fs'
 
 import { z } from 'zod'
 
-import { extractSlugFromFilename, isValidMarkdownPath } from '@/utils/fileUtils'
+import { isValidMarkdownPath } from '@/utils/fileUtils'
 
-import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
+import { createFeaturedProjectsSchema } from '@/ecosystem-explorer/utils/createFeaturedProjectsSchema'
 
 const FrontmatterHeaderSchema = z.object({
   title: z.string(),
@@ -16,7 +16,7 @@ const FrontmatterSeoSchema = z.object({
   description: z.string(),
 })
 
-const MarkdownPathSchema = z
+export const MarkdownPathSchema = z
   .string()
   .refine(isValidMarkdownPath, {
     message: 'Invalid markdown file path format',
@@ -34,28 +34,12 @@ export const FeaturedPageFrontmatterSchema = BaseFrontmatterSchema.extend({
   featured_entry: MarkdownPathSchema,
 })
 
-export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_ecosystem_projects: z
-    .array(MarkdownPathSchema)
-    .transform((paths) => {
-      const ecosystemProjects = getEcosystemProjectsData()
-      const slugs = paths.map(extractSlugFromFilename)
-      return ecosystemProjects.filter((item) => slugs.includes(item.slug))
-    })
-    .refine((filtered) => filtered.length > 0, {
-      message: 'No matching ecosystem projects found',
-    }),
-})
+export const HomePageFrontmatterSchema = createFeaturedProjectsSchema(
+  'featured_ecosystem_projects',
+  'No matching ecosystem projects found',
+)
 
-export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_grant_graduates: z
-    .array(MarkdownPathSchema)
-    .transform((paths) => {
-      const grantGraduates = getEcosystemProjectsData()
-      const slugs = paths.map(extractSlugFromFilename)
-      return grantGraduates.filter((item) => slugs.includes(item.slug))
-    })
-    .refine((filtered) => filtered.length > 0, {
-      message: 'No matching grant graduates found',
-    }),
-})
+export const GrantsPageFrontmatterSchema = createFeaturedProjectsSchema(
+  'featured_grant_graduates',
+  'No matching grant graduates found',
+)
