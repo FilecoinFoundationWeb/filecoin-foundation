@@ -141,21 +141,19 @@ export default function Home() {
             text: 'Read Digest',
           }}
         />
-
-        <PageSection
-          kicker="Stay Updated"
-          title="News & Blog"
-          description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
-        >
-          {hasFeaturedBlogPosts ? (
+        {hasFeaturedBlogPosts && (
+          <PageSection
+            kicker="Stay Updated"
+            title="News & Blog"
+            description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
+          >
             <FeaturedBlogPosts featuredBlogPosts={featuredBlogPosts} />
-          ) : (
-            <p>No featured posts available.</p>
-          )}
-          <Button className="sm:self-center" href={PATHS.BLOG.path}>
-            View All
-          </Button>
-        </PageSection>
+
+            <Button className="sm:self-center" href={PATHS.BLOG.path}>
+              View All
+            </Button>
+          </PageSection>
+        )}
         <CTASection
           title="Become Part of Our Vibrant Community"
           description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."
