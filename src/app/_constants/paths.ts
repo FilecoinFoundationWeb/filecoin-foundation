@@ -41,7 +41,6 @@ export interface PathConfig {
 interface CMSConfig {
   includesEntries?: boolean
   customMainContentPath?: string
-  customEntriesContentPath?: string
   hasSubpaths?: boolean
 }
 
@@ -57,7 +56,6 @@ function createPathConfig(
   const {
     includesEntries = false,
     customMainContentPath,
-    customEntriesContentPath,
     hasSubpaths = false,
   } = cmsConfig
 
@@ -66,7 +64,7 @@ function createPathConfig(
     : `${CONTENT_PAGES_ROOT}${customMainContentPath ?? path}`
 
   const entriesContentPath = includesEntries
-    ? `${CONTENT_ROOT}${customEntriesContentPath ?? path}`
+    ? `${CONTENT_ROOT}${path}`
     : undefined
 
   return {
@@ -98,7 +96,6 @@ export const PATHS = {
     {
       hasSubpaths: true,
       includesEntries: true,
-      customEntriesContentPath: '/ecosystem-explorer',
     },
   ),
   ECOSYSTEM_EXPLORER_PROJECT_FORM: createPathConfig(
