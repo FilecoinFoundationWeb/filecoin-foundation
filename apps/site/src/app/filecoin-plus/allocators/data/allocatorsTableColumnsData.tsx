@@ -11,7 +11,32 @@ const columnHelper = createColumnHelper<AllocatorWithDatacap>()
 export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
     header: 'Organization Name',
-    cell: (info) => info.getValue(),
+    cell: (info) => {
+      const link = info.getValue()
+      const name = info.row.original.name
+
+      if (!link) {
+        return null
+      }
+
+      return (
+        <div className="w-[200px] overflow-hidden">
+          <ExternalTextLink
+            aria-label={`Apply for ${name} allocator`}
+            href={link}
+            title={name}
+            style={{
+              display: 'block',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            {name}
+          </ExternalTextLink>
+        </div>
+      )
+    },
     filterFn: 'includesString',
   }),
   columnHelper.accessor('metapathway_type', {
