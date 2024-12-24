@@ -55,27 +55,4 @@ export const allocatorsTableColumnsData = [
     ),
     cell: (info) => info.getValue(),
   }),
-  columnHelper.accessor('application.allocation_bookkeeping', {
-    header: 'Apply',
-    meta: {
-      bodyCellStyle: 'text-brand-300',
-    },
-    cell: (info) => {
-      const link = info.getValue()
-      const name = info.row.original.name
-
-      if (!link) {
-        return null
-      }
-
-      return (
-        <ExternalTextLink
-          aria-label={`Apply for ${name} allocator`}
-          href={link}
-        >
-          Apply
-        </ExternalTextLink>
-      )
-    },
-  }),
 ]
