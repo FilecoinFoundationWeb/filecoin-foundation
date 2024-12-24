@@ -67,6 +67,7 @@ const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
 
 export default function Home() {
   const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
+  const hasFeaturedEcosystemProjects = featuredEcosystemProjects.length > 0
 
   return (
     <NoBreadCrumbsLayout>
@@ -114,22 +115,24 @@ export default function Home() {
           </CardGrid>
         </PageSection>
 
-        <PageSection
-          kicker="Learn"
-          title="Filecoin Use Cases"
-          description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
-        >
-          <FeaturedEcosystemProjects
-            ecosystemProjects={featuredEcosystemProjects}
-          />
-
-          <Button
-            className="sm:self-center"
-            href={PATHS.ECOSYSTEM_EXPLORER.path}
+        {hasFeaturedEcosystemProjects && (
+          <PageSection
+            kicker="Learn"
+            title="Filecoin Use Cases"
+            description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
           >
-            View All
-          </Button>
-        </PageSection>
+            <FeaturedEcosystemProjects
+              ecosystemProjects={featuredEcosystemProjects}
+            />
+
+            <Button
+              className="sm:self-center"
+              href={PATHS.ECOSYSTEM_EXPLORER.path}
+            >
+              View All
+            </Button>
+          </PageSection>
+        )}
 
         <PageSection
           kicker="Digest"
@@ -154,6 +157,7 @@ export default function Home() {
             </Button>
           </PageSection>
         )}
+
         <CTASection
           title="Become Part of Our Vibrant Community"
           description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."
