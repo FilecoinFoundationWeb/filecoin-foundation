@@ -6,7 +6,6 @@ import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import {
@@ -25,19 +24,12 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
-import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
 
-const ecosystemProjects = getEcosystemProjectsData()
-
-const {
-  header,
-  seo,
-  featuredEcosystemProjects: featuredEcosystemProjectPaths,
-} = getFrontmatter({
+const { header, seo, featuredEcosystemProjects } = getFrontmatter({
   path: PATHS.HOME,
   zodParser: HomePageFrontmatterSchema.parse,
 })
@@ -53,13 +45,6 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
-  extractSlugFromFilename,
-)
-const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
-  featuredEcosystemProjectsSlugs?.includes(item.slug),
-)
-
 const blogPosts = getBlogPostsData()
 const MAX_POSTS = 4
 const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
@@ -67,7 +52,6 @@ const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
 
 export default function Home() {
   const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
-  const hasFeaturedEcosystemProjects = featuredEcosystemProjects.length > 0
 
   return (
     <NoBreadCrumbsLayout>
@@ -115,24 +99,22 @@ export default function Home() {
           </CardGrid>
         </PageSection>
 
-        {hasFeaturedEcosystemProjects && (
-          <PageSection
-            kicker="Learn"
-            title="Filecoin Use Cases"
-            description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
-          >
-            <FeaturedEcosystemProjects
-              ecosystemProjects={featuredEcosystemProjects}
-            />
+        <PageSection
+          kicker="Learn"
+          title="Filecoin Use Cases"
+          description="Navigate the Filecoin Ecosystem Explorer, a crowd-sourced and open database to showcase projects powering the Filecoin network."
+        >
+          <FeaturedEcosystemProjects
+            ecosystemProjects={featuredEcosystemProjects}
+          />
 
-            <Button
-              className="sm:self-center"
-              href={PATHS.ECOSYSTEM_EXPLORER.path}
-            >
-              View All
-            </Button>
-          </PageSection>
-        )}
+          <Button
+            className="sm:self-center"
+            href={PATHS.ECOSYSTEM_EXPLORER.path}
+          >
+            View All
+          </Button>
+        </PageSection>
 
         <PageSection
           kicker="Digest"

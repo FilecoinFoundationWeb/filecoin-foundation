@@ -2,7 +2,9 @@ import fs from 'fs'
 
 import { z } from 'zod'
 
-import { isValidMarkdownPath } from '@/utils/fileUtils'
+import { extractSlugFromFilename, isValidMarkdownPath } from '@/utils/fileUtils'
+
+import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 
 const FrontmatterHeaderSchema = z.object({
   title: z.string(),
@@ -33,7 +35,16 @@ export const FeaturedPageFrontmatterSchema = BaseFrontmatterSchema.extend({
 })
 
 export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_ecosystem_projects: z.array(MarkdownPathSchema),
+  featured_ecosystem_projects: z
+    .array(MarkdownPathSchema)
+    .transform((paths) => {
+      const ecosystemProjects = getEcosystemProjectsData()
+      const slugs = paths.map(extractSlugFromFilename)
+      return ecosystemProjects.filter((item) => slugs.includes(item.slug))
+    })
+    .refine((filtered) => filtered.length > 0, {
+      message: 'No matching ecosystem projects found',
+    }),
 })
 
 export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
