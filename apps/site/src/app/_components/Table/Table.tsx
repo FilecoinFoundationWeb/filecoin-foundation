@@ -10,7 +10,7 @@ export function Table({ children, layout = 'auto' }: TableProps) {
     <div className="w-full overflow-x-auto focus:brand-outline">
       <table
         className={clsx(
-          'w-full',
+          'w-full border-separate border-spacing-0 rounded-lg border border-brand-300',
           layout === 'auto' && 'table-auto',
           layout === 'fixed' && 'table-fixed',
         )}
