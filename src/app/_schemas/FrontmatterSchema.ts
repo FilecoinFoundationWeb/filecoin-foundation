@@ -48,5 +48,14 @@ export const HomePageFrontmatterSchema = BaseFrontmatterSchema.extend({
 })
 
 export const GrantsPageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_grant_graduates: z.array(MarkdownPathSchema),
+  featured_grant_graduates: z
+    .array(MarkdownPathSchema)
+    .transform((paths) => {
+      const grantGraduates = getEcosystemProjectsData()
+      const slugs = paths.map(extractSlugFromFilename)
+      return grantGraduates.filter((item) => slugs.includes(item.slug))
+    })
+    .refine((filtered) => filtered.length > 0, {
+      message: 'No matching grant graduates found',
+    }),
 })

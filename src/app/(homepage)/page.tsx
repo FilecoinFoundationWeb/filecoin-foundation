@@ -22,12 +22,10 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
-
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
+import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 
 const { header, seo, featuredEcosystemProjects } = getFrontmatter({
   path: PATHS.HOME,
@@ -45,13 +43,8 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const blogPosts = getBlogPostsData()
-const MAX_POSTS = 4
-const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
-const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
-
 export default function Home() {
-  const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
+  const { featuredBlogPosts, hasFeaturedBlogPosts } = getFeaturedBlogPosts()
 
   return (
     <NoBreadCrumbsLayout>
@@ -126,6 +119,7 @@ export default function Home() {
             text: 'Read Digest',
           }}
         />
+
         {hasFeaturedBlogPosts && (
           <PageSection
             kicker="Stay Updated"
