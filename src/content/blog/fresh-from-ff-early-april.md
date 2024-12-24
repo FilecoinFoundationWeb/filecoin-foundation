@@ -24,19 +24,19 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - Twenty-one teams submitted Filecoin-related projects in the Dora Hacks [Data Economy Hackathon](https://dorahacks.io/hackathon/filecoin-data-economy). Teams focused on scalability, building on Filecoin, and maximizing data utility. Winners will be announced April 15.
 - FF Developer Advocate Jenks Guo judged the [Filecoin track at ETH London](https://ethglobal.com/events/london2024/prizes/filecoin), which drew 26 submissions and offered six top prizes.
 
-**Storage**
+### Storage
 
 - FF’s Community & Data Onboarding team hosted its first [Network Growth 2.0 call](https://filecoinproject.slack.com/archives/C02GQUMFQVA/p1711138050905809) on March 22, where builders throughout the ecosystem came together to give a high-level view of what they’re working on. The first call featured Cloud Forest, Web3Mine, CID Gravity, Seal Storage, and more. Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel for details on future meetings.
 - The Decentralized Storage Alliance (DSA), of which FF is a founding member, [announced a leap forward in zk proof computation](https://dsalliance.io/resources/blog/dsa-announces-leap-forward-in-zk-proof-computation) on the Filecoin network. These advances optimize several key steps in the proof process via CPU and GPU optimizations. The result is an 80% reduction in cost and latency for proof generation – saving storage providers money, and increasing flexibility in how they use their hardware.
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - The FF Governance team held its monthly Community Governance Call on March 25. Subscribe to the [governance calendar](https://bit.ly/3T4NKAa) to get the meeting details and to stay updated.
 - Nv22 Dragon remains on track for April 11. There are four FIPs in scope for this upgrade:
@@ -46,17 +46,17 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
   - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct data onboarding
   - [FIP0083](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0083.md) - Ecosystem tooling: adding built-in actor events in verified registry, miner & market actors
 
-**Fil Plus**
+### Fil Plus
 
 - The new GitHub landing page for allocators [is live](https://github.com/filecoin-project/Allocator-Governance). This repo will replace the Filecoin Plus Notary Governance Repo.
 - The first DataCap distributions have started to go out to allocators. The initial amount of 5 PiB allows new allocators to begin distributing while developing their diligence and bookkeeping records. For more information, you can attend upcoming meetings by adding the [Fil Plus Governance meeting calendar](https://calendar.google.com/calendar/u/1?cid=Y19rMWdrZm9vbTE3ZzBqOGM2YmFtNnVmNDNqMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t) or view the recordings on [Filecoin Foundation's YouTube channel](https://www.youtube.com/playlist?list=PLp3zrT1ewY0kYN1hJpERMUxTCbFC4yZwN).
 
 ## Comms, Marketing, & Events
 
-**Marketing & Comms**
+### Marketing & Comms
 
 - During the Global Blockchain Business Council (GBBC) [Virtual Members Forum](https://www.gbbc.io/events/gbbc-virtual-members-forum-with-FF), Founding Officer Megan Klimen shared the significance of decentralized storage, the role of the Foundation in the Filecoin ecosystem, emerging use cases and social impact projects, and what is next for the network in her session "Building the Next Generation of Data Storage with Filecoin Foundation."
 
-**Events**
+### Events
 
 - The program schedule is live for [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs, alongside the Hong Kong Web3 Festival! Be sure to join us April 5-8, 2024, for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more. [Register now](https://lu.ma/FILHK2024).

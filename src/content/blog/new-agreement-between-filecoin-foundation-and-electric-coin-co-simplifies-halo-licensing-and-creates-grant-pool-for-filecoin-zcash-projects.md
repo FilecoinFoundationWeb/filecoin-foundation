@@ -23,28 +23,28 @@ This news follows an announcement from September, when Filecoin Foundation and E
 
 “The Zcash, Filecoin, and Ethereum communities have a shared vision of an internet that is open to all and that honors the agency of every user and every community,” said Zooko Wilcox, ECC Founder and CEO. “We call this vision Web3. This partnership and this technology will create a cornerstone for that world.”
 
-### Halo licensing
+## Halo Licensing
 
 Halo 2 was originally released under the [Bootstrap Open Source License](https://electriccoin.co/blog/introducing-tgppl-a-radically-new-type-of-open-source-license/) (BOSL), which gives everyone equal access to the code and equal rights to improve that code commercially as long as they open-source their improvements and make those improvements available under BOSL after 12 months. To foster greater collaboration and reuse, Halo 2 is now shared under the more common [MIT license](https://en.wikipedia.org/wiki/MIT_License). Orchard, the Zcash payment protocol built on Halo 2, will remain under BOSL.
 
-### Filecoin-Zcash grants
+## Filecoin-Zcash Grants
 
 The grant program includes a base pool of $5M, provided by Filecoin Foundation, plus additional matching funds for any ECC contributions up to $2M, for a total potential pool size of $9M. Funds will be jointly administered by Filecoin Foundation and ECC.
 
-#### Opportunities
+### Opportunities
 
 Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. A few of the specific opportunities that have been discussed to date are below. Teams are welcome to build proposals based on these ideas or on other collaborations that will add utility to the FIL and ZEC chains. :
 
-**Filecoin storage payments in ZEC**
+- **Filecoin storage payments in ZEC**
 
-It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.
+  It would be highly beneficial to both the Filecoin and Zcash ecosystems if Filecoin storage payments could be made in ZEC, affording the same level of privacy for storage purchases that exists in Zcash shielded transfers.
 
-**Media and file support in Zcash encrypted memos and NFTs**
+- **Media and file support in Zcash encrypted memos and NFTs**
 
-This support would add the ability to encrypt files in Filecoin storage and add support to mobile clients so that they could “attach” media or files to a Zcash encrypted memo.
+  This support would add the ability to encrypt files in Filecoin storage and add support to mobile clients so that they could “attach” media or files to a Zcash encrypted memo.
 
-**Zero-knowledge virtual machine**
+- **Zero-knowledge virtual machine**
 
-The [Filecoin Virtual Machine](https://fvm.filecoin.io/) project will be released in milestones across 2022 has been announced, and ECC is interested in a general programming capability, as well. There are a number of projects exploring zero-knowledge technology to improve the privacy and security of virtual machine execution.
+  The [Filecoin Virtual Machine](https://fvm.filecoin.io/) project will be released in milestones across 2022 has been announced, and ECC is interested in a general programming capability, as well. There are a number of projects exploring zero-knowledge technology to improve the privacy and security of virtual machine execution.
 
 For more information about the program, email [ff-ecc-grants@fil.org](mailto:ff-ecc-grants@fil.org).

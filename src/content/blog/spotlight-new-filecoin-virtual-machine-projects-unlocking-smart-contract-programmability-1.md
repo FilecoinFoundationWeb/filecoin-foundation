@@ -28,7 +28,7 @@ Some of the new and powerful use cases that the FVM will enable includes Data DA
 
 Last month, the [Skyr upgrade](https://filecoinfoundation.medium.com/announcing-network-upgrade-skyr-e3e00949d751) introduced Milestone 1 of the FVM, one of the largest upgrades in Filecoin network history. The Skyr upgrade also laid the groundwork for Milestone 2.1 of the FVM which will bring EVM smart contract deployments to the Filecoin network. FVM-native development will also continue in parallel, with developer teams building out core tooling and laying the infrastructure of the future development experience for the network.
 
-**New FVM Projects**
+## New FVM Projects
 
 A few recent projects creating new FVM tools and services with support from Filecoin Foundation’s [Dev Grants program](/grants):
 
@@ -39,11 +39,11 @@ A few recent projects creating new FVM tools and services with support from File
 
 Filecoin Foundation’s Dev Grants program is advancing projects and aims to award additional grants to boost development in the Filecoin ecosystem. Check out our other grant recipients and learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md).
 
-**Join the FVM Foundry’s Early Builders Program**
+## Join the FVM Foundry’s Early Builders Program
 
 We are seeking individuals and teams with expertise in smart contract programming (on EVM) to join the FVM Foundry. If you’re a Solidity developer or team, this is an opportunity to hit the ground running as features become available and become a pioneering member of the FVM Foundry. Participants should have knowledge in distributed/blockchain systems, web3, smart contract programming, and/or decentralized storage. Visit the [FVM homepage](https://fvm.filecoin.io/) to learn more.
 
-**Learn About FVM at FIL-Singapore (Sept. 26–27)**
+## Learn About FVM at FIL-Singapore (Sept. 26–27)
 
 [FIL-Singapore](/events/fil-singapore) is slated to be the largest in-person Filecoin gathering in Asia. Join the Filecoin community September 26–27, at the Marina Bay Sands in Singapore, ahead of Token2049, for two packed days of talks, workshops and networking events. Discussions will include the latest on FVM progress, updates on the Filecoin Roadmap, Filecoin cryptoeconomics, and more. Use the [promo code FFVIP](http://www.eventbrite.com/e/396630501507/?discount=FFVIP) for free registration.
 

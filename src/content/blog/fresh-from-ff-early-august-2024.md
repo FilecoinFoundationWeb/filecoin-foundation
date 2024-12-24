@@ -14,7 +14,7 @@ seo:
     governance, and community news!
 ---
 
-# Early August Highlights
+## Early August Highlights
 
 🧇 The Nv23 Upgrade, codenamed "Waffle," is arriving on Mainnet on August 6. The upgrade was successfully deployed to the calibnet on July 11, and will feature 6 FIPs including [FIP0065](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0065.md), [FIP0079](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0079.md), [FIP0084](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0084.md), [FIP0085](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0085.md), [FIP0091](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0091.md), and [FIP0092](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0092.md). Stay tuned to the [Filecoin Governance X](https://x.com/fil_gov) account for the latest updates.
 

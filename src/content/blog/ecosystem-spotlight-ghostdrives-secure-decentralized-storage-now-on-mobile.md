@@ -18,7 +18,7 @@ Last month, [Google Cloud](https://arstechnica.com/gadgets/2024/05/google-cloud-
 
 This incident highlights the glaring problem of single points of failure in the world’s data infrastructure –– a problem that the decentralized nature of the Filecoin network addresses. GhostDrive, a data management platform built on the Filecoin network, prioritizes user control and data security through encryption, decentralization, and novel storage optimization techniques.
 
-## Spotlight on GhostDrive:
+## Spotlight on GhostDrive
 
 As part of Filecoin Foundation’s work to showcase innovative teams building on Filecoin, today we’re shining the spotlight on GhostDrive, a platform that leverages Filecoin's decentralized storage to improve redundancy and security.
 

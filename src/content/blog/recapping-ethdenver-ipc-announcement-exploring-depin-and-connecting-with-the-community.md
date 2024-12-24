@@ -26,7 +26,7 @@ Read on to see what you might have missed.
 
 ![](/assets/images/ghoi50uwcaafejn.jpeg)
 
-### Scaling Network Innovation
+## Scaling Network Innovation
 
 Molly Mackinlay, EngRes Lead at Protocol Labs, took to the ETHDenver stage for her talk, [Filecoin: the Storage Layer of Web3](https://twitter.com/FilFoundation/status/1764301751975289284). She covered top 2024 themes for the Filecoin network including:
 
@@ -42,13 +42,13 @@ Sarah Thiam gave a [Crash Course to Getting Started with InterPlanetary Consensu
 
 ![](/assets/images/ghywxzyxwaahyct.jpeg)
 
-### Web3 and AI
+## Web3 and AI
 
 The intersection of AI and Web3 was a hot topic at ETHDenver. FF Founding Officer Clara Tsao shared her talk, [Filecoin and AI: Building the Next Generation of Data Storage](https://twitter.com/EthereumDenver/status/1763723498042659294), with the ETHDenver audience. Yan Bo Ng supported the AI discussion by participating in an [AI & DePIN panel](https://www.youtube.com/live/k1HxuhBBvPg?si=2z6Y4RwVvrrtjqk7&t=5362) at Fluence’s DE:PIN Day and delivering a talk on Filecoin, FVM, and AI at Filecoin Foundation Booth.
 
 With decentralized storage, we can avoid paths that concentrate the power of AI into fewer hands while providing solutions for a wealth of decentralized players to build and maintain their AI data responsibly. Filecoin is built to handle the unprecedented scale of AI data growth on a future-proof network. And in addition to decentralizing data storage, decentralized computing capabilities made possible by Filecoin help decentralize and speed up the [resource-intensive computation of AI models](https://blogs.nvidia.com/blog/2023/01/20/what-is-ai-computing/#:~:text=AI%20computing%20multiplies%20together%20every,data%20on%20fast%20computer%20networks.).
 
-### Filecoin as a DePIN Prototype
+## Filecoin as a DePIN Prototype
 
 Another emerging theme at ETHDenver was decentralized physical infrastructure networks (DePIN). DePIN creates scalable alternatives to centralized computation, storage, and telecommunications networks by leveraging Web3 concepts such as decentralization, cryptoeconomics, open source, and transparency.
 
@@ -56,7 +56,7 @@ DePIN is gaining traction because of large addressable markets in these areas an
 
 Filecoin Foundation leaned into DePIN across stages during ETHDenver. Solutions Architect Yan Bo Ng participated in a panel at Fluence’s DE:PIN Day, Dev Advocate Jenks Guo spoke at DePIN Denver Web3 Coffee House, and Founding Officer Clara Tsao joined a roundtable at DePIN Summer.
 
-### The Growing Filecoin Ecosystem 
+## The Growing Filecoin Ecosystem
 
 At [FIL Dev Summit](https://fildev.io/FDS-3), developers, builders, and engaged ecosystem members came together to contribute to the core protocol and network evolution of Filecoin to drive meaningful impact and push Filecoin forward across four tracks: Filecoin Smart Storage, Filecoin Retrievals and Allocators, Retroactive Public Goods Funding, and Decentralized Compute & Decentralized Storage.
 
@@ -64,7 +64,7 @@ In a workshop on how to design and integrate Decentralized Compute and Decentral
 
 Other talks from Filecoin Foundation included Head of Community Porter Stowell on Opportunities in the Filecoin Ecosystem, Fil+ Program Manager Galen McAndrew on the Allocator Program and Onboarding, Head of Technical Programs Stef Magdalinski on the FF Grants Program, and Clara Tsao delivering closing remarks on how FF supports the Filecoin Community.
 
-### Onward!
+## Onward
 
 Thank you to the hundreds of builders who joined us on the ground in Denver to learn more about the benefits of the Filecoin network and the projects across our ecosystem that are working together to build the next generation of the web.
 

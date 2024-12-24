@@ -26,12 +26,12 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - The Developer Advocacy team is on the ground at ETHDenver, speaking at events across town. Book a meeting (link previously available but now unavailable) with them at the Filecoin Booth at Devtopia, Booth 204.
 - At the Dora Hacks Data Economy Hackathon on February 20, Jenks Guo and Yan Bo Ng’s talk on  FVM & AI was livestreamed by more than 6,000 people. [Watch the replay](https://www.youtube.com/watch?v=usBgjBpYxNQ).
 
-**Storage**
+### Storage
 
 - Check out these new tools for SPs:
 
@@ -44,7 +44,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - The timeline for nv22 Dragon has been updated and is now slated for April 2. There are four FIPs in scope for this upgrade:
 
@@ -53,18 +53,18 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
   - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct Data Onboarding
   - [FIP0083](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0083.md) - Ecosystem Tooling: Add Built-in Actor Events in Verified Registry, Miner & Market Actors
 
-**Fil Plus**
+### Fil Plus
 
 - The Fil Plus team shared updates on the 5th round of elections and the new notary allocators at FIL Dev Summit.
 
 ## Comms, Marketing, & Events
 
-**Marketing & Comms**
+### Marketing & Comms
 
 - Catch FF’s Clara Tsao talking about [Filecoin & AI: Building the Next Generation of Data Storage](https://hub.fil.org/events/ethdenver/see-the-schedule), Friday, March 1, on the Neptune Stage at ETHDenver.
 - ICYMI: the team published the [FF](https://link.fil.org/report24) and [FFDW](https://link.ffdweb.org/report24) Annual Reports last week. Check them out!
 
-**Events**
+### Events
 
 - Check out the [Filecoin at ETHDenver website](https://hub.fil.org/ethdenver2024) for all of the Filecoin community events happening throughout the week.
 - The Filecoin Orbit team announced an ETHDenver bounty to build an app to track and reward the activities of the Filecoin Orbit ambassador program in the form of NFT “achievements” and associated ERC20 token reward points. The aim of the bounty is to build an app that creates a standard rewards system for the Orbit program on FVM.

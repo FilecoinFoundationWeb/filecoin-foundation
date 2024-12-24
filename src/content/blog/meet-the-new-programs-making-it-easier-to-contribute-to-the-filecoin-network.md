@@ -19,7 +19,7 @@ This winter, two new programs launched that make it easier than ever to contribu
 
 Filecoin is the world's largest decentralized storage network, allowing users to store, request, and transfer data on the network via a verifiable marketplace. And now, these new programs will allow a new cohort of users and small enterprises to contribute to a more decentralized, efficient, and robust future for the internet.
 
-**Filecoin Saturn**
+## Filecoin Saturn
 
 [Filecoin Saturn](https://strn.network/) is a new content delivery network that will help scale the Filecoin network and allow Web3 applications to quickly retrieve content, making it both easier and more affordable to contribute to the Filecoin network.
 
@@ -33,7 +33,7 @@ Faster, more robust retrievals will unlock the next generation of Filecoin growt
 
 Learn how to set up a [Filecoin Saturn](https://strn.network/) node and learn more in [The Block](https://www.theblock.co/post/180450/filecoin-releases-new-content-delivery-network-called-saturn) and [Axios.](https://www.axios.com/newsletters/axios-crypto-db0eb110-3321-4160-b08f-93f104c5700a.html)
 
-**Filecoin Station**
+## Filecoin Station
 
 In the alpha stage, [Filecoin Station](https://www.filstation.app/) is a desktop application that will act as an entry point to a selection of modules in the Filecoin ecosystem. The program connects your computer’s idle resources to the Filecoin network and will reward you with FIL for contributing your resources and services to each module.
 

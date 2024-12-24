@@ -26,18 +26,18 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - FF Solutions Architect Yan Bo Ng recorded a workshop for the [Encode AI Hack](https://www.encode.club/ai-hackathon), and FF Dev Advocate Jenks Guo has been providing technical support. Both Yan and Jenks will be judging projects.
 - During ETHDenver, Yan participated in a [DePIN & AI panel](https://www.youtube.com/watch?v=k1HxuhBBvPg) at Fluence’s DePIN Day, and Jenks spoke on an [ecosystem panel](https://www.youtube.com/live/k1HxuhBBvPg?si=959cDKCDgk3hfR5R&t=25508).
 
-**Storage**
+### Storage
 
 - FF Head of Community Porter Stowell met with community members at ETHDenver to share how the network is positioned for sustained growth in his talk, [Filecoin Innovation](https://www.youtube.com/watch?v=ur-AwuEvvDo). Porter explored how the Filecoin network is progressing through its adoption lifecycle faster than most realize, thanks to advancements that make working with the protocol easier and more accessible.
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - Nv22 Dragon remains on track to go live on April 2. There are four FIPs in scope for this upgrade:
 - - [FIP0063](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0063.md) - Switching to a new Drand Mainnet Network
@@ -45,19 +45,19 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
   - [FIP0076](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0076.md) - Direct Data Onboarding
   - [FIP0083](https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0083.md) - Ecosystem Tooling: Add Built-in Actor Events in Verified Registry, Miner & Market Actors
 
-**Fil Plus**
+### Fil Plus
 
 - The March 5 [Filecoin Plus Governance Meeting](https://www.youtube.com/watch?v=KFFJtMBol0o) recording has been posted. Check it out to learn more about the new allocator governance repo, hear updates from ETHDenver, dig deep into DataCap compliance, and more.
 - The Fil Plus team is preparing to distribute the first 5 Pib of DataCap for this cycle to allocators. As outlined in the [March 5 meeting](https://www.youtube.com/watch?v=KFFJtMBol0o), technical requirements for the disbursement include a multisig physical ledger as well as a dedicated Github repository that the tooling bot can act against.
 
 ## Comms, Marketing, & Events
 
-**Marketing & Comms**
+### Marketing & Comms
 
 - Dive into this [excellent explainer of DePin](/blog/filecoin-as-a-depin-prototype) on the FF blog. Filecoin is one of the broadest-reaching DePIN projects on the planet. Since Mainnet launch in October 2020, Filecoin has become the leading protocol for decentralized storage. More than 3,000 storage provider systems around the world contribute 7.8 exbibytes of raw storage capacity to the network, and 2.1 exbibytes of raw data have been onboarded to the network.
 - Check out our latest [episode of DWeb Decoded](https://www.youtube.com/watch?v=7yEoShPUUBM) with Vinny Lingham. Vinny came on the show to discuss the untapped opportunities and challenges in the decentralized storage space.
 - FF’s Head of Marketing and Communications Rachel Horn moderated a panel at SXSW on [AI and open science](https://schedule.sxsw.com/2024/events/PP146158), alongside EQTY Lab’s Arianna Fowler. EQTY recently debuted ClimateGPT, a new, advanced, trusted AI solution that registers the entire AI lifecycle on the blockchain and preserves the model data on IPFS and Filecoin. [Watch the replay](https://www.youtube.com/watch?v=b9kkmQ1mzMg).
 
-**Events**
+### Events
 
 - Join us April 5-8 at [FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs), hosted by ND Labs, alongside the Hong Kong Web3 Festival, for storage provider-focused lightning talks, workshops, and plenty of coworking space for those in the Filecoin ecosystem! If you’re a Filecoin storage provider or want to explore decentralized storage for your business, join us for exciting talks focused on Web3 trends, decentralized storage, DePIN, and more.

@@ -21,10 +21,6 @@ seo:
 
 Filecoin Foundation (FF) successfully completed a first-of-its-kind mission deploying the InterPlanetary File System (IPFS) in space. The recent demonstration involved sending files from Earth to orbit and back using an implementation of the IPFS protocol designed for space communications.
 
-_Mission Sending Files from Earth to a Satellite to Demonstrate How IPFS Can Improve Communications Across Long Distances_
-
-Filecoin Foundation (FF) successfully completed a first-of-its-kind mission deploying the InterPlanetary File System (IPFS) in space. The recent demonstration involved sending files from Earth to orbit and back using an implementation of the IPFS protocol designed for space communications.
-
 This mission, conducted with Lockheed Martin-developed software, demonstrated how IPFS – a decentralized content distribution system – can bring the benefits of decentralized technologies to space to enable better communications across long distances and resilience in challenging environments.
 
 As part of the demonstration, [the IPFS white paper](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf) and an image of FF’s mascot (Biscuit, the “FileCorgi”) were transmitted to an orbiting LM LINUSS ™CubeSat and back using a purpose-built IPFS implementation that ran atop [Lockheed Martin’s SmartSat technology](https://www.lockheedmartin.com/content/lockheed-martin/en-us/news/features/2024/smartsat-equipped-satellite-uploads-new-mission-on-orbit.html), a software platform that makes it easier to dynamically add and quickly change missions in orbit through simple app uploads.

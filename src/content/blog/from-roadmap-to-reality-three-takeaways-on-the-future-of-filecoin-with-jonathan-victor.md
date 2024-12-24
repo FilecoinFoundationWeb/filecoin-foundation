@@ -25,13 +25,13 @@ In our conversation with Jonathan, we identified three major areas reshaping our
 
 From the early potential of the network to the broader societal implications of a decentralized web, catch up on our chat with Jonathan Victor:
 
-**1. The Evolution of Filecoin - From Storage to Open Data Services**
+## 1. The Evolution of Filecoin - From Storage to Open Data Services
 
 Jonathan Victor details Filecoin's journey from the project’s earliest stages to its current state as a hub in the decentralized web. The discussion explores how Filecoin, initially conceptualized as a decentralized storage network, is evolving into a comprehensive marketplace for open data services. This evolution is a major shift from cold data storage to an ecosystem where data is not only stored but actively exchanged, processed, and used in myriad ways.
 
 Victor also highlighted the challenges and triumphs, as well as the developmental hurdles of pioneering a new technology. The Filecoin network’s potential extends beyond its current capabilities, promising a future where data is not a commodity controlled by centralized entities but a resource that's accessible and equitable, democratizing data access and empowering individuals and businesses alike.
 
-**2. Cross-Ecosystem Collaborations**
+## 2. Cross-Ecosystem Collaborations
 
 Victor emphasized the significance of cross-ecosystem collaborations in the growth and functionality of the Filecoin network and decentralized storage as a whole. Filecoin’s story is not just about technological achievement but also about community building, as it highlights how a diverse group of developers, storage providers, and enthusiasts came together to build something revolutionary.
 
@@ -39,7 +39,7 @@ Victor points to a [project with Solana](https://github.com/rpcpool/yellowstone-
 
 These collaborations are pivotal because they enable Filecoin to support a wide range of data needs, from small-scale personal storage to large-scale enterprise solutions. And they foster a spirit of innovation, where different ecosystems can learn from and complement each other. This synergy is crucial for the advancement of the decentralized web, as it encourages the development of more holistic and integrated solutions.
 
-**3. Most Promising Developments for Filecoin Network**
+## 3. Most Promising Developments for Filecoin Network
 
 Victor identified what he thinks are the three most exciting areas to watch for the Filecoin network in the next 6-12 months: retrieval, compute, and scalability.
 
@@ -69,22 +69,13 @@ For more on the Filecoin ecosystem, and the future of decentralized tech, follow
 
 Subscribe:
 
-[IPFS Podcasting](https://ipfspodcasting.net/Feed/454/DWebDecoded)
-
-[Apple Podcasts](https://podcasts.apple.com/us/podcast/dweb-decoded/id1702936954)
-
-[Spotify](https://open.spotify.com/show/5GPjDV4AVv7xwmg0ByySac?si=af7b9bf4b2994237)
-
-[Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9lNmIzZDQwNC9wb2RjYXN0L3Jzcw)
-
-[Amazon Music](https://music.amazon.com/podcasts/2dcdde2f-be5c-41e6-bd0d-dc09adf27894/dweb-decoded)
-
-[iHeartRadio](https://iheart.com/podcast/120429254/)
-
-[YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy)
-
-[Pocket Casts](https://pca.st/50sgk357)
-
-[TuneIn](https://tunein.com/podcasts/Technology-Podcasts/DWeb-Decoded-p3766841/)
-
-[Podchaser](https://www.podchaser.com/podcasts/dweb-decoded-5433303)
+- [IPFS Podcasting](https://ipfspodcasting.net/Feed/454/DWebDecoded)
+- [Apple Podcasts](https://podcasts.apple.com/us/podcast/dweb-decoded/id1702936954)
+- [Spotify](https://open.spotify.com/show/5GPjDV4AVv7xwmg0ByySac?si=af7b9bf4b2994237)
+- [Google Podcasts](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9lNmIzZDQwNC9wb2RjYXN0L3Jzcw)
+- [Amazon Music](https://music.amazon.com/podcasts/2dcdde2f-be5c-41e6-bd0d-dc09adf27894/dweb-decoded)
+- [iHeartRadio](https://iheart.com/podcast/120429254/)
+- [YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy)
+- [Pocket Casts](https://pca.st/50sgk357)
+- [TuneIn](https://tunein.com/podcasts/Technology-Podcasts/DWeb-Decoded-p3766841/)
+- [Podchaser](https://www.podchaser.com/podcasts/dweb-decoded-5433303)

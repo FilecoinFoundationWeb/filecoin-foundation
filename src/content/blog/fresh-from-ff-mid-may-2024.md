@@ -26,17 +26,17 @@ _Check out the latest updates about what Filecoin Foundation has been up to._
 
 ### Ecosystem
 
-**Developer Advocacy**
+#### Developer Advocacy
 
 - [The ETHGlobal Online Hackathon](https://ethglobal.com/events/scaling2024/prizes/filecoin) received 54 project submissions to the IPC & Filecoin track. Check out more upcoming hackathons, including the [Web3 AI Hackathon](https://www.encode.club/web3-ai-hackathon) and [HackFS](https://ethglobal.com/events/hackfs2024), and start building on Filecoin.
 
-**Storage**
+#### Storage
 
 - FF’s Porter Stowell hosted the second edition of [Network Growth 2.0](https://filecoinproject.slack.com/archives/C02GQUMFQVA/p1714755293102279) on May 3, featuring the latest updates from across the Filecoin community. Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel for details on future meetings.
 
 ### Network Operations
 
-**Governance**
+#### Governance
 
 - Check out these three community governance working groups: the Storage Provider Working Group (SPWG), the Developer Working Group (DevWG), and the Data Clients Working Group (DCWG).
 
@@ -46,19 +46,19 @@ _Check out the latest updates about what Filecoin Foundation has been up to._
 
 - Announcing Filecoin Improvement Proposal (FIP) one-pagers! These one-pagers offer easier and clearer ways to interact with FIPs. Check out the first one: [FIP0090: Non-Interactive PoRep](https://x.com/fil_gov/status/1787559347519709525).
 
-**Fil Plus**
+#### Fil Plus
 
 - The Filecoin Plus team announced the [Request for Allocators](https://blog.allocator.tech/2024/04/allocator-tech-blog.html) (RFA) to seek out new pathway creations. The goal is to encourage the community to run allocators in other meta-pathways and contribute to a growing, healthy ecosystem promoting faster allocation of DataCap to compliant SPs.
 
 ### Comms, Marketing, & Events
 
-**Marketing & Comms**
+#### Marketing & Comms
 
 - FF’s Aaron Stanley interviewed Austin Federa, head of strategy at the Solana Foundation, on the latest episode of [DWeb Decoded](https://www.youtube.com/watch?v=_yMmmISZG2Q). Check out the interview to learn more about Solana's Filecoin integration.
 - The Q1 2024 Messari Report for the [Filecoin Ecosystem is live](https://x.com/MessariCrypto/status/1784954174523822215)! Check out the latest edition of the [Upload](https://upload.fil.org/p/network-insights-messaris-q1-2024-filecoin-report) and the [FF blog](/blog/deep-dive-on-messaris-q1-filecoin-ecosystem-report) for takeaways from [the report](https://messari.io/project/filecoin/quarterly-reports/q1-2024).
 - Leaders from across Web2, Web3, research, and philanthropy came together at [Funding the Commons](https://fundingthecommons.io/), featuring several [Filecoin Foundation for the Decentralized Web (FFDW)](https://ffdweb.org/blog/seeding-sustainable-growth-for-public-goods-in-tech-insights-from-funding-the-commons/) project partners, who shared their visions for the path forward for public goods and OSS funding in domains from human rights to visual art.
 
-**Events**
+#### Events
 
 - Filecoin Foundation is hosting a booth at [Consensus 2024](https://hub.fil.org/consensus-24) in Austin May 29-31. We encourage anyone in the ecosystem to drop by Booth 1254 and chat with Consensus attendees. Plus, join us for a [networking breakfast](https://lu.ma/25xqaafl) to unite experienced storage providers with newcomers to the Filecoin ecosystem. [Interested in visibility opportunities?](https://www.figma.com/proto/xgD4VyeM4jUaWcdTgGbYMi/Consensus-24?page-id=85%3A489&type=design&node-id=85-789&viewport=1021%2C723%2C0.09&t=kGGdBaoXl8oT73IC-1&scaling=contain) Come on board as a sponsor if you’d like to host a demo or office hours at the Filecoin booth.
 - FF’s Megan Klimen spoke at the [British Blockchain Association's](https://britishblockchainassociation.org/about/) virtual forum on May 8 about building the next generation of data storage with Filecoin.

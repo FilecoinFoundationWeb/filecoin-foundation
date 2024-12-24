@@ -55,7 +55,7 @@ We hope that by setting ambitious, clear, and measurable targets, we can track t
 
 Here's how we're measuring our ecosystem progress in 2025:
 
-**Objective: Make Filecoin work seamlessly, and find product market fit**
+### Objective: Make Filecoin Work Seamlessly, and Find Product Market Fit
 
 - Key Result (KR) 1: Network storage utilized increases 5 PIB per day
 
