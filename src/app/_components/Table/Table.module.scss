@@ -4,6 +4,31 @@
 
 .cell {
   @apply whitespace-nowrap px-5 text-left font-normal;
+
+  &:first-child {
+    @apply sticky left-0 z-10 bg-inherit;
+  }
+
+  thead & {
+    &:first-child {
+      @apply rounded-l-lg bg-brand-800;
+    }
+
+    &:last-child {
+      @apply rounded-r-lg;
+    }
+  }
+
+  tbody tr:last-child & {
+    &:first-child {
+      @apply rounded-bl-lg;
+    }
+
+    &:last-child {
+      @apply rounded-br-lg;
+    }
+  }
+
   &:first-child {
     @apply pl-10;
   }
