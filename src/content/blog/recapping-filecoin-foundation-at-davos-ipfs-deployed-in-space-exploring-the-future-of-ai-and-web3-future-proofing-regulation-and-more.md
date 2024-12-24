@@ -23,7 +23,7 @@ From climate change, to protecting human rights, to preserving truth in an age o
 
 Here are some panel highlights:
 
-**AI and Decentralization**
+## AI and Decentralization
 
 Artificial Intelligence was front and center in Davos this year. Sir Tim Berners-Lee, Inventor of the World Wide Web was joined by FF’s Clara Tsao, Meta’s Yann LeCun, and VERSES’ Karl Friston in a session moderated by Gillian Tett of the Financial Times. Together they discussed how decentralized technologies can help with AI data integrity, accessibility, and verifiability.
 
@@ -37,7 +37,7 @@ Artificial Intelligence was front and center in Davos this year. Sir Tim Berners
   allowfullscreen>
 </iframe>
 
-**Talking Regulation and our Latest Space Announcements on the Sanctuary Stage**
+## Talking Regulation and our Latest Space Announcements on the Sanctuary Stage
 
 FF President Marta Belcher and CFTC Commissioner Caroline Pham explored how to create regulatory frameworks that provide clarity and enable emerging technologies like cryptocurrency to thrive. “As regulators, we can’t hide from the future,” Pham said. “We have to future-proof our regulations.”
 
@@ -59,7 +59,7 @@ Commissioner Pham applauded the successful completion of this mission, adding, �
 
 And ICYMI: [Dive deeper](/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space) into why this milestone is critical for advancing networking in space.
 
-**Using Al, Blockchain, and Predictive Modeling to Protect our Planet**
+## Using Al, Blockchain, and Predictive Modeling to Protect our Planet
 
 On a panel about how AI, blockchain, and predictive modeling are helping achieve sustainability goals, FF Founding Officer Megan Klimen summed up the need to consider global challenges when advocating for new technologies: “We are past the point in time where we can develop new technologies without climate first and foremost in our minds.”
 
@@ -73,7 +73,7 @@ On a panel about how AI, blockchain, and predictive modeling are helping achieve
   allowfullscreen>
 </iframe>
 
-**Regulating Emerging Technologies**
+## Regulating Emerging Technologies
 
 In another session on how to regulate emerging technologies, FF’s Marta Belcher was joined by Circle’s Dante Disparte, IBM’s Shyam Nagarajan, and Casper Klynge, former Danish Ambassador for Technology, to lay out a sustainable path forward for emerging technologies that simultaneously promotes innovation and cleans out the bad actors.
 
@@ -95,12 +95,12 @@ Thank you to the thousands of attendees who joined us on the ground in Davos to 
 
 For more panels from Davos check out our [Filecoin Sanctuary YouTube playlist](https://www.youtube.com/playlist?list=PLp3zrT1ewY0lsLIsGAQYREZnP9QKE6zlU).
 
-**Where to Next?**
+## Where to Next?
 
-**Social Impact Summit**
+### Social Impact Summit
 
 Co-hosted by Filecoin Foundation for the Decentralized Web and Blockchain Law for Social Good Center, the [Social Impact Summit](https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367) will feature keynotes from Sheila Warren, Chief Executive Officer of the Crypto Council for Innovation; Rainey Reitman, Board President of Freedom of the Press Foundation; George Oates, Cofounder and Executive Director of the Flickr Foundation, and more leading voices across human rights, law, policy, and technology. Join us at the University of San Francisco to learn how decentralized technology can be a catalyst for societal change, highlighted by real-world examples of tech helping build stronger, more resilient communities, economies, and societies. [Register now](https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367).
 
-**Join us at ETHDenver**
+### Join us at ETHDenver
 
 Filecoin Foundation will return to ETHDenver in 2024, from February 29 to March 3. Join us on the Devtopia show floor as we step into the vibrant ecosystem surrounding the Ethereum-compatible Filecoin Virtual Machine (FVM) and the larger decentralized ecosystem to spotlight the Filecoin builder community, provide demos, and host talks. Find the full list of [Filecoin ecosystem events at ETHDenver](https://hub.fil.org/ethdenver2024).

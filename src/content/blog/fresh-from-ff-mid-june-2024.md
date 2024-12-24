@@ -13,7 +13,7 @@ seo:
   title: "Fresh From FF: Mid-June, 2024"
 ---
 
-# Mid-June Highlights
+## Mid-June Highlights
 
 🤝 Filecoin Foundation for the Decentralized Web and Artizen announced the Filecoin Fund for Cultural Preservation, supporting projects that use decentralized storage technologies to archive, preserve, and disseminate cultural works and emphasize the critical role of decentralized storage technologies in safeguarding human creativity.
 

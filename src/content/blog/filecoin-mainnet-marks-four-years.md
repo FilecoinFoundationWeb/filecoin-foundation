@@ -61,7 +61,7 @@ Are you looking for the right storage solution to scale your business? Reach out
 
 ## Decentralizing AI
 
-A growing number of AI projects are joining the Filecoin network to provide data provenance, authenticity, and verifiability in the high-frequency information age. [SingularityNET](https://singularitynet.io/), [Theoriq](https://www.theoriq.ai/), [Bagel](https://www.bagel.net/), [Nuklai](https://www.nukl.ai/), and [Aethir](https://aethir.com/) are some of the organizations using the [Filecoin network ](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai)as an alternative to centralized models. Filecoin promotes decentralization, verifiability and transparency, addressing the pressing need for open AI systems and promoting the resilience of digital infrastructure.
+A growing number of AI projects are joining the Filecoin network to provide data provenance, authenticity, and verifiability in the high-frequency information age. [SingularityNET](https://singularitynet.io/), [Theoriq](https://www.theoriq.ai/), [Bagel](https://www.bagel.net/), [Nuklai](https://www.nukl.ai/), and [Aethir](https://aethir.com/) are some of the organizations using the [Filecoin network](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) as an alternative to centralized models. Filecoin promotes decentralization, verifiability and transparency, addressing the pressing need for open AI systems and promoting the resilience of digital infrastructure.
 
 ![](/assets/images/08282024-fastfinality.webp)
 

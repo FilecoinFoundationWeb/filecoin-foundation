@@ -26,19 +26,19 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - FF Developer Advocates Jenks Guo and Robert Dowling are judging Filecoin project submissions for the [Data Economy Hackathon](https://dorahacks.io/hackathon/filecoin-data-economy/detail#key-dates). Winners will be announced on April 17.
 - Jenks and Robert hosted a mentor feedback session for the [Scaling Ethereum Hackathon](https://ethglobal.com/events/scaling2024/prizes/filecoin), running April 5-26.
 - For more opportunities to learn, build, and network with fellow developers in the ecosystem, check out our [upcoming hackathons](http://hackathons.filecoin.io/)!
 
-**Storage**
+### Storage
 
 - FF team members were onsite at FIL Hong Kong to hear from storage providers (SPs) and share the latest updates for SPs from the Foundation. You can find the full live stream of the event on [FF's YouTube channel](https://www.youtube.com/@filecoinfoundation/streams).
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - Nv22 has been [postponed until April 24](https://twitter.com/fil_gov/status/1777386747023724707). If you haven’t already, please ensure to follow your implementation’s instructions and update your nodes accordingly in preparation for the scheduled upgrade on April 24: [](https://github.com/filecoin-project/lotus/releases/tag/v1.26.2)
 
@@ -46,7 +46,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
   - [Forest](https://github.com/ChainSafe/forest/releases/tag/v0.17.2)
   - [Venus](https://venus.filecoin.io/operation/nv22-upgrade.html)
 
-**Fil Plus**
+### Fil Plus
 
 - 70 allocators have received their first 5 PiB allocation of DataCap for an approximate total of 350 PiB, and client applications and approvals have begun.
 - The Fil+ team is supporting more than 80 allocators on the [Filecoin-project-Registry.](https://github.com/filecoin-project/Allocator-Registry/issues)
@@ -54,12 +54,12 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Comms, Marketing, & Events
 
-**Marketing & Comms**
+### Marketing & Comms
 
 - Don't miss your chance to be featured in the [Filecoin Ecosystem Digest](https://airtable.com/appQReX5uAegC0yom/pagoKQqs5z4LCWleW/form), a digital and in-print magazine to showcase the innovation unfolding across the ecosystem. Submit an abstract for consideration by April 19.
 - Explore FF's deep dive into [Decentralized Compute](/blog/unleashing-the-power-of-decentralized-compute-with-filecoin) and how the Filecoin network can foster a more open, resilient, and democratized computing ecosystem.
 
-**Events**
+### Events
 
 - FF President Marta Belcher joined a crypto policy and regulation panel at [Links NYC 2024](https://www.chainalysis.com/links-nyc/), hosted by Chainalysis. [Read the event recap](https://www.chainalysis.com/blog/links-nyc-2024-day1/).
 - Megan Klimen spoke at Earth Commons, a conference series exploring the nexus of Web3 and climate at [LabWeek Public Goods](https://www.labweek.io/24-pg).

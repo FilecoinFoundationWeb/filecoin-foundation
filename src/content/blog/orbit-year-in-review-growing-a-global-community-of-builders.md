@@ -74,7 +74,7 @@ Watch Clara Tsao’s talk on Orbit from LabWeek
   allowfullscreen>
 </iframe>
 
-**Upcoming Events**
+## Upcoming Events
 
 All Orbit events are free and open to the public. Filecoin enthusiasts, students, and early builders are welcome to attend Orbit events in their city.
 
@@ -83,6 +83,6 @@ All Orbit events are free and open to the public. Filecoin enthusiasts, students
 - Filecoin Orbit Kenya FVM Workshop in Nairobi, Kenya on Dec. 16. [Register](https://lu.ma/ihit1).
 - Building Solutions with FVM in Dar es Salaam, Tanzania on Dec. 23. [Register](https://www.eventbrite.com/e/building-solutions-with-fvm-tickets-768245191047?aff=oddtdtcreator).
 
-**Interested in Getting Involved with Orbit?**
+## Interested in Getting Involved with Orbit?
 
 Submit an [application](https://airtable.com/appAGdqyYrqoFNuPI/shrKrbPOdxGNnMM9C) to become an Orbit ambassador.

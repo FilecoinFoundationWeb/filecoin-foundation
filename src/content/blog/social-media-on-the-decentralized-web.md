@@ -26,7 +26,7 @@ At Filecoin Foundation, we see the technologies in the Filecoin ecosystem offeri
 
 Here are some organizations leveraging these protocols and others to develop social media tools and networks:
 
-**Spritely**
+## Spritely
 
 The [Spritely Networked Communities Institute](https://spritely.institute/) was established to “put people in control of their own identity and build the technology that would enable a shift to collaborative and intentional security models prioritizing active consent.” Founded by Randy Farmer and Christine Lemmer-Webber, two pioneers in the space of open protocols for social software, Spritely is working on free, open-source software for developers to create a system devoid of gatekeepers and centralized data collection.
 
@@ -39,7 +39,7 @@ Spritely’s fundamental research will provide four important benefits to future
 
 Filecoin Foundation for the Decentralized Web (FFDW) recently [announced](https://medium.com/@FFDWeb/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media-36833f7273c9) an award to Spritely to further efforts to give people autonomy over identity and their relationships online.
 
-**Audius**
+## Audius
 
 User-generated content boomed during the Web 2.0 era. [Audius](https://audius.co/) is a music streaming platform based on modern decentralized technologies, which puts creators directly in contact with listeners and in control of their own products.
 
@@ -47,7 +47,7 @@ In today’s world, centralized music platforms offer little to no transparency 
 
 From Audius’ beginnings in 2018, it has used IPFS as a decentralized system for storage without up-front payment or lock-ins. Today, Audius is both a protocol and a platform built on top of several blockchain and community-run nodes. Audius is open source, open data and access, and open ownership.
 
-**Freenet 2**
+## Freenet 2
 
 Freenet 2 is modernizing the concepts originally developed by [Freenet](https://freenetproject.org/), software that empowers anonymous chatting, file sharing, browsing, and website publishing, pages known as “freesites.” Freenet users contribute a portion of their hard drive and storage bandwidth, creating a decentralized ecosystem that is far less susceptible to malware and other malicious cyberattacks.
 
@@ -61,7 +61,7 @@ And a few more:
 
 These are just a few of the many companies and non-profits creating an alternative to centralized internet platforms. Everything we do today happens online, and the data from almost every interaction we have is stored on a server somewhere. A decentralized web enables users to take back control of their information and know exactly what is happening to our most sensitive information.
 
-**Learn more about FF and FFDW Grants**
+## Learn more about FF and FFDW Grants
 
 The Filecoin Dev Grants program helps advance projects and aims to award additional grants to boost development in the ecosystem. Learn how you can apply for a [Filecoin Developer Grant](https://github.com/filecoin-project/devgrants/blob/master/README.md).
 

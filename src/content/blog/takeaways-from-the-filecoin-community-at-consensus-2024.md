@@ -21,7 +21,7 @@ In today's digital age, data is the lifeblood of nearly every industry, and the 
 
 The Filecoin network can broker [computational resources](/blog/unleashing-the-power-of-decentralized-compute-with-filecoin), incentivize compute execution, distribute workloads across available storage providers, and prove the validity of the computation's results. By harnessing the power of global networks, we can foster a more open, resilient, and democratized computing ecosystem.
 
-## Filecoin and AI 
+## Filecoin and AI
 
 No tool is better positioned to support the data economy than Filecoin: the key to data provenance, authenticity, and verifiability in the high-frequency information age. FF Head of Community Porter Stowell demoed AI agents built for Filecoin at Theoriq’s AI Odyssey event. He highlighted four reasons why Filecoin will power the data economy.
 

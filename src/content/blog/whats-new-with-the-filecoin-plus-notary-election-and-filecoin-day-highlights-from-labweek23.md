@@ -23,7 +23,7 @@ Also during LabWeek23, Filecoin Day featured updates from Filecoin Foundation (F
 
 Here’s a quick rundown:
 
-**Filecoin Plus Day**
+## Filecoin Plus Day
 
 <iframe
   src="https://www.youtube.com/embed/57Ua4AEWe_g?si=nFb8apksN6EgLB_w"
@@ -53,9 +53,9 @@ Clients looking to onboard valuable data onto the network apply to Allocators to
 
 Filecoin Plus Day also covered the program principles, open source tooling, compliance, disputes, and community ownership and governance. [](https://www.youtube.com/watch?v=57Ua4AEWe_g)
 
-**Filecoin Day**
+## Filecoin Day
 
-**Updates from FF & FFDW**
+## Updates from FF & FFDW
 
 FF Co-Founding Officer Megan Klimen outlined the Foundation’s work governing the Filecoin network, funding R&D projects for decentralized web technologies, and supporting the growth of the Filecoin ecosystem.
 
@@ -67,7 +67,7 @@ She also recapped a busy year of impactful events for the Foundation:
 
 Klimen outlined FF and FFDW’s social impact work with partners like Democracy’s Library, MuckRock, MIT Open Learning, and University of Maryland’s Easier Data Initiative, and highlighted the newly launched [DWeb Impact Resources Hub](https://ffdweb.org/resources/) –– a massive collection of blog posts, research papers, news, and tutorials at the intersection of the decentralized web and social good.
 
-**Filecoin and AI: Building the Next Generation of Data Storage**
+## Filecoin and AI: Building the Next Generation of Data Storage
 
 Experts [estimate](https://futurism.com/the-byte/experts-90-online-content-ai-generated) that AI-generated content could account for as much as 90% of information on the internet in just a few years.
 
@@ -77,7 +77,7 @@ FF Co-Founding Officer Clara Tsao discussed why the future of AI and enterprise 
 2. Trust in Proof of Storage: Filecoin’s proof-of-spacetime mechanism constantly proves that data is being stored securely, prevents tampering, and serves as a verifiable record of data integrity.
 3. Resilience to monopoly data ownership: Filecoin relies on a robust, global network of storage providers to maintain access to data, rather than Big Tech corporations susceptible to single points of failure or privacy breaches.
 
-**Crossing the Streams: A Ghostbusters-themed Approach to Scaling the Filecoin Ecosystem**
+## Crossing the Streams: A Ghostbusters-themed Approach to Scaling the Filecoin Ecosystem
 
 <iframe
   src="https://www.youtube.com/embed/yEQz2Bfis0Y?si=29gKIzFdScqYlLdQ"
@@ -97,7 +97,7 @@ O’Brien suggested that in order to scale the Filecoin ecosystem and DWeb more 
 
 Who you gonna call? [Filecoin Foundation](mailto:hello@fil.org).
 
-**Dogfooding Filecoin and Resources for Developers**
+## Dogfooding Filecoin and Resources for Developers
 
 Stef Magdalinksi, FF’s Senior Tech Lead, walked us through the User Experience Improvement Team’s (UXIT) experience dogfooding Filecoin tools from the developer perspective.
 

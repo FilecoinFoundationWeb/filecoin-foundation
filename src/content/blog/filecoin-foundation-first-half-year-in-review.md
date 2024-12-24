@@ -21,7 +21,7 @@ From spotlights highlighting over a dozen developer grantees and Filecoin storag
 
 Here’s a look back at all that’s taken place across the Filecoin community in 2022:
 
-**Dev Grant Spotlights**
+## Dev Grant Spotlights
 
 Filecoin Foundation (FF) and Protocol Labs regularly award funding to critical development projects to foster a more robust and efficient decentralized web through the Filecoin ecosystem. Last year saw [113 grants to organizations](https://filecoinfoundation.medium.com/2021-developer-grants-wrap-fab78b27a9fe) from more than a dozen countries around the world, a 69% YoY increase from the number of grants awarded in 2020. In the first half of 2022, we awarded 191 grants.
 
@@ -34,7 +34,7 @@ In the first half of 2022, Filecoin Foundation spotlighted a number of new devel
 - [JACKAL Storage](https://filecoinfoundation.medium.com/dev-grant-spotlight-jackal-storage-401316e98ab8) — A platform that provides a secure, private, and user-friendly solution for decentralized storage on the Filecoin network, JACKAL was awarded a developer grant to bring speed, utility, and privacy by default to fully decentralized cloud storage.
 - [4EVERLAND](https://filecoinfoundation.medium.com/dev-grant-spotlight-4everland-6b07da0aade6) — A blockchain technology-powered cloud computing platform designed to help developers build Web3 applications efficiently, 4EVERLAND was awarded a microgrant in recognition of its platform’s success and what these achievements are doing to enhance the Filecoin ecosystem.
 
-**Storage Provider Spotlights**
+## Storage Provider Spotlights
 
 Filecoin storage providers are the heart of the Filecoin network, in charge of storing, providing content and issuing new blocks to help create a robust and reliable service. We spotlighted a number of new storage providers to the network, including:
 
@@ -46,7 +46,7 @@ Filecoin storage providers are the heart of the Filecoin network, in charge of s
 - [FilSwan](https://filecoinfoundation.medium.com/filecoin-storage-provider-spotlight-filswan-bfcd6a248bb3) — A storage provider that specializes in edge data and goes to great lengths to bring data closer to the data source. Since 2018, the FilSwan team has provided decentralized storage and computing solutions by means of leveraging a combination of edge computing, IPFS/Filecoin storage, and decentralized ledger technologies. FilSwan provides a layer2 cross-chain solution for Web3 projects by integrating data, computing, and payment into one suite.
 - [Linix](https://filecoinfoundation.medium.com/filecoin-storage-provider-spotlight-linix-dde758a8d69f) — Founded nearly two decades ago by network architect Angelo Schalley as a side project to provide web hosting and cloud storage to friends and family, Linix began using the Filecoin network in mid 2021 for some of Linix’s backups and archiving data for some of its customers.
 
-**Grant Awards**
+## Grant Awards
 
 Last summer, Chainlink and Filecoin [launched a joint grant initiative](https://blog.chain.link/announcing-the-chainlink-and-filecoin-joint-grant-program/) to accelerate the development of hybrid smart contracts that combine Filecoin decentralized storage and Chainlink decentralized oracles. The joint grant initiative supports teams building and researching hybrid smart contract applications powered by tamper-proof file storage and universal connectivity. These co-sponsored grants are designed to help extend the Web3 stack beyond on-chain computation to include decentralized off-chain computation, data, and storage.
 
@@ -60,7 +60,7 @@ We announced three new exciting joint grants in the first half of 2022:
 
 Linkstorage’s grant will help build a unified data storage protocol that enables developers to synchronize, track, and monitor data between blockchains and IPFS/Filecoin through a Chainlink External Adapter. Web3 developers will be able to use the Linkstorage protocol to save large amounts of cryptographically proven, tamper-proof data onto IPFS and Filecoin in a secure and cost-effective manner.
 
-**Collaborations**
+## Collaborations
 
 **IPFS in Space**: In May, Filecoin Foundation and Lockheed Martin announced they are working together to [develop a program for deploying the Interplanetary File System (IPFS) in space.](https://filecoinfoundation.medium.com/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space-db9a15e66264)
 
@@ -76,11 +76,11 @@ This April, the collaboration entered its second phase when FF and ECC [announce
 
 Any proposal that leads to additional utility for both FIL and ZEC chains and their respective ecosystems would be considered, and innovation is encouraged. For more information about the program, email [ff-ecc-grants@fil.org](mailto:ff-ecc-grants@fil.org).
 
-**Events**
+## Events
 
 The Filecoin community was busy traveling the world, from Switzerland to Austin (twice). Here are some of the events hosted and attended over the past half year:
 
-**Decentralized Web Gateway at SXSW**
+### Decentralized Web Gateway at SXSW
 
 In March, we were among the tens of thousands who descended on Austin, Texas for the annual SXSW event. Our hosted programming included:
 
@@ -88,11 +88,11 @@ In March, we were among the tens of thousands who descended on Austin, Texas for
 - [Web3 Tools for Journalists](https://www.youtube.com/watch?v=ChbyTjtcfe0&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y&index=4): This session dove into the ethical role of journalists in the Web3 world, the new reporting and information gathering techniques they must utilize, and looks at new publishing models available for content monetization and hosting.
 - [Documenting and Authenticating History on Web3](https://www.youtube.com/watch?v=REnEz6nm830&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y&index=8): Web3 tools can capture, authenticate, and store our most sensitive digital records, including testimony and documentation about human rights violations, war crimes. This session discussed how we value information, and how to preserve an authenticated record of our collective history.
 
-**Decentralized Web Gateway at Davos**
+### Decentralized Web Gateway at Davos
 
 Hosted by Filecoin Foundation, the [Decentralized Web Gateway at Davos](/events/decentralized-web-gateway-davos), was a multi-day event held in late May in Davos, Switzerland. The week of content and events, held at a stunning historical English Church in Davos known as The Sanctuary, was dedicated to the benefits of decentralization and how decentralized tools can protect civil liberties and preserve humanity’s most important information., the Decentralized Web Gateway will bring the top voices from across crypto and Web3 to discuss the evolution of the internet and its ramifications for society.
 
-**FIL Austin**
+### FIL Austin
 
 Rounding out the first half of 2022 was our first-ever FIL Austin, a week of Filecoin community events held in early June and set against the backdrop of Consensus, CoinDesk’s annual crypto conference in Austin, Texas.
 

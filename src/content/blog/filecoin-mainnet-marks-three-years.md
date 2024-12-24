@@ -17,9 +17,9 @@ This week, Filecoin Foundation celebrates the three-year anniversary of the File
 
 Today’s internet is largely centralized, and most people say they don’t like that their data is in the hands of a few, ultra-powerful companies. In fact, 65% of Americans say they do not feel in control of how the information they share with websites and companies is used, according to a 2022 [Filecoin Foundation survey](/blog/new-survey-american-consumers-are-ready-to-change-up-to-web3).
 
-Since 2020, Filecoin’s open ecosystem of developers, storage providers, storage clients and other network participants has become the world’s largest decentralized storage network:
+Since 2020, Filecoin’s open ecosystem of developers, storage providers, storage clients and other network participants has become the world’s largest decentralized storage network.
 
-**Massive amounts of data:**
+## Massive Amounts of Data Stored
 
 - Today the Filecoin network has more than [10 EiB](https://dashboard.starboard.ventures/capacity-services) of storage capacity
 - M﻿ore than [3,300 storage provider systems](https://filecoin.io/blog/posts/filecoin-news-75/)
@@ -27,13 +27,13 @@ Since 2020, Filecoin’s open ecosystem of developers, storage providers, storag
 - [50M deals](https://dashboard.starboard.ventures/market-deals)
 - 130.4M NFTs
 
-**Strong ecosystem momentum**
+## Strong Ecosystem Momentum
 
 - 14.7K+ contributors on GitHub
 - More than 3,050 projects
 - More than 450 organizations building on the network
 
-**Community Highlights**
+## Community Highlights
 
 Our community soared to new heights in the past three years and accomplished some incredible achievements. Just a few recent highlights of data stored on the network:
 
@@ -49,38 +49,38 @@ Filecoin Foundation (FF) is one of many contributors to the Filecoin ecosystem, 
 
 Throughout the last three years, FF has awarded hundreds of developer grants to inspire more builders to engage with the Filecoin network. And our Filecoin Foundation and [Filecoin Foundation for the Decentralized Web](https://ffdweb.org/) Project Partners, such as Distributed Press, Guardian Project, OpenArchive, MuckRock, and Prelinger Archives, are creating and supporting better technology to preserve humanity’s most important information.
 
-**What’s Next for the Network**
+## What’s Next for the Network
 
 It took humankind until 2011 to generate 1 ZB of data. Now, Holon Global Investments [predicts](https://holon.investments/the-holon-data-report-part-3-a-history-of-data-storage-and-a-closer-look-at-data-centres/#:~:text=Reports-,The%20Holon%20Data%20Report%20Part%203%3A%20A%20history%20of%20data,closer%20look%20at%20data%20centres&text=It%20took%20humankind%20until%202011,systems%20used%20to%20store%20data.) humans will produce 75,000 ZB of data by 2040. With data fueling advancements in artificial intelligence and computing, decentralized storage provides a more equitable and reliable solution to handle massive amounts of data.
 
-**Filecoin Virtual Machine (FVM)**
+## Filecoin Virtual Machine (FVM)
 
 This past spring, the Filecoin Virtual Machine (FVM) launched on the Filecoin network, solidifying the network as an L1 uniquely positioned to power the open data economy. With data, AI, and compute, there is more to come for FVM!
 
 Learn more at [fvm.filecoin.io](https://fvm.filecoin.io/).
 
-**Retrievals**
+## Retrievals
 
 Project Saturn, a decentralized CDN network built on Filecoin launched in 2022, aims to democratize the CDN market. In just under a year, Saturn has reached over 4,800 global points of presence and the capacity to serve 478 million daily requests.
 
 Learn more at [retrieval.market](https://retrieval.market/).
 
-**Compute-Over-Data**
+## Compute-Over-Data
 
 Compute-over-data (CoD) platforms, like Bacalhau, aim to shift computational resources to where data is stored, rather than moving data for processing. This approach, particularly when deployed on decentralized protocols like Filecoin, offers flexible and scalable solutions for data processing, providing more efficient alternatives to traditional centralized systems in the era of Big Data and AI.
 
-**Interplanetary Consensus**
+## Interplanetary Consensus
 
 The next frontier in Filecoin scalability is Interplanetary Consensus (IPC), unlocking unmatched capacity and customizability, and enabling new use cases.
 
 Learn more at [fil.space](https://fil.space/).
 
-**Governance**
+## Governance
 
 FIP001v2 initiative is a project led by Filecoin Foundation introducing changes to the Filecoin Improvement Process (FIPs) and governance process.
 
-**Thank you!**
+## Thank You
 
 Today, we say a big thank you to the storage providers, builders, researchers, enterprises, clients, and all those helping to build a better internet and preserve humanity's most important information!
 
-**To celebrate, we’re offering 10% on the [Filecoin Foundation Swag Store](https://swag.fil.org) with the code HBDFILECOIN (ends on Friday, Oct. 20).**
+_To celebrate, we’re offering 10% on the [Filecoin Foundation Swag Store](https://swag.fil.org) with the code HBDFILECOIN (ends on Friday, Oct. 20)._

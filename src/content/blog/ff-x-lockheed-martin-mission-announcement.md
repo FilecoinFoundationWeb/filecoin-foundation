@@ -19,8 +19,6 @@ seo:
     Explore the details.
 ---
 
-_Effort Will Use the Interplanetary File System (IPFS) to Speed Up Communications Across Long Distances_
-
 [Filecoin Foundation](http://www.fil.org) (FF) announced today a first-of-its-kind mission to deploy the Interplanetary File System (IPFS) in space. The mission will take place in 2023 aboard Lockheed Martin’s LM 400 Technology Demonstrator spacecraft.
 
 Previously, in May 2022 in Davos, FF [announced an initial effort](https://filecoinfoundation.medium.com/filecoin-foundation-and-lockheed-martin-bring-decentralized-storage-to-space-db9a15e66264) with Lockheed Martin to deploy IPFS in space to improve the speed of data transfer across long distances. This mission is the next step in that project, bringing the benefits of decentralized storage to space and exploring use cases for how IPFS can enable better interplanetary communication and data transfer.
@@ -35,6 +33,6 @@ The mission will demonstrate a space-to-ground communication use case for IPFS. 
 
 IPFS is a decentralized protocol for storing and sharing data that uses content-addressing to uniquely identify files. IPFS is a foundational technology for the Filecoin network, a cryptocurrency-powered decentralized storage network. The IPFS software layer for space is designed to be usable for a wide range of use cases and architectures and topologies, including space-to-space communication. The software is open-source licensed and is being [developed in public](https://github.com/ipfs-shipyard/space).
 
-**About Filecoin Foundation**
+## About Filecoin Foundation
 
 Filecoin Foundation (FF) facilitates governance of the Filecoin network, funds research and development projects for decentralized web technologies, and supports the growth of the Filecoin ecosystem and community. Its mission is to preserve humanity’s most important information.

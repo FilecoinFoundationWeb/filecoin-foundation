@@ -19,7 +19,7 @@ Today, Fast Company featured the Filecoin Network in its fourth annual [Next Big
 
 This year, 138 technologies developed by established companies, startups, or research teams are featured for their potential to revolutionize the lives of consumers, businesses, and society overall. The Filecoin Network was recognized as a key piece of internet infrastructure powering decentralized artificial intelligence.
 
-## How Filecoin is Shaping the Future of AI 
+## How Filecoin is Shaping the Future of AI
 
 As the AI industry rapidly expands – now valued at $9 trillion according to the latest [State of AI Report](https://www.stateof.ai/) – Filecoin’s decentralized storage network offers an open-source alternative for data storage.
 
@@ -33,7 +33,7 @@ Flexibility and Scale: Additionally, at a time when tech giants are [investing b
 
 The Filecoin network is the backbone for a better version of the web. Data storage is what enables the internet to function and underpins the credibility and integrity of AI systems. Read more about [How Decentralized AI and Data Storage Are Building Trust in AI](/blog/how-decentralized-ai-and-data-storage-is-building-trust-in-ai).
 
-## A Look at How AI Organizations Are Leveraging Filecoin 
+## A Look at How AI Organizations Are Leveraging Filecoin
 
 Filecoin Foundation recently [announced collaborations](/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai) with SingularityNET, Theoriq, Bagel, Nuklai, and [Aethir](https://cryptobriefing.com/aethir-filecoin-collaboration-gpu/), each highlighting the versatility of the Filecoin network as decentralized AI infrastructure. The Filecoin network’s decentralized infrastructure provides the foundational layer that enables AI applications to scale efficiently, securely, and transparently.
 

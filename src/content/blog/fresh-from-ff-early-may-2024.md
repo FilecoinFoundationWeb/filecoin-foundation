@@ -26,26 +26,26 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 
 ## Ecosystem
 
-**Developer Advocacy**
+### Developer Advocacy
 
 - Winners for the Data Economy Hackathon were announced on April 17. Participants submitted [over 120 projects](https://dorahacks.io/hackathon/filecoin-data-economy/buidl), including 67 for the Filecoin track and 20 for Interplanetary Consensus (IPC).
 - FF Developer Advocate Jenks Guo gave a keynote at TeamZ Summit in Japan on AI Trust and Filecoin, and spoke at the Orbit Filecoin Ecosystem Showcase side event sharing the latest developments, growth, and transformative potential of Filecoin's decentralized storage network.
 
 ## Network Operations
 
-**Governance**
+### Governance
 
 - The Nv22 Dragon upgrade introduced several key improvements fostering a more efficient, user-friendly, and scalable network. Learn [more](/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility).
 - Engage and contribute to the [development of FIPs](https://github.com/filecoin-project/FIPs/discussions) by participating in Filecoin Foundation's monthly [community governance calls](https://calendar.google.com/calendar/embed?src=c_909343f97c15e8f23dda6e2612e62fcdee14bceabd8869abe4a52d793bf42b98%40group.calendar.google.com&ctz=America%2FToronto).
 
-**Fil Plus**
+### Fil Plus
 
 - The first cohort of allocators is about to expend their initial 5 PiB DataCap allocation. As a result, the Filecoin Plus team is beginning its new auditing process to ensure allocators are maintaining their diligence plans before receiving the next 5 PiB tranche of DataCap.
 - [The sixth Filecoin Plus Governance call](https://www.youtube.com/watch?v=l7BxddPaSg4) of 2024 took place on April 16 to discuss the Filecoin Plus program, including allocator responsibilities, weekly distribution schedules, a DataCap refresh, tooling updates, and more. To attend live meetings, add the [Filecoin Plus Governance calendar](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnJVVnlJaTZJRldFSHNXNXoydXkxT0JzRHVvd3xBQ3Jtc0ttOTB4WVFoM29sUXkxejczRFcxVHNaNHBtcTcxTGJWWXRkUEkwT0ZhQ3NHMXJ6bE9la3JxTndJSjZ2SW1WOXAtbnZ1OFJ6LVZucHFzTnFMZDNaWGlvS3YwUXFnSWU4Uk1obVFFM2IyT0owUHEwUjgzdw&q=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fembed%3Fsrc%3Dc_k1gkfoom17g0j8c6bam6uf43j0%2540group.calendar.google.com%26ctz%3DAmerica%252FLos_Angeles&v=l7BxddPaSg4).
 
 ## Comms, Marketing, & Events
 
-**Marketing & Comms**
+### Marketing & Comms
 
 - The April 18 edition of the Solana Community Update [highlighted](https://links.solana.org/e/evib?_t=6b1b9c346a704d0389c0a54539fcad7b&_m=cce4b150eead42069c1cfd3da5c8fb4c&_e=VSw4mjgbOriVAms_zEMB8IuPB7YevzCJ0O2EhIMt-H0uXFS4GEtKNCh-Sj4a11nG) the Triton One project to archive the entire Solana transaction history [on Filecoin](https://twitter.com/FilFoundation/status/1778828615557214380), making all of Solana's history accessible, content addressable, and available through a variety of means.
 - Read [Preserving Human Rights Data with the Filecoin Network: A Journey into the Decentralized Web with HRDAG](https://ffdweb.org/blog/preserving-human-rights-data-with-the-filecoin-network-a-journey-into-the-decentralized-web-with-hrdag/), a guest post written by Patrick Ball, HRDAG’s Director of Research, exploring how data serves as the backbone of truth in our collective memory.
@@ -53,7 +53,7 @@ _Check out the latest updates about what Filecoin Foundation team has been up to
 - Senior Fellow and DWeb Strategy Danny O’Brien delivered opening remarks at a [webinar on community archiving and decentralized storage](https://youtu.be/fbbqdH73GHY) hosted by TechSoup, an FFDW project partner. Other projects partners OpenArchive and Starling Lab and FF dev grantee TRANSFER performed demos of their tools.
 - Founding Officer Clara Tsao and Head of Events Meredith Pallante participated in roundtable discussions at the [Project Liberty Summit](https://www.mccourt.com/project-liberty-institute-inaugural-summit-hosted-in-boston/) at MIT –– a gathering focused on how to ethically design, develop, and govern the internet of tomorrow.
 
-**Events**
+### Events
 
 - See you at [Consensus](https://consensus2024.coindesk.com/), May 29-31 in Austin, Texas! Find FF and teams across the Filecoin ecosystem at events throughout the week. [Stay tuned for more details](https://hub.fil.org/consensus-24).
 - Save the date for FIL Brussels alongside EthCC, July 8-11 in Brussels, Belgium. [Stay tuned for more details](/events).

@@ -16,8 +16,6 @@ seo:
     celebrate innovation in decentralized tech.
 ---
 
-_New joint award program supports Web3 education and learning_
-
 We are excited to announce that Filecoin Foundation and [Unfinished](https://unfinished.com/) are launching Explorer Awards, a joint program to support the growth of the decentralized web movement and help others catalyze their Web3 learning.
 
 The Explorer Awards is a $100,000 funding pool that will disperse between $1,000 and $10,000 to support projects that are advancing learning and development in decentralized technology. The award is intended to fund anything from an NFT workshop to a metaverse exhibition to a Web3 dinner event. And we’re ready to hear about any initiative that furthers work and knowledge in the Web3 space.
