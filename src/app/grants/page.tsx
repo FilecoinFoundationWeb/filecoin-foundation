@@ -58,6 +58,8 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
+const hasFeaturedGrantGraduates = grantGraduates.length > 0
+
 export default function Grants() {
   return (
     <PageLayout>
@@ -101,9 +103,11 @@ export default function Grants() {
         </CardGrid>
       </PageSection>
 
-      <PageSection kicker="Past Recipients" title="Grant Graduates">
-        <FeaturedGrantGraduates grantGraduates={grantGraduates} />
-      </PageSection>
+      {hasFeaturedGrantGraduates && (
+        <PageSection kicker="Past Recipients" title="Grant Graduates">
+          <FeaturedGrantGraduates grantGraduates={grantGraduates} />
+        </PageSection>
+      )}
 
       <PageSection
         kicker="Application Process"
