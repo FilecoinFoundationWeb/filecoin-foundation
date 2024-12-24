@@ -8,12 +8,12 @@ header:
     ]
 featured_grant_graduates:
   [
-    src/content/ecosystem-explorer/projects/cavalry.md,
-    src/content/ecosystem-explorer/projects/filedrive.md,
-    src/content/ecosystem-explorer/projects/fileverse.md,
-    src/content/ecosystem-explorer/projects/museum-of-crypto-art-m-c.md,
-    src/content/ecosystem-explorer/projects/opsci.md,
-    src/content/ecosystem-explorer/projects/portrait.md,
+    src/content/ecosystem-explorer/cavalry.md,
+    src/content/ecosystem-explorer/filedrive.md,
+    src/content/ecosystem-explorer/fileverse.md,
+    src/content/ecosystem-explorer/museum-of-crypto-art-m-c.md,
+    src/content/ecosystem-explorer/opsci.md,
+    src/content/ecosystem-explorer/portrait.md,
   ]
 seo:
   title: "Filecoin Foundation Grants & Funding Opportunities"

@@ -325,7 +325,7 @@ collections:
             label: "Featured Grant Graduates"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "src/content/ecosystem-explorer/projects/{{slug}}.md"
+            value_field: "src/content/ecosystem-explorer/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -345,7 +345,7 @@ collections:
             label: "Featured Ecosystem Projects"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "src/content/ecosystem-explorer/projects/{{slug}}.md"
+            value_field: "src/content/ecosystem-explorer/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -503,7 +503,7 @@ collections:
   - name: ecosystem_projects
     label: Ecosystem Projects
     label_singular: Ecosystem Project
-    folder: "src/content/ecosystem-explorer/projects/"
+    folder: "src/content/ecosystem-explorer/"
     preview_path: "ecosystem-explorer/{{slug}}"
     create: true
     extension: md
