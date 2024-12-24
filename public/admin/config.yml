@@ -528,6 +528,10 @@ collections:
         options:
           - label: "Artificial Intelligence - AI Productivity & Utilities"
             value: "ai-productivity-utilities"
+          - label: "Education, Academia & Health - Education"
+            value: "education"
+          - label: "Education, Academia & Health - Academia"
+            value: "academia"
           - label: "Education, Academia & Health - Health"
             value: "health"
           - label: "Finance - Leasing"
