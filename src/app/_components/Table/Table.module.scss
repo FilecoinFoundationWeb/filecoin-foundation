@@ -4,6 +4,27 @@
 
 .cell {
   @apply whitespace-nowrap px-5 text-left font-normal;
+
+  thead & {
+    &:first-child {
+      @apply rounded-l-lg;
+    }
+
+    &:last-child {
+      @apply rounded-r-lg;
+    }
+  }
+
+  tbody tr:last-child & {
+    &:first-child {
+      @apply rounded-bl-lg;
+    }
+
+    &:last-child {
+      @apply rounded-br-lg;
+    }
+  }
+
   &:first-child {
     @apply pl-10;
   }
