@@ -5,7 +5,7 @@ export const allowedCategoryGroups = [
   'Media & Entertainment',
   'Network',
   'Public Goods & DWeb',
-  'Science, Climate & Space',
+  'Climate & Decentralized Science',
   'Storage',
   'Tooling & Productivity',
 ]

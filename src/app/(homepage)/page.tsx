@@ -6,13 +6,9 @@ import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import {
-  BaseFrontmatterSchema,
-  HomePageFrontmatterSchema,
-} from '@/schemas/FrontmatterSchema'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -23,35 +19,21 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
-
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
+import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 
-const ecosystemProjects = getEcosystemProjectsData()
-
-const {
-  header,
-  seo,
-  featuredEcosystemProjects: featuredEcosystemProjectPaths,
-} = getFrontmatter({
+const { header, seo, featuredEcosystemProjects } = getFrontmatter({
   path: PATHS.HOME,
-  zodParser: HomePageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 const { header: digestPageHeader } = getFrontmatter({
   path: PATHS.DIGEST,
   zodParser: BaseFrontmatterSchema.parse,
 })
-
-const featuredEcosystemProjectsSlugs = featuredEcosystemProjectPaths.map(
-  extractSlugFromFilename,
-)
-
-const featuredEcosystemProjects = ecosystemProjects.filter((item) =>
-  featuredEcosystemProjectsSlugs?.includes(item.slug),
-)
 
 export const metadata = createMetadata({
   seo,
@@ -60,6 +42,8 @@ export const metadata = createMetadata({
 })
 
 export default function Home() {
+  const { featuredBlogPosts, hasFeaturedBlogPosts } = getFeaturedBlogPosts()
+
   return (
     <NoBreadCrumbsLayout>
       <PageLayout>
@@ -114,6 +98,7 @@ export default function Home() {
           <FeaturedEcosystemProjects
             ecosystemProjects={featuredEcosystemProjects}
           />
+
           <Button
             className="sm:self-center"
             href={PATHS.ECOSYSTEM_EXPLORER.path}
@@ -133,16 +118,20 @@ export default function Home() {
           }}
         />
 
-        <PageSection
-          kicker="Stay Updated"
-          title="News & Blog"
-          description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
-        >
-          <FeaturedBlogPosts />
-          <Button className="sm:self-center" href={PATHS.BLOG.path}>
-            View All
-          </Button>
-        </PageSection>
+        {hasFeaturedBlogPosts && (
+          <PageSection
+            kicker="Stay Updated"
+            title="News & Blog"
+            description="The latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
+          >
+            <FeaturedBlogPosts featuredBlogPosts={featuredBlogPosts} />
+
+            <Button className="sm:self-center" href={PATHS.BLOG.path}>
+              View All
+            </Button>
+          </PageSection>
+        )}
+
         <CTASection
           title="Become Part of Our Vibrant Community"
           description="Join the Filecoin project Slack to engage with the community and stay updated on the latest developments."

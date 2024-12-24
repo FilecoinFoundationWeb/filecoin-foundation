@@ -8,22 +8,16 @@ import { getCategoryLabel } from '@/utils/categoryUtils'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
-import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import type { BlogPost } from '@/blog/types/blogPostType'
 import { getMetaData } from '@/blog/utils/getMetaData'
-import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
-const blogPosts = getBlogPostsData()
-const MAX_POSTS = 4
+type FeaturedBlogPostsProps = {
+  featuredBlogPosts: Array<BlogPost>
+}
 
-const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
-
-const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_POSTS)
-
-export function FeaturedBlogPosts() {
-  if (featuredBlogPosts.length === 0) {
-    return <p>No featured posts available.</p>
-  }
-
+export function FeaturedBlogPosts({
+  featuredBlogPosts,
+}: FeaturedBlogPostsProps) {
   return (
     <CardGrid cols="smTwo">
       {featuredBlogPosts.map(
