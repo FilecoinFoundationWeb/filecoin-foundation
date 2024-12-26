@@ -27,6 +27,7 @@ async function fetchAllocatorMetaData(
 ) {
   try {
     const response = await fetch(allocatorUrl, {
+      next: { revalidate: 3600 },
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_AUTH_TOKEN}`,
       },
