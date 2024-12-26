@@ -2,7 +2,7 @@
 
 import slugify from 'slugify'
 
-import { ECOSYSTEM_PROJECTS_DIRECTORY_PATH } from '@/constants/paths'
+import { PATHS } from '@/constants/paths'
 
 import type {
   EcosystemProjectFormDataWithoutLogo,
@@ -42,7 +42,7 @@ export async function submitProject({
     message: 'New Ecosystem Project',
     markdown: {
       template: markdownTemplate,
-      path: `${ECOSYSTEM_PROJECTS_DIRECTORY_PATH}/${slug}.md`,
+      path: `${PATHS.ECOSYSTEM_EXPLORER.entriesContentPath}/${slug}.md`,
     },
     file: {
       base64: formattedFile.base64,
