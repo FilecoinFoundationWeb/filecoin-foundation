@@ -15,12 +15,13 @@ import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export function generateMetadata({ params }: DigestArticleProps) {
+export async function generateMetadata(props: DigestArticleProps) {
+  const params = await props.params
   const { slug } = params
   const data = getDigestArticleData(slug)
 
@@ -33,7 +34,8 @@ export function generateMetadata({ params }: DigestArticleProps) {
   })
 }
 
-export default function DigestArticle({ params }: DigestArticleProps) {
+export default async function DigestArticle(props: DigestArticleProps) {
+  const params = await props.params
   const { slug } = params
   const data = getDigestArticleData(slug)
 

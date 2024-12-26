@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
@@ -56,7 +56,7 @@ const NoSSRPagination = dynamic(
 )
 
 type Props = {
-  searchParams: NextServerSearchParams
+  searchParams: AsyncNextServerSearchParams
 }
 
 const events = getEventsData()
@@ -80,7 +80,9 @@ export const metadata = createMetadata({
 
 const locationOptions = getLocationListboxOptions()
 
-export default function Events({ searchParams }: Props) {
+export default async function Events(props: Props) {
+  const searchParams = await props.searchParams
+
   if (!featuredEvent) {
     throw new Error('Featured event not found')
   }

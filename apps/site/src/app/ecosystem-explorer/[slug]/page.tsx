@@ -21,14 +21,15 @@ import { PageHeader } from './components/PageHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 const categories = getEcosystemCMSCategories()
 
-export function generateMetadata({ params }: EcosystemProjectProps) {
+export async function generateMetadata(props: EcosystemProjectProps) {
+  const params = await props.params;
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 
@@ -41,7 +42,8 @@ export function generateMetadata({ params }: EcosystemProjectProps) {
   })
 }
 
-export default function EcosystemProject({ params }: EcosystemProjectProps) {
+export default async function EcosystemProject(props: EcosystemProjectProps) {
+  const params = await props.params;
   const { slug } = params
   const data = getEcosystemProjectData(slug)
 

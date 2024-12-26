@@ -1,4 +1,4 @@
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
@@ -37,10 +37,11 @@ const categories = getEcosystemCMSCategories()
 const categoryOptions = mapCMSOptionsToListboxFormat(categories)
 
 type Props = {
-  searchParams: NextServerSearchParams
+  searchParams: AsyncNextServerSearchParams
 }
 
-export default function EcosystemExplorerProjectForm({ searchParams }: Props) {
+export default async function EcosystemExplorerProjectForm(props: Props) {
+  const searchParams = await props.searchParams
   const safeParams = SearchParamsSchema.safeParse(searchParams)
 
   if (safeParams.data?.status === 'success') {

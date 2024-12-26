@@ -15,12 +15,13 @@ import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export function generateMetadata({ params }: BlogPostProps) {
+export async function generateMetadata(props: BlogPostProps) {
+  const params = await props.params
   const { slug } = params
   const data = getBlogPostData(slug)
 
@@ -33,7 +34,8 @@ export function generateMetadata({ params }: BlogPostProps) {
   })
 }
 
-export default function BlogPost({ params }: BlogPostProps) {
+export default async function BlogPost(props: BlogPostProps) {
+  const params = await props.params
   const { slug } = params
   const data = getBlogPostData(slug)
   const { title, image, content, publishedOn, category } = data

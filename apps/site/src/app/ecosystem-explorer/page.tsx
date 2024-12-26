@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY } from '@/constants/searchParams'
@@ -51,7 +51,7 @@ const NoSSRPagination = dynamic(
 )
 
 type Props = {
-  searchParams: NextServerSearchParams
+  searchParams: AsyncNextServerSearchParams
 }
 
 const ecosystemProjects = getEcosystemProjectsData()
@@ -74,7 +74,9 @@ export const metadata = createMetadata({
 
 const categories = getEcosystemCMSCategories()
 
-export default function EcosystemExplorer({ searchParams }: Props) {
+export default async function EcosystemExplorer(props: Props) {
+  const searchParams = await props.searchParams
+
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: ecosystemProjects,
