@@ -48,14 +48,10 @@ export function createMetadata({
     description: parsedEnrichedSEO.description,
     openGraph: {
       title: parsedEnrichedSEO['open-graph']?.title,
-      description: parsedEnrichedSEO.description,
+      description: parsedEnrichedSEO['open-graph']?.description,
       images: parsedEnrichedSEO['open-graph']?.image,
     },
-    twitter: {
-      card: parsedEnrichedSEO.twitter?.card,
-      site: parsedEnrichedSEO.twitter?.site,
-      creator: parsedEnrichedSEO.twitter?.creator,
-    },
+    twitter: { ...parsedEnrichedSEO.twitter },
     alternates: {
       canonical: path,
     },
