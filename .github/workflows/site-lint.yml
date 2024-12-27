@@ -21,7 +21,8 @@ jobs:
        with:
          node-version: "20.11.1"
 
-     - run: npm install
+      run: npm install --legacy-peer-deps
+
 
      - name: Generate CMS configuration schema
        working-directory: ./apps/site
