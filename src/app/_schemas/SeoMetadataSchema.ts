@@ -13,7 +13,6 @@ const OpenGraphMetadataSchema = z
     image: z.string().optional(),
   })
   .strict()
-  .optional()
 
 const TwitterMetadataSchema = z
   .object({
@@ -22,14 +21,15 @@ const TwitterMetadataSchema = z
     creator: z.string().optional(),
   })
   .strict()
-  .optional()
 
-const BaseSeoMetadataSchema = z.object({
-  description: z.string().max(seo_metadata_description_max_characters),
-  image: z.string().optional(),
-  'open-graph': OpenGraphMetadataSchema,
-  twitter: TwitterMetadataSchema,
-})
+const BaseSeoMetadataSchema = z
+  .object({
+    description: z.string().max(seo_metadata_description_max_characters),
+    image: z.string().optional(),
+    'open-graph': OpenGraphMetadataSchema.optional(),
+    twitter: TwitterMetadataSchema.optional(),
+  })
+  .strict()
 
 export const SeoMetadataSchema = BaseSeoMetadataSchema.extend({
   title: z.string(),
