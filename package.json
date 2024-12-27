@@ -87,6 +87,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "sass": "^1.77.8",
+    "turbo": "^2.3.3",
     "typescript": "^5",
     "yaml-loader": "^0.8.1"
   }
