@@ -1,5 +1,7 @@
 'use client'
 
+import { cloneElement } from 'react'
+
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
 
@@ -32,6 +34,7 @@ export function NavigationPopover({
           <Icon component={CaretDown} size={20} color="brand-400" />
         </span>
       </PopoverButton>
+
       <PopoverPanel
         transition
         className="z-10 transition duration-200 ease-out data-[closed]:translate-y-1 data-[open]:translate-y-0 data-[closed]:opacity-0 data-[open]:opacity-100"
@@ -41,17 +44,19 @@ export function NavigationPopover({
           padding: SPACE_BETWEEN_PANEL_AND_VIEWPORT,
         }}
       >
-        {(props) => (
-          <div
-            className="overflow-hidden rounded-2xl border border-brand-500 bg-brand-800 p-4"
-            onClick={(e) => {
-              e.stopPropagation()
+        {(props) => {
+          const clonedChildren = cloneElement(children, {
+            onClick: function closeOnClickWithin() {
               props.close()
-            }}
-          >
-            {children}
-          </div>
-        )}
+            },
+          })
+
+          return (
+            <div className="overflow-hidden rounded-2xl border border-brand-500 bg-brand-800 p-4">
+              {clonedChildren}
+            </div>
+          )
+        }}
       </PopoverPanel>
     </Popover>
   )

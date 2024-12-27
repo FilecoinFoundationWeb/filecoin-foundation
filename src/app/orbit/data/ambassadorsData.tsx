@@ -1,5 +1,3 @@
-import type { JSX } from 'react'
-
 import type { StaticImageProps } from '@/types/imageType'
 
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
