@@ -40,7 +40,7 @@
     "joi": "^17.13.3",
     "js-yaml": "^4.1.0",
     "netlify-identity-widget": "^1.9.2",
-    "next": "^14.2.5",
+    "next": "^14.2.22",
     "next-plausible": "^3.12.1",
     "nuqs": "^2.1.1",
     "pluralize": "^8.0.0",
