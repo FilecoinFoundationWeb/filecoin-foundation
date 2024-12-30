@@ -2,8 +2,8 @@ import { useMemo } from 'react'
 
 import slugify from 'slugify'
 
-import { type NextServerSearchParams } from '@/types/searchParams'
-import { type Object } from '@/types/utils'
+import type { NextServerSearchParams } from '@/types/searchParams'
+import type { Object } from '@/types/utils'
 
 import { SEARCH_KEY } from '@/constants/searchParams'
 
