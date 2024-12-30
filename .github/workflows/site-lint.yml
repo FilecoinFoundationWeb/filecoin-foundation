@@ -1,0 +1,32 @@
+name: Site Lint
+
+on:
+ push:
+   paths:
+     - 'apps/site/**'
+   branches: [main, cms/*, ecosystem-submission/*]
+ pull_request:
+   paths:
+     - 'apps/site/**'
+   branches: [main, cms/*, ecosystem-submission/*]
+
+jobs:
+ lint:
+   runs-on: ubuntu-latest
+
+   steps:
+     - uses: actions/checkout@v2
+
+     - uses: actions/setup-node@v2
+       with:
+         node-version: "20.11.1"
+
+     - run: npm install
+
+     - name: Generate CMS configuration schema
+       working-directory: ./apps/site
+       run: npm run prebuild
+
+     - name: Run linter
+       working-directory: ./apps/site
+       run: npm run lint
