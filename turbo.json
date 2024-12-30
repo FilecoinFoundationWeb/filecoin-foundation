@@ -3,6 +3,24 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
+      "env": [
+        "AIRTABLE_READ_ONLY_TOKEN",
+        "ENCRYPTION_ENDPOINT_ACCESS_KEY",
+        "ENCRYPTION_SECRET_KEY",
+        "GITHUB_AUTH_TOKEN",
+        "NEWSLETTER_SUBSCRIPTION_API_KEY",
+        "NEWSLETTER_SUBSCRIPTION_API_URL",
+        "NEWSLETTER_SUBSCRIPTION_PUBLICATION_ID",
+        "PERCY_TOKEN",
+        "SENTRY_AUTH_TOKEN",
+        "SENTRY_TELEMETRY"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env.production.local",
+        ".env.production",
+        ".env"
+      ],
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "check-types": {
@@ -10,7 +28,13 @@
     },
     "dev": {
       "persistent": true,
-      "cache": false
+      "cache": false,
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env.development.local",
+        ".env.development",
+        ".env"
+      ]
     }
   }
 }
