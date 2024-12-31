@@ -20,17 +20,12 @@ export const allocatorsTableColumnsData = [
       }
 
       return (
-        <div className="w-[200px] overflow-hidden">
+        <div className="w-[200px]">
           <ExternalTextLink
             aria-label={`Apply for ${name} allocator`}
             href={link}
             title={name}
-            style={{
-              display: 'block',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              whiteSpace: 'nowrap',
-            }}
+            className="!block truncate"
           >
             {name}
           </ExternalTextLink>
