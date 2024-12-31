@@ -127,7 +127,7 @@
     "import/resolver": {
       "typescript": {
         "alwaysTryTypes": true,
-        "project": ["./tsconfig.json", "./cypress/tsconfig.json"]
+        "project": ["./apps/site/tsconfig.json", "./cypress/tsconfig.json"]
       }
     }
   }
