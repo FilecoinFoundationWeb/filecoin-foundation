@@ -6,17 +6,22 @@ type TableProps = {
   children: React.ReactNode
   layout?: 'auto' | 'fixed'
   freezeFirstColumn?: boolean
+  freezeHeader?: boolean
 }
 
 export function Table({
   children,
   layout = 'auto',
   freezeFirstColumn = false,
+  freezeHeader = false,
 }: TableProps) {
   return (
-    <div className={styles.tableWrapper}>
+    <div
+      className={styles.tableWrapper}
+      data-freeze-first-column={freezeFirstColumn}
+      data-freeze-header={freezeHeader}
+    >
       <table
-        data-freeze-first-column={freezeFirstColumn}
         className={clsx(
           styles.table,
           layout === 'auto' && 'table-auto',
