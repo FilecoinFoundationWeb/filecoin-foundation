@@ -5,6 +5,7 @@
   "packageManager": "npm@10.9.0",
   "scripts": {
     "build": "turbo run build",
+    "start": "turbo run start",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test"

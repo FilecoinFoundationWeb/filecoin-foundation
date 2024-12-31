@@ -35,6 +35,11 @@
         ".env.development",
         ".env"
       ]
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
     }
   }
 }
