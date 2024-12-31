@@ -1,16 +1,24 @@
 import { clsx } from 'clsx'
 
+import styles from './Table.module.scss'
+
 type TableProps = {
   children: React.ReactNode
   layout?: 'auto' | 'fixed'
+  freezeFirstColumn?: boolean
 }
 
-export function Table({ children, layout = 'auto' }: TableProps) {
+export function Table({
+  children,
+  layout = 'auto',
+  freezeFirstColumn = false,
+}: TableProps) {
   return (
-    <div className="w-full overflow-x-auto focus:brand-outline">
+    <div className={styles.tableWrapper}>
       <table
+        data-freeze-first-column={freezeFirstColumn}
         className={clsx(
-          'w-full border-separate border-spacing-0 rounded-lg border border-brand-300',
+          styles.table,
           layout === 'auto' && 'table-auto',
           layout === 'fixed' && 'table-fixed',
         )}

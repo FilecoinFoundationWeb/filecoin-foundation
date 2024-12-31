@@ -13,12 +13,9 @@ export function TableBody<Data extends RowData>({
   const { rows } = rowModel
 
   return (
-    <tbody className="border-t border-brand-500">
+    <tbody>
       {rows.map((row) => (
-        <tr
-          key={row.id}
-          className={clsx(styles.row, 'odd:bg-brand-700 even:bg-brand-800')}
-        >
+        <tr key={row.id} className={styles.row}>
           {row.getVisibleCells().map((cell) => {
             const { meta } = cell.column.columnDef
 

@@ -51,7 +51,7 @@ export function AllocatorsTableWithFilters({
 
   return (
     <>
-      <div className="sticky top-3 z-50 mb-6">
+      <div className="sticky top-3 z-10 mb-6">
         <AllocatorsTableFilters table={table} />
       </div>
 
