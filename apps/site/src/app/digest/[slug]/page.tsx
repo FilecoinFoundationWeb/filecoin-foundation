@@ -21,8 +21,7 @@ type DigestArticleProps = {
 }
 
 export async function generateMetadata(props: DigestArticleProps) {
-  const params = await props.params
-  const { slug } = params
+  const { slug } = await props.params
   const data = getDigestArticleData(slug)
 
   return createMetadata({
@@ -35,8 +34,7 @@ export async function generateMetadata(props: DigestArticleProps) {
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
-  const params = await props.params
-  const { slug } = params
+  const { slug } = await props.params
   const data = getDigestArticleData(slug)
 
   const { title, issueNumber, articleNumber, image, authors, content } = data

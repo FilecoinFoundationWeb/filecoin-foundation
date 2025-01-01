@@ -1,35 +1,35 @@
 name: Slack Notification for PR Review Ready
 
 on:
- pull_request:
-   types: [ready_for_review]
-   paths:
-     - 'apps/**'
+  pull_request:
+    types: [ready_for_review]
+    paths:
+      - "apps/**"
 
 jobs:
- notify:
-   runs-on: ubuntu-latest
+  notify:
+    runs-on: ubuntu-latest
 
-   steps:
-     - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-     - name: Prepare Reviewers List and App Info
-       id: format_info
-       run: |
-         REVIEWERS=$(echo "${{ toJson(github.event.pull_request.requested_reviewers) }}" | jq -r '.[].login' | paste -sd ", " -)
-         APP_PATH=$(echo "${{ github.event.pull_request.changed_files }}" | grep -o 'apps/[^/]*' | head -1)
-         if [ -z "$REVIEWERS" ]; then
-           REVIEWERS="No reviewers assigned"
-         fi
-         echo "REVIEWERS=$REVIEWERS" >> $GITHUB_ENV
-         echo "APP_PATH=$APP_PATH" >> $GITHUB_ENV
+      - name: Prepare Reviewers List and App Info
+        id: format_info
+        run: |
+          REVIEWERS=$(echo "${{ toJson(github.event.pull_request.requested_reviewers) }}" | jq -r '.[].login' | paste -sd ", " -)
+          APP_PATH=$(echo "${{ github.event.pull_request.changed_files }}" | grep -o 'apps/[^/]*' | head -1)
+          if [ -z "$REVIEWERS" ]; then
+            REVIEWERS="No reviewers assigned"
+          fi
+          echo "REVIEWERS=$REVIEWERS" >> $GITHUB_ENV
+          echo "APP_PATH=$APP_PATH" >> $GITHUB_ENV
 
-     - name: Send Slack Notification
-       uses: slackapi/slack-github-action@v1.27.0
-       env:
-         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-       with:
-         channel-id: C07UH9HAURX
-         slack-message: |
-           ${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
-           Reviewers: ${{ env.REVIEWERS }}
+      - name: Send Slack Notification
+        uses: slackapi/slack-github-action@v1.27.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          channel-id: C07UH9HAURX
+          slack-message: |
+            ${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
+            Reviewers: ${{ env.REVIEWERS }}

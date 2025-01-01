@@ -3,11 +3,11 @@ name: Site Turborepo Cache Build
 on:
   push:
     paths:
-      - 'apps/**'
+      - "apps/**"
     branches: [main]
   pull_request:
     paths:
-      - 'apps/**'
+      - "apps/**"
     branches: [main]
 
 jobs:
@@ -33,4 +33,3 @@ jobs:
 
       - name: Setup Turborepo remote caching
         run: npx turbo build --cache-dir=".turbo"
-

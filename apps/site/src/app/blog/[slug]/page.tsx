@@ -21,8 +21,7 @@ type BlogPostProps = {
 }
 
 export async function generateMetadata(props: BlogPostProps) {
-  const params = await props.params
-  const { slug } = params
+  const { slug } = await props.params
   const data = getBlogPostData(slug)
 
   return createMetadata({
@@ -35,8 +34,7 @@ export async function generateMetadata(props: BlogPostProps) {
 }
 
 export default async function BlogPost(props: BlogPostProps) {
-  const params = await props.params
-  const { slug } = params
+  const { slug } = await props.params
   const data = getBlogPostData(slug)
   const { title, image, content, publishedOn, category } = data
 

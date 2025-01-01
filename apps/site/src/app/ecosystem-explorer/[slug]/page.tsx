@@ -29,8 +29,7 @@ type EcosystemProjectProps = {
 const categories = getEcosystemCMSCategories()
 
 export async function generateMetadata(props: EcosystemProjectProps) {
-  const params = await props.params;
-  const { slug } = params
+  const { slug } = await props.params
   const data = getEcosystemProjectData(slug)
 
   return createMetadata({
@@ -43,8 +42,7 @@ export async function generateMetadata(props: EcosystemProjectProps) {
 }
 
 export default async function EcosystemProject(props: EcosystemProjectProps) {
-  const params = await props.params;
-  const { slug } = params
+  const { slug } = await props.params
   const data = getEcosystemProjectData(slug)
 
   const {

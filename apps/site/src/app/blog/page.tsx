@@ -23,7 +23,7 @@ import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
-  searchParams: Promise<AsyncNextServerSearchParams>
+  searchParams: AsyncNextServerSearchParams
 }
 
 const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({

@@ -3,11 +3,11 @@ name: Site Cypress and Percy Tests
 on:
   push:
     paths:
-      - 'apps/site/**'
+      - "apps/site/**"
     branches: [main]
   pull_request:
     paths:
-      - 'apps/site/**'
+      - "apps/site/**"
     branches: [main]
 
 jobs:
