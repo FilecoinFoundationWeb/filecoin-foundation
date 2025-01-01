@@ -34,7 +34,7 @@
     "clsx": "^2.1.1",
     "crypto-js": "^4.2.0",
     "date-fns": "^4.1.0",
-    "decap-cms-app": "^3.4.0",
+    "decap-cms-app": "github:FilecoinFoundationWeb/decap-cms#main",
     "frontmatter-markdown-loader": "^3.7.0",
     "gray-matter": "^4.0.3",
     "joi": "^17.13.3",
@@ -89,6 +89,9 @@
     "turbo": "^2.3.3",
     "typescript": "^5.7.2",
     "yaml-loader": "^0.8.1"
+  },
+  "resolutions": {
+    "decap-cms-app": "github:FilecoinFoundationWeb/decap-cms#main"
   },
   "overrides": {
     "@types/react": "19.0.2",
