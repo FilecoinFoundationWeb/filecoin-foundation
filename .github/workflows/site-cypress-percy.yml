@@ -1,9 +1,13 @@
-name: Cypress and Percy Tests
+name: Site Cypress and Percy Tests
 
 on:
   push:
+    paths:
+      - 'apps/site/**'
     branches: [main]
   pull_request:
+    paths:
+      - 'apps/site/**'
     branches: [main]
 
 jobs:
@@ -17,11 +21,9 @@ jobs:
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: "20.11.1"
 
@@ -29,9 +31,11 @@ jobs:
         run: npm ci
 
       - name: Build Project
+        working-directory: ./apps/site
         run: npm run build
 
       - name: Start Server
+        working-directory: ./apps/site
         run: |
           npm start &
           echo "Waiting for server to start..."
@@ -56,8 +60,10 @@ jobs:
 
       - name: Run Cypress Tests without Percy
         if: steps.test-type.outputs.skip_percy == 'true'
+        working-directory: ./apps/site
         run: npm run test:cypress
 
       - name: Run Cypress Tests with Percy
         if: steps.test-type.outputs.skip_percy == 'false'
+        working-directory: ./apps/site
         run: npm run test:cypress:percy
