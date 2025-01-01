@@ -9,8 +9,8 @@ backend:
   base_url: https://decap-proxy.filecoin-foundation.workers.dev/
 
 publish_mode: editorial_workflow
-media_folder: "public/assets/images"
-public_folder: "/assets/images"
+media_folder: "apps/site/public/assets/images"
+public_folder: "apps/site/assets/images"
 
 slug:
   encoding: "ascii"
@@ -209,7 +209,7 @@ collections:
     files:
       - name: "about"
         label: "About"
-        file: "src/content/pages/about.md"
+        file: "apps/site/src/content/pages/about.md"
         preview_path: "about"
         fields:
           - *header_config
@@ -217,7 +217,7 @@ collections:
 
       - name: "blog"
         label: "Blog"
-        file: "src/content/pages/blog.md"
+        file: "apps/site/src/content/pages/blog.md"
         preview_path: "blog"
         fields:
           - *header_config
@@ -225,7 +225,7 @@ collections:
             label: "Featured Post"
             widget: "relation"
             collection: "blog_posts"
-            value_field: "src/content/blog/{{slug}}.md"
+            value_field: "apps/site/src/content/blog/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -235,7 +235,7 @@ collections:
 
       - name: "digest"
         label: "Digest"
-        file: "src/content/pages/digest.md"
+        file: "apps/site/src/content/pages/digest.md"
         preview_path: "digest"
         fields:
           - *header_config
@@ -243,7 +243,7 @@ collections:
 
       - name: "ecosystem-explorer"
         label: "Ecosystem Explorer"
-        file: "src/content/pages/ecosystem-explorer.md"
+        file: "apps/site/src/content/pages/ecosystem-explorer.md"
         preview_path: "ecosystem-explorer"
         fields:
           - *header_config
@@ -251,7 +251,7 @@ collections:
 
       - name: "ecosystem-explorer/project-form"
         label: "Ecosystem Explorer - Project Form"
-        file: "src/content/pages/ecosystem-explorer/project-form.md"
+        file: "apps/site/src/content/pages/ecosystem-explorer/project-form.md"
         preview_path: "ecosystem-explorer/project-form"
         fields:
           - *header_config
@@ -259,7 +259,7 @@ collections:
 
       - name: "employee-privacy-policy"
         label: "Employee Privacy Policy"
-        file: "src/content/pages/employee-privacy-policy.md"
+        file: "apps/site/src/content/pages/employee-privacy-policy.md"
         preview_path: "employee-privacy-policy"
         fields:
           - *header_config
@@ -267,7 +267,7 @@ collections:
 
       - name: "events"
         label: "Events"
-        file: "src/content/pages/events.md"
+        file: "apps/site/src/content/pages/events.md"
         preview_path: "events"
         fields:
           - *header_config
@@ -275,7 +275,7 @@ collections:
             label: "Featured Event"
             widget: "relation"
             collection: "event_entries"
-            value_field: "src/content/events/{{slug}}.md"
+            value_field: "apps/site/src/content/events/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -285,7 +285,7 @@ collections:
 
       - name: "filecoin-plus"
         label: "Filecoin Plus"
-        file: "src/content/pages/filecoin-plus/filecoin-plus.md"
+        file: "apps/site/src/content/pages/filecoin-plus/filecoin-plus.md"
         preview_path: "filecoin-plus"
         fields:
           - *header_config
@@ -293,7 +293,7 @@ collections:
 
       - name: "allocators"
         label: "Filecoin Plus - Allocators"
-        file: "src/content/pages/filecoin-plus/allocators.md"
+        file: "apps/site/src/content/pages/filecoin-plus/allocators.md"
         preview_path: "filecoin-plus/allocators"
         fields:
           - *header_config
@@ -301,7 +301,7 @@ collections:
 
       - name: "governance"
         label: "Governance"
-        file: "src/content/pages/governance/governance.md"
+        file: "apps/site/src/content/pages/governance/governance.md"
         preview_path: "governance"
         fields:
           - *header_config
@@ -309,7 +309,7 @@ collections:
 
       - name: "govhub"
         label: "Governance - GovHub"
-        file: "src/content/pages/governance/govhub.md"
+        file: "apps/site/src/content/pages/governance/govhub.md"
         preview_path: "governance/govhub"
         fields:
           - *header_config
@@ -317,7 +317,7 @@ collections:
 
       - name: "grants"
         label: "Grants"
-        file: "src/content/pages/grants.md"
+        file: "apps/site/src/content/pages/grants.md"
         preview_path: "grants"
         fields:
           - *header_config
@@ -325,7 +325,7 @@ collections:
             label: "Featured Grant Graduates"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "src/content/ecosystem-explorer/{{slug}}.md"
+            value_field: "apps/site/src/content/ecosystem-explorer/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -338,14 +338,14 @@ collections:
 
       - name: "home"
         label: "Home"
-        file: "src/content/pages/home.md"
+        file: "apps/site/src/content/pages/home.md"
         fields:
           - *header_config
           - name: "featured_ecosystem_projects"
             label: "Featured Ecosystem Projects"
             widget: "relation"
             collection: "ecosystem_projects"
-            value_field: "src/content/ecosystem-explorer/{{slug}}.md"
+            value_field: "apps/site/src/content/ecosystem-explorer/{{slug}}.md"
             search_fields:
               - "slug"
               - "title"
@@ -358,7 +358,7 @@ collections:
 
       - name: "orbit"
         label: "Orbit"
-        file: "src/content/pages/orbit.md"
+        file: "apps/site/src/content/pages/orbit.md"
         preview_path: "orbit"
         fields:
           - *header_config
@@ -366,7 +366,7 @@ collections:
 
       - name: "privacy-policy"
         label: "Privacy Policy"
-        file: "src/content/pages/privacy-policy.md"
+        file: "apps/site/src/content/pages/privacy-policy.md"
         preview_path: "privacy-policy"
         fields:
           - *header_config
@@ -374,7 +374,7 @@ collections:
 
       - name: "security"
         label: "Security"
-        file: "src/content/pages/security/security.md"
+        file: "apps/site/src/content/pages/security/security.md"
         preview_path: "security"
         fields:
           - *header_config
@@ -382,7 +382,7 @@ collections:
 
       - name: "security/bug-bounty"
         label: "Security - Bug Bounty"
-        file: "src/content/pages/security/bug-bounty.md"
+        file: "apps/site/src/content/pages/security/bug-bounty.md"
         preview_path: "security/bug-bounty"
         fields:
           - *header_config
@@ -390,7 +390,7 @@ collections:
 
       - name: "security-maturity-model"
         label: "Security - Maturity Model"
-        file: "src/content/pages/security/maturity-model.md"
+        file: "apps/site/src/content/pages/security/maturity-model.md"
         preview_path: "security/maturity-model"
         fields:
           - *header_config
@@ -398,7 +398,7 @@ collections:
 
       - name: "terms"
         label: "Terms of Use"
-        file: "src/content/pages/terms-of-use.md"
+        file: "apps/site/src/content/pages/terms-of-use.md"
         preview_path: "terms-of-use"
         fields:
           - *header_config
@@ -407,7 +407,7 @@ collections:
   - name: "blog_posts"
     label: "Blog Posts"
     label_singular: "Blog Post"
-    folder: "src/content/blog/"
+    folder: "apps/site/src/content/blog/"
     preview_path: "blog/{{slug}}"
     create: true
     extension: "md"
@@ -444,7 +444,7 @@ collections:
 
   - name: "digest_articles"
     label: "Digest Articles"
-    folder: "src/content/digest/"
+    folder: "apps/site/src/content/digest/"
     preview_path: "digest/{{slug}}"
     label_singular: "Digest Article"
     create: true
@@ -503,7 +503,7 @@ collections:
   - name: ecosystem_projects
     label: Ecosystem Projects
     label_singular: Ecosystem Project
-    folder: "src/content/ecosystem-explorer/"
+    folder: "apps/site/src/content/ecosystem-explorer/"
     preview_path: "ecosystem-explorer/{{slug}}"
     create: true
     extension: md
@@ -619,7 +619,7 @@ collections:
 
   - name: "event_entries"
     label: "Events"
-    folder: "src/content/events/"
+    folder: "apps/site/src/content/events/"
     preview_path: "events/{{slug}}"
     label_singular: "Event"
     create: true
