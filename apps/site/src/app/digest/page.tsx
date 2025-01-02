@@ -83,16 +83,18 @@ export default function Digest() {
                   text: 'Read Article',
                   icon: BookOpen,
                 }}
-                image={{
-                  ...image,
-                  alt: image?.alt || '',
-                  sizes: buildImageSizeProp({
-                    startSize: '100vw',
-                    sm: '350px',
-                    md: '470px',
-                    lg: '360px',
-                  }),
-                }}
+                image={
+                  image && {
+                    src: image.src,
+                    alt: image.alt || '',
+                    sizes: buildImageSizeProp({
+                      startSize: '100vw',
+                      sm: '350px',
+                      md: '470px',
+                      lg: '360px',
+                    }),
+                  }
+                }
               />
             )
           })}

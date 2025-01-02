@@ -2,8 +2,6 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Card } from '@/components/Card'
@@ -31,17 +29,19 @@ export function FeaturedGrantGraduates({
             text: 'Read More',
             icon: BookOpen,
           }}
-          image={{
-            ...image,
-            alt: '',
-            objectFit: 'contain',
-            padding: Boolean(image),
-            sizes: buildImageSizeProp({
-              startSize: '100vw',
-              sm: '175px',
-              md: '250px',
-            }),
-          }}
+          image={
+            image && {
+              src: image.src,
+              alt: image.alt || '',
+              objectFit: 'contain',
+              padding: Boolean(image),
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '175px',
+                md: '250px',
+              }),
+            }
+          }
         />
       ))}
     </CardGrid>

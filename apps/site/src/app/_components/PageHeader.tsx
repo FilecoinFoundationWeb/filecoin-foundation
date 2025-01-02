@@ -1,6 +1,12 @@
-import Image, { type StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 import { clsx } from 'clsx'
+
+import type {
+  ImageObjectFit,
+  ImageProps,
+  StaticImageProps,
+} from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
@@ -15,15 +21,17 @@ import {
 import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
-import { SmartImage, type SmartImageProps } from '@/components/SmartImage'
+import { SmartImage } from '@/components/SmartImage'
 
 type TitleProps = {
   children: string
 }
 
+type PageHeaderImageProps = (ImageProps | StaticImageProps) & ImageObjectFit
+
 type PageHeaderProps = {
   title: TitleProps['children']
-  image: SmartImageProps
+  image?: PageHeaderImageProps
   isFeatured?: boolean
   metaData?: MetaDataType
   description?: DescriptionTextType
@@ -68,7 +76,7 @@ PageHeader.Title = function Title({ children }: TitleProps) {
 
 PageHeader.Image = function PageHeaderImage({
   image,
-}: Pick<PageHeaderProps, 'image'>) {
+}: Required<Pick<PageHeaderProps, 'image'>>) {
   const isStaticImage = 'data' in image
 
   const commonProps = {
@@ -88,7 +96,7 @@ PageHeader.Image = function PageHeaderImage({
       <Image
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
-        src={image.data as StaticImageData}
+        src={image.data}
         alt={commonProps.alt}
       />
     )

@@ -120,7 +120,7 @@ export default function About() {
                   description={description}
                   image={
                     image && {
-                      ...image,
+                      src: image.data,
                       alt: '',
                       sizes: buildImageSizeProp({
                         startSize: '100vw',
