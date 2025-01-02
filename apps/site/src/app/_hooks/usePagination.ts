@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
-import { type NextServerSearchParams } from '@/types/searchParams'
-import { type Object } from '@/types/utils'
+import type { NextServerSearchParams } from '@/types/searchParams'
+import type { Object } from '@/types/utils'
 
 import {
   DEFAULT_ENTRIES_PER_PAGE,

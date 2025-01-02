@@ -1,4 +1,4 @@
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -48,10 +48,12 @@ export const metadata = createMetadata({
 })
 
 type Props = {
-  searchParams: NextServerSearchParams
+  searchParams: AsyncNextServerSearchParams
 }
 
-export default function Orbit({ searchParams }: Props) {
+export default async function Orbit(props: Props) {
+  const searchParams = await props.searchParams
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />

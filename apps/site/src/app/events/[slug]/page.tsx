@@ -27,13 +27,13 @@ import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export function generateMetadata({ params }: EventProps) {
-  const { slug } = params
+export async function generateMetadata(props: EventProps) {
+  const { slug } = await props.params
   const data = getEventData(slug)
 
   return createMetadata({
@@ -45,8 +45,8 @@ export function generateMetadata({ params }: EventProps) {
   })
 }
 
-export default function EventEntry({ params }: EventProps) {
-  const { slug } = params
+export default async function EventEntry(props: EventProps) {
+  const { slug } = await props.params
   const data = getEventData(slug)
   const sponsorEventData = getInvolvedData[0]
 

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import PlausibleProvider from 'next-plausible'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
-import '@/styles/globals.scss'
+import '@/styles/globals.css'
 
 import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 

@@ -1,5 +1,3 @@
-import dynamic from 'next/dynamic'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -18,17 +16,10 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CoreFunctions } from './components/CoreFunctions'
+import { DesktopTableOfContents } from './components/DesktopTableOfContents'
 import { MobileTableOfContents } from './components/MobileTableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
-
-const DynamicDesktopTableOfContents = dynamic(
-  () =>
-    import('./components/DesktopTableOfContents').then(
-      (module) => module.DesktopTableOfContents,
-    ),
-  { ssr: false },
-)
 
 const { header, seo } = getFrontmatter({
   path: PATHS.MATURITY_MODEL,
@@ -83,7 +74,7 @@ export default function MaturityModel() {
             <CoreFunctions />
           </div>
           <div className="hidden lg:sticky lg:top-12 lg:order-last lg:block lg:w-72">
-            <DynamicDesktopTableOfContents />
+            <DesktopTableOfContents />
           </div>
           <div className="sticky top-6 z-10 order-first block lg:hidden">
             <MobileTableOfContents />

@@ -50,9 +50,9 @@ const nextConfig = {
   },
   experimental: {
     typedRoutes: true,
-    outputFileTracingIncludes,
-    outputFileTracingExcludes,
   },
+  outputFileTracingIncludes,
+  outputFileTracingExcludes,
   async redirects() {
     return redirects
   },
