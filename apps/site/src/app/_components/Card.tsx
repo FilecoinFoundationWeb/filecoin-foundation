@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/ctaType'
-import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
+import { type ImageObjectFit } from '@/types/imageType'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { isExternalLink } from '@/utils/linkUtils'
@@ -15,17 +15,16 @@ import { BaseLink } from '@/components/BaseLink'
 import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 import { Meta, type MetaDataType } from '@/components/Meta'
+import { SmartImage } from '@/components/SmartImage'
 import {
   type TagGroupProps,
   TagGroup,
 } from '@/components/TagComponents/TagGroup'
 
-type CardImageProps = (StaticImageProps | ImageProps) & {
-  objectFit?: ImageObjectFit
-  padding?: boolean
-  priority?: boolean
-  sizes?: string
-}
+type CardImageProps = ImageProps &
+  ImageObjectFit & {
+    padding?: boolean
+  }
 
 type CardProps = {
   title: string | React.ReactNode
@@ -99,7 +98,8 @@ export function Card({
 Card.Image = function ImageComponent({
   image,
 }: Required<Pick<CardProps, 'image'>>) {
-  const isStaticImage = 'data' in image
+  const imageSrc = image.src
+  const isStaticImage = typeof imageSrc === 'object'
 
   const commonProps = {
     alt: image.alt,
@@ -120,7 +120,7 @@ Card.Image = function ImageComponent({
       <Image
         {...commonProps}
         className={clsx(commonProps.className, 'aspect-video')}
-        src={image.data}
+        src={imageSrc}
         alt={commonProps.alt}
       />
     )
@@ -128,11 +128,11 @@ Card.Image = function ImageComponent({
 
   return (
     <div className="relative aspect-video">
-      <Image
+      <SmartImage
         fill
         {...commonProps}
         className={clsx(commonProps.className, 'h-full w-full')}
-        src={image.src}
+        src={imageSrc}
         alt={commonProps.alt}
       />
     </div>

@@ -2,8 +2,6 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Card } from '@/components/Card'
@@ -32,18 +30,20 @@ export function FeaturedEcosystemProjects({
             text: 'Learn More',
             icon: MagnifyingGlass,
           }}
-          image={{
-            ...(image || graphicsData.imageFallback.data),
-            alt: '',
-            objectFit: 'contain',
-            padding: Boolean(image),
-            sizes: buildImageSizeProp({
-              startSize: '100vw',
-              sm: '320px',
-              md: '440px',
-              lg: '280px',
-            }),
-          }}
+          image={
+            image && {
+              src: image.src,
+              alt: image.alt || '',
+              objectFit: 'contain',
+              padding: Boolean(image),
+              sizes: buildImageSizeProp({
+                startSize: '100vw',
+                sm: '320px',
+                md: '440px',
+                lg: '280px',
+              }),
+            }
+          }
         />
       ))}
     </CardGrid>
