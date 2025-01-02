@@ -5,65 +5,54 @@ import path from 'path'
 
 import Image, { type ImageProps } from 'next/image'
 
-import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
-
 import { graphicsData } from '@/data/graphicsData'
+
+export type SmartImageProps = {
+  src?: string
+} & Omit<ImageProps, 'src'>
 
 const { data: fallbackSrc, alt: fallbackAlt } = graphicsData.imageFallback
 
-export type SmartImageProps = {
-  src?: string | StaticImageProps['data']
-  alt?: string
-  className?: string
-  objectFit?: ImageObjectFit
-  padding?: boolean
-} & Omit<ImageProps, 'src' | 'alt' | 'className'>
+export async function SmartImage({ src, alt, ...props }: SmartImageProps) {
+  if (!src) {
+    return <Image src={fallbackSrc} alt={fallbackAlt} {...props} />
+  }
 
-export async function SmartImage({ src, alt = '', ...props }: SmartImageProps) {
-  const imageSrc = await getImageSrc(src)
-
-  const imageExists = imageSrc !== fallbackSrc
+  const isValid = await checkImageValidity(src)
 
   return (
-    <Image src={imageSrc} alt={imageExists ? alt : fallbackAlt} {...props} />
+    <Image
+      src={isValid ? src : fallbackSrc}
+      alt={isValid ? alt : fallbackAlt}
+      {...props}
+    />
   )
 }
 
-async function getImageSrc(src: SmartImageProps['src']) {
-  if (!src) {
-    return fallbackSrc
-  }
-  const isAssetImage = typeof src === 'string' && src.startsWith('/assets')
-  const isRemoteImage =
-    typeof src === 'string' && (src.startsWith('http') || src.startsWith('//'))
+async function checkImageValidity(src: NonNullable<SmartImageProps['src']>) {
+  const isLocalAssetImage = src.startsWith('/assets')
 
-  if (isAssetImage) {
-    const assetExists = await checkAssetImageExists(src)
-    return assetExists ? src : fallbackSrc
+  if (isLocalAssetImage) {
+    return checkLocalAsset(src)
   }
 
-  if (isRemoteImage) {
-    const remoteImageExists = await checkRemoteImageExists(src)
-    return remoteImageExists ? src : fallbackSrc
-  }
-
-  return src
+  return checkRemoteImage(src)
 }
 
-async function checkRemoteImageExists(url: string) {
+async function checkRemoteImage(absoluteUrl: string) {
   try {
-    const response = await fetch(url, { method: 'HEAD' })
+    const response = await fetch(absoluteUrl, { method: 'HEAD' })
     return response.ok
   } catch {
     return false
   }
 }
 
-async function checkAssetImageExists(src: string) {
-  const publicPath = path.join(process.cwd(), 'public', src)
+async function checkLocalAsset(relativePath: string) {
   try {
-    await fs.access(publicPath, fs.constants.F_OK)
-    return true
+    const publicPath = path.join(process.cwd(), 'public', relativePath)
+    const stats = await fs.stat(publicPath)
+    return stats.isFile()
   } catch {
     return false
   }
