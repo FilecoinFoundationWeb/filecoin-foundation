@@ -12,23 +12,25 @@ export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
     header: 'Organization Name',
     cell: (info) => {
-      const link = info.getValue()
-      const name = info.row.original.name
-
-      if (!link) {
-        return null
-      }
+      const name = info.getValue()
+      const link = info.row.original.application.allocation_bookkeeping
 
       return (
         <div className="w-[200px]">
-          <ExternalTextLink
-            aria-label={`Apply for ${name} allocator`}
-            href={link}
-            title={name}
-            className="!block truncate"
-          >
-            {name}
-          </ExternalTextLink>
+          {link ? (
+            <ExternalTextLink
+              aria-label={`See more information about ${name} allocator`}
+              href={link}
+              title={name}
+              className="!block truncate"
+            >
+              {name}
+            </ExternalTextLink>
+          ) : (
+            <p title={name} className="truncate">
+              {name}
+            </p>
+          )}
         </div>
       )
     },
