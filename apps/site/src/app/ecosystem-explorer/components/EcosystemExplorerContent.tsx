@@ -36,16 +36,14 @@ import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 
 type EcosystemExplorerContentProps = {
   searchParams: NextServerSearchParams
-  ecosystemProjects: ReturnType<typeof getEcosystemProjectsData>
-  categories: ReturnType<typeof getEcosystemCMSCategories>
-  sortOptions: ReturnType<typeof getSortOptions>
 }
+
+const ecosystemProjects = getEcosystemProjectsData()
+const categories = getEcosystemCMSCategories()
+const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
 export function EcosystemExplorerContent({
   searchParams,
-  ecosystemProjects,
-  categories,
-  sortOptions,
 }: EcosystemExplorerContentProps) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,

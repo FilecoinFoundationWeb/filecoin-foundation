@@ -6,7 +6,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-import { getSortOptions } from '@/utils/getSortOptions'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -17,10 +16,7 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EcosystemExplorerContent } from './components/EcosystemExplorerContent'
-import { ecosystemProjectsSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getEcosystemCMSCategories } from './utils/getEcosystemCMSCategories'
-import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
@@ -40,17 +36,12 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const categories = getEcosystemCMSCategories()
-const ecosystemProjects = getEcosystemProjectsData()
-const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
-
 export default async function EcosystemExplorer(props: Props) {
   const searchParams = await props.searchParams
-  const structuredData = generateStructuredData(seo)
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={structuredData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         title={header.title}
         description={header.description}
@@ -66,12 +57,7 @@ export default async function EcosystemExplorer(props: Props) {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of projects in the Filecoin ecosystem. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s product or services."
       >
-        <EcosystemExplorerContent
-          searchParams={searchParams}
-          ecosystemProjects={ecosystemProjects}
-          categories={categories}
-          sortOptions={sortOptions}
-        />
+        <EcosystemExplorerContent searchParams={searchParams} />
       </PageSection>
 
       <CTASection

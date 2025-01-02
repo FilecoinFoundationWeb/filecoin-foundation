@@ -39,15 +39,12 @@ import { getMetaData } from '../utils/getMetaData'
 
 type EventsContentProps = {
   searchParams: NextServerSearchParams
-  events: ReturnType<typeof getEventsData>
-  locationOptions: ReturnType<typeof getLocationListboxOptions>
 }
 
-export default function EventsContent({
-  searchParams,
-  events,
-  locationOptions,
-}: EventsContentProps) {
+const events = getEventsData()
+const locationOptions = getLocationListboxOptions()
+
+export default function EventsContent({ searchParams }: EventsContentProps) {
   const { searchQuery, searchResults } = useSearch({
     searchParams,
     entries: events,

@@ -24,8 +24,7 @@ import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getEventData, getEventsData } from './utils/getEventData'
-import { getLocationListboxOptions } from './utils/getLocationFilterOptions'
+import { getEventData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
@@ -46,11 +45,8 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const events = getEventsData()
 const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
 const featuredEvent = getEventData(featuredEventSlug)
-const locationOptions = getLocationListboxOptions()
-const structuredData = generateStructuredData(seo)
 
 export default async function Events(props: Props) {
   const searchParams = await props.searchParams
@@ -61,7 +57,7 @@ export default async function Events(props: Props) {
 
   return (
     <PageLayout>
-      <StructuredDataScript structuredData={structuredData} />
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
         isFeatured
         title={featuredEvent.title}
@@ -82,11 +78,7 @@ export default async function Events(props: Props) {
         }}
       />
       <PageSection kicker="Events" title="Network Events">
-        <EventsContent
-          searchParams={searchParams}
-          events={events}
-          locationOptions={locationOptions}
-        />
+        <EventsContent searchParams={searchParams} />
       </PageSection>
 
       <PageSection
