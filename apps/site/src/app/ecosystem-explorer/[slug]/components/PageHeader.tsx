@@ -16,7 +16,7 @@ export function PageHeader({ image }: PageHeaderProps) {
           fill
           priority
           src={image?.src}
-          alt={''}
+          alt=""
           className={clsx(
             image?.src && 'rounded-lg',
             'object-contain object-left-bottom',
