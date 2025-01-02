@@ -12,8 +12,8 @@ type TableProps = {
 export function Table({
   children,
   layout = 'auto',
-  freezeFirstColumn = false,
-  freezeHeader = false,
+  freezeFirstColumn,
+  freezeHeader,
 }: TableProps) {
   return (
     <div
