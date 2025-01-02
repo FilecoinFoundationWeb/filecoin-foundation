@@ -37,16 +37,18 @@ export function FeaturedBlogPosts({
                 href: `${PATHS.BLOG.path}/${slug}`,
                 text: 'Learn More',
               }}
-              image={{
-                ...image,
-                alt: '',
-                objectFit: 'cover',
-                sizes: buildImageSizeProp({
-                  startSize: '100vw',
-                  sm: '350px',
-                  md: '480px',
-                }),
-              }}
+              image={
+                image && {
+                  src: image.src,
+                  alt: image.alt || '',
+                  objectFit: 'cover',
+                  sizes: buildImageSizeProp({
+                    startSize: '100vw',
+                    sm: '350px',
+                    md: '480px',
+                  }),
+                }
+              }
             />
           )
         },
