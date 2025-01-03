@@ -7,17 +7,17 @@
     thead .cell {
       @apply sticky top-0 z-10 bg-inherit;
     }
+
+    &[data-freeze-first-column='true'] {
+      thead .cell:first-child {
+        @apply z-20;
+      }
+    }
   }
 
   &[data-freeze-first-column='true'] {
     .cell:first-child {
       @apply sticky left-0 z-10 bg-inherit;
-    }
-  }
-
-  &[data-freeze-header='true'][data-freeze-first-column='true'] {
-    thead .cell:first-child {
-      @apply z-20;
     }
   }
 }
