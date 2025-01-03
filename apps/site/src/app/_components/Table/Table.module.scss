@@ -23,7 +23,7 @@
 }
 
 .table {
-  @apply h-full min-w-full border-separate border-spacing-0 rounded-lg border border-brand-300;
+  @apply isolate h-full min-w-full border-separate border-spacing-0 rounded-lg border border-brand-300;
 }
 
 .row {

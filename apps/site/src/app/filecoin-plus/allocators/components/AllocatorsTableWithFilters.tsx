@@ -50,18 +50,20 @@ export function AllocatorsTableWithFilters({
   const hasSearchResults = Boolean(rowModel.rows.length)
 
   return (
-    <>
-      <div className="sticky top-3 z-30 mb-6">
+    <div className="isolate">
+      <div className="sticky top-3 z-10 mb-6">
         <AllocatorsTableFilters table={table} />
       </div>
 
-      {hasSearchResults ? (
-        <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
-      ) : (
-        <div className="flex w-full justify-center">
-          <NoSearchResultsMessage />
-        </div>
-      )}
-    </>
+      <div className="z-0">
+        {hasSearchResults ? (
+          <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
+        ) : (
+          <div className="flex w-full justify-center">
+            <NoSearchResultsMessage />
+          </div>
+        )}
+      </div>
+    </div>
   )
 }
