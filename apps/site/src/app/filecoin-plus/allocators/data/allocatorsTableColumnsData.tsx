@@ -1,7 +1,8 @@
+import { ArrowUpRight } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
+import { Icon } from '@/components/Icon'
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 import { formatDatacap } from '../utils/formatDatacap'
@@ -18,14 +19,18 @@ export const allocatorsTableColumnsData = [
       return (
         <div className="w-[200px]">
           {link ? (
-            <ExternalTextLink
+            <a
               aria-label={`See more information about ${name} allocator`}
               href={link}
               title={name}
-              className="!block truncate"
+              className="group flex items-center text-brand-300 focus:brand-outline hover:underline"
+              rel="noopener noreferrer"
             >
-              {name}
-            </ExternalTextLink>
+              <span className="block truncate">{name}</span>
+              <span className="ml-2 inline-flex self-center">
+                <Icon component={ArrowUpRight} size={18} />
+              </span>
+            </a>
           ) : (
             <p title={name} className="truncate">
               {name}
