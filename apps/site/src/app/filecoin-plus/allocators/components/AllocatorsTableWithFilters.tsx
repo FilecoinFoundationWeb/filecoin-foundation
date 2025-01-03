@@ -11,11 +11,12 @@ import {
   type SortingState,
 } from '@tanstack/react-table'
 
+import { FilterContainer } from '@/components/FilterContainer'
 import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
-import { type AllocatorWithDatacap } from '../schemas/AllocatorSchema'
+import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 
 import { AllocatorsTable } from './AllocatorsTable'
 import { AllocatorsTableFilters } from './AllocatorsTableFilters'
@@ -50,10 +51,8 @@ export function AllocatorsTableWithFilters({
   const hasSearchResults = Boolean(rowModel.rows.length)
 
   return (
-    <>
-      <div className="mb-6">
-        <AllocatorsTableFilters table={table} />
-      </div>
+    <FilterContainer.MainWrapper>
+      <AllocatorsTableFilters table={table} />
 
       {hasSearchResults ? (
         <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
@@ -62,6 +61,6 @@ export function AllocatorsTableWithFilters({
           <NoSearchResultsMessage />
         </div>
       )}
-    </>
+    </FilterContainer.MainWrapper>
   )
 }

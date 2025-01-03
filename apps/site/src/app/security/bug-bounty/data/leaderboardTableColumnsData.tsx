@@ -33,7 +33,7 @@ export const leaderboardTableColumnsData = [
     id: 'profileLink',
     header: 'Profile Link',
     meta: {
-      bodyCellStyle: 'text-center text-brand-300',
+      bodyCellStyle: 'flex justify-center text-brand-300',
     },
     cell: (info) => {
       const profileLink = info.getValue()
