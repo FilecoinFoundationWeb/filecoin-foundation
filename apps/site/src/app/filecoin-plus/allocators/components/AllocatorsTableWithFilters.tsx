@@ -51,19 +51,17 @@ export function AllocatorsTableWithFilters({
 
   return (
     <div className="isolate">
-      <div className="sticky top-3 z-10 mb-6">
+      <div className="mb-6">
         <AllocatorsTableFilters table={table} />
       </div>
 
-      <div className="z-0">
-        {hasSearchResults ? (
-          <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
-        ) : (
-          <div className="flex w-full justify-center">
-            <NoSearchResultsMessage />
-          </div>
-        )}
-      </div>
+      {hasSearchResults ? (
+        <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
+      ) : (
+        <div className="flex w-full justify-center">
+          <NoSearchResultsMessage />
+        </div>
+      )}
     </div>
   )
 }
