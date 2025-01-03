@@ -1,5 +1,5 @@
 .tableWrapper {
-  @apply relative w-full overflow-x-auto overflow-y-auto rounded-lg border border-brand-300 focus:brand-outline;
+  @apply w-full overflow-x-auto overflow-y-auto focus:brand-outline;
 
   &[data-freeze-header='true'] {
     @apply max-h-screen;
@@ -23,7 +23,7 @@
 }
 
 .table {
-  @apply h-full min-w-full border-separate border-spacing-0;
+  @apply h-full min-w-full border-separate border-spacing-0 rounded-lg border border-brand-300;
 }
 
 .row {
@@ -37,15 +37,33 @@
 .cell {
   @apply whitespace-nowrap px-5 text-left font-normal;
 
-  thead & {
-    @apply border-b border-brand-500;
-  }
-
   &:first-child {
     @apply pl-10;
   }
 
   &:last-child {
     @apply pr-10;
+  }
+
+  thead & {
+    @apply border-b border-brand-500;
+
+    &:first-child {
+      @apply rounded-tl-lg;
+    }
+
+    &:last-child {
+      @apply rounded-tr-lg;
+    }
+  }
+
+  tbody tr:last-child & {
+    &:first-child {
+      @apply rounded-bl-lg;
+    }
+
+    &:last-child {
+      @apply rounded-br-lg;
+    }
   }
 }
