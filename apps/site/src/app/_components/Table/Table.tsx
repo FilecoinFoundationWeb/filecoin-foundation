@@ -23,7 +23,7 @@ export function Table({
       data-freeze-header={freezeHeader}
       className={clsx(
         styles.tableWrapper,
-        withBorder ? 'border border-brand-300' : 'border-none',
+        withBorder && 'border border-brand-300',
       )}
     >
       <table
