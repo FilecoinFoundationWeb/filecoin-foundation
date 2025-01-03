@@ -46,6 +46,6 @@
   }
 
   thead & {
-    @apply sticky top-0 z-10 border-b border-brand-500 bg-inherit;
+    @apply border-b border-brand-500;
   }
 }

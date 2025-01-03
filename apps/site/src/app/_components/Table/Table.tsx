@@ -3,19 +3,19 @@ import { clsx } from 'clsx'
 import styles from './Table.module.scss'
 
 type TableProps = {
-  children: React.ReactNode
-  layout?: 'auto' | 'fixed'
   freezeFirstColumn?: boolean
   freezeHeader?: boolean
-  borderless?: boolean
+  layout?: 'auto' | 'fixed'
+  withBorder?: boolean
+  children: React.ReactNode
 }
 
 export function Table({
-  children,
-  layout = 'auto',
   freezeFirstColumn,
   freezeHeader,
-  borderless = true,
+  layout = 'auto',
+  withBorder,
+  children,
 }: TableProps) {
   return (
     <div
@@ -23,7 +23,7 @@ export function Table({
       data-freeze-header={freezeHeader}
       className={clsx(
         styles.tableWrapper,
-        borderless ? 'border-none' : 'border border-brand-300',
+        withBorder ? 'border border-brand-300' : 'border-none',
       )}
     >
       <table
