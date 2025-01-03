@@ -18,7 +18,7 @@ export function AllocatorsTable({
   rowModel,
 }: AllocatorsTableProps) {
   return (
-    <Table freezeFirstColumn freezeHeader>
+    <Table freezeFirstColumn>
       <TableHead headerGroups={headerGroups} textColor="text-brand-300" />
       <TableBody rowModel={rowModel} />
     </Table>

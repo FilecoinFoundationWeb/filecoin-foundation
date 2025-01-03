@@ -25,7 +25,7 @@ export function Leaderboard() {
   })
 
   return (
-    <Table freezeHeader>
+    <Table>
       <TableHead headerGroups={table.getHeaderGroups()} />
       <TableBody rowModel={table.getRowModel()} />
     </Table>

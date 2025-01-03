@@ -23,16 +23,18 @@ export const allocatorsTableColumnsData = [
               aria-label={`See more information about ${name} allocator`}
               href={link}
               title={name}
-              className="group flex items-center text-brand-300 focus:brand-outline hover:underline"
+              className="group flex items-center focus:brand-outline hover:text-brand-300 hover:underline focus:text-brand-300"
               rel="noopener noreferrer"
             >
-              <span className="block truncate">{name}</span>
-              <span className="ml-2 inline-flex self-center">
+              <span className="block truncate text-brand-100 group-hover:text-inherit group-focus:text-inherit">
+                {name}
+              </span>
+              <span className="ml-2 inline-flex self-center text-brand-300">
                 <Icon component={ArrowUpRight} size={18} />
               </span>
             </a>
           ) : (
-            <p title={name} className="truncate">
+            <p title={name} className="truncate text-brand-100">
               {name}
             </p>
           )}
