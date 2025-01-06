@@ -22,7 +22,7 @@
     "typescript-sort-keys/interface": [
       "error",
       "asc",
-      { "caseSensitive": false, "natural": true, "requiredFirst": true }
+      { "caseSensitive": false, "requiredFirst": true }
     ],
 
     // Variable usage and definitions
