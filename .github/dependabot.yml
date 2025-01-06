@@ -13,16 +13,7 @@ updates:
       dependencies:
         patterns:
           - "*"
-          
-    groups:
-      major-updates:
-        update-types:
-          - "major"
-        patterns:
-          - "*"
-        labels:
-          - "breaking-change"
-        
+
     versioning-strategy: auto
 
   - package-ecosystem: "github-actions"
