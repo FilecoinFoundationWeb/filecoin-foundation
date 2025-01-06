@@ -66,11 +66,10 @@ The group discussed recent technical milestones and the collaborative efforts sh
 
 * [Filecoin H2. 24 Roadmap](https://www.bitget.com/news/detail/12560604235518) 
 * [From FilOz: Three Filecoin Focus Areas for 2024 ](https://www.fil.org/digest/storage-is-just-the-start-three-focus-areas-for-the-filecoin-network-in-2024)
-* [](https://www.fil.org/digest/storage-is-just-the-start-three-focus-areas-for-the-filecoin-network-in-2024)
 
- [FF 2024 Roadmap ](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)
-
-[](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)Juan at Fil Dev Summit: [Filecoin Needs, Gaps, and Upgrade Path + Q&A](<>) 
+  [](https://www.fil.org/digest/storage-is-just-the-start-three-focus-areas-for-the-filecoin-network-in-2024)
+*  [FF 2024 Roadmap ](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)
+* [](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)Juan at Fil Dev Summit: [Filecoin Needs, Gaps, and Upgrade Path + Q&A](<>) 
 
 
 
