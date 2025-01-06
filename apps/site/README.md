@@ -33,7 +33,7 @@ This command starts a local development server on `http://localhost:3000`. The s
 
 ### Building for Production
 
-The build process includes a pre-build step that converts the CMS configuration file (`public/admin/config.yml`) to JSON (located at ).
+The build process includes a pre-build step that converts the CMS configuration file (`public/admin/config.yml`) to JSON (located at `src/app/_data/cmsConfigSchema.json`).
 
 ```bash
 npm run build
@@ -47,11 +47,11 @@ npm run start
 
 ### Formatting
 
-This project uses [Prettier](https://prettier.io/) for automatic code formatting. The shared Prettier configuration is located in `.prettierrc.json`. If you use VSCode, there's a pointer to that file in `.vscode/settings.json` so that the shared configuration takes precedence over your default one.
+This project uses [Prettier](https://prettier.io/) for automatic code formatting. The shared Prettier configuration is located in `.prettierrc.json`.
 
 ### Linting
 
-To lint and fix issues in the codebase:
+This project uses [ESLint](https://eslint.org/) for linting. The shared ESLint configuration is located in `.eslintrc.json`. To lint and fix issues in the codebase:
 
 ```bash
 npm run lint
@@ -67,9 +67,9 @@ We maintain a specific order for import statements to make our code easier to re
 
 ## Technologies
 
-- **Next.js 13.4.19**: For server-side rendering, static site generation, and routing.
+- **Next.js 15**: For server-side rendering, static site generation, and routing.
 - **Tailwind CSS**: For utility-first CSS styling.
-- **React 18**: For building the user interface.
+- **React 19**: For building the user interface.
 - **clsx**: For conditionally joining `classNames` together.
 
 ## Decap CMS Integration
