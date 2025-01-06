@@ -62,7 +62,9 @@ Projects including Filecoin Virtual Machine (FVM) and Interplanetary Consensus (
 
 The group discussed recent technical milestones and the collaborative efforts shaping its development such as Proof of Data Possession (PDP) for enhanced retrieval services and the need for new guides and documentation for new tools such as [Station](https://docs.filstation.app/).
 
-Reference links:
+### Reference links:
+
+
 [Filecoin H2. 24 Roadmap](https://www.bitget.com/news/detail/12560604235518) 
 [From FilOz: Three Filecoin Focus Areas for 2024 
 ](https://www.fil.org/digest/storage-is-just-the-start-three-focus-areas-for-the-filecoin-network-in-2024)Juan at Fil Dev Summit: [Filecoin Needs, Gaps, and Upgrade Path + Q&A](https://www.youtube.com/watch?v=nowUSZZ7r0g) 
