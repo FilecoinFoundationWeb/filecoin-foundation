@@ -40,23 +40,17 @@ Reference links:
 [Storacha L2 Announcement
 ](https://www.fil.org/blog/filecoin-ecosystem-teams-unveil-l2s)[Filecoin TLDR Blog post on State of L2s](https://filecointldr.io/article/state-of-l2s-on-filecoin) 
 
-
-
 ### Governance and Filecoin Improvement Proposal (FIP) Process
 
 The governance segment addressed how the Filecoin FIP process operates, offering attendees a detailed view of its structure and pathways for community participation. Beyond GitHub discussions, stakeholders expressed interest in accessible methods for engaging with governance processes. The session also touched on potential updates to governance structures over the next 6 to12 months, reflecting the community’s growing demand for inclusivity and efficiency.
 
 Reference links:
 
-[FIL Gov Slack Channel](https://filecoinproject.slack.com/?redir=%2Farchives%2FC0535S9TUUF%3Fname%3DC0535S9TUUF)
-
-[GovHub - Filecoin Governance + PowerVote](https://www.fil.org/governance/govhub) 
-
-[Upcoming Governance Calls](https://www.fil.org/governance) 
-
-[FIL+ Allocator Page](https://www.fil.org/filecoin-plus/allocators)
-
-[Filecoin FIPs (github)](https://github.com/filecoin-project/FIPs)
+* [FIL Gov Slack Channel](https://filecoinproject.slack.com/?redir=%2Farchives%2FC0535S9TUUF%3Fname%3DC0535S9TUUF)
+* [GovHub - Filecoin Governance + PowerVote](https://www.fil.org/governance/govhub) 
+* [Upcoming Governance Calls](https://www.fil.org/governance) 
+* [FIL+ Allocator Page](https://www.fil.org/filecoin-plus/allocators)
+* [Filecoin FIPs (github)](https://github.com/filecoin-project/FIPs)
 
 ### Filecoin Plus Program
 
@@ -74,7 +68,9 @@ Reference links:
 ](https://www.fil.org/digest/storage-is-just-the-start-three-focus-areas-for-the-filecoin-network-in-2024)Juan at Fil Dev Summit: [Filecoin Needs, Gaps, and Upgrade Path + Q&A](https://www.youtube.com/watch?v=nowUSZZ7r0g) 
 [Blog post: FF 2024 Roadmap 
 
-](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)Looking Ahead
+](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)
+
+## Looking Ahead
 
 Filecoin Foundation is committed to fostering a collaborative environment where stakeholders and community members can engage meaningfully, share insights, and contribute to the ecosystem’s growth. Community  feedback and participation is invaluable, and we look forward to building even stronger connections in the upcoming AMAs.
 
