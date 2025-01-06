@@ -25,19 +25,45 @@ The AMA opened with a discussion of Filecoin’s core goals and values, emphasiz
 
 The potential integration of AI with Filecoin’s ecosystem was also highlighted as an exciting frontier. Attendees explored scenarios where AI could enhance data storage, retrieval, and ecosystem scalability, offering new opportunities for SPs, developers, and L2s.
 
-Reference links:
-["Core Value" of Filecoin - Fast Company Next Big Things in Tech
+### Reference links:
+
+
+["Core Value" of Filecoin - Fast Company Next Big Things in Tech](https://www.fastcompany.com/91207410/fast-company-next-big-things-ai-data-2024)
+
+[
 ](https://www.fastcompany.com/91207410/fast-company-next-big-things-ai-data-2024)["Core Value" of Filecoin - Storing Election Data](https://cryptonews.com/news/benefits-of-storing-election-data-on-decentralized-databases/) 
-["Core Value" of Filecoin - Datasets stored on Filecoin - Mom I see War 
-](https://x.com/FilFoundation/status/1847367452981940561)["Core Value" of Filecoin - Datasets stored on Filecoin - Scientific Datasets 
-](https://x.com/FilFoundation/status/1852064252149768670)["Core Value of Filecoin" - Marta Belcher on CNBC giving overview 
-](https://www.cnbc.com/video/2024/11/05/bitcoin-jumps-to-70000-investors-await-election-results-crypto-world.html)[Blog post: AI teams building on Filecoin 
-](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai)[Blog post: Ansa on Filecoin and Decentralized AI 
-](https://filecointldr.io/article/from-storage-to-intelligence-exploring-filecoins-role-in-the-ai-ecosystem)[Blog post:How Decentralized AI and Data Storage are Building Trust in AI
+
+
+["Core Value" of Filecoin - Datasets stored on Filecoin - Mom I see War ](https://x.com/FilFoundation/status/1847367452981940561)
+
+[
+](https://x.com/FilFoundation/status/1847367452981940561)["Core Value" of Filecoin - Datasets stored on Filecoin - Scientific Datasets ](https://x.com/FilFoundation/status/1852064252149768670)
+
+[
+](https://x.com/FilFoundation/status/1852064252149768670)["Core Value of Filecoin" - Marta Belcher on CNBC giving overview ](https://www.cnbc.com/video/2024/11/05/bitcoin-jumps-to-70000-investors-await-election-results-crypto-world.html)
+
+[
+](https://www.cnbc.com/video/2024/11/05/bitcoin-jumps-to-70000-investors-await-election-results-crypto-world.html)[Blog post: AI teams building on Filecoin ](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai)
+
+[
+](https://www.fil.org/blog/leading-ai-projects-choose-filecoin-to-advance-ai-marking-the-networks-leading-role-as-depin-backbone-for-ai)[Blog post: Ansa on Filecoin and Decentralized AI ](https://filecointldr.io/article/from-storage-to-intelligence-exploring-filecoins-role-in-the-ai-ecosystem)
+
+[
+](https://filecointldr.io/article/from-storage-to-intelligence-exploring-filecoins-role-in-the-ai-ecosystem)[Blog post:How Decentralized AI and Data Storage are Building Trust in AI](https://www.fil.org/blog/how-decentralized-ai-and-data-storage-is-building-trust-in-ai)
+
+[
 ](https://www.fil.org/blog/how-decentralized-ai-and-data-storage-is-building-trust-in-ai)[Blog post: Filecoin as a DePIN Prototype](https://www.fil.org/blog/filecoin-as-a-depin-prototype) 
-[Blog post: Filecoin and Decentralized Copmute 
+
+
+[Blog post: Filecoin and Decentralized Copmute ](https://www.fil.org/blog/unleashing-the-power-of-decentralized-compute-with-filecoin)
+
+[
 ](https://www.fil.org/blog/unleashing-the-power-of-decentralized-compute-with-filecoin)[Akave L2 Announcement](https://www.fil.org/blog/filecoin-ecosystem-teams-unveil-l2s) 
-[Storacha L2 Announcement
+
+
+[Storacha L2 Announcement](https://www.fil.org/blog/filecoin-ecosystem-teams-unveil-l2s)
+
+[
 ](https://www.fil.org/blog/filecoin-ecosystem-teams-unveil-l2s)[Filecoin TLDR Blog post on State of L2s](https://filecointldr.io/article/state-of-l2s-on-filecoin) 
 
 ## Governance and Filecoin Improvement Proposal (FIP) Process
