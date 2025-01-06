@@ -5,22 +5,27 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
+    
     schedule:
       interval: "weekly"
+      
     groups:
       dependencies:
         patterns:
           - "*"
-    ignore:
-      - dependency-name: "@types/node"
-        update-types: ["version-update:semver-major"]
-    versioning-strategy: increase
-    open-pull-requests-limit: 10
+          
+    labels:
+      - dependency-type: "version-update:semver-major"
+        labels: ["breaking-change"]
+        
+    versioning-strategy: auto
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    
     schedule:
       interval: "weekly"
+      
     groups:
       actions:
         patterns:
