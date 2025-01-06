@@ -69,8 +69,6 @@ The group discussed recent technical milestones and the collaborative efforts sh
 *  [FF 2024 Roadmap ](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)
 * [](https://www.fil.org/blog/driving-widespread-filecoin-adoption-key-initiatives-and-community-involvement-in-2024)Juan at Fil Dev Summit: [Filecoin Needs, Gaps, and Upgrade Path + Q&A](<>) 
 
-
-
 ## Looking Ahead
 
 Filecoin Foundation is committed to fostering a collaborative environment where stakeholders and community members can engage meaningfully, share insights, and contribute to the ecosystem’s growth. Community  feedback and participation is invaluable, and we look forward to building even stronger connections in the upcoming AMAs.
