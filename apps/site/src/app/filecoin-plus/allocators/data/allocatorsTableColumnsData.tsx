@@ -1,7 +1,8 @@
+import { ArrowUpRight } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
+import { Icon } from '@/components/Icon'
 import { TooltipHeader } from '@/components/Table/TooltipHeader'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 import { formatDatacap } from '../utils/formatDatacap'
@@ -11,7 +12,35 @@ const columnHelper = createColumnHelper<AllocatorWithDatacap>()
 export const allocatorsTableColumnsData = [
   columnHelper.accessor('name', {
     header: 'Organization Name',
-    cell: (info) => info.getValue(),
+    cell: (info) => {
+      const name = info.getValue()
+      const link = info.row.original.application.allocation_bookkeeping
+
+      return (
+        <div className="w-[200px]">
+          {link ? (
+            <a
+              aria-label={`See more information about ${name} allocator`}
+              href={link}
+              title={name}
+              className="group flex items-center focus:brand-outline hover:text-brand-300 hover:underline focus:text-brand-300"
+              rel="noopener noreferrer"
+            >
+              <span className="block truncate text-brand-100 group-hover:text-inherit group-focus:text-inherit">
+                {name}
+              </span>
+              <span className="ml-2 inline-flex self-center text-brand-300">
+                <Icon component={ArrowUpRight} size={18} />
+              </span>
+            </a>
+          ) : (
+            <p title={name} className="truncate text-brand-100">
+              {name}
+            </p>
+          )}
+        </div>
+      )
+    },
     filterFn: 'includesString',
   }),
   columnHelper.accessor('metapathway_type', {
@@ -54,28 +83,5 @@ export const allocatorsTableColumnsData = [
       />
     ),
     cell: (info) => info.getValue(),
-  }),
-  columnHelper.accessor('application.allocation_bookkeeping', {
-    header: 'Apply',
-    meta: {
-      bodyCellStyle: 'text-brand-300',
-    },
-    cell: (info) => {
-      const link = info.getValue()
-      const name = info.row.original.name
-
-      if (!link) {
-        return null
-      }
-
-      return (
-        <ExternalTextLink
-          aria-label={`Apply for ${name} allocator`}
-          href={link}
-        >
-          Apply
-        </ExternalTextLink>
-      )
-    },
   }),
 ]
