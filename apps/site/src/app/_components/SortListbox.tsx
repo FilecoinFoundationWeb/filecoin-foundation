@@ -12,9 +12,9 @@ import type { OptionType } from '@/components/Listbox/ListboxOption'
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 export type SortListboxProps = {
-  selected: OptionType
-  onChange: (newOption: OptionType) => void
-  options: ReadonlyArray<OptionType>
+  onChange: (newOption: OptionType) => void,
+  options: ReadonlyArray<OptionType>,
+  selected: OptionType,
   buttonIcon?: ListboxButtonProps['leadingIcon']
 }
 

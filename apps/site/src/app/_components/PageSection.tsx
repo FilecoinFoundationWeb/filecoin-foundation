@@ -19,17 +19,17 @@ import {
 } from '@/components/SectionDivider'
 
 type PageSectionImageProps = {
+  alt: string,
   data: StaticImageData
-  alt: string
 }
 
 type PageSectionProps = {
   kicker: SectionDividerProps['title']
   title: string
-  description?: DescriptionTextType
+  children?: React.ReactNode,
+  cta?: CTAButtonGroupProps['cta'],
+  description?: DescriptionTextType,
   image?: PageSectionImageProps
-  cta?: CTAButtonGroupProps['cta']
-  children?: React.ReactNode
 }
 
 export function PageSection({

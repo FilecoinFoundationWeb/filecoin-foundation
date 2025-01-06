@@ -10,20 +10,20 @@ type FilterComponents = [ReactNode, ReactNode?]
 
 type DesktopFiltersProps = {
   searchComponent: ReactNode
+  sortComponent: ReactNode,
   filterComponents?: FilterComponents
-  sortComponent: ReactNode
 }
 
 type MobileFiltersProps = {
-  searchComponent: ReactNode
-  filterComponents: FilterComponents
+  filterComponents: FilterComponents,
+  searchComponent: ReactNode,
   sortComponent: ReactNode
 }
 
 type ResultsProps = {
   category: ReactNode
+  gapSize?: 'default' | 'wide',
   results?: ReactNode
-  gapSize?: 'default' | 'wide'
 }
 
 type WrapperProps = {

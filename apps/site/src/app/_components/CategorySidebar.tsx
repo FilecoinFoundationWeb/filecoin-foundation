@@ -9,9 +9,9 @@ import type { TouchTarget } from '@/types/touchTargetType'
 import type { OptionType } from './Listbox/ListboxOption'
 
 type CategorySidebarProps = {
-  selected: OptionType
+  onChange: (selected: OptionType) => void,
   options: Array<OptionType>
-  onChange: (selected: OptionType) => void
+  selected: OptionType
 }
 
 type CategoryContainerProps = {
@@ -20,10 +20,10 @@ type CategoryContainerProps = {
 }
 
 type CategoryItemProps = {
-  name: string
+  handleClick: () => void,
+  isSelected: boolean,
+  name: string,
   count?: number
-  isSelected: boolean
-  handleClick: () => void
 }
 
 const TOUCH_TARGET: TouchTarget = {

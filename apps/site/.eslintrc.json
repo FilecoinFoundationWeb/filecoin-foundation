@@ -4,7 +4,7 @@
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "typescript-sort-keys"],
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -19,6 +19,12 @@
       }
     ],
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
+    "typescript-sort-keys/interface": [
+      "error",
+      "asc",
+      { "caseSensitive": false, "natural": true, "requiredFirst": true }
+    ],
+
     // Variable usage and definitions
     "no-unused-vars": "warn",
 

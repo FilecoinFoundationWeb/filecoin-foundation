@@ -3,9 +3,9 @@ import type { StaticImageProps } from '@/types/imageType'
 import { graphicsData } from '@/data/graphicsData'
 
 export type AboutData = {
+  description: string,
+  image: StaticImageProps,
   title: string
-  description: string
-  image: StaticImageProps
 }
 
 export const aboutData: Array<AboutData> = [

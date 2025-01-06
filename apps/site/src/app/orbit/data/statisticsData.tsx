@@ -8,9 +8,9 @@ import {
 import type { IconProps } from '@/components/Icon'
 
 export type StatisticData = {
-  icon: IconProps['component']
+  description: string,
+  icon: IconProps['component'],
   value: number
-  description: string
 }
 
 export const statisticsData: Array<StatisticData> = [

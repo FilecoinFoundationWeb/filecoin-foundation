@@ -9,8 +9,8 @@ type QueryValue = NextServerSearchParams[keyof NextServerSearchParams]
 
 export type UseFilterProps<Entry extends Object, Query extends QueryValue> = {
   entries: Array<Entry>
+  filterFn: (entry: Entry, filterQuery: Query) => boolean,
   filterQuery: Query
-  filterFn: (entry: Entry, filterQuery: Query) => boolean
 }
 
 export function useFilter<Entry extends Object, Query extends QueryValue>({

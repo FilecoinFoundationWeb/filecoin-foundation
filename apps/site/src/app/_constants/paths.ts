@@ -32,16 +32,16 @@ export type PathValues =
   | '/terms-of-use'
 
 export interface PathConfig {
-  path: PathValues
   label: string
   mainContentPath: string
+  path: PathValues
   entriesContentPath?: string
 }
 
 interface CMSConfig {
-  includesEntries?: boolean
   customMainContentPath?: string
   hasSubpaths?: boolean
+  includesEntries?: boolean
 }
 
 export const CONTENT_ROOT = 'src/content'

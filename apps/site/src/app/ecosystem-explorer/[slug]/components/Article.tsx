@@ -9,14 +9,14 @@ import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
 type ArticleProps = {
-  title: string
-  content?: string
-  videoUrl?: string
-  website?: string
+  category: string,
+  title: string,
+  content?: string,
+  featuredContent?: string,
   repo?: string
   twitter?: string
-  featuredContent?: string
-  category: string
+  videoUrl?: string,
+  website?: string
 }
 
 export function Article({

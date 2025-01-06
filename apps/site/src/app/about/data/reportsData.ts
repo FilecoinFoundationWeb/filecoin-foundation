@@ -5,9 +5,9 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import annualReport from '@/assets/images/022624-ff-anualreport.png'
 
 type ReportData = {
-  title: string
-  description: string
-  link: string
+  description: string,
+  link: string,
+  title: string,
   image?: StaticImageProps
 }
 

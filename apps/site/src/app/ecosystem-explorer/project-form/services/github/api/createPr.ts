@@ -7,9 +7,9 @@ import { createBranch } from './createBranch'
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 type CreatePRParams = {
+  branchName: string,
+  commitSha: string,
   title: string
-  branchName: string
-  commitSha: string
 }
 
 export async function createPR({

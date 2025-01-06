@@ -15,8 +15,8 @@ import {
 import { logZodError } from './zodUtils'
 
 type GetFrontmatterOptions<T> = {
+  path: PathConfig,
   zodParser: ZodType<T>['parse']
-  path: PathConfig
 }
 
 export function getFrontmatter<T extends Object>({

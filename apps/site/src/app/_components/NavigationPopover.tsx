@@ -6,10 +6,10 @@ import { CaretDown } from '@phosphor-icons/react'
 import { Icon } from '@/components/Icon'
 
 type PopOverProps = {
-  label: string
+  as: React.ElementType,
+  children: React.ReactElement,
+  label: string,
   mainNavItemStyles: string
-  as: React.ElementType
-  children: React.ReactElement
 }
 
 const SPACE_BETWEEN_PANEL_AND_BUTTON = 24

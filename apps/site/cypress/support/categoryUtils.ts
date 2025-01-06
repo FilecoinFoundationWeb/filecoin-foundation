@@ -9,18 +9,18 @@ import type { PathConfig } from '@/constants/paths'
 import { verifyLinks } from './verifyLinksUtil'
 
 interface CreateCategoryTestsParams {
-  pathConfig: PathConfig
   categories: Array<CategoryId>
+  pathConfig: PathConfig
 }
 
 interface VerifyCategoryLinksParams {
-  pathConfig: PathConfig
   category: CategoryId
+  pathConfig: PathConfig
 }
 
 interface GetAllSlugsByCategoryTypeParams {
-  directoryPath: string
   category: CategoryId
+  directoryPath: string
 }
 
 export function getAllSlugsByCategoryType({

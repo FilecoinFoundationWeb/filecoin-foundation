@@ -10,10 +10,10 @@ type GridColumnConfig =
   | 'lgThree'
 
 type CardGridProps = {
-  cols: GridColumnConfig
-  hasGridAutoRows?: boolean
+  children: React.ReactNode,
+  cols: GridColumnConfig,
   as?: React.ElementType
-  children: React.ReactNode
+  hasGridAutoRows?: boolean
 }
 
 const baseGridStyles = 'grid grid-cols-1 gap-4'

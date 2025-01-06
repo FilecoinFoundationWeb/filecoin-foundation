@@ -10,14 +10,14 @@ type Breakpoint = keyof TailwindConfig['theme']['screens']
 
 export type ListboxButtonProps = {
   text: string
+  compactBelow?: Breakpoint,
+  hasError?: boolean,
   leadingIcon?: IconProps['component']
-  compactBelow?: Breakpoint
-  hasError?: boolean
 }
 
 type LayoutVariant = {
+  compact: string,
   full: string
-  compact: string
 }
 
 type BreakpointStyles = Record<Breakpoint, LayoutVariant>
@@ -31,8 +31,8 @@ const breakpointStyles: BreakpointStyles = {
 }
 
 export function ListboxButton({
-  text,
   leadingIcon,
+  text,
   compactBelow,
   hasError,
 }: ListboxButtonProps) {

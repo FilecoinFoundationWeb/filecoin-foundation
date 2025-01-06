@@ -3,22 +3,22 @@ import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProje
 type Tech = EcosystemProject['tech'][number]
 
 export type MarkdownTemplateParams = {
-  fullName: EcosystemProject['fullName']
-  email: EcosystemProject['email']
-  title: EcosystemProject['title']
-  image: NonNullable<EcosystemProject['image']>
-  category: EcosystemProject['category']
-  tech: Array<Tech>
-  description: EcosystemProject['description']
-  content: NonNullable<EcosystemProject['content']>
-  yearJoined: NonNullable<EcosystemProject['yearJoined']>
-  website: NonNullable<EcosystemProject['website']>
-  createdOn: EcosystemProject['createdOn']
-  updatedOn: NonNullable<EcosystemProject['updatedOn']>
-  publishedOn: NonNullable<EcosystemProject['publishedOn']>
+  category: EcosystemProject['category'],
+  content: NonNullable<EcosystemProject['content']>,
+  createdOn: EcosystemProject['createdOn'],
+  description: EcosystemProject['description'],
+  email: EcosystemProject['email'],
+  fullName: EcosystemProject['fullName'],
+  image: NonNullable<EcosystemProject['image']>,
+  publishedOn: NonNullable<EcosystemProject['publishedOn']>,
+  tech: Array<Tech>,
+  title: EcosystemProject['title'],
+  updatedOn: NonNullable<EcosystemProject['updatedOn']>,
+  website: NonNullable<EcosystemProject['website']>,
+  yearJoined: NonNullable<EcosystemProject['yearJoined']>,
+  repo?: EcosystemProject['repo'],
+  twitter?: EcosystemProject['twitter'],
   videoUrl?: EcosystemProject['videoUrl']
-  repo?: EcosystemProject['repo']
-  twitter?: EcosystemProject['twitter']
 }
 
 export function buildEcosystemMarkdownTemplate(data: MarkdownTemplateParams) {

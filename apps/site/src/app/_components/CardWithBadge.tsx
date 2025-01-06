@@ -2,9 +2,9 @@ import type { BadgeProps } from '@/components/Badge'
 import { Heading } from '@/components/Heading'
 
 type CardWithBadgeProps = {
-  title: string
+  children: React.ReactElement<BadgeProps>,
   description: string | React.ReactNode
-  children: React.ReactElement<BadgeProps>
+  title: string
 }
 
 export function CardWithBadge({

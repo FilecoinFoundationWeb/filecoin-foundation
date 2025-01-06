@@ -7,9 +7,9 @@ import { SCHEMA_CONTEXT_URL } from '@/constants/structuredDataConstants'
 import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
 type GenerateWebPageStructuredDataProps = {
+  description: SeoMetadata['description'],
+  path: PathValues | DynamicPathValues,
   title: SeoMetadata['title']
-  description: SeoMetadata['description']
-  path: PathValues | DynamicPathValues
 }
 
 export function generateWebPageStructuredData({

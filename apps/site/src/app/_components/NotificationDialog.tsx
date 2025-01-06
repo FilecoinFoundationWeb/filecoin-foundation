@@ -12,8 +12,8 @@ import { Icon, type IconProps } from '@/components/Icon'
 type NotificationDialogProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
+  icon?: IconProps,
   title?: string
-  icon?: IconProps
 }
 
 export function NotificationDialog({

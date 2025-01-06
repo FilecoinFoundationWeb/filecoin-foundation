@@ -4,8 +4,8 @@ import type { CMSCollectionName } from '@/types/cmsConfig'
 import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
 
 type GetCategoryLabelParams = {
+  category: string,
   collectionName: CMSCollectionName
-  category: string
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {

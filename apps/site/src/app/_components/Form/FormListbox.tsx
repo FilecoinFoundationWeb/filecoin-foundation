@@ -14,15 +14,15 @@ import {
 } from '@/components/Listbox/ListboxOptions'
 
 export type FormListboxProps = {
-  value: OptionType
-  onChange: (value: OptionType) => void
   onBlur: () => void
+  onChange: (value: OptionType) => void
   options: Array<OptionType>
   placeholder: string
-  icon?: IconProps['component']
+  value: OptionType
   buttonWidth?: `w-${keyof typeof theme.spacing}`
-  optionsPosition?: ListboxOptionsProps['position']
   disabled?: boolean
+  icon?: IconProps['component']
+  optionsPosition?: ListboxOptionsProps['position']
 } & FormFieldProps
 
 export function FormListbox({

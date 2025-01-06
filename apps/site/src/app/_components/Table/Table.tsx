@@ -3,11 +3,11 @@ import { clsx } from 'clsx'
 import styles from './Table.module.scss'
 
 type TableProps = {
-  freezeFirstColumn?: boolean
-  freezeHeader?: boolean
-  layout?: 'auto' | 'fixed'
+  children: React.ReactNode,
+  freezeFirstColumn?: boolean,
+  freezeHeader?: boolean,
+  layout?: 'auto' | 'fixed',
   withBorder?: boolean
-  children: React.ReactNode
 }
 
 export function Table({

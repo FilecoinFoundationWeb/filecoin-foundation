@@ -7,10 +7,10 @@ import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 
 type ErrorMessageProps = {
-  kicker: string
-  title: string
+  children: string,
+  kicker: string,
+  title: string,
   cta?: CTAProps
-  children: string
 }
 
 export default function ErrorMessage({

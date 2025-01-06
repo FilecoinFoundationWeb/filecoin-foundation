@@ -6,8 +6,8 @@ import {
 import { Heading } from '@/components/Heading'
 
 type CTASectionProps = {
-  title: string
-  description: DescriptionTextType
+  description: DescriptionTextType,
+  title: string,
   cta?: {
     href: string
     text: string

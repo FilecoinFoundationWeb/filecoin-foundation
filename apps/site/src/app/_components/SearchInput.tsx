@@ -4,8 +4,8 @@ import { MagnifyingGlass, X } from '@phosphor-icons/react/dist/ssr'
 import { Icon } from '@/components/Icon'
 
 type SearchInputProps = {
+  onChange: (value: string) => void,
   query: string
-  onChange: (value: string) => void
 }
 
 export function SearchInput({ query, onChange }: SearchInputProps) {

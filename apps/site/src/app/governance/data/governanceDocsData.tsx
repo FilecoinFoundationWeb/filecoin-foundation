@@ -8,12 +8,12 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import type { IconProps } from '@/components/Icon'
 
 type GovernanceDocsData = {
-  heading: {
-    title: string
-    icon: IconProps['component']
-  }
+  cta: CTAProps,
   description: string
-  cta: CTAProps
+  heading: {
+    icon: IconProps['component'],
+    title: string
+  }
 }
 
 export const governanceDocsData: Array<GovernanceDocsData> = [

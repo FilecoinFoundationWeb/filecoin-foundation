@@ -14,9 +14,9 @@ import {
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 type FilterListboxProps = {
-  selected: OptionType
+  onChange: (selected: OptionType) => void,
   options: Array<OptionType>
-  onChange: (selected: OptionType) => void
+  selected: OptionType,
   buttonIcon?: ListboxButtonProps['leadingIcon']
 }
 

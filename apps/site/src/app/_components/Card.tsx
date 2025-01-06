@@ -29,15 +29,15 @@ type CardImageProps = (StaticImageProps | ImageProps) & {
 
 type CardProps = {
   title: string | React.ReactNode
-  tags?: TagGroupProps['tags']
-  metaData?: MetaDataType
-  description?: string
+  as?: React.ElementType,
+  avatars?: AvatarGroupProps['authors'],
+  borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600',
   cta?: CTAPropsWithSpacing
-  image?: CardImageProps
-  borderColor?: 'brand-300' | 'brand-400' | 'brand-500' | 'brand-600'
+  description?: string,
+  image?: CardImageProps,
+  metaData?: MetaDataType,
+  tags?: TagGroupProps['tags'],
   textIsClamped?: boolean
-  as?: React.ElementType
-  avatars?: AvatarGroupProps['authors']
 }
 
 type SpacingValue = keyof typeof theme.spacing

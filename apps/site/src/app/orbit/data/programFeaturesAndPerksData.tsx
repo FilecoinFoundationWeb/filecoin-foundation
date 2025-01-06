@@ -8,9 +8,9 @@ import {
 import type { IconProps } from '@/components/Icon'
 
 type ProgramFeaturesAndPerksDataProps = {
-  icon: IconProps['component']
+  description: string,
+  icon: IconProps['component'],
   title: string
-  description: string
 }
 
 export const programFeaturesAndPerksData: Array<ProgramFeaturesAndPerksDataProps> =

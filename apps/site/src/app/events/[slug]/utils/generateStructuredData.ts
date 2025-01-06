@@ -18,8 +18,8 @@ import type { Event } from '../../types/eventType'
 type LocationType = Place | VirtualLocation
 
 type GetLocationProps = {
-  location: Event['location']
-  externalLink: Event['externalLink']
+  externalLink: Event['externalLink'],
+  location: Event['location'],
   slug: Event['slug']
 }
 

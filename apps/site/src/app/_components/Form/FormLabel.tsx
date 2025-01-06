@@ -4,10 +4,10 @@ import { Label } from '@headlessui/react'
 import { clsx } from 'clsx'
 
 export type FormLabelProps = {
-  as?: ElementType
-  label: string
+  label: string,
+  addOptionalToLabel?: boolean,
+  as?: ElementType,
   hideLabel?: boolean
-  addOptionalToLabel?: boolean
 }
 
 export function FormLabel({

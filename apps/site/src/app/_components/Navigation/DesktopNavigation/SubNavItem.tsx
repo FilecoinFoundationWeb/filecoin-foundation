@@ -16,8 +16,8 @@ export type SubNavItemProps = {
 }
 
 export type LinkProps = Omit<SubNavItemProps, 'linkType'> & {
+  ariaLabel: string,
   className: string
-  ariaLabel: string
 }
 
 const baseStyles = 'group w-full rounded-lg focus:brand-outline'

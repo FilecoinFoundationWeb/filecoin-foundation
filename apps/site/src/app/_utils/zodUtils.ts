@@ -3,8 +3,8 @@ import { z, type ZodError } from 'zod'
 import { capitalize } from '@/utils/capitalize'
 
 type LogConfig = {
+  context?: Record<string, string>,
   location?: string
-  context?: Record<string, string>
 }
 
 export function logZodError(zodError: ZodError, config: LogConfig = {}) {

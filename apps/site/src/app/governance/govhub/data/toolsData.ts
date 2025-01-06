@@ -6,11 +6,11 @@ import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 type ToolsData = {
-  title: string
+  cta: CTAProps,
   description: string
-  purposeList: Array<string>
-  cta: CTAProps
-  image: StaticImageProps
+  image: StaticImageProps,
+  purposeList: Array<string>,
+  title: string
 }
 
 export const toolsData: Array<ToolsData> = [

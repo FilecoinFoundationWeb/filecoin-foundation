@@ -11,9 +11,9 @@ import {
 import { clsx } from 'clsx'
 
 type SlideOverProps = {
-  open: DialogProps['open']
-  setOpen: DialogProps['onClose']
-  children: React.ReactNode
+  children: React.ReactNode,
+  open: DialogProps['open'],
+  setOpen: DialogProps['onClose'],
   slideFrom?: keyof typeof slideFromStyles
 }
 

@@ -9,17 +9,17 @@ export type CMSFieldOption = {
 }
 
 export type CMSFieldConfig = {
-  name: string
-  label: string
+  label: string,
+  name: string,
   widget: string
-  required?: boolean
+  fields?: Array<CMSFieldConfig>,
   options?: Array<CMSFieldOption>
-  fields?: Array<CMSFieldConfig>
+  required?: boolean
 }
 
 export type CMSCollectionConfig = {
-  name: CMSCollectionName
-  label: string
+  label: string,
+  name: CMSCollectionName,
   fields?: Array<CMSFieldConfig>
 }
 

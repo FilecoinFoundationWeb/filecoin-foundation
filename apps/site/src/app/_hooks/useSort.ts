@@ -12,10 +12,10 @@ type UseSortProps<
   Entry extends Object,
   Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
 > = {
+  configs: Configs,
+  defaultsTo: Configs[number]['key'],
+  entries: Array<Entry>,
   searchParams: NextServerSearchParams
-  entries: Array<Entry>
-  configs: Configs
-  defaultsTo: Configs[number]['key']
 }
 
 export function useSort<

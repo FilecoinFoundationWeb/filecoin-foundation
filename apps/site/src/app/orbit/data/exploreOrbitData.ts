@@ -10,14 +10,14 @@ import type { IconProps } from '@/components/Icon'
 
 
 type ExploreOrbitData = {
-  heading: {
-    title: string
-    icon: IconProps['component']
-  }
-  description: string
   cta: {
     href: string
     text: string
+  },
+  description: string
+  heading: {
+    icon: IconProps['component'],
+    title: string
   }
 }
 

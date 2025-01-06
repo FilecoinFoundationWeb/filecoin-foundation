@@ -21,11 +21,11 @@ type FileExtension = `.${string}`
 type FileOrNull = File | null
 
 export type FormFileInputProps = {
-  file: FileOrNull
-  accept: Array<FileExtension> | ReadonlyArray<FileExtension>
+  accept: Array<FileExtension> | ReadonlyArray<FileExtension>,
+  file: FileOrNull,
   maxSize: number
+  onChange: (file: FileOrNull) => void,
   description?: FormLabelDescriptionProps['children']
-  onChange: (file: FileOrNull) => void
 } & Omit<HeadlessInputProps, ExcludedHeadlessUIProps> &
   FormFieldProps
 

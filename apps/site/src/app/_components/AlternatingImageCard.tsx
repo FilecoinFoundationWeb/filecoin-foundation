@@ -9,10 +9,10 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { BasicCard } from '@/components/BasicCard'
 
 type AlternatingImageCardProps = {
-  index: number
+  children: React.ReactNode,
   image: StaticImageProps
+  index: number,
   as?: React.ElementType
-  children: React.ReactNode
 }
 
 export function AlternatingImageCard({

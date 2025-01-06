@@ -1,7 +1,7 @@
 type ApplicationAndUseData = {
-  step: number
+  description: string,
+  step: number,
   title: string
-  description: string
 }
 
 export const applicationAndUseData: Array<ApplicationAndUseData> = [
