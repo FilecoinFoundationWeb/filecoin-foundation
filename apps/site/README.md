@@ -142,10 +142,6 @@ If you need to add or remove content from a page or a section, like a subtitle o
 1. Add the new content in the Markdown file, e.g., a subtitle in the header of `src/content/pages/home.md`.
 2. Update `public/admin/config.yml` to reflect this addition under the appropriate section, for example:
 
-### Authenticating with Netlify Identity and Git Gateway
-
-Our project integrates with Netlify Identity and Git Gateway for user authentication and content management. This integration allows authorized users to access the CMS and make changes to the website content. The authentication process is handled through Netlify Identity, while Git Gateway provides secure access to the Git repository. For more information, please refer to the Decap CMS documentation on [Git Gateway](https://decapcms.org/docs/git-gateway-backend/).
-
 ```yaml
 # collections -> name: "pages” -> name: "home”
 
@@ -161,19 +157,19 @@ The `widget` key is important and worth mentioning. Widgets define the content t
 
 The `Relation` widget is how we create links between related pieces of content, such as associating a featured post with a blog page. Relations usually rely on slugs, which are unique identifiers, to link content together.
 
-### Authenticating with Netlify Identity and Git Gateway
+#### Authenticating with GitHub
 
-Our project integrates with Netlify Identity and Git Gateway for user authentication and content management. This integration allows authorized users to access the CMS and make changes to the website content. The authentication process is handled through Netlify Identity, while Git Gateway provides secure access to the Git repository. For more information, please refer to the Decap CMS documentation on [Git Gateway](https://decapcms.org/docs/git-gateway-backend/).
+Our project integrates with Github for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
 
-### Working with the Local Git Repository
+This setup is only necessary for production. For local development, follow the instructions below.
+
+#### Working with the CMS locally
 
 You can connect Decap CMS to the local Git repository. To do this, follow these steps:
 
 1. Run `npx decap-server`
 2. Run `npm run dev`
 3. Open http://localhost:3000/admin/index.html
-
-Please refer to the Decap CMS documentation for more information and detailed instructions on [working with a local Git repository](https://decapcms.org/docs/working-with-a-local-git-repository/).
 
 ## Creating Page Templates
 
