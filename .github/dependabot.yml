@@ -14,9 +14,14 @@ updates:
         patterns:
           - "*"
           
-    labels:
-      - dependency-type: "version-update:semver-major"
-        labels: ["breaking-change"]
+    groups:
+      major-updates:
+        update-types:
+          - "major"
+        patterns:
+          - "*"
+        labels:
+          - "breaking-change"
         
     versioning-strategy: auto
 
