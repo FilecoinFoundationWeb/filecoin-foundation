@@ -7,7 +7,7 @@ published-on: 2025-01-06T12:37:00.000Z
 category: hosted
 location:
   primary: Virtual
-  region: africa
+  region: null
 start-date: 2025-01-06T12:39:00.000Z
 program:
   kicker: Test
