@@ -656,6 +656,7 @@ collections:
           - name: "region"
             label: "Region"
             widget: "select"
+            required: false
             options:
               - label: "Africa"
                 value: "africa"
