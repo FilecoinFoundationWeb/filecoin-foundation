@@ -4,7 +4,7 @@
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
-  "plugins": ["@typescript-eslint", "typescript-sort-keys"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     // React specific rules
     "react/no-unescaped-entities": "warn",
@@ -19,12 +19,15 @@
       }
     ],
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
-    "typescript-sort-keys/interface": [
+    "@typescript-eslint/member-ordering": [
       "error",
-      "asc",
-      { "caseSensitive": false, "requiredFirst": true }
+      {
+        "default": {
+          "optionalityOrder": "required-first",
+          "order": "alphabetically"
+        }
+      }
     ],
-
     // Variable usage and definitions
     "no-unused-vars": "warn",
 

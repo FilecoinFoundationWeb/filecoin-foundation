@@ -14,8 +14,8 @@ import { getFolderPaths } from '../utils/getFolderPaths'
 import { submitProjectToGithub } from '../utils/submitProjectToGithub'
 
 type SubmitProjectParams = {
-  formattedFile: FormattedFile
   formDataWithoutLogo: EcosystemProjectFormDataWithoutLogo
+  formattedFile: FormattedFile
 }
 
 export async function submitProject({
