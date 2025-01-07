@@ -18,7 +18,7 @@ const RegionSchema = createEnumSchema(validRegionIds)
 export const LocationSchema = z
   .object({
     primary: z.string(),
-    region: RegionSchema.nullable().optional(),
+    region: RegionSchema.nullish(),
   })
   .strict()
   .refine(virtualEventHasNoRegion, {
