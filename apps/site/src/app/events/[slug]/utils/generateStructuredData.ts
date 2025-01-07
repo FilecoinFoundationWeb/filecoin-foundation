@@ -83,7 +83,7 @@ function getLocation({
         '@type': 'PostalAddress',
         addressLocality: city,
         addressCountry: country,
-        addressRegion: location.region,
+        addressRegion: location.region || undefined,
       },
     }
   }

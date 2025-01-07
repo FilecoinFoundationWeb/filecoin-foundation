@@ -656,6 +656,7 @@ collections:
           - name: "region"
             label: "Region"
             widget: "select"
+            required: false
             options:
               - label: "Africa"
                 value: "africa"
@@ -712,7 +713,6 @@ collections:
           - name: "events"
             label: "Events"
             widget: "list"
-            required: true
             fields:
               - name: "title"
                 label: "Title"
