@@ -149,7 +149,7 @@ The `Relation` widget is how we create links between related pieces of content, 
 
 #### Authenticating with GitHub in production
 
-Our project integrates with Github for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
+Our project integrates with Github for user authentication and content management in a production environment. This integration allows authorized users to access the CMS and make changes to the website content. The list of authorized users is available in the [settings of the GitHub repository](https://github.com/FilecoinFoundationWeb/filecoin-foundation/settings/access). We also use a [Cloudflare worker](https://github.com/FilecoinFoundationWeb/decap-proxy) to handle the authentication process.
 
 This setup is only necessary for production. For local development, follow the instructions below.
 
@@ -163,7 +163,7 @@ You can connect Decap CMS to the local Git repository. To do this, follow these 
 
 ### Data Encryption
 
-Because of the open source nature of the project, some personal information that we collect is encrypted. This is currently the case for the name and email of ecosystem project owners. The data is encrypted using the `CryptoJS.AES` library. The master key for encryption and decryption is stored in the `.env` file under `ENCRYPTION_SECRET_KEY`.
+Some personal information that we collect is encrypted due to the open source nature of the project. This includes the name and email of ecosystem project owners. We use the `CryptoJS.AES` library for encryption. The master key to encrypt and decrypt data is stored in the `.env` file under `ENCRYPTION_SECRET_KEY`.
 
 ```md
 ---
@@ -173,13 +173,13 @@ full-name: encrypted::X4zxc...
 ---
 ```
 
-The CMS is able to encrypt and decrypt thanks to a custom API endpoint located at `apps/site/src/app/api/encryption/route.ts`. This endpoint is protected by a production-only environment variable called `ENCRYPTION_ENDPOINT_ACCESS_KEY`. This variable gets injected into the CMS by the `apps/site/scripts/injectEncryptionAccessKeyInCMS.js` script at build time on Vercel.
+The CMS is able to encrypt and decrypt data thanks to a custom API endpoint located at `apps/site/src/app/api/encryption/route.ts`. This endpoint is protected by a production-only environment variable called `ENCRYPTION_ENDPOINT_ACCESS_KEY`. This variable gets injected into the CMS by the `apps/site/scripts/injectEncryptionAccessKeyInCMS.js` script at build time only on Vercel.
 
 #### Decrypting information locally
 
-When running the CMS locally, the API key is not injected as `injectEncryptionAccessKeyInCMS.js` only runs during Vercel builds. Hence, this error message is displayed `Could not perform decrypt operation for value: X4asd...` for encrypted values. You can always consult the CMS in production to get the decrypted values.
+When running the CMS locally, the API key is not injected as `injectEncryptionAccessKeyInCMS.js` only runs during Vercel builds. Hence, this error message is displayed `Could not perform decrypt operation for value: X4asd...` for encrypted values.
 
-If you absolutely need to decrypt values locally, you can call the `decrypt` function from `apps/site/src/app/_utils/encryption.ts` and log the result to the console.
+If you need to view these values in plain text, you can access the CMS in production to see the decrypted information. But if you absolutely need to decrypt values locally, you can call the `decrypt` function from `apps/site/src/app/_utils/encryption.ts` and log the result to the console.
 
 ```ts
 // apps/site/src/app/(homepage)/page.tsx
@@ -188,7 +188,7 @@ import { decrypt } from "@/app/_utils/encryption"
 console.log(decrypt("encrypted::X4asd..."))
 ```
 
-Alternatively, you can also manually grab the API key from the [Vercel dashboard](https://vercel.com/filecoin-foundations-projects/filecoin-foundation-site/settings/environment-variables) and manually paste it where the `%ENCRYPTION_ENDPOINT_ACCESS_KEY%` placeholder is in the `cmsEncryptionWidget.js` file. Just remember to undo the changes before committing.
+Alternatively, you can also manually grab the API key from the [Vercel dashboard](https://vercel.com/filecoin-foundations-projects/filecoin-foundation-site/settings/environment-variables) and manually paste it where the `%ENCRYPTION_ENDPOINT_ACCESS_KEY%` placeholder is in `cmsEncryptionWidget.js`. Just remember to undo the changes before committing.
 
 ## Creating Page Templates
 
