@@ -21,8 +21,7 @@ program:
       start-date: 2025-01-20T09:00:00.000Z
       end-date: 2025-01-23T17:30:00.000Z
       location: Davos, Switzerland
-      description:
-        "The Filecoin Penthouse is an exclusive lounge in the heart of
+      description: "The Filecoin Penthouse is an exclusive lounge in the heart of
         Davos, designed for networking, casual meetings, and relaxing with
         coffee while enjoying breathtaking views. A private meeting room
         (seating up to 10 people) is available upon request. Located in WEF’s
@@ -30,20 +29,17 @@ program:
         event badge or credential for entry. Book a private meeting room:
         events@fil.org"
       external-link: https://cvent.me/xbZ2w2
-    - title:
-        "With Honor Action Reception. With Special Guests: Members of the U.S.
+    - title: "With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
       start-date: 2025-01-22T20:30:00.000Z
-      description:
-        With Honor Action, in partnership with Filecoin Foundation, is
+      description: With Honor Action, in partnership with Filecoin Foundation, is
         hosting the 4th Annual Reception for the bipartisan U.S. Congressional
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Wednesday night. Space is limited, and attendance is by prior
         confirmation only.
-      location: "Davos, Switzerland"
-    - title:
-        Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
+      location: Davos, Switzerland
+    - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
         GBBC.
       start-date: 2025-01-22T17:00:00.000Z
       location: Davos, Switzerland
@@ -69,18 +65,18 @@ schedule:
       date: 2025-01-20T10:00:00.000Z
     - date: 2025-01-21T09:00:00.000Z
       events:
-        - tag: "Registration Needed"
-          title: "Marta Belcher at Project Liberty Event"
+        - tag: Registration Needed
+          title: Marta Belcher at Future House
           description: "Fixing the System: How Decentralization Can Upgrade the Internet"
-          location: "Hotel Europe | Promenade 63, 7270 Davos, Switzerland"
+          location: Hotel Europe | Promenade 63, 7270 Davos, Switzerland
           start: 2025-01-21T17:00:00.000Z
           end: 2025-01-21T18:00:00.000Z
+          url: https://futurehousedavos.io/
   kicker: Don't miss out
 speakers:
   kicker: Connect with us
   title: Meet the Team
-  description:
-    Our experts are here to discuss Web3, decentralization, and policy
+  description: Our experts are here to discuss Web3, decentralization, and policy
     innovation. Request a meeting at marketing@fil.org to explore opportunities.
   speakers_list:
     - name: Marta Belcher
@@ -92,7 +88,7 @@ speakers:
     - name: Megan Klimen
       title: Founding Officer
       company: Filecoin Foundation
-      linkedin: "https://www.linkedin.com/in/megan-klimen/"
+      linkedin: https://www.linkedin.com/in/megan-klimen/
       image:
         src: /assets/images/megan-klimen-davos.webp
     - name: Clara Tsao
