@@ -8,7 +8,7 @@ This project is developed for Filecoin Foundation, aiming to provide comprehensi
 
 ### Prerequisites
 
-- Node.js (v14 or later)
+- Node.js (v18 or later)
 - npm
 
 ### Installation
