@@ -37,7 +37,7 @@ export function FormCheckbox({
         <div
           className={clsx(
             TOUCH_TARGET.visibleElementSize,
-            'rounded bg-white p-0.5 text-white hover:bg-brand-200 focus:bg-brand-200 group-focus:outline group-focus:outline-1 group-focus:outline-offset-2 group-focus:outline-white group-data-[disabled]:cursor-not-allowed group-data-[checked]:bg-brand-400 hover:group-data-[checked]:bg-brand-500',
+            'rounded bg-brand-100 p-0.5 text-brand-100 hover:bg-brand-200 group-focus:bg-brand-200 group-focus:outline group-focus:outline-1 group-focus:outline-offset-2 group-focus:outline-brand-100 group-data-[disabled]:cursor-not-allowed group-data-[checked]:bg-brand-400 hover:group-data-[checked]:bg-brand-500',
           )}
         >
           <span className="hidden group-data-[checked]:block">
