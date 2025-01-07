@@ -35,7 +35,7 @@ function isVirtual(location: Location) {
 }
 
 function hasRegion(location: Location) {
-  return location.region !== undefined && location.region !== null
+  return Boolean(location.region)
 }
 
 function virtualEventHasNoRegion(location: Location) {
