@@ -1,0 +1,134 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    // React specific rules
+    "react/no-unescaped-entities": "warn",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "multiline": "last",
+        "noSortAlphabetically": true,
+        "reservedFirst": true,
+        "shorthandFirst": true
+      }
+    ],
+    "@typescript-eslint/array-type": ["error", { "default": "generic" }],
+    // Variable usage and definitions
+    "no-unused-vars": "warn",
+
+    // Import related rules
+    "import/no-unused-modules": "warn",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "fs|path",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "next/**",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@/types/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/constants/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/content/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/data/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/utils/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/schemas/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/services/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/hooks/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/components/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/styles/**",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "*.+(css|scss|sass|less)",
+            "group": "index",
+            "position": "after"
+          },
+          {
+            "pattern": "tailwindcss",
+            "group": "index",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+
+    "eqeqeq": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": ["./apps/site/tsconfig.json", "./cypress/tsconfig.json"]
+      }
+    }
+  }
+}

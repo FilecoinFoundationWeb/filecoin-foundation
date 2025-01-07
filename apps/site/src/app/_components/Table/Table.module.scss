@@ -1,0 +1,51 @@
+.tableWrapper {
+  @apply w-full overflow-x-auto rounded-lg focus:brand-outline;
+
+  &[data-freeze-header='true'] {
+    @apply max-h-screen;
+
+    thead .cell {
+      @apply sticky top-0 z-10 bg-inherit;
+    }
+
+    &[data-freeze-first-column='true'] {
+      thead .cell:first-child {
+        @apply z-20;
+      }
+    }
+  }
+
+  &[data-freeze-first-column='true'] {
+    .cell:first-child {
+      @apply sticky left-0 z-10 bg-inherit;
+    }
+  }
+}
+
+.table {
+  @apply isolate h-full min-w-full border-separate border-spacing-0;
+}
+
+.row {
+  @apply h-[52px] bg-brand-800;
+
+  tbody & {
+    @apply odd:bg-brand-700 even:bg-brand-800;
+  }
+}
+
+.cell {
+  @apply whitespace-nowrap px-5 text-left font-normal;
+
+  &:first-child {
+    @apply pl-10;
+  }
+
+  &:last-child {
+    @apply pr-10;
+  }
+
+  thead & {
+    @apply border-b border-brand-500;
+  }
+}
