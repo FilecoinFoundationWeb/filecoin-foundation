@@ -7,7 +7,7 @@ type WithCategory = {
 type WithLocation = {
   location: {
     primary: string
-    region?: string
+    region?: string | null
   }
 }
 
