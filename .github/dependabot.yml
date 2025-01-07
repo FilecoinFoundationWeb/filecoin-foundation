@@ -5,25 +5,29 @@ version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    
     schedule:
       interval: "weekly"
-      
     groups:
       dependencies:
         patterns:
           - "*"
+    versioning-strategy: auto
 
+  - package-ecosystem: "npm"
+    directory: "/apps/site"
+    schedule:
+      interval: "weekly"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
     versioning-strategy: auto
 
   - package-ecosystem: "github-actions"
     directory: "/"
-    
     schedule:
       interval: "weekly"
-      
     groups:
       actions:
         patterns:
           - "*"
-          
