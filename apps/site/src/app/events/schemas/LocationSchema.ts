@@ -3,7 +3,7 @@ import { z } from 'zod'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { createEnumSchema } from '@/utils/zodUtils'
 
-type Location = {
+export type Location = {
   primary: string
   region?: string | null
 }

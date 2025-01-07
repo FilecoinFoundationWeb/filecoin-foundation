@@ -1,14 +1,12 @@
 import { VIRTUAL_EVENT_FILTER_OPTION } from '@/events/constants/constants'
+import type { Location } from '@/events/schemas/LocationSchema'
 
 type WithCategory = {
   category: string
 }
 
 type WithLocation = {
-  location: {
-    primary: string
-    region?: string | null
-  }
+  location: Location
 }
 
 export function entryMatchesCategoryQuery<Entry extends WithCategory>(
