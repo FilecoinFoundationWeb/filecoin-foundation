@@ -18,4 +18,8 @@ npm install
 
 ## Development
 
-To start the development server, run `npx turbo dev`. This command will start the development server for all applications and packages in the monorepo. Alternatively, you can install `turbo` globally and run `turbo dev`.
+To start the development server, run `npx turbo dev`. This command will start the development server for all applications and packages in the monorepo. Alternatively, you can install `turbo` globally with `npm install -g turbo` and run `turbo dev`.
+
+## Building
+
+To build the monorepo, run `npx turbo build`. This command will build all applications and packages in the monorepo.
