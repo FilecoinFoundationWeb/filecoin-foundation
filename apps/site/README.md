@@ -57,14 +57,6 @@ This project uses [ESLint](https://eslint.org/) for linting. The shared ESLint c
 npm run lint
 ```
 
-#### Import Order
-
-We maintain a specific order for import statements to make our code easier to read and to ensure that similar imports are grouped. Our ordering rules are as follows:
-
-- Node.js built-in modules (e.g., `fs`, `path`)
-- External modules (e.g., `react`, `next/**`)
-- Internal aliases (e.g., `@/components/**`, `@/styles/**`)
-
 ## Technologies
 
 - **Next.js 15**: For server-side rendering, static site generation, and routing.
