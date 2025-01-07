@@ -292,7 +292,7 @@ const aboutPageBaseData = generateWebPageStructuredData({
 
 This can be further customized based on the page's content and structure. Example:
 
-````javascript
+```javascript
 const aboutPageStructuredData: WithContext<WebPage> = {
   ...aboutPageBaseData,
   about: {
@@ -330,4 +330,3 @@ We welcome contributions to Filecoin Foundation website!
 ## License
 
 This project is licensed under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
-````
