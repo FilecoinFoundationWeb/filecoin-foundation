@@ -4,7 +4,7 @@ import { PATHS } from '@/constants/paths'
 
 import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
-import { DigestArticleFrontMatterSchema } from '../schemas/FrontMatterSchema'
+import { DigestArticleFrontmatterSchema } from '../schemas/DigestArticleFrontmatterSchema'
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 
@@ -16,7 +16,7 @@ export function getDigestArticleData(slug: string) {
 export function getDigestArticlesData() {
   const allArticles = getAllMarkdownData({
     directoryPath: DIGEST_DIRECTORY_PATH,
-    zodParser: DigestArticleFrontMatterSchema.parse,
+    zodParser: DigestArticleFrontmatterSchema.parse,
   })
 
   return allArticles
@@ -28,7 +28,7 @@ function getDigestMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: DIGEST_DIRECTORY_PATH,
-    zodParser: DigestArticleFrontMatterSchema.parse,
+    zodParser: DigestArticleFrontmatterSchema.parse,
   })
 }
 
