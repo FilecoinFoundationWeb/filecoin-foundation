@@ -1,7 +1,5 @@
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
@@ -27,7 +25,7 @@ export async function generateMetadata(props: DigestArticleProps) {
   return createMetadata({
     seo: {
       ...data.seo,
-      image: data.image?.src || graphicsData.digest.data.src,
+      image: data.image.src,
     },
     path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
   })

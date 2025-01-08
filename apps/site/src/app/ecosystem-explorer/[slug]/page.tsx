@@ -65,7 +65,7 @@ export default async function EcosystemProject(props: EcosystemProjectProps) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
-      <PageHeader image={image} />
+      <PageHeader src={image.src} />
 
       <Article
         title={title}

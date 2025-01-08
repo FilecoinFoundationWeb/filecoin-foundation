@@ -1,28 +1,21 @@
-import Image, { type ImageProps } from 'next/image'
-
-import { clsx } from 'clsx'
-
-import { graphicsData } from '@/data/graphicsData'
+import Image from 'next/image'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PageHeaderProps = {
-  image?: Omit<ImageProps, 'alt'>
+  src: string
 }
 
-export function PageHeader({ image }: PageHeaderProps) {
+export function PageHeader({ src }: PageHeaderProps) {
   return (
     <header className="space-y-10 md:space-y-16">
       <div className="relative h-48 md:w-3/4 lg:w-2/3 xl:w-3/5">
         <Image
           fill
           priority
-          src={image?.src || graphicsData.imageFallback.data.src}
+          src={src}
           alt={''}
-          className={clsx(
-            image?.src && 'rounded-lg',
-            'object-contain object-left-bottom',
-          )}
+          className="rounded-lg object-contain object-left-bottom"
           sizes={buildImageSizeProp({
             startSize: '100vw',
             md: '730px',
