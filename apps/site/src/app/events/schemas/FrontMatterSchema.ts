@@ -1,33 +1,5 @@
-import { z } from 'zod'
+import { createFeaturedEntryPageSchema } from '@/utils/zod/createFeaturedEntryPageSchema'
 
-import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { createEnumSchema } from '@/utils/zodUtils'
+import { getEventData } from '../utils/getEventData'
 
-import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
-
-import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
-import { LocationSchema } from './LocationSchema'
-import { ProgramSchema } from './ProgramSchema'
-import { RecapSchema } from './RecapSchema'
-import { ScheduleSchema } from './ScheduleSchema'
-import { SpeakersSchema } from './SpeakerSchema'
-import { SponsorsSchema } from './SponsorSchema'
-
-const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
-  collectionName: 'event_entries',
-  fieldName: 'category',
-})
-
-const CategorySchema = createEnumSchema(validCategoryIds)
-
-export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
-  ...EventBaseFrontMatterSchema.shape,
-  category: CategorySchema,
-  location: LocationSchema,
-  'luma-calendar-link': z.string().url().optional(),
-  program: ProgramSchema.optional(),
-  recap: RecapSchema.optional(),
-  schedule: ScheduleSchema.optional(),
-  speakers: SpeakersSchema.optional(),
-  sponsors: SponsorsSchema.optional(),
-}).strict()
+export const FrontmatterSchema = createFeaturedEntryPageSchema(getEventData)

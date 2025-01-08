@@ -15,7 +15,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogContent } from './components/BlogContent'
 import { blogSortConfigs } from './constants/sortConfigs'
-import { PageFrontmatterSchema } from './schemas/PageFrontmatterSchema'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
@@ -26,7 +26,7 @@ type Props = {
 
 const { seo, featuredEntry: featuredPost } = getFrontmatter({
   path: PATHS.BLOG,
-  zodParser: PageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

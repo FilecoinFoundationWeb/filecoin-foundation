@@ -20,7 +20,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
-import { PageFrontmatterSchema } from './schemas/PageFrontmatterSchema'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getMetaData } from './utils/getMetaData'
 
@@ -30,7 +30,7 @@ type Props = {
 
 const { seo, featuredEntry: featuredEvent } = getFrontmatter({
   path: PATHS.EVENTS,
-  zodParser: PageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({

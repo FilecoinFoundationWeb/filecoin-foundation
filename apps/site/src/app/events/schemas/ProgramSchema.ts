@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
+import { EventBaseFrontMatterSchema } from './EventBaseFrontMatterSchema'
 
 export const ProgramSchema = z
   .object({
