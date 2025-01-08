@@ -1,8 +1,8 @@
 ---
 title: "APAC AMA Recap – November 2024"
 created-on: 2025-01-06T19:39:00.000Z
-updated-on: 2025-01-06T19:39:00.000Z
-published-on: 2025-01-06T19:39:00.000Z
+updated-on: 2025-01-08T19:39:00.000Z
+published-on: 2025-01-08T19:39:00.000Z
 category: ecosystem
 description: The latest APAC Ask Me Anything (AMA), held on November 21, brought
   together more than 70 participants, including many Storage Providers (SPs),
@@ -26,7 +26,7 @@ The AMA opened with a discussion of Filecoin’s core goals and values, emphasiz
 
 The potential integration of AI with Filecoin’s ecosystem was also highlighted as an exciting frontier. Attendees explored scenarios where AI could enhance data storage, retrieval, and ecosystem scalability, offering new opportunities for SPs, developers, and L2s.
 
-### Reference links:
+### Reference Links
 
 - [Core Value of Filecoin - Fast Company Next Big Things in Tech](https://www.fastcompany.com/91207410/fast-company-next-big-things-ai-data-2024)
 - [Core Value of Filecoin - Storing Election Data](https://cryptonews.com/news/benefits-of-storing-election-data-on-decentralized-databases/)
@@ -46,7 +46,7 @@ The potential integration of AI with Filecoin’s ecosystem was also highlighted
 
 The governance segment addressed how the Filecoin FIP process operates, offering attendees a detailed view of its structure and pathways for community participation. Beyond GitHub discussions, stakeholders expressed interest in accessible methods for engaging with governance processes. The session also touched on potential updates to governance structures over the next 6 to12 months, reflecting the community’s growing demand for inclusivity and efficiency.
 
-### Reference links:
+### Reference Links
 
 - [FIL Gov Slack Channel](https://filecoinproject.slack.com/?redir=%2Farchives%2FC0535S9TUUF%3Fname%3DC0535S9TUUF)
 - [GovHub - Filecoin Governance + PowerVote](/governance/govhub) 
