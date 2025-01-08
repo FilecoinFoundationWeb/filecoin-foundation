@@ -10,7 +10,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "apps/site/public/assets/images"
-public_folder: "apps/site/assets/images"
+public_folder: "/assets/images"
 
 slug:
   encoding: "ascii"
