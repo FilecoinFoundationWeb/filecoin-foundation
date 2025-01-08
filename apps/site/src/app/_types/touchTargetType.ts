@@ -1,5 +1,5 @@
 export type TouchTarget = {
-  visibleElementSize?: string | number
+  touchAreaPadding: string,
   touchAreaOffset?: string
-  touchAreaPadding: string
+  visibleElementSize?: string | number
 }

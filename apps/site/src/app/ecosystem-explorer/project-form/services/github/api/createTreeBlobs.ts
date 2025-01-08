@@ -8,10 +8,10 @@ type Tree =
   RestEndpointMethodTypes['git']['createTree']['parameters']['tree'][number]
 
 type BlobTree = {
-  path: Tree['path']
-  mode: '100644'
+  mode: '100644',
+  path: Tree['path'],
+  sha: Tree['sha'],
   type: 'blob'
-  sha: Tree['sha']
 }
 
 type CreateTreeParams = {

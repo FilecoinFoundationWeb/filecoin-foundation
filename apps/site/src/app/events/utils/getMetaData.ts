@@ -3,9 +3,9 @@ import { formatDate } from '@/utils/dateUtils'
 import type { Event } from '../types/eventType'
 
 type getMetaDataParams = {
-  startDate: Event['startDate']
+  location: Event['location']['primary'],
+  startDate: Event['startDate'],
   endDate?: Event['endDate']
-  location: Event['location']['primary']
 }
 
 export function getMetaData({

@@ -34,8 +34,8 @@ import { getBlogPostsData } from '../utils/getBlogPostData'
 import { getMetaData } from '../utils/getMetaData'
 
 type BlogContentProps = {
-  searchParams: NextServerSearchParams
-  posts: ReturnType<typeof getBlogPostsData>
+  posts: ReturnType<typeof getBlogPostsData>,
+  searchParams: NextServerSearchParams,
   sortOptions: ReturnType<typeof getSortOptions>
 }
 

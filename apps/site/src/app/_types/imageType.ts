@@ -1,8 +1,8 @@
 import type { StaticImageData } from 'next/image'
 
 export type ImageProps = {
+  alt: string,
   src: string
-  alt: string
 }
 
 export type ImageObjectFit = {
@@ -10,6 +10,6 @@ export type ImageObjectFit = {
 }
 
 export type StaticImageProps = {
+  alt: string,
   data: StaticImageData
-  alt: string
 }

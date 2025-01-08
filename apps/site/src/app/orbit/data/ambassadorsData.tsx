@@ -13,10 +13,10 @@ import shenzhenImg from '@/assets/orbit/ambassadors/shenzhen-orbit-china-roadsho
 import tanzaniaImg from '@/assets/orbit/ambassadors/tanzania-filecoin-community-event.jpg'
 
 export type AmbassadorData = {
-  name: string
+  image: StaticImageProps,
   location: string
+  name: string,
   testimonial: Array<string> | Array<JSX.Element>
-  image: StaticImageProps
 }
 
 export const ambassadorsData: Array<AmbassadorData> = [

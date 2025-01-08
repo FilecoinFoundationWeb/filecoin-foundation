@@ -20,9 +20,9 @@ const styles = {
 type TagVariant = keyof typeof styles.variants
 
 export type TagProps = {
-  variant?: TagVariant
+  children: string,
   icon?: IconProps['component']
-  children: string
+  variant?: TagVariant
 }
 
 export function TagLabel({ variant = 'primary', icon, children }: TagProps) {

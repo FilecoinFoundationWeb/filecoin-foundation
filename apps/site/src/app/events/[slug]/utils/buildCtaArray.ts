@@ -10,8 +10,8 @@ type Links = {
 }
 
 type CtaArrayProps = {
+  eventHasConcluded: boolean,
   links: Links
-  eventHasConcluded: boolean
 }
 
 export function buildCtaArray({

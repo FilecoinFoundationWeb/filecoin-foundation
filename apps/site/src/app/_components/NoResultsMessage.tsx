@@ -6,8 +6,8 @@ import { Icon, type IconProps } from '@/components/Icon'
 
 type NoResultsMessageProps = {
   icon: IconProps['component']
-  title: string
-  message: string
+  message: string,
+  title: string,
   cta?: CTAProps
 }
 

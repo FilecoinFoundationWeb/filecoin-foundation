@@ -17,8 +17,8 @@ export type TableSortOption = {
 
 type SortFilterProps = {
   column: Column<AllocatorWithDatacap>
+  defaultOption: TableSortOption,
   options: ReadonlyArray<TableSortOption>
-  defaultOption: TableSortOption
 }
 
 export function SelectSort({

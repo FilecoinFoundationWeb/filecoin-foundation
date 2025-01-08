@@ -10,9 +10,9 @@ import { SEARCH_KEY } from '@/constants/searchParams'
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
 type UseSearchProps<Entry extends Object> = {
+  entries: Array<Entry>,
+  searchBy: keyof Entry | Array<keyof Entry>,
   searchParams: NextServerSearchParams
-  entries: Array<Entry>
-  searchBy: keyof Entry | Array<keyof Entry>
 }
 
 function normalizeString(str: string) {

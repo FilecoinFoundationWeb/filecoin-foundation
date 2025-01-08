@@ -3,12 +3,12 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import type { SponsorTier } from '../types/sponsorType'
 
 export type SponsorTierConfig = {
-  tier: SponsorTier
-  containerGap: string
+  containerGap: string,
   logoImageConfig: {
     containerStyles: string
     imageSizes: string
-  }
+  },
+  tier: SponsorTier
 }
 
 export const sponsorTierConfigs: Array<SponsorTierConfig> = [

@@ -3,9 +3,9 @@ import type { StaticImageProps } from '@/types/imageType'
 import { graphicsData } from '@/data/graphicsData'
 
 type FocusAreaData = {
+  description: string,
+  image: StaticImageProps,
   title: string
-  description: string
-  image: StaticImageProps
 }
 
 export const focusAreasData: Array<FocusAreaData> = [

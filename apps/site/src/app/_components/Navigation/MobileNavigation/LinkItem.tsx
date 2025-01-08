@@ -13,10 +13,10 @@ import { Icon } from '@/components/Icon'
 import styles from '@/components/TextLink/TextLink.module.scss'
 
 export type LinkItemProps = {
-  label: string
-  href: Route | string
+  href: Route | string,
+  label: string,
+  setOpen: Dispatch<SetStateAction<boolean>>,
   nested?: boolean
-  setOpen: Dispatch<SetStateAction<boolean>>
 }
 
 export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {

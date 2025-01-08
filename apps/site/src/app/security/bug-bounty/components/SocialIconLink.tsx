@@ -3,9 +3,9 @@ import { Icon, type IconProps } from '@/components/Icon'
 import type { WhiteHat } from '../types'
 
 type SocialIconLinkProps = {
-  profileLink: NonNullable<WhiteHat['profileLink']>
+  logo: IconProps['component'],
+  profileLink: NonNullable<WhiteHat['profileLink']>,
   reporter: WhiteHat['reporter']
-  logo: IconProps['component']
 }
 
 export function SocialIconLink({

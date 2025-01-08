@@ -11,8 +11,8 @@ import {
 } from '@/schemas/SeoMetadataSchema'
 
 type CreateMetadataProps = {
-  seo: SeoMetadata
-  path: PathValues | DynamicPathValues
+  path: PathValues | DynamicPathValues,
+  seo: SeoMetadata,
   overrideDefaultTitle?: boolean
 }
 

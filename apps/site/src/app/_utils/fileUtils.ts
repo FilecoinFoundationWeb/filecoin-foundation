@@ -29,8 +29,8 @@ export function isValidMarkdownPath(path: string) {
 }
 
 export function parseMarkdown(fileContents: string): {
+  content: string,
   data: object
-  content: string
 } {
   return matter(fileContents)
 }

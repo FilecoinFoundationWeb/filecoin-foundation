@@ -1,9 +1,9 @@
 import { type TagProps, TagLabel } from './TagLabel'
 
 type TagItem = {
+  text: TagProps['children'],
+  icon?: TagProps['icon'],
   variant?: TagProps['variant']
-  text: TagProps['children']
-  icon?: TagProps['icon']
 }
 
 export type TagGroupProps = {

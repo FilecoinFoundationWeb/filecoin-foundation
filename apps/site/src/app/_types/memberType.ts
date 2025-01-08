@@ -1,8 +1,8 @@
 import type { StaticImageData } from 'next/image'
 
 export type MemberData = {
-  name: string
+  image: StaticImageData,
+  linkedin: string,
+  name: string,
   title: string
-  linkedin: string
-  image: StaticImageData
 }

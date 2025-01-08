@@ -10,16 +10,16 @@ import type { FormattedFile } from '../types'
 import type { buildEcosystemMarkdownTemplate } from './buildEcosystemMarkdownTemplate'
 
 export type SubmitProjectToGitHubParams = {
-  slug: string
-  message: string
+  file: {
+    base64: FormattedFile['base64'],
+    path: string
+  },
   markdown: {
     path: string
     template: ReturnType<typeof buildEcosystemMarkdownTemplate>
-  }
-  file: {
-    path: string
-    base64: FormattedFile['base64']
-  }
+  },
+  message: string,
+  slug: string
 }
 
 export async function submitProjectToGithub({

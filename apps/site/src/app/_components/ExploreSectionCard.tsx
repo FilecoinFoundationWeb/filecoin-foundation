@@ -7,8 +7,8 @@ import { type HeadingProps, Heading } from '@/components/Heading'
 
 type ExploreSectionCardProps = {
   heading: HeadingProps
+  children?: React.ReactNode,
   cta?: CTAProps
-  children?: React.ReactNode
 }
 
 export function ExploreSectionCard({

@@ -16,8 +16,8 @@ import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
 
 type CopyToClipboardProps = {
+  notificationTitle: string,
   text: string
-  notificationTitle: string
 }
 
 const TOUCH_TARGET: TouchTarget = {

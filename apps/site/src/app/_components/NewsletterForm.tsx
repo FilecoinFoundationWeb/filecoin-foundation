@@ -27,8 +27,8 @@ export type NewsLetterFormType = z.infer<typeof NewsletterSchema>
 
 type NotificationDialogState = {
   isOpen: boolean
+  icon?: IconProps,
   title?: string
-  icon?: IconProps
 }
 
 export function NewsletterForm() {

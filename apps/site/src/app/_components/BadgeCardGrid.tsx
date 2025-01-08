@@ -3,8 +3,8 @@ import { clsx } from 'clsx'
 type GridColumnConfig = 'smThree' | 'smTwoLgFour'
 
 type BadgeCardGridProps = {
+  children: React.ReactNode,
   cols: GridColumnConfig
-  children: React.ReactNode
 }
 
 const baseGridStyles = 'grid grid-cols-1 gap-6 sm:auto-rows-fr'

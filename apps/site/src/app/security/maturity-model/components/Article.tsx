@@ -12,8 +12,8 @@ import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
 type ArticleProps = {
+  slug: string,
   title: string
-  slug: string
 } & React.ComponentPropsWithoutRef<'article'>
 
 export function Article({ title, slug, children }: ArticleProps) {

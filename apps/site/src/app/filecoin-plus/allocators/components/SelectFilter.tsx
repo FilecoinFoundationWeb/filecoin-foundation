@@ -16,8 +16,8 @@ type FilterOption = {
 
 type SelectFilterProps = {
   column: Column<AllocatorWithDatacap>
+  defaultOptionLabel: string,
   options: ReadonlyArray<FilterOption>
-  defaultOptionLabel: string
 }
 
 const DEFAULT_FILTER_ID = ''

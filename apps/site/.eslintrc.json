@@ -19,6 +19,15 @@
       }
     ],
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "default": {
+          "optionalityOrder": "required-first",
+          "order": "alphabetically"
+        }
+      }
+    ],
     // Variable usage and definitions
     "no-unused-vars": "warn",
 

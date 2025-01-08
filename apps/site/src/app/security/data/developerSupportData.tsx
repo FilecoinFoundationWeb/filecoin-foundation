@@ -8,11 +8,11 @@ import type { IconProps } from '@/components/Icon'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type DeveloperSupportData = {
+  description: React.ReactNode,
   heading: {
+    icon: IconProps['component'],
     title: string
-    icon: IconProps['component']
   }
-  description: React.ReactNode
 }
 
 export const developerSupportData: Array<DeveloperSupportData> = [

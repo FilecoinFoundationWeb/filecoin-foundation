@@ -8,9 +8,9 @@ type NestedMenuItemProps = {
 }
 
 type NestedMenuProps = {
+  items: Array<NestedMenuItemProps>,
+  setOpen: Dispatch<SetStateAction<boolean>>,
   title: string
-  items: Array<NestedMenuItemProps>
-  setOpen: Dispatch<SetStateAction<boolean>>
 }
 
 export function NestedMenu({ title, items, setOpen }: NestedMenuProps) {

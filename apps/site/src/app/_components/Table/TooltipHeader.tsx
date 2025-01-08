@@ -8,8 +8,8 @@ import { Icon } from '@/components/Icon'
 import { Tooltip, type TooltipProps } from '@/components/Tooltip/Tooltip'
 
 type TableHeaderWithTooltipProps = {
+  description: TooltipProps['description'],
   title: string
-  description: TooltipProps['description']
 }
 
 const TOUCH_TARGET: TouchTarget = {

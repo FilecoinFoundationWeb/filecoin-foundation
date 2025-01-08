@@ -17,8 +17,8 @@ import { useVisiblePages } from '@/hooks/useVisiblePages'
 import { Icon } from '@/components/Icon'
 
 type PaginationProps = {
+  currentPage: ReturnType<typeof usePagination>['currentPage'],
   pageCount: ReturnType<typeof usePagination>['pageCount']
-  currentPage: ReturnType<typeof usePagination>['currentPage']
 }
 
 const DEBOUNCE_DELAY = 300

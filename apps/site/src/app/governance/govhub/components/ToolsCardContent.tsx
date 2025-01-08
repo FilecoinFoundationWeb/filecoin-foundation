@@ -6,10 +6,10 @@ import { Heading } from '@/components/Heading'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type ToolsCardContentProps = {
-  title: string
+  cta: CTAProps,
   description: string
   listItems: Array<string>
-  cta: CTAProps
+  title: string
 }
 
 export function ToolsCardContent({

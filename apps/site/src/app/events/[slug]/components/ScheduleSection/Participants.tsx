@@ -5,8 +5,8 @@ import pluralize from 'pluralize'
 import type { Participant } from '../../../schemas/ScheduleSchema'
 
 export type ParticipantsProps = {
+  participants: Array<Participant>,
   title: string
-  participants: Array<Participant>
 }
 
 export function Participants({ title, participants }: ParticipantsProps) {

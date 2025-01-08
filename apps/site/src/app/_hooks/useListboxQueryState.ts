@@ -3,9 +3,9 @@ import { parseAsString, useQueryState } from 'nuqs'
 import type { OptionType } from '@/components/Listbox/ListboxOption'
 
 type ListboxQueryStateConfig = {
-  key: string
+  defaultOption: OptionType,
+  key: string,
   options: Array<OptionType>
-  defaultOption: OptionType
 }
 
 export function useListboxQueryState({

@@ -11,9 +11,9 @@ import type { OptionType } from './Listbox/ListboxOption'
 import { SortListbox } from './SortListbox'
 
 type SortProps = {
-  query: ReturnType<typeof useSort>['sortQuery']
+  defaultQuery: ReturnType<typeof useSort>['defaultSortQuery'],
   options: ReadonlyArray<OptionType>
-  defaultQuery: ReturnType<typeof useSort>['defaultSortQuery']
+  query: ReturnType<typeof useSort>['sortQuery']
 }
 
 export function Sort({ query, options, defaultQuery }: SortProps) {

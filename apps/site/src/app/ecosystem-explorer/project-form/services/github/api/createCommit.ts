@@ -5,9 +5,9 @@ import { repoConfig } from '../repoConfig'
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 type CreateCommitParams = {
-  parentCommitSha: string
+  message: string,
+  parentCommitSha: string,
   treeSha: string
-  message: string
 }
 
 export async function createCommit({

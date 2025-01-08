@@ -12,10 +12,10 @@ type HeadlessUIAnchorProps = NonNullable<
 type Position = Extract<HeadlessUIAnchorProps, string>
 
 export type ListboxOptionsProps = {
-  as?: ElementType
-  position?: Position
+  children: React.ReactNode,
+  as?: ElementType,
   matchButtonWidth?: boolean
-  children: React.ReactNode
+  position?: Position
 }
 
 const GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX = 8

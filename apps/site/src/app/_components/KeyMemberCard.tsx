@@ -9,11 +9,11 @@ import { Heading } from '@/components/Heading'
 import { Icon } from '@/components/Icon'
 
 type KeyMemberCardProps = {
-  name: string
-  title: string
+  image: StaticImageProps['data'] | ImageProps['src'],
+  linkedin: string,
+  name: string,
+  title: string,
   company?: string
-  linkedin: string
-  image: StaticImageProps['data'] | ImageProps['src']
 }
 
 export function KeyMemberCard({

@@ -5,8 +5,8 @@ import { repoConfig } from '../repoConfig'
 const octokit = new Octokit({ auth: process.env.GITHUB_AUTH_TOKEN })
 
 type CreateBranchParams = {
+  branchName: string,
   commitSha: string
-  branchName: string
 }
 
 export async function createBranch({

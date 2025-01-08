@@ -12,8 +12,8 @@ import { PAGE_KEY } from '@/constants/searchParams'
 import { normalizeQueryParam } from '@/utils/queryUtils'
 
 type UsePaginationProps<Entry extends Object> = {
-  searchParams: NextServerSearchParams
-  entries: Array<Entry>
+  entries: Array<Entry>,
+  searchParams: NextServerSearchParams,
   entriesPerPage?: number
 }
 

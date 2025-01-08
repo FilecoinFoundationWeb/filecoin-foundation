@@ -15,9 +15,9 @@ const variantStyles = {
 
 type ButtonProps = {
   children: React.ReactNode
-  variant?: keyof typeof variantStyles
+  href?: BaseLinkProps['href'],
   icon?: IconProps['component']
-  href?: BaseLinkProps['href']
+  variant?: keyof typeof variantStyles
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {

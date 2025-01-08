@@ -27,12 +27,12 @@ type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
 }
 
 type PageHeaderProps = {
-  title: TitleProps['children']
-  image: PageHeaderImageProps
-  isFeatured?: boolean
+  image: PageHeaderImageProps,
+  title: TitleProps['children'],
+  cta?: CTAButtonGroupProps['cta'],
+  description?: DescriptionTextType,
+  isFeatured?: boolean,
   metaData?: MetaDataType
-  description?: DescriptionTextType
-  cta?: CTAButtonGroupProps['cta']
 }
 
 export function PageHeader({

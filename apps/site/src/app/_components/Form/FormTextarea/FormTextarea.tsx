@@ -21,8 +21,8 @@ import { CharacterCounter } from './CharacterCounter'
 type ExcludedHeadlessUIProps = 'invalid' | 'className'
 
 export type FormTextareaProps = {
-  characterLimit: number
-  characterCount: number
+  characterCount: number,
+  characterLimit: number,
   description?: FormLabelDescriptionProps['children']
 } & Omit<HeadlessTextareaProps, ExcludedHeadlessUIProps> &
   FormLabelProps &

@@ -2,13 +2,13 @@ import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
 
 export type PageAttributes = {
   header: {
+    description: string | Array<string>,
     title: string
-    description: string | Array<string>
   }
-  featured_entry?: string
+  seo: SeoMetadata,
   featured_ecosystem_projects?: Array<string>
+  featured_entry?: string,
   featured_grant_graduates?: Array<string>
-  seo: SeoMetadata
 }
 
 export type SecurityMaturityModelAttributes = {

@@ -5,9 +5,9 @@ import speakerPresentationNewsPaperImg from '@/assets/orbit/goals/speaker-presen
 import speakersAppreciationGroupPhoto from '@/assets/orbit/goals/speakers-appreciation-group-photo.jpg'
 
 type ProgramGoalsData = {
+  description: string,
+  image: StaticImageProps,
   title: string
-  description: string
-  image: StaticImageProps
 }
 
 export const programGoalsData: Array<ProgramGoalsData> = [
