@@ -25,7 +25,6 @@ jobs:
       - name: Install dependencies
         run: |
           npm install --prefer-offline || npm install --prefer-offline
-        working-directory: ./apps/site
 
       - name: Generate CMS configuration schema
         working-directory: ./apps/site
