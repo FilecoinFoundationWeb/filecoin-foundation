@@ -1,5 +1,7 @@
 import { z } from 'zod'
 
+import { injectFallbackIfNoLocalImage } from '@/utils/zodTransformUtils'
+
 import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 import { SeoMetadataWithOptionalTitleSchema } from '@/schemas/SeoMetadataSchema'
 
@@ -8,7 +10,7 @@ export const DynamicBaseDataSchema = z
     'created-on': z.coerce.date(),
     'updated-on': z.coerce.date().optional(),
     'published-on': z.coerce.date().optional(),
-    image: ImagePropsSchema.optional(),
+    image: ImagePropsSchema.optional().transform(injectFallbackIfNoLocalImage),
     seo: SeoMetadataWithOptionalTitleSchema,
   })
   .strict()
