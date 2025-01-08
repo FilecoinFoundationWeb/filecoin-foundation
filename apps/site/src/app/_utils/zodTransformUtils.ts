@@ -11,7 +11,7 @@ type ImageProps = {
 
 const fallbackImage = {
   src: graphicsData.imageFallback.data.src,
-  alt: 'Missing image, using placeholder',
+  alt: '',
 }
 
 export function injectFallbackIfLocalImageIsInvalid(data: ImageProps) {
