@@ -21,11 +21,14 @@ jobs:
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out code
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
         with:
-          node-version: "20.11.1"
+          node-version: 20
+          cache: "npm"
 
       - name: Install Dependencies
         run: npm ci

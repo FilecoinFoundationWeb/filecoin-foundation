@@ -25,9 +25,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        working-directory: ./apps/site
-        run: |
-          npm install --prefer-offline || npm install --prefer-offline
+        run: npm ci
 
       - name: Generate CMS configuration schema
         working-directory: ./apps/site
