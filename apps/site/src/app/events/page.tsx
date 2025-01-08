@@ -68,7 +68,7 @@ export default async function Events(props: Props) {
           location: featuredEvent.location.primary,
         })}
         image={{
-          ...(featuredEvent.image || graphicsData.imageFallback.data),
+          ...featuredEvent.image,
           alt: '',
           objectFit: 'cover',
         }}

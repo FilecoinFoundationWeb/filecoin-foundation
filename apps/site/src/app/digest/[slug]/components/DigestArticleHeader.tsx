@@ -1,5 +1,3 @@
-import { graphicsData } from '@/data/graphicsData'
-
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { AvatarGroup } from '@/components/AvatarGroup'
 import { TagGroup } from '@/components/TagComponents/TagGroup'
@@ -19,12 +17,7 @@ export function DigestArticleHeader({
   image,
 }: DigestArticleHeaderProps) {
   return (
-    <ArticleHeader
-      image={{
-        src: image?.src || graphicsData.imageFallback.data.src,
-        alt: '',
-      }}
-    >
+    <ArticleHeader image={{ src: image.src, alt: '' }}>
       <TagGroup
         tags={[
           { text: `Issue ${issueNumber}` },

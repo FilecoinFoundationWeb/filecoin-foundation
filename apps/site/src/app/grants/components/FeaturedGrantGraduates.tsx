@@ -2,8 +2,6 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { Card } from '@/components/Card'
@@ -32,7 +30,7 @@ export function FeaturedGrantGraduates({
             icon: BookOpen,
           }}
           image={{
-            ...(image || graphicsData.imageFallback.data),
+            ...image,
             alt: '',
             objectFit: 'contain',
             padding: Boolean(image),

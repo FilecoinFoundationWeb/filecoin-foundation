@@ -59,7 +59,7 @@ export default async function Blog(props: Props) {
         description={featuredPost.description}
         metaData={getMetaData(featuredPost.publishedOn)}
         image={{
-          ...(featuredPost.image || graphicsData.imageFallback.data),
+          ...featuredPost.image,
           alt: '',
           objectFit: 'cover',
         }}

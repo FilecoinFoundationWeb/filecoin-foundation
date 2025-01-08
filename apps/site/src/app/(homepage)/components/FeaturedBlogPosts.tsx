@@ -1,7 +1,5 @@
 import { PATHS } from '@/constants/paths'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 
@@ -40,7 +38,7 @@ export function FeaturedBlogPosts({
                 text: 'Learn More',
               }}
               image={{
-                ...(image || graphicsData.imageFallback.data),
+                ...image,
                 alt: '',
                 objectFit: 'cover',
                 sizes: buildImageSizeProp({

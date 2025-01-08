@@ -5,8 +5,6 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import {
@@ -147,7 +145,7 @@ export default function EventsContent({ searchParams }: EventsContentProps) {
                         location: location.primary,
                       })}
                       image={{
-                        ...(image || graphicsData.imageFallback.data),
+                        ...image,
                         alt: '',
                         priority: isFirstTwoImages,
                         objectFit: 'cover',

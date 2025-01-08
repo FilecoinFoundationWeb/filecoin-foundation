@@ -5,8 +5,6 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
@@ -139,7 +137,7 @@ export function EcosystemExplorerContent({
                         icon: BookOpen,
                       }}
                       image={{
-                        ...(image || graphicsData.imageFallback.data),
+                        ...image,
                         alt: '',
                         objectFit: 'contain',
                         padding: Boolean(image),

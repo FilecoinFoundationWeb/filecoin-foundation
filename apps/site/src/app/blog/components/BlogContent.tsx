@@ -6,8 +6,6 @@ import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { CATEGORY_KEY } from '@/constants/searchParams'
 
-import { graphicsData } from '@/data/graphicsData'
-
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
@@ -144,7 +142,7 @@ export function BlogContent({
                         icon: BookOpen,
                       }}
                       image={{
-                        ...(image || graphicsData.imageFallback.data),
+                        ...image,
                         alt: '',
                         priority: isFirstTwoImages,
                         objectFit: 'cover',

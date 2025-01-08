@@ -6,12 +6,8 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
-type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & {
-  alt?: string
-}
-
 type PageHeaderProps = {
-  image?: ImagePropsWithOptionalAlt
+  image?: Omit<ImageProps, 'alt'>
 }
 
 export function PageHeader({ image }: PageHeaderProps) {

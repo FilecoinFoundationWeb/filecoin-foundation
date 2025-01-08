@@ -1,5 +1,3 @@
-import { graphicsData } from '@/data/graphicsData'
-
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/dateUtils'
 
@@ -20,12 +18,7 @@ export function BlogPostHeader({
   category,
 }: BlogPostHeaderProps) {
   return (
-    <ArticleHeader
-      image={{
-        src: image?.src || graphicsData.imageFallback.data.src,
-        alt: '',
-      }}
-    >
+    <ArticleHeader image={{ src: image.src, alt: '' }}>
       <TagLabel>
         {getCategoryLabel({ collectionName: 'blog_posts', category })}
       </TagLabel>
