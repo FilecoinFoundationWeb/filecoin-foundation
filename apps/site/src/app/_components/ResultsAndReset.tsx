@@ -15,10 +15,10 @@ export function ResultsAndReset({ results }: ResultsAndResetProps) {
 
   return (
     <div
-      className={clsx('lg:mb-5 lg:gap-8', hasResults && 'flex items-baseline')}
+      className={clsx('lg:mt-4 lg:gap-8', hasResults && 'flex items-baseline')}
     >
       {hasResults && (
-        <span className="inline-flex flex-1 items-center gap-2">
+        <span className="inline-flex items-center gap-2">
           <span>Results</span>
           <span className="grid h-5 w-8 place-content-center rounded-full bg-brand-300 p-1 text-xs font-bold text-brand-800">
             {results}
