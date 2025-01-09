@@ -13,9 +13,6 @@ external-link: https://lu.ma/n4c8aotx?tk=GRGiWo
 seo:
   twitter:
     card: summary
-  description: This summit at the Frost Museum of Science, hosted by Magma, Propy,
-    Akila, Filecoin, and SustainaCities, highlights how digital assets empower
-    stakeholders in building a sustainable urban future from design to
-    operations.
+  description: The Frost Museum summit, hosted by Magma, Propy, Akila, Filecoin, and SustainaCities, explores how digital assets drive sustainable urban futures, from design to operations.
   title: "Digital Real Estate Summit - Filecoin Foundation Sponsorship"
 ---
