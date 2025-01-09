@@ -5,7 +5,7 @@ updated-on: 2025-01-08T21:09:00.000Z
 published-on: 2025-01-08T21:09:00.000Z
 category: supported-sponsored
 location:
-  primary: "Miami, Florida "
+  primary: "Miami, Florida"
   region: north-america
 start-date: 2025-02-11T09:00:00.000Z
 end-date: 2025-02-11T18:00:00.000Z
@@ -16,6 +16,6 @@ seo:
   description: This summit at the Frost Museum of Science, hosted by Magma, Propy,
     Akila, Filecoin, and SustainaCities, highlights how digital assets empower
     stakeholders in building a sustainable urban future from design to
-    operations
-  title: "Digital Real Estate Summit- Filecoin Foundation Sponsorship "
+    operations.
+  title: "Digital Real Estate Summit - Filecoin Foundation Sponsorship"
 ---
