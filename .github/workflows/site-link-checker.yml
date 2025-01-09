@@ -2,9 +2,9 @@ name: Site Link Checker
 
 on:
   push:
+    branches: "cms/**"
     paths:
       - "apps/site/**"
-    branches: "cms/**"
   schedule:
     - cron: "0 2 * * 0"
   workflow_dispatch:
@@ -12,11 +12,16 @@ on:
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/site
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out code
+        uses: actions/checkout@v4
 
-      - uses: lycheeverse/lychee-action@v2.2.0
+      - name: Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2.2.0
         id: lychee
         with:
           args: |
@@ -25,5 +30,6 @@ jobs:
             --retry-wait-time 15
             --exclude https://twitter.com/*
             --exclude https://x.com/*
+            --exclude "^/.*"
             --max-retries 10
-            'apps/site/**/*.md'
+            './**/*.md'
