@@ -1,0 +1,33 @@
+name: Turborepo Cache Build
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    name: Build and Test
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+        env:
+          AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"

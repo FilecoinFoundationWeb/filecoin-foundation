@@ -1,4 +1,4 @@
-name: Slack Notification for PR Review Ready
+name: Apps PR Review Notification
 
 on:
   pull_request:
@@ -29,7 +29,8 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         with:
-          channel-id: C07UH9HAURX
-          slack-message: |
-            ${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
-            Reviewers: ${{ env.REVIEWERS }}
+          payload: |
+            {
+              "channel": "C07UH9HAURX",
+              "text": "${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>\nReviewers: ${{ env.REVIEWERS }}"
+            }

@@ -2,17 +2,20 @@ name: Site Lint
 
 on:
   push:
+    branches: [main, cms/*, ecosystem-submission/*]
     paths:
       - "apps/site/**"
-    branches: [main, cms/*, ecosystem-submission/*]
   pull_request:
+    types: [opened, synchronize]
     paths:
       - "apps/site/**"
-    branches: [main, cms/*, ecosystem-submission/*]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/site
 
     steps:
       - name: Check out code
@@ -29,9 +32,7 @@ jobs:
           npm install --prefer-offline || npm install --prefer-offline
 
       - name: Generate CMS configuration schema
-        working-directory: ./apps/site
         run: npm run prebuild
 
       - name: Run linter
-        working-directory: ./apps/site
         run: npm run lint
