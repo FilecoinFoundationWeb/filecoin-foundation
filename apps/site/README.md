@@ -60,9 +60,11 @@ npm run lint
 ## Technologies
 
 - **Next.js 15**: For server-side rendering, static site generation, and routing.
+- **TypeScript**: For static type checking.
 - **Tailwind CSS**: For utility-first CSS styling.
 - **React 19**: For building the user interface.
 - **clsx**: For conditionally joining `classNames` together.
+- **Zod**: For data validation.
 
 ## Decap CMS Integration
 
@@ -245,7 +247,7 @@ To maintain the quality and consistency of our codebase, we have established a s
 
 ### Component Organization
 
-Store all React components in the `_components` directory, including page-specific ones.
+Reusable React components should be stored in the general `_components` directory. Page-specific components should live closer to the page they are used on.
 
 ### Component Exports
 
@@ -326,6 +328,10 @@ Following these guidelines helps ensure that our website remains consistent, acc
 ## Contributing
 
 We welcome contributions to Filecoin Foundation website!
+
+### Github Workflow
+
+We try to keep each pull request small and focused. If the work requires large file changes, we break it down into smaller pieces as outlined in this article on [GitHub Protips from Sarah Vessels](https://github.blog/developer-skills/github/github-protips-tips-tricks-hacks-and-secrets-from-sarah-vessels/)
 
 ## License
 
