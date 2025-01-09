@@ -47,6 +47,13 @@ program:
         around the globe for engaging conversations on the future of technology
         and governance.
       external-link: https://cvent.me/Z5Gk11
+    - title: "Friends of Filecoin Foundation Reception "
+      start-date: 2025-01-20T20:30:00.000Z
+      end-date: 2025-01-20T22:00:00.000Z
+      external-link: https://cvent.me/Mm01XX
+      location: Davos, Switzerland
+      description: "Join leaders and innovators from across the Filecoin ecosystem for
+        an evening reception in the heart of Davos. "
   title: Featured Events
   kicker: Find us around Davos
 schedule:
