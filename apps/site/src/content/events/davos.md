@@ -39,17 +39,13 @@ program:
         occur on Wednesday night. Space is limited, and attendance is by prior
         confirmation only.
       location: Davos, Switzerland
-    - title: Policy in Draft Reception. Hosted by Filecoin Foundation, Hedera, and
-        GBBC.
+    - title: Policy Reception. Hosted by Filecoin Foundation, Hedera, and GBBC.
       start-date: 2025-01-22T17:00:00.000Z
       location: Davos, Switzerland
-      description: The Policy in Draft Reception, hosted by Filecoin Foundation,
-        Hedera, and GBBC, will bring together senior industry leaders and
-        policymakers from around the globe for an engaging dialogue on the
-        future of technology and governance. This event will explore key policy
-        priorities, the evolving landscape of blockchain use cases, and
-        strategies for meaningful collaboration between industry and government
-        as we look toward 2025 and beyond.
+      description: The Policy Reception, hosted by Filecoin Foundation, Hedera, and
+        GBBC, will bring together senior industry leaders and policymakers from
+        around the globe for engaging conversations on the future of technology
+        and governance.
       external-link: https://cvent.me/Z5Gk11
   title: Featured Events
   kicker: Find us around Davos
