@@ -1,4 +1,4 @@
-name: Slack Notification for PR Review Ready
+name: Apps PR Review Notification
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Prepare Reviewers List and App Info
         id: format_info
@@ -25,11 +25,12 @@ jobs:
           echo "APP_PATH=$APP_PATH" >> $GITHUB_ENV
 
       - name: Send Slack Notification
-        uses: slackapi/slack-github-action@v1.27.0
+        uses: slackapi/slack-github-action@v2.0.0
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         with:
-          channel-id: C07UH9HAURX
-          slack-message: |
-            ${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>
-            Reviewers: ${{ env.REVIEWERS }}
+          payload: |
+            {
+              "channel": "C07UH9HAURX",
+              "text": "${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>\nReviewers: ${{ env.REVIEWERS }}"
+            }
