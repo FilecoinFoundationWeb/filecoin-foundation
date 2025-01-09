@@ -10,7 +10,7 @@ backend:
 
 publish_mode: editorial_workflow
 media_folder: "apps/site/public/assets/images"
-public_folder: "apps/site/assets/images"
+public_folder: "/assets/images"
 
 slug:
   encoding: "ascii"
@@ -656,6 +656,7 @@ collections:
           - name: "region"
             label: "Region"
             widget: "select"
+            required: false
             options:
               - label: "Africa"
                 value: "africa"
@@ -712,7 +713,6 @@ collections:
           - name: "events"
             label: "Events"
             widget: "list"
-            required: true
             fields:
               - name: "title"
                 label: "Title"

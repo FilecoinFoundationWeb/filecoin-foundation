@@ -14,6 +14,9 @@ jobs:
   cypress-run:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/site
 
     env:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
@@ -21,21 +24,22 @@ jobs:
       ENCRYPTION_SECRET_KEY: "a-random-key-so-that-ci-builds-dont-fail"
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Check out code
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
         with:
-          node-version: "20.11.1"
+          node-version: 20
+          cache: "npm"
 
       - name: Install Dependencies
-        run: npm ci
+        run: npm install --prefer-offline || npm install --prefer-offline
 
       - name: Build Project
-        working-directory: ./apps/site
         run: npm run build
 
       - name: Start Server
-        working-directory: ./apps/site
         run: |
           npm start &
           echo "Waiting for server to start..."
@@ -60,10 +64,8 @@ jobs:
 
       - name: Run Cypress Tests without Percy
         if: steps.test-type.outputs.skip_percy == 'true'
-        working-directory: ./apps/site
         run: npm run test:cypress
 
       - name: Run Cypress Tests with Percy
         if: steps.test-type.outputs.skip_percy == 'false'
-        working-directory: ./apps/site
         run: npm run test:cypress:percy

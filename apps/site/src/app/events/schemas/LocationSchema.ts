@@ -3,9 +3,9 @@ import { z } from 'zod'
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
 import { createEnumSchema } from '@/utils/zodUtils'
 
-type Location = {
+export type Location = {
   primary: string
-  region?: string
+  region?: string | null
 }
 
 const { validIds: validRegionIds } = getCMSFieldOptionsAndValidIds({
@@ -18,7 +18,7 @@ const RegionSchema = createEnumSchema(validRegionIds)
 export const LocationSchema = z
   .object({
     primary: z.string(),
-    region: RegionSchema.optional(),
+    region: RegionSchema.nullish(),
   })
   .strict()
   .refine(virtualEventHasNoRegion, {
@@ -30,22 +30,22 @@ export const LocationSchema = z
     path: ['region'],
   })
 
-function isVirtual(location: Location): boolean {
+function isVirtual(location: Location) {
   return location.primary === 'Virtual'
 }
 
-function hasRegion(location: Location): boolean {
-  return location.region !== undefined
+function hasRegion(location: Location) {
+  return Boolean(location.region)
 }
 
-function virtualEventHasNoRegion(location: Location): boolean {
+function virtualEventHasNoRegion(location: Location) {
   if (isVirtual(location)) {
     return !hasRegion(location)
   }
   return true
 }
 
-function inPersonEventHasRegion(location: Location): boolean {
+function inPersonEventHasRegion(location: Location) {
   if (!isVirtual(location)) {
     return hasRegion(location)
   }
