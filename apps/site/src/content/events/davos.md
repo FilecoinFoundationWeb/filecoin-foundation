@@ -98,7 +98,7 @@ schedule:
           description: "Decentralized Storage: Bridging Innovation and User Experience"
           start: 2025-01-22T11:00:00.000Z
           end: 2025-01-22T11:45:00.000Z
-          location: TBA
+          location: Davos, Switzerland
         - tag: Registration Needed
           title: Danny O’Brien at Digital Davos
           description: "Community and Inclusion: Building the Next Web"
