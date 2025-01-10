@@ -23,11 +23,10 @@ program:
       location: Davos, Switzerland
       description: "The Filecoin Penthouse is an exclusive lounge in the heart of
         Davos, designed for networking, casual meetings, and relaxing with
-        coffee while enjoying breathtaking views. A private meeting room
-        (seating up to 10 people) is available upon request. Located in WEF’s
-        Secure Zone, the venue requires a WEF Hotel Badge or other official WEF
-        event badge or credential for entry. Book a private meeting room:
-        events@fil.org"
+        coffee while enjoying breathtaking views. A private meeting room is
+        available upon request. Located in WEF’s Secure Zone, the venue requires
+        a WEF Hotel Badge or other official WEF event badge or credential for
+        entry. Book a private meeting room: events@fil.org"
       external-link: https://cvent.me/xbZ2w2
     - title: "The Moon, Mars, and the Stars: Space Reception hosted by Filecoin
         Foundation and Joe Landon"
