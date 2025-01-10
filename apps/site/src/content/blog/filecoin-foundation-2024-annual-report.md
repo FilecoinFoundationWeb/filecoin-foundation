@@ -449,3 +449,59 @@ Filecoin Foundation spending for fiscal year 2024.
 | Cross-Functional Personnel                             | $832,582     | 416,451   |
 
 ```
+
+#### 2025 Vision and Strategic Priorities
+
+
+As we look ahead to 2025, we want to offer a closer look at Filecoin Foundation’s vision and strategic priorities. In 2025, FF’s top objective is to mobilize the Filecoin community to make Filecoin work seamlessly and find product-market fit.
+
+##### Filecoin Foundation’s Strategic Priorities in 2025
+
+To pursue this goal of making Filecoin work seamlessly and finding product-market fit, FF has outlined the following strategic priorities that will be our laser focus for 2025:
+
+1. Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
+2. Shift from a “launching” culture to an “iterating” culture, emphasizing quality, polish, and stability
+3. Support open source data onboarding tools, with an eye toward stability
+4. Keep the community excited through high-profile and high-quality integrations and partnerships (including platform integrations and AI partnerships)
+5. Support storage providers in finding profitable business models and boosting paid storage deals, including through supporting a deal pipeline
+6. Increase onchain activity dramatically
+7. Shift towards FF playing a larger role in coordinating and convening across the ecosystem, getting the right people in the room talking about the right thing at the right time
+8. Shift towards FF playing a larger role in coordinating ecosystem participants around ecosystem-wide communications
+
+FF can’t achieve the objective of making Filecoin work seamlessly and finding product-market fit alone; rather, our strategic priorities are about bringing the Filecoin community together and supporting the community in accomplishing these objectives collectively.
+
+##### Measuring Progress: 2025 Objectives and Key Results
+
+To measure the ecosystem’s progress toward our primary objective of making Filecoin work seamlessly and achieving product-market fit, FF has a new set of ecosystem-facing Objectives and Key Results (OKRs) for 2025.
+
+We hope that by setting ambitious, clear, and measurable targets, we can track the ecosystem’s progress, find and fix roadblocks, identify areas for improvement, and celebrate ecosystem successes along the way.
+
+Here's how we're measuring our ecosystem progress in 2025:
+
+Objective: Make Filecoin work seamlessly and find product market fit
+
+* Key Result (KR) 1: Network storage utilized increases by 5 PiB per day
+  Strategic priority this relates to: Support open source data onboarding tools, with an eye toward stability
+
+* KR2: 75% of onchain deals are renewed before expiring
+  Strategic priority this relates to: Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
+
+* KR3: The number of paid deals grows 25% QoQ
+  Strategic priority this relates to: Support storage providers in finding profitable business models and boosting paid storage deals, including through supporting a deal pipeline
+
+* KR4: At least half of the top pain points (identified and prioritized through a process that involves ecosystem stakeholder input) are addressed
+  Strategic priority this relates to: Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
+
+* KR5: At least 25% of funding is allocated to iterations or ongoing maintenance of previous projects rather than new projects
+  Strategic priority this relates to: Shift from a “launching” culture to an “iterating” culture, emphasizing quality, polish, and stability
+
+* KR6: Land and promote at least 12 new major partnerships, resulting in at least two media hits in top-tier crypto outlets (with positive sentiment) per collaboration and at least 3 mainstream media placements
+  Strategic priority this relates to: Keep the community excited through high-profile and high-quality integrations and partnerships (including platform integrations and AI partnerships)
+
+
+
+
+
+
+KR7: Onchain activity increases by 25% QoQ
+Strategic priority this relates to: Increase onchain activity dramatically
