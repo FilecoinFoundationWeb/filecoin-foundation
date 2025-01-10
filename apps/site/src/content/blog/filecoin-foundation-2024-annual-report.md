@@ -546,3 +546,29 @@ FF is looking forward to supporting the community in 2025, and we have designed 
 | Cross-Functional Personnel                            | $762,087    | 409,995   |
 
 ```
+
+### Learn More About Filecoin Foundation
+
+To learn more about FF, visit fil.org. 
+
+If you have questions or are interested in collaborating, don’t hesitate to reach out to the FF team — we’re here to support the ecosystem and look forward to hearing from you. 
+
+Grants: [grants@fil.org](mailto:grants@fil.org)
+
+Governance: [governance@fil.org](mailto:governance@fil.org)
+
+Fil+: [filplus@fil.org](mailto:filplus@fil.org) 
+
+Security: [security@fil.org](mailto:security@fil.org)  
+
+Social Impact: [impact@fil.org](mailto:impact@fil.org) 
+
+UXIT: [uxit@fil.org](mailto:uxit@fil.org) 
+
+Communications and Marketing: [marketing@fil.org](mailto:marketing@fil.org) 
+
+Design: [design@fil.org](mailto:design@fil.org) 
+
+Events: [events@fil.org](mailto:events@fil.org)
+
+General questions: [hello@fil.org](mailto:hello@fil.org)
