@@ -419,4 +419,8 @@ Policy by the numbers:
 
 * 321 policymakers engaged with FF to learn about Filecoin
 
-Filecoin Foundation’s regulatory and policy efforts helped to protect the Filecoin ecosystem during a year of regulatory headwinds. This past year, cryptocurrency networks faced unprecedented regulatory challenges in the U.S. and abroad. FF engaged with policymakers around the world to ensure that legislators see Filecoin as an important and legitimate use case with many real-world applications. As just one example of the importance of this work, in 2024, policymakers in the U.S. drafted groundbreaking legislation (the so-called “market structure bill”) that could protect cryptocurrency networks from regulatory overreach. Through its policy work, FF was able to ensure that the language in the bill would be positive for the Filecoin ecosystem, setting the stage for a more favorable regulatory environment in the future.
+Filecoin Foundation’s regulatory and policy efforts helped to protect the Filecoin ecosystem during a year of regulatory headwinds. This past year, cryptocurrency networks faced unprecedented regulatory challenges in the U.S. and abroad. FF engaged with policymakers around the world to ensure that legislators see Filecoin as an important and legitimate use case with many real-world applications. As just one example of the importance of this work, in 2024, policymakers in the U.S. drafted groundbreaking legislation (the so-called “market structure bill”) that could protect cryptocurrency networks from regulatory overreach. Through its policy work, FF was able to ensure that the language in the bill would be positive for the Filecoin ecosystem, setting the stage for a more favorable regulatory environment in the future. 
+
+## 2024 Spend
+
+Filecoin Foundation spending for fiscal year 2024.
