@@ -444,7 +444,7 @@ Filecoin Foundation’s regulatory and policy efforts helped to protect the File
 
 Filecoin Foundation spending for fiscal year 2024.
 
-```
+
 | Categories                                              | USD          | FIL       |
 |---------------------------------------------------------|--------------|-----------|
 | Ecosystem Grants - General & Support                   | $6,590,739   | 1,132,512 |
@@ -466,7 +466,7 @@ Filecoin Foundation spending for fiscal year 2024.
 | Enablement (Legal, Finance, HR, IT, etc.)              | $3,797,274   | 608,156   |
 | Other Operating Expenses (Insurance, Taxes, etc.)      | $4,243,954   | 13,585    |
 | Cross-Functional Personnel                             | $832,582     | 416,451   |
-```
+
 
 ![](/assets/images/2025-vision-and-strategic-priorities.webp)
 
