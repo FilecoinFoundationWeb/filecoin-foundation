@@ -271,7 +271,7 @@ FF’s security team works to protect the Filecoin network. In 2024, the team st
 
 A key milestone was the launch of the [Web3 Security Maturity Model](https://fil.org/security/maturity-model), developed by the FF security team, which helps organizations assess and improve their security as they build decentralized technologies.
 
-#### UXIT: Improving the User Experience and Accessibility Across the Filecoin Ecosystem 
+## UXIT: Improving the User Experience and Accessibility Across the Filecoin Ecosystem 
 
 User Experience Improvement Team (UXIT) by the numbers: 
 
@@ -283,7 +283,7 @@ In 2024, FF’s UXIT supported teams and organizations building on the network b
 
 In addition to this support, FF’s UXIT led the fil.org website relaunch, revamping its design and improving the user experience based on community-driven user interviews. The relaunch enhanced performance, SEO, and introduced new pages and resources requested by the Filecoin community, including [GovHub](https://fil.org/governance/govhub), [Ecosystem Explorer](https://fil.org/ecosystem-explorer), [Fil+ Allocator Registry](https://fil.org/filecoin-plus/allocators), [Orbit Hub](https://fil.org/orbit), [Events Page](https://fil.org/events), [Security Bug Bounty Program](https://fil.org/security/bug-bounty), [Web3 Security Maturity Model](https://fil.org/security/maturity-model), and the [Ecosystem Digest](https://fil.org/digest).
 
-#### Communications and Marketing: Showcasing and Empowering Ecosystem Success
+## Communications and Marketing: Showcasing and Empowering Ecosystem Success
 
 Communications and Marketing by the numbers:
 
@@ -292,54 +292,54 @@ Communications and Marketing by the numbers:
 
 [Lockheed Martin](https://fil.org/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/): In early 2024, FF announced the successful completion of a first-of-its-kind mission to deploy the InterPlanetary File System (IPFS) in space. The demonstration followed nearly three years of collaboration and involved sending files from Earth to orbit and back using an implementation of the IPFS protocol designed for space communications.
 
-##### Sharing Stories of Datasets Stored on Filecoin
+### Sharing Stories of Datasets Stored on Filecoin
 
 Each week across its social media and marketing channels, Filecoin Foundation highlights critical datasets stored on the Filecoin network. Some of the stories that FF shared this year include: 
 
-Baseline Project Cape Town: Photographer Roland Albertson helped document [nature settings](https://x.com/FilFoundation/status/1814364917559927252) in Cape Town throughout 2023, and through a collaboration with Guardian Project, preserved these images and videos on Filecoin. 
+**Baseline Project Cape Town:** Photographer Roland Albertson helped document [nature settings](https://x.com/FilFoundation/status/1814364917559927252) in Cape Town throughout 2023, and through a collaboration with Guardian Project, preserved these images and videos on Filecoin. 
 
-Center for Extreme Data Management Analysis and Visualization (CEDMAV): Through a partnership with Seal Storage, the University of Utah's CEDMAV is preserving [scientific research data](https://x.com/FilFoundation/status/1852064252149768670), including combustion research, simulations, and Earth science and satellite data, on Filecoin. 
+**Center for Extreme Data Management Analysis and Visualization (CEDMAV):** Through a partnership with Seal Storage, the University of Utah's CEDMAV is preserving [scientific research data](https://x.com/FilFoundation/status/1852064252149768670), including combustion research, simulations, and Earth science and satellite data, on Filecoin. 
 
-ClimateGPT: ClimateGPT stores immutable records of [AI model creation and computations](https://x.com/FilFoundation/status/1836806968595599728) related to climate change on Filecoin.  
+**ClimateGPT:** ClimateGPT stores immutable records of [AI model creation and computations](https://x.com/FilFoundation/status/1836806968595599728) related to climate change on Filecoin.  
 
-DocumentCloud: Since 2022, MuckRock has been building a more resilient system to protect more than 11 million public interest documents. Over [750,000 documents](https://x.com/FilFoundation/status/1827057118295269734) have been stored on the Filecoin network via DocumentCloud, including the CIA CREST database.
+**DocumentCloud:** Since 2022, MuckRock has been building a more resilient system to protect more than 11 million public interest documents. Over [750,000 documents](https://x.com/FilFoundation/status/1827057118295269734) have been stored on the Filecoin network via DocumentCloud, including the CIA CREST database.
 
-End of Term Web Archive: The Internet Archive’s Democracy’s Library project has uploaded [more than 1 PB of material](https://x.com/FilFoundation/status/1811871378368516208) to the Filecoin network, including information collected from U.S. government websites archived during presidential administration transitions, known as the End of Term Web Archive. 
+**End of Term Web Archive:** The Internet Archive’s Democracy’s Library project has uploaded [more than 1 PB of material](https://x.com/FilFoundation/status/1811871378368516208) to the Filecoin network, including information collected from U.S. government websites archived during presidential administration transitions, known as the End of Term Web Archive. 
 
-Ewesion: Ewesion is a large-scale photo and illustration hosting platform storing approximately [1EB of visual data](https://x.com/FilFoundation/status/1849535916940968291), leveraging Filecoin.
+**Ewesion:** Ewesion is a large-scale photo and illustration hosting platform storing approximately [1EB of visual data](https://x.com/FilFoundation/status/1849535916940968291), leveraging Filecoin.
 
-Human Rights Data Analysis Group: A [massive dataset](https://x.com/FilFoundation/status/1808584161499738236) about Colombia's 50-year conflict, used by Colombia's Truth Commission and courts for amnesty decisions, is preserved on Filecoin.
+**Human Rights Data Analysis Group:** A [massive dataset](https://x.com/FilFoundation/status/1808584161499738236) about Colombia's 50-year conflict, used by Colombia's Truth Commission and courts for amnesty decisions, is preserved on Filecoin.
 
-Hurricane Otis Relief Documentation: With Guardian Project’s ProofMode app, [documentation of damage and relief efforts](https://x.com/FilFoundation/status/1819057414856958141) in Acapulco, Mexico, following Hurricane Otis is uploaded to Filecoin.
+**Hurricane Otis Relief Documentation:** With Guardian Project’s ProofMode app, [documentation of damage and relief efforts](https://x.com/FilFoundation/status/1819057414856958141) in Acapulco, Mexico, following Hurricane Otis is uploaded to Filecoin.
 
-Inside Climate News: This group uploaded [authenticated photos](https://x.com/FilFoundation/status/1831769707512225950) documenting unprecedented fires in Brazil's tropical wetlands, contrasting with disinformation campaigns, to Filecoin.
+**Inside Climate News:** This group uploaded [authenticated photos](https://x.com/FilFoundation/status/1831769707512225950) documenting unprecedented fires in Brazil's tropical wetlands, contrasting with disinformation campaigns, to Filecoin.
 
-Numbers Protocol: Leveraging the Capture App, Numbers Protocol partnered with media organizations in Taiwan to [authenticate digital content and metadata](https://x.com/FilFoundation/status/1825959262025297992) in the lead-up to the 2024 Taiwanese election. 
+**Numbers Protocol:** Leveraging the Capture App, Numbers Protocol partnered with media organizations in Taiwan to [authenticate digital content and metadata](https://x.com/FilFoundation/status/1825959262025297992) in the lead-up to the 2024 Taiwanese election. 
 
-"Meet The Gigabrains" Documentary: The Defiant’s [documentary](https://twitter.com/FilFoundation/status/1817983908635623751) about the future of Web3, filmed during ETHDenver, is uploaded and preserved on Filecoin.
+**"Meet The Gigabrains" Documentary:** The Defiant’s [documentary](https://twitter.com/FilFoundation/status/1817983908635623751) about the future of Web3, filmed during ETHDenver, is uploaded and preserved on Filecoin.
 
-Mom, I See War: The world's largest art collection of [children's drawings](https://x.com/FilFoundation/status/1847367452981940561) documenting their first-hand experiences of armed conflict is uploaded to Filecoin via Starling Lab. 
+**Mom, I See War:** The world's largest art collection of [children's drawings](https://x.com/FilFoundation/status/1847367452981940561) documenting their first-hand experiences of armed conflict is uploaded to Filecoin via Starling Lab. 
 
-SETI Institute: To preserve any potential extraterrestrial signals, the SETI Institute [stores data ](https://x.com/FilFoundation/status/1841919082808938582)with Filecoin.
+**SETI Institute:** To preserve any potential extraterrestrial signals, the SETI Institute [stores data ](https://x.com/FilFoundation/status/1841919082808938582)with Filecoin.
 
-The DJ and the War Crimes: An [interactive media project](https://x.com/FilFoundation/status/1857180902000153055) by Rolling Stone investigating a 1990s Bosnian War case, featuring hundreds of authenticated assets, has been preserved by Starling Lab using cryptographic technologies, including IPFS and Filecoin.
+**The DJ and the War Crimes:** An [interactive media project](https://x.com/FilFoundation/status/1857180902000153055) by Rolling Stone investigating a 1990s Bosnian War case, featuring hundreds of authenticated assets, has been preserved by Starling Lab using cryptographic technologies, including IPFS and Filecoin.
 
-UC Berkeley Underground Physics Group: UC Berkeley Underground Physics Group uploaded [neutrino detector research data](https://x.com/FilFoundation/status/1854955435314278637), supporting the development of novel detection technology to study neutrinos, or 'ghost particles,' that could uncover mysteries of the universe.
+**UC Berkeley Underground Physics Group:** UC Berkeley Underground Physics Group uploaded [neutrino detector research data](https://x.com/FilFoundation/status/1854955435314278637), supporting the development of novel detection technology to study neutrinos, or 'ghost particles,' that could uncover mysteries of the universe.
 
-Victor Chang Cardiac Research Institute: Working with DeStor, the Victor Chang Institute has uploaded 125+ TiB of [cardiac research data](https://x.com/FilFoundation/status/1839371321777520919) to Filecoin, including cell images and encrypted machine backups.
+**Victor Chang Cardiac Research Institute:** Working with DeStor, the Victor Chang Institute has uploaded 125+ TiB of [cardiac research data](https://x.com/FilFoundation/status/1839371321777520919) to Filecoin, including cell images and encrypted machine backups.
 
-WeatherXM: WeatherXM uses Filecoin to safeguard [daily raw weather data](https://twitter.com/FilFoundation/status/1834243427296325808) collected globally through a network of weather stations.
+**WeatherXM:** WeatherXM uses Filecoin to safeguard [daily raw weather data](https://twitter.com/FilFoundation/status/1834243427296325808) collected globally through a network of weather stations.
 
-78 Days: From Starling Lab, “78 Days” is verified [documentation](https://x.com/FilFoundation/status/1844804758969716924) of the 2020 U.S. presidential transition using authentication technologies and decentralized web protocols.
+**78 Days:** From Starling Lab, “78 Days” is verified [documentation](https://x.com/FilFoundation/status/1844804758969716924) of the 2020 U.S. presidential transition using authentication technologies and decentralized web protocols.
 
-#### Design: Building Visual Tools and Resources to Benefit the Ecosystem
+## Design: Building Visual Tools and Resources to Benefit the Ecosystem
 
 Design by the numbers: 
 
 * 619 creative tickets completed
 * 226 pieces of video and podcast content produced
 
-##### Building Open Design Tools
+### Building Open Design Tools
 
 Filecoin Foundation’s design team prioritizes open design systems that empower the ecosystem to maintain a cohesive and polished presence. 
 
@@ -351,7 +351,7 @@ Content Production Toolkits: FF delivered comprehensive guides and templates for
 
 [Swag Store Expansion](https://swag.fil.org/): The design team expanded FF and Filecoin ecosystem merchandise offerings, making branded materials available at cost to contributors and community events worldwide. 
 
-##### Enhancing Ecosystem Resources 
+### Enhancing Ecosystem Resources 
 
 FF’s design team has been integral in elevating the visual and experiential quality of ecosystem content. 
 
@@ -363,7 +363,7 @@ DWeb Decoded: FF’s design team produced over 50 episodes of the DWeb Decoded p
 
 Content Production: The design team livestreamed FF events and produced [over 100 videos](https://www.youtube.com/@filecoinfoundation), including highlights, interviews, and educational content, broadening the reach and influence of the Filecoin ecosystem’s activities. 
 
-#### Events: Gathering the Global Filecoin Community 
+### Events: Gathering the Global Filecoin Community 
 
 Events by the numbers: 
 
@@ -373,7 +373,7 @@ Events by the numbers: 
 
 Filecoin events and meetups connect ecosystem contributors with new audiences and help chart the future of the network. Together, community members can learn, build, and be inspired. 
 
-##### FIL City Events 
+### FIL City Events 
 
 [FIL Hong Kong ](https://fil.org/events/fil-hong-kong-hosted-by-ndlabs)
 
@@ -391,24 +391,32 @@ At FIL Singapore, [hosted by MetaPals and supported by FF](https://lu.ma/escdw9d
 
 Ecosystem teams unveiled new L2 data storage solutions, signaling a new era of what’s possible with Filecoin. Akave, a decentralized, modular L2 solution offering cutting-edge encryption, [announced the launch of its Yucca testnet](https://www.akave.ai/blog/akave-secures-3-45-million-to-accelerate-on-chain-data-management). Storacha, a high-performance decentralized storage solution built with Filecoin, [launched its closed alpha network tailored](https://medium.com/@storacha/storachas-alpha-network-ignites-unleashing-decentralized-hot-storage-on-filecoin-bddad58bd1be) for gaming, AI, and DePIN networks. 
 
-##### More Events Organized and Supported by FF
+#### More Events Organized and Supported by FF
 
-FIL Dev Summit 5 - Bangkok, Thailand 
+##### FIL Dev Summit 5 - Bangkok, Thailand 
 
 [FIL Dev Summit](https://www.fildev.io/FDS-5) convened 200 developers, builders, storage providers, and community members to shape the future of Filecoin. Spanning 14 tracks, FDS focused on designing protocol improvements, showcasing tools, and solving key challenges. 
 
-Filecoin Hacker House - Chiang Mai, Thailand
+##### Filecoin Hacker House - Chiang Mai, Thailand
 
 The first-ever Filecoin Hacker House in Chiang Mai, Thailand, brought together 68 builders, developers, and innovators for an immersive experience. Hosted by FilOz, Polaris, FIL-B, and Filecoin Foundation, the Hacker House was an opportunity to strengthen community bonds, resolve pain points, and align on future roadmaps for decentralized technology.
 
-Filecoin Uncharted - Utah, USA
+##### Filecoin Uncharted - Utah, USA
 
 This high-impact, high-touch event brought together 70 leaders in Web3, AI, and decentralization to chart the future of the internet and explore the benefits of Filecoin’s decentralized storage.
 
-##### FF Sponsored Events
+#### FF Sponsored Events
 
 Filecoin Foundation sponsored more than a dozen events in 2024 to build brand awareness and engage new audiences. Some events included ETH Denver, Consensus, EthCC, DWeb Camp, and Funding the Commons. 
 
-##### Filecoin Orbit Community Program 
+#### Filecoin Orbit Community Program 
 
-Filecoin Orbit is a global community of 79 Orbit Ambassadors that organizes events and meetups to increase awareness and adoption of Filecoin. The program brings communities together to share ideas and collaborate. In 2024, Orbit Ambassadors hosted 136 orbit events in 21 countries, from Argentina and Kenya to Poland and India.
+Filecoin Orbit is a global community of 79 Orbit Ambassadors that organizes events and meetups to increase awareness and adoption of Filecoin. The program brings communities together to share ideas and collaborate. In 2024, Orbit Ambassadors hosted 136 orbit events in 21 countries, from Argentina and Kenya to Poland and India. 
+
+## Regulatory and Policy: Protecting the Filecoin Ecosystem
+
+Policy by the numbers:
+
+* 321 policymakers engaged with FF to learn about Filecoin
+
+Filecoin Foundation’s regulatory and policy efforts helped to protect the Filecoin ecosystem during a year of regulatory headwinds. This past year, cryptocurrency networks faced unprecedented regulatory challenges in the U.S. and abroad. FF engaged with policymakers around the world to ensure that legislators see Filecoin as an important and legitimate use case with many real-world applications. As just one example of the importance of this work, in 2024, policymakers in the U.S. drafted groundbreaking legislation (the so-called “market structure bill”) that could protect cryptocurrency networks from regulatory overreach. Through its policy work, FF was able to ensure that the language in the bill would be positive for the Filecoin ecosystem, setting the stage for a more favorable regulatory environment in the future.
