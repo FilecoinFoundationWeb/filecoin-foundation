@@ -480,28 +480,22 @@ Here's how we're measuring our ecosystem progress in 2025:
 
 Objective: Make Filecoin work seamlessly and find product market fit
 
-* Key Result (KR) 1: Network storage utilized increases by 5 PiB per day
+* **Key Result (KR) 1: Network storage utilized increases by 5 PiB per day**
   Strategic priority this relates to: Support open source data onboarding tools, with an eye toward stability
 
-* KR2: 75% of onchain deals are renewed before expiring
+* **KR2: 75% of onchain deals are renewed before expiring**
   Strategic priority this relates to: Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
 
-* KR3: The number of paid deals grows 25% QoQ
+* **KR3: The number of paid deals grows 25% QoQ**
   Strategic priority this relates to: Support storage providers in finding profitable business models and boosting paid storage deals, including through supporting a deal pipeline
 
-* KR4: At least half of the top pain points (identified and prioritized through a process that involves ecosystem stakeholder input) are addressed
+* **KR4: At least half of the top pain points (identified and prioritized through a process that involves ecosystem stakeholder input) are addressed**
   Strategic priority this relates to: Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
 
-* KR5: At least 25% of funding is allocated to iterations or ongoing maintenance of previous projects rather than new projects
+* **KR5: At least 25% of funding is allocated to iterations or ongoing maintenance of previous projects rather than new projects**
   Strategic priority this relates to: Shift from a “launching” culture to an “iterating” culture, emphasizing quality, polish, and stability
 
-* KR6: Land and promote at least 12 new major partnerships, resulting in at least two media hits in top-tier crypto outlets (with positive sentiment) per collaboration and at least 3 mainstream media placements
+* **KR6: Land and promote at least 12 new major partnerships, resulting in at least two media hits in top-tier crypto outlets (with positive sentiment) per collaboration and at least 3 mainstream media placements**
   Strategic priority this relates to: Keep the community excited through high-profile and high-quality integrations and partnerships (including platform integrations and AI partnerships)
-
-
-
-
-
-
-KR7: Onchain activity increases by 25% QoQ
-Strategic priority this relates to: Increase onchain activity dramatically
+* **KR7: Onchain activity increases by 25% QoQ**
+  Strategic priority this relates to: Increase onchain activity dramatically
