@@ -7,6 +7,8 @@ category: reports
 description: In this report, you’ll read about the ways that Filecoin Foundation
   supported the Filecoin community in 2024 and learn about FF’s strategic
   priorities in 2025.
+image:
+  src: /assets/images/hero.webp
 seo:
   twitter:
     card: summary
@@ -32,6 +34,8 @@ In 2017, the creators of Filecoin envisioned a governance body to serve as a lon
 In this report, you’ll read about the ways that Filecoin Foundation supported the Filecoin community in 2024 and learn about FF’s strategic priorities in 2025. FF’s top ecosystem-facing objective in 2025 is to make Filecoin work seamlessly and find product-market fit, but FF cannot dictate what the Filecoin community should do to pursue these objectives. Rather, FF’s strategic priorities in 2025 are about bringing the community together to achieve those goals. This includes driving a process to align the community on the most important actions to make Filecoin work seamlessly and find product-market fit, supporting projects that will help accomplish those goals, and shifting towards playing a larger role in convening the Filecoin ecosystem to get the right people in the room talking about the right thing at the right time.
 
 But before we dive into our plans for 2025, let’s take a look back at the achievements of Filecoin Foundation in 2024.
+
+![](/assets/images/ff-funding-highlights.webp)
 
 ## Ecosystem Funding: Supporting the Filecoin Community
 
@@ -157,6 +161,8 @@ Network Growth by the numbers: 
 * 5 marquee client wins and use cases secured
 * 10 AI-related integrations and partnerships established
 * 11 go-to-market strategies supported for ecosystem tooling and software providers 
+
+![](/assets/images/building-bridges-with-l1-ecosystems.webp)
 
 ### Building Bridges with L1 Ecosystems
 
