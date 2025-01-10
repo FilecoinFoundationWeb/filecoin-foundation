@@ -53,7 +53,6 @@ Retroactive Public Goods Funding (RetroPGF) is a program that serves as an upgra
 
 Filecoin Foundation funds projects in the Filecoin ecosystem through a variety of mechanisms, including ecosystem collaborations, partnerships, contracts, and small- and large-scale grants. FF also provides funding for dozens of global hackathons, offers financial support to teams building protocol tooling, and pays bug bounties to secure the network. In addition, FF offers open grant funding to support new projects entering the ecosystem. 
 
-
 ![](/assets/images/social-impact.webp)
 
 ### FF Funding Highlights 
@@ -295,6 +294,8 @@ In 2024, FF’s UXIT supported teams and organizations building on the network b
 
 In addition to this support, FF’s UXIT led the fil.org website relaunch, revamping its design and improving the user experience based on community-driven user interviews. The relaunch enhanced performance, SEO, and introduced new pages and resources requested by the Filecoin community, including [GovHub](https://fil.org/governance/govhub), [Ecosystem Explorer](https://fil.org/ecosystem-explorer), [Fil+ Allocator Registry](https://fil.org/filecoin-plus/allocators), [Orbit Hub](https://fil.org/orbit), [Events Page](https://fil.org/events), [Security Bug Bounty Program](https://fil.org/security/bug-bounty), [Web3 Security Maturity Model](https://fil.org/security/maturity-model), and the [Ecosystem Digest](https://fil.org/digest).
 
+![](/assets/images/communications-and-marketing.webp)
+
 ## Communications and Marketing: Showcasing and Empowering Ecosystem Success
 
 Communications and Marketing by the numbers:
@@ -465,10 +466,7 @@ Filecoin Foundation spending for fiscal year 2024.
 | Enablement (Legal, Finance, HR, IT, etc.)              | $3,797,274   | 608,156   |
 | Other Operating Expenses (Insurance, Taxes, etc.)      | $4,243,954   | 13,585    |
 | Cross-Functional Personnel                             | $832,582     | 416,451   |
-
 ```
-
-
 
 ![](/assets/images/2025-vision-and-strategic-priorities.webp)
 
@@ -503,19 +501,14 @@ Objective: Make Filecoin work seamlessly and find product market fit
 
 * **Key Result (KR) 1: Network storage utilized increases by 5 PiB per day**
   Strategic priority this relates to: Support open source data onboarding tools, with an eye toward stability
-
 * **KR2: 75% of onchain deals are renewed before expiring**
   Strategic priority this relates to: Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
-
 * **KR3: The number of paid deals grows 25% QoQ**
   Strategic priority this relates to: Support storage providers in finding profitable business models and boosting paid storage deals, including through supporting a deal pipeline
-
 * **KR4: At least half of the top pain points (identified and prioritized through a process that involves ecosystem stakeholder input) are addressed**
   Strategic priority this relates to: Wage a war on pain points; drive a process to align the community on the most important actions to take to make Filecoin work seamlessly and achieve product-market fit
-
 * **KR5: At least 25% of funding is allocated to iterations or ongoing maintenance of previous projects rather than new projects**
   Strategic priority this relates to: Shift from a “launching” culture to an “iterating” culture, emphasizing quality, polish, and stability
-
 * **KR6: Land and promote at least 12 new major partnerships, resulting in at least two media hits in top-tier crypto outlets (with positive sentiment) per collaboration and at least 3 mainstream media placements**
   Strategic priority this relates to: Keep the community excited through high-profile and high-quality integrations and partnerships (including platform integrations and AI partnerships)
 * **KR7: Onchain activity increases by 25% QoQ**
@@ -565,7 +558,6 @@ FF is looking forward to supporting the community in 2025, and we have designed 
 | Enablement (Legal, Finance, HR, IT, etc.)             | $3,757,148  | 545,813   |
 | Other Operating Expenses (Insurance, Taxes, etc.)     | $4,609,723  | 71,579    |
 | Cross-Functional Personnel                            | $762,087    | 409,995   |
-
 ```
 
 ### Learn More About Filecoin Foundation
