@@ -172,6 +172,8 @@ Cardano: In collaboration with FF, [Blockfrost integrated Filecoin](https://fil.
 
 Solana: A collaboration driven by Triton One and DCENT, and supported by FF, [archived Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin) as part of the [Old Faithful initiative](https://docs.triton.one/project-yellowstone/old-faithful-historical-archive/old-faithful-public-report) to make Solana's ledger data accessible and content-addressable. 
 
+![](/assets/images/building-bridges-with-l1-ecosystems-1.webp)
+
 ### Client Wins and New Use Cases 
 
 2024 marked a year of significant adoption for Filecoin across diverse sectors, demonstrating the network's versatility in handling critical data storage needs for both established institutions and emerging platforms.
@@ -185,6 +187,8 @@ Solana: A collaboration driven by Triton One and DCENT, and supported by FF, [ar
 Holon: Holon is bringing key [real estate use cases ](https://www.zawya.com/en/press-release/companies-news/holon-formalize-partnerships-with-arclive-and-magma-wzllagmc)for decentralized storage to market, including European REIT applications, while also expanding into the UAE. FF has supported Holon’s partnerships with the Web3 & AI Festival, Magma, and Arclive to help bring commercial real estate use cases to market.
 
 Intutzi: A location data-based data intelligence tool, Intutzi, [selected Filecoin](https://destor.com/resources/news/decentralized-storage-marketplace-launch-intuizi-partnership?utm_campaign=DeStor.com%20Marketplace%20Launch&utm_content=299686535&utm_medium=social&utm_source=linkedin&hss_channel=lcp-93788898) over traditional public cloud options to take greater control of its data. FF collaborated with Destor and Akave to amplify the win and to pursue a strategic roadmap to build more advanced integrations for Web2 clients.   
+
+![](/assets/images/connecting-ai-companies-to-filecoin-1.webp)
 
 ### Connecting AI Companies to Filecoin
 
