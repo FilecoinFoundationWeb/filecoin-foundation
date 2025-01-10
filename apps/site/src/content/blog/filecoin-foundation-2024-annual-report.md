@@ -450,12 +450,12 @@ Filecoin Foundation spending for fiscal year 2024.
 
 ```
 
-#### 2025 Vision and Strategic Priorities
+## 2025 Vision and Strategic Priorities
 
 
 As we look ahead to 2025, we want to offer a closer look at Filecoin Foundation’s vision and strategic priorities. In 2025, FF’s top objective is to mobilize the Filecoin community to make Filecoin work seamlessly and find product-market fit.
 
-##### Filecoin Foundation’s Strategic Priorities in 2025
+### Filecoin Foundation’s Strategic Priorities in 2025
 
 To pursue this goal of making Filecoin work seamlessly and finding product-market fit, FF has outlined the following strategic priorities that will be our laser focus for 2025:
 
@@ -470,7 +470,7 @@ To pursue this goal of making Filecoin work seamlessly and finding product-marke
 
 FF can’t achieve the objective of making Filecoin work seamlessly and finding product-market fit alone; rather, our strategic priorities are about bringing the Filecoin community together and supporting the community in accomplishing these objectives collectively.
 
-##### Measuring Progress: 2025 Objectives and Key Results
+### Measuring Progress: 2025 Objectives and Key Results
 
 To measure the ecosystem’s progress toward our primary objective of making Filecoin work seamlessly and achieving product-market fit, FF has a new set of ecosystem-facing Objectives and Key Results (OKRs) for 2025.
 
@@ -499,3 +499,50 @@ Objective: Make Filecoin work seamlessly and find product market fit
   Strategic priority this relates to: Keep the community excited through high-profile and high-quality integrations and partnerships (including platform integrations and AI partnerships)
 * **KR7: Onchain activity increases by 25% QoQ**
   Strategic priority this relates to: Increase onchain activity dramatically
+
+### 2025 Budget
+
+FF is looking forward to supporting the community in 2025, and we have designed FF’s budget to support these objectives, key results, and strategic priorities. Here is a look into FF’s planned budget for its 2025 fiscal year (subject to change):
+
+```
+| Category                                               | USD         | FIL       |
+|--------------------------------------------------------|-------------|-----------|
+| Ecosystem Grants - General & Support                  | $4,837,869  | 1,331,814 |
+| *Strategic priorities 1, 2, 3, 4, and 6*              |             |           |
+| Ecosystem Grants - Network Metrics                    | $1,380,000  | 156,000   |
+| *Strategic priorities 1 and 2*                        |             |           |
+| Ecosystem Grants - FVM-Related                        | $354,020    | 0         |
+| *Strategic priorities 1 and 2*                        |             |           |
+| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $3,279,842  | 131,412   |
+| *Strategic priorities 1, 2, 3, 4, 5, and 6*           |             |           |
+| Token Holder-Related Grants and Research              | $563,700    | 0         |
+| *Strategic priorities 1 and 2*                        |             |           |
+| Use Case Grants and Support                           | $709,453    | 88,836    |
+| *Strategic priorities 3 and 4*                        |             |           |
+| Solutions Architecture                                | $419,655    | 31,100    |
+| *Strategic priorities 1, 2, and 3*                    |             |           |
+| Developer Relations                                   | $615,641    | 42,307    |
+| *Strategic priorities 1 and 2*                        |             |           |
+| User Experience Improvement                           | $831,000    | 0         |
+| *Strategic priorities 1 and 2*                        |             |           |
+| Protocol Implementation Grants                        | $2,821,000  | 0         |
+| *Strategic priorities 1 and 2*                        |             |           |
+| Network Security (Including Bug Bounties and Network Audits) | $2,206,955  | 119,988   |
+| *Strategic priorities 1, 2, 7, and 8*                 |             |           |
+| Network Governance                                    | $927,608    | 46,596    |
+| *Strategic priorities 1, 7, and 8*                    |             |           |
+| Filecoin Plus Grants and Support                      | $1,354,763  | 63,648    |
+| *Strategic priorities 3 and 7*                        |             |           |
+| Network Infrastructure Grants                         | $1,484,000  | 0         |
+| *Strategic priorities 1, 2, 3, 5, and 6*              |             |           |
+| Network Tooling Grants                                | $960,000    | 0         |
+| *Strategic priorities 1, 2, 3, and 5*                 |             |           |
+| Events, Comms, Marketing, and Design                  | $7,799,258  | 373,096   |
+| *Strategic priorities 7 and 8*                        |             |           |
+| Regulatory and Policy                                 | $1,656,712  | 36,374    |
+| *Strategic priority 8*                                |             |           |
+| Enablement (Legal, Finance, HR, IT, etc.)             | $3,757,148  | 545,813   |
+| Other Operating Expenses (Insurance, Taxes, etc.)     | $4,609,723  | 71,579    |
+| Cross-Functional Personnel                            | $762,087    | 409,995   |
+
+```
