@@ -466,6 +466,10 @@ Filecoin Foundation spending for fiscal year 2024.
 
 ```
 
+
+
+![](/assets/images/2025-vision-and-strategic-priorities.webp)
+
 ## 2025 Vision and Strategic Priorities
 
 As we look ahead to 2025, we want to offer a closer look at Filecoin Foundation’s vision and strategic priorities. In 2025, FF’s top objective is to mobilize the Filecoin community to make Filecoin work seamlessly and find product-market fit.
