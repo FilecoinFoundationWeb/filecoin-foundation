@@ -54,6 +54,8 @@ Retroactive Public Goods Funding (RetroPGF) is a program that serves as an upgra
 Filecoin Foundation funds projects in the Filecoin ecosystem through a variety of mechanisms, including ecosystem collaborations, partnerships, contracts, and small- and large-scale grants. FF also provides funding for dozens of global hackathons, offers financial support to teams building protocol tooling, and pays bug bounties to secure the network. In addition, FF offers open grant funding to support new projects entering the ecosystem. 
 
 
+![](/assets/images/social-impact.webp)
+
 ### FF Funding Highlights 
 
 Filecoin Foundation committed funding and continued to support the projects listed below in Fiscal Year 2024, which runs from October 2023 to September 2024. This is not an exhaustive list of projects funded by FF in FY24. 
