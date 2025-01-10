@@ -424,3 +424,28 @@ Filecoin Foundation’s regulatory and policy efforts helped to protect the File
 ## 2024 Spend
 
 Filecoin Foundation spending for fiscal year 2024.
+
+```
+| Categories                                              | USD          | FIL       |
+|---------------------------------------------------------|--------------|-----------|
+| Ecosystem Grants - General & Support                   | $6,590,739   | 1,132,512 |
+| Ecosystem Grants - Network Metrics                     | $1,600,000   | 225,000   |
+| Ecosystem Grants - FVM-Related                         | $482,325     | 0         |
+| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $1,686,592   | 132,734   |
+| Token Holder-Related Grants and Research               | $247,500     | 0         |
+| Use Case Grants and Support                            | $434,787     | 92,344    |
+| Solutions Architecture                                 | $397,751     | 20,789    |
+| Developer Relations                                    | $880,591     | 58,265    |
+| User Experience Improvement                            | $527,389     | 4,752     |
+| Protocol Implementation Grants                         | $2,712,170   | 0         |
+| Network Security (Including Bug Bounties and Network Audits) | $1,420,932   | 123,232   |
+| Network Governance                                     | $531,174     | 48,182    |
+| Filecoin Plus Grants and Support                       | $923,379     | 66,161    |
+| Network Tooling Grants                                 | $720,000     | 19,533    |
+| Events, Comms, Marketing, and Design                   | $11,209,167  | 424,131   |
+| Regulatory and Policy                                  | $1,165,331   | 37,811    |
+| Enablement (Legal, Finance, HR, IT, etc.)              | $3,797,274   | 608,156   |
+| Other Operating Expenses (Insurance, Taxes, etc.)      | $4,243,954   | 13,585    |
+| Cross-Functional Personnel                             | $832,582     | 416,451   |
+
+```
