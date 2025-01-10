@@ -50,7 +50,7 @@ Retroactive Public Goods Funding (RetroPGF) is a program that serves as an upgra
 Filecoin Foundation funds projects in the Filecoin ecosystem through a variety of mechanisms, including ecosystem collaborations, partnerships, contracts, and small- and large-scale grants. FF also provides funding for dozens of global hackathons, offers financial support to teams building protocol tooling, and pays bug bounties to secure the network. In addition, FF offers open grant funding to support new projects entering the ecosystem. 
 
 
-##### FF Funding Highlights 
+### FF Funding Highlights 
 
 Filecoin Foundation committed funding and continued to support the projects listed below in Fiscal Year 2024, which runs from October 2023 to September 2024. This is not an exhaustive list of projects funded by FF in FY24. 
 
@@ -61,7 +61,6 @@ Filecoin Foundation committed funding and continued to support the projects list
 [Ankr x Filecoin RPC Integration](https://www.ankr.com/blog/ankrs-new-filecoin-rpc-connection-is-live/): Ankr is working to launch a public, load-balanced remote procedure call (RPC) for Filecoin to support developer growth. 
 
 [AutoNATv2 implementation for rust-libp2p](https://github.com/filecoin-project/devgrants/issues/1421): This project is implementing changes to keep rust-libp2p up-to-date with the current libp2p spec.  
-
 
 [Beryx Explorer](https://beryx.zondax.ch/): Beryx is a platform developed by Zondax that includes public historical data, streaming data, and metrics for the Filecoin blockchain.
 
@@ -150,3 +149,73 @@ Incentivized[ RPC Pool](https://github.com/filecoin-project/devgrants/issues/164
 [Zondax](https://fil.org/ecosystem-explorer/zondax): Zondax is a blockchain service provider that delivers services and software solutions for security, data indexing, integration, and protocol engineering. Zondax’s contributions to the Filecoin ecosystem include Beryx API, Filecoin signing tools, Filecoin Ledger App, Assembly script SDK for FVM, and Filecoin Gas.
 
 [3S Game Studio OU](https://github.com/filecoin-project/devgrants/issues/1727): The core purpose of this integration is to equip Unreal Engine developers with the tools necessary to incorporate FIL transactions and interactions directly into their games, without reliance on external wallets or third-party services.
+
+## Network Growth: Accelerating the Filecoin Network
+
+Network Growth by the numbers: 
+
+* 5 marquee client wins and use cases secured
+* 10 AI-related integrations and partnerships established
+* 11 go-to-market strategies supported for ecosystem tooling and software providers 
+
+### Building Bridges with L1 Ecosystems
+
+FF is building bridges with other Layer 1 (L1) ecosystems to enhance decentralization and resilience in the broader Web3 world.
+
+Cardano: In collaboration with FF, [Blockfrost integrated Filecoin](https://fil.org/blog/blockfrost-and-filecoin-foundation-collaborate-to-enhance-the-decentralization-of-cardano-data) as a robust backup layer for Blockfrost-built Cardano apps. Blockfrost will also introduce a new service tier for Cardano builders that includes IPFS and Filecoin storage. 
+
+Solana: A collaboration driven by Triton One and DCENT, and supported by FF, [archived Solana’s block history on Filecoin](https://destor.com/resources/news/solana-integrates-filecoin) as part of the [Old Faithful initiative](https://docs.triton.one/project-yellowstone/old-faithful-historical-archive/old-faithful-public-report) to make Solana's ledger data accessible and content-addressable. 
+
+### Client Wins and New Use Cases 
+
+2024 marked a year of significant adoption for Filecoin across diverse sectors, demonstrating the network's versatility in handling critical data storage needs for both established institutions and emerging platforms.
+
+[ATLAS Experiment at CERN](https://fil.org/ecosystem-explorer/atlas-experiment-at-cern): The ATLAS Experiment at CERN, the European Organization for Nuclear Research, is [working with Seal Storage](https://sealstorage.io/resources/news/seal-storage-technology-partners-with-the-atlas-experiment-at-cern) to expand its pilot program to bring 1 EiB of data onto the network over a 5-year period. FF has been working with Seal Storage on this opportunity.  
+
+[Hauska.ai](https://fil.org/ecosystem-explorer/hauska-ai): A generative AI platform for architects looking to protect, share, and monetize their data, Hauska is using Filecoin to change the way they store large architectural files. FF has been collaborating with Hauska to ensure their data is stored on the network.  
+
+[Hippocrat](https://fil.org/ecosystem-explorer/hippocrat): A blockchain-based healthcare project in South Korea that aims to improve health management methods and promote data-driven healthcare is [storing](https://www.youtube.com/watch?v=1x8lvm87Ldo) verifiable healthcare data on Filecoin. FF catalyzed this opportunity and collaboration to showcase the potential for healthcare data on Filecoin. 
+
+Holon: Holon is bringing key [real estate use cases ](https://www.zawya.com/en/press-release/companies-news/holon-formalize-partnerships-with-arclive-and-magma-wzllagmc)for decentralized storage to market, including European REIT applications, while also expanding into the UAE. FF has supported Holon’s partnerships with the Web3 & AI Festival, Magma, and Arclive to help bring commercial real estate use cases to market.
+
+Intutzi: A location data-based data intelligence tool, Intutzi, [selected Filecoin](https://destor.com/resources/news/decentralized-storage-marketplace-launch-intuizi-partnership?utm_campaign=DeStor.com%20Marketplace%20Launch&utm_content=299686535&utm_medium=social&utm_source=linkedin&hss_channel=lcp-93788898) over traditional public cloud options to take greater control of its data. FF collaborated with Destor and Akave to amplify the win and to pursue a strategic roadmap to build more advanced integrations for Web2 clients.   
+
+### Connecting AI Companies to Filecoin
+
+In 2024, FF announced 8 collaborations with prominent AI organizations, underscoring the Filecoin network’s pivotal role as the DePIN backbone for advancements in AI.
+
+[Aethir](https://fil.org/ecosystem-explorer/aethir): A decentralized GPU cloud computing platform, Aethir, is storing [data on Filecoin](https://blog.aethir.com/blog-posts/aethir-and-filecoin-foundation-combining-distributed-gpu-infrastructure-and-decentralized-storage) to ensure transparency, accountability, and robust audit trails for AI model governance. 
+
+[Bagel](https://fil.org/ecosystem-explorer/bagel): Bagel is an AI and cryptography research lab that is enabling AI developers to [train and store their models](https://blog.bagel.net/p/gpu-restaking) using Filecoin’s compute and storage power. 
+
+[Decentralized AI Society (DAIS)](https://dais.global/): With FF as a founding member, DAIS [launched](https://www.coindesk.com/policy/2024/09/18/decentralized-ai-society-launched-to-fight-tech-giants-who-own-the-regulators) to promote the development of an open, decentralized, and secure internet in the age of artificial intelligence.
+
+[KiteAI](https://kiteai.tech/): As a foundational AI layer unlocking access to AI assets, [KiteAI is working with FF](https://medium.com/@KiteAI/kite-ai-and-filecoin-foundation-collaborate-to-redefine-ai-data-management-b4fdfc62b82a) to enhance data management for AI training. KiteAI will archive AI training datasets on Filecoin and integrate IPFS as part of its provenance layer.
+
+[Nuklai](https://fil.org/ecosystem-explorer/nuklai): Nuklai is a collaborative data marketplace and infrastructure provider for data ecosystems which [integrated](https://www.nukl.ai/blog/nuklai-and-filecoin-foundation-collaborate-to-archive-the-worlds-data) Filecoin to make its metadata publicly accessible.
+
+[SingularityNET](https://singularitynet.io/): A leading AI platform developer, SingularityNET, is [storing metadata](https://medium.com/singularitynet/singularitynet-and-filecoin-foundation-collaborate-to-enhance-ai-capabilities-through-depin-6b6db3ea224a) on Filecoin. The collaboration with FF will also integrate the Filecoin tech stack to support archival data needs. 
+
+[Theoriq](https://www.theoriq.ai/): An AI base layer platform, Theoriq, is [developing a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable. 
+
+[Ungate AI](https://ungate.ai/): Ungate is a composable AI network built on EigenLayer, designed to revolutionize resource coordination across networks.
+
+### Advanced Ecosystem Tooling 
+
+Filecoin Foundation’s network growth team worked with many ecosystem projects to support go-to-market strategy and targeted testing programs to grow tools and platforms. These efforts resulted in substantial increases in data storage commitments, user adoption, and platform engagement. In addition, FF financially supported the following teams: 
+
+[Akave](https://www.akave.ai/): In a single quarter, Akave demonstrated remarkable growth by building a qualified deal pipeline of 10 clients, representing over 10 PiBs of paid storage commitment. FF supported Akave with grant funding to facilitate data onboarding.
+
+[Ansa Research](https://ansaresearch.ai/): Ansa focuses on growing the Filecoin ecosystem through education and research. FF provided Ansa with funding for research. 
+
+[Bagel](https://www.bagel.net/): Through the MinerX testing program, Bagel successfully validated their platform with 4 storage providers who completed rigorous testing and subsequently became official platform users. FF supported Bagel through scaled network testing for data storage and compute services on Filecoin.
+
+[Curio](https://curiostorage.org/): The MinerX program facilitated comprehensive testing of Curio with 10 storage providers, all of whom transitioned to become active platform users after providing valuable feedback for future development. FF supported Curio through scaled network testing for its initial storage provider launch.
+
+[DeStor](https://destor.com/): DeStor achieved significant market traction by building a 14.5 PiB qualified storage pipeline and successfully onboarding 3.2 PiBs of paid data storage in just one quarter. FF supported DeStor with funding for data onboarding pipeline expansion.
+
+[Lighthouse Storage](https://www.lighthouse.storage/): Lighthouse Storage's API solution demonstrated strong market validation by successfully onboarding major clients, including Aethir, Nuklai, SingularityNet, Blockfrost, and Ungate AI. FF supported Lighthouse with funding to build out more capabilities to service its Web3 client base.
+
+[Theoriq](https://www.theoriq.ai/): FF offered go-to-market support for AI agents powered by Filecoin network data to showcase Filecoin’s utility. 
+
+[VenusHub](https://venushub.io/): VenusHub achieved substantial scale in the ecosystem, growing to support over 80 nodes and managing 40 PiBs of network data. FF supported VenusHub with funding for continued growth of their community’s data storage initiatives.
