@@ -3,7 +3,7 @@ import { PATHS } from '@/constants/paths'
 import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
-import { EcosystemProjectFrontMatter } from '../schemas/FrontMatterSchema'
+import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFrontmatterSchema'
 
 export const ECOSYSTEM_EXPLORER_DIRECTORY_PATH = PATHS.ECOSYSTEM_EXPLORER
   .entriesContentPath as string
@@ -16,7 +16,7 @@ export function getEcosystemProjectData(slug: string) {
 export function getEcosystemProjectsData() {
   const allProjects = getAllMarkdownData({
     directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodParser: EcosystemProjectFrontMatter.parse,
+    zodParser: EcosystemProjectFrontmatterSchema.parse,
   })
 
   return allProjects.map(transformEcosystemProjectData)
@@ -26,7 +26,7 @@ function getEcosystemProjectMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodParser: EcosystemProjectFrontMatter.parse,
+    zodParser: EcosystemProjectFrontmatterSchema.parse,
   })
 }
 

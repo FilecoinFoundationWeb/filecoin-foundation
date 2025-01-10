@@ -5,7 +5,7 @@ import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 import { CategorySchema } from './CategorySchemas'
 import { ProjectTechSchema } from './ProjectTechSchema'
 
-export const EcosystemProjectFrontMatter = DynamicBaseDataSchema.extend({
+export const EcosystemProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
   category: CategorySchema,
   description: z.string(),

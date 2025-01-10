@@ -8,10 +8,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-
-import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -23,17 +20,17 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getEventData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { seo, featuredEntry: featuredEventPath } = getFrontmatter({
+const { seo, featuredEntry: featuredEvent } = getFrontmatter({
   path: PATHS.EVENTS,
-  zodParser: FeaturedPageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({
@@ -45,15 +42,8 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
-const featuredEvent = getEventData(featuredEventSlug)
-
 export default async function Events(props: Props) {
   const searchParams = await props.searchParams
-
-  if (!featuredEvent) {
-    throw new Error('Featured event not found')
-  }
 
   return (
     <PageLayout>
