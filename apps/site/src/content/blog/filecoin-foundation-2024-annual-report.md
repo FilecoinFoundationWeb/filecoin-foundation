@@ -518,7 +518,7 @@ Objective: Make Filecoin work seamlessly and find product market fit
 
 FF is looking forward to supporting the community in 2025, and we have designed FF’s budget to support these objectives, key results, and strategic priorities. Here is a look into FF’s planned budget for its 2025 fiscal year (subject to change):
 
-```
+
 | Category                                               | USD         | FIL       |
 |--------------------------------------------------------|-------------|-----------|
 | Ecosystem Grants - General & Support                  | $4,837,869  | 1,331,814 |
@@ -558,7 +558,7 @@ FF is looking forward to supporting the community in 2025, and we have designed 
 | Enablement (Legal, Finance, HR, IT, etc.)             | $3,757,148  | 545,813   |
 | Other Operating Expenses (Insurance, Taxes, etc.)     | $4,609,723  | 71,579    |
 | Cross-Functional Personnel                            | $762,087    | 409,995   |
-```
+
 
 ### Learn More About Filecoin Foundation
 
