@@ -302,6 +302,8 @@ Communications and Marketing by the numbers:
 
 [Lockheed Martin](https://fil.org/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/): In early 2024, FF announced the successful completion of a first-of-its-kind mission to deploy the InterPlanetary File System (IPFS) in space. The demonstration followed nearly three years of collaboration and involved sending files from Earth to orbit and back using an implementation of the IPFS protocol designed for space communications.
 
+![](/assets/images/sharing-stories-of-datasets-stored-on-filecoin.webp)
+
 ### Sharing Stories of Datasets Stored on Filecoin
 
 Each week across its social media and marketing channels, Filecoin Foundation highlights critical datasets stored on the Filecoin network. Some of the stories that FF shared this year include: 
@@ -342,6 +344,8 @@ Each week across its social media and marketing channels, Filecoin Foundation hi
 
 **78 Days:** From Starling Lab, “78 Days” is verified [documentation](https://x.com/FilFoundation/status/1844804758969716924) of the 2020 U.S. presidential transition using authentication technologies and decentralized web protocols.
 
+![](/assets/images/design.webp)
+
 ## Design: Building Visual Tools and Resources to Benefit the Ecosystem
 
 Design by the numbers: 
@@ -373,7 +377,9 @@ DWeb Decoded: FF’s design team produced over 50 episodes of the DWeb Decoded p
 
 Content Production: The design team livestreamed FF events and produced [over 100 videos](https://www.youtube.com/@filecoinfoundation), including highlights, interviews, and educational content, broadening the reach and influence of the Filecoin ecosystem’s activities. 
 
-### Events: Gathering the Global Filecoin Community 
+![](/assets/images/events.webp)
+
+## Events: Gathering the Global Filecoin Community 
 
 Events by the numbers: 
 
@@ -461,7 +467,6 @@ Filecoin Foundation spending for fiscal year 2024.
 ```
 
 ## 2025 Vision and Strategic Priorities
-
 
 As we look ahead to 2025, we want to offer a closer look at Filecoin Foundation’s vision and strategic priorities. In 2025, FF’s top objective is to mobilize the Filecoin community to make Filecoin work seamlessly and find product-market fit.
 
