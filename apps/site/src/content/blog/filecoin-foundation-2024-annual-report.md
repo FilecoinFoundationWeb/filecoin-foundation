@@ -22,8 +22,8 @@ As the Filecoin community looks toward 2025, Filecoin Foundation (FF) hopes to r
 We’re proud to share our progress and grateful to continue supporting the Filecoin ecosystem throughout 2025. 
 
 ## What is Filecoin Foundation? 
-Filecoin Foundation’s mission is to preserve humanity’s most important information by facilitating the open source governance of the Filecoin network, funding research and development projects related to Filecoin and decentralized technologies, and supporting the growth of the Filecoin ecosystem and community. 
 
+Filecoin Foundation’s mission is to preserve humanity’s most important information by facilitating the open source governance of the Filecoin network, funding research and development projects related to Filecoin and decentralized technologies, and supporting the growth of the Filecoin ecosystem and community. 
 
 FF’s vision is to create a world in which Filecoin and related decentralized technologies preserve and protect our world’s history, empower users, and embed core civil liberties and human rights — such as free speech and privacy — into the fabric of the world’s technological infrastructure. We want to build a decentralized, efficient, and robust foundation for the future of the Web.
 
@@ -32,3 +32,19 @@ In 2017, the creators of Filecoin envisioned a governance body to serve as a lon
 In this report, you’ll read about the ways that Filecoin Foundation supported the Filecoin community in 2024 and learn about FF’s strategic priorities in 2025. FF’s top ecosystem-facing objective in 2025 is to make Filecoin work seamlessly and find product-market fit, but FF cannot dictate what the Filecoin community should do to pursue these objectives. Rather, FF’s strategic priorities in 2025 are about bringing the community together to achieve those goals. This includes driving a process to align the community on the most important actions to make Filecoin work seamlessly and find product-market fit, supporting projects that will help accomplish those goals, and shifting towards playing a larger role in convening the Filecoin ecosystem to get the right people in the room talking about the right thing at the right time.
 
 But before we dive into our plans for 2025, let’s take a look back at the achievements of Filecoin Foundation in 2024.
+
+## Ecosystem Funding: Supporting the Filecoin Community
+
+Ecosystem support by the numbers:
+
+* 250+ teams supported through FF funding and grants 
+* 500+ teams supported through Filecoin-related hackathons
+* 8,800 teams building in the Filecoin ecosystem
+
+### RetroPGF Funding
+
+Retroactive Public Goods Funding (RetroPGF) is a program that serves as an upgrade to Filecoin’s economic mechanisms to address a gap in funding. [Filecoin RetroPGF](https://www.fil-retropgf.io/) seeks to fund contributions that have generated impact for Filecoin using Optimism-style retroactive public goods funding models. Filecoin Foundation provided funding to the RetroPGF fund, which dispensed funds to 197 projects in 2024.
+
+### Grants and Other Funding
+
+Filecoin Foundation funds projects in the Filecoin ecosystem through a variety of mechanisms, including ecosystem collaborations, partnerships, contracts, and small- and large-scale grants. FF also provides funding for dozens of global hackathons, offers financial support to teams building protocol tooling, and pays bug bounties to secure the network. In addition, FF offers open grant funding to support new projects entering the ecosystem.
