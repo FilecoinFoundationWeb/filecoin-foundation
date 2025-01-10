@@ -218,4 +218,55 @@ Filecoin Foundation’s network growth team worked with many ecosystem projects 
 
 [Theoriq](https://www.theoriq.ai/): FF offered go-to-market support for AI agents powered by Filecoin network data to showcase Filecoin’s utility. 
 
-[VenusHub](https://venushub.io/): VenusHub achieved substantial scale in the ecosystem, growing to support over 80 nodes and managing 40 PiBs of network data. FF supported VenusHub with funding for continued growth of their community’s data storage initiatives.
+[VenusHub](https://venushub.io/): VenusHub achieved substantial scale in the ecosystem, growing to support over 80 nodes and managing 40 PiBs of network data. FF supported VenusHub with funding for continued growth of their community’s data storage initiatives.  
+
+## Governance: Facilitating Open Source Decision-making 
+
+Governance by the numbers: 
+
+* 3 network upgrades 
+* 11 total FIPs accepted in upgrades
+* 41 FIP discussions facilitated 
+
+As an open source project, the Filecoin network is governed in a transparent, community-driven way, in line with open source ideals. FF facilitates an open source governance process by hosting open forums and soliciting feedback from the community to advance core protocol upgrades.
+
+In collaboration with the Lotus, Venus, and Forest implementation teams, FF enacted a planned upgrade schedule in 2024 to align with FF’s commitment to transparency and active participation in governance. This year, three major network upgrades were deployed to mainnet: [v22](https://fil.org/blog/announcing-the-filecoin-nv22-dragon-upgrade-a-leap-forward-in-network-efficiency-and-flexibility) (Dragon), [v23](https://fil.org/blog/announcing-the-filecoin-nv23-waffle-upgrade-enhancing-filecoins-efficiency-and-security) (Waffle), and [v24](https://fil.org/blog/announcing-the-filecoin-nv24-tuk-tuk-upgrade-enhancing-filecoin-s-efficiency) (Tuk Tuk). 
+
+In September, the FF Governance team launched [GovHub](https://www.fil.org/governance/govhub) to make participating in the governance of the Filecoin network more accessible. GovHub hosts PowerVote, an onchain voting tool that is still in development, and Fil Poll, an off-chain non-binding polling tool for gathering opinions on early ideas and community proposals. New governance tools tailored for the Filecoin protocol facilitated meaningful community discussions, enabled votes on critical proposals, and kept members informed about the latest network developments.
+
+## Filecoin Plus: Scaling Network Utilization 
+
+Fil+ by the numbers: 
+
+* 66 active allocators
+* 864+ PiB of DataCap distributed  
+* 3,855 clients served
+
+FF facilitates the Filecoin Plus (Fil+) program, which aims to increase the amount of useful data stored on the Filecoin network. 
+
+Allocators play a key role in the Fil+ program by verifying and onboarding real client data to the Filecoin network. Their primary responsibility is distributing DataCap to clients.
+
+DataCap is a network resource used in deals to incentivize Filecoin storage actors that are facilitating value-additive activities to the network, such as providing hardware capacity, providing data storage, or providing retrieval of stored data. Clients can use DataCap to pay storage providers as part of a storage deal, which increases a storage provider’s probability of earning block rewards. This year, over 860 PiBs of DataCap have been distributed to 66 allocators, serving 984 clients with active deals. 
+
+Clients can request DataCap from allocators, each of whom has their own application process. FF recently added an allocator registry to the [Fil+ web page](https://fil.org/filecoin-plus/allocators) to help data clients connect with prospective allocators. 
+
+FF’s request for new allocator pathways helps the Filecoin community develop and run novel meta-pathways. This program resulted in 86 pathways joining the program in Q1 of 2024, which promotes faster allocation of DataCap to clients. Each pathway receives an individual audit to ensure compliant storage deals between the allocators, storage providers, and clients, contributing to a growing, healthy storage marketplace. 
+
+The Fil+ governance process now includes a full account of the DataCap distributed from allocators to clients, including how organizations request and receive an audit of DataCap distribution. 
+
+## Security: Safeguarding the Filecoin Network 
+
+Security by the numbers:
+
+* 1 week average resolution time for reported bugs 
+* < 1 hour initial response time to all security incidents 
+* $441,950 in bug bounties awarded for 8 valid reports
+
+FF’s security team works to protect the Filecoin network. In 2024, the team strengthened network security by:
+
+* Coordinating monitoring systems and incident response protocols across projects and teams, enabling decentralized incident response capabilities; 
+* Providing security services and best practices for developers; 
+* Providing discounted access and introductions to qualified security auditors and security service providers specializing in Filecoin; and 
+* Developing new security research tools and testing tooling.
+
+A key milestone was the launch of the [Web3 Security Maturity Model](https://fil.org/security/maturity-model), developed by the FF security team, which helps organizations assess and improve their security as they build decentralized technologies.
