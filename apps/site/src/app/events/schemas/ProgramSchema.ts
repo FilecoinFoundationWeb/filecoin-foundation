@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
+import { EventBaseFrontmatterSchema } from './EventBaseFrontmatterSchema'
 
 export const ProgramSchema = z
   .object({
@@ -8,7 +8,7 @@ export const ProgramSchema = z
     title: z.string().optional().default('Events'),
     events: z
       .array(
-        EventBaseFrontMatterSchema.extend({
+        EventBaseFrontmatterSchema.extend({
           location: z.string(),
         }),
       )
