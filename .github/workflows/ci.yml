@@ -29,7 +29,7 @@ jobs:
           cache: "npm"
 
       - name: Cache Turborepo
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.TURBO_CACHE_DIR }}
           key: ${{ runner.os }}-turbo-${{ github.sha }}
