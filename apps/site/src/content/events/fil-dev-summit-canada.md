@@ -18,7 +18,7 @@ location:
   primary: Toronto, Canada
   region: north-america
 start-date: 2025-05-12T09:00:00.000Z
-external-link: https://www.fildev.io/
+external-link: https://www.fildev.io/FDS-6
 image:
   src: /assets/images/fil-dev-summit.png
 seo:
