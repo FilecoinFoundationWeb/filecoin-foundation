@@ -16,7 +16,6 @@ seo:
     In this report, you’ll read about the ways that Filecoin Foundation
     supported the Filecoin community in 2024 and learn about FF’s strategic
     priorities in 2025.
-  title: "Filecoin Foundation 2024 Annual Report"
 ---
 
 ## Introduction 
