@@ -68,10 +68,10 @@ schedule:
         - title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
           location: Grandhotel Belvedere | Promenade 89, 7270 Davos, Switzerland
           tag: Registration Needed
-          start: 2025-01-20T16:50:00.000Z
+          start: 2025-01-20T15:50:00.000Z
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
           description: What is Crypto Good For?
-          end: 2025-01-20T17:25:00.000Z
+          end: 2025-01-20T16:25:00.000Z
       date: 2025-01-20T10:00:00.000Z
     - date: 2025-01-21T09:00:00.000Z
       events:
@@ -83,14 +83,26 @@ schedule:
           end: 2025-01-21T18:00:00.000Z
           url: https://futurehousedavos.io/
         - tag: Registration Needed
-          title: Marta Belcher at Decentralized AI Society Salon
-          description: Fireside Chat with Michael Casey and Marta Belcher
+          title: Marta Belcher at Davos Decentralized AI Salon
+          description: " Is AI the Killer Use Case For Decentralized Storage?"
           start: 2025-01-21T14:50:00.000Z
           location: Promenade 89, 7270 Davos, Switzerland
+          moderators:
+            - name: Michael Casey
+              company: Decentralized AI Society
+          url: https://lu.ma/so88195w
         - tag: Registration Needed
           title: Porter Stowell at Web3 Investor Gathering
           location: Hotel Seehof | Promenade 159, 7260 Davos, Switzerland
           start: 2025-01-21T12:00:00.000Z
+        - tag: Registration Needed
+          title: Rachel Horn at Equality Lounge @ Davos
+          description: "From Innovators to Influencers: Women Scaling Blockchain and
+            Financial Inclusion"
+          url: "https://thefemalequotient.equalitylounge.com/davos25/ "
+          location: Promenade 40 7270 Davos Platz, Switzerland
+          start: 2025-01-21T11:30:00.000Z
+          end: 2025-01-21T12:00:00.000Z
     - events:
         - tag: Registration Needed
           title: Porter Stowell at Digital Davos
