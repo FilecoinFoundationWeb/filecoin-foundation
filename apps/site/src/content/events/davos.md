@@ -29,7 +29,7 @@ program:
         entry. Book a private meeting room: events@fil.org"
       external-link: https://cvent.me/xbZ2w2
     - title: "The Moon, Mars, and the Stars: Space Reception hosted by Filecoin
-        Foundation and Joe Landon"
+        Foundation, Joe Landon, and Dylan Taylor"
       location: Davos, Switzerland
       description: Kick off another exciting year in space with leaders from the
         industry. Co-hosted by Filecoin Foundation and Joe Landon.
