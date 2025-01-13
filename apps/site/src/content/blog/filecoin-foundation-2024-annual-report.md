@@ -144,8 +144,6 @@ Incentivized[ RPC Pool](https://github.com/filecoin-project/devgrants/issues/164
 
 [Twinquasar-Celeste](https://github.com/filecoin-project/devgrants/issues/1042): Twinquasar, in collaboration with Celeste, provides Filecoin storage providers and investors with green and cost-effective hosting offers. 
 
-[United Nations World Food Programme (UNWFP)](https://www.wfp.org/stories/wfp-glance): FF and the Global Blockchain Business Council[ ](https://innovation.wfp.org/project/food-for-crisis)are working with UNWFP [to upload donation information](https://innovation.wfp.org/project/food-for-crisis) from the Food for Crisis Initiative to the Filecoin network. This will enable efficiency and transparency of humanitarian aid by tracking funds from donation to beneficiary using blockchain technology. 
-
 [VenusHub](https://venushub.io/): FF’s resources support master programs, hackathons, storage provider incubators, deal accelerators, and more to help drive Venus adoption and support storage providers in storing useful data on the network. 
 
 [Webrecorder](https://webrecorder.net/): Webrecorder makes web archiving accessible, using IPFS and Filecoin to provide a foundation for decentralized web archiving. 
