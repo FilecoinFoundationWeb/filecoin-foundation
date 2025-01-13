@@ -1,5 +1,5 @@
 ---
-title: FIL Dev Summit Canada
+title: FIL Dev Summit 6
 description: FIL Dev Summit is a gathering of developers, builders, and engaged
   community members who want to contribute to the core protocol and network
   evolution of Filecoin (think IPFS Thing, but bigger!). This summit is more
