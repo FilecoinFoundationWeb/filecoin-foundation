@@ -36,8 +36,6 @@ In this report, you’ll read about the ways that Filecoin Foundation supported 
 
 But before we dive into our plans for 2025, let’s take a look back at the achievements of Filecoin Foundation in 2024.
 
-![](/assets/images/ff-funding-highlights.webp)
-
 ## Ecosystem Funding: Supporting the Filecoin Community
 
 Ecosystem support by the numbers:
@@ -49,6 +47,8 @@ Ecosystem support by the numbers:
 ### RetroPGF Funding
 
 Retroactive Public Goods Funding (RetroPGF) is a program that serves as an upgrade to Filecoin’s economic mechanisms to address a gap in funding. [Filecoin RetroPGF](https://www.fil-retropgf.io/) seeks to fund contributions that have generated impact for Filecoin using Optimism-style retroactive public goods funding models. Filecoin Foundation provided funding to the RetroPGF fund, which dispensed funds to 197 projects in 2024.
+
+![](/assets/images/ff-funding-highlights.webp)
 
 ### Grants and Other Funding
 
@@ -72,7 +72,7 @@ Filecoin Foundation committed funding and continued to support the projects list
 
 [Decentralized Storage Alliance (DSA)](https://dsalliance.io/): A professional organization including global leaders from AMD, EY, Seagate, Supranational, Protocol Labs, and FF, DSA’s mission is to imagine a better path to decentralized data storage for enterprise organizations. 
 
-[Democracy’s Library](https://archive.org/details/democracys-library): An Internet Archive initiative, Democracy’s Library, creates a [free, open collection ](/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network)of government data so that government research and publications from around the world remain permanently accessible to the public. This project now hosts the Aruba Collection, which is being [uploaded to the Filecoin network](https://blog.archive.org/2024/04/08/aruba-launches-digital-heritage-portal-preserving-its-history-and-culture-for-global-access) for long-term preservation. 
+[Democracy’s Library](https://archive.org/details/democracys-library): An Internet Archive initiative, Democracy’s Library, creates a [free, open collection ](/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network)of government data so that government research and publications from around the world remain permanently accessible to the public.
 
 [DMRV of Natural Capital](https://github.com/filecoin-project/devgrants/issues/1062): This project will develop a new method for valuing ecosystems based on the services they provide and the value of their natural capital stock, leveraging Filecoin for data storage. 
 
@@ -108,7 +108,7 @@ Filecoin Foundation committed funding and continued to support the projects list
 
 [Hedgey Finance Developer](https://github.com/filecoin-project/devgrants/issues/1753): Hedgey provides a suite of onchain tools for responsible and efficient distribution of tokens from projects to their community. Hedgey will explore deploying its smart contracts onto Filecoin EVM and adding native Filecoin wallet connectivity. 
 
-Incentivized[ RPC Pool](https://github.com/filecoin-project/devgrants/issues/1648): Lava enables ecosystems to consolidate multiple RPC endpoints into a single optimized endpoint. This project provides insights into latency, uptime, provider accuracy, and detailed usage metrics such as user geolocation, project activity, and frontend or backend usage trends for the Filecoin network. 
+Incentivized [RPC Pool](https://github.com/filecoin-project/devgrants/issues/1648): Lava enables ecosystems to consolidate multiple RPC endpoints into a single optimized endpoint. This project provides insights into latency, uptime, provider accuracy, and detailed usage metrics such as user geolocation, project activity, and frontend or backend usage trends for the Filecoin network. 
 
 [Internet Archive](https://web.archive.org/): Internet Archive has uploaded roughly 100,000 cultural artifacts to Filecoin –– from internet history to official public government datasets. As part of its work in the Filecoin ecosystem, Internet Archive has developed and refined methods for uploading data to decentralized storage consistently at scale.    
 
@@ -135,7 +135,6 @@ Incentivized[ RPC Pool](https://github.com/filecoin-project/devgrants/issues/164
 [Renderhive](https://github.com/filecoin-project/devgrants/issues/1180): Renderhive is a trust-free, decentralized, self-governed marketplace that enables any owner of a CPU/GPU to offer available computation power. This platform uses IPFS, Filecoin, and Hedera’s DLT to establish trust among the participants of the network. 
 
 [Spark Eco](https://github.com/filecoin-project/devgrants/issues/780): This project is focused on building an onchain market for Renewable Energy Certificates (RECs) worldwide. 
-
 [Starboard](https://dashboard.starboard.ventures/dashboard): FF is the largest funder of Starboard. Starboard’s Filecoin Network Health Dashboard provides in-depth network usage and growth statistics for governance support and protocol improvement. 
 
 [TRANSFER Data Trust](https://transfergallery.com/data-trust/): FF supports TRANSFER in [building](/ecosystem-explorer/transfer-data-trust) an artist-owned decentralized archive and cooperative value exchange network.
@@ -186,8 +185,6 @@ Holon: Holon is bringing key [real estate use cases ](https://www.zawya.com/en/p
 
 Intutzi: A location data-based data intelligence tool, Intutzi, [selected Filecoin](https://destor.com/resources/news/decentralized-storage-marketplace-launch-intuizi-partnership) over traditional public cloud options to take greater control of its data. FF collaborated with Destor and Akave to amplify the win and to pursue a strategic roadmap to build more advanced integrations for Web2 clients.   
 
-![](/assets/images/connecting-ai-companies-to-filecoin-1.webp)
-
 ### Connecting AI Companies to Filecoin
 
 In 2024, FF announced 8 collaborations with prominent AI organizations, underscoring the Filecoin network’s pivotal role as the DePIN backbone for advancements in AI.
@@ -207,6 +204,8 @@ In 2024, FF announced 8 collaborations with prominent AI organizations, undersco
 [Theoriq](https://www.theoriq.ai/): An AI base layer platform, Theoriq, is [developing a series of AI agents](https://mirror.xyz/0xbCAa90C8bA95b3ba6C8Aa6900a92FE70b97E5eF7/y8zj9hbr6ZEES9V9bMtqyzEBm0osh5ivoSBEYVN3mkI) trained on data stored on Filecoin, making open data more accessible and usable. 
 
 [Ungate AI](https://ungate.ai/): Ungate is a composable AI network built on EigenLayer, designed to revolutionize resource coordination across networks.
+
+![](/assets/images/connecting-ai-companies-to-filecoin-1.webp)
 
 ### Advanced Ecosystem Tooling 
 
@@ -291,14 +290,14 @@ In 2024, FF’s UXIT supported teams and organizations building on the network b
 
 In addition to this support, FF’s UXIT led the fil.org website relaunch, revamping its design and improving the user experience based on community-driven user interviews. The relaunch enhanced performance, SEO, and introduced new pages and resources requested by the Filecoin community, including [GovHub](/governance/govhub), [Ecosystem Explorer](/ecosystem-explorer), [Fil+ Allocator Registry](/filecoin-plus/allocators), [Orbit Hub](/orbit), [Events Page](/events), [Security Bug Bounty Program](/security/bug-bounty), [Web3 Security Maturity Model](/security/maturity-model), and the [Ecosystem Digest](/digest).
 
-![](/assets/images/communications-and-marketing.webp)
-
 ## Communications and Marketing: Showcasing and Empowering Ecosystem Success
 
 Communications and Marketing by the numbers:
 
 - 200+ FF newsletters, blog posts, and podcasts published
 - 2,090 FF media mentions in verified news outlets
+
+![](/assets/images/communications-and-marketing.webp)
 
 [Lockheed Martin](/blog/filecoin-foundation-successfully-deploys-interplanetary-file-system-ipfs-in-space/): In early 2024, FF announced the successful completion of a first-of-its-kind mission to deploy the InterPlanetary File System (IPFS) in space. The demonstration followed nearly three years of collaboration and involved sending files from Earth to orbit and back using an implementation of the IPFS protocol designed for space communications.
 
@@ -344,14 +343,14 @@ Each week across its social media and marketing channels, Filecoin Foundation hi
 
 **78 Days:** From Starling Lab, “78 Days” is verified [documentation](https://x.com/FilFoundation/status/1844804758969716924) of the 2020 U.S. presidential transition using authentication technologies and decentralized web protocols.
 
-![](/assets/images/2024-annual-report-design.webp)
-
 ## Design: Building Visual Tools and Resources to Benefit the Ecosystem
 
 Design by the numbers: 
 
 - 619 creative tickets completed
 - 226 pieces of video and podcast content produced
+
+![](/assets/images/2024-annual-report-design.webp)
 
 ### Building Open Design Tools
 
@@ -377,8 +376,6 @@ DWeb Decoded: FF’s design team produced over 50 episodes of the DWeb Decoded p
 
 Content Production: The design team livestreamed FF events and produced [over 100 videos](https://www.youtube.com/@filecoinfoundation), including highlights, interviews, and educational content, broadening the reach and influence of the Filecoin ecosystem’s activities. 
 
-![](/assets/images/2024-annual-report-events.webp)
-
 ## Events: Gathering the Global Filecoin Community 
 
 Events by the numbers: 
@@ -387,7 +384,9 @@ Events by the numbers: 
 - 840,000 combined livestream views of FIL Brussels and FIL Bangkok, showcasing the most important announcements from the Filecoin ecosystem
 - 4 FIL City events hosted by Filecoin Foundation
 
-Filecoin events and meetups connect ecosystem contributors with new audiences and help chart the future of the network. Together, community members can learn, build, and be inspired. 
+Filecoin events and meetups connect ecosystem contributors with new audiences and help chart the future of the network. Together, community members can learn, build, and be inspired.
+
+![](/assets/images/2024-annual-report-events.webp)
 
 ### FIL City Events 
 
