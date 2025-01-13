@@ -8,7 +8,7 @@ description: In this report, you’ll read about the ways that Filecoin Foundati
   supported the Filecoin community in 2024 and learn about FF’s strategic
   priorities in 2025.
 image:
-  src: /assets/images/hero.webp
+  src: /assets/images/2024-annual-report-hero.webp
 seo:
   twitter:
     card: summary
@@ -346,7 +346,7 @@ Each week across its social media and marketing channels, Filecoin Foundation hi
 
 **78 Days:** From Starling Lab, “78 Days” is verified [documentation](https://x.com/FilFoundation/status/1844804758969716924) of the 2020 U.S. presidential transition using authentication technologies and decentralized web protocols.
 
-![](/assets/images/design.webp)
+![](/assets/images/2024-annual-report-design.webp)
 
 ## Design: Building Visual Tools and Resources to Benefit the Ecosystem
 
@@ -379,7 +379,7 @@ DWeb Decoded: FF’s design team produced over 50 episodes of the DWeb Decoded p
 
 Content Production: The design team livestreamed FF events and produced [over 100 videos](https://www.youtube.com/@filecoinfoundation), including highlights, interviews, and educational content, broadening the reach and influence of the Filecoin ecosystem’s activities. 
 
-![](/assets/images/events.webp)
+![](/assets/images/2024-annual-report-events.webp)
 
 ## Events: Gathering the Global Filecoin Community 
 
