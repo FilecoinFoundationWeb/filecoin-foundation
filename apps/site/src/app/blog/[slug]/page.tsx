@@ -36,7 +36,9 @@ export async function generateMetadata(props: BlogPostProps) {
 export default async function BlogPost(props: BlogPostProps) {
   const { slug } = await props.params
   const data = getBlogPostData(slug)
-  const { title, image, content, publishedOn, category } = data
+
+  const { title, image, content, publishedOn, category, addTableOfContents } =
+    data
 
   return (
     <PageLayout>
@@ -48,7 +50,11 @@ export default async function BlogPost(props: BlogPostProps) {
           publishedOn={publishedOn}
           category={category}
         />
-        {content && <MarkdownContent>{content}</MarkdownContent>}
+
+        <MarkdownContent addTableOfContents={addTableOfContents}>
+          {content}
+        </MarkdownContent>
+
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.BLOG.path}/${slug}`}

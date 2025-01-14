@@ -1,8 +1,11 @@
 import Image from 'next/image'
 
+import rehypeToc, { type HtmlElementNode } from '@jsdevtools/rehype-toc'
 import * as Sentry from '@sentry/node'
 import ReactMarkdown, { type Components } from 'react-markdown'
+import type { PluggableList } from 'react-markdown/lib'
 import rehypeRaw from 'rehype-raw'
+import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -11,8 +14,11 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
+import styles from '@/security/maturity-model/components/TableOfContents.module.scss'
+
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']
+  addTableOfContents?: boolean
 }
 
 const IMAGE_DIMENSIONS = {
@@ -66,10 +72,33 @@ const markdownComponents: Components = {
   a: MarkdownLink,
 }
 
-export function MarkdownContent({ children }: MarkdownContentProps) {
+export function MarkdownContent({
+  children,
+  addTableOfContents,
+}: MarkdownContentProps) {
+  const tableOfContentsRehypePlugins = [
+    rehypeSlug,
+    [
+      rehypeToc,
+      {
+        nav: true,
+        customizeTOC: addTableOfContentsHeader,
+        headings: ['h1', 'h2', 'h3'],
+        cssClasses: {
+          toc: 'border-l border-brand-300/30 pl-6 lg:pl-10',
+        },
+      },
+    ],
+  ] as const satisfies PluggableList
+
+  const rehypePlugins = [
+    rehypeRaw,
+    ...(addTableOfContents ? tableOfContentsRehypePlugins : []),
+  ]
+
   return (
     <ReactMarkdown
-      rehypePlugins={[rehypeRaw]}
+      rehypePlugins={rehypePlugins}
       remarkPlugins={[remarkGfm]}
       className="prose"
       components={markdownComponents}
@@ -77,4 +106,18 @@ export function MarkdownContent({ children }: MarkdownContentProps) {
       {children}
     </ReactMarkdown>
   )
+}
+
+function addTableOfContentsHeader(nodeTree: HtmlElementNode) {
+  const headerNode = {
+    type: 'element',
+    tagName: 'p',
+    properties: { className: styles.tableOfContentsHeader },
+    children: [{ type: 'text', value: 'Table of Contents' }],
+  }
+
+  return {
+    ...nodeTree,
+    children: [headerNode, ...Array.from(nodeTree.children || [])],
+  }
 }
