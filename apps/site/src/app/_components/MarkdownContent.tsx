@@ -98,8 +98,8 @@ export function MarkdownContent({
 
   return (
     <ReactMarkdown
-      remarkPlugins={[remarkGfm]}
       rehypePlugins={rehypePlugins}
+      remarkPlugins={[remarkGfm]}
       className="prose"
       components={markdownComponents}
     >
@@ -109,7 +109,7 @@ export function MarkdownContent({
 }
 
 function addTableOfContentsHeader(nodeTree: HtmlElementNode) {
-  const header = {
+  const headerNode = {
     type: 'element',
     tagName: 'p',
     properties: { className: styles.tableOfContentsHeader },
@@ -118,6 +118,6 @@ function addTableOfContentsHeader(nodeTree: HtmlElementNode) {
 
   return {
     ...nodeTree,
-    children: [header, ...Array.from(nodeTree.children || [])],
+    children: [headerNode, ...Array.from(nodeTree.children || [])],
   }
 }
