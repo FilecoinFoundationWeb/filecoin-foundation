@@ -5,7 +5,7 @@ import { createEnumSchema } from '@/utils/zodUtils'
 
 import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
-import { EventBaseFrontMatterSchema } from './EventBaseFontMatterSchema'
+import { EventBaseFrontmatterSchema } from './EventBaseFrontmatterSchema'
 import { LocationSchema } from './LocationSchema'
 import { ProgramSchema } from './ProgramSchema'
 import { RecapSchema } from './RecapSchema'
@@ -20,8 +20,8 @@ const { validIds: validCategoryIds } = getCMSFieldOptionsAndValidIds({
 
 const CategorySchema = createEnumSchema(validCategoryIds)
 
-export const EventFrontMatterSchema = DynamicBaseDataSchema.extend({
-  ...EventBaseFrontMatterSchema.shape,
+export const EventFrontmatterSchema = DynamicBaseDataSchema.extend({
+  ...EventBaseFrontmatterSchema.shape,
   category: CategorySchema,
   location: LocationSchema,
   'luma-calendar-link': z.string().url().optional(),

@@ -3,7 +3,7 @@ import { PATHS } from '@/constants/paths'
 import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
-import { EventFrontMatterSchema } from '../schemas/FrontMatterSchema'
+import { EventFrontmatterSchema } from '../schemas/EventFrontmatterSchema'
 
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
@@ -15,7 +15,7 @@ export function getEventData(slug: string) {
 export function getEventsData() {
   const allEvents = getAllMarkdownData({
     directoryPath: EVENTS_DIRECTORY_PATH,
-    zodParser: EventFrontMatterSchema.parse,
+    zodParser: EventFrontmatterSchema.parse,
   })
 
   return allEvents.map(transformEventData)
@@ -25,7 +25,7 @@ function getEventMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: EVENTS_DIRECTORY_PATH,
-    zodParser: EventFrontMatterSchema.parse,
+    zodParser: EventFrontmatterSchema.parse,
   })
 }
 

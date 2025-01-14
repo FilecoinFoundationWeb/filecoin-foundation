@@ -5,11 +5,8 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
 import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
-
-import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -18,17 +15,18 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogContent } from './components/BlogContent'
 import { blogSortConfigs } from './constants/sortConfigs'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
+import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({
+const { seo, featuredEntry: featuredPost } = getFrontmatter({
   path: PATHS.BLOG,
-  zodParser: FeaturedPageFrontmatterSchema.parse,
+  zodParser: FrontmatterSchema.parse,
 })
 
 export const metadata = createMetadata({
@@ -42,8 +40,6 @@ export const metadata = createMetadata({
 
 const posts = getBlogPostsData()
 const sortOptions = getSortOptions(blogSortConfigs)
-const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
-const featuredPost = getBlogPostData(featuredPostSlug)
 
 export default async function Blog(props: Props) {
   const searchParams = await props.searchParams

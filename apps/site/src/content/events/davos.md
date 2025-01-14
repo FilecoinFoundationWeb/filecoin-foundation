@@ -23,12 +23,25 @@ program:
       location: Davos, Switzerland
       description: "The Filecoin Penthouse is an exclusive lounge in the heart of
         Davos, designed for networking, casual meetings, and relaxing with
-        coffee while enjoying breathtaking views. A private meeting room
-        (seating up to 10 people) is available upon request. Located in WEF’s
-        Secure Zone, the venue requires a WEF Hotel Badge or other official WEF
-        event badge or credential for entry. Book a private meeting room:
-        events@fil.org"
+        coffee while enjoying breathtaking views. A private meeting room is
+        available upon request. Located in WEF’s Secure Zone, the venue requires
+        a WEF Hotel Badge or other official WEF event badge or credential for
+        entry. Book a private meeting room: events@fil.org"
       external-link: https://cvent.me/xbZ2w2
+    - title: "The Moon, Mars, and the Stars: Space Reception hosted by Filecoin
+        Foundation, Joe Landon, and Dylan Taylor"
+      location: Davos, Switzerland
+      description: Kick off another exciting year in space with leaders from the
+        industry. Co-hosted by Filecoin Foundation, Joe Landon, and Dylan
+        Taylor.
+      external-link: https://cvent.me/q54O0N
+      start-date: 2025-01-20T19:00:00.000Z
+    - title: Friends of Filecoin Foundation Reception
+      location: Davos, Switzerland
+      description: Join leaders and innovators from across the Filecoin ecosystem for
+        an evening reception in the heart of Davos.
+      external-link: https://cvent.me/Mm01XX
+      start-date: 2025-01-20T20:30:00.000Z
     - title: "With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
@@ -56,8 +69,10 @@ schedule:
         - title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
           location: Grandhotel Belvedere | Promenade 89, 7270 Davos, Switzerland
           tag: Registration Needed
-          start: 2025-01-20T12:00:00.000Z
+          start: 2025-01-20T15:50:00.000Z
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
+          description: What is Crypto Good For?
+          end: 2025-01-20T16:25:00.000Z
       date: 2025-01-20T10:00:00.000Z
     - date: 2025-01-21T09:00:00.000Z
       events:
@@ -65,9 +80,49 @@ schedule:
           title: Marta Belcher at Future House
           description: "Fixing the System: How Decentralization Can Upgrade the Internet"
           location: Hotel Europe | Promenade 63, 7270 Davos, Switzerland
-          start: 2025-01-21T17:00:00.000Z
+          start: 2025-01-21T17:30:00.000Z
           end: 2025-01-21T18:00:00.000Z
           url: https://futurehousedavos.io/
+        - tag: Registration Needed
+          title: Marta Belcher at Davos Decentralized AI Salon
+          description: Is AI the Killer Use Case For Decentralized Storage?
+          start: 2025-01-21T14:50:00.000Z
+          location: Promenade 89, 7270 Davos, Switzerland
+          moderators:
+            - name: Michael Casey
+              company: Decentralized AI Society
+          url: https://lu.ma/so88195w
+        - tag: Registration Needed
+          title: Porter Stowell at Web3 Investor Gathering
+          location: Hotel Seehof | Promenade 159, 7260 Davos, Switzerland
+          start: 2025-01-21T12:00:00.000Z
+        - tag: Registration Needed
+          title: Rachel Horn at Equality Lounge @ Davos
+          description: "From Innovators to Influencers: Women Scaling Blockchain and
+            Financial Inclusion"
+          url: "https://thefemalequotient.equalitylounge.com/davos25/ "
+          location: Promenade 40 7270 Davos Platz, Switzerland
+          start: 2025-01-21T11:30:00.000Z
+          end: 2025-01-21T12:00:00.000Z
+    - events:
+        - tag: Registration Needed
+          title: Porter Stowell at Digital Davos
+          description: "Decentralized Storage: Bridging Innovation and User Experience"
+          start: 2025-01-22T11:00:00.000Z
+          end: 2025-01-22T11:45:00.000Z
+          location: Davos, Switzerland
+        - tag: Registration Needed
+          title: Danny O’Brien at Digital Davos
+          description: "Community and Inclusion: Building the Next Web"
+          start: 2025-01-22T14:00:00.000Z
+          end: 2025-01-22T14:45:00.000Z
+          location: Davos, Switzerland
+        - tag: Registration Needed
+          title: Megan Klimen at Web3 Hub Davos
+          url: https://web3hubdavos.com/
+          start: 2025-01-22T16:30:00.000Z
+          location: Davos, Switzerland
+      date: 2025-01-22T12:00:00.000Z
   kicker: Don't miss out
 speakers:
   kicker: Connect with us
