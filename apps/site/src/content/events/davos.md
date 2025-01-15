@@ -66,13 +66,23 @@ schedule:
   title: Speaking Engagements
   days:
     - events:
-        - title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
-          location: Grandhotel Belvedere | Promenade 89, 7270 Davos, Switzerland
-          tag: Registration Needed
-          start: 2025-01-20T15:50:00.000Z
+        - start: 2025-01-20T15:50:00.000Z
+          moderators:
+            - name: Ronald Kogens
+              company: Legal Partner, MME
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
-          description: What is Crypto Good For?
+          speakers:
+            - name: Andrea Perlak
+              company: President, CAG Advisors
+            - name: Pat Thelen
+              company: VP of Strategic Partnerships, Ripple
+            - name: Marta Belcher
+              company: President & Chair, Filecoin Foundation
+          location: Grandhotel Belvedere | Promenade 89, 7270 Davos, Switzerland
+          title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
+          tag: Registration Needed
           end: 2025-01-20T16:25:00.000Z
+          description: What is Crypto Good For?
       date: 2025-01-20T10:00:00.000Z
     - date: 2025-01-21T09:00:00.000Z
       events:
