@@ -21,7 +21,8 @@ program:
       start-date: 2025-01-20T09:00:00.000Z
       end-date: 2025-01-23T17:30:00.000Z
       location: Davos, Switzerland
-      description: "The Filecoin Penthouse is an exclusive lounge in the heart of
+      description:
+        "The Filecoin Penthouse is an exclusive lounge in the heart of
         Davos, designed for networking, casual meetings, and relaxing with
         coffee while enjoying breathtaking views. A private meeting room is
         available upon request. Located in WEF’s Secure Zone, the venue requires
@@ -38,15 +39,18 @@ program:
       start-date: 2025-01-20T19:00:00.000Z
     - title: Friends of Filecoin Foundation Reception
       location: Davos, Switzerland
-      description: Join leaders and innovators from across the Filecoin ecosystem for
+      description:
+        Join leaders and innovators from across the Filecoin ecosystem for
         an evening reception in the heart of Davos.
       external-link: https://cvent.me/Mm01XX
       start-date: 2025-01-20T20:30:00.000Z
-    - title: "With Honor Action Reception. With Special Guests: Members of the U.S.
+    - title:
+        "With Honor Action Reception. With Special Guests: Members of the U.S.
         Congressional Delegation. Hosted by Filecoin Foundation, With Honor
         Action"
       start-date: 2025-01-22T20:30:00.000Z
-      description: With Honor Action, in partnership with Filecoin Foundation, is
+      description:
+        With Honor Action, in partnership with Filecoin Foundation, is
         hosting the 4th Annual Reception for the bipartisan U.S. Congressional
         Delegation to the World Economic Forum. This invitation-only event will
         occur on Wednesday night. Space is limited, and attendance is by prior
@@ -55,7 +59,8 @@ program:
     - title: Policy Reception. Hosted by Filecoin Foundation, Hedera, and GBBC.
       start-date: 2025-01-22T17:00:00.000Z
       location: Davos, Switzerland
-      description: The Policy Reception, hosted by Filecoin Foundation, Hedera, and
+      description:
+        The Policy Reception, hosted by Filecoin Foundation, Hedera, and
         GBBC, will bring together senior industry leaders and policymakers from
         around the globe for engaging conversations on the future of technology
         and governance.
@@ -67,7 +72,6 @@ schedule:
   days:
     - events:
         - start: 2025-01-20T15:50:00.000Z
-          moderators: []
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
           speakers:
             - name: Marta Belcher
@@ -88,7 +92,8 @@ schedule:
       events:
         - tag: Registration Needed
           title: Rachel Horn at Equality Lounge @ Davos
-          description: "From Innovators to Influencers: Women Scaling Blockchain and
+          description:
+            "From Innovators to Influencers: Women Scaling Blockchain and
             Financial Inclusion"
           url: "https://thefemalequotient.equalitylounge.com/davos25/ "
           location: Promenade 40 7270 Davos Platz, Switzerland
@@ -108,7 +113,6 @@ schedule:
           description: Is AI the Killer Use Case For Decentralized Storage?
           start: 2025-01-21T14:40:00.000Z
           location: Promenade 89, 7270 Davos, Switzerland
-          moderators: []
           url: https://lu.ma/so88195w
           speakers:
             - name: Marta Belcher
@@ -169,7 +173,8 @@ schedule:
           url: https://web3hubdavos.com/
           start: 2025-01-22T16:45:00.000Z
           location: Davos, Switzerland
-          description: "Emerging Macro Trends in DePIN: Disruptive Solutions to Global
+          description:
+            "Emerging Macro Trends in DePIN: Disruptive Solutions to Global
             Infrastructure Challenges"
           speakers:
             - name: Megan Klimen
@@ -188,7 +193,8 @@ schedule:
       events:
         - tag: Registration Needed
           title: Clara Tsao at Invest India Lounge
-          description: How Women Are Shaping Global Innovation in Tech, Sustainability,
+          description:
+            How Women Are Shaping Global Innovation in Tech, Sustainability,
             and Start-Ups
           start: 2025-01-24T12:00:00.000Z
           location: Promenade 67 and 73
@@ -196,7 +202,8 @@ schedule:
 speakers:
   kicker: Connect with us
   title: Meet the Team
-  description: Our experts are here to discuss Web3, decentralization, and policy
+  description:
+    Our experts are here to discuss Web3, decentralization, and policy
     innovation. Request a meeting at marketing@fil.org to explore opportunities.
   speakers_list:
     - name: Marta Belcher
