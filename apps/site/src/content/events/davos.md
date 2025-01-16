@@ -204,6 +204,11 @@ sponsors:
       website: https://hedera.com/
       image:
         src: /assets/images/hedera-white-logo-davos.webp
+  second-tier:
+    - name: FinSat
+      image:
+        src: /assets/images/finsat-white-logo-bg-transparent-web.webp
+      website: https://www.finsat.space/
 seo:
   twitter:
     card: summary
