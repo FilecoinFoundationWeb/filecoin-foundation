@@ -67,18 +67,18 @@ schedule:
   days:
     - events:
         - start: 2025-01-20T15:50:00.000Z
-          moderators:
-            - name: Ronald Kogens
-              company: Legal Partner, MME
+          moderators: []
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
           speakers:
-            - name: Andrea Perlak
-              company: President, CAG Advisors
-            - name: Pat Thelen
-              company: VP of Strategic Partnerships, Ripple
             - name: Marta Belcher
-              company: President & Chair, Filecoin Foundation
-          location: Grandhotel Belvedere | Promenade 89, 7270 Davos, Switzerland
+              company: FF
+            - name: Pat Thelen
+              company: Ripple
+            - name: Ronald Kogens
+              company: MME
+            - name: Andrea Perlak
+              company: CAG Advisors
+          location: Promenade 89, 7270 Davos, Switzerland
           title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
           tag: Registration Needed
           end: 2025-01-20T16:25:00.000Z
@@ -87,26 +87,6 @@ schedule:
     - date: 2025-01-21T09:00:00.000Z
       events:
         - tag: Registration Needed
-          title: Marta Belcher at Future House
-          description: "Fixing the System: How Decentralization Can Upgrade the Internet"
-          location: Hotel Europe | Promenade 63, 7270 Davos, Switzerland
-          start: 2025-01-21T17:30:00.000Z
-          end: 2025-01-21T18:00:00.000Z
-          url: https://futurehousedavos.io/
-        - tag: Registration Needed
-          title: Marta Belcher at Davos Decentralized AI Salon
-          description: Is AI the Killer Use Case For Decentralized Storage?
-          start: 2025-01-21T14:50:00.000Z
-          location: Promenade 89, 7270 Davos, Switzerland
-          moderators:
-            - name: Michael Casey
-              company: Decentralized AI Society
-          url: https://lu.ma/so88195w
-        - tag: Registration Needed
-          title: Porter Stowell at Web3 Investor Gathering
-          location: Hotel Seehof | Promenade 159, 7260 Davos, Switzerland
-          start: 2025-01-21T12:00:00.000Z
-        - tag: Registration Needed
           title: Rachel Horn at Equality Lounge @ Davos
           description: "From Innovators to Influencers: Women Scaling Blockchain and
             Financial Inclusion"
@@ -114,6 +94,63 @@ schedule:
           location: Promenade 40 7270 Davos Platz, Switzerland
           start: 2025-01-21T11:30:00.000Z
           end: 2025-01-21T12:00:00.000Z
+          speakers:
+            - name: Rachel Horn
+              company: FF
+            - name: Sheila Warren
+              company: Project Liberty
+            - name: Rachel Conlan
+              company: Binance
+            - name: Dr. Talaya Waller
+              company: Valuables
+        - tag: Registration Needed
+          title: Marta Belcher at Davos Decentralized AI Salon
+          description: Is AI the Killer Use Case For Decentralized Storage?
+          start: 2025-01-21T14:40:00.000Z
+          location: Promenade 89, 7270 Davos, Switzerland
+          moderators: []
+          url: https://lu.ma/so88195w
+          speakers:
+            - name: Marta Belcher
+              company: FF
+            - name: Michael Casey
+              company: Decentralized AI Society
+        - tag: Registration Needed
+          title: Clara Tsao at EmTech Invest 2025
+          description: The Future of Blockchain in the Quantum Era
+          speakers:
+            - name: Clara Tsao
+              company: FF
+            - name: Aaron Stanley
+              company: Forbes
+          start: 2025-01-21T14:50:00.000Z
+          end: 2025-01-21T15:20:00.000Z
+          location: Promenade 89, 7270 Davos, Switzerland
+          url: https://emtech2024.com/
+        - tag: Registration Needed
+          title: Marta Belcher at Future House
+          description: "Fixing the System: How Decentralization Can Upgrade the Internet"
+          location: Hotel Europe, 63 Promenade, Davos, GR 7270
+          start: 2025-01-21T17:30:00.000Z
+          end: 2025-01-21T18:00:00.000Z
+          url: https://futurehousedavos.io/
+        - tag: Registration Needed
+          title: Porter Stowell at Web3 Investor Gathering
+          location: Hotel Seehof
+          start: 2025-01-21T12:00:00.000Z
+          description: "Foundations of the Future: Blockchain Infrastructure for
+            Enterprise Adoption"
+          speakers:
+            - name: Porter Stowell
+              company: FF
+            - name: Nitin Gaur
+              company: LedgerLink
+            - name: Philipp Vonmoos
+              company: Solana
+            - name: Gordon Liao
+              company: Circle
+            - name: Annelise Osborne
+              company: Kadena
     - events:
         - tag: Registration Needed
           title: Porter Stowell at Digital Davos
@@ -130,9 +167,31 @@ schedule:
         - tag: Registration Needed
           title: Megan Klimen at Web3 Hub Davos
           url: https://web3hubdavos.com/
-          start: 2025-01-22T16:30:00.000Z
+          start: 2025-01-22T16:45:00.000Z
           location: Davos, Switzerland
+          description: "Emerging Macro Trends in DePIN: Disruptive Solutions to Global
+            Infrastructure Challenges"
+          speakers:
+            - name: Megan Klimen
+              company: FF
+            - name: Dr. Wolfgang Vitale
+              company: Bitcoin Suisse
+            - name: Alessandro De Carli
+              company: Acurast Association
+            - name: Mathieu Chanson
+              company: very early Ventures
+            - name: Daniel Ammann
+              company: Onocoy Association
+          end: 2025-01-22T17:15:00.000Z
       date: 2025-01-22T12:00:00.000Z
+    - date: 2025-01-24T12:00:00.000Z
+      events:
+        - tag: Registration Needed
+          title: Clara Tsao at Invest India Lounge
+          description: How Women Are Shaping Global Innovation in Tech, Sustainability,
+            and Start-Ups
+          start: 2025-01-24T12:00:00.000Z
+          location: Promenade 67 and 73
   kicker: Don't miss out
 speakers:
   kicker: Connect with us
