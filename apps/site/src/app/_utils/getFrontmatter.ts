@@ -23,6 +23,7 @@ export function getFrontmatter<T extends Object>({
   path,
   zodParser,
 }: GetFrontmatterOptions<T>) {
+  console.log('getFrontmatter')
   const filePath = path.mainContentPath + MARKDOWN_EXTENSION
 
   try {

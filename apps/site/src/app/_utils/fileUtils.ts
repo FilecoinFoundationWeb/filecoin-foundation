@@ -16,6 +16,7 @@ export function getFilePath(directoryPath: string, slug: string): string {
 }
 
 export function getFilenamesFromDirectory(directory: string): Array<string> {
+  console.log('getMarkdownData')
   return fs.readdirSync(directory)
 }
 
