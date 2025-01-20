@@ -13,9 +13,12 @@ import { SiteLayout } from '@/components/SiteLayout'
 
 type GlobalErrorProps = {
   error: Error
+  reset: () => void
 }
 
 export default function GlobalError({ error }: GlobalErrorProps) {
+  console.log('GlobalError', error)
+
   useEffect(() => {
     Sentry.captureException(error)
   }, [error])
