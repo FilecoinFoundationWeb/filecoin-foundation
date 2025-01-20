@@ -23,3 +23,9 @@ To start the development server, run `npm run dev`, which is an alias for `turbo
 ## Building
 
 To build the monorepo, run `npm run build`. This command will build all applications and packages in the monorepo. Then, `npm run start` will run the development server using the built files.
+
+### Remote caching
+
+We use Turborepo’s remote caching feature to speed up local development. This lets everyone share and access the same build cache on Vercel.
+
+To opt in, run `npx turbo login` to authenticate with Vercel and `turbo link` to link your local repo to the Vercel cache. The next time you run `turbo dev` or `turbo build`, you should see `Remote caching enabled` in the logs.
