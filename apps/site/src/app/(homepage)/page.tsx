@@ -13,6 +13,7 @@ import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
+import { ErrorTester } from '@/components/ErrorTester'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -47,6 +48,8 @@ export default function Home() {
   return (
     <NoBreadCrumbsLayout>
       <PageLayout>
+        <ErrorTester />
+
         <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
         <PageHeader
           title={header.title}
