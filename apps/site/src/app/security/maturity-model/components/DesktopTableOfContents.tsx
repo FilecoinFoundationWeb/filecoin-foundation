@@ -8,12 +8,14 @@ import { coreFunctionsData } from '../data/coreFunctionsData'
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 
+import styles from './TableOfContents.module.scss'
+
 export function DesktopTableOfContents() {
   const { isSectionActive, getHashFromSlug } = useUrlHash()
 
   return (
     <nav aria-label="Table of Contents">
-      <p className="mb-4 ml-6 text-sm font-semibold uppercase text-brand-200 lg:mb-6">
+      <p className={clsx(styles.tableOfContentsHeader, 'mb-4 ml-6 lg:mb-6')}>
         Table of Contents
       </p>
 

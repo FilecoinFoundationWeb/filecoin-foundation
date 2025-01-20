@@ -1,5 +1,5 @@
 ---
-title: "Filecoin Foundation 2024 Annual Report"
+title: Filecoin Foundation 2024 Annual Report
 created-on: 2025-01-13T19:09:00.000Z
 updated-on: 2025-01-13T19:09:00.000Z
 published-on: 2025-01-13T19:09:00.000Z
@@ -7,6 +7,7 @@ category: reports
 description: In this report, you’ll read about the ways that Filecoin Foundation
   supported the Filecoin community in 2024 and learn about FF’s strategic
   priorities in 2025.
+add-table-of-contents: true
 image:
   src: /assets/images/2024-annual-report-hero.webp
 seo:
@@ -18,13 +19,13 @@ seo:
     priorities in 2025.
 ---
 
-## Introduction 
+## Introduction
 
 As the Filecoin community looks toward 2025, Filecoin Foundation (FF) hopes to rally the Filecoin ecosystem around [FF’s top-level ecosystem-facing objective](/blog/filecoin-foundation-s-vision-and-strategic-priorities-for-2025): mobilizing the Filecoin community to make Filecoin work seamlessly and to find product-market fit. But first, we want to look back at 2024 and celebrate the achievements of Filecoin Foundation and the broader ecosystem, from network upgrades and infrastructure improvements to data onboarding partnerships, governance initiatives, and more. 
 
 We’re proud to share our progress and grateful to continue supporting the Filecoin ecosystem throughout 2025.
 
-## What is Filecoin Foundation? 
+## What is Filecoin Foundation?
 
 Filecoin Foundation’s mission is to preserve humanity’s most important information by facilitating the open source governance of the Filecoin network, funding research and development projects related to Filecoin and decentralized technologies, and supporting the growth of the Filecoin ecosystem and community. 
 
@@ -54,7 +55,7 @@ Retroactive Public Goods Funding (RetroPGF) is a program that serves as an upgra
 
 Filecoin Foundation funds projects in the Filecoin ecosystem through a variety of mechanisms, including ecosystem collaborations, partnerships, contracts, and small- and large-scale grants. FF also provides funding for dozens of global hackathons, offers financial support to teams building protocol tooling, and pays bug bounties to secure the network. In addition, FF offers open grant funding to support new projects entering the ecosystem. 
 
-### FF Funding Highlights 
+### FF Funding Highlights
 
 Filecoin Foundation committed funding and continued to support the projects listed below in Fiscal Year 2024, which runs from October 2023 to September 2024. This is not an exhaustive list of projects funded by FF in FY24. 
 
@@ -171,7 +172,7 @@ Solana: A collaboration driven by Triton One and DCENT, and supported by FF, [ar
 
 ![](/assets/images/building-bridges-with-l1-ecosystems-1.webp)
 
-### Client Wins and New Use Cases 
+### Client Wins and New Use Cases
 
 2024 marked a year of significant adoption for Filecoin across diverse sectors, demonstrating the network's versatility in handling critical data storage needs for both established institutions and emerging platforms.
 
@@ -207,7 +208,7 @@ In 2024, FF announced 8 collaborations with prominent AI organizations, undersco
 
 ![](/assets/images/connecting-ai-companies-to-filecoin-1.webp)
 
-### Advanced Ecosystem Tooling 
+### Advanced Ecosystem Tooling
 
 Filecoin Foundation’s network growth team worked with many ecosystem projects to support go-to-market strategy and targeted testing programs to grow tools and platforms. These efforts resulted in substantial increases in data storage commitments, user adoption, and platform engagement. In addition, FF financially supported the following teams: 
 
@@ -227,7 +228,7 @@ Filecoin Foundation’s network growth team worked with many ecosystem projects 
 
 [VenusHub](https://venushub.io/): VenusHub achieved substantial scale in the ecosystem, growing to support over 80 nodes and managing 40 PiBs of network data. FF supported VenusHub with funding for continued growth of their community’s data storage initiatives.  
 
-## Governance: Facilitating Open Source Decision-making 
+## Governance: Facilitating Open Source Decision-making
 
 Governance by the numbers: 
 
@@ -241,7 +242,7 @@ In collaboration with the Lotus, Venus, and Forest implementation teams, FF enac
 
 In September, the FF Governance team launched [GovHub](https://www.fil.org/governance/govhub) to make participating in the governance of the Filecoin network more accessible. GovHub hosts PowerVote, an onchain voting tool that is still in development, and Fil Poll, an off-chain non-binding polling tool for gathering opinions on early ideas and community proposals. New governance tools tailored for the Filecoin protocol facilitated meaningful community discussions, enabled votes on critical proposals, and kept members informed about the latest network developments.
 
-## Filecoin Plus: Scaling Network Utilization 
+## Filecoin Plus: Scaling Network Utilization
 
 Fil+ by the numbers: 
 
@@ -261,7 +262,7 @@ FF’s request for new allocator pathways helps the Filecoin community develop a
 
 The Fil+ governance process now includes a full account of the DataCap distributed from allocators to clients, including how organizations request and receive an audit of DataCap distribution. 
 
-## Security: Safeguarding the Filecoin Network 
+## Security: Safeguarding the Filecoin Network
 
 Security by the numbers:
 
@@ -278,7 +279,7 @@ FF’s security team works to protect the Filecoin network. In 2024, the team st
 
 A key milestone was the launch of the [Web3 Security Maturity Model](/security/maturity-model), developed by the FF security team, which helps organizations assess and improve their security as they build decentralized technologies.
 
-## UXIT: Improving the User Experience and Accessibility Across the Filecoin Ecosystem 
+## UXIT: Improving the User Experience and Accessibility Across the Filecoin Ecosystem
 
 User Experience Improvement Team (UXIT) by the numbers: 
 
@@ -364,7 +365,7 @@ Content Production Toolkits: FF delivered comprehensive guides and templates for
 
 [Swag Store Expansion](https://swag.fil.org/): The design team expanded FF and Filecoin ecosystem merchandise offerings, making branded materials available at cost to contributors and community events worldwide. 
 
-### Enhancing Ecosystem Resources 
+### Enhancing Ecosystem Resources
 
 FF’s design team has been integral in elevating the visual and experiential quality of ecosystem content. 
 
@@ -376,7 +377,7 @@ DWeb Decoded: FF’s design team produced over 50 episodes of the DWeb Decoded p
 
 Content Production: The design team livestreamed FF events and produced [over 100 videos](https://www.youtube.com/@filecoinfoundation), including highlights, interviews, and educational content, broadening the reach and influence of the Filecoin ecosystem’s activities. 
 
-## Events: Gathering the Global Filecoin Community 
+## Events: Gathering the Global Filecoin Community
 
 Events by the numbers: 
 
@@ -388,7 +389,7 @@ Filecoin events and meetups connect ecosystem contributors with new audiences an
 
 ![](/assets/images/2024-annual-report-events.webp)
 
-### FIL City Events 
+### FIL City Events
 
 [FIL Hong Kong ](/events/fil-hong-kong-hosted-by-ndlabs)
 
@@ -408,7 +409,7 @@ Ecosystem teams unveiled new L2 data storage solutions, signaling a new era of w
 
 #### More Events Organized and Supported by FF
 
-##### FIL Dev Summit 5 - Bangkok, Thailand 
+##### FIL Dev Summit 5 - Bangkok, Thailand
 
 [FIL Dev Summit](https://www.fildev.io/FDS-5) convened 200 developers, builders, storage providers, and community members to shape the future of Filecoin. Spanning 14 tracks, FDS focused on designing protocol improvements, showcasing tools, and solving key challenges. 
 
@@ -424,7 +425,7 @@ This high-impact, high-touch event brought together 70 leaders in Web3, AI, and 
 
 Filecoin Foundation sponsored more than a dozen events in 2024 to build brand awareness and engage new audiences. Some events included ETH Denver, Consensus, EthCC, DWeb Camp, and Funding the Commons. 
 
-#### Filecoin Orbit Community Program 
+#### Filecoin Orbit Community Program
 
 Filecoin Orbit is a global community of 79 Orbit Ambassadors that organizes events and meetups to increase awareness and adoption of Filecoin. The program brings communities together to share ideas and collaborate. In 2024, Orbit Ambassadors hosted 136 orbit events in 21 countries, from Argentina and Kenya to Poland and India. 
 
@@ -512,45 +513,28 @@ Objective: Make Filecoin work seamlessly and find product market fit
 
 FF is looking forward to supporting the community in 2025, and we have designed FF’s budget to support these objectives, key results, and strategic priorities. Here is a look into FF’s planned budget for its 2025 fiscal year (subject to change):
 
-| Category                                                            |        USD |       FIL |
-| :------------------------------------------------------------------ | ---------: | --------: |
-| Ecosystem Grants - General & Support                                | $4,837,869 | 1,331,814 |
-| _Strategic priorities 1, 2, 3, 4, and 6_                            |            |           |
-| Ecosystem Grants - Network Metrics                                  | $1,380,000 |   156,000 |
-| _Strategic priorities 1 and 2_                                      |            |           |
-| Ecosystem Grants - FVM-Related                                      |   $354,020 |         0 |
-| _Strategic priorities 1 and 2_                                      |            |           |
-| Data Onboarding, Storage Provider, and Enterprise Programs & Grants | $3,279,842 |   131,412 |
-| _Strategic priorities 1, 2, 3, 4, 5, and 6_                         |            |           |
-| Token Holder-Related Grants and Research                            |   $563,700 |         0 |
-| _Strategic priorities 1 and 2_                                      |            |           |
-| Use Case Grants and Support                                         |   $709,453 |    88,836 |
-| _Strategic priorities 3 and 4_                                      |            |           |
-| Solutions Architecture                                              |   $419,655 |    31,100 |
-| _Strategic priorities 1, 2, and 3_                                  |            |           |
-| Developer Relations                                                 |   $615,641 |    42,307 |
-| _Strategic priorities 1 and 2_                                      |            |           |
-| User Experience Improvement                                         |   $831,000 |         0 |
-| _Strategic priorities 1 and 2_                                      |            |           |
-| Protocol Implementation Grants                                      | $2,821,000 |         0 |
-| _Strategic priorities 1 and 2_                                      |            |           |
-| Network Security (Including Bug Bounties and Network Audits)        | $2,206,955 |   119,988 |
-| _Strategic priorities 1, 2, 7, and 8_                               |            |           |
-| Network Governance                                                  |   $927,608 |    46,596 |
-| _Strategic priorities 1, 7, and 8_                                  |            |           |
-| Filecoin Plus Grants and Support                                    | $1,354,763 |    63,648 |
-| _Strategic priorities 3 and 7_                                      |            |           |
-| Network Infrastructure Grants                                       | $1,484,000 |         0 |
-| _Strategic priorities 1, 2, 3, 5, and 6_                            |            |           |
-| Network Tooling Grants                                              |   $960,000 |         0 |
-| _Strategic priorities 1, 2, 3, and 5_                               |            |           |
-| Events, Comms, Marketing, and Design                                | $7,799,258 |   373,096 |
-| _Strategic priorities 7 and 8_                                      |            |           |
-| Regulatory and Policy                                               | $1,656,712 |    36,374 |
-| _Strategic priority 8_                                              |            |           |
-| Enablement (Legal, Finance, HR, IT, etc.)                           | $3,757,148 |   545,813 |
-| Other Operating Expenses (Insurance, Taxes, etc.)                   | $4,609,723 |    71,579 |
-| Cross-Functional Personnel                                          |   $762,087 |   409,995 |
+| Category                                                                                                           |        USD |       FIL |
+| :----------------------------------------------------------------------------------------------------------------- | ---------: | --------: |
+| Ecosystem Grants - General & Support<br>_Strategic priorities 1, 2, 3, 4, and 6_                                   | $4,837,869 | 1,331,814 |
+| Ecosystem Grants - Network Metrics<br>_Strategic priorities 1 and 2_                                               | $1,380,000 |   156,000 |
+| Ecosystem Grants - FVM-Related<br>_Strategic priorities 1 and 2_                                                   |   $354,020 |         0 |
+| Data Onboarding, Storage Provider, and Enterprise Programs & Grants<br>_Strategic priorities 1, 2, 3, 4, 5, and 6_ | $3,279,842 |   131,412 |
+| Token Holder-Related Grants and Research<br>_Strategic priorities 1 and 2_                                         |   $563,700 |         0 |
+| Use Case Grants and Support<br>_Strategic priorities 3 and 4_                                                      |   $709,453 |    88,836 |
+| Solutions Architecture<br>_Strategic priorities 1, 2, and 3_                                                       |   $419,655 |    31,100 |
+| Developer Relations<br>_Strategic priorities 1 and 2_                                                              |   $615,641 |    42,307 |
+| User Experience Improvement<br>_Strategic priorities 1 and 2_                                                      |   $831,000 |         0 |
+| Protocol Implementation Grants<br>_Strategic priorities 1 and 2_                                                   | $2,821,000 |         0 |
+| Network Security (Including Bug Bounties and Network Audits)<br>_Strategic priorities 1, 2, 7, and 8_              | $2,206,955 |   119,988 |
+| Network Governance<br>_Strategic priorities 1, 7, and 8_                                                           |   $927,608 |    46,596 |
+| Filecoin Plus Grants and Support<br>_Strategic priorities 3 and 7_                                                 | $1,354,763 |    63,648 |
+| Network Infrastructure Grants<br>_Strategic priorities 1, 2, 3, 5, and 6_                                          | $1,484,000 |         0 |
+| Network Tooling Grants<br>_Strategic priorities 1, 2, 3, and 5_                                                    |   $960,000 |         0 |
+| Events, Comms, Marketing, and Design<br>_Strategic priorities 7 and 8_                                             | $7,799,258 |   373,096 |
+| Regulatory and Policy<br>_Strategic priority 8_                                                                    | $1,656,712 |    36,374 |
+| Enablement (Legal, Finance, HR, IT, etc.)                                                                          | $3,757,148 |   545,813 |
+| Other Operating Expenses (Insurance, Taxes, etc.)                                                                  | $4,609,723 |    71,579 |
+| Cross-Functional Personnel                                                                                         |   $762,087 |   409,995 |
 
 ### Learn More About Filecoin Foundation
 

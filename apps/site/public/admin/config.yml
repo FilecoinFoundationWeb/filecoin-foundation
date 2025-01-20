@@ -439,6 +439,11 @@ collections:
         label: "Description"
         widget: "text"
       - *image_config
+      - name: "add-table-of-contents"
+        label: "Add a table of contents to this post?"
+        widget: "boolean"
+        required: false
+        hint: "The table of contents will include headings from h1 (#) to h3 (###). It will appear above the post content and below the header image, if present."
       - *body_config
       - *meta_config_with_title_fallback
 

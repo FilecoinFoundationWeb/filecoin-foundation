@@ -55,7 +55,7 @@ export default function EventsContent({ searchParams }: EventsContentProps) {
     searchParams,
     entries: searchResults,
     configs: eventsSortConfigs,
-    defaultsTo: 'all-events',
+    defaultsTo: 'upcoming-events',
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({

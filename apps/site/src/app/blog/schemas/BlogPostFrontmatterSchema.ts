@@ -17,4 +17,5 @@ export const BlogPostFrontmatterSchema = DynamicBaseDataSchema.extend({
   category: CategorySchema,
   description: z.string(),
   content: z.string(),
+  'add-table-of-contents': z.boolean().optional(),
 }).strict()
