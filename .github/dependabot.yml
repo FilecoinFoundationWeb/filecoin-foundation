@@ -8,12 +8,13 @@ updates:
       - "/"
       - "/apps/site"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       dependencies:
         patterns:
           - "*"
     versioning-strategy: auto
+    prefix: "config-v2"
 
   - package-ecosystem: "github-actions"
     directory: "/"
