@@ -7,27 +7,43 @@ import {
   DEFAULT_PAGE_NUMBER,
 } from '@/constants/paginationConstants'
 
-type PaginationQuery = string | undefined
+type PageQuery = string | undefined
 
 type UsePaginationProps<Entry extends Object> = {
-  paginationQuery: PaginationQuery
+  pageQuery: PageQuery
   entries: Array<Entry>
   entriesPerPage?: number
 }
 
-function validatePageNumber(
-  paginationQuery: PaginationQuery,
-  pageCount: number,
-): number {
-  if (!paginationQuery) {
+export function usePagination<Entry extends Object>({
+  pageQuery,
+  entries,
+  entriesPerPage = DEFAULT_ENTRIES_PER_PAGE,
+}: UsePaginationProps<Entry>) {
+  const pageCount = Math.ceil(entries.length / entriesPerPage)
+  const pageNumber = validatePageNumber(pageQuery, pageCount)
+
+  const paginatedResults = useMemo(() => {
+    const firstPostIndex = (pageNumber - 1) * entriesPerPage
+    const lastPostIndex = pageNumber * entriesPerPage
+
+    return entries.slice(firstPostIndex, lastPostIndex)
+  }, [pageNumber, entriesPerPage, entries])
+
+  return { currentPage: pageNumber, pageCount, paginatedResults }
+}
+
+function validatePageNumber(pageQuery: PageQuery, pageCount: number) {
+  if (!pageQuery) {
     return DEFAULT_PAGE_NUMBER
   }
 
-  const pageQueryNumber = Number(paginationQuery)
-  const isValidNumber = Number.isInteger(pageQueryNumber) && pageQueryNumber > 0
+  const pageQueryNumber = Number(pageQuery)
+  const isValidPageNumber =
+    Number.isInteger(pageQueryNumber) && pageQueryNumber > 0
   const isWithinRange = pageQueryNumber <= pageCount
 
-  if (!isValidNumber) {
+  if (!isValidPageNumber) {
     return DEFAULT_PAGE_NUMBER
   }
 
@@ -36,25 +52,4 @@ function validatePageNumber(
   }
 
   return pageQueryNumber
-}
-
-export function usePagination<Entry extends Object>({
-  paginationQuery,
-  entries,
-  entriesPerPage = DEFAULT_ENTRIES_PER_PAGE,
-}: UsePaginationProps<Entry>) {
-  const pageCount = Math.ceil(entries.length / entriesPerPage)
-
-  const validatedPageNumber = validatePageNumber(paginationQuery, pageCount)
-
-  const currentPage = validatedPageNumber
-
-  const paginatedResults = useMemo(() => {
-    const firstPostIndex = (currentPage - 1) * entriesPerPage
-    const lastPostIndex = currentPage * entriesPerPage
-
-    return entries.slice(firstPostIndex, lastPostIndex)
-  }, [currentPage, entriesPerPage, entries])
-
-  return { currentPage: validatedPageNumber, pageCount, paginatedResults }
 }

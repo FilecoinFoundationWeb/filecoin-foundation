@@ -70,7 +70,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    paginationQuery: normalizeQueryParam(searchParams, PAGE_KEY),
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: searchResults,
     entriesPerPage: 8,
   })

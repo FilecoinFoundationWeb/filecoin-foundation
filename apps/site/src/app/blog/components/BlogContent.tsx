@@ -64,7 +64,7 @@ export function BlogContent({
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    paginationQuery: normalizeQueryParam(searchParams, PAGE_KEY),
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 
