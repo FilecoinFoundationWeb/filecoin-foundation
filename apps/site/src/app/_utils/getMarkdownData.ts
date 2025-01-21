@@ -31,7 +31,7 @@ export function getMarkdownData<T>({
   zodParser,
 }: GetData<T>) {
   try {
-    console.log('getMarkdownData')
+    console.log('getMarkdownData', directoryPath, slug)
     const filePath = getFilePath(directoryPath, slug)
 
     if (!fs.existsSync(filePath)) {

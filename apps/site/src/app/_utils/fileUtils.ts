@@ -16,7 +16,7 @@ export function getFilePath(directoryPath: string, slug: string): string {
 }
 
 export function getFilenamesFromDirectory(directory: string): Array<string> {
-  console.log('getMarkdownData')
+  console.log('getFilenamesFromDirectory', directory)
   return fs.readdirSync(directory)
 }
 
@@ -37,5 +37,6 @@ export function parseMarkdown(fileContents: string): {
 }
 
 export function readFileContents(filePath: string): string {
+  console.log('readFileContents', filePath)
   return fs.readFileSync(filePath, 'utf8')
 }

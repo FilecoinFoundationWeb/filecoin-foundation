@@ -7,7 +7,7 @@ import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
 export function getBlogPostData(slug: string) {
-  console.log('getBlogPostData')
+  console.log('getBlogPostData', slug)
   const data = getBlogPostMarkdownData(slug)
   return transformBlogPostData(data)
 }
@@ -23,7 +23,7 @@ export function getBlogPostsData() {
 }
 
 function getBlogPostMarkdownData(slug: string) {
-  console.log('getBlogPostMarkdownData')
+  console.log('getBlogPostMarkdownData', slug)
   return getMarkdownData({
     slug,
     directoryPath: BLOG_DIRECTORY_PATH,
