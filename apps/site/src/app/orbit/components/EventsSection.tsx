@@ -3,9 +3,11 @@ import { ZodError } from 'zod'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
+import { PAGE_KEY } from '@/constants/searchParams'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { formatDate } from '@/utils/dateUtils'
+import { normalizeQueryParam } from '@/utils/queryUtils'
 import { logZodError } from '@/utils/zodUtils'
 
 import { usePagination } from '@/hooks/usePagination'
@@ -68,7 +70,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    paginationQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: searchResults,
     entriesPerPage: 8,
   })

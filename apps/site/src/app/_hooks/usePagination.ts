@@ -1,31 +1,29 @@
 import { useMemo } from 'react'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
 import type { Object } from '@/types/utils'
 
 import {
   DEFAULT_ENTRIES_PER_PAGE,
   DEFAULT_PAGE_NUMBER,
 } from '@/constants/paginationConstants'
-import { PAGE_KEY } from '@/constants/searchParams'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
+type PaginationQuery = string | undefined
 
 type UsePaginationProps<Entry extends Object> = {
-  searchParams: NextServerSearchParams
+  paginationQuery: PaginationQuery
   entries: Array<Entry>
   entriesPerPage?: number
 }
 
 function validatePageNumber(
-  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
+  paginationQuery: PaginationQuery,
   pageCount: number,
 ): number {
-  if (!normalizedQuery) {
+  if (!paginationQuery) {
     return DEFAULT_PAGE_NUMBER
   }
 
-  const pageQueryNumber = Number(normalizedQuery)
+  const pageQueryNumber = Number(paginationQuery)
   const isValidNumber = Number.isInteger(pageQueryNumber) && pageQueryNumber > 0
   const isWithinRange = pageQueryNumber <= pageCount
 
@@ -41,14 +39,13 @@ function validatePageNumber(
 }
 
 export function usePagination<Entry extends Object>({
-  searchParams,
+  paginationQuery,
   entries,
   entriesPerPage = DEFAULT_ENTRIES_PER_PAGE,
 }: UsePaginationProps<Entry>) {
   const pageCount = Math.ceil(entries.length / entriesPerPage)
 
-  const normalizedQuery = normalizeQueryParam(searchParams, PAGE_KEY)
-  const validatedPageNumber = validatePageNumber(normalizedQuery, pageCount)
+  const validatedPageNumber = validatePageNumber(paginationQuery, pageCount)
 
   const currentPage = validatedPageNumber
 

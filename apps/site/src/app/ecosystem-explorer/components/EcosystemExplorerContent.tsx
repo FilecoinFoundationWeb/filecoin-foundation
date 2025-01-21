@@ -3,7 +3,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import { CATEGORY_KEY, PAGE_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -11,6 +11,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
 import { getSortOptions } from '@/utils/getSortOptions'
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { usePagination } from '@/hooks/usePagination'
@@ -70,7 +71,7 @@ export function EcosystemExplorerContent({
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    paginationQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 
