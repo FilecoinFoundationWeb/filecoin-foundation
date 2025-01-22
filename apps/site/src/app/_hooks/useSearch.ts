@@ -10,28 +10,6 @@ type UseSearchProps<Entry extends Object> = {
   searchBy: keyof Entry | Array<keyof Entry>
 }
 
-function normalizeString(str: string) {
-  return slugify(str, {
-    strict: true,
-    trim: true,
-    lower: true,
-  })
-}
-
-function matchesQuery<Entry extends Object>(
-  value: Entry[keyof Entry],
-  query: string,
-): boolean {
-  if (typeof value !== 'string' && typeof value !== 'number') {
-    return false
-  }
-
-  const normalizedValue = normalizeString(String(value))
-  const normalizedQuery = normalizeString(query)
-
-  return normalizedValue.includes(normalizedQuery)
-}
-
 export function useSearch<Entry extends Object>({
   searchQuery,
   entries,
@@ -50,4 +28,26 @@ export function useSearch<Entry extends Object>({
   }, [entries, searchQuery, searchBy])
 
   return { searchQuery, searchResults }
+}
+
+function matchesQuery<Entry extends Object>(
+  value: Entry[keyof Entry],
+  query: string,
+) {
+  if (typeof value !== 'string' && typeof value !== 'number') {
+    return false
+  }
+
+  const normalizedValue = normalizeString(String(value))
+  const normalizedQuery = normalizeString(query)
+
+  return normalizedValue.includes(normalizedQuery)
+}
+
+function normalizeString(str: string) {
+  return slugify(str, {
+    strict: true,
+    trim: true,
+    lower: true,
+  })
 }
