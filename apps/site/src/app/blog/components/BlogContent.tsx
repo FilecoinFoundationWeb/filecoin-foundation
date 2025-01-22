@@ -4,7 +4,7 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import { CATEGORY_KEY, PAGE_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -64,7 +64,7 @@ export function BlogContent({
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 
