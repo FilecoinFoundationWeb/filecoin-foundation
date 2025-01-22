@@ -3,7 +3,7 @@ import { ZodError } from 'zod'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
-import { PAGE_KEY } from '@/constants/searchParams'
+import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { formatDate } from '@/utils/dateUtils'
@@ -64,7 +64,7 @@ type OrbitEventsProps = {
 
 function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,
     searchBy: ['title', 'city'],
   })

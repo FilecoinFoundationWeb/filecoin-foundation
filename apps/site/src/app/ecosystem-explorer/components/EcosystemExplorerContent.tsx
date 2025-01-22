@@ -3,7 +3,7 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY, PAGE_KEY } from '@/constants/searchParams'
+import { CATEGORY_KEY, PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -47,7 +47,7 @@ export function EcosystemExplorerContent({
   searchParams,
 }: EcosystemExplorerContentProps) {
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: ecosystemProjects,
     searchBy: ['title', 'description'],
   })
