@@ -3,7 +3,12 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY, PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -53,7 +58,7 @@ export function EcosystemExplorerContent({
   })
 
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: ecosystemProjectsSortConfigs,
     defaultsTo: 'a-z',

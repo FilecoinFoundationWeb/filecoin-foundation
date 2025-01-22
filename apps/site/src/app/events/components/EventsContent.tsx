@@ -8,6 +8,7 @@ import {
   LOCATION_KEY,
   PAGE_KEY,
   SEARCH_KEY,
+  SORT_KEY,
 } from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -57,7 +58,7 @@ export default function EventsContent({ searchParams }: EventsContentProps) {
   })
 
   const { sortedResults } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: eventsSortConfigs,
     defaultsTo: 'upcoming-events',
