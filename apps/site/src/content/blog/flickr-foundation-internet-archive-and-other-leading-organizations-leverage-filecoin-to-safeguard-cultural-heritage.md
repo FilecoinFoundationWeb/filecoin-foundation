@@ -37,4 +37,4 @@ These organizations are working with [Filecoin Foundation for the Decentralized 
 
 “Our mission is to preserve humanity’s most important information,” said Marta Belcher, President and Chair of Filecoin Foundation and FFDW. “We are thrilled to collaborate with these institutions to ensure that culturally significant datasets are permanently preserved using robust decentralized storage systems.” 
 
-Filecoin Foundation remains committed to its mission of preserving humanity’s most important information. These new datasets highlight the transformative potential of decentralized technologies in preserving and accessing critical information, addressing the growing importance of data integrity, provenance, and longevity in today's digital age.[](mailto:jordan@fil.org)
+Filecoin Foundation remains committed to its mission of preserving humanity’s most important information. These new datasets highlight the transformative potential of decentralized technologies in preserving and accessing critical information, addressing the growing importance of data integrity, provenance, and longevity in today's digital age.
