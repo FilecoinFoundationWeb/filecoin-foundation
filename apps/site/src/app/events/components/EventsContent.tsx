@@ -61,7 +61,7 @@ export default function EventsContent({ searchParams }: EventsContentProps) {
     sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: eventsSortConfigs,
-    defaultsTo: 'upcoming-events',
+    defaultQuery: 'upcoming-events',
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
