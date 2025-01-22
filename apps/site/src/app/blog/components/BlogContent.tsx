@@ -4,7 +4,12 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY, PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -51,10 +56,9 @@ export function BlogContent({
   })
 
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: blogSortConfigs,
-    defaultsTo: 'newest',
   })
 
   const { filteredEntries } = useFilter({
