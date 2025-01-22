@@ -59,7 +59,6 @@ export function BlogContent({
     sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: blogSortConfigs,
-    defaultQuery: 'newest',
   })
 
   const { filteredEntries } = useFilter({

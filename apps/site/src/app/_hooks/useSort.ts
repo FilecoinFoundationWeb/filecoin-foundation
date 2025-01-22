@@ -10,16 +10,18 @@ type UseSortProps<
   sortQuery: string | undefined
   entries: Array<Entry>
   configs: Configs
-  defaultQuery: Configs[number]['key']
+  defaultConfig?: Configs[number]
 }
 
 export function useSort<
   Entry extends Object,
   Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
->({ sortQuery, entries, configs, defaultQuery }: UseSortProps<Entry, Configs>) {
-  const defaultConfig =
-    configs.find((config) => config.key === defaultQuery) || configs[0]
-
+>({
+  sortQuery,
+  entries,
+  configs,
+  defaultConfig = configs[0],
+}: UseSortProps<Entry, Configs>) {
   const validSortKey = useMemo(() => {
     const validSortKeys = configs.map((config) => config.key)
     const sortKey = validSortKeys.find((key) => key === sortQuery)

@@ -61,7 +61,6 @@ export function EcosystemExplorerContent({
     sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: ecosystemProjectsSortConfigs,
-    defaultQuery: 'a-z',
   })
 
   const { filteredEntries } = useFilter({
