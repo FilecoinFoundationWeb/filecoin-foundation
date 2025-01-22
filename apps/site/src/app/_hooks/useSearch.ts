@@ -2,15 +2,10 @@ import { useMemo } from 'react'
 
 import slugify from 'slugify'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
 import type { Object } from '@/types/utils'
 
-import { SEARCH_KEY } from '@/constants/searchParams'
-
-import { normalizeQueryParam } from '@/utils/queryUtils'
-
 type UseSearchProps<Entry extends Object> = {
-  searchParams: NextServerSearchParams
+  searchQuery: string | undefined
   entries: Array<Entry>
   searchBy: keyof Entry | Array<keyof Entry>
 }
@@ -38,25 +33,21 @@ function matchesQuery<Entry extends Object>(
 }
 
 export function useSearch<Entry extends Object>({
-  searchParams,
+  searchQuery,
   entries,
   searchBy,
 }: UseSearchProps<Entry>) {
-  const normalizedQuery = normalizeQueryParam(searchParams, SEARCH_KEY)
-
   const searchResults = useMemo(() => {
-    if (!normalizedQuery) {
+    if (!searchQuery) {
       return entries
     }
 
     const searchByKeys = Array.isArray(searchBy) ? searchBy : [searchBy]
 
     return entries.filter((entry) => {
-      return searchByKeys.some((key) =>
-        matchesQuery(entry[key], normalizedQuery),
-      )
+      return searchByKeys.some((key) => matchesQuery(entry[key], searchQuery))
     })
-  }, [entries, normalizedQuery, searchBy])
+  }, [entries, searchQuery, searchBy])
 
-  return { searchQuery: normalizedQuery, searchResults }
+  return { searchQuery, searchResults }
 }
