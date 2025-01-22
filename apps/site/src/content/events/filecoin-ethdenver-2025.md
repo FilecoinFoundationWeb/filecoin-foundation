@@ -43,6 +43,13 @@ program:
         connect with industry-leading ecosystems, explore innovative funding
         mechanisms, and scale your impact like never before."
       start-date: 2025-02-27T10:00:00.000Z
+    - title: Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
+        Foundation
+      location: Denver, CO
+      description: An expert moderator will guide the knowledge-sharing event,
+        stimulating discussion between participants in a closed, confidential
+        environment. Attendance is complimentary and by invitation only.
+      start-date: 2025-02-25T12:00:00.000Z
 seo:
   twitter:
     card: summary
