@@ -14,8 +14,6 @@ updates:
         patterns:
           - "*"
     versioning-strategy: auto
-    commit-message:
-      prefix: "config-v2" # increment this number when we change the config
 
   - package-ecosystem: "github-actions"
     directory: "/"
