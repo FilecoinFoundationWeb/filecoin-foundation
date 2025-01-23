@@ -2,7 +2,7 @@
 header:
   title: Events
   description: Filecoin Foundation Events
-featured_entry: src/content/events/davos.md
+featured_entry: apps/site/src/content/events/filecoin-ethdenver-2025.md
 seo:
   title: Filecoin Foundation Events – Connect & Collaborate
   description: Explore upcoming Filecoin Foundation, Web3, and community events.
