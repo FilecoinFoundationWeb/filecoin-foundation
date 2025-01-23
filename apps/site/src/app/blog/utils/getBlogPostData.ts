@@ -2,9 +2,9 @@ import { PATHS } from '@/constants/paths'
 
 import { getMarkdownData } from '@/utils/getMarkdownData'
 
-import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
-
 import { getAllMarkdownDataAsync } from '@/actions/getAllMarkdownDataAsync'
+
+import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
