@@ -25,6 +25,8 @@ type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
+const sortOptions = getSortOptions(blogSortConfigs)
+
 export async function generateMetadata() {
   const { seo } = await getFrontmatterAsync({
     path: PATHS.BLOG,
@@ -75,7 +77,7 @@ export default async function Blog(props: Props) {
         <BlogContent
           searchParams={searchParams}
           posts={posts}
-          sortOptions={getSortOptions(blogSortConfigs)}
+          sortOptions={sortOptions}
         />
       </PageSection>
     </PageLayout>
