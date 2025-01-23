@@ -41,8 +41,9 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-export default function Home() {
-  const { featuredBlogPosts, hasFeaturedBlogPosts } = getFeaturedBlogPosts()
+export default async function Home() {
+  const featuredBlogPosts = await getFeaturedBlogPosts()
+  const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
 
   return (
     <NoBreadCrumbsLayout>

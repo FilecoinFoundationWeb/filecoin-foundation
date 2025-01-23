@@ -5,7 +5,6 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { PageHeader } from '@/components/PageHeader'
@@ -20,29 +19,33 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
+import { getFrontmatterAsync } from '@/actions/getFrontmatterAsync'
+
 type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { seo, featuredEntry: featuredPost } = getFrontmatter({
-  path: PATHS.BLOG,
-  zodParser: FrontmatterSchema.parse,
-})
+export async function generateMetadata() {
+  const { seo } = await getFrontmatterAsync({
+    path: PATHS.BLOG,
+    zodSchema: FrontmatterSchema,
+  })
 
-export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.blog.data.src,
-  },
-  path: PATHS.BLOG.path,
-  overrideDefaultTitle: true,
-})
-
-const posts = getBlogPostsData()
-const sortOptions = getSortOptions(blogSortConfigs)
+  return createMetadata({
+    seo,
+    path: PATHS.BLOG.path,
+    overrideDefaultTitle: true,
+  })
+}
 
 export default async function Blog(props: Props) {
   const searchParams = await props.searchParams
+  const posts = await getBlogPostsData()
+
+  const { seo, featuredEntry: featuredPost } = await getFrontmatterAsync({
+    path: PATHS.BLOG,
+    zodSchema: FrontmatterSchema,
+  })
 
   return (
     <PageLayout>
@@ -72,7 +75,7 @@ export default async function Blog(props: Props) {
         <BlogContent
           searchParams={searchParams}
           posts={posts}
-          sortOptions={sortOptions}
+          sortOptions={getSortOptions(blogSortConfigs)}
         />
       </PageSection>
     </PageLayout>
