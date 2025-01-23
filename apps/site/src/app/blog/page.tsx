@@ -7,6 +7,8 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getSortOptions } from '@/utils/getSortOptions'
 
+import { getFrontmatterAsync } from '@/actions/getFrontmatterAsync'
+
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
@@ -18,8 +20,6 @@ import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
-
-import { getFrontmatterAsync } from '@/actions/getFrontmatterAsync'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams

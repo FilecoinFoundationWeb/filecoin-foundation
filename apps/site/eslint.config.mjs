@@ -121,7 +121,7 @@ const eslintConfig = [
             },
             {
               pattern: '@/actions/**',
-              group: 'index',
+              group: 'internal',
               position: 'before',
             },
             {
