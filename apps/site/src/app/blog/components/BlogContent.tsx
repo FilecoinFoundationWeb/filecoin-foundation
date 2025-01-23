@@ -4,7 +4,12 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -45,16 +50,15 @@ export function BlogContent({
   sortOptions,
 }: BlogContentProps) {
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: posts,
     searchBy: ['title', 'description'],
   })
 
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: blogSortConfigs,
-    defaultsTo: 'newest',
   })
 
   const { filteredEntries } = useFilter({
@@ -64,7 +68,7 @@ export function BlogContent({
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 

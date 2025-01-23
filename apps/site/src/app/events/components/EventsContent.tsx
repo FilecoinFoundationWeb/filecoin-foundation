@@ -3,7 +3,13 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  LOCATION_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -46,16 +52,15 @@ const locationOptions = getLocationListboxOptions()
 
 export default function EventsContent({ searchParams }: EventsContentProps) {
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,
     searchBy: ['title', 'location'],
   })
 
   const { sortedResults } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: eventsSortConfigs,
-    defaultsTo: 'upcoming-events',
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
@@ -78,7 +83,7 @@ export default function EventsContent({ searchParams }: EventsContentProps) {
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 

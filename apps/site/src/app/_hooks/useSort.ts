@@ -1,42 +1,33 @@
 import { useMemo } from 'react'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
 import type { SortConfig } from '@/types/sortTypes'
 import type { NonEmptyReadonlyArray, Object } from '@/types/utils'
-
-import { SORT_KEY } from '@/constants/searchParams'
-
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 type UseSortProps<
   Entry extends Object,
   Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
 > = {
-  searchParams: NextServerSearchParams
+  sortQuery: string | undefined
   entries: Array<Entry>
   configs: Configs
-  defaultsTo: Configs[number]['key']
+  defaultConfig?: Configs[number]
 }
 
 export function useSort<
   Entry extends Object,
   Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
 >({
-  searchParams,
+  sortQuery,
   entries,
   configs,
-  defaultsTo,
+  defaultConfig = configs[0],
 }: UseSortProps<Entry, Configs>) {
-  const queryParamValue = normalizeQueryParam(searchParams, SORT_KEY)
-  const defaultConfig =
-    configs.find((config) => config.key === defaultsTo) || configs[0]
-
   const validSortKey = useMemo(() => {
     const validSortKeys = configs.map((config) => config.key)
-    const sortKey = validSortKeys.find((key) => key === queryParamValue)
+    const sortKey = validSortKeys.find((key) => key === sortQuery)
 
     return sortKey || defaultConfig.key
-  }, [configs, defaultConfig.key, queryParamValue])
+  }, [configs, defaultConfig.key, sortQuery])
 
   const sortedResults = useMemo(() => {
     const config = configs.find((config) => config.key === validSortKey)
