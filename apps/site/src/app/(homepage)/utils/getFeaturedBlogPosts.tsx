@@ -3,13 +3,8 @@ import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const MAX_FEATURED_POSTS = 4
 
-export function getFeaturedBlogPosts() {
-  const blogPosts = getBlogPostsData()
+export async function getFeaturedBlogPosts() {
+  const blogPosts = await getBlogPostsData()
   const sortedBlogPosts = sortPostsByDateDesc(blogPosts)
-  const featuredBlogPosts = sortedBlogPosts.slice(0, MAX_FEATURED_POSTS)
-
-  return {
-    featuredBlogPosts,
-    hasFeaturedBlogPosts: featuredBlogPosts.length > 0,
-  }
+  return sortedBlogPosts.slice(0, MAX_FEATURED_POSTS)
 }

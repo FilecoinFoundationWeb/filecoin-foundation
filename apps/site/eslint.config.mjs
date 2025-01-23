@@ -120,6 +120,11 @@ const eslintConfig = [
               position: 'before',
             },
             {
+              pattern: '@/actions/**',
+              group: 'internal',
+              position: 'before',
+            },
+            {
               pattern: '@/services/**',
               group: 'internal',
               position: 'before',

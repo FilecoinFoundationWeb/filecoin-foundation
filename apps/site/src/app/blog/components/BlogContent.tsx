@@ -35,12 +35,12 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 
 import { blogSortConfigs } from '../constants/sortConfigs'
-import { getBlogPostsData } from '../utils/getBlogPostData'
+import type { BlogPost } from '../types/blogPostType'
 import { getMetaData } from '../utils/getMetaData'
 
 type BlogContentProps = {
   searchParams: NextServerSearchParams
-  posts: ReturnType<typeof getBlogPostsData>
+  posts: Array<BlogPost>
   sortOptions: ReturnType<typeof getSortOptions>
 }
 

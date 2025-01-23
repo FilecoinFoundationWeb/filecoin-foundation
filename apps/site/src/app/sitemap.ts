@@ -26,13 +26,13 @@ function generateDynamicRoutes<T extends GenericEntryData>(
   })
 }
 
-export default function sitemap() {
+export default async function sitemap() {
   const staticRoutes = Object.values(PATHS).map((path) => ({
     url: `${BASE_URL}${path.path}`,
     lastModified: new Date(),
   }))
 
-  const blogPosts = getBlogPostsData()
+  const blogPosts = await getBlogPostsData()
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
   const digestArticles = getDigestArticlesData()
