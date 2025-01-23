@@ -8,7 +8,7 @@ updates:
       - "/"
       - "/apps/site"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     groups:
       dependencies:
         patterns:
