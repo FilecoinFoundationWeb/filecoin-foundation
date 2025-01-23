@@ -32,7 +32,8 @@
       "@/schemas/*": ["./src/app/_schemas/*"],
       "@/utils/*": ["./src/app/_utils/*"],
       "@/assets/*": ["./public/assets/*"],
-      "@/support/*": ["./cypress/support/*"]
+      "@/support/*": ["./cypress/support/*"],
+      "@/actions/*": ["./src/app/_actions/*"]
     }
   },
   "include": [
