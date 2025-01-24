@@ -44,6 +44,7 @@ interface CMSConfig {
   hasSubpaths?: boolean
 }
 
+export const WORKSPACE_ROOT = 'apps/site'
 export const CONTENT_ROOT = 'src/content'
 const CONTENT_PAGES_ROOT = `${CONTENT_ROOT}/pages`
 export const MARKDOWN_EXTENSION = '.md'
