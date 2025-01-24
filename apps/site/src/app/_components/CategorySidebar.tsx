@@ -89,7 +89,7 @@ CategorySidebar.Button = function Button({
   return (
     <button
       className={clsx(
-        'text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
+        'w-full text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
         isSelected
           ? 'bg-brand-700 text-brand-400'
           : 'bg-transparent text-brand-300',
