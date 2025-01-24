@@ -11,7 +11,7 @@ category: ai-productivity-utilities
 tech:
   - filecoin
   - ipfs
-description: Modular network for generating and managing autonomous AI agents fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS, SNS, Glitter, etc.
+description: "Modular network for generating and managing autonomous AI agents fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS, SNS, Glitter, etc."
 website: https://aiws.eth.limo
 year-joined: 2024-01-01T00:00:00.000Z
 repo: https://github.com/tedl-1990/AIWS
@@ -19,7 +19,7 @@ repo: https://github.com/tedl-1990/AIWS
 twitter: https://x.com/AIWS_WORLD
 seo:
   title: AIWS
-  description: Modular network for generating and managing autonomous AI agents fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS, SNS, Glitter, etc.
+  description: "Modular network for generating and managing autonomous AI agents fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS, SNS, Glitter, etc."
 ---
 
 All AI agents' metadata and prompt are stored on Filecoin, all data of AI agents are stored on Filecoin.
