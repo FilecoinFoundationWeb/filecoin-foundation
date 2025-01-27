@@ -1,13 +1,10 @@
 'use server'
 
 import convertObjectKeysToCamelCase from 'camelcase-keys'
+import matter from 'gray-matter'
 import { ZodError, ZodObject, type ZodRawShape } from 'zod'
 
-import {
-  getFilePath,
-  handleFileNotFound,
-  parseMarkdown,
-} from '@/utils/fileUtils'
+import { getFilePath, handleFileNotFound } from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
 
 import { readFileContents, checkPathExists } from '@/actions/fs'
@@ -33,7 +30,7 @@ export async function getMarkdownDataAsync<T extends ZodRawShape>({
     }
 
     const fileContents = await readFileContents(filePath)
-    const { data, content } = parseMarkdown(fileContents)
+    const { data, content } = matter(fileContents)
 
     const dataToValidate = content ? { ...data, content } : data
 

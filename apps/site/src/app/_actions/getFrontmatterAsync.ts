@@ -1,11 +1,12 @@
 'use server'
 
 import convertObjectKeysToCamelCase from 'camelcase-keys'
+import matter from 'gray-matter'
 import { ZodError, ZodObject, type ZodRawShape } from 'zod'
 
 import { MARKDOWN_EXTENSION, type PathConfig } from '@/constants/paths'
 
-import { handleFileNotFound, parseMarkdown } from '@/utils/fileUtils'
+import { handleFileNotFound } from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
 
 import { checkPathExists, readFileContents } from '@/actions/fs'
@@ -29,7 +30,7 @@ export async function getFrontmatterAsync<T extends ZodRawShape>({
     }
 
     const fileContents = await readFileContents(filePath)
-    const { data: frontmatter } = parseMarkdown(fileContents)
+    const { data: frontmatter } = matter(fileContents)
 
     const validatedData = await zodSchema.parseAsync(frontmatter)
     return convertObjectKeysToCamelCase(validatedData, { deep: true })
