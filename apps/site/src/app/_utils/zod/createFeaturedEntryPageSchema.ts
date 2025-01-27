@@ -14,3 +14,17 @@ export function createFeaturedEntryPageSchema<T>(getData: DataGetter<T>) {
     }),
   })
 }
+
+type DataGetterAsync<T> = (slug: string) => Promise<T>
+
+// Temporary duplicate of createFeaturedEntryPageSchema until migration to async functions is complete
+export function createFeaturedEntryPageSchemaAsync<T>(
+  getData: DataGetterAsync<T>,
+) {
+  return BaseFrontmatterSchema.extend({
+    featured_entry: z.string().transform(async (path) => {
+      const slug = extractSlugFromFilename(path)
+      return await getData(slug)
+    }),
+  })
+}

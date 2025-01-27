@@ -1,5 +1,6 @@
-import { createFeaturedEntryPageSchema } from '@/utils/zod/createFeaturedEntryPageSchema'
+import { createFeaturedEntryPageSchemaAsync } from '@/utils/zod/createFeaturedEntryPageSchema'
 
 import { getBlogPostData } from '../utils/getBlogPostData'
 
-export const FrontmatterSchema = createFeaturedEntryPageSchema(getBlogPostData)
+export const FrontmatterSchema =
+  createFeaturedEntryPageSchemaAsync(getBlogPostData)
