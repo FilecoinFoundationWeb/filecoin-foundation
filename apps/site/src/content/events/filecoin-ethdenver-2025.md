@@ -50,6 +50,9 @@ program:
         stimulating discussion between participants in a closed, confidential
         environment. Attendance is complimentary and by invitation only.
       start-date: 2025-02-25T12:00:00.000Z
+    - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
+      start-date: 2025-02-26T14:30:00.000Z
+      location: "Denver, CO "
 seo:
   twitter:
     card: summary
