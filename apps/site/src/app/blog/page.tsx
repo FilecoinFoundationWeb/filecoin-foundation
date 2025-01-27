@@ -1,28 +1,19 @@
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
-
 import { PATHS } from '@/constants/paths'
+
+import { PageHeader } from '@/components/PageHeader'
+import { PageLayout } from '@/components/PageLayout'
+import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-import { getSortOptions } from '@/utils/getSortOptions'
 
-import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
-import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
-
-import { BlogContent } from './components/BlogContent'
-import { blogSortConfigs } from './constants/sortConfigs'
-import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostsData } from './utils/getBlogPostData'
+import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { getMetaData } from './utils/getMetaData'
-
-type Props = {
-  searchParams: AsyncNextServerSearchParams
-}
+import { getBlogPostsData } from './utils/getBlogPostData'
+import { BlogSection } from './components/BlogSection'
 
 const { seo, featuredEntry: featuredPost } = getFrontmatter({
   path: PATHS.BLOG,
@@ -39,11 +30,8 @@ export const metadata = createMetadata({
 })
 
 const posts = getBlogPostsData()
-const sortOptions = getSortOptions(blogSortConfigs)
 
-export default async function Blog(props: Props) {
-  const searchParams = await props.searchParams
-
+export default async function Blog() {
   return (
     <PageLayout>
       <StructuredDataScript
@@ -64,17 +52,9 @@ export default async function Blog(props: Props) {
           text: 'Read Featured Post',
         }}
       />
-      <PageSection
-        kicker="Blog"
-        title="Filecoin Ecosystem Updates"
-        description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
-      >
-        <BlogContent
-          searchParams={searchParams}
-          posts={posts}
-          sortOptions={sortOptions}
-        />
-      </PageSection>
+      <BlogSection posts={posts} />
     </PageLayout>
   )
 }
+
+export const dynamic = 'force-static'
