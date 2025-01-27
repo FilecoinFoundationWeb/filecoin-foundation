@@ -18,7 +18,10 @@ program:
   events:
     - title: Code N Corgi. Hosted by FIL Builders, Supported by Filecoin Foundation
       location: Denver, CO
-      start-date: 2025-02-25T17:00:00.000Z
+      start-date: 2025-02-28T17:00:00.000Z
+      external-link: https://lu.ma/gd767xu5
+      description: ​A community gathering for Filecoin builders and friends! Come for
+        Filecoin corgis, stay for Filecoin friends.
     - title: L2 and Service Operator Colo. Hosted by Filecoin Foundation & FILOz
       location: Denver, CO
       description: Filecoin Foundation & FILOz are bringing together key ecosystem
