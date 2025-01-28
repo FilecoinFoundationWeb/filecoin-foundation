@@ -23,6 +23,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/claratsao/
       image:
         src: /assets/images/clara-tsao-davos.webp
+    - name: Qing Warthen
+      title: APAC Community Manager
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/qingwarthen/
+      image:
+        src: /assets/images/qing-warthen.jpg
 seo:
   twitter:
     card: summary
