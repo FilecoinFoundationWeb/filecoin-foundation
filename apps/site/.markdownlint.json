@@ -7,6 +7,9 @@
   "MD033": false,
   "MD034": false,
   "MD041": false,
+  "MD036": false,
+  "MD045": false,
+  "MD009": false,
   "MD046": {
     "style": "fenced"
   },
@@ -18,9 +21,5 @@
   },
   "MD029": {
     "style": "ordered"
-  },
-  "MD009": {
-    "br_spaces": 2,
-    "list_item_empty_lines": true
   }
 }
