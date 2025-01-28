@@ -73,7 +73,7 @@ Filecoin Foundation committed funding and continued to support the projects list
 
 [Decentralized Storage Alliance (DSA)](https://dsalliance.io/): A professional organization including global leaders from AMD, EY, Seagate, Supranational, Protocol Labs, and FF, DSA’s mission is to imagine a better path to decentralized data storage for enterprise organizations. 
 
-[Democracy’s Library](https://archive.org/details/democracys-library): An Internet Archive initiative, Democracy’s Library, creates a [free, open collection ](/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network)of government data so that government research and publications from around the world remain permanently accessible to the public.
+[Democracy’s Library](https://archive.org/details/democracys-library): An Internet Archive initiative, Democracy’s Library, creates a [free, open collection](/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network)of government data so that government research and publications from around the world remain permanently accessible to the public.
 
 [DMRV of Natural Capital](https://github.com/filecoin-project/devgrants/issues/1062): This project will develop a new method for valuing ecosystems based on the services they provide and the value of their natural capital stock, leveraging Filecoin for data storage. 
 
@@ -182,7 +182,7 @@ Solana: A collaboration driven by Triton One and DCENT, and supported by FF, [ar
 
 [Hippocrat](/ecosystem-explorer/hippocrat): A blockchain-based healthcare project in South Korea that aims to improve health management methods and promote data-driven healthcare is [storing](https://www.youtube.com/watch?v=1x8lvm87Ldo) verifiable healthcare data on Filecoin. FF catalyzed this opportunity and collaboration to showcase the potential for healthcare data on Filecoin. 
 
-Holon: Holon is bringing key [real estate use cases ](https://www.zawya.com/en/press-release/companies-news/holon-formalize-partnerships-with-arclive-and-magma-wzllagmc)for decentralized storage to market, including European REIT applications, while also expanding into the UAE. FF has supported Holon’s partnerships with the Web3 & AI Festival, Magma, and Arclive to help bring commercial real estate use cases to market.
+Holon: Holon is bringing key [real estate use cases](https://www.zawya.com/en/press-release/companies-news/holon-formalize-partnerships-with-arclive-and-magma-wzllagmc)for decentralized storage to market, including European REIT applications, while also expanding into the UAE. FF has supported Holon’s partnerships with the Web3 & AI Festival, Magma, and Arclive to help bring commercial real estate use cases to market.
 
 Intutzi: A location data-based data intelligence tool, Intutzi, [selected Filecoin](https://destor.com/resources/news/decentralized-storage-marketplace-launch-intuizi-partnership) over traditional public cloud options to take greater control of its data. FF collaborated with Destor and Akave to amplify the win and to pursue a strategic roadmap to build more advanced integrations for Web2 clients.   
 
@@ -332,7 +332,7 @@ Each week across its social media and marketing channels, Filecoin Foundation hi
 
 **Mom, I See War:** The world's largest art collection of [children's drawings](https://x.com/FilFoundation/status/1847367452981940561) documenting their first-hand experiences of armed conflict is uploaded to Filecoin via Starling Lab. 
 
-**SETI Institute:** To preserve any potential extraterrestrial signals, the SETI Institute [stores data ](https://x.com/FilFoundation/status/1841919082808938582)with Filecoin.
+**SETI Institute:** To preserve any potential extraterrestrial signals, the SETI Institute [stores data](https://x.com/FilFoundation/status/1841919082808938582)with Filecoin.
 
 **The DJ and the War Crimes:** An [interactive media project](https://x.com/FilFoundation/status/1857180902000153055) by Rolling Stone investigating a 1990s Bosnian War case, featuring hundreds of authenticated assets, has been preserved by Starling Lab using cryptographic technologies, including IPFS and Filecoin.
 
@@ -391,7 +391,7 @@ Filecoin events and meetups connect ecosystem contributors with new audiences an
 
 ### FIL City Events
 
-[FIL Hong Kong ](/events/fil-hong-kong-hosted-by-ndlabs)
+[FIL Hong Kong](/events/fil-hong-kong-hosted-by-ndlabs)
 
 More than 600 developers, storage providers, clients, and ecosystem partners came together for two days of talks focused on Web3 trends, decentralized storage, DePIN, and more.
 
