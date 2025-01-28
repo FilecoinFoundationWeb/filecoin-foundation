@@ -17,8 +17,6 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
-export const dynamic = 'force-static'
-
 export async function generateMetadata() {
   const { seo } = await getFrontmatterAsync({
     path: PATHS.BLOG,
