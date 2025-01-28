@@ -1,6 +1,8 @@
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+'use client'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
+import { useSearchParams } from 'next/navigation'
+
+import { BookOpen } from '@phosphor-icons/react'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
@@ -39,16 +41,14 @@ import type { BlogPost } from '../types/blogPostType'
 import { getMetaData } from '../utils/getMetaData'
 
 type BlogContentProps = {
-  searchParams: NextServerSearchParams
   posts: Array<BlogPost>
-  sortOptions: ReturnType<typeof getSortOptions>
 }
 
-export function BlogContent({
-  searchParams,
-  posts,
-  sortOptions,
-}: BlogContentProps) {
+export function BlogContent({ posts }: BlogContentProps) {
+  const sortOptions = getSortOptions(blogSortConfigs)
+  const clientSearchParams = useSearchParams()
+  const searchParams = Object.fromEntries(clientSearchParams.entries())
+
   const { searchQuery, searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: posts,
