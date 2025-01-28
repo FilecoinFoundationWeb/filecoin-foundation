@@ -1,20 +1,19 @@
 {
   "default": true,
   "MD001": true,
+  "MD009": false,
   "MD013": false,
   "MD024": {
     "siblings_only": true
   },
   "MD025": true,
-  "MD033": false,
-  "MD034": false,
-  "MD041": false,
-  "MD036": false,
-  "MD045": false,
-  "MD046": false,
-  "MD009": false,
   "MD029": {
     "style": "ordered"
   },
-  "front_matter_title": ""
+  "MD033": false,
+  "MD034": false,
+  "MD036": false,
+  "MD041": false,
+  "MD045": false,
+  "MD046": false
 }
