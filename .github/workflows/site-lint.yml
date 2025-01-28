@@ -36,3 +36,9 @@ jobs:
 
       - name: Run linter
         run: npm run lint
+
+      - name: Run markdownlint
+        uses: davidanson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"
+          config: .markdownlint.json
