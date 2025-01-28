@@ -9,8 +9,6 @@ import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 
 import { SiteLayout } from '@/components/SiteLayout'
 
-export const revalidate = 86400
-
 export const metadata: Metadata = {
   title: {
     template: `%s | ${ORGANIZATION_NAME}`,

@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -16,8 +18,6 @@ import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
-
-export const dynamic = 'force-static'
 
 export async function generateMetadata() {
   const { seo } = await getFrontmatterAsync({
@@ -65,7 +65,9 @@ export default async function Blog() {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogContent posts={posts} />
+        <Suspense>
+          <BlogContent posts={posts} />
+        </Suspense>
       </PageSection>
     </PageLayout>
   )
