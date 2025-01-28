@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -63,7 +65,9 @@ export default async function Blog() {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogContent posts={posts} />
+        <Suspense>
+          <BlogContent posts={posts} />
+        </Suspense>
       </PageSection>
     </PageLayout>
   )
