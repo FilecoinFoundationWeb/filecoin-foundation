@@ -40,5 +40,7 @@ jobs:
       - name: Run markdownlint
         uses: davidanson/markdownlint-cli2-action@v19
         with:
-          globs: "**/*.md"
+          globs: |
+            **/*.md
+            !**/node_modules/**/*.md
           config: "apps/site/.markdownlint.json"
