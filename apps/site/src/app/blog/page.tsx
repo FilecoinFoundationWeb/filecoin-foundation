@@ -1,11 +1,8 @@
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
-
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getSortOptions } from '@/utils/getSortOptions'
 
 import { getFrontmatterAsync } from '@/actions/getFrontmatterAsync'
 
@@ -15,17 +12,12 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogContent } from './components/BlogContent'
-import { blogSortConfigs } from './constants/sortConfigs'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
-type Props = {
-  searchParams: AsyncNextServerSearchParams
-}
-
-const sortOptions = getSortOptions(blogSortConfigs)
+export const dynamic = 'force-static'
 
 export async function generateMetadata() {
   const { seo } = await getFrontmatterAsync({
@@ -40,8 +32,7 @@ export async function generateMetadata() {
   })
 }
 
-export default async function Blog(props: Props) {
-  const searchParams = await props.searchParams
+export default async function Blog() {
   const posts = await getBlogPostsData()
 
   const { seo, featuredEntry: featuredPost } = await getFrontmatterAsync({
@@ -74,11 +65,7 @@ export default async function Blog(props: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogContent
-          searchParams={searchParams}
-          posts={posts}
-          sortOptions={sortOptions}
-        />
+        <BlogContent posts={posts} />
       </PageSection>
     </PageLayout>
   )
