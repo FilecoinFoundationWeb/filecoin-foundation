@@ -23,6 +23,7 @@ import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
@@ -43,6 +44,7 @@ export const metadata = createMetadata({
 
 export default async function Events(props: Props) {
   const searchParams = await props.searchParams
+  const events = await getEventsData()
 
   return (
     <PageLayout>
@@ -67,7 +69,7 @@ export default async function Events(props: Props) {
         }}
       />
       <PageSection kicker="Events" title="Network Events">
-        <EventsContent searchParams={searchParams} />
+        <EventsContent searchParams={searchParams} events={events} />
       </PageSection>
 
       <PageSection

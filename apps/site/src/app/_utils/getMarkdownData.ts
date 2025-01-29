@@ -1,12 +1,9 @@
 import fs from 'fs'
-import path from 'path'
 
 import convertObjectKeysToCamelCase from 'camelcase-keys'
 import { ZodError, type ZodType } from 'zod'
 
 import {
-  extractSlugFromFilename,
-  getFilenamesFromDirectory,
   getFilePath,
   handleFileNotFound,
   parseMarkdown,
@@ -16,11 +13,6 @@ import { logZodError } from '@/utils/zodUtils'
 
 type GetData<T> = {
   slug: string
-  directoryPath: string
-  zodParser: ZodType<T>['parse']
-}
-
-type GetAllData<T> = {
   directoryPath: string
   zodParser: ZodType<T>['parse']
 }
@@ -54,24 +46,6 @@ export function getMarkdownData<T>({
       })
     }
 
-    throw error
-  }
-}
-
-export function getAllMarkdownData<T>({
-  directoryPath,
-  zodParser,
-}: GetAllData<T>) {
-  try {
-    const directory = path.join(process.cwd(), directoryPath)
-    const filenames = getFilenamesFromDirectory(directory)
-
-    return filenames.map((filename) => {
-      const slug = extractSlugFromFilename(filename)
-      return getMarkdownData({ slug, directoryPath, zodParser })
-    })
-  } catch (error) {
-    console.error('Error retrieving all data:', error)
     throw error
   }
 }

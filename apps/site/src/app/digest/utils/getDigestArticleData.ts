@@ -2,7 +2,8 @@ import removeMarkdown from 'remove-markdown'
 
 import { PATHS } from '@/constants/paths'
 
-import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { DigestArticleFrontmatterSchema } from '../schemas/DigestArticleFrontmatterSchema'
 
@@ -13,10 +14,10 @@ export function getDigestArticleData(slug: string) {
   return transformDigestArticleData(data)
 }
 
-export function getDigestArticlesData() {
-  const allArticles = getAllMarkdownData({
+export async function getDigestArticlesData() {
+  const allArticles = await getAllMarkdownData({
     directoryPath: DIGEST_DIRECTORY_PATH,
-    zodParser: DigestArticleFrontmatterSchema.parse,
+    zodSchema: DigestArticleFrontmatterSchema,
   })
 
   return allArticles

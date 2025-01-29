@@ -39,18 +39,21 @@ import { Search } from '@/components/Search'
 import { EventSort } from '../components/EventSort'
 import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from '../constants/constants'
 import { eventsSortConfigs } from '../constants/sortConfigs'
-import { getEventsData } from '../utils/getEventData'
+import type { Event } from '../types/eventType'
 import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
 import { getMetaData } from '../utils/getMetaData'
 
 type EventsContentProps = {
   searchParams: NextServerSearchParams
+  events: Array<Event>
 }
 
-const events = getEventsData()
 const locationOptions = getLocationListboxOptions()
 
-export default function EventsContent({ searchParams }: EventsContentProps) {
+export default function EventsContent({
+  searchParams,
+  events,
+}: EventsContentProps) {
   const { searchQuery, searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,

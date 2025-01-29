@@ -1,8 +1,7 @@
 import { PATHS } from '@/constants/paths'
 
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
 import { getMarkdownData } from '@/utils/getMarkdownData'
-
-import { getAllMarkdownDataAsync } from '@/actions/getAllMarkdownDataAsync'
 
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
@@ -14,7 +13,7 @@ export function getBlogPostData(slug: string) {
 }
 
 export async function getBlogPostsData() {
-  const allPosts = await getAllMarkdownDataAsync({
+  const allPosts = await getAllMarkdownData({
     directoryPath: BLOG_DIRECTORY_PATH,
     zodSchema: BlogPostFrontmatterSchema,
   })

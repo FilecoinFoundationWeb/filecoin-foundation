@@ -36,20 +36,21 @@ import { CategoryFilters } from '../components/CategoryFilters'
 import { CategoryFiltersSlider } from '../components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from '../constants/sortConfigs'
 import { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
+import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
-import { getEcosystemProjectsData } from '../utils/getEcosystemProjectData'
 import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 
 type EcosystemExplorerContentProps = {
   searchParams: NextServerSearchParams
+  ecosystemProjects: Array<EcosystemProject>
 }
 
-const ecosystemProjects = getEcosystemProjectsData()
 const categories = getEcosystemCMSCategories()
 const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
 export function EcosystemExplorerContent({
   searchParams,
+  ecosystemProjects,
 }: EcosystemExplorerContentProps) {
   const { searchQuery, searchResults } = useSearch({
     searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
