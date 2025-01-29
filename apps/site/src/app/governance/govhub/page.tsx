@@ -1,10 +1,11 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { attributes } from '@/content/pages/governance/govhub.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -20,10 +21,7 @@ import { ToolsCardContent } from './components/ToolsCardContent'
 import { toolsData } from './data/toolsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.GOVHUB,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = BaseFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {

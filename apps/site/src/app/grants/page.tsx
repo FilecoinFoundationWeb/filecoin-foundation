@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { attributes } from '@/content/pages/grants.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -26,10 +27,11 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo, featuredGrantGraduates } = getFrontmatter({
-  path: PATHS.GRANTS,
-  zodParser: FrontmatterSchema.parse,
-})
+const {
+  header,
+  seo,
+  featured_grant_graduates: featuredGrantGraduates,
+} = FrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
