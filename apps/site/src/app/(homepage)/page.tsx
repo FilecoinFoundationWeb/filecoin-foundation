@@ -2,11 +2,13 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
+import { attributes as digestAttributes } from '@/content/pages/digest.md'
+import { attributes } from '@/content/pages/home.md'
+
 import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -25,15 +27,14 @@ import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 
-const { header, seo, featuredEcosystemProjects } = getFrontmatter({
-  path: PATHS.HOME,
-  zodParser: FrontmatterSchema.parse,
-})
+const {
+  header,
+  seo,
+  featured_ecosystem_projects: featuredEcosystemProjects,
+} = FrontmatterSchema.parse(attributes)
 
-const { header: digestPageHeader } = getFrontmatter({
-  path: PATHS.DIGEST,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header: digestPageHeader } =
+  BaseFrontmatterSchema.parse(digestAttributes)
 
 export const metadata = createMetadata({
   seo,

@@ -2,11 +2,11 @@ import { Suspense } from 'react'
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/blog.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-
-import { getFrontmatterAsync } from '@/actions/getFrontmatterAsync'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -19,26 +19,17 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
-export async function generateMetadata() {
-  const { seo } = await getFrontmatterAsync({
-    path: PATHS.BLOG,
-    zodSchema: FrontmatterSchema,
-  })
+const { seo, featured_entry: featuredPost } =
+  FrontmatterSchema.parse(attributes)
 
-  return createMetadata({
-    seo,
-    path: PATHS.BLOG.path,
-    overrideDefaultTitle: true,
-  })
-}
+export const metadata = createMetadata({
+  seo,
+  path: PATHS.BLOG.path,
+  overrideDefaultTitle: true,
+})
 
 export default async function Blog() {
   const posts = await getBlogPostsData()
-
-  const { seo, featuredEntry: featuredPost } = await getFrontmatterAsync({
-    path: PATHS.BLOG,
-    zodSchema: FrontmatterSchema,
-  })
 
   return (
     <PageLayout>

@@ -2,10 +2,11 @@ import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -22,10 +23,7 @@ type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.ECOSYSTEM_EXPLORER,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = BaseFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
