@@ -13,6 +13,22 @@ location:
   primary: Hong Kong
   region: apac-asia
 start-date: 2025-02-17T09:00:00.000Z
+speakers:
+  kicker: CONNECT WITH US
+  title: Meet The Team
+  speakers_list:
+    - name: Clara Tsao
+      title: Founding Officer
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
+      image:
+        src: /assets/images/clara-tsao-davos.webp
+    - name: Qing Warthen
+      title: APAC Community Manager
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/qingwarthen/
+      image:
+        src: /assets/images/qing-warthen.jpg
 seo:
   twitter:
     card: summary
