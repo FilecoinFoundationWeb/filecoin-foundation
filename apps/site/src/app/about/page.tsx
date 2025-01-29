@@ -50,7 +50,7 @@ export default function About() {
         description={header.description}
         image={graphicsData.about}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.annualReports['2023'],
+          href: FILECOIN_FOUNDATION_URLS.annualReports['2024'],
           text: 'Learn More in Our Annual Report',
         }}
       />
