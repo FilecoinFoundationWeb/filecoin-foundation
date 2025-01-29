@@ -13,7 +13,7 @@ location:
   region: north-america
 start-date: 2025-02-25T09:00:00.000Z
 image:
-  src: /assets/images/fri-02.webp
+  src: /assets/images/f-at-ed25.webp
 program:
   kicker: FIND US AROUND DENVER
   title: Featured Events
