@@ -278,50 +278,50 @@ When adding a new page to the project, please ensure the following:
 
 2. **Metadata and SEO**: Each new page should have associated metadata and SEO tags defined. Use the `createMetadata` function to set up a page's metadata correctly. Example:
 
-```javascript
-export const metadata = createMetadata(seo, PATHS.ABOUT.path)
-```
+   ```javascript
+   export const metadata = createMetadata(seo, PATHS.ABOUT.path)
+   ```
 
 3. **Structured Data**: Include structured data for the new page to enhance search engine visibility and accessibility. Use the `generateWebPageStructuredData` function to create structured data for the page, which provides the base structured data. Example:
 
-```javascript
-const aboutPageBaseData = generateWebPageStructuredData({
-  title: seo.title,
-  description: seo.description,
-  path: PATHS.ABOUT.path,
-})
-```
+   ```javascript
+   const aboutPageBaseData = generateWebPageStructuredData({
+     title: seo.title,
+     description: seo.description,
+     path: PATHS.ABOUT.path,
+   })
+   ```
 
-This can be further customized based on the page's content and structure. Example:
+   This can be further customized based on the page's content and structure. Example:
 
-```javascript
-const aboutPageStructuredData: WithContext<WebPage> = {
-  ...aboutPageBaseData,
-  about: {
-    '@type': 'Organization',
-    name: ORGANIZATION_NAME,
-    contactPoint: [
-      {
-        '@type': 'ContactPoint',
-        contactType: FILECOIN_FOUNDATION_URLS.email.label,
-        email: FILECOIN_FOUNDATION_URLS.email.href,
-      },
-      {
-        '@type': 'ContactPoint',
-        contactType:  FILECOIN_FOUNDATION_URLS.grants.email.label,
-        email: FILECOIN_FOUNDATION_URLS.grants.email.href,
-      },
-    ],
-  },
-  sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
-    (link) => link.href
-  ),
-}
-```
+   ```javascript
+   const aboutPageStructuredData: WithContext<WebPage> = {
+     ...aboutPageBaseData,
+     about: {
+       '@type': 'Organization',
+       name: ORGANIZATION_NAME,
+       contactPoint: [
+         {
+           '@type': 'ContactPoint',
+           contactType: FILECOIN_FOUNDATION_URLS.email.label,
+           email: FILECOIN_FOUNDATION_URLS.email.href,
+         },
+         {
+           '@type': 'ContactPoint',
+           contactType:  FILECOIN_FOUNDATION_URLS.grants.email.label,
+           email: FILECOIN_FOUNDATION_URLS.grants.email.href,
+         },
+       ],
+     },
+     sameAs: Object.values(FILECOIN_FOUNDATION_URLS.social).map(
+       (link) => link.href
+     ),
+   }
+   ```
 
-1. **Testing**: Ensure that tests are added to verify the presence of metadata and structured data on the new page. These tests are crucial for maintaining the integrity of the site's SEO and ensuring that all pages meet our standards for content visibility.
+4. **Testing**: Ensure that tests are added to verify the presence of metadata and structured data on the new page. These tests are crucial for maintaining the integrity of the site's SEO and ensuring that all pages meet our standards for content visibility.
 
-2. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
+5. **Updating the Sitemap**: When adding new dynamic content (such as blog posts, ecosystem projects, or events) that isn't automatically included in the sitemap through static routing, it's essential to manually update the sitemap with the new page's details. This step is crucial for SEO, helping ensure that search engines can easily discover and index these new pages.
 
 Following these guidelines helps ensure that our website remains consistent, accessible, and search engine friendly.
 
