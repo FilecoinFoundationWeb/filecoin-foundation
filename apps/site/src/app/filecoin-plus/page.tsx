@@ -2,12 +2,12 @@ import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
+import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractDomain } from '@/utils/extractDomain'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -28,10 +28,9 @@ import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.FIL_PLUS,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = BaseFrontmatterSchema.parse(attributes)
+const { header: allocatorsHeader } =
+  BaseFrontmatterSchema.parse(allocatorsAttributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -71,8 +70,8 @@ export default function FilPlus() {
 
       <PageSection
         kicker="Allocators"
-        title={allocatorsAttributes.header.title}
-        description={allocatorsAttributes.header.description}
+        title={allocatorsHeader.title}
+        description={allocatorsHeader.description}
         image={graphicsData.filPlusAllocators}
         cta={{
           href: PATHS.ALLOCATORS.path,
