@@ -1,0 +1,19 @@
+{
+  "default": true, // Enable all rules by default
+  "MD001": true, // Enforce header increment rules (e.g., H1 -> H2 -> H3)
+  "MD009": false, // Allow trailing spaces
+  "MD013": false, // Disable line length restrictions
+  "MD024": {
+    "siblings_only": true, // Allow duplicate headers if not siblings (same level)
+  },
+  "MD025": true, // Allow only one top-level header
+  "MD029": {
+    "style": "ordered", // Enforce ordered list item prefix (1. 2. 3. etc)
+  },
+  "MD033": false, // Allow inline HTML
+  "MD034": false, // Allow bare URLs
+  "MD036": false, // Allow emphasis on words without spaces
+  "MD041": false, // Allow content before first header
+  "MD045": false, // Allow images without alt text
+  "MD046": false, // Allow different code block styles
+}
