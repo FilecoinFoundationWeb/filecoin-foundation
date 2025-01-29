@@ -3,8 +3,6 @@ name: Apps PR Review Notification
 on:
   pull_request:
     types: [opened, ready_for_review]
-    paths:
-      - "apps/site/**"
   workflow_dispatch:
     inputs:
       pr_number:
@@ -28,16 +26,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Debug Event Info
+        run: |
+          echo "Event name: ${{ github.event_name }}"
+          echo "Event path: $GITHUB_EVENT_PATH"
+          echo "Changed files:"
+          cat $GITHUB_EVENT_PATH | jq '.pull_request.changed_files'
+          echo "Repository: ${{ github.repository }}"
+          echo "Reference: ${{ github.ref }}"
+
       - name: Prepare Reviewers List and App Info
         id: format_info
         run: |
-          REVIEWERS=$(echo "${{ toJson(github.event.pull_request.requested_reviewers) }}" | jq -r '.[].login' | paste -sd ", " -)
-          APP_PATH=$(echo "${{ github.event.pull_request.changed_files }}" | grep -o 'apps/[^/]*' | head -1)
-          if [ -z "$REVIEWERS" ]; then
-            REVIEWERS="No reviewers assigned"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            REVIEWERS="${{ github.event.inputs.reviewers }}"
+            APP_PATH="apps/site"
+            PR_URL="${{ github.event.inputs.pr_url }}"
+            PR_TITLE="${{ github.event.inputs.pr_title }}"
+          else
+            REVIEWERS=$(echo "${{ toJson(github.event.pull_request.requested_reviewers) }}" | jq -r '.[].login' | paste -sd ", " -)
+            APP_PATH=$(echo "${{ github.event.pull_request.changed_files }}" | grep -o 'apps/[^/]*' | head -1)
+            if [ -z "$REVIEWERS" ]; then
+              REVIEWERS="No reviewers assigned"
+            fi
+            PR_URL="${{ github.event.pull_request.html_url }}"
+            PR_TITLE="${{ github.event.pull_request.title }}"
           fi
           echo "REVIEWERS=$REVIEWERS" >> $GITHUB_ENV
           echo "APP_PATH=$APP_PATH" >> $GITHUB_ENV
+          echo "PR_URL=$PR_URL" >> $GITHUB_ENV
+          echo "PR_TITLE=$PR_TITLE" >> $GITHUB_ENV
 
       - name: Send Slack Notification
         uses: slackapi/slack-github-action@v2.0.0
@@ -47,5 +65,5 @@ jobs:
           payload: |
             {
               "channel": "C07UH9HAURX",
-              "text": "${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>\nReviewers: ${{ env.REVIEWERS }}"
+              "text": "${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ env.PR_URL }}|${{ env.PR_TITLE }}>\nReviewers: ${{ env.REVIEWERS }}"
             }
