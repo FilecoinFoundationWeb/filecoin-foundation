@@ -51,10 +51,9 @@ jobs:
         id: slack
         uses: slackapi/slack-github-action@v2.0.0
         with:
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             {
               "channel": "C07UH9HAURX",
               "text": "${{ github.actor }} has marked a pull request as ready for review in ${{ steps.prepare_info.outputs.app_path }}: <${{ steps.prepare_info.outputs.pr_url }}|${{ steps.prepare_info.outputs.pr_title }}>\nReviewers: ${{ steps.prepare_info.outputs.reviewers }}"
             }
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
