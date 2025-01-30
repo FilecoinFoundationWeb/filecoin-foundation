@@ -26,7 +26,7 @@ schedule:
   title: Speaking Engagements
   days:
     - events:
-        - title: "Clara Tsao at DeAI Summit "
+        - title: "Clara Tsao at DeAI Summit"
           tag: Registration Needed
           speakers:
             - name: Clara Tsao
@@ -57,8 +57,9 @@ schedule:
     - events:
         - tag: Registration Needed
           title: "Clara Tsao at ALPHA: HONG KONG EDITION"
-          description: "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
-            2025 and beyond "
+          description:
+            "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
+            2025 and beyond"
           speakers:
             - name: Clara Tsao
               company: Filecoin Foundation
