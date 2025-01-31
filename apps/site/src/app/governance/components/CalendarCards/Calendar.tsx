@@ -10,7 +10,7 @@ export function Calendar({ startDate }: CalendarProps) {
   const { day, month } = formatDateComponentsFromISO(startDate)
 
   return (
-    <div className="grid h-40 w-full grid-rows-[_40px,auto] rounded-md border border-blue-400 bg-brand-500 sm:w-[140px]">
+    <div className="grid h-40 w-full grid-rows-[40px_auto] rounded-md border border-blue-400 bg-brand-500 sm:w-[140px]">
       <span className="flex items-center justify-center rounded-t text-base font-normal uppercase">
         {month}
       </span>

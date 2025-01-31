@@ -62,10 +62,10 @@ function KeyMemberImage({
     alt: `Photo of ${name}`,
     quality: 100,
     sizes: '150px',
-    className: 'rounded object-cover',
+    className: 'rounded-sm object-cover',
   }
 
-  const containerClass = 'aspect-[3/4] w-32 shrink-0'
+  const containerClass = 'aspect-3/4 w-32 shrink-0'
   const isStaticImage = typeof image === 'object'
 
   if (isStaticImage) {

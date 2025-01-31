@@ -32,7 +32,7 @@ export function MobileNavigation() {
         <div className="flex flex-col gap-12 px-6 py-8">
           <div className="flex items-center justify-between">
             <Link
-              className="flex-shrink-0 focus:brand-outline"
+              className="shrink-0 focus:brand-outline"
               href={PATHS.HOME.path}
               aria-label="Go to homepage"
               onClick={() => setOpen(false)}
