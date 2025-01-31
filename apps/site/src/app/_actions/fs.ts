@@ -2,6 +2,7 @@
 
 import fs from 'fs/promises'
 
+// Move this to utils and remove actions.
 export async function getFilenamesFromDirectory(directory: string) {
   return fs.readdir(directory)
 }

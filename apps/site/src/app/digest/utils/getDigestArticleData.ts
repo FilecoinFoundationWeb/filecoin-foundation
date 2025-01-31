@@ -9,8 +9,8 @@ import { DigestArticleFrontmatterSchema } from '../schemas/DigestArticleFrontmat
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 
-export function getDigestArticleData(slug: string) {
-  const data = getDigestMarkdownData(slug)
+export async function getDigestArticleData(slug: string) {
+  const data = await getDigestMarkdownData(slug)
   return transformDigestArticleData(data)
 }
 
@@ -29,12 +29,12 @@ function getDigestMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: DIGEST_DIRECTORY_PATH,
-    zodParser: DigestArticleFrontmatterSchema.parse,
+    zodSchema: DigestArticleFrontmatterSchema,
   })
 }
 
 function transformDigestArticleData(
-  article: ReturnType<typeof getDigestMarkdownData>,
+  article: Awaited<ReturnType<typeof getDigestMarkdownData>>,
 ) {
   return {
     ...article,
