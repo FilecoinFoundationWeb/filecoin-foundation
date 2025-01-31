@@ -13,6 +13,60 @@ location:
   primary: Hong Kong
   region: apac-asia
 start-date: 2025-02-17T09:00:00.000Z
+program:
+  events:
+    - title: "Decentralized Intelligence: Filecoin x AI Night. Hosted by NDLabs,
+        Supported by Filecoin Orbit and Filecoin Foundation"
+      start-date: 2025-02-17T17:00:00.000Z
+      location: Maggie Choo's
+  kicker: FIND US AROUND HONG KONG
+  title: Featured Events
+schedule:
+  kicker: DON'T MISS OUT
+  title: Speaking Engagements
+  days:
+    - events:
+        - title: "Clara Tsao at DeAI Summit"
+          tag: Registration Needed
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+          start: 2025-02-19T15:30:00.000Z
+          location: Hashkey Capital Headquarters
+          url: https://lu.ma/deaisummitHK
+      date: 2025-02-19T09:00:00.000Z
+    - events:
+        - title: Clara Tsao at Consensus Hong Kong
+          tag: Registration Needed
+          description: (Decentralized) Compute For All
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+          start: 2025-02-20T10:50:00.000Z
+          location: Hong Kong Convention & Exhibition Centre
+          url: https://consensus-hongkong2025.coindesk.com/
+        - tag: Registration Needed
+          title: Clara Tsao at Hack Seasons Conference Hong Kong
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+          start: 2025-02-20T10:00:00.000Z
+          location: Renaissance Hong Kong Harbour View Hotel
+          url: https://lu.ma/hack_hk
+      date: 2025-02-20T09:00:00.000Z
+    - events:
+        - tag: Registration Needed
+          title: "Clara Tsao at ALPHA: HONG KONG EDITION"
+          description:
+            "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
+            2025 and beyond"
+          speakers:
+            - name: Clara Tsao
+              company: Filecoin Foundation
+          start: 2025-02-21T13:05:00.000Z
+          location: Cardinal Point
+          url: https://lu.ma/hcge9jg4
+      date: 2025-02-21T09:00:00.000Z
 speakers:
   kicker: CONNECT WITH US
   title: Meet The Team
