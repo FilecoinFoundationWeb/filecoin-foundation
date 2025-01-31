@@ -1,9 +1,8 @@
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { z } from 'zod'
 
-import { createFeaturedProjectsZodField } from '@/ecosystem-explorer/utils/createFeaturedProjectsZodField'
+import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { MarkdownEntryPathSchema } from '@/schemas/MarkdownEntryPathSchema'
 
 export const FrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_grant_graduates: createFeaturedProjectsZodField(
-    'No matching grant graduates found',
-  ),
+  featured_grant_graduates: z.array(MarkdownEntryPathSchema),
 })

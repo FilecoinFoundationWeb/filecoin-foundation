@@ -21,6 +21,8 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
+
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
@@ -30,7 +32,7 @@ import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 const {
   header,
   seo,
-  featured_ecosystem_projects: featuredEcosystemProjects,
+  featured_ecosystem_projects: featuredEcosystemProjectPaths,
 } = FrontmatterSchema.parse(attributes)
 
 const { header: digestPageHeader } =
@@ -45,6 +47,10 @@ export const metadata = createMetadata({
 export default async function Home() {
   const featuredBlogPosts = await getFeaturedBlogPosts()
   const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
+
+  const featuredEcosystemProjects = await getFeaturedEcosystemProjects(
+    featuredEcosystemProjectPaths,
+  )
 
   return (
     <NoBreadCrumbsLayout>
