@@ -7,6 +7,10 @@ import { attributes } from '@/content/pages/blog.md'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { findOrThrow } from '@/utils/findOrThrow'
+
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -14,13 +18,11 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogContent } from './components/BlogContent'
-import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
 import { getMetaData } from './utils/getMetaData'
 
-const { seo, featured_entry: featuredPost } =
-  FrontmatterSchema.parse(attributes)
+const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo,
@@ -30,6 +32,11 @@ export const metadata = createMetadata({
 
 export default async function Blog() {
   const posts = await getBlogPostsData()
+
+  const featuredPost = findOrThrow(
+    posts,
+    (post) => post.slug === extractSlugFromFilename(featured_entry),
+  )
 
   return (
     <PageLayout>

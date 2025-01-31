@@ -10,6 +10,10 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
+import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { findOrThrow } from '@/utils/findOrThrow'
+
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -21,7 +25,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
-import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
@@ -30,8 +33,7 @@ type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { seo, featured_entry: featuredEvent } =
-  FrontmatterSchema.parse(attributes)
+const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -45,6 +47,14 @@ export const metadata = createMetadata({
 export default async function Events(props: Props) {
   const searchParams = await props.searchParams
   const events = await getEventsData()
+
+  // Abstract this
+  // Either make zod return the slug from the file name
+  // Or make a function that takes the slug and the list of events and returns the event
+  const featuredEvent = findOrThrow(
+    events,
+    (event) => event.slug === extractSlugFromFilename(featured_entry),
+  )
 
   return (
     <PageLayout>
