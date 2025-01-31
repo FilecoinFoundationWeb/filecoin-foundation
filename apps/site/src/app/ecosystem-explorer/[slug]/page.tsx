@@ -30,7 +30,7 @@ const categories = getEcosystemCMSCategories()
 
 export async function generateMetadata(props: EcosystemProjectProps) {
   const { slug } = await props.params
-  const data = getEcosystemProjectData(slug)
+  const data = await getEcosystemProjectData(slug)
 
   return createMetadata({
     seo: {
@@ -43,7 +43,7 @@ export async function generateMetadata(props: EcosystemProjectProps) {
 
 export default async function EcosystemProject(props: EcosystemProjectProps) {
   const { slug } = await props.params
-  const data = getEcosystemProjectData(slug)
+  const data = await getEcosystemProjectData(slug)
 
   const {
     image,

@@ -9,8 +9,8 @@ import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFr
 export const ECOSYSTEM_EXPLORER_DIRECTORY_PATH = PATHS.ECOSYSTEM_EXPLORER
   .entriesContentPath as string
 
-export function getEcosystemProjectData(slug: string) {
-  const data = getEcosystemProjectMarkdownData(slug)
+export async function getEcosystemProjectData(slug: string) {
+  const data = await getEcosystemProjectMarkdownData(slug)
   return transformEcosystemProjectData(data)
 }
 
@@ -27,12 +27,12 @@ function getEcosystemProjectMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodParser: EcosystemProjectFrontmatterSchema.parse,
+    zodSchema: EcosystemProjectFrontmatterSchema,
   })
 }
 
 function transformEcosystemProjectData(
-  project: ReturnType<typeof getEcosystemProjectMarkdownData>,
+  project: Awaited<ReturnType<typeof getEcosystemProjectMarkdownData>>,
 ) {
   return {
     ...project,

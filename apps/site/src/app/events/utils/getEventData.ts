@@ -8,8 +8,8 @@ import { EventFrontmatterSchema } from '../schemas/EventFrontmatterSchema'
 
 const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
-export function getEventData(slug: string) {
-  const data = getEventMarkdownData(slug)
+export async function getEventData(slug: string) {
+  const data = await getEventMarkdownData(slug)
   return transformEventData(data)
 }
 
@@ -26,11 +26,13 @@ function getEventMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: EVENTS_DIRECTORY_PATH,
-    zodParser: EventFrontmatterSchema.parse,
+    zodSchema: EventFrontmatterSchema,
   })
 }
 
-function transformEventData(event: ReturnType<typeof getEventMarkdownData>) {
+function transformEventData(
+  event: Awaited<ReturnType<typeof getEventMarkdownData>>,
+) {
   return {
     ...event,
     seo: {

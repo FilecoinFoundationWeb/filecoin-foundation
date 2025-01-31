@@ -1,3 +1,5 @@
 import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
 
-export type EcosystemProject = ReturnType<typeof getEcosystemProjectData>
+export type EcosystemProject = Awaited<
+  ReturnType<typeof getEcosystemProjectData>
+>

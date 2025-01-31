@@ -6,8 +6,7 @@ import glob from 'fast-glob'
 import { ZodObject, type ZodRawShape } from 'zod'
 
 import { extractSlugFromFilename } from '@/utils/fileUtils'
-
-import { getMarkdownDataAsync } from '@/actions/getMarkdownDataAsync'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
 export type GetAllMarkdownDataArgs<T extends ZodRawShape> = {
   directoryPath: string
@@ -28,7 +27,7 @@ export async function getAllMarkdownData<T extends ZodRawShape>({
     return Promise.all(
       filenames.map((filename) => {
         const slug = extractSlugFromFilename(filename)
-        return getMarkdownDataAsync({ slug, directoryPath, zodSchema })
+        return getMarkdownData({ slug, directoryPath, zodSchema })
       }),
     )
   } catch (error) {

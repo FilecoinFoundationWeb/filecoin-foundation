@@ -34,7 +34,7 @@ type EventProps = {
 
 export async function generateMetadata(props: EventProps) {
   const { slug } = await props.params
-  const data = getEventData(slug)
+  const data = await getEventData(slug)
 
   return createMetadata({
     seo: {
@@ -47,7 +47,7 @@ export async function generateMetadata(props: EventProps) {
 
 export default async function EventEntry(props: EventProps) {
   const { slug } = await props.params
-  const data = getEventData(slug)
+  const data = await getEventData(slug)
   const sponsorEventData = getInvolvedData[0]
 
   const {
