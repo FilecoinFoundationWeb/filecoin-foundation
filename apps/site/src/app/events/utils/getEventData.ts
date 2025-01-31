@@ -1,6 +1,7 @@
 import { PATHS } from '@/constants/paths'
 
-import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
 import { EventFrontmatterSchema } from '../schemas/EventFrontmatterSchema'
@@ -12,10 +13,10 @@ export function getEventData(slug: string) {
   return transformEventData(data)
 }
 
-export function getEventsData() {
-  const allEvents = getAllMarkdownData({
+export async function getEventsData() {
+  const allEvents = await getAllMarkdownData({
     directoryPath: EVENTS_DIRECTORY_PATH,
-    zodParser: EventFrontmatterSchema.parse,
+    zodSchema: EventFrontmatterSchema,
   })
 
   return allEvents.map(transformEventData)

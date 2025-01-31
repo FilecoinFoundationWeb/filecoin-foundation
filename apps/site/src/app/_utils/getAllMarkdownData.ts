@@ -14,7 +14,7 @@ export type GetAllMarkdownDataArgs<T extends ZodRawShape> = {
   zodSchema: ZodObject<T>
 }
 
-export async function getAllMarkdownDataAsync<T extends ZodRawShape>({
+export async function getAllMarkdownData<T extends ZodRawShape>({
   directoryPath,
   zodSchema,
 }: GetAllMarkdownDataArgs<T>) {

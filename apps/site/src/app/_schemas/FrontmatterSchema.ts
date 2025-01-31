@@ -1,5 +1,6 @@
 import { z } from 'zod'
 
+import { MarkdownEntryPathSchema } from './MarkdownEntryPathSchema'
 import { SeoMetadataSchema } from './SeoMetadataSchema'
 
 const FrontmatterHeaderSchema = z.object({
@@ -13,5 +14,5 @@ export const BaseFrontmatterSchema = z.object({
 })
 
 export const FeaturedPageFrontmatterSchema = BaseFrontmatterSchema.extend({
-  featured_entry: z.string(),
+  featured_entry: MarkdownEntryPathSchema,
 })

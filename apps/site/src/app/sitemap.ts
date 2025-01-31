@@ -35,19 +35,19 @@ export default async function sitemap() {
   const blogPosts = await getBlogPostsData()
   const dynamicBlogRoutes = generateDynamicRoutes(blogPosts, PATHS.BLOG.path)
 
-  const digestArticles = getDigestArticlesData()
+  const digestArticles = await getDigestArticlesData()
   const dynamicDigestArticleRoutes = generateDynamicRoutes(
     digestArticles,
     PATHS.DIGEST.path,
   )
 
-  const ecosystemProjects = getEcosystemProjectsData()
+  const ecosystemProjects = await getEcosystemProjectsData()
   const dynamicEcosystemProjectRoutes = generateDynamicRoutes(
     ecosystemProjects,
     PATHS.ECOSYSTEM_EXPLORER.path,
   )
 
-  const events = getEventsData()
+  const events = await getEventsData()
   const dynamicEventRoutes = generateDynamicRoutes(events, PATHS.EVENTS.path)
 
   return [

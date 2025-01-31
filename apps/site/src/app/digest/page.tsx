@@ -25,8 +25,6 @@ import { getDigestArticlesData } from './utils/getDigestArticleData'
 
 const { header, seo } = BaseFrontmatterSchema.parse(attributes)
 
-const articles = getDigestArticlesData()
-
 export const metadata = createMetadata({
   seo: {
     ...seo,
@@ -35,7 +33,9 @@ export const metadata = createMetadata({
   path: PATHS.DIGEST.path,
 })
 
-export default function Digest() {
+export default async function Digest() {
+  const articles = await getDigestArticlesData()
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />

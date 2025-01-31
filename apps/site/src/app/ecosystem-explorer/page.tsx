@@ -18,6 +18,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EcosystemExplorerContent } from './components/EcosystemExplorerContent'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
@@ -36,6 +37,7 @@ export const metadata = createMetadata({
 
 export default async function EcosystemExplorer(props: Props) {
   const searchParams = await props.searchParams
+  const ecosystemProjects = await getEcosystemProjectsData()
 
   return (
     <PageLayout>
@@ -55,7 +57,10 @@ export default async function EcosystemExplorer(props: Props) {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of projects in the Filecoin ecosystem. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s product or services."
       >
-        <EcosystemExplorerContent searchParams={searchParams} />
+        <EcosystemExplorerContent
+          searchParams={searchParams}
+          ecosystemProjects={ecosystemProjects}
+        />
       </PageSection>
 
       <CTASection
