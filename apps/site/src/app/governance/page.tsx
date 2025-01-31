@@ -1,9 +1,10 @@
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/governance/governance.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -19,10 +20,7 @@ import { CTAPageSection } from './components/CTAPageSection'
 import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.GOVERNANCE,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = BaseFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {

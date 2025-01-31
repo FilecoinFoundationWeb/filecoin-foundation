@@ -4,11 +4,12 @@ import { clsx } from 'clsx'
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { attributes } from '@/content/pages/about.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -27,10 +28,7 @@ import { focusAreasData } from './data/focusAreasData'
 import { reportsData } from './data/reportsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.ABOUT,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = BaseFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -50,7 +48,7 @@ export default function About() {
         description={header.description}
         image={graphicsData.about}
         cta={{
-          href: FILECOIN_FOUNDATION_URLS.annualReports['2023'],
+          href: FILECOIN_FOUNDATION_URLS.annualReports['2024'],
           text: 'Learn More in Our Annual Report',
         }}
       />
