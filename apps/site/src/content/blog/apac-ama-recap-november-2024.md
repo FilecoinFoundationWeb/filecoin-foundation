@@ -1,5 +1,5 @@
 ---
-title: "APAC AMA Recap – November 2024"
+title: APAC AMA Recap – November 2024
 created-on: 2025-01-06T19:39:00.000Z
 updated-on: 2025-01-08T19:39:00.000Z
 published-on: 2025-01-08T19:39:00.000Z
@@ -8,12 +8,11 @@ description: The latest APAC Ask Me Anything (AMA), held on November 21, brought
   together more than 70 participants, including many Storage Providers (SPs),
   for a deep dive into the Filecoin ecosystem.
 image:
-  src: /assets/images/apac-ama-blog.webp
+  src: /assets/images/apac-ama-header.webp
 seo:
   twitter:
     card: summary
-  description:
-    The latest APAC Ask Me Anything (AMA), held on November 21, brought
+  description: The latest APAC Ask Me Anything (AMA), held on November 21, brought
     together more than 70 participants, including many Storage Providers (SPs),
     for a deep dive into the Filecoin ecosystem.
 ---
