@@ -22,7 +22,7 @@ export function FocusAreaCard({
       <Image
         src={image.data}
         alt={image.alt}
-        className="aspect-video w-full rounded object-cover sm:w-60 sm:shrink-0 md:w-80 lg:w-full"
+        className="aspect-video w-full rounded-sm object-cover sm:w-60 sm:shrink-0 md:w-80 lg:w-full"
         sizes={buildImageSizeProp({
           startSize: '100vw',
           sm: '250px',

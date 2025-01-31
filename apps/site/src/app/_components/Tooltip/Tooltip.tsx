@@ -42,7 +42,7 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
           side={side}
           role="tooltip"
           className={clsx(
-            'max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 focus-visible:outline-none',
+            'max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 focus-visible:outline-hidden',
             styles['tooltip-animation'],
           )}
         >

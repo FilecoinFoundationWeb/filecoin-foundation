@@ -1,3 +1,6 @@
 .tableOfContentsHeader {
-  @apply text-sm font-semibold uppercase text-brand-200;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  color: var(--brand-200);
 }

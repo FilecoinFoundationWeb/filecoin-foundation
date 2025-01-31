@@ -172,7 +172,7 @@ export default async function Orbit(props: Props) {
       </PageSection>
 
       <PageSection kicker="Frequently Asked Questions" title="FAQs">
-        <div className="prose space-y-10 prose-h3:text-brand-300 first:prose-h3:mt-0">
+        <div className="prose space-y-10 prose-h3:text-brand-300 prose-h3:first:mt-0">
           <div>
             <h3>
               Where can I find info about the Filecoin Orbit 2021 conference?
