@@ -1,20 +1,17 @@
 import type { Organization, WithContext } from 'schema-dts'
 
-import { PATHS } from '@/constants/paths'
 import {
   BASE_URL,
   FILECOIN_FOUNDATION_URLS,
   ORGANIZATION_NAME,
 } from '@/constants/siteMetadata'
 
-import { getFrontmatter } from '@/utils/getFrontmatter'
+import { attributes as aboutPageAttributes } from '@/content/pages/about.md'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
-const { header: aboutPageHeader } = getFrontmatter({
-  path: PATHS.ABOUT,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header: aboutPageHeader } =
+  BaseFrontmatterSchema.parse(aboutPageAttributes)
 
 const { social, email } = FILECOIN_FOUNDATION_URLS
 

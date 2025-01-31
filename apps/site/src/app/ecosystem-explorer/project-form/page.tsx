@@ -2,8 +2,9 @@ import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
+
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
@@ -23,10 +24,7 @@ import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = BaseFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo,

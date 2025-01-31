@@ -12,13 +12,18 @@ location:
   primary: Denver, CO
   region: north-america
 start-date: 2025-02-25T09:00:00.000Z
+image:
+  src: /assets/images/f-at-ed25.webp
 program:
   kicker: FIND US AROUND DENVER
   title: Featured Events
   events:
     - title: Code N Corgi. Hosted by FIL Builders, Supported by Filecoin Foundation
       location: Denver, CO
-      start-date: 2025-02-25T17:00:00.000Z
+      start-date: 2025-02-28T17:00:00.000Z
+      external-link: https://lu.ma/gd767xu5
+      description: ​A community gathering for Filecoin builders and friends! Come for
+        Filecoin corgis, stay for Filecoin friends.
     - title: L2 and Service Operator Colo. Hosted by Filecoin Foundation & FILOz
       location: Denver, CO
       description: Filecoin Foundation & FILOz are bringing together key ecosystem
@@ -30,18 +35,17 @@ program:
     - title: Schelling Point. Hosted by Gitcoin, Sponsored by Filecoin Foundation
       external-link: https://schellingpoint.gitcoin.co/
       location: Denver, CO
-      description: "Join us on February 27th, 2025 at Number 38 in Denver for
-        Schelling Point 2025—Gitcoin's flagship event that brings visionaries,
-        builders, and changemakers together to shape the future of public goods
-        and innovation!  ​For years, Schelling Point has been more than just an
-        event—it’s been a catalyst for innovation, uniting passionate builders
-        and changemakers to drive public goods funding forward. This year, we’re
-        raising the bar and reimagining what’s possible for builders everywhere.
-        🚀  ​Under the theme “Scaling Builder Success: A Multi-Mechanism
-        Future,” we’re spotlighting our commitment to empowering builders at
-        every stage of their journey. Expect unparalleled opportunities to
-        connect with industry-leading ecosystems, explore innovative funding
-        mechanisms, and scale your impact like never before."
+      description: "Join us on February 27th, 2025, at Number 38 in Denver for
+        Schelling Point 2025—Gitcoin's flagship event uniting visionaries,
+        builders, and changemakers to shape the future of public goods and
+        innovation!  For years, Schelling Point has been a catalyst for
+        innovation, bringing together passionate changemakers to advance public
+        goods funding. This year, we’re raising the bar and reimagining what’s
+        possible for builders everywhere. 🚀  Under the theme “Scaling Builder
+        Success: A Multi-Mechanism Future,” we’re focusing on empowering
+        builders at every stage of their journey. Expect unique opportunities to
+        connect with top ecosystems, explore cutting-edge funding mechanisms,
+        and scale your impact like never before."
       start-date: 2025-02-27T10:00:00.000Z
     - title: Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
         Foundation
@@ -50,6 +54,7 @@ program:
         stimulating discussion between participants in a closed, confidential
         environment. Attendance is complimentary and by invitation only.
       start-date: 2025-02-25T12:00:00.000Z
+      external-link: https://www.ortusclub.com/event/security-portability-and-ai-driven-innovation/
     - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
       start-date: 2025-02-26T14:30:00.000Z
       location: "Denver, CO "

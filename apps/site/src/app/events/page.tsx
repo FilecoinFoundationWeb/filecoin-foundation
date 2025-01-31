@@ -4,11 +4,12 @@ import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/events.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -28,10 +29,8 @@ type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { seo, featuredEntry: featuredEvent } = getFrontmatter({
-  path: PATHS.EVENTS,
-  zodParser: FrontmatterSchema.parse,
-})
+const { seo, featured_entry: featuredEvent } =
+  FrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
