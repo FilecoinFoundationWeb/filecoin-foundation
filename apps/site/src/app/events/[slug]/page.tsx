@@ -34,10 +34,7 @@ type EventProps = {
 
 export async function generateStaticParams() {
   const entries = await getEventsData()
-
-  return entries.map((entry) => ({
-    slug: entry.slug,
-  }))
+  return entries.map(({ slug }) => ({ slug }))
 }
 
 export async function generateMetadata(props: EventProps) {

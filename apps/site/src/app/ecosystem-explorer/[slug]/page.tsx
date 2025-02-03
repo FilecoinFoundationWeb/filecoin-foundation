@@ -31,10 +31,7 @@ type EcosystemProjectProps = {
 
 export async function generateStaticParams() {
   const entries = await getEcosystemProjectsData()
-
-  return entries.map((entry) => ({
-    slug: entry.slug,
-  }))
+  return entries.map(({ slug }) => ({ slug }))
 }
 
 export async function generateMetadata(props: EcosystemProjectProps) {

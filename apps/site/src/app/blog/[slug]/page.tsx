@@ -22,10 +22,7 @@ type BlogPostProps = {
 
 export async function generateStaticParams() {
   const entries = await getBlogPostsData()
-
-  return entries.map((entry) => ({
-    slug: entry.slug,
-  }))
+  return entries.map(({ slug }) => ({ slug }))
 }
 
 export async function generateMetadata(props: BlogPostProps) {
