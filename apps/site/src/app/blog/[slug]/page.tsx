@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -9,15 +11,21 @@ import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getBlogPostData } from '../utils/getBlogPostData'
+import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
-  params: Promise<{
-    slug: string
-  }>
+  params: Promise<SlugParams>
+}
+
+export async function generateStaticParams() {
+  const entries = await getBlogPostsData()
+
+  return entries.map((entry) => ({
+    slug: entry.slug,
+  }))
 }
 
 export async function generateMetadata(props: BlogPostProps) {

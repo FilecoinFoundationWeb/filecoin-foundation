@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -14,19 +16,26 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
-import { getEcosystemProjectData } from '../utils/getEcosystemProjectData'
+import {
+  getEcosystemProjectData,
+  getEcosystemProjectsData,
+} from '../utils/getEcosystemProjectData'
 
 import { Article } from './components/Article'
 import { PageHeader } from './components/PageHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EcosystemProjectProps = {
-  params: Promise<{
-    slug: string
-  }>
+  params: Promise<SlugParams>
 }
 
-const categories = getEcosystemCMSCategories()
+export async function generateStaticParams() {
+  const entries = await getEcosystemProjectsData()
+
+  return entries.map((entry) => ({
+    slug: entry.slug,
+  }))
+}
 
 export async function generateMetadata(props: EcosystemProjectProps) {
   const { slug } = await props.params
@@ -40,6 +49,8 @@ export async function generateMetadata(props: EcosystemProjectProps) {
     path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
   })
 }
+
+const categories = getEcosystemCMSCategories()
 
 export default async function EcosystemProject(props: EcosystemProjectProps) {
   const { slug } = await props.params

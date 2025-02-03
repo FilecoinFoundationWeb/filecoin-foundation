@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -9,15 +11,24 @@ import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getDigestArticleData } from '../utils/getDigestArticleData'
+import {
+  getDigestArticleData,
+  getDigestArticlesData,
+} from '../utils/getDigestArticleData'
 
 import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
-  params: Promise<{
-    slug: string
-  }>
+  params: Promise<SlugParams>
+}
+
+export async function generateStaticParams() {
+  const entries = await getDigestArticlesData()
+
+  return entries.map((entry) => ({
+    slug: entry.slug,
+  }))
 }
 
 export async function generateMetadata(props: DigestArticleProps) {

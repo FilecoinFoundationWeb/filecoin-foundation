@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -13,7 +15,7 @@ import { TagGroup } from '@/components/TagComponents/TagGroup'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
-import { getEventData } from '../utils/getEventData'
+import { getEventData, getEventsData } from '../utils/getEventData'
 import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
 import { sortNonEmptyEventsAsc } from '../utils/sortEvents'
@@ -27,9 +29,15 @@ import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
-  params: Promise<{
-    slug: string
-  }>
+  params: Promise<SlugParams>
+}
+
+export async function generateStaticParams() {
+  const entries = await getEventsData()
+
+  return entries.map((entry) => ({
+    slug: entry.slug,
+  }))
 }
 
 export async function generateMetadata(props: EventProps) {
