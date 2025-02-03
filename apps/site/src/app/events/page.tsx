@@ -10,8 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { findOrThrow } from '@/utils/findOrThrow'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -48,13 +47,10 @@ export default async function Events(props: Props) {
   const searchParams = await props.searchParams
   const events = await getEventsData()
 
-  // Abstract this
-  // Either make zod return the slug from the file name
-  // Or make a function that takes the slug and the list of events and returns the event
-  const featuredEvent = findOrThrow(
-    events,
-    (event) => event.slug === extractSlugFromFilename(featured_entry),
-  )
+  const featuredEvent = getFeaturedEntry({
+    entries: events,
+    featuredEntryPath: featured_entry,
+  })
 
   return (
     <PageLayout>

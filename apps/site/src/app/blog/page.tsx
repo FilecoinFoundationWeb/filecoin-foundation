@@ -7,8 +7,7 @@ import { attributes } from '@/content/pages/blog.md'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { findOrThrow } from '@/utils/findOrThrow'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -33,10 +32,10 @@ export const metadata = createMetadata({
 export default async function Blog() {
   const posts = await getBlogPostsData()
 
-  const featuredPost = findOrThrow(
-    posts,
-    (post) => post.slug === extractSlugFromFilename(featured_entry),
-  )
+  const featuredPost = getFeaturedEntry({
+    entries: posts,
+    featuredEntryPath: featured_entry,
+  })
 
   return (
     <PageLayout>
