@@ -37,6 +37,8 @@ seo:
 * [Introducing the Manual Pathway MetaAllocator Proposal](https://github.com/filecoin-project/Allocator-Governance/issues/282). As part of an ongoing effort to reduce delays in a refresh of DataCap distributions and improve accountability, the Filecoin Plus team proposed a new process to streamline allocation for Manual Allocators, where Manual Allocators would be consolidated under a single governance structure. [Join the community discussion.](https://github.com/filecoin-project/Allocator-Governance/issues/282)
 
 
-
-
 ## **Comms, Marketing, & Events**
+
+* FFDW released its [2024 Annual Report](https://ffdweb.org/blog/ffdw-2024-annual-report/). FFDW’s work includes supporting open-source software and protocols that safeguard critical data from centralized control and single points of failure. FFDW also empowers institutions to preserve vulnerable information by leveraging the resilience of decentralized storage. 
+* [Register for FDS-6 Toronto](https://www.fildev.io/FDS-6), May 12 and 13. Come together with Filecoin developers, builders, storage providers, and ecosystem members to contribute to the exciting trajectory of the Filecoin network. 
+* Dive into season 2 of DWeb Decoded. Subscribe to FF’s weekly podcast on [YouTube](https://www.youtube.com/playlist?list=PLp3zrT1ewY0micCUXk2G1B1-ukbpuclJy) and [Spotify](https://open.spotify.com/show/5GPjDV4AVv7xwmg0ByySac) for the latest advancements in decentralized tech and exciting projects in the Filecoin ecosystem.
