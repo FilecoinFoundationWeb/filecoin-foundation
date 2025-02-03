@@ -4,10 +4,13 @@ import convertObjectKeysToCamelCase from 'camelcase-keys'
 import matter from 'gray-matter'
 import { ZodError, ZodObject, type ZodRawShape } from 'zod'
 
-import { getFilePath, handleFileNotFound } from '@/utils/fileUtils'
+import {
+  getFilePath,
+  handleFileNotFound,
+  readFileContents,
+  checkPathExists,
+} from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
-
-import { readFileContents, checkPathExists } from '@/actions/fs'
 
 type GetMarkdownDataArgs<T extends ZodRawShape> = {
   slug: string
