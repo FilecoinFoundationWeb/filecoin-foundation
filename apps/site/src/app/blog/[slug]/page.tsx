@@ -20,24 +20,6 @@ type BlogPostProps = {
   params: Promise<SlugParams>
 }
 
-export async function generateStaticParams() {
-  const entries = await getBlogPostsData()
-  return entries.map(({ slug }) => ({ slug }))
-}
-
-export async function generateMetadata(props: BlogPostProps) {
-  const { slug } = await props.params
-  const data = getBlogPostData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: data.image?.src || graphicsData.blog.data.src,
-    },
-    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
-  })
-}
-
 export default async function BlogPost(props: BlogPostProps) {
   const { slug } = await props.params
   const data = getBlogPostData(slug)
@@ -68,4 +50,22 @@ export default async function BlogPost(props: BlogPostProps) {
       </div>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getBlogPostsData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: BlogPostProps) {
+  const { slug } = await props.params
+  const data = getBlogPostData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: data.image?.src || graphicsData.blog.data.src,
+    },
+    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
+  })
 }

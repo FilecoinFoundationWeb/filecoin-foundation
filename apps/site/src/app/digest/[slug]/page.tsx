@@ -23,24 +23,6 @@ type DigestArticleProps = {
   params: Promise<SlugParams>
 }
 
-export async function generateStaticParams() {
-  const entries = await getDigestArticlesData()
-  return entries.map(({ slug }) => ({ slug }))
-}
-
-export async function generateMetadata(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const data = getDigestArticleData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: data.image?.src || graphicsData.digest.data.src,
-    },
-    path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
-  })
-}
-
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
   const data = getDigestArticleData(slug)
@@ -66,4 +48,22 @@ export default async function DigestArticle(props: DigestArticleProps) {
       </div>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getDigestArticlesData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: DigestArticleProps) {
+  const { slug } = await props.params
+  const data = getDigestArticleData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: data.image?.src || graphicsData.digest.data.src,
+    },
+    path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
+  })
 }

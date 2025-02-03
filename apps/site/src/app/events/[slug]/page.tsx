@@ -32,24 +32,6 @@ type EventProps = {
   params: Promise<SlugParams>
 }
 
-export async function generateStaticParams() {
-  const entries = await getEventsData()
-  return entries.map(({ slug }) => ({ slug }))
-}
-
-export async function generateMetadata(props: EventProps) {
-  const { slug } = await props.params
-  const data = getEventData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: graphicsData.events1.data.src,
-    },
-    path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
-  })
-}
-
 export default async function EventEntry(props: EventProps) {
   const { slug } = await props.params
   const data = getEventData(slug)
@@ -149,4 +131,22 @@ export default async function EventEntry(props: EventProps) {
       />
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getEventsData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: EventProps) {
+  const { slug } = await props.params
+  const data = getEventData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: graphicsData.events1.data.src,
+    },
+    path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
+  })
 }

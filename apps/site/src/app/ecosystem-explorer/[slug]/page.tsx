@@ -29,24 +29,6 @@ type EcosystemProjectProps = {
   params: Promise<SlugParams>
 }
 
-export async function generateStaticParams() {
-  const entries = await getEcosystemProjectsData()
-  return entries.map(({ slug }) => ({ slug }))
-}
-
-export async function generateMetadata(props: EcosystemProjectProps) {
-  const { slug } = await props.params
-  const data = getEcosystemProjectData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: graphicsData.ecosystem.data.src,
-    },
-    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
-  })
-}
-
 const categories = getEcosystemCMSCategories()
 
 export default async function EcosystemProject(props: EcosystemProjectProps) {
@@ -111,4 +93,22 @@ export default async function EcosystemProject(props: EcosystemProjectProps) {
       />
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getEcosystemProjectsData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: EcosystemProjectProps) {
+  const { slug } = await props.params
+  const data = getEcosystemProjectData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: graphicsData.ecosystem.data.src,
+    },
+    path: `${PATHS.ECOSYSTEM_EXPLORER.path}/${data.slug}` as DynamicPathValues,
+  })
 }
