@@ -29,6 +29,14 @@ seo:
 
 ### Governance 
 
+* The Governance team shipped [V2 of FilPoll](https://poll.fil.org/dashboard), a hybrid tool comprising a temperature check tool, FIPs tracking, and community polling. The tool will support improved community participation in governance. 
+
 ### Fil Plus
+
+* [Filecoin Plus Community calls are scheduled for 2025](https://github.com/filecoin-project/Allocator-Governance/issues/272). These meetings are an opportunity to connect, share updates, and collaborate about the program. To ensure these meetings remain valuable and accessible to participants, join the [Allocator Governance discussion](https://github.com/filecoin-project/Allocator-Governance/discussions/271).
+* [Introducing the Manual Pathway MetaAllocator Proposal](https://github.com/filecoin-project/Allocator-Governance/issues/282). As part of an ongoing effort to reduce delays in a refresh of DataCap distributions and improve accountability, the Filecoin Plus team proposed a new process to streamline allocation for Manual Allocators, where Manual Allocators would be consolidated under a single governance structure. [Join the community discussion.](https://github.com/filecoin-project/Allocator-Governance/issues/282)
+
+
+
 
 ## **Comms, Marketing, & Events**
