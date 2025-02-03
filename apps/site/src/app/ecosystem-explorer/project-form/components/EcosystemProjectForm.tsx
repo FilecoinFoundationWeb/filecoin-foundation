@@ -37,7 +37,7 @@ import { FormSection } from './FormSection'
 type StringOrUndefined = string | undefined
 
 type ProjectFormProps = {
-  categoryOptions: Array<OptionType>
+  categoryOptions: Array<OptionType | string>
   initialValues: EcosystemProjectFormDataWithoutLogo
 }
 

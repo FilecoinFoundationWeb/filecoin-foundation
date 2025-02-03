@@ -8,6 +8,7 @@ import {
   ListboxOption,
   type OptionType,
 } from '@/components/Listbox/ListboxOption'
+import { ListboxOptionGroup } from '@/components/Listbox/ListboxOptionGroup'
 import {
   ListboxOptions,
   type ListboxOptionsProps,
@@ -17,7 +18,7 @@ export type FormListboxProps = {
   value: OptionType
   onChange: (value: OptionType) => void
   onBlur: () => void
-  options: Array<OptionType>
+  options: Array<OptionType | string>
   placeholder: string
   icon?: IconProps['component']
   buttonWidth?: `w-${keyof typeof theme.spacing}`
@@ -37,6 +38,10 @@ export function FormListbox({
   optionsPosition,
   ...rest
 }: FormListboxProps) {
+  const withGroupedOptions = options.some(
+    (option) => typeof option === 'string',
+  )
+
   return (
     <FormField label={label} hideLabel={hideLabel} error={error}>
       <Listbox
@@ -51,10 +56,21 @@ export function FormListbox({
           leadingIcon={icon}
           hasError={Boolean(error)}
         />
-        <ListboxOptions position={optionsPosition}>
-          {options.map((option) => (
-            <ListboxOption key={option.id} option={option} />
-          ))}
+        <ListboxOptions
+          withGroupedOptions={withGroupedOptions}
+          position={optionsPosition}
+        >
+          {options.map((option) =>
+            typeof option === 'string' ? (
+              <ListboxOptionGroup key={option} name={option} />
+            ) : (
+              <ListboxOption
+                key={option.id}
+                option={option}
+                withGroupedOptions={withGroupedOptions}
+              />
+            ),
+          )}
         </ListboxOptions>
       </Listbox>
     </FormField>

@@ -4,7 +4,6 @@ import { PATHS } from '@/constants/paths'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { getFrontmatter } from '@/utils/getFrontmatter'
-import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
@@ -13,7 +12,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
+import { getGroupedCategories } from '../utils/getGroupedCategories'
 
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
@@ -33,8 +32,7 @@ export const metadata = createMetadata({
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })
 
-const categories = getEcosystemCMSCategories()
-const categoryOptions = mapCMSOptionsToListboxFormat(categories)
+const groupedCategoryOptions = getGroupedCategories()
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
@@ -60,7 +58,7 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
       </div>
 
       <EcosystemProjectForm
-        categoryOptions={categoryOptions}
+        categoryOptions={groupedCategoryOptions}
         initialValues={initialValues}
       />
       {safeParams.data?.status === 'error' && (

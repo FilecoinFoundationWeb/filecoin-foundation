@@ -16,6 +16,7 @@ export type ListboxOptionsProps = {
   position?: Position
   matchButtonWidth?: boolean
   children: React.ReactNode
+  withGroupedOptions?: boolean
 }
 
 const GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX = 8
@@ -25,6 +26,7 @@ export function ListboxOptions({
   children,
   position = 'bottom start',
   matchButtonWidth,
+  withGroupedOptions,
 }: ListboxOptionsProps) {
   return (
     <HeadlessUIListboxOptions
@@ -32,8 +34,9 @@ export function ListboxOptions({
       as={as}
       anchor={{ to: position, gap: GAP_BETWEEN_BUTTON_AND_OPTIONS_IN_PX }}
       className={clsx(
-        'min-w-[var(--button-width)] rounded-lg border border-brand-100 bg-brand-800 py-2 text-brand-100 focus:brand-outline focus-within:outline-2',
+        'min-w-[var(--button-width)] rounded-lg border border-brand-100 bg-brand-800 text-brand-100 focus:brand-outline focus-within:outline-2',
         matchButtonWidth && 'w-[var(--button-width)]',
+        withGroupedOptions ? 'pt-2' : 'py-2',
       )}
     >
       {children}
