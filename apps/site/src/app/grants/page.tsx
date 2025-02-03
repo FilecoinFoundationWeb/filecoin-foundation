@@ -20,6 +20,8 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
+import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
+
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
@@ -30,7 +32,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 const {
   header,
   seo,
-  featured_grant_graduates: featuredGrantGraduates,
+  featured_grant_graduates: featuredGrantGraduatesPaths,
 } = FrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
@@ -42,7 +44,11 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-export default function Grants() {
+export default async function Grants() {
+  const featuredGrantGraduates = await getFeaturedEcosystemProjects(
+    featuredGrantGraduatesPaths,
+  )
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />

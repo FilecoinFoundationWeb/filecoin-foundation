@@ -2,11 +2,11 @@
 
 import path from 'path'
 
+import glob from 'fast-glob'
 import { ZodObject, type ZodRawShape } from 'zod'
 
 import { extractSlugFromFilename } from '@/utils/fileUtils'
 
-import { getFilenamesFromDirectory } from '@/actions/fs'
 import { getMarkdownDataAsync } from '@/actions/getMarkdownDataAsync'
 
 export type GetAllMarkdownDataArgs<T extends ZodRawShape> = {
@@ -14,14 +14,16 @@ export type GetAllMarkdownDataArgs<T extends ZodRawShape> = {
   zodSchema: ZodObject<T>
 }
 
-// Can be renamed to getAllMarkdownData (no async) once migration to async functions is complete
-export async function getAllMarkdownDataAsync<T extends ZodRawShape>({
+export async function getAllMarkdownData<T extends ZodRawShape>({
   directoryPath,
   zodSchema,
 }: GetAllMarkdownDataArgs<T>) {
   try {
     const directory = path.join(process.cwd(), directoryPath)
-    const filenames = await getFilenamesFromDirectory(directory)
+
+    const filenames = await glob('**/*.md', {
+      cwd: directory,
+    })
 
     return Promise.all(
       filenames.map((filename) => {

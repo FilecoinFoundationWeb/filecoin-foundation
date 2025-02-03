@@ -36,6 +36,7 @@
     "crypto-js": "^4.2.0",
     "date-fns": "^4.1.0",
     "decap-cms-app": "github:FilecoinFoundationWeb/decap-cms#main",
+    "fast-glob": "^3.3.3",
     "frontmatter-markdown-loader": "^3.7.0",
     "gray-matter": "^4.0.3",
     "joi": "^17.13.3",

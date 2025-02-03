@@ -1,6 +1,7 @@
 import { PATHS } from '@/constants/paths'
 
-import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
 import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFrontmatterSchema'
@@ -13,10 +14,10 @@ export function getEcosystemProjectData(slug: string) {
   return transformEcosystemProjectData(data)
 }
 
-export function getEcosystemProjectsData() {
-  const allProjects = getAllMarkdownData({
+export async function getEcosystemProjectsData() {
+  const allProjects = await getAllMarkdownData({
     directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodParser: EcosystemProjectFrontmatterSchema.parse,
+    zodSchema: EcosystemProjectFrontmatterSchema,
   })
 
   return allProjects.map(transformEcosystemProjectData)
