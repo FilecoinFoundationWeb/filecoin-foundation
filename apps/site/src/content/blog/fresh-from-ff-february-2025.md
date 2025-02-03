@@ -17,9 +17,11 @@ seo:
 
 **Join the Filecoin community at ETHDenver!** Plug in with the Filecoin ecosystem, learn about the network's latest developments, and discover how you can help build the base layer of the decentralized web. Learn more about Filecoin community events and how you can connect on the ground. [Browse the community events](https://fil.org/events/filecoin-ethdenver-2025).
 
-
-
 ## Ecosystem 
+
+* On January 27, FF hosted the first of twelve APAC [AMAs](https://x.com/MetaEraHK/status/1883862065183703313). The session focused on APAC Builder Opportunities in collaboration with MetaEra, drawing 24,000+ listeners to the X Space. 
+* The session shared important updates on gas changes and the context for ongoing developments. 
+* It also featured presentations from organizations including Secured Finance, FiL-B, Titan Network, Zetablock, and Storswift, which shared perspectives on opportunities in the data marketplace, AI agents, stablecoins, and cross-chain collaboration.
 
 ## Network Operations
 
