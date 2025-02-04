@@ -58,6 +58,16 @@ program:
     - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
       start-date: 2025-02-26T14:30:00.000Z
       location: "Denver, CO "
+      description: On February 26th, the Storacha Network is hosting an exclusive,
+        invite-only luncheon at ETHDenver, bringing together top developers,
+        ecosystem partners, and web3 innovators for a curated networking
+        experience. This private gathering is designed to foster meaningful
+        conversations, explore collaboration opportunities, and provide an
+        inside look at how Storacha is shaping the future of decentralized
+        storage. Attendees will enjoy a thoughtfully crafted meal, engaging
+        discussions, and a chance to connect with some of the brightest minds in
+        the space. This event is invite-only with limited seating, ensuring a
+        high-value experience for all participants.
 seo:
   twitter:
     card: summary
