@@ -13,6 +13,8 @@ location:
   primary: Hong Kong
   region: apac-asia
 start-date: 2025-02-17T09:00:00.000Z
+image:
+  src: /assets/images/f-at-hk25.webp
 program:
   events:
     - title: "Decentralized Intelligence: Filecoin x AI Night. Hosted by NDLabs,
@@ -26,7 +28,7 @@ schedule:
   title: Speaking Engagements
   days:
     - events:
-        - title: "Clara Tsao at DeAI Summit"
+        - title: Clara Tsao at DeAI Summit
           tag: Registration Needed
           speakers:
             - name: Clara Tsao
@@ -57,8 +59,7 @@ schedule:
     - events:
         - tag: Registration Needed
           title: "Clara Tsao at ALPHA: HONG KONG EDITION"
-          description:
-            "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
+          description: "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
             2025 and beyond"
           speakers:
             - name: Clara Tsao
