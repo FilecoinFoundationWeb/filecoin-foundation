@@ -39,7 +39,7 @@ seo:
 - [Filecoin Plus Community calls are scheduled for 2025](https://github.com/filecoin-project/Allocator-Governance/issues/272). These meetings are an opportunity to connect, share updates, and collaborate about the program. To ensure these meetings remain valuable and accessible to participants, join the [Allocator Governance discussion](https://github.com/filecoin-project/Allocator-Governance/discussions/271).
 - [Introducing the Manual Pathway MetaAllocator Proposal](https://github.com/filecoin-project/Allocator-Governance/issues/282). As part of an ongoing effort to reduce delays in a refresh of DataCap distributions and improve accountability, the Filecoin Plus team proposed a new process to streamline allocation for Manual Allocators, where Manual Allocators would be consolidated under a single governance structure. [Join the community discussion.](https://github.com/filecoin-project/Allocator-Governance/issues/282)
 
-## **Comms, Marketing, & Events**
+## Comms, Marketing, & Events
 
 - FFDW released its [2024 Annual Report](https://ffdweb.org/blog/ffdw-2024-annual-report/). FFDW’s work includes supporting open-source software and protocols that safeguard critical data from centralized control and single points of failure. FFDW also empowers institutions to preserve vulnerable information by leveraging the resilience of decentralized storage. 
 - [Register for FDS-6 Toronto](https://www.fildev.io/FDS-6), May 12 and 13. Come together with Filecoin developers, builders, storage providers, and ecosystem members to contribute to the exciting trajectory of the Filecoin network. 
