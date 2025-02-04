@@ -32,7 +32,7 @@ type WrapperProps = {
 
 export function FilterContainer({ children }: LayoutProps) {
   return (
-    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr]">
       {children}
     </div>
   )
@@ -44,9 +44,9 @@ FilterContainer.MobileFiltersAndResults = function MobileFiltersAndResults({
   sortComponent,
 }: MobileFiltersProps) {
   return (
-    <aside className="flex flex-col gap-3 sm:flex-row lg:hidden">
+    <aside className="flex flex-col gap-3 sm:flex-row md:gap-6 lg:hidden">
       {searchComponent}
-      <div className="flex flex-1 gap-3 sm:flex-row">
+      <div className="flex flex-1 gap-3 sm:flex-row md:gap-6">
         {filterComponents.map((filterComponent, index) => (
           <div
             key={index}
@@ -115,7 +115,7 @@ FilterContainer.PaginationWrapper = function PaginationWrapper({
 
 FilterContainer.MainWrapper = function MainWrapper({ children }: WrapperProps) {
   return (
-    <div className="flex w-full flex-col gap-4 lg:flex-1 lg:gap-6">
+    <div className="flex w-full flex-col gap-6 lg:flex-1 lg:gap-6">
       {children}
     </div>
   )
