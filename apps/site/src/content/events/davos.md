@@ -296,6 +296,8 @@ sponsors:
       image:
         src: /assets/images/finsat-white-logo-bg-transparent-web.webp
       website: https://www.finsat.space/
+recap:
+  youtube-playlist-url: https://www.youtube.com/playlist?list=PLp3zrT1ewY0mjCUeq_pEFH_H4J-376pRr
 seo:
   twitter:
     card: summary
