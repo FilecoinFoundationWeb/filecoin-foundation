@@ -2,7 +2,7 @@
 header:
   title: Events
   description: Filecoin Foundation Events
-featured_entry: apps/site/src/content/events/agi-cryptography-security-multipolar-scenarios-workshop.md
+featured_entry: src/content/events/asia-hackathon-season-2021.md
 seo:
   title: Filecoin Foundation Events – Connect & Collaborate
   description: Explore upcoming Filecoin Foundation, Web3, and community events.
