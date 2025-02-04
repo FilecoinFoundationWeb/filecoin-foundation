@@ -24,6 +24,5 @@ seo:
     fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS,
     SNS, Glitter, etc."
 ---
-AIWS is a modular network for generating and managing autonomous AI agents fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS, SNS, Glitter, etc.
 
-All AI agents' metadata and prompt are stored on Filecoin, all data of AI agents are stored on Filecoin.
+AIWS is a modular network for generating and managing autonomous AI agents fully built on decentralized stacks: IPFS, Filecoin, Solana, Ethereum, ENS, SNS, Glitter, etc. All AI agents’ metadata, prompts, and data are stored on Filecoin.
