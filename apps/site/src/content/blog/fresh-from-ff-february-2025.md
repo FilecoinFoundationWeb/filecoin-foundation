@@ -4,14 +4,14 @@ created-on: 2025-02-03T15:32:00.000Z
 updated-on: 2025-02-03T15:32:00.000Z
 published-on: 2025-02-03T15:32:00.000Z
 category: reports
-description: "Check out the latest updates about what Filecoin Foundation has been up to. "
+description: "Check out the latest updates about what Filecoin Foundation has been up to."
 image:
   src: /assets/images/0215-ff-22-.webp
 seo:
   twitter:
     card: summary
   description: "Check out the latest updates about what Filecoin Foundation has
-    been up to in February, 2025. "
+    been up to in February, 2025."
 ---
 
 **Filecoin Foundation published [the 2024 Annual Report on January 13](/blog/filecoin-foundation-2024-annual-report).** In the report, you’ll read about the ways that Filecoin Foundation supported the Filecoin community in 2024 and learn about FF’s strategic priorities in 2025, including FF’s top ecosystem-facing objective in 2025: to make Filecoin work seamlessly and find product-market fit. [Read more](/blog/filecoin-foundation-2024-annual-report). 
