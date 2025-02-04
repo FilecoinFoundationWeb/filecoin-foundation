@@ -11,11 +11,12 @@ import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import { ControlledFormListbox } from '@/components/Form/ControlledFormListbox'
+import { ControlledFormListboxWithGroups } from '@/components/Form/ControlledFormListboxWithGroups'
 import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea'
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
-import type { OptionType } from '@/components/Listbox/ListboxOption'
+import type { GroupedOption } from '@/components/Form/FormListboxWithGroups'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
@@ -37,12 +38,12 @@ import { FormSection } from './FormSection'
 type StringOrUndefined = string | undefined
 
 type ProjectFormProps = {
-  categoryOptions: Array<OptionType>
+  groupedCategoryOptions: Array<GroupedOption>
   initialValues: EcosystemProjectFormDataWithoutLogo
 }
 
 export function EcosystemProjectForm({
-  categoryOptions,
+  groupedCategoryOptions,
   initialValues,
 }: ProjectFormProps) {
   const yearOptions = getYearOptions('desc')
@@ -131,11 +132,11 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
 
-        <ControlledFormListbox<EcosystemProjectFormData>
+        <ControlledFormListboxWithGroups<EcosystemProjectFormData>
           name="category"
           label="Category"
           placeholder="Select Category"
-          options={categoryOptions}
+          groups={groupedCategoryOptions}
           disabled={isSubmitting}
         />
 
