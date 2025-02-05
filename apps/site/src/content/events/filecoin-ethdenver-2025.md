@@ -77,6 +77,21 @@ program:
         ecosystem, powered by CHOMP.
       location: Birch Road (The Highlands)
       external-link: https://lu.ma/solanaspeed
+    - title: Decentralized Media Summit
+      start-date: 2025-02-26T08:30:00.000Z
+      end-date: 2025-02-26T12:00:00.000Z
+      location: Milk Market
+      external-link: https://lu.ma/i9gatw59
+      description: ​Join pioneers of decentralized media as they chart out a new
+        category within Web3 and media innovation – tackling the future of news
+        and content distribution while combating today’s dystopia of
+        disinformation and centralized editorial control. Experts from the
+        Decentralized Storage Alliance, Association of Crypto Journalists and
+        Researchers (ACJR), CTRL+X, Coinage Media, Hardfork Media and Distro
+        Media will break down the significance of decentralized data storage and
+        the potential applications for blockchain tools. This all comes against
+        a backdrop of propaganda wars and severe financial constraints that have
+        shrunken the ranks of professional journalists and eroded public trust.
 seo:
   twitter:
     card: summary
