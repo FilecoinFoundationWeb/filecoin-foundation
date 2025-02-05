@@ -243,7 +243,7 @@ collections:
 
       - name: "ecosystem-explorer"
         label: "Ecosystem Explorer"
-        file: "apps/site/src/content/pages/ecosystem-explorer.md"
+        file: "apps/site/src/content/pages/ecosystem-explorer/ecosystem-explorer.md"
         preview_path: "ecosystem-explorer"
         fields:
           - *header_config
