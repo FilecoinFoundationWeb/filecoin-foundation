@@ -68,6 +68,15 @@ program:
         discussions, and a chance to connect with some of the brightest minds in
         the space. This event is invite-only with limited seating, ensuring a
         high-value experience for all participants.
+    - title: " Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
+      start-date: 2025-02-26T16:00:00.000Z
+      end-date: 2026-02-26T21:00:00.000Z
+      description: Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
+        Backer/Builder matchmaking, crypto panels, and networking. Explore
+        emerging trends, investment strategies, and the future of the Solana
+        ecosystem, powered by CHOMP.
+      location: Birch Road (The Highlands)
+      external-link: https://lu.ma/solanaspeed
 seo:
   twitter:
     card: summary
