@@ -13,7 +13,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getGroupedCategories } from '../utils/getGroupedCategories'
+import { getGroupedCategoryOptions } from '../utils/getGroupedCategoryOptions'
 
 import { EcosystemProjectForm } from './components/EcosystemProjectForm'
 import { ErrorNotification } from './components/ErrorNotification'
@@ -30,7 +30,7 @@ export const metadata = createMetadata({
   path: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
 })
 
-const groupedCategories = getGroupedCategories()
+const groupedCategoryOptions = getGroupedCategoryOptions()
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
@@ -56,7 +56,7 @@ export default async function EcosystemExplorerProjectForm(props: Props) {
       </div>
 
       <EcosystemProjectForm
-        groupedCategoryOptions={groupedCategories}
+        groupedCategoryOptions={groupedCategoryOptions}
         initialValues={initialValues}
       />
       {safeParams.data?.status === 'error' && (

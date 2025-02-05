@@ -16,7 +16,7 @@ import { ControlledFormTextarea } from '@/components/Form/ControlledFormTextarea
 import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
-import type { GroupedOption } from '@/components/Form/FormListboxWithGroups'
+import { type GroupedOption } from '@/components/Form/FormListboxWithGroups'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
@@ -136,7 +136,7 @@ export function EcosystemProjectForm({
           name="category"
           label="Category"
           placeholder="Select Category"
-          groups={groupedCategoryOptions}
+          groupedOptions={groupedCategoryOptions}
           disabled={isSubmitting}
         />
 

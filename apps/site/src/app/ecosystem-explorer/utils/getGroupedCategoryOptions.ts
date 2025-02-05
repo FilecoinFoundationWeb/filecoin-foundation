@@ -4,7 +4,7 @@ import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxForm
 
 import { getEcosystemCMSCategories } from './getEcosystemCMSCategories'
 
-export function getGroupedCategories() {
+export function getGroupedCategoryOptions() {
   const categories = getEcosystemCMSCategories()
   const groupedCategories = groupBy((item) => item.group, categories)
   const entries = Object.entries(groupedCategories)

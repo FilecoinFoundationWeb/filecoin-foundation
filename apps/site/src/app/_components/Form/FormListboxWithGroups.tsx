@@ -13,14 +13,14 @@ export type GroupedOption = {
 }
 
 export type FormListboxWithGroupsProps = Omit<FormListboxProps, 'options'> & {
-  groups: Array<GroupedOption>
+  groupedOptions: Array<GroupedOption>
 }
 
 export function FormListboxWithGroups({
   label,
   hideLabel,
   error,
-  groups,
+  groupedOptions,
   value,
   placeholder,
   icon,
@@ -43,7 +43,7 @@ export function FormListboxWithGroups({
           hasError={Boolean(error)}
         />
         <ListboxOptions as="div" position={optionsPosition}>
-          {groups.map(({ label, options }) => (
+          {groupedOptions.map(({ label, options }) => (
             <ListboxOptionGroup key={label} label={label}>
               {options.map((option) => (
                 <ListboxOption key={option.id} grouped option={option} />
