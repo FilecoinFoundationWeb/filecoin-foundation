@@ -85,6 +85,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/qingwarthen/
       image:
         src: /assets/images/qing-warthen.jpg
+    - name: Yan Bo Ng
+      title: Strategic Partnerships Lead
+      linkedin: https://www.linkedin.com/in/ngyanbo/
+      image:
+        src: /assets/images/yan-bo-hk-headshot.jpeg
+      company: Filecoin Foundation
 seo:
   twitter:
     card: summary
