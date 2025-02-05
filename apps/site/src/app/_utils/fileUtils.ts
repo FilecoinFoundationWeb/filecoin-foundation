@@ -1,25 +1,19 @@
-import fs from 'fs'
+import fs from 'fs/promises'
 import path from 'path'
 
 import { notFound } from 'next/navigation'
 
-import matter from 'gray-matter'
-
 import { CONTENT_ROOT, MARKDOWN_EXTENSION } from '@/constants/paths'
 
-export function extractSlugFromFilename(filename: string): string {
+export function extractSlugFromFilename(filename: string) {
   return path.parse(filename).name
 }
 
-export function getFilePath(directoryPath: string, slug: string): string {
+export function getFilePath(directoryPath: string, slug: string) {
   return path.join(directoryPath, `${slug}.md`)
 }
 
-export function getFilenamesFromDirectory(directory: string): Array<string> {
-  return fs.readdirSync(directory)
-}
-
-export function handleFileNotFound(filePath: string): void {
+export function handleFileNotFound(filePath: string) {
   console.error(`File not found: ${filePath}`)
   notFound()
 }
@@ -28,13 +22,15 @@ export function isValidMarkdownPath(path: string) {
   return path.startsWith(CONTENT_ROOT) && path.endsWith(MARKDOWN_EXTENSION)
 }
 
-export function parseMarkdown(fileContents: string): {
-  data: object
-  content: string
-} {
-  return matter(fileContents)
+export function readFileContents(filePath: string) {
+  return fs.readFile(filePath, 'utf8')
 }
 
-export function readFileContents(filePath: string): string {
-  return fs.readFileSync(filePath, 'utf8')
+export async function checkPathExists(path: string) {
+  try {
+    await fs.access(path, fs.constants.F_OK)
+    return true
+  } catch {
+    return false
+  }
 }

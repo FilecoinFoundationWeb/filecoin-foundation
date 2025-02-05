@@ -25,7 +25,7 @@ type DigestArticleProps = {
 
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
-  const data = getDigestArticleData(slug)
+  const data = await getDigestArticleData(slug)
 
   const { title, issueNumber, articleNumber, image, authors, content } = data
 
@@ -57,7 +57,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(props: DigestArticleProps) {
   const { slug } = await props.params
-  const data = getDigestArticleData(slug)
+  const data = await getDigestArticleData(slug)
 
   return createMetadata({
     seo: {
