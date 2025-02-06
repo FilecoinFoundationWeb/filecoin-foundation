@@ -1,5 +1,7 @@
+@reference '../../_styles/globals.css';
+
 .tableWrapper {
-  @apply w-full overflow-x-auto rounded-lg focus:brand-outline;
+  @apply focus:brand-outline w-full overflow-x-auto rounded-lg;
 
   &[data-freeze-header='true'] {
     @apply max-h-screen;
@@ -27,7 +29,7 @@
 }
 
 .row {
-  @apply h-[52px] bg-brand-800;
+  @apply bg-brand-800 h-[52px];
 
   tbody & {
     @apply odd:bg-brand-700 even:bg-brand-800;
@@ -35,7 +37,7 @@
 }
 
 .cell {
-  @apply whitespace-nowrap px-5 text-left font-normal;
+  @apply px-5 text-left font-normal whitespace-nowrap;
 
   &:first-child {
     @apply pl-10;
@@ -46,6 +48,6 @@
   }
 
   thead & {
-    @apply border-b border-brand-500;
+    @apply border-brand-500 border-b;
   }
 }

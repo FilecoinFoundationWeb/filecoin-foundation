@@ -5,7 +5,7 @@ import {
 } from '@tanstack/react-table'
 import { clsx } from 'clsx'
 
-import styles from './Table.module.scss'
+import styles from './Table.module.css'
 
 type TableHeadProps<Data extends RowData> = {
   headerGroups: Array<HeaderGroup<Data>>

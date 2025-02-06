@@ -5,7 +5,7 @@ import type { StatisticData } from '@/orbit/data/statisticsData'
 export function StatisticCard({ icon, value, description }: StatisticData) {
   return (
     <li className="flex min-h-32 rounded-lg border border-brand-300 p-1">
-      <figure className="grid w-1/3 place-items-center rounded bg-brand-500">
+      <figure className="grid w-1/3 place-items-center rounded-sm bg-brand-500">
         <Icon component={icon} color="brand-200" size={40} />
       </figure>
 

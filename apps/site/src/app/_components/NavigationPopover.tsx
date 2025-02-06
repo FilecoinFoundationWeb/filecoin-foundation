@@ -34,7 +34,7 @@ export function NavigationPopover({
       </PopoverButton>
       <PopoverPanel
         transition
-        className="z-10 transition duration-200 ease-out data-[closed]:translate-y-1 data-[open]:translate-y-0 data-[closed]:opacity-0 data-[open]:opacity-100"
+        className="z-10 transition duration-200 ease-out data-closed:translate-y-1 data-open:translate-y-0 data-closed:opacity-0 data-open:opacity-100"
         anchor={{
           to: 'bottom',
           gap: SPACE_BETWEEN_PANEL_AND_BUTTON,

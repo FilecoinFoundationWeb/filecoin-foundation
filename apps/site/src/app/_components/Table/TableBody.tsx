@@ -1,7 +1,7 @@
 import { flexRender, type RowModel, type RowData } from '@tanstack/react-table'
 import { clsx } from 'clsx'
 
-import styles from './Table.module.scss'
+import styles from './Table.module.css'
 
 type TableBodyProps<Data extends RowData> = {
   rowModel: RowModel<Data>

@@ -1,6 +1,6 @@
 import { clsx } from 'clsx'
 
-import styles from './Table.module.scss'
+import styles from './Table.module.css'
 
 type TableProps = {
   freezeFirstColumn?: boolean
@@ -23,7 +23,7 @@ export function Table({
       data-freeze-header={freezeHeader}
       className={clsx(
         styles.tableWrapper,
-        withBorder && 'border border-brand-300',
+        withBorder && 'border-brand-300 border',
       )}
     >
       <table

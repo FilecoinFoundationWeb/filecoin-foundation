@@ -58,7 +58,7 @@ export function Tabs({ schedule }: TabsProps) {
         {sortedDays.map((day) => (
           <Tab
             key={formatDate(day.date)}
-            className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-[hover]:bg-brand-700 data-[selected]:bg-brand-700 data-[selected]:text-brand-400"
+            className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-hover:bg-brand-700 data-selected:bg-brand-700 data-selected:text-brand-400"
           >
             {formatDate(day.date)}
           </Tab>
