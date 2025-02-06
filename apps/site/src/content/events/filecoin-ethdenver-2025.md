@@ -92,6 +92,26 @@ program:
         the potential applications for blockchain tools. This all comes against
         a backdrop of propaganda wars and severe financial constraints that have
         shrunken the ranks of professional journalists and eroded public trust.
+    - title: "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
+        Foundation"
+      start-date: 2025-02-27T17:00:00.000Z
+      end-date: 2025-02-27T20:00:00.000Z
+      location: Denver, CO
+      description: Join us at GLIF's Pool Party for a fun-filled evening with lending
+        & staking pool founders, developers, and investors! Enjoy food, drinks,
+        and watch DeFi protocols compete in a Pool tournament with over $1k in
+        cash prizes.
+      external-link: https://lu.ma/444wnmwb
+    - title: DePIN Day Denver 2025, Hosted by Fluence, Sponsored by Filecoin
+        Foundation
+      start-date: 2025-02-26T10:00:00.000Z
+      external-link: https://lu.ma/depin-denver
+      description: ​​​Join us for the all-day event full of vital conversations around
+        Decentralized Physical Infrastructure Networks. Connect with DePIN
+        founders, researchers, developers and enthusiasts. Talks, panel
+        discussions and useful networking are waiting for you during ETHDenver
+        Week!​
+      location: Denver, CO
 seo:
   twitter:
     card: summary
