@@ -1,3 +1,133 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+@plugin "@headlessui/tailwindcss";
+@plugin "@tailwindcss/forms";
+
+:root {
+  --outline-brand: 2px solid var(--color-brand-100);
+  --outline-brand-offset: 0px;
+  --outline-brand-border-color: transparent;
+}
+
+@theme {
+  --color-brand-100: #eff6fc;
+  --color-brand-200: #d8ebfb;
+  --color-brand-300: #73b4ed;
+  --color-brand-400: #0090ff;
+  --color-brand-500: #154ed9;
+  --color-brand-600: #0621a4;
+  --color-brand-700: #06094e;
+  --color-brand-800: #08072e;
+
+  --spacing-readable: 60ch;
+
+  --animate-slide-in-from-top: slide-in-from-top 300ms
+    cubic-bezier(0.41, 0.73, 0.51, 1.02);
+  --animate-shrink-and-fade-out: shrink-and-fade-out 150ms ease-in forwards;
+
+  @keyframes slide-in-from-top {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shrink-and-fade-out {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+  }
+}
+
+@utility brand-outline {
+  outline: var(--outline-brand);
+  outline-offset: var(--outline-brand-offset);
+  border-color: var(--outline-brand-border-color);
+}
+
+@utility prose {
+  --tw-prose-body: var(--color-brand-100);
+  --tw-prose-headings: var(--color-brand-100);
+  --tw-prose-bold: var(--color-brand-100);
+  --tw-prose-links: var(--color-brand-300);
+  --tw-prose-quotes: var(--color-brand-100);
+  --tw-prose-quote-borders: var(--color-brand-300);
+  --tw-prose-counters: var(--color-brand-100);
+  --tw-prose-bullets: var(--color-brand-100);
+  --tw-prose-code: var(--color-brand-100);
+  --tw-prose-pre-bg: var(--color-brand-700);
+  --tw-prose-pre-code: var(--color-brand-100);
+  --tw-prose-captions: var(--color-neutral-400);
+  --tw-prose-td-borders: var(--color-brand-300);
+  --tw-prose-th-borders: var(--color-brand-300);
+
+  & a {
+    @apply no-underline;
+
+    &:hover {
+      @apply underline;
+    }
+
+    &:focus,
+    &:focus-visible {
+      @apply brand-outline;
+    }
+  }
+
+  & code {
+    &::before,
+    &::after {
+      @apply content-none!;
+    }
+  }
+
+  & pre {
+    @apply border-brand-600 border border-solid;
+  }
+
+  & iframe {
+    @apply w-full;
+
+    &[src*='youtube.com'] {
+      @apply aspect-video h-auto w-full;
+    }
+  }
+
+  & figure {
+    @apply text-center;
+  }
+
+  & figcaption {
+    @apply text-left text-sm;
+  }
+
+  & table thead th {
+    @apply text-brand-300;
+  }
+}
+
+@layer components {
+  .text-link {
+    @apply text-brand-300;
+
+    &:hover {
+      @apply underline;
+    }
+
+    &:focus {
+      @apply brand-outline;
+    }
+  }
+
+  .toc-header {
+    @apply text-brand-200 text-sm font-semibold uppercase;
+  }
+}

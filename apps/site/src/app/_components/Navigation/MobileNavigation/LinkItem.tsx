@@ -10,7 +10,6 @@ import { isExternalLink } from '@/utils/linkUtils'
 
 import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
-import styles from '@/components/TextLink/TextLink.module.scss'
 
 export type LinkItemProps = {
   label: string
@@ -25,16 +24,12 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
     nested && 'ml-6',
     isExternal && 'inline-flex items-center gap-1',
   )
-  const linkStyles = clsx(
-    styles.base,
-    "relative before:absolute before:inset-0 before:-m-3.5 before:content-['']",
-  )
 
   return (
     <li className={containerStyles}>
       <BaseLink
         href={href}
-        className={linkStyles}
+        className="text-link relative before:absolute before:inset-0 before:-m-3.5 before:content-['']"
         onClick={() => setOpen(false)}
       >
         {label}

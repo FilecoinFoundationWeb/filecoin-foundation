@@ -1,6 +1,8 @@
 {
   "singleQuote": true,
   "semi": false,
+  "tailwindStyleSheet": "./src/app/_styles/globals.css",
+  "tailwindFunctions": ["clsx"],
   "overrides": [
     {
       "files": "*.md",
