@@ -26,7 +26,7 @@ export function ListboxOption<Value extends OptionType>({
       as={as}
       value={option}
       disabled={option.disabled}
-      className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 data-[disabled]:cursor-not-allowed ui-active:bg-brand-500"
+      className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 data-disabled:cursor-not-allowed ui-active:bg-brand-500"
     >
       <span>
         {option.name}
@@ -35,7 +35,7 @@ export function ListboxOption<Value extends OptionType>({
         )}
       </span>
 
-      <span className="invisible mb-px group-data-[selected]:visible">
+      <span className="invisible mb-px group-data-selected:visible">
         <Icon component={Check} size={20} />
       </span>
     </HeadlessUIListboxOption>
