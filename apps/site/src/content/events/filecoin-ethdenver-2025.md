@@ -112,6 +112,16 @@ program:
         discussions and useful networking are waiting for you during ETHDenver
         Week!​
       location: Denver, CO
+speakers:
+  kicker: CONNECT WITH US
+  title: Meet The Team
+  speakers_list:
+    - name: Clara Tsao
+      title: "Founding Officer "
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
+      image:
+        src: /assets/images/clara-tsao-davos.webp
 seo:
   twitter:
     card: summary
