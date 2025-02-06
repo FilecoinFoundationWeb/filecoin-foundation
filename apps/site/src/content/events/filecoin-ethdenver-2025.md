@@ -112,6 +112,14 @@ program:
         discussions and useful networking are waiting for you during ETHDenver
         Week!​
       location: Denver, CO
+    - title: "State of DePIN VIP Dinner, Sponsored by Filecoin Foundation "
+      start-date: 2025-02-26T19:00:00.000Z
+      end-date: 2025-02-26T22:00:00.000Z
+      description: Join Light Node Ventures for an exclusive, invite-only dinner and
+        networking event during ETH Denver. Connect with executives, venture
+        capitalists, influencers, media, and DePIN companies in an intimate
+        setting.
+      location: Denver, CO
 seo:
   twitter:
     card: summary
