@@ -21,6 +21,7 @@ program:
         Supported by Filecoin Orbit and Filecoin Foundation"
       start-date: 2025-02-17T17:00:00.000Z
       location: Maggie Choo's
+      external-link: https://lu.ma/9462sbyn
   kicker: FIND US AROUND HONG KONG
   title: Featured Events
 schedule:
@@ -84,6 +85,12 @@ speakers:
       linkedin: https://www.linkedin.com/in/qingwarthen/
       image:
         src: /assets/images/qing-warthen.jpg
+    - name: Yan Bo Ng
+      title: Strategic Partnerships Lead
+      linkedin: https://www.linkedin.com/in/ngyanbo/
+      image:
+        src: /assets/images/yan-bo-hk-headshot.jpeg
+      company: Filecoin Foundation
 seo:
   twitter:
     card: summary
