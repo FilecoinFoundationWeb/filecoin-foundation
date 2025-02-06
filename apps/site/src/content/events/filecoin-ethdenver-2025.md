@@ -117,7 +117,7 @@ speakers:
   title: Meet The Team
   speakers_list:
     - name: Clara Tsao
-      title: "Founding Officer "
+      title: "Founding Officer"
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/claratsao/
       image:
