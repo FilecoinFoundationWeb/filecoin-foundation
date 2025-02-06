@@ -13,8 +13,6 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
-import styles from '@/security/maturity-model/components/TableOfContents.module.scss'
-
 type PluggableList = Parameters<typeof ReactMarkdown>[0]['rehypePlugins']
 
 export type MarkdownContentProps = {
@@ -113,7 +111,7 @@ function addTableOfContentsHeader(nodeTree: HtmlElementNode) {
   const headerNode = {
     type: 'element',
     tagName: 'p',
-    properties: { className: styles.tableOfContentsHeader },
+    properties: { className: 'toc-header' },
     children: [{ type: 'text', value: 'Table of Contents' }],
   }
 

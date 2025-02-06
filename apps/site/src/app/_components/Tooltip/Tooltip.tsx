@@ -5,7 +5,7 @@ import { useId, useState, type ReactNode } from 'react'
 import * as RadixPopover from '@radix-ui/react-popover'
 import { clsx } from 'clsx'
 
-import styles from './tooltip.module.scss'
+import styles from './tooltip.module.css'
 
 type TooltipRenderProps = {
   open: boolean
@@ -42,7 +42,7 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
           side={side}
           role="tooltip"
           className={clsx(
-            'max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 focus-visible:outline-none',
+            'bg-brand-200 text-brand-800 max-w-xs rounded-lg px-4 py-3 text-sm leading-tight focus-visible:outline-hidden',
             styles['tooltip-animation'],
           )}
         >

@@ -1,3 +1,5 @@
+@reference '../../_styles/globals.css';
+
 @keyframes slide-up-and-fade {
   from {
     opacity: 0;

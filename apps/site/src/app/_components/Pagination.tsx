@@ -84,7 +84,7 @@ export function Pagination({
           aria-disabled={!canGoBack}
           disabled={!canGoBack}
           className={clsx(
-            'flex items-center gap-x-1.5 rounded bg-brand-300 p-1 px-2 transition',
+            'flex items-center gap-x-1.5 rounded-sm bg-brand-300 p-1 px-2 transition',
             canGoBack
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
@@ -111,7 +111,7 @@ export function Pagination({
               <button
                 aria-label={`Go to page ${item}`}
                 className={clsx(
-                  'h-full w-full rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white',
+                  'h-full w-full rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-white',
                   item === currentPage
                     ? 'bg-brand-800 text-brand-100'
                     : 'bg-brand-300 text-brand-700 hover:bg-brand-400',
@@ -139,7 +139,7 @@ export function Pagination({
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
           className={clsx(
-            'flex items-center gap-x-1.5 rounded bg-brand-300 p-1 px-2 transition',
+            'flex items-center gap-x-1.5 rounded-sm bg-brand-300 p-1 px-2 transition',
             canGoForward
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
