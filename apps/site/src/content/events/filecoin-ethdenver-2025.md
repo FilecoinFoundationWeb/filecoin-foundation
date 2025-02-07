@@ -117,11 +117,77 @@ speakers:
   title: Meet The Team
   speakers_list:
     - name: Clara Tsao
-      title: "Founding Officer"
+      title: Founding Officer
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/claratsao/
       image:
         src: /assets/images/clara-tsao-davos.webp
+    - name: Stef Magdalinski
+      title: Head of Technical Programs
+      company: Filecoin Foundation
+      linkedin: "https://www.linkedin.com/in/smagdali/ "
+      image:
+        src: /assets/images/stef.jpeg
+    - name: Danny O'Brien
+      title: Senior Fellow
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/dannyo2/
+      image:
+        src: /assets/images/danny-o-brien-davos.webp
+    - name: Elsa Nguyen
+      title: Senior Events Lead
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/elsa-nguyen-cem-70515a71/
+      image:
+        src: /assets/images/elsa.png
+    - name: Olivia Sigler
+      title: Events Manager
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/olivia-sigler-cmp-des-897a30190/
+      image:
+        src: /assets/images/olivia.png
+    - name: Yuliia Deriuhina
+      title: Startup Operator
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/yderiuhina/
+      image:
+        src: /assets/images/yuliia.jpg
+    - name: Hunter Treseder
+      title: Head of Social Impact
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/hunter-treseder/
+      image:
+        src: /assets/images/hunter-treseder_senior-fellow-for-social-impact.jpg
+    - name: Erin O'Connor
+      title: Senior Program Manager, Ecosystem, Partnerships & Operations
+      company: Filecoin Foundation
+      linkedin: "https://www.linkedin.com/in/erin-oconnor-50837411a/ "
+      image:
+        src: /assets/images/erin.png
+    - name: Ian Davis
+      title: Senior Staff Technologist
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/ianconsolata/
+      image:
+        src: /assets/images/ian.jpeg
+    - name: Paul Wagner
+      title: Data Onboarding
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/thpaulwagner/
+      image:
+        src: /assets/images/paul.jpg
+    - name: Porter Stowell
+      title: Head of Community, Storage Providers
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/porterstowell/
+      image:
+        src: /assets/images/porter.jpg
+    - name: Robert Dowling
+      title: Developer Advocate
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/robertpatrickdowling/
+      image:
+        src: /assets/images/screenshot-2025-02-07-at-11.37.07-am.png
 seo:
   twitter:
     card: summary
