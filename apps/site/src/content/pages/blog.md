@@ -2,7 +2,7 @@
 header:
   title: Blog
   description: Filecoin Foundation Blog
-featured_entry: src/content/blog/filecoin-mainnet-marks-four-years.md
+featured_entry: apps/site/src/content/blog/announcing-the-filecoin-community-roadmap.md
 seo:
   title: Filecoin Foundation Blog | Ecosystem Updates & Announcements
   description: Read the latest updates, insights, and announcements from the
