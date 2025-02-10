@@ -2,7 +2,6 @@ import React, { type ElementType } from 'react'
 
 import { ListboxOption as HeadlessUIListboxOption } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react'
-import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
@@ -27,9 +26,7 @@ export function ListboxOption<Value extends OptionType>({
       as={as}
       value={option}
       disabled={option.disabled}
-      className={clsx(
-        'group flex cursor-default items-center justify-between gap-12 px-5 py-2 data-[disabled]:cursor-not-allowed ui-active:bg-brand-500',
-      )}
+      className="group flex cursor-default items-center justify-between gap-12 px-5 py-2 data-[disabled]:cursor-not-allowed ui-active:bg-brand-500"
     >
       <span>
         {option.name}
