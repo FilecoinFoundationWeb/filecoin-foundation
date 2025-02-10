@@ -21,7 +21,7 @@ export function ListboxGroupHeader({
       >
         {label}
       </li>
-      {children}
+      <span className="block px-1">{children}</span>
     </Component>
   )
 }

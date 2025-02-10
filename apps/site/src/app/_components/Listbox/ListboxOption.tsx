@@ -15,14 +15,12 @@ export type OptionType = {
 
 type ListboxOptionProps<Value extends OptionType> = {
   option: Value
-  grouped?: boolean
   as?: ElementType
 }
 
 export function ListboxOption<Value extends OptionType>({
   option,
   as = 'li',
-  grouped,
 }: ListboxOptionProps<Value>) {
   return (
     <HeadlessUIListboxOption
@@ -30,8 +28,7 @@ export function ListboxOption<Value extends OptionType>({
       value={option}
       disabled={option.disabled}
       className={clsx(
-        'group flex cursor-default items-center justify-between gap-12 py-2 data-[disabled]:cursor-not-allowed ui-active:bg-brand-500',
-        grouped ? 'px-6' : 'px-5',
+        'group flex cursor-default items-center justify-between gap-12 px-5 py-2 data-[disabled]:cursor-not-allowed ui-active:bg-brand-500',
       )}
     >
       <span>

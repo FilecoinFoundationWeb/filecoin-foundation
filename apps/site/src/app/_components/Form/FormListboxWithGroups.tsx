@@ -46,7 +46,7 @@ export function FormListboxWithGroups({
           {groupedOptions.map(({ label, options }) => (
             <ListboxGroupHeader key={label} label={label}>
               {options.map((option) => (
-                <ListboxOption key={option.id} grouped option={option} />
+                <ListboxOption key={option.id} option={option} />
               ))}
             </ListboxGroupHeader>
           ))}
