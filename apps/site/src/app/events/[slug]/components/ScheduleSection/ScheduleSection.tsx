@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { PageSection } from '@/components/PageSection'
 
 import type { Event } from '../../../types/eventType'
@@ -11,7 +13,9 @@ type ScheduleSectionProps = {
 export function ScheduleSection({ schedule }: ScheduleSectionProps) {
   return (
     <PageSection kicker={schedule.kicker} title={schedule.title}>
-      <Tabs schedule={schedule} />
+      <Suspense>
+        <Tabs schedule={schedule} />
+      </Suspense>
     </PageSection>
   )
 }

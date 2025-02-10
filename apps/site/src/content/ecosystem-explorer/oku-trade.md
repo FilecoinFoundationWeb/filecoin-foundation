@@ -8,17 +8,18 @@ full-name: encrypted::U2FsdGVkX19wMtjS/KdfljzZnIT78srdPSWOOYjE3r4=
 image:
   src: /assets/images/oku-trade.jpg
 category: bridges-oracles
+description: Bridge, swap, provide liquidity, and more on Oku Trade. Aggregator
+  support across every EVM chain, including Ethereum, Arbitrum, Optimism,
+  Polygon and Base.
+website: https://oku.trade/app/ethereum/swap/
 tech:
   - filecoin
-description: Bridge, swap, provide liquidity, and more on Oku Trade. Aggregator support across every EVM chain, including Ethereum, Arbitrum, Optimism, Polygon and Base.
-website: https://oku.trade/app/ethereum/swap/
-year-joined: 2024-01-01T00:00:00.000Z
-
-
 twitter: https://x.com/okutrade
+year-joined: 2024-01-01T00:00:00.000Z
 seo:
   title: Oku Trade
-  description: Bridge, swap, provide liquidity, and more on Oku Trade. Aggregator support across every EVM chain, including Ethereum, Arbitrum, Optimism, Polygon and Base.
+  description: Bridge, swap, provide liquidity, and more on Oku Trade. Aggregator
+    support across every EVM chain, including Ethereum, Arbitrum, Optimism,
+    Polygon and Base.
 ---
-
-Oku Trade supports bridging and swapping on Filecoin
+Oku is a non-custodial DeFi meta-aggregator offering the best [swap](https://docs.oku.trade/home/general/getting-started-with-oku-trade/swap) and [bridge](https://docs.oku.trade/home/general/getting-started-with-oku-trade/bridge) rates across any EVM chain. Oku Trade supports bridging and swapping on Filecoin.

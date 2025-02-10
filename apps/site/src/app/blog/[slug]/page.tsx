@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -9,33 +11,18 @@ import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getBlogPostData } from '../utils/getBlogPostData'
+import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
-  params: Promise<{
-    slug: string
-  }>
-}
-
-export async function generateMetadata(props: BlogPostProps) {
-  const { slug } = await props.params
-  const data = getBlogPostData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: data.image?.src || graphicsData.blog.data.src,
-    },
-    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
-  })
+  params: Promise<SlugParams>
 }
 
 export default async function BlogPost(props: BlogPostProps) {
   const { slug } = await props.params
-  const data = getBlogPostData(slug)
+  const data = await getBlogPostData(slug)
 
   const { title, image, content, publishedOn, category, addTableOfContents } =
     data
@@ -63,4 +50,22 @@ export default async function BlogPost(props: BlogPostProps) {
       </div>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getBlogPostsData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: BlogPostProps) {
+  const { slug } = await props.params
+  const data = await getBlogPostData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: data.image?.src || graphicsData.blog.data.src,
+    },
+    path: `${PATHS.BLOG.path}/${data.slug}` as DynamicPathValues,
+  })
 }

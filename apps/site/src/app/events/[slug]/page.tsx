@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -13,7 +15,7 @@ import { TagGroup } from '@/components/TagComponents/TagGroup'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
-import { getEventData } from '../utils/getEventData'
+import { getEventData, getEventsData } from '../utils/getEventData'
 import { getMetaData } from '../utils/getMetaData'
 import { isEventConcluded } from '../utils/isEventConcluded'
 import { sortNonEmptyEventsAsc } from '../utils/sortEvents'
@@ -27,27 +29,12 @@ import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type EventProps = {
-  params: Promise<{
-    slug: string
-  }>
-}
-
-export async function generateMetadata(props: EventProps) {
-  const { slug } = await props.params
-  const data = getEventData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: graphicsData.events1.data.src,
-    },
-    path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
-  })
+  params: Promise<SlugParams>
 }
 
 export default async function EventEntry(props: EventProps) {
   const { slug } = await props.params
-  const data = getEventData(slug)
+  const data = await getEventData(slug)
   const sponsorEventData = getInvolvedData[0]
 
   const {
@@ -144,4 +131,22 @@ export default async function EventEntry(props: EventProps) {
       />
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getEventsData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: EventProps) {
+  const { slug } = await props.params
+  const data = await getEventData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: graphicsData.events1.data.src,
+    },
+    path: `${PATHS.EVENTS.path}/${data.slug}` as DynamicPathValues,
+  })
 }

@@ -1,40 +1,42 @@
-import fs from 'fs'
+'use server'
 
 import convertObjectKeysToCamelCase from 'camelcase-keys'
-import { ZodError, type ZodType } from 'zod'
+import matter from 'gray-matter'
+import { ZodError, ZodObject, type ZodRawShape } from 'zod'
 
 import {
   getFilePath,
   handleFileNotFound,
-  parseMarkdown,
   readFileContents,
+  checkPathExists,
 } from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
 
-type GetData<T> = {
+type GetMarkdownDataArgs<T extends ZodRawShape> = {
   slug: string
   directoryPath: string
-  zodParser: ZodType<T>['parse']
+  zodSchema: ZodObject<T>
 }
 
-export function getMarkdownData<T>({
+export async function getMarkdownData<T extends ZodRawShape>({
   slug,
   directoryPath,
-  zodParser,
-}: GetData<T>) {
+  zodSchema,
+}: GetMarkdownDataArgs<T>) {
   try {
     const filePath = getFilePath(directoryPath, slug)
+    const fileExists = await checkPathExists(filePath)
 
-    if (!fs.existsSync(filePath)) {
+    if (!fileExists) {
       handleFileNotFound(filePath)
     }
 
-    const fileContents = readFileContents(filePath)
-    const { data, content } = parseMarkdown(fileContents)
+    const fileContents = await readFileContents(filePath)
+    const { data, content } = matter(fileContents)
 
     const dataToValidate = content ? { ...data, content } : data
 
-    const parsedData = zodParser(dataToValidate)
+    const parsedData = await zodSchema.parseAsync(dataToValidate)
     const parsedDataWithSlug = { ...parsedData, slug }
 
     return convertObjectKeysToCamelCase(parsedDataWithSlug, { deep: true })

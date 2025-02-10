@@ -82,6 +82,11 @@ const redirects = [
     permanent: true,
   },
   {
+    source: '/governance/govhub',
+    destination: '/governance',
+    permanent: true,
+  },
+  {
     source: '/governance/proposing',
     destination: '/governance',
     permanent: true,

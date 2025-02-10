@@ -1,3 +1,5 @@
+import { type SlugParams } from '@/types/paramsTypes'
+
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -9,33 +11,21 @@ import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { getDigestArticleData } from '../utils/getDigestArticleData'
+import {
+  getDigestArticleData,
+  getDigestArticlesData,
+} from '../utils/getDigestArticleData'
 
 import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
-  params: Promise<{
-    slug: string
-  }>
-}
-
-export async function generateMetadata(props: DigestArticleProps) {
-  const { slug } = await props.params
-  const data = getDigestArticleData(slug)
-
-  return createMetadata({
-    seo: {
-      ...data.seo,
-      image: data.image?.src || graphicsData.digest.data.src,
-    },
-    path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
-  })
+  params: Promise<SlugParams>
 }
 
 export default async function DigestArticle(props: DigestArticleProps) {
   const { slug } = await props.params
-  const data = getDigestArticleData(slug)
+  const data = await getDigestArticleData(slug)
 
   const { title, issueNumber, articleNumber, image, authors, content } = data
 
@@ -58,4 +48,22 @@ export default async function DigestArticle(props: DigestArticleProps) {
       </div>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getDigestArticlesData()
+  return entries.map(({ slug }) => ({ slug }))
+}
+
+export async function generateMetadata(props: DigestArticleProps) {
+  const { slug } = await props.params
+  const data = await getDigestArticleData(slug)
+
+  return createMetadata({
+    seo: {
+      ...data.seo,
+      image: data.image?.src || graphicsData.digest.data.src,
+    },
+    path: `${PATHS.DIGEST.path}/${data.slug}` as DynamicPathValues,
+  })
 }
