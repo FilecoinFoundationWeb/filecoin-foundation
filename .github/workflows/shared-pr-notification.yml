@@ -2,10 +2,11 @@ name: Apps PR Review Notification
 
 on:
   pull_request:
-    types: [opened, ready_for_review]
+    types: [opened, ready_for_review, synchronize]
 
 jobs:
   notify:
+    if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
     permissions:
       pull-requests: read
@@ -31,4 +32,4 @@ jobs:
           token: ${{ secrets.SLACK_BOT_TOKEN }}
           payload: |
             channel: ${{ secrets.SLACK_CHANNEL_ID }}
-            text: "${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>\nReviewers: ${{ env.REVIEWERS }}"
+            text: "${{ github.actor }} has marked a pull request as ready for review in ${{ env.APP_PATH }}: <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>\nReviewers:  $REVIEWERS"
