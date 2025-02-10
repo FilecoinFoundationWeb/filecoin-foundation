@@ -3,7 +3,11 @@ import path from 'path'
 
 import { notFound } from 'next/navigation'
 
-import { CONTENT_ROOT, MARKDOWN_EXTENSION } from '@/constants/paths'
+import {
+  WORKSPACE_ROOT,
+  CONTENT_ROOT,
+  MARKDOWN_EXTENSION,
+} from '@/constants/paths'
 
 export function extractSlugFromFilename(filename: string) {
   return path.parse(filename).name
@@ -19,7 +23,10 @@ export function handleFileNotFound(filePath: string) {
 }
 
 export function isValidMarkdownPath(path: string) {
-  return path.startsWith(CONTENT_ROOT) && path.endsWith(MARKDOWN_EXTENSION)
+  return (
+    path.startsWith(`${WORKSPACE_ROOT}/${CONTENT_ROOT}`) &&
+    path.endsWith(MARKDOWN_EXTENSION)
+  )
 }
 
 export function readFileContents(filePath: string) {
