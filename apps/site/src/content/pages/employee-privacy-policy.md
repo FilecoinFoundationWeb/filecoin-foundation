@@ -1,7 +1,6 @@
 ---
 header:
   title: "Employee and Job Applicant Privacy Policy"
-  description: ""
 seo:
   title: "Employee and Job Applicant Privacy Policy"
   description: "Learn how Filecoin Foundation collects, uses, and discloses personal information for employees and job applicants."

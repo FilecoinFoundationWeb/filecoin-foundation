@@ -1,7 +1,6 @@
 ---
 header:
   title: "Terms of Use"
-  description: ""
 seo:
   title: "Terms of Use"
   description: "Understand the terms and conditions of using Filecoin Foundation services. Read our detailed Terms of Use for more information."
