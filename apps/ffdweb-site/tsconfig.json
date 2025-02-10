@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/app/*"],
+      "@/actions/*": ["./src/app/_actions/*"],
+      "@/assets/*": ["./public/assets/*"],
+      "@/components/*": ["./src/app/_components/*"],
+      "@/constants/*": ["./src/app/_constants/*"],
+      "@/content/*": ["./src/content/*"],
+      "@/data/*": ["./src/app/_data/*"],
+      "@/hooks/*": ["./src/app/_hooks/*"],
+      "@/schemas/*": ["./src/app/_schemas/*"],
+      "@/services/*": ["./src/app/_services/*"],
+      "@/styles/*": ["./src/app/_styles/*"],
+      "@/support/*": ["./cypress/support/*"],
+      "@/types/*": ["./src/app/_types/*"],
+      "@/utils/*": ["./src/app/_utils/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

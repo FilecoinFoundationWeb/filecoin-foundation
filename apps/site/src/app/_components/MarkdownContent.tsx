@@ -3,7 +3,6 @@ import Image from 'next/image'
 import rehypeToc, { type HtmlElementNode } from '@jsdevtools/rehype-toc'
 import * as Sentry from '@sentry/node'
 import ReactMarkdown, { type Components } from 'react-markdown'
-import type { PluggableList } from 'react-markdown/lib'
 import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
@@ -15,6 +14,8 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 import styles from '@/security/maturity-model/components/TableOfContents.module.scss'
+
+type PluggableList = Parameters<typeof ReactMarkdown>[0]['rehypePlugins']
 
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']

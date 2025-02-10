@@ -1,0 +1,66 @@
+name: Format CMS Content
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches:
+      - "cms/*"
+    paths:
+      - "**/*.md"
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/site
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install --prefer-offline || npm install --prefer-offline
+
+      - name: Format Markdown files
+        run: |
+          FILES=$(git diff --name-only --diff-filter=d ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep '\.md$' || true)
+          if [[ -n "$FILES" ]]; then
+            echo "Modified markdown files:"
+            echo "$FILES"
+            
+            # Adjust paths relative to apps/site
+            FORMATTABLE_FILES=$(echo "$FILES" | sed 's|^apps/site/||')
+
+            echo "Running prettier on:"
+            echo "$FORMATTABLE_FILES"
+
+            echo "$FORMATTABLE_FILES" | xargs -r npx prettier --write --config .prettierrc.json
+          else
+            echo "No markdown files to format."
+          fi
+
+      - name: Commit changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add -A
+            git commit -m "chore: format markdown content"
+            git push
+          else
+            echo "No changes to commit"
+          fi

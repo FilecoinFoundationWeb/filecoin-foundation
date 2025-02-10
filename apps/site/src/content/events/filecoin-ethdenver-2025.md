@@ -68,6 +68,60 @@ program:
         discussions, and a chance to connect with some of the brightest minds in
         the space. This event is invite-only with limited seating, ensuring a
         high-value experience for all participants.
+    - title: " Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
+      start-date: 2025-02-26T16:00:00.000Z
+      end-date: 2026-02-26T21:00:00.000Z
+      description: Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
+        Backer/Builder matchmaking, crypto panels, and networking. Explore
+        emerging trends, investment strategies, and the future of the Solana
+        ecosystem, powered by CHOMP.
+      location: Birch Road (The Highlands)
+      external-link: https://lu.ma/solanaspeed
+    - title: Decentralized Media Summit
+      start-date: 2025-02-26T08:30:00.000Z
+      end-date: 2025-02-26T12:00:00.000Z
+      location: Milk Market
+      external-link: https://lu.ma/i9gatw59
+      description: ​Join pioneers of decentralized media as they chart out a new
+        category within Web3 and media innovation – tackling the future of news
+        and content distribution while combating today’s dystopia of
+        disinformation and centralized editorial control. Experts from the
+        Decentralized Storage Alliance, Association of Crypto Journalists and
+        Researchers (ACJR), CTRL+X, Coinage Media, Hardfork Media and Distro
+        Media will break down the significance of decentralized data storage and
+        the potential applications for blockchain tools. This all comes against
+        a backdrop of propaganda wars and severe financial constraints that have
+        shrunken the ranks of professional journalists and eroded public trust.
+    - title: "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
+        Foundation"
+      start-date: 2025-02-27T17:00:00.000Z
+      end-date: 2025-02-27T20:00:00.000Z
+      location: Denver, CO
+      description: Join us at GLIF's Pool Party for a fun-filled evening with lending
+        & staking pool founders, developers, and investors! Enjoy food, drinks,
+        and watch DeFi protocols compete in a Pool tournament with over $1k in
+        cash prizes.
+      external-link: https://lu.ma/444wnmwb
+    - title: DePIN Day Denver 2025, Hosted by Fluence, Sponsored by Filecoin
+        Foundation
+      start-date: 2025-02-26T10:00:00.000Z
+      external-link: https://lu.ma/depin-denver
+      description: ​​​Join us for the all-day event full of vital conversations around
+        Decentralized Physical Infrastructure Networks. Connect with DePIN
+        founders, researchers, developers and enthusiasts. Talks, panel
+        discussions and useful networking are waiting for you during ETHDenver
+        Week!​
+      location: Denver, CO
+speakers:
+  kicker: CONNECT WITH US
+  title: Meet The Team
+  speakers_list:
+    - name: Clara Tsao
+      title: "Founding Officer"
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/claratsao/
+      image:
+        src: /assets/images/clara-tsao-davos.webp
 seo:
   twitter:
     card: summary
