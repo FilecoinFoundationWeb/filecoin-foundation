@@ -3,8 +3,8 @@ import { Listbox } from '@headlessui/react'
 import { FormField } from '@/components/Form/FormField'
 import type { FormListboxProps } from '@/components/Form/FormListbox'
 import { ListboxButton } from '@/components/Listbox/ListboxButton'
+import { ListboxGroupHeader } from '@/components/Listbox/ListboxGroupHeader'
 import { ListboxOption } from '@/components/Listbox/ListboxOption'
-import { ListboxOptionGroup } from '@/components/Listbox/ListboxOptionGroup'
 import { ListboxOptions } from '@/components/Listbox/ListboxOptions'
 
 export type GroupedOption = {
@@ -44,11 +44,11 @@ export function FormListboxWithGroups({
         />
         <ListboxOptions as="div" position={optionsPosition}>
           {groupedOptions.map(({ label, options }) => (
-            <ListboxOptionGroup key={label} label={label}>
+            <ListboxGroupHeader key={label} label={label}>
               {options.map((option) => (
                 <ListboxOption key={option.id} grouped option={option} />
               ))}
-            </ListboxOptionGroup>
+            </ListboxGroupHeader>
           ))}
         </ListboxOptions>
       </Listbox>

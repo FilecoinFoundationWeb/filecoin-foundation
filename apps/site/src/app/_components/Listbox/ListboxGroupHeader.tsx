@@ -1,16 +1,16 @@
 import type { ElementType } from 'react'
 
-type ListboxOptionGroupProps = {
+type ListboxGroupHeaderProps = {
   label: string
   as?: ElementType
   children: React.ReactNode
 }
 
-export function ListboxOptionGroup({
+export function ListboxGroupHeader({
   label,
   as: Component = 'ul',
   children,
-}: ListboxOptionGroupProps) {
+}: ListboxGroupHeaderProps) {
   return (
     <Component role="group" aria-labelledby={label}>
       <li
