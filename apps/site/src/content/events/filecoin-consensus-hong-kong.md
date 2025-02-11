@@ -21,6 +21,7 @@ program:
         Supported by Filecoin Orbit and Filecoin Foundation"
       start-date: 2025-02-17T17:00:00.000Z
       location: Maggie Choo's
+      external-link: https://lu.ma/9462sbyn
   kicker: FIND US AROUND HONG KONG
   title: Featured Events
 schedule:
