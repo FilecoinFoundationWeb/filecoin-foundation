@@ -9,6 +9,8 @@ import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from '@/components/Icon'
 
+import './NotificationDialog.css'
+
 type NotificationDialogProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
