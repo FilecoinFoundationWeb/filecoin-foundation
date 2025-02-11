@@ -22,11 +22,13 @@ program:
       location: Denver, CO
       start-date: 2025-02-28T17:00:00.000Z
       external-link: https://lu.ma/gd767xu5
-      description: ​A community gathering for Filecoin builders and friends! Come for
+      description:
+        ​A community gathering for Filecoin builders and friends! Come for
         Filecoin corgis, stay for Filecoin friends.
     - title: L2 and Service Operator Colo. Hosted by Filecoin Foundation & FILOz
       location: Denver, CO
-      description: Filecoin Foundation & FILOz are bringing together key ecosystem
+      description:
+        Filecoin Foundation & FILOz are bringing together key ecosystem
         builders, founders, and biz dev leaders from February 23rd to 27th in
         Denver, Colorado for a FWS, Onramps, and Tooling Colo leading up to ETH
         Denver. The goal of this Colo is to further the work started in Bangkok
@@ -47,7 +49,8 @@ program:
         connect with top ecosystems, explore cutting-edge funding mechanisms,
         and scale your impact like never before."
       start-date: 2025-02-27T10:00:00.000Z
-    - title: Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
+    - title:
+        Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
         Foundation
       location: Denver, CO
       description: An expert moderator will guide the knowledge-sharing event,
@@ -57,8 +60,9 @@ program:
       external-link: https://www.ortusclub.com/event/security-portability-and-ai-driven-innovation/
     - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
       start-date: 2025-02-26T14:30:00.000Z
-      location: "Denver, CO "
-      description: On February 26th, the Storacha Network is hosting an exclusive,
+      location: "Denver, CO"
+      description:
+        On February 26th, the Storacha Network is hosting an exclusive,
         invite-only luncheon at ETHDenver, bringing together top developers,
         ecosystem partners, and web3 innovators for a curated networking
         experience. This private gathering is designed to foster meaningful
@@ -68,10 +72,11 @@ program:
         discussions, and a chance to connect with some of the brightest minds in
         the space. This event is invite-only with limited seating, ensuring a
         high-value experience for all participants.
-    - title: " Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
+    - title: "Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
       start-date: 2025-02-26T16:00:00.000Z
       end-date: 2026-02-26T21:00:00.000Z
-      description: Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
+      description:
+        Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
         Backer/Builder matchmaking, crypto panels, and networking. Explore
         emerging trends, investment strategies, and the future of the Solana
         ecosystem, powered by CHOMP.
@@ -92,21 +97,24 @@ program:
         the potential applications for blockchain tools. This all comes against
         a backdrop of propaganda wars and severe financial constraints that have
         shrunken the ranks of professional journalists and eroded public trust.
-    - title: "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
+    - title:
+        "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
         Foundation"
       start-date: 2025-02-27T17:00:00.000Z
       end-date: 2025-02-27T20:00:00.000Z
       location: Denver, CO
-      description: Join us at GLIF's Pool Party for a fun-filled evening with lending
+      description:
+        "Join us at GLIF's Pool Party for a fun-filled evening with lending
         & staking pool founders, developers, and investors! Enjoy food, drinks,
         and watch DeFi protocols compete in a Pool tournament with over $1k in
-        cash prizes.
+        cash prizes."
       external-link: https://lu.ma/444wnmwb
     - title: DePIN Day Denver 2025, Hosted by Fluence, Sponsored by Filecoin
         Foundation
       start-date: 2025-02-26T10:00:00.000Z
       external-link: https://lu.ma/depin-denver
-      description: ​​​Join us for the all-day event full of vital conversations around
+      description:
+        ​​​Join us for the all-day event full of vital conversations around
         Decentralized Physical Infrastructure Networks. Connect with DePIN
         founders, researchers, developers and enthusiasts. Talks, panel
         discussions and useful networking are waiting for you during ETHDenver
@@ -117,15 +125,82 @@ speakers:
   title: Meet The Team
   speakers_list:
     - name: Clara Tsao
-      title: "Founding Officer"
+      title: Founding Officer
       company: Filecoin Foundation
       linkedin: https://www.linkedin.com/in/claratsao/
       image:
-        src: /assets/images/clara-tsao-davos.webp
+        src: /assets/images/clara-tsao.webp
+    - name: Stef Magdalinski
+      title: Head of Technical Programs
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/smagdali/
+      image:
+        src: /assets/images/stef-magdalinski.webp
+    - name: Danny O'Brien
+      title: Senior Fellow
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/dannyo2/
+      image:
+        src: /assets/images/danny-obrien.webp
+    - name: Elsa Nguyen
+      title: Senior Events Lead
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/elsa-nguyen-cem-70515a71/
+      image:
+        src: /assets/images/elsa-nguyen.webp
+    - name: Olivia Sigler
+      title: Events Manager
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/olivia-sigler-cmp-des-897a30190/
+      image:
+        src: /assets/images/olivia-sigler.webp
+    - name: Yuliia Deriuhina
+      title: Startup Operator
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/yderiuhina/
+      image:
+        src: /assets/images/yuliia.webp
+    - name: Hunter Treseder
+      title: Head of Social Impact
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/hunter-treseder/
+      image:
+        src: /assets/images/hunter-treseder.webp
+    - name: Erin O'Connor
+      title: Senior Program Manager, Ecosystem, Partnerships & Operations
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/erin-oconnor-50837411a/
+      image:
+        src: /assets/images/erin-oconnor.webp
+    - name: Ian Davis
+      title: Senior Staff Technologist
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/ianconsolata/
+      image:
+        src: /assets/images/ian-davis.webp
+    - name: Paul Wagner
+      title: Data Onboarding
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/thpaulwagner/
+      image:
+        src: /assets/images/paul-wagner.webp
+    - name: Porter Stowell
+      title: Head of Community, Storage Providers
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/porterstowell/
+      image:
+        src: /assets/images/porter-stowell.webp
+    - name: Robert Dowling
+      title: Developer Advocate
+      company: Filecoin Foundation
+      linkedin: https://www.linkedin.com/in/robertpatrickdowling/
+      image:
+        src: /assets/images/robert-dowling.webp
 seo:
   twitter:
     card: summary
-  description: Join Filecoin at ETHDenver 2025 to explore cutting-edge blockchain
+  description:
+    Join Filecoin at ETHDenver 2025 to explore cutting-edge blockchain
     technology, network with industry leaders, and discover new opportunities in
     decentralized storage.
 ---
