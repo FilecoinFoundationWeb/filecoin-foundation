@@ -72,7 +72,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative h-full rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative h-full rounded-lg border bg-brand-700/30 backdrop-blur-xl',
         borderStyles[borderColor],
       )}
     >
