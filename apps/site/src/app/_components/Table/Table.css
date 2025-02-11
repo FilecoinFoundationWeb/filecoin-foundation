@@ -1,80 +1,62 @@
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  border-radius: 0.5rem;
+@reference '../../_styles/globals.css';
 
-  &:focus {
-    outline: 2px solid var(--brand-outline-color);
-  }
+.table-container {
+  @apply w-full overflow-x-auto rounded-lg focus:brand-outline;
 
   &[data-freeze-header="true"] {
-    max-height: 100vh;
+    @apply max-h-screen;
 
     & thead td,
     & thead th {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: inherit;
+      @apply sticky top-0 z-10 bg-inherit;
     }
   }
 
   &[data-freeze-first-column="true"] {
     & td:first-child,
     & th:first-child {
-      position: sticky;
-      left: 0;
-      z-index: 10;
-      background: inherit;
+      @apply sticky left-0 z-10 bg-inherit;
     }
   }
 
   &[data-freeze-header="true"][data-freeze-first-column="true"] {
     & thead th:first-child {
-      z-index: 20;
+      @apply z-20;
     }
   }
 }
 
 .table {
-  isolation: isolate;
-  height: 100%;
-  min-width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  @apply h-full min-w-full isolate border-collapse border-spacing-0;
 
   & tr {
-    height: 52px;
-    background-color: var(--color-brand-800);
+    @apply h-[52px] bg-brand-800;
   }
 
   & tbody {
     & tr:nth-child(odd) {
-      background-color: var(--color-brand-700);
+      @apply bg-brand-700;
     }
 
     & tr:nth-child(even) {
-      background-color: var(--color-brand-800);
+      @apply bg-brand-800;
     }
   }
 
   & td,
   & th {
-    padding: 0 1.25rem;
-    text-align: left;
-    font-weight: normal;
-    white-space: nowrap;
+    @apply px-5 text-left font-normal whitespace-nowrap;
 
     &:first-child {
-      padding-left: 2.5rem;
+      @apply pl-10;
     }
 
     &:last-child {
-      padding-right: 2.5rem;
+      @apply pr-10;
     }
   }
 
   & thead th {
-    border-bottom: 1px solid var(--color-brand-500);
+    @apply border-b border-brand-500;
   }
 }
