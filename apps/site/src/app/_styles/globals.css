@@ -46,16 +46,7 @@
   --tw-prose-th-borders: var(--color-brand-300);
 
   & a {
-    @apply no-underline;
-
-    &:hover {
-      @apply underline;
-    }
-
-    &:focus,
-    &:focus-visible {
-      @apply brand-outline;
-    }
+    @apply no-underline hover:underline focus:brand-outline focus-visible:brand-outline;
   }
 
   & code {
@@ -92,15 +83,7 @@
 
 @layer components {
   .text-link {
-    @apply text-brand-300;
-
-    &:hover {
-      @apply underline;
-    }
-
-    &:focus {
-      @apply brand-outline;
-    }
+     @apply text-brand-300 hover:underline focus:brand-outline;
   }
 
   .toc-header {
