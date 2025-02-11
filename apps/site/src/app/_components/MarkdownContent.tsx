@@ -63,7 +63,7 @@ const MarkdownLink: Components['a'] = ({ href, children }) => {
 
     return <>{children}</>
   }
-  return <SmartTextLink href={href}>{children}</SmartTextLink>
+  return <SmartTextLink href={href} className="not-prose">{children}</SmartTextLink>
 }
 
 const markdownComponents: Components = {

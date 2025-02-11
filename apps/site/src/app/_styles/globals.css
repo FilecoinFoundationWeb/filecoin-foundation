@@ -33,7 +33,6 @@
   --tw-prose-body: var(--color-brand-100);
   --tw-prose-headings: var(--color-brand-100);
   --tw-prose-bold: var(--color-brand-100);
-  --tw-prose-links: var(--color-brand-300);
   --tw-prose-quotes: var(--color-brand-100);
   --tw-prose-quote-borders: var(--color-brand-300);
   --tw-prose-counters: var(--color-brand-100);
@@ -44,10 +43,6 @@
   --tw-prose-captions: var(--color-neutral-400);
   --tw-prose-td-borders: var(--color-brand-300);
   --tw-prose-th-borders: var(--color-brand-300);
-
-  & a {
-    @apply no-underline hover:underline focus:brand-outline focus-visible:brand-outline;
-  }
 
   & code {
     &::before,
