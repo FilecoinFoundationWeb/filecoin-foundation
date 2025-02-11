@@ -1,4 +1,4 @@
-import theme from 'tailwindcss/defaultTheme'
+import theme from 'tailwindcss/dist/default-theme'
 
 const screens = theme.screens
 

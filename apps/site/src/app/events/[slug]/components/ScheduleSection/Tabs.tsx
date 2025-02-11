@@ -4,7 +4,7 @@ import { useRef } from 'react'
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { useQueryState, parseAsInteger } from 'nuqs'
-import theme from 'tailwindcss/defaultTheme'
+import theme from 'tailwindcss/dist/default-theme'
 import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 
 import type { Event } from '../../../types/eventType'
