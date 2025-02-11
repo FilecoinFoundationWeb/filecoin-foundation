@@ -14,7 +14,7 @@ import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
 import type { IconProps } from '@/components/Icon'
-import { NotificationDialog } from '@/components/NotificationDialog'
+import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
 const NewsletterSchema = z.object({
   email: z
