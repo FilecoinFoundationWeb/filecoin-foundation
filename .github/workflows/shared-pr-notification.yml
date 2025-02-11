@@ -6,6 +6,7 @@ on:
 
 jobs:
   notify:
+    if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
     permissions:
       pull-requests: read
@@ -16,7 +17,7 @@ jobs:
       - name: Prepare Reviewers List and App Info
         id: format_info
         run: |
-          REVIEWERS=$(echo "${{ toJson(github.event.pull_request.requested_reviewers) }}" | jq -r '.[].login' | paste -sd ", " -)
+          REVIEWERS=$(echo '${{ toJSON(github.event.pull_request.requested_reviewers) }}' | jq -r 'map(.login) | join(", ")')
           APP_PATH=$(echo "${{ github.event.pull_request.changed_files }}" | grep -o 'apps/[^/]*' | head -1)
           if [ -z "$REVIEWERS" ]; then
             REVIEWERS="No reviewers assigned"
