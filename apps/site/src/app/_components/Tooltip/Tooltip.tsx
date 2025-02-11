@@ -40,7 +40,7 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
           sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
           side={side}
           role="tooltip"
-          className="bg-brand-200 text-brand-800 tooltip-animation max-w-xs rounded-lg px-4 py-3 text-sm leading-tight focus-visible:outline-hidden"
+          className="tooltip-animation max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 focus-visible:outline-hidden"
         >
           {description}
           <RadixPopover.Arrow className="fill-brand-200" />
