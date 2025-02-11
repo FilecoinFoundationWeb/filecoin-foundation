@@ -1,5 +1,5 @@
 import { Listbox } from '@headlessui/react'
-import theme from 'tailwindcss/defaultTheme'
+import theme from 'tailwindcss/dist/default-theme'
 
 import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 import { type IconProps } from '@/components/Icon'
