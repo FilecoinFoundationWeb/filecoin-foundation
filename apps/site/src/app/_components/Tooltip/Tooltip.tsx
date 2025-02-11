@@ -4,7 +4,7 @@ import { useId, useState, type ReactNode } from 'react'
 
 import * as RadixPopover from '@radix-ui/react-popover'
 
-import './tooltip.css'
+import './Tooltip.css'
 
 type TooltipRenderProps = {
   open: boolean
