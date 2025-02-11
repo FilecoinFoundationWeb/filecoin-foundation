@@ -60,7 +60,7 @@ program:
       external-link: https://www.ortusclub.com/event/security-portability-and-ai-driven-innovation/
     - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
       start-date: 2025-02-26T14:30:00.000Z
-      location: "Denver, CO "
+      location: "Denver, CO"
       description:
         On February 26th, the Storacha Network is hosting an exclusive,
         invite-only luncheon at ETHDenver, bringing together top developers,
@@ -72,7 +72,7 @@ program:
         discussions, and a chance to connect with some of the brightest minds in
         the space. This event is invite-only with limited seating, ensuring a
         high-value experience for all participants.
-    - title: " Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
+    - title: "Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
       start-date: 2025-02-26T16:00:00.000Z
       end-date: 2026-02-26T21:00:00.000Z
       description:
@@ -104,10 +104,10 @@ program:
       end-date: 2025-02-27T20:00:00.000Z
       location: Denver, CO
       description:
-        Join us at GLIF's Pool Party for a fun-filled evening with lending
+        "Join us at GLIF's Pool Party for a fun-filled evening with lending
         & staking pool founders, developers, and investors! Enjoy food, drinks,
         and watch DeFi protocols compete in a Pool tournament with over $1k in
-        cash prizes.
+        cash prizes."
       external-link: https://lu.ma/444wnmwb
     - title: DePIN Day Denver 2025, Hosted by Fluence, Sponsored by Filecoin
         Foundation
