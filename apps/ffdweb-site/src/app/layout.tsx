@@ -1,3 +1,5 @@
+import { Manrope } from 'next/font/google'
+
 import type { Metadata } from 'next'
 import '@/styles/globals.css'
 
@@ -11,13 +13,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 }
 
+const manrope = Manrope({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={manrope.className}>
       <body>{children}</body>
     </html>
   )
