@@ -247,6 +247,16 @@ collections:
         preview_path: "ecosystem-explorer"
         fields:
           - *header_config
+          - name: "featured_entry"
+            label: "Featured Project"
+            widget: "relation"
+            collection: "ecosystem_projects"
+            value_field: "apps/site/src/content/ecosystem-explorer/{{slug}}.md"
+            search_fields:
+              - "slug"
+              - "title"
+            display_fields:
+              - "title"
           - *meta_config
 
       - name: "ecosystem-explorer/project-form"
