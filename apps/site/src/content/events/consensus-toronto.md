@@ -12,7 +12,7 @@ description: What is Consensus? Since 2015, Consensus has been more than an
   artificial intelligence, fostering the collaborations that define what's
   next.  Don’t miss this moment—join us in Toronto.
 created-on: 2025-02-12T15:30:00.000Z
-updated-on: ""
+updated-on: 2025-02-12T15:30:00.000Z
 published-on: ""
 category: supported-sponsored
 location:
@@ -24,4 +24,7 @@ external-link: https://consensus2025.coindesk.com/
 seo:
   twitter:
     card: summary
+  description: Discover Consensus 2025 in Toronto – the premier gathering for
+    blockchain, Web3, and AI leaders. Join industry pioneers shaping the future
+    of digital assets and innovation. Don’t miss out!
 ---
