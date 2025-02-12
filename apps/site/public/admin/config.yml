@@ -12,6 +12,8 @@ publish_mode: editorial_workflow
 media_folder: "apps/site/public/assets/images"
 public_folder: "/assets/images"
 
+date_iso_format: &date_iso_format "YYYY-MM-DD"
+
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -678,14 +680,14 @@ collections:
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
+        date_format: *date_iso_format
         hint: "First day of event"
-        picker_utc: true
       - name: "end-date"
         label: "End Date"
         widget: "datetime"
+        date_format: *date_iso_format
         required: false
-        hint: "Last day of event"
-        picker_utc: true
+        hint: "Last day of event. Leave empty for single-day events."
       - name: "external-link"
         label: "External Link URL"
         widget: "string"
