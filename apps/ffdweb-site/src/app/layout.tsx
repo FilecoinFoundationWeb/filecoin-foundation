@@ -25,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={manrope.className}>
-      <body>{children}</body>
+      <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-neutral-950 px-6 pt-8 pb-6 tracking-wide text-neutral-100">
+        <main>{children}</main>
+      </body>
     </html>
   )
 }
