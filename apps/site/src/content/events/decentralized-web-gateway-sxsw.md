@@ -12,7 +12,7 @@ location:
   primary: Austin, TX
   region: north-america
 external-link: https://www.youtube.com/watch?v=EHTFVtWDqJc&list=PLp3zrT1ewY0mvhUc7bvG2tsqHXYCukS9y
-start-date: 2022-03-15T07:23:50.000Z
+start-date: 2022-03-15
 image:
   src: /assets/images/64521857e09e4edc0d57e6df_dweb-gateway-sxsw.jpg
 seo:

@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: "Miami, Florida"
   region: north-america
-start-date: 2025-02-11T09:00:00.000Z
-end-date: 2025-02-11T18:00:00.000Z
+start-date: 2025-02-11
+end-date: 2025-02-11
 external-link: https://lu.ma/n4c8aotx?tk=GRGiWo
 seo:
   twitter:

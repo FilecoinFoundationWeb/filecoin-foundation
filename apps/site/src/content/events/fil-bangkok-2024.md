@@ -13,8 +13,8 @@ category: hosted
 location:
   primary: Bangkok, Thailand
   region: apac-asia
-start-date: 2024-11-6T11:18:00.000Z
-end-date: 2024-11-12T11:18:00.000Z
+start-date: 2024-11-06
+end-date: 2024-11-12
 image:
   src: /assets/images/fil-bangkok-2024.webp
 luma-calendar-link: https://lu.ma/filecoin?tag=fil%20bangkok%202024
