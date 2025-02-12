@@ -11,7 +11,7 @@ export default function Home() {
         <h2>FFDW Exists to Help Build a Better Web</h2>
         <p>
           Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3)
-          nonprofit with a mission to guarantee humanity's most important
+          nonprofit with a mission to guarantee humanity&apos;s most important
           information survives. FFDW works with academics, developers, and
           organizations to advance the benefits of open, decentralized
           technologies, initiatives that accelerate their adoption, and

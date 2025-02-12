@@ -8,7 +8,7 @@ export default function LearningResources() {
 
       <section>
         <h2>Contribute</h2>
-        <h3>Add to FFDW's Learning Resources Page</h3>
+        <h3>Add to FFDW&apos;s Learning Resources Page</h3>
         <button>Submit a Resource</button>
       </section>
     </>

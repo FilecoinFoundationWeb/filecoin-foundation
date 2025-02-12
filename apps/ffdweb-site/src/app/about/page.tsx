@@ -9,7 +9,7 @@ export default function About() {
       <section>
         <span>FFDW Priorities</span>
         <h2>
-          Our mission is to preserve humanity's most important information.
+          Our mission is to preserve humanity&apos;s most important information.
         </h2>
         <p>We do this through:</p>
 
@@ -42,7 +42,7 @@ export default function About() {
         <span>Impact Areas</span>
         <h2>Empowering Change Through Decentralization</h2>
         <p>
-          FFDW's work includes supporting the long-term collection,
+          FFDW&apos;s work includes supporting the long-term collection,
           digitization, and distribution of all forms of knowledge, as well as
           projects working on open-source software and protocols. FFDW serves
           the public good by fostering adoption across the entire decentralized
@@ -55,8 +55,8 @@ export default function About() {
             <h3>Cultural Preservation</h3>
             <p>
               The web is an engine of amazing creative productivity, but digital
-              artifacts are fragile. FFDW’s cultural preservation work aims to
-              find a safe repository for the world’s digital heritage.
+              artifacts are fragile. FFDW&apos;s cultural preservation work aims
+              to find a safe repository for the world&apos;s digital heritage.
             </p>
           </div>
           <div>
@@ -71,7 +71,7 @@ export default function About() {
             <h3>Human Rights</h3>
             <p>
               Records of the fight for human rights can be some of the most
-              vulnerable data in the world. FFDW’s work with human rights
+              vulnerable data in the world. FFDW&apos;s work with human rights
               organizations is dedicated to safeguarding this critical data.
             </p>
           </div>
