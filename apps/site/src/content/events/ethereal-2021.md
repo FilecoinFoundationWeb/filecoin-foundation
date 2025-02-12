@@ -7,7 +7,7 @@ category: supported-sponsored
 location:
   primary: Virtual
 external-link: https://www.youtube.com/watch?v=JRsvz6pRtZE&t=454s
-start-date: 2021-05-05T22:00:00.000Z
+start-date: 2021-05-05
 image:
   src: /assets/images/64521600a359ff88f536ffc5_ethereal-2021.png
 seo:

@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: Seoul, South Korea
   region: apac-asia
-start-date: 2023-09-06T07:06:47.822Z
-end-date: 2023-09-07T07:06:47.832Z
+start-date: 2023-09-06
+end-date: 2023-09-07
 image:
   src: /assets/images/fil-seoul-bg.png
 seo:

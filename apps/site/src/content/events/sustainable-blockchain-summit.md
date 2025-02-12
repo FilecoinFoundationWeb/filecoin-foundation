@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: Paris, France
   region: europe
-start-date: 2022-07-22T00:00:00.000Z
-end-date: 2022-07-23T00:00:00.000Z
+start-date: 2022-07-22
+end-date: 2022-07-23
 image:
   src: /assets/images/645215eb05e191292b09744d_sbs.png
 seo:

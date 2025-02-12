@@ -10,8 +10,8 @@ location:
   primary: Austin, TX
   region: north-america
 external-link: https://blocklive.io/event/consensus2024
-start-date: 2024-05-30T16:00:00.000Z
-end-date: 2024-05-30T17:00:00.000Z
+start-date: 2024-05-30
+end-date: 2024-05-30
 image:
   src: /assets/images/consensus-2024.png
 seo:

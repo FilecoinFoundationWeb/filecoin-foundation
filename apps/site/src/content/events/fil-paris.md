@@ -7,8 +7,8 @@ category: hosted
 location:
   primary: Paris, France
   region: europe
-start-date: 2023-07-15T15:38:07.119Z
-end-date: 2023-07-22T15:38:00.000Z
+start-date: 2023-07-15
+end-date: 2023-07-22
 image:
   src: /assets/images/fil-paris-pic.png
 seo:

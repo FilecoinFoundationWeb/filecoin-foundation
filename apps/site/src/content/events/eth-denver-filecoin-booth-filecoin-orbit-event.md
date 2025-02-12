@@ -8,8 +8,8 @@ location:
   primary: Denver, CO
   region: north-america
 external-link: https://hub.fil.org/ethdenver2024
-start-date: 2024-02-28T15:38:54.833Z
-end-date: 2024-03-03T15:38:54.840Z
+start-date: 2024-02-28
+end-date: 2024-03-03
 image:
   src: /assets/images/ethdenver24.png
 seo:

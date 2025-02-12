@@ -10,7 +10,7 @@ description: We're bringing the massively creative world of NFTs to life at
 location:
   primary: Austin, TX
   region: north-america
-start-date: 2022-06-08T16:00:10.000Z
+start-date: 2022-06-08
 image:
   src: /assets/images/645215f075d57ed1e4d02693_nft-gallery-at-consensus.png
 seo:

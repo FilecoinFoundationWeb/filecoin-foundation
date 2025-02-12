@@ -8,8 +8,8 @@ location:
   primary: Navarro, CA
   region: north-america
 external-link: https://dwebcamp.org/
-start-date: 2024-08-07T14:55:19.871Z
-end-date: 2024-08-11T14:55:19.882Z
+start-date: 2024-08-07
+end-date: 2024-08-11
 image:
   src: /assets/images/dweb-camp24.png
 seo:

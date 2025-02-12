@@ -7,7 +7,7 @@ category: hosted
 location:
   primary: Virtual
 external-link: https://www.youtube.com/watch?v=BIvFtwCeOjU
-start-date: 2021-04-12T22:00:00.000Z
+start-date: 2021-04-12
 image:
   src: /assets/images/governance-logo.jpg
 seo:

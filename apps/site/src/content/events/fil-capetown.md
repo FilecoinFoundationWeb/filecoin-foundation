@@ -7,7 +7,7 @@ category: supported-sponsored
 location:
   primary: Cape Town, South Africa
   region: africa
-start-date: 2023-11-21T13:58:58.117Z
+start-date: 2023-11-21
 image:
   src: /assets/images/filcapetown.png
 seo:
