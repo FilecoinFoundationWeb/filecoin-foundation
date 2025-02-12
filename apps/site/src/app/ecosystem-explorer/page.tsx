@@ -7,8 +7,9 @@ import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explore
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -24,7 +25,8 @@ type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { header, seo } = BaseFrontmatterSchema.parse(attributes)
+const { header, seo, featured_entry } =
+  FeaturedPageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -38,6 +40,13 @@ export const metadata = createMetadata({
 export default async function EcosystemExplorer(props: Props) {
   const searchParams = await props.searchParams
   const ecosystemProjects = await getEcosystemProjectsData()
+
+  const featuredProject = getFeaturedEntry({
+    entries: ecosystemProjects,
+    featuredEntryPath: featured_entry,
+  })
+
+  console.log(featuredProject)
 
   return (
     <PageLayout>
