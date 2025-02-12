@@ -10,10 +10,10 @@ description: What is Consensus? Since 2015, Consensus has been more than an
   CoinDesk's foundation of independent, unbiased journalism, Consensus Toronto
   will weave together breakthrough technologies, from digital assets to
   artificial intelligence, fostering the collaborations that define what's
-  next.  Don’t miss this moment—join us in Toronto.
+  next. Don’t miss this moment—join us in Toronto.
 created-on: 2025-02-12T15:30:00.000Z
 updated-on: 2025-02-12T15:30:00.000Z
-published-on: ""
+published-on: 2025-02-12T15:30:00.000Z
 category: supported-sponsored
 location:
   primary: Toronto, Canada
