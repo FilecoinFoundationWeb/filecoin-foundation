@@ -1,5 +1,7 @@
 import { z } from 'zod'
 
+import { IsoDateSchema } from '@/schemas/DateTimeSchema'
+
 const ParticipantSchema = z
   .object({
     name: z.string(),
@@ -23,7 +25,7 @@ const EventSchema = z
 
 const EventDaySchema = z
   .object({
-    date: z.coerce.date(),
+    date: IsoDateSchema,
     events: z.array(EventSchema),
   })
   .strict()
