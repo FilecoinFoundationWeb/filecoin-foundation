@@ -25,8 +25,8 @@ export function generateStructuredData(
       name: ORGANIZATION_NAME,
       url: BASE_URL,
     },
-    datePublished: publishedOn?.toISOString(),
-    dateModified: updatedOn?.toISOString() || publishedOn?.toISOString(),
+    datePublished: publishedOn.toISOString(),
+    dateModified: updatedOn.toISOString(),
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `${BASE_URL}${PATHS.BLOG.path}/${slug}`,

@@ -17,6 +17,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
+import { formatDate } from '@/utils/dateUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { normalizeQueryParam } from '@/utils/queryUtils'
@@ -38,7 +39,6 @@ import { Sort } from '@/components/Sort'
 
 import { blogSortConfigs } from '../constants/sortConfigs'
 import type { BlogPost } from '../types/blogPostType'
-import { getMetaData } from '../utils/getMetaData'
 
 type BlogContentProps = {
   posts: Array<BlogPost>
@@ -140,7 +140,7 @@ export function BlogContent({ posts }: BlogContentProps) {
                       title={title}
                       description={description}
                       textIsClamped={true}
-                      metaData={getMetaData(publishedOn)}
+                      metaData={[formatDate(publishedOn)]}
                       tags={[{ text: categoryLabel }]}
                       cta={{
                         href: `${PATHS.BLOG.path}/${slug}`,

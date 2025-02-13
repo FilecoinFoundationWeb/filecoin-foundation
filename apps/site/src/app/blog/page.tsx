@@ -7,6 +7,7 @@ import { attributes } from '@/content/pages/blog.md'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { formatDate } from '@/utils/dateUtils'
 import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
@@ -19,7 +20,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
-import { getMetaData } from './utils/getMetaData'
 
 const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
@@ -46,7 +46,7 @@ export default async function Blog() {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getMetaData(featuredPost.publishedOn)}
+        metaData={[formatDate(featuredPost.publishedOn)]}
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',

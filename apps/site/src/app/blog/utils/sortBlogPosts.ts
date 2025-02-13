@@ -17,8 +17,8 @@ function sortPostsByDate(
   sortBy: Extract<ValidSortKey, 'newest' | 'oldest'>,
 ) {
   return [...blogPosts].sort((a, b) => {
-    const dateA = a.publishedOn || new Date()
-    const dateB = b.publishedOn || new Date()
+    const dateA = a.publishedOn
+    const dateB = b.publishedOn
 
     switch (sortBy) {
       case 'newest':

@@ -1,5 +1,3 @@
-import { formatISO } from 'date-fns'
-
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
@@ -10,20 +8,9 @@ import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'
 import { getEcosystemProjectsData } from '@/ecosystem-explorer/utils/getEcosystemProjectData'
 import { getEventsData } from '@/events/utils/getEventData'
 
-type GenericEntryData = Pick<DynamicBaseData, 'updated-on'> & { slug: string }
-
-function generateDynamicRoutes<T extends GenericEntryData>(
-  data: Array<T>,
-  basePath: string,
-) {
-  return data.map((item) => {
-    const lastModifiedDate = formatISO(item['updated-on'] || new Date())
-
-    return {
-      url: `${BASE_URL}${basePath}/${item.slug}`,
-      lastModified: lastModifiedDate,
-    }
-  })
+type GenericEntryData = {
+  updatedOn: DynamicBaseData['updated-on']
+  slug: string
 }
 
 export default async function sitemap() {
@@ -57,4 +44,14 @@ export default async function sitemap() {
     ...dynamicEcosystemProjectRoutes,
     ...dynamicEventRoutes,
   ]
+}
+
+function generateDynamicRoutes<T extends GenericEntryData>(
+  data: Array<T>,
+  basePath: string,
+) {
+  return data.map(({ slug, updatedOn }) => ({
+    url: `${BASE_URL}${basePath}/${slug}`,
+    lastModified: updatedOn.toISOString(),
+  }))
 }
