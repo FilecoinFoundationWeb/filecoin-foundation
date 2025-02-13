@@ -13,7 +13,7 @@ import type { TouchTarget } from '@/types/touchTargetType'
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 
 import { Icon } from '@/components/Icon'
-import { NotificationDialog } from '@/components/NotificationDialog'
+import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
 type CopyToClipboardProps = {
   text: string

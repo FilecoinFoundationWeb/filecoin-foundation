@@ -2,7 +2,7 @@ import Image, { type ImageProps } from 'next/image'
 
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-import theme from 'tailwindcss/defaultTheme'
+import theme from 'tailwindcss/dist/default-theme'
 
 import { type CTAProps } from '@/types/ctaType'
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
@@ -72,7 +72,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative h-full rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative h-full rounded-lg border bg-brand-700/30 backdrop-blur-xl',
         borderStyles[borderColor],
       )}
     >

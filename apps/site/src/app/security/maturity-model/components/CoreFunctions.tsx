@@ -6,7 +6,7 @@ import { Article } from './Article'
 
 export function CoreFunctions() {
   return (
-    <div className="prose first:prose-h3:mt-0 prose-h4:text-brand-300 prose-h5:text-brand-300">
+    <div className="prose prose-h3:first:mt-0 prose-h4:text-brand-300 prose-h5:text-brand-300">
       {coreFunctionsData.map(({ title, Content, slug }, index) => (
         <Article key={slug} title={title} slug={slug}>
           <Content />

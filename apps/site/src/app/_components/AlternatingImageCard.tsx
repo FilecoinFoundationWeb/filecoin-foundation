@@ -33,13 +33,13 @@ export function AlternatingImageCard({
       <Image
         src={image.data}
         alt={image.alt}
-        className="h-48 flex-shrink-0 rounded-lg object-cover sm:h-64 lg:h-auto lg:w-1/3"
+        className="h-48 shrink-0 rounded-lg object-cover sm:h-64 lg:h-auto lg:w-1/3"
         sizes={buildImageSizeProp({
           startSize: '100vw',
           lg: '33vw',
         })}
       />
-      <div className="flex-grow">
+      <div className="grow">
         <BasicCard>{children}</BasicCard>
       </div>
     </Tag>
