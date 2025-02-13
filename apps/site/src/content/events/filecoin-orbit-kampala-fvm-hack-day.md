@@ -10,8 +10,8 @@ category: supported-sponsored
 location:
   primary: Kampala, Uganda
   region: africa
-start-date: 2024-12-14T09:00:00.000Z
-end-date: 2024-12-14T18:00:00.000Z
+start-date: 2024-12-14
+end-date: 2024-12-14
 external-link: https://lu.ma/zc25ir6p
 image:
   src: /assets/images/orbit-placeholder.webp

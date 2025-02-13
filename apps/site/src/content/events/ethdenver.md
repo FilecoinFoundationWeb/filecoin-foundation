@@ -7,7 +7,7 @@ category: supported-sponsored
 location:
   primary: Denver, CO
   region: north-america
-start-date: 2022-02-11T06:57:49.000Z
+start-date: 2022-02-11
 image:
   src: /assets/images/645215f9a2b74616855546de_ethdenver.png
 seo:

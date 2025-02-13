@@ -7,7 +7,7 @@ category: supported-sponsored
 location:
   primary: Jakarta, Indonesia
   region: apac-asia
-start-date: 2023-09-02T11:00:23.071Z
+start-date: 2023-09-02
 image:
   src: /assets/images/fil-jakarta.png
 seo:

@@ -8,8 +8,8 @@ location:
   primary: Paris, France
   region: europe
 external-link: https://ethcc.io/
-start-date: 2022-07-19T00:00:00.000Z
-end-date: 2022-07-21T00:00:00.000Z
+start-date: 2022-07-19
+end-date: 2022-07-21
 image:
   src: /assets/images/645215ed18e20de7428046f6_ethcc.png
 seo:

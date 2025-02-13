@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: Brussels, Belgium
   region: europe
-start-date: 2024-07-10T14:51:57.398Z
-end-date: 2024-07-11T14:51:57.409Z
+start-date: 2024-07-10
+end-date: 2024-07-11
 image:
   src: /assets/images/ethcc-24.png
 seo:

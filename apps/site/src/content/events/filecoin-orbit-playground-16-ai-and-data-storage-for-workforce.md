@@ -13,8 +13,8 @@ category: supported-sponsored
 location:
   primary: Bangkok, Thailand
   region: apac-asia
-start-date: 2024-12-23T17:00:00.000Z
-end-date: 2024-12-23T20:00:00.000Z
+start-date: 2024-12-23
+end-date: 2024-12-23
 external-link: https://www.eventpop.me/e/63652/filecoinplayground16
 image:
   src: /assets/images/orbit-placeholder.webp

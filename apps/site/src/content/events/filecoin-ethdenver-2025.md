@@ -11,7 +11,7 @@ category: supported-sponsored
 location:
   primary: Denver, CO
   region: north-america
-start-date: 2025-02-25T09:00:00.000Z
+start-date: 2025-02-25
 image:
   src: /assets/images/f-at-ed25.webp
 program:

@@ -6,7 +6,7 @@ published-on: 2023-06-27T16:21:11.352Z
 location:
   primary: Seoul, South Korea
   region: apac-asia
-start-date: 2022-12-15T17:21:11.381Z
+start-date: 2022-12-15
 image:
   src: /assets/images/network-day-korea-2022.png
 category: hosted

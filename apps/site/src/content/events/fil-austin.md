@@ -9,7 +9,7 @@ description: FIL Austin is a one-day, two-track event that will bring together
 location:
   primary: Austin, TX
   region: north-america
-start-date: 2022-06-08T18:35:00.000Z
+start-date: 2022-06-08
 image:
   src: /assets/images/645218c34b08773d70df834b_fil-austin.jpg
 seo:

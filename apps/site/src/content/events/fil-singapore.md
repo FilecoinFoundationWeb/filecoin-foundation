@@ -7,8 +7,8 @@ category: hosted
 location:
   primary: Singapore
   region: apac-asia
-start-date: 2022-09-24T00:00:00.000Z
-end-date: 2022-09-26T00:00:00.000Z
+start-date: 2022-09-24
+end-date: 2022-09-26
 image:
   src: /assets/images/645218e87f5430741f6d9bd6_fil-singapore.jpg
 seo:
