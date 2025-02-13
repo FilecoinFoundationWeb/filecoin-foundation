@@ -10,7 +10,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { formatDate } from '@/utils/dateUtils'
 import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
-import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'

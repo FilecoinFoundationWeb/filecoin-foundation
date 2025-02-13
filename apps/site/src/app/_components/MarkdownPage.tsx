@@ -1,36 +1,27 @@
-import type { WithContext, Thing } from 'schema-dts'
+import type { WithContext, WebPage } from 'schema-dts'
 
-import type { PageAttributes } from '@/types/attributesTypes'
-
-import type { SeoMetadata } from '@/schemas/SeoMetadataSchema'
-
-import {
-  type MarkdownContentProps,
-  MarkdownContent,
-} from '@/components/MarkdownContent'
+import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 type MarkdownPageProps = {
-  attributes: PageAttributes
-  body: MarkdownContentProps['children']
-  generateStructuredData: (seo: SeoMetadata) => WithContext<Thing>
+  title: string
+  children: string
+  structuredData: WithContext<WebPage>
 }
 
 export function MarkdownPage({
-  attributes,
-  body,
-  generateStructuredData,
+  title,
+  children,
+  structuredData,
 }: MarkdownPageProps) {
-  const { header, seo } = attributes
-
   return (
     <article className="prose">
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript structuredData={structuredData} />
       <header className="mb-6">
-        <PageHeader.Title>{header.title}</PageHeader.Title>
+        <PageHeader.Title>{title}</PageHeader.Title>
       </header>
-      <MarkdownContent>{body}</MarkdownContent>
+      <MarkdownContent>{children}</MarkdownContent>
     </article>
   )
 }
