@@ -9,5 +9,6 @@ seo:
   twitter:
     card: summary
   title: ""
+  description: Test
 ---
 Test
