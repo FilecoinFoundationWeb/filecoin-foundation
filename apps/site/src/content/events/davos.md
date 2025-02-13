@@ -82,8 +82,8 @@ schedule:
           tag: Registration Needed
           end: 2025-01-20T16:25:00.000Z
           description: What is Crypto Good For?
-      date: 2025-01-20T10:00:00.000Z
-    - date: 2025-01-21T09:00:00.000Z
+      date: 2025-01-20
+    - date: 2025-01-21
       events:
         - tag: Registration Needed
           title: Rachel Horn at Equality Lounge @ Davos
@@ -210,8 +210,8 @@ schedule:
             - name: Daniel Ammann
               company: Onocoy Association
           end: 2025-01-22T17:15:00.000Z
-      date: 2025-01-22T12:00:00.000Z
-    - date: 2025-01-24T12:00:00.000Z
+      date: 2025-01-22
+    - date: 2025-01-24
       events:
         - tag: Registration Needed
           title: Clara Tsao at Invest India Lounge
