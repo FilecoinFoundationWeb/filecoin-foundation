@@ -1,6 +1,6 @@
 import { PATHS } from '@/constants/paths'
 
-import markdownPage from '@/content/pages/employee-privacy-policy.md'
+import employeePrivacyPolicyMarkdown from '@/content/pages/employee-privacy-policy.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -10,7 +10,9 @@ import { MarkdownPage } from '@/components/MarkdownPage'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { attributes, body } = MarkdownPageSchema.parse(markdownPage)
+const { attributes, body } = MarkdownPageSchema.parse(
+  employeePrivacyPolicyMarkdown,
+)
 
 export const metadata = createMetadata({
   seo: attributes.seo,
