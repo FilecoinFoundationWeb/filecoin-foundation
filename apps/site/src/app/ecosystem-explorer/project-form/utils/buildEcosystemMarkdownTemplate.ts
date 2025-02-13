@@ -14,8 +14,8 @@ export type MarkdownTemplateParams = {
   yearJoined: NonNullable<EcosystemProject['yearJoined']>
   website: NonNullable<EcosystemProject['website']>
   createdOn: EcosystemProject['createdOn']
-  updatedOn: NonNullable<EcosystemProject['updatedOn']>
-  publishedOn: NonNullable<EcosystemProject['publishedOn']>
+  updatedOn: EcosystemProject['updatedOn']
+  publishedOn: EcosystemProject['publishedOn']
   videoUrl?: EcosystemProject['videoUrl']
   repo?: EcosystemProject['repo']
   twitter?: EcosystemProject['twitter']

@@ -4,12 +4,13 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
+import { formatDate } from '@/utils/dateUtils'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
 import type { BlogPost } from '@/blog/types/blogPostType'
-import { getMetaData } from '@/blog/utils/getMetaData'
+
 
 type FeaturedBlogPostsProps = {
   featuredBlogPosts: Array<BlogPost>
@@ -30,7 +31,7 @@ export function FeaturedBlogPosts({
           return (
             <Card
               key={slug}
-              metaData={getMetaData(publishedOn)}
+              metaData={[formatDate(publishedOn)]}
               tags={[{ text: categoryLabel }]}
               title={title}
               description={description}
