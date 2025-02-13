@@ -4,16 +4,15 @@ created-on: 2025-02-13T14:02:00.000Z
 updated-on: 2025-02-13T14:02:00.000Z
 published-on: 2025-02-13T14:02:00.000Z
 category: news
-description: "Dive deeper into the discussions around Fil+ at FIL Dev Summit and
-  offer an overview and 2025 roadmap for the program."
+description: Dive deeper into the discussions around Fil+ at FIL Dev Summit and
+  get an overview and 2025 roadmap for the program.
 image:
   src: /assets/images/02122025-fil-plus-blog-1-.webp
 seo:
   twitter:
     card: summary
-  description:
-    Dive deeper into the discussions around Fil+ at FIL Dev Summit and
-    offer an overview and 2025 roadmap for the program.
+  description: Dive deeper into the discussions around Fil+ at FIL Dev Summit and
+    get an overview and 2025 roadmap for the program.
 ---
 
 Scalability, diligence, and user experience are at the heart of the Filecoin Plus program priorities in 2025. 
