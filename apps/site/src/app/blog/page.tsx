@@ -7,8 +7,8 @@ import { attributes } from '@/content/pages/blog.md'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 import { formatDate } from '@/utils/dateUtils'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
 
