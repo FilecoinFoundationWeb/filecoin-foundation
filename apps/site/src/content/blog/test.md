@@ -8,5 +8,6 @@ description: Test
 seo:
   twitter:
     card: summary
+  title: Test
 ---
 Test
