@@ -1,6 +1,8 @@
 ---
 title: FIL Singapore alongside TOKEN2049 2024
 created-on: 2024-08-14T13:38:00.000Z
+published-on: 2024-08-14T13:38:00.000Z
+updated-on: 2024-08-14T13:38:00.000Z
 category: supported-sponsored
 location:
   primary: Singapore
