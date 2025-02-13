@@ -16,7 +16,7 @@ export const MarkdownPageSchema = z.object({
   body: z.string(),
 })
 
-export const BaseFrontmatterSchema = z.object({
+export const PageFrontmatterSchema = z.object({
   header: z.object({
     title: TitleSchema,
     description: DescriptionSchema,
@@ -24,6 +24,6 @@ export const BaseFrontmatterSchema = z.object({
   seo: SeoMetadataSchema,
 })
 
-export const FeaturedPageFrontmatterSchema = BaseFrontmatterSchema.extend({
+export const FeaturedPageFrontmatterSchema = PageFrontmatterSchema.extend({
   featured_entry: MarkdownEntryPathSchema,
 })

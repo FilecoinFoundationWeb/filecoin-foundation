@@ -4,7 +4,7 @@ import coordinatedDisclosurePolicyMarkdown from '@/content/pages/security/coordi
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { MarkdownPageSchema } from '@/schemas/FrontmatterSchema'
+import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { MarkdownPage } from '@/components/MarkdownPage'
 

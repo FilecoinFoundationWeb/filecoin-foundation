@@ -12,7 +12,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
-import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'

@@ -4,7 +4,7 @@ import termsOfUseMarkdown from '@/content/pages/terms-of-use.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { MarkdownPageSchema } from '@/schemas/FrontmatterSchema'
+import { MarkdownPageSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { MarkdownPage } from '@/components/MarkdownPage'
 

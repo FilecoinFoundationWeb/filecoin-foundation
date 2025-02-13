@@ -10,7 +10,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -36,7 +36,7 @@ const {
 } = FrontmatterSchema.parse(attributes)
 
 const { header: digestPageHeader } =
-  BaseFrontmatterSchema.parse(digestAttributes)
+  PageFrontmatterSchema.parse(digestAttributes)
 
 export const metadata = createMetadata({
   seo,
