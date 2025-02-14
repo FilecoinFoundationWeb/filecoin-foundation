@@ -18,8 +18,7 @@
       "@/styles/*": ["./src/app/_styles/*"],
       "@/support/*": ["./cypress/support/*"],
       "@/types/*": ["./src/app/_types/*"],
-      "@/utils/*": ["./src/app/_utils/*"],
-      "@filecoin-foundation/ui": ["../packages/ui/src"]
+      "@/utils/*": ["./src/app/_utils/*"]
     },
     "plugins": [
       {
