@@ -56,7 +56,6 @@ export function ShareArticle({
               <a
                 aria-label={`Share on ${label}`}
                 href={href}
-                role="tooltip"
                 rel="noopener noreferrer"
                 className={clsx(
                   'focus:brand-outline hover:text-brand-400',
