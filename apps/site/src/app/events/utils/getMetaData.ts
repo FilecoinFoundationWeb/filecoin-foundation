@@ -1,10 +1,12 @@
+import { isSameDay } from 'date-fns'
+
 import { formatDate } from '@/utils/dateUtils'
 
 import type { Event } from '../types/eventType'
 
 type getMetaDataParams = {
   startDate: Event['startDate']
-  endDate?: Event['endDate']
+  endDate: Event['endDate']
   location: Event['location']['primary']
 }
 
@@ -14,8 +16,17 @@ export function getMetaData({
   location,
 }: getMetaDataParams) {
   const formattedStartDate = formatDate(startDate)
-  const formattedEndDate = endDate ? ` - ${formatDate(endDate)}` : ''
-  const formattedDate = `${formattedStartDate}${formattedEndDate}`
 
-  return [formattedDate, location]
+  if (!endDate) {
+    return [formattedStartDate, location]
+  }
+
+  if (isSameDay(startDate, endDate)) {
+    return [formattedStartDate, location]
+  }
+
+  const formattedEndDate = formatDate(endDate)
+  const dateRange = `${formattedStartDate} - ${formattedEndDate}`
+
+  return [dateRange, location]
 }

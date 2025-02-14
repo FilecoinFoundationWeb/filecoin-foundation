@@ -9,8 +9,8 @@ description: >-
   generation of students about Filecoin’s technology.
 location:
   primary: Virtual
-start-date: 2021-09-30T22:00:00.000Z
-end-date: 2021-12-30T23:00:00.000Z
+start-date: 2021-09-30
+end-date: 2021-12-30
 image:
   src: /assets/images/64521608455b5bc68cf5c6fa_filecoin-club.png
 category: supported-sponsored

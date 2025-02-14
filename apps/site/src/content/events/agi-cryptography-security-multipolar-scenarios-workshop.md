@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: San Francisco, CA
   region: north-america
-start-date: 2024-05-14T15:48:19.518Z
-end-date: 2024-05-15T15:48:19.530Z
+start-date: 2024-05-14
+end-date: 2024-05-15
 external-link: https://foresight.org/2024-intelligent-cooperation-workshop/
 image:
   src: /assets/images/foresight.svg

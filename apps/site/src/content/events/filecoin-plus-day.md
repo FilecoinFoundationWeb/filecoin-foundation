@@ -6,7 +6,7 @@ published-on: 2023-05-03T08:22:38.798Z
 category: hosted
 location:
   primary: Virtual
-start-date: 2022-05-11T06:00:24.000Z
+start-date: 2022-05-11
 seo:
   description:
     Celebrate Filecoin Plus Day and learn about the latest updates and

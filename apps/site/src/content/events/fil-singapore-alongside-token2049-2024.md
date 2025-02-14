@@ -7,7 +7,7 @@ category: supported-sponsored
 location:
   primary: Singapore
   region: apac-asia
-start-date: 2024-09-20T18:00:00.000Z
+start-date: 2024-09-20
 description: "​Hosted by MetaPals and supported by Filecoin Foundation, FIL SG:
   Web3 Wonderland is the marquee event alongside TOKEN2049, bringing together
   some of the sharpest minds and most innovative projects across Web3 and AI.

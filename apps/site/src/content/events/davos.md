@@ -11,8 +11,8 @@ category: hosted
 location:
   primary: Davos, Switzerland
   region: europe
-start-date: 2025-01-20T09:00:00.000Z
-end-date: 2025-01-23T17:00:00.000Z
+start-date: 2025-01-20
+end-date: 2025-01-23
 image:
   src: /assets/images/ff-at-davos-25.webp
 program:

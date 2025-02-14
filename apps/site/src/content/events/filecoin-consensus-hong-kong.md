@@ -12,7 +12,7 @@ category: supported-sponsored
 location:
   primary: Hong Kong
   region: apac-asia
-start-date: 2025-02-17T09:00:00.000Z
+start-date: 2025-02-17
 image:
   src: /assets/images/f-at-hk25.webp
 program:

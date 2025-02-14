@@ -7,8 +7,8 @@ category: hosted
 location:
   primary: Austin, TX
   region: north-america
-start-date: 2023-04-24T15:46:15.146Z
-end-date: 2023-04-26T15:46:15.151Z
+start-date: 2023-04-24
+end-date: 2023-04-26
 image:
   src: /assets/images/network-base-austin-2023-pic.png
 seo:

@@ -3,8 +3,7 @@ import {
   compareDesc,
   isAfter,
   isBefore,
-  startOfTomorrow,
-  startOfYesterday,
+  startOfToday,
 } from 'date-fns'
 
 import type { NonEmptyMutableArray } from '@/types/utils'
@@ -37,27 +36,27 @@ export function sortNonEmptyEventsAsc<
 }
 
 export function getUpcomingEvents<T extends DateFields>(events: Array<T>) {
-  const yesterday = startOfYesterday()
+  const today = startOfToday()
 
   return sortEventsAsc(
     events.filter(({ startDate, endDate }) =>
-      isAfter(getEventDate(startDate, endDate), yesterday),
+      isAfter(getEventDate(startDate, endDate), today),
     ),
   )
 }
 
 export function getPastEvents<T extends DateFields>(events: Array<T>) {
-  const tomorrow = startOfTomorrow()
+  const today = startOfToday()
 
   return sortEventsDesc(
     events.filter(({ startDate, endDate }) =>
-      isBefore(getEventDate(startDate, endDate), tomorrow),
+      isBefore(getEventDate(startDate, endDate), today),
     ),
   )
 }
 
 function getEventDate(
-  startDate: Event['startDate'],
+  startDate: DateFields['startDate'],
   endDate: DateFields['endDate'],
 ) {
   return endDate || startDate

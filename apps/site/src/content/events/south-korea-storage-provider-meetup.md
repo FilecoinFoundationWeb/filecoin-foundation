@@ -7,7 +7,7 @@ location:
   primary: Seoul, South Korea
   region: apac-asia
 external-link: https://lu.ma/sp-korea-meetup
-start-date: 2022-08-12T00:00:00.000Z
+start-date: 2022-08-12
 image:
   src: /assets/images/6452196b59d1f8a352664f3b_korea-sp.jpg
 category: hosted

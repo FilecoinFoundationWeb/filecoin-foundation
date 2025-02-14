@@ -7,8 +7,8 @@ category: hosted
 location:
   primary: Denver, CO
   region: north-america
-start-date: 2023-02-28T16:39:25.712Z
-end-date: 2023-03-01T16:39:25.716Z
+start-date: 2023-02-28
+end-date: 2023-03-01
 image:
   src: /assets/images/fvm-hackerbase-2023.png
 seo:

@@ -10,7 +10,7 @@ description: >-
 location:
   primary: Austin, TX
   region: north-america
-start-date: 2022-03-13T16:00:00.000Z
+start-date: 2022-03-13
 image:
   src: /assets/images/645215f691cf5c91a16146aa_https___cdn-evbuc-com_images_239998219_264947572824_1_original.jpeg
 category: supported-sponsored

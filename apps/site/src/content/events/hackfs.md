@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: Virtual
 external-link: https://www.youtube.com/watch?v=RWxd9X2bKfo
-start-date: 2021-07-29T22:00:00.000Z
-end-date: 2021-08-19T22:00:00.000Z
+start-date: 2021-07-29
+end-date: 2021-08-19
 seo:
   description: Participate in HackFS to innovate and build decentralized
     applications using Filecoin and IPFS.

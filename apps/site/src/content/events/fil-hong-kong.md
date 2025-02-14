@@ -8,8 +8,8 @@ description: ""
 location:
   primary: Hong Kong, China
   region: apac-asia
-start-date: 2023-04-12T15:30:53.302Z
-end-date: 2023-04-15T15:30:53.477Z
+start-date: 2023-04-12
+end-date: 2023-04-15
 image:
   src: /assets/images/fil-hong-kong.png
 seo:

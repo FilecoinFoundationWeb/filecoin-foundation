@@ -8,8 +8,8 @@ location:
   primary: San Juan, Puerto Rico
   region: south-america
 external-link: https://www.prblockchainweek.io/
-start-date: 2022-12-05T18:15:30.421Z
-end-date: 2022-12-10T18:15:00.000Z
+start-date: 2022-12-05
+end-date: 2022-12-10
 image:
   src: /assets/images/pr-blockchain-2022.png
 seo:

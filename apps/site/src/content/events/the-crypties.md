@@ -7,7 +7,7 @@ category: supported-sponsored
 location:
   primary: Miami, FL
   region: north-america
-start-date: 2022-11-30T18:24:48.715Z
+start-date: 2022-11-30
 image:
   src: /assets/images/crypties-2022.png
 seo:

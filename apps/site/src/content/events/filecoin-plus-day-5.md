@@ -7,7 +7,7 @@ category: hosted
 location:
   primary: Virtual
 external-link: https://www.youtube.com/watch?v=wP4Bk8lBNUc
-start-date: 2021-05-10T22:00:00.000Z
+start-date: 2021-05-10
 image:
   src: /assets/images/6452191a0250ed07cbd15415_luma-_-fil-day.jpg
 seo:
