@@ -1,6 +1,7 @@
 import { Archivo } from 'next/font/google'
 
-import { BreakpointDebugger } from '@/components/_dev_BreakpointDebugger'
+import { BreakpointDebugger } from '@filecoin-foundation/ui'
+
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation/Navigation'
 
