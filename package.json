@@ -2,7 +2,8 @@
   "name": "filecoin-foundation",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "packageManager": "npm@10.9.0",
   "scripts": {
