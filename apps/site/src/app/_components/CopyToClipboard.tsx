@@ -14,6 +14,7 @@ import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogD
 
 import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog'
+import { Tooltip } from '@/components/Tooltip/Tooltip'
 
 type CopyToClipboardProps = {
   text: string
@@ -51,15 +52,22 @@ export function CopyToClipboard({
         setIsOpen={setIsCopied}
         title={notificationTitle}
       />
-      <Button
-        className={clsx(
-          'focus:brand-outline hover:text-brand-400',
-          TOUCH_TARGET.touchAreaPadding,
-        )}
-        onClick={() => handleCopy(text)}
-      >
-        <Icon component={Link} size={32} weight="light" />
-      </Button>
+      <Tooltip description="Copy link to clipboard" side="bottom">
+        <Button
+          className={clsx(
+            'focus:brand-outline hover:text-brand-400',
+            TOUCH_TARGET.touchAreaPadding,
+          )}
+          onClick={() => handleCopy(text)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              handleCopy(text)
+            }
+          }}
+        >
+          <Icon component={Link} size={32} weight="light" />
+        </Button>
+      </Tooltip>
     </>
   )
 }
