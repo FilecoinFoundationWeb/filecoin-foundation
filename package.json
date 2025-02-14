@@ -2,9 +2,10 @@
   "name": "filecoin-foundation",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
-  "packageManager": "npm@10.9.0",
+  "packageManager": "npm@10.9.2",
   "scripts": {
     "build": "turbo run build",
     "start": "turbo run start",
