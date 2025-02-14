@@ -8,10 +8,10 @@ import {
 
 import { attributes as aboutPageAttributes } from '@/content/pages/about.md'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 const { header: aboutPageHeader } =
-  BaseFrontmatterSchema.parse(aboutPageAttributes)
+  PageFrontmatterSchema.parse(aboutPageAttributes)
 
 const { social, email } = FILECOIN_FOUNDATION_URLS
 

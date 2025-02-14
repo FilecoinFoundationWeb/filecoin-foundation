@@ -6,7 +6,7 @@ import { attributes } from '@/content/pages/__PATH_NAME__.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -16,7 +16,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = BaseFrontmatterSchema.parse(attributes)
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
