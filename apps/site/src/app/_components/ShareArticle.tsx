@@ -10,6 +10,7 @@ import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
 import { CopyToClipboard } from '@/components/CopyToClipboard'
 import { Icon } from '@/components/Icon'
+import { Tooltip } from '@/components/Tooltip/Tooltip'
 
 type ShareArticleProps = {
   articleTitle: string
@@ -43,24 +44,28 @@ export function ShareArticle({
           TOUCH_TARGET.touchAreaOffset,
         )}
       >
-        <CopyToClipboard
-          text={articleUrl}
-          notificationTitle="Link copied to clipboard!"
-        />
+        <li>
+          <CopyToClipboard
+            text={articleUrl}
+            notificationTitle="Link copied to clipboard!"
+          />
+        </li>
         {socialLinksWithIcons.map(({ label, href, icon }) => (
           <li key={label} className="inline-flex">
-            <a
-              aria-label={`Share on ${label}`}
-              href={href}
-              rel="noopener noreferrer"
-              title={`Share on ${label}`}
-              className={clsx(
-                'focus:brand-outline hover:text-brand-400',
-                TOUCH_TARGET.touchAreaPadding,
-              )}
-            >
-              <Icon component={icon} size={32} weight="light" />
-            </a>
+            <Tooltip description={`Share on ${label}`} side="bottom">
+              <a
+                aria-label={`Share on ${label}`}
+                href={href}
+                role="tooltip"
+                rel="noopener noreferrer"
+                className={clsx(
+                  'focus:brand-outline hover:text-brand-400',
+                  TOUCH_TARGET.touchAreaPadding,
+                )}
+              >
+                <Icon component={icon} size={32} weight="light" />
+              </a>
+            </Tooltip>
           </li>
         ))}
       </ul>
