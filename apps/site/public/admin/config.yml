@@ -724,13 +724,15 @@ collections:
               - name: "start-date"
                 label: "Start Date"
                 widget: "datetime"
+                date_format: *date_iso_format
                 hint: "First day of event"
                 picker_utc: true
               - name: "end-date"
                 label: "End Date"
                 widget: "datetime"
+                date_format: *date_iso_format
                 required: false
-                hint: "Last day of event"
+                hint: "Last day of event. Leave empty for single-day events."
                 picker_utc: true
               - name: "location"
                 label: "Location"
