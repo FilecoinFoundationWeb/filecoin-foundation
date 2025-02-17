@@ -19,7 +19,7 @@ program:
   events:
     - title: "Decentralized Intelligence: Filecoin x AI Night. Hosted by NDLabs,
         Supported by Filecoin Orbit and Filecoin Foundation"
-      start-date: 2025-02-17T17:00:00.000Z
+      start-date: 2025-02-17
       location: Maggie Choo's
       external-link: https://lu.ma/9462sbyn
   kicker: FIND US AROUND HONG KONG
@@ -60,7 +60,8 @@ schedule:
     - events:
         - tag: Registration Needed
           title: "Clara Tsao at ALPHA: HONG KONG EDITION"
-          description: "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
+          description:
+            "Future-Proofing Layer 1s: Designing Blockchain Infrastructure for
             2025 and beyond"
           speakers:
             - name: Clara Tsao
