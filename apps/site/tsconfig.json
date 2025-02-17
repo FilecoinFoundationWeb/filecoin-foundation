@@ -2,7 +2,6 @@
   "extends": "@filecoin-foundation/typescript-config/base.json",
   "compilerOptions": {
     "noEmit": true,
-    "allowJs": true,
     "jsx": "preserve",
     "paths": {
       "@/*": ["./src/app/*"],
@@ -29,7 +28,6 @@
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
-    "src/app/_types/**/*.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "cypress/**/*.ts"
