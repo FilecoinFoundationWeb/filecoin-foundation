@@ -8,7 +8,7 @@ import theme from 'tailwindcss/defaultTheme'
 import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 
 import type { Event } from '../../../types/eventType'
-import { formatDate } from '../../utils/dateUtils'
+import { abbreviateDate } from '../../utils/dateUtils'
 import { filterAndSortScheduleDays } from '../../utils/filterAndSortScheduleDays'
 import { scrollTabContentIntoView } from '../../utils/scrollTabContentIntoView'
 
@@ -57,17 +57,17 @@ export function Tabs({ schedule }: TabsProps) {
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
         {sortedDays.map((day) => (
           <Tab
-            key={formatDate(day.date)}
+            key={abbreviateDate(day.date)}
             className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-[hover]:bg-brand-700 data-[selected]:bg-brand-700 data-[selected]:text-brand-400"
           >
-            {formatDate(day.date)}
+            {abbreviateDate(day.date)}
           </Tab>
         ))}
       </TabList>
       <TabPanels>
         {sortedDays.map((day) => (
           <TabPanel
-            key={formatDate(day.date)}
+            key={abbreviateDate(day.date)}
             className="rounded-lg focus:brand-outline"
           >
             <div className="grid gap-4">
