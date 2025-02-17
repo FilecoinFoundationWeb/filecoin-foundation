@@ -6,7 +6,7 @@ import { attributes } from '@/content/pages/ecosystem-explorer/project-form.md'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { DescriptionText } from '@/components/DescriptionText'
 import { PageHeader } from '@/components/PageHeader'
@@ -23,7 +23,7 @@ import { SearchParamsSchema } from './schema/SearchParamsSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getFormInitialValue } from './utils/getFormInitialValue'
 
-const { header, seo } = BaseFrontmatterSchema.parse(attributes)
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo,

@@ -29,9 +29,7 @@ updated_on: &updated_on
   name: "updated-on"
   label: "Updated On"
   widget: "datetime"
-
   default: "{{now}}"
-  required: false
   picker_utc: true
 
 published_on: &published_on
@@ -39,7 +37,6 @@ published_on: &published_on
   label: "Published On"
   widget: "datetime"
   default: "{{now}}"
-  required: false
   picker_utc: true
 
 header_config: &header_config

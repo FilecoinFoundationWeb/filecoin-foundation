@@ -7,7 +7,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -17,7 +17,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { Leaderboard } from './components/Leaderboard'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = BaseFrontmatterSchema.parse(attributes)
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
