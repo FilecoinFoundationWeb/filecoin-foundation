@@ -18,9 +18,7 @@ export function filterAndSortScheduleDays(
   }))
 
   const sortedDays = daysWithEventsSortedByTime.toSorted((a, b) => {
-    const dateA = new UTCDate(a.date)
-    const dateB = new UTCDate(b.date)
-    return compareAsc(dateA, dateB)
+    return compareAsc(a.date, b.date)
   })
 
   return sortedDays

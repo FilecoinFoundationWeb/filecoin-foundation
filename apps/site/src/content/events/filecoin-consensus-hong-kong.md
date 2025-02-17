@@ -37,7 +37,7 @@ schedule:
           start: 2025-02-19T15:30:00.000Z
           location: Hashkey Capital Headquarters
           url: https://lu.ma/deaisummitHK
-      date: 2025-02-19T09:00:00.000Z
+      date: 2025-02-19
     - events:
         - title: Clara Tsao at Consensus Hong Kong
           tag: Registration Needed
@@ -56,7 +56,7 @@ schedule:
           start: 2025-02-20T10:00:00.000Z
           location: Renaissance Hong Kong Harbour View Hotel
           url: https://lu.ma/hack_hk
-      date: 2025-02-20T09:00:00.000Z
+      date: 2025-02-20
     - events:
         - tag: Registration Needed
           title: "Clara Tsao at ALPHA: HONG KONG EDITION"
@@ -68,7 +68,7 @@ schedule:
           start: 2025-02-21T13:05:00.000Z
           location: Cardinal Point
           url: https://lu.ma/hcge9jg4
-      date: 2025-02-21T09:00:00.000Z
+      date: 2025-02-21
 speakers:
   kicker: CONNECT WITH US
   title: Meet The Team
