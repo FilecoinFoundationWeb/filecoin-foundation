@@ -8,7 +8,6 @@ location:
   primary: Virtual
 external-link: https://www.nftvisionhack.com/
 start-date: 2021-06-30
-end-date: 2021-08-30
 seo:
   description: Join the NFT Vision Hack to innovate and create the future of NFTs.
 ---

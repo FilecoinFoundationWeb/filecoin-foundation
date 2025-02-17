@@ -74,7 +74,6 @@ program:
         high-value experience for all participants.
     - title: "Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
       start-date: 2025-02-26
-      end-date: 2026-02-26
       description:
         Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
         Backer/Builder matchmaking, crypto panels, and networking. Explore
@@ -84,7 +83,6 @@ program:
       external-link: https://lu.ma/solanaspeed
     - title: Decentralized Media Summit
       start-date: 2025-02-26
-      end-date: 2025-02-26
       location: Milk Market
       external-link: https://lu.ma/i9gatw59
       description: ​Join pioneers of decentralized media as they chart out a new
@@ -101,7 +99,6 @@ program:
         "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
         Foundation"
       start-date: 2025-02-27
-      end-date: 2025-02-27
       location: Denver, CO
       description:
         "Join us at GLIF's Pool Party for a fun-filled evening with lending
