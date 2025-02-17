@@ -11,7 +11,6 @@ location:
   primary: Kampala, Uganda
   region: africa
 start-date: 2024-12-14
-end-date: 2024-12-14
 external-link: https://lu.ma/zc25ir6p
 image:
   src: /assets/images/orbit-placeholder.webp

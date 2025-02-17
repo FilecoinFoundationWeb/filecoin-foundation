@@ -11,7 +11,6 @@ location:
   region: north-america
 external-link: https://blocklive.io/event/consensus2024
 start-date: 2024-05-30
-end-date: 2024-05-30
 image:
   src: /assets/images/consensus-2024.png
 seo:

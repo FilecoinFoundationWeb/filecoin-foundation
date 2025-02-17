@@ -10,7 +10,6 @@ location:
   region: north-america
 external-link: https://www.eventbrite.com/e/social-impact-summit-2024-tickets-758076215367
 start-date: 2024-02-27
-end-date: 2024-02-27
 image:
   src: /assets/images/sis24.png
 category: hosted
