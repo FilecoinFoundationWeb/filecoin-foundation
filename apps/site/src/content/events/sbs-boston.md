@@ -8,7 +8,6 @@ location:
   primary: Boston, MA
   region: north-america
 start-date: 2023-04-13
-end-date: 2023-04-13
 image:
   src: /assets/images/sbs-boston-2023.png
 seo:
