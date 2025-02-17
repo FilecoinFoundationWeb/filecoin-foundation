@@ -107,8 +107,8 @@ schedule:
           end: 2024-11-06T20:00:00.000Z
           location: Gaysorn Urban Resort
           url: https://www.fildev.io/FDS-5
-      date: 2024-11-06T11:00:00.000Z
-    - date: 2024-11-07T09:00:00.000Z
+      date: 2024-11-06
+    - date: 2024-11-07
       events:
         - title: FIL Bangkok Co-Working Space
           description: >-
@@ -134,7 +134,7 @@ schedule:
           location: Gaysorn Urban Resort
           start: 2024-11-07T09:00:00.000Z
           end: 2024-11-07T18:30:00.000Z
-    - date: 2024-11-08T09:00:00.000Z
+    - date: 2024-11-08
       events:
         - title: FIL Bangkok Co-Working Space
           description: >-
@@ -444,7 +444,7 @@ schedule:
             rapid-fire overview of the startups and tools the Filecoin network
             needs built and how FIL-B is making it easy for devs to onboard and
             contribute to the future of Filecoin.
-      date: 2024-11-11T09:00:00.000Z
+      date: 2024-11-11
 speakers:
   speakers_list:
     - name: Juan Benet

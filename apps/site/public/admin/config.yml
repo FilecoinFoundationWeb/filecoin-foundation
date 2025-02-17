@@ -767,6 +767,7 @@ collections:
               - name: "date"
                 label: "Date"
                 widget: "datetime"
+                date_format: *date_iso_format
               - name: "events"
                 label: "Events"
                 widget: "list"
