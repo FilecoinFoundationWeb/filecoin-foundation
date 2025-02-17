@@ -27,7 +27,6 @@ export function NotificationDialog({
       open={isOpen}
       as="div"
       className="fixed inset-0 z-50 flex items-start justify-center p-4"
-      aria-labelledby="notification-title"
       onClose={() => setIsOpen(false)}
     >
       <DialogPanel
@@ -43,8 +42,6 @@ export function NotificationDialog({
         )}
       >
         <DialogTitle
-          aria-labelledby="dialog-title"
-          id="notification-title"
           as="h3"
           className="flex flex-1 items-center gap-3 text-brand-100"
         >
