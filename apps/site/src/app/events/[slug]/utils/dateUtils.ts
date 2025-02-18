@@ -3,7 +3,7 @@ import { format } from 'date-fns'
 
 import { formatDate } from '@/utils/dateUtils'
 
-export function abbreviateDate(date: Date) {
+export function formatShortDate(date: Date) {
   return formatDate(date, 'EEE, MMM d')
 }
 
