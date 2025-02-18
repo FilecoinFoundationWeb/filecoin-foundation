@@ -52,7 +52,7 @@
   }
 
   & pre {
-    @apply border-brand-600 border border-solid;
+    @apply border border-solid border-brand-600;
   }
 
   & iframe {
@@ -78,10 +78,10 @@
 
 @layer components {
   .text-link {
-     @apply text-brand-300 hover:underline focus:brand-outline;
+    @apply text-brand-300 hover:underline focus:brand-outline;
   }
 
   .toc-header {
-    @apply text-brand-200 text-sm font-semibold uppercase;
+    @apply text-sm font-semibold text-brand-200 uppercase;
   }
 }
