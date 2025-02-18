@@ -9,6 +9,8 @@ import { clsx } from 'clsx'
 
 import { Icon, type IconProps } from '@/components/Icon'
 
+import './NotificationDialog.css'
+
 type NotificationDialogProps = {
   isOpen: boolean
   setIsOpen: (arg: boolean) => void
@@ -32,7 +34,7 @@ export function NotificationDialog({
       <DialogPanel
         transition
         className={clsx(
-          'flex w-80 gap-3 rounded-lg border border-brand-100 border-opacity-20 bg-brand-800 p-5 sm:w-96',
+          'flex w-80 gap-3 rounded-lg border border-brand-100/20 bg-brand-800 p-5 sm:w-96',
           {
             'animate-slide-in-from-top': isOpen,
             'animate-shrink-and-fade-out': !isOpen,

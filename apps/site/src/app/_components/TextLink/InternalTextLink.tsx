@@ -5,8 +5,6 @@ import type { Route } from 'next'
 
 import { type BaseLinkProps } from '@/components/BaseLink'
 
-import styles from './TextLink.module.scss'
-
 type InternalLinkProps = Omit<BaseLinkProps, 'href'> & {
   href: Route
 }
@@ -17,7 +15,7 @@ export function InternalTextLink({
   ...rest
 }: InternalLinkProps) {
   return (
-    <Link className={clsx(styles.base, className)} {...rest}>
+    <Link className={clsx('text-link', className)} {...rest}>
       {children}
     </Link>
   )

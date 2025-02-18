@@ -4,8 +4,6 @@ import { clsx } from 'clsx'
 import { type BaseLinkProps } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
 
-import styles from './TextLink.module.scss'
-
 type ExternalLinkProps = Omit<BaseLinkProps, 'href'> & {
   href: string
 }
@@ -17,7 +15,7 @@ export function ExternalTextLink({
 }: ExternalLinkProps) {
   return (
     <a
-      className={clsx('inline-block text-pretty', styles.base, className)}
+      className={clsx('text-link inline-block text-pretty', className)}
       {...rest}
     >
       {children}

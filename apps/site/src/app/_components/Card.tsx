@@ -2,10 +2,10 @@ import Image, { type ImageProps } from 'next/image'
 
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-import theme from 'tailwindcss/defaultTheme'
 
 import { type CTAProps } from '@/types/ctaType'
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
+import { type BreakpointValue, type SpacingValue } from '@/types/tailwindTypes'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { isExternalLink } from '@/utils/linkUtils'
@@ -40,9 +40,6 @@ type CardProps = {
   avatars?: AvatarGroupProps['authors']
 }
 
-type SpacingValue = keyof typeof theme.spacing
-type BreakpointValue = keyof typeof theme.screens
-
 type LeftProperty = `left-${SpacingValue}`
 type ResponsiveLeftProperty = `${BreakpointValue}:${LeftProperty}`
 
@@ -72,7 +69,7 @@ export function Card({
   return (
     <Tag
       className={clsx(
-        'relative h-full rounded-lg border bg-brand-700 bg-opacity-30 backdrop-blur-xl',
+        'relative h-full rounded-lg border bg-brand-700/30 backdrop-blur-xl',
         borderStyles[borderColor],
       )}
     >
