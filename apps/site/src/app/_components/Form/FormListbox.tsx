@@ -1,5 +1,6 @@
 import { Listbox } from '@headlessui/react'
-import theme from 'tailwindcss/defaultTheme'
+
+import { type SpacingValue } from '@/types/tailwindTypes'
 
 import { FormField, type FormFieldProps } from '@/components/Form/FormField'
 import { type IconProps } from '@/components/Icon'
@@ -12,7 +13,6 @@ import {
   ListboxOptions,
   type ListboxOptionsProps,
 } from '@/components/Listbox/ListboxOptions'
-
 export type FormListboxProps = {
   value: OptionType
   onChange: (value: OptionType) => void
@@ -20,7 +20,7 @@ export type FormListboxProps = {
   options: Array<OptionType>
   placeholder: string
   icon?: IconProps['component']
-  buttonWidth?: `w-${keyof typeof theme.spacing}`
+  buttonWidth?: `w-${SpacingValue}`
   optionsPosition?: ListboxOptionsProps['position']
   disabled?: boolean
 } & FormFieldProps

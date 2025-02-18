@@ -1,0 +1,62 @@
+@reference '../../_styles/globals.css';
+
+.table-container {
+  @apply w-full overflow-x-auto rounded-lg focus:brand-outline;
+
+  &[data-freeze-header="true"] {
+    @apply max-h-screen;
+
+    & thead td,
+    & thead th {
+      @apply sticky top-0 z-10 bg-inherit;
+    }
+  }
+
+  &[data-freeze-first-column="true"] {
+    & td:first-child,
+    & th:first-child {
+      @apply sticky left-0 z-10 bg-inherit;
+    }
+  }
+
+  &[data-freeze-header="true"][data-freeze-first-column="true"] {
+    & thead th:first-child {
+      @apply z-20;
+    }
+  }
+}
+
+.table {
+  @apply h-full min-w-full isolate border-collapse border-spacing-0;
+
+  & tr {
+    @apply h-[52px] bg-brand-800;
+  }
+
+  & tbody {
+    & tr:nth-child(odd) {
+      @apply bg-brand-700;
+    }
+
+    & tr:nth-child(even) {
+      @apply bg-brand-800;
+    }
+  }
+
+  & td,
+  & th {
+    @apply px-5 text-left font-normal whitespace-nowrap;
+
+    &:first-child {
+      @apply pl-10;
+    }
+
+    &:last-child {
+      @apply pr-10;
+    }
+  }
+
+  & thead th {
+    @apply border-b border-brand-500;
+  }
+}

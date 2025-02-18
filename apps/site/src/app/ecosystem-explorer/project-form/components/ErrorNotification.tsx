@@ -8,7 +8,7 @@ import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@/constants/notificationD
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { NotificationDialog } from '@/components/NotificationDialog'
+import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
 type ErrorMessageProps = {
   message: string

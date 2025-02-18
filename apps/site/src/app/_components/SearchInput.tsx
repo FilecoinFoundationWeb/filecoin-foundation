@@ -14,7 +14,7 @@ export function SearchInput({ query, onChange }: SearchInputProps) {
       <Label className="sr-only">Search</Label>
       <div className="relative">
         <Input
-          className="peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-11 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 placeholder:hover:text-brand-400 focus:text-brand-100 placeholder:focus:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none"
+          className="peer form-input block w-full rounded-lg border border-brand-300 bg-brand-800 px-11 py-3 focus:brand-outline placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:text-brand-100 focus:placeholder:text-brand-100 [&::-webkit-search-cancel-button]:appearance-none"
           placeholder="Search"
           type="search"
           value={query}
@@ -25,7 +25,7 @@ export function SearchInput({ query, onChange }: SearchInputProps) {
         </div>
         {query && (
           <Button
-            className="absolute right-1 top-1 flex size-[42px] items-center justify-center rounded text-brand-300 focus:brand-outline peer-hover:text-brand-400 peer-focus:text-brand-100"
+            className="absolute right-1 top-1 flex size-[42px] items-center justify-center rounded-sm text-brand-300 focus:brand-outline peer-hover:text-brand-400 peer-focus:text-brand-100"
             aria-label="Clear search input"
             onClick={() => onChange('')}
           >
