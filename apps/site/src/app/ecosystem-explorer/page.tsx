@@ -2,12 +2,13 @@ import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -17,15 +18,13 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { EcosystemExplorerContent } from './components/EcosystemExplorerContent'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.ECOSYSTEM_EXPLORER,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -38,6 +37,7 @@ export const metadata = createMetadata({
 
 export default async function EcosystemExplorer(props: Props) {
   const searchParams = await props.searchParams
+  const ecosystemProjects = await getEcosystemProjectsData()
 
   return (
     <PageLayout>
@@ -57,7 +57,10 @@ export default async function EcosystemExplorer(props: Props) {
         title="Ecosystem Projects"
         description="Discover the diverse landscape of projects in the Filecoin ecosystem. Inclusion in the Filecoin Ecosystem Explorer is not an endorsement of any project, any company, or any company’s product or services."
       >
-        <EcosystemExplorerContent searchParams={searchParams} />
+        <EcosystemExplorerContent
+          searchParams={searchParams}
+          ecosystemProjects={ecosystemProjects}
+        />
       </PageSection>
 
       <CTASection

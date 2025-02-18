@@ -4,14 +4,15 @@ import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/events.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getFrontmatter } from '@/utils/getFrontmatter'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
-import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
@@ -24,17 +25,14 @@ import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'
 import { getInvolvedData } from './data/getInvolvedData'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getEventData } from './utils/getEventData'
+import { getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
   searchParams: AsyncNextServerSearchParams
 }
 
-const { seo, featuredEntry: featuredEventPath } = getFrontmatter({
-  path: PATHS.EVENTS,
-  zodParser: FeaturedPageFrontmatterSchema.parse,
-})
+const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -45,15 +43,14 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-const featuredEventSlug = extractSlugFromFilename(featuredEventPath)
-const featuredEvent = getEventData(featuredEventSlug)
-
 export default async function Events(props: Props) {
   const searchParams = await props.searchParams
+  const events = await getEventsData()
 
-  if (!featuredEvent) {
-    throw new Error('Featured event not found')
-  }
+  const featuredEvent = getFeaturedEntry({
+    entries: events,
+    featuredEntryPath: featured_entry,
+  })
 
   return (
     <PageLayout>
@@ -78,7 +75,7 @@ export default async function Events(props: Props) {
         }}
       />
       <PageSection kicker="Events" title="Network Events">
-        <EventsContent searchParams={searchParams} />
+        <EventsContent searchParams={searchParams} events={events} />
       </PageSection>
 
       <PageSection

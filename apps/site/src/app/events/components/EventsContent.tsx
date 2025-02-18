@@ -3,7 +3,13 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY, LOCATION_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  LOCATION_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -33,29 +39,31 @@ import { Search } from '@/components/Search'
 import { EventSort } from '../components/EventSort'
 import { DEFAULT_CTA_TEXT, FILTERS_CONFIG } from '../constants/constants'
 import { eventsSortConfigs } from '../constants/sortConfigs'
-import { getEventsData } from '../utils/getEventData'
+import type { Event } from '../types/eventType'
 import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
 import { getMetaData } from '../utils/getMetaData'
 
 type EventsContentProps = {
   searchParams: NextServerSearchParams
+  events: Array<Event>
 }
 
-const events = getEventsData()
 const locationOptions = getLocationListboxOptions()
 
-export default function EventsContent({ searchParams }: EventsContentProps) {
+export default function EventsContent({
+  searchParams,
+  events,
+}: EventsContentProps) {
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: events,
     searchBy: ['title', 'location'],
   })
 
   const { sortedResults } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: eventsSortConfigs,
-    defaultsTo: 'all-events',
   })
 
   const { filteredEntries: filteredEventsByLocation } = useFilter({
@@ -78,7 +86,7 @@ export default function EventsContent({ searchParams }: EventsContentProps) {
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 

@@ -32,11 +32,9 @@ export function BlogPostHeader({
 
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
 
-      {publishedOn && (
-        <span className="inline-block text-blue-300">
-          {formatDate(publishedOn)}
-        </span>
-      )}
+      <span className="inline-block text-blue-300">
+        {formatDate(publishedOn)}
+      </span>
     </ArticleHeader>
   )
 }

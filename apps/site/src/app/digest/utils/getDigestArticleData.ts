@@ -2,21 +2,22 @@ import removeMarkdown from 'remove-markdown'
 
 import { PATHS } from '@/constants/paths'
 
-import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
-import { DigestArticleFrontMatterSchema } from '../schemas/FrontMatterSchema'
+import { DigestArticleFrontmatterSchema } from '../schemas/DigestArticleFrontmatterSchema'
 
 const DIGEST_DIRECTORY_PATH = PATHS.DIGEST.entriesContentPath as string
 
-export function getDigestArticleData(slug: string) {
-  const data = getDigestMarkdownData(slug)
+export async function getDigestArticleData(slug: string) {
+  const data = await getDigestMarkdownData(slug)
   return transformDigestArticleData(data)
 }
 
-export function getDigestArticlesData() {
-  const allArticles = getAllMarkdownData({
+export async function getDigestArticlesData() {
+  const allArticles = await getAllMarkdownData({
     directoryPath: DIGEST_DIRECTORY_PATH,
-    zodParser: DigestArticleFrontMatterSchema.parse,
+    zodSchema: DigestArticleFrontmatterSchema,
   })
 
   return allArticles
@@ -28,12 +29,12 @@ function getDigestMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: DIGEST_DIRECTORY_PATH,
-    zodParser: DigestArticleFrontMatterSchema.parse,
+    zodSchema: DigestArticleFrontmatterSchema,
   })
 }
 
 function transformDigestArticleData(
-  article: ReturnType<typeof getDigestMarkdownData>,
+  article: Awaited<ReturnType<typeof getDigestMarkdownData>>,
 ) {
   return {
     ...article,

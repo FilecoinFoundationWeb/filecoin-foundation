@@ -2,13 +2,15 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
+import { attributes as digestAttributes } from '@/content/pages/digest.md'
+import { attributes } from '@/content/pages/home.md'
+
 import { filecoinEcosystemData } from '@/data/filecoinEcosystemData'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
@@ -19,21 +21,22 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
+import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
+
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
 import { NoBreadCrumbsLayout } from './components/NoBreadCrumbsLayout'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { getFeaturedBlogPosts } from './utils/getFeaturedBlogPosts'
 
-const { header, seo, featuredEcosystemProjects } = getFrontmatter({
-  path: PATHS.HOME,
-  zodParser: FrontmatterSchema.parse,
-})
+const {
+  header,
+  seo,
+  featured_ecosystem_projects: featuredEcosystemProjectPaths,
+} = FrontmatterSchema.parse(attributes)
 
-const { header: digestPageHeader } = getFrontmatter({
-  path: PATHS.DIGEST,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header: digestPageHeader } =
+  PageFrontmatterSchema.parse(digestAttributes)
 
 export const metadata = createMetadata({
   seo,
@@ -41,8 +44,13 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-export default function Home() {
-  const { featuredBlogPosts, hasFeaturedBlogPosts } = getFeaturedBlogPosts()
+export default async function Home() {
+  const featuredBlogPosts = await getFeaturedBlogPosts()
+  const hasFeaturedBlogPosts = featuredBlogPosts.length > 0
+
+  const featuredEcosystemProjects = await getFeaturedEcosystemProjects(
+    featuredEcosystemProjectPaths,
+  )
 
   return (
     <NoBreadCrumbsLayout>

@@ -1,20 +1,21 @@
 import { PATHS } from '@/constants/paths'
 
-import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
-import { BlogPostFrontMatterSchema } from '../schemas/FrontMatterSchema'
+import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
 const BLOG_DIRECTORY_PATH = PATHS.BLOG.entriesContentPath as string
 
-export function getBlogPostData(slug: string) {
-  const data = getBlogPostMarkdownData(slug)
+export async function getBlogPostData(slug: string) {
+  const data = await getBlogPostMarkdownData(slug)
   return transformBlogPostData(data)
 }
 
-export function getBlogPostsData() {
-  const allPosts = getAllMarkdownData({
+export async function getBlogPostsData() {
+  const allPosts = await getAllMarkdownData({
     directoryPath: BLOG_DIRECTORY_PATH,
-    zodParser: BlogPostFrontMatterSchema.parse,
+    zodSchema: BlogPostFrontmatterSchema,
   })
 
   return allPosts.map(transformBlogPostData)
@@ -24,12 +25,12 @@ function getBlogPostMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: BLOG_DIRECTORY_PATH,
-    zodParser: BlogPostFrontMatterSchema.parse,
+    zodSchema: BlogPostFrontmatterSchema,
   })
 }
 
 function transformBlogPostData(
-  post: ReturnType<typeof getBlogPostMarkdownData>,
+  post: Awaited<ReturnType<typeof getBlogPostMarkdownData>>,
 ) {
   return {
     ...post,

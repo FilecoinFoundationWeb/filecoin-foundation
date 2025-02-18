@@ -1,35 +1,49 @@
 import { useMemo } from 'react'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
 import type { Object } from '@/types/utils'
 
 import {
   DEFAULT_ENTRIES_PER_PAGE,
   DEFAULT_PAGE_NUMBER,
 } from '@/constants/paginationConstants'
-import { PAGE_KEY } from '@/constants/searchParams'
 
-import { normalizeQueryParam } from '@/utils/queryUtils'
+type PageQuery = string | undefined
 
 type UsePaginationProps<Entry extends Object> = {
-  searchParams: NextServerSearchParams
+  pageQuery: PageQuery
   entries: Array<Entry>
   entriesPerPage?: number
 }
 
-function validatePageNumber(
-  normalizedQuery: ReturnType<typeof normalizeQueryParam>,
-  pageCount: number,
-): number {
-  if (!normalizedQuery) {
+export function usePagination<Entry extends Object>({
+  pageQuery,
+  entries,
+  entriesPerPage = DEFAULT_ENTRIES_PER_PAGE,
+}: UsePaginationProps<Entry>) {
+  const pageCount = Math.ceil(entries.length / entriesPerPage)
+  const pageNumber = validatePageNumber(pageQuery, pageCount)
+
+  const paginatedResults = useMemo(() => {
+    const firstPostIndex = (pageNumber - 1) * entriesPerPage
+    const lastPostIndex = pageNumber * entriesPerPage
+
+    return entries.slice(firstPostIndex, lastPostIndex)
+  }, [pageNumber, entriesPerPage, entries])
+
+  return { currentPage: pageNumber, pageCount, paginatedResults }
+}
+
+function validatePageNumber(pageQuery: PageQuery, pageCount: number) {
+  if (!pageQuery) {
     return DEFAULT_PAGE_NUMBER
   }
 
-  const pageQueryNumber = Number(normalizedQuery)
-  const isValidNumber = Number.isInteger(pageQueryNumber) && pageQueryNumber > 0
+  const pageQueryNumber = Number(pageQuery)
+  const isValidPageNumber =
+    Number.isInteger(pageQueryNumber) && pageQueryNumber > 0
   const isWithinRange = pageQueryNumber <= pageCount
 
-  if (!isValidNumber) {
+  if (!isValidPageNumber) {
     return DEFAULT_PAGE_NUMBER
   }
 
@@ -38,26 +52,4 @@ function validatePageNumber(
   }
 
   return pageQueryNumber
-}
-
-export function usePagination<Entry extends Object>({
-  searchParams,
-  entries,
-  entriesPerPage = DEFAULT_ENTRIES_PER_PAGE,
-}: UsePaginationProps<Entry>) {
-  const pageCount = Math.ceil(entries.length / entriesPerPage)
-
-  const normalizedQuery = normalizeQueryParam(searchParams, PAGE_KEY)
-  const validatedPageNumber = validatePageNumber(normalizedQuery, pageCount)
-
-  const currentPage = validatedPageNumber
-
-  const paginatedResults = useMemo(() => {
-    const firstPostIndex = (currentPage - 1) * entriesPerPage
-    const lastPostIndex = currentPage * entriesPerPage
-
-    return entries.slice(firstPostIndex, lastPostIndex)
-  }, [currentPage, entriesPerPage, entries])
-
-  return { currentPage: validatedPageNumber, pageCount, paginatedResults }
 }

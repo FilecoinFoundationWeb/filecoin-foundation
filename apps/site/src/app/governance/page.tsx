@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/governance/governance.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { CardGrid } from '@/components/CardGrid'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
@@ -14,15 +15,11 @@ import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
-import { CalendarCards } from './components/CalendarCards/CalendarCards'
 import { CTAPageSection } from './components/CTAPageSection'
 import { governanceDocsData } from './data/governanceDocsData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.GOVERNANCE,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -81,10 +78,6 @@ export default function Governance() {
           'Filecoin Foundation’s role includes facilitating the development of processes and policies for decision-making and managing community engagement and feedback.',
         ]}
       />
-
-      <PageSection kicker="Upcoming Events" title="Community Calls">
-        <CalendarCards />
-      </PageSection>
 
       <CTAPageSection />
     </PageLayout>

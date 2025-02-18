@@ -32,6 +32,8 @@ module.exports = {
             '--tw-prose-pre-bg': theme('colors.brand.700'),
             '--tw-prose-pre-code': theme('colors.brand.100'),
             '--tw-prose-captions': theme('colors.neutral.400'),
+            '--tw-prose-td-borders': theme('colors.brand.300'),
+            '--tw-prose-th-borders': theme('colors.brand.300'),
 
             a: {
               textDecoration: 'none',
@@ -74,6 +76,10 @@ module.exports = {
             figcaption: {
               textAlign: 'left',
               fontSize: '10px',
+            },
+
+            'table thead th': {
+              color: theme('colors.brand.300'),
             },
           },
         },

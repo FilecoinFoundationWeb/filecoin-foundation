@@ -2,10 +2,11 @@
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
+import { attributes } from '@/content/pages/__PATH_NAME__.md'
 
-import { BaseFrontmatterSchema } from '@/schemas/PageDataSchema'
+import { createMetadata } from '@/utils/createMetadata'
+
+import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
@@ -15,10 +16,7 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.__PATH_NAME__,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {

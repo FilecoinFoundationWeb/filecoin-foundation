@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
+import { attributes } from '@/content/pages/grants.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -19,6 +20,8 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
+import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
+
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
 import { opportunitiesData } from './data/opportunitiesData'
@@ -26,10 +29,11 @@ import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo, featuredGrantGraduates } = getFrontmatter({
-  path: PATHS.GRANTS,
-  zodParser: FrontmatterSchema.parse,
-})
+const {
+  header,
+  seo,
+  featured_grant_graduates: featuredGrantGraduatesPaths,
+} = FrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {
@@ -40,7 +44,11 @@ export const metadata = createMetadata({
   overrideDefaultTitle: true,
 })
 
-export default function Grants() {
+export default async function Grants() {
+  const featuredGrantGraduates = await getFeaturedEcosystemProjects(
+    featuredGrantGraduatesPaths,
+  )
+
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />

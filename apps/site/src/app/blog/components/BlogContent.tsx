@@ -1,15 +1,23 @@
-import { BookOpen } from '@phosphor-icons/react/dist/ssr'
+'use client'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
+import { useSearchParams } from 'next/navigation'
+
+import { BookOpen } from '@phosphor-icons/react'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
+import { formatDate } from '@/utils/dateUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { normalizeQueryParam } from '@/utils/queryUtils'
@@ -30,31 +38,27 @@ import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 
 import { blogSortConfigs } from '../constants/sortConfigs'
-import { getBlogPostsData } from '../utils/getBlogPostData'
-import { getMetaData } from '../utils/getMetaData'
+import type { BlogPost } from '../types/blogPostType'
 
 type BlogContentProps = {
-  searchParams: NextServerSearchParams
-  posts: ReturnType<typeof getBlogPostsData>
-  sortOptions: ReturnType<typeof getSortOptions>
+  posts: Array<BlogPost>
 }
 
-export function BlogContent({
-  searchParams,
-  posts,
-  sortOptions,
-}: BlogContentProps) {
+export function BlogContent({ posts }: BlogContentProps) {
+  const sortOptions = getSortOptions(blogSortConfigs)
+  const clientSearchParams = useSearchParams()
+  const searchParams = Object.fromEntries(clientSearchParams.entries())
+
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: posts,
     searchBy: ['title', 'description'],
   })
 
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: blogSortConfigs,
-    defaultsTo: 'newest',
   })
 
   const { filteredEntries } = useFilter({
@@ -64,7 +68,7 @@ export function BlogContent({
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 
@@ -136,7 +140,7 @@ export function BlogContent({
                       title={title}
                       description={description}
                       textIsClamped={true}
-                      metaData={getMetaData(publishedOn)}
+                      metaData={[formatDate(publishedOn)]}
                       tags={[{ text: categoryLabel }]}
                       cta={{
                         href: `${PATHS.BLOG.path}/${slug}`,

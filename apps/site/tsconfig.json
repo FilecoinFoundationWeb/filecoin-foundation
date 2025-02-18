@@ -1,48 +1,35 @@
 {
+  "extends": "@filecoin-foundation/typescript-config/base.json",
   "compilerOptions": {
-    "verbatimModuleSyntax": true,
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/*": ["./src/app/*"],
+      "@/actions/*": ["./src/app/_actions/*"],
+      "@/assets/*": ["./public/assets/*"],
       "@/components/*": ["./src/app/_components/*"],
       "@/constants/*": ["./src/app/_constants/*"],
       "@/content/*": ["./src/content/*"],
       "@/data/*": ["./src/app/_data/*"],
       "@/hooks/*": ["./src/app/_hooks/*"],
+      "@/schemas/*": ["./src/app/_schemas/*"],
       "@/services/*": ["./src/app/_services/*"],
       "@/styles/*": ["./src/app/_styles/*"],
+      "@/support/*": ["./cypress/support/*"],
       "@/types/*": ["./src/app/_types/*"],
-      "@/schemas/*": ["./src/app/_schemas/*"],
-      "@/utils/*": ["./src/app/_utils/*"],
-      "@/assets/*": ["./public/assets/*"],
-      "@/support/*": ["./cypress/support/*"]
-    }
+      "@/utils/*": ["./src/app/_utils/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
+    ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "src/app/_types/**/*.d.ts",
-    "src/app/events/[slug]",
     "cypress/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
+  ]
 }

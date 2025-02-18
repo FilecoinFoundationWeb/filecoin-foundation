@@ -3,7 +3,12 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import {
+  CATEGORY_KEY,
+  PAGE_KEY,
+  SEARCH_KEY,
+  SORT_KEY,
+} from '@/constants/searchParams'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -11,6 +16,7 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
 import { getSortOptions } from '@/utils/getSortOptions'
+import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { usePagination } from '@/hooks/usePagination'
@@ -30,32 +36,32 @@ import { CategoryFilters } from '../components/CategoryFilters'
 import { CategoryFiltersSlider } from '../components/CategoryFiltersSlider'
 import { ecosystemProjectsSortConfigs } from '../constants/sortConfigs'
 import { useEcosystemCategoryTree } from '../hooks/useEcosystemCategoryTree'
+import type { EcosystemProject } from '../types/ecosystemProjectType'
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
-import { getEcosystemProjectsData } from '../utils/getEcosystemProjectData'
 import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 
 type EcosystemExplorerContentProps = {
   searchParams: NextServerSearchParams
+  ecosystemProjects: Array<EcosystemProject>
 }
 
-const ecosystemProjects = getEcosystemProjectsData()
 const categories = getEcosystemCMSCategories()
 const sortOptions = getSortOptions(ecosystemProjectsSortConfigs)
 
 export function EcosystemExplorerContent({
   searchParams,
+  ecosystemProjects,
 }: EcosystemExplorerContentProps) {
   const { searchQuery, searchResults } = useSearch({
-    searchParams,
+    searchQuery: normalizeQueryParam(searchParams, SEARCH_KEY),
     entries: ecosystemProjects,
     searchBy: ['title', 'description'],
   })
 
   const { sortQuery, sortedResults, defaultSortQuery } = useSort({
-    searchParams,
+    sortQuery: normalizeQueryParam(searchParams, SORT_KEY),
     entries: searchResults,
     configs: ecosystemProjectsSortConfigs,
-    defaultsTo: 'a-z',
   })
 
   const { filteredEntries } = useFilter({
@@ -70,7 +76,7 @@ export function EcosystemExplorerContent({
   })
 
   const { currentPage, pageCount, paginatedResults } = usePagination({
-    searchParams,
+    pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: filteredEntries,
   })
 

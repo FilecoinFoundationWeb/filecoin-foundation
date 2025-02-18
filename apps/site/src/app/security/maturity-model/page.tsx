@@ -1,11 +1,12 @@
 import { PATHS } from '@/constants/paths'
 
+import { attributes } from '@/content/pages/security/maturity-model.md'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFrontmatter } from '@/utils/getFrontmatter'
 
-import { BaseFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
@@ -21,10 +22,7 @@ import { MobileTableOfContents } from './components/MobileTableOfContents'
 import { applicationAndUseData } from './data/applicationAndUseData'
 import { generateStructuredData } from './utils/generateStructuredData'
 
-const { header, seo } = getFrontmatter({
-  path: PATHS.MATURITY_MODEL,
-  zodParser: BaseFrontmatterSchema.parse,
-})
+const { header, seo } = PageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
   seo: {

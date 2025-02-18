@@ -1,48 +1,42 @@
-import fs from 'fs'
-import path from 'path'
+'use server'
 
 import convertObjectKeysToCamelCase from 'camelcase-keys'
-import { ZodError, type ZodType } from 'zod'
+import matter from 'gray-matter'
+import { ZodError, ZodObject, type ZodRawShape } from 'zod'
 
 import {
-  extractSlugFromFilename,
-  getFilenamesFromDirectory,
   getFilePath,
   handleFileNotFound,
-  parseMarkdown,
   readFileContents,
+  checkPathExists,
 } from '@/utils/fileUtils'
 import { logZodError } from '@/utils/zodUtils'
 
-type GetData<T> = {
+type GetMarkdownDataArgs<T extends ZodRawShape> = {
   slug: string
   directoryPath: string
-  zodParser: ZodType<T>['parse']
+  zodSchema: ZodObject<T>
 }
 
-type GetAllData<T> = {
-  directoryPath: string
-  zodParser: ZodType<T>['parse']
-}
-
-export function getMarkdownData<T>({
+export async function getMarkdownData<T extends ZodRawShape>({
   slug,
   directoryPath,
-  zodParser,
-}: GetData<T>) {
+  zodSchema,
+}: GetMarkdownDataArgs<T>) {
   try {
     const filePath = getFilePath(directoryPath, slug)
+    const fileExists = await checkPathExists(filePath)
 
-    if (!fs.existsSync(filePath)) {
+    if (!fileExists) {
       handleFileNotFound(filePath)
     }
 
-    const fileContents = readFileContents(filePath)
-    const { data, content } = parseMarkdown(fileContents)
+    const fileContents = await readFileContents(filePath)
+    const { data, content } = matter(fileContents)
 
     const dataToValidate = content ? { ...data, content } : data
 
-    const parsedData = zodParser(dataToValidate)
+    const parsedData = await zodSchema.parseAsync(dataToValidate)
     const parsedDataWithSlug = { ...parsedData, slug }
 
     return convertObjectKeysToCamelCase(parsedDataWithSlug, { deep: true })
@@ -54,24 +48,6 @@ export function getMarkdownData<T>({
       })
     }
 
-    throw error
-  }
-}
-
-export function getAllMarkdownData<T>({
-  directoryPath,
-  zodParser,
-}: GetAllData<T>) {
-  try {
-    const directory = path.join(process.cwd(), directoryPath)
-    const filenames = getFilenamesFromDirectory(directory)
-
-    return filenames.map((filename) => {
-      const slug = extractSlugFromFilename(filename)
-      return getMarkdownData({ slug, directoryPath, zodParser })
-    })
-  } catch (error) {
-    console.error('Error retrieving all data:', error)
     throw error
   }
 }

@@ -1,10 +1,6 @@
 name: Site Link Checker
 
 on:
-  push:
-    branches: "cms/**"
-    paths:
-      - "apps/site/**"
   schedule:
     - cron: "0 2 * * 0"
   workflow_dispatch:

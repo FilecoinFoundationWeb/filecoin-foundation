@@ -1,22 +1,23 @@
 import { PATHS } from '@/constants/paths'
 
-import { getAllMarkdownData, getMarkdownData } from '@/utils/getMarkdownData'
+import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
+import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
-import { EcosystemProjectFrontMatter } from '../schemas/FrontMatterSchema'
+import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFrontmatterSchema'
 
 export const ECOSYSTEM_EXPLORER_DIRECTORY_PATH = PATHS.ECOSYSTEM_EXPLORER
   .entriesContentPath as string
 
-export function getEcosystemProjectData(slug: string) {
-  const data = getEcosystemProjectMarkdownData(slug)
+export async function getEcosystemProjectData(slug: string) {
+  const data = await getEcosystemProjectMarkdownData(slug)
   return transformEcosystemProjectData(data)
 }
 
-export function getEcosystemProjectsData() {
-  const allProjects = getAllMarkdownData({
+export async function getEcosystemProjectsData() {
+  const allProjects = await getAllMarkdownData({
     directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodParser: EcosystemProjectFrontMatter.parse,
+    zodSchema: EcosystemProjectFrontmatterSchema,
   })
 
   return allProjects.map(transformEcosystemProjectData)
@@ -26,12 +27,12 @@ function getEcosystemProjectMarkdownData(slug: string) {
   return getMarkdownData({
     slug,
     directoryPath: ECOSYSTEM_EXPLORER_DIRECTORY_PATH,
-    zodParser: EcosystemProjectFrontMatter.parse,
+    zodSchema: EcosystemProjectFrontmatterSchema,
   })
 }
 
 function transformEcosystemProjectData(
-  project: ReturnType<typeof getEcosystemProjectMarkdownData>,
+  project: Awaited<ReturnType<typeof getEcosystemProjectMarkdownData>>,
 ) {
   return {
     ...project,

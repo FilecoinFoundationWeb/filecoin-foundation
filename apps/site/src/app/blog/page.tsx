@@ -1,15 +1,16 @@
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
+import { Suspense } from 'react'
 
 import { PATHS } from '@/constants/paths'
+
+import { attributes } from '@/content/pages/blog.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { extractSlugFromFilename } from '@/utils/fileUtils'
-import { getFrontmatter } from '@/utils/getFrontmatter'
-import { getSortOptions } from '@/utils/getSortOptions'
+import { formatDate } from '@/utils/dateUtils'
+import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
-import { FeaturedPageFrontmatterSchema } from '@/schemas/FrontmatterSchema'
+import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
@@ -17,36 +18,24 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogContent } from './components/BlogContent'
-import { blogSortConfigs } from './constants/sortConfigs'
 import { generateStructuredData } from './utils/generateStructuredData'
-import { getBlogPostData, getBlogPostsData } from './utils/getBlogPostData'
-import { getMetaData } from './utils/getMetaData'
+import { getBlogPostsData } from './utils/getBlogPostData'
 
-type Props = {
-  searchParams: AsyncNextServerSearchParams
-}
-
-const { seo, featuredEntry: featuredEntryPath } = getFrontmatter({
-  path: PATHS.BLOG,
-  zodParser: FeaturedPageFrontmatterSchema.parse,
-})
+const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
 export const metadata = createMetadata({
-  seo: {
-    ...seo,
-    image: graphicsData.blog.data.src,
-  },
+  seo,
   path: PATHS.BLOG.path,
   overrideDefaultTitle: true,
 })
 
-const posts = getBlogPostsData()
-const sortOptions = getSortOptions(blogSortConfigs)
-const featuredPostSlug = extractSlugFromFilename(featuredEntryPath)
-const featuredPost = getBlogPostData(featuredPostSlug)
+export default async function Blog() {
+  const posts = await getBlogPostsData()
 
-export default async function Blog(props: Props) {
-  const searchParams = await props.searchParams
+  const featuredPost = getFeaturedEntry({
+    entries: posts,
+    featuredEntryPath: featured_entry,
+  })
 
   return (
     <PageLayout>
@@ -57,7 +46,7 @@ export default async function Blog(props: Props) {
         isFeatured
         title={featuredPost.title}
         description={featuredPost.description}
-        metaData={getMetaData(featuredPost.publishedOn)}
+        metaData={[formatDate(featuredPost.publishedOn)]}
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',
@@ -73,11 +62,9 @@ export default async function Blog(props: Props) {
         title="Filecoin Ecosystem Updates"
         description="Read the latest updates and announcements from the Filecoin ecosystem and Filecoin Foundation."
       >
-        <BlogContent
-          searchParams={searchParams}
-          posts={posts}
-          sortOptions={sortOptions}
-        />
+        <Suspense>
+          <BlogContent posts={posts} />
+        </Suspense>
       </PageSection>
     </PageLayout>
   )
