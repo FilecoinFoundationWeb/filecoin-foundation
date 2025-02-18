@@ -1,14 +1,12 @@
-import theme from 'tailwindcss/defaultTheme'
+import { type BreakpointValue } from '@/types/tailwindTypes'
 
-const screens = theme.screens
-
-type Breakpoint = keyof typeof screens
+import { breakpoints } from '@/constants/tailwindConstants'
 
 type Width = `${number}px` | `${number}vw`
-type Args = { startSize: Width } & Partial<Record<Breakpoint, Width>>
+type Args = { startSize: Width } & Partial<Record<BreakpointValue, Width>>
 
-function getScreenWidthNumber(screenSize: Breakpoint) {
-  const widthAsString = screens[screenSize].replace('px', '')
+function getScreenWidthNumber(screenSize: BreakpointValue) {
+  const widthAsString = breakpoints[screenSize].replace('px', '')
   const widthAsNumber = Number(widthAsString)
 
   return widthAsNumber
@@ -17,15 +15,14 @@ function getScreenWidthNumber(screenSize: Breakpoint) {
 export function buildImageSizeProp(args: Args) {
   const { startSize, ...breakpointWidthPairs } = args
 
-  const breakpointWidthPairsArray = Object.entries(breakpointWidthPairs) as Array<[
-    Breakpoint,
-    Width,
-  ]>
+  const breakpointWidthPairsArray = Object.entries(
+    breakpointWidthPairs,
+  ) as Array<[BreakpointValue, Width]>
 
   const sortedBreakpointWidthPairsArray = [...breakpointWidthPairsArray].sort(
     (a, b) => {
-      const aBreakpoint: Breakpoint = a[0]
-      const bBreakpoint: Breakpoint = b[0]
+      const aBreakpoint: BreakpointValue = a[0]
+      const bBreakpoint: BreakpointValue = b[0]
 
       return (
         getScreenWidthNumber(aBreakpoint) - getScreenWidthNumber(bBreakpoint)

@@ -13,7 +13,7 @@ import type { TouchTarget } from '@/types/touchTargetType'
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 
 import { Icon } from '@/components/Icon'
-import { NotificationDialog } from '@/components/NotificationDialog'
+import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 import { Tooltip } from '@/components/Tooltip/Tooltip'
 
 type CopyToClipboardProps = {
@@ -55,7 +55,7 @@ export function CopyToClipboard({
       <Tooltip description="Copy link to clipboard" side="bottom">
         <Button
           className={clsx(
-            'focus:brand-outline hover:text-brand-400',
+            'hover:text-brand-400 focus:brand-outline',
             TOUCH_TARGET.touchAreaPadding,
           )}
           onClick={() => handleCopy(text)}

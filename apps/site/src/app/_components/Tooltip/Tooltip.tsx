@@ -3,9 +3,8 @@
 import { useId, useState, type ReactNode } from 'react'
 
 import * as RadixTooltip from '@radix-ui/react-tooltip'
-import { clsx } from 'clsx'
 
-import styles from './tooltip.module.scss'
+import './Tooltip.css'
 
 type TooltipRenderProps = {
   open: boolean
@@ -41,13 +40,10 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
             sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
             side={side}
             role="tooltip"
-            className={clsx(
-              styles['tooltip-content'],
-              styles['tooltip-animation'],
-            )}
+            className="tooltip-content tooltip-animation"
           >
             {description}
-            <RadixTooltip.Arrow className={styles['tooltip-arrow']} />
+            <RadixTooltip.Arrow className="tooltip-arrow" />
           </RadixTooltip.Content>
         </RadixTooltip.Portal>
       </RadixTooltip.Root>

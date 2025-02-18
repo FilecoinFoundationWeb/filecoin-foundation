@@ -3,9 +3,8 @@
 import { useId, useState, type ReactNode } from 'react'
 
 import * as RadixPopover from '@radix-ui/react-popover'
-import { clsx } from 'clsx'
 
-import styles from './tooltip.module.scss'
+import './Tooltip.css'
 
 type PopoverRenderProps = {
   open: boolean
@@ -41,13 +40,10 @@ export function Popover({ children, description, side = 'top' }: PopoverProps) {
           sideOffset={GAP_BETWEEN_POPOVER_AND_TRIGGER}
           side={side}
           role="dialog"
-          className={clsx(
-            styles['tooltip-content'],
-            styles['tooltip-animation'],
-          )}
+          className="tooltip-content tooltip-animation"
         >
           {description}
-          <RadixPopover.Arrow className={styles['tooltip-arrow']} />
+          <RadixPopover.Arrow className="tooltip-arrow" />
         </RadixPopover.Content>
       </RadixPopover.Portal>
     </RadixPopover.Root>
