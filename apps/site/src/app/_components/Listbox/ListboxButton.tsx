@@ -2,7 +2,7 @@ import { ListboxButton as HeadlessUIListboxButton } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { BreakpointValue } from '@/types/tailwindTypes'
+import { type BreakpointValue } from '@/types/tailwindTypes'
 
 import { Icon, type IconProps } from '@/components/Icon'
 

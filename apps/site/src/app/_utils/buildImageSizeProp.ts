@@ -1,4 +1,4 @@
-import type { BreakpointValue } from '@/types/tailwindTypes'
+import { type BreakpointValue } from '@/types/tailwindTypes'
 
 import { breakpoints } from '@/constants/tailwindConstants'
 
