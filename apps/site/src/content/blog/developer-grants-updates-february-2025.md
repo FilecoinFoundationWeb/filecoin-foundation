@@ -25,8 +25,7 @@ Are you working on an onchain Filecoin project that incorporates the [Filecoin V
 
 FIL Builder Next Steps Grants are open for applications: the official review process kicked off on December 1, 2024, and will run through April 30, 2025. [Documentation Enhancement Grants](https://github.com/filecoin-project/devgrants/blob/master/Program%20Resources/Documentation%20Enhancement%20Grants%20README.md), launched in May 2024, are now included in the Next Step Grants. 
 
-## 
-Focus Areas and Outlook
+## Focus Areas and Outlook
 
 In addition to the FIL Builder Next Step Grants, we are continuing to award grants valued at up to $50,000 for projects that align with the following focus areas. 
 
