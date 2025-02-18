@@ -4,8 +4,9 @@ import { useRef } from 'react'
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { useQueryState, parseAsInteger } from 'nuqs'
-import theme from 'tailwindcss/dist/default-theme'
 import { useIsMounted, useMediaQuery } from 'usehooks-ts'
+
+import { breakpoints } from '@/constants/tailwindConstants'
 
 import type { Event } from '../../../types/eventType'
 import { formatDate } from '../../utils/dateUtils'
@@ -17,8 +18,6 @@ import { EventDetails } from './EventDetails'
 type TabsProps = {
   schedule: NonNullable<Event['schedule']>
 }
-
-const { screens } = theme
 
 const QUERY_KEY = 'tab'
 const DEFAULT_TAB_INDEX = 0
@@ -36,7 +35,7 @@ export function Tabs({ schedule }: TabsProps) {
   const tabGroupRef = useRef<HTMLDivElement>(null)
   const isMounted = useIsMounted()
   const isScreenBelowLg = useMediaQuery(
-    `(max-width: ${parseInt(screens.md, 10) - 1}px)`,
+    `(max-width: ${parseInt(breakpoints.md, 10) - 1}px)`,
   )
 
   function handleTabIndexChange(index: number) {
@@ -58,7 +57,7 @@ export function Tabs({ schedule }: TabsProps) {
         {sortedDays.map((day) => (
           <Tab
             key={formatDate(day.date)}
-            className="whitespace-nowrap rounded-lg p-3 font-bold text-brand-300 focus:brand-outline data-hover:bg-brand-700 data-selected:bg-brand-700 data-selected:text-brand-400"
+            className="rounded-lg p-3 font-bold whitespace-nowrap text-brand-300 focus:brand-outline data-hover:bg-brand-700 data-selected:bg-brand-700 data-selected:text-brand-400"
           >
             {formatDate(day.date)}
           </Tab>
