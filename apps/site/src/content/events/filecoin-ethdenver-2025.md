@@ -20,7 +20,7 @@ program:
   events:
     - title: Code N Corgi. Hosted by FIL Builders, Supported by Filecoin Foundation
       location: Denver, CO
-      start-date: 2025-02-28T17:00:00.000Z
+      start-date: 2025-02-28
       external-link: https://lu.ma/gd767xu5
       description:
         ​A community gathering for Filecoin builders and friends! Come for
@@ -33,7 +33,7 @@ program:
         Denver, Colorado for a FWS, Onramps, and Tooling Colo leading up to ETH
         Denver. The goal of this Colo is to further the work started in Bangkok
         for reaching Product Market Fit.
-      start-date: 2025-02-23T09:00:00.000Z
+      start-date: 2025-02-23
     - title: Schelling Point. Hosted by Gitcoin, Sponsored by Filecoin Foundation
       external-link: https://schellingpoint.gitcoin.co/
       location: Denver, CO
@@ -48,7 +48,7 @@ program:
         builders at every stage of their journey. Expect unique opportunities to
         connect with top ecosystems, explore cutting-edge funding mechanisms,
         and scale your impact like never before."
-      start-date: 2025-02-27T10:00:00.000Z
+      start-date: 2025-02-27
     - title:
         Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
         Foundation
@@ -56,10 +56,10 @@ program:
       description: An expert moderator will guide the knowledge-sharing event,
         stimulating discussion between participants in a closed, confidential
         environment. Attendance is complimentary and by invitation only.
-      start-date: 2025-02-25T12:00:00.000Z
+      start-date: 2025-02-25
       external-link: https://www.ortusclub.com/event/security-portability-and-ai-driven-innovation/
     - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
-      start-date: 2025-02-26T14:30:00.000Z
+      start-date: 2025-02-26
       location: "Denver, CO"
       description:
         On February 26th, the Storacha Network is hosting an exclusive,
@@ -73,8 +73,7 @@ program:
         the space. This event is invite-only with limited seating, ensuring a
         high-value experience for all participants.
     - title: "Solana Speed by OFFLINE x Storacha | ETHDenver 2025"
-      start-date: 2025-02-26T16:00:00.000Z
-      end-date: 2026-02-26T21:00:00.000Z
+      start-date: 2025-02-26
       description:
         Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
         Backer/Builder matchmaking, crypto panels, and networking. Explore
@@ -83,8 +82,7 @@ program:
       location: Birch Road (The Highlands)
       external-link: https://lu.ma/solanaspeed
     - title: Decentralized Media Summit
-      start-date: 2025-02-26T08:30:00.000Z
-      end-date: 2025-02-26T12:00:00.000Z
+      start-date: 2025-02-26
       location: Milk Market
       external-link: https://lu.ma/i9gatw59
       description: ​Join pioneers of decentralized media as they chart out a new
@@ -100,8 +98,7 @@ program:
     - title:
         "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
         Foundation"
-      start-date: 2025-02-27T17:00:00.000Z
-      end-date: 2025-02-27T20:00:00.000Z
+      start-date: 2025-02-27
       location: Denver, CO
       description:
         "Join us at GLIF's Pool Party for a fun-filled evening with lending
@@ -111,7 +108,7 @@ program:
       external-link: https://lu.ma/444wnmwb
     - title: DePIN Day Denver 2025, Hosted by Fluence, Sponsored by Filecoin
         Foundation
-      start-date: 2025-02-26T10:00:00.000Z
+      start-date: 2025-02-26
       external-link: https://lu.ma/depin-denver
       description:
         ​​​Join us for the all-day event full of vital conversations around

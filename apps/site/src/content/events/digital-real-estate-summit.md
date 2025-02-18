@@ -8,7 +8,6 @@ location:
   primary: "Miami, Florida"
   region: north-america
 start-date: 2025-02-11
-end-date: 2025-02-11
 external-link: https://lu.ma/n4c8aotx?tk=GRGiWo
 seo:
   twitter:

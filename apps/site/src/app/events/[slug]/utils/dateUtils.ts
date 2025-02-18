@@ -1,9 +1,10 @@
 import { UTCDate } from '@date-fns/utc'
 import { format } from 'date-fns'
 
-export function formatDate(date: Date) {
-  const utcDate = new UTCDate(date)
-  return format(utcDate, 'EEE, MMM d')
+import { formatDate } from '@/utils/dateUtils'
+
+export function formatShortDate(date: Date) {
+  return formatDate(date, 'EEE, MMM d')
 }
 
 export function formatTime(date: Date) {
