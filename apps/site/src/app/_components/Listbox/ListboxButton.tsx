@@ -1,17 +1,15 @@
 import { ListboxButton as HeadlessUIListboxButton } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-import type resolveConfig from 'tailwindcss/resolveConfig'
+
+import { BreakpointValue } from '@/types/tailwindTypes'
 
 import { Icon, type IconProps } from '@/components/Icon'
-
-type TailwindConfig = ReturnType<typeof resolveConfig>
-type Breakpoint = keyof TailwindConfig['theme']['screens']
 
 export type ListboxButtonProps = {
   text: string
   leadingIcon?: IconProps['component']
-  compactBelow?: Breakpoint
+  compactBelow?: BreakpointValue
   hasError?: boolean
 }
 
@@ -20,7 +18,7 @@ type LayoutVariant = {
   compact: string
 }
 
-type BreakpointStyles = Record<Breakpoint, LayoutVariant>
+type BreakpointStyles = Record<BreakpointValue, LayoutVariant>
 
 const breakpointStyles: BreakpointStyles = {
   sm: { full: 'hidden sm:flex', compact: 'flex sm:hidden' },
@@ -39,7 +37,7 @@ export function ListboxButton({
   return (
     <HeadlessUIListboxButton
       className={clsx(
-        'relative inline-flex w-full items-center justify-between gap-2 rounded-lg border bg-brand-800 p-3 text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400',
+        'relative inline-flex w-full items-center justify-between gap-2 rounded-lg border bg-brand-800 p-3 text-brand-300 hover:border-current hover:text-brand-400 focus:brand-outline',
         hasError ? 'border-red-400' : 'border-brand-300',
       )}
     >
