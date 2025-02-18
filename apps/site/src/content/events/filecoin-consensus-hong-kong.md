@@ -34,7 +34,7 @@ schedule:
           speakers:
             - name: Clara Tsao
               company: Filecoin Foundation
-          start: 2025-02-19T15:30:00.000Z
+          start-time: 15:30:00.000Z
           location: Hashkey Capital Headquarters
           url: https://lu.ma/deaisummitHK
       date: 2025-02-19
@@ -45,7 +45,7 @@ schedule:
           speakers:
             - name: Clara Tsao
               company: Filecoin Foundation
-          start: 2025-02-20T10:50:00.000Z
+          start-time: 10:50:00.000Z
           location: Hong Kong Convention & Exhibition Centre
           url: https://consensus-hongkong2025.coindesk.com/
         - tag: Registration Needed
@@ -53,7 +53,7 @@ schedule:
           speakers:
             - name: Clara Tsao
               company: Filecoin Foundation
-          start: 2025-02-20T10:00:00.000Z
+          start-time: 10:00:00.000Z
           location: Renaissance Hong Kong Harbour View Hotel
           url: https://lu.ma/hack_hk
       date: 2025-02-20
@@ -66,7 +66,7 @@ schedule:
           speakers:
             - name: Clara Tsao
               company: Filecoin Foundation
-          start: 2025-02-21T13:05:00.000Z
+          start-time: 13:05:00.000Z
           location: Cardinal Point
           url: https://lu.ma/hcge9jg4
       date: 2025-02-21

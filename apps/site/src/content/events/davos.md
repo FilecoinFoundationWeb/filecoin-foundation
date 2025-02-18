@@ -71,7 +71,7 @@ schedule:
   title: Speaking Engagements
   days:
     - events:
-        - start: 2025-01-20T15:50:00.000Z
+        - start-time: 15:50:00.000Z
           url: https://www.gbbc.io/events/save-the-date-8th-annual-blockchain-central-davos
           speakers:
             - name: Marta Belcher
@@ -85,7 +85,7 @@ schedule:
           location: Promenade 89, 7270 Davos, Switzerland
           title: Marta Belcher at GBBC’s 8th Annual Blockchain Central Davos
           tag: Registration Needed
-          end: 2025-01-20T16:25:00.000Z
+          end-time: 16:25:00.000Z
           description: What is Crypto Good For?
       date: 2025-01-20
     - date: 2025-01-21
@@ -97,8 +97,8 @@ schedule:
             Financial Inclusion"
           url: "https://thefemalequotient.equalitylounge.com/davos25/ "
           location: Promenade 40 7270 Davos Platz, Switzerland
-          start: 2025-01-21T11:30:00.000Z
-          end: 2025-01-21T12:00:00.000Z
+          start-time: 11:30:00.000Z
+          end-time: 12:00:00.000Z
           speakers:
             - name: Rachel Horn
               company: FF
@@ -111,7 +111,7 @@ schedule:
         - tag: Registration Needed
           title: Porter Stowell at Web3 Investor Gathering
           location: Hotel Seehof
-          start: 2025-01-21T12:10:00.000Z
+          start-time: 12:10:00.000Z
           description: "Foundations of the Future: Blockchain Infrastructure for
             Enterprise Adoption"
           speakers:
@@ -125,11 +125,11 @@ schedule:
               company: Circle
             - name: Annelise Osborne
               company: Kadena
-          end: 2025-01-21T12:40:00.000Z
+          end-time: 12:40:00.000Z
         - tag: Registration Needed
           title: Marta Belcher at Davos Decentralized AI Salon
           description: Why the Future of AI Depends on Decentralized Storage
-          start: 2025-01-21T14:54:00.000Z
+          start-time: 14:54:00.000Z
           location: Promenade 89, 7270 Davos, Switzerland
           url: https://lu.ma/so88195w
           speakers:
@@ -137,7 +137,7 @@ schedule:
               company: FF
             - name: Michael Casey
               company: Decentralized AI Society
-          end: 2025-01-21T15:07:00.000Z
+          end-time: 15:07:00.000Z
         - tag: Registration Needed
           title: Clara Tsao at EmTech Invest 2025
           description: The Future of Blockchain in the Quantum Era
@@ -152,16 +152,16 @@ schedule:
               company: BTC OS
             - name: Kapil Dhiman
               company: Quranium
-          start: 2025-01-21T14:50:00.000Z
-          end: 2025-01-21T15:20:00.000Z
+          start-time: 14:50:00.000Z
+          end-time: 15:20:00.000Z
           location: Promenade 89, 7270 Davos, Switzerland
           url: https://emtech2024.com/
         - tag: Registration Needed
           title: Marta Belcher at Future House
           description: "Fixing the System: How Decentralization Can Upgrade the Internet"
           location: Hotel Europe, 63 Promenade, Davos, GR 7270
-          start: 2025-01-21T17:30:00.000Z
-          end: 2025-01-21T18:00:00.000Z
+          start-time: 17:30:00.000Z
+          end-time: 18:00:00.000Z
           url: https://futurehousedavos.io/
           speakers:
             - name: Marta Belcher
@@ -176,31 +176,31 @@ schedule:
         - tag: Registration Needed
           title: Megan Klimen at Digital Davos
           description: "The Decentralized Web: Infrastructure, Data, and Governance"
-          start: 2025-01-22T10:00:00.000Z
-          end: 2025-01-22T10:45:00.000Z
+          start-time: 10:00:00.000Z
+          end-time: 10:45:00.000Z
           location: TBA
         - tag: Registration Needed
           title: Clara Tsao at Digital Davos
           description: AI, Security, and the Decentralized Web
-          start: 2025-01-22T10:00:00.000Z
-          end: 2025-01-22T10:45:00.000Z
+          start-time: 10:00:00.000Z
+          end-time: 10:45:00.000Z
           location: TBA
         - tag: Registration Needed
           title: Porter Stowell at Digital Davos
           description: "Decentralized Storage: Bridging Innovation and User Experience"
-          start: 2025-01-22T11:00:00.000Z
-          end: 2025-01-22T11:45:00.000Z
+          start-time: 11:00:00.000Z
+          end-time: 11:45:00.000Z
           location: Davos, Switzerland
         - tag: Registration Needed
           title: Danny O’Brien at Digital Davos
           description: "Community and Inclusion: Building the Next Web"
-          start: 2025-01-22T14:00:00.000Z
-          end: 2025-01-22T14:45:00.000Z
+          start-time: 14:00:00.000Z
+          end-time: 14:45:00.000Z
           location: Davos, Switzerland
         - tag: Registration Needed
           title: Megan Klimen at Web3 Hub Davos
           url: https://web3hubdavos.com/
-          start: 2025-01-22T16:45:00.000Z
+          start-time: 16:45:00.000Z
           location: Ob. Str. 33, 7270 Davos Platz, Switzerland
           description:
             "Emerging Macro Trends in DePIN: Disruptive Solutions to Global
@@ -216,7 +216,7 @@ schedule:
               company: very early Ventures
             - name: Daniel Ammann
               company: Onocoy Association
-          end: 2025-01-22T17:15:00.000Z
+          end-time: 17:15:00.000Z
       date: 2025-01-22
     - date: 2025-01-24
       events:
@@ -225,7 +225,7 @@ schedule:
           description:
             How Women Are Shaping Global Innovation in Tech, Sustainability,
             and Start-Ups
-          start: 2025-01-24T12:00:00.000Z
+          start-time: 12:00:00.000Z
           location: Promenade 67 and 73
           url: https://www.investindia.gov.in/davos
   kicker: Don't miss out
