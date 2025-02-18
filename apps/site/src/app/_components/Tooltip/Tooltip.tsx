@@ -45,7 +45,6 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
               styles['tooltip-content'],
               styles['tooltip-animation'],
             )}
-            onEscapeKeyDown={() => setOpen(false)}
           >
             {description}
             <RadixTooltip.Arrow className={styles['tooltip-arrow']} />
