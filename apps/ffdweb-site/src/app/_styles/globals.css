@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@source "../../../../../node_modules/@filecoin-foundation/ui";
 
 @theme {
   --color-brand-primary-100: #f6f7ff;
