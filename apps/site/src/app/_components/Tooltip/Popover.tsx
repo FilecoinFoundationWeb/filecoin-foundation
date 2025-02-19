@@ -32,7 +32,6 @@ export function Popover({ children, description, side = 'top' }: PopoverProps) {
           hideWhenDetached
           sideOffset={GAP_BETWEEN_POPOVER_AND_TRIGGER}
           side={side}
-          role="dialog"
           className="tooltip-content tooltip-animation"
         >
           {description}
