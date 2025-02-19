@@ -2,7 +2,7 @@ import { compareAsc } from 'date-fns'
 
 import type { Event } from '../../types/eventType'
 
-import { createComparableTimeUTC } from './dateUtils'
+import { createUTCDateFromTime } from './dateUtils'
 
 export function filterAndSortScheduleDays(
   schedule: NonNullable<Event['schedule']>,
@@ -12,8 +12,8 @@ export function filterAndSortScheduleDays(
   const daysWithEventsSortedByTime = daysWithEvents.map((day) => ({
     ...day,
     events: day.events.toSorted((a, b) => {
-      const timeA = createComparableTimeUTC(a.startTime)
-      const timeB = createComparableTimeUTC(b.startTime)
+      const timeA = createUTCDateFromTime(a.startTime)
+      const timeB = createUTCDateFromTime(b.startTime)
       return compareAsc(timeA, timeB)
     }),
   }))
