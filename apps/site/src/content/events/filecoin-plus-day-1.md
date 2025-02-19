@@ -8,8 +8,7 @@ location:
   primary: Istanbul, Turkey
   region: europe
 external-link: https://23.labweek.io/fil-plus
-start-date: 2023-11-14T19:30:00.264Z
-end-date: 2023-11-14T22:00:00.270Z
+start-date: 2023-11-14
 image:
   src: /assets/images/03292023-filplusmission.png
 seo:

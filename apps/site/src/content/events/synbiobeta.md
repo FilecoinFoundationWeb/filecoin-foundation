@@ -6,7 +6,7 @@ published-on: 2023-06-27T15:30:55.037Z
 location:
   primary: Oakland, CA
   region: north-america
-start-date: 2023-05-23T15:30:00.000Z
+start-date: 2023-05-23
 image:
   src: /assets/images/synbiobeta-2023.png
 category: supported-sponsored

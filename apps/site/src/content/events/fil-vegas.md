@@ -8,8 +8,8 @@ location:
   primary: Las Vegas, NV
   region: north-america
 external-link: https://fil-vegas.io/
-start-date: 2023-10-03T17:09:07.043Z
-end-date: 2023-10-05T17:09:07.051Z
+start-date: 2023-10-03
+end-date: 2023-10-05
 image:
   src: /assets/images/fil-vegas-event-header.png
 seo:

@@ -7,8 +7,7 @@ location:
   primary: Singapore
   region: apac-asia
 external-link: https://lu.ma/singapore-sp-meetup
-start-date: 2022-08-16T00:00:00.000Z
-end-date: 2022-08-16T00:00:00.000Z
+start-date: 2022-08-16
 image:
   src: /assets/images/6452194af82dbf21df953f96_singapore-sp.jpg
 category: hosted

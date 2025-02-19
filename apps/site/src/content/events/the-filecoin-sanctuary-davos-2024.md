@@ -6,8 +6,8 @@ published-on: 2023-11-08T14:03:29.756Z
 location:
   primary: Davos, Switzerland
   region: europe
-start-date: 2024-01-15T14:03:29.762Z
-end-date: 2024-01-19T14:03:29.769Z
+start-date: 2024-01-15
+end-date: 2024-01-19
 image:
   src: /assets/images/davos-2023-pic.png
 category: hosted

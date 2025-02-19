@@ -18,8 +18,8 @@ category: supported-sponsored
 location:
   primary: Toronto, Canada
   region: north-america
-start-date: 2025-05-14T14:00:00.000Z
-end-date: 2025-05-16T11:00:00.000Z
+start-date: 2025-05-14
+end-date: 2025-05-16
 external-link: https://consensus2025.coindesk.com/
 seo:
   twitter:

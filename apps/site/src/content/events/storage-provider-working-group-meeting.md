@@ -7,7 +7,7 @@ category: hosted
 location:
   primary: Virtual
 external-link: https://www.youtube.com/watch?v=zGUIUVN75gA
-start-date: 2021-08-24T22:00:00.000Z
+start-date: 2021-08-24
 image:
   src: /assets/images/64521604a359ff699f3705ec_storage-provider-working-group.png
 seo:

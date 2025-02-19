@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: Dubai, UAE
   region: middle-east
-start-date: 2024-04-16T14:45:39.324Z
-end-date: 2024-04-19T14:45:39.332Z
+start-date: 2024-04-16
+end-date: 2024-04-19
 image:
   src: /assets/images/token2049_dubai24.png
 seo:

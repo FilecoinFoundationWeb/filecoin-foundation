@@ -8,8 +8,7 @@ location:
   primary: Istanbul, Turkey
   region: europe
 external-link: https://lu.ma/vk9pnofg
-start-date: 2023-11-14T14:00:00.000Z
-end-date: 2023-11-14T18:30:36.580Z
+start-date: 2023-11-14
 image:
   src: /assets/images/signal-2023-11-12-145615_002.jpeg
 seo:

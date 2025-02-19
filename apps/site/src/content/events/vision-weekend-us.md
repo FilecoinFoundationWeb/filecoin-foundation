@@ -8,8 +8,8 @@ location:
   primary: San Francisco, CA
   region: north-america
 external-link: https://foresight.org/vision-weekends-2022/
-start-date: 2022-12-02T18:27:58.553Z
-end-date: 2022-12-04T18:27:00.000Z
+start-date: 2022-12-02
+end-date: 2022-12-04
 image:
   src: /assets/images/vision-sf-2022.png
 seo:

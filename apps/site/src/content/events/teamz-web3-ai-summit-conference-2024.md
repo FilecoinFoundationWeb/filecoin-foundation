@@ -6,8 +6,8 @@ published-on: 2024-03-21T16:47:39.941000Z
 location:
   primary: Tokyo, Japan
   region: apac-asia
-start-date: 2024-04-13T16:47:39.948000Z
-end-date: 2024-04-14T16:47:39.955000Z
+start-date: 2024-04-13
+end-date: 2024-04-14
 image:
   src: /assets/images/teamz-conference.webp
 category: supported-sponsored

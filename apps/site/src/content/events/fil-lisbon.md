@@ -8,8 +8,8 @@ location:
   primary: Lisbon, Portugal
   region: europe
 external-link: https://fil-lisbon.io/
-start-date: 2022-10-31T00:00:00.000Z
-end-date: 2022-11-04T00:00:00.000Z
+start-date: 2022-10-31
+end-date: 2022-11-04
 image:
   src: /assets/images/645217c53763d71fa57e55a0_fil-lisbon.jpg
 seo:

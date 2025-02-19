@@ -8,7 +8,7 @@ category: supported-sponsored
 location:
   primary: Virtual
 external-link: https://www.youtube.com/watch?v=LU_WjU0mUuM
-start-date: 2021-03-04T23:00:00.000Z
+start-date: 2021-03-04
 seo:
   description: Join the GBBC Virtual Members Forum with Marta Belcher to learn
     about the latest in blockchain and decentralized technologies.

@@ -53,6 +53,7 @@ export default async function EventEntry(props: EventProps) {
     sponsors,
     recap,
   } = data
+
   const categoryLabel = getCategoryLabel({
     collectionName: 'event_entries',
     category,
