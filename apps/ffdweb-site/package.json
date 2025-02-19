@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*",
     "@types/node": "^20",
     "@types/react": "^19",

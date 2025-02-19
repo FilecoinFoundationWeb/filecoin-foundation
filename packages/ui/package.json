@@ -9,8 +9,12 @@
   "exports": {
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx"
   },
+  "scripts": {
+    "lint": "eslint ."
+  },
   "devDependencies": {
     "typescript": "^5",
+    "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*"
   },
   "peerDependencies": {

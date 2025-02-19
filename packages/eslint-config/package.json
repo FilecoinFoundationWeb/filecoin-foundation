@@ -1,0 +1,31 @@
+{
+  "name": "@filecoin-foundation/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./base": "./base.js",
+    "./next": "./next.js",
+    "./react-internal": "./react-internal.js"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.2.0",
+    "@eslint/eslintrc": "^3.0.0",
+    "@eslint/js": "^9",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "eslint-config-next": "^15.1.6",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-prettier": "^10.0.1",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "eslint": "^9",
+    "typescript": "^5.7.3"
+  }
+}
