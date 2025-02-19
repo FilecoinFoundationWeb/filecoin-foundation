@@ -90,8 +90,8 @@ schedule:
             network, knowledge, and opportunities within the Filecoin ecosystem.
             From November 6th to 8th, this space is perfect for co-working,
             meetings, and more! ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
-          start: 2024-11-06T11:00:00.000Z
-          end: 2024-11-06T18:30:00.000Z
+          start-time: 11:00:00.000Z
+          end-time: 18:30:00.000Z
           location: Gaysorn Urban Resort
           url: https://lu.ma/no08u3bt
         - title: FIL Dev Summit 5
@@ -103,8 +103,8 @@ schedule:
             impactful conversations that help push Filecoin forward.
 
             Find the full agenda at fildev.io/FDS-5.
-          start: 2024-11-06T11:00:00.000Z
-          end: 2024-11-06T20:00:00.000Z
+          start-time: 11:00:00.000Z
+          end-time: 20:00:00.000Z
           location: Gaysorn Urban Resort
           url: https://www.fildev.io/FDS-5
       date: 2024-11-06
@@ -117,8 +117,8 @@ schedule:
             network, knowledge, and opportunities within the Filecoin ecosystem.
             From November 6th to 8th, this space is perfect for co-working,
             meetings, and more! ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
-          start: 2024-11-07T09:00:00.000Z
-          end: 2024-11-07T18:30:00.000Z
+          start-time: 09:00:00.000Z
+          end-time: 18:30:00.000Z
           location: Gaysorn Urban Resort
           url: https://lu.ma/no08u3bt
         - title: FIL Dev Summit 5
@@ -132,8 +132,8 @@ schedule:
             Find the full agenda at fildev.io/FDS-5.
           url: https://fildev.io/FDS-5
           location: Gaysorn Urban Resort
-          start: 2024-11-07T09:00:00.000Z
-          end: 2024-11-07T18:30:00.000Z
+          start-time: 09:00:00.000Z
+          end-time: 18:30:00.000Z
     - date: 2024-11-08
       events:
         - title: FIL Bangkok Co-Working Space
@@ -143,8 +143,8 @@ schedule:
             network, knowledge, and opportunities within the Filecoin ecosystem.
             From November 6th to 8th, this space is perfect for co-working,
             meetings, and more! ​FIL Dev Summit is a gathering of developers, builders, and engaged community members who want to contribute to the core protocol and network evolution of Filecoin. The summit is a place for meaningful and impactful conversations that help push Filecoin forward (separate registration required). ​Filecoin Studio is a state-of-the-art content creation hub offering professional-grade equipment and space for rent to record content that elevates your vision. Book your session.
-          start: 2024-11-08T09:00:00.000Z
-          end: 2024-11-08T18:00:00.000Z
+          start-time: 09:00:00.000Z
+          end-time: 18:00:00.000Z
           location: Gaysorn Urban Resort
           url: https://lu.ma/no08u3bt
         - title: FIL Dev Summit 5
@@ -158,22 +158,22 @@ schedule:
             Find the full agenda at fildev.io/FDS-5.
           url: https://fildev.io/FDS-5
           location: Gaysorn Urban Resort
-          start: 2024-11-08T09:00:00.000Z
-          end: 2024-11-08T20:00:00.000Z
+          start-time: 09:00:00.000Z
+          end-time: 20:00:00.000Z
     - events:
         - title: Doors Open
           description:
             "Welcome to FIL Bangkok: DePIN Meets AI! Doors open at 9AM with
             Thai milk teas and networking. Come check out our sponsor booths and
             massage stations!"
-          start: 2024-11-11T09:00:00.000Z
+          start-time: 09:00:00.000Z
           location: Samyan Mitrtown
         - title: "Where DePIN Meets AI: A Filecoin Ecosystem Survey"
           speakers:
             - name: Clara Tsao
               company: Filecoin Foundation
-          start: 2024-11-11T15:02:00.000Z
-          end: 2024-11-11T15:12:00.000Z
+          start-time: 15:02:00.000Z
+          end-time: 15:12:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           description:
             In the realms of DePIN and AI, storage isn’t the endgame — it’s
@@ -187,8 +187,8 @@ schedule:
           speakers:
             - name: Sherry Chung
               company: Numbers Protocol
-          start: 2024-11-11T15:30:00.000Z
-          end: 2024-11-11T15:37:00.000Z
+          start-time: 15:30:00.000Z
+          end-time: 15:37:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           description:
             In a historic year of global elections, billions of voters face the
@@ -201,8 +201,8 @@ schedule:
           speakers:
             - name: Ted Liao
               company: Glitter Protocol
-          start: 2024-11-11T15:38:00.000Z
-          end: 2024-11-11T15:45:00.000Z
+          start-time: 15:38:00.000Z
+          end-time: 15:45:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           description:
             Ethereum’s future lies in expanding beyond financial use cases by
@@ -216,8 +216,8 @@ schedule:
           speakers:
             - name: Stefaan Vervaet
               company: Akave.ai
-          start: 2024-11-11T15:46:00.000Z
-          end: 2024-11-11T15:53:00.000Z
+          start-time: 15:46:00.000Z
+          end-time: 15:53:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           description:
             Meet a data onboarding solution making it easier than ever for
@@ -234,8 +234,8 @@ schedule:
             - name: "Hannah Howard"
               company: "Storacha"
           location: "Samyan Mitrtown: Main Hall"
-          start: 2024-11-11T16:17:00.000Z
-          end: 2024-11-11T16:31:00.000Z
+          start-time: 16:17:00.000Z
+          end-time: 16:31:00.000Z
           description:
             Find out how Storacha is adding spice to the Filecoin network by
             unlocking hot object storage and making it easy to onboard small or
@@ -244,8 +244,8 @@ schedule:
           speakers:
             - name: Marta Belcher
               company: Filecoin Foundation
-          start: 2024-11-11T16:40:00.000Z
-          end: 2024-11-11T16:55:00.000Z
+          start-time: 16:40:00.000Z
+          end-time: 16:55:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           moderators:
             - name: Leah Callon-Butler
@@ -257,8 +257,8 @@ schedule:
           speakers:
             - name: Roman
               company: GhostDrive
-          start: 2024-11-11T15:13:00.000Z
-          end: 2024-11-11T15:20:00.000Z
+          start-time: 15:13:00.000Z
+          end-time: 15:20:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           description:
             "With AI-generated content expected to represent 90% of online data
@@ -278,8 +278,8 @@ schedule:
               company: Devonian
             - name: David Dao
               company: GainForest
-          start: 2024-11-11T12:00:00.000Z
-          end: 2024-11-11T12:30:00.000Z
+          start-time: 12:00:00.000Z
+          end-time: 12:30:00.000Z
           description:
             The current system for addressing the climate crisis is inefficient
             and ineffective, with ESG metrics difficult to track and valuable
@@ -289,8 +289,8 @@ schedule:
             available and authenticating energy and environmental claims,
             they’re cultivating a world where we’re accountable for our impact.
         - title: "Demo: GhostDrive: An AI-Enabled Data Platform"
-          start: 2024-11-11T11:00:00.000Z
-          end: 2024-11-11T12:00:00.000Z
+          start-time: 11:00:00.000Z
+          end-time: 12:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           description:
             Join the GhostDrive team for a hands-on demo of their Web3 data
@@ -323,8 +323,8 @@ schedule:
             - name: Jaden Yan
               company: Aethir
           location: "Samyan Mitrtown: Main Hall"
-          start: 2024-11-11T14:00:00.000Z
-          end: 1904-11-11T14:30:00.000Z
+          start-time: 14:00:00.000Z
+          end-time: 14:30:00.000Z
         - title: "Sponsor Content: Driving Onchain Activity with a FIL-Backed Stablecoin"
           description:
             Backed by FIL, USDFC is more than just a stablecoin. It’s a
@@ -336,8 +336,8 @@ schedule:
           speakers:
             - name: Masa Kikuchi
               company: "Secured Finance"
-          start: 2024-11-11T16:32:00.000Z
-          end: 2024-11-11T16:39:00.000Z
+          start-time: 16:32:00.000Z
+          end-time: 16:39:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title:
             "From Milestones to Moonshots: A 2024 Filecoin Network Retrospective and
@@ -351,8 +351,8 @@ schedule:
           speakers:
             - name: Molly Mackinlay
               company: FilOZ
-          start: 2024-11-11T15:55:00.000Z
-          end: 2024-11-11T16:15:00.000Z
+          start-time: 15:55:00.000Z
+          end-time: 16:15:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title:
             "Sponsor Content: Building AI Agents in the Era of DePIN: Ensuring Trust
@@ -369,8 +369,8 @@ schedule:
           speakers:
             - name: Patrick Kearney
               company: Fleek
-          start: 2024-11-11T14:47:00.000Z
-          end: 2024-11-11T15:00:00.000Z
+          start-time: 14:47:00.000Z
+          end-time: 15:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title:
             "Sponsored Content: Revolutionizing Healthcare Data Sovereignty:
@@ -381,12 +381,12 @@ schedule:
           speakers:
             - name: Ethan Chae
               company: Hippocrat
-          start: 2024-11-11T14:34:00.000Z
-          end: 2024-11-11T14:46:00.000Z
+          start-time: 14:34:00.000Z
+          end-time: 14:46:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: Lunch
-          start: 2024-11-11T12:30:00.000Z
-          end: 2024-11-11T14:00:00.000Z
+          start-time: 12:30:00.000Z
+          end-time: 14:00:00.000Z
           location: Samyan Mitrtown
         - title: "Fireside Chat: Juan Benet on DePIN and AI"
           description:
@@ -401,12 +401,12 @@ schedule:
               company: Protocol Labs
             - name: Jonathan Victor
               company: Ansa Research
-          start: 2024-11-11T17:30:00.000Z
-          end: 2024-11-11T18:00:00.000Z
+          start-time: 17:30:00.000Z
+          end-time: 18:00:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - title: The Role of People in Our DePIN Future
-          start: 2024-11-11T15:21:00.000Z
-          end: 2024-11-11T15:29:00.000Z
+          start-time: 15:21:00.000Z
+          end-time: 15:29:00.000Z
           location: "Samyan Mitrtown: Main Hall"
           speakers:
             - name: Konstantin Tkachuk
@@ -427,12 +427,12 @@ schedule:
           speakers:
             - company: Huddle01
               name: Ayush Ranjan
-          start: 2024-11-11T17:15:00.000Z
-          end: 2024-11-11T17:30:00.000Z
+          start-time: 17:15:00.000Z
+          end-time: 17:30:00.000Z
           location: "Samyan Mitrtown: Main Hall"
         - location: "Samyan Mitrtown: Main Hall"
-          start: 2024-11-11T17:00:00.000Z
-          end: 2024-11-11T17:15:00.000Z
+          start-time: 17:00:00.000Z
+          end-time: 17:15:00.000Z
           title:
             " Calling All Developers: What to Build on Filecoin and How to Start
             Today"

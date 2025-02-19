@@ -13,6 +13,7 @@ media_folder: "apps/site/public/assets/images"
 public_folder: "/assets/images"
 
 date_iso_format: &date_iso_format "YYYY-MM-DD"
+time_iso_format: &time_iso_format "HH:mm:ss.SSSZ"
 
 slug:
   encoding: "ascii"
@@ -808,15 +809,18 @@ collections:
                         label: "Company"
                         widget: "string"
                     required: false
-                  - name: "start"
+                  - name: "start-time"
                     label: "Start Time"
                     widget: "datetime"
+                    time_format: *time_iso_format
                     picker_utc: true
-                  - name: "end"
+                  - name: "end-time"
                     label: "End Time"
                     widget: "datetime"
+                    time_format: *time_iso_format
                     picker_utc: true
                     required: false
+                    hint: "Leave empty if the event has no end time."
                   - name: "location"
                     label: "Location"
                     widget: "string"

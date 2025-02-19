@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { IsoDateSchema } from '@/schemas/DateTimeSchema'
+import { IsoDateSchema, IsoTimeSchema } from '@/schemas/DateTimeSchema'
 
 const ParticipantSchema = z
   .object({
@@ -16,8 +16,8 @@ const EventSchema = z
     description: z.string().optional(),
     moderators: z.array(ParticipantSchema).nonempty().optional(),
     speakers: z.array(ParticipantSchema).nonempty().optional(),
-    start: z.coerce.date(),
-    end: z.coerce.date().optional(),
+    'start-time': IsoTimeSchema,
+    'end-time': IsoTimeSchema.optional(),
     location: z.string(),
     url: z.string().url().optional(),
   })
@@ -40,4 +40,3 @@ export const ScheduleSchema = z
 
 export type Event = z.infer<typeof EventSchema>
 export type Participant = z.infer<typeof ParticipantSchema>
-export type Schedule = z.infer<typeof ScheduleSchema>

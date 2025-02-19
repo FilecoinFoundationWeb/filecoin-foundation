@@ -10,3 +10,7 @@ export const IsoDateSchema = z.date().refine(isZeroTimestamp, {
 function isZeroTimestamp(date: Date) {
   return date.toISOString().endsWith(ZERO_TIMESTAMP)
 }
+
+export const ISO_TIME_REGEX = /^\d{2}:\d{2}:\d{2}\.000Z$/
+
+export const IsoTimeSchema = z.string().regex(ISO_TIME_REGEX)
