@@ -5,14 +5,19 @@ import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
-import type { Event } from '../../../schemas/ScheduleSchema'
+import type { Event } from '@/events/types/eventType'
+
 import { formatTime } from '../../utils/dateUtils'
 
 import { Participants } from './Participants'
 
+type EventDetailsProps = NonNullable<
+  Event['schedule']
+>['days'][number]['events'][number]
+
 export function EventDetails({
-  start,
-  end,
+  startTime,
+  endTime,
   location,
   tag,
   title,
@@ -20,14 +25,14 @@ export function EventDetails({
   moderators,
   speakers,
   url,
-}: Event) {
+}: EventDetailsProps) {
   return (
     <BasicCard>
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="flex gap-6 text-brand-300 lg:flex-col lg:gap-1">
           <div className="text-sm font-bold">
-            <span>{formatTime(start)}</span>
-            {end && <span> – {formatTime(end)}</span>}
+            <span>{formatTime(startTime)}</span>
+            {endTime && <span> – {formatTime(endTime)}</span>}
           </div>
           <span className="text-sm">{location}</span>
         </div>

@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: "San Francisco, CA"
   region: north-america
-start-date: 2024-12-06T09:00:00.000Z
-end-date: 2024-12-08T18:00:00.000Z
+start-date: 2024-12-06
+end-date: 2024-12-08
 external-link: https://foresight.org/vw2024us/
 image:
   src: /assets/images/vision-sf-2022.png

@@ -8,8 +8,8 @@ location:
   primary: Taipei, Taiwan
   region: apac-asia
 external-link: https://www.taipeiblockchainweek.com/
-start-date: 2022-12-12T18:19:06.330Z
-end-date: 2022-12-17T18:19:00.000Z
+start-date: 2022-12-12
+end-date: 2022-12-17
 image:
   src: /assets/images/tapei-blockchain-2022.png
 seo:

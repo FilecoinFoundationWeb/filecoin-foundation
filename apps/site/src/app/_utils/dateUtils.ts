@@ -1,7 +1,7 @@
 import { format, isValid } from 'date-fns'
 
-export function formatDate(date: Date) {
-  return format(date, 'MMM d, yyyy')
+export function formatDate(date: Date, formatString = 'MMM d, yyyy') {
+  return format(date, formatString)
 }
 
 export function formatDateComponentsFromISO(isoDateString: string) {
