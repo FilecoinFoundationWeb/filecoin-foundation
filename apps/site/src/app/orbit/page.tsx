@@ -192,7 +192,7 @@ export default async function Orbit(props: Props) {
             <ol>
               <li>
                 Review the responsibilities associated with serving as a
-                Filecoin Orbit Ambassador. 
+                Filecoin Orbit Ambassador.
               </li>
               <li>
                 Complete the{' '}
@@ -235,7 +235,7 @@ export default async function Orbit(props: Props) {
                 Share high-quality photos and videos from the events on social
                 media.
               </li>
-              <li>Manage logistics, content, and execution of the events. </li>
+              <li>Manage logistics, content, and execution of the events.</li>
               <li>
                 Keep track of detailed records of budget, expenses, and
                 receipts.
@@ -300,7 +300,7 @@ export default async function Orbit(props: Props) {
               Filecoin Virtual Machine, writers who publish educational articles
               on popular websites about Filecoin, and event hosts who want to
               bring people together about something they are excited about
-              (Filecoin!). You’re welcome to make the most of the Orbit program
+              (Filecoin!) You’re welcome to make the most of the Orbit program
               however it resonates with your background and goals.
             </p>
           </div>

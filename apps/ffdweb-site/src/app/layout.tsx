@@ -1,6 +1,8 @@
 import { Manrope } from 'next/font/google'
 
+import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
 import type { Metadata } from 'next'
+
 import '@/styles/globals.css'
 
 import {
@@ -8,8 +10,6 @@ import {
   ORGANIZATION_NAME,
   ORGANIZATION_NAME_SHORT,
 } from '@/constants/siteMetadata'
-
-import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
 
 export const metadata: Metadata = {
   title: {
