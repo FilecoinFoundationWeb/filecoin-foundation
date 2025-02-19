@@ -1,45 +1,28 @@
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
+import js from '@eslint/js'
+import eslintConfigPrettier from 'eslint-config-prettier'
+import turboPlugin from 'eslint-plugin-turbo'
+import tseslint from 'typescript-eslint'
+import onlyWarn from 'eslint-plugin-only-warn'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
-
-const baseConfig = [
+export const config = [
+  js.configs.recommended,
+  eslintConfigPrettier,
+  ...tseslint.configs.recommended,
   {
+    plugins: {
+      turbo: turboPlugin,
+    },
     rules: {
-      'react/no-unescaped-entities': 'warn',
-      'react/jsx-sort-props': [
-        'error',
-        {
-          callbacksLast: true,
-          multiline: 'last',
-          noSortAlphabetically: true,
-          reservedFirst: true,
-          shorthandFirst: true,
-        },
-      ],
-
-      '@typescript-eslint/array-type': [
-        'error',
-        {
-          default: 'generic',
-        },
-      ],
-
-      '@typescript-eslint/no-unused-vars': 'warn',
-      '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/no-unused-expressions': 'warn',
-      'import/no-unused-modules': 'warn',
-
+      'turbo/no-undeclared-env-vars': 'warn',
       eqeqeq: 'warn',
     },
   },
+  {
+    plugins: {
+      onlyWarn,
+    },
+  },
+  {
+    ignores: ['dist/**'],
+  },
 ]
-
-export { baseConfig, compat }
-export default baseConfig

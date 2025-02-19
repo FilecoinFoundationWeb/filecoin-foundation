@@ -1,7 +1,7 @@
-import nextConfig from '@filecoin-foundation/eslint-config/next'
+import { config } from '@filecoin-foundation/eslint-config/next'
 
 const eslintConfig = [
-  ...nextConfig,
+  ...config,
   {
     settings: {
       'import/resolver': {

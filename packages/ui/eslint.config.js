@@ -1,3 +1,3 @@
-import reactInternalConfig from '@filecoin-foundation/eslint-config/react-internal'
+import { config } from '@filecoin-foundation/eslint-config/react-internal'
 
-export default reactInternalConfig
+export default config
