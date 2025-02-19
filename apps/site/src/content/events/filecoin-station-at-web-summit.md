@@ -6,8 +6,8 @@ published-on: 2023-06-27T15:30:57.149Z
 location:
   primary: Lisbon, Portugal
   region: europe
-start-date: 2022-11-01T15:30:57.167Z
-end-date: 2022-11-04T15:30:57.184Z
+start-date: 2022-11-01
+end-date: 2022-11-04
 image:
   src: /assets/images/websummit-2023.png
 category: supported-sponsored

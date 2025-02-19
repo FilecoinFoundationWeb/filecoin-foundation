@@ -12,6 +12,9 @@ publish_mode: editorial_workflow
 media_folder: "apps/site/public/assets/images"
 public_folder: "/assets/images"
 
+date_iso_format: &date_iso_format "YYYY-MM-DD"
+time_iso_format: &time_iso_format "HH:mm:ss.SSSZ"
+
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -678,14 +681,14 @@ collections:
       - name: "start-date"
         label: "Start Date"
         widget: "datetime"
+        date_format: *date_iso_format
         hint: "First day of event"
-        picker_utc: true
       - name: "end-date"
         label: "End Date"
         widget: "datetime"
+        date_format: *date_iso_format
         required: false
-        hint: "Last day of event"
-        picker_utc: true
+        hint: "Last day of event. Leave empty for single-day events."
       - name: "external-link"
         label: "External Link URL"
         widget: "string"
@@ -722,14 +725,14 @@ collections:
               - name: "start-date"
                 label: "Start Date"
                 widget: "datetime"
+                date_format: *date_iso_format
                 hint: "First day of event"
-                picker_utc: true
               - name: "end-date"
                 label: "End Date"
                 widget: "datetime"
+                date_format: *date_iso_format
                 required: false
-                hint: "Last day of event"
-                picker_utc: true
+                hint: "Last day of event. Leave empty for single-day events."
               - name: "location"
                 label: "Location"
                 widget: "string"
@@ -765,6 +768,7 @@ collections:
               - name: "date"
                 label: "Date"
                 widget: "datetime"
+                date_format: *date_iso_format
               - name: "events"
                 label: "Events"
                 widget: "list"
@@ -805,15 +809,18 @@ collections:
                         label: "Company"
                         widget: "string"
                     required: false
-                  - name: "start"
+                  - name: "start-time"
                     label: "Start Time"
                     widget: "datetime"
+                    time_format: *time_iso_format
                     picker_utc: true
-                  - name: "end"
+                  - name: "end-time"
                     label: "End Time"
                     widget: "datetime"
+                    time_format: *time_iso_format
                     picker_utc: true
                     required: false
+                    hint: "Leave empty if the event has no end time."
                   - name: "location"
                     label: "Location"
                     widget: "string"

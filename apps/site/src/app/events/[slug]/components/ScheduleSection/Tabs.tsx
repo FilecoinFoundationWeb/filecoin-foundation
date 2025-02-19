@@ -9,7 +9,7 @@ import { useIsMounted, useMediaQuery } from 'usehooks-ts'
 import { breakpoints } from '@/constants/tailwindConstants'
 
 import type { Event } from '../../../types/eventType'
-import { formatDate } from '../../utils/dateUtils'
+import { formatShortDate } from '../../utils/dateUtils'
 import { filterAndSortScheduleDays } from '../../utils/filterAndSortScheduleDays'
 import { scrollTabContentIntoView } from '../../utils/scrollTabContentIntoView'
 
@@ -56,17 +56,17 @@ export function Tabs({ schedule }: TabsProps) {
       <TabList className="sticky top-0 -m-2 flex gap-4 overflow-auto bg-brand-800 p-2 lg:static">
         {sortedDays.map((day) => (
           <Tab
-            key={formatDate(day.date)}
-            className="rounded-lg p-3 font-bold whitespace-nowrap text-brand-300 focus:brand-outline data-hover:bg-brand-700 data-selected:bg-brand-700 data-selected:text-brand-400"
+            key={formatShortDate(day.date)}
+            className="rounded-lg p-3 font-bold whitespace-nowrap text-brand-300 focus:brand-outline data-[hover]:bg-brand-700 data-[selected]:bg-brand-700 data-[selected]:text-brand-400"
           >
-            {formatDate(day.date)}
+            {formatShortDate(day.date)}
           </Tab>
         ))}
       </TabList>
       <TabPanels>
         {sortedDays.map((day) => (
           <TabPanel
-            key={formatDate(day.date)}
+            key={formatShortDate(day.date)}
             className="rounded-lg focus:brand-outline"
           >
             <div className="grid gap-4">

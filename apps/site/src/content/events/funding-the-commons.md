@@ -7,8 +7,8 @@ category: supported-sponsored
 location:
   primary: San Francisco, CA
   region: north-america
-start-date: 2024-04-13T14:47:33.396Z
-end-date: 2024-04-14T14:47:33.405Z
+start-date: 2024-04-13
+end-date: 2024-04-14
 image:
   src: /assets/images/funding-the-commons24.png
 seo:

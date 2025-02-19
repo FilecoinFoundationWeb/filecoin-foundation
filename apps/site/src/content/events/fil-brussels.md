@@ -7,8 +7,8 @@ category: hosted
 location:
   primary: Brussels, Belgium
   region: europe
-start-date: 2024-07-08T14:53:57.431Z
-end-date: 2024-07-11T14:53:57.438Z
+start-date: 2024-07-08
+end-date: 2024-07-11
 description: The Filecoin community is descending upon Brussels, Belgium from
   July 8-11, alongside EthCC 2024, for an exploration into the realms of
   decentralized AI, DePIN, and compute. Join us for insightful talks, hands-on

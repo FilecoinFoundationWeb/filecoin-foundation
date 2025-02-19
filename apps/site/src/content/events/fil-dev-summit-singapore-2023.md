@@ -8,8 +8,8 @@ location:
   primary: Singapore
   region: apac-asia
 external-link: https://www.fildev.io/FDS-1
-start-date: 2023-09-12T15:46:33.626Z
-end-date: 2023-09-14T15:46:33.644Z
+start-date: 2023-09-12
+end-date: 2023-09-14
 image:
   src: /assets/images/fil-dev-summit.png
 seo:
