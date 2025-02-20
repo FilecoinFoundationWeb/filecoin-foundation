@@ -12,7 +12,7 @@ description: Aethir is revolutionizing DePIN with its advanced, distributed ente
 website: https://aethir.com/
 tech:
   - filecoin
-year-joined: 2023-12-31T18:30:00.000Z
+year-joined: 2023
 repo: https://github.com/AethirCloud
 twitter: https://x.com/AethirCloud
 seo:

@@ -11,7 +11,7 @@ description: Decentroge is a decentralized online storage platform with NFT and
 website: https://decentroge.netlify.app/
 tech:
   - ipfs
-year-joined: 2024-04-03T17:57:20.241Z
+year-joined: 2024
 seo:
   description: Decentroge provides decentralized tools for data storage and management.
 email: encrypted::U2FsdGVkX18nDydseUXszS1n9QiAWT7YTnITBkb7ApoEd8nvgSPakareabOROhaZ

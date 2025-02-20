@@ -13,7 +13,7 @@ image:
   src: /assets/images/zilla_logo_white.png
 website: https://file-zilla.pro/
 twitter: https://twitter.com/FileZillaToken
-year-joined: 2024-02-21T15:20:11.125000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Filezilla offers decentralized file storage and management solutions.

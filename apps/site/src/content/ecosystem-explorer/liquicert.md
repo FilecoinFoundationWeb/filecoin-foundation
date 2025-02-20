@@ -12,7 +12,7 @@ website: https://liquicert.io/
 tech:
   - filecoin
   - ipfs
-year-joined: 2024-03-22T16:24:25.092Z
+year-joined: 2024
 seo:
   description: LiquiCert offers decentralized certification solutions for digital assets.
 email: encrypted::U2FsdGVkX1/J7h9OZWIEDNCBbmmLA8beq59PttsHOGJ6WyNMJCr5NplSfuQn4XbO

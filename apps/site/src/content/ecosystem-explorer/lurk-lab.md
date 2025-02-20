@@ -13,7 +13,7 @@ description: Lurk is a Turing-complete programming language for recursive
   and IPLD, and more.
 tech:
   - filecoin
-year-joined: 2024-03-29T21:28:53.087Z
+year-joined: 2024
 seo:
   description: Lurk Lab provides decentralized solutions for data analysis and management.
 email: encrypted::U2FsdGVkX1+xuA6ZPpDARGzzk9jFFPpCCc2Alnhx0TwOC3clxY00qWWLI5aOt22U

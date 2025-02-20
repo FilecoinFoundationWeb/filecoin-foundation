@@ -10,7 +10,7 @@ image:
   src: /assets/images/660732932560f8884ec24d4c_hamster.png
 website: https://hamsternet.io/
 twitter: https://twitter.com/Hamsternetio
-year-joined: 2024-03-29T21:28:51.960000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

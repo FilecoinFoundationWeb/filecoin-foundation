@@ -16,7 +16,7 @@ tech:
 repo: https://github.com/orgs/Zondax/repositories
 twitter: https://twitter.com/_beryx_
 video-url: https://www.youtube.com/embed/R2pso7nKxJE
-year-joined: 2023-02-01T17:44:05.293Z
+year-joined: 2023
 seo:
   title: "Beryx: A Filecoin API & Explorer"
   description: Beryx offers an API and explorer for the Filecoin community,

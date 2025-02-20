@@ -16,7 +16,7 @@ tech:
 repo: https://github.com/ArchlyFi
 twitter: https://twitter.com/archlyfinance/
 video-url: https://www.youtube.com/embed/8rt11F3qG1I
-year-joined: 2024-04-25T17:07:12.859Z
+year-joined: 2024
 seo:
   description: Archly enables seamless cross-chain experiences with its DEX and
     Rainbow Road platforms. Build liquidity, offer services across chains, and

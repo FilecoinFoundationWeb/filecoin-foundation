@@ -13,7 +13,7 @@ website: https://starchain.dev
 tech:
   - filecoin
   - ipfs
-year-joined: 2020-12-31T23:00:00.000Z
+year-joined: 2021
 twitter: https://twitter.com/starchaindev
 seo:
   description: StarChain leverages Filecoin and IPFS to build a decentralized repository of scientific data where every researcher can freely share their datasets.

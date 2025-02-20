@@ -12,7 +12,7 @@ image:
 website: https://www.coophive.network/
 repo: https://github.com/CoopHive/coophive
 twitter: https://twitter.com/coophive
-year-joined: 2024-04-24T19:28:43.576000Z
+year-joined: 2024
 category: governance-daos-public-goods
 seo:
   description:

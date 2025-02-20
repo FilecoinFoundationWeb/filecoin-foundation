@@ -12,7 +12,7 @@ image:
   src: /assets/images/defluencer_logo_blur.svg
 website: https://social.defluencer.eth.limo/#/
 repo: https://github.com/Defluencer
-year-joined: 2024-04-03T18:07:28.347000Z
+year-joined: 2024
 category: dapp
 seo:
   description: Defluencer offers decentralized solutions for influencer marketing.

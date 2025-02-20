@@ -12,7 +12,7 @@ image:
   src: /assets/images/660732912d6d72ba4a9774ea_chainstack.png
 website: https://chainstack.com/
 twitter: https://twitter.com/ChainstackHQ
-year-joined: 2024-03-29T21:28:49.352000Z
+year-joined: 2024
 category: infrastructure
 seo:
   description: Chainstack provides blockchain infrastructure and development tools.

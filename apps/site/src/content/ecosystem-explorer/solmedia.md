@@ -12,7 +12,7 @@ website: https://sm.network
 tech:
   - ipfs
 twitter: https://x.com/SolMediaTech
-year-joined: 2024-04-25T17:21:06.512Z
+year-joined: 2024
 seo:
   description:
     SolMedia provides decentralized solutions for digital media storage

@@ -14,7 +14,7 @@ website: https://bifrost.finance/
 tech:
   - filecoin
 twitter: https://twitter.com/Bifrost
-year-joined: 2024-03-29T21:28:48.639Z
+year-joined: 2024
 seo:
   title: "Bifrost Finance: A Modular, Scalable, Non-Custodial Omnichain Liquid
     Staking Parachain"

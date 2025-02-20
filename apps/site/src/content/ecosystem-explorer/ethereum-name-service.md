@@ -10,7 +10,7 @@ description: ENS support for Filecoin
 website: https://ens.domains/
 tech:
   - ipfs
-year-joined: 2024-04-05T01:47:43.309Z
+year-joined: 2024
 seo:
   description:
     Ethereum Name Service offers decentralized domain name services for

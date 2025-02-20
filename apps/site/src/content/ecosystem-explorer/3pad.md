@@ -15,7 +15,7 @@ website: https://hello.3pad.xyz/
 tech:
   - ipfs
 repo: https://github.com/3Pad
-year-joined: 2024-04-05T17:29:47.737Z
+year-joined: 2024
 seo:
   description:
     Seamlessly engage your audience with 3Pad's decentralized platform.

@@ -17,7 +17,7 @@ tech:
   - ipfs
 repo: https://github.com/tedl-1990/AIWS
 twitter: https://x.com/AIWS_WORLD
-year-joined: 2024-01-01T00:00:00.000Z
+year-joined: 2024
 seo:
   title: AIWS
   description: "Modular network for generating and managing autonomous AI agents

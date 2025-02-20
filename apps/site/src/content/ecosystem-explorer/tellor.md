@@ -10,7 +10,7 @@ image:
   src: /assets/images/66073297e6e8ec9445d76d19_tellor.png
 website: https://tellor.io/
 twitter: https://twitter.com/wearetellor
-year-joined: 2024-03-29T21:28:55.457000Z
+year-joined: 2024
 category: bridges-oracles
 seo:
   description:

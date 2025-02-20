@@ -14,7 +14,7 @@ tech:
   - ipfs
 repo: https://github.com/Nuklai
 twitter: https://x.com/NuklaiData
-year-joined: 2024-07-08T10:11:00.000Z
+year-joined: 2024
 seo:
   description: Nuklai is a Web3 & AI-driven ecosystem enabling secure,
     collaborative, and monetizable private data networks for innovation and

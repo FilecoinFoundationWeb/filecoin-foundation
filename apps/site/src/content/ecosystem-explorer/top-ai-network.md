@@ -12,7 +12,7 @@ tech:
   - filecoin
 description: TOP AI Network is a decentralized AI model platform and the infrastructure for AI Agents, utilizing sharding technology and a three-layer network architecture.
 website: https://www.topnetwork.ai/
-year-joined: 2024-01-01T00:00:00.000Z
+year-joined: 2024
 
 video-url: https://www.youtube.com/embed/Y29ny0XmRiY
 twitter: https://x.com/topnetwork_top

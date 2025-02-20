@@ -12,7 +12,7 @@ tech:
   - filecoin
 repo: https://github.com/DALN-app/monorepo_v2
 twitter: https://twitter.com/DataHaus_
-year-joined: 2024-04-03T16:51:43.504Z
+year-joined: 2024
 seo:
   description: DALN offers decentralized solutions for data archiving and long-term storage.
 email: encrypted::U2FsdGVkX1+xqqnoLLCnwwXss3cQyj0pA58MFsGD58T619nPMRCY82kIPvg93L5f

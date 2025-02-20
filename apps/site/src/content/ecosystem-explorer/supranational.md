@@ -16,7 +16,7 @@ featured-content: >-
   https://dsalliance.io/resources/blog/dsa-launches-golden-gate-upgrade-reducing-decentralized-storage-costs-by-40-percent
 repo: "https://github.com/supranational"
 website: "https://www.supranational.net/"
-year-joined: 2024-01-11T13:26:59.787Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

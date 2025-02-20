@@ -10,7 +10,7 @@ image:
   src: /assets/images/eastore-logo.png
 website: https://devfolio.co/projects/eastore-e336
 repo: https://github.com/lordshashank/Eastore-Filecoin
-year-joined: 2024-04-05T00:15:15.170000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: EAStore provides decentralized storage solutions for enterprise applications.

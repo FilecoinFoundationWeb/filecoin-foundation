@@ -10,7 +10,7 @@ image:
   src: /assets/images/froghub.png
 website: https://froghub.io/
 repo: https://github.com/froghub-io
-year-joined: 2024-04-05T23:10:27.396000Z
+year-joined: 2024
 category: dapp
 seo:
   description: FrogHub offers decentralized solutions for project management and collaboration.

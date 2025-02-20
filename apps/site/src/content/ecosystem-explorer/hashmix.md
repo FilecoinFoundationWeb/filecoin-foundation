@@ -11,7 +11,7 @@ image:
   src: /assets/images/6607329439c3fa2c2d0c7b18_hashmix.png
 website: https://fvm.hashmix.org/
 twitter: https://twitter.com/HashMixOfficial
-year-joined: 2020-12-31T15:00:00Z
+year-joined: 2020
 seo:
   description:
     HashMix offers decentralized finance solutions for cross-chain asset

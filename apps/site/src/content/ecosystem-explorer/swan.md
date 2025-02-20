@@ -11,7 +11,7 @@ image:
   src: /assets/images/65974d7eb7581c4ee8e5dcf7_swan-logo.png
 website: "https://www.swanchain.io"
 repo: "https://github.com/filswan"
-year-joined: 2024-01-11T13:26:59.787Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Swan provides decentralized storage solutions for digital assets.
