@@ -616,7 +616,7 @@ collections:
         widget: datetime
         required: false
         date_format: YYYY
-        hint: "Record only the year a project joined the Filecoin ecosystem. The month and day will default to January 1st."
+        hint: "Enter only the year. The date will default to January 1st."
       - name: body
         label: Long Description
         widget: markdown
