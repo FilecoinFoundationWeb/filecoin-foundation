@@ -13,7 +13,7 @@ website: https://crossfimain.com/
 tech:
   - filecoin
 twitter: https://twitter.com/globalcrossfi/
-year-joined: 2024-01-17T14:44:30.896Z
+year-joined: 2024
 seo:
   description: CrossFi offers decentralized finance solutions for cross-chain
     interoperability.

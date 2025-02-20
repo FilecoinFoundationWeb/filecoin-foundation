@@ -14,7 +14,7 @@ website: https://backed.by/
 tech:
   - ipfs
 twitter: https://twitter.com/backedbyapp?lang=en
-year-joined: 2024-04-05T17:55:00.818Z
+year-joined: 2024
 seo:
   title: "BackedBy: Empowering Creators with Fair Blockchain Content Platforms"
   description: BackedBy enables creators to launch their own blockchain-based

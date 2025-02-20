@@ -13,7 +13,7 @@ tech:
   - filecoin
 repo: https://github.com/ReppoLabs
 twitter: https://twitter.com/Repponetwork
-year-joined: 2024-04-24T19:06:44.078Z
+year-joined: 2024
 seo:
   description: Reppo offers decentralized solutions for data storage and management.
 email: encrypted::U2FsdGVkX1+vbZTfSrIjxWGTBcFnO449/B0+E3IqDJfPenTlZZJr0GoNKnJ6BCA9

@@ -13,7 +13,7 @@ website: https://chemotronix.org/s
 tech:
   - filecoin
 twitter: https://twitter.com/chemotronix
-year-joined: 2024-03-29T21:28:49.980Z
+year-joined: 2024
 seo:
   description: Chemotronix offers decentralized science solutions for data management.
 ---

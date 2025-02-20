@@ -9,7 +9,7 @@ description:
 tech:
   - ipfs
 website: https://elastic-nft-renting-protocol.netlify.app/
-year-joined: 2024-04-05T00:28:51.844000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Elastic provides decentralized data storage and management solutions.

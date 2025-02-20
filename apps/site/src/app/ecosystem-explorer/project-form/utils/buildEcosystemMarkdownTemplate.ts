@@ -37,7 +37,7 @@ ${renderLine('category', data.category)}
 ${renderArray('tech', data.tech)}
 ${renderLine('description', cleanDescription)}
 ${renderLine('website', data.website)}
-${renderLine('year-joined', data.yearJoined.toISOString())}
+${renderLine('year-joined', data.yearJoined)}
 ${renderOptionalLine('repo', data.repo)}
 ${renderOptionalLine('video-url', data.videoUrl)}
 ${renderOptionalLine('twitter', data.twitter)}
@@ -50,8 +50,8 @@ ${data.content.trim()}
 `
 }
 
-function renderLine(key: string, value: string) {
-  return `${key}: ${value.trim()}`
+function renderLine(key: string, value: string | number) {
+  return `${key}: ${String(value).trim()}`
 }
 
 function renderOptionalLine(key: string, value: string | undefined) {

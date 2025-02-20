@@ -13,7 +13,7 @@ image:
 website: "https://filecorgi.xyz/"
 repo: "https://github.com/CORGIFILE/whitepaper"
 twitter: "https://twitter.com/file_corgi"
-year-joined: 2024-02-28T23:14:40.521000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Corgi provides decentralized storage solutions for digital assets.

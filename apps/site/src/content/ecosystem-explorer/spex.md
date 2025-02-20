@@ -10,7 +10,7 @@ image:
   src: /assets/images/660732963533eb7277065843_spex.png
 website: https://www.spex.website/
 twitter: https://twitter.com/FVM_Spex
-year-joined: 2024-03-29T21:28:54.676000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Spex offers decentralized solutions for data storage and management.

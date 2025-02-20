@@ -12,7 +12,7 @@ tech:
   - filecoin
 description: Kite AI is the Proof of Attributable Intelligence Layer 1 that connects AI agents, models and data.
 website: https://kiteai-website.vercel.app/
-year-joined: 2024-01-01T00:00:00.000Z
+year-joined: 2024
 twitter: https://x.com/GoKiteAI
 seo:
   description: Kite AI is the Proof of Attributable Intelligence Layer 1 that connects AI agents, models and data.

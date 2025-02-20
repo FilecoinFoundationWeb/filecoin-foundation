@@ -13,7 +13,7 @@ website: https://forcecommunity.io/
 tech:
   - filecoin
 twitter: https://twitter.com/force_ipfs
-year-joined: 2024-03-29T21:28:50.711Z
+year-joined: 2024
 seo:
   description: Force Community offers decentralized solutions for community
     management and governance.

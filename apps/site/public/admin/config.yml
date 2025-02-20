@@ -615,7 +615,8 @@ collections:
         label: Using Filecoin Since
         widget: datetime
         required: false
-        picker_utc: true
+        date_format: YYYY
+        hint: "Enter only the year. The date will default to January 1st."
       - name: body
         label: Long Description
         widget: markdown

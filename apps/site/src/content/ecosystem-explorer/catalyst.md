@@ -12,7 +12,7 @@ website: https://the-freaking-catalyst.vercel.app
 tech:
   - filecoin
   - ipfs
-year-joined: 2024-04-04T20:29:53.874Z
+year-joined: 2024
 seo:
   title: "Catalyst: Revolutionizing Photo and Video Storage with FVM"
   description: Catalyst offers decentralized solutions for data storage and retrieval.

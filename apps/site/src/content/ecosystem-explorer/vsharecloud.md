@@ -12,7 +12,7 @@ tech:
   - ipfs
   - filecoin
 repo: https://github.com/vshareCloud-Project/
-year-joined: 2024-04-05T14:14:29.953Z
+year-joined: 2024
 seo:
   description: VshareCloud offers decentralized storage solutions for digital data.
 email: encrypted::U2FsdGVkX1/SgKq2RNa3F0b3RtGj9CJUNrSazEHq9vrsmbzzc++SHrimTTpUxQxD

@@ -12,7 +12,7 @@ description: Decentralized Bond Exchange on Filecoin Virtual Machine
 website: http://www.jackrabbitfinance.xyz/
 tech:
   - filecoin
-year-joined: 2024-04-05T00:02:55.839Z
+year-joined: 2024
 seo:
   description: Jackrabbit Finance offers decentralized finance solutions on the
     Filecoin network.

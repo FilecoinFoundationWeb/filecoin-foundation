@@ -11,7 +11,7 @@ website: https://filenova.org/
 tech:
   - filecoin
 repo: https://github.com/Filenova
-year-joined: 2024-04-24T19:39:19.948Z
+year-joined: 2024
 seo:
   description: FileNova provides decentralized storage and data management solutions.
 email: encrypted::U2FsdGVkX1+vWydQ9LjxHns5R3jUXUP2gnFwi5/1Ug177+RIiuCs2b4dex3QZMnh

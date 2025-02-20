@@ -14,7 +14,7 @@ website: https://anytype.io/
 tech:
   - ipfs
 twitter: https://twitter.com/AnytypeLabs
-year-joined: 2024-04-05T17:13:02.017Z
+year-joined: 2024
 seo:
   description:
     Protect your data with Anytype, a private hub for docs, tasks, and

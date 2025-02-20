@@ -11,7 +11,7 @@ tech:
 image:
   src: /assets/images/kamu-logo.svg
 website: https://www.kamu.dev/
-year-joined: 2024-04-04T02:05:42.624000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Kamu provides decentralized data management and collaboration tools.

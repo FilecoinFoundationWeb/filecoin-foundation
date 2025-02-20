@@ -11,7 +11,7 @@ website: https://dosier.ai/
 tech:
   - filecoin
 twitter: https://twitter.com/dosier_ai
-year-joined: 2024-04-05T23:07:24.336Z
+year-joined: 2024
 seo:
   description: Dosier offers decentralized storage solutions for digital documents.
 email: encrypted::U2FsdGVkX19t2udgs3CCoKH2sf/GJ7d5X4Z/e5wq69s+SpD/PI/+nMSwfelUevLy

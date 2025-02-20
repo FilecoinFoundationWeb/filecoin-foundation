@@ -10,7 +10,7 @@ image:
   src: /assets/images/660736a78635f037e25f71c5_murmurationlabs.png
 website: https://murmuration.ai/
 repo: https://github.com/Murmuration-Labs/filecoin-node-operator-kit
-year-joined: 2024-03-29T21:28:53.260000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

@@ -12,7 +12,7 @@ website: https://bagel.net/
 tech:
   - filecoin
 twitter: https://x.com/bagel_network
-year-joined: 2024-07-08T16:00:00.000Z
+year-joined: 2024
 seo:
   description: Explore Bagel, an AI and cryptography research lab pioneering GPU
     restaking for enhanced AI productivity. Partnered with Filecoin for

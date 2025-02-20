@@ -9,7 +9,7 @@ category: infrastructure
 description: "Building a New Economy: Data, AI, and Web3."
 tech:
   - ipfs
-year-joined: 2024-04-04T01:31:54.160Z
+year-joined: 2024
 seo:
   description: Ken Labs offers decentralized solutions for blockchain
     infrastructure and services.

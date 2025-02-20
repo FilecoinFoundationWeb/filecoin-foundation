@@ -13,7 +13,7 @@ description: Built on top of Filecoin, Bidlo offers storage bounties, where
 website: https://bidlo.vercel.app/
 tech:
   - filecoin
-year-joined: 2024-04-04T20:15:55.224Z
+year-joined: 2024
 seo:
   title: "Bidlo: Lowering Storage Costs for Clients"
   description: Bidlo offers decentralized data storage solutions for enterprises.

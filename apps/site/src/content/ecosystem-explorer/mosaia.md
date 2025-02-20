@@ -10,7 +10,7 @@ image:
   src: "/assets/images/mosaia_logo_white.png"
 website: "https://www.mosaia.io/"
 twitter: "https://twitter.com/cyrildelattre"
-year-joined: 2024-01-12T20:30:19.649Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Mosaia offers decentralized solutions for data storage and management.

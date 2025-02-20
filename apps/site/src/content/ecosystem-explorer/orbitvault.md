@@ -10,7 +10,7 @@ image:
   src: /assets/images/orbitvault_logo_white.png
 website: http://orbitvault.io/
 twitter: https://twitter.com/OrbitVault
-year-joined: 2024-03-07T14:09:03.780000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: OrbitVault provides decentralized storage solutions for digital assets.

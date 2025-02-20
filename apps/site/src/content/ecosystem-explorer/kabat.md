@@ -12,7 +12,7 @@ description: "Unleash the power of your data with Kabat! We deliver next-level d
 website: https://kabat-cloud.com/
 tech:
   - filecoin
-year-joined: 2020-12-31T23:00:00.000Z
+year-joined: 2021
 seo:
   description: "Unleash your data’s potential with Kabat! We offer decentralized storage and compute solutions for speed, security, and scalability. Empower your business and take control of the cloud today."
 ---

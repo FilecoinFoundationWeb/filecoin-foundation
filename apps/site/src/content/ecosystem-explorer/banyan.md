@@ -17,7 +17,7 @@ featured-content: "https://www.youtube.com/watch?v=SaIGrSjOMP4&list=PLp3zrT1ewY0
 repo: "https://github.com/banyancomputer"
 twitter: "https://twitter.com/BanyanComputer"
 video-url: "https://www.youtube.com/embed/LFhw2qeMzkc"
-year-joined: 2024-02-01T20:41:25.602Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Banyan offers decentralized data management solutions for enterprises.

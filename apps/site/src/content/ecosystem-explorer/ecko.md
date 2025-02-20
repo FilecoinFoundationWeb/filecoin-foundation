@@ -11,7 +11,7 @@ description: Ecko is a collaboration platform for the planning, creation, and
 website: https://www.ecko.ac
 tech:
   - filecoin
-year-joined: 2024-04-05T00:20:25.941Z
+year-joined: 2024
 seo:
   description: Ecko offers decentralized solutions for blockchain infrastructure
     and development.

@@ -14,7 +14,7 @@ image:
   src: /assets/images/merklebot.png
 website: https://merklebot.com
 twitter: https://twitter.com/MerkleB0t
-year-joined: 2024-04-03T18:37:09.314000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: MerkleBot provides decentralized automation and data management solutions.
