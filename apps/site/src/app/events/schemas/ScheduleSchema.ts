@@ -22,6 +22,21 @@ const EventSchema = z
     url: z.string().url().optional(),
   })
   .strict()
+  .refine(
+    (data) => {
+      const { 'end-time': endTime, 'start-time': startTime } = data
+
+      if (!endTime) {
+        return true
+      }
+
+      return endTime > startTime
+    },
+    {
+      message: 'end-time must be greater than start-time',
+      path: ['end-time'],
+    },
+  )
 
 const EventDaySchema = z
   .object({
