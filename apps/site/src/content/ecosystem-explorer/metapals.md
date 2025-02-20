@@ -12,7 +12,7 @@ tech:
 image:
   src: /assets/images/6607367ee29bf508686a1043_metapals.png
 website: https://metapals.pet/
-year-joined: 2024-03-29T21:28:53.034000Z
+year-joined: 2024
 category: dapp
 seo:
   description: MetaPals offers decentralized solutions for social networking and collaboration.

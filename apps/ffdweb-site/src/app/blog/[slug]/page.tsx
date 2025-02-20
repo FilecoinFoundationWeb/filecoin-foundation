@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 export default function BlogPost() {
   return (
     <>
@@ -8,4 +10,9 @@ export default function BlogPost() {
       </article>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: '', // [Headline of Blog] | FFDW
+  description: '', // [Blog Standfirst]
 }

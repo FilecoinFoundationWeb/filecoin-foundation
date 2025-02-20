@@ -11,7 +11,7 @@ website: https://www.ankr.com/
 tech:
   - filecoin
 twitter: https://twitter.com/ankr
-year-joined: 2024-03-29T21:28:48.751Z
+year-joined: 2024
 seo:
   description: Ankr offers decentralized cloud computing and blockchain infrastructure.
 email: encrypted::U2FsdGVkX18K4Lsav7+8cvMqPjAXgx30b4YXLU8yNorkCATKRANgM/omt99+Ic4A

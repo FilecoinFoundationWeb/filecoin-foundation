@@ -11,7 +11,7 @@ tech:
 image:
   src: /assets/images/66073567a94418c44efc8fa2_datalatte.png
 website: https://www.datalatte.com/
-year-joined: 2024-03-29T21:28:49.704000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: DataLatte offers decentralized data storage and retrieval services.

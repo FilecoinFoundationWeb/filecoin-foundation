@@ -13,7 +13,7 @@ website: https://www.opengatenft.com/
 tech:
   - ipfs
 twitter: https://twitter.com/OpenGateNFT
-year-joined: 2021-02-01T23:00:00.000Z
+year-joined: 2021
 seo:
   description: OpenGate provides decentralized solutions for data storage and management.
 ---

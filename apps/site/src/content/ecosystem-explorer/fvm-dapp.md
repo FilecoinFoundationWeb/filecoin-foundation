@@ -11,7 +11,7 @@ tech:
 image:
   src: /assets/images/fvm-dapp.png
 website: https://www.npmjs.com/package/create-fvm-dapp
-year-joined: 2024-04-04T20:33:26.476000Z
+year-joined: 2024
 category: dapp
 seo:
   description:

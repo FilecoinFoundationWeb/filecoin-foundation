@@ -10,7 +10,7 @@ image:
   src: /assets/images/parasail-white-logo-transparent-background.png
 website: http://parasail.network/
 twitter: https://twitter.com/parasailnetwork
-year-joined: 2024-05-15T13:46:37.162000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Parasail offers decentralized solutions for data storage and management.

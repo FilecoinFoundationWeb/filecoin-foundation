@@ -16,7 +16,7 @@ tech:
   - filecoin
   - ipfs
 twitter: https://twitter.com/aihdxc/
-year-joined: 2023-10-09T16:51:25.169Z
+year-joined: 2023
 seo:
   description:
     Protect against data breaches with blockchain-based storage. AHDX's

@@ -13,7 +13,7 @@ description: 5G, edge, private cloud, cloud backup, disaster recovery, cloud
 website: https://www.blocz.io/
 tech:
   - filecoin
-year-joined: 2024-04-05T02:22:34.382Z
+year-joined: 2024
 seo:
   title: "Blocz: Delivering Secentralized Storage, Edge Computing, and CDN Services"
   description: Blocz provides blockchain-based solutions for data management.

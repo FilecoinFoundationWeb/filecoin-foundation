@@ -16,7 +16,7 @@ tech:
 repo: https://github.com/Nebula-Block-Data
 twitter: https://twitter.com/nebulablockdata
 video-url: https://www.youtube.com/embed/Sl4vI4QgFts
-year-joined: 2020-06-15T13:58:36.727Z
+year-joined: 2020
 seo:
   description: Nebula Block offers decentralized solutions for data storage and management.
 ---

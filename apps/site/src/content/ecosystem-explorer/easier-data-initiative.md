@@ -13,7 +13,7 @@ image:
 website: https://easierdata.org/
 featured-content: https://ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
 twitter: https://twitter.com/easierdataorg
-year-joined: 2022-10-12T20:29:27.704000Z
+year-joined: 2022
 category: data-storage-management
 seo:
   description:

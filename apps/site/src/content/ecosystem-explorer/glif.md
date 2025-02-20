@@ -13,7 +13,7 @@ image:
 website: https://www.glif.io/en
 repo: https://github.com/glifio
 twitter: https://twitter.com/glifio
-year-joined: 2024-02-07T20:17:14.469000Z
+year-joined: 2024
 category: developer-tools
 seo:
   description:

@@ -13,7 +13,7 @@ website: https://ceramic.network
 tech:
   - ipfs
 twitter: https://twitter.com/ceramicnetwork
-year-joined: 2024-03-29T21:28:48.709Z
+year-joined: 2024
 seo:
   title: "Ceramic Network (3Box)"
   description: Ceramic Network offers decentralized data storage and management solutions.

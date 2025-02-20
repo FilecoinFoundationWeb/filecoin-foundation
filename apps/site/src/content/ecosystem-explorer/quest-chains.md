@@ -12,7 +12,7 @@ image:
   src: /assets/images/66073295f68243b0fc173c94_questchains.png
 website: https://questchains.xyz/
 twitter: https://twitter.com/questchainz
-year-joined: 2024-03-29T21:28:54.146000Z
+year-joined: 2024
 category: dapp
 seo:
   description:

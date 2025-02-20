@@ -12,7 +12,7 @@ tech:
 image:
   src: /assets/images/hauska_logo_white.png
 website: https://www.hauska.ai/
-year-joined: 2023-12-27T20:42:42.062000Z
+year-joined: 2023
 category: ai-productivity-utilities
 seo:
   description:

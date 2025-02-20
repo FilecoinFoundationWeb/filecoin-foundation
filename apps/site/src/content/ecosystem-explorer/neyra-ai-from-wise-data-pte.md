@@ -9,7 +9,7 @@ description:
 tech:
   - filecoin
 website: "https://drive.neyra.ai/"
-year-joined: 2023-11-01T18:39:58.216Z
+year-joined: 2023
 category: ai-productivity-utilities
 seo:
   description:

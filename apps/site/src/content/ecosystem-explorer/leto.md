@@ -10,7 +10,7 @@ image:
   src: /assets/images/leto-logo.png
 website: https://leto.gg/
 repo: https://github.com/Leto-gg
-year-joined: 2024-04-05T23:01:19.950000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Leto offers decentralized solutions for data storage and management.

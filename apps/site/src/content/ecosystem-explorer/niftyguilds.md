@@ -9,7 +9,7 @@ tech:
 image:
   src: /assets/images/660736b1d3ce5e439cb32029_niftyguilds.png
 website: https://niftyguilds.vercel.app/
-year-joined: 2024-03-29T21:28:53.605000Z
+year-joined: 2024
 category: arts-collectibles-nfts
 seo:
   description:

@@ -13,7 +13,7 @@ tech:
   - filecoin
 repo: https://github.com/OpenGateLab/FNS
 twitter: https://twitter.com/DomainFNS
-year-joined: 2024-05-16T14:33:32.622Z
+year-joined: 2024
 seo:
   description:
     DomainFNS provides decentralized solutions for domain name services

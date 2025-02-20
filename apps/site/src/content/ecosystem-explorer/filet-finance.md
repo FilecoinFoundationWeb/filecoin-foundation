@@ -12,7 +12,7 @@ description: A trustworthy platform providing staking service stably.
 website: https://www.filet.finance
 tech:
   - filecoin
-year-joined: 2024-03-29T21:28:51.053Z
+year-joined: 2024
 seo:
   description: Filet Finance offers decentralized finance solutions on the Filecoin network.
 ---

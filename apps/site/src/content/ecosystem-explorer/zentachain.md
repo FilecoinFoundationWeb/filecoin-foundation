@@ -16,7 +16,7 @@ tech:
   - ipfs
 repo: https://github.com/ZentaChain
 twitter: https://twitter.com/zentachain
-year-joined: 2024-02-28T23:55:57.805Z
+year-joined: 2024
 seo:
   title: "Zentachain: Privacy-focused IoT Blockchain"
   description: Zentachain offers decentralized solutions for data privacy and security.

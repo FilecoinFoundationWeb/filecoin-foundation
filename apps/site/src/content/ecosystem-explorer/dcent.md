@@ -15,7 +15,7 @@ tech:
   - filecoin
   - ipfs
 twitter: https://twitter.com/Dcent_Web3
-year-joined: 2023-08-01T20:34:10.316Z
+year-joined: 2023
 seo:
   description: DCent provides decentralized identity and authentication solutions.
 ---

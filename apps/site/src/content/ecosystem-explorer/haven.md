@@ -12,7 +12,7 @@ image:
   src: /assets/images/660732939d359eb7bc732049_haven.png
 website: https://havendp.com
 twitter: https://twitter.com/HashMixOfficial
-year-joined: 2024-03-29T21:28:52.020000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

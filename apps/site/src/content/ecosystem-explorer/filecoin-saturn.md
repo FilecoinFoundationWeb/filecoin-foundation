@@ -13,7 +13,7 @@ image:
   src: /assets/images/659872f1c67584b1fd35fdf7_filecoinsaturn_logo_white.png
 website: https://saturn.tech
 repo: https://github.com/filecoin-saturn/L1-node
-year-joined: 2024-01-19T18:46:07.011000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

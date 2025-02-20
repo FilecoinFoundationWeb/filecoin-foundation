@@ -16,7 +16,7 @@ image:
 website: https://www.marlin.org/
 repo: https://github.com/marlinprotocol
 twitter: https://twitter.com/marlinprotocol
-year-joined: 2023-12-01T15:08:38.544000Z
+year-joined: 2023
 category: infrastructure
 seo:
   description: Marlin Protocol offers decentralized network infrastructure solutions.

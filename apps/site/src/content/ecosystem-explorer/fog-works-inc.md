@@ -11,7 +11,7 @@ image:
   src: /assets/images/fog-works-logo-white.png
 website: https://fogworks.io/
 twitter: https://twitter.com/fogworksinc
-year-joined: 2022-11-22T19:44:10.444000Z
+year-joined: 2022
 category: infrastructure
 seo:
   description: Fog Works provides decentralized solutions for edge computing and

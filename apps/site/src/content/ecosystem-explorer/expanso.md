@@ -12,7 +12,7 @@ image:
   src: /assets/images/66073293f3fde26e66fedef5_expanso.png
 website: https://expanso.io
 twitter: https://twitter.com/BacalhauProject
-year-joined: 2024-03-29T21:28:52.162000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:
