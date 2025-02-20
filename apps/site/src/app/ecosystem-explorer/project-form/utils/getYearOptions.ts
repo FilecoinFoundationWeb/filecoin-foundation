@@ -1,6 +1,6 @@
 import { getUTCMidnightToday } from '@/utils/dateUtils'
 
-const FILECOIN_CREATION_YEAR = 2014
+export const FILECOIN_CREATION_YEAR = 2014
 
 export function getYearOptions(order: 'asc' | 'desc' = 'asc') {
   const today = getUTCMidnightToday()

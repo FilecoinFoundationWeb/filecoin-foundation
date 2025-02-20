@@ -4,6 +4,7 @@ import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 import { CategorySchema } from './CategorySchemas'
 import { ProjectTechSchema } from './ProjectTechSchema'
+import { YearJoinedSchema } from './YearJoinedSchema'
 
 export const EcosystemProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
   title: z.string(),
@@ -15,7 +16,7 @@ export const EcosystemProjectFrontmatterSchema = DynamicBaseDataSchema.extend({
   repo: z.string().url().optional(),
   twitter: z.string().url().optional(),
   'video-url': z.string().url().optional(),
-  'year-joined': z.coerce.date().optional(),
+  'year-joined': YearJoinedSchema.optional(),
   content: z.string().optional(),
   email: z.string(),
   'full-name': z.string(),
