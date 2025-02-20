@@ -37,6 +37,10 @@
       "dependsOn": ["build"],
       "cache": false,
       "persistent": true
+    },
+    "lint": {
+      "cache": true,
+      "inputs": ["$TURBO_DEFAULT$"]
     }
   }
 }
