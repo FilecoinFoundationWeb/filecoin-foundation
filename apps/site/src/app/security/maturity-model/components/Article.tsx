@@ -21,7 +21,11 @@ export function Article({ title, slug, children }: ArticleProps) {
 
   const { ref } = useIntersectionObserver({
     onChange: (isIntersecting) => {
-      isIntersecting ? updateHash(slug) : clearHashIfPresent(slug)
+      if (isIntersecting) {
+        updateHash(slug)
+      } else {
+        clearHashIfPresent(slug)
+      }
     },
   })
 

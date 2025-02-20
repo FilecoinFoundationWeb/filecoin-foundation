@@ -34,7 +34,7 @@ async function fetchAllocatorMetaData(
     })
     const data = await response.json()
     return AllocatorFileMetaDataSchema.parse(data)
-  } catch (error) {
+  } catch {
     return null
   }
 }
