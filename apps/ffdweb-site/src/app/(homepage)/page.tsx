@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 export default function Home() {
   return (
     <>
@@ -103,4 +105,10 @@ export default function Home() {
       </section>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: 'FFDW | Rebuilding the Internet for Good',
+  description:
+    'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
 }

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 export default function DigestArticle() {
   return (
     <>
@@ -8,4 +9,9 @@ export default function DigestArticle() {
       </article>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: '', // [Headline of Article] | FFDW
+  description: '', // [Article Standfirst]
 }

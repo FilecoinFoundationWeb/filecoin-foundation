@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 export default function Blog() {
   return (
     <>
@@ -10,4 +12,10 @@ export default function Blog() {
       </section>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: 'FFDW Blog | Latest Web3 Insights & Updates',
+  description:
+    'Stay informed on the newest advancements in decentralized tech, human rights data preservation, and social impact. Discover fresh perspectives from FFDW.',
 }
