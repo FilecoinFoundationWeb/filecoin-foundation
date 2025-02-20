@@ -8,7 +8,7 @@ export const ProgramSchema = z
     title: z.string().optional().default('Events'),
     events: z
       .array(
-        EventBaseFrontmatterSchema.extend({
+        EventBaseFrontmatterSchema.innerType().extend({
           location: z.string(),
         }),
       )
