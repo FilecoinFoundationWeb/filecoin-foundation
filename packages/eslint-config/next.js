@@ -1,18 +1,12 @@
-import js from '@eslint/js'
-import eslintConfigPrettier from 'eslint-config-prettier'
-import tseslint from 'typescript-eslint'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReact from 'eslint-plugin-react'
 import globals from 'globals'
 import pluginNext from '@next/eslint-plugin-next'
-import pluginImport from 'eslint-plugin-import' // Ensure import plugin is included
+import pluginImport from 'eslint-plugin-import'
 import { config as baseConfig } from './base.js'
 
 export const config = [
   ...baseConfig,
-  js.configs.recommended,
-  eslintConfigPrettier,
-  ...tseslint.configs.recommended,
   {
     ...pluginReact.configs.flat.recommended,
     languageOptions: {

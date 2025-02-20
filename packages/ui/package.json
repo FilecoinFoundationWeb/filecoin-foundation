@@ -10,7 +10,7 @@
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "typescript": "^5",
