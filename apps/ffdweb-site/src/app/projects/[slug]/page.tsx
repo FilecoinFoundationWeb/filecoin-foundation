@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 export default function Project() {
   return (
     <>
@@ -21,4 +23,9 @@ export default function Project() {
       </div>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: '', // [Name of Project] | FFDW
+  description: '', //[Description of project]
 }

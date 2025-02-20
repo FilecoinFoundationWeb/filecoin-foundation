@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 export default function Digest() {
   return (
     <>
@@ -17,4 +19,10 @@ export default function Digest() {
       </section>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
+  description:
+    'Explore FFDW DWeb Digest for expert insights on cognitive liberty, privacy, and crypto policy. Discover the evolving landscape of digital autonomy and blockchain.',
 }

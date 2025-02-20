@@ -1,3 +1,5 @@
+import type { Metadata } from 'next'
+
 export default function LearningResources() {
   return (
     <>
@@ -13,4 +15,10 @@ export default function LearningResources() {
       </section>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
+  description:
+    'Discover case studies, tutorials, and tools on decentralized technologies driving social change. Learn, share, and help shape the future with FFDW.',
 }
