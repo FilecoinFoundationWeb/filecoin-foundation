@@ -13,7 +13,7 @@ website: https://astral.global/
 tech:
   - filecoin
 twitter: https://twitter.com/astralprotocol
-year-joined: 2024-03-29T21:28:48.588Z
+year-joined: 2024
 seo:
   description: Astral offers decentralized solutions for data retrieval and management.
 ---

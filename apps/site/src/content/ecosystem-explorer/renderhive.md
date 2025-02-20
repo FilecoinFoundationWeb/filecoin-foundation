@@ -14,7 +14,7 @@ website: https://www.renderhive.io/
 tech:
   - filecoin
 twitter: https://twitter.com/renderhive
-year-joined: 2024-03-29T21:28:53.783Z
+year-joined: 2024
 seo:
   description: RenderHive offers decentralized solutions for rendering and
     processing digital media.

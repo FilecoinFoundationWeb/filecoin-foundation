@@ -13,7 +13,7 @@ description: Introducing, Teaching and Supporting Decentralized Storage and
 website: https://www.builtdifferent.foundation/
 tech:
   - filecoin
-year-joined: 2024-03-29T21:28:48.571Z
+year-joined: 2024
 seo:
   title:
     "Built Different: Supporting Decentralized Storage and Peer-to-Peer File

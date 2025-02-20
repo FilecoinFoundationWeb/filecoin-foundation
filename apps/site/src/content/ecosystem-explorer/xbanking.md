@@ -16,7 +16,7 @@ tech:
 repo: https://github.com/xbankingorg
 twitter: https://twitter.com/TresDotFinance
 video-url: https://www.youtube.com/embed/4YHdkICYvJc
-year-joined: 2024-01-12T20:27:39.394Z
+year-joined: 2024
 seo:
   description: XBanking provides decentralized finance solutions for secure transactions.
 ---

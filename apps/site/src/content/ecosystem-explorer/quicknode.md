@@ -10,7 +10,7 @@ image:
   src: /assets/images/66073296c00a4b6b1e84bf32_quicknode.png
 website: https://www.quicknode.com/
 twitter: https://twitter.com/quicknode
-year-joined: 2024-03-29T21:28:54.885000Z
+year-joined: 2024
 category: infrastructure
 seo:
   description:

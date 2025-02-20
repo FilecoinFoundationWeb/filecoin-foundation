@@ -10,7 +10,7 @@ image:
   src: /assets/images/66073297bc9a092bda5eb6d8_web3mine.png
 website: https://web3mine.io/
 twitter: https://twitter.com/web3mine
-year-joined: 2024-03-29T21:28:55.160000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Web3Mine offers decentralized solutions for data storage and management.

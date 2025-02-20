@@ -12,7 +12,7 @@ image:
   src: /assets/images/nd-logo-1-.png
 website: https://www.ndlabs.io/#/
 twitter: https://twitter.com/imNDLABS
-year-joined: 2022-03-01T15:02:57.607000Z
+year-joined: 2022
 category: data-storage-management
 seo:
   description: ND Labs provides decentralized solutions for data storage and management.

@@ -15,7 +15,7 @@ website: "https://livepeer.org"
 featured-content: "https://medium.com/livepeer-blog/video-streaming-with-fvm-and-livepeer-5646eee1ba78"
 repo: "https://github.com/livepeer/org"
 twitter: "https://twitter.com/Livepeer"
-year-joined: 2024-01-19T18:26:58.022Z
+year-joined: 2024
 category: photo-video
 seo:
   description: Livepeer provides decentralized video streaming and transcoding services.

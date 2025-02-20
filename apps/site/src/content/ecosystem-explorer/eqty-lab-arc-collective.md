@@ -12,7 +12,7 @@ image:
   src: /assets/images/6607329226071981e4a3559d_eqty.png
 website: https://eqtylab.io
 twitter: https://twitter.com/EQTYLab
-year-joined: 2024-03-29T21:28:50.218000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

@@ -10,7 +10,7 @@ description:
 tech:
   - ipfs
 website: https://devpost.com/software/encryption-pinner?ref_content=user-portfolio&ref_feature=in_progress
-year-joined: 2024-04-05T01:09:47.927000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description: Encryption Pinner offers secure and decentralized data pinning services.

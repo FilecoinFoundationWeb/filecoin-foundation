@@ -12,7 +12,7 @@ image:
   src: /assets/images/hashgaurd_logo_white.png
 website: https://hashguard.io/
 twitter: https://twitter.com/hashguard_/
-year-joined: 2022-09-07T14:14:44.368000Z
+year-joined: 2022
 category: infrastructure
 seo:
   description:

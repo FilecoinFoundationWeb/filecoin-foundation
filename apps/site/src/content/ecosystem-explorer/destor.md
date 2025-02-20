@@ -14,7 +14,7 @@ tech:
   - filecoin
   - ipfs
 twitter: https://x.com/FilecoinDeStor
-year-joined: 2024-04-01T16:28:00.000Z
+year-joined: 2024
 seo:
   description: Discover DeStor, a leader in decentralized storage services using
     blockchain technology. Connects data owners with Filecoin storage providers

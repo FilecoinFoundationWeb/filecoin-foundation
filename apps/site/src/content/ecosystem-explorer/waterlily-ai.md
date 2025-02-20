@@ -17,7 +17,7 @@ featured-content: "https://fil.org/blog/decentralizing-art-a-deep-dive-into-wate
 repo: "https://github.com/bacalhau-project/Waterlily"
 twitter: "https://twitter.com/Waterlily"
 video-url: "https://www.youtube.com/embed/AhCScfpeN3k"
-year-joined: 2023-04-25T22:00:00.000Z
+year-joined: 2023
 category: ai-productivity-utilities
 seo:
   description:

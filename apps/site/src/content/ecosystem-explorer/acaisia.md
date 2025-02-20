@@ -14,7 +14,7 @@ website: https://acaisia.com
 tech:
   - filecoin
 repo: https://github.com/team-acaisia
-year-joined: 2023-09-01T18:56:33.186Z
+year-joined: 2023
 seo:
   description: Acaisia's platform optimizes your cloud with smart workload
     distribution and hardware autotuning. Reduce costs, minimize idle resources,

@@ -14,7 +14,7 @@ tech:
 repo: https://github.com/Ghost-Drive
 twitter: https://twitter.com/GhostDrive_Web3
 video-url: https://www.youtube.com/embed/D0Mh3ZDA-3Y
-year-joined: 2024-05-16T14:59:06.611Z
+year-joined: 2024
 seo:
   description: GhostDrive provides decentralized storage solutions for
     secure data management.

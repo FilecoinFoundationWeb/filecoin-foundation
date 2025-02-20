@@ -11,7 +11,7 @@ image:
 website: https://www.nulink.org/
 repo: https://github.com/NuLink-network
 twitter: https://twitter.com/NuLink_
-year-joined: 2022-02-01T14:35:36.326000Z
+year-joined: 2022
 category: data-storage-management
 seo:
   description: NuLink provides decentralized solutions for data privacy and security.

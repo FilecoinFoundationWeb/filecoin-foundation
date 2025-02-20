@@ -11,7 +11,7 @@ image:
 website: https://drpc.org/
 twitter: https://twitter.com/drpcorg
 video-url: https://www.youtube.com/embed/AFB9eMukNTw
-year-joined: 2024-04-05T13:32:22.117000Z
+year-joined: 2024
 category: data-retrieval
 seo:
   description:

@@ -13,7 +13,7 @@ image:
 website: "https://foxwallet.com/en"
 repo: https://github.com/foxwallet
 twitter: "https://twitter.com/FoxWallet"
-year-joined: 2024-02-27T20:36:33.551000Z
+year-joined: 2024
 category: wallets-identity-authentication
 seo:
   description:

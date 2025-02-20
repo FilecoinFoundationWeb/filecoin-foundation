@@ -14,7 +14,7 @@ website: https://okcontract.com/
 tech:
   - ipfs
 repo: https://github.com/okcontract
-year-joined: 2022-09-11T14:47:28.444Z
+year-joined: 2022
 seo:
   description: OkContract offers decentralized solutions for smart contract management.
 ---

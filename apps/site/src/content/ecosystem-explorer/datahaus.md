@@ -14,7 +14,7 @@ website: https://datahaus.vercel.app/
 tech:
   - filecoin
 twitter: https://twitter.com/DataHaus_
-year-joined: 2024-03-29T21:28:52.788Z
+year-joined: 2024
 seo:
   description: DataHaus provides decentralized data management and analytics solutions.
 ---

@@ -13,7 +13,7 @@ tech:
 website: https://stfil.io/
 repo: "https://github.com/stfil-io"
 twitter: "https://twitter.com/stfil_io"
-year-joined: 2024-01-17T14:55:43.749Z
+year-joined: 2024
 seo:
   description:
     StFIL provides decentralized finance solutions for staking and yield

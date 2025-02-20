@@ -14,7 +14,7 @@ tech:
 repo: https://github.com/pyth-network
 twitter: https://x.com/PythNetwork
 video-url: https://www.youtube.com/embed/7k5gh-1JT3c
-year-joined: 2024-04-16T20:04:49.437Z
+year-joined: 2024
 seo:
   description: Pyth Network provides decentralized data oracle solutions for
     blockchain applications.

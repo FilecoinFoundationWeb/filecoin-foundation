@@ -8,7 +8,7 @@ tech:
   - ipfs
   - filecoin
 website: https://e-ipfs.web.app/
-year-joined: 2024-04-05T00:10:47.116000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

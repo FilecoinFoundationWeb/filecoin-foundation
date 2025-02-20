@@ -9,7 +9,7 @@ tech:
 image:
   src: /assets/images/bafkreial2z6akpzox3bbrzhf6ocguzs265ymhb37ektremkdigdexo25vu.png
 website: https://app.valist.io/d-drive/d-drive-pwa
-year-joined: 2024-04-03T17:23:12.660000Z
+year-joined: 2024
 category: data-storage-management
 seo:
   description:

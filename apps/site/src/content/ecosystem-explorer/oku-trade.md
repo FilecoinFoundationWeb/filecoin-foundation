@@ -15,7 +15,7 @@ website: https://oku.trade/app/ethereum/swap/
 tech:
   - filecoin
 twitter: https://x.com/okutrade
-year-joined: 2024-01-01T00:00:00.000Z
+year-joined: 2024
 seo:
   title: Oku Trade
   description: Bridge, swap, provide liquidity, and more on Oku Trade. Aggregator
