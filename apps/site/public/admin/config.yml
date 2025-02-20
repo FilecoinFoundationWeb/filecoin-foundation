@@ -615,7 +615,8 @@ collections:
         label: Using Filecoin Since
         widget: datetime
         required: false
-        picker_utc: true
+        date_format: YYYY
+        hint: "Record only the year a project joined the Filecoin ecosystem. The month and day will default to January 1st."
       - name: body
         label: Long Description
         widget: markdown
