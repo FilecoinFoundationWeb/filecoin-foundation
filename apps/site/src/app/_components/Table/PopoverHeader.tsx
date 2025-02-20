@@ -30,9 +30,10 @@ export function PopoverHeader({
     <div className="flex items-center gap-1">
       <span>{title}</span>
       <Popover description={description}>
-        {({ open }) => (
+        {({ open, popoverId }) => (
           <Button
             aria-label={`More info on ${title}`}
+            aria-describedby={popoverId}
             className={clsx(
               'group focus-visible:brand-outline',
               TOUCH_TARGET.touchAreaPadding,
