@@ -1,11 +1,11 @@
 import { Archivo } from 'next/font/google'
 
+import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
+
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation/Navigation'
 
 import type { LayoutProps } from '@/layout'
-
-import { BreakpointDebugger } from '@filecoin-foundation/ui/BreakpointDebugger'
 
 const archivo = Archivo({
   subsets: ['latin'],
