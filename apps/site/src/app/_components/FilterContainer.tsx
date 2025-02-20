@@ -23,7 +23,6 @@ type MobileFiltersProps = {
 type ResultsProps = {
   category: ReactNode
   results?: ReactNode
-  gapSize?: 'default' | 'wide'
 }
 
 type WrapperProps = {
