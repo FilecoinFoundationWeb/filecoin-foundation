@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: apps/site
+        working-directory: apps/ff-site
 
     steps:
       - name: Check out code

@@ -175,16 +175,16 @@ full-name: encrypted::X4zxc...
 ---
 ```
 
-The CMS is able to encrypt and decrypt data thanks to a custom API endpoint located at `apps/site/src/app/api/encryption/route.ts`. This endpoint is protected by a production-only environment variable called `ENCRYPTION_ENDPOINT_ACCESS_KEY`. This variable gets injected into the CMS by the `apps/site/scripts/injectEncryptionAccessKeyInCMS.js` script at build time only on Vercel.
+The CMS is able to encrypt and decrypt data thanks to a custom API endpoint located at `apps/ff-site/src/app/api/encryption/route.ts`. This endpoint is protected by a production-only environment variable called `ENCRYPTION_ENDPOINT_ACCESS_KEY`. This variable gets injected into the CMS by the `apps/ff-site/scripts/injectEncryptionAccessKeyInCMS.js` script at build time only on Vercel.
 
 #### Decrypting information locally
 
 When running the CMS locally, the API key is not injected as `injectEncryptionAccessKeyInCMS.js` only runs during Vercel builds. Hence, this error message is displayed `Could not perform decrypt operation for value: X4asd...` for encrypted values.
 
-If you need to view these values in plain text, you can access the CMS in production to see the decrypted information. But if you absolutely need to decrypt values locally, you can call the `decrypt` function from `apps/site/src/app/_utils/encryption.ts` and log the result to the console.
+If you need to view these values in plain text, you can access the CMS in production to see the decrypted information. But if you absolutely need to decrypt values locally, you can call the `decrypt` function from `apps/ff-site/src/app/_utils/encryption.ts` and log the result to the console.
 
 ```ts
-// apps/site/src/app/(homepage)/page.tsx
+// apps/ff-site/src/app/(homepage)/page.tsx
 import { decrypt } from "@/app/_utils/encryption"
 
 console.log(decrypt("encrypted::X4asd..."))

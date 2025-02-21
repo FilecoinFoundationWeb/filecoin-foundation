@@ -6,7 +6,7 @@ updates:
   - package-ecosystem: "npm"
     directories:
       - "/"
-      - "/apps/site"
+      - "/apps/ff-site"
     schedule:
       interval: "weekly"
     groups:

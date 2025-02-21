@@ -3,11 +3,11 @@ name: Site Cypress and Percy Tests
 on:
   push:
     paths:
-      - "apps/site/**"
+      - "apps/ff-site/**"
     branches: [main]
   pull_request:
     paths:
-      - "apps/site/**"
+      - "apps/ff-site/**"
     branches: [main]
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: apps/site
+        working-directory: apps/ff-site
 
     env:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}

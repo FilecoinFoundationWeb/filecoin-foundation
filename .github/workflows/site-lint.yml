@@ -4,18 +4,18 @@ on:
   push:
     branches: [main, cms/*, ecosystem-submission/*]
     paths:
-      - "apps/site/**"
+      - "apps/ff-site/**"
   pull_request:
     types: [opened, synchronize]
     paths:
-      - "apps/site/**"
+      - "apps/ff-site/**"
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: apps/site
+        working-directory: apps/ff-site
 
     steps:
       - name: Check out code
@@ -43,4 +43,4 @@ jobs:
           globs: |
             **/*.md
             !**/node_modules/**/*.md
-          config: "apps/site/.markdownlint.jsonc"
+          config: "apps/ff-site/.markdownlint.jsonc"

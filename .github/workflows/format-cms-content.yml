@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: apps/site
+        working-directory: apps/ff-site
     permissions:
       contents: write
       pull-requests: write
@@ -42,8 +42,8 @@ jobs:
             echo "Modified markdown files:"
             echo "$FILES"
             
-            # Adjust paths relative to apps/site
-            FORMATTABLE_FILES=$(echo "$FILES" | sed 's|^apps/site/||')
+            # Adjust paths relative to apps/ff-site
+            FORMATTABLE_FILES=$(echo "$FILES" | sed 's|^apps/ff-site/||')
 
             echo "Running prettier on:"
             echo "$FORMATTABLE_FILES"
