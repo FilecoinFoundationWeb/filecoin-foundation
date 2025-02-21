@@ -1,51 +1,45 @@
 'use client'
 
-import { useId, useState, type ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 
-import * as RadixPopover from '@radix-ui/react-popover'
+import * as RadixTooltip from '@radix-ui/react-tooltip'
 
 import './Tooltip.css'
 
 type TooltipRenderProps = {
   open: boolean
-  tooltipId: string
 }
 
 export type TooltipProps = {
   children: ReactNode | ((props: TooltipRenderProps) => ReactNode)
   description: string
-  side?: RadixPopover.PopoverContentProps['side']
+  side?: RadixTooltip.TooltipContentProps['side']
 }
 
 const GAP_BETWEEN_TOOLTIP_AND_TRIGGER = 0
 
 export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
   const [open, setOpen] = useState(false)
-  const id = useId()
-
-  const tooltipId = `tooltip-${id}`
 
   return (
-    <RadixPopover.Root open={open} onOpenChange={setOpen}>
-      <RadixPopover.Trigger asChild>
-        {typeof children === 'function'
-          ? children({ open, tooltipId })
-          : children}
-      </RadixPopover.Trigger>
-
-      <RadixPopover.Portal>
-        <RadixPopover.Content
-          hideWhenDetached
-          id={tooltipId}
-          sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
-          side={side}
-          role="tooltip"
-          className="tooltip-animation max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 focus-visible:outline-hidden"
-        >
-          {description}
-          <RadixPopover.Arrow className="fill-brand-200" />
-        </RadixPopover.Content>
-      </RadixPopover.Portal>
-    </RadixPopover.Root>
+    <RadixTooltip.Provider>
+      <RadixTooltip.Root delayDuration={0} open={open} onOpenChange={setOpen}>
+        <RadixTooltip.Trigger asChild>
+          {typeof children === 'function' ? children({ open }) : children}
+        </RadixTooltip.Trigger>
+        <RadixTooltip.Portal>
+          <RadixTooltip.Content
+            hideWhenDetached
+            sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
+            side={side}
+            role="tooltip"
+            className="tooltip-content tooltip-animation"
+          >
+            {description}
+            <RadixTooltip.Arrow className="tooltip-arrow" />
+          </RadixTooltip.Content>
+        </RadixTooltip.Portal>
+      </RadixTooltip.Root>
+    </RadixTooltip.Provider>
   )
 }
