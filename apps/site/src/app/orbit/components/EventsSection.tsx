@@ -21,9 +21,10 @@ import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
+import { fetchAndParseAirtableEvents } from '../services/airtable'
+
 import { DEFAULT_CTA_TEXT } from '@/events/constants/constants'
 
-import { fetchAndParseAirtableEvents } from '../services/airtable'
 
 type OrbitEventsSectionProps = {
   searchParams: NextServerSearchParams

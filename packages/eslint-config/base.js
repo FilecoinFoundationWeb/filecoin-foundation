@@ -4,13 +4,14 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginTurbo from 'eslint-plugin-turbo'
 import eslintPluginOnlyWarn from 'eslint-plugin-only-warn'
 
+/** @type {import("eslint").Linter.Config} */
 export const config = [
-  js.configs.recommended,
+  eslintJs.configs.recommended,
   eslintConfigPrettier,
-  ...tseslint.configs.recommended,
+  ...eslintTs.configs.recommended,
   {
     plugins: {
-      turbo: turboPlugin,
+      turbo: eslintPluginTurbo,
     },
     rules: {
       'turbo/no-undeclared-env-vars': 'warn',
@@ -19,7 +20,7 @@ export const config = [
   },
   {
     plugins: {
-      onlyWarn,
+      eslintPluginOnlyWarn,
     },
   },
   {

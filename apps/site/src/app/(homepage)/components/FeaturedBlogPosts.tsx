@@ -11,7 +11,6 @@ import { CardGrid } from '@/components/CardGrid'
 
 import type { BlogPost } from '@/blog/types/blogPostType'
 
-
 type FeaturedBlogPostsProps = {
   featuredBlogPosts: Array<BlogPost>
 }

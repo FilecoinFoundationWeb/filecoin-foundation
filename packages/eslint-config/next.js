@@ -5,6 +5,7 @@ import pluginNext from '@next/eslint-plugin-next'
 import pluginImport from 'eslint-plugin-import'
 import { config as baseConfig } from './base.js'
 
+/** @type {import("eslint").Linter.Config} */
 export const config = [
   ...baseConfig,
   {
