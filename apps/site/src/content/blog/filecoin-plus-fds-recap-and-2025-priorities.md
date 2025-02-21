@@ -11,9 +11,11 @@ image:
 seo:
   twitter:
     card: summary
-  description: Dive deeper into the discussions around Fil+ at FIL Dev Summit and
+  description:
+    Dive deeper into the discussions around Fil+ at FIL Dev Summit and
     get an overview and 2025 roadmap for the program.
 ---
+
 Scalability, diligence, and user experience are at the heart of the Filecoin Plus program priorities in 2025. 
 
 Last November at the [FIL Dev Summit (FDS)](https://www.fildev.io/FDS-5) in Bangkok, teams from around the world gathered to share their input on 2025 goals for Filecoin Plus. Here, the Filecoin Plus team –– made up of Filecoin Foundation’s Filecoin Plus team and Filecoin Incentive Design Labs (FIDL) ––  heard a call from the community for more clarity on the roadmap and evolution of the program. In response, Will Scott, CTO of FIDL, published his perspective on where he expects the program to go. You can [share feedback or join the discussion](https://github.com/filecoin-project/Allocator-Governance/discussions/261) on GitHub.
@@ -34,33 +36,33 @@ The FDS discussions served as a touchpoint to receive community feedback and sha
 
 ### 1. Layer 2 Scaling Solutions
 
-* Develop and prototype tools for archival and warm storage capabilities.
-* Conduct performance benchmarking to ensure seamless transaction processing.
+- Develop and prototype tools for archival and warm storage capabilities.
+- Conduct performance benchmarking to ensure seamless transaction processing.
 
 ### 2. Security Improvements
 
-* Expand the scope of the bug bounty program and promote it to attract top security researchers.
-* Schedule and complete third-party audits for all upcoming smart contracts.
+- Expand the scope of the bug bounty program and promote it to attract top security researchers.
+- Schedule and complete third-party audits for all upcoming smart contracts.
 
 ### 3. Onboarding Flow
 
-* Implement usability testing for the new onboarding process.
-* Integrate feedback from the mockups into the design and test user satisfaction metrics.
+- Implement usability testing for the new onboarding process.
+- Integrate feedback from the mockups into the design and test user satisfaction metrics.
 
 ### 4. Filecoin Plus Enhancements
 
-* Design and experiment with temporary programs for new allocation models.
-* Explore mechanisms to foster “real deals” while mitigating “self-dealing.”
+- Design and experiment with temporary programs for new allocation models.
+- Explore mechanisms to foster “real deals” while mitigating “self-dealing.”
 
 ### 5. Allocator System Experimentation
 
-* Propose new allocator models to address diverse client needs, including non-KYC pathways.
-* Evaluate performance of allocator systems in meeting demand for DataCap distribution.
+- Propose new allocator models to address diverse client needs, including non-KYC pathways.
+- Evaluate performance of allocator systems in meeting demand for DataCap distribution.
 
 ### 6. Layered Incentivization
 
-* Investigate the feasibility of assigning varying levels of subsidy based on data types (e.g., archival, warm storage).
-* Assess technical and economic implications of implementing a tiered incentive system.
+- Investigate the feasibility of assigning varying levels of subsidy based on data types (e.g., archival, warm storage).
+- Assess technical and economic implications of implementing a tiered incentive system.
 
 As we continue to build on these conversations and seek community input, the Filecoin Plus team will publish regular updates about the program’s roadmap and evolution. 
 

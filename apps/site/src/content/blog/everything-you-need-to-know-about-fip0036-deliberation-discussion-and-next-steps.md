@@ -29,12 +29,12 @@ With FIP0036, the CryptoEconLab has proposed economic changes that seek to bette
 - Introduce a Sector Duration Multiplier for all sectors, regardless of deal type.
 
 - The multiplier is linear, and corresponds to sector term length.
-  — Any sectors committed for longer than 1 year will receive a multiplier in accordance to the length of their commitment. So, a sector committed for 2 years would receive a 2x multiplier in the calculation of their Quality Adjusted Power (QAP).
+  — Any sectors committed for longer than 1 year will receive a multiplier in accordance to the length: of their commitment. So, a sector committed for 2 years would receive a 2x multiplier in the calculation of their Quality Adjusted Power (QAP).
   —The maximum multiplier would be 3.5x, which corresponds to the proposed 3.5 year sector term maximum.
   — Storage providers could commit sectors for any period of time between 1 and 3.5 years and their multiplier would be adjusted accordingly.
 
 - The Sector Duration Multiplier would compound with the Filecoin Plus deal multiplier that already exists in the network.
-  — Thus, if a sector were committed for the maximum term period and filled 100% with Filecoin Plus deals, that storage provider would receive the maximum compounded multiplier of 35x (10x Filecoin Plus multiplier, compounded with the 3.5x term length multiplier).
+  — Thus, if a sector were committed for the maximum term period and filled 100% with Filecoin Plus deals, that storage provider would receive the maximum compounded multiplier of 35x (10x Filecoin Plus multiplier, compounded with the 3.5x term length: multiplier).
 
 - Increase Sector Initial Consensus Pledge multiplier from 30% to 50%.
 

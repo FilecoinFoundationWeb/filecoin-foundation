@@ -64,4 +64,4 @@ Slingshot is set up as a community competition for storage clients and developer
 
 Projects like these help make important datasets accessible and explorable by anyone in the world — for research, education, discovery. I hope more AI researchers will turn to projects like Slingshot in the future to help inform their machine learning work.
 
-_Hear more from Austin Carson about storing AI datasets on the decentralized web at the_ [_Decentralized Web Gateway_](http://lu.ma/fil-sxsw)_, Tuesday, March 15, in Austin Texas._
+_Hear more from Austin Carson about storing AI datasets on the decentralized web at the [Decentralized Web Gateway](http://lu.ma/fil-sxsw), Tuesday, March 15, in Austin Texas._

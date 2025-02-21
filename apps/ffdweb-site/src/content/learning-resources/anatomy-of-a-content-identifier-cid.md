@@ -1,0 +1,21 @@
+---
+date: "2023-01-01T00:00:00.000Z"
+source: https://proto.school/anatomy-of-a-cid
+technicality: "3"
+language: English
+keywords: CIDs, cryptographic algorithms, Multihash format, IPFS
+title: Anatomy of a Content Identifier (CID)
+length: 6 Short Lessons
+organization: Protocol Labs (PL)
+description: >-
+  Explore CIDs (Content Identifiers), the unique labels used to point to data
+  stored on distributed information systems, including Interplanetary File
+  System (IPFS), IPLD, libp2p, and Filecoin.
+topic:
+  - storage
+type: tutorial
+updated-on: "2023-10-20T15:21:33.752Z"
+created-on: "2023-10-20T15:21:33.752Z"
+published-on: "2023-10-20T15:22:08.074Z"
+tags: resources
+---

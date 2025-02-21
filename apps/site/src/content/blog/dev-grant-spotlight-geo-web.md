@@ -14,7 +14,7 @@ seo:
     contributions to the Filecoin ecosystem.
 ---
 
-_This is the first post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about our Dev Grants program, including how to apply for grants,_ [_here_](https://grants.filecoin.io/)_. And_ [_read up_](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) _on Wave 8 recipients._
+_This is the first post in our series highlighting the builders and innovators creating new tools and services on the Filecoin network. Learn more about our Dev Grants program, including how to apply for grants, [here](https://grants.filecoin.io/). And [read up](https://filecoinfoundation.medium.com/filecoin-foundation-wave-9-dev-grant-proposals-due-friday-july-30-b240d98cee7b) on Wave 8 recipients._
 
 The [Geo Web](https://www.geoweb.network/) project, a participant in [Filecoin’s Developer Grants](https://grants.filecoin.io/) program, is a set of open protocols that creates novel property rights for augmented reality (AR) content. Geo Web allows publishers to place digital content, like art or music, at a physical location in the world and have users discover it based on their location — as if it’s a physical object. What makes Geo Web special is how its protocols encourage a shared experience of this new world, so that it is used efficiently and fairly, in perpetuity.
 

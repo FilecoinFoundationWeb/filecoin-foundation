@@ -15,6 +15,7 @@ seo:
   description: Filecoin Foundation announced the addition of over 500,000
     culturally significant digital artifacts now stored on the Filecoin Network.
 ---
+
 San Francisco, CA – Filecoin Foundation (FF) today announced the addition of new cultural datasets to the Filecoin network from renowned organizations, including Smithsonian Institution, Flickr Foundation, Internet Archive, MIT Open Learning, and Starling Lab. With over 500,000 culturally significant digital artifacts now safeguarded on the network, Filecoin is redefining data preservation in an age where integrity, provenance, and robustness of information are more critical than ever.
 
 Modern innovation relies on data; it’s an essential building block for advancement across industries, including artificial intelligence (AI). However, as the dependence on data grows, so do the risks of depending on centralized storage systems. [Natural disasters](https://www.axios.com/2024/06/25/weather-service-computer-network-outage), [human error](https://www.nytimes.com/interactive/2024/07/19/technology/crowdstrike-outage-explained.html), and [outages](https://www.bbc.com/news/articles/c623jr6kxz2o) can jeopardize access to critical information, potentially threatening the preservation of culture and history.  

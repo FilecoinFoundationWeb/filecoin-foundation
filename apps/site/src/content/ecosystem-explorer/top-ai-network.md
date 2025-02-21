@@ -21,7 +21,7 @@ seo:
   description: TOP AI Network is a decentralized AI model platform and the infrastructure for AI Agents, utilizing sharding technology and a three-layer network architecture.
 ---
 
-TOP AI Network is a decentralized AI Model platform and also the infrastructure for AI Agents, empowering AI model developers to deploy and host their models without the need for costly hardware or complex software. 
+TOP AI Network is a decentralized AI Model platform and also the infrastructure for AI Agents, empowering AI model developers to deploy and host their models without the need for costly hardware or complex software.
 
 TOP AI leverages Filecoin's verifiable storage network to address key challenges in model storage, retrieval, inference, and the reliability of economic models. Currently, TOP AI stores AI model data on Filecoin via Lighthouse. Additionally, TOP AI has completed the development of smart contract, enabling seamless one-click deployment to Filecoin for managing model data, node statuses, and economic models on the blockchain.
 

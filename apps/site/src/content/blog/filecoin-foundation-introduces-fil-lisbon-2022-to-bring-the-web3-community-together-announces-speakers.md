@@ -46,7 +46,7 @@ Additionally, from October 24 — November 4, Filecoin Foundation is hosting a [
 
 “Filecoin Foundation is so thrilled to be bringing together the Filecoin community in Lisbon, two years after Filecoin mainnet launch, following a year of tremendous network growth,” says Marta Belcher, President and Chair of Filecoin Foundation.
 
-FIL Lisbon is open to everyone and provides a unique opportunity for people within and outside of the blockchain industry to learn, build, connect, and venture into the exciting prospects of the future of Web3. You can register for the FIL Lisbon kickoff party and Main Stage days [here](https://fil-lisbon.io/register-now/). For more information about the event, visit [https://fil-lisbon.io/](https://fil-lisbon.io/ "https://fil-lisbon.io/")
+FIL Lisbon is open to everyone and provides a unique opportunity for people within and outside of the blockchain industry to learn, build, connect, and venture into the exciting prospects of the future of Web3. You can register for the FIL Lisbon kickoff party and Main Stage days [here](https://fil-lisbon.io/register-now/). For more information about the event, visit [fil-lisbon.io/](https://fil-lisbon.io/)
 
 ## About Filecoin Foundation
 
