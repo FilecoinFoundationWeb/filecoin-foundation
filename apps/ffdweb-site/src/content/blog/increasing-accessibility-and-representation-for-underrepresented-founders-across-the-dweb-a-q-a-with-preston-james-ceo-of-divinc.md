@@ -4,18 +4,17 @@ title: "Increasing Accessibility and Representation for Underrepresented
 created-on: 2023-07-12T19:47:37.201Z
 updated-on: 2023-07-12T19:47:37.214Z
 published-on: 2023-07-12T19:47:37.228Z
-f_post-date: 2023-07-12T19:47:37.240Z
-f_featured: false
-f_image:
+post-date: 2023-07-12T19:47:37.240Z
+featured: false
+image:
   url: /assets/images/0711-divinc.png
-tags: blog
-layout: "[blog].html"
 date: 2023-07-12T19:47:37.251Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
+
 Earlier this year, Filecoin Foundation for the Decentralized Web (FFDW) [announced its support](https://www.divinc.org/blog/divinc-launches-dweb-for-social-impact-tech-accelerator) for [DivInc](https://www.divinc.org/), a 501(c)(3) nonprofit organization focused on championing young companies founded by underrepresented founders, ahead of the launch of its Fall 2023 DWeb for Social Impact Accelerator. 
 
 This accelerator is the first of DivInc’s programs focused on supporting social enterprise startups led by women and people of color who are developing solutions that leverage the decentralized web and other Web3-based technologies. 
@@ -46,5 +45,4 @@ There’s already bias against people of color and women in terms of getting acc
 
 At FFDW, our mission is to help educate society about the decentralized web and how its solutions can aid in preserving humanity’s most important information. We look forward to continuing to support DivInc as it helps bring diverse perspectives to the Web3 ecosystem. 
 
-**\
-To learn more about the Fall 2023 DWeb for Social Impact Accelerator supported by FFDW, visit [www.divinc.org/apply](http://www.divinc.org/apply).**
+_To learn more about the Fall 2023 DWeb for Social Impact Accelerator supported by FFDW, visit [divinc.org/apply](http://www.divinc.org/apply)._

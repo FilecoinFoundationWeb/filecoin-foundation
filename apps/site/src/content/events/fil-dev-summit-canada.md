@@ -25,7 +25,8 @@ seo:
   twitter:
     card: summary
   title: FIL Dev Summit 6 - Toronto, Canada | May 12-13, 2025
-  description: Join us for FIL Dev Summit 6 in Toronto, Canada, on May 12-13! This
+  description:
+    Join us for FIL Dev Summit 6 in Toronto, Canada, on May 12-13! This
     premier event is designed for developers, tech enthusiasts, and innovators.
     Be part of the action—don’t miss out!
 ---

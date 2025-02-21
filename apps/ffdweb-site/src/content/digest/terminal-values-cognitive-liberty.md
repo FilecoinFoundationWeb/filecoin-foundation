@@ -3,21 +3,20 @@ title: "Terminal Values: Cognitive Liberty"
 created-on: 2023-09-15T17:01:01.677Z
 updated-on: 2023-09-15T17:01:01.686Z
 published-on: 2023-09-15T17:01:01.693Z
-f_issue: 1
-f_article: 2
-f_description: Your inalienable right to live rent-free inside your own head
-f_image:
+issue: 1
+: 2
+description: Your inalienable right to live rent-free inside your own head
+image:
   url: /assets/images/DWD-Illustration-02.png
-f_author: Danny O'Brien
-f_author-profile:
+author: Danny O'Brien
+author-profile:
   url: /assets/images/dwd-profile-02.png
-f_author-bio: Danny O'Brien is Senior Fellow and DWeb Strategy at Filecoin
+author-bio: Danny O'Brien is Senior Fellow and DWeb Strategy at Filecoin
   Foundation and Filecoin Foundation for the Decentralized Web. He has been a
   tech journalist, developer and defender of online free speech, privacy and an
   open internet for more than 20 years, including over a decade's activism at
   the Electronic Frontier Foundation.
 tags: digest
-layout: "[digest].html"
 date: 2023-09-15T17:01:01.699Z
 seo:
   noindex: false
@@ -26,6 +25,7 @@ seo:
   title: "FFDW DWeb Digest: Terminal Values: Cognitive Liberty"
   og:image: /assets/images/DWD-Illustration-02.png
 ---
+
 If you build and market new technologies to a global audience, you may occasionally reflect on how the use of those technologies align with your personal values and our collective human rights. Or you may not. Be warned, however: avoiding the topic entirely can lead to some uncomfortable situations down the line.
 
 As an activist at the Committee to Protect Journalists and the Electronic Frontier Foundation, my job in the 2010s was to make sure those uncomfortable situations happened as early as possible in the product lifecycle. I was a sort of traveling conscience salesman, knocking on the door of shiny new start-ups like Tumblr, or fast-moving, thing-breaking giants like Facebook, and then shoving my foot in the door as I brandished my credentials. I learned that people in those companies mostly thought that human rights violations were something that happened far away, so I would sit with their development teams and ask if they knew how incredibly popular they were in another country – like Tunisia, say, or the Philippines. This made them happy.

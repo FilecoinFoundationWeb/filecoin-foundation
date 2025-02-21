@@ -1,28 +1,25 @@
 ---
-f_featured: false
-f_post-date: '2021-12-13T00:00:00.000Z'
+featured: false
+post-date: "2021-12-13T00:00:00.000Z"
 title: >-
   FFDW and Guardian Project Team Up to Bring Decentralized Storage to Content
   Verification and Distribution on Smartphones
-f_description: >-
+description: >-
   FFDW’s commitment to Guardian Project will accelerate adoption of
   decentralized storage technology on smartphones through ProofMode and F-Droid
-f_author: Filecoin Foundation for the Decentralized Web
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423839922f06c7b3150fdd_guardian-project.png
   alt: null
-slug: guardian-project-annoucement
-updated-on: '2023-04-21T07:18:32.063Z'
-created-on: '2023-04-21T07:16:09.669Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/grants.md
-  - cms/tags/community.md
-  - cms/tags/smartphones.md
-  - cms/tags/rights.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:32.063Z"
+created-on: "2023-04-21T07:16:09.669Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - grants
+  - community
+  - smartphones
+  - rights
 ---
 
 ![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98cc21e567cc30009768_guardian-project-announcement.png)
@@ -37,10 +34,4 @@ The funding will also support expanded collaboration with human rights defenders
 
 Second, DVD will accelerate the adoption of decentralized storage technology for [F-Droid](https://www.f-droid.org/), the leading free and open-source app publishing platform. F-Droid has been a key part of Guardian Project’s goal to ensure people have access to the apps they need, even during humanitarian and human rights crises where internet access is often limited. The work that FFDW is funding builds upon previous work in “nearby app sharing” supported by Mozilla, the National Science Foundation, and Open Technology Fund. “The rise of smartphones, where the market is largely dominated by two companies, has exacerbated the issue of who has the right to choose what software is allowed to be installed and where you can download it,” says Hans-Christoph Steiner, Distributed Lead at Guardian Project. “By adding decentralized storage and access to F-Droid, we will make the app ecosystem both less fragile and more free.”
 
-> “Our mission is to permanently preserve humanity’s most important information,”
-
-said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web.
-
-> “We are proud to support Guardian Project’s work to preserve critical human rights data and empower greater access to applications using the decentralized web.”
-
-Learn more about FFDW award programs [here](/awards)!
+> Our mission is to permanently preserve humanity’s most important information. We are proud to support Guardian Project’s work to preserve critical human rights data and empower greater access to applications using the decentralized web. —Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web

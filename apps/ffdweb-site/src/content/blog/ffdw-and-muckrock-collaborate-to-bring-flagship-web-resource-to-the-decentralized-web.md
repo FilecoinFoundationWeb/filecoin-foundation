@@ -1,30 +1,26 @@
 ---
-f_featured: false
-f_post-date: '2022-05-04T00:00:00.000Z'
+featured: false
+post-date: "2022-05-04T00:00:00.000Z"
 title: >-
   FFDW and MuckRock Collaborate to Bring Flagship Web Resource to the
   Decentralized Web
-f_description: >-
+description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce its
   award to MuckRock, a non-profit, collaborative news site that gives people the
-  tools to keep their government transparent and accountable. 
-f_author: Filecoin Foundation for the Decentralized Web
-f_image:
+  tools to keep their government transparent and accountable.
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png
   alt: null
-slug: >-
-  ffdw-and-muckrock-collaborate-to-bring-flagship-web-resource-to-the-decentralized-web
-updated-on: '2023-04-21T07:18:23.253Z'
-created-on: '2023-04-21T07:15:55.677Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/collaborative-news.md
-  - cms/tags/award.md
-  - cms/tags/muckrock.md
-  - cms/tags/documentcloud.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:23.253Z"
+created-on: "2023-04-21T07:15:55.677Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - collaborative-news
+  - award
+  - muckrock
+  - documentcloud
 ---
 
 _Joint Project will Help Preserve Key Public Interest Documents on the Filecoin Network_
@@ -48,5 +44,3 @@ The DocumentCloud project will focus on three coordinated strategies, allowing M
 “We’re proud to support MuckRock with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with MuckRock is a natural fit to further these efforts.”
 
 Interested in getting involved and learning more? Register to attend [MuckRock’s Hack Day](https://www.muckrock.com/assignment/register-for-the-documentcloud-add-on-a-thon-on-may-27-385/embed/). Additionally, MuckRock is currently looking for a [front-end developer](https://www.muckrock.com/jobs/#frontend) to build out this exciting platform and a [data journalist](https://www.muckrock.com/jobs/#data) to join their growing team.
-
-Learn more about FFDW awards [here](https://ffdweb.org/awards/)!

@@ -1,24 +1,21 @@
 ---
-f_featured: false
-f_post-date: '2023-02-01T00:00:00.000Z'
-title: 'Decentralization in All the Things '
-f_description: >-
+featured: false
+post-date: "2023-02-01T00:00:00.000Z"
+title: Decentralization in All the Things
+description: >-
   This is a guest post by Mike Masnick, the founder and CEO of Floor64 and
-  editor of the Techdirt blog, about decentralization. 
-f_author: 'Mike Masnick '
-slug: decentralization-in-all-the-things
-f_image:
+  editor of the Techdirt blog, about decentralization.
+author: "Mike Masnick"
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381fb068b055975a464f_013023-ffdw-mikemasnick.png
   alt: null
-updated-on: '2023-04-21T07:15:43.794Z'
-created-on: '2023-04-21T07:15:43.794Z'
-published-on: '2023-04-21T08:01:04.314Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:15:43.794Z"
+created-on: "2023-04-21T07:15:43.794Z"
+published-on: "2023-04-21T08:01:04.314Z"
 ---
 
-_This is a guest post by Mike Masnick, the founder and CEO of Floor64 and editor of the Techdirt blog. You can find a PDF of this essay_ [_here_](https://fil-foundation.on.fleek.co/hosting/Decentralization%20In%20All%20the%20Things.pdf)_._
+_This is a guest post by Mike Masnick, the founder and CEO of Floor64 and editor of the Techdirt blog. You can find a PDF of this essay [here](https://fil-foundation.on.fleek.co/hosting/Decentralization%20In%20All%20the%20Things.pdf)._
 
 We’re at an inflection point in the way we view society. We’ve been locked into industrial age views in an increasingly digital age. The economic and industrial policies of today are still tied to a world that existed over a century ago, and there are so many ways in which we can and should rethink them. This goes way beyond just planning for an ever-increasingly digital world: it means taking the lessons of what a digital world has taught us –– including upending some antiquated thinking about scarcity –– and applying it much more broadly to society.
 
@@ -38,7 +35,7 @@ Often, we see the pendulum swing between more centralized and decentralized worl
 
 Rather than focusing on making the world more decentralized or more centralized as a whole, this article proposes a better approach: understanding how to determine which things should be centralized and which should be decentralized, and how the two can actually complement each other, such that the benefits of each are available while the negatives are minimized.
 
-**_From interstate highways to the information superhighway_**
+## From interstate highways to the information superhighway
 
 A key contribution to the economic revolution that helped the American economic engine in the second half of the 20th century was the interstate highway system. While it took nearly half a century of political fighting to get it done, the economic benefit to America has been massive. The system cost approximately half a trillion dollars to build, but studies have shown that for every dollar spent on the interstate highway system, it has returned $6. By just about any measurement, as an investment in infrastructure, it has created massive positive returns for society.
 
@@ -68,7 +65,7 @@ The UK has implemented a similar framework, with some limitations, in which Brit
 
 Again, this further enables the benefits of both approaches. You don’t need inefficient and wasteful overbuilds of the infrastructure, but you get greater competition, innovation, and nimbleness for the consumers.
 
-**_Time to swing the pendulum back_**
+## Time to swing the pendulum back
 
 The keys to making this work are fairly straightforward: core infrastructure, preferably built on an open model or owned by no one as an open protocol, creates a standardized foundation. From there, you push the power to the ends, allowing lots of people to build on that foundation, enabling competition and innovation.
 
@@ -90,7 +87,7 @@ If you look through the development of Gmail, you can see the advantages. Even a
 
 Facebook, on the other hand, has the power to be much more aggressive in pushing its own decisions on users, even ones that are more questionable regarding user privacy. Yes, users may abandon the platform over the long run (some of which appears to finally be happening), but it’s a much slower process, and while it’s happening, users who abandon Facebook have to live without the content and communications on Facebook that their friends and family rely on.
 
-**_Towards a better, decentralized future._**
+## Towards a better, decentralized future
 
 It is, then, not difficult to envision a better world built on this model. Create the core infrastructure as a base. Make it a kind of open protocol. Enable others to build on that base to leverage the power of the standardized and connected infrastructure. Allow that experimentation and competition to drive new, different, and useful innovations.
 
@@ -100,7 +97,7 @@ It has created a whole new ecosystem of experimentation and learning that does n
 
 And that’s just one experiment. There are many more being worked on as we speak, often creating models that are even more decentralized and may prove even more interesting in the long run.
 
-**_Taking it back out of the internet_**
+## Taking it back out of the internet
 
 Early on in this piece we used the example of the interstate highway system, and how it acts as a kind of “protocol” that enables so much above and beyond it. You have local towns and cities that built their own roads and systems around the interstate highways. You have entrepreneurs and businesses that built up around the highways as well, and those who leveraged the highways to make other things possible, like the ability to ship goods across long distances quickly and efficiently.
 

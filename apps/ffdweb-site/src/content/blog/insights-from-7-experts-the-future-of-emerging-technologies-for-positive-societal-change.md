@@ -4,9 +4,9 @@ title: "Insights from 7 Experts: The Future of Emerging Technologies for
 created-on: 2024-02-22T18:09:50.533Z
 updated-on: 2024-02-22T18:09:50.550Z
 published-on: 2024-02-22T18:09:50.562Z
-f_post-date: 2024-02-22T18:09:50.572Z
-f_featured: false
-f_description: Artificial intelligence (AI) and decentralized technologies have
+post-date: 2024-02-22T18:09:50.572Z
+featured: false
+description: Artificial intelligence (AI) and decentralized technologies have
   reached a pivotal stage of development, permeating the fabric of daily life in
   our increasingly digital world. These rapidly evolving technologies,
   characterized by decentralized power structures and powered by troves of data,
@@ -14,15 +14,14 @@ f_description: Artificial intelligence (AI) and decentralized technologies have
   advancements will improve financial access for all, elevate productivity,
   catalyze economic expansion, embolden individuals across artistic and
   scientific domains, and potentially tackle formidable global challenges.
-f_image:
+image:
   url: /assets/images/022124-sis.png
   alt: Social Impact Summit 2024
-tags: blog
-layout: "[blog].html"
 date: 2024-02-22T18:09:50.583Z
 seo:
   noindex: false
-  twitter:title: "Insights from 7 Experts: The Future of Emerging Technologies for
+  twitter:title:
+    "Insights from 7 Experts: The Future of Emerging Technologies for
     Positive Societal Change"
   twitter:card: ""
   og:image: /assets/images/022124-sis.png
@@ -31,9 +30,10 @@ seo:
   title: "Insights from 7 Experts: The Future of Emerging Technologies for
     Positive Societal Change"
 ---
-* **Uncertainty lingers regarding the equitable distribution of benefits from decentralized and AI technologies.**
-* **Technology isn't just a random collection of isolated tools like blockchain, AI, and quantum; it's an interconnected ecosystem that shapes our world.** 
-* **The future of technology can still be a force for uplifting humankind and bettering the world, especially when paired with the right policies and laws, but we will only get there when we give sovereignty back to technology users.**
+
+- **Uncertainty lingers regarding the equitable distribution of benefits from decentralized and AI technologies.**
+- **Technology isn't just a random collection of isolated tools like blockchain, AI, and quantum; it's an interconnected ecosystem that shapes our world.** 
+- **The future of technology can still be a force for uplifting humankind and bettering the world, especially when paired with the right policies and laws, but we will only get there when we give sovereignty back to technology users.**
 
 Artificial intelligence (AI) and decentralized technologies have reached a pivotal stage of development, permeating the fabric of daily life in our increasingly digital world. These rapidly evolving technologies, characterized by decentralized power structures and powered by troves of data, are poised to revolutionize various sectors. Forecasts indicate that these advancements will improve financial access for all, elevate productivity, catalyze economic expansion, embolden individuals across artistic and scientific domains, and potentially tackle formidable global challenges.
 
@@ -71,4 +71,4 @@ Over the last few decades, online power has centralized. A handful of corporate 
 
 Technology isn't just a random collection of isolated tools like blockchain, AI, and quantum; it's an interconnected ecosystem that shapes our world. To drive meaningful change that benefits people, communities, and the planet, we must recognize this intersectionality. Approaching technology with a holistic mindset - always factoring in the human component - allows us to approach complex problems in ways that benefit all of us.
 
-Make sure to [register](https://www.blockchainlawsg.org/socialimpactsummit2024) for the upcoming **Social Impact Summit 2024**, hosted by [Filecoin Foundation for the Decentralized Web](https://ffdweb.org/) and [Blockchain Law for Social Good Center](https://www.blockchainlawsg.org/). Join us in person or virtually on February 27.
+Make sure to [register](https://www.blockchainlawsg.org/socialimpactsummit2024) for the upcoming **Social Impact Summit 2024**, hosted by [Filecoin Foundation for the Decentralized Web](/) and [Blockchain Law for Social Good Center](https://www.blockchainlawsg.org/). Join us in person or virtually on February 27.

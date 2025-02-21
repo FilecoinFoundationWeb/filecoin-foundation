@@ -44,4 +44,4 @@ Charles Cao, FilSwan’s founder, gave a speech on how to use FilSwan to impleme
 
 The cross-chain payment function of FilSwan’s core product Multi-Chain Storage (MCS) enables users to complete the storage and payment of files in the Filecoin network on the Polygon chain so that users can generate NFT assets with one click. In later stages, FilSwan will expand the implementation and application of functions in various fields including cross-chain resources, Data DAO, edge computing, , and fully serve the Web3 application layer.
 
-_Feeling FOMO? Watch all of the sessions on demand on the_ [_Fil Toronto 2022 playlist_](https://www.youtube.com/playlist?list=PLIaBaBnqVttsEKgeLV7MO3UTklqpt3Mmz) _on FilSwan’s YouTube page. And find us on_ [_Slack_](https://filecoin.io/slack) _to learn more about how you can get involved with the ecosystem._
+_Feeling FOMO? Watch all of the sessions on demand on the [Fil Toronto 2022 playlist](https://www.youtube.com/playlist?list=PLIaBaBnqVttsEKgeLV7MO3UTklqpt3Mmz) on FilSwan’s YouTube page. And find us on [Slack](https://filecoin.io/slack) to learn more about how you can get involved with the ecosystem._

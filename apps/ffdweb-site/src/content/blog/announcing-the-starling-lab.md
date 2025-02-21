@@ -1,26 +1,23 @@
 ---
-f_featured: false
-f_post-date: '2022-06-10T00:00:00.000Z'
+featured: false
+post-date: "2022-06-10T00:00:00.000Z"
 title: Announcing The Starling Lab
-f_description: >-
+description: >-
   The Filecoin Foundation for the Decentralized Web (FFDW) and Protocol Labs are
   thrilled to announce a multi-year commitment to The Starling Lab, a new
   research center tackling the technical and ethical challenges of establishing
   trust in the most sensitive digital records of our human history.
-f_author: Filecoin Foundation for the Decentralized Web
-slug: announcing-the-starling-lab
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423816edebc4ceb27492e7_starling-lab-image.jpeg
   alt: null
-updated-on: '2023-04-21T07:18:15.412Z'
-created-on: '2023-04-21T07:15:34.887Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/governance.md
-  - cms/tags/innovation.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:15.412Z"
+created-on: "2023-04-21T07:15:34.887Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - governance
+  - innovation
 ---
 
 [![Announcing The Starling Lab video preview image](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98b3638a0c3c5a6b8a19_hqdefault.jpeg)](https://www.youtube.com/watch?v=szltLBFoQg0)
@@ -39,17 +36,14 @@ Co-founded by USC Shoah Foundation and Stanford University’s Department of Ele
 
 To learn more, visit [starlinglab.org](http://starlinglab.org/).
 
-About The Starling Lab
-----------------------
+## About The Starling Lab
 
 The Starling Lab brings together a wide array of disciplines to meet the technical and ethical challenges of establishing trust in the most sensitive digital records of our human history. Co-founded by the USC Shoah Foundation and Stanford University’s Department of Electrical Engineering, The Starling Lab’s programs catalyze innovation and education of cryptographic methods and decentralized web protocols to advance human rights. With a bias to responsible action, The Lab’s prototypes will lead by example to show a bright path to deploy technology and methods that make the decentralized internet a viable platform for social impact.
 
-About the Filecoin Foundation for the Decentralized Web
--------------------------------------------------------
+## About the Filecoin Foundation for the Decentralized Web
 
 Filecoin is a peer-to-peer network designed to store humanity’s most important information. The Filecoin project has two related foundations, each with a unique mission related to its ecosystem, stewarding its governance, and promoting its mission of supporting the decentralized web. The Filecoin Foundation for the Decentralized Web (FFDW) is a charitable organization whose activities include building and supporting the decentralized web community, funding research and development, and educating the public about the decentralized web.
 
-About Protocol Labs
--------------------
+## About Protocol Labs
 
 Protocol Labs is an open-source research, development, and deployment laboratory. Our projects include [IPFS](https://ipfs.io/), [Filecoin](https://filecoin.io/), [libp2p](https://libp2p.io/), and many more. We aim to make human existence orders of magnitude better through technology. We are a fully distributed company. Our team of more than 100 members works remotely and in the open to improve the internet — humanity’s most important technology — as we explore new advances in computing and related fields.

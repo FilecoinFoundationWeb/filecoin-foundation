@@ -3,20 +3,19 @@ title: "FFDW and Sacred Stacks: Building Community with Decentralized Tools"
 created-on: 2023-05-30T09:57:39.743Z
 updated-on: 2023-05-30T09:57:00.000Z
 published-on: 2023-05-30T09:57:00.000Z
-f_post-date: 2023-05-30T09:57:00.000Z
-f_description: Can decentralization really help build community? And how can
+post-date: 2023-05-30T09:57:00.000Z
+description: Can decentralization really help build community? And how can
   healthier social relations emerge around our technology, particularly in terms
   of self-governance, autonomy, and accessibility?
-f_image:
+image:
   url: /assets/images/051723-ucboulder.png
-tags: blog
-layout: "[blog].html"
 date: 2023-05-30T09:57:00.000Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
+
 FFDW and Sacred Stacks: Building Community with Decentralized Tools
 
 As people continue to explore how decentralization could fundamentally change a wide range of industries, a debate has been growing among those in the artist, activist and community organizing ecosystem: Can decentralization really help build community? And how can healthier social relations emerge around our technology, particularly in terms of self-governance, autonomy, and accessibility?
@@ -29,13 +28,13 @@ According to Schneider, “**Sacred**” refers to the beating heart of any comm
 
 Sacred Stacks was established in early 2022 to better understand how we can intentionally organize our stacks around our communities and to explore how decentralized tools and self-governance practices can make these communities even stronger. An initial call for partner communities resulted in over 50 applications. The communities chosen to participate were:
 
-* **Iraqi Journalists Rights Association** (Baghdad, Iraq)
-* **Kibilio Community & Farm** (Western MA, USA)
-* **Meli Bees Network** (Barreirinha, Araribóia, Brazil and Berlin, Germany)
-* **Sans Souci Cooperative** (Boulder, CO, USA)
-* **Survivors Know** (Chicago, IL, USA)
-* **Unheard Voices Outreach** (Nashville, TN, USA)
-* **Yerba Buena Center for the Arts** (San Francisco, CA, USA)
+- **Iraqi Journalists Rights Association** (Baghdad, Iraq)
+- **Kibilio Community & Farm** (Western MA, USA)
+- **Meli Bees Network** (Barreirinha, Araribóia, Brazil and Berlin, Germany)
+- **Sans Souci Cooperative** (Boulder, CO, USA)
+- **Survivors Know** (Chicago, IL, USA)
+- **Unheard Voices Outreach** (Nashville, TN, USA)
+- **Yerba Buena Center for the Arts** (San Francisco, CA, USA)
 
 To make possible this exploration of emerging, decentralized technologies for activist communities, Sacred Stacks received support from the Filecoin Foundation for the Decentralized Web (FFDW), the Henry Luce Foundation, and the Sterling Lab.
 

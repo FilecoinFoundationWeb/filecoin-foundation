@@ -22,11 +22,13 @@ program:
       location: Denver, CO
       start-date: 2025-02-28
       external-link: https://lu.ma/gd767xu5
-      description: ​A community gathering for Filecoin builders and friends! Come for
+      description:
+        ​A community gathering for Filecoin builders and friends! Come for
         Filecoin corgis, stay for Filecoin friends.
     - title: L2 and Service Operator Colo. Hosted by Filecoin Foundation & FILOz
       location: Denver, CO
-      description: Filecoin Foundation & FILOz are bringing together key ecosystem
+      description:
+        Filecoin Foundation & FILOz are bringing together key ecosystem
         builders, founders, and biz dev leaders from February 23rd to 27th in
         Denver, Colorado for a FWS, Onramps, and Tooling Colo leading up to ETH
         Denver. The goal of this Colo is to further the work started in Bangkok
@@ -47,7 +49,8 @@ program:
         connect with top ecosystems, explore cutting-edge funding mechanisms,
         and scale your impact like never before."
       start-date: 2025-02-27
-    - title: Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
+    - title:
+        Executive Leaders Roundtable Luncheon. Hosted by DeStor and Filecoin
         Foundation
       location: Denver, CO
       description: An expert moderator will guide the knowledge-sharing event,
@@ -58,7 +61,8 @@ program:
     - title: Private Luncheon. Hosted by Storacha, Sponsored by Filecoin Foundation
       start-date: 2025-02-26
       location: Denver, CO
-      description: On February 26th, the Storacha Network is hosting an exclusive,
+      description:
+        On February 26th, the Storacha Network is hosting an exclusive,
         invite-only luncheon at ETHDenver, bringing together top developers,
         ecosystem partners, and web3 innovators for a curated networking
         experience. This private gathering is designed to foster meaningful
@@ -70,7 +74,8 @@ program:
         high-value experience for all participants.
     - title: Solana Speed by OFFLINE x Storacha | ETHDenver 2025
       start-date: 2025-02-26
-      description: Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
+      description:
+        Join OFFLINE x Storacha for Solana Speed at ETHDenver, featuring
         Backer/Builder matchmaking, crypto panels, and networking. Explore
         emerging trends, investment strategies, and the future of the Solana
         ecosystem, powered by CHOMP.
@@ -90,11 +95,13 @@ program:
         the potential applications for blockchain tools. This all comes against
         a backdrop of propaganda wars and severe financial constraints that have
         shrunken the ranks of professional journalists and eroded public trust.
-    - title: "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
+    - title:
+        "GLIF Pool Party: lendng and staking pool meetup, Sponsored by Filecoin
         Foundation"
       start-date: 2025-02-27
       location: Denver, CO
-      description: Join us at GLIF's Pool Party for a fun-filled evening with lending
+      description:
+        Join us at GLIF's Pool Party for a fun-filled evening with lending
         & staking pool founders, developers, and investors! Enjoy food, drinks,
         and watch DeFi protocols compete in a Pool tournament with over $1k in
         cash prizes.
@@ -103,7 +110,8 @@ program:
         Foundation
       start-date: 2025-02-26
       external-link: https://lu.ma/depin-denver
-      description: ​​​Join us for the all-day event full of vital conversations around
+      description:
+        ​​​Join us for the all-day event full of vital conversations around
         Decentralized Physical Infrastructure Networks. Connect with DePIN
         founders, researchers, developers and enthusiasts. Talks, panel
         discussions and useful networking are waiting for you during ETHDenver
@@ -114,7 +122,8 @@ schedule:
     - date: 2025-02-28
       events:
         - title: Demos and Dogfooding Workshop
-          description: The FF UX Improvement team conducts many ‘dogfooding’ reviews of
+          description:
+            The FF UX Improvement team conducts many ‘dogfooding’ reviews of
             sites, tools, and tutorials across the ecosystem. We see the same
             issues and patterns arising repeatedly - often from insufficient
             testing with the target audience, basic SEO/discoverability errors,
@@ -205,7 +214,8 @@ speakers:
 seo:
   twitter:
     card: summary
-  description: Join Filecoin at ETHDenver 2025 to explore cutting-edge blockchain
+  description:
+    Join Filecoin at ETHDenver 2025 to explore cutting-edge blockchain
     technology, network with industry leaders, and discover new opportunities in
     decentralized storage.
 ---

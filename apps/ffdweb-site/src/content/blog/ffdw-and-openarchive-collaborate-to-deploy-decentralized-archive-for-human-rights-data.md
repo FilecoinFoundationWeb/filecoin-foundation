@@ -1,10 +1,10 @@
 ---
-f_featured: false
-f_post-date: '2021-11-18T00:00:00.000Z'
+featured: false
+post-date: "2021-11-18T00:00:00.000Z"
 title: >-
   FFDW and OpenArchive Collaborate to Deploy Decentralized Archive for Human
   Rights Data
-f_description: >-
+description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
   award to OpenArchive, a nonprofit dedicated to advancing human rights by
   empowering people to collect, verify, and securely preserve mobile media using
@@ -12,22 +12,18 @@ f_description: >-
   support decentralized backends for the Save app. This will enable people on
   the ground capturing images and footage of world events to leverage IPFS and
   Filecoin and other decentralized storage options via their mobile device.
-f_author: Filecoin Foundation for the Decentralized Web
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382def619d14d6b54705_openarchive.png
   alt: null
-slug: >-
-  ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data
-updated-on: '2023-04-21T07:18:24.468Z'
-created-on: '2023-04-21T07:15:57.492Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/rights.md
-  - cms/tags/smartphones.md
-  - cms/tags/mobile-media.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:24.468Z"
+created-on: "2023-04-21T07:15:57.492Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - rights
+  - smartphones
+  - mobile-media
 ---
 
 ![ffdw and openarchive collaborate to deploy decentralized archive](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c1be93f295c8a42d6c_ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)
@@ -42,6 +38,4 @@ OpenArchive created and maintains [Save](https://open-archive.org/Save-Launch/),
 
 Additionally, as part of the award, OpenArchive will embark on a campaign to educate people and organizations around the world about the benefits of adopting decentralized storage protocols by equipping them with tools and educational resources. OpenArchive’s work will also focus on empowering at-risk communities to move away from the single-point-of-failure infrastructure that they rely on today.
 
-“Our mission is to permanently preserve humanity’s most important information,” said Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web. “We are proud to support OpenArchive’s work to preserve critical human rights data using the decentralized web.”
-
-Learn more about FFDW award programs [here](/awards)!
+> Our mission is to permanently preserve humanity’s most important information. We are proud to support OpenArchive’s work to preserve critical human rights data using the decentralized web. —Marta Belcher, board chair of the Filecoin Foundation for the Decentralized Web

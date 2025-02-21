@@ -1,21 +1,18 @@
 ---
-f_featured: false
-f_post-date: '2023-02-28T00:00:00.000Z'
-f_author: null
-title: 'The Future of Decentralized Apps: A Q&A with Guardian Project '
-f_description: >-
+featured: false
+post-date: "2023-02-28T00:00:00.000Z"
+author: null
+title: "The Future of Decentralized Apps: A Q&A with Guardian Project "
+description: >-
   A Q&A series with an FFDW project partner focusing on different aspects of the
   building blocks of the decentralized web
-f_image:
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383eef619d076eb5472e_0228-guardian-qa.png
   alt: null
-slug: the-future-of-decentralized-apps-a-q-a-with-guardian-project
-updated-on: '2023-04-21T07:16:14.499Z'
-created-on: '2023-04-21T07:16:14.499Z'
-published-on: '2023-04-21T08:01:04.314Z'
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:16:14.499Z"
+created-on: "2023-04-21T07:16:14.499Z"
+published-on: "2023-04-21T08:01:04.314Z"
 ---
 
 **The Future of Decentralized Apps: A Q&A with Guardian Project**
@@ -24,7 +21,7 @@ _A Q&A series with an FFDW project partner focusing on different aspects of the 
 
 With recent shake-ups at companies like Twitter, there has been increased awareness of centralized versus decentralized platforms and the benefits that decentralization can offer. For instance, the changes at Twitter led to [over a million new signups](https://twitter.com/joinmastodon/status/1591519312338210816) on Mastodon, a decentralized social media alternative. Yet, social media isn’t the only place where new use cases for decentralized technologies are emerging.
 
-To learn more about decentralized apps and what we can use them for, we turned to FFDW project partner Nathan Freitas, [Guardian Project](https://guardianproject.info/)’s Founder and Director. Guardian Project creates easy-to-use secure mobile apps, open-source software libraries, and customized solutions that can be used around the world by any person looking to protect their communications and personal data from unjust intrusion, interception, or monitoring. Their pioneering work in secure code for mobile devices has been utilized by the Tor Project, Signal, Facebook, and even Tencent. In 2021, FFDW announced [an award to Guardian Project](https://ffdweb.org/guardian-project-annoucement) to support their Decentralizing Veracity and Distribution (DVD) project.
+To learn more about decentralized apps and what we can use them for, we turned to FFDW project partner Nathan Freitas, [Guardian Project](https://guardianproject.info/)’s Founder and Director. Guardian Project creates easy-to-use secure mobile apps, open-source software libraries, and customized solutions that can be used around the world by any person looking to protect their communications and personal data from unjust intrusion, interception, or monitoring. Their pioneering work in secure code for mobile devices has been utilized by the Tor Project, Signal, Facebook, and even Tencent. In 2021, FFDW announced [an award to Guardian Project](/guardian-project-annoucement) to support their Decentralizing Veracity and Distribution (DVD) project.
 
 Read on for more insight into decentralized app alternatives, including what they are, common use cases, and what the future of decentralized technology might look like.
 

@@ -3,20 +3,19 @@ title: Recognizing Code as Speech is Vital
 created-on: 2023-10-18T18:44:40.679Z
 updated-on: 2023-10-18T18:44:40.685Z
 published-on: 2023-10-18T18:44:40.692Z
-f_issue: 1
-f_article: 8
-f_description: A more distributed web requires a global recognition that code is
+issue: 1
+: 8
+description: A more distributed web requires a global recognition that code is
   protected speech. Without it, our ability to build a decentralized world is
   greatly limited.
-f_image:
+image:
   url: /assets/images/DWD-Illustration-08.png
-f_author: Kurt Opsahl
-f_author-profile:
+author: Kurt Opsahl
+author-profile:
   url: /assets/images/dwd-profile-05.png
-f_author-bio: Kurt Opsahl works to help build the legal and policy space in
+author-bio: Kurt Opsahl works to help build the legal and policy space in
   which the decentralized web can thrive.
 tags: digest
-layout: "[digest].html"
 date: 2023-10-18T18:44:40.696Z
 seo:
   noindex: false
@@ -25,6 +24,7 @@ seo:
   title: "FFDW DWeb Digest: Recognizing Code as Speech is Vital"
   og:image: /assets/images/DWD-Illustration-08.png
 ---
+
 Strong protection for code as speech is **critical** to the development of software around the world, especially open-source projects essential for the distributed web, which rely on many authors and contributors to build, improve, and secure a codebase. These projects’ developers often consist of a community of volunteers, contributing to the project’s collective goal of building a better tool that aligns with their dream of designing a more equitable decentralized future.  
 
 If software regulations could easily impose restrictions on the developers, it might raise the daunting prospect of liability for contributing a pull request. This concern can be acute for decentralized projects, especially those providing privacy-enhancing technologies or open forums for communication.  Tools and services that are open and available to all, rejecting the compromise of a central entity to construct a walled garden around the space, can be used in ways that raise the authorities’ concerns. Without strong protections for code, governments would be tempted to reach the disfavored uses by going after the developers.
@@ -39,15 +39,15 @@ For advocates of decentralization, publishing code allows their expression to am
 
 This protection afforded by the recognition of code as speech will be fundamental to allowing new and exciting ideas the breathing space to thrive, especially ideas that a government may want to suppress, or software systems that a government may want to co-opt by compelling certain code that is more to its liking.
 
-To many it may now seem obvious that code should be protected from censorship or restrictions on distribution, but it was not immediately recognized by the law. Courts first recognized code as speech at the tail end of the last millennium in *[Bernstein v. U.S. Dep’t of State](https://scholar.google.com/scholar_case?case=114991681069810012)*, a case brought by cryptographer Daniel J. Bernstein that challenged restrictions on the export of cryptography from the United States. Bernstein sought to publish an academic paper and, critically, the associated source code for Snuffle, an open-source encryption system.
+To many it may now seem obvious that code should be protected from censorship or restrictions on distribution, but it was not immediately recognized by the law. Courts first recognized code as speech at the tail end of the last millennium in _[Bernstein v. U.S. Dep’t of State](https://scholar.google.com/scholar_case?case=114991681069810012)_, a case brought by cryptographer Daniel J. Bernstein that challenged restrictions on the export of cryptography from the United States. Bernstein sought to publish an academic paper and, critically, the associated source code for Snuffle, an open-source encryption system.
 
-However, at the time, cryptography was thought of as a *dual use* military technology, and U.S regulations barred its export like a tank or military grade avionics, and this included publishing it for free on the web. That is, unless Bernstein registered for a license like he was an arms dealer, then he would likely get denied because Snuffle offered more cryptographic protection than the U.S. would allow.
+However, at the time, cryptography was thought of as a _dual use_ military technology, and U.S regulations barred its export like a tank or military grade avionics, and this included publishing it for free on the web. That is, unless Bernstein registered for a license like he was an arms dealer, then he would likely get denied because Snuffle offered more cryptographic protection than the U.S. would allow.
 
 With the help of Electronic Frontier Foundation attorneys, Bernstein’s case established that code was protected speech. Judge Patel explained why the First Amendment protects code, recognizing that there was:
 
-> no meaningful difference between computer language, particularly high-level languages …, and German or French … Like music and mathematical equations, computer language is just that, language, and it communicates information either to a computer or to those who can read it. ... source code is speech.  
+> No meaningful difference between computer language, particularly high-level languages …, and German or French … Like music and mathematical equations, computer language is just that, language, and it communicates information either to a computer or to those who can read it. ... source code is speech.  
 
-A few years later, the Sixth Circuit Court of Appeal (one of the United States mid-level appeals courts) agreed, observing in *[Junger v. Daley](https://scholar.google.com/scholar_case?case=2653838863893184007)* that code, like a written musical score, “is an expressive means for the exchange of information and ideas.” Both courts recognized that the protected expression in code was not just found in the artfulness and advocacy in its human readable source, but also embodied in the executable ones and zeros of the object code.  Speech can be both expressive and functional — indeed, the functionality is often the fundamental point of the software’s expression. 
+A few years later, the Sixth Circuit Court of Appeal (one of the United States mid-level appeals courts) agreed, observing in _[Junger v. Daley](https://scholar.google.com/scholar_case?case=2653838863893184007)_ that code, like a written musical score, “is an expressive means for the exchange of information and ideas.” Both courts recognized that the protected expression in code was not just found in the artfulness and advocacy in its human readable source, but also embodied in the executable ones and zeros of the object code.  Speech can be both expressive and functional — indeed, the functionality is often the fundamental point of the software’s expression. 
 
 While the protection of the First Amendment is critical, it is not an absolute bar to the United States government regulating software. Rather, the U.S. Constitution requires that the government show that laws which purport to regulate expressive code pass judicial “scrutiny.” The court looks to the extent the restriction is based on the software’s communicative content, and balances that against the government’s asserted interest. The more the American government seeks to control content and expression, the less likely the regulation will be upheld.  
 

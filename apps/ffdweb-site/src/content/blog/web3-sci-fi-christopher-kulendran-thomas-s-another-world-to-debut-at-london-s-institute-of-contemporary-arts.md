@@ -1,31 +1,27 @@
 ---
-f_featured: false
-f_post-date: '2022-09-23T00:00:00.000Z'
-f_author: null
+featured: false
+post-date: "2022-09-23T00:00:00.000Z"
+author: null
 title: >-
   Web3 Sci-Fi: Christopher Kulendran Thomas's 'Another World' to Debut at
   London's Institute of Contemporary Arts
-f_description: >-
+description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) and the Institute of
   Contemporary Arts (ICA) London today announced that Christopher Kulendran
   Thomas's latest exhibition, Another World, will debut at the ICA on October
-  11. 
-slug: >-
-  web3-sci-fi-christopher-kulendran-thomas-s-another-world-to-debut-at-london-s-institute-of-contemporary-arts
-f_image:
+  11.
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383fef619d8564b54739_ckt-ffdw-ica.png
   alt: null
-updated-on: '2023-04-21T07:18:36.074Z'
-created-on: '2023-04-21T07:16:15.905Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/another-world.md
-  - cms/tags/frieze-week.md
-  - cms/tags/the-finesse.md
-  - cms/tags/contemporary-art.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:36.074Z"
+created-on: "2023-04-21T07:16:15.905Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - another-world
+  - frieze-week
+  - the-finesse
+  - contemporary-art
 ---
 
 _In his latest exhibition, internationally renowned artist Christopher Kulendran Thomas explores a vision of a future beyond nation-states, based on a new internet built and owned by its users_
@@ -50,7 +46,7 @@ A talks program will accompany _Another World_, developed in conjunction with KW
 
 _Another World_ by Christopher Kulendran Thomas is initiated by Stefan Kalmár, produced in partnership with Kunsthalle Zürich and KW Institute for Contemporary Art, Berlin and realized with the generous support of Filecoin Foundation and Filecoin Foundation for the Decentralized Web, Medienboard Berlin-Brandenburg, the Graham Foundation for Advanced Studies in Fine Arts and Henry Moore Foundation with additional support from Adam Hall Group. With special thanks to Samir Bantal, OMA|AMO, RadicalxChange Foundation and satis&fy.
 
-To learn more, [https://www.ica.art/](https://www.ica.art/ "https://www.ica.art/")
+To learn more, [ica.art/](https://www.ica.art/)
 
 **About Christopher Kulendran Thomas**
 

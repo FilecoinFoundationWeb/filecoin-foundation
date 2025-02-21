@@ -12,7 +12,8 @@ image:
 seo:
   twitter:
     card: summary
-  description: The latest APAC Ask Me Anything (AMA), held on November 21, brought
+  description:
+    The latest APAC Ask Me Anything (AMA), held on November 21, brought
     together more than 70 participants, including many Storage Providers (SPs),
     for a deep dive into the Filecoin ecosystem.
 ---

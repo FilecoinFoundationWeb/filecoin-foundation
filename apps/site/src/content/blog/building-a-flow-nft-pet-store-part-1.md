@@ -209,8 +209,8 @@ This dictionary stores the NFTs for this collection by mapping the ID to NFT res
 
 In the contructor method, `init()`, we instantiate the `ownedNFTs` with an empty dictionary. A resource also needs a `destroy()` destructor method to make sure it is being freed.
 
-> _💡 Nested Resource_
-> A [_composite structure_](https://docs.onflow.org/cadence/language/composite-types/) including a dictionary can store resources, but when they do they will be treated as resources. Which means they need to be moved rather than assigned and their type will be annotated with `@`.
+> 💡 Nested Resource
+> A [composite structure](https://docs.onflow.org/cadence/language/composite-types/) including a dictionary can store resources, but when they do they will be treated as resources. Which means they need to be moved rather than assigned and their type will be annotated with `@`.
 
 The `withdraw(id: UInt64): @NFT` method removes an NFT from the collection's `ownedNFTs` array and return it.
 
@@ -262,7 +262,7 @@ This namespace is accessible by all accounts that interact with the contract.
 
 In our previous code, we created an `@NFTCollection` instance for our own account and saved it to the `/storage/NFTCollection` namespace. The path following the first namespace is arbitrary, so we could have named it `/storage/my/nft/collection`. Then, something odd happened as we "link" a [reference](https://docs.onflow.org/cadence/language/) to the `@NFTReceiver` capability from the `/storage` domain to `/public`. The caret pair `<` and `>` was used to explicitly annotate the type of the reference being linked, `&{NFTReceiver}`, with the `&` and the wrapping brackets `{` and `}` to define the _unauthorized reference_ type (see [References](https://docs.onflow.org/cadence/language/) to learn more). Last but not least, we created the `@NFTMinter` instance and saved it to our account's `/storage/NFTMinter` domain.
 
-> _For a deep dive into storages, check out_ [_Account Storage_](https://docs.onflow.org/cadence/tutorial/02-hello-world/#account-filesystem-domain-structure-where-can-i-store-my-stuff)_._
+_For a deep dive into storages, check out [Account Storage](https://docs.onflow.org/cadence/tutorial/02-hello-world/#account-filesystem-domain-structure-where-can-i-store-my-stuff)._
 
 As we wrap up our `PetStore` contract, let's try to deploy it to the Flow emulator to verify the contract. Start the emulator by typing `flow emulator` in your shell.
 
@@ -276,8 +276,8 @@ Open up a new shell, making sure you are inside the project directory, then type
 
 Congratulations! You have learned how to write and deploy your first smart contract.
 
-> _⚠️ Oops! That didn’t work_
-> Check `flow.json` configuration and make sure the [_path to the contract_](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#project-structure) is correct.
+> ⚠️ Oops! That didn’t work
+> Check `flow.json` configuration and make sure the [path to the contract](https://dev.to/pancy/building-a-flow-nft-pet-store-part-1-4bn9#project-structure) is correct.
 
 ## `MintToken` transaction
 

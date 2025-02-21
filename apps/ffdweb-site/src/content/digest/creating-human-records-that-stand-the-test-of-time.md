@@ -3,20 +3,19 @@ title: Creating Human Records that Stand the Test of Time
 created-on: 2023-10-16T17:14:41.944Z
 updated-on: 2023-10-16T17:14:41.951Z
 published-on: 2023-10-16T17:14:41.958Z
-f_issue: 1
-f_article: 3
-f_description: How blockchains are preserving evidence for the long term
-f_image:
+issue: 1
+: 3
+description: How blockchains are preserving evidence for the long term
+image:
   url: /assets/images/DWD-Illustration-03.png
-f_author: Adam Rose and Basile Simon
-f_author-profile:
+author: Adam Rose and Basile Simon
+author-profile:
   url: /assets/images/dwd-profile-10.png
-f_author-bio: Adam Rose is the chief operating officer at Starling Lab, and
+author-bio: Adam Rose is the chief operating officer at Starling Lab, and
   serves as press rights chair for the Los Angeles Press Club. Basile Simon
   leads the Lab’s research in law and criminal accountability, and is co-founder
   and advisor to Airwars. Both have spent most of their careers in journalism.
 tags: digest
-layout: "[digest].html"
 date: 2023-10-16T17:14:41.964Z
 seo:
   noindex: false
@@ -25,6 +24,7 @@ seo:
   title: "FFDW DWeb Digest: Creating Human Records that Stand the Test of Time"
   og:image: /assets/images/DWD-Illustration-03.png
 ---
+
 As business rivalries go, the story of Suen-nada and Ennum-Ashur was pretty routine. They both claimed ownership of valuable intellectual property, wrestled over control of accounts, and accused each other of theft.
 
 Their case went to court. Witnesses were present. Testimony was delivered and became crucial evidence.
@@ -32,8 +32,6 @@ Their case went to court. Witnesses were present. Testimony was delivered and be
 A fire burned down their Assyrian colony in 1836 B.C., but a record of their testimony survived and is now [available for review at The Metropolitan Museum of Art in New York](https://www.metmuseum.org/art/collection/search/325846).
 
 ![](/assets/images/main-image.jpeg)
-
-
 
 We know about the trial because, thousands of years ago, the world’s most advanced technologists figured out how to use a crude implement to etch markings into stone and clay. This data storage breakthrough would be used to record crop yields, trades, weddings, births, deaths, wars, legends, and other data that was critical to evolving human civilization. 
 

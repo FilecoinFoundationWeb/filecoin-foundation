@@ -3,24 +3,23 @@ title: The Starling Lab Framework
 created-on: 2024-03-06T16:46:52.600Z
 updated-on: 2024-03-06T16:46:52.611Z
 published-on: 2024-03-06T16:46:52.620Z
-f_post-date: 2024-03-06T16:46:52.626Z
-f_featured: false
-f_description: "Starling Lab develops technology and protocols for digital
+post-date: 2024-03-06T16:46:52.626Z
+featured: false
+description: "Starling Lab develops technology and protocols for digital
   records that can establish provenance and authenticity, using a framework of
   Capture, Store, Verify with fellows and collaborators in journalism, law,
   history, and technology. The purpose of its work is to establish trust in
   digital assets such as photographs, websites, audio, and video. "
-f_image:
+image:
   url: /assets/images/081123-starling-1.png
-tags: blog
-layout: "[blog].html"
 date: 2024-03-06T16:46:52.633Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
-*This is a guest post from FFDW project partner Starling Lab, written by Lindsay Walker and edited by Adam Rose.* 
+
+_This is a guest post from FFDW project partner Starling Lab, written by Lindsay Walker and edited by Adam Rose._
 
 The internet and related technologies have brought about a new structure to the “reality” that we perceive –  and the way we interact with that reality. The internet enables people to instantly find information, communicate, and even publish on a global scale. New opportunities and challenges are constantly arising as humankind continues to develop technologies that empower worldwide connection. Starling Lab aims to address challenges related to trust in digital records.
 
@@ -54,7 +53,7 @@ Our approach is inspired by the philosophy of Privacy-by-Design and the Fair Inf
 
 Authenticity-by-Design calls for a similar approach to information integrity to ensure provenance data is created and preserved throughout the entire lifecycle of a digital media asset. This is a crucial building block underpinning the Starling Framework for Data Integrity. The principles include integrity, privacy, verifiability, persistence, and accountability.
 
-Starling Lab believes that every piece of digital content should include a signal of its trustworthiness, be embedded or displayed with information that allows audiences to judge the trustworthiness of that content, and be preserved with redundant copies in resilient systems.  
+Starling Lab believes that every piece of digital content should include a signal of its trustworthiness, be embedded or displayed with information that allows audiences to judge the trustworthiness of that content, and be preserved with redundant copies in resilient systems. 
 
 Any piece of digital content we publish has a digitally-signed and tamper-evident data structure that can be validated. We also take care to ensure creators and publishers of digital content are informed of how an asset could be misused and empowered to mitigate harm by controlling which provenance data is made public. 
 
@@ -84,7 +83,7 @@ The Starling Integrity Pipeline is a storage workflow that processes assets such
 
 ![Award-winning and Emmy-nominated journalism, The DJ and the War Crimes from Rolling Stone and Starling Lab](/assets/images/012923-starling.png)
 
-Starling Lab embraces a distinctly human *and* digital approach to verification. Our workflows capture the attestations of both experts and the people who were there when an asset was created, allowing audiences a better opportunity to evaluate the evidence for themselves.
+Starling Lab embraces a distinctly human _and_ digital approach to verification. Our workflows capture the attestations of both experts and the people who were there when an asset was created, allowing audiences a better opportunity to evaluate the evidence for themselves.
 
 A collaboration between Starling Lab and [Numbers Protocol](https://www.numbersprotocol.io/) with the [Mom I See War](https://www.misw.org/) collections demonstrates the use of Web3 technologies including IPFS, Filecoin, and registration on the NEAR blockchain. Explore the collection using [Numbers Explorer](https://verify.numbersprotocol.io/asset-profile/1709746624212x390139549239738400?nid=bafkreicmjmzr4l44iyytetlgnjxoizhu3snieuavqfre4tr6inxh4wkdwy) to see the archive and registrations, as well as the images injected with C2PA metadata, which enables tracking changes and establishing the provenance if edits are made with Photoshop. 
 

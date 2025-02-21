@@ -18,7 +18,7 @@ seo:
     mission, and roadmap for the initiative.
 ---
 
-_This post is also available on the_ [_Filecoin Plus Medium_](https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456)_._
+_This post is also available on the [Filecoin Plus Medium](https://medium.com/filecoin-plus/announcing-the-quality-phase-for-filecoin-plus-2890a9797456)._
 
 The Filecoin Plus program has been in operation for over 2 years now, and has recently crossed over 700PiB of data onboarded through verified deals, constituting approximately 5% of total network capacity! At this time, we have over 550 large dataset applications representing open datasets (e.g., NASA, NOAA, Brazil Data Cube), onramps for decentralized data onboarding (e.g., FilSwan, FileDrive, Estuary, Web3.Storage), and commercial & academic projects (e.g., Internet Archive, USC Shoah Foundation, CERN).
 

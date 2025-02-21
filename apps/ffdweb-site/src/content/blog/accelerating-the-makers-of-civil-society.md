@@ -3,17 +3,16 @@ title: Accelerating the Makers of Civil Society
 created-on: 2023-05-18T10:01:01.297Z
 updated-on: 2023-05-18T10:01:00.000Z
 published-on: 2023-05-18T10:01:00.000Z
-f_post-date: 2023-05-18T10:01:00.000Z
-f_image:
+post-date: 2023-05-18T10:01:00.000Z
+image:
   url: /assets/images/051723-techsoup.png
-tags: blog
-layout: "[blog].html"
 date: 2023-06-22T10:01:01.367Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
+
 **By Marnie Webb, Chief Community Impact Officer, TechSoup**
 
 TechSoup has been working with civil society organizations of all sizes, all mission areas, and in all parts of the world, for more than 30 years. As a result, we know that innovating with even well-established technology is difficult for many — much less emerging tech solutions built on the decentralized web (DWeb). With often limited time, training, and resources, most organizations will always make the choice in favor of providing service to the people around them.
@@ -24,7 +23,7 @@ That's why, with the support of the Filecoin Foundation for the Decentralized We
 
 We're doing this work because we believe that organizations can better tackle the existential threats to humanity with the development of innovative, built-for-purpose technology tools. With its lack of a single point of control — or failure — DWeb technology is well suited to meet the messy, pluralistic nature of civil society head on.
 
-## [](https://ffdweb.org/accelerating-the-makers-of-civil-society#introducing-civil-society-organizations-to-dweb-technology-and-vice-versa)Introducing Civil Society Organizations to DWeb Technology (and Vice Versa)
+## Introducing Civil Society Organizations to DWeb Technology (and Vice Versa)
 
 Accelerating Makers will connect emerging DWeb tools and the needs of civil society to one another. We will bring community members together in a space that celebrates the expertise of both groups. And, we will provide insight and support to foundations and other potential funders in order to bring financial support to public good technology projects built on DWeb technology.
 
@@ -42,7 +41,7 @@ This is the first of many events and actions that we'll be taking to achieve the
 
 Bringing these two groups together in meaningful ways is the heart of the Accelerating Makers project. Among the end results of these efforts will be 15 Maker-developed DWeb solutions available for donation on the TechSoup marketplace. But beyond that, we'll produce research studies, fundraising templates, and other resources to help us collectively meet our specific goals.
 
-## [](https://ffdweb.org/accelerating-the-makers-of-civil-society#why-the-dweb-matters-to-civil-society)Why the DWeb Matters to Civil Society
+## Why the DWeb Matters to Civil Society
 
 All of this means a significant increase in the supply of digital solutions for civil society at large.
 
@@ -50,11 +49,11 @@ But this is where the shared values of civil society and the DWeb movement come 
 
 Like FFDW, Accelerating Makers is defined by its commitment to collaborative and open-source education, research, and development. Together, we can bring to bear new solutions that can have a transformative influence on the way civil society organizes itself around the world's most pressing issues.
 
-## [](https://ffdweb.org/accelerating-the-makers-of-civil-society#how-you-can-get-involved)How You Can Get Involved
+## How You Can Get Involved
 
 We will have more to share soon. In the meantime, you can participate in this project in the following ways:
 
-* [Download our first explainer](https://page.techsoup.org/explainer-what-is-the-decentralized-web), "What Is the Decentralized Web?" By providing your contact information, you'll be notified of upcoming Accelerating Makers events and project updates.
-* We'd also love to hear what you would like to see in this project moving forward. You can email us directly at [makerlabs@techsoup.org](mailto:makerlabs@techsoup.org).
+- [Download our first explainer](https://page.techsoup.org/explainer-what-is-the-decentralized-web), "What Is the Decentralized Web?" By providing your contact information, you'll be notified of upcoming Accelerating Makers events and project updates.
+- We'd also love to hear what you would like to see in this project moving forward. You can email us directly at [makerlabs@techsoup.org](mailto:makerlabs@techsoup.org).
 
 We have a lot of work to do. Let's get started.

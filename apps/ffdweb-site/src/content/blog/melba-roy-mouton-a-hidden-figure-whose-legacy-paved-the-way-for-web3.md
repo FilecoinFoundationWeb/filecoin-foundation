@@ -1,33 +1,28 @@
 ---
-f_featured: false
-f_post-date: '2021-06-01T00:00:00.000Z'
-title: 'Melba Roy Mouton: A ''Hidden Figure'' Whose Legacy Paved the Way for Web3'
-f_description: >-
+featured: false
+post-date: "2021-06-01T00:00:00.000Z"
+title: "Melba Roy Mouton: A 'Hidden Figure' Whose Legacy Paved the Way for Web3"
+description: >-
   Melba Roy Mouton was a statistician and computer scientist whose contributions
   to the scientific community during her tenure at NASA not only shaped modern
   programming uses and documentation practices, but also how it is taught to
   future generations.
-f_author: Filecoin Foundation for the Decentralized Web
-slug: melba-roy-mouton-a-hidden-figure-whose-legacy-paved-the-way-for-web3
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
   alt: null
-updated-on: '2023-04-21T07:18:34.828Z'
-created-on: '2023-04-21T07:16:12.922Z'
-published-on: '2023-04-21T08:01:04.314Z'
+updated-on: "2023-04-21T07:18:34.828Z"
+created-on: "2023-04-21T07:16:12.922Z"
+published-on: "2023-04-21T08:01:04.314Z"
 f_recommended-posts: []
-layout: '[blog].html'
-tags: blog
 ---
 
-Early Life
-----------
+## Early Life
 
 Born in [Fairfax, VA](https://www.washingtonpost.com/archive/local/1990/06/29/william-davies-retired-us-geological-official-dies/7dba2dd4-a762-4d89-bd96-e98612a579d4/) in 1929, Mouton studied math at Howard University, where she received a Bachelor’s and a Master’s degree in Mathematics. After graduation, she began a career focused in applied mathematics, starting with [statistical analysis](https://massivesci.com/articles/science-heroes-melba-roy-mouton-nasa/) in the Army Map Service and the Census Bureau. In this position, she analyzed large data sets from the U.S. Census, and assisted the US government in plotting future neighborhoods and population centers.
 
-NASA Career
------------
+## NASA Career
 
 After four years at the Army Map Service and Census Bureau, Mouton moved over to NASA, where spent the last 14 years of her career. At NASA, Mouton applied her expertise in statistical analysis to reporting and tracking space crafts. Her first major project was tracking [Echo 1](https://web.archive.org/web/20100527211747/http:/samadhi.jpl.nasa.gov/msl/QuickLooks/echoQL.html), one of the first satellites to successfully launch into orbit.
 
@@ -37,8 +32,7 @@ Tracking these space crafts was [extremely challenging work](https://www.nasa.go
 
 Physicist and NASA post-doc Chandra Prescod-Weinstein [once described](https://www.nasa.gov/sites/default/files/atoms/files/goddardviewv13i1online.pdf) Mouton’s work as “extremely intense,” explaining “When we launch satellites into orbit, there are a lot of things to keep track of. We have to ensure that gravitational pull from other bodies, such as other satellites, the moon, etc., don’t perturb and destabilize the orbit. These are extremely hard calculations to do even today, even with a machine-computer.”
 
-Mouton’s Contribution to the Decentralized Web
-----------------------------------------------
+## Mouton’s Contribution to the Decentralized Web
 
 Mouton’s ability to synthesize different data formats in this initial project led to additional projects [adapting](https://massivesci.com/articles/science-heroes-melba-roy-mouton-nasa/) early computer programming languages, like [APL](https://ntrs.nasa.gov/api/citations/19690020561/downloads/19690020561.pdf), for use in deploying multiple machines to process large data sets simultaneously. Her mastery of these languages was so widely recognized at NASA that [she became a coding instructor at NASA](https://ntrs.nasa.gov/api/citations/19690020561/downloads/19690020561.pdf), training other scientists in how to develop and document various programs to further space exploration research efforts through classes and seminars. In fact, her seminars and documented research on early, [statistically-typed](https://en.wikipedia.org/wiki/Category:Statically_typed_programming_languages) programming languages created a [body of work within NASA](https://ntrs.nasa.gov/citations/19730010487) that served as a key precursor to current programming languages like [Solidity and Rust](https://web3.foundation/about/) that power decentralized development on web3 platforms.
 

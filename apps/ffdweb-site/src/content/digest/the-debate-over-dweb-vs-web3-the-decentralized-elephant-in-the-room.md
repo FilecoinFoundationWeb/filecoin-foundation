@@ -3,21 +3,20 @@ title: The Debate Over DWeb vs. Web3 & The Decentralized Elephant in the Room
 created-on: 2023-10-16T17:27:25.370Z
 updated-on: 2023-10-16T17:27:25.377Z
 published-on: 2023-10-16T17:27:25.385Z
-f_issue: 1
-f_article: 4
-f_description: What matters in this discussion – in any discussion about
+issue: 1
+: 4
+description: What matters in this discussion – in any discussion about
   technology, really – is who’s designing it, who controls it, and who stands to
   benefit?
-f_image:
+image:
   url: /assets/images/DWD-Illustration-04.png
-f_author: Mai Ishikawa Sutton
-f_author-profile:
+author: Mai Ishikawa Sutton
+author-profile:
   url: /assets/images/dwd-profile-03.png
-f_author-bio: Mai Ishikawa Sutton is a senior organizer with DWeb projects,
+author-bio: Mai Ishikawa Sutton is a senior organizer with DWeb projects,
   co-founder of Distributed.Press and COMPOST magazine, and contributor to Hypha
   Worker Co-op.
 tags: digest
-layout: "[digest].html"
 date: 2023-10-16T17:27:25.391Z
 seo:
   noindex: false
@@ -27,6 +26,7 @@ seo:
     Elephant in the Room"
   og:image: /assets/images/DWD-Illustration-04.png
 ---
+
 This article started off as one that would delineate the difference between the terms “DWeb” (as in decentralized Web) and “Web3” (as in Web 3.0). It seemed like a useful exercise to tease out the communities that implicitly or explicitly support these terms. But the more I dug into it, the more I realized this wasn’t that interesting in itself.
 
 The disagreement over these labels, and what is even included in the purview of each, felt like a distraction from what’s actually being negotiated as people define and claim allegiance to DWeb or Web3. What matters in this discussion — in any discussion about technology, really — is who’s designing it, who controls it, and who stands to benefit?
@@ -41,7 +41,7 @@ I’m fairly confident that how I’ve described these terms so far wouldn’t b
 
 Though it was popularized by Gavin Wood, co-founder of Ethereum and Polkadot, the term Web3 was already used to describe a future semantic Web — where all linked data is machine-readable, shareable, and reusable across the Web. Under the World Wide Web Consortium’s definition of a “semantic Web,” which was then synonymous with “Web 3.0,” there were several types of web standards that existed that would enable this kind of “Web of data” including Extensible Markup Language (XML) and Web Ontology Language (OWL).
 
-Nowadays, though, Web3 has come to signal something more specific: protocols and platforms that involve blockchain and distributed ledger technologies, including cryptocurrencies. Based on an overview of [some](https://web3isgoinggreat.com/what)  [mainstream](https://www.wired.com/story/web3-gavin-wood-interview/) [definitions](https://slate.com/technology/2021/11/web3-explained-crypto-nfts-bored-apes.html), it has largely become a buzzy marketing term meant to signal that a project is part of a new phase in the evolution of the Web (even [Twitter founder Jack Dorsey thinks it’s a buzzword](https://www.cnbc.com/2021/12/21/elon-musk-and-jack-dorsey-are-talking-about-web3-heres-why.html)). The word itself points to its temporality — it’s the next thing after “Web 2.0” — and is a sign of being part of an inevitable progression of the World Wide Web.
+Nowadays, though, Web3 has come to signal something more specific: protocols and platforms that involve blockchain and distributed ledger technologies, including cryptocurrencies. Based on an overview of [some](https://web3isgoinggreat.com/what) [mainstream](https://www.wired.com/story/web3-gavin-wood-interview/) [definitions](https://slate.com/technology/2021/11/web3-explained-crypto-nfts-bored-apes.html), it has largely become a buzzy marketing term meant to signal that a project is part of a new phase in the evolution of the Web (even [Twitter founder Jack Dorsey thinks it’s a buzzword](https://www.cnbc.com/2021/12/21/elon-musk-and-jack-dorsey-are-talking-about-web3-heres-why.html)). The word itself points to its temporality — it’s the next thing after “Web 2.0” — and is a sign of being part of an inevitable progression of the World Wide Web.
 
 Reflecting on the term Web3, [Evgeny Morozov points out](https://the-crypto-syllabus.com/web3-a-map-in-search-of-territory/) that while its proponents evoke it as a revolutionary new phase of the web, they rarely (if ever) address fundamental issues of power that made the old web toxic. He writes that many Web3 advocates are adversarial towards “Web 2.0” projects for their monopolistic control over user data. Yet despite Web3 products’ core offering of enabling end-users to own their digital assets, most don’t engage with the underlying political economy that fundamentally shapes the priorities and incentives of these tools. For one, Evgeny notes that many of the VC investors who are salivating over the profitability of Web3 ventures are the same characters who were behind funding and shaping the most disastrous, centralized “Web 2.0” companies.
 
@@ -51,7 +51,7 @@ Jay is saying that it isn’t exclusively new tech that holds the potential to u
 
 As Evgeny would point out, what’s the narrative that this is playing into? Are the problems that plague the Web purely technical? If sufficiently decentralized, will these technologies fix all that ails us? There’s a major oversight when one focuses solely on the technical affordances that were available at each stage of the Web, and points to them as fatal flaws. It strongly implies that all we need to do for this new Web to work in the long run is to just code our way to the right systems. Instead, the true issue at hand is: How do we architect those systems to reflect the complexities of diverse human interaction and need in distributed, digitally-mediated contexts?
 
-![](https://lh5.googleusercontent.com/ekP1QA4z9yyVH9llB_UXGk5BkCambYhFz11g01GYDZJN0hvG2p2dwAVGLyBaypzLGk4pF_T2aR2_5SnvtwbxAnMVrBtTTkSo3aK22ffU-DYiQYCGcqqkqjVVVORtAthJSljojjFOXuALdA98MQcfz3s)*This is a screenshot of a Google Trends search of the terms comparing Web3 (blue) and DWeb (red) made on April 30, 2023.*
+![](https://lh5.googleusercontent.com/ekP1QA4z9yyVH9llB_UXGk5BkCambYhFz11g01GYDZJN0hvG2p2dwAVGLyBaypzLGk4pF_T2aR2_5SnvtwbxAnMVrBtTTkSo3aK22ffU-DYiQYCGcqqkqjVVVORtAthJSljojjFOXuALdA98MQcfz3s)_This is a screenshot of a Google Trends search of the terms comparing Web3 (blue) and DWeb (red) made on April 30, 2023._
 
 ## DWeb: An Evolving Web
 
@@ -61,7 +61,7 @@ One of the loudest advocates of this term is the Internet Archive, which has bee
 
 ![screen cap of nathan schnieder tweet](https://lh5.googleusercontent.com/mZ10MYRBYgcY6il30Dj6-5_Bn8fWgM1f8o6FS5wvioZqEuI79iU3gnmUKiHzFtLX3xNU3QlNDwQ6NyTYugmsS1XPVPvxWMtGE0KYnwfL10YBZIF8zHyBWm4YYc2a_SwAqM6gOyCJYYzFZlWEw-eWeDI)
 
-*[Image source](https://twitter.com/ntnsndr/status/1473175265534636033)*
+_[Image source](https://twitter.com/ntnsndr/status/1473175265534636033)_
 
 I should disclose that I have been a core member of the Internet Archive’s DWeb Projects team for the last few years. As part of this work, through collaboration with several dozen stakeholders, I co-stewarded the process to define the five overarching principles: Technology for Human Agency, Distributed Benefits, Mutual Respect, Humanity, and Ecological Awareness. Our aim was to put a stake in the ground and affirm the values of those building alternative network infrastructure. Instead of merely being not centralized, we wanted to define what it was that we stood for.
 

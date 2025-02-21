@@ -1,22 +1,20 @@
 ---
-title: " How to Make an Impact on Tech Policy: A Q&A with Travis Moore, Founder
-  of TechCongress "
+title: "How to Make an Impact on Tech Policy: A Q&A with Travis Moore, Founder of TechCongress"
 created-on: 2023-08-16T18:51:13.562Z
 updated-on: 2023-08-16T18:51:13.580Z
 published-on: 2023-08-16T18:51:13.590Z
-f_post-date: 2023-08-16T18:51:13.602Z
-f_featured: false
-f_image:
+post-date: 2023-08-16T18:51:13.602Z
+featured: false
+image:
   url: /assets/images/091523-qa-techcongress.png
-tags: blog
-layout: "[blog].html"
 date: 2023-08-16T18:51:13.615Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
-In the ever-evolving landscape of technology and policy, organizations like [TechCongress](https://www.techcongress.io/) play a crucial role in bridging the gap between these two realms. Last year, Filecoin Foundation for the Decentralized Web (FFDW) began [working with TechCongress](https://ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/) to connect technologists and policymakers in Congress. 
+
+In the ever-evolving landscape of technology and policy, organizations like [TechCongress](https://www.techcongress.io/) play a crucial role in bridging the gap between these two realms. Last year, Filecoin Foundation for the Decentralized Web (FFDW) began [working with TechCongress](/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/) to connect technologists and policymakers in Congress. 
 
 Since 2016, TechCongress has placed 95 fellows in Congressional offices, intending to build a new generation of technology leaders. And as technology touches more issues under consideration on Capitol Hill, TechCongress aims to increase the availability of technical knowledge through the fellowship programs, and ultimately, help technologists play a bigger role in the development of tech policy.
 
@@ -76,4 +74,4 @@ TechCongress serves an incredibly important role, connecting Congressional offic
 
 TechCongress also welcomes [nominations](https://techcongress.us10.list-manage.com/track/click?u=af5890511c379af397cbc931d&id=b05feb1756&e=d04e36028e)! If you nominate a veteran, woman or nonbinary individual, underrepresented person of color, or person with a disability for the program, and they apply, are accepted, and join the program as a fellow, we will award you a [$500 Referral Award](https://techcongress.us10.list-manage.com/track/click?u=af5890511c379af397cbc931d&id=41d6727f97&e=d04e36028e).
 
-To learn more or apply, visit [TechCongress.io. ](https://www.techcongress.io/apply)
+To learn more or apply, visit [TechCongress.io.](https://www.techcongress.io/apply)

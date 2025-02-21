@@ -1,28 +1,24 @@
 ---
-f_featured: false
-f_post-date: '2022-08-16T00:00:00.000Z'
+featured: false
+post-date: "2022-08-16T00:00:00.000Z"
 title: >-
   FFDW Supports Spritely Networked Communities Institute to Develop
   Decentralized Social Media
-f_description: >-
+description: >-
   Award will further efforts to give people control over identity and
   relationships online
-f_author: Filecoin Foundation for the Decentralized Web
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238321fe00b575d74cba1_0816-ffdw-spritely.png
   alt: null
-slug: >-
-  ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media
-updated-on: '2023-04-21T07:18:26.993Z'
-created-on: '2023-04-21T07:16:03.198Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/social-media.md
-  - cms/tags/decentralized.md
-  - cms/tags/award-e.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:26.993Z"
+created-on: "2023-04-21T07:16:03.198Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - social-media
+  - decentralized
+  - award-e
 ---
 
 ![](https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238321fe00b575d74cba1_0816-ffdw-spritely.png)
@@ -39,10 +35,10 @@ Spritely Institute is focused on enabling a new social layer for the internet �
 
 Decentralized standards require a new core architecture that changes the way developers approach programming for the internet. “Object capability security” can provide a foundational model for building programs where secure networked programming becomes the default. This can:
 
-*   Ensure safe collaboration over a hostile network: Spritely provides a secure Object Capability Network suite, which enables object-to-object communication.
-*   Define new network interface abstractions: These enable peer-to-peer interface instead of client-to-server, with no gatekeepers required, and are composable with existing peer-to-peer technologies such as libp2p and Tor Onion Services.
-*   Support end users: Granular and revocable trust that is persona specific, with local human-meaningful mapping to decentralized identifiers, discoverable names across networks, and credential management.
-*   Enable developers: Spritely is developing a new suite of distributed debugging tools that allow for time-traveling to the state of the system when the error occurred.
+- Ensure safe collaboration over a hostile network: Spritely provides a secure Object Capability Network suite, which enables object-to-object communication.
+- Define new network interface abstractions: These enable peer-to-peer interface instead of client-to-server, with no gatekeepers required, and are composable with existing peer-to-peer technologies such as libp2p and Tor Onion Services.
+- Support end users: Granular and revocable trust that is persona specific, with local human-meaningful mapping to decentralized identifiers, discoverable names across networks, and credential management.
+- Enable developers: Spritely is developing a new suite of distributed debugging tools that allow for time-traveling to the state of the system when the error occurred.
 
 This new core architecture is based on secure capability semantics on decentralized networks — and this approach is not the current prevalent programming paradigm, so end-user and developer-focused educational materials must cover the ground from fundamentals up through best practices.
 

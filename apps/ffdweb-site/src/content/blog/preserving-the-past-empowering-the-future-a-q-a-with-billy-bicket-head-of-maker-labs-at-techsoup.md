@@ -4,22 +4,21 @@ title: "Preserving the Past, Empowering the Future: A Q&A with Billy Bicket,
 created-on: 2025-02-06T21:12:58.463Z
 updated-on: 2025-02-06T21:12:58.480Z
 published-on: 2025-02-06T21:12:58.493Z
-f_post-date: 2025-02-06T21:12:58.510Z
-f_featured: false
-f_description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
+post-date: 2025-02-06T21:12:58.510Z
+featured: false
+description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
   TechSoup, to discuss the goals of the CML, its implications for cultural
   preservation, and how this initiative is building a more inclusive and
   equitable future for archiving.
-f_image:
+image:
   url: /assets/images/techsoup-q-a.webp
-tags: blog
-layout: "[blog].html"
 date: 2025-02-06T21:12:58.523Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
+
 In an era of eroding cultural memory, the need for innovative approaches to preserving collective history has never been greater. Decentralized technologies offer a transformative path forward, enabling communities to reclaim ownership of their narratives while democratizing access to the past.
 
 To address these challenges, TechSoup has joined forces with Gray Area and Filecoin Foundation for the Decentralized Web (FFDW) to launch the Cultural Memory Lab (CML), an incubator designed to empower cultural organizations, archives, libraries, and museums. By leveraging peer-to-peer networks, distributed storage systems, and blockchain technologies, this initiative aims to reshape how stories are preserved and shared, ensuring that diverse voices remain integral to the historical record.
@@ -76,8 +75,8 @@ Additionally, the Lab’s emphasis on responsible and ethical technology impleme
 
 We see this work as part of a broader movement to reimagine technology infrastructure for civil society. We invite you to join us in exploring key questions like these:
 
-* What governance models best support community control?
-* What regional support networks and collaborative models will best serve small cultural heritage organizations exploring DWeb tools?
-* How do we ensure our technical support and microgrants create lasting value for community-based archives?
+- What governance models best support community control?
+- What regional support networks and collaborative models will best serve small cultural heritage organizations exploring DWeb tools?
+- How do we ensure our technical support and microgrants create lasting value for community-based archives?
 
 This is complex work that requires ongoing dialogue between communities, Makers, funders, and cultural heritage practitioners. We’re grateful to be learning alongside so many dedicated partners as we work toward more equitable and sustainable approaches to cultural preservation. Stay tuned to learn more about our inaugural cohort!

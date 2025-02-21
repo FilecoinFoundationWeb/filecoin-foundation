@@ -1,29 +1,25 @@
 ---
-f_featured: false
-f_post-date: '2022-06-30T00:00:00.000Z'
+featured: false
+post-date: "2022-06-30T00:00:00.000Z"
 title: >-
   Filecoin Foundation for the Decentralized Web and TechCongress Will Work
   Together to Place More Technologists on Capitol Hill
-f_description: >-
+description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
   award to TechCongress, an organization that provides fellowships to bridge the
   informational gap between technologists and policymakers in Congress.
-f_author: Filecoin Foundation for the Decentralized Web
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png
   alt: null
-slug: >-
-  filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill
-updated-on: '2023-04-21T07:18:29.556Z'
-created-on: '2023-04-21T07:16:06.513Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/governance.md
-  - cms/tags/fellowship.md
-  - cms/tags/techcongress.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:29.556Z"
+created-on: "2023-04-21T07:16:06.513Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - governance
+  - fellowship
+  - techcongress
 ---
 
 _Collaboration will build bridges between the people building emerging technologies and policymakers_
@@ -38,9 +34,9 @@ With the growing prominence of Web3 and increasing attention toward regulation o
 
 TechCongress operates three fellowship programs:
 
-*   [The Congressional Innovation Fellowship](https://www.techcongress.io/congressional-innovation-fellows), which places mid-career technologists on Capitol Hill for twelve months.
-*   [The Congressional Innovation Scholars](https://www.techcongress.io/congressional-innovation-scholars-program) program, which places early-career technologists, including graduates of technical degree programs, on Capitol Hill for ten months.
-*   [The Congressional Digital Service Fellowship](https://www.techcongress.io/congressional-digital-service) is a one-time program to help members of Congress manage the digital challenges posed by the COVID-19 pandemic.
+- [The Congressional Innovation Fellowship](https://www.techcongress.io/congressional-innovation-fellows), which places mid-career technologists on Capitol Hill for twelve months.
+- [The Congressional Innovation Scholars](https://www.techcongress.io/congressional-innovation-scholars-program) program, which places early-career technologists, including graduates of technical degree programs, on Capitol Hill for ten months.
+- [The Congressional Digital Service Fellowship](https://www.techcongress.io/congressional-digital-service) is a one-time program to help members of Congress manage the digital challenges posed by the COVID-19 pandemic.
 
 As technology touches on more issues under consideration on Capitol Hill, TechCongress aims to increase the availability of technical knowledge through fellow programs, and ultimately, help technologists play a bigger role in the development of tech policy.
 

@@ -1,26 +1,23 @@
 ---
-f_featured: false
-f_post-date: '2021-11-04T00:00:00.000Z'
+featured: false
+post-date: "2021-11-04T00:00:00.000Z"
 title: FFDW and WITNESS Collaborate to Preserve Authentic Human Rights Records
-f_description: >-
+description: >-
   FFDW’s commitment to WITNESS will support the creation, authentication, and
   preservation of trusted documentation
-f_author: Filecoin Foundation for the Decentralized Web
-f_image:
+author: Filecoin Foundation for the Decentralized Web
+image:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382e3db3a0857c66f093_witness.png
   alt: null
-slug: ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records
-updated-on: '2023-04-21T07:18:25.714Z'
-created-on: '2023-04-21T07:15:59.414Z'
-published-on: '2023-04-21T08:01:04.314Z'
-f_tags:
-  - cms/tags/freedom.md
-  - cms/tags/journalism.md
-  - cms/tags/press.md
-  - cms/tags/privacy.md
-layout: '[blog].html'
-tags: blog
+updated-on: "2023-04-21T07:18:25.714Z"
+created-on: "2023-04-21T07:15:59.414Z"
+published-on: "2023-04-21T08:01:04.314Z"
+tags:
+  - freedom
+  - journalism
+  - press
+  - privacy
 ---
 
 ![ffdw and witness collaborate to preserve authentic human rights records](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c3fcda048a092b29cc_ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records.png)
@@ -35,14 +32,12 @@ Additionally, as the internet has become increasingly centralized, human rights 
 
 The FFDW award will enable WITNESS to support communities to preserve human rights records that are at risk of being lost, misrepresented, or manipulated, and explore how decentralized technology can support these efforts. The multi-pronged approach will include:
 
-*   Developing community-based archives to gather and preserve important evidence;
-*   Influencing authenticity infrastructure (an emerging set of technologies that helps track the provenance and manipulations of media to combat misinformation) to ensure the terms for trust are set by at-risk communities and not just technology companies; and
-*   Encouraging learning and sharing between at-risk-communities to develop ground-tested resources, tools, and practices.
+- Developing community-based archives to gather and preserve important evidence;
+- Influencing authenticity infrastructure (an emerging set of technologies that helps track the provenance and manipulations of media to combat misinformation) to ensure the terms for trust are set by at-risk communities and not just technology companies; and
+- Encouraging learning and sharing between at-risk-communities to develop ground-tested resources, tools, and practices.
 
 “Everyday, a growing number of civic journalists and smartphone witnesses are creating and preserving human rights records,” said WITNESS Program Director Sam Gregory. “Whether their efforts lead to justice is shaped by an ecosystem of emerging technologies that are often distant and unaccountable to their needs. We’re optimistic that decentralized technology can help us further our efforts to safeguard the voices and narratives of historically marginalized groups and ensure they can be leveraged to bring accountability.”
 
 Among the key initiatives that will benefit is a [human rights archives](https://archiving.witness.org/) program. WITNESS has decades of experience supporting activists to preserve critical documentation in contexts such as Brazil, Myanmar, Syria, the [United States](https://lab.witness.org/berkeley-copwatch-database/), and Yemen. The FFDW award will support a range of frontline actors to create and sustain community archives that preserve documentation of state violence and war crimes, while centering grassroots needs. This work is closely linked to WITNESS’ ongoing efforts shaping a set of standards for [authenticity infrastructure](https://blog.witness.org/2020/05/authenticity-infrastructure/).
 
 “We’re proud to support WITNESS with this award,” said FFDW Board Chair Marta Belcher. “FFDW’s mission is to preserve humanity’s most important information, and this collaboration with WITNESS is a natural fit to further these efforts.”
-
-Learn more about FFDW award programs [here](/awards)!

@@ -3,7 +3,7 @@ title: Internet Archive
 created-on: 2023-06-30T16:41:09.089Z
 updated-on: 2023-06-30T16:41:09.105Z
 published-on: 2023-06-30T16:41:09.119Z
-f_blurb: "The Internet Archive runs dozens of projects, including: the Wayback
+blurb: "The Internet Archive runs dozens of projects, including: the Wayback
   Machine, a repository of 475 billion web pages; OpenLibrary.org, a free,
   digital lending library of over 4.6 million eBooks; Software Collections,
   designed to preserve and provide access to rare or difficult to find software
@@ -15,11 +15,9 @@ f_blurb: "The Internet Archive runs dozens of projects, including: the Wayback
   being lost. Filecoin Foundation's contribution to the Internet Archive
   advances the mission of both organizations to preserve humanity's most
   valuable information and improve access to information online."
-f_logo:
+logo:
   url: /assets/images/partnerlogo_internetarchive.png
-f_external-link: https://archive.org/
-tags: project-partners
-layout: "[project-partners].html"
+external-link: https://archive.org/
 date: 2023-06-30T16:41:09.129Z
 seo:
   noindex: false

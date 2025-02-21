@@ -15,7 +15,7 @@ seo:
     the potential and challenges of digital currencies.
 ---
 
-Filecoin Foundation Board Chair Marta Belcher joined the BBC’s Ritula Shah on [_The Real Story_](https://www.bbc.co.uk/sounds/play/w3cszcp7) to discuss the promise of Filecoin and the future of cryptocurrency.
+Filecoin Foundation Board Chair Marta Belcher joined the BBC’s Ritula Shah on [The Real Story](https://www.bbc.co.uk/sounds/play/w3cszcp7) to discuss the promise of Filecoin and the future of cryptocurrency.
 
 Belcher began by explaining the built-in economic incentives of the Filecoin network. “Filecoin allows you to write a program that says, ‘Store my files on someone else’s computer, chopped up and encrypted, and then check whether they’re being stored and automatically compensate people for storing my files,’” she said. “That creates an incentive layer, potentially, for a web that is decentralized.”
 

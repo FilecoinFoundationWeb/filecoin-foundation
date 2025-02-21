@@ -3,20 +3,19 @@ title: Why We Need To Fight For Our Privacy
 created-on: 2023-10-18T18:48:49.064Z
 updated-on: 2023-10-18T18:48:49.074Z
 published-on: 2023-10-18T18:48:49.093Z
-f_issue: 1
-f_article: 10
-f_description: In this digital age, we need to learn the importance of privacy
+issue: 1
+: 10
+description: In this digital age, we need to learn the importance of privacy
   and change our attitudes about our data, instead of just accepting the
   conventional wisdom.
-f_image:
+image:
   url: /assets/images/DWD-Illustration-10.png
-f_author: Naomi Brockwell
-f_author-profile:
+author: Naomi Brockwell
+author-profile:
   url: /assets/images/dwd-profile-07.png
-f_author-bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and
+author-bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and
   author of "Beginner's Introduction to Privacy"
 tags: digest
-layout: "[digest].html"
 date: 2023-10-18T18:48:49.099Z
 seo:
   noindex: false
@@ -25,6 +24,7 @@ seo:
   og:image: /assets/images/DWD-Illustration-10.png
   title: "FFDW DWeb Digest: Why We Need To Fight For Our Privacy"
 ---
+
 We all love good sci-fi films, such as those that show us some dystopian future surveillance state where the government monitors its citizens' every move. We eagerly follow the story, and enjoy the protagonist’s quest to restore privacy and freedom of speech, and bring down the centralized powers. We’re comforted by the belief that “it’s just a film — that could never happen here. Our freedoms are secure.”
 
 One look at history, however, shows us that sudden and complete loss of freedom is actually a very real threat.
@@ -37,7 +37,7 @@ The loss of freedom may also be happening where you are, but, much like the para
 
 As privacy advocate Juan Angel put it in his essay [“Privacy: The Hill to Die on”:](https://thesovereignchimpanzee.substack.com/p/privacy-the-hill-to-die-on)
 
-*“Life in the panopticon of absolute digital surveillance forces humans to become shells of themselves, subjects who self-censor their own thoughts, behaviors, and expressions even in private interactions.”*
+> Life in the panopticon of absolute digital surveillance forces humans to become shells of themselves, subjects who self-censor their own thoughts, behaviors, and expressions even in private interactions.
 
 The internet, originally viewed as an instrument of liberation, now has omnipresent tracking weaved into its every corner, and is fast evolving into the most potent enabler of totalitarianism we’ve ever seen. It’s essential that we safeguard privacy in this digital world, because it’s crucial for preserving an open society.
 
@@ -53,7 +53,7 @@ We give away personal information without a second thought, to every company, do
 
 Then there’s our real-time location data that is perpetually ingested by all kinds of services that we interact with. Cell providers are just one collector of this data, and they have [a long history](https://techcrunch.com/2019/01/09/us-cell-carriers-still-selling-your-location-data/) [of selling it.](https://www.theverge.com/2021/8/20/22633853/tmobile-data-breach-imei-sim-fcc) If you’ve ever had a stalker, jilted ex-lover, or ruthless rival, then you’ll understand all too well why this is alarming.
 
-People also *unexpectedly* become targets every day: Perhaps you said something years ago online that’s suddenly resurfaced, or perhaps you’ve attracted attention because of a [desirable social media handle.](https://www.nbcnews.com/news/us-news/tennessee-man-targeted-his-twitter-handle-dies-after-swatting-call-n1274747) Only when it’s too late do most people realize how easy it is for someone to find their home address on the internet, and now the safety of their family is at risk.
+People also _unexpectedly_ become targets every day: Perhaps you said something years ago online that’s suddenly resurfaced, or perhaps you’ve attracted attention because of a [desirable social media handle.](https://www.nbcnews.com/news/us-news/tennessee-man-targeted-his-twitter-handle-dies-after-swatting-call-n1274747) Only when it’s too late do most people realize how easy it is for someone to find their home address on the internet, and now the safety of their family is at risk.
 
 There’s also a more subtle danger that comes along with a lack of privacy, which many people miss. Consider that our daily activities are rapidly and increasingly transitioning into the digital world. Our interests, purchase histories, political affiliations, and activism are indiscriminately collected at all times.
 
@@ -63,22 +63,24 @@ Most obviously, it’s used by advertising and data broker companies to build co
 
 But it may not just be shoes that they’re selling. They may be targeting us with content in an attempt to influence our views and opinions, drive us to artificially inflated emotional states, and [manipulate and control our feelings.](https://www.forbes.com/sites/kashmirhill/2014/06/28/facebook-manipulated-689003-users-emotions-for-science/?sh=45825512197c)
 
-Furthermore, this data doesn’t just stay with private companies — it’s often siphoned up by governments all over the world. Even ***if*** you trust your government not to misuse this data, ***and*** trust that there are no rogue employees in your government, a future government might not behave the same way. Regimes come and go, but this data is forever. It can be picked over at any time in the future, and we have no idea who might get access to it. All too often, there is little to no oversight or accountability about how this mass data being collected is actually utilized by governments.
+Furthermore, this data doesn’t just stay with private companies — it’s often siphoned up by governments all over the world. Even **_if_** you trust your government not to misuse this data, **_and_** trust that there are no rogue employees in your government, a future government might not behave the same way. Regimes come and go, but this data is forever. It can be picked over at any time in the future, and we have no idea who might get access to it. All too often, there is little to no oversight or accountability about how this mass data being collected is actually utilized by governments.
 
-Snowden points out in his book *Permanent Record*:
+Snowden points out in his book _Permanent Record_:
 
-*“This system of near-universal surveillance was set up not just without our consent, but in a way that deliberately hid every aspect of its programs from our knowledge. At every step, the changing procedures and their consequences were kept from everyone, including most lawmakers.”*
+> This system of near-universal surveillance was set up not just without our consent, but in a way that deliberately hid every aspect of its programs from our knowledge. At every step, the changing procedures and their consequences were kept from everyone, including most lawmakers.
 
-The current narrative pushed on us by those who would have us sacrifice our privacy is that privacy and security are at odds with each other. The opposite is true. A world without privacy is ***less*** secure.
+The current narrative pushed on us by those who would have us sacrifice our privacy is that privacy and security are at odds with each other. The opposite is true. A world without privacy is **_less_** secure.
 
-When journalists, whistleblowers, and activists cannot communicate without government surveillance, and share information with the public that is vital for holding our governments accountable, we are ***less*** secure.
+When journalists, whistleblowers, and activists cannot communicate without government surveillance, and share information with the public that is vital for holding our governments accountable, we are **_less_** secure.
 
-When we can’t openly express ourselves because we know we’re perpetually monitored and we fear reprisal for thoughts that go against accepted mainstream dogma, our future as an open society is ***less*** secure.
+When we can’t openly express ourselves because we know we’re perpetually monitored and we fear reprisal for thoughts that go against accepted mainstream dogma, our future as an open society is **_less_** secure.
 
-When we can’t keep our personal information private, and instead must hand it over to countless entities that are unable to protect that information, our reputation and financial well-being is ***less*** secure.
+When we can’t keep our personal information private, and instead must hand it over to countless entities that are unable to protect that information, our reputation and financial well-being is **_less_** secure.
 
 Surveillance is an instrument of power consistently wielded by totalitarian regimes. Think of the precedents that we’re setting for future generations – If we normalize a lack of privacy, we risk creating a future society that resembles our most terrifying dystopian fiction stories of today.
 
-Snowden once said: *“It is, in a dark way, psychologically reassuring to say, ‘Oh, everything is monitored and there's nothing I can do. I shouldn't bother.’ [The problem is that it's not true.”](https://twitter.com/Snowden/status/1546790812704440322)*
+Snowden once said:
 
-The erosion of privacy is not inevitable, and we ***must fight*** in order to prevent it. We can make better choices in our lives that safeguard our privacy. We can push back against those who would take our privacy from us. But most importantly, ***we must start to care***, and change the complacent culture around privacy. We must do this for our future because the stakes are too high.
+> It is, in a dark way, psychologically reassuring to say, ‘Oh, everything is monitored and there's nothing I can do. I shouldn't bother.’ —[The problem is that it's not true.](https://twitter.com/Snowden/status/1546790812704440322)
+
+The erosion of privacy is not inevitable, and we **_must fight_** in order to prevent it. We can make better choices in our lives that safeguard our privacy. We can push back against those who would take our privacy from us. But most importantly, **_we must start to care_**, and change the complacent culture around privacy. We must do this for our future because the stakes are too high.

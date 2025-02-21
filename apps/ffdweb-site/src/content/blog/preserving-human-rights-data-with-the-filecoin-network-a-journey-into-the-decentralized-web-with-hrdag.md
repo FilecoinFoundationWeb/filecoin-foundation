@@ -1,28 +1,27 @@
 ---
 title: "Preserving Human Rights Data with the Filecoin Network: A Journey into
-  the Decentralized Web with HRDAG  "
+  the Decentralized Web with HRDAG"
 created-on: 2024-04-18T16:50:24.039Z
 updated-on: 2024-04-18T16:50:24.046Z
 published-on: 2024-04-18T16:50:24.051Z
-f_post-date: 2024-04-18T16:50:24.057Z
-f_featured: false
-f_description: >
+post-date: 2024-04-18T16:50:24.057Z
+featured: false
+description: >
   This is a guest post from FFDW project partner Human Rights Data Analysis
   Group (HRDAG), written by Patrick Ball, HRDAG’s Director of Research. HRDAG
   began working with Filecoin Foundation for the Decentralized Web (FFDW) in
   2021 to explore how decentralized technologies can support efforts to
   safeguard this critical data and promote accountability for human rights
-  abuse. 
-f_image:
+  abuse.
+image:
   url: /assets/images/041524-guest-hrdag.png
-tags: blog
-layout: "[blog].html"
 date: 2024-04-18T16:50:24.061Z
 seo:
   noindex: false
   twitter:title: summary
   twitter:card: summary
 ---
+
 *This is a guest post from FFDW project partner Human Rights Data Analysis Group (HRDAG), written by Patrick Ball, HRDAG’s Director of Research.* 
 
 From documenting human rights abuses to promoting accountability and justice, data serves as the backbone of truth in our collective memory. 
@@ -33,7 +32,7 @@ Records of the fight for human rights can be some of the most vulnerable data in
 
 One way to remember – and safeguard – the data is to replicate it outside of the traditional web, on services that promise resilience to data loss, whether through centralization or single points of failure.
 
-#### Exploring Decentralized Storage Solutions 
+## Exploring Decentralized Storage Solutions 
 
 With FFDW’s support, HRDAG has been experimenting with new mechanisms for data storage, including IPFS and the Filecoin network. 
 
@@ -41,7 +40,7 @@ IPFS, which stands for the InterPlanetary File System, is a decentralized conten
 
 Filecoin combines IPFS with economic incentives –– to provide certainty that data is being stored. With cryptographic proofs, Filecoin ensures storage providers continue storing and serving the data. And because there is redundancy in who is storing and sharing the data, if one node goes down, the data is still accessible. By design, decentralized storage ensures redundancy and resilience, in contrast to the vulnerability of data on centralized servers. 
 
-#### HRDAG’s Approach and Insights  
+## HRDAG’s Approach and Insights  
 
 Decentralized storage is a new approach to data longevity –– for the Internet broadly and for HRDAG. 
 
@@ -49,7 +48,7 @@ Some of the information our team at HRDAG has uploaded to IPFS and Filecoin is p
 
 The nature of the data that HRDAG stewards, such as the truth commission data, raises novel questions as we explore how to best leverage decentralized technology to store and share important human rights work
 
-##### *How should we provide data on the web?* 
+## How should we provide data on the web?
 
 With the usual approach, we put a link to the data files on a page to allow access, and that’s it. On the decentralized web, how to best share stored data is still under discussion. How do you link to data stored on IPFS on a web page? How do you point people to data on IPFS and help them to understand what they’ve found when they locate it? Unlike https links, CID links are not as widely accessible and require an IPFS node or gateway. 
 
@@ -57,7 +56,7 @@ HRDAG’s experiment with decentralized storage began 18 months ago when we put 
 
 At its core, IPFS is as its name implies: a file system. One of the easiest and fastest ways to put data onto the network is to just upload files and directories from your laptop. So we created a script that downloaded the datasets from the HRDAG website, put them into a directory, and put that directory onto IPFS with CID links. There’s nothing fancy about this method, and it may not be the best way to organize a long-term archive. But when time is of the essence, as it often is during human rights crises, this can be an effective way to ensure critical data is remembered rather than forgotten. 
 
-##### *How to host the data?* 
+## How to host the data?
 
 IPFS works by having people host data for you, which introduces the question – who should host our data?
 
@@ -67,7 +66,7 @@ HRDAG uploaded the Colombian data to two Filecoin storage services to ensure gre
 
 Each of these Filecoin-based services typically partners with different storage providers, meaning data will get replicated to a more diverse set of nodes in different locations. Of note, this diversity can also cause confusion – sometimes data is packaged slightly differently, resulting in different CIDs for what is the same data. 
 
-The data is available here:  <https://bafybeibq7ub6qkie62cy2tkoawwsw35jpvtvdl3nrwlhwuz2a4ate65eyq.ipfs.w3s.link/>. This is a view into the IPFS world, via a web gateway. This gateway is run by the [web3.storage](https://web3.storage) team, the platform we used to upload the data, but there are other public web gateways run by [Cloudflare](https://cloudflare-ipfs.com/ipfs/bafybeibq7ub6qkie62cy2tkoawwsw35jpvtvdl3nrwlhwuz2a4ate65eyq/) and [others](https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways).
+The data is available [here](https://bafybeibq7ub6qkie62cy2tkoawwsw35jpvtvdl3nrwlhwuz2a4ate65eyq.ipfs.w3s.link/). This is a view into the IPFS world, via a web gateway. This gateway is run by the [web3.storage](https://web3.storage) team, the platform we used to upload the data, but there are other public web gateways run by [Cloudflare](https://cloudflare-ipfs.com/ipfs/bafybeibq7ub6qkie62cy2tkoawwsw35jpvtvdl3nrwlhwuz2a4ate65eyq/) and [others](https://docs.ipfs.tech/concepts/public-utilities/#public-ipfs-gateways).
 
 While IPFS is not a single point of failure, the web gateway is a single point of failure – if that link breaks, the data would still be on IPFS but you wouldn’t be able to find it using that specific link. You’d need to pull out the CID and then feed it either to another gateway or connect directly to IPFS by using a client program or a browser that supports it, like Brave or Agregore. Ultimately, our datasets are backed up on Filecoin, which uses cryptocurrency to incentivize long-term storage of the data, but there’s nothing to stop others from providing other stores as a voluntary service.
 
