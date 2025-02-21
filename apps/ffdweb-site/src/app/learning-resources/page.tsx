@@ -1,5 +1,4 @@
-import type { Metadata } from 'next'
-
+import { createMetadata } from '@/utils/createMetadata'
 export default function LearningResources() {
   return (
     <>
@@ -17,8 +16,9 @@ export default function LearningResources() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
-  description:
+export const metadata = createMetadata({
+  metaTitle: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
+  metaDescription:
     'Discover case studies, tutorials, and tools on decentralized technologies driving social change. Learn, share, and help shape the future with FFDW.',
-}
+  overrideTitle: true,
+})

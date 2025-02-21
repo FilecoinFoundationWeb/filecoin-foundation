@@ -1,4 +1,5 @@
-import type { Metadata } from 'next'
+import { createMetadata } from '@/utils/createMetadata'
+
 export default function DigestArticle() {
   return (
     <>
@@ -11,7 +12,8 @@ export default function DigestArticle() {
   )
 }
 
-export const metadata: Metadata = {
-  title: '', // [Headline of Article] | FFDW
-  description: '', // [Article Standfirst]
-}
+export const metadata = createMetadata({
+  metaTitle: '', // [Headline of Article] | FFDW
+  metaDescription: '', // [Article Standfirst]
+  overrideTitle: true,
+})

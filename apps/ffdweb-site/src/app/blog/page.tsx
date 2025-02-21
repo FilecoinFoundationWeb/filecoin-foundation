@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { createMetadata } from '@/utils/createMetadata'
 
 export default function Blog() {
   return (
@@ -14,8 +14,9 @@ export default function Blog() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'FFDW Blog | Latest Web3 Insights & Updates',
-  description:
+export const metadata = createMetadata({
+  metaTitle: 'FFDW Blog | Latest Web3 Insights & Updates',
+  metaDescription:
     'Stay informed on the newest advancements in decentralized tech, human rights data preservation, and social impact. Discover fresh perspectives from FFDW.',
-}
+  overrideTitle: true,
+})

@@ -1,9 +1,10 @@
-import type { Metadata } from 'next'
-export default function FAQ() {
+import { createMetadata } from '@/utils/createMetadata'
+
+export default function FAQs() {
   return (
     <>
       <>
-        <h1>span</h1>
+        <span>FAQs</span>
         <h1>
           Need help with something? Here are our most frequently asked
           questions.
@@ -110,8 +111,9 @@ export default function FAQ() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'FFDW FAQs | Answers About Our Mission & the Decentralized Web',
-  description:
+export const metadata = createMetadata({
+  metaTitle: 'FFDW FAQs | Answers About Our Mission & the Decentralized Web',
+  metaDescription:
     'Discover how FFDW supports open, decentralized tech, funds projects, and fosters a resilient internet. Get quick answers to your pressing questions.',
-}
+  overrideTitle: true,
+})

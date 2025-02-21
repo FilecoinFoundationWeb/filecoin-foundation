@@ -1,4 +1,4 @@
-import { type Metadata as NextMetadata } from 'next'
+import type { Metadata } from 'next'
 
 type MetadataParams = {
   metaTitle: string
@@ -10,7 +10,7 @@ export function createMetadata({
   metaTitle,
   metaDescription,
   overrideTitle = false,
-}: MetadataParams): NextMetadata {
+}: MetadataParams): Metadata {
   return {
     title: overrideTitle ? { absolute: metaTitle } : `${metaTitle}`,
     description: metaDescription,

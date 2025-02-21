@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { createMetadata } from '@/utils/createMetadata'
 
 export default function Project() {
   return (
@@ -25,7 +25,7 @@ export default function Project() {
   )
 }
 
-export const metadata: Metadata = {
-  title: '', // [Name of Project] | FFDW
-  description: '', //[Description of project]
-}
+export const metadata = createMetadata({
+  metaTitle: '', // [Name of Project] | FFDW
+  metaDescription: '', // [Description of project]
+})
