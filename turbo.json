@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV", "NEXT_RUNTIME"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -37,6 +38,10 @@
       "dependsOn": ["build"],
       "cache": false,
       "persistent": true
+    },
+    "lint": {
+      "cache": true,
+      "inputs": ["$TURBO_DEFAULT$"]
     }
   }
 }

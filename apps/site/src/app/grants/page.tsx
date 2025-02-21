@@ -20,7 +20,6 @@ import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
-import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
 
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'
@@ -28,6 +27,8 @@ import { opportunitiesData } from './data/opportunitiesData'
 import { submissionCriteriaData } from './data/submissionCriteriaData'
 import { FrontmatterSchema } from './schemas/FrontmatterSchema'
 import { generateStructuredData } from './utils/generateStructuredData'
+
+import { getFeaturedEcosystemProjects } from '@/ecosystem-explorer/utils/getFeaturedEcosystemProjects'
 
 const {
   header,

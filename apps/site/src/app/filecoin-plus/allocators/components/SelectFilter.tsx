@@ -51,9 +51,11 @@ export function SelectFilter({
   )
 
   function setColumnFilter(newOption: FilterOption) {
-    newOption.id === DEFAULT_FILTER_ID
-      ? resetFilter()
-      : column.setFilterValue(newOption.id)
+    if (newOption.id === DEFAULT_FILTER_ID) {
+      resetFilter()
+    } else {
+      column.setFilterValue(newOption.id)
+    }
   }
 
   function resetFilter() {

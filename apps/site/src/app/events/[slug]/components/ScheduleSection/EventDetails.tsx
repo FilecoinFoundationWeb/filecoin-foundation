@@ -5,11 +5,11 @@ import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
-import type { Event } from '@/events/types/eventType'
-
+import type { Event } from '../../../types/eventType'
 import { formatTime } from '../../utils/dateUtils'
 
 import { Participants } from './Participants'
+
 
 type EventDetailsProps = NonNullable<
   Event['schedule']
