@@ -23,7 +23,6 @@ type MobileFiltersProps = {
 type ResultsProps = {
   category: ReactNode
   results?: ReactNode
-  gapSize?: 'default' | 'wide'
 }
 
 type WrapperProps = {
@@ -71,7 +70,7 @@ FilterContainer.DesktopFilters = function DesktopFilters({
   sortComponent,
 }: DesktopFiltersProps) {
   return (
-    <div className="hidden justify-end gap-6 lg:flex">
+    <div className="hidden justify-end gap-3 lg:flex">
       {searchComponent}
       {filterComponents?.map((filterComponent, index) => (
         <div key={index} className="shrink-0 lg:w-48">
@@ -86,15 +85,9 @@ FilterContainer.DesktopFilters = function DesktopFilters({
 FilterContainer.ResultsAndCategory = function ResultsAndCategory({
   results,
   category,
-  gapSize = 'default',
 }: ResultsProps) {
   return (
-    <aside
-      className={clsx('hidden flex-col lg:flex', {
-        'gap-8': gapSize === 'default',
-        'gap-10': gapSize === 'wide',
-      })}
-    >
+    <aside className="hidden flex-col gap-6 lg:flex">
       {results}
       {category}
     </aside>
@@ -115,7 +108,7 @@ FilterContainer.PaginationWrapper = function PaginationWrapper({
 
 FilterContainer.MainWrapper = function MainWrapper({ children }: WrapperProps) {
   return (
-    <div className="flex w-full flex-col gap-4 lg:flex-1 lg:gap-6">
+    <div className="flex w-full flex-col gap-8 lg:flex-1 lg:gap-6">
       {children}
     </div>
   )

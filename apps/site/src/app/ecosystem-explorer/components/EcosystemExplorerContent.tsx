@@ -83,7 +83,6 @@ export function EcosystemExplorerContent({
   return (
     <FilterContainer>
       <FilterContainer.ResultsAndCategory
-        gapSize="wide"
         results={<ResultsAndReset results={filteredEntries.length} />}
         category={<CategoryFilters categories={categoryTree} />}
       />
