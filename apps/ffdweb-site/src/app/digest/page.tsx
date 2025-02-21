@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { createMetadata } from '@/utils/createMetadata'
 
 export default function Digest() {
   return (
@@ -21,8 +21,9 @@ export default function Digest() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
-  description:
+export const metadata = createMetadata({
+  metaTitle: 'FFDW DWeb Digest | In-Depth Exploration of the Decentralized Web',
+  metaDescription:
     'Explore FFDW DWeb Digest for expert insights on cognitive liberty, privacy, and crypto policy. Discover the evolving landscape of digital autonomy and blockchain.',
-}
+  overrideTitle: true,
+})

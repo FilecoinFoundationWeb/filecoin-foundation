@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { createMetadata } from '@/utils/createMetadata'
 
 export default function Home() {
   return (
@@ -107,8 +107,8 @@ export default function Home() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'FFDW | Rebuilding the Internet for Good',
-  description:
+export const metadata = createMetadata({
+  metaTitle: 'Rebuilding the Internet for Good',
+  metaDescription:
     'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
-}
+})

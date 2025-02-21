@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { createMetadata } from '@/utils/createMetadata'
 
 export default function BlogPost() {
   return (
@@ -12,7 +12,8 @@ export default function BlogPost() {
   )
 }
 
-export const metadata: Metadata = {
-  title: '', // [Headline of Blog] | FFDW
-  description: '', // [Blog Standfirst]
-}
+export const metadata = createMetadata({
+  metaTitle: '', // [Headline of Blog] | FFDW
+  metaDescription: '', // [Blog Standfirst]
+  overrideTitle: true,
+})
