@@ -11,6 +11,8 @@ import { getEventsData } from '@/events/utils/getEventData'
 type GenericEntryData = {
   updatedOn: DynamicBaseData['updated-on']
   slug: string
+  image?: DynamicBaseData['image']
+  content?: string
 }
 
 export default async function sitemap() {
@@ -50,8 +52,33 @@ function generateDynamicRoutes<T extends GenericEntryData>(
   data: Array<T>,
   basePath: string,
 ) {
-  return data.map(({ slug, updatedOn }) => ({
-    url: `${BASE_URL}${basePath}/${slug}`,
-    lastModified: updatedOn.toISOString(),
+  return data.map((entry) => ({
+    url: `${BASE_URL}${basePath}/${entry.slug}`,
+    lastModified: entry.updatedOn.toISOString(),
+    images: extractAssetImages(entry).map((image) => `${BASE_URL}${image}`),
   }))
+}
+
+function extractAssetImages<T extends GenericEntryData>(data: T) {
+  const assetImages = []
+
+  const hasAssetImage = data.image?.src && !data.image.src.startsWith('http')
+
+  if (hasAssetImage) {
+    assetImages.push(data.image!.src)
+  }
+
+  if (data.content) {
+    assetImages.push(...extractAssetImagesFromContent(data.content))
+  }
+
+  return assetImages
+}
+
+function extractAssetImagesFromContent(content: GenericEntryData['content']) {
+  if (!content) return []
+
+  const assetImageMarkdownRegex = /!\[.*?\]\((assets\/images\/.*?)\)/g
+  const assetImageMatches = [...content.matchAll(assetImageMarkdownRegex)]
+  return assetImageMatches.map((match) => match[1])
 }
