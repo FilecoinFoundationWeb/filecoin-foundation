@@ -188,6 +188,7 @@ Card.Link = function Link({
   return (
     <BaseLink
       href={href}
+      baseDomain={BASE_DOMAIN}
       aria-label={ariaLabel}
       className="absolute inset-0 rounded-lg focus:brand-outline"
     >

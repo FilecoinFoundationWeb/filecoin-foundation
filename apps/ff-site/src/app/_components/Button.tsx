@@ -66,7 +66,7 @@ export function Button({
   }
 
   return (
-    <BaseLink className={className} href={href}>
+    <BaseLink className={className} href={href} baseDomain={BASE_DOMAIN}>
       <ButtonInner
         isExternalLink={isExternalLink(href, BASE_DOMAIN)}
         icon={icon}

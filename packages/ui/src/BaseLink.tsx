@@ -3,14 +3,13 @@ import Link from 'next/link'
 import { isInternalLink } from '@filecoin-foundation/utils/linkUtils'
 import type { Route } from 'next'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
 export type BaseLinkProps = {
   href: string | Route
+  baseDomain: string
 } & Omit<React.ComponentProps<'a'>, 'href'>
 
-export function BaseLink({ href, ...rest }: BaseLinkProps) {
-  const isInternal = isInternalLink(href, BASE_DOMAIN)
+export function BaseLink({ href, baseDomain, ...rest }: BaseLinkProps) {
+  const isInternal = isInternalLink(href, baseDomain)
   const rel = href.startsWith('mailto:') ? undefined : 'noopener noreferrer'
 
   if (isInternal) {

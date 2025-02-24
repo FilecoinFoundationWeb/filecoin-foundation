@@ -30,6 +30,7 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
     <li className={containerStyles}>
       <BaseLink
         href={href}
+        baseDomain={BASE_DOMAIN}
         className="text-link relative before:absolute before:inset-0 before:-m-3.5 before:content-['']"
         onClick={() => setOpen(false)}
       >
