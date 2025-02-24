@@ -1,3 +1,4 @@
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   CloseButton,
   Dialog,
@@ -6,8 +7,6 @@ import {
 } from '@headlessui/react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-
-import { Icon, type IconProps } from '@/components/Icon'
 
 import './NotificationDialog.css'
 

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import type { StaticImageProps, ImageProps } from '@/types/imageType'
 
 import { Heading } from '@/components/Heading'
-import { Icon } from '@/components/Icon'
 
 type KeyMemberCardProps = {
   name: string
@@ -32,7 +32,7 @@ export function KeyMemberCard({
           {name}
         </Heading>
 
-        <p className="mb-10 mt-1 text-brand-300">
+        <p className="mt-1 mb-10 text-brand-300">
           {title}
           {company && `, ${company}`}
         </p>

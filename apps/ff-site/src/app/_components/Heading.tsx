@@ -1,6 +1,5 @@
+import { type IconProps, Icon } from '@filecoin-foundation/ui/Icon'
 import { clsx } from 'clsx'
-
-import { type IconProps, Icon } from '@/components/Icon'
 
 export type HeadingProps = {
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'
@@ -43,7 +42,7 @@ export function Heading({
   if (icon) {
     return (
       <div className="inline-flex items-center gap-3">
-        <Icon component={icon} color="brand-300" size={size} />
+        <Icon component={icon} color="primary" size={size} />
         <Tag className={combinedClassName}>{children}</Tag>
       </div>
     )

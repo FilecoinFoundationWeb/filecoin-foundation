@@ -1,4 +1,4 @@
-import { type IconProps, Icon } from '@/components/Icon'
+import { type IconProps, Icon } from '@filecoin-foundation/ui/Icon'
 
 export type BadgeProps = {
   icon?: IconProps['component']

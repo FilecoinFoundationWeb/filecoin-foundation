@@ -2,11 +2,11 @@
 
 import Link from 'next/link'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { LinkSimple } from '@phosphor-icons/react/dist/ssr'
 import type { Route } from 'next'
 import { useIntersectionObserver } from 'usehooks-ts'
 
-import { Icon } from '@/components/Icon'
 
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'

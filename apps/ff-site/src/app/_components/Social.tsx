@@ -1,10 +1,10 @@
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { clsx } from 'clsx'
 
 import type { TouchTarget } from '@/types/touchTargetType'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { Icon } from '@/components/Icon'
 
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
@@ -28,7 +28,7 @@ export function Social() {
               rel="noopener noreferrer"
               title={`Go to ${label}`}
               className={clsx(
-                'focus:brand-outline hover:text-brand-400',
+                'hover:text-brand-400 focus:brand-outline',
                 TOUCH_TARGET.touchAreaPadding,
               )}
             >

@@ -1,5 +1,6 @@
 'use client'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { clsx } from 'clsx'
 
 import type { TouchTarget } from '@/types/touchTargetType'
@@ -9,7 +10,6 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
 import { CopyToClipboard } from '@/components/CopyToClipboard'
-import { Icon } from '@/components/Icon'
 import { Tooltip } from '@/components/Tooltip/Tooltip'
 
 type ShareArticleProps = {

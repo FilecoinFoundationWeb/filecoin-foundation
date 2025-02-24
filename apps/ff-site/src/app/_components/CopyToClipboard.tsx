@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Button } from '@headlessui/react'
 import { Link } from '@phosphor-icons/react/dist/ssr'
 import * as Sentry from '@sentry/nextjs'
@@ -12,7 +13,6 @@ import type { TouchTarget } from '@/types/touchTargetType'
 
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 
-import { Icon } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 import { Tooltip } from '@/components/Tooltip/Tooltip'
 
