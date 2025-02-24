@@ -2,6 +2,7 @@
 
 import type { Dispatch, SetStateAction } from 'react'
 
+import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
@@ -9,7 +10,6 @@ import type { Route } from 'next'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
 
 export type LinkItemProps = {
@@ -30,6 +30,7 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
     <li className={containerStyles}>
       <BaseLink
         href={href}
+        baseDomain={BASE_DOMAIN}
         className="text-link relative before:absolute before:inset-0 before:-m-3.5 before:content-['']"
         onClick={() => setOpen(false)}
       >
