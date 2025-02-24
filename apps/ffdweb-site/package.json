@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@filecoin-foundation/ui": "*",
+    "@filecoin-foundation/utils": "*",
     "@tailwindcss/postcss": "^4.0.5",
     "next": "15.1.6",
     "postcss": "^8.5.1",
