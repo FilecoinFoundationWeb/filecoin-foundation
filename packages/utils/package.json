@@ -1,0 +1,20 @@
+{
+  "name": "@filecoin-foundation/utils",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    "./linkUtils": "./src/linkUtils.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@filecoin-foundation/eslint-config": "*",
+    "@filecoin-foundation/typescript-config": "*"
+  }
+}
