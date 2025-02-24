@@ -4,7 +4,7 @@ import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
-type InternalLinkProps = Omit<BaseLinkProps, 'href'> & {
+type InternalLinkProps = Omit<BaseLinkProps, 'href' | 'baseDomain'> & {
   href: Route
 }
 

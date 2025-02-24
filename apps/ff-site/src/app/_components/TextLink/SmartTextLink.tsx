@@ -7,8 +7,11 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { ExternalTextLink } from './ExternalTextLink'
 import { InternalTextLink } from './InternalTextLink'
 
-export function SmartTextLink({ href, ...rest }: BaseLinkProps) {
+type SmartTextLinkProps = Omit<BaseLinkProps, 'baseDomain'>
+
+export function SmartTextLink({ href, ...rest }: SmartTextLinkProps) {
   const isExternal = isExternalLink(href, BASE_DOMAIN)
+
   return isExternal ? (
     <ExternalTextLink href={href} {...rest} />
   ) : (

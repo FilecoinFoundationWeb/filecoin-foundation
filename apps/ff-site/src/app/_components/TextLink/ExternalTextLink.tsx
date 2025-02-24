@@ -4,7 +4,7 @@ import { clsx } from 'clsx'
 
 import { Icon } from '@/components/Icon'
 
-type ExternalLinkProps = Omit<BaseLinkProps, 'href'> & {
+type ExternalLinkProps = Omit<BaseLinkProps, 'href' | 'baseDomain'> & {
   href: string
 }
 
