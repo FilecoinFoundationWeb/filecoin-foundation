@@ -1,5 +1,9 @@
 import Image, { type StaticImageData } from 'next/image'
 
+import {
+  DescriptionText,
+  type DescriptionTextType,
+} from '@filecoin-foundation/ui/DescriptionText'
 import { clsx } from 'clsx'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
@@ -8,10 +12,6 @@ import {
   type CTAButtonGroupProps,
   CTAButtonGroup,
 } from '@/components/CTAButtonGroup'
-import {
-  DescriptionText,
-  type DescriptionTextType,
-} from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 import {
   SectionDivider,
