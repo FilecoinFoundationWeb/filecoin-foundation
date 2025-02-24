@@ -9,7 +9,7 @@ location:
   region: north-america
 external-link: https://live.unfinished.com/
 start-date: 2022-09-21
-end-date: 2022-08-24
+end-date: 2022-09-24
 image:
   src: /assets/images/645215e44977982552923065_unfinished-live.png
 seo:
