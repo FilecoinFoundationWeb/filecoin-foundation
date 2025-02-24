@@ -56,7 +56,7 @@ function assertEndIsAfterStart(
   endDate &&
     assert(
       isAfter(endDate, startDate),
-      `🚨 end-date must be greater than start-date for event ${event.title}`,
+      `${event.title}: end-date ${endDate} must be greater than start-date ${startDate}`,
     )
 
   if (program) {
@@ -64,7 +64,7 @@ function assertEndIsAfterStart(
       endDate &&
         assert(
           isAfter(endDate, startDate),
-          `🚨 end-date must be greater than start-date for event ${event.title}`,
+          `${event.title}: end-date ${endDate} must be greater than start-date ${startDate}`,
         )
     })
   }
@@ -75,7 +75,7 @@ function assertEndIsAfterStart(
         endTime &&
           assert(
             endTime > startTime,
-            `🚨 end-time must be greater than start-time for event ${event.title}`,
+            `${event.title}: end-time ${endTime} must be greater than start-time ${startTime}`,
           )
       })
     })
