@@ -1,7 +1,7 @@
+import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { type BaseLinkProps } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
 
 type ExternalLinkProps = Omit<BaseLinkProps, 'href'> & {

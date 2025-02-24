@@ -1,10 +1,10 @@
+import { BaseLink, type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { BaseLink, type BaseLinkProps } from '@/components/BaseLink'
 import { Icon as IconComponent, type IconProps } from '@/components/Icon'
 
 const variantStyles = {
