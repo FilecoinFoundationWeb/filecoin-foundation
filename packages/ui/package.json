@@ -7,6 +7,7 @@
     "#*": "./src/*"
   },
   "exports": {
+    "./BaseLink": "./src/BaseLink.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx"
   },
