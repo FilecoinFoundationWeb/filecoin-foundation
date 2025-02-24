@@ -1,3 +1,5 @@
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function Digest() {
@@ -12,9 +14,9 @@ export default function Digest() {
         <span>Social Media</span>
         <h2>Follow us and join the conversation.</h2>
         <nav>
-          <a href="#">X</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">YouTube</a>
+          <a href={FFDW_URLS.social.twitter}>X</a>
+          <a href={FFDW_URLS.social.linkedIn}>LinkedIn</a>
+          <a href={FFDW_URLS.social.youTube}>YouTube</a>
         </nav>
       </section>
     </>

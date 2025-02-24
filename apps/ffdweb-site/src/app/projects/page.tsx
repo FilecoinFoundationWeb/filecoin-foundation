@@ -1,3 +1,7 @@
+import Link from 'next/link'
+
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function Projects() {
@@ -11,7 +15,7 @@ export default function Projects() {
       <section>
         <span>Work with FFDW</span>
         <h2>Help FFDW Build a Better Web for Everyone</h2>
-        <button>Contact Us</button>
+        <Link href={FFDW_URLS.email}>Contact Us</Link>
       </section>
     </>
   )

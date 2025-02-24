@@ -1,4 +1,9 @@
+import Link from 'next/link'
+
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { createMetadata } from '@/utils/createMetadata'
+
 export default function LearningResources() {
   return (
     <>
@@ -10,7 +15,7 @@ export default function LearningResources() {
       <section>
         <h2>Contribute</h2>
         <h3>Add to FFDW&apos;s Learning Resources Page</h3>
-        <button>Submit a Resource</button>
+        <Link href={FFDW_URLS.newResourceForm}>Submit a Resource</Link>
       </section>
     </>
   )

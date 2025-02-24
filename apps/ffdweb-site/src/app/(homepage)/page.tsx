@@ -1,3 +1,8 @@
+import Link from 'next/link'
+
+import { PATHS } from '@/constants/paths'
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function Home() {
@@ -5,22 +10,28 @@ export default function Home() {
     <>
       <section>
         <h1>A Better Web for Everyone</h1>
-        <button>View Projects</button>
+        <Link href={PATHS.PROJECTS.path}>View Projects</Link>
       </section>
 
       <section>
         <span>About FFDW</span>
         <h2>FFDW Exists to Help Build a Better Web</h2>
         <p>
-          Filecoin Foundation for the Decentralized Web (FFDW) is a 501(c)(3)
-          nonprofit with a mission to guarantee humanity&apos;s most important
-          information survives. FFDW works with academics, developers, and
-          organizations to advance the benefits of open, decentralized
-          technologies, initiatives that accelerate their adoption, and
-          community building that fosters a network of decentralized web
-          advocates and builders.
+          Filecoin Foundation for the Decentralized Web (FFDW) is the sister
+          nonprofit of Filecoin Foundation. FFDW is a 501(c)(3) nonprofit
+          committed to preserving humanity’s most important information and
+          supporting the development and adoption of decentralized technologies.
+          While Filecoin Foundation stewards the Filecoin network’s future, FFDW
+          promotes the broader development of the decentralized web (DWeb).
         </p>
-        <a href="#">More About FFDW</a>
+        <p>
+          FFDW’s work includes supporting open source software and protocols
+          that safeguard critical data from centralized control and single
+          points of failure. FFDW also empowers institutions to preserve
+          vulnerable information by leveraging the resilience of decentralized
+          storage.
+        </p>
+        <Link href={PATHS.ABOUT.path}>More About FFDW</Link>
       </section>
 
       <section>
@@ -37,7 +48,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <button>View All Projects</button>
+        <Link href={PATHS.PROJECTS.path}>View All Projects</Link>
       </section>
 
       <section>
@@ -63,7 +74,9 @@ export default function Home() {
             <a href="#">Explore</a>
           </div>
         </div>
-        <a href="#">View All Learning Resources</a>
+        <Link href={PATHS.LEARNING_RESOURCES.path}>
+          View All Learning Resources
+        </Link>
       </section>
 
       <section>
@@ -76,7 +89,7 @@ export default function Home() {
           for digital future developers to build up the community inside DWeb to
           create a decentralized future.
         </p>
-        <a href="#">Read FFDW Digest</a>
+        <Link href={PATHS.DIGEST.path}>Read FFDW Digest</Link>
       </section>
 
       <section>
@@ -95,13 +108,13 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <button>View All</button>
+        <Link href={PATHS.BLOG.path}>View All</Link>
       </section>
 
       <section>
         <span>Get Involved</span>
         <h2>Join the Conversation and Help Us Build a Better Internet</h2>
-        <button>Contact Us</button>
+        <Link href={FFDW_URLS.email}>Contact Us</Link>
       </section>
     </>
   )

@@ -4,4 +4,21 @@ const ORGANIZATION_NAME =
   'Filecoin Foundation for the Decentralized Web' as const
 const ORGANIZATION_NAME_SHORT = 'FFDW' as const
 
-export { BASE_DOMAIN, BASE_URL, ORGANIZATION_NAME, ORGANIZATION_NAME_SHORT }
+const FFDW_URLS = {
+  email: 'impact@ffdweb.org',
+  social: {
+    linkedIn:
+      'https://www.linkedin.com/company/filecoin-foundation-for-the-decentralized-web/',
+    twitter: 'https://twitter.com/ffdweb',
+    youTube: 'https://www.youtube.com/channel/UCbj3Hck5cwKURkZKHjg_MKQ',
+  },
+  newResourceForm: 'https://airtable.com/appqYx2g5gO6GX8jL/shrhkHIBbGxLnGGZh',
+} as const
+
+export {
+  BASE_DOMAIN,
+  BASE_URL,
+  FFDW_URLS,
+  ORGANIZATION_NAME,
+  ORGANIZATION_NAME_SHORT,
+}
