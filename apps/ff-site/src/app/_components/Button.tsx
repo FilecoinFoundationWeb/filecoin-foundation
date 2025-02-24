@@ -1,7 +1,8 @@
+import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { isExternalLink } from '@/utils/linkUtils'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { BaseLink, type BaseLinkProps } from '@/components/BaseLink'
 import { Icon as IconComponent, type IconProps } from '@/components/Icon'
@@ -48,7 +49,7 @@ export function Button({
   ...rest
 }: ButtonProps) {
   className = clsx(
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition focus:brand-outline hover:no-underline sm:px-9',
+    'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition hover:no-underline focus:brand-outline sm:px-9',
     variantStyles[variant],
     {
       'bg-brand-200 disabled:pointer-events-none': disabled,
@@ -66,7 +67,10 @@ export function Button({
 
   return (
     <BaseLink className={className} href={href}>
-      <ButtonInner isExternalLink={isExternalLink(href)} icon={icon}>
+      <ButtonInner
+        isExternalLink={isExternalLink(href, BASE_DOMAIN)}
+        icon={icon}
+      >
         {children}
       </ButtonInner>
     </BaseLink>

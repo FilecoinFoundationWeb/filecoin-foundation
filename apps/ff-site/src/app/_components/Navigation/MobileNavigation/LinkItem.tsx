@@ -2,11 +2,12 @@
 
 import type { Dispatch, SetStateAction } from 'react'
 
+import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
-import { isExternalLink } from '@/utils/linkUtils'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { BaseLink } from '@/components/BaseLink'
 import { Icon } from '@/components/Icon'
@@ -19,7 +20,7 @@ export type LinkItemProps = {
 }
 
 export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
-  const isExternal = isExternalLink(href)
+  const isExternal = isExternalLink(href, BASE_DOMAIN)
   const containerStyles = clsx(
     nested && 'ml-6',
     isExternal && 'inline-flex items-center gap-1',
