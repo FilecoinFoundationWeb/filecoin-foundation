@@ -1,3 +1,7 @@
+import assert from 'node:assert'
+
+import { isAfter } from 'date-fns'
+
 import { PATHS } from '@/constants/paths'
 
 import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
@@ -10,6 +14,7 @@ const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
 export async function getEventData(slug: string) {
   const data = await getEventMarkdownData(slug)
+  assertEndIsAfterStart(data)
   return transformEventData(data)
 }
 
@@ -19,6 +24,7 @@ export async function getEventsData() {
     zodSchema: EventFrontmatterSchema,
   })
 
+  allEvents.forEach(assertEndIsAfterStart)
   return allEvents.map(transformEventData)
 }
 
@@ -39,5 +45,39 @@ function transformEventData(
       ...event.seo,
       title: event.seo.title || `${event.title} ${METADATA_TITLE_SUFFIX}`,
     },
+  }
+}
+
+function assertEndIsAfterStart(
+  event: Awaited<ReturnType<typeof getEventMarkdownData>>,
+) {
+  const { startDate, endDate, program, schedule } = event
+
+  endDate &&
+    assert(
+      isAfter(endDate, startDate),
+      `🚨 end-date must be greater than start-date for event ${event.title}`,
+    )
+
+  if (program) {
+    program.events.forEach(({ startDate, endDate }) => {
+      endDate &&
+        assert(
+          isAfter(endDate, startDate),
+          `🚨 end-date must be greater than start-date for event ${event.title}`,
+        )
+    })
+  }
+
+  if (schedule) {
+    schedule.days.forEach((day) => {
+      day.events.forEach(({ startTime, endTime }) => {
+        endTime &&
+          assert(
+            endTime > startTime,
+            `🚨 end-time must be greater than start-time for event ${event.title}`,
+          )
+      })
+    })
   }
 }
