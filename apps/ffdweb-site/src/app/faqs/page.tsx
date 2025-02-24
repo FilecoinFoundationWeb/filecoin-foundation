@@ -1,3 +1,8 @@
+import Link from 'next/link'
+
+import { PATHS } from '@/constants/paths'
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function FAQs() {
@@ -35,7 +40,8 @@ export default function FAQs() {
             FFDW does this through education on the benefits of decentralized
             technologies, initiatives that accelerate their adoption, and
             community building that fosters a network of decentralized web
-            advocates and builders. This includes collaborations with
+            advocates and builders. This includes{' '}
+            <Link href={PATHS.PROJECTS.path}>collaborations</Link> with
             developers, researchers, nonprofit organizations, and others to
             build robust decentralized infrastructure and introduce and
             highlight new and impactful use cases for decentralized
@@ -59,8 +65,11 @@ export default function FAQs() {
             decentralized tools for human rights defenders, journalists, and
             activists; Distributed Press is creating alternatives to centralized
             publishing platforms; and Spritely is creating ways to authorize and
-            process data without centralized gatekeepers –– see more in the 2023
-            Report. All these projects are designed to drive the development and
+            process data without centralized gatekeepers –– see more in the{' '}
+            <Link href="/blog/filecoin-foundation-2024-annual-report">
+              2024 Report
+            </Link>
+            . All these projects are designed to drive the development and
             adoption of open, decentralized technologies. FFDW works
             hand-in-hand with funded projects to drive meaningful change.
           </p>
@@ -72,13 +81,16 @@ export default function FAQs() {
             decentralized technologies?
           </h2>
           <p>
-            Check out the Learning Resources page! We have a variety of
-            education resources - sourced from FFDW and beyond - including case
-            studies, reports, webinars, and more, offering a look into
-            decentralized technologies and its applications. These resources
-            range from an introductory level and expand upward for more
-            experienced users and builders. The DWeb Digest provides a deep dive
-            into different perspectives from the decentralized web community.
+            Check out the{' '}
+            <Link href={PATHS.LEARNING_RESOURCES.path}>Learning Resources</Link>{' '}
+            page! We have a variety of education resources – sourced from FFDW
+            and beyond – including reading, research, webinars, and more,
+            offering a look into decentralized technologies and its
+            applications. These resources start from an introductory level and
+            expand upward for more experienced users and builders. The{' '}
+            <Link href={PATHS.DIGEST.path}>DWeb Digest</Link> is also a deep
+            dive into different perspectives from the decentralized web
+            community.
           </p>
         </article>
 
@@ -91,19 +103,30 @@ export default function FAQs() {
             FFDW actively collaborates with other groups across the
             decentralized web ecosystem following the principle that collective
             experience and resources can lead to greater impact! In the past,
-            FFDW has co-funded projects with Artizen and Unfinished; co-hosted
-            the Social Impact Summit with Blockchain Law Center for Social Good
-            at the University of San Francisco; and participated in DWeb Camp,
-            among other things. Interested in working together? Get in touch
-            with our FFDW team.
+            FFDW has co-funded projects with{' '}
+            <a href="https://artizen.fund/">Artizen</a> and{' '}
+            <a href="https://unfinished.com/">Unfinished</a>
+            co-hosted the Social Impact Summit with Blockchain Law Center for
+            Social Good at the{' '}
+            <a href="https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good">
+              University of San Francisco
+            </a>
+            ; and participated in
+            <a href="https://dwebcamp.org/">DWeb Camp</a>, among other things.
+            Interested in working together?{' '}
+            <a href={FFDW_URLS.email}>Get in touch with our FFDW team</a>.
           </p>
         </article>
 
         <article>
           <h2>Where can I find updates on the progress on FFDW projects?</h2>
           <p>
-            Check out the Projects page. Additionally, updates can be found on
-            our blog and across social media channels: X, YouTube, and LinkedIn.
+            Check out the <Link href={PATHS.PROJECTS.path}>Projects</Link> page.
+            Additionally, updates can be found on our{' '}
+            <Link href={PATHS.BLOG.path}>blog</Link> and across social media
+            channels: <a href={FFDW_URLS.social.twitter}>X</a>,{' '}
+            <a href={FFDW_URLS.social.youTube}>YouTube</a>, and{' '}
+            <a href={FFDW_URLS.social.linkedIn}>LinkedIn</a>.
           </p>
         </article>
       </section>

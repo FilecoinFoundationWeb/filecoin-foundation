@@ -1,3 +1,7 @@
+import Link from 'next/link'
+
+import { FFDW_URLS } from '@/constants/siteMetadata'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function About() {
@@ -44,60 +48,62 @@ export default function About() {
         <span>Impact Areas</span>
         <h2>Empowering Change Through Decentralization</h2>
         <p>
-          FFDW&apos;s work includes supporting the long-term collection,
-          digitization, and distribution of all forms of knowledge, as well as
-          projects working on open-source software and protocols. FFDW serves
-          the public good by fostering adoption across the entire decentralized
-          ecosystem, including key impact areas, to drive meaningful change
-          across the expanse of the Web.
+          FFDW’s efforts span the critical areas listed below. Each of these
+          domains is vital in its own right, and FFDW’s breadth of work reflects
+          its commitment to driving meaningful change not just in one industry
+          but across the expanse of the web.
         </p>
 
         <div>
           <div>
-            <h3>Cultural Preservation</h3>
+            <h3>DWeb Research and Development</h3>
             <p>
-              The web is an engine of amazing creative productivity, but digital
-              artifacts are fragile. FFDW&apos;s cultural preservation work aims
-              to find a safe repository for the world&apos;s digital heritage.
+              FFDW supports initiatives that advance decentralized technologies.
             </p>
           </div>
           <div>
             <h3>Education</h3>
             <p>
-              FFDW education initiatives are dedicated to ensuring widespread
-              access to and understanding of pivotal technologies, like
-              blockchain and other decentralized tools.
+              FFDW champions initiatives that increase education and
+              understanding of blockchain, cryptocurrency, and other
+              decentralized technologies
             </p>
           </div>
           <div>
             <h3>Human Rights</h3>
             <p>
               Records of the fight for human rights can be some of the most
-              vulnerable data in the world. FFDW&apos;s work with human rights
-              organizations is dedicated to safeguarding this critical data.
+              vulnerable data in the world — susceptible to tampering or total
+              disappearance on unsecured platforms. FFDW’s work with human
+              rights organizations is dedicated to safeguarding this critical
+              data.
             </p>
           </div>
           <div>
-            <h3>Policy and Government</h3>
+            <h3>Cultural Preservation</h3>
             <p>
-              FFDW educates policymakers about the promises of decentralized
-              technologies and works to preserve government datasets using
-              decentralized storage technologies.
+              The world’s digital artifacts are fragile —many at risk of
+              disappearing forever. FFDW’s work in the area of cultural
+              preservation aims to preserve and safeguard humanity’s digital
+              cultural heritage for the long term.
             </p>
           </div>
           <div>
-            <h3>Research and Development</h3>
+            <h3>Government Datasets and Policy</h3>
             <p>
-              The DWeb needs firm foundations, established in research and
-              secure, open-source, interoperable code. FFDW supports initiatives
-              that work to build these stable solutions.
+              FFDW educates policymakers about the promise of decentralized
+              technologies and works to preserve government data using
+              decentralized technologies like the Filecoin network
             </p>
           </div>
           <div>
             <h3>Science and Environment</h3>
             <p>
-              FFDW is working with universities and developers to connect the
-              output of academia with reliable, decentralized technologies.
+              Scientific research produces large amounts of data, but there are
+              limited systems in place to preserve this information publicly and
+              for the long term. FFDW is working with universities and other
+              scientific institutions to preserve scientific data by leveraging
+              the reliability of decentralized storage.
             </p>
           </div>
         </div>
@@ -132,7 +138,7 @@ export default function About() {
 
       <section>
         <h2>Join the Conversation and Help Us Build a Better Internet</h2>
-        <button>Contact Us</button>
+        <Link href={FFDW_URLS.email}>Contact Us</Link>
       </section>
     </>
   )
