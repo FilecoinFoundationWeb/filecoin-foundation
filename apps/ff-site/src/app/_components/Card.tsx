@@ -1,5 +1,6 @@
 import Image, { type ImageProps } from 'next/image'
 
+import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
@@ -7,8 +8,9 @@ import { type CTAProps } from '@/types/ctaType'
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 import { type BreakpointValue, type SpacingValue } from '@/types/tailwindTypes'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-import { isExternalLink } from '@/utils/linkUtils'
 
 import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { BaseLink } from '@/components/BaseLink'
@@ -174,7 +176,7 @@ Card.Link = function Link({
   text,
   left = 'left-4',
 }: NonNullable<CardProps['cta']>) {
-  const isExternal = isExternalLink(href)
+  const isExternal = isExternalLink(href, BASE_DOMAIN)
   const textElement = <span key="text">{text}</span>
 
   const textIcon = icon
