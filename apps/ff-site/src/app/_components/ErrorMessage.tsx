@@ -1,9 +1,10 @@
+import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+
 import { type CTAProps } from '@/types/ctaType'
 
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
-import { DescriptionText } from '@/components/DescriptionText'
 import { Heading } from '@/components/Heading'
 
 type ErrorMessageProps = {
