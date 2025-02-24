@@ -7,7 +7,8 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./BreakpointDebugger": "./src/BreakpointDebugger.tsx"
+    "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
+    "./DescriptionText": "./src/DescriptionText.tsx"
   },
   "scripts": {
     "lint": "eslint . --fix"

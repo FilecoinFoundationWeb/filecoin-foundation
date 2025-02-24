@@ -1,8 +1,9 @@
-import { Button } from '@/components/Button'
 import {
   DescriptionText,
   type DescriptionTextType,
-} from '@/components/DescriptionText'
+} from '@filecoin-foundation/ui/DescriptionText'
+
+import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 
 type CTASectionProps = {
