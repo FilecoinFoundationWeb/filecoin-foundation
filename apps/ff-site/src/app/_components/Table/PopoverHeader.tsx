@@ -3,13 +3,13 @@ import { Question } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import type { TouchTarget } from '@/types/touchTargetType'
+import { Popover, type PopoverProps } from '@/components/Tooltip/Popover'
 
 import { Icon } from '@/components/Icon'
-import { Tooltip, type TooltipProps } from '@/components/Tooltip/Tooltip'
 
-type TableHeaderWithTooltipProps = {
+type TableHeaderWithPopoverProps = {
   title: string
-  description: TooltipProps['description']
+  description: PopoverProps['description']
 }
 
 const TOUCH_TARGET: TouchTarget = {
@@ -22,18 +22,18 @@ const TOUCH_TARGET_ICON: TouchTarget & { visibleElementSize: number } = {
   touchAreaPadding: 'p-1.5',
 }
 
-export function TooltipHeader({
+export function PopoverHeader({
   title,
   description,
-}: TableHeaderWithTooltipProps) {
+}: TableHeaderWithPopoverProps) {
   return (
     <div className="flex items-center gap-1">
       <span>{title}</span>
-      <Tooltip description={description}>
-        {({ open, tooltipId }) => (
+      <Popover description={description}>
+        {({ open, popoverId }) => (
           <Button
             aria-label={`More info on ${title}`}
-            aria-describedby={tooltipId}
+            aria-describedby={popoverId}
             className={clsx(
               'group focus-visible:brand-outline',
               TOUCH_TARGET.touchAreaPadding,
@@ -56,7 +56,7 @@ export function TooltipHeader({
             </span>
           </Button>
         )}
-      </Tooltip>
+      </Popover>
     </div>
   )
 }

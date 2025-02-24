@@ -2,7 +2,7 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
-import { TooltipHeader } from '@/components/Table/TooltipHeader'
+import { TooltipHeader } from '@/components/Table/PopoverHeader'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 import { formatDatacap } from '../utils/formatDatacap'
@@ -23,7 +23,7 @@ export const allocatorsTableColumnsData = [
               aria-label={`See more information about ${name} allocator`}
               href={link}
               title={name}
-              className="group flex items-center focus:brand-outline hover:text-brand-300 hover:underline focus:text-brand-300"
+              className="group flex items-center hover:text-brand-300 hover:underline focus:brand-outline focus:text-brand-300"
               rel="noopener noreferrer"
             >
               <span className="block truncate text-brand-100 group-hover:text-inherit group-focus:text-inherit">
