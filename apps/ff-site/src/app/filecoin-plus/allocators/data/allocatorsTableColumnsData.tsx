@@ -2,7 +2,7 @@ import { ArrowUpRight } from '@phosphor-icons/react'
 import { createColumnHelper } from '@tanstack/react-table'
 
 import { Icon } from '@/components/Icon'
-import { TooltipHeader } from '@/components/Table/PopoverHeader'
+import { PopoverHeader } from '@/components/Table/PopoverHeader'
 
 import type { AllocatorWithDatacap } from '../schemas/AllocatorSchema'
 import { formatDatacap } from '../utils/formatDatacap'
@@ -45,7 +45,7 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('metapathway_type', {
     header: () => (
-      <TooltipHeader
+      <PopoverHeader
         title="Type"
         description="The allocation method used to distribute DataCap to clients."
       />
@@ -68,7 +68,7 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('application.required_replicas', {
     header: () => (
-      <TooltipHeader
+      <PopoverHeader
         title="Required Replicas"
         description="The minimum number of data copies that must be stored."
       />
@@ -77,7 +77,7 @@ export const allocatorsTableColumnsData = [
   }),
   columnHelper.accessor('application.required_sps', {
     header: () => (
-      <TooltipHeader
+      <PopoverHeader
         title="Required Storage Providers"
         description="The minimum number of distinct storage providers needed for data storage."
       />
