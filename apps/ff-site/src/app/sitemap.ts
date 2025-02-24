@@ -79,6 +79,6 @@ function extractAssetImagesFromContent(content: GenericEntryData['content']) {
   if (!content) return []
 
   const assetImageMarkdownRegex = /!\[.*?\]\((assets\/images\/.*?)\)/g
-  const assetImageMatches = [...content.matchAll(assetImageMarkdownRegex)]
+  const assetImageMatches = content.matchAll(assetImageMarkdownRegex)
   return assetImageMatches.map((match) => match[1])
 }
