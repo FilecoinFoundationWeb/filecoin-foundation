@@ -18,7 +18,6 @@ export function ExternalLink({
   label,
   description,
   ariaLabel,
-  className,
   ...rest
 }: ExternalLinkProps) {
   return (
@@ -26,7 +25,6 @@ export function ExternalLink({
       aria-label={ariaLabel}
       href={href}
       rel="noopener noreferrer"
-      className={className}
       target="_blank"
       {...rest}
     >
