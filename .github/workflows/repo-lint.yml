@@ -33,4 +33,4 @@ jobs:
           globs: |
             **/*.md
             !**/node_modules/**/*.md
-          config: "apps/ff-site/.markdownlint.jsonc"
+          config: ".markdownlint.jsonc"
