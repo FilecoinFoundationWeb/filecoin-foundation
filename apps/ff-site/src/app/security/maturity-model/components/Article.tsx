@@ -7,7 +7,6 @@ import { LinkSimple } from '@phosphor-icons/react/dist/ssr'
 import type { Route } from 'next'
 import { useIntersectionObserver } from 'usehooks-ts'
 
-
 import { scrollToSection } from '../utils/scrollToSection'
 import { useUrlHash } from '../utils/useUrlHash'
 

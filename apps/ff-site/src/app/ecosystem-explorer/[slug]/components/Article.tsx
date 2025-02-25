@@ -4,6 +4,8 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextL
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
