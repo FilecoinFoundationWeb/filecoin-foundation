@@ -1,7 +1,9 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
 import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
@@ -15,7 +17,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
-import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
@@ -63,7 +64,10 @@ export default function FilPlus() {
         </CardGrid>
 
         <div className="mt-2 flex flex-col sm:flex-row sm:justify-center">
-          <Button href={FIL_PLUS_URLS.filPlusParticipants}>
+          <Button
+            href={FIL_PLUS_URLS.filPlusParticipants}
+            baseDomain={BASE_DOMAIN}
+          >
             Learn More About Fil+ Participants
           </Button>
         </div>

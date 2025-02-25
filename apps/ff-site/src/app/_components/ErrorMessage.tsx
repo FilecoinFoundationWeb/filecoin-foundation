@@ -1,11 +1,11 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 
 import { type CTAProps } from '@/types/ctaType'
 
 import { PATHS } from '@/constants/paths'
-
-import { Button } from '@/components/Button'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type ErrorMessageProps = {
   kicker: string
@@ -32,7 +32,9 @@ export default function ErrorMessage({
         {title}
       </Heading>
       <DescriptionText>{children}</DescriptionText>
-      <Button href={href}>{text}</Button>
+      <Button href={href} baseDomain={BASE_DOMAIN}>
+        {text}
+      </Button>
     </div>
   )
 }

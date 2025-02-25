@@ -94,4 +94,20 @@
   .toc-header {
     @apply text-sm font-semibold text-brand-200 uppercase;
   }
+
+  .button-base {
+    @apply rounded-lg border;
+  }
+
+  .button-primary {
+    @apply border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400;
+  }
+
+  .button-ghost {
+    @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
+  }
+
+  .button-disabled {
+    @apply bg-brand-200;
+  }
 }
