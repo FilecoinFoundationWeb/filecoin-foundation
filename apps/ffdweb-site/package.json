@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:cypress": "echo 'test cypress command to be implemented'",
+    "test:cypress:percy": "echo 'test percy command to be implemented'"
   },
   "dependencies": {
     "@filecoin-foundation/ui": "*",
