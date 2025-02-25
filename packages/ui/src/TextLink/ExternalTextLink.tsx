@@ -1,10 +1,8 @@
-import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-
-
-type ExternalLinkProps = Omit<BaseLinkProps, 'href' | 'baseDomain'> & {
+import type { AnchorHTMLAttributes } from 'react'
+type ExternalTextLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string
 }
 
@@ -12,7 +10,7 @@ export function ExternalTextLink({
   className,
   children,
   ...rest
-}: ExternalLinkProps) {
+}: ExternalTextLinkProps) {
   return (
     <a
       className={clsx('text-link inline-block text-pretty', className)}

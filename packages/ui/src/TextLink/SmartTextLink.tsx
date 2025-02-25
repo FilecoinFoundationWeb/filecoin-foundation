@@ -2,15 +2,11 @@ import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import type { Route } from 'next'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
 import { ExternalTextLink } from './ExternalTextLink'
 import { InternalTextLink } from './InternalTextLink'
 
-type SmartTextLinkProps = Omit<BaseLinkProps, 'baseDomain'>
-
-export function SmartTextLink({ href, ...rest }: SmartTextLinkProps) {
-  const isExternal = isExternalLink(href, BASE_DOMAIN)
+export function SmartTextLink({ href, baseDomain, ...rest }: BaseLinkProps) {
+  const isExternal = isExternalLink(href, baseDomain)
 
   return isExternal ? (
     <ExternalTextLink href={href} {...rest} />

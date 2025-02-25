@@ -11,7 +11,8 @@
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./Heading": "./src/Heading.tsx",
-    "./Icon": "./src/Icon.tsx"
+    "./Icon": "./src/Icon.tsx",
+    "./TextLink/*": "./src/TextLink/*.tsx"
   },
   "scripts": {
     "lint": "eslint . --fix"
