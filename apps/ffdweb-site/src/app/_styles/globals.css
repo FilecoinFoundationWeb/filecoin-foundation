@@ -35,6 +35,17 @@
   border-color: var(--outline-brand-border-color);
 }
 
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-relaxed;
+  }
+}
+
 @layer components {
   .button-base {
     @apply border-2 font-bold;
