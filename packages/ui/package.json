@@ -8,8 +8,10 @@
   },
   "exports": {
     "./BaseLink": "./src/BaseLink.tsx",
+    "./Button": "./src/Button.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
+    "./ErrorMessage": "./src/ErrorMessage.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
     "./TextLink/*": "./src/TextLink/*.tsx"

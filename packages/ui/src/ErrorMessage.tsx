@@ -1,27 +1,32 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
+import { type IconProps } from '@filecoin-foundation/ui/Icon'
 
-import { type CTAProps } from '@/types/ctaType'
-
-import { PATHS } from '@/constants/paths'
-
-import { Button } from '@/components/Button'
+type CTAProps = {
+  href: string
+  text: string
+  icon?: IconProps['component']
+  ariaLabel?: string
+}
 
 type ErrorMessageProps = {
   kicker: string
   title: string
+  baseDomain: string
   cta?: CTAProps
   children: string
 }
 
-export default function ErrorMessage({
+export function ErrorMessage({
   kicker,
   title,
+  baseDomain,
   cta,
   children,
 }: ErrorMessageProps) {
   const { href, text } = cta || {
-    href: PATHS.HOME.path,
+    href: '/',
     text: 'Return Home',
   }
 
@@ -32,7 +37,9 @@ export default function ErrorMessage({
         {title}
       </Heading>
       <DescriptionText>{children}</DescriptionText>
-      <Button href={href}>{text}</Button>
+      <Button href={href} baseDomain={baseDomain}>
+        {text}
+      </Button>
     </div>
   )
 }

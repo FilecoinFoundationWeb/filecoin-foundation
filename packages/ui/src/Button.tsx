@@ -7,20 +7,17 @@ import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
-const variantStyles = {
-  primary:
-    'border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400',
-  ghost:
-    'border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400',
+const variantClasses = {
+  primary: 'button-primary',
+  ghost: 'button-ghost',
 }
 
 type ButtonProps = {
   children: React.ReactNode
-  variant?: keyof typeof variantStyles
+  variant?: keyof typeof variantClasses
   icon?: IconProps['component']
   href?: BaseLinkProps['href']
+  baseDomain: string
 } & React.ComponentPropsWithoutRef<'button'>
 
 type ButtonInnerProps = Pick<ButtonProps, 'children' | 'icon'> & {
@@ -48,13 +45,14 @@ export function Button({
   children,
   disabled,
   href,
+  baseDomain,
   ...rest
 }: ButtonProps) {
   className = clsx(
-    'inline-flex items-center justify-center gap-2 rounded-lg border px-6 py-3 font-semibold transition hover:no-underline focus:brand-outline sm:px-9',
-    variantStyles[variant],
+    'button-base focus:brand-outline inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold transition hover:no-underline sm:px-9',
+    variantClasses[variant],
     {
-      'bg-brand-200 disabled:pointer-events-none': disabled,
+      'button-disabled disabled:pointer-events-none': disabled,
     },
     className,
   )
@@ -68,9 +66,9 @@ export function Button({
   }
 
   return (
-    <BaseLink className={className} href={href} baseDomain={BASE_DOMAIN}>
+    <BaseLink className={className} href={href} baseDomain={baseDomain}>
       <ButtonInner
-        isExternalLink={isExternalLink(href, BASE_DOMAIN)}
+        isExternalLink={isExternalLink(href, baseDomain)}
         icon={icon}
       >
         {children}

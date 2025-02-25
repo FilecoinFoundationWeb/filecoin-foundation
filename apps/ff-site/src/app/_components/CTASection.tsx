@@ -1,10 +1,12 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import {
   DescriptionText,
   type DescriptionTextType,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 
-import { Button } from '@/components/Button'
+
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type CTASectionProps = {
   title: string
@@ -26,7 +28,11 @@ export function CTASection({ title, description, cta }: CTASectionProps) {
           </Heading>
           <DescriptionText>{description}</DescriptionText>
         </div>
-        {cta && <Button href={cta.href}>{cta.text}</Button>}
+        {cta && (
+          <Button href={cta.href} baseDomain={BASE_DOMAIN}>
+            {cta.text}
+          </Button>
+        )}
       </div>
     </section>
   )
