@@ -21,8 +21,6 @@
   --color-brand-700: #06094e;
   --color-brand-800: #08072e;
 
-  --spacing-readable: 60ch;
-
   --color-brand-success: var(--color-green-400);
   --color-brand-error: var(--color-red-400);
 
@@ -31,6 +29,8 @@
   --color-icon-subtle: var(--color-brand-400);
   --color-icon-success: var(--color-brand-success);
   --color-icon-error: var(--color-brand-error);
+
+  --spacing-readable: 60ch;
 }
 
 @utility brand-outline {
