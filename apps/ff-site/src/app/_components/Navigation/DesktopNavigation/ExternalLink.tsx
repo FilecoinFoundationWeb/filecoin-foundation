@@ -1,8 +1,17 @@
+import type { AnchorHTMLAttributes } from 'react'
+
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react'
 
-
-import type { LinkProps } from './SubNavItem'
+type ExternalLinkProps = Omit<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  'children'
+> & {
+  href: string
+  label: string
+  description?: string
+  ariaLabel?: string
+}
 
 export function ExternalLink({
   href,
@@ -10,13 +19,16 @@ export function ExternalLink({
   description,
   ariaLabel,
   className,
-}: LinkProps) {
+  ...rest
+}: ExternalLinkProps) {
   return (
     <a
       aria-label={ariaLabel}
       href={href}
       rel="noopener noreferrer"
       className={className}
+      target="_blank"
+      {...rest}
     >
       <div className="inline-flex items-center gap-1">
         <p className="font-bold">{label}</p>
