@@ -7,8 +7,7 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextL
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
+import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 type SuccessMessageProps = {
   prNumber: number
@@ -49,7 +48,9 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
           href={PATHS.ECOSYSTEM_EXPLORER.path}
           className="inline-block w-full sm:w-auto"
         >
-          <Button className="w-full">Go to Ecosystem Explorer Page</Button>
+          <Button className="w-full" baseDomain={BASE_DOMAIN}>
+            Go to Ecosystem Explorer Page
+          </Button>
         </Link>
       </div>
     </section>

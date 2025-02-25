@@ -1,8 +1,7 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_URLS } from '@/constants/siteMetadata'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, FILECOIN_URLS } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { attributes as digestAttributes } from '@/content/pages/digest.md'
@@ -137,7 +136,11 @@ export default async function Home() {
           >
             <FeaturedBlogPosts featuredBlogPosts={featuredBlogPosts} />
 
-            <Button className="sm:self-center" href={PATHS.BLOG.path}>
+            <Button
+              className="sm:self-center"
+              href={PATHS.BLOG.path}
+              baseDomain={BASE_DOMAIN}
+            >
               View All
             </Button>
           </PageSection>

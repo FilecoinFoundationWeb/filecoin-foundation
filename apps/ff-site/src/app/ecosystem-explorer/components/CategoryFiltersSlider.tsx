@@ -11,7 +11,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-
 import { IconButton } from '@/components/IconButton'
 import { SlideOver } from '@/components/SlideOver'
 
@@ -58,6 +57,7 @@ export function CategoryFiltersSlider({
             <Button
               className="basis-1/2"
               variant="ghost"
+              baseDomain={BASE_DOMAIN}
               onClick={resetParamsAndCloseSlider}
             >
               Clear All
