@@ -1,8 +1,7 @@
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Image } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import prettyBytes from 'pretty-bytes'
-
-import { Icon } from '@/components/Icon'
 
 import type { FormFileInputProps } from './FormFileInput'
 
@@ -20,8 +19,8 @@ export function UploadInstructions({
     <div
       aria-label="Instructions to upload a file"
       className={clsx(
-        'flex h-full w-full items-center justify-center rounded-lg border border-dashed border-brand-300 peer-focus:brand-outline group-hover:border-brand-400',
-        error && 'border-red-400',
+        'flex h-full w-full items-center justify-center rounded-lg border border-dashed border-brand-300 group-hover:border-brand-400 peer-focus:brand-outline',
+        error && 'border-brand-error',
       )}
     >
       <div className="flex flex-col items-center justify-center gap-2 p-4">

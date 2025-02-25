@@ -42,7 +42,7 @@ export function ErrorNotification({ message }: ErrorMessageProps) {
     <NotificationDialog
       isOpen={isOpen}
       title={message}
-      icon={{ component: XCircle, color: 'red-400' }}
+      icon={{ component: XCircle, color: 'error' }}
       setIsOpen={handleOpen}
     />
   )

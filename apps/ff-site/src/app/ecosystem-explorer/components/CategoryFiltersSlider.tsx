@@ -2,13 +2,15 @@
 
 import { useState } from 'react'
 
+import { Button } from '@filecoin-foundation/ui/Button'
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Button as HeadlessUIButton } from '@headlessui/react'
 import { FunnelSimple, X } from '@phosphor-icons/react'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { Button } from '@/components/Button'
-import { Icon } from '@/components/Icon'
 import { IconButton } from '@/components/IconButton'
 import { SlideOver } from '@/components/SlideOver'
 
@@ -25,7 +27,7 @@ export function CategoryFiltersSlider({
   return (
     <>
       <HeadlessUIButton
-        className="flex h-full w-full items-center gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 font-bold text-brand-300 focus:brand-outline hover:border-current hover:text-brand-400"
+        className="flex h-full w-full items-center gap-2 rounded-lg border border-brand-300 bg-brand-800 p-3 font-bold text-brand-300 hover:border-current hover:text-brand-400 focus:brand-outline"
         onClick={openSlider}
       >
         <Icon component={FunnelSimple} />
@@ -55,12 +57,17 @@ export function CategoryFiltersSlider({
             <Button
               className="basis-1/2"
               variant="ghost"
+              baseDomain={BASE_DOMAIN}
               onClick={resetParamsAndCloseSlider}
             >
               Clear All
             </Button>
 
-            <Button className="basis-1/2" onClick={closeSlider}>
+            <Button
+              className="basis-1/2"
+              baseDomain={BASE_DOMAIN}
+              onClick={closeSlider}
+            >
               See Results
             </Button>
           </div>

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import rehypeToc, { type HtmlElementNode } from '@jsdevtools/rehype-toc'
 import * as Sentry from '@sentry/node'
 import ReactMarkdown, { type Components } from 'react-markdown'
@@ -7,11 +8,11 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-
-import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 type PluggableList = Parameters<typeof ReactMarkdown>[0]['rehypePlugins']
 
@@ -63,7 +64,11 @@ const MarkdownLink: Components['a'] = ({ href, children }) => {
 
     return <>{children}</>
   }
-  return <SmartTextLink href={href} className="not-prose">{children}</SmartTextLink>
+  return (
+    <SmartTextLink href={href} baseDomain={BASE_DOMAIN} className="not-prose">
+      {children}
+    </SmartTextLink>
+  )
 }
 
 const markdownComponents: Components = {

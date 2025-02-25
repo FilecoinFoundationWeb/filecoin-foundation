@@ -1,11 +1,11 @@
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { FileText, UserCircle } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
-import type { IconProps } from '@/components/Icon'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type DeveloperSupportData = {
   heading: {

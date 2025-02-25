@@ -1,7 +1,8 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { CTASection } from '@/components/CTASection'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 export function CTAPageSection() {
   return (

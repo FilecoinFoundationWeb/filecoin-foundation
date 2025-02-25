@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import { useDebounceCallback } from 'usehooks-ts'
@@ -14,7 +15,6 @@ import { useResponsiveRange } from '@/hooks/useResponsiveRange'
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
 
-import { Icon } from '@/components/Icon'
 
 type PaginationProps = {
   pageCount: ReturnType<typeof usePagination>['pageCount']

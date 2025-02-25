@@ -1,15 +1,17 @@
 'use client'
 
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
+
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { BasicCard } from '@/components/BasicCard'
-import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
-import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 import type { Event } from '../../../types/eventType'
 import { formatTime } from '../../utils/dateUtils'
 
 import { Participants } from './Participants'
-
 
 type EventDetailsProps = NonNullable<
   Event['schedule']
@@ -56,7 +58,11 @@ export function EventDetails({
             )}
           </div>
 
-          {url && <SmartTextLink href={url}>View Details</SmartTextLink>}
+          {url && (
+            <SmartTextLink href={url} baseDomain={BASE_DOMAIN}>
+              View Details
+            </SmartTextLink>
+          )}
         </div>
       </div>
     </BasicCard>

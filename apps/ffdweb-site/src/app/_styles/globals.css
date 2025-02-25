@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 @source "../../../../../node_modules/@filecoin-foundation/ui";
 
+:root {
+  --outline-brand: 4px solid var(--color-brand-primary-300);
+  --outline-brand-offset: 0px;
+  --outline-brand-border-color: transparent;
+}
+
 @theme {
   --color-brand-primary-100: #f6f7ff;
   --color-brand-primary-200: #d8d9ff;
@@ -21,4 +27,28 @@
   --color-brand-secondary-700: #184d00;
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
+}
+
+@utility brand-outline {
+  outline: var(--outline-brand);
+  outline-offset: var(--outline-brand-offset);
+  border-color: var(--outline-brand-border-color);
+}
+
+@layer components {
+  .button-base {
+    @apply border-2;
+  }
+
+  .button-primary {
+    @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100;
+  }
+
+  .button-ghost {
+    @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100;
+  }
+
+  .button-disabled {
+    @apply bg-neutral-300;
+  }
 }

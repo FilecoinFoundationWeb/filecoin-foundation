@@ -1,3 +1,4 @@
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   CurrencyCircleDollar,
   Gift,
@@ -5,7 +6,6 @@ import {
   PenNib,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { IconProps } from '@/components/Icon'
 
 type ProgramFeaturesAndPerksDataProps = {
   icon: IconProps['component']

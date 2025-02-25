@@ -1,9 +1,10 @@
+import { Button } from '@filecoin-foundation/ui/Button'
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
+
 import type { CTAProps } from '@/types/ctaType'
 
-import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
-import { Icon, type IconProps } from '@/components/Icon'
-
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 type NoResultsMessageProps = {
   icon: IconProps['component']
   title: string
@@ -26,7 +27,11 @@ export function NoResultsMessage({
         {title}
       </Heading>
       <p className="max-w-md text-center">{message}</p>
-      {cta && <Button href={cta.href}>{cta.text}</Button>}
+      {cta && (
+        <Button href={cta.href} baseDomain={BASE_DOMAIN}>
+          {cta.text}
+        </Button>
+      )}
     </div>
   )
 }

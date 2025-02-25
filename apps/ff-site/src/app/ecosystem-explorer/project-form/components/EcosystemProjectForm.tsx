@@ -1,11 +1,14 @@
 'use client'
 
+import { Button } from '@filecoin-foundation/ui/Button'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
 import { useForm } from 'react-hook-form'
 
-import { Button } from '@/components/Button'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormCheckbox } from '@/components/Form/ControlledFormCheckbox'
 import { ControlledFormFileInput } from '@/components/Form/ControlledFormFileInput'
@@ -17,7 +20,6 @@ import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
 import { type GroupedOption } from '@/components/Form/FormListboxWithGroups'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
   ALLOWED_IMAGE_FORMATS,
@@ -198,7 +200,11 @@ export function EcosystemProjectForm({
           disabled={isSubmitting}
         />
       </FormSection>
-      <Button disabled={isSubmitting} className="w-full sm:w-auto">
+      <Button
+        disabled={isSubmitting}
+        className="w-full sm:w-auto"
+        baseDomain={BASE_DOMAIN}
+      >
         {isSubmitting ? 'Submitting...' : 'Submit Project'}
       </Button>
     </ControlledForm>

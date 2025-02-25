@@ -1,10 +1,9 @@
 import Link from 'next/link'
-
-import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
+import type { ComponentProps } from 'react'
 
-type InternalLinkProps = Omit<BaseLinkProps, 'href' | 'baseDomain'> & {
+type InternalTextLinkProps = Omit<ComponentProps<typeof Link>, 'href'> & {
   href: Route
 }
 
@@ -12,7 +11,7 @@ export function InternalTextLink({
   className,
   children,
   ...rest
-}: InternalLinkProps) {
+}: InternalTextLinkProps) {
   return (
     <Link className={clsx('text-link', className)} {...rest}>
       {children}

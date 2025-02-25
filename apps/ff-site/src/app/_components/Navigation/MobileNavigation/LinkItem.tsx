@@ -3,6 +3,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
@@ -10,7 +11,6 @@ import type { Route } from 'next'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { Icon } from '@/components/Icon'
 
 export type LinkItemProps = {
   label: string
@@ -36,9 +36,7 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
       >
         {label}
       </BaseLink>
-      {isExternal && (
-        <Icon size={16} component={ArrowUpRight} color="brand-400" />
-      )}
+      {isExternal && <Icon size={16} component={ArrowUpRight} color="subtle" />}
     </li>
   )
 }

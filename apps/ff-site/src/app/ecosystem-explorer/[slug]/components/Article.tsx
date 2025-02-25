@@ -1,11 +1,13 @@
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
-import { Heading } from '@/components/Heading'
-import { Icon } from '@/components/Icon'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
-import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
 type ArticleProps = {
@@ -50,7 +52,9 @@ export function Article({
           {website && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={Globe} />
-              <SmartTextLink href={website}>Website</SmartTextLink>
+              <SmartTextLink href={website} baseDomain={BASE_DOMAIN}>
+                Website
+              </SmartTextLink>
             </li>
           )}
           {repo && (
@@ -68,7 +72,7 @@ export function Article({
           {featuredContent && (
             <li className="inline-flex gap-2 whitespace-nowrap text-brand-300">
               <Icon component={BookOpen} />
-              <SmartTextLink href={featuredContent}>
+              <SmartTextLink href={featuredContent} baseDomain={BASE_DOMAIN}>
                 Featured Content
               </SmartTextLink>
             </li>
