@@ -11,7 +11,7 @@ const styles = {
       border: 'border-brand-500',
     },
     callout: {
-      border: 'border-red-400',
+      border: 'border-brand-error',
     },
   },
 } as const

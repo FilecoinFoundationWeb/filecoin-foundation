@@ -108,12 +108,12 @@ function useNewsletterForm() {
 
       displayNotification('Successfully subscribed!', {
         component: CheckCircle,
-        color: 'green-400',
+        color: 'success',
       })
     } catch (error) {
       displayNotification('An error has occurred. Please try again.', {
         component: XCircle,
-        color: 'red-400',
+        color: 'error',
       })
       Sentry.captureException(error)
     } finally {
