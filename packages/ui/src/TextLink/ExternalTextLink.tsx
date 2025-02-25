@@ -1,10 +1,8 @@
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { type BaseLinkProps } from '@/components/BaseLink'
-import { Icon } from '@/components/Icon'
-
-type ExternalLinkProps = Omit<BaseLinkProps, 'href'> & {
+type ExternalTextLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string
 }
 
@@ -12,7 +10,7 @@ export function ExternalTextLink({
   className,
   children,
   ...rest
-}: ExternalLinkProps) {
+}: ExternalTextLinkProps) {
   return (
     <a
       className={clsx('text-link inline-block text-pretty', className)}
@@ -20,7 +18,7 @@ export function ExternalTextLink({
     >
       {children}
       <span className="ml-1 inline-flex self-center">
-        <Icon component={ArrowUpRight} size={16} color="brand-400" />
+        <Icon component={ArrowUpRight} size={16} color="subtle" />
       </span>
     </a>
   )

@@ -1,3 +1,5 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -18,8 +20,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
-
 
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
 import { applicationProcessData } from './data/applicationProcessData'

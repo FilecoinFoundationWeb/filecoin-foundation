@@ -1,3 +1,4 @@
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   GlobeHemisphereWest,
   GraduationCap,
@@ -5,7 +6,6 @@ import {
   UsersThree,
 } from '@phosphor-icons/react/dist/ssr'
 
-import type { IconProps } from '@/components/Icon'
 
 export type StatisticData = {
   icon: IconProps['component']

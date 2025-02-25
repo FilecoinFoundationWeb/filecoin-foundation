@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { X } from '@phosphor-icons/react/dist/ssr'
 
-import { Icon } from '@/components/Icon'
 
 type SelectedFileProps = {
   file: File
@@ -20,7 +20,7 @@ export function SelectedFile({ file, onReset }: SelectedFileProps) {
       />
 
       <button
-        className="group absolute right-2 top-2 rounded-full p-2 focus:brand-outline"
+        className="group absolute top-2 right-2 rounded-full p-2 focus:brand-outline"
         aria-label="Remove selected file"
         onClick={onReset}
       >

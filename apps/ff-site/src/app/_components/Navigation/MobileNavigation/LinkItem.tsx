@@ -2,14 +2,15 @@
 
 import type { Dispatch, SetStateAction } from 'react'
 
+import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
-import { isExternalLink } from '@/utils/linkUtils'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { BaseLink } from '@/components/BaseLink'
-import { Icon } from '@/components/Icon'
 
 export type LinkItemProps = {
   label: string
@@ -19,7 +20,7 @@ export type LinkItemProps = {
 }
 
 export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
-  const isExternal = isExternalLink(href)
+  const isExternal = isExternalLink(href, BASE_DOMAIN)
   const containerStyles = clsx(
     nested && 'ml-6',
     isExternal && 'inline-flex items-center gap-1',
@@ -29,14 +30,13 @@ export function LinkItem({ label, href, nested, setOpen }: LinkItemProps) {
     <li className={containerStyles}>
       <BaseLink
         href={href}
+        baseDomain={BASE_DOMAIN}
         className="text-link relative before:absolute before:inset-0 before:-m-3.5 before:content-['']"
         onClick={() => setOpen(false)}
       >
         {label}
       </BaseLink>
-      {isExternal && (
-        <Icon size={16} component={ArrowUpRight} color="brand-400" />
-      )}
+      {isExternal && <Icon size={16} component={ArrowUpRight} color="subtle" />}
     </li>
   )
 }

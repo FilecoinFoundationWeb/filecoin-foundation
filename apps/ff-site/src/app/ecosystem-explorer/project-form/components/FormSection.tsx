@@ -1,4 +1,4 @@
-import { Heading } from '@/components/Heading'
+import { Heading } from '@filecoin-foundation/ui/Heading'
 
 type FormSectionProps = {
   title: string

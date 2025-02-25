@@ -19,5 +19,7 @@ FormError.Container = function Container({ children }: PropsWithChildren) {
 }
 
 FormError.Message = function Message({ error }: Pick<FormErrorProps, 'error'>) {
-  return <Description className="text-nowrap text-red-400">{error}</Description>
+  return (
+    <Description className="text-nowrap text-brand-error">{error}</Description>
+  )
 }

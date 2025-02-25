@@ -1,10 +1,10 @@
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Checkbox, type CheckboxProps, Field, Label } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import type { TouchTarget } from '@/types/touchTargetType'
 
-import { Icon } from '@/components/Icon'
 
 type ExcludedHeadlessUIProps = 'className'
 
@@ -37,7 +37,7 @@ export function FormCheckbox({
         <div
           className={clsx(
             TOUCH_TARGET.visibleElementSize,
-            'rounded-sm bg-brand-100 p-0.5 text-brand-100 hover:bg-brand-200 group-focus:bg-brand-200 group-focus:outline group-focus:outline-1 group-focus:outline-offset-2 group-focus:outline-brand-100 group-data-disabled:cursor-not-allowed group-data-checked:bg-brand-400 group-data-checked:hover:bg-brand-500',
+            'rounded-sm bg-brand-100 p-0.5 text-brand-100 group-focus:bg-brand-200 group-focus:outline group-focus:outline-1 group-focus:outline-offset-2 group-focus:outline-brand-100 group-data-checked:bg-brand-400 group-data-disabled:cursor-not-allowed hover:bg-brand-200 group-data-checked:hover:bg-brand-500',
           )}
         >
           <span className="hidden group-data-checked:block">

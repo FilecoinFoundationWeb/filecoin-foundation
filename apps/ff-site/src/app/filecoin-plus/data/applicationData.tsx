@@ -1,6 +1,7 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 export const applicationData = [
   {

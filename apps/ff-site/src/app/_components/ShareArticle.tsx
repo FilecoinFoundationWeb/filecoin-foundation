@@ -1,5 +1,6 @@
 'use client'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { clsx } from 'clsx'
 
 import type { TouchTarget } from '@/types/touchTargetType'
@@ -9,7 +10,7 @@ import { BASE_URL } from '@/constants/siteMetadata'
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
 
 import { CopyToClipboard } from '@/components/CopyToClipboard'
-import { Icon } from '@/components/Icon'
+import { Tooltip } from '@/components/Tooltip/Tooltip'
 
 type ShareArticleProps = {
   articleTitle: string
@@ -36,31 +37,34 @@ export function ShareArticle({
 
   return (
     <div className="space-y-3">
-      <p className="font-bold capitalize text-brand-300">{sectionTitle}</p>
+      <p className="font-bold text-brand-300 capitalize">{sectionTitle}</p>
       <ul
         className={clsx(
           'flex flex-wrap items-center gap-6',
           TOUCH_TARGET.touchAreaOffset,
         )}
       >
-        <CopyToClipboard
-          text={articleUrl}
-          notificationTitle="Link copied to clipboard!"
-        />
+        <li>
+          <CopyToClipboard
+            text={articleUrl}
+            notificationTitle="Link copied to clipboard!"
+          />
+        </li>
         {socialLinksWithIcons.map(({ label, href, icon }) => (
           <li key={label} className="inline-flex">
-            <a
-              aria-label={`Share on ${label}`}
-              href={href}
-              rel="noopener noreferrer"
-              title={`Share on ${label}`}
-              className={clsx(
-                'focus:brand-outline hover:text-brand-400',
-                TOUCH_TARGET.touchAreaPadding,
-              )}
-            >
-              <Icon component={icon} size={32} weight="light" />
-            </a>
+            <Tooltip description={`Share on ${label}`} side="bottom">
+              <a
+                aria-label={`Share on ${label}`}
+                href={href}
+                rel="noopener noreferrer"
+                className={clsx(
+                  'hover:text-brand-400 focus:brand-outline',
+                  TOUCH_TARGET.touchAreaPadding,
+                )}
+              >
+                <Icon component={icon} size={32} weight="light" />
+              </a>
+            </Tooltip>
           </li>
         ))}
       </ul>

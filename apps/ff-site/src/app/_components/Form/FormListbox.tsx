@@ -1,9 +1,9 @@
+import { type IconProps } from '@filecoin-foundation/ui/Icon'
 import { Listbox } from '@headlessui/react'
 
 import { type SpacingValue } from '@/types/tailwindTypes'
 
 import { FormField, type FormFieldProps } from '@/components/Form/FormField'
-import { type IconProps } from '@/components/Icon'
 import { ListboxButton } from '@/components/Listbox/ListboxButton'
 import {
   ListboxOption,

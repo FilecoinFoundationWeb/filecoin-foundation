@@ -1,10 +1,10 @@
-import {  GithubLogo } from '@phosphor-icons/react/dist/ssr'
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
+import { GithubLogo } from '@phosphor-icons/react/dist/ssr'
 
 import type { CTAProps } from '@/types/ctaType'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import type { IconProps } from '@/components/Icon'
 
 type GovernanceDocsData = {
   heading: {

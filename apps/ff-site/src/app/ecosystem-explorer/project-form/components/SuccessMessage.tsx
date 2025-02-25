@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
+import { Heading } from '@filecoin-foundation/ui/Heading'
+import { Icon } from '@filecoin-foundation/ui/Icon'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
-import { Icon } from '@/components/Icon'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type SuccessMessageProps = {
   prNumber: number
@@ -25,7 +25,7 @@ export function SuccessMessage({ prNumber }: SuccessMessageProps) {
             component={CheckCircle}
             size={96}
             weight="fill"
-            color="brand-300"
+            color="primary"
           />
         </div>
 
