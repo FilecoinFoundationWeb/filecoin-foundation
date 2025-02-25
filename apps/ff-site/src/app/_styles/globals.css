@@ -96,7 +96,7 @@
   }
 
   .button-base {
-    @apply rounded-lg border;
+    @apply rounded-lg border font-semibold;
   }
 
   .button-primary {

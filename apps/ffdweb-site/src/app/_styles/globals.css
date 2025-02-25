@@ -37,7 +37,7 @@
 
 @layer components {
   .button-base {
-    @apply border-2;
+    @apply border-2 font-bold;
   }
 
   .button-primary {
