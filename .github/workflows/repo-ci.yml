@@ -31,7 +31,7 @@ jobs:
       - name: Cache Turborepo
         uses: actions/cache@v3
         with:
-          path: ${{ env.TURBO_CACHE_DIR }}
+          path: .turbo/cache
           key: ${{ runner.os }}-turbo-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-turbo-
