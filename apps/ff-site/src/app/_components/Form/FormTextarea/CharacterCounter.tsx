@@ -12,7 +12,7 @@ export function CharacterCounter({ count, limit }: CharacterCounterProps) {
     <p
       className={clsx(
         'text-sm',
-        count > limit ? 'text-red-400' : 'text-brand-300',
+        count > limit ? 'text-brand-error' : 'text-brand-300',
       )}
     >
       {count} / {limit}

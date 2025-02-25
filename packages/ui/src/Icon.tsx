@@ -8,12 +8,12 @@ export type IconProps = {
 }
 
 const colorStyles = {
-  inherit: 'text-inherit',
-  'brand-200': 'text-brand-200',
-  'brand-300': 'text-brand-300',
-  'brand-400': 'text-brand-400',
-  'green-400': 'text-green-400',
-  'red-400': 'text-red-400',
+  inherit: 'inherit',
+  primary: 'text-(--color-icon-primary)',
+  accent: 'text-(--color-icon-accent)',
+  subtle: 'text-(--color-icon-subtle)',
+  success: 'text-(--color-icon-success)',
+  error: 'text-(--color-icon-error)',
 }
 
 export function Icon({

@@ -1,4 +1,4 @@
-import { Icon, type IconProps } from '@/components/Icon'
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
 import type { WhiteHat } from '../types'
 

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
@@ -13,7 +14,6 @@ import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogD
 import { Button } from '@/components/Button'
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
-import type { IconProps } from '@/components/Icon'
 import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
 const NewsletterSchema = z.object({
@@ -108,12 +108,12 @@ function useNewsletterForm() {
 
       displayNotification('Successfully subscribed!', {
         component: CheckCircle,
-        color: 'green-400',
+        color: 'success',
       })
     } catch (error) {
       displayNotification('An error has occurred. Please try again.', {
         component: XCircle,
-        color: 'red-400',
+        color: 'error',
       })
       Sentry.captureException(error)
     } finally {

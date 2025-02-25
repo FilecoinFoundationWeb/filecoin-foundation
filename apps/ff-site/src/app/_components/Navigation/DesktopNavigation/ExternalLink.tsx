@@ -1,6 +1,6 @@
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react'
 
-import { Icon } from '@/components/Icon'
 
 import type { LinkProps } from './SubNavItem'
 

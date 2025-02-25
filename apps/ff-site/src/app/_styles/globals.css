@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@source "../../../../../node_modules/@filecoin-foundation/ui";
 
 @plugin "@tailwindcss/typography";
 @plugin "@headlessui/tailwindcss";
@@ -19,6 +20,15 @@
   --color-brand-600: #0621a4;
   --color-brand-700: #06094e;
   --color-brand-800: #08072e;
+
+  --color-brand-success: var(--color-green-400);
+  --color-brand-error: var(--color-red-400);
+
+  --color-icon-primary: var(--color-brand-300);
+  --color-icon-accent: var(--color-brand-200);
+  --color-icon-subtle: var(--color-brand-400);
+  --color-icon-success: var(--color-brand-success);
+  --color-icon-error: var(--color-brand-error);
 
   --spacing-readable: 60ch;
 }

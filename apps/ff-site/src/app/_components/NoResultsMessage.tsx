@@ -1,8 +1,9 @@
+import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
+
 import type { CTAProps } from '@/types/ctaType'
 
 import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
-import { Icon, type IconProps } from '@/components/Icon'
 
 type NoResultsMessageProps = {
   icon: IconProps['component']

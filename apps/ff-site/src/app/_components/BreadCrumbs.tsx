@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
@@ -10,8 +11,6 @@ import type { Route } from 'next'
 import { PATHS } from '@/constants/paths'
 
 import { capitalize } from '@/utils/capitalize'
-
-import { Icon } from '@/components/Icon'
 
 export function BreadCrumbs() {
   const pathname = usePathname()
@@ -39,7 +38,7 @@ export function BreadCrumbs() {
             ? PATHS.HOME.path
             : (('/' + pathNames.slice(1, index + 1).join('/')) as Route)
           const isActive = pathname === href
-          const itemClasses = clsx('focus:brand-outline hover:underline', {
+          const itemClasses = clsx('hover:underline focus:brand-outline', {
             'text-brand-300': !isActive,
             'text-brand-400': isActive,
           })
@@ -51,7 +50,7 @@ export function BreadCrumbs() {
                 <Icon
                   component={CaretRight}
                   size={20}
-                  color="brand-400"
+                  color="subtle"
                   weight="bold"
                 />
               )}

@@ -1,9 +1,9 @@
 'use client'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { CaretDown } from '@phosphor-icons/react'
 
-import { Icon } from '@/components/Icon'
 
 type PopOverProps = {
   label: string
@@ -29,12 +29,12 @@ export function NavigationPopover({
       >
         <span>{label}</span>
         <span className="transition-transform ui-open:rotate-180">
-          <Icon component={CaretDown} size={20} color="brand-400" />
+          <Icon component={CaretDown} size={20} color="subtle" />
         </span>
       </PopoverButton>
       <PopoverPanel
         transition
-        className="z-10 transition duration-200 ease-out data-closed:translate-y-1 data-open:translate-y-0 data-closed:opacity-0 data-open:opacity-100"
+        className="z-10 transition duration-200 ease-out data-closed:translate-y-1 data-closed:opacity-0 data-open:translate-y-0 data-open:opacity-100"
         anchor={{
           to: 'bottom',
           gap: SPACE_BETWEEN_PANEL_AND_BUTTON,

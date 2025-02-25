@@ -9,7 +9,8 @@
   "exports": {
     "./BaseLink": "./src/BaseLink.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
-    "./DescriptionText": "./src/DescriptionText.tsx"
+    "./DescriptionText": "./src/DescriptionText.tsx",
+    "./Icon": "./src/Icon.tsx"
   },
   "scripts": {
     "lint": "eslint . --fix"

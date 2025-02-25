@@ -1,8 +1,8 @@
 import { type BaseLinkProps } from '@filecoin-foundation/ui/BaseLink'
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { Icon } from '@/components/Icon'
 
 type ExternalLinkProps = Omit<BaseLinkProps, 'href' | 'baseDomain'> & {
   href: string
@@ -20,7 +20,7 @@ export function ExternalTextLink({
     >
       {children}
       <span className="ml-1 inline-flex self-center">
-        <Icon component={ArrowUpRight} size={16} color="brand-400" />
+        <Icon component={ArrowUpRight} size={16} color="subtle" />
       </span>
     </a>
   )

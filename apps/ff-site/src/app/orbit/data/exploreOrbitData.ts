@@ -1,3 +1,4 @@
+import type { IconProps } from '@filecoin-foundation/ui/Icon'
 import {
   BookOpen,
   ClipboardText,
@@ -5,8 +6,6 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-
-import type { IconProps } from '@/components/Icon'
 
 
 type ExploreOrbitData = {

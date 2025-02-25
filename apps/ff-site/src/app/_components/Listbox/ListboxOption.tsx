@@ -1,9 +1,9 @@
 import React, { type ElementType } from 'react'
 
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { ListboxOption as HeadlessUIListboxOption } from '@headlessui/react'
 import { Check } from '@phosphor-icons/react'
 
-import { Icon } from '@/components/Icon'
 
 export type OptionType = {
   id: string
