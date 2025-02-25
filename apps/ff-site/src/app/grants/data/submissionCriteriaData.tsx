@@ -1,6 +1,6 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { Code, BracketsAngle, Users } from '@phosphor-icons/react/dist/ssr'
 
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 export const submissionCriteriaData = [
   {

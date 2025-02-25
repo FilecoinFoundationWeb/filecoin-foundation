@@ -1,3 +1,5 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+
 import { type SlugParams } from '@/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
@@ -13,7 +15,6 @@ import { CTASection } from '@/components/CTASection'
 import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 import {

@@ -15,11 +15,6 @@ export type SubNavItemProps = {
     | 'externalSecondary'
 }
 
-export type LinkProps = Omit<SubNavItemProps, 'linkType'> & {
-  className: string
-  ariaLabel: string
-}
-
 const baseStyles = 'group w-full rounded-lg focus:brand-outline'
 const extendedStyles = {
   internal: 'inline-block bg-brand-800 p-4 hover:bg-brand-700',
@@ -35,20 +30,23 @@ export function SubNavItem({
   label,
   description,
   linkType = 'internal',
+  ...rest
 }: SubNavItemProps) {
   const external = linkType !== 'internal'
   const linkClasses = clsx(baseStyles, extendedStyles[linkType])
   const ariaLabel = `${label} page (${external ? 'external link' : 'internal link'})`
 
-  const Link = external ? ExternalLink : InternalLink
+  const commonProps = {
+    label,
+    description,
+    className: linkClasses,
+    ariaLabel,
+    ...rest,
+  }
 
-  return (
-    <Link
-      href={href}
-      label={label}
-      description={description}
-      className={linkClasses}
-      ariaLabel={ariaLabel}
-    />
-  )
+  if (external) {
+    return <ExternalLink href={href as string} {...commonProps} />
+  }
+
+  return <InternalLink href={href as Route} {...commonProps} />
 }
