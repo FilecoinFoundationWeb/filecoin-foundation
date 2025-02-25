@@ -1,8 +1,9 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 export const PROJECT_FORM_DESCRIPTION = [
   <>

@@ -2,13 +2,13 @@ import Link from 'next/link'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { Button } from '@/components/Button'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type SuccessMessageProps = {
   prNumber: number

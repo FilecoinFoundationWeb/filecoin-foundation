@@ -1,5 +1,6 @@
 'use client'
 
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { Field } from '@headlessui/react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import prettyBytes from 'pretty-bytes'
@@ -17,7 +18,6 @@ import { FormError } from '@/components/Form/FormError'
 import { formFieldStyle } from '@/components/Form/FormField'
 import { FormLabel } from '@/components/Form/FormLabel'
 import { type GroupedOption } from '@/components/Form/FormListboxWithGroups'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import {
   ALLOWED_IMAGE_FORMATS,

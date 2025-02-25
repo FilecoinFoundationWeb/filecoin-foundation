@@ -1,10 +1,12 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
+
 import { footerNavigationItems } from '@/constants/navigation'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
 import { Social } from '@/components/Social'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
-import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
 export function Footer() {
   return (
@@ -40,7 +42,9 @@ export function Footer() {
             <ul className="flex w-max flex-col gap-3">
               {items.map(({ href, label }) => (
                 <li key={href}>
-                  <SmartTextLink href={href}>{label}</SmartTextLink>
+                  <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
+                    {label}
+                  </SmartTextLink>
                 </li>
               ))}
             </ul>

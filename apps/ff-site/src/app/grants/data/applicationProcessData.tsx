@@ -1,4 +1,4 @@
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 export const applicationProcessData = [
   {

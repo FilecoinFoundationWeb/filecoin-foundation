@@ -1,3 +1,5 @@
+import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
@@ -22,7 +24,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 import { aboutData } from './data/aboutData'
 import { applicationData } from './data/applicationData'
