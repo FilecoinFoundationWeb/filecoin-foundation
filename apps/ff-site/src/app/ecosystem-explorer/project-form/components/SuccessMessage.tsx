@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { CheckCircle } from '@phosphor-icons/react/dist/ssr'
 
@@ -7,7 +8,6 @@ import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'
 
 type SuccessMessageProps = {

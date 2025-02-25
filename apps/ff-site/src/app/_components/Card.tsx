@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from 'next/image'
 
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
@@ -15,7 +16,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
-import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import {
   type TagGroupProps,

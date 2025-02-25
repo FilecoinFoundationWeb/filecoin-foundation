@@ -1,11 +1,11 @@
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+import { Heading } from '@filecoin-foundation/ui/Heading'
 
 import { type CTAProps } from '@/types/ctaType'
 
 import { PATHS } from '@/constants/paths'
 
 import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
 
 type ErrorMessageProps = {
   kicker: string

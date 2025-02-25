@@ -1,7 +1,7 @@
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 
-import { Heading } from '@/components/Heading'
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { ExternalTextLink } from '@/components/TextLink/ExternalTextLink'

@@ -2,9 +2,9 @@ import {
   DescriptionText,
   type DescriptionTextType,
 } from '@filecoin-foundation/ui/DescriptionText'
+import { Heading } from '@filecoin-foundation/ui/Heading'
 
 import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
 
 type CTASectionProps = {
   title: string
