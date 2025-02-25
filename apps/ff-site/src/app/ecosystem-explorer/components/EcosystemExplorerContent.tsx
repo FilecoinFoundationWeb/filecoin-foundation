@@ -1,3 +1,4 @@
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
@@ -12,7 +13,6 @@ import {
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
 import { getSortOptions } from '@/utils/getSortOptions'

@@ -1,3 +1,4 @@
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
@@ -13,7 +14,6 @@ import {
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import {
   entryMatchesCategoryQuery,

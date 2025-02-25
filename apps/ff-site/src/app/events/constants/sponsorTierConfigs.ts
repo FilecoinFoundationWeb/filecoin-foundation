@@ -1,4 +1,4 @@
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import type { SponsorTier } from '../types/sponsorType'
 

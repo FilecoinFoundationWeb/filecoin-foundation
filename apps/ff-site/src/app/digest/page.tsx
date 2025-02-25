@@ -1,3 +1,4 @@
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
@@ -7,7 +8,6 @@ import { attributes } from '@/content/pages/digest.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
