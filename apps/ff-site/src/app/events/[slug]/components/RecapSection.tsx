@@ -1,6 +1,8 @@
-import { PATHS } from '@/constants/paths'
+import { Button } from '@filecoin-foundation/ui/Button'
 
-import { Button } from '@/components/Button'
+import { PATHS } from '@/constants/paths'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { PageSection } from '@/components/PageSection'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
@@ -18,7 +20,11 @@ export function RecapSection({ youtubeEmbedUrl }: RecapSectionProps) {
       description="This event has concluded, and we hope you had a fantastic experience! Stay tuned for our upcoming events and see what exciting things are on the horizon."
     >
       <YouTubeVideoEmbed videoUrl={youtubeEmbedUrl} />
-      <Button className="sm:self-center" href={PATHS.EVENTS.path}>
+      <Button
+        className="sm:self-center"
+        href={PATHS.EVENTS.path}
+        baseDomain={BASE_DOMAIN}
+      >
         View Upcoming Events
       </Button>
     </PageSection>

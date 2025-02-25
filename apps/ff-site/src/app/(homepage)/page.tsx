@@ -1,5 +1,8 @@
+import { Button } from '@filecoin-foundation/ui/Button'
+
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_URLS } from '@/constants/siteMetadata'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { attributes as digestAttributes } from '@/content/pages/digest.md'
@@ -12,7 +15,6 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
-import { Button } from '@/components/Button'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
@@ -20,7 +22,6 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-
 
 import { FeaturedBlogPosts } from './components/FeaturedBlogPosts'
 import { FeaturedEcosystemProjects } from './components/FeaturedEcosystemProjects'
@@ -111,6 +112,7 @@ export default async function Home() {
           <Button
             className="sm:self-center"
             href={PATHS.ECOSYSTEM_EXPLORER.path}
+            baseDomain={BASE_DOMAIN}
           >
             View All
           </Button>
