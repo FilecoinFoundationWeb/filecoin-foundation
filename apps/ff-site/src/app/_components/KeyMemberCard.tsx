@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import type { StaticImageProps, ImageProps } from '@/types/imageType'
 
-import { Heading } from '@/components/Heading'
 
 type KeyMemberCardProps = {
   name: string

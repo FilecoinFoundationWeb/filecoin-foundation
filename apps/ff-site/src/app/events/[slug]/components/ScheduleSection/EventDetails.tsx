@@ -1,7 +1,8 @@
 'use client'
 
+import { Heading } from '@filecoin-foundation/ui/Heading'
+
 import { BasicCard } from '@/components/BasicCard'
-import { Heading } from '@/components/Heading'
 import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { SmartTextLink } from '@/components/TextLink/SmartTextLink'
 
@@ -9,7 +10,6 @@ import type { Event } from '../../../types/eventType'
 import { formatTime } from '../../utils/dateUtils'
 
 import { Participants } from './Participants'
-
 
 type EventDetailsProps = NonNullable<
   Event['schedule']

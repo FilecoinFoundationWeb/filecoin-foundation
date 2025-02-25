@@ -1,4 +1,4 @@
-import { type IconProps, Icon } from '@filecoin-foundation/ui/Icon'
+import { type IconProps, Icon } from './Icon'
 import { clsx } from 'clsx'
 
 export type HeadingProps = {

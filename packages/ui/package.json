@@ -10,6 +10,7 @@
     "./BaseLink": "./src/BaseLink.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
+    "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx"
   },
   "scripts": {

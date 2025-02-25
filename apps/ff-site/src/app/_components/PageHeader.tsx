@@ -4,6 +4,7 @@ import {
   DescriptionText,
   type DescriptionTextType,
 } from '@filecoin-foundation/ui/DescriptionText'
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { clsx } from 'clsx'
 
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
@@ -14,7 +15,6 @@ import {
   type CTAButtonGroupProps,
   CTAButtonGroup,
 } from '@/components/CTAButtonGroup'
-import { Heading } from '@/components/Heading'
 import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
 

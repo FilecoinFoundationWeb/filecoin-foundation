@@ -1,5 +1,6 @@
+import { Heading } from '@filecoin-foundation/ui/Heading'
+
 import type { BadgeProps } from '@/components/Badge'
-import { Heading } from '@/components/Heading'
 
 type CardWithBadgeProps = {
   title: string
