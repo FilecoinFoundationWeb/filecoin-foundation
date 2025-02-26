@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { capitalize } from '@filecoin-foundation/utils/stringUtils'
+import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
@@ -16,16 +16,13 @@ export function BreadCrumbs() {
   const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
 
   const formatLabel = (path: string) => {
-    let label = path
+    const label = path
       .split('-')
       .map((word) => capitalize(word))
       .join(' ')
 
     const maxLength = 20
-    if (label.length > maxLength) {
-      label = `${label.substring(0, maxLength).trimEnd()}...`
-    }
-    return label
+    return truncate(label, maxLength)
   }
 
   return (
