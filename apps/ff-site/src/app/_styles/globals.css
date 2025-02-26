@@ -62,7 +62,7 @@
   }
 
   & pre {
-    @apply border border-solid border-brand-600;
+    @apply border-brand-600 border border-solid;
   }
 
   & iframe {
@@ -88,11 +88,11 @@
 
 @layer components {
   .text-link {
-    @apply text-brand-300 hover:underline focus:brand-outline;
+    @apply text-brand-300 focus:brand-outline hover:underline;
   }
 
   .toc-header {
-    @apply text-sm font-semibold text-brand-200 uppercase;
+    @apply text-brand-200 text-sm font-semibold uppercase;
   }
 
   .button-base {
@@ -104,7 +104,7 @@
   }
 
   .button-ghost {
-    @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
+    @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
   }
 
   .button-disabled {
@@ -112,7 +112,7 @@
   }
 
   .tag-label-base {
-    @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;
+    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize;
   }
 
   .tag-label-primary {
@@ -125,5 +125,13 @@
 
   .tag-label-callout {
     @apply border-brand-error;
+  }
+
+  .breadcrumbs-base {
+    @apply text-brand-300 focus:brand-outline hover:underline;
+  }
+
+  .breadcrumbs-active {
+    @apply text-brand-400;
   }
 }

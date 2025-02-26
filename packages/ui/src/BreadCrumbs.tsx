@@ -31,16 +31,16 @@ export function BreadCrumbs({
       <ol className="inline-flex items-center gap-2.5">
         {pathNames.map((path, index) => {
           const isRoot = index === 0
+
           const href = isRoot
             ? homePath
             : '/' + pathNames.slice(1, index + 1).join('/')
 
           const isActive = currentPath === href
-          const itemClasses = clsx('focus:brand-outline hover:underline', {
-            'text-brand-300': !isActive,
-            'text-brand-400': isActive,
-          })
-
+          const linkClasses = clsx(
+            'breadcrumbs-base',
+            isActive && 'breadcrumbs-active',
+          )
           const label = isRoot ? capitalize(homeLabel) : formatLabel(path)
 
           return (
@@ -53,7 +53,11 @@ export function BreadCrumbs({
                   weight="bold"
                 />
               )}
-              {renderLink({ href, className: itemClasses, children: label })}
+              {renderLink({
+                href,
+                className: linkClasses,
+                children: label,
+              })}
             </li>
           )
         })}
