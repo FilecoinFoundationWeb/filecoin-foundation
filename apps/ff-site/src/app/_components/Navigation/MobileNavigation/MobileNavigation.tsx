@@ -4,15 +4,17 @@ import { useState } from 'react'
 
 import Link from 'next/link'
 
+import { Social } from '@filecoin-foundation/ui/Social'
 import { List, X } from '@phosphor-icons/react'
 
 import { mobileNavigationItems } from '@/constants/navigation'
 import { PATHS } from '@/constants/paths'
 
+import { socialLinksWithIcons } from '@/utils/socialConfig'
+
 import { IconButton } from '@/components/IconButton'
 import { Logo } from '@/components/Logo'
 import { SlideOver } from '@/components/SlideOver'
-import { Social } from '@/components/Social'
 
 import { LinkItem } from './LinkItem'
 import { NestedMenu } from './NestedMenu'
@@ -60,7 +62,7 @@ export function MobileNavigation() {
               />
             ))}
           </ul>
-          <Social />
+          <Social socialLinksWithIcons={socialLinksWithIcons} />
         </div>
       </SlideOver>
     </div>
