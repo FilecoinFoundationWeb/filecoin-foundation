@@ -17,7 +17,7 @@ export default function Digest() {
         kicker="Social Media"
         title="Follow us and join the conversation."
       >
-        <Social socialLinksWithIcons={socialLinksWithIcons} />
+        <Social linksWithIcons={socialLinksWithIcons} />
       </CTASection>
     </>
   )

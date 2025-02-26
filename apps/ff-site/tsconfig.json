@@ -30,7 +30,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "cypress/**/*.ts",
-    "../../packages/utils/src/_types/touchTargetType.ts"
+    "cypress/**/*.ts"
   ]
 }

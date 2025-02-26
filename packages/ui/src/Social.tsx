@@ -2,21 +2,21 @@ import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
 
-type SocialLinkWithIcon = {
+type linkWithIcon = {
   label: string
   href: string
   icon: IconProps['component']
 }
 
 type SocialProps = {
-  socialLinksWithIcons: SocialLinkWithIcon[]
+  linksWithIcons: linkWithIcon[]
 }
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2 sm:mx-0',
 }
 
-export function Social({ socialLinksWithIcons }: SocialProps) {
+export function Social({ linksWithIcons }: SocialProps) {
   return (
     <ul
       className={clsx(
@@ -24,7 +24,7 @@ export function Social({ socialLinksWithIcons }: SocialProps) {
         TOUCH_TARGET.touchAreaOffset,
       )}
     >
-      {socialLinksWithIcons.map(({ label, href, icon }) => {
+      {linksWithIcons.map(({ label, href, icon }) => {
         return (
           <li key={label} className="inline-flex">
             <a

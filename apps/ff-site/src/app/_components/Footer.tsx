@@ -30,7 +30,7 @@ export function Footer() {
 
       <hr />
       <div className="sm:px-8">
-        <Social socialLinksWithIcons={socialLinksWithIcons} />
+        <Social linksWithIcons={socialLinksWithIcons} />
       </div>
 
       <hr />
