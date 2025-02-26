@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
 
 const FOOTER_GAP = 'gap-16'
@@ -12,15 +13,13 @@ const FOOTER_SECTION_GAP = 'gap-10'
 export function Footer() {
   return (
     <footer className={clsx('grid grid-cols-1', FOOTER_GAP)}>
-      {/* !TODO: DO we need footer gap on > sm screen */}
       <div
         className={clsx(
           'grid grid-cols-1 lg:auto-cols-max lg:grid-flow-col',
           FOOTER_GAP,
         )}
       >
-        <div aria-label="Logo">Logo</div>
-
+        <Logo />
         <nav
           aria-label="Footer navigation"
           className={clsx(
