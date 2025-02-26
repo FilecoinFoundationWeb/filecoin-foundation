@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
@@ -12,7 +12,9 @@ export default function Home() {
     <>
       <section>
         <h1>A Better Web for Everyone</h1>
-        <Link href={PATHS.PROJECTS.path}>View Projects</Link>
+        <InternalTextLink href={PATHS.PROJECTS.path}>
+          View Projects
+        </InternalTextLink>
       </section>
 
       <section>
@@ -33,7 +35,9 @@ export default function Home() {
           vulnerable information by leveraging the resilience of decentralized
           storage.
         </p>
-        <Link href={PATHS.ABOUT.path}>More About FFDW</Link>
+        <InternalTextLink href={PATHS.ABOUT.path}>
+          More About FFDW
+        </InternalTextLink>
       </section>
 
       <section>
@@ -50,7 +54,9 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <Link href={PATHS.PROJECTS.path}>View All Projects</Link>
+        <InternalTextLink href={PATHS.PROJECTS.path}>
+          View All Projects
+        </InternalTextLink>
       </section>
 
       <section>
@@ -65,20 +71,20 @@ export default function Home() {
         <div>
           <div>
             <h3>Use Cases</h3>
-            <a href="#">Explore</a>
+            <InternalTextLink href="#">Explore</InternalTextLink>
           </div>
           <div>
             <h3>Interactive Tutorials</h3>
-            <a href="#">Explore</a>
+            <InternalTextLink href="#">Explore</InternalTextLink>
           </div>
           <div>
             <h3>Videos</h3>
-            <a href="#">Explore</a>
+            <InternalTextLink href="#">Explore</InternalTextLink>
           </div>
         </div>
-        <Link href={PATHS.LEARNING_RESOURCES.path}>
+        <InternalTextLink href={PATHS.LEARNING_RESOURCES.path}>
           View All Learning Resources
-        </Link>
+        </InternalTextLink>
       </section>
 
       <section>
@@ -91,7 +97,9 @@ export default function Home() {
           for digital future developers to build up the community inside DWeb to
           create a decentralized future.
         </p>
-        <Link href={PATHS.DIGEST.path}>Read FFDW Digest</Link>
+        <InternalTextLink href={PATHS.DIGEST.path}>
+          Read FFDW Digest
+        </InternalTextLink>
       </section>
 
       <section>
@@ -106,11 +114,11 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do...
               </p>
-              <a href="#">Read more</a>
+              <InternalTextLink href="#">Read more</InternalTextLink>
             </div>
           ))}
         </div>
-        <Link href={PATHS.BLOG.path}>View All</Link>
+        <InternalTextLink href={PATHS.BLOG.path}>View All</InternalTextLink>
       </section>
 
       <CTASection
