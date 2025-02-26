@@ -1,0 +1,81 @@
+import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
+import clsx from 'clsx'
+
+import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
+import { Social } from '@/components/Social'
+
+const FOOTER_GAP = 'gap-16'
+const FOOTER_SECTION_GAP = 'gap-10'
+
+export function Footer() {
+  return (
+    <footer className={clsx('grid grid-cols-1', FOOTER_GAP)}>
+      {/* !TODO: DO we need footer gap on > sm screen */}
+      <div
+        className={clsx(
+          'grid grid-cols-1 lg:auto-cols-max lg:grid-flow-col',
+          FOOTER_GAP,
+        )}
+      >
+        <div aria-label="Logo">Logo</div>
+
+        <nav
+          aria-label="Footer navigation"
+          className={clsx(
+            'grid grid-cols-1 sm:auto-cols-fr sm:grid-flow-col',
+            FOOTER_GAP,
+          )}
+        >
+          {Object.entries(footerNavigationItems).map(([title, items]) => (
+            <div
+              key={title}
+              className={clsx('grid content-start', FOOTER_SECTION_GAP)}
+            >
+              <h3 className="text-base font-bold capitalize">{title}</h3>
+              <ul className="grid gap-3">
+                {items.map(({ href, label }) => (
+                  <li key={href}>
+                    <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
+                      {label}
+                    </SmartTextLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <div className={clsx('grid content-start', FOOTER_SECTION_GAP)}>
+            <h3 className="text-base font-bold capitalize">Follow us</h3>
+            <Social />
+          </div>
+        </nav>
+      </div>
+
+      <div className="grid gap-8">
+        <hr />
+        <div className="grid grid-rows-2 gap-5 lg:grid-cols-2 lg:grid-rows-1 lg:items-baseline">
+          <ul
+            className={clsx(
+              'grid auto-cols-max grid-flow-col',
+              FOOTER_SECTION_GAP,
+            )}
+          >
+            {footerLegalItems.map(({ label, href }) => (
+              <li key={href} className="fit-content">
+                <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
+                  {label}
+                </SmartTextLink>
+              </li>
+            ))}
+          </ul>
+
+          <p className="text-sm lg:text-end">
+            &copy; {new Date().getFullYear()} Filecoin Foundation for
+            Decentralized Web{' '}
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
