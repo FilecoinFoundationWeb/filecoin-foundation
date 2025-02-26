@@ -147,9 +147,18 @@ export default function FAQs() {
             page. Additionally, updates can be found on our{' '}
             <InternalTextLink href={PATHS.BLOG.path}>blog</InternalTextLink> and
             across social media channels:{' '}
-            <a href={FFDW_URLS.social.twitter}>X</a>,{' '}
-            <a href={FFDW_URLS.social.youTube}>YouTube</a>, and{' '}
-            <a href={FFDW_URLS.social.linkedIn}>LinkedIn</a>.
+            <ExternalTextLink href={FFDW_URLS.social.twitter.href}>
+              {FFDW_URLS.social.twitter.label}
+            </ExternalTextLink>
+            ,{' '}
+            <ExternalTextLink href={FFDW_URLS.social.youtube.href}>
+              {FFDW_URLS.social.youtube.label}
+            </ExternalTextLink>
+            , and{' '}
+            <ExternalTextLink href={FFDW_URLS.social.linkedin.href}>
+              {FFDW_URLS.social.linkedin.label}
+            </ExternalTextLink>
+            .
           </p>
         </article>
       </section>
