@@ -1,3 +1,5 @@
+import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function Project() {
@@ -18,8 +20,8 @@ export default function Project() {
       </section>
 
       <div>
-        <a href="#">Website</a>
-        <a href="#">Read Blog Post</a>
+        <InternalTextLink href="#">Website</InternalTextLink>
+        <InternalTextLink href="#">Read Blog Post</InternalTextLink>
       </div>
     </>
   )
