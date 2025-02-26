@@ -1,3 +1,5 @@
+import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
+
 import { type SlugParams } from '@/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
@@ -11,8 +13,6 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
-import { TagGroup } from '@/components/TagComponents/TagGroup'
-import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData, getEventsData } from '../utils/getEventData'

@@ -1,5 +1,6 @@
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
@@ -7,7 +8,6 @@ import { BookOpen, GitFork, Globe, XLogo } from '@phosphor-icons/react/dist/ssr'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { TagLabel } from '@/components/TagComponents/TagLabel'
 import { YouTubeVideoEmbed } from '@/components/YouTubeVideoEmbed'
 
 type ArticleProps = {

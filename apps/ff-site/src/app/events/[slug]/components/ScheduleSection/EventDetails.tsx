@@ -1,12 +1,12 @@
 'use client'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { BasicCard } from '@/components/BasicCard'
-import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import type { Event } from '../../../types/eventType'
 import { formatTime } from '../../utils/dateUtils'

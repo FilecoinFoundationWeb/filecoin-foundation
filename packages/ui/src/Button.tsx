@@ -10,7 +10,7 @@ import { clsx } from 'clsx'
 const variantClasses = {
   primary: 'button-primary',
   ghost: 'button-ghost',
-}
+} as const
 
 type ButtonProps = {
   children: React.ReactNode

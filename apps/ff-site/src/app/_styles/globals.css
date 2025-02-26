@@ -110,4 +110,20 @@
   .button-disabled {
     @apply bg-brand-200;
   }
+
+  .tag-label-base {
+    @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;
+  }
+
+  .tag-label-primary {
+    @apply border-brand-300;
+  }
+
+  .tag-label-secondary {
+    @apply border-brand-500;
+  }
+
+  .tag-label-callout {
+    @apply border-brand-error;
+  }
 }

@@ -1,10 +1,11 @@
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/dateUtils'
 
 import { ArticleHeader } from '@/components/ArticleHeader'
-import { TagLabel } from '@/components/TagComponents/TagLabel'
 
 import type { BlogPost } from '../../types/blogPostType'
 

@@ -22,9 +22,7 @@ export function TagGroup({ tags }: TagGroupProps) {
         <TagLabel
           key={index}
           icon={icon}
-          variant={
-            index === 0 ? 'primary' : (variant ?? 'secondary')
-          }
+          variant={index === 0 ? 'primary' : (variant ?? 'secondary')}
         >
           {text}
         </TagLabel>
