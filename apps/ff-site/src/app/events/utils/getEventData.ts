@@ -1,6 +1,4 @@
-import assert from 'node:assert'
-
-import { isAfter } from 'date-fns'
+import { isBefore } from 'date-fns'
 
 import { PATHS } from '@/constants/paths'
 
@@ -53,30 +51,30 @@ function assertEndIsAfterStart(
 ) {
   const { startDate, endDate, program, schedule } = event
 
-  endDate &&
-    assert(
-      isAfter(endDate, startDate),
+  if (endDate && isBefore(endDate, startDate)) {
+    throw new Error(
       `${event.title}: end-date ${endDate} must be greater than start-date ${startDate}`,
     )
+  }
 
   if (program) {
     program.events.forEach(({ startDate, endDate }) => {
-      endDate &&
-        assert(
-          isAfter(endDate, startDate),
+      if (endDate && isBefore(endDate, startDate)) {
+        throw new Error(
           `${event.title}: end-date ${endDate} must be greater than start-date ${startDate}`,
         )
+      }
     })
   }
 
   if (schedule) {
     schedule.days.forEach((day) => {
       day.events.forEach(({ startTime, endTime }) => {
-        endTime &&
-          assert(
-            endTime > startTime,
+        if (endTime && endTime < startTime) {
+          throw new Error(
             `${event.title}: end-time ${endTime} must be greater than start-time ${startTime}`,
           )
+        }
       })
     })
   }
