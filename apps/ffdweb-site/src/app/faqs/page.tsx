@@ -1,4 +1,7 @@
-import Link from 'next/link'
+import {
+  ExternalTextLink,
+  InternalTextLink,
+} from '@filecoin-foundation/ui/TextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
@@ -41,8 +44,10 @@ export default function FAQs() {
             technologies, initiatives that accelerate their adoption, and
             community building that fosters a network of decentralized web
             advocates and builders. This includes{' '}
-            <Link href={PATHS.PROJECTS.path}>collaborations</Link> with
-            developers, researchers, nonprofit organizations, and others to
+            <InternalTextLink href={PATHS.PROJECTS.path}>
+              collaborations
+            </InternalTextLink>{' '}
+            with developers, researchers, nonprofit organizations, and others to
             build robust decentralized infrastructure and introduce and
             highlight new and impactful use cases for decentralized
             technologies.
@@ -66,9 +71,9 @@ export default function FAQs() {
             activists; Distributed Press is creating alternatives to centralized
             publishing platforms; and Spritely is creating ways to authorize and
             process data without centralized gatekeepers –– see more in the{' '}
-            <Link href="/blog/filecoin-foundation-2024-annual-report">
+            <InternalTextLink href="/blog/filecoin-foundation-2024-annual-report">
               2024 Report
-            </Link>
+            </InternalTextLink>
             . All these projects are designed to drive the development and
             adoption of open, decentralized technologies. FFDW works
             hand-in-hand with funded projects to drive meaningful change.
@@ -82,15 +87,19 @@ export default function FAQs() {
           </h2>
           <p>
             Check out the{' '}
-            <Link href={PATHS.LEARNING_RESOURCES.path}>Learning Resources</Link>{' '}
+            <InternalTextLink href={PATHS.LEARNING_RESOURCES.path}>
+              Learning Resources
+            </InternalTextLink>{' '}
             page! We have a variety of education resources – sourced from FFDW
             and beyond – including reading, research, webinars, and more,
             offering a look into decentralized technologies and its
             applications. These resources start from an introductory level and
             expand upward for more experienced users and builders. The{' '}
-            <Link href={PATHS.DIGEST.path}>DWeb Digest</Link> is also a deep
-            dive into different perspectives from the decentralized web
-            community.
+            <InternalTextLink href={PATHS.DIGEST.path}>
+              DWeb Digest
+            </InternalTextLink>{' '}
+            is also a deep dive into different perspectives from the
+            decentralized web community.
           </p>
         </article>
 
@@ -104,29 +113,52 @@ export default function FAQs() {
             decentralized web ecosystem following the principle that collective
             experience and resources can lead to greater impact! In the past,
             FFDW has co-funded projects with{' '}
-            <a href="https://artizen.fund/">Artizen</a> and{' '}
-            <a href="https://unfinished.com/">Unfinished</a>
+            <ExternalTextLink href="https://artizen.fund/">
+              Artizen
+            </ExternalTextLink>{' '}
+            and{' '}
+            <ExternalTextLink href="https://unfinished.com/">
+              Unfinished
+            </ExternalTextLink>
             co-hosted the Social Impact Summit with Blockchain Law Center for
             Social Good at the{' '}
-            <a href="https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good">
+            <ExternalTextLink href="https://www.usfca.edu/law/engaged-learning/center-law-tech-social-good">
               University of San Francisco
-            </a>
-            ; and participated in
-            <a href="https://dwebcamp.org/">DWeb Camp</a>, among other things.
-            Interested in working together?{' '}
-            <a href={FFDW_URLS.email}>Get in touch with our FFDW team</a>.
+            </ExternalTextLink>
+            ; and participated in{' '}
+            <ExternalTextLink href="https://dwebcamp.org/">
+              DWeb Camp
+            </ExternalTextLink>
+            , among other things. Interested in working together?{' '}
+            <ExternalTextLink href={FFDW_URLS.email}>
+              Get in touch with our FFDW team
+            </ExternalTextLink>
+            .
           </p>
         </article>
 
         <article>
           <h2>Where can I find updates on the progress on FFDW projects?</h2>
           <p>
-            Check out the <Link href={PATHS.PROJECTS.path}>Projects</Link> page.
-            Additionally, updates can be found on our{' '}
-            <Link href={PATHS.BLOG.path}>blog</Link> and across social media
-            channels: <a href={FFDW_URLS.social.twitter}>X</a>,{' '}
-            <a href={FFDW_URLS.social.youTube}>YouTube</a>, and{' '}
-            <a href={FFDW_URLS.social.linkedIn}>LinkedIn</a>.
+            Check out the{' '}
+            <InternalTextLink href={PATHS.PROJECTS.path}>
+              Projects
+            </InternalTextLink>{' '}
+            page. Additionally, updates can be found on our{' '}
+            <InternalTextLink href={PATHS.BLOG.path}>blog</InternalTextLink> and
+            across social media channels:{' '}
+            <ExternalTextLink href={FFDW_URLS.social.twitter.href}>
+              {FFDW_URLS.social.twitter.label}
+            </ExternalTextLink>
+            ,{' '}
+            <ExternalTextLink href={FFDW_URLS.social.youtube.href}>
+              {FFDW_URLS.social.youtube.label}
+            </ExternalTextLink>
+            , and{' '}
+            <ExternalTextLink href={FFDW_URLS.social.linkedin.href}>
+              {FFDW_URLS.social.linkedin.label}
+            </ExternalTextLink>
+            .
           </p>
         </article>
       </section>

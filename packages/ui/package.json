@@ -14,6 +14,10 @@
     "./ErrorMessage": "./src/ErrorMessage.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
+    "./Social": "./src/Social.tsx",
+    "./TagComponents": "./src/TagComponents/index.ts",
+    "./TagComponents/*": "./src/TagComponents/*.tsx",
+    "./TextLink": "./src/TextLink/index.ts",
     "./TextLink/*": "./src/TextLink/*.tsx"
   },
   "scripts": {

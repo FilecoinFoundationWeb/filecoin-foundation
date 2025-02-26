@@ -1,9 +1,8 @@
 'use client'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
-
-import type { TouchTarget } from '@/types/touchTargetType'
 
 import { BASE_URL } from '@/constants/siteMetadata'
 
