@@ -8,15 +8,10 @@ import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import type { Route } from 'next'
 
-type BreadCrumbsProps = {
-  homePath?: string
-  homeLabel?: string
-}
+const HOME_PATH = '/'
+const HOME_LABEL = 'Home'
 
-export function BreadCrumbs({
-  homePath = '/',
-  homeLabel = 'Home',
-}: BreadCrumbsProps) {
+export function BreadCrumbs() {
   const pathname = usePathname()
   const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
 
@@ -27,11 +22,11 @@ export function BreadCrumbs({
           const isRoot = index === 0
 
           const href = isRoot
-            ? homePath
+            ? HOME_PATH
             : '/' + pathNames.slice(1, index + 1).join('/')
 
           const isActive = pathname === href
-          const label = isRoot ? capitalize(homeLabel) : formatLabel(path)
+          const label = isRoot ? capitalize(HOME_LABEL) : formatLabel(path)
 
           return (
             <li key={href} className="inline-flex items-center gap-2.5">
