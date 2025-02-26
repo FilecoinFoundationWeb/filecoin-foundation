@@ -1,3 +1,3 @@
-import { BreadCrumbsLayout } from '@/components/BreadCrumbsLayout'
+import { BreadCrumbsLayout } from '@filecoin-foundation/ui/BreadCrumbsLayout'
 
 export default BreadCrumbsLayout

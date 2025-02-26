@@ -19,7 +19,8 @@
     "./TagComponents/*": "./src/TagComponents/*.tsx",
     "./TextLink": "./src/TextLink/index.ts",
     "./TextLink/*": "./src/TextLink/*.tsx",
-    "./BreadCrumbs": "./src/BreadCrumbs.tsx"
+    "./BreadCrumbs": "./src/BreadCrumbs.tsx",
+    "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx"
   },
   "scripts": {
     "lint": "eslint . --fix"
