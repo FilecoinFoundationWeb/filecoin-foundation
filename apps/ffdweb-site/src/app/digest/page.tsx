@@ -1,6 +1,9 @@
-import { FFDW_URLS } from '@/constants/siteMetadata'
+import { Social } from '@filecoin-foundation/ui/Social'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { socialLinksWithIcons } from '@/utils/socialConfig'
+
+import { CTASection } from '@/_components/CTASection'
 
 export default function Digest() {
   return (
@@ -10,15 +13,12 @@ export default function Digest() {
         <h1>The Go-to Publication for Exploring DWeb Ideas and Principles</h1>
       </header>
 
-      <section>
-        <span>Social Media</span>
-        <h2>Follow us and join the conversation.</h2>
-        <nav>
-          <a href={FFDW_URLS.social.twitter}>X</a>
-          <a href={FFDW_URLS.social.linkedIn}>LinkedIn</a>
-          <a href={FFDW_URLS.social.youTube}>YouTube</a>
-        </nav>
-      </section>
+      <CTASection
+        kicker="Social Media"
+        title="Follow us and join the conversation."
+      >
+        <Social socialLinksWithIcons={socialLinksWithIcons} />
+      </CTASection>
     </>
   )
 }
