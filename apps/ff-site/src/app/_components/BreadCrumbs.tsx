@@ -4,13 +4,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { capitalize } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 import type { Route } from 'next'
 
 import { PATHS } from '@/constants/paths'
-
-import { capitalize } from '@/utils/capitalize'
 
 export function BreadCrumbs() {
   const pathname = usePathname()
