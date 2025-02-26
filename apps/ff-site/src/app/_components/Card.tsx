@@ -3,6 +3,10 @@ import Image, { type ImageProps } from 'next/image'
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import {
+  type TagGroupProps,
+  TagGroup,
+} from '@filecoin-foundation/ui/TagComponents'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
@@ -17,10 +21,6 @@ import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { Meta, type MetaDataType } from '@/components/Meta'
-import {
-  type TagGroupProps,
-  TagGroup,
-} from '@/components/TagComponents/TagGroup'
 
 type CardImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
