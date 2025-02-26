@@ -1,11 +1,11 @@
 'use client'
 
+import Link from 'next/link'
 import { clsx } from 'clsx'
 import { usePathname } from 'next/navigation'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
-import { InternalTextLink } from './TextLink/InternalTextLink'
 import type { Route } from 'next'
 
 type BreadCrumbsProps = {
@@ -19,6 +19,7 @@ export function BreadCrumbs({
 }: BreadCrumbsProps) {
   const pathname = usePathname()
   const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
+
   return (
     <nav aria-label="breadcrumbs">
       <ol className="inline-flex items-center gap-2.5">
@@ -42,12 +43,16 @@ export function BreadCrumbs({
                   weight="bold"
                 />
               )}
-              <InternalTextLink
+              <Link
                 href={href as Route}
-                className={clsx(isActive && 'breadcrumbs-active')}
+                className={clsx(
+                  'breadcrumbs-base',
+                  !isActive && 'breadcrumbs-inactive',
+                  isActive && 'breadcrumbs-active',
+                )}
               >
                 {label}
-              </InternalTextLink>
+              </Link>
             </li>
           )
         })}

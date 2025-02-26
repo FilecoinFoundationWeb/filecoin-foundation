@@ -27,6 +27,8 @@
   --color-brand-secondary-700: #184d00;
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
+
+  --color-icon-subtle: var(--color-neutral-300);
 }
 
 @utility brand-outline {
@@ -77,5 +79,17 @@
 
   .tag-label-secondary {
     @apply border-neutral-200 bg-neutral-950 text-neutral-200;
+  }
+
+  .breadcrumbs-base {
+    @apply focus:brand-outline hover:underline;
+  }
+
+  .breadcrumbs-inactive {
+    @apply text-brand-primary-300;
+  }
+
+  .breadcrumbs-active {
+    @apply text-brand-primary-400;
   }
 }
