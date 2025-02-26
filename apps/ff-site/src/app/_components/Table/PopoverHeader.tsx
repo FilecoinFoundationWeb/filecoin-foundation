@@ -1,9 +1,8 @@
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { Button } from '@headlessui/react'
 import { Question } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-
-import type { TouchTarget } from '@/types/touchTargetType'
 
 import { Popover, type PopoverProps } from '@/components/Tooltip/Popover'
 

@@ -2,9 +2,8 @@
 
 import type { ElementType } from 'react'
 
+import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
-
-import type { TouchTarget } from '@/types/touchTargetType'
 
 import type { OptionType } from './Listbox/ListboxOption'
 
@@ -89,7 +88,7 @@ CategorySidebar.Button = function Button({
   return (
     <button
       className={clsx(
-        'w-full text-pretty rounded-lg py-2 text-left font-bold focus:brand-outline hover:bg-brand-700',
+        'w-full rounded-lg py-2 text-left font-bold text-pretty hover:bg-brand-700 focus:brand-outline',
         isSelected
           ? 'bg-brand-700 text-brand-400'
           : 'bg-transparent text-brand-300',
