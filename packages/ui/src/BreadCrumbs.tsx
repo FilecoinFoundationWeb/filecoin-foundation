@@ -1,31 +1,23 @@
-import type { ReactElement, ReactNode } from 'react'
-import { clsx } from 'clsx'
+'use client'
 
+import { clsx } from 'clsx'
+import { usePathname } from 'next/navigation'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
-
-type LinkProps = {
-  href: string
-  className: string
-  children: ReactNode
-}
+import { InternalTextLink } from './TextLink/InternalTextLink'
 
 type BreadCrumbsProps = {
-  currentPath: string
-  homePath: string
-  homeLabel: string
-  renderLink: (props: LinkProps) => ReactElement
+  homePath?: string
+  homeLabel?: string
 }
 
 export function BreadCrumbs({
-  currentPath,
-  homePath,
-  homeLabel,
-  renderLink,
+  homePath = '/',
+  homeLabel = 'Home',
 }: BreadCrumbsProps) {
-  const pathNames = ['/'].concat(currentPath.split('/').filter(Boolean))
-
+  const pathname = usePathname()
+  const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
   return (
     <nav aria-label="breadcrumbs">
       <ol className="inline-flex items-center gap-2.5">
@@ -36,11 +28,7 @@ export function BreadCrumbs({
             ? homePath
             : '/' + pathNames.slice(1, index + 1).join('/')
 
-          const isActive = currentPath === href
-          const linkClasses = clsx(
-            'breadcrumbs-base',
-            isActive && 'breadcrumbs-active',
-          )
+          const isActive = pathname === href
           const label = isRoot ? capitalize(homeLabel) : formatLabel(path)
 
           return (
@@ -53,11 +41,12 @@ export function BreadCrumbs({
                   weight="bold"
                 />
               )}
-              {renderLink({
-                href,
-                className: linkClasses,
-                children: label,
-              })}
+              <InternalTextLink
+                href={href}
+                className={clsx(isActive && 'breadcrumbs-active')}
+              >
+                {label}
+              </InternalTextLink>
             </li>
           )
         })}
