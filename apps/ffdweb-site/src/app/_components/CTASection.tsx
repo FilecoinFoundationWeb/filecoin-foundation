@@ -10,9 +10,10 @@ type CTASectionProps = {
     href: string
     text: string
   }
+  children?: React.ReactNode
 }
 
-export function CTASection({ kicker, title, cta }: CTASectionProps) {
+export function CTASection({ kicker, title, cta, children }: CTASectionProps) {
   return (
     <section>
       <div className="flex flex-col gap-16 sm:items-center">
@@ -27,6 +28,7 @@ export function CTASection({ kicker, title, cta }: CTASectionProps) {
             {cta.text}
           </Button>
         )}
+        {children}
       </div>
     </section>
   )
