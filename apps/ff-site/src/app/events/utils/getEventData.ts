@@ -12,7 +12,7 @@ const EVENTS_DIRECTORY_PATH = PATHS.EVENTS.entriesContentPath as string
 
 export async function getEventData(slug: string) {
   const data = await getEventMarkdownData(slug)
-  assertEndIsAfterStart(data)
+  validateEndIsAfterStart(data)
   return transformEventData(data)
 }
 
@@ -22,7 +22,7 @@ export async function getEventsData() {
     zodSchema: EventFrontmatterSchema,
   })
 
-  allEvents.forEach(assertEndIsAfterStart)
+  allEvents.forEach(validateEndIsAfterStart)
   return allEvents.map(transformEventData)
 }
 
@@ -46,7 +46,7 @@ function transformEventData(
   }
 }
 
-function assertEndIsAfterStart(
+function validateEndIsAfterStart(
   event: Awaited<ReturnType<typeof getEventMarkdownData>>,
 ) {
   const { startDate, endDate, program, schedule } = event
