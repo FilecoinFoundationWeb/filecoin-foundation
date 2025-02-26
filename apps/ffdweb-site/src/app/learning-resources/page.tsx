@@ -1,8 +1,8 @@
-import Link from 'next/link'
-
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { createMetadata } from '@/utils/createMetadata'
+
+import { CTASection } from '@/_components/CTASection'
 
 export default function LearningResources() {
   return (
@@ -12,11 +12,14 @@ export default function LearningResources() {
         <h1>Explore Decentralized Tech with Content from FFDW and Beyond</h1>
       </header>
 
-      <section>
-        <h2>Contribute</h2>
-        <h3>Add to FFDW&apos;s Learning Resources Page</h3>
-        <Link href={FFDW_URLS.newResourceForm}>Submit a Resource</Link>
-      </section>
+      <CTASection
+        kicker="Contribute"
+        title="Add to FFDW's Learning Resources Page"
+        cta={{
+          href: FFDW_URLS.newResourceForm,
+          text: 'Submit a Resource',
+        }}
+      />
     </>
   )
 }

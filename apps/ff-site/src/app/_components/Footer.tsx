@@ -1,12 +1,14 @@
+import { Social } from '@filecoin-foundation/ui/Social'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 
 import { footerNavigationItems } from '@/constants/navigation'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import { socialLinksWithIcons } from '@/utils/socialConfig'
+
 import { Logo } from '@/components/Logo'
 import { NewsletterForm } from '@/components/NewsletterForm'
-import { Social } from '@/components/Social'
 
 export function Footer() {
   return (
@@ -28,7 +30,7 @@ export function Footer() {
 
       <hr />
       <div className="sm:px-8">
-        <Social />
+        <Social linksWithIcons={socialLinksWithIcons} />
       </div>
 
       <hr />

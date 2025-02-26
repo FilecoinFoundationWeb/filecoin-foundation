@@ -1,8 +1,8 @@
-import Link from 'next/link'
-
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { createMetadata } from '@/utils/createMetadata'
+
+import { CTASection } from '@/components/CTASection'
 
 export default function About() {
   return (
@@ -136,10 +136,14 @@ export default function About() {
         </div>
       </section>
 
-      <section>
-        <h2>Join the Conversation and Help Us Build a Better Internet</h2>
-        <Link href={FFDW_URLS.email}>Contact Us</Link>
-      </section>
+      <CTASection
+        kicker="Get Involved"
+        title="Join the Conversation and Help Us Build a Better Internet"
+        cta={{
+          href: FFDW_URLS.email,
+          text: 'Contact Us',
+        }}
+      />
     </>
   )
 }

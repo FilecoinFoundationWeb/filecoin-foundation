@@ -35,9 +35,24 @@
   border-color: var(--outline-brand-border-color);
 }
 
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply leading-relaxed;
+  }
+}
+
 @layer components {
+  .text-link {
+    @apply text-brand-secondary-300 hover:text-brand-primary-300 focus:brand-outline hover:underline;
+  }
+
   .button-base {
-    @apply border-2;
+    @apply border-2 font-bold;
   }
 
   .button-primary {
@@ -50,5 +65,17 @@
 
   .button-disabled {
     @apply bg-neutral-300;
+  }
+
+  .tag-label-base {
+    @apply border-2;
+  }
+
+  .tag-label-primary {
+    @apply border-brand-secondary-300 bg-brand-secondary-300 text-brand-secondary-800;
+  }
+
+  .tag-label-secondary {
+    @apply border-neutral-200 bg-neutral-950 text-neutral-200;
   }
 }

@@ -1,8 +1,9 @@
+import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
+
 import { graphicsData } from '@/data/graphicsData'
 
 import { ArticleHeader } from '@/components/ArticleHeader'
 import { AvatarGroup } from '@/components/AvatarGroup'
-import { TagGroup } from '@/components/TagComponents/TagGroup'
 
 import type { DigestArticleData } from '../../types/digestType'
 
