@@ -9,7 +9,8 @@
   "exports": {
     "./linkUtils": "./src/linkUtils.ts",
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
-    "./types/*": "./src/types/*.ts"
+    "./types/*": "./src/types/*.ts",
+    "./constants/*": "./src/constants/*.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"

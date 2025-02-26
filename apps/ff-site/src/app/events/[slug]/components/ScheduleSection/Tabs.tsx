@@ -2,11 +2,10 @@
 
 import { useRef } from 'react'
 
+import { breakpoints } from '@filecoin-foundation/utils/constants/tailwindConstants'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import { useQueryState, parseAsInteger } from 'nuqs'
 import { useIsMounted, useMediaQuery } from 'usehooks-ts'
-
-import { breakpoints } from '@/constants/tailwindConstants'
 
 import type { Event } from '../../../types/eventType'
 import { formatShortDate } from '../../utils/dateUtils'
