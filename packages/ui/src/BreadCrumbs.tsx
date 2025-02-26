@@ -6,6 +6,7 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { InternalTextLink } from './TextLink/InternalTextLink'
+import type { Route } from 'next'
 
 type BreadCrumbsProps = {
   homePath?: string
@@ -42,7 +43,7 @@ export function BreadCrumbs({
                 />
               )}
               <InternalTextLink
-                href={href}
+                href={href as Route}
                 className={clsx(isActive && 'breadcrumbs-active')}
               >
                 {label}
