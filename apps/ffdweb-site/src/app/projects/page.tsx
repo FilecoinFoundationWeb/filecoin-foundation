@@ -1,16 +1,19 @@
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
 
 export default function Projects() {
   return (
     <>
-      <header>
-        <span>Projects</span>
-        <h1>Discover Current and Past FFDW Project Partners</h1>
-      </header>
+      <PageHeader
+        title="Discover Current and Past FFDW Project Partners"
+        image={graphicsData.projects}
+      />
 
       <CTASection
         kicker="Work with FFDW"

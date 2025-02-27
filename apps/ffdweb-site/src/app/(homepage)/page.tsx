@@ -3,12 +3,12 @@ import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextL
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-
-import placeholderImage from '@/assets/graphics/placeholder.webp'
 
 export default function Home() {
   return (
@@ -17,10 +17,7 @@ export default function Home() {
         <PageHeader
           isHomepage
           title="A Better Web for Everyone"
-          image={{
-            data: placeholderImage,
-            alt: 'A Better Web for Everyone',
-          }}
+          image={graphicsData.homepage}
           cta={{
             href: PATHS.PROJECTS.path,
             text: 'View Projects',
