@@ -1,6 +1,5 @@
+import { capitalize } from '@filecoin-foundation/utils/stringUtils'
 import { z, type ZodError } from 'zod'
-
-import { capitalize } from '@/utils/capitalize'
 
 type LogConfig = {
   location?: string

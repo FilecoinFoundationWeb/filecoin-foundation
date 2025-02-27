@@ -1,8 +1,7 @@
 import Image from 'next/image'
 
+import { capitalize } from '@filecoin-foundation/utils/stringUtils'
 import { clsx } from 'clsx'
-
-import { capitalize } from '@/utils/capitalize'
 
 import type { SponsorTierConfig } from '../../constants/sponsorTierConfigs'
 import type { Sponsor } from '../../types/sponsorType'
