@@ -1,13 +1,12 @@
 import { useMemo } from 'react'
 
 import { DEFAULT_ENTRIES_PER_PAGE } from '@filecoin-foundation/utils/constants/paginationConstants'
-import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
-import { type AnyObject } from './utils/types'
 import { validatePageNumber } from './utils/validatePageNumber'
+import { type AnyObject, type PageQuery } from './utils/types'
 
 type UsePaginationProps<Entry extends AnyObject> = {
-  pageQuery: ReturnType<typeof normalizeQueryParam>
+  pageQuery: PageQuery
   entries: Array<Entry>
   entriesPerPage?: number
 }
