@@ -13,7 +13,7 @@ type SocialProps = {
 }
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
-  touchAreaOffset: '-m-2 ',
+  touchAreaOffset: '-m-2',
 }
 
 export function Social({ linksWithIcons }: SocialProps) {
