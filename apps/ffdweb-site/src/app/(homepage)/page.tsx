@@ -8,7 +8,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
-import placeholderImage from '@/page-assets/graphics/placeholder.webp'
+import placeholderImage from '@/assets/graphics/placeholder.webp'
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import LogoAsset from '../../../public/page-assets/branding/logo.svg'
+import LogoAsset from '../../../public/assets/branding/logo.svg'
 
 export function Logo() {
   return <LogoAsset />
