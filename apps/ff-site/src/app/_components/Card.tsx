@@ -9,6 +9,7 @@ import {
 } from '@filecoin-foundation/ui/TagComponents'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
+import { type CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import {
   type BreakpointValue,
   type SpacingValue,
@@ -16,7 +17,6 @@ import {
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
-import { type CTAProps } from '@/types/ctaType'
 import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
