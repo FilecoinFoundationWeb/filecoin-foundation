@@ -1,3 +1,4 @@
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { Files } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
@@ -8,7 +9,6 @@ import { attributes } from '@/content/pages/about.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'

@@ -9,18 +9,20 @@
   "exports": {
     "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
+    "./BreadCrumbs": "./src/BreadCrumbs.tsx",
+    "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
+    "./NoResultsMessage": "./src/NoResultsMessage.tsx",
+    "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./Social": "./src/Social.tsx",
     "./TagComponents": "./src/TagComponents/index.ts",
     "./TagComponents/*": "./src/TagComponents/*.tsx",
     "./TextLink": "./src/TextLink/index.ts",
-    "./TextLink/*": "./src/TextLink/*.tsx",
-    "./BreadCrumbs": "./src/BreadCrumbs.tsx",
-    "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx"
+    "./TextLink/*": "./src/TextLink/*.tsx"
   },
   "scripts": {
     "lint": "eslint . --fix"

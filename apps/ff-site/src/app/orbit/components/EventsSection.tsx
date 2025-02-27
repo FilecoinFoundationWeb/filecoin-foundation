@@ -1,12 +1,12 @@
 import { Button } from '@filecoin-foundation/ui/Button'
+import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { formatDate } from '@/utils/dateUtils'
 import { normalizeQueryParam } from '@/utils/queryUtils'
@@ -15,11 +15,9 @@ import { logZodError } from '@/utils/zodUtils'
 import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 
-
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
@@ -87,7 +85,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
       </div>
 
       {paginatedResults.length === 0 ? (
-        <NoSearchResultsMessage />
+        <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
       ) : (
         <>
           <CardGrid cols="smTwo">

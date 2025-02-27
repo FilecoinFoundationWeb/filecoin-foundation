@@ -1,6 +1,6 @@
-import { type BreakpointValue } from '@/types/tailwindTypes'
+import { breakpoints } from './constants/tailwindConstants'
 
-import { breakpoints } from '@/constants/tailwindConstants'
+import type { BreakpointValue } from './types/tailwindTypes'
 
 type Width = `${number}px` | `${number}vw`
 type Args = { startSize: Width } & Partial<Record<BreakpointValue, Width>>

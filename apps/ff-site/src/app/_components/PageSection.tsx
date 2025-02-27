@@ -5,9 +5,8 @@ import {
   type DescriptionTextType,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { clsx } from 'clsx'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import {
   type CTAButtonGroupProps,

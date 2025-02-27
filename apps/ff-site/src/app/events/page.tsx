@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+
 import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
@@ -8,7 +10,6 @@ import { attributes } from '@/content/pages/events.md'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { createMetadata } from '@/utils/createMetadata'
 import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 

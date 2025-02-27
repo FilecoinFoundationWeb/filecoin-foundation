@@ -1,11 +1,9 @@
 import Image from 'next/image'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 
 import type { StaticImageProps } from '@/types/imageType'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
-
 
 export type FocusAreaCardProps = {
   title: string

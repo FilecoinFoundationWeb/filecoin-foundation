@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import rehypeToc, { type HtmlElementNode } from '@jsdevtools/rehype-toc'
 import * as Sentry from '@sentry/node'
 import ReactMarkdown, { type Components } from 'react-markdown'
@@ -11,8 +12,6 @@ import remarkGfm from 'remark-gfm'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type PluggableList = Parameters<typeof ReactMarkdown>[0]['rehypePlugins']
 

@@ -1,4 +1,4 @@
-import type { CTAProps } from '@/types/ctaType'
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 import { DEFAULT_CTA_TEXT } from '../../constants/constants'
 import type { Event } from '../../types/eventType'
