@@ -1,7 +1,7 @@
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { socialLinksWithIcons } from '@/utils/socialConfig'
+import { socialLinksWithIcons } from '@/utils/socialConfigs'
 
 import { CTASection } from '@/components/CTASection'
 
