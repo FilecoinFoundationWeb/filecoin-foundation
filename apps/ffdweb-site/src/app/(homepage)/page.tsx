@@ -6,12 +6,21 @@ import { FFDW_URLS } from '@/constants/siteMetadata'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
+
+const placeholderImage = '/page-assets/graphics/placeholder.webp'
 
 export default function Home() {
   return (
     <>
       <section>
-        <h1>A Better Web for Everyone</h1>
+        <PageHeader
+          title="A Better Web for Everyone"
+          image={{
+            data: placeholderImage,
+            alt: 'A Better Web for Everyone',
+          }}
+        />
         <InternalTextLink href={PATHS.PROJECTS.path}>
           View Projects
         </InternalTextLink>
