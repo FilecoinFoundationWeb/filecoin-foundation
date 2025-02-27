@@ -14,7 +14,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type TitleProps = {
   children: string
-  isHomepage: boolean
+  isHomepage: PageHeaderProps['isHomepage']
 }
 
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
@@ -24,7 +24,7 @@ type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   cta?: CTAProps
-  isHomepage?: TitleProps['isHomepage']
+  isHomepage?: boolean
 }
 
 export function PageHeader({
