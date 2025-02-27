@@ -1,17 +1,19 @@
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
 
 export default function About() {
   return (
     <>
-      <header>
-        <span>About</span>
-        <h1>Building and Supporting the Decentralized Web Community</h1>
-      </header>
-
+      <PageHeader
+        title="Building and Supporting the Decentralized Web Community"
+        image={graphicsData.about}
+      />
       <section>
         <span>FFDW Priorities</span>
         <h2>
