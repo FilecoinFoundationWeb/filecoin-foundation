@@ -3,7 +3,7 @@ import { Social } from '@filecoin-foundation/ui/Social'
 import { createMetadata } from '@/utils/createMetadata'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { CTASection } from '@/_components/CTASection'
+import { CTASection } from '@/components/CTASection'
 
 export default function Digest() {
   return (
