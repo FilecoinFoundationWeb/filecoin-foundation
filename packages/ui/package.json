@@ -18,6 +18,7 @@
     "./ErrorMessage": "./src/ErrorMessage.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
+    "./IconButton": "./src/IconButton.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./Social": "./src/Social.tsx",

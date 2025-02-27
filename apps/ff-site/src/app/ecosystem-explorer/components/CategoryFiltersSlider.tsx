@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { IconButton } from '@filecoin-foundation/ui/IconButton'
 import { Button as HeadlessUIButton } from '@headlessui/react'
 import { FunnelSimple, X } from '@phosphor-icons/react'
 
@@ -11,7 +12,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
-import { IconButton } from '@/components/IconButton'
 import { SlideOver } from '@/components/SlideOver'
 
 import { CategoryFilters, type CategoryFiltersProps } from './CategoryFilters'
