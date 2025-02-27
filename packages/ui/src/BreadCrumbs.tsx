@@ -41,7 +41,6 @@ export function BreadCrumbs() {
               <InternalTextLink
                 href={href as Route}
                 className={clsx(
-                  'focus:brand-outline hover:underline',
                   !isActive && 'breadcrumbs-inactive',
                   isActive && 'breadcrumbs-active',
                 )}
