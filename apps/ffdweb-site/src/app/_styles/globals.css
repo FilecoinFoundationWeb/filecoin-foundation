@@ -81,12 +81,8 @@
     @apply border-neutral-200 bg-neutral-950 text-neutral-200;
   }
 
-  .breadcrumbs-base {
-    @apply focus:brand-outline hover:underline;
-  }
-
   .breadcrumbs-inactive {
-    @apply text-brand-primary-300;
+    @apply text-neutral-200;
   }
 
   .breadcrumbs-active {

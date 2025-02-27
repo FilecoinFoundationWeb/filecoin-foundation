@@ -1,9 +1,9 @@
 'use client'
 
-import Link from 'next/link'
 import { clsx } from 'clsx'
 import { usePathname } from 'next/navigation'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { InternalTextLink } from '@filecoin-foundation/ui/TextLink'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import type { Route } from 'next'
@@ -38,16 +38,16 @@ export function BreadCrumbs() {
                   weight="bold"
                 />
               )}
-              <Link
+              <InternalTextLink
                 href={href as Route}
                 className={clsx(
-                  'breadcrumbs-base',
+                  'focus:brand-outline hover:underline',
                   !isActive && 'breadcrumbs-inactive',
                   isActive && 'breadcrumbs-active',
                 )}
               >
                 {label}
-              </Link>
+              </InternalTextLink>
             </li>
           )
         })}
