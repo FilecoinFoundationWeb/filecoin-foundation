@@ -7,8 +7,8 @@ import {
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 const socialIcons = {
-  twitter: XLogo,
   linkedin: LinkedinLogo,
+  twitter: XLogo,
   youtube: YoutubeLogo,
 }
 
