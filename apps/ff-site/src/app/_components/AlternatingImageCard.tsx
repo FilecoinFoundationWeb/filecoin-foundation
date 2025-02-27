@@ -1,10 +1,9 @@
 import Image from 'next/image'
 
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { clsx } from 'clsx'
 
 import type { StaticImageProps } from '@/types/imageType'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 import { BasicCard } from '@/components/BasicCard'
 

@@ -1,8 +1,9 @@
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/dateUtils'
 

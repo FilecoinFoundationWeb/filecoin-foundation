@@ -2,6 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
@@ -15,7 +16,6 @@ import {
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/dateUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'

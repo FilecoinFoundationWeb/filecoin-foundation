@@ -1,10 +1,9 @@
 import Image, { type ImageProps } from 'next/image'
 
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { clsx } from 'clsx'
 
 import { graphicsData } from '@/data/graphicsData'
-
-import { buildImageSizeProp } from '@/utils/buildImageSizeProp'
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & {
   alt?: string
