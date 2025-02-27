@@ -1,23 +1,9 @@
-import { AvatarGroup } from '@filecoin-foundation/ui/AvatarGroup'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { CTASection } from '@/_components/CTASection'
-
-const dummyAuthors = [
-  {
-    firstName: 'Mirha',
-    lastName: 'Masala',
-    company: 'Filecoin Foundation',
-  },
-  {
-    firstName: 'Filipa',
-    lastName: 'Ribeiro',
-    company: 'Filecoin Foundation',
-  },
-]
+import { CTASection } from '@/components/CTASection'
 
 export default function Digest() {
   return (
@@ -26,10 +12,6 @@ export default function Digest() {
         <span>FFDW Digest</span>
         <h1>The Go-to Publication for Exploring DWeb Ideas and Principles</h1>
       </header>
-
-      <br />
-
-      <AvatarGroup authors={dummyAuthors} />
 
       <CTASection
         kicker="Social Media"

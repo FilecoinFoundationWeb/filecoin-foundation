@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { clsx } from 'clsx'
 
 const IMAGE_SIZE = 32
-const sharedAvatarStyle = 'rounded-full avatar-ring'
+const sharedAvatarStyle = 'rounded-full ring-2 ring-(--color-avatar-ring)'
 
 export type AvatarProps = {
   firstName: string
@@ -30,10 +30,10 @@ export function Avatar({ firstName, lastName, image }: AvatarProps) {
       style={{ width: IMAGE_SIZE, height: IMAGE_SIZE }}
       className={clsx(
         sharedAvatarStyle,
-        'avatar-background flex items-center justify-center',
+        'bg-(--color-avatar-background) flex items-center justify-center',
       )}
     >
-      <span className="avatar-initials text-sm font-medium leading-none">
+      <span className="text-(--color-avatar-initials) text-sm font-medium leading-none">
         {getInitials(firstName, lastName)}
       </span>
     </div>

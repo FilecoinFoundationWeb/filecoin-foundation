@@ -21,7 +21,9 @@ export function AvatarGroup({ authors }: AvatarGroupProps) {
           />
         ))}
       </div>
-      <span className="avatar-full-name text-sm">{formatAuthors(authors)}</span>
+      <span className="text-(--color-avatar-full-name) text-sm">
+        {formatAuthors(authors)}
+      </span>
     </div>
   )
 }
