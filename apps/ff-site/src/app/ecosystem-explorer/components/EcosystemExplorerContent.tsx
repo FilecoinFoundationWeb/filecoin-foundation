@@ -1,3 +1,4 @@
+import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
@@ -10,6 +11,7 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@/constants/searchParams'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -26,7 +28,6 @@ import { useSort } from '@/hooks/useSort'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
 import { Search } from '@/components/Search'
@@ -113,7 +114,7 @@ export function EcosystemExplorerContent({
         />
         <FilterContainer.ContentWrapper>
           {filteredEntries.length === 0 ? (
-            <NoSearchResultsMessage />
+            <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
               <CardGrid cols="smTwo">
