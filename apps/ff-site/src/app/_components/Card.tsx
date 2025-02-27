@@ -14,14 +14,16 @@ import {
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
 import { type CTAProps } from '@filecoin-foundation/utils/types/ctaType'
+import type {
+  ImageObjectFit,
+  StaticImageProps,
+} from '@filecoin-foundation/utils/types/imageType'
 import {
   type BreakpointValue,
   type SpacingValue,
 } from '@filecoin-foundation/utils/types/tailwindTypes'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-
-import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 

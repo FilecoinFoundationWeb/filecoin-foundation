@@ -17,7 +17,6 @@ export default function Home() {
         <PageHeader
           isHomepage
           title="A Better Web for Everyone"
-          mobileLayout="image-above-content"
           image={{
             data: placeholderImage,
             alt: 'A Better Web for Everyone',

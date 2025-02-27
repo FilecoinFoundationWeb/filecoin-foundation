@@ -1,10 +1,13 @@
-import Image from 'next/image'
-import type { StaticImageData } from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
+import type {
+  ImageObjectFit,
+  StaticImageProps,
+} from '@filecoin-foundation/utils/types/imageType'
 import { clsx } from 'clsx'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
@@ -14,18 +17,13 @@ type TitleProps = {
   isHomepage: boolean
 }
 
-export type StaticImageProps = {
-  data: StaticImageData
-  alt: string
+type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
+  objectFit?: ImageObjectFit
 }
-
-type PageHeaderImageProps = StaticImageProps
-
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   cta?: CTAProps
-  mobileLayout?: 'content-above-image' | 'image-above-content'
   isHomepage?: TitleProps['isHomepage']
 }
 
@@ -33,7 +31,6 @@ export function PageHeader({
   title,
   image,
   cta,
-  mobileLayout = 'content-above-image',
   isHomepage = false,
 }: PageHeaderProps) {
   return (
@@ -42,7 +39,7 @@ export function PageHeader({
         className={clsx(
           'grid grid-cols-1 content-start justify-center gap-8 text-center',
           'sm:justify-items-center sm:gap-16 lg:order-1 lg:max-w-lg lg:justify-items-start lg:text-left',
-          mobileLayout === 'image-above-content' ? 'order-2' : 'order-1',
+          isHomepage ? 'order-2' : 'order-1',
         )}
       >
         <PageHeader.Title isHomepage={isHomepage}>{title}</PageHeader.Title>
@@ -51,7 +48,7 @@ export function PageHeader({
       <div
         className={clsx(
           'flex justify-center lg:order-2 lg:justify-end',
-          mobileLayout === 'image-above-content' ? 'order-1' : 'order-2',
+          isHomepage ? 'order-1' : 'order-2',
         )}
       >
         {image && <PageHeader.Image image={image} />}
@@ -73,6 +70,8 @@ PageHeader.Title = function Title({ children, isHomepage }: TitleProps) {
 PageHeader.Image = function PageHeaderImage({
   image,
 }: Pick<PageHeaderProps, 'image'>) {
+  const isStaticImage = 'data' in image
+
   const commonProps = {
     alt: image.alt,
     priority: true,
@@ -80,12 +79,26 @@ PageHeader.Image = function PageHeaderImage({
     sizes: buildImageSizeProp({ startSize: '384px', lg: '320px' }),
   }
 
+  if (isStaticImage) {
+    return (
+      <Image
+        {...commonProps}
+        className="aspect-square h-auto w-full max-w-96 object-contain"
+        src={image.data}
+      />
+    )
+  }
+
   return (
-    <Image
-      {...commonProps}
-      className="aspect-square h-auto w-full max-w-96 object-contain"
-      src={image.data}
-    />
+    <div className="relative aspect-video">
+      <Image
+        fill
+        {...commonProps}
+        className="h-full w-full"
+        src={image.src}
+        alt={commonProps.alt}
+      />
+    </div>
   )
 }
 

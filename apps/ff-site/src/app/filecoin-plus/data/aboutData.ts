@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/types/imageType'
+import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import { graphicsData } from '@/data/graphicsData'
 

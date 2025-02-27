@@ -1,4 +1,4 @@
-import type { StaticImageProps } from '@/types/imageType'
+import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import about from '@/assets/graphics/Filorg_About.webp'
 import blog from '@/assets/graphics/Filorg_Blog.webp'

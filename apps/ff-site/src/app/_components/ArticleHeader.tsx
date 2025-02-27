@@ -2,8 +2,7 @@ import Image from 'next/image'
 
 import { type HeadingProps, Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-
-import type { ImageProps } from '@/types/imageType'
+import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 type ArticleHeaderProps = {
   image: ImageProps

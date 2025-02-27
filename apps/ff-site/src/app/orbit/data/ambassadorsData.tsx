@@ -1,9 +1,7 @@
 import type { JSX } from 'react'
 
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-
-import type { StaticImageProps } from '@/types/imageType'
-
+import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 
 import austinImg from '@/assets/orbit/ambassadors/austin-web3-filecoin-meetup.jpg'
 import barcelonaImg from '@/assets/orbit/ambassadors/barcelona-web3fc-event.jpg'
