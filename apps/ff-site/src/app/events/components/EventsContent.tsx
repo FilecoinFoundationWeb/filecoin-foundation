@@ -1,17 +1,18 @@
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
+import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
-
-import { PATHS } from '@/constants/paths'
 import {
   CATEGORY_KEY,
   LOCATION_KEY,
   PAGE_KEY,
   SEARCH_KEY,
   SORT_KEY,
-} from '@/constants/searchParams'
+} from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+
+import type { NextServerSearchParams } from '@/types/searchParams'
+
+import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -25,7 +26,6 @@ import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
-import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
@@ -34,7 +34,6 @@ import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { LocationFilter } from '@/components/LocationFilter'
-import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
 import { EventSort } from '../components/EventSort'

@@ -1,6 +1,6 @@
-import type { NextServerSearchParams } from '@/types/searchParams'
+import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
-import { CATEGORY_KEY } from '@/constants/searchParams'
+import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
 
