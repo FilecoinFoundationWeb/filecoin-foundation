@@ -4,9 +4,10 @@ import clsx from 'clsx'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 
-import { socialLinksWithIcons } from '@/utils/socialConfigs'
+import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { Logo } from '@/components/Logo'
+
 const FOOTER_GAP = 'gap-16'
 const FOOTER_SECTION_GAP = 'gap-10'
 
@@ -36,7 +37,9 @@ export function Footer() {
               <ul className="grid gap-3">
                 {items.map(({ href, label }) => (
                   <li key={href}>
-                    <InternalTextLink href={href}>{label}</InternalTextLink>
+                    <InternalTextLink className="text-white" href={href}>
+                      {label}
+                    </InternalTextLink>
                   </li>
                 ))}
               </ul>
@@ -60,7 +63,9 @@ export function Footer() {
           >
             {footerLegalItems.map(({ label, href }) => (
               <li key={href} className="fit-content">
-                <InternalTextLink href={href}>{label}</InternalTextLink>
+                <InternalTextLink className="text-white" href={href}>
+                  {label}
+                </InternalTextLink>
               </li>
             ))}
           </ul>

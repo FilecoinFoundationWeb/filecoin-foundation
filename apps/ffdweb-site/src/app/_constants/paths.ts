@@ -8,7 +8,6 @@ type StaticPath =
   | '/blog'
   | '/digest'
   | '/faqs'
-  | '/get-involved'
   | '/learning-resources'
   | '/privacy-policy'
   | '/projects'
@@ -36,7 +35,6 @@ export const PATHS = {
   BLOG: createPathConfig('/blog', 'Blog', { includesEntries: true }),
   DIGEST: createPathConfig('/digest', 'Digest', { includesEntries: true }),
   FAQS: createPathConfig('/faqs', 'FAQs'),
-  GET_INVOLVED: createPathConfig('/get-involved', 'Get Involved'),
   LEARNING_RESOURCES: createPathConfig(
     '/learning-resources',
     'Learning Resources',

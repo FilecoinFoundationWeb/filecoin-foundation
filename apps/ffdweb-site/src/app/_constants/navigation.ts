@@ -10,10 +10,6 @@ export const footerNavigationItems = {
       label: PATHS.PROJECTS.label,
       href: PATHS.PROJECTS.path,
     },
-    {
-      label: PATHS.GET_INVOLVED.label,
-      href: PATHS.GET_INVOLVED.path,
-    },
   ],
   resources: [
     {
