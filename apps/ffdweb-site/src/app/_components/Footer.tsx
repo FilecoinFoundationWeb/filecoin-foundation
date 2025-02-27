@@ -47,7 +47,9 @@ export function Footer() {
           ))}
           <div className={clsx('grid content-start', FOOTER_SECTION_GAP)}>
             <h3 className="text-base font-bold capitalize">Follow us</h3>
-            <Social linksWithIcons={socialLinksWithIcons} variant="compact" />
+            <div className="flex">
+              <Social linksWithIcons={socialLinksWithIcons} />
+            </div>
           </div>
         </nav>
       </div>

@@ -10,21 +10,18 @@ type linkWithIcon = {
 
 type SocialProps = {
   linksWithIcons: linkWithIcon[]
-  variant?: 'compact' | 'fluid'
 }
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2 ',
 }
 
-export function Social({ linksWithIcons, variant = 'fluid' }: SocialProps) {
+export function Social({ linksWithIcons }: SocialProps) {
   return (
     <ul
       className={clsx(
-        'grid h-full grid-flow-col gap-6',
-        variant === 'compact'
-          ? 'auto-cols-max'
-          : 'auto-cols-auto justify-items-center sm:mx-0',
+        'grid h-full auto-cols-auto grid-flow-col justify-items-center gap-6',
+
         TOUCH_TARGET.touchAreaOffset,
       )}
     >
