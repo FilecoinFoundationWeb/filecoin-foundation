@@ -9,6 +9,7 @@
   "exports": {
     "./linkUtils": "./src/linkUtils.ts",
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
+    "./constants/*": "./src/constants/*.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./types/*": "./src/types/*.ts"
   },

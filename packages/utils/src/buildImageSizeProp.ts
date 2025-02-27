@@ -1,12 +1,6 @@
-const breakpoints = {
-  sm: '640px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1280px',
-  '2xl': '1536px',
-} as const
+import { breakpoints } from './constants/tailwindConstants'
 
-type BreakpointValue = keyof typeof breakpoints
+import type { BreakpointValue } from './types/tailwindTypes'
 
 type Width = `${number}px` | `${number}vw`
 type Args = { startSize: Width } & Partial<Record<BreakpointValue, Width>>
