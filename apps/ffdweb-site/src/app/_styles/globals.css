@@ -55,7 +55,7 @@
 
 @layer components {
   .text-link {
-    @apply focus:brand-outline text-brand-secondary-300 hover:text-brand-primary-300 hover:underline;
+    @apply text-brand-secondary-300 hover:text-brand-primary-300 focus:brand-outline hover:underline;
   }
 
   .button-base {
