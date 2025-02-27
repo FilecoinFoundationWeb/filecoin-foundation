@@ -1,7 +1,8 @@
 'use client'
 
+import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
-import { CATEGORY_KEY } from '@/constants/searchParams'
 
 import { useListboxQueryState } from '@/hooks/useListboxQueryState'
 

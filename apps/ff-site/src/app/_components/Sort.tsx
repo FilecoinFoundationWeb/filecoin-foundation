@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
-
-import { SORT_KEY } from '@/constants/searchParams'
+import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { useSort } from '@/hooks/useSort'
 
