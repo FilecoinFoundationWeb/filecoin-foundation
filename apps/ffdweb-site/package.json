@@ -6,12 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix",
+    "test:cypress": "echo 'test cypress command to be implemented'",
+    "test:cypress:percy": "echo 'test percy command to be implemented'"
   },
   "dependencies": {
     "@filecoin-foundation/ui": "*",
     "@filecoin-foundation/utils": "*",
+    "@phosphor-icons/react": "^2.1.7",
     "@tailwindcss/postcss": "^4.0.5",
+    "clsx": "^2.1.1",
     "next": "15.1.6",
     "postcss": "^8.5.1",
     "react": "^19.0.0",

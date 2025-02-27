@@ -126,4 +126,12 @@
   .tag-label-callout {
     @apply border-brand-error;
   }
+
+  .breadcrumbs-inactive {
+    @apply text-brand-300;
+  }
+
+  .breadcrumbs-active {
+    @apply text-brand-400;
+  }
 }

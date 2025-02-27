@@ -8,9 +8,12 @@ on:
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [ff-site, ffdweb-site]
     defaults:
       run:
-        working-directory: apps/ff-site
+        working-directory: apps/${{ matrix.app }}
 
     steps:
       - name: Check out code
