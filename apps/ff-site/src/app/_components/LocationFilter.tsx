@@ -1,9 +1,9 @@
 'use client'
 
+import { LOCATION_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { GlobeSimple } from '@phosphor-icons/react'
 
 import { DEFAULT_LOCATION_FILTER_OPTION } from '@/constants/filterConstants'
-import { LOCATION_KEY } from '@/constants/searchParams'
 
 import { useListboxQueryState } from '@/hooks/useListboxQueryState'
 

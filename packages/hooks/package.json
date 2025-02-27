@@ -1,5 +1,5 @@
 {
-  "name": "@filecoin-foundation/utils",
+  "name": "@filecoin-foundation/hooks",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,12 +7,7 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./linkUtils": "./src/linkUtils.ts",
-    "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
-    "./constants/*": "./src/constants/*.ts",
-    "./stringUtils": "./src/stringUtils.ts",
-    "./urlUtils": "./src/urlUtils.ts",
-    "./types/*": "./src/types/*.ts"
+    "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"
@@ -21,5 +16,10 @@
     "typescript": "^5",
     "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*"
+  },
+  "peerDependencies": {
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

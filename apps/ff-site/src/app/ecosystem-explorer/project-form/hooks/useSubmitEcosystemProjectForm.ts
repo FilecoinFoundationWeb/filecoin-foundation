@@ -1,10 +1,9 @@
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import * as Sentry from '@sentry/nextjs'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { submitProject } from '../actions/submitProject'
 import type { EcosystemProjectFormData } from '../types'
