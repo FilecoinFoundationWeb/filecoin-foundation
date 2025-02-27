@@ -1,7 +1,6 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
-
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 type NoResultsMessageProps = {

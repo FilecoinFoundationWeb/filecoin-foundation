@@ -3,7 +3,18 @@ import { clsx } from 'clsx'
 
 export type HeadingProps = {
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span'
-  variant: '4xl' | '3xl' | '2xl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'kicker'
+  variant:
+    | '5xl-fluid'
+    | '4xl-fluid'
+    | '4xl'
+    | '3xl'
+    | '2xl'
+    | 'xl'
+    | 'lg'
+    | 'md'
+    | 'sm'
+    | 'xs'
+    | 'kicker'
   className?: string
   iconProps?: IconProps
   isClamped?: boolean
@@ -11,6 +22,10 @@ export type HeadingProps = {
 }
 
 const variantStyles = {
+  '5xl-fluid':
+    'text-[clamp(theme(fontSize.4xl),10vw,theme(fontSize.5xl))] leading-tight',
+  '4xl-fluid':
+    'text-[clamp(theme(fontSize.3xl),8vw,theme(fontSize.4xl))] leading-tight',
   '4xl': 'text-4xl font-bold',
   '3xl': 'text-3xl font-bold',
   '2xl': 'text-2xl font-bold',
