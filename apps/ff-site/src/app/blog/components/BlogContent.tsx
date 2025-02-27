@@ -2,6 +2,7 @@
 
 import { useSearchParams } from 'next/navigation'
 
+import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react'
 
@@ -13,6 +14,7 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@/constants/searchParams'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -32,7 +34,6 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
@@ -114,7 +115,7 @@ export function BlogContent({ posts }: BlogContentProps) {
         />
         <FilterContainer.ContentWrapper>
           {filteredEntries.length === 0 ? (
-            <NoSearchResultsMessage />
+            <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
           ) : (
             <>
               <CardGrid cols="smTwo">
