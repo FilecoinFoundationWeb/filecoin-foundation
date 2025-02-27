@@ -13,17 +13,9 @@ type TitleProps = {
   fontVariant?: PageHeaderFontVariant
 }
 
-export type ImageObjectFit = {
-  objectFit?: 'contain' | 'cover'
-}
-
 export type StaticImageProps = {
   data: StaticImageData
   alt: string
-}
-
-type CTAButtonProps = {
-  cta: CTAProps
 }
 
 type PageHeaderImageProps = StaticImageProps
@@ -33,7 +25,7 @@ type PageHeaderFontVariant = 'default' | 'homepage'
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
-  cta?: CTAButtonProps['cta']
+  cta?: CTAProps
   mobileLayout?: 'content-above-image' | 'image-above-content'
   fontVariant?: PageHeaderFontVariant
 }
@@ -54,7 +46,7 @@ export function PageHeader({
         className={`order-${contentOrder} grid grid-cols-1 content-start justify-center gap-8 text-center sm:justify-items-center sm:gap-16 lg:order-1 lg:max-w-lg lg:justify-items-start lg:text-left`}
       >
         <PageHeader.Title fontVariant={fontVariant}>{title}</PageHeader.Title>
-        {cta && <PageHeader.CTAButton cta={cta} />}
+        {cta && <PageHeader.CTAButton {...cta} />}
       </div>
       <div
         className={`order-${imageOrder} flex justify-center lg:order-2 lg:justify-end`}
@@ -82,7 +74,7 @@ PageHeader.Image = function PageHeaderImage({
     alt: image.alt,
     priority: true,
     quality: 100,
-    sizes: buildImageSizeProp({ startSize: '100vw', lg: '320px' }),
+    sizes: buildImageSizeProp({ startSize: '384px', lg: '320px' }),
   }
 
   return (
@@ -94,10 +86,10 @@ PageHeader.Image = function PageHeaderImage({
   )
 }
 
-PageHeader.CTAButton = function CTAButton({ cta }: CTAButtonProps) {
+PageHeader.CTAButton = function CTAButton({ href, text, ariaLabel }: CTAProps) {
   return (
-    <Button href={cta.href} baseDomain={BASE_DOMAIN}>
-      {cta.text}
+    <Button href={href} baseDomain={BASE_DOMAIN} aria-label={ariaLabel}>
+      {text}
     </Button>
   )
 }
