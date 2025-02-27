@@ -56,7 +56,7 @@
   }
 
   & pre {
-    @apply border border-solid border-brand-600;
+    @apply border-brand-600 border border-solid;
   }
 
   & iframe {
@@ -108,7 +108,7 @@
   }
 
   .button--ghost {
-    @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
+    @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
   }
 
   .button--disabled {
@@ -126,7 +126,7 @@
 
   /* ICON BUTTONS */
   .icon-button {
-    @apply rounded-lg border-brand-300 text-brand-300;
+    @apply border-brand-300 text-brand-300 rounded-lg;
   }
 
   /* SITE LAYOUT */
@@ -136,7 +136,7 @@
 
   /* TAGS */
   .tag-label {
-    @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;
+    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize;
   }
 
   .tag-label--primary {
@@ -153,11 +153,44 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-300 hover:underline focus:brand-outline;
+    @apply text-brand-300 focus:brand-outline hover:underline;
   }
 
   /* TOC */
   .toc-header {
-    @apply text-sm font-semibold text-brand-200 uppercase;
+    @apply text-brand-200 text-sm font-semibold uppercase;
+  }
+
+  /* PAGINATION */
+  .pagination {
+    @apply bg-brand-300 text-brand-700 rounded-lg p-1;
+  }
+
+  .pagination-carret {
+    @apply text-brand-800;
+  }
+
+  .pagination-button {
+    @apply bg-brand-300 rounded-sm;
+
+    &:not(:disabled):hover {
+      @apply bg-brand-400;
+    }
+  }
+
+  .pagination-index {
+    @apply h-full w-full rounded-sm;
+
+    &[data-current='true'] {
+      @apply bg-brand-800 text-brand-100;
+    }
+
+    &[data-current='false'] {
+      @apply bg-brand-300 text-brand-700;
+    }
+
+    &[data-current='false']:hover {
+      @apply bg-brand-400;
+    }
   }
 }

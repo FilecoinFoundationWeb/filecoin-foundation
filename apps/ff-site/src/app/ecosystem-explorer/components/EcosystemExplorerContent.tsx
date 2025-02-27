@@ -7,6 +7,7 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
@@ -19,7 +20,6 @@ import { graphicsData } from '@/data/graphicsData'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { findOrThrow } from '@/utils/findOrThrow'
 import { getSortOptions } from '@/utils/getSortOptions'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useSearch } from '@/hooks/useSearch'

@@ -11,6 +11,7 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { BookOpen } from '@phosphor-icons/react'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
@@ -23,7 +24,6 @@ import { getCategoryLabel } from '@/utils/categoryUtils'
 import { formatDate } from '@/utils/dateUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'

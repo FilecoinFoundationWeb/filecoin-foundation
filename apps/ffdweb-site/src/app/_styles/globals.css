@@ -164,4 +164,36 @@
   .text-link {
     @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
   }
+
+  .pagination {
+    @apply bg-brand-primary-300 text-brand-primary-900 p-1;
+  }
+
+  .pagination-carret {
+    @apply text-brand-primary-800;
+  }
+
+  .pagination-button {
+    @apply bg-brand-primary-300;
+
+    &:not(:disabled):hover {
+      @apply bg-brand-primary-400;
+    }
+  }
+
+  .pagination-index {
+    @apply h-full w-full;
+
+    &[data-current='true'] {
+      @apply bg-brand-primary-800 text-brand-primary-100;
+    }
+
+    &[data-current='false'] {
+      @apply bg-brand-primary-300 text-brand-primary-900;
+    }
+
+    &[data-current='false']:hover {
+      @apply bg-brand-primary-400;
+    }
+  }
 }
