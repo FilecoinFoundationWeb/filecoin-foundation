@@ -8,6 +8,7 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
@@ -22,7 +23,6 @@ import {
   entryMatchesCategoryQuery,
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'

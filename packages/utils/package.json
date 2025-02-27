@@ -11,6 +11,7 @@
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
     "./constants/*": "./src/constants/*.ts",
     "./stringUtils": "./src/stringUtils.ts",
+    "./urlUtils": "./src/urlUtils.ts",
     "./types/*": "./src/types/*.ts"
   },
   "scripts": {
