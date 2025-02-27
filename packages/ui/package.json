@@ -7,6 +7,8 @@
     "#*": "./src/*"
   },
   "exports": {
+    "./Avatar": "./src/Avatar.tsx",
+    "./AvatarGroup": "./src/AvatarGroup.tsx",
     "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
     "./BreadCrumbs": "./src/BreadCrumbs.tsx",

@@ -28,6 +28,11 @@
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
 
+  --color-avatar-background: var(--color-brand-primary-800);
+  --color-avatar-full-name: var(--color-brand-primary-100);
+  --color-avatar-initials: var(--color-brand-primary-200);
+  --color-avatar-ring: var(--color-neutral-100);
+
   --color-icon-subtle: var(--color-neutral-300);
 }
 
