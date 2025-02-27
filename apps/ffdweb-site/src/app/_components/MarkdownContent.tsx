@@ -13,7 +13,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']
-  addTableOfContents?: boolean
 }
 
 const IMAGE_DIMENSIONS = {
@@ -34,7 +33,6 @@ const MarkdownImage: Components['img'] = ({ src, alt }) => {
 
   if (!src) {
     const errorMessage = 'Invalid markdown: image is missing src attribute'
-
     console.error(errorMessage)
 
     return (
@@ -52,9 +50,7 @@ const MarkdownImage: Components['img'] = ({ src, alt }) => {
 const MarkdownLink: Components['a'] = ({ href, children }) => {
   if (!href) {
     const errorMessage = `Invalid markdown: link is missing href attribute for text "${children}"`
-
     console.error(errorMessage)
-    Sentry.captureException(new Error(errorMessage))
 
     return <>{children}</>
   }

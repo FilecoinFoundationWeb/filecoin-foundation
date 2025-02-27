@@ -56,17 +56,17 @@
 }
 
 @utility prose {
-  --tw-prose-body: var(--color-brand-primary-300);
-  --tw-prose-headings: var(--color-brand-primary-300);
-  --tw-prose-bold: var(--color-brand-primary-300);
-  --tw-prose-quotes: var(--color-brand-primary-300);
+  --tw-prose-body: var(--color-neutral-50);
+  --tw-prose-headings: var(--color-neutral-50);
+  --tw-prose-bold: var(--color-neutral-50);
+  --tw-prose-quotes: var(--color-neutral-50);
   --tw-prose-quote-borders: var(--color-brand-primary-300);
-  --tw-prose-counters: var(--color-brand-primary-300);
-  --tw-prose-bullets: var(--color-brand-primary-300);
-  --tw-prose-code: var(--color-brand-primary-300);
-  --tw-prose-pre-bg: var(--text-neutral-950);
-  --tw-prose-pre-code: var(--color-brand-primary-300);
-  --tw-prose-captions: var(--color-brand-primary-300);
+  --tw-prose-counters: var(----color-neutral-50);
+  --tw-prose-bullets: var(----color-neutral-50);
+  --tw-prose-code: var(--color-neutral-50);
+  --tw-prose-pre-bg: var(--color-neutral-950);
+  --tw-prose-pre-code: var(--color-neutral-50);
+  --tw-prose-captions: var(--color-neutral-50);
   --tw-prose-td-borders: var(--color-brand-primary-300);
   --tw-prose-th-borders: var(--color-brand-primary-300);
 
