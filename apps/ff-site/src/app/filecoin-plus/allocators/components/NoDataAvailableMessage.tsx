@@ -1,12 +1,12 @@
+import { NoResultsMessage } from '@filecoin-foundation/ui/NoResultsMessage'
 import { CloudSlash } from '@phosphor-icons/react/dist/ssr'
 
-import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
-
-import { NoResultsMessage } from '@/components/NoResultsMessage'
+import { BASE_DOMAIN, FIL_PLUS_URLS } from '@/constants/siteMetadata'
 
 export function NoDataAvailableMessage() {
   return (
     <NoResultsMessage
+      baseDomain={BASE_DOMAIN}
       title="Allocator Data Unavailable"
       icon={CloudSlash}
       message="We're having trouble fetching the allocator data. For the latest

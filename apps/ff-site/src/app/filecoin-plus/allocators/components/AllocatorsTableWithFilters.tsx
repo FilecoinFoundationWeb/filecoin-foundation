@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 
+import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import {
   useReactTable,
   getCoreRowModel,
@@ -11,8 +12,9 @@ import {
   type SortingState,
 } from '@tanstack/react-table'
 
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
+
 import { FilterContainer } from '@/components/FilterContainer'
-import { NoSearchResultsMessage } from '@/components/NoSearchResultsMessage'
 
 import { NAME_COLUMN_SORT_CONFIG } from '../constants/sorting'
 import { allocatorsTableColumnsData } from '../data/allocatorsTableColumnsData'
@@ -58,7 +60,7 @@ export function AllocatorsTableWithFilters({
         <AllocatorsTable headerGroups={headerGroups} rowModel={rowModel} />
       ) : (
         <div className="flex w-full justify-center">
-          <NoSearchResultsMessage />
+          <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
         </div>
       )}
     </FilterContainer.MainWrapper>

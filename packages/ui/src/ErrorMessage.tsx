@@ -1,14 +1,8 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
-import { type IconProps } from '@filecoin-foundation/ui/Icon'
 
-type CTAProps = {
-  href: string
-  text: string
-  icon?: IconProps['component']
-  ariaLabel?: string
-}
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 
 type ErrorMessageProps = {
   kicker: string
