@@ -6,9 +6,11 @@ import {
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import type {
+  ImageObjectFit,
+  StaticImageProps,
+} from '@filecoin-foundation/utils/types/imageType'
 import { clsx } from 'clsx'
-
-import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import {
   type CTAButtonGroupProps,
