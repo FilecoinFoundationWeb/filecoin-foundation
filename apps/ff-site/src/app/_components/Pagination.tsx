@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
@@ -12,9 +13,7 @@ import { PAGE_KEY } from '@/constants/searchParams'
 
 import { usePagination } from '@/hooks/usePagination'
 import { useResponsiveRange } from '@/hooks/useResponsiveRange'
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 import { useVisiblePages } from '@/hooks/useVisiblePages'
-
 
 type PaginationProps = {
   pageCount: ReturnType<typeof usePagination>['pageCount']

@@ -1,8 +1,7 @@
 'use client'
 
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { clsx } from 'clsx'
-
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 type ResultsAndResetProps = {
   results?: number
@@ -26,7 +25,7 @@ export function ResultsAndReset({ results }: ResultsAndResetProps) {
         </span>
       )}
       <button
-        className="inline-flex whitespace-nowrap font-bold text-brand-300 underline focus:brand-outline"
+        className="inline-flex font-bold whitespace-nowrap text-brand-300 underline focus:brand-outline"
         onClick={resetSearchParams}
       >
         Clear Filters

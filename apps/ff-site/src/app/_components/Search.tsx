@@ -4,13 +4,13 @@ import { useState, useEffect } from 'react'
 
 import { useSearchParams } from 'next/navigation'
 
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { useDebounceCallback } from 'usehooks-ts'
 
 import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
 import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 
 import { useSearch } from '@/hooks/useSearch'
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SearchInput } from '@/components/SearchInput'
 

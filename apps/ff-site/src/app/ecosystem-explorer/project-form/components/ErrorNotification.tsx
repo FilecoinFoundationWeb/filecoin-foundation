@@ -2,11 +2,10 @@
 
 import { useState, useEffect, useCallback } from 'react'
 
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { XCircle } from '@phosphor-icons/react'
 
 import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@/constants/notificationDialogDuration'
-
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
