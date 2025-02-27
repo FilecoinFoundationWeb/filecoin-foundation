@@ -1,11 +1,12 @@
+import { Social } from '@filecoin-foundation/ui/Social'
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 import clsx from 'clsx'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 
-import { Logo } from '@/components/Logo'
-import { Social } from '@/components/Social'
+import { socialLinksWithIcons } from '@/utils/socialConfigs'
 
+import { Logo } from '@/components/Logo'
 const FOOTER_GAP = 'gap-16'
 const FOOTER_SECTION_GAP = 'gap-10'
 
@@ -43,7 +44,7 @@ export function Footer() {
           ))}
           <div className={clsx('grid content-start', FOOTER_SECTION_GAP)}>
             <h3 className="text-base font-bold capitalize">Follow us</h3>
-            <Social />
+            <Social linksWithIcons={socialLinksWithIcons} variant="compact" />
           </div>
         </nav>
       </div>
