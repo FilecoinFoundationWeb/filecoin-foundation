@@ -1,8 +1,7 @@
-import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
+import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 import clsx from 'clsx'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { Logo } from '@/components/Logo'
 import { Social } from '@/components/Social'
@@ -36,9 +35,7 @@ export function Footer() {
               <ul className="grid gap-3">
                 {items.map(({ href, label }) => (
                   <li key={href}>
-                    <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
-                      {label}
-                    </SmartTextLink>
+                    <InternalTextLink href={href}>{label}</InternalTextLink>
                   </li>
                 ))}
               </ul>
@@ -62,9 +59,7 @@ export function Footer() {
           >
             {footerLegalItems.map(({ label, href }) => (
               <li key={href} className="fit-content">
-                <SmartTextLink href={href} baseDomain={BASE_DOMAIN}>
-                  {label}
-                </SmartTextLink>
+                <InternalTextLink href={href}>{label}</InternalTextLink>
               </li>
             ))}
           </ul>

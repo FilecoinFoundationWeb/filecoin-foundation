@@ -28,6 +28,16 @@
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
 
+  --color-brand-neutral-white: #ffffff;
+  --color-brand-neutral-100: #eaeaea;
+  --color-brand-neutral-200: #c6c6c6;
+  --color-brand-neutral-300: #a3a3a3;
+  --color-brand-neutral-400: #818181;
+  --color-brand-neutral-500: #616161;
+  --color-brand-neutral-600: #434343;
+  --color-brand-neutral-700: #262626;
+  --color-brand-neutral-black: #0d0d0d;
+
   --color-avatar-background: var(--color-brand-primary-800);
   --color-avatar-full-name: var(--color-brand-primary-100);
   --color-avatar-initials: var(--color-brand-primary-200);
@@ -55,7 +65,7 @@
 
 @layer components {
   .text-link {
-    @apply text-brand-secondary-300 hover:text-brand-primary-300 focus:brand-outline hover:underline;
+    @apply text-brand-neutral-white hover:text-brand-neutral-100 focus:brand-outline hover:underline;
   }
 
   .button-base {
