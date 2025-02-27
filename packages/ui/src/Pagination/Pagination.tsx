@@ -2,23 +2,22 @@
 
 import { useState, useEffect } from 'react'
 
-import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import { clsx } from 'clsx'
 import { useDebounceCallback } from 'usehooks-ts'
 
-import { DEFAULT_PAGE_NUMBER } from '@/constants/paginationConstants'
-import { PAGE_KEY } from '@/constants/searchParams'
-
-import { usePagination } from '@/hooks/usePagination'
-import { useResponsiveRange } from '@/hooks/useResponsiveRange'
-import { useVisiblePages } from '@/hooks/useVisiblePages'
+import { useResponsiveRange } from './utils/useResponsiveRange'
+import { useVisiblePages } from './utils/useVisiblePages'
 
 type PaginationProps = {
-  pageCount: ReturnType<typeof usePagination>['pageCount']
-  currentPage: ReturnType<typeof usePagination>['currentPage']
+  pageCount: number
+  currentPage: number
 }
+
+const PAGE_KEY = 'page'
 
 const DEBOUNCE_DELAY = 300
 
@@ -75,7 +74,7 @@ export function Pagination({
     <nav
       aria-label="Pagination"
       role="navigation"
-      className="flex w-full justify-between rounded-lg bg-brand-300 p-1 text-brand-700"
+      className="bg-brand-300 text-brand-700 flex w-full justify-between rounded-lg p-1"
     >
       <div className="flex">
         <button
@@ -83,7 +82,7 @@ export function Pagination({
           aria-disabled={!canGoBack}
           disabled={!canGoBack}
           className={clsx(
-            'flex items-center gap-x-1.5 rounded-sm bg-brand-300 p-1 px-2 transition',
+            'bg-brand-300 flex items-center gap-x-1.5 rounded-sm p-1 px-2 transition',
             canGoBack
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
@@ -94,7 +93,7 @@ export function Pagination({
           <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
         </button>
 
-        <div className="flex items-center text-brand-800/50">
+        <div className="text-brand-800/50 flex items-center">
           <Icon component={LineVertical} weight="light" />
         </div>
       </div>
@@ -129,7 +128,7 @@ export function Pagination({
       </ul>
 
       <div className="flex">
-        <div className="flex items-center text-brand-800/50">
+        <div className="text-brand-800/50 flex items-center">
           <Icon component={LineVertical} weight="light" />
         </div>
 
@@ -138,7 +137,7 @@ export function Pagination({
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
           className={clsx(
-            'flex items-center gap-x-1.5 rounded-sm bg-brand-300 p-1 px-2 transition',
+            'bg-brand-300 flex items-center gap-x-1.5 rounded-sm p-1 px-2 transition',
             canGoForward
               ? 'hover:bg-brand-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
               : 'cursor-not-allowed',
