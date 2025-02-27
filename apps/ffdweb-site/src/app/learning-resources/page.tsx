@@ -1,16 +1,19 @@
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
-import { CTASection } from '@/_components/CTASection'
+import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
 
 export default function LearningResources() {
   return (
     <>
-      <header>
-        <span>Learning Resources</span>
-        <h1>Explore Decentralized Tech with Content from FFDW and Beyond</h1>
-      </header>
+      <PageHeader
+        title="Explore Decentralized Tech with Content from FFDW and Beyond"
+        image={graphicsData.learningResources}
+      />
 
       <CTASection
         kicker="Contribute"

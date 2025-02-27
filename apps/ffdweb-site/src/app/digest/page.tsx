@@ -1,17 +1,20 @@
 import { Social } from '@filecoin-foundation/ui/Social'
 
+import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { CTASection } from '@/components/CTASection'
+import { PageHeader } from '@/components/PageHeader'
 
 export default function Digest() {
   return (
     <>
-      <header>
-        <span>FFDW Digest</span>
-        <h1>The Go-to Publication for Exploring DWeb Ideas and Principles</h1>
-      </header>
+      <PageHeader
+        title="The Go-to Publication for Exploring DWeb Ideas and Principles"
+        image={graphicsData.digest}
+      />
 
       <CTASection
         kicker="Social Media"
