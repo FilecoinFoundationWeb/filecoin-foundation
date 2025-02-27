@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <section>
         <PageHeader
-          fontVariant="homepage"
+          isHomepage
           title="A Better Web for Everyone"
           mobileLayout="image-above-content"
           image={{

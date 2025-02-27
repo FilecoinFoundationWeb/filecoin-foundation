@@ -11,7 +11,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type TitleProps = {
   children: string
-  fontVariant?: PageHeaderFontVariant
+  isHomepage: boolean
 }
 
 export type StaticImageProps = {
@@ -21,14 +21,12 @@ export type StaticImageProps = {
 
 type PageHeaderImageProps = StaticImageProps
 
-type PageHeaderFontVariant = 'default' | 'homepage'
-
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   cta?: CTAProps
   mobileLayout?: 'content-above-image' | 'image-above-content'
-  fontVariant?: PageHeaderFontVariant
+  isHomepage?: TitleProps['isHomepage']
 }
 
 export function PageHeader({
@@ -36,7 +34,7 @@ export function PageHeader({
   image,
   cta,
   mobileLayout = 'content-above-image',
-  fontVariant = 'default',
+  isHomepage = false,
 }: PageHeaderProps) {
   return (
     <header className="grid items-center gap-6 lg:grid-cols-2">
@@ -47,7 +45,7 @@ export function PageHeader({
           mobileLayout === 'image-above-content' ? 'order-2' : 'order-1',
         )}
       >
-        <PageHeader.Title fontVariant={fontVariant}>{title}</PageHeader.Title>
+        <PageHeader.Title isHomepage={isHomepage}>{title}</PageHeader.Title>
         {cta && <PageHeader.CTAButton {...cta} />}
       </div>
       <div
@@ -62,8 +60,8 @@ export function PageHeader({
   )
 }
 
-PageHeader.Title = function Title({ children, fontVariant }: TitleProps) {
-  const titleVariant = fontVariant === 'homepage' ? '5xl-fluid' : '4xl-fluid'
+PageHeader.Title = function Title({ children, isHomepage }: TitleProps) {
+  const titleVariant = isHomepage ? '5xl-fluid' : '4xl-fluid'
 
   return (
     <Heading tag="h1" variant={titleVariant}>
