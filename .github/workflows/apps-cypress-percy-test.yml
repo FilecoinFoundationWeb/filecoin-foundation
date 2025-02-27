@@ -3,20 +3,23 @@ name: Site Cypress and Percy Tests
 on:
   push:
     paths:
-      - "apps/ff-site/**"
+      - "apps/**"
     branches: [main]
   pull_request:
     paths:
-      - "apps/ff-site/**"
+      - "apps/**"
     branches: [main]
 
 jobs:
   cypress-run:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [ff-site, ffdweb-site]
     defaults:
       run:
-        working-directory: apps/ff-site
+        working-directory: apps/${{ matrix.app }}
 
     env:
       AIRTABLE_READ_ONLY_TOKEN: ${{ secrets.AIRTABLE_READ_ONLY_TOKEN }}
