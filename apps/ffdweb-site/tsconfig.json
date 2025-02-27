@@ -6,7 +6,7 @@
     "paths": {
       "@/*": ["./src/app/*"],
       "@/actions/*": ["./src/app/_actions/*"],
-      "@/assets/*": ["./public/assets/*"],
+      "@/page-assets/*": ["./public/page-assets/*"],
       "@/components/*": ["./src/app/_components/*"],
       "@/constants/*": ["./src/app/_constants/*"],
       "@/content/*": ["./src/content/*"],

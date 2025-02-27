@@ -8,17 +8,23 @@ import { createMetadata } from '@/utils/createMetadata'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
-const placeholderImage = '/page-assets/graphics/placeholder.webp'
+import placeholderImage from '@/page-assets/graphics/placeholder.webp'
 
 export default function Home() {
   return (
     <>
       <section>
         <PageHeader
+          fontVariant="homepage"
           title="A Better Web for Everyone"
+          mobileLayout="image-above-content"
           image={{
             data: placeholderImage,
             alt: 'A Better Web for Everyone',
+          }}
+          cta={{
+            href: PATHS.PROJECTS.path,
+            text: 'View Projects',
           }}
         />
         <InternalTextLink href={PATHS.PROJECTS.path}>
