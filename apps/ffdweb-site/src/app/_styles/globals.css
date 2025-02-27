@@ -88,4 +88,20 @@
   .breadcrumbs-active {
     @apply text-brand-primary-400;
   }
+
+  .avatar-ring {
+    @apply ring-1 ring-neutral-100;
+  }
+
+  .avatar-background {
+    @apply bg-brand-primary-800;
+  }
+
+  .avatar-initials {
+    @apply text-brand-primary-200;
+  }
+
+  .avatar-full-name {
+    @apply text-brand-primary-100;
+  }
 }

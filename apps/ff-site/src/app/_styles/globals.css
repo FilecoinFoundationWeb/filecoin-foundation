@@ -134,4 +134,20 @@
   .breadcrumbs-active {
     @apply text-brand-400;
   }
+
+  .avatar-ring {
+    @apply ring-2 ring-brand-700;
+  }
+
+  .avatar-background {
+    @apply bg-brand-600;
+  }
+
+  .avatar-initials {
+    @apply text-brand-200;
+  }
+
+  .avatar-full-name {
+    @apply text-brand-100;
+  }
 }

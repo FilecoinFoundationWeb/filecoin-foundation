@@ -1,5 +1,9 @@
 import Image, { type ImageProps } from 'next/image'
 
+import {
+  AvatarGroup,
+  type AvatarGroupProps,
+} from '@filecoin-foundation/ui/AvatarGroup'
 import { BaseLink } from '@filecoin-foundation/ui/BaseLink'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon } from '@filecoin-foundation/ui/Icon'
@@ -21,7 +25,6 @@ import type { ImageObjectFit, StaticImageProps } from '@/types/imageType'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import { AvatarGroup, type AvatarGroupProps } from '@/components/AvatarGroup'
 import { Meta, type MetaDataType } from '@/components/Meta'
 
 type CardImageProps = (StaticImageProps | ImageProps) & {
