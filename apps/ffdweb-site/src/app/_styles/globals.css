@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @source "../../../../../node_modules/@filecoin-foundation/ui";
 
+@plugin "@tailwindcss/typography";
+
 :root {
   --outline-brand: 4px solid var(--color-brand-primary-300);
   --outline-brand-offset: 0px;
@@ -50,6 +52,53 @@
   h5,
   h6 {
     @apply leading-relaxed;
+  }
+}
+
+@utility prose {
+  --tw-prose-body: var(--color-brand-primary-300);
+  --tw-prose-headings: var(--color-brand-primary-300);
+  --tw-prose-bold: var(--color-brand-primary-300);
+  --tw-prose-quotes: var(--color-brand-primary-300);
+  --tw-prose-quote-borders: var(--color-brand-primary-300);
+  --tw-prose-counters: var(--color-brand-primary-300);
+  --tw-prose-bullets: var(--color-brand-primary-300);
+  --tw-prose-code: var(--color-brand-primary-300);
+  --tw-prose-pre-bg: var(--text-neutral-950);
+  --tw-prose-pre-code: var(--color-brand-primary-300);
+  --tw-prose-captions: var(--color-brand-primary-300);
+  --tw-prose-td-borders: var(--color-brand-primary-300);
+  --tw-prose-th-borders: var(--color-brand-primary-300);
+
+  & code {
+    &::before,
+    &::after {
+      @apply content-none!;
+    }
+  }
+
+  & pre {
+    @apply border-brand-primary-600 border border-solid;
+  }
+
+  & iframe {
+    @apply w-full;
+
+    &[src*='youtube.com'] {
+      @apply aspect-video h-auto w-full;
+    }
+  }
+
+  & figure {
+    @apply text-center;
+  }
+
+  & figcaption {
+    @apply text-left text-sm;
+  }
+
+  & table thead th {
+    @apply text-brand-primary-300;
   }
 }
 
