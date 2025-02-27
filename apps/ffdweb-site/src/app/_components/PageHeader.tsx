@@ -5,6 +5,7 @@ import { Button } from '@filecoin-foundation/ui/Button'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
+import { clsx } from 'clsx'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
@@ -37,19 +38,23 @@ export function PageHeader({
   mobileLayout = 'content-above-image',
   fontVariant = 'default',
 }: PageHeaderProps) {
-  const contentOrder = mobileLayout === 'image-above-content' ? 2 : 1
-  const imageOrder = contentOrder === 1 ? 2 : 1
-
   return (
     <header className="grid items-center gap-6 lg:grid-cols-2">
       <div
-        className={`order-${contentOrder} grid grid-cols-1 content-start justify-center gap-8 text-center sm:justify-items-center sm:gap-16 lg:order-1 lg:max-w-lg lg:justify-items-start lg:text-left`}
+        className={clsx(
+          'grid grid-cols-1 content-start justify-center gap-8 text-center',
+          'sm:justify-items-center sm:gap-16 lg:order-1 lg:max-w-lg lg:justify-items-start lg:text-left',
+          mobileLayout === 'image-above-content' ? 'order-2' : 'order-1',
+        )}
       >
         <PageHeader.Title fontVariant={fontVariant}>{title}</PageHeader.Title>
         {cta && <PageHeader.CTAButton {...cta} />}
       </div>
       <div
-        className={`order-${imageOrder} flex justify-center lg:order-2 lg:justify-end`}
+        className={clsx(
+          'flex justify-center lg:order-2 lg:justify-end',
+          mobileLayout === 'image-above-content' ? 'order-1' : 'order-2',
+        )}
       >
         {image && <PageHeader.Image image={image} />}
       </div>
