@@ -129,6 +129,11 @@
     @apply rounded-lg border-brand-300 text-brand-300;
   }
 
+  /* SITE LAYOUT */
+  .site-layout {
+    @apply bg-brand-800 text-brand-100;
+  }
+
   /* TAGS */
   .tag-label {
     @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;

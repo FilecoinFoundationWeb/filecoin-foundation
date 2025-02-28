@@ -16,11 +16,13 @@
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
+    "./GlobalError": "./src/GlobalError.tsx",
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
     "./IconButton": "./src/IconButton.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
+    "./SiteLayout": "./src/SiteLayout.tsx",
     "./Social": "./src/Social.tsx",
     "./TagComponents": "./src/TagComponents/index.ts",
     "./TagComponents/*": "./src/TagComponents/*.tsx",
@@ -36,13 +38,14 @@
     "typescript": "^5"
   },
   "peerDependencies": {
+    "@phosphor-icons/react": "^2.1.7",
+    "@sentry/nextjs": "^8.52.0",
     "@tailwindcss/postcss": "^4.0.5",
+    "clsx": "^2.1.1",
+    "next": "15.1.6",
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.5",
-    "@phosphor-icons/react": "^2.1.7",
-    "clsx": "^2.1.1",
-    "next": "15.1.6"
+    "tailwindcss": "^4.0.5"
   }
 }

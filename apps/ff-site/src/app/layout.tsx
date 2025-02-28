@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 }
 
-export type LayoutProps = {
+type RootLayoutProps = {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: LayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <NuqsAdapter>
       <PlausibleProvider
