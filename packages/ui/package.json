@@ -16,6 +16,8 @@
     "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
+    "./DigestArticle": "./src/DigestArticle/index.ts",
+    "./DigestArticle/*": "./src/DigestArticle/*.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
     "./GlobalError": "./src/GlobalError.tsx",
