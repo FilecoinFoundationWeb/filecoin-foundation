@@ -5,12 +5,6 @@
 @plugin "@headlessui/tailwindcss";
 @plugin "@tailwindcss/forms";
 
-:root {
-  --outline-brand: 2px solid var(--color-brand-100);
-  --outline-brand-offset: 0px;
-  --outline-brand-border-color: transparent;
-}
-
 @theme {
   --color-brand-100: #eff6fc;
   --color-brand-200: #d8ebfb;
@@ -24,11 +18,6 @@
   --color-brand-success: theme('colors.green.400');
   --color-brand-error: theme('colors.red.400');
 
-  --color-avatar-background: theme('colors.brand.600');
-  --color-avatar-full-name: theme('colors.brand.100');
-  --color-avatar-initials: theme('colors.brand.200');
-  --color-avatar-ring: theme('colors.brand.700');
-
   --color-icon-primary: theme('colors.brand.300');
   --color-icon-accent: theme('colors.brand.200');
   --color-icon-subtle: theme('colors.brand.400');
@@ -39,25 +28,25 @@
 }
 
 @utility brand-outline {
-  outline: var(--outline-brand);
-  outline-offset: var(--outline-brand-offset);
-  border-color: var(--outline-brand-border-color);
+  outline: 2px solid var(--color-brand-100);
+  outline-offset: 0px;
+  border-color: transparent;
 }
 
 @utility prose {
-  --tw-prose-body: var(--color-brand-100);
-  --tw-prose-headings: var(--color-brand-100);
-  --tw-prose-bold: var(--color-brand-100);
-  --tw-prose-quotes: var(--color-brand-100);
-  --tw-prose-quote-borders: var(--color-brand-300);
-  --tw-prose-counters: var(--color-brand-100);
-  --tw-prose-bullets: var(--color-brand-100);
-  --tw-prose-code: var(--color-brand-100);
-  --tw-prose-pre-bg: var(--color-brand-700);
-  --tw-prose-pre-code: var(--color-brand-100);
-  --tw-prose-captions: var(--color-neutral-400);
-  --tw-prose-td-borders: var(--color-brand-300);
-  --tw-prose-th-borders: var(--color-brand-300);
+  --tw-prose-body: theme('colors.brand.100');
+  --tw-prose-headings: theme('colors.brand.100');
+  --tw-prose-bold: theme('colors.brand.100');
+  --tw-prose-quotes: theme('colors.brand.100');
+  --tw-prose-quote-borders: theme('colors.brand.300');
+  --tw-prose-counters: theme('colors.brand.100');
+  --tw-prose-bullets: theme('colors.brand.100');
+  --tw-prose-code: theme('colors.brand.100');
+  --tw-prose-pre-bg: theme('colors.brand.700');
+  --tw-prose-pre-code: theme('colors.brand.100');
+  --tw-prose-captions: theme('colors.neutral.400');
+  --tw-prose-td-borders: theme('colors.brand.300');
+  --tw-prose-th-borders: theme('colors.brand.300');
 
   & code {
     &::before,
@@ -67,7 +56,7 @@
   }
 
   & pre {
-    @apply border-brand-600 border border-solid;
+    @apply border border-solid border-brand-600;
   }
 
   & iframe {
@@ -92,46 +81,41 @@
 }
 
 @layer components {
-  .text-link {
-    @apply text-brand-300 focus:brand-outline hover:underline;
+  /* AVATAR */
+  .avatar-background {
+    @apply bg-brand-600;
   }
 
-  .toc-header {
-    @apply text-brand-200 text-sm font-semibold uppercase;
+  .avatar-full-name {
+    @apply text-brand-100;
   }
 
-  .button-base {
+  .avatar-initials {
+    @apply text-brand-200;
+  }
+
+  .avatar-ring {
+    @apply text-brand-700;
+  }
+
+  /* BUTTONS */
+  .button {
     @apply rounded-lg border font-semibold;
   }
 
-  .button-primary {
+  .button--primary {
     @apply border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400;
   }
 
-  .button-ghost {
-    @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
+  .button--ghost {
+    @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
   }
 
-  .button-disabled {
+  .button--disabled {
     @apply bg-brand-200;
   }
 
-  .tag-label-base {
-    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize;
-  }
-
-  .tag-label-primary {
-    @apply border-brand-300;
-  }
-
-  .tag-label-secondary {
-    @apply border-brand-500;
-  }
-
-  .tag-label-callout {
-    @apply border-brand-error;
-  }
-
+  /* BREADCRUMBS */
   .breadcrumbs-inactive {
     @apply text-brand-300;
   }
@@ -140,7 +124,35 @@
     @apply text-brand-400;
   }
 
+  /* ICON BUTTONS */
   .icon-button {
-    @apply border-brand-300 text-brand-300 rounded-lg;
+    @apply rounded-lg border-brand-300 text-brand-300;
+  }
+
+  /* TAGS */
+  .tag-label {
+    @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;
+  }
+
+  .tag-label--primary {
+    @apply border-brand-300;
+  }
+
+  .tag-label--secondary {
+    @apply border-brand-500;
+  }
+
+  .tag-label--callout {
+    @apply border-brand-error;
+  }
+
+  /* TEXT LINKS */
+  .text-link {
+    @apply text-brand-300 hover:underline focus:brand-outline;
+  }
+
+  /* TOC */
+  .toc-header {
+    @apply text-sm font-semibold text-brand-200 uppercase;
   }
 }
