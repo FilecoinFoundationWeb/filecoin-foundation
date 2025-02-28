@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { Heading } from '@filecoin-foundation/ui/Heading'
-
 import { Social } from '@filecoin-foundation/ui/Social'
 import clsx from 'clsx'
 
