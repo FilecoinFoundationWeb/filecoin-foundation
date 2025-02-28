@@ -21,19 +21,19 @@
   --color-brand-700: #06094e;
   --color-brand-800: #08072e;
 
-  --color-brand-success: var(--color-green-400);
-  --color-brand-error: var(--color-red-400);
+  --color-brand-success: theme('colors.green.400');
+  --color-brand-error: theme('colors.red.400');
 
-  --color-avatar-background: var(--color-brand-600);
-  --color-avatar-full-name: var(--color-brand-100);
-  --color-avatar-initials: var(--color-brand-200);
-  --color-avatar-ring: var(--color-brand-700);
+  --color-avatar-background: theme('colors.brand.600');
+  --color-avatar-full-name: theme('colors.brand.100');
+  --color-avatar-initials: theme('colors.brand.200');
+  --color-avatar-ring: theme('colors.brand.700');
 
-  --color-icon-primary: var(--color-brand-300);
-  --color-icon-accent: var(--color-brand-200);
-  --color-icon-subtle: var(--color-brand-400);
-  --color-icon-success: var(--color-brand-success);
-  --color-icon-error: var(--color-brand-error);
+  --color-icon-primary: theme('colors.brand.300');
+  --color-icon-accent: theme('colors.brand.200');
+  --color-icon-subtle: theme('colors.brand.400');
+  --color-icon-success: theme('colors.brand.success');
+  --color-icon-error: theme('colors.brand.error');
 
   --spacing-readable: 60ch;
 }
@@ -67,7 +67,7 @@
   }
 
   & pre {
-    @apply border border-solid border-brand-600;
+    @apply border-brand-600 border border-solid;
   }
 
   & iframe {
@@ -93,11 +93,11 @@
 
 @layer components {
   .text-link {
-    @apply text-brand-300 hover:underline focus:brand-outline;
+    @apply text-brand-300 focus:brand-outline hover:underline;
   }
 
   .toc-header {
-    @apply text-sm font-semibold text-brand-200 uppercase;
+    @apply text-brand-200 text-sm font-semibold uppercase;
   }
 
   .button-base {
@@ -109,7 +109,7 @@
   }
 
   .button-ghost {
-    @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
+    @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
   }
 
   .button-disabled {
@@ -117,7 +117,7 @@
   }
 
   .tag-label-base {
-    @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;
+    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize;
   }
 
   .tag-label-primary {
@@ -138,5 +138,9 @@
 
   .breadcrumbs-active {
     @apply text-brand-400;
+  }
+
+  .icon-button {
+    @apply border-brand-300 text-brand-300 rounded-lg;
   }
 }

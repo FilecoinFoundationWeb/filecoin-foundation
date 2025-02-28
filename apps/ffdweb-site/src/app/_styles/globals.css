@@ -30,12 +30,13 @@
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
 
-  --color-avatar-background: var(--color-brand-primary-800); /* CHECK */
-  --color-avatar-full-name: var(--color-neutral-50);
-  --color-avatar-initials: var(--color-neutral-50); /* CHECK */
-  --color-avatar-ring: var(--color-neutral-50);
+  --color-avatar-background: theme('colors.brand.primary.800'); /* CHECK */
+  --color-avatar-full-name: theme('colors.neutral.50');
+  --color-avatar-initials: theme('colors.neutral.50'); /* CHECK */
+  --color-avatar-ring: theme('colors.neutral.50');
 
-  --color-icon-subtle: var(--color-neutral-300); /* CHECK */
+  --color-icon-primary: theme('colors.brand.primary.300');
+  --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
 }
 
 @utility brand-outline {
@@ -141,5 +142,9 @@
 
   .breadcrumbs-active {
     @apply text-brand-primary-300;
+  }
+
+  .icon-button {
+    @apply border-brand-primary-300 text-brand-primary-300;
   }
 }
