@@ -1,4 +1,4 @@
-import { DigestArticleLayout } from '@filecoin-foundation/ui/DigestArticle'
+// import { DigestArticleLayout } from '@filecoin-foundation/ui/DigestArticle'
 
 // import {
 //   DigestArticleHeader,
@@ -13,7 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 export default function DigestArticle() {
   return (
-    <DigestArticleLayout>
+    // <DigestArticleLayout>
       {/* <DigestArticleHeader
         title={title}
         issueNumber={issueNumber}
@@ -25,7 +25,7 @@ export default function DigestArticle() {
         }}
       /> */}
       {/* {content && <MarkdownContent>{content}</MarkdownContent>} */}
-    </DigestArticleLayout>
+    // </DigestArticleLayout>
   )
 }
 
