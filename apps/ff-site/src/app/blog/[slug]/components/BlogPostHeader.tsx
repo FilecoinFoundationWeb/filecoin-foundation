@@ -1,10 +1,10 @@
 import { ArticleHeader } from '@filecoin-foundation/ui/ArticleHeader'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { formatDate } from '@/utils/dateUtils'
 
 import type { BlogPost } from '../../types/blogPostType'
 

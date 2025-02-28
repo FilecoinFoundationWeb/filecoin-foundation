@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation'
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { BookOpen } from '@phosphor-icons/react'
 
 import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
@@ -19,7 +20,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { formatDate } from '@/utils/dateUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { normalizeQueryParam } from '@/utils/queryUtils'

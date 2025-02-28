@@ -1,4 +1,4 @@
-import { getUTCMidnightToday } from '@/utils/dateUtils'
+import { getUTCMidnightToday } from '@filecoin-foundation/utils/dateUtils'
 
 export const FILECOIN_LAUNCH_YEAR = 2017
 
