@@ -1,6 +1,3 @@
-import { Manrope } from 'next/font/google'
-
-import { SiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 import type { Metadata } from 'next'
 
 import '@/styles/globals.css'
@@ -11,8 +8,7 @@ import {
   ORGANIZATION_NAME_SHORT,
 } from '@/constants/siteMetadata'
 
-import { Footer } from '@/components/Footer'
-import { Navigation } from '@/components/Navigation'
+import { SiteLayout } from '@/components/SiteLayout'
 
 export const metadata: Metadata = {
   title: {
@@ -22,19 +18,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 }
 
-const manrope = Manrope({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
 type RootLayoutProps = {
   children: React.ReactNode
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  return (
-    <SiteLayout font={manrope} Navigation={Navigation} Footer={Footer}>
-      {children}
-    </SiteLayout>
-  )
+  return <SiteLayout>{children}</SiteLayout>
 }

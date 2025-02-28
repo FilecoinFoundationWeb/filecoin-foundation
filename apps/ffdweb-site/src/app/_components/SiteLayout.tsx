@@ -1,11 +1,11 @@
-import { Archivo } from 'next/font/google'
+import { Manrope } from 'next/font/google'
 
 import { SiteLayout as AppSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
-import { Footer } from './Footer'
-import { Navigation } from './Navigation'
+import { Footer } from '@/components/Footer'
+import { Navigation } from '@/components/Navigation'
 
-const archivo = Archivo({
+const manrope = Manrope({
   subsets: ['latin'],
   display: 'swap',
 })
@@ -16,7 +16,7 @@ type SiteLayoutProps = {
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <AppSiteLayout font={archivo} Navigation={Navigation} Footer={Footer}>
+    <AppSiteLayout font={manrope} Navigation={Navigation} Footer={Footer}>
       {children}
     </AppSiteLayout>
   )
