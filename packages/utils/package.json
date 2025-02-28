@@ -7,10 +7,11 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./linkUtils": "./src/linkUtils.ts",
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
-    "./constants/*": "./src/constants/*.ts",
+    "./dateUtils": "./src/dateUtils.ts",
+    "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
+    "./constants/*": "./src/constants/*.ts",
     "./types/*": "./src/types/*.ts"
   },
   "scripts": {
