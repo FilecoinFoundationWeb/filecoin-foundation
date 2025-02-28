@@ -11,6 +11,7 @@ export type HeadingProps = {
     | '2xl'
     | 'xl'
     | 'lg'
+    | 'md-bold'
     | 'md'
     | 'sm'
     | 'xs'
@@ -31,6 +32,7 @@ const variantStyles = {
   '2xl': 'text-2xl font-bold',
   xl: 'text-xl font-bold',
   lg: 'text-lg font-bold',
+  'md-bold': 'text-md font-bold',
   md: 'text-md font-medium',
   sm: 'text-sm font-medium',
   xs: 'text-xs font-light',

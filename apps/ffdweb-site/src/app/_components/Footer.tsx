@@ -1,12 +1,22 @@
+import Link from 'next/link'
+
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Social } from '@filecoin-foundation/ui/Social'
-import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 import clsx from 'clsx'
 
 import { footerLegalItems, footerNavigationItems } from '@/constants/navigation'
 
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
-import { Logo } from '@/components/Logo'
+type FooterSectionProps = {
+  title: string
+  children: React.ReactNode
+}
+
+type FooterLinkProps = {
+  href: string
+  label: string
+}
 
 const FOOTER_GAP = 'gap-16'
 const FOOTER_SECTION_GAP = 'gap-10'
@@ -20,7 +30,8 @@ export function Footer() {
           FOOTER_GAP,
         )}
       >
-        <Logo />
+        <LogoLink />
+
         <nav
           aria-label="Footer navigation"
           className={clsx(
@@ -28,29 +39,21 @@ export function Footer() {
             FOOTER_GAP,
           )}
         >
-          {Object.entries(footerNavigationItems).map(([title, items]) => (
-            <div
-              key={title}
-              className={clsx('grid content-start', FOOTER_SECTION_GAP)}
-            >
-              <h3 className="text-base font-bold capitalize">{title}</h3>
+          {footerNavigationItems.map((section) => (
+            <FooterSection key={section.title} title={section.title}>
               <ul className="grid gap-3">
-                {items.map(({ href, label }) => (
-                  <li key={href}>
-                    <InternalTextLink className="text-white" href={href}>
-                      {label}
-                    </InternalTextLink>
-                  </li>
+                {section.links.map(({ href, label }) => (
+                  <FooterLink key={href} href={href} label={label} />
                 ))}
               </ul>
-            </div>
+            </FooterSection>
           ))}
-          <div className={clsx('grid content-start', FOOTER_SECTION_GAP)}>
-            <h3 className="text-base font-bold capitalize">Follow us</h3>
+
+          <FooterSection title="Follow Us">
             <div className="flex">
               <Social linksWithIcons={socialLinksWithIcons} />
             </div>
-          </div>
+          </FooterSection>
         </nav>
       </div>
 
@@ -65,9 +68,12 @@ export function Footer() {
           >
             {footerLegalItems.map(({ label, href }) => (
               <li key={href} className="fit-content">
-                <InternalTextLink className="text-white" href={href}>
+                <Link
+                  className="focus:brand-outline text-neutral-50 hover:underline"
+                  href={href}
+                >
                   {label}
-                </InternalTextLink>
+                </Link>
               </li>
             ))}
           </ul>
@@ -79,5 +85,29 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  )
+}
+
+function FooterSection({ title, children }: FooterSectionProps) {
+  return (
+    <div className={clsx('grid content-start', FOOTER_SECTION_GAP)}>
+      <Heading tag="h3" variant="md-bold">
+        {title}
+      </Heading>
+      {children}
+    </div>
+  )
+}
+
+function FooterLink({ href, label }: FooterLinkProps) {
+  return (
+    <li>
+      <Link
+        className="focus:brand-outline text-neutral-50 hover:underline" /* CHECK */
+        href={href}
+      >
+        {label}
+      </Link>
+    </li>
   )
 }

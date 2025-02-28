@@ -1,22 +1,14 @@
-import Link from 'next/link'
-
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink'
 
 import { PATHS } from '@/constants/paths'
 
-import { Logo } from '@/components/Logo'
+import { LogoLink } from '@/components/Logo/LogoLink'
 
 export function Navigation() {
   return (
     <nav className="mb-6 flex justify-between gap-12 lg:items-center">
-      <Link
-        className="focus:brand-outline shrink-0"
-        href={PATHS.HOME.path}
-        aria-label="Go to homepage"
-      >
-        <Logo />
-        <span className="sr-only">Home</span>
-      </Link>
+      <LogoLink />
+
       <div className="flex gap-4">
         <InternalTextLink href={PATHS.HOME.path}>
           {PATHS.HOME.label}

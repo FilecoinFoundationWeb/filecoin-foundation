@@ -20,7 +20,7 @@ export function Social({ linksWithIcons }: SocialProps) {
   return (
     <ul
       className={clsx(
-        'grid auto-cols-auto grid-flow-col justify-items-center gap-6',
+        'flex flex-wrap items-center justify-between gap-6',
 
         TOUCH_TARGET.touchAreaOffset,
       )}
