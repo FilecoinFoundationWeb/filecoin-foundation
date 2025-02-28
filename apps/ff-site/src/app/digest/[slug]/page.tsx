@@ -1,4 +1,7 @@
-import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
+import {
+  DigestArticleHeader,
+  DigestArticleLayout,
+} from '@filecoin-foundation/ui/DigestArticle'
 
 import { type SlugParams } from '@/types/paramsTypes'
 
@@ -33,7 +36,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
-      <div className="m-auto max-w-2xl space-y-16">
+      <DigestArticleLayout>
         <DigestArticleHeader
           title={title}
           issueNumber={issueNumber}
@@ -49,7 +52,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}
         />
-      </div>
+      </DigestArticleLayout>
     </PageLayout>
   )
 }

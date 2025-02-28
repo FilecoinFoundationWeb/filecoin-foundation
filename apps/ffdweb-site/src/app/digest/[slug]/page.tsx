@@ -1,4 +1,9 @@
-// import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
+import { DigestArticleLayout } from '@filecoin-foundation/ui/DigestArticle'
+
+// import {
+//   DigestArticleHeader,
+//   DigestArticleLayout,
+// } from '@filecoin-foundation/ui/DigestArticle'
 
 // import { graphicsData } from '@/data/graphicsData'
 
@@ -8,7 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 export default function DigestArticle() {
   return (
-    <div className="m-auto max-w-2xl space-y-16">
+    <DigestArticleLayout>
       {/* <DigestArticleHeader
         title={title}
         issueNumber={issueNumber}
@@ -20,7 +25,7 @@ export default function DigestArticle() {
         }}
       /> */}
       {/* {content && <MarkdownContent>{content}</MarkdownContent>} */}
-    </div>
+    </DigestArticleLayout>
   )
 }
 
