@@ -1,3 +1,5 @@
+import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
+
 import { type SlugParams } from '@/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
@@ -16,7 +18,6 @@ import {
   getDigestArticlesData,
 } from '../utils/getDigestArticleData'
 
-import { DigestArticleHeader } from './components/DigestArticleHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
@@ -37,8 +38,11 @@ export default async function DigestArticle(props: DigestArticleProps) {
           title={title}
           issueNumber={issueNumber}
           articleNumber={articleNumber}
-          image={image}
           authors={authors}
+          image={{
+            ...(image || graphicsData.imageFallback.data),
+            alt: '',
+          }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
         <ShareArticle
