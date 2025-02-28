@@ -1,15 +1,18 @@
+import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
 import { ArticleHeader } from '@filecoin-foundation/ui/ArticleHeader'
-import { AvatarGroup } from '@filecoin-foundation/ui/AvatarGroup'
+import {
+  type AvatarGroupProps,
+  AvatarGroup,
+} from '@filecoin-foundation/ui/AvatarGroup'
 import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 
-import { graphicsData } from '@/data/graphicsData'
-
-import type { DigestArticleData } from '../../types/digestType'
-
-type DigestArticleHeaderProps = Pick<
-  DigestArticleData,
-  'issueNumber' | 'articleNumber' | 'title' | 'authors' | 'image'
->
+type DigestArticleProps = {
+  issueNumber: string
+  articleNumber: number
+  title: string
+  authors: AvatarGroupProps['authors']
+  image: ImageProps
+}
 
 export function DigestArticleHeader({
   issueNumber,
@@ -17,14 +20,9 @@ export function DigestArticleHeader({
   title,
   authors,
   image,
-}: DigestArticleHeaderProps) {
+}: DigestArticleProps) {
   return (
-    <ArticleHeader
-      image={{
-        src: image?.src || graphicsData.imageFallback.data.src,
-        alt: '',
-      }}
-    >
+    <ArticleHeader image={image}>
       <TagGroup
         tags={[
           { text: `Issue ${issueNumber}` },
