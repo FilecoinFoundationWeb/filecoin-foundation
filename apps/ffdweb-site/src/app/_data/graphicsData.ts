@@ -7,6 +7,10 @@ import learningResources from '@/assets/graphics/learning-resources.webp'
 import projects from '@/assets/graphics/projects.webp'
 
 export const graphicsData: Record<string, StaticImageProps> = {
+  imageFallback: {
+    data: homepage,
+    alt: 'Image fallback',
+  },
   about: {
     data: about,
     alt: 'A data center visualization showing server racks illuminated in green and purple, arranged in rows with network connections indicated by light trails on the floor between them. The central server tower is prominently featured with bright green lighting.',

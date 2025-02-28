@@ -4,14 +4,21 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { graphicsData } from '@/data/graphicsData'
 
-import { getCategoryLabel } from '@/utils/categoryUtils'
+// import { getCategoryLabel } from '@/utils/categoryUtils'
 
-import type { BlogPost } from '../../types/blogPostType'
+// import type { BlogPost } from '../../types/blogPostType'
 
-type BlogPostHeaderProps = Pick<
-  BlogPost,
-  'title' | 'publishedOn' | 'image' | 'category'
->
+// type BlogPostHeaderProps = Pick<
+//   BlogPost,
+//   'title' | 'publishedOn' | 'image' | 'category'
+// >
+
+type BlogPostHeaderProps = {
+  title: string
+  publishedOn: Date
+  image: { src: string; alt: string }
+  category: string
+}
 
 export function BlogPostHeader({
   title,
@@ -26,13 +33,18 @@ export function BlogPostHeader({
         alt: '',
       }}
     >
-      <TagLabel>
+      {/* <TagLabel>
         {getCategoryLabel({ collectionName: 'blog_posts', category })}
-      </TagLabel>
+      </TagLabel> */}
+
+      <TagLabel>{category}</TagLabel>
 
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
 
-      <span className="inline-block text-blue-300">
+      {/* <span className="inline-block">
+        {formatDate(publishedOn)}
+      </span> */}
+      <span className="inline-block font-bold text-neutral-200">
         {formatDate(publishedOn)}
       </span>
     </ArticleHeader>

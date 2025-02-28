@@ -1,4 +1,4 @@
-import { getTodayISO } from '@/utils/dateUtils'
+import { getTodayISO } from '@filecoin-foundation/utils/dateUtils'
 
 import { createBlob } from '../services/github/api/createBlob'
 import { createCommit } from '../services/github/api/createCommit'

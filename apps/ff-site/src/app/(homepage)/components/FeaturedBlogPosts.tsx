@@ -1,11 +1,11 @@
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { getCategoryLabel } from '@/utils/categoryUtils'
-import { formatDate } from '@/utils/dateUtils'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'

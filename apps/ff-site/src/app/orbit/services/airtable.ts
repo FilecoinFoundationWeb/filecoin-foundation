@@ -1,7 +1,7 @@
+import { getUTCMidnightToday } from '@filecoin-foundation/utils/dateUtils'
 import Airtable, { type FieldSet, type Records } from 'airtable'
 import { z } from 'zod'
 
-import { getUTCMidnightToday } from '@/utils/dateUtils'
 
 import { AIRTABLE_ORBIT_EVENTS_CONFIG } from '../constants/airtableOrbitEventsConfig'
 

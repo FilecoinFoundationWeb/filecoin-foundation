@@ -1,5 +1,7 @@
 import { Suspense } from 'react'
 
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+
 import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/blog.md'
@@ -7,7 +9,6 @@ import { attributes } from '@/content/pages/blog.md'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { formatDate } from '@/utils/dateUtils'
 import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'

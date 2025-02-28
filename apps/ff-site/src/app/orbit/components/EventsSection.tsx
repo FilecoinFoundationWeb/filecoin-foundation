@@ -1,5 +1,6 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
 
@@ -8,7 +9,6 @@ import type { NextServerSearchParams } from '@/types/searchParams'
 import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { formatDate } from '@/utils/dateUtils'
 import { normalizeQueryParam } from '@/utils/queryUtils'
 import { logZodError } from '@/utils/zodUtils'
 

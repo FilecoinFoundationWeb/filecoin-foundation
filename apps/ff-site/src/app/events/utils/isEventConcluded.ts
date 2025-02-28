@@ -1,6 +1,6 @@
+import { getUTCMidnightToday } from '@filecoin-foundation/utils/dateUtils'
 import { isBefore } from 'date-fns'
 
-import { getUTCMidnightToday } from '@/utils/dateUtils'
 
 import type { Event } from '../types/eventType'
 
