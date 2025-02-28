@@ -11,6 +11,7 @@ import {
   ORGANIZATION_NAME_SHORT,
 } from '@/constants/siteMetadata'
 
+import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation'
 
 export const metadata: Metadata = {
@@ -38,6 +39,8 @@ export default function RootLayout({
         <main>{children}</main>
 
         {process.env.NODE_ENV === 'development' && <BreakpointDebugger />}
+        <div className="h-32"></div>
+        <Footer />
       </body>
     </html>
   )

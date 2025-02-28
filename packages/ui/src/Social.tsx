@@ -13,14 +13,15 @@ type SocialProps = {
 }
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
-  touchAreaOffset: '-m-2 sm:mx-0',
+  touchAreaOffset: '-m-2',
 }
 
 export function Social({ linksWithIcons }: SocialProps) {
   return (
     <ul
       className={clsx(
-        'flex flex-wrap items-center justify-between gap-4',
+        'flex flex-wrap items-center justify-between gap-6',
+
         TOUCH_TARGET.touchAreaOffset,
       )}
     >
