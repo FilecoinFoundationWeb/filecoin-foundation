@@ -3,12 +3,6 @@
 
 @plugin "@tailwindcss/typography";
 
-:root {
-  --outline-brand: 2px solid var(--color-neutral-50);
-  --outline-brand-offset: 0px;
-  --outline-brand-border-color: transparent;
-}
-
 @theme {
   --color-brand-primary-100: #f6f7ff;
   --color-brand-primary-200: #d8d9ff;
@@ -30,18 +24,14 @@
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
 
-  --color-avatar-background: var(--color-brand-primary-800); /* CHECK */
-  --color-avatar-full-name: var(--color-neutral-50);
-  --color-avatar-initials: var(--color-neutral-50); /* CHECK */
-  --color-avatar-ring: var(--color-neutral-50);
-
-  --color-icon-subtle: var(--color-neutral-300); /* CHECK */
+  --color-icon-primary: theme('colors.brand.primary.300');
+  --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
 }
 
 @utility brand-outline {
-  outline: var(--outline-brand);
-  outline-offset: var(--outline-brand-offset);
-  border-color: var(--outline-brand-border-color);
+  outline: 2px solid var(--color-neutral-50);
+  outline-offset: 0px;
+  border-color: transparent;
 }
 
 @layer base {
@@ -56,19 +46,19 @@
 }
 
 @utility prose {
-  --tw-prose-body: var(--color-neutral-50);
-  --tw-prose-headings: var(--color-neutral-50);
-  --tw-prose-bold: var(--color-neutral-50);
-  --tw-prose-quotes: var(--color-neutral-50);
-  --tw-prose-quote-borders: var(--color-brand-primary-300);
-  --tw-prose-counters: var(----color-neutral-50);
-  --tw-prose-bullets: var(----color-neutral-50);
-  --tw-prose-code: var(--color-neutral-50);
-  --tw-prose-pre-bg: var(--color-neutral-950);
-  --tw-prose-pre-code: var(--color-neutral-50);
-  --tw-prose-captions: var(--color-neutral-50);
-  --tw-prose-td-borders: var(--color-brand-primary-300);
-  --tw-prose-th-borders: var(--color-brand-primary-300);
+  --tw-prose-body: theme('colors.neutral.50');
+  --tw-prose-headings: theme('colors.neutral.50');
+  --tw-prose-bold: theme('colors.neutral.50');
+  --tw-prose-quotes: theme('colors.neutral.50');
+  --tw-prose-quote-borders: theme('colors.brand.primary.300');
+  --tw-prose-counters: theme('colors.neutral.50');
+  --tw-prose-bullets: theme('colors.neutral.50');
+  --tw-prose-code: theme('colors.neutral.50');
+  --tw-prose-pre-bg: theme('colors.neutral.950');
+  --tw-prose-pre-code: theme('colors.neutral.50');
+  --tw-prose-captions: theme('colors.neutral.50');
+  --tw-prose-td-borders: theme('colors.brand.primary.300');
+  --tw-prose-th-borders: theme('colors.brand.primary.300');
 
   & code {
     &::before,
@@ -103,43 +93,68 @@
 }
 
 @layer components {
-  .text-link {
-    @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
+  /* AVATAR */
+  .avatar-background {
+    @apply bg-brand-primary-800; /* CHECK */
   }
 
-  .button-base {
-    @apply border-2 font-bold;
+  .avatar-full-name {
+    @apply text-neutral-50;
   }
 
-  .button-primary {
-    @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100; /* CHECK */
+  .avatar-initials {
+    @apply text-neutral-50; /* CHECK */
   }
 
-  .button-ghost {
-    @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100; /* CHECK */
+  .avatar-ring {
+    @apply text-neutral-50;
   }
 
-  .button-disabled {
-    @apply bg-neutral-300; /* CHECK */
-  }
-
-  .tag-label-base {
-    @apply border-2;
-  }
-
-  .tag-label-primary {
-    @apply border-brand-secondary-300 bg-brand-secondary-300 text-brand-secondary-800; /* CHECK */
-  }
-
-  .tag-label-secondary {
-    @apply border-neutral-200 bg-neutral-950 text-neutral-200; /* CHECK */
-  }
-
+  /* BREADCRUMBS */
   .breadcrumbs-inactive {
     @apply text-neutral-50;
   }
 
   .breadcrumbs-active {
     @apply text-brand-primary-300;
+  }
+
+  /* BUTTONS */
+  .button {
+    @apply border-2 font-bold;
+  }
+
+  .button--primary {
+    @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100; /* CHECK */
+  }
+
+  .button--ghost {
+    @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100; /* CHECK */
+  }
+
+  .button--disabled {
+    @apply bg-neutral-300; /* CHECK */
+  }
+
+  /* ICON BUTTONS */
+  .icon-button {
+    @apply border-brand-primary-300 text-brand-primary-300;
+  }
+
+  /* TAGS */
+  .tag-label {
+    @apply border-2;
+  }
+
+  .tag-label--primary {
+    @apply border-brand-secondary-300 bg-brand-secondary-300 text-brand-secondary-800; /* CHECK */
+  }
+
+  .tag-label--secondary {
+    @apply border-neutral-200 bg-neutral-950 text-neutral-200; /* CHECK */
+  }
+
+  .text-link {
+    @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
   }
 }

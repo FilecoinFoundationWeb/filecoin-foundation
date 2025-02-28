@@ -8,8 +8,8 @@ import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 const variantClasses = {
-  primary: 'button-primary',
-  ghost: 'button-ghost',
+  primary: 'button--primary',
+  ghost: 'button--ghost',
 } as const
 
 type ButtonProps = {
@@ -49,10 +49,10 @@ export function Button({
   ...rest
 }: ButtonProps) {
   className = clsx(
-    'button-base focus:brand-outline inline-flex items-center justify-center gap-2 px-6 py-3 transition hover:no-underline sm:px-9',
+    'button focus:brand-outline inline-flex items-center justify-center gap-2 px-6 py-3 transition hover:no-underline sm:px-9',
     variantClasses[variant],
     {
-      'button-disabled disabled:pointer-events-none': disabled,
+      'button--disabled disabled:pointer-events-none': disabled,
     },
     className,
   )
