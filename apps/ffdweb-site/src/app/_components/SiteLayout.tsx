@@ -2,8 +2,8 @@ import { Archivo } from 'next/font/google'
 
 import { SiteLayout as AppSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
-import { Footer } from '@/components/Footer'
-import { Navigation } from '@/components/Navigation/Navigation'
+import { Footer } from './Footer'
+import { Navigation } from './Navigation'
 
 const archivo = Archivo({
   subsets: ['latin'],
