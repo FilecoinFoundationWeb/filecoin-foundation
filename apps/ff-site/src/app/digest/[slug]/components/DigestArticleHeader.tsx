@@ -1,9 +1,8 @@
+import { ArticleHeader } from '@filecoin-foundation/ui/ArticleHeader'
 import { AvatarGroup } from '@filecoin-foundation/ui/AvatarGroup'
 import { TagGroup } from '@filecoin-foundation/ui/TagComponents'
 
 import { graphicsData } from '@/data/graphicsData'
-
-import { ArticleHeader } from '@/components/ArticleHeader'
 
 import type { DigestArticleData } from '../../types/digestType'
 
