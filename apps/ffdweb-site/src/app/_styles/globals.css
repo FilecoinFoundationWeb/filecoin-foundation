@@ -24,6 +24,8 @@
   --color-brand-secondary-800: #002d00;
   --color-brand-secondary-900: #001100;
 
+  --color-neutral-950: #0d0d0d;
+
   --color-icon-primary: theme('colors.brand.primary.300');
   --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
 }
@@ -134,6 +136,11 @@
 
   .button--disabled {
     @apply bg-neutral-300; /* CHECK */
+  }
+
+  /* SITE LAYOUT */
+  .site-layout {
+    @apply bg-neutral-950 text-neutral-50;
   }
 
   /* ICON BUTTONS */
