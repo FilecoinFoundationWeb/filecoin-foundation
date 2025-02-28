@@ -7,6 +7,7 @@
     "#*": "./src/*"
   },
   "exports": {
+    "./ArticleHeader": "./src/ArticleHeader.tsx",
     "./Avatar": "./src/Avatar.tsx",
     "./AvatarGroup": "./src/AvatarGroup.tsx",
     "./BaseLink": "./src/BaseLink.tsx",
