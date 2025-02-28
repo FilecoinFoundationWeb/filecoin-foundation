@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={manrope.className}>
-      <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-neutral-950 px-6 pb-6 pt-8 tracking-wide text-neutral-100">
+      <body className="m-auto flex max-w-[1032px] flex-col justify-between bg-neutral-950 px-6 pb-6 pt-8 tracking-wide text-neutral-50">
         <Navigation />
         <main>{children}</main>
 
