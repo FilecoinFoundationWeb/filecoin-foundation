@@ -26,6 +26,7 @@
     "./IconButton": "./src/IconButton.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
+    "./PageLayout": "./src/PageLayout.tsx",
     "./SiteLayout": "./src/SiteLayout.tsx",
     "./Social": "./src/Social.tsx",
     "./TagComponents": "./src/TagComponents/index.ts",
