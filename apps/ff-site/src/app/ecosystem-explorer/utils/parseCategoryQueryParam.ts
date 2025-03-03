@@ -1,11 +1,10 @@
 import { CATEGORY_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { CATEGORY_QUERY_SEPARATOR_SYMBOL } from '../constants/searchParams'
 
 export function parseCategoryQueryParam(
-  searchParams: NextServerSearchParams,
+  searchParams: QueryParams,
   key: typeof CATEGORY_KEY,
 ) {
   const categoryParams = searchParams[key]

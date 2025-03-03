@@ -1,9 +1,9 @@
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
-function hasFiltersApplied(searchParams: NextServerSearchParams) {
+function hasFiltersApplied(searchParams: QueryParams) {
   return Object.keys(searchParams).length > 0
 }
 
-export function hasNoFiltersApplied(searchParams: NextServerSearchParams) {
+export function hasNoFiltersApplied(searchParams: QueryParams) {
   return !hasFiltersApplied(searchParams)
 }

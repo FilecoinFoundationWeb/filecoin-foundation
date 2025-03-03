@@ -1,19 +1,21 @@
 import { useCallback, useMemo } from 'react'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
+import type { QueryParamValue } from '@filecoin-foundation/utils/types/urlTypes'
+
 import type { Object } from '@/types/utils'
 
 import { DEFAULT_FILTER_ID } from '@/constants/filterConstants'
 
-type QueryValue = NextServerSearchParams[keyof NextServerSearchParams]
-
-export type UseFilterProps<Entry extends Object, Query extends QueryValue> = {
+export type UseFilterProps<
+  Entry extends Object,
+  Query extends QueryParamValue,
+> = {
   entries: Array<Entry>
   filterQuery: Query
   filterFn: (entry: Entry, filterQuery: Query) => boolean
 }
 
-export function useFilter<Entry extends Object, Query extends QueryValue>({
+export function useFilter<Entry extends Object, Query extends QueryParamValue>({
   entries,
   filterQuery,
   filterFn,

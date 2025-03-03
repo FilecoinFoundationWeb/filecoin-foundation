@@ -1,8 +1,10 @@
 import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
+import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 
-import { type PageQuery } from './types'
-
-export function validatePageNumber(pageQuery: PageQuery, pageCount: number) {
+export function validatePageNumber(
+  pageQuery: ReturnType<typeof normalizeQueryParam>,
+  pageCount: number,
+) {
   if (!pageQuery) {
     return DEFAULT_PAGE_NUMBER
   }

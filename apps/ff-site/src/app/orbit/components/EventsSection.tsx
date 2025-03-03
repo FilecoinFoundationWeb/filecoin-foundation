@@ -5,11 +5,10 @@ import {
   PAGE_KEY,
   SEARCH_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
@@ -28,7 +27,7 @@ import { fetchAndParseAirtableEvents } from '../services/airtable'
 import { DEFAULT_CTA_TEXT } from '@/events/constants/constants'
 
 type OrbitEventsSectionProps = {
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
 }
 
 export async function OrbitEventsSection({
@@ -64,7 +63,7 @@ export async function OrbitEventsSection({
 
 type OrbitEventsProps = {
   events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
 }
 
 function OrbitEvents({ events, searchParams }: OrbitEventsProps) {

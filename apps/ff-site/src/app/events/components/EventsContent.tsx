@@ -8,10 +8,9 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
@@ -44,7 +43,7 @@ import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
 import { getMetaData } from '../utils/getMetaData'
 
 type EventsContentProps = {
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
   events: Array<Event>
 }
 

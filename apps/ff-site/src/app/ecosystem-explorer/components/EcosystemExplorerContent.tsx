@@ -7,10 +7,9 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
@@ -41,7 +40,7 @@ import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 import { parseCategoryQueryParam } from '../utils/parseCategoryQueryParam'
 
 type EcosystemExplorerContentProps = {
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
   ecosystemProjects: Array<EcosystemProject>
 }
 

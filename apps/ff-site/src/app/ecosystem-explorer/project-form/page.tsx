@@ -1,6 +1,5 @@
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
-
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
+import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 
@@ -34,7 +33,7 @@ export const metadata = createMetadata({
 const groupedCategoryOptions = getGroupedCategoryOptions()
 
 type Props = {
-  searchParams: AsyncNextServerSearchParams
+  searchParams: AsyncQueryParams
 }
 
 export default async function EcosystemExplorerProjectForm(props: Props) {

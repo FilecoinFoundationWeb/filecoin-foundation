@@ -1,8 +1,7 @@
 import Image from 'next/image'
 
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
+import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 
@@ -30,7 +29,7 @@ import { getEventsData } from './utils/getEventData'
 import { getMetaData } from './utils/getMetaData'
 
 type Props = {
-  searchParams: AsyncNextServerSearchParams
+  searchParams: AsyncQueryParams
 }
 
 const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
