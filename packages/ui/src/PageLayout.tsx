@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 
 type PageLayoutProps = {
   children: React.ReactNode
-  gap?: 16 | 32
+  gap?: keyof typeof gapMap
 }
 
 const gapMap = {
