@@ -2,6 +2,8 @@
 @source "../../../../../node_modules/@filecoin-foundation/ui";
 
 @plugin "@tailwindcss/typography";
+@plugin "@headlessui/tailwindcss";
+@plugin "@tailwindcss/forms";
 
 @theme {
   --color-brand-primary-100: #f6f7ff;
@@ -204,5 +206,18 @@
     &[data-current='false']:hover {
       @apply bg-brand-primary-400;
     }
+  }
+
+  /* SEARCH */
+  .search-input {
+    @apply form-input border-brand-primary-300 placeholder:text-brand-primary-300 hover:border-brand-primary-400 hover:placeholder:text-brand-primary-400 focus:brand-outline focus:text-brand-primary-100 focus:placeholder:text-brand-primary-100 bg-transparent;
+  }
+
+  .search-icon {
+    @apply text-brand-primary-300 peer-hover:text-brand-primary-400 peer-focus:text-brand-primary-100;
+  }
+
+  .search-clear-icon {
+    @apply rounded-none;
   }
 }

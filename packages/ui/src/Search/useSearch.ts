@@ -1,17 +1,16 @@
 import { useMemo } from 'react'
 
 import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
-import slugify from 'slugify'
+import type { AnyObject } from '@filecoin-foundation/utils/types/utilTypes'
+import { matchesQuery } from './utils/matchQuery'
 
-import type { Object } from '@/types/utils'
-
-type UseSearchProps<Entry extends Object> = {
+type UseSearchProps<Entry extends AnyObject> = {
   searchQuery: ReturnType<typeof normalizeQueryParam>
   entries: Array<Entry>
   searchBy: keyof Entry | Array<keyof Entry>
 }
 
-export function useSearch<Entry extends Object>({
+export function useSearch<Entry extends AnyObject>({
   searchQuery,
   entries,
   searchBy,
@@ -29,26 +28,4 @@ export function useSearch<Entry extends Object>({
   }, [entries, searchQuery, searchBy])
 
   return { searchQuery, searchResults }
-}
-
-function matchesQuery<Entry extends Object>(
-  value: Entry[keyof Entry],
-  query: string,
-) {
-  if (typeof value !== 'string' && typeof value !== 'number') {
-    return false
-  }
-
-  const normalizedValue = normalizeString(String(value))
-  const normalizedQuery = normalizeString(query)
-
-  return normalizedValue.includes(normalizedQuery)
-}
-
-function normalizeString(str: string) {
-  return slugify(str, {
-    strict: true,
-    trim: true,
-    lower: true,
-  })
 }

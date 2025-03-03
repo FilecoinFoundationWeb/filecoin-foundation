@@ -1,5 +1,6 @@
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
+import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import {
   CATEGORY_KEY,
@@ -21,14 +22,12 @@ import { findOrThrow } from '@/utils/findOrThrow'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useFilter } from '@/hooks/useFilter'
-import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
 import { ResultsAndReset } from '@/components/ResultsAndReset'
-import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 
 import { CategoryFilters } from '../components/CategoryFilters'
