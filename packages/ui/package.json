@@ -37,7 +37,6 @@
     "./TagComponents/*": "./src/TagComponents/*.tsx",
     "./TextLink": "./src/TextLink/index.ts",
     "./TextLink/*": "./src/TextLink/*.tsx",
-    "./Pagination": "./src/Pagination/index.ts",
     "./StructuredDataScript": "./src/StructuredDataScript.tsx"
   },
   "scripts": {
