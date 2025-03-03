@@ -165,6 +165,7 @@
     @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
   }
 
+  /* PAGINATION */
   .pagination {
     @apply bg-brand-primary-300 text-brand-primary-900 p-1;
   }
