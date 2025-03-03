@@ -1,11 +1,12 @@
 import { useMemo } from 'react'
 
+import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import slugify from 'slugify'
 
 import type { Object } from '@/types/utils'
 
 type UseSearchProps<Entry extends Object> = {
-  searchQuery: string | undefined
+  searchQuery: ReturnType<typeof normalizeQueryParam>
   entries: Array<Entry>
   searchBy: keyof Entry | Array<keyof Entry>
 }

@@ -3,10 +3,9 @@
 import { useCallback } from 'react'
 
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-
 import type { Route } from 'next'
 
-import { type ParamsObject, buildSearchParams } from '@/utils/buildSearchParams'
+import { type ParamsObject, buildSearchParams } from './utils/buildSearchParams'
 
 export function useUpdateSearchParams() {
   const router = useRouter()

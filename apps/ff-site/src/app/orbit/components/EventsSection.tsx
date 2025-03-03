@@ -1,24 +1,25 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
+import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
+import {
+  PAGE_KEY,
+  SEARCH_KEY,
+} from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
 
-import type { NextServerSearchParams } from '@/types/searchParams'
-
-import { PAGE_KEY, SEARCH_KEY } from '@/constants/searchParams'
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { formatDate } from '@/utils/dateUtils'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 import { logZodError } from '@/utils/zodUtils'
 
-import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
-import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
 import { fetchAndParseAirtableEvents } from '../services/airtable'
@@ -26,7 +27,7 @@ import { fetchAndParseAirtableEvents } from '../services/airtable'
 import { DEFAULT_CTA_TEXT } from '@/events/constants/constants'
 
 type OrbitEventsSectionProps = {
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
 }
 
 export async function OrbitEventsSection({
@@ -62,7 +63,7 @@ export async function OrbitEventsSection({
 
 type OrbitEventsProps = {
   events: Awaited<ReturnType<typeof fetchAndParseAirtableEvents>>
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
 }
 
 function OrbitEvents({ events, searchParams }: OrbitEventsProps) {

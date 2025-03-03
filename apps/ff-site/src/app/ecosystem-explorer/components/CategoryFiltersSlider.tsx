@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 
+import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
@@ -9,8 +10,6 @@ import { Button as HeadlessUIButton } from '@headlessui/react'
 import { FunnelSimple, X } from '@phosphor-icons/react'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
-import { useUpdateSearchParams } from '@/hooks/useUpdateSearchParams'
 
 import { SlideOver } from '@/components/SlideOver'
 

@@ -1,6 +1,5 @@
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
+import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -47,7 +46,7 @@ export const metadata = createMetadata({
 })
 
 type Props = {
-  searchParams: AsyncNextServerSearchParams
+  searchParams: AsyncQueryParams
 }
 
 export default async function Orbit(props: Props) {

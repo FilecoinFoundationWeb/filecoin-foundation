@@ -1,5 +1,7 @@
 import { useMemo } from 'react'
 
+import type { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
+
 import type { SortConfig } from '@/types/sortTypes'
 import type { NonEmptyReadonlyArray, Object } from '@/types/utils'
 
@@ -7,7 +9,7 @@ type UseSortProps<
   Entry extends Object,
   Configs extends NonEmptyReadonlyArray<SortConfig<Entry>>,
 > = {
-  sortQuery: string | undefined
+  sortQuery: ReturnType<typeof normalizeQueryParam>
   entries: Array<Entry>
   configs: Configs
   defaultConfig?: Configs[number]

@@ -1,8 +1,7 @@
 'use client'
 
+import { SORT_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { CalendarBlank } from '@phosphor-icons/react'
-
-import { SORT_KEY } from '@/constants/searchParams'
 
 import { getSortOptions } from '@/utils/getSortOptions'
 

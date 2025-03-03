@@ -19,6 +19,7 @@
     "@date-fns/utc": "^2.1.0",
     "@filecoin-foundation/ui": "*",
     "@filecoin-foundation/utils": "*",
+    "@filecoin-foundation/hooks": "*",
     "@headlessui/react": "^2.2.0",
     "@headlessui/tailwindcss": "^0.2.1",
     "@hookform/resolvers": "^3.9.1",

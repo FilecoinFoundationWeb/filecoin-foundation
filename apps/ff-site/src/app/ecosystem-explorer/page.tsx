@@ -1,4 +1,4 @@
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
+import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 
@@ -21,7 +21,7 @@ import { generateStructuredData } from './utils/generateStructuredData'
 import { getEcosystemProjectsData } from './utils/getEcosystemProjectData'
 
 type Props = {
-  searchParams: AsyncNextServerSearchParams
+  searchParams: AsyncQueryParams
 }
 
 const { header, seo } = PageFrontmatterSchema.parse(attributes)
