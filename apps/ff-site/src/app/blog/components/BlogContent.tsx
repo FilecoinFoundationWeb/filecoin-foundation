@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation'
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { BookOpen } from '@phosphor-icons/react'
 
@@ -17,9 +18,9 @@ import {
 } from '@/constants/searchParams'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
-import { getCategoryLabel } from '@/utils/categoryUtils'
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
 import { normalizeQueryParam } from '@/utils/queryUtils'
@@ -40,6 +41,7 @@ import { Sort } from '@/components/Sort'
 
 import { blogSortConfigs } from '../constants/sortConfigs'
 import type { BlogPost } from '../types/blogPostType'
+
 
 type BlogContentProps = {
   posts: Array<BlogPost>
@@ -133,6 +135,7 @@ export function BlogContent({ posts }: BlogContentProps) {
                   const categoryLabel = getCategoryLabel({
                     collectionName: 'blog_posts',
                     category,
+                    configData,
                   })
 
                   return (

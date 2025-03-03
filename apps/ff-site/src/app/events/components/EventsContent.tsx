@@ -1,5 +1,6 @@
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import type { NextServerSearchParams } from '@/types/searchParams'
@@ -14,9 +15,9 @@ import {
 } from '@/constants/searchParams'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
+import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
-import { getCategoryLabel } from '@/utils/categoryUtils'
 import {
   entryMatchesCategoryQuery,
   entryMatchesLocationQuery,
@@ -141,6 +142,7 @@ export default function EventsContent({
                   const tagLabel = getCategoryLabel({
                     collectionName: 'event_entries',
                     category,
+                    configData,
                   })
 
                   return (

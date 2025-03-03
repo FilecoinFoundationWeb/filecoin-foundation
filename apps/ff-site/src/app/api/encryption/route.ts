@@ -1,9 +1,12 @@
 import { type NextRequest } from 'next/server'
 
+import { getCollectionConfig } from '@filecoin-foundation/utils/cmsConfigUtils'
 import { z } from 'zod'
 
-import { getCollectionConfig } from '@/utils/cmsConfigUtils'
+import configData from '@/data/cmsConfigSchema.json'
+
 import { decrypt, encrypt, PREFIX } from '@/utils/encryption'
+
 
 const payloadSchema = z.object({
   value: z.string(),
@@ -40,7 +43,7 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET() {
-  const { fields } = getCollectionConfig('ecosystem_projects')
+  const { fields } = getCollectionConfig('ecosystem_projects', configData)
 
   const emailFieldConfig = fields.find((field) => field.name === 'email')
   const fullNameFieldConfig = fields.find((field) => field.name === 'full-name')

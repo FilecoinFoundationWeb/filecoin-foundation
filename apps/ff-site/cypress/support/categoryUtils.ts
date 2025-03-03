@@ -1,8 +1,7 @@
 import path from 'path'
 
+import type { CategoryId } from '@filecoin-foundation/utils/types/categoryTypes'
 import matter from 'gray-matter'
-
-import type { CategoryId } from '@/types/categoryTypes'
 
 import type { PathConfig } from '@/constants/paths'
 
