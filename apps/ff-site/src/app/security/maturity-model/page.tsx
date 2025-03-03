@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 
@@ -15,7 +16,6 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { CoreFunctions } from './components/CoreFunctions'
 import { DesktopTableOfContents } from './components/DesktopTableOfContents'

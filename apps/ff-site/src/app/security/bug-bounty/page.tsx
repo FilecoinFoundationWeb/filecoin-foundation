@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
@@ -13,7 +14,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { Leaderboard } from './components/Leaderboard'
 import { generateStructuredData } from './utils/generateStructuredData'

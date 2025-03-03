@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { type SlugParams } from '@/types/paramsTypes'
@@ -14,7 +15,6 @@ import { findOrThrow } from '@/utils/findOrThrow'
 
 import { CTASection } from '@/components/CTASection'
 import { ShareArticle } from '@/components/ShareArticle'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 import {

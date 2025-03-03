@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
@@ -19,7 +20,6 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import EventsContent from './components/EventsContent'
 import { DEFAULT_CTA_TEXT } from './constants/constants'

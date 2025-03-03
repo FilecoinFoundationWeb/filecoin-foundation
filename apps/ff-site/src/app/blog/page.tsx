@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
 
@@ -16,7 +17,6 @@ import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
