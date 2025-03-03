@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { Files } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
@@ -20,7 +21,6 @@ import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { advisorsData } from './data/advisorsData'
 import { boardMembersData } from './data/boardMembersData'

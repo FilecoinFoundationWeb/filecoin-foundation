@@ -13,7 +13,7 @@ import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 

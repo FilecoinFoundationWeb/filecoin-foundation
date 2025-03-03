@@ -1,8 +1,8 @@
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { WithContext, WebPage } from 'schema-dts'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 import { PageHeader } from '@/components/PageHeader'
-import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 type MarkdownPageProps = {
   title: string
