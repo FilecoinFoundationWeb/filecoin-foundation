@@ -1,5 +1,5 @@
 import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
-import { ArticleHeader } from '@filecoin-foundation/ui/ArticleHeader'
+import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
 import {
   type AvatarGroupProps,
   AvatarGroup,
