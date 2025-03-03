@@ -204,7 +204,7 @@
 
   /* SEARCH */
   .search-input {
-    @apply border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100;
+    @apply form-input rounded-lg border-brand-300 bg-brand-800 placeholder:text-brand-300 hover:border-brand-400 hover:placeholder:text-brand-400 focus:brand-outline focus:text-brand-100 focus:placeholder:text-brand-100;
   }
 
   .search-icon {

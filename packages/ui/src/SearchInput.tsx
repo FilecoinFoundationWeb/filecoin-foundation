@@ -13,7 +13,7 @@ export function SearchInput({ query, onChange }: SearchInputProps) {
       <Label className="sr-only">Search</Label>
       <div className="relative">
         <Input
-          className="form-input search-input focus:brand-outline peer block w-full border px-11 py-3 [&::-webkit-search-cancel-button]:appearance-none"
+          className="search-input focus:brand-outline peer block w-full border px-11 py-3 [&::-webkit-search-cancel-button]:appearance-none"
           placeholder="Search"
           type="search"
           value={query}
@@ -24,7 +24,7 @@ export function SearchInput({ query, onChange }: SearchInputProps) {
         </div>
         {query && (
           <Button
-            className="search-icon search-clear-icon focus:brand-outline absolute right-1 top-1 flex size-[42px] items-center justify-center"
+            className="search-icon search-clear-button focus:brand-outline absolute right-1 top-1 flex size-[42px] items-center justify-center"
             aria-label="Clear search input"
             onClick={() => onChange('')}
           >
