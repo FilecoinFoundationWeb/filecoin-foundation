@@ -7,11 +7,11 @@ import type { StructuredDataParams } from '@/utils/createMetadata'
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
 
 export function generateStructuredData(
-  metadata: StructuredDataParams,
+  seo: StructuredDataParams,
 ): WithContext<WebPage> {
   const baseData = generateWebPageStructuredData({
-    title: metadata.metaTitle,
-    description: metadata.metaDescription,
+    title: seo.metaTitle,
+    description: seo.metaDescription,
     path: PATHS.LEARNING_RESOURCES.path,
   })
 
