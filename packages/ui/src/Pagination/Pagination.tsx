@@ -7,6 +7,7 @@ import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/pagina
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
 import { useDebounceCallback } from 'usehooks-ts'
+import { PAGE_KEY } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 
 import { useResponsiveRange } from './utils/useResponsiveRange'
 import { useVisiblePages } from './utils/useVisiblePages'
@@ -15,8 +16,6 @@ type PaginationProps = {
   pageCount: number
   currentPage: number
 }
-
-const PAGE_KEY = 'page'
 
 const DEBOUNCE_DELAY = 300
 
