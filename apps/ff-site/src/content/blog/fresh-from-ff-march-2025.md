@@ -34,3 +34,14 @@ seo:
 ### Fil Plus
 
 * Marta Piekarska-Geater, Executive Director of FIDL, [joined the DWeb Decoded podcast to discuss Fil+](https://youtu.be/TKaRTgmz5Yg?feature=shared), governance challenges, and the incentives shaping the future of decentralized storage. Watch to learn how Filecoin Plus is powering decentralized storage.
+
+### Comms, Marketing, & Events
+
+* The Filecoin Foundation team took the stage 13 times through Consensus Hong Kong, including on stage events, podcasts, and interviews. 
+* FF hosted several workshops throughout the week, including: 
+
+  * [The FF UXIT Dogfooding Workshop](https://lu.ma/k4oqlci8) - an opportunity for teams across the Filecoin ecosystem to receive live reviews of sites, tools, and tutorials to help make onboarding new users more accessible. 
+  *  [Filecoin Code n' Corgi Denver](https://lu.ma/gd767xu5?utm_campaign=your-guide-to-filecoin-community-events-at-ethdenver&utm_medium=referral&utm_source=upload.fil.org) - A developer-driven series designed for builders in the Filecoin ecosystem featuring hands-on workshops, engaging demos, and meaningful connections that spark collaboration and drive innovation.
+  * [The L2 and Service Operator Colo](https://fil.org/events/filecoin-ethdenver-2025) - an invite-only working session for key ecosystem collaborators to share learnings and define action items to reach Product Market Fit.
+* [Take advantage of Filecoin Foundation's Comms Toolkit](https://hub.fil.org/comms): Already building on Filecoin? This site connects you with FF’s Marketing and Communications team so we can help spread the word about the work you’re doing in the Filecoin ecosystem.
+* [Registration is open for FDS-6: Toronto](https://www.fildev.io/FDS-6). Build with Filecoin developers, builders, storage providers, and ecosystem members to contribute to the exciting trajectory of the Filecoin network.
