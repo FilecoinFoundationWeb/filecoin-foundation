@@ -1,9 +1,15 @@
+import {
+  getCollectionConfig,
+  getCMSFieldOptions,
+} from '@filecoin-foundation/utils/cmsConfigUtils'
 import { z } from 'zod'
 
-import { getCollectionConfig, getCMSFieldOptions } from '@/utils/cmsConfigUtils'
+import configData from '@/data/cmsConfigSchema.json'
+
 import { createEnumSchema } from '@/utils/zodUtils'
 
-const ecosystemConfig = getCollectionConfig('ecosystem_projects')
+
+const ecosystemConfig = getCollectionConfig('ecosystem_projects', configData)
 
 const techOptions = getCMSFieldOptions(
   ecosystemConfig.fields,

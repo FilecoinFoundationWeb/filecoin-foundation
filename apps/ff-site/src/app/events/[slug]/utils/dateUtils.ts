@@ -1,7 +1,7 @@
 import { UTCDate } from '@date-fns/utc'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { format } from 'date-fns'
 
-import { formatDate } from '@/utils/dateUtils'
 
 import { ISO_TIME_REGEX } from '@/schemas/DateTimeSchema'
 

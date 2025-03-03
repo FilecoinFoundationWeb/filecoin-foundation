@@ -7,11 +7,14 @@
     "#*": "./src/*"
   },
   "exports": {
-    "./linkUtils": "./src/linkUtils.ts",
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
-    "./constants/*": "./src/constants/*.ts",
+    "./categoryUtils": "./src/categoryUtils.ts",
+    "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
+    "./dateUtils": "./src/dateUtils.ts",
+    "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",
+    "./constants/*": "./src/constants/*.ts",
     "./types/*": "./src/types/*.ts"
   },
   "scripts": {

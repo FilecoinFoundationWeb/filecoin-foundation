@@ -1,7 +1,11 @@
+import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
+import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
+
 import { type SlugParams } from '@/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -13,7 +17,6 @@ import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
-import { BlogPostHeader } from './components/BlogPostHeader'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 type BlogPostProps = {
@@ -30,12 +33,16 @@ export default async function BlogPost(props: BlogPostProps) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(data)} />
-      <div className="m-auto max-w-2xl space-y-16">
+      <ArticleLayout>
         <BlogPostHeader
           title={title}
-          image={image}
           publishedOn={publishedOn}
           category={category}
+          configData={configData}
+          image={{
+            ...(image || graphicsData.imageFallback.data),
+            alt: '',
+          }}
         />
 
         <MarkdownContent addTableOfContents={addTableOfContents}>
@@ -47,7 +54,7 @@ export default async function BlogPost(props: BlogPostProps) {
           path={`${PATHS.BLOG.path}/${slug}`}
           sectionTitle="Share Post"
         />
-      </div>
+      </ArticleLayout>
     </PageLayout>
   )
 }

@@ -1,6 +1,11 @@
-import type { CMSCollectionName } from '@/types/cmsConfig'
+import {
+  getCMSFieldOptions,
+  getCollectionConfig,
+} from '@filecoin-foundation/utils/cmsConfigUtils'
+import type { CMSCollectionName } from '@filecoin-foundation/utils/types/cmsConfig'
 
-import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
+import configData from '@/data/cmsConfigSchema.json'
+
 import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 export type CMSFieldOptionsAndValidIdsParams = {
@@ -12,7 +17,7 @@ export function getCMSFieldOptionsAndValidIds({
   collectionName,
   fieldName,
 }: CMSFieldOptionsAndValidIdsParams) {
-  const { fields } = getCollectionConfig(collectionName)
+  const { fields } = getCollectionConfig(collectionName, configData)
   const cmsOptions = getCMSFieldOptions(fields, fieldName)
   const options = mapCMSOptionsToListboxFormat(cmsOptions)
   const validIds = options.map((setting) => setting.id)

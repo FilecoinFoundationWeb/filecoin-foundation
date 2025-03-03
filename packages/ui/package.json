@@ -7,14 +7,18 @@
     "#*": "./src/*"
   },
   "exports": {
+    "./Article": "./src/Article/index.ts",
+    "./Article/*": "./src/Article/*.tsx",
     "./Avatar": "./src/Avatar.tsx",
     "./AvatarGroup": "./src/AvatarGroup.tsx",
     "./BaseLink": "./src/BaseLink.tsx",
     "./Button": "./src/Button.tsx",
+    "./BlogPostHeader": "./src/BlogPostHeader.tsx",
     "./BreadCrumbs": "./src/BreadCrumbs.tsx",
     "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
+    "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
     "./GlobalError": "./src/GlobalError.tsx",
     "./Heading": "./src/Heading.tsx",

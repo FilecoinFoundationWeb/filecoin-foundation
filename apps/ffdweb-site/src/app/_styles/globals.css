@@ -154,7 +154,7 @@
   }
 
   .tag-label--primary {
-    @apply border-brand-secondary-300 bg-brand-secondary-300 text-brand-secondary-800; /* CHECK */
+    @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800; /* CHECK */
   }
 
   .tag-label--secondary {

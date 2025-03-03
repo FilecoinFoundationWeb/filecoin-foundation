@@ -2,15 +2,16 @@ import type {
   CMSCollectionConfig,
   CMSConfig,
   CMSFieldConfig,
-} from '@/types/cmsConfig'
+} from './types/cmsConfig'
 
-import configJson from '@/data/cmsConfigSchema.json'
-
-const config: CMSConfig = configJson as CMSConfig
-
-export function getCollectionConfig(collectionName: string): {
+export function getCollectionConfig(
+  collectionName: string,
+  configData: unknown,
+): {
   fields: Array<CMSFieldConfig>
 } {
+  const config: CMSConfig = configData as CMSConfig
+
   const collection = config.collections.find(
     (col) => col.name === collectionName,
   )

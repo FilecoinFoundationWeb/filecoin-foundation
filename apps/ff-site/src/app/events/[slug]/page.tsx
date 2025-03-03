@@ -1,12 +1,13 @@
 import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
+import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 
 import { type SlugParams } from '@/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
+import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
-import { getCategoryLabel } from '@/utils/categoryUtils'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
@@ -27,6 +28,7 @@ import { SpeakersSection } from './components/SpeakersSection'
 import { SponsorSection } from './components/SponsorSection'
 import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
+
 
 type EventProps = {
   params: Promise<SlugParams>
@@ -57,6 +59,7 @@ export default async function EventEntry(props: EventProps) {
   const categoryLabel = getCategoryLabel({
     collectionName: 'event_entries',
     category,
+    configData,
   })
 
   const { youtubeEmbedUrl, youtubePlaylistUrl } = recap ?? {}
