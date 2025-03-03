@@ -3,7 +3,7 @@ import { Manrope } from 'next/font/google'
 import { SiteLayout as AppSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
 import { Footer } from '@/components/Footer'
-import { Navigation } from '@/components/Navigation'
+import { Navigation } from '@/components/Navigation/Navigation'
 
 const manrope = Manrope({
   subsets: ['latin'],
