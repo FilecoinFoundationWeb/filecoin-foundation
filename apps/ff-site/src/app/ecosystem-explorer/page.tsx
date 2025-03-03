@@ -1,6 +1,6 @@
-import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
+
+import type { AsyncNextServerSearchParams } from '@/types/searchParams'
 
 import { PATHS } from '@/constants/paths'
 

@@ -1,7 +1,5 @@
 import { Suspense } from 'react'
 
-import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
-import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
