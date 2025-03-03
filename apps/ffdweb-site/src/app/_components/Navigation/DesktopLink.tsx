@@ -16,7 +16,7 @@ export function DesktopLink({ href, label, ...rest }: DesktopLinkProps) {
     <Link
       href={href}
       aria-label={`Go to ${label} page`}
-      className="focus:brand-outline aria-current:text-brand-primary-300 px-4 py-2.5 text-neutral-200 hover:bg-neutral-800"
+      className="focus:brand-outline aria-current:text-brand-primary-300 aria-current:bg-brand-primary-900 px-4 py-2.5 text-neutral-200 hover:bg-neutral-800"
       aria-current={isActive ? 'true' : 'false'}
       {...rest}
     >
