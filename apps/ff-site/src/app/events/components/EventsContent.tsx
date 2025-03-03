@@ -1,6 +1,8 @@
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import {
   CATEGORY_KEY,
   LOCATION_KEY,
@@ -8,10 +10,8 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
-import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
