@@ -24,7 +24,7 @@ seo:
 * Check out the latest updates and developments for Filecoin Storage Providers in the SPWG! Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel to get involved. 
 * Read the [latest edition of the Developer Grants Updates Series.](https://fil.org/blog/developer-grants-updates-february-2025) Filecoin Foundation has continued to support new, impactful projects and introduced program updates to empower more developers in the Filecoin ecosystem. 
 
-### Network Operations
+## Network Operations
 
 ### Governance
 
