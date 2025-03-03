@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import {
   ExternalTextLink,
   InternalTextLink,
@@ -9,9 +10,12 @@ import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { generateStructuredData } from './utils/generateStructuredData'
+
 export default function FAQs() {
   return (
     <PageLayout gap={32}>
+      <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <>
         <span>FAQs</span>
         <h1>
@@ -167,9 +171,13 @@ export default function FAQs() {
   )
 }
 
-export const metadata = createMetadata({
+const seo = {
   metaTitle: 'FFDW FAQs | Answers About Our Mission & the Decentralized Web',
   metaDescription:
     'Discover how FFDW supports open, decentralized tech, funds projects, and fosters a resilient internet. Get quick answers to your pressing questions.',
+}
+
+export const metadata = createMetadata({
+  ...seo,
   overrideTitle: true,
 })
