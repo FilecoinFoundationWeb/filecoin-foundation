@@ -6,7 +6,6 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
 import { CaretLeft, CaretRight, LineVertical } from '@phosphor-icons/react'
-import { clsx } from 'clsx'
 import { useDebounceCallback } from 'usehooks-ts'
 
 import { useResponsiveRange } from './utils/useResponsiveRange'
@@ -81,19 +80,16 @@ export function Pagination({
           aria-label="Go to previous page"
           aria-disabled={!canGoBack}
           disabled={!canGoBack}
-          className={clsx(
-            'pagination-button flex items-center gap-x-1.5 p-1 px-2 transition',
-            canGoBack
-              ? 'focus-visible:outline-2 focus-visible:outline-white'
-              : 'cursor-not-allowed',
-          )}
+          className={
+            'pagination-navigation-button flex items-center gap-x-1.5 p-1 px-2 transition'
+          }
           onClick={handlePrev}
         >
           <Icon component={CaretLeft} size={20} weight="bold" />
           <span className="hidden sm:mx-1.5 sm:inline">Prev</span>
         </button>
 
-        <div className="pagination-carret flex items-center">
+        <div className="pagination-delimiter flex items-center">
           <Icon component={LineVertical} weight="light" />
         </div>
       </div>
@@ -109,7 +105,7 @@ export function Pagination({
               <button
                 aria-label={`Go to page ${item}`}
                 data-current={item === currentPage}
-                className="pagination-index focus-visible:outline-2 focus-visible:outline-white"
+                className="pagination-navigation-number focus-visible:outline-2 focus-visible:outline-white"
                 onClick={() => handlePageChange(item)}
               >
                 {item}
@@ -124,7 +120,7 @@ export function Pagination({
       </ul>
 
       <div className="flex">
-        <div className="pagination-carret flex items-center">
+        <div className="pagination-delimiter flex items-center">
           <Icon component={LineVertical} weight="light" />
         </div>
 
@@ -132,12 +128,7 @@ export function Pagination({
           aria-label="Go to next page"
           aria-disabled={!canGoForward}
           disabled={!canGoForward}
-          className={clsx(
-            'pagination-button flex items-center gap-x-1.5 p-1 px-2 transition',
-            canGoForward
-              ? 'focus-visible:outline-2 focus-visible:outline-white'
-              : 'cursor-not-allowed',
-          )}
+          className="pagination-navigation-button flex items-center gap-x-1.5 p-1 px-2 transition"
           onClick={handleNext}
         >
           <span className="hidden sm:mx-1.5 sm:inline">Next</span>

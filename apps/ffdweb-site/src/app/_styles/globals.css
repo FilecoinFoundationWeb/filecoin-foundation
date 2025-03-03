@@ -170,19 +170,27 @@
     @apply bg-brand-primary-300 text-brand-primary-900 p-1;
   }
 
-  .pagination-carret {
+  .pagination-delimiter {
     @apply text-brand-primary-800;
   }
 
-  .pagination-button {
+  .pagination-navigation-button {
     @apply bg-brand-primary-300;
+
+    &:not(:disabled) {
+      @apply focus-visible:outline-2 focus-visible:outline-white;
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
 
     &:not(:disabled):hover {
       @apply bg-brand-primary-400;
     }
   }
 
-  .pagination-index {
+  .pagination-navigation-number {
     @apply h-full w-full;
 
     &[data-current='true'] {

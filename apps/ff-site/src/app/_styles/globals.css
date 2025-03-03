@@ -56,7 +56,7 @@
   }
 
   & pre {
-    @apply border-brand-600 border border-solid;
+    @apply border border-solid border-brand-600;
   }
 
   & iframe {
@@ -108,7 +108,7 @@
   }
 
   .button--ghost {
-    @apply bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400 border-white;
+    @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
   }
 
   .button--disabled {
@@ -126,7 +126,7 @@
 
   /* ICON BUTTONS */
   .icon-button {
-    @apply border-brand-300 text-brand-300 rounded-lg;
+    @apply rounded-lg border-brand-300 text-brand-300;
   }
 
   /* SITE LAYOUT */
@@ -136,7 +136,7 @@
 
   /* TAGS */
   .tag-label {
-    @apply bg-brand-800 text-brand-100 rounded-lg border capitalize;
+    @apply rounded-lg border bg-brand-800 text-brand-100 capitalize;
   }
 
   .tag-label--primary {
@@ -153,32 +153,40 @@
 
   /* TEXT LINKS */
   .text-link {
-    @apply text-brand-300 focus:brand-outline hover:underline;
+    @apply text-brand-300 hover:underline focus:brand-outline;
   }
 
   /* TOC */
   .toc-header {
-    @apply text-brand-200 text-sm font-semibold uppercase;
+    @apply text-sm font-semibold text-brand-200 uppercase;
   }
 
   /* PAGINATION */
   .pagination {
-    @apply bg-brand-300 text-brand-700 rounded-lg p-1;
+    @apply rounded-lg bg-brand-300 p-1 text-brand-700;
   }
 
-  .pagination-carret {
+  .pagination-delimiter {
     @apply text-brand-800;
   }
 
-  .pagination-button {
-    @apply bg-brand-300 rounded-sm;
+  .pagination-navigation-button {
+    @apply rounded-sm bg-brand-300;
+
+    &:not(:disabled) {
+      @apply focus-visible:outline-2 focus-visible:outline-white;
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
 
     &:not(:disabled):hover {
       @apply bg-brand-400;
     }
   }
 
-  .pagination-index {
+  .pagination-navigation-number {
     @apply h-full w-full rounded-sm;
 
     &[data-current='true'] {
