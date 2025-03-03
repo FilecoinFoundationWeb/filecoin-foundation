@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation'
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
+import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import {
@@ -28,14 +29,12 @@ import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
-import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
-import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 
 import { blogSortConfigs } from '../constants/sortConfigs'

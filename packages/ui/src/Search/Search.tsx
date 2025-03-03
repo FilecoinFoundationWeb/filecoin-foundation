@@ -5,16 +5,14 @@ import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
+import { SearchInput } from '@filecoin-foundation/ui/SearchInput'
 import { DEFAULT_PAGE_NUMBER } from '@filecoin-foundation/utils/constants/paginationConstants'
 import {
   PAGE_KEY,
   SEARCH_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { useDebounceCallback } from 'usehooks-ts'
-
-import { useSearch } from '@/hooks/useSearch'
-
-import { SearchInput } from '@/components/SearchInput'
+import type { useSearch } from './useSearch'
 
 export type SearchProps = {
   query: ReturnType<typeof useSearch>['searchQuery']

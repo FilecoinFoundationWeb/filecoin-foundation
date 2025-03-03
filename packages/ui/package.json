@@ -27,6 +27,8 @@
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
+    "./SearchInput": "./src/SearchInput.tsx",
+    "./Search": "./src/Search/index.ts",
     "./SiteLayout": "./src/SiteLayout.tsx",
     "./Social": "./src/Social.tsx",
     "./TagComponents": "./src/TagComponents/index.ts",
@@ -45,6 +47,7 @@
     "typescript": "^5"
   },
   "peerDependencies": {
+    "@headlessui/react": "^2.2.0",
     "@phosphor-icons/react": "^2.1.7",
     "@sentry/nextjs": "^8.52.0",
     "@tailwindcss/postcss": "^4.0.5",

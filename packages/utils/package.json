@@ -24,5 +24,8 @@
     "typescript": "^5",
     "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*"
+  },
+  "peerDependencies": {
+    "slugify": "^1.6.6"
   }
 }
