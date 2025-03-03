@@ -163,7 +163,7 @@ export default function FAQs() {
           </p>
         </article>
       </section>
-    </>
+    </PageLayout>
   )
 }
 

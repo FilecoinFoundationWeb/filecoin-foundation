@@ -30,7 +30,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "cypress/**/*.ts",
-    "../../packages/ui/src/PageLayout.tsx"
+    "cypress/**/*.ts"
   ]
 }
