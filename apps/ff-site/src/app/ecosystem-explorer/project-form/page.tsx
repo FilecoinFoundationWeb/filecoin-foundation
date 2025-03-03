@@ -1,7 +1,7 @@
 import { DescriptionText } from '@filecoin-foundation/ui/DescriptionText'
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-
-import type { AsyncNextServerSearchParams } from '@/types/searchParams'
+import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
 
@@ -12,7 +12,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 
 import { getGroupedCategoryOptions } from '../utils/getGroupedCategoryOptions'
 
