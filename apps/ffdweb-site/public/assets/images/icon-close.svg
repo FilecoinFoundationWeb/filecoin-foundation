@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="icon-close">
+    <g transform="translate(-273 -27)">
+      <line x2="2" transform="translate(275 30)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x2="2" transform="translate(273 28)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x2="2" transform="translate(283 38)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x2="2" transform="translate(285 40)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x1="2" transform="translate(283 30)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x1="2" transform="translate(285 28)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x2="2" transform="translate(277 32)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x1="2" transform="translate(281 32)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x2="2" transform="translate(279 34)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x2="2" transform="translate(281 36)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x1="2" transform="translate(277 36)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x1="2" transform="translate(275 38)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+      <line x1="2" transform="translate(273 40)" style="fill: none; stroke: #070517; stroke-width: 2px;"/>
+    </g>
+  </svg>
