@@ -1,11 +1,12 @@
-import type { CategoryMap } from '@/types/categoryTypes'
-import type { CMSCollectionName } from '@/types/cmsConfig'
+import type { CategoryMap } from './types/categoryTypes'
+import type { CMSCollectionName } from './types/cmsConfig'
 
-import { getCMSFieldOptions, getCollectionConfig } from '@/utils/cmsConfigUtils'
+import { getCMSFieldOptions, getCollectionConfig } from './cmsConfigUtils'
 
 type GetCategoryLabelParams = {
   collectionName: CMSCollectionName
   category: string
+  configData: unknown
 }
 
 export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
@@ -21,8 +22,9 @@ export function getCategorySettingsFromMap(categoryMap: CategoryMap) {
 export function getCategoryLabel({
   collectionName,
   category,
+  configData,
 }: GetCategoryLabelParams) {
-  const { fields } = getCollectionConfig(collectionName)
+  const { fields } = getCollectionConfig(collectionName, configData)
   const categoryOptions = getCMSFieldOptions(fields, 'category')
   const option = categoryOptions.find((option) => option.value === category)
 

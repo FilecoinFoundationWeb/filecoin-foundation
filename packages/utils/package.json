@@ -8,6 +8,8 @@
   },
   "exports": {
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
+    "./categoryUtils": "./src/categoryUtils.ts",
+    "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./dateUtils": "./src/dateUtils.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
