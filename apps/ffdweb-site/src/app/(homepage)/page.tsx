@@ -1,8 +1,10 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -14,6 +16,7 @@ import { PageHeader } from '@/components/PageHeader'
 export default function Home() {
   return (
     <PageLayout gap="large">
+      <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       <section>
         <PageHeader
           isHomepage

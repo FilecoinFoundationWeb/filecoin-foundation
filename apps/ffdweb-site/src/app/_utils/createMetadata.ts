@@ -6,6 +6,11 @@ type MetadataParams = {
   overrideTitle?: boolean
 }
 
+export type StructuredDataParams = Pick<
+  MetadataParams,
+  'metaTitle' | 'metaDescription'
+>
+
 export function createMetadata({
   metaTitle,
   metaDescription,
