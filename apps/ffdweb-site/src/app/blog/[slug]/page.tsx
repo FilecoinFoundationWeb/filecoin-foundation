@@ -1,15 +1,38 @@
+// import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
+// import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
+// import { MarkdownContent } from '@filecoin-foundation/ui/MarkdownContent'
+
+// import { graphicsData } from '@/data/graphicsData'
+
 import { createMetadata } from '@/utils/createMetadata'
 
-export default function BlogPost() {
-  return (
-    <>
-      <article>
-        <time>Lorem ipsum dolor sit amet.</time>
+// type BlogPostProps = {
+//   params: Promise<SlugParams>
+// }
 
-        <h1>Lorem ipsum dolor sit amet.</h1>
-      </article>
-    </>
-  )
+export default async function BlogPost() {
+  // const { slug } = await props.params
+  // const data = await getBlogPostData(slug)
+
+  // const { title, image, content, publishedOn, category } = data
+
+  return <div>Blog Post</div>
+  // return (
+  // <ArticleLayout>
+  //   <BlogPostHeader
+  //     title={title}
+  //     image={{
+  //       ...(image || graphicsData.imageFallback.data),
+  //       alt: '',
+  //     }}
+  //     publishedOn={publishedOn}
+  //     category={category}
+  //     configData={configData}
+  //   />
+
+  //    <MarkdownContent>{content}</MarkdownContent>
+  // </ArticleLayout>
+  // )
 }
 
 export const metadata = createMetadata({
