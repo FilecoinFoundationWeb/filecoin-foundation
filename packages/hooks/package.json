@@ -1,0 +1,25 @@
+{
+  "name": "@filecoin-foundation/hooks",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    "./useUpdateSearchParams": "./src/useUpdateSearchParams/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --fix"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@filecoin-foundation/eslint-config": "*",
+    "@filecoin-foundation/typescript-config": "*"
+  },
+  "peerDependencies": {
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

@@ -1,18 +1,20 @@
+
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
-import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
-
-import type { NextServerSearchParams } from '@/types/searchParams'
-
-import { PATHS } from '@/constants/paths'
+import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import {
   CATEGORY_KEY,
   LOCATION_KEY,
   PAGE_KEY,
   SEARCH_KEY,
   SORT_KEY,
-} from '@/constants/searchParams'
+} from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
+import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
+import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
+
+import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import configData from '@/data/cmsConfigSchema.json'
@@ -22,11 +24,9 @@ import {
   entryMatchesCategoryQuery,
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
-import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
@@ -35,7 +35,6 @@ import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { LocationFilter } from '@/components/LocationFilter'
-import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 
 import { EventSort } from '../components/EventSort'
@@ -46,7 +45,7 @@ import { getLocationListboxOptions } from '../utils/getLocationFilterOptions'
 import { getMetaData } from '../utils/getMetaData'
 
 type EventsContentProps = {
-  searchParams: NextServerSearchParams
+  searchParams: QueryParams
   events: Array<Event>
 }
 

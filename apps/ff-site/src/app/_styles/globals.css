@@ -160,4 +160,45 @@
   .toc-header {
     @apply text-sm font-semibold text-brand-200 uppercase;
   }
+
+  /* PAGINATION */
+  .pagination {
+    @apply rounded-lg bg-brand-300 p-1 text-brand-700;
+  }
+
+  .pagination-delimiter {
+    @apply text-brand-800;
+  }
+
+  .pagination-navigation-button {
+    @apply rounded-sm bg-brand-300;
+
+    &:not(:disabled) {
+      @apply focus-visible:outline-2 focus-visible:outline-white;
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      @apply bg-brand-400;
+    }
+  }
+
+  .pagination-navigation-number {
+    @apply h-full w-full rounded-sm;
+
+    &[data-current='true'] {
+      @apply bg-brand-800 text-brand-100;
+    }
+
+    &[data-current='false'] {
+      @apply bg-brand-300 text-brand-700;
+    }
+
+    &[data-current='false']:hover {
+      @apply bg-brand-400;
+    }
+  }
 }

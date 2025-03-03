@@ -3,19 +3,22 @@
 import { useSearchParams } from 'next/navigation'
 
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
-import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
-import { formatDate } from '@filecoin-foundation/utils/dateUtils'
-import { BookOpen } from '@phosphor-icons/react'
-
-import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
-import { PATHS } from '@/constants/paths'
+import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import {
   CATEGORY_KEY,
   PAGE_KEY,
   SEARCH_KEY,
   SORT_KEY,
-} from '@/constants/searchParams'
+} from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
+import { PATHS } from '@/constants/paths'
+import { BookOpen } from '@phosphor-icons/react'
+
+import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
+import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import configData from '@/data/cmsConfigSchema.json'
@@ -23,11 +26,9 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
 import { getSortOptions } from '@/utils/getSortOptions'
-import { normalizeQueryParam } from '@/utils/queryUtils'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
-import { usePagination } from '@/hooks/usePagination'
 import { useSearch } from '@/hooks/useSearch'
 import { useSort } from '@/hooks/useSort'
 
@@ -35,7 +36,6 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
-import { Pagination } from '@/components/Pagination'
 import { Search } from '@/components/Search'
 import { Sort } from '@/components/Sort'
 

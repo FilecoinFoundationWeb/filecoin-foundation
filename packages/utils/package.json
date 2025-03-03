@@ -13,6 +13,7 @@
     "./dateUtils": "./src/dateUtils.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
+    "./urlUtils": "./src/urlUtils.ts",
     "./constants/*": "./src/constants/*.ts",
     "./types/*": "./src/types/*.ts"
   },

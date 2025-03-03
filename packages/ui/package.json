@@ -31,7 +31,8 @@
     "./TagComponents": "./src/TagComponents/index.ts",
     "./TagComponents/*": "./src/TagComponents/*.tsx",
     "./TextLink": "./src/TextLink/index.ts",
-    "./TextLink/*": "./src/TextLink/*.tsx"
+    "./TextLink/*": "./src/TextLink/*.tsx",
+    "./Pagination": "./src/Pagination/index.ts"
   },
   "scripts": {
     "lint": "eslint . --fix"
@@ -50,6 +51,7 @@
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^4.0.5"
+    "tailwindcss": "^4.0.5",
+    "usehooks-ts": "^3.1.0"
   }
 }

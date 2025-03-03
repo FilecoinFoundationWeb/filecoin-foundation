@@ -164,4 +164,45 @@
   .text-link {
     @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
   }
+
+  /* PAGINATION */
+  .pagination {
+    @apply bg-brand-primary-300 text-brand-primary-900 p-1;
+  }
+
+  .pagination-delimiter {
+    @apply text-brand-primary-800;
+  }
+
+  .pagination-navigation-button {
+    @apply bg-brand-primary-300;
+
+    &:not(:disabled) {
+      @apply focus-visible:outline-2 focus-visible:outline-white;
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      @apply bg-brand-primary-400;
+    }
+  }
+
+  .pagination-navigation-number {
+    @apply h-full w-full;
+
+    &[data-current='true'] {
+      @apply bg-brand-primary-800 text-brand-primary-100;
+    }
+
+    &[data-current='false'] {
+      @apply bg-brand-primary-300 text-brand-primary-900;
+    }
+
+    &[data-current='false']:hover {
+      @apply bg-brand-primary-400;
+    }
+  }
 }
