@@ -1,3 +1,5 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
 import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/filecoin-plus/allocators.md'
@@ -9,7 +11,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

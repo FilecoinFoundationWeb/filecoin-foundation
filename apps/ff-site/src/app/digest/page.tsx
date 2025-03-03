@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
@@ -16,7 +17,6 @@ import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

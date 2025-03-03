@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 
@@ -12,7 +13,6 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
 import { getInvolvedData } from '../data/getInvolvedData'
@@ -28,7 +28,6 @@ import { SpeakersSection } from './components/SpeakersSection'
 import { SponsorSection } from './components/SponsorSection'
 import { buildCtaArray } from './utils/buildCtaArray'
 import { generateStructuredData } from './utils/generateStructuredData'
-
 
 type EventProps = {
   params: Promise<SlugParams>

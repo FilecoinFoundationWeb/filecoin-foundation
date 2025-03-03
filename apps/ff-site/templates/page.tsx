@@ -10,7 +10,7 @@ import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
