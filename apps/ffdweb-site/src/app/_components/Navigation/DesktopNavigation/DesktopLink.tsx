@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
-import { TOUCH_TARGET_NAV_LINK } from './constants'
+import { TOUCH_TARGET_NAV_LINK } from '../constants'
 
 type DesktopLinkProps = {
   label: string
