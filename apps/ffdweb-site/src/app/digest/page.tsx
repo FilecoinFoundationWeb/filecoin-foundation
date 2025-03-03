@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -10,7 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function Digest() {
   return (
-    <>
+    <PageLayout gap={32}>
       <PageHeader
         title="The Go-to Publication for Exploring DWeb Ideas and Principles"
         image={graphicsData.digest}
@@ -22,7 +23,7 @@ export default function Digest() {
       >
         <Social linksWithIcons={socialLinksWithIcons} />
       </CTASection>
-    </>
+    </PageLayout>
   )
 }
 

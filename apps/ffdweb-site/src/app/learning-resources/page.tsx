@@ -1,3 +1,5 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -9,7 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function LearningResources() {
   return (
-    <>
+    <PageLayout gap={32}>
       <PageHeader
         title="Explore Decentralized Tech with Content from FFDW and Beyond"
         image={graphicsData.learningResources}
@@ -23,7 +25,7 @@ export default function LearningResources() {
           text: 'Submit a Resource',
         }}
       />
-    </>
+    </PageLayout>
   )
 }
 

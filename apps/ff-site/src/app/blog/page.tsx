@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { PATHS } from '@/constants/paths'
@@ -14,7 +15,6 @@ import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

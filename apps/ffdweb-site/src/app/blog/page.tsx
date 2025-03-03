@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 
 import { createMetadata } from '@/utils/createMetadata'
@@ -8,14 +9,12 @@ import { BlogContent } from './_components/BlogContent'
 
 export default function Blog() {
   return (
-    <>
-      <section>
-        <TagLabel variant="secondary">Featured</TagLabel>
-        <Suspense>
-          <BlogContent />
-        </Suspense>
-      </section>
-    </>
+    <PageLayout gap={32}>
+      <TagLabel variant="secondary">Featured</TagLabel>
+      <Suspense>
+        <BlogContent />
+      </Suspense>
+    </PageLayout>
   )
 }
 

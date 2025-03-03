@@ -1,3 +1,5 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
 import { PATHS } from '@/constants/paths'
 
 import { attributes } from '@/content/pages/governance/governance.md'
@@ -11,7 +13,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 import { CardGrid } from '@/components/CardGrid'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

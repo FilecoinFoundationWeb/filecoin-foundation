@@ -1,10 +1,11 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { createMetadata } from '@/utils/createMetadata'
 
 export default function Project() {
   return (
-    <>
+    <PageLayout gap={32}>
       <header>
         <h1></h1>
       </header>
@@ -23,7 +24,7 @@ export default function Project() {
         <InternalTextLink href="#">Website</InternalTextLink>
         <InternalTextLink href="#">Read Blog Post</InternalTextLink>
       </div>
-    </>
+    </PageLayout>
   )
 }
 

@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
@@ -21,7 +22,6 @@ import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
 import { StructuredDataScript } from '@/components/StructuredDataScript'

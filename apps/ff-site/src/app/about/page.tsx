@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { Files } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
@@ -18,7 +19,6 @@ import { CardGrid } from '@/components/CardGrid'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

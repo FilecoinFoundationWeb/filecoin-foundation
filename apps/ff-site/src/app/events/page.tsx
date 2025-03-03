@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
@@ -17,7 +18,6 @@ import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

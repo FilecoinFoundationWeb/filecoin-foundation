@@ -1,3 +1,5 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
 // import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 // import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 
@@ -8,7 +10,7 @@ import { createMetadata } from '@/utils/createMetadata'
 // import { MarkdownContent } from '@/components/MarkdownContent'
 
 export default function DigestArticle() {
-  return <div>Digest Article</div>
+  return <PageLayout gap={32}>Digest Article</PageLayout>
   // return (
   //   <ArticleLayout>
   //     <DigestArticleHeader

@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { type SlugParams } from '@/types/paramsTypes'
@@ -12,7 +13,6 @@ import { extractEmailAddress } from '@/utils/extractEmailAddress'
 import { findOrThrow } from '@/utils/findOrThrow'
 
 import { CTASection } from '@/components/CTASection'
-import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

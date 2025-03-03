@@ -1,4 +1,6 @@
-;`import { PATHS } from '@/constants/paths'
+;`import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
+import { PATHS } from '@/constants/paths'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -10,7 +12,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageLayout } from '@/components/PageLayout'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 

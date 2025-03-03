@@ -1,5 +1,6 @@
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 
 import { type SlugParams } from '@/types/paramsTypes'
 
@@ -11,7 +12,6 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { PageLayout } from '@/components/PageLayout'
 import { ShareArticle } from '@/components/ShareArticle'
 import { StructuredDataScript } from '@/components/StructuredDataScript'
 
