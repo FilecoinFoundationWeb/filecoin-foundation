@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import {
   ExternalTextLink,
   InternalTextLink,
@@ -10,7 +11,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 export default function FAQs() {
   return (
-    <>
+    <PageLayout gap={32}>
       <>
         <span>FAQs</span>
         <h1>

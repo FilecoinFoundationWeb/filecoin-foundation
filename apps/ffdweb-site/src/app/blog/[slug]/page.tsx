@@ -1,3 +1,5 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
 // import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 // import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
 // import { MarkdownContent } from '@filecoin-foundation/ui/MarkdownContent'
@@ -16,7 +18,7 @@ export default async function BlogPost() {
 
   // const { title, image, content, publishedOn, category } = data
 
-  return <div>Blog Post</div>
+  return <PageLayout gap={32}>Blog Post</PageLayout>
   // return (
   // <ArticleLayout>
   //   <BlogPostHeader

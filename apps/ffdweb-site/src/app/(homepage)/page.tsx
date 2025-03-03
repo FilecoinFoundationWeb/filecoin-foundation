@@ -1,3 +1,4 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { PATHS } from '@/constants/paths'
@@ -12,7 +13,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function Home() {
   return (
-    <>
+    <PageLayout gap={32}>
       <section>
         <PageHeader
           isHomepage
@@ -140,7 +141,7 @@ export default function Home() {
           text: 'Contact Us',
         }}
       />
-    </>
+    </PageLayout>
   )
 }
 

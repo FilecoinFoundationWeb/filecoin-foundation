@@ -1,3 +1,5 @@
+import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -9,7 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function About() {
   return (
-    <>
+    <PageLayout gap={32}>
       <PageHeader
         title="Building and Supporting the Decentralized Web Community"
         image={graphicsData.about}
@@ -146,7 +148,7 @@ export default function About() {
           text: 'Contact Us',
         }}
       />
-    </>
+    </PageLayout>
   )
 }
 
