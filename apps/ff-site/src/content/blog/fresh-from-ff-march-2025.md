@@ -18,8 +18,7 @@ seo:
 
 **[Building Together: The power of collaboration in the Filecoin ecosystem](https://fil.org/blog/building-together-the-power-of-collaboration-in-the-filecoin-ecosystem).** [CIDgravity](https://fil.org/ecosystem-explorer/cidgravity), a pricing and client management tool for Filecoin storage providers (SPs), and [Lighthouse](https://fil.org/ecosystem-explorer/lighthouse), a platform built on Filecoin offering perpetual storage, encryption, custom gateways, and multi-chain smart contracts, announced a partnership to combine their strengths to deliver more comprehensive solutions for data clients. [Read more](https://fil.org/blog/building-together-the-power-of-collaboration-in-the-filecoin-ecosystem). 
 
-## 
-Ecosystem 
+## Ecosystem 
 
 * Filecoin Foundation & FILOz hosted key ecosystem builders, founders, and business development leaders during ETHDenver for a FWS, Onramp, and Tooling collaboration to continue the work started in Bangkok to reach Product Market Fit. Register to attend [FDS-6: Toronto](https://www.fildev.io/FDS-6), to participate in this ongoing effort. 
 * Check out the latest updates and developments for Filecoin Storage Providers in the SPWG! Join the [\#global-storage-provider-community](https://filecoinproject.slack.com/archives/C02GQUMFQVA) Slack channel to get involved. 
@@ -31,7 +30,6 @@ Ecosystem
 
 * The Filecoin community has reached a milestone — 100 Filecoin Improvement Proposals have been considered to date! Check out the [most recent FIP one-pagers](https://x.com/fil_gov/status/1889728327188947338) for insights into the latest proposals. 
 * Join the Filecoin governance discussion! To get involved, visit the [Governance GitHub](https://github.com/filecoin-project/FIPs) and join the conversation in the [\#fil-gov Slack channel](https://filecoinproject.slack.com/archives/C0535S9TUUF). These spaces are an open forum for Filecoin community members to come together and discuss important issues and initiatives related to the governance of the Filecoin Network.
-
 
 ### Fil Plus
 
