@@ -1,3 +1,4 @@
+import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { Organization, WithContext } from 'schema-dts'
 
 import {
@@ -7,23 +8,16 @@ import {
   ORGANIZATION_NAME_SHORT,
 } from '@/constants/siteMetadata'
 
+import { seo } from '@/(homepage)/page'
+
 const { social, email } = FFDW_URLS
-
-export const SCHEMA_CONTEXT_URL = 'https://schema.org'
-export const SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL =
-  'https://schema.org/OnlineEventAttendanceMode'
-export const SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL =
-  'https://schema.org/OfflineEventAttendanceMode'
-
-const DESCRIPTION =
-  'FFDW is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools.'
 
 export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
   '@type': 'Organization',
   name: ORGANIZATION_NAME,
   alternateName: ORGANIZATION_NAME_SHORT,
-  description: DESCRIPTION,
+  description: seo.metaDescription,
   url: BASE_URL,
   sameAs: [social.linkedin.href, social.twitter.href, social.youtube.href],
   logo: {
