@@ -1,4 +1,5 @@
 import { MarkdownPage } from '@filecoin-foundation/ui/MarkdownPage'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -17,10 +18,13 @@ const SEO = {
 
 export default function PrivacyPolicy() {
   return (
-    <MarkdownPage
-      PageHeaderTitle={<PageHeader.Title>{SEO.metaTitle}</PageHeader.Title>}
-      MarkdownContent={<MarkdownContent>{body}</MarkdownContent>}
-    />
+    <>
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <MarkdownPage
+        PageHeaderTitle={<PageHeader.Title>{SEO.metaTitle}</PageHeader.Title>}
+        MarkdownContent={<MarkdownContent>{body}</MarkdownContent>}
+      />
+    </>
   )
 }
 
