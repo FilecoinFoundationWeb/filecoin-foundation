@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
+import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { List, X } from '@phosphor-icons/react'
 
@@ -14,7 +15,6 @@ import { PATHS } from '@/constants/paths'
 import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { Logo } from '@/components/Logo'
-import { SlideOver } from '@/components/SlideOver'
 
 import { LinkItem } from './LinkItem'
 import { NestedMenu } from './NestedMenu'

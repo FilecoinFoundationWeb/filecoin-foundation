@@ -6,12 +6,11 @@ import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearc
 import { Button } from '@filecoin-foundation/ui/Button'
 import { Icon } from '@filecoin-foundation/ui/Icon'
 import { IconButton } from '@filecoin-foundation/ui/IconButton'
+import { SlideOver } from '@filecoin-foundation/ui/SlideOver'
 import { Button as HeadlessUIButton } from '@headlessui/react'
 import { FunnelSimple, X } from '@phosphor-icons/react'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
-
-import { SlideOver } from '@/components/SlideOver'
 
 import { CategoryFilters, type CategoryFiltersProps } from './CategoryFilters'
 

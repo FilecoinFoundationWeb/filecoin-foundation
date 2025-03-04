@@ -153,7 +153,7 @@
 
   /* ICON BUTTONS */
   .icon-button {
-    @apply border-brand-primary-300 text-brand-primary-300;
+    @apply text-brand-primary-300 hover:bg-brand-primary-800;
   }
 
   /* TAGS */
@@ -225,5 +225,10 @@
 
   .search-clear-icon {
     @apply rounded-none;
+  }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-neutral-950;
   }
 }
