@@ -20,8 +20,8 @@ export default function FAQs() {
     <PageLayout gap={32}>
       <PageHeader
         kicker="FAQs"
-        heading="Need help with something?"
-        subheading="Here are our most frequently asked questions"
+        title="Need help with something?"
+        subtitle="Here are our most frequently asked questions"
       />
       <MarkdownContent className="faq-content">{body}</MarkdownContent>
     </PageLayout>
