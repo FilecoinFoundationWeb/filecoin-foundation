@@ -36,6 +36,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "frontmatter-markdown-loader": "^3.7.0",
     "typescript": "^5"
   }
 }
