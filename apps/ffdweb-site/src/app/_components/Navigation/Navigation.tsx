@@ -1,7 +1,7 @@
 import { LogoLink } from '@/components/Logo/LogoLink'
 
-import { DesktopNavigation } from './DesktopNavigation/DesktopNavigation'
-import { MobileNavigation } from './MobileNavigation/MobileNavigation'
+import { DesktopNavigation } from './DesktopNavigation'
+import { MobileNavigation } from './MobileNavigation'
 
 export function Navigation() {
   return (

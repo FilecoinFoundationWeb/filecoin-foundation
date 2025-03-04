@@ -12,9 +12,8 @@ import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { LogoLink } from '@/components/Logo/LogoLink'
 
-import { NAV_LINKS, TOUCH_TARGET_NAV_LINK } from '../constants'
-
-import { MobileLink } from './MobileLink'
+import { NAV_LINKS, TOUCH_TARGET_NAV_LINK } from './constants'
+import { NavigationLink } from './NavigationLink'
 
 export function MobileNavigation() {
   const [open, setOpen] = useState(false)
@@ -46,7 +45,7 @@ export function MobileNavigation() {
           >
             {NAV_LINKS.map((link) => (
               <li key={link.label}>
-                <MobileLink
+                <NavigationLink
                   href={link.path}
                   label={link.label}
                   onClick={closePanel}

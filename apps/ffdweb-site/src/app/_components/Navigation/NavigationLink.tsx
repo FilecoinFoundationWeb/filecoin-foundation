@@ -5,14 +5,15 @@ import { usePathname } from 'next/navigation'
 
 import { clsx } from 'clsx'
 
-import { TOUCH_TARGET_NAV_LINK } from '../constants'
+import { TOUCH_TARGET_NAV_LINK } from './constants'
 
-type DesktopLinkProps = {
+type NavigationLinkProps = {
   label: string
   href: LinkProps['href']
+  onClick?: LinkProps['onClick']
 }
 
-export function DesktopLink({ href, label, ...rest }: DesktopLinkProps) {
+export function NavigationLink({ href, label, ...rest }: NavigationLinkProps) {
   const pathname = usePathname()
   const isActive = pathname.startsWith(href.toString())
 
@@ -23,7 +24,7 @@ export function DesktopLink({ href, label, ...rest }: DesktopLinkProps) {
       aria-current={isActive}
       className={clsx(
         TOUCH_TARGET_NAV_LINK.touchAreaPadding,
-        'focus:brand-outline aria-current:text-brand-primary-300 aria-current:bg-brand-primary-900 text-neutral-200 hover:bg-neutral-800',
+        'focus:brand-outline aria-current:text-brand-primary-300 aria-current:bg-brand-primary-900 inline-block text-neutral-200 hover:bg-neutral-800',
       )}
       {...rest}
     >
