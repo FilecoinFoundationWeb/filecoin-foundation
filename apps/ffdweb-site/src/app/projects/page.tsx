@@ -11,6 +11,7 @@ export default function Projects() {
   return (
     <>
       <PageHeader
+        kicker="Projects"
         title="Discover Current and Past FFDW Project Partners"
         image={graphicsData.projects}
       />

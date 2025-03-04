@@ -13,6 +13,7 @@ export default function Digest() {
   return (
     <PageLayout gap={32}>
       <PageHeader
+        kicker="Digest"
         title="The Go-to Publication for Exploring DWeb Ideas and Principles"
         image={graphicsData.digest}
       />
