@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import { SmartTextLink } from '@filecoin-foundation/ui/TextLink/SmartTextLink'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import clsx from 'clsx'
 import ReactMarkdown, { type Components } from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
@@ -13,6 +14,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 export type MarkdownContentProps = {
   children: Parameters<typeof ReactMarkdown>[0]['children']
+  className?: string
 }
 
 const IMAGE_DIMENSIONS = {
@@ -66,14 +68,14 @@ const markdownComponents: Components = {
   a: MarkdownLink,
 }
 
-export function MarkdownContent({ children }: MarkdownContentProps) {
+export function MarkdownContent({ children, className }: MarkdownContentProps) {
   const rehypePlugins = [rehypeRaw, rehypeSlug]
 
   return (
     <ReactMarkdown
       rehypePlugins={rehypePlugins}
       remarkPlugins={[remarkGfm]}
-      className="prose"
+      className={clsx('prose', className)}
       components={markdownComponents}
     >
       {children}

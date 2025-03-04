@@ -73,6 +73,10 @@
     }
   }
 
+  &.faq-content {
+    --tw-prose-headings: theme('colors.brand.primary.300');
+  }
+
   & pre {
     @apply border-brand-primary-300 border border-solid; /* CHECK */
   }

@@ -20,6 +20,7 @@ type TitleProps = {
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
 }
+
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
