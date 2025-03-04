@@ -24,9 +24,6 @@ export default function Home() {
             text: 'View Projects',
           }}
         />
-        <InternalTextLink href={PATHS.PROJECTS.path}>
-          View Projects
-        </InternalTextLink>
       </section>
 
       <section>

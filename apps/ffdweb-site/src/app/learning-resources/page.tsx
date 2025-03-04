@@ -13,6 +13,7 @@ export default function LearningResources() {
   return (
     <PageLayout gap={32}>
       <PageHeader
+        kicker="Learning Resources"
         title="Explore Decentralized Tech with Content from FFDW and Beyond"
         image={graphicsData.learningResources}
       />

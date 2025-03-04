@@ -13,6 +13,7 @@ export default function About() {
   return (
     <PageLayout gap={32}>
       <PageHeader
+        kicker="About"
         title="Building and Supporting the Decentralized Web Community"
         image={graphicsData.about}
       />

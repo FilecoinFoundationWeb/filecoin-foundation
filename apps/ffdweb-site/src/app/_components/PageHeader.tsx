@@ -23,6 +23,7 @@ type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
+  kicker?: string
   cta?: CTAProps
   isHomepage?: boolean
 }
@@ -30,11 +31,12 @@ type PageHeaderProps = {
 export function PageHeader({
   title,
   image,
+  kicker,
   cta,
   isHomepage = false,
 }: PageHeaderProps) {
   return (
-    <header className="grid items-center gap-6 lg:grid-cols-2">
+    <header className="grid items-center gap-16 lg:grid-cols-2">
       <div
         className={clsx(
           'grid grid-cols-1 content-start justify-center gap-8 text-center',
@@ -42,7 +44,10 @@ export function PageHeader({
           isHomepage ? 'order-2' : 'order-1',
         )}
       >
-        <PageHeader.Title isHomepage={isHomepage}>{title}</PageHeader.Title>
+        <div className="flex flex-col gap-8">
+          {kicker && <span>{kicker}</span>}
+          <PageHeader.Title isHomepage={isHomepage}>{title}</PageHeader.Title>
+        </div>
         {cta && <PageHeader.CTAButton {...cta} />}
       </div>
       <div

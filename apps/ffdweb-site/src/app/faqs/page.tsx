@@ -12,13 +12,17 @@ import { createMetadata } from '@/utils/createMetadata'
 export default function FAQs() {
   return (
     <PageLayout gap={32}>
-      <>
-        <span>FAQs</span>
-        <h1>
-          Need help with something? Here are our most frequently asked
-          questions.
-        </h1>
-      </>
+      <header>
+        <div className="flex flex-col gap-8">
+          <h1>FAQs</h1>
+          <div className="leading-brand-heading max-w-lg text-4xl font-medium">
+            <p className="">Need help with something?</p>
+            <p className="text-neutral-400">
+              Here are our most frequently asked questions.
+            </p>
+          </div>
+        </div>
+      </header>
 
       <section>
         <article>
