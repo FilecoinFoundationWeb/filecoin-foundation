@@ -145,8 +145,12 @@ export default function Home() {
   )
 }
 
-export const metadata = createMetadata({
+export const seo = {
   metaTitle: 'Rebuilding the Internet for Good',
   metaDescription:
     'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
+}
+
+export const metadata = createMetadata({
+  ...seo,
 })
