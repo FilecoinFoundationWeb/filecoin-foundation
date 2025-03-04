@@ -23,10 +23,8 @@ export type HeadingProps = {
 }
 
 const variantStyles = {
-  '5xl-fluid':
-    'text-[clamp(theme(fontSize.4xl),10vw,theme(fontSize.5xl))] leading-tight',
-  '4xl-fluid':
-    'text-[clamp(theme(fontSize.3xl),8vw,theme(fontSize.4xl))] leading-tight',
+  '5xl-fluid': 'text-[clamp(theme(fontSize.4xl),10vw,theme(fontSize.5xl))]',
+  '4xl-fluid': 'text-[clamp(theme(fontSize.3xl),8vw,theme(fontSize.4xl))]',
   '4xl': 'text-4xl font-bold',
   '3xl': 'text-3xl font-bold',
   '2xl': 'text-2xl font-bold',

@@ -17,6 +17,7 @@ export default function Digest() {
     <PageLayout gap={32}>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
+        kicker="Digest"
         title="The Go-to Publication for Exploring DWeb Ideas and Principles"
         image={graphicsData.digest}
       />

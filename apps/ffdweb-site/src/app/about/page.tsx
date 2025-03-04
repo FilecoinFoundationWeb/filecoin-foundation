@@ -17,6 +17,7 @@ export default function About() {
     <PageLayout gap={32}>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
+        kicker="About"
         title="Building and Supporting the Decentralized Web Community"
         image={graphicsData.about}
       />

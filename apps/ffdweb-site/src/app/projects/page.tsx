@@ -16,6 +16,7 @@ export default function Projects() {
     <>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
+        kicker="Projects"
         title="Discover Current and Past FFDW Project Partners"
         image={graphicsData.projects}
       />

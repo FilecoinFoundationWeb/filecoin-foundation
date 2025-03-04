@@ -17,6 +17,7 @@ export default function LearningResources() {
     <PageLayout gap={32}>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
+        kicker="Learning Resources"
         title="Explore Decentralized Tech with Content from FFDW and Beyond"
         image={graphicsData.learningResources}
       />
