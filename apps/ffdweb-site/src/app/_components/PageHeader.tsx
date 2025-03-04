@@ -14,7 +14,7 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 type TitleProps = {
   children: string
-  isHomepage: PageHeaderProps['isHomepage']
+  isHomepage?: PageHeaderProps['isHomepage']
 }
 
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
@@ -62,7 +62,10 @@ export function PageHeader({
   )
 }
 
-PageHeader.Title = function Title({ children, isHomepage }: TitleProps) {
+PageHeader.Title = function Title({
+  children,
+  isHomepage = false,
+}: TitleProps) {
   const titleVariant = isHomepage ? '5xl-fluid' : '4xl-fluid'
 
   return (

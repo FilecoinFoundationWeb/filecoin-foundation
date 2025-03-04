@@ -1,24 +1,34 @@
+import { MarkdownPage } from '@filecoin-foundation/ui/MarkdownPage'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { generateStructuredData } from '@/blog/utils/generateStructuredData'
+import { MarkdownContent } from '@/components/MarkdownContent'
+import { PageHeader } from '@/components/PageHeader'
+
+import privacyPolicyMarkdown from './privacy-policy.md'
+import { generateStructuredData } from './utils/generateStructuredData'
+
+const { body } = privacyPolicyMarkdown
+
+const SEO = {
+  metaTitle: 'Privacy Policy',
+  metaDescription:
+    'Discover how Filecoin Foundation safeguards your data. Read our comprehensive Privacy Policy for detailed information.',
+} as const
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
-      <h1>Privacy Policy</h1>
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+      <MarkdownPage
+        PageHeaderTitle={<PageHeader.Title>{SEO.metaTitle}</PageHeader.Title>}
+        MarkdownContent={<MarkdownContent>{body}</MarkdownContent>}
+      />
     </>
   )
 }
 
-const seo = {
-  metaTitle: 'Privacy Policy',
-  metaDescription:
-    'Discover how Filecoin Foundation safeguards your data. Read our comprehensive Privacy Policy for detailed information.',
-}
-
 export const metadata = createMetadata({
-  ...seo,
+  ...SEO,
 })
