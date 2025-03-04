@@ -8,7 +8,7 @@ import {
   ORGANIZATION_NAME_SHORT,
 } from '@/constants/siteMetadata'
 
-import { seo } from '@/(homepage)/page'
+import { seo } from '../(homepage)/page'
 
 const { social, email } = FFDW_URLS
 
