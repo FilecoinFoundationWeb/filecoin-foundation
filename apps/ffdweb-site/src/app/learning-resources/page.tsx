@@ -12,10 +12,17 @@ import { PageHeader } from '@/components/PageHeader'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
+const SEO = {
+  metaTitle: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
+  metaDescription:
+    'Discover case studies, tutorials, and tools on decentralized technologies driving social change. Learn, share, and help shape the future with FFDW.',
+  overrideTitle: true,
+} as const
+
 export default function LearningResources() {
   return (
     <PageLayout gap={32}>
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
       <PageHeader
         kicker="Learning Resources"
         title="Explore Decentralized Tech with Content from FFDW and Beyond"
@@ -34,14 +41,7 @@ export default function LearningResources() {
   )
 }
 
-const seo = {
-  metaTitle: 'FFDW Learning Resources | Decentralized Tech & Social Impact',
-  metaDescription:
-    'Discover case studies, tutorials, and tools on decentralized technologies driving social change. Learn, share, and help shape the future with FFDW.',
-  overrideTitle: true,
-}
-
 export const metadata = createMetadata({
-  ...seo,
+  ...SEO,
   overrideTitle: true,
 })

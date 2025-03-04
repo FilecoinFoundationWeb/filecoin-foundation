@@ -16,6 +16,11 @@ const { header: aboutPageHeader } =
 
 const { social, email } = FILECOIN_FOUNDATION_URLS
 
+export const SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL =
+  'https://schema.org/OnlineEventAttendanceMode'
+export const SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL =
+  'https://schema.org/OfflineEventAttendanceMode'
+
 export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@context': SCHEMA_CONTEXT_URL,
   '@type': 'Organization',

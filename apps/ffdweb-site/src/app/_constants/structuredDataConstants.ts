@@ -4,10 +4,11 @@ import type { Organization, WithContext } from 'schema-dts'
 import {
   BASE_URL,
   FFDW_URLS,
-  ORGANIZATION_DESCRIPTION,
   ORGANIZATION_NAME,
   ORGANIZATION_NAME_SHORT,
 } from '@/constants/siteMetadata'
+
+import { SEO } from '@/(homepage)/page'
 
 const { social, email } = FFDW_URLS
 
@@ -16,7 +17,7 @@ export const ORGANIZATION_SCHEMA_BASE: WithContext<Organization> = {
   '@type': 'Organization',
   name: ORGANIZATION_NAME,
   alternateName: ORGANIZATION_NAME_SHORT,
-  description: ORGANIZATION_DESCRIPTION,
+  description: SEO.metaDescription,
   url: BASE_URL,
   sameAs: [social.linkedin.href, social.twitter.href, social.youtube.href],
   logo: {
