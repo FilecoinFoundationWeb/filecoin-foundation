@@ -28,7 +28,7 @@ const FOOTER_SECTION_GAP = 'gap-10'
 
 export function Footer() {
   return (
-    <footer className={clsx('grid grid-cols-1', FOOTER_GAP)}>
+    <footer className={clsx('mt-32 grid grid-cols-1', FOOTER_GAP)}>
       <FooterGraphics />
       <div
         className={clsx(
