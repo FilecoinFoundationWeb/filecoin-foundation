@@ -24,6 +24,7 @@
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
     "./IconButton": "./src/IconButton.tsx",
+    "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
