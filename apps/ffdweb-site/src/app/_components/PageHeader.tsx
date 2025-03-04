@@ -21,7 +21,7 @@ type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
 }
 
-export type PageHeaderProps = {
+type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   kicker?: string
