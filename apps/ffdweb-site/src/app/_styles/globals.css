@@ -149,7 +149,7 @@
 
   /* ICON BUTTONS */
   .icon-button {
-    @apply border-brand-primary-300 text-brand-primary-300;
+    @apply text-brand-primary-300 hover:bg-brand-primary-800;
   }
 
   /* TAGS */
