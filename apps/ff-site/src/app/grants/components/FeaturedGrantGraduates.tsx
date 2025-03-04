@@ -23,8 +23,7 @@ export function FeaturedGrantGraduates({
         <Card
           key={slug}
           title={title}
-          description={description}
-          textIsClamped={true}
+          description={{ text: description, isClamped: true }}
           cta={{
             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Read More',
