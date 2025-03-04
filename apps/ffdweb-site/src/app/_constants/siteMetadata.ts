@@ -4,6 +4,9 @@ const ORGANIZATION_NAME =
   'Filecoin Foundation for the Decentralized Web' as const
 const ORGANIZATION_NAME_SHORT = 'FFDW' as const
 
+const ORGANIZATION_DESCRIPTION =
+  'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools'
+
 const FFDW_URLS = {
   email: 'impact@ffdweb.org',
   social: {
@@ -28,6 +31,7 @@ export {
   BASE_DOMAIN,
   BASE_URL,
   FFDW_URLS,
+  ORGANIZATION_DESCRIPTION,
   ORGANIZATION_NAME,
   ORGANIZATION_NAME_SHORT,
 }
