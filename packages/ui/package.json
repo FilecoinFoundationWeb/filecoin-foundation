@@ -30,6 +30,7 @@
     "./PageLayout": "./src/PageLayout.tsx",
     "./SearchInput": "./src/SearchInput.tsx",
     "./Search": "./src/Search/index.ts",
+    "./SlideOver": "./src/SlideOver.tsx",
     "./SiteLayout": "./src/SiteLayout.tsx",
     "./Social": "./src/Social.tsx",
     "./TagComponents": "./src/TagComponents/index.ts",

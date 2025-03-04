@@ -214,4 +214,9 @@
   .search-clear-button {
     @apply rounded-sm;
   }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-brand-800;
+  }
 }
