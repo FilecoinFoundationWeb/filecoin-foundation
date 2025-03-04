@@ -5,6 +5,7 @@ import {
   type DescriptionTextType,
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
+import { Meta, type MetaDataType } from '@filecoin-foundation/ui/Meta'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import type {
   ImageObjectFit,
@@ -16,7 +17,6 @@ import {
   type CTAButtonGroupProps,
   CTAButtonGroup,
 } from '@/components/CTAButtonGroup'
-import { Meta, type MetaDataType } from '@/components/Meta'
 import { SectionDivider } from '@/components/SectionDivider'
 
 type TitleProps = {

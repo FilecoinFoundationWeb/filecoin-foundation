@@ -100,8 +100,7 @@ function OrbitEvents({ events, searchParams }: OrbitEventsProps) {
                   key={index}
                   title={title}
                   metaData={[formatDate(startDate), city]}
-                  borderColor="brand-400"
-                  textIsClamped={true}
+                  borderColor="light"
                   cta={ctaProps}
                 />
               )

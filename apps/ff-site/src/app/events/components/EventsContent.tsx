@@ -1,4 +1,3 @@
-
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
@@ -147,9 +146,11 @@ export default function EventsContent({
                     <Card
                       key={slug}
                       title={title}
-                      borderColor="brand-400"
-                      textIsClamped={true}
+                      borderColor="light"
                       tags={[{ text: tagLabel }]}
+                      description={
+                        description && { text: description, isClamped: true }
+                      }
                       metaData={getMetaData({
                         startDate,
                         endDate,

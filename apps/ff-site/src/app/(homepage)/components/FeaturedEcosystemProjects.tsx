@@ -23,9 +23,8 @@ export function FeaturedEcosystemProjects({
         <Card
           key={slug}
           title={title}
-          description={description}
-          borderColor="brand-300"
-          textIsClamped={true}
+          description={{ text: description, isClamped: true }}
+          borderColor="lighter"
           cta={{
             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Learn More',
