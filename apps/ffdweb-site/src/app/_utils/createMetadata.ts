@@ -1,15 +1,10 @@
 import type { Metadata } from 'next'
 
-type MetadataParams = {
+export type MetadataParams = {
   metaTitle: string
   metaDescription: string
   overrideTitle?: boolean
 }
-
-export type StructuredDataParams = Pick<
-  MetadataParams,
-  'metaTitle' | 'metaDescription'
->
 
 export function createMetadata({
   metaTitle,

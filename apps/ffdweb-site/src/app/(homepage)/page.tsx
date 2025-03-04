@@ -3,7 +3,7 @@ import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScri
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { PATHS } from '@/constants/paths'
-import { FFDW_URLS, ORGANIZATION_DESCRIPTION } from '@/constants/siteMetadata'
+import { FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -145,11 +145,6 @@ export default function Home() {
   )
 }
 
-const seo = {
-  metaTitle: 'Rebuilding the Internet for Good',
-  metaDescription: ORGANIZATION_DESCRIPTION,
-}
-
 export const metadata = createMetadata({
-  ...seo,
+  ...SEO,
 })

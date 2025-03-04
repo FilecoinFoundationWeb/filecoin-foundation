@@ -1,14 +1,14 @@
 import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { WebPage, WithContext } from 'schema-dts'
 
+import type { structuredDataParams } from '@/types/structuredDataParams'
+
 import { type DynamicPathValues, type PathValues } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import type { StructuredDataParams } from './createMetadata'
-
 type GenerateWebPageStructuredDataProps = {
-  title: StructuredDataParams['metaTitle']
-  description: StructuredDataParams['metaDescription']
+  title: structuredDataParams['metaTitle']
+  description: structuredDataParams['metaDescription']
   path: PathValues | DynamicPathValues
 }
 

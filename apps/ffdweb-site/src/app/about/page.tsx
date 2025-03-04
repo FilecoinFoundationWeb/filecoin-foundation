@@ -12,10 +12,16 @@ import { PageHeader } from '@/components/PageHeader'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
+const SEO = {
+  metaTitle: 'About FFDW | Building and Supporting the Decentralized Community',
+  metaDescription:
+    'Discover how Filecoin Foundation for the Decentralized Web (FFDW) accelerates open, decentralized technologies and safeguards vital data. Learn about our mission to empower communities, preserve cultural knowledge, and shape a fairer, more resilient internet for everyone.',
+} as const
+
 export default function About() {
   return (
     <PageLayout gap="large">
-      <StructuredDataScript structuredData={generateStructuredData(seo)} />
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
       <PageHeader
         kicker="About"
         title="Building and Supporting the Decentralized Web Community"
@@ -156,13 +162,8 @@ export default function About() {
     </PageLayout>
   )
 }
-const seo = {
-  metaTitle: 'About FFDW | Building and Supporting the Decentralized Community',
-  metaDescription:
-    'Discover how Filecoin Foundation for the Decentralized Web (FFDW) accelerates open, decentralized technologies and safeguards vital data. Learn about our mission to empower communities, preserve cultural knowledge, and shape a fairer, more resilient internet for everyone.',
-}
 
 export const metadata = createMetadata({
-  ...seo,
+  ...SEO,
   overrideTitle: false,
 })
