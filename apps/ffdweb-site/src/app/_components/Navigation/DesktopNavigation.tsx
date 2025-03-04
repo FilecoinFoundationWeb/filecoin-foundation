@@ -9,7 +9,7 @@ export function DesktopNavigation() {
       aria-label="Navigation options"
       className={clsx(
         TOUCH_TARGET_NAV_LINK.touchAreaOffset,
-        'hidden gap-3 lg:flex',
+        'hidden lg:flex lg:gap-3',
       )}
     >
       {NAV_LINKS.map((link) => (
