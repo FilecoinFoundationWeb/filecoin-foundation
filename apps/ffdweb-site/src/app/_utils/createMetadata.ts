@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-type MetadataParams = {
+export type MetadataParams = {
   metaTitle: string
   metaDescription: string
   overrideTitle?: boolean

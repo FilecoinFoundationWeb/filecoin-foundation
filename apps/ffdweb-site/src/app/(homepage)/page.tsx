@@ -1,8 +1,10 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
+import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -11,9 +13,16 @@ import { createMetadata } from '@/utils/createMetadata'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
+export const SEO = {
+  metaTitle: 'Rebuilding the Internet for Good',
+  metaDescription:
+    'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
+}
+
 export default function Home() {
   return (
     <PageLayout gap={32}>
+      <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
       <section>
         <PageHeader
           isHomepage
@@ -143,7 +152,5 @@ export default function Home() {
 }
 
 export const metadata = createMetadata({
-  metaTitle: 'Rebuilding the Internet for Good',
-  metaDescription:
-    'Filecoin Foundation for the Decentralized Web is a nonprofit organization committed to preserving humanity’s most important information by funding the development of open-source tools',
+  ...SEO,
 })
