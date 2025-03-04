@@ -222,4 +222,9 @@
   .search-clear-icon {
     @apply rounded-none;
   }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-neutral-950;
+  }
 }

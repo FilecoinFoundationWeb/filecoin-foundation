@@ -1,6 +1,7 @@
 import { LogoLink } from '@/components/Logo/LogoLink'
 
 import { DesktopNavigation } from './DesktopNavigation/DesktopNavigation'
+import { MobileNavigation } from './MobileNavigation/MobileNavigation'
 
 export function Navigation() {
   return (
@@ -8,6 +9,7 @@ export function Navigation() {
       <LogoLink />
 
       <DesktopNavigation />
+      <MobileNavigation />
     </nav>
   )
 }
