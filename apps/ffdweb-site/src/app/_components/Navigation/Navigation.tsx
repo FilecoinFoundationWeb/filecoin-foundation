@@ -7,7 +7,7 @@ import { DesktopLink } from './DesktopLink'
 
 export function Navigation() {
   return (
-    <nav className="mb-6 flex justify-between gap-12 lg:items-center">
+    <nav className="mb-16 flex justify-between gap-12 lg:items-center">
       <LogoLink />
 
       <div
