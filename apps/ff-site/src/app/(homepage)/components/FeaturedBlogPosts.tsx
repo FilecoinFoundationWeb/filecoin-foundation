@@ -7,8 +7,6 @@ import { PATHS } from '@/constants/paths'
 import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
-
-
 import { Card } from '@/components/Card'
 import { CardGrid } from '@/components/CardGrid'
 
@@ -37,8 +35,7 @@ export function FeaturedBlogPosts({
               metaData={[formatDate(publishedOn)]}
               tags={[{ text: categoryLabel }]}
               title={title}
-              description={description}
-              textIsClamped={true}
+              description={{ text: description, isClamped: true }}
               cta={{
                 href: `${PATHS.BLOG.path}/${slug}`,
                 text: 'Learn More',
