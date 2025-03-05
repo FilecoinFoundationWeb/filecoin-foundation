@@ -4,18 +4,18 @@ import { useState } from 'react'
 
 import { Button } from '@filecoin-foundation/ui/Button'
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog/NotificationDialog'
+import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
 import * as Sentry from '@sentry/nextjs'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { ControlledForm } from '@/components/Form/ControlledForm'
 import { ControlledFormInput } from '@/components/Form/ControlledFormInput'
-import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
 const NewsletterSchema = z.object({
   email: z
