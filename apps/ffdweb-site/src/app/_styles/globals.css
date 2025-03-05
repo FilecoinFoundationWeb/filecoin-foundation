@@ -121,12 +121,16 @@
   }
 
   /* BREADCRUMBS */
-  .breadcrumbs-inactive {
-    @apply text-neutral-50;
-  }
+  .breadcrumb-link {
+    @apply focus:brand-outline hover:underline;
 
-  .breadcrumbs-active {
-    @apply text-brand-primary-300;
+    &:not([aria-current='page']) {
+      @apply text-neutral-50;
+    }
+
+    &[aria-current='page'] {
+      @apply text-brand-primary-300;
+    }
   }
 
   /* BUTTONS */
