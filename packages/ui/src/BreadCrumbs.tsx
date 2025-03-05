@@ -3,13 +3,15 @@
 import { clsx } from 'clsx'
 import { usePathname } from 'next/navigation'
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { InternalTextLink } from '@filecoin-foundation/ui/TextLink'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
+import Link from 'next/link'
 import type { Route } from 'next'
 
 const HOME_PATH = '/'
 const HOME_LABEL = 'Home'
+
+const breadcrumbGap = 'gap-2'
 
 export function BreadCrumbs() {
   const pathname = usePathname()
@@ -17,7 +19,7 @@ export function BreadCrumbs() {
 
   return (
     <nav aria-label="breadcrumbs">
-      <ol className="inline-flex items-center gap-2.5">
+      <ol className={clsx(breadcrumbGap, 'inline-flex items-center')}>
         {pathNames.map((path, index) => {
           const isRoot = index === 0
 
@@ -29,7 +31,10 @@ export function BreadCrumbs() {
           const label = isRoot ? capitalize(HOME_LABEL) : formatLabel(path)
 
           return (
-            <li key={href} className="inline-flex items-center gap-2.5">
+            <li
+              key={href}
+              className={clsx(breadcrumbGap, 'inline-flex items-center')}
+            >
               {!isRoot && (
                 <Icon
                   component={CaretRight}
@@ -38,15 +43,13 @@ export function BreadCrumbs() {
                   weight="bold"
                 />
               )}
-              <InternalTextLink
+              <Link
                 href={href as Route}
-                className={clsx(
-                  !isActive && 'breadcrumbs-inactive',
-                  isActive && 'breadcrumbs-active',
-                )}
+                aria-current={isActive && 'page'}
+                className="breadcrumb-link"
               >
                 {label}
-              </InternalTextLink>
+              </Link>
             </li>
           )
         })}

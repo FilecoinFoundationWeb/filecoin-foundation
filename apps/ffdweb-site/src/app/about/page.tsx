@@ -9,6 +9,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
+import { PageSection } from '@/components/PageSection'
 
 import { generateStructuredData } from './utils/generateStructuredData'
 
@@ -27,13 +28,12 @@ export default function About() {
         title="Building and Supporting the Decentralized Web Community"
         image={graphicsData.about}
       />
-      <section>
-        <span>FFDW Priorities</span>
-        <h2>
-          Our mission is to preserve humanity&apos;s most important information.
-        </h2>
-        <p>We do this through:</p>
 
+      <PageSection
+        kicker="FFDW Priorities"
+        title="Our mission is to preserve humanity's most important information."
+        description="We do this through:"
+      >
         <div>
           <div>
             <h3>Education</h3>
@@ -57,18 +57,13 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
+      </PageSection>
 
-      <section>
-        <span>Impact Areas</span>
-        <h2>Empowering Change Through Decentralization</h2>
-        <p>
-          FFDW’s efforts span the critical areas listed below. Each of these
-          domains is vital in its own right, and FFDW’s breadth of work reflects
-          its commitment to driving meaningful change not just in one industry
-          but across the expanse of the web.
-        </p>
-
+      <PageSection
+        kicker="Impact Areas"
+        title="Empowering Change Through Decentralization"
+        description="FFDW’s efforts span the critical areas listed below. Each of these domains is vital in its own right, and FFDW’s breadth of work reflects its commitment to driving meaningful change not just in one industry but across the expanse of the web."
+      >
         <div>
           <div>
             <h3>DWeb Research and Development</h3>
@@ -122,11 +117,9 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
+      </PageSection>
 
-      <section>
-        <span>Board of Directors</span>
-        <h2>FFDW Board of Directors</h2>
+      <PageSection kicker="Board of Directors" title="FFDW Board of Directors">
         <div>
           <div>
             <h3>Marta Belcher</h3>
@@ -149,7 +142,7 @@ export default function About() {
             <p>Executive Director, Blockchain Association</p>
           </div>
         </div>
-      </section>
+      </PageSection>
 
       <CTASection
         kicker="Get Involved"
