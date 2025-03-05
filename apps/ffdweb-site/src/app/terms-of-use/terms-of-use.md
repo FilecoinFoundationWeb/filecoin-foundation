@@ -1,3 +1,5 @@
+# Terms of Use
+
 Effective Date: December 1, 2021 These Terms of Use (“Terms”) govern your use of Filecoin Foundation for the Decentralized Web website and any other website that FFDW operates and that links to these Terms (collectively, the “Website”).
 
 Please review these Terms carefully before using the Website. We may change these Terms or modify any features of the Website at any time. The most current version of the Terms can be viewed by clicking on the “Terms of Use” link posted through the Website. You accept the Terms by using the Website, and you accept any changes to the Terms by continuing to use the Website after we post the changes.
