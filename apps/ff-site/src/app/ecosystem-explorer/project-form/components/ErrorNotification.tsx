@@ -3,11 +3,9 @@
 import { useState, useEffect, useCallback } from 'react'
 
 import { useUpdateSearchParams } from '@filecoin-foundation/hooks/useUpdateSearchParams'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog/NotificationDialog'
+import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 import { XCircle } from '@phosphor-icons/react'
-
-import { NOTIFICATION_DIALOG_ERROR_DURATION_MS } from '@/constants/notificationDialogDuration'
-
-import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
 
 type ErrorMessageProps = {
   message: string
