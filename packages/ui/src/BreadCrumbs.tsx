@@ -3,21 +3,32 @@
 import { clsx } from 'clsx'
 import { usePathname } from 'next/navigation'
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { InternalTextLink } from '@filecoin-foundation/ui/TextLink'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
-import type { Route } from 'next'
+import Link from 'next/link'
 
 const HOME_PATH = '/'
 const HOME_LABEL = 'Home'
 
-export function BreadCrumbs() {
+const gapMap = {
+  1: 'gap-1',
+  1.5: 'gap-1.5',
+  2: 'gap-2',
+  2.5: 'gap-2.5',
+  3: 'gap-3',
+}
+
+type BreadCrumbsProps = {
+  gap?: keyof typeof gapMap
+}
+
+export function BreadCrumbs({ gap = 2 }: BreadCrumbsProps) {
   const pathname = usePathname()
   const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
 
   return (
     <nav aria-label="breadcrumbs">
-      <ol className="inline-flex items-center gap-2.5">
+      <ol className={clsx(gapMap[gap], 'inline-flex items-center')}>
         {pathNames.map((path, index) => {
           const isRoot = index === 0
 
@@ -29,7 +40,10 @@ export function BreadCrumbs() {
           const label = isRoot ? capitalize(HOME_LABEL) : formatLabel(path)
 
           return (
-            <li key={href} className="inline-flex items-center gap-2.5">
+            <li
+              key={href}
+              className={clsx(gapMap[gap], 'inline-flex items-center')}
+            >
               {!isRoot && (
                 <Icon
                   component={CaretRight}
@@ -38,15 +52,13 @@ export function BreadCrumbs() {
                   weight="bold"
                 />
               )}
-              <InternalTextLink
-                href={href as Route}
-                className={clsx(
-                  !isActive && 'breadcrumbs-inactive',
-                  isActive && 'breadcrumbs-active',
-                )}
+              <Link
+                href={href}
+                aria-current={isActive && 'page'}
+                className="breadcrumb-link"
               >
                 {label}
-              </InternalTextLink>
+              </Link>
             </li>
           )
         })}
