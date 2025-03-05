@@ -6,23 +6,22 @@ import { Icon } from '@filecoin-foundation/ui/Icon'
 import { capitalize, truncate } from '@filecoin-foundation/utils/stringUtils'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
+import type { Route } from 'next'
 
 const HOME_PATH = '/'
 const HOME_LABEL = 'Home'
 
 const gapMap = {
-  1: 'gap-1',
-  1.5: 'gap-1.5',
-  2: 'gap-2',
-  2.5: 'gap-2.5',
-  3: 'gap-3',
+  small: 'gap-1.5',
+  default: 'gap-2',
+  large: 'gap-2.5',
 }
 
 type BreadCrumbsProps = {
   gap?: keyof typeof gapMap
 }
 
-export function BreadCrumbs({ gap = 2 }: BreadCrumbsProps) {
+export function BreadCrumbs({ gap = 'default' }: BreadCrumbsProps) {
   const pathname = usePathname()
   const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
 
@@ -53,7 +52,7 @@ export function BreadCrumbs({ gap = 2 }: BreadCrumbsProps) {
                 />
               )}
               <Link
-                href={href}
+                href={href as Route}
                 aria-current={isActive && 'page'}
                 className="breadcrumb-link"
               >
