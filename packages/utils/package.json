@@ -11,6 +11,7 @@
     "./categoryUtils": "./src/categoryUtils.ts",
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./dateUtils": "./src/dateUtils.ts",
+    "./generateShareArticleLinks": "./src/generateShareArticleLinks.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",
