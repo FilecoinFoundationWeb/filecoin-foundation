@@ -11,7 +11,7 @@ export function IconButton({ icon, label, onClick }: IconButtonProps) {
   return (
     <Button
       aria-label={label}
-      className="icon-button focus:brand-outline grid size-12 place-items-center border"
+      className="icon-button focus:brand-outline grid size-12 place-items-center"
       onClick={onClick}
     >
       <Icon component={icon} />

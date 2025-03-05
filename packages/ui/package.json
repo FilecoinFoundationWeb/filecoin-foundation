@@ -24,11 +24,13 @@
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
     "./IconButton": "./src/IconButton.tsx",
+    "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
     "./SearchInput": "./src/SearchInput.tsx",
     "./Search": "./src/Search/index.ts",
+    "./SlideOver": "./src/SlideOver.tsx",
     "./SiteLayout": "./src/SiteLayout.tsx",
     "./Social": "./src/Social.tsx",
     "./TagComponents": "./src/TagComponents/index.ts",
@@ -44,7 +46,7 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*",
-    "typescript": "^5"
+    "frontmatter-markdown-loader": "^3.7.0"
   },
   "peerDependencies": {
     "@headlessui/react": "^2.2.0",

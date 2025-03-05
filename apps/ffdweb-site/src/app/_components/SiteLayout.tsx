@@ -1,9 +1,9 @@
 import { Manrope } from 'next/font/google'
 
-import { SiteLayout as AppSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
+import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
 import { Footer } from '@/components/Footer'
-import { Navigation } from '@/components/Navigation'
+import { Navigation } from '@/components/Navigation/Navigation'
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -16,8 +16,8 @@ type SiteLayoutProps = {
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <AppSiteLayout font={manrope} Navigation={Navigation} Footer={Footer}>
+    <SharedSiteLayout font={manrope} Navigation={Navigation} Footer={Footer}>
       {children}
-    </AppSiteLayout>
+    </SharedSiteLayout>
   )
 }

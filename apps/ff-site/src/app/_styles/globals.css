@@ -126,7 +126,7 @@
 
   /* ICON BUTTONS */
   .icon-button {
-    @apply rounded-lg border-brand-300 text-brand-300;
+    @apply rounded-lg border border-brand-300 text-brand-300;
   }
 
   /* SITE LAYOUT */
@@ -213,5 +213,10 @@
 
   .search-clear-button {
     @apply rounded-sm;
+  }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-brand-800;
   }
 }

@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
@@ -9,10 +10,20 @@ import { createMetadata } from '@/utils/createMetadata'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
+import { generateStructuredData } from './utils/generateStructuredData'
+
+const SEO = {
+  metaTitle: 'About FFDW | Building and Supporting the Decentralized Community',
+  metaDescription:
+    'Discover how Filecoin Foundation for the Decentralized Web (FFDW) accelerates open, decentralized technologies and safeguards vital data. Learn about our mission to empower communities, preserve cultural knowledge, and shape a fairer, more resilient internet for everyone.',
+} as const
+
 export default function About() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
       <PageHeader
+        kicker="About"
         title="Building and Supporting the Decentralized Web Community"
         image={graphicsData.about}
       />
@@ -153,8 +164,6 @@ export default function About() {
 }
 
 export const metadata = createMetadata({
-  metaTitle: 'About FFDW | Building and Supporting the Decentralized Community',
-  metaDescription:
-    'Discover how Filecoin Foundation for the Decentralized Web (FFDW) accelerates open, decentralized technologies and safeguards vital data. Learn about our mission to empower communities, preserve cultural knowledge, and shape a fairer, more resilient internet for everyone.',
-  overrideTitle: true,
+  ...SEO,
+  overrideTitle: false,
 })

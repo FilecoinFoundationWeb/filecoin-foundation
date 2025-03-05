@@ -10,6 +10,9 @@ import { socialLinksWithIcons } from '@/utils/socialConfig'
 
 import { LogoLink } from './Logo/LogoLink'
 
+import FooterDecorationLeft from '@/assets/graphics/footer-decoration-left.svg'
+import FooterDecorationRight from '@/assets/graphics/footer-decoration-right.svg'
+
 type FooterSectionProps = {
   title: string
   children: React.ReactNode
@@ -25,7 +28,8 @@ const FOOTER_SECTION_GAP = 'gap-10'
 
 export function Footer() {
   return (
-    <footer className={clsx('grid grid-cols-1', FOOTER_GAP)}>
+    <footer className={clsx('mt-32 grid grid-cols-1', FOOTER_GAP)}>
+      <FooterGraphics />
       <div
         className={clsx(
           'grid grid-cols-1 lg:auto-cols-max lg:grid-flow-col',
@@ -111,5 +115,22 @@ function FooterLink({ href, label }: FooterLinkProps) {
         {label}
       </Link>
     </li>
+  )
+}
+
+function FooterGraphics() {
+  return (
+    <div className="flex h-20 items-center justify-between sm:h-36">
+      <FooterDecorationLeft
+        className="h-full w-auto"
+        aria-hidden="true"
+        role="presentation"
+      />
+      <FooterDecorationRight
+        className="h-full w-auto"
+        aria-hidden="true"
+        role="presentation"
+      />
+    </div>
   )
 }

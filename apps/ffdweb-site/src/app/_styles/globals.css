@@ -30,6 +30,8 @@
 
   --color-icon-primary: theme('colors.brand.primary.300');
   --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
+
+  --leading-heading: 1.3;
 }
 
 @utility brand-outline {
@@ -45,7 +47,7 @@
   h4,
   h5,
   h6 {
-    @apply leading-relaxed;
+    line-height: var(--leading-heading);
   }
 }
 
@@ -69,6 +71,10 @@
     &::after {
       @apply content-none!;
     }
+  }
+
+  &.faq-content {
+    --tw-prose-headings: theme('colors.brand.primary.300');
   }
 
   & pre {
@@ -147,7 +153,7 @@
 
   /* ICON BUTTONS */
   .icon-button {
-    @apply border-brand-primary-300 text-brand-primary-300;
+    @apply text-brand-primary-300 hover:bg-brand-primary-800;
   }
 
   /* TAGS */
@@ -219,5 +225,10 @@
 
   .search-clear-icon {
     @apply rounded-none;
+  }
+
+  /* SLIDE OVER */
+  .slide-over-panel {
+    @apply bg-neutral-950;
   }
 }
