@@ -15,7 +15,9 @@ type GlobalErrorProps = {
 
 export function GlobalError({ error, baseDomain, Layout }: GlobalErrorProps) {
   useEffect(() => {
-    Sentry.captureException(error)
+    if (Sentry?.captureException) {
+      Sentry.captureException(error)
+    }
   }, [error])
 
   return (
