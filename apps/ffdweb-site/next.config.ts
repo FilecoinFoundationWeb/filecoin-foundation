@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next'
 
+import { redirects } from './redirects'
+
 const webpackRules = [
   {
     test: /\.md$/,
@@ -18,6 +20,9 @@ const nextConfig: NextConfig = {
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
     return config
+  },
+  async redirects() {
+    return redirects
   },
 }
 
