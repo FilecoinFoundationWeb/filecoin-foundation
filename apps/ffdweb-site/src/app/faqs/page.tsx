@@ -5,9 +5,9 @@ import { createMetadata } from '@/utils/createMetadata'
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { PageHeader } from './components/PageHeader'
-import faqsMarkdown from './faqs.md'
+import FAQsMarkdown from './faqs.md'
 
-const { body } = faqsMarkdown
+const { body } = FAQsMarkdown
 
 const SEO = {
   metaTitle: 'FFDW FAQs | Answers About Our Mission & the Decentralized Web',
@@ -17,13 +17,13 @@ const SEO = {
 
 export default function FAQs() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <PageHeader
         kicker="FAQs"
-        heading="Need help with something?"
-        subheading="Here are our most frequently asked questions"
+        title="Need help with something?"
+        subtitle="Here are our most frequently asked questions"
       />
-      <MarkdownContent className="faq-content">{body}</MarkdownContent>
+      <MarkdownContent>{body}</MarkdownContent>
     </PageLayout>
   )
 }

@@ -13,7 +13,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function Home() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <section>
         <PageHeader
           isHomepage

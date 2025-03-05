@@ -11,7 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function About() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <PageHeader
         kicker="About"
         title="Building and Supporting the Decentralized Web Community"

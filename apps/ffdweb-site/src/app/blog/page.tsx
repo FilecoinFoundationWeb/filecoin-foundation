@@ -9,7 +9,7 @@ import { BlogContent } from './_components/BlogContent'
 
 export default function Blog() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <TagLabel variant="secondary">Featured</TagLabel>
       <Suspense>
         <BlogContent />

@@ -18,7 +18,7 @@ export default async function BlogPost() {
 
   // const { title, image, content, publishedOn, category } = data
 
-  return <PageLayout gap={32}>Blog Post</PageLayout>
+  return <PageLayout gap="large">Blog Post</PageLayout>
   // return (
   // <ArticleLayout>
   //   <BlogPostHeader
