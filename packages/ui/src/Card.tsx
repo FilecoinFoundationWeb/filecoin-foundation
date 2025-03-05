@@ -18,10 +18,6 @@ import type {
   ImageObjectFit,
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
-import {
-  type BreakpointValue,
-  type SpacingValue,
-} from '@filecoin-foundation/utils/types/tailwindTypes'
 import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
@@ -39,13 +35,9 @@ type CardImageProps = (StaticImageProps | ImageProps) & {
   sizes?: string
 }
 
-type LeftProperty = `left-${SpacingValue}`
-type ResponsiveLeftProperty = `${BreakpointValue}:${LeftProperty}`
-
-export type ExtendedCTAProps = {
+export type ExtendedCTAProps = CTAProps & {
   baseDomain: string
-  left?: LeftProperty | [LeftProperty, ResponsiveLeftProperty]
-} & CTAProps
+}
 
 export type CardProps = {
   title: string | React.ReactNode
@@ -176,22 +168,8 @@ Card.Avatars = function Avatars({
   )
 }
 
-Card.Link = function Link({
-  href,
-  ariaLabel,
-  icon,
-  text,
-  baseDomain,
-  left = 'left-4',
-}: NonNullable<CardProps['cta']>) {
-  const isExternal = isExternalLink(href, baseDomain)
-  const textElement = <span key="text">{text}</span>
-
-  const textIcon = icon
-    ? [<Icon key="custom" component={icon} />, textElement]
-    : isExternal
-      ? [textElement, <Icon key="arrow" component={ArrowUpRight} />]
-      : textElement
+Card.Link = function Link(props: NonNullable<CardProps['cta']>) {
+  const { href, ariaLabel, baseDomain } = props
 
   return (
     <BaseLink
@@ -200,14 +178,29 @@ Card.Link = function Link({
       aria-label={ariaLabel}
       className="focus:brand-outline absolute inset-0 rounded-lg"
     >
-      <span
-        className={clsx(
-          'card-link absolute bottom-4 inline-flex items-center gap-2',
-          left,
-        )}
-      >
-        {textIcon}
+      <span className="card-link absolute bottom-4 left-4 inline-flex items-center gap-2">
+        {renderCardLinkContent(props)}
       </span>
     </BaseLink>
   )
+}
+
+function renderCardLinkContent({
+  href,
+  icon,
+  text,
+  baseDomain,
+}: NonNullable<CardProps['cta']>) {
+  const isExternal = isExternalLink(href, baseDomain)
+  const textSpanElement = <span key="text">{text}</span>
+
+  if (icon) {
+    return [<Icon key="custom-icon" component={icon} />, textSpanElement]
+  }
+
+  if (isExternal) {
+    return [textSpanElement, <Icon key="arrow" component={ArrowUpRight} />]
+  }
+
+  return textSpanElement
 }
