@@ -116,12 +116,16 @@
   }
 
   /* BREADCRUMBS */
-  .breadcrumbs-inactive {
-    @apply text-brand-300;
-  }
+  .breadcrumb-link {
+    @apply hover:underline focus:brand-outline;
 
-  .breadcrumbs-active {
-    @apply text-brand-400;
+    &:not([aria-current='page']) {
+      @apply text-brand-300;
+    }
+
+    &[aria-current='page'] {
+      @apply text-brand-400;
+    }
   }
 
   /* ICON BUTTONS */
@@ -218,5 +222,39 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-brand-800;
+  }
+
+  /* CARD */
+  .card {
+    @apply rounded-lg bg-brand-700/30;
+
+    &.card-border-lighter {
+      @apply border-brand-300;
+    }
+
+    &.card-border-light {
+      @apply border-brand-400;
+    }
+
+    &.card-border-base {
+      @apply border-brand-500;
+    }
+
+    &.card-border-dark {
+      @apply border-brand-600;
+    }
+  }
+
+  .card-image {
+    @apply rounded-lg px-1 pt-1;
+  }
+
+  .card-link {
+    @apply text-brand-300;
+  }
+
+  /* META */
+  .meta {
+    @apply text-brand-300;
   }
 }

@@ -70,8 +70,7 @@ export default async function Digest() {
                 key={slug}
                 title={title}
                 avatars={authors}
-                description={description}
-                textIsClamped={true}
+                description={{ text: description, isClamped: true }}
                 tags={[
                   { text: `Issue ${issueNumber}` },
                   { text: `Article ${articleNumber}` },
