@@ -139,8 +139,7 @@ export function BlogContent({ posts }: BlogContentProps) {
                     <Card
                       key={slug}
                       title={title}
-                      description={description}
-                      textIsClamped={true}
+                      description={{ text: description, isClamped: true }}
                       metaData={[formatDate(publishedOn)]}
                       tags={[{ text: categoryLabel }]}
                       cta={{

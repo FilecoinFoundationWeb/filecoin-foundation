@@ -37,7 +37,7 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
               key={title}
               title={title}
               description={description}
-              borderColor="brand-400"
+              borderColor="light"
               metaData={getMetaData({
                 startDate,
                 endDate,
