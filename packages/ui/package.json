@@ -37,6 +37,7 @@
     "./TagComponents/*": "./src/TagComponents/*.tsx",
     "./TextLink": "./src/TextLink/index.ts",
     "./TextLink/*": "./src/TextLink/*.tsx",
+    "./Tooltip/*": "./src/Tooltip/*.tsx",
     "./Pagination": "./src/Pagination/index.ts",
     "./StructuredDataScript": "./src/StructuredDataScript.tsx"
   },
