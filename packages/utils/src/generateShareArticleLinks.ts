@@ -7,12 +7,18 @@ import {
 
 const PLACEHOLDER_TITLE = 'Explore more on our website!'
 
-export function generateShareArticleLinks(
-  URL: string,
-  title: string,
-  baseUrl: string,
-) {
-  const PLACEHOLDER_URL = baseUrl
+type ShareArticleLinksProps = {
+  URL: string
+  title: string
+  BASE_URL: string
+}
+
+export function generateShareArticleLinks({
+  URL,
+  title,
+  BASE_URL,
+}: ShareArticleLinksProps) {
+  const PLACEHOLDER_URL = BASE_URL
   const formattedURL = URL ? encodeURIComponent(URL) : PLACEHOLDER_URL
 
   const SHARE_SOCIAL_LINKS_CONFIG = [
