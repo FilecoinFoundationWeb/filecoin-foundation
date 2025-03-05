@@ -30,7 +30,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "cypress/**/*.ts",
-    "../../packages/ui/src/CopyToClipboard.tsx"
+    "cypress/**/*.ts"
   ]
 }
