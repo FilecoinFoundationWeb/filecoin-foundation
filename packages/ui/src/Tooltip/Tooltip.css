@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 @keyframes slide-up-and-fade {
   from {
     opacity: 0;
@@ -68,15 +70,9 @@
 }
 
 .tooltip-content {
-  max-width: 20rem;
-  border-radius: 0.5rem;
-  background-color: var(--tooltip-background-color);
-  padding: 0.75rem 1rem;
-  font-size: 0.875rem;
-  line-height: v 1.25;
-  color: var(--tooltip-color);
+  @apply max-w-xs rounded-lg bg-[var(--tooltip-background-color)] px-4 py-3 text-sm leading-5 text-[var(--tooltip-color)];
 }
 
 .tooltip-arrow {
-  fill: var(--tooltip-arrow-color);
+  @apply fill-[var(--tooltip-arrow-color)];
 }
