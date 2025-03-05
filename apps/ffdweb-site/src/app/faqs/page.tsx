@@ -23,7 +23,7 @@ export default function FAQs() {
         title="Need help with something?"
         subtitle="Here are our most frequently asked questions"
       />
-      <MarkdownContent className="faq-content">{body}</MarkdownContent>
+      <MarkdownContent>{body}</MarkdownContent>
     </PageLayout>
   )
 }
