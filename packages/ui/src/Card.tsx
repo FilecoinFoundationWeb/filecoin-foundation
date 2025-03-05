@@ -176,9 +176,9 @@ Card.Link = function Link(props: NonNullable<CardProps['cta']>) {
       href={href}
       baseDomain={baseDomain}
       aria-label={ariaLabel}
-      className="focus:brand-outline absolute inset-0 rounded-lg"
+      className="card-link focus:brand-outline absolute inset-0"
     >
-      <span className="card-link absolute bottom-4 left-4 inline-flex items-center gap-2">
+      <span className="absolute bottom-4 left-4 inline-flex items-center gap-2">
         {renderCardLinkContent(props)}
       </span>
     </BaseLink>
@@ -192,15 +192,15 @@ function renderCardLinkContent({
   baseDomain,
 }: NonNullable<CardProps['cta']>) {
   const isExternal = isExternalLink(href, baseDomain)
-  const textSpanElement = <span key="text">{text}</span>
+  const textElement = <span key="text">{text}</span>
 
   if (icon) {
-    return [<Icon key="custom-icon" component={icon} />, textSpanElement]
+    return [<Icon key="custom-icon" component={icon} />, textElement]
   }
 
   if (isExternal) {
-    return [textSpanElement, <Icon key="arrow" component={ArrowUpRight} />]
+    return [textElement, <Icon key="arrow" component={ArrowUpRight} />]
   }
 
-  return textSpanElement
+  return textElement
 }
