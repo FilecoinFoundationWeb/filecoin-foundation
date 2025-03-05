@@ -1,6 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
 
 import { PATHS } from '@/constants/paths'
 import { FFDW_URLS, SEO } from '@/constants/siteMetadata'
@@ -12,126 +11,87 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
+import { PageSection } from '@/components/PageSection'
 
 export default function Home() {
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
-      <section>
-        <PageHeader
-          isHomepage
-          title="A Better Web for Everyone"
-          image={graphicsData.homepage}
-          cta={{
-            href: PATHS.PROJECTS.path,
-            text: 'View Projects',
-          }}
-        />
-      </section>
+      <PageHeader
+        isHomepage
+        title="A Better Web for Everyone"
+        image={graphicsData.homepage}
+        cta={{
+          href: PATHS.PROJECTS.path,
+          text: 'View Projects',
+        }}
+      />
 
-      <section>
-        <span>About FFDW</span>
-        <h2>FFDW Exists to Help Build a Better Web</h2>
-        <p>
-          Filecoin Foundation for the Decentralized Web (FFDW) is the sister
-          nonprofit of Filecoin Foundation. FFDW is a 501(c)(3) nonprofit
-          committed to preserving humanity’s most important information and
-          supporting the development and adoption of decentralized technologies.
-          While Filecoin Foundation stewards the Filecoin network’s future, FFDW
-          promotes the broader development of the decentralized web (DWeb).
-        </p>
-        <p>
-          FFDW’s work includes supporting open source software and protocols
-          that safeguard critical data from centralized control and single
-          points of failure. FFDW also empowers institutions to preserve
-          vulnerable information by leveraging the resilience of decentralized
-          storage.
-        </p>
-        <InternalTextLink href={PATHS.ABOUT.path}>
-          More About FFDW
-        </InternalTextLink>
-      </section>
+      <PageSection
+        kicker="About FFDW"
+        title="FFDW Exists to Help Build a Better Web"
+        description={[
+          'Filecoin Foundation for the Decentralized Web (FFDW) is the sister nonprofit of Filecoin Foundation. FFDW is a 501(c)(3) nonprofit committed to preserving humanity’s most important information and supporting the development and adoption of decentralized technologies. While Filecoin Foundation stewards the Filecoin network’s future, FFDW promotes the broader development of the decentralized web (DWeb).',
+          'FFDW’s work includes supporting open source software and protocols that safeguard critical data from centralized control and single points of failure. FFDW also empowers institutions to preserve vulnerable information by leveraging the resilience of decentralized storage.',
+        ]}
+        cta={{
+          href: PATHS.ABOUT.path,
+          text: 'More About FFDW',
+        }}
+      />
 
-      <section>
-        <span>Featured Projects</span>
-        <h2>Building Decentralized Solutions for Real-World Impact</h2>
-        <div>
-          {[1, 2, 3].map((i) => (
-            <div key={i}>
-              <h3>Title</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do...
-              </p>
-            </div>
-          ))}
-        </div>
-        <InternalTextLink href={PATHS.PROJECTS.path}>
-          View All Projects
-        </InternalTextLink>
-      </section>
+      <PageSection
+        isCentered
+        kicker="Featured Projects"
+        title="Building Decentralized Solutions for Real-World Impact"
+        cta={{
+          href: PATHS.PROJECTS.path,
+          text: 'View All Projects',
+          isButton: true,
+        }}
+      >
+        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+      </PageSection>
 
-      <section>
-        <span>Learning Resources</span>
-        <h2>Discover the Power of Decentralization</h2>
-        <p>
-          Learn how decentralized technologies are creating a better future for
-          a better web. Explore educational content, research papers, tutorials,
-          interactive content, and more resources from FFDW and beyond.
-        </p>
+      <PageSection
+        kicker="Learning Resources"
+        title="Discover the Power of Decentralization"
+        description={[
+          'Learn how decentralized technologies are creating a better future for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
+        ]}
+        cta={{
+          href: PATHS.LEARNING_RESOURCES.path,
+          text: 'View All Learning Resources',
+        }}
+      >
+        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+      </PageSection>
 
-        <div>
-          <div>
-            <h3>Use Cases</h3>
-            <InternalTextLink href="#">Explore</InternalTextLink>
-          </div>
-          <div>
-            <h3>Interactive Tutorials</h3>
-            <InternalTextLink href="#">Explore</InternalTextLink>
-          </div>
-          <div>
-            <h3>Videos</h3>
-            <InternalTextLink href="#">Explore</InternalTextLink>
-          </div>
-        </div>
-        <InternalTextLink href={PATHS.LEARNING_RESOURCES.path}>
-          View All Learning Resources
-        </InternalTextLink>
-      </section>
+      <PageSection
+        kicker="FFDW Digest"
+        title="Decentralization and Why it Matters"
+        image={graphicsData.homepage}
+        description={[
+          'The DWeb Digest is an online magazine featuring articles from industry experts who teach people from newbies clearly to pique and satisfy their high digital ambition while to digital insights and learnings for digital future developers to build up the community inside DWeb to create a decentralized future.',
+        ]}
+        cta={{
+          href: PATHS.DIGEST.path,
+          text: 'Read FFDW Digest',
+        }}
+      />
 
-      <section>
-        <span>FFDW Digest</span>
-        <h2>Decentralization and Why it Matters</h2>
-        <p>
-          The DWeb Digest is an online magazine featuring articles from industry
-          experts who teach people from newbies clearly to pique and satisfy
-          their high digital ambition while to digital insights and learnings
-          for digital future developers to build up the community inside DWeb to
-          create a decentralized future.
-        </p>
-        <InternalTextLink href={PATHS.DIGEST.path}>
-          Read FFDW Digest
-        </InternalTextLink>
-      </section>
-
-      <section>
-        <span>Latest News From FFDW</span>
-        <h2>Updates from FFDW and DWeb Community</h2>
-        <div>
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i}>
-              <span>New</span>
-              <h3>Title</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do...
-              </p>
-              <InternalTextLink href="#">Read more</InternalTextLink>
-            </div>
-          ))}
-        </div>
-        <InternalTextLink href={PATHS.BLOG.path}>View All</InternalTextLink>
-      </section>
+      <PageSection
+        isCentered
+        kicker="Latest News"
+        title="Updates from FFDW and DWeb Community"
+        cta={{
+          href: PATHS.BLOG.path,
+          text: 'View All',
+          isButton: true,
+        }}
+      >
+        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+      </PageSection>
 
       <CTASection
         kicker="Get Involved"
