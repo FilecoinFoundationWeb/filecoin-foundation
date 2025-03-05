@@ -11,23 +11,15 @@ import type { Route } from 'next'
 const HOME_PATH = '/'
 const HOME_LABEL = 'Home'
 
-const gapMap = {
-  small: 'gap-1.5',
-  default: 'gap-2',
-  large: 'gap-2.5',
-}
+const breadcrumbGap = 'gap-2'
 
-type BreadCrumbsProps = {
-  gap?: keyof typeof gapMap
-}
-
-export function BreadCrumbs({ gap = 'default' }: BreadCrumbsProps) {
+export function BreadCrumbs() {
   const pathname = usePathname()
   const pathNames = ['/'].concat(pathname.split('/').filter(Boolean))
 
   return (
     <nav aria-label="breadcrumbs">
-      <ol className={clsx(gapMap[gap], 'inline-flex items-center')}>
+      <ol className={clsx(breadcrumbGap, 'inline-flex items-center')}>
         {pathNames.map((path, index) => {
           const isRoot = index === 0
 
@@ -41,7 +33,7 @@ export function BreadCrumbs({ gap = 'default' }: BreadCrumbsProps) {
           return (
             <li
               key={href}
-              className={clsx(gapMap[gap], 'inline-flex items-center')}
+              className={clsx(breadcrumbGap, 'inline-flex items-center')}
             >
               {!isRoot && (
                 <Icon
