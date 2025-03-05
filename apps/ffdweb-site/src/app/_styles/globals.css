@@ -231,4 +231,9 @@
   .slide-over-panel {
     @apply bg-neutral-950;
   }
+
+  /* META */
+  .meta {
+    @apply text-neutral-50;
+  }
 }
