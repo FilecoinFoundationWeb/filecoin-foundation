@@ -248,4 +248,9 @@
   .card-link {
     @apply text-brand-300;
   }
+
+  /* META */
+  .meta {
+    @apply text-brand-300;
+  }
 }
