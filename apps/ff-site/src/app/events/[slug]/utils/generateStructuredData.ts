@@ -1,3 +1,4 @@
+import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type {
   Event as EventSchema,
   Place,
@@ -8,7 +9,6 @@ import type {
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 import {
-  SCHEMA_CONTEXT_URL,
   SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL,
   SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL,
 } from '@/constants/structuredDataConstants'

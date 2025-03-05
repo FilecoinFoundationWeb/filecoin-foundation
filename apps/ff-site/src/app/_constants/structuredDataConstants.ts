@@ -1,3 +1,4 @@
+import { SCHEMA_CONTEXT_URL } from '@filecoin-foundation/utils/constants/structuredDataConstants'
 import type { Organization, WithContext } from 'schema-dts'
 
 import {
@@ -15,7 +16,6 @@ const { header: aboutPageHeader } =
 
 const { social, email } = FILECOIN_FOUNDATION_URLS
 
-export const SCHEMA_CONTEXT_URL = 'https://schema.org'
 export const SCHEMA_EVENT_ATTENDANCE_MODE_ONLINE_URL =
   'https://schema.org/OnlineEventAttendanceMode'
 export const SCHEMA_EVENT_ATTENDANCE_MODE_OFFLINE_URL =

@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { createMetadata } from '@/utils/createMetadata'
 
@@ -6,6 +7,7 @@ import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { PageHeader } from './components/PageHeader'
 import FAQsMarkdown from './faqs.md'
+import { generateStructuredData } from './utils/generateStructuredData'
 
 const { body } = FAQsMarkdown
 
@@ -18,6 +20,8 @@ const SEO = {
 export default function FAQs() {
   return (
     <PageLayout gap="large">
+      <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+
       <PageHeader
         kicker="FAQs"
         title="Need help with something?"

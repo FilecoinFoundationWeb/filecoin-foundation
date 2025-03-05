@@ -1,6 +1,6 @@
 import { Archivo } from 'next/font/google'
 
-import { SiteLayout as AppSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
+import { SiteLayout as SharedSiteLayout } from '@filecoin-foundation/ui/SiteLayout'
 
 import { Footer } from '@/components/Footer'
 import { Navigation } from '@/components/Navigation/Navigation'
@@ -16,8 +16,8 @@ type SiteLayoutProps = {
 
 export function SiteLayout({ children }: SiteLayoutProps) {
   return (
-    <AppSiteLayout font={archivo} Navigation={Navigation} Footer={Footer}>
+    <SharedSiteLayout font={archivo} Navigation={Navigation} Footer={Footer}>
       {children}
-    </AppSiteLayout>
+    </SharedSiteLayout>
   )
 }
