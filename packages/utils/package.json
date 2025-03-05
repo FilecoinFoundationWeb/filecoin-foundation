@@ -29,7 +29,8 @@
   "devDependencies": {
     "typescript": "^5",
     "@filecoin-foundation/eslint-config": "*",
-    "@filecoin-foundation/typescript-config": "*"
+    "@filecoin-foundation/typescript-config": "*",
+    "@filecoin-foundation/tailwind-config": "*"
   },
   "peerDependencies": {
     "camelcase-keys": "^9.1.3",

@@ -1,0 +1,5 @@
+{
+  "extends": "@filecoin-foundation/typescript-config/base.json",
+  "include": ["tailwind.config.ts"],
+  "exclude": ["node_modules"]
+}
