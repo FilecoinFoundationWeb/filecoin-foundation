@@ -33,7 +33,6 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*",
-    "@filecoin-foundation/tailwind-config": "*",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",

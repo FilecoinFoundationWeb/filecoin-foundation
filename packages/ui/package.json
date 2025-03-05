@@ -49,7 +49,6 @@
   "devDependencies": {
     "@filecoin-foundation/eslint-config": "*",
     "@filecoin-foundation/typescript-config": "*",
-    "@filecoin-foundation/tailwind-config": "*",
     "frontmatter-markdown-loader": "^3.7.0"
   },
   "peerDependencies": {

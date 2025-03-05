@@ -15,8 +15,7 @@
   "devDependencies": {
     "typescript": "^5",
     "@filecoin-foundation/eslint-config": "*",
-    "@filecoin-foundation/typescript-config": "*",
-    "@filecoin-foundation/tailwind-config": "*"
+    "@filecoin-foundation/typescript-config": "*"
   },
   "peerDependencies": {
     "next": "15.1.6",
