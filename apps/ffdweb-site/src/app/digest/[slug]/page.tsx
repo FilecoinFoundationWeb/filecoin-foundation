@@ -10,7 +10,7 @@ import { createMetadata } from '@/utils/createMetadata'
 // import { MarkdownContent } from '@/components/MarkdownContent'
 
 export default function DigestArticle() {
-  return <PageLayout gap={32}>Digest Article</PageLayout>
+  return <PageLayout gap="large">Digest Article</PageLayout>
   // return (
   //   <ArticleLayout>
   //     <DigestArticleHeader

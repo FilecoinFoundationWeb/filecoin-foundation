@@ -5,7 +5,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 export default function Project() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <header>
         <h1></h1>
       </header>

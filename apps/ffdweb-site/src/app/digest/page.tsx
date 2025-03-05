@@ -11,7 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function Digest() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <PageHeader
         kicker="Digest"
         title="The Go-to Publication for Exploring DWeb Ideas and Principles"

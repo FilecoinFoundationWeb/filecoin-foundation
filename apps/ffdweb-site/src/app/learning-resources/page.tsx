@@ -11,7 +11,7 @@ import { PageHeader } from '@/components/PageHeader'
 
 export default function LearningResources() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <PageHeader
         kicker="Learning Resources"
         title="Explore Decentralized Tech with Content from FFDW and Beyond"

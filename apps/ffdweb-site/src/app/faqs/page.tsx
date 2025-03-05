@@ -17,7 +17,7 @@ const SEO = {
 
 export default function FAQs() {
   return (
-    <PageLayout gap={32}>
+    <PageLayout gap="large">
       <PageHeader
         kicker="FAQs"
         heading="Need help with something?"
