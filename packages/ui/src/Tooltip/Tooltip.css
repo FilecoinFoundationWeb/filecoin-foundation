@@ -1,4 +1,4 @@
-@reference '../../_styles/globals.css';
+@reference 'tailwindcss';
 
 @keyframes slide-up-and-fade {
   from {
@@ -70,9 +70,9 @@
 }
 
 .tooltip-content {
-  @apply max-w-xs rounded-lg bg-brand-200 px-4 py-3 text-sm leading-tight text-brand-800 focus-visible:outline-none;
+  @apply max-w-xs rounded-lg bg-[var(--tooltip-background-color)] px-4 py-3 text-sm leading-tight text-[var(--tooltip-color)] focus-visible:outline-none;
 }
 
 .tooltip-arrow {
-  @apply fill-brand-200;
+  @apply fill-[var(--tooltip-arrow-color)];
 }

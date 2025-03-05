@@ -3,6 +3,7 @@
 import { useState } from 'react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { Button } from '@headlessui/react'
 import { Link } from '@phosphor-icons/react/dist/ssr'
@@ -13,8 +14,6 @@ import { useCopyToClipboard } from 'usehooks-ts'
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@/constants/notificationDialogDuration'
 
 import { NotificationDialog } from '@/components/NotificationDialog/NotificationDialog'
-import { Tooltip } from '@/components/Tooltip/Tooltip'
-
 type CopyToClipboardProps = {
   text: string
   notificationTitle: string
