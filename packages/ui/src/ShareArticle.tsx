@@ -28,11 +28,11 @@ export function ShareArticle({
 }: ShareArticleProps) {
   const articleUrl = `${baseUrl}${path}`
 
-  const socialLinksWithIcons = generateShareArticleLinks(
-    articleUrl,
-    articleTitle,
-    baseUrl,
-  )
+  const socialLinksWithIcons = generateShareArticleLinks({
+    URL: articleUrl,
+    title: articleTitle,
+    BASE_URL: baseUrl,
+  })
 
   return (
     <div className="space-y-3">
