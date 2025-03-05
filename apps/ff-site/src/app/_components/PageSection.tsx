@@ -1,4 +1,4 @@
-import Image, { type StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 import {
   DescriptionText,
@@ -6,6 +6,7 @@ import {
 } from '@filecoin-foundation/ui/DescriptionText'
 import { Heading } from '@filecoin-foundation/ui/Heading'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageType'
 import { clsx } from 'clsx'
 
 import {
@@ -17,16 +18,11 @@ import {
   type SectionDividerProps,
 } from '@/components/SectionDivider'
 
-type PageSectionImageProps = {
-  data: StaticImageData
-  alt: string
-}
-
 type PageSectionProps = {
   kicker: SectionDividerProps['title']
   title: string
   description?: DescriptionTextType
-  image?: PageSectionImageProps
+  image?: StaticImageProps
   cta?: CTAButtonGroupProps['cta']
   children?: React.ReactNode
 }
