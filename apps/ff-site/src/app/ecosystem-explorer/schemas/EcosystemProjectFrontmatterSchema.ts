@@ -1,6 +1,5 @@
-import { DynamicBaseDataSchema } from '@filecoin-foundation/ui/schemas/DynamicDataBaseSchema'
+import { DynamicBaseDataSchema } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
 import { z } from 'zod'
-
 
 import { CategorySchema } from './CategorySchemas'
 import { ProjectTechSchema } from './ProjectTechSchema'
