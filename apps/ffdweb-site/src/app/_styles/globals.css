@@ -269,4 +269,25 @@
   .meta {
     @apply text-neutral-50;
   }
+
+  /* KEY MEMBER CARD */
+  .key-member-card {
+    @apply border-brand-primary-700 rounded-none border p-0.5;
+
+    & .key-member-card-image {
+      @apply rounded-none;
+    }
+
+    & .key-member-card-name {
+      @apply text-neutral-50;
+    }
+
+    & .key-member-card-title {
+      @apply text-neutral-50;
+    }
+
+    & .key-member-card-link {
+      @apply text-brand-primary-300;
+    }
+  }
 }

@@ -1,3 +1,4 @@
+import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
@@ -9,8 +10,11 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
-import { PageSection } from '@/components/PageSection'
 
+import { CardGrid } from './_components/CardGrid'
+import { DirectorGrid } from './_components/DirectorGrid'
+import { PageSection } from './_components/PageSection'
+import { boardMembers } from './_constants/boardMembers'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const SEO = {
@@ -116,32 +120,26 @@ export default function About() {
               the reliability of decentralized storage.
             </p>
           </div>
-        </div>
+        </CardGrid>
       </PageSection>
 
-      <PageSection kicker="Board of Directors" title="FFDW Board of Directors">
-        <div>
-          <div>
-            <h3>Marta Belcher</h3>
-            <p>President & Chair, FFDW</p>
-          </div>
-          <div>
-            <h3>Brian Behlendorf</h3>
-            <p>Chief AI Strategist, Linux Foundation</p>
-          </div>
-          <div>
-            <h3>Sheila Warren</h3>
-            <p>Chief Executive Officer, Crypto Council for Innovation</p>
-          </div>
-          <div>
-            <h3>Rainey Reitman</h3>
-            <p>Board President, Freedom of the Press Foundation</p>
-          </div>
-          <div>
-            <h3>Kristin Smith</h3>
-            <p>Executive Director, Blockchain Association</p>
-          </div>
-        </div>
+      <PageSection
+        centerText
+        kicker="Board of Directors"
+        title="FFDW Board of Directors"
+      >
+        <DirectorGrid>
+          {boardMembers.map(({ name, title, company, linkedin, image }) => (
+            <KeyMemberCard
+              key={name}
+              name={name}
+              title={title}
+              company={company}
+              linkedin={linkedin}
+              image={image}
+            />
+          ))}
+        </DirectorGrid>
       </PageSection>
 
       <CTASection
