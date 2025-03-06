@@ -2,8 +2,7 @@ import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-
-import { type SlugParams } from '@/types/paramsTypes'
+import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
