@@ -10,9 +10,9 @@ image:
 authors:
   - first-name: Kurt
     last-name: Opsahl
-    company: ""
-    # image:
-    #   src: /assets/images/dwd-profile-05.png
+    company: "Filecoin Foundation"
+    image:
+      src: /assets/images/dwd-profile-05.png
     # bio: Kurt Opsahl works to help build the legal and policy space in which the decentralized web can thrive.
 seo:
   description: A more distributed web requires a global recognition that code is
