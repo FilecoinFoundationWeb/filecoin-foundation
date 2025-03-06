@@ -9,7 +9,7 @@ description: >-
   trust in the most sensitive digital records of our human history.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423816edebc4ceb27492e7_starling-lab-image.jpeg
   alt: null
 updated-on: "2023-04-21T07:18:15.412Z"

@@ -7,7 +7,7 @@ description: >-
   A Q&A series with an FFDW project partner focusing on different aspects of the
   building blocks of the decentralized web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383eef619d076eb5472e_0228-guardian-qa.png
   alt: null
 updated-on: "2023-04-21T07:16:14.499Z"

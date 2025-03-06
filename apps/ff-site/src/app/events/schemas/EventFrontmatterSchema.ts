@@ -1,9 +1,8 @@
+import { DynamicBaseDataSchema } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
+import { createEnumSchema } from '@filecoin-foundation/utils/zodUtils'
 import { z } from 'zod'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { createEnumSchema } from '@/utils/zodUtils'
-
-import { DynamicBaseDataSchema } from '@/schemas/DynamicDataBaseSchema'
 
 import { EventBaseFrontmatterSchema } from './EventBaseFrontmatterSchema'
 import { LocationSchema } from './LocationSchema'

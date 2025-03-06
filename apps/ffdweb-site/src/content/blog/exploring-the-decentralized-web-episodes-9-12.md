@@ -8,7 +8,7 @@ description: >-
   community governance and the stripping of web content’s value.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423824686a077ccd90a61e_0-ghsro14ivrabstg6.png
   alt: null
 updated-on: "2023-04-21T07:18:20.707Z"

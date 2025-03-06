@@ -10,7 +10,7 @@ description: >-
   informational gap between technologists and policymakers in Congress.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png
   alt: null
 updated-on: "2023-04-21T07:18:29.556Z"

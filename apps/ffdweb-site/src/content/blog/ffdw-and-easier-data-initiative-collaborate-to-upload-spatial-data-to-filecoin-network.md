@@ -13,7 +13,7 @@ description: >-
   geospatial datasets are accessible by research organizations and the general
   public.
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423827686a07ac0f90ac2f_1005-ffdw-edi.png
   alt: null
 updated-on: "2023-04-21T07:15:52.152Z"

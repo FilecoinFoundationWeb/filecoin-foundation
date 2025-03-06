@@ -1,4 +1,5 @@
-import { CardGrid } from '@/components/CardGrid'
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+
 import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageSection } from '@/components/PageSection'
 

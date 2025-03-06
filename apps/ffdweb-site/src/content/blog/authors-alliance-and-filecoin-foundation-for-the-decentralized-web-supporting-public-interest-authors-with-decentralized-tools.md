@@ -11,7 +11,7 @@ description: "This is a guest post from FFDW project partner, Authors
   interests of authors who want to serve the public good by sharing their
   creations broadly."
 image:
-  url: /assets/images/021024-guest-authorsalliance.png
+  src: /assets/images/021024-guest-authorsalliance.png
 date: 2024-05-14T16:49:15.518Z
 seo:
   noindex: false

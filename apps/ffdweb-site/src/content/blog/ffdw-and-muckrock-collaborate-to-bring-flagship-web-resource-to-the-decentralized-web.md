@@ -10,7 +10,7 @@ description: >-
   tools to keep their government transparent and accountable.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382b3db3a05fc766ec87_1-jduzu4kyyygqfyan9dl6da.png
   alt: null
 updated-on: "2023-04-21T07:18:23.253Z"

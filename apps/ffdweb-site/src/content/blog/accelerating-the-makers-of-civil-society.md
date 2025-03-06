@@ -5,7 +5,7 @@ updated-on: 2023-05-18T10:01:00.000Z
 published-on: 2023-05-18T10:01:00.000Z
 post-date: 2023-05-18T10:01:00.000Z
 image:
-  url: /assets/images/051723-techsoup.png
+  src: /assets/images/051723-techsoup.png
 date: 2023-06-22T10:01:01.367Z
 seo:
   noindex: false

@@ -12,7 +12,7 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) is proud to
   photographs, videos, and written materials – to safeguard the cultural
   heritage of the Rohingya community."
 image:
-  url: /assets/images/091924-rohingyaproject.png
+  src: /assets/images/091924-rohingyaproject.png
 date: 2024-10-08T11:12:16.114Z
 seo:
   noindex: false

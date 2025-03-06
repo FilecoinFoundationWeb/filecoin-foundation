@@ -3,25 +3,19 @@ title: Editor’s Letter
 created-on: 2023-09-06T17:57:51.502Z
 updated-on: 2023-09-06T17:57:51.625Z
 published-on: 2023-09-06T17:57:51.681Z
-issue: 1
-: 1
+issue-number: "1"
+article-number: 1
 image:
-  url: /assets/images/DWD-Illustration-01.png
-author: Mike Masnick
-author-profile:
-  url: /assets/images/dwd-profile-01.png
-author-bio: Mike Masnick is the founder & editor of the popular Techdirt blog
-  as well as the founder of the Silicon Valley think tank, the Copia
-  Institute.  In both roles, he explores the intersection of technology,
-  innovation, policy, law, civil liberties, and economics.
-tags: digest
-date: 2023-09-06T17:57:51.721Z
+  src: /assets/images/DWD-Illustration-01.png
+authors:
+  - first-name: Mike
+    last-name: Masnick
+    company: Techdirt, Copia Institute
+    # image:
+    #   src: /assets/images/dwd-profile-01.png
+    # bio: Mike Masnick is the founder & editor of the popular Techdirt blog as well as the founder of the Silicon Valley think tank, the Copia Institute. In both roles, he explores the intersection of technology, innovation, policy, law, civil liberties, and economics.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: Editor’s Letter"
-  og:image: /assets/images/DWD-Illustration-01.png
+  description: ""
 ---
 
 I am thrilled to have had a chance to edit and shape this special magazine on decentralization for the Filecoin Foundation for the Decentralized Web. For many of us, increasing decentralization has always been an important focus and goal, but it hasn’t always been clear to others why decentralization matters so much, or even what should be decentralized. The collection of articles in this magazine will help provide some perspective on these questions.

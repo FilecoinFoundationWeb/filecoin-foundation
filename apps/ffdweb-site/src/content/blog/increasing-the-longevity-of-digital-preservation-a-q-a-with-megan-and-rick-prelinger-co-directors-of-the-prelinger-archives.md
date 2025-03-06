@@ -7,7 +7,7 @@ published-on: 2024-09-06T15:14:39.924Z
 post-date: 2024-09-06T15:14:39.931Z
 featured: false
 image:
-  url: /assets/images/09262024-qa-prelinger.png
+  src: /assets/images/09262024-qa-prelinger.png
 date: 2024-09-06T15:14:39.937Z
 seo:
   noindex: false

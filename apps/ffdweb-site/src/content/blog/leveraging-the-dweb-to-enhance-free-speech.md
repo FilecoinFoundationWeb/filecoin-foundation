@@ -9,7 +9,7 @@ description: >-
   speech for journalists.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png
   alt: null
 updated-on: "2023-04-21T07:18:33.376Z"

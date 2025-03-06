@@ -254,7 +254,7 @@
   }
 
   .card-link {
-    @apply text-brand-300;
+    @apply rounded-lg text-brand-300;
   }
 
   /* META */

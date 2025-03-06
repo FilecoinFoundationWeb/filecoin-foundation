@@ -7,7 +7,7 @@ description: >-
   editor of the Techdirt blog, about decentralization.
 author: "Mike Masnick"
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381fb068b055975a464f_013023-ffdw-mikemasnick.png
   alt: null
 updated-on: "2023-04-21T07:15:43.794Z"

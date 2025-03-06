@@ -1,4 +1,4 @@
-import { createEnumSchema } from '@/utils/zodUtils'
+import { createEnumSchema } from '@filecoin-foundation/utils/zodUtils'
 
 import { getEcosystemCMSCategories } from '../utils/getEcosystemCMSCategories'
 

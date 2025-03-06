@@ -3,27 +3,19 @@ title: "Terminal Values: Cognitive Liberty"
 created-on: 2023-09-15T17:01:01.677Z
 updated-on: 2023-09-15T17:01:01.686Z
 published-on: 2023-09-15T17:01:01.693Z
-issue: 1
-: 2
-description: Your inalienable right to live rent-free inside your own head
+issue-number: "1"
+article-number: 2
 image:
-  url: /assets/images/DWD-Illustration-02.png
-author: Danny O'Brien
-author-profile:
-  url: /assets/images/dwd-profile-02.png
-author-bio: Danny O'Brien is Senior Fellow and DWeb Strategy at Filecoin
-  Foundation and Filecoin Foundation for the Decentralized Web. He has been a
-  tech journalist, developer and defender of online free speech, privacy and an
-  open internet for more than 20 years, including over a decade's activism at
-  the Electronic Frontier Foundation.
-tags: digest
-date: 2023-09-15T17:01:01.699Z
+  src: /assets/images/DWD-Illustration-02.png
+authors:
+  - first-name: Danny
+    last-name: O'Brien
+    company: Filecoin Foundation for the Decentralized Web
+    # image:
+    #   src: /assets/images/dwd-profile-02.png
+    # bio: "Danny O'Brien is Senior Fellow and DWeb Strategy at Filecoin and tech journalist, developer and defender of online free speech, privacy and an open internet for more than 20 years, including over a decade's activism at the Electronic Frontier Foundation."
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: Terminal Values: Cognitive Liberty"
-  og:image: /assets/images/DWD-Illustration-02.png
+  description: Your inalienable right to live rent-free inside your own head.
 ---
 
 If you build and market new technologies to a global audience, you may occasionally reflect on how the use of those technologies align with your personal values and our collective human rights. Or you may not. Be warned, however: avoiding the topic entirely can lead to some uncomfortable situations down the line.

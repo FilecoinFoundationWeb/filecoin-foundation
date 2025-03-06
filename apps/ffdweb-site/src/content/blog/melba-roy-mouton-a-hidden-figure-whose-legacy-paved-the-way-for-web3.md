@@ -9,7 +9,7 @@ description: >-
   future generations.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
   alt: null
 updated-on: "2023-04-21T07:18:34.828Z"

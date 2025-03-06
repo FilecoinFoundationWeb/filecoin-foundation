@@ -11,7 +11,7 @@ description: "Starling Lab develops technology and protocols for digital
   history, and technology. The purpose of its work is to establish trust in
   digital assets such as photographs, websites, audio, and video. "
 image:
-  url: /assets/images/081123-starling-1.png
+  src: /assets/images/081123-starling-1.png
 date: 2024-03-06T16:46:52.633Z
 seo:
   noindex: false

@@ -11,7 +11,7 @@ description: >-
   Thomas's latest exhibition, Another World, will debut at the ICA on October
   11.
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383fef619d8564b54739_ckt-ffdw-ica.png
   alt: null
 updated-on: "2023-04-21T07:18:36.074Z"

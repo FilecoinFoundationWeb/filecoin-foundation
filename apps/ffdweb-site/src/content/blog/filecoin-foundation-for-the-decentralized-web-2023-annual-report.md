@@ -10,7 +10,7 @@ description: In this report, you’ll see the progress achieved by FFDW and our
   impact in a moment of growing interest and appreciation for decentralized
   values.
 image:
-  url: /assets/images/022624-ffdw-annualreport.png
+  src: /assets/images/022624-ffdw-annualreport.png
 date: 2024-02-27T14:38:33.565Z
 seo:
   noindex: false

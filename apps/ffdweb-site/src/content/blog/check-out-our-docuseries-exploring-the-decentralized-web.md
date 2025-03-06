@@ -10,7 +10,7 @@ description: >-
   users and organizations.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381d1fe00b261574bc1d_0-w2tmph7o7z-pisg8-2.png
   alt: null
 updated-on: "2023-04-21T07:18:17.975Z"
