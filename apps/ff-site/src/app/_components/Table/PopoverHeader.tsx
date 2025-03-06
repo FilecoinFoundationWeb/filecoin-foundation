@@ -13,15 +13,15 @@ type TableHeaderWithPopoverProps = {
   description: PopoverProps['description']
 }
 
-const TOUCH_TARGET: TouchTarget = {
+const TOUCH_TARGET = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2',
-}
+} as const satisfies TouchTarget
 
-const TOUCH_TARGET_ICON: TouchTarget & { visibleElementSize: number } = {
+const TOUCH_TARGET_ICON = {
   visibleElementSize: 20,
   touchAreaPadding: 'p-1.5',
-}
+} as const satisfies TouchTarget
 
 export function PopoverHeader({
   title,
