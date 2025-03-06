@@ -12,6 +12,7 @@
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./dateUtils": "./src/dateUtils.ts",
     "./fileUtils": "./src/fileUtils.ts",
+    "./getMarkdownData": "./src/getMarkdownData.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",
