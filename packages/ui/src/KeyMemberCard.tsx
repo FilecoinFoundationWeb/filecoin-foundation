@@ -31,7 +31,7 @@ export function KeyMemberCard({
       <KeyMemberImage image={image} name={name} />
 
       <div className="m-3 grow">
-        <Heading tag="h3" variant="lg">
+        <Heading tag="h3" variant="lg" className="key-member-card-name">
           {name}
         </Heading>
 
@@ -62,7 +62,7 @@ function KeyMemberImage({
     alt: `Photo of ${name}`,
     quality: 100,
     sizes: '150px',
-    className: 'rounded-sm object-cover',
+    className: 'key-member-card-image object-cover',
   }
 
   const containerClass = 'aspect-3/4 w-32 shrink-0'
