@@ -1,9 +1,9 @@
+import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 import { isBefore } from 'date-fns'
 
 import { PATHS } from '@/constants/paths'
 
 import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
-import { getMarkdownData } from '@/utils/getMarkdownData'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
 import { EventFrontmatterSchema } from '../schemas/EventFrontmatterSchema'
