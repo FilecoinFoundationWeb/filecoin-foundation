@@ -1,6 +1,5 @@
+import { ImagePropsSchema } from '@filecoin-foundation/utils/schemas/ImagePropsSchema'
 import { z } from 'zod'
-
-import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 
 const sponsorSchema = z.object({
   name: z.string(),

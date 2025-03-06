@@ -1,7 +1,7 @@
+import type { DynamicBaseData } from '@filecoin-foundation/utils/schemas/DynamicDataBaseSchema'
+
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
-
-import type { DynamicBaseData } from '@/schemas/DynamicDataBaseSchema'
 
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
 import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'

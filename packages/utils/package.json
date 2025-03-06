@@ -17,6 +17,7 @@
     "./urlUtils": "./src/urlUtils.ts",
     "./zodUtils": "./src/zodUtils.ts",
     "./constants/*": "./src/constants/*.ts",
+    "./schemas/*": "./src/schemas/*.ts",
     "./types/*": "./src/types/*.ts"
   },
   "scripts": {

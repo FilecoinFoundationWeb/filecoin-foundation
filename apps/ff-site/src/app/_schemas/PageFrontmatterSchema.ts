@@ -1,7 +1,7 @@
+import { SeoMetadataSchema } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
 import { z } from 'zod'
 
 import { MarkdownEntryPathSchema } from './MarkdownEntryPathSchema'
-import { SeoMetadataSchema } from './SeoMetadataSchema'
 
 const TitleSchema = z.string()
 const DescriptionSchema = z.string().or(z.array(z.string()))
