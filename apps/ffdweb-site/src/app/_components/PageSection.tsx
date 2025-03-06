@@ -49,33 +49,31 @@ export function PageSection({
     >
       <div
         className={clsx('', {
-          'grid grid-cols-1 gap-20 lg:grid-cols-2 lg:gap-6': image,
+          'grid grid-cols-1 gap-20 lg:grid-cols-2': image,
         })}
       >
-        <div
-          className={clsx('flex flex-col gap-8', {
-            'max-w-xl text-center': isCentered,
-          })}
-        >
-          <span className="inline-block font-bold text-neutral-200">
-            {kicker}
-          </span>
+        <div className="grid grid-cols-1 gap-16">
+          <div
+            className={clsx('flex flex-col gap-8', {
+              'max-w-xl text-center': isCentered,
+            })}
+          >
+            <span className="inline-block font-bold text-neutral-200">
+              {kicker}
+            </span>
 
-          <Heading tag="h2" variant="3xl-medium">
-            {title}
-          </Heading>
+            <Heading tag="h2" variant="3xl-medium">
+              {title}
+            </Heading>
 
-          {description && (
-            <DescriptionText className="text-lg">{description}</DescriptionText>
-          )}
-
-          {cta && image && (
-            <div className="mt-8">
-              <CTAButton cta={cta} baseDomain={BASE_DOMAIN} />
-            </div>
-          )}
+            {description && (
+              <DescriptionText className="text-lg">
+                {description}
+              </DescriptionText>
+            )}
+          </div>
+          {cta && image && <CTAButton cta={cta} baseDomain={BASE_DOMAIN} />}
         </div>
-
         {image && (
           <Image
             src={image.data || graphicsData.homepage}
