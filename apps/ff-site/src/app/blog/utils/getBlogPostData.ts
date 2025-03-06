@@ -1,8 +1,7 @@
+import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
 import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
 import { PATHS } from '@/constants/paths'
-
-import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
 
 import { BlogPostFrontmatterSchema } from '../schemas/BlogPostFrontmatterSchema'
 
