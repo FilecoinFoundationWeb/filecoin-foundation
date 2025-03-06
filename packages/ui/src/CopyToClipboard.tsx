@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 import { Icon } from '@filecoin-foundation/ui/Icon'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog/NotificationDialog'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
 import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { Button } from '@headlessui/react'

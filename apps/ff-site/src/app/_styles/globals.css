@@ -266,4 +266,17 @@
   .copy-to-clipboard-button {
     @apply hover:text-brand-400;
   }
+
+  /* NOTIFICATION DIALOG */
+  .notification {
+    @apply rounded-lg border border-brand-100/20 bg-brand-800;
+
+    & .notification-title {
+      @apply text-brand-100;
+    }
+
+    & .notification-close-button {
+      @apply rounded-md text-brand-200 hover:text-brand-400;
+    }
+  }
 }

@@ -29,7 +29,7 @@
     "./IconButton": "./src/IconButton.tsx",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
-    "./NotificationDialog/*": "./src/NotificationDialog/*.tsx",
+    "./NotificationDialog": "./src/NotificationDialog/NotificationDialog.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",

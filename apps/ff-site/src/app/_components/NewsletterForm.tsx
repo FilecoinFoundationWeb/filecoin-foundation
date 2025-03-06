@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import { Button } from '@filecoin-foundation/ui/Button'
 import type { IconProps } from '@filecoin-foundation/ui/Icon'
-import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog/NotificationDialog'
+import { NotificationDialog } from '@filecoin-foundation/ui/NotificationDialog'
 import { NOTIFICATION_DIALOG_DURATION_MS } from '@filecoin-foundation/utils/constants/notificationDialogDuration'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { CheckCircle, XCircle } from '@phosphor-icons/react'
