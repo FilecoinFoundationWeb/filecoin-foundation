@@ -12,11 +12,11 @@ import { createMetadata } from '@/utils/createMetadata'
 import { CTALink } from '@/components/CTALink'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
+import { PageSection } from '@/components/PageSection'
 
 import { BoardMemberGrid } from './_components/BoardMemberGrid'
 import { IconCard } from './_components/IconCard'
 import { IconCardGrid } from './_components/IconCardGrid'
-import { PageSection } from './_components/PageSection'
 import { boardMembers } from './_constants/boardMembers'
 import { impactAreas } from './_constants/impactAreas'
 import { priorities } from './_constants/priorities'
@@ -69,12 +69,13 @@ export default function About() {
               description={description}
             />
           ))}
-          <CTALink href={PATHS.PROJECTS.path}>View all projects</CTALink>
         </IconCardGrid>
+
+        <CTALink href={PATHS.PROJECTS.path}>View all projects</CTALink>
       </PageSection>
 
       <PageSection
-        centerText
+        isCentered
         kicker="Board of Directors"
         title="FFDW Board of Directors"
       >

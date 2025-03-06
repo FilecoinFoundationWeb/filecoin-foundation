@@ -6,7 +6,7 @@ import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-type CTALinkProps = {
+export type CTALinkProps = {
   href: string
   children: string
 }
