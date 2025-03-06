@@ -26,6 +26,7 @@
     "./Heading": "./src/Heading.tsx",
     "./Icon": "./src/Icon.tsx",
     "./IconButton": "./src/IconButton.tsx",
+    "./KeyMemberCard": "./src/KeyMemberCard.tsx",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
