@@ -15,7 +15,7 @@ description: Artificial intelligence (AI) and decentralized technologies have
   catalyze economic expansion, embolden individuals across artistic and
   scientific domains, and potentially tackle formidable global challenges.
 image:
-  url: /assets/images/022124-sis.png
+  src: /assets/images/022124-sis.png
   alt: Social Impact Summit 2024
 date: 2024-02-22T18:09:50.583Z
 seo:

@@ -1,3 +1,4 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 
@@ -6,7 +7,6 @@ import { PATHS } from '@/constants/paths'
 import { graphicsData } from '@/data/graphicsData'
 
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 
 import type { EcosystemProject } from '@/ecosystem-explorer/types/ecosystemProjectType'
 

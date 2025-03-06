@@ -236,6 +236,35 @@
     @apply bg-neutral-950;
   }
 
+  /* CARD */
+  .card {
+    @apply bg-transparent;
+
+    &.card-border-lighter {
+      @apply border-brand-primary-500;
+    }
+
+    &.card-border-light {
+      @apply border-brand-primary-600;
+    }
+
+    &.card-border-base {
+      @apply border-brand-primary-700;
+    }
+
+    &.card-border-dark {
+      @apply border-brand-primary-800;
+    }
+  }
+
+  .card-image {
+    @apply px-0.5 pt-0.5;
+  }
+
+  .card-link {
+    @apply text-brand-primary-300;
+  }
+
   /* META */
   .meta {
     @apply text-neutral-50;

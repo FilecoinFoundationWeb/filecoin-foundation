@@ -11,7 +11,7 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) started
   intersections of arts and technology to incorporate the decentralized web into
   their creative practices. "
 image:
-  url: /assets/images/181023-grayarea.png
+  src: /assets/images/181023-grayarea.png
 date: 2023-10-18T19:13:30.399Z
 seo:
   noindex: false

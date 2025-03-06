@@ -10,7 +10,7 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) is the
   committed to preserving humanity’s most important information and supporting
   the development and adoption of decentralized technologies."
 image:
-  url: /assets/images/hero-ffdw.webp
+  src: /assets/images/hero-ffdw.webp
 date: 2025-01-29T16:21:20.314Z
 seo:
   noindex: false

@@ -8,7 +8,7 @@ description: >-
   this problem: how do we help newsrooms and leaders build trust in an age of
   growing misinformation?
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423821fcf3ec505f7f19bd_0202-muckrock-spotlight.png
   alt: null
 updated-on: "2023-04-21T07:15:45.476Z"

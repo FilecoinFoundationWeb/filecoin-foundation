@@ -1,4 +1,5 @@
-import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { extractSlugFromFilename } from '@filecoin-foundation/utils/fileUtils'
+
 import { findOrThrow } from '@/utils/findOrThrow'
 
 type WithSlug = {

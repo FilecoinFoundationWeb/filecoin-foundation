@@ -1,16 +1,16 @@
 'use server'
 
-import convertObjectKeysToCamelCase from 'camelcase-keys'
-import matter from 'gray-matter'
-import { ZodError, ZodObject, type ZodRawShape } from 'zod'
-
 import {
   getFilePath,
   handleFileNotFound,
   readFileContents,
   checkPathExists,
-} from '@/utils/fileUtils'
-import { logZodError } from '@/utils/zodUtils'
+} from '@filecoin-foundation/utils/fileUtils'
+import { logZodError } from '@filecoin-foundation/utils/zodUtils'
+import convertObjectKeysToCamelCase from 'camelcase-keys'
+import matter from 'gray-matter'
+import { ZodError, ZodObject, type ZodRawShape } from 'zod'
+
 
 type GetMarkdownDataArgs<T extends ZodRawShape> = {
   slug: string
