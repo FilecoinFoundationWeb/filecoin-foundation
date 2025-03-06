@@ -36,7 +36,7 @@ export function ShareArticle({
 
   return (
     <div className="space-y-3">
-      <p className="text-brand-300 font-bold capitalize">{sectionTitle}</p>
+      <p className="share-article-title font-bold capitalize">{sectionTitle}</p>
       <ul
         className={clsx(
           'flex flex-wrap items-center gap-6',
@@ -57,7 +57,7 @@ export function ShareArticle({
                 href={href}
                 rel="noopener noreferrer"
                 className={clsx(
-                  'hover:text-brand-400 focus:brand-outline',
+                  'share-article-tooltip focus:brand-outline',
                   TOUCH_TARGET.touchAreaPadding,
                 )}
               >

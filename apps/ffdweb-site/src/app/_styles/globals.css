@@ -297,6 +297,15 @@
 
     &.notification-close-button {
       @apply hover:text-brand-primary-300 hover:bg-brand-primary-800 text-neutral-100;
+      
+  /* SHARE ARTICLE */
+  .share-article {
+    &.title {
+      @apply text-neutral-50;
+    }
+
+    &.tooltip {
+      @apply hover:text-brand-primary-400;
     }
   }
 }
