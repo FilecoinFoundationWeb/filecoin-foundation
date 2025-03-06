@@ -276,8 +276,13 @@
   .key-member-card {
     @apply border-brand-primary-700 border p-0.5;
 
-    & .key-member-card-link {
+    &.key-member-card-link {
       @apply text-brand-primary-300;
     }
+  }
+
+  /* SOCIAL */
+  .social-media-secondary {
+    @apply text-brand-primary-300;
   }
 }
