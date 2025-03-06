@@ -1,7 +1,7 @@
-import { PATHS } from '@/constants/paths'
+import { getAllMarkdownData } from '@filecoin-foundation/utils/getAllMarkdownData'
+import { getMarkdownData } from '@filecoin-foundation/utils/getMarkdownData'
 
-import { getAllMarkdownData } from '@/utils/getAllMarkdownData'
-import { getMarkdownData } from '@/utils/getMarkdownData'
+import { PATHS } from '@/constants/paths'
 
 import { METADATA_TITLE_SUFFIX } from '../constants/metadata'
 import { EcosystemProjectFrontmatterSchema } from '../schemas/EcosystemProjectFrontmatterSchema'
