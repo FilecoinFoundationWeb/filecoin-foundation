@@ -11,8 +11,8 @@ authors:
   - first-name: Danny
     last-name: O'Brien
     company: Filecoin Foundation for the Decentralized Web
-    # image:
-    #   src: /assets/images/dwd-profile-02.png
+    image:
+      src: /assets/images/dwd-profile-02.png
     # bio: "Danny O'Brien is Senior Fellow and DWeb Strategy at Filecoin and tech journalist, developer and defender of online free speech, privacy and an open internet for more than 20 years, including over a decade's activism at the Electronic Frontier Foundation."
 seo:
   description: Your inalienable right to live rent-free inside your own head.

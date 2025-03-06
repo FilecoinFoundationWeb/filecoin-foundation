@@ -11,8 +11,8 @@ authors:
   - first-name: Chris
     last-name: Riley
     company: Data Transfer Initiative
-    # image:
-    #   src: /assets/images/dwd-profile-08.png
+    image:
+      src: /assets/images/dwd-profile-08.png
     # bio: Chris Riley is the executive director of the nonprofit Data Transfer Initiative and a distinguished research fellow at the Annenberg Public Policy Center at the University of Pennsylvania; he holds a Ph.D. in computer science from Johns Hopkins University and a J.D. from Yale Law School.
 seo:
   description: There is more to decentralization than just where the data is stored. How the data flows and whether it is portable is important to achieving the true benefits of decentralization.

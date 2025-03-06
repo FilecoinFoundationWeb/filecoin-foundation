@@ -11,8 +11,8 @@ authors:
   - first-name: Cory
     last-name: Doctorow
     company: craphound.com
-    # image:
-    #   src: /assets/images/dwd-profile-09.png
+    image:
+      src: /assets/images/dwd-profile-09.png
     # bio: Cory Doctorow (craphound.com) is a science fiction author,activist and journalist. He is the author of many books, most recently RED TEAM BLUES, a science fiction crime thriller.
 seo:
   description: "Big centralized platforms twiddle the dials on our internet experience, while preventing users from configuring their own experience. It’s a key source of the “enshittification” of the internet."

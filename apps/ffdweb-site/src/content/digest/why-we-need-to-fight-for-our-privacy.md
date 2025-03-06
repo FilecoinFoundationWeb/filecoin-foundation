@@ -11,8 +11,8 @@ authors:
   - first-name: Naomi
     last-name: Brockwell
     company: NBTV.media
-    # image:
-    #   src: /assets/images/dwd-profile-07.png
+    image:
+      src: /assets/images/dwd-profile-07.png
     # bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and author of "Beginner's Introduction to Privacy"
 
 seo:

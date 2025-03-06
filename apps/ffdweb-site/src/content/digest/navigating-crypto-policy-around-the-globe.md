@@ -11,8 +11,8 @@ authors:
   - first-name: Kristin
     last-name: Smith
     company: Blockchain Association
-  # image:
-  #   src: /assets/images/dwd-profile-04.png
+    image:
+      src: /assets/images/dwd-profile-04.png
   # bio: "Kristin is CEO of Blockchain Association, the Washington, D.C.-based trade association representing more than 100 of the industry’s leading companies."
 seo:
   description: "A decentralized web3 world needs to have clear government policies that enhance decentralization, and show leadership towards innovation, rather than surveillance."
