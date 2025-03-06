@@ -13,6 +13,7 @@
     "./dateUtils": "./src/dateUtils.ts",
     "./fileUtils": "./src/fileUtils.ts",
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
+    "./getDigestArticleData": "./src/getDigestArticleData.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
