@@ -1,10 +1,9 @@
+import type { DigestArticleData } from '@filecoin-foundation/utils/types/digestType'
 import type { WebPage, WithContext } from 'schema-dts'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
-
-import type { DigestArticleData } from '../../types/digestType'
 
 export function generateStructuredData(
   data: DigestArticleData,
