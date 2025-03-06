@@ -70,7 +70,7 @@ export default function Home() {
       <PageSection
         kicker="FFDW Digest"
         title="Decentralization and Why it Matters"
-        image={graphicsData.digest2}
+        image={graphicsData.dWebDigestCover}
         description={[
           'The DWeb Digest is an online magazine featuring articles from industry experts who teach people from newbies clearly to pique and satisfy their high digital ambition while to digital insights and learnings for digital future developers to build up the community inside DWeb to create a decentralized future.',
         ]}
