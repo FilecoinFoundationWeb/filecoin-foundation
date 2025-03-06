@@ -10,12 +10,12 @@ import {
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
+import { logZodError } from '@filecoin-foundation/utils/zodUtils'
 import * as Sentry from '@sentry/nextjs'
 import { ZodError } from 'zod'
 
 import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
-import { logZodError } from '@/utils/zodUtils'
 
 import { Card } from '@/components/Card'
 import { FilterContainer } from '@/components/FilterContainer'

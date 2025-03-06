@@ -1,7 +1,7 @@
+import { createEnumSchema } from '@filecoin-foundation/utils/zodUtils'
 import { z } from 'zod'
 
 import { getCMSFieldOptionsAndValidIds } from '@/utils/getCMSFieldOptionsAndValidIds'
-import { createEnumSchema } from '@/utils/zodUtils'
 
 export type Location = {
   primary: string

@@ -11,9 +11,11 @@
     "./categoryUtils": "./src/categoryUtils.ts",
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./dateUtils": "./src/dateUtils.ts",
+    "./fileUtils": "./src/fileUtils.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",
+    "./zodUtils": "./src/zodUtils.ts",
     "./constants/*": "./src/constants/*.ts",
     "./types/*": "./src/types/*.ts"
   },
