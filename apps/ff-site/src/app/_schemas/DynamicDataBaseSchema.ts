@@ -1,6 +1,6 @@
+import { ImagePropsSchema } from '@filecoin-foundation/utils/schemas/ImagePropsSchema'
 import { z } from 'zod'
 
-import { ImagePropsSchema } from '@/schemas/ImagePropsSchema'
 import { SeoMetadataWithOptionalTitleSchema } from '@/schemas/SeoMetadataSchema'
 
 export const DynamicBaseDataSchema = z
