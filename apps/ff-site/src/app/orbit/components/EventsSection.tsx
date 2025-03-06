@@ -1,4 +1,5 @@
 import { Button } from '@filecoin-foundation/ui/Button'
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
@@ -17,7 +18,6 @@ import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 import { logZodError } from '@/utils/zodUtils'
 
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 import { FilterContainer } from '@/components/FilterContainer'
 
 import { fetchAndParseAirtableEvents } from '../services/airtable'
