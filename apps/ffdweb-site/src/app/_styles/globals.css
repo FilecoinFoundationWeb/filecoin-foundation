@@ -29,6 +29,7 @@
   --color-neutral-950: #0d0d0d;
 
   --color-icon-primary: theme('colors.brand.primary.300');
+  --color-icon-accent: theme('colors.brand.secondary.100');
   --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
 
   --leading-heading: 1.3;

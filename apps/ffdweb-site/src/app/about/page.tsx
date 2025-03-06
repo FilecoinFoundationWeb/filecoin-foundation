@@ -2,19 +2,24 @@ import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
+import { PATHS } from '@/constants/paths'
 import { FFDW_URLS } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { CTALink } from '@/components/CTALink'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
-import { CardGrid } from './_components/CardGrid'
-import { DirectorGrid } from './_components/DirectorGrid'
+import { BoardMemberGrid } from './_components/BoardMemberGrid'
+import { IconCard } from './_components/IconCard'
+import { IconCardGrid } from './_components/IconCardGrid'
 import { PageSection } from './_components/PageSection'
 import { boardMembers } from './_constants/boardMembers'
+import { impactAreas } from './_constants/impactAreas'
+import { priorities } from './_constants/priorities'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const SEO = {
@@ -38,29 +43,16 @@ export default function About() {
         title="Our mission is to preserve humanity's most important information."
         description="We do this through:"
       >
-        <div>
-          <div>
-            <h3>Education</h3>
-            <p>
-              Helping individuals and communities learn about the transformative
-              power of decentralized, open technologies.
-            </p>
-          </div>
-          <div>
-            <h3>Development</h3>
-            <p>
-              Accelerating the adoption of decentralized technologies through
-              innovation and research.
-            </p>
-          </div>
-          <div>
-            <h3>Community Support</h3>
-            <p>
-              Fostering a network of advocates and builders across the
-              decentralized web community.
-            </p>
-          </div>
-        </div>
+        <IconCardGrid>
+          {priorities.map(({ icon, title, description }) => (
+            <IconCard
+              key={title}
+              icon={{ src: icon, style: 'regular' }}
+              title={title}
+              description={description}
+            />
+          ))}
+        </IconCardGrid>
       </PageSection>
 
       <PageSection
@@ -68,59 +60,17 @@ export default function About() {
         title="Empowering Change Through Decentralization"
         description="FFDW’s efforts span the critical areas listed below. Each of these domains is vital in its own right, and FFDW’s breadth of work reflects its commitment to driving meaningful change not just in one industry but across the expanse of the web."
       >
-        <div>
-          <div>
-            <h3>DWeb Research and Development</h3>
-            <p>
-              FFDW supports initiatives that advance decentralized technologies.
-            </p>
-          </div>
-          <div>
-            <h3>Education</h3>
-            <p>
-              FFDW champions initiatives that increase education and
-              understanding of blockchain, cryptocurrency, and other
-              decentralized technologies
-            </p>
-          </div>
-          <div>
-            <h3>Human Rights</h3>
-            <p>
-              Records of the fight for human rights can be some of the most
-              vulnerable data in the world — susceptible to tampering or total
-              disappearance on unsecured platforms. FFDW’s work with human
-              rights organizations is dedicated to safeguarding this critical
-              data.
-            </p>
-          </div>
-          <div>
-            <h3>Cultural Preservation</h3>
-            <p>
-              The world’s digital artifacts are fragile —many at risk of
-              disappearing forever. FFDW’s work in the area of cultural
-              preservation aims to preserve and safeguard humanity’s digital
-              cultural heritage for the long term.
-            </p>
-          </div>
-          <div>
-            <h3>Government Datasets and Policy</h3>
-            <p>
-              FFDW educates policymakers about the promise of decentralized
-              technologies and works to preserve government data using
-              decentralized technologies like the Filecoin network
-            </p>
-          </div>
-          <div>
-            <h3>Science and Environment</h3>
-            <p>
-              Scientific research produces large amounts of data, but there are
-              limited systems in place to preserve this information publicly and
-              for the long term. FFDW is working with universities and other
-              scientific institutions to preserve scientific data by leveraging
-              the reliability of decentralized storage.
-            </p>
-          </div>
-        </CardGrid>
+        <IconCardGrid>
+          {impactAreas.map(({ icon, title, description }) => (
+            <IconCard
+              key={title}
+              icon={{ src: icon, style: 'fill' }}
+              title={title}
+              description={description}
+            />
+          ))}
+          <CTALink href={PATHS.PROJECTS.path}>View all projects</CTALink>
+        </IconCardGrid>
       </PageSection>
 
       <PageSection
@@ -128,7 +78,7 @@ export default function About() {
         kicker="Board of Directors"
         title="FFDW Board of Directors"
       >
-        <DirectorGrid>
+        <BoardMemberGrid>
           {boardMembers.map(({ name, title, company, linkedin, image }) => (
             <KeyMemberCard
               key={name}
@@ -139,7 +89,7 @@ export default function About() {
               image={image}
             />
           ))}
-        </DirectorGrid>
+        </BoardMemberGrid>
       </PageSection>
 
       <CTASection
