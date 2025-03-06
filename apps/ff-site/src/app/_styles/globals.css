@@ -261,4 +261,9 @@
   .meta {
     @apply text-brand-300;
   }
+
+  /* COPY TO CLIPBOARD */
+  .copy-to-clipboard-button {
+    @apply hover:text-brand-400;
+  }
 }

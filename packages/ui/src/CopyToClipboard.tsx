@@ -53,7 +53,7 @@ export function CopyToClipboard({
       <Tooltip description="Copy link to clipboard" side="bottom">
         <Button
           className={clsx(
-            'hover:text-brand-400 focus:brand-outline cursor-pointer',
+            'copy-to-clipboard-button focus:brand-outline cursor-pointer',
             TOUCH_TARGET.touchAreaPadding,
           )}
           onClick={() => handleCopy(text)}
