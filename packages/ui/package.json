@@ -18,6 +18,7 @@
     "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./Card": "./src/Card.tsx",
+    "./CardGrid": "./src/CardGrid.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",

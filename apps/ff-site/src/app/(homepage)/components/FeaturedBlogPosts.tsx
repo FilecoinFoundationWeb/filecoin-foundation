@@ -1,3 +1,4 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
@@ -8,7 +9,6 @@ import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 
 import type { BlogPost } from '@/blog/types/blogPostType'
 
