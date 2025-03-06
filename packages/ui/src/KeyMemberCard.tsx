@@ -15,6 +15,7 @@ type KeyMemberCardProps = {
   company?: string
   linkedin: string
   image: StaticImageProps['data'] | ImageProps['src']
+  as?: React.ElementType
 }
 
 export function KeyMemberCard({
@@ -23,11 +24,12 @@ export function KeyMemberCard({
   company,
   linkedin,
   image,
+  as: Tag = 'li',
 }: KeyMemberCardProps) {
   const fullTitle = [title, company].filter(Boolean).join(', ')
 
   return (
-    <li className="key-member-card relative flex">
+    <Tag className="key-member-card relative flex">
       <KeyMemberImage image={image} name={name} />
 
       <div className="m-3 grow">
@@ -49,7 +51,7 @@ export function KeyMemberCard({
           </span>
         </a>
       </div>
-    </li>
+    </Tag>
   )
 }
 
