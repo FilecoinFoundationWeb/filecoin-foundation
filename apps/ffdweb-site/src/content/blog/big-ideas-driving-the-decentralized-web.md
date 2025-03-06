@@ -12,7 +12,7 @@ description: >-
   original – more decentralized – architecture. Some call this direction “Web3”;
   some call it the decentralized web or“DWeb.”
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423818a6ec41950428fad8_0928-ffdw-glossary.png
   alt: null
 updated-on: "2023-04-21T07:18:16.763Z"

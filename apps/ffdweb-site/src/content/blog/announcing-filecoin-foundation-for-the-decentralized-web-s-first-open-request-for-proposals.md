@@ -11,7 +11,7 @@ description: >-
   information.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423813d1b0259171f6ef5e_ffdw-request-for-proposals.png
   alt: null
 updated-on: "2023-04-21T07:18:12.889Z"

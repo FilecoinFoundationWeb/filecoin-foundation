@@ -6,7 +6,7 @@ published-on: 2023-08-16T18:51:13.590Z
 post-date: 2023-08-16T18:51:13.602Z
 featured: false
 image:
-  url: /assets/images/091523-qa-techcongress.png
+  src: /assets/images/091523-qa-techcongress.png
 date: 2023-08-16T18:51:13.615Z
 seo:
   noindex: false

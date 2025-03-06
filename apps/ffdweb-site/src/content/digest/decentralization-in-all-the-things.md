@@ -3,28 +3,19 @@ title: Decentralization In All the Things
 created-on: 2023-10-16T18:18:29.399Z
 updated-on: 2023-10-16T18:18:29.410Z
 published-on: 2023-10-16T18:18:29.417Z
-issue: 1
-: 7
-description: Decentralization isn’t just a technological concept, but a
-  framework that we can use to re-envision how society works today and in the
-  future.
+issue-number: "1"
+article-number: 7
 image:
-  url: /assets/images/DWD-Illustration-07.png
-author: Mike Masnick
-author-profile:
-  url: /assets/images/dwd-profile-01.png
-author-bio: Mike Masnick is the founder & editor of the popular Techdirt blog
-  as well as the founder of the Silicon Valley think tank, the Copia
-  Institute.  In both roles, he explores the intersection of technology,
-  innovation, policy, law, civil liberties, and economics.
-tags: digest
-date: 2023-10-16T18:18:29.424Z
+  src: /assets/images/DWD-Illustration-07.png
+authors:
+  - first-name: Mike
+    last-name: Masnick
+    company: Techdirt, Copia Institute
+    # image:
+    #   src: /assets/images/dwd-profile-01.png
+    # bio: Mike Masnick is the founder & editor of the popular Techdirt blog as well as the founder of the Silicon Valley think tank, the Copia Institute.  In both roles, he explores the intersection of technology,innovation, policy, law, civil liberties, and economics.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  og:image: /assets/images/DWD-Illustration-07.png
-  title: "FFDW DWeb Digest: Decentralization In All the Things"
+  description: Decentralization isn’t just a technological concept, but a framework that we can use to re-envision how society works today and in the future.
 ---
 
 We’re at an inflection point in the way we view society.  We’ve been locked into industrial age views in an increasingly digital age.  The economic and industrial policies of today are still tied to a world that existed over a century ago, and there are so many ways in which we can and should rethink them. This goes way beyond just planning for an ever increasingly digital world: it means taking the lessons of what a digital world has taught us -- including upending some antiquated thinking about scarcity -- and applying it much more broadly to society. 

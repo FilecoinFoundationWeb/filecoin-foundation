@@ -6,7 +6,7 @@ published-on: 2023-09-14T15:01:30.593Z
 post-date: 2023-09-14T15:01:30.605Z
 featured: false
 image:
-  url: /assets/images/091223-bl4sg-header.png
+  src: /assets/images/091223-bl4sg-header.png
 date: 2023-09-14T15:01:30.618Z
 seo:
   noindex: false

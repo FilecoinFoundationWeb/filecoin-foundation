@@ -7,7 +7,7 @@ description: >-
   our work together in 2022.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423811e3c08f0a484e3bc4_0206-22-annual-report.png
   alt: null
 updated-on: "2023-04-21T07:15:29.818Z"

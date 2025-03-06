@@ -10,7 +10,7 @@ description: >-
   Democratizing Open Knowledge program.
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423837922f062c19150fda_1-sqxvnk6dltsa3a9ec1fbyg.png
   alt: null
 updated-on: "2023-04-21T07:18:30.774Z"

@@ -3,29 +3,19 @@ title: Decentralization and Data Flows
 created-on: 2023-10-18T19:00:51.708Z
 updated-on: 2023-10-18T19:00:51.715Z
 published-on: 2023-10-18T19:00:51.722Z
-issue: 1
-: 11
-description: There is more to decentralization than just where the data is
-  stored. How the data flows and whether it is portable is important to
-  achieving the true benefits of decentralization.
+issue-number: "1"
+article-number: 11
 image:
-  url: /assets/images/DWD-Illustration-11.png
-author: Chris Riley
-author-profile:
-  url: /assets/images/dwd-profile-08.png
-author-bio: Chris Riley is the executive director of the nonprofit Data
-  Transfer Initiative and a distinguished research fellow at the Annenberg
-  Public Policy Center at the University of Pennsylvania; he holds a Ph.D. in
-  computer science from Johns Hopkins University and a J.D. from Yale Law
-  School.
-tags: digest
-date: 2023-10-18T19:00:51.728Z
+  src: /assets/images/DWD-Illustration-11.png
+authors:
+  - first-name: Chris
+    last-name: Riley
+    company: Data Transfer Initiative
+    # image:
+    #   src: /assets/images/dwd-profile-08.png
+    # bio: Chris Riley is the executive director of the nonprofit Data Transfer Initiative and a distinguished research fellow at the Annenberg Public Policy Center at the University of Pennsylvania; he holds a Ph.D. in computer science from Johns Hopkins University and a J.D. from Yale Law School.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: Decentralization and Data Flows"
-  og:image: /assets/images/DWD-Illustration-11.png
+  description: There is more to decentralization than just where the data is stored. How the data flows and whether it is portable is important to achieving the true benefits of decentralization.
 ---
 
 Decentralized is the new disruptive; a large piece of the narrative power motivating enthusiasm around distributed ledger technologies (or blockchain, or Web3, depending on the author and context) is the potential for transforming power dynamics and resources as compared to existing ecosystems. But more is needed to realize the normative goals under the concept of decentralization than merely setting up servers in a different way. Notably, like the proverbial spice, the data must flow — both in and out, as users dictate. Where data flows are unduly limited, so too is decentralized infrastructure. Data portability reflects a particular way in which data can flow or be blocked, and designing policy around data portability to maximize the control of technology users and data subjects — including promoting reciprocity of transfers — ultimately promotes both effective data flow and meaningful decentralization.

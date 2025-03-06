@@ -3,27 +3,19 @@ title: Navigating Crypto Policy Around the Globe
 created-on: 2023-10-16T18:01:20.033Z
 updated-on: 2023-10-16T18:01:20.039Z
 published-on: 2023-10-16T18:01:20.045Z
-issue: 1
-: 6
-description: A decentralized web3 world needs to have clear government
-  policies that enhance decentralization, and show leadership towards
-  innovation, rather than surveillance.
+issue-number: "1"
+article-number: 6
 image:
-  url: /assets/images/DWD-Illustration-06.png
-author: Kristin Smith
-author-profile:
-  url: /assets/images/dwd-profile-04.png
-author-bio: Kristin is CEO of Blockchain Association, the Washington,
-  D.C.-based trade association representing more than 100 of the industry’s
-  leading companies.
-tags: digest
-date: 2023-10-16T18:01:20.051Z
+  src: /assets/images/DWD-Illustration-06.png
+authors:
+  - first-name: Kristin
+    last-name: Smith
+    company: Blockchain Association
+  # image:
+  #   src: /assets/images/dwd-profile-04.png
+  # bio: "Kristin is CEO of Blockchain Association, the Washington, D.C.-based trade association representing more than 100 of the industry’s leading companies."
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: Navigating Crypto Policy Around the Globe"
-  og:image: /assets/images/DWD-Illustration-06.png
+  description: "A decentralized web3 world needs to have clear government policies that enhance decentralization, and show leadership towards innovation, rather than surveillance."
 ---
 
 In the wake of sustained market turmoil in the crypto ecosystem, federal regulators in the United States and relevant authorities abroad are reassessing the fundamental question: how much should we integrate or corral this emerging technology? 

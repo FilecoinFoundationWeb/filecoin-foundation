@@ -8,7 +8,7 @@ description: >-
   web publishing tools that offer creators an alternative to centralized
   publishing platforms.
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381aaf6e60375caa347a_0208-distributedpress.png
   alt: null
 updated-on: "2023-04-21T07:15:38.854Z"
