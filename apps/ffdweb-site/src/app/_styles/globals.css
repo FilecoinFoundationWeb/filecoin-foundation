@@ -282,7 +282,7 @@
   }
 
   /* SOCIAL */
-  .social-media-secondary {
+  .social-link {
     @apply text-brand-primary-300;
   }
 }

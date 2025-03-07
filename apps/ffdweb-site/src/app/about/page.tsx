@@ -17,9 +17,9 @@ import { PageSection } from '@/components/PageSection'
 import { BoardMemberGrid } from './_components/BoardMemberGrid'
 import { IconCard } from './_components/IconCard'
 import { IconCardGrid } from './_components/IconCardGrid'
-import { boardMembers } from './_constants/boardMembers'
-import { impactAreas } from './_constants/impactAreas'
-import { priorities } from './_constants/priorities'
+import { boardMembers } from './_data/boardMembers'
+import { impactAreas } from './_data/impactAreas'
+import { priorities } from './_data/priorities'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const SEO = {
