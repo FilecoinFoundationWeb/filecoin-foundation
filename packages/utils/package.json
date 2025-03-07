@@ -15,6 +15,7 @@
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
     "./getDigestArticleData": "./src/getDigestArticleData.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",
+    "./generateShareArticleLinks": "./src/generateShareArticleLinks.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",

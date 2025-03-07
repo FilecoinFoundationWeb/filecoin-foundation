@@ -301,4 +301,13 @@
       @apply fill-brand-200;
     }
   }
+
+  /* SHARE ARTICLE */
+  .share-article-title {
+    @apply text-brand-300;
+  }
+
+  .share-article-tooltip-link {
+    @apply hover:text-brand-400;
+  }
 }
