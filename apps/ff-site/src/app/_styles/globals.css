@@ -304,11 +304,11 @@
   }
 
   /* SHARE ARTICLE */
-  &.share-article-title {
+  .share-article-title {
     @apply text-brand-300;
   }
 
-  &.share-article-tooltip-link {
+  .share-article-tooltip-link {
     @apply hover:text-brand-400;
   }
 }

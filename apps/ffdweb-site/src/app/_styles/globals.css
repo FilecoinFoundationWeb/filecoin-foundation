@@ -301,7 +301,7 @@
   }
 
   /* SHARE ARTICLE */
-  &.share-article-tooltip-link {
+  .share-article-tooltip-link {
     @apply hover:text-brand-primary-400;
   }
 }
