@@ -210,7 +210,7 @@ export const redirects = [
 
   // DIGEST ARTICLE REDIRECTS
   {
-    source: 'digest/editor%E2%80%99s-letter',
+    source: '/digest/editor%E2%80%99s-letter',
     destination: '/digest/editors-letter',
     permanent: true,
   },
@@ -218,7 +218,7 @@ export const redirects = [
     source:
       '/digest/free-software%E2%80%99s-paradox-losing-while-winning-and-the-need-for-decentralization',
     destination:
-      '/blog/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization',
+      '/digest/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization',
     permanent: true,
   },
 ]
