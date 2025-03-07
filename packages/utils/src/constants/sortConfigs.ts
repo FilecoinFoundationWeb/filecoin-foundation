@@ -1,7 +1,7 @@
 import {
   sortPostsByDateAsc,
   sortPostsByDateDesc,
-} from '@/blog/utils/sortBlogPosts'
+} from '@filecoin-foundation/utils/sortBlogPosts'
 
 export const blogSortConfigs = [
   {

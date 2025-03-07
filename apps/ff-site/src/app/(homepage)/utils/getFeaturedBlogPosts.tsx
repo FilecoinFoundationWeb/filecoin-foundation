@@ -1,5 +1,6 @@
+import { sortPostsByDateDesc } from '@filecoin-foundation/utils/sortBlogPosts'
+
 import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
-import { sortPostsByDateDesc } from '@/blog/utils/sortBlogPosts'
 
 const MAX_FEATURED_POSTS = 4
 

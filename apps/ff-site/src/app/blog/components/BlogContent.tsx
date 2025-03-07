@@ -8,6 +8,7 @@ import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
+import { blogSortConfigs } from '@filecoin-foundation/utils/constants/sortConfigs'
 import {
   CATEGORY_KEY,
   PAGE_KEY,
@@ -15,6 +16,7 @@ import {
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import type { BlogPost } from '@filecoin-foundation/utils/types/blogPostType'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { BookOpen } from '@phosphor-icons/react'
 
@@ -36,9 +38,6 @@ import { Card } from '@/components/Card'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { Sort } from '@/components/Sort'
-
-import { blogSortConfigs } from '../constants/sortConfigs'
-import type { BlogPost } from '../types/blogPostType'
 
 type BlogContentProps = {
   posts: Array<BlogPost>
