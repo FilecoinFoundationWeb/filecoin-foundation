@@ -21,4 +21,6 @@ seo:
   description: Banshee Music is a live-performance ticket marketplace on Moonbeam.
 ---
 
-Banshee utilizes Pinata and Lighthouse to deliver music to fans. Audio and video content are held inside a IPFS files from those (Pinata and Lighthouse) and sent to fans.
+Banshee is a music NFT marketplace for live performance tickets and music airdrops.
+
+Banshee utilizes Pinata and Lighthouse to distribute music to fans. Audio and video content are stored in IPFS files from Pinata and Lighthouse, then delivered to fans.
