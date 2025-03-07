@@ -1,7 +1,10 @@
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -39,6 +42,11 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
+        <ShareArticle
+          articleTitle={title}
+          path={`/digest/${slug}`}
+          baseUrl={BASE_URL}
+        />
       </ArticleLayout>
     </PageLayout>
   )

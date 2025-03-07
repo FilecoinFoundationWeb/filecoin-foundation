@@ -300,7 +300,21 @@
     }
   }
 
+  /* TOOLTIP */
+  .tooltip {
+    @apply bg-brand-primary-300 text-neutral-800;
+  }
+
+  .tooltip-arrow {
+    @apply fill-brand-primary-300;
+  }
+
   /* SHARE ARTICLE */
+
+  .share-article-title {
+    @apply text-brand-primary-300;
+  }
+
   .share-article-tooltip-link {
     @apply hover:text-brand-primary-400;
   }

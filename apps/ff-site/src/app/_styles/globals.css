@@ -297,10 +297,10 @@
   /* TOOLTIP */
   .tooltip {
     @apply rounded-lg bg-brand-200 p-2 text-brand-800;
+  }
 
-    &.tooltip-arrow {
-      @apply fill-brand-200;
-    }
+  .tooltip-arrow {
+    @apply fill-brand-200;
   }
 
   /* SHARE ARTICLE */
