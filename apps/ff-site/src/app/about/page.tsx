@@ -1,4 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -18,7 +19,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
-import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 

@@ -1,6 +1,6 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
 
-import { KeyMemberCard } from '@/components/KeyMemberCard'
 import { PageSection } from '@/components/PageSection'
 
 import type { Event } from '../../types/eventType'
