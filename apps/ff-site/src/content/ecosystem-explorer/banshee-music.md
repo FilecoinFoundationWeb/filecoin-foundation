@@ -17,7 +17,6 @@ repo: https://github.com/Banshee-Music
 
 twitter: https://x.com/BansheeMusic_
 seo:
-  title: Banshee Music
   description: Banshee Music is a live-performance ticket marketplace on Moonbeam.
 ---
 
