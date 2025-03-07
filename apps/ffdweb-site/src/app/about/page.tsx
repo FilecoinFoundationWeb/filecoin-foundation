@@ -14,12 +14,12 @@ import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
-import { BoardMemberGrid } from './_components/BoardMemberGrid'
-import { IconCard } from './_components/IconCard'
-import { IconCardGrid } from './_components/IconCardGrid'
-import { boardMembers } from './_data/boardMembers'
-import { impactAreas } from './_data/impactAreas'
-import { priorities } from './_data/priorities'
+import { BoardMemberGrid } from './components/BoardMemberGrid'
+import { IconCard } from './components/IconCard'
+import { IconCardGrid } from './components/IconCardGrid'
+import { boardMembers } from './constants/boardMembers'
+import { impactAreas } from './constants/impactAreas'
+import { priorities } from './constants/priorities'
 import { generateStructuredData } from './utils/generateStructuredData'
 
 const SEO = {
