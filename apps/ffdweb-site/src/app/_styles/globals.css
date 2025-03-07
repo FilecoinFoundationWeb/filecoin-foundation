@@ -285,4 +285,22 @@
   .social-link {
     @apply text-brand-primary-300;
   }
+
+  /* COPY TO CLIPBOARD */
+  .copy-to-clipboard-button {
+    @apply hover:text-brand-primary-400;
+  }
+
+  /* NOTIFICATION DIALOG */
+  .notification {
+    @apply border border-neutral-50/40 bg-neutral-950;
+
+    &.notification-title {
+      @apply text-neutral-50;
+    }
+
+    &.notification-close-button {
+      @apply hover:text-brand-primary-300 hover:bg-brand-primary-800 text-neutral-100;
+    }
+  }
 }
