@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-06.png
     # bio: Farzaneh Badiei is a recovering academic and founded Digital Medusa to petrify the enemies of a global, interoperable Internet.
 seo:
-  description: Decentralization can come in all sorts of ways, and doesn’t always require some complex new technology. Thinking small can be effective too.
+  description: True internet decentralization doesn't require complex new technologies - it needs smart governance and collective action. Learn how small, practical steps can help restore a more distributed internet infrastructure.
 ---
 
 In the end, the fate of every technology is centralization. But we can change that. 

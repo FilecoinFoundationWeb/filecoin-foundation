@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-03.png
     # bio: "Mai Ishikawa Sutton is a senior organizer with DWeb projects, co-founder of Distributed.Press and COMPOST magazine, and contributor to Hypha Worker Co-op."
 seo:
-  description: "What matters in this discussion – in any discussion about technology, really – is who’s designing it, who controls it, and who stands to benefit?"
+  description: "Explore the nuanced debate between DWeb and Web3, examining how these movements approach decentralization differently. Beyond technical solutions, discover why the real focus should be on who designs, controls, and benefits from these technologies."
 ---
 
 This article started off as one that would delineate the difference between the terms “DWeb” (as in decentralized Web) and “Web3” (as in Web 3.0). It seemed like a useful exercise to tease out the communities that implicitly or explicitly support these terms. But the more I dug into it, the more I realized this wasn’t that interesting in itself.

@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-09.png
     # bio: Cory Doctorow (craphound.com) is a science fiction author,activist and journalist. He is the author of many books, most recently RED TEAM BLUES, a science fiction crime thriller.
 seo:
-  description: "Big centralized platforms twiddle the dials on our internet experience, while preventing users from configuring their own experience. It’s a key source of the “enshittification” of the internet."
+  description: 'Digital platforms maintain power by constantly adjusting their systems while denying users the same control. This asymmetric relationship drives the internet's decline through "enshittification" - where platforms prioritize profits over user experience.'
 ---
 
 Tracking Exposed is a scrappy European nonprofit that attempts to understand how online recommendation algorithms work. They combine data from volunteers who install a plugin with data acquired through “headless browsers” to attempt to reverse-engineer the principles that determine what you see when you visit or search Tiktok, Amazon, YouTube, Facebook or Pornhub.

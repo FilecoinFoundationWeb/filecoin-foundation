@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-01.png
     # bio: Mike Masnick is the founder & editor of the popular Techdirt blog as well as the founder of the Silicon Valley think tank, the Copia Institute.  In both roles, he explores the intersection of technology,innovation, policy, law, civil liberties, and economics.
 seo:
-  description: Decentralization isn’t just a technological concept, but a framework that we can use to re-envision how society works today and in the future.
+  description: Explore how combining centralized infrastructure with decentralized innovation can revolutionize everything from technology to healthcare and education. Learn why this hybrid approach might be the key to building better systems for the future.
 ---
 
 We’re at an inflection point in the way we view society.  We’ve been locked into industrial age views in an increasingly digital age.  The economic and industrial policies of today are still tied to a world that existed over a century ago, and there are so many ways in which we can and should rethink them. This goes way beyond just planning for an ever increasingly digital world: it means taking the lessons of what a digital world has taught us -- including upending some antiquated thinking about scarcity -- and applying it much more broadly to society. 

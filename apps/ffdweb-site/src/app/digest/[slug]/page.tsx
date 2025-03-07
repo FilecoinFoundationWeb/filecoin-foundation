@@ -1,6 +1,7 @@
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { graphicsData } from '@/data/graphicsData'
@@ -14,6 +15,8 @@ import {
   getDigestArticlesData,
 } from '../utils/getDigestArticleData'
 
+import { generateStructuredData } from './utils/generateStructuredData'
+
 type DigestArticleProps = {
   params: Promise<SlugParams>
 }
@@ -26,7 +29,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
   return (
     <PageLayout>
-      {/* <StructuredDataScript structuredData={generateStructuredData(data)} /> */}
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <ArticleLayout>
         <DigestArticleHeader
           title={title}
