@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-02.png
     # bio: "Danny O'Brien is Senior Fellow and DWeb Strategy at Filecoin and tech journalist, developer and defender of online free speech, privacy and an open internet for more than 20 years, including over a decade's activism at the Electronic Frontier Foundation."
 seo:
-  description: Your inalienable right to live rent-free inside your own head.
+  description: Explore how personal technology and digital rights protect our fundamental freedom to think, learn, and grow independently in an increasingly centralized digital world.
 ---
 
 If you build and market new technologies to a global audience, you may occasionally reflect on how the use of those technologies align with your personal values and our collective human rights. Or you may not. Be warned, however: avoiding the topic entirely can lead to some uncomfortable situations down the line.

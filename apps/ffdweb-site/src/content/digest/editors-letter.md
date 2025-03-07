@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-01.png
     # bio: Mike Masnick is the founder & editor of the popular Techdirt blog as well as the founder of the Silicon Valley think tank, the Copia Institute. In both roles, he explores the intersection of technology, innovation, policy, law, civil liberties, and economics.
 seo:
-  description: ""
+  description: "Mike Masnick introduces a magazine exploring decentralization's impact on cognitive liberty, privacy, blockchain, and the web's future through expert perspectives."
 ---
 
 I am thrilled to have had a chance to edit and shape this special magazine on decentralization for the Filecoin Foundation for the Decentralized Web. For many of us, increasing decentralization has always been an important focus and goal, but it hasn’t always been clear to others why decentralization matters so much, or even what should be decentralized. The collection of articles in this magazine will help provide some perspective on these questions.

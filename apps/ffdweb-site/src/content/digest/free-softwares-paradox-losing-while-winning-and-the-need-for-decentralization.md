@@ -16,7 +16,7 @@ authors:
       src: /assets/images/DWD-Profile-11.png
     # bio: Holmes Wilson is a co-founder of Fight for the Future and Quiet, a decentralized alternative to Slack and Discord built on Tor and IPFS.
 seo:
-  description: Free and open source projects have been successful, but have not achieved the goal of giving users true access and control over the code they use. To get there, projects need to embrace decentralization.
+  description: While free software has become ubiquitous, its goal of user control remains elusive due to cloud service dependencies. The solution lies in decentralization - making operational power as accessible as the code itself.
 ---
 
 In today's digital landscape, free and open source software has become more ubiquitous than ever. Unfortunately, at the same time, it appears extraordinarily far from achieving its stated goals of giving users access to and control over code. 
