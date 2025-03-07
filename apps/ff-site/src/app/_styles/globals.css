@@ -266,10 +266,6 @@
       @apply rounded-sm;
     }
 
-    & .key-member-card-name {
-      @apply text-brand-100;
-    }
-
     & .key-member-card-title {
       @apply text-brand-300;
     }

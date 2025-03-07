@@ -33,6 +33,7 @@
   --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
 
   --leading-heading: 1.3;
+  --spacing-readable: 60ch;
 }
 
 @utility brand-outline {
@@ -273,19 +274,7 @@
 
   /* KEY MEMBER CARD */
   .key-member-card {
-    @apply border-brand-primary-700 rounded-none border p-0.5;
-
-    & .key-member-card-image {
-      @apply rounded-none;
-    }
-
-    & .key-member-card-name {
-      @apply text-neutral-50;
-    }
-
-    & .key-member-card-title {
-      @apply text-neutral-50;
-    }
+    @apply border-brand-primary-700 border p-0.5;
 
     & .key-member-card-link {
       @apply text-brand-primary-300;

@@ -33,7 +33,7 @@ export function KeyMemberCard({
       <KeyMemberImage image={image} name={name} />
 
       <div className="m-3 grow">
-        <Heading tag="h3" variant="lg" className="key-member-card-name">
+        <Heading tag="h3" variant="lg">
           {name}
         </Heading>
 

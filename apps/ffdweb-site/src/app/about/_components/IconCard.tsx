@@ -1,3 +1,4 @@
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
 type IconCardProps = {
@@ -10,7 +11,7 @@ export function IconCard({ icon, title, description }: IconCardProps) {
   const { src: IconComponent, style } = icon
 
   return (
-    <li className="icon-card">
+    <li>
       {style === 'regular' && (
         <Icon component={IconComponent} size={64} color="accent" />
       )}
@@ -21,8 +22,12 @@ export function IconCard({ icon, title, description }: IconCardProps) {
         </div>
       )}
 
-      <h3 className="mb-3 mt-8 text-lg font-bold text-neutral-50">{title}</h3>
-      <p className="text-neutral-50">{description}</p>
+      <div className="max-w-readable mt-8 flex flex-col gap-3">
+        <Heading tag="h3" variant="lg">
+          {title}
+        </Heading>
+        <p>{description}</p>
+      </div>
     </li>
   )
 }

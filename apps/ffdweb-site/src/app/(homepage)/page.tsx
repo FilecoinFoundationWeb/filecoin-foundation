@@ -47,10 +47,9 @@ export default function Home() {
         title="Building Decentralized Solutions for Real-World Impact"
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
-
         <div className="flex justify-center">
           <Button href={PATHS.PROJECTS.path} baseDomain={BASE_DOMAIN}>
-            View All Projects
+            View Projects
           </Button>
         </div>
       </PageSection>
@@ -69,7 +68,6 @@ export default function Home() {
       </PageSection>
 
       <PageSectionWithImage
-        // layout="reversed"
         kicker="FFDW Digest"
         title="Decentralization and Why it Matters"
         image={graphicsData.homepage}
