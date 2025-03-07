@@ -1,8 +1,7 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-
-import { type SlugParams } from '@/types/paramsTypes'
+import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'

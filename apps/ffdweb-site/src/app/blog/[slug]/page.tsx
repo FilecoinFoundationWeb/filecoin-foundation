@@ -1,4 +1,5 @@
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+// import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 // import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 // import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
