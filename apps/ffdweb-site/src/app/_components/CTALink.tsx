@@ -24,7 +24,7 @@ export function CTALink({ href, children }: CTALinkProps) {
       className="text-brand-primary-300 focus:brand-outline inline-flex items-center gap-2 font-semibold hover:underline"
     >
       <span className="pb-0.5">{children}</span>
-      <CaretRight size={18} weight="bold" />
+      <CaretRight size={16} weight="bold" />
     </Link>
   )
 }
