@@ -9,7 +9,7 @@ description: >-
   decentralized storage technology on smartphones through ProofMode and F-Droid
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423839922f06c7b3150fdd_guardian-project.png
   alt: null
 updated-on: "2023-04-21T07:18:32.063Z"

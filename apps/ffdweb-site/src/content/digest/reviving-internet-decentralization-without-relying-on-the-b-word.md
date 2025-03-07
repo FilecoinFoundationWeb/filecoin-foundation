@@ -3,29 +3,19 @@ title: Reviving Internet Decentralization Without Relying on the "B word"!
 created-on: 2023-10-18T18:47:09.114Z
 updated-on: 2023-10-18T18:47:09.121Z
 published-on: 2023-10-18T18:47:09.130Z
-issue: 1
-: 9
-description: Decentralization can come in all sorts of ways, and doesn’t
-  always require some complex new technology. Thinking small can be effective
-  too.
+issue-number: "1"
+article-number: 9
 image:
-  url: /assets/images/DWD-Illustration-09.png
-author: Farzaneh Badiei
-author-profile:
-  alt: ""
-  url: /assets/images/dwd-profile-06.png
-author-bio: Farzaneh Badiei is a recovering academic and founded Digital
-  Medusa to petrify the enemies of a global, interoperable Internet.
-tags: digest
-date: 2023-10-18T18:47:09.140Z
+  src: /assets/images/DWD-Illustration-09.png
+authors:
+  - first-name: Farzaneh
+    last-name: Badiei
+    company: Digital Medusa
+    image:
+      src: /assets/images/dwd-profile-06.png
+    # bio: Farzaneh Badiei is a recovering academic and founded Digital Medusa to petrify the enemies of a global, interoperable Internet.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title:
-    'FFDW DWeb Digest: Reviving Internet Decentralization Without Relying on
-    the "B word"!'
-  og:image: /assets/images/DWD-Illustration-09.png
+  description: Decentralization can come in all sorts of ways, and doesn’t always require some complex new technology. Thinking small can be effective too.
 ---
 
 In the end, the fate of every technology is centralization. But we can change that. 

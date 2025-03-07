@@ -4,28 +4,19 @@ title: "Free Software’s Paradox: Losing While Winning and the Need for
 created-on: 2023-10-16T17:52:37.913Z
 updated-on: 2023-10-16T17:52:37.927Z
 published-on: 2023-10-16T17:52:37.937Z
-issue: 1
-: 5
-description: Free and open source projects have been successful, but have not
-  achieved the goal of giving users true access and control over the code they
-  use. To get there, projects need to embrace decentralization.
+issue-number: "1"
+article-number: 5
 image:
-  url: /assets/images/DWD-Illustration-05.png
-author: Holmes Wilson
-author-profile:
-  url: /assets/images/DWD-Profile-11.png
-author-bio: Holmes Wilson is a co-founder of Fight for the Future and Quiet, a
-  decentralized alternative to Slack and Discord built on Tor and IPFS.
-tags: digest
-date: 2023-10-16T17:52:37.945Z
+  src: /assets/images/DWD-Illustration-05.png
+authors:
+  - first-name: Holmes
+    last-name: Wilson
+    company: Fight for the Future
+    image:
+      src: /assets/images/DWD-Profile-11.png
+    # bio: Holmes Wilson is a co-founder of Fight for the Future and Quiet, a decentralized alternative to Slack and Discord built on Tor and IPFS.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title:
-    "FFDW DWeb Digest: Free Software’s Paradox: Losing While Winning and the
-    Need for Decentralization"
-  og:image: /assets/images/DWD-Illustration-05.png
+  description: Free and open source projects have been successful, but have not achieved the goal of giving users true access and control over the code they use. To get there, projects need to embrace decentralization.
 ---
 
 In today's digital landscape, free and open source software has become more ubiquitous than ever. Unfortunately, at the same time, it appears extraordinarily far from achieving its stated goals of giving users access to and control over code. 

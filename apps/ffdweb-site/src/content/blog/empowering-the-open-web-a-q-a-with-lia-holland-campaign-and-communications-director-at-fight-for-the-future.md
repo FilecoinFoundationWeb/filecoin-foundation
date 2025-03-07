@@ -11,7 +11,7 @@ description: In this Q&A, we sit down with Lia Holland, campaigns and
   of this collaboration, their vision for a decentralized web, and how
   storytelling can help change the future of technology.
 image:
-  url: /assets/images/103124-qa-fftf.png
+  src: /assets/images/103124-qa-fftf.png
 date: 2024-11-22T12:56:38.158Z
 seo:
   noindex: false

@@ -7,7 +7,7 @@ description: >-
   preservation of trusted documentation
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382e3db3a0857c66f093_witness.png
   alt: null
 updated-on: "2023-04-21T07:18:25.714Z"

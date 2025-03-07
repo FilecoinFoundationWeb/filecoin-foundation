@@ -121,12 +121,16 @@
   }
 
   /* BREADCRUMBS */
-  .breadcrumbs-inactive {
-    @apply text-neutral-50;
-  }
+  .breadcrumb-link {
+    @apply focus:brand-outline hover:underline;
 
-  .breadcrumbs-active {
-    @apply text-brand-primary-300;
+    &:not([aria-current='page']) {
+      @apply text-neutral-50;
+    }
+
+    &[aria-current='page'] {
+      @apply text-brand-primary-300;
+    }
   }
 
   /* BUTTONS */
@@ -230,6 +234,35 @@
   /* SLIDE OVER */
   .slide-over-panel {
     @apply bg-neutral-950;
+  }
+
+  /* CARD */
+  .card {
+    @apply bg-transparent;
+
+    &.card-border-lighter {
+      @apply border-brand-primary-500;
+    }
+
+    &.card-border-light {
+      @apply border-brand-primary-600;
+    }
+
+    &.card-border-base {
+      @apply border-brand-primary-700;
+    }
+
+    &.card-border-dark {
+      @apply border-brand-primary-800;
+    }
+  }
+
+  .card-image {
+    @apply px-0.5 pt-0.5;
+  }
+
+  .card-link {
+    @apply text-brand-primary-300;
   }
 
   /* META */

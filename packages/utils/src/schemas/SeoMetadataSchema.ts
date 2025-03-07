@@ -1,8 +1,8 @@
 import { z } from 'zod'
 
-import configJson from '@/data/cmsConfigSchema.json'
+// import configJson from '@/data/cmsConfigSchema.json'
 
-const { seo_metadata_description_max_characters } = configJson
+// const { seo_metadata_description_max_characters } = configJson
 
 const TwitterCardType = z.enum(['summary', 'summary_large_image', 'player'])
 
@@ -24,7 +24,7 @@ const TwitterMetadataSchema = z
 
 const BaseSeoMetadataSchema = z
   .object({
-    description: z.string().max(seo_metadata_description_max_characters),
+    description: z.string().max(220),
     image: z.string().optional(),
     'open-graph': OpenGraphMetadataSchema.optional(),
     twitter: TwitterMetadataSchema.optional(),

@@ -1,3 +1,4 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -15,7 +16,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'

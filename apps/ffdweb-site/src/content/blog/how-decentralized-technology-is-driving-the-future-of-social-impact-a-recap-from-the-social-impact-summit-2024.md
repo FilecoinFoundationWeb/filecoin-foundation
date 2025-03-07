@@ -13,7 +13,7 @@ description: This month, the Social Impact Summit 2024, co-hosted by
   about the sessions and themes that emerged from the inaugural Social Impact
   Summit 2024.
 image:
-  url: /assets/images/031224-sis-retro.png
+  src: /assets/images/031224-sis-retro.png
 date: 2024-03-28T17:04:06.099Z
 seo:
   noindex: false

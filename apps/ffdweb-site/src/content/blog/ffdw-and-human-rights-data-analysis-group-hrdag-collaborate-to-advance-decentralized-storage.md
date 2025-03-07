@@ -9,7 +9,7 @@ description: >-
   for and adoption of decentralized web technologies
 author: Filecoin Foundation for the Decentralized Web
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423829fcf3ec16737f20d9_hrdag.png
   alt: null
 updated-on: "2023-04-21T07:18:21.985Z"

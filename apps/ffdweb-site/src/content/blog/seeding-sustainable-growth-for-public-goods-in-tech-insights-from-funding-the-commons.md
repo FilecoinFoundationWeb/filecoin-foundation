@@ -7,7 +7,7 @@ published-on: 2024-05-03T18:12:47.391Z
 post-date: 2024-05-03T18:12:47.400Z
 featured: false
 image:
-  url: /assets/images/043024_fundingthecommons_recap.png
+  src: /assets/images/043024_fundingthecommons_recap.png
   alt:
     "Seeding Sustainable Growth for Public Goods in Tech: Insights from Funding
     the Commons"

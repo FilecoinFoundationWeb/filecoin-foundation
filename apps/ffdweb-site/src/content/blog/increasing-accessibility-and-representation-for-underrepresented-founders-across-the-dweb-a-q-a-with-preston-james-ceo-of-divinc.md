@@ -7,7 +7,7 @@ published-on: 2023-07-12T19:47:37.228Z
 post-date: 2023-07-12T19:47:37.240Z
 featured: false
 image:
-  url: /assets/images/0711-divinc.png
+  src: /assets/images/0711-divinc.png
 date: 2023-07-12T19:47:37.251Z
 seo:
   noindex: false

@@ -1,4 +1,4 @@
-import { extractSlugFromFilename } from '@/utils/fileUtils'
+import { extractSlugFromFilename } from '@filecoin-foundation/utils/fileUtils'
 
 import { getEcosystemProjectsData } from './getEcosystemProjectData'
 

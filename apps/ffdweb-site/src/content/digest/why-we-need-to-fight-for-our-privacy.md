@@ -3,26 +3,20 @@ title: Why We Need To Fight For Our Privacy
 created-on: 2023-10-18T18:48:49.064Z
 updated-on: 2023-10-18T18:48:49.074Z
 published-on: 2023-10-18T18:48:49.093Z
-issue: 1
-: 10
-description: In this digital age, we need to learn the importance of privacy
-  and change our attitudes about our data, instead of just accepting the
-  conventional wisdom.
+issue-number: "1"
+article-number: 10
 image:
-  url: /assets/images/DWD-Illustration-10.png
-author: Naomi Brockwell
-author-profile:
-  url: /assets/images/dwd-profile-07.png
-author-bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and
-  author of "Beginner's Introduction to Privacy"
-tags: digest
-date: 2023-10-18T18:48:49.099Z
+  src: /assets/images/DWD-Illustration-10.png
+authors:
+  - first-name: Naomi
+    last-name: Brockwell
+    company: NBTV.media
+    image:
+      src: /assets/images/dwd-profile-07.png
+    # bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and author of "Beginner's Introduction to Privacy"
+
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  og:image: /assets/images/DWD-Illustration-10.png
-  title: "FFDW DWeb Digest: Why We Need To Fight For Our Privacy"
+  description: "In this digital age, we need to learn the importance of privacy and change our attitudes about our data, instead of just accepting the conventional wisdom."
 ---
 
 We all love good sci-fi films, such as those that show us some dystopian future surveillance state where the government monitors its citizens' every move. We eagerly follow the story, and enjoy the protagonist’s quest to restore privacy and freedom of speech, and bring down the centralized powers. We’re comforted by the belief that “it’s just a film — that could never happen here. Our freedoms are secure.”

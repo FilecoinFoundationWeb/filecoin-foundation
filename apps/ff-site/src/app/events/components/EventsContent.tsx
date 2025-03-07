@@ -1,3 +1,4 @@
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsMessage'
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
@@ -30,7 +31,6 @@ import { useListboxOptions } from '@/hooks/useListboxOptions'
 import { useSort } from '@/hooks/useSort'
 
 import { Card } from '@/components/Card'
-import { CardGrid } from '@/components/CardGrid'
 import { CategoryFilter } from '@/components/CategoryFilter'
 import { FilterContainer } from '@/components/FilterContainer'
 import { LocationFilter } from '@/components/LocationFilter'

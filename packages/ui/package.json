@@ -18,6 +18,7 @@
     "./BreadCrumbsLayout": "./src/BreadCrumbsLayout.tsx",
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./Card": "./src/Card.tsx",
+    "./CardGrid": "./src/CardGrid.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
@@ -60,6 +61,7 @@
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "remove-markdown": "^0.6.0",
     "tailwindcss": "^4.0.5",
     "usehooks-ts": "^3.1.0"
   }

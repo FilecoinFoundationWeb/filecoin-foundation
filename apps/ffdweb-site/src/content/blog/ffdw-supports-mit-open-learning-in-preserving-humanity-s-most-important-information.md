@@ -10,7 +10,7 @@ description: >-
   Open Learning, an organization focused on transforming teaching and learning
   through the innovative use of digital technologies.
 image:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423830e3c08f43474e3c40_0202-mit.png
   alt: null
 updated-on: "2023-04-21T07:16:01.068Z"

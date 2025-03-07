@@ -14,7 +14,7 @@ description: >
   safeguard this critical data and promote accountability for human rights
   abuse.
 image:
-  url: /assets/images/041524-guest-hrdag.png
+  src: /assets/images/041524-guest-hrdag.png
 date: 2024-04-18T16:50:24.061Z
 seo:
   noindex: false

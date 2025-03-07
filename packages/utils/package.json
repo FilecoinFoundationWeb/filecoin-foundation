@@ -11,10 +11,16 @@
     "./categoryUtils": "./src/categoryUtils.ts",
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
     "./dateUtils": "./src/dateUtils.ts",
+    "./fileUtils": "./src/fileUtils.ts",
+    "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
+    "./getDigestArticleData": "./src/getDigestArticleData.ts",
+    "./getMarkdownData": "./src/getMarkdownData.ts",
     "./linkUtils": "./src/linkUtils.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",
+    "./zodUtils": "./src/zodUtils.ts",
     "./constants/*": "./src/constants/*.ts",
+    "./schemas/*": "./src/schemas/*.ts",
     "./types/*": "./src/types/*.ts"
   },
   "scripts": {
@@ -26,6 +32,11 @@
     "@filecoin-foundation/typescript-config": "*"
   },
   "peerDependencies": {
-    "slugify": "^1.6.6"
+    "camelcase-keys": "^9.1.3",
+    "date-fns": "^4.1.0",
+    "gray-matter": "^4.0.3",
+    "fast-glob": "^3.3.3",
+    "slugify": "^1.6.6",
+    "zod": "^3.24.1"
   }
 }

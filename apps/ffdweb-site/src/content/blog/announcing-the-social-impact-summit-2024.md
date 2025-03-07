@@ -6,7 +6,7 @@ published-on: 2023-12-12T18:49:11.767Z
 post-date: 2023-12-12T18:49:11.774Z
 featured: false
 image:
-  url: /assets/images/eventbrite-header.png
+  src: /assets/images/eventbrite-header.png
 date: 2023-12-12T18:49:11.782Z
 seo:
   noindex: false

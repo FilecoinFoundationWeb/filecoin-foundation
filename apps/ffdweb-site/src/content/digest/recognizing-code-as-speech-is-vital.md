@@ -3,26 +3,21 @@ title: Recognizing Code as Speech is Vital
 created-on: 2023-10-18T18:44:40.679Z
 updated-on: 2023-10-18T18:44:40.685Z
 published-on: 2023-10-18T18:44:40.692Z
-issue: 1
-: 8
-description: A more distributed web requires a global recognition that code is
-  protected speech. Without it, our ability to build a decentralized world is
-  greatly limited.
+issue-number: "1"
+article-number: 8
 image:
-  url: /assets/images/DWD-Illustration-08.png
-author: Kurt Opsahl
-author-profile:
-  url: /assets/images/dwd-profile-05.png
-author-bio: Kurt Opsahl works to help build the legal and policy space in
-  which the decentralized web can thrive.
-tags: digest
-date: 2023-10-18T18:44:40.696Z
+  src: /assets/images/DWD-Illustration-08.png
+authors:
+  - first-name: Kurt
+    last-name: Opsahl
+    company: "Filecoin Foundation"
+    image:
+      src: /assets/images/dwd-profile-05.png
+    # bio: Kurt Opsahl works to help build the legal and policy space in which the decentralized web can thrive.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: Recognizing Code as Speech is Vital"
-  og:image: /assets/images/DWD-Illustration-08.png
+  description: A more distributed web requires a global recognition that code is
+    protected speech. Without it, our ability to build a decentralized world is
+    greatly limited.
 ---
 
 Strong protection for code as speech is **critical** to the development of software around the world, especially open-source projects essential for the distributed web, which rely on many authors and contributors to build, improve, and secure a codebase. These projects’ developers often consist of a community of volunteers, contributing to the project’s collective goal of building a better tool that aligns with their dream of designing a more equitable decentralized future.  

@@ -5,7 +5,7 @@ updated-on: 2023-05-09T10:05:00.000Z
 published-on: 2023-05-09T10:05:00.000Z
 post-date: 2023-05-09T10:05:00.000Z
 image:
-  url: /assets/images/0509-demo-qa.png
+  src: /assets/images/0509-demo-qa.png
 date: 2023-05-09T10:05:00.000Z
 seo:
   noindex: false

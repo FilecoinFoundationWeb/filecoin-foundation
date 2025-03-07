@@ -2,8 +2,7 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
 import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
-
-import { type SlugParams } from '@/types/paramsTypes'
+import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 

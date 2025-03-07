@@ -3,27 +3,19 @@ title: "Twiddler: Configurability for Me, But Not For Thee."
 created-on: 2023-10-18T19:06:45.768Z
 updated-on: 2023-10-18T19:06:45.786Z
 published-on: 2023-10-18T19:06:45.797Z
-issue: 1
-: 12
-description: Big centralized platforms twiddle the dials on our internet
-  experience, while preventing users from configuring their own experience. It’s
-  a key source of the “enshittification” of the internet.
+issue-number: "1"
+article-number: 12
 image:
-  url: /assets/images/DWD-Illustration-12.png
-author: Cory Doctorow
-author-profile:
-  url: /assets/images/dwd-profile-09.png
-author-bio: Cory Doctorow (craphound.com) is a science fiction author,
-  activist and journalist. He is the author of many books, most recently RED
-  TEAM BLUES, a science fiction crime thriller.
-tags: digest
-date: 2023-10-18T19:06:45.805Z
+  src: /assets/images/DWD-Illustration-12.png
+authors:
+  - first-name: Cory
+    last-name: Doctorow
+    company: craphound.com
+    image:
+      src: /assets/images/dwd-profile-09.png
+    # bio: Cory Doctorow (craphound.com) is a science fiction author,activist and journalist. He is the author of many books, most recently RED TEAM BLUES, a science fiction crime thriller.
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: Twiddler: Configurability for Me, But Not For Thee."
-  og:image: /assets/images/DWD-Illustration-12.png
+  description: "Big centralized platforms twiddle the dials on our internet experience, while preventing users from configuring their own experience. It’s a key source of the “enshittification” of the internet."
 ---
 
 Tracking Exposed is a scrappy European nonprofit that attempts to understand how online recommendation algorithms work. They combine data from volunteers who install a plugin with data acquired through “headless browsers” to attempt to reverse-engineer the principles that determine what you see when you visit or search Tiktok, Amazon, YouTube, Facebook or Pornhub.

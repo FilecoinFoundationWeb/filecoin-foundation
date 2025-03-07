@@ -1,30 +1,21 @@
 ---
-title: The Debate Over DWeb vs. Web3 & The Decentralized Elephant in the Room
+title: "The Debate Over DWeb vs. Web3 & The Decentralized Elephant in the Room"
 created-on: 2023-10-16T17:27:25.370Z
 updated-on: 2023-10-16T17:27:25.377Z
 published-on: 2023-10-16T17:27:25.385Z
-issue: 1
-: 4
-description: What matters in this discussion – in any discussion about
-  technology, really – is who’s designing it, who controls it, and who stands to
-  benefit?
+issue-number: "1"
+article-number: 4
 image:
-  url: /assets/images/DWD-Illustration-04.png
-author: Mai Ishikawa Sutton
-author-profile:
-  url: /assets/images/dwd-profile-03.png
-author-bio: Mai Ishikawa Sutton is a senior organizer with DWeb projects,
-  co-founder of Distributed.Press and COMPOST magazine, and contributor to Hypha
-  Worker Co-op.
-tags: digest
-date: 2023-10-16T17:27:25.391Z
+  src: /assets/images/DWD-Illustration-04.png
+authors:
+  - first-name: Mai
+    last-name: Ishikawa Sutton
+    company: Distributed.Press
+    image:
+      src: /assets/images/dwd-profile-03.png
+    # bio: "Mai Ishikawa Sutton is a senior organizer with DWeb projects, co-founder of Distributed.Press and COMPOST magazine, and contributor to Hypha Worker Co-op."
 seo:
-  noindex: false
-  twitter:title: ""
-  twitter:card: ""
-  title: "FFDW DWeb Digest: The Debate Over DWeb vs. Web3 & The Decentralized
-    Elephant in the Room"
-  og:image: /assets/images/DWD-Illustration-04.png
+  description: "What matters in this discussion – in any discussion about technology, really – is who’s designing it, who controls it, and who stands to benefit?"
 ---
 
 This article started off as one that would delineate the difference between the terms “DWeb” (as in decentralized Web) and “Web3” (as in Web 3.0). It seemed like a useful exercise to tease out the communities that implicitly or explicitly support these terms. But the more I dug into it, the more I realized this wasn’t that interesting in itself.

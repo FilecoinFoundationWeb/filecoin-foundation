@@ -11,7 +11,7 @@ description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
   preservation, and how this initiative is building a more inclusive and
   equitable future for archiving.
 image:
-  url: /assets/images/techsoup-q-a.webp
+  src: /assets/images/techsoup-q-a.webp
 date: 2025-02-06T21:12:58.523Z
 seo:
   noindex: false
