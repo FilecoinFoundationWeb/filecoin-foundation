@@ -16,7 +16,7 @@ authors:
     # bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and author of "Beginner's Introduction to Privacy"
 
 seo:
-  description: "Privacy isn't just about hiding - it's essential for freedom, security, and democracy. Learn why surveillance threatens our future and how the erosion of privacy impacts everyone, even those who think they have 'nothing to hide.'"
+  description: "Privacy is essential for freedom and democracy. Learn how surveillance threatens our future and why privacy matters - even if you think you have 'nothing to hide.'"
 ---
 
 We all love good sci-fi films, such as those that show us some dystopian future surveillance state where the government monitors its citizens' every move. We eagerly follow the story, and enjoy the protagonist’s quest to restore privacy and freedom of speech, and bring down the centralized powers. We’re comforted by the belief that “it’s just a film — that could never happen here. Our freedoms are secure.”
