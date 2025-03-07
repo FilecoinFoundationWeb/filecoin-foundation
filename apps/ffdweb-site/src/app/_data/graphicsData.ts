@@ -2,6 +2,7 @@ import type { StaticImageProps } from '@filecoin-foundation/utils/types/imageTyp
 
 import about from '@/assets/graphics/about.webp'
 import digest from '@/assets/graphics/digest.webp'
+import dWebDigestCover from '@/assets/graphics/dweb-digest-cover.webp'
 import homepage from '@/assets/graphics/homepage.webp'
 import learningResources from '@/assets/graphics/learning-resources.webp'
 import projects from '@/assets/graphics/projects.webp'
@@ -18,6 +19,10 @@ export const graphicsData: Record<string, StaticImageProps> = {
   digest: {
     data: digest,
     alt: 'A dimly lit interior of a print shop with multiple printing machines, colorful supply bins, digital control panels, and a "PRINT SHOP" sign illuminated with neon-style lighting.',
+  },
+  dWebDigestCover: {
+    data: dWebDigestCover,
+    alt: 'A futuristic "D-WEB DIGEST" magazine cover featuring a glowing network sphere graphic with neon colors on black, showcasing decentralized web technology themes.',
   },
   homepage: {
     data: homepage,
