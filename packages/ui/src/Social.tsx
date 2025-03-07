@@ -10,18 +10,18 @@ type linkWithIcon = {
 
 type SocialProps = {
   linksWithIcons: linkWithIcon[]
+  size?: IconProps['size']
 }
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2',
 }
 
-export function Social({ linksWithIcons }: SocialProps) {
+export function Social({ linksWithIcons, size = 32 }: SocialProps) {
   return (
     <ul
       className={clsx(
         'flex flex-wrap items-center justify-between gap-6',
-
         TOUCH_TARGET.touchAreaOffset,
       )}
     >
@@ -34,11 +34,11 @@ export function Social({ linksWithIcons }: SocialProps) {
               rel="noopener noreferrer"
               title={`Go to ${label}`}
               className={clsx(
-                'hover:text-brand-400 focus:brand-outline',
+                'social-link focus:brand-outline',
                 TOUCH_TARGET.touchAreaPadding,
               )}
             >
-              <Icon component={icon} size={32} weight="light" />
+              <Icon component={icon} size={size} weight="light" />
             </a>
           </li>
         )

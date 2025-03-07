@@ -34,24 +34,18 @@ export function NotificationDialog({
         transition
         role="alertdialog"
         aria-modal="true"
-        className={clsx(
-          'flex w-80 gap-3 rounded-lg border border-brand-100/20 bg-brand-800 p-5 sm:w-96',
-          {
-            'animate-slide-in-from-top': isOpen,
-            'animate-shrink-and-fade-out': !isOpen,
-          },
-        )}
+        className={clsx('notification flex w-80 gap-3 p-5 sm:w-96', {
+          'animate-slide-in-from-top': isOpen,
+          'animate-shrink-and-fade-out': !isOpen,
+        })}
       >
-        <DialogTitle
-          as="h3"
-          className="flex flex-1 items-center gap-3 text-brand-100"
-        >
+        <DialogTitle as="h3" className="flex flex-1 items-center gap-3">
           {icon && <Icon {...icon} />}
           <span>{title}</span>
         </DialogTitle>
 
         <CloseButton
-          className="rounded-md p-1 text-brand-200 hover:text-brand-400 focus:brand-outline"
+          className="notification-close-button focus:brand-outline cursor-pointer p-1"
           aria-label="Close notification"
         >
           <Icon component={X} size={16} aria-hidden="true" />

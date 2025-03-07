@@ -1,25 +1,27 @@
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import {
+  Popover,
+  type PopoverProps,
+} from '@filecoin-foundation/ui/Tooltip/Popover'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { Button } from '@headlessui/react'
 import { Question } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
-
-import { Popover, type PopoverProps } from '@/components/Tooltip/Popover'
 
 type TableHeaderWithPopoverProps = {
   title: string
   description: PopoverProps['description']
 }
 
-const TOUCH_TARGET: TouchTarget = {
+const TOUCH_TARGET = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2',
-}
+} as const satisfies TouchTarget
 
-const TOUCH_TARGET_ICON: TouchTarget & { visibleElementSize: number } = {
+const TOUCH_TARGET_ICON = {
   visibleElementSize: 20,
   touchAreaPadding: 'p-1.5',
-}
+} as const satisfies TouchTarget
 
 export function PopoverHeader({
   title,

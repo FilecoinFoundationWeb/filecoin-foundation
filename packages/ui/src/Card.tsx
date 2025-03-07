@@ -52,10 +52,10 @@ export type CardProps = {
 }
 
 const borderStyles = {
-  lighter: 'card-border-lighter',
-  light: 'card-border-light',
-  base: 'card-border-base',
-  dark: 'card-border-dark',
+  lighter: 'card-border--lighter',
+  light: 'card-border--light',
+  base: 'card-border--base',
+  dark: 'card-border--dark',
 }
 
 export function Card({

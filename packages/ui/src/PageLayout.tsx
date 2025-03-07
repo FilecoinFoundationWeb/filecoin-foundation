@@ -7,7 +7,7 @@ type PageLayoutProps = {
 
 const gapMap = {
   default: 'gap-16',
-  large: 'gap-16 sm:gap-32',
+  large: 'gap-32',
 } as const
 
 export function PageLayout({ children, gap = 'default' }: PageLayoutProps) {

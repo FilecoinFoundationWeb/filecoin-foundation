@@ -3,7 +3,6 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-// import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 
@@ -88,7 +87,7 @@ export default async function Digest() {
         kicker="Social Media"
         title="Follow us and join the conversation."
       >
-        <Social linksWithIcons={socialLinksWithIcons} />
+        <Social linksWithIcons={socialLinksWithIcons} size={40} />
       </CTASection>
     </PageLayout>
   )

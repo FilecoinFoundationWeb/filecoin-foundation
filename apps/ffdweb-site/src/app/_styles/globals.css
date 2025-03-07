@@ -29,9 +29,11 @@
   --color-neutral-950: #0d0d0d;
 
   --color-icon-primary: theme('colors.brand.primary.300');
+  --color-icon-accent: theme('colors.brand.secondary.100');
   --color-icon-subtle: theme('colors.neutral.300'); /* CHECK */
 
   --leading-heading: 1.3;
+  --spacing-readable: 60ch;
 }
 
 @utility brand-outline {
@@ -136,45 +138,80 @@
   /* BUTTONS */
   .button {
     @apply border-2 font-bold;
+
+    &.button--primary {
+      @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100; /* CHECK */
+    }
+
+    &.button--ghost {
+      @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100; /* CHECK */
+    }
+
+    &.button--disabled {
+      @apply bg-neutral-300; /* CHECK */
+    }
   }
 
-  .button--primary {
-    @apply border-brand-primary-300 bg-brand-primary-300 text-neutral-950 hover:border-neutral-100 hover:bg-neutral-100 focus:bg-neutral-100; /* CHECK */
+  /* CARD */
+  .card {
+    @apply bg-transparent;
+
+    &.card-border--lighter {
+      @apply border-brand-primary-500;
+    }
+
+    &.card-border--light {
+      @apply border-brand-primary-600;
+    }
+
+    &.card-border--base {
+      @apply border-brand-primary-700;
+    }
+
+    &.card-border--dark {
+      @apply border-brand-primary-800;
+    }
   }
 
-  .button--ghost {
-    @apply text-brand-primary-300 border-brand-primary-300 focus:text-brand-primary-300 bg-neutral-950 hover:border-neutral-100 hover:text-neutral-100; /* CHECK */
+  .card-image {
+    @apply px-0.5 pt-0.5;
   }
 
-  .button--disabled {
-    @apply bg-neutral-300; /* CHECK */
+  .card-link {
+    @apply text-brand-primary-300;
   }
 
-  /* SITE LAYOUT */
-  .site-layout {
-    @apply bg-neutral-950 text-neutral-50;
+  /* COPY TO CLIPBOARD */
+  .copy-to-clipboard-button {
+    @apply hover:text-brand-primary-400;
   }
 
-  /* ICON BUTTONS */
+  /* ICON BUTTON */
   .icon-button {
     @apply text-brand-primary-300 hover:bg-brand-primary-800;
   }
 
-  /* TAGS */
-  .tag-label {
-    @apply border-2;
+  /* KEY MEMBER CARD */
+  .key-member-card {
+    @apply border-brand-primary-700 border p-0.5;
+
+    .key-member-card-link {
+      @apply text-brand-primary-300;
+    }
   }
 
-  .tag-label--primary {
-    @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800; /* CHECK */
+  /* META */
+  .meta {
+    @apply text-neutral-50;
   }
 
-  .tag-label--secondary {
-    @apply border-neutral-200 bg-neutral-950 text-neutral-200; /* CHECK */
-  }
+  /* NOTIFICATION DIALOG */
+  .notification {
+    @apply border border-neutral-50/40 bg-neutral-950;
 
-  .text-link {
-    @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
+    .notification-close-button {
+      @apply hover:text-brand-primary-300 hover:bg-brand-primary-800 text-neutral-100;
+    }
   }
 
   /* PAGINATION */
@@ -227,8 +264,9 @@
     @apply text-brand-primary-300 peer-hover:text-brand-primary-400 peer-focus:text-brand-primary-100;
   }
 
-  .search-clear-icon {
-    @apply rounded-none;
+  /* SITE LAYOUT */
+  .site-layout {
+    @apply bg-neutral-950 text-neutral-50;
   }
 
   /* SLIDE OVER */
@@ -236,37 +274,26 @@
     @apply bg-neutral-950;
   }
 
-  /* CARD */
-  .card {
-    @apply bg-transparent;
-
-    &.card-border-lighter {
-      @apply border-brand-primary-500;
-    }
-
-    &.card-border-light {
-      @apply border-brand-primary-600;
-    }
-
-    &.card-border-base {
-      @apply border-brand-primary-700;
-    }
-
-    &.card-border-dark {
-      @apply border-brand-primary-800;
-    }
-  }
-
-  .card-image {
-    @apply px-0.5 pt-0.5;
-  }
-
-  .card-link {
+  /* SOCIAL */
+  .social-link {
     @apply text-brand-primary-300;
   }
 
-  /* META */
-  .meta {
-    @apply text-neutral-50;
+  /* TAGS */
+  .tag-label {
+    @apply border-2;
+
+    &.tag-label--primary {
+      @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800; /* CHECK */
+    }
+
+    &.tag-label--secondary {
+      @apply border-neutral-200 bg-neutral-950 text-neutral-200; /* CHECK */
+    }
+  }
+
+  /* TEXT LINKS */
+  .text-link {
+    @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
   }
 }

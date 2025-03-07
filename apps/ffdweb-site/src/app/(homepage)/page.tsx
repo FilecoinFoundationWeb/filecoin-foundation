@@ -1,17 +1,20 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
 import { PATHS } from '@/constants/paths'
-import { FFDW_URLS, SEO } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
+import { CTALink } from '@/components/CTALink'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
+import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
 export default function Home() {
   return (
@@ -34,23 +37,21 @@ export default function Home() {
           'Filecoin Foundation for the Decentralized Web (FFDW) is the sister nonprofit of Filecoin Foundation. FFDW is a 501(c)(3) nonprofit committed to preserving humanity’s most important information and supporting the development and adoption of decentralized technologies. While Filecoin Foundation stewards the Filecoin network’s future, FFDW promotes the broader development of the decentralized web (DWeb).',
           'FFDW’s work includes supporting open source software and protocols that safeguard critical data from centralized control and single points of failure. FFDW also empowers institutions to preserve vulnerable information by leveraging the resilience of decentralized storage.',
         ]}
-        cta={{
-          href: PATHS.ABOUT.path,
-          text: 'More About FFDW',
-        }}
-      />
+      >
+        <CTALink href={PATHS.ABOUT.path}>More About FFDW</CTALink>
+      </PageSection>
 
       <PageSection
         isCentered
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
-        cta={{
-          href: PATHS.PROJECTS.path,
-          text: 'View All Projects',
-          isButton: true,
-        }}
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        <div className="flex justify-center">
+          <Button href={PATHS.PROJECTS.path} baseDomain={BASE_DOMAIN}>
+            View Projects
+          </Button>
+        </div>
       </PageSection>
 
       <PageSection
@@ -59,15 +60,14 @@ export default function Home() {
         description={[
           'Learn how decentralized technologies are creating a better future for a better web. Explore educational content, research papers, tutorials, interactive content, and more resources from FFDW and beyond.',
         ]}
-        cta={{
-          href: PATHS.LEARNING_RESOURCES.path,
-          text: 'View All Learning Resources',
-        }}
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        <CTALink href={PATHS.LEARNING_RESOURCES.path}>
+          View All Learning Resources
+        </CTALink>
       </PageSection>
 
-      <PageSection
+      <PageSectionWithImage
         kicker="FFDW Digest"
         title="Decentralization and Why it Matters"
         image={graphicsData.dWebDigestCover}
@@ -76,7 +76,7 @@ export default function Home() {
         ]}
         cta={{
           href: PATHS.DIGEST.path,
-          text: 'Read FFDW Digest',
+          children: 'Read FFDW Digest',
         }}
       />
 
@@ -84,13 +84,13 @@ export default function Home() {
         isCentered
         kicker="Latest News"
         title="Updates from FFDW and DWeb Community"
-        cta={{
-          href: PATHS.BLOG.path,
-          text: 'View All',
-          isButton: true,
-        }}
       >
         <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        <div className="flex justify-center">
+          <Button href={PATHS.BLOG.path} baseDomain={BASE_DOMAIN}>
+            View All
+          </Button>
+        </div>
       </PageSection>
 
       <CTASection
