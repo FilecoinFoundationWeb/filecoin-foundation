@@ -39,7 +39,7 @@ export function Popover({ children, description, side = 'top' }: PopoverProps) {
           id={popoverId}
           sideOffset={GAP_BETWEEN_POPOVER_AND_TRIGGER}
           side={side}
-          className="tooltip-content tooltip-animation"
+          className="tooltip-base tooltip-content tooltip-animation"
         >
           {description}
           <RadixPopover.Arrow className="tooltip-arrow" />

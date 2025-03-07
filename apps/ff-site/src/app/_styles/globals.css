@@ -25,10 +25,6 @@
   --color-icon-error: theme('colors.brand.error');
 
   --spacing-readable: 60ch;
-
-  --tooltip-background-color: var(--color-brand-200);
-  --tooltip-color: var(--color-brand-800);
-  --tooltip-arrow-color: var(--color-brand-200);
 }
 
 @utility brand-outline {
@@ -300,5 +296,14 @@
     &.notification-close-button {
       @apply rounded-md text-brand-200 hover:text-brand-400;
     }
+  }
+
+  /* TOOLTIP */
+  .tooltip-content {
+    @apply rounded-lg bg-brand-200 p-2 text-brand-800;
+  }
+
+  .tooltip-arrow {
+    @apply fill-brand-200;
   }
 }

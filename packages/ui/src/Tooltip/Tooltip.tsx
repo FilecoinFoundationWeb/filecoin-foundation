@@ -33,7 +33,7 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
             sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
             side={side}
             role="tooltip"
-            className="tooltip-content tooltip-animation"
+            className="tooltip-base tooltip-content tooltip-animation"
           >
             {description}
             <RadixTooltip.Arrow className="tooltip-arrow" />
