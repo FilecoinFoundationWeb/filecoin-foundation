@@ -19,6 +19,7 @@
     "./BreakpointDebugger": "./src/BreakpointDebugger.tsx",
     "./Card": "./src/Card.tsx",
     "./CardGrid": "./src/CardGrid.tsx",
+    "./CopyToClipboard": "./src/CopyToClipboard.tsx",
     "./DescriptionText": "./src/DescriptionText.tsx",
     "./DigestArticleHeader": "./src/DigestArticleHeader.tsx",
     "./ErrorMessage": "./src/ErrorMessage.tsx",
@@ -29,6 +30,7 @@
     "./KeyMemberCard": "./src/KeyMemberCard.tsx",
     "./MarkdownPage": "./src/MarkdownPage.tsx",
     "./Meta": "./src/Meta.tsx",
+    "./NotificationDialog": "./src/NotificationDialog/NotificationDialog.tsx",
     "./NoResultsMessage": "./src/NoResultsMessage.tsx",
     "./NoSearchResultsMessage": "./src/NoSearchResultsMessage.tsx",
     "./PageLayout": "./src/PageLayout.tsx",
@@ -41,6 +43,7 @@
     "./TagComponents/*": "./src/TagComponents/*.tsx",
     "./TextLink": "./src/TextLink/index.ts",
     "./TextLink/*": "./src/TextLink/*.tsx",
+    "./Tooltip/*": "./src/Tooltip/*.tsx",
     "./Pagination": "./src/Pagination/index.ts",
     "./StructuredDataScript": "./src/StructuredDataScript.tsx"
   },

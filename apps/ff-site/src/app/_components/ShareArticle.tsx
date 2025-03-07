@@ -1,15 +1,14 @@
 'use client'
 
+import { CopyToClipboard } from '@filecoin-foundation/ui/CopyToClipboard'
 import { Icon } from '@filecoin-foundation/ui/Icon'
+import { Tooltip } from '@filecoin-foundation/ui/Tooltip/Tooltip'
 import type { TouchTarget } from '@filecoin-foundation/utils/types/touchTargetType'
 import { clsx } from 'clsx'
 
 import { BASE_URL } from '@/constants/siteMetadata'
 
 import { generateShareArticleLinks } from '@/utils/generateShareArticleLinks'
-
-import { CopyToClipboard } from '@/components/CopyToClipboard'
-import { Tooltip } from '@/components/Tooltip/Tooltip'
 
 type ShareArticleProps = {
   articleTitle: string

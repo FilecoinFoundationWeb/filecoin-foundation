@@ -279,4 +279,27 @@
   .social-media-primary {
     @apply hover:text-brand-400;
   }
+
+  /* COPY TO CLIPBOARD */
+  .copy-to-clipboard-button {
+    @apply hover:text-brand-400;
+  }
+
+  /* NOTIFICATION DIALOG */
+  .notification {
+    @apply rounded-lg border border-brand-100/20 bg-brand-800;
+
+    &.notification-close-button {
+      @apply rounded-md text-brand-200 hover:text-brand-400;
+    }
+  }
+
+  /* TOOLTIP */
+  .tooltip {
+    @apply rounded-lg bg-brand-200 p-2 text-brand-800;
+
+    &.tooltip-arrow {
+      @apply fill-brand-200;
+    }
+  }
 }
