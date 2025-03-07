@@ -1,4 +1,4 @@
-import { VALID_SORT_KEYS } from '@/constants/sortConstants'
+import { VALID_SORT_KEYS } from '@filecoin-foundation/utils/constants/sortConstants'
 
 export type ValidSortKey = (typeof VALID_SORT_KEYS)[number]
 

@@ -1,4 +1,5 @@
 import type { SeoMetadata } from '@filecoin-foundation/utils/schemas/SeoMetadataSchema'
+import type { BlogPost } from '@filecoin-foundation/utils/types/blogPostType'
 import type { WebPage, WithContext } from 'schema-dts'
 
 import { PATHS } from '@/constants/paths'
@@ -6,9 +7,6 @@ import { BASE_URL, ORGANIZATION_NAME } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
 
 import { generateWebPageStructuredData } from '@/utils/generateWebPageStructuredData'
-
-
-import type { BlogPost } from '../types/blogPostType'
 
 export function generateStructuredData(
   posts: Array<BlogPost>,

@@ -2,5 +2,6 @@ import { createBlogPostFrontmatterSchema } from '@filecoin-foundation/utils/sche
 
 import configData from '@/data/cmsConfigSchema.json'
 
-export const BlogPostFrontmatterSchema =
-  createBlogPostFrontmatterSchema(configData)
+export const BlogPostFrontmatterSchema = createBlogPostFrontmatterSchema({
+  configData,
+})

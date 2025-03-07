@@ -1,22 +1,22 @@
 ---
-title: "Preserving the Past, Empowering the Future: A Q&A with Billy Bicket, Head of Maker Labs at TechSoup"
+title: "Preserving the Past, Empowering the Future: A Q&A with Billy Bicket,
+  Head of Maker Labs at TechSoup"
 created-on: 2025-02-06T21:12:58.463Z
 updated-on: 2025-02-06T21:12:58.480Z
 published-on: 2025-02-06T21:12:58.493Z
-category: ecosystem
+post-date: 2025-02-06T21:12:58.510Z
+featured: false
 description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
   TechSoup, to discuss the goals of the CML, its implications for cultural
   preservation, and how this initiative is building a more inclusive and
   equitable future for archiving.
 image:
   src: /assets/images/techsoup-q-a.webp
+date: 2025-02-06T21:12:58.523Z
 seo:
-  twitter:
-    card: summary
-  description: In this Q&A, we sit down with Billy Bicket, Head of Maker Labs at
-    TechSoup, to discuss the goals of the CML, its implications for cultural
-    preservation, and how this initiative is building a more inclusive and
-    equitable future for archiving.
+  noindex: false
+  twitter:title: summary
+  twitter:card: summary
 ---
 
 In an era of eroding cultural memory, the need for innovative approaches to preserving collective history has never been greater. Decentralized technologies offer a transformative path forward, enabling communities to reclaim ownership of their narratives while democratizing access to the past.
