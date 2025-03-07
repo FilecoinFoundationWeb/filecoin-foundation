@@ -39,10 +39,7 @@ export function NotificationDialog({
           'animate-shrink-and-fade-out': !isOpen,
         })}
       >
-        <DialogTitle
-          as="h3"
-          className="notification-title flex flex-1 items-center gap-3"
-        >
+        <DialogTitle as="h3" className="flex flex-1 items-center gap-3">
           {icon && <Icon {...icon} />}
           <span>{title}</span>
         </DialogTitle>

@@ -68,7 +68,3 @@
     }
   }
 }
-
-.tooltip-base {
-  @apply max-w-xs px-4 py-3 text-sm leading-tight focus-visible:outline-none;
-}

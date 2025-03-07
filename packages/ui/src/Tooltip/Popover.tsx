@@ -4,7 +4,7 @@ import { useId, useState, type ReactNode } from 'react'
 
 import * as RadixPopover from '@radix-ui/react-popover'
 
-import './Tooltip.css'
+import { TOOLTIP_CLASSES } from './Tooltip'
 
 type PopoverRenderProps = {
   open: boolean
@@ -39,7 +39,7 @@ export function Popover({ children, description, side = 'top' }: PopoverProps) {
           id={popoverId}
           sideOffset={GAP_BETWEEN_POPOVER_AND_TRIGGER}
           side={side}
-          className="tooltip-base tooltip-content tooltip-animation"
+          className={TOOLTIP_CLASSES}
         >
           {description}
           <RadixPopover.Arrow className="tooltip-arrow" />

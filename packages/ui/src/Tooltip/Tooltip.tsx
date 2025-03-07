@@ -17,6 +17,8 @@ export type TooltipProps = {
 }
 
 const GAP_BETWEEN_TOOLTIP_AND_TRIGGER = 0
+export const TOOLTIP_CLASSES =
+  'tooltip tooltip-animation max-w-xs px-4 py-3 text-sm leading-tight focus-visible:outline-none'
 
 export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
   const [open, setOpen] = useState(false)
@@ -33,7 +35,7 @@ export function Tooltip({ children, description, side = 'top' }: TooltipProps) {
             sideOffset={GAP_BETWEEN_TOOLTIP_AND_TRIGGER}
             side={side}
             role="tooltip"
-            className="tooltip-base tooltip-content tooltip-animation"
+            className={TOOLTIP_CLASSES}
           >
             {description}
             <RadixTooltip.Arrow className="tooltip-arrow" />

@@ -289,21 +289,17 @@
   .notification {
     @apply rounded-lg border border-brand-100/20 bg-brand-800;
 
-    &.notification-title {
-      @apply text-brand-100;
-    }
-
     &.notification-close-button {
       @apply rounded-md text-brand-200 hover:text-brand-400;
     }
   }
 
   /* TOOLTIP */
-  .tooltip-content {
+  .tooltip {
     @apply rounded-lg bg-brand-200 p-2 text-brand-800;
-  }
 
-  .tooltip-arrow {
-    @apply fill-brand-200;
+    &.tooltip-arrow {
+      @apply fill-brand-200;
+    }
   }
 }
