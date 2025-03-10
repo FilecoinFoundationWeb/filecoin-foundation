@@ -14,7 +14,6 @@ logo:
 blog-link: https://www.ffdweb.org/blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
 external-link: https://www.ffdweb.org/blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
 past-collaborations: true
-date: 2023-06-30T16:45:37.096Z
 seo:
   noindex: false
   twitter:title: summary

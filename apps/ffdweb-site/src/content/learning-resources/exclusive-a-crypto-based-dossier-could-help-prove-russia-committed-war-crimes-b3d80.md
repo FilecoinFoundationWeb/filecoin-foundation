@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://www.cnn.com/2022/06/10/tech/ukraine-war-crimes-blockchain/index.html
 technicality: "1"
 language: English

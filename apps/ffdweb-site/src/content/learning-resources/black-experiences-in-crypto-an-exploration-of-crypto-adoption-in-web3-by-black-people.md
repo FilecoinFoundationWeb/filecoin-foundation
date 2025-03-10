@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: >-
   https://static1.squarespace.com/static/642ee3613ff85374fe5a01d1/t/645e68407e78a73d47804237/1683908679666/CRADL+Report+-+Black+Experiences+in+Crypto.pdf
 technicality: "1"

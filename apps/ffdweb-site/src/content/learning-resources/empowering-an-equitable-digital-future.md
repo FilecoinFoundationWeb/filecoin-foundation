@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   /ffdw-and-connect-humanity-empowering-an-equitable-digital-future/
 technicality: "1"

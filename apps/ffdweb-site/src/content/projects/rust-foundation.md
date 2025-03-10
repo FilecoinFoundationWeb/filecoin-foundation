@@ -10,7 +10,6 @@ logo:
   url: /assets/images/rust-foundation-logo-new-black.png
 external-link: https://foundation.rust-lang.org/
 past-collaborations: false
-date: 2024-02-20T16:57:25.209Z
 seo:
   noindex: false
   twitter:title: summary

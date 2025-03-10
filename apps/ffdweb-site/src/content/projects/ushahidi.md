@@ -12,7 +12,6 @@ logo:
   url: /assets/images/ushahidi-logo_black_1x-1-.png
 external-link: https://www.ushahidi.com/
 past-collaborations: true
-date: 2024-02-23T23:59:13.840Z
 seo:
   noindex: false
   twitter:title: summary

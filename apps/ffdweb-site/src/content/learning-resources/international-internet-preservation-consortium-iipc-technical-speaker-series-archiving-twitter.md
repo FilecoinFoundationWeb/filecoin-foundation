@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://lil.law.harvard.edu/blog/2023/01/18/thread-keeper-iipc-webinar/
 technicality: "2"
 language: English

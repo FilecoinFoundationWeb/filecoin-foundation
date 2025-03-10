@@ -1,10 +1,11 @@
 ---
-featured: false
-post-date: "2023-02-09T00:00:00.000Z"
-author: null
 title: >-
   FFDW Supports MIT Open Learning in Preserving Humanity’s Most Important
   Information
+created-on: "2023-04-21T07:16:01.068Z"
+updated-on: "2023-04-21T07:16:01.068Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to support MIT
   Open Learning, an organization focused on transforming teaching and learning
@@ -12,10 +13,8 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423830e3c08f43474e3c40_0202-mit.png
-  alt: null
-updated-on: "2023-04-21T07:16:01.068Z"
-created-on: "2023-04-21T07:16:01.068Z"
-published-on: "2023-04-21T08:01:04.314Z"
+seo:
+  description: ""
 ---
 
 **_FFDW Supports MIT Open Learning in Preserving Humanity’s Most Important Information_**

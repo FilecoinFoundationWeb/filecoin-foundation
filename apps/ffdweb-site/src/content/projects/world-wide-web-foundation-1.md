@@ -14,7 +14,6 @@ blurb: The Web Foundation advances Sir Tim Berners-Lee's original vision for
 logo:
   url: /assets/images/web-foundation-hi-res-logo.jpeg
 past-collaborations: false
-date: 2023-08-02T20:03:04.132Z
 seo:
   noindex: false
   twitter:title: summary

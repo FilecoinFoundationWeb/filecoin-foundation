@@ -3,7 +3,6 @@ title: Introducing SecureDrop Protocol
 created-on: 2024-09-10T20:36:23.259Z
 updated-on: 2024-09-10T20:36:23.271Z
 published-on: 2024-09-10T20:36:23.280Z
-date: 2024-09-10T20:36:23.291Z
 source: https://securedrop.org/news/introducing-securedrop-protocol/
 organization: Freedom of the Press Foundation
 description: SecureDrop is an open-source whistleblower submission system that
@@ -27,7 +26,6 @@ keywords: whistleblower, journalism, freedom of the press, Edward Snowden,
 technicality: "3"
 language: English
 tags: resources
-date: 2024-09-10T20:36:23.299Z
 seo:
   noindex: false
   twitter:title: summary

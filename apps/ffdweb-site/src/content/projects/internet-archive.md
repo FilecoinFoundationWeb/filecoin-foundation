@@ -18,7 +18,6 @@ blurb: "The Internet Archive runs dozens of projects, including: the Wayback
 logo:
   url: /assets/images/partnerlogo_internetarchive.png
 external-link: https://archive.org/
-date: 2023-06-30T16:41:09.129Z
 seo:
   noindex: false
   twitter:title: summary

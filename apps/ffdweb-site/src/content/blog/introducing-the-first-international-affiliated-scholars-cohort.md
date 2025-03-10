@@ -3,15 +3,12 @@ title: Introducing the First International Affiliated Scholars Cohort
 created-on: 2023-09-14T15:01:30.562Z
 updated-on: 2023-09-14T15:01:30.580Z
 published-on: 2023-09-14T15:01:30.593Z
-post-date: 2023-09-14T15:01:30.605Z
-featured: false
+category: impact
+description: ""
 image:
   src: /assets/images/091223-bl4sg-header.png
-date: 2023-09-14T15:01:30.618Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 *New Program Hosted by the Blockchain Law for Social Good Center at the University of San Francisco School of Law* 

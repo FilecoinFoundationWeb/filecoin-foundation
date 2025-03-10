@@ -1,5 +1,4 @@
 ---
-date: "2021-01-01T00:00:00.000Z"
 source: >-
   https://www.youtube.com/watch?v=Tab_vJ6NNGw&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=4
 technicality: "1"

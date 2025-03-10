@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   https://www.colorado.edu/lab/medlab/2023/03/22/now-available-sacred-stacks-art-cyborg-community
 keywords: null

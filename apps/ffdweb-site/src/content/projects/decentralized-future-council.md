@@ -13,7 +13,6 @@ logo:
   url: /assets/images/partnerlogo_decentfuturecoucil.png
 blog-link: ""
 external-link: https://www.decentralizedfuturecouncil.org/
-date: 2023-06-30T15:07:12.709Z
 seo:
   noindex: false
   twitter:title: summary

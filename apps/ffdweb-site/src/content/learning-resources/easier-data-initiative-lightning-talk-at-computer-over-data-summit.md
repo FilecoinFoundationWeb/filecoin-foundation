@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: https://easierdata.org/updates/2023/2023-06-27-cod-summit
 technicality: "2"
 language: English

@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://www.ibm.com/topics/blockchain-for-good
 technicality: "1"
 language: English

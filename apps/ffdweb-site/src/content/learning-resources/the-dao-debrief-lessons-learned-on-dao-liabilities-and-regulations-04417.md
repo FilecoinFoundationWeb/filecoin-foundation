@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   https://www.blockchainlawsg.org/post/the-dao-debrief-lessons-learned-on-dao-liabilities-and-regulations
 technicality: "1"

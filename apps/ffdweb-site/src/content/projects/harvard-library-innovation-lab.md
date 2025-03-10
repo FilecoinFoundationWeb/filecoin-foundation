@@ -15,7 +15,6 @@ logo:
   url: /assets/images/partnerlogo_harvardlibrary.png
 blog-link: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge/
 external-link: https://lil.law.harvard.edu/
-date: 2023-06-30T16:15:00.372Z
 seo:
   noindex: false
   twitter:title: summary
