@@ -18,7 +18,7 @@ import type {
   ImageObjectFit,
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
-import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowUpRight, CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Meta, type MetaDataType } from './Meta'
@@ -193,6 +193,13 @@ function renderCardLinkContent({
 }: NonNullable<CardProps['cta']>) {
   const isExternal = isExternalLink(href, baseDomain)
   const textElement = <span key="text">{text}</span>
+
+  if (icon === CaretRight) {
+    return [
+      textElement,
+      <Icon key="caret-right" component={icon} size={16} weight="bold" />,
+    ]
+  }
 
   if (icon) {
     return [<Icon key="custom-icon" component={icon} />, textElement]
