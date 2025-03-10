@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/convertYamlToJson.ts",
+    "predev": "tsx scripts/convertYamlToJson.ts",
     "dev": "next dev",
-    "prebuild": "node scripts/convertYamlToJson.ts",
+    "prebuild": "tsx scripts/convertYamlToJson.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
@@ -40,6 +40,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "frontmatter-markdown-loader": "^3.7.0",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   }
 }
