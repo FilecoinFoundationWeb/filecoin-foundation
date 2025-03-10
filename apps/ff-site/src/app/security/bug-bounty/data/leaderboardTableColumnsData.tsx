@@ -15,25 +15,26 @@ export const leaderboardTableColumnsData = [
   columnHelper.accessor('reporter', {
     id: 'reporter',
     header: 'Reporter',
-    meta: {
-      headerCellStyle: 'sm:min-w-72',
-      bodyCellStyle: 'text-brand-300',
-    },
     cell: (info) => info.getValue(),
   }),
   columnHelper.accessor('points', {
     id: 'points',
     header: 'Total Points',
     meta: {
-      headerCellStyle: 'w-full',
+      align: 'right',
+      bodyCellStyle: 'w-full',
     },
-    cell: (info) => info.getValue(),
+    cell: (info) => {
+      const points = info.getValue()
+      return new Intl.NumberFormat('en-US').format(points)
+    },
   }),
   columnHelper.accessor('profileLink', {
     id: 'profileLink',
     header: 'Profile Link',
     meta: {
-      bodyCellStyle: 'flex justify-center text-brand-300',
+      bodyCellStyle: 'text-brand-300',
+      align: 'center',
     },
     cell: (info) => {
       const profileLink = info.getValue()

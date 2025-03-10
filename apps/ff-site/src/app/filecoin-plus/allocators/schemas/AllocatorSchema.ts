@@ -8,11 +8,21 @@ const ApplicationSchema = z.object({
   allocation_bookkeeping: z.string().nullable(),
 })
 
+const MAX_LOCATION_LENGTH = 25
+
+const LocationSchema = z.string().transform((value) => {
+  if (value.length >= MAX_LOCATION_LENGTH) {
+    return value.slice(0, MAX_LOCATION_LENGTH) + '...'
+  }
+
+  return value
+})
+
 export const AllocatorSchema = z.object({
   name: z.string(),
   address: z.string(),
   metapathway_type: z.string(),
-  location: z.string(),
+  location: LocationSchema,
   application: ApplicationSchema,
 })
 

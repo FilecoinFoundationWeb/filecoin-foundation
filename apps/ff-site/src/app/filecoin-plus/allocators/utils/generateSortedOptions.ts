@@ -7,28 +7,14 @@ export function generateSortedOptions(
   key: keyof AllocatorStringValues,
 ) {
   const valuesArray = data.map((item) => item[key])
-  const valueCounts = countOccurrences(valuesArray)
+  const uniqueValues = [...new Set(valuesArray)]
 
-  const sortedUniqueOptions = Object.keys(valueCounts)
-    .sort((a, b) => valueCounts[b] - valueCounts[a])
+  const sortedUniqueOptions = uniqueValues
+    .sort((a, b) => a.localeCompare(b))
     .map((value) => ({
       id: value,
       name: value,
     }))
 
   return sortedUniqueOptions
-}
-
-function countOccurrences(array: Array<string>) {
-  const counts: Record<string, number> = {}
-
-  array.forEach((item) => {
-    if (counts[item]) {
-      counts[item] += 1
-    } else {
-      counts[item] = 1
-    }
-  })
-
-  return counts
 }
