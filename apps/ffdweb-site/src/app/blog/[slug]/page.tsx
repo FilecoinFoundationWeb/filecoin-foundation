@@ -1,45 +1,51 @@
+import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
+import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
-// import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
-// import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
-// import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
-// import { MarkdownContent } from '@filecoin-foundation/ui/MarkdownContent'
-
-// import { graphicsData } from '@/data/graphicsData'
+import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-// type BlogPostProps = {
-//   params: Promise<SlugParams>
-// }
+import { MarkdownContent } from '@/components/MarkdownContent'
 
-export default async function BlogPost() {
-  // const { slug } = await props.params
-  // const data = await getBlogPostData(slug)
-
-  // const { title, image, content, publishedOn, category } = data
-
-  return <PageLayout gap="large">Blog Post</PageLayout>
-  // return (
-  // <ArticleLayout>
-  //   <BlogPostHeader
-  //     title={title}
-  //     image={{
-  //       ...(image || graphicsData.imageFallback.data),
-  //       alt: '',
-  //     }}
-  //     publishedOn={publishedOn}
-  //     category={category}
-  //     configData={configData}
-  //   />
-
-  //    <MarkdownContent>{content}</MarkdownContent>
-  // </ArticleLayout>
-  // )
+import { getBlogPostData } from '../utils/getBlogPostData'
+type BlogPostProps = {
+  params: Promise<SlugParams>
 }
 
-export const metadata = createMetadata({
-  metaTitle: '', // [Headline of Blog] | FFDW
-  metaDescription: '', // [Blog Standfirst]
-  overrideTitle: true,
-})
+export default async function BlogPost(props: BlogPostProps) {
+  const { slug } = await props.params
+  const data = await getBlogPostData(slug)
+
+  const { title, image, content, publishedOn, category } = data
+
+  return (
+    <PageLayout gap="large">
+      <ArticleLayout>
+        <BlogPostHeader
+          title={title}
+          publishedOn={publishedOn}
+          category={category}
+          image={{
+            ...(image || graphicsData.imageFallback.data),
+            alt: '',
+          }}
+        />
+
+        <MarkdownContent>{content}</MarkdownContent>
+      </ArticleLayout>
+    </PageLayout>
+  )
+}
+
+export async function generateMetadata(props: BlogPostProps) {
+  const { slug } = await props.params
+  const { title, description } = await getBlogPostData(slug)
+
+  return createMetadata({
+    metaTitle: `${title} | FFDW`,
+    metaDescription: description,
+    overrideTitle: true,
+  })
+}
