@@ -1,9 +1,11 @@
 ---
-featured: false
-post-date: "2021-11-18T00:00:00.000Z"
 title: >-
   FFDW and OpenArchive Collaborate to Deploy Decentralized Archive for Human
   Rights Data
+created-on: "2023-04-21T07:15:57.492Z"
+updated-on: "2023-04-21T07:18:24.468Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
   award to OpenArchive, a nonprofit dedicated to advancing human rights by
@@ -12,18 +14,15 @@ description: >-
   support decentralized backends for the Save app. This will enable people on
   the ground capturing images and footage of world events to leverage IPFS and
   Filecoin and other decentralized storage options via their mobile device.
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442382def619d14d6b54705_openarchive.png
-  alt: null
-updated-on: "2023-04-21T07:18:24.468Z"
-created-on: "2023-04-21T07:15:57.492Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - rights
-  - smartphones
-  - mobile-media
+seo:
+  description: ""
+# tags:
+#   - rights
+#   - smartphones
+#   - mobile-media
 ---
 
 ![ffdw and openarchive collaborate to deploy decentralized archive](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98c1be93f295c8a42d6c_ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data.png)

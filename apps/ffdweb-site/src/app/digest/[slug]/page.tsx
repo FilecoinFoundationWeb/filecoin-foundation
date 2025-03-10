@@ -1,7 +1,12 @@
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
+import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+
+import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -13,6 +18,8 @@ import {
   getDigestArticleData,
   getDigestArticlesData,
 } from '../utils/getDigestArticleData'
+
+import { generateStructuredData } from './utils/generateStructuredData'
 
 type DigestArticleProps = {
   params: Promise<SlugParams>
@@ -26,7 +33,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
 
   return (
     <PageLayout>
-      {/* <StructuredDataScript structuredData={generateStructuredData(data)} /> */}
+      <StructuredDataScript structuredData={generateStructuredData(data)} />
       <ArticleLayout>
         <DigestArticleHeader
           title={title}
@@ -39,6 +46,11 @@ export default async function DigestArticle(props: DigestArticleProps) {
           }}
         />
         {content && <MarkdownContent>{content}</MarkdownContent>}
+        <ShareArticle
+          articleTitle={title}
+          path={`${PATHS.DIGEST.path}/${slug}`}
+          baseUrl={BASE_URL}
+        />
       </ArticleLayout>
     </PageLayout>
   )

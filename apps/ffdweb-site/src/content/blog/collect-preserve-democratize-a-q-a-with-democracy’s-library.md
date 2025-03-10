@@ -3,14 +3,12 @@ title: "Collect, Preserve, Democratize: A Q&A With Democracy’s Library"
 created-on: 2023-05-09T10:05:25.820Z
 updated-on: 2023-05-09T10:05:00.000Z
 published-on: 2023-05-09T10:05:00.000Z
-post-date: 2023-05-09T10:05:00.000Z
+category: impact
+description: ""
 image:
   src: /assets/images/0509-demo-qa.png
-date: 2023-05-09T10:05:00.000Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 Every year, the United States federal government spends [billions of dollars](https://www.whitehouse.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Congressional-Report.pdf) producing research, reports, statistics, and data on almost every topic imaginable. This information is critical for government agencies, policymakers at all levels, public and private organizations, journalists, and citizens. Access to historical government records is necessary to create a more efficient, effective, and accountable system where all stakeholders work together to address current needs with an eye toward the future.

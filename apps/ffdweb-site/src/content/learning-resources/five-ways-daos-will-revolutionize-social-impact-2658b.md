@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   https://www.cryptoaltruism.org/blog/five-ways-daos-will-revolutionize-social-impact
 technicality: "1"

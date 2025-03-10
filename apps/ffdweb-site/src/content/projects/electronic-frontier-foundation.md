@@ -16,7 +16,6 @@ logo:
   url: /assets/images/eff_short.png
 external-link: https://www.eff.org/
 past-collaborations: false
-date: 2023-07-20T19:00:19.677Z
 seo:
   noindex: false
   twitter:title: summary

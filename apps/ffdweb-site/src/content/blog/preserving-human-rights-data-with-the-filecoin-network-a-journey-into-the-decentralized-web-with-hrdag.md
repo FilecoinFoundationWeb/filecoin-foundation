@@ -4,8 +4,7 @@ title: "Preserving Human Rights Data with the Filecoin Network: A Journey into
 created-on: 2024-04-18T16:50:24.039Z
 updated-on: 2024-04-18T16:50:24.046Z
 published-on: 2024-04-18T16:50:24.051Z
-post-date: 2024-04-18T16:50:24.057Z
-featured: false
+category: impact
 description: >
   This is a guest post from FFDW project partner Human Rights Data Analysis
   Group (HRDAG), written by Patrick Ball, HRDAG’s Director of Research. HRDAG
@@ -15,11 +14,8 @@ description: >
   abuse.
 image:
   src: /assets/images/041524-guest-hrdag.png
-date: 2024-04-18T16:50:24.061Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 *This is a guest post from FFDW project partner Human Rights Data Analysis Group (HRDAG), written by Patrick Ball, HRDAG’s Director of Research.* 

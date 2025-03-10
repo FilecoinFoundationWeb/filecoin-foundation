@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   https://www.forbes.com/sites/alanransil/2023/04/26/wef-crypto-report-charts-a-path-to-improve-web3-sustainability-data-standards/?sh=5320c5f55316
 technicality: "1"

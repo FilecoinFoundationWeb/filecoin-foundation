@@ -1,25 +1,24 @@
 ---
-featured: false
-post-date: "2022-06-30T00:00:00.000Z"
 title: >-
   Filecoin Foundation for the Decentralized Web and TechCongress Will Work
   Together to Place More Technologists on Capitol Hill
+created-on: "2023-04-21T07:16:06.513Z"
+updated-on: "2023-04-21T07:18:29.556Z"
+published-on: "2023-04-21T08:01:04.314Z"
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce our
   award to TechCongress, an organization that provides fellowships to bridge the
   informational gap between technologists and policymakers in Congress.
-author: Filecoin Foundation for the Decentralized Web
+category: impact
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423836a6ec419f1a28faed_1-by_cgybu5ago6_yxuh93g.png
-  alt: null
-updated-on: "2023-04-21T07:18:29.556Z"
-created-on: "2023-04-21T07:16:06.513Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - governance
-  - fellowship
-  - techcongress
+seo:
+  description: ""
+# tags:
+#   - governance
+#   - fellowship
+#   - techcongress
 ---
 
 _Collaboration will build bridges between the people building emerging technologies and policymakers_

@@ -7,7 +7,6 @@ import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsM
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import {
   CATEGORY_KEY,
   PAGE_KEY,
@@ -22,10 +21,10 @@ import { DEFAULT_CATEGORY_FILTER_OPTION } from '@/constants/filterConstants'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useFilter } from '@/hooks/useFilter'
@@ -132,7 +131,6 @@ export function BlogContent({ posts }: BlogContentProps) {
                   const categoryLabel = getCategoryLabel({
                     collectionName: 'blog_posts',
                     category,
-                    configData,
                   })
 
                   return (

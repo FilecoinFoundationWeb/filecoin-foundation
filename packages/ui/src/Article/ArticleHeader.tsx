@@ -24,7 +24,7 @@ export function ArticleHeader({ image, children }: ArticleHeaderProps) {
           quality={100}
           src={image.src}
           alt={image.alt}
-          className="rounded-lg object-cover"
+          className="article-header-image object-cover"
           sizes={buildImageSizeProp({ startSize: '100vw', md: '680px' })}
         />
       </div>

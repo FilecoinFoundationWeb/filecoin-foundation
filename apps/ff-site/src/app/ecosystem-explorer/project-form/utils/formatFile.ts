@@ -1,6 +1,6 @@
 import path from 'path'
 
-import { findOrThrow } from '@/utils/findOrThrow'
+import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 
 import { ALLOWED_IMAGE_FORMATS } from '../constants'
 

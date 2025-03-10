@@ -14,7 +14,6 @@ logo:
   url: /assets/images/partnerlogo_easier.png
 blog-link: https://www.ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
 external-link: https://www.ffdweb.org/blog/ffdw-and-easier-data-initiative-collaborate-to-upload-spatial-data-to-filecoin-network/
-date: 2023-06-30T16:00:00.995Z
 seo:
   noindex: false
   twitter:title: summary

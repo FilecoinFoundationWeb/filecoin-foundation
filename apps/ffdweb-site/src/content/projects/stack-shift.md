@@ -10,7 +10,6 @@ blurb: "Stack Shift’s mission is to advance the spread of distributed work and
 logo:
   url: /assets/images/partnerlogo_stackshift.png
 external-link: https://www.stackshift.com/
-date: 2023-06-30T16:55:26.102Z
 seo:
   noindex: false
   twitter:title: summary

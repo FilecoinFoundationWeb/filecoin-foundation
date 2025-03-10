@@ -12,7 +12,6 @@ logo:
   url: /assets/images/partnerlogo_hrdag.png
 blog-link: https://www.ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/
 external-link: https://hrdag.org/
-date: 2023-06-30T16:15:42.458Z
 seo:
   noindex: false
   twitter:title: summary

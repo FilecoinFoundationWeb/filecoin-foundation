@@ -4,8 +4,6 @@ title: "Insights from 7 Experts: The Future of Emerging Technologies for
 created-on: 2024-02-22T18:09:50.533Z
 updated-on: 2024-02-22T18:09:50.550Z
 published-on: 2024-02-22T18:09:50.562Z
-post-date: 2024-02-22T18:09:50.572Z
-featured: false
 description: Artificial intelligence (AI) and decentralized technologies have
   reached a pivotal stage of development, permeating the fabric of daily life in
   our increasingly digital world. These rapidly evolving technologies,
@@ -14,21 +12,11 @@ description: Artificial intelligence (AI) and decentralized technologies have
   advancements will improve financial access for all, elevate productivity,
   catalyze economic expansion, embolden individuals across artistic and
   scientific domains, and potentially tackle formidable global challenges.
+category: impact
 image:
   src: /assets/images/022124-sis.png
-  alt: Social Impact Summit 2024
-date: 2024-02-22T18:09:50.583Z
 seo:
-  noindex: false
-  twitter:title:
-    "Insights from 7 Experts: The Future of Emerging Technologies for
-    Positive Societal Change"
-  twitter:card: ""
-  og:image: /assets/images/022124-sis.png
-  og:title: "Insights from 7 Experts: The Future of Emerging Technologies for
-    Positive Societal Change"
-  title: "Insights from 7 Experts: The Future of Emerging Technologies for
-    Positive Societal Change"
+  description: ""
 ---
 
 - **Uncertainty lingers regarding the equitable distribution of benefits from decentralized and AI technologies.**

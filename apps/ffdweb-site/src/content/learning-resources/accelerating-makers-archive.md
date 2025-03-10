@@ -3,7 +3,6 @@ title: Accelerating Makers Archive
 created-on: 2024-09-10T21:08:53.076Z
 updated-on: 2024-09-10T21:08:53.083Z
 published-on: 2024-09-10T21:08:53.089Z
-date: 2024-09-10T21:08:53.094Z
 source: https://bafybeicq7ajnpnbslo4fxkrun7vo32k4ensxkftwyflfpiajzd3qdkvwzq.ipfs.w3s.link/
 organization: TechSoup
 description: "The Accelerating Makers project
@@ -29,7 +28,6 @@ keywords: makers, civil society, non-profit, nonprofit, public good app house,
 technicality: "1"
 language: English
 tags: resources
-date: 2024-09-10T21:08:53.102Z
 seo:
   noindex: false
   twitter:title: summary

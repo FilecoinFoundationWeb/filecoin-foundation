@@ -3,7 +3,6 @@ title: DWeb for Creators
 created-on: 2023-10-20T15:21:35.392Z
 updated-on: 2023-10-20T15:21:35.392Z
 published-on: 2023-10-20T15:22:08.074Z
-date: 2023-01-01T00:00:00.000Z
 source: https://dweb.grayarea.org/
 organization: Gray Area
 description: The Decentralized Web For Creators Knowledge Base is an
@@ -20,5 +19,4 @@ length: Variable
 technicality: "2"
 language: English
 tags: resources
-date: 2024-10-04T21:29:59.390Z
 ---

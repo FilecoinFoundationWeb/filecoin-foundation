@@ -207,4 +207,18 @@ export const redirects = [
       '/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future',
     permanent: true,
   },
+
+  // DIGEST ARTICLE REDIRECTS
+  {
+    source: '/digest/editor%E2%80%99s-letter',
+    destination: '/digest/editors-letter',
+    permanent: true,
+  },
+  {
+    source:
+      '/digest/free-software%E2%80%99s-paradox-losing-while-winning-and-the-need-for-decentralization',
+    destination:
+      '/digest/free-softwares-paradox-losing-while-winning-and-the-need-for-decentralization',
+    permanent: true,
+  },
 ]

@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: >-
   https://www.blockchainlawsg.org/post/from-davos-to-daovos-blockchain-s-breakthrough-at-the-world-economic-forum
 technicality: "1"

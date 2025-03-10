@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: https://www.youtube.com/watch?v=5Uj6uR3fp-U&t=303s
 technicality: "2"
 language: English

@@ -1,25 +1,24 @@
 ---
-featured: false
-post-date: "2021-09-28T00:00:00.000Z"
 title: Leveraging the Dweb to Enhance Free Speech with the Latest FFDW Award
+created-on: "2023-04-21T07:16:11.429Z"
+updated-on: "2023-04-21T07:18:33.376Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   On September 28, the Filecoin Foundation for the Decentralized Web (FFDW)
   announced a $5.8 million award to the Freedom of the Press Foundation (FPF) to
   support the further leveraging of the decentralized web to enhance freedom of
   speech for journalists.
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png
-  alt: null
-updated-on: "2023-04-21T07:18:33.376Z"
-created-on: "2023-04-21T07:16:11.429Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - freedom
-  - journalism
-  - press
-  - privacy
+seo:
+  description: ""
+# tags:
+#   - freedom
+#   - journalism
+#   - press
+#   - privacy
 ---
 
 ![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383bfcf3ec00b87f30ee_leveraging-the-dweb-to-enhance-free-speech.png)

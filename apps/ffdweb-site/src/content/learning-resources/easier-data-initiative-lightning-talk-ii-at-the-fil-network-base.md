@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://easierdata.org/updates/2023/2023-06-12-fil-network-base-austin
 technicality: "1"
 language: English

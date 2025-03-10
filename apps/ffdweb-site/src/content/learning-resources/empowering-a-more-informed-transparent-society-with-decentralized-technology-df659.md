@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   /empowering-a-more-informed-transparent-society-with-decentralized-technology/
 technicality: "1"

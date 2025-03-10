@@ -3,8 +3,7 @@ title: Empowering Creators with Decentralized Web Technology
 created-on: 2023-10-18T19:13:30.217Z
 updated-on: 2023-10-18T19:13:30.267Z
 published-on: 2023-10-18T19:13:30.320Z
-post-date: 2023-10-18T19:13:30.355Z
-featured: false
+category: "education"
 description: "Filecoin Foundation for the Decentralized Web (FFDW) started
   working with Gray Area—a San Francisco-based nonprofit cultural incubator—to
   support the development of curriculum empowering creators working at the
@@ -12,11 +11,8 @@ description: "Filecoin Foundation for the Decentralized Web (FFDW) started
   their creative practices. "
 image:
   src: /assets/images/181023-grayarea.png
-date: 2023-10-18T19:13:30.399Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 **_New Gray Area Courses to Help Creators Leverage Decentralized Web Technologies_**

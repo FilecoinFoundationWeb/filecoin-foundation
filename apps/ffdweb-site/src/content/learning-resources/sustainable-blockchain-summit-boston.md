@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://www.youtube.com/playlist?list=PL_0VrY55uV18usUSNDOjwkwFNCbIZ2ZLr
 technicality: "1"
 language: English
