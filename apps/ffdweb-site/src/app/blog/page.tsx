@@ -6,8 +6,9 @@ import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { BlogContent } from './_components/BlogContent'
+import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getBlogPostsData } from './utils/getBlogPostData'
 
 const SEO = {
   metaTitle: 'FFDW Blog | Latest Web3 Insights & Updates',
@@ -15,13 +16,15 @@ const SEO = {
     'Stay informed on the newest advancements in decentralized tech, human rights data preservation, and social impact. Discover fresh perspectives from FFDW.',
 } as const
 
-export default function Blog() {
+export default async function Blog() {
+  const posts = await getBlogPostsData()
+
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
       <TagLabel variant="secondary">Featured</TagLabel>
       <Suspense>
-        <BlogContent />
+        <BlogContent posts={posts} />
       </Suspense>
     </PageLayout>
   )
