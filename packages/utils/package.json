@@ -13,6 +13,7 @@
     "./convertYamlToJson": "./src/convertYamlToJson.ts",
     "./dateUtils": "./src/dateUtils.ts",
     "./fileUtils": "./src/fileUtils.ts",
+    "./findOrThrow": "./src/findOrThrow.ts",
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
     "./getCMSFieldOptionsAndValidIds": "./src/getCMSFieldOptionsAndValidIds.ts",
     "./getDigestArticleData": "./src/getDigestArticleData.ts",
