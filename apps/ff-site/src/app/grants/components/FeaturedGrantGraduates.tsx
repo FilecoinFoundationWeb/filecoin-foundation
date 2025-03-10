@@ -27,7 +27,9 @@ export function FeaturedGrantGraduates({
           cta={{
             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Read More',
-            icon: BookOpen,
+            icon: {
+              component: BookOpen,
+            },
           }}
           image={{
             ...(image || graphicsData.imageFallback.data),

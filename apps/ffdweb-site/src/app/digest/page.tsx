@@ -67,7 +67,12 @@ export default async function Digest() {
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
-                  icon: CaretRight,
+                  icon: {
+                    component: CaretRight,
+                    size: 16,
+                    position: 'trailing',
+                    weight: 'bold',
+                  },
                 }}
                 image={{
                   ...(image || graphicsData.imageFallback.data),

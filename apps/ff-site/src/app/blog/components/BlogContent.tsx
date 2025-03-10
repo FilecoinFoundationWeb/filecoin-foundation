@@ -143,7 +143,9 @@ export function BlogContent({ posts }: BlogContentProps) {
                       cta={{
                         href: `${PATHS.BLOG.path}/${slug}`,
                         text: 'Read Post',
-                        icon: BookOpen,
+                        icon: {
+                          component: BookOpen,
+                        },
                       }}
                       image={{
                         ...(image || graphicsData.imageFallback.data),

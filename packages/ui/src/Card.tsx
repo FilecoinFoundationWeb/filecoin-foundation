@@ -194,20 +194,18 @@ function renderCardLinkContent({
   const isExternal = isExternalLink(href, baseDomain)
   const textElement = <span key="text">{text}</span>
 
-  if (icon === CaretRight) {
-    return [
-      textElement,
-      <Icon key="caret-right" component={icon} size={16} weight="bold" />,
-    ]
+  if (!icon) {
+    return isExternal
+      ? [textElement, <Icon key="arrow" component={ArrowUpRight} />]
+      : textElement
   }
 
-  if (icon) {
-    return [<Icon key="custom-icon" component={icon} />, textElement]
-  }
+  const { component, size, position = 'leading', weight } = icon
+  const iconElement = (
+    <Icon key="custom-icon" component={component} size={size} weight={weight} />
+  )
 
-  if (isExternal) {
-    return [textElement, <Icon key="arrow" component={ArrowUpRight} />]
-  }
-
-  return textElement
+  return position === 'leading'
+    ? [iconElement, textElement]
+    : [textElement, iconElement]
 }

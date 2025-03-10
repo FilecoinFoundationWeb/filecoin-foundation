@@ -68,6 +68,9 @@ export function BlogContent({ posts }: BlogContentProps) {
                 href: `${PATHS.BLOG.path}/${slug}`,
                 text: 'Read Post',
                 icon: CaretRight,
+                size: 16,
+                position: 'trailing',
+                weight: 'bold',
               }}
               image={{
                 ...(image || graphicsData.imageFallback.data),
