@@ -15,9 +15,7 @@ authors:
       src: /assets/images/dwd-profile-05.png
     # bio: Kurt Opsahl works to help build the legal and policy space in which the decentralized web can thrive.
 seo:
-  description: A more distributed web requires a global recognition that code is
-    protected speech. Without it, our ability to build a decentralized world is
-    greatly limited.
+  description: Explore why protecting code as a form of free speech is essential for software development, open-source projects, and the future of the decentralized web. Learn about landmark legal cases and global implications.
 ---
 
 Strong protection for code as speech is **critical** to the development of software around the world, especially open-source projects essential for the distributed web, which rely on many authors and contributors to build, improve, and secure a codebase. These projects’ developers often consist of a community of volunteers, contributing to the project’s collective goal of building a better tool that aligns with their dream of designing a more equitable decentralized future.  

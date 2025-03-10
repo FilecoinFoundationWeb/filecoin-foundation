@@ -16,7 +16,7 @@ authors:
     # bio: Naomi Brockwell is a tech journalist, creator of NBTV.media, and author of "Beginner's Introduction to Privacy"
 
 seo:
-  description: "In this digital age, we need to learn the importance of privacy and change our attitudes about our data, instead of just accepting the conventional wisdom."
+  description: "Privacy is essential for freedom and democracy. Learn how surveillance threatens our future and why privacy matters - even if you think you have 'nothing to hide.'"
 ---
 
 We all love good sci-fi films, such as those that show us some dystopian future surveillance state where the government monitors its citizens' every move. We eagerly follow the story, and enjoy the protagonist’s quest to restore privacy and freedom of speech, and bring down the centralized powers. We’re comforted by the belief that “it’s just a film — that could never happen here. Our freedoms are secure.”
