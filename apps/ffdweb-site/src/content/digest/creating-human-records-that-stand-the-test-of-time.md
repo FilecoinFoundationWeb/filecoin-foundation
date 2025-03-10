@@ -18,7 +18,7 @@ authors:
     # src: /assets/images/dwd-profile-10.png
     # bio: "Adam Rose is the chief operating officer at Starling Lab, and serves as press rights chair for the Los Angeles Press Club. Basile Simon leads the Lab’s research in law and criminal accountability, and is co-founder and advisor to Airwars. Both have spent most of their careers in journalism."
 seo:
-  description: "How blockchains are preserving evidence for the long term."
+  description: "From ancient clay tablets to modern blockchains, discover how new technologies are preserving crucial digital evidence of war crimes, human rights violations, and historical events for future generations."
 ---
 
 As business rivalries go, the story of Suen-nada and Ennum-Ashur was pretty routine. They both claimed ownership of valuable intellectual property, wrestled over control of accounts, and accused each other of theft.
