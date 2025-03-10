@@ -1,10 +1,15 @@
 import fs from 'fs'
 import yaml from 'js-yaml'
 
-export function convertYamlToJson(
-  sourcePath: string,
-  targetPath: string,
-): void {
+type ConvertYamlToJsonParams = {
+  sourcePath: string
+  targetPath: string
+}
+
+export function convertYamlToJson({
+  sourcePath,
+  targetPath,
+}: ConvertYamlToJsonParams) {
   const yamlContent = fs.readFileSync(sourcePath, 'utf8')
   const jsonData = yaml.load(yamlContent)
 
