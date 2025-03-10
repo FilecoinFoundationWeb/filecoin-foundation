@@ -296,4 +296,22 @@
   .text-link {
     @apply text-brand-primary-300 hover:text-brand-primary-500 focus:brand-outline hover:underline; /* CHECK */
   }
+
+  /* TOOLTIP */
+  .tooltip {
+    @apply bg-brand-primary-300 text-neutral-950;
+
+    .tooltip-arrow {
+      @apply fill-brand-primary-300;
+    }
+  }
+
+  /* SHARE ARTICLE */
+  .share-article-title {
+    @apply text-brand-primary-300;
+  }
+
+  .share-article-tooltip-link {
+    @apply hover:text-brand-primary-400;
+  }
 }
