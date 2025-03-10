@@ -87,11 +87,7 @@ export default async function Digest() {
         kicker="Social Media"
         title="Follow us and join the conversation."
       >
-        <Social
-          linksWithIcons={socialLinksWithIcons}
-          size={40}
-          variant="secondary"
-        />
+        <Social customColor linksWithIcons={socialLinksWithIcons} size={40} />
       </CTASection>
     </PageLayout>
   )

@@ -11,14 +11,18 @@ type linkWithIcon = {
 type SocialProps = {
   linksWithIcons: linkWithIcon[]
   size?: IconProps['size']
-  variant?: 'secondary'
+  customColor?: boolean
 }
 const TOUCH_TARGET: TouchTarget = {
   touchAreaPadding: 'p-2',
   touchAreaOffset: '-m-2',
 }
 
-export function Social({ linksWithIcons, size = 32, variant }: SocialProps) {
+export function Social({
+  linksWithIcons,
+  size = 32,
+  customColor = false,
+}: SocialProps) {
   return (
     <ul
       className={clsx(
@@ -36,7 +40,7 @@ export function Social({ linksWithIcons, size = 32, variant }: SocialProps) {
               title={`Go to ${label}`}
               className={clsx(
                 'focus:brand-outline',
-                variant === 'secondary' && 'social-link-secondary',
+                customColor && 'social',
                 TOUCH_TARGET.touchAreaPadding,
               )}
             >
