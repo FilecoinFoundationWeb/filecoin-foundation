@@ -3,7 +3,7 @@
 .table-container {
   @apply w-full overflow-x-auto rounded-lg focus:brand-outline;
 
-  &[data-freeze-header="true"] {
+  &[data-freeze-header='true'] {
     @apply max-h-screen;
 
     & thead td,
@@ -12,14 +12,14 @@
     }
   }
 
-  &[data-freeze-first-column="true"] {
+  &[data-freeze-first-column='true'] {
     & td:first-child,
     & th:first-child {
       @apply sticky left-0 z-10 bg-inherit;
     }
   }
 
-  &[data-freeze-header="true"][data-freeze-first-column="true"] {
+  &[data-freeze-header='true'][data-freeze-first-column='true'] {
     & thead th:first-child {
       @apply z-20;
     }
@@ -27,7 +27,7 @@
 }
 
 .table {
-  @apply h-full min-w-full isolate border-collapse border-spacing-0;
+  @apply isolate h-full min-w-full border-collapse border-spacing-0;
 
   & tr {
     @apply h-[52px] bg-brand-800;
@@ -46,6 +46,14 @@
   & td,
   & th {
     @apply px-5 text-left font-normal whitespace-nowrap;
+
+    &.cell-align-right {
+      @apply text-right;
+    }
+
+    &.cell-align-center {
+      @apply text-center;
+    }
 
     &:first-child {
       @apply pl-10;
