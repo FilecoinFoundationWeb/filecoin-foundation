@@ -13,7 +13,7 @@ export function IconCard({ icon, title, description }: IconCardProps) {
   return (
     <li>
       {style === 'regular' && (
-        <Icon component={IconComponent} size={64} color="accent" />
+        <Icon component={IconComponent} color="accent" size={64} />
       )}
 
       {style === 'fill' && (
