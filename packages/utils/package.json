@@ -18,6 +18,7 @@
     "./getMarkdownData": "./src/getMarkdownData.ts",
     "./generateShareArticleLinks": "./src/generateShareArticleLinks.ts",
     "./linkUtils": "./src/linkUtils.ts",
+    "./mapCMSOptionsToListboxFormat": "./src/mapCMSOptionsToListboxFormat.ts",
     "./stringUtils": "./src/stringUtils.ts",
     "./urlUtils": "./src/urlUtils.ts",
     "./zodUtils": "./src/zodUtils.ts",

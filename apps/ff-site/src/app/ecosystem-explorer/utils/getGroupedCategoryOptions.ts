@@ -1,6 +1,6 @@
+import { mapCMSOptionsToListboxFormat } from '@filecoin-foundation/utils/mapCMSOptionsToListboxFormat'
 import { groupBy } from 'ramda'
 
-import { mapCMSOptionsToListboxFormat } from '@/utils/mapCMSOptionsToListboxFormat'
 
 import { getEcosystemCMSCategories } from './getEcosystemCMSCategories'
 
