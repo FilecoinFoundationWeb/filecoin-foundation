@@ -17,6 +17,7 @@
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",
     "./getCMSFieldOptionsAndValidIds": "./src/getCMSFieldOptionsAndValidIds.ts",
     "./getDigestArticleData": "./src/getDigestArticleData.ts",
+    "./getFeaturedEntry": "./src/getFeaturedEntry.ts",
     "./getMarkdownData": "./src/getMarkdownData.ts",
     "./generateShareArticleLinks": "./src/generateShareArticleLinks.ts",
     "./linkUtils": "./src/linkUtils.ts",
