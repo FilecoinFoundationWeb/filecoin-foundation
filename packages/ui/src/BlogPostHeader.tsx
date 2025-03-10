@@ -1,16 +1,16 @@
 import { ArticleHeader } from '@filecoin-foundation/ui/Article/ArticleHeader'
 import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import type { ImageProps } from '@filecoin-foundation/utils/types/imageType'
+
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 type BlogPostHeaderProps = {
   title: string
   publishedOn: Date
   image: ImageProps
   category: string
-  configData: unknown
 }
 
 export function BlogPostHeader({
@@ -18,7 +18,6 @@ export function BlogPostHeader({
   publishedOn,
   image,
   category,
-  configData,
 }: BlogPostHeaderProps) {
   return (
     <ArticleHeader
@@ -31,7 +30,6 @@ export function BlogPostHeader({
         {getCategoryLabel({
           collectionName: 'blog_posts',
           category,
-          configData,
         })}
       </TagLabel>
 

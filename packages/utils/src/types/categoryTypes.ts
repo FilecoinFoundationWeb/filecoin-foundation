@@ -1,5 +1,4 @@
 export type CategoryId = string
-export type CategoryMap = Record<string, string>
 
 type CMSCategoryField = {
   collection: string
