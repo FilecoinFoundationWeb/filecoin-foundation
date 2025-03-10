@@ -171,7 +171,9 @@ export default function EventsContent({
                           shouldLinkToExternalEventsPage ||
                           `${PATHS.EVENTS.path}/${slug}`,
                         text: DEFAULT_CTA_TEXT,
-                        icon: MagnifyingGlass,
+                        icon: {
+                          component: MagnifyingGlass,
+                        },
                       }}
                     />
                   )

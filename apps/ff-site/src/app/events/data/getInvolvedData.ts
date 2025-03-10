@@ -1,17 +1,26 @@
+import type { CTAProps } from '@filecoin-foundation/utils/types/ctaType'
 import { Clipboard, Envelope, HandWaving } from '@phosphor-icons/react/dist/ssr'
 
 import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
-export const getInvolvedData = [
+type GetInvolvedData = {
+  title: string
+  description: string
+  cta: CTAProps
+}
+
+export const getInvolvedData: Array<GetInvolvedData> = [
   {
     title: 'Sponsor an Event',
     description: `To be featured partner or sponsor an upcoming Foundation-hosted event, reach out to ${extractEmailAddress(FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail)}.`,
     cta: {
       href: FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail,
       text: 'Email Us',
-      icon: Envelope,
+      icon: {
+        component: Envelope,
+      },
     },
   },
   {
@@ -21,7 +30,9 @@ export const getInvolvedData = [
     cta: {
       href: FILECOIN_FOUNDATION_URLS.events.speakerEngagementForm,
       text: 'Submit Form',
-      icon: Clipboard,
+      icon: {
+        component: Clipboard,
+      },
     },
   },
   {
@@ -31,7 +42,9 @@ export const getInvolvedData = [
     cta: {
       href: FILECOIN_FOUNDATION_URLS.events.orbitAmbassadorForm,
       text: 'Apply to Filecoin Orbit',
-      icon: HandWaving,
+      icon: {
+        component: HandWaving,
+      },
     },
   },
 ]

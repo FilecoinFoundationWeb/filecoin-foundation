@@ -28,7 +28,9 @@ export function FeaturedEcosystemProjects({
           cta={{
             href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
             text: 'Learn More',
-            icon: MagnifyingGlass,
+            icon: {
+              component: MagnifyingGlass,
+            },
           }}
           image={{
             ...(image || graphicsData.imageFallback.data),

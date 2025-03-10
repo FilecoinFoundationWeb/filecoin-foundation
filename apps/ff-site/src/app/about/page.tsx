@@ -131,7 +131,9 @@ export default function About() {
                   cta={{
                     href: link,
                     text: 'View Report',
-                    icon: Files,
+                    icon: {
+                      component: Files,
+                    },
                   }}
                 />
               </li>
