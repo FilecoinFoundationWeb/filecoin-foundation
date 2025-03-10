@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/convertYamlToJson.js",
+    "predev": "tsx scripts/convertYamlToJson.ts",
     "dev": "next dev",
-    "prebuild": "node scripts/convertYamlToJson.js && node scripts/injectEncryptionAccessKeyInCMS.js",
+    "prebuild": "tsx scripts/convertYamlToJson.ts && node scripts/injectEncryptionAccessKeyInCMS.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "@date-fns/utc": "^2.1.0",
+    "@filecoin-foundation/hooks": "*",
     "@filecoin-foundation/ui": "*",
     "@filecoin-foundation/utils": "*",
-    "@filecoin-foundation/hooks": "*",
     "@headlessui/react": "^2.2.0",
     "@headlessui/tailwindcss": "^0.2.1",
     "@hookform/resolvers": "^3.9.1",
@@ -87,6 +87,7 @@
     "postcss": "^8.4.41",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "tsx": "^4.19.3",
     "turbo": "^2.3.3",
     "typescript": "^5.7.2",
     "yaml-loader": "^0.8.1"

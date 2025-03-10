@@ -10,6 +10,7 @@
     "./buildImageSizeProp": "./src/buildImageSizeProp.ts",
     "./categoryUtils": "./src/categoryUtils.ts",
     "./cmsConfigUtils": "./src/cmsConfigUtils.ts",
+    "./convertYamlToJson": "./src/convertYamlToJson.ts",
     "./dateUtils": "./src/dateUtils.ts",
     "./fileUtils": "./src/fileUtils.ts",
     "./getAllMarkdownData": "./src/getAllMarkdownData.ts",

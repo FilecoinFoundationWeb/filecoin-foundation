@@ -15,7 +15,7 @@ authors:
       src: /assets/images/dwd-profile-04.png
   # bio: "Kristin is CEO of Blockchain Association, the Washington, D.C.-based trade association representing more than 100 of the industry’s leading companies."
 seo:
-  description: "A decentralized web3 world needs to have clear government policies that enhance decentralization, and show leadership towards innovation, rather than surveillance."
+  description: "Explore how different regions approach crypto regulation: from US enforcement actions to EU's MiCA legislation and China's CBDC. Learn how global policies shape the future of decentralized technology."
 ---
 
 In the wake of sustained market turmoil in the crypto ecosystem, federal regulators in the United States and relevant authorities abroad are reassessing the fundamental question: how much should we integrate or corral this emerging technology? 
