@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: /big-ideas-driving-the-decentralized-web/
 technicality: "1"
 language: English

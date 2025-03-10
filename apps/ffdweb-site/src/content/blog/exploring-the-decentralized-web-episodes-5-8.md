@@ -1,21 +1,21 @@
 ---
-featured: false
-post-date: "2022-02-15T00:00:00.000Z"
 title: "Exploring the Decentralized Web: Episodes 5–8"
+category: "education"
 description: >-
   Episodes 5–8 dive into some of the most impactful topics in the Web3 space
   –from privacy, identity, and user control, to blockchain economics, dApps, and
   open-source development.
-author: Filecoin Foundation for the Decentralized Web
-updated-on: "2023-04-21T07:18:19.495Z"
 created-on: "2023-04-21T07:15:46.748Z"
+updated-on: "2023-04-21T07:18:19.495Z"
 published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - privacy-and-rights
-  - open-source-b
-  - inclusivity
-  - economies-of-trust
-  - browsers-and-dapps
+seo:
+  description: ""
+# tags:
+#   - privacy-and-rights
+#   - open-source-b
+#   - inclusivity
+#   - economies-of-trust
+#   - browsers-and-dapps
 ---
 
 _[Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1) is a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). These videos, featuring leaders and visionaries from top projects across the space, explore the emergence and impact of decentralized technology._

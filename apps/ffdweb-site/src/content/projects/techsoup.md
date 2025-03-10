@@ -11,7 +11,6 @@ title: TechSoup
 logo:
   url: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/649c81faf4d7738ba43cceaa_image%20(1).png
-  alt: null
 updated-on: "2023-06-28T18:54:51.524Z"
 created-on: "2023-06-28T18:54:51.524Z"
 published-on: "2023-10-20T14:07:03.064Z"

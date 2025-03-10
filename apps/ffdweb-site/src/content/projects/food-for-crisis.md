@@ -18,7 +18,6 @@ logo:
   url: /assets/images/food-for-crisis-logo.svg
 external-link: www.gbbc.io/food-for-crisis
 past-collaborations: false
-date: 2024-12-05T23:47:15.230Z
 seo:
   noindex: false
   twitter:title: summary

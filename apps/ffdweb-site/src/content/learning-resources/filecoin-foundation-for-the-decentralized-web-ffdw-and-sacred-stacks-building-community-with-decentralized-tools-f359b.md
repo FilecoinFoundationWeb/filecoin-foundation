@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   /blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
 technicality: "1"

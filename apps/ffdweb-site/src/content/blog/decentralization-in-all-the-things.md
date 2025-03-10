@@ -1,18 +1,17 @@
 ---
-featured: false
-post-date: "2023-02-01T00:00:00.000Z"
 title: Decentralization in All the Things
+created-on: "2023-04-21T07:15:43.794Z"
+updated-on: "2023-04-21T07:15:43.794Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: "education"
 description: >-
   This is a guest post by Mike Masnick, the founder and CEO of Floor64 and
   editor of the Techdirt blog, about decentralization.
-author: "Mike Masnick"
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381fb068b055975a464f_013023-ffdw-mikemasnick.png
-  alt: null
-updated-on: "2023-04-21T07:15:43.794Z"
-created-on: "2023-04-21T07:15:43.794Z"
-published-on: "2023-04-21T08:01:04.314Z"
+seo:
+  description: ""
 ---
 
 _This is a guest post by Mike Masnick, the founder and CEO of Floor64 and editor of the Techdirt blog. You can find a PDF of this essay [here](https://fil-foundation.on.fleek.co/hosting/Decentralization%20In%20All%20the%20Things.pdf)._

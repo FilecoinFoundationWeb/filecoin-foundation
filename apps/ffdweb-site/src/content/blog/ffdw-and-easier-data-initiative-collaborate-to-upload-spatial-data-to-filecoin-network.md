@@ -1,10 +1,11 @@
 ---
-featured: false
-post-date: "2022-10-12T00:00:00.000Z"
-author: null
 title: >-
   FFDW and EASIER Data Initiative Collaborate to Upload Spatial Data to Filecoin
   Network
+created-on: "2023-04-21T07:15:52.152Z"
+updated-on: "2023-04-21T07:15:52.152Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is excited to announce
   our collaboration with the EASIER Data Initiative at the University of
@@ -15,10 +16,8 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423827686a07ac0f90ac2f_1005-ffdw-edi.png
-  alt: null
-updated-on: "2023-04-21T07:15:52.152Z"
-created-on: "2023-04-21T07:15:52.152Z"
-published-on: "2023-04-21T08:01:04.314Z"
+seo:
+  description: ""
 ---
 
 Filecoin Foundation for the Decentralized Web (FFDW) is excited to announce our collaboration with the EASIER Data Initiative at the University of Maryland, College Park (UMD). EASIER stands for Efficient, Accessible, and Sustainable Infrastructure for Extracting Reliable Data for the World’s Location-Based Assets. In partnership with researchers from UMD’s Department of Geographical Sciences, the Initiative will ensure that large geospatial datasets are accessible to research organizations and the general public. This project has the potential to benefit organizations responsible for planning, research, and decision-making **where location matters.**

@@ -17,7 +17,6 @@ logo:
   url: /assets/images/dplalogovector-1-.svg
 external-link: https://dp.la/
 past-collaborations: false
-date: 2024-11-06T17:17:21.891Z
 seo:
   noindex: false
   twitter:title: summary

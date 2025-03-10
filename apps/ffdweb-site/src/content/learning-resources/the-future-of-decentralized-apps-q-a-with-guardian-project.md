@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   /the-future-of-decentralized-apps-a-q-a-with-guardian-project/
 technicality: "1"

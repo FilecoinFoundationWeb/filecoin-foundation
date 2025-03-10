@@ -1,12 +1,12 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 
 import { PATHS } from '@/constants/paths'
 
-import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
+
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Card } from '@/components/Card'
 
@@ -26,7 +26,6 @@ export function FeaturedBlogPosts({
           const categoryLabel = getCategoryLabel({
             collectionName: 'blog_posts',
             category,
-            configData,
           })
 
           return (

@@ -15,7 +15,6 @@ logo:
   url: /assets/images/partnerlogo_grayarea.png
 blog-link: ""
 external-link: https://grayarea.org/
-date: 2023-06-30T16:01:20.558Z
 seo:
   noindex: false
   twitter:title: summary

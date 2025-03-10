@@ -1,8 +1,9 @@
 ---
-featured: false
-post-date: "2023-02-02T00:00:00.000Z"
-author: null
 title: Empowering a More Informed, Transparent Society with Decentralized Technology
+created-on: "2023-04-21T07:15:45.476Z"
+updated-on: "2023-04-21T07:15:45.476Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: "impact"
 description: >-
   Since 2010, Michael Morisy and his team at MuckRock have been working to solve
   this problem: how do we help newsrooms and leaders build trust in an age of
@@ -10,10 +11,8 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423821fcf3ec505f7f19bd_0202-muckrock-spotlight.png
-  alt: null
-updated-on: "2023-04-21T07:15:45.476Z"
-created-on: "2023-04-21T07:15:45.476Z"
-published-on: "2023-04-21T08:01:04.314Z"
+seo:
+  description: ""
 ---
 
 **_Learn more about how MuckRock, an FFDW project partner, is leveraging the Filecoin network and IPFS to preserve public documents_**

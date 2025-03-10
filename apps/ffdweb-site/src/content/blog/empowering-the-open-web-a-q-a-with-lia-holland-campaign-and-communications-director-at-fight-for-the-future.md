@@ -4,19 +4,15 @@ title: "Empowering the Open Web: A Q&A with Lia Holland, Campaign and
 created-on: 2024-11-22T12:56:38.123Z
 updated-on: 2024-11-22T12:56:38.133Z
 published-on: 2024-11-22T12:56:38.144Z
-post-date: 2024-11-22T12:56:38.152Z
-featured: false
+category: impact
 description: In this Q&A, we sit down with Lia Holland, campaigns and
   communications director at Fight for the Future, to explore the significance
   of this collaboration, their vision for a decentralized web, and how
   storytelling can help change the future of technology.
 image:
   src: /assets/images/103124-qa-fftf.png
-date: 2024-11-22T12:56:38.158Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 As the Internet continues to evolve, so does the need for more open, transparent, and decentralized technologies that ensure long-term access to knowledge and safeguard individual privacy. Fight For the Future (FFtF) has been a key advocate in advancing these ideals, working to protect digital rights and promote a web that empowers users. 

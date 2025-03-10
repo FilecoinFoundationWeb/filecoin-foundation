@@ -17,7 +17,6 @@ logo:
 blog-link: /blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future/
 external-link: https://connecthumanity.fund/
 past-collaborations: true
-date: 2023-07-31T21:26:18.367Z
 seo:
   noindex: false
   twitter:title: summary

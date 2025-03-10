@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://proto.school/blog
 technicality: "2"
 language: English

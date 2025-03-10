@@ -1,5 +1,4 @@
 ---
-date: "2021-01-01T00:00:00.000Z"
 source: >-
   /ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 technicality: "1"

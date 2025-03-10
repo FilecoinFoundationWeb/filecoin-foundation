@@ -1,25 +1,24 @@
 ---
-featured: false
-post-date: "2021-12-13T00:00:00.000Z"
 title: >-
   FFDW and Guardian Project Team Up to Bring Decentralized Storage to Content
   Verification and Distribution on Smartphones
+created-on: "2023-04-21T07:16:09.669Z"
+updated-on: "2023-04-21T07:18:32.063Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   FFDW’s commitment to Guardian Project will accelerate adoption of
   decentralized storage technology on smartphones through ProofMode and F-Droid
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423839922f06c7b3150fdd_guardian-project.png
-  alt: null
-updated-on: "2023-04-21T07:18:32.063Z"
-created-on: "2023-04-21T07:16:09.669Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - grants
-  - community
-  - smartphones
-  - rights
+seo:
+  description: ""
+# tags:
+#   - grants
+#   - community
+#   - smartphones
+#   - rights
 ---
 
 ![Leveraging the Dweb to Enhance Free Speech bannner](https://uploads-ssl.webflow.com/643e92b3a344778457270525/643e98cc21e567cc30009768_guardian-project-announcement.png)

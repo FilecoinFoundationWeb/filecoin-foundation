@@ -1,23 +1,22 @@
 ---
-featured: false
-post-date: "2022-03-03T00:00:00.000Z"
 title: Exploring the Decentralized Web (Episodes 9–12)
+created-on: "2023-04-21T07:15:48.576Z"
+updated-on: "2023-04-21T07:18:20.707Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: "education"
 description: >-
   Decentralized web technology is enabling web developers and users alike to
   solve some of the issues that arose during the Web2 era, such as a lack of
   community governance and the stripping of web content’s value.
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/64423824686a077ccd90a61e_0-ghsro14ivrabstg6.png
-  alt: null
-updated-on: "2023-04-21T07:18:20.707Z"
-created-on: "2023-04-21T07:15:48.576Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - emerging-web
-  - digital-creator-economy
-  - communities-and-coordination
+seo:
+  description: ""
+# tags:
+#   - emerging-web
+#   - digital-creator-economy
+#   - communities-and-coordination
 ---
 
 _[Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1) is a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). These videos, featuring leaders and visionaries from top projects across the space, explore the emergence and impact of decentralized technology._

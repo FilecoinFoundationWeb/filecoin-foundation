@@ -2,6 +2,7 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
+import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
@@ -11,7 +12,6 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 import { extractEmailAddress } from '@/utils/extractEmailAddress'
-import { findOrThrow } from '@/utils/findOrThrow'
 
 import { CTASection } from '@/components/CTASection'
 
