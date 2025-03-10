@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "node scripts/convertYamlToJson.js",
+    "predev": "node scripts/convertYamlToJson.ts",
     "dev": "next dev",
-    "prebuild": "node scripts/convertYamlToJson.js && node scripts/injectEncryptionAccessKeyInCMS.js",
+    "prebuild": "node scripts/convertYamlToJson.ts && node scripts/injectEncryptionAccessKeyInCMS.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
