@@ -28,7 +28,9 @@ export function ProgramSection({ title, kicker, events }: ProgramSectionProps) {
             cta: {
               href: externalLink,
               text: DEFAULT_CTA_TEXT,
-              icon: MagnifyingGlass,
+              icon: {
+                component: MagnifyingGlass,
+              },
             },
           }
 

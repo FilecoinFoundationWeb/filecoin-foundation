@@ -139,7 +139,9 @@ export function EcosystemExplorerContent({
                       cta={{
                         href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                         text: 'Learn More',
-                        icon: BookOpen,
+                        icon: {
+                          component: BookOpen,
+                        },
                       }}
                       image={{
                         ...(image || graphicsData.imageFallback.data),
