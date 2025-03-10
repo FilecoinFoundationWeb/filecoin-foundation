@@ -1,0 +1,282 @@
+local_backend: true
+site_url: https://ffdweb.org
+display_url: https://ffdweb.org
+
+backend:
+  name: github
+  branch: main
+  repo: FilecoinFoundationWeb/filecoin-foundation
+  base_url: https://decap-proxy.filecoin-foundation.workers.dev/
+
+publish_mode: editorial_workflow
+media_folder: "apps/ffdweb-site/public/assets/images"
+public_folder: "/assets/images"
+
+date_iso_format: &date_iso_format "YYYY-MM-DD"
+time_iso_format: &time_iso_format "HH:mm:ss.SSSZ"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+created_on: &created_on
+  name: "created-on"
+  label: "Created On"
+  widget: "datetime"
+  default: "{{now}}"
+  picker_utc: true
+
+updated_on: &updated_on
+  name: "updated-on"
+  label: "Updated On"
+  widget: "datetime"
+  default: "{{now}}"
+  picker_utc: true
+
+published_on: &published_on
+  name: "published-on"
+  label: "Published On"
+  widget: "datetime"
+  default: "{{now}}"
+  picker_utc: true
+
+header_config: &header_config
+  name: "header"
+  label: "Header"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "Title"
+      widget: "string"
+    - name: "description"
+      label: "Description"
+      widget: "text"
+
+body_config: &body_config
+  name: "body"
+  label: "Content"
+  widget: "markdown"
+  editor_components:
+    - "code-block"
+    - "image"
+    - "video"
+    - "audio"
+
+image_alt_config: &image_alt_config
+  name: "alt"
+  label: "Alt Text"
+  widget: "hidden"
+  required: false
+  hint: "Refer to the W3C guidelines on when to use alt text: https://www.w3.org/WAI/tutorials/images/decision-tree/. Preferably, upload the image to ChatGPT 4.0 and use the prompt: 'Check the W3C guidelines (https://www.w3.org/WAI/tutorials/images/decision-tree/) and generate appropriate alt text for this image.'"
+
+image_config: &image_config
+  name: "image"
+  label: "Image"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: Adding an image is optional. If no image is added, a default fallback image will be used automatically. Simply leave the image field empty to use the fallback.
+  fields:
+    - name: "src"
+      label: "URL"
+      widget: "image"
+      allow_multiple: false
+      choose_url: false
+      required: false
+      hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 2000px width."
+    - *image_alt_config
+
+seo_metadata_description_max_characters: &seo_metadata_description_max_characters 220
+
+open_graph_config: &open_graph_config
+  name: "open-graph"
+  label: "Open Graph Metadata"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: "Expand for more information on default values."
+  fields:
+    - name: "title"
+      label: "Open Graph Title"
+      widget: "string"
+      required: false
+      hint: "If left empty, the SEO meta title will be used."
+    - name: "description"
+      label: "Open Graph Description"
+      widget: "string"
+      required: false
+      hint: "If left empty, the SEO meta description will be used."
+    - name: "image"
+      label: "Open Graph Image"
+      widget: "image"
+      allow_multiple: false
+      choose_url: false
+      required: false
+      hint: "If left empty, the page header image will be used. If no header image is present, a default homepage image will be used."
+
+twitter_config: &twitter_config
+  name: "twitter"
+  label: "Twitter Metadata"
+  widget: "object"
+  required: false
+  collapsed: true
+  hint: "Expand for more information on default values."
+  fields:
+    - name: "card"
+      label: "Twitter Card"
+      widget: "select"
+      options:
+        - label: "Summary Card"
+          value: "summary"
+        - label: "Summary with Large Image"
+          value: "summary_large_image"
+        - label: "Player Card"
+          value: "player"
+      required: false
+      default: "summary"
+      hint: "If left empty, the default value will be 'Summary Card.'"
+    - name: "site"
+      label: "Twitter Handle for Website"
+      widget: "string"
+      required: false
+      hint: "Enter the Twitter handle of the website or brand (e.g., @FilFoundation). Defaults to @FilFoundation."
+    - name: "creator"
+      label: "Twitter Creator"
+      widget: "string"
+      required: false
+      hint: "Enter the Twitter handle of the content creator (e.g., @juanbenet). Defaults to @FilFoundation."
+
+meta_config_with_title_fallback: &meta_config_with_title_fallback
+  name: "seo"
+  label: "SEO Metadata"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "Meta Title"
+      widget: "string"
+      required: false
+      hint: "If left empty, the main entry title will automatically become the SEO title. '- Filecoin Event' will be added for events, and '- Ecosystem Project' for ecosystem projects. For example: 'Acasia - Filecoin Ecosystem Project' or 'FIL Bangkok 2024 - Filecoin Event'."
+    - name: "description"
+      label: "Meta Description"
+      widget: "text"
+      pattern:
+        - "^.{0,220}$"
+        - "Must have at most 220 characters."
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+    - *open_graph_config
+    - *twitter_config
+
+meta_config: &meta_config
+  name: "seo"
+  label: "SEO Metadata"
+  widget: "object"
+  fields:
+    - name: "title"
+      label: "Meta Title"
+      widget: "string"
+    - name: "description"
+      label: "Meta Description"
+      widget: "text"
+      pattern:
+        - "^.{0,220}$"
+        - "Must have at most 220 characters."
+      hint: "To generate meta title and description, copy and paste the entry content into ChatGPT 4.0, then use the prompt: 'Generate a meta title and a meta description under 220 characters for the following content: [paste your content here].'"
+    - *open_graph_config
+    - *twitter_config
+
+collections:
+  - name: "blog_posts"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "apps/ffdweb-site/src/content/blog/"
+    preview_path: "blog/{{slug}}"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "category"
+        label: "Category"
+        widget: "select"
+        options:
+          - label: "Ecosystem"
+            value: "ecosystem"
+          - label: "Events"
+            value: "events"
+          - label: "Interviews"
+            value: "interviews"
+          - label: "News"
+            value: "news"
+          - label: "Reports"
+            value: "reports"
+          - label: "Use Cases"
+            value: "use-cases"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - *image_config
+      - *body_config
+      - *meta_config_with_title_fallback
+
+  - name: "digest_articles"
+    label: "Digest Articles"
+    folder: "apps/ffdweb-site/src/content/digest/"
+    preview_path: "digest/{{slug}}"
+    label_singular: "Digest Article"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "issue-number"
+        label: "Issue Number"
+        widget: "select"
+        options: ["1"]
+        default: "1"
+      - name: "article-number"
+        label: "Article Number"
+        widget: "number"
+        min: 1
+      - name: "authors"
+        label: "Authors"
+        widget: "list"
+        fields:
+          - name: "first-name"
+            label: "First Name"
+            widget: "string"
+          - name: "last-name"
+            label: "Last Name"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "object"
+            required: false
+            hint: "Adding an image is optional. If no image is added, the author's initials will be used automatically. Simply leave the image field empty to use the fallback."
+            fields:
+              - name: "src"
+                label: "URL"
+                widget: "image"
+                allow_multiple: false
+                choose_url: false
+                required: false
+                hint: "Use https://squoosh.app/ to compress images before uploading. Choose the WebP format and resize the image to 100px width."
+              - name: "alt"
+                label: "Alt Text"
+                widget: "hidden"
+                required: false
+          - name: "company"
+            label: "Company Name"
+            widget: "string"
+      - *body_config
+      - *image_config
+      - *meta_config_with_title_fallback
