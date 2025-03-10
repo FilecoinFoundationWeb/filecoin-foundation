@@ -80,6 +80,11 @@
   }
 }
 @layer components {
+  /* ARTICLE HEADER */
+  .article-header-image {
+    @apply rounded-lg;
+  }
+
   /* AVATAR */
   .avatar-background {
     @apply bg-brand-600;
@@ -110,6 +115,11 @@
     }
   }
 
+  /* BLOG POST HEADER */
+  .blog-post-header-date {
+    @apply text-brand-300;
+  }
+
   /* BUTTONS */
   .button {
     @apply rounded-lg border font-semibold;
@@ -118,7 +128,7 @@
       @apply border-brand-300 bg-brand-300 text-brand-800 hover:border-brand-400 hover:bg-brand-400;
     }
 
-    .button--ghost {
+    &.button--ghost {
       @apply border-white bg-brand-800 text-brand-100 hover:border-brand-400 hover:text-brand-400 focus:text-brand-400;
     }
 

@@ -26,7 +26,7 @@ export function BlogPostHeader({
     >
       <TagLabel>{category}</TagLabel>
       <ArticleHeader.Title>{title}</ArticleHeader.Title>
-      <span className="inline-block text-blue-300">
+      <span className="blog-post-header-date inline-block">
         {formatDate(publishedOn)}
       </span>
     </ArticleHeader>
