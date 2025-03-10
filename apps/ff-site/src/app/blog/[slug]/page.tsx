@@ -8,16 +8,17 @@ import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
 
 import { getBlogPostData, getBlogPostsData } from '../utils/getBlogPostData'
 
 import { generateStructuredData } from './utils/generateStructuredData'
+
 
 type BlogPostProps = {
   params: Promise<SlugParams>
@@ -37,8 +38,10 @@ export default async function BlogPost(props: BlogPostProps) {
         <BlogPostHeader
           title={title}
           publishedOn={publishedOn}
-          category={category}
-          configData={configData}
+          category={getCategoryLabel({
+            collectionName: 'blog_posts',
+            category,
+          })}
           image={{
             ...(image || graphicsData.imageFallback.data),
             alt: '',
