@@ -11,7 +11,7 @@ export type AvatarGroupProps = {
 export function AvatarGroup({ authors }: AvatarGroupProps) {
   return (
     <div className="flex items-center gap-2">
-      <div className="flex -space-x-1">
+      <div className="flex shrink-0 -space-x-1">
         {authors.map(({ firstName, lastName, image }) => (
           <Avatar
             key={`${firstName}-${lastName}`}
