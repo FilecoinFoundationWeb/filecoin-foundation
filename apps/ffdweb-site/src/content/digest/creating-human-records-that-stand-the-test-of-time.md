@@ -1,12 +1,10 @@
 ---
-title: Creating Human Records that Stand the Test of Time
+title: Creating Human Records that Stand the Test of Time - Test
 created-on: 2023-10-16T17:14:41.944Z
 updated-on: 2023-10-16T17:14:41.951Z
 published-on: 2023-10-16T17:14:41.958Z
 issue-number: "1"
 article-number: 3
-image:
-  src: /assets/images/DWD-Illustration-03.png
 authors:
   - first-name: Adam
     last-name: Rose
@@ -14,11 +12,10 @@ authors:
   - first-name: Basile
     last-name: Simon
     company: Starling Lab, Airwars
-    # image:
-    # src: /assets/images/dwd-profile-10.png
-    # bio: "Adam Rose is the chief operating officer at Starling Lab, and serves as press rights chair for the Los Angeles Press Club. Basile Simon leads the Lab’s research in law and criminal accountability, and is co-founder and advisor to Airwars. Both have spent most of their careers in journalism."
+image:
+  src: /assets/images/DWD-Illustration-03.png
 seo:
-  description: "How blockchains are preserving evidence for the long term."
+  description: How blockchains are preserving evidence for the long term.
 ---
 
 As business rivalries go, the story of Suen-nada and Ennum-Ashur was pretty routine. They both claimed ownership of valuable intellectual property, wrestled over control of accounts, and accused each other of theft.
