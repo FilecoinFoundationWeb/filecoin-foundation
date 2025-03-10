@@ -275,7 +275,7 @@
   }
 
   /* SOCIAL */
-  .social-link {
+  .social {
     @apply text-brand-primary-300;
   }
 
