@@ -18,7 +18,7 @@ import type {
   ImageObjectFit,
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
-import { ArrowUpRight, CaretRight } from '@phosphor-icons/react/dist/ssr'
+import { ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { Meta, type MetaDataType } from './Meta'

@@ -11,7 +11,7 @@ type GetInvolvedData = {
   cta: CTAProps
 }
 
-export const getInvolvedData: GetInvolvedData[] = [
+export const getInvolvedData: Array<GetInvolvedData> = [
   {
     title: 'Sponsor an Event',
     description: `To be featured partner or sponsor an upcoming Foundation-hosted event, reach out to ${extractEmailAddress(FILECOIN_FOUNDATION_URLS.events.sponsorshipsEmail)}.`,
