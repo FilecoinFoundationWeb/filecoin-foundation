@@ -308,7 +308,7 @@ collections:
         label: "External Link"
         widget: "string"
         required: false
-        hint: "Optional link to the project's website, repository, or other relevant links."
+        hint: "Optional link to the project's website or repository."
       - name: "has-collaborations"
         label: "Has Collaborations"
         widget: "boolean"
