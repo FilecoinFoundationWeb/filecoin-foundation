@@ -16,7 +16,7 @@ description:
 image:
   src: /assets/images/partnerlogo_gaurdian.png
 featured-content: https://www.ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project
-external-link: https://www.ffdweb.org/blog/guardian-project-annoucement/
+external-link: https://guardianproject.info/
 seo:
   description: ""
 ---
