@@ -31,7 +31,7 @@ export function CTALink({ href, children, icon }: CTALinkProps) {
   )
 }
 
-function getIconComponent(isExternal: boolean, icon: IconType) {
+function getIconComponent(isExternal: boolean, icon?: IconType) {
   if (icon) {
     return icon
   }
