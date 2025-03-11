@@ -44,7 +44,8 @@ export function LearningResourcesContent({
       <Search query={searchQuery} />
       <CardGrid cols="smTwo">
         {paginatedResults.map((resource) => {
-          const { slug, title, description, category, resourceType } = resource
+          const { slug, title, description, category, resourceType, link } =
+            resource
 
           const categoryLabel = getCategoryLabel({
             collectionName: 'learning_resources',
@@ -64,8 +65,8 @@ export function LearningResourcesContent({
               description={{ text: description }}
               tags={[{ text: categoryLabel }, { text: resourceTypeLabel }]}
               cta={{
-                href: '#',
-                text: 'Read More',
+                href: link,
+                text: 'View Resource',
                 icon: {
                   component: CaretRight,
                   size: 16,
