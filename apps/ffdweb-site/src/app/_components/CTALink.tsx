@@ -21,7 +21,7 @@ export function CTALink({ href, children, icon }: CTALinkProps) {
       href={href}
       className="text-brand-primary-300 focus:brand-outline inline-flex items-center gap-1.5 font-bold hover:underline"
     >
-      <span className="pb-0.5">{children}</span>
+      <span>{children}</span>
       <Icon
         component={getIconComponent(isExternal, icon)}
         size={18}
