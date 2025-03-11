@@ -281,14 +281,14 @@
 
   /* TAGS */
   .tag-label {
-    @apply border-2;
+    @apply border-1;
 
     &.tag-label--primary {
-      @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800; /* CHECK */
+      @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800;
     }
 
     &.tag-label--secondary {
-      @apply border-neutral-200 bg-neutral-950 text-neutral-200; /* CHECK */
+      @apply border-brand-primary-600 text-brand-primary-200;
     }
   }
 
