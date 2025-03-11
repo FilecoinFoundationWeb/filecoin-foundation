@@ -2,25 +2,29 @@ import { Heading } from '@filecoin-foundation/ui/Heading'
 import { Icon, type IconProps } from '@filecoin-foundation/ui/Icon'
 
 type IconCardProps = {
-  icon: { src: IconProps['component']; style: 'regular' | 'fill' }
+  icon: {
+    src: IconProps['component']
+    style: 'regular' | 'fill'
+    size: 40 | 64
+    color: IconProps['color']
+  }
   title: string
   description: string
 }
 
 export function IconCard({ icon, title, description }: IconCardProps) {
-  const { src: IconComponent, style } = icon
+  const { src: IconComponent, style, size, color } = icon
+
+  const colorStyles: Record<IconCardProps['icon']['style'], string> = {
+    regular: 'text-brand-secondary-100',
+    fill: 'bg-brand-secondary-100 flex size-20 items-center justify-center text-neutral-950',
+  }
 
   return (
     <li>
-      {style === 'regular' && (
-        <Icon component={IconComponent} color="accent" size={64} />
-      )}
-
-      {style === 'fill' && (
-        <div className="bg-brand-secondary-100 flex size-20 items-center justify-center text-neutral-950">
-          <Icon component={IconComponent} size={40} color="inherit" />
-        </div>
-      )}
+      <div className={colorStyles[style]}>
+        <Icon component={IconComponent} color={color} size={size} />
+      </div>
 
       <div className="max-w-readable mt-8 flex flex-col gap-3">
         <Heading tag="h3" variant="lg">

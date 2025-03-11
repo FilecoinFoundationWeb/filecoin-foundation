@@ -47,7 +47,7 @@ export default function About() {
           {priorities.map(({ icon, title, description }) => (
             <IconCard
               key={title}
-              icon={{ src: icon, style: 'regular' }}
+              icon={{ src: icon, style: 'regular', size: 64, color: 'accent' }}
               title={title}
               description={description}
             />
@@ -64,7 +64,7 @@ export default function About() {
           {impactAreas.map(({ icon, title, description }) => (
             <IconCard
               key={title}
-              icon={{ src: icon, style: 'fill' }}
+              icon={{ src: icon, style: 'fill', size: 40, color: 'inherit' }}
               title={title}
               description={description}
             />
