@@ -1,10 +1,12 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/grants.md'
 
@@ -18,7 +20,6 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { FeaturedGrantGraduates } from './components/FeaturedGrantGraduates'
@@ -57,11 +58,14 @@ export default async function Grants() {
         title={header.title}
         description={header.description}
         image={graphicsData.grants}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.github,
-          text: 'Apply Now',
-        }}
-      />
+      >
+        <Button
+          href={FILECOIN_FOUNDATION_URLS.grants.github}
+          baseDomain={BASE_DOMAIN}
+        >
+          Apply Now
+        </Button>
+      </PageHeader>
 
       <PageSection
         kicker="Opportunities"

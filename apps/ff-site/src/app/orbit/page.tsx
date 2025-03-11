@@ -1,4 +1,5 @@
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
@@ -18,11 +19,11 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
+import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { OrbitAmbassadorCard } from '@/components/OrbitAmbassadorCard'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { StatisticCard } from '@/components/StatisticCard'
 
@@ -59,17 +60,20 @@ export default async function Orbit(props: Props) {
         title={header.title}
         description={header.description}
         image={graphicsData.orbit}
-        cta={[
-          {
-            href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm,
-            text: 'Become an Orbit Ambassador',
-          },
-          {
-            href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsPortal,
-            text: 'Filecoin Orbit Ambassador’s Portal',
-          },
-        ]}
-      />
+      >
+        <CTAButtonGroup
+          cta={[
+            {
+              href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsApplicationForm,
+              text: 'Become an Orbit Ambassador',
+            },
+            {
+              href: FILECOIN_FOUNDATION_URLS.orbit.ambassadorsPortal,
+              text: 'Filecoin Orbit Ambassador’s Portal',
+            },
+          ]}
+        />
+      </PageHeader>
 
       <PageSection kicker="Goals" title="Orbit Program Goals">
         <CardGrid cols="lgThree">

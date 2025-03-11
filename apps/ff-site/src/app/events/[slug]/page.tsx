@@ -1,3 +1,4 @@
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { TagGroup, TagLabel } from '@filecoin-foundation/ui/TagComponents'
@@ -10,9 +11,8 @@ import { graphicsData } from '@/data/graphicsData'
 import { createMetadata } from '@/utils/createMetadata'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
-
+import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
-import { PageHeader } from '@/components/PageHeader'
 
 import { getInvolvedData } from '../data/getInvolvedData'
 import { getEventData, getEventsData } from '../utils/getEventData'
@@ -93,20 +93,25 @@ export default async function EventEntry(props: EventProps) {
             endDate,
             location: location.primary,
           })}
-          cta={buildCtaArray({
-            links: {
-              externalLink,
-              lumaCalendarLink,
-              youtubePlaylistUrl,
-            },
-            eventHasConcluded,
-          })}
           image={{
             ...(image || graphicsData.imageFallback.data),
             alt: '',
             objectFit: 'cover',
           }}
-        />
+        >
+          <CTAButtonGroup
+            cta={
+              buildCtaArray({
+                links: {
+                  externalLink,
+                  lumaCalendarLink,
+                  youtubePlaylistUrl,
+                },
+                eventHasConcluded,
+              }) ?? []
+            }
+          />
+        </PageHeader>
       </div>
 
       {eventHasRecap && <RecapSection youtubeEmbedUrl={youtubeEmbedUrl} />}

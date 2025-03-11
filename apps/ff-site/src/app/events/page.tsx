@@ -1,6 +1,8 @@
 import Image from 'next/image'
 
+import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -8,6 +10,7 @@ import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/events.md'
 
@@ -18,7 +21,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import EventsContent from './components/EventsContent'
@@ -56,7 +58,7 @@ export default async function Events(props: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        isFeatured
+        divider="Featured"
         title={featuredEvent.title}
         description={featuredEvent.description}
         metaData={getMetaData({
@@ -69,11 +71,14 @@ export default async function Events(props: Props) {
           alt: '',
           objectFit: 'cover',
         }}
-        cta={{
-          href: `${PATHS.EVENTS.path}/${featuredEvent.slug}`,
-          text: DEFAULT_CTA_TEXT,
-        }}
-      />
+      >
+        <Button
+          href={`${PATHS.EVENTS.path}/${featuredEvent.slug}`}
+          baseDomain={BASE_DOMAIN}
+        >
+          {DEFAULT_CTA_TEXT}
+        </Button>
+      </PageHeader>
       <PageSection kicker="Events" title="Network Events">
         <EventsContent searchParams={searchParams} events={events} />
       </PageSection>

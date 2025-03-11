@@ -11,7 +11,7 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageFrontmatterSchema } from '@/schemas/PageDataSchema'
 
 import { CTASection } from '@/components/CTASection'
-import { PageHeader } from '@/components/PageHeader'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 

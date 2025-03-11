@@ -1,8 +1,11 @@
+import { Button } from '@filecoin-foundation/ui/Button'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/ecosystem-explorer/ecosystem-explorer.md'
 
@@ -13,7 +16,6 @@ import { createMetadata } from '@/utils/createMetadata'
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { CTASection } from '@/components/CTASection'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { EcosystemExplorerContent } from './components/EcosystemExplorerContent'
@@ -42,15 +44,19 @@ export default async function EcosystemExplorer(props: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
+
       <PageHeader
         title={header.title}
         description={header.description}
         image={graphicsData.ecosystem}
-        cta={{
-          text: 'Submit Your Project',
-          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
-        }}
-      />
+      >
+        <Button
+          href={PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path}
+          baseDomain={BASE_DOMAIN}
+        >
+          Submit Your Project
+        </Button>
+      </PageHeader>
 
       <PageSection
         kicker="Projects"

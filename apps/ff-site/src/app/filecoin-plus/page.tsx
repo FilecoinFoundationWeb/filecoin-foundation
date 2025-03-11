@@ -1,5 +1,6 @@
 import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
@@ -23,7 +24,6 @@ import { BadgeCardGrid } from '@/components/BadgeCardGrid'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { aboutData } from './data/aboutData'
@@ -50,11 +50,15 @@ export default function FilPlus() {
         title={header.title}
         description={header.description}
         image={graphicsData.filPlus}
-        cta={{
-          href: FIL_PLUS_URLS.documentation,
-          text: 'Learn More About Fil+',
-        }}
-      />
+      >
+        <Button
+          className="h-fit w-full self-start"
+          href={FIL_PLUS_URLS.documentation}
+          baseDomain={BASE_DOMAIN}
+        >
+          Learn More About Fil+
+        </Button>
+      </PageHeader>
 
       <PageSection kicker="About" title="How Fil+ Works">
         <CardGrid cols="lgThree">

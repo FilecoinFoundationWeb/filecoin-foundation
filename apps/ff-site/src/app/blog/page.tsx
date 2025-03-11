@@ -1,5 +1,7 @@
 import { Suspense } from 'react'
 
+import { Button } from '@filecoin-foundation/ui/Button'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { formatDate } from '@filecoin-foundation/utils/dateUtils'
@@ -15,12 +17,13 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
+
+import { BASE_DOMAIN } from '@/_constants/siteMetadata'
 
 const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
@@ -43,8 +46,9 @@ export default async function Blog() {
       <StructuredDataScript
         structuredData={generateStructuredData(posts, seo)}
       />
+
       <PageHeader
-        isFeatured
+        divider="Featured"
         title={featuredPost.title}
         description={featuredPost.description}
         metaData={[formatDate(featuredPost.publishedOn)]}
@@ -53,11 +57,14 @@ export default async function Blog() {
           alt: '',
           objectFit: 'cover',
         }}
-        cta={{
-          href: `${PATHS.BLOG.path}/${featuredPost.slug}`,
-          text: 'Read Featured Post',
-        }}
-      />
+      >
+        <Button
+          href={`${PATHS.BLOG.path}/${featuredPost.slug}`}
+          baseDomain={BASE_DOMAIN}
+        >
+          Read Featured Post
+        </Button>
+      </PageHeader>
       <PageSection
         kicker="Blog"
         title="Filecoin Ecosystem Updates"

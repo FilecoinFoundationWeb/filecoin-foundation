@@ -1,5 +1,7 @@
+import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { KeyMemberCard } from '@filecoin-foundation/ui/KeyMemberCard'
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
@@ -7,7 +9,7 @@ import { Files } from '@phosphor-icons/react/dist/ssr'
 import { clsx } from 'clsx'
 
 import { PATHS } from '@/constants/paths'
-import { FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
+import { BASE_DOMAIN, FILECOIN_FOUNDATION_URLS } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/about.md'
 
@@ -19,7 +21,6 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Card } from '@/components/Card'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
-import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
 import { advisorsData } from './data/advisorsData'
@@ -43,15 +44,19 @@ export default function About() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
+
       <PageHeader
         title={header.title}
         description={header.description}
         image={graphicsData.about}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.annualReports['2024'],
-          text: 'Learn More in Our Annual Report',
-        }}
-      />
+      >
+        <Button
+          baseDomain={BASE_DOMAIN}
+          href={FILECOIN_FOUNDATION_URLS.annualReports['2024']}
+        >
+          Learn More in Our Annual Report
+        </Button>
+      </PageHeader>
 
       <PageSection
         kicker="About"

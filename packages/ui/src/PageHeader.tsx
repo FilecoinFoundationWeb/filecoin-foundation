@@ -12,12 +12,8 @@ import type {
   StaticImageProps,
 } from '@filecoin-foundation/utils/types/imageType'
 import { clsx } from 'clsx'
-
-import {
-  type CTAButtonGroupProps,
-  CTAButtonGroup,
-} from '@/components/CTAButtonGroup'
-import { SectionDivider } from '@/components/SectionDivider'
+import { TagLabel } from '@filecoin-foundation/ui/TagComponents'
+import { SectionDivider } from '@filecoin-foundation/ui/SectionDivider'
 
 type TitleProps = {
   children: string
@@ -25,38 +21,38 @@ type TitleProps = {
 
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
+  style?: 'rounded-none' | 'rounded-lg'
 }
 
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   isFeatured?: boolean
+  divider?: string
   metaData?: MetaDataType
   description?: DescriptionTextType
-  cta?: CTAButtonGroupProps['cta']
+  children?: React.ReactNode
 }
 
 export function PageHeader({
   title,
   image,
-  isFeatured = false,
   metaData,
+  isFeatured,
+  divider,
   description,
-  cta,
+  children,
 }: PageHeaderProps) {
   return (
-    <header className="grid gap-4">
-      {isFeatured && <SectionDivider title="Featured" />}
+    <header className="grid grid-cols-1 gap-4">
+      {divider && <SectionDivider title={divider} />}
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 gap-6">
+          {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}
           <PageHeader.Title>{title}</PageHeader.Title>
-          {metaData && (
-            <span className="mb-2">
-              <Meta metaData={metaData} />
-            </span>
-          )}
+          {metaData && <Meta metaData={metaData} />}
           {description && <DescriptionText>{description}</DescriptionText>}
-          {cta && <CTAButtonGroup cta={cta} />}
+          {children}
         </div>
         {image && <PageHeader.Image image={image} />}
       </div>
@@ -83,7 +79,7 @@ PageHeader.Image = function PageHeaderImage({
     quality: 100,
     sizes: buildImageSizeProp({ startSize: '100vw', lg: '490px' }),
     className: clsx(
-      'rounded-lg border border-brand-100',
+      'page-header-image',
       image.objectFit === 'cover' && 'object-cover',
       image.objectFit === 'contain' && 'object-contain',
     ),
@@ -105,7 +101,7 @@ PageHeader.Image = function PageHeaderImage({
       <Image
         fill
         {...commonProps}
-        className={clsx(commonProps.className, 'h-full w-full')}
+        className={clsx(commonProps.className)}
         src={image.src}
         alt={commonProps.alt}
       />
