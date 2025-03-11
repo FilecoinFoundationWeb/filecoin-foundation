@@ -13,7 +13,7 @@ export type CTALinkProps = {
   icon?: IconType
 }
 
-export function CTALink({ href, children, icon = CaretRight }: CTALinkProps) {
+export function CTALink({ href, children, icon }: CTALinkProps) {
   const isExternal = isExternalLink(href, BASE_DOMAIN)
 
   return (
