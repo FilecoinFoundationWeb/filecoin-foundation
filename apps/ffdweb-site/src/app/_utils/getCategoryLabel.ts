@@ -3,19 +3,18 @@ import {
   type GetCategoryLabelParams as SharedGetCategoryLabelParams,
 } from '@filecoin-foundation/utils/getCategoryLabel'
 
-type GetCategoryLabelParams = Omit<SharedGetCategoryLabelParams, 'configData'>
+import type { FFDWebCMSCollectionName } from '@/types/cmsTypes'
 
 import configData from '@/data/cmsConfigSchema.json'
 
-export function getCategoryLabel({
-  collectionName,
-  category,
-  fieldName,
-}: GetCategoryLabelParams) {
-  return sharedGetCategoryLabel({
-    collectionName,
-    category,
+type GetCategoryLabelParams = Omit<
+  SharedGetCategoryLabelParams<FFDWebCMSCollectionName>,
+  'configData'
+>
+
+export function getCategoryLabel(args: GetCategoryLabelParams) {
+  return sharedGetCategoryLabel<FFDWebCMSCollectionName>({
     configData,
-    fieldName,
+    ...args,
   })
 }

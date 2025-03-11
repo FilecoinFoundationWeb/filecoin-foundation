@@ -1,9 +1,3 @@
-export type CMSCollectionName =
-  | 'blog_posts'
-  | 'ecosystem_projects'
-  | 'event_entries'
-  | 'learning_resources'
-
 export type CMSFieldOption = {
   label: string
   value: string
@@ -18,12 +12,12 @@ export type CMSFieldConfig = {
   fields?: Array<CMSFieldConfig>
 }
 
-export type CMSCollectionConfig = {
-  name: CMSCollectionName
+type CMSCollectionConfig<CollectionName extends string = string> = {
+  name: CollectionName
   label: string
   fields?: Array<CMSFieldConfig>
 }
 
-export type CMSConfig = {
-  collections: Array<CMSCollectionConfig>
+export type CMSConfig<CollectionName extends string = string> = {
+  collections: Array<CMSCollectionConfig<CollectionName>>
 }

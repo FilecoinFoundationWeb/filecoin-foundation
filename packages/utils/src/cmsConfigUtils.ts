@@ -1,8 +1,4 @@
-import type {
-  CMSCollectionConfig,
-  CMSConfig,
-  CMSFieldConfig,
-} from './types/cmsConfig'
+import type { CMSConfig, CMSFieldConfig } from './types/cmsConfig'
 
 export function getCollectionConfig(
   collectionName: string,
@@ -10,7 +6,7 @@ export function getCollectionConfig(
 ): {
   fields: Array<CMSFieldConfig>
 } {
-  const config: CMSConfig = configData as CMSConfig
+  const config = configData as CMSConfig
 
   const collection = config.collections.find(
     (col) => col.name === collectionName,
@@ -25,24 +21,8 @@ export function getCollectionConfig(
   return { fields: collection.fields }
 }
 
-export function getCMSCollection(
-  collections: Array<CMSCollectionConfig> = [],
-  collectionName: string,
-) {
-  const collection = collections.find(
-    (collection) => collection.name === collectionName,
-  )
-
-  if (!collection || !collection.fields) {
-    console.error('Collection or fields not found')
-    return null
-  }
-
-  return collection.fields
-}
-
 export function getCMSFieldOptions(
-  fields: Array<CMSFieldConfig> = [],
+  fields: Array<CMSFieldConfig>,
   fieldName: string,
 ) {
   const [currentFieldName, ...nestedFieldName] = fieldName.split('.')
@@ -54,7 +34,10 @@ export function getCMSFieldOptions(
   }
 
   if (nestedFieldName.length > 0) {
-    return getCMSFieldOptions(currentField.fields, nestedFieldName.join('.'))
+    return getCMSFieldOptions(
+      currentField.fields || [],
+      nestedFieldName.join('.'),
+    )
   }
 
   return currentField.options || []
