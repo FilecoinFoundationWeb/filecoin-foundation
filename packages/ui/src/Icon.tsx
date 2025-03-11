@@ -1,7 +1,7 @@
-import type { Icon, IconWeight } from '@phosphor-icons/react'
+import type { Icon as PhosphorIcon, IconWeight } from '@phosphor-icons/react'
 
 export type IconProps = {
-  component: Icon
+  component: PhosphorIcon | React.FC<React.SVGProps<SVGSVGElement>>
   color?: keyof typeof colorStyles
   size?: number
   weight?: IconWeight
@@ -17,16 +17,14 @@ const colorStyles = {
 }
 
 export function Icon({
-  component,
+  component: Component,
   color = 'inherit',
   size = 24,
   weight = 'regular',
 }: IconProps) {
-  const Component = component
-
   return (
     <span aria-hidden="true" className={colorStyles[color]}>
-      <Component size={size} weight={weight} />
+      <Component weight={weight} width={size} height={size} />
     </span>
   )
 }
