@@ -1,10 +1,17 @@
+import Image from 'next/image'
+
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
+import { Heading } from '@filecoin-foundation/ui/Heading'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextLink'
-import { InternalTextLink } from '@filecoin-foundation/ui/TextLink/InternalTextLink'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+import { Newspaper } from '@phosphor-icons/react/dist/ssr'
+
+import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
+
+import { CTALink } from '@/components/CTALink'
 
 import { getProjectData } from '../utils/getProjectData'
 
@@ -20,19 +27,39 @@ export default async function Project(props: ProjectProps) {
   return (
     <PageLayout gap="large">
       <ArticleLayout>
-        <h1>{title}</h1>
+        <Heading tag="h1" variant="3xl-medium">
+          {title}
+        </Heading>
 
-        {externalLink && (
-          <ExternalTextLink href={externalLink}>
-            Visit Project Website
-          </ExternalTextLink>
-        )}
+        <div>
+          <div className="relative aspect-video bg-neutral-50">
+            <Image
+              fill
+              priority
+              src={image?.src || graphicsData.imageFallback.data.src}
+              alt={`${title}'s logo`}
+              className="object-cover"
+              sizes={buildImageSizeProp({
+                startSize: '100vw',
+                md: '730px',
+                lg: '660px',
+                xl: '600px',
+              })}
+            />
+          </div>
 
-        {featuredContent && (
-          <InternalTextLink href={featuredContent}>
-            Read Blog Post
-          </InternalTextLink>
-        )}
+          <div className="mt-8 flex gap-12">
+            {externalLink && (
+              <CTALink href={externalLink}>Visit Project Website</CTALink>
+            )}
+
+            {featuredContent && (
+              <CTALink href={featuredContent} icon={Newspaper}>
+                Read Blog Post
+              </CTALink>
+            )}
+          </div>
+        </div>
 
         <div className="prose">
           <h2>About the Project</h2>
