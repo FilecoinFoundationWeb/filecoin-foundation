@@ -14,7 +14,5 @@ logo:
 blog-link: /blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 external-link: /blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

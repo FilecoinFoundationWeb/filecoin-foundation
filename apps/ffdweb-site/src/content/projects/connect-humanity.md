@@ -18,7 +18,5 @@ blog-link: /blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-futur
 external-link: https://connecthumanity.fund/
 past-collaborations: true
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

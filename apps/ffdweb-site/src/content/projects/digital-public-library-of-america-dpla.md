@@ -18,7 +18,5 @@ logo:
 external-link: https://dp.la/
 past-collaborations: false
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

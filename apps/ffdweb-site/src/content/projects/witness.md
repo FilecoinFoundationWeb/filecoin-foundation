@@ -16,7 +16,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records/
 external-link: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

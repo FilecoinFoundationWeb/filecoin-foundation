@@ -14,7 +14,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
 external-link: https://www.ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

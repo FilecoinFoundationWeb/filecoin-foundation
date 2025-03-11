@@ -12,7 +12,5 @@ logo:
 external-link: https://www.movementforabetterinternet.org/
 past-collaborations: true
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

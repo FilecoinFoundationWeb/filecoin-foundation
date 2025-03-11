@@ -13,7 +13,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/
 external-link: https://www.youtube.com/watch?v=biI1sR859xE&t=1s
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

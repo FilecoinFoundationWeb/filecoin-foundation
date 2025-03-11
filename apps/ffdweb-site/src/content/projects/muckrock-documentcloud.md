@@ -16,7 +16,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/
 external-link: https://www.muckrock.com/news/archives/2022/may/04/ffdw-and-muckrock-collaborate-to-bring-documentclo/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

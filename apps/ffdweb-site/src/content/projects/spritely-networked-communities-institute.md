@@ -15,7 +15,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
 external-link: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

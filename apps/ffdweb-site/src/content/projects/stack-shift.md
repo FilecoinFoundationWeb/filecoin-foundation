@@ -12,7 +12,5 @@ logo:
   src: /assets/images/partnerlogo_stackshift.png
 external-link: https://www.stackshift.com/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

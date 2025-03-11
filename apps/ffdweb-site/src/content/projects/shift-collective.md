@@ -15,7 +15,5 @@ logo:
   src: /assets/images/partnerlogo_shift.png
 external-link: https://www.shiftcollective.us/ffdw
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

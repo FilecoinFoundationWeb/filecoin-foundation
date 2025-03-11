@@ -16,7 +16,5 @@ logo:
 blog-link: ""
 external-link: https://grayarea.org/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

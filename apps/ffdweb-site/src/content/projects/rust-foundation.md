@@ -12,7 +12,5 @@ logo:
 external-link: https://foundation.rust-lang.org/
 past-collaborations: false
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

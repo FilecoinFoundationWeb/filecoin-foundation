@@ -18,7 +18,5 @@ logo:
 blog-link: https://freedom.press/news/filecoin-foundation-for-the-decentralized-web-funds-freedom-of-the-press-foundation-with-largest-grant-in-our-history/
 external-link: https://decrypt.co/82056/filecoin-group-grants-million-edward-snowden-press-freedom-foundation
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

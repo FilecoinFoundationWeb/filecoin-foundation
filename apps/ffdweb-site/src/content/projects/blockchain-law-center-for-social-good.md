@@ -12,7 +12,5 @@ logo:
   src: /assets/images/partnerlogo_blsgc.png
 external-link: https://www.blockchainlawsg.org/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

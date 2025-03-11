@@ -16,7 +16,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/building-distributed-press-a-publishing-tool-for-the-decentralized-web/
 external-link: https://distributed.press/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

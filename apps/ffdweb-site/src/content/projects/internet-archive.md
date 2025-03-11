@@ -20,7 +20,5 @@ logo:
   src: /assets/images/partnerlogo_internetarchive.png
 external-link: https://archive.org/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

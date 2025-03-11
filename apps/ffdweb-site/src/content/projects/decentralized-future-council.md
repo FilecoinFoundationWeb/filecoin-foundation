@@ -15,7 +15,5 @@ logo:
 blog-link: ""
 external-link: https://www.decentralizedfuturecouncil.org/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

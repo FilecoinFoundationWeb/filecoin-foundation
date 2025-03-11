@@ -18,7 +18,5 @@ logo:
 blog-link: https://www.ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project/
 external-link: https://www.ffdweb.org/blog/guardian-project-annoucement/
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

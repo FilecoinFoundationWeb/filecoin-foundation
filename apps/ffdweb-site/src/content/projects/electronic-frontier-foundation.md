@@ -17,7 +17,5 @@ logo:
 external-link: https://www.eff.org/
 past-collaborations: false
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

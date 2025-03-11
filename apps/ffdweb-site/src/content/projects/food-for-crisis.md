@@ -20,7 +20,5 @@ logo:
 external-link: www.gbbc.io/food-for-crisis
 past-collaborations: false
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

@@ -14,7 +14,5 @@ logo:
 external-link: https://www.ushahidi.com/
 past-collaborations: true
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

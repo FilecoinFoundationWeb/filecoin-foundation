@@ -16,7 +16,5 @@ logo:
   src: /assets/images/web-foundation-hi-res-logo.jpeg
 past-collaborations: false
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
