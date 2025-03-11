@@ -174,7 +174,7 @@
   }
 
   .card-image {
-    @apply px-0.5 pt-0.5;
+    @apply bg-neutral-50;
   }
 
   .card-link {

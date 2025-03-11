@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 
@@ -10,7 +12,9 @@ import { createMetadata } from '@/utils/createMetadata'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 
+import { ProjectsContent } from './components/ProjectsContent'
 import { generateStructuredData } from './utils/generateStructuredData'
+import { getProjectsData } from './utils/getProjectData'
 
 const SEO = {
   metaTitle:
@@ -19,7 +23,9 @@ const SEO = {
     'Explore how FFDW collaborates with nonprofits to build open-source solutions, preserve vital data, and shape a decentralized internet. See our partners in action.',
 } as const
 
-export default function Projects() {
+export default async function Projects() {
+  const projects = await getProjectsData()
+
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
@@ -28,6 +34,10 @@ export default function Projects() {
         title="Discover Current and Past FFDW Project Partners"
         image={graphicsData.projects}
       />
+
+      <Suspense>
+        <ProjectsContent projects={projects} />
+      </Suspense>
 
       <CTASection
         kicker="Work with FFDW"

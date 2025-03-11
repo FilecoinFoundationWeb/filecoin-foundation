@@ -280,3 +280,40 @@ collections:
       - *body_config
       - *image_config
       - *meta_config_with_title_fallback
+
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "apps/ffdweb-site/src/content/projects/"
+    preview_path: "projects/{{slug}}"
+    create: true
+    extension: "md"
+    slug: "{{slug}}"
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - *created_on
+      - *updated_on
+      - *published_on
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "featured-content"
+        label: "Featured Content"
+        widget: "markdown"
+        required: false
+        hint: "Optional featured content for this project on fil.org or ffdweb.org."
+      - name: "external-link"
+        label: "External Link"
+        widget: "string"
+        required: false
+        hint: "Optional link to the project's website or repository."
+      - name: "has-collaborations"
+        label: "Has Collaborations"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Check if this project involved collaborations."
+      - *image_config
+      - *meta_config_with_title_fallback

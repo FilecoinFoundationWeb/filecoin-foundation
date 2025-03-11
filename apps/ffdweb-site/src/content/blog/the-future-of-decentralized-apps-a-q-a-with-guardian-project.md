@@ -1,8 +1,5 @@
 ---
-title: "The Future of Decentralized Apps: A Q&A with Guardian Project"
-created-on: "2023-04-21T07:16:14.499Z"
-updated-on: "2023-04-21T07:16:14.499Z"
-published-on: "2023-04-21T08:01:04.314Z"
+title: "The Future of Decentralized Apps: A Q&A with Guardian Project "
 category: interviews
 description: >-
   A Q&A series with an FFDW project partner focusing on different aspects of the
@@ -10,6 +7,9 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383eef619d076eb5472e_0228-guardian-qa.png
+updated-on: "2023-04-21T07:16:14.499Z"
+created-on: "2023-04-21T07:16:14.499Z"
+published-on: "2023-04-21T08:01:04.314Z"
 seo:
   description: ""
 ---
