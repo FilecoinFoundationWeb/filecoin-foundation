@@ -33,6 +33,7 @@ type CardImageProps = (StaticImageProps | ImageProps) & {
   padding?: boolean
   priority?: boolean
   sizes?: string
+  bgColor?: `bg-${string}`
 }
 
 export type ExtendedCTAProps = CTAProps & {
@@ -112,6 +113,7 @@ Card.Image = function ImageComponent({
       image.objectFit === 'cover' && 'object-cover',
       image.objectFit === 'contain' && 'object-contain',
       image.padding && 'px-6 pt-4',
+      image.bgColor,
     ),
   }
 
