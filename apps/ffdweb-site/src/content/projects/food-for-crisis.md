@@ -3,7 +3,8 @@ title: Food for Crisis
 created-on: 2024-12-05T23:47:15.206Z
 updated-on: 2024-12-05T23:47:15.215Z
 published-on: 2024-12-05T23:47:15.222Z
-blurb: Food for Crisis, a joint initiative between Global Blockchain Business
+description:
+  Food for Crisis, a joint initiative between Global Blockchain Business
   Council (GBBC) Giving and World Food Programme (WFP) Innovation Accelerator,
   ensures efficiency and transparency of humanitarian aid through blockchain
   technology. This project aims to trace funds from donation to beneficiary,

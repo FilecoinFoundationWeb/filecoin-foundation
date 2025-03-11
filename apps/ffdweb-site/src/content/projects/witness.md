@@ -3,7 +3,8 @@ title: WITNESS
 created-on: 2023-06-30T16:56:57.007Z
 updated-on: 2023-06-30T16:56:57.025Z
 published-on: 2023-06-30T16:56:57.035Z
-blurb: WITNESS is an international nonprofit organization that helps people
+description:
+  WITNESS is an international nonprofit organization that helps people
   use video and technology to protect and defend human rights. With the support
   of FFDW, WITNESS will explore how the decentralized web can support the work
   of activists, civic journalists, and smartphone witnesses who go to great

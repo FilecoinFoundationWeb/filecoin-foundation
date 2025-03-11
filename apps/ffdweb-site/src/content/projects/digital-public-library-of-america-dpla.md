@@ -3,7 +3,7 @@ title: Digital Public Library of America (DPLA)
 created-on: 2024-11-06T17:17:21.869Z
 updated-on: 2024-11-06T17:17:21.877Z
 published-on: 2024-11-06T17:17:21.885Z
-blurb: Together, DPLA's partners hold 50 million items that represent our
+description: Together, DPLA's partners hold 50 million items that represent our
   nation’s cultural heritage—photographs, videos, books, news footage, oral
   histories, letters, artwork, government documents, and much more. Storing this
   information on Filecoin would increase public access while providing an extra

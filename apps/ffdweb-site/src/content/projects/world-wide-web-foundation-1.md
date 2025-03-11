@@ -3,7 +3,8 @@ title: World Wide Web Foundation
 created-on: 2023-08-02T20:03:04.101Z
 updated-on: 2023-08-02T20:03:04.113Z
 published-on: 2023-08-02T20:03:04.123Z
-blurb: The Web Foundation advances Sir Tim Berners-Lee's original vision for
+description:
+  The Web Foundation advances Sir Tim Berners-Lee's original vision for
   an open web that is safe, trusted, and empowering for all of its users.
   Decades after his invention, over 5 billion people are on the web and it faces
   constant and evolving threats to his vision. This FFDW partnership will help

@@ -3,7 +3,8 @@ title: Harvard Library Innovation Lab
 created-on: 2023-06-30T16:15:00.308Z
 updated-on: 2023-06-30T16:15:00.329Z
 published-on: 2023-06-30T16:15:00.354Z
-blurb: As a specialized lab within the Harvard Law Library, LIL explores new
+description:
+  As a specialized lab within the Harvard Law Library, LIL explores new
   ways for libraries to share knowledge through technology; the Democratizing
   Open Knowledge program is focused on enhancing discovery and engagement with
   open data and exploring new ways to preserve digital information. FFDW’s

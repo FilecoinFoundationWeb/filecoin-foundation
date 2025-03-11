@@ -3,7 +3,8 @@ title: Spritely Networked Communities Institute
 created-on: 2023-06-30T16:52:57.989Z
 updated-on: 2023-06-30T16:52:58.011Z
 published-on: 2023-06-30T16:52:58.024Z
-blurb: Spritely’s mission is to put people directly in control of their online
+description:
+  Spritely’s mission is to put people directly in control of their online
   identities and relationships. This award helps further the organization’s
   efforts on projects ranging from decentralized identity to decentralized
   social networks to encrypted and portable storage. This technology is open,

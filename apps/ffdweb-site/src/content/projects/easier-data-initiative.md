@@ -3,7 +3,7 @@ title: EASIER Data Initiative
 created-on: 2023-06-30T16:00:00.914Z
 updated-on: 2023-06-30T16:00:00.943Z
 published-on: 2023-06-30T16:00:00.967Z
-blurb: In partnership with researchers from the University of Maryland’s
+description: In partnership with researchers from the University of Maryland’s
   Department of Geographical Sciences, the Initiative ensures that large
   geospatial datasets are accessible to research organizations and the general
   public. This collaboration with FFDW will help the Initiative develop the

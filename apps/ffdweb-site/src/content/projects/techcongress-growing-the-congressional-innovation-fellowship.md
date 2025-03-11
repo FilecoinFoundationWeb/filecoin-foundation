@@ -3,7 +3,8 @@ title: "TechCongress: Growing the Congressional Innovation Fellowship"
 created-on: 2023-06-30T16:55:52.261Z
 updated-on: 2023-06-30T16:55:52.275Z
 published-on: 2023-06-30T16:55:52.287Z
-blurb: TechCongress is an organization that provides fellowships to bridge the
+description:
+  TechCongress is an organization that provides fellowships to bridge the
   informational gap between technologists and policymakers in Congress by
   placing computer scientists, engineers, and other technologists on Capitol
   Hill to serve as technology advisors to members of Congress.

@@ -1,6 +1,6 @@
 ---
 external-link: https://www.starlinglab.org/
-blurb: >-
+description: >-
   FFDW’s commitment to Starling Lab will be used to support their work to
   prototype tools and principles to bring historians, legal experts, and
   journalists into the new era of Web3. In particular, this partnership will

@@ -3,7 +3,7 @@ title: Electronic Frontier Foundation
 created-on: 2023-07-20T19:00:19.629Z
 updated-on: 2023-07-20T19:00:19.652Z
 published-on: 2023-07-20T19:00:19.666Z
-blurb: "EFF is an essential champion of user privacy, free expression, and
+description: "EFF is an essential champion of user privacy, free expression, and
   innovation through impact litigation, policy analysis, grassroots activism,
   and technology development, and has been since their founding in 1990. Their
   staff of nearly 100—including lawyers, activists, and technologists–works to

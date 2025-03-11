@@ -3,7 +3,8 @@ title: Freedom of the Press Foundation
 created-on: 2023-06-30T16:00:43.492Z
 updated-on: 2023-06-30T16:00:43.512Z
 published-on: 2023-06-30T16:00:43.528Z
-blurb: The three-year FFDW award supports infrastructure, user experience, and
+description:
+  The three-year FFDW award supports infrastructure, user experience, and
   security enhancements for tools used by journalists around the globe. It’s
   also being used to explore a zero-trust architecture for SecureDrop, an
   open-source news and information submission system used by newsrooms worldwide

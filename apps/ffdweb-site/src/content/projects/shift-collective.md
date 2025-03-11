@@ -3,7 +3,7 @@ title: Shift Collective
 created-on: 2023-06-30T16:48:16.082Z
 updated-on: 2023-06-30T16:48:16.120Z
 published-on: 2023-06-30T16:48:16.136Z
-blurb: Shift Collective is a nonprofit that helps cultural memory
+description: Shift Collective is a nonprofit that helps cultural memory
   organizations better engage, collaborate with, and reflect their local
   communities. FFDW’s support enables SHIFT to map the decentralized storage
   needs of memory organizations, such as galleries, libraries, archives and

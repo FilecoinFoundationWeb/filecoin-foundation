@@ -1,6 +1,6 @@
 ---
 external-link: https://www.techsoup.org/
-blurb: >-
+description: >-
   Working with a network of partners, TechSoup supports change makers worldwide
   as they use digital solutions to achieve their own goals. With FFDW’s award,
   TechSoup kicked off a new project, Accelerating Makers, dedicated to

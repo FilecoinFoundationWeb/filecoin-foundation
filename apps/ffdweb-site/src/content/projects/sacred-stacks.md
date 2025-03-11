@@ -3,7 +3,7 @@ title: Sacred Stacks
 created-on: 2023-06-30T16:45:37.060Z
 updated-on: 2023-06-30T16:45:37.076Z
 published-on: 2023-06-30T16:45:37.086Z
-blurb: Sacred Stacks is an initiative within the Media Design Lab at the
+description: Sacred Stacks is an initiative within the Media Design Lab at the
   University of Colorado. The project explores how decentralized technologies
   may benefit communities centered around deep commitments, like spiritual
   experimentation, collective study, and social transformation. In this

@@ -3,7 +3,7 @@ title: "MuckRock: DocumentCloud"
 created-on: 2023-06-30T16:42:35.356Z
 updated-on: 2023-06-30T16:42:35.376Z
 published-on: 2023-06-30T16:42:35.387Z
-blurb: FFDW and MuckRock are teaming up to integrate decentralized storage
+description: FFDW and MuckRock are teaming up to integrate decentralized storage
   technology for DocumentCloud, a platform that currently hosts over 8 million
   verified documents. This collaboration will expand MuckRock’s leading
   accountability and transparency tools to a much wider range of use cases. It
