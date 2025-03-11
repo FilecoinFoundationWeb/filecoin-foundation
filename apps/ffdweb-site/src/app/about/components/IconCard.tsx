@@ -15,14 +15,14 @@ type IconCardProps = {
 export function IconCard({ icon, title, description }: IconCardProps) {
   const { src: IconComponent, style, size, color } = icon
 
-  const colorStyles: Record<IconCardProps['icon']['style'], string> = {
+  const iconWrapperStyles: Record<IconCardProps['icon']['style'], string> = {
     regular: 'text-brand-secondary-100',
     fill: 'bg-brand-secondary-100 flex size-20 items-center justify-center text-neutral-950',
   }
 
   return (
     <li>
-      <div className={colorStyles[style]}>
+      <div className={iconWrapperStyles[style]}>
         <Icon component={IconComponent} color={color} size={size} />
       </div>
 
