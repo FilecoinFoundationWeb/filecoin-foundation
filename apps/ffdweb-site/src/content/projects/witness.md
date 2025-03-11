@@ -11,10 +11,9 @@ description:
   lengths to capture human rights accounts, building upon a 30-year history
   bridging the needs of communities with the global technology systems in which
   they live and work.
-logo:
+image:
   src: /assets/images/partnerlogo_witness.png
-blog-link: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records/
-external-link: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records/
+featured-content: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records
 seo:
   description: ""
 ---

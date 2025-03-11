@@ -9,10 +9,10 @@ description:
   repository of election data using Filecoin, a decentralized storage network.
   This will make the data more accessible to researchers, policymakers, and the
   public and help ensure it cannot be altered. "
-logo:
+image:
   src: /assets/images/ushahidi-logo_black_1x-1-.png
 external-link: https://www.ushahidi.com/
-past-collaborations: true
+has-collaborations: true
 seo:
   description: ""
 ---

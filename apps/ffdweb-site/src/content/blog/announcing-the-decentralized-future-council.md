@@ -11,12 +11,12 @@ image:
 updated-on: "2023-04-21T07:18:14.180Z"
 created-on: "2023-04-21T07:15:32.959Z"
 published-on: "2023-04-21T08:01:04.314Z"
-seo:
-  description: ""
 # tags:
 #   - internet-education-foundation
 #   - advocacy
 #   - education
+seo:
+  description: ""
 ---
 
 _New Organization Dedicated to Untangling Decentralized Technologies for Policymakers_

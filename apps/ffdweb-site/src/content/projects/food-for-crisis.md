@@ -15,10 +15,9 @@ description:
   and non-crypto funds, which would be represented as digital twins on a
   blockchain. Food for Crisis will integrate with local payment systems (e.g.,
   traditional bank transfers, e-vouchers, and mobile money).
-logo:
+image:
   src: /assets/images/food-for-crisis-logo.svg
 external-link: www.gbbc.io/food-for-crisis
-past-collaborations: false
 seo:
   description: ""
 ---

@@ -7,10 +7,10 @@ description: FFDW supports the Movement for a Better Internet, a collaborative
   effort to ensure the future of the internet is grounded in public interest
   values. The movement brings people together to ensure the next generation of
   the web is better for people everywhere.
-logo:
+image:
   src: /assets/images/partnerlogo_movementbetterinternet.png
 external-link: https://www.movementforabetterinternet.org/
-past-collaborations: true
+has-collaborations: true
 seo:
   description: ""
 ---

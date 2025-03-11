@@ -16,7 +16,7 @@ description:
   being lost. Filecoin Foundation's contribution to the Internet Archive
   advances the mission of both organizations to preserve humanity's most
   valuable information and improve access to information online."
-logo:
+image:
   src: /assets/images/partnerlogo_internetarchive.png
 external-link: https://archive.org/
 seo:

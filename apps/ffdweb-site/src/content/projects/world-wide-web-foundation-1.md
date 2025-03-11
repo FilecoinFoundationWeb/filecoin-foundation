@@ -12,9 +12,8 @@ description:
   better understand what is happening in the online lives of its users, shedding
   light on where the Web is going, what emerging issues we should be monitoring,
   and in what areas a course correction is needed.
-logo:
+image:
   src: /assets/images/web-foundation-hi-res-logo.jpeg
-past-collaborations: false
 seo:
   description: ""
 ---

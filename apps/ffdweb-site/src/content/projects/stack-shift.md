@@ -8,7 +8,7 @@ description:
   help remote talent in Africa expand their networks and explore high-impact
   jobs at fast-growing firms. With the support of FFDW, Stack Shift is placing
   accelerator participants at DWeb startups. "
-logo:
+image:
   src: /assets/images/partnerlogo_stackshift.png
 external-link: https://www.stackshift.com/
 seo:

@@ -10,10 +10,9 @@ description:
   social networks to encrypted and portable storage. This technology is open,
   free, and built to enable a gatekeeper-free path, where users and social
   content are not tied to a specific server or company.
-logo:
+image:
   src: /assets/images/partnerlogo_spritely.png
-blog-link: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
-external-link: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
+featured-content: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media
 seo:
   description: ""
 ---

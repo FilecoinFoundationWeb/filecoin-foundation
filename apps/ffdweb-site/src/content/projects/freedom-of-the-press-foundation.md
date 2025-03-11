@@ -13,9 +13,9 @@ description:
   preserve historically critical information, such as its comprehensive database
   of press freedom violations in the United States and government data that
   belongs in the public sphere.
-logo:
+image:
   src: /assets/images/partnerlogo_freedompress.png
-blog-link: https://freedom.press/news/filecoin-foundation-for-the-decentralized-web-funds-freedom-of-the-press-foundation-with-largest-grant-in-our-history/
+featured-content: https://freedom.press/news/filecoin-foundation-for-the-decentralized-web-funds-freedom-of-the-press-foundation-with-largest-grant-in-our-history
 external-link: https://decrypt.co/82056/filecoin-group-grants-million-edward-snowden-press-freedom-foundation
 seo:
   description: ""

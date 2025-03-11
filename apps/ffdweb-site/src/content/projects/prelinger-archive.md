@@ -9,10 +9,9 @@ description:
   to make rare and one-of-a-kind films accessible to the general public. This
   project will also support uploading the data onto a decentralized repository
   in order to increase the resilience and longevity of digital preservation.
-logo:
+image:
   src: /assets/images/partnerlogo_prelinger.png
-blog-link: /blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
-external-link: /blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
+featured-content: https://www.ffdweb.org/blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 seo:
   description: ""
 ---

@@ -12,11 +12,11 @@ description: As we pursue our goal of supporting an internet for everyone, it is
   widespread survey and scenario process to inform and deliver a report (and
   subsequent workshops) to summarize civil society gaps and needs toward the
   advancement of digital equity.
-logo:
+image:
   src: https://pbs.twimg.com/profile_images/1511746714688016387/EB6IZmuH_400x400.jpg
-blog-link: /blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future/
+featured-content: https://www.ffdweb.org/blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future
 external-link: https://connecthumanity.fund/
-past-collaborations: true
+has-collaborations: true
 seo:
   description: ""
 ---

@@ -5,7 +5,6 @@ created-on: 2024-05-03T18:12:47.365Z
 updated-on: 2024-05-03T18:12:47.379Z
 published-on: 2024-05-03T18:12:47.391Z
 category: impact
-description: ""
 image:
   src: /assets/images/043024_fundingthecommons_recap.png
 seo:

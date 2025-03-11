@@ -11,9 +11,8 @@ description: Gray Area is a 21st-century countercultural hub catalyzing creative
   development of DWeb curriculum for the Gray Area Learn online arts education
   platform with new course tracks that will empower creators to incorporate DWeb
   technology into their creative practices.
-logo:
+image:
   src: /assets/images/partnerlogo_grayarea.png
-blog-link: ""
 external-link: https://grayarea.org/
 seo:
   description: ""

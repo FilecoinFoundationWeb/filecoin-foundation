@@ -10,9 +10,8 @@ description:
   cryptocurrency. The Council works to educate policymakers about new and
   upcoming challenges that correspond with these emerging technologies,
   including privacy, security, democracy, online trust and safety, and more.
-logo:
+image:
   src: /assets/images/partnerlogo_decentfuturecoucil.png
-blog-link: ""
 external-link: https://www.decentralizedfuturecouncil.org/
 seo:
   description: ""

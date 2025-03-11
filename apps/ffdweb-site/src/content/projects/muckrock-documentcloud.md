@@ -11,9 +11,9 @@ description: FFDW and MuckRock are teaming up to integrate decentralized storage
   researchers, and more to move key public interest documents to Filecoin, a
   decentralized storage network, and support preservation, publication, and
   analysis efforts
-logo:
+image:
   src: /assets/images/partnerlogo_muckrock.png
-blog-link: https://www.ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/
+featured-content: https://www.ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology
 external-link: https://www.muckrock.com/news/archives/2022/may/04/ffdw-and-muckrock-collaborate-to-bring-documentclo/
 seo:
   description: ""

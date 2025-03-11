@@ -7,10 +7,9 @@ description:
   The Rust Foundation is an independent non-profit organization dedicated
   to stewarding the Rust programming language, nurturing the Rust ecosystem, and
   supporting the set of maintainers governing and developing the project.
-logo:
+image:
   src: /assets/images/rust-foundation-logo-new-black.png
 external-link: https://foundation.rust-lang.org/
-past-collaborations: false
 seo:
   description: ""
 ---

@@ -1,5 +1,8 @@
 ---
-external-link: https://www.starlinglab.org/
+title: Starling Lab
+created-on: "2023-06-28T18:54:25.306Z"
+updated-on: "2023-06-28T18:54:25.306Z"
+published-on: "2023-10-20T14:07:03.064Z"
 description: >-
   FFDW’s commitment to Starling Lab will be used to support their work to
   prototype tools and principles to bring historians, legal experts, and
@@ -9,12 +12,10 @@ description: >-
   testimony of genocide. Starling Lab’s work to preserve human right violations,
   with help of Filecoin’s decentralized storage network, has been highlighted in
   Fast Company and CNN.
-title: Starling Lab
-logo:
+image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/649c81d53d6f2b384d2aa16e_image.png
-updated-on: "2023-06-28T18:54:25.306Z"
-created-on: "2023-06-28T18:54:25.306Z"
-published-on: "2023-10-20T14:07:03.064Z"
-past-collaborations: false
+external-link: https://www.starlinglab.org/
+seo:
+  description: ""
 ---

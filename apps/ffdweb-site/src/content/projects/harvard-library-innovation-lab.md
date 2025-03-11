@@ -12,9 +12,9 @@ description:
   technologies can help advance discovery and preservation of human knowledge,
   including using decentralized storage technologies like Filecoin and the
   Interplanetary File System (IPFS).
-logo:
+image:
   src: /assets/images/partnerlogo_harvardlibrary.png
-blog-link: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge/
+featured-content: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge
 external-link: https://lil.law.harvard.edu/
 seo:
   description: ""

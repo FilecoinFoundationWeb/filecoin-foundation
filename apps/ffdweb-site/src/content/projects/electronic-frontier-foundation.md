@@ -12,10 +12,9 @@ description: "EFF is an essential champion of user privacy, free expression, and
   federal, and international levels on six main issue areas: free speech,
   digital privacy, creativity and innovation, transparency, international, and
   security."
-logo:
+image:
   src: /assets/images/eff_short.png
 external-link: https://www.eff.org/
-past-collaborations: false
 seo:
   description: ""
 ---
