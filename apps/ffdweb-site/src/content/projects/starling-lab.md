@@ -11,7 +11,7 @@ description: >-
   Fast Company and CNN.
 title: Starling Lab
 logo:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/649c81d53d6f2b384d2aa16e_image.png
 updated-on: "2023-06-28T18:54:25.306Z"
 created-on: "2023-06-28T18:54:25.306Z"

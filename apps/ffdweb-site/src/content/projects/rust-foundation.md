@@ -8,7 +8,7 @@ description:
   to stewarding the Rust programming language, nurturing the Rust ecosystem, and
   supporting the set of maintainers governing and developing the project.
 logo:
-  url: /assets/images/rust-foundation-logo-new-black.png
+  src: /assets/images/rust-foundation-logo-new-black.png
 external-link: https://foundation.rust-lang.org/
 past-collaborations: false
 seo:

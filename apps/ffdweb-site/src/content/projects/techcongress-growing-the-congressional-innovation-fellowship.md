@@ -9,7 +9,7 @@ description:
   placing computer scientists, engineers, and other technologists on Capitol
   Hill to serve as technology advisors to members of Congress.
 logo:
-  url: /assets/images/partnerlogo_techcongress.png
+  src: /assets/images/partnerlogo_techcongress.png
 blog-link: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/
 external-link: https://www.youtube.com/watch?v=biI1sR859xE&t=1s
 seo:

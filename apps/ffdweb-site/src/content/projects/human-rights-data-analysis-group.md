@@ -9,7 +9,7 @@ description: HRDAG has been turning raw data into analyzable data for nearly 30
   when storing and accessing data on the decentralized web may be beneficial to
   their work.
 logo:
-  url: /assets/images/partnerlogo_hrdag.png
+  src: /assets/images/partnerlogo_hrdag.png
 blog-link: https://www.ffdweb.org/blog/can-filecoin-be-the-storage-network-for-human-rights-data/
 external-link: https://hrdag.org/
 seo:

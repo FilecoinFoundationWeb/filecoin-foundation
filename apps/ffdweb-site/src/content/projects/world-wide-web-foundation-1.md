@@ -13,7 +13,7 @@ description:
   light on where the Web is going, what emerging issues we should be monitoring,
   and in what areas a course correction is needed.
 logo:
-  url: /assets/images/web-foundation-hi-res-logo.jpeg
+  src: /assets/images/web-foundation-hi-res-logo.jpeg
 past-collaborations: false
 seo:
   noindex: false

@@ -12,7 +12,7 @@ description: FFDW and MuckRock are teaming up to integrate decentralized storage
   decentralized storage network, and support preservation, publication, and
   analysis efforts
 logo:
-  url: /assets/images/partnerlogo_muckrock.png
+  src: /assets/images/partnerlogo_muckrock.png
 blog-link: https://www.ffdweb.org/blog/empowering-a-more-informed-transparent-society-with-decentralized-technology/
 external-link: https://www.muckrock.com/news/archives/2022/may/04/ffdw-and-muckrock-collaborate-to-bring-documentclo/
 seo:

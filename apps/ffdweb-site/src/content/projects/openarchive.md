@@ -10,7 +10,7 @@ description: OpenArchive is a nonprofit dedicated to advancing human rights by
   the ground capturing images and footage of world events to leverage IPFS and
   Filecoin and other decentralized storage options via their mobile device.
 logo:
-  url: /assets/images/partnerlogo_openarchive.png
+  src: /assets/images/partnerlogo_openarchive.png
 blog-link: https://www.ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
 external-link: https://www.ffdweb.org/blog/ffdw-and-openarchive-collaborate-to-deploy-decentralized-archive-for-human-rights-data/
 seo:

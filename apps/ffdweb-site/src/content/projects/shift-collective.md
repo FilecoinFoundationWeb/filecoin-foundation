@@ -12,7 +12,7 @@ description: Shift Collective is a nonprofit that helps cultural memory
   The goal is to design an early prototype for community-centered,
   non-extractive, affordable, and accessible long-term, decentralized storage.
 logo:
-  url: /assets/images/partnerlogo_shift.png
+  src: /assets/images/partnerlogo_shift.png
 external-link: https://www.shiftcollective.us/ffdw
 seo:
   noindex: false

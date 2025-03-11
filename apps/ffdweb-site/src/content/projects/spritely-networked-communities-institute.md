@@ -11,7 +11,7 @@ description:
   free, and built to enable a gatekeeper-free path, where users and social
   content are not tied to a specific server or company.
 logo:
-  url: /assets/images/partnerlogo_spritely.png
+  src: /assets/images/partnerlogo_spritely.png
 blog-link: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
 external-link: https://www.ffdweb.org/blog/ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
 seo:

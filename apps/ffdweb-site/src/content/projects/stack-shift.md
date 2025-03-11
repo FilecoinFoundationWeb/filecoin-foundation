@@ -9,7 +9,7 @@ description:
   jobs at fast-growing firms. With the support of FFDW, Stack Shift is placing
   accelerator participants at DWeb startups. "
 logo:
-  url: /assets/images/partnerlogo_stackshift.png
+  src: /assets/images/partnerlogo_stackshift.png
 external-link: https://www.stackshift.com/
 seo:
   noindex: false

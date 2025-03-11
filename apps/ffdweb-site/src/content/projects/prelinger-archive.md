@@ -10,7 +10,7 @@ description:
   project will also support uploading the data onto a decentralized repository
   in order to increase the resilience and longevity of digital preservation.
 logo:
-  url: /assets/images/partnerlogo_prelinger.png
+  src: /assets/images/partnerlogo_prelinger.png
 blog-link: /blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 external-link: /blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 seo:

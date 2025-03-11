@@ -17,7 +17,7 @@ description:
   advances the mission of both organizations to preserve humanity's most
   valuable information and improve access to information online."
 logo:
-  url: /assets/images/partnerlogo_internetarchive.png
+  src: /assets/images/partnerlogo_internetarchive.png
 external-link: https://archive.org/
 seo:
   noindex: false

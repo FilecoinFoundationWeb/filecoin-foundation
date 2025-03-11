@@ -13,7 +13,7 @@ description: As we pursue our goal of supporting an internet for everyone, it is
   subsequent workshops) to summarize civil society gaps and needs toward the
   advancement of digital equity.
 logo:
-  url: https://pbs.twimg.com/profile_images/1511746714688016387/EB6IZmuH_400x400.jpg
+  src: https://pbs.twimg.com/profile_images/1511746714688016387/EB6IZmuH_400x400.jpg
 blog-link: /blog/ffdw-and-connect-humanity-empowering-an-equitable-digital-future/
 external-link: https://connecthumanity.fund/
 past-collaborations: true

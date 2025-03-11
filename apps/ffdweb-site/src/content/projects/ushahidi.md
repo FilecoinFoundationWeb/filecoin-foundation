@@ -10,7 +10,7 @@ description:
   This will make the data more accessible to researchers, policymakers, and the
   public and help ensure it cannot be altered. "
 logo:
-  url: /assets/images/ushahidi-logo_black_1x-1-.png
+  src: /assets/images/ushahidi-logo_black_1x-1-.png
 external-link: https://www.ushahidi.com/
 past-collaborations: true
 seo:

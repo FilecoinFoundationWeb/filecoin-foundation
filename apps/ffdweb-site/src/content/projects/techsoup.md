@@ -9,7 +9,7 @@ description: >-
   understand and adopt decentralized technologies in their work and lives.
 title: TechSoup
 logo:
-  url: >-
+  src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/649c81faf4d7738ba43cceaa_image%20(1).png
 updated-on: "2023-06-28T18:54:51.524Z"
 created-on: "2023-06-28T18:54:51.524Z"

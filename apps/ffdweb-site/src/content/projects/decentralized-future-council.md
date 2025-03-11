@@ -11,7 +11,7 @@ description:
   upcoming challenges that correspond with these emerging technologies,
   including privacy, security, democracy, online trust and safety, and more.
 logo:
-  url: /assets/images/partnerlogo_decentfuturecoucil.png
+  src: /assets/images/partnerlogo_decentfuturecoucil.png
 blog-link: ""
 external-link: https://www.decentralizedfuturecouncil.org/
 seo:

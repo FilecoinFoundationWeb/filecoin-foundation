@@ -9,7 +9,7 @@ description: Promote blockchain technology’s potential to benefit all members 
   trainer” blockchain education program for community college professors and CA
   government staff.
 logo:
-  url: /assets/images/partnerlogo_blsgc.png
+  src: /assets/images/partnerlogo_blsgc.png
 external-link: https://www.blockchainlawsg.org/
 seo:
   noindex: false

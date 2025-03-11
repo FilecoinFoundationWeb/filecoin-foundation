@@ -13,7 +13,7 @@ description:
   including using decentralized storage technologies like Filecoin and the
   Interplanetary File System (IPFS).
 logo:
-  url: /assets/images/partnerlogo_harvardlibrary.png
+  src: /assets/images/partnerlogo_harvardlibrary.png
 blog-link: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-boosts-harvard-library-innovation-lab-s-work-to-democratize-open-knowledge/
 external-link: https://lil.law.harvard.edu/
 seo:

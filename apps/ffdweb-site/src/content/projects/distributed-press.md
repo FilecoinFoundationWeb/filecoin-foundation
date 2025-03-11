@@ -12,7 +12,7 @@ description: Distributed Press is an initiative to build an open source, no-code
   features of Distributed Press will be showcased in COMPOST, a magazine
   centering stories about the digital commons.
 logo:
-  url: /assets/images/partnerlogo_distributedpress.png
+  src: /assets/images/partnerlogo_distributedpress.png
 blog-link: https://www.ffdweb.org/blog/building-distributed-press-a-publishing-tool-for-the-decentralized-web/
 external-link: https://distributed.press/
 seo:

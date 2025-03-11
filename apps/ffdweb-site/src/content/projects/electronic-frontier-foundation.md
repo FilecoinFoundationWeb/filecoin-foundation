@@ -13,7 +13,7 @@ description: "EFF is an essential champion of user privacy, free expression, and
   digital privacy, creativity and innovation, transparency, international, and
   security."
 logo:
-  url: /assets/images/eff_short.png
+  src: /assets/images/eff_short.png
 external-link: https://www.eff.org/
 past-collaborations: false
 seo:

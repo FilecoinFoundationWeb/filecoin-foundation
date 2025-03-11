@@ -12,7 +12,7 @@ description:
   bridging the needs of communities with the global technology systems in which
   they live and work.
 logo:
-  url: /assets/images/partnerlogo_witness.png
+  src: /assets/images/partnerlogo_witness.png
 blog-link: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records/
 external-link: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records/
 seo:

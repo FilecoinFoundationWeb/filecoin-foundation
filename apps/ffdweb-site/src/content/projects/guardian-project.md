@@ -14,7 +14,7 @@ description:
   storage technology for F-Droid, the leading free and open-source app
   publishing platform.
 logo:
-  url: /assets/images/partnerlogo_gaurdian.png
+  src: /assets/images/partnerlogo_gaurdian.png
 blog-link: https://www.ffdweb.org/blog/the-future-of-decentralized-apps-a-q-a-with-guardian-project/
 external-link: https://www.ffdweb.org/blog/guardian-project-annoucement/
 seo:
