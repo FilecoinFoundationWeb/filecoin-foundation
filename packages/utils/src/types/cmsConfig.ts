@@ -2,6 +2,7 @@ export type CMSCollectionName =
   | 'blog_posts'
   | 'ecosystem_projects'
   | 'event_entries'
+  | 'learning_resources'
 
 export type CMSFieldOption = {
   label: string
