@@ -15,6 +15,7 @@ import { PageHeader } from '@/components/PageHeader'
 import { ProjectsContent } from './components/ProjectsContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getProjectsData } from './utils/getProjectData'
+
 const SEO = {
   metaTitle:
     'FFDW Projects | Explore Partnerships Advancing the Decentralized Web',
@@ -24,6 +25,7 @@ const SEO = {
 
 export default async function Projects() {
   const projects = await getProjectsData()
+
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
