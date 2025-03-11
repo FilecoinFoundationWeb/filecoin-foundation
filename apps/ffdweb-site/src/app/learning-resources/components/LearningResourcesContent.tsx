@@ -65,7 +65,7 @@ export function LearningResourcesContent({
               tags={[{ text: categoryLabel }, { text: resourceTypeLabel }]}
               cta={{
                 href: '#',
-                text: 'Read Post',
+                text: 'Read More',
                 icon: {
                   component: CaretRight,
                   size: 16,
