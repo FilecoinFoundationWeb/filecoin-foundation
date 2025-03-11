@@ -14,7 +14,6 @@ blurb: Shift Collective is a nonprofit that helps cultural memory
 logo:
   url: /assets/images/partnerlogo_shift.png
 external-link: https://www.shiftcollective.us/ffdw
-date: 2023-06-30T16:48:16.152Z
 seo:
   noindex: false
   twitter:title: summary

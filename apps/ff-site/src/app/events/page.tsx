@@ -4,6 +4,7 @@ import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 import type { AsyncQueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 
 import { PATHS } from '@/constants/paths'
@@ -13,7 +14,6 @@ import { attributes } from '@/content/pages/events.md'
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
-import { getFeaturedEntry } from '@/utils/getFeaturedEntry'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 

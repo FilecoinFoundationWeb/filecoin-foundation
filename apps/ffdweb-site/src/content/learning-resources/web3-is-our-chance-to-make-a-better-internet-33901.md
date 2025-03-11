@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: https://hbr.org/2022/05/web3-is-our-chance-to-make-a-better-internet
 technicality: "1"
 language: English

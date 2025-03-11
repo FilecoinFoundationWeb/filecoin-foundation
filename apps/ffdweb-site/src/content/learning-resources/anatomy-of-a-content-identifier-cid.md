@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://proto.school/anatomy-of-a-cid
 technicality: "3"
 language: English

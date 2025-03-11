@@ -1,8 +1,5 @@
 ---
-featured: false
-post-date: "2023-02-08T00:00:00.000Z"
-author: null
-title: Building Distributed Press, a Publishing Tool for the Decentralized Web
+title: "Building Distributed Press, a Publishing Tool for the Decentralized Web"
 description: >-
   FFDW works with Hypha Worker Co-operative and Sutty to foster decentralized
   web publishing tools that offer creators an alternative to centralized
@@ -10,10 +7,12 @@ description: >-
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381aaf6e60375caa347a_0208-distributedpress.png
-  alt: null
 updated-on: "2023-04-21T07:15:38.854Z"
 created-on: "2023-04-21T07:15:38.854Z"
 published-on: "2023-04-21T08:01:04.314Z"
+seo:
+  description: ""
+category: "technology"
 ---
 
 **_FFDW works with Hypha Worker Co-operative and Sutty to foster decentralized web publishing tools that offer creators an alternative to centralized publishing platforms._**
@@ -26,15 +25,15 @@ Hypha Worker Co-operative is a worker-owned co-op based in Toronto, Canada, whos
 
 Many people are familiar with centralized publishing platforms, like Medium, SquareSpace, or Wordpress. These platforms are convenient and easy-to-use. They come with a built-in audience and distribution channels. They also come with tradeoffs – from subscription fees and link rot, to questions of content ownership and data privacy.
 
-It’s not hard to find examples of the challenges of handing over control of your publishing to centralized platforms. Last year, [Kara Swisher](https://twitter.com/karaswisher/status/1570138323632664578?s=20&t=eyvIcbE9tSanFjQixxpf8g), renowned tech journalist, lost years of her work on All Things Digital due to link rot. A [2021 study](https://www.cjr.org/analysis/linkrot-content-drift-new-york-times.php) by Harvard Law School and the New York Times, which looked at 2.2 million URLs, found 25% of links in New York Times articles were completely broken and no longer pointing to accurate sources. In 2020, Facebook – and its family of apps, including Instagram and WhatsApp – [went down for hours](https://www.nytimes.com/2021/10/04/technology/facebook-down.html). Small businesses around the world depend on these apps, and these types of widespread outages significantly impact people’s livelihoods – from lost revenue to a whole business going down. Leadership or changing business models, such as those at Twitter show just how vulnerable a creator’s following or presence on a platform can be when a single organization or individual has ultimate power over how your words are distributed.
+It's not hard to find examples of the challenges of handing over control of your publishing to centralized platforms. Last year, [Kara Swisher](https://twitter.com/karaswisher/status/1570138323632664578?s=20&t=eyvIcbE9tSanFjQixxpf8g), renowned tech journalist, lost years of her work on All Things Digital due to link rot. A [2021 study](https://www.cjr.org/analysis/linkrot-content-drift-new-york-times.php) by Harvard Law School and the New York Times, which looked at 2.2 million URLs, found 25% of links in New York Times articles were completely broken and no longer pointing to accurate sources. In 2020, Facebook – and its family of apps, including Instagram and WhatsApp – [went down for hours](https://www.nytimes.com/2021/10/04/technology/facebook-down.html). Small businesses around the world depend on these apps, and these types of widespread outages significantly impact people's livelihoods – from lost revenue to a whole business going down. Leadership or changing business models, such as those at Twitter show just how vulnerable a creator's following or presence on a platform can be when a single organization or individual has ultimate power over how your words are distributed.
 
 Decentralized publishing is an alternative, where resilient, decentralized infrastructure enables individuals more control and ownership over content.
 
-“DWeb publishing platforms are behind when it comes to the features most creators need, such as feedback metrics, monetization tools, and infrastructure that supports large audience networks,” said Mai Ishikawa Sutton, project co-founder and contributor at Hypha Co-op. “This is where the Distributed Press project comes in. It aims to build these features into a fairer platform that enables sustainable creative communities on the dWeb.” With the support of FFDW, Distributed Press aims to create a user-friendly platform that allows the benefits of a decentralized publishing system.
+"DWeb publishing platforms are behind when it comes to the features most creators need, such as feedback metrics, monetization tools, and infrastructure that supports large audience networks," said Mai Ishikawa Sutton, project co-founder and contributor at Hypha Co-op. "This is where the Distributed Press project comes in. It aims to build these features into a fairer platform that enables sustainable creative communities on the dWeb." With the support of FFDW, Distributed Press aims to create a user-friendly platform that allows the benefits of a decentralized publishing system.
 
 ## Distributed Press
 
-Distributed Press will build off of [Sutty’s content management system](https://panel.sutty.nl/usuaries/sign_in?locale=en) (CMS), a platform for managing and hosting resilient websites designed for activists, collectives, and organizations, to enable anyone to publish creative and journalistic works to both the World Wide Web (www) and dWeb. The decentralized protocols they are initially prioritizing are InterPlanetary File System (IPFS), Holepunch.to (previously Hypercore), and BitTorrent, as well as other protocols as the project progresses.
+Distributed Press will build off of [Sutty's content management system](https://panel.sutty.nl/usuaries/sign_in?locale=en) (CMS), a platform for managing and hosting resilient websites designed for activists, collectives, and organizations, to enable anyone to publish creative and journalistic works to both the World Wide Web (www) and dWeb. The decentralized protocols they are initially prioritizing are InterPlanetary File System (IPFS), Holepunch.to (previously Hypercore), and BitTorrent, as well as other protocols as the project progresses.
 
 ![](https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381aaf6e604484aa34f8_publish_to_the_distributed_web.png)
 

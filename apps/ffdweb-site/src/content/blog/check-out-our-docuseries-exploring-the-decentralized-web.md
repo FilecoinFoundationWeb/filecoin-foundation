@@ -1,25 +1,24 @@
 ---
-featured: false
-post-date: "2022-01-21T00:00:00.000Z"
 title: Check out our Docuseries “Exploring the Decentralized Web”
+created-on: "2023-04-21T07:15:42.087Z"
+updated-on: "2023-04-21T07:18:17.975Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: "education"
 description: >-
   We recently launched Exploring the Decentralized Web, a 12-part documentary
   series produced by Filecoin Foundation for the Decentralized Web (FFDW).
   Featuring leaders and visionaries from top projects across the space, these
   videos explore the history of decentralized technology and its benefits for
   users and organizations.
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442381d1fe00b261574bc1d_0-w2tmph7o7z-pisg8-2.png
-  alt: null
-updated-on: "2023-04-21T07:18:17.975Z"
-created-on: "2023-04-21T07:15:42.087Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - data-and-user-control
-  - digital-identity
-  - internet-evolution
+# tags:
+#   - data-and-user-control
+#   - digital-identity
+#   - internet-evolution
+seo:
+  description: ""
 ---
 
 We recently launched [Exploring the Decentralized Web](https://www.youtube.com/watch?v=P0yfvedPY94&list=PL37YlBYJT0nmfqDnbov6lKHUyZvRfQjap&index=1), a 12-part documentary series produced by Filecoin Foundation for the Decentralized Web (FFDW). Featuring leaders and visionaries from top projects across the space, these videos explore the history of decentralized technology and its benefits for users and organizations.

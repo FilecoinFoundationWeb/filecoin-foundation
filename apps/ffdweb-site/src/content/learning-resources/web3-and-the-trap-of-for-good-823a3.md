@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: https://ssir.org/articles/entry/web3_and_the_trap_of_for_good
 technicality: "1"
 language: English

@@ -1,5 +1,7 @@
-import { getDigestArticleData as sharedGetDigestArticleData } from '@filecoin-foundation/utils/getDigestArticleData'
-import { getDigestArticlesData as sharedGetDigestArticlesData } from '@filecoin-foundation/utils/getDigestArticleData'
+import {
+  getDigestArticleData as sharedGetDigestArticleData,
+  getDigestArticlesData as sharedGetDigestArticlesData,
+} from '@filecoin-foundation/utils/getDigestArticleData'
 
 import { PATHS } from '@/constants/paths'
 

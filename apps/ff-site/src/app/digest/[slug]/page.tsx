@@ -1,17 +1,18 @@
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { DigestArticleHeader } from '@filecoin-foundation/ui/DigestArticleHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
 
 import { type DynamicPathValues, PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
 import { MarkdownContent } from '@/components/MarkdownContent'
-import { ShareArticle } from '@/components/ShareArticle'
 
 import {
   getDigestArticleData,
@@ -48,6 +49,7 @@ export default async function DigestArticle(props: DigestArticleProps) {
         <ShareArticle
           articleTitle={title}
           path={`${PATHS.DIGEST.path}/${slug}`}
+          baseUrl={BASE_URL}
         />
       </ArticleLayout>
     </PageLayout>

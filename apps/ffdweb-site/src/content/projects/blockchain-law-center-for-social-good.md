@@ -11,7 +11,6 @@ blurb: Promote blockchain technology’s potential to benefit all members of
 logo:
   url: /assets/images/partnerlogo_blsgc.png
 external-link: https://www.blockchainlawsg.org/
-date: 2023-06-30T13:39:46.219Z
 seo:
   noindex: false
   twitter:title: summary

@@ -1,7 +1,4 @@
 ---
-featured: false
-post-date: "2022-09-23T00:00:00.000Z"
-author: null
 title: >-
   Web3 Sci-Fi: Christopher Kulendran Thomas's 'Another World' to Debut at
   London's Institute of Contemporary Arts
@@ -10,18 +7,20 @@ description: >-
   Contemporary Arts (ICA) London today announced that Christopher Kulendran
   Thomas's latest exhibition, Another World, will debut at the ICA on October
   11.
+category: impact
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383fef619d8564b54739_ckt-ffdw-ica.png
-  alt: null
 updated-on: "2023-04-21T07:18:36.074Z"
 created-on: "2023-04-21T07:16:15.905Z"
 published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - another-world
-  - frieze-week
-  - the-finesse
-  - contemporary-art
+# tags:
+#   - another-world
+#   - frieze-week
+#   - the-finesse
+#   - contemporary-art
+seo:
+  description: ""
 ---
 
 _In his latest exhibition, internationally renowned artist Christopher Kulendran Thomas explores a vision of a future beyond nation-states, based on a new internet built and owned by its users_

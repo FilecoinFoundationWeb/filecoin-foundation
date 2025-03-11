@@ -11,7 +11,6 @@ logo:
   url: /assets/images/partnerlogo_techcongress.png
 blog-link: https://www.ffdweb.org/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/
 external-link: https://www.youtube.com/watch?v=biI1sR859xE&t=1s
-date: 2023-06-30T16:55:52.295Z
 seo:
   noindex: false
   twitter:title: summary

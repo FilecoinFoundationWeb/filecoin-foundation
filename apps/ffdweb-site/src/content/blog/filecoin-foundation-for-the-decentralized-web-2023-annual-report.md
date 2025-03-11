@@ -3,19 +3,15 @@ title: Filecoin Foundation for the Decentralized Web 2023 Annual Report
 created-on: 2024-02-27T14:38:33.527Z
 updated-on: 2024-02-27T14:38:33.545Z
 published-on: 2024-02-27T14:38:33.552Z
-post-date: 2024-02-27T14:38:33.559Z
-featured: false
+category: updates
 description: In this report, you’ll see the progress achieved by FFDW and our
   exceptional roster of project partners in creating profound and wide-reaching
   impact in a moment of growing interest and appreciation for decentralized
   values.
 image:
   src: /assets/images/022624-ffdw-annualreport.png
-date: 2024-02-27T14:38:33.565Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 Filecoin Foundation for the Decentralized Web (FFDW) is the sister nonprofit of Filecoin Foundation. FFDW’s mission is to serve the public good by supporting the entire decentralized web (DWeb) ecosystem. In the pursuit of preserving humanity's most important information, FFDW envisages a crucial role for decentralized storage systems –– such as those built by the many participants in the Filecoin ecosystem. 

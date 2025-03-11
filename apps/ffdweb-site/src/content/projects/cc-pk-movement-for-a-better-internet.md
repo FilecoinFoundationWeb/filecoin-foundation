@@ -11,7 +11,6 @@ logo:
   url: /assets/images/partnerlogo_movementbetterinternet.png
 external-link: https://www.movementforabetterinternet.org/
 past-collaborations: true
-date: 2023-06-30T13:46:16.456Z
 seo:
   noindex: false
   twitter:title: summary

@@ -1,21 +1,19 @@
 ---
-featured: false
-post-date: "2021-06-01T00:00:00.000Z"
 title: "Melba Roy Mouton: A 'Hidden Figure' Whose Legacy Paved the Way for Web3"
+created-on: "2023-04-21T07:16:12.922Z"
+updated-on: "2023-04-21T07:18:34.828Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   Melba Roy Mouton was a statistician and computer scientist whose contributions
   to the scientific community during her tenure at NASA not only shaped modern
   programming uses and documentation practices, but also how it is taught to
   future generations.
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/6442383cfcf3ec3f5b7f32c6_melba-roy.jpeg
-  alt: null
-updated-on: "2023-04-21T07:18:34.828Z"
-created-on: "2023-04-21T07:16:12.922Z"
-published-on: "2023-04-21T08:01:04.314Z"
-f_recommended-posts: []
+seo:
+  description: ""
 ---
 
 ## Early Life

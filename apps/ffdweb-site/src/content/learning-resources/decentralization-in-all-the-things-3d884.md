@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: /decentralization-in-all-the-things/
 technicality: "1"
 language: English

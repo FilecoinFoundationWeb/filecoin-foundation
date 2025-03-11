@@ -1,27 +1,26 @@
 ---
-featured: false
-post-date: "2023-03-28T00:00:00.000Z"
-author: null
 title: "FFDW and Connect Humanity: Empowering an Equitable Digital Future"
+created-on: "2023-04-21T07:15:50.533Z"
+updated-on: "2023-04-21T07:15:50.533Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: partnerships
 description: >
-  Largest ever survey of civil society’s digital haves and have-nots shines
+  Largest ever survey of civil society's digital haves and have-nots shines
   light on one of the biggest barriers facing NGOs
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238263db3a0680966e3ab_0321-ch.png
-  alt: null
-updated-on: "2023-04-21T07:15:50.533Z"
-created-on: "2023-04-21T07:15:50.533Z"
-published-on: "2023-04-21T08:01:04.314Z"
+seo:
+  description: ""
 ---
 
-_Largest ever survey of civil society’s digital haves and have-nots shines light on one of the biggest barriers facing NGOs_
+_Largest ever survey of civil society's digital haves and have-nots shines light on one of the biggest barriers facing NGOs_
 
 Nearly half of the world's population [lacks adequate access to the internet](https://www.weforum.org/agenda/2020/04/coronavirus-covid-19-pandemic-digital-divide-internet-data-broadband-mobbile/), which means billions of people cannot keep pace with an increasingly digital world. Lack of internet access directly impacts socioeconomic factors like education, income, and access to quality healthcare. This critical access to information is a human right, and we must collectively do a better job of ensuring that right for everyone. To advance digital equity — the state in which all individuals have the digital access, tools, and skills they need to operate in our transforming society — we must first understand the conditions that ensure that access.
 
 Civil society and the decentralized web (Dweb) are aligned in the core value of decentralization: both are decentralized in nature and their structure encourages the participation of many people across diverse applications, groups, or services. Civil society has a lot to gain by connecting to and making use of DWeb technologies. This is what brought [Connect Humanity](https://connecthumanity.fund/) and FFDW together.
 
-Connect Humanity is a social impact fund that identifies underserved communities and connects them with broadband solutions. They provide resources to create digital equity connectivity plans and build infrastructure in order to connect people to the internet so they may access the tools and resources needed to fully participate in our digital society. To that end, Connect Humanity, with the support of FFDW, surveyed more than 7,500 civil society organizations (CSOs) across 136 countries to evaluate the status of digital equity worldwide. This is the largest ever survey of civil society’s digital haves and have-nots, representing organizations that collectively serve more than 190 million people.
+Connect Humanity is a social impact fund that identifies underserved communities and connects them with broadband solutions. They provide resources to create digital equity connectivity plans and build infrastructure in order to connect people to the internet so they may access the tools and resources needed to fully participate in our digital society. To that end, Connect Humanity, with the support of FFDW, surveyed more than 7,500 civil society organizations (CSOs) across 136 countries to evaluate the status of digital equity worldwide. This is the largest ever survey of civil society's digital haves and have-nots, representing organizations that collectively serve more than 190 million people.
 
 FFDW and Connect Humanity share two goals: internet for all and building a better internet, making this project a natural partnership and financial investment. FFDW drives the development and use of open, decentralized technologies by accelerating the adoption of decentralized platforms. Building communities and champions of decentralization requires a deeper understanding of global society's learning resources and tools to adopt new technologies and increase participation. The Connect Humanity survey was an important research investment for FFDW because it identifies where and how funders might be able to better support the needs of global communities.
 
@@ -29,7 +28,7 @@ Connect Humanity's Digital Equity Framework shaped the direction of the study, m
 
 ## Infrastructure
 
-The sentiment among CSOs is nearly unanimous: 95% said the internet is vital to do their work effectively. Meanwhile, four in five (78%) indicated that lacking internet access, tools, or digital skills impacts their ability to serve their communities best. One issue is lacking education about the internet and how to use tools like digital storage or cloud computing. Only 12% of CSOs ‘strongly agree' that the communities they serve have internet access, and, for those that do, there are other challenges: 39% pointed to slow speeds, and 32% identified unreliable connections.
+The sentiment among CSOs is nearly unanimous: 95% said the internet is vital to do their work effectively. Meanwhile, four in five (78%) indicated that lacking internet access, tools, or digital skills impacts their ability to serve their communities best. One issue is lacking education about the internet and how to use tools like digital storage or cloud computing. Only 12% of CSOs 'strongly agree' that the communities they serve have internet access, and, for those that do, there are other challenges: 39% pointed to slow speeds, and 32% identified unreliable connections.
 
 ## Affordability
 
@@ -49,6 +48,6 @@ Regarding the resources that motivate people to use the internet, email and chat
 
 ## It's Time to Take Advantage of the Resources
 
-The data is clear: around the globe, many communities that CSOs serve lack access to affordable and reliable internet or the digital tools and skills needed to participate in a digital world. But here's the good news: the knowledge, capital, and solutions to enable digital equity exists, and it's time to mobilize, harness, and distribute those resources. It’s essential to understand where the internet stands to shape a better, more equal internet in the future. Connect Humanity and FFDW encourage people to work on ensuring people who seek to serve are on a path to an equitable digital future. Connect Humanity provides the education to make a change and remove these barriers, while FFDW is building the next iteration of the web and pushing towards decentralized technology. Together, Connect Humanity and FFDW will help make digital equity a reality.
+The data is clear: around the globe, many communities that CSOs serve lack access to affordable and reliable internet or the digital tools and skills needed to participate in a digital world. But here's the good news: the knowledge, capital, and solutions to enable digital equity exists, and it's time to mobilize, harness, and distribute those resources. It's essential to understand where the internet stands to shape a better, more equal internet in the future. Connect Humanity and FFDW encourage people to work on ensuring people who seek to serve are on a path to an equitable digital future. Connect Humanity provides the education to make a change and remove these barriers, while FFDW is building the next iteration of the web and pushing towards decentralized technology. Together, Connect Humanity and FFDW will help make digital equity a reality.
 
-You can find all information related to Connect Humanity’s study at [connecthumanity.fund/digital-inequity-report/](https://connecthumanity.fund/digital-inequity-report/). To learn more about how to support Connect Humanity’s continued work please visit [connecthumanity.fund/support-this-work/](https://connecthumanity.fund/support-this-work/).
+You can find all information related to Connect Humanity's study at [connecthumanity.fund/digital-inequity-report/](https://connecthumanity.fund/digital-inequity-report/). To learn more about how to support Connect Humanity's continued work please visit [connecthumanity.fund/support-this-work/](https://connecthumanity.fund/support-this-work/).

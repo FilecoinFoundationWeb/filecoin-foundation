@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: >-
   https://www.forbes.com/sites/alanransil/2023/04/12/web3-projects-are-rebuilding-carbon-offsets-architecture-of-trust/?sh=7c948df46ec0
 technicality: "1"

@@ -3,7 +3,6 @@ import { NoSearchResultsMessage } from '@filecoin-foundation/ui/NoSearchResultsM
 import { Pagination, usePagination } from '@filecoin-foundation/ui/Pagination'
 import { Search, useSearch } from '@filecoin-foundation/ui/Search'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
-import { getCategoryLabel } from '@filecoin-foundation/utils/categoryUtils'
 import {
   CATEGORY_KEY,
   LOCATION_KEY,
@@ -18,13 +17,13 @@ import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
-import configData from '@/data/cmsConfigSchema.json'
 import { graphicsData } from '@/data/graphicsData'
 
 import {
   entryMatchesCategoryQuery,
   entryMatchesLocationQuery,
 } from '@/utils/filterUtils'
+import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { useFilter } from '@/hooks/useFilter'
 import { useListboxOptions } from '@/hooks/useListboxOptions'
@@ -139,7 +138,6 @@ export default function EventsContent({
                   const tagLabel = getCategoryLabel({
                     collectionName: 'event_entries',
                     category,
-                    configData,
                   })
 
                   return (
@@ -173,7 +171,9 @@ export default function EventsContent({
                           shouldLinkToExternalEventsPage ||
                           `${PATHS.EVENTS.path}/${slug}`,
                         text: DEFAULT_CTA_TEXT,
-                        icon: MagnifyingGlass,
+                        icon: {
+                          component: MagnifyingGlass,
+                        },
                       }}
                     />
                   )

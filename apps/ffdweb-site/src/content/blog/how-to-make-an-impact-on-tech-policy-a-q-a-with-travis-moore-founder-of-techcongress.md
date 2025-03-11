@@ -3,15 +3,12 @@ title: "How to Make an Impact on Tech Policy: A Q&A with Travis Moore, Founder o
 created-on: 2023-08-16T18:51:13.562Z
 updated-on: 2023-08-16T18:51:13.580Z
 published-on: 2023-08-16T18:51:13.590Z
-post-date: 2023-08-16T18:51:13.602Z
-featured: false
+category: impact
+description: ""
 image:
   src: /assets/images/091523-qa-techcongress.png
-date: 2023-08-16T18:51:13.615Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 In the ever-evolving landscape of technology and policy, organizations like [TechCongress](https://www.techcongress.io/) play a crucial role in bridging the gap between these two realms. Last year, Filecoin Foundation for the Decentralized Web (FFDW) began [working with TechCongress](/blog/filecoin-foundation-for-the-decentralized-web-and-techcongress-will-work-together-to-place-more-technologists-on-capitol-hill/) to connect technologists and policymakers in Congress. 

@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: https://docs.filecoin.io/
 technicality: "3"
 language: English

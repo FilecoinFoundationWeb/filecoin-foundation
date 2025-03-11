@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: /blog/accelerating-the-makers-of-civil-society/
 technicality: "1"
 language: English

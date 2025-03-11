@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   https://lil.law.harvard.edu/blog/2022/09/15/opportunities-and-challenges-of-client-side-playback/
 technicality: "3"

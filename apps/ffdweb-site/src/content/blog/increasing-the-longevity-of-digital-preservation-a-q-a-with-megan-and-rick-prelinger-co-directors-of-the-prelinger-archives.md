@@ -4,15 +4,12 @@ title: "Increasing the Longevity of Digital Preservation: A Q&A with Megan and
 created-on: 2024-09-06T15:14:39.910Z
 updated-on: 2024-09-06T15:14:39.918Z
 published-on: 2024-09-06T15:14:39.924Z
-post-date: 2024-09-06T15:14:39.931Z
-featured: false
+category: impact
+description: ""
 image:
   src: /assets/images/09262024-qa-prelinger.png
-date: 2024-09-06T15:14:39.937Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 We often hear the phrase “the internet is forever,” but recent events have underscored just how fragile our digital world can be. With incidents like the sudden disappearance of [MTV News](https://variety.com/2024/digital/news/mtv-news-website-archives-pulled-offline-1236047163/), wiping decades of cultural media, we’re constantly reminded that online content can vanish in an instant.  

@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: >-
   https://guardianproject.info/2023/06/15/improving-website-resilience-with-libresilient-and-ipfs/
 technicality: "3"

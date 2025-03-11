@@ -3,6 +3,7 @@ import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { Social } from '@filecoin-foundation/ui/Social'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
 import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 
 import { PATHS } from '@/constants/paths'
 
@@ -66,6 +67,12 @@ export default async function Digest() {
                 cta={{
                   href: `${PATHS.DIGEST.path}/${slug}`,
                   text: 'Read Article',
+                  icon: {
+                    component: CaretRight,
+                    size: 16,
+                    position: 'trailing',
+                    weight: 'bold',
+                  },
                 }}
                 image={{
                   ...(image || graphicsData.imageFallback.data),
@@ -87,7 +94,11 @@ export default async function Digest() {
         kicker="Social Media"
         title="Follow us and join the conversation."
       >
-        <Social linksWithIcons={socialLinksWithIcons} size={40} />
+        <Social
+          hasCustomColor
+          linksWithIcons={socialLinksWithIcons}
+          size={40}
+        />
       </CTASection>
     </PageLayout>
   )

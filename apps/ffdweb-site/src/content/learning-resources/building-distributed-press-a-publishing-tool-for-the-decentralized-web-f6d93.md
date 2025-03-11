@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: >-
   /building-distributed-press-a-publishing-tool-for-the-decentralized-web/
 technicality: "1"

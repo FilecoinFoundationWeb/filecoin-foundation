@@ -3,6 +3,13 @@ import { redirects } from './redirects.mjs'
 /**
  * @type {import('next').NextConfig}
  */
+const imageRemotePatterns = [
+  {
+    protocol: 'https',
+    hostname: 'uploads-ssl.webflow.com',
+  },
+]
+
 const webpackRules = [
   {
     test: /\.md$/,
@@ -18,6 +25,9 @@ const webpackRules = [
 ]
 
 const nextConfig = {
+  images: {
+    remotePatterns: imageRemotePatterns,
+  },
   webpack: (config) => {
     config.module.rules.push(...webpackRules)
     return config

@@ -1,26 +1,25 @@
 ---
-featured: false
-post-date: "2022-08-24T00:00:00.000Z"
 title: >-
   FFDW Works with Prelinger Archives to Make Rare Historic Films More Accessible
   Using the Decentralized Web
+created-on: "2023-04-21T07:16:04.865Z"
+updated-on: "2023-04-21T07:18:28.291Z"
+published-on: "2023-04-21T08:01:04.314Z"
+category: impact
 description: >-
   Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce its
   collaboration with Prelinger Archives, a San Francisco-based historical film
   archive, to make rare and one-of-a-kind films accessible to the general
   public.
-author: Filecoin Foundation for the Decentralized Web
 image:
   src: >-
     https://uploads-ssl.webflow.com/643e92b3a344778457270525/644238341fe00b0f4374cbf2_1-yn2c8c8ey2qr9anuyu5xyq.png
-  alt: null
-updated-on: "2023-04-21T07:18:28.291Z"
-created-on: "2023-04-21T07:16:04.865Z"
-published-on: "2023-04-21T08:01:04.314Z"
-tags:
-  - film
-  - culture
-  - decentralized-archive
+seo:
+  description: ""
+# tags:
+#   - film
+#   - culture
+#   - decentralized-archive
 ---
 
 Filecoin Foundation for the Decentralized Web (FFDW) is proud to announce its collaboration with Prelinger Archives, a San Francisco-based historical film archive, to make rare and one-of-a-kind films accessible to the general public. The Prelinger Archives will use the award from FFDW to digitize a vast collection of archival 8mm, 16mm, and 35mm film footage held by both Prelinger Archives and Internet Archive and make these materials broadly accessible to the public through both Internet Archive and the decentralized web.

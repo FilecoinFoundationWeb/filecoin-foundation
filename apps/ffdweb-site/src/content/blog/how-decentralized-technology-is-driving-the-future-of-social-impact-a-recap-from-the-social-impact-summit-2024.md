@@ -4,8 +4,7 @@ title: How Decentralized Technology is Driving the Future of Social Impact - A
 created-on: 2024-03-28T17:04:06.076Z
 updated-on: 2024-03-28T17:04:06.083Z
 published-on: 2024-03-28T17:04:06.088Z
-post-date: 2024-03-28T17:04:06.094Z
-featured: false
+category: impact
 description: This month, the Social Impact Summit 2024, co-hosted by
   Blockchain Law for Social Good Center and Filecoin Foundation for the
   Decentralized Web (FFDW), brought together changemakers to explore how
@@ -14,11 +13,8 @@ description: This month, the Social Impact Summit 2024, co-hosted by
   Summit 2024.
 image:
   src: /assets/images/031224-sis-retro.png
-date: 2024-03-28T17:04:06.099Z
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---
 
 This month, the Social Impact Summit 2024, co-hosted by [Blockchain Law for Social Good Center](https://www.blockchainlawsg.org/) (BL4SG) and Filecoin Foundation for the Decentralized Web (FFDW), brought together changemakers to explore how emerging technologies can influence trust in the web. Through a series of thoughtful discussions, the Summit illustrated that these technologies are not merely theoretical concepts but are actively fostering a more connected, empowered, and resilient world. 

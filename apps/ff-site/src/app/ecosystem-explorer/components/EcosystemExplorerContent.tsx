@@ -9,6 +9,7 @@ import {
   SEARCH_KEY,
   SORT_KEY,
 } from '@filecoin-foundation/utils/constants/urlParamsConstants'
+import { findOrThrow } from '@filecoin-foundation/utils/findOrThrow'
 import type { QueryParams } from '@filecoin-foundation/utils/types/urlTypes'
 import { normalizeQueryParam } from '@filecoin-foundation/utils/urlUtils'
 import { BookOpen } from '@phosphor-icons/react/dist/ssr'
@@ -19,7 +20,6 @@ import { BASE_DOMAIN } from '@/constants/siteMetadata'
 import { graphicsData } from '@/data/graphicsData'
 
 import { entryMatchesCategoryQuery } from '@/utils/filterUtils'
-import { findOrThrow } from '@/utils/findOrThrow'
 import { getSortOptions } from '@/utils/getSortOptions'
 
 import { useFilter } from '@/hooks/useFilter'
@@ -139,7 +139,9 @@ export function EcosystemExplorerContent({
                       cta={{
                         href: `${PATHS.ECOSYSTEM_EXPLORER.path}/${slug}`,
                         text: 'Learn More',
-                        icon: BookOpen,
+                        icon: {
+                          component: BookOpen,
+                        },
                       }}
                       image={{
                         ...(image || graphicsData.imageFallback.data),

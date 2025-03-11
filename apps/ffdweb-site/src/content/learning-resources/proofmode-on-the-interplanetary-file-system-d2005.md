@@ -1,5 +1,4 @@
 ---
-date: "2023-01-01T00:00:00.000Z"
 source: https://guardianproject.info/podcast/2021/proofmode-on-ipfs.html
 technicality: "2"
 language: English

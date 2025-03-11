@@ -1,5 +1,4 @@
 ---
-date: "2021-01-01T00:00:00.000Z"
 source: >-
   /ffdw-supports-spritely-networked-communities-institute-to-develop-decentralized-social-media/
 technicality: "1"

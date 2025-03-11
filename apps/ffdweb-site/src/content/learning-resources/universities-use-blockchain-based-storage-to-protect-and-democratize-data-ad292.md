@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: >-
   https://cointelegraph.com/news/universities-use-blockchain-based-storage-to-protect-and-democratize-data
 technicality: "1"

@@ -1,5 +1,4 @@
 ---
-date: "2022-01-01T00:00:00.000Z"
 source: >-
   https://insideclimatenews.org/news/30092022/brazil-pantanal-wetland-wildfire-propoganda-bolsonaro/
 technicality: "1"
