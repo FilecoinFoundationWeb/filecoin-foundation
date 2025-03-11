@@ -25,10 +25,8 @@ export function TableHead<Data extends RowData>({
             <th
               key={header.id}
               className={clsx(
-                'text-brand-300',
                 meta?.align === 'center' && 'cell-align-center',
                 meta?.align === 'right' && 'cell-align-right',
-                meta?.headerCellStyle,
               )}
             >
               {flexRender(header.column.columnDef.header, header.getContext())}

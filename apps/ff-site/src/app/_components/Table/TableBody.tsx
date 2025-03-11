@@ -21,7 +21,7 @@ export function TableBody<Data extends RowData>({
               <td
                 key={cell.id}
                 className={clsx(
-                  meta?.bodyCellStyle,
+                  meta?.cellStyle,
                   meta?.align === 'center' && 'cell-align-center',
                   meta?.align === 'right' && 'cell-align-right',
                 )}

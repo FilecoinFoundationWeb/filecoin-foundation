@@ -22,7 +22,7 @@ export const leaderboardTableColumnsData = [
     header: 'Total Points',
     meta: {
       align: 'right',
-      bodyCellStyle: 'w-full',
+      cellStyle: 'w-full',
     },
     cell: (info) => {
       const points = info.getValue()
@@ -33,8 +33,8 @@ export const leaderboardTableColumnsData = [
     id: 'profileLink',
     header: 'Profile Link',
     meta: {
-      bodyCellStyle: 'text-brand-300',
       align: 'center',
+      cellStyle: 'text-brand-300',
     },
     cell: (info) => {
       const profileLink = info.getValue()

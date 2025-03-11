@@ -65,6 +65,6 @@
   }
 
   & thead th {
-    @apply border-b border-brand-500;
+    @apply border-b border-brand-500 text-brand-300;
   }
 }
