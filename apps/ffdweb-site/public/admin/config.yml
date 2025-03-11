@@ -281,7 +281,7 @@ collections:
       - *image_config
       - *meta_config_with_title_fallback
 
-- name: "projects"
+  - name: "projects"
     label: "Projects"
     label_singular: "Project"
     folder: "apps/ffdweb-site/src/content/projects/"
