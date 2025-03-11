@@ -17,7 +17,6 @@ repo: https://github.com/dcentwallet/
 video-url: https://www.youtube.com/embed/setKTiBxAsQ
 twitter: https://x.com/DCENTWALLETS
 seo:
-  title: D'CENT Wallet
   description: D’CENT, world’s 1st hardware wallet with fingerprint authentication, helps to manage digital assets in 70+ mainnets securely and connects its dApp.
 ---
 
