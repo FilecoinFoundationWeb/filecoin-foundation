@@ -29,7 +29,5 @@ technicality: "1"
 language: English
 tags: resources
 seo:
-  noindex: false
-  twitter:title: summary
-  twitter:card: summary
+  description: ""
 ---

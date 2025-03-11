@@ -1,11 +1,10 @@
 ---
-title: "Seeding Sustainable Growth for Public Goods in Tech: Insights from
-  Funding the Commons"
+title: "Seeding Sustainable Growth for Public Goods in Tech: Insights from Funding the Commons"
+description: At Funding the Commons, leaders from tech, research, and philanthropy explored sustainable funding for public goods like OSS. Discussions covered trust in OSS, decentralized funding, and tech for human rights and the arts. Speakers highlighted community-driven solutions, activist-centered tools, and artist data trusts.
 created-on: 2024-05-03T18:12:47.365Z
 updated-on: 2024-05-03T18:12:47.379Z
 published-on: 2024-05-03T18:12:47.391Z
 category: impact
-description: ""
 image:
   src: /assets/images/043024_fundingthecommons_recap.png
 seo:

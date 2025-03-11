@@ -1,5 +1,5 @@
 ---
-title: "The Starling Lab Framework"
+title: The Starling Lab Framework
 created-on: 2024-03-06T16:46:52.600Z
 updated-on: 2024-03-06T16:46:52.611Z
 published-on: 2024-03-06T16:46:52.620Z

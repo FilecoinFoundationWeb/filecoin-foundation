@@ -1,7 +1,11 @@
 import { ArticleLayout } from '@filecoin-foundation/ui/Article/ArticleLayout'
 import { BlogPostHeader } from '@filecoin-foundation/ui/BlogPostHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
+import { ShareArticle } from '@filecoin-foundation/ui/ShareArticle'
 import { type SlugParams } from '@filecoin-foundation/utils/types/paramsTypes'
+
+import { PATHS } from '@/constants/paths'
+import { BASE_URL } from '@/constants/siteMetadata'
 
 import { graphicsData } from '@/data/graphicsData'
 
@@ -37,8 +41,13 @@ export default async function BlogPost(props: BlogPostProps) {
             alt: '',
           }}
         />
-
         <MarkdownContent>{content}</MarkdownContent>
+        <ShareArticle
+          articleTitle={title}
+          path={`${PATHS.BLOG.path}/${slug}`}
+          baseUrl={BASE_URL}
+          sectionTitle="Share Post"
+        />
       </ArticleLayout>
     </PageLayout>
   )

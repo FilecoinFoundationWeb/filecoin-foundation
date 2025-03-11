@@ -1,30 +1,44 @@
 import Link from 'next/link'
 
-import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink'
+import { Icon } from '@filecoin-foundation/ui/Icon'
 import { isExternalLink } from '@filecoin-foundation/utils/linkUtils'
-import { CaretRight } from '@phosphor-icons/react/dist/ssr'
+import type { Icon as IconType } from '@phosphor-icons/react'
+import { CaretRight, ArrowUpRight } from '@phosphor-icons/react/dist/ssr'
 
 import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 export type CTALinkProps = {
   href: string
   children: string
+  icon?: IconType
 }
 
-export function CTALink({ href, children }: CTALinkProps) {
+export function CTALink({ href, children, icon }: CTALinkProps) {
   const isExternal = isExternalLink(href, BASE_DOMAIN)
-
-  if (isExternal) {
-    return <ExternalTextLink href={href}>{children}</ExternalTextLink>
-  }
 
   return (
     <Link
       href={href}
-      className="text-brand-primary-300 focus:brand-outline inline-flex items-center gap-1 font-bold hover:underline"
+      className="text-brand-primary-300 focus:brand-outline inline-flex items-center gap-1.5 font-bold hover:underline"
     >
-      <span className="pb-0.5">{children}</span>
-      <CaretRight size={16} weight="bold" />
+      <span>{children}</span>
+      <Icon
+        component={getIconComponent(isExternal, icon)}
+        size={18}
+        weight="bold"
+      />
     </Link>
   )
+}
+
+function getIconComponent(isExternal: boolean, icon?: IconType) {
+  if (icon) {
+    return icon
+  }
+
+  if (isExternal) {
+    return ArrowUpRight
+  }
+
+  return CaretRight
 }
