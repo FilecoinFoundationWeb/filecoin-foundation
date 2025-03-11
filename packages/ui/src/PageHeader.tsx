@@ -21,17 +21,16 @@ type TitleProps = {
 
 type PageHeaderImageProps = (StaticImageProps | ImageProps) & {
   objectFit?: ImageObjectFit
-  style?: 'rounded-none' | 'rounded-lg'
 }
 
 type PageHeaderProps = {
   title: TitleProps['children']
   image: PageHeaderImageProps
   isFeatured?: boolean
-  divider?: string
+  sectionDividerText?: string
   metaData?: MetaDataType
   description?: DescriptionTextType
-  children?: React.ReactNode
+  children?: React.ReactElement
 }
 
 export function PageHeader({
@@ -39,13 +38,13 @@ export function PageHeader({
   image,
   metaData,
   isFeatured,
-  divider,
+  sectionDividerText,
   description,
   children,
 }: PageHeaderProps) {
   return (
     <header className="grid grid-cols-1 gap-4">
-      {divider && <SectionDivider title={divider} />}
+      {sectionDividerText && <SectionDivider title={sectionDividerText} />}
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="grid grid-cols-1 gap-6">
           {isFeatured && <TagLabel variant="secondary">Featured</TagLabel>}

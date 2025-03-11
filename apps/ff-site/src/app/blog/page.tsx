@@ -8,6 +8,7 @@ import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 
 import { PATHS } from '@/constants/paths'
+import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes } from '@/content/pages/blog.md'
 
@@ -22,8 +23,6 @@ import { PageSection } from '@/components/PageSection'
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
 import { getBlogPostsData } from './utils/getBlogPostData'
-
-import { BASE_DOMAIN } from '@/_constants/siteMetadata'
 
 const { seo, featured_entry } = FeaturedPageFrontmatterSchema.parse(attributes)
 
@@ -48,7 +47,7 @@ export default async function Blog() {
       />
 
       <PageHeader
-        divider="Featured"
+        sectionDividerText="Featured"
         title={featuredPost.title}
         description={featuredPost.description}
         metaData={[formatDate(featuredPost.publishedOn)]}

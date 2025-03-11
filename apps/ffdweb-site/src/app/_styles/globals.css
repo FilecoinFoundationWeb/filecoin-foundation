@@ -281,7 +281,7 @@
 
   /* TAGS */
   .tag-label {
-    @apply border-1;
+    @apply border;
 
     &.tag-label--primary {
       @apply border-brand-secondary-100 bg-brand-secondary-100 text-brand-secondary-800;
