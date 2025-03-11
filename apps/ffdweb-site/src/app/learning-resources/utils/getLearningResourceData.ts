@@ -14,12 +14,12 @@ export async function getLearningResourceData(slug: string) {
 }
 
 export async function getLearningResourcesData() {
-  const allPosts = await getAllMarkdownData({
+  const allResources = await getAllMarkdownData({
     directoryPath: LEARNING_RESOURCES_DIRECTORY_PATH,
     zodSchema: LearningResourceFrontmatterSchema,
   })
 
-  return allPosts.map(transformLearningResourceData)
+  return allResources.map(transformLearningResourceData)
 }
 
 function getLearningResourceMarkdownData(slug: string) {
@@ -31,13 +31,13 @@ function getLearningResourceMarkdownData(slug: string) {
 }
 
 function transformLearningResourceData(
-  post: Awaited<ReturnType<typeof getLearningResourceMarkdownData>>,
+  resource: Awaited<ReturnType<typeof getLearningResourceMarkdownData>>,
 ) {
   return {
-    ...post,
+    ...resource,
     seo: {
-      ...post.seo,
-      title: post.seo.title || post.title,
+      ...resource.seo,
+      title: resource.seo.title || resource.title,
     },
   }
 }
