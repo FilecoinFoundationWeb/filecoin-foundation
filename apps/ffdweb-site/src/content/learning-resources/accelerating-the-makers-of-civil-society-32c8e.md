@@ -24,5 +24,4 @@ keywords: >-
 link: https://ffdweb.org/blog/accelerating-the-makers-of-civil-society
 seo:
   description: "Discover how TechSoup’s Accelerating Makers project, supported by FFDW, connects civil society with DWeb technology. Learn how education and resources drive transparency and equitable solutions."
-"
 ---
