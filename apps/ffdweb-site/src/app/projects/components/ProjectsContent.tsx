@@ -41,6 +41,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: searchResults,
+    entriesPerPage: 12,
   })
 
   return (
@@ -49,10 +50,10 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
       {paginatedResults.length === 0 ? (
         <NoSearchResultsMessage baseDomain={BASE_DOMAIN} />
       ) : (
-        <CardGrid cols="smTwo">
+        <CardGrid cols="smTwoLgThree">
           {paginatedResults.map((post, i) => {
             const { slug, title, description, image, publishedOn } = post
-            const isFirstTwoImages = i < 2
+            const isFirstThreeImages = i < 3
 
             return (
               <Card
@@ -73,7 +74,7 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
                 image={{
                   ...(image || graphicsData.imageFallback.data),
                   alt: '',
-                  priority: isFirstTwoImages,
+                  priority: isFirstThreeImages,
                   objectFit: 'cover',
                   sizes: buildImageSizeProp({
                     startSize: '100vw',
