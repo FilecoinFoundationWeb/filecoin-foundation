@@ -13,7 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { CTALink } from '@/components/CTALink'
 
-import { getProjectData } from '../utils/getProjectData'
+import { getProjectData, getProjectsData } from '../utils/getProjectData'
 
 type ProjectProps = {
   params: Promise<SlugParams>
@@ -68,6 +68,11 @@ export default async function Project(props: ProjectProps) {
       </ArticleLayout>
     </PageLayout>
   )
+}
+
+export async function generateStaticParams() {
+  const entries = await getProjectsData()
+  return entries.map(({ slug }) => ({ slug }))
 }
 
 export async function generateMetadata(props: ProjectProps) {
