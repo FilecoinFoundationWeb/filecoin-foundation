@@ -12,7 +12,7 @@ authors:
     last-name: Ishikawa Sutton
     company: Distributed.Press
     image:
-      src: /assets/images/dwd-profile-03.png
+      src: /assets/headshots/Mai_Ishikawa_Sutton.png
     # bio: "Mai Ishikawa Sutton is a senior organizer with DWeb projects, co-founder of Distributed.Press and COMPOST magazine, and contributor to Hypha Worker Co-op."
 seo:
   description: "Comparing DWeb and Web3's approaches to decentralization, focusing on the key question: who designs, controls, and benefits from these technologies?"
