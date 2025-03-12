@@ -1,4 +1,4 @@
-import { CaretRight } from '@phosphor-icons/react'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 
 export const ICON_CONFIG = {
   CARET_RIGHT: {
