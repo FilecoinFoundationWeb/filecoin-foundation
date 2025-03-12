@@ -43,10 +43,15 @@ export function LearningResourcesContent({
   return (
     <FilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      search={<Search query={searchQuery} />}
-      pagination={
-        <Pagination pageCount={pageCount} currentPage={currentPage} />
-      }
+      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      top={{
+        main: <Search query={searchQuery} />,
+        secondary: <Search query={searchQuery} />,
+      }}
+      side={{
+        desktop: <div className="bg-brand-primary-800 h-full w-full" />,
+        mobile: <Search query={searchQuery} />,
+      }}
     >
       <CardGrid cols="smTwo">
         {paginatedResults.map((resource) => {

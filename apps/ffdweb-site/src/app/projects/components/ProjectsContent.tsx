@@ -46,10 +46,8 @@ export function ProjectsContent({ projects }: ProjectsContentProps) {
   return (
     <FilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      search={<Search query={searchQuery} />}
-      pagination={
-        <Pagination pageCount={pageCount} currentPage={currentPage} />
-      }
+      top={{ main: <Search query={searchQuery} /> }}
+      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
     >
       <CardGrid cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {

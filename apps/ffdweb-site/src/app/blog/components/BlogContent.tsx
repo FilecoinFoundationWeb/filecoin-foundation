@@ -48,10 +48,11 @@ export function BlogContent({ posts }: BlogContentProps) {
   return (
     <FilterContainer
       hasResults={Boolean(paginatedResults.length)}
-      search={<Search query={searchQuery} />}
-      pagination={
-        <Pagination pageCount={pageCount} currentPage={currentPage} />
-      }
+      bottom={<Pagination pageCount={pageCount} currentPage={currentPage} />}
+      top={{
+        main: <Search query={searchQuery} />,
+        secondary: <Search query={searchQuery} />,
+      }}
     >
       <CardGrid cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
