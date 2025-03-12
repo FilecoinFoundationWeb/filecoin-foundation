@@ -32,21 +32,28 @@ export default async function generateSitemap({
     lastModified: new Date(),
   }))
 
-  const dynamicRoutesPromises = Object.values(dynamicRoutes).map(
-    async ({ getData, basePath }) => {
-      const entries = await getData()
-      return generateDynamicRoutes({
-        data: entries,
-        basePath,
-        baseUrl,
-      })
-    },
+  const dynamicRoutesPromises = Object.values(dynamicRoutes).map((config) =>
+    generateDynamicSitemapEntries(config, baseUrl),
   )
 
   const dynamicRoutesResults = await Promise.all(dynamicRoutesPromises)
   const allDynamicRoutes = dynamicRoutesResults.flat()
 
   return [...staticRoutes, ...allDynamicRoutes]
+}
+
+async function generateDynamicSitemapEntries(
+  config: DynamicRouteConfig,
+  baseUrl: string,
+) {
+  const { getData, basePath } = config
+  const entries = await getData()
+
+  return generateDynamicRoutes({
+    data: entries,
+    basePath,
+    baseUrl,
+  })
 }
 
 function generateDynamicRoutes<T extends GenericEntryData>({

@@ -3,9 +3,9 @@ import generateSitemap from '@filecoin-foundation/utils/generateSitemap'
 import { PATHS } from '@/constants/paths'
 import { BASE_URL } from '@/constants/siteMetadata'
 
-import { getBlogPostsData } from './blog/utils/getBlogPostData'
-import { getDigestArticlesData } from './digest/utils/getDigestArticleData'
-import { getProjectsData } from './projects/utils/getProjectData'
+import { getBlogPostsData } from '@/blog/utils/getBlogPostData'
+import { getDigestArticlesData } from '@/digest/utils/getDigestArticleData'
+import { getProjectsData } from '@/projects/utils/getProjectData'
 
 export default async function sitemap() {
   return await generateSitemap({
