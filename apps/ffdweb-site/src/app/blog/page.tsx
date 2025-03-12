@@ -1,8 +1,9 @@
 import { Suspense } from 'react'
 
+import { PageHeader } from '@filecoin-foundation/ui/PageHeader'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
-// import { formatDate } from '@filecoin-foundation/utils/dateUtils'
+import { formatDate } from '@filecoin-foundation/utils/dateUtils'
 import { getFeaturedEntry } from '@filecoin-foundation/utils/getFeaturedEntry'
 
 import { PATHS } from '@/constants/paths'
@@ -11,7 +12,7 @@ import { graphicsData } from '@/data/graphicsData'
 
 import { createMetadata } from '@/utils/createMetadata'
 
-import { PageHeader } from '@/components/PageHeader'
+import { Button } from '@/components/Button'
 
 import { BlogContent } from './components/BlogContent'
 import { generateStructuredData } from './utils/generateStructuredData'
@@ -34,21 +35,22 @@ export default async function Blog() {
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={generateStructuredData(SEO)} />
+
       <PageHeader
-        // isFeatured
+        isFeatured
         title={featuredPost.title}
-        // description={featuredPost.description}
-        // metaData={[formatDate(featuredPost.publishedOn)]}
+        metaData={[formatDate(featuredPost.publishedOn)]}
+        description={featuredPost.description}
         image={{
           ...(featuredPost.image || graphicsData.imageFallback.data),
           alt: '',
           objectFit: 'cover',
         }}
-        cta={{
-          href: `${PATHS.BLOG.path}/${featuredPost.slug}`,
-          text: 'Read Featured Post',
-        }}
-      />
+      >
+        <Button href={`${PATHS.BLOG.path}/${featuredPost.slug}`}>
+          Read Featured Post
+        </Button>
+      </PageHeader>
       <Suspense>
         <BlogContent posts={posts} />
       </Suspense>

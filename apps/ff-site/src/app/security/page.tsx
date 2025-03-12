@@ -13,6 +13,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -40,17 +41,20 @@ export default function Security() {
         title={header.title}
         description={header.description}
         image={graphicsData.security}
-        cta={[
-          {
-            href: PATHS.BUG_BOUNTY.path,
-            text: 'Bug Bounty Program',
-          },
-          {
-            href: PATHS.MATURITY_MODEL.path,
-            text: 'Web3 Security Maturity Model',
-          },
-        ]}
-      />
+      >
+        <CTAButtonGroup
+          cta={[
+            {
+              href: PATHS.BUG_BOUNTY.path,
+              text: 'Bug Bounty Program',
+            },
+            {
+              href: PATHS.MATURITY_MODEL.path,
+              text: 'Web3 Security Maturity Model',
+            },
+          ]}
+        />
+      </PageHeader>
 
       <PageSection
         kicker="What We Do"

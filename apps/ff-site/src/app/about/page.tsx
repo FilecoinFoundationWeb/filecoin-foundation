@@ -17,6 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -43,15 +44,16 @@ export default function About() {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
+
       <PageHeader
         title={header.title}
         description={header.description}
         image={graphicsData.about}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.annualReports['2024'],
-          text: 'Learn More in Our Annual Report',
-        }}
-      />
+      >
+        <Button href={FILECOIN_FOUNDATION_URLS.annualReports['2024']}>
+          Learn More in Our Annual Report
+        </Button>
+      </PageHeader>
 
       <PageSection
         kicker="About"

@@ -12,6 +12,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -36,11 +37,11 @@ export default function BugBounty() {
         title={header.title}
         description={header.description}
         image={graphicsData.security4}
-        cta={{
-          text: 'Learn More About the Program',
-          href: FILECOIN_FOUNDATION_URLS.security.bugBountyProgram,
-        }}
-      />
+      >
+        <Button href={FILECOIN_FOUNDATION_URLS.security.bugBountyProgram}>
+          Learn More About the Program
+        </Button>
+      </PageHeader>
 
       <PageSection kicker="Bug Hunters" title="Leaderboard">
         <Leaderboard />

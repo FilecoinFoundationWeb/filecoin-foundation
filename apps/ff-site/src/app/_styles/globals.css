@@ -320,4 +320,9 @@
   .share-article-tooltip-link {
     @apply hover:text-brand-400;
   }
+
+  /* PAGE HEADER */
+  .page-header-image {
+    @apply rounded-lg border border-brand-100;
+  }
 }
