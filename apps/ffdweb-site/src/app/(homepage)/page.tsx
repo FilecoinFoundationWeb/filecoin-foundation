@@ -1,7 +1,12 @@
 import { Button } from '@filecoin-foundation/ui/Button'
+import { Card } from '@filecoin-foundation/ui/Card'
+import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
+import { buildImageSizeProp } from '@filecoin-foundation/utils/buildImageSizeProp'
+import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 
+import { FEATURED_PROJECTS } from '@/constants/featuredProjects'
 import { PATHS } from '@/constants/paths'
 import { BASE_DOMAIN, FFDW_URLS, SEO } from '@/constants/siteMetadata'
 import { ORGANIZATION_SCHEMA_BASE } from '@/constants/structuredDataConstants'
@@ -16,7 +21,12 @@ import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 import { PageSectionWithImage } from '@/components/PageSectionWithImage'
 
-export default function Home() {
+import { getProjectsBySlugs } from './utils/getFeaturedProjects'
+
+export default async function Home() {
+  const featuredProjects = await getProjectsBySlugs(
+    FEATURED_PROJECTS.map((p) => p.slug),
+  )
   return (
     <PageLayout gap="large">
       <StructuredDataScript structuredData={ORGANIZATION_SCHEMA_BASE} />
@@ -46,9 +56,46 @@ export default function Home() {
         kicker="Featured Projects"
         title="Building Decentralized Solutions for Real-World Impact"
       >
-        <div className="bg-brand-primary-800 grid h-96 w-full grid-cols-3 gap-4" />
+        <CardGrid cols="mdThree">
+          {featuredProjects.map(({ title, description, slug, image }) => {
+            return (
+              <Card
+                key={slug}
+                title={title}
+                description={{ text: description, isClamped: true }}
+                cta={{
+                  href: `${PATHS.PROJECTS.path}/${slug}`,
+                  text: 'Read More',
+                  baseDomain: BASE_DOMAIN,
+                  icon: {
+                    component: CaretRight,
+                    size: 16,
+                    position: 'trailing',
+                    weight: 'bold',
+                  },
+                }}
+                image={{
+                  ...(image || graphicsData.imageFallback.data),
+                  alt: '',
+                  objectFit: 'cover',
+                  sizes: buildImageSizeProp({
+                    startSize: '100vw',
+                    sm: '350px',
+                    md: '470px',
+                    lg: '360px',
+                  }),
+                }}
+              />
+            )
+          })}
+        </CardGrid>
+
         <div className="flex justify-center">
-          <Button href={PATHS.PROJECTS.path} baseDomain={BASE_DOMAIN}>
+          <Button
+            href={PATHS.PROJECTS.path}
+            baseDomain={BASE_DOMAIN}
+            className="flex-1 sm:flex-none"
+          >
             View Projects
           </Button>
         </div>
