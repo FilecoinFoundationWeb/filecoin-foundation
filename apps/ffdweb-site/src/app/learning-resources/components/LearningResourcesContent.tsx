@@ -15,6 +15,7 @@ import { CaretRight } from '@phosphor-icons/react'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Card } from '@/components/Card'
+import { FilterContainer } from '@/components/FilterContainer'
 
 import type { LearningResource } from '../types/learningResourceType'
 
@@ -40,8 +41,13 @@ export function LearningResourcesContent({
   })
 
   return (
-    <section>
-      <Search query={searchQuery} />
+    <FilterContainer
+      hasResults={Boolean(paginatedResults.length)}
+      search={<Search query={searchQuery} />}
+      pagination={
+        <Pagination pageCount={pageCount} currentPage={currentPage} />
+      }
+    >
       <CardGrid cols="smTwo">
         {paginatedResults.map((resource) => {
           const { slug, title, description, category, resourceType, link } =
@@ -78,7 +84,6 @@ export function LearningResourcesContent({
           )
         })}
       </CardGrid>
-      <Pagination pageCount={pageCount} currentPage={currentPage} />
-    </section>
+    </FilterContainer>
   )
 }
