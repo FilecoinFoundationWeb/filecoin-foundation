@@ -21,6 +21,7 @@ import { graphicsData } from '@/data/graphicsData'
 import { getCategoryLabel } from '@/utils/getCategoryLabel'
 
 import { Card } from '@/components/Card'
+import { FilterContainer } from '@/components/FilterContainer'
 
 import type { BlogPost } from '../types/blogPostType'
 
@@ -41,17 +42,23 @@ export function BlogContent({ posts }: BlogContentProps) {
   const { currentPage, pageCount, paginatedResults } = usePagination({
     pageQuery: normalizeQueryParam(searchParams, PAGE_KEY),
     entries: searchResults,
+    entriesPerPage: 9,
   })
 
   return (
-    <section>
-      <Search query={searchQuery} />
-      <CardGrid cols="smTwo">
+    <FilterContainer
+      hasResults={Boolean(paginatedResults.length)}
+      search={<Search query={searchQuery} />}
+      pagination={
+        <Pagination pageCount={pageCount} currentPage={currentPage} />
+      }
+    >
+      <CardGrid cols="smTwoLgThree">
         {paginatedResults.map((post, i) => {
           const { slug, category, title, description, image, publishedOn } =
             post
 
-          const isFirstTwoImages = i < 2
+          const isFirstTwoImages = i < 3
           const categoryLabel = getCategoryLabel({
             collectionName: 'blog_posts',
             category,
@@ -90,7 +97,6 @@ export function BlogContent({ posts }: BlogContentProps) {
           )
         })}
       </CardGrid>
-      <Pagination pageCount={pageCount} currentPage={currentPage} />
-    </section>
+    </FilterContainer>
   )
 }
