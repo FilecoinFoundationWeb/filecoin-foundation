@@ -97,13 +97,7 @@ PageHeader.Image = function PageHeaderImage({
 
   return (
     <div className="relative aspect-video">
-      <Image
-        fill
-        {...commonProps}
-        className={clsx(commonProps.className)}
-        src={image.src}
-        alt={commonProps.alt}
-      />
+      <Image fill {...commonProps} src={image.src} />
     </div>
   )
 }
