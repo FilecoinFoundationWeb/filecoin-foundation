@@ -12,7 +12,7 @@ const variantClasses = {
   ghost: 'button--ghost',
 } as const
 
-type ButtonProps = {
+export type ButtonProps = {
   children: React.ReactNode
   variant?: keyof typeof variantClasses
   icon?: IconProps['component']

@@ -1,4 +1,3 @@
-import { Button } from '@filecoin-foundation/ui/Button'
 import { CardGrid } from '@filecoin-foundation/ui/CardGrid'
 import { PageLayout } from '@filecoin-foundation/ui/PageLayout'
 import { StructuredDataScript } from '@filecoin-foundation/ui/StructuredDataScript'
@@ -6,7 +5,6 @@ import { ExternalTextLink } from '@filecoin-foundation/ui/TextLink/ExternalTextL
 
 import { PATHS } from '@/constants/paths'
 import { FIL_PLUS_URLS } from '@/constants/siteMetadata'
-import { BASE_DOMAIN } from '@/constants/siteMetadata'
 
 import { attributes as allocatorsAttributes } from '@/content/pages/filecoin-plus/allocators.md'
 import { attributes } from '@/content/pages/filecoin-plus/filecoin-plus.md'
@@ -20,6 +18,7 @@ import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
+import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { FocusAreaCard } from '@/components/FocusAreaCard'
@@ -50,11 +49,11 @@ export default function FilPlus() {
         title={header.title}
         description={header.description}
         image={graphicsData.filPlus}
-        cta={{
-          href: FIL_PLUS_URLS.documentation,
-          text: 'Learn More About Fil+',
-        }}
-      />
+      >
+        <Button href={FIL_PLUS_URLS.documentation}>
+          Learn More About Fil+
+        </Button>
+      </PageHeader>
 
       <PageSection kicker="About" title="How Fil+ Works">
         <CardGrid cols="lgThree">
@@ -64,10 +63,7 @@ export default function FilPlus() {
         </CardGrid>
 
         <div className="mt-2 flex flex-col sm:flex-row sm:justify-center">
-          <Button
-            href={FIL_PLUS_URLS.filPlusParticipants}
-            baseDomain={BASE_DOMAIN}
-          >
+          <Button href={FIL_PLUS_URLS.filPlusParticipants}>
             Learn More About Fil+ Participants
           </Button>
         </div>

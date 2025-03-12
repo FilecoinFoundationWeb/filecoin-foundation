@@ -17,6 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -56,7 +57,7 @@ export default async function Events(props: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        isFeatured
+        sectionDividerTitle="Featured"
         title={featuredEvent.title}
         description={featuredEvent.description}
         metaData={getMetaData({
@@ -69,11 +70,11 @@ export default async function Events(props: Props) {
           alt: '',
           objectFit: 'cover',
         }}
-        cta={{
-          href: `${PATHS.EVENTS.path}/${featuredEvent.slug}`,
-          text: DEFAULT_CTA_TEXT,
-        }}
-      />
+      >
+        <Button href={`${PATHS.EVENTS.path}/${featuredEvent.slug}`}>
+          {DEFAULT_CTA_TEXT}
+        </Button>
+      </PageHeader>
       <PageSection kicker="Events" title="Network Events">
         <EventsContent searchParams={searchParams} events={events} />
       </PageSection>

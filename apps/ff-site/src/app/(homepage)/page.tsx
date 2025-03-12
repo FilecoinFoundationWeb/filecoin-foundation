@@ -17,6 +17,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { CTAButtonGroup } from '@/components/CTAButtonGroup'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
 import { PageHeader } from '@/components/PageHeader'
@@ -61,14 +62,20 @@ export default async function Home() {
           title={header.title}
           description={header.description}
           image={graphicsData.home}
-          cta={[
-            { href: PATHS.ABOUT.path, text: 'Learn More About the Foundation' },
-            {
-              href: FILECOIN_URLS.site,
-              text: 'Dive Into the Filecoin Protocol',
-            },
-          ]}
-        />
+        >
+          <CTAButtonGroup
+            cta={[
+              {
+                href: PATHS.ABOUT.path,
+                text: 'Learn More About the Foundation',
+              },
+              {
+                href: FILECOIN_URLS.site,
+                text: 'Dive Into the Filecoin Protocol',
+              },
+            ]}
+          />
+        </PageHeader>
 
         <PageSection kicker="Explore" title="The Filecoin Ecosystem">
           <CardGrid cols="smTwo">

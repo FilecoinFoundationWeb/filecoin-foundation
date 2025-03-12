@@ -15,6 +15,7 @@ import { extractEmailAddress } from '@/utils/extractEmailAddress'
 
 import { Badge } from '@/components/Badge'
 import { BadgeCardGrid } from '@/components/BadgeCardGrid'
+import { Button } from '@/components/Button'
 import { CardWithBadge } from '@/components/CardWithBadge'
 import { CTASection } from '@/components/CTASection'
 import { ExploreSectionCard } from '@/components/ExploreSectionCard'
@@ -57,11 +58,9 @@ export default async function Grants() {
         title={header.title}
         description={header.description}
         image={graphicsData.grants}
-        cta={{
-          href: FILECOIN_FOUNDATION_URLS.grants.github,
-          text: 'Apply Now',
-        }}
-      />
+      >
+        <Button href={FILECOIN_FOUNDATION_URLS.grants.github}>Apply Now</Button>
+      </PageHeader>
 
       <PageSection
         kicker="Opportunities"

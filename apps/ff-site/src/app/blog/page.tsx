@@ -15,6 +15,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { FeaturedPageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
 
@@ -43,8 +44,9 @@ export default async function Blog() {
       <StructuredDataScript
         structuredData={generateStructuredData(posts, seo)}
       />
+
       <PageHeader
-        isFeatured
+        sectionDividerTitle="Featured"
         title={featuredPost.title}
         description={featuredPost.description}
         metaData={[formatDate(featuredPost.publishedOn)]}
@@ -53,11 +55,11 @@ export default async function Blog() {
           alt: '',
           objectFit: 'cover',
         }}
-        cta={{
-          href: `${PATHS.BLOG.path}/${featuredPost.slug}`,
-          text: 'Read Featured Post',
-        }}
-      />
+      >
+        <Button href={`${PATHS.BLOG.path}/${featuredPost.slug}`}>
+          Read Featured Post
+        </Button>
+      </PageHeader>
       <PageSection
         kicker="Blog"
         title="Filecoin Ecosystem Updates"

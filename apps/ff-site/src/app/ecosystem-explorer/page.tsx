@@ -12,6 +12,7 @@ import { createMetadata } from '@/utils/createMetadata'
 
 import { PageFrontmatterSchema } from '@/schemas/PageFrontmatterSchema'
 
+import { Button } from '@/components/Button'
 import { CTASection } from '@/components/CTASection'
 import { PageHeader } from '@/components/PageHeader'
 import { PageSection } from '@/components/PageSection'
@@ -42,15 +43,16 @@ export default async function EcosystemExplorer(props: Props) {
   return (
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
+
       <PageHeader
         title={header.title}
         description={header.description}
         image={graphicsData.ecosystem}
-        cta={{
-          text: 'Submit Your Project',
-          href: PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path,
-        }}
-      />
+      >
+        <Button href={PATHS.ECOSYSTEM_EXPLORER_PROJECT_FORM.path}>
+          Submit Your Project
+        </Button>
+      </PageHeader>
 
       <PageSection
         kicker="Projects"
