@@ -57,7 +57,7 @@ export default async function Events(props: Props) {
     <PageLayout>
       <StructuredDataScript structuredData={generateStructuredData(seo)} />
       <PageHeader
-        sectionDividerText="Featured"
+        sectionDividerTitle="Featured"
         title={featuredEvent.title}
         description={featuredEvent.description}
         metaData={getMetaData({

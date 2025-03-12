@@ -6,13 +6,13 @@ import {
 import { SectionDivider } from '@/components/SectionDivider'
 
 type PageHeaderProps = SharedPageHeaderProps & {
-  sectionDividerText?: string
+  sectionDividerTitle?: string
 }
 
-export function PageHeader({ sectionDividerText, ...props }: PageHeaderProps) {
+export function PageHeader({ sectionDividerTitle, ...props }: PageHeaderProps) {
   return (
     <div className="flex flex-col gap-4">
-      {sectionDividerText && <SectionDivider title={sectionDividerText} />}
+      {sectionDividerTitle && <SectionDivider title={sectionDividerTitle} />}
       <SharedPageHeader {...props} />
     </div>
   )
