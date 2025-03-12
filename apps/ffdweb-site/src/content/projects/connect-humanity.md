@@ -18,5 +18,5 @@ featured-content: https://www.ffdweb.org/blog/ffdw-and-connect-humanity-empoweri
 external-link: https://connecthumanity.fund/
 has-collaborations: true
 seo:
-  description: ""
+  description: "Connect Humanity conducts global surveys through community organizations to understand internet usage patterns and needs, advancing digital equity worldwide."
 ---

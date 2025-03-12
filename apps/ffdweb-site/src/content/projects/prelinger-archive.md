@@ -13,5 +13,5 @@ image:
   src: /assets/images/partnerlogo_prelinger.png
 featured-content: https://www.ffdweb.org/blog/ffdw-works-with-prelinger-archives-to-make-rare-historic-films-more-accessible-using-the-decentralized-web/
 seo:
-  description: ""
+  description: "Prelinger Archives is digitizing rare historical films and preserving them on decentralized storage, making unique 8mm, 16mm, and 35mm footage accessible to the public."
 ---

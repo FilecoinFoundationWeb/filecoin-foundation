@@ -18,5 +18,5 @@ image:
 featured-content: https://freedom.press/news/filecoin-foundation-for-the-decentralized-web-funds-freedom-of-the-press-foundation-with-largest-grant-in-our-history
 external-link: https://decrypt.co/82056/filecoin-group-grants-million-edward-snowden-press-freedom-foundation
 seo:
-  description: ""
+  description: "FFDW supports Freedom of the Press Foundation's infrastructure and security enhancements for SecureDrop, helping journalists worldwide communicate securely with anonymous sources."
 ---

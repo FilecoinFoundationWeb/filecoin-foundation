@@ -15,5 +15,5 @@ description:
 image:
   src: /assets/images/web-foundation-hi-res-logo.jpeg
 seo:
-  description: ""
+  description: "The Web Foundation advances Tim Berners-Lee's vision of an open web through the Web Index project, monitoring emerging issues and ensuring a safe digital future."
 ---

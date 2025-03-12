@@ -11,5 +11,5 @@ image:
   src: /assets/images/rust-foundation-logo-new-black.png
 external-link: https://foundation.rust-lang.org/
 seo:
-  description: ""
+  description: "The Rust Foundation stewards the Rust programming language and ecosystem, supporting maintainers and developers while fostering the growth of this secure systems programming language."
 ---

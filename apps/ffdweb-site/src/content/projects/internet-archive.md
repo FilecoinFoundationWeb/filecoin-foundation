@@ -20,5 +20,5 @@ image:
   src: /assets/images/partnerlogo_internetarchive.png
 external-link: https://archive.org/
 seo:
-  description: ""
+  description: "The Internet Archive preserves digital history through projects like the Wayback Machine, OpenLibrary.org, and Software Collections, partnering with Filecoin to protect vital information."
 ---

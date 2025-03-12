@@ -15,5 +15,5 @@ image:
   src: /assets/images/partnerlogo_witness.png
 featured-content: https://www.ffdweb.org/blog/ffdw-and-witness-collaborate-to-preserve-authentic-human-rights-records
 seo:
-  description: ""
+  description: "WITNESS empowers activists and civic journalists to document human rights through video technology, exploring decentralized web solutions for preserving crucial evidence."
 ---

@@ -14,5 +14,5 @@ image:
 featured-content: https://www.ffdweb.org/blog/ffdw-and-sacred-stacks-building-community-with-decentralized-tools/
 has-collaborations: true
 seo:
-  description: ""
+  description: "Sacred Stacks explores how decentralized technologies can strengthen communities focused on spiritual experimentation, collective study, and social transformation."
 ---

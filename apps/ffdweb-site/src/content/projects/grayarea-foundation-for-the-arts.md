@@ -15,5 +15,5 @@ image:
   src: /assets/images/partnerlogo_grayarea.png
 external-link: https://grayarea.org/
 seo:
-  description: ""
+  description: "Gray Area is a countercultural hub fostering creative action at the intersection of art and technology, developing DWeb curriculum to empower creators in their practices."
 ---
